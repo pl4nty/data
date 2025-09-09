@@ -8,6 +8,7 @@
     var racErrorExists = false; // True iff an invalid RAC was entered
     var blockNext = false; // If true, block the next button
     var racCode = "";
+	var isLiteWhitePersonality = false;
 
     WinJS.UI.Pages.define("/RetailDemo/retailDemoSetupInclusive.html", {
         init: function (element, options) {
@@ -25,8 +26,22 @@
             let navFlowPromise = bridge.invoke("CloudExperienceHost.getContext").then(function (result) {
                 navFlow = result.host;
             }, function () { });
+			
+			let promisesToJoin = { 
+                pagePromise: pagePromise, 
+                cssPromise: cssPromise, 
+                languagePromise: languagePromise, 
+                dirPromise: dirPromise, 
+                navFlowPromise: navFlowPromise 
+            };
 
-            return WinJS.Promise.join({ pagePromise: pagePromise, cssPromise: cssPromise, languagePromise: languagePromise, dirPromise: dirPromise, navFlowPromise: navFlowPromise });
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Accessibility_Improvements")) {
+                var personalityPromise = bridge.invoke("CloudExperienceHost.getContext").then(function (result) {
+                    isLiteWhitePersonality = (result.personality === CloudExperienceHost.TargetPersonality.LiteWhite);
+                });
+                promisesToJoin.personalityPromise = personalityPromise;
+            }
+            return WinJS.Promise.join(promisesToJoin);
         },
 
         ready: function (element, options) {
@@ -292,10 +307,19 @@
                 text.textContent = message;
                 text.setAttribute("aria-hidden", "true");
                 let tooltip = document.createElement("div");
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Alert_Contrast_Mode_Accessibility")) {
-                    tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
+				
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Accessibility_Improvements")) {
+                    if (isLiteWhitePersonality) {
+                            tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
+                    } else {
+                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx_blueStyle";  
+                    }
                 } else {
-                    tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error";
+                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Alert_Contrast_Mode_Accessibility")) {
+                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
+                    } else {
+                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error";
+                    }
                 }
                 
                 tooltip.appendChild(text);

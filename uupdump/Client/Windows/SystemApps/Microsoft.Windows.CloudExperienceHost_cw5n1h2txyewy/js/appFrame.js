@@ -22,6 +22,15 @@ var CloudExperienceHost;
         }
         AppFrame.setDisplayModeFullScreen = setDisplayModeFullScreen;
         function setBackgroundImage(appDataUri) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeSetBackgroundImage")) {
+                const identityProvider = CloudExperienceHost.IUserManager.getInstance().getSignInIdentityProvider();
+                const isAADUser = (identityProvider === CloudExperienceHostAPI.SignInIdentityProviders.aad);
+                if (isAADUser) {
+                    return requireAsync(['legacy/appViewManager']).then((result) => {
+                        return result.legacy_appViewManager.setBackgroundImage(appDataUri);
+                    });
+                }
+            }
             return new WinJS.Promise((completeDispatch) => completeDispatch());
         }
         AppFrame.setBackgroundImage = setBackgroundImage;

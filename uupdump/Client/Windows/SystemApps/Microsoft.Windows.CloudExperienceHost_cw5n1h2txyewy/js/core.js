@@ -40,7 +40,8 @@ var CloudExperienceHost;
         FrameViewModelUpdateType[FrameViewModelUpdateType["GraphicAnimation"] = 9] = "GraphicAnimation";
         FrameViewModelUpdateType[FrameViewModelUpdateType["UpdateTransitionMessage"] = 10] = "UpdateTransitionMessage";
         FrameViewModelUpdateType[FrameViewModelUpdateType["SetDisplayModeFullScreen"] = 11] = "SetDisplayModeFullScreen";
-        FrameViewModelUpdateType[FrameViewModelUpdateType["GamepadLegendB"] = 12] = "GamepadLegendB";
+        FrameViewModelUpdateType[FrameViewModelUpdateType["SetBackgroundImage"] = 12] = "SetBackgroundImage";
+        FrameViewModelUpdateType[FrameViewModelUpdateType["GamepadLegendB"] = 13] = "GamepadLegendB";
     })(CloudExperienceHost.FrameViewModelUpdateType || (CloudExperienceHost.FrameViewModelUpdateType = {}));
     var FrameViewModelUpdateType = CloudExperienceHost.FrameViewModelUpdateType;
     (function (NavigationEvent) {
