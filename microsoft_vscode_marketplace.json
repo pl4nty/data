@@ -243,6 +243,7 @@
                 "id": "ProVerif.vscode-proverif"
             }
         },
+        "ForceConfigControl.lightningflowscanner": true,
         "FrankaEmika.ride-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -340,6 +341,7 @@
         "MS-CEINTL.vscode-language-pack-nl": true,
         "MS-CEINTL.vscode-language-pack-ps": true,
         "MS-CEINTL.vscode-language-pack-uk": true,
+        "MSFTLearnTogether.learn-together-color-theme": true,
         "Meowcolm024.has-go": {
             "disallowInstall": true,
             "extension": {
@@ -347,6 +349,8 @@
                 "id": "Meowcolm024.runner2"
             }
         },
+        "MicrosoftGDXteam.VisualStudioInternationalFeaturePack": true,
+        "MicrosoftGDXteam.VisualStudioInternationalFeaturePack20Beta": true,
         "ModyQyW.vscode-uni-app-schemas": {
             "disallowInstall": true,
             "extension": {
@@ -1025,6 +1029,13 @@
                 "id": "ocamllabs.ocaml-platform"
             }
         },
+        "friggeri.prism-vscode-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "PVC",
+                "id": "friggeri.pvc-vscode-theme"
+            }
+        },
         "gamunu.opentofu": {
             "disallowInstall": true,
             "extension": {
@@ -1172,6 +1183,7 @@
                 "id": "circleci.circleci"
             }
         },
+        "josin.kusto-syntax-highlighting": true,
         "jpogran.puppet-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -1410,6 +1422,7 @@
                 "id": "Stripe.markdoc-language-support"
             }
         },
+        "move.move-analyzer": true,
         "mrmlnc.vscode-remark": {
             "disallowInstall": true,
             "extension": {
@@ -1462,6 +1475,7 @@
                 "id": "ms-ossdata.vscode-pgsql"
             }
         },
+        "ms-toolsai.vscode-ai-remote-web": true,
         "ms-vscode.azure-account": {
             "disallowInstall": true,
             "extension": {
@@ -1970,6 +1984,8 @@
         "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
     },
     "malicious": [
+        "JosephDembele95.email-grabber",
+        "RabobankAI.rabobank-code-assistant",
         "blackforest.blackforest-1234",
         "prettierteam.prettier",
         "evaera-rbx.vscode-rojo-rbx",
@@ -2202,7 +2218,12 @@
         "ab-498.cppformat",
         "ab-498.cppplayground",
         "ab-498.httpformat",
-        "JuanFBlanco.awswhh"
+        "JuanFBlanco.awswhh",
+        "reactsnippetsai.es7-react-js-snippets-ai",
+        "OmniMind.node-ai",
+        "NFoundation.terraform-ai",
+        "vuesnippetsai.vue-snippets-ai",
+        "GPTOnce.codepilot-vscode"
     ],
     "migrateToPreRelease": {
         "HashiCorp.terraform-preview": {
