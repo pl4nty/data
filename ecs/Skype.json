@@ -3913,9 +3913,6 @@
             "enabled": true
         }
     },
-    "SkypeTransport": {
-        "testEcsKey": "test"
-    },
     "SkypeVideoLibrary": {
         "AV1SceneChangeBlockMatchPct": 25,
         "AV1SceneChangeMeanThresh": 24,
