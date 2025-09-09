@@ -1406,6 +1406,7 @@ LLMPromptGrader = function(l_10_0)
   for l_10_15,l_10_16 in ipairs(l_10_11) do
     local l_10_17, l_10_18 = UrlGrader(l_10_16, "LLMPromptGrader", true)
     l_10_1 = l_10_1 + l_10_17
+    l_10_18.url = l_10_16
     ;
     (table.insert)(l_10_9, l_10_18)
   end
@@ -1414,6 +1415,7 @@ LLMPromptGrader = function(l_10_0)
   for l_10_23,l_10_24 in ipairs(l_10_11) do
     local l_10_25, l_10_26 = UrlGrader(l_10_24, "LLMPromptGrader", true)
     l_10_1 = l_10_1 + l_10_25
+    l_10_26.url = l_10_24
     ;
     (table.insert)(l_10_9, l_10_26)
   end
