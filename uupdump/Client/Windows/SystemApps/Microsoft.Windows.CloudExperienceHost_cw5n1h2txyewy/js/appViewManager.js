@@ -88,6 +88,9 @@ var CloudExperienceHost;
                 return new WinJS.Promise(() => { });
             }
         }
+        setBackgroundImage(appDataUri) {
+            return this.notifyObserver(CloudExperienceHost.FrameViewModelUpdateType.SetBackgroundImage, appDataUri);
+        }
         setGamepadLegendDisplayOverrideForB(displayText) {
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
                 return this.notifyObserversOfUpdateType(CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB, displayText);

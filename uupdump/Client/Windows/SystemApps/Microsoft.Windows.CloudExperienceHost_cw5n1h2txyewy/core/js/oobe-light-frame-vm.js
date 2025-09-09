@@ -208,6 +208,70 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
             }
         }
 
+        SetBackgroundImageUsingAppDataUri(appDataUri) {
+            if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeSetBackgroundImage")) {
+                return;
+            }
+
+            if (!this.isValidAppDataUrl(appDataUri)) {
+                CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_InvalidAppDataUri");
+            }
+            else {
+                let uri = new Windows.Foundation.Uri(appDataUri);
+                Windows.Storage.StorageFile.getFileFromApplicationUriAsync(uri).then(
+                    (file) => {
+                        let svgFilterString = `<filter id="background-blur" x="0" y="0" width="1" height="1">
+                                                    <feGaussianBlur stdDeviation="45" result="blurred" />
+                                                </filter >`;
+                        let svgBackdropHTML = `<svg class="SVGBackdropImage">` + svgFilterString + `<image href="` + appDataUri + `" filter="url(#background-blur)" height="100%" width="100%"> </svg>`;
+
+                        let backgroundContainer = document.getElementsByClassName("background-image-container");
+                        let backgroundSVGContainer = document.getElementsByClassName("svgContainer");
+
+                        if ((backgroundSVGContainer.length == 0) && (backgroundContainer.length == 1)) {
+                            let oldBackgroundSVGBackdropImageEle = document.getElementsByClassName("SVGBackdropImage");
+
+                            let oldBackgroundSVGContainer = document.createElement('div');
+                            oldBackgroundSVGContainer.setAttribute('class', 'svgContainer');
+                            oldBackgroundSVGContainer.innerHTML = backgroundContainer[0].innerHTML;
+                            backgroundContainer[0].appendChild(oldBackgroundSVGContainer);
+
+                            oldBackgroundSVGBackdropImageEle[0].remove();
+
+                            backgroundSVGContainer = document.getElementsByClassName("svgContainer");
+                        }
+
+                        if (backgroundSVGContainer.length > 0) {
+                            let oldBackgroundSVGContainer = backgroundSVGContainer[0];
+                            if (backgroundContainer.length > 0) {
+                                let newBackgroundSVGContainer = document.createElement('div');
+                                newBackgroundSVGContainer.setAttribute('class', 'svgContainer');
+                                newBackgroundSVGContainer.innerHTML = svgBackdropHTML;
+                                newBackgroundSVGContainer.classList.add("fade-in");
+
+                                backgroundContainer[0].appendChild(newBackgroundSVGContainer);
+
+                                newBackgroundSVGContainer.addEventListener("animationend", () => {
+                                    oldBackgroundSVGContainer.remove();
+                                });
+
+                                CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_Success");
+                            }
+                            else {
+                                CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_InvalidBackgroundContainerElement");
+                            }
+                        }
+                        else {
+                            CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_InvalidBackgroundSVGContainerElement");
+                        }
+                    },
+                    (error) => {
+                        CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_Error", CloudExperienceHost.GetJsonFromError(error));
+                    }
+                );
+            }
+        }
+
         dispose() {
             appViewManager.unSubscrible();
             appViewManager.unsubscribeForUpdateType(this, CloudExperienceHost.FrameViewModelUpdateType.Language);
@@ -465,6 +529,13 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                         }, 333);
                     }
                     completeDispatch();
+                    break;
+
+                case CloudExperienceHost.FrameViewModelUpdateType.SetBackgroundImage:
+                    if (updateTag) {
+                        this.SetBackgroundImageUsingAppDataUri(updateTag);
+                        completeDispatch();
+                    }
                     break;
             }
         }
