@@ -356,6 +356,8 @@ l_0_2 = ".lynx"
 l_0_1[l_0_2] = true
 l_0_2 = l_0_1[l_0_0]
 if l_0_2 == true then
+  l_0_2 = reportTimingData
+  l_0_2()
   l_0_2 = mp
   l_0_2 = l_0_2.INFECTED
   return l_0_2

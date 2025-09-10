@@ -25,6 +25,7 @@ do
         end
         if extractDllForRegproc(l_0_6) and checkFileLastWriteTime(extractDllForRegproc(l_0_6), 600) == false and (mp.IsKnownFriendlyFile)(extractDllForRegproc(l_0_6), true, false) == false then
           (bm.add_related_file)(extractDllForRegproc(l_0_6))
+          reportTimingData()
           return mp.INFECTED
         end
       end
