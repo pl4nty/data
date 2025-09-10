@@ -65,6 +65,10 @@ if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
       local l_0_12 = "MAC_BROWSERDOWNLOAD_PATH"
       local l_0_13 = (mp.GetCertificateInfo)()
       if #l_0_13 < 1 or l_0_13 == nil then
+        local l_0_14 = l_0_3:match("(/.*)/")
+        if ((string.find)(l_0_14, ".download", -9, true) and l_0_3 == "") or l_0_3 == nil then
+          return mp.CLEAN
+        end
         if l_0_11 then
           (MpCommon.BmTriggerSig)(l_0_11, "BM_MACFILE_DOWNLOADFROM_BROWSEREMAIL", l_0_3)
           TrackPidAndTechnique(l_0_11, "T1566.002", "InitialAccess_Phishing_SpearphishingLink")
@@ -77,7 +81,7 @@ if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
 end
 do
   do
-    -- DECOMPILER ERROR at PC313: Overwrote pending register: R4 in 'AssignReg'
+    -- DECOMPILER ERROR at PC337: Overwrote pending register: R4 in 'AssignReg'
 
     do return l_0_4 end
     -- WARNING: undefined locals caused missing assignments!

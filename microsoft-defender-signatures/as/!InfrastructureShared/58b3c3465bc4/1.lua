@@ -43,6 +43,8 @@ do
 
     ;
     (bm.add_related_string)("KernelModuleLoadCmdLine", l_0_3, bm.RelatedStringBMReport)
+    ;
+    (mp.ReportLowfi)(l_0_16, 1690978323)
     return mp.INFECTED
   end
 end
