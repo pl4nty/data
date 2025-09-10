@@ -1239,6 +1239,7 @@
                 "EnableSpoXTenantMembership": true,
                 "EnableStrongConsistencyForConfigApiGetCalls ": true,
                 "EnableTargetLinkSyncHandlerInNP": true,
+                "EnableThreadingModifiedModalityUserId": true,
                 "ExcludeIncomingChannelsInArchivalFlow": true,
                 "FirstPartyTemplatesToFilter": [],
                 "GroupSkypeTeamActivitySleepInms": 1200,

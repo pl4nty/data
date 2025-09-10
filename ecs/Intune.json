@@ -268,7 +268,7 @@
     },
     "SVC_DiagnosticService": {
         "FlightingV2": {
-            "EnableRawKustoQuerySupport": false
+            "EnableRawKustoQuerySupport": true
         }
     },
     "SVC_Edu": {
@@ -358,7 +358,8 @@
     },
     "UX_Core": {
         "FlightingV2": {
-            "HideCartToClass": true
+            "HideCartToClass": true,
+            "ShowAFDBanner": true
         }
     },
     "UX_EPM": {

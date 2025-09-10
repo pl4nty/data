@@ -593,7 +593,6 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
@@ -3270,6 +3269,9 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
+        "BweRampupOnProbe": {
+            "enableRampup": false
+        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3919,7 +3921,64 @@
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
         "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1"
+        "SkipGpuQueryForVM": "1",
+        "ULLogUpload": {
+            "conditions": [
+                {
+                    "component": "LMS.MEDIAMGR_API",
+                    "level": "DEBUG1",
+                    "logId": 2102883935,
+                    "matchers": [
+                        {
+                            "arg": 0,
+                            "op": "!=",
+                            "value": "0"
+                        }
+                    ],
+                    "name": "Condition #0"
+                },
+                {
+                    "component": "LMS.MEDIAMGR_API",
+                    "level": "DEBUG1",
+                    "logId": 2733496783,
+                    "matchers": [
+                        {
+                            "arg": 0,
+                            "op": "=",
+                            "value": "1"
+                        }
+                    ],
+                    "name": "Condition #1"
+                }
+            ],
+            "experimentTarget": "Native",
+            "filters": [
+                {
+                    "component": "LMS.MEDIAMGR_API",
+                    "level": "DEBUG1"
+                },
+                {
+                    "component": "LMS.RtmCodecs_GENERIC",
+                    "level": "DEBUG6"
+                }
+            ],
+            "mutualSubmissionType": "none",
+            "name": "AttachDevice failed case 2 #4263481",
+            "reenableAfterTriggering": false,
+            "resetCondition": {
+                "component": "LMS.MEDIAMGR_API",
+                "level": "DEBUG1",
+                "logId": 2733496783,
+                "matchers": [
+                    {
+                        "arg": 0,
+                        "op": "=",
+                        "value": "0"
+                    }
+                ],
+                "name": "Condition #reset"
+            }
+        }
     },
     "SkypeWebMedia": {
         "mediaAgent": {
