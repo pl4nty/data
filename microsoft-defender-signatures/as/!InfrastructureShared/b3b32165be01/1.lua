@@ -17,6 +17,7 @@ do
     if l_0_1.command_line then
       bm_AddRelatedFileFromCommandLine(l_0_1.command_line, nil, nil, 4)
     end
+    reportTimingData()
     return mp.INFECTED
   end
   return mp.CLEAN

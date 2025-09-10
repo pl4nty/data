@@ -177,32 +177,43 @@ BasToolTrackProcess = function(l_4_0, l_4_1, l_4_2, l_4_3)
   if l_4_2 ~= nil and type(l_4_2) == "string" then
     l_4_2 = (string.lower)(l_4_2)
     AppendToRollingQueueNamespaced(l_4_5, l_4_4, l_4_2, l_4_3)
-    pcall(MpCommon.BmTriggerSig, l_4_0, l_4_4, l_4_2)
+    pcall(MpCommon.BmTriggerSig, l_4_0, "BasToolTrackingContext", l_4_2)
   end
   return 
 end
 
-IsBasToolProcessForPpid = function(l_5_0, l_5_1)
+IsBasToolProcessForPpid = function(l_5_0, l_5_1, l_5_2)
   -- function num : 0_4
   if l_5_0 == nil then
     return 
   end
-  local l_5_2 = "BasToolTracking"
+  local l_5_3 = "BasToolTracking"
   l_5_0 = GetRealPidForScenario(l_5_0)
-  local l_5_3 = "bas-" .. l_5_0
+  local l_5_4 = "bas-" .. l_5_0
   if l_5_1 ~= nil then
     l_5_1 = (string.lower)(l_5_1)
   else
     l_5_1 = "any"
   end
-  local l_5_4, l_5_5 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_5_3, l_5_2, l_5_1)
-  if l_5_4 and l_5_5 ~= nil and l_5_5 >= 1 then
-    return true
+  local l_5_5, l_5_6 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_5_4, l_5_3, l_5_1)
+  if l_5_5 and l_5_6 ~= nil and l_5_6 >= 1 then
+    if l_5_2 == nil then
+      return true
+    end
+    if l_5_2 ~= nil then
+      l_5_2 = (string.lower)(l_5_2)
+      local l_5_7, l_5_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_5_4, l_5_3, l_5_2)
+      if l_5_7 and l_5_8 ~= nil and l_5_8 >= 1 then
+        return true
+      end
+    end
   end
-  return false
+  do
+    return false
+  end
 end
 
-IsBasToolProcessFoundInParents = function(l_6_0, l_6_1, l_6_2)
+IsBasToolProcessFoundInParents = function(l_6_0, l_6_1, l_6_2, l_6_3)
   -- function num : 0_5
   if l_6_0 == nil then
     return 
@@ -216,31 +227,32 @@ IsBasToolProcessFoundInParents = function(l_6_0, l_6_1, l_6_2)
   if l_6_2 <= 0 then
     return false
   end
-  local l_6_3 = l_6_0
+  local l_6_4 = l_6_0
   l_6_0 = GetRealPidForScenario(l_6_0)
-  local l_6_4 = false
-  if (string.lower)(l_6_3) == "cmdhstr" then
-    l_6_4 = IsBasToolProcessForPpid(l_6_0, l_6_1)
-    if l_6_4 then
-      return l_6_4
+  local l_6_5 = false
+  if (string.lower)(l_6_4) == "cmdhstr" then
+    l_6_5 = IsBasToolProcessForPpid(l_6_0, l_6_1, l_6_3)
+    if l_6_5 then
+      return l_6_5
     end
   end
-  local l_6_5 = (mp.GetParentProcInfo)(l_6_0)
-  if l_6_5 ~= nil and l_6_5.ppid ~= nil then
-    l_6_4 = IsBasToolProcessForPpid(l_6_5.ppid, l_6_1)
-    if l_6_4 then
-      return l_6_4
+  local l_6_6 = (mp.GetParentProcInfo)(l_6_0)
+  if l_6_6 ~= nil and l_6_6.ppid ~= nil then
+    l_6_5 = IsBasToolProcessForPpid(l_6_6.ppid, l_6_1, l_6_3)
+    if l_6_5 then
+      return l_6_5
     else
-      local l_6_6 = IsBasToolProcessFoundInParents
-      local l_6_7 = l_6_5.ppid
-      local l_6_8 = l_6_1
+      local l_6_7 = IsBasToolProcessFoundInParents
+      local l_6_8 = l_6_6.ppid
+      local l_6_9 = l_6_1
+      local l_6_10 = l_6_2 - 1
       do
-        local l_6_9 = l_6_2 - 1
-        do return l_6_6(l_6_7, l_6_8, l_6_9) end
-        -- DECOMPILER ERROR at PC62: Confused about usage of register R7 for local variables in 'ReleaseLocals'
+        local l_6_11 = l_6_3
+        do return l_6_7(l_6_8, l_6_9, l_6_10, l_6_11) end
+        -- DECOMPILER ERROR at PC65: Confused about usage of register R8 for local variables in 'ReleaseLocals'
 
         do return false end
-        -- DECOMPILER ERROR at PC64: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC67: Confused about usage of register R7 for local variables in 'ReleaseLocals'
 
       end
     end
@@ -290,7 +302,7 @@ IsBasToolTrackedFile = function(l_8_0, l_8_1, l_8_2)
     end
     if l_8_2 ~= nil then
       l_8_2 = (string.lower)(l_8_2)
-      local l_8_7, l_8_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_8_0, l_8_4, l_8_1)
+      local l_8_7, l_8_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_8_0, l_8_4, l_8_2)
       if l_8_7 and l_8_8 ~= nil and l_8_8 >= 1 then
         return true
       end

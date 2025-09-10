@@ -12,6 +12,7 @@ else
   end
 end
 if l_0_0 == mp.INFECTED then
+  reportTimingData()
   return mp.INFECTED
 end
 return mp.CLEAN
