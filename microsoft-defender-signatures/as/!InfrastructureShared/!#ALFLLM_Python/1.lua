@@ -30,6 +30,11 @@ do
   if l_0_8 then
     set_research_data("sus_indicator", l_0_9, false)
   end
+  local l_0_10 = (mp.enum_mpattributesubstring)("cnt:llm:suspicious_arg")
+  if l_0_10 and #l_0_10 > 0 then
+    set_research_data("llm_susp_args", (table.concat)(l_0_10, "|"), false)
+    return mp.INFECTED
+  end
   if not l_0_4 and #l_0_1 == 0 and not l_0_9 then
     return mp.CLEAN
   end
