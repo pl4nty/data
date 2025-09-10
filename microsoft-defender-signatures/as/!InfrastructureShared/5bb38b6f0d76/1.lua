@@ -30,6 +30,9 @@ end
 if l_0_4 == "" or l_0_4 == nil then
   return mp.CLEAN
 end
+if (string.find)(l_0_3, "local/bin/telepresence", 1, true) or (string.find)(l_0_3, "local/bin/ludus", 1, true) then
+  return mp.CLEAN
+end
 do
   if (string.find)(l_0_4, "xattr -c", 1, true) or (string.find)(l_0_4, "xattr -d", 1, true) or (string.find)(l_0_4, "xattr -rc", 1, true) or (string.find)(l_0_4, "xattr -rd", 1, true) then
     local l_0_5 = l_0_3:match("([^/]+)$")
