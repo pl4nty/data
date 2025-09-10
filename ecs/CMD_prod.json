@@ -9,6 +9,9 @@
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
         "AllowVSBGetWarningGalleryImage": true,
+        "Aspen": {
+            "LockOnDisconnect": true
+        },
         "AssignAudit": false,
         "BackFillGroupLicenseAssignmentId": true,
         "BlobCNameEnabled": true,
