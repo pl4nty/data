@@ -182,10 +182,6 @@ BASE_DECLARE_FEATURE(kContinuousMigrationCookieMergeLogicV3);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeContinuousImportProng1UrlActivation);
 
-// Flag to enable new bookmarks logic for chrome imports.
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kContinuousMigrationBookmarksMergeLogicV2);
-
 // Flag to share MUID, ANID and ClientId to One Ds
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousMigrationUploadIds);
