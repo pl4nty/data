@@ -384,6 +384,10 @@ BASE_DECLARE_FEATURE_TRIGGER(kMacFrostedGlassVisualEffectTrigger);
 // if enabled, frosted glass visual effect will be shown in Edge Mac Window.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMacFrostedGlassVisualEffectEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern const base::FeatureParam<int> kMacFrostedGlassVisualEffectDelayMs;
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern int GetMacFrostedGlassVisualEffectDelayMs();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kMacFrostedGlassVisualEffectHorizontalTab);
