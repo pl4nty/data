@@ -705,6 +705,7 @@
         "EnableReportingFrontlineAllotment": true,
         "EnableReprovisionRestoreFlow": true,
         "EnableReserveBypassBlockProvision": true,
+        "EnableReserveDeprovisionForwarderDataStream": true,
         "EnableResetMaintainRestorePointInPolicy": true,
         "EnableResetMaintainRestorePointInUX": true,
         "EnableResetPurgeStorageAccount": true,

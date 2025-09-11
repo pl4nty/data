@@ -951,6 +951,7 @@
         "TenantValidationDecorator": true,
         "UnificationWave1": true,
         "UpdateCAPolicyWithPMEIPAddresses": true,
+        "UseAllDevicesV2": true,
         "UseCachedOptInSetting": true,
         "UseManagedIdentityForSitopsPlatform": true,
         "ValdiateIntuneTenantSyncReadiness": true,
