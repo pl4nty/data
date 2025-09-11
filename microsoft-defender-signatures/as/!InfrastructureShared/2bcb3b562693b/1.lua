@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2b3b39d458426\1.luac 
+-- Command line: lua\!InfrastructureShared\2bcb3b562693b\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -26,12 +26,10 @@ do
       if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this_sigattrlog[3]).utf8p2 ~= "" then
         local l_0_8, l_0_9 = , (this_sigattrlog[3]).utf8p2
         if l_0_9 ~= nil and l_0_2 ~= nil and l_0_2:match("([^/]+%.app.*)/([^/]+)$") ~= nil then
-          if not (string.find)(R5_PC108, ".asar", -5, true) then
+          if l_0_2 ~= "app.asar" then
             return mp.CLEAN
           end
-          -- DECOMPILER ERROR at PC125: Overwrote pending register: R5 in 'AssignReg'
-
-          if (string.find)(R5_PC108, R6_PC120, 1, true) and (string.find)(R5_PC108, R6_PC120, 1, true) then
+          if (string.find)(l_0_9, R6_PC113, 1, true) and (string.find)(l_0_9, R6_PC113, 1, true) then
             return mp.INFECTED
           end
         end
