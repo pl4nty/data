@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19303.40128-->
+    <!--Build: 16.0.19211.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1528,7 +1528,7 @@
       <o:url>wss://prodeu.augmentation.osi.office.net/officeaugmentation/searchendpoint/</o:url>
     </o:service>
     <o:service o:name="OneSurveyServiceApiUrl" o:authentication="1">
-      <o:url>https://mop.svc.cloud.microsoft/api/v1.0/UserSurvey/AuthRequest</o:url>
+      <o:url>https://oness.microsoft.com/api/v1.0/UserSurvey/AuthRequest</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://oness.microsoft.com/api" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="C2RCDNBackgroundUrl">
@@ -1722,10 +1722,6 @@
     </o:service>
     <o:service o:name="OCMReputationTokenHost">
       <o:url>https://dataservice.o365filtering.com</o:url>
-    </o:service>
-    <o:service o:name="OCMConvergedMPCHost" o:authentication="2">
-      <o:url>https://home.microsoftpersonalcontent.com</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://home.microsoftpersonalcontent.com/v2/.default" o:headerValue="Bearer {}"/>
     </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>
