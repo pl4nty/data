@@ -1030,6 +1030,8 @@
         "FlightingForCreateVnetAndNSGwithHOBOTag": true,
         "FlightingForGetNatgatewayEntity": true,
         "FlightingForOutboundSwitchOrchestrator": true,
+        "FlightingForRetrieveSubnetMaintenanceWindowTimer": true,
+        "FlightingPickToInspectOutboundTypeSubnetViaUsagePredictive": true,
         "FlightingReleasePublicIPQuotaTimer": true,
         "FlightingSyncLoadBalancerUsageFromAzure": true,
         "FlightingTimerFunctionActualSwitchOutboundType": true,
