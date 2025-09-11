@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32278433,
+    "size": 32290315,
     "file_count": 3952
   },
   {
@@ -130,11 +130,6 @@
     "file_count": 32
   },
   {
-    "name": "crossbench",
-    "size": 186404,
-    "file_count": 2
-  },
-  {
     "name": "crossbench-web-tests",
     "size": 139935,
     "file_count": 5
@@ -151,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16270124,
+    "size": 16270212,
     "file_count": 252
   },
   {
@@ -371,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6183899,
+    "size": 6185566,
     "file_count": 937
   },
   {
@@ -566,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3837170,
+    "size": 3841453,
     "file_count": 579
   },
   {
@@ -651,7 +646,7 @@
   },
   {
     "name": "skia",
-    "size": 3463352,
+    "size": 3463351,
     "file_count": 1179
   },
   {
@@ -736,7 +731,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6268256,
+    "size": 6270026,
     "file_count": 168
   },
   {
