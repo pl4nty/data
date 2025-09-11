@@ -76,7 +76,6 @@
                     WinJS.Utilities.addClass(document.body, "pageLoaded");
                     modules.legacy_bridge.fireEvent(modules.legacy_events.Events.visible, true);
                     KoHelpers.setFocusOnAutofocusElement();
-                    vm.startVoiceOver();
                 });
             });
         }

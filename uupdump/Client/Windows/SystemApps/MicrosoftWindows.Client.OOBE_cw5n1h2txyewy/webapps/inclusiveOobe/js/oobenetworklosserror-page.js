@@ -30,7 +30,7 @@
             });
         },
         ready: (element, options) => {
-            require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobenetworklosserror-vm', 'lib/knockout-winjs', 'corejs/xy-transfer-wrapper-down'], (ko, KoHelpers, bridge, constants, NetworkLossErrorViewModel) => {
+            require(['lib/knockout', 'corejs/knockouthelpers', 'legacy/bridge', 'legacy/events', 'oobenetworklosserror-vm', 'lib/knockout-winjs'], (ko, KoHelpers, bridge, constants, NetworkLossErrorViewModel) => {
                 // Setup knockout customizations
                 koHelpers = new KoHelpers();
                 koHelpers.registerComponents(CloudExperienceHost.RegisterComponentsScenarioMode.InclusiveOobe);
