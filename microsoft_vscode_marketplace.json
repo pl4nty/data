@@ -298,6 +298,7 @@
                 "id": "cdm-processors.vscode-cdm-extension"
             }
         },
+        "JJHO.MicrosoftVisualStudioInternationalPack10SR1": true,
         "KhanhTranQuoc.holistics-aml-extension": {
             "disallowInstall": true,
             "extension": {
@@ -403,11 +404,19 @@
         },
         "NilsSoderman.quickprint": true,
         "NilsSoderman.sitemap-generator": true,
+        "OfficeDeveloperTeam.MicrosoftOffice365APIToolsforVisualStudio2013": true,
         "Oracle.oracledevtools": {
             "disallowInstall": false,
             "extension": {
                 "displayName": "Oracle SQL Developer Extension for VSCode",
                 "id": "Oracle.sql-developer"
+            }
+        },
+        "Pasu4.neuropilot": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "NeuroPilot",
+                "id": "VSC-NeuroPilot.neuropilot-base"
             }
         },
         "PhilHindle.errorlens": {
@@ -642,6 +651,13 @@
             "extension": {
                 "displayName": "ImandraX",
                 "id": "imandra.imandrax"
+            }
+        },
+        "agani-ds.avr-utils": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "MPLAB",
+                "id": "Microchip.mplab-extension-pack"
             }
         },
         "aikoven.slice": {
