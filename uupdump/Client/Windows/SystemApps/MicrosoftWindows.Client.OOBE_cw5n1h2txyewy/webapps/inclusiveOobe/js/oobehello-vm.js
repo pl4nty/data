@@ -304,8 +304,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
 
         updateToConfirmationPage() {
             this.isConfirmationPageVisible(true);
-            this.title(resourceStrings.AllSetText2);
-            this.subtitle("");
             this.flexEndButtons([{
                 buttonText: resourceStrings.NextButtonText,
                 buttonType: "button",
@@ -324,6 +322,10 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
 
             // Restore focus to the default focusable element as the flow is returning to this page
             KoHelpers.setFocusOnAutofocusElement();
+
+            // Update the title and subtitle after restoring focus to ensure Narrator reads the updated text
+            this.title(resourceStrings.AllSetText2);
+            this.subtitle("");
         }
 
         static _onResize(param) {

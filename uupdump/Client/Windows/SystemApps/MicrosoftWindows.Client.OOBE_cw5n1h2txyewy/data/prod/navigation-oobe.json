@@ -317,7 +317,7 @@
       "cxid": "OobePC2PCMigration",
       "url": "https://sdx.microsoft.com/frx/pc-to-pc-migration",
       "urlint": "https://sdx.microsoft-int.com/frx/pc-to-pc-migration",
-      "disableBackNavigationToNodeOnSuccess": true,
+      "disableBackNavigationToNode": true,
       "requiredFeatureName": "OobePC2PCMigration",
       "internetRequired": true,
       "successID": "OobeOemRegistrationPostSettings",
@@ -333,6 +333,11 @@
       "cxid": "OobeOemRegistrationPostSettings",
       "frameAnimation": "oemRegistrationLottie.json",
       "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
+      "preloadCheck": {
+        "value": "",
+        "overrideValue": "CloudExperienceHost.OobeOemRegistrationPostSettings",
+        "overrideFeature": "AddPreloadCheckIntoOEMRegistration"
+      },
       "successID": "OobeUserIntent",
       "exitID": "OobeUserIntent",
       "cancelID": "OobeUserIntent",
@@ -568,6 +573,11 @@
       "cxid": "OobeOemRegistrationPostSettings",
       "frameAnimation": "oemRegistrationHandheldLottie.json",
       "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
+      "preloadCheck": {
+        "value": "",
+        "overrideValue": "CloudExperienceHost.OobeOemRegistrationPostSettings",
+        "overrideFeature": "AddPreloadCheckIntoOEMRegistration"
+      },
       "successID": "OobeGamepass",
       "exitID": "OobeGamepass",
       "cancelID": "OobeGamepass",

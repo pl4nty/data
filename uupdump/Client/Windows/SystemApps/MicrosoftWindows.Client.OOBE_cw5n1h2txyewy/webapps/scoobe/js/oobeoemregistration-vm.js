@@ -337,15 +337,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             return this.countryCodeDefaultSelectOption;
         }
 
-        startVoiceOver() {
-            try {
-                CloudExperienceHostAPI.Speech.SpeechRecognition.stop();
-                CloudExperienceHostAPI.Speech.SpeechSynthesis.speakAsync(this.resourceStrings.PageIntroVoiceOver);
-            }
-            catch (err) {
-            }
-        }
-
         handleBackNavigation() {
             if (this.currentPanelIndex() === 1) {
                 this.currentPanelIndex(0);
