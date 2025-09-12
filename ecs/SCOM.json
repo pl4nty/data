@@ -12,9 +12,9 @@
         },
         "functionalabtest": "/test/platform/abtestpage",
         "functionalabtests": "/test/ux/abtestpage/abtestpage-ab-b",
-        "homePageTest": "A",
-        "navigationSourceUrlSetting": "default",
-        "newsiteabtest": "/test/ab-test/home",
+        "homePageTest": "B",
+        "navigationSourceUrlSetting": "secondary",
+        "newsiteabtest": "/home",
         "skypeForBusinessPrice": "$5.00",
         "supporttest": "/test/ux/Components/ab-test"
     }
