@@ -365,6 +365,11 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsSemanticNonColorTokensForP2SurfacesEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kUseMAIDS);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIDesignSystemEnabled();
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMenuFontSizeEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvVerticalTabsEnabled();
