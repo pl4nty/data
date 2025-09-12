@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2085980,
-    "file_count": 178
+    "size": 2087247,
+    "file_count": 179
   },
   {
     "name": "alsa",
@@ -31,12 +31,12 @@
   },
   {
     "name": "android_toolchain",
-    "size": 558819,
+    "size": 563777,
     "file_count": 9
   },
   {
     "name": "angle",
-    "size": 14633451,
+    "size": 14634380,
     "file_count": 830
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32290315,
+    "size": 32291598,
     "file_count": 3952
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17978710,
+    "size": 17996555,
     "file_count": 1010
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16270212,
+    "size": 16272235,
     "file_count": 252
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "name": "glslang",
-    "size": 43202699,
+    "size": 43202720,
     "file_count": 3190
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6185566,
+    "size": 6185863,
     "file_count": 937
   },
   {
@@ -561,7 +561,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3841453,
+    "size": 3845350,
     "file_count": 579
   },
   {
@@ -686,13 +686,13 @@
   },
   {
     "name": "test_fonts",
-    "size": 74267,
+    "size": 74285,
     "file_count": 13
   },
   {
     "name": "tflite",
-    "size": 1657260,
-    "file_count": 491
+    "size": 1665424,
+    "file_count": 495
   },
   {
     "name": "tflite_support",
@@ -731,7 +731,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6270026,
+    "size": 6269943,
     "file_count": 168
   },
   {
