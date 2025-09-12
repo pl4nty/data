@@ -1418,11 +1418,6 @@
         "usage": true,
         "useCogsV2IdlePredictionPipeline": true,
         "user": true,
-        "windows365Client": {
-            "scenarios": {
-                "enableProviderRedirectionForBoot": true
-            }
-        },
         "windows365client": {
             "App": {
                 "httpRequestTimeoutSec": 10
