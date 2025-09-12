@@ -958,8 +958,9 @@
         "name": "PSResourceGet",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.0",
+        "version": "1.2.0-preview2",
         "versions": [
+            "1.2.0-preview2",
             "1.0.0"
         ]
     },
