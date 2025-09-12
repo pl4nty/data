@@ -23,8 +23,9 @@ if l_0_2 and "winlogon.exe" and Contains_any_caseinsenstive("explorer.exe", l_0_
   return mp.CLEAN
 end
 local l_0_4, l_0_5 = LLMPromptGrader(l_0_1)
+local l_0_6 = false
 if l_0_4 >= 215 and l_0_5.hasSuspPattern then
-  return mp.INFECTED
+  l_0_6 = true
 end
 if l_0_4 <= 0 then
   return mp.CLEAN
@@ -34,13 +35,17 @@ if l_0_4 < 5 and #l_0_1 < 500 then
 end
 l_0_5.Cmdline = l_0_1
 l_0_5.Parents = add_parents_mp()
-do
-  if l_0_2 and l_0_2.ppid then
-    local l_0_6 = safeJsonSerialize(l_0_5, 150, nil, true)
-    ;
-    (MpCommon.BmTriggerSig)(l_0_2.ppid, "LLMPromptGrader", l_0_6)
-    return mp.LOWFI
-  end
-  return mp.CLEAN
+l_0_5.IsBlocking = l_0_6
+l_0_5.LLM_Info = GetLLMModelFromCmd(l_0_1)
+local l_0_7 = safeJsonSerialize(l_0_5, 150, nil, true)
+if l_0_2 and l_0_2.ppid then
+  (MpCommon.BmTriggerSig)(l_0_2.ppid, "LLMPromptGrader", l_0_7)
 end
+set_research_data("IsBlocking", l_0_6, false)
+set_research_data("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_7)), false)
+set_research_data("LLM_Technology", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_5.LLM_Info)), false)
+if l_0_6 then
+  return mp.INFECTED
+end
+return mp.LOWFI
 

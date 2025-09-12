@@ -15,16 +15,20 @@ local l_0_2, l_0_3 = LLMPromptGrader(l_0_1)
 if l_0_2 <= 0 then
   return mp.CLEAN
 end
+local l_0_4 = false
+if l_0_2 >= 215 and l_0_3.hasSuspPattern then
+  l_0_4 = true
+end
 l_0_3.Cmdline = l_0_1
 l_0_3.Parents = add_parents_mp()
-local l_0_4 = (mp.GetParentProcInfo)()
-do
-  if l_0_4 and l_0_4.ppid then
-    local l_0_5 = safeJsonSerialize(l_0_3, 150, nil, true)
-    ;
-    (MpCommon.BmTriggerSig)(l_0_4.ppid, "xplat_LLMPromptGrader", l_0_5)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+l_0_3.LLM_Info = GetLLMModelFromCmd(l_0_1)
+local l_0_5 = (mp.GetParentProcInfo)()
+local l_0_6 = safeJsonSerialize(l_0_3, 150, nil, true)
+if l_0_5 and l_0_5.ppid then
+  (MpCommon.BmTriggerSig)(l_0_5.ppid, "xplat_LLMPromptGrader", l_0_6)
 end
+set_research_data("IsBlocking", l_0_4, false)
+set_research_data("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_6)), false)
+set_research_data("LLM_Technology", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_3.LLM_Info)), false)
+return mp.INFECTED
 
