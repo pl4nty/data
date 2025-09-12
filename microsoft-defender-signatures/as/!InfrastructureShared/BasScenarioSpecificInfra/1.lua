@@ -140,6 +140,7 @@ IsBasToolFilenameContext = function(l_3_0, l_3_1)
     l_3_2["sbsimulation_sb_%d+_bs_%d+_red%.exe$"] = "safebreach"
     l_3_2["sbsimulation_sb_%d+_bs_%d+_local%.exe$"] = "safebreach"
     l_3_2["sbsimulation_sb_%d+_bs_%d+_green%.exe$"] = "safebreach"
+    l_3_2["picus.simulator.exe"] = "picus"
     for l_3_6,l_3_7 in pairs(l_3_2) do
       if l_3_0:match(l_3_6) then
         if l_3_1 ~= nil then
