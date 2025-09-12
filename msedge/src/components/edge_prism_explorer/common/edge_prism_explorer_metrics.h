@@ -90,19 +90,6 @@ enum class PrismSmartExplorerFeedbackEvents {
 // These values are persisted to logs. Entries should not be renumbered or
 // removed and numeric values should never be reused.
 // Please keep in sync with
-// "Microsoft.PrismSmartExplorerFeedback.FeedbackEvents" in
-// src/tools/metrics/histograms/edge_enums.xml.
-enum class ImageAskCopilotAction {
-  kContextMenuCopilotIconClick = 0,
-  kContextMenuVisualSearchIconClick = 1,
-  kHoverMenuCopilotIconClick = 2,
-  kHoverMenuVisualSearchIconClick = 3,
-  kMaxValue = kHoverMenuVisualSearchIconClick,
-};
-
-// These values are persisted to logs. Entries should not be renumbered or
-// removed and numeric values should never be reused.
-// Please keep in sync with
 // "Microsoft.RenderViewContextMenuItem" in
 // src/tools/metrics/histograms/edge_enums.xml.
 enum class AskCopilotImageAction {
@@ -180,7 +167,6 @@ void RecordSaveControlIframeLoadTime(base::TimeDelta delta);
 
 void RecordSaveControlFlyoutStartRenderingTime(base::TimeDelta delta);
 
-void RecordImageAckCopilotAction(ImageAskCopilotAction action);
 
 void RecordAskCopilotImageAction(AskCopilotImageAction action);
 
