@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
@@ -3913,7 +3914,8 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1"
+        "NrpRefactor265_naluCount": "1",
+        "SkipGpuQueryForVM": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {

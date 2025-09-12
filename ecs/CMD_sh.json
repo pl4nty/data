@@ -327,6 +327,7 @@
         "EnableCloudPcFrontlineConcurrencyScenario": true,
         "EnableCloudPcFrontlineInsufficientLicensesScenario": true,
         "EnableCloudPcFrontlineSharedBulkActionDeviceValidation": true,
+        "EnableCloudPcInGracePeriodScenarioV2": true,
         "EnableCloudPcInaccessibleScenario": true,
         "EnableCloudPcInsightReport": true,
         "EnableCloudPcReboot": true,
