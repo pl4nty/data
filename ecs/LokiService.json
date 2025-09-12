@@ -1373,10 +1373,10 @@
     },
     "M365CompanionSystemTray": {
         "HostAppRing": "Dogfood",
-        "HostAppVersion": "1.20250905.2.0",
-        "M365CompanionSystemTrayDFVersion": "1.20250905.2.0",
+        "HostAppVersion": "1.20250912.2.0",
+        "M365CompanionSystemTrayDFVersion": "1.20250912.2.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
-        "M365CompanionSystemTrayProdVersion": "1.20250905.2.0",
+        "M365CompanionSystemTrayProdVersion": "1.20250912.2.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
