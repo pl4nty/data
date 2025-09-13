@@ -17,7 +17,7 @@ Note: there is a sibling patch with the same name.
 One patches the ffmpeg repo, the other patches the chromium repo.
 
 diff --git a/BUILD.gn b/BUILD.gn
-index 557df069027eaddcc7baa9ebc8f1b1b9dcc50f3e..839fdd625b4aef05b698ff328f48da59082de693 100644
+index 4a998334d458cdd9ab9a8874a1fa02d24298536a..d05b63d1ee3f3759a132f636b5cd41574535efb8 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
 @@ -2,8 +2,8 @@
@@ -48,7 +48,7 @@ index 557df069027eaddcc7baa9ebc8f1b1b9dcc50f3e..839fdd625b4aef05b698ff328f48da59
  
      # Ensure the architecture defines go in the command line before the -P
      # file below, so don't use defines.
-@@ -50,10 +50,10 @@ if (has_nasm_deps) {
+@@ -57,10 +57,10 @@ if (has_nasm_deps) {
  
      defines = [ "PIC" ]
      include_dirs = [
@@ -60,7 +60,7 @@ index 557df069027eaddcc7baa9ebc8f1b1b9dcc50f3e..839fdd625b4aef05b698ff328f48da59
      ]
  
      nasm_flags += [
-@@ -77,8 +77,8 @@ if (has_nasm_deps) {
+@@ -84,8 +84,8 @@ if (has_nasm_deps) {
  
  config("ffmpeg_dependent_config") {
    include_dirs = [
@@ -70,7 +70,7 @@ index 557df069027eaddcc7baa9ebc8f1b1b9dcc50f3e..839fdd625b4aef05b698ff328f48da59
    ]
  }
  
-@@ -196,13 +196,16 @@ if (is_component_ffmpeg) {
+@@ -207,13 +207,16 @@ if (is_component_ffmpeg) {
    link_target_type = "static_library"
  }
  target(link_target_type, "ffmpeg_internal") {
@@ -90,7 +90,7 @@ index 557df069027eaddcc7baa9ebc8f1b1b9dcc50f3e..839fdd625b4aef05b698ff328f48da59
    defines = [
      "HAVE_AV_CONFIG_H",
 diff --git a/ffmpeg_generated.gni b/ffmpeg_generated.gni
-index e282aa74801cfa5166482fa78eab3906ee8f4de5..b9aa9e3f27b0f2675d7b3f5bea5e40df0138f8c8 100644
+index 174173e6b88eff6e0e623cae9b646f473cdfc09f..a37acc08b6fb0612e380d7f0d4accece01d913da 100644
 --- a/ffmpeg_generated.gni
 +++ b/ffmpeg_generated.gni
 @@ -5,7 +5,7 @@
@@ -103,7 +103,7 @@ index e282aa74801cfa5166482fa78eab3906ee8f4de5..b9aa9e3f27b0f2675d7b3f5bea5e40df
  # Declare empty versions of each variable for easier +=ing later.
  ffmpeg_c_sources = []
 diff --git a/ffmpeg_options.gni b/ffmpeg_options.gni
-index 4d8119d5b1ac80e927f4b6cb5bb791e36629ccef..776975e00e637eae09b6fc507653597a81e2c167 100644
+index a6a012e5b94ea04b3df807a1e97c7f594b789e62..dc6e54112478b509ee61f4181a4ad914bda84d90 100644
 --- a/ffmpeg_options.gni
 +++ b/ffmpeg_options.gni
 @@ -40,6 +40,11 @@ declare_args() {

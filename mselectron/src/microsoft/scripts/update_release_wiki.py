@@ -51,6 +51,7 @@ def rewrite_file(file_path, new_version, base_url):
     latest_id = base_ver + "-latest"
     new_version_dots = new_version.replace('-', '.')
     new_html_content = f'<a href="{base_url}/{new_version}.html">{new_version_dots}</a>'
+    print(f"Adding new version {new_version} with URL {base_url}/{new_version}.html")
 
     # Define the tools for formatting blocks
     pattern = r'^\d+-0-0$'
@@ -122,7 +123,10 @@ def rewrite_file(file_path, new_version, base_url):
             break
 
     if target_ul == None:
-        raise ValueError("Element with id " + ul_id + " not found.")
+        raise ValueError(
+            f"Element with id {ul_id} not found.\n"
+            "Note: Alpha and beta releases are not currently supported for addition to the release wiki."
+        )
 
     li = ET.Element("li")
     li.text = new_html_content

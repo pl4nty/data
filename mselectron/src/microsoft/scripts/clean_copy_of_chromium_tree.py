@@ -117,6 +117,7 @@ def clean_copy(chromium_path, copy_path, platform):
         src/'chrome'/'test'/'data'/'policy',
         src/'chrome'/'updater'/'test'/'data'/'selfupdate_test_key.der',
         src/'chromeos'/'components'/'test'/'data'/'onc',
+        src/'components'/'cronet'/'android'/'test'/'res'/'raw'/'root_ca_cert.pem',
         src/'components'/'subresource_filter'/'core'/'common'/'perftests'/'data',  # noqa: E501
         src/'components'/'test'/'data'/'autofill',
         src/'components'/'test'/'data'/'media_router',
@@ -124,6 +125,7 @@ def clean_copy(chromium_path, copy_path, platform):
         src/'components'/'test'/'data'/'update_client'/'jebgalgnebhfojomionfpkfelancnnkf.pem',  # noqa: E501
         src/'components'/'test'/'data'/'web_package',
         src/'content'/'test'/'data',
+        src/'content'/'browser'/'webid'/'digital_credentials'/'digital_identity_request_impl_unittest.cc',
         src/'extensions'/'common'/'file_util_unittest.cc',
         src/'extensions'/'test'/'data',
         src/'net'/'data'/'cert_issuer_source_aia_unittest',

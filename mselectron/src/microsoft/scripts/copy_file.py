@@ -28,8 +28,14 @@ def main():
     destination_path_dir = os.path.dirname(to_path)
     mkdir_p(destination_path_dir)
 
-    shutil.copyfile(src=script_args.from_path,
-                    dst=to_path)
+    if os.path.isdir(to_path):
+        # If destination is a directory, copy file into it with same name
+        shutil.copy2(src=script_args.from_path,
+                     dst=to_path)
+    else:
+        # If destination is a file path, copy to that exact path
+        shutil.copyfile(src=script_args.from_path,
+                        dst=to_path)
 
 
 if __name__ == '__main__':

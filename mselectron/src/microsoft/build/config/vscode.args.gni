@@ -1,6 +1,5 @@
 # Chromium flags
 chrome_pgo_phase = 2
-content_enable_legacy_ipc = true
 enable_pdf = false
 enable_plugins = false
 enable_print_preview = false
@@ -17,5 +16,3 @@ enable_pdf_viewer = false
 # Microsoft flags
 microsoft_enable_app_center = true
 microsoft_restrict_unc_access = true
-microsoft_windows_versioned_app_layout = true
-microsoft_windows_rc_template = "//microsoft/build/templates/electron_rc.tmpl"

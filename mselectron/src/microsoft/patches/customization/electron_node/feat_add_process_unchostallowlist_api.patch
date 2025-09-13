@@ -6,7 +6,7 @@ Subject: feat: add process.uncHostAllowlist api
 Refs https://github.com/microsoft/vscode/issues/182070
 
 diff --git a/lib/child_process.js b/lib/child_process.js
-index 5b89c420f1a917526ab311fed52bff01637a86fe..1a79af9d6c7f71eeaa00bd2120151efd35a6cbaf 100644
+index bf62c5adf0e0d75cb50636f365f71db82c29ba29..145594f92773ba63db4865c508e65ecf81b9e9e9 100644
 --- a/lib/child_process.js
 +++ b/lib/child_process.js
 @@ -22,6 +22,7 @@
@@ -17,7 +17,7 @@ index 5b89c420f1a917526ab311fed52bff01637a86fe..1a79af9d6c7f71eeaa00bd2120151efd
    ArrayIsArray,
    ArrayPrototypeFilter,
    ArrayPrototypeIncludes,
-@@ -710,6 +711,24 @@ function normalizeSpawnArguments(file, args, options) {
+@@ -741,6 +742,24 @@ function normalizeSpawnArguments(file, args, options) {
      }
    }
  
@@ -43,7 +43,7 @@ index 5b89c420f1a917526ab311fed52bff01637a86fe..1a79af9d6c7f71eeaa00bd2120151efd
      // Make a shallow copy so we don't clobber the user's options object.
      __proto__: null,
 diff --git a/lib/fs.js b/lib/fs.js
-index adfbbccc6e66c94570bd9d8bfc233384beeb9afa..cdfe17046b1ef5b80ffc766cdb6006885aaea7b1 100644
+index c8e0c2a36da5f53da9fbfad8334809869b2d7e2a..000df9518c7d8b30eadc88c2e16461a6db6c8b48 100644
 --- a/lib/fs.js
 +++ b/lib/fs.js
 @@ -114,6 +114,7 @@ const {
@@ -116,10 +116,10 @@ index adfbbccc6e66c94570bd9d8bfc233384beeb9afa..cdfe17046b1ef5b80ffc766cdb600688
  };
  
 diff --git a/lib/internal/errors.js b/lib/internal/errors.js
-index 2f15b9913f79c9bc40f6dfcc4fe055044c9f870f..4410285a0ab60d470963710f5c1e2cdb03cdf5b6 100644
+index 72e647d018c4e53f811635dd21240c3267a7a78c..f1353d450b5f7dccff1f4c82e141d2ce91cd0cf9 100644
 --- a/lib/internal/errors.js
 +++ b/lib/internal/errors.js
-@@ -1821,6 +1821,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
+@@ -1822,6 +1822,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
    '`process.setupUncaughtExceptionCapture()` was called while a capture ' +
      'callback was already active',
    Error);
@@ -130,7 +130,7 @@ index 2f15b9913f79c9bc40f6dfcc4fe055044c9f870f..4410285a0ab60d470963710f5c1e2cdb
  E('ERR_UNHANDLED_ERROR',
    // Using a default argument here is important so the argument is not counted
 diff --git a/lib/internal/fs/promises.js b/lib/internal/fs/promises.js
-index e43fb2a3daa29d38aaffef1dd7a216b8b6ef5477..417c05968c1f6528be3a0f9e048f3e4cb059634d 100644
+index 96a60a55d69504a2fe11eb7e0d6f3173432359cc..df7a03e8f9fd7f4bfe3a7642708b5e7d1cffa6a3 100644
 --- a/lib/internal/fs/promises.js
 +++ b/lib/internal/fs/promises.js
 @@ -61,6 +61,7 @@ const {
@@ -180,7 +180,7 @@ index e43fb2a3daa29d38aaffef1dd7a216b8b6ef5477..417c05968c1f6528be3a0f9e048f3e4c
  
  async function mkdtemp(prefix, options) {
 diff --git a/lib/internal/fs/utils.js b/lib/internal/fs/utils.js
-index 95cb4fc8bd948a36d1aefadce766ba93c5e7954e..eca7aaea11dd5713d0c77b2e660d11527bcd23f9 100644
+index 91658d6cb61ea74cc9371391b6b0ea5d9b162fca..c37b1f3dcacef2a8de47bc993a687fd03ce3d7f0 100644
 --- a/lib/internal/fs/utils.js
 +++ b/lib/internal/fs/utils.js
 @@ -19,8 +19,11 @@ const {
@@ -409,7 +409,7 @@ index 95cb4fc8bd948a36d1aefadce766ba93c5e7954e..eca7aaea11dd5713d0c77b2e660d1152
    stringToSymlinkType,
    Stats: deprecate(Stats, 'fs.Stats constructor is deprecated.', 'DEP0180'),
 diff --git a/lib/internal/main/worker_thread.js b/lib/internal/main/worker_thread.js
-index caf64728b754ccef1f671a9c5503c07cdcd9a0da..92b42f826c75c6cdea53a29379010116ce3e16eb 100644
+index f159022ee5bddd619389d22f5f19bfe7bfdb04cd..71834756d58f95aba970f047394b20bb36d9f60c 100644
 --- a/lib/internal/main/worker_thread.js
 +++ b/lib/internal/main/worker_thread.js
 @@ -105,6 +105,8 @@ port.on('message', (message) => {
@@ -432,7 +432,7 @@ index caf64728b754ccef1f671a9c5503c07cdcd9a0da..92b42f826c75c6cdea53a29379010116
      setupMainThreadPort(mainThreadPort);
  
 diff --git a/lib/internal/process/pre_execution.js b/lib/internal/process/pre_execution.js
-index a6df0672bf6ae6e9a74ebbb0e4debff63599cc99..a1f29d26fc60aa17e11828753f7115748c9d6089 100644
+index 6b165062a5eaa40f6e5614bca50bc33ccbdb85cc..57d8eb7f5fde250bf604c1aa61845e1e8001083f 100644
 --- a/lib/internal/process/pre_execution.js
 +++ b/lib/internal/process/pre_execution.js
 @@ -13,7 +13,10 @@ const {
@@ -457,7 +457,7 @@ index a6df0672bf6ae6e9a74ebbb0e4debff63599cc99..a1f29d26fc60aa17e11828753f711574
    setupTraceCategoryState();
    setupInspectorHooks();
    setupNetworkInspection();
-@@ -750,6 +757,33 @@ function markBootstrapComplete() {
+@@ -743,6 +750,33 @@ function markBootstrapComplete() {
    internalBinding('performance').markBootstrapComplete();
  }
  
@@ -491,7 +491,7 @@ index a6df0672bf6ae6e9a74ebbb0e4debff63599cc99..a1f29d26fc60aa17e11828753f711574
  // Sequence number for diagnostic filenames
  let sequenceNumOfheapSnapshot = 0;
  
-@@ -777,6 +811,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
+@@ -770,6 +804,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
  
  module.exports = {
    setupUserModules,
@@ -500,7 +500,7 @@ index a6df0672bf6ae6e9a74ebbb0e4debff63599cc99..a1f29d26fc60aa17e11828753f711574
    prepareWorkerThreadExecution,
    prepareShadowRealmExecution,
 diff --git a/lib/internal/util.js b/lib/internal/util.js
-index a27815cc029cc592e2b21a0d93ea4d586ab5cf92..eb02a66551f450afd2af92f08ab174fc7de82e2c 100644
+index 7e460735493f107ab7075e097c195cafc99a5e33..e989d53477cd666927fc953becbc057f7e5ea3c6 100644
 --- a/lib/internal/util.js
 +++ b/lib/internal/util.js
 @@ -56,6 +56,12 @@ const {
@@ -537,10 +537,10 @@ index a27815cc029cc592e2b21a0d93ea4d586ab5cf92..eb02a66551f450afd2af92f08ab174fc
    lazyDOMException,
    lazyDOMExceptionClass,
 diff --git a/lib/internal/worker.js b/lib/internal/worker.js
-index 427492281647c22bb0690cc5b111b873b4c8741d..3f206b27246b24be616861ed8913ed3d8f2452d9 100644
+index b1fe97a5b8128562e6e2ac1a09969a59f3cedea7..50c5514a5a4e2e408eec48087d1018f285e10848 100644
 --- a/lib/internal/worker.js
 +++ b/lib/internal/worker.js
-@@ -280,6 +280,8 @@ class Worker extends EventEmitter {
+@@ -279,6 +279,8 @@ class Worker extends EventEmitter {
        hasStdin: !!options.stdin,
        publicPort: publicPortToWorker,
        mainThreadPort: mainThreadPortToWorker,

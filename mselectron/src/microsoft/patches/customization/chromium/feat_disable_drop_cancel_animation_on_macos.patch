@@ -6,10 +6,10 @@ Subject: feat: disable drop cancel animation on macOS
 Refs https://github.com/microsoft/vscode/issues/199635
 
 diff --git a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
-index d0c206a2bd355cb7db688febed3b5daa4d9f3a32..8181e033d8f2c9f714e58d6567984c1196f5b0c8 100644
+index 2e5a4ae715529e3b7b5c8fbb7195c7cef78ca4ee..f5cc0ce8221543c7779fab89e13394623dd7d711 100644
 --- a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
 +++ b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
-@@ -280,9 +280,10 @@ - (void)startDragWithDropData:(const DropData&)dropData
+@@ -276,9 +276,10 @@ STATIC_ASSERT_ENUM(NSDragOperationMove, ui::DragDropTypes::DRAG_MOVE);
    _dragOperation = operationMask;
  
    // Run the drag operation.

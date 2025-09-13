@@ -6,12 +6,12 @@ Subject: build: remove glic testing dependency
 This removes unnecessary dependency added in https://chromium-review.googlesource.com/c/chromium/src/+/6323046
 
 diff --git a/chrome/browser/glic/BUILD.gn b/chrome/browser/glic/BUILD.gn
-index 74ab192d6ea269fa5493a9283cb852fb3e1c0c0c..470dd718e9954ea4fab33352cb2342fbd7e44ba7 100644
+index c2a0dacb06e2eb9fdbd50cf3e95e240871f449dc..603360bb9e7196cee3cc125d4c2ac3f7ca2e2300 100644
 --- a/chrome/browser/glic/BUILD.gn
 +++ b/chrome/browser/glic/BUILD.gn
-@@ -362,9 +362,3 @@ source_set("interactive_ui_tests") {
-   ]
-   data_deps = [ "//chrome/test/data/webui/glic:generate_test_files" ]
+@@ -397,9 +397,3 @@ source_set("interactive_ui_tests") {
+   # enable the diagnostic by removing this line.
+   configs += [ "//build/config/compiler:no_exit_time_destructors" ]
  }
 -
 -# To make the targets e2e_test/ discoverable in gn.

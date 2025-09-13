@@ -4,7 +4,7 @@ vars = {
   'microsoft_depot_tools_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-depot-tools',
   'microsoft_electron_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-electron',
   'microsoft_node_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-node',
-  'microsoft_reclient_helper_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-rbe-credential-helper',
+  'microsoft_rbe_helper_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-rbe-credential-helper',
 
   # Electron checkout configuration.
   # It should match the upstream and contents of the "gclient_gn_args" below.
@@ -14,6 +14,7 @@ vars = {
   'checkout_android_prebuilts_build_tools': False,
   'checkout_clang_coverage_tools': False,
   'checkout_clang_tidy': False,  # Doesn't match Electron.
+  'checkout_clusterfuzz_data': False,
   'checkout_ios_webkit': False,
   'checkout_mutter': False, # Does not exist in Electron DEPS
   'checkout_nacl': False,
@@ -30,13 +31,13 @@ vars = {
   'microsoft_use_internal_node': True,
 
   # Dependencies.
-  'microsoft_reclient_helper_revision': '6255a1f4ee45218ded7c2ccd9efecfa53d87893c',
+  'microsoft_rbe_helper_revision': 'ed5106be05ab465977aa4b351b4768a2c06ad1e2',
   # Chromium revision will be redefined in a gclient config because we use Chromium snapshots.
-  'microsoft_chromium_version': '138.0.7204.251',
-  'microsoft_depot_tools_revision': 'a8900cc0f023d6a662eb66b317e8ddceeb113490',
-  'microsoft_electron_version': 'v37.5.0',
-  'microsoft_electron_revision': 'fa1505cca9a3b416ed84c198ca553ddb62d3b61c',
-  'microsoft_node_version': 'v22.19.0',
+  'microsoft_chromium_version': '140.0.7339.41',
+  'microsoft_depot_tools_revision': '64f406e98974c40bfb13c86dc5310f24b18d8056',
+  'microsoft_electron_version': 'v38.0.0',
+  'microsoft_electron_revision': '79433861fe10e4f7841153461fd3778b400a4c0b',
+  'microsoft_node_version': 'v22.18.0',
 
   # Override defaults of the Electron checkout.
   'apply_patches': False,  # See comments below in the "hooks" section.
@@ -180,6 +181,7 @@ gclient_gn_args = [
   'checkout_android_prebuilts_build_tools',
   'checkout_android_native_support',
   'checkout_clang_coverage_tools',
+  'checkout_clusterfuzz_data',
   'checkout_ios_webkit',
   'checkout_mutter',
   'checkout_nacl',

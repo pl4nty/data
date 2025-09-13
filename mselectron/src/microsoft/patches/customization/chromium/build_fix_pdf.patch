@@ -6,7 +6,7 @@ Subject: build: fix pdf
 We don't want pdf, so don't include it.
 
 diff --git a/chrome/browser/content_settings/BUILD.gn b/chrome/browser/content_settings/BUILD.gn
-index 1fe1ecf20ad9fad8b1a37267c2dfafee1b4fc211..75e028ac25e43d37da0583689d2d6a87295115c7 100644
+index a50a2a88b0420f9f740e56ac073b4967e50eedaa..49f251e6eeb3c5b4fde1eee37153e6b3866725f9 100644
 --- a/chrome/browser/content_settings/BUILD.gn
 +++ b/chrome/browser/content_settings/BUILD.gn
 @@ -83,7 +83,6 @@ source_set("impl") {
@@ -17,24 +17,11 @@ index 1fe1ecf20ad9fad8b1a37267c2dfafee1b4fc211..75e028ac25e43d37da0583689d2d6a87
      "//services/metrics/public/cpp:ukm_builders",
      "//ui/webui",
    ]
-diff --git a/chrome/browser/glic/BUILD.gn b/chrome/browser/glic/BUILD.gn
-index 69423f37f55fc3d4fa1a0a12693532f16981a810..74ab192d6ea269fa5493a9283cb852fb3e1c0c0c 100644
---- a/chrome/browser/glic/BUILD.gn
-+++ b/chrome/browser/glic/BUILD.gn
-@@ -196,8 +196,6 @@ source_set("impl") {
-     "//components/metrics_services_manager:metrics_services_manager",
-     "//components/optimization_guide/core",
-     "//components/optimization_guide/proto:optimization_guide_proto",
--    "//components/pdf/browser:browser",
--    "//components/pdf/common:constants",
-     "//components/pref_registry",
-     "//components/prefs",
-     "//components/sessions",
 diff --git a/chrome/browser/ui/lens/BUILD.gn b/chrome/browser/ui/lens/BUILD.gn
-index ce696eca19d69ac5e321a33dea1cce4db2ffdc65..184361f1182b21535053fb410ca416fdf06475c9 100644
+index 3b53b7954cbf22e4b54a76f62938ec61d915cf77..bd86302b534bd4aeba9953ad7c9194c616ac2577 100644
 --- a/chrome/browser/ui/lens/BUILD.gn
 +++ b/chrome/browser/ui/lens/BUILD.gn
-@@ -262,7 +262,6 @@ source_set("browser_tests") {
+@@ -279,7 +279,6 @@ source_set("browser_tests") {
      "//content/test:test_support",
      "//mojo/public/cpp/bindings",
      "//net",
@@ -42,21 +29,22 @@ index ce696eca19d69ac5e321a33dea1cce4db2ffdc65..184361f1182b21535053fb410ca416fd
      "//third_party/lens_server_proto:lens_overlay_proto",
      "//ui/base",
      "//ui/base:types",
-@@ -273,9 +272,6 @@ source_set("browser_tests") {
+@@ -291,10 +290,6 @@ source_set("browser_tests") {
      "//ui/views/controls/webview",
      "//url",
    ]
 -  if (enable_pdf) {
 -    deps += [ "//chrome/browser/pdf" ]
 -  }
- }
- 
- source_set("interactive_ui_tests") {
+-
+   # TODO(crbug.com/40031409): Fix code that adds exit-time destructors and
+   # enable the diagnostic by removing this line.
+   configs += [ "//build/config/compiler:no_exit_time_destructors" ]
 diff --git a/chrome/test/BUILD.gn b/chrome/test/BUILD.gn
-index 16f2e321030d61ee2cbab91c15fc93da3cf735b5..88cb6f0abc6df52c2459b0f36dda8f389669eec8 100644
+index 244abec3d9a1758d78590f0f45b8af40615638e7..da581cb147dd379a15a83a0ecef4d713b80ab046 100644
 --- a/chrome/test/BUILD.gn
 +++ b/chrome/test/BUILD.gn
-@@ -3836,7 +3836,6 @@ if (!is_android) {
+@@ -4084,7 +4084,6 @@ if (!is_android) {
        deps += [
          "../browser/pdf",
          "../browser/pdf:pdf_extension_test_utils",

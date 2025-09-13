@@ -6,18 +6,18 @@ Subject: build: make Electron depend on internal stuff
 Hooks the Microsoft specific builds scripts to the Electron build.
 
 diff --git a/BUILD.gn b/BUILD.gn
-index fe4fb706f557363b2fc3305a8a5af87c07f2b523..3f5ffd9fd247f2aba3fe05769a6cbb65b49e1c52 100644
+index 3ffb61f2021e703e6f517156e105b178a4814bec..da18c7a19c0d854278636bfaeb9e07588be1c532 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
-@@ -5,6 +5,7 @@ import("//components/os_crypt/sync/features.gni")
- import("//components/spellcheck/spellcheck_build_features.gni")
+@@ -6,6 +6,7 @@ import("//components/spellcheck/spellcheck_build_features.gni")
  import("//content/public/app/mac_helpers.gni")
+ import("//content/public/common/features.gni")
  import("//extensions/buildflags/buildflags.gni")
 +import("//microsoft/buildflags/buildflags.gni")
  import("//pdf/features.gni")
- import("//ppapi/buildflags/buildflags.gni")
  import("//printing/buildflags/buildflags.gni")
-@@ -482,6 +483,7 @@ source_set("electron_lib") {
+ import("//testing/test.gni")
+@@ -483,6 +484,7 @@ source_set("electron_lib") {
      "//media/capture/mojom:video_capture",
      "//media/mojo/mojom",
      "//media/mojo/mojom:web_speech_recognition",
@@ -25,7 +25,7 @@ index fe4fb706f557363b2fc3305a8a5af87c07f2b523..3f5ffd9fd247f2aba3fe05769a6cbb65
      "//net:extras",
      "//net:net_resources",
      "//printing/buildflags",
-@@ -1093,6 +1095,7 @@ if (is_mac) {
+@@ -1107,6 +1109,7 @@ if (is_mac) {
        ":electron_fuses",
        "//electron/build/config:generate_mas_config",
        "//electron/buildflags",
@@ -33,7 +33,7 @@ index fe4fb706f557363b2fc3305a8a5af87c07f2b523..3f5ffd9fd247f2aba3fe05769a6cbb65
      ]
      if (is_mas_build) {
        deps += [ ":electron_login_helper_app" ]
-@@ -1209,6 +1212,7 @@ if (is_mac) {
+@@ -1223,6 +1226,7 @@ if (is_mac) {
        "//components/crash/core/app",
        "//content:sandbox_helper_win",
        "//electron/buildflags",
