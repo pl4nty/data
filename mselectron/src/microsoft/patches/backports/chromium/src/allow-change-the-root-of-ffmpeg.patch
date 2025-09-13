@@ -17,7 +17,7 @@ Note: there is a sibling patch with the same name.
 One patches the ffmpeg repo, the other patches the chromium repo.
 
 diff --git a/media/ffmpeg/scripts/generate_gn.py b/media/ffmpeg/scripts/generate_gn.py
-index 12455913ea76f53a399a5dd6b8e473dd8be41d77..b135da60cb75273af17e5b1aedf1d7a3726ce2e7 100755
+index a3349aca97d364baa08b8efca2daf0660b0b8a5d..0d5ab90845fcbc1bfea3c1be505ce921c2a5a6ba 100755
 --- a/media/ffmpeg/scripts/generate_gn.py
 +++ b/media/ffmpeg/scripts/generate_gn.py
 @@ -48,7 +48,7 @@ COPYRIGHT = """# Copyright %d The Chromium Authors. All rights reserved.

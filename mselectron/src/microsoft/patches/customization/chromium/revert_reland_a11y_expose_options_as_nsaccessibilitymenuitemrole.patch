@@ -10,11 +10,11 @@ when treating them as menu items which is more severe regression
 than the bug this change was trying to solve.
 
 diff --git a/ui/accessibility/platform/browser_accessibility_cocoa.mm b/ui/accessibility/platform/browser_accessibility_cocoa.mm
-index d5b5586f4f55b11f1ae350b3693076d5a491eb65..76dfa232e81250613e9d2cbaf33bd8fd4a0cecfa 100644
+index 06eb79f7d39db15b862da9fbdb913318aa092215..d24f8d99f289e305ad0951f22ecfec438a72ad5c 100644
 --- a/ui/accessibility/platform/browser_accessibility_cocoa.mm
 +++ b/ui/accessibility/platform/browser_accessibility_cocoa.mm
-@@ -1167,13 +1167,6 @@ - (NSString*)role {
-     cocoa_role = NSAccessibilityUnknownRole;
+@@ -1239,13 +1239,6 @@ bool ui::IsNSRange(id value) {
+     cocoa_role = NSAccessibilityGroupRole;
    } else if (_owner->IsRootWebAreaForPresentationalIframe()) {
      cocoa_role = NSAccessibilityGroupRole;
 -  } else if (role == ax::mojom::Role::kListBoxOption && _owner->IsWebContent()) {
@@ -24,10 +24,10 @@ index d5b5586f4f55b11f1ae350b3693076d5a491eb65..76dfa232e81250613e9d2cbaf33bd8fd
 -    // children. For now, only do this for web content, and not UI, where
 -    // there are not interesting descendants of list box options.
 -    cocoa_role = NSAccessibilityMenuItemRole;
-   } else {
-     cocoa_role = [AXPlatformNodeCocoa nativeRoleFromAXRole:role];
-   }
-@@ -1511,7 +1504,12 @@ - (id)value {
+   } else if (role == ax::mojom::Role::kMenu && ![self hasMenuItemDescendant]) {
+     // A menu without menu item descendants should be exposed as a group rather
+     // than a menu to avoid confusing assistive technologies. This ensures
+@@ -1634,7 +1627,12 @@ bool ui::IsNSRange(id value) {
    DCHECK(_owner->node()->IsDataValid());
  
    if (ui::IsNameExposedInAXValueForRole([self internalRole])) {

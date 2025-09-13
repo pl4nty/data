@@ -23,5 +23,5 @@ ELECTRON_DIR = os.path.join(SRC_DIR, 'electron')
 # This repo root inside the Chromium checkout.
 MICROSOFT_DIR = os.path.join(SRC_DIR, 'microsoft')
 
-# Reclient credential helper directory
-RECLIENT_HELPER_DIR = os.path.join(PROJECT_ROOT_DIR, 'rbe-credential-helper')
+# RBE credential helper directory
+RBE_HELPER_DIR = os.path.join(PROJECT_ROOT_DIR, 'rbe-credential-helper')

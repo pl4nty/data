@@ -7,7 +7,7 @@ Modifies the existing crashReporter module to submit crash reports
 to appcenter when the submitURL scheme is 'appcenter:'
 
 diff --git a/third_party/crashpad/crashpad/handler/BUILD.gn b/third_party/crashpad/crashpad/handler/BUILD.gn
-index 368fef054031738a72e629ce4e91f9f4599ac2ed..3b7a4665219c3749915b4274f49dceb21ecb5bb2 100644
+index b3fc5d11e6fa5d12a6719e90acdcc774a4c30c29..06db149e11627b3e190dfa1b5cb4ee76746d19c3 100644
 --- a/third_party/crashpad/crashpad/handler/BUILD.gn
 +++ b/third_party/crashpad/crashpad/handler/BUILD.gn
 @@ -13,6 +13,7 @@
@@ -18,7 +18,7 @@ index 368fef054031738a72e629ce4e91f9f4599ac2ed..3b7a4665219c3749915b4274f49dceb2
  
  static_library("handler") {
    sources = [
-@@ -75,11 +76,20 @@ static_library("handler") {
+@@ -73,11 +74,20 @@ static_library("handler") {
      "../minidump",
      "../snapshot",
      "../tools:tool_support",
@@ -39,7 +39,7 @@ index 368fef054031738a72e629ce4e91f9f4599ac2ed..3b7a4665219c3749915b4274f49dceb2
  }
  
  if (crashpad_is_android) {
-@@ -115,6 +125,7 @@ static_library("common") {
+@@ -116,6 +126,7 @@ static_library("common") {
      "../snapshot",
      "../util",
      "../util:net",

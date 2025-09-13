@@ -7,10 +7,10 @@ Backports https://github.com/electron/electron/pull/28274
 Refs https://github.com/microsoft/vscode/issues/96307
 
 diff --git a/docs/api/web-frame-main.md b/docs/api/web-frame-main.md
-index 45b01d5b25a25eaea0ca2679145e6fc8ebd4f666..e669cb9082c3f46755355da1b979ed24d479ce1b 100644
+index f72a935016f18fbf6b5b3caffa4980b256490a6e..744e44622fa8e797ca478e2a816a8592437a1986 100644
 --- a/docs/api/web-frame-main.md
 +++ b/docs/api/web-frame-main.md
-@@ -77,6 +77,21 @@ _This class is not exported from the `'electron'` module. It is only available a
+@@ -87,6 +87,21 @@ _This class is not exported from the `'electron'` module. It is only available a
  
  Emitted when the document is loaded.
  
@@ -32,7 +32,7 @@ index 45b01d5b25a25eaea0ca2679145e6fc8ebd4f666..e669cb9082c3f46755355da1b979ed24
  ### Instance Methods
  
  #### `frame.executeJavaScript(code[, userGesture])`
-@@ -165,6 +180,47 @@ app.on('web-contents-created', (_, webContents) => {
+@@ -175,6 +190,47 @@ app.on('web-contents-created', (_, webContents) => {
  })
  ```
  
@@ -81,10 +81,10 @@ index 45b01d5b25a25eaea0ca2679145e6fc8ebd4f666..e669cb9082c3f46755355da1b979ed24
  
  #### `frame.ipc` _Readonly_
 diff --git a/shell/browser/api/electron_api_web_contents.cc b/shell/browser/api/electron_api_web_contents.cc
-index 005e5d91e5c6e8a8c4aa745fc6ee05a691f00e11..0698af17fa557cdd27861f704a463762a1206db6 100644
+index 4679ab95cf2fbd6ee2bde1d4059001b68c4d2e58..63e06cde48f3f69c2958e0b14f20b9b876a8e985 100644
 --- a/shell/browser/api/electron_api_web_contents.cc
 +++ b/shell/browser/api/electron_api_web_contents.cc
-@@ -1515,7 +1515,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1553,7 +1553,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
                              int number_of_matches,
                              const gfx::Rect& selection_rect,
                              int active_match_ordinal,
@@ -94,13 +94,13 @@ index 005e5d91e5c6e8a8c4aa745fc6ee05a691f00e11..0698af17fa557cdd27861f704a463762
    if (!final_update)
      return;
  
-@@ -1527,7 +1528,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1565,7 +1566,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
    result.Set("selectionArea", selection_rect);
    result.Set("activeMatchOrdinal", active_match_ordinal);
    result.Set("finalUpdate", final_update);  // Deprecate after 2.0
 -  Emit("found-in-page", result.GetHandle());
 +  if (target_rfh) {
-+    gin::Handle<WebFrameMain> web_frame_main =
++    gin_helper::Handle<WebFrameMain> web_frame_main =
 +        WebFrameMain::From(isolate, target_rfh);
 +    web_frame_main->Emit("found-in-frame", result.GetHandle());
 +  } else {
@@ -110,10 +110,10 @@ index 005e5d91e5c6e8a8c4aa745fc6ee05a691f00e11..0698af17fa557cdd27861f704a463762
  
  void WebContents::OnRequestPointerLock(content::WebContents* web_contents,
 diff --git a/shell/browser/api/electron_api_web_contents.h b/shell/browser/api/electron_api_web_contents.h
-index 30a2365bc0a9c23b9c419d67b35ce504a5de329e..9fdf95f8c61a268f7e9bc2e53dd18dac63c359c3 100644
+index e0daa212ee26418f4c668533642a1680332632a8..2db9865b8355af7c5e8ee5bb687237e4758f89ef 100644
 --- a/shell/browser/api/electron_api_web_contents.h
 +++ b/shell/browser/api/electron_api_web_contents.h
-@@ -553,7 +553,8 @@ class WebContents final : public ExclusiveAccessContext,
+@@ -559,7 +559,8 @@ class WebContents final : public ExclusiveAccessContext,
                   int number_of_matches,
                   const gfx::Rect& selection_rect,
                   int active_match_ordinal,
@@ -124,7 +124,7 @@ index 30a2365bc0a9c23b9c419d67b35ce504a5de329e..9fdf95f8c61a268f7e9bc2e53dd18dac
                              bool user_gesture,
                              bool last_unlocked_by_target,
 diff --git a/shell/browser/api/electron_api_web_frame_main.cc b/shell/browser/api/electron_api_web_frame_main.cc
-index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb071169b33ab8f 100644
+index e1d42e06c436ce95d32a7d29284ebb7c0f1fc1fc..624f322778a2aa72530a960483dd1ccc2f95dbef 100644
 --- a/shell/browser/api/electron_api_web_frame_main.cc
 +++ b/shell/browser/api/electron_api_web_frame_main.cc
 @@ -4,6 +4,7 @@
@@ -146,7 +146,7 @@ index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb07116
  #include "content/public/browser/frame_tree_node_id.h"
  #include "content/public/browser/render_frame_host.h"
  #include "content/public/common/isolated_world_ids.h"
-@@ -25,6 +28,7 @@
+@@ -24,6 +27,7 @@
  #include "shell/browser/javascript_environment.h"
  #include "shell/common/api/api.mojom.h"
  #include "shell/common/gin_converters/blink_converter.h"
@@ -162,7 +162,7 @@ index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb07116
  
  namespace {
  
-@@ -269,6 +274,36 @@ bool WebFrameMain::IsDestroyed() const {
+@@ -270,6 +275,36 @@ bool WebFrameMain::IsDestroyed() const {
    return render_frame_disposed_;
  }
  
@@ -199,7 +199,7 @@ index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb07116
  void WebFrameMain::Send(v8::Isolate* isolate,
                          bool internal,
                          const std::string& channel,
-@@ -527,6 +562,42 @@ void WebFrameMain::DOMContentLoaded() {
+@@ -538,6 +573,42 @@ void WebFrameMain::DOMContentLoaded() {
    Emit("dom-ready");
  }
  
@@ -240,9 +240,9 @@ index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb07116
 +}
 +
  // static
- gin::Handle<WebFrameMain> WebFrameMain::New(v8::Isolate* isolate) {
+ gin_helper::Handle<WebFrameMain> WebFrameMain::New(v8::Isolate* isolate) {
    return {};
-@@ -583,6 +654,8 @@ void WebFrameMain::FillObjectTemplate(v8::Isolate* isolate,
+@@ -595,6 +666,8 @@ void WebFrameMain::FillObjectTemplate(v8::Isolate* isolate,
                   &WebFrameMain::CollectDocumentJSCallStack)
        .SetMethod("reload", &WebFrameMain::Reload)
        .SetMethod("isDestroyed", &WebFrameMain::IsDestroyed)
@@ -252,7 +252,7 @@ index c81a2cb128f91c457dcf1857f3966aa0eb8c9ccb..98f2efad0303ba7dacbd01045eb07116
        .SetMethod("_postMessage", &WebFrameMain::PostMessage)
        .SetProperty("detached", &WebFrameMain::Detached)
 diff --git a/shell/browser/api/electron_api_web_frame_main.h b/shell/browser/api/electron_api_web_frame_main.h
-index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c534d746f 100644
+index 56dc7497ac011e8af4e5fb4932b3e607d31feecd..38b2130ac34e3c7630fafdeef00e05751d972c25 100644
 --- a/shell/browser/api/electron_api_web_frame_main.h
 +++ b/shell/browser/api/electron_api_web_frame_main.h
 @@ -5,6 +5,7 @@
@@ -263,15 +263,15 @@ index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c
  #include <optional>
  #include <string>
  #include <vector>
-@@ -13,6 +14,7 @@
- #include "base/process/process.h"
+@@ -14,6 +15,7 @@
+ #include "base/values.h"
  #include "content/public/browser/frame_tree_node_id.h"
  #include "content/public/browser/global_routing_id.h"
 +#include "content/public/common/stop_find_action.h"
- #include "gin/wrappable.h"
  #include "mojo/public/cpp/bindings/pending_receiver.h"
  #include "mojo/public/cpp/bindings/remote.h"
-@@ -25,8 +27,9 @@
+ #include "shell/browser/event_emitter_mixin.h"
+@@ -27,8 +29,9 @@
  class GURL;
  
  namespace content {
@@ -282,7 +282,7 @@ index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c
  
  namespace gin {
  class Arguments;
-@@ -100,6 +103,9 @@ class WebFrameMain final : public gin::Wrappable<WebFrameMain>,
+@@ -108,6 +111,9 @@ class WebFrameMain final : public gin_helper::DeprecatedWrappable<WebFrameMain>,
    void TeardownMojoConnection();
    void OnRendererConnectionError();
  
@@ -292,7 +292,7 @@ index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c
    [[nodiscard]] bool HasRenderFrame() const;
  
    // Throws a JS error if HasRenderFrame() is false.
-@@ -145,6 +151,12 @@ class WebFrameMain final : public gin::Wrappable<WebFrameMain>,
+@@ -154,6 +160,12 @@ class WebFrameMain final : public gin_helper::DeprecatedWrappable<WebFrameMain>,
        const std::optional<blink::LocalFrameToken>& remote_frame_token);
  
    void DOMContentLoaded();
@@ -306,7 +306,7 @@ index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c
    mojo::Remote<mojom::ElectronRenderer> renderer_api_;
    mojo::PendingReceiver<mojom::ElectronRenderer> pending_receiver_;
 diff --git a/spec/api-web-contents-spec.ts b/spec/api-web-contents-spec.ts
-index 69e462c1df2c4deb9d343b34f4163d8c9a873cd9..c5df0dcfa9bd54ecf9b65eac0442b8344517c909 100644
+index 442743cb45d777e653c39146d0d4285ca6d5908e..0e1e8329d807cba620e77b66522c3431cb2d0e4c 100644
 --- a/spec/api-web-contents-spec.ts
 +++ b/spec/api-web-contents-spec.ts
 @@ -16,6 +16,8 @@ import { ifdescribe, defer, waitUntil, listen, ifit } from './lib/spec-helpers';
@@ -318,7 +318,7 @@ index 69e462c1df2c4deb9d343b34f4163d8c9a873cd9..c5df0dcfa9bd54ecf9b65eac0442b834
  const features = process._linkedBinding('electron_common_features');
  
  describe('webContents module', () => {
-@@ -3190,4 +3192,66 @@ describe('webContents module', () => {
+@@ -3303,4 +3305,66 @@ describe('webContents module', () => {
        expect(w.getBounds().height).to.equal(height);
      });
    });
@@ -386,7 +386,7 @@ index 69e462c1df2c4deb9d343b34f4163d8c9a873cd9..c5df0dcfa9bd54ecf9b65eac0442b834
 +  });
  });
 diff --git a/spec/api-web-frame-main-spec.ts b/spec/api-web-frame-main-spec.ts
-index 236140780a884f0b7825414ec4e27634029f46de..c8fca6c17ca1d6cbe31db8f4afaa4e2382ce361d 100644
+index ccb109beec28618273227c2ea12cf0c01fd787cb..d9f234ff3b37e831b8358a203fb02382ddf94f78 100644
 --- a/spec/api-web-frame-main-spec.ts
 +++ b/spec/api-web-frame-main-spec.ts
 @@ -35,7 +35,11 @@ describe('webFrameMain module', () => {
@@ -520,7 +520,7 @@ index 236140780a884f0b7825414ec4e27634029f46de..c8fca6c17ca1d6cbe31db8f4afaa4e23
      });
    });
  
-@@ -578,4 +686,149 @@ describe('webFrameMain module', () => {
+@@ -594,4 +702,149 @@ describe('webFrameMain module', () => {
        await promise;
      });
    });

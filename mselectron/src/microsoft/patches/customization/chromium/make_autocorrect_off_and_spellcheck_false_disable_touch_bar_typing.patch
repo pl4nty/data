@@ -7,10 +7,10 @@ Subject: Make autocorrect=off and spellcheck=false disable Touch Bar typing
 https://chromium-review.googlesource.com/c/chromium/src/+/1917603
 
 diff --git a/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm b/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
-index c89f25bf49d773f5f77b2434bd6fabcfd8cb4e33..066a13181fdbeeb5fc9bb754e7a8b18b69505a30 100644
+index ae798fc8f923a9b590c0d9ed703946a2bf5bd3d4..962dd1b0b2de739d013650bf5b9d3c213fcea6d3 100644
 --- a/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
 +++ b/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
-@@ -2629,7 +2629,9 @@ - (void)invalidateTouchBar {
+@@ -2671,7 +2671,9 @@ extern NSString* NSTextInputReplacementRangeAttributeName;
  }
  
  - (NSTouchBar*)makeTouchBar {

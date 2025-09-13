@@ -6,14 +6,13 @@ Subject: chore: disable unsafe-buffer checks in third-party ffmpeg
 disable unsafe buffer checks in ffmpeg/ since it's not our code to fix.
 
 diff --git a/build/config/unsafe_buffers_paths.txt b/build/config/unsafe_buffers_paths.txt
-index 29db2f99577c66c1a7e5b2daae53523923e2af87..8adc772504d912dfe789044882a0d8f4536dd53d 100644
+index 57c1d12d185851120de1170d50822591f7c928ec..5ea53f88f083746bf98131063e7b131f824b2c04 100644
 --- a/build/config/unsafe_buffers_paths.txt
 +++ b/build/config/unsafe_buffers_paths.txt
-@@ -31,3 +31,7 @@
+@@ -29,3 +29,6 @@
+ -ui/gl/  # Unsafe generated files.
  -url/third_party/
  -v8/
- 
++
 +# Internal build exemptions
 +-microsoft/src/third_party/ffmpeg/
-+
-+

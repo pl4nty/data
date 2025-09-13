@@ -92,10 +92,10 @@ def parse_args():
                         type=boolean_string, nargs='?',
                         default=False, const=True,
                         help="build for Mac App Store")
-    parser.add_argument('--reclient',
+    parser.add_argument('--siso',
                         type=boolean_string, nargs='?',
                         default=False, const=True,
-                        help="use reclient")
+                        help="use siso")
     parser.add_argument('--custom-pgo',
                         type=boolean_string, nargs='?',
                         default=False, const=True,
@@ -182,12 +182,14 @@ def extract_key_value_pair(line):
     return line
 
 
-def get_reclient_args(use_reclient=False):
-    if not use_reclient:
+def get_siso_args(use_siso=False):
+    if not use_siso:
         return None
 
     return [        
         "use_remoteexec=true",
+        "use_siso=true",
+        "use_reclient=false"
     ]
 
 
@@ -213,7 +215,7 @@ def main():
     script_args = parse_args()
 
     other_build_args = [get_electron_version_arg()] + \
-                       (get_reclient_args(script_args.reclient) or []) + \
+                       (get_siso_args(script_args.siso) or []) + \
                        (script_args.args or [])
     build_args = get_build_args(configs_to_import=[
         script_args.build_config,

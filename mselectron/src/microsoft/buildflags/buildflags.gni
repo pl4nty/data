@@ -3,15 +3,4 @@
 declare_args() {
   microsoft_enable_app_center = false
   microsoft_restrict_unc_access = false
-  microsoft_windows_versioned_app_layout = false
-  microsoft_windows_rc_template = "//electron/build/templates/electron_rc.tmpl"
-}
-
-declare_args() {
-  microsoft_versioned_app_layout =
-      is_win && microsoft_windows_versioned_app_layout
-}
-
-if (microsoft_versioned_app_layout) {
-  assert(is_win, "Versioned app layout is only supported on windows.")
 }

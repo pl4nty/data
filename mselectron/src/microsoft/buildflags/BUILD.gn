@@ -7,6 +7,5 @@ buildflag_header("buildflags") {
   flags = [
     "MICROSOFT_ENABLE_APP_CENTER=$microsoft_enable_app_center",
     "MICROSOFT_RESTRICT_UNC_ACCESS=$microsoft_restrict_unc_access",
-    "MICROSOFT_VERSIONED_APP_LAYOUT=$microsoft_versioned_app_layout",
   ]
 }
