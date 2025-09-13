@@ -376,11 +376,6 @@
             "EnableMDQExportToCSV": true
         }
     },
-    "UX_RemoteAssist": {
-        "FlightingV2": {
-            "ManagedInstallerTargetingUX": true
-        }
-    },
     "UX_TenantSetup": {
         "FlightingV2": {
             "AllowOOBEUpdatesUX": true,

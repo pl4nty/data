@@ -1822,6 +1822,12 @@
                     "IsEnabled": false
                 }
             ],
+            "LiveMeetingNotesV2Skill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableLiveNotesV2Skill",
+                    "IsEnabled": true
+                }
+            ],
             "TeamsWebSearchEnableAdditionalLanguageInstructions": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructions",

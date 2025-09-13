@@ -3265,9 +3265,6 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
-        "BweRampupOnProbe": {
-            "enableRampup": false
-        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3917,74 +3914,7 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1",
-        "ULLogUpload": {
-            "conditions": [
-                {
-                    "component": "LMS.MEDIAMGR_API",
-                    "level": "DEBUG1",
-                    "logId": 2733496783,
-                    "matchers": [
-                        {
-                            "arg": 1,
-                            "op": "=",
-                            "value": "131072"
-                        },
-                        {
-                            "arg": 0,
-                            "op": "=",
-                            "value": "1"
-                        }
-                    ],
-                    "name": "Condition #1"
-                },
-                {
-                    "component": "LMS.MEDIAMGR_API",
-                    "level": "DEBUG1",
-                    "logId": 2102883935,
-                    "matchers": [
-                        {
-                            "arg": 0,
-                            "op": "!=",
-                            "value": "0"
-                        }
-                    ],
-                    "name": "Condition #2"
-                }
-            ],
-            "experimentTarget": "Native",
-            "filters": [
-                {
-                    "component": "LMS.MEDIAMGR_API",
-                    "level": "DEBUG1"
-                },
-                {
-                    "component": "LMS.RtmCodecs_GENERIC",
-                    "level": "DEBUG6"
-                },
-                {
-                    "component": "LMS.CONFERENCE_GENERIC",
-                    "level": "DEBUG1"
-                }
-            ],
-            "mutualSubmissionType": "none",
-            "name": "AttachDevice failed case 4 #4263481",
-            "reenableAfterTriggering": false,
-            "resetCondition": {
-                "component": "LMS.MEDIAMGR_API",
-                "level": "DEBUG1",
-                "logId": 2733496783,
-                "matchers": [
-                    {
-                        "arg": 0,
-                        "op": "=",
-                        "value": "0"
-                    }
-                ],
-                "name": "Condition #reset"
-            }
-        }
+        "NrpRefactor265_naluCount": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
