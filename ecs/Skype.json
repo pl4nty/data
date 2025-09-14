@@ -3266,6 +3266,9 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
+        "BweRampupOnProbe": {
+            "enableRampup": false
+        },
         "EventPriority": {
             "RMHistogram": 0
         },
@@ -3927,7 +3930,7 @@
                         {
                             "arg": 1,
                             "op": "=",
-                            "value": "131586"
+                            "value": "131072"
                         },
                         {
                             "arg": 0,
@@ -3935,31 +3938,19 @@
                             "value": "1"
                         }
                     ],
-                    "name": "Condition #0"
-                },
-                {
-                    "component": "LMS.CONFERENCE_GENERIC",
-                    "level": "DEBUG1",
-                    "logId": 744094405,
-                    "matchers": [
-                        {
-                            "arg": 2,
-                            "op": "=",
-                            "value": "0x0000000000000000"
-                        },
-                        {
-                            "arg": 1,
-                            "op": "!=",
-                            "value": "-1"
-                        }
-                    ],
                     "name": "Condition #1"
                 },
                 {
-                    "component": "",
-                    "level": "",
-                    "logId": 0,
-                    "matchers": [],
+                    "component": "LMS.MEDIAMGR_API",
+                    "level": "DEBUG1",
+                    "logId": 2102883935,
+                    "matchers": [
+                        {
+                            "arg": 0,
+                            "op": "!=",
+                            "value": "0"
+                        }
+                    ],
                     "name": "Condition #2"
                 }
             ],
@@ -3967,7 +3958,7 @@
             "filters": [
                 {
                     "component": "LMS.MEDIAMGR_API",
-                    "level": "DEBUG6"
+                    "level": "DEBUG1"
                 },
                 {
                     "component": "LMS.RtmCodecs_GENERIC",
@@ -3975,17 +3966,18 @@
                 },
                 {
                     "component": "LMS.CONFERENCE_GENERIC",
-                    "level": "DEBUG6"
-                },
-                {
-                    "component": "LMS.DEVICE_GENERIC",
-                    "level": "DEBUG6"
+                    "level": "DEBUG1"
                 }
             ],
             "mutualSubmissionType": "none",
-            "name": "video sink empty 3 #4263481",
+            "name": "AttachDevice failed case 5 #4263481",
             "reenableAfterTriggering": false,
-            "resetCondition": null
+            "resetCondition": {
+                "component": "LMS.MEDIAMGR_API",
+                "level": "DEBUG1",
+                "logId": 2733496783,
+                "name": "Condition #reset"
+            }
         }
     },
     "SkypeWebMedia": {
