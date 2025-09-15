@@ -23,18 +23,13 @@ do
   if l_0_4 == nil then
     return mp.CLEAN
   end
-  local l_0_5, l_0_6 = extract_urls(l_0_4)
-  if isnull(l_0_5) then
-    return mp.CLEAN
-  end
-  l_0_5 = l_0_5[1]
-  local l_0_7 = {}
-  l_0_7.SIG_CONTEXT = "CMD"
-  l_0_7.CONTENT_SOURCE = "MSHTA_CMDLINE"
-  l_0_7.PROCESS_CONTEXT = "mshta.exe"
-  l_0_7.FILELESS = "true"
-  l_0_7.CMDLINE_URL = "true"
-  if ExtractUrlGetReputation(l_0_4, l_0_7, true, 2, 60, false, 3000) then
+  local l_0_5 = {}
+  l_0_5.SIG_CONTEXT = "CMD"
+  l_0_5.CONTENT_SOURCE = "MSHTA_CMDLINE"
+  l_0_5.PROCESS_CONTEXT = "mshta.exe"
+  l_0_5.FILELESS = "true"
+  l_0_5.CMDLINE_URL = "true"
+  if ExtractUrlGetReputation(l_0_4, l_0_5, true, 2, 60, false, 3000) then
     return mp.INFECTED
   end
   return mp.CLEAN
