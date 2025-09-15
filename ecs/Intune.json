@@ -335,7 +335,6 @@
     "SVC_RemoteAssist": {
         "FlightingV2": {
             "EnableDedupe": true,
-            "ManagedInstallerTargeting": true,
             "RedirectActionFlow": true
         }
     },
