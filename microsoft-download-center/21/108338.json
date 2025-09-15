@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2025 Release Candidate Pre-Release License Terms",
+    "downloadDescription": "SQL Server 2025 Release Candidate Pre-Release License Terms",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL2025PreReleaseLicense.htm",
+            "url": "https://download.microsoft.com/download/9a660231-8ff0-4fe3-95e5-3a06cc81376c/SQL2025PreReleaseLicense.htm",
+            "size": "209505",
+            "version": "17.0",
+            "datePublished": "8/12/2025 9:58:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the SQL Server 2025 Release Candidate (RC) Pre-Release License Terms",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.0",
+    "detailsSection_file_name": [
+        "SQL2025PreReleaseLicense.htm"
+    ],
+    "detailsSection_file_size": [
+        "204.6 KB"
+    ],
+    "detailsSection_file_date": "8/12/2025",
+    "systemRequirementsSection": "This file can be opened by any application that supports .htm files",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download the file and open with your browser or any application that supports .htm files",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108338",
+    "downloadPreload": true
+}

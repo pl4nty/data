@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix Update for Exchange Server 2016 CU23 HU18 (KB5066370)",
+    "downloadDescription": "Hotfix Update for Exchange Server 2016 CU23 HU18 (KB5066370)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-it.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-it.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server 2016 (KB5066370) Hash Table.docx",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange Server 2016 (KB5066370) Hash Table.docx",
+            "size": "17097",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-ja.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-ja.exe",
+            "size": "428508744",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-zh-hant.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-zh-hant.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-zh-hans.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-zh-hans.exe",
+            "size": "428508704",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-en.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-en.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-ru.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-ru.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-de.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-de.exe",
+            "size": "428508720",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-pt.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-pt.exe",
+            "size": "428508720",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-ko.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-ko.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-fr.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-fr.exe",
+            "size": "428508696",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB5066370-x64-es.exe",
+            "url": "https://download.microsoft.com/download/c2cf1d59-b3e4-4954-a631-24c6a2a55e19/Exchange2016-KB5066370-x64-es.exe",
+            "size": "428508728",
+            "version": "15.01.2507.059",
+            "datePublished": "9/8/2025 9:09:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Please see the KB article for more information about security content in this update.</u></b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5066370",
+        "name": "KB5066370"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.2507.059",
+    "detailsSection_file_name": [
+        "Exchange2016-KB5066370-x64-it.exe",
+        "Exchange Server 2016 (KB5066370) Hash Table.docx",
+        "Exchange2016-KB5066370-x64-ja.exe",
+        "Exchange2016-KB5066370-x64-zh-hant.exe",
+        "Exchange2016-KB5066370-x64-zh-hans.exe",
+        "Exchange2016-KB5066370-x64-en.exe",
+        "Exchange2016-KB5066370-x64-ru.exe",
+        "Exchange2016-KB5066370-x64-de.exe",
+        "Exchange2016-KB5066370-x64-pt.exe",
+        "Exchange2016-KB5066370-x64-ko.exe",
+        "Exchange2016-KB5066370-x64-fr.exe",
+        "Exchange2016-KB5066370-x64-es.exe"
+    ],
+    "detailsSection_file_size": [
+        "408.7 MB",
+        "16.7 KB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB",
+        "408.7 MB"
+    ],
+    "detailsSection_file_date": "9/8/2025",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2016 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2016 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2016 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2016 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2016 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<b>We recommend that you restart your server before you install an update.</b><br><br>\n\n<u>Then, follow these steps:</u><br>\n\n<ol>\n  <li>To start the download, select the <b>Download</b> button, and then do one of the following:\n    <ul>\n      <li><b>a.</b> To start the installation immediately, <i>temporarily disable any anti-virus software</i> and then select <b>Run</b>.</li>\n      <li><b>b.</b> To copy the download file to your computer for installation at a later time, select <b>Save</b>.</li>\n    </ul>\n  </li>\n  <li><i>Temporarily disable any anti-virus software</i> before starting the installation.</li>\n  <li>After the installation is completed, <i>re-enable the antivirus software</i>, and then restart your computer. \n    <br>(The installation program may prompt you to restart. <b>We strongly recommend that you restart the computer even if you are not prompted to do this.</b>)\n  </li>\n</ol>\n\n<br>\n\nIf problems occur during or after the installation, please see \n<a href=\"https://aka.ms/exupdatefaq\">Fix failed Exchange Server updates</a> and run the <a href=\"https://aka.ms/ExchangeHealthChecker\">Exchange Server Health Checker</a> tool. Check <a href=\"https://aka.ms/ExchangeTeamBlog\">Exchange Team Blog</a> for latest news on updates. <b>Microsoft Support</b> is available for any persistent problems.",
+    "additionalInformationSection": "<b><u>Exchange 2016 File Hash Information</u></b><br/><br/>\n\n<ol>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-de.exe<br/>\n    <b>Language:</b> <i>German (de-de)</i><br/>\n    <b>SHA 256:</b> F7FF0EFADE1447BC4EE9BFEA008875F0572653218AE411556A48CBC26774E6D2\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-en.exe<br/>\n    <b>Language:</b> <i>English (en-us)</i><br/>\n    <b>SHA 256:</b> 486C145A6D67E6C72AA56C9793C26B3338E7300FACDD59D9FC7BBEDBBF51388A\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-es.exe<br/>\n    <b>Language:</b> <i>Spanish (es-es)</i><br/>\n    <b>SHA 256:</b> B613C6E1DBDF65B7669494718D82112390BAEB85B15519C06714D9E0262AA597\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-fr.exe<br/>\n    <b>Language:</b> <i>French (fr-fr)</i><br/>\n    <b>SHA 256:</b> 8D3F73C52017D386712933F5E534B8D1FBC5AD87053CCD80BC63C0F932AE6FE7\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-it.exe<br/>\n    <b>Language:</b> <i>Italian (it-it)</i><br/>\n    <b>SHA 256:</b> 7DB952F7FD364F575A28896942E0112375D07390EB465E736480966EB4E02605\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-ja.exe<br/>\n    <b>Language:</b> <i>Japanese (ja-jp)</i><br/>\n    <b>SHA 256:</b> 8751C09B99F469221732F4BB69BFAFCADB8C8A8A595D2F8B6F9D636172802DE6\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-ko.exe<br/>\n    <b>Language:</b> <i>Korean (ko-kr)</i><br/>\n    <b>SHA 256:</b> 2F342E324DA16F4C831C10068C83C773FF9D4C25358B0D90106019D59C47637E\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-pt.exe<br/>\n    <b>Language:</b> <i>Portuguese-Brazil (pt-br)</i><br/>\n    <b>SHA 256:</b> 6A2ECF8801353AAE6757C12566BB1C048D0FE4D3A20BDB1936BC3861DB30A8D7\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-ru.exe<br/>\n    <b>Language:</b> <i>Russian (ru-ru)</i><br/>\n    <b>SHA 256:</b> 6CB5DCBDC13A43CD1D432AB428B0904E0D726FECC1B6512710510CC834FC9D5D\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-zh-hans.exe<br/>\n    <b>Language:</b> <i>Chinese-China (zh-cn)</i><br/>\n    <b>SHA 256:</b> B33A9C94E33FF33E33C9C4D4C0D979F5876BB4F49298282B8134D0D06A683590\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2016-KB5066370-x64-zh-hant.exe<br/>\n    <b>Language:</b> <i>Chinese-Taiwan (zh-tw)</i><br/>\n    <b>SHA 256:</b> B2654E6A29F612CC32C44C9C21BF0D30169A6D7D4AD734030979CA7DD1717626\n  </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108367",
+    "downloadPreload": true
+}

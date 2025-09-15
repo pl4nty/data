@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 SP3 (KB5063762)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 SP3.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB5063762-x64.exe",
+            "url": "https://download.microsoft.com/download/71245976-b4d0-4301-8976-c98a2571cbf9/SQLServer2016-KB5063762-x64.exe",
+            "size": "509024928",
+            "version": "13.0.6465.1",
+            "datePublished": "8/8/2025 11:05:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/><br />You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br /><br />More information about the vulnerability can be found here: <br /><a name=\"KB5063762\"></a><a href=\"https://support.microsoft.com/help/5063762\">KB5063762</a><br /><br /><br />For a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5063762",
+        "name": "KB5063762"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.6465.1",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB5063762-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "485.4 MB"
+    ],
+    "detailsSection_file_date": "8/8/2025",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP3 instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2016 SP3 Windows that have NOT had a Cumulative Update applied.<br /><br /><br />After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB5063762",
+            "url": "https://support.microsoft.com/help/5063762"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108329",
+    "downloadPreload": true
+}

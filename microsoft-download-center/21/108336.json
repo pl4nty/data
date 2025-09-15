@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Exchange Server 2019 CU14 SU6 (KB5063222)",
+    "downloadDescription": "Security Update for Exchange Server 2019 CU14 SU6 (KB5063222)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5063222-x64-en.exe",
+            "url": "https://download.microsoft.com/download/89a58873-f601-4901-8421-7d31837f473c/Exchange2019-KB5063222-x64-en.exe",
+            "size": "426894888",
+            "version": "15.02.1544.033",
+            "datePublished": "8/12/2025 5:30:48 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Please see the KB article for more information about security content in this update.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5063222",
+        "name": "KB5063222"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.1544.033",
+    "detailsSection_file_name": [
+        "Exchange2019-KB5063222-x64-en.exe"
+    ],
+    "detailsSection_file_size": [
+        "407.1 MB"
+    ],
+    "detailsSection_file_date": "8/12/2025",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "We recommend that you restart your computer before you install a security update. Then, follow these steps:<br/>\n<ol start=\"1\" type=\"1\">\n <li>\n  Temporarily disable any anti-virus software.\n </li>\n <li>\n  To start the download, select the Download button, and then do one of the following:\n </li>\n</ol>\n<ul type=\"disc\">\n <li>\n  To start the installation immediately, select <b>Run</b>.\n </li>\n <li>\n  To copy the download file to your computer for installation at a later time, select <b>Save</b>.<br/>\n </li>\n</ul>\n\n    <b>Note:</b> To change the display language for this webpage, open the Select Language list, and then select the language that you want.\n\n<ol start=\"3\" type=\"1\">\n <li>\n  After the installation is completed, re-enable the antivirus software, and then restart your computer. (The installation program may prompt you to restart. We strongly recommend that you restart the computer even if you are not prompted to do this.) \n </li>\n</ol>\n\n<br/>If problems occur during or after the installation, please see\n<a href=\"https://nam06.safelinks.protection.outlook.com/?url=https:%2f%2faka.ms%2fexupdatefaq&amp;data=05%7c01%7cchristys%40microsoft.com%7cdf601c59a4c54b9624ca08da8eeaafb4%7c72f988bf86f141af91ab2d7cd011db47%7c1%7c0%7c637979435867281629%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c3000%7c%7c%7c&amp;sdata=HhqMSuZ7xfTxwoKb8oSyVfUM7MqVE14Z%2BtKPoKx3tCE%3D&amp;reserved=0\">\n  Repair failed installations of Exchange Cumulative and Security updates\n    </a>\n before you contact Microsoft Support.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108336",
+    "downloadPreload": true
+}

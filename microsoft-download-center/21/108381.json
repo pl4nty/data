@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Test title",
+    "downloadDescription": "Test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ImageBuildReport.txt",
+            "url": "https://download.microsoft.com/download/39cc9a1f-1918-45c3-87c4-d7f82e2ab784/ImageBuildReport.txt",
+            "size": "12406",
+            "version": "1.0.0",
+            "datePublished": "9/9/2025 11:45:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "ImageBuildReport.txt"
+    ],
+    "detailsSection_file_size": [
+        "12.1 KB"
+    ],
+    "detailsSection_file_date": "9/9/2025",
+    "systemRequirementsSection": "Test",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108381",
+    "downloadPreload": true
+}

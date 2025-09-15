@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2015 Cumulative Update 13 Hotfix 2 KB3061064",
+    "downloadDescription": "This download includes all available updates for Skype for Business Server 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/ce28ebf9-068b-482f-97bc-aa79ea2be1a0/SkypeServerUpdateInstaller.exe",
+            "size": "446472736",
+            "version": "6.0.9319.881",
+            "datePublished": "8/18/2025 5:07:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigureSkypeforBusinessHybridApplication.ps1",
+            "url": "https://download.microsoft.com/download/ce28ebf9-068b-482f-97bc-aa79ea2be1a0/ConfigureSkypeforBusinessHybridApplication.ps1",
+            "size": "63351",
+            "version": "6.0.9319.881",
+            "datePublished": "8/18/2025 5:07:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "add_sfbassets (1).ps1",
+            "url": "https://download.microsoft.com/download/ce28ebf9-068b-482f-97bc-aa79ea2be1a0/add_sfbassets (1).ps1",
+            "size": "17680",
+            "version": "6.0.9319.881",
+            "datePublished": "8/18/2025 5:07:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server Subscription Edition is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/3061064\">3061064</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3061064",
+        "name": "KB3061064"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.9319.881",
+    "detailsSection_file_name": [
+        "SkypeServerUpdateInstaller.exe",
+        "ConfigureSkypeforBusinessHybridApplication.ps1",
+        "add_sfbassets (1).ps1"
+    ],
+    "detailsSection_file_size": [
+        "425.8 MB",
+        "61.9 KB",
+        "17.3 KB"
+    ],
+    "detailsSection_file_date": "8/18/2025",
+    "systemRequirementsSection": "This download works with the following program:\n<ul>\n<li>Skype for Business Server 2015</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/3061064\">3061064</A> for installation details.</li>\n</ol>\n<br />",
+    "additionalInformationSection": "SkypeServerUpdateInstaller.exe\tSHA 256 Hash = 2D73B1F49447ADAC6EA9871C5CCE5A0FF4380E3029BA71C5EFDF64D5A32ADB87\n\nConfigureSkypeforBusinessHybridApplication.ps1 SHA 256 Hash = 81F98A95B8FD732A8D2383CF3C4BF2A04CC53467FDA2377C10C90FB41587FEEB\n\nadd_sfbassets (1).ps1\tSHA 256 Hash = CA1CD95ADDEF42571D12B967C4E574F51FCD459D81410432BC7EDCAAEE76BCB7",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108342",
+    "downloadPreload": true
+}
