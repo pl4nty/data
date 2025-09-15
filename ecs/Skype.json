@@ -3265,6 +3265,9 @@
         "BurstDelivery": {
             "InSpikeDetectionTh": 0.15
         },
+        "BweRampupOnProbe": {
+            "enableRampup": false
+        },
         "EventPriority": {
             "RMHistogram": 0
         },
