@@ -593,6 +593,7 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
+    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
             "mdsc_call_quality_feedback": "P-R-1606381-2-11,P-R-1294203-6-12",
@@ -1480,6 +1481,7 @@
         "vivaPulseTokenCache": false,
         "vivaPulseTokenExchange": true,
         "vivaPulseUsePftPopTokenForNotify": true,
+        "vivaPulseVFAMDeprecationEnabled": true,
         "vivaPulseVivaAppBar": true,
         "vivaPulseWebOnlyExp": false,
         "vivaPulseeDiscoveryRetainForms": true
@@ -3909,9 +3911,6 @@
         "log_crash_sent": {
             "enabled": true
         }
-    },
-    "SkypeTransport": {
-        "testEcsKey": "test"
     },
     "SkypeVideoLibrary": {
         "AV1SceneChangeBlockMatchPct": 25,

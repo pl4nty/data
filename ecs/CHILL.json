@@ -1090,6 +1090,118 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.bb2dffcd-fb35-4aff-aa88-480f31acd6c7": {
+            "CampaignId": "bb2dffcd-fb35-4aff-aa88-480f31acd6c7",
+            "EndTimeUtc": "2025-12-30T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 5184000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-10T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "DisconnectPAYG",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very dissatisfied",
+                                    "questionLabel": "How was your experience with billing setup for pay as you go? ",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Need to use a different Azure subscription or resource group",
+                                        "No further business need of the product",
+                                        "Did not understand the pay as you go concept",
+                                        "Did not understand the billing setup process",
+                                        "Price or cost related",
+                                        "Other (pls specify)"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "What is your reason to disconnect the subscription from pay as you go?",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please elaborate your response to help us improve the product.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/bb2dffcd-fb35-4aff-aa88-480f31acd6c7/7a4c6272-8c7c-4df1-b056-1484cf1c0671/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.e187a7f9-a8d3-496a-835d-5b1d1b7a1d62": {
             "CampaignId": "e187a7f9-a8d3-496a-835d-5b1d1b7a1d62",
             "EndTimeUtc": "2026-01-30T18:30:00Z",

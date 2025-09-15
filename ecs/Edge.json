@@ -3244,11 +3244,6 @@
                 "eefrc"
             ]
         },
-        "MeasureNTPTraffic": {
-            "enableFeatures": [
-                "msNtpExp45"
-            ]
-        },
         "PBCalculationProfileCap": {
             "enableFeatures": [
                 "msEnablePBComputationsConnectionProfileCap"
