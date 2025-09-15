@@ -335,6 +335,7 @@
     "SVC_RemoteAssist": {
         "FlightingV2": {
             "EnableDedupe": true,
+            "ManagedInstallerTargeting": true,
             "RedirectActionFlow": true
         }
     },
@@ -373,6 +374,11 @@
             "EnableIRGFilterSearchSort": true,
             "EnableMDQErrorSplitting": true,
             "EnableMDQExportToCSV": true
+        }
+    },
+    "UX_RemoteAssist": {
+        "FlightingV2": {
+            "ManagedInstallerTargetingUX": true
         }
     },
     "UX_TenantSetup": {
