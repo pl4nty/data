@@ -279,9 +279,9 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
         description='Enumerate Microsoft download pages by ID')
-    parser.add_argument('--start', type=int, default=108100,
+    parser.add_argument('--start', type=int, default=108200,
                         help='Starting ID number')
-    parser.add_argument('--end', type=int, default=108300,
+    parser.add_argument('--end', type=int, default=109000,
                         help='Ending ID number')
     parser.add_argument('--threads', type=int, default=16,
                         help='Number of threads to use (default: 25)')
