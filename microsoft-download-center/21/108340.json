@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Edge Adoption Kit",
+    "downloadDescription": "Microsoft Edge Adoption Kit",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Edge Adoption Kit (3).zip",
+            "url": "https://download.microsoft.com/download/4c681aae-fff6-440e-95a7-fe0878109b57/Microsoft Edge Adoption Kit.zip",
+            "size": "225506020",
+            "version": "4",
+            "datePublished": "8/11/2025 6:01:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Edge Adoption Kit",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "Microsoft Edge Adoption Kit (3).zip"
+    ],
+    "detailsSection_file_size": [
+        "215.1 MB"
+    ],
+    "detailsSection_file_date": "8/11/2025",
+    "systemRequirementsSection": "Microsoft Edge",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download and Install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108340",
+    "downloadPreload": true
+}
