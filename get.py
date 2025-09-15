@@ -164,6 +164,13 @@ if __name__ == "__main__":
         fetch_and_prettify_json(
             "https://management.azure.com/metadata/endpoints?api-version=2022-09-01", "microsoft_azure_endpoints.json")
 
+        # Azure AI Foundry
+        # More at https://ai.azure.com/api/eastus/modelregistry/v1.0/registry/models?assetIdOrReference=azureml%3A%2F%2Fregistries%2Fazure-openai%2Fmodels%2Fgpt-5%2Fversions%2F2025-08-07
+        fetch_and_prettify_json(
+            "https://ai.azure.com/modelcache/widgets/PlaygroundConfig.json", "microsoft_azure_ai_playground.json")
+        fetch_and_prettify_json(
+            "https://ai.azure.com/modelcache/benchmarks/en/prod/indexEntitiesResponse/benchmarks.json", "microsoft_azure_ai_benchmarks.json")
+
         creds = DefaultAzureCredential()
         headers = {
             "Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
@@ -174,4 +181,5 @@ if __name__ == "__main__":
         url = sys.argv[1]
         output_file = sys.argv[2]
         fetch_and_prettify_json(url, output_file)
+
 
