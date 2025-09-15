@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FileToSQL",
+    "downloadDescription": "Bulk load files into SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FileToSQL-V1.0.1.zip",
+            "url": "https://download.microsoft.com/download/de97fe37-33de-4302-aecb-a9c271a1b3c7/FileToSQL-V1.0.1.zip",
+            "size": "11506586",
+            "version": "1.0.1",
+            "datePublished": "9/6/2025 4:59:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Bulk load CSV, AVRO or Parquet files into SQL Server from Azure Blob or local storage.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "FileToSQL-V1.0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "9/6/2025",
+    "systemRequirementsSection": ".Net 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Extract files into a folder, edit the appsettings.json and run FileToSQL.exe",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108352",
+    "downloadPreload": true
+}

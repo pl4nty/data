@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Sample Azure Migrate to Azure Local PowerShell Script",
+    "downloadDescription": "PowerShell script to automate VM replication and migration from VMware or Hyper-V to Azure Local using Azure Migrate.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sample-AzLocal-migration-script.ps1",
+            "url": "https://download.microsoft.com/download/cdbf9805-de20-4e0e-8042-69145aa6a757/sample-AzLocal-migration-script.ps1",
+            "size": "5311",
+            "version": "1.0.0",
+            "datePublished": "8/5/2025 9:18:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This sample PowerShell script demonstrates how to use the Azure Migrate PowerShell module to replicate and migrate VMs from VMware or Hyper-V to Azure Local.\nIt covers key steps such as discovering VMs, initializing replication infrastructure, creating replication jobs (with or without disk/NIC mapping), and completing migration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "sample-AzLocal-migration-script.ps1"
+    ],
+    "detailsSection_file_size": [
+        "5.2 KB"
+    ],
+    "detailsSection_file_date": "8/5/2025",
+    "systemRequirementsSection": "PowerShell 5.1 or higher\n\nAzure PowerShell Az module",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Standard",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Listed in Learn Documentation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108308",
+    "downloadPreload": true
+}

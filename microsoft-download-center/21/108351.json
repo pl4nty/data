@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Draw like an architect quick start",
+    "downloadDescription": "Tutorial for using Visio with Microsoft icons, templates, stencils, and reusable architecture illustrations on Learn.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "draw-like-an-architect-quick-start.vsdx",
+            "url": "https://download.microsoft.com/download/53b62c62-b685-4ae1-a984-71e9256e5807/draw-like-an-architect-quick-start.vsdx",
+            "size": "9217954",
+            "version": "1",
+            "datePublished": "8/29/2025 4:14:48 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "draw-like-an-architect-quick-start.pdf",
+            "url": "https://download.microsoft.com/download/53b62c62-b685-4ae1-a984-71e9256e5807/draw-like-an-architect-quick-start.pdf",
+            "size": "686787",
+            "version": "1",
+            "datePublished": "8/29/2025 4:14:48 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Draw like an architect quick start -- Get all the good stuff. Find reusable architectures. Create fabulously-branded architecture work for you and your customers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "draw-like-an-architect-quick-start.vsdx",
+        "draw-like-an-architect-quick-start.pdf"
+    ],
+    "detailsSection_file_size": [
+        "8.8 MB",
+        "670.7 KB"
+    ],
+    "detailsSection_file_date": "8/29/2025",
+    "systemRequirementsSection": "Visio or your preferred graphics tool, including PowerPoint.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and open the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "zero Trust Partner Kit",
+            "url": "https://learn.microsoft.com/security/zero-trust/zero-trust-partner-kit"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108351",
+    "downloadPreload": true
+}

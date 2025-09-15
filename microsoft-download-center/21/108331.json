@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2017 RTM CU31 (KB5063759)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2017 RTM CU31.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2017-KB5063759-x64.exe",
+            "url": "https://download.microsoft.com/download/e965e71d-2604-443c-99ec-33fcf4668d7d/SQLServer2017-KB5063759-x64.exe",
+            "size": "568840752",
+            "version": "14.0.3500.1",
+            "datePublished": "8/8/2025 11:04:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/><br />You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br /><br />More information about the vulnerability can be found here: <br /><a name=\"KB5063759\"></a><a href=\"https://support.microsoft.com/help/5063759\">KB5063759</a><br /><br /><br />For a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5063759",
+        "name": "KB5063759"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.3500.1",
+    "detailsSection_file_name": [
+        "SQLServer2017-KB5063759-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "542.5 MB"
+    ],
+    "detailsSection_file_date": "8/8/2025",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2017 RTM instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2017 RTM Windows instances that have had a Cumulative Update applied.<br />After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB5063759",
+            "url": "https://support.microsoft.com/help/5063759"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108331",
+    "downloadPreload": true
+}
