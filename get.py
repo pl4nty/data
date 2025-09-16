@@ -85,8 +85,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/OneShell/1.0.0.0?IsConsumer=false&UserId=3387110e-a323-4cf4-8925-055e2d149b43", "ecs/OneShell.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/LokiService/1.0.0.0?ClientWorkload=M365AdminCenter&id=3387110e-a323-4cf4-8925-055e2d149b43&TenantID=77274a75-f318-4f60-b319-57d7e3012825&ring=Prod&ApEnvironment=Prod", "ecs/LokiService.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/MicrosoftTeams/1.0.0.0?TenantID=77274a75-f318-4f60-b319-57d7e3012825", "ecs/MicrosoftTeams.json")
         fetch_and_prettify_json(
@@ -101,8 +101,8 @@ if __name__ == "__main__":
             "https://ecs.office.com/config/v1/PortalsMakerExperiences/1.0.0.0", "ecs/PortalsMakerExperiences.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json")
-        fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
+        # fetch_and_prettify_json(
+        #     "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
         fetch_and_prettify_json(
             "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
         fetch_and_prettify_json(
@@ -181,5 +181,6 @@ if __name__ == "__main__":
         url = sys.argv[1]
         output_file = sys.argv[2]
         fetch_and_prettify_json(url, output_file)
+
 
 
