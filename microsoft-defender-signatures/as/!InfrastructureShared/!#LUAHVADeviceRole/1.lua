@@ -59,45 +59,34 @@ if l_0_15 and l_0_16 ~= nil and l_0_16.urls ~= nil then
   end
 end
 do
+  local l_0_28 = nil
+  if l_0_9 <= (MpCommon.AtomicCounterAddNamespaced)(l_0_3, l_0_0, 1) and l_0_2 == nil then
+    l_0_28 = pcall
+    l_0_28((MpCommon.AtomicCounterSetNamespaced)(l_0_1, l_0_0, 1, l_0_6))
+  end
   if l_0_13 and l_0_14 then
-    l_0_14 = l_0_14:gsub("^|[^|]*|", "")
-    for l_0_31 in l_0_14:gmatch("[^|]+") do
-      local l_0_31 = nil
-      l_0_31 = l_0_31(l_0_30, "([^=]+)=(.*)")
-      local l_0_32, l_0_33 = nil
-      if l_0_31 then
-        l_0_33 = AppendToRollingQueue
-        l_0_33(l_0_5, l_0_31, l_0_32, l_0_6, 100)
+    l_0_28 = l_0_28(l_0_14, "^|[^|]*|", "")
+    l_0_14 = l_0_28
+    l_0_28 = l_0_28(l_0_14, "[^|]+")
+    for l_0_32 in l_0_28 do
+      local l_0_32 = nil
+      l_0_32 = l_0_32(l_0_31, "([^=]+)=(.*)")
+      local l_0_33, l_0_34 = nil
+      if l_0_32 then
+        l_0_34 = AppendToRollingQueue
+        l_0_34(l_0_5, l_0_32, l_0_33, l_0_6, 100)
       end
     end
+    local l_0_35 = nil
+    local l_0_36 = nil
+    local l_0_37 = nil
+    l_0_37 = pcall
+    l_0_37(mp.GetUrlReputation, l_0_35, l_0_36)
   end
   do
-    local l_0_34 = nil
-    if l_0_9 <= (MpCommon.AtomicCounterAddNamespaced)(l_0_3, l_0_0, 1) and l_0_2 == nil then
-      l_0_34 = pcall
-      l_0_34((MpCommon.AtomicCounterSetNamespaced)(l_0_1, l_0_0, 1, l_0_6))
-    end
-    if l_0_13 then
-      l_0_34 = "http://67dda214-3ec7-4d14-aac7-7d3658a8c8ea-001.report"
-      local l_0_35 = nil
-      local l_0_36 = nil
-      local l_0_37 = nil
-      l_0_37 = l_0_14
-      local l_0_38 = nil
-      l_0_38 = safeJsonSerialize
-      l_0_38 = l_0_38(l_0_37)
-      l_0_38 = pcall
-      l_0_38(mp.GetUrlReputation, l_0_35, l_0_36)
-    end
-    do
-      do
-        l_0_34 = mp
-        l_0_34 = l_0_34.CLEAN
-        do return l_0_34 end
-        -- DECOMPILER ERROR at PC181: Confused about usage of register R17 for local variables in 'ReleaseLocals'
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC175: Confused about usage of register R18 for local variables in 'ReleaseLocals'
 
-      end
-    end
   end
 end
 
