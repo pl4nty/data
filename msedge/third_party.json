@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32291598,
-    "file_count": 3952
+    "size": 32224962,
+    "file_count": 3950
   },
   {
     "name": "boringssl",
@@ -246,8 +246,8 @@
   },
   {
     "name": "glib",
-    "size": 52103170,
-    "file_count": 2346
+    "size": 52996419,
+    "file_count": 2381
   },
   {
     "name": "glslang",
@@ -271,8 +271,8 @@
   },
   {
     "name": "gvdb",
-    "size": 135187,
-    "file_count": 22
+    "size": 136134,
+    "file_count": 23
   },
   {
     "name": "harfbuzz-ng",
@@ -400,11 +400,6 @@
     "file_count": 14
   },
   {
-    "name": "libpng",
-    "size": 173897,
-    "file_count": 4
-  },
-  {
     "name": "libprotobuf-mutator",
     "size": 10148,
     "file_count": 14
@@ -461,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 282711,
+    "size": 283453,
     "file_count": 40
   },
   {
@@ -491,8 +486,8 @@
   },
   {
     "name": "mutter",
-    "size": 28385703,
-    "file_count": 1981
+    "size": 29870907,
+    "file_count": 2013
   },
   {
     "name": "nasm",
@@ -761,7 +756,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29285505,
+    "size": 29375805,
     "file_count": 626
   },
   {
@@ -773,11 +768,6 @@
     "name": "wpt_tools",
     "size": 380004,
     "file_count": 60
-  },
-  {
-    "name": "zlib",
-    "size": 121577,
-    "file_count": 4
   },
   {
     "name": "zstd",
