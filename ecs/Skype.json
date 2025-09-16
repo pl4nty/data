@@ -705,7 +705,7 @@
                 "ecsSettings": {
                     "allowPlayButton": true,
                     "allowSdnPlugins": true,
-                    "debugLogging": true,
+                    "debugLogging": false,
                     "enableBandwidthManagementV3": true,
                     "enableOverlayStats": true,
                     "modifiedInitBw": [
@@ -3919,8 +3919,7 @@
         "FixQoEResourceTypeMask": "1",
         "ForceXLMeetingIdrThrottle": "0",
         "H265RefactoredCodeConvPayloads": "1",
-        "NrpRefactor265_naluCount": "1",
-        "SkipGpuQueryForVM": "1"
+        "NrpRefactor265_naluCount": "1"
     },
     "SkypeWebMedia": {
         "mediaAgent": {
