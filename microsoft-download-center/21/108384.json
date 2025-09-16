@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "dms.txt",
+            "url": "https://download.microsoft.com/download/28abc638-aed5-48b7-818b-1b4463243428/dms.txt",
+            "size": "19",
+            "version": "1",
+            "datePublished": "9/4/2025 6:33:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "dms.txt"
+    ],
+    "detailsSection_file_size": [
+        "19 bytes"
+    ],
+    "detailsSection_file_date": "9/4/2025",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "iOS"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108384",
+    "downloadPreload": true
+}
