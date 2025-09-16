@@ -577,6 +577,7 @@
         "EnableVirtualizationBasedSecurityFeatures": true,
         "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbSsoForFleet": true,
+        "EnableW365GnTV1": true,
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableWDSRegistration": true,
         "EnableWIN1124H2_250113": true,

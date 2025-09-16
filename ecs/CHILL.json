@@ -1315,6 +1315,117 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_AdminPortal.eb75b2b8-55a6-4505-a7eb-ec5b7c5a9e38": {
+            "CampaignId": "eb75b2b8-55a6-4505-a7eb-ec5b7c5a9e38",
+            "EndTimeUtc": "2025-12-30T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 5184000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-10T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AbandonPAYG",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very dissatisfied",
+                                    "questionLabel": "How was your experience with billing setup for pay as you go? ",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "I wasn't sure how to complete the billing setup",
+                                        "I do not have the subscription ID or resource group handy ",
+                                        "I am just exploring, or not ready to set it up yet ",
+                                        "I ran into a technical issue ",
+                                        "Other (pls specify)"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "What prevented you from setting up billing for pay as you go? ",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/eb75b2b8-55a6-4505-a7eb-ec5b7c5a9e38/d6ad6a5f-a50b-44e0-9926-334ba2799817/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
         }
     },
     "ChillCopilotStudio": {
