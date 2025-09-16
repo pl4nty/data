@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Test Rishika",
+    "downloadDescription": "Test Rishika",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "supertestrelease.txt",
+            "url": "https://download.microsoft.com/download/96472b4f-a431-414a-a3ba-29d67db96d67/super.txt",
+            "size": "68",
+            "version": "Test Rishika",
+            "datePublished": "9/15/2025 10:45:20 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "test release v3.txt",
+            "url": "https://download.microsoft.com/download/96472b4f-a431-414a-a3ba-29d67db96d67/test releast v2.txt",
+            "size": "7",
+            "version": "Test Rishika",
+            "datePublished": "9/15/2025 10:45:20 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test Rishika",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Test Rishika",
+    "detailsSection_file_name": [
+        "supertestrelease.txt",
+        "test release v3.txt"
+    ],
+    "detailsSection_file_size": [
+        "68 bytes",
+        "7 bytes"
+    ],
+    "detailsSection_file_date": "9/15/2025",
+    "systemRequirementsSection": "Test Rishika",
+    "systemRequirementsSection_supportedOS": [
+        "Microsoft Windows 2000"
+    ],
+    "installInstructionSection": "Test Rishika",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108383",
+    "downloadPreload": true
+}
