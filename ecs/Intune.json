@@ -2,6 +2,18 @@
     "AndroidRemoteHelp": {
         "remoteHelp.feature.unattendedOverlayWindow": true
     },
+    "CLI_AOSP": {
+        "8ee74127-8935-40ed-a0fc-388605eb8ba7": true,
+        "DexguardRasp_Enabled": true,
+        "RequiredApps_ProcessRequiredApps_FeatureEnabled": true,
+        "agent.pullnotifications.enabled": true,
+        "d3488308-f3f8-4685-a83c-59eec9c68163": true,
+        "mdmcert.migrate.enabled": true,
+        "mdmcert.rsapss.enabled": true,
+        "resetpassword.resetpasswordtokenactivation.enabled": true,
+        "terms.termspage.enabled": true,
+        "workplacejoin.workplacejoinheal.enabled": 1
+    },
     "CLI_FireDrill_25": {
         "evanve_convertToDefault_1": true,
         "evanve_defaultTobeOverriden_enabled": false

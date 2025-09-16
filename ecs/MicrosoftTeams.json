@@ -1797,6 +1797,7 @@
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
             "EnableUsingBotNameFromContext": true,
+            "HideRequestAgendaButton": true,
             "ShouldUseMASTranscriptForMeetingData": true,
             "TranscriptsIngestionWaitTimeInSec": 5
         },
