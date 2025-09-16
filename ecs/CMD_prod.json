@@ -901,6 +901,7 @@
         "CacheAndFilterPrerequisiteFailedDevices": true,
         "ClientAgentMigration": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
+        "DSSApi": true,
         "Device-Migration-Management-Function-RenameDevices": true,
         "Device-UX-DownloadAdminUsers": true,
         "DeviceTargetingDryRun": true,
