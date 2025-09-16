@@ -9706,16 +9706,16 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 90.73,
-                        "latency_mean_secs": 23.77,
-                        "latency_p50_secs": 19.16,
-                        "latency_p90_secs": 41.36,
-                        "latency_p95_secs": 61.5,
-                        "latency_p99_secs": 69.4,
-                        "latency_ttft_secs": 0.3,
-                        "throughput_gtps_token_count": 90.73,
+                        "index_metric": 90.92,
+                        "latency_mean_secs": 20.94,
+                        "latency_p50_secs": 18.31,
+                        "latency_p90_secs": 27,
+                        "latency_p95_secs": 38.25,
+                        "latency_p99_secs": 66.91,
+                        "latency_ttft_secs": 0.34,
+                        "throughput_gtps_token_count": 90.92,
                         "throughput_rps_request_count": 0.05,
-                        "throughput_ttps_token_count": 138.99,
+                        "throughput_ttps_token_count": 148.75,
                         "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-chat/versions/2025-08-07",
@@ -9736,7 +9736,7 @@
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
                     "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "101",
+                    "num_of_inference_aggregations": "233",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
                     "output_generated_tokens": "2000",
@@ -10391,16 +10391,16 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 135.63,
-                        "latency_mean_secs": 14.83,
-                        "latency_p50_secs": 14.47,
-                        "latency_p90_secs": 19.71,
-                        "latency_p95_secs": 21.38,
-                        "latency_p99_secs": 23.24,
-                        "latency_ttft_secs": 6.4,
-                        "throughput_gtps_token_count": 135.63,
+                        "index_metric": 126.82,
+                        "latency_mean_secs": 15.98,
+                        "latency_p50_secs": 15.71,
+                        "latency_p90_secs": 21.38,
+                        "latency_p95_secs": 23.12,
+                        "latency_p99_secs": 26.69,
+                        "latency_ttft_secs": 6.7,
+                        "throughput_gtps_token_count": 126.82,
                         "throughput_rps_request_count": 0.07,
-                        "throughput_ttps_token_count": 213.34,
+                        "throughput_ttps_token_count": 201.09,
                         "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-mini/versions/2025-08-07",
@@ -10421,7 +10421,7 @@
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
                     "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "101",
+                    "num_of_inference_aggregations": "233",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
                     "output_generated_tokens": "2000",
@@ -11076,16 +11076,16 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 232.09,
-                        "latency_mean_secs": 8.68,
-                        "latency_p50_secs": 8.68,
-                        "latency_p90_secs": 10.81,
-                        "latency_p95_secs": 11.15,
-                        "latency_p99_secs": 13.49,
-                        "latency_ttft_secs": 7.6,
-                        "throughput_gtps_token_count": 232.09,
-                        "throughput_rps_request_count": 0.12,
-                        "throughput_ttps_token_count": 362.38,
+                        "index_metric": 223.53,
+                        "latency_mean_secs": 11.01,
+                        "latency_p50_secs": 9.35,
+                        "latency_p90_secs": 18.29,
+                        "latency_p95_secs": 21.39,
+                        "latency_p99_secs": 24.04,
+                        "latency_ttft_secs": 8.16,
+                        "throughput_gtps_token_count": 223.53,
+                        "throughput_rps_request_count": 0.11,
+                        "throughput_ttps_token_count": 313.76,
                         "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-nano/versions/2025-08-07",
@@ -11106,7 +11106,7 @@
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
                     "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "101",
+                    "num_of_inference_aggregations": "233",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
                     "output_generated_tokens": "2000",
@@ -11863,16 +11863,16 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 84.24,
-                        "latency_mean_secs": 26.62,
-                        "latency_p50_secs": 25.51,
-                        "latency_p90_secs": 36.91,
-                        "latency_p95_secs": 40.94,
-                        "latency_p99_secs": 53.16,
-                        "latency_ttft_secs": 22.93,
-                        "throughput_gtps_token_count": 84.24,
-                        "throughput_rps_request_count": 0.04,
-                        "throughput_ttps_token_count": 127.91,
+                        "index_metric": 68.86,
+                        "latency_mean_secs": 34.72,
+                        "latency_p50_secs": 30.24,
+                        "latency_p90_secs": 55.58,
+                        "latency_p95_secs": 67.39,
+                        "latency_p99_secs": 90.62,
+                        "latency_ttft_secs": 26.86,
+                        "throughput_gtps_token_count": 68.86,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 106.07,
                         "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5/versions/2025-08-07",
@@ -11893,7 +11893,7 @@
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
                     "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "102",
+                    "num_of_inference_aggregations": "234",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
                     "output_generated_tokens": "2000",
@@ -12568,6 +12568,55 @@
                     "fewshot_sampling_ratio": "1",
                     "fewshot_split": "None",
                     "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 217.34,
+                        "latency_mean_secs": 12.14,
+                        "latency_p50_secs": 9.63,
+                        "latency_p90_secs": 22.35,
+                        "latency_p95_secs": 35.24,
+                        "latency_p99_secs": 40.57,
+                        "latency_ttft_secs": 0.25,
+                        "throughput_gtps_token_count": 217.34,
+                        "throughput_rps_request_count": 0.1,
+                        "throughput_ttps_token_count": 346.02,
+                        "time_between_tokens_secs": 0.02
+                    },
+                    "modelAssetId": "azureml://registries/azureml-openai-oss/models/gpt-oss-120b/versions/4",
+                    "modelName": "gpt-oss-120b",
+                    "modelVersion": "4"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-openai-oss/models/gpt-oss-120b/versions/4",
+                    "azure_latest_model_version": "4",
+                    "azure_model_name": "gpt-oss-120b",
+                    "azure_registry_name": "azureml-openai-oss",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_maas",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "67",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "1:2",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
                 }
             }
         },
@@ -22193,8 +22242,8 @@
                     "azure_latest_model_version": "1",
                     "azure_model_name": "mistral-small-2503",
                     "azure_registry_name": "azureml-mistral",
-                    "dataset_category": "biosecurity",
-                    "dataset_leaderboard": "safety",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
                     "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
                     "evaluation_type": "text_generation_safety",
                     "task": "chat-completion"
@@ -22227,8 +22276,8 @@
                     "azure_latest_model_version": "1",
                     "azure_model_name": "mistral-small-2503",
                     "azure_registry_name": "azureml-mistral",
-                    "dataset_category": "chemical security",
-                    "dataset_leaderboard": "safety",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
                     "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
                     "evaluation_type": "text_generation_safety",
                     "task": "chat-completion"
@@ -22261,8 +22310,8 @@
                     "azure_latest_model_version": "1",
                     "azure_model_name": "mistral-small-2503",
                     "azure_registry_name": "azureml-mistral",
-                    "dataset_category": "cybersecurity",
-                    "dataset_leaderboard": "safety",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
                     "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
                     "evaluation_type": "text_generation_safety",
                     "task": "chat-completion"
@@ -22275,6 +22324,55 @@
                     "fewshot_sampling_ratio": "1",
                     "fewshot_split": "None",
                     "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 113.29,
+                        "latency_mean_secs": 3.35,
+                        "latency_p50_secs": 1.37,
+                        "latency_p90_secs": 4.58,
+                        "latency_p95_secs": 14.6,
+                        "latency_p99_secs": 33.4,
+                        "latency_ttft_secs": 1.83,
+                        "throughput_gtps_token_count": 113.29,
+                        "throughput_rps_request_count": 0.63,
+                        "throughput_ttps_token_count": 643.5,
+                        "time_between_tokens_secs": 0.05
+                    },
+                    "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "modelName": "mistral-small-2503",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "mistral-small-2503",
+                    "azure_registry_name": "azureml-mistral",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_maas",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "294",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
                 }
             }
         },
