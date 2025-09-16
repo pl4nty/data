@@ -8,7 +8,7 @@ if not (mp.get_mpattribute)("MpCmdLineFoundB64") then
 end
 local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 ~= nil then
-  set_research_data("ParentProcess", l_0_0.ppid .. ";" .. l_0_0.image_path, false)
+  set_research_data("ParentProcess", (string.gsub)(l_0_0.ppid, ",", ":") .. ";" .. l_0_0.image_path, false)
 end
 return mp.INFECTED
 
