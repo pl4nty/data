@@ -14,7 +14,7 @@ l_0_0 = (string.lower)(l_0_0)
 if l_0_0 == "64eacc49-6a31-42c6-9b39-c3d9148e65f4" or l_0_0 == "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" then
   return mp.CLEAN
 end
-if l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(8000, false, true, true) ~= true then
+if l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(15000, false, true, true) ~= true then
   return mp.CLEAN
 end
 local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
@@ -110,7 +110,7 @@ else
                         -- DECOMPILER ERROR at PC409: Confused about usage of register: R8 in 'UnsetPending'
 
                         if l_0_46 >= 2 or l_0_46 + l_0_37 >= 3 or l_0_46 + l_0_37 + l_0_39 + UpdateRqIntValueByKeyNS("BAS_SB_Coverage", "BAS_SB_EncryptProcs_Tel", l_0_4 .. "\\RestNonExecFiles", 1) >= 4 then
-                          (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProc", l_0_3)
+                          (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_BaseFileEncryptProcTel", l_0_3)
                           return mp.INFECTED
                         end
                         return mp.CLEAN
