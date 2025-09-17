@@ -4235,6 +4235,7 @@
             "enableDraggableRegions": false,
             "enableDraggableRegionsOnMacV2": false,
             "enableInteractiveDragging": false,
+            "enableLocalNetworkAccessChecks": false,
             "enableMojoIpcz": false,
             "enableSharedArrayBuffer": false,
             "enableTaskManagerHotKey": false,
