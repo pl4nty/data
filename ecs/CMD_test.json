@@ -306,6 +306,7 @@
         "EnableBulkPremiumDisasterRecovery_IntuneUX": true,
         "EnableBulkReinstallAgent": true,
         "EnableBulkResize": true,
+        "EnableBusinessDisconnectOnIdleBackfill": true,
         "EnableBypassGroupMembershipEvent": false,
         "EnableCDSCheckANCInUse": true,
         "EnableCMDAgentAMQPURLToError": true,
