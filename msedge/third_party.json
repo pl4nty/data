@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14634380,
+    "size": 14634688,
     "file_count": 830
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32224962,
+    "size": 32225726,
     "file_count": 3950
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "dawn",
-    "size": 36542765,
+    "size": 36542859,
     "file_count": 95
   },
   {
@@ -216,8 +216,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 92640614,
-    "file_count": 10910
+    "size": 92633665,
+    "file_count": 10907
   },
   {
     "name": "flac",
@@ -356,7 +356,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 45166,
+    "size": 45238,
     "file_count": 39
   },
   {
@@ -366,8 +366,8 @@
   },
   {
     "name": "libc++",
-    "size": 6185863,
-    "file_count": 937
+    "size": 6196241,
+    "file_count": 939
   },
   {
     "name": "libdisplay-info",
@@ -456,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 283453,
+    "size": 283514,
     "file_count": 40
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18895851,
+    "size": 18896363,
     "file_count": 19
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 28873,
+    "size": 28918,
     "file_count": 15
   },
   {
@@ -536,8 +536,8 @@
   },
   {
     "name": "openscreen",
-    "size": 1157173,
-    "file_count": 145
+    "size": 876994,
+    "file_count": 132
   },
   {
     "name": "openxr",
@@ -726,8 +726,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6269943,
-    "file_count": 168
+    "size": 6305985,
+    "file_count": 170
   },
   {
     "name": "vulkan_memory_allocator",
