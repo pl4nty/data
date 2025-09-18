@@ -1780,7 +1780,10 @@
         "TelemetryRegion": "US"
     },
     "TeamsCopilotAggregator": {
-        "ProjectAgentOptions.EnablePAAutoDeletionfromSASilentMode": false
+        "ProjectAgentOptions.EnablePAAutoDeletionfromSASilentMode": false,
+        "TeamsChatAgentAL": {
+            "DFEndpoint": "https://msit.augloop.svc.cloud.microsoft"
+        }
     },
     "TeamsCopilotAggregator_UserCtx": {
         "CustomerServiceCopilotRolloutFlags": {
