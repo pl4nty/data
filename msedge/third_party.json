@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2087247,
+    "size": 2088649,
     "file_count": 179
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10715935,
+    "size": 10716088,
     "file_count": 167
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32225726,
-    "file_count": 3950
+    "size": 32244002,
+    "file_count": 3951
   },
   {
     "name": "boringssl",
@@ -246,7 +246,7 @@
   },
   {
     "name": "glib",
-    "size": 52996419,
+    "size": 52996561,
     "file_count": 2381
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3845350,
+    "size": 3858088,
     "file_count": 579
   },
   {
@@ -641,8 +641,8 @@
   },
   {
     "name": "skia",
-    "size": 3463351,
-    "file_count": 1179
+    "size": 3461313,
+    "file_count": 1182
   },
   {
     "name": "speech-dispatcher",
@@ -656,7 +656,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 530544,
+    "size": 530606,
     "file_count": 15
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "swiftshader",
-    "size": 5863046,
+    "size": 5869409,
     "file_count": 48
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6305985,
+    "size": 6305893,
     "file_count": 170
   },
   {
