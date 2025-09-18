@@ -8,17 +8,16 @@ do
     local l_0_0 = (this_sigattrlog[2]).utf8p2
     ExtendedSuspMacPathsToMonitor = function(l_1_0)
   -- function num : 0_0
-  if SuspMacPathsToMonitor(l_1_0, true) then
-    return true
-  end
-  if l_1_0:find("^/Users/[^/]+/Desktop/", 1, false) or l_1_0:find("^/Users/[^/]+/Documents/", 1, false) or l_1_0:find("^/Users/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Downloads/", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+/[^/]+$", 1, false) then
+  if l_1_0:find("^/Users/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Downloads/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Library/Application Support/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/[^/]+$", 1, false) or l_1_0:find("^/tmp/[^/]+$", 1, false) or l_1_0:find("^/private/tmp/[^/]+$", 1, false) then
     return true
   end
   return false
 end
 
     if ExtendedSuspMacPathsToMonitor(l_0_0) then
-      (bm.add_related_file)(l_0_0)
+      if (sysio.IsFileExists)(l_0_0) then
+        (bm.add_threat_file)(l_0_0)
+      end
       return mp.INFECTED
     end
   end

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\159d7f0706e6a\1.luac 
+-- Command line: lua\!InfrastructureShared\46fd787cac9f3\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -35,6 +35,9 @@ if l_0_4 < 5 and #l_0_1 < 500 then
 end
 l_0_5.Cmdline = l_0_1
 l_0_5.Parents = add_parents_mp()
+if parent_mp_contains(l_0_5.Parents, "curl") or parent_mp_contains(l_0_5.Parents, "wget") then
+  l_0_4 = l_0_4 + 20
+end
 l_0_5.IsBlocking = l_0_6
 l_0_5.LLM_Info = GetLLMModelFromCmd(l_0_1)
 local l_0_7 = safeJsonSerialize(l_0_5, 150, nil, true)
@@ -42,7 +45,7 @@ if l_0_2 and l_0_2.ppid then
   (MpCommon.BmTriggerSig)(l_0_2.ppid, "LLMPromptGrader", l_0_7)
 end
 set_research_data("IsBlocking", l_0_6, false)
-set_research_data("Evidence", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_7)), false)
+set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_7), false)
 set_research_data("LLM_Technology", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_5.LLM_Info)), false)
 if l_0_6 then
   return mp.INFECTED
