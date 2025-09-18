@@ -17,6 +17,7 @@
             "LockOnDisconnect": true
         },
         "AssignAudit": false,
+        "BCDRReportEnableFilter": true,
         "BackFillGroupLicenseAssignmentId": true,
         "BlobCNameEnabled": true,
         "BlockGccCommercialTenant": true,
@@ -824,7 +825,7 @@
         "EnableUserLicenseAssignmentView": false,
         "EnableUserPreviewInUX": true,
         "EnableUserServiceNewGraphGetUserWithBatch": true,
-        "EnableUsingGalleryImagePreviewVersion": false,
+        "EnableUsingGalleryImagePreviewVersion": true,
         "EnableUtilizationR90": true,
         "EnableUtilizationR90DeviceLevel": true,
         "EnableVMBalanceDuringProvision": true,
