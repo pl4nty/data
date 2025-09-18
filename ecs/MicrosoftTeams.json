@@ -1274,6 +1274,11 @@
         },
         "ScaleableHostedService": {
             "InstanceCount": 5
+        },
+        "ringSettings": {
+            "settings": {
+                "EnableSettingChatModalityForPostReplyChannels": true
+            }
         }
     },
     "MicrosoftTeamsTenantRegionOverrideList": {
@@ -4212,7 +4217,8 @@
             "enableTMAMsiRepairOnWow64": false,
             "enableTeamsGameBarWidgetMSIXUpdate": false,
             "enableUpdateRecovery": false,
-            "mitigateDeploymentError": true
+            "mitigateDeploymentError": true,
+            "registerUpdateOnExit": false
         },
         "uxStateError": {
             "enableErrorCode": false,
