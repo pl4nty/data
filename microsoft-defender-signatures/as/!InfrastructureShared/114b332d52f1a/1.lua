@@ -15,5 +15,8 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
+if l_0_2:find("pre-commit install", 1, true) then
+  return mp.CLEAN
+end
 return mp.INFECTED
 
