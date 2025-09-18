@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = ExtractDeviceProperties()
-if l_0_0 ~= nil then
+if l_0_0 ~= nil and next(l_0_0) ~= nil then
   (bm.add_related_string)("ExtendedDeviceProperties", safeJsonSerialize(l_0_0), bm.RelatedStringBMReport)
   return mp.INFECTED
 end
