@@ -278,6 +278,7 @@
         "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
         "EnableBackFillCmdAgent": true,
+        "EnableBackFillForInterestedUserRegister": true,
         "EnableBackFillIntuneDevice": true,
         "EnableBackendAutopatchInFls": true,
         "EnableBackfillGroupDisplayName": true,

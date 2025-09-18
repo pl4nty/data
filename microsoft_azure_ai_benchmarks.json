@@ -12577,16 +12577,16 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 217.34,
-                        "latency_mean_secs": 12.14,
-                        "latency_p50_secs": 9.63,
-                        "latency_p90_secs": 22.35,
-                        "latency_p95_secs": 35.24,
-                        "latency_p99_secs": 40.57,
-                        "latency_ttft_secs": 0.25,
-                        "throughput_gtps_token_count": 217.34,
-                        "throughput_rps_request_count": 0.1,
-                        "throughput_ttps_token_count": 346.02,
+                        "index_metric": 249.31,
+                        "latency_mean_secs": 10.01,
+                        "latency_p50_secs": 8.51,
+                        "latency_p90_secs": 12.56,
+                        "latency_p95_secs": 20.1,
+                        "latency_p99_secs": 40.71,
+                        "latency_ttft_secs": 0.22,
+                        "throughput_gtps_token_count": 249.31,
+                        "throughput_rps_request_count": 0.12,
+                        "throughput_ttps_token_count": 379.53,
                         "time_between_tokens_secs": 0.02
                     },
                     "modelAssetId": "azureml://registries/azureml-openai-oss/models/gpt-oss-120b/versions/4",
@@ -12607,7 +12607,7 @@
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
                     "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "67",
+                    "num_of_inference_aggregations": "236",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
                     "output_generated_tokens": "2000",
@@ -18012,6 +18012,55 @@
         {
             "annotations": {
                 "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 92.35,
+                        "latency_mean_secs": 19.33,
+                        "latency_p50_secs": 18.89,
+                        "latency_p90_secs": 22.06,
+                        "latency_p95_secs": 24.18,
+                        "latency_p99_secs": 40.95,
+                        "latency_ttft_secs": 0.31,
+                        "throughput_gtps_token_count": 92.35,
+                        "throughput_rps_request_count": 0.05,
+                        "throughput_ttps_token_count": 143.86,
+                        "time_between_tokens_secs": 0.05
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_maas",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "179",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "1:2",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
@@ -18044,7 +18093,7 @@
                     "datasetName": "aggregate",
                     "metrics": {
                         "attack_success_rate": 32,
-                        "index_metric": 32.000002
+                        "index_metric": 32
                     },
                     "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
                     "modelName": "mai-ds-r1",
@@ -25374,12 +25423,12 @@
                         "output_token_cost_per_1M_tokens": 80,
                         "total_cost_per_1M_tokens": 35
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10/versions/2025-06-10",
+                    "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
                     "modelName": "o3-pro",
                     "modelVersion": "2025-06-10"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10/versions/2025-06-10",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
                     "azure_latest_model_version": "2025-06-10",
                     "azure_model_name": "o3-pro",
                     "azure_registry_name": "azure-openai",
@@ -25869,6 +25918,55 @@
                     "fewshot_sampling_ratio": "1",
                     "fewshot_split": "None",
                     "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 12.17,
+                        "latency_mean_secs": 126.56,
+                        "latency_p50_secs": 92.65,
+                        "latency_p90_secs": 203.38,
+                        "latency_p95_secs": 350.68,
+                        "latency_p99_secs": 500.92,
+                        "latency_ttft_secs": 92.4,
+                        "throughput_gtps_token_count": 12.17,
+                        "throughput_rps_request_count": 0.01,
+                        "throughput_ttps_token_count": 23.41,
+                        "time_between_tokens_secs": 12.66
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
+                    "modelName": "o3-pro",
+                    "modelVersion": "10-06-2025"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
+                    "azure_latest_model_version": "10-06-2025",
+                    "azure_model_name": "o3-pro",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "127",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "1:2",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
                 }
             }
         },
