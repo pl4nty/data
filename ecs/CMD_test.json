@@ -112,6 +112,7 @@
         "DiagnosticNetworkActivityEnabled": true,
         "DiagnosticNetworkSecurityGroupEnabled": true,
         "DiagnosticsForwarder": true,
+        "DisableAlertRuleEdit": true,
         "DisableCheckingSystemTopic": true,
         "DisableCloudPcEncryptionTypePreviewTag": false,
         "DisableDRManagementRegionWorkflow": false,
