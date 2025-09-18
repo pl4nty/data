@@ -1271,7 +1271,7 @@ LLMPromptGrader = function(l_11_0)
   end
   local l_11_1 = 0
   l_11_0 = (string.lower)(l_11_0)
-  local l_11_2 = "(?i)(\\s(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey|override).*?\\s(any|all|prior|previous|preceding|above|foregoing|earlier|initial|your).*?\\s(training|content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests))"
+  local l_11_2 = "(?i)(\\s(Ignore|Disregard|Skip|Forget|Neglect|Overlook|Omit|Bypass|Pay no attention to|Do not follow|Do not obey|override)\\s(any|all|prior|previous|preceding|above|foregoing|earlier|initial|your)\\s(training|content|text|instructions|instruction|directives|directive|commands|command|context|conversation|input|inputs|data|message|messages|communication|response|responses|request|requests))"
   if (MpCommon.StringRegExpSearch)(l_11_2, l_11_0) then
     l_11_1 = l_11_1 + 50
   end
