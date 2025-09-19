@@ -24,6 +24,8 @@
     "speechDisabled": true,
     "blockLateWebAppCalls": true,
     "blockEarlyExit": true,
+    "fadeTransitionOnStart": true,
+    "fadeTransitionOnExit": true,
     "StartSelector": {
       "cxid": "StartSelector",
       "launcher": "js:OOBEStartSelector",
@@ -351,6 +353,11 @@
       "cxid": "OobeUserIntent",
       "url": "https://sdx.microsoft.com/frx/oobe-user-intent-preload",
       "urlint": "https://sdx.microsoft-int.com/frx/oobe-user-intent-preload",
+      "preloadCheck": {
+        "value": "",
+        "overrideValue": "CloudExperienceHost.OobeUserIntent",
+        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
+      },
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -458,6 +465,11 @@
       "cxid": "OobeGamepass",
       "url": "https://oloobe.officeapps.live.com/officeoobe/gamepass",
       "urlint": "https://oloobe.officeapps.live-int.com/officeoobe/gamepass",
+      "preloadCheck": {
+        "value": "",
+        "overrideValue": "CloudExperienceHost.OobeGamepass",
+        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
+      },
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -591,6 +603,11 @@
       "cxid": "OobeGamepass",
       "url": "https://oloobe.officeapps.live.com/officeoobe/gamepass",
       "urlint": "https://oloobe.officeapps.live-int.com/officeoobe/gamepass",
+      "preloadCheck": {
+        "value": "",
+        "overrideValue": "CloudExperienceHost.OobeGamepass",
+        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
+      },
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,

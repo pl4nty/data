@@ -11,7 +11,6 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             let oobeSettingsToggles = this.getSettingsToggles();
             this.contentSettings = oobeSettingsToggles.settingsData;
             this.settingsObjects = oobeSettingsToggles.settingsObjects;        
-            this.learnMoreContent = oobePrivacySettingsData.getLearnMoreContent();
             this.scrolledToTheBottom = true;
             this.firstUpdateForScrollState = true;
             this.scrollViewEle = null;
@@ -27,10 +26,10 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             mainTitleTextStrings["learnmore"] = resources.LearnMoreTitle;
 
             this.title = ko.pureComputed(() => {
-                return mainTitleTextStrings["customize"];
+                return mainTitleTextStrings[this.viewName()];
             });
             this.subHeaderText = ko.pureComputed(() => {
-                return mainSubHeaderTextStrings["customize"];
+                return mainSubHeaderTextStrings[this.viewName()];
             });
 
             this.processingFlag = ko.observable(false);
@@ -156,9 +155,8 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
 
         onAfterViewNameUpdated() {
             let learnMoreIFrame = document.getElementById("learnMoreIFrame");
-            let doc = learnMoreIFrame.contentWindow.document;
             let dirVal = document.documentElement.dir;
-            oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreScrollRegion);
+            oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreTitle);
         }
 
         updateForScrollState() {

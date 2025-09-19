@@ -63,7 +63,8 @@
             <div class="container-content" data-bind="visible: $root.learnMoreVisible">
                 <oobe-header params="title: resourceStrings.HelloLearnMoreLinkText"></oobe-header>
                 <div class="iframe-row med-iframe">
-                    <iframe id="hello-learnmore-iframe" x-ms-format-detection="none" sandbox="allow-same-origin allow-scripts" data-bind="attr: { src: $root.learnMoreWebSource, 'aria-label': resourceStrings.HelloLearnMoreLinkText }"></iframe>
+                    <!-- remove { src: $root.learnMoreWebSource } from attr when GamepadLegendEnabled feature is cleaned up -->
+                    <iframe id="hello-learnmore-iframe" x-ms-format-detection="none" sandbox="allow-same-origin allow-scripts" data-bind="iframeContent: {dir:document.documentElement.dir, focusBody: true, frameTitle: resources.LearnMoreScrollRegion }, attr: { src: $root.learnMoreWebSource, 'aria-label': resourceStrings.HelloLearnMoreLinkText }"></iframe>
                 </div>
                 <oobe-footer params="flexEndButtons: flexEndButtonsLearnMore"></oobe-footer>
             </div>

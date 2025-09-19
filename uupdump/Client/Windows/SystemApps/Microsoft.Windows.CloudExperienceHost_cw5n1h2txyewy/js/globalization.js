@@ -23,6 +23,9 @@ var CloudExperienceHost;
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NewMultiPagePrivacy")) {
                     privacySensitiveRegionsList.push("VN", "VNM");
                 }
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("MissingMultiPagePrivacy")) {
+                    privacySensitiveRegionsList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
+                }
                 let region = CloudExperienceHost.Globalization.GeographicRegion.getCode();
                 return (privacySensitiveRegionsList.indexOf(region) != -1);
             }

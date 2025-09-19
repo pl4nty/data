@@ -41,7 +41,13 @@
                 this.targetPersonality = targetContext.personality;
             });
 
-            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSupportedHelloEnrollmentKindsPromise: getSupportedHelloEnrollmentKindsPromise, getSkipNgcPromise: getSkipNgcPromise, getPersonalityPromise: getPersonalityPromise });
+            let isConnectedToNetworkPromise = requireAsync(['legacy/bridge']).then((result) => {
+                return result.legacy_bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess");
+            }).then((isConnectedToNetwork) => {
+                this.isInternetAvailable = isConnectedToNetwork;
+            });
+
+            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSupportedHelloEnrollmentKindsPromise: getSupportedHelloEnrollmentKindsPromise, getSkipNgcPromise: getSkipNgcPromise, getPersonalityPromise: getPersonalityPromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
         },
         error: (e) => {
             require(['legacy/bridge', 'legacy/events', 'legacy/core'], (bridge, constants, core) => {
@@ -75,7 +81,7 @@
                     bridge.invoke("CloudExperienceHost.Telemetry.commitIntentPropertyDWORDAsync", "WindowsHello", "LearnMoreAvailableInSCOOBE", 1);
 
                     // Apply bindings and show the page
-                    ko.applyBindings(new HelloViewModel(this.resourceStrings, this.enrollmentKinds, this.targetPersonality));
+                    ko.applyBindings(new HelloViewModel(this.resourceStrings, this.enrollmentKinds, this.targetPersonality, this.isInternetAvailable));
                     KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                         WinJS.Utilities.addClass(document.body, "pageLoaded");
                         bridge.fireEvent(constants.Events.visible, true);
