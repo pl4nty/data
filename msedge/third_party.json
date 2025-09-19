@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14634688,
+    "size": 14634874,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32244002,
-    "file_count": 3951
+    "size": 32273151,
+    "file_count": 3953
   },
   {
     "name": "boringssl",
@@ -186,8 +186,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17039596,
-    "file_count": 2027
+    "size": 17160280,
+    "file_count": 2028
   },
   {
     "name": "entity_extraction",
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6196241,
+    "size": 6193980,
     "file_count": 939
   },
   {
@@ -411,12 +411,12 @@
   },
   {
     "name": "liburlpattern",
-    "size": 3260,
+    "size": 3446,
     "file_count": 2
   },
   {
     "name": "libusb",
-    "size": 833338,
+    "size": 833350,
     "file_count": 61
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3858088,
+    "size": 3860374,
     "file_count": 579
   },
   {
@@ -616,8 +616,8 @@
   },
   {
     "name": "rust",
-    "size": 1133804,
-    "file_count": 138
+    "size": 1282412,
+    "file_count": 142
   },
   {
     "name": "screen-ai",
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6305893,
+    "size": 6304051,
     "file_count": 170
   },
   {
