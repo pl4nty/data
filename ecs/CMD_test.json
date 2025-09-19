@@ -942,6 +942,7 @@
         "EnableUserExperienceTypeOnPolicy": true,
         "EnableUserLicenseAssignmentView": true,
         "EnableUserPreviewInUX": true,
+        "EnableUserServiceNewGetUserLoginInfoAPI": true,
         "EnableUserServiceNewGraphGetUserWithBatch": true,
         "EnableUserSettingsPersistenceGraphPermission": true,
         "EnableUsingGalleryImagePreviewVersion": true,
