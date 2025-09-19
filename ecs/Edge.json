@@ -194,6 +194,11 @@
                 "msWorkspacesCollaborativeBookmarksBar"
             ]
         },
+        "autolaunchBackoffRestOfTheWorld": {
+            "enableFeatures": [
+                "msAutoLaunchBoostingUsingEnhancedBackoff"
+            ]
+        },
         "toolbarCleanupABn": {
             "enableFeatures": [
                 "msEdgeAorakiToolbarDeclutter",
@@ -262,7 +267,7 @@
         },
         "EdgeShoppingClarityConfig": {
             "enableFeatures": [
-                "msEdgeShoppingClarityEnabledWithCookies"
+                "msEdgeShoppingClarityEnabled"
             ]
         },
         "EdgeShoppingDefaultConfig": {
@@ -318,19 +323,14 @@
                 }
             ]
         },
-        "EdgeShoppingSigPriceDropReminder": {
+        "EdgeShoppingPriceCompareAdLangOverrideConfig": {
             "enableFeatures": [
-                "msShoppingExp40"
-            ],
-            "parameters": [
-                {
-                    "name": "startDate",
-                    "value": "12-26-2022"
-                },
-                {
-                    "name": "endDate",
-                    "value": "01-02-2022"
-                }
+                "msShoppingUapiExp3"
+            ]
+        },
+        "EdgeShoppingPriceCompareResponseConfig": {
+            "enableFeatures": [
+                "msShoppingUapiExp1"
             ]
         },
         "EmxApiThrottleKillswitch": {
@@ -430,6 +430,11 @@
                     "name": "ukm2PopSample",
                     "value": "20"
                 }
+            ]
+        },
+        "WWUKillSwitch": {
+            "disableFeatures": [
+                "msEdgeWindowsWelcomeUpdateExperience"
             ]
         },
         "WebAuthPasskeysUIKillerSwitch": {
