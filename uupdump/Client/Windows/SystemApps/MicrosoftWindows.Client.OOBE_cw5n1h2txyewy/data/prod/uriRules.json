@@ -10,6 +10,7 @@
     "CloudExperienceHost.CloudDomain.*": [ "https://login.microsoftonline.com/WebApp/CloudDomainJoin/", "https://login.microsoftonline.com/WebApp/ConnectAADAccount/", "https://login.microsoftonline.com/WebApp/WindowsLogon/*", "https://login.microsoftonline.com/WebApp/OtaDomainJoin/", "https://login.windows-ppe.net/WebApp/CloudDomainJoin/", "https://login.windows-ppe.net/WebApp/ConnectAADAccount/", "https://login.windows-ppe.net/WebApp/WindowsLogon/*", "https://login.windows-ppe.net/WebApp/OtaDomainJoin/" ],
     "CloudExperienceHost.Cortana.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/*" ],
     "CloudExperienceHost.CredUI.*": [ "ms-appx-web://microsoftwindows.client*", "ms-appx-web://microsoftwindows.webexperiencehost/*", "ms-appx-web://microsoftwindows.oobehost/*" ],
+    "CloudExperienceHost.DashboardTaskbarButtonSettings.*": [ "*" ],
     "CloudExperienceHost.DeviceDisplayNameSetup.*": [ "https://login.microsoftonline.com/WebApp/DeviceDisplayName/", "https://login.windows-ppe.net/WebApp/DeviceDisplayName/" ],
     "CloudExperienceHost.DeviceIntegrationPolicy.*": [ "*" ],
     "CloudExperienceHost.DeviceUser.*": [ "ms-appx-web://microsoft.windows.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost/*", "ms-appx-web://microsoft.cloudexperiencehost.testapp/*", "https://login.microsoftonline.com/WebApp/DeviceSubscription/", "https://login.windows-ppe.net/WebApp/DeviceSubscription/" ],

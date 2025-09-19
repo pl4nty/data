@@ -9,6 +9,7 @@
             this.isVisible = (params.isVisible === undefined) ? true : params.isVisible;
             this.disableControl = ko.isObservable(params.disableControl) ? (params.disableControl) : ko.observable(!!params.disableControl);
             this.autoFocus = params.autoFocus || false;
+            this.id = params.id;
         }
     }
     return CommonButtonViewModel;

@@ -74,12 +74,14 @@
             <common-footer params="flexEndButtons: [
                          {
                              buttonText: $root.resourceStrings.SkipButtonText,
+                             automationId: 'OobeOemregistrationSkipButton',
                              buttonClickHandler: $root.onSkipCustomerInfo.bind($root),
                              isVisible: !$root.hideSkip,
                              disableControl: $root.disableControl
                          },
                          {
                              buttonText: $root.resourceStrings.NextButtonText,
+                             automationId: 'OobeOemregistrationNextButton',
                              buttonClickHandler: $root.onSubmitCustomerInfo.bind($root),
                              disableControl: $root.disableControl,
                              isPrimaryButton: true
@@ -108,7 +110,7 @@
                     <!-- /ko -->
                 </div>
             </div>
-            <common-footer params="flexEndButtons: [{ buttonText: $root.resourceStrings.NextButtonText, buttonClickHandler: $root.onSubmitAdditionalFields.bind($root), disableControl: $root.disableControl, isPrimaryButton: true}]"></common-footer>
+            <common-footer params="flexEndButtons: [{ buttonText: $root.resourceStrings.NextButtonText, automationId: 'OobeOemregistrationNextButton', buttonClickHandler: $root.onSubmitAdditionalFields.bind($root), disableControl: $root.disableControl, isPrimaryButton: true}]"></common-footer>
         </div>
     </div>
     <div id="linkFlyout" class="iframeFlyout" aria-hidden="true">

@@ -1,7 +1,7 @@
 ﻿//
 // Copyright (C) Microsoft. All rights reserved.
 //
-define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, oobePrivacySettingsData, bridge, constants, core, KoHelpers) => {
+define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/events', 'corejs/knockouthelpers'], (ko, oobePrivacySettingsData, bridge, constants, KoHelpers) => {
     class OobePrivacySettingsAadcViewModel {
         constructor(resourceStrings, settingsEntryResourceStrings, isInternetAvailable) {
             bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
@@ -9,7 +9,6 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             this.isInternetAvailable = isInternetAvailable;
             this.settingsEntryResourceStrings = settingsEntryResourceStrings;
             this.viewName = ko.observable("defaults");
-            this.learnMoreContent = " "; // Learn More content is purely server-side; initialize it to " " to create well-defined iframe content for keyboard focus and Narrator readout
 
             this.settingsObjects = this.getSettingsObjectsForAadcCommit();
 
@@ -98,15 +97,13 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             this.viewName("learnmore");
             bridge.invoke("CloudExperienceHost.setShowBackButton", true); // Ensure back button shows on Learn More page and that it will return to the main page
             this.showLearnMore();
-            KoHelpers.setFocusOnAutofocusElement();
         }
 
         showLearnMore() {
             let learnMoreIFrame = document.getElementById("learnMoreIFrame");
-            let doc = learnMoreIFrame.contentWindow.document;
             let dirVal = document.documentElement.dir;
             let requiredDataCollectionPage = "https://go.microsoft.com/fwlink/?linkid=2162067";
-            oobePrivacySettingsData.showLearnMoreContent(learnMoreIFrame, doc, requiredDataCollectionPage, dirVal, this.isInternetAvailable, this.resourceStrings.NavigationError);
+            KoHelpers.showLearnMoreContent(learnMoreIFrame, requiredDataCollectionPage, dirVal, this.isInternetAvailable, this.resourceStrings.NavigationError, this.resourceStrings.LearnMoreTitle);
         }
 
         onNext() {

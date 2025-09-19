@@ -3,8 +3,9 @@
 //
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs/knockouthelpers'], (ko, bridge, constants, core, KoHelpers) => {
     class HelloViewModel {
-        constructor(resourceStrings, enrollmentKinds, targetPersonality) {
+        constructor(resourceStrings, enrollmentKinds, targetPersonality, isInternetAvailable) {
             this.isLiteWhitePersonality = (targetPersonality === CloudExperienceHost.TargetPersonality.LiteWhite);
+            this.isInternetAvailable = isInternetAvailable;
 
             this.resourceStrings = resourceStrings;
             this.enrollmentKinds = enrollmentKinds;
@@ -25,15 +26,25 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             this.isConfirmationPageVisible = ko.observable(false);
 
             let href = "https://go.microsoft.com/fwlink/p/?linkid=2169254";
+            //#region clean up this block during GamepadLegendEnabled feature removal
             let personalityQSParam = (this.isLiteWhitePersonality) ? "&profile=transparentLight" : "";
             let url = href + personalityQSParam;
 
             this.learnMoreWebSource = url;
+            function initializeIsGamepadEnabled() {
+                return bridge.invoke("CloudExperienceHost.FeatureStaging.tryGetIsFeatureEnabled", "GamepadLegendEnabled")
+                    .then((objFeatureEnabled) => {
+                        return (objFeatureEnabled.result === 1) && (objFeatureEnabled.value === 1);
+                    });
+            }
+            let gamepadEnabledOobe = initializeIsGamepadEnabled();
+            //#endregion
+
             this.learnMoreVisible = ko.observable(false);
             this.learnMoreVisible.subscribe((newValue) => {
                 if (newValue === false) {
                     // Reenable button interaction if we're not showing Learn More. On the Learn More page,
-                    // buttons will be enabled after the iframe is shown after oobeSettingsData.showLearnMoreContent()
+                    // buttons will be enabled after the iframe is shown
                     this.processingFlag(false);
                 }
             });
@@ -284,12 +295,22 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "LearnMoreButtonClicked");
                 this.processingFlag(true);
                 this.learnMoreVisible(true);
+                this.showLearnMore();
+                this.processingFlag(false);
+            }
+        }
 
+        showLearnMore() {
+            let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");
+
+            if (this.gamepadEnabledOobe) {
+                let dirVal = document.documentElement.dir;
+                KoHelpers.showLearnMoreContent(learnMoreIFrame, this.href, dirVal, this.isInternetAvailable, this.resourceStrings.HelloLearnMoreNavigationError, this.resourceStrings.HelloLearnMoreLinkText, "mainwindowshellomodule");
+            }
+            else {
                 // Since the iframe isn't scrolled to the right anchor when loaded, we need to refresh the page for it to scroll to the Windows Hello section
-                let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");
                 learnMoreIFrame.src = learnMoreIFrame.src;
                 learnMoreIFrame.focus();
-                this.processingFlag(false);
             }
         }
 
