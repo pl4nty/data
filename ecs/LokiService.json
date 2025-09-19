@@ -1046,7 +1046,8 @@
             "ConnectorsHomePageSuggestionsQuery",
             "PeopleSearchQuery",
             "EventSearchQuery",
-            "PromptCardViewUserFormsQuery"
+            "PromptCardViewUserFormsQuery",
+            "FormsListHistoryViewQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1386,12 +1387,6 @@
         "M365CompanionSystemTrayDFVersion": "1.20250916.7.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
         "M365CompanionSystemTrayProdVersion": "1.20250916.7.0",
-        "campaignSchedules": {
-            "PeopleAppCampaign": {
-                "cronExpression": "0 0 10 * * 3",
-                "maxLimit": "4"
-            }
-        },
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1407,16 +1402,6 @@
                 "https://loki.office365.cn",
                 "https://loki.officenet.eaglex.ic.gov",
                 "https://loki.officenet.microsoft.scloud",
-                "https://substrate.office.com",
-                "https://substrate.partner.outlook.cn",
-                "https://substrate.office.de",
-                "https://substrate.office365.us",
-                "https://substrate-dod.office365.us",
-                "https://partner.outlook.cn",
-                "https://substrate.exo.eaglex.ic.gov",
-                "https://substrate.exo.microsoft.scloud",
-                "https://media.licdn.com",
-                "https://graph.microsoft.com",
                 "https://admin.microsoft.com",
                 "*.cdn.office.net",
                 "https://res-1.cdn.partner.office365.cn",
@@ -1512,54 +1497,7 @@
                 "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
                 "https://outlook-1-cdn.azureedge.microsoft.scloud"
             ]
-        },
-        "cspTrustedDomains": [
-            "'self'",
-            "blob:",
-            "data:",
-            "*.office.net",
-            "*.office.com",
-            "*.office.de",
-            "*.office365.cn",
-            "*.office365.us",
-            "*.office365.com",
-            "*.officeppe.com",
-            "*.microsoft.com",
-            "*.sharepointonline.com",
-            "*.cloud.dev.microsoft",
-            "*.cloud.microsoft",
-            "*.microsoftonline.cn",
-            "*.eaglex.ic.gov",
-            "*.microsoft.scloud",
-            "*.outlook.cn",
-            "*.licdn.com",
-            "https://webmail.apps.mil",
-            "*.windows.net",
-            "*.msn.com",
-            "wss://*.augloop-test.officeppe.com",
-            "wss://*.augloop-int.officeppe.com",
-            "wss://*.augloop-dogfood.officeppe.com",
-            "wss://*.augloop-msit.office.com",
-            "wss://*.augloop.office.com",
-            "wss://*.augloop-gcc.office.com",
-            "wss://*.augloop.gov.online.office365.us",
-            "wss://*.augloop.dod.online.office365.us",
-            "wss://*.augloop.eaglex.ic.gov",
-            "wss://*.augloop.microsoft.scloud",
-            "wss://*.augloop.microsoftonline.cn",
-            "wss://*.officeppe.com",
-            "wss://*.office.com",
-            "wss://*.office365.us",
-            "wss://*.microsoft.scloud",
-            "wss://*.microsoftonline.cn",
-            "wss://*.eaglex.ic.gov",
-            "wss://*.microsoft.com",
-            "*.cdn.officeppe.net",
-            "*.cdn.office.net",
-            "*.skype.com",
-            "*.public.onecdn.static.microsoft",
-            "*.df.onecdn.static.microsoft"
-        ]
+        }
     },
     "MicrosoftSearch": {
         "EnablePeopleCentricSearchController": false,
