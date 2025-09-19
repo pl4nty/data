@@ -29,18 +29,18 @@ do
     local l_0_7 = l_0_5
     do
       local l_0_8 = {}
-      -- DECOMPILER ERROR at PC86: No list found for R3 , SetList fails
+      -- DECOMPILER ERROR at PC84: No list found for R3 , SetList fails
 
-      -- DECOMPILER ERROR at PC90: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC88: Overwrote pending register: R1 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC91: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC89: Overwrote pending register: R1 in 'AssignReg'
 
       if l_0_6 then
         return l_0_6
       end
-      -- DECOMPILER ERROR at PC93: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC91: Overwrote pending register: R1 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC94: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC92: Overwrote pending register: R1 in 'AssignReg'
 
       do return l_0_6 end
       -- WARNING: undefined locals caused missing assignments!
