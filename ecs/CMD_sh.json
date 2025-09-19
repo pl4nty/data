@@ -106,6 +106,7 @@
         "DisableFLSnortheurope": false,
         "DisableFLSuksouth": false,
         "DisableFLSwestus2": false,
+        "DisableFilterCPCUserInAADNotification": true,
         "DisableImageWithDataDisk": true,
         "DisableReserveCloudPcSingleSignOn": false,
         "DisableReuseCmkStrategy": true,

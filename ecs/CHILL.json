@@ -217,7 +217,7 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 2592000,
+                    "IntervalSeconds": 1296000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
@@ -523,7 +523,7 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 2592000,
+                    "IntervalSeconds": 1296000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
@@ -819,7 +819,7 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 2592000,
+                    "IntervalSeconds": 1296000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,

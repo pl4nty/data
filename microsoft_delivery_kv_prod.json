@@ -23,9 +23,6 @@
     "Client_RestrictPeerSelectionBy": "0",
     "Client_ServicesCertValidationCn": "1",
     "Client_ServicesCertValidationGeo": "1",
-    "Client_TraceFileSizeKBytes": "200000",
-    "Client_TraceFolderSizeKBytes": "400000",
-    "Client_TraceLevel": "5",
     "Client_TraceRouteParticipationRate": "0.1",
     "Client_TraceRouteTargets": "[\"download.windowsupdate.com\",\"tlu.dl.delivery.mp.microsoft.com\",\"win10-trt.msedge.net\"]",
     "Client_UpRateAutoLimitEnabled": "0",
@@ -49,6 +46,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "C6FEEF0B1843316F0B7947EA53787F873BBDC9FFC457B3B4CD50669CEEEFFC87",
+    "Version": "5CDD0B69C7273C35025CE55254B5F8DF96D13F7A493C786BA02086E1DD0480E8",
     "eid": "5"
 }
