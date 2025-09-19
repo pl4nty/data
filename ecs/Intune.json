@@ -18,11 +18,7 @@
         "evanve_convertToDefault_1": true,
         "evanve_defaultTobeOverriden_enabled": false,
         "jamatth_firedrill25_featureEnabled": true,
-        "jamatth_firedrill25_syncInterval_seconds": 7200,
-        "jasbkaur_firedrill25_featureEnabled": true,
-        "jasbkaur_firedrill25_syncInterval_seconds": 7200,
-        "victortruong_firedrill25_featureEnabled": true,
-        "victortruong_firedrill25_syncInterval_seconds": 7200
+        "jamatth_firedrill25_syncInterval_seconds": 7200
     },
     "CLI_IntuneEpmAgent": {
         "FlightingV2": {
