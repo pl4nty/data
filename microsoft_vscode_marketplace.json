@@ -58,6 +58,7 @@
                 "id": "AndrewBeletskiy.sort-css-declarations"
             }
         },
+        "AntiAntiSepticeye.vscode-color-picker": true,
         "Arcensoth.language-mcfunction": {
             "disallowInstall": true,
             "extension": {
@@ -133,8 +134,17 @@
                 "id": "ContrastSecurityIDE.com-contrastsecurity-vscode"
             }
         },
+        "DamienAicheh.azure-devops-snippets": true,
+        "DamienAicheh.azure-pipeline-yaml-generator": true,
         "DecentralandFoundation.decentraland": true,
         "DecentralandFoundation.decentraland-sdk7": true,
+        "Derico.plone-vs-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Plone support for VSCode",
+                "id": "Plone.plone-vs-utilities"
+            }
+        },
         "DevonDCarew.bazel-code": {
             "disallowInstall": true,
             "extension": {
@@ -579,6 +589,7 @@
                 "id": "visualstudiotoolsforunity.vstuc"
             }
         },
+        "VisualStudioExptTeam.vscodeintellicode-insiders": true,
         "Vue.vscode-typescript-vue-plugin": {
             "disallowInstall": true,
             "extension": {
@@ -1000,6 +1011,7 @@
             }
         },
         "eridien.definition-stack": true,
+        "erral.erral-zcmlLanguageConfiguration": true,
         "errata-ai.vale-server": {
             "disallowInstall": true,
             "extension": {
@@ -1088,6 +1100,13 @@
             "extension": {
                 "displayName": "MemoryView",
                 "id": "mcu-debug.memory-view"
+            }
+        },
+        "hankhsu1996.xz-log-viewer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Compressed Log Viewer",
+                "id": "hankhsu1996.compressed-log-viewer"
             }
         },
         "hdg.live-html-previewer": true,
