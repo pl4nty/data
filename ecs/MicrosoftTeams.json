@@ -1791,6 +1791,9 @@
         },
         "GroupCopilotRolloutFlags": {
             "CheckTranscriptStateBeforeIngestion": true,
+            "EnableAdaptiveCardOnBotDialog": true,
+            "EnableAdaptiveCardOnNotificationCallback": true,
+            "EnableAgendaAdaptiveCardOnBotDialog": true,
             "EnableAuditEventForProactiveMessages": true,
             "EnableBatchTranscriptRequests": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
@@ -1802,6 +1805,7 @@
             "EnableFetchCallConversationData": true,
             "EnableLocalizedAskFacilitator": true,
             "EnableLocalizedSuggestions": true,
+            "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
             "EnableUsingBotNameFromContext": true,
@@ -1837,27 +1841,65 @@
                     "IsEnabled": true
                 }
             ],
-            "MeetingTimerSkill_ReactiveAgenda": [
-                {
-                    "Flight": "enableAgendaTimerReactiveResponse",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "TM.updateIsTopicDiscussedInAgendaTimerSkill",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "enableAgendaModification",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "enableAgendaModificationV2",
-                    "IsEnabled": true
-                }
-            ],
             "TeamsWebSearchEnableAdditionalLanguageInstructions": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructions",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_AgendaTracking_TopicAlarms": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingFull",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingMissingDuration",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingTimerFull",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingTimerMissingDuration",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingDebug",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.agendaTrackingAutoStart",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.loopAgendaTrackingAllowed",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_ProactiveAgendaFetch": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableMeetingAgendaSkillTranscriptRequire",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "AS.enableAgendaRelevanceMetric",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaConfidenceMetric",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaTrackingAgendaSkillIntegration",
                     "IsEnabled": true
                 }
             ]
