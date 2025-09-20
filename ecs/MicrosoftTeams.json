@@ -1808,6 +1808,7 @@
             "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
+            "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "HideRequestAgendaButton": true,
             "ShouldUseMASTranscriptForMeetingData": true,
@@ -1833,6 +1834,28 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableResponseRephrasingService",
                     "IsEnabled": false
+                }
+            ],
+            "EnableAgendaForMeetingInfoQnA": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingInfoAgenda",
+                    "isEnabled": true
+                }
+            ],
+            "EnableMeetingInfoQnASkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingInfoQnASkill",
+                    "IsEnabled": true
+                }
+            ],
+            "IntentPlus": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIntentPlus",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGpt41IntentPlus",
+                    "IsEnabled": true
                 }
             ],
             "LiveMeetingNotesV2Skill": [
