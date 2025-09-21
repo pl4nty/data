@@ -11,11 +11,6 @@
                 "msNurturingAccountLevelSyncConsentSyncOn"
             ]
         },
-        "AdobePdfViewerHighCoresIteration3": {
-            "enableFeatures": [
-                "msPdfSharedLibraryHighCores"
-            ]
-        },
         "AdsPlatformXEdgeexp": {
             "enableFeatures": [
                 "msEdgeAdPlatformUI",
@@ -34,11 +29,6 @@
                     "name": "browser_launch_cooldown",
                     "value": "10"
                 }
-            ]
-        },
-        "CopilotAndSidebar": {
-            "enableFeatures": [
-                "msCopilotAndSidebarPageEnabled"
             ]
         },
         "DynamicCSPCheckForExtensionAPIs": {
@@ -65,11 +55,6 @@
                     "name": "Browser Version",
                     "value": "140.0.0.0"
                 }
-            ]
-        },
-        "EdgeSyncDataConsistency": {
-            "enableFeatures": [
-                "msEdgeSyncDataConsistency"
             ]
         },
         "EdgeWalletDiagnosticToolFeedbacks": {
@@ -155,11 +140,6 @@
                     "name": "UnsecureSiteAllTrigger",
                     "value": "true"
                 }
-            ]
-        },
-        "SettingsLeftNav": {
-            "enableFeatures": [
-                "msEdgeSettingsLeftNavSpacing"
             ]
         },
         "ShorelineSkypeAutoAuth": {
