@@ -1864,21 +1864,17 @@
                     "IsEnabled": true
                 }
             ],
-            "MeetingTimerSkill_ReactiveAgenda": [
+            "MeetingTimerSkill": [
                 {
-                    "Flight": "enableAgendaTimerReactiveResponse",
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingTimerSkill",
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "TM.updateIsTopicDiscussedInAgendaTimerSkill",
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingTimerJsonInChat",
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "enableAgendaModification",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "enableAgendaModificationV2",
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIC3MeetingStatesAdhoc",
                     "IsEnabled": true
                 }
             ],

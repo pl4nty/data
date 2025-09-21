@@ -164,11 +164,6 @@
                 "msUnsupportedLanguageUXFix"
             ]
         },
-        "WalletECRebatesIncentive": {
-            "disableFeatures": [
-                "msWalletCheckoutRewardsIncentive"
-            ]
-        },
         "WorkspacesCollaborativeBookmarksBar": {
             "disableFeatures": [
                 "msWorkspacesCollaborativeBookmarksBar"

@@ -534,7 +534,7 @@
         "EnableIntegrityValidationForRasActionHistory": true,
         "EnableIntegrityValidationForScopeTag": true,
         "EnableIntegrityValidationForUser": true,
-        "EnableInterestedUserRegister": false,
+        "EnableInterestedUserRegister": true,
         "EnableIntuneEnrollmentThrottlingForAADJ": true,
         "EnableIntunePartnerSync": true,
         "EnableIntuneReEnrollNewActionType": true,
