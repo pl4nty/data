@@ -1878,6 +1878,24 @@
                     "IsEnabled": true
                 }
             ],
+            "MeetingTimerSkill_ReactiveAgenda": [
+                {
+                    "Flight": "enableAgendaTimerReactiveResponse",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.updateIsTopicDiscussedInAgendaTimerSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableAgendaModification",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableAgendaModificationV2",
+                    "IsEnabled": true
+                }
+            ],
             "TeamsWebSearchEnableAdditionalLanguageInstructions": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructions",
