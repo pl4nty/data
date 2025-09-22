@@ -795,6 +795,7 @@
         "EnableRegionColumnUX": true,
         "EnableRegionPhysicalInfoScanner": true,
         "EnableRegionalCapacityDetail": true,
+        "EnableRegisterInterestedGroupToAADS": true,
         "EnableReinstallOldVersionDevicesService": true,
         "EnableRemoteStartMenuAppBackfill": true,
         "EnableRemoteStartMenuAppBackfillTimer": true,
