@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Remediation.Threat
-if (l_0_0 and (string.find)(l_0_0.Name, "Behavior:Win32/WDBlockFirewallRule.P", 1, true)) or (string.find)(l_0_0.Name, "Behavior:Win32/WDBlockFirewallRule.S", 1, true) then
-  (Remediation.SetRebootRequired)()
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+if l_0_0 and (string.find)(l_0_0.Name, "Behavior:Win32/WDBlockFirewallRule", 1, true) then
+  Infrastructure_ScanWDFirewallBlockRules()
 end
 
