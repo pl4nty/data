@@ -76,6 +76,10 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kAvoidPeekMessageSpin);
 BASE_EXPORT BASE_DECLARE_FEATURE(kEnableStackHangEtwEmitter);
 #endif // BUILDFLAG(IS_WIN)
 
+// If enabled, build features targeted for the WCA prototype. This is a
+// temporary feature flag that will be removed after build flags are added.
+BASE_EXPORT BASE_DECLARE_FEATURE(kWCAPrototype);
+
 // This feature enables the "focus parent tab and close current tab" behavior
 // upon back navigation on windows homepage (Microsoft Start) article pages.
 // It works in concert only with the windows homepage application which executes
