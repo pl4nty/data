@@ -1811,6 +1811,7 @@
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "HideRequestAgendaButton": true,
+            "ShouldFetchMeetingBodyFromGraph": true,
             "ShouldUseMASTranscriptForMeetingData": true,
             "TranscriptsIngestionWaitTimeInSec": 5
         },
@@ -1875,6 +1876,24 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIC3MeetingStatesAdhoc",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingTimerSkill_ReactiveAgenda": [
+                {
+                    "Flight": "enableAgendaTimerReactiveResponse",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.updateIsTopicDiscussedInAgendaTimerSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableAgendaModification",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableAgendaModificationV2",
                     "IsEnabled": true
                 }
             ],
