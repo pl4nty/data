@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32273151,
-    "file_count": 3953
+    "size": 32282748,
+    "file_count": 3956
   },
   {
     "name": "boringssl",
@@ -156,7 +156,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7385644,
+    "size": 7385600,
     "file_count": 29
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 45238,
+    "size": 45273,
     "file_count": 39
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3860374,
+    "size": 3861789,
     "file_count": 579
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4832479,
+    "size": 4829969,
     "file_count": 83
   },
   {
@@ -642,7 +642,7 @@
   {
     "name": "skia",
     "size": 3461313,
-    "file_count": 1182
+    "file_count": 1179
   },
   {
     "name": "speech-dispatcher",
@@ -661,7 +661,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 200052,
+    "size": 200059,
     "file_count": 11
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 105531,
+    "size": 105299,
     "file_count": 7
   },
   {
