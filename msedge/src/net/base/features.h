@@ -114,6 +114,10 @@ NET_EXPORT BASE_DECLARE_FEATURE(kUseAlternativePortForGloballyReachableCheck);
 // IP addresses.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableIPv6ReachabilityOverride);
 
+// If enabled, avoids aborting connections in response to adding or removing an
+// IPv6 temporary address.
+NET_EXPORT BASE_DECLARE_FEATURE(kMaintainConnectionsOnIpv6TempAddrChange);
+
 // Enables TLS 1.3 early data.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableTLS13EarlyData);
 
@@ -522,6 +526,9 @@ NET_EXPORT extern const base::FeatureParam<base::TimeDelta>
 // which suggests a bug.
 NET_EXPORT extern const base::FeatureParam<base::TimeDelta>
     kIpPrivacyTryGetAuthTokensBugBackoff;
+
+// Jitter (as a percentage) to apply to backoff time calculations.
+NET_EXPORT extern const base::FeatureParam<double> kIpPrivacyBackoffJitter;
 
 // If true, only proxy traffic when the top-level site uses the http:// or
 // https:// schemes. This prevents attempts to proxy from top-level sites with

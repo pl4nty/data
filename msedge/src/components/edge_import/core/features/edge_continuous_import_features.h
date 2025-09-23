@@ -344,35 +344,33 @@ BASE_DECLARE_FEATURE_TRIGGER(kAutolaunchActive);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSanConsented);
 
-// Trigger when ML setting is ON and the previous browser session was not with
-// Edge
+// Trigger when user is a consumer(i.e., not on a managed or enterprise device
+// unless they are an internal Microsoft user), and the browser is configured to
+// open a New Tab on startup
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedMlSettingOn);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumer);
 
-// Trigger when ML setting is ON, last session was not Edge, and the user is a
-// consumer (i.e., not on a managed or enterprise device unless they are an
-// internal Microsoft user)
+// Trigger when user is a consumer, startup is set to New Tab, and the user
+// qualifies as a Chrome Primary Browser user based on their network usage
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedMlSettingLastSessionChrome);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumerStartupNewTab);
 
-// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
-// and the browser is configured to open a New Tab on startup
+// Trigger when user is a consumer, startup is New Tab, user qualifies as a
+// Chrome PB user, and SAN consent has been given
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedMlSettingLastSessionChromeConsumer);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumerStartupNewTabChromePB);
 
-// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
-// startup is set to New Tab, and the user qualifies as a Chrome Primary Browser
-// user based on their network usage
+// Trigger when user is a consumer, startup is New Tab, user qualifies as a
+// Chrome PB user, and there are no previously imported tabs
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
-    kSanConsentedMlSettingLastSessionChromeConsumerStartupNewTab);
+    kSanConsentedConsumerStartupNewTabChromePBNoImportedTabs);
 
-// Trigger when ML setting is ON, last session was not Edge, user is a consumer,
-// startup is New Tab, user qualifies as a Chrome PB user, and SAN consent has
-// been given
+// Trigger when user is a consumer, startup is New Tab, user qualifies as a
+// Chrome PB user,no previously imported tabs and last session was not Edge
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
-    kSanConsentedMlSettingLastSessionChromeConsumerStartupNewTabChromePB);
+    kSanConsentedConsumerStartupNewTabChromePBNoImportedTabsLastSessionChrome);
 
 // Final trigger when all conditions are met: ML setting is ON, last session was
 // not Edge, user is a consumer, startup is New Tab, user is a Chrome PB user,
