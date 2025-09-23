@@ -67,5 +67,49 @@
         </MSFT:AllowedValues>
       </DFProperties>
     </Node>
+    <Node>
+      <NodeName>RestoreFlowStatus</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>Restore Flow status.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFTitle>Restore Flow Status</DFTitle>
+        <DFType>
+          <MIME />
+        </DFType>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>RestoreFlowTimeStamp</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>Restore flow entry time.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFTitle>Restore Flow Time Stamp</DFTitle>
+        <DFType>
+          <MIME />
+        </DFType>
+      </DFProperties>
+    </Node>
   </Node>
 </MgmtTree>

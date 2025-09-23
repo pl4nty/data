@@ -460,7 +460,7 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
           <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
         </MSFT:Applicability>
@@ -727,6 +727,56 @@
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="TurnOffAbbreviatedDateTimeFormat" GpAreaPath="Taskbar~AT~StartMenu" />
         <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>ConfigureTaskbarSmallButtonBehavior</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting controls the presence of small taskbar buttons. When the policy is set to values of 0, 1, or 2 the user cannot change the setting value. When the value is 65535 the user can change the setting value. The possible values are 0 - The taskbar always uses small buttons, 1 - The taskbar dynamically switches between small buttons and standard sized buttons based on available space, 2 - The taskbar never uses small buttons, 65535 - means that there is no enforced configuration and the setting can be changed by the user.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>65535</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Always: The taskbar always uses small buttons. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>When taskbar is full: The taskbar dynamically switches between small buttons and standard sized buttons based on available space. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Never: The taskbar never uses small buttons. Only standard sized buttons will be used. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>65535</MSFT:Value>
+            <MSFT:ValueDescription>There is no enforced configuration and the setting can be changed by the user.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="ConfigureTaskbarSmallButtonBehavior" GpAreaPath="Taskbar~AT~StartMenu" />
+        <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
       </DFProperties>
     </Node>
   </Node>
@@ -2095,7 +2145,7 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
           <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
         </MSFT:Applicability>
@@ -2320,6 +2370,56 @@
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="HideTaskViewButton" GpAreaPath="Taskbar~AT~StartMenu" />
+        <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>ConfigureTaskbarSmallButtonBehavior</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting controls the presence of small taskbar buttons. When the policy is set to values of 0, 1, or 2 the user cannot change the setting value. When the value is 65535 the user can change the setting value. The possible values are 0 - The taskbar always uses small buttons, 1 - The taskbar dynamically switches between small buttons and standard sized buttons based on available space, 2 - The taskbar never uses small buttons, 65535 - means that there is no enforced configuration and the setting can be changed by the user.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>65535</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Always: The taskbar always uses small buttons. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>When taskbar is full: The taskbar dynamically switches between small buttons and standard sized buttons based on available space. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Never: The taskbar never uses small buttons. Only standard sized buttons will be used. The setting will be grayed out in the Settings UI and the user can not change the setting value.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>65535</MSFT:Value>
+            <MSFT:ValueDescription>There is no enforced configuration and the setting can be changed by the user.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="ConfigureTaskbarSmallButtonBehavior" GpAreaPath="Taskbar~AT~StartMenu" />
         <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
       </DFProperties>
     </Node>

@@ -25,7 +25,7 @@
         <MIME />
       </DFType>
       <MSFT:Applicability>
-        <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
+        <MSFT:OsBuildVersion>10.0.22000, 10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
         <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
@@ -36,7 +36,7 @@
         <AccessType>
           <Get />
         </AccessType>
-        <Description>Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase in case of WEP or WPA2 networks.</Description>
+        <Description>Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network, including SSID and security configuration (such as passphrase for WPA2-Personal networks).</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -59,7 +59,7 @@
             <Get />
             <Replace />
           </AccessType>
-          <Description>The Profile name of the Wi-Fi network. This is added when WlanXml node is added and deleted when WlanXml is deleted.</Description>
+          <Description>The Profile name of the Wi-Fi network. This is added when WlanXml node is added and deleted when WlanXml is deleted. This must match the 'name' in the 'WLANProfile' contained in the WlanXml node.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -89,7 +89,7 @@
             <Description>
               XML describing the network configuration and follows Windows WLAN_profile schema.
               Link to schema: http://msdn.microsoft.com/en-us/library/windows/desktop/ms707341(v=vs.85).aspx
-            </Description>
+                </Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -158,7 +158,7 @@
               <CIS />
             </CaseSense>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.14393</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
@@ -187,7 +187,7 @@
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.14393</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -197,7 +197,7 @@
               </MSFT:Enum>
               <MSFT:Enum>
                 <MSFT:Value>true</MSFT:Value>
-                <MSFT:ValueDescription>Enable WPAD for proxy lookop.</MSFT:ValueDescription>
+                <MSFT:ValueDescription>Enable WPAD for proxy lookup.</MSFT:ValueDescription>
               </MSFT:Enum>
             </MSFT:AllowedValues>
           </DFProperties>
@@ -212,7 +212,7 @@
               <Replace />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>Optional node. If the policy is active selecting one of the values from the following list will set the cost of WLAN connection for the Wi-Fi profile. (1:Unrestricted - unlimited connection, 2: Fixed - capacity constraints  up to a certain data limit, 3: Variable - costed on per byte basic) Default behaviour: Unrestricted</Description>
+            <Description>Optional node. If the policy is active selecting one of the values from the following list will set the cost of WLAN connection for the Wi-Fi profile. (1:Unrestricted - unlimited connection, 2: Fixed - capacity constraints up to a certain data limit, 3: Variable - costed on per byte basic) Default behaviour: Unrestricted</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -226,7 +226,7 @@
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.17763</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -305,7 +305,7 @@
         <MIME />
       </DFType>
       <MSFT:Applicability>
-        <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
+        <MSFT:OsBuildVersion>10.0.22000, 10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
         <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
@@ -316,7 +316,7 @@
         <AccessType>
           <Get />
         </AccessType>
-        <Description>Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase in case of WEP or WPA2 networks.</Description>
+        <Description>Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network, including SSID and security configuration (such as passphrase for WPA2-Personal networks).</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -339,7 +339,7 @@
             <Get />
             <Replace />
           </AccessType>
-          <Description>The Profile name of the Wi-Fi network. This is added when WlanXml node is added and deleted when WlanXml is deleted.</Description>
+          <Description>The Profile name of the Wi-Fi network. This is added when WlanXml node is added and deleted when WlanXml is deleted. This must match the 'name' in the 'WLANProfile' contained in the WlanXml node.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -369,7 +369,7 @@
             <Description>
               XML describing the network configuration and follows Windows WLAN_profile schema.
               Link to schema: http://msdn.microsoft.com/en-us/library/windows/desktop/ms707341(v=vs.85).aspx
-            </Description>
+                </Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -438,7 +438,7 @@
               <CIS />
             </CaseSense>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.14393</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
@@ -467,7 +467,7 @@
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.14393</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -477,7 +477,7 @@
               </MSFT:Enum>
               <MSFT:Enum>
                 <MSFT:Value>true</MSFT:Value>
-                <MSFT:ValueDescription>Enable WPAD for proxy lookop.</MSFT:ValueDescription>
+                <MSFT:ValueDescription>Enable WPAD for proxy lookup.</MSFT:ValueDescription>
               </MSFT:Enum>
             </MSFT:AllowedValues>
           </DFProperties>
@@ -492,7 +492,7 @@
               <Replace />
             </AccessType>
             <DefaultValue>1</DefaultValue>
-            <Description>Optional node. If the policy is active selecting one of the values from the following list will set the cost of WLAN connection for the Wi-Fi profile. (1:Unrestricted - unlimited connection, 2: Fixed - capacity constraints  up to a certain data limit, 3: Variable - costed on per byte basic) Default behaviour: Unrestricted</Description>
+            <Description>Optional node. If the policy is active selecting one of the values from the following list will set the cost of WLAN connection for the Wi-Fi profile. (1:Unrestricted - unlimited connection, 2: Fixed - capacity constraints up to a certain data limit, 3: Variable - costed on per byte basic) Default behaviour: Unrestricted</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -506,7 +506,7 @@
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22000, 10.0.17763</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.1</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">

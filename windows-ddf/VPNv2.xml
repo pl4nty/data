@@ -1218,7 +1218,7 @@
             <Get />
             <Replace />
           </AccessType>
-          <Description>Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+          <Description>Optional. When this setting is True, the Disconnect button will not be visible for connected profiles and the 'Connect automatically' checkbox cannot be deselected.
                     </Description>
           <DFFormat>
             <bool />
@@ -2041,7 +2041,7 @@
               <Get />
               <Replace />
             </AccessType>
-            <Description>Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.</Description>
+            <Description>Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com. If the user is using the native Windows VPN client, they will then be able to select between servers. Only the chosen server will be used for connections, the options will not be iterated automatically.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -2950,7 +2950,7 @@
             <Get />
             <Replace />
           </AccessType>
-          <Description>The amount of time in seconds the network is allowed to idle. 0 means no limit.</Description>
+          <Description>Optional. For IKEv2 VPN connections only. Specifies the amount of time in seconds the VPN client will wait to notify the network stack if the VPN server becomes unavailable. This allows the VPN connection to survive when the client changes its connectivity, e.g. because of switching from LAN to MBN, or when the client is disconnected for some time, e.g. sitting in a train that runs through a tunnel. It's recommended to set this value between 0 and 28,800 seconds (8 hours).</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -4458,7 +4458,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
             <Replace />
           </AccessType>
           <Description>
-                        Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+                        Optional. When this setting is True, the Disconnect button will not be visible for connected profiles and the 'Connect automatically' checkbox cannot be deselected.
                     </Description>
           <DFFormat>
             <bool />
@@ -5246,7 +5246,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
               <Get />
               <Replace />
             </AccessType>
-            <Description>Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.</Description>
+            <Description>Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com. If the user is using the native Windows VPN client, they will then be able to select between servers. Only the chosen server will be used for connections, the options will not be iterated automatically.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -6155,7 +6155,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
             <Get />
             <Replace />
           </AccessType>
-          <Description>The amount of time in seconds the network is allowed to idle. 0 means no limit.</Description>
+          <Description>Optional. For IKEv2 VPN connections only. Specifies the amount of time in seconds the VPN client will wait to notify the network stack if the VPN server becomes unavailable. This allows the VPN connection to survive when the client changes its connectivity, e.g. because of switching from LAN to MBN, or when the client is disconnected for some time, e.g. sitting in a train that runs through a tunnel. It's recommended to set this value between 0 and 28,800 seconds (8 hours).</Description>
           <DFFormat>
             <int />
           </DFFormat>

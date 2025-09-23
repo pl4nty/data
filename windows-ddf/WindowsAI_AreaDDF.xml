@@ -98,11 +98,11 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Enable Saving Snapshots for Windows.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Enable Saving Snapshots for Recall.</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Disable Saving Snapshots for Windows.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Disable Saving Snapshots for Recall.</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="DisableAIDataAnalysis" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
@@ -217,7 +217,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity unless the current user specifies a different value. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -279,7 +279,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, a time frame is not set for deleting snapshots. Snapshots are not deleted until the maximum storage allocation for Recall is reached, and then the oldest snapshots are deleted first. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, the maximum storage duration is 90 days unless the current user specifies a different value. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -292,7 +292,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>0</DefaultValue>
+        <DefaultValue>90</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
           <MSFT:CspVersion>11.0</MSFT:CspVersion>
@@ -418,11 +418,11 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Enable Saving Snapshots for Windows.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Enable Saving Snapshots for Recall.</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Disable Saving Snapshots for Windows.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Disable Saving Snapshots for Recall.</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="DisableAIDataAnalysis" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
@@ -556,7 +556,7 @@
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>SetRecallDLPProvider</NodeName>
+      <NodeName>SetDataLossPreventionProvider</NodeName>
       <DFProperties>
         <AccessType>
           <Add />
@@ -564,7 +564,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows an admin to specify a DLP provider ID, which Recall will use if the provider is properly installed. You will need to get the ID from your provider, but it will look something like 'Contoso_{F05D6304-6122-4330-865B-FB7C1865EBAC}'. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <Description>This policy allows an admin to specify a DLP provider, which Recall will use if the provider is properly installed. You will need to get the string for this from your provider. It will look something like 'key:HKEY_LOCAL_MACHINE\Software\Contoso\DLP; value:InstallPath; binary:contosoDLP.dll' (without any quotes in the value). Important: This setting applies to Enterprise and Education client SKUs only.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -582,7 +582,7 @@
           <MSFT:CspVersion>9.9</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
         </MSFT:Applicability>
-        <MSFT:GpMapping GpEnglishName="SetRecallDLPProviderKey" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:GpMapping GpEnglishName="SetDataLossPreventionProviderKey" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
         <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
       </DFProperties>
     </Node>
@@ -663,7 +663,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity unless the current user specifies a different value. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -725,7 +725,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, a time frame is not set for deleting snapshots. Snapshots are not deleted until the maximum storage allocation for Recall is reached, and then the oldest snapshots are deleted first. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, the maximum storage duration is 90 days unless the current user specifies a different value. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -738,7 +738,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>0</DefaultValue>
+        <DefaultValue>90</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
           <MSFT:CspVersion>11.0</MSFT:CspVersion>
@@ -852,6 +852,48 @@
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="DisableClickToDo" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
         <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowRecallExport</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from Settings &gt; Privacy &amp; security &gt; Recall &amp; snapshots &gt; Advanced settings &gt; Export snapshots &gt; Export past snapshots &gt; Export. Users can also choose to continuously export their snapshots if they turn on the option to Export snapshots from now on from Settings &gt; Privacy &amp; security &gt; Recall &amp; snapshots &gt; Advanced settings &gt; Export snapshots &gt; Export. Before starting an export, the user must authenticate with Windows Hello and they are notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices: When you set this policy to enabled, users will be able to export Recall and snapshot information. If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information. Important: This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Deny export of Recall and snapshots information</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Allow export of Recall and snapshot information</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="AllowRecallExport" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
       </DFProperties>
     </Node>
     <Node>

@@ -306,6 +306,43 @@
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>EnableAuditMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>This value specifies if the target machine is in Firewall Audit Mode.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Indicates that Audit mode is disabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Indicates that Audit mode is enabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>BinaryVersionSupported</NodeName>
           <DFProperties>
             <AccessType>

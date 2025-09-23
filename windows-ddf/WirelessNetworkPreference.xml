@@ -480,7 +480,7 @@
             <DefaultValue>0</DefaultValue>
             <Description>Type of wireless network (either Cellular or Wi-Fi). 0 represents Cellular, and 1 represents Wi-Fi. Currently only cellular is supported.</Description>
             <DFFormat>
-              <bin />
+              <int />
             </DFFormat>
             <Occurrence>
               <One />

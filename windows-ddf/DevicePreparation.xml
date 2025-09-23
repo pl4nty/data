@@ -363,5 +363,38 @@
         </DFProperties>
       </Node>
     </Node>
+    <Node>
+      <NodeName>IsPostOobeProvisioningAllowed</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>false</DefaultValue>
+        <Description>This node determines whether Autopilot Device Preparation provisioning can be executed after OOBE has completed.</Description>
+        <DFFormat>
+          <bool />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>false</MSFT:Value>
+            <MSFT:ValueDescription>Autopilot Device Preparation provisioning is only allowed during OOBE.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>true</MSFT:Value>
+            <MSFT:ValueDescription>Autopilot Device Preparation provisioning is only allowed post-OOBE.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
   </Node>
 </MgmtTree>
