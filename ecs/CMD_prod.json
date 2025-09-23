@@ -792,6 +792,7 @@
         "Product_Logo": "new-product-logo",
         "Product_Name": "Windows App",
         "RASEnableExtendVSBGracePeriodTo7Days": true,
+        "RASEnableSetStatusByDeviceIdCheckWhenRecoverFailed": false,
         "RASExposeComputeSkuToFlexAndVSB": true,
         "RASHandleAbuseTenant": true,
         "RASUpdateLicenseTypeInPersist": true,

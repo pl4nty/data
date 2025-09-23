@@ -1257,6 +1257,7 @@
         "RASEnableExtendVSBGracePeriodTo7Days": true,
         "RASEnablePatchCloudPcPowerState": true,
         "RASEnablePatchWorkspacePowerState": true,
+        "RASEnableSetStatusByDeviceIdCheckWhenRecoverFailed": true,
         "RASExposeComputeSkuToFlexAndVSB": true,
         "RASGenerateProvisionWorkitemWhileDeprovisioning": true,
         "RASHandleAbuseTenant": true,
