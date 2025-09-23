@@ -1937,6 +1937,16 @@
                     "IsEnabled": true
                 }
             ],
+            "TimeModeratorSkill_MeetingEndedSummaryNotification": [
+                {
+                    "Flight": "TM.MeetingEndedSummaryNotification",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.WriteContentBelowDisclaimer",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",
