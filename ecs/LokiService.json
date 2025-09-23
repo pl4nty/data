@@ -401,7 +401,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20250905.3.0",
+        "LpcVersion": "1.20250915.3.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1387,6 +1387,7 @@
         "HostAppVersion": "1.20250916.7.0",
         "M365CompanionSystemTrayDFVersion": "1.20250916.7.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
+        "M365CompanionSystemTrayMsitVersion": "1.20250916.7.0",
         "M365CompanionSystemTrayProdVersion": "1.20250916.7.0",
         "contentSecurityPolicy": {
             "base-uri": [
