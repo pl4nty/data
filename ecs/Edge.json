@@ -11,6 +11,11 @@
                 "msNurturingAccountLevelSyncConsentSyncOn"
             ]
         },
+        "AdobePdfViewerHighCoresIteration3": {
+            "enableFeatures": [
+                "msPdfSharedLibraryHighCores"
+            ]
+        },
         "AdsPlatformXEdgeexp": {
             "enableFeatures": [
                 "msEdgeAdPlatformUI",
