@@ -1338,7 +1338,8 @@
         "WriteSelfAssociationToPapi": true,
         "accountLinkingEnabled": true,
         "dummylokicopilotchildflight": true,
-        "isProfanityCensorNotificationPanelEnabled": true
+        "isProfanityCensorNotificationPanelEnabled": true,
+        "isgb18030encodingenabled": true
     },
     "Lps": {
         "AllowLinkedInCallsWithJustDisplayName": false,

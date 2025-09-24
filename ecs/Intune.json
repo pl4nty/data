@@ -369,7 +369,8 @@
     "Sidecar_Mac": {
         "customer_script_timeout": 3600,
         "internal_script_timeout": 3600,
-        "use_custom_data_store": false
+        "use_custom_data_store": false,
+        "use_new_update_app_reporting": true
     },
     "UX_Core": {
         "FlightingV2": {
@@ -386,6 +387,7 @@
     },
     "UX_Pivot": {
         "FlightingV2": {
+            "EnableFilterSearchSortV2": true,
             "EnableIRGFilterSearchSort": true,
             "EnableMDQErrorSplitting": true,
             "EnableMDQExportToCSV": true
