@@ -1937,16 +1937,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_MeetingEndedSummaryNotification": [
-                {
-                    "Flight": "TM.MeetingEndedSummaryNotification",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "TM.WriteContentBelowDisclaimer",
-                    "IsEnabled": true
-                }
-            ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",
@@ -2237,7 +2227,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2025091501"
+        "buildVersion": "2025091602"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
