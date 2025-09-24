@@ -11,32 +11,38 @@ local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
 if l_0_1 ~= nil then
   l_0_1 = (string.lower)(l_0_1)
 end
+if not l_0_1 or #l_0_1 <= 60 then
+  return mp.CLEAN
+end
+if #l_0_1 > 450 then
+  return mp.CLEAN
+end
 local l_0_2 = (string.gsub)(l_0_1, "[\"\'`^()+#&]", "")
 local l_0_3 = contains
 local l_0_4 = l_0_2
 do
   local l_0_5 = {}
-  -- DECOMPILER ERROR at PC32: No list found for R5 , SetList fails
+  -- DECOMPILER ERROR at PC46: No list found for R5 , SetList fails
 
-  -- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC50: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC51: Overwrote pending register: R3 in 'AssignReg'
 
   if not l_0_3 then
     return l_0_3
   end
-  -- DECOMPILER ERROR at PC39: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC53: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC44: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC58: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC45: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC59: Overwrote pending register: R3 in 'AssignReg'
 
   if l_0_3 then
     return l_0_3
   end
-  -- DECOMPILER ERROR at PC47: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC61: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC62: Overwrote pending register: R3 in 'AssignReg'
 
   do return l_0_3 end
   -- WARNING: undefined locals caused missing assignments!
