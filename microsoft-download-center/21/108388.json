@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DDFv2Sept25",
+    "downloadDescription": "DDFv2 files for 25H2 / Sept 25",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DDFv2Sept25.zip",
+            "url": "https://download.microsoft.com/download/2ff2c8b9-2e3f-47af-89e6-11c19b7f0c2a/DDFv2Sept25.zip",
+            "size": "724597",
+            "version": "2509",
+            "datePublished": "9/23/2025 7:25:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MDM DDFv2 files for the 25H2 release.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2509",
+    "detailsSection_file_name": [
+        "DDFv2Sept25.zip"
+    ],
+    "detailsSection_file_size": [
+        "707.6 KB"
+    ],
+    "detailsSection_file_date": "9/23/2025",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Unzip DF files",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108388",
+    "downloadPreload": true
+}
