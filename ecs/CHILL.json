@@ -420,7 +420,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 80,
+                "PercentageNumerator": 100,
                 "Type": 0
             },
             "PrimaryPriority": 3,
@@ -1115,7 +1115,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 80,
+                "PercentageNumerator": 100,
                 "Type": 0
             },
             "PrimaryPriority": 3,
@@ -1579,7 +1579,7 @@
     "ChillMSInvest": {
         "Floodgate_Campaign_MicrosoftAdvertising.666e2c3c-714f-45bf-aa8e-47daa89bd2f7": {
             "CampaignId": "666e2c3c-714f-45bf-aa8e-47daa89bd2f7",
-            "EndTimeUtc": "2025-09-30T07:00:00Z",
+            "EndTimeUtc": "2025-10-15T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2468,6 +2468,78 @@
         }
     },
     "ChillPowerAutomate": {
+        "Floodgate_Campaign_PowerAutomate.38ca0ab2-5f85-445d-8f40-fbc15b622ba5": {
+            "CampaignId": "38ca0ab2-5f85-445d-8f40-fbc15b622ba5",
+            "EndTimeUtc": "2036-01-13T22:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2025-09-22T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "MockTrigger",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Very likely",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Very unlikely"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How likely are you to recommend Power Automate Desktop to others, if asked?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/38ca0ab2-5f85-445d-8f40-fbc15b622ba5/46e72ad0-35e6-4bb0-aec6-26d348b54838/Web-PowerAutomate/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_PowerAutomate.74e0da4a-d0f8-47fb-9e86-57e63cc56306": {
             "CampaignId": "74e0da4a-d0f8-47fb-9e86-57e63cc56306",
             "EndTimeUtc": "2035-09-07T07:00:00Z",
