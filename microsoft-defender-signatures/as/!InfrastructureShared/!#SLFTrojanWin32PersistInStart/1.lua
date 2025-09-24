@@ -36,17 +36,22 @@ local l_0_5 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
 if l_0_5 == nil or l_0_5 == "" then
   return mp.CLEAN
 end
+l_0_5 = (string.lower)(l_0_5)
 local l_0_6 = (MpCommon.PathToWin32Path)(l_0_5)
 if l_0_6 ~= nil and l_0_6 ~= "" then
   l_0_6 = (string.lower)(l_0_6)
 end
 local l_0_7 = (MpCommon.ExpandEnvironmentVariables)(l_0_5)
-l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
+if l_0_7 ~= nil and l_0_7 ~= "" then
+  l_0_7 = (MpCommon.PathToWin32Path)(l_0_7)
+end
 if l_0_7 ~= nil and l_0_7 ~= "" then
   l_0_7 = (string.lower)(l_0_7)
 end
 local l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_5)
-l_0_8 = (MpCommon.PathToWin32Path)(l_0_8)
+if l_0_8 ~= nil and l_0_8 ~= "" then
+  l_0_8 = (MpCommon.PathToWin32Path)(l_0_8)
+end
 if l_0_8 ~= nil and l_0_8 ~= "" then
   l_0_8 = (string.lower)(l_0_8)
 end
