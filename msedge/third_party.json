@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2088649,
-    "file_count": 179
+    "size": 2133356,
+    "file_count": 181
   },
   {
     "name": "alsa",
@@ -56,7 +56,7 @@
   },
   {
     "name": "arcore-android-sdk",
-    "size": 14712,
+    "size": 14737,
     "file_count": 12
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32282748,
-    "file_count": 3956
+    "size": 32292077,
+    "file_count": 3957
   },
   {
     "name": "boringssl",
@@ -81,8 +81,8 @@
   },
   {
     "name": "breakpad",
-    "size": 17996555,
-    "file_count": 1010
+    "size": 17993886,
+    "file_count": 1009
   },
   {
     "name": "cast_core",
@@ -186,7 +186,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17160280,
+    "size": 17160305,
     "file_count": 2028
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "name": "gvdb",
-    "size": 136134,
+    "size": 136159,
     "file_count": 23
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "name": "isimpledom",
-    "size": 28047,
+    "size": 28072,
     "file_count": 9
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "name": "jdk11",
-    "size": 623,
+    "size": 648,
     "file_count": 4
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6193980,
+    "size": 6212088,
     "file_count": 939
   },
   {
@@ -391,7 +391,7 @@
   },
   {
     "name": "liblouis",
-    "size": 11211368,
+    "size": 11211393,
     "file_count": 20
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3861789,
+    "size": 3866856,
     "file_count": 579
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "pffft",
-    "size": 259152,
+    "size": 259177,
     "file_count": 24
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 263611,
+    "size": 263686,
     "file_count": 65
   },
   {
