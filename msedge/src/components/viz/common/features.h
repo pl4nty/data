@@ -105,6 +105,8 @@ VIZ_COMMON_EXPORT bool IsFrameRateThrottlingDisableOverrideEnabled();
 VIZ_COMMON_EXPORT bool IsForceFrameRateThrottlingEnabled();
 VIZ_COMMON_EXPORT bool AllowSingleSourceThrottling();
 #endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
+VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
+    kAckCopyOutputRequestEarlyForViewTransition);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAllowUndamagedNonrootRenderPassToSkip);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
     kAllowForceMergeRenderPassWithRequireOverlayQuads);
@@ -199,6 +201,8 @@ VIZ_COMMON_EXPORT bool ShouldUseAdpfForSoc(std::string_view soc_allowlist,
 #endif  // BUILDFLAG(IS_ANDROID)
 
 VIZ_COMMON_EXPORT void SetForceFrameRateThrottlingEnabled(bool enable);
+
+VIZ_COMMON_EXPORT bool ShouldAckCOREarlyForViewTransition();
 
 }  // namespace features
 

@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2133356,
-    "file_count": 181
+    "size": 2133091,
+    "file_count": 180
   },
   {
     "name": "alsa",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14634874,
+    "size": 14635052,
     "file_count": 830
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32292077,
+    "size": 32305846,
     "file_count": 3957
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17993886,
+    "size": 17994673,
     "file_count": 1009
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "name": "catapult",
-    "size": 10213994,
+    "size": 10214044,
     "file_count": 767
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7385600,
+    "size": 7385625,
     "file_count": 29
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 351074,
+    "size": 350492,
     "file_count": 76
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18917355,
+    "size": 18927595,
     "file_count": 19
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "oak",
-    "size": 206329,
-    "file_count": 118
+    "size": 196735,
+    "file_count": 123
   },
   {
     "name": "omnibox_proto",
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3866856,
+    "size": 3869534,
     "file_count": 579
   },
   {
@@ -641,8 +641,8 @@
   },
   {
     "name": "skia",
-    "size": 3461313,
-    "file_count": 1179
+    "size": 3467965,
+    "file_count": 1180
   },
   {
     "name": "speech-dispatcher",
@@ -681,7 +681,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74285,
+    "size": 74267,
     "file_count": 13
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6304051,
-    "file_count": 170
+    "size": 6322997,
+    "file_count": 171
   },
   {
     "name": "vulkan_memory_allocator",
@@ -756,7 +756,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29366346,
+    "size": 29364036,
     "file_count": 626
   },
   {
