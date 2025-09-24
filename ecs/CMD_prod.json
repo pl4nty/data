@@ -477,6 +477,7 @@
         "EnableQuotaForecastGeneration": true,
         "EnableQuotaRequestEmail": true,
         "EnableRawConfirmError": true,
+        "EnableReactViewForUpdateAdDomainAndFailedProvisionPane": true,
         "EnableRebootAfterGpuDriverInstallation": true,
         "EnableRefactorForRetrievePurchasedServicePlans": true,
         "EnableRefactorRecycleResource": true,
