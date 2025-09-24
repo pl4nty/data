@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250920.1.0",
+        "CalendarCompanionDFVersion": "1.20250923.3.0",
         "CalendarCompanionMsitVersion": "1.20250918.2.0",
         "CalendarCompanionProdVersion": "1.20250827.2.1",
         "CompanionRing": "Prod",
@@ -1635,7 +1635,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250906.6.0",
+        "PeopleInTaskbarDFVersion": "1.20250923.6.0",
         "PeopleInTaskbarMsitVersion": "1.20250906.6.0",
         "PeopleInTaskbarProdVersion": "1.20250906.6.0",
         "campaignSchedules": {
@@ -1778,12 +1778,10 @@
     },
     "Thor": {
         "BlockParticularEndpoints": false,
-        "CacheEventSamplingPercentage": 50,
-        "CosmicRolloutMode": null,
         "DisablePingEndpoint": false,
-        "DisableThor": true,
-        "ECSFlightVerification": true,
-        "ECSSettingVerification": "ExpectedValue",
+        "DisableThor": false,
+        "ECSFlightVerification": false,
+        "ECSSettingVerification": "NoValue",
         "EdpsTenantList": [
             "b24c8b06-522c-46fe-9080-70926f8dddb1",
             "829e571a-12df-4935-b4b5-4b19fb09dd70",
@@ -1803,26 +1801,8 @@
             "c1bcd07e-dc57-44cc-bbeb-689edf4db566",
             "b3d1ef68-c503-4286-a115-7463b8766952"
         ],
-        "EnableIpv6Binding": true,
-        "EnableMeTAOutboundPftPop": true,
-        "EnableOCPSConfig": false,
-        "ExampleFlight": true,
-        "ExampleSetting": "IamRunningProd",
-        "GrpcDebug": false,
-        "IsMsgOverAadGraphForUserCallsEnabled": true,
-        "KeepAliveMax": 100000,
-        "MinCompletionPortThreadCountPerCore": 4,
-        "MinWorkerThreadCountPerCore": 10,
-        "PowerBiLicensesForSearch": [
-            "52cd2fce-4dd4-4165-9c43-485610a081c8",
-            "70d33638-9c74-4d01-bfd3-562de28bd4ba",
-            "2efe627c-14bc-43bf-9b32-7983798b5dcd",
-            "2125cfd7-2110-4567-83c4-c1cd5275163d",
-            "324d7063-ec3b-4a7e-bff7-6b3f5e0bbb3e",
-            "24e124b1-0ab0-4475-aa46-9b7d2cb6ad27",
-            "944e9726-f011-4353-b654-5f7d2663db76",
-            "d969227f-d3e2-44b9-9b45-27bf6b2ce2b2",
-            "2049e525-b859-401b-b2a0-e0a31c4b1fe4"
-        ]
+        "ExampleFlight": false,
+        "ExampleSetting": "NoValue",
+        "GrpcDebug": false
     }
 }

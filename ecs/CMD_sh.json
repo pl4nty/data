@@ -419,6 +419,7 @@
         "EnableEndUserCloudApp": true,
         "EnableEndpointCheckTimeout": true,
         "EnableEnterpriseCloudPcRecommendationV17": true,
+        "EnableEntityMigration": true,
         "EnableEntraDirectorySyncObserver": true,
         "EnableEntraObjectLifeCycleState": true,
         "EnableEpaHPIntegration": true,
