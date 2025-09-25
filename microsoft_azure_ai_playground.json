@@ -219,6 +219,8 @@
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
+        "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning",
+        "azureml://registries/azureml-xai/models/grok-4-fast-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-code",
         "azureml://registries/azureml-openai-oss/models/gpt-oss-120b"
     ],

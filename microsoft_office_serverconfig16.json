@@ -1246,10 +1246,10 @@
       <o:url>https://r4.res.office365.com/footprintconfig/v1.7/scripts/fpconfig.json</o:url>
     </o:service>
     <o:service o:name="AutoDetectProdAPIUrl">
-      <o:url>https://prod.autodetect.outlook.cloud.microsoft/autodetect</o:url>
+      <o:url>https://prod-autodetect.outlookmobile.com/autodetect</o:url>
     </o:service>
     <o:service o:name="AutoDetectTestAPIUrl">
-      <o:url>https://dev.autodetect.outlook.cloud.microsoft/autodetect</o:url>
+      <o:url>https://dev-autodetect.outlookmobile.com/autodetect</o:url>
     </o:service>
     <o:service o:name="FlowBaseHostUrl">
       <o:url>https://flow.microsoft.com</o:url>
@@ -1365,7 +1365,7 @@
       <o:url>https://designer.microsoft.com</o:url>
     </o:service>
     <o:service o:name="DesignerCanaryCanvas">
-      <o:url>https://canary.designer.microsoft.com</o:url>
+      <o:url>https://designerapp.azurewebsites.net</o:url>
     </o:service>
     <o:service o:name="DesignerAuthScope">
       <o:url>https://designerappservice.officeapps.live.com/.default</o:url>
@@ -1386,10 +1386,10 @@
       <o:url>https://cdn.designerapp.osi.office.net/designerapp/fonts</o:url>
     </o:service>
     <o:service o:name="DesignerFontService">
-      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod</o:url>
+      <o:url>https://res.cdn.office.net/mro1cdnstorage/fonts/prod</o:url>
     </o:service>
     <o:service o:name="DesignerFontServiceWithVersion">
-      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod/DesignerFonts/1.9</o:url>
+      <o:url>https://res.cdn.office.net/mro1cdnstorage/fonts/prod/DesignerFonts/1.9</o:url>
     </o:service>
     <o:service o:name="DesignerCDN">
       <o:url>https://cdn.designerapp.osi.office.net</o:url>
@@ -2510,13 +2510,11 @@
     <o:token o:name="TokenOfficeScriptsEnabled">true</o:token>
     <o:token o:name="IsFloodgateSurveyEnabled">true</o:token>
     <o:token o:name="SovereignFederationDMSToken">Production</o:token>
-    <o:token o:name="SovereignFederationDMSTokenMigration">Production_1CDN</o:token>
     <o:token o:name="AllowPublicAddInProviders">true</o:token>
     <o:token o:name="OfficeScriptsServiceEndpointUrl">https://api.officescripts.microsoftusercontent.com/api</o:token>
     <o:token o:name="OneCDNBaseHost_FullDomain">res.cdn.office.net</o:token>
     <o:token o:name="OneCDNBaseHost_SubDomain">public.cdn.office.net</o:token>
     <o:token o:name="SdxCdnUrlBase">https://|1.resources.office.net/|0/|2/|3_|4</o:token>
-    <o:token o:name="SdxCdnUrlBaseMigration">https://|1.mro1cdnstorage.public.onecdn.static.microsoft/mro1cdnstorage/|0/sdx/|1/|2/|3_|4</o:token>
     <o:token o:name="SdxCdnFfn">033f92d3-bc6d-439a-858a-a17acf70360a</o:token>
     <o:token o:name="SubstrateQuickAccessDismissPath">/search/api/v1/recommendeddocuments/dismissed</o:token>
     <o:token o:name="IsFeedbackEnabled">true</o:token>
