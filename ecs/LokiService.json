@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250923.3.0",
+        "CalendarCompanionDFVersion": "1.20250924.2.0",
         "CalendarCompanionMsitVersion": "1.20250918.2.0",
         "CalendarCompanionProdVersion": "1.20250905.7.0",
         "CompanionRing": "Prod",
@@ -545,7 +545,6 @@
             "c27d9064-898a-49e6-a302-45537791c332"
         ],
         "CosmicRolloutMode": null,
-        "Crowdsource": true,
         "DecoratedProfileLookupBatchSize": 10,
         "DisableDisplayNameInConversationQuery": true,
         "DisableOutboundCancellationOnConfigurationCalls": true,
@@ -732,7 +731,6 @@
         "EnableInboundRequestLimiting": true,
         "EnableInferredPeopleSkills": true,
         "EnableInsightBasedPrompts": false,
-        "EnableLASBackfill": true,
         "EnableLlmInsights": false,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableMRUFormsRetrieval": false,
@@ -1256,7 +1254,6 @@
         "PpsMeHighlightsSectionName": "",
         "PpsSectionName": "LpcV1WebPeopleHighlights",
         "PreferSmtpResolutionForExternalUsers": true,
-        "PrefetchIsTenantEduFlag": true,
         "PrefetchThrottler_RequestThreshold": -1,
         "PrefetchThrottler_RequestThresholdPerRedis": -1,
         "PrefetchThrottler_ThrottlePercentage": -1,
@@ -1775,34 +1772,5 @@
         "Mocha": "false",
         "PiT_DF_Users": "false",
         "Ring": "Prod"
-    },
-    "Thor": {
-        "BlockParticularEndpoints": false,
-        "DisablePingEndpoint": false,
-        "DisableThor": false,
-        "ECSFlightVerification": false,
-        "ECSSettingVerification": "NoValue",
-        "EdpsTenantList": [
-            "b24c8b06-522c-46fe-9080-70926f8dddb1",
-            "829e571a-12df-4935-b4b5-4b19fb09dd70",
-            "35df470f-eb34-4dd0-b390-c79de26d4906",
-            "da9343c8-0b38-41f9-acc4-2234dc14115d",
-            "596c2b9d-bfa9-4546-ab12-cc1766e1d596",
-            "13805f7b-a502-422a-ae5f-6d013c6bb228",
-            "3fb8aeea-d8cc-4b71-80d3-5f4f0b1ba7d3",
-            "26f298a4-0639-4536-b718-c2ad757928ee",
-            "c5910276-a7b1-4cdf-9521-b6f197ae3181",
-            "9c2177dc-0812-4b88-b516-e1e652fa571a",
-            "63c369aa-1f8d-4f72-b38a-db2270dc7929",
-            "1647eb98-698c-4714-b3b5-8cc15f794d36",
-            "3a8968a8-fbcf-4414-8b5c-77255f50f37b",
-            "68d30a5c-f423-4202-a7ff-8232ffecd7c0",
-            "34aec727-a2f5-40e3-be3a-15695c423c9a",
-            "c1bcd07e-dc57-44cc-bbeb-689edf4db566",
-            "b3d1ef68-c503-4286-a115-7463b8766952"
-        ],
-        "ExampleFlight": false,
-        "ExampleSetting": "NoValue",
-        "GrpcDebug": false
     }
 }
