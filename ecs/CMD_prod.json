@@ -968,6 +968,7 @@
         "RegisteredDeviceSummaryNewAPI": true,
         "ReportingRbacAuth": true,
         "ShowAutopatchAlertRemediations": true,
+        "ShowClientBrokerInstallAssignedEntraGroups": true,
         "ShowClientBrokerOnAdminActions": true,
         "SkipSqlUpdateForAP": true,
         "SplitConfig": true,
