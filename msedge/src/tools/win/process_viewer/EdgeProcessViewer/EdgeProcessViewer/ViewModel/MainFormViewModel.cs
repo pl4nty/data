@@ -334,9 +334,7 @@ namespace EdgeProcessViewer {
     private List<ChildItem> GetChildItemsAsync(int processId,
                                                EdgeTaskManagerClient edgeTaskManagerClient) {
       if (!edgeTaskManagerClient.IsConnected) {
-        if (edgeTaskManagerClient.Connect(processId)) {
-          edgeTaskManagerClient.StartMonitoring();
-        }
+        edgeTaskManagerClient.Connect(processId);
       }
       if (edgeTaskManagerClient.IsConnected) {
         return edgeTaskManagerClient.GetItems();

@@ -4,6 +4,7 @@
 
 #include <windows.h>
 
+#include "chrome/common/edge_external_task_manager/external_task_manager.mojom.h"
 #include "tools/win/process_viewer/data_provider/edge_watcher_client.h"
 #include "tools/win/process_viewer/data_provider/task_export.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client.h"
@@ -11,7 +12,6 @@
 namespace {
 
 using process_viewer::EdgeWatcherClient;
-using process_viewer::Task;
 
 extern "C" {
 
@@ -43,11 +43,7 @@ __declspec(dllexport) bool GetEdgeWatcherMonitoredTasks(
   if (!edge_watcher_client) {
     return false;
   }
-  std::vector<Task> tasks;
-  if (!edge_watcher_client->GetMonitoredTasks(process_id, &tasks)) {
-    return false;
-  }
-  *snapshot = CreateEdgeTaskSnapshot(tasks).release();
+  *snapshot = edge_watcher_client->GetLastSnapshot(process_id);
   return true;
 }
 

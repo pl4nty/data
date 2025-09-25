@@ -44,13 +44,6 @@ namespace EdgeProcessViewer {
       return IsConnected;
     }
 
-    public bool StartMonitoring() {
-      if (taskManagerClient_ == IntPtr.Zero) {
-        throw new ObjectDisposedException(null);
-      }
-      return NativeMethods.StartTaskManagerMonitoring(taskManagerClient_);
-    }
-
     public List<ChildItem> GetItems() {
       if (taskManagerClient_ == IntPtr.Zero) {
         throw new ObjectDisposedException(null);

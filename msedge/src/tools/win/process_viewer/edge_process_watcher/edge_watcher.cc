@@ -34,29 +34,17 @@ void EdgeWatcher::RemoveObserver(const Observer* observer) {
 }
 
 void EdgeWatcher::OnConnected(ULONG process_id) {
-  auto it = browser_processes_.find(process_id);
-  if (it == browser_processes_.end()) {
-    return;
-  }
-  it->second->task_manager_client.StartMonitoring();
 }
 
 void EdgeWatcher::OnConnectionClosed(ULONG process_id) {
-  auto it = browser_processes_.find(process_id);
-  if (it == browser_processes_.end()) {
-    return;
-  }
-  browser_processes_.erase(it);
+  browser_processes_.erase(process_id);
 }
 
-void EdgeWatcher::OnGotSnapshot(ULONG process_id,
-                                const std::vector<Task>& tasks) {}
-
-void EdgeWatcher::OnSharedMemoryRegionChanged(
+void EdgeWatcher::OnGotSnapshot(
     ULONG process_id,
-    const base::ReadOnlySharedMemoryRegion& region) {
+    const std::vector<external_task_manager::mojom::Task>& tasks) {
   for (Observer& observer : observers_) {
-    observer.OnSharedMemoryRegionChanged(process_id, region);
+    observer.OnGotSnapshot(process_id, tasks);
   }
 }
 

@@ -162,6 +162,11 @@ namespace EdgeProcessViewer {
 
     [DllImport("process_viewer_data.dll", CallingConvention = CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
+    public static extern bool GetTaskManagerSnapshot(IntPtr task_manager_client,
+                                                     long timeout_ms, out IntPtr snapshot);
+
+    [DllImport("process_viewer_data.dll", CallingConvention = CallingConvention.Cdecl)]
+    [return: MarshalAs(UnmanagedType.I1)]
     public static extern bool GetTaskManagerMonitoredTasks(IntPtr task_manager_client,
                                                            out IntPtr snapshot);
 

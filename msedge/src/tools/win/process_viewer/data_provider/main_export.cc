@@ -17,40 +17,29 @@ base::AtExitManager* exit_manager = nullptr;
 
 extern "C" {
 
-const bool use_ipcz = true;
-
 __declspec(dllexport) bool InitializeEdgeDataProvider() {
   exit_manager = new base::AtExitManager;
 
-  if (use_ipcz) {
-    mojo::core::EnableMojoIpcz();
-    mojo::core::Init({.is_broker_process = true});
+  mojo::core::EnableMojoIpcz();
+  mojo::core::Init({.is_broker_process = true});
 
-    ipc_thread = std::make_unique<base::Thread>("ipc!");
-    ipc_thread->StartWithOptions(
-        base::Thread::Options(base::MessagePumpType::IO, 0));
+  ipc_thread = std::make_unique<base::Thread>("ipc!");
+  ipc_thread->StartWithOptions(
+      base::Thread::Options(base::MessagePumpType::IO, 0));
 
-    // As long as this object is alive, all Mojo API surface relevant to IPC
-    // connections is usable, and message pipes which span a process boundary
-    // will continue to function.
-    ipc_support = std::make_unique<mojo::core::ScopedIPCSupport>(
-        ipc_thread->task_runner(),
-        mojo::core::ScopedIPCSupport::ShutdownPolicy::CLEAN);
-  } else {
-    MojoResult result = MojoInitialize(nullptr);
-    if (result != MOJO_RESULT_OK) {
-      printf("Failed to initialize mojo.\n");
-      return false;
-    }
-  }
+  // As long as this object is alive, all Mojo API surface relevant to IPC
+  // connections is usable, and message pipes which span a process boundary
+  // will continue to function.
+  ipc_support = std::make_unique<mojo::core::ScopedIPCSupport>(
+      ipc_thread->task_runner(),
+      mojo::core::ScopedIPCSupport::ShutdownPolicy::CLEAN);
 
   return true;
 }
 
 __declspec(dllexport) void UninitializeEdgeDataProvider() {
-  if (!use_ipcz) {
-    MojoShutdown(nullptr);
-  }
+  ipc_thread->Stop();
+  ipc_support.reset();
   delete exit_manager;
 }
 

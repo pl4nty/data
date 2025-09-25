@@ -5,6 +5,7 @@
 module process_viewer.mojom;
 
 import "mojo/public/mojom/base/process_id.mojom";
+import "chrome/common/edge_external_task_manager/external_task_manager.mojom";
 
 interface EdgeWatcher {
   SetClient(mojo_base.mojom.ProcessId client_process_id,
@@ -12,8 +13,6 @@ interface EdgeWatcher {
 };
 
 interface EdgeWatcherClient {
-  OnSharedMemoryRegionChanged(mojo_base.mojom.ProcessId browser_process_id,
-                              uint32 shared_mem_handle,
-                              uint64 shared_mem_size,
-                              uint64 guid_high, uint64 guid_low);
+  OnTasksUpdated(mojo_base.mojom.ProcessId browser_process_id,
+                 array<external_task_manager.mojom.Task> tasks);
 };

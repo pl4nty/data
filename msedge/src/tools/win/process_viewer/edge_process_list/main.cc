@@ -13,6 +13,7 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_util_win.h"
 #include "base/threading/thread.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager.mojom.h"
 #include "mojo/core/embedder/embedder.h"
 #include "mojo/core/embedder/scoped_ipc_support.h"
 #include "mojo/public/c/system/core.h"
@@ -128,7 +129,9 @@ void PrintProcess(const Process* process) {
           GetMemoryUsageString(process->memory_usage()).c_str());
 }
 
-void PrintTasksForProcess(ULONG process_id, const std::vector<Task>& tasks) {
+void PrintTasksForProcess(
+    ULONG process_id,
+    const std::vector<external_task_manager::mojom::Task>& tasks) {
   for (const auto& task : tasks) {
     if (task.process_id == process_id) {
       wprintf(L"  %s\n", task.title.c_str());
@@ -145,7 +148,8 @@ void PrintIETasksForProcess(ULONG process_id,
   }
 }
 
-std::vector<Task> GetEdgeTasks(ULONG browser_process_id) {
+std::vector<external_task_manager::mojom::Task> GetEdgeTasks(
+    ULONG browser_process_id) {
   TaskManagerClientSync task_manager_client;
   if (!task_manager_client.Initialize()) {
     wprintf(L"Failed to initialize task manager.\n");
@@ -158,14 +162,14 @@ std::vector<Task> GetEdgeTasks(ULONG browser_process_id) {
     return {};
   }
 
-  std::vector<Task> tasks;
-  if (!task_manager_client.GetSnapshot(timeout, &tasks)) {
+  std::vector<external_task_manager::mojom::Task> tasks;
+  if (!task_manager_client.UpdateSnapshot(timeout)) {
     wprintf(L"Failed to get tasks from Browser process %u.\n",
             browser_process_id);
     return {};
   }
 
-  return tasks;
+  return task_manager_client.GetLastTasks();
 }
 
 std::vector<IETask> GetIETasks() {
@@ -182,34 +186,25 @@ std::vector<IETask> GetIETasks() {
 
 }  // namespace process_viewer
 
-const bool use_ipcz = true;
 
 int main(int argc, char* argv[]) {
   base::AtExitManager exit_manager;
   std::unique_ptr<base::Thread> ipc_thread;
   std::unique_ptr<mojo::core::ScopedIPCSupport> ipc_support;
 
-  if (use_ipcz) {
-    mojo::core::EnableMojoIpcz();
-    mojo::core::Init({.is_broker_process = true});
+  mojo::core::EnableMojoIpcz();
+  mojo::core::Init({.is_broker_process = true});
 
-    ipc_thread = std::make_unique<base::Thread>("ipc!");
-    ipc_thread->StartWithOptions(
-        base::Thread::Options(base::MessagePumpType::IO, 0));
+  ipc_thread = std::make_unique<base::Thread>("ipc!");
+  ipc_thread->StartWithOptions(
+      base::Thread::Options(base::MessagePumpType::IO, 0));
 
-    // As long as this object is alive, all Mojo API surface relevant to IPC
-    // connections is usable, and message pipes which span a process boundary
-    // will continue to function.
-    ipc_support = std::make_unique<mojo::core::ScopedIPCSupport>(
-        ipc_thread->task_runner(),
-        mojo::core::ScopedIPCSupport::ShutdownPolicy::CLEAN);
-  } else {
-    MojoResult result = MojoInitialize(nullptr);
-    if (result != MOJO_RESULT_OK) {
-      printf("Failed to initialize mojo.\n");
-      return 1;
-    }
-  }
+  // As long as this object is alive, all Mojo API surface relevant to IPC
+  // connections is usable, and message pipes which span a process boundary
+  // will continue to function.
+  ipc_support = std::make_unique<mojo::core::ScopedIPCSupport>(
+      ipc_thread->task_runner(),
+      mojo::core::ScopedIPCSupport::ShutdownPolicy::CLEAN);
 
   // Get data on the currently running processes.
   process_viewer::ProcessDataProvider process_data_provider;
@@ -223,7 +218,8 @@ int main(int argc, char* argv[]) {
 
   // For each browser process, connect to the process and obtain its task data.
   bool found_ie = false;
-  std::map<ULONG, std::vector<process_viewer::Task>> browser_tasks;
+  std::map<ULONG, std::vector<external_task_manager::mojom::Task>>
+      browser_tasks;
   std::vector<process_viewer::IETask> ie_tasks;
   for (const auto& process : processes) {
     if (process->type() == process_viewer::ProcessType::Browser) {
@@ -274,10 +270,6 @@ int main(int argc, char* argv[]) {
       }
       printf("\n");
     }
-  }
-
-  if (!use_ipcz) {
-    MojoShutdown(nullptr);
   }
 
   return 0;

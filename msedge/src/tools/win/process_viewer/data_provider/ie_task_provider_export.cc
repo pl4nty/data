@@ -33,7 +33,7 @@ __declspec(dllexport) bool GetIETaskProviderTasks(
   if (!ie_task_provider->GetTasks(&tasks)) {
     return false;
   }
-  *snapshot = CreateIETaskSnapshot(tasks).release();
+  *snapshot = new IETaskExportSnapshot(tasks);
   return true;
 }
 

@@ -7,8 +7,3 @@ include_rules = [
   "+extensions/common",
   "+device/base/synchronization"
 ]
-
-# Edge-only include rules:
-include_rules += [
-  "+chrome/common/edge_external_task_manager_shared.h",
-]

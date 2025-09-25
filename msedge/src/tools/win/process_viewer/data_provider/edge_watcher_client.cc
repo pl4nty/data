@@ -7,13 +7,11 @@
 #include <windows.h>
 
 #include "base/functional/bind.h"
-#include "base/pickle.h"
 #include "base/threading/thread.h"
-#include "chrome/common/edge_external_task_manager_shared.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager_shared.h"
 #include "mojo/public/cpp/platform/named_platform_channel.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
 #include "tools/win/process_viewer/common/edge_watcher_common.h"
-#include "tools/win/process_viewer/data_provider/server_connection.h"
 
 namespace process_viewer {
 
@@ -66,62 +64,21 @@ bool EdgeWatcherClient::ConnectToServer() {
   return IsConnected();
 }
 
-bool EdgeWatcherClient::GetMonitoredTasks(base::ProcessId browser_process_id,
-                                          std::vector<Task>* tasks) {
+EdgeTaskExportSnapshot* EdgeWatcherClient::GetLastSnapshot(
+    base::ProcessId browser_process_id) {
   base::AutoLock auto_lock(lock_);
-  auto it = shared_memory_.find(browser_process_id);
-  if (it == shared_memory_.end()) {
-    return false;
-  }
-  const auto& mapping = it->second->mapping;
-  if (!TaskManagerClient::GetMonitoredDataFromBuffer(mapping.memory(),
-                                                     mapping.size(), tasks)) {
-    return false;
-  }
-  return true;
+  return new EdgeTaskExportSnapshot(tasks_.at(browser_process_id));
 }
 
-void EdgeWatcherClient::OnSharedMemoryRegionChanged(
+void EdgeWatcherClient::OnTasksUpdated(
     base::ProcessId browser_process_id,
-    uint32_t shared_mem_handle,
-    uint64_t shared_mem_size,
-    uint64_t guid_high,
-    uint64_t guid_low) {
-  base::win::ScopedHandle shared_memory_handle(
-      ULongToHandle(shared_mem_handle));
-  if (!shared_memory_handle.IsValid()) {
-    return;
-  }
-
-  // Attempt to open and map the new shared memory region.
-  constexpr auto kMode =
-      base::subtle::PlatformSharedMemoryRegion::Mode::kReadOnly;
-  std::optional<base::UnguessableToken> guid =
-      base::UnguessableToken::Deserialize(guid_high, guid_low);
-  if (!guid.has_value()) {
-    return;
-  }
-  auto shared_memory_region = base::ReadOnlySharedMemoryRegion::Deserialize(
-      base::subtle::PlatformSharedMemoryRegion::Take(
-          std::move(shared_memory_handle), kMode, shared_mem_size, guid.value()));
-  if (!shared_memory_region.IsValid()) {
-    return;
-  }
-
-  auto shared_memory_mapping = shared_memory_region.Map();
-  if (!shared_memory_mapping.IsValid()) {
-    return;
-  }
-
-  auto shared_memory = std::make_unique<ReadOnlySharedMemory>();
-  shared_memory->region = std::move(shared_memory_region);
-  shared_memory->mapping = std::move(shared_memory_mapping);
-
-  // Associate the specified browser process with the new shared memory region,
-  // replacing any previous region. This will release the previous region if we
-  // had the last reference to it.
+    std::vector<external_task_manager::mojom::TaskPtr> tasks) {
   base::AutoLock auto_lock(lock_);
-  shared_memory_[browser_process_id] = std::move(shared_memory);
+  tasks_[browser_process_id] =
+      std::vector<external_task_manager::mojom::Task>();
+  for (const auto& task : tasks) {
+    tasks_[browser_process_id].push_back(*task);
+  }
 }
 
 void EdgeWatcherClient::ConnectOnIpcThread() {

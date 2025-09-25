@@ -41,44 +41,40 @@ void EdgeWatcherServer::SetClient(
   client_.Bind(std::move(client));
 
   // When the client first connects, send details of all current regions.
-  for (const auto& element : shared_memory_regions_) {
-    NotifySharedMemoryRegionChanged(element.first, *element.second);
+  for (const auto& element : tasks_) {
+    NotifyTasksUpdated(element.first);
   }
 }
 
-void EdgeWatcherServer::OnSharedMemoryRegionChanged(
-    base::ProcessId browser_process_id,
-    const base::ReadOnlySharedMemoryRegion& region) {
-  shared_memory_regions_[browser_process_id] =
-      std::make_unique<base::ReadOnlySharedMemoryRegion>(region.Duplicate());
-  NotifySharedMemoryRegionChanged(browser_process_id, region);
+std::vector<external_task_manager::mojom::TaskPtr>
+EdgeWatcherServer::GetCopyOfTasks(ULONG process_id) {
+  std::vector<external_task_manager::mojom::TaskPtr> tasks;
+  const auto it = tasks_.find(process_id);
+  if (it != tasks_.end()) {
+    for (const auto& task : it->second) {
+      tasks.push_back(external_task_manager::mojom::Task::New(task));
+    }
+  }
+  return tasks;
 }
 
-void EdgeWatcherServer::NotifySharedMemoryRegionChanged(
-    base::ProcessId browser_process_id,
-    const base::ReadOnlySharedMemoryRegion& region) {
+void EdgeWatcherServer::OnGotSnapshot(
+    ULONG browser_process_id,
+    const std::vector<external_task_manager::mojom::Task>& tasks) {
+  tasks_[browser_process_id].clear();
+  for (const auto& task : tasks) {
+    tasks_[browser_process_id].push_back(task);
+  }
+  NotifyTasksUpdated(browser_process_id);
+}
+
+void EdgeWatcherServer::NotifyTasksUpdated(base::ProcessId browser_process_id) {
   if (!client_) {
     return;
   }
 
-  // Get a handle to the region that is usable by the client.
-  base::subtle::PlatformSharedMemoryRegion duplicate_region =
-      base::ReadOnlySharedMemoryRegion::TakeHandleForSerialization(
-          region.Duplicate());
-  auto duplicate_region_handle = duplicate_region.PassPlatformHandle();
-
-  HANDLE client_region_handle;
-  if (!DuplicateHandle(GetCurrentProcess(), duplicate_region_handle.Get(),
-                       client_process_handle_.Get(), &client_region_handle, 0,
-                       FALSE, DUPLICATE_SAME_ACCESS)) {
-    return;
-  }
-
-  // Send the new region's details to the client.
-  const base::UnguessableToken& guid = region.GetGUID();
-  client_->OnSharedMemoryRegionChanged(
-      browser_process_id, HandleToUlong(client_region_handle), region.GetSize(),
-      guid.GetHighForSerialization(), guid.GetLowForSerialization());
+  client_->OnTasksUpdated(browser_process_id,
+                          GetCopyOfTasks(browser_process_id));
 }
 
 void EdgeWatcherServer::OnConnectionError() {

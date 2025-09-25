@@ -13,7 +13,8 @@ executable("edge_process_list") {
   deps = [
     ":data_provider",
     "//base",
-    "//mojo/core/embedder:embedder",
+    "//chrome/common/edge_external_task_manager",
+    "//mojo/core/embedder",
   ]
 }
 
@@ -33,7 +34,8 @@ executable("edge_process_watcher") {
     ":mojom",
     "//base",
     "//chrome/common:common_lib",
-    "//mojo/core/embedder:embedder",
+    "//chrome/common/edge_external_task_manager",
+    "//mojo/core/embedder",
   ]
 
   configs -= [ "//build/config/win:console" ]
@@ -47,20 +49,19 @@ shared_library("process_viewer_data") {
     "data_provider/main_export.cc",
     "data_provider/process_data_provider_export.cc",
     "data_provider/task_export.cc",
-    "data_provider/task_export.h",
     "data_provider/task_manager_client_export.cc",
   ]
 
   deps = [
     ":data_provider",
     "//base",
-    "//mojo/core/embedder:embedder",
+    "//chrome/common/edge_external_task_manager",
+    "//mojo/core/embedder",
   ]
 }
 
 source_set("data_provider") {
   sources = [
-    "//chrome/common/edge_external_task_manager_shared.h",
     "common/edge_watcher_common.h",
     "data_provider/edge_process.cc",
     "data_provider/edge_process.h",
@@ -79,8 +80,7 @@ source_set("data_provider") {
     "data_provider/process.h",
     "data_provider/process_data_provider.cc",
     "data_provider/process_data_provider.h",
-    "data_provider/server_connection.cc",
-    "data_provider/server_connection.h",
+    "data_provider/task_export.h",
     "data_provider/task_manager_client.cc",
     "data_provider/task_manager_client.h",
     "data_provider/task_manager_client_sync.cc",
@@ -90,18 +90,24 @@ source_set("data_provider") {
   deps = [
     ":mojom",
     "//base",
+    "//chrome/common/edge_external_task_manager",
     "//device/base/synchronization",
-    "//mojo/core/embedder:embedder",
+    "//mojo/core/embedder",
   ]
 }
 
 mojom("mojom") {
+  cpp_only = true
+
   # Don't generate Blink variants of these bindings.
   disable_variants = true
 
   sources = [ "common/edge_watcher.mojom" ]
 
-  deps = [ "//mojo/public/mojom/base" ]
+  deps = [
+    "//chrome/common/edge_external_task_manager:mojom",
+    "//mojo/public/mojom/base",
+  ]
 }
 
 test("process_viewer_unittests") {
@@ -115,7 +121,7 @@ test("process_viewer_unittests") {
     "//base/test:test_support",
     "//chrome/common:non_code_constants",
     "//components/crash/core/app:run_as_crashpad_handler",
-    "//extensions/buildflags:buildflags",
+    "//extensions/buildflags",
     "//testing/gtest",
   ]
 

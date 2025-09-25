@@ -19,8 +19,8 @@
 namespace process_viewer {
 
 // This class acts as the server side of an isolated Mojo connection, and will
-// notify the client of all shared memory regions containing the tasks from Edge
-// browser processes.
+// notify the client when snapshots containing the tasks from Edge
+// browser processes are updated.
 class EdgeWatcherServer : public mojom::EdgeWatcher,
                           public EdgeWatcher::Observer {
  public:
@@ -37,23 +37,23 @@ class EdgeWatcherServer : public mojom::EdgeWatcher,
       mojo::PendingAssociatedRemote<mojom::EdgeWatcherClient> client) override;
 
   // EdgeWatcher::Observer:
-  void OnSharedMemoryRegionChanged(
+  void OnGotSnapshot(
       ULONG browser_process_id,
-      const base::ReadOnlySharedMemoryRegion& region) override;
+      const std::vector<external_task_manager::mojom::Task>& tasks) override;
 
  private:
-  void NotifySharedMemoryRegionChanged(
-      ULONG browser_process_id,
-      const base::ReadOnlySharedMemoryRegion& region);
+  void NotifyTasksUpdated(ULONG browser_process_id);
 
   void OnConnectionError();
+
+  std::vector<external_task_manager::mojom::TaskPtr> GetCopyOfTasks(
+      ULONG process_id);
 
   std::unique_ptr<mojo::IsolatedConnection> mojo_connection_;
   mojo::Receiver<mojom::EdgeWatcher> receiver_;
   mojo::AssociatedRemote<mojom::EdgeWatcherClient> client_;
   base::win::ScopedHandle client_process_handle_;
-  std::map<ULONG, std::unique_ptr<base::ReadOnlySharedMemoryRegion>>
-      shared_memory_regions_;
+  std::map<ULONG, std::vector<external_task_manager::mojom::Task>> tasks_;
 
   base::WeakPtrFactory<EdgeWatcherServer> weak_factory_;
 };
