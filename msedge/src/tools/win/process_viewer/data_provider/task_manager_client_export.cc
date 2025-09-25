@@ -10,7 +10,6 @@
 
 namespace {
 
-using process_viewer::Task;
 using process_viewer::TaskManagerClientSync;
 
 extern "C" {
@@ -47,29 +46,12 @@ __declspec(dllexport) bool GetTaskManagerSnapshot(
     return false;
   }
   base::TimeDelta wait_delta = base::Milliseconds(timeout_ms);
-  std::vector<Task> tasks;
-  if (!task_manager_client->GetSnapshot(wait_delta, &tasks)) {
+  if (!task_manager_client->UpdateSnapshot(wait_delta)) {
     return false;
   }
 
-  *snapshot = CreateEdgeTaskSnapshot(tasks).release();
+  *snapshot = task_manager_client->GetLastSnapshot();
   return true;
-}
-
-__declspec(dllexport) bool StartTaskManagerMonitoring(
-    TaskManagerClientSync* task_manager_client) {
-  if (!task_manager_client) {
-    return false;
-  }
-  return task_manager_client->StartMonitoring();
-}
-
-__declspec(dllexport) bool StopTaskManagerMonitoring(
-    TaskManagerClientSync* task_manager_client) {
-  if (!task_manager_client) {
-    return false;
-  }
-  return task_manager_client->StopMonitoring();
 }
 
 __declspec(dllexport) bool GetTaskManagerMonitoredTasks(
@@ -78,11 +60,8 @@ __declspec(dllexport) bool GetTaskManagerMonitoredTasks(
   if (!task_manager_client) {
     return false;
   }
-  std::vector<Task> tasks;
-  if (!task_manager_client->GetMonitoredTasks(&tasks)) {
-    return false;
-  }
-  *snapshot = CreateEdgeTaskSnapshot(tasks).release();
+
+  *snapshot = task_manager_client->GetLastSnapshot();
   return true;
 }
 

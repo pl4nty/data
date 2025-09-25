@@ -8,6 +8,7 @@
 #include <map>
 
 #include "base/observer_list.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager.mojom.h"
 #include "tools/win/process_viewer/data_provider/process_data_provider.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client.h"
 #include "tools/win/process_viewer/edge_process_watcher/browser_creation_watcher.h"
@@ -15,15 +16,15 @@
 namespace process_viewer {
 
 // This class finds all existing Edge browser processes, and finds new ones as
-// they are created. For each browser found, it starts monitoring that browser's
-// tasks via shared memory.
+// they are created. For each browser found, it connects with the process and
+// stores snapshot updates.
 class EdgeWatcher : public TaskManagerClient::Observer {
  public:
   class Observer : public base::CheckedObserver {
    public:
-    virtual void OnSharedMemoryRegionChanged(
+    virtual void OnGotSnapshot(
         ULONG process_id,
-        const base::ReadOnlySharedMemoryRegion& region) = 0;
+        const std::vector<external_task_manager::mojom::Task>& tasks) = 0;
   };
 
   EdgeWatcher();
@@ -32,10 +33,8 @@ class EdgeWatcher : public TaskManagerClient::Observer {
   EdgeWatcher& operator=(const EdgeWatcher&) = delete;
 
   bool StartWatching();
-
   void StopWatching();
 
-  // Adds and removes observers.
   void AddObserver(Observer* observer);
   void RemoveObserver(const Observer* observer);
 
@@ -44,11 +43,9 @@ class EdgeWatcher : public TaskManagerClient::Observer {
 
   void OnConnectionClosed(ULONG process_id) override;
 
-  void OnGotSnapshot(ULONG process_id, const std::vector<Task>& tasks) override;
-
-  void OnSharedMemoryRegionChanged(
+  void OnGotSnapshot(
       ULONG process_id,
-      const base::ReadOnlySharedMemoryRegion& region) override;
+      const std::vector<external_task_manager::mojom::Task>& tasks) override;
 
  private:
   void OnProcessCreated();
@@ -60,7 +57,6 @@ class EdgeWatcher : public TaskManagerClient::Observer {
   struct WatchedBrowserProcess {
     ULONG process_id;
     TaskManagerClient task_manager_client;
-    base::ReadOnlySharedMemoryRegion shared_memory_region;
   };
 
   BrowserCreationWatcher browser_creation_watcher_;

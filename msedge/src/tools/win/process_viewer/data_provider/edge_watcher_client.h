@@ -5,11 +5,14 @@
 #ifndef TOOLS_WIN_PROCESS_VIEWER_DATA_PROVIDER_EDGE_WATCHER_CLIENT_H_
 #define TOOLS_WIN_PROCESS_VIEWER_DATA_PROVIDER_EDGE_WATCHER_CLIENT_H_
 
+#include "base/synchronization/lock.h"
 #include "base/threading/thread.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager.mojom.h"
 #include "mojo/public/cpp/bindings/associated_receiver.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "mojo/public/cpp/system/isolated_connection.h"
 #include "tools/win/process_viewer/common/edge_watcher.mojom.h"
+#include "tools/win/process_viewer/data_provider/task_export.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client.h"
 
 namespace process_viewer {
@@ -30,16 +33,13 @@ class EdgeWatcherClient : public mojom::EdgeWatcherClient {
   // Connects to the EdgeWatcher server.
   bool ConnectToServer();
 
-  // Gets the list of tasks from shared memory.
-  bool GetMonitoredTasks(base::ProcessId browser_process_id,
-                         std::vector<Task>* tasks);
+  // Gets the list of tasks from latest update
+  EdgeTaskExportSnapshot* GetLastSnapshot(base::ProcessId browser_process_id);
 
   // mojom::EdgeWatcherClient:
-  void OnSharedMemoryRegionChanged(base::ProcessId browser_process_id,
-                                   uint32_t shared_mem_handle,
-                                   uint64_t shared_mem_size,
-                                   uint64_t guid_high,
-                                   uint64_t guid_low) override;
+  void OnTasksUpdated(
+      base::ProcessId browser_process_id,
+      std::vector<external_task_manager::mojom::TaskPtr> tasks) override;
 
  private:
   void ConnectOnIpcThread();
@@ -47,11 +47,6 @@ class EdgeWatcherClient : public mojom::EdgeWatcherClient {
   void DisconnectOnIpcThread();
 
   bool IsConnected();
-
-  struct ReadOnlySharedMemory {
-    base::ReadOnlySharedMemoryRegion region;
-    base::ReadOnlySharedMemoryMapping mapping;
-  };
 
   // IPC thread to provide a TaskRunner without imposing any requirement on the
   // consumer of this class.
@@ -63,11 +58,10 @@ class EdgeWatcherClient : public mojom::EdgeWatcherClient {
   mojo::AssociatedReceiver<mojom::EdgeWatcherClient> receiver_;
 
   base::Lock lock_;
+  std::map<base::ProcessId, std::vector<external_task_manager::mojom::Task>>
+      tasks_ GUARDED_BY(lock_);
   bool is_connected_ = false;
-  std::map<base::ProcessId, std::unique_ptr<ReadOnlySharedMemory>>
-      shared_memory_;
 };
-
 }  // namespace process_viewer
 
 #endif  // TOOLS_WIN_PROCESS_VIEWER_DATA_PROVIDER_EDGE_WATCHER_CLIENT_H_

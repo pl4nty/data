@@ -8,12 +8,11 @@
 #include <memory>
 
 #include "base/functional/callback.h"
-#include "base/memory/read_only_shared_memory_region.h"
-#include "base/task/sequenced_task_runner.h"
 #include "base/synchronization/lock.h"
 #include "base/synchronization/waitable_event.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/threading/thread.h"
+#include "tools/win/process_viewer/data_provider/task_export.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client.h"
 
 namespace base {
@@ -42,37 +41,27 @@ class TaskManagerClientSync : public TaskManagerClient::Observer {
   // Gets a snapshot of the current set of tasks known to the Edge browser's
   // task manager. Returns false if the browser doesn't reply within the allowed
   // time.
-  bool GetSnapshot(const base::TimeDelta& wait_delta, std::vector<Task>* tasks);
+  bool UpdateSnapshot(const base::TimeDelta& wait_delta);
 
-  // Starts monitoring the tasks known to the Edge browser's task manager,
-  // updating periodically.
-  bool StartMonitoring();
+  // Gets the last snapshot as an EdgeTaskExportSnapshot. The caller is
+  // responsible for deleting the returned object.
+  EdgeTaskExportSnapshot* GetLastSnapshot();
 
-  // Stops monitoring tasks.
-  bool StopMonitoring();
-
-  // Gets the list of tasks as of the last periodic update.
-  bool GetMonitoredTasks(std::vector<Task>* tasks);
+  std::vector<external_task_manager::mojom::Task> GetLastTasks();
 
   // TaskManagerClient::Observer:
   void OnConnected(ULONG process_id) override;
 
   void OnConnectionClosed(ULONG process_id) override;
 
-  void OnGotSnapshot(ULONG process_id, const std::vector<Task>& tasks) override;
-
-  void OnSharedMemoryRegionChanged(
+  void OnGotSnapshot(
       ULONG process_id,
-      const base::ReadOnlySharedMemoryRegion& region) override;
+      const std::vector<external_task_manager::mojom::Task>& tasks) override;
 
  private:
   void ConnectOnIpcThread(ULONG process_id);
 
   void RequestSnapshotOnIpcThread();
-
-  void StartMonitoringOnIpcThread();
-
-  void StopMonitoringOnIpcThread();
 
   bool IsConnected();
 
@@ -84,14 +73,11 @@ class TaskManagerClientSync : public TaskManagerClient::Observer {
   std::unique_ptr<TaskManagerClient> task_manager_client_;
 
   base::Lock lock_;
-  bool is_connected_ = false;
+  std::vector<external_task_manager::mojom::Task> last_snapshot_tasks_
+      GUARDED_BY(lock_);
 
-  std::vector<Task> last_snapshot_tasks_;
   base::WaitableEvent connect_complete_event_;
   base::WaitableEvent snapshot_complete_event_;
-
-  base::ReadOnlySharedMemoryRegion shared_memory_region_;
-  base::ReadOnlySharedMemoryMapping shared_memory_mapping_;
 };
 
 }  // namespace process_viewer

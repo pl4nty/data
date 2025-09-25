@@ -6,6 +6,7 @@
 
 #include "base/functional/bind.h"
 #include "base/time/time.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager_shared.h"
 
 namespace process_viewer {
 
@@ -20,10 +21,10 @@ TaskManagerClientSync::~TaskManagerClientSync() {
         base::BindOnce(&TaskManagerClient::Disconnect,
                        base::Unretained(task_manager_client_.get())));
 
-    // Signal and wait for the thread to exit, to ensure that the disconnect
-    // task above completes before the TaskManagerClient is destroyed at the end
-    // of this scope.
     ipc_thread_->Stop();
+
+    task_manager_client_.reset();
+    ipc_thread_.reset();
   }
 }
 
@@ -71,8 +72,7 @@ bool TaskManagerClientSync::ConnectToServer(ULONG process_id,
   return IsConnected();
 }
 
-bool TaskManagerClientSync::GetSnapshot(const base::TimeDelta& wait_delta,
-                                        std::vector<Task>* tasks) {
+bool TaskManagerClientSync::UpdateSnapshot(const base::TimeDelta& wait_delta) {
   DCHECK(!ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
   if (!task_manager_client_ || !IsConnected()) {
     return false;
@@ -94,94 +94,47 @@ bool TaskManagerClientSync::GetSnapshot(const base::TimeDelta& wait_delta,
     return false;
   }
 
+  return true;
+}
+
+EdgeTaskExportSnapshot* TaskManagerClientSync::GetLastSnapshot() {
   base::AutoLock auto_lock(lock_);
-  *tasks = std::move(last_snapshot_tasks_);
-  return true;
+  return new EdgeTaskExportSnapshot(last_snapshot_tasks_);
 }
 
-bool TaskManagerClientSync::StartMonitoring() {
-  DCHECK(!ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
-  if (!task_manager_client_ || !IsConnected()) {
-    return false;
-  }
-
-  if (!ipc_thread_->task_runner()->PostTask(
-          FROM_HERE,
-          base::BindOnce(&TaskManagerClientSync::StartMonitoringOnIpcThread,
-                         base::Unretained(this)))) {
-    return false;
-  }
-  return true;
-}
-
-bool TaskManagerClientSync::StopMonitoring() {
-  DCHECK(!ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
-  if (!task_manager_client_ || !IsConnected()) {
-    return false;
-  }
-
-  if (!ipc_thread_->task_runner()->PostTask(
-          FROM_HERE,
-          base::BindOnce(&TaskManagerClientSync::StopMonitoringOnIpcThread,
-                         base::Unretained(this)))) {
-    return false;
-  }
-  return true;
-}
-
-bool TaskManagerClientSync::GetMonitoredTasks(std::vector<Task>* tasks) {
+std::vector<external_task_manager::mojom::Task>
+TaskManagerClientSync::GetLastTasks() {
   base::AutoLock auto_lock(lock_);
-  if (!shared_memory_mapping_.IsValid()) {
-    return false;
-  }
-  return TaskManagerClient::GetMonitoredDataFromBuffer(
-      shared_memory_mapping_.memory(), shared_memory_mapping_.size(), tasks);
+  return last_snapshot_tasks_;
 }
 
 void TaskManagerClientSync::OnConnected(ULONG process_id) {
-  base::AutoLock auto_lock(lock_);
-  is_connected_ = true;
   connect_complete_event_.Signal();
 }
 
-void TaskManagerClientSync::OnConnectionClosed(ULONG process_id) {
-  base::AutoLock auto_lock(lock_);
-  is_connected_ = false;
-}
+void TaskManagerClientSync::OnConnectionClosed(ULONG process_id) {}
 
-void TaskManagerClientSync::OnGotSnapshot(ULONG process_id,
-                                          const std::vector<Task>& tasks) {
+void TaskManagerClientSync::OnGotSnapshot(
+    ULONG process_id,
+    const std::vector<external_task_manager::mojom::Task>& tasks) {
+  DCHECK(ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
   base::AutoLock auto_lock(lock_);
   last_snapshot_tasks_ = std::move(tasks);
   snapshot_complete_event_.Signal();
 }
 
-void TaskManagerClientSync::OnSharedMemoryRegionChanged(
-    ULONG process_id,
-    const base::ReadOnlySharedMemoryRegion& region) {
-  base::AutoLock auto_lock(lock_);
-  shared_memory_mapping_ = region.Map();
-}
-
 void TaskManagerClientSync::ConnectOnIpcThread(ULONG process_id) {
+  DCHECK(ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
   task_manager_client_->ConnectToServer(process_id);
 }
 
 void TaskManagerClientSync::RequestSnapshotOnIpcThread() {
+  DCHECK(ipc_thread_->task_runner()->RunsTasksInCurrentSequence());
   task_manager_client_->RequestSnapshot();
 }
 
-void TaskManagerClientSync::StartMonitoringOnIpcThread() {
-  task_manager_client_->StartMonitoring();
-}
-
-void TaskManagerClientSync::StopMonitoringOnIpcThread() {
-  task_manager_client_->StopMonitoring();
-}
-
 bool TaskManagerClientSync::IsConnected() {
-  base::AutoLock auto_lock(lock_);
-  return is_connected_;
+  return task_manager_client_->IsConnected();
 }
 
 }  // namespace process_viewer

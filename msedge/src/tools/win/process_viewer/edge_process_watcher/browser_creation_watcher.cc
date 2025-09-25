@@ -4,7 +4,7 @@
 
 #include "tools/win/process_viewer/edge_process_watcher/browser_creation_watcher.h"
 
-#include "chrome/common/edge_external_task_manager_shared.h"
+#include "chrome/common/edge_external_task_manager/external_task_manager_shared.h"
 
 namespace process_viewer {
 

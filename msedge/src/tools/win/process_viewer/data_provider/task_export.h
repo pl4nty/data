@@ -6,9 +6,11 @@
 #define TOOLS_WIN_PROCESS_VIEWER_DATA_PROVIDER_TASK_EXPORT_H_
 
 #include <windows.h>
+
 #include <memory>
 #include <vector>
 
+#include "base/strings/utf_string_conversions.h"
 #include "tools/win/process_viewer/data_provider/ie_task_provider.h"
 #include "tools/win/process_viewer/data_provider/task_manager_client.h"
 
@@ -19,8 +21,28 @@ struct EdgeTaskExport {
 };
 
 struct EdgeTaskExportSnapshot {
-  int task_count;
+  size_t task_count;
   EdgeTaskExport* tasks;
+
+  EdgeTaskExportSnapshot(
+      const std::vector<external_task_manager::mojom::Task>& tasks) {
+    task_count = tasks.size();
+    this->tasks = new EdgeTaskExport[tasks.size()];
+    for (size_t i = 0; i < tasks.size(); i++) {
+      this->tasks[i].task_id = tasks[i].task_id;
+      this->tasks[i].process_id = tasks[i].process_id;
+      this->tasks[i].title = new WCHAR[tasks[i].title.length() + 1];
+      wcscpy(this->tasks[i].title,
+             base::UTF16ToWide(tasks[i].title.c_str()).c_str());
+    }
+  }
+
+  ~EdgeTaskExportSnapshot() {
+    for (size_t i = 0; i < task_count; i++) {
+      delete[] tasks[i].title;
+    }
+    delete[] tasks;
+  }
 };
 
 struct IETaskExport {
@@ -32,12 +54,24 @@ struct IETaskExport {
 struct IETaskExportSnapshot {
   int task_count;
   IETaskExport* tasks;
+
+  IETaskExportSnapshot(const std::vector<process_viewer::IETask>& tasks) {
+    this->task_count = tasks.size();
+    this->tasks = new IETaskExport[tasks.size()];
+    for (size_t i = 0; i < tasks.size(); i++) {
+      this->tasks[i].process_id = tasks[i].process_id;
+      this->tasks[i].thread_id = tasks[i].thread_id;
+      this->tasks[i].title = new WCHAR[tasks[i].title.length() + 1];
+      wcscpy(this->tasks[i].title, tasks[i].title.c_str());
+    }
+  }
+
+  ~IETaskExportSnapshot() {
+    for (int i = 0; i < task_count; i++) {
+      delete[] tasks[i].title;
+    }
+    delete[] tasks;
+  }
 };
-
-std::unique_ptr<EdgeTaskExportSnapshot> CreateEdgeTaskSnapshot(
-    const std::vector<process_viewer::Task>& tasks);
-
-std::unique_ptr<IETaskExportSnapshot> CreateIETaskSnapshot(
-    const std::vector<process_viewer::IETask>& tasks);
 
 #endif  // TOOLS_WIN_PROCESS_VIEWER_DATA_PROVIDER_TASK_EXPORT_H_
