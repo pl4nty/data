@@ -419,6 +419,12 @@ BASE_DECLARE_FEATURE_TRIGGER(kCIActiveUserOnFirstBrowserAdded);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeContinuousThemesImportWithDatatypeSelection);
 
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEnableCIFromAnaheim);
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+bool IsCIFromAnaheimEnabled();
+
 }  // namespace edge_continuous_import
 }  // namespace features
 
