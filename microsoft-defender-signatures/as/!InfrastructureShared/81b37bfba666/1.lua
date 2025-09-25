@@ -35,12 +35,19 @@ do
 
       -- DECOMPILER ERROR at PC89: Overwrote pending register: R1 in 'AssignReg'
 
+      -- DECOMPILER ERROR at PC92: Overwrote pending register: R4 in 'AssignReg'
+
       if l_0_6 then
+        l_0_6(l_0_7, l_0_8, bm.RelatedStringBMReport)
+        -- DECOMPILER ERROR at PC97: Overwrote pending register: R1 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC98: Overwrote pending register: R1 in 'AssignReg'
+
         return l_0_6
       end
-      -- DECOMPILER ERROR at PC91: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC100: Overwrote pending register: R1 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC92: Overwrote pending register: R1 in 'AssignReg'
+      -- DECOMPILER ERROR at PC101: Overwrote pending register: R1 in 'AssignReg'
 
       do return l_0_6 end
       -- WARNING: undefined locals caused missing assignments!
