@@ -304,6 +304,7 @@
         "FlightingV2": {
             "EnrollDeviceActionAP": true,
             "EnrollDeviceActionNonAP": true,
+            "FetchTrustedTpmCertificates": true,
             "RecoveryUserId": true
         }
     },
