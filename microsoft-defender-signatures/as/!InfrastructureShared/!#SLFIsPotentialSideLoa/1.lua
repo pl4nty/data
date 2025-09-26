@@ -156,6 +156,7 @@ l_0_11["iumbase.dll"] = mp.INFECTED
 l_0_11["avcodec-61.dll"] = mp.INFECTED
 l_0_11["heif.dll"] = mp.INFECTED
 l_0_11["libde265.dll"] = mp.INFECTED
+l_0_11["xmllite.dll"] = mp.INFECTED
 l_0_11["sqlite3.dll"] = mp.LOWFI
 l_0_11["ffmpeg.dll"] = mp.LOWFI
 l_0_11["libvlc.dll"] = mp.LOWFI

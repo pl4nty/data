@@ -4,11 +4,15 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
--- DECOMPILER ERROR at PC2: No list found for R0 , SetList fails
+-- DECOMPILER ERROR at PC4: No list found for R0 , SetList fails
 
--- DECOMPILER ERROR at PC3: Overwrote pending register: R1 in 'AssignReg'
+-- DECOMPILER ERROR at PC5: Overwrote pending register: R1 in 'AssignReg'
 
-if ("psexesvc.exe")("cmdhstr", l_0_0) and IsDeviceHVA() and ((ExtractDeviceProperties()).DeviceRoles).DomainController ~= nil then
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC7: Overwrote pending register: R3 in 'AssignReg'
+
+if ("psexesvc.exe")("wsmprovhost.exe", "wmiprvse.exe") and IsDeviceHVA() and ((ExtractDeviceProperties()).DeviceRoles).DomainController ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
