@@ -288,7 +288,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_9 = "rtsuer"
       l_0_11 = "rtsuer_asr_driver"
       l_0_12 = 0
-      l_0_13 = 0
+      l_0_13 = 2.8147514776274e+15
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = "seasunprotect"
       l_0_11 = "seasunprotect_asr_driver"
@@ -323,7 +323,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_9 = "tsdrvx64"
       l_0_11 = "tsdrvx64_asr_driver"
       l_0_12 = 0
-      l_0_13 = 0
+      l_0_13 = 4295032838
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = "psmounterex"
       l_0_11 = "psmounterex_asr_driver"
@@ -337,8 +337,8 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = "adrmdrvsys"
       l_0_11 = "adlinkrsmgr_asr_driver"
-      l_0_12 = 0
-      l_0_13 = 0
+      l_0_12 = 2.8149647206192e+14
+      l_0_13 = 2.815265688801e+14
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = "ltmdmnt"
       l_0_11 = "ltmdmnt_asr_driver"
