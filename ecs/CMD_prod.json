@@ -864,6 +864,7 @@
         "SupportSearchByConnectedUser": false,
         "SwitchToKronoxPublicApi": true,
         "SwitchUnsetDefaultCloudPCToHardDelete": true,
+        "UFP_ENABLE_AVD_REDIRECT": true,
         "UFP_ENABLE_B2B": true,
         "UFP_NEW_ASSETS": true,
         "UFP_UNIFIED_TELEMETRY": true,
@@ -880,6 +881,7 @@
             }
         },
         "Windows_Download_IWP": true,
+        "WorkspaceEnableOAIValidation": false,
         "enableAlertingMemEntryPoint": true,
         "enableCloudPcActionStatusMenuItem": true,
         "enableCloudPcActionStatusUX": true,
