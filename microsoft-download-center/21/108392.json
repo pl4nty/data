@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2509.25",
+    "downloadDescription": "PIX 2509.25",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PIX-2509.25-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/6af3c4fa-0513-4e0e-a781-1126df3211a1/PIX-2509.25-Installer-x64.exe",
+            "size": "204261464",
+            "version": "2509.25",
+            "datePublished": "9/25/2025 8:01:50 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2509.25-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/6af3c4fa-0513-4e0e-a781-1126df3211a1/PIX-2509.25-Installer-ARM64.exe",
+            "size": "171351976",
+            "version": "2509.25",
+            "datePublished": "9/25/2025 8:01:50 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2509.25",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2509.25",
+    "detailsSection_file_name": [
+        "PIX-2509.25-Installer-x64.exe",
+        "PIX-2509.25-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "194.8 MB",
+        "163.4 MB"
+    ],
+    "detailsSection_file_date": "9/25/2025",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and run the PIX installer",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108392",
+    "downloadPreload": true
+}
