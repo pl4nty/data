@@ -327,7 +327,6 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
-            "PRSv3-ForceV1": true,
             "PRSv3-Phase1": true,
             "PRSv3-Phase2": true
         }
@@ -361,6 +360,11 @@
             "SetEmsPolicyEncryptedScript": true,
             "UninstallAgentOnZombieMacs": true,
             "isSqlAggAadAuthEnabled": true
+        }
+    },
+    "SVC_Updates": {
+        "FlightingV2": {
+            "MoveToApLs": true
         }
     },
     "Segmentation": {
