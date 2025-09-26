@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10716479,
+    "size": 10716616,
     "file_count": 167
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32305846,
+    "size": 32316319,
     "file_count": 3957
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "name": "catapult",
-    "size": 10214044,
+    "size": 10214066,
     "file_count": 767
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6212088,
+    "size": 6206001,
     "file_count": 939
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "name": "libusb",
-    "size": 833350,
+    "size": 833380,
     "file_count": 61
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3869534,
+    "size": 3874582,
     "file_count": 579
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1369750,
+    "size": 1373320,
     "file_count": 23
   },
   {
@@ -721,13 +721,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2439366,
+    "size": 2451187,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6322997,
-    "file_count": 171
+    "size": 6366959,
+    "file_count": 172
   },
   {
     "name": "vulkan_memory_allocator",
