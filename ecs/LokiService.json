@@ -1381,12 +1381,12 @@
         "UsePrebindTenantCache": false
     },
     "M365CompanionSystemTray": {
-        "HostAppRing": "Dogfood",
-        "HostAppVersion": "1.20250916.7.0",
-        "M365CompanionSystemTrayDFVersion": "1.20250916.7.0",
+        "HostAppRing": "Prod",
+        "HostAppVersion": "1.20250926.5.0",
+        "M365CompanionSystemTrayDFVersion": "1.20250926.5.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
-        "M365CompanionSystemTrayMsitVersion": "1.20250916.7.0",
-        "M365CompanionSystemTrayProdVersion": "1.20250916.7.0",
+        "M365CompanionSystemTrayMsitVersion": "1.20250926.5.0",
+        "M365CompanionSystemTrayProdVersion": "1.20250926.5.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1632,7 +1632,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250923.6.0",
+        "PeopleInTaskbarDFVersion": "1.20250925.5.1",
         "PeopleInTaskbarMsitVersion": "1.20250906.6.0",
         "PeopleInTaskbarProdVersion": "1.20250906.6.0",
         "campaignSchedules": {
