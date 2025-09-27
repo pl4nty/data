@@ -2088,16 +2088,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_MeetingEndedSummaryNotification": [
-                {
-                    "Flight": "TM.MeetingEndedSummaryNotification",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "TM.WriteContentBelowDisclaimer",
-                    "IsEnabled": true
-                }
-            ],
             "WebSearch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableWebSearchSkillForPA",
