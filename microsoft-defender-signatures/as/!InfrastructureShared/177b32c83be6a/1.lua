@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\14eb3d996dd23\1.luac 
+-- Command line: lua\!InfrastructureShared\177b32c83be6a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -18,7 +18,7 @@ end
 if l_0_2:find("/tmp/docker-desktop-privileged", 1, true) or l_0_2:find("therealtomrose/citrix-workspace-killer/master/stop_citrix.sh", 1, true) or l_0_2:find("githubusercontent.com/docker/scout-cli/main/install", 1, true) or l_0_2:find("https://cdn.appcatalog.cloud/install_app_catalog.zsh", 1, true) or l_0_2:find("raw.githubusercontent.com/johnduprey/CWCAutomateDiagnostics/master/AutomateDiagnostics", 1, true) or l_0_2:find("/Volumes/Volume/scripts/.*/download.sh$", 1, false) or l_0_2:find("raw.githubusercontent.com/CLA-Tech/ARD/master/enableARD.sh", 1, true) or l_0_2:find("/opt/homebrew/bin/openssl%s+pkeyutl.*%.ssh/auth/client_private%.pem", 1, false) then
   return mp.CLEAN
 end
-if l_0_2:find("echo.*%|%s+base64%s+-d", 1, false) or l_0_2:find("echo.*%|%s+base64%s+--decode", 1, false) or l_0_2:find("echo.*%|%s+base64%s+-D", 1, false) or l_0_2:find("echo.*%|%s+bash", 1, false) or l_0_2:find("echo.*%|%s+sh", 1, false) or l_0_2:find("echo.*%|%s+zsh", 1, false) or l_0_2:find("curl.*%|%s+bash", 1, false) or l_0_2:find("curl.*%|%s+sh", 1, false) or l_0_2:find("curl.*%|%s+zsh", 1, false) or l_0_2:find("tail%s+-c.*%|%s+funzip", 1, false) or l_0_2:find("echo.*%|%s+xxd", 1, false) then
+if l_0_2:find("echo.*%|%s+base64%s+-d", 1, false) or l_0_2:find("echo.*%|%s+base64%s+--decode", 1, false) or l_0_2:find("echo.*%|%s+base64%s+-D", 1, false) or l_0_2:find("echo.*%|%s+bash", 1, false) or l_0_2:find("echo.*%|%s+sh", 1, false) or l_0_2:find("echo.*%|%s+zsh", 1, false) or l_0_2:find("curl.*%|%s+bash", 1, false) or l_0_2:find("curl.*%|%s+sh", 1, false) or l_0_2:find("curl.*%|%s+zsh", 1, false) or l_0_2:find("curl.*%|%s+osascript", 1, false) or l_0_2:find("tail%s+-c.*%|%s+funzip", 1, false) or l_0_2:find("echo.*%|%s+xxd", 1, false) then
   return mp.INFECTED
 end
 return mp.CLEAN
