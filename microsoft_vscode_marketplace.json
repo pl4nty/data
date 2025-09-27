@@ -1605,6 +1605,13 @@
         "open-component-model.vscode-ocm-tools": true,
         "otis11.smiledb": true,
         "outrageouslyfrench.composer-boop": true,
+        "pallandos.quarkdown": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Quarkdown (Official)",
+                "id": "quarkdown.quarkdown-vscode"
+            }
+        },
         "pcanella.marko": {
             "disallowInstall": true,
             "extension": {
