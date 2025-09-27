@@ -83,13 +83,5 @@
     FileList               = @()
 
     # Private data to pass to the module specified in ModuleToProcess
-    PrivateData = @{
-    PSData = @{
-        IconUri = 'https://raw.githubusercontent.com/SharePoint/sp-dev-docs/master/docs/images/sp-logo.png'
-        Tags = @('Office365', 'Microsoft365', 'SharePoint', 'SharePointOnline', 'SPO', 'Microsoft')
-        LicenseUri = 'https://raw.githubusercontent.com/Azure/azure-powershell/preview/LICENSE.txt'
-        ProjectUri = 'https://learn.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell'
-    }
+    PrivateData = ''
 }
-}
-
