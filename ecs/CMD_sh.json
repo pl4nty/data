@@ -855,6 +855,7 @@
         "EnableW365DeviceSyncGroup": true,
         "EnableW365DeviceSyncNotification": true,
         "EnableW365GnTV1": true,
+        "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableW365Premium": true,
         "EnableWDSRegistration": false,
         "EnableWIN1124H2_250113": true,
