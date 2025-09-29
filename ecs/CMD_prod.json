@@ -587,8 +587,6 @@
         "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbSsoForFleet": true,
         "EnableW365DeviceSync": true,
-        "EnableW365DeviceSyncGroup": true,
-        "EnableW365DeviceSyncNotification": false,
         "EnableW365GnTV1": true,
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableWDSRegistration": true,
