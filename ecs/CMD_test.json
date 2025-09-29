@@ -926,6 +926,7 @@
         "EnableSyncInterestedUserFilter": true,
         "EnableSyncPowerStatus": true,
         "EnableTenantCleanUp": true,
+        "EnableTenantESUServicePlanSync": true,
         "EnableTenantOnboardValidateTenantActualStatus": true,
         "EnableTenantOutOfServiceDeviceGA": true,
         "EnableTenantOutOfServiceDeviceRecentConnectionError": true,
