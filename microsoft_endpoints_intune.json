@@ -913,26 +913,6 @@
     {
         "category": "Default",
         "expressRoute": false,
-        "id": 178,
-        "required": true,
-        "serviceArea": "MEM",
-        "serviceAreaDisplayName": "Microsoft Endpoint Manager",
-        "tcpPorts": "80, 443, 5223",
-        "urls": [
-            "*.itunes.apple.com",
-            "*.mzstatic.com",
-            "*.phobos.apple.com",
-            "5-courier.push.apple.com",
-            "ax.itunes.apple.com.edgesuite.net",
-            "itunes.apple.com",
-            "ocsp.apple.com",
-            "phobos.apple.com",
-            "phobos.itunes-apple.com.akadns.net"
-        ]
-    },
-    {
-        "category": "Default",
-        "expressRoute": false,
         "id": 179,
         "required": true,
         "serviceArea": "MEM",
