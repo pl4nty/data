@@ -328,7 +328,8 @@
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
             "PRSv3-Phase1": true,
-            "PRSv3-Phase2": true
+            "PRSv3-Phase2": true,
+            "PRSv3-Phase3": true
         }
     },
     "SVC_RACerts": {
@@ -409,7 +410,8 @@
             "EnableAllowOOBEUpdatesUX": true,
             "EnableWin32CatalogAppsForDpp": true,
             "EnableWin32CatalogAppsForEsp": true,
-            "EnableWindowsRestore": true
+            "EnableWindowsRestore": true,
+            "TandCSyncButtonEnableFlight": true
         }
     },
     "ios_mam_tunnel_sdk": {

@@ -2088,6 +2088,22 @@
                     "IsEnabled": true
                 }
             ],
+            "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
+                {
+                    "Flight": "TM.topicRelevancePromptV4",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_MeetingEndedSummaryNotification": [
+                {
+                    "Flight": "TM.MeetingEndedSummaryNotification",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.WriteContentBelowDisclaimer",
+                    "IsEnabled": true
+                }
+            ],
             "WebSearch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableWebSearchSkillForPA",
