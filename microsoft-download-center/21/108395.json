@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy Settings Reference Spreadsheet for Windows 11 2025 Update (25H2)",
+    "downloadDescription": "This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with Windows 11 2025 Update (25H2). You can configure these policy settings when you edit Group Policy Objects.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows11PolicySettings-25H2.xlsx",
+            "url": "https://download.microsoft.com/download/5b63bd47-8c46-4e43-a570-c766f4b08287/Windows11PolicySettings-25H2.xlsx",
+            "size": "939008",
+            "version": "1",
+            "datePublished": "9/29/2025 12:07:19 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use the filtering capabilities that are included in this spreadsheet to view a specific subset of data, based on one value or a combination of values that are available in one or more of the columns. In addition, you can click Custom in the drop-down list of any of the column headings to add additional filtering criteria within that column.\n<br/>To view a specific subset of data, click the drop-down arrow in the column heading of cells that contain the value or combination of values on which you want to filter, and then click the desired value in the drop-down list.\n<br/>\n<ul>\n<li>en-US English - United States</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows11PolicySettings-25H2.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "917.0 KB"
+    ],
+    "detailsSection_file_date": "9/29/2025",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li>Microsoft Excel or Excel Viewer</li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista Enterprise"
+    ],
+    "installInstructionSection": "To download the reference spreadsheet: <br/>\n<ol><br/>\nClick the <b>Download</b> button.<br/>\n<br/></ol>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "group Policy Settings Reference Spreadsheet for Windows 11 2024 Update (24H2) V2",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=108294"
+        },
+        {
+            "title": "administrative Templates (admx) for Windows 11 2025 Update (25H2)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=108394"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108395",
+    "downloadPreload": true
+}
