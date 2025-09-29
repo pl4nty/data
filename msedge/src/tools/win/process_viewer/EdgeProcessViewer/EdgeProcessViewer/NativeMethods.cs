@@ -11,6 +11,41 @@ namespace EdgeProcessViewer {
 
     #region process_viewer_data.dll
 
+    // Matches the AuxiliaryType in edge_task_type.h
+    public enum AuxiliaryType {
+      kUnknown = 0,
+
+      // This 1000 number is matching with windows task manager value.
+      kBrowser = 1000,
+      kExtension,
+      kInPrivateExtension,
+      kApp,
+      kInPrivateApp,
+      kTab,
+      kInPrivateTab,
+      kGuestTab,
+      kBackgroundApp,
+      kBackgroundPage,
+      kPlugin,
+      kPluginBroker,
+      kPrerender,
+      kSpareRenderer,
+      kRenderer,
+      kDedicatedWorker,
+      kSharedWorker,
+      kServiceWorker,
+      kUnknownPlugin,
+      kUtility,
+      kNativeClientModule,
+      kGPUProcess,
+      kPrintProcess,
+      kSubframe,
+      kInPrivateSubframe,
+      kPortal,
+      kInPrivatePortal,
+      kTopChrome,
+    }
+
     public enum ProcessType {
       Unknown = 0,
       Browser,
@@ -93,6 +128,7 @@ namespace EdgeProcessViewer {
       public long task_id;
       public int process_id;
       public IntPtr title;
+      public AuxiliaryType type;
     }
 
     [StructLayout(LayoutKind.Sequential)]

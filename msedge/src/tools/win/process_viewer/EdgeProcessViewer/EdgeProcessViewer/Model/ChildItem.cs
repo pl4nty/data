@@ -12,17 +12,21 @@ namespace EdgeProcessViewer {
       ItemId = task.task_id;
       ProcessId = task.process_id;
       Title = Marshal.PtrToStringUni(task.title);
+      AuxiliaryType = task.type;
     }
 
     public ChildItem(NativeMethods.IETask task) {
       ItemId = task.thread_id;
       ProcessId = task.process_id;
       Title = Marshal.PtrToStringUni(task.title);
+      AuxiliaryType = NativeMethods.AuxiliaryType.kUnknown;
     }
 
     public long ItemId { get; set; }
     public int ProcessId { get; set; }
     public string Title { get; set; }
+
+    public NativeMethods.AuxiliaryType AuxiliaryType { get; set; }
 
     public static List<ChildItem> GetChildItemsFromEdgeTaskSnapshot(IntPtr snapshotPtr) {
       var items = new List<ChildItem>();

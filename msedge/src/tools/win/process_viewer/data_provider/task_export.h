@@ -18,6 +18,7 @@ struct EdgeTaskExport {
   int64_t task_id;
   ULONG process_id;
   WCHAR* title;
+  ULONG auxiliary_type;
 };
 
 struct EdgeTaskExportSnapshot {
@@ -34,6 +35,7 @@ struct EdgeTaskExportSnapshot {
       this->tasks[i].title = new WCHAR[tasks[i].title.length() + 1];
       wcscpy(this->tasks[i].title,
              base::UTF16ToWide(tasks[i].title.c_str()).c_str());
+      this->tasks[i].auxiliary_type = static_cast<ULONG>(tasks[i].type);
     }
   }
 

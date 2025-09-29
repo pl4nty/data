@@ -21,6 +21,15 @@ import "components/sync/protocol/unique_position.proto";
 // limitations from the sync service on the size of an individual sync entity.
 // This is derived from the saved_tab_group_specifics.proto
 message Workspace {
+  // Keep in sync with ui::mojom::BrowserColorVariant.
+  enum ColorVariant {
+    SYSTEM = 1;
+    TONAL_SPOT = 2;
+    NEUTRAL = 3;
+    VIBRANT = 4;
+    EXPRESSIVE = 5;
+  }
+
   // The displayed title of the workspace.
   optional string title = 1;
 
@@ -30,6 +39,9 @@ message Workspace {
   // Timestamp for when the window was last visited using windows epoch
   // microseconds.
   optional int64 visit_time_windows_epoch_micros = 3;
+
+  // The intensity of the workspace color when adaptive themes are used.
+  optional ColorVariant color_variant = 4;
 }
 
 // Sync protocol datatype extension for saved tabs. WorkspaceTabs

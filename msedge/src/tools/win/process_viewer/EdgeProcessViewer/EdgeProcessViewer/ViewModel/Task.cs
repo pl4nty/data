@@ -45,6 +45,7 @@ namespace EdgeProcessViewer {
       treeDepth_ = treeDepth;
       parent_ = parent;
       childItem_ = childItem;
+      MaybeUpdateParentTaskType();
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -157,6 +158,15 @@ namespace EdgeProcessViewer {
       private set { SetProperty(ref childItem_, value); }
     }
 
+    public NativeMethods.AuxiliaryType AuxiliaryType {
+      get {
+        if (childItem_ == null) {
+          return NativeMethods.AuxiliaryType.kUnknown;
+        }
+        return childItem_.AuxiliaryType; 
+      }
+    }
+
     #endregion Hidden properties
 
     public void CopyFrom(Task task) {
@@ -212,6 +222,20 @@ namespace EdgeProcessViewer {
       if (!Object.Equals(fullCommandLine_, value)) {
         fullCommandLine_ = value;
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FullCommandLine"));
+      }
+    }
+
+
+    private void MaybeUpdateParentTaskType() {
+      if (childItem_ != null) {
+        switch (childItem_.AuxiliaryType) {
+          case NativeMethods.AuxiliaryType.kSpareRenderer:
+            parent_.TaskType = " * Spare * " + parent_.TaskType;
+            break;
+          case NativeMethods.AuxiliaryType.kTopChrome:
+            parent_.TaskType = " * Top Chrome * " + parent_.TaskType;
+            break;
+        }
       }
     }
 
