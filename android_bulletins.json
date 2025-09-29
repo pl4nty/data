@@ -76927,7 +76927,44 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2022-02-01",
         "Published": "February 7, 2022",
-        "Patch level": "2022-02-05"
+        "Patch level": "2022-02-05",
+        "CVE": "CVE-2021-39687",
+        "References": "A-204421047*",
+        "Type": "ID",
+        "Severity": "High",
+        "Component": "Pixel",
+        "Subcomponent": "Camera"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2022-02-01",
+        "Published": "February 7, 2022",
+        "Patch level": "2022-02-05",
+        "CVE": "CVE-2021-39688",
+        "References": "A-206039140*",
+        "Type": "ID",
+        "Severity": "High",
+        "Component": "Pixel",
+        "Subcomponent": "google_battery"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2022-02-01",
+        "Published": "February 7, 2022",
+        "Patch level": "2022-02-05",
+        "CVE": "CVE-2021-30324",
+        "References": "A-195752651QC-CR#2919213",
+        "Severity": "Moderate",
+        "Component": "Qualcomm components",
+        "Subcomponent": "Kernel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2022-02-01",
+        "Published": "February 7, 2022",
+        "Patch level": "2022-02-05",
+        "CVE": "CVE-2021-30325",
+        "References": "A-195752523QC-CR#2922244",
+        "Severity": "Moderate",
+        "Component": "Qualcomm components",
+        "Subcomponent": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2022-01-01",
