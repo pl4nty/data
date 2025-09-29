@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32324431,
+    "size": 32322693,
     "file_count": 3957
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994673,
+    "size": 17989490,
     "file_count": 1009
   },
   {
@@ -251,8 +251,8 @@
   },
   {
     "name": "glslang",
-    "size": 43202720,
-    "file_count": 3190
+    "size": 43195149,
+    "file_count": 3189
   },
   {
     "name": "googletest",
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6206001,
+    "size": 6206104,
     "file_count": 939
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 28918,
+    "size": 29519,
     "file_count": 15
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3875306,
+    "size": 3876085,
     "file_count": 579
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3467504,
+    "size": 3468000,
     "file_count": 1180
   },
   {
@@ -661,7 +661,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 200059,
+    "size": 200102,
     "file_count": 11
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6366680,
+    "size": 6373349,
     "file_count": 172
   },
   {
@@ -746,8 +746,8 @@
   },
   {
     "name": "webrtc",
-    "size": 103107,
-    "file_count": 50
+    "size": 103662,
+    "file_count": 52
   },
   {
     "name": "webrtc_overrides",
@@ -756,7 +756,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29364432,
+    "size": 29367477,
     "file_count": 626
   },
   {

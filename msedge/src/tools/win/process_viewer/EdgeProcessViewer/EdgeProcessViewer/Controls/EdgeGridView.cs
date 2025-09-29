@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace EdgeProcessViewer.Controls {
   // Do not change or reorder these enum values because they get serialized to the settings XML.
@@ -115,6 +116,31 @@ namespace EdgeProcessViewer.Controls {
       Properties.Settings.Default.EdgeGridViewColumns = GetCurrentColumnSettings();
     }
 
+    // Set background color based on tree depth and Auxiliary Type
+    Color GetColorForTask(Task task) {
+      if (!SystemInformation.HighContrast) {
+        switch (task.TreeDepth) {
+          case 0:
+            return Color.Lavender;
+          case 1:
+            return Color.MistyRose;
+          case 2:
+            switch (task.AuxiliaryType) {
+              case NativeMethods.AuxiliaryType.kTopChrome:
+                return Color.Honeydew;
+              case NativeMethods.AuxiliaryType.kSpareRenderer:
+                return Color.LightCyan;
+              default:
+                return Color.OldLace;
+            }
+          default:
+            return DefaultBackColor;
+        }
+      } else {
+         return DefaultBackColor;
+      }
+    }
+
     private void OnCellFormatting(object sender, DataGridViewCellFormattingEventArgs e) {
       Task task = (Task)Rows[e.RowIndex].DataBoundItem;
 
@@ -123,20 +149,7 @@ namespace EdgeProcessViewer.Controls {
       padding.Left = 4 + (task.TreeDepth * 8);
       e.CellStyle.Padding = padding;
 
-      // Set background color based on tree depth.
-      switch (task.TreeDepth) {
-        case 0:
-          e.CellStyle.BackColor = Color.Lavender;
-          break;
-        case 1:
-          e.CellStyle.BackColor = Color.MistyRose;
-          break;
-        case 2:
-          e.CellStyle.BackColor = Color.OldLace;
-          break;
-        default:
-          break;
-      }
+      e.CellStyle.BackColor = GetColorForTask(task);
 
       // GridDataView doesn't support "Nested" property values, so some properties need to be
       // manually queried
