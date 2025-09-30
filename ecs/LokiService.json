@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250927.4.0",
+        "CalendarCompanionDFVersion": "1.20250928.6.0",
         "CalendarCompanionMsitVersion": "1.20250918.2.0",
         "CalendarCompanionProdVersion": "1.20250905.7.0",
         "CompanionRing": "Prod",
@@ -401,7 +401,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20250915.3.0",
+        "LpcVersion": "1.20250921.1.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1381,11 +1381,11 @@
     },
     "M365CompanionSystemTray": {
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20250926.5.0",
-        "M365CompanionSystemTrayDFVersion": "1.20250926.5.0",
+        "HostAppVersion": "1.20250930.2.0",
+        "M365CompanionSystemTrayDFVersion": "1.20250930.2.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
-        "M365CompanionSystemTrayMsitVersion": "1.20250926.5.0",
-        "M365CompanionSystemTrayProdVersion": "1.20250926.5.0",
+        "M365CompanionSystemTrayMsitVersion": "1.20250930.2.0",
+        "M365CompanionSystemTrayProdVersion": "1.20250930.2.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1631,7 +1631,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20250927.4.0",
+        "PeopleInTaskbarDFVersion": "1.20250928.6.0",
         "PeopleInTaskbarMsitVersion": "1.20250906.6.0",
         "PeopleInTaskbarProdVersion": "1.20250906.6.0",
         "campaignSchedules": {
