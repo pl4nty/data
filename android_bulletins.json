@@ -553,17 +553,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-09-01",
         "Published": "September 2, 2025",
         "Patch level": "2025-09-01",
-        "CVE": "CVE-2025-48544",
-        "References": "A-415783046",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-09-01",
-        "Published": "September 2, 2025",
-        "Patch level": "2025-09-01",
         "CVE": "CVE-2025-48547",
         "References": "A-419105158",
         "Type": "EoP",
