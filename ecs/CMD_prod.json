@@ -697,6 +697,7 @@
         "IsEnabledTriggerNextGen": true,
         "IsEndpointConfigrationEnabled": true,
         "IsNewDGSAPIEnabled": true,
+        "IsReadyToExpandDiagEHNS": true,
         "LimitW365AADSyncTimerInterval": true,
         "MAC_Refresh_Token_IWP": true,
         "MFA_IWP": true,
