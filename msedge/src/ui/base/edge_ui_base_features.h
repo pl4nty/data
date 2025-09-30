@@ -137,10 +137,6 @@ BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchForImageShownInContextMenu);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchOpened);
 
-// Trigger flag for Edge App Layer.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kAppLayerForCentralContainerTrigger);
-
 // Trigger fired when the pref kPhoenixRoundedFrameEnabled is disabled from LAF
 // toggle on settings page.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
