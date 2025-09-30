@@ -163,6 +163,7 @@
                 "UX_DeviceConfig",
                 "UX_DeviceUsers",
                 "UX_EPM",
+                "UX_Explorer",
                 "UX_GnT",
                 "UX_MAM",
                 "UX_MultiAdminApproval",
@@ -265,6 +266,7 @@
     },
     "SVC_DeviceCheckin": {
         "FlightingV2": {
+            "DeferMMPCEnrollmentDuringAPv2Provisioning": true,
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
             "EnableAllowOOBEUpdates": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
