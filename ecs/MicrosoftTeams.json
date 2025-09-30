@@ -1782,10 +1782,7 @@
         "TelemetryRegion": "US"
     },
     "TeamsCopilotAggregator": {
-        "ProjectAgentOptions.EnablePAAutoDeletionfromSASilentMode": false,
-        "TeamsChatAgentAL": {
-            "DFEndpoint": "https://msit.augloop.svc.cloud.microsoft"
-        }
+        "ProjectAgentOptions.EnablePAAutoDeletionfromSASilentMode": false
     },
     "TeamsCopilotAggregator_UserCtx": {
         "CustomerServiceCopilotRolloutFlags": {
@@ -2085,12 +2082,6 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
-                    "IsEnabled": true
-                }
-            ],
-            "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
-                {
-                    "Flight": "TM.topicRelevancePromptV4",
                     "IsEnabled": true
                 }
             ],
@@ -2420,7 +2411,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2025091602"
+        "buildVersion": "2025092201"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
