@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 11 Installation Assistant 25H2",
+    "downloadDescription": "Windows 11 Installation Assistant 25H2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows11InstallationAssistant.exe",
+            "url": "https://download.microsoft.com/download/db8267b0-3e86-4254-82c7-a127878a9378/Windows11InstallationAssistant.exe",
+            "size": "4169184",
+            "version": "25H2",
+            "datePublished": "9/30/2025 2:35:17 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows 11 Installation Assistant 25H2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "25H2",
+    "detailsSection_file_name": [
+        "Windows11InstallationAssistant.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "9/30/2025",
+    "systemRequirementsSection": "win10, win 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Not applicable",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108398",
+    "downloadPreload": true
+}
