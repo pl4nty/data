@@ -1820,7 +1820,6 @@
             "EnableAttachAppIdToSendActivity": true,
             "EnableBizchatIntegration": true,
             "EnableGetAppIdFromTurnContext": true,
-            "EnableMessageSensitivityLabel": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableShowTypingMiddleware": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
@@ -2082,6 +2081,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
+                {
+                    "Flight": "TM.topicRelevancePromptV4",
                     "IsEnabled": true
                 }
             ],
