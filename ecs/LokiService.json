@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20250928.6.0",
+        "CalendarCompanionDFVersion": "1.20250930.2.0",
         "CalendarCompanionMsitVersion": "1.20250918.2.0",
         "CalendarCompanionProdVersion": "1.20250905.7.0",
         "CompanionRing": "Prod",
@@ -1621,7 +1621,7 @@
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250715.5.0",
-        "OrgExplorerVersion": "1.20250818.10.0",
+        "OrgExplorerVersion": "1.20250919.1.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
