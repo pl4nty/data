@@ -604,6 +604,11 @@ NET_EXPORT extern const base::FeatureParam<bool> kIpPrivacyEnableIppInDevTools;
 NET_EXPORT extern const base::FeatureParam<bool>
     kIpPrivacyEnableIppPanelInDevTools;
 
+// A comma-separated list of domains (eTLD+1) for which all requests will be
+// proxied.
+NET_EXPORT extern const base::FeatureParam<std::string>
+    kIpPrivacyUnconditionalProxyDomainList;
+
 // Enables more advanced handling of IP Protection proxy request failures.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableIpPrivacyProxyAdvancedFallbackLogic);
 
@@ -704,11 +709,6 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kDeviceBoundSessionsRefreshQuota);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
     kDeviceBoundSessionsCheckSubdomainRegistration);
-// This feature controls whether DBSC checks the .well-known for federated
-// sessions.
-NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
-    bool,
-    kDeviceBoundSessionsCheckFederatedRegistration);
 // This feature controls the database schema version for stored sessions.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kDeviceBoundSessionsSchemaVersion);
 // This feature will enable breaking changes to Device Bound Session
@@ -717,6 +717,14 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kDeviceBoundSessionsSchemaVersion);
 // Trial while still being able to get consistent metrics across Chrome
 // releases.
 NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionsOriginTrialFeedback);
+
+// This feature controls whether DBSC allows federated sessions.
+NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionsFederatedRegistration);
+// This param controls whether DBSC checks the .well-known for federated
+// sessions.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kDeviceBoundSessionsFederatedRegistrationCheckWellKnown);
 
 // Enables more checks when creating a SpdySession for proxy. These checks are
 // already applied to non-proxy SpdySession creations.
@@ -788,11 +796,6 @@ NET_EXPORT extern const base::FeatureParam<int>
 // prioritized.
 NET_EXPORT extern const base::FeatureParam<base::TimeDelta>
     kSimpleCachePrioritizedCachingPrioritizationPeriod;
-
-#if BUILDFLAG(USE_NSS_CERTS)
-// If enabled, use new implementation of client cert path building.
-NET_EXPORT BASE_DECLARE_FEATURE(kNewClientCertPathBuilding);
-#endif  // BUILDFLAG(USE_NSS_CERTS)
 
 // When enabled HSTS upgrades will only apply to top-level navigations.
 NET_EXPORT BASE_DECLARE_FEATURE(kHstsTopLevelNavigationsOnly);
@@ -904,6 +907,9 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
 // If enabled, we will extend the quic handshake timeout.
 NET_EXPORT BASE_DECLARE_FEATURE(kExtendQuicHandshakeTimeout);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TimeDelta, kQuicHandshakeTimeout);
+
+// If enabled, we will use a longer idle timeout.
+NET_EXPORT BASE_DECLARE_FEATURE(kQuicLongerIdleConnectionTimeout);
 
 // If enabled, we will use QUIC with a smaller MTU.
 NET_EXPORT BASE_DECLARE_FEATURE(kLowerQuicMaxPacketSize);

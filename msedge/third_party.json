@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2133091,
+    "size": 2135624,
     "file_count": 180
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10716524,
+    "size": 10714914,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14635052,
+    "size": 14635621,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32322579,
-    "file_count": 3957
+    "size": 32304809,
+    "file_count": 3955
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17989490,
+    "size": 17989500,
     "file_count": 1009
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "devscripts",
-    "size": 65289,
-    "file_count": 7
+    "size": 65458,
+    "file_count": 8
   },
   {
     "name": "devtools-frontend",
@@ -251,7 +251,7 @@
   },
   {
     "name": "glslang",
-    "size": 43195149,
+    "size": 43195248,
     "file_count": 3189
   },
   {
@@ -356,8 +356,8 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 45273,
-    "file_count": 39
+    "size": 46175,
+    "file_count": 40
   },
   {
     "name": "libbrlapi",
@@ -366,8 +366,8 @@
   },
   {
     "name": "libc++",
-    "size": 6206104,
-    "file_count": 939
+    "size": 6204805,
+    "file_count": 940
   },
   {
     "name": "libdisplay-info",
@@ -441,8 +441,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 216056583,
-    "file_count": 341
+    "size": 218528388,
+    "file_count": 346
   },
   {
     "name": "logilab",
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 29519,
+    "size": 29551,
     "file_count": 15
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3876085,
+    "size": 3876204,
     "file_count": 579
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3468000,
+    "size": 3467253,
     "file_count": 1180
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 105299,
+    "size": 108380,
     "file_count": 7
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6373349,
+    "size": 6379075,
     "file_count": 172
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "webrtc",
-    "size": 103662,
+    "size": 103682,
     "file_count": 52
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 380004,
+    "size": 381507,
     "file_count": 60
   },
   {
