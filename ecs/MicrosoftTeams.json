@@ -1207,6 +1207,7 @@
                 "EnableAadGroupIdNotSubstrateGroupIdInScThreadProps": true,
                 "EnableApiRateLimiter": true,
                 "EnableAppsAndTabsThrottlingWorkaround": true,
+                "EnableB2BCheckInSPOMembershipManager": false,
                 "EnableChannelMembershipHealing": true,
                 "EnableChannelMembershipHealingOnRoleChange": true,
                 "EnableChatServiceLockedResponseHandler": true,
