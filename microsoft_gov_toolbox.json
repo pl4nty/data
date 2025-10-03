@@ -1023,8 +1023,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.100.2",
+        "version": "2.0.1",
         "versions": [
+            "2.0.1",
             "1.100.2",
             "1.99.9",
             "1.98.0",
