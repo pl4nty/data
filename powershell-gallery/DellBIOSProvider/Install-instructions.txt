@@ -1,6 +1,6 @@
-1. DellCommandPowerShellProvider2.9.0_<BuildNumber>.zip  might be blocked on your system.
+1. DellCommandPowerShellProvider2.9.1_<BuildNumber>.zip  might be blocked on your system.
    Use the following PowerShell Cmdlet to unblock the file -  
-		Unblock-File .\DellCommandPowerShellProvider2.9.0_<BuildNumber>.zip 
+		Unblock-File .\DellCommandPowerShellProvider2.9.1_<BuildNumber>.zip 
 
 2. Extract the contents of the zip after it is unblocked.
  

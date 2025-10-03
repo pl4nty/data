@@ -20,10 +20,8 @@ DRIVES
 	DellSmbios:
 
 NEW FEATURES
-	DCPP 2.9.0 includes the following new features.
-	-- DSC Supoort for ARM64
-	-- Memory Crash fix
-	-- ActiveKbdColor attribute implemented
+	DCPP 2.9.1 includes the following new features.
+	-- updated digital signatures for binaries.
 
 RUNTIME REQUIREMENTS
 	1. PowerShell 3.0 or later
