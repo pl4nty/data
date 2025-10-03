@@ -2085,12 +2085,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
-                {
-                    "Flight": "TM.topicRelevancePromptV4",
-                    "IsEnabled": true
-                }
-            ],
             "TimeModeratorSkill_MeetingEndedSummaryNotification": [
                 {
                     "Flight": "TM.MeetingEndedSummaryNotification",
@@ -2133,19 +2127,15 @@
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "AS.enableMeetingAgendaSkillTranscriptRequire",
-                    "IsEnabled": false
-                },
-                {
-                    "Flight": "AS.enableAgendaRelevanceMetric",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "AS.enableAgendaConfidenceMetric",
-                    "IsEnabled": true
-                },
-                {
                     "Flight": "TM.agendaTrackingAgendaSkillIntegration",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaSkillLoopPermissionCheck",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaSkillLoopAgendaDetection",
                     "IsEnabled": true
                 }
             ]

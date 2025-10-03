@@ -160,13 +160,13 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/v2.0/hrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getfederationprovider</o:url>
     </o:service>
     <o:service o:name="GetIdentityProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getidp</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getidp</o:url>
     </o:service>
     <o:service o:name="ODCServicesCatalog">
       <o:url>https://odc.officeapps.live.com/odc/servicemanager/catalog</o:url>
@@ -2476,6 +2476,7 @@
     <o:token o:name="AMSIMaxStreamSizeForScanInBytes">16777216</o:token>
     <o:token o:name="AMSIContentTypesToScan">($^|embeddings)</o:token>
     <o:token o:name="ActivationFilterGUIDs">FFFF;b;{DF630910-1C1D-11D0-AE36-8C0F5E000000}|FFFF;t;{16D51579-A30B-4C8B-A276-0FF4DC41E755}|FFFF;t;{2CF0F912-098E-423C-BED5-15A7D0E52944}|FFFF;t;{6F54557F-7D6E-4fAD-8AA3-7907EB385A2F}|FFFF;t;{842A1268-6E6A-465C-868F-8BC445B9828F}|FFFF;t;{CC5BBEC3-DB4A-4BED-828D-08D78EE3E1ED}|FFFF;t;{CF646147-D47B-48DD-8476-C942DBEBE9A2}|FFFF;t;{EDFDC420-2CF5-4F72-ACBF-4BB0A235B445}|FFFF;t;{F414C260-6AC0-11CF-B6D1-00AA00BBBB58}|FFFF;t;{F414C262-6AC0-11CF-B6D1-00AA00BBBB58}|</o:token>
+    <o:token o:name="HlinkScopedActivationFilterBlockListGUIDs">FFFF;b;{3050F3DA-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F3B2-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F406-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F3BC-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{30590066-98B5-11CF-BB82-00AA00BDCE0B}|</o:token>
     <o:token o:name="OneNotePdfConversionKey">0e3c51927ec44a3db5dbf4a2fcc18d0f</o:token>
     <o:token o:name="OneNoteEnableWebConnectedExperiences">true</o:token>
     <o:token o:name="IsIntuneSupported">true</o:token>

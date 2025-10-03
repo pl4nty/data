@@ -5,11 +5,9 @@
             "skypeCallPercentage": 50
         },
         "featureFlags": {
-            "handleMediaOfferFromPushNotification": true,
             "pluginlessCallingChromeNoExtension": true,
             "pluginlessGroupVideoCallingChromeLinux": true,
             "pluginlessPSTNCalling": true,
-            "sendProgressFromCC": true,
             "translatorReceivingEnabled": false,
             "translatorSendingEnabled": false
         },
