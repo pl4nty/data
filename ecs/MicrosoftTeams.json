@@ -2085,6 +2085,12 @@
                     "IsEnabled": true
                 }
             ],
+            "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
+                {
+                    "Flight": "TM.topicRelevancePromptV4",
+                    "IsEnabled": true
+                }
+            ],
             "TimeModeratorSkill_MeetingEndedSummaryNotification": [
                 {
                     "Flight": "TM.MeetingEndedSummaryNotification",
