@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714914,
+    "size": 10714942,
     "file_count": 167
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32304809,
+    "size": 32306654,
     "file_count": 3955
   },
   {
@@ -251,8 +251,8 @@
   },
   {
     "name": "glslang",
-    "size": 43195248,
-    "file_count": 3189
+    "size": 42972172,
+    "file_count": 3140
   },
   {
     "name": "googletest",
@@ -356,7 +356,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 46175,
+    "size": 46315,
     "file_count": 40
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6204805,
+    "size": 6205102,
     "file_count": 940
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 283514,
+    "size": 283888,
     "file_count": 40
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18917867,
+    "size": 18941419,
     "file_count": 19
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 29551,
+    "size": 29636,
     "file_count": 15
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3876204,
+    "size": 3882603,
     "file_count": 579
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1373320,
+    "size": 1376988,
     "file_count": 23
   },
   {
@@ -721,12 +721,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2451187,
+    "size": 2457634,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6379075,
+    "size": 6383963,
     "file_count": 172
   },
   {
