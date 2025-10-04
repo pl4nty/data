@@ -22,10 +22,6 @@
     ],
     "cloud_graph_host_name": "graph.windows.net",
     "cloud_instance_name": "microsoftonline.com",
-    "code_challenge_methods_supported": [
-        "plain",
-        "S256"
-    ],
     "device_authorization_endpoint": "https://login.microsoftonline.com/common/oauth2/devicecode",
     "end_session_endpoint": "https://login.microsoftonline.com/common/oauth2/logout",
     "frontchannel_logout_supported": true,
