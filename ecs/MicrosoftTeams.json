@@ -635,7 +635,6 @@
                 "enableTeamSharedChannelsDeletion": true,
                 "enableTeamSharedChannelsRestoration": true,
                 "enableTenantToCloudMappingCache": true,
-                "enableTwtAutoProvisioning": true,
                 "enableUtiIatEnrichment": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
