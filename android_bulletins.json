@@ -1,5 +1,10 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-10-01",
+        "Published": "October 6, 2025",
+        "Patch level": "2025-10-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-09-01",
         "Published": "September 2, 2025",
         "Patch level": "2025-09-01",
@@ -90310,6 +90315,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-10-01",
+        "Published": "October 6, 2025",
+        "Patch level": "2025-10-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-09-01",
         "Published": "September 2, 2025",
         "Patch level": "2025-09-01"
@@ -91480,26 +91490,9 @@
         "Component": "System"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-09-01",
-        "Published": "September 2, 2025",
-        "Patch level": "2025-09-05",
-        "CVE": "CVE-2025-32322",
-        "References": "A-402142219",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13, 14",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-09-01",
-        "Published": "September 2, 2025",
-        "Patch level": "2025-09-05",
-        "CVE": "CVE-2025-48560",
-        "References": "A-419110583",
-        "Type": "ID",
-        "Severity": "High",
-        "AOSP versions": "14",
-        "Component": "System"
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-10-01",
+        "Published": "October 6, 2025",
+        "Patch level": "2025-10-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-08-01",
