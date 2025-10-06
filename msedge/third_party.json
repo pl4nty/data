@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10714942,
+    "size": 10716712,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14635923,
+    "size": 14636670,
     "file_count": 830
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32308001,
-    "file_count": 3955
+    "size": 32305000,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16272235,
+    "size": 16278562,
     "file_count": 252
   },
   {
@@ -331,8 +331,8 @@
   },
   {
     "name": "jetstream",
-    "size": 106393504,
-    "file_count": 56
+    "size": 109130929,
+    "file_count": 62
   },
   {
     "name": "jsoncpp",
@@ -366,7 +366,7 @@
   },
   {
     "name": "libc++",
-    "size": 6205280,
+    "size": 6208079,
     "file_count": 940
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18941419,
+    "size": 18938347,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3882603,
+    "size": 3888671,
     "file_count": 579
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "name": "quic_trace",
-    "size": 6777,
+    "size": 7997,
     "file_count": 4
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "name": "readability",
-    "size": 1572204,
+    "size": 1572500,
     "file_count": 15
   },
   {
@@ -721,12 +721,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2457634,
+    "size": 2458189,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6392126,
+    "size": 6391948,
     "file_count": 172
   },
   {
