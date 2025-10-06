@@ -893,6 +893,46 @@
                 Teams App identifier in MS Teams.
             </summary>
         </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.ArtifactType">
+            <summary>Represents the type of call, used to filter export requests.</summary>
+            <summary>Represents the type of artifact.</summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.ArtifactType.RecordingTranscript">
+            <summary>Recording/Transcript artifact type.</summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.ArtifactType.Notes">
+            <summary>Notes artifact type.</summary>
+        </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.ArtifactType.Whiteboard">
+            <summary>Whiteboard artifact type.</summary>
+        </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand">
+            <summary>Implements the Get-TeamsArtifacts cmdlet.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.OneDrive">
+            <summary>Gets or sets User.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.SharePoint">
+            <summary>Gets or sets Teams.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.ArtifactType">
+            <summary>Gets or sets ArtifactType.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.StartTime">
+            <summary>Gets or sets StartTime.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.EndTime">
+            <summary>Gets or sets EndTime.</summary>
+        </member>
+        <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.Usage">
+            <summary>Gets or sets Usage.</summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.ShowUsage">
+            <summary>Shows the cmdlet usage information.</summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamsArtifactsCommand.ProcessRecord">
+            <summary>Handles an invocation of the Get-TeamsArtifacts cmdlet.</summary>
+        </member>
         <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTeamTargetingHierarchyStatus.#ctor">
             <summary>
             Default constructor necessary for cmdlet.
@@ -956,11 +996,6 @@
         <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.CmdletName">
             <summary>
             Cmdlet name.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.PerformAuthorization">
-            <summary>
-            Performs authorization specific to the Teams and Channels service for this cmdlet.
             </summary>
         </member>
         <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.GetTenantPrivateChannelMigrationStatus.ProcessRecord">
@@ -3342,6 +3377,51 @@
             </summary>
             <returns></returns>
             <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.AuthenticatedHttpClientHandler">
+            <summary>
+            HttpClient handler class that handles token refresh and retries due to throttling.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.AuthenticatedHttpClientHandler.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.AuthenticatedHttpClientHandler"/> class.
+            </summary>
+            <param name="clientId">The "Application (client) ID" (GUID) for this app from the Entra portal.</param>
+            <param name="tenantId">The tenantId (GUID) where this will be run.</param>
+            <param name="clientSecret">The client secret generated for this app from the Entra portal.</param>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.AuthenticatedHttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Sends an HTTP request with authentication and retries in the event of throttling, and handles token refresh.
+            </summary>
+            <param name="request">The HTTP request message to send.</param>
+            <param name="cancellationToken">The cancellation token to cancel operation.</param>
+            <returns>The task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.ExportJob">
+            <summary>
+            Represents a single export job.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.ExportJob.#ctor(System.Net.Http.HttpClient,System.IO.TextWriter,System.String,System.Boolean,System.Nullable{Microsoft.Teams.PowerShell.TeamsCmdlets.ArtifactType},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.ExportJob"/> class.
+            </summary>
+            <param name="client">The HTTP client to be used for requests.</param>
+            <param name="writer">Where to output the data.</param>
+            <param name="oneDrive">Optionally limit single to a single user's ODB.</param>
+            <param name="sharePoint">Optionally limit search to SharePoint and not ODB.</param>
+            <param name="artifactType">Optional single type of artifact to be exported (default is all types).</param>
+            <param name="startTime">Optional start time to return artifacts created on or after this time.</param>
+            <param name="endTime">Optional end time to return artifacts created on or before this time.</param>
+        </member>
+        <member name="M:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.ExportJob.DoJob(System.Int32@,System.Int32@)">
+            <summary>
+            Starts the export job.
+            </summary>
+            <param name="artifactCount">The number of artifacts found.</param>
+            <param name="errorCount"> The number of errors encountered during the export.</param>
         </member>
         <member name="T:Microsoft.Teams.PowerShell.TeamsCmdlets.Utils.GraphUtilities">
             <summary>

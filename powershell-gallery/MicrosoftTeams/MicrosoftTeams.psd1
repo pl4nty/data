@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.3.1'
+ModuleVersion = '7.4.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -101,6 +101,9 @@ FunctionsToExport =  @(
 	,'Get-CsHybridTelephoneNumber'
 	,'Get-CsInboundBlockedNumberPattern'
 	,'Get-CsInboundExemptNumberPattern'
+	,'Get-CsMainlineAttendantAppointmentBookingFlow'
+	,'Get-CsMainlineAttendantFlow'
+	,'Get-CsMainlineAttendantQuestionAnswerFlow'
 	,'Get-CsMeetingMigrationStatus'
 	,'Get-CsOnlineApplicationInstance'
 	,'Get-CsOnlineApplicationInstanceAssociation'
@@ -137,6 +140,7 @@ FunctionsToExport =  @(
 	,'Get-CsOnlineVoiceRoutingPolicy'
 	,'Get-CsOnlineVoiceUser'
 	,'Get-CsPhoneNumberAssignment'
+	,'Get-CsPhoneNumberPolicyAssignment'
 	,'Get-CsPhoneNumberTag'
 	,'Get-CsPolicyPackage'
 	,'Get-CsSdgBulkSignInRequestStatus'
@@ -197,7 +201,7 @@ FunctionsToExport =  @(
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Get-CsSharedCallQueueHistoryTemplate'
-	,'Get-CsMainlineAttendantFlow'
+	,'Get-CsTagsTemplate'
 	,'Grant-CsCallingLineIdentity'
 	,'Grant-CsDialoutPolicy'
 	,'Grant-CsGroupPolicyPackageAssignment'
@@ -255,6 +259,8 @@ FunctionsToExport =  @(
 	,'New-CsHybridTelephoneNumber'
 	,'New-CsInboundBlockedNumberPattern'
 	,'New-CsInboundExemptNumberPattern'
+	,'New-CsMainlineAttendantAppointmentBookingFlow'
+	,'New-CsMainlineAttendantQuestionAnswerFlow'
 	,'New-CsOnlineApplicationInstance'
 	,'New-CsOnlineApplicationInstanceAssociation'
 	,'New-CsOnlineAudioConferencingRoutingPolicy'
@@ -300,9 +306,9 @@ FunctionsToExport =  @(
 	,'New-CsOnlineDirectRoutingTelephoneNumberUploadOrder'
 	,'New-CsOnlineTelephoneNumberReleaseOrder'
 	,'New-CsComplianceRecordingForCallQueueTemplate'
+	,'New-CsTagsTemplate'
+	,'New-CsTag'
 	,'New-CsSharedCallQueueHistoryTemplate'
-	,'New-CsMainlineAttendantAppointmentBookingFlow'
-	,'New-CsMainlineAttendantQuestionAnswerFlow'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
@@ -313,6 +319,8 @@ FunctionsToExport =  @(
 	,'Remove-CsHybridTelephoneNumber'
 	,'Remove-CsInboundBlockedNumberPattern'
 	,'Remove-CsInboundExemptNumberPattern'
+	,'Remove-CsMainlineAttendantAppointmentBookingFlow'
+	,'Remove-CsMainlineAttendantQuestionAnswerFlow'
 	,'Remove-CsOnlineApplicationInstanceAssociation'
 	,'Remove-CsOnlineAudioConferencingRoutingPolicy'
 	,'Remove-CsOnlineAudioFile'
@@ -361,6 +369,7 @@ FunctionsToExport =  @(
 	,'Remove-CsUserLicenseGracePeriod'
 	,'Remove-CsVideoInteropServiceProvider'
 	,'Remove-CsComplianceRecordingForCallQueueTemplate'
+	,'Remove-CsTagsTemplate'
 	,'Remove-CsSharedCallQueueHistoryTemplate'
 	,'Set-CsApplicationAccessPolicy'
 	,'Set-CsApplicationMeetingConfiguration'
@@ -369,6 +378,8 @@ FunctionsToExport =  @(
 	,'Set-CsCallQueue'
 	,'Set-CsInboundBlockedNumberPattern'
 	,'Set-CsInboundExemptNumberPattern'
+	,'Set-CsMainlineAttendantAppointmentBookingFlow'
+	,'Set-CsMainlineAttendantQuestionAnswerFlow'
 	,'Set-CsOnlineApplicationInstance'
 	,'Set-CsOnlineAudioConferencingRoutingPolicy'
 	,'Set-CsOnlineDialInConferencingBridge'
@@ -392,6 +403,7 @@ FunctionsToExport =  @(
 	,'Set-CsOnlineVoiceRoutingPolicy'
 	,'Set-CsOnlineVoiceUser'
 	,'Set-CsPhoneNumberAssignment'
+	,'Set-CsPhoneNumberPolicyAssignment'
 	,'Set-CsPhoneNumberTag'
 	,'Set-CsTeamsAudioConferencingPolicy'
 	,'Set-CsTeamsCallParkPolicy'
@@ -432,6 +444,7 @@ FunctionsToExport =  @(
 	,'Set-CsUserCallingSettings'
 	,'Set-CsVideoInteropServiceProvider'
 	,'Set-CsComplianceRecordingForCallQueueTemplate'
+	,'Set-CsTagsTemplate'
 	,'Set-CsSharedCallQueueHistoryTemplate'
 	,'Start-CsExMeetingMigration'
 	,'Sync-CsOnlineApplicationInstance'
@@ -481,8 +494,6 @@ FunctionsToExport =  @(
 	,'Invoke-CsMsodsSync'
 	,'Get-CsUssUserSettings'
 	,'Set-CsUssUserSettings'
-	,'Get-CsPhoneNumberPolicyAssignment'
-	,'Set-CsPhoneNumberPolicyAssignment'
 	,'Invoke-CsRehomeuser'
 	,'Set-CsNotifyCache'
 #OCE exports end
@@ -506,6 +517,7 @@ CmdletsToExport = @(
     ,'Get-TeamChannelUser'
     ,'Get-TeamIncomingChannel'
     ,'Get-TeamsApp'
+	,'Get-TeamsArtifacts'
     ,'Get-TeamUser'
 	,'Get-M365TeamsApp'
 	,'Get-AllM365TeamsApps'
@@ -556,6 +568,8 @@ CmdletsToExport = @(
     ,'Get-CsTeamsMeetingConfiguration'
 	,'Get-CsTeamsWorkLocationDetectionPolicy'
     ,'Get-CsTeamsRecordingRollOutPolicy'
+	,'Get-CsTeamsRemoteLogCollectionConfiguration'
+	,'Get-CsTeamsRemoteLogCollectionDevice'
     ,'Get-CsTeamsEducationConfiguration'
     ,'Get-CsTeamsBYODAndDesksPolicy'
     ,'Get-CsTeamsNotificationAndFeedsPolicy'
@@ -619,6 +633,7 @@ CmdletsToExport = @(
 	,'New-CsTeamsComplianceRecordingPairedApplication'
 	,'New-CsTeamsWorkLocationDetectionPolicy'
     ,'New-CsTeamsRecordingRollOutPolicy'
+	,'New-CsTeamsRemoteLogCollectionDevice'
 	,"New-CsCustomPrompt"
     ,"New-CsCustomPromptPackage"
 	,'New-CsTeamsShiftsPolicy'
@@ -663,6 +678,7 @@ CmdletsToExport = @(
     ,'Remove-CsTeamsVdiPolicy'
 	,'Remove-CsTeamsWorkLocationDetectionPolicy'
     ,'Remove-CsTeamsRecordingRollOutPolicy'
+	,'Remove-CsTeamsRemoteLogCollectionDevice'
     ,'Remove-CsTeamsBYODAndDesksPolicy'
     ,'Remove-CsTeamsNotificationAndFeedsPolicy'
 	,'Remove-CsTeamsPersonalAttendantPolicy'
@@ -713,6 +729,7 @@ CmdletsToExport = @(
     ,'Set-CsTeamsMeetingConfiguration'
     ,'Set-CsTeamsVdiPolicy'
 	,'Set-CsTeamsWorkLocationDetectionPolicy'
+	,'Set-CsTeamsRemoteLogCollectionDevice'
     ,'Set-CsTeamsRecordingRollOutPolicy'
 	,'Set-CsTeamsCustomBannerText'
     ,'Set-CsTeamsBYODAndDesksPolicy'
@@ -755,6 +772,7 @@ CmdletsToExport = @(
     ,'Set-TeamTargetingHierarchy'
 #preview    ,'Update-TeamsAppInstallation'
 #preview    ,'Get-LicenseReportForChangeNotificationSubscription'
+#preview    ,'Get-TenantPrivateChannelMigrationStatus'
  )
 
 # Variables to export from this module
@@ -792,8 +810,13 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.3.1-GA** (The project - MicrosoftTeams contains changes till this release)
-- Fixes New-Team cmdlet for EDU teams.
+ **7.4.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Releases Get-TeamsArtifacts cmdlet.
+- Adds MainlineAttendantAgentVoiceId parameter to New-CsAutoAttendant cmdlet.
+- Releases [New|Set|Remove|Get]-CsTagsTemplate cmdlets.
+- Releases New-CsTag cmdlet.
+- [BREAKING CHANGE] Renames BotId and PairedApplication parameters in [New|Set|Get]-CsComplianceRecordingForCallQueueTemplate cmdlets to BotApplicationInstanceObjectId and PairedApplicationInstanceObjectId respectively.
+- Releases Get-TeamsRemoteLogCollectionConfiguration and [Get|Set|New|Remove]-TeamsRemoteLogCollectionDevice cmdlets.
 
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes

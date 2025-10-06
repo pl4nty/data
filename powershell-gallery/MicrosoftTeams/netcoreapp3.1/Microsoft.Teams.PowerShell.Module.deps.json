@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.Teams.PowerShell.Module/7.3.1": {
+      "Microsoft.Teams.PowerShell.Module/7.4.0": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "3.1.0",
-          "Microsoft.Teams.ConfigAPI.Cmdlets": "8.808.3",
+          "Microsoft.Teams.ConfigAPI.Cmdlets": "8.925.3",
           "Microsoft.Teams.Policy.Administration": "21.4.4",
           "Microsoft.Teams.Policy.Administration.Cmdlets.OCE": "0.1.12",
-          "Microsoft.Teams.PowerShell.Connect": "1.7.3",
-          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.5.3",
+          "Microsoft.Teams.PowerShell.Connect": "1.7.4",
+          "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.5.6",
           "NuGet.Build.Tasks.Pack": "5.2.0",
           "NuGet.CommandLine": "5.11.6",
           "System.Management.Automation": "6.2.7",
@@ -834,7 +834,7 @@
           }
         }
       },
-      "Microsoft.Teams.ConfigAPI.Cmdlets/8.808.3": {},
+      "Microsoft.Teams.ConfigAPI.Cmdlets/8.925.3": {},
       "Microsoft.Teams.Policy.Administration/21.4.4": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Teams.Policy.Administration.Cmdlets.Core.dll": {
@@ -887,7 +887,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0"
         }
       },
-      "Microsoft.Teams.PowerShell.Connect/1.7.3": {
+      "Microsoft.Teams.PowerShell.Connect/1.7.4": {
         "dependencies": {
           "Microsoft.Applications.Events.Server": "1.1.2.97",
           "Microsoft.Ic3.TenantAdminApi.Common.Helper": "1.0.28",
@@ -907,8 +907,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.TeamsCmdlets.PowerShell.Connect.dll": {
-            "assemblyVersion": "1.7.3.0",
-            "fileVersion": "1.7.3.0"
+            "assemblyVersion": "1.7.4.0",
+            "fileVersion": "1.7.4.0"
           },
           "lib/netcoreapp3.1/Microsoft.Web.WebView2.Core.dll": {
             "assemblyVersion": "1.0.864.35",
@@ -960,9 +960,9 @@
           }
         }
       },
-      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.3": {
+      "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.6": {
         "dependencies": {
-          "Microsoft.Teams.PowerShell.Connect": "1.7.3",
+          "Microsoft.Teams.PowerShell.Connect": "1.7.4",
           "Newtonsoft.Json": "13.0.3",
           "Polly": "7.2.4",
           "Polly.Contrib.WaitAndRetry": "1.1.1",
@@ -971,8 +971,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Teams.PowerShell.TeamsCmdlets.dll": {
-            "assemblyVersion": "1.5.3.0",
-            "fileVersion": "1.5.3.0"
+            "assemblyVersion": "1.5.6.0",
+            "fileVersion": "1.5.6.0"
           },
           "lib/netcoreapp3.1/Polly.Contrib.WaitAndRetry.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -2061,7 +2061,7 @@
     }
   },
   "libraries": {
-    "Microsoft.Teams.PowerShell.Module/7.3.1": {
+    "Microsoft.Teams.PowerShell.Module/7.4.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2290,12 +2290,12 @@
       "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.4",
       "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.4.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.Cmdlets/8.808.3": {
+    "Microsoft.Teams.ConfigAPI.Cmdlets/8.925.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rym//6uawBqI5wBbvbryZu4v0zgDDNoibKd4favsXwPlHQk6Gmik/oL34UfcOl9YIP/8UUGPQR4kKjAt8r6cjA==",
-      "path": "microsoft.teams.configapi.cmdlets/8.808.3",
-      "hashPath": "microsoft.teams.configapi.cmdlets.8.808.3.nupkg.sha512"
+      "sha512": "sha512-RFkL3bUSCPZcf4mhuOLzfYo5NXOtoAnXRl/1mZYwzE9yTnhelPvTUVBlgWOATUVa797YhdH4xDkSt1q5J3hTRw==",
+      "path": "microsoft.teams.configapi.cmdlets/8.925.3",
+      "hashPath": "microsoft.teams.configapi.cmdlets.8.925.3.nupkg.sha512"
     },
     "Microsoft.Teams.Policy.Administration/21.4.4": {
       "type": "package",
@@ -2318,19 +2318,19 @@
       "path": "microsoft.teams.policy.administration.configurations/12.2.29",
       "hashPath": "microsoft.teams.policy.administration.configurations.12.2.29.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.Connect/1.7.3": {
+    "Microsoft.Teams.PowerShell.Connect/1.7.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mThur2TmhaRKakr4VvoJUpEduRZHnqnFoptped5pgfzr9tCttC+kILDScdtdZIrVq0v8Xt+hydhDEAKtPgwLJQ==",
-      "path": "microsoft.teams.powershell.connect/1.7.3",
-      "hashPath": "microsoft.teams.powershell.connect.1.7.3.nupkg.sha512"
+      "sha512": "sha512-5PVwBrhY1PrL9866+37a00LJP1BRhKyFuHWyOqb4dmHM44EvlXn4UJbgyvQOEmwr/i3dMRsJHsEWpeOZmmlP7A==",
+      "path": "microsoft.teams.powershell.connect/1.7.4",
+      "hashPath": "microsoft.teams.powershell.connect.1.7.4.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.3": {
+    "Microsoft.Teams.PowerShell.TeamsCmdlets/1.5.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XhEc4fFryxir3lHmxAU6vL5QeOQ1qw85VyEDq0IN+SGtM+VNE+D605ci1h93FBVPJ2uHm4tIhFgLhaLNRN0gsQ==",
-      "path": "microsoft.teams.powershell.teamscmdlets/1.5.3",
-      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.5.3.nupkg.sha512"
+      "sha512": "sha512-0wpSIlsiwCAAP/sZHIn66p7M8QG4IkAGKOJcR8LHuyp7J0uU0ByINsjp/YyOkGtgV9gOFo8Gun8giCz63BQA6w==",
+      "path": "microsoft.teams.powershell.teamscmdlets/1.5.6",
+      "hashPath": "microsoft.teams.powershell.teamscmdlets.1.5.6.nupkg.sha512"
     },
     "Microsoft.Web.WebView2/1.0.864.35": {
       "type": "package",

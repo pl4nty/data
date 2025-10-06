@@ -6159,17 +6159,38 @@ function Get-CsComplianceRecordingForCallQueueTemplate {
 
 # Objective of this custom file: transforming the results to the custom objects
 
-function Get-CsMainlineAttendantFlow {
+function Get-CsMainlineAttendantAppointmentBookingFlow {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory=$false)]
         [System.String]
         # The identity of the mainline attendant flow which is retrieved.
-        ${FlowId},
+        ${Identity},
 
         [Parameter(Mandatory=$false)]
-        [Switch]
-        ${Force},
+        [int]
+        # The First parameter gets the first N mainline attendant flows.
+        ${First},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The Skip parameter skips the first N mainline attendant flows. It is intended to be used for pagination purposes.
+        ${Skip},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SortBy parameter specifies the property used to sort.
+        ${SortBy},
+
+        [Parameter(Mandatory=$false)]
+        [switch]
+        # The Descending parameter is used to sort descending.
+        ${Descending},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The NameFilter parameter returns mainline attendant flows where name contains specified string
+        ${NameFilter},
 
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -6190,13 +6211,8 @@ function Get-CsMainlineAttendantFlow {
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
             }
-        
-            if ($PSBoundParameters.ContainsKey("Force")) {
-                $PSBoundParameters.Remove("Force") | Out-Null
-            }
 
-            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsMainlineAttendantFlow @PSBoundParameters @httpPipelineArgs
-
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsMainlineAttendantAppointmentBookingFlow @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
             if ($result -eq $null) {
@@ -6205,17 +6221,234 @@ function Get-CsMainlineAttendantFlow {
 
             Write-AdminServiceDiagnostic($result.Diagnostic)
 
-            if (${FlowId} -ne '') {
-                $mailineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantFlow]::new()
-                $mailineAttendantFlow.ParseFromGetResponse($result)
-            } 
-            else {
-                $mainlineAttendantFlows = @()
-                foreach ($model in $result.$mainlineAttendantFlows) {
-                    $mailineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantFlow]::new()
-                    $mainlineAttendantFlows += $mailineAttendantFlow.ParseFromDtoModel($model)
+            if (${Identity} -ne '') {
+                $appointmentBookingFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantAppointmentBookingFlow]::new()
+                $appointmentBookingFlow.ParseFromGetResponse($result)
+            } else {
+                $appointmentBookingFlows = @()
+                foreach ($model in $result.MainlineAttendantFlowResponse) {
+                    $appointmentBookingFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantAppointmentBookingFlow]::new()
+                    $appointmentBookingFlows += $appointmentBookingFlow.ParseFromDomainModel($model)
                 }
-            $mainlineAttendantFlows
+                $appointmentBookingFlows
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsMainlineAttendantFlow {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The identity of the mainline attendant flow which is retrieved.
+        ${Identity},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The identity of the mainline attendant flow which is retrieved.
+        ${Type},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The identity of the mainline attendant flow which is retrieved.
+        ${ConfigurationId},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The First parameter gets the first N mainline attendant flows.
+        ${First},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The Skip parameter skips the first N mainline attendant flows. It is intended to be used for pagination purposes.
+        ${Skip},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SortBy parameter specifies the property used to sort.
+        ${SortBy},
+
+        [Parameter(Mandatory=$false)]
+        [switch]
+        # The Descending parameter is used to sort descending.
+        ${Descending},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The NameFilter parameter returns mainline attendant flows where name contains specified string
+        ${NameFilter},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsMainlineAttendantFlow @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (${Identity} -ne '') {
+                if ($result.MainlineAttendantFlowResponseType -eq "AppointmentBooking") {
+                    $mainlineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantAppointmentBookingFlow]::new()
+                } else {
+                    $mainlineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                }
+                $mainlineAttendantFlow.ParseFromGetResponse($result)
+            } else {
+                $mainlineAttendantFlows = @()
+                foreach ($model in $result.MainlineAttendantFlowResponse) {
+                    if ($model.Type -eq "AppointmentBooking") {
+                        $mainlineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantAppointmentBookingFlow]::new()
+                    } else {
+                        $mainlineAttendantFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                    }
+                    $mainlineAttendantFlows += $mainlineAttendantFlow.ParseFromDomainModel($model)
+                }
+                $mainlineAttendantFlows
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsMainlineAttendantQuestionAnswerFlow {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The identity of the mainline attendant flow which is retrieved.
+        ${Identity},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The First parameter gets the first N mainline attendant flows.
+        ${First},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The Skip parameter skips the first N mainline attendant flows. It is intended to be used for pagination purposes.
+        ${Skip},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SortBy parameter specifies the property used to sort.
+        ${SortBy},
+
+        [Parameter(Mandatory=$false)]
+        [switch]
+        # The Descending parameter is used to sort descending.
+        ${Descending},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The NameFilter parameter returns mainline attendant flows where name contains specified string
+        ${NameFilter},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsMainlineAttendantQuestionAnswerFlow @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (${Identity} -ne '') {
+                $questionAnswerFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                $questionAnswerFlow.ParseFromGetResponse($result)
+            } else {
+                $questionAnswerFlows = @()
+                foreach ($model in $result.MainlineAttendantFlowResponse) {
+                    $questionAnswerFlow = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                    $questionAnswerFlows += $questionAnswerFlow.ParseFromDomainModel($model)
+                }
+                $questionAnswerFlows
             }
 
         } catch {
@@ -6745,6 +6978,90 @@ function Get-CsSharedCallQueueHistoryTemplate {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsTagsTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the shared tags template which is retrieved.
+		${Id},
+		
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsTagsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $TagsTemplate = [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTagsTemplate]::new()
+                $TagsTemplate.ParseFromGetResponse($result)
+            } 
+            else {
+                $AllIvrTagsTemplates = @()
+                foreach ($model in $result.IvrTagsTemplate) { 
+                    $TagsTemplate = [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTagsTemplate]::new()
+                    $AllIvrTagsTemplates += $TagsTemplate.MapFromAutoGeneratedModel($model)
+                }
+                $AllIvrTagsTemplates
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Print error message in case of error
 
 function Import-CsAutoAttendantHolidays {
@@ -7022,6 +7339,11 @@ function New-CsAutoAttendant {
         # The EnableMainlineAttendant parameter indicates whether mainline attendant is enabled or not.
         ${EnableMainlineAttendant},
 
+        [Parameter(Mandatory=$false, position=16)]
+        [System.String]
+        # The MainlineAttendantAgentVoiceId parameter represents the voice that is used for Mainline Attendant.
+        ${MainlineAttendantAgentVoiceId},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -7064,6 +7386,7 @@ function New-CsAutoAttendant {
             $null = $PSBoundCommonParameters.Remove("AuthorizedUsers")
             $null = $PSBoundCommonParameters.Remove("HideAuthorizedUsers")
             $null = $PSBoundCommonParameters.Remove("EnableMainlineAttendant")
+            $null = $PSBoundCommonParameters.Remove("MainlineAttendantAgentVoiceId")
 
             if ($DefaultCallFlow -ne $null) {
                 $null = $PSBoundParameters.Remove('DefaultCallFlow')
@@ -7157,6 +7480,7 @@ function New-CsAutoAttendant {
             }
 
             if ($EnableMainlineAttendant -eq $true) {
+                # Check whether the greetings is provided by the customer or should we use the default greeting.
                 if ($DefaultCallFlow.Greetings -eq $null) {
                     Write-Warning "Greetings is not set for the DefaultCallFlow. The system default greeting will be used for mainline attendant."
                     $defaultCallFlowGreetings = @()
@@ -7169,24 +7493,28 @@ function New-CsAutoAttendant {
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
                 }
 
+                # For mainline attendant as of now, we only support "en-US" language.
                 $supportedLanguageId = "en-US"
                 if ($LanguageId -ne $supportedLanguageId) {
                     Write-Warning "The provided LanguageId '$LanguageId' is not supported for mainline attendant. Defaulting to 'en-US'."
-                    $PSBoundParameters.Remove('LanguageId')
+                    $null = $PSBoundParameters.Remove('LanguageId')
                     $PSBoundParameters.Add('LanguageId', $supportedLanguageId)
                 }
 
+                # For mainline attendant, we only support specific voice ids.
                 $mainlineAttendantVoiceIds = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantSupportedVoiceIds]
-                if ( -not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $PSBoundParameters["VoiceId"])) {
-                    throw "The provided VoiceId '$($PSBoundParameters["VoiceId"])' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))."
+                if ([string]::IsNullOrWhiteSpace($MainlineAttendantAgentVoiceId) -or
+                    -not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $MainlineAttendantAgentVoiceId)) {
+                    throw "The provided MainlineAttendantAgentVoiceId '$MainlineAttendantAgentVoiceId' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))."
                 }
-                $voiceId = $mainlineAttendantVoiceIds::$($PSBoundParameters["VoiceId"])
-                $PSBoundParameters.Remove('VoiceId')
-                $PSBoundParameters.Add("VoiceId", $voiceId)
+                $mainlineAttendantVoiceId = $mainlineAttendantVoiceIds::$($MainlineAttendantAgentVoiceId)
+                $null = $PSBoundParameters.Remove('MainlineAttendantAgentVoiceId')
+                $PSBoundParameters.Add("MainlineAttendantAgentVoiceId", $mainlineAttendantVoiceId)
 
+                # For Mainline Attendant, EnableVoiceResponse should must be true.
                 if ($EnableVoiceResponse -ne $true) {
-                    Write-Warning "`$EnableVoiceResponse` is not set. Defaulting to true for mainline attendant."
-                    $PSBoundParameters.Remove('EnableVoiceResponse')
+                    Write-Warning "`$EnableVoiceResponse` is not set. Defaulting to 'true' for mainline attendant."
+                    $null = $PSBoundParameters.Remove('EnableVoiceResponse') 
                     $PSBoundParameters.Add('EnableVoiceResponse', $true)
                 }
             }
@@ -7807,6 +8135,21 @@ function New-CsAutoAttendantMenuOption {
         # The mainline attendant target only when the action is MainlineAttendantFlow.
         ${MainlineAttendantTarget},
 
+        [Parameter(Mandatory=$false, position=8)]
+        [Microsoft.Rtc.Management.Hosted.OAA.Models.AgentTargetType]
+        # The mainline attendant target only when the action is MainlineAttendantFlow.
+        ${AgentTargetType},
+
+        [Parameter(Mandatory=$false, position=9)]
+        [System.String]
+        # The mainline attendant target only when the action is MainlineAttendantFlow.
+        ${AgentTarget},
+
+        [Parameter(Mandatory=$false, position=10)]
+        [System.String]
+        # The mainline attendant target only when the action is MainlineAttendantFlow.
+        ${AgentTargetTagTemplateId},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -7860,9 +8203,19 @@ function New-CsAutoAttendantMenuOption {
                 }
             }
 
-            if ($Action -eq [Microsoft.Rtc.Management.Hosted.OAA.Models.ActionType]::MainlineAttendantFlow -and [string]::IsNullOrEmpty($MainlineAttendantTarget))
+            if ($Action -eq [Microsoft.Rtc.Management.Hosted.OAA.Models.ActionType]::MainlineAttendantFlow -and [string]::IsNullOrWhiteSpace($MainlineAttendantTarget))
             {
-                throw "The value of `$MainlineAttendantTarget` cannot be null when the `$Action` is '$Action'"
+                throw "The value of `MainlineAttendantTarget` cannot be null when the `Action` is '$Action'"
+            }
+
+            if ($Action -eq [Microsoft.Rtc.Management.Hosted.OAA.Models.ActionType]::AgentsAndQueues -and [string]::IsNullOrWhiteSpace($AgentTargetType))
+            {
+                throw "The value of `AgentTargetType` cannot be null when the `Action` is '$Action'"
+            }
+
+            if ($Action -eq [Microsoft.Rtc.Management.Hosted.OAA.Models.ActionType]::AgentsAndQueues -and [string]::IsNullOrWhiteSpace($AgentTarget))
+            {
+                throw "The value of `AgentTarget` cannot be null when the `Action` is '$Action'"
             }
 
             $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsAutoAttendantMenuOption @PSBoundParameters @httpPipelineArgs
@@ -8660,8 +9013,8 @@ function New-CsComplianceRecordingForCallQueueTemplate {
 
         [Parameter(Mandatory=$true, position=2)]
         [System.String]
-        # The BotId parameter represents the ID of the CR bot
-        ${BotId},
+        # The BotApplicationInstanceObjectId parameter represents the ID of the CR bot
+        ${BotApplicationInstanceObjectId},
 
         [Parameter(Mandatory=$false, position=3)]
         [Switch]
@@ -8681,7 +9034,7 @@ function New-CsComplianceRecordingForCallQueueTemplate {
         [Parameter(Mandatory=$false, position=6)]
         [System.String]
         # The PairedApplication parameter specifies the paired application for the call queue.
-        ${PairedApplication},
+        ${PairedApplicationInstanceObjectId},
 
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -8714,8 +9067,8 @@ function New-CsComplianceRecordingForCallQueueTemplate {
             }
 
             if ($PairedApplication -ne $null){
-                $null = $PSBoundParameters.Remove("PairedApplication")
-                $PSBoundParameters.Add('PairedApplication', $PairedApplication)
+                $null = $PSBoundParameters.Remove("PairedApplicationInstanceObjectId")
+                $PSBoundParameters.Add('PairedApplicationInstanceObjectId', $PairedApplication)
             }
 
             if ($ConcurrentInvitationCount -eq 0){
@@ -8814,17 +9167,29 @@ function New-CsMainlineAttendantAppointmentBookingFlow  {
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
             }
-            
-            # Read the JSON file into a PowerShell object
-            $ApiDefinitionsJsonObject = Get-Content -Path $ApiDefinitions | ConvertFrom-Json
 
-            # Convert the PowerShell object back into a JSON string
-            $ApiDefinitionsJsonString = $ApiDefinitionsJsonObject | ConvertTo-Json -Depth 10
+            try {
+                # Check if ApiDefinitions is a JSON file path
+                if (![string]::IsNullOrWhiteSpace($ApiDefinitions) -and  $ApiDefinitions -match '\.json$') 
+                {
+                    # Read the JSON file into a PowerShell object
+                    $ApiDefinitionsJsonObject = Get-Content -Path $ApiDefinitions | ConvertFrom-Json
 
-            # The user input of `ApiDefinitions` parameter is the template file path,
-            # but we need to provide the content of the template to the downstream backend service.
-            $PSBoundParameters.Remove('ApiDefinitions') | Out-Null
-            $PSBoundParameters.Add("ApiDefinitions", $ApiDefinitionsJsonString)
+                    # Convert the PowerShell object back into a JSON string
+                    $ApiDefinitionsJsonString = $ApiDefinitionsJsonObject | ConvertTo-Json -Depth 10
+
+                    # The user input of `ApiDefinitions` parameter is the template file path,
+                    # but we need to provide the content of the template to the downstream backend service.
+                    $PSBoundParameters.Remove('ApiDefinitions') | Out-Null
+                    $PSBoundParameters.Add("ApiDefinitions", $ApiDefinitionsJsonString)
+                }
+                else 
+                {
+                    throw "ApiDefinitions parameter must be a valid JSON file path."
+                }
+            } catch {
+                throw "Failed to read API Definitions file: $_"
+            }
 
             $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsMainlineAttendantAppointmentBookingFlow @PSBoundParameters @httpPipelineArgs
 
@@ -8875,7 +9240,7 @@ function New-CsMainlineAttendantQuestionAnswerFlow  {
         # The Description of the flow.
         ${Description},
 
-        [Parameter(Mandatory=$true, position=2)]
+        [Parameter(Mandatory=$false, position=2)]
         [Microsoft.Rtc.Management.Hosted.Online.Models.ApiAuthenticationType]
         # The authentication type of API and the possible values are: “Basic”, “ApiKey”, “BearerTokenStatic”, “BearerTokenDynamic”
         ${ApiAuthenticationType},
@@ -8905,20 +9270,33 @@ function New-CsMainlineAttendantQuestionAnswerFlow  {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
             }
             
-            # Read the JSON file into a PowerShell object
-            $KnowledgeBaseJsonObject = Get-Content -Path $KnowledgeBase | ConvertFrom-Json
+            try
+            {
+                # Check if KnowledgeBase is a JSON file path
+                if (![string]::IsNullOrWhiteSpace($KnowledgeBase) -and  $KnowledgeBase -match '\.json$') 
+                {
+                    # Read the JSON file into a PowerShell object
+                    $KnowledgeBaseJsonObject = Get-Content -Path $KnowledgeBase | ConvertFrom-Json
 
-            # Convert the PowerShell object back into a JSON string
-            $KnowledgeBaseJsonString = $KnowledgeBaseJsonObject | ConvertTo-Json -Depth 10
+                    # Convert the PowerShell object back into a JSON string
+                    $KnowledgeBaseJsonString = $KnowledgeBaseJsonObject | ConvertTo-Json -Depth 10
+                                
+                    # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
+                    $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                    $KnowledgeBaseContentLocalFileContent = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString, "local_file")
 
-            # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
-            $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
-            $KnowledgeBaseContentLocalFileContent = $mainlineAttendantQuestionAnswerFlow.GetLocalDocumentContent($KnowledgeBaseJsonString, "local_file")
-
-            # The user input of `KnowledgeBase` parameter is the knowledge-base file path,
-            # but we need to provide the content of the knowledge-base to the downstream backend service.
-            $PSBoundParameters.Remove('KnowledgeBase') | Out-Null
-            $PSBoundParameters.Add("KnowledgeBase", $KnowledgeBaseContentLocalFileContent)
+                    # The user input of `KnowledgeBase` parameter is the knowledge-base file path,
+                    # but we need to provide the content of the knowledge-base to the downstream backend service.
+                    $PSBoundParameters.Remove('KnowledgeBase') | Out-Null
+                    $PSBoundParameters.Add("KnowledgeBase", $KnowledgeBaseContentLocalFileContent)
+                } 
+                else 
+                {
+                    throw "KnowledgeBase parameter must be a valid JSON file path."
+                }
+            } catch {
+                throw "Failed to read KnowledgeBase file: $_"
+            }
 
             $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsMainlineAttendantQuestionAnswerFlow @PSBoundParameters @httpPipelineArgs
 
@@ -9518,6 +9896,172 @@ function New-CsSharedCallQueueHistoryTemplate {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsTag {
+    [CmdletBinding(PositionalBinding = $true)]
+    param(
+        [Parameter(Mandatory = $true, Position = 0)]
+        [System.String]
+        # The Name parameter is a name assigned to a given tag.
+        ${TagName},
+
+        [Parameter(Mandatory = $false, Position = 1)]
+        [Microsoft.Rtc.Management.Hosted.OAA.Models.CallableEntity]
+        # The CallTarget parameter represents the target for call transfer after the menu option is selected.
+        ${TagDetails}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            $null = $PSBoundParameters.Remove("Force")
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (-not $PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+
+        if ($TagDetails -ne $null) {
+            $null = $PSBoundParameters.Remove('TagDetails')
+            $PSBoundParameters.Add('TagDetailId', $TagDetails.Id)
+            $PSBoundParameters.Add('TagDetailType', $TagDetails.Type)
+            if ($TagDetails.EnableTranscription) {
+                $PSBoundParameters.Add('TagDetailEnableTranscription', $true)
+            }
+            if ($TagDetails.EnableSharedVoicemailSystemPromptSuppression) {
+                $PSBoundParameters.Add('TagDetailEnableSharedVoicemailSystemPromptSuppression', $true)
+            }
+            if ($TagDetails.Type -eq 'ApplicationEndpoint' -or $TagDetails.Type -eq 'ConfigurationEndpoint') {
+                $PSBoundParameters.Add('TagDetailCallPriority', $TagDetails.CallPriority)
+            }
+        }
+
+        try {
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsTag @PSBoundParameters @httpPipelineArgs
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic $internalOutput.Diagnostic
+
+            $output = [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTag]::new()
+            $output.MapFromCreateResponse($internalOutput)
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsTagsTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the IVR tags template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the IVR tags template.
+        ${Description},
+
+        [Parameter(Mandatory=$true, position=2)]
+        [PSObject[]]
+        # The Tags parameter specifies the tags for the IVR tags template.
+        ${Tags},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($Tags -ne $null) {
+                $inputTags = @()
+                foreach ($tag in $Tags) {
+                    $inputTags += [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTag]::CreateAutoGeneratedFromObject($tag)
+                }
+                $null = $PSBoundParameters.Remove('Tags')
+                $PSBoundParameters.Add('Tags', $inputTags)
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsTagsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTagsTemplate]::new()
+            $output.MapFromCreateResponseModel($internalOutput)
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Display the diagnostic if any
 
 function Remove-CsAutoAttendant {
@@ -9701,6 +10245,150 @@ function Remove-CsComplianceRecordingForCallQueueTemplate {
             }
 
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsComplianceRecordingForCallQueueTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsMainlineAttendantAppointmentBookingFlow {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the mainline attendant appointment booking flow to be removed.
+        ${Identity},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsMainlineAttendantAppointmentBookingFlow @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsMainlineAttendantQuestionAnswerFlow {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the mainline attendant question answer flow to be removed.
+        ${Identity},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsMainlineAttendantQuestionAnswerFlow @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
             if ($result -eq $null) {
@@ -10040,6 +10728,78 @@ function Remove-CsSharedCallQueueHistoryTemplate {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsTagsTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the tags template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsTagsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Format output of cmdlet
 
 function Set-CsAutoAttendant {
@@ -10229,37 +10989,47 @@ function Set-CsAutoAttendant {
             }
 
             if ($Instance.MainlineAttendantEnabled -eq $true) {
+                # Check whether the greetings is provided by the customer or should we use the default greeting.
                 if ($Instance.DefaultCallFlow.Greetings -eq $null) {
                     Write-Warning "Greetings is not set for the DefaultCallFlow. The system default greeting will be used for mainline attendant."
                     $defaultCallFlowGreetings = @()
                     $defaultCallFlowGreetings += [Microsoft.Rtc.Management.Hosted.OAA.Models.Prompt]::CreateAutoGeneratedFromObject(
                         @{
                             ActiveType = [Microsoft.Rtc.Management.Hosted.OAA.Models.PromptType]::TextToSpeech;
-                            TextToSpeechPrompt = "Hello, and thank you for calling $Name. How can I assist you today? Please note that this call may be recorded for compliance purposes."
+                            TextToSpeechPrompt = "Hello, and thank you for calling '{0}'. How can I assist you today? Please note that this call may be recorded for compliance purposes." -f $Instance.Name
                         }
                     )
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
                 }
+
+                # For mainline attendant as of now, we only support "en-US" language.
                 $supportedLanguageId = "en-US"
                 if ($Instance.LanguageId -ne $supportedLanguageId) {
-                    Write-Warning "The provided LanguageId '$LanguageId' is not supported for mainline attendant. Defaulting to 'en-US'."
-                    $PSBoundParameters.Remove('LanguageId')
+                    Write-Warning ("The provided LanguageId '{0}' is not supported for mainline attendant. Defaulting to 'en-US'." -f $Instance.LanguageId)
+                    $null = $PSBoundParameters.Remove('LanguageId')
                     $PSBoundParameters.Add('LanguageId', $supportedLanguageId)
                 }
 
+                # For mainline attendant, we only support specific voice ids.
                 $mainlineAttendantVoiceIds = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantSupportedVoiceIds]
-                if (-not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $PSBoundParameters["VoiceId"])) {
-                    throw "The provided VoiceId '$($PSBoundParameters["VoiceId"])' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))."
+                if ([string]::IsNullOrWhiteSpace($Instance.MainlineAttendantAgentVoiceId) -or
+                    -not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $Instance.MainlineAttendantAgentVoiceId)) {
+                    throw "The provided MainlineAttendantAgentVoiceId '{0}' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))." -f $Instance.MainlineAttendantAgentVoiceId
                 }
-                $voiceId = $mainlineAttendantVoiceIds::$($PSBoundParameters["VoiceId"])
-                $PSBoundParameters.Remove('VoiceId')
-                $PSBoundParameters.Add("VoiceId", $voiceId)
+                $mainlineAttendantVoiceId = $mainlineAttendantVoiceIds::$($Instance.MainlineAttendantAgentVoiceId)
+                $null = $PSBoundParameters.Remove('MainlineAttendantAgentVoiceId')
+                $PSBoundParameters.Add("MainlineAttendantAgentVoiceId", $mainlineAttendantVoiceId)
 
-                if ($Instance.EnableVoiceResponse -ne $true) {
-                    Write-Warning "`$EnableVoiceResponse` is not set. Defaulting to true for mainline attendant."
-                    $PSBoundParameters.Remove('EnableVoiceResponse')
-                    $PSBoundParameters.Add('EnableVoiceResponse', $true)
+                # For Mainline Attendant, VoiceResponseEnabled should must be true.
+                if ($Instance.VoiceResponseEnabled -ne $true) {
+                    Write-Warning "`$VoiceResponseEnabled` is not set. Defaulting to 'true' for mainline attendant."
+                    $null = $PSBoundParameters.Remove('VoiceResponseEnabled')
+                    $PSBoundParameters.Add('VoiceResponseEnabled', $true)
                 }
+
+                # Finally, add MainlineAttendantEnabled is true to the powershell parameters list.
+                $null = $PSBoundParameters.Remove('MainlineAttendantEnabled')
+                $PSBoundParameters.Add('MainlineAttendantEnabled', $true)
             }
 
             $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsAutoAttendant @PSBoundParameters @httpPipelineArgs
@@ -11460,11 +12230,11 @@ function Set-CsComplianceRecordingForCallQueueTemplate {
                 Name = ${Instance}.Name
                 Identity = ${Instance}.Id
                 Description = ${Instance}.Description
-                BotId = ${Instance}.BotId
+                BotApplicationInstanceObjectId = ${Instance}.BotApplicationInstanceObjectId
                 RequiredDuringCall = ${Instance}.RequiredDuringCall
                 RequiredBeforeCall = ${Instance}.RequiredBeforeCall
                 ConcurrentInvitationCount = ${Instance}.ConcurrentInvitationCount
-                PairedApplication = ${Instance}.PairedApplication
+                PairedApplicationInstanceObjectId = ${Instance}.PairedApplicationInstanceObjectId
             }
 
             # Get common parameters
@@ -11477,7 +12247,7 @@ function Set-CsComplianceRecordingForCallQueueTemplate {
             $null = $params.Remove("Instance")
           
             if ($ConcurrentInvitationCount -eq 0){
-                $null = $paramss.Remove("ConcurrentInvitationCount")
+                $null = $params.Remove("ConcurrentInvitationCount")
                 $params.Add('ConcurrentInvitationCount', 1)
             } elseif ($ConcurrentInvitationCount -ne $null){
                 # Validate the value of ConcurrentInvitationCount
@@ -11497,6 +12267,214 @@ function Set-CsComplianceRecordingForCallQueueTemplate {
             }
 
             $output = [Microsoft.Rtc.Management.Hosted.Online.Models.ComplianceRecordingForCallQueue]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsMainlineAttendantAppointmentBookingFlow {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the mainline attendant appointment booking flow to be modified.
+        ${Instance},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            try {
+                # Check if ApiDefinitions is a JSON file path
+                if (![string]::IsNullOrWhiteSpace($Instance.ApiDefinitions) -and  $Instance.ApiDefinitions -match '\.json$') 
+                {
+                    # Read the JSON file into a PowerShell object
+                    $ApiDefinitionsJsonObject = Get-Content -Path $Instance.ApiDefinitions | ConvertFrom-Json
+
+                    # Convert the PowerShell object back into a JSON string
+                    $Instance.ApiDefinitions = $ApiDefinitionsJsonObject | ConvertTo-Json -Depth 10
+
+                    $Instance.ApiDefinitions
+                }
+            } catch {
+                throw "Failed to read API Definitions file: $_"
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Identity
+                Type = ${Instance}.Type
+                ConfigurationId = ${Instance}.ConfigurationId
+                Description = ${Instance}.Description
+                CallerAuthenticationMethod = ${Instance}.CallerAuthenticationMethod
+                ApiAuthenticationType = ${Instance}.ApiAuthenticationType
+                ApiDefinitions = ${Instance}.ApiDefinitions
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance")
+
+            # Ensure Identity is not null or empty
+            if ([string]::IsNullOrWhiteSpace($params['Identity'])) {
+                throw "Identity parameter cannot be null or empty."
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsMainlineAttendantAppointmentBookingFlow @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantAppointmentBookingFlow]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsMainlineAttendantQuestionAnswerFlow {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the mainline attendant question answer flow to be modified.
+        ${Instance},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            try
+            { 
+                # Check if KnowledgeBase is a JSON file path
+                if (![string]::IsNullOrWhiteSpace($Instance.KnowledgeBase) -and  $Instance.KnowledgeBase -match '\.json$') 
+                {
+                    # Read the JSON file into a PowerShell object
+                    $KnowledgeBaseJsonObject = Get-Content -Path $Instance.KnowledgeBase | ConvertFrom-Json
+
+                    # Convert the PowerShell object back into a JSON string
+                    $KnowledgeBaseJsonString = $KnowledgeBaseJsonObject | ConvertTo-Json -Depth 10
+                                
+                    # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
+                    $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+                    $Instance.KnowledgeBase = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString, "local_file")
+
+                    $Instance.KnowledgeBase
+                }
+            } catch {
+                throw "Failed to read KnowledgeBase file: $_"
+            }
+
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Identity
+                Type = ${Instance}.Type
+                ConfigurationId = ${Instance}.ConfigurationId
+                Description = ${Instance}.Description
+                ApiAuthenticationType = ${Instance}.ApiAuthenticationType
+                KnowledgeBase = ${Instance}.KnowledgeBase
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            # Remove Instance from params as it is not a valid parameter for the internal cmdlet
+            $null = $params.Remove("Instance")
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsMainlineAttendantQuestionAnswerFlow @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
             $output.ParseFromUpdateResponse($result)
 
         } catch {
@@ -11976,6 +12954,92 @@ function Set-CsSharedCallQueueHistoryTemplate {
 
             $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
             $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsTagsTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the Tags template to be modified.
+        ${Instance},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Id
+                Description = ${Instance}.Description
+                Tag = ${Instance}.Tags.MapToAutoGeneratedModel()
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance") 
+
+             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsTagsTemplate @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.OAA.Models.IvrTagsTemplate]::new()
+            $output.MapFromUpdateResponseModel($result)
 
         } catch {
            $customCmdletUtils.SendTelemetry()
