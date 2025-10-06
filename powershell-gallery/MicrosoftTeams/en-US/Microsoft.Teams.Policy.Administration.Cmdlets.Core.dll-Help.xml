@@ -15120,6 +15120,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ThreadedChannelCreation</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is reserved for internal Microsoft use.</maml:para>
             <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
             <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
             <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
@@ -15280,6 +15281,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ThreadedChannelCreation</maml:name>
         <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This parameter is reserved for internal Microsoft use.</maml:para>
           <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
           <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
           <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
@@ -18346,18 +18348,6 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>AutoShareFilesInExternalChats</maml:name>
-          <maml:description>
-            <maml:para>Indicates if file scope will be changed automatically when sharing files and loops in chats with external or guest users.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>DefaultFileUploadAppId</maml:name>
           <maml:description>
             <maml:para>This can be used by the 3p apps to configure their app, so when the files will be dragged and dropped in compose, it will get uploaded in that 3P app.</maml:para>
@@ -18372,14 +18362,16 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FileSharingInChatswithExternalUsers</maml:name>
           <maml:description>
-            <maml:para>Indicates if file sharing in chats with external users is enabled.</maml:para>
+            <maml:para>Indicates if file sharing in chats with external users is enabled. It is by default enabled, to disable admins can run following command.</maml:para>
+            <maml:para></maml:para>
+            <maml:para>Set-CsTeamsFilesPolicy -Identity Global -FileSharingInChatswithExternalUsers Disabled</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
+          <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
@@ -18431,18 +18423,6 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>AutoShareFilesInExternalChats</maml:name>
-        <maml:description>
-          <maml:para>Indicates if file scope will be changed automatically when sharing files and loops in chats with external or guest users.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>DefaultFileUploadAppId</maml:name>
         <maml:description>
           <maml:para>This can be used by the 3p apps to configure their app, so when the files will be dragged and dropped in compose, it will get uploaded in that 3P app.</maml:para>
@@ -18457,14 +18437,16 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FileSharingInChatswithExternalUsers</maml:name>
         <maml:description>
-          <maml:para>Indicates if file sharing in chats with external users is enabled.</maml:para>
+          <maml:para>Indicates if file sharing in chats with external users is enabled. It is by default enabled, to disable admins can run following command.</maml:para>
+          <maml:para></maml:para>
+          <maml:para>Set-CsTeamsFilesPolicy -Identity Global -FileSharingInChatswithExternalUsers Disabled</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
@@ -22734,7 +22716,7 @@ Description            : This is a test policy</dev:code>
             <maml:name>System.String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
+          <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
@@ -23288,7 +23270,7 @@ Description            : This is a test policy</dev:code>
           <maml:name>System.String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
         <maml:name>WhatIf</maml:name>
@@ -31764,7 +31746,8 @@ At line:1 char:1
       <maml:para>4. Communicate with people who have SIP accounts with a public instant messaging service such as Skype.</maml:para>
       <maml:para>   The following parameters are not applicable to Skype for Business Online/Microsoft Teams: Description, EnableXmppAccess, Force, Identity, Instance, PipelineVariable, and Tenant</maml:para>
       <maml:para>5. (Microsoft Teams Only) Communicate with people who are using Teams with an account that's not managed by an organization. This policy only applies if Teams Consumer Federation has been enabled at the tenant level using the Set-CsTeamsAcsFederationConfiguration (https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsacsfederationconfiguration)cmdlet or Teams admin center under the External Access setting.</maml:para>
-      <maml:para>After an external access policy has been created, you can use the `Set-CsExternalAccessPolicy` cmdlet to change the property values of that policy. For example, by default the global policy does not allow users to communicate with people who have accounts with a federated organization. If you would like to grant this capability to all of your users you can call the `Set-CsExternalAccessPolicy` cmdlet and set the value of the global policy's EnableFederationAccess property to True.</maml:para>
+      <maml:para>After an external access policy has been created, you can use the `Set-CsExternalAccessPolicy` cmdlet to change the property values of that policy. For example, by default the global policy does not allow users to communicate with people who have accounts with a federated organization. If you would like to grant this capability to all of your users you can call the `Set-CsExternalAccessPolicy` cmdlet and set the value of the global policy's EnableFederationAccess property to True. </maml:para>
+      <maml:para>&gt; [!NOTE] &gt; For the domain settings defined under `AllowFederatedUsers` to be applied, the value of the property `AllowedFederatedUsers` under `TenantFederationConfiguration` should be set to `True` for the Tenant.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -31787,7 +31770,7 @@ At line:1 char:1
           <maml:name>AllowedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -31801,7 +31784,7 @@ At line:1 char:1
           <maml:name>BlockedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -31815,7 +31798,7 @@ At line:1 char:1
           <maml:name>CommunicationWithExternalOrgs</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
             <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
             <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -32054,7 +32037,7 @@ At line:1 char:1
         <maml:name>AllowedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -32068,7 +32051,7 @@ At line:1 char:1
         <maml:name>BlockedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -32082,7 +32065,7 @@ At line:1 char:1
         <maml:name>CommunicationWithExternalOrgs</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
           <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
           <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -32376,7 +32359,7 @@ At line:1 char:1
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>Get-CsExternalAccessPolicy -Filter tag:* | Set-CsExternalAccessPolicy -EnableFederationAccess $True</dev:code>
         <dev:remarks>
-          <maml:para>Example 3 enables federation access for all the external access policies that have been configured at the per-user scope. To carry out this task, the first thing the command does is use the `Get-CsExternalAcessPolicy` cmdlet and the Filter parameter to return a collection of all the policies that have been configured at the per-user scope. (The filter value "tag:*" limits returned data to policies that have an Identity that begins with the string value "tag:". Any policy with an Identity that begins with "tag:" has been configured at the per-user scope.) The filtered collection is then piped to the `Set-CsExternalAccessPolicy` cmdlet, which modifies the EnableFederationAccess property for each policy in the collection.</maml:para>
+          <maml:para>Example 3 enables federation access for all the external access policies that have been configured at the per-user scope. To carry out this task, the first thing the command does is use the `Get-CsExternalAccessPolicy` cmdlet and the Filter parameter to return a collection of all the policies that have been configured at the per-user scope. (The filter value "tag:*" limits returned data to policies that have an Identity that begins with the string value "tag:". Any policy with an Identity that begins with "tag:" has been configured at the per-user scope.) The filtered collection is then piped to the `Set-CsExternalAccessPolicy` cmdlet, which modifies the EnableFederationAccess property for each policy in the collection.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -33333,34 +33316,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       <command:syntaxItem>
         <maml:name>Set-CsTeamsAcsFederationConfiguration</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>AllowAllAcsResources</maml:name>
-          <maml:description>
-            <maml:para>DEPRECATED. Do not use.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowedAcsResources</maml:name>
           <maml:description>
             <maml:para>The list of the ACS resources (at least one) for which federation is enabled, when EnableAcsUsers is set to true. If EnableAcsUsers is set to false, then this list is ignored and should be null/empty.</maml:para>
-            <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
-          <dev:type>
-            <maml:name>String[]</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>Empty/Null</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>BlockedAcsResources</maml:name>
-          <maml:description>
-            <maml:para>List of blocked Azure Communication Services resources.</maml:para>
             <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
@@ -33410,7 +33368,7 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LabelForAllowedAcsUsers</maml:name>
           <maml:description>
-            <maml:para>This configuration controls the user label that is displayed for Azure Communication Services users when they join Teams meetings or calls. Possible values are: Unverified, External. When the value is set to Unverified,  the ACS user label is displayed as 'Unverified' when an ACS user joins Teams meetings or calls. When the value is set to External, if an ACS user joins a Teams meeting or call from a resource listed in AllowAllAcsResources, their label should be displayed as 'External'.</maml:para>
+            <maml:para>This configuration controls the user label that is displayed for Azure Communication Services users when they join Teams meetings or calls. Possible values are: Unverified, External. When the value is set to Unverified,  the ACS user label is displayed as 'Unverified' when an ACS user joins Teams meetings or calls. When the value is set to External, if an ACS user joins a Teams meeting or call from a resource listed in AllowAcsResources, their label should be displayed as 'External'.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -33422,7 +33380,7 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RequireAcsFederationForMeeting</maml:name>
           <maml:description>
-            <maml:para>This configuration controls whether ACS Federation is required for meetings. Possibles values are: True, False.</maml:para>
+            <maml:para>This configuration controls whether ACS Federation is required for meetings. Possible values are: True, False.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -33435,34 +33393,9 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>AllowAllAcsResources</maml:name>
-        <maml:description>
-          <maml:para>DEPRECATED. Do not use.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowedAcsResources</maml:name>
         <maml:description>
           <maml:para>The list of the ACS resources (at least one) for which federation is enabled, when EnableAcsUsers is set to true. If EnableAcsUsers is set to false, then this list is ignored and should be null/empty.</maml:para>
-          <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
-        <dev:type>
-          <maml:name>String[]</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>Empty/Null</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>BlockedAcsResources</maml:name>
-        <maml:description>
-          <maml:para>List of blocked Azure Communication Services resources.</maml:para>
           <maml:para>The ACS resources are listed using their immutable resource id, which is a guid that can be found on the Azure portal.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
@@ -33512,7 +33445,7 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LabelForAllowedAcsUsers</maml:name>
         <maml:description>
-          <maml:para>This configuration controls the user label that is displayed for Azure Communication Services users when they join Teams meetings or calls. Possible values are: Unverified, External. When the value is set to Unverified,  the ACS user label is displayed as 'Unverified' when an ACS user joins Teams meetings or calls. When the value is set to External, if an ACS user joins a Teams meeting or call from a resource listed in AllowAllAcsResources, their label should be displayed as 'External'.</maml:para>
+          <maml:para>This configuration controls the user label that is displayed for Azure Communication Services users when they join Teams meetings or calls. Possible values are: Unverified, External. When the value is set to Unverified,  the ACS user label is displayed as 'Unverified' when an ACS user joins Teams meetings or calls. When the value is set to External, if an ACS user joins a Teams meeting or call from a resource listed in AllowAcsResources, their label should be displayed as 'External'.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -33524,7 +33457,7 @@ Set-CsTenantFederationConfiguration -CustomizeFederation $true</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RequireAcsFederationForMeeting</maml:name>
         <maml:description>
-          <maml:para>This configuration controls whether ACS Federation is required for meetings. Possibles values are: True, False.</maml:para>
+          <maml:para>This configuration controls whether ACS Federation is required for meetings. Possible values are: True, False.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -36595,6 +36528,7 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ThreadedChannelCreation</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is reserved for internal Microsoft use.</maml:para>
             <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
             <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
             <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
@@ -36741,6 +36675,7 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ThreadedChannelCreation</maml:name>
           <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is reserved for internal Microsoft use.</maml:para>
             <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
             <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
             <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
@@ -36901,6 +36836,7 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ThreadedChannelCreation</maml:name>
         <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This parameter is reserved for internal Microsoft use.</maml:para>
           <maml:para>This setting enables/disables Threaded Channel creation and editing.</maml:para>
           <maml:para>Possible Values: - Enabled: Users are allowed to create and edit Threaded Channels.</maml:para>
           <maml:para>- Disabled: Users are not allowed to create and edit Threaded Channels.</maml:para>
@@ -41300,18 +41236,6 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>AutoShareFilesInExternalChats</maml:name>
-          <maml:description>
-            <maml:para>Indicates if file scope will be changed automatically when sharing files and loops in chats with external or guest users.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
           <maml:name>Confirm</maml:name>
           <maml:description>
@@ -41338,14 +41262,16 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FileSharingInChatswithExternalUsers</maml:name>
           <maml:description>
-            <maml:para>Indicates if file sharing in chats with external users is enabled.</maml:para>
+            <maml:para>Indicates if file sharing in chats with external users is enabled. It is by default enabled, to disable admins can run following command.</maml:para>
+            <maml:para></maml:para>
+            <maml:para>Set-CsTeamsFilesPolicy -Identity Global -FileSharingInChatswithExternalUsers Disabled</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
+          <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
@@ -41396,18 +41322,6 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>AutoShareFilesInExternalChats</maml:name>
-        <maml:description>
-          <maml:para>Indicates if file scope will be changed automatically when sharing files and loops in chats with external or guest users.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
         <maml:name>Confirm</maml:name>
         <maml:description>
@@ -41435,14 +41349,16 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FileSharingInChatswithExternalUsers</maml:name>
         <maml:description>
-          <maml:para>Indicates if file sharing in chats with external users is enabled.</maml:para>
+          <maml:para>Indicates if file sharing in chats with external users is enabled. It is by default enabled, to disable admins can run following command.</maml:para>
+          <maml:para></maml:para>
+          <maml:para>Set-CsTeamsFilesPolicy -Identity Global -FileSharingInChatswithExternalUsers Disabled</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
@@ -45604,8 +45520,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ContentBasedPhishingCheck</maml:name>
           <maml:description>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>This setting determines if Content Based Phishing Check in teams messaging across the whole tenant</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been released.</maml:para>
+            <maml:para>This setting enables content-based phishing detection for Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
           </maml:description>
@@ -45655,8 +45571,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FileTypeCheck</maml:name>
           <maml:description>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>This setting determines if FileType check in teams messaging across the whole tenant</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+            <maml:para>This setting enables weaponizable file detection in Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
           </maml:description>
@@ -45693,8 +45609,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ReportIncorrectSecurityDetections</maml:name>
           <maml:description>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>This setting determines if Report Incorrect Security Detections is enabled in teams messaging across the whole tenant</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+            <maml:para>This setting enables the end users to Report incorrect security detections in Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
           </maml:description>
@@ -45708,8 +45624,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UrlReputationCheck</maml:name>
           <maml:description>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>This setting determines if UrlReputationCheck check in teams messaging across the whole tenant</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+            <maml:para>This setting enables malicious URL detection in Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
           </maml:description>
@@ -45749,8 +45665,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ContentBasedPhishingCheck</maml:name>
         <maml:description>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>This setting determines if Content Based Phishing Check in teams messaging across the whole tenant</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been released.</maml:para>
+          <maml:para>This setting enables content-based phishing detection for Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
         </maml:description>
@@ -45800,8 +45716,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FileTypeCheck</maml:name>
         <maml:description>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>This setting determines if FileType check in teams messaging across the whole tenant</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+          <maml:para>This setting enables weaponizable file detection in Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
         </maml:description>
@@ -45851,8 +45767,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ReportIncorrectSecurityDetections</maml:name>
         <maml:description>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>This setting determines if Report Incorrect Security Detections is enabled in teams messaging across the whole tenant</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+          <maml:para>This setting enables the end users to Report incorrect security detections in Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
         </maml:description>
@@ -45866,8 +45782,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UrlReputationCheck</maml:name>
         <maml:description>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>This setting determines if UrlReputationCheck check in teams messaging across the whole tenant</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This parameter is in Private Preview.</maml:para>
+          <maml:para>This setting enables malicious URL detection in Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
         </maml:description>
@@ -46489,7 +46405,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:name>System.String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
+          <dev:defaultValue>Enabled</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
@@ -47045,7 +46961,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:name>System.String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
+        <dev:defaultValue>Enabled</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
         <maml:name>WhatIf</maml:name>

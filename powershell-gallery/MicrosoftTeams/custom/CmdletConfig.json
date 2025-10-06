@@ -695,6 +695,8 @@
     "Get-CsPhoneNumberPolicyAssignment": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
         "SelfHost",
         "Torus"
       ]
@@ -702,6 +704,8 @@
     "Set-CsPhoneNumberPolicyAssignment": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
         "SelfHost",
         "Torus"
       ]
@@ -889,6 +893,15 @@
       ]
     },
     "Get-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsTagsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -2422,6 +2435,24 @@
         "Torus"
       ]
     },
+    "New-CsTagsTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "New-CsTag": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsCallingLineIdentity": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "New-CsConfigurationModern",
@@ -2472,7 +2503,61 @@
         "Torus"
       ]
     },
+    "Get-CsMainlineAttendantAppointmentBookingFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsMainlineAttendantAppointmentBookingFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsMainlineAttendantAppointmentBookingFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsMainlineAttendantQuestionAnswerFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsMainlineAttendantQuestionAnswerFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsMainlineAttendantQuestionAnswerFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsMainlineAttendantQuestionAnswerFlow": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3030,6 +3115,15 @@
       ]
     },
     "Remove-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsTagsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3607,6 +3701,15 @@
       ]
     },
     "Set-CsComplianceRecordingForCallQueueTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsTagsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
