@@ -525,6 +525,9 @@ var CloudExperienceHost;
                     "HU", "HUN", "IE", "IRL", "IT", "ITA", "LV", "LVA", "LT", "LTU", "LU", "LUX", "MT", "MLT",
                     "NL", "NLD", "PL", "POL", "PT", "PRT", "RO", "ROU", "SK", "SVK", "SI", "SVN", "ES", "ESP",
                     "SE", "SWE", "GB", "GBR", "IS", "ISL", "LI", "LIE", "NO", "NOR", "CH", "CHE", "UK"];
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("MissingAADCRegions")) {
+                    aadcInScopeRegionList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
+                }
                 return (aadcInScopeRegionList.indexOf(region) != -1);
             }
             static shouldRestrictionsApplyToAgeGroupAndRegion(ageGroup, region, shouldRestrictionsApplyToMinorOverStatutoryAge) {
