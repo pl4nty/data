@@ -3208,21 +3208,6 @@
             "version": 1
         }
     },
-    "EdgeFirstRun": {
-        "PreventChromeHabitsPhase2": {
-            "enableFeatures": [
-                "msNDFREWithChromePreInstalled",
-                "msNurturingFeatureAutolaunchAndOpenTabsCampaign",
-                "msEdgeUserBiasDetection"
-            ],
-            "parameters": [
-                {
-                    "name": "ndfre_with_chrome_pre_installed_variant",
-                    "value": "ChromeNWThresholdNotConsidered"
-                }
-            ]
-        }
-    },
     "EdgeFirstRunConfig": {
         "EmptyEdgeFirstRunConfig": {
             "enableFeatures": [
