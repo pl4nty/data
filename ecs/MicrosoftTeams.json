@@ -5524,7 +5524,7 @@
         "TFL": {
             "Slices": {
                 "FederatedForTFW": {
-                    "Enabled": false
+                    "Enabled": true
                 }
             }
         },
