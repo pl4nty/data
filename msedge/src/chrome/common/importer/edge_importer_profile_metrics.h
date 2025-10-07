@@ -389,6 +389,12 @@ void LogImporterInitializeEnvironmentMetric(
 void LogImporterDecryptDataMetric(user_data_importer::ImportItem item,
                                   ImporterDecryptDataStatus error);
 
+// Logs the performance of the decryption function
+// for imported data keys using DPAPI or APPB.
+void LogImporterDecryptKeyPerfMetric(std::string_view method,
+                                     std::string_view encryption_key_name,
+                                     base::TimeTicks start_time);
+
 // Logs perf of overall import. This only captures the start of import
 // and when user is unblocked. DB layer could still be in process of writing.
 void LogImporterProfilePerfMetric(ImportType import_type,
