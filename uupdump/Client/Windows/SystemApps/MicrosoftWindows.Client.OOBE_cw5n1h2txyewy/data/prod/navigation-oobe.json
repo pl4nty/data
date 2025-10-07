@@ -24,8 +24,8 @@
     "speechDisabled": true,
     "blockLateWebAppCalls": true,
     "blockEarlyExit": true,
-    "fadeTransitionOnStart": true,
-    "fadeTransitionOnExit": true,
+    "startFadeTransition": true,
+    "endFadeTransition": true,
     "StartSelector": {
       "cxid": "StartSelector",
       "launcher": "js:OOBEStartSelector",

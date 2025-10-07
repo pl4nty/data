@@ -12,6 +12,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
                 this.settingsObjects = settingsPagesAndSettings.settingsObjects;
 
                 // Set up member variables for the learn more page
+                this.learnMoreContent = oobePrivacySettingsData.getLearnMoreContent();
                 this.learnMoreVisible = ko.observable(false);
                 this.learnMoreVisible.subscribe(() => {
                     this.setShowBackButton();
@@ -122,9 +123,9 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
 
             updateLearnMore() {
                 let learnMoreIFrame = document.getElementById("learnMoreIFrame");
-                let dirVal = document.documentElement.dir;
+                let doc = learnMoreIFrame.contentWindow.document;
                 let currentItem = this.settingsObjects[this.currentPanelIndex()];
-                oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreTitle, currentItem);
+                oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreTitle, currentItem);
             }
 
             handleBackNavigation() {

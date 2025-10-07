@@ -5,7 +5,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
 
     class UpdateSettingsViewModel {
         constructor(resources, targetPersonality) {
-            bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
             this.resources = resources;
             this.contentSettings = this.getUpdateSettingsToggles();
             this.updateSettingsImage = "/webapps/inclusiveOobe/media/oobe-update-settings.svg";
@@ -18,8 +17,6 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             mainTitleTextStrings["customize"] = resources.UpdateSettingsTitle;
             mainSubHeaderTextStrings["customize"] = resources.UpdateSettingsSubtitle;
             mainTitleTextStrings["learnmore"] = resources.LearnMoreTitle;
-            let innerHTML = "";
-            this.initializeLearnMoreContent();
 
             this.title = ko.pureComputed(() => {
                 return mainTitleTextStrings[this.viewName()];
@@ -107,34 +104,12 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             });
         }
 
-        initializeLearnMoreContent() {
-            const cssOverride = "/webapps/inclusiveOobe/css/light-iframe-content.css";
-            this.innerHTML = `<html><head><link href="${cssOverride}" rel="stylesheet"></head>`;
-            this.innerHTML += "<b><p>" + this.resources.LearnMoreHeader1 + "</p></b>";
-            this.innerHTML += "<p>" + this.resources.LearnMoreBody1 + "</p>";
-            this.innerHTML += "<b><p>" + this.resources.LearnMoreHeader2 + "</p></b>";
-            this.innerHTML += "<p>" + this.resources.LearnMoreBody2 + "</p>";
-            this.innerHTML += "<b><p>" + this.resources.LearnMoreHeader3 + "</p></b>";
-            this.innerHTML += "<p>" + this.resources.LearnMoreBody3 + "</p>";
-            this.innerHTML += "</html>";
-        }
-
         onLearnMore() {
             if (!this.processingFlag()) {
                 this.processingFlag(true);
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UpdateSettings", "LearnMoreLink");
                 this.viewName("learnmore");
-                let iFrameElement = document.getElementById("learnMoreIFrame");
-                let doc = iFrameElement.contentWindow.document;
-                doc.body.innerHTML = this.innerHTML;
-                bridge.invoke("CloudExperienceHost.setShowBackButton", true);
-                this.processingFlag(false);
-            }
-        }
-
-        handleBackNavigation() {
-            if (this.learnMoreVisible()) {
-                this.onLearnMoreContinue();
+                KoHelpers.setFocusOnAutofocusElement();
             }
         }
 

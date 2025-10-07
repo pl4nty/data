@@ -6,7 +6,6 @@
         <DisplayName>ms-resource:ProductPkgDisplayName</DisplayName>
         <PublisherDisplayName>Microsoft Windows</PublisherDisplayName>
         <Logo>Assets\StoreLogo.png</Logo>
-        <!-- Disable all virtualization for Centennial apps. -->
         <desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
         <desktop6:FileSystemWriteVirtualization>disabled</desktop6:FileSystemWriteVirtualization>
     </Properties>
@@ -170,13 +169,11 @@
         <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTimer">
           <BackgroundTasks>
             <Task Type="timer" />
-            <!-- Scheduled timer trigger -->
           </BackgroundTasks>
         </Extension>
         <Extension Category="windows.backgroundTasks" EntryPoint="WebExperienceHost.BackgroundTask.Maintenance">
           <BackgroundTasks>
             <Task Type="systemEvent" />
-            <!-- Maintenance trigger -->
           </BackgroundTasks>
         </Extension>
         <Extension Category="windows.updateTask" EntryPoint="WebExperienceHost.BackgroundTask.UpdateTask" />
@@ -213,18 +210,13 @@
         <uap:Rule Type="include" Match="https://sdx.microsoft-ppe.com/" WindowsRuntimeAccess="all" />
         <uap:Rule Type="include" Match="https://sdx.microsoft-int.com/" WindowsRuntimeAccess="all" />
         <uap:Rule Type="include" Match="https://canary.sdx.microsoft.com/" />
-        <!--Require this rule for winrt access on all local webapps -->
         <uap:Rule Type="include" Match="ms-appx-web:///webapps/" WindowsRuntimeAccess="all" />
         <uap:Rule Type="include" Match="ms-appx-web:///views/" WindowsRuntimeAccess="all" />
-        <!--Require this rule for winrt access from all retail demo local webapps -->
         <uap:Rule Type="include" Match="ms-appx-web:///RetailDemo/" WindowsRuntimeAccess="all" />
-        <!--Require this rule for winrt access from the core webapp for the footer region -->
         <uap:Rule Type="include" Match="ms-appx-web:///core/" WindowsRuntimeAccess="all" />
-        <!-- Begin rules for AAD sovereign instances -->
         <uap:Rule Type="include" Match="https://login.microsoftonline.us/" />
         <uap:Rule Type="include" Match="https://login.microsoftonline.de/" />
         <uap:Rule Type="include" Match="https://login.partner.microsoftonline.cn/" />
-        <!-- End rules for AAD sovereign instances -->
       </uap:ApplicationContentUriRules>
     </Application>
         <Application Id="Global.WindowsOobeAppHost" StartPage="http://microsoft.com">
@@ -273,13 +265,10 @@
                         </uap3:Properties>
                     </uap3:AppExtension>
                 </uap3:Extension>
-                <!-- Example registration for a UI-based ShellHost component using the Shell Windowing Toolkit (https://www.osgwiki.com/wiki/Shell_Windowing_Toolkit). -->
-                <!-- Launchable via `>shellhost.exe loadComponent WindowsOobeAppHost` or `WindowsUdk.UI.Shell.ShellHostComponent.Create("WindowsOobeAppHost").Launch(args)` -->
                 <uap3:Extension Category="windows.appExtension">
                     <uap3:AppExtension Name="com.microsoft.windows.extension.shellhost.component" Id="WindowsOobeAppHost" DisplayName="Microsoft Windows Extensions">
                         <uap3:Properties>
                             <VelocityId Stage="DisabledByDefault">55090624</VelocityId>
-                            <!-- Set to 'true' to enable ms-shellhost:WindowsOobeAppHost to launch your component. Note that URI launches can cross trust boundaries! -->
                             <SupportsProtocolLaunch>true</SupportsProtocolLaunch>
                             <UXFrameComponentDefinition>
                                 <ExtensionCategory>com.microsoft.windows.windowsoobeapphost</ExtensionCategory>
@@ -349,12 +338,10 @@
     </Extension>
         <desktop2:Extension Category="windows.firewallRules" xmlns:desktop2="http://schemas.microsoft.com/appx/manifest/desktop/windows10/2">
       <desktop2:FirewallRules Executable="OobeHostApp.exe">
-        <!-- Inbound Rule -->
         <desktop2:Rule Direction="in" IPProtocol="TCP" LocalPortMax="7000" LocalPortMin="7000" Profile="public" />
         <desktop2:Rule Direction="in" IPProtocol="TCP" LocalPortMax="7000" LocalPortMin="7000" Profile="private" />
         <desktop2:Rule Direction="in" IPProtocol="UDP" LocalPortMax="7000" LocalPortMin="7000" Profile="public" />
         <desktop2:Rule Direction="in" IPProtocol="UDP" LocalPortMax="7000" LocalPortMin="7000" Profile="private" />
-        <!-- Outbound Rule -->
         <desktop2:Rule Direction="out" IPProtocol="TCP" LocalPortMax="7000" LocalPortMin="7000" Profile="public" />
         <desktop2:Rule Direction="out" IPProtocol="TCP" LocalPortMax="7000" LocalPortMin="7000" Profile="private" />
         <desktop2:Rule Direction="out" IPProtocol="UDP" LocalPortMax="7000" LocalPortMin="7000" Profile="public" />
