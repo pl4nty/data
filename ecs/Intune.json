@@ -416,6 +416,11 @@
             "TandCSyncButtonEnableFlight": true
         }
     },
+    "UX_Workflow": {
+        "FlightingV2": {
+            "SBUpgrade": true
+        }
+    },
     "ios_mam_tunnel_sdk": {
         "loginServiceUrlBypassEnabled": true,
         "mamServiceUrlBypassEnabled": true,
