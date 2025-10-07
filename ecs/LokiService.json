@@ -445,6 +445,7 @@
         "eapistopicactivitiesenabled": true,
         "editpronounsviewenabled": false,
         "enableContactPanelInMixedChatForTFW": false,
+        "enableCopilotWorkPositionInProfileEditor": true,
         "enableExternalOneDsTelemetrySink": false,
         "enableInternalOneDsTelemetrySink": false,
         "enablePersonalInformationManager": false,
@@ -1631,9 +1632,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251004.4.0",
-        "PeopleInTaskbarMsitVersion": "1.20250927.4.0",
-        "PeopleInTaskbarProdVersion": "1.20250906.6.0",
+        "PeopleInTaskbarDFVersion": "1.20251006.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20251002.2.0",
+        "PeopleInTaskbarProdVersion": "1.20250927.4.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
