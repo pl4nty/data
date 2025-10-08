@@ -780,6 +780,10 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
 // exceeds this value and the browser is idle, a checkpoint is executed.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
                                       kSqlDiskCacheIdleCheckpointThreshold);
+// While the memory usage for the buffer doesn't exceed the number of bytes
+// specified by this param, the SQL backend executes optimistic writes.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
+                                      kSqlDiskCacheOptimisticWriteBufferSize);
 #endif  // ENABLE_DISK_CACHE_SQL_BACKEND
 
 // If enabled, ignore Strict-Transport-Security for [*.]localhost hosts.
@@ -820,6 +824,16 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
 // hints indicate that the disk cache entry is not usable.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
                                       kHttpCacheNoVarySearchKeepNotSuitable);
+
+// Whether to use the new implementation of
+// HttpNoVarySearchData::AreEquivalent().
+NET_EXPORT BASE_DECLARE_FEATURE(kHttpNoVarySearchDataUseNewAreEquivalent);
+
+// Whether to check the result against the old implementation and
+// DumpWithoutCrashing() if they differ.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kHttpNoVarySearchDataAreEquivalentCheckResult);
 
 // Enables sending the CORS Origin header on the POST request for Reporting API
 // report uploads.
