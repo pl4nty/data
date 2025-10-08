@@ -1431,6 +1431,163 @@
             }
         }
     },
+    "ChillDynamics365BusinessCentral": {
+        "Floodgate_Campaign_Dynamics365BusinessCentral.0948caeb-1963-43ed-888f-cc8b7d27bbf4": {
+            "CampaignId": "0948caeb-1963-43ed-888f-cc8b7d27bbf4",
+            "EndTimeUtc": "2026-09-08T23:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 50,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-09-08T23:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "CopilotChatSurvey",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "The Copilot Chat accurately carries out my intended tasks",
+                                        "The Copilot Chat helps me do my job more efficiently and effectively",
+                                        "I would be disappointed if I could not use the Copilot Chat for my work tasks"
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "Please rate how much you agree or disagree with each of the following statements regarding your experience using the Copilot Chat",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Strongly disagree",
+                                        "Somewhat disagree",
+                                        "Neutral",
+                                        "Somewhat Agree",
+                                        "Strongly agree"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Briefly explain your ratings to provide more context. Please be specific.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/0948caeb-1963-43ed-888f-cc8b7d27bbf4/dd7958a5-5b73-463b-a6e5-89890c32e63b/Web-Dynamics365BusinessCentral/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_Dynamics365BusinessCentral.7d5b86a5-c81a-4891-9d7e-7f928fbd37c0": {
+            "CampaignId": "7d5b86a5-c81a-4891-9d7e-7f928fbd37c0",
+            "EndTimeUtc": "2026-09-08T23:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 50,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2025-09-08T23:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NSATSurvey",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ProductRebooted",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Excellent",
+                                        "4 - Great",
+                                        "3 - Neither Satisifed/Dissatisfied",
+                                        "2 - Dissatisfied",
+                                        "1 - Poor"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Overall, how satisfied are you with Dynamics 365 Business Central?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/7d5b86a5-c81a-4891-9d7e-7f928fbd37c0/8728844c-0668-4876-9b46-d7f30073a9b3/Web-Dynamics365BusinessCentral/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillHarmony": {
         "Floodgate_Campaign_Harmony.24f05460-43a6-467e-bda2-3e7a806c45e8": {
             "CampaignId": "24f05460-43a6-467e-bda2-3e7a806c45e8",
