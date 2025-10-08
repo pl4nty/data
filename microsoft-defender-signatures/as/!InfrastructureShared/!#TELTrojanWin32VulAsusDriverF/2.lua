@@ -6,7 +6,7 @@
 if not peattributes.isdriver and not (mp.get_mpattribute)("BM_DEVICE_DRIVER") then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("ESRP:PEStatic:asio.sys") and not (mp.get_mpattribute)("ESRP:PEStatic:asio3.sys") and not (mp.get_mpattribute)("ESRP:PEStatic:TempAttrib:asio3.sys") then
+if not (mp.get_mpattribute)("ESRP:PEStatic:asio.sys") and not (mp.get_mpattribute)("ESRP:PEStatic:asio3.sys") then
   return mp.CLEAN
 end
 local l_0_0 = (pe.get_fixedversioninfo)()

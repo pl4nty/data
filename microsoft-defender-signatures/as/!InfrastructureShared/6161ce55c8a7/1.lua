@@ -21,6 +21,7 @@ l_0_2["Trojan:Win32/Astaroth.ZZ"] = true
 l_0_2["Trojan:Win32/ReflectiveLoaderArtifact.A"] = true
 l_0_2["Trojan:Win64/ReflectiveLoaderArtifact.A"] = true
 l_0_2["Trojan:Win64/Cipduk.STA"] = true
+l_0_2["Trojan:Win32/GenMalAI.AI!sms"] = true
 local l_0_3 = {}
 for l_0_7,l_0_8 in ipairs(l_0_1) do
   if not (string.find)(l_0_8, "Detection:FriendlyFile", 1, true) and not (string.find)(l_0_8, "Exploit:", 1, true) and not (string.find)(l_0_8, "Virus:", 1, true) and not (string.find)(l_0_8, "Rogue:", 1, true) and not (string.find)(l_0_8, "Dialer:", 1, true) and not (string.find)(l_0_8, "PWS:", 1, true) then

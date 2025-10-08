@@ -31,6 +31,9 @@ end
 if l_0_5 == "vmwTimeProvider" and l_0_4 == "c:\\program files\\vmware\\vmware tools\\vmwtimeprovider\\vmwtimeprovider.dll" then
   return mp.CLEAN
 end
+if l_0_4 == "c:\\windows\\system32\\sel_3390_time_provider.dll" then
+  return mp.CLEAN
+end
 TrackPidAndTechniqueBM(l_0_1.ppid, "T1547.003", "persist_timeprovider")
 local l_0_9 = (mp.GetParentProcInfo)()
 if l_0_9 and l_0_9.ppid then
@@ -56,7 +59,7 @@ do
   l_0_10 = mp
   l_0_10 = l_0_10.INFECTED
   do return l_0_10 end
-  -- DECOMPILER ERROR at PC201: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC206: freeLocal<0 in 'ReleaseLocals'
 
 end
 

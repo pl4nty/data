@@ -59,7 +59,7 @@ if l_0_3 then
 end
 do
   l_0_4 = mp
-  l_0_4 = l_0_4.LOWFI
+  l_0_4 = l_0_4.INFECTED
   return l_0_4
 end
 

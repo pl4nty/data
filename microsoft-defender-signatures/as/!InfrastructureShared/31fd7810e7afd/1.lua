@@ -27,7 +27,7 @@ if l_0_2 and l_0_2.image_path and not GetLLMModelFromCmd(l_0_2.image_path) then
   local l_0_6 = safeJsonSerialize(l_0_5, 150, nil, true)
   local l_0_7 = MpCommon.BmTriggerSig
   local l_0_8 = l_0_2.ppid
-  local l_0_9 = "LLMPrompt_Malicious_B"
+  local l_0_9 = "LLMPrompt_Malicious_B2"
   l_0_7(l_0_8, l_0_9, l_0_6 or "")
   l_0_7 = mp
   l_0_7 = l_0_7.INFECTED

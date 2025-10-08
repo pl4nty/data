@@ -8,7 +8,7 @@ if IsDeviceHVA() then
   if (l_0_0.DeviceRoles).DomainController ~= nil then
     local l_0_1 = false
     _ = pcall(MpCommon.QuerySessionInformation, ((bm.get_current_process_startup_info)()).ppid, MpCommon.WTSIsRemoteSession)
-    if l_0_1 and MpCommon.WTSClientProtocolType == 2 then
+    if l_0_1 then
       return mp.INFECTED
     end
   end

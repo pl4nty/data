@@ -10,7 +10,7 @@ if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= "" and (this_
   if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
     return mp.CLEAN
   end
-  if l_0_2:find("ODIS/AdODIS-installer.app/Contents/MacOS", 1, true) or l_0_2:find("Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt", 1, true) or l_0_2:find("GoogleUpdater.app/Contents/MacOS/GoogleUpdater", 1, true) or l_0_2:find("/Applications/Visual Studio Code", 1, true) then
+  if l_0_2:find("ODIS/AdODIS-installer.app/Contents/MacOS", 1, true) or l_0_2:find("Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt", 1, true) or l_0_2:find("GoogleUpdater.app/Contents/MacOS/GoogleUpdater", 1, true) or l_0_2:find("/Applications/Logos.app/Contents/MacOS/Logos", 1, true) or l_0_2:find("/Applications/Proclaim.app/Contents/MacOS/Proclaim", 1, true) or l_0_1:find("/Applications/Connect to Network.app", 1, true) or l_0_2:find("Logos.app.bundle/Contents/MacOS/Logos", 1, true) or l_0_1:find("sudo-prompt-applet.zip", 1, true) or l_0_2:find("/Applications/Visual Studio Code", 1, true) then
     return mp.CLEAN
   end
   local l_0_3 = (this_sigattrlog[4]).utf8p2

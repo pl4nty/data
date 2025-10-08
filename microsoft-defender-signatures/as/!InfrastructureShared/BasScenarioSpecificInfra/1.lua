@@ -75,7 +75,6 @@ IsBasFileEncryptExt = function(l_1_0)
   l_1_1[".osiris"] = true
   l_1_1[".protected"] = true
   l_1_1[".oxr"] = true
-  l_1_1[".dng"] = true
   l_1_1[".pewcrypt"] = true
   l_1_1[".phobos"] = true
   l_1_1[".sad"] = true
@@ -122,6 +121,7 @@ IsBasFileNoisyEncryptExt = function(l_2_0)
   l_2_1[".enc"] = true
   l_2_1[".code"] = true
   l_2_1[".aes"] = true
+  l_2_1[".dng"] = true
   if l_2_1[l_2_0] == true then
     return true
   end
