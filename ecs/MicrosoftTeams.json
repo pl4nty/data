@@ -1347,6 +1347,9 @@
             }
         }
     },
+    "MtNps_CacheInvalidator_CallControl": {
+        "ActivityServiceAADTokenEnabled": true
+    },
     "OsamaTest1": {
         "Config": {
             "BlackListConfig": {
@@ -5433,9 +5436,49 @@
             }
         },
         "CosmosDB": {
+            "Ale": {
+                "isSpeculativeRetriesEnabled": true
+            },
             "ConnectionTimeout": {
                 "Enabled": true,
                 "MilliSeconds": 300000
+            },
+            "ConversationSettings": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "ConversationSliceMetadata": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "Edl": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "EmailActivity": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "MessageSliceMetadata": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "Messages": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "NSS": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "PriorityNotifications": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "Reminders": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "SpeculativeRetry": {
+                "Threshold": 500,
+                "ThresholdStep": 1000
+            },
+            "TFLNSS": {
+                "isSpeculativeRetriesEnabled": true
+            },
+            "UserMessageSliceMetadata": {
+                "isSpeculativeRetriesEnabled": true
             }
         },
         "EnableCertificateValidationLibrary": false,

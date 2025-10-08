@@ -24,6 +24,18 @@
         "x5t": "HS23b7Do7TcaU1RoLHwpIq24VYg"
     },
     {
+        "cloud_instance_name": "microsoftonline.com",
+        "e": "AQAB",
+        "kid": "yEUwmXWL107Cc-7QZ2WSbeOb3sQ",
+        "kty": "RSA",
+        "n": "sFO9W05FQwiZenzhV4wYRMpok4hgSMR-TZKRZKt26FojHgHfOhySAjcCesHo_QVvj0Wos9KSgIB3Pt55qo2lc4TmRLdpFsKZ5XEyWaCZL87pGb6fqsCNIqw-768vhGUk3nR2NHOjNrzwJb_soyZO0_2Wq7cZRqD8yFeVWRFxY8qDm1e_qutcxSQm-d0rvgGP3ZSbcx5HpTjQIz-HmiRDJoIfhRBgFRriBNmF7mG8H9Tug2GsZObGl4PbNyMYzVfJvqUGVvxdpX0TOgZ9hnva5QSfPaJCpyya1diUX6rJAxXU5JU7_yoWXW49nHAd1LUtxnSrVgD8tY84HNcyAmNZ6w",
+        "use": "sig",
+        "x5c": [
+            "MIIC/jCCAeagAwIBAgIJAM/j60cyShQEMA0GCSqGSIb3DQEBCwUAMC0xKzApBgNVBAMTImFjY291bnRzLmFjY2Vzc2NvbnRyb2wud2luZG93cy5uZXQwHhcNMjUxMDAxMDUxNjM2WhcNMzAxMDAxMDUxNjM2WjAtMSswKQYDVQQDEyJhY2NvdW50cy5hY2Nlc3Njb250cm9sLndpbmRvd3MubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsFO9W05FQwiZenzhV4wYRMpok4hgSMR+TZKRZKt26FojHgHfOhySAjcCesHo/QVvj0Wos9KSgIB3Pt55qo2lc4TmRLdpFsKZ5XEyWaCZL87pGb6fqsCNIqw+768vhGUk3nR2NHOjNrzwJb/soyZO0/2Wq7cZRqD8yFeVWRFxY8qDm1e/qutcxSQm+d0rvgGP3ZSbcx5HpTjQIz+HmiRDJoIfhRBgFRriBNmF7mG8H9Tug2GsZObGl4PbNyMYzVfJvqUGVvxdpX0TOgZ9hnva5QSfPaJCpyya1diUX6rJAxXU5JU7/yoWXW49nHAd1LUtxnSrVgD8tY84HNcyAmNZ6wIDAQABoyEwHzAdBgNVHQ4EFgQUYdczXud2h1dPEOcA7tnbvbh/+sAwDQYJKoZIhvcNAQELBQADggEBABpmhrnzarikYdrPOr72YQhi2Hw/GMswnvVyrf9ORSwynpHR1jKki+rr/rtEUTZbArRsvy0U/0PwnmDHM/J1R7o9mi4sbf56o0CuZOifk362i2THIiS9s7QCuOJneGrZo6YsIvcTubo2C13taowzhvar/cJgMTeWcvqw2UAnOr8uXkM5NWbUQGj2r2aAg0U71dJrSQGukkujzxj2wdQshg9BKC3QkIH8mvaQAVkSYTBDI2whF1JcYRmNzIsZGGG3kWUncKzIw6zmPQRYK96E/n4Tq6yYybq5CsfrvP9/9iDg+hhOt5gzbuQSX/0yYA6vbk4y8ZaOr51OCvfEj1ew2Bg="
+        ],
+        "x5t": "yEUwmXWL107Cc-7QZ2WSbeOb3sQ"
+    },
+    {
         "cloud_instance_name": "microsoftonline.us",
         "e": "AQAB",
         "kid": "f0FVwjdVnw3xqPupW0e8yDoQnRQ",
