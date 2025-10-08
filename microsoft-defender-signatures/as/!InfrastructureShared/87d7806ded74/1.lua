@@ -19,7 +19,7 @@ if l_0_2:find("nucleon-service.exe$") then
   return mp.CLEAN
 end
 TrackPidAndTechnique(l_0_0, "T1490", "shadowcopy_delete")
-if IsDetectionThresholdMet(l_0_0) or IsDetectionThresholdMet(l_0_1.ppid) then
+if IsDetectionThresholdMet(l_0_0) or IsDetectionThresholdMet(l_0_1.ppid) or IsTacticObservedForPid(l_0_0, "wmi_childproc") then
   return mp.INFECTED
 end
 return mp.LOWFI

@@ -11,10 +11,14 @@ if l_0_0 == nil or #l_0_0 <= 3 then
   return mp.CLEAN
 end
 ;
-(MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_5m", 500)
-;
-(MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_30m", 1800)
-;
-(MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_2h", 7200)
+(MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_5m", 300)
+if (mp.get_mpattribute)("Lua:CloudBlockLevelGT3") then
+  (MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_30m", 1800)
+  ;
+  (MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHint_2h", 7200)
+end
+if (mp.get_mpattribute)("BM_HAS_DIGITALSIGNATURE") == true then
+  (MpCommon.AppendPersistContext)(l_0_0, "MpNewlyCreatedHintFileHasDigitalSignature_5m", 300)
+end
 return mp.CLEAN
 
