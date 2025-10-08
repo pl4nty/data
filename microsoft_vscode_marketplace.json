@@ -827,6 +827,7 @@
             }
         },
         "bitlang.bitlangcoboldepreciated": true,
+        "bottledlactose.darkbox": true,
         "brano.b-theme": {
             "disallowInstall": true,
             "extension": {
@@ -1529,6 +1530,13 @@
         "ms-vscode.node-debug2": true,
         "ms-vscode.vscode-typescript-tslint-plugin": true,
         "ms-vsliveshare.vsliveshare-audio": true,
+        "msazurermtools.azurerm-vscode-tools": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Bicep",
+                "id": "ms-azuretools.vscode-bicep"
+            }
+        },
         "msjsdiag.debugger-for-chrome": {
             "disallowInstall": true,
             "extension": {
@@ -1750,6 +1758,13 @@
             "extension": {
                 "displayName": "Scilab Language Support",
                 "id": "scilab.scilab"
+            }
+        },
+        "sensmetry.sysml-2ls": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Syside Editor",
+                "id": "sensmetry.syside-editor"
             }
         },
         "serayuzgur.crates": {

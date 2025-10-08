@@ -1911,7 +1911,7 @@
             "EnableParallelToolExecution": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableParallelToolExecution",
-                    "IsEnabled": true
+                    "IsEnabled": false
                 }
             ],
             "EnableResponder": [
