@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14636670,
+    "size": 14636731,
     "file_count": 830
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32305000,
+    "size": 32307345,
     "file_count": 3954
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16278562,
+    "size": 16278574,
     "file_count": 252
   },
   {
@@ -306,7 +306,7 @@
   },
   {
     "name": "ink",
-    "size": 74360,
+    "size": 76743,
     "file_count": 11
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18942443,
+    "size": 18947051,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3888671,
+    "size": 3890378,
     "file_count": 579
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "name": "skia",
-    "size": 3467555,
+    "size": 3468386,
     "file_count": 1180
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6391948,
-    "file_count": 172
+    "size": 6522853,
+    "file_count": 173
   },
   {
     "name": "vulkan_memory_allocator",
@@ -736,7 +736,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 263686,
+    "size": 263779,
     "file_count": 65
   },
   {
