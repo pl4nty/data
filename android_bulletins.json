@@ -66929,6 +66929,17 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-09-01",
         "Published": "September 3, 2025",
         "Patch level": "2025-09-05",
+        "CVE": "CVE-2025-36910",
+        "References": "A-377489833",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-09-01",
+        "Published": "September 3, 2025",
+        "Patch level": "2025-09-05",
         "CVE": "CVE-2025-36893",
         "References": "A-413471185",
         "Type": "ID",
