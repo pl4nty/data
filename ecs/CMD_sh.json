@@ -743,7 +743,6 @@
         "EnableRetrieveProvisioningSourceTypeFromPolicy": true,
         "EnableRetryDppProfileNotEnabled": true,
         "EnableRetryForCreateVmFromSnapshot": true,
-        "EnableRetryInUpdateItem": true,
         "EnableReturnCUATypeForPlcy": true,
         "EnableReturnCUATypeForUX": true,
         "EnableReturnCollectionRemoteAction": true,
