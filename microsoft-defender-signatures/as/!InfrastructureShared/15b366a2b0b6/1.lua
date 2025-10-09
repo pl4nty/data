@@ -1,12 +1,8 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\43b3f10b81e8\1.luac 
+-- Command line: lua\!InfrastructureShared\15b366a2b0b6\1.luac 
 
 -- params : ...
 -- function num : 0
-pcallEx("maceSendConfig", maceSendConfig, "mace_systembc")
-pcallEx("reportRelatedBmHits", reportRelatedBmHits)
-reportRelevantUntrustedEntities(1)
-reportTimingData()
 local l_0_0, l_0_1 = pcall(reportBmInfo)
 if not l_0_0 and l_0_1 then
   (bm.add_related_string)("bmInfoFailReason", tostring(l_0_1), bm.RelatedStringBMReport)

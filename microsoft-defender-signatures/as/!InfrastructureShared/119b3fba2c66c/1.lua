@@ -15,16 +15,21 @@ do
   -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
 
   local l_0_1 = (string.lower)(l_0_0)
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC21: No list found for R1 , SetList fails
+  do
+    local l_0_2 = {}
+    -- DECOMPILER ERROR at PC23: No list found for R1 , SetList fails
 
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R2 in 'AssignReg'
+    -- DECOMPILER ERROR at PC24: Overwrote pending register: R2 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC23: Overwrote pending register: R3 in 'AssignReg'
+    -- DECOMPILER ERROR at PC25: Overwrote pending register: R3 in 'AssignReg'
 
-  if ("\\temp\\nessus_")("ansible-async", l_0_2) then
-    return mp.CLEAN
+    -- DECOMPILER ERROR at PC26: Overwrote pending register: R4 in 'AssignReg'
+
+    if ("\\temp\\nessus_")("ansible-async", "\\software\\checker\\reports\\") then
+      return mp.CLEAN
+    end
+    do return mp.INFECTED end
+    -- WARNING: undefined locals caused missing assignments!
   end
-  return mp.INFECTED
 end
 
