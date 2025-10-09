@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19330.40125-->
+    <!--Build: 16.0.19309.40127-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -160,13 +160,13 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://hrd.svc.cloud.microsoft/odc/v2.0/hrd</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
-      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getfederationprovider</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
     </o:service>
     <o:service o:name="GetIdentityProvider">
-      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getidp</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getidp</o:url>
     </o:service>
     <o:service o:name="ODCServicesCatalog">
       <o:url>https://odc.officeapps.live.com/odc/servicemanager/catalog</o:url>
@@ -224,6 +224,7 @@
     </o:service>
     <o:service o:name="DSIRoamingSettings" o:authentication="2">
       <o:url>https://roaming.svc.cloud.microsoft/rs/RoamingSoapService.svc</o:url>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -447,7 +448,7 @@
       <o:url>https://fs.microsoft.com/fs/2.2</o:url>
     </o:service>
     <o:service o:name="FontService1cdnEndpoint">
-      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod/4.42</o:url>
+      <o:url>https://res.cdn.office.net/mro1cdnstorage/fonts/prod/4.41</o:url>
     </o:service>
     <o:service o:name="ResourceServiceEndpoint2">
       <o:url>https://fs.microsoft.com/fs/2.2</o:url>
@@ -478,6 +479,9 @@
     </o:service>
     <o:service o:name="CustomFontServiceEndpoint">
       <o:url>https://cr.office.com</o:url>
+    </o:service>
+    <o:service o:name="OArtTeachingPaneResourceServiceEndpoint">
+      <o:url>https://fs.microsoft.com/fs/TeachingPane/1.0</o:url>
     </o:service>
     <o:service o:name="ExcelResourceServiceEndpoint">
       <o:url>https://fs.microsoft.com/fs/ExcelResources/1.2</o:url>

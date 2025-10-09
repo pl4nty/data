@@ -518,6 +518,7 @@
         "EnableFlexWindowsUpdateCOGSV2": true,
         "EnableFlightingBasedOnECSProd": true,
         "EnableFlsActionProcessorV2": true,
+        "EnableFlsRestartActionProcessorV2": true,
         "EnableFlsResumeCollectionButton": true,
         "EnableFluUpdateAllotmentName": true,
         "EnableForceHiDpiOptimizationCustomRdpProperty": true,
