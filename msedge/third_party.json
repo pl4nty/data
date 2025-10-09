@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2135624,
-    "file_count": 180
+    "size": 2135652,
+    "file_count": 179
   },
   {
     "name": "alsa",
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32306447,
-    "file_count": 3954
+    "size": 32305578,
+    "file_count": 3953
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17982699,
+    "size": 17982682,
     "file_count": 1008
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3890378,
+    "size": 3890914,
     "file_count": 579
   },
   {
@@ -651,8 +651,8 @@
   },
   {
     "name": "skia",
-    "size": 3473926,
-    "file_count": 1182
+    "size": 3536686,
+    "file_count": 1184
   },
   {
     "name": "speech-dispatcher",
