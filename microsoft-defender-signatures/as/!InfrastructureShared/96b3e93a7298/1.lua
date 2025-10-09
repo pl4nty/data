@@ -13,7 +13,7 @@ do
   if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
     local l_0_3 = (this_sigattrlog[2]).utf8p2
     local l_0_4 = {":\\perflogs\\", ":\\users\\all users\\", ":\\users\\default\\", ":\\users\\public\\", ":\\windows\\temp\\", "\\appdata\\local\\", "\\appdata\\roaming\\", "%appdata%", "%public%"}
-    if contains(l_0_3, {"/create /tn tvinstallrestore /tr", "\\avira_security_installation.xml", "\\updatefallbacktask.xml", "\\watchdogservicecontrolmanagertimeout.xml", "\\systrayautostart.xml", "\\maintenancetask.xml", "\\klcp_update_task.xml"}) then
+    if contains(l_0_3, {"/create /tn tvinstallrestore /tr", "kontur.dostup abonent updater", "utorrent", ".xml", "retoolclient", "fastping"}) then
       return mp.CLEAN
     end
     if contains(l_0_3, l_0_4) then
