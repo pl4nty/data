@@ -521,6 +521,7 @@
                 "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
+                "disableLFTLicenseProviderEligibilityPolicyCheck": false,
                 "disableLFTStoreProviderDataWrites": false,
                 "disableTeamsEnableSwitchEnforcementForEdu": false,
                 "enableAADTokenInXTokenAPIAuth": true,
