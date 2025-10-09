@@ -454,7 +454,7 @@
         "enableSkillLibraryAvailable": true,
         "enableSkillsFullList": true,
         "enableSkillsOCV": true,
-        "enableVivaSkillsClient": true,
+        "enableVivaSkillsClient": false,
         "enableVivaSkillsPP4": true,
         "enablelivepersonaeditorinlpcandev": false,
         "enterpriseOwaUrl": "https://outlook.office.com",
