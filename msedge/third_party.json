@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32305578,
+    "size": 32308988,
     "file_count": 3953
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6959661,
+    "size": 6961094,
     "file_count": 59
   },
   {
@@ -371,8 +371,8 @@
   },
   {
     "name": "libc++",
-    "size": 12337845,
-    "file_count": 1774
+    "size": 12345556,
+    "file_count": 1776
   },
   {
     "name": "libc++abi",
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18941419,
+    "size": 18945515,
     "file_count": 19
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 29542,
+    "size": 29578,
     "file_count": 15
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3890914,
+    "size": 3891179,
     "file_count": 579
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3536686,
+    "size": 3536811,
     "file_count": 1184
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6570029,
+    "size": 6575020,
     "file_count": 175
   },
   {
