@@ -25,4 +25,7 @@ message EdgeTopicCategory {
 message EdgeHistorySpecifics {
   // A summary of the page contents.
   optional string summary = 1;
+
+  // Duration where tab was visible and had focus.
+  optional int64 active_visit_duration_micros = 2;
 }
