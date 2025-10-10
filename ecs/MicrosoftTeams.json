@@ -1814,7 +1814,6 @@
             "EnablePlannerGroundingInPA": true,
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
-            "HideRequestAgendaButton": true,
             "ShouldFetchMeetingBodyFromGraph": true,
             "ShouldUseMASTranscriptForMeetingData": true,
             "TranscriptsIngestionWaitTimeInSec": 5
@@ -2101,6 +2100,16 @@
                 },
                 {
                     "Flight": "TM.WriteContentBelowDisclaimer",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_freeSummary": [
+                {
+                    "Flight": "TM.freeSummary",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.freeWrapUp",
                     "IsEnabled": true
                 }
             ],
