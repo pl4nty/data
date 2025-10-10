@@ -219,6 +219,8 @@
     },
     "SVC_Compliance": {
         "FlightingV2": {
+            "EGM_TriggerComplianceCalc": true,
+            "EGM_UseRedisCache": true,
             "NoFallback_AADSTS500022": true,
             "NoFallback_AADSTS5000224": true,
             "NoFallback_AADSTS5000225": true,
@@ -361,6 +363,7 @@
     "SVC_SideCar": {
         "FlightingV2": {
             "EnableRemoteHelpCertExpiry": true,
+            "RemoveEmsPolicyUnencryptedScript": true,
             "SetEmsPolicyEncryptedScript": true,
             "UninstallAgentOnZombieMacs": true,
             "isSqlAggAadAuthEnabled": true
