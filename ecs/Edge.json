@@ -422,6 +422,11 @@
                 "WebAuthenticationPasskeysUI"
             ]
         },
+        "WidthAndHeightAsPresentationAttributesOnNestedSvgPayload": {
+            "disableFeatures": [
+                "WidthAndHeightAsPresentationAttributesOnNestedSvg"
+            ]
+        },
         "WorkspacesButtonVisibleForMSA": {
             "enableFeatures": [
                 "msWorkspacesButtonVisibleForMSA"
