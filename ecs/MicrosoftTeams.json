@@ -2103,16 +2103,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_freeSummary": [
-                {
-                    "Flight": "TM.freeSummary",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "TM.freeWrapUp",
-                    "IsEnabled": true
-                }
-            ],
             "WebSearch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableWebSearchSkillForPA",
@@ -4289,6 +4279,7 @@
             "macAppCenterSecret": "e68d2f16-7be9-436e-b938-e4b90bbc30de",
             "macCrashReporterOnMainThread": false,
             "macEnableDisasterRecovery": false,
+            "macEnableEcsParamCacheGroupContainer": false,
             "macEnableRestoreZOrderOnActivation": false,
             "macEnableSystemMenuBarIcon": false,
             "macEnableSystemMenuBarIconV2": false,
