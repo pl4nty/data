@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "XEReader",
+    "downloadDescription": "Utility to capture SQL statement XEvents from the ring buffer and efficiently write them to a target SQL table.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "XEReaderV1.0.0.0.zip",
+            "url": "https://download.microsoft.com/download/4f57791f-750c-4b4a-af48-4b9256ea5454/XEReaderV1.0.0.0.zip",
+            "size": "5012805",
+            "version": "1.0.0",
+            "datePublished": "10/9/2025 6:46:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Captures specific columns of the sql_batch_completed and rpc_completed XEvents and efficiently bulk copies them into a target SQL Server table.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "XEReaderV1.0.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "10/9/2025",
+    "systemRequirementsSection": "SQL Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Copy the files from the .zip into a folder. Read the documentation, configure the application config file and run the .exe.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108401",
+    "downloadPreload": true
+}
