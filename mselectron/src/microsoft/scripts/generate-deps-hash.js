@@ -16,6 +16,7 @@ const HASH_VERSIONS = {
 // Base files to hash
 const filesToHash = [
   path.resolve(__dirname, '../DEPS'),
+  path.resolve(__dirname, '../.azure-devops/templates/job/ensure_source_cache.yml')
 ];
 
 const addAllFiles = (dir) => {

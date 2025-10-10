@@ -35,8 +35,8 @@ vars = {
   # Chromium revision will be redefined in a gclient config because we use Chromium snapshots.
   'microsoft_chromium_version': '140.0.7339.133',
   'microsoft_depot_tools_revision': '64f406e98974c40bfb13c86dc5310f24b18d8056',
-  'microsoft_electron_version': 'v38.1.2',
-  'microsoft_electron_revision': 'd60ae179985685d75d238ee33e17c15a7b53d703',
+  'microsoft_electron_version': 'v38.2.0',
+  'microsoft_electron_revision': '81db417caaa937d31c43d144970050c8f271ad5e',
   'microsoft_node_version': 'v22.19.0',
 
   # Override defaults of the Electron checkout.
