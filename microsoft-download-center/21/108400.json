@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "BlobShipper",
+    "downloadDescription": "Migration utility using logshipping and blob storage",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BlobShipper-v1.0.0.zip",
+            "url": "https://download.microsoft.com/download/d99d38f5-a7dc-4914-9a17-d68b6bf8e214/BlobShipper-v1.0.0.zip",
+            "size": "6172955",
+            "version": "1.0.0",
+            "datePublished": "10/9/2025 7:03:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A utility that performs a log shipping cycle for one or more databases using Azure Blob Storage. For customers that can't or wont' use Distributed Availability Groups or DMS, this utility offers and easy way to move databases from on premises to SQL Server running in an Azure Virtual Machine. The utility does a full backup with compression and optional striping, a restore of the full backup and then starts backing up the transaction log every n (configurable) minutes and transaction log restores. The process can be sequential or can be done in parallel with a configurable number of threads. File placement for databases (i.e. large ones) is possible by pre-creating the target database and the utility will use the logical file placement in the restore of the full backup.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "BlobShipper-v1.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "10/9/2025",
+    "systemRequirementsSection": "SQL Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download the .zip, extract it into a folder, read the documentation, edit the appsettings.json and run the .exe.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108400",
+    "downloadPreload": true
+}
