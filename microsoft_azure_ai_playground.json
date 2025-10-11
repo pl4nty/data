@@ -202,6 +202,7 @@
         "azureml://registries/azure-openai/models/gpt-5-mini",
         "azureml://registries/azure-openai/models/gpt-5-nano",
         "azureml://registries/azure-openai/models/gpt-5-chat",
+        "azureml://registries/azure-openai/models/gpt-5-pro",
         "azureml://registries/azure-openai/models/gpt-5-reasoning-alpha",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
