@@ -198,11 +198,6 @@
                 "FluentScrollbarUsesNinePatchTrack"
             ]
         },
-        "DisableStandardCompliantNonSpecialSchemeURLParsing ": {
-            "disableFeatures": [
-                "StandardCompliantNonSpecialSchemeURLParsing"
-            ]
-        },
         "EdgeSecureNetworkConfig": {
             "enableFeatures": [
                 "msVpnService"
@@ -307,11 +302,6 @@
                 "msIncludeUsageEventDataInFeedback"
             ]
         },
-        "LoadStatisticsLoggingPri": {
-            "disableFeatures": [
-                "msLoadStatisticsLowPriLogging"
-            ]
-        },
         "M365LinksAutoOpenV2": {
             "enableFeatures": [
                 "msEdgeHubAppsAutoOpenOutlookV2",
@@ -381,24 +371,9 @@
                 }
             ]
         },
-        "WWUKillSwitch": {
-            "disableFeatures": [
-                "msEdgeWindowsWelcomeUpdateExperience"
-            ]
-        },
-        "WebAuthPasskeysUIKillerSwitch": {
-            "disableFeatures": [
-                "WebAuthenticationPasskeysUI"
-            ]
-        },
         "WidthAndHeightAsPresentationAttributesOnNestedSvgPayload": {
             "disableFeatures": [
                 "WidthAndHeightAsPresentationAttributesOnNestedSvg"
-            ]
-        },
-        "WorldCupFloatyDisableFloatyMode": {
-            "disableFeatures": [
-                "msFloatyMode"
             ]
         },
         "advanceConsentCleanupForceful": {
@@ -597,103 +572,6 @@
                 {
                     "name": "PlainTextURLsOnly",
                     "type": "ECPOnlyPlaintextURLs"
-                }
-            ],
-            "version": 1
-        },
-        "efficiency_mode_override": {
-            "applications": [
-                {
-                    "applied_policy": "block",
-                    "domain": "xbox.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "play.geforcenow.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "luna.amazon.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "www.playstation.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "bing.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "copilot.microsoft.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "chat.openai.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "gemini.google.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "browserbench.org"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "www.principledtechnologies.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "web.basemark.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "mozilla.github.io"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "html5test.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "necromanthus.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "www.wirple.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "octanetestapp.herokuapp.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "chromium.github.io"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "octane.webmarks.info"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "css3test.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "files.unity3d.com"
-                },
-                {
-                    "applied_policy": "block",
-                    "domain": "msn.com/*/play"
-                }
-            ],
-            "policies": [
-                {
-                    "name": "block",
-                    "reason": "",
-                    "type": "",
-                    "value": ""
                 }
             ],
             "version": 1

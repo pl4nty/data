@@ -927,6 +927,7 @@
         "EnableSubscriptionHelloJob": true,
         "EnableSubscriptionPartition": true,
         "EnableSubscriptionPcCodeCheck": true,
+        "EnableSupportArm64Image": true,
         "EnableSyncAllForReady": true,
         "EnableSyncInterestedGroup": true,
         "EnableSyncInterestedUserFilter": true,

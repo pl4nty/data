@@ -844,6 +844,7 @@
         "EnableTroubleshootingUpdateFullScanResult": true,
         "EnableUPNForFrontlineCurrentConnectQuery": true,
         "EnableUXDisplayRetentionSnapshotInList": true,
+        "EnableUXTelemetryTest": true,
         "EnableUnregisterAADForRecoverWhenHAADJ": true,
         "EnableUpdateANCInActiveTimer": true,
         "EnableUpdateANCInUseTimer": true,
