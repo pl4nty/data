@@ -2103,6 +2103,16 @@
                     "IsEnabled": true
                 }
             ],
+            "TimeModeratorSkill_freeSummary": [
+                {
+                    "Flight": "TM.freeSummary",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.freeWrapUp",
+                    "IsEnabled": true
+                }
+            ],
             "WebSearch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableWebSearchSkillForPA",
