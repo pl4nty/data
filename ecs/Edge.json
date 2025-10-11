@@ -193,16 +193,6 @@
         }
     },
     "EdgeConfig": {
-        "DisableAutofillCustomDataSync": {
-            "disableFeatures": [
-                "msEdgeSyncAutofillCustomData"
-            ]
-        },
-        "DisableCopilotForGCC": {
-            "enableFeatures": [
-                "msEdgeHubAppDisableCopilotSidebarInGCC"
-            ]
-        },
         "DisableFluentScrollbarUsesNinePatchTrackKillSwitch": {
             "disableFeatures": [
                 "FluentScrollbarUsesNinePatchTrack"
@@ -211,17 +201,6 @@
         "DisableStandardCompliantNonSpecialSchemeURLParsing ": {
             "disableFeatures": [
                 "StandardCompliantNonSpecialSchemeURLParsing"
-            ]
-        },
-        "DisableTinyWindowRealityCheck": {
-            "disableFeatures": [
-                "msTinyWindowRealityCheck",
-                "msTinyWindowRealityCheckAndUpdate"
-            ]
-        },
-        "DisableWebGPUSupportMetrics": {
-            "disableFeatures": [
-                "CollectWebGPUSupportMetrics"
             ]
         },
         "EdgeSecureNetworkConfig": {
@@ -318,11 +297,6 @@
                 "msEmxApiThrottle"
             ]
         },
-        "FrontLoadUndersideChat": {
-            "disableFeatures": [
-                "msFrontLoadUndersideChat"
-            ]
-        },
         "KSBackgroundResourceFetch": {
             "disableFeatures": [
                 "BackgroundResourceFetch"
@@ -342,11 +316,6 @@
             "enableFeatures": [
                 "msEdgeHubAppsAutoOpenOutlookV2",
                 "msEdgeAutoOpenTeamsHubAppV2"
-            ]
-        },
-        "MyWinCoPilotIcon": {
-            "enableFeatures": [
-                "msUndersideWinCopilotNxtBrand"
             ]
         },
         "OverrideEvents": {
@@ -425,11 +394,6 @@
         "WidthAndHeightAsPresentationAttributesOnNestedSvgPayload": {
             "disableFeatures": [
                 "WidthAndHeightAsPresentationAttributesOnNestedSvg"
-            ]
-        },
-        "WorkspacesButtonVisibleForMSA": {
-            "enableFeatures": [
-                "msWorkspacesButtonVisibleForMSA"
             ]
         },
         "WorldCupFloatyDisableFloatyMode": {

@@ -202,7 +202,8 @@
     },
     "SVC_AppLifecycle": {
         "FlightingV2": {
-            "AESCustomCC": true
+            "AESCustomCC": true,
+            "DisableMTGlobalAppSearch": true
         }
     },
     "SVC_AppleMDM": {
@@ -219,6 +220,7 @@
     },
     "SVC_Compliance": {
         "FlightingV2": {
+            "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
             "EGM_UseRedisCache": true,
             "NoFallback_AADSTS500022": true,
