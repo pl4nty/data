@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2135652,
+    "size": 2136025,
     "file_count": 179
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14637876,
+    "size": 14637915,
     "file_count": 831
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32305297,
+    "size": 32303655,
     "file_count": 3953
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6961094,
+    "size": 6961065,
     "file_count": 59
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "name": "glib",
-    "size": 52996561,
-    "file_count": 2381
+    "size": 52998203,
+    "file_count": 2384
   },
   {
     "name": "glslang",
@@ -271,7 +271,7 @@
   },
   {
     "name": "gvdb",
-    "size": 136159,
+    "size": 136258,
     "file_count": 23
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12345556,
+    "size": 12346460,
     "file_count": 1776
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 218528388,
+    "size": 218529924,
     "file_count": 346
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 283888,
+    "size": 283994,
     "file_count": 40
   },
   {
@@ -736,8 +736,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6575020,
-    "file_count": 175
+    "size": 6575545,
+    "file_count": 176
   },
   {
     "name": "vulkan_memory_allocator",
@@ -757,7 +757,7 @@
   {
     "name": "webrtc",
     "size": 103682,
-    "file_count": 52
+    "file_count": 53
   },
   {
     "name": "webrtc_overrides",
