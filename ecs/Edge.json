@@ -101,21 +101,6 @@
                 }
             ]
         },
-        "OmniboxEnableOverflowMenu": {
-            "enableFeatures": [
-                "msOmniboxEnableOverflowMenuWithSeparator"
-            ],
-            "parameters": [
-                {
-                    "name": "msOverflowEnabledPageActionIconParam",
-                    "value": "516,505,8,521"
-                },
-                {
-                    "name": "msOverflowMoreThanOneEligibleIcon",
-                    "value": "true"
-                }
-            ]
-        },
         "OnboardNTPToCE": {
             "enableFeatures": [
                 "msNurturingMetadataTemplate",
