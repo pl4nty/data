@@ -282,17 +282,6 @@
                 "BackgroundResourceFetch"
             ]
         },
-        "KillSwitch-UsageEventData": {
-            "disableFeatures": [
-                "msIncludeUsageEventDataInFeedback"
-            ]
-        },
-        "M365LinksAutoOpenV2": {
-            "enableFeatures": [
-                "msEdgeHubAppsAutoOpenOutlookV2",
-                "msEdgeAutoOpenTeamsHubAppV2"
-            ]
-        },
         "OverrideEvents": {
             "enableFeatures": [
                 "msEventsAllowList"
@@ -368,25 +357,6 @@
         }
     },
     "EdgeDomainActions": {
-        "av1_codec_feature_check_override": {
-            "applications": [
-                {
-                    "applied_policy": "OptOut",
-                    "domain": "netflix.com"
-                },
-                {
-                    "applied_policy": "OptOut",
-                    "domain": "netflixstudios.com"
-                }
-            ],
-            "policies": [
-                {
-                    "name": "OptOut",
-                    "type": "Av1CodecFeatureCheckOptOut"
-                }
-            ],
-            "version": 1
-        },
         "cdm_override": {
             "applications": [
                 {
