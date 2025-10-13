@@ -481,8 +481,9 @@
         "name": "AzureIdentityDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.16.0",
+        "version": "1.17.0",
         "versions": [
+            "1.17.0",
             "1.16.0",
             "1.15.0",
             "1.15.0-beta.1",
@@ -508,8 +509,9 @@
         "name": "AzureIdentityPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.25.0",
+        "version": "1.25.1",
         "versions": [
+            "1.25.1",
             "1.25.0",
             "1.24.0",
             "1.24.0b1",
@@ -564,8 +566,9 @@
         "name": "AzureOpenAIDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.3.0-beta.2",
+        "version": "2.5.0-beta.1",
         "versions": [
+            "2.5.0-beta.1",
             "2.3.0-beta.2",
             "2.3.0-beta.1",
             "2.2.0-beta.5",
@@ -1027,8 +1030,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.1.0",
+        "version": "2.3.0",
         "versions": [
+            "2.3.0",
             "2.1.0",
             "2.0.1",
             "1.100.2",
