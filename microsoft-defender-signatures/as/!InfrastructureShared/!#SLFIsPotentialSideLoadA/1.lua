@@ -40,23 +40,19 @@ local l_0_9 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
 if l_0_9 == nil or (string.len)(l_0_9) > 20 then
   return mp.CLEAN
 end
-local l_0_10 = (mp.getfilesize)()
-if l_0_10 < 256 or l_0_10 > 1048576 then
-  return mp.CLEAN
-end
-local l_0_11 = isFilenameInSideLoadIndicators(l_0_9)
-if l_0_11 and l_0_8 then
+local l_0_10 = isFilenameInSideLoadIndicators(l_0_9)
+if l_0_10 and l_0_8 then
   (mp.set_mpattribute)("BM_IsPotentialSideLoad")
   ;
   (MpCommon.SetOriginalFileName)(l_0_8, "BM_IsPotentialSideLoad")
-  local l_0_12 = "IsPotentialSideLoad"
-  AppendToRollingQueue(l_0_12, l_0_8)
+  local l_0_11 = "IsPotentialSideLoad"
+  AppendToRollingQueue(l_0_11, l_0_8)
 end
 do
-  if l_0_11 == mp.INFECTED then
+  if l_0_10 == mp.INFECTED then
     return mp.INFECTED
   else
-    if l_0_11 == mp.LOWFI then
+    if l_0_10 == mp.LOWFI then
       return mp.LOWFI
     end
   end
