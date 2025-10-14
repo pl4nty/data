@@ -16,7 +16,8 @@
             "EnableLoad3PPlugins": true,
             "EnableMultiCloudPcSelector": true,
             "IncludePartnersInApiResponse": true,
-            "LockOnDisconnect": true
+            "LockOnDisconnect": true,
+            "SdkEventHubUpload": true
         },
         "AssignAudit": false,
         "BCDRReportEnableFilter": true,

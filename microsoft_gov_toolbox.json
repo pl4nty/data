@@ -1029,8 +1029,9 @@
         "name": "AzureHPCGPUDriversWindows",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "553.24",
+        "version": "581.42",
         "versions": [
+            "581.42",
             "553.24",
             "535.86.10",
             "529.19",
