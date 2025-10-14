@@ -178,11 +178,6 @@
         }
     },
     "EdgeConfig": {
-        "DisableFluentScrollbarUsesNinePatchTrackKillSwitch": {
-            "disableFeatures": [
-                "FluentScrollbarUsesNinePatchTrack"
-            ]
-        },
         "EdgeSecureNetworkConfig": {
             "enableFeatures": [
                 "msVpnService"
@@ -270,11 +265,6 @@
                     "name": "endDate",
                     "value": "01-02-2022"
                 }
-            ]
-        },
-        "EmxApiThrottleKillswitch": {
-            "disableFeatures": [
-                "msEmxApiThrottle"
             ]
         },
         "KSBackgroundResourceFetch": {
