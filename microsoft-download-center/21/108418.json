@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Skype for Business Basic Client",
+    "downloadDescription": "Microsoft Skype for Business Standalone Client gives you presence, instant messaging (IM), audio and video calls, online meetings, and sharing capabilities enabled by your organization. This is the full Skype for business client and is a free download. The client operates based on the settings and features in use and enabled by the organization. Skype for business capability overview: SfB capabili",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OfficeSetup (6).exe",
+            "url": "https://download.microsoft.com/download/cf913123-b328-48f6-9cf9-c063b1b2cee9/OfficeSetup (6).exe",
+            "size": "7506048",
+            "version": "16.0.19231.20156",
+            "datePublished": "10/12/2025 2:50:08 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Skype for Business Standalone Client",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5070432",
+        "name": "KB5070432"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.19231.20156",
+    "detailsSection_file_name": [
+        "OfficeSetup (6).exe"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "10/12/2025",
+    "systemRequirementsSection": "Skype for Business Application System Requirements",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "To install this download:",
+    "additionalInformationSection": "Microsoft Skype for Business Basic Client File Hash Information",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108418",
+    "downloadPreload": true
+}
