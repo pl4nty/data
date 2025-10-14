@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14637915,
+    "size": 14637916,
     "file_count": 831
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32303655,
-    "file_count": 3953
+    "size": 32312605,
+    "file_count": 3954
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6961065,
+    "size": 6963367,
     "file_count": 59
   },
   {
@@ -566,8 +566,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3891179,
-    "file_count": 579
+    "size": 3897456,
+    "file_count": 580
   },
   {
     "name": "perl",
@@ -626,7 +626,7 @@
   },
   {
     "name": "rust",
-    "size": 1282412,
+    "size": 1282562,
     "file_count": 142
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3536811,
+    "size": 3537067,
     "file_count": 1184
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6575545,
+    "size": 6578082,
     "file_count": 176
   },
   {
