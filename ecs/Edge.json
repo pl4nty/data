@@ -831,33 +831,6 @@
             ],
             "version": 1
         },
-        "text_prediction_override": {
-            "applications": [
-                {
-                    "applied_policy": "OptOut",
-                    "domain": "twitch.tv"
-                },
-                {
-                    "applied_policy": "OptOut",
-                    "domain": "whatsapp.com"
-                },
-                {
-                    "applied_policy": "OptOut",
-                    "domain": "reddit.com"
-                }
-            ],
-            "policies": [
-                {
-                    "name": "OptIn",
-                    "type": "TextPredictionOptIn"
-                },
-                {
-                    "name": "OptOut",
-                    "type": "TextPredictionOptOut"
-                }
-            ],
-            "version": 1
-        },
         "user_agent_override": {
             "applications": [
                 {
@@ -3004,21 +2977,6 @@
         "EmptyEdgeFirstRunConfig": {
             "enableFeatures": [
                 "eefrc"
-            ]
-        },
-        "PBCalculationProfileCap": {
-            "enableFeatures": [
-                "msEnablePBComputationsConnectionProfileCap"
-            ],
-            "parameters": [
-                {
-                    "name": "msPBComputationsConnectionProfileCap",
-                    "value": "100"
-                },
-                {
-                    "name": "msPBComputationsConnectionProfileUseCap",
-                    "value": "true"
-                }
             ]
         }
     },
