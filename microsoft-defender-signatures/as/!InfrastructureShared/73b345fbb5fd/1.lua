@@ -28,7 +28,9 @@ do
       local l_0_8, l_0_9 = nil
       local l_0_10 = (l_0_1:match("([^/\\]+)$")):match("^(.*)(%.[^%.]+)$")
       local l_0_11, l_0_12 = nil
-      if (l_0_7:match("([^/\\]+)$")):match("^(.*)(%.[^%.]+)$") or isKnownRansomExtension(R9_PC50) and (l_0_12 == l_0_9 or l_0_12 == l_0_10 or StringStartsWith(R9_PC50, l_0_12)) then
+      -- DECOMPILER ERROR at PC66: Unhandled construct in 'MakeBoolean' P1
+
+      if (l_0_7:match("([^/\\]+)$")):match("^(.*)(%.[^%.]+)$") or l_0_7:match("([^/\\]+)$") ~= ".cpt" and isKnownRansomExtension(R9_PC52) and (l_0_12 == l_0_9 or l_0_12 == l_0_10 or StringStartsWith(R9_PC52, l_0_12)) then
         addRelatedProcess()
         reportRelatedBmHits()
         return mp.INFECTED

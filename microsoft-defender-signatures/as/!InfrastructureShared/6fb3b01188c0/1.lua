@@ -8,9 +8,7 @@ if not (this_sigattrlog[3]).matched or not (this_sigattrlog[3]).utf8p1 or not (t
 end
 local l_0_0 = (string.lower)((this_sigattrlog[3]).utf8p2)
 if #l_0_0 >= 500 then
-  (bm.add_related_string)("[->] MEDICATED LONG PAYLOAD: ", l_0_0, bm.RelatedStringBMReport)
-  ;
-  (bm.add_related_string)("[->] MEDICATED BYTES: ", (this_sigattrlog[3]).utf8p2, bm.RelatedStringBMReport)
+  (bm.set_detection_string)(l_0_0)
   return mp.INFECTED
 end
 return mp.CLEAN
