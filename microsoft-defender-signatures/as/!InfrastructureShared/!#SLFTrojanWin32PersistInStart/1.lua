@@ -7,9 +7,6 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("BM_MZ_FILE") and l_0_0 == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) then
-  return mp.CLEAN
-end
 local l_0_1 = (versioning.GetOrgID)()
 if l_0_1 == nil or type(l_0_1) ~= "string" then
   return mp.CLEAN
