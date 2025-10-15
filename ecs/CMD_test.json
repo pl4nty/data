@@ -1317,7 +1317,6 @@
         "ScplTenentEventProcess": true,
         "SeahawkToWindowsAppMigrationPhase": 3,
         "SendIncrementVMAndHostPools": true,
-        "SendLogsToGeneva": true,
         "SendScopeTagToDenormalize": true,
         "SendUpgradeMessageFlight": true,
         "SeparateCreateAndUpdateImageVersion": true,
