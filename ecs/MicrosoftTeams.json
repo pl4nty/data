@@ -1195,6 +1195,7 @@
     "MicrosoftTeamsTemplates": {
         "Domain": {
             "Flights": {
+                "CheckCurrentSiteUsersInCaseOfRemove": true,
                 "ClientSideGetTemplatesCacheTimeWithRevalidation": 604800,
                 "ClientSideGetTemplatesCacheTimeWithoutRevalidation": 0,
                 "ClientSideLobTemplateCacheTimeWithoutRevalidation": 0,
@@ -1205,8 +1206,11 @@
                 "DeadLetterProcessorStartTimePollingIntervalInMillis": 900000,
                 "DeadLetterProcessorTimeOfDay": "01:00:00",
                 "EnableAadGroupIdNotSubstrateGroupIdInScThreadProps": true,
+                "EnableAddUserToTeamsChannelByIdInternalAPI": true,
+                "EnableAddUserToTeamsChannelByLoginNameInternalAPI": true,
                 "EnableApiRateLimiter": true,
                 "EnableAppsAndTabsThrottlingWorkaround": true,
+                "EnableArchiveTeamConnectedSiteAPI": true,
                 "EnableB2BCheckInSPOMembershipManager": false,
                 "EnableChannelMembershipHealing": true,
                 "EnableChannelMembershipHealingOnRoleChange": true,
@@ -1235,6 +1239,7 @@
                 "EnablePftAuthStrategyForSpeedWayInOrchestration": true,
                 "EnablePreferredDataLocation": true,
                 "EnableResolveAdminContextInAuthzTask": true,
+                "EnableSetUserSiteAdminRoleByIdInternalAPI": true,
                 "EnableSettingsStoreDependency": false,
                 "EnableSharePointTemplatesIntegration": true,
                 "EnableSharedChannelsPolicy": true,
@@ -2100,6 +2105,16 @@
                 },
                 {
                     "Flight": "TM.WriteContentBelowDisclaimer",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_freeSummary": [
+                {
+                    "Flight": "TM.freeSummary",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.freeWrapUp",
                     "IsEnabled": true
                 }
             ],
