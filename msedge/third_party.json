@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10716712,
+    "size": 10717790,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14637916,
+    "size": 14639267,
     "file_count": 831
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32312605,
+    "size": 32310809,
     "file_count": 3954
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12346460,
+    "size": 12337808,
     "file_count": 1776
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18927595,
+    "size": 18932715,
     "file_count": 19
   },
   {
@@ -526,8 +526,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 29578,
-    "file_count": 15
+    "size": 30362,
+    "file_count": 16
   },
   {
     "name": "oneds_sdk",
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3897456,
+    "size": 3897499,
     "file_count": 580
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6578082,
+    "size": 6579095,
     "file_count": 176
   },
   {
