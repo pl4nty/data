@@ -12,7 +12,7 @@ end
 local l_0_3 = "hva_counter"
 local l_0_4 = "hva_max_scan"
 local l_0_5 = "ExtendedHvaDeviceProperties"
-local l_0_6 = 259200
+local l_0_6 = 604800
 local l_0_7 = 1
 local l_0_8 = (MpCommon.AtomicCounterValueNamespaced)(l_0_3, l_0_0)
 if l_0_8 == nil then

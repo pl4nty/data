@@ -4,10 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = "WinlogonHelper"
-if isnull((this_sigattrlog[4]).utf8p1) or not (string.find)((string.lower)((this_sigattrlog[4]).utf8p1), "^hkc?u") then
-  return mp.CLEAN
-end
-if isnull((this_sigattrlog[4]).utf8p2) or (string.find)((this_sigattrlog[4]).utf8p2, "explorer%.exe$") then
+if isnull((this_sigattrlog[4]).utf8p1) or not (string.find)((string.lower)((this_sigattrlog[4]).utf8p1), "^hkc?u") or isnull((this_sigattrlog[4]).utf8p2) or (string.find)((this_sigattrlog[4]).utf8p2, "explorer%.exe$") then
   return mp.CLEAN
 end
 if not (string.match)((this_sigattrlog[4]).utf8p2, ";To:(.+)") then
