@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Exchange Server 2019 CU15 SU5 (KB5066367)",
+    "downloadDescription": "Security Update for Exchange Server 2019 CU15 SU5 (KB5066367)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-it.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-it.exe",
+            "size": "395863576",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server 2019 (KB5066367) Hash Table.docx",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange Server 2019 (KB5066367) Hash Table.docx",
+            "size": "17312",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-ja.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-ja.exe",
+            "size": "395863584",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-zh-hant.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-zh-hant.exe",
+            "size": "395863584",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-ko.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-ko.exe",
+            "size": "395863608",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-es.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-es.exe",
+            "size": "395863608",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-de.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-de.exe",
+            "size": "395863584",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-ru.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-ru.exe",
+            "size": "395863584",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-pt.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-pt.exe",
+            "size": "395863608",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-fr.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-fr.exe",
+            "size": "395863608",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-zh-hans.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-zh-hans.exe",
+            "size": "395863608",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2019-KB5066367-x64-en.exe",
+            "url": "https://download.microsoft.com/download/5f790845-8c1d-4f04-af5b-3c1c481c0d78/Exchange2019-KB5066367-x64-en.exe",
+            "size": "395863592",
+            "version": "15.02.1748.039",
+            "datePublished": "10/14/2025 4:47:11 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Please see the KB article for more information about security content in this update.</u></b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5066367",
+        "name": "KB5066367"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.1748.039",
+    "detailsSection_file_name": [
+        "Exchange2019-KB5066367-x64-it.exe",
+        "Exchange Server 2019 (KB5066367) Hash Table.docx",
+        "Exchange2019-KB5066367-x64-ja.exe",
+        "Exchange2019-KB5066367-x64-zh-hant.exe",
+        "Exchange2019-KB5066367-x64-ko.exe",
+        "Exchange2019-KB5066367-x64-es.exe",
+        "Exchange2019-KB5066367-x64-de.exe",
+        "Exchange2019-KB5066367-x64-ru.exe",
+        "Exchange2019-KB5066367-x64-pt.exe",
+        "Exchange2019-KB5066367-x64-fr.exe",
+        "Exchange2019-KB5066367-x64-zh-hans.exe",
+        "Exchange2019-KB5066367-x64-en.exe"
+    ],
+    "detailsSection_file_size": [
+        "377.5 MB",
+        "16.9 KB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB",
+        "377.5 MB"
+    ],
+    "detailsSection_file_date": "10/14/2025",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "<b>We recommend that you restart your server before you install an update.</b><br><br>\n\n<u>Then, follow these steps:</u><br>\n\n<ol>\n  <li>To start the download, select the <b>Download</b> button, and then do one of the following:\n    <ul>\n      <li><b>a.</b> To start the installation immediately, <i>temporarily disable any anti-virus software</i> and then select <b>Run</b>.</li>\n      <li><b>b.</b> To copy the download file to your computer for installation at a later time, select <b>Save</b>.</li>\n    </ul>\n  </li>\n  <li><i>Temporarily disable any anti-virus software</i> before starting the installation.</li>\n  <li>After the installation is completed, <i>re-enable the antivirus software</i>, and then restart your computer. \n    <br>(The installation program may prompt you to restart. <b>We strongly recommend that you restart the computer even if you are not prompted to do this.</b>)\n  </li>\n</ol>\n\n<br>\n\nIf problems occur during or after the installation, please see \n<a href=\"https://aka.ms/exupdatefaq\">Fix failed Exchange Server updates</a> and run the <a href=\"https://aka.ms/ExchangeHealthChecker\">Exchange Server Health Checker</a> tool. Check <a href=\"https://aka.ms/ExchangeTeamBlog\">Exchange Team Blog</a> for latest news on updates. <b>Microsoft Support</b> is available for any persistent problems.",
+    "additionalInformationSection": "<b><u>Exchange Server 2019 CU15 File Hash Information</u></b><br/><br/>\n\n<ol>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-de.exe<br/>\n    <b>Language:</b> <i>German (de-de)</i><br/>\n    <b>SHA 256:</b> 97D8AE4B588600F05E13DC78ECF6C32DCBD05280351EB9CC875D10B068BB64B6\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-en.exe<br/>\n    <b>Language:</b> <i>English (en-us)</i><br/>\n    <b>SHA 256:</b> 8434C3F2752673BD48977CC3F2CD057E1F3CB86CB21D42382A8B5DB9CE589222\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-es.exe<br/>\n    <b>Language:</b> <i>Spanish (es-es)</i><br/>\n    <b>SHA 256:</b> 9D61D651B420BCC6112FDF29B6241068C8C3BE74C0DE8326E6042B3634C68DAF\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-fr.exe<br/>\n    <b>Language:</b> <i>French (fr-fr)</i><br/>\n    <b>SHA 256:</b> 7994E06BC9F8C8AFC252BB93140C25F69C38EBDD02086651C4CECB49B3D4A7BF\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-it.exe<br/>\n    <b>Language:</b> <i>Italian (it-it)</i><br/>\n    <b>SHA 256:</b> 1E2D0414A92A0009CA3C1CB188E44074EAF2F8FA1BA21FBA20DDF7A7ED8C5619\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-ja.exe<br/>\n    <b>Language:</b> <i>Japanese (ja-jp)</i><br/>\n    <b>SHA 256:</b> 69C53B0EDF6856F9B0E9FC589A3D728A2A7245B7A91CD6E3A6340072519045EB\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-ko.exe<br/>\n    <b>Language:</b> <i>Korean (ko-kr)</i><br/>\n    <b>SHA 256:</b> 75C99AC9D8A60D4A64B41A8F8A9300594018C7BA7FDF45523732A7E010F42725\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-pt.exe<br/>\n    <b>Language:</b> <i>Portuguese-Brazil (pt-br)</i><br/>\n    <b>SHA 256:</b> 512055CA1E84D449ED75C1AA553D7B7626BDF22A2395C7D01A4328BD883002A8\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-ru.exe<br/>\n    <b>Language:</b> <i>Russian (ru-ru)</i><br/>\n    <b>SHA 256:</b> DF0AD683372ED5C8C4CB9BADC5C8F7C121550BDE1250757C8FDFF93F7138AFE1\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-zh-hans.exe<br/>\n    <b>Language:</b> <i>Chinese-China (zh-cn)</i><br/>\n    <b>SHA 256:</b> 09BFC5078817910C699A5DD6E162134DB6A914C52A6852639AFBF4C156FCFE1C\n  </li>\n  <li>\n    <b>File Name:</b> Exchange2019-KB5066367-x64-zh-hant.exe<br/>\n    <b>Language:</b> <i>Chinese-Taiwan (zh-tw)</i><br/>\n    <b>SHA 256:</b> C8170972820B467714685CAE1A5F85A389822E13D6FDB602483A563100ECA784\n  </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108419",
+    "downloadPreload": true
+}

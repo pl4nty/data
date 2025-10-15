@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Skype for Business Standalone Client",
+    "downloadDescription": "Microsoft Skype for Business Standalone Client gives you instant messaging (IM), audio and video calls, online meetings, availability (presence) information, and sharing capabilities all from one, easy-to-use program.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SfBClientSetup.exe",
+            "url": "https://download.microsoft.com/download/e00bbe4b-b75d-4d0e-bad8-f586ab02f7ff/SfBClientSetup.exe",
+            "size": "7506048",
+            "version": "16.0.19231.20156",
+            "datePublished": "10/15/2025 12:07:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Skype for Business Standalone Client gives you presence, instant messaging (IM), audio and video calls, online meetings, and sharing capabilities enabled by your organization. This is the full Skype for business client and is a free download. The client operates based on the settings and features in use and enabled by the organization. Skype for business capability overview: SfB capability data.\n\nNote: This installer downloads the latest Skype for Business client, ensuring the latest and most secure client is always installed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5070432",
+        "name": "KB5070432"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.19231.20156",
+    "detailsSection_file_name": [
+        "SfBClientSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "10/15/2025",
+    "systemRequirementsSection": "The Skype for Business application's system requirements evolve as the underlying Microsoft 365 application support ecosystem evolves. For the latest system requirements for Microsoft 365 applications, see the 365 system requirements page.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br>\n<ol>\n  <li>Click the download button and save the <u>&lt;SfBClientSetup.exe&gt;</u> program file to your hard disk.</li>\n  <li>Double-click the program file on your hard disk to begin installation.</li>\n  <li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<br>",
+    "additionalInformationSection": "<b><u>Microsoft Skype for Business Standalone Client File Hash Information</u></b><br/><br/>\n\n<ol>\n  <li>\n    <b>File Name:</b> SfBClientSetup.exe<br/>\n    <b>Language:</b> <i>English (en-us)</i><br/>\n    <b>SHA 256:</b> 3984A8987CEDC84541A1A4C5CE8ED8902887F097DEB08E6278E240B72D99A866\n  </li>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108423",
+    "downloadPreload": true
+}
