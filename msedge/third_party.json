@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10717790,
+    "size": 10717481,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14639267,
+    "size": 14644543,
     "file_count": 831
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32310809,
+    "size": 32313251,
     "file_count": 3954
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6963367,
+    "size": 6963913,
     "file_count": 59
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7385625,
+    "size": 7186301,
     "file_count": 29
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "name": "glslang",
-    "size": 42972172,
+    "size": 42979658,
     "file_count": 3140
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12337808,
+    "size": 12337976,
     "file_count": 1776
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18932715,
+    "size": 18932203,
     "file_count": 19
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3897499,
+    "size": 3900941,
     "file_count": 580
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3537067,
+    "size": 3537408,
     "file_count": 1184
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 530606,
+    "size": 530811,
     "file_count": 15
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1376988,
+    "size": 1377568,
     "file_count": 23
   },
   {
@@ -731,12 +731,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2458189,
+    "size": 2459843,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6579095,
+    "size": 6581000,
     "file_count": 176
   },
   {
