@@ -2547,6 +2547,7 @@
     <o:token o:name="FluidAudience">Production</o:token>
     <o:token o:name="OutlookDisabledFeaturesRing">1</o:token>
     <o:token o:name="NotebooksModuleEnabled">true</o:token>
+    <o:token o:name="FailingUALFileRetentionWindow">30</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
