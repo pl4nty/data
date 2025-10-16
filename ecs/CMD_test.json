@@ -23,7 +23,6 @@
             "EnableTeamsVdi2": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true,
-            "SdkEventHubUpload": true,
             "SpeculateForFLS": true
         },
         "AssignAudit": true,
@@ -329,7 +328,6 @@
         "EnableCache": true,
         "EnableCacheForReserveCPCs": true,
         "EnableCacheForSingleCPCWhenCallDDS": true,
-        "EnableCacheWebsiteExistence": true,
         "EnableCanaryNextGen": true,
         "EnableCapacityCompositeIndexes": true,
         "EnableCapacityManagementRegionClosedToNewCustomersException": true,
@@ -1197,6 +1195,7 @@
         "Mobius_New_FRE": true,
         "Mobius_OCPS_Header_CallerAppHint": true,
         "Mobius_Remove_Connect": true,
+        "Mobius_Remove_Connect_TEACHING_BUBBLE": true,
         "Mobius_SendFrontlineConcurrencyReport": true,
         "Mobius_ShouldUsePngIcons": true,
         "Mobius_UnifiedFeed_QueryParameter_CloudPC": true,
@@ -1380,7 +1379,7 @@
             }
         },
         "Windows_Download_IWP": true,
-        "WorkspaceEnableOAIValidation": true,
+        "WorkspaceEnableOAIValidation": false,
         "ZoneOutageNewWorkflow": true,
         "actionSvc": false,
         "actionmoderator": false,
