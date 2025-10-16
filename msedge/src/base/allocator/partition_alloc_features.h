@@ -17,10 +17,8 @@
 #include "base/compiler_specific.h"
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
-#include "base/time/time.h"
 #include "build/build_config.h"
 #include "partition_alloc/buildflags.h"
-#include "partition_alloc/partition_alloc_base/time/time.h"
 #include "partition_alloc/partition_root.h"
 
 // Edge only header.
@@ -90,8 +88,6 @@ using PartitionAllocWithAdvancedChecksEnabledProcesses =
 
 #if PA_BUILDFLAG(USE_PARTITION_ALLOC_AS_MALLOC)
 BASE_EXPORT BASE_DECLARE_FEATURE(kPartitionAllocLargeThreadCacheSize);
-BASE_EXPORT int GetPartitionAllocLargeThreadCacheSizeValue();
-BASE_EXPORT int GetPartitionAllocLargeThreadCacheSizeValueForLowRAMAndroid();
 
 BASE_EXPORT BASE_DECLARE_FEATURE(kPartitionAllocLargeEmptySlotSpanRing);
 
@@ -210,22 +206,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
     kPartialLowEndModeExcludePartitionAllocSupport);
 #endif
-
-BASE_EXPORT BASE_DECLARE_FEATURE(kEnableConfigurableThreadCacheMultiplier);
-BASE_EXPORT double GetThreadCacheMultiplier();
-BASE_EXPORT double GetThreadCacheMultiplierForAndroid();
-
-BASE_EXPORT BASE_DECLARE_FEATURE(kEnableConfigurableThreadCachePurgeInterval);
-extern const partition_alloc::internal::base::TimeDelta
-GetThreadCacheMinPurgeInterval();
-extern const partition_alloc::internal::base::TimeDelta
-GetThreadCacheMaxPurgeInterval();
-extern const partition_alloc::internal::base::TimeDelta
-GetThreadCacheDefaultPurgeInterval();
-
-BASE_EXPORT BASE_DECLARE_FEATURE(
-    kEnableConfigurableThreadCacheMinCachedMemoryForPurging);
-BASE_EXPORT int GetThreadCacheMinCachedMemoryForPurgingBytes();
 
 BASE_EXPORT BASE_DECLARE_FEATURE(kPartitionAllocDisableBRPInBufferPartition);
 
