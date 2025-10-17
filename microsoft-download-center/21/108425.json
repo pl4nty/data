@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "uploadtest.pptx",
+            "url": "https://download.microsoft.com/download/5dad39b6-1342-42d4-ae2e-bcfacb55ab01/uploadtest.pptx",
+            "size": "162816",
+            "version": "1.0",
+            "datePublished": "10/16/2025 9:21:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "uploadtest.pptx"
+    ],
+    "detailsSection_file_size": [
+        "159.0 KB"
+    ],
+    "detailsSection_file_date": "10/16/2025",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108425",
+    "downloadPreload": true
+}
