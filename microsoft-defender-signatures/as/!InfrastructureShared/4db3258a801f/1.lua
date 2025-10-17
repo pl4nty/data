@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = GetRollingQueueKeys("Trojan:Win32/EnumDesktopsA.MK")
+local l_0_0 = GetRollingQueueKeys("Trojan:Win32/EnumDesktopsA.AM")
 if l_0_0 then
   local l_0_1 = (bm.get_current_process_startup_info)()
   if not l_0_1 or not l_0_1.command_line then

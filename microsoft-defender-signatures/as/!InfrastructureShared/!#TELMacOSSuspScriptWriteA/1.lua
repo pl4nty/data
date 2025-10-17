@@ -17,7 +17,7 @@ if l_0_4 ~= nil and type(l_0_4) == "table" and #l_0_4 > 0 then
   local l_0_5 = false
   local l_0_6 = false
   local l_0_7 = false
-  if l_0_3:find("^/Users/[^/]+/Downloads/", 1, false) ~= nil or l_0_3:find("^/Users/[^/]+/Desktop/", 1, false) ~= nil or l_0_3:find("^/Users/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/LaunchAgents/", 1, true) ~= nil or l_0_3:find("/Library/LaunchDaemons/", 1, true) ~= nil or l_0_3:find("/Library/PrivilegedHelperTools/", 1, true) ~= nil or l_0_3:find("/Library/Application Support/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/Application Support/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/Caches/", 1, true) ~= nil or l_0_3:find("/Users/Shared/", 1, true) ~= nil or l_0_3:find("/var/root/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("^/Applications/[^/]+$", 1, false) ~= nil or l_0_3:find("^/Applications/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("^/private/tmp/", 1, false) ~= nil or l_0_3:find("^/private/var/tmp/", 1, false) ~= nil or l_0_3:find("^/Volumes/", 1, false) ~= nil or l_0_3:find("/Library/Fonts/", 1, true) ~= nil then
+  if l_0_3:find("^/Users/[^/]+/Downloads/", 1, false) ~= nil or l_0_3:find("^/Users/[^/]+/Desktop/", 1, false) ~= nil or l_0_3:find("^/Users/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/LaunchAgents/", 1, true) ~= nil or l_0_3:find("/Library/LaunchDaemons/", 1, true) ~= nil or l_0_3:find("/Library/PrivilegedHelperTools/", 1, true) ~= nil or l_0_3:find("/Library/Application Support/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/Application Support/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/Caches/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/Caches/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("/Users/Shared/", 1, true) ~= nil or l_0_3:find("/var/root/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/[^/]+$", 1, false) ~= nil or l_0_3:find("/Library/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("^/Applications/[^/]+$", 1, false) ~= nil or l_0_3:find("^/Applications/[^/]+/[^/]+$", 1, false) ~= nil or l_0_3:find("^/private/tmp/", 1, false) ~= nil or l_0_3:find("^/private/var/tmp/", 1, false) ~= nil or l_0_3:find("^/Volumes/", 1, false) ~= nil or l_0_3:find("/Library/Fonts/", 1, true) ~= nil then
     l_0_5 = true
   end
   local l_0_8 = (string.lower)(l_0_2)
@@ -35,17 +35,18 @@ if l_0_4 ~= nil and type(l_0_4) == "table" and #l_0_4 > 0 then
     for l_0_13,l_0_14 in ipairs(l_0_4) do
       l_0_9 = l_0_9 .. "||" .. tostring(l_0_14)
     end
+    local l_0_15 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
     if l_0_9 ~= nil and l_0_9 ~= "" then
-      set_research_data("SuspiciousAttrHits", l_0_9, false)
+      (MpCommon.BmTriggerSig)(l_0_15, "Mac_SuspScriptHit", l_0_9)
     end
-    if l_0_5 and not l_0_7 and not l_0_6 then
-      set_research_data("SuspiciousHitType", "Suspicious Path Hit", false)
+    if l_0_7 then
+      (MpCommon.BmTriggerSig)(l_0_15, "MacSuspScriptHighConf", l_0_3)
     else
       if l_0_6 then
-        set_research_data("SuspiciousHitType", "Suspicious Path+Name Hit", false)
+        (MpCommon.BmTriggerSig)(l_0_15, "MacSuspScriptPathName", l_0_3)
       else
-        if l_0_7 then
-          set_research_data("SuspiciousHitType", "High Suspicious Hit", false)
+        if l_0_5 and not l_0_7 and not l_0_6 then
+          (MpCommon.BmTriggerSig)(l_0_15, "MacSuspScriptPath", l_0_3)
         end
       end
     end

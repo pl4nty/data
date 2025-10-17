@@ -1,9 +1,9 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32EnumDesktopsAMK\1.luac 
+-- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32SusEnumDesktopsAMK\1.luac 
 
 -- params : ...
 -- function num : 0
-local l_0_0 = GetRollingQueueKeys("Trojan:Win32/EnumDesktopsA.MK")
+local l_0_0 = GetRollingQueueKeys("Trojan:Win32/EnumDesktopsA.AM")
 if l_0_0 then
   local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
   if l_0_1 ~= nil then
