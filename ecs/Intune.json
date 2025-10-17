@@ -33,6 +33,7 @@
         "MAASettings_FeatureEnabled": true,
         "NativeWallpaperUtils_FeatureEnabled": false,
         "OfflineMode_FeatureEnabled": true,
+        "PinHash_FeatureEnabled": false,
         "QrPinSignIn_FeatureEnabled": true,
         "RingtoneSelector_FeatureEnabled": true,
         "StopLockTaskOnResume_BugFix": true,
@@ -203,7 +204,6 @@
     },
     "SVC_AppLifecycle": {
         "FlightingV2": {
-            "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true
         }
     },
