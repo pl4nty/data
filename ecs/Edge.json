@@ -267,11 +267,6 @@
                 }
             ]
         },
-        "KSBackgroundResourceFetch": {
-            "disableFeatures": [
-                "BackgroundResourceFetch"
-            ]
-        },
         "OverrideEvents": {
             "enableFeatures": [
                 "msEventsAllowList"
