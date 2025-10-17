@@ -636,6 +636,7 @@
                 "enableTeamSharedChannelsDeletion": true,
                 "enableTeamSharedChannelsRestoration": true,
                 "enableTenantToCloudMappingCache": true,
+                "enableUsingPrivateChannelSiteUrlDuringRestore": true,
                 "enableUtiIatEnrichment": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
@@ -1276,6 +1277,12 @@
                 "TeamArchivingUseRandomTeamAdminInsteadOfGroupAdmin": true,
                 "TeamMemberLimit": 25000,
                 "TwtTeamMemberLimit": 10000,
+                "UpdateThreadInSyncFlowOptions": {
+                    "AddChannelUsersRequest": true,
+                    "EnableCreateChannelRequest": true,
+                    "EnableDeleteChannelRequest": true,
+                    "EnableUpdateChannelUsersRequest": true
+                },
                 "UseMiddleTierGroupResourceUrlApi": false,
                 "UseMtlsAppIdForAsyncArchivalOperations": true
             }
