@@ -136,6 +136,7 @@
         "EnableAgentDrivenDevicePreparationUX": true,
         "EnableAgentHealthStatusChangeFeedProcessor": true,
         "EnableAlertForwarderDataStream": true,
+        "EnableAlertImpactPreservation": true,
         "EnableAllowTenantAndForbidTenant": true,
         "EnableAnyColumnFilter": true,
         "EnableApiVersion20250301ForCdp": true,
