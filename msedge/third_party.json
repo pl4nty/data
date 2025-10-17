@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2136025,
-    "file_count": 179
+    "size": 2176863,
+    "file_count": 183
   },
   {
     "name": "alsa",
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32312834,
-    "file_count": 3954
+    "size": 32332670,
+    "file_count": 3959
   },
   {
     "name": "boringssl",
@@ -246,7 +246,7 @@
   },
   {
     "name": "glib",
-    "size": 52998203,
+    "size": 52998245,
     "file_count": 2384
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12337976,
+    "size": 12338258,
     "file_count": 1776
   },
   {
@@ -421,8 +421,8 @@
   },
   {
     "name": "liburlpattern",
-    "size": 3446,
-    "file_count": 2
+    "size": 14955,
+    "file_count": 6
   },
   {
     "name": "libusb",
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3900941,
+    "size": 3900979,
     "file_count": 580
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3535921,
+    "size": 3535619,
     "file_count": 1184
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6585520,
+    "size": 6585697,
     "file_count": 176
   },
   {
