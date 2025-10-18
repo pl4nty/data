@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10717536,
+    "size": 10717041,
     "file_count": 167
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14669053,
+    "size": 14669125,
     "file_count": 831
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32332670,
-    "file_count": 3959
+    "size": 32339709,
+    "file_count": 3960
   },
   {
     "name": "boringssl",
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3535619,
+    "size": 3535460,
     "file_count": 1184
   },
   {
@@ -731,12 +731,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2459843,
+    "size": 2459846,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6585697,
+    "size": 6591438,
     "file_count": 176
   },
   {
