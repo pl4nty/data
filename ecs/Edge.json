@@ -199,32 +199,6 @@
                 "msEdgeShoppingClarityEnabledWithCookies"
             ]
         },
-        "EdgeShoppingDefaultConfig": {
-            "disableFeatures": [
-                "msEdgePwiloAsync",
-                "msEdgeShoppingPriceComparisonOnceDayPerUrl",
-                "msEdgeShoppingStorageContinueOnShutdown",
-                "msEELogProductPiclFailed"
-            ],
-            "enableFeatures": [
-                "msEdgeShoppingPersistentBloomFilter",
-                "msShoppingAutoShowAfterRender",
-                "msEdgeShoppingPersonalizedCashbackBingHeaderV2",
-                "msEdgeShoppingPersistentDisabledDomainPopupOrigination",
-                "msEdgeShoppingProductPageScript",
-                "msEdgeShoppingEnableAccelerateStrategyForBgaaWebContents",
-                "msEdgeShoppingAutoShowResetOnce",
-                "msEdgeShoppingShorelineHeader",
-                "msShorelineHeaderMenuDisableNotifications",
-                "msEdgeShoppingSettingsInPane",
-                "msEdgeShoppingSettingsInPaneNotificationBottomToggle",
-                "msQueryShoppingMetadata",
-                "msShowResultsShoppingMetadata",
-                "msEdgeShoppingRefresh",
-                "msEdgeShoppingRebatesForAADAccounts",
-                "msEdgeShoppingSettingsPrivacyString"
-            ]
-        },
         "EdgeShoppingEarlyRetailerDataDelayConfig": {
             "enableFeatures": [
                 "msEdgeShoppingEarlyRetailerDataDelay"
