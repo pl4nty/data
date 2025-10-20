@@ -585,6 +585,7 @@
         "EnableLocationRecommendationReport": true,
         "EnableLogCollectionForCPC": true,
         "EnableLongTermGetCollectionList": true,
+        "EnableMHNReferenceNewName": "true",
         "EnableMaintenanceWindowsUX": true,
         "EnableManagedConfigurationSummary": true,
         "EnableManualSnapshotExtraParameters": true,
