@@ -977,7 +977,7 @@
         "EnableVsbDisconnectOnIdleForVmExtension": true,
         "EnableVsbSsoForFleet": true,
         "EnableW365AMeter": true,
-        "EnableW365AMeterForMCS": true,
+        "EnableW365AMeterForHotPool": true,
         "EnableW365AMeterForOpal": true,
         "EnableW365DeviceSync": true,
         "EnableW365DeviceSyncNotification": true,
