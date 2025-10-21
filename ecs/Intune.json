@@ -30,6 +30,7 @@
         "EmailRegex_BugFix": true,
         "MAABluetooth_FeatureEnabled": true,
         "MAAGetHelp_FeatureEnabled": true,
+        "MAASessionPin_FeatureEnabled": true,
         "MAASettings_FeatureEnabled": true,
         "NativeWallpaperUtils_FeatureEnabled": false,
         "OfflineMode_FeatureEnabled": true,
@@ -204,6 +205,7 @@
     },
     "SVC_AppLifecycle": {
         "FlightingV2": {
+            "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true
         }
     },

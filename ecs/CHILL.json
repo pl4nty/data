@@ -213,7 +213,7 @@
         },
         "Floodgate_Campaign_AdminPortal.0e749c96-9de6-44aa-9baf-3f3652f9c726": {
             "CampaignId": "0e749c96-9de6-44aa-9baf-3f3652f9c726",
-            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "EndTimeUtc": "2025-12-15T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -519,7 +519,7 @@
         },
         "Floodgate_Campaign_AdminPortal.2d202491-0ec2-4f90-8bb1-c04afd1b9a75": {
             "CampaignId": "2d202491-0ec2-4f90-8bb1-c04afd1b9a75",
-            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "EndTimeUtc": "2025-12-15T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -815,7 +815,7 @@
         },
         "Floodgate_Campaign_AdminPortal.89ca0760-82ca-43a8-8c20-5f11426769d6": {
             "CampaignId": "89ca0760-82ca-43a8-8c20-5f11426769d6",
-            "EndTimeUtc": "2025-10-31T05:00:00Z",
+            "EndTimeUtc": "2025-12-15T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1728,95 +1728,6 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/24f05460-43a6-467e-bda2-3e7a806c45e8/a8a66e58-93ab-4963-804b-d7cfd54c2722/Web-Harmony/",
-                    "variables": {}
-                }
-            }
-        }
-    },
-    "ChillMSInvest": {
-        "Floodgate_Campaign_MicrosoftAdvertising.666e2c3c-714f-45bf-aa8e-47daa89bd2f7": {
-            "CampaignId": "666e2c3c-714f-45bf-aa8e-47daa89bd2f7",
-            "EndTimeUtc": "2025-10-15T07:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-08-13T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "newreportui",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on the new reporting UI! "
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "5 - Very satisfied",
-                                        "4",
-                                        "3",
-                                        "2",
-                                        "1 - Very dissatisfied"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How satisfied are you with the experience of the new report UI?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us how we can improve your experience.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/666e2c3c-714f-45bf-aa8e-47daa89bd2f7/c1d661ab-dea7-4b6d-acbf-c1a032c36777/Web-MicrosoftAdvertising/",
                     "variables": {}
                 }
             }
