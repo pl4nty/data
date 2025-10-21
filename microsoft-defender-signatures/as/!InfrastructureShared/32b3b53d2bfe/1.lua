@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (versioning.GetOrgID)()
-if l_0_0 ~= nil and l_0_0 ~= "" and l_0_0:lower() == "0dde20f2-5621-4cfa-b3f5-b920800dd3b4" then
+if verify_memory_features_coverage_orgs() then
   return mp.INFECTED
 end
 return mp.CLEAN

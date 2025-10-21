@@ -3,11 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (versioning.GetOrgID)()
 do
-  if l_0_0 ~= nil and l_0_0 ~= "" and l_0_0:lower() == "0dde20f2-5621-4cfa-b3f5-b920800dd3b4" then
-    local l_0_1 = (bm.get_imagepath)()
-    if l_0_1 ~= nil and ((string.match)(l_0_1, "/bin/%a*sh") or (string.find)(l_0_1, "perl", 1, true) or (string.find)(l_0_1, "python", 1, true)) then
+  if verify_memory_features_coverage_orgs() then
+    local l_0_0 = (bm.get_imagepath)()
+    if l_0_0 ~= nil and ((string.match)(l_0_0, "/bin/%a*sh") or (string.find)(l_0_0, "perl", 1, true) or (string.find)(l_0_0, "python", 1, true)) then
       return mp.INFECTED
     end
   end
