@@ -164,10 +164,10 @@
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251020.1.0",
         "CalendarCompanionMsitVersion": "1.20251008.10.0",
-        "CalendarCompanionProdVersion": "1.20250918.2.0",
+        "CalendarCompanionProdVersion": "1.20251008.10.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20250918.2.0",
+        "HostAppVersion": "1.20251008.10.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -680,6 +680,7 @@
             "26eb8da6-602c-4d5d-b17e-38fb2611a87f",
             "25faedbb-f440-4315-83ee-6f7beb5e73f7",
             "202e3a73-8105-4bac-b29b-4dbe25ec4248",
+            "1b837476-d609-4fbb-aa9c-33876fca2c3b",
             "1a17d6bf-5155-4e22-bf29-2ba5da77f037",
             "190b5d8b-089c-44a5-b729-7f90656a984e",
             "1731ee79-7ec7-4e4c-8835-e51b813dca1a",
@@ -1637,8 +1638,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20251020.4.0",
-        "PeopleInTaskbarMsitVersion": "1.20251011.9.0",
-        "PeopleInTaskbarProdVersion": "1.20251004.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20251016.8.0",
+        "PeopleInTaskbarProdVersion": "1.20251011.9.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
