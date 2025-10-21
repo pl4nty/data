@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251018.6.0",
+        "CalendarCompanionDFVersion": "1.20251020.1.0",
         "CalendarCompanionMsitVersion": "1.20251008.10.0",
         "CalendarCompanionProdVersion": "1.20250918.2.0",
         "CompanionRing": "Prod",
@@ -401,7 +401,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20251006.1.0",
+        "LpcVersion": "1.20251013.1.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1636,7 +1636,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251018.6.0",
+        "PeopleInTaskbarDFVersion": "1.20251020.4.0",
         "PeopleInTaskbarMsitVersion": "1.20251011.9.0",
         "PeopleInTaskbarProdVersion": "1.20251004.4.0",
         "campaignSchedules": {
