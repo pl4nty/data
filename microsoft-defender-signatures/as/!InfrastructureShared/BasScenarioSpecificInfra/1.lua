@@ -63,7 +63,6 @@ IsBasFileEncryptExt = function(l_1_0)
   l_1_1[".jkhnhu"] = true
   l_1_1[".mamo434376"] = true
   l_1_1[".hcked"] = true
-  l_1_1[".matrix"] = true
   l_1_1[".encrypted"] = true
   l_1_1[".bomber"] = true
   l_1_1[".crptd"] = true
@@ -122,6 +121,7 @@ IsBasFileNoisyEncryptExt = function(l_2_0)
   l_2_1[".code"] = true
   l_2_1[".aes"] = true
   l_2_1[".dng"] = true
+  l_2_1[".matrix"] = true
   if l_2_1[l_2_0] == true then
     return true
   end
