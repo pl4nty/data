@@ -2,7 +2,8 @@
     "OneShell": {
         "M365CopilotRebrandingEnabled": true,
         "MaxRetriesForXMLRequest": 5,
-        "default": true
+        "default": true,
+        "isShellControlBaseConditionalUpdateEnabled": false
     },
     "Segmentation": {
         "TeamsRing": "general"

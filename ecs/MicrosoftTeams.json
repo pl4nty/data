@@ -1827,6 +1827,7 @@
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
             "EnablePlannerGroundingInPA": true,
+            "EnableRerunOsdlStatementExecuteActivity": true,
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "ShouldFetchMeetingBodyFromGraph": true,
