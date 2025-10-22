@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14670684,
+    "size": 14671438,
     "file_count": 831
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32346154,
+    "size": 32348883,
     "file_count": 3962
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7186301,
+    "size": 7186788,
     "file_count": 29
   },
   {
@@ -306,7 +306,7 @@
   },
   {
     "name": "ink",
-    "size": 77941,
+    "size": 77893,
     "file_count": 11
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12338580,
+    "size": 12342476,
     "file_count": 1776
   },
   {
@@ -466,8 +466,8 @@
   },
   {
     "name": "metrics_proto",
-    "size": 283994,
-    "file_count": 40
+    "size": 288625,
+    "file_count": 43
   },
   {
     "name": "microsoft_dlis_tokenizers",
@@ -521,8 +521,8 @@
   },
   {
     "name": "oak",
-    "size": 196735,
-    "file_count": 123
+    "size": 207363,
+    "file_count": 127
   },
   {
     "name": "omnibox_proto",
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3901031,
+    "size": 3915291,
     "file_count": 580
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3535727,
+    "size": 3536202,
     "file_count": 1184
   },
   {
@@ -696,8 +696,8 @@
   },
   {
     "name": "tflite",
-    "size": 1665424,
-    "file_count": 495
+    "size": 1673235,
+    "file_count": 497
   },
   {
     "name": "tflite_support",
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6592309,
+    "size": 6598501,
     "file_count": 176
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "webrtc",
-    "size": 103682,
+    "size": 104620,
     "file_count": 53
   },
   {
