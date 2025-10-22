@@ -362,10 +362,27 @@ extern const base::FeatureParam<bool> kSemanticNonColorTokensForP2Surfaces;
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsSemanticNonColorTokensForP2SurfacesEnabled();
 
+// Enum for MAI design system theme configuration
+enum class SemanticTheme : int {
+  kPhoenix = 0,         // MAI phoenix design system (default)
+  kCompactNeutral = 1,  // MAI compact-neutral design system
+  kCompactThemed = 2,   // MAI compact-themed design system
+  kDefault = 3,         // MAI default design system
+};
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kUseMAIDS);
+BASE_DECLARE_FEATURE(kMaiDesignSystem);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+SemanticTheme GetMaiDesignSystemTheme();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIPhoenixDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAICompactNeutralDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAICompactThemedDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIDefaultDesignSystemEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMenuFontSizeEnabled();

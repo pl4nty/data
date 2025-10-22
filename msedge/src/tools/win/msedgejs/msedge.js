@@ -25,10 +25,14 @@ function PtrUnpack(obj) {
   if (obj.targetType.toString().startsWith("base::WeakPtr")) {
     return obj.ptr_;
   }
+  if (obj.targetType.toString().startsWith("std::__Cr::unique_ptr")) {
+    return obj.__ptr_;
+  }
   return obj;
 }
 
 function createPointer(addr, module, type) {
+  // printLn("Creating pointer: addr=0x" + addr.toString(16) + " module=" + module + " type=" + type);
   var ptr;
   try {
     ptr = host.createPointerObject(addr, module, type);
@@ -53,8 +57,31 @@ function createPointer(addr, module, type) {
   return ptr;
 }
 
+function dump(obj) {
+  print("\nDumping object of type: " + obj.targetType + "\n");
+  var plain = {};
+  for (var k in obj) {
+      try {
+          plain[k] = obj[k];
+          printLn(k + ": " + plain[k]);
+      } catch(e) {
+          printLn(k + ": <unreadable>");
+          plain[k] = "<unreadable>";
+      }
+  }
+}
+
 function isNotNull(x) {
   return x != null;
+}
+
+function getModuleName() {
+  var edgeCommandLine = new EdgeCommandLine();
+  if (edgeCommandLine.isEdgeProcess()) {
+    return "msedge";
+  } else if (edgeCommandLine.isChromeProcess()) {
+    return "chrome";
+  }
 }
 
 class StlString {
@@ -62,7 +89,7 @@ class StlString {
   constructor(strAddress) {
     this.str = createPointer(
       strAddress,
-      "msedge",
+      getModuleName(),
       "std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >*");
   }
 
@@ -80,9 +107,9 @@ class StlString {
 class ClassProperty {
   constructor(node) {
     this.raw = node.Value;
-    this.Name = host.memory.readString(node.Value.__cc_.second.name);
-    this.__value = node.Value.__cc_.second.value;
-
+    this.Name = host.memory.readString(node.Value.second.name);
+    this.__value = node.Value.second.value;
+  
     // Apply special typing for known keys.
     switch (this.Name) {
       case "kNameKey":
@@ -96,7 +123,7 @@ class ClassProperty {
         break;
       case "kDesktopNativeWidgetAuraKey":
       case "kNativeWidgetPrivateKey":
-        var widget = createPointer(this.__value, "msedge", "views::DesktopNativeWidgetAura*")
+        var widget = createPointer(this.__value, getModuleName(), "views::DesktopNativeWidgetAura*")
         this.Value = new Widget(widget, "widget");
         break;
       default:
@@ -111,7 +138,6 @@ class ClassProperty {
 
 class StlTreeNode {
   constructor(module, type, node, parentStlTreeNode = null) {
-    //printLn("Creating StlTreeNode: node="+node.targetLocation);
     this.Node = createPointer(
       node.address,
       module,
@@ -130,7 +156,7 @@ class StlTreeNode {
   }
 
   toString() {
-    return "Node=" + this.Node.targetLocation;
+    return "Node=" + this.Node.targetLocation + " Value=" + this.Value;
   }
 
   equals(stlTreeNode) {
@@ -142,15 +168,15 @@ class StlTree {
   constructor(module, type, tree) {
     this.tree = tree;
 
-    this.Size = this.tree.__pair3_.__value_;
+    this.Size = this.tree.__size_;
 
     // This is the top of the tree. It is not the first node (that's the left-most).
-    // this.root = new StlRootTreeNode(tree.__pair1_.__value_.__left_);
+    // this.root = new StlRootTreeNode(tree.__end_node_.__value_.__left_);
     if (this.Size > 0) {
       this.RootNode = new StlTreeNode(module, 
                       type, 
-                      this.tree.__pair1_.__value_.__left_);
-      this.Type = this.tree.__pair1_.__value_.__left_.targetType;
+                      this.tree.__end_node_.__left_);
+      this.Type = this.tree.__end_node_.__left_.targetType;
     }
   }
 
@@ -224,8 +250,8 @@ class UiLayerTree {
     this.populateChildren(this.layer);
   }
   populateChildren(uiLayer, level = 0) {
-    for (let layer of uiLayer.children_) {
-      let new_layer = layer.runtimeTypedObject;
+    for (var layer of uiLayer.children_) {
+      let new_layer = PtrUnpack(layer).runtimeTypedObject;
       this.__children.push(new UiLayerTreeNode(new_layer, level));
       this.populateChildren(new_layer, level + 1);
     }
@@ -256,8 +282,8 @@ class ViewTree {
     this.populateChildren(this.view);
   }
   populateChildren(view, level = 0) {
-    for (let child of view.children_) {
-      let new_child = child.runtimeTypedObject;
+    for (var child of view.children_) {
+      let new_child = PtrUnpack(child).runtimeTypedObject;
       this.__children.push(new ViewTreeNode(new_child, level));
       this.populateChildren(new_child, level + 1);
     }
@@ -331,7 +357,7 @@ class View {
 
   *[Symbol.iterator]() {
     for (var child of this.view.children_) {
-      yield new View(child);
+      yield new View(PtrUnpack(child));
     }
   }
 
@@ -361,7 +387,7 @@ class Widget {
   }
 
   get RootView() {
-    var rootview = PtrUnpack(PtrUnpack(this.widget.browser_frame_).dereference().root_view_);
+    var rootview = PtrUnpack(this.widget.root_view_);
     return new View(rootview);
   }
 
@@ -438,7 +464,7 @@ class EdgeCommandLine {
   getCommandLinePart(part) {
     var commandLine = this.__commandLine;
     var partStartOffset = commandLine.indexOf("--" + part + "=");
-    if(partStartOffset == -1) {
+    if (partStartOffset == -1) {
       return "";
     }
 
@@ -457,24 +483,41 @@ class EdgeCommandLine {
   get ProcessName() {
     var processPathStartOffset = 1;
     var processPathEndOffset = this.__commandLine.indexOf("\"", processPathStartOffset);
+    if (processPathEndOffset == -1) {
+      return this.__commandLine.trim();
+    }
+
     var processPath = this.__commandLine.substring(processPathStartOffset, processPathEndOffset);
     var processNameStartOffset = processPath.lastIndexOf("\\");
-    return processPath.substring(processNameStartOffset + 1).trim();
+    if (processNameStartOffset == -1) {
+      return processPath.trim();
+    }
+    processPath = processPath.substring(processNameStartOffset + 1).trim();
+    // Also trim any excess arguments after the .exe
+    var processNameEndOffset = processPath.indexOf(".exe");
+    if (processNameEndOffset != -1) {
+      processPath = processPath.substring(0, processNameEndOffset + 4);
+    }
+    return processPath;
   }
 
   isEdgeProcess() {
     return this.ProcessName.startsWith("msedge");
   }
 
+  isChromeProcess() {
+    return this.ProcessName.startsWith("chrome");
+  }
+
   get ProcessType() {
     var processTypeArg = this.getCommandLinePart("type");
-    if(processTypeArg != "") {
+    if (processTypeArg != "") {
       return processTypeArg;
     } else {
-      if(this.isEdgeProcess())
+      if (this.isEdgeProcess() || this.isChromeProcess()) {
         return "browser";
-      else
-        return "";
+      } 
+      return "";
     }
   }
 
@@ -489,7 +532,7 @@ class EdgeCommandLine {
     }
 
     var processSubType = "";
-    if(processSubTypeArgument != "") {
+    if (processSubTypeArgument != "") {
       processSubType = this.getCommandLinePart(processSubTypeArgument);
     }
 
@@ -545,22 +588,22 @@ class KeepAliveRegistry {
 
 function ensureKeepAliveRegistry() {
   if (vars().keepAliveRegistry == undefined) {
-    var getInstanceOutput = control().ExecuteCommand("x /0 msedge!KeepAliveRegistry::GetInstance");
+    var getInstanceOutput = control().ExecuteCommand("x /0 " + getModuleName() + "!KeepAliveRegistry::GetInstance");
     if (getInstanceOutput.Count() >= 1) {
       var address = getInstanceOutput[0].trim();
-      var typecastOutput = control().ExecuteCommand("dx -r1 ((msedge!base::Singleton<KeepAliveRegistry,base::DefaultSingletonTraits<KeepAliveRegistry>,KeepAliveRegistry> *)0x" + address + ")");
-      if(typecastOutput.Count() == 2) {
+      var typecastOutput = control().ExecuteCommand("dx -r1 ((" + getModuleName() + "!base::Singleton<KeepAliveRegistry,base::DefaultSingletonTraits<KeepAliveRegistry>,KeepAliveRegistry> *)0x" + address + ")");
+      if (typecastOutput.Count() == 2) {
         var addressStartIndex = typecastOutput[1].indexOf("[");
         var addressEndIndex = typecastOutput[1].indexOf("]");
-        if(addressStartIndex < addressEndIndex) {
+        if (addressStartIndex < addressEndIndex) {
           var typecastAddress = typecastOutput[1].substring(addressStartIndex + 2, addressEndIndex);
           var singletonAddressOutput = control().ExecuteCommand("dp " + typecastAddress + " L1");
-          if(singletonAddressOutput.Count() == 1) {
+          if (singletonAddressOutput.Count() == 1) {
             var singletonAddressStart = singletonAddressOutput[0].indexOf(" ");
             var singletonAddress = singletonAddressOutput[0].substring(singletonAddressStart).trim();
             var singletonAddressAsNumber = host.parseInt64(singletonAddress, 16);
-            if(singletonAddressAsNumber > 0) {
-              var keepAliveRegistryPtr = createPointer(singletonAddressAsNumber, "msedge", "KeepAliveRegistry*");
+            if (singletonAddressAsNumber > 0) {
+              var keepAliveRegistryPtr = createPointer(singletonAddressAsNumber, getModuleName(), "KeepAliveRegistry*");
               vars().keepAliveRegistry = keepAliveRegistryPtr.dereference();
             } else {
               printLn("KeepAliveRegistry singleton address is NULL. Is this a browser process? KeepAliveRegistry is only valid on browser processes.");
@@ -575,7 +618,7 @@ function ensureKeepAliveRegistry() {
         printLn("Typecast for KeepAliveRegistry instance failed: " + typeCastOutput[0]);
       }
     } else {
-      print("Cannot find KeepAliveRegistry instance address, a common reason is load msedge.dll symbol timeout. Try !reload -f msedge.dll? \n");
+      print("Cannot find KeepAliveRegistry instance address, a common reason is load " + getModuleName() + ".dll symbol timeout. Try !reload -f " + getModuleName() + ".dll? \n");
     }
   }
 }
@@ -607,20 +650,20 @@ class BrowserProcess {
 }
 
 function ensureBrowserProcess() {
-  if(vars().browserProcess == undefined) {
-    var getBrowserProcessAddress = control().ExecuteCommand("x msedge!g_browser_process");
+  if (vars().browserProcess == undefined) {
+    var getBrowserProcessAddress = control().ExecuteCommand("x " + getModuleName() + "!g_browser_process");
     if (getBrowserProcessAddress.Count() == 1) {
       var browserProcessAddressStartOffset = getBrowserProcessAddress[0].indexOf("=");
       var browserProcessAddress = getBrowserProcessAddress[0].substring(browserProcessAddressStartOffset + 1).trim();
       var browserProcessAddressAsNumber = host.parseInt64(browserProcessAddress, 16);
-      if(browserProcessAddressAsNumber > 0) {
-        var browserProcessPtr = createPointer(browserProcessAddressAsNumber, "msedge", "BrowserProcessImpl*");
+      if (browserProcessAddressAsNumber > 0) {
+        var browserProcessPtr = createPointer(browserProcessAddressAsNumber, getModuleName(), "BrowserProcessImpl*");
         vars().browserProcess = browserProcessPtr.dereference();
       } else {
         printLn("Browser Process object address is NULL. Is this a browser process?");
       }
     } else {
-      print("Cannot find Browser Process object address, a common reason is load msedge.dll symbol timeout. Try !reload -f msedge.dll? \n");
+      print("Cannot find Browser Process object address, a common reason is load " + getModuleName() + ".dll symbol timeout. Try !reload -f " + getModuleName() + ".dll? \n");
     }
   }
 }
@@ -629,15 +672,21 @@ class Browser {
   constructor(browser) {
     // Add 'raw' pointer
     this.raw = PtrUnpack(browser);
+    this.rootView = createPointer(PtrUnpack(this.raw.window_).address, getModuleName(), "BrowserView*");
+    // Take into account renames of frame->widget in recent builds.
+    if (this.rootView.browser_widget_ == null) {
+      // Add the BrowserView 'rootView' pointer
+      this.frame = this.__frame = PtrUnpack(this.rootView.frame_);
+    }
+    else {
+      this.browser_widget = this.__frame = PtrUnpack(this.rootView.browser_widget_);
+    }
 
-    // Add the BrowserView 'rootView' pointer
-    this.rootView = createPointer(PtrUnpack(this.raw.window_).address, "msedge", "BrowserView*");
-    this.frame = PtrUnpack(this.rootView.frame_);
-    this.native_widget = this.__native_widget = PtrUnpack(PtrUnpack(this.rootView.frame_).native_widget_).runtimeTypedObject;
-    this.native_widget_type = (this.__native_widget.runtimeTypedObject.targetType);
-    if (!PtrUnpack(this.__native_widget.desktop_window_tree_host_)) return;
-    this.desktop_window_tree_host = this.__desktop_window_tree_host = PtrUnpack(this.__native_widget.desktop_window_tree_host_).runtimeTypedObject;
-    this.Compositor = new Compositor(PtrUnpack(this.__desktop_window_tree_host.compositor_).value());
+    this.native_widget_ = this.__native_widget = PtrUnpack(this.__frame.native_widget_).runtimeTypedObject;
+    this.native_widget_type = this.__native_widget.runtimeTypedObject.targetType;
+    var desktopNativeWidgetAuraPtr = createPointer(this.__native_widget.address, getModuleName(), "views::DesktopNativeWidgetAura*");
+    this.desktop_window_tree_host = PtrUnpack(desktopNativeWidgetAuraPtr.desktop_window_tree_host_).runtimeTypedObject;
+    this.Compositor = new Compositor(PtrUnpack(this.desktop_window_tree_host.compositor_).runtimeTypedObject);
   }
 
   get AuraWindow() {
@@ -656,6 +705,7 @@ class Browser {
     return "Browser Window: " + output[0].toString();
   }
 }
+
 class BrowserList {
   constructor(browserList) {
     this.__browserList = browserList;
@@ -669,20 +719,21 @@ class BrowserList {
 }
 
 class WebContent{
-  constructor(addr){
+  constructor(addr) {
     this.raw = addr;
     this.__controller = addr.runtimeTypedObject.primary_frame_tree_.navigator_.controller_;
     this.__lastentry = this.__controller.last_committed_entry_index_;
-    this.url = this.__controller.entries_[this.__lastentry].__ptr_.__value_.frame_tree_.__ptr_.__value_.frame_entry.ptr_.url_;
+    this.url = this.__controller.entries_[this.__lastentry].__ptr_.frame_tree_.__ptr_.frame_entry.ptr_.url_;
   }
   toString()
   {
     return this.url;
   }
 }
+
 class TabModel {
   constructor(tabModel) {
-    this.__content = tabModel.__ptr_.__value_.dereference().contents_.__ptr_.__value_.dereference();
+    this.__content = PtrUnpack(tabModel.contents_);
     this.webContent = new WebContent(this.__content);
   }
   toString()
@@ -690,18 +741,30 @@ class TabModel {
     return "Tab: " + this.webContent.toString();
   }
 }
+
 class TabStrips {
   constructor(browser) {
     // Add 'raw' pointer
     this.raw = PtrUnpack(browser);
-    this.__contents_data = this.raw.dereference().tab_strip_model_.__ptr_.__value_.dereference().contents_data_;
+    this.__unpinned_collection = PtrUnpack(this.raw.dereference().tab_strip_model_.__ptr_.dereference().contents_data_.__ptr_.unpinned_collection_).runtimeTypedObject;
+    this.__unpinned_collection_count = this.__unpinned_collection.impl_.__ptr_.children_.size();
   }
   *[Symbol.iterator]() {
-      for (var model of this.__contents_data) {
+      for (let i = 0; i < this.__unpinned_collection_count; i++) {
+        let child = this.__unpinned_collection.impl_.__ptr_.children_[i];
+        var model;
+        if (child.__impl_.__index == 1) {
+          model = createPointer(child.__impl_.__data.__tail.__head.__value.__ptr_.address, getModuleName(), "tabs::TabModel*");
+        }
+        else {
+          // TODO: handle recursion case.
+          // var collection = createPointer(child.__impl_.__data.__head.__value.__ptr_.address, getModuleName(), "tabs::TabCollection*");
+        }
         yield new TabModel(model);
       }
     }
 }
+
 class BrowserTabs {
   constructor(browserList) {
     this.__browserList = browserList;
@@ -716,17 +779,17 @@ class BrowserTabs {
 
 function ensureBrowserList() {
   if (vars().browserList == undefined) {
-    var output = control().ExecuteCommand("x /0 msedge!BrowserList::instance_");
+    var output = control().ExecuteCommand("x /0 " + getModuleName() + "!BrowserList::instance_");
     if (output.Count() == 1) {
       var address = output[0].trim();
       var addressAsNumber = host.parseInt64(address, 16);
       // store as customer variable
       vars().browserListAddress = addressAsNumber;
-      var browserListPtrPtr = createPointer(addressAsNumber, "msedge", "BrowserList**");
+      var browserListPtrPtr = createPointer(addressAsNumber, getModuleName(), "BrowserList**");
       var browserList = browserListPtrPtr.dereference().dereference();
       vars().browserList = browserList;
     } else {
-      print("Cannot find browserList Address, a common reason is load msedge.dll symbol timeout. Try !reload -f msedge.dll? \n");
+      print("Cannot find browserList Address, a common reason is load " + getModuleName() + ".dll symbol timeout. Try !reload -f " + getModuleName() + ".dll? \n");
     }
   }
 }
@@ -761,7 +824,7 @@ class CharAllocator {
   *[Symbol.iterator]() {
     let storage_index = 0;
     let current_storage_capacity = this.__charAllocator.storage_[storage_index].size;
-    let ptr = createPointer(this.__charAllocator.storage_[storage_index].data.address, "msedge", "void**");
+    let ptr = createPointer(this.__charAllocator.storage_[storage_index].data.address, getModuleName(), "void**");
     let current_storage_base = ptr.dereference().address;
     let current_storage_index = 0;
     for (let i = 0; i < this.__charAllocator.size_; i++) {
@@ -777,7 +840,7 @@ class CharAllocator {
         storage_index++;
         if (storage_index < this.__storage_size) {
           current_storage_capacity = this.__charAllocator.storage_[storage_index].size;
-          ptr = createPointer(this.__charAllocator.storage_[storage_index].data.address, "msedge", "void**");
+          ptr = createPointer(this.__charAllocator.storage_[storage_index].data.address, getModuleName(), "void**");
           current_storage_base = ptr.dereference().address;
           current_storage_index = 0;
         }
@@ -803,7 +866,7 @@ class RenderPass {
 }
 
 class CompositorFrame{
-  constructor(addr){
+  constructor(addr) {
     this.__render_pass_count = addr.render_pass_list.size();
     this.__frame = addr;
   }
@@ -816,19 +879,19 @@ class CompositorFrame{
 }
 
 function ensureFeatureList() {
-  if(vars().featureList == undefined) {
-    var getFeatureListAddress = control().ExecuteCommand("x msedge!base::`anonymous namespace'::g_feature_list_instance");
+  if (vars().featureList == undefined) {
+    var getFeatureListAddress = control().ExecuteCommand("x " + getModuleName() + "!base::`anonymous namespace'::g_feature_list_instance");
     if (getFeatureListAddress.Count() == 1) {
       var featureListAddressStartOffset = getFeatureListAddress[0].indexOf("=");
-      var fetureListAddress = getFeatureListAddress[0].substring(featureListAddressStartOffset + 1).trim();
-      var featureListAddressAsNumber = host.parseInt64(fetureListAddress, 16);
-      if(featureListAddressAsNumber > 0) {
-        var featureListPtr = createPointer(featureListAddressAsNumber, "msedge", "base::FeatureList*");
+      var featureListAddress = getFeatureListAddress[0].substring(featureListAddressStartOffset + 1).trim();
+      var featureListAddressAsNumber = host.parseInt64(featureListAddress, 16);
+      if (featureListAddressAsNumber > 0) {
+        var featureListPtr = createPointer(featureListAddressAsNumber, getModuleName(), "base::FeatureList*");
         vars().featureList = featureListPtr.dereference();
       }
     } 
     if (vars().featureList == undefined) {
-      print("Cannot find feature list address, a common reason is load msedge.dll symbol timeout. Try !reload -f msedge.dll? \n");
+      print("Cannot find feature list address, a common reason is load " + getModuleName() + ".dll symbol timeout. Try !reload -f " + getModuleName() + ".dll? \n");
     }
   }
 }
@@ -836,8 +899,8 @@ function ensureFeatureList() {
 class FirstRunStatus {
   constructor(node) {
     this.raw = node.Value;
-    this.Name = node.Value.__cc_.first;
-    this.value = node.Value.__cc_.second.enabled;
+    this.Name = node.Value.first;
+    this.value = node.Value.second.enabled;
   }
 
   toString() {
@@ -854,8 +917,9 @@ class Override {
     return "Name:" + this.raw.first;
   }
 }
+
 class FeatureList{
-  constructor(featureList){
+  constructor(featureList) {
     this.featureList = featureList;
     this.overrides = featureList.overrides_.body_;
     this.__first_run_features = new StlTree("ui_base", 
@@ -881,11 +945,17 @@ function isProcessType(type) {
 }
 
 function dumpBrowserWindows() {
+  if (!isProcessType("browser"))
+    printLn("WARNING: This command is only valid on BROWSER process.");
+
   ensureBrowserList();
   return new BrowserList(vars().browserList);
 }
 
 function dumpBrowserTabs() {
+  if (!isProcessType("browser"))
+    printLn("WARNING: This command is only valid on BROWSER process.");
+
   ensureBrowserList();
   return new BrowserTabs(vars().browserList);
 }
@@ -941,7 +1011,7 @@ function dumpFeatureList() {
 
 // BROWSER process commands
 function dumpKeepAliveDetails() {
-  if(!isProcessType("browser"))
+  if (!isProcessType("browser"))
     printLn("WARNING: This command is only valid on BROWSER process.");
 
   ensureKeepAliveRegistry();
@@ -949,7 +1019,7 @@ function dumpKeepAliveDetails() {
 }
 
 function dumpBrowserProcessDetails() {
-  if(!isProcessType("browser"))
+  if (!isProcessType("browser"))
     printLn("WARNING: This command is only valid on BROWSER process.");
 
   ensureBrowserProcess();
@@ -957,19 +1027,19 @@ function dumpBrowserProcessDetails() {
 }
 
 function getShutdownDetails() {
-  if(!isProcessType("browser"))
+  if (!isProcessType("browser"))
     printLn("WARNING: This command is only valid on BROWSER process.");
 
-    var getBrowserShutdownTryingToQuit = control().ExecuteCommand("x msedge!browser_shutdown::`anonymous namespace'::g_trying_to_quit");
+    var getBrowserShutdownTryingToQuit = control().ExecuteCommand("x " + getModuleName() + "!browser_shutdown::`anonymous namespace'::g_trying_to_quit");
     printLn("Trying to quit: " + getBrowserShutdownTryingToQuit[0]);
 
-    var getBrowserShutdownShutdownType = control().ExecuteCommand("x msedge!browser_shutdown::`anonymous namespace'::g_shutdown_type");
+    var getBrowserShutdownShutdownType = control().ExecuteCommand("x " + getModuleName() + "!browser_shutdown::`anonymous namespace'::g_shutdown_type");
     printLn("Shutdown Type:  " + getBrowserShutdownShutdownType[0]);
 }
 
 // GPU process commands
 function dumpGraphicsDeviceResourceDetails() {
-  if(!isProcessType("gpu-process"))
+  if (!isProcessType("gpu-process"))
     printLn("WARNING: This command is only valid on GPU process.");
 
   var d3ddevicelist = host.namespace.Debugger.State.FunctionAliases.d3ddevicelist();

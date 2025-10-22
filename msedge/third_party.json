@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14669125,
+    "size": 14670684,
     "file_count": 831
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32339709,
-    "file_count": 3960
+    "size": 32346154,
+    "file_count": 3962
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6963913,
+    "size": 6964022,
     "file_count": 59
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "libc++",
-    "size": 12338258,
+    "size": 12338580,
     "file_count": 1776
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3900979,
+    "size": 3901031,
     "file_count": 580
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "name": "skia",
-    "size": 3535460,
+    "size": 3535727,
     "file_count": 1184
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6591438,
+    "size": 6592309,
     "file_count": 176
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 381507,
+    "size": 383183,
     "file_count": 60
   },
   {
