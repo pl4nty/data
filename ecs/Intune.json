@@ -57,6 +57,10 @@
             "FlightExpiry": "2026-03-04T00:00:01.000Z",
             "FlightValue": true
         },
+        "SingletonBootstrapperFlight": {
+            "FlightExpiry": "2026-06-19T00:00:00.0402432Z",
+            "FlightValue": true
+        },
         "wingetAppTimeoutHandlerEnabled": {
             "FlightExpiry": "2025-06-30T23:59:00Z",
             "FlightValue": true
@@ -330,6 +334,11 @@
             "UseMamConditionalAccessFirstPartyApplicationDisableFallback": true
         }
     },
+    "SVC_MultiAdminApproval": {
+        "FlightingV2": {
+            "EnableMAA": true
+        }
+    },
     "SVC_Pivot": {
         "FlightingV2": {
             "EnableMultiDevicePivotGACalls": true
@@ -400,6 +409,11 @@
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
             "df619680-9e16-4fbc-b271-c85db192b36e": true,
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
+        }
+    },
+    "UX_MultiAdminApproval": {
+        "FlightingV2": {
+            "EnableMAA": true
         }
     },
     "UX_Pivot": {
