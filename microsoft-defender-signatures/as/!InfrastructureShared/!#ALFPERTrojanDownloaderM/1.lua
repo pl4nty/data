@@ -8,10 +8,10 @@ if l_0_0 > 300000 then
   return mp.CLEAN
 end
 local l_0_1 = (pe.get_versioninfo)()
-if l_0_1 == nil then
+if l_0_1 == nil or l_0_1.FileDescription == nil or l_0_1.OriginalFilename == nil then
   return mp.CLEAN
 end
-if l_0_1.FileDescription ~= "Telemetry-Feed-Update" then
+if not (l_0_1.FileDescription):find("Feed", 1, true) then
   return mp.CLEAN
 end
 if l_0_1.OriginalFilename ~= "Telemetry-Feed-Update.exe" then
