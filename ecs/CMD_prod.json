@@ -586,7 +586,6 @@
         "EnableWaitingForPostProvisioningPluginEvent": true,
         "EnableWindows365BuiltInRoleInAnc": true,
         "EnableWindows365BuiltInRoleInCanary": true,
-        "EnableWindows365ConnectionQualityReportInOverview": true,
         "EnableWindows365GuidesSectionInUX": true,
         "EnableWvdHoboCogsExport": true,
         "EnableXMLValidation": true,

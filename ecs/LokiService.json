@@ -163,7 +163,7 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251020.1.0",
-        "CalendarCompanionMsitVersion": "1.20251008.10.0",
+        "CalendarCompanionMsitVersion": "1.20251018.6.0",
         "CalendarCompanionProdVersion": "1.20251008.10.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -712,6 +712,7 @@
         "EnableCollaborationInstensityInsights": true,
         "EnableCollaborationNetworksGDRPExport": true,
         "EnableCompanionLicenseCheck": true,
+        "EnableCompanionRingSwitching": true,
         "EnableConsolidatedPeopleHighlightFlights": false,
         "EnableContactDeepUpdates": true,
         "EnableContactUnlinking": true,
@@ -1637,7 +1638,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251020.4.0",
+        "PeopleInTaskbarDFVersion": "1.20251021.1.0",
         "PeopleInTaskbarMsitVersion": "1.20251016.8.0",
         "PeopleInTaskbarProdVersion": "1.20251011.9.0",
         "campaignSchedules": {
