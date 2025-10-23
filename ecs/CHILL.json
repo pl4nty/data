@@ -2771,6 +2771,94 @@
                 "Type": 2
             }
         },
+        "Floodgate_Campaign_SharePoint.79808b4a-7a47-47f5-be77-2c8d304f28c6": {
+            "CampaignId": "79808b4a-7a47-47f5-be77-2c8d304f28c6",
+            "EndTimeUtc": "2025-12-30T16:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-08-10T16:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NGSPBuildUsageTime",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "NGSPBuildUsageEvent",
+                            "Count": 2,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very unlikely",
+                                    "questionLabel": "How likely are you to recommend creating scenario in SharePoint Build to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that rating?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/79808b4a-7a47-47f5-be77-2c8d304f28c6/6b35eb5d-e653-4913-b872-9034be4d2568/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_SharePoint.dd025788-0c5d-4dde-812e-2b30af0d3bf9": {
             "CampaignId": "dd025788-0c5d-4dde-812e-2b30af0d3bf9",
             "EndTimeUtc": "2028-05-01T07:00:00Z",
