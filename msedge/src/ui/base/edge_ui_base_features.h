@@ -519,6 +519,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetRoundedCornerRadius();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern int GetRoundedCornerRadiusForMacOS26();
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetMarginForPhoenix();
 
 // if enabled, mica will be shown in Edge Window for Classic Tab Shape.

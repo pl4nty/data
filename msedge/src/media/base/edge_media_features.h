@@ -338,7 +338,7 @@ COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kUseAndroidMediaExtractor);
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-bool IsAndroidMediaExtractorEnabled();
+bool IsAndroidMediaExtractorEnabled(bool trigger_usage_on_check = false);
 #endif  // BUILDFLAG(EDGE_ENABLE_ANDROID_MEDIA_EXTRACTOR)
 
 }  // namespace edge
