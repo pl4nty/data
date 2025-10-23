@@ -510,6 +510,11 @@
                             "toc_title": "app bundle"
                         },
                         {
+                            "href": "a_z_names_terms/a/app-builder-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "App Builder Agent"
+                        },
+                        {
                             "href": "a_z_names_terms/a/app-configuration",
                             "permissioned-type": "private",
                             "toc_title": "App Configuration"
@@ -2065,6 +2070,11 @@
                             "toc_title": "business process flow"
                         },
                         {
+                            "href": "a_z_names_terms/b/business-process-solutions",
+                            "permissioned-type": "private",
+                            "toc_title": "Business Process Solutions"
+                        },
+                        {
                             "href": "a_z_names_terms/b/buy-purchase",
                             "permissioned-type": "private",
                             "toc_title": "buy, purchase"
@@ -2253,6 +2263,11 @@
                             "href": "a_z_names_terms/c/clipchamp",
                             "permissioned-type": "private",
                             "toc_title": "Clipchamp"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/clone-cloning",
+                            "permissioned-type": "private",
+                            "toc_title": "clone, cloning"
                         },
                         {
                             "href": "a_z_names_terms/c/close",
@@ -3655,6 +3670,11 @@
                             "toc_title": "endpoint"
                         },
                         {
+                            "href": "a_z_names_terms/e/endpoint-dlp",
+                            "permissioned-type": "private",
+                            "toc_title": "Endpoint DLP"
+                        },
+                        {
                             "href": "a_z_names_terms/e/endpoint-manager",
                             "permissioned-type": "private",
                             "toc_title": "Endpoint Manager"
@@ -4830,6 +4850,11 @@
                             "toc_title": "localDNS"
                         },
                         {
+                            "href": "a_z_names_terms/l/local-device",
+                            "permissioned-type": "private",
+                            "toc_title": "local device"
+                        },
+                        {
                             "href": "a_z_names_terms/l/local-storage",
                             "permissioned-type": "private",
                             "toc_title": "local storage"
@@ -5129,6 +5154,16 @@
                                             "toc_title": "Analyst"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/channel-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Channel Agent"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/community-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Community Agent"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/facilitator",
                                             "permissioned-type": "private",
                                             "toc_title": "Facilitator"
@@ -5137,6 +5172,11 @@
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/interpreter",
                                             "permissioned-type": "private",
                                             "toc_title": "Interpreter"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/knowledge-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Knowledge Agent"
                                         },
                                         {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/microsoft-365-admin",
@@ -5152,6 +5192,11 @@
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/researcher",
                                             "permissioned-type": "private",
                                             "toc_title": "Researcher"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/surveys-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Surveys Agent"
                                         }
                                     ],
                                     "toc_title": "Microsoft 365 agents"
@@ -5258,6 +5303,11 @@
                             "href": "a_z_names_terms/m/microsoft-ai-cloud-partner-program",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft AI Cloud Partner Program"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-agent-framework",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Agent Framework"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-antimalware-for-azure",
@@ -5677,9 +5727,19 @@
                                     "toc_title": "Microsoft for Retail"
                                 },
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-sustainability",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft for Sustainability"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-for-telecommunications",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft for Telecommunications"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-industry-offerings/microsoft-sovereign-cloud",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Sovereign Cloud"
                                 }
                             ],
                             "toc_title": "Microsoft industry offerings"
@@ -7670,6 +7730,11 @@
                             "toc_title": "real-time operating system"
                         },
                         {
+                            "href": "a_z_names_terms/r/recall",
+                            "permissioned-type": "private",
+                            "toc_title": "Recall"
+                        },
+                        {
                             "href": "a_z_names_terms/r/recent",
                             "permissioned-type": "private",
                             "toc_title": "Recent"
@@ -7903,6 +7968,11 @@
                             "href": "a_z_names_terms/r/retrieval-augmented-generation-rag-",
                             "permissioned-type": "private",
                             "toc_title": "retrieval-augmented generation (RAG)"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/revoke",
+                            "permissioned-type": "private",
+                            "toc_title": "revoke"
                         },
                         {
                             "href": "a_z_names_terms/r/ribbon",
@@ -10048,6 +10118,11 @@
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-chat",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft 365 Copilot Chat"
+                        },
+                        {
+                            "href": "copilot-guidance/copilot/microsoft-365-copilot-library",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Library"
                         },
                         {
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-notebooks",
@@ -13879,7 +13954,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2641,
+        "count_of_node_with_href": 2656,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

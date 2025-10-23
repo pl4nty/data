@@ -436,6 +436,7 @@
             "EnableWin32CatalogAppsForDpp": true,
             "EnableWin32CatalogAppsForEsp": true,
             "EnableWindowsRestore": true,
+            "EnrollmentFailureReportUserNotLicensedFilter": true,
             "TandCSyncButtonEnableFlight": true
         }
     },
