@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1826,7 +1826,6 @@
             "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
-            "EnablePlannerGroundingInPA": true,
             "EnableRerunOsdlStatementExecuteActivity": true,
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
@@ -1849,12 +1848,6 @@
             "UserRing": "general"
         },
         "SkillConfig": {
-            "ConsentFlow": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.consentByPassed",
-                    "IsEnabled": false
-                }
-            ],
             "DisableRephrasing": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableResponseRephrasingService",
@@ -1867,93 +1860,9 @@
                     "isEnabled": true
                 }
             ],
-            "EnableConsentRehydration": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableConsentRehydrationFlight",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableGoalDetection": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGoalDetection",
-                    "IsEnabled": false
-                }
-            ],
-            "EnableIterationResults": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIterationResults",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableIterativeOrchestratorInPA": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIterativeOrchestratorInPA",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableLLMIterativePlannerInPA": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableLLMIterativePlannerInPA",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableLLMPlannerIterativePromptV2": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.LLMPlannerIterativePromptV21",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableLLMPlannerToolFix": [
-                {
-                    "Flight": "LLMPlannerIterativeToolFix",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableMCPToolsInPA": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enabledMcpToolsInPA",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableMCPWriteTools": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.mcpWriteApiEnabled",
-                    "IsEnabled": true
-                }
-            ],
             "EnableMeetingInfoQnASkill": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingInfoQnASkill",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableParallelToolExecution": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableParallelToolExecution",
-                    "IsEnabled": false
-                }
-            ],
-            "EnableResponder": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableResponder",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableResponderScheduling": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableSchedulingWithResponder",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableStreamingPostProcessing": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableStreamingPostProcessing",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableSummarizationUsingLLMForLLMToolDetector": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableSummarization",
                     "IsEnabled": true
                 }
             ],
@@ -1964,32 +1873,6 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGpt41IntentPlus",
-                    "IsEnabled": true
-                }
-            ],
-            "InternalKnowledgeSkill": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableInternalKnowledgeSkill",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIKSODSPDataSource",
-                    "IsEnabled": false
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIKSPlannerTaskDataSource",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.disableResponderCitationLinkRemoval",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIKSSensitivityLabel",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.useGraphAppOnlyGraphApi",
                     "IsEnabled": true
                 }
             ],
@@ -2028,38 +1911,6 @@
                 },
                 {
                     "Flight": "enableAgendaModificationV2",
-                    "IsEnabled": true
-                }
-            ],
-            "ReactiveScheduling": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableSchedulingSkill",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableMeetingParamsFromOrchestrator",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.EnableSchedulingExpandedGrounding",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.EnableFindMeetingTimeAPI",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.EnableSchedulingSkillPromptV2",
-                    "IsEnabled": true
-                }
-            ],
-            "TaskManagement_v2": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTaskManagementSkillV2",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTaskManagementSkillPromptV2",
                     "IsEnabled": true
                 }
             ],
@@ -2127,32 +1978,6 @@
                 {
                     "Flight": "TM.freeWrapUp",
                     "IsEnabled": true
-                }
-            ],
-            "WebSearch": [
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableWebSearchSkillForPA",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.RemoveMarkdownCodeBlocksForPA",
-                    "IsEnabled": false
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructionsForPA",
-                    "IsEnabled": false
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableConciseQueriesForPA",
-                    "IsEnabled": false
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.WebSearch.OptionSetName",
-                    "Value": "search_web_plugin"
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.WebSearch.AdditionalVariantHeaders",
-                    "Value": "feature.DisableSegmentGeneration,teamsCopilotFluxV3,feature.DisableEnterpriseSearch,cdxenable_grounding_api_web_search_without_da"
                 }
             ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
