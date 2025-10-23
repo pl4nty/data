@@ -803,22 +803,22 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://outlook.office365.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="FormsODataApi" o:authentication="2">
-      <o:url>https://forms.cloud.microsoft/formapi/api/</o:url>
+      <o:url>https://forms.office.com/formapi/api/</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="c9a559d2-7aab-4f13-a6ed-e7e9c52aec87" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="forms.office.com"/>
     </o:service>
     <o:service o:name="MicrosoftFormsODataApi" o:authentication="2">
-      <o:url>https://forms.cloud.microsoft/formapi/api/</o:url>
+      <o:url>https://forms.microsoft.com/formapi/api/</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="c9a559d2-7aab-4f13-a6ed-e7e9c52aec87" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="FormsDesignPage">
-      <o:url>https://forms.cloud.microsoft/Pages/DesignPage.aspx</o:url>
+      <o:url>https://forms.office.com/Pages/DesignPage.aspx</o:url>
     </o:service>
     <o:service o:name="FormsMobileDesignPage">
-      <o:url>https://forms.cloud.microsoft/Pages/DesignPageV2.aspx</o:url>
+      <o:url>https://forms.office.com/Pages/DesignPageV2.aspx</o:url>
     </o:service>
     <o:service o:name="FormsMobileHostCreateURL">
-      <o:url>https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?lang={0}&amp;Host={1}#Action=Create</o:url>
+      <o:url>https://forms.office.com/Pages/DesignPageV2.aspx?lang={0}&amp;Host={1}#Action=Create</o:url>
     </o:service>
     <o:service o:name="StreamWebResource" o:authentication="2">
       <o:url>https://stream.microsoft.com</o:url>
@@ -1716,10 +1716,6 @@
       <o:url>https://home.microsoftpersonalcontent.com</o:url>
       <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://home.microsoftpersonalcontent.com/v2/.default" o:headerValue="Bearer {}"/>
     </o:service>
-    <o:service o:name="DeferredDeepLinkService" o:authentication="2">
-      <o:url>https://deferreddeeplinkservice.microsoft.com/api/deeplinkprompt</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://deferreddeeplinkservice.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
-    </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>
     </o:service>
@@ -2168,7 +2164,7 @@
       <o:url>https://outlook.office365.com/</o:url>
     </o:service>
     <o:service o:name="FormsQuizAgave">
-      <o:url>https://forms.cloud.microsoft/Pages/OneNoteMathAddinFunctionPage.aspx</o:url>
+      <o:url>https://forms.office.com/Pages/OneNoteMathAddinFunctionPage.aspx</o:url>
     </o:service>
     <o:service o:name="LiveCaptionsAgave">
       <o:url>https://www.onenote.com/officeaddins/livecaptions</o:url>
@@ -2227,9 +2223,9 @@
     <o:token o:name="OSI.RootHost">officeapps.live.com</o:token>
     <o:token o:name="RMSOnline.BaseHost">discover.aadrm.com</o:token>
     <o:token o:name="SPO.BaseHost">sharepoint.com</o:token>
-    <o:token o:name="Forms.BaseHost">forms.cloud.microsoft</o:token>
+    <o:token o:name="Forms.BaseHost">forms.office.com</o:token>
     <o:token o:name="Forms.AuthHost">forms.office.com</o:token>
-    <o:token o:name="MicrosoftForms.BaseHost">forms.cloud.microsoft</o:token>
+    <o:token o:name="MicrosoftForms.BaseHost">forms.microsoft.com</o:token>
     <o:token o:name="Substrate.AuthHost">substrate.office.com</o:token>
     <o:token o:name="Substrate.AuthHost.FP">substrate.office.com</o:token>
     <o:token o:name="Substrate.BaseHost">substrate.office.com</o:token>
@@ -2273,7 +2269,7 @@
     <o:token o:name="ADALRedirectUrlVisio">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALRedirectUrlWord">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALResourceId">https://officeapps.live.com</o:token>
-    <o:token o:name="AugmentationLoopServicePriority">https://augloop.office.com;https://augloop-int.officeppe.com;https://dogfood.augloop.svc.cloud.microsoft;https://augloop-dogfood.officeppe.com;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
+    <o:token o:name="AugmentationLoopServicePriority">https://augloop.office.com;https://augloop-int.officeppe.com;https://augloop-dogfood.officeppe.com;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
     <o:token o:name="BingGeospatialServiceKey">As8tQX71mxPDxIW_1SGPqLnpHp_reEWdy6qjMc6n007_8DLlATfivOyqV0tjuI39</o:token>
     <o:token o:name="BingGeospatialServiceKey3DMaps">Ajuvz1xHFIa2kqBFeM2U1q1fViBjPDsW7ZdDVihFbYM8dwRjemGMOvreAjjqRcxH</o:token>
     <o:token o:name="BingSpellerServiceAuthenticationId">FDD7CBDCD2C7BC531CBFCDB30B10E75034BDEC74</o:token>
