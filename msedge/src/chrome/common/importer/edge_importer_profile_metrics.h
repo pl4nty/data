@@ -348,7 +348,12 @@ enum class ThemesImportState {
   kThemeExtensionNotEnabledDueToNoUserConsent = 9,
   kThemeExtensionNotInstalledDueToNoWebContents = 10,
   kThemeExtensionImportedWithoutOtherStoreConsent = 11,
-  kMaxValue = kThemeExtensionImportedWithoutOtherStoreConsent
+  kColorThemeFound = 12,
+  kColorThemeImported = 13,
+  kColorThemeApplied = 14,
+  kColorThemeNotAppliedDueToFeatureFlagDisabled = 15,
+  kColorThemeNotAppliedDueToNoUserConsent = 16,
+  kMaxValue = kColorThemeNotAppliedDueToNoUserConsent
 };
 
 namespace metrics {
