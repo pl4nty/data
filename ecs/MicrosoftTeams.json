@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -4173,6 +4173,9 @@
         },
         "hid": {
             "enableHidReportDescriptorParsing": false
+        },
+        "lds": {
+            "maxLdsRecords": 10000
         },
         "logging": {
             "autoFlush": false
