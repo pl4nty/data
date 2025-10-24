@@ -27,6 +27,9 @@ l_0_11["vcruntime140_1.dll"] = true
 if l_0_11[(string.lower)(l_0_7)] then
   return mp.CLEAN
 end
+if (string.lower)(l_0_7) == "libomp.dll" and (string.find)((string.lower)(l_0_0), "libiomp5md.dll$") then
+  return mp.CLEAN
+end
 local l_0_12 = (bm.get_imagepath)()
 if isnull(l_0_12) then
   return mp.CLEAN

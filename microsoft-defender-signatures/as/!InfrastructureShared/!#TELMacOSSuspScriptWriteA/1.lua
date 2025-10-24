@@ -27,9 +27,6 @@ if l_0_4 ~= nil and type(l_0_4) == "table" and #l_0_4 > 0 then
   if l_0_5 == true and (l_0_8:find("ds_store", 1, true) ~= nil or l_0_2:find("^%._", 1, false) ~= nil) then
     l_0_7 = true
   end
-  if l_0_5 and l_0_6 and #l_0_4 > 1 then
-    l_0_7 = true
-  end
   if l_0_6 == true or l_0_5 == true or l_0_7 == true then
     local l_0_9 = ""
     for l_0_13,l_0_14 in ipairs(l_0_4) do
