@@ -344,6 +344,7 @@
         "EnableGroupServiceDataRetentionRateLimit": true,
         "EnableGuideLineTextForFLDCrossRegionDR": true,
         "EnableHADRForRegionState": true,
+        "EnableHADRGeoPartition": true,
         "EnableHOBOResourceGraphScanner": true,
         "EnableHPPublicPreviewUX": false,
         "EnableHaadjSSOCheck": true,
