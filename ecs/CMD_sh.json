@@ -671,7 +671,6 @@
         "EnablePolicyUXFetchFLsRegionFromGraph": true,
         "EnablePolicyUXFilterANCFLSRegionFromGraph": true,
         "EnablePolicyUXShowAncRestrictionInfo": true,
-        "EnablePolicyUXShowRegionRestrictionInfo": true,
         "EnablePolicyUXforCloudApp": true,
         "EnablePolicyV2": true,
         "EnablePostProvisioningFallbackForBusiness": true,
