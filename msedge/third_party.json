@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 32360574,
+    "size": 32380922,
     "file_count": 3964
   },
   {
     "name": "boringssl",
-    "size": 70730,
+    "size": 75618,
     "file_count": 15
   },
   {
@@ -251,8 +251,8 @@
   },
   {
     "name": "glslang",
-    "size": 42997010,
-    "file_count": 3142
+    "size": 43042213,
+    "file_count": 3145
   },
   {
     "name": "googletest",
@@ -376,7 +376,7 @@
   },
   {
     "name": "libc++abi",
-    "size": 29758,
+    "size": 31531,
     "file_count": 7
   },
   {
@@ -626,8 +626,8 @@
   },
   {
     "name": "rust",
-    "size": 1282562,
-    "file_count": 142
+    "size": 1286780,
+    "file_count": 143
   },
   {
     "name": "screen-ai",
@@ -731,12 +731,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2459846,
+    "size": 2459873,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6598501,
+    "size": 6599310,
     "file_count": 176
   },
   {
