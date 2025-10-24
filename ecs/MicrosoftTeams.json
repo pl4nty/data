@@ -613,7 +613,6 @@
                 "enableAADSyncInCloudDeleteUpdates": true,
                 "enableAccountGraphTenantListCache": true,
                 "enableAllowedCloudsFromAadXtapCache": true,
-                "enableAppsFilteredByServicePlanIds": false,
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableChannelOnlyMemberGetTeam": true,
                 "enableConvUXChannelCreation": true,
@@ -625,7 +624,6 @@
                 "enableCrossCloudTelemetry": true,
                 "enableGetSharedChannelFromGetAllChannel": true,
                 "enableLicenseCheckForTeamsPremium": true,
-                "enableLicenseEnforcementForApps": true,
                 "enablePoPForOffice365ExchangeREST": true,
                 "enableRoomFrom3s": true,
                 "enableSPOMeetingCalendarFluidAccessReading": true,
@@ -651,11 +649,7 @@
                         ]
                     }
                 },
-                "mochaServicePlanIds": [
-                    "5810ac4e-0cdd-42be-93ce-80f8eb95618e"
-                ],
                 "preserveExplicitlyAddedChannels": true,
-                "supportOptionalPropertiesForTemplatedApps": true,
                 "validResourceSpecificPermissionsName": [
                     "OnlineMeeting.ReadBasic.Chat",
                     "ChannelMeeting.ReadBasic.Group",
