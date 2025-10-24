@@ -36,11 +36,6 @@
                 }
             ]
         },
-        "DynamicCSPCheckForExtensionAPIs": {
-            "enableFeatures": [
-                "msDynamicCSPCheckForExtensionAPIs"
-            ]
-        },
         "EdgeAutofillUnifiedLogger": {
             "enableFeatures": [
                 "msEdgeAutofillUnifiedLogger"
