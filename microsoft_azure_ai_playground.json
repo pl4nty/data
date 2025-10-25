@@ -351,6 +351,7 @@
         "azureml://registries/azureml-staging/models/aoai-sora",
         "azureml://registries/azureml-staging/models/sora",
         "azureml://registries/azure-openai/models/sora",
+        "azureml://registries/azure-openai/models/sora-2",
         "azureml://registries/azureml-stabilityai/models/stable-image-ultra",
         "azureml://registries/azureml-stabilityai/models/stable-image-core",
         "azureml://registries/azureml-stabilityai/models/stable-diffusion-3.5-large"

@@ -1717,8 +1717,8 @@
       <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://home.microsoftpersonalcontent.com/v2/.default" o:headerValue="Bearer {}"/>
     </o:service>
     <o:service o:name="DeferredDeepLinkService" o:authentication="2">
-      <o:url>https://deferreddeeplinkservice.microsoft.com/api/deeplinkprompt</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://deferreddeeplinkservice.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://www.deeplinkservice.svc.cloud.microsoft/api/deeplinkprompt</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://www.deeplinkservice.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>
