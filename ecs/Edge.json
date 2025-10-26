@@ -57,18 +57,6 @@
                 }
             ]
         },
-        "EdgeWalletDiagnosticToolFeedbacks": {
-            "enableFeatures": [
-                "msIncludeWalletDiagnosticsInFeedback",
-                "msWalletDiagnosticDataLogger"
-            ]
-        },
-        "EdgeXPayMiniWalletWebUI": {
-            "enableFeatures": [
-                "msWalletMiniWalletWebUX",
-                "msWalletNotificationsWebComponentsUX"
-            ]
-        },
         "FalconTextTranslationEndpointExperiment": {
             "enableFeatures": [
                 "msTranslateServerSideScriptExperiment"
