@@ -560,6 +560,7 @@
         "EnableSubscriptionPartition": true,
         "EnableSubscriptionPcCodeCheck": true,
         "EnableSyncAllForReady": true,
+        "EnableSyncInterestedUserFilter": true,
         "EnableTenantCleanUp": true,
         "EnableTenantOnboardValidateTenantActualStatus": true,
         "EnableTenantOutOfServiceDeviceGA": true,
