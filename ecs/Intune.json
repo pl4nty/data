@@ -404,6 +404,11 @@
             "ShowAFDBanner": true
         }
     },
+    "UX_DeviceConfig": {
+        "FlightingV2": {
+            "EnableDeviceExecutionStatusReportExportV2": true
+        }
+    },
     "UX_EPM": {
         "FlightingV2": {
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,

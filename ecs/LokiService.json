@@ -1767,7 +1767,9 @@
                 "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
                 "https://outlook-1-cdn.azureedge.microsoft.scloud"
             ]
-        }
+        },
+        "nonLocalizedAppName_shared": 1,
+        "updatedFAQText_shared": 1
     },
     "Segmentation": {
         "CompanionDevRing": "false",
