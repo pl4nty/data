@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251023.1.0",
-        "CalendarCompanionMsitVersion": "1.20251018.6.0",
+        "CalendarCompanionDFVersion": "1.20251026.1.0",
+        "CalendarCompanionMsitVersion": "1.20251020.1.0",
         "CalendarCompanionProdVersion": "1.20251018.6.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1638,9 +1638,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251023.1.0",
+        "PeopleInTaskbarDFVersion": "1.20251026.2.0",
         "PeopleInTaskbarMsitVersion": "1.20251018.6.0",
-        "PeopleInTaskbarProdVersion": "1.20251011.9.0",
+        "PeopleInTaskbarProdVersion": "1.20251018.6.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
