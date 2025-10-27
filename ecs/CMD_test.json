@@ -1047,7 +1047,6 @@
         "EnabledShowCustomUserStorage": false,
         "EnabledUserSettingsPersistence": true,
         "EnabledUserSettingsPersistenceConfiguration": true,
-        "EnabledUserSettingsPersistenceRegionCheck": true,
         "EventSubscriptionAddResourceActionFailure": true,
         "ExpDivisionSettings": true,
         "ExpandDiskByCmdAgentPluginAsPrimary": true,
