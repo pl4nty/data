@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates (.admx) for Windows Server 2025 (October 25 release)",
+    "downloadDescription": "This page provides complete set of Administrative Templates (.admx) for Windows Server 2025 (October 25 release)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Administrative Templates (.admx) for Windows Server2025 Oct 2025 Update-V3.msi",
+            "url": "https://download.microsoft.com/download/01f931f8-1837-402b-93ed-99baf1c97ceb/Administrative Templates (.admx) for Windows Server2025 Oct 2025 Update-V3.msi",
+            "size": "12328960",
+            "version": "3.0",
+            "datePublished": "10/27/2025 4:47:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Group Policy tools use Administrative template files to populate policy settings in the user interface. This allows administrators to manage registry-based policy settings. <br/> \n\nThis download includes the Administrative Templates (.admx) for Windows server 2025 (October 25 release), in the following languages:<br/> \n\n<ul> \n\n<li>cs-CZ Czech - Czech Republic</li> \n\n<li>de-DE German - Germany</li> \n\n<li>en-US English - United States</li> \n\n<li>es-ES Spanish - Spain</li> \n\n<li>fr-FR French - France</li> \n\n<li>hu-HU Hungarian - Hungary</li> \n\n<li>it-IT Italian - Italy</li> \n\n<li>ja-JP Japanese - Japan</li> \n\n<li>ko-KR Korean - Korea</li> \n\n<li>nl-NL Dutch - The Netherlands</li> \n\n<li>pl-PL Polish - Poland</li> \n\n<li>pt-BR Portuguese - Brazil</li> \n\n<li>pt-PT Portuguese - Portugal</li> \n\n<li>ru-RU Russian - Russia</li> \n\n<li>sv-SE Swedish - Sweden</li> \n\n<li>tr-TR Turkish - Turkey</li> \n\n<li>zh-CN Chinese - China</li> \n\n<li>zh-TW Chinese - Taiwan</li> \n\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "Administrative Templates (.admx) for Windows Server2025 Oct 2025 Update-V3.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.8 MB"
+    ],
+    "detailsSection_file_date": "10/27/2025",
+    "systemRequirementsSection": "<ul> \n\n<br/> \n\n<li> User rights to run the Group Policy Management Editor (gpme.msc) or the Group Policy Object Editor (gpedit.msc). </li> <br/> \n\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "To download the .msi file that contains the .admx files:<br/> \n\n<ol><br/> \n\n<li>Click the <b>Download</b> button</li> \n\n<li>In the File Download dialog box, click <b>Save</b>.</li> \n\n<li>In the <b>Save As</b> dialog box, browse to the directory on your computer to which you want to save the .msi file.</li> \n\n<li>To start downloading the .msi file, click <b>Save</b>.</li> \n\n</ol><br/> \n\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "how to create and manage the Central Store for Group Policy Administrative Templates in Windows",
+            "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/group-policy/create-and-manage-central-store"
+        },
+        {
+            "title": "administrative Templates (admx) for Windows Server 2025 (MAY 25 release)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=108295&msockid=3e636bbd6f2666c608b07eea6e596746"
+        },
+        {
+            "title": "group Policy Settings Reference Spreadsheet for Windows Server 2025 (MAY 25 release)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=108296"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108430",
+    "downloadPreload": true
+}
