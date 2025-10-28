@@ -226,6 +226,7 @@
         "EnableCloudPcInGracePeriodScenarioV2": true,
         "EnableCloudPcInaccessibleScenario": true,
         "EnableCloudPcInsightReport": true,
+        "EnableCloudPcProvisionScenarioV2": true,
         "EnableCloudPcReboot": true,
         "EnableCloudProfileStorageForwarderDataStream": true,
         "EnableCnameEndpointsCheck": true,
