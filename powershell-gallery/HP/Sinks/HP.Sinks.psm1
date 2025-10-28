@@ -17,7 +17,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 
@@ -89,13 +89,13 @@ function Get-HPPrivateLogVar { $Env:HPCMSL_LOG_FORMAT }
 
   Defaults can be configured via the environment. This affects all related commands. For example, when applying them to eventlog-related commands, all eventlog-related commands are affected.
 
-  In the following example, the HPSINK_EVENTLOG_MESSAGE_TARGET and HPSINK_EVENTLOG_MESSAGE_SOURCE variables affect both the Register-EventLogSink and Send-ToEventLog commands.
+  In the following example, the HPSINK_EVENTLOG_MESSAGE_TARGET and HPSINK_EVENTLOG_MESSAGE_SOURCE variables affect both the Register-HPEventLogSink and Send-ToHPEventLog commands.
 
   ```PowerShell
   $ENV:HPSINK_EVENTLOG_MESSAGE_TARGET="remotesyslog.mycompany.com"
   $ENV:HPSINK_EVENTLOG_MESSAGE_SOURCE="mysource"
-  Register-EventLogSink
-  "hello" | Send-ToEventLog
+  Register-HPEventLogSink
+  "hello" | Send-ToHPEventLog
   ```
 
 
@@ -106,7 +106,7 @@ function Get-HPPrivateLogVar { $Env:HPCMSL_LOG_FORMAT }
   If the -PassThru parameter is specified, the original message is returned. This allows chaining multiple SendTo-XXX commands.
 
 .EXAMPLE
-   "hello" | Send-ToSyslog -tcp -server mysyslogserver.mycompany.com
+   "hello" | Send-ToHPSyslog -tcp -server mysyslogserver.mycompany.com
 
    This sends "hello" to the syslog server on mysyslogserver.mycompany.com via TCP. Alternately, the syslog server could be set in the environment variable HPSINK_SYSLOG_MESSAGE_TARGET.
 
@@ -117,13 +117,14 @@ function Get-HPPrivateLogVar { $Env:HPCMSL_LOG_FORMAT }
   [RFC 6587 - "Transmission of Syslog Messages over TCP"](https://tools.ietf.org/html/rfc6587)
 
 .LINK
-  [Send-ToEventlog](https://developers.hp.com/hp-client-management/doc/Send-ToEventLog)
+  [Send-ToHPEventLog](https://developers.hp.com/hp-client-management/doc/Send-ToHPEventLog)
 
 
 #>
-function Send-ToSyslog
+function Send-ToHPSyslog
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Send-ToSyslog")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Send-ToHPSyslog")]
+  [Alias('Send-ToSyslog')]
   param
   (
     [ValidateNotNullOrEmpty()][Parameter(Position = 0,ValueFromPipeline = $True,Mandatory = $True)] $message,
@@ -274,10 +275,10 @@ function Send-ToSyslog
   Registers a source in an event log
 
 .DESCRIPTION
-  This command registers a source in an event log. must be executed before sending messages to the event log via the Send-ToEventLog command. 
-  The source must match the source in the Send-ToEventLog command. By default, it is assumed that the source is 'HP-CSL'.
+  This command registers a source in an event log. must be executed before sending messages to the event log via the Send-ToHPEventLog command. 
+  The source must match the source in the Send-ToHPEventLog command. By default, it is assumed that the source is 'HP-CSL'.
 
-  This command can be unregistered using the Unregister-EventLogSink command. 
+  This command can be unregistered using the Unregister-HPEventLogSink command. 
 
 .PARAMETER logname
   Specifies the log section in which to register this source
@@ -300,17 +301,18 @@ function Send-ToSyslog
     - HPSINK_EVENTLOG_MESSAGE_TARGET: override event log server name
 
 .LINK
-  [Unregister-EventLogSink](https://developers.hp.com/hp-client-management/doc/Unregister-EventLogSink)
+  [Unregister-HPEventLogSink](https://developers.hp.com/hp-client-management/doc/Unregister-HPEventLogSink)
 
 .LINK
-  [Send-ToEventLog](https://developers.hp.com/hp-client-management/doc/Send-ToEventLog)
+  [Send-ToHPEventLog](https://developers.hp.com/hp-client-management/doc/Send-ToHPEventLog)
 
 .EXAMPLE
-  Register-EventLogSink
+  Register-HPEventLogSink
 #>
-function Register-EventLogSink
+function Register-HPEventLogSink
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Register-EventLogSink")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Register-HPEventLogSink")]
+  [Alias('Register-EventLogSink')]
   param
   (
     [Parameter(Position = 0,Mandatory = $false)] [string]$logname = $ENV:HPSINK_EVENTLOG_MESSAGE_LOG,
@@ -337,10 +339,10 @@ function Register-EventLogSink
 
 <#
 .SYNOPSIS
-   Unregisters a source registered by the Register-EventLogSink command 
+   Unregisters a source registered by the Register-HPEventLogSink command 
 
 .DESCRIPTION
-  This command removes a registration that was previously registered by the Register-EventLogSink command. 
+  This command removes a registration that was previously registered by the Register-HPEventLogSink command. 
 
 Note:
 Switching between formats changes the file encoding. The 'Simple' mode uses unicode encoding (UTF-16) while the 'CMTrace' mode uses UTF-8. This is partly due to historical reasons
@@ -349,7 +351,7 @@ Switching between formats changes the file encoding. The 'Simple' mode uses unic
 As a result, it is important to start with a new log when switching modes. Writing UTF-8 to UTF-16 files or vice versa will cause encoding and display issues.  
 
 .PARAMETER source  
-  Specifies the event log source that was registered via the Register-EventLogSink command. The source can also be specified via the HPSINK_EVENTLOG_MESSAGE_SOURCE environment variable.
+  Specifies the event log source that was registered via the Register-HPEventLogSink command. The source can also be specified via the HPSINK_EVENTLOG_MESSAGE_SOURCE environment variable.
 
 .PARAMETER target
   Specifies the target computer on which to perform this command. Local computer is assumed if not specified, unless environment variable
@@ -364,17 +366,18 @@ As a result, it is important to start with a new log when switching modes. Writi
   - HPSINK_EVENTLOG_MESSAGE_TARGET: override event log server name
 
 .LINK
-  [Register-EventLogSink](https://developers.hp.com/hp-client-management/doc/Register-EventLogSink)
+  [Register-HPEventLogSink](https://developers.hp.com/hp-client-management/doc/Register-HPEventLogSink)
 
 .LINK
-  [Send-ToEventLog](https://developers.hp.com/hp-client-management/doc/Send-ToEventLog)
+  [Send-ToHPEventLog](https://developers.hp.com/hp-client-management/doc/Send-ToHPEventLog)
 
 .EXAMPLE
-  Unregister-EventLogSink
+  Unregister-HPEventLogSink
 #>
-function Unregister-EventLogSink
+function Unregister-HPEventLogSink
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Unregister-EventLogSink")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Unregister-HPEventLogSink")]
+  [Alias('Unregister-EventLogSink')]
   param
   (
     [Parameter(Position = 0,Mandatory = $false)] [string]$source = $ENV:HPSINK_EVENTLOG_MESSAGE_SOURCE,
@@ -402,13 +405,13 @@ function Unregister-EventLogSink
 .DESCRIPTION
   This command sends a message to an event log. 
 
-  The source should be initialized with the Register-EventLogSink command to register the source name prior to using this command. 
+  The source should be initialized with the Register-HPEventLogSink command to register the source name prior to using this command. 
 
 .PARAMETER id
   Specifies the event id that will be registered under the 'Event ID' column in the event log. Default value is 0. 
 
 .PARAMETER source
-  Specifies the event log source that will be used when logging. This source should be registered via the Register-EventLogSink command. 
+  Specifies the event log source that will be used when logging. This source should be registered via the Register-HPEventLogSink command. 
 
   The source can also be specified via the HPSINK_EVENTLOG_MESSAGE_SOURCE environment variable.
 
@@ -436,7 +439,7 @@ function Unregister-EventLogSink
   If specified, this command sends the message to the pipeline upon completion and any error in the command is non-terminating.
 
 .EXAMPLE 
-    "hello" | Send-ToEventLog 
+    "hello" | Send-ToHPEventLog 
 
 .NOTES
     This command reads the following environment variables for setting defaults.
@@ -448,30 +451,31 @@ function Unregister-EventLogSink
 
   Defaults can be configured via the environment. This affects all related commands. For example, when applying them to eventlog-related commands, all eventlog-related commands are affected.
 
-  In the following example, the HPSINK_EVENTLOG_MESSAGE_TARGET and HPSINK_EVENTLOG_MESSAGE_SOURCE variables affect both the Register-EventLogSink and Send-ToEventLog commands.
+  In the following example, the HPSINK_EVENTLOG_MESSAGE_TARGET and HPSINK_EVENTLOG_MESSAGE_SOURCE variables affect both the Register-HPEventLogSink and Send-ToHPEventLog commands.
 
   ```PowerShell
   $ENV:HPSINK_EVENTLOG_MESSAGE_TARGET="remotesyslog.mycompany.com"
   $ENV:HPSINK_EVENTLOG_MESSAGE_SOURCE="mysource"
-  Register-EventLogSink
-  "hello" | Send-ToEventLog
+  Register-HPEventLogSink
+  "hello" | Send-ToHPEventLog
   ```
 
 
 .LINK
-  [Unregister-EventLogSink](https://developers.hp.com/hp-client-management/doc/Unregister-EventLogSink)
+  [Unregister-HPEventLogSink](https://developers.hp.com/hp-client-management/doc/Unregister-HPEventLogSink)
 
 .LINK
-  [Register-EventLogSink](https://developers.hp.com/hp-client-management/doc/Register-EventLogSink)
+  [Register-HPEventLogSink](https://developers.hp.com/hp-client-management/doc/Register-HPEventLogSink)
 
 .LINK
-  [Send-ToSyslog](https://developers.hp.com/hp-client-management/doc/Send-ToSyslog)
+  [Send-ToHPSyslog](https://developers.hp.com/hp-client-management/doc/Send-ToHPSyslog)
 
 
 #>
-function Send-ToEventLog
+function Send-ToHPEventLog
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Send-ToEventlog")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Send-ToHPEventLog")]
+  [Alias('Send-ToEventLog')]
   param
   (
 
@@ -639,13 +643,13 @@ function Write-HPPrivateCMTrace {
   Set-HPCMSLLogFormat -Format CMTrace
 
 .LINK
-  [Write-LogInfo](https://developers.hp.com/hp-client-management/doc/Write-LogInfo)
+  [Write-HPLogInfo](https://developers.hp.com/hp-client-management/doc/Write-HPLogInfo)
 
 .LINK
-  [Write-LogWarning](https://developers.hp.com/hp-client-management/doc/Write-LogWarning)
+  [Write-HPLogWarning](https://developers.hp.com/hp-client-management/doc/Write-HPLogWarning)
 
 .LINK
-  [Write-LogError](https://developers.hp.com/hp-client-management/doc/Write-LogError)
+  [Write-HPLogError](https://developers.hp.com/hp-client-management/doc/Write-HPLogError)
 
 .LINK
   [Get-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Get-HPCMSLLogFormat)
@@ -680,11 +684,11 @@ function Set-HPCMSLLogFormat
   Get-HPCMSLLogFormat -Format CMTrace
 
 .LINK
-  [Write-LogInfo](https://developers.hp.com/hp-client-management/doc/Write-LogInfo)
+  [Write-HPLogInfo](https://developers.hp.com/hp-client-management/doc/Write-HPLogInfo)
 .LINK
-  [Write-LogWarning](https://developers.hp.com/hp-client-management/doc/Write-LogWarning)
+  [Write-HPLogWarning](https://developers.hp.com/hp-client-management/doc/Write-HPLogWarning)
 .LINK  
-  [Write-LogError](https://developers.hp.com/hp-client-management/doc/Write-LogError)
+  [Write-HPLogError](https://developers.hp.com/hp-client-management/doc/Write-HPLogError)
 .LINK  
   [Set-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Set-HPCMSLLogFormat)
 
@@ -733,21 +737,22 @@ function Get-HPCMSLLogFormat
   Specifies the file to update with the new log entry. If not specified, the log entry is written to the pipeline.
 
 .EXAMPLE
-  Write-LogWarning -Component "Repository" -Message "Something bad may have happened" -File myfile.log
+  Write-HPLogWarning -Component "Repository" -Message "Something bad may have happened" -File myfile.log
 
 .LINK
-  [Write-LogInfo](https://developers.hp.com/hp-client-management/doc/Write-LogInfo)
+  [Write-HPLogInfo](https://developers.hp.com/hp-client-management/doc/Write-HPLogInfo)
 .LINK  
-  [Write-LogError](https://developers.hp.com/hp-client-management/doc/Write-LogError)
+  [Write-HPLogError](https://developers.hp.com/hp-client-management/doc/Write-HPLogError)
 .LINK  
   [Get-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Get-HPCMSLLogFormat)
 .LINK  
   [Set-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Set-HPCMSLLogFormat)
 
 #>
-function Write-LogWarning
+function Write-HPLogWarning
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-LogWarning")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-HPLogWarning")]
+  [Alias('Write-LogWarning')]
   param(
     [Parameter(Mandatory = $True,Position = 0)]
     [string]$Message,
@@ -791,21 +796,22 @@ function Write-LogWarning
   Specifies the file to update with the new log entry. If not specified, the log entry is written to pipeline.
 
 .EXAMPLE
-  Write-LogError -Component "Repository" -Message "Something bad happened" -File myfile.log
+  Write-HPLogError -Component "Repository" -Message "Something bad happened" -File myfile.log
 
 .LINK
-  [Write-LogInfo](https://developers.hp.com/hp-client-management/doc/Write-LogInfo)
+  [Write-HPLogInfo](https://developers.hp.com/hp-client-management/doc/Write-HPLogInfo)
 .LINK  
-  [Write-LogWarning](https://developers.hp.com/hp-client-management/doc/Write-LogWarning)
+  [Write-HPLogWarning](https://developers.hp.com/hp-client-management/doc/Write-HPLogWarning)
 .LINK  
   [Get-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Get-HPCMSLLogFormat)
 .LINK  
   [Set-HPCMSLLogFormat](https://developers.hp.com/hp-client-management/doc/Set-HPCMSLLogFormat)
   
 #>
-function Write-LogError
+function Write-HPLogError
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-LogError")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-HPLogError")]
+  [Alias('Write-LogError')]
   param(
     [Parameter(Mandatory = $True,Position = 0)]
     [string]$Message,
@@ -848,11 +854,12 @@ function Write-LogError
   Specifies the file to update with the new log entry. If not specified, the log entry is written to pipeline.
 
 .EXAMPLE
-  Write-LogInfo -Component "Repository" -Message "Nothing bad happened" -File myfile.log
+  Write-HPLogInfo -Component "Repository" -Message "Nothing bad happened" -File myfile.log
 #>
-function Write-LogInfo
+function Write-HPLogInfo
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-LogInfo")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Write-HPLogInfo")]
+  [Alias('Write-LogInfo')]
   param(
     [Parameter(Mandatory = $True,Position = 0)]
     [string]$Message,

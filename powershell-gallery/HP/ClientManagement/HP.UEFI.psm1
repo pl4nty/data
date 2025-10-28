@@ -19,7 +19,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 [Flags()] enum UEFIVariableAttributes{
@@ -85,8 +85,15 @@ function Get-HPUEFIVariable
     [switch]$AsString
   )
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
+  }
+
+  Write-Verbose "Checking UEFI mode"
+  $bootMode = (Get-HPDeviceBootInformation).Mode
+  if ($bootMode -ne "UEFI") {
+    Write-Verbose "Mode $bootMode is not supported."
+    throw [System.NotSupportedException]"This cmdlet is only supported on UEFI mode."
   }
 
   $PreviousState = [PrivilegeState]::Enabled;
@@ -185,8 +192,15 @@ function Set-HPUEFIVariable
     [UEFIVariableAttributes]$Attributes = 7
   )
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
+  }
+
+  Write-Verbose "Checking UEFI mode"
+  $bootMode = (Get-HPDeviceBootInformation).Mode
+  if ($bootMode -ne "UEFI") {
+    Write-Verbose "Mode $bootMode is not supported."
+    throw [System.NotSupportedException]"This cmdlet is only supported on UEFI mode."
   }
 
   $err = "The Value must be derived from base types 'String' or 'Byte[]' or Byte"

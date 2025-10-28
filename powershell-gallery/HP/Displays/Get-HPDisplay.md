@@ -29,7 +29,7 @@ PS C:\> Get-HPDisplay -SerialNumber "CN40380ARD"
 ## PARAMETERS
 
 ### -SerialNumber
-Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple diplays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.
+Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple displays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.
 
 ```yaml
 Type: String[]

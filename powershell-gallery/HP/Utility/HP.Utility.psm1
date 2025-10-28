@@ -19,11 +19,12 @@
   This command returns true if the user is running with elevated administrator privileges, otherwise returns false.
 
 .EXAMPLE
-   Test-IsElevatedAdmin
+   Test-IsHPElevatedAdmin
 #>
-function Test-IsElevatedAdmin
+function Test-IsHPElevatedAdmin
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Test-IsElevatedAdmin")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Test-IsHPElevatedAdmin")]
+  [Alias('Test-IsElevatedAdmin')]
   param()
   $user = [Security.Principal.WindowsIdentity]::GetCurrent();
   (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
@@ -43,13 +44,14 @@ function Test-IsElevatedAdmin
   Specifies the number of spaces to indent. If not specified, default is 2.
 
 .EXAMPLE
-  $xml | Format-XmlToText
+  $xml | Format-HPXmlToText
 
 .NOTES
   - This is a private function for internal use only
 #>
-function Format-XmlToText {
+function Format-HPXmlToText {
   [CmdletBinding()]
+  [Alias('Format-XmlToText')]
   param(
     [Parameter(ValueFromPipeline = $true,Mandatory = $true,Position = 0)]
     [xml]$xml,

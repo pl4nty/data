@@ -18,7 +18,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>SerialNumber</maml:name>
           <maml:description>
-            <maml:para>Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple diplays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.</maml:para>
+            <maml:para>Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple displays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
           <dev:type>
@@ -33,7 +33,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>SerialNumber</maml:name>
         <maml:description>
-          <maml:para>Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple diplays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.</maml:para>
+          <maml:para>Specifies the serial number of the display(s) to retrieve information for. If multiple serial number(s) are given and multiple displays are connected, return data will only show information for Displays associated with specified serial number(s). If not specified, information for all connected displays will be returned.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
         <dev:type>
@@ -622,7 +622,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command updates firmware on connected displays if available. Prerequisites: </maml:para>
+      <maml:para>This command updates firmware on connected displays if available. Please note that daisy chained devices are not currently supported. Prerequisites: </maml:para>
       <maml:para>* Close all running applications to avoid installation issues.</maml:para>
       <maml:para>* Keep the monitor's power cable connected during the update process.</maml:para>
       <maml:para>* Ensure the monitor is powered ON and displaying active video throughout the update.</maml:para>

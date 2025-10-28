@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 <#
@@ -700,7 +700,7 @@ function New-HPPrivateSureAdminSettingsBCU
 
   Write-Verbose "Found $($SettingsList.Count) settings"
   $now = Get-Date
-  $output += "BIOSConfig 1.0`n"
+  $output = "BIOSConfig 1.0`n"
   $output += ";`n"
   $output += ";     Created by CMSL function $((Get-PSCallStack)[1].Command)`n"
   $output += ";     Date=$now`n"
@@ -3589,7 +3589,7 @@ function New-HPPrivateQRCode {
   [void][System.Reflection.Assembly]::LoadWithPartialName("System.Drawing")
 
   $QRCode = [System.Byte[]]::CreateInstance([System.Byte],3918)
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $result = [DfmNativeQRCode]::create_qrcode32($data,$QRCode) }
     64 { $result = [DfmNativeQRCode]::create_qrcode64($data,$QRCode) }
   }
@@ -3798,13 +3798,13 @@ function Get-HPPrivateConsoleFontSize {
   param()
 
   $width = 0
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $width = [DfmNativeQRCode]::get_console_font_width32() }
     64 { $width = [DfmNativeQRCode]::get_console_font_width64() }
   }
 
   $height = 0
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $height = [DfmNativeQRCode]::get_console_font_height32() }
     64 { $height = [DfmNativeQRCode]::get_console_font_height64() }
   }
@@ -3816,7 +3816,7 @@ function Get-HPPrivateScreenScale {
   param()
 
   $result = 0
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $result = [DfmNativeQRCode]::get_screen_scale32() }
     64 { $result = [DfmNativeQRCode]::get_screen_scale64() }
   }

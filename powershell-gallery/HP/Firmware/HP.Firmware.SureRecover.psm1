@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 [Flags()] enum DeprovisioningTarget{
@@ -74,7 +74,7 @@ function Get-HPSureRecoverState
   $mi_result = 0
   $data = New-Object -TypeName surerecover_state_t
 
-  if ((Test-OSBitness) -eq 32){
+  if ((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSureRecover]::get_surerecover_state32([ref]$data,[ref]$mi_result)
   }
   else {
@@ -190,7 +190,7 @@ function Get-HPSureRecoverFailoverConfiguration
   $index = 1
 
   try {
-    if((Test-OSBitness) -eq 32){
+    if((Test-HPOSBitness) -eq 32){
       $result = [DfmNativeSureRecover]::get_surerecover_failover_configuration32([bool]$False,[int]$index,[ref]$data,[ref]$mi_result)
     }
     else {
@@ -555,7 +555,7 @@ function New-HPSureRecoverImageConfigurationPayload
     Write-Verbose "New version number is $version"
   }
 
-  if((Test-OSBitness) -eq 32){
+  if((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSureRecover]::get_surerecover_provisioning_opaque32($Nonce, $Version, $OKBytes,$($OKBytes.Count),$Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result)
   }
   else {
@@ -1254,7 +1254,7 @@ function New-HPSureRecoverFailoverConfigurationPayload
   $mi_result = 0
   [byte]$index = 1
 
-  if((Test-OSBitness) -eq 32){
+  if((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSureRecover]::get_surerecover_failover_opaque32($Nonce, $Version, $index, $Username, $Password, $($Url.ToString()), [ref]$opaque, [ref]$opaqueLength, [ref]$mi_result);
   }
   else {
@@ -1518,7 +1518,7 @@ function Invoke-HPSureRecoverTriggerUpdate
 
   $mi_result = 0
 
-  if((Test-OSBitness) -eq 32){
+  if((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque32($null, $null, [ref]$mi_result)
   }
   else{

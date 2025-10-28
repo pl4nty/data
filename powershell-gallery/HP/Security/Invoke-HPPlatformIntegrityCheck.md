@@ -8,20 +8,17 @@ schema: 2.0.0
 # Invoke-HPPlatformIntegrityCheck
 
 ## SYNOPSIS
-Verifies components and configuration on the PC match Platform Certificate.
+Validates PC components against HP Platform Certificate.
 
 ## SYNTAX
 
 ```
-Invoke-HPPlatformIntegrityCheck [-UseLocalPlatformCertificate] [<CommonParameters>]
-
-Invoke-HPPlatformIntegrityCheck [-PlatformCertificate <String>] [<CommonParameters>]
-
-Invoke-HPPlatformIntegrityCheck [-PlatformCertificate <String>] [-NoInstallPlatformCertificate] [<CommonParameters>]
+Invoke-HPPlatformIntegrityCheck -PlatformCertificate <string> [-NoInstallPlatformCertificate] [<CommonParameters>]
+Invoke-HPPlatformIntegrityCheck -UseLocalPlatformCertificate [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Verifies components and configuration on the PC match Platform Certificate.
+This cmdlet verifies that the current PC's components and configuration match the specifications in the HP Platform Certificate.
 
 Components and configuration in scope include disk, memory, processor, graphic card, chassis, baseboard, networking, PCIe devices, NVMe devices, BIOS firmware version, feature byte, UUID, and Endpoint Security Controller (EpSC) ID certificate hash included in the PC.
 
@@ -44,7 +41,12 @@ PS C:\> Invoke-HPPlatformIntegrityCheck -PlatformCertificate C:\Users\Tools\Test
 
 ### Example 4
 ```powershell
-PS C:\> Invoke-HPPlatformIntegrityCheck -PlatformCertificate HPInc.SCN3315BDN.BASE.cer -NoInstallPlatformCertificate | ConvertTo-Json -Depth 8
+PS C:\> Invoke-HPPlatformIntegrityCheck -PlatformCertificate C:\Users\Tools\Test
+```
+
+### Example 5
+```powershell
+PS C:\> Invoke-HPPlatformIntegrityCheck -PlatformCertificate C:\Users\Tools\Test\Certificates.zip
 ```
 
 ## PARAMETERS
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformCertificate
-Specifies the path to the platform certificate file that is stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. Please follow the following format for the Platform Certificate file: HPInc.<serial number>.BASE.cer
+Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.<serial_number>.BASE.cer
 
 
 ```yaml
@@ -81,7 +83,9 @@ Accept wildcard characters: False
 ```
 
 ### -UseLocalPlatformCertificate
-If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are the EFI System Partition /boot/tcg/cert/platform/ or \efi\tcg\cert\platform and UEFI Variable HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}
+If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are:
+- **EFI System Partition:** /boot/tcg/cert/platform/ or \efi\tcg\cert\platform
+- **UEFI Variable:** HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}
 
 ```yaml
 Type: SwitchParameter

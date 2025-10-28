@@ -15,8 +15,8 @@
 
     RootModule = 'HP.Displays.dll'
    
-    #FullModuleVersion = '1.8.2.957'
-    ModuleVersion = '1.8.2'
+    #FullModuleVersion = '1.8.5.1220'
+    ModuleVersion = '1.8.5'
     GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'

@@ -22,8 +22,8 @@
   )
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
 
   # ID used to uniquely identify this module
   GUID = '9c46d615-4396-4e75-9eea-908625f0484e'
@@ -45,7 +45,7 @@
 
   FunctionsToExport =
     'Clear-HPFirmwareBootLogo',
-    'Get-EFIPartitionPath',
+    'Get-HPEFIPartitionPath',
     'Get-HPFirmwareAuditLog',
     'Get-HPFirmwareBootLogoIsActive',
     'Get-HPPrivateRetailConfiguration',
@@ -79,7 +79,7 @@
     'Set-HPSureViewState',
     'Test-HPFirmwareFlashSupported',
     'Test-HPSureViewIsSupported',
-    'Test-OSBitness',
+    'Test-HPOSBitness',
     'Update-HPFirmware',
     'Set-HPPrivateFirmwareUpdatePayload',
     'Write-HPFirmwarePasswordFile',
@@ -99,6 +99,10 @@
     'Get-HPSureRecoverFailoverConfiguration',
     'Get-HPSureAdminKMSCapabilities',
     'Get-HPPrivateSureAdminKMSAccessToken'
+
+  AliasesToExport =
+    'Get-EFIPartitionPath',
+    'Test-OSBitness'
 
     PrivateData = @{
       PSData = @{

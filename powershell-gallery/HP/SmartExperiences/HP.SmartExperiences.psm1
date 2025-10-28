@@ -42,7 +42,7 @@ function Set-HPeAIManaged {
     throw [System.NotSupportedException]"HP Smart Experiences is currently not supported on this platform."
   }
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -131,7 +131,7 @@ function Get-HPeAIManaged {
     throw [System.NotSupportedException]"HP Smart Experiences is currently not supported on this platform."
   }
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -221,7 +221,7 @@ function Set-HPeAISettingValue {
     throw [System.NotSupportedException]"HP Smart Experiences is currently not supported on this platform."
   }
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
