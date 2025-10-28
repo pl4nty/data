@@ -67,7 +67,13 @@ bool EdgeWatcherClient::ConnectToServer() {
 EdgeTaskExportSnapshot* EdgeWatcherClient::GetLastSnapshot(
     base::ProcessId browser_process_id) {
   base::AutoLock auto_lock(lock_);
-  return new EdgeTaskExportSnapshot(tasks_.at(browser_process_id));
+  auto tasks_iter = tasks_.find(browser_process_id);
+
+  if (tasks_iter != tasks_.end()) {
+    return new EdgeTaskExportSnapshot(tasks_iter->second);
+  }
+
+  return nullptr;
 }
 
 void EdgeWatcherClient::OnTasksUpdated(

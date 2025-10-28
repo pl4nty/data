@@ -30,24 +30,28 @@ namespace EdgeProcessViewer {
 
     public static List<ChildItem> GetChildItemsFromEdgeTaskSnapshot(IntPtr snapshotPtr) {
       var items = new List<ChildItem>();
-      var snapshot = Marshal.PtrToStructure<NativeMethods.EdgeTaskSnapshot>(snapshotPtr);
-      IntPtr current = snapshot.tasks;
-      for (int i = 0; i < snapshot.task_count; i++) {
-        items.Add(new ChildItem(Marshal.PtrToStructure<NativeMethods.EdgeTask>(current)));
-        current =
-            new IntPtr(current.ToInt64() + Marshal.SizeOf<NativeMethods.EdgeTask>());
+      if (snapshotPtr != IntPtr.Zero) {
+        var snapshot = Marshal.PtrToStructure<NativeMethods.EdgeTaskSnapshot>(snapshotPtr);
+        IntPtr current = snapshot.tasks;
+        for (int i = 0; i < snapshot.task_count; i++) {
+          items.Add(new ChildItem(Marshal.PtrToStructure<NativeMethods.EdgeTask>(current)));
+          current =
+              new IntPtr(current.ToInt64() + Marshal.SizeOf<NativeMethods.EdgeTask>());
+        }
       }
       return items;
     }
 
     public static List<ChildItem> GetChildItemsFromIETaskSnapshot(IntPtr snapshotPtr) {
       var items = new List<ChildItem>();
-      var snapshot = Marshal.PtrToStructure<NativeMethods.IETaskSnapshot>(snapshotPtr);
-      IntPtr current = snapshot.tasks;
-      for (int i = 0; i < snapshot.task_count; i++) {
-        items.Add(new ChildItem(Marshal.PtrToStructure<NativeMethods.IETask>(current)));
-        current =
-            new IntPtr(current.ToInt64() + Marshal.SizeOf<NativeMethods.IETask>());
+      if (snapshotPtr != IntPtr.Zero) {
+        var snapshot = Marshal.PtrToStructure<NativeMethods.IETaskSnapshot>(snapshotPtr);
+        IntPtr current = snapshot.tasks;
+        for (int i = 0; i < snapshot.task_count; i++) {
+          items.Add(new ChildItem(Marshal.PtrToStructure<NativeMethods.IETask>(current)));
+          current =
+              new IntPtr(current.ToInt64() + Marshal.SizeOf<NativeMethods.IETask>());
+        }
       }
       return items;
     }
