@@ -17,7 +17,7 @@ Update-HPDisplayFirmware [[-SerialNumber] <String[]>] [[-Experience] <String>] [
 ```
 
 ## DESCRIPTION
-This command updates firmware on connected displays if available. Prerequisites:
+This command updates firmware on connected displays if available. Please note that daisy chained devices are not currently supported. Prerequisites:
 * Close all running applications to avoid installation issues.
 * Keep the monitor's power cable connected during the update process.
 * Ensure the monitor is powered ON and displaying active video throughout the update.

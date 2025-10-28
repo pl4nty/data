@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 if ($PSEdition -eq "Core") {
@@ -228,7 +228,7 @@ function getAuditLogEntries ([ref]$buffer_out,[ref]$buffer_size,[ref]$records_co
   $bs = $buffer_size.Value
   $rc = $records_count.Value
   $r = $mi_result.Value
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { [DfmNativeBios]::get_audit_logs_32($buffer_out.Value,[ref]$bs,[ref]$rc,[ref]$r) }
     64 { [DfmNativeBios]::get_audit_logs_64($buffer_out.Value,[ref]$bs,[ref]$rc,[ref]$r) }
   }
@@ -286,9 +286,10 @@ function suspendBitlockerForOneReboot ()
   - When running 32-bit PowerShell on 64-bit systems, this will return 32.
   - This is a private command for internal use only
 #>
-function Test-OSBitness
+function Test-HPOSBitness
 {
   [CmdletBinding()]
+  [Alias('Test-OSBitness')]
   param()
 
   if ([IntPtr]::Size -eq 4)
@@ -360,7 +361,7 @@ function Test-HPPrivateBIOSUpdateOnlineModeIsSupported {
 
   try {
     $mi_result = 0
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::online_flash_supported32([ref]$mi_result) }
       64 { $result = [DfmNativeBios]::online_flash_supported64([ref]$mi_result) }
     }
@@ -376,7 +377,7 @@ function Test-HPPrivateBIOSUpdateOnlineModeIsSupported {
 
 function displayInvocationException ($exception)
 {
-  $bitness = Test-OSBitness
+  $bitness = Test-HPOSBitness
   Write-Verbose "Could not find support library for the current format: $($exception.Message)"
   throw "Could not call the support library. Please make sure the library dfmbios$bitness.dll is in the path."
 }
@@ -545,7 +546,7 @@ function Get-HPFirmwareAuditLog {
   param([switch]$Numeric)
 
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -577,7 +578,7 @@ function Get-HPFirmwareAuditLog {
     $result = getAuditLogEntries -buffer_out ([ref]$buffer_out) -buffer_size ([ref]$buffer_size) -records_count ([ref]$records_count) -mi_result ([ref]$mi_result)
 
     <#
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::get_audit_logs_32($buffer_out,[ref]$buffer_size,[ref]$records_count,[ref]$mi_result) }
       64 { $result = [DfmNativeBios]::get_audit_logs_64($buffer_out,[ref]$buffer_size,[ref]$records_count,[ref]$mi_result) }
     }
@@ -690,7 +691,7 @@ function Set-HPFirmwareBootLogo
     [Parameter(Mandatory = $true,Position = 0)] [string]$File,
     [Parameter(Mandatory = $false,Position = 1)] [string]$Password = $null)
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -716,7 +717,7 @@ function Set-HPFirmwareBootLogo
   }
 
   try {
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::set_enterprise_logo32($info.FullName,[ref]$cred,[ref]$mi_result) }
       64 { $result = [DfmNativeBios]::set_enterprise_logo64($info.FullName,[ref]$cred,[ref]$mi_result) }
     }
@@ -757,7 +758,7 @@ function Get-HPFirmwareBootLogoIsActive
 {
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPFirmwareBootLogoIsActive")]
   param()
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
   $state = 0
@@ -765,7 +766,7 @@ function Get-HPFirmwareBootLogoIsActive
   $mi_error = 0
 
   try {
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::query_enterprise_logo32([ref]$installed,[ref]$state,[ref]$mi_error) }
       64 { $result = [DfmNativeBios]::query_enterprise_logo64([ref]$installed,[ref]$state,[ref]$mi_error) }
     }
@@ -811,7 +812,7 @@ function Clear-HPFirmwareBootLogo
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Clear-HPFirmwareBootLogo")]
 
   param([Parameter(Mandatory = $false,Position = 0)] [string]$Password = $null)
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -819,7 +820,7 @@ function Clear-HPFirmwareBootLogo
   $cred = makeCredential ($password)
 
   try {
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::clear_enterprise_logo32([ref]$cred,[ref]$mi_result) }
       64 { $result = [DfmNativeBios]::clear_enterprise_logo64([ref]$cred,[ref]$mi_result) }
     }
@@ -841,10 +842,6 @@ function Clear-HPFirmwareBootLogo
 
 .DESCRIPTION
   This command updates the system firmware on the current platform. The update must be provided as a BIN file and can be obtained via the [Get-HPBIOSUpdates](https://developers.hp.com/hp-client-management/doc/Get-HPBiosUpdates) command.
-  If HP Sure Admin is enabled, a payload file should be provided instead of a password.
-
-  Online Mode uses Seamless Firmware Update Service. Seamless Firmware Update Service updates the BIOS in the background while the operating system is running (no authentication needed). 2022 and newer HP computers with Intel processors support Seamless Firmware Update Service.
-  Offline Mode updates the BIOS on reboot and requires authentication (password or payload).
 
 .PARAMETER File
   Specifies the firmware update binary (.BIN) file. If the filename does not follow the pattern 'U70_010101.bin', the -FilenameHint parameter should be specified.
@@ -856,7 +853,7 @@ function Clear-HPFirmwareBootLogo
   Specifies the payload to authorize firmware update. Refer to the New-HPSureAdminFirmwareUpdatePayload command for information on how to generate the payload.
 
 .PARAMETER Password
-  Specifies the BIOS setup password, if any. Use single quotes around the password to prevent PowerShell from interpreting special characters in the string.
+  Specifies the BIOS setup password, if required. Use single quotes around the password to prevent PowerShell from interpreting special characters in the string.
 
 .PARAMETER Quiet
   If specified, this command will suppress non-essential messages during execution. 
@@ -876,7 +873,7 @@ function Clear-HPFirmwareBootLogo
   If the system does not require a specific format (not required on most recent systems), this parameter might be ignored.
 
 .PARAMETER Offline
-  If specified, this command selects the offline mode to flash the BIOS instead of the default online mode. If specified, the actual flash will only occur on reboot at pre-OS environment. Please note that offline mode is selected by default when downgrading the BIOS. Offline mode requires authentication, so either a Password or a PayloadFile should be specified.
+  If specified, this command selects the offline mode to flash the BIOS instead of the default online mode. If specified, the actual flash will only occur on reboot at pre-OS environment. 
 
 .PARAMETER NoWait
   If specified, the script will not wait for the online flash background task to finish. If the user reboots the PC during the online flash, the update will complete only after reboot.
@@ -1024,15 +1021,6 @@ function Update-HPFirmware {
     throw "Could not construct file name for the currently installed BIOS: $biosVersion"
   }
 
-  # Check the BIOS Update Credential Policy setting
-  $credentialPolicyValue = $null
-  try{
-    $credentialPolicyValue = Get-HPBIOSSettingValue -Name "BIOS Update Credential Policy" -Verbose:$VerbosePreference
-  }
-  catch {
-    Write-Verbose "Exception caught retrieving BIOS Update Credential Policy. Will continue with normal process: $($_.Exception.Message)"
-  }
-
   if (-not $Force.IsPresent -and ($filenameHintInternal -eq $biosVersion)) {
     Write-Host "This system is already running BIOS version $(Get-HPBIOSVersion)"
     Write-Host -ForegroundColor Cyan "Use '-Force' on the command line to proceed anyway."
@@ -1067,11 +1055,12 @@ function Update-HPFirmware {
     }
   } -as [ProgressCallback]
 
-  $efi_path = Get-EFIPartitionPath -FixedOnly
+  $efi_path = Get-HPEFIPartitionPath -FixedOnly
 
-  # Online mode isn't supported when downgrading the BIOS
+  # Online mode is not supported when downgrading the BIOS
   # Using filenameHint to determine if it is a downgrade or not
   $offlineMode = $false
+  $isDowngrade = $false
 
   # some bin file names have an extra two zeroes at the end of the BIOS version number i.e. S02_02160000.bin instead of S02_021600.bin or S02_0216.bin 
   # workaround: if 8 digit version was given in the -FilenameHint parameter, drop the last two digits in filenameHintInternal just like we do if no -FilenameHint parameter was given and two extra digits were found in the filename for the BIOS version
@@ -1092,37 +1081,14 @@ function Update-HPFirmware {
     Write-Verbose "Target BIOS version: $targetVer"
 
     if ($targetVer -and $ver) {
-      if($credentialPolicyValue -eq "Always Require Credentials"){
-        # when Sure Admin is enabled, password is no longer accepted
-        if ((Get-HPPrivateIsSureAdminEnabled)) {
-          if(-not $PayloadFile -and -not $Payload){
-            throw "Will not continue with update. Sure Admin is enabled, and BIOS Update Credential Policy is set to 'Always Require Credentials'. Please provide a Payload or PayloadFile to continue with the update."
-          }
-        }
-        elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-          throw "Will not continue with update. BIOS Setup Password is set, and BIOS Update Credential Policy is set to 'Always Require Credentials'. Please provide a Password to continue with the update."
-        }
-      }
-      
       # if the current BIOS version is greater than or equal to the target BIOS version, then offline mode is selected
       if ($ver.TrimStart('0') -ge $targetVer.TrimStart('0')) {
-        Write-Verbose "Offline mode selected based on the filename hint."
+        Write-Verbose "Offline mode has been selected based on the filename hint."
         $offlineMode = $true
 
         if ($ver.TrimStart('0') -gt $targetVer.TrimStart('0')) {
-          Write-Verbose "Downgrade detected."
-          
-          if($credentialPolicyValue -eq "Require Credentials on Downgrade Only"){
-            # when Sure Admin is enabled, password is no longer accepted
-            if ((Get-HPPrivateIsSureAdminEnabled)) {
-              if(-not $PayloadFile -and -not $Payload){
-                throw "Will not continue with update. Offline mode is selected. This mode requires authentication. Sure Admin is enabled, and BIOS Update Credential Policy is set to 'Require Credentials on Downgrade Only'. Please provide a Payload or PayloadFile to continue with the update."
-              }
-            }
-            elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-              throw "Will not continue with update. Offline mode is selected. This mode requires authentication. BIOS Setup Password is set, and BIOS Update Credential Policy is set to 'Require Credentials on Downgrade Only'. Please provide a Password to continue with the update."
-            }
-          }                
+          Write-Verbose "Downgrade detected."             
+          $isDowngrade = $true
         }
       }
     }
@@ -1136,43 +1102,39 @@ function Update-HPFirmware {
   }
 
   $onlineModeIsSupported = Test-HPPrivateBIOSUpdateOnlineModeIsSupported
+  Write-Verbose "Online mode supported: $onlineModeIsSupported."
+
   if ($Offline.IsPresent -or -not $onlineModeIsSupported) {
-    Write-Verbose "Online mode supported: $onlineModeIsSupported."
+    Write-Verbose "Offline mode has been selected."
     $offlineMode = $true
   }
 
-  if ($offlineMode) {
-    if($credentialPolicyValue -eq "Always Require Credentials"){
-      # when Sure Admin is enabled, password is no longer accepted
-      if ((Get-HPPrivateIsSureAdminEnabled)) {
-        if(-not $PayloadFile -and -not $Payload){
-          throw "Will not continue with update. Offline mode is selected. This mode requires authentication. Sure Admin is enabled, and BIOS Update Credential Policy is set to 'Always Require Credentials'. Please provide a Payload or PayloadFile to continue with the update."
-        }
+  $isSureAdminEnabled = Get-HPPrivateIsSureAdminEnabled
+  $isBAPset = Get-HPBIOSSetupPasswordIsSet
+
+  if($isDowngrade){
+    $authRequired = Test-HPAuthRequired -BiosUpdateType "Downgrade"
+  }
+  else {
+    $authRequired = Test-HPAuthRequired -BiosUpdateType "Upgrade"
+  }
+
+  if($authRequired){
+    if($isSureAdminEnabled -eq $true){
+      if(-not $PayloadFile -and -not $Payload){
+        throw "HP Sure Admin is enabled, and authentication is required. Please provide a valid payload file or payload to continue with the update."      
       }
-      elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-        throw "Will not continue with update. Offline mode is selected. This mode requires authentication. BIOS Setup Password is set, and BIOS Update Credential Policy is set to 'Always Require Credentials'. Please provide a Password to continue with the update."
-      }
+      
+      # Online mode does not support Sure Admin authentication 
+      Write-Verbose "HP Sure Admin is enabled, offline mode has been selected."
+      $offlineMode = $true
     }
-    elseif($credentialPolicyValue -eq "Never Require Credentials"){
-      if ((Get-HPPrivateIsSureAdminEnabled)) {
-        if(-not $PayloadFile -and -not $Payload){
-          Write-Verbose "Offline mode is selected. This mode requires authentication. Sure Admin is enabled. However, BIOS Update Credential Policy is set to 'Never Require Credentials'. Continuing with update."
-        }
-      }
-      elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-        Write-Verbose "Offline mode is selected. This mode requires authentication. BIOS Setup Password is set. However, BIOS Update Credential Policy is set to 'Never Require Credentials'. Continuing with update."
-      }
+    elseif($isSureAdminEnabled -eq $false -and $isBAPset -and -not $Password){
+      throw "BIOS Setup Password is set, and authentication is required. Please provide a password to continue with the update."
     }
-    elseif($null -eq $credentialPolicyValue){
-      if ((Get-HPPrivateIsSureAdminEnabled)) {
-        if(-not $PayloadFile -and -not $Payload){
-          throw "Will not continue with update. Offline mode is selected. This mode requires authentication. Sure Admin is enabled. Please provide a Payload or PayloadFile to continue with the update."
-        }
-      }
-      elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-        throw "Will not continue with update. Offline mode is selected. This mode requires authentication. BIOS Setup Password is set. Please provide a Password to continue with the update."
-      }
-    }
+  }
+  else {
+    Write-Verbose "Authentication is not required to proceed with update."
   }
 
   Set-HPPrivateFlashHPDevice -ResolvedFile $resolvedFile -Cred $cred -Callback $Callback -FilenameHint $filenameHintInternal -Efi_path $efi_path -Authorization $authorization -AuthorizationLength $authorizationLength -Offline $offlineMode -NoWait $NoWait.IsPresent -Verbose:$VerbosePreference
@@ -1210,7 +1172,7 @@ function Set-HPPrivateFlashHPDevice {
 
   try {
     $mi_result = 0
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::flash_hp_device32([string]$ResolvedFile,[ref]$Cred,[ref]$mi_result,$Callback,$FilenameHint,$Efi_path,$Authorization,$AuthorizationLength,[bool]$Offline,[bool]$NoWait) }
       64 { $result = [DfmNativeBios]::flash_hp_device64([string]$ResolvedFile,[ref]$Cred,[ref]$mi_result,$Callback,$FilenameHint,$Efi_path,$Authorization,$AuthorizationLength,[bool]$Offline,[bool]$NoWait) }
     }
@@ -1298,7 +1260,7 @@ function Test-HPFirmwareFlashSupported
   [int]$release = (Get-ItemProperty -Path Registry::"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ReleaseId
   [int]$result = 0
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -1369,7 +1331,7 @@ function Write-HPFirmwarePasswordFile
   $outFile = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($outFile)
   Write-Verbose ("Writing password to file $outfile")
   try {
-    switch (Test-OSBitness) {
+    switch (Test-HPOSBitness) {
       32 { $result = [DfmNativeBios]::encrypt_password_to_file32([ref]$cred,$outFile) }
       64 { $result = [DfmNativeBios]::encrypt_password_to_file64([ref]$cred,$outFile) }
     }
@@ -1407,18 +1369,19 @@ function createTemporaryDirectory {
   If specified, this command ignores removable drives during search. 
 
 .EXAMPLE
-  Get-EFIPartitionPath
+  Get-HPEFIPartitionPath
 
 .NOTES
   - This command requires elevated privileges. 
   - This is a private command for internal use only
 #>
-function Get-EFIPartitionPath
+function Get-HPEFIPartitionPath
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-EFIPartitionPath")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPEFIPartitionPath")]
+  [Alias('Get-EFIPartitionPath')]
   param([Parameter(Mandatory = $false,Position = 1)] [switch]$FixedOnly)
 
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -1443,7 +1406,7 @@ function Get-EFIPartitionPath
   }
 
   # try to match the EFI partition to the boot disk, if we find multiple
-  if ($efi.Count -gt 1 -and -not (Test-WinPE))
+  if ($efi.Count -gt 1 -and -not (Test-HPWinPE))
   {
     Write-Verbose "Found multiple ($($efi.Count)) EFI fixed partitions, trying to trim them down."
     [array]$efi = $efi | Where-Object { (Get-Disk -Number $_.Disk).IsBoot -eq $true }
@@ -1477,7 +1440,7 @@ function Get-HPPrivateRetailConfiguration
   $configuration = New-Object RetailInformation
   $mi_result = 0
 
-  if ((Test-OSBitness) -eq 32){
+  if ((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeRetail]::get_retail_dock_configuration_32([ref]$configuration, [ref]$mi_result)
   }
   else {
@@ -1510,7 +1473,7 @@ function Set-HPPrivateRetailConfiguration
   $cfg = $configuration
   $mi_result = 0
 
-  if ((Test-OSBitness) -eq 32){
+  if ((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeRetail]::set_retail_dock_configuration_32([ref]$cfg, [ref]$mi_result)
   }
   else {

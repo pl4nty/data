@@ -12,8 +12,8 @@
 @{
 
   RootModule = 'HP.Notifications.psm1'
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
   GUID = 'b066583c-1b04-40d7-86a6-196dfd22dfbb'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
@@ -25,9 +25,13 @@
   'Invoke-HPNotification',
   'Invoke-HPNotificationFromXML',
   'Invoke-HPRebootNotification',
-  'Invoke-RebootNotification',
   'Invoke-HPPrivateNotificationAsUser',
   'Invoke-HPPrivateRebootNotificationAsUser',
+  'Register-HPNotificationApplication',
+  'Unregister-HPNotificationApplication'
+
+  AliasesToExport =
+  'Invoke-RebootNotification',
   'Register-NotificationApplication',
   'Unregister-NotificationApplication'
 

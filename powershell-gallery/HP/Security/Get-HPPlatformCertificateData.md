@@ -35,13 +35,23 @@ PS C:\> Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\H
 
 ### Example 3
 ```powershell
+PS C:\> Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\
+```
+
+### Example 4
+```powershell
 PS C:\> Get-HPPlatformCertificateData -UseLocalPlatformCertificate | ConvertTo-Json -Depth 8
+```
+
+### Example 5
+```powershell
+PS C:\> Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\Certificates.zip
 ```
 
 ## PARAMETERS
 
 ### -PlatformCertificate
-Specifies the path to the platform certificate file that is stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. Please follow the following format for the Platform Certificate file: HPInc.<serial number>.BASE.cer
+Specifies the path to either a platform certificate file, a directory containing platform certificates, or a zip file containing platform certificates that are stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. When providing a folder or a zip file, the tool will search for the certificate file named in the following format: HPInc.<serial_number_of_the_pc>.BASE.cer .
 
 ```yaml
 Type: String

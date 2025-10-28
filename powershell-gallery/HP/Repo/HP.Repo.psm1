@@ -20,7 +20,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 enum ErrorHandling
@@ -45,7 +45,7 @@ function err
   [console]::Error.WriteLine($str)
   [console]::ResetColor()
 
-  if ($withLog) { Write-LogError -Message $str -Component "HP.Repo" -File $LOGFILE }
+  if ($withLog) { Write-HPLogError -Message $str -Component "HP.Repo" -File $LOGFILE }
 }
 
 # convert a date object to an 8601 string
@@ -188,7 +188,7 @@ function DownloadSoftpaq
   # download the SoftPaq CVA. Existing CVAs are always overwritten.
   Write-Verbose ("Downloading CVA $($DownloadSoftpaqCmd.number)")
   Log ("    sp$($DownloadSoftpaqCmd.number).cva - Downloading CVA file.")
-  Get-SoftpaqMetadataFile @DownloadSoftpaqCmd -MaxRetries $MaxRetries -Overwrite "Yes"
+  Get-HPSoftpaqMetadataFile @DownloadSoftpaqCmd -MaxRetries $MaxRetries -Overwrite "Yes"
   Log ("    sp$($DownloadSoftpaqCmd.number).cva - Done downloading CVA file.")
 
   # check if the SoftPaq exe already exists
@@ -220,7 +220,7 @@ function DownloadSoftpaq
       Log ("    sp$($DownloadSoftpaqCmd.number).exe - Downloading EXE file.")
       
       # download the SoftPaq exe
-      Get-Softpaq @DownloadSoftpaqCmd -MaxRetries $MaxRetries -Overwrite yes
+      Get-HPSoftpaq @DownloadSoftpaqCmd -MaxRetries $MaxRetries -Overwrite yes
 
       # check newly downloaded SoftPaq exe signature
       if (-not (Get-HPPrivateCheckSignature -File $EXEname -CVAfile $CVAname -Verbose:$VerbosePreference -Progress:(-not $DownloadSoftpaqCmd.Quiet))) {
@@ -233,7 +233,7 @@ function DownloadSoftpaq
         if (-not $DownloadSoftpaqCmd.Quiet) {
           Write-Host -ForegroundColor Magenta $msg
         }
-        Write-LogWarning -Message $msg -Component "HP.Repo" -File $LOGFILE
+        Write-HPLogWarning -Message $msg -Component "HP.Repo" -File $LOGFILE
       }
       else {
         Log ("    sp$($DownloadSoftpaqCmd.number).exe - Done downloading EXE file.")
@@ -243,7 +243,7 @@ function DownloadSoftpaq
       Write-Host -ForegroundColor Magenta "File sp$($DownloadSoftpaqCmd.number).exe has invalid or missing signature and will be deleted."
       Log ("    sp$($DownloadSoftpaqCmd.number).exe has invalid or missing signature and will be deleted.")
       Log ("    sp$($DownloadSoftpaqCmd.number).exe - Redownloading EXE file.")
-      Get-Softpaq @DownloadSoftpaqCmd -maxRetries $maxRetries
+      Get-HPSoftpaq @DownloadSoftpaqCmd -maxRetries $maxRetries
       Log ("    sp$($DownloadSoftpaqCmd.number).exe - Done downloading EXE file.")
     }
   }
@@ -322,7 +322,7 @@ function Log
     if (-not $line) {
       $line = " "
     }
-    Write-LogInfo -Message $line -Component "HP.Repo" -File $LOGFILE
+    Write-HPLogInfo -Message $line -Component "HP.Repo" -File $LOGFILE
   }
 
 }
@@ -359,7 +359,7 @@ function Send
     $html = $true
   )
 
-  $n = Get-RepositoryNotificationConfiguration
+  $n = Get-HPRepositoryNotificationConfiguration
   if ((-not $n) -or (-not $n.server)) {
     Write-Verbose ("Notifications are not configured")
     return
@@ -425,53 +425,54 @@ function Send
   If the directory already contains a repository, this command will fail.
 
 .EXAMPLE
-    Initialize-Repository
+    Initialize-HPRepository
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Get-RepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryConfiguration)
+  [Get-HPRepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryConfiguration)
 
 .LINK
-  [Set-RepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryConfiguration)
+  [Set-HPRepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryConfiguration)
 #>
-function Initialize-Repository
+function Initialize-HPRepository
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Initialize-Repository")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository")]
+  [Alias('Initialize-Repository')]
   param()
 
   if (FileExists -File $REPOFILE) {
@@ -507,7 +508,7 @@ function Initialize-Repository
   Adds a filter per specified platform to the current repository
 
 .DESCRIPTION
-  This command adds a filter to a repository that was previously initialized by the Initialize-Repository command. A repository can contain one or more filters, and filtering will be the based on all the filters defined. Please note that "*" means "current" for the -Os parameter but means "all" for the -Category, -ReleaseType, -Characteristic parameters. 
+  This command adds a filter to a repository that was previously initialized by the Initialize-HPRepository command. A repository can contain one or more filters, and filtering will be the based on all the filters defined. Please note that "*" means "current" for the -Os parameter but means "all" for the -Category, -ReleaseType, -Characteristic parameters. 
 
   .PARAMETER Platform
   Specifies the platform using its platform ID to include in this repository. A platform ID, a 4-digit hexadecimal number, can be obtained by executing the Get-HPDeviceProductID command. This parameter is mandatory. 
@@ -516,7 +517,7 @@ function Initialize-Repository
   Specifies the operating system to be included in this repository. The value must be one of 'win10' or 'win11'. If not specified, the current operating system will be assumed, which may not be what is intended.
 
 .PARAMETER OsVer
-  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If not specified, the current operating system version will be assumed, which may not be what is intended.
+  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If not specified, the current operating system version will be assumed, which may not be what is intended.
 
 .PARAMETER Category
   Specifies the SoftPaq category to be included in this repository. The value must be one (or more) of the following values: 
@@ -554,56 +555,57 @@ function Initialize-Repository
   If specified and if the data file exists, this command uses the Long-Term Servicing Branch/Long-Term Servicing Channel (LTSB/LTSC) Reference file for the specified platform ID. If the data file does not exist, this command uses the regular Reference file for the specified platform.
 
 .EXAMPLE
-  Add-RepositoryFilter -Platform 1234 -Os win10 -OsVer 2009
+  Add-HPRepositoryFilter -Platform 1234 -Os win10 -OsVer 2009
 
 .EXAMPLE
-  Add-RepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1"
+  Add-HPRepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1"
 
 .EXAMPLE
-  Add-RepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1" -PreferLTSC
+  Add-HPRepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1" -PreferLTSC
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .LINK
   [Get-HPDeviceProductID](https://developers.hp.com/hp-client-management/doc/Get-HPDeviceProductID)
 #>
-function Add-RepositoryFilter
+function Add-HPRepositoryFilter
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter")]
+  [Alias('Add-RepositoryFilter')]
   param(
     [ValidatePattern("^[a-fA-F0-9]{4}$")]
     [Parameter(Position = 0,Mandatory = $true)]
@@ -613,7 +615,7 @@ function Add-RepositoryFilter
     [Parameter(Position = 1)] $Os = "*", # counterintuitively, "*" for this Os parameter means "current"  
     [string[]]
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2")] # keep in sync with the SoftPaq module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the SoftPaq module
     [Parameter(Position = 1)]
     [string]$OsVer,
 
@@ -644,7 +646,7 @@ function Add-RepositoryFilter
     $newFilter.OperatingSystem = $Os
     if (-not $OsVer)
     {
-      $OsVer = GetCurrentOSVer
+      $OsVer = GetHPCurrentOSVer
     }
     if ($OsVer) { $OsVer = $OsVer.ToLower() }
     if ($Os -eq "win10") { $newFilter.OperatingSystem = "win10:$OsVer" }
@@ -690,7 +692,7 @@ function Add-RepositoryFilter
  Specifies an OS for this command to be removed from this repository. The value must be 'win10' or 'win11'. If not specified, the current operating system will be assumed, which may not be what is intended.
 
 .PARAMETER OsVer
-  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If the parameter is not specified, the current operating system version will be assumed, which may not be what is intended.
+  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If the parameter is not specified, the current operating system version will be assumed, which may not be what is intended.
 
 .PARAMETER Category
   Specifies the SoftPaq category to be removed from this repository. The value must be one (or more) of the following values: 
@@ -731,56 +733,57 @@ function Add-RepositoryFilter
   If specified, this command will delete the filter without asking for confirmation. If not specified, this command will ask for confirmation before deleting a filter. 
 
 .EXAMPLE
-  Remove-RepositoryFilter -Platform 1234
+  Remove-HPRepositoryFilter -Platform 1234
 
 .EXAMPLE
-  Remove-RepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1"
+  Remove-HPRepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1"
 
 .EXAMPLE
-  Remove-RepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1" -PreferLTSC $True
+  Remove-HPRepositoryFilter -Platform 1234 -Os win10 -OsVer "21H1" -PreferLTSC $True
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
   [Get-HPDeviceProductID](https://developers.hp.com/hp-client-management/doc/Get-HPDeviceProductID)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 #>
-function Remove-RepositoryFilter
+function Remove-HPRepositoryFilter
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter")]
+  [Alias('Remove-RepositoryFilter')]
   param(
     [ValidatePattern("^[a-fA-F0-9]{4}$")]
     [Parameter(Position = 0,Mandatory = $true)]
@@ -791,7 +794,7 @@ function Remove-RepositoryFilter
     [Parameter(Position = 1)]
     $Os = "*", # counterintuitively, "*" for this Os parameter means "current"
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2")] # keep in sync with the SoftPaq module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the SoftPaq module
     [Parameter(Position = 1)]
     [string]$OsVer,
 
@@ -875,47 +878,48 @@ function Remove-RepositoryFilter
   This command retrieves the current repository definition as an object. This command must be executed inside an initialized repository.
   
 .EXAMPLE
-    $myrepository = Get-RepositoryInfo
+    $myrepository = Get-HPRepositoryInfo
     
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 #>
-function Get-RepositoryInfo ()
+function Get-HPRepositoryInfo ()
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo")]
+  [Alias('Get-RepositoryInfo')]
   param()
 
   $c = LoadRepository
@@ -934,64 +938,65 @@ function Get-RepositoryInfo ()
   Synchronizes the current repository and generates a report that includes information about the repository 
 
 .DESCRIPTION
-  This command performs a synchronization on the current repository by downloading the latest SoftPaqs associated with the repository filters and creates a repository report in a format (default .CSV) set via the Set-RepositoryConfiguration command. 
+  This command performs a synchronization on the current repository by downloading the latest SoftPaqs associated with the repository filters and creates a repository report in a format (default .CSV) set via the Set-HPRepositoryConfiguration command. 
 
-  This command may be scheduled via task manager to run on a schedule. You can define a notification email via the Set-RepositoryNotificationConfiguration command to receive any failure notifications during unattended operation.
+  This command may be scheduled via task manager to run on a schedule. You can define a notification email via the Set-HPRepositoryNotificationConfiguration command to receive any failure notifications during unattended operation.
 
-  This command may be followed by the Invoke-RepositoryCleanup command to remove any obsolete SoftPaqs from the repository.
+  This command may be followed by the Invoke-HPRepositoryCleanup command to remove any obsolete SoftPaqs from the repository.
 
-  Please note that the Invoke-RepositorySync command is not supported in WinPE. 
+  Please note that the Invoke-HPRepositorySync command is not supported in WinPE. 
 
 .PARAMETER Quiet
   If specified, this command will suppress progress messages during execution. 
 
 .PARAMETER ReferenceUrl
   Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. This URL must be HTTPS. The Reference files are expected to be at the location pointed to by this URL inside a directory named after the platform ID you want a SoftPaq list for.
-  Using system ID 83b2, OS Win10, and OSVer 2009 reference files as an example, this command will call the Get-SoftpaqList command to find the corresponding files in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab.
+  Using system ID 83b2, OS Win10, and OSVer 2009 reference files as an example, this command will call the Get-HPSoftpaqList command to find the corresponding files in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab.
   If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default, and fallback is set to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'.
 
 .EXAMPLE
-  Invoke-RepositorySync -Quiet
+  Invoke-HPRepositorySync -Quiet
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 #>
-function Invoke-RepositorySync
+function Invoke-HPRepositorySync
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync")]
+  [Alias('Invoke-RepositorySync')]
   param(
     [Parameter(Position = 0,Mandatory = $false)]
     [switch]$Quiet = $false,
@@ -1090,7 +1095,7 @@ function Invoke-RepositorySync
         elseif ($c.OperatingSystem -eq "win10")
         {
           $softpaqListCmd.OS = "win10"
-          $softpaqListCmd.osver = GetCurrentOSVer
+          $softpaqListCmd.osver = GetHPCurrentOSVer
         }
         elseif ($c.OperatingSystem.StartsWith("win11:"))
         {
@@ -1101,7 +1106,7 @@ function Invoke-RepositorySync
         elseif ($c.OperatingSystem -eq "win11")
         {
           $softpaqListCmd.OS = "win11"
-          $softpaqListCmd.osver = GetCurrentOSVer
+          $softpaqListCmd.osver = GetHPCurrentOSVer
         }
         elseif ($c.OperatingSystem -ne "*")
         {
@@ -1133,7 +1138,7 @@ function Invoke-RepositorySync
 
         Log "Reading the softpaq list for platform $($softpaqListCmd.platform)"
         Write-Verbose "Trying to get SoftPaqs from $ReferenceUrl"
-        $results = Get-SoftpaqList @softpaqListCmd -cacheDir $cacheDir -maxRetries $repo[1].settings.ExclusiveLockMaxRetries -ReferenceUrl $ReferenceUrl -AddHttps
+        $results = Get-HPSoftpaqList @softpaqListCmd -cacheDir $cacheDir -maxRetries $repo[1].settings.ExclusiveLockMaxRetries -ReferenceUrl $ReferenceUrl -AddHttps
         Log "softpaq list for platform $($softpaqListCmd.platform) created"
         $softpaqlist += $results
 
@@ -1268,7 +1273,7 @@ function Invoke-RepositorySync
       }
       else {
         Write-Host -ForegroundColor Cyan "Platform $($c.platform) doesn't exist. Please add a valid platform."
-        Write-LogWarning "Platform $($c.platform) is not valid. Skipping it."
+        Write-HPLogWarning "Platform $($c.platform) is not valid. Skipping it."
       }
     }
 
@@ -1341,7 +1346,7 @@ function Invoke-RepositorySync
       $RepositoryReport = $repo[1].settings.RepositoryReport
       if ($RepositoryReport) {
         $Format = $RepositoryReport
-        New-RepositoryReport -Format $Format -RepositoryPath "$cwd" -OutputFile "$cwd\.repository\Contents.$Format"
+        New-HPRepositoryReport -Format $Format -RepositoryPath "$cwd" -OutputFile "$cwd\.repository\Contents.$Format"
         Log "Repository Report created as Contents.$Format"
         Write-Verbose "Repository Report created as Content.$Format."
       }
@@ -1385,48 +1390,49 @@ function formatSyncErrorMessageAsHtml ($exception)
   by newer versions, or SoftPaqs that no longer match the active repository filters.
 
 .EXAMPLE
-    Invoke-RepositoryCleanup
+    Invoke-HPRepositoryCleanup
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 #>
-function Invoke-RepositoryCleanup
+function Invoke-HPRepositoryCleanup
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup")]
+  [Alias('Invoke-RepositoryCleanup')]
   param()
   $repo = LoadRepository
   Log ("Beginning repository cleanup")
@@ -1459,11 +1465,11 @@ function Invoke-RepositoryCleanup
   Sets the repository notification configuration in the current repository
 
 .DESCRIPTION
-  This command defines a notification Simple Mail Transfer Protocol (SMTP) server (and optionally, port) for an email server to be used to send failure notifications during unattended synchronization via the Invoke-RepositorySync command. 
+  This command defines a notification Simple Mail Transfer Protocol (SMTP) server (and optionally, port) for an email server to be used to send failure notifications during unattended synchronization via the Invoke-HPRepositorySync command. 
 
-  One or more recipients can then be added via the Add-RepositorySyncFailureRecipient command. 
+  One or more recipients can then be added via the Add-HPRepositorySyncFailureRecipient command. 
 
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command. 
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command. 
 
 
 .PARAMETER Server
@@ -1491,48 +1497,49 @@ function Invoke-RepositoryCleanup
   If specified, this command will remove the SMTP server credentials without removing the entire mail server configuration.
 
 .EXAMPLE
-  Set-RepositoryNotificationConfiguration smtp.mycompany.com
+  Set-HPRepositoryNotificationConfiguration smtp.mycompany.com
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 #>
-function Set-RepositoryNotificationConfiguration
+function Set-HPRepositoryNotificationConfiguration
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration")]
+  [Alias('Set-RepositoryNotificationConfiguration')]
   param(
     [Parameter(Position = 0,Mandatory = $false)]
     [string]
@@ -1649,52 +1656,53 @@ function Set-RepositoryNotificationConfiguration
 
 .DESCRIPTION
   This command removes notification configuration from the current repository, and as a result, notifications are turned off.
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command.
-  Please note that notification configuration must have been defined via the Set-RepositoryNotificationConfiguration command for this command to have any effect.  
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command.
+  Please note that notification configuration must have been defined via the Set-HPRepositoryNotificationConfiguration command for this command to have any effect.  
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .EXAMPLE
-  Clear-RepositoryNotificationConfiguration
+  Clear-HPRepositoryNotificationConfiguration
 
 #>
-function Clear-RepositoryNotificationConfiguration ()
+function Clear-HPRepositoryNotificationConfiguration ()
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration")]
+  [Alias('Clear-RepositoryNotificationConfiguration')]
   param()
   Log "Clearing notification configuration"
 
@@ -1716,50 +1724,51 @@ function Clear-RepositoryNotificationConfiguration ()
 
 .DESCRIPTION
   This command retrieves the current notification configuration as an object. 
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command. 
-  The current notification configuration must be set via the Set-RepositoryNotificationConfiguration command. 
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command. 
+  The current notification configuration must be set via the Set-HPRepositoryNotificationConfiguration command. 
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .EXAMPLE
-  $config = Get-RepositoryNotificationConfiguration
+  $config = Get-HPRepositoryNotificationConfiguration
 
 
 #>
-function Get-RepositoryNotificationConfiguration ()
+function Get-HPRepositoryNotificationConfiguration ()
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration")]
+  [Alias('Get-RepositoryNotificationConfiguration')]
   param()
 
   $c = LoadRepository
@@ -1778,52 +1787,53 @@ function Get-RepositoryNotificationConfiguration ()
 
 .DESCRIPTION
   This command retrieves the current notification configuration as user-friendly screen output.
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command.
-  The current notification configuration must be set via the Set-RepositoryNotificationConfiguration command. 
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command.
+  The current notification configuration must be set via the Set-HPRepositoryNotificationConfiguration command. 
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Add-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient)
+  [Add-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .EXAMPLE
-  Show-RepositoryNotificationConfiguration
+  Show-HPRepositoryNotificationConfiguration
 #>
-function Show-RepositoryNotificationConfiguration ()
+function Show-HPRepositoryNotificationConfiguration ()
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration")]
+  [Alias('Show-RepositoryNotificationConfiguration')]
   param()
 
   try {
-    $c = Get-RepositoryNotificationConfiguration
+    $c = Get-HPRepositoryNotificationConfiguration
     if (-not $c)
     {
       err ("Notifications are not configured.")
@@ -1861,54 +1871,55 @@ function Show-RepositoryNotificationConfiguration ()
 .DESCRIPTION
   This command adds a recipient via an email address to the list of recipients to receive failure notification emails for the current repository. If any failure occurs, notifications will be sent to this email address.
 
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command.
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command.
 
 .PARAMETER To
   Specifies the email address to add as a recipient of the failure notifications 
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .EXAMPLE
-  Add-RepositorySyncFailureRecipient -to someone@mycompany.com
+  Add-HPRepositorySyncFailureRecipient -to someone@mycompany.com
 
 #>
-function Add-RepositorySyncFailureRecipient ()
+function Add-HPRepositorySyncFailureRecipient ()
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-RepositorySyncFailureRecipient")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-HPRepositorySyncFailureRecipient")]
+  [Alias('Add-RepositorySyncFailureRecipient')]
   param(
     [Parameter(Position = 0,Mandatory = $true)]
     [ValidatePattern("^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$")]
@@ -1947,55 +1958,56 @@ function Add-RepositorySyncFailureRecipient ()
 
 .DESCRIPTION
   This command removes an email address as a recipient for synchronization failure messages. 
-  This command must be invoked inside a directory initialized as a repository using the Initialize-Repository command. 
-  Notification configured via the Set-RepositoryNotificationConfiguration command. 
+  This command must be invoked inside a directory initialized as a repository using the Initialize-HPRepository command. 
+  Notification configured via the Set-HPRepositoryNotificationConfiguration command. 
 
 .PARAMETER To
   Specifies the email address to remove
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .LINK
-  [Test-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration)
+  [Test-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration)
 
 .EXAMPLE
-  Remove-RepositorySyncFailureRecipient -to someone@mycompany.com
+  Remove-HPRepositorySyncFailureRecipient -to someone@mycompany.com
 
 #>
-function Remove-RepositorySyncFailureRecipient
+function Remove-HPRepositorySyncFailureRecipient
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient")]
+  [Alias('Remove-RepositorySyncFailureRecipient')]
   param(
     [Parameter(Position = 0,Mandatory = $true)]
     [ValidatePattern("^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$")]
@@ -2035,45 +2047,46 @@ function Remove-RepositorySyncFailureRecipient
   any errors associated with the send process. This command is intended to debug the email server configuration.
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Add-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-RepositoryFilter)
+  [Add-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Add-HPRepositoryFilter)
 
 .LINK
-  [Remove-RepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-RepositoryFilter)
+  [Remove-HPRepositoryFilter](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositoryFilter)
 
 .LINK
-  [Get-RepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-RepositoryInfo)
+  [Get-HPRepositoryInfo](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryInfo)
 
 .LINK
-  [Invoke-RepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-RepositorySync)
+  [Invoke-HPRepositorySync](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositorySync)
 
 .LINK
-  [Invoke-RepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-RepositoryCleanup)
+  [Invoke-HPRepositoryCleanup](https://developers.hp.com/hp-client-management/doc/Invoke-HPRepositoryCleanup)
 
 .LINK
-  [Set-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryNotificationConfiguration)
+  [Set-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Clear-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-RepositoryNotificationConfiguration)
+  [Clear-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Clear-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Get-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryNotificationConfiguration)
+  [Get-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryNotificationConfiguration)
 
 .LINK 
-  [Show-RepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-RepositoryNotificationConfiguration)
+  [Show-HPRepositoryNotificationConfiguration](https://developers.hp.com/hp-client-management/doc/Show-HPRepositoryNotificationConfiguration)
 
 .LINK
-  [Remove-RepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-RepositorySyncFailureRecipient)
+  [Remove-HPRepositorySyncFailureRecipient](https://developers.hp.com/hp-client-management/doc/Remove-HPRepositorySyncFailureRecipient)
 
 .EXAMPLE
-  Test-RepositoryNotificationConfiguration
+  Test-HPRepositoryNotificationConfiguration
 
 #>
-function Test-RepositoryNotificationConfiguration
+function Test-HPRepositoryNotificationConfiguration
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Test-RepositoryNotificationConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Test-HPRepositoryNotificationConfiguration")]
+  [Alias('Test-RepositoryNotificationConfiguration')]
   param()
 
   Log ("test email started")
@@ -2105,28 +2118,29 @@ function Test-RepositoryNotificationConfiguration
   Specifies the new value for the RepositoryReport setting. The value must be one of the following: 'CSV' (default), 'JSon', 'XML', or 'ExcelCSV'.
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 
 .LINK
-  [Get-RepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Get-RepositoryConfiguration)
+  [Get-HPRepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryConfiguration)
 
 .Example
-  Set-RepositoryConfiguration -Setting OnRemoteFileNotFound -Value LogAndContinue
+  Set-HPRepositoryConfiguration -Setting OnRemoteFileNotFound -Value LogAndContinue
 
 .Example
-  Set-RepositoryConfiguration -Setting OfflineCacheMode -CacheValue Enable
+  Set-HPRepositoryConfiguration -Setting OfflineCacheMode -CacheValue Enable
 
 .Example
-  Set-RepositoryConfiguration -Setting RepositoryReport -Format CSV
+  Set-HPRepositoryConfiguration -Setting RepositoryReport -Format CSV
 
 .NOTES
-  - When using HP Image Assistant and offline mode, use: Set-RepositoryConfiguration -Setting OfflineCacheMode -CacheValue Enable
+  - When using HP Image Assistant and offline mode, use: Set-HPRepositoryConfiguration -Setting OfflineCacheMode -CacheValue Enable
   - More information on using HPIA with CMSL can be found at this [blog post](https://developers.hp.com/hp-client-management/blog/driver-injection-hp-image-assistant-and-hp-cmsl-in-memcm).
-  - To create a report outside the repository, use the New-RepositoryReport command.
+  - To create a report outside the repository, use the New-HPRepositoryReport command.
 #>
-function Set-RepositoryConfiguration
+function Set-HPRepositoryConfiguration
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Set-RepositoryConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryConfiguration")]
+  [Alias('Set-RepositoryConfiguration')]
   param(
     [ValidateSet('OnRemoteFileNotFound','OfflineCacheMode','RepositoryReport')]
     [Parameter(ParameterSetName = "ErrorHandler",Position = 0,Mandatory = $true)]
@@ -2155,7 +2169,7 @@ function Set-RepositoryConfiguration
     }
     else {
       Write-Host -ForegroundColor Magenta "Enter valid Value for $Setting."
-      Write-LogWarning "Enter valid Value for $Setting."
+      Write-HPLogWarning "Enter valid Value for $Setting."
     }
   }
   elseif ($Setting -eq "OfflineCacheMode") {
@@ -2166,7 +2180,7 @@ function Set-RepositoryConfiguration
     }
     else {
       Write-Host -ForegroundColor Magenta "Enter valid CacheValue for $Setting."
-      Write-LogWarning "Enter valid CacheValue for $Setting."
+      Write-HPLogWarning "Enter valid CacheValue for $Setting."
     }
   }
   elseif ($Setting -eq "RepositoryReport") {
@@ -2177,7 +2191,7 @@ function Set-RepositoryConfiguration
     }
     else {
       Write-Host -ForegroundColor Magenta "Enter valid Format for $Setting."
-      Write-LogWarning "Enter valid Format for $Setting."
+      Write-HPLogWarning "Enter valid Format for $Setting."
     }
   }
 }
@@ -2199,23 +2213,24 @@ function Set-RepositoryConfiguration
 
 
 .Example
-  Get-RepositoryConfiguration -Setting OfflineCacheMode
+  Get-HPRepositoryConfiguration -Setting OfflineCacheMode
 
 .Example
-  Get-RepositoryConfiguration -Setting OnRemoteFileNotFound
+  Get-HPRepositoryConfiguration -Setting OnRemoteFileNotFound
 
 .Example
-  Get-RepositoryConfiguration -Setting RepositoryReport
+  Get-HPRepositoryConfiguration -Setting RepositoryReport
 
 .LINK
-  [Set-RepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Set-RepositoryConfiguration)
+  [Set-HPRepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryConfiguration)
 
 .LINK
-  [Initialize-Repository](https://developers.hp.com/hp-client-management/doc/Initialize-Repository)
+  [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
 #>
-function Get-RepositoryConfiguration
+function Get-HPRepositoryConfiguration
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-RepositoryConfiguration")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPRepositoryConfiguration")]
+  [Alias('Get-RepositoryConfiguration')]
   param(
     [Parameter(Position = 0,Mandatory = $true)]
     [string]
@@ -2258,17 +2273,18 @@ function Get-RepositoryConfiguration
 
 
 .EXAMPLE
-  New-RepositoryReport -Format JSON -RepositoryPath c:\myrepository\softpaqs -OutputFile c:\repository\today.json
+  New-HPRepositoryReport -Format JSON -RepositoryPath c:\myrepository\softpaqs -OutputFile c:\repository\today.json
 
 .EXAMPLE
-  New-RepositoryReport -Format ExcelCSV -RepositoryPath c:\myrepository\softpaqs -OutputFile c:\repository\today.csv
+  New-HPRepositoryReport -Format ExcelCSV -RepositoryPath c:\myrepository\softpaqs -OutputFile c:\repository\today.csv
 
 .NOTES
   This command currently supports scenarios where the SoftPaq executable is stored under the format sp<softpaq-number>.exe.
 #>
-function New-RepositoryReport
+function New-HPRepositoryReport
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/New-RepositoryReport")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/New-HPRepositoryReport")]
+  [Alias('New-RepositoryReport')]
   param(
     [Parameter(Position = 0,Mandatory = $false)]
     [ValidateSet('CSV','JSon','XML','ExcelCSV')]

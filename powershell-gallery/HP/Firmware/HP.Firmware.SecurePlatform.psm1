@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 <#
@@ -47,7 +47,7 @@ function Get-HPSecurePlatformState {
   $mi_result = 0
   $data = New-Object -TypeName provisioning_data_t
  
-  if((Test-OSBitness) -eq 32){
+  if((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSecurePlatform]::get_secureplatform_provisioning32([ref]$data,[ref]$mi_result);
   }
   else {
@@ -234,7 +234,7 @@ function New-HPSecurePlatformEndorsementKeyProvisioningPayload {
   $opaqueLength = 4096
   $mi_result = 0  
 
-  if((Test-OSBitness) -eq 32){
+  if((Test-HPOSBitness) -eq 32){
     $result = [DfmNativeSecurePlatform]::get_ek_provisioning_data32($crt,$($crt.Count),$BIOSPassword, $passwordLength, [ref]$opaque, [ref]$opaqueLength,  [ref]$mi_result);
   }
   else {
@@ -590,7 +590,7 @@ function New-HPSecurePlatformDeprovisioningPayload {
   Applies a payload to HP Secure Platform Management
 
 .DESCRIPTION
-  This command applies a properly encoded payload created by one of the New-HPSecurePlatform*, New-HPSureRun*, New-HPSureAdmin*, or New-HPSureRecover* commands to the BIOS.
+  This command applies a properly encoded payload created by one of the New-HPSecurePlatform*, New-HPSureAdmin*, or New-HPSureRecover* commands to the BIOS.
   
   Payloads created by means other than the commands mentioned above are not supported.
 
@@ -643,7 +643,7 @@ function Set-HPSecurePlatformPayload {
   $result = $null
   switch ($type.purpose) {
     "hp:provision:endorsementkey" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSecurePlatform]::set_ek_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -651,7 +651,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:provision:signingkey" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSecurePlatform]::set_sk_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -659,7 +659,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:provision:os_image" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_osr_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -667,7 +667,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:provision:recovery_image" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_re_provisioning32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -679,7 +679,7 @@ function Set-HPSecurePlatformPayload {
         throw [System.IO.InvalidDataException]"Custom OS Recovery Image is required to configure failover"
       }
 
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_osr_failover32($pbytes,$pbytes.length,[ref]$mi_result);
       }
       else {
@@ -687,7 +687,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:deprovision" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_deprovision_opaque32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -695,7 +695,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:scheduler" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_schedule32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -703,7 +703,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:configure" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_configuration32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -711,7 +711,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:trigger" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::set_surerecover_trigger32($pbytes,$pbytes.length, [ref]$mi_result);
       }
       else {
@@ -719,7 +719,7 @@ function Set-HPSecurePlatformPayload {
       }
     }
     "hp:surerecover:service_event" {
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRecover]::raise_surerecover_service_event_opaque32($null,0, [ref]$mi_result);
       }
       else {
@@ -728,7 +728,7 @@ function Set-HPSecurePlatformPayload {
     }
     "hp:surerrun:manifest" {
       $mbytes = $type.Meta1
-      if((Test-OSBitness) -eq 32){
+      if((Test-HPOSBitness) -eq 32){
         $result = [DfmNativeSureRun]::set_surererun_manifest32($pbytes,$pbytes.length, $mbytes, $mbytes.length, [ref]$mi_result);
       }
       else {

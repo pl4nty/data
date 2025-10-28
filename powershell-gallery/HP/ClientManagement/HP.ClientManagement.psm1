@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 <#
@@ -73,7 +73,7 @@ function Get-HPBIOSSetting {
     [CimSession]$CimSession
   )
 
-  $ns = getNamespace
+  $ns = getHPNamespace
   Write-Verbose "Reading HP BIOS Setting '$Name' from $ns on '$ComputerName'"
   $result = $null
 
@@ -84,7 +84,7 @@ function Get-HPBIOSSetting {
   }
 
   if ($PSCmdlet.ParameterSetName -eq 'NewSession') {
-    $params.CimSession = newCimSession -Target $ComputerName
+    $params.CimSession = newHPCimSession -Target $ComputerName
   }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') {
     $params.CimSession = $CimSession
@@ -148,7 +148,7 @@ function Get-HPDeviceUUID () {
     ClassName = 'Win32_ComputerSystemProduct'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
   ([string](getWmiField $obj "UUID")).trim().ToUpper()
@@ -183,7 +183,7 @@ function Get-HPBIOSUUID {
   )
 
   $params = @{ Name = 'Universally Unique Identifier (UUID)' }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-HPBIOSSetting @params -ErrorAction stop
@@ -239,7 +239,7 @@ function Get-HPBIOSVersion {
     ClassName = 'Win32_BIOS'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   
   $obj = Get-CimInstance @params -ErrorAction stop
@@ -300,7 +300,7 @@ function Get-HPBIOSAuthor {
     ClassName = 'Win32_BIOS'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
   ([string](getWmiField $obj "Manufacturer")).trim()
@@ -337,7 +337,7 @@ function Get-HPDeviceManufacturer {
     ClassName = 'Win32_ComputerSystem'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
   ([string](getWmiField $obj "Manufacturer")).trim()
@@ -373,7 +373,7 @@ function Get-HPDeviceSerialNumber {
     ClassName = 'Win32_BIOS'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
 
@@ -411,7 +411,7 @@ function Get-HPDeviceModel {
     Namespace = 'root\cimv2'
   }
 
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
 
@@ -452,7 +452,7 @@ function Get-HPDevicePartNumber {
     Namespace = 'root\cimv2'
   }
 
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
   $obj = Get-CimInstance @params -ErrorAction stop
 
@@ -491,7 +491,7 @@ function Get-HPDeviceProductID {
     Namespace = 'root\cimv2'
   }
 
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-CimInstance @params -ErrorAction stop
@@ -529,7 +529,7 @@ function Get-HPDeviceAssetTag {
   $params = @{
     Name = 'Asset Tracking Number'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-HPBIOSSetting @params -ErrorAction stop
@@ -575,7 +575,7 @@ function Get-HPBIOSSettingValue {
   $params = @{
     Name = $Name
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-HPBIOSSetting @params
@@ -641,7 +641,7 @@ function Get-HPBIOSSettingsList {
     [Parameter(ParameterSetName = 'ReuseSession',Position = 3,Mandatory = $false)]
     [Parameter(Position = 3,Mandatory = $false)] [CimSession]$CimSession
   )
-  $ns = getNamespace
+  $ns = getHPNamespace
 
   Write-Verbose "Getting all BIOS settings from '$ComputerName'"
   $params = @{
@@ -649,7 +649,7 @@ function Get-HPBIOSSettingsList {
     Namespace = $ns
   }
 
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   try {
@@ -901,7 +901,7 @@ function Get-HPBIOSSetupPasswordIsSet () {
 
   )
   $params = @{ Name = "Setup Password" }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-HPBIOSSetting @params
@@ -969,10 +969,10 @@ function Set-HPBIOSSetupPassword {
     throw [System.ArgumentException]'There is a BIOS Setup password currently set. Please provide it via the -Password parameter to set a new password.'
   }
 
-  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'NoPassthruReuseSession') { $params.CimSession = $CimSession }
 
-  $iface = getBiosSettingInterface @params
+  $iface = getHPBiosSettingInterface @params
 
   $r = $iface | Invoke-CimMethod -ErrorAction Stop -MethodName 'SetBIOSSetting' -Arguments @{
     Name = $settingName
@@ -981,7 +981,7 @@ function Set-HPBIOSSetupPassword {
   }
 
   if ($r.Return -ne 0) {
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     throw [System.InvalidOperationException]$Err
   }
 }
@@ -1034,13 +1034,13 @@ function Clear-HPBIOSSetupPassword {
 
 
   $params = @{}
-  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'NoPassthruReuseSession') { $params.CimSession = $CimSession }
 
-  $iface = getBiosSettingInterface @params
+  $iface = getHPBiosSettingInterface @params
   $r = $iface | Invoke-CimMethod -MethodName SetBiosSetting -Arguments @{ Name = "Setup Password"; Value = "<utf-16/>"; Password = "<utf-16/>" + $Password; }
   if ($r.Return -ne 0) {
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     throw [System.InvalidOperationException]$Err
   }
 }
@@ -1083,7 +1083,7 @@ function Get-HPBIOSPowerOnPasswordIsSet () {
 
   )
   $params = @{ Name = "Power-On Password" }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $obj = Get-HPBIOSSetting @params
@@ -1144,13 +1144,13 @@ function Set-HPBIOSPowerOnPassword {
   $settingName = 'Power-On Password'
 
   $params = @{}
-  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'NoPassthruReuseSession') { $params.CimSession = $CimSession }
 
-  $iface = getBiosSettingInterface @params
+  $iface = getHPBiosSettingInterface @params
   $r = $iface | Invoke-CimMethod -MethodName SetBiosSetting -Arguments @{ Name = $settingName; Value = "<utf-16/>" + $newPassword; Password = "<utf-16/>" + $Password; }
   if ($r.Return -ne 0) {
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     throw $Err
   }
 }
@@ -1209,17 +1209,17 @@ function Clear-HPBIOSPowerOnPassword {
 
 
   $params = @{}
-  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NoPassthruNewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'NoPassthruReuseSession') { $params.CimSession = $CimSession }
 
-  $iface = getBiosSettingInterface @params
+  $iface = getHPBiosSettingInterface @params
   $r = $iface | Invoke-CimMethod -MethodName SetBiosSetting -Arguments @{
     Name = "Power-On Password"
     Value = "<utf-16/>"
     Password = ("<utf-16/>" + $Password)
   }
   if ($r.Return -ne 0) {
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     throw [System.InvalidOperationException]$Err
   }
 }
@@ -1379,13 +1379,13 @@ function Set-HPPrivateBIOSSettingDefaultsAuthorization {
     $params.CimSession = $CimSession
   }
   else {
-    $params.CimSession = newCimSession -Target $ComputerName
+    $params.CimSession = newHPCimSession -Target $ComputerName
   }
-  $iface = getBiosSettingInterface @params
+  $iface = getHPBiosSettingInterface @params
   $r = $iface | Invoke-CimMethod -MethodName SetSystemDefaults -Arguments @{ Password = $Authorization; }
 
   if ($r.Return -ne 0) {
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     throw $Err
   }
 }
@@ -1451,7 +1451,7 @@ function Get-HPDeviceUptime {
     ClassName = 'Win32_OperatingSystem'
     Namespace = 'root\cimv2'
   }
-  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newCimSession -Target $ComputerName }
+  if ($PSCmdlet.ParameterSetName -eq 'NewSession') { $params.CimSession = newHPCimSession -Target $ComputerName }
   if ($PSCmdlet.ParameterSetName -eq 'ReuseSession') { $params.CimSession = $CimSession }
 
   $result = Get-CimInstance @params -ErrorAction stop
@@ -1521,8 +1521,6 @@ function Get-HPDeviceBootInformation {
     - Date: the BIOS release date
     - Bin: the BIOS update binary file
 
-  Online Mode uses Seamless Firmware Update Service that can update the BIOS in the background while the operating system is running (no authentication needed). 2022 and newer HP computers with Intel processors support Seamless Firmware Update Service.
-  Offline Mode then finishes updating the BIOS after reboot and requires authentication (password or payload).
 
 .PARAMETER Platform
   Specifies the Platform ID to check. This parameter can be obtained via the Get-HPDeviceProductID command. The Platform ID cannot be specified for a flash operation. If not specified, the current Platform ID is used.
@@ -1556,7 +1554,7 @@ function Get-HPDeviceBootInformation {
   If specified, the BIOS update will be flashed onto the current system.
 
 .PARAMETER Password
-  Specifies the BIOS password, if any. This parameter is only necessary when the -Flash parameter is specified. Use single quotes around the password to prevent PowerShell from interpreting special characters in the string.
+  Specifies the BIOS password, if required. This parameter is only necessary when the -Flash parameter is specified and the required authentication is the BIOS Setup password. Use single quotes around the password to prevent PowerShell from interpreting special characters in the string.
 
 .PARAMETER Version
   Specifies the BIOS version to download and/or flash. If not specified, the latest version will be used. This parameter must be specified with the -Download parameter and/or -Flash parameter.
@@ -1747,7 +1745,7 @@ function Get-HPBIOSUpdates {
   }
 
   # trim the 0 from the start of the version and then sort on the version value
-  $refined_doc = $doc.SelectNodes("//BIOS/Rel") | Select-Object -Property @{ Name = 'Ver'; expr = { $_.Ver.TrimStart("0") } },'Date','Bin','RB','L','DP' `
+  $refined_doc = $doc.SelectNodes("//BIOS/Rel") | Select-Object -Property @{ Name = 'Ver'; expr = { $_.Ver.TrimStart("0") } },'Date','Bin','RB','L','DP', 'Sha384' `
      | Sort-Object -Property Ver -Descending
 
   # latest version
@@ -1766,7 +1764,8 @@ function Get-HPBIOSUpdates {
       $args.Property = (@{ Name = 'Ver'; expr = { $_.Ver.TrimStart("0") } },"Date","Bin",`
            (@{ Name = 'RollbackAllowed'; expr = { [bool][int]$_.RB.trim() } }),`
            (@{ Name = 'Importance'; expr = { [Enum]::ToObject([BiosUpdateCriticality],[int]$_.L.trim()) } }),`
-           (@{ Name = 'Dependency'; expr = { [string]$_.DP.trim() } }))
+           (@{ Name = 'Dependency'; expr = { [string]$_.DP.trim() } }),`
+           (@{ Name = 'Sha384'; expr = { $_.Sha384.trim()}}))
     }
     else {
       $args.Property = (@{ Name = 'Ver'; expr = { $_.Ver.TrimStart("0") } },"Date","Bin")
@@ -1796,11 +1795,13 @@ function Get-HPBIOSUpdates {
                 Ver = $haveVerFromDoc.Ver
                 Date = $haveVerFromDoc.Date
                 Bin = $haveVerFromDoc.Bin
+                Sha384 = $haveVerFromDoc.Sha384
               }
               if ($all) {
                 $pso | Add-Member -MemberType ScriptProperty -Name RollbackAllowed -Value { [bool][int]$haveVerFromDoc.RB.trim() }
                 $pso | Add-Member -MemberType ScriptProperty -Name Importance -Value { [Enum]::ToObject([BiosUpdateCriticality],[int]$haveVerFromDoc.L.trim()) }
                 $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { [string]$haveVerFromDoc.DP.trim }
+                $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { [string]$haveVerFromDoc.Sha384.trim }
               }
               $retrieved = 1
               if ($pso) {
@@ -1828,6 +1829,7 @@ function Get-HPBIOSUpdates {
               $pso | Add-Member -MemberType ScriptProperty -Name RollbackAllowed -Value { $null }
               $pso | Add-Member -MemberType ScriptProperty -Name Importance -Value { $null }
               $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { $null }
+              $pso | Add-Member -MemberType ScriptProperty -Name Sha384 -Value { $null }
             }
             if ($pso) {
               $retrieved = 1
@@ -1851,7 +1853,7 @@ function Get-HPBIOSUpdates {
       $version = $version.TrimStart('0')
       $latestVer = $refined_doc `
          | Where-Object { $_.Ver.TrimStart("0") -eq $version } `
-         | Select-Object -Property Ver,Bin -First 1
+         | Select-Object -Property Ver,Bin,Sha384 -First 1
     }
 
     if (-not $latestVer) { throw [System.ArgumentOutOfRangeException]"Version $version was not found." }
@@ -1868,6 +1870,9 @@ function Get-HPBIOSUpdates {
     $remote_file = $latestVer.Bin
     $local_file = $latestVer.Bin
     $remote_ver = $latestVer.Ver
+    $remote_file_hash = $latestVer.Sha384
+
+    Write-Verbose "Remote file hash is $remote_file_hash"
 
     if ($PSCmdlet.ParameterSetName -eq "FlashSetPassword") {
       $running = Get-HPBIOSVersion
@@ -1875,46 +1880,34 @@ function Get-HPBIOSUpdates {
 
       Test-HPFirmwareFlashSupported -CheckPlatform
 
-      # Check the BIOS Update Credential Policy setting
-      $credentialPolicyValue = $null
-      try{
-        $credentialPolicyValue = Get-HPBIOSSettingValue -Name "BIOS Update Credential Policy" -Verbose:$VerbosePreference
+      $isSureAdminEnabled = Get-HPPrivateIsSureAdminEnabled
+      $isBAPset = Get-HPBIOSSetupPasswordIsSet
+      $isDowngrade = [Version]$running.trim() -gt [Version]$remote_ver.trim()
+
+      if($isDowngrade){
+        $authRequired = Test-HPAuthRequired -BiosUpdateType "Downgrade"
       }
-      catch {
-        Write-Verbose "Exception caught retrieving BIOS Update Credential Policy. Will continue with normal process: $($_.Exception.Message)"
+      else {
+        $authRequired = Test-HPAuthRequired -BiosUpdateType "Upgrade"
       }
 
-      # When Sure Admin is enabled, password is no longer accepted 
-      if ((Get-HPPrivateIsSureAdminEnabled) -eq $true) {
-        if($credentialPolicyValue -eq "Always Require Credentials"){
-          throw "Sure Admin is enabled, and BIOS Update Credential Policy is set to 'Always Require Credentials'. You must use Update-HPFirmware with a payload instead of a password"
+      if($authRequired){
+        if($isSureAdminEnabled -eq $true){
+          throw "Sure Admin is enabled, and authentication is required. You must use Update-HPFirmware with a payload"
         }
-        elseif ($credentialPolicyValue -eq "Require Credentials on Downgrade Only"){
-          if ([Version]$running.trim() -gt [Version]$remote_ver.trim()) {
-            throw "Downgrade Detected, Sure Admin is enabled, and BIOS Update Credential Policy is set to 'Require Credentials on Downgrade Only'. You must use Update-HPFirmware with a payload instead of a password"
-          }     
-        }
-        elseif($null -eq $credentialPolicyValue){
-          # BIOS Update Credential Policy setting does not exist, throw original error  
-          throw "Sure Admin is enabled, you must use Update-HPFirmware with a payload instead of a password"
-        }
-        # elseif ($credentialPolicyValue -eq "Never Require Credentials"){ # no error, continue with the process
-      }
-      elseif((Get-HPBIOSSetupPasswordIsSet) -and -not $Password){
-        if($credentialPolicyValue -eq "Always Require Credentials"){
-          throw "Setup Password is set, and BIOS Update Credential Policy is set to 'Always Require Credentials'. Please provide a password to continue with the update."
-        }
-        elseif ($credentialPolicyValue -eq "Require Credentials on Downgrade Only"){
-          if ([Version]$running.trim() -gt [Version]$remote_ver.trim()) {
-            throw "Downgrade Detected, Setup Password is set, and BIOS Update Credential Policy is set to 'Require Credentials on Downgrade Only'. Please provide a password to continue with the downgrade."
-          }     
+        elseif($isSureAdminEnabled -eq $false -and $isBAPset -and -not $Password){
+          throw "BIOS Setup Password is set, and authentication is required. Please provide a password to continue with the update."
         }
       }
-
+      else {
+        Write-Verbose "Authentication is not required to proceed with update."
+      }
+      
+      # Same version or downgrade 
       if ([Version]$running.trim() -ge [Version]$remote_ver.trim()) {
         if ($Force.IsPresent) {
           $offlineMode = $true
-          Write-Verbose "Offline mode selected to downgrade BIOS"
+          Write-Verbose "Offline mode has been selected."
         }
         else {
           Write-Host "This system is already running BIOS version $($remote_ver.TrimStart(`"0`").Trim()) or newer."
@@ -1924,7 +1917,7 @@ function Get-HPBIOSUpdates {
       }
       if (-not $offlineMode -and $Offline.IsPresent) {
         $offlineMode = $true
-        Write-Verbose "Offline mode selected"
+        Write-Verbose "Offline mode has been selected."
       }
     }
 
@@ -1939,6 +1932,19 @@ function Get-HPBIOSUpdates {
     $download_params.Target = [IO.Path]::GetFullPath($local_file)
     $download_params.progress = ($quiet.IsPresent -eq $false)
     Invoke-HPPrivateDownloadFile @download_params -panic
+
+    # check sha384 hash of downloaded file against hash in xml file
+    if($remote_file_hash) {
+      $localFileHash = (Get-FileHash $local_file -Algorithm SHA384).Hash
+      Write-Verbose "Local file hash is $localFileHash"
+
+      if ($localFileHash -ne $remote_file_hash) {
+        throw [System.Security.Cryptography.CryptographicException]"Downloaded file hash does not match the expected hash."
+      }
+      else {
+        Write-Verbose "Downloaded file hash matches the expected hash."
+      }
+    }
 
     if ($PSCmdlet.ParameterSetName -eq "FlashSetPassword") {
       if (-not $yes) {
@@ -1976,7 +1982,7 @@ function Get-HPPrivateBIOSFamilyNameAndVersion {
     ClassName = 'Win32_BIOS'
     Namespace = 'root\cimv2'
   }
-  $params.CimSession = newCimSession -Target "."
+  $params.CimSession = newHPCimSession -Target "."
   $obj = Get-CimInstance @params -ErrorAction stop
   $verfield = (getWmiField $obj "SMBIOSBIOSVersion").Split()
 
@@ -2306,7 +2312,24 @@ function Set-HPPrivatePSScriptsEntries {
   if (-not [System.IO.File]::Exists($Path)) {
     New-Item -Force -Path $Path -Type File
   }
-  $contents | Set-Content -Path $Path -Force
+  $maxRetries = 3
+  $retryDelay = 2000 # milliseconds
+  $attempt = 0
+  do {
+    try {
+      Write-Verbose "Attempting to write to $Path ($($attempt + 1)/$maxRetries)"
+      $contents | Set-Content -Path $Path -Force
+      Write-Verbose "File $Path updated successfully"
+      break
+    }
+    catch {
+      Start-Sleep -Milliseconds $retryDelay
+      $attempt++
+      if ($attempt -ge $maxRetries) {
+        throw $_
+      }
+    }
+  } while ($attempt -lt $maxRetries)
 }
 
 <#
@@ -2329,17 +2352,18 @@ function Set-HPPrivatePSScriptsEntries {
   If specified, a custom path can be used.
 
 .EXAMPLE
-  Add-PSScriptsEntry -Type 'Shutdown' -CmdLine 'myscript.ps1'
+  Add-HPPSScriptsEntry -Type 'Shutdown' -CmdLine 'myscript.ps1'
 
 .EXAMPLE
-  Add-PSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1'
+  Add-HPPSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1'
 
 .EXAMPLE
-  Add-PSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1' -Parameters 'myparam'
+  Add-HPPSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1' -Parameters 'myparam'
 #>
-function Add-PSScriptsEntry
+function Add-HPPSScriptsEntry
 {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-PSScriptsEntry")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Add-HPPSScriptsEntry")]
+  [Alias('Add-PSScriptsEntry')]
   param(
     [ValidateSet('Startup','Shutdown')]
     [Parameter(Mandatory = $true,Position = 0)]
@@ -2385,63 +2409,102 @@ function Add-PSScriptsEntry
 function Get-HPCMSLEnvironment {
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPCMSLEnvironment")]
   param()
-
-  Get-ComputerInfo
-  $psVersionTable
+  try {
+    Get-ComputerInfo
+  }
+  catch {
+    Write-Error "$($_.Exception.Message)"
+    'Error getting computer information'
+  }
+  try {
+    $psVersionTable
+  }
+  catch {
+    Write-Error "$($_.Exception.Message)"
+    'Error getting PowerShell version table'
+  }
   try {
     $psISE
   }
   catch {
     'Not running on Windows PowerShell ISE'
   }
+  try {
+    $modules = @(
+      'HP.Consent',
+      'HP.Private',
+      'HP.Utility',
+      'HP.ClientManagement',
+      'HP.Firmware',
+      'HP.Notifications',
+      'HP.Sinks',
+      'HP.Retail',
+      'HP.Softpaq',
+      'HP.Repo',
+      'HP.SmartExperiences',
+      'HP.Displays',
+      'HP.Security',
+      'HP.Docks'
+    )
 
-  $modules = @(
-    'HP.Consent',
-    'HP.Private',
-    'HP.Utility',
-    'HP.ClientManagement',
-    'HP.Firmware',
-    'HP.Notifications',
-    'HP.Sinks',
-    'HP.Retail',
-    'HP.Softpaq',
-    'HP.Repo',
-    'HP.SmartExperiences',
-    'HP.Displays',
-    'HP.Security',
-    'HP.Docks'
-  )
+    $modulesFullVersion = @{}
+    foreach ($module in $modules) {
+      Write-Verbose "Checking if module $module is imported into the current session"
 
-  $modulesFullVersion = @{}
-  foreach ($module in $modules) {
-    $m = Get-Module -Name $module
-    if ($null -eq $m) {
-      $m = Get-Module -Name $module -ListAvailable
+      $importedModules = @(Get-Module -Name $module) # Add the module imported in the current session at the first position of the array
+      if ($importedModules.Count -eq 0) {
+        Write-Verbose "Module $module not imported"
+        $modulesFullVersion[$module] = @($null)
+      }
+      Write-Verbose "Checking if any version of the module $module is available"
+      $availableModules = @(Get-Module -Name $module -ListAvailable) # Add all the modules available in the system
+
+      Write-Verbose "Number of versions of $module imported: $($importedModules.Count)"
+      Write-Verbose "Number of versions of $module available: $($availableModules.Count)"
+  
+      if ($importedModules.Count -eq 0 -and $availableModules.Count -eq 0) {
+        # If module is not imported nor available, just continue to next
+        Write-Verbose "No version of the module $module is imported or available"
+        continue
+      }
+
+      $m = $importedModules + $availableModules
+      foreach ($n in $m) {
+        $path = "$($n.ModuleBase)\$module.psd1"
+        Write-Verbose "Module path: $path"
+        $line = Select-String -Path $path -Pattern "FullModuleVersion = '(.+)'"
+
+        if ($null -eq $line -or $line.PSobject.Properties.name -notcontains 'Matches') {
+          continue
+        }
+        $lineMatch = $line.Matches.Value
+        $lineMatch -match "'(.+)'" | Out-Null
+        $fullModuleVersion = $Matches[1]
+
+        if (-not $modulesFullVersion.ContainsKey($module)) {
+          $modulesFullVersion[$module] = @()
+        }
+        Write-Verbose "Adding module $module full version: $fullModuleVersion"
+        $modulesFullVersion[$module] += $fullModuleVersion
+      }
     }
-
-    if($null -eq $m) { # if not imported or installed, just continue to next module
-      $modulesFullVersion[$module] = $null
-      continue
-    }
-
-    $path = "$($m.ModuleBase)\$module.psd1"
-    $line = Select-String -Path $path -Pattern "FullModuleVersion = '(.+)'"
-
-    if ($null -eq $line -or $line.PSobject.Properties.name -notcontains 'Matches') {
-      $modulesFullVersion[$module] = $null
-      continue
-    }
-    $lineMatch = $line.Matches.Value
-    $lineMatch -match "'(.+)'" | Out-Null
-    $fullModuleVersion = $Matches[1]
-    $modulesFullVersion[$module] = $fullModuleVersion
+    $modulesFullVersion 
   }
-  $modulesFullVersion
-  @{
-    SystemID = Get-HPDeviceProductID
-    Os = Get-HPPrivateCurrentOs
-    OsVer = Get-HPPrivateCurrentDisplayOSVer
-    Bitness = Get-HPPrivateCurrentOsBitness
+  catch {
+    Write-Error "$($_.Exception.Message)"
+    'Error getting CMSL modules'' versions'
+  }
+  try {
+    @{
+      SystemID = Get-HPDeviceProductID
+      Os = Get-HPPrivateCurrentOs
+      OsVer = Get-HPPrivateCurrentDisplayOSVer
+      Bitness = Get-HPPrivateCurrentOsBitness
+    }
+  }
+  catch {
+    Write-Error "$($_.Exception.Message)"
+    'Error getting miscellaneous information'
   }
 }
 
@@ -2465,16 +2528,17 @@ function Get-HPCMSLEnvironment {
   If specified, a custom path can be used.
 
 .EXAMPLE
-  Remove-PSScriptsEntry -Type 'Shutdown' -CmdLine 'myscript.ps1'
+  Remove-HPPSScriptsEntry -Type 'Shutdown' -CmdLine 'myscript.ps1'
 
 .EXAMPLE
-  Remove-PSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1'
+  Remove-HPPSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1'
 
 .EXAMPLE
-  Remove-PSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1' -Parameters 'myparam'
+  Remove-HPPSScriptsEntry -Type 'Startup' -CmdLine 'myscript.ps1' -Parameters 'myparam'
 #>
-function Remove-PSScriptsEntry {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-PSScriptsEntry")]
+function Remove-HPPSScriptsEntry {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Remove-HPPSScriptsEntry")]
+  [Alias('Remove-PSScriptsEntry')]
   param(
     [ValidateSet('Startup','Shutdown')]
     [Parameter(Mandatory = $true,Position = 0)]
@@ -2579,7 +2643,7 @@ function Add-HPBIOSWindowsUpdateScripts {
   Move-Item $expectedDir "$scripts\Scripts\Shutdown\wu_image" -Force
   $log = ".\wu_bios_update.log"
 
-  # CMSL modules should be included at startup to use Remove-PSScriptsEntry function
+  # CMSL modules should be included at startup to use Remove-HPPSScriptsEntry function
   $clientManagementModulePath = (Get-Module -Name HP.ClientManagement).Path
   $privateModulePath = (Get-Module -Name HP.Private).Path
 
@@ -2642,9 +2706,9 @@ Remove-Item -Recurse -Force ' + ${env:SystemRoot} + '\System32\GroupPolicy\Machi
 if (Get-Module -Name HP.Private) {remove-module -force HP.Private }
 if (Get-Module -Name HP.ClientManagement) {remove-module -force HP.ClientManagement }
 Import-Module -Force ' + $privateModulePath + ' *>> ' + $log + '
-Import-Module -Force ' + $clientManagementModulePath + ' -Function Remove-PSScriptsEntry *>> ' + $log + '
-Remove-PSScriptsEntry -Type "Startup" -CmdLine wu_startup.ps1 *>> ' + $log + '
-Remove-PSScriptsEntry -Type "Shutdown" -CmdLine wu_shutdown.ps1 *>> ' + $log + '
+Import-Module -Force ' + $clientManagementModulePath + ' -Function Remove-HPPSScriptsEntry *>> ' + $log + '
+Remove-HPPSScriptsEntry -Type "Startup" -CmdLine wu_startup.ps1 *>> ' + $log + '
+Remove-HPPSScriptsEntry -Type "Shutdown" -CmdLine wu_shutdown.ps1 *>> ' + $log + '
 gpupdate /wait:0 /force /target:computer *>> ' + $log + '
 ' | Out-File "$scripts\Scripts\Startup\wu_startup.ps1"
 
@@ -2693,10 +2757,10 @@ if ($volume.ProtectionStatus -ne "Off") {
 
   "[General]`ngPCMachineExtensionNames=[{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B6664F-4972-11D1-A7CA-0000F87571E3}]`nVersion=65537" | Set-Content -Path $gpt -Force
 
-  Remove-PSScriptsEntry -Type "Startup" -CmdLine "wu_startup.ps1" | Out-Null
-  Remove-PSScriptsEntry -Type "Shutdown" -CmdLine "wu_shutdown.ps1" | Out-Null
-  Add-PSScriptsEntry -Type "Startup" -CmdLine "wu_startup.ps1"
-  Add-PSScriptsEntry -Type "Shutdown" -CmdLine "wu_shutdown.ps1" -Parameters "$infFileName"
+  Remove-HPPSScriptsEntry -Type "Startup" -CmdLine "wu_startup.ps1" | Out-Null
+  Remove-HPPSScriptsEntry -Type "Shutdown" -CmdLine "wu_shutdown.ps1" | Out-Null
+  Add-HPPSScriptsEntry -Type "Startup" -CmdLine "wu_startup.ps1"
+  Add-HPPSScriptsEntry -Type "Shutdown" -CmdLine "wu_shutdown.ps1" -Parameters "$infFileName"
   gpupdate /wait:0 /force /target:computer
   Write-Host -ForegroundColor Cyan "Firmware image has been deployed. The process will continue after reboot."
 }
@@ -2771,7 +2835,7 @@ function Get-HPDeviceDetails {
     [string]$Url = "https://hpia.hpcloud.hp.com/ref"
   )
 
-  if (Test-WinPE -Verbose:$VerbosePreference) { throw "Getting HP Device details is not supported in WinPE" }
+  if (Test-HPWinPE -Verbose:$VerbosePreference) { throw "Getting HP Device details is not supported in WinPE" }
 
     # only allow https or file paths with or without file:// URL prefix
   if ($Url -and -not ($Url.StartsWith("https://",$true,$null) -or [System.IO.Directory]::Exists($Url) -or $Url.StartsWith("file://",$true,$null))) {
@@ -2872,8 +2936,6 @@ function Get-HPDeviceDetails {
     return $r
   }
 }
-
-
 
 function getFormattedBiosSettingValue {
   [CmdletBinding()]

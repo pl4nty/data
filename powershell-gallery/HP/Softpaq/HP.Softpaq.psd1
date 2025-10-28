@@ -14,8 +14,8 @@
 @{
 
   RootModule = 'HP.Softpaq.psm1'
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
   GUID = '994EF32D-25FA-4903-88EF-98D47F052675'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
@@ -23,18 +23,25 @@
   Description = 'Softpaq management module for HP Client Management Script Library'
   PowerShellVersion = '5.1'
   FunctionsToExport = 
-    'Clear-SoftpaqCache',
-    'Get-Softpaq',
-    'Get-SoftpaqList',
+    'Clear-HPSoftpaqCache',
+    'Get-HPSoftpaq',
+    'Get-HPSoftpaqList',
     'Get-HPImageAssistantUpdateInfo',
     'Install-HPImageAssistant',
-    'Get-SoftpaqMetadata',
-    'Get-SoftpaqMetadataFile',
-    'Out-SoftpaqField',
+    'Get-HPSoftpaqMetadata',
+    'Get-HPSoftpaqMetadataFile',
+    'Out-HPSoftpaqField',
     'New-HPDriverPack',
     'New-HPBuildDriverPack',
     'New-HPUWPDriverPack'
-
+  
+  AliasesToExport = 
+    'Clear-SoftpaqCache',
+    'Get-Softpaq',
+    'Get-SoftpaqList',
+    'Get-SoftpaqMetadata',
+    'Get-SoftpaqMetadataFile',
+    'Out-SoftpaqField'
   
   PrivateData = @{
     PSData = @{

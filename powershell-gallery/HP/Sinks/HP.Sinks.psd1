@@ -17,8 +17,8 @@
   RootModule = 'HP.Sinks.psm1'
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
 
   # ID used to uniquely identify this module
   GUID = '6c52dac6-35ee-4c4b-b0f1-a9dba3df70d8'
@@ -40,19 +40,32 @@
   PowerShellVersion = '5.1'
 
   FunctionsToExport = 
-    'Send-ToEventLog',
+    'Send-ToHPEventLog',
+    'Unregister-HPEventLogSink',
+    'Register-HPEventLogSink',
+    'Send-ToHPSyslog',
+    'Send-ToHPCMTraceLog',
+    'Log-HPWarning',
+    'Log-HPError',
+    'Log-HPInfo',
+    'Set-HPCMSLLogFormat',
+    'Get-HPCMSLLogFormat',
+    'Write-HPLogError',
+    'Write-HPLogWarning',
+    'Write-HPLogInfo'
+
+  AliasesToExport =
+    'Send-EventLog',
     'Unregister-EventLogSink',
     'Register-EventLogSink',
-    'Send-ToSyslog',
-    'Send-ToCMTraceLog',
+    'Send-Syslog',
+    'Send-CMTraceLog',
     'Log-Warning',
     'Log-Error',
     'Log-Info',
-    'Set-HPCMSLLogFormat',
-    'Get-HPCMSLLogFormat',
     'Write-LogError',
     'Write-LogWarning',
-    "Write-LogInfo"
+    'Write-LogInfo'
 
 
   PrivateData = @{

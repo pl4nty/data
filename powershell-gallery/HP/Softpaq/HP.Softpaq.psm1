@@ -22,7 +22,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 .DESCRIPTION
   This command downloads the metadata of a SoftPaq metadata in CVA file format from ftp.hp.com or from a specified alternate server. If the -URL parameter is not specified, the SoftPaq metadata is downloaded from ftp.hp.com. 
 
-  Please note that this command is called in the Get-SoftPaqMetadataFile command if the -FriendlyName parameter is specified. 
+  Please note that this command is called in the Get-HPSoftpaqMetadataFile command if the -FriendlyName parameter is specified. 
 
 .PARAMETER Number
   Specifies a SoftPaq number to retrieve the metadata from. Do not include any prefixes like 'SP' or any extensions like '.exe'. Please specify the SoftPaq number only.
@@ -36,25 +36,26 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
   Current default value is 10 retries, and each retry includes a 30 second pause, which means the maximum time the default value will wait for an exclusive logs is 300 seconds or 5 minutes.
 
 .EXAMPLE
-  Get-SoftpaqMetadata -Number 1234 | Out-SoftpaqField -field Title
+  Get-HPSoftpaqMetadata -Number 1234 | Out-HPSoftpaqField -field Title
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Get-SoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadataFile)
+  [Get-HPSoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadataFile)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Out-SoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField)
+  [Out-HPSoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 #>
-function Get-SoftpaqMetadata {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata")]
+function Get-HPSoftpaqMetadata {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata")]
+  [Alias('Get-SoftpaqMetadata')]
   param(
     [ValidatePattern('^([Ss][Pp])*([0-9]{3,9})((\.[Ee][Xx][Ee]|\.[Cc][Vv][Aa])*)$')]
     [Parameter(Position = 0,Mandatory = $true)] [string]$Number,
@@ -84,7 +85,7 @@ function Get-SoftpaqMetadata {
 
   If a SoftPaq is either unavailable to download or has been obsoleted on the server, this command will display a warning that the SoftPaq could not be retrieved. 
 
-  The Get-Softpaq command is not supported in WinPE.
+  The Get-HPSoftpaq command is not supported in WinPE.
 
 .PARAMETER Number
   Specifies the SoftPaq number for which to retrieve the metadata. Do not include any prefixes like 'SP' or any extensions like '.exe'. Please specify the SoftPaq number only.
@@ -130,30 +131,34 @@ function Get-SoftpaqMetadata {
 
   Current default value is 10 retries, and each retry includes a 30 second pause, which means the maximum time the default value will wait for an exclusive logs is 300 seconds or 5 minutes.
 
-.EXAMPLE
-    Get-Softpaq -Number 1234
+.PARAMETER Password
+  Specifies a password to use to pass to silently install firmware update SoftPaqs. This parameter is only relevant if the Action parameter is set to SilentInstall and if the SoftPaq is a firmware update SoftPaq.
 
 .EXAMPLE
-    Get-Softpaq -Number 1234 -Extract -DestinationPath "c:\staging\drivers"
+    Get-HPSoftpaq -Number 1234
+
+.EXAMPLE
+    Get-HPSoftpaq -Number 1234 -Extract -DestinationPath "c:\staging\drivers"
 
 .LINK
-  [Get-SoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata)
+  [Get-HPSoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata)
 
 .LINK
-  [Get-SoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadataFile)
+  [Get-HPSoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadataFile)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Out-SoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField)
+  [Out-HPSoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 
 #>
-function Get-Softpaq {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-Softpaq",DefaultParameterSetName = "DownloadParams")]
+function Get-HPSoftpaq {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq",DefaultParameterSetName = "DownloadParams")]
+  [Alias('Get-Softpaq')]
   param(
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 0,Mandatory = $true)]
@@ -200,10 +205,14 @@ function Get-Softpaq {
     [Parameter(Mandatory = $false,ParameterSetName = "DownloadParams")]
     [Parameter(Mandatory = $false,ParameterSetName = "ExtractParams")]
     [ValidatePattern('^[a-zA-Z]:\\')]
-    [string]$DestinationPath
+    [string]$DestinationPath,
+
+    [Parameter(Mandatory = $false,ParameterSetName = "DownloadParams")]
+    [Parameter(Mandatory = $false,ParameterSetName = "InstallParams")]
+    [SecureString]$Password
   )
 
-  if ((Test-WinPE) -and ($action)) {
+  if ((Test-HPWinPE) -and ($action)) {
     throw [NotSupportedException]"Softpaq installation is not supported in WinPE"
   }
 
@@ -227,7 +236,7 @@ function Get-Softpaq {
 
   if ($friendlyName.IsPresent -or $action) {
     # get SoftPaq metadata
-    try { $root = Get-SoftpaqMetadata $no -url $url -maxRetries $maxRetries }
+    try { $root = Get-HPSoftpaqMetadata $no -url $url -maxRetries $maxRetries }
     catch {
       if ($progress -eq $true) {
         Write-Host -ForegroundColor Magenta "(Warning) Could not retrieve CVA file metadata for sp$no."
@@ -317,8 +326,8 @@ function Get-Softpaq {
 
     Copy-Item -Path $targetFile -Destination $workingPath -Force
 
-    # calling Invoke-PostDownloadSoftpaqAction with action as Extract even though Action parameter is limited to Install and SilentInstall 
-    Invoke-PostDownloadSoftpaqAction -downloadedFile $workingPath -Action "extract" -Number $number -info $root -Destination $DestinationPath -Verbose:$VerbosePreference
+    # calling Invoke-HPPostDownloadSoftpaqAction with action as Extract even though Action parameter is limited to Install and SilentInstall 
+    Invoke-HPPostDownloadSoftpaqAction -downloadedFile $workingPath -Action "extract" -Number $number -info $root -Destination $DestinationPath -Verbose:$VerbosePreference
     Write-Verbose "Removing SoftPaq from the temporary working directory $workingPath"
     Remove-Item -Path $workingPath -Force
   }
@@ -326,16 +335,16 @@ function Get-Softpaq {
   # perform requested action
   if ($action)
   {
-    Invoke-PostDownloadSoftpaqAction -downloadedFile $targetFile -Action $action -Number $number -info $root -Destination $DestinationPath -Verbose:$VerbosePreference
+    Invoke-HPPostDownloadSoftpaqAction -downloadedFile $targetFile -Action $action -Number $number -info $root -Destination $DestinationPath -Password $Password -Verbose:$VerbosePreference
   }
 }
 
 <#
 .SYNOPSIS
-  Downloads the metadata of a SoftPaq metadata in CVA file format from ftp.hp.com or from a specified alternate server with additional configuration capabilities in comparison to the Get-SoftPaqMetadata command
+  Downloads the metadata of a SoftPaq metadata in CVA file format from ftp.hp.com or from a specified alternate server with additional configuration capabilities in comparison to the Get-HPSoftpaqMetadata command
 
 .DESCRIPTION
-  This command downloads the metadata of a SoftPaq metadata in CVA file format from ftp.hp.com or from a specified alternate server with additional configuration capabilities in comparison to the Get-SoftPaqMetadata command.
+  This command downloads the metadata of a SoftPaq metadata in CVA file format from ftp.hp.com or from a specified alternate server with additional configuration capabilities in comparison to the Get-HPSoftpaqMetadata command.
 
   The additional configuration capabilities are detailed using the following parameters:
   - SaveAs
@@ -343,7 +352,7 @@ function Get-Softpaq {
   - Quiet
   - Overwrite 
 
-  Please note that this command calls the Get-SoftPaqMetadata command if the -FriendlyName parameter is specified. 
+  Please note that this command calls the Get-HPSoftpaqMetadata command if the -FriendlyName parameter is specified. 
 
 .PARAMETER Number
   Specifies the SoftPaq number for which to retrieve the metadata. Do not include any prefixes like 'SP' or any extensions like '.exe'. Please specify the SoftPaq number only.
@@ -373,26 +382,27 @@ function Get-Softpaq {
   Specifies an alternate location for the SoftPaq URL. This URL must be HTTPS. The SoftPaq CVAs are expected to be at the location pointed to by this URL. If not specified, ftp.hp.com is used via HTTPS protocol.
 
 .EXAMPLE
-  Get-SoftpaqMetadataFile -Number 1234
+  Get-HPSoftpaqMetadataFile -Number 1234
 
 .LINK
-  [Get-SoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata)
+  [Get-HPSoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Out-SoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField)
+  [Out-HPSoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 
 #>
-function Get-SoftpaqMetadataFile {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadataFile")]
+function Get-HPSoftpaqMetadataFile {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadataFile")]
+  [Alias('Get-SoftpaqMetadataFile')]
   param(
     [ValidatePattern('^([Ss][Pp])*([0-9]{3,9})((\.[Ee][Xx][Ee]|\.[Cc][Vv][Aa])*)$')]
     [Parameter(Position = 0,Mandatory = $true)]
@@ -430,7 +440,7 @@ function Get-SoftpaqMetadataFile {
   # get SoftPaq metadata. We don't need this step unless we get friendly name
   if ($friendlyName.IsPresent) {
     Write-Verbose "Need to get CVA data to determine Friendly Name for CVA file"
-    try { $root = Get-SoftpaqMetadata $number -url $url -maxRetries $maxRetries }
+    try { $root = Get-HPSoftpaqMetadata $number -url $url -maxRetries $maxRetries }
     catch {
       if ($progress -eq $true) {
         Write-Host -ForegroundColor Magenta "(Warning) Could not retrieve CVA file metadata"
@@ -490,25 +500,26 @@ function Get-SoftpaqMetadataFile {
   Specifies the root node of the SoftPaq metadata to extract information from 
 
 .EXAMPLE
-  $mysoftpaq | Out-SoftpaqField -Field Title
+  $mysoftpaq | Out-HPSoftpaqField -Field Title
 
 .LINK
-  [Get-SoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata)
+  [Get-HPSoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 #>
-function Out-SoftpaqField {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField")]
+function Out-HPSoftpaqField {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField")]
+  [Alias('Out-SoftpaqField')]
   param(
     [ValidateSet("Install","SilentInstall","Title","Description","Number","Platforms","PlatformIDs","SoftPaqSHA256","Version")]
     [Parameter(Mandatory = $True)]
@@ -563,26 +574,26 @@ function Out-SoftpaqField {
 
 
 .EXAMPLE
-    Clear-SoftpaqCache
+    Clear-HPSoftpaqCache
 
 .PARAMETER cacheDir
   Specifies a custom location for caching data files. If not specified, the user-specific TEMP directory is used.
 
 
 .LINK
-  [Get-SoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata)
+  [Get-HPSoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Out-SoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField)
+  [Out-HPSoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField)
 
 .NOTES
     This command removes the cached files from the user temporary directory. It cannot be used to clear the cache
@@ -590,8 +601,9 @@ function Out-SoftpaqField {
   must be specified via the cacheDir folder. 
 
 #>
-function Clear-SoftpaqCache {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache")]
+function Clear-HPSoftpaqCache {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache")]
+  [Alias('Clear-SoftpaqCache')]
   param(
     [Parameter(Mandatory = $false)]
     [System.IO.DirectoryInfo]$CacheDir
@@ -618,13 +630,21 @@ function Clear-SoftpaqCache {
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Category
   Specifies a category of SoftPaqs for this command to filter based on. The value must be one (or more) of the following values: 
   - Bios
   - Firmware
   - Driver
+  - Driver - Graphics
+  - Driver - Chipset
+  - Driver - Audio
+  - Driver - Keyboard, Mouse and Input Devices
+  - Driver - Enabling
+  - Driver - Network 
+  - Driver - Storage
+  - Driver - Controller
   - Software
   - OS
   - Manageability
@@ -633,6 +653,12 @@ function Clear-SoftpaqCache {
   - Driverpack
   - Dock
   - UWPPack
+  
+  Additional notes:
+  The 'Driverpack' category will include SoftPaqs that are in the 'Manageabilty - Driver Pack' category.
+  The 'UWPPack' category will include SoftPaqs that are in the 'Manageabilty - UWP Pack' category.
+  The 'Manageability' category will not include SoftPaqs that are in the 'Driverpack' or 'UWPPack' categories. It will include all other SoftPaqs that are in a 'Manageability - *' category.
+  The'Driver - Graphics' category will include SoftPaqs that are in the 'Driver - Display' category as well.
 
 .PARAMETER ReleaseType 
   Specifies a release type for this command to filter based on. The value must be one (or more) of the following values:
@@ -644,7 +670,7 @@ function Clear-SoftpaqCache {
 
 .PARAMETER ReferenceUrl
   Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. If passing a file path, the path can be relative path or absolute path. If passing a URL to this parameter, the URL must be a HTTPS URL. The HPIA Reference files are expected to be inside a directory named after the platform ID pointed to by this parameter. 
-  For example, if you want to point to system ID 83b2, OS Win10, and OSVer 2009 reference files, the Get-SoftpaqList command will try to find them in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab
+  For example, if you want to point to system ID 83b2, OS Win10, and OSVer 2009 reference files, the Get-HPSoftpaqList command will try to find them in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab
   If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default, and fallback is set to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'.
 
 .PARAMETER SoftpaqUrl
@@ -702,44 +728,48 @@ function Clear-SoftpaqCache {
 .PARAMETER AddHttps
   If specified, this command prepends the https tag to the url, ReleaseNotes, and Metadata SoftPaq attributes.
 
-.EXAMPLE
-  Get-SoftpaqList -Download
+.PARAMETER LatestSupportedOS
+  If specified, this command finds the softPaqs associated with the platform ID regardless of the current OS, OS version and bitness running on the current device. If multiple reference files are found, the command will use the reference file associated with the latest OS combination. 
+  If used with the PreferLTSC parameter, this command will check all the LTSC reference files only and will not check the regular reference files.
 
 .EXAMPLE
-  Get-SoftpaqList -Bitness 64 -Os win10 -OsVer 1903
+  Get-HPSoftpaqList -Download
 
 .EXAMPLE
-  Get-SoftpaqList -Platform 83b2 -Os win10 -OsVer "21H1"
+  Get-HPSoftpaqList -Bitness 64 -Os win10 -OsVer 1903
 
 .EXAMPLE
-  Get-SoftpaqList -Platform 8444 -Category Diagnostic -Format json
+  Get-HPSoftpaqList -Platform 83b2 -Os win10 -OsVer "21H1"
 
 .EXAMPLE
-  Get-SoftpaqList -Category Driverpack
+  Get-HPSoftpaqList -Platform 8444 -Category Diagnostic -Format json
 
 .EXAMPLE
-  Get-SoftpaqList -ReleaseType Critical -Characteristic SSM
+  Get-HPSoftpaqList -Category Driverpack
 
 .EXAMPLE
-  Get-SoftpaqList -Platform 83b2 -Category Dock,Firmware -ReleaseType Routine,Critical
+  Get-HPSoftpaqList -ReleaseType Critical -Characteristic SSM
+
+.EXAMPLE
+  Get-HPSoftpaqList -Platform 83b2 -Category Dock,Firmware -ReleaseType Routine,Critical
 
 .EXAMPLE 
-  Get-SoftpaqList -Platform 2216 -Category Driverpack -Os win10 -OsVer 1607 -PreferLTSC
+  Get-HPSoftpaqList -Platform 2216 -Category Driverpack -Os win10 -OsVer 1607 -PreferLTSC
 
 .LINK
-  [Get-SoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadata)
+  [Get-HPSoftpaqMetadata](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadata)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Out-SoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-SoftpaqField)
+  [Out-HPSoftpaqField](https://developers.hp.com/hp-client-management/doc/Out-HPSoftpaqField)
 
 .NOTES
   The response is a record set composed of zero or more SoftPaq records. The definition of a record is as follows:
@@ -762,8 +792,9 @@ function Clear-SoftpaqCache {
   | UWP           | (where available) This flag indicates this SoftPaq contains Universal Windows Platform applications |
 
 #>
-function Get-SoftpaqList {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList",DefaultParameterSetName = "ViewParams")]
+function Get-HPSoftpaqList {
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList",DefaultParameterSetName = "ViewParams")]
+  [Alias('Get-SoftpaqList')]
   param(
 
     [ValidatePattern("^[a-fA-F0-9]{4}$")]
@@ -778,7 +809,7 @@ function Get-SoftpaqList {
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 2,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2")]
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")]
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 3,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$OsVer,
 
@@ -808,7 +839,8 @@ function Get-SoftpaqList {
     [Parameter(Position = 12,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$Overwrite = "No",
 
 
-    [ValidateSet("BIOS","Firmware","Driver","Software","OS","Manageability","Diagnostic","Utility","Driverpack","Dock","UWPPack")]
+    [ValidateSet("BIOS","Firmware","Driver","Software","OS","Manageability","Diagnostic","Utility","Driverpack","Dock","UWPPack",
+    "Driver - Graphics", "Driver - Audio", "Driver - Chipset", "Driver - Keyboard, Mouse and Input Devices", "Driver -Enabling", "Driver - Network", "Driver - Storage", "Driver - Controller")]
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 13,ParameterSetName = "ViewParams")] [string[]]$Category = $null,
 
@@ -837,65 +869,24 @@ function Get-SoftpaqList {
     [Parameter(Position = 19,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$SoftpaqUrl,
 
     [Parameter(ParameterSetName = "DownloadParams")]
-    [Parameter(Position = 20,Mandatory = $false,ParameterSetName = "ViewParams")] [switch]$AddHttps
+    [Parameter(Position = 20,Mandatory = $false,ParameterSetName = "ViewParams")] [switch]$AddHttps,
+
+    [Parameter(ParameterSetName = "DownloadParams")]
+    [Parameter(Position = 21,Mandatory = $false,ParameterSetName = "ViewParams")] [switch]$LatestSupportedOS
   )
 
-  if (Test-WinPE) {
+  if (Test-HPWinPE) {
     throw [NotSupportedException]"This operation is not supported in WinPE"
+  }
+
+  if($LatestSupportedOS.IsPresent -and ($Os -or $OsVer -or $Bitness)) {
+    throw [NotSupportedException]"The LatestSupportedOS switch cannot be used with the Os, OsVer or Bitness parameters"
   }
 
   [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
   $ver = ""
   $progress = $true
   $cacheDir = Get-HPPrivateCacheDirPath ($cacheDir)
-
-  if ($quiet.IsPresent) { $progress = -not $quiet }
-  if (-not $platform) { $platform = Get-HPDeviceProductID }
-  $platform = $platform.ToLower()
-  if ($OsVer) { $OsVer = $OsVer.ToLower() }
-
-  if (!$bitness) {
-    $bitness = Get-HPPrivateCurrentOsBitness
-  }
-  if (!$os) {
-    $os = Get-HPPrivateCurrentOs
-  }
-
-
-  if (([System.Environment]::OSVersion.Version.Major -eq 10) -and $OsVer) {
-
-    try {
-      # try converting OsVer to int
-      $OSVer = [int]$OsVer
-
-      if ($OSVer -gt 2009 -or $OSVer -lt 1507) {
-        throw "Unsupported operating system version"
-      }
-    }
-    catch {
-      if (!($OSVer -match '[0-9]{2}[hH][0-9]')) {
-        throw "Unsupported operating system version"
-      }
-    }
-  }
-
-  # determine OSVer for Win10 if OSVer is not passed
-  if (([System.Environment]::OSVersion.Version.Major -eq 10) -and (!$osver))
-  {
-    Write-Verbose "need to determine OSVer"
-    $osver = GetCurrentOSVer
-  }
-
-  switch ($os)
-  {
-    "win10" { $ver = "10.0." + $osver.ToString() }
-    "win11" { $ver = "11.0." + $osver.ToString() }
-    "win81" { $ver = "6.3" }
-    "win8.1" { $ver = "6.3" }
-    "win8" { $ver = "6.2" }
-    "win7" { $ver = "6.1" }
-    default { throw [NotSupportedException]"Unsupported operating system: " + $_ }
-  }
 
   if (-not $ReferenceUrl.EndsWith('/')) {
     $ReferenceUrl = $ReferenceUrl + "/"
@@ -909,83 +900,201 @@ function Get-SoftpaqList {
     $referenceFallbackUrL = ''
   }
 
-  $fn = "$($platform)_$($bitness)_$($ver)"
-  #Write-Host -ForegroundColor Magenta $fn
-  $result = $null
-  $LTSCExists = $false
+  if ($quiet.IsPresent) { $progress = -not $quiet }
+  if (-not $platform) { $platform = Get-HPDeviceProductID }
+  $platform = $platform.ToLower()
 
-  if ($PreferLTSC.IsPresent) {
-    $qurl = "$($ReferenceUrl)$platform/$fn.e.cab"
-    $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.e.cab" -cacheDir $cacheDir
-    $downloadedFile = "$qfile.dir\$fn.e.xml"
-    $try_on_ftp = $false
-    try {
-      $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
-      if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $qurl from AWS Server..."
-      }
-      $LTSCExists = $true
-    }
-    catch {
-      Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
-      if ($referenceFallbackUrL) {
-        $try_on_ftp = $true
-      }
-    }
+  if($LatestSupportedOS.IsPresent){
+    
+    # latest first 
+    $osList = @("win11","win10","win81","win8.1", "win8","win7")
+    $osVerList = @("25h2", "24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
+    $bitnessList = @("arm64","64","32")
 
-    if ($try_on_ftp) {
-      try {
-        Write-Verbose "$qurl not found on AWS Server. Trying to download it from FTP Server..."
-        $qurl = "$($ReferenceFallbackUrl)$platform/$fn.e.cab"
-        $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
-        if ($result[1] -eq $true) {
-          $LTSCExists = $true
+    $continueSearch = $true
+
+    # for every combination of OS, OSVer and Bitness, test if file exists
+    foreach ($os in $osList) {
+      foreach ($osVer in $osVerList) {
+        foreach ($bitness in $bitnessList) {
+
+          if ($continueSearch -eq $false) {
+            # Found latest OS combination, no need to continue searching
+            break
+          }
+
+          switch ($os)
+          {
+            "win10" { $ver = "10.0." + $osver.ToString() }
+            "win11" { $ver = "11.0." + $osver.ToString() }
+            "win81" { $ver = "6.3" }
+            "win8.1" { $ver = "6.3" }
+            "win8" { $ver = "6.2" }
+            "win7" { $ver = "6.1" }
+          }
+
+          if($PreferLTSC.IsPresent) {
+            $fn = "$($platform)_$($bitness)_$($ver).e"
+          }
+          else {
+            $fn = "$($platform)_$($bitness)_$($ver)"
+          }
+
+          $qurl = "$($ReferenceUrl)$platform/$fn.cab"
+          $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
+          $downloadedFile = "$qfile.dir\$fn.xml"
+          try {
+            $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+            Write-Verbose "Found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
+            $continueSearch = $false
+
+            if ($result[1] -eq $false){
+              Write-Verbose "Do not need to download again"
+            }
+            else{
+              Write-Verbose "Need to download again"
+            }
+        
+          }
+          catch {
+            Write-Verbose "Not found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
+            $fn = $null
+          }
         }
       }
-      catch {
-        Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
-        if (-not $quiet -or $result[1] -eq $false) {
-          Write-Host -ForegroundColor Magenta "LTSB/LTSC data file doesn't exists for platform $platform ($os $osver)"
-          Write-Host -ForegroundColor Cyan "Getting the regular (non-LTSB/LTSC) data file for this platform"
-        }
+    }
+
+    if($null -eq $fn) {
+      if($PreferLTSC.IsPresent){
+        throw [System.Net.WebException]"Could not find any LTSB/LTSC data file for any OS combination for platform $platform."
+      }
+      else{
+        throw [System.Net.WebException]"Could not find any data file for any OS combination for platform $platform."
       }
     }
   }
+  else {
+    if ($OsVer) { $OsVer = $OsVer.ToLower() }
 
-  # LTSB(C) file doesn't exists, fall back to regular Ref file
-  if ((-not $PreferLTSC.IsPresent) -or ($PreferLTSC.IsPresent -and ($LTSCExists -eq $false))) {
-    $qurl = "$($ReferenceUrl)$platform/$fn.cab"
-    $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
-    $downloadedFile = "$qfile.dir\$fn.xml"
-    $try_on_ftp = $false
-    try {
-      $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
-      if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $qurl from AWS Server..."
-      }
+    if (!$bitness) {
+      $bitness = Get-HPPrivateCurrentOsBitness
     }
-    catch {
-      Write-Host "HTTPS request to $qurl failed: $($_.Exception.Message)"
-      if ($referenceFallbackUrL) {
-        $try_on_ftp = $true
-      }
-      else {
-        throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
-      }
+    if (!$os) {
+      $os = Get-HPPrivateCurrentOs
     }
 
-    if ($try_on_ftp) {
+    if (([System.Environment]::OSVersion.Version.Major -eq 10) -and $OsVer) {
+
       try {
-        Write-Verbose "$qurl not found on AWS Server. Trying to download it from FTP Server..."
-        $qurl = "$($ReferenceFallbackUrl)$platform/$fn.cab"
+        # try converting OsVer to int
+        $OSVer = [int]$OsVer
+
+        if ($OSVer -gt 2009 -or $OSVer -lt 1507) {
+          throw "Unsupported operating system version"
+        }
+      }
+      catch {
+        if (!($OSVer -match '[0-9]{2}[hH][0-9]')) {
+          throw "Unsupported operating system version"
+        }
+      }
+    }
+
+    # determine OSVer for Win10 if OSVer is not passed
+    if (([System.Environment]::OSVersion.Version.Major -eq 10) -and (!$osver))
+    {
+      Write-Verbose "need to determine OSVer"
+      $osver = GetHPCurrentOSVer
+    }
+
+    switch ($os)
+    {
+      "win10" { $ver = "10.0." + $osver.ToString() }
+      "win11" { $ver = "11.0." + $osver.ToString() }
+      "win81" { $ver = "6.3" }
+      "win8.1" { $ver = "6.3" }
+      "win8" { $ver = "6.2" }
+      "win7" { $ver = "6.1" }
+      default { throw [NotSupportedException]"Unsupported operating system: " + $_ }
+    }
+
+    $fn = "$($platform)_$($bitness)_$($ver)"
+    $result = $null
+    $LTSCExists = $false
+
+    if ($PreferLTSC.IsPresent) {
+      $qurl = "$($ReferenceUrl)$platform/$fn.e.cab"
+      $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.e.cab" -cacheDir $cacheDir
+      $downloadedFile = "$qfile.dir\$fn.e.xml"
+      $try_on_ftp = $false
+      try {
         $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+        if ($result[1] -eq $true) {
+          Write-Verbose "Trying to download $qurl..."
+        }
+        $LTSCExists = $true
+      }
+      catch {
+        Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
+        if ($referenceFallbackUrL) {
+          $try_on_ftp = $true
+        }
+      }
+
+      if ($try_on_ftp) {
+        try {
+          Write-Verbose "Failed to download $qurl. Trying to download from the fallback location..."
+          $qurl = "$($ReferenceFallbackUrl)$platform/$fn.e.cab"
+          $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+          if ($result[1] -eq $true) {
+            $LTSCExists = $true
+          }
+        }
+        catch {
+          Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
+          if (-not $quiet -or $result[1] -eq $false) {
+            Write-Host -ForegroundColor Magenta "LTSB/LTSC data file doesn't exist for platform $platform ($os $osver)"
+            Write-Host -ForegroundColor Cyan "Getting the regular (non-LTSB/LTSC) data file for this platform"
+          }
+        }
+      }
+    }
+
+    # if LTSC(B) file doesn't exist, fall back to regular Ref file
+    if ((-not $PreferLTSC.IsPresent) -or ($PreferLTSC.IsPresent -and ($LTSCExists -eq $false))) {
+      $qurl = "$($ReferenceUrl)$platform/$fn.cab"
+      $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
+      $downloadedFile = "$qfile.dir\$fn.xml"
+      $try_on_ftp = $false
+      try {
+        $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+        if ($result[1] -eq $true) {
+          Write-Verbose "Trying to download $qurl"
+        }
       }
       catch {
         Write-Host "HTTPS request to $qurl failed: $($_.Exception.Message)"
-        if (-not $quiet -or $result[1] -eq $false) {
-          Write-Host -ForegroundColor Magenta $_.Exception.Message
+        if ($referenceFallbackUrL) {
+          $try_on_ftp = $true
         }
-        throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
+        else {
+          throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
+        }
+      }
+
+      if ($try_on_ftp) {
+        try {
+          Write-Verbose "Failed to download $qurl. Trying to download from the fallback location..."
+          $qurl = "$($ReferenceFallbackUrl)$platform/$fn.cab"
+          $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+        }
+        catch {
+          Write-Host "HTTPS request to $qurl failed: $($_.Exception.Message)"
+          if (-not $quiet -or $result[1] -eq $false) {
+            Write-Host -ForegroundColor Magenta $_.Exception.Message
+          }
+          throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
+        }
       }
     }
   }
@@ -1122,7 +1231,7 @@ function Get-HPImageAssistantUpdateInfo {
   try {
     $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
     if ($result[1] -eq $true) {
-      Write-Verbose "Trying to download $source from AWS Server..."
+      Write-Verbose "Trying to download $source..."
     }
   }
   catch {
@@ -1131,11 +1240,11 @@ function Get-HPImageAssistantUpdateInfo {
 
   if ($try_on_ftp) {
     try {
-      Write-Verbose "$source not found on AWS Server. Trying to download it from FTP Server..."
+      Write-Verbose "Failed to download $source. Trying to download from the fallback location..."
       $source = $fallbackSource
       $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
       if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $source from FTP Server..."
+        Write-Verbose "Trying to download $source from the fallback location..."
       }
     }
     catch {
@@ -1226,16 +1335,16 @@ function Get-HPImageAssistantUpdateInfo {
   Install-HPImageAssistant -Extract -DestinationPath "c:\staging\hpia"
 
 .LINK
-  [Get-Softpaq](https://developers.hp.com/hp-client-management/doc/Get-Softpaq)
+  [Get-HPSoftpaq](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaq)
 
 .LINK
-  [Get-SoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqMetadataFile)
+  [Get-HPSoftpaqMetadataFile](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqMetadataFile)
 
 .LINK
-  [Get-SoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-SoftpaqList)
+  [Get-HPSoftpaqList](https://developers.hp.com/hp-client-management/doc/Get-HPSoftpaqList)
 
 .LINK
-  [Clear-SoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-SoftpaqCache)
+  [Clear-HPSoftpaqCache](https://developers.hp.com/hp-client-management/doc/Clear-HPSoftpaqCache)
 #>
 function Install-HPImageAssistant {
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Install-HPImageAssistant")]
@@ -1274,7 +1383,7 @@ function Install-HPImageAssistant {
   try {
     $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
     if ($result[1] -eq $true) {
-      Write-Verbose "Trying to download $source from AWS Server..."
+      Write-Verbose "Trying to download $source..."
     }
   }
   catch {
@@ -1283,11 +1392,11 @@ function Install-HPImageAssistant {
 
   if ($try_on_ftp) {
     try {
-      Write-Verbose "$source not found on AWS Server. Trying to download it from FTP Server..."
+      Write-Verbose "Failed to download $source. Trying to download from the fallback location..."
       $source = $fallbackSource
       $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
       if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $source from FTP Server..."
+        Write-Verbose "Trying to download $source from the fallback location..."
       }
     }
     catch {
@@ -1368,7 +1477,7 @@ function Install-HPImageAssistant {
   
       Copy-Item -Path $TargetFile -Destination $workingPath -Force
 
-      Invoke-PostDownloadSoftpaqAction -downloadedFile $workingPath -Action "Extract" -Destination $DestinationPath
+      Invoke-HPPostDownloadSoftpaqAction -downloadedFile $workingPath -Action "Extract" -Destination $DestinationPath
       Write-Verbose "SoftPaq self-extraction finished at $DestinationPath"
       Write-Verbose "Remove SoftPaq from the temporary working directory $workingPath"
       Remove-Item -Path $workingPath -Force
@@ -1389,8 +1498,20 @@ function Install-HPImageAssistant {
 
 function matchCategory ([string]$cat,[string[]]$allowed)
 {
-  if ($allowed -eq $null) { return $true }
-  if ($cat.StartsWith("Driver") -eq $true) { return $allowed -eq "driver" }
+  if ($null -eq $allowed) { return $true }
+
+  # add "Driver - Display" to the list of allowed categories if "Driver - Graphics" is allowed
+  if ($allowed -contains "Driver - Graphics") {$allowed += "Driver - Display"}
+  
+  if (($cat.StartsWith("Driver")) -and ($allowed.Contains("Driver"))) { return $true }
+
+  $listOfDriverCategories = @("Graphics","Audio","Chipset","Keyboard, Mouse and Input Devices","Enabling","Network","Storage","Controller","Display")
+  foreach ($driverCategory in $listOfDriverCategories) {
+    if ($cat -match "Driver - $driverCategory") {
+      return $allowed -eq "Driver - $driverCategory"
+    }
+  }
+
   if ($cat.StartsWith("Operating System -") -eq $true) { return $allowed -eq "os" }
   if ($cat.StartsWith("Manageability - Driver Pack") -eq $true) { return $allowed -eq "driverpack" }
   if ($cat.StartsWith("Manageability - UWP Pack") -eq $true) { return $allowed -eq "UWPPack" }
@@ -1400,9 +1521,8 @@ function matchCategory ([string]$cat,[string[]]$allowed)
   if (($cat -eq "BIOS") -or ($cat.StartsWith("BIOS -") -eq $true)) { return $allowed -eq "BIOS" }
   if ($cat -eq "firmware") { return $allowed -eq "firmware" }
   if ($cat -eq "diagnostic") { return $allowed -eq "diagnostic" }
-  else {
-    return $allowed -eq "software"
-  }
+  if ($cat.StartsWith("Software -") -or ($cat -eq "Software")) { return $allowed -eq "software"}
+
   return $false
 }
 
@@ -1458,7 +1578,7 @@ function getfriendlyFileName
     if ($from) { $title = $from }
 
     #else if object was passed in, we use it
-    elseif ($info -ne $null) { $title = ($info | Out-SoftpaqField Title) }
+    elseif ($info -ne $null) { $title = ($info | Out-HPSoftpaqField Title) }
 
     #else use a default
     else { $title = "(No description available)" }
@@ -1568,13 +1688,13 @@ function New-HPPrivateSoftPaqListManifest {
 
 
 .PARAMETER Softpaqs
-  Specifies a list of SoftPaqs to be included in the Driver Pack. Additionally, this parameter can be specified by piping the output of the Get-SoftpaqList command to this command.
+  Specifies a list of SoftPaqs to be included in the Driver Pack. Additionally, this parameter can be specified by piping the output of the Get-HPSoftpaqList command to this command.
 
 .PARAMETER Os
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
    Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -1595,13 +1715,13 @@ function New-HPPrivateSoftPaqListManifest {
   Specifies an alternate temporary location to download content. Please note that this location and all files inside will be deleted once driver pack is created. If not specified, the default temporary directory path is used.
 
 .EXAMPLE
-  Get-SoftpaqList -platform 880D -os 'win10' -osver '21H2' | New-HPBuildDriverPack -Os Win10 -OsVer 21H1 -Name 'DP880D'
+  Get-HPSoftpaqList -platform 880D -os 'win10' -osver '21H2' | New-HPBuildDriverPack -Os Win10 -OsVer 21H1 -Name 'DP880D'
 
 .EXAMPLE
-  Get-SoftpaqList -platform 880D -os 'win10' -osver '21H2' | New-HPBuildDriverPack -Format Zip -Os Win10 -OsVer 21H1 -Name 'DP880D'
+  Get-HPSoftpaqList -platform 880D -os 'win10' -osver '21H2' | New-HPBuildDriverPack -Format Zip -Os Win10 -OsVer 21H1 -Name 'DP880D'
 
 .EXAMPLE
-  Get-SoftpaqList -platform 880D -os 'win10' -osver '21H2' | ?{$_.DPB -Like 'true' -and $_.id -notin @('sp137116') -and $_.name -notmatch 'AMD|USB'} | New-HPBuildDriverPack -Path 'C:\MyDriverPack' -Format Zip -Os Win10 -OsVer 21H1 -Name 'DP880D'
+  Get-HPSoftpaqList -platform 880D -os 'win10' -osver '21H2' | ?{$_.DPB -Like 'true' -and $_.id -notin @('sp137116') -and $_.name -notmatch 'AMD|USB'} | New-HPBuildDriverPack -Path 'C:\MyDriverPack' -Format Zip -Os Win10 -OsVer 21H1 -Name 'DP880D'
 
 .NOTES
   - Admin privilege is required.
@@ -1618,7 +1738,7 @@ function New-HPBuildDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2")] # keep in sync with the Repo module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module
     [Parameter(Mandatory = $false, Position = 3)]
     [string]$OSVer,
 
@@ -1652,8 +1772,8 @@ function New-HPBuildDriverPack {
     }
   
     if (!$OsVer) {
-      $revision = (GetCurrentOSVer).ToUpper()
-      if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2") {
+      $revision = (GetHPCurrentOSVer).ToUpper()
+      if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2") {
         throw "OSVer $revision currently not supported"
       }
       $OsVer = $revision
@@ -1661,7 +1781,7 @@ function New-HPBuildDriverPack {
     }
 
     # ZIP and WIM format requires admin privilege
-    if (-not (Test-IsElevatedAdmin)) {
+    if (-not (Test-IsHPElevatedAdmin)) {
       throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
     }
 
@@ -1753,7 +1873,7 @@ function New-HPBuildDriverPack {
         $url = "https://$url"
       }
       try {
-        $metadata = Get-SoftpaqMetadata -Number $ientry.id -MaxRetries 3 -Url $url
+        $metadata = Get-HPSoftpaqMetadata -Number $ientry.id -MaxRetries 3 -Url $url
       }
       catch {
         Write-Verbose $_.Exception.Message
@@ -1766,7 +1886,7 @@ function New-HPBuildDriverPack {
         $downloadFilePath = [IO.Path]::Combine($downloadPath, "$($ientry.id).exe")
         Write-Verbose "Downloading SoftPaq $downloadFilePath"
         try {
-          Get-Softpaq -Number $ientry.id -SaveAs $downloadFilePath -MaxRetries 3 -Url $url
+          Get-HPSoftpaq -Number $ientry.id -SaveAs $downloadFilePath -MaxRetries 3 -Url $url
         }
         catch {
           Write-Verbose $_.Exception.Message
@@ -2016,7 +2136,7 @@ param(
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
    Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -2071,7 +2191,7 @@ function New-HPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2")] # keep in sync with the Repo module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module
     [Parameter(Mandatory = $false, Position = 3 )]
     [string]$OSVer,
 
@@ -2099,7 +2219,7 @@ function New-HPDriverPack {
   )
 
   # 7zip and Win format require admin privilege
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -2117,8 +2237,8 @@ function New-HPDriverPack {
   }
 
   if (!$OsVer) {
-    $revision = (GetCurrentOSVer).ToUpper()
-    if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2") {
+    $revision = (GetHPCurrentOSVer).ToUpper()
+    if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2") {
       throw "OSVer $revision currently not supported"
     }
     $OsVer = $revision
@@ -2140,7 +2260,7 @@ function New-HPDriverPack {
   }
 
   try {
-    [array]$lFullDPBList = Get-SoftpaqList @params -Verbose:$VerbosePreference -AddHttps | Where-Object { ($_.DPB -like 'true') }
+    [array]$lFullDPBList = Get-HPSoftpaqList @params -Verbose:$VerbosePreference -AddHttps | Where-Object { ($_.DPB -like 'true') }
   }
   catch {
     Write-Host "SoftPaq list not available for the platform or OS specified"
@@ -2218,7 +2338,7 @@ function New-HPDriverPack {
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '22H2', '23H2', '24H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
   Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -2271,7 +2391,7 @@ function New-HPUWPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("22H2", "23H2", "24H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
+    [ValidateSet("22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
     [Parameter(Mandatory = $false, Position = 3 )]
     [string]$OSVer,
 
@@ -2296,7 +2416,7 @@ function New-HPUWPDriverPack {
   )
 
   # 7zip and Win format require admin privilege
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -2314,8 +2434,8 @@ function New-HPUWPDriverPack {
   }
 
   if (!$OsVer) {
-    $revision = (GetCurrentOSVer).ToUpper()
-    if ($revision -notin "22H2", "23H2", "24H2") {
+    $revision = (GetHPCurrentOSVer).ToUpper()
+    if ($revision -notin "22H2", "23H2", "24H2", "25H2") {
       throw "OSVer $revision currently not supported"
     }
     $OsVer = $revision
@@ -2342,7 +2462,7 @@ function New-HPUWPDriverPack {
   }
 
   try {
-    [array]$uwpFullList = Get-SoftpaqList @params -Url $Url -Verbose:$VerbosePreference -AddHttps -Category Driver | Where-Object { ($_.DPB -like 'true' -and $_.UWP -like 'true') }
+    [array]$uwpFullList = Get-HPSoftpaqList @params -Url $Url -Verbose:$VerbosePreference -AddHttps -Category Driver | Where-Object { ($_.DPB -like 'true' -and $_.UWP -like 'true') }
   }
   catch {
     Write-Host "SoftPaq list not available for the platform or OS specified"
@@ -2393,7 +2513,7 @@ function New-HPPrivateBuildUWPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("22H2", "23H2", "24H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
+    [ValidateSet("22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
     [Parameter(Mandatory = $false, Position = 3)]
     [string]$OSVer,
 
@@ -2426,15 +2546,15 @@ function New-HPPrivateBuildUWPDriverPack {
     }
   
     if (!$OsVer) {
-      $revision = (GetCurrentOSVer).ToUpper()
-      if ($revision -notin "22H2", "23H2", "24H2") {
+      $revision = (GetHPCurrentOSVer).ToUpper()
+      if ($revision -notin "22H2", "23H2", "24H2", "25H2") {
         throw "OSVer $revision currently not supported"
       }
       $OsVer = $revision
     }
 
     # ZIP and WIM format requires admin privilege
-    if (-not (Test-IsElevatedAdmin)) {
+    if (-not (Test-IsHPElevatedAdmin)) {
       throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
     }
 
@@ -2525,7 +2645,7 @@ function New-HPPrivateBuildUWPDriverPack {
       $downloadFilePath = [IO.Path]::Combine($downloadPath, "$($softpaq.id).exe")
       Write-Verbose "Downloading SoftPaq $downloadFilePath"
       try {
-        Get-Softpaq -Number $softpaq.id -SaveAs $downloadFilePath -MaxRetries 3 -Url $url
+        Get-HPSoftpaq -Number $softpaq.id -SaveAs $downloadFilePath -MaxRetries 3 -Url $url
       }
       catch {
         Write-Verbose $_.Exception.Message

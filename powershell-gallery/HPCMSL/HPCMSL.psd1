@@ -15,8 +15,8 @@
 # RootModule = ''
 
 # Version number of this module.
-#FullModuleVersion = '1.8.2.957'
-ModuleVersion = '1.8.2'
+#FullModuleVersion = '1.8.5.1220'
+ModuleVersion = '1.8.5'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -56,20 +56,20 @@ PowerShellVersion = '5.1'
 
 # Modules that must be imported into the global environment prior to importing this module
 RequiredModules = @(
-         @{ModuleName = 'HP.Private'; RequiredVersion = '1.8.2'; GUID = '9F47EFBC-1124-46F3-87AB-F2D15D169CE7' },
-         @{ModuleName = 'HP.Utility'; RequiredVersion = '1.8.2'; GUID = 'E8C64CAB-D4F9-4994-AFC8-3DB040B0AEBE' },
-         @{ModuleName = 'HP.ClientManagement'; RequiredVersion = '1.8.2'; GUID = 'e5f40402-f5b0-42f9-b10b-28910aacdf5b' },
-         @{ModuleName = 'HP.Firmware'; RequiredVersion = '1.8.2'; GUID = '9c46d615-4396-4e75-9eea-908625f0484e' },
-         @{ModuleName = 'HP.Repo'; RequiredVersion = '1.8.2'; GUID = 'df713360-19e2-481c-8bcb-f8b4bf70c08b' },
-         @{ModuleName = 'HP.Sinks'; RequiredVersion = '1.8.2'; GUID = '6c52dac6-35ee-4c4b-b0f1-a9dba3df70d8' },
-         @{ModuleName = 'HP.Softpaq'; RequiredVersion = '1.8.2'; GUID = '994EF32D-25FA-4903-88EF-98D47F052675' },
-         @{ModuleName = 'HP.Consent'; RequiredVersion = '1.8.2'; GUID = '1d8ea5a1-45c4-4509-9b16-4019676d1ca8' },
-         @{ModuleName = 'HP.Retail'; RequiredVersion = '1.8.2'; GUID = '735c53e1-1a4c-4512-88a6-77137a8ba45a'},
-         @{ModuleName = 'HP.Notifications'; RequiredVersion = '1.8.2'; GUID = 'b066583c-1b04-40d7-86a6-196dfd22dfbb'},
-         @{ModuleName = 'HP.SmartExperiences'; RequiredVersion = '1.8.2'; GUID = '04c79fde-7cc7-49e4-b11b-d2892e11f6d1'}
-         @{ModuleName = 'HP.Displays'; RequiredVersion = '1.8.2'; GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'}
-         @{ModuleName = 'HP.Security'; RequiredVersion = '1.8.2'; GUID = '2ad9a913-8e17-46e1-aea1-b4056b4014c7'}
-         @{ModuleName = 'HP.Docks'; RequiredVersion = '1.8.2'; GUID = '281fc451-4c65-4d46-a99a-86e1a46f0f76'}
+         @{ModuleName = 'HP.Private'; RequiredVersion = '1.8.5'; GUID = '9F47EFBC-1124-46F3-87AB-F2D15D169CE7' },
+         @{ModuleName = 'HP.Utility'; RequiredVersion = '1.8.5'; GUID = 'E8C64CAB-D4F9-4994-AFC8-3DB040B0AEBE' },
+         @{ModuleName = 'HP.ClientManagement'; RequiredVersion = '1.8.5'; GUID = 'e5f40402-f5b0-42f9-b10b-28910aacdf5b' },
+         @{ModuleName = 'HP.Firmware'; RequiredVersion = '1.8.5'; GUID = '9c46d615-4396-4e75-9eea-908625f0484e' },
+         @{ModuleName = 'HP.Repo'; RequiredVersion = '1.8.5'; GUID = 'df713360-19e2-481c-8bcb-f8b4bf70c08b' },
+         @{ModuleName = 'HP.Sinks'; RequiredVersion = '1.8.5'; GUID = '6c52dac6-35ee-4c4b-b0f1-a9dba3df70d8' },
+         @{ModuleName = 'HP.Softpaq'; RequiredVersion = '1.8.5'; GUID = '994EF32D-25FA-4903-88EF-98D47F052675' },
+         @{ModuleName = 'HP.Consent'; RequiredVersion = '1.8.5'; GUID = '1d8ea5a1-45c4-4509-9b16-4019676d1ca8' },
+         @{ModuleName = 'HP.Retail'; RequiredVersion = '1.8.5'; GUID = '735c53e1-1a4c-4512-88a6-77137a8ba45a'},
+         @{ModuleName = 'HP.Notifications'; RequiredVersion = '1.8.5'; GUID = 'b066583c-1b04-40d7-86a6-196dfd22dfbb'},
+         @{ModuleName = 'HP.SmartExperiences'; RequiredVersion = '1.8.5'; GUID = '04c79fde-7cc7-49e4-b11b-d2892e11f6d1'}
+         @{ModuleName = 'HP.Displays'; RequiredVersion = '1.8.5'; GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'}
+         @{ModuleName = 'HP.Security'; RequiredVersion = '1.8.5'; GUID = '2ad9a913-8e17-46e1-aea1-b4056b4014c7'}
+         @{ModuleName = 'HP.Docks'; RequiredVersion = '1.8.5'; GUID = '281fc451-4c65-4d46-a99a-86e1a46f0f76'}
  )
 
 # Assemblies that must be loaded prior to importing this module

@@ -15,10 +15,11 @@
 
   RootModule = 'HP.ClientManagement.psm1'
   NestedModules = @(
-    'HP.UEFI'
-  )
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+    'HP.UEFI',
+    "HP.Warranty.dll")
+
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
   GUID = 'e5f40402-f5b0-42f9-b10b-28910aacdf5b'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
@@ -60,9 +61,14 @@
     'Remove-HPUEFIVariable',
     'Get-HPBIOSWindowsUpdate',
     'Add-HPBIOSWindowsUpdateScripts',
+    'Add-HPPSScriptsEntry',
+    'Remove-HPPSScriptsEntry',
+    'Get-HPCMSLEnvironment',
+    'Get-HPWarrantyInfo'
+
+  AliasesToExport =
     'Add-PSScriptsEntry',
-    'Remove-PSScriptsEntry',
-    'Get-HPCMSLEnvironment'
+    'Remove-PSScriptsEntry'
 
     PrivateData = @{
       PSData = @{

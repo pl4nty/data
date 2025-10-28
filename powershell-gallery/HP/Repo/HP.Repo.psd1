@@ -23,8 +23,8 @@
   GUID = 'df713360-19e2-481c-8bcb-f8b4bf70c08b'
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
 
   # Company or vendor of this module
   CompanyName = 'HP Inc'
@@ -40,6 +40,24 @@
 
 
   FunctionsToExport = 
+    'Add-HPRepositoryFilter',
+    'Add-HPRepositorySyncFailureRecipient',
+    'Clear-HPRepositoryNotificationConfiguration',
+    'Get-HPRepositoryConfiguration',
+    'Get-HPRepositoryInfo',
+    'Get-HPRepositoryNotificationConfiguration',
+    'Initialize-HPRepository',
+    'Invoke-HPRepositoryCleanup',
+    'Invoke-HPRepositorySync',
+    'Remove-HPRepositoryFilter',
+    'Remove-HPRepositorySyncFailureRecipient',
+    'Set-HPRepositoryConfiguration',
+    'Set-HPRepositoryNotificationConfiguration',
+    'Show-HPRepositoryNotificationConfiguration',
+    'Test-HPRepositoryNotificationConfiguration',
+    'New-HPRepositoryReport'
+
+  AliasesToExport =
     'Add-RepositoryFilter',
     'Add-RepositorySyncFailureRecipient',
     'Clear-RepositoryNotificationConfiguration',

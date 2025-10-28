@@ -191,8 +191,9 @@ function Get-HPPrivateTemporaryFileName ($filename,[System.IO.DirectoryInfo]$cac
 .NOTES
   - This is a private command for internal use only
 #>
-function GetLockedStreamForWrite {
+function GetHPLockedStreamForWrite {
   [CmdletBinding()]
+  [Alias('GetLockedStreamForWrite')]
   param([string]$target,[int]$maxRetries = 10)
 
   Write-Verbose "Opening exclusive access to file $target with maximum retries of $maxRetries"
@@ -234,8 +235,9 @@ function GetLockedStreamForWrite {
 .NOTES
   - This is a private command for internal use only
 #>
-function GetSharedFileInformation {
+function GetHPSharedFileInformation {
   [CmdletBinding()]
+  [Alias('GetSharedFileInformation')]
   param($file,[string]$mode,[switch]$wait,[int]$maxRetries,[switch]$progress,[switch]$skipSignatureCheck)
 
   $return = $true
@@ -406,7 +408,7 @@ function Invoke-HPPrivateDownloadFile {
     # get file information if it exists to see if it contains the contents we want
     # and if file does not exist, continue on with the download as usual 
     if(Test-Path -Path $target -PathType leaf){
-      $r = GetSharedFileInformation -File $target -Mode "Read" -Wait -maxRetries $maxRetries -Progress:$progress -skipSignatureCheck:$skipSignatureCheck
+      $r = GetHPSharedFileInformation -File $target -Mode "Read" -Wait -maxRetries $maxRetries -Progress:$progress -skipSignatureCheck:$skipSignatureCheck
       if ($noclobber -eq "skip") {
         if (($r[0] -eq $response.get_ContentLength()) -and ($r[2] -eq $true)) {
           Write-Verbose "File already exists or another process has finished downloading this file for us."
@@ -421,7 +423,7 @@ function Invoke-HPPrivateDownloadFile {
     }
 
     $responseStream = $response.GetResponseStream()
-    $targetStream = GetLockedStreamForWrite -maxRetries $maxRetries -Target $target
+    $targetStream = GetHPLockedStreamForWrite -maxRetries $maxRetries -Target $target
    
     $buffer = New-Object byte[] 10KB
     $count = $responseStream.Read($buffer,0,$buffer.Length)
@@ -671,11 +673,12 @@ function Invoke-HPPrivateKMSErrorHandle {
   Returns $true if running in Win PE, $false otherwise.
 
 .EXAMPLE
-  Test-WinPE
+  Test-HPWinPE
 #>
-function Test-WinPE
+function Test-HPWinPE
 {
   [CmdletBinding()]
+  [Alias('Test-WinPE')]
   param()
 
   $r = Test-Path -Path Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlset\Control\MiniNT
@@ -747,10 +750,11 @@ function Get-HPPrivateUnicodePath {
 .NOTES
   - This is a private command for internal use only
 #>
-function Invoke-PostDownloadSoftpaqAction
+function Invoke-HPPostDownloadSoftpaqAction
 {
   [CmdletBinding()]
-  param([string]$downloadedFile,[string]$action,[string]$number,$info,[string]$Destination)
+  [Alias('Invoke-PostDownloadSoftpaqAction')]
+  param([string]$downloadedFile,[string]$action,[string]$number,$info,[string]$Destination, [SecureString]$password)
 
   Write-Verbose 'Processing post-download action'
   $PostDownloadCmd = $null
@@ -784,9 +788,46 @@ function Invoke-PostDownloadSoftpaqAction
     }
     "silentinstall" {
       # Get the silent install command from the metadata
-      if (!$info) { $info = Get-SoftpaqMetadata $number }
+      if (!$info) { $info = Get-HPSoftpaqMetadata $number }
 
-      $PostDownloadCmd = $info | Out-SoftpaqField -Field "silentinstall"
+      $PostDownloadCmd = $info | Out-HPSoftpaqField -Field "silentinstall"
+      $passwordBinFile = $null
+      Write-Verbose ("Checking if $PostDownloadCmd includes HpFirmwareUpdRec.exe")
+
+      if($PostDownloadCmd.Contains("HpFirmwareUpdRec.exe")){
+        Write-Verbose ("BIOS FUR SoftPaq detected.")
+        # if password is provided, create password file 
+        # Write-HPFirmwarePasswordFile will throw an exception if there was an issue creating the password file
+        if($password){
+          Write-Verbose ("Password provided. Creating password file.")
+          try{
+            # convert secure string to plain text password
+            $passwordPlainText = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
+            Write-HPFirmwarePasswordFile -Password $passwordPlainText 
+          }
+          catch{
+            # No need to check BIOS Update Credential Policy first because if Password is provided, CMSL should create a password file
+            throw "CMSL failed to create a password file. Will not continue: $_"
+          }
+
+          $passwordBinFile = Get-ChildItem -Path (Get-Location) -Filter "password.bin" -File 
+
+          # Check to ensure password.bin file exists
+          if($passwordBinFile){
+            Write-Verbose ("Adding password to argument list: `"$($passwordBinFile.FullName)`"")
+            $PostDownloadCmd += " -p '$($passwordBinFile.FullName)'"
+            Write-Verbose ("PostDownloadCmd after adding password: $PostDownloadCmd")
+          }
+          else{
+            # if password.bin file does not exist, we cannot continue with the silent install
+            throw "CMSL failed to create a password file. Will not continue."
+          }
+        }
+        else {
+          Write-Verbose "No password provided."
+        }
+      }
+
       if($Destination){
         # the /f switch for SoftPaq executables = the runtime switch that 
         # overrides the default target path specified in build time 
@@ -798,6 +839,23 @@ function Invoke-PostDownloadSoftpaqAction
       }
       $result = $?
       Write-Verbose -Message "Silent installation result: $result"
+
+      # get corresponding return code description from the metadata
+      $returnCodes = $info.ReturnCode 
+      if ($returnCodes) {
+        foreach ($code in $returnCodes.Keys) {
+          if ($code.StartsWith($output.ExitCode.ToString())) {
+            Write-Verbose -Message "Return code $($code) matches SoftPaq exit code $($output.ExitCode)"
+            Write-Verbose -Message "Return code description: $($returnCodes[$code])"
+          }
+        }
+      }
+      
+      # delete password file immediately after FUR SoftPaq is executed because FUR will handle password usage for firmware updates 
+      if($passwordBinFile){
+        Write-Verbose ("Deleting password file: $($passwordBinFile.FullName)")
+        Remove-Item -Path $passwordBinFile.FullName -Force -ErrorAction Ignore
+      }
     }
   }
 
@@ -931,7 +989,7 @@ function Get-HPPrivateCheckSignature {
 
       # Getting hash value of CVA
       $read_file = Get-HPPrivateReadINI -File $targetCVA
-      $CVA_SHA256 = $read_file | Out-SoftpaqField -Field SoftPaqSHA256
+      $CVA_SHA256 = $read_file | Out-HPSoftpaqField -Field SoftPaqSHA256
 
       Write-Verbose "CVA has SHA-256 hash '$CVA_SHA256'"
       if ($CVA_SHA256 -and $CVA_SHA256.Length -eq 64) {
@@ -1091,7 +1149,7 @@ function Test-HPPrivateIsDownloadNeeded {
   [CmdletBinding()]
   param([Parameter(Mandatory = $true)] $url,[Parameter(Mandatory = $true)] $file)
 
-  Write-Verbose "Checking if we need a new copy of $file"
+  Write-Verbose "Checking if we need a new copy of $file from $url"
 
   # $c = [System.Net.ServicePointManager]::SecurityProtocol
   # Write-Verbose ("Allowed HTTPS protocols: $c")
@@ -1311,8 +1369,9 @@ function Get-HPPrivateUserAgent () {
 .NOTES
   - This is a private command for internal use only
 #>
-function GetCurrentOSVer {
+function GetHPCurrentOSVer {
   [CmdletBinding()]
+  [Alias('GetCurrentOSVer')]
   param()
 
   try {
@@ -1374,8 +1433,9 @@ function Get-HPPrivateCurrentDisplayOSVer {
 .NOTES
   - This is a private command for internal use only
 #>
-function validateWmiResult {
+function validateHPWmiResult {
   [CmdletBinding()]
+  [Alias('validateWmiResult')]
   param([int]$code,[int]$category = 0xff)
 
   Write-Verbose "Validating error code $code for facility $category"
@@ -1387,7 +1447,7 @@ function validateWmiResult {
     4 { throw [UnauthorizedAccessException]"The caller does not have permissions to perform this operation." }
     0x1000 { throw [SystemException]"HP Secure Platform Management is not provisioned." }
     0x1c { throw [SystemException]"The request was not accepted by the BIOS." }
-    default { validateWmiResultInCategory -Category $category -code $code }
+    default { validateHPWmiResultInCategory -Category $category -code $code }
   }
 }
 
@@ -1403,8 +1463,9 @@ function validateWmiResult {
 .NOTES
   - This is a private command for internal use only
 #>
-function validateWmiResultInCategory {
+function validateHPWmiResultInCategory {
   [CmdletBinding()]
+  [Alias('validateWmiResultInCategory')]
   param([int]$category,[int]$code)
 
   switch ($category) {
@@ -1474,7 +1535,7 @@ function Test-HPPrivateCustomResult {
   Write-Verbose ("Checking result={0:x8}, mi_result={1:x8}, category={2:x4}" -f $result,$mi_result,$category)
   switch ($result) {
     0 { Write-Verbose ("Operation succeeded.") }
-    0x80000711 { validateWmiResult -code $mi_result -Category $category } # E_DFM_FAILED_WITH_EXTENDED_ERROR
+    0x80000711 { validateHPWmiResult -code $mi_result -Category $category } # E_DFM_FAILED_WITH_EXTENDED_ERROR
     0x80000710 { throw [NotSupportedException]"Current platform does not support this operation." } # E_DFM_FEATURE_NOT_SUPPORTED
     0x8000070b { throw [System.IO.IOException]"Firmware file could not be read." } # E_DFM_FILE_ACCESS_FAILURE
     0x8000070e { throw [InvalidOperationException]"Firmware file is too long for expected flash type." } # E_DFM_FLASH_BUR_INPUT_DATA_TOO_LARGE
@@ -1565,7 +1626,7 @@ function Get-HPPrivatePublicKeyCoalesce {
     $exponent = 0
     $mi_result = 0
 
-    if((Test-OSBitness) -eq 32){
+    if((Test-HPOSBitness) -eq 32){
       $result = [X509Utilities]::get_public_key_from_pem32($efile,[ref]$modulus, [ref]$modulus_size, [ref]$exponent)
     }
     else {
@@ -1868,7 +1929,14 @@ function Get-HPPrivateItemUrl (
 .NOTES
   - This is a private command for internal use only
 #>
-function biosErrorCodesToString ($code) {
+function biosHPErrorCodesToString  {
+  [CmdletBinding()]
+  [Alias('biosErrorCodesToString')]
+  param (
+    [Parameter(Mandatory = $true,Position = 0)]
+    [int]$code
+  )
+  
   switch ($code) {
     0 { return "OK" }
     1 { return "Not Supported" }
@@ -1901,8 +1969,9 @@ function biosErrorCodesToString ($code) {
 .NOTES
   - This is a private command for internal use only
 #>
-function getBiosSettingInterface {
+function getHPBiosSettingInterface {
   [CmdletBinding(DefaultParameterSetName = 'nNwSession')]
+  [Alias('getBiosSettingInterface')]
   param(
     [Parameter(ParameterSetName = 'NewSession',Position = 0,Mandatory = $false)]
     [string]$Target = ".",
@@ -1910,7 +1979,7 @@ function getBiosSettingInterface {
     [CimSession]$CimSession
   )
   $defaultAction = $ErrorActionPreference
-  $ns = getNamespace
+  $ns = getHPNamespace
   $ErrorActionPreference = "Stop";
 
   try {
@@ -1954,8 +2023,9 @@ function getBiosSettingInterface {
 .NOTES
   - This is a private command for internal use only
 #>
-function getNamespace {
+function getHPNamespace {
   [CmdletBinding()]
+  [Alias('getNamespace')]
   param()
   [string]$c = [environment]::GetEnvironmentVariable("HP_BIOS_NAMESPACE","User")
   if (-not $c) {
@@ -2378,7 +2448,7 @@ function Invoke-HPPrivateSetSetting {
   $localCounter = 0
 
   $s = $null
-  if (-not $CimSession) { $CimSession = newCimSession -Target $ComputerName }
+  if (-not $CimSession) { $CimSession = newHPCimSession -Target $ComputerName }
 
   try {
     $s = Get-HPBIOSSetting -Name $Setting.Name -CimSession $CimSession -ErrorAction stop
@@ -2492,7 +2562,7 @@ function Set-HPPrivateBIOSSetting {
   $localCounterForSet = 0
 
   if ($CimSession -eq $null) {
-    $CimSession = newCimSession -Target $ComputerName
+    $CimSession = newHPCimSession -Target $ComputerName
   }
 
   $Name = $Setting.Name
@@ -2521,7 +2591,7 @@ function Set-HPPrivateBIOSSetting {
     $type = $obj.CimClass.CimClassName
   }
 
-  $c = getBiosSettingInterface -CimSession $CimSession
+  $c = getHPBiosSettingInterface -CimSession $CimSession
   switch ($type) {
     { $_ -eq 'HPBIOS_BIOSPassword' } {
       Write-Verbose "Setting Password setting '$Name' on '$ComputerName'"
@@ -2560,7 +2630,7 @@ function Set-HPPrivateBIOSSetting {
       Write-Host -ForegroundColor Magenta "Some variable names or values may be case sensitive."
     }
 
-    $Err = "$(biosErrorCodesToString($r.Return))"
+    $Err = "$(biosHPErrorCodesToString($r.Return))"
     if ($ErrorHandling -eq 1) {
       Write-Host -ForegroundColor Red "Failed to set $($setting.Name) to $($setting.Value): $Err"
       $actualSetFailCounter.Value = $localCounterForSet
@@ -2641,8 +2711,9 @@ function Get-HPPrivateIsSureAdminSupported {
 .NOTES
   - This is a private command for internal use only
 #>
-function newCimSession () {
+function newHPCimSession () {
   [CmdletBinding()]
+  [Alias('newCimSession')]
   param
   (
     [Parameter(Position = 0)] $SkipTestConnection = $true,
@@ -2693,7 +2764,7 @@ function Set-HPPrivateBIOSSettingsList {
   $failedToSet = 0
 
   if (-not $CimSession) {
-    $CimSession = newCimSession -Target $ComputerName
+    $CimSession = newHPCimSession -Target $ComputerName
   }
 
   $counter = @(0,0,0,0,0)
@@ -2763,6 +2834,55 @@ function Set-HPPrivateBIOSSettingsListPayload {
   Set-HPPrivateBIOSSettingsList @params -Verbose:$VerbosePreference
 }
 
+# Internal function to check if authentication is required for BIOS update without the need to check the "BIOS Update Credential Policy" BIOS setting 
+# True means authentication is required
+# False means authentication is not required
+function Test-HPAuthRequired {
+  [CmdletBinding()]
+  param(
+    [ValidateSet("Upgrade","Downgrade")]
+    [string]$BiosUpdateType = "Upgrade"
+  )
 
+  if (-not (Get-HPBIOSSetupPasswordIsSet) -and -not (Get-HPPrivateIsSureAdminEnabled)) {
+    Write-Verbose "Both BIOS setup password and Sure Admin are not set. No authentication is required."
+    return $false
+  }
+
+  if($BiosUpdateType -eq "Downgrade") {
+    try {
+      Write-Verbose "Checking if authentication is required for downgrade"
+      $mi_result = 0
+      switch (Test-HPOSBitness) {
+        32 { $result = [DfmNativeBios]::auth_required_for_downgrade32([ref]$mi_result) }
+        64 { $result = [DfmNativeBios]::auth_required_for_downgrade64([ref]$mi_result) }
+      }
+      Test-HPPrivateCustomResult -result 0x80000711 -Category 0x02 -mi_result $mi_result
+    }
+    catch [System.Management.Automation.MethodInvocationException]
+    {
+      throw "Could not find support library: $($_.Exception.Message)"
+    }
+  }
+  else { # Upgrade
+    try {
+      Write-Verbose "Checking if authentication is required for upgrade"
+      $mi_result = 0
+      switch (Test-HPOSBitness) {
+        32 { $result = [DfmNativeBios]::auth_required_for_upgrade32([ref]$mi_result) }
+        64 { $result = [DfmNativeBios]::auth_required_for_upgrade64([ref]$mi_result) }
+      }
+      Test-HPPrivateCustomResult -result 0x80000711 -Category 0x02 -mi_result $mi_result
+    }
+    catch [System.Management.Automation.MethodInvocationException]
+    {
+      throw "Could not find support library: $($_.Exception.Message)"
+    }
+  }
+
+  # the private WMI call indicates that 0 means prompt/auth required and 1 means no prompt/no auth required
+  # for easier comprehension, we will return the opposite interpretation
+  return -not [boolean]$result
+}
 
 # SIG # Begin signature block

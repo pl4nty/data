@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 <#
@@ -53,7 +53,7 @@ function Get-HPSureViewState
   $mi_result = 0
 
   $data = New-Object -TypeName sureview_state_t
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $result = [DfmNativeSureView]::get_sureview_state32([ref]$data,[ref]$mi_result) }
     64 { $result = [DfmNativeSureView]::get_sureview_state64([ref]$data,[ref]$mi_result) }
   }
@@ -102,7 +102,7 @@ function Test-HPSureViewIsSupported
   param()
   $mi_result = 0
   $data = New-Object -TypeName sureview_state_t
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $result = [DfmNativeSureView]::get_sureview_state32([ref]$data,[ref]$mi_result) }
     64 { $result = [DfmNativeSureView]::get_sureview_state64([ref]$data,[ref]$mi_result) }
   }
@@ -196,7 +196,7 @@ function Set-HPSureViewState
   }
 
   $mi_result = 0
-  switch (Test-OSBitness) {
+  switch (Test-HPOSBitness) {
     32 { $result = [DfmNativeSureView]::set_sureview_state32($wanted,$level,[ref]$mi_result) }
     64 { $result = [DfmNativeSureView]::set_sureview_state64($wanted,$level,[ref]$mi_result) }
   }

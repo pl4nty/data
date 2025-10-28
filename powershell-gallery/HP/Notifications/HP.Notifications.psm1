@@ -28,7 +28,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.2\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
 }
 
 <#
@@ -654,7 +654,7 @@ function Invoke-HPPrivateNotificationAsUser {
 
 <#
 .SYNOPSIS
-  Register-NotificationApplication
+  Register-HPNotificationApplication
 
 .DESCRIPTION
   This function registers toast notification applications
@@ -666,10 +666,11 @@ function Invoke-HPPrivateNotificationAsUser {
   Specifies the application name to display on the toast notification
 
 .EXAMPLE
-  Register-NotificationApplication -Id 'hp.cmsl.12345' -DisplayName 'HP CMSL'
+  Register-HPNotificationApplication -Id 'hp.cmsl.12345' -DisplayName 'HP CMSL'
 #>
-function Register-NotificationApplication {
+function Register-HPNotificationApplication {
   [CmdletBinding()]
+  [Alias('Register-NotificationApplication')]
   param(
       [Parameter(Mandatory=$true)]
       [string]$Id,
@@ -680,7 +681,7 @@ function Register-NotificationApplication {
       [Parameter(Mandatory=$false)]
       [System.IO.FileInfo]$IconPath
   )
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -710,7 +711,7 @@ function Register-NotificationApplication {
 
 <#
 .SYNOPSIS
-  Unregister-NotificationApplication
+  UnRegister-HPNotificationApplication
 
 .DESCRIPTION
   This function unregisters toast notification applications. Do not unregister the application if you want to snooze the notification.
@@ -719,15 +720,16 @@ function Register-NotificationApplication {
   Specifies the application ID to unregister 
 
 .EXAMPLE
-  Unregister-NotificationApplication -Id 'hp.cmsl.12345'
+  UnRegister-HPNotificationApplication -Id 'hp.cmsl.12345'
 #>
-function Unregister-NotificationApplication {
+function Unregister-HPNotificationApplication {
   [CmdletBinding()]
+  [Alias('Unregister-NotificationApplication')]
   param(
       [Parameter(Mandatory=$true)]
       $Id
   )
-  if (-not (Test-IsElevatedAdmin)) {
+  if (-not (Test-IsHPElevatedAdmin)) {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
@@ -778,7 +780,7 @@ function Unregister-NotificationApplication {
   Invoke-HPRebootNotification -Title "My title" -Message "My message"
 #>
 function Invoke-HPRebootNotification {
-  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-RebootNotification")]
+  [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Invoke-HPRebootNotification")]
   [Alias("Invoke-RebootNotification")] # we can deprecate Invoke-RebootNotification later 
   param(
     [Parameter(Position = 0,Mandatory = $False)]
@@ -807,7 +809,7 @@ function Invoke-HPRebootNotification {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
 
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-NotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
 
   # When using system privileges, the block executes in a different context, 
   # so the relative path for LogoImage must be converted to an absolute path.
@@ -883,7 +885,7 @@ function Invoke-HPRebootNotification {
 
   # add a delay before unregistering the app because if you unregister the app right away, toast notification won't pop up 
   Start-Sleep -Seconds 5
-  Unregister-NotificationApplication -Id $Id
+  UnRegister-HPNotificationApplication -Id $Id
 
   return
 }
@@ -1007,7 +1009,7 @@ function Invoke-HPNotificationFromXML {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
 
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-NotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
 
   $privs = whoami /priv /fo csv | ConvertFrom-Csv | Where-Object { $_. 'Privilege Name' -eq 'SeDelegateSessionUserImpersonatePrivilege' }
   if ($privs.State -eq "Disabled") {
@@ -1167,7 +1169,7 @@ function Invoke-HPNotification {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
   
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-NotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
 
   # When using system privileges, the block executes in a different context, 
   # so the relative path for LogoImage must be converted to an absolute path.
@@ -1264,7 +1266,7 @@ function Invoke-HPNotification {
 
   # add a delay before unregistering the app because if you unregister the app right away, toast notification won't pop up 
   Start-Sleep -Seconds 5
-  Unregister-NotificationApplication -Id $Id
+  UnRegister-HPNotificationApplication -Id $Id
 
   return
 }

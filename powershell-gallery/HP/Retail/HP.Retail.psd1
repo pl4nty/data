@@ -14,8 +14,8 @@
 @{
 
   RootModule = 'HP.Retail.psm1'
-  #FullModuleVersion = '1.8.2.957'
-  ModuleVersion = '1.8.2'
+  #FullModuleVersion = '1.8.5.1220'
+  ModuleVersion = '1.8.5'
   GUID = '735c53e1-1a4c-4512-88a6-77137a8ba45a'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
