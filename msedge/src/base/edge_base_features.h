@@ -45,8 +45,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsXboxSku);
 
 BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsServerSku);
 
-BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsDesktopSku);
-
 // If enabled, it forces the collection of histogram inventory data.
 BASE_EXPORT BASE_DECLARE_FEATURE(kForceEnableHistogramInventoryDataCollection);
 

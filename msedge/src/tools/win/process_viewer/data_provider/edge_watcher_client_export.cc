@@ -43,8 +43,15 @@ __declspec(dllexport) bool GetEdgeWatcherMonitoredTasks(
   if (!edge_watcher_client) {
     return false;
   }
-  *snapshot = edge_watcher_client->GetLastSnapshot(process_id);
-  return true;
+
+  EdgeTaskExportSnapshot* last_snapshot =
+      edge_watcher_client->GetLastSnapshot(process_id);
+  if (last_snapshot) {
+    *snapshot = last_snapshot;
+    return true;
+  }
+
+  return false;
 }
 
 }  // extern "C"

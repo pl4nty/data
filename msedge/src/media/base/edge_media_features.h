@@ -155,22 +155,6 @@ COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kMediaFoundationCapabilities);
 #endif  // BUILDFLAG(ENABLE_MEDIA_FOUNDATION_CDM)
 
-#if BUILDFLAG(EDGE_ENABLE_MEDIA_FOUNDATION_OVERRIDE)
-// Permission to override the use of Media Foundation engine per domain action.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kMediaFoundationOverride);
-
-// Allows disabling the Media Foundation Domain Override checks which are
-// executed in Media Factory. These checks require outbound mojo calls to the
-// browser process which must be handled by browser main, however some tests
-// will block on browser main if they are attempting to do a prerender. This
-// results in a deadlock which will timeout the tests. This flag is introduced
-// to allow the set of impacted tests to explicitly disable these checks so the
-// tests may execute as intended.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kMediaFoundationDomainOverrideDisabledForTest);
-#endif  // BUILDFLAG(EDGE_ENABLE_MEDIA_FOUNDATION_OVERRIDE)
-
 #if BUILDFLAG(IS_WIN)
 // If enabled, fallback to use `Media Foundation For Clear` for the playback of
 // HEVC/AV1 encoded video.
