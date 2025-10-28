@@ -2,5 +2,8 @@
     "ECS": {
         "CacheExpiryInMin": 720,
         "DisableConfigLog": true
+    },
+    "Segmentation": {
+        "TargetMSITFaster": "false"
     }
 }

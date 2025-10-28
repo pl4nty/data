@@ -15,6 +15,11 @@
     "ECS": {
         "ConfigLogTarget": "default"
     },
+    "GroupCopilotBot": {
+        "ProjectAgent": {
+            "EnableSkipSendActivityInSignInInvoke": true
+        }
+    },
     "ImmersiveEvents": {
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
         "clientMinimumVersion": "6.2512.0",
@@ -518,7 +523,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
