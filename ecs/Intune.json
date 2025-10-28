@@ -23,6 +23,7 @@
     "CLI_IntuneEpmAgent": {
         "FlightingV2": {
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "b97631b1-395c-41d5-8f3a-c3bd43f6d3b3": true,
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
         }
     },
@@ -348,7 +349,8 @@
         "FlightingV2": {
             "PRSv3-Phase1": true,
             "PRSv3-Phase2": true,
-            "PRSv3-Phase3": true
+            "PRSv3-Phase3": true,
+            "PRSv3-Phase4": true
         }
     },
     "SVC_RACerts": {

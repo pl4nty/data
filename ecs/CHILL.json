@@ -2945,6 +2945,178 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_SharePoint.dd025788-0c5d-4dde-812e-2b30af0d3bf9": {
+            "CampaignId": "dd025788-0c5d-4dde-812e-2b30af0d3bf9",
+            "EndTimeUtc": "2028-05-01T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2024-08-15T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "PublishFeatureUsage",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very unlikely",
+                                    "questionLabel": "How likely are you to recommend creating and publishing SharePoint pages to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "I have what I need to create and manage content successfully",
+                                        "These features are fast and responsive",
+                                        "They work reliably",
+                                        "It's easy to get started without much learning",
+                                        "I can easily find the content I'm looking for",
+                                        "I can create the content I envisioned",
+                                        "Publishing content is straightforward"
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "Please rate the following statements about using SharePoint pages or news posts.",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Strongly disagree",
+                                        "Disagree",
+                                        "Neither agree nor disagree",
+                                        "Agree",
+                                        "Strongly Agree"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "Selecting and using templates",
+                                        "Adding and editing images",
+                                        "Adding and editing text",
+                                        "Designing the page layout",
+                                        "Publishing and posting content"
+                                    ],
+                                    "id": "likert2",
+                                    "questionLabel": "How satisfied are you with the following actions when working with pages and news posts in SharePoint? ",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Strongly dissatisfied",
+                                        "Dissatisfied",
+                                        "Neither satisfied nor dissatisfied",
+                                        "Satisfied",
+                                        "Very satisfied",
+                                        "N/A"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment3",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/dd025788-0c5d-4dde-812e-2b30af0d3bf9/013e05da-788b-4ae8-891e-52872bdb2b2a/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
         }
     },
     "ChillVivaGlint": {
