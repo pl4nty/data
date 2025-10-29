@@ -261,7 +261,6 @@
         "EnableApplySsoForAADJ": true,
         "EnableApplySsoForHAADJ": true,
         "EnableApplyStatusForUX": true,
-        "EnableArm64ImageDefinition": true,
         "EnableArmClientImprovement": true,
         "EnableAssgApexGroupEvent": true,
         "EnableAssgFraudAbuseHandler": true,
@@ -338,6 +337,7 @@
         "EnableCache": true,
         "EnableCacheForReserveCPCs": true,
         "EnableCacheForSingleCPCWhenCallDDS": true,
+        "EnableCanaryActionPaneReactviewMigrationUX": "false",
         "EnableCanaryNextGen": true,
         "EnableCapacityCompositeIndexes": true,
         "EnableCapacityManagementRegionClosedToNewCustomersException": true,
@@ -434,6 +434,7 @@
         "EnableCpcMonitoringDeviceReport": true,
         "EnableCpcMonitoringTenantReport": true,
         "EnableCpcSessionUseStatusDetection": true,
+        "EnableCreateANCBladeReactviewMigrationUX": "false",
         "EnableCreateHealthResourceEventSubscription": true,
         "EnableCreateNicWithPublicIp": true,
         "EnableCreatePublicIPwithVirtualTag": true,
@@ -490,6 +491,7 @@
         "EnableDppProvisionForEnterprise": true,
         "EnableDppProvisionRandomDelay": true,
         "EnableDynamicRetrieveCountOfRemoteAppList": true,
+        "EnableEditANCBladeReactviewMigrationUX": "false",
         "EnableEditFLSForUX": true,
         "EnableEditFLSPolicy": true,
         "EnableElevateToUserAccessAdminIncludeOnlyGlobalAdminRole": true,
@@ -704,6 +706,8 @@
         "EnableNewStorageBlobForCitrixAgent": true,
         "EnableNextGenTimer": true,
         "EnableNextPickUpTime": true,
+        "EnableNonEnglishAssignmentName": true,
+        "EnableNonEnglishAssignmentNameForUX": true,
         "EnableNotDeleteBeforeRetryDeployExtension": true,
         "EnableNotificatePartnerStatusChange": true,
         "EnableNotificationSetting": true,
@@ -931,7 +935,6 @@
         "EnableSubscriptionHelloJob": true,
         "EnableSubscriptionPartition": true,
         "EnableSubscriptionPcCodeCheck": true,
-        "EnableSupportArm64Image": true,
         "EnableSyncAllForReady": true,
         "EnableSyncInterestedGroup": true,
         "EnableSyncInterestedUserFilter": true,
@@ -1229,7 +1232,6 @@
         "MovePostProvisionAheadofIntuneForEnterpriseMmdEnabled": true,
         "MovePostProvisionAheadofIntuneForVSB": true,
         "MoveSuspendedWorkItemToEndOfQueue": true,
-        "MultiLaneV2ExcludePartner": true,
         "NewBatchUpsertAssignments": true,
         "NewConnectivityHistoryAPI": true,
         "NewConnectivityResultAPI": true,
@@ -1486,6 +1488,7 @@
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,
-        "EnableFlightGroupTest": true
+        "EnableFlightGroupTest": true,
+        "EnableWCXTestSentinel": true
     }
 }
