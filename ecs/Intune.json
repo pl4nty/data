@@ -330,7 +330,7 @@
             "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
             "RequireDeviceAADJ": true,
-            "UseFireAndForgetFlight": false,
+            "UseFireAndForgetFlight": true,
             "UseMamConditionalAccessFirstPartyApplication": true,
             "UseMamConditionalAccessFirstPartyApplicationDisableFallback": true
         }
