@@ -4,6 +4,7 @@
         "DisableConfigLog": true
     },
     "Segmentation": {
+        "IsMsitFaster": "false",
         "TargetMSITFaster": "false"
     }
 }
