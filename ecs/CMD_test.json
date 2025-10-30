@@ -26,6 +26,7 @@
             "SpeculateForFLS": true
         },
         "AssignAudit": true,
+        "AuditLogsToGov": true,
         "BCDRReportEnableFilter": true,
         "BackFillGroupLicenseAssignmentId": true,
         "BlobCNameEnabled": true,
@@ -379,8 +380,10 @@
         "EnableCloudPCAdminHeadlineAPI": true,
         "EnableCloudPCAdminHeadlineUX": true,
         "EnableCloudPCBulkPowerOnOffAction": true,
+        "EnableCloudPCConnectivityOpsAgentUX": true,
         "EnableCloudPCDeviceFrontlineReporting": true,
         "EnableCloudPCDeviceLib": true,
+        "EnableCloudPCLicenseOptimizationAgent": true,
         "EnableCloudPCNugetClient": true,
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReactViewMigration": "true",

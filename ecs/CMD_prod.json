@@ -13,6 +13,7 @@
             "LockOnDisconnect": true
         },
         "AssignAudit": false,
+        "AuditLogsToGov": true,
         "BackFillGroupLicenseAssignmentId": true,
         "BlobCNameEnabled": true,
         "BlockGccCommercialTenant": true,
