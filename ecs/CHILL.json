@@ -2528,6 +2528,79 @@
             }
         }
     },
+    "ChillPowerApps": {
+        "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
+            "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
+            "EndTimeUtc": "2026-02-28T23:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-10-27T23:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "dp_readyToPrompt",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very satisfied",
+                                        "Satisfied",
+                                        "Dissatisfied",
+                                        "Very dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Overall, how satisfied are you with Demand Planning?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/656d4a8c-cba2-40d9-a12a-33da0735b859/97d132ab-9fc7-41b0-a857-7f7bfe002852/Web-PowerApps/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillPowerAutomate": {
         "Floodgate_Campaign_PowerAutomate.38ca0ab2-5f85-445d-8f40-fbc15b622ba5": {
             "CampaignId": "38ca0ab2-5f85-445d-8f40-fbc15b622ba5",
