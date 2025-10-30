@@ -334,6 +334,13 @@
     "ECS": {
         "ConfigLogTarget": "default"
     },
+    "EventToConfigIdsMapping": {
+        "Loki": {
+            "livepeoplecard_events": "P-R-1047016-2-23",
+            "livepeoplecard_qos": "P-R-1047016-2-23",
+            "livepeoplecards_flights": "P-R-1047016-2-23"
+        }
+    },
     "GroupsManagement": {
         "MIPLabelsEnabled": false,
         "MIPLabelsFromCanaryEnabled": false,
@@ -1192,7 +1199,89 @@
         "MDSOutputExceptionMessage": false,
         "MRUFormsQueryLimit": 8,
         "MeInsightFilterAndRankerSettings": "UpdatePhoneNumberNudge,NamePronunciation,UploadPhotoNudge,SuggestedWorkingHoursNudge,LinkedInProfileSuggestion,LanguageProficiency",
-        "MePeoplePrompts": "{\"Prompts\":[{\"SourceTypeId\":\"MePeoplePromptWhoWorksOn\",\"PillText\":\"Who works on \",\"DisplayText\":\"Who works on \",\"CommandText\":\"Who works on \",\"QueryAnnotations\":[]},{\"SourceTypeId\":\"MePeoplePromptWhoKnowsAbout\",\"PillText\":\"Who in the company know about \",\"DisplayText\":\"Who in the company know about \",\"CommandText\":\"Who in the company know about \",\"QueryAnnotations\":[]},{\"SourceTypeId\":\"MePeoplePromptTellMeAbout\",\"PillText\":\"Tell me about /\",\"DisplayText\":\"Tell me about /\",\"CommandText\":\"Tell me about /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptWhatIsTheLatestFrom\",\"PillText\":\"What is the latest from /\",\"DisplayText\":\"What is the latest from /\",\"CommandText\":\"What is the latest from /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptWhatAreWorkAreasOf\",\"PillText\":\"What are the work areas of /\",\"DisplayText\":\"What are the work areas of /\",\"CommandText\":\"What are the work areas of /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptPrepareForNextMeetingWith\",\"PillText\":\"Prepare for my next meeting with /\",\"DisplayText\":\"Prepare for my next meeting with /\",\"CommandText\":\"Prepare for my next meeting with /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptSuggestWaysToBreakIceWith\",\"PillText\":\"Suggest ways to break the ice with /\",\"DisplayText\":\"Suggest ways to break the ice with /\",\"CommandText\":\"Suggest ways to break the ice with /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptHowToPronounceTheName\",\"PillText\":\"How to pronounce the name /\",\"DisplayText\":\"How to pronounce the name /\",\"CommandText\":\"How to pronounce the name /\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptPeopleTeamOverview\",\"PillText\":\"Provide an overview of / 's Team structure and roles?\",\"DisplayText\":\"Provide an overview of / 's Team structure and roles?\",\"CommandText\":\"Provide an overview of / 's Team structure and roles?\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptMyTeamPerformance\",\"PillText\":\"How is my team performing against our goals and KPIs?\",\"DisplayText\":\"How is my team performing against our goals and KPIs?\",\"CommandText\":\"How is my team performing against our goals and KPIs?\",\"QueryAnnotations\":[]},{\"SourceTypeId\":\"MePeoplePromptPeopleKeyGoalsObjectives\",\"PillText\":\"What are the key goals and objectives for / 's role?\",\"DisplayText\":\"What are the key goals and objectives for / 's role?\",\"CommandText\":\"What are the key goals and objectives for / 's role?\",\"QueryAnnotations\":[\"PEOPLE\"]},{\"SourceTypeId\":\"MePeoplePromptMyPerformanceSummary\",\"PillText\":\"Can you provide a summary of my recent performance and achievements?\",\"DisplayText\":\"Can you provide a summary of my recent performance and achievements?\",\"CommandText\":\"Can you provide a summary of my recent performance and achievements?\",\"QueryAnnotations\":[]},{\"SourceTypeId\":\"MePeoplePromptDepartmentInfo\",\"PillText\":\"Who can provide information about the / department?\",\"DisplayText\":\"Who can provide information about the / department?\",\"CommandText\":\"Who can provide information about the / department?\",\"QueryAnnotations\":[]},{\"SourceTypeId\":\"MePeoplePromptContactForIssuesWith\",\"PillText\":\"Who should I contact for / issues?\",\"DisplayText\":\"Who should I contact for / issues?\",\"CommandText\":\"Who should I contact for / issues?\",\"QueryAnnotations\":[\"FILE\"]}]}",
+        "MePeoplePrompts": {
+            "Prompts": [
+                {
+                    "CommandText": "Who reports to /",
+                    "DisplayText": "Who reports to <entity type=\"placeholder\">person</entity>",
+                    "PillText": "Who reports to",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptWhoReportsTo"
+                },
+                {
+                    "CommandText": "Show top collaborators key skills and how I can leverage them.",
+                    "DisplayText": "Show top collaborators key skills and how I can leverage them.",
+                    "PillText": "Show top collaborators key skills and how I can leverage them.",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptCollaboratorsWithSkills"
+                },
+                {
+                    "CommandText": "How many people are in the organization under /",
+                    "DisplayText": "How many people are in <entity type=\"placeholder\">person</entity>'s organization",
+                    "PillText": "People count in org",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptPeopleCountInOrg"
+                },
+                {
+                    "CommandText": "What are <entity type='placeholder'>[person's]</entity> skills and how do they complement mine?",
+                    "DisplayText": "What are <entity type='placeholder'>[person's]</entity> skills and how do they complement mine?",
+                    "PillText": "What are their skills and how do they complement mine",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptComplementarySkills"
+                },
+                {
+                    "CommandText": "How many people are reporting to /",
+                    "DisplayText": "How many reports does <entity type=\"placeholder\">person</entity> have",
+                    "PillText": "How many people are reporting to",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptHowManyReports"
+                },
+                {
+                    "CommandText": "Show me follow-up tasks with /",
+                    "DisplayText": "Show me follow-up tasks with <entity type=\"placeholder\">person</entity>",
+                    "PillText": "Show me follow-up tasks",
+                    "QueryAnnotations": [],
+                    "SourceTypeId": "MePeoplePromptShowFollowUpTasks"
+                },
+                {
+                    "CommandText": "What is the latest from /",
+                    "DisplayText": "What is the latest from <entity type=\"placeholder\">person</entity>",
+                    "PillText": "What is the latest from",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptWhatIsTheLatestFrom"
+                },
+                {
+                    "CommandText": "Help me prepare for my meeting with /",
+                    "DisplayText": "Help me prepare for my meeting with <entity type=\"placeholder\">person</entity>",
+                    "PillText": "Help me prepare for my meeting with",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptPrepareForNextMeeting"
+                },
+                {
+                    "CommandText": "Which of my strengths should I showcase more clearly?",
+                    "DisplayText": "Which of my strengths should I showcase more clearly?",
+                    "PillText": "Which of my strengths should I showcase more clearly?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptWhatSkillsToShowcase"
+                }
+            ]
+        },
         "MinCompletionPortThreadCountPerCore": 4,
         "MinWorkerThreadCountPerCore": 10,
         "MsaAadTenantId": "9188040d-6c67-4c5b-b112-36a304b66dad",
