@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2176863,
+    "size": 2173862,
     "file_count": 183
   },
   {
@@ -16,12 +16,17 @@
   },
   {
     "name": "android_deps",
-    "size": 10731460,
+    "size": 10730749,
     "file_count": 167
   },
   {
     "name": "android_prebuilts",
     "size": 506,
+    "file_count": 2
+  },
+  {
+    "name": "android_sdk",
+    "size": 3156,
     "file_count": 2
   },
   {
@@ -36,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14688410,
+    "size": 14688454,
     "file_count": 833
   },
   {
@@ -71,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32383371,
-    "file_count": 3965
+    "size": 32379345,
+    "file_count": 3964
   },
   {
     "name": "boringssl",
@@ -156,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7186789,
+    "size": 7187817,
     "file_count": 29
   },
   {
@@ -336,8 +341,8 @@
   },
   {
     "name": "jni_zero",
-    "size": 3205,
-    "file_count": 2
+    "size": 27826,
+    "file_count": 3
   },
   {
     "name": "jsoncpp",
@@ -566,7 +571,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3915717,
+    "size": 3916513,
     "file_count": 580
   },
   {
@@ -611,7 +616,7 @@
   },
   {
     "name": "quic_trace",
-    "size": 7997,
+    "size": 9477,
     "file_count": 4
   },
   {
@@ -651,7 +656,7 @@
   },
   {
     "name": "skia",
-    "size": 3536548,
+    "size": 3538387,
     "file_count": 1184
   },
   {
@@ -736,7 +741,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6599310,
+    "size": 6599847,
     "file_count": 176
   },
   {
