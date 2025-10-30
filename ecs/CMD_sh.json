@@ -19,6 +19,7 @@
             "LockOnDisconnect": true
         },
         "AssignAudit": false,
+        "AuditLogsToGov": true,
         "BCDRReportEnableFilter": true,
         "BackFillGroupLicenseAssignmentId": true,
         "BlobCNameEnabled": true,

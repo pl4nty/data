@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251028.1.0",
-        "CalendarCompanionMsitVersion": "1.20251023.1.0",
+        "CalendarCompanionDFVersion": "1.20251029.1.0",
+        "CalendarCompanionMsitVersion": "1.20251026.1.0",
         "CalendarCompanionProdVersion": "1.20251018.6.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1289,8 +1289,17 @@
             "OwaMail": 500
         },
         "RouteEndpointThrottlingLimits_ByIp": 100,
+        "RouteEndpointThrottlingLimits_ByIp_ByPath": {
+            "Notifications": 100
+        },
         "RouteEndpointThrottlingLimits_ByTenantsPerIp": 20,
+        "RouteEndpointThrottlingLimits_ByTenantsPerIp_ByPath": {
+            "Notifications": 20
+        },
         "RouteEndpointThrottlingLimits_ByVm": 5000,
+        "RouteEndpointThrottlingLimits_ByVm_ByPath": {
+            "Notifications": 5000
+        },
         "SkypeContactsUrl": "https://contacts.skype.com:8443/contacts/v3/scdlookup",
         "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting",
         "StreamPreviewTokenAudience": "https://*.microsoftstream.com",
@@ -1628,7 +1637,7 @@
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250919.3.0",
-        "OrgExplorerVersion": "1.20251007.7.0",
+        "OrgExplorerVersion": "1.20251024.3.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
@@ -1638,8 +1647,8 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251028.1.0",
-        "PeopleInTaskbarMsitVersion": "1.20251018.6.0",
+        "PeopleInTaskbarDFVersion": "1.20251029.1.0",
+        "PeopleInTaskbarMsitVersion": "1.20251026.2.0",
         "PeopleInTaskbarProdVersion": "1.20251018.6.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {

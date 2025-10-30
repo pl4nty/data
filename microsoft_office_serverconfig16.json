@@ -160,13 +160,13 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/v2.0/hrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getfederationprovider</o:url>
     </o:service>
     <o:service o:name="GetIdentityProvider">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd/getidp</o:url>
+      <o:url>https://hrd.svc.cloud.microsoft/odc/emailhrd/getidp</o:url>
     </o:service>
     <o:service o:name="ODCServicesCatalog">
       <o:url>https://odc.officeapps.live.com/odc/servicemanager/catalog</o:url>
@@ -1689,6 +1689,9 @@
       <o:url>https://onboardingaggregator.family.microsoft.com/api/v1/shareable-link</o:url>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="onboardingaggregator.family.microsoft.com"/>
     </o:service>
+    <o:service o:name="RetailFederationServiceMSAv2Url">
+      <o:url>https://res.getmicrosoftkey.com/api/redemptionevents</o:url>
+    </o:service>
     <o:service o:name="UniversalPrintIPPResource">
       <o:url>https://print.print.microsoft.com</o:url>
     </o:service>
@@ -2552,6 +2555,8 @@
     <o:token o:name="OutlookDisabledFeaturesRing">1</o:token>
     <o:token o:name="NotebooksModuleEnabled">true</o:token>
     <o:token o:name="FailingUALFileRetentionWindow">30</o:token>
+    <o:token o:name="OutlookAccountUseOrgId">0</o:token>
+    <o:token o:name="OutlookNetworkDiagnosticsConfigBit">0b00001</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
