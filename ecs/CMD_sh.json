@@ -1029,6 +1029,7 @@
         "Mobius_AllowAVDEmpty": true,
         "Mobius_AllowConnectFLDWhenRequestFlexAPIFailed": true,
         "Mobius_AlwaysAllowConnectEnabledForFLD": true,
+        "Mobius_CloudApp_Reset": true,
         "Mobius_CloudApps": true,
         "Mobius_ComplexFilter": true,
         "Mobius_DisplayResourceByGroup": true,

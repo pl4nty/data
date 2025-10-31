@@ -1070,41 +1070,41 @@
             "Prompts": {
                 "PeopleHighlightsCollabNetComment": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
-                        "pillText": "What\u2019s changed?",
+                        "commandText": "Summarize comments in {file} from {people}. Use a table with columns for context, comment verbatim, and date/time. Group into categories and themes when and where possible.",
+                        "displayText": "Summarize comments in {file} from {people}. Use a table with columns for context, comment verbatim, and date/time. Group into categories and themes when and where possible.",
+                        "pillText": "Summarize",
                         "sourceTypeId": "CollabNetComment"
                     }
                 ],
                 "PeopleHighlightsCollabNetEdit": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
+                        "commandText": "Recap all the recent changes to {file} from {people}. Use a table with columns for date/time, slide/section, change type, and description of change. Group the recent changes into categories and themes when and where possible.",
+                        "displayText": "Recap all the recent changes to {file} from {people}. Use a table with columns for date/time, slide/section, change type, and description of change. Group the recent changes into categories and themes when and where possible.",
                         "pillText": "What\u2019s changed?",
                         "sourceTypeId": "CollabNetEdit"
                     }
                 ],
                 "PeopleHighlightsCollabNetMention": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
-                        "pillText": "What\u2019s changed?",
+                        "commandText": "Summarize only comments in {file} where I was mentioned. Use a table with columns for context, comment verbatim, and comment author. If no mentions were found, state that and omit the table. Do not include comments where I am the comment author.",
+                        "displayText": "Summarize only comments in {file} where I was mentioned. Use a table with columns for context, comment verbatim, and comment author. If no mentions were found, state that and omit the table. Do not include comments where I am the comment author.",
+                        "pillText": "Summarize",
                         "sourceTypeId": "CollabNetMention"
                     }
                 ],
                 "PeopleHighlightsCollabNetMultipleEdit": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
+                        "commandText": "Recap all the recent changes to {file} from {people}. Use a table with columns for date/time, slide/section, change type, and description of change. Group the recent changes into categories and themes when and where possible.",
+                        "displayText": "Recap all the recent changes to {file} from {people}. Use a table with columns for date/time, slide/section, change type, and description of change. Group the recent changes into categories and themes when and where possible.",
                         "pillText": "What\u2019s changed?",
                         "sourceTypeId": "CollabNetMultipleEdit"
                     }
                 ],
                 "PeopleHighlightsCollabNetReply": [
                     {
-                        "commandText": "List recent activity in {file}",
-                        "displayText": "List recent activity in {file}",
-                        "pillText": "What\u2019s changed?",
+                        "commandText": "Summarize my comments in {file}. Format as a list, with replies nested under the related comment, and include the author of the reply.",
+                        "displayText": "Summarize my comments in {file}. Format as a list, with replies nested under the related comment, and include the author of the reply.",
+                        "pillText": "Summarize",
                         "sourceTypeId": "CollabNetReply"
                     }
                 ],
@@ -1134,24 +1134,36 @@
                 ],
                 "PeopleHighlightsPendingRSVP": [
                     {
-                        "commandText": "Help me prepare for {event}",
-                        "displayText": "Help me prepare for {event}",
+                        "commandText": "Help me prepare for {event} with {people} in concise and organized language < 400 words. Include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes. Suggest 3-5 agenda topics and questions to ask. Use the most recent shared chats, emails, files and meetings within the last 28 days.",
+                        "displayText": "Help me prepare for {event} with {people} in concise and organized language < 400 words. Include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes. Suggest 3-5 agenda topics and questions to ask. Use the most recent shared chats, emails, files and meetings within the last 28 days.",
                         "pillText": "Help me prepare",
                         "sourceTypeId": "PendingRSVP"
                     }
                 ],
                 "PeopleHighlightsUpcomingMeeting": [
                     {
-                        "commandText": "Help me prepare for {event}",
-                        "displayText": "Help me prepare for {event}",
+                        "commandText": "Help me prepare for {event} with {people} in concise and organized language < 400 words. Include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes. Suggest 3-5 agenda topics and questions to ask. Use the most recent shared chats, emails, files and meetings within the last 28 days.",
+                        "displayText": "Help me prepare for {event} with {people} in concise and organized language < 400 words. Include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes. Suggest 3-5 agenda topics and questions to ask. Use the most recent shared chats, emails, files and meetings within the last 28 days.",
                         "pillText": "Help me prepare",
                         "sourceTypeId": "UpcomingMeetingHelpMePrepare"
                     },
                     {
-                        "commandText": "Who is {people}?",
-                        "displayText": "Who is {people}?",
-                        "pillText": "Who is {people}?",
+                        "commandText": "Summarize most recent communications (emails, chats, files, meetings) and action items with {people} in the last 28 days, organized by topics in <400 words. Within each topic provide a brief summary and list action items, including type of communication and when it happened (e.g., \"Email - Today 9:15 AM\"). If you don't find relevant data in last 28 days clearly mention that with follow up questions.",
+                        "displayText": "Summarize most recent communications (emails, chats, files, meetings) and action items with {people} in the last 28 days, organized by topics in <400 words. Within each topic provide a brief summary and list action items, including type of communication and when it happened (e.g., \"Email - Today 9:15 AM\"). If you don't find relevant data in last 28 days clearly mention that with follow up questions.",
+                        "pillText": "What is the latest",
+                        "sourceTypeId": "UpcomingMeetingWhatIsLatest"
+                    },
+                    {
+                        "commandText": "Provide a summary that is concise and scannable, detailing role, current projects, and recent activity from files, meetings, chats, and emails, and include shared context such as projects, reporting lines, and collaboration for {people}",
+                        "displayText": "Provide a summary that is concise and scannable, detailing role, current projects, and recent activity from files, meetings, chats, and emails, and include shared context such as projects, reporting lines, and collaboration for {people}",
+                        "pillText": "Tell me about",
                         "sourceTypeId": "UpcomingMeetingWhoIs"
+                    },
+                    {
+                        "commandText": "Summarize due action items or tasks between {people} and me from email, chats, files and meetings in the last 14 days only. For each task include: brief description; priority; and source link (e.g. email, chat, file, meeting). ALWAYS only show tasks that include direct interaction between me and {people} - where {people} or I have been @mentioned, addressed or assigned the task by either of us. In tabular format separate tasks {people} owes me from tasks I owe {people} and order by priority. Suggest next actions I should take.",
+                        "displayText": "Summarize due tasks between me and {people}",
+                        "pillText": "Show me follow ups",
+                        "sourceTypeId": "FollowUpsSummary"
                     }
                 ]
             }
@@ -1729,6 +1741,7 @@
         "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20250919.3.0",
         "OrgExplorerVersion": "1.20251024.3.0",
+        "UseDsApiSecurityContextOrgX": true,
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isPersistentQueriesEnabled": true,
