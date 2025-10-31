@@ -25,9 +25,8 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "14.5.0",
+        "version": "14.4.0",
         "versions": [
-            "14.5.0",
             "14.4.0",
             "14.3.0",
             "14.2.0",
@@ -174,22 +173,6 @@
             "cli"
         ],
         "name": "Azconnectedmachine",
-        "publisher": "Microsoft",
-        "publisherType": "Microsoft",
-        "version": "1.0.0",
-        "versions": [
-            "1.0.0"
-        ]
-    },
-    {
-        "displayName": "Az.costmanagement",
-        "displayPublisher": "Microsoft",
-        "displaySummary": "Azure CLI extension. Microsoft Azure Command-Line Tools CostManagementClient Extension",
-        "icon": "data:image/png;base64,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",
-        "keywords": [
-            "cli"
-        ],
-        "name": "Azcostmanagement",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
         "version": "1.0.0",
@@ -409,9 +392,8 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.78.0",
+        "version": "2.77.0",
         "versions": [
-            "2.78.0",
             "2.77.0",
             "2.76.0",
             "2.75.0",
@@ -499,9 +481,8 @@
         "name": "AzureIdentityDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.17.0",
+        "version": "1.16.0",
         "versions": [
-            "1.17.0",
             "1.16.0",
             "1.15.0",
             "1.15.0-beta.1",
@@ -527,9 +508,8 @@
         "name": "AzureIdentityPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.25.1",
+        "version": "1.25.0",
         "versions": [
-            "1.25.1",
             "1.25.0",
             "1.24.0",
             "1.24.0b1",
@@ -584,9 +564,8 @@
         "name": "AzureOpenAIDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.5.0-beta.1",
+        "version": "2.3.0-beta.2",
         "versions": [
-            "2.5.0-beta.1",
             "2.3.0-beta.2",
             "2.3.0-beta.1",
             "2.2.0-beta.5",
@@ -858,7 +837,6 @@
         "versions": [
             "1.14.23.0",
             "1.14.19.0",
-            "1.0.10",
             "1.0.8",
             "1.0.7",
             "1.0.0.0"
@@ -1032,9 +1010,8 @@
         "name": "AzureHPCGPUDriversWindows",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "581.42",
+        "version": "553.24",
         "versions": [
-            "581.42",
             "553.24",
             "535.86.10",
             "529.19",
@@ -1050,11 +1027,8 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.6.1",
+        "version": "2.1.0",
         "versions": [
-            "2.6.1",
-            "2.5.0",
-            "2.3.0",
             "2.1.0",
             "2.0.1",
             "1.100.2",

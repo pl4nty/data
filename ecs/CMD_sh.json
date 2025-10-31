@@ -13,7 +13,6 @@
         "AllowVSBGetWarningGalleryImage": true,
         "Aspen": {
             "ConnectWithPolicyTimeout": true,
-            "EnableLoad3PPlugins": true,
             "EnableMultiCloudPcSelector": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true
