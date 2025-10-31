@@ -5301,6 +5301,12 @@
                 "LookupCache": true
             }
         },
+        "ConversationSliceMetadata": {
+            "TTLConfig": {
+                "Enabled": true,
+                "TTL": 129600
+            }
+        },
         "CosmosDB": {
             "Ale": {
                 "isSpeculativeRetriesEnabled": true
