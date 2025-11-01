@@ -227,6 +227,11 @@
             "AppleVPPv2": true
         }
     },
+    "SVC_CertificateAuthority": {
+        "FlightingV2": {
+            "DisableEntraRegistrationHPAFallback": true
+        }
+    },
     "SVC_Compliance": {
         "FlightingV2": {
             "EGM_Process": true,
