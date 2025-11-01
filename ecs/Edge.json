@@ -4,13 +4,6 @@
         "ExcludeExternalConfigIdsInLog": true
     },
     "Edge": {
-        "AccountLevelSyncReclaim": {
-            "enableFeatures": [
-                "msAccountLevelSyncConsent",
-                "msNurturingAccountLevelSyncConsentSyncOff",
-                "msNurturingAccountLevelSyncConsentSyncOn"
-            ]
-        },
         "AdobePdfViewerHighCoresIteration3": {
             "enableFeatures": [
                 "msPdfSharedLibraryHighCores"
@@ -24,26 +17,9 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
-        "BrowserLaunchCooldown": {
-            "enableFeatures": [
-                "msNurturingFeaturePolicyManager",
-                "msNurturingFeatureBrowserLaunchCooldown"
-            ],
-            "parameters": [
-                {
-                    "name": "browser_launch_cooldown",
-                    "value": "10"
-                }
-            ]
-        },
         "EdgeAutofillUnifiedLogger": {
             "enableFeatures": [
                 "msEdgeAutofillUnifiedLogger"
-            ]
-        },
-        "EdgeLoginDbBlockShutdown": {
-            "enableFeatures": [
-                "msEdgeLoginDbTasksBlockShutdown"
             ]
         },
         "EdgeOnRampShowVersionWhatsNew": {
@@ -84,12 +60,6 @@
                 }
             ]
         },
-        "OnboardNTPToCE": {
-            "enableFeatures": [
-                "msNurturingMetadataTemplate",
-                "msNurturingOnboardNTPToCE"
-            ]
-        },
         "SecureNetworkGA": {
             "enableFeatures": [
                 "msVpnModes",
@@ -115,18 +85,6 @@
                 }
             ]
         },
-        "ShorelineSkypeAutoAuth": {
-            "enableFeatures": [
-                "msEdgeSkypeAuthThrottle"
-            ]
-        },
-        "ShorelineSkypeSATelEvent": {
-            "enableFeatures": [
-                "msEdgeHubAppSkype",
-                "msEdgeSkypeHandleTelProtocol",
-                "msEdgeSkypeHandleProtocolUsingJsEvent"
-            ]
-        },
         "SingleClientHistoryRollback": {
             "disableFeatures": [
                 "msEdgeSyncSingleDeviceHistory"
@@ -135,21 +93,6 @@
         "UnknownLanguageUXFixExperiment": {
             "enableFeatures": [
                 "msUnsupportedLanguageUXFix"
-            ]
-        },
-        "WorkspacesCollaborativeBookmarksBar": {
-            "disableFeatures": [
-                "msWorkspacesCollaborativeBookmarksBar"
-            ]
-        },
-        "toolbarCleanupABn": {
-            "enableFeatures": [
-                "msEdgeAorakiToolbarDeclutter",
-                "msToolbarDeclutterIncludeSplitScreen",
-                "msToolbarDeclutterIncludeCollections",
-                "msToolbarDeclutterIncludeBrowserEssentials",
-                "msToolbarDeclutterT3",
-                "msNurturingToolbarPersonalization"
             ]
         },
         "v1ReLaunchEdgeCopilot": {
