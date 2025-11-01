@@ -211,7 +211,8 @@
     "SVC_AppLifecycle": {
         "FlightingV2": {
             "AESCustomCC": true,
-            "DisableMTGlobalAppSearch": true
+            "DisableMTGlobalAppSearch": true,
+            "EgatEgpaConsolidationBGTask": true
         }
     },
     "SVC_AppleMDM": {
@@ -414,6 +415,7 @@
     "UX_EPM": {
         "FlightingV2": {
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "b97631b1-395c-41d5-8f3a-c3bd43f6d3b3": true,
             "df619680-9e16-4fbc-b271-c85db192b36e": true,
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
         }
