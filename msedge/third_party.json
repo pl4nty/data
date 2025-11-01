@@ -41,8 +41,8 @@
   },
   {
     "name": "angle",
-    "size": 14688454,
-    "file_count": 833
+    "size": 14771697,
+    "file_count": 839
   },
   {
     "name": "anonymous_tokens",
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32379345,
-    "file_count": 3964
+    "size": 32417166,
+    "file_count": 3969
   },
   {
     "name": "boringssl",
@@ -256,7 +256,7 @@
   },
   {
     "name": "glslang",
-    "size": 43042213,
+    "size": 43039541,
     "file_count": 3145
   },
   {
@@ -336,8 +336,8 @@
   },
   {
     "name": "jetstream",
-    "size": 109130885,
-    "file_count": 62
+    "size": 134951227,
+    "file_count": 68
   },
   {
     "name": "jni_zero",
@@ -366,7 +366,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 46315,
+    "size": 46507,
     "file_count": 40
   },
   {
@@ -376,8 +376,8 @@
   },
   {
     "name": "libc++",
-    "size": 12346631,
-    "file_count": 1775
+    "size": 12318404,
+    "file_count": 1764
   },
   {
     "name": "libc++abi",
@@ -456,7 +456,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 218529924,
+    "size": 218535044,
     "file_count": 346
   },
   {
@@ -471,8 +471,8 @@
   },
   {
     "name": "metrics_proto",
-    "size": 288625,
-    "file_count": 43
+    "size": 291613,
+    "file_count": 47
   },
   {
     "name": "microsoft_dlis_tokenizers",
@@ -571,8 +571,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3916513,
-    "file_count": 580
+    "size": 3928507,
+    "file_count": 582
   },
   {
     "name": "perl",
@@ -631,12 +631,12 @@
   },
   {
     "name": "rust",
-    "size": 1286780,
-    "file_count": 143
+    "size": 1294122,
+    "file_count": 146
   },
   {
     "name": "screen-ai",
-    "size": 4829969,
+    "size": 5122283,
     "file_count": 83
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "skia",
-    "size": 3538387,
+    "size": 3538878,
     "file_count": 1184
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 530811,
+    "size": 531063,
     "file_count": 15
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1377568,
+    "size": 1386130,
     "file_count": 23
   },
   {
@@ -736,12 +736,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2459873,
+    "size": 2481372,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6599847,
+    "size": 6621086,
     "file_count": 176
   },
   {

@@ -173,7 +173,8 @@ enum class ImportErrorState {
   kImportInvalidCookieDataBlob = 151,
   kWininetNotFound = 152,
   kImporterNotInitialized = 153,
-  kMaxValue = kImporterNotInitialized
+  kCookieImportBlockedByUserPreference = 154,
+  kMaxValue = kCookieImportBlockedByUserPreference
 };
 
 enum class ImportType {
