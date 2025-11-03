@@ -15,11 +15,11 @@
             "notesPlugin": {
                 "packageName": "ZoomNotesPluginSetup.msi",
                 "packageNameForIT": "ZoomNotesPluginAdminTool.msi",
-                "version": "6.5.0.1168"
+                "version": "6.6.10.1194"
             },
             "outlookPlugin": {
                 "packageName": "ZoomOutlookPluginSetup.msi",
-                "version": "6.6.0.1185"
+                "version": "6.6.10.1192"
             },
             "showManifestConfigure": false,
             "zoom": {
@@ -49,7 +49,7 @@
             },
             "zoomRoomsX64": {
                 "archType": "x64",
-                "displayVersion": "6.6.1 (6661)",
+                "displayVersion": "6.6.5 (6792)",
                 "packageName": "ZoomRooms.exe",
                 "packageNameForIT": "ZoomRoomsInstaller.msi",
                 "version": "latest"
