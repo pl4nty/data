@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251030.2.0",
+        "CalendarCompanionDFVersion": "1.20251101.7.0",
         "CalendarCompanionMsitVersion": "1.20251026.1.0",
         "CalendarCompanionProdVersion": "1.20251018.6.0",
         "CompanionRing": "Prod",
@@ -336,9 +336,9 @@
     },
     "EventToConfigIdsMapping": {
         "Loki": {
-            "livepeoplecard_events": "P-R-1047016-2-23",
-            "livepeoplecard_qos": "P-R-1047016-2-23",
-            "livepeoplecards_flights": "P-R-1047016-2-23"
+            "livepeoplecard_events": "P-R-1047016-2-24",
+            "livepeoplecard_qos": "P-R-1047016-2-24",
+            "livepeoplecards_flights": "P-R-1047016-2-24"
         }
     },
     "GroupsManagement": {
@@ -782,7 +782,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableTidRoutingOnExternalDomain": true,
         "EnableUserPreferenceV2": true,
-        "EnableVNextQuery": false,
+        "EnableVNextQuery": true,
         "EnableVivaLearning": true,
         "EnableVivaSkillsDataExportProvider": true,
         "EnableVivaSkillsInLPE": true,
@@ -1751,8 +1751,8 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251030.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20251026.2.0",
+        "PeopleInTaskbarDFVersion": "1.20251101.7.0",
+        "PeopleInTaskbarMsitVersion": "1.20251030.2.0",
         "PeopleInTaskbarProdVersion": "1.20251018.6.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
