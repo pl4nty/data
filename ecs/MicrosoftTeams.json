@@ -14,6 +14,8 @@
         }
     },
     "ImmersiveEvents": {
+        "CustomizationActionGroups": 1,
+        "CustomizationTriggers": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
         "clientMinimumVersion": "6.2512.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",

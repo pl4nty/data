@@ -379,6 +379,7 @@
         "FlightingV2": {
             "EnableDedupe": true,
             "ManagedInstallerTargeting": true,
+            "ManagedInstallerTargetingAPDP": true,
             "RedirectActionFlow": true
         }
     },
