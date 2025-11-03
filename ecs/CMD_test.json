@@ -963,6 +963,7 @@
         "EnableUpdateDiskSkuRestore": true,
         "EnableUploadingInsiderPreviewVersion": true,
         "EnableUsageProvisionAssessmentEvaluationType": true,
+        "EnableUseDeviceServiceLibInPolicy": true,
         "EnableUseLinqToQuery": true,
         "EnableUserActionTimestampUpdate": true,
         "EnableUserDisplayName": true,
