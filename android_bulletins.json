@@ -90931,11 +90931,6 @@
         "Component": "AAOS CarSettings"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-09-01",
-        "Published": "September 7, 2021",
-        "Patch level": "2021-09-01"
-    },
-    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-08-01",
         "Published": "August 2, 2021",
         "Patch level": "2021-08-01"
@@ -91539,6 +91534,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-11-01",
+        "Published": "October 2025",
+        "Patch level": "English"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-10-01",
