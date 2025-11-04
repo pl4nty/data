@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251101.7.0",
-        "CalendarCompanionMsitVersion": "1.20251026.1.0",
+        "CalendarCompanionDFVersion": "1.20251102.5.0",
+        "CalendarCompanionMsitVersion": "1.20251101.7.0",
         "CalendarCompanionProdVersion": "1.20251018.6.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -473,6 +473,12 @@
         "isFeedbackForCopilotQnAPairsEnabled": false,
         "isFeedbackForPeopleHighlightsEnabled": false,
         "isFluentV9Enabled": false,
+        "isFrontierPrivateAIX100": false,
+        "isFrontierPrivateInfluencer": false,
+        "isFrontierPrivateStaging": false,
+        "isFrontierPrivateTAP": false,
+        "isFrontierPrivateTAPSubset": false,
+        "isFrontierPublic": false,
         "isGroupsTransferOwnershipEnabled": false,
         "isHeaderPreviewLabelEnabled": false,
         "isPeopleHighlightsEnabled": false,
@@ -1751,9 +1757,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251101.7.0",
+        "PeopleInTaskbarDFVersion": "1.20251102.5.0",
         "PeopleInTaskbarMsitVersion": "1.20251030.2.0",
-        "PeopleInTaskbarProdVersion": "1.20251018.6.0",
+        "PeopleInTaskbarProdVersion": "1.20251026.2.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
@@ -1882,6 +1888,24 @@
             ]
         },
         "nonLocalizedAppName_shared": 1,
+        "samplingConfig": {
+            "Event": {
+                "defaultRate": 100,
+                "rules": []
+            },
+            "Impression": {
+                "defaultRate": 100,
+                "rules": []
+            },
+            "Performance": {
+                "defaultRate": 100,
+                "rules": []
+            },
+            "UserAction": {
+                "defaultRate": 100,
+                "rules": []
+            }
+        },
         "updatedFAQText_shared": 1
     },
     "Segmentation": {
