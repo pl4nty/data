@@ -533,7 +533,7 @@
                 "enableArchiveTenantRegionMap": true,
                 "enableAssignLicenseCaching": true,
                 "enableAudioConfPromo": false,
-                "enableAuthzExploratoryTrialDurationEnforcement": false,
+                "enableAuthzExploratoryTrialDurationEnforcement": true,
                 "enableAuthzExploratoryTrialLicenseEndDate": true,
                 "enableAutoAssignLicense": true,
                 "enableCAES2SValidation": false,
@@ -574,7 +574,7 @@
                 "enableSsmRefactor": false,
                 "enableTenantBlockMiddleware": false,
                 "enableTrialLicenseMigration": false,
-                "exploratoryTrialDurationEnforcementDate": "2025-11-01T00:00:00.00Z",
+                "exploratoryTrialDurationEnforcementDate": "2025-10-15T00:00:00.00Z",
                 "fetchGuestAllowedFromAcms": true,
                 "removeIsSkypeTeamsEnabled": false,
                 "skipCrossTenantLicenseInFreemiumTenant": true
