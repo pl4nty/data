@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package microsoft.edge.btr;
+
+option cc_enable_arenas = true;
+option optimize_for = LITE_RUNTIME;
+
+message BuildTimeProtocol {
+  map<string, StreamList> streams = 1;
+  repeated string tokens = 2;
+}
+
+message StreamList {
+  repeated Stream streams = 1;
+}
+
+message Stream {
+  oneof stream_value {
+    RawStream raw = 1;
+    ForStream for_stream = 2;
+    SignalStream signal = 3;
+    IfStream if_stream = 4;
+    AttributeStream attribute = 5;
+    ComponentStream component = 6;
+    UnknownStream unknown = 7;
+  }
+}
+
+message RawStream {
+  string value = 1;
+}
+
+message ForStream {
+  string item = 1;
+  string collection = 2;
+  optional string template_name = 3;
+}
+
+message SignalStream {
+  string value = 1;
+  optional string default_value = 2;
+  bool raw = 3;
+}
+
+message IfStream {
+  string condition = 1;
+  optional string template_name = 2;
+}
+
+message AttributeStream {
+  string name = 1;
+  optional string value = 2;
+  optional string template_name = 3;
+  bool raw_value = 4;
+  bool attr_start = 5;
+  bool attr_skip = 6;
+  bool boolean_attribute = 7;
+  bool complex = 8;
+}
+
+message ComponentStream {
+  string value = 1;
+}
+
+message UnknownStream {}
