@@ -1,5 +1,27 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-11-01",
+        "Published": "November 3, 2025",
+        "Patch level": "2025-11-01",
+        "CVE": "CVE-2025-48593",
+        "References": "A-374746961",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Updated AOSP versions": "13, 14, 15, 16",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-11-01",
+        "Published": "November 3, 2025",
+        "Patch level": "2025-11-01",
+        "CVE": "CVE-2025-48581",
+        "References": "A-428945391",
+        "Type": "EoP",
+        "Severity": "High",
+        "Updated AOSP versions": "16",
+        "Component": "System"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-10-01",
         "Published": "October 6, 2025",
         "Patch level": "2025-10-01"
@@ -90366,6 +90388,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-11-01",
+        "Published": "November 3, 2025",
+        "Patch level": "2025-11-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2025-10-01",
         "Published": "October 6, 2025",
         "Patch level": "2025-10-01"
@@ -90929,6 +90956,11 @@
         "Severity": "High",
         "Updated AOSP versions": "9, 10",
         "Component": "AAOS CarSettings"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-09-01",
+        "Published": "September 7, 2021",
+        "Patch level": "2021-09-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-08-01",
