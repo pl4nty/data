@@ -448,6 +448,7 @@
         "FlightingV2": {
             "AllowOOBEUpdatesUX": true,
             "EnableAllowOOBEUpdatesUX": true,
+            "EnableETGFailuresReportUX": true,
             "EnableWin32CatalogAppsForDpp": true,
             "EnableWin32CatalogAppsForEsp": true,
             "EnableWindowsRestore": true,
