@@ -1,0 +1,338 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WWAN/profile/v9"
+  xmlns="http://www.microsoft.com/networking/WWAN/profile/v9"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:WWAN_profile_v1="http://www.microsoft.com/networking/WWAN/profile/v1"
+  xmlns:WWAN_profile_v2="http://www.microsoft.com/networking/WWAN/profile/v2"
+  xmlns:WWAN_profile_v3="http://www.microsoft.com/networking/WWAN/profile/v3"
+  xmlns:WWAN_profile_v4="http://www.microsoft.com/networking/WWAN/profile/v4"
+  xmlns:WWAN_profile_v5="http://www.microsoft.com/networking/WWAN/profile/v5"
+  xmlns:WWAN_profile_v6="http://www.microsoft.com/networking/WWAN/profile/v6"
+  xmlns:WWAN_profile_v7="http://www.microsoft.com/networking/WWAN/profile/v7"
+  xmlns:WWAN_profile_v8="http://www.microsoft.com/networking/WWAN/profile/v8"
+  elementFormDefault="qualified">
+
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v1" schemaLocation="WWAN_profile_v1.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v2" schemaLocation="WWAN_profile_v2.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v3" schemaLocation="WWAN_profile_v3.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v4" schemaLocation="WWAN_profile_v4.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v5" schemaLocation="WWAN_profile_v5.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v6" schemaLocation="WWAN_profile_v6.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v7" schemaLocation="WWAN_profile_v7.xsd"/>
+  <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v8" schemaLocation="WWAN_profile_v8.xsd"/>
+
+  <xs:complexType name="SNSSAIType">
+    <xs:sequence>
+      <xs:element name="SST" type="xs:unsignedByte" minOccurs="0"/>
+      <xs:element name="SD" type="xs:unsignedInt" minOccurs="0"/>
+      <xs:element name="SST" type="xs:unsignedByte" minOccurs="0"/>
+      <xs:element name="SD" type="xs:unsignedInt" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="DNNType">
+    <xs:restriction base="xs:token">
+      <xs:minLength value="0"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- PDUSessionType supports IP, Ethernet, Unstructured and could be expand more -->
+  <xs:simpleType name="PDUSessionType">
+    <xs:restriction base="xs:token">
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="IPDescriptorType">
+    <xs:sequence>
+      <xs:element name="IPv4" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="IPv4MaskField" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="IPv6" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="IPv6PreFixLength" type="xs:unsignedByte" minOccurs="0"/>
+
+      <!-- ProtocolId is 1 byte, range from 0 to 255 -->
+      <xs:element name="ProtocolId" type="xs:unsignedByte" minOccurs="0"/>
+
+      <!-- Port number is 16-bit unsigned integer, ranging from 0 to 65535 -->
+      <xs:element name="SinglePort" type="xs:unsignedShort" minOccurs="0"/>
+      <xs:element name="PortRangeLow" type="xs:unsignedShort" minOccurs="0"/>
+      <xs:element name="PortRangeHigh" type="xs:unsignedShort" minOccurs="0"/>
+      <xs:element name="TypeofService" type="xs:unsignedShort" minOccurs="0"/>
+      <xs:element name="FlowLabel" type="xs:unsignedInt" minOccurs="0"/>
+      <xs:element name="IPSecType" type="xs:unsignedInt" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RouteSelectionDescriptorType">
+    <xs:sequence>
+      <!-- RouteSelectionDescriptorPrecedence is from 0 to 255 -->
+      <xs:element name="RouteSelectionDescriptorPrecedence" type="xs:unsignedByte"/>
+      <xs:element name="SSCMode" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:pattern value="[0-3]"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SNSSAIs" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="SNSSAI" type="SNSSAIType" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DNNSelections" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DNNSelection" type="DNNType" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PDUSession" type="PDUSessionType" minOccurs="0"/>
+      <xs:element name="NonSeamlessSOffloadIndication" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="AccessTypePreference" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="3GPP"/>
+            <xs:enumeration value="NON3GPP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TrafficDescriptorType">
+    <xs:sequence>
+      <xs:element name="MatchAllRule" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="OSId" type="guidType" minOccurs="0"/>
+      <xs:element name="OSAppId" type="xs:string" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="127"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="DNN" type="DNNType" minOccurs="0"/>
+      <xs:element name="DestinationFQDN" type="xs:string" minOccurs="0"/>
+
+      <xs:element name="IPDescriptor" type="IPDescriptorType" minOccurs="0"/>
+
+      <!-- NonIPDescriptor is intentionally left out for future support-->
+
+      <xs:element name="ConnectionCapabilities" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ConnectionCapability" type="xs:token" maxOccurs="31"/>
+                     <!-- 
+			Currently ConnectionCapability can be one of the following values:
+                        Internet, MMS, IMS, Supl, Purchase, Administrative, Applications,
+                        Tethering, eSIMProvisioning, AllHostProfiles, LTEAttach
+                     -->
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <!-- extension point for other namespaces -->
+      <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- The below element 'AbstractRATType' is an 'abstract type' - future extensions happen by inheriting this type or any inherited type      -->
+  <!-- of this abstract type. For example, 'InheritedRATTypeV1' is inherited from this abstract type and adds no further elements. Hence       -->
+  <!-- 'InheritedRATTypeV1' has access to its base-type's elements only. Now consider when we need to add a new element 6G. In order to do that  -->
+  <!-- we can inherit from 'InheritedRATTypeV1' and add the extra element 6G as shown in the below example : -                                 -->
+
+  <!-- Future schema extension to add 6G  -->
+  <!-- <xs:complexType name="InheritedRATTypeV2">
+        <xs:complexContent>
+          <xs:extension base="InheritedRATTypeV1">
+            <xs:sequence>
+              <xs:element name="V1RAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:token">
+                    <xs:enumeration value="6G"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>                                                                                                                        -->
+  <xs:complexType abstract="true" name="AbstractRATType">
+    <xs:sequence>
+      <xs:element name="BaseRAT" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="5GSA"/>
+              <xs:enumeration value="5GNSA"/>
+              <xs:enumeration value="LTE"/>
+              <xs:enumeration value="2GAND3G"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+ 
+  <xs:complexType name="InheritedRATTypeV1">
+    <xs:complexContent>
+      <xs:extension base="AbstractRATType">
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Optional element to define the Radio Access Technology Type(s) - the Network Type(s) on which the profile is appliicable (usable) -->
+  <!-- If RATApplicabilityCheck is present, the profile is only applicable on the specified network type(s)                              -->
+  <!-- RATApplicabilityCheck and WWAN_profile_v4:RATApplicability are mutually exclusive; only one format is allowed in a profile        -->
+  <!-- It is intentional to use this as an extension element for MBB profiles of v4 schema with root node of "MBNProfileExt"             -->
+  <xs:element name="RATApplicabilityCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RATType" minOccurs="1" type="AbstractRATType" maxOccurs="31"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="MBNProfileV3">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Profile name -->
+        <xs:element name="Name" type="WWAN_profile_v1:nameType"/>
+
+        <!-- Brief description of the profile -->
+        <xs:element name="Description" type="WWAN_profile_v1:nameType" minOccurs="0"/>
+
+        <!-- Path of the icon file for the provider -->
+        <xs:element name="ICONFilePath" type="WWAN_profile_v1:iconFileType" minOccurs="0"/>
+
+        <!-- Flag to indicate whether this is the default profile -->
+        <!-- Atmost one profile per SIM shall have this flag set to true -->
+        <xs:element name="IsDefault" type="xs:boolean"/>
+
+        <!-- Profile creation type -->
+        <!-- This is used to prioritize profiles when more than one are applicable  -->
+        <xs:element name="ProfileCreationType" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:token">
+              <xs:enumeration value="UserProvisioned"/>
+              <xs:enumeration value="AdminProvisioned"/>
+              <xs:enumeration value="OperatorProvisioned"/>
+              <xs:enumeration value="DeviceProvisioned"/>
+              <xs:enumeration value="ModemProvisioned"/>
+              <xs:enumeration value="ModemOperatorProvisioned"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- Subscriber Identification : IMSI, MIN, etc -->
+        <!-- optional in extended MBNProfile -->
+        <xs:element name="SubscriberID" type="WWAN_profile_v1:subscriberIdType" minOccurs="0"/>
+
+        <!-- SimIccID number of the SIM -->
+        <!-- Mandatory in extended MBNProfile -->
+        <xs:element name="SimIccID" type="WWAN_profile_v1:simIccIDType" />
+
+        <!-- Home Provider Name -->
+        <xs:element name="HomeProviderName" type="WWAN_profile_v6:providerNameLongType" minOccurs="0"/>
+
+        <!-- Connection Mode, default is "manual" -->
+        <xs:element name="ConnectionMode" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <!-- manual connect always -->
+              <xs:enumeration value="manual" />
+              <!-- auto connect always -->
+              <xs:enumeration value="auto" />
+              <!-- auto connect when not roaming -->
+              <xs:enumeration value="auto-home"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- Connection Settings -->
+        <xs:element name="Context" type="WWAN_profile_v4:contextExtType" minOccurs="0"/>
+
+        <!-- Roaming Partner List -->
+        <xs:element name="DataRoamingPartners" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Provider" type="WWAN_profile_v1:providerType" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- optional element for MBNProfileExt. It defines the condition(s) when the profile is applicable (usable) -->
+        <!-- If ProfileConditionedOn is present, the defined condiftion(s) must be satisfied for the profile to be applicable -->
+        <xs:element name="ProfileConditionedOn" type="WWAN_profile_v4:profileConditionType" minOccurs="0"/>
+
+        <!-- optional elemtment. the default is TRUE (enabled) -->
+        <xs:element name="AdminEnable" type="xs:boolean" minOccurs="0"/>
+
+        <!-- optional element, the default is AllRoamAllowed -->
+        <xs:element name="AdminRoamControl" type="WWAN_profile_v4:roamControlType" minOccurs="0"/>
+
+        <!-- Flag to indicate whether this profile must follow the enablement policy of internet connection. Default is "false" -->
+        <!-- If this element is present in a profile and is true, IsAdditionalPdpContextProfile must be true -->
+        <!-- This is used as an extension to only elements of type MBNProfileExt -->
+        <xs:element name="FollowInternetConnectionEnablementPolicy" type="xs:boolean" minOccurs="0"/>
+
+        <!-- Flag to indicate whether this porfile must follow the roam control policy of internet connection. Default is "false" -->
+        <!-- If this element is present in a profile and is true, IsAdditionalPdpContextProfile must be true -->
+        <!-- This is used as an extension to only elements of type MBNProfileExt -->
+        <xs:element name="FollowInternetConnectionRoamingPolicy" type="xs:boolean" minOccurs="0"/>
+
+        <!-- Optional element to define the Radio Access Technology Type(s) - the Network Type(s) on which the profile is appliicable (usable) -->
+        <!-- If RATApplicabilityCheck is present, the profile is only applicable on the specified network type(s)                              -->
+        <!-- RATApplicabilityCheck and WWAN_profile_v4:RATApplicability are mutually exclusive; only one format is allowed in a profile        -->
+        <xs:element name="RATApplicabilityCheck" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RATType" minOccurs="1" type="AbstractRATType" maxOccurs="31"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- 
+        Valid value range is [0 ... 65535].
+        1. RulePrecedence for 5G is a number from 0 to 255.
+        2. This field will can also support lagacy auto-connect order, which is deviceProvisioned, non-purchase profile, optional element. 
+           Auto-connect order valid value range is [1 .. 65535]. Only valid for DeviceProvisioned, non-purchase profile.
+           When multiple profiles are applicable, the auto-connect order of a profile specifies the relative priorty 
+           of the profile in attempts of connection establishment. Smaller auto-connect order means higer priority. 
+           Profiles with explicit auto-connect order have higher priority than profiles without.
+        Configuration engine needs to make sure only one of RulePrecedence and Auto-connect order is specified.
+        Otherwise the behavior is undefined.
+        -->      
+        <xs:element name="RulePrecedence" type="xs:unsignedShort"/>
+
+        <xs:element name="TrafficDescriptor" type="TrafficDescriptorType"/>        
+
+        <xs:element name="RouteSelectionDescriptors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RouteSelectionDescriptor" type="RouteSelectionDescriptorType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- extension point for other namespaces -->
+        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

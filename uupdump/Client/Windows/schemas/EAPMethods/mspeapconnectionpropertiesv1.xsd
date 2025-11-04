@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1" xmlns:extendedPeap="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2" targetNamespace="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1" elementFormDefault="qualified" version="1.0">
+	<xs:import namespace="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1" schemaLocation="BaseEapConnectionPropertiesV1.xsd"/>
+        <!--We are extending our vista schema, and extended tags are available at MsPeapConnectionPropertiesV2.xsd -->
+	<xs:import namespace="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2" schemaLocation="MsPeapConnectionPropertiesV2.xsd"/>
+	<xs:element name="EapType" substitutionGroup="baseEap:EapType">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="baseEap:BaseEapTypeParameters">
+					<xs:sequence>
+						<xs:element name="ServerValidation" type="ServerValidationParameters" minOccurs="0"/>
+                                                <!--This is obsolete, instead use IdentityPrivacy tag defined in the PeapExtensions tag.-->
+                         			<xs:element name="IdentityPrivacy" type="IdentityPrivacyParameters" minOccurs="0"/>
+						<xs:element name="FastReconnect" type="xs:boolean" minOccurs="0"/>
+						<xs:element name="InnerEapOptional" type="xs:boolean" minOccurs="0"/>
+						<xs:element ref="baseEap:Eap" minOccurs="0" maxOccurs="unbounded"/>
+						<xs:element name="EnableQuarantineChecks" type="xs:boolean" default="false" minOccurs="0"/>
+						<xs:element name="RequireCryptoBinding" type="xs:boolean" default="false" minOccurs="0"/>
+						<xs:element name="PeapExtensions" type="PeapExtensionsType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ServerValidationParameters">
+		<xs:sequence>
+			<xs:element name="DisableUserPromptForServerValidation" type="xs:boolean" minOccurs="0"/>
+			<!-- A set of server names delimited by semicolons -->
+			<!-- each server name can be represented by regular -->
+			<!-- expressions -->
+			<!-- If this tag exist and value inside this tag also exists then AcceptServerName's value is TRUE or else it is FALSE-->
+			<xs:element name="ServerNames" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+                                                        <!--This is obsolete, instead use AcceptServerName tag defined in the PeapExtensions tag.-->
+							<xs:attribute name="AcceptServerName" type="xs:boolean" use="optional"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<!-- The thumbprint of a trusted root CA is -->
+			<!-- a hexadecimal string that contains -->
+			<!-- the SHA-1 hash of the certificate. -->
+			<xs:element name="TrustedRootCA" type="xs:hexBinary" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+                <!--This is obsolete, instead use PerformServerValidation tag defined in the PeapExtensions tag.-->
+		<xs:attribute name="PerformServerValidation" type="xs:boolean" use="optional" default="true"/>
+	</xs:complexType>
+	<xs:complexType name="IdentityPrivacyParameters">
+		<xs:sequence>
+			<xs:element name="EnableIdentityPrivacy" type="xs:boolean" minOccurs="0"/>
+			<!-- Identity privacy username -->
+			<xs:element name="AnonymousUserName" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PeapExtensionsType">
+		<xs:sequence>
+			<xs:element ref="extendedPeap:PerformServerValidation" minOccurs="0"/>
+			<xs:element ref="extendedPeap:AcceptServerName" minOccurs="0"/>
+			<xs:element ref="extendedPeap:IdentityPrivacy" minOccurs="0"/>
+			<xs:element ref="extendedPeap:PeapExtensionsV2" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

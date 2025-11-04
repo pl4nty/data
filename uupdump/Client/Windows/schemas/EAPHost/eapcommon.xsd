@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<xs:schema 
+ targetNamespace="http://www.microsoft.com/provisioning/EapCommon"
+ elementFormDefault="qualified" 
+ xmlns="http://www.microsoft.com/provisioning/EapCommon"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ version="1.0">
+
+   <xs:complexType name="EapMethodType">
+      <xs:sequence>
+         <xs:element name="Type" type="xs:unsignedByte" />
+         <xs:element name="VendorId" type="xs:unsignedInt" default="0" minOccurs="0" />
+         <xs:element name="VendorType" type="xs:unsignedInt" default="0" minOccurs="0" />
+         <xs:element name="AuthorId" type="xs:unsignedInt" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="EapBlob">
+   </xs:complexType>
+
+</xs:schema>
+
+

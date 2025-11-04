@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/Plans/v2"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/Plans/v2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="Plans_v2">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="Plan_v2" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NearLimitOverLimitToastEnabled" type="xs:boolean" default="true" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="AssociatedPlan" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

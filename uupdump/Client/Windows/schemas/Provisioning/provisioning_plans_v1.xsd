@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/Plans/v1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/Plans/v1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:base="http://www.microsoft.com/networking/CarrierControl/Base/v1"
+>
+
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Base/v1"/>
+
+  <!-- Plan Definition -->
+  <xs:complexType name="BillingCycleType">
+    <xs:attribute name="StartDate" type="xs:dateTime" use="required"/>
+    <xs:attribute name="Duration" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:duration">
+          <xs:minExclusive value="PT0S"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Resets" type="xs:boolean" default="true"/>
+  </xs:complexType>
+
+  <xs:simpleType name="PlanType">
+    <xs:annotation>
+      <xs:documentation>
+        PlanType expresses the incremental cost of a plan:
+          - Unrestricted:  There is no incremental cost for consumption on this plan
+          - Fixed:  Consumption goes against a quota which the user has purchased / agreed to purchase
+          - Variable:  The user will be billed for incremental usage on this plan
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unrestricted"/>
+      <xs:enumeration value="Fixed"/>
+      <xs:enumeration value="Variable"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="Plan">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="Description"/>
+          <xs:element ref="Usage" minOccurs="0"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="Usage"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute type="xs:string" name="Name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Description" type="DescriptionBaseType"/>
+  <xs:complexType name="DescriptionBaseType">
+    <xs:sequence>
+      <xs:element name="BillingCycle" type="BillingCycleType" minOccurs="0"/>
+      <xs:element name="DataLimitInMegabytes" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element name="InboundBandwidthInKbps" type="xs:nonNegativeInteger" minOccurs="0"/>
+      <xs:element name="OutboundBandwidthInKbps" type="xs:nonNegativeInteger" minOccurs="0"/>
+      <xs:element name="MaxTransferSizeInMegabytes" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element name="SecurityUpdatesExempt" type="xs:boolean" default="false" minOccurs="0"/>
+      <xs:element name="DataUsageInMobileOperatorNotificationEnabled" type="xs:boolean" default="false" minOccurs="0"/>
+      <xs:element name="UserSMSEnabled" type="xs:boolean" default="false" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="PlanType" name="PlanType" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="Usage" type="PlanUsageType"/>
+  <xs:complexType name="PlanUsageType">
+    <xs:attribute name="OverLimit" type="xs:boolean"/>
+    <xs:attribute name="Congested" type="xs:boolean"/>
+    <xs:attribute name="CurrentUsage" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="UsageTimestamp" type="xs:dateTime" use="required"/>
+  </xs:complexType>
+</xs:schema>

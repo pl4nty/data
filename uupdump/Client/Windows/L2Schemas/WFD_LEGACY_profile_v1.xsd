@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WiFiDirectLegacy/profile/v1"
+    xmlns="http://www.microsoft.com/networking/WiFiDirectLegacy/profile/v1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+  <xs:element name="WFDLegacyProfile">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="groupName">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              This defines a friendly name for this Wi-Fi Direct group profile.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1" />
+              <xs:maxLength value="255" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="groupID">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deviceAddress">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    Defines the Device Address portion of the group info. If this is a local GO profile,
+                    it is the local hardware's device address, otherwise it's the remote device's address.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+                
+              <xs:element name="SSID" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    Defines the SSID portion of the group info.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1" />
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="persistent" type="xs:boolean" default="true" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              Whether or not the group was persistent at the time of pairing. This will affect how
+              a local GO is advertised, and will dictate whether or not reinvoke invitation will
+              be supported. Group is automatically persistent unless otherwise specified.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      
+        <xs:element name="localSettings">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="role">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    The Wi-Fi Direct role which the local computer assumed at the time of pairing. This
+                    will dictate what kind of role will be loaded.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Client" />
+                    <xs:enumeration value="GroupOwner" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+              <xs:element name="deviceAddress">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    Defines the Device Address of the PC at the time of pairing.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}:[A-Fa-f0-9]{2}" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>              
+              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="security">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="authentication" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    Authentication type for this group. This is an optional element. The default value
+                    in its absence is WPA2PSK.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="open" />
+                    <xs:enumeration value="WPA2PSK" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+              <xs:element name="encryption" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    Encryption type for this group. This is an optional element. The default value
+                    in its absence is AES.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="AES" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+
+              <xs:element name="groupKey" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    The network key for this group.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="keyType">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="networkKey" />
+                          <xs:enumeration value="passPhrase" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="protected" type="xs:boolean" />
+                    <xs:element name="keyMaterial" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="legacyKey" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="en">
+                    The legacy client key for this network. Useful only if this is a local GO profile. Optional.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="keyType">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="passPhrase" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="protected" type="xs:boolean" />
+                    <xs:element name="keyMaterial" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/WLAN/v1"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/WLAN/v1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:base="http://www.microsoft.com/networking/CarrierControl/Base/v1"
+>
+
+  <xs:import namespace="http://www.microsoft.com/networking/CarrierControl/Base/v1" />
+
+  <!-- WISPR Credentials in separate schema; uses xs:any tag below -->
+
+  <xs:element name="WLANProfile" type="CarrierWLANProfile"/>
+  <xs:complexType name="CarrierWLANProfile">
+    <xs:sequence>
+      <!-- Profile name is required. -->
+      <xs:element name="name" type="base:NameType"/>
+
+      <xs:element name="AssociatedPlan" type="xs:string" minOccurs="0"/>
+
+      <!-- SSID's are required. -->
+      <xs:element name="SSIDConfig" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:annotation>
+              <xs:documentation>
+                This element supports up to 25 SSIDs in the v1 namespace and up to additional 10000 SSIDs in the v2 namespace.
+                The v2 namespace also supports SSID prefixes.
+              </xs:documentation>
+            </xs:annotation>
+            <xs:element name="SSID" maxOccurs="25">
+              <xs:complexType>
+                <!-- Either Hex or named SSID must be present. -->
+                <xs:choice>
+                  <xs:element name="hex">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:hexBinary">
+                        <xs:minLength value="1" />
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <xs:element name="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="1" />
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+
+            <!-- SSID and SSIDPrefix elements from v2 namespace can be set here.
+            <xs:element name="SSID" minOccurance="0" maxOccurance="10000"
+              namespace="http://www.microsoft.com/networking/CarrierControl/WLAN/v2"/>
+            <xs:element name="SSIDPrefix" minOccurance="0" maxOccurance="32"
+              namespace="http://www.microsoft.com/networking/CarrierControl/WLAN/v2"/>
+            -->
+
+            <!-- extension point for other namespaces -->
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <!-- Hotspot2.0 is optional. -->
+      <xs:element name="Hotspot2" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DomainName">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1" />
+                  <xs:maxLength value="255" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="NAIRealm" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" minOccurs="0" maxOccurs="256">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="1" />
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Network3GPP" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PLMNID" minOccurs="0" maxOccurs="256">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="5" />
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <xs:element name="RoamingConsortium" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="OUI" minOccurs="0" maxOccurs="256">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:hexBinary">
+                        <xs:minLength value="3" />
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <!-- wireless LAN MSM settings -->
+      <xs:element name="MSM" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <!-- security settings -->
+            <xs:element name="security" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="authEncryption">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <!-- valid authentication methods -->
+                        <xs:element name="authentication">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="open" />
+                              <xs:enumeration value="shared" />
+                              <xs:enumeration value="WPA" />
+                              <xs:enumeration value="WPAPSK" />
+                              <xs:enumeration value="WPA2" />
+                              <xs:enumeration value="WPA2PSK" />
+                              <xs:enumeration value="WPA3" />
+                              <xs:enumeration value="WPA3ENT192" />
+                              <xs:enumeration value="WPA3ENT" />
+                              <xs:enumeration value="WPA3SAE" />
+                              <xs:enumeration value="OWE" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+
+                        <!-- valid encryption methods -->
+                        <xs:element name="encryption">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="none" />
+                              <xs:enumeration value="WEP" />
+                              <xs:enumeration value="TKIP" />
+                              <xs:enumeration value="AES" />
+                              <xs:enumeration value="GCMP256" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+
+                        <!-- flag indicating use of 802.1X -->
+                        <xs:element name="useOneX" type="xs:boolean" minOccurs="0" />
+
+                        <!-- FIPS mode element from v2 namespace can be set here.
+                        <xs:element name="FIPSMode" type="xs:boolean" minOccurs="0"
+                          namespace = "http://www.microsoft.com/networking/CarrierControl/WLAN/v2"/>
+                        -->
+
+                        <!-- UserLogonCred from UserLogonCred v1 namespace can be set here
+                        <xs:element name="UserLogonCred"  minOccurs="0"
+                        namespace"http://www.microsoft.com/networking/CarrierControl/WLAN/UserLogonCred/v1"
+                        -->
+
+                        <!-- extension point for other namespaces; allowed for OneX, etc. -->
+                        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <!-- Optional MSM security settings. -->
+                  <!-- there is no default value for sharedKey if absent -->
+                  <xs:element name="sharedKey" minOccurs="0">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="keyType">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="networkKey" />
+                              <xs:enumeration value="passPhrase" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="protected" type="xs:boolean" />
+                        <xs:element name="keyMaterial" type="xs:string" />
+
+                        <!-- extension point for other namespaces -->
+                        <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <!-- the default value is 0 when the shared key is present -->
+                  <xs:element name="keyIndex" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0" />
+                        <xs:maxInclusive value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!--
+                    For WPA2, the default value is "enabled"
+                    for all others, the default value is "disabled"
+                -->
+                  <xs:element name="PMKCacheMode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="disabled" />
+                        <xs:enumeration value="enabled" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!-- the default value is 720 minutes -->
+                  <xs:element name="PMKCacheTTL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="5" />
+                        <xs:maxInclusive value="1440" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!-- the default value is 128 entries -->
+                  <xs:element name="PMKCacheSize" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1" />
+                        <xs:maxInclusive value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!-- the default value is "disabled" -->
+                  <xs:element name="preAuthMode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="disabled" />
+                        <xs:enumeration value="enabled" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!-- the default value is 3 times -->
+                  <xs:element name="preAuthThrottle" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1" />
+                        <xs:maxInclusive value="16" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+
+                  <!-- extension point for other namespaces -->
+                  <!-- this is the insertion point for OneX and HotspotAuth namespaces -->
+                  <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+
+            <!-- extension point for other namespaces -->
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Priority" type="base:Priority" default="5"/>
+  </xs:complexType>
+
+</xs:schema>
