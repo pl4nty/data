@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server Subscription Edition RTM Hotfix 2 KB5065372",
+    "downloadDescription": "This download is a required Baseline Build for In-Place Upgrade from Skype for Business Server 2019 to Subscription Edition",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeServerUpdateInstaller (9).exe",
+            "url": "https://download.microsoft.com/download/efdc5195-b0f8-4887-adc8-157008147480/SkypeServerUpdateInstaller (9).exe",
+            "size": "158637600",
+            "version": "7.0.2046.828",
+            "datePublished": "11/3/2025 9:08:19 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatUpdateInstaller (3).exe",
+            "url": "https://download.microsoft.com/download/efdc5195-b0f8-4887-adc8-157008147480/PersistentChatUpdateInstaller (3).exe",
+            "size": "3710520",
+            "version": "7.0.2046.828",
+            "datePublished": "11/3/2025 9:08:19 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigureSkypeforBusinessHybridApplication (1).ps1",
+            "url": "https://download.microsoft.com/download/efdc5195-b0f8-4887-adc8-157008147480/ConfigureSkypeforBusinessHybridApplication (1).ps1",
+            "size": "63351",
+            "version": "7.0.2046.828",
+            "datePublished": "11/3/2025 9:08:19 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server Subscription Edition is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5065372",
+        "name": "KB5065372"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2046.828",
+    "detailsSection_file_name": [
+        "SkypeServerUpdateInstaller (9).exe",
+        "PersistentChatUpdateInstaller (3).exe",
+        "ConfigureSkypeforBusinessHybridApplication (1).ps1"
+    ],
+    "detailsSection_file_size": [
+        "151.3 MB",
+        "3.5 MB",
+        "61.9 KB"
+    ],
+    "detailsSection_file_date": "11/3/2025",
+    "systemRequirementsSection": "This download works with the following program:\n<ul>\n<li>Skype for Business Server Subscription Edition</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A> for installation details.</li>\n</ol>\n<br />",
+    "additionalInformationSection": "PersistentChatUpdateInstaller.exe\tSHA 256 Hash = 0E0146CFC0F0B46F0061471624608C38E05F3FB6085C4B97F9193ACA35850BF2\n\nSkypeServerUpdateInstaller.exe SHA 256 Hash = 6497077354E71FD82867D0585C9A7CFB542D23E552CFF23CBF687FA2D0D73ADA\n\nConfigureSkypeforBusinessHybridApplication.ps1 SHA 256 Hash = 81F98A95B8FD732A8D2383CF3C4BF2A04CC53467FDA2377C10C90FB41587FEEB",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108436",
+    "downloadPreload": true
+}
