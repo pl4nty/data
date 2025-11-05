@@ -161,23 +161,3 @@ def append_to_file(text, file_path, encoding='utf-8',
 
     with open(file_path, **open_args) as f:
         f.write(text)
-
-
-def for_every_line(dir_path):
-    """Iterate over all lines of all files in a directory.
-    Send a string back to the generator to replace the string.
-    """
-    files = get_all_files(dir_path, recursive=True)
-
-    for file_path in files:
-        lines = read_file(file_path, as_lines=True)
-        changed_lines = []
-
-        for line in lines:
-            changed_line = yield line
-            if changed_line is None:
-                changed_line = line
-            changed_lines.append(changed_line)
-
-        changed_file_contents = ''.join(changed_lines)
-        write_to_file(changed_file_contents, file_path, newline='\n')

@@ -2,9 +2,9 @@
 
 import argparse
 import json
+import logging
 import os
 from urllib.request import urlretrieve
-
 from lib.filesystem import mkdir_p
 
 
@@ -29,6 +29,7 @@ def download_sysroot(url_prefix, tarball_sha256sum, output_dir):
     # Make sure the folder exists.
     mkdir_p(os.path.dirname(output_path))
 
+    logging.info('Saving "%s" to "%s"', url, output_path)
     urlretrieve(url, output_path)
 
 

@@ -1,0 +1,61 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Charles Kerr <charles@charleskerr.com>
+Date: Thu, 23 Oct 2025 13:36:41 -0500
+Subject: build: dont reference tests that we strip from the msft build
+
+Some targets in `BUILD.gn` refer to tests that we strip out of the
+Chromium source code when making our local mirror. Remove those
+references to prevent gn from failing.
+
+diff --git a/BUILD.gn b/BUILD.gn
+index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e9248377b 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -1167,7 +1167,6 @@ if (use_blink && !is_cronet_build) {
+         "//chrome",
+         "//chrome/test/chromedriver:chromedriver_server",
+         "//third_party/blink/tools:wpt_tests_isolate",
+-        "//third_party/blink/web_tests:wpt_tests",
+       ]
+     }
+ 
+@@ -1183,7 +1182,6 @@ if (use_blink && !is_cronet_build) {
+         "//chrome/test/chromedriver:chromedriver_server",
+         "//headless:headless_shell",
+         "//third_party/blink/tools:wpt_tests_isolate",
+-        "//third_party/blink/web_tests:wpt_tests",
+       ]
+       if (is_mac || is_linux) {
+         data_deps += [ "//third_party/hyphenation-patterns:bundle_hyphen_data" ]
+@@ -1370,7 +1368,6 @@ if (use_blink && !is_cronet_build) {
+ 
+     data_deps = [
+       ":blink_web_tests_support_data",
+-      "//third_party/blink/web_tests",
+     ]
+     data = [ "//third_party/blink/perf_tests/" ]
+   }
+@@ -1381,7 +1378,6 @@ if (use_blink && !is_cronet_build) {
+   # this target.
+   group("blink_web_tests_expectations") {
+     testonly = true
+-    data_deps = [ "//third_party/blink/web_tests:expectations" ]
+   }
+ 
+   # https://chromium.googlesource.com/chromium/src/+/HEAD/docs/testing/web_tests.md
+@@ -1405,7 +1401,6 @@ if (use_blink && !is_cronet_build) {
+ 
+     data_deps = [
+       ":blink_web_tests_support_data",
+-      "//third_party/blink/web_tests:wpt_tests",
+     ]
+     data = [ "//third_party/blink/perf_tests/" ]
+   }
+@@ -1430,7 +1425,6 @@ if (use_blink && !is_cronet_build) {
+ 
+     data_deps = [
+       ":blink_web_tests_support_data",
+-      "//third_party/blink/web_tests:webgpu_web_tests",
+       "//third_party/webgpu-cts",
+     ]
+     data = [ "//third_party/webgpu-cts/scripts/" ]
