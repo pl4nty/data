@@ -942,7 +942,6 @@
         "FlightingDisableDefaultOutboundForImageSubnet": true,
         "FlightingEnableGetSessionCountForOutboundSwitch": true,
         "FlightingEnableNATGWAsOutboundAccess": true,
-        "FlightingEnableNATGatewayV2": true,
         "FlightingEnableSyncPublicIPUsageDuringIPStatusSync": true,
         "FlightingEnableUseSessionCountForOutboundSwitch": false,
         "FlightingEnableUsingPublicIPEntityV2": true,
