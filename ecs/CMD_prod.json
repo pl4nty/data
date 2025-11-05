@@ -312,6 +312,7 @@
         "EnableFinalRecommendationByTrendAndUsage": true,
         "EnableFleetTenantFairness": true,
         "EnableFlexWindowsUpdateCOGSV2": true,
+        "EnableFlsRestartActionProcessorV2": true,
         "EnableFluUpdateAllotmentName": true,
         "EnableForceHiDpiOptimizationCustomRdpProperty": true,
         "EnableFraudControl": true,
