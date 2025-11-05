@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1619,6 +1619,7 @@
         "EnableOmniChannelFlow": false,
         "EndpointDiscovery:PlsClient:EnableFaultInjection": false,
         "EnterpriseChatService:EnableFaultInjection": false,
+        "EnterpriseChatService:Enabled": true,
         "GdprChatService:EnableFaultInjection": false,
         "Interflow:EnableFaultInjection": false,
         "InviteVersionInPath": false,
@@ -1759,7 +1760,7 @@
         "SettingStore:Client:EnableFaultInjection": false,
         "SkipMtlsAuthForMiddleTier": false,
         "SmsBridge:EnableFaultInjection": false,
-        "SpamDetect:ThreatScore:Threshold": 200.0,
+        "SpamDetect:ThreatScore:Threshold": 200,
         "SpamDetect:ThreatScore:ThresholdType": "Max",
         "TeamsEmail:Client:EnableFaultInjection": false,
         "emailBody": 1,
