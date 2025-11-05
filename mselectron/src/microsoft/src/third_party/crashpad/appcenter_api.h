@@ -44,9 +44,6 @@ class AppCenter {
 
   static AppCenter* GetInstance();
 
-  const std::string& app_secret() { return app_secret_; }
-  const std::string& instance_uid() { return instance_uid_; }
-
  private:
   friend struct base::DefaultSingletonTraits<AppCenter>;
 

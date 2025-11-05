@@ -101,7 +101,12 @@ def mirror_git_repo(repo: Repository, settings: Settings, patchdir: str):
 
     # Pull in the target repo main branch to include changes not in upstream
     if 'main' in settings.branches:
-        repo.git('pull', TARGET, 'main')    
+        repo.git('pull', TARGET, 'main')
+
+    # If not-main branch exists, do the same and make it the default branch
+    if 'not-main' in settings.branches:
+        repo.git('pull', '--rebase', TARGET, 'not-main')
+        repo.git('remote', 'set-head', TARGET, 'not-main')
 
     push_refs(
         all_refs=set(settings.branches),
@@ -122,10 +127,26 @@ def mirror_git_repo(repo: Repository, settings: Settings, patchdir: str):
 def fetch_source(branches: list[str], url: str, repo: Repository):
     """Add a remote and fetch the branches we want."""
     repo.git('remote', 'add', SOURCE, url)
-    repo.git(*['fetch', '--tags', SOURCE, *branches])
+    # Strip 'not-' prefix for corresponding remote branch names
+    fetch_branches = [branch.removeprefix('not-') for branch in branches]
+    repo.git(*['fetch', '--tags', SOURCE, *fetch_branches])
     for branch in branches:
-        repo.git('checkout', '--track', f'{SOURCE}/{branch}')
-
+        if branch.startswith('not-'):
+            remote_branch = branch.removeprefix('not-')
+            local_branch = branch
+            # Check if local branch exists
+            existing_branches = repo.git('branch', '--list', local_branch).splitlines()
+            if existing_branches:
+                repo.git('checkout', local_branch)
+                repo.git(
+                    'branch', '--set-upstream-to', f'{SOURCE}/{remote_branch}', local_branch
+                )
+            else:
+                repo.git(
+                    'checkout', '--track', '-b', local_branch, f'{SOURCE}/{remote_branch}'
+                )
+        else:
+            repo.git('checkout', '--track', f'{SOURCE}/{branch}')
 
 def replace_commit(
     branches: list[str],

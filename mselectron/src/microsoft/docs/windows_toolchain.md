@@ -23,16 +23,17 @@ Set a few environment variables before running `gclient` hooks:
 
 ## How to update a toolchain package
 
-A new package can be generated using  
-the "[electron-util-pack-windows-toolchain][]" pipeline. It will pack  
-Visual Studio installed on the agent machine. Then the resulting archive can  
-be uploaded to the "windows-toolchain" container by running  
-the "[electron-upload-windows-toolchain][]" pipeline.
+A new toolchain can be updated by running the "[electron-util-pack-windows-toolchain][]" 
+pipeline. It will mirror the toolchain from electron's build tools, uploading it to 
+the msftelectronbuild storage account for later use.
 
-Once the new package is present in the storage,  
-update `MICROSOFT_TOOLCHAIN_HASH` in "[scripts/lib/vs_toolchain.py][]".
+Sometimes the SHA needed by chromium gets mapped to a different SHA for 
+the toolchain. When this happens the "[electron-util-pack-windows-toolchain][]" 
+pipeline will fail with a message indicating that the specified Windows 
+toolchain SHA maps to another value. The `MICROSOFT_TOOLCHAIN_HASH` in 
+"[scripts/lib/vs_toolchain.py][]" should be updated with the mapped value; 
+otherwise `MICROSOFT_TOOLCHAIN_HASH` should be set to the same value as `CHROMIUM_TOOLCHAIN_HASH`.
 
 [1]: https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md
 [electron-util-pack-windows-toolchain]: https://devdiv.visualstudio.com/DevDiv/_build?definitionId=19585
-[electron-upload-windows-toolchain]: https://devdiv.visualstudio.com/DevDiv/_release?_a=releases&view=all&definitionId=3413
 [scripts/lib/vs_toolchain.py]: https://devdiv.visualstudio.com/DevDiv/_git/electron-build?path=%2Fscripts%2Flib%2Fvs_toolchain.py

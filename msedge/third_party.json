@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10730749,
+    "size": 10730512,
     "file_count": 167
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32417436,
+    "size": 32419729,
     "file_count": 3969
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36561410,
+    "size": 36561435,
     "file_count": 102
   },
   {
@@ -191,8 +191,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17240480,
-    "file_count": 2036
+    "size": 17280200,
+    "file_count": 2040
   },
   {
     "name": "entity_extraction",
@@ -256,8 +256,8 @@
   },
   {
     "name": "glslang",
-    "size": 43039541,
-    "file_count": 3145
+    "size": 43055344,
+    "file_count": 3151
   },
   {
     "name": "googletest",
@@ -376,7 +376,7 @@
   },
   {
     "name": "libc++",
-    "size": 12318404,
+    "size": 12318791,
     "file_count": 1764
   },
   {
@@ -456,8 +456,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 218535044,
-    "file_count": 346
+    "size": 221720734,
+    "file_count": 349
   },
   {
     "name": "logilab",
@@ -471,7 +471,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 291613,
+    "size": 292264,
     "file_count": 47
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3928507,
+    "size": 3930595,
     "file_count": 582
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "quic_trace",
-    "size": 9477,
+    "size": 9631,
     "file_count": 4
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "skia",
-    "size": 3538878,
+    "size": 3539038,
     "file_count": 1184
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "tflite",
-    "size": 1679047,
+    "size": 1679460,
     "file_count": 498
   },
   {
@@ -741,7 +741,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6621086,
+    "size": 6623104,
     "file_count": 176
   },
   {
@@ -786,7 +786,7 @@
   },
   {
     "name": "zstd",
-    "size": 317449,
+    "size": 325237,
     "file_count": 48
   }
 ]

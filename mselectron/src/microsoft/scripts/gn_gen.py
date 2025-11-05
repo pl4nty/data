@@ -62,7 +62,7 @@ def parse_args():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
 
-    parser.add_argument('out_dir', type=os.path.abspath,
+    parser.add_argument('out_dir', type=os.path.relpath,
                         help="output dir path, e.g. 'out/testing'")
     parser.add_argument('--args', nargs='*',
                         help="build arguments in 'key=value' format "
@@ -217,6 +217,10 @@ def main():
     other_build_args = [get_electron_version_arg()] + \
                        (get_siso_args(script_args.siso) or []) + \
                        (script_args.args or [])
+    if CanonicalPlatform.is_host_mac():
+        sdk_path = os.environ.get('XCODE_LINKS_PATH', '')
+        sdk_arg = f'mac_sdk_path="//{script_args.out_dir}/{sdk_path}"'
+        other_build_args += [ sdk_arg ]
     build_args = get_build_args(configs_to_import=[
         script_args.build_config,
     ], configs_to_inline=[
@@ -238,7 +242,7 @@ def main():
         pgo_data_path = subprocess.check_output(call_args, text=True)
         build_args.append(f'pgo_data_path="{pgo_data_path}"')
 
-    gn_gen(build_dir=script_args.out_dir,
+    gn_gen(build_dir=os.path.abspath(script_args.out_dir),
            build_args=build_args,
            print_the_config=script_args.print_the_config,
            check=script_args.check)
