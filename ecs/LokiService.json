@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251102.5.0",
+        "CalendarCompanionDFVersion": "1.20251104.2.0",
         "CalendarCompanionMsitVersion": "1.20251101.7.0",
         "CalendarCompanionProdVersion": "1.20251018.6.0",
         "CompanionRing": "Prod",
@@ -1430,7 +1430,7 @@
         "UseUserLicenseV1Endpoint": true,
         "UseYggdrasilForOrgExplorer": true,
         "UserFormsQueryLimit ": 8,
-        "UserLicenseInformationCacheTtl": "0.02:00:00",
+        "UserLicenseInformationCacheTtl": "0.04:00:00",
         "VivaLicensesForOrgExplorer": [
             "61902246-d7cb-453e-85cd-53ee28eec138",
             "5c13104f-29c1-48d9-9f89-c305a0d4b70e"
