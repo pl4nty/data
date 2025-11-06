@@ -2,18 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+using EdgeProcessViewer.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
-using EdgeProcessViewer.Controls;
+using System.Security.Cryptography;
+using System.Threading.Tasks;
+using System.Web;
+using static EdgeProcessViewer.NativeMethods;
 
 namespace EdgeProcessViewer {
   // This class represents a task in a general form that can serve as a databinding source. The
   // task could be a process, a tab, etc.
   public class Task : INotifyPropertyChanged {
     public Task(Process process, int treeDepth, Task parent, bool showArgumentsInTable) {
-      taskType_ = DisplayStrings.GetProcessType(process.Type);
+      baseTaskType_ = DisplayStrings.GetProcessType(process.Type);
+      taskType_ = baseTaskType_;
       ProcessId = DisplayStrings.GetProcessId(process.ProcessId);
       ProcessIdHex = DisplayStrings.GetProcessIdHex(process.ProcessId);
       integrityLevel_ = DisplayStrings.GetIntegrityLevel(process.IntegrityLevel);
@@ -45,12 +51,19 @@ namespace EdgeProcessViewer {
       treeDepth_ = treeDepth;
       parent_ = parent;
       childItem_ = childItem;
-      MaybeUpdateParentTaskType();
+      if (parent_ != null && childItem_ != null && childItem_.AuxiliaryType != AuxiliaryType.kUnknown) {
+        parent_.AuxiliaryTypes.Add(childItem_.AuxiliaryType);
+      }
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
 
     #region Visible properties
+
+    public string BaseTaskType {
+      get { return baseTaskType_; }
+      set { baseTaskType_ = value; }
+    }
 
     public string TaskType {
       get { return taskType_; }
@@ -100,6 +113,10 @@ namespace EdgeProcessViewer {
     public string EnterpriseIds {
       get { return enterpriseIds_; }
       private set { SetProperty(ref enterpriseIds_, value); }
+    }
+
+    public List<AuxiliaryType> AuxiliaryTypes {
+      get { return auxiliaryTypes; }
     }
 
     public bool ShowArgumentsInTable {
@@ -158,19 +175,48 @@ namespace EdgeProcessViewer {
       private set { SetProperty(ref childItem_, value); }
     }
 
-    public NativeMethods.AuxiliaryType AuxiliaryType {
-      get {
-        if (childItem_ == null) {
-          return NativeMethods.AuxiliaryType.kUnknown;
+    public AuxiliaryType AuxiliaryType {
+      get { 
+        if (ChildItem != null) {
+          return ChildItem.AuxiliaryType;
+        } else if (AuxiliaryTypes.Count > 0) {
+          // Return the last of the list because that will decide the type
+          return AuxiliaryTypes.Last();
         }
-        return childItem_.AuxiliaryType; 
+
+        return AuxiliaryType.kUnknown;
       }
     }
 
     #endregion Hidden properties
 
+    public void UpdateParentTaskProperties() {
+      if (TreeDepth == 1) {
+        if (AuxiliaryType != AuxiliaryType.kUnknown) {
+          TaskType = GetTaskTypeStringPrefix() + BaseTaskType;
+        }
+      }
+    }
+
+    string GetTaskTypeStringPrefix() {
+      string prefix = "";
+
+      if (AuxiliaryTypes.Contains(AuxiliaryType.kSpareRenderer)) {
+        if (AuxiliaryTypes.Count > 1) {
+          prefix += " * Used Spare * ";
+        } else {
+          prefix += " * Spare * ";
+        }
+      }
+
+      if (AuxiliaryTypes.Contains(AuxiliaryType.kTopChrome)) {
+        prefix += " * Top Chrome * ";
+      }
+
+      return prefix;
+    }
+
     public void CopyFrom(Task task) {
-      TaskType = task.TaskType;
       IntegrityLevel = task.IntegrityLevel;
       CpuUsage = task.CpuUsage;
       MemoryUsage = task.MemoryUsage;
@@ -179,6 +225,10 @@ namespace EdgeProcessViewer {
       Parent = task.Parent;
       Process = task.Process;
       ChildItem = task.ChildItem;
+      BaseTaskType = task.BaseTaskType;
+      TaskType = task.TaskType;
+      AuxiliaryTypes.UnionWith(task.AuxiliaryTypes);
+      UpdateParentTaskProperties();
     }
 
     public Task GetProcessTask() {
@@ -225,21 +275,9 @@ namespace EdgeProcessViewer {
       }
     }
 
-
-    private void MaybeUpdateParentTaskType() {
-      if (childItem_ != null) {
-        switch (childItem_.AuxiliaryType) {
-          case NativeMethods.AuxiliaryType.kSpareRenderer:
-            parent_.TaskType = " * Spare * " + parent_.TaskType;
-            break;
-          case NativeMethods.AuxiliaryType.kTopChrome:
-            parent_.TaskType = " * Top Chrome * " + parent_.TaskType;
-            break;
-        }
-      }
-    }
-
+    private List<AuxiliaryType> auxiliaryTypes = new List<AuxiliaryType>();
     private string taskType_ = String.Empty;
+    private string baseTaskType_ = String.Empty;
     private string integrityLevel_ = String.Empty;
     private string cpuUsage_ = String.Empty;
     private string memoryUsage_ = String.Empty;
