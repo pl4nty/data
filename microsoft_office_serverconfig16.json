@@ -1357,9 +1357,6 @@
     <o:service o:name="CreateModuleBaseCdnUrl">
       <o:url>https://cdn.designerapp.osi.office.net/designerapp/create-module</o:url>
     </o:service>
-    <o:service o:name="DesignerDAS">
-      <o:url>https://designerapp.officeapps.live.com/designerapp</o:url>
-    </o:service>
     <o:service o:name="DesignerCanvas">
       <o:url>https://designer.microsoft.com</o:url>
     </o:service>
@@ -1368,6 +1365,9 @@
     </o:service>
     <o:service o:name="DesignerAuthScope">
       <o:url>https://designerappservice.officeapps.live.com/.default</o:url>
+    </o:service>
+    <o:service o:name="DesignerDAS">
+      <o:url>https://designerapp.officeapps.live.com/designerapp</o:url>
     </o:service>
     <o:service o:name="DesignerCanaryDAS">
       <o:url>https://canary.designerapp.officeapps.live.com/designerapp</o:url>
@@ -2276,7 +2276,7 @@
     <o:token o:name="ADALRedirectUrlVisio">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALRedirectUrlWord">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALResourceId">https://officeapps.live.com</o:token>
-    <o:token o:name="AugmentationLoopServicePriority">https://augloop.office.com;https://augloop-int.officeppe.com;https://dogfood.augloop.svc.cloud.microsoft;https://augloop-dogfood.officeppe.com;https://msit.augloop.svc.cloud.microsoft;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
+    <o:token o:name="AugmentationLoopServicePriority">https://augloop.office.com;https://augloop-int.officeppe.com;https://dogfood.augloop.svc.cloud.microsoft;https://augloop-dogfood.officeppe.com;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
     <o:token o:name="BingGeospatialServiceKey">As8tQX71mxPDxIW_1SGPqLnpHp_reEWdy6qjMc6n007_8DLlATfivOyqV0tjuI39</o:token>
     <o:token o:name="BingGeospatialServiceKey3DMaps">Ajuvz1xHFIa2kqBFeM2U1q1fViBjPDsW7ZdDVihFbYM8dwRjemGMOvreAjjqRcxH</o:token>
     <o:token o:name="BingSpellerServiceAuthenticationId">FDD7CBDCD2C7BC531CBFCDB30B10E75034BDEC74</o:token>
