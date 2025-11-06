@@ -108,6 +108,8 @@ namespace EdgeProcessViewer {
                   childItems.Where(i => i.ProcessId == processId)) {
         tasks.Add(new Task(childItem, treeDepth, parentTask));
       }
+
+      parentTask.UpdateParentTaskProperties();
     }
 
     private bool IsTopLevelProcess(Process process) {

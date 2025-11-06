@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="0F79339D-86EE-44E5-ABFE-6E27F9EA425A" Name="Edge Process Viewer" Language="1033" Version="1.0.0.0" Manufacturer="Microsoft Corporation" UpgradeCode="555491CA-3081-44F1-BE76-6827355D5238">
+  <!-- To successfully make the upgrade work, don't worry about replacing any GUIDs, just increase the version number -->
+  <Product Id="0F79339D-86EE-44E5-ABFE-6E27F9EA425A" Name="Edge Process Viewer" Language="1033" Version="2.0.0.0" Manufacturer="Microsoft Corporation" UpgradeCode="555491CA-3081-44F1-BE76-6827355D5238">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -20,19 +21,19 @@
       </Component>
       <Component Id="edge_process_watcher.exe_x86" Guid="7A02726E-C295-4DF8-9F8D-57B4E33091C3" Win64="no">
         <Condition>NOT Msix64</Condition>
-        <File Id="edge_process_watcher.exe_x86" Source="..\..\..\..\out\release_x86\edge_process_watcher.exe" KeyPath="yes" />
+        <File Id="edge_process_watcher.exe_x86" Source="..\..\..\..\out\win_x86_official\edge_process_watcher.exe" KeyPath="yes" />
       </Component>
       <Component Id="edge_process_watcher.exe_x64" Guid="DDBE3CC4-36A1-4A14-AD9E-6AB2C3E59BF8" Win64="yes">
         <Condition>Msix64</Condition>
-        <File Id="edge_process_watcher.exe_x64" Source="..\..\..\..\out\release_x64\edge_process_watcher.exe" KeyPath="yes" />
+        <File Id="edge_process_watcher.exe_x64" Source="..\..\..\..\out\win_x64_official\edge_process_watcher.exe" KeyPath="yes" />
       </Component>
       <Component Id="process_viewer_data.dll_x86" Guid="F0E8DA05-1C15-47B9-856E-96CFFBA49D5D" Win64="no">
         <Condition>NOT Msix64</Condition>
-        <File Id="process_viewer_data.dll_x86" Source="..\..\..\..\out\release_x86\process_viewer_data.dll" KeyPath="yes" />
+        <File Id="process_viewer_data.dll_x86" Source="..\..\..\..\out\win_x86_official\process_viewer_data.dll" KeyPath="yes" />
       </Component>
       <Component Id="process_viewer_data.dll_x64" Guid="9C1BFA97-6BC9-43B6-AAC2-740071A145A3" Win64="yes">
         <Condition>Msix64</Condition>
-        <File Id="process_viewer_data.dll_x64" Source="..\..\..\..\out\release_x64\process_viewer_data.dll" KeyPath="yes" />
+        <File Id="process_viewer_data.dll_x64" Source="..\..\..\..\out\win_x64_official\process_viewer_data.dll" KeyPath="yes" />
       </Component>
     </DirectoryRef>
 
