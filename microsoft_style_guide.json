@@ -3025,6 +3025,11 @@
                             "toc_title": "Database Migration Service"
                         },
                         {
+                            "href": "a_z_names_terms/d/databricks-lakeflow",
+                            "permissioned-type": "private",
+                            "toc_title": "Databricks Lakeflow"
+                        },
+                        {
                             "href": "a_z_names_terms/d/datacenter",
                             "permissioned-type": "private",
                             "toc_title": "datacenter"
@@ -3445,6 +3450,11 @@
                                     "href": "a_z_names_terms/d/d365agents/financial-reconciliation-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Financial Reconciliation Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/quality-evaluation-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Quality Evaluation Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/d/d365agents/sales-development-agent",
@@ -4665,6 +4675,11 @@
                             "toc_title": "KEDA"
                         },
                         {
+                            "href": "a_z_names_terms/k/keyword-query-language",
+                            "permissioned-type": "private",
+                            "toc_title": "Keyword Query Language, KeyQL"
+                        },
+                        {
                             "href": "a_z_names_terms/k/kid",
                             "permissioned-type": "private",
                             "toc_title": "kid"
@@ -4693,6 +4708,11 @@
                             "href": "a_z_names_terms/k/kubernetes",
                             "permissioned-type": "private",
                             "toc_title": "Kubernetes"
+                        },
+                        {
+                            "href": "a_z_names_terms/k/kusto-query-language",
+                            "permissioned-type": "private",
+                            "toc_title": "Kusto Query Language, KQL"
                         }
                     ],
                     "toc_title": "K"
@@ -8193,6 +8213,11 @@
                             "href": "a_z_names_terms/s/security-center",
                             "permissioned-type": "private",
                             "toc_title": "Security Center"
+                        },
+                        {
+                            "href": "a_z_names_terms/s/security-compute-unit-scu",
+                            "permissioned-type": "private",
+                            "toc_title": "security compute unit, SCU"
                         },
                         {
                             "href": "a_z_names_terms/s/security-information-and-event-management-siem",
@@ -13959,7 +13984,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2657,
+        "count_of_node_with_href": 2662,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
