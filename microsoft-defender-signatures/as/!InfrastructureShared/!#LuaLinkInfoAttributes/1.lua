@@ -56,23 +56,27 @@ if l_0_3 ~= nil and #l_0_3 > 1 then
   l_0_3 = l_0_3:gsub("%)", "/x29")
   local l_0_4 = l_0_2(l_0_3)
   if l_0_4 ~= nil then
-    do
-      if l_0_4.filename ~= nil then
-        local l_0_5 = l_0_4.filename
-        if #l_0_5 > 40 then
-          l_0_5 = (string.sub)(l_0_5, 1, 40)
-        end
-        ;
-        (mp.set_mpattribute)((string.format)("Lua:LnkTargetFname!%s", l_0_5))
+    if l_0_4.filename ~= nil then
+      local l_0_5 = l_0_4.filename
+      if #l_0_5 > 40 then
+        l_0_5 = (string.sub)(l_0_5, 1, 40)
       end
+      ;
+      (mp.set_mpattribute)((string.format)("Lua:LnkTargetFname!%s", l_0_5))
+      local l_0_6 = l_0_5:match("%.(.+)$")
+      if l_0_6 then
+        (mp.set_mpattribute)((string.format)("Lua:LnkTargetFnameExt!%s", l_0_6))
+      end
+    end
+    do
       if l_0_4.folder_count ~= nil and l_0_4.folder_count >= 1 then
-        local l_0_6 = l_0_4.folder_count
+        local l_0_7 = l_0_4.folder_count
         ;
-        (mp.set_mpattribute)((string.format)("Lua:LnkTargetLastFolderCount!%s", tostring(l_0_6)))
-        for l_0_10 = 0, 4 do
-          local l_0_11 = l_0_4["last_folder" .. l_0_10]
-          if l_0_11 then
-            (mp.set_mpattribute)((string.format)("Lua:LnkTargetLastFolder%s!%s", tostring(l_0_10), tostring(l_0_11)))
+        (mp.set_mpattribute)((string.format)("Lua:LnkTargetLastFolderCount!%s", tostring(l_0_7)))
+        for l_0_11 = 0, 4 do
+          local l_0_12 = l_0_4["last_folder" .. l_0_11]
+          if l_0_12 then
+            (mp.set_mpattribute)((string.format)("Lua:LnkTargetLastFolder%s!%s", tostring(l_0_11), tostring(l_0_12)))
           end
         end
       end

@@ -29,6 +29,19 @@ if l_0_2 and l_0_2.image_path and not GetLLMModelFromCmd(l_0_2.image_path) then
   local l_0_8 = l_0_2.ppid
   local l_0_9 = "LLMPrompt_Malicious_B2"
   l_0_7(l_0_8, l_0_9, l_0_6 or "")
+  l_0_7 = #l_0_1
+  if l_0_7 > 700 then
+    l_0_7, l_0_8 = l_0_1:sub, l_0_1
+    l_0_9 = 1
+    l_0_7 = l_0_7(l_0_8, l_0_9, 700)
+    l_0_1 = l_0_7
+  end
+  l_0_7 = set_research_data
+  l_0_8 = "cmd"
+  l_0_9 = MpCommon
+  l_0_9 = l_0_9.Base64Encode
+  l_0_9 = l_0_9(l_0_1)
+  l_0_7(l_0_8, l_0_9, false)
   l_0_7 = mp
   l_0_7 = l_0_7.INFECTED
   return l_0_7
@@ -36,7 +49,7 @@ end
 do
   do
     do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC78: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC94: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

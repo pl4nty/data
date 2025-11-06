@@ -4,12 +4,23 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.IOAVGetDownloadUrl)()
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
+do
+  do
+    if (l_0_0 == "" or l_0_0 == nil) and (mp.get_contextdata)(mp.CONTEXT_DATA_HAS_MOTW_ADS) then
+      local l_0_1 = (mp.GetMOTWZone)()
+      if l_0_1 == 3 or l_0_1 == 4 then
+        l_0_0 = (mp.GetMOTWHostUrl)()
+      end
+    end
+    if l_0_0 == nil or l_0_0 == "" then
+      return mp.CLEAN
+    end
+    l_0_0 = (string.lower)(l_0_0)
+    if l_0_0 == "https://web.whatsapp.com/" then
+      return mp.INFECTED
+    end
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR: 5 unprocessed JMP targets
+  end
 end
-l_0_0 = (string.lower)(l_0_0)
-if l_0_0 == "https://web.whatsapp.com/" then
-  return mp.INFECTED
-end
-return mp.CLEAN
 

@@ -10,7 +10,7 @@ for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
       l_0_4 = (string.lower)(l_0_4)
       if l_0_4 and ((string.find)(l_0_4, "mpcmdrun.exe", 1, true) or (string.find)(l_0_4, "msseces.exe", 1, true) or (string.find)(l_0_4, "msmpeng.exe", 1, true) or (string.find)(l_0_4, "msascui.exe", 1, true) or (string.find)(l_0_4, "mpuxsrv.exe", 1, true)) then
         local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
-        if (string.len)(l_0_5) > 1 then
+        if (string.len)(l_0_5) >= 1 then
           TrackPidAndTechniqueBM("BM", "T1562.001", "mptamper_av")
           return mp.INFECTED
         end

@@ -15,7 +15,7 @@ do
       return mp.CLEAN
     end
     local l_0_2 = nil
-    if (versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (((versioning.GetOrgID)()):lower() == "2d1d3ad2-ead9-4243-95a6-8897fcc65ea7" or ((versioning.GetOrgID)()):lower() == "47d41a0c-188d-46d3-bbea-a93dbc0bfcaa") then
+    if (versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and ((versioning.GetOrgID)()):lower() == "2d1d3ad2-ead9-4243-95a6-8897fcc65ea7" then
       return mp.INFECTED
     end
   end
