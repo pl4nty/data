@@ -866,6 +866,7 @@
         "SnptEnableSkipPermissionCheck": true,
         "SnptEnableSkipUnhealthySnapshot": true,
         "SnptLockSnptForShare": true,
+        "StorageSizeDefaultValueTo16": true,
         "SubscriptionManagementServiceDatabaseQueryIterationDelay": true,
         "SupportEnterpriseCollectVMStatus": true,
         "SupportFLSCloudPcPerformanceReporting": true,

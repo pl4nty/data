@@ -468,7 +468,6 @@
                 "id": "Shopify.ruby-lsp"
             }
         },
-        "Shuttle.shuttle-nugetpackager": true,
         "Sigasi.sigasi-vscode": true,
         "SimonSiefke.ddev": {
             "disallowInstall": true,
@@ -1010,6 +1009,7 @@
                 "id": "PinnacleLabs.taqueria"
             }
         },
+        "edge-security.osconfig": true,
         "efbenson.scad": {
             "disallowInstall": true,
             "extension": {
