@@ -423,7 +423,7 @@
                 "PercentageNumerator": 100,
                 "Type": 0
             },
-            "PrimaryPriority": 1,
+            "PrimaryPriority": 3,
             "StartTimeUtc": "2025-08-03T18:30:00Z",
             "SurveyTemplate": {
                 "ActivationEvent": {
@@ -1205,7 +1205,7 @@
                 "PercentageNumerator": 100,
                 "Type": 0
             },
-            "PrimaryPriority": 1,
+            "PrimaryPriority": 3,
             "StartTimeUtc": "2025-07-02T18:30:00Z",
             "SurveyTemplate": {
                 "ActivationEvent": {

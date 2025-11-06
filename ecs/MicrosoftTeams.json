@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1189,6 +1189,7 @@
     "MicrosoftTeamsTemplates": {
         "Domain": {
             "Flights": {
+                "AllowChannelNameCaseChange": true,
                 "CheckCurrentSiteUsersInCaseOfRemove": true,
                 "ClientSideGetTemplatesCacheTimeWithRevalidation": 604800,
                 "ClientSideGetTemplatesCacheTimeWithoutRevalidation": 0,
