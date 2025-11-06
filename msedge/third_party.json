@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2173862,
+    "size": 2175116,
     "file_count": 183
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14771697,
+    "size": 14773301,
     "file_count": 839
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32419729,
-    "file_count": 3969
+    "size": 32427893,
+    "file_count": 3970
   },
   {
     "name": "boringssl",
@@ -311,7 +311,7 @@
   },
   {
     "name": "ink",
-    "size": 77893,
+    "size": 77857,
     "file_count": 11
   },
   {
@@ -336,8 +336,8 @@
   },
   {
     "name": "jetstream",
-    "size": 134951227,
-    "file_count": 68
+    "size": 219927531,
+    "file_count": 75
   },
   {
     "name": "jni_zero",
@@ -376,8 +376,8 @@
   },
   {
     "name": "libc++",
-    "size": 12318791,
-    "file_count": 1764
+    "size": 12319652,
+    "file_count": 1765
   },
   {
     "name": "libc++abi",
@@ -471,7 +471,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292264,
+    "size": 292652,
     "file_count": 47
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "skia",
-    "size": 3539038,
+    "size": 3539035,
     "file_count": 1184
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 531063,
+    "size": 536967,
     "file_count": 15
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "tflite",
-    "size": 1679460,
+    "size": 1679781,
     "file_count": 498
   },
   {
@@ -741,7 +741,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6623104,
+    "size": 6628172,
     "file_count": 176
   },
   {
