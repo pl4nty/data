@@ -18,6 +18,7 @@
     "Client_TraceRouteParticipationRate": "0.1",
     "Client_TraceRouteTargets": "[\"download.windowsupdate.com\",\"tlu.dl.delivery.mp.microsoft.com\",\"win10-trt.msedge.net\"]",
     "Client_UpRateAutoLimitEnabled": "0",
+    "Client_UseCacheHostForHttps": "1",
     "Client_VpnKeywords": "VPN,Secure,Virtual Private Network,Juniper,PANGP,Citrix",
     "ContentPolicy2_EndpointFullUri": "https://cp201.int.do.dsp.mp.microsoft.com/content/{contentId}/contentpolicy",
     "ContentPolicy2_EndpointUri": "https://cp201.int.do.dsp.mp.microsoft.com/",
@@ -38,6 +39,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "41CC47BE8788ADD96F8ED32214C0C5930542CA624F2F4A22522CC1B5E2DFB9E4",
+    "Version": "36A2E23361CE5FD8023580183E363ABFDA6B377CD506DDCCF1CDE3C740FCDEE5",
     "eid": "3"
 }
