@@ -28,8 +28,16 @@ if l_0_3 ~= nil and l_0_3 ~= "" then
     return mp.CLEAN
   end
   if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_3) then
-    return mp.INFECTED
+    local l_0_4 = (versioning.GetOrgID)()
+    if l_0_4 ~= nil and l_0_4 ~= "" and l_0_4:lower() == "2d1d3ad2-ead9-4243-95a6-8897fcc65ea7" then
+      if (sysio.IsFileExists)(l_0_3) then
+        (bm.add_threat_file)(l_0_3)
+      end
+      return mp.INFECTED
+    end
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 

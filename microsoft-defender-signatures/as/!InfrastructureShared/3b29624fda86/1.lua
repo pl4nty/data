@@ -3,6 +3,7 @@
 
 -- params : ...
 -- function num : 0
+(mp.set_mpattribute)("SCPT:Linux/SuspServiceCreation")
 local l_0_0 = (mp.getfilename)()
 if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN

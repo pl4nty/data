@@ -4,6 +4,7 @@
 -- params : ...
 -- function num : 0
 if #(mp.enum_mpattributesubstring)("SCPT:TabbyCat.AA") >= 2 and (string.find)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)), "%.java$") then
+  (mp.set_mpattribute)("MpNonPIIFileType")
   return mp.INFECTED
 end
 return mp.CLEAN

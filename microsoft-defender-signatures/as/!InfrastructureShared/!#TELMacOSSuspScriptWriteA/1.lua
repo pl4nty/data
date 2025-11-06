@@ -24,6 +24,9 @@ if l_0_4 ~= nil and type(l_0_4) == "table" and #l_0_4 > 0 then
   if l_0_5 == true and (l_0_2:find("^%.", 1, false) ~= nil or l_0_8:find("apple", 1, true) ~= nil or l_0_8:find("google", 1, true) ~= nil or l_0_8:find("system", 1, true) ~= nil or l_0_8:find("update", 1, true) ~= nil or l_0_8:find("settings", 1, true) ~= nil or l_0_8:find("install", 1, true) ~= nil) then
     l_0_6 = true
   end
+  if l_0_3:find("/Library/Application Support/JAMF/", 1, true) ~= nil or l_0_3:find("/Library/Application Support/AirWatch/", 1, true) ~= nil or l_0_3:find("/private/tmp/mcs/", 1, true) ~= nil or l_0_3:find("/private/tmp/hubd-check.sh", 1, true) ~= nil or l_0_3:find("^/private/tmp/PKInstallSandbox", 1, false) ~= nil or l_0_8 == "vpndownloader.sh" or l_0_3:find("/opt/managesoft/libexec/", 1, true) ~= nil then
+    return mp.CLEAN
+  end
   if l_0_5 == true and (l_0_8:find("ds_store", 1, true) ~= nil or l_0_2:find("^%._", 1, false) ~= nil) then
     l_0_7 = true
   end
