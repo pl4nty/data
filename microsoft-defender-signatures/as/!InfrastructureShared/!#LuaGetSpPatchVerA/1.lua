@@ -5,7 +5,7 @@
 -- function num : 0
 local l_0_0 = GetRollingQueueKeyValue("spPatchFound", "true")
 local l_0_1 = GetRollingQueueKeyValue("spPatchNotFound", "true")
-if l_0_1 ~= nil then
+if l_0_1 ~= nil and l_0_0 == nil then
   (mp.set_mpattribute)("Lua:spPatchNotFound")
   return mp.CLEAN
 end
@@ -107,15 +107,15 @@ if l_0_0 == nil then
                     end
                   end
                 end
-                -- DECOMPILER ERROR at PC261: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC261: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC261: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC261: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC261: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
