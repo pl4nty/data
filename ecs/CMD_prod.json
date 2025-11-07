@@ -609,6 +609,7 @@
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableW365MeterDataCompatibility": true,
         "EnableW365MeterForPlcy": true,
+        "EnableW365MeterForWarmPool": true,
         "EnableWDSRegistration": false,
         "EnableWIN1124H2_250113": true,
         "EnableWIN1124H2_250607": true,
