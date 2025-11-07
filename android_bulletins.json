@@ -67205,17 +67205,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
         "Published": "June 4, 2025",
         "Patch level": "2025-06-05",
-        "CVE": "CVE-2025-32335",
-        "References": "A-397679986",
-        "Type": "EoP",
-        "Severity": "High",
-        "Subcomponent": "rild",
-        "Component": "Pixel"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-06-01",
-        "Published": "June 4, 2025",
-        "Patch level": "2025-06-05",
         "CVE": "CVE-2025-32336",
         "References": "A-382577130",
         "Type": "EoP",
