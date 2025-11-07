@@ -13,19 +13,23 @@ if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDH
   (mp.set_mpattribute)("Lua:NewFileContextDataPresent")
   ;
   (mp.set_mpattribute)("Lua:NewFileContextData:ProcName!" .. l_0_0)
-  local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-  if l_0_2 ~= nil then
-    (mp.set_mpattribute)("Lua:NewFileContextData:FileName!" .. l_0_2)
+  local l_0_1 = l_0_0:match("%.(.+)$")
+  if l_0_1 then
+    (mp.set_mpattribute)("Lua:NewFileContextData:ProcNameExt!" .. l_0_1)
   end
-  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+  local l_0_2, l_0_3 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
   if l_0_3 ~= nil then
-    local l_0_4 = (mp.GetParentProcInfo)(l_0_3)
-    if l_0_4 ~= nil and l_0_4.image_path ~= nil then
-      local l_0_5 = (string.match)(l_0_4.image_path, "([^\\]+)$")
-      if l_0_5 then
-        l_0_5 = (string.lower)(l_0_5)
+    (mp.set_mpattribute)("Lua:NewFileContextData:FileName!" .. l_0_3)
+  end
+  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+  if l_0_4 ~= nil then
+    local l_0_5 = (mp.GetParentProcInfo)(l_0_4)
+    if l_0_5 ~= nil and l_0_5.image_path ~= nil then
+      local l_0_6 = (string.match)(l_0_5.image_path, "([^\\]+)$")
+      if l_0_6 then
+        l_0_6 = (string.lower)(l_0_6)
         ;
-        (mp.set_mpattribute)("Lua:NewFileContextData:Parent!" .. l_0_5)
+        (mp.set_mpattribute)("Lua:NewFileContextData:Parent!" .. l_0_6)
       end
     end
   end
