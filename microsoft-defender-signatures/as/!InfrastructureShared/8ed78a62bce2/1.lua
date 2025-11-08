@@ -26,8 +26,13 @@ end
 do
   do
     set_research_data("Cmdline", (MpCommon.Base64Encode)(l_0_1), false)
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC57: freeLocal<0 in 'ReleaseLocals'
+    ;
+    (mp.set_mpattribute)("HSTR:setup_cmdline_set")
+    if (mp.get_mpattribute)("HSTR:setup_type_set") then
+      return mp.INFECTED
+    end
+    do return mp.CLEAN end
+    -- DECOMPILER ERROR at PC70: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
