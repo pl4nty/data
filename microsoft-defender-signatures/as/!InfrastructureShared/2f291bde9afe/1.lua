@@ -24,16 +24,21 @@ if IsCloudTestMachine() then
 end
 local l_0_2 = "path\\s+c:\\\\*\\*?%?([\\s;]|$)"
 local l_0_3, l_0_4 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 then
+if l_0_3 and l_0_4 then
   set_research_data("BadExclusion", (MpCommon.Base64Encode)(l_0_4), false)
   return mp.INFECTED
 end
 l_0_2 = "path\\s+[\"\']c:\\\\*\\*?%?[\"\']([\\s;]|$)"
 l_0_3 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-if l_0_3 then
+if l_0_3 and l_0_4 then
   set_research_data("BadExclusion", (MpCommon.Base64Encode)(l_0_4), false)
   addDisruptionInfo(true)
   return mp.INFECTED
+end
+local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)("(path\\s+c:\\\\*\\*?%?([\\s;]|$))|(path\\s+[\"\']c:\\\\*\\*?%?[\"\']([\\s;]|$))", l_0_1)
+if l_0_6 then
+  set_research_data("BadExclusion", (MpCommon.Base64Encode)(l_0_6), false)
+  return mp.LOWFI
 end
 return mp.CLEAN
 
