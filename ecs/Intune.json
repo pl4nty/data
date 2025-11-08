@@ -321,6 +321,11 @@
             "EnableWebCPIOSDefenderIntegration": true
         }
     },
+    "SVC_MAMAdmin": {
+        "FlightingV2": {
+            "WindowsManagedAppClipboardSharingLevelFlightId": true
+        }
+    },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
             "EnrollDeviceActionAP": true,
