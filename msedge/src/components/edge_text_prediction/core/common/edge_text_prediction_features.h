@@ -33,6 +33,15 @@ extern const base::FeatureParam<std::string> kTextPredictionSupportedLanguages;
 COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
 extern const base::FeatureParam<size_t> kTextPredictionQueueSize;
 
+// Feature flag to enable thresholding for text prediction
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+BASE_DECLARE_FEATURE(kTextPredictionThreshold);
+
+// This is the param of specifying the minimum score. Predictions with lower
+// score than the threshold will be regarded as no prediction
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+extern const base::FeatureParam<double> kTextPredictionThresholdMinScore;
+
 }  // namespace text_prediction
 }  // namespace edge
 #endif  // COMPONENTS_EDGE_TEXT_PREDICTION_CORE_COMMON_EDGE_TEXT_PREDICTION_FEATURES_H_
