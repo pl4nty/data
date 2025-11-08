@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1784,6 +1784,7 @@
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
             "EnableDynamicSuggestedPrompts": true,
+            "EnableEarlyCoTFromGCB": false,
             "EnableEarlyResponsesForInvokeBot": true,
             "EnableFetchCallConversationData": true,
             "EnableLocalizedAskFacilitator": true,
@@ -1803,6 +1804,7 @@
             "EnableAiMetadata": true,
             "EnableAttachAppIdToSendActivity": true,
             "EnableBizchatIntegration": true,
+            "EnableConversationalContinuity": true,
             "EnableGetAppIdFromTurnContext": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableShowTypingMiddleware": true,
@@ -1862,6 +1864,12 @@
                     "IsEnabled": true
                 }
             ],
+            "MeetingTimerSkill_AgendaSmartActions": [
+                {
+                    "Flight": "enableAgendaSmartActions",
+                    "IsEnabled": true
+                }
+            ],
             "MeetingTimerSkill_ReactiveAgenda": [
                 {
                     "Flight": "enableAgendaTimerReactiveResponse",
@@ -1877,6 +1885,12 @@
                 },
                 {
                     "Flight": "enableAgendaModificationV2",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingTimerSkill_enableTimerSmartActions": [
+                {
+                    "Flight": "enableTimerSmartActions",
                     "IsEnabled": true
                 }
             ],
