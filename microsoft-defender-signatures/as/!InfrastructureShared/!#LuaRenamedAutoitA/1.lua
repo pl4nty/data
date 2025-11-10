@@ -9,5 +9,8 @@ if l_0_0 == nil then
 end
 ;
 (MpCommon.SetOriginalFileName)(l_0_0, "autoit3.exe")
+if not IsKeyInRollingQueue("RenamedAutoitPath", (string.lower)(l_0_0), true) then
+  AppendToRollingQueue("RenamedAutoitPath", (string.lower)(l_0_0))
+end
 return mp.INFECTED
 
