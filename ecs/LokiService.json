@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251106.2.0",
+        "CalendarCompanionDFVersion": "1.20251109.1.0",
         "CalendarCompanionMsitVersion": "1.20251102.5.0",
         "CalendarCompanionProdVersion": "1.20251026.1.0",
         "CompanionRing": "Prod",
@@ -1068,7 +1068,10 @@
             "EventSearchQuery",
             "PromptCardViewUserFormsQuery",
             "FormsListHistoryViewQuery",
-            "LpcAiGeneratedAboutMeWithData_DataQuery"
+            "MeCardAboutMeWithData_AcceptedDataQuery",
+            "MeCardAboutMeWithData_UnacceptedDataQuery",
+            "YouCardAboutMeWithData_DataQuery",
+            "AcceptAiGeneratedAboutMeMutation"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1329,6 +1332,124 @@
         "ObjectStoreVIPWW": "https://ObjectStoreFD.Prod.WestUS2.BingInternal.com:443/sds",
         "OrgExplorerLinkEnabled": false,
         "OrganizationChartProviderAzureMachineLearningEndpointUri": "https://inferencey96ecn.eastus.cloudapp.azure.com:443/api/v1/service/get-introduced-model-ppe-service/score",
+        "OrganizationPrompts": {
+            "IndividualContributorMe": [
+                {
+                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_HowManyDirectReports"
+                },
+                {
+                    "CommandText": "Show the total number of employees in <entity type='person'>person</entity> organization, including both direct and indirect reports. Group the count into two categories: people managers and individual contributors (ICs). Clearly distinguish between direct and indirect reports in the output. If there are  no reports, state this clearly. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "PillText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_GroupedByManagerIC"
+                },
+                {
+                    "CommandText": "Provide a structured list of employees in <entity type='person'>person</entity> team grouped by country. Include direct and indirect reports, reflect changes in the past 7 days, and clearly state if there are no indirect reports.",
+                    "DisplayText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "PillText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_TeamDistributionByCountry"
+                }
+            ],
+            "ManagerMe": [
+                {
+                    "CommandText": "Show the number of people who report to me. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many direct reports do I have?",
+                    "PillText": "How many direct reports do I have?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_HowManyDirectReports"
+                },
+                {
+                    "CommandText": "Show the total number of employees in my organization, including both direct and indirect reports. Group the count into two categories: people managers and individual contributors (ICs). Clearly distinguish between direct and indirect reports in the output. If there are  no reports, state this clearly. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many employees are in my organization, grouped by managers and ICs?",
+                    "PillText": "How many employees are in my organization, grouped by managers and ICs?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_GroupedByManagerIC"
+                },
+                {
+                    "CommandText": "Provide a structured list of employees in my team grouped by country. Include direct and indirect reports, reflect changes in the past 7 days, and clearly state if there are no indirect reports.",
+                    "DisplayText": "How is my team distributed across countries?",
+                    "PillText": "How is my team distributed across countries?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_TeamDistributionByCountry"
+                }
+            ],
+            "ViewingIndividualContributor": [
+                {
+                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_HowManyDirectReports"
+                },
+                {
+                    "CommandText": "Show the total number of employees in <entity type='person'>person</entity> organization, including both direct and indirect reports. Group the count into two categories: people managers and individual contributors (ICs). Clearly distinguish between direct and indirect reports in the output. If there are  no reports, state this clearly. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "PillText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_GroupedByManagerIC"
+                },
+                {
+                    "CommandText": "Provide a structured list of employees in <entity type='person'>person</entity> team grouped by country. Include direct and indirect reports, reflect changes in the past 7 days, and clearly state if there are no indirect reports.",
+                    "DisplayText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "PillText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_TeamDistributionByCountry"
+                }
+            ],
+            "ViewingManager": [
+                {
+                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_HowManyDirectReports"
+                },
+                {
+                    "CommandText": "Show the total number of employees in <entity type='person'>person</entity> organization, including both direct and indirect reports. Group the count into two categories: people managers and individual contributors (ICs). Clearly distinguish between direct and indirect reports in the output. If there are  no reports, state this clearly. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "PillText": "How many employees are in <entity type='person'>person</entity>'s organization, grouped by managers and ICs?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_GroupedByManagerIC"
+                },
+                {
+                    "CommandText": "Provide a structured list of employees in <entity type='person'>person</entity> team grouped by country. Include direct and indirect reports, reflect changes in the past 7 days, and clearly state if there are no indirect reports.",
+                    "DisplayText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "PillText": "How is <entity type='person'>person</entity>'s team distributed across countries?",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "OrganizationPrompts_TeamDistributionByCountry"
+                }
+            ]
+        },
         "OutlookMsalAuthRedirectUrl": "https://outlook.office.com/mail/LinkedInBindRedirect.html",
         "PeopleCardKeepTopNInsightsFilterSettings": 10,
         "PeopleHighlightsGdprExportIsEnabled": true,
