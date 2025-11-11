@@ -1045,8 +1045,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.6.1",
+        "version": "2.7.2",
         "versions": [
+            "2.7.2",
             "2.6.1",
             "2.1.0",
             "2.0.1",

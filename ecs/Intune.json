@@ -260,6 +260,11 @@
             "EnableVerifyAcmeChallengeFromIdentifier": true
         }
     },
+    "SVC_DFCI": {
+        "FlightingV2": {
+            "EnableDFCICleanPendingPacketQueues": true
+        }
+    },
     "SVC_DataInfra": {
         "FlightingV2": {
             "HardwareConfigLogging": true,
