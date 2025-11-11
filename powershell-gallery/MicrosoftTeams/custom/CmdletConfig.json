@@ -674,6 +674,22 @@
         "SelfHost"
       ]
     },
+    "Set-CsPhoneNumberAssignmentBlock": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Remove-CsPhoneNumberAssignmentBlock": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
     "Export-CsAcquiredPhoneNumber": {
       "CmdletType": "AutoRest",
       "ExportsTo": [

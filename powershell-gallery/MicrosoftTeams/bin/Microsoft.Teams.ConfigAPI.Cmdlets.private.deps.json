@@ -11,7 +11,7 @@
         "dependencies": {
           "BrotliSharpLib": "0.3.3",
           "Microsoft.CSharp": "4.7.0",
-          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.4",
+          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.5",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.3",
           "PowerShellStandard.Library": "5.1.0",
@@ -74,15 +74,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
-      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.4": {
+      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.5": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "PowerShellStandard.Library": "5.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Teams.ConfigAPI.CmdletHostContract.dll": {
-            "assemblyVersion": "3.2.4.0",
-            "fileVersion": "3.2.4.0"
+            "assemblyVersion": "3.2.5.0",
+            "fileVersion": "3.2.5.0"
           }
         }
       },
@@ -186,12 +186,12 @@
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.4": {
+    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6Dt9GnaRhKGPF2Z0qB+TwWzKbGT2JyuiCH6RumH7nA9jIK+HK2reZIYz2YMeVfpeZd3Cy5yAgt6S5acDEEGiiA==",
-      "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.4",
-      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.4.nupkg.sha512"
+      "sha512": "sha512-nfRj8fwBDxwFb6R8RdMTNpiNSTga08EbNWvsNCsNqC4XDVnldxPIu65xkQKjssfCdIc/KFES5u69ITXb3DK4vg==",
+      "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.5",
+      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.5.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",

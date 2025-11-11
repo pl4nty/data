@@ -2079,6 +2079,9 @@
           <TableColumnHeader>
             <Label>Name</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RingResourceAccountDelegate</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
@@ -2091,6 +2094,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RingResourceAccountDelegate</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -4802,6 +4808,9 @@
           <TableColumnHeader>
             <Label>Name</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RingResourceAccountDelegate</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
@@ -4811,6 +4820,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RingResourceAccountDelegate</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -6021,10 +6033,16 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
+            <Label>JoinActiveCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>MakeCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>ManageSetting</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PickUpHeldCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>ReceiveCall</Label>
@@ -6034,10 +6052,16 @@
           <TableRowEntry>
             <TableColumnItems>
               <TableColumnItem>
+                <PropertyName>JoinActiveCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>MakeCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ManageSetting</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PickUpHeldCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ReceiveCall</PropertyName>
@@ -12661,6 +12685,12 @@
             <Label>AssignedPstnTargetId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AssignmentBlockedState</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AssignmentBlockedUntil</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>AssignmentCategory</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -12726,6 +12756,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AssignedPstnTargetId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedState</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedUntil</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AssignmentCategory</PropertyName>
@@ -13119,6 +13155,40 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Status</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletSetAssignmentBlockRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletSetAssignmentBlockRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AssignmentBlockedDay</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AssignmentBlockedForever</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TelephoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedDay</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedForever</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TelephoneNumber</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>

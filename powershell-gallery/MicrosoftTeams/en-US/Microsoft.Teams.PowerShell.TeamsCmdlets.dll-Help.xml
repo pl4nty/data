@@ -2110,6 +2110,162 @@ PS&gt; Get-Team -DisplayName $team</dev:code>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
+      <command:name>Get-TeamsArtifacts</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>TeamsArtifacts</command:noun>
+      <maml:description>
+        <maml:para>The `Get-TeamsArtifacts` is available only to tenant administrators and is designed to export Recordings, Transcripts, Notes and Whiteboard artifacts of Teams Meetings. All parameters are optional. If no parameters are specified, artifact metadata is returned for Teams artifacts in all standard OneDrive for Business and SharePoint locations. The actual artifacts themselves can then be downloaded from the URLs in the metadata returned. Output is written to artifacts.json in the current directory.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This cmdlet exports Recordings, Transcripts, Notes and Whiteboard artifacts of Teams Meetings.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-TeamsArtifacts</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OneDrive</maml:name>
+          <maml:description>
+            <maml:para>Returns only artifacts that are hosted in the standard locations of that user's OneDrive for Business.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SharePoint</maml:name>
+          <maml:description>
+            <maml:para>Returns only the artifacts that are hosted in SharePoint sites (typically from channel meetings).</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ArtifactType</maml:name>
+          <maml:description>
+            <maml:para>Filters the results to a single artifact type. It's s Enum containing only three values: RecordingTranscript | Notes | Whiteboard.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>StartTime</maml:name>
+          <maml:description>
+            <maml:para>Omits artifacts that are last modified prior to this date and time.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EndTime</maml:name>
+          <maml:description>
+            <maml:para>Omits artifacts that are last modified after this date and time.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OneDrive</maml:name>
+        <maml:description>
+          <maml:para>Returns only artifacts that are hosted in the standard locations of that user's OneDrive for Business.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SharePoint</maml:name>
+        <maml:description>
+          <maml:para>Returns only the artifacts that are hosted in SharePoint sites (typically from channel meetings).</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ArtifactType</maml:name>
+        <maml:description>
+          <maml:para>Filters the results to a single artifact type. It's s Enum containing only three values: RecordingTranscript | Notes | Whiteboard.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>StartTime</maml:name>
+        <maml:description>
+          <maml:para>Omits artifacts that are last modified prior to this date and time.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EndTime</maml:name>
+        <maml:description>
+          <maml:para>Omits artifacts that are last modified after this date and time.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-TeamsArtifacts -OneDrive user@contoso.com -StartTime "2025-06-20" -EndTime "2025-06-26"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
       <command:name>Get-TeamTargetingHierarchyStatus</command:name>
       <command:verb>Get</command:verb>
       <command:noun>TeamTargetingHierarchyStatus</command:noun>
@@ -2326,6 +2482,88 @@ FileName        : hier.csv</dev:code>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
         <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-teamuser</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-TenantPrivateChannelMigrationStatus</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>TenantPrivateChannelMigrationStatus</command:noun>
+      <maml:description>
+        <maml:para>You use the `Get-TenantPrivateChannelMigrationStatus` cmdlet to check the status of private channel migration for your tenant.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The `Get-TenantPrivateChannelMigrationStatus` cmdlet allows tenant administrators to track the status of the private channel migration for their Microsoft Teams organization. More details about the migration can be found here (https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767#) Note: This cmdlet requires tenant administrator permissions to execute.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-TenantPrivateChannelMigrationStatus</maml:name>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet returns a `PrivateChannelMigrationStatusResponse` object with the following properties: TenantId : The Azure AD tenant identifier for your organization. MigrationStatus : The current migration status for private channels in your tenant. MigrationStartTimeStamp : The timestamp when the migration started for this tenant. MigrationCompletionTimeStamp : The timestamp when the migration completed for this tenant.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- This cmdlet requires tenant administrator permissions</maml:para>
+        <maml:para>- The cmdlet connects to the Teams and Channels service to retrieve migration status information</maml:para>
+        <maml:para>- Private channels remain functional throughout the migration process</maml:para>
+        <maml:para>- This enhancement helps make private channels more scalable, manageable, and compliant</maml:para>
+        <maml:para></maml:para>
+        <maml:para>Common migration status values include: - NotStarted : Migration has not yet begun - InProgress : Migration is currently running - Completed : Migration has finished successfully</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>Get-TenantPrivateChannelMigrationStatus
+
+
+TenantId                     : 12345678-1234-1234-1234-123456789abc
+MigrationStatus              : Completed
+MigrationStartTimeStamp      : 2025-10-09T10:15:00.456Z
+MigrationCompletionTimeStamp : 2025-10-09T12:45:00.789Z</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>New enhancements in Private Channels in Microsoft Teams unlock their full potential</maml:linkText>
+        <maml:uri>https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Microsoft Teams PowerShell Overview</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/teams/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-Team</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-team</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-TeamChannel</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-teamchannel</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>

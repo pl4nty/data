@@ -8348,6 +8348,7 @@ BODY <ICreateAutoAttendantRequest>: .
       [VoiceResponse <String[]>]: 
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
+    [RingResourceAccountDelegate <Boolean?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
@@ -8358,6 +8359,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
+  [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
   [HideAuthorizedUser <String[]>]: Gets or sets hidden authorized user ids.
@@ -8415,6 +8417,7 @@ CALLFLOW <ICallFlow[]>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -8518,6 +8521,12 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${DefaultCallFlowRingResourceAccountDelegate},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -8964,6 +8973,7 @@ BODY <ICreateCallFlowRequest>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 GREETING <IPrompt[]>: .
   [ActiveType <String>]: 
@@ -9065,6 +9075,12 @@ param(
     [System.String]
     # .
     ${Name},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${RingResourceAccountDelegates},
 
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
@@ -14152,6 +14168,18 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${ReceiveCalls},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to join active calls.
+    ${JoinActiveCalls},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to pick up held calls.
+    ${PickUpHeldCalls},
 
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
@@ -22502,6 +22530,7 @@ BODY <ICreateCallFlowRequest>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 GREETING <IPrompt[]>: .
   [ActiveType <String>]: 
@@ -22603,6 +22632,12 @@ param(
     [System.String]
     # .
     ${Name},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${RingResourceAccountDelegates},
 
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
@@ -23625,6 +23660,7 @@ BODY <ICreateAutoAttendantRequest>: .
       [VoiceResponse <String[]>]: 
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
+    [RingResourceAccountDelegate <Boolean?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
@@ -23635,6 +23671,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
+  [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
   [HideAuthorizedUser <String[]>]: Gets or sets hidden authorized user ids.
@@ -23692,6 +23729,7 @@ CALLFLOW <ICallFlow[]>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -23795,6 +23833,12 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${DefaultCallFlowRingResourceAccountDelegate},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -28021,6 +28065,18 @@ param(
     # .
     ${ReceiveCalls},
 
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to join active calls.
+    ${JoinActiveCalls},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to pick up held calls.
+    ${PickUpHeldCalls},
+
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
@@ -30058,6 +30114,18 @@ param(
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${AssignmentBlockedDays},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AssignmentBlockedForever},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${Notify},
@@ -31030,6 +31098,7 @@ BODY <IAutoAttendant>: .
       [VoiceResponse <String[]>]: 
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
+    [RingResourceAccountDelegate <Boolean?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
@@ -31040,6 +31109,7 @@ BODY <IAutoAttendant>: .
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
+  [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
   [DialByNameResourceId <String>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
@@ -31135,6 +31205,7 @@ CALLFLOW <ICallFlow[]>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -31342,6 +31413,13 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${DefaultCallFlowRingResourceAccountDelegate},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -36333,6 +36411,12 @@ param(
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to join active calls.
+    ${JoinActiveCalls},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
     # If the member is allowed to make calls.
     ${MakeCalls},
 
@@ -36341,6 +36425,12 @@ param(
     [System.Management.Automation.SwitchParameter]
     # If the member is allowed to manage call settings.
     ${ManageSettings},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to pick up held calls.
+    ${PickUpHeldCalls},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
@@ -36464,8 +36554,10 @@ BODY <IUserRoutingSettings>: .
   [CallGroupTargets <String[]>]: 
   [Delegates <IDelegationDetail[]>]: 
     [Id <String>]: 
+    [JoinActiveCalls <Boolean?>]: 
     [MakeCalls <Boolean?>]: 
     [ManageSettings <Boolean?>]: 
+    [PickUpHeldCalls <Boolean?>]: 
     [ReceiveCalls <Boolean?>]: 
   [Delegators <IDelegationDetail[]>]: 
   [ForwardingTarget <String>]: 
@@ -36484,14 +36576,18 @@ BODY <IUserRoutingSettings>: .
 
 DELEGATIONSETTINGDELEGATE <IDelegationDetail[]>: .
   [Id <String>]: 
+  [JoinActiveCalls <Boolean?>]: 
   [MakeCalls <Boolean?>]: 
   [ManageSettings <Boolean?>]: 
+  [PickUpHeldCalls <Boolean?>]: 
   [ReceiveCalls <Boolean?>]: 
 
 DELEGATIONSETTINGDELEGATOR <IDelegationDetail[]>: .
   [Id <String>]: 
+  [JoinActiveCalls <Boolean?>]: 
   [MakeCalls <Boolean?>]: 
   [ManageSettings <Boolean?>]: 
+  [PickUpHeldCalls <Boolean?>]: 
   [ReceiveCalls <Boolean?>]: 
 
 GROUPMEMBERSHIPDETAILS <ICallGroupMembershipDetails[]>: .
@@ -39711,6 +39807,18 @@ param(
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${AssignmentBlockedDays},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${AssignmentBlockedForever},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${Notify},
@@ -40713,6 +40821,7 @@ BODY <IAutoAttendant>: .
       [VoiceResponse <String[]>]: 
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
+    [RingResourceAccountDelegate <Boolean?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
@@ -40723,6 +40832,7 @@ BODY <IAutoAttendant>: .
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
+  [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
   [DialByNameResourceId <String>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
@@ -40818,6 +40928,7 @@ CALLFLOW <ICallFlow[]>: .
     [VoiceResponse <String[]>]: 
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
+  [RingResourceAccountDelegate <Boolean?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -41025,6 +41136,13 @@ param(
     [System.String]
     # .
     ${DefaultCallFlowName},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${DefaultCallFlowRingResourceAccountDelegate},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -46106,6 +46224,12 @@ param(
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
     [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to join active calls.
+    ${JoinActiveCalls},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
     # If the member is allowed to make calls.
     ${MakeCalls},
 
@@ -46114,6 +46238,12 @@ param(
     [System.Management.Automation.SwitchParameter]
     # If the member is allowed to manage call settings.
     ${ManageSettings},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # If the member is allowed to pick up held calls.
+    ${PickUpHeldCalls},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
@@ -46242,8 +46372,10 @@ BODY <IUserRoutingSettings>: .
   [CallGroupTargets <String[]>]: 
   [Delegates <IDelegationDetail[]>]: 
     [Id <String>]: 
+    [JoinActiveCalls <Boolean?>]: 
     [MakeCalls <Boolean?>]: 
     [ManageSettings <Boolean?>]: 
+    [PickUpHeldCalls <Boolean?>]: 
     [ReceiveCalls <Boolean?>]: 
   [Delegators <IDelegationDetail[]>]: 
   [ForwardingTarget <String>]: 
@@ -46262,14 +46394,18 @@ BODY <IUserRoutingSettings>: .
 
 DELEGATIONSETTINGDELEGATE <IDelegationDetail[]>: .
   [Id <String>]: 
+  [JoinActiveCalls <Boolean?>]: 
   [MakeCalls <Boolean?>]: 
   [ManageSettings <Boolean?>]: 
+  [PickUpHeldCalls <Boolean?>]: 
   [ReceiveCalls <Boolean?>]: 
 
 DELEGATIONSETTINGDELEGATOR <IDelegationDetail[]>: .
   [Id <String>]: 
+  [JoinActiveCalls <Boolean?>]: 
   [MakeCalls <Boolean?>]: 
   [ManageSettings <Boolean?>]: 
+  [PickUpHeldCalls <Boolean?>]: 
   [ReceiveCalls <Boolean?>]: 
 
 GROUPMEMBERSHIPDETAILS <ICallGroupMembershipDetails[]>: .
