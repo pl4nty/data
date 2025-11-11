@@ -921,7 +921,6 @@
         "EnabledCloudProfileUX": true,
         "EnabledPolicyServiceFetchFLsRegionByCapApi": true,
         "EnabledReplaceOldConnResultByNgCheckResult": true,
-        "EnabledShowCustomUserStorage": false,
         "EnabledUserSettingsPersistence": true,
         "EnabledUserSettingsPersistenceConfiguration": true,
         "EventSubscriptionAddResourceActionFailure": true,
