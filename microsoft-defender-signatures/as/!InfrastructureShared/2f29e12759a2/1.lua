@@ -19,9 +19,9 @@ end
 if not l_0_1 then
   return mp.CLEAN
 end
-local l_0_2 = "path\\s+c:\\\\*\\*?%?([\\s;]|$)"
+local l_0_2 = "(path\\s+c:\\\\*\\*?%?([\\s;]|$))"
 local l_0_3, l_0_4 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
-l_0_2 = "path\\s+[\"\']c:\\\\*\\*?%?[\"\']([\\s;]|$)"
+l_0_2 = "(path\\s+[\"\']c:\\\\*\\*?%?[\"\']([\\s;]|$))"
 local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
 if IsCloudTestMachine() then
   return mp.CLEAN
@@ -29,28 +29,19 @@ end
 if l_0_3 == false and l_0_5 == false then
   return mp.CLEAN
 end
+local l_0_7 = set_research_data
+local l_0_8 = "BadExclusion"
+local l_0_9 = MpCommon.Base64Encode
 do
-  if not l_0_4 and not l_0_6 then
-    local l_0_7, l_0_8 = (MpCommon.StringRegExpSearch)("(path\\s+c:\\\\*\\*?%?([\\s;]|$))|(path\\s+[\"\']c:\\\\*\\*?%?[\"\']([\\s;]|$))", l_0_1)
-    if l_0_8 then
-      set_research_data("BadExclusion", (MpCommon.Base64Encode)(l_0_8), false)
-      return mp.LOWFI
-    end
-  end
-  local l_0_9 = set_research_data
-  local l_0_10 = "BadExclusion"
-  local l_0_11 = MpCommon.Base64Encode
-  do
-    l_0_11 = l_0_11(l_0_4 or l_0_6)
-    l_0_9(l_0_10, l_0_11, false)
-    l_0_9 = addDisruptionInfo
-    l_0_10 = true
-    l_0_9(l_0_10)
-    l_0_9 = mp
-    l_0_9 = l_0_9.INFECTED
-    do return l_0_9 end
-    -- DECOMPILER ERROR at PC105: freeLocal<0 in 'ReleaseLocals'
+  l_0_9 = l_0_9(l_0_4 or l_0_6)
+  l_0_7(l_0_8, l_0_9, false)
+  l_0_7 = addDisruptionInfo
+  l_0_8 = true
+  l_0_7(l_0_8)
+  l_0_7 = mp
+  l_0_7 = l_0_7.INFECTED
+  do return l_0_7 end
+  -- DECOMPILER ERROR at PC83: freeLocal<0 in 'ReleaseLocals'
 
-  end
 end
 
