@@ -7,7 +7,7 @@
 RootModule = './Microsoft.Teams.Policy.Administration.Cmdlets.Core.psm1'
 
 # Version number of this module.
-ModuleVersion = '21.4.4'
+ModuleVersion = '23.4.4'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -311,7 +311,14 @@ CmdletsToExport = @(
     'Remove-CsTeamsRemoteLogCollectionDevice',
 
     'Get-CsTeamsAcsFederationConfiguration',
-    'Set-CsTeamsAcsFederationConfiguration'
+    'Set-CsTeamsAcsFederationConfiguration',
+
+    'New-CsTeamsRecordingAndTranscriptionLocalizationCustomMessage',
+
+    'Get-CsTeamsRecordingAndTranscriptionCustomMessage',
+    'Set-CsTeamsRecordingAndTranscriptionCustomMessage',
+    'Remove-CsTeamsRecordingAndTranscriptionCustomMessage',
+    'New-CsTeamsRecordingAndTranscriptionCustomMessage'
 )
 
 # Variables to export from this module

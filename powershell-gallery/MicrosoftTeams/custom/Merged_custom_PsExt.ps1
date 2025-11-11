@@ -1444,6 +1444,14 @@ function Remove-CsPhoneNumberAssignment {
         [Switch]
         ${Notify},
 
+        [Parameter(Mandatory=$false, ParameterSetName='RemoveSome')]
+        [Switch]
+        ${AssignmentBlockedForever},
+
+        [Parameter(Mandatory=$false, ParameterSetName='RemoveSome')]
+        [System.Int32]
+        ${AssignmentBlockedDays},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -4430,6 +4438,14 @@ function New-CsUserCallingDelegate {
         [System.Boolean]
         ${ReceiveCalls},
 
+        [Parameter(Mandatory=$true, ParameterSetName='Identity')]
+        [System.Boolean]
+        ${PickUpHeldCalls},
+
+        [Parameter(Mandatory=$true, ParameterSetName='Identity')]
+        [System.Boolean]
+        ${JoinActiveCalls},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -4668,6 +4684,14 @@ function Set-CsUserCallingDelegate {
         [Parameter(Mandatory=$false, ParameterSetName='Identity')]
         [System.Boolean]
         ${ReceiveCalls},
+
+        [Parameter(Mandatory=$false, ParameterSetName='Identity')]
+        [System.Boolean]
+        ${PickUpHeldCalls},
+
+        [Parameter(Mandatory=$false, ParameterSetName='Identity')]
+        [System.Boolean]
+        ${JoinActiveCalls},
 
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -7406,6 +7430,9 @@ function New-CsAutoAttendant {
                 if ($DefaultCallFlow.ForceListenMenuEnabled -eq $true) {
                     $PSBoundParameters.Add('DefaultCallFlowForceListenMenuEnabled', $true)
                 }
+                if ($DefaultCallFlow.RingResourceAccountDelegates -eq $true) {
+                    $PSBoundParameters.Add('DefaultCallFlowRingResourceAccountDelegate', $true)
+                }
                 if ($DefaultCallFlow.Menu -ne $null) {
                     if ($DefaultCallFlow.Menu.DialByNameEnabled) {
                         $PSBoundParameters.Add('MenuDialByNameEnabled', $true)
@@ -7702,6 +7729,11 @@ function New-CsAutoAttendantCallFlow {
 
         [Parameter(Mandatory=$false, position=4)]
         [Switch]
+        # The RingResourceAccountDelegates parameter indicates whether the call flow should ring resource account delegates.
+        ${RingResourceAccountDelegates},
+
+        [Parameter(Mandatory=$false, position=5)]
+        [Switch]
         # The Force parameter indicates if we force the action to be performed. (Deprecated)
         ${Force},
 
@@ -7726,6 +7758,12 @@ function New-CsAutoAttendantCallFlow {
                 $null = $PSBoundParameters.Remove("ForceListenMenuEnabled")
                 $PSBoundParameters.Add('ForceListenMenuEnabled', $ForceListenMenuEnabled)
             }
+
+            If ($RingResourceAccountDelegates -ne $null){
+                $null = $PSBoundParameters.Remove("RingResourceAccountDelegates")
+                $PSBoundParameters.Add('RingResourceAccountDelegates', $RingResourceAccountDelegates)
+            }
+
             # Default ErrorAction to $ErrorActionPreference
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
@@ -10882,6 +10920,7 @@ function Set-CsAutoAttendant {
                 $PSBoundParameters.Add('DefaultCallFlowId', $Instance.DefaultCallFlow.Id)
                 $PSBoundParameters.Add('DefaultCallFlowName', $Instance.DefaultCallFlow.Name)
                 $PSBoundParameters.Add('DefaultCallFlowForceListenMenuEnabled', $Instance.DefaultCallFlow.ForceListenMenuEnabled)
+                $PSBoundParameters.Add('DefaultCallFlowRingResourceAccountDelegate', $Instance.DefaultCallFlow.RingResourceAccountDelegates)
                 $defaultCallFlowGreetings = @()
                 if ($Instance.DefaultCallFlow.Greetings -ne $null) {
                     foreach ($defaultCallFlowGreeting in $Instance.DefaultCallFlow.Greetings) {

@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.4.0'
+ModuleVersion = '7.5.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -337,6 +337,7 @@ FunctionsToExport =  @(
 	,'Remove-CsOnlineVoiceRoute'
 	,'Remove-CsOnlineVoiceRoutingPolicy'
 	,'Remove-CsPhoneNumberAssignment'
+	,'Remove-CsPhoneNumberAssignmentBlock'
 	,'Remove-CsPhoneNumberTag'
 	,'Remove-CsTeamsAudioConferencingPolicy'
 	,'Remove-CsTeamsCallParkPolicy'
@@ -403,6 +404,7 @@ FunctionsToExport =  @(
 	,'Set-CsOnlineVoiceRoutingPolicy'
 	,'Set-CsOnlineVoiceUser'
 	,'Set-CsPhoneNumberAssignment'
+	,'Set-CsPhoneNumberAssignmentBlock'
 	,'Set-CsPhoneNumberPolicyAssignment'
 	,'Set-CsPhoneNumberTag'
 	,'Set-CsTeamsAudioConferencingPolicy'
@@ -570,6 +572,7 @@ CmdletsToExport = @(
     ,'Get-CsTeamsRecordingRollOutPolicy'
 	,'Get-CsTeamsRemoteLogCollectionConfiguration'
 	,'Get-CsTeamsRemoteLogCollectionDevice'
+	,'Get-CsTeamsRecordingAndTranscriptionCustomMessage'
     ,'Get-CsTeamsEducationConfiguration'
     ,'Get-CsTeamsBYODAndDesksPolicy'
     ,'Get-CsTeamsNotificationAndFeedsPolicy'
@@ -634,6 +637,8 @@ CmdletsToExport = @(
 	,'New-CsTeamsWorkLocationDetectionPolicy'
     ,'New-CsTeamsRecordingRollOutPolicy'
 	,'New-CsTeamsRemoteLogCollectionDevice'
+	,'New-CsTeamsRecordingAndTranscriptionCustomMessage'
+	,'New-CsTeamsRecordingAndTranscriptionLocalizationCustomMessage'
 	,"New-CsCustomPrompt"
     ,"New-CsCustomPromptPackage"
 	,'New-CsTeamsShiftsPolicy'
@@ -679,6 +684,7 @@ CmdletsToExport = @(
 	,'Remove-CsTeamsWorkLocationDetectionPolicy'
     ,'Remove-CsTeamsRecordingRollOutPolicy'
 	,'Remove-CsTeamsRemoteLogCollectionDevice'
+	,'Remove-CsTeamsRecordingAndTranscriptionCustomMessage'
     ,'Remove-CsTeamsBYODAndDesksPolicy'
     ,'Remove-CsTeamsNotificationAndFeedsPolicy'
 	,'Remove-CsTeamsPersonalAttendantPolicy'
@@ -731,6 +737,7 @@ CmdletsToExport = @(
 	,'Set-CsTeamsWorkLocationDetectionPolicy'
 	,'Set-CsTeamsRemoteLogCollectionDevice'
     ,'Set-CsTeamsRecordingRollOutPolicy'
+	,'Set-CsTeamsRecordingAndTranscriptionCustomMessage'
 	,'Set-CsTeamsCustomBannerText'
     ,'Set-CsTeamsBYODAndDesksPolicy'
     ,'Set-CsTeamsNotificationAndFeedsPolicy'
@@ -772,7 +779,7 @@ CmdletsToExport = @(
     ,'Set-TeamTargetingHierarchy'
 #preview    ,'Update-TeamsAppInstallation'
 #preview    ,'Get-LicenseReportForChangeNotificationSubscription'
-#preview    ,'Get-TenantPrivateChannelMigrationStatus'
+    ,'Get-TenantPrivateChannelMigrationStatus'
  )
 
 # Variables to export from this module
@@ -810,13 +817,21 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.4.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Releases Get-TeamsArtifacts cmdlet.
-- Adds MainlineAttendantAgentVoiceId parameter to New-CsAutoAttendant cmdlet.
-- Releases [New|Set|Remove|Get]-CsTagsTemplate cmdlets.
-- Releases New-CsTag cmdlet.
-- [BREAKING CHANGE] Renames BotId and PairedApplication parameters in [New|Set|Get]-CsComplianceRecordingForCallQueueTemplate cmdlets to BotApplicationInstanceObjectId and PairedApplicationInstanceObjectId respectively.
-- Releases Get-TeamsRemoteLogCollectionConfiguration and [Get|Set|New|Remove]-TeamsRemoteLogCollectionDevice cmdlets.
+ **7.5.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Adds PickUpHeldCalls and JoinActiveCalls parameters to the [New|Set]-CsUserCallingDelegate cmdlets and corresponding output attributes to the Get-CsUserCallingSettings cmdlet.
+- Adds AssignmentBlockedState and AssignmentBlockedUntil output attributes to [Get]-CsPhoneNumberAssignment cmdlet.
+- Releases [Set|Remove]-CsPhoneNumberAssignmentBlock cmdlets.
+- Adds DynamicCallerIdMode parameter to [Get|Set]-CsOnlineDialInConferencingTenantSettings cmdlets.
+- Adds BackroomChat parameter to [New|Set]-CsTeamsMeetingPolicy and [New|Set]-CsTeamsEventsPolicy cmdlets.
+- Adds UseUnifiedDomain parameter to Set-CsTeamsClientConfiguration cmdlet.
+- [BREAKING CHANGE] Replaces MaxResolutionForTownhall parameter with TownhallMaxResolution in [Get|Set|New|Remove]-CsTeamsEventsPolicy cmdlets.
+- Adds ExternalPresenterJoinVerification parameter to [Set|New]-CsTeamsEventsPolicy cmdlets.
+- Adds PasiveVoiceEnrollment parameter to [New|Set]-CsTeamsAIPolicy cmdlets.
+- Adds SetRecordingAndTranscriptOwnership parameter to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- Adds EnableRecordingAndTranscriptionCustomMessage & RecordingAndTranscriptionCustomMessageIdentifier parameters to [New|Set]-CsTeamsMeetingPolicy & [New|Set]-CsTeamsCallingPolicy cmdlets.
+- Releases Get-CsTeamsRecordingAndTranscriptionCustomMessagesConfiguration cmdlet.
+- Releases [Get|Set|New|Remove]-CsTeamsRecordingAndTranscriptionCustomMessage cmdlets. 
+- Adds Voicemail as a supported value for the Type parameter in [New|Set]-CsAutoAttendantCallableEntity cmdlets.
 
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes

@@ -1681,6 +1681,14 @@
                         <PropertyName>ExplicitRecordingConsent</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>EnableRecordingAndTranscriptionCustomMessage</Label>
+                        <PropertyName>EnableRecordingAndTranscriptionCustomMessage</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>RecordingAndTranscriptionCustomMessageIdentifier</Label>
+                        <PropertyName>RecordingAndTranscriptionCustomMessageIdentifier</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowTranscriptionForCalling</Label>
                         <PropertyName>AllowTranscriptionForCalling</PropertyName>
                     </ListItem>
@@ -2274,6 +2282,10 @@
                         <PropertyName>TownhallEventAttendeeAccess</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>ExternalPresenterJoinVerification</Label>
+                        <PropertyName>ExternalPresenterJoinVerification</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowEmailEditing</Label>
                         <PropertyName>AllowEmailEditing</PropertyName>
                     </ListItem>
@@ -2326,12 +2338,16 @@
                         <PropertyName>ImmersiveEvents</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>MaxResolutionForTownhall</Label>
-                        <PropertyName>MaxResolutionForTownhall</PropertyName>
+                        <Label>TownhallMaxResolution</Label>
+                        <PropertyName>TownhallMaxResolution</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>HighBitrateForTownhall</Label>
                         <PropertyName>HighBitrateForTownhall</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BackroomChat</Label>
+                        <PropertyName>BackroomChat</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>Description</Label>
@@ -2855,6 +2871,14 @@
                         <PropertyName>ExplicitRecordingConsent</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>EnableRecordingAndTranscriptionCustomMessage</Label>
+                        <PropertyName>EnableRecordingAndTranscriptionCustomMessage</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>RecordingAndTranscriptionCustomMessageIdentifier</Label>
+                        <PropertyName>RecordingAndTranscriptionCustomMessageIdentifier</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowLocalRecording</Label>
                         <PropertyName>AllowLocalRecording</PropertyName>
                     </ListItem>
@@ -2877,6 +2901,10 @@
                     <ListItem>
                         <Label>AllowCloudRecording</Label>
                         <PropertyName>AllowCloudRecording</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>SetRecordingAndTranscriptOwnership</Label>
+                        <PropertyName>SetRecordingAndTranscriptOwnership</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AllowRecordingStorageOutsideRegion</Label>
@@ -3141,6 +3169,10 @@
                     <ListItem>
                         <Label>LobbyChat</Label>
                         <PropertyName>LobbyChat</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BackroomChat</Label>
+                        <PropertyName>BackroomChat</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AnonymousUserAuthenticationMethod</Label>
@@ -3860,10 +3892,6 @@
                     <ListItem>
                         <Label>UseNewTeamsClient</Label>
                         <PropertyName>UseNewTeamsClient</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>OCDIRedirect</Label>
-                        <PropertyName>OCDIRedirect</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>BlockLegacyAuthorization</Label>
@@ -5818,6 +5846,10 @@
                         <Label>ExtendedWorkInfoInPeopleSearch</Label>
                         <PropertyName>ExtendedWorkInfoInPeopleSearch</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>UseUnifiedDomain</Label>
+                        <PropertyName>UseUnifiedDomain</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -6291,6 +6323,103 @@
                     <ListItem>
                         <Label>BlockExternalUserAccess</Label>
                         <PropertyName>BlockExternalUserAccess</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRecordingAndTranscriptionCustomMessagesConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRecordingAndTranscriptionCustomMessagesConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CustomMessageList</Label>
+                        <PropertyName>CustomMessageList</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRecordingAndTranscriptionCustomMessageView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRecordingAndTranscriptionCustomMessage</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>RecordingAndTranscriptionLocalizationCustomMessage</Label>
+                        <PropertyName>RecordingAndTranscriptionLocalizationCustomMessage</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Description</Label>
+                        <PropertyName>Description</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>RecordingAndTranscriptionLocalizationCustomMessageView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.RecordingAndTranscriptionLocalizationCustomMessage</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Language</Label>
+                        <PropertyName>Language</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InitiatorImplicit</Label>
+                        <PropertyName>InitiatorImplicit</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ParticipantImplicit</Label>
+                        <PropertyName>ParticipantImplicit</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InitiatorExplicit</Label>
+                        <PropertyName>InitiatorExplicit</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ParticipantExplicitRequested</Label>
+                        <PropertyName>ParticipantExplicitRequested</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ParticipantExplicitProvided</Label>
+                        <PropertyName>ParticipantExplicitProvided</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AgreementDialogue</Label>
+                        <PropertyName>AgreementDialogue</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

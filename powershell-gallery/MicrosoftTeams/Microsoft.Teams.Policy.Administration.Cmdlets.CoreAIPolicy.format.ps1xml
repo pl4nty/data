@@ -31,6 +31,10 @@
                         <Label>SpeakerAttributionForBYOD</Label>
                         <PropertyName>SpeakerAttributionForBYOD</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>PassiveVoiceEnrollment</Label>
+                        <PropertyName>PassiveVoiceEnrollment</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>

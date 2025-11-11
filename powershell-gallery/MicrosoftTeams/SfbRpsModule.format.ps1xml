@@ -11927,6 +11927,10 @@
 								<PropertyName>MaskPstnNumbersType</PropertyName>
 							</ListItem>
 							<ListItem>
+								<Label>DynamicCallerIdMode</Label>
+								<PropertyName>DynamicCallerIdMode</PropertyName>
+							</ListItem>
+							<ListItem>
 								<Label>PinLength</Label>
 								<PropertyName>PinLength</PropertyName>
 							</ListItem>
@@ -24163,6 +24167,9 @@
 							</ListItem>
 							<ListItem>
 								<PropertyName>ForceListenMenuEnabled</PropertyName>
+							</ListItem>
+							<ListItem>
+								<PropertyName>RingResourceAccountDelegates</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>

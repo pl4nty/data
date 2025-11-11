@@ -5106,44 +5106,28 @@ PS C:\&gt; Get-CsTeamsMessagingPolicy</dev:code>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Get-CsTeamsRecordingRollOutPolicy</command:name>
+      <command:name>Get-CsTeamsRemoteLogCollectionConfiguration</command:name>
       <command:verb>Get</command:verb>
-      <command:noun>CsTeamsRecordingRollOutPolicy</command:noun>
+      <command:noun>CsTeamsRemoteLogCollectionConfiguration</command:noun>
       <maml:description>
-        <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings.</maml:para>
+        <maml:para>Returns list of devices for which remote log collection has been initiated for.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings. This policy would be deprecated over time as this is only to allow IT admins to phase the roll out of this breaking change.</maml:para>
-      <maml:para>The Get-CsTeamsRecordingRollOutPolicy cmdlet enables you to return information about all the CsTeamsRecordingRollOutPolicy that have been configured for use in your organization.</maml:para>
-      <maml:para>This command is available from Teams powershell module 6.1.1-preview and above.</maml:para>
+      <maml:para>Remote log collection is a feature in Microsoft Teams that allows IT administrators to remotely trigger the collection of diagnostic logs from user devices through the Teams Admin Center (TAC). Instead of relying on manual user intervention, admins can initiate log collection for troubleshooting directly from the TAC portal. </maml:para>
+      <maml:para>TeamsRemoteLogCollectionConfiguration is updated with a list of devices when an administrator wants to initiate a request for remote log collection for a user's device. Each device has a unique GUID identity, userId, deviceId and expiry date.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Get-CsTeamsRecordingRollOutPolicy</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Filter</maml:name>
-          <maml:description>
-            <maml:para>Enables you to use wildcard characters when indicating the policy (or policies) to be returned.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-      </command:syntaxItem>
-      <command:syntaxItem>
-        <maml:name>Get-CsTeamsRecordingRollOutPolicy</maml:name>
+        <maml:name>Get-CsTeamsRemoteLogCollectionConfiguration</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
-            <maml:para>Unique identifier of the policy to be returned. To refer to the global policy, use this syntax: -Identity global. To refer to a per-user policy, use syntax similar to this: -Identity SalesDepartmentPolicy. If this parameter is omitted, then all the meeting policies configured for use in your organization will be returned.</maml:para>
+            <maml:para>{{Fill Identity Description}}</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">XdsIdentity</command:parameterValue>
           <dev:type>
-            <maml:name>String</maml:name>
+            <maml:name>XdsIdentity</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -5151,26 +5135,14 @@ PS C:\&gt; Get-CsTeamsMessagingPolicy</dev:code>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>Filter</maml:name>
-        <maml:description>
-          <maml:para>Enables you to use wildcard characters when indicating the policy (or policies) to be returned.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Identity</maml:name>
         <maml:description>
-          <maml:para>Unique identifier of the policy to be returned. To refer to the global policy, use this syntax: -Identity global. To refer to a per-user policy, use syntax similar to this: -Identity SalesDepartmentPolicy. If this parameter is omitted, then all the meeting policies configured for use in your organization will be returned.</maml:para>
+          <maml:para>{{Fill Identity Description}}</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">XdsIdentity</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>XdsIdentity</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -5189,7 +5161,7 @@ PS C:\&gt; Get-CsTeamsMessagingPolicy</dev:code>
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>TeamsRecordingRollOutPolicy.Cmdlets.TeamsRecordingRollOutPolicy</maml:name>
+          <maml:name>System.Object</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -5197,23 +5169,136 @@ PS C:\&gt; Get-CsTeamsMessagingPolicy</dev:code>
       </command:returnValue>
     </command:returnValues>
     <maml:alertSet>
-      <maml:alert>
-        <maml:para></maml:para>
-      </maml:alert>
+      <maml:alert />
     </maml:alertSet>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-CsTeamsRecordingRollOutPolicy</dev:code>
+        <dev:code>PS C:\&gt; Get-CsTeamsRemoteLogCollectionConfiguration</dev:code>
         <dev:remarks>
-          <maml:para>In Example 1, Get-CsTeamsRecordingRollOutPolicy is called without any additional parameters; this returns a collection of all the CsTeamsRecordingRollOutPolicy configured for use in your organization.</maml:para>
+          <maml:para>The above cmdlet lists the devices of TeamsRemoteLogCollectionConfiguration.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csteamsrecordingrolloutpolicy</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/skype/get-csTeamsRemoteLogCollectionConfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-CsTeamsRemoteLogCollectionDevice</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>CsTeamsRemoteLogCollectionDevice</command:noun>
+      <maml:description>
+        <maml:para>Returns a list of devices for which remote log collection has been initiated for.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Remote log collection is a feature in Microsoft Teams that allows IT administrators to remotely trigger the collection of diagnostic logs from user devices through the Teams Admin Center (TAC). Instead of relying on manual user intervention, admins can initiate log collection for troubleshooting directly from the TAC portal. </maml:para>
+      <maml:para>TeamsRemoteLogCollectionConfiguration is updated with a list of devices when an administrator wants to initiate a request for remote log collection for a user's device. Each device has a unique GUID identity, userId, deviceId and expiry date.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-CsTeamsRemoteLogCollectionDevice</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:description>
+            <maml:para>The Identity parameter identifies the remote log collection configuration.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
+          <dev:type>
+            <maml:name>Guid</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Identity</maml:name>
+        <maml:description>
+          <maml:para>The Identity parameter identifies the remote log collection configuration.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
+        <dev:type>
+          <maml:name>Guid</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert />
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-CsTeamsRemoteLogCollectionDevice</dev:code>
+        <dev:remarks>
+          <maml:para>The above cmdlet lists all the devices of TeamsRemoteLogCollectionDevice.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionConfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csTeamsRemoteLogCollectionDevice</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -10332,116 +10417,6 @@ Tag:wld-policy2                           False</dev:code>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Grant-CsTeamsRecordingRollOutPolicy</command:name>
-      <command:verb>Grant</command:verb>
-      <command:noun>CsTeamsRecordingRollOutPolicy</command:noun>
-      <maml:description>
-        <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings.</maml:para>
-      </maml:description>
-    </command:details>
-    <maml:description>
-      <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings. This policy would be deprecated over time as this is only to allow IT admins to phase the roll out of this breaking change.</maml:para>
-      <maml:para>The Grant-CsTeamsRecordingRollOutPolicy cmdlet allows administrators to assign a CsTeamsRecordingRollOutPolicy at the per-user scope.</maml:para>
-      <maml:para>This command is available from Teams powershell module 6.1.1-preview and above.</maml:para>
-    </maml:description>
-    <command:syntax>
-      <command:syntaxItem>
-        <maml:name>Grant-CsTeamsRecordingRollOutPolicy</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Identity</maml:name>
-          <maml:description>
-            <maml:para>Indicates the Identity of the user account the policy should be assigned to. User Identities can be specified using one of four formats: 1) the user's SIP address; 2) the user principal name (UPN); 3) the user's domain name and logon name, in the form domain\logon (for example, litwareinc\kenmyer); and, 4) the user's Active Directory display name (for example, Ken Myer). User Identities can also be referenced by using the user's Active Directory distinguished name.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>PolicyName</maml:name>
-          <maml:description>
-            <maml:para>The name of the custom policy that is being assigned to the user. To remove a specific assignment and fall back to the default tenant policy, you can assign to $Null.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-      </command:syntaxItem>
-    </command:syntax>
-    <command:parameters>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>Identity</maml:name>
-        <maml:description>
-          <maml:para>Indicates the Identity of the user account the policy should be assigned to. User Identities can be specified using one of four formats: 1) the user's SIP address; 2) the user principal name (UPN); 3) the user's domain name and logon name, in the form domain\logon (for example, litwareinc\kenmyer); and, 4) the user's Active Directory display name (for example, Ken Myer). User Identities can also be referenced by using the user's Active Directory distinguished name.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>PolicyName</maml:name>
-        <maml:description>
-          <maml:para>The name of the custom policy that is being assigned to the user. To remove a specific assignment and fall back to the default tenant policy, you can assign to $Null.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-    </command:parameters>
-    <command:inputTypes>
-      <command:inputType>
-        <dev:type>
-          <maml:name>None</maml:name>
-        </dev:type>
-        <maml:description>
-          <maml:para></maml:para>
-        </maml:description>
-      </command:inputType>
-    </command:inputTypes>
-    <command:returnValues>
-      <command:returnValue>
-        <dev:type>
-          <maml:name>System.Object</maml:name>
-        </dev:type>
-        <maml:description>
-          <maml:para></maml:para>
-        </maml:description>
-      </command:returnValue>
-    </command:returnValues>
-    <maml:alertSet>
-      <maml:alert>
-        <maml:para></maml:para>
-      </maml:alert>
-    </maml:alertSet>
-    <command:examples>
-      <command:example>
-        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Grant-CsTeamsMeetingPolicy -identity "Ken Myer" -PolicyName OrganizerPolicy</dev:code>
-        <dev:remarks>
-          <maml:para>In this example, a user with identity "Ken Myer" is being assigned the OrganizerPolicy</maml:para>
-        </dev:remarks>
-      </command:example>
-    </command:examples>
-    <command:relatedLinks>
-      <maml:navigationLink>
-        <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/grant-csteamsrecordingrolloutpolicy</maml:uri>
-      </maml:navigationLink>
-    </command:relatedLinks>
-  </command:command>
-  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
-    <command:details>
       <command:name>Grant-CsTeamsSharedCallingRoutingPolicy</command:name>
       <command:verb>Grant</command:verb>
       <command:noun>CsTeamsSharedCallingRoutingPolicy</command:noun>
@@ -11791,7 +11766,6 @@ Tag:wld-policy2                           False</dev:code>
           <maml:name>AllowedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -11805,7 +11779,6 @@ Tag:wld-policy2                           False</dev:code>
           <maml:name>BlockedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -11819,7 +11792,6 @@ Tag:wld-policy2                           False</dev:code>
           <maml:name>CommunicationWithExternalOrgs</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
             <maml:para>Indicates how users assigned to the policy can communicate with external organizations (domains). This setting has 5 possible values:</maml:para>
             <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
             <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -12047,7 +12019,6 @@ Tag:wld-policy2                           False</dev:code>
         <maml:name>AllowedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -12061,7 +12032,6 @@ Tag:wld-policy2                           False</dev:code>
         <maml:name>BlockedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -12075,7 +12045,6 @@ Tag:wld-policy2                           False</dev:code>
         <maml:name>CommunicationWithExternalOrgs</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Private Preview.</maml:para>
           <maml:para>Indicates how users assigned to the policy can communicate with external organizations (domains). This setting has 5 possible values:</maml:para>
           <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
           <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -17600,17 +17569,17 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>MaxResolutionForTownhall</maml:name>
+          <maml:name>TownhallMaxResolution</maml:name>
           <maml:description>
             <maml:para>This policy sets the maximum video resolution supported in Town hall events.</maml:para>
-            <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p.</maml:para>
+            <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p. - MicrosoftManaged : Town halls will support video resolution up to 720p except for those customers whose networks have been assessed by Microsoft to support up to 1080p."</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Max1080p</dev:defaultValue>
+          <dev:defaultValue>MicrosoftManaged</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>HighBitrateForTownhall</maml:name>
@@ -17886,17 +17855,17 @@ New-CsTeamsEmergencyCallingPolicy -Identity ECP2 -Description "Test ECP2" -Exter
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>MaxResolutionForTownhall</maml:name>
+        <maml:name>TownhallMaxResolution</maml:name>
         <maml:description>
           <maml:para>This policy sets the maximum video resolution supported in Town hall events.</maml:para>
-          <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p.</maml:para>
+          <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p. - MicrosoftManaged : Town halls will support video resolution up to 720p except for those customers whose networks have been assessed by Microsoft to support up to 1080p."</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Max1080p</dev:defaultValue>
+        <dev:defaultValue>MicrosoftManaged</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>HighBitrateForTownhall</maml:name>
@@ -22693,15 +22662,15 @@ Description            : This is a test policy</dev:code>
           <maml:description>
             <maml:para>Indicates whether B2B invites should be used to add external users when necessary.</maml:para>
             <maml:para>Possible values:</maml:para>
-            <maml:para>- `Enabled`: External users will be added using B2B invites.</maml:para>
-            <maml:para>- `Disabled`: External users will not be added using B2B invites.</maml:para>
+            <maml:para>- True: External users will be added using B2B invites.</maml:para>
+            <maml:para>- False: External users will not be added using B2B invites.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
-            <maml:name>System.String</maml:name>
+            <maml:name>Boolean</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
+          <dev:defaultValue>True</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AutoShareFilesInExternalChats</maml:name>
@@ -23247,15 +23216,15 @@ Description            : This is a test policy</dev:code>
         <maml:description>
           <maml:para>Indicates whether B2B invites should be used to add external users when necessary.</maml:para>
           <maml:para>Possible values:</maml:para>
-          <maml:para>- `Enabled`: External users will be added using B2B invites.</maml:para>
-          <maml:para>- `Disabled`: External users will not be added using B2B invites.</maml:para>
+          <maml:para>- True: External users will be added using B2B invites.</maml:para>
+          <maml:para>- False: External users will not be added using B2B invites.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
-          <maml:name>System.String</maml:name>
+          <maml:name>Boolean</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
+        <dev:defaultValue>True</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AutoShareFilesInExternalChats</maml:name>
@@ -23770,25 +23739,65 @@ Description            : This is a test policy</dev:code>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>New-CsTeamsRecordingRollOutPolicy</command:name>
+      <command:name>New-CsTeamsRemoteLogCollectionDevice</command:name>
       <command:verb>New</command:verb>
-      <command:noun>CsTeamsRecordingRollOutPolicy</command:noun>
+      <command:noun>CsTeamsRemoteLogCollectionDevice</command:noun>
       <maml:description>
-        <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings.</maml:para>
+        <maml:para>This cmdlet allows you to create a new TeamsRemoteLogCollectionDevice instance and set it's properties.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings. This policy would be deprecated over time as this is only to allow IT admins to phase the roll out of this breaking change.</maml:para>
-      <maml:para>The New-CsTeamsRecordingRollOutPolicy cmdlet allows administrators to define new CsTeamsRecordingRollOutPolicy that can be assigned to particular users to control Teams features related to meetings.</maml:para>
-      <maml:para>This command is available from Teams powershell module 6.1.1-preview and above.</maml:para>
+      <maml:para>This cmdlet allows you to create a TeamsRemoteLogCollectionDevice instance. </maml:para>
+      <maml:para>Remote log collection is a feature in Microsoft Teams that allows IT administrators to remotely trigger the collection of diagnostic logs from user devices through the Teams Admin Center (TAC). Instead of relying on manual user intervention, admins can initiate log collection for troubleshooting directly from the TAC portal. </maml:para>
+      <maml:para>TeamsRemoteLogCollectionConfiguration is updated with a list of devices when an administrator wants to initiate a request for remote log collection for a user's device. Each device has a unique GUID identity, userId, deviceId and expiry date.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>New-CsTeamsRecordingRollOutPolicy</maml:name>
+        <maml:name>New-CsTeamsRemoteLogCollectionDevice</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
-            <maml:para>Specify the name of the policy being created.</maml:para>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Policy instance name.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">XdsIdentity</command:parameterValue>
+          <dev:type>
+            <maml:name>XdsIdentity</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UserId</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the userId of the user for which an admin is requesting logs for. This userId must be a valid GUID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeviceId</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the deviceId of the device for which an admin is requesting logs for. This deviceId must be a valid GUID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExpireAfter</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the expiry date after which the remote log collection request will expire. This expire after date should be set to now() + 3 days. This expiry date should be in ISO 8601 UTC format.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -23808,30 +23817,6 @@ Description            : This is a test policy</dev:code>
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Force</maml:name>
-          <maml:description>
-            <maml:para>Specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
-          </maml:description>
-          <dev:type>
-            <maml:name>SwitchParameter</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>MeetingRecordingOwnership</maml:name>
-          <maml:description>
-            <maml:para>Specifies where the meeting recording get stored. Possible values are: - MeetingOrganizer</maml:para>
-            <maml:para>- RecordingInitiator</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -23846,6 +23831,45 @@ Description            : This is a test policy</dev:code>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UserId</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the userId of the user for which an admin is requesting logs for. This userId must be a valid GUID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeviceId</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the deviceId of the device for which an admin is requesting logs for. This deviceId must be a valid GUID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExpireAfter</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the expiry date after which the remote log collection request will expire. This expire after date should be set to now() + 3 days. This expiry date should be in ISO 8601 UTC format.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
         <maml:name>Confirm</maml:name>
         <maml:description>
@@ -23858,39 +23882,15 @@ Description            : This is a test policy</dev:code>
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>Force</maml:name>
-        <maml:description>
-          <maml:para>Specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
-        </maml:description>
-        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-        <dev:type>
-          <maml:name>SwitchParameter</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Identity</maml:name>
         <maml:description>
-          <maml:para>Specify the name of the policy being created.</maml:para>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Policy instance name.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">XdsIdentity</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>MeetingRecordingOwnership</maml:name>
-        <maml:description>
-          <maml:para>Specifies where the meeting recording get stored. Possible values are: - MeetingOrganizer</maml:para>
-          <maml:para>- RecordingInitiator</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>XdsIdentity</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -23921,7 +23921,7 @@ Description            : This is a test policy</dev:code>
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>TeamsRecordingRollOutPolicy.Cmdlets.TeamsRecordingRollOutPolicy</maml:name>
+          <maml:name>System.Object</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -23936,16 +23936,32 @@ Description            : This is a test policy</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-CsTeamsRecordingRollOutPolicy -Identity OrganizerPolicy -MeetingRecordingOwnership MeetingOrganizer</dev:code>
+        <dev:code>PS C:\&gt; New-CsTeamsRemoteLogCollectionDevice -UserId "765267a2-aa73-4984-a37e-43470f5e21a7" -DeviceId "765267a2-aa73-4984-a37e-43470f5e21a7" -ExpireAfter "06/07/2025 15:30:45"</dev:code>
         <dev:remarks>
-          <maml:para>The command shown in Example 1 uses the New-CsTeamsRecordingRollOutPolicy cmdlet to create a new TeamsRecordingRollOutPolicy with the Identity OrganizerPolicy. This policy will set MeetingRecordingOwnership to MeetingOrganizer. Recordings for this policy group's users as organizer would get saved to organizers' own OneDrive.</maml:para>
+          <maml:para>Creates a new instance of TeamsRemoteLogCollectionDevice. Each Identity, userId and deviceId must be a valid GUID.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csteamsrecordingrolloutpolicy</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionConfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csTeamsRemoteLogCollectionDevice</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -24898,18 +24914,6 @@ Tag:Foobar {com.microsoft.teams.template.ManageAProject, com.microsoft.teams.tem
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>OCDIRedirect</maml:name>
-          <maml:description>
-            <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - Microsoft Default , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain. - Enabled , Users will be redirected to teams.cloud.microsoft. Use this only if your organization had previously opted out of redirection and now wants to opt back in.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UpdateDayOfWeek</maml:name>
           <maml:description>
             <maml:para>Machine local day. 0-6(Sun-Sat) Can be set only when AllowManagedUpdates is set to True.</maml:para>
@@ -25084,18 +25088,6 @@ Tag:Foobar {com.microsoft.teams.template.ManageAProject, com.microsoft.teams.tem
         <maml:name>Identity</maml:name>
         <maml:description>
           <maml:para>A unique identifier.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>OCDIRedirect</maml:name>
-        <maml:description>
-          <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - Microsoft Default , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain. - Enabled , Users will be redirected to teams.cloud.microsoft. Use this only if your organization had previously opted out of redirection and now wants to opt back in.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -30335,28 +30327,27 @@ At line:1 char:1
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Remove-CsTeamsRecordingRollOutPolicy</command:name>
+      <command:name>Remove-CsTeamsRemoteLogCollectionDevice</command:name>
       <command:verb>Remove</command:verb>
-      <command:noun>CsTeamsRecordingRollOutPolicy</command:noun>
+      <command:noun>CsTeamsRemoteLogCollectionDevice</command:noun>
       <maml:description>
-        <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings.</maml:para>
+        <maml:para>Removes a device for which remote log collection was requested for.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Removes a previously created CsTeamsRecordingRollOutPolicy.</maml:para>
-      <maml:para>This command is available from Teams powershell module 6.1.1-preview and above.</maml:para>
+      <maml:para>Deletes a previously created TeamsRemoteLogCollectionDevice.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Remove-CsTeamsRecordingRollOutPolicy</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+        <maml:name>Remove-CsTeamsRemoteLogCollectionDevice</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
-            <maml:para>Unique identifier for the CsTeamsRecordingRollOutPolicy to be removed. To remove the global policy, use this syntax: -Identity global. (Note that the global policy cannot actually be removed. Instead, all the policy properties will be reset to their default values.) To remove a custom policy, use this syntax: -Identity SomePolicy.</maml:para>
+            <maml:para>Unique identifier for the teams remote log collecton device to be removed.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
-            <maml:name>String</maml:name>
+            <maml:name>Guid</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -30375,13 +30366,25 @@ At line:1 char:1
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
           <maml:description>
-            <maml:para>The Force switch specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the Force switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
+            <maml:para>Suppresses all non-fatal errors.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Tenant</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill Tenant Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
+          <dev:type>
+            <maml:name>Guid</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
@@ -30412,7 +30415,7 @@ At line:1 char:1
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
         <maml:description>
-          <maml:para>The Force switch specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the Force switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
+          <maml:para>Suppresses all non-fatal errors.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -30421,14 +30424,26 @@ At line:1 char:1
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Identity</maml:name>
         <maml:description>
-          <maml:para>Unique identifier for the CsTeamsRecordingRollOutPolicy to be removed. To remove the global policy, use this syntax: -Identity global. (Note that the global policy cannot actually be removed. Instead, all the policy properties will be reset to their default values.) To remove a custom policy, use this syntax: -Identity SomePolicy.</maml:para>
+          <maml:para>Unique identifier for the teams remote log collecton device to be removed.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>Guid</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Tenant</maml:name>
+        <maml:description>
+          <maml:para>{{ Fill Tenant Description }}</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
+        <dev:type>
+          <maml:name>Guid</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -30449,7 +30464,7 @@ At line:1 char:1
     <command:inputTypes>
       <command:inputType>
         <dev:type>
-          <maml:name>System.String</maml:name>
+          <maml:name>Microsoft.Rtc.Management.Xds.XdsIdentity</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -30459,7 +30474,7 @@ At line:1 char:1
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>System.Void</maml:name>
+          <maml:name>System.Object</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -30474,16 +30489,32 @@ At line:1 char:1
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-CsTeamsRecordingRollOutPolicy -Identity OrganizerPolicy</dev:code>
+        <dev:code>PS C:\&gt; Remove-CsTeamsRemoteLogCollectionDevice -Identity</dev:code>
         <dev:remarks>
-          <maml:para>In the example shown above, the command will delete the OrganizerPolicy from the organization's list of policies and remove all assignments of this policy from users who have had the policy assigned.</maml:para>
+          <maml:para></maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csteamsrecordingrolloutpolicy</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionConfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csTeamsRemoteLogCollectionDevice</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -31770,7 +31801,6 @@ At line:1 char:1
           <maml:name>AllowedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -31784,7 +31814,6 @@ At line:1 char:1
           <maml:name>BlockedExternalDomains</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -31798,7 +31827,6 @@ At line:1 char:1
           <maml:name>CommunicationWithExternalOrgs</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
             <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
             <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
             <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -32037,7 +32065,6 @@ At line:1 char:1
         <maml:name>AllowedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Specifies the external domains allowed to communicate with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `AllowSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -32051,7 +32078,6 @@ At line:1 char:1
         <maml:name>BlockedExternalDomains</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Specifies the external domains blocked from communicating with users assigned to this policy. This setting is applicable only when `CommunicationWithExternalOrgs` is configured to `BlockSpecificExternalDomains`. This setting can be modified only in custom policy. In Global (default) policy `CommunicationWithExternalOrgs` can only be set to `OrganizationDefault` and cannot be changed.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">List</command:parameterValue>
@@ -32065,7 +32091,6 @@ At line:1 char:1
         <maml:name>CommunicationWithExternalOrgs</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Lync Server 2010, Lync Server 2013, Skype for Business Server 2015, Skype for Business Server 2019</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Please note that this parameter is in Public Preview.</maml:para>
           <maml:para>Indicates how the users get assigned by this policy can communicate with the external orgs. There are 5 options:</maml:para>
           <maml:para>- OrganizationDefault: users follow the federation settings specified in `TenantFederationConfiguration`. This is the default value.</maml:para>
           <maml:para>- AllowAllExternalDomains: users are allowed to communicate with all domains.</maml:para>
@@ -37176,6 +37201,18 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseUnifiedDomain</maml:name>
+          <maml:description>
+            <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - MicrosoftDefault , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -37427,6 +37464,18 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <command:parameterValue required="true" variableLength="false">System.Guid</command:parameterValue>
           <dev:type>
             <maml:name>System.Guid</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseUnifiedDomain</maml:name>
+          <maml:description>
+            <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - MicrosoftDefault , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -37696,6 +37745,18 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameterValue required="true" variableLength="false">System.Guid</command:parameterValue>
         <dev:type>
           <maml:name>System.Guid</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseUnifiedDomain</maml:name>
+        <maml:description>
+          <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - MicrosoftDefault , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -40269,17 +40330,17 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>MaxResolutionForTownhall</maml:name>
+          <maml:name>TownhallMaxResolution</maml:name>
           <maml:description>
             <maml:para>This policy sets the maximum video resolution supported in Town hall events.</maml:para>
-            <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p.</maml:para>
+            <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p. - MicrosoftManaged : Town halls will support video resolution up to 720p except for those customers whose networks have been assessed by Microsoft to support up to 1080p."</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Max1080p</dev:defaultValue>
+          <dev:defaultValue>MicrosoftManaged</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>HighBitrateForTownhall</maml:name>
@@ -40596,17 +40657,17 @@ Set-CsTeamsEmergencyCallingPolicy -Identity "TestECP" -ExtendedNotifications @{a
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>MaxResolutionForTownhall</maml:name>
+        <maml:name>TownhallMaxResolution</maml:name>
         <maml:description>
           <maml:para>This policy sets the maximum video resolution supported in Town hall events.</maml:para>
-          <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p.</maml:para>
+          <maml:para>Possible values are: - Max720p : Town halls support video resolution up to 720p. - Max1080p : Town halls support video resolution up to 1080p. - MicrosoftManaged : Town halls will support video resolution up to 720p except for those customers whose networks have been assessed by Microsoft to support up to 1080p."</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Max1080p</dev:defaultValue>
+        <dev:defaultValue>MicrosoftManaged</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>HighBitrateForTownhall</maml:name>
@@ -42507,8 +42568,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AIInterpreter</maml:name>
           <maml:description>
-            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Enables the user to use the AI Interpreter related features</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- Disabled</maml:para>
@@ -43783,8 +43842,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>VoiceSimulationInInterpreter</maml:name>
           <maml:description>
-            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Enables the user to use the voice simulation feature while being AI interpreted.</maml:para>
             <maml:para>Possible Values:</maml:para>
             <maml:para>- Disabled</maml:para>
@@ -43889,8 +43946,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AIInterpreter</maml:name>
         <maml:description>
-          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Enables the user to use the AI Interpreter related features</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- Disabled</maml:para>
@@ -45179,8 +45234,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>VoiceSimulationInInterpreter</maml:name>
         <maml:description>
-          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Enables the user to use the voice simulation feature while being AI interpreted.</maml:para>
           <maml:para>Possible Values:</maml:para>
           <maml:para>- Disabled</maml:para>
@@ -46382,15 +46435,15 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:description>
             <maml:para>Indicates whether B2B invites should be used to add external users when necessary.</maml:para>
             <maml:para>Possible values:</maml:para>
-            <maml:para>- `Enabled`: External users will be added using B2B invites.</maml:para>
-            <maml:para>- `Disabled`: External users will not be added using B2B invites.</maml:para>
+            <maml:para>- True: External users will be added using B2B invites.</maml:para>
+            <maml:para>- False: External users will not be added using B2B invites.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
-            <maml:name>System.String</maml:name>
+            <maml:name>Boolean</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>Disabled</dev:defaultValue>
+          <dev:defaultValue>True</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AutoShareFilesInExternalChats</maml:name>
@@ -46938,15 +46991,15 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:description>
           <maml:para>Indicates whether B2B invites should be used to add external users when necessary.</maml:para>
           <maml:para>Possible values:</maml:para>
-          <maml:para>- `Enabled`: External users will be added using B2B invites.</maml:para>
-          <maml:para>- `Disabled`: External users will not be added using B2B invites.</maml:para>
+          <maml:para>- True: External users will be added using B2B invites.</maml:para>
+          <maml:para>- False: External users will not be added using B2B invites.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
-          <maml:name>System.String</maml:name>
+          <maml:name>Boolean</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>Disabled</dev:defaultValue>
+        <dev:defaultValue>True</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AutoShareFilesInExternalChats</maml:name>
@@ -47814,25 +47867,65 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Set-CsTeamsRecordingRollOutPolicy</command:name>
+      <command:name>Set-CsTeamsRemoteLogCollectionDevice</command:name>
       <command:verb>Set</command:verb>
-      <command:noun>CsTeamsRecordingRollOutPolicy</command:noun>
+      <command:noun>CsTeamsRemoteLogCollectionDevice</command:noun>
       <maml:description>
-        <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings.</maml:para>
+        <maml:para>This cmdlet allows you to edit the properties of an existing TeamsRemoteLogCollectionDevice instance.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The CsTeamsRecordingRollOutPolicy controls roll out of the change that governs the storage for meeting recordings. This policy would be deprecated over time as this is only to allow IT admins to phase the roll out of this breaking change.</maml:para>
-      <maml:para>The Set-CsTeamsRecordingRollOutPolicy cmdlet allows administrators to update existing CsTeamsRecordingRollOutPolicy that can be assigned to particular users to control Teams recording storage place.</maml:para>
-      <maml:para>This command is available from Teams powershell module 6.1.1-preview and above.</maml:para>
+      <maml:para>This cmdlet allows you to edit a TeamsRemoteLogCollectionDevice instance. </maml:para>
+      <maml:para>Remote log collection is a feature in Microsoft Teams that allows IT administrators to remotely trigger the collection of diagnostic logs from user devices through the Teams Admin Center (TAC). Instead of relying on manual user intervention, admins can initiate log collection for troubleshooting directly from the TAC portal. </maml:para>
+      <maml:para>TeamsRemoteLogCollectionConfiguration is updated with a list of devices when an administrator wants to initiate a request for remote log collection for a user's device. Each device has a unique GUID identity, userId, deviceId and expiry date.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Set-CsTeamsRecordingRollOutPolicy</maml:name>
+        <maml:name>Set-CsTeamsRemoteLogCollectionDevice</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
-            <maml:para>Specify the name of the policy being created.</maml:para>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Policy instance name.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
+          <dev:type>
+            <maml:name>Guid</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UserId</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the userId of the user for which an admin is requesting logs for. This userId must be a valid GUID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DeviceId</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the deviceId of the device for which an admin is requesting logs for. This deviceId must be a valid GUID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ExpireAfter</maml:name>
+          <maml:description>
+            <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+            <maml:para>Indicates the expiry date after which the remote log collection request will expire. This expire after date should be set to now() + 3 days. This expiry date should be in ISO 8601 UTC format.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -47852,30 +47945,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Force</maml:name>
-          <maml:description>
-            <maml:para>Specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
-          </maml:description>
-          <dev:type>
-            <maml:name>SwitchParameter</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>MeetingRecordingOwnership</maml:name>
-          <maml:description>
-            <maml:para>Specifies where the meeting recording get stored. Possible values are: - MeetingOrganizer</maml:para>
-            <maml:para>- RecordingInitiator</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
           <maml:name>WhatIf</maml:name>
           <maml:description>
@@ -47890,6 +47959,45 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UserId</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the userId of the user for which an admin is requesting logs for. This userId must be a valid GUID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DeviceId</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the deviceId of the device for which an admin is requesting logs for. This deviceId must be a valid GUID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ExpireAfter</maml:name>
+        <maml:description>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Indicates the expiry date after which the remote log collection request will expire. This expire after date should be set to now() + 3 days. This expiry date should be in ISO 8601 UTC format.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
         <maml:name>Confirm</maml:name>
         <maml:description>
@@ -47902,39 +48010,15 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>Force</maml:name>
-        <maml:description>
-          <maml:para>Specifies whether to suppress warning and confirmation messages. It can be useful in scripting to suppress interactive prompts. If the switch isn't provided in the command, you're prompted for administrative input if required.</maml:para>
-        </maml:description>
-        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
-        <dev:type>
-          <maml:name>SwitchParameter</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Identity</maml:name>
         <maml:description>
-          <maml:para>Specify the name of the policy being created.</maml:para>
+          <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
+          <maml:para>Policy instance name.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>MeetingRecordingOwnership</maml:name>
-        <maml:description>
-          <maml:para>Specifies where the meeting recording get stored. Possible values are: - MeetingOrganizer</maml:para>
-          <maml:para>- RecordingInitiator</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>Guid</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -47952,26 +48036,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
     </command:parameters>
-    <command:inputTypes>
-      <command:inputType>
-        <dev:type>
-          <maml:name>None</maml:name>
-        </dev:type>
-        <maml:description>
-          <maml:para></maml:para>
-        </maml:description>
-      </command:inputType>
-    </command:inputTypes>
-    <command:returnValues>
-      <command:returnValue>
-        <dev:type>
-          <maml:name>System.Void</maml:name>
-        </dev:type>
-        <maml:description>
-          <maml:para></maml:para>
-        </maml:description>
-      </command:returnValue>
-    </command:returnValues>
+    <command:inputTypes />
+    <command:returnValues />
     <maml:alertSet>
       <maml:alert>
         <maml:para></maml:para>
@@ -47979,17 +48045,33 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Set-CsTeamsRecordingRollOutPolicy -Identity OrganizerPolicy -MeetingRecordingOwnership RecordingInitiator</dev:code>
+        <maml:title>--------------------------- Example ---------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-CsTeamsRemoteLogCollectionDevice -ExpireAfter "06/07/2025 15:30:45"</dev:code>
         <dev:remarks>
-          <maml:para>The command shown in Example 1 uses the Set-CsTeamsMeetingPolicy cmdlet to update an existing CsTeamsRecordingRollOutPolicy with the Identity OrganizerPolicy. This policy will set MeetingRecordingOwnership to RecordingInitiator; in this example, recordings for this policy group's users as organizer would get saved to recording initiators' own OneDrive.</maml:para>
+          <maml:para></maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Version:</maml:linkText>
-        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsrecordingrolloutpolicy</maml:uri>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/set-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionConfiguration</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionConfiguration</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/get-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>New-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/new-csTeamsRemoteLogCollectionDevice</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Remove-CsTeamsRemoteLogCollectionDevice</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/microsoftteams/remove-csTeamsRemoteLogCollectionDevice</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -49050,18 +49132,6 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>OCDIRedirect</maml:name>
-          <maml:description>
-            <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - Microsoft Default , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain. - Enabled , Users will be redirected to teams.cloud.microsoft. Use this only if your organization had previously opted out of redirection and now wants to opt back in.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UpdateDayOfWeek</maml:name>
           <maml:description>
             <maml:para>Machine local day. 0-6(Sun-Sat) Can be set only when AllowManagedUpdates is set to True.</maml:para>
@@ -49236,18 +49306,6 @@ PS &gt;Set-CsTeamsTemplatePermissionPolicy -Identity Global -HiddenTemplates $Hi
         <maml:name>Identity</maml:name>
         <maml:description>
           <maml:para>The unique identifier of the policy.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>OCDIRedirect</maml:name>
-        <maml:description>
-          <maml:para>This setting controls whether users are redirected from teams.microsoft.com to the unified domain teams.cloud.microsoft. Possible values are: - Microsoft Default , Microsoft will manage redirection behavior. If no explicit admin configuration is set, users may be redirected automatically. - Disabled , Users will remain on teams.microsoft.com. Use this if your organization's apps are incompatible with the unified domain. - Enabled , Users will be redirected to teams.cloud.microsoft. Use this only if your organization had previously opted out of redirection and now wants to opt back in.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
