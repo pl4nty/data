@@ -1172,7 +1172,7 @@
                         "commandText": "Summarize due action items or tasks between {people} and me from email, chats, files and meetings in the last 14 days only. For each task include: brief description; priority; and source link (e.g. email, chat, file, meeting). ALWAYS only show tasks that include direct interaction between me and {people} - where {people} or I have been @mentioned, addressed or assigned the task by either of us. In tabular format separate tasks {people} owes me from tasks I owe {people} and order by priority. Suggest next actions I should take.",
                         "displayText": "Summarize due tasks between me and {people}",
                         "pillText": "Show me follow ups",
-                        "sourceTypeId": "FollowUpsSummary"
+                        "sourceTypeId": "UpcomingMeetingFollowUpsSummary"
                     }
                 ]
             }
@@ -1225,13 +1225,49 @@
         "MePeoplePrompts": {
             "Prompts": [
                 {
-                    "CommandText": "Who reports to /",
+                    "CommandText": "Summarize most recent communications(emails, chats, files, meetings) and actions items in the last 28 days - organized by topics in <400 words , each topic providing a brief summary and list of action items , including type of communication and when it happened (e.g., \u201cEmail - Today 9:15 AM\u201d) -  from <entity type='person'>person</entity>",
+                    "DisplayText": "What is the latest from <entity type=\"placeholder\">person</entity>",
+                    "PillText": "What is the latest from",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptWhatIsTheLatestFrom"
+                },
+                {
+                    "CommandText": "List all people who report to <entity type='person'>person</entity> separating direct reports from indirect (skip-level) reports. For each person, include their full name and job title, and indicate their reporting relationship (e.g., who they report to if they are skip-level). Present the information clearly, using labels for \"Direct Reports\" and \"Indirect Reports\". If there are no reports, explicitly state that. Use the latest organisational data available.",
                     "DisplayText": "Who reports to <entity type=\"placeholder\">person</entity>",
                     "PillText": "Who reports to",
                     "QueryAnnotations": [
                         "PEOPLE"
                     ],
                     "SourceTypeId": "MePeoplePromptWhoReportsTo"
+                },
+                {
+                    "CommandText": "What are <entity type='person'>person</entity> skills and how do they complement mine?",
+                    "DisplayText": "What are <entity type='placeholder'>person</entity> skills and how do they complement mine?",
+                    "PillText": "What are persons skills and how do they complement mine",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptComplementarySkills"
+                },
+                {
+                    "CommandText": "Provide a structured list of employees in <entity type='person'>person</entity> team grouped by country. Include direct and indirect reports, reflect changes in the past 7 days, and clearly state if there are no indirect reports.",
+                    "DisplayText": "How is <entity type=\"placeholder\">person</entity> team distributed across countries",
+                    "PillText": "How is person's team distributed across countries",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptHowIsTeamDistributed"
+                },
+                {
+                    "CommandText": "In concise and organized language under 400 words include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes; and 3-5 agenda topics  by looking at most recent shared chats, emails, files and meetings within the last 28 day to help me prepare for my next meeting with <entity type='person'>person</entity>",
+                    "DisplayText": "Help me prepare for my next meeting with <entity type=\"placeholder\">person</entity>",
+                    "PillText": "Help me prepare for meeting with person",
+                    "QueryAnnotations": [
+                        "PEOPLE"
+                    ],
+                    "SourceTypeId": "MePeoplePromptPrepareForNextMeeting"
                 },
                 {
                     "CommandText": "Show top collaborators key skills and how I can leverage them.",
@@ -1243,56 +1279,20 @@
                     "SourceTypeId": "MePeoplePromptCollaboratorsWithSkills"
                 },
                 {
-                    "CommandText": "How many people are in the organization under /",
-                    "DisplayText": "How many people are in <entity type=\"placeholder\">person</entity>'s organization",
-                    "PillText": "People count in org",
+                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity> Include the count of direct reports only. If there are no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "DisplayText": "How many direct reports does <entity type=\"placeholder\">person</entity> have",
+                    "PillText": "How many direct reports does person have",
                     "QueryAnnotations": [
                         "PEOPLE"
                     ],
-                    "SourceTypeId": "MePeoplePromptPeopleCountInOrg"
+                    "SourceTypeId": "MePeoplePromptDirectReportsCount"
                 },
                 {
-                    "CommandText": "What are <entity type='placeholder'>[person's]</entity> skills and how do they complement mine?",
-                    "DisplayText": "What are <entity type='placeholder'>[person's]</entity> skills and how do they complement mine?",
-                    "PillText": "What are their skills and how do they complement mine",
-                    "QueryAnnotations": [
-                        "PEOPLE"
-                    ],
-                    "SourceTypeId": "MePeoplePromptComplementarySkills"
-                },
-                {
-                    "CommandText": "How many people are reporting to /",
-                    "DisplayText": "How many reports does <entity type=\"placeholder\">person</entity> have",
-                    "PillText": "How many people are reporting to",
-                    "QueryAnnotations": [
-                        "PEOPLE"
-                    ],
-                    "SourceTypeId": "MePeoplePromptHowManyReports"
-                },
-                {
-                    "CommandText": "Show me follow-up tasks with /",
+                    "CommandText": "Summarize due action items or tasks (including a brief description, priority, and source link \u2014 e.g., email, chat, file, or meeting \u2014 separated into tasks I owe the person and tasks the person owes me, and ordered by priority in a tabular format) from emails, chats, files, and meetings in the last 14 days **only** between me and <entity type='person'>person</entity>",
                     "DisplayText": "Show me follow-up tasks with <entity type=\"placeholder\">person</entity>",
                     "PillText": "Show me follow-up tasks",
                     "QueryAnnotations": [],
                     "SourceTypeId": "MePeoplePromptShowFollowUpTasks"
-                },
-                {
-                    "CommandText": "What is the latest from /",
-                    "DisplayText": "What is the latest from <entity type=\"placeholder\">person</entity>",
-                    "PillText": "What is the latest from",
-                    "QueryAnnotations": [
-                        "PEOPLE"
-                    ],
-                    "SourceTypeId": "MePeoplePromptWhatIsTheLatestFrom"
-                },
-                {
-                    "CommandText": "Help me prepare for my meeting with /",
-                    "DisplayText": "Help me prepare for my meeting with <entity type=\"placeholder\">person</entity>",
-                    "PillText": "Help me prepare for my meeting with",
-                    "QueryAnnotations": [
-                        "PEOPLE"
-                    ],
-                    "SourceTypeId": "MePeoplePromptPrepareForNextMeeting"
                 },
                 {
                     "CommandText": "Which of my strengths should I showcase more clearly?",
@@ -1879,9 +1879,9 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251106.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20251101.7.0",
-        "PeopleInTaskbarProdVersion": "1.20251030.2.0",
+        "PeopleInTaskbarDFVersion": "1.20251110.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20251106.2.0",
+        "PeopleInTaskbarProdVersion": "1.20251101.7.0",
         "campaignSchedules": {
             "PeopleAppCampaign": {
                 "cronExpression": "0 0 10 * * 3",
