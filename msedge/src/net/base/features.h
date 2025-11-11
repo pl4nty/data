@@ -297,13 +297,6 @@ NET_EXPORT extern const base::FeatureParam<base::TimeDelta>
 // requests allowed because of requestStorageAccessFor instead of cors.
 NET_EXPORT BASE_DECLARE_FEATURE(kRequestStorageAccessNoCorsRequired);
 
-// When enabled, the Storage Access API follows the Same Origin Policy when
-// including cookies on network requests. (I.e., a cross-site cookie is only
-// included via the Storage Access API if the request's URL's origin [not site]
-// has opted into receiving cross-site cookies.)
-NET_EXPORT
-BASE_DECLARE_FEATURE(kStorageAccessApiFollowsSameOriginPolicy);
-
 // Controls whether static key pinning is enforced.
 NET_EXPORT BASE_DECLARE_FEATURE(kStaticKeyPinningEnforcement);
 
@@ -311,9 +304,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kStaticKeyPinningEnforcement);
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieDomainRejectNonASCII);
 
 NET_EXPORT BASE_DECLARE_FEATURE(kThirdPartyStoragePartitioning);
-
-// Feature to enable consideration of 3PC deprecation trial settings.
-NET_EXPORT BASE_DECLARE_FEATURE(kTpcdTrialSettings);
 
 // Whether to enable the use of 3PC based on 3PCD metadata grants delivered via
 // component updater.
@@ -373,72 +363,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kAsyncQuicSession);
 
 // A flag to make multiport context creation asynchronous.
 NET_EXPORT BASE_DECLARE_FEATURE(kAsyncMultiPortPath);
-
-// Enables the Probabilistic Reveal Tokens feature.
-NET_EXPORT BASE_DECLARE_FEATURE(kEnableProbabilisticRevealTokens);
-
-// Sets the name of the probabilistic reveal token issuer server.
-NET_EXPORT extern const base::FeatureParam<std::string>
-    kProbabilisticRevealTokenServer;
-
-// Sets the path of the probabilistic reveal token server URL used for issuing
-// tokens.
-NET_EXPORT extern const base::FeatureParam<std::string>
-    kProbabilisticRevealTokenServerPath;
-
-// If true, the probabilistic reveal token registration check will be skipped
-// and we will consider every domain as being eligible to receive PRTs. In order
-// for PRTs to be attached to requests, the
-// `ProbabilisticRevealTokensAddHeaderToProxiedRequests` flag must also be true.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kBypassProbabilisticRevealTokenRegistry;
-
-// If true, the standard probabilistic reveal token registry will be ignored and
-// the custom registry will be used instead. The custom registry can be set with
-// the `CustomProbabilisticRevealTokenRegistry` flag. This will only be used if
-// `BypassProbabilisticRevealTokenRegistry` is false. This is intended to be
-// used for developer testing only.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kUseCustomProbabilisticRevealTokenRegistry;
-
-// A comma-separated list of domains (eTLD+1) which will be considered eligible
-// to receive PRTs. This will override the default PRT registry and will only be
-// used if `UseCustomProbabilisticRevealTokenRegistry` is true and
-// `BypassProbabilisticRevealTokenRegistry` is false. This is intended to be
-// used for developer testing only.
-NET_EXPORT extern const base::FeatureParam<std::string>
-    kCustomProbabilisticRevealTokenRegistry;
-
-// If true, probabilistic reveal tokens will only be enabled in Incognito mode.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kProbabilisticRevealTokensOnlyInIncognito;
-
-// If true, probabilistic reveal tokens will only be fetched. PRTs will not be
-// randomized at request time or attached to any requests. This is intended to
-// be used for measuring issuer server load before the feature is fully enabled.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kProbabilisticRevealTokenFetchOnly;
-
-// If true, PRTs are attached to the non-proxied requests satisfying the
-// right conditions specified by other PRT flags, in addition to the proxied
-// ones.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kEnableProbabilisticRevealTokensForNonProxiedRequests;
-
-// TODO(crbug.com/425905281): Rename feature flag
-// `kProbabilisticRevealTokensAddHeaderToProxiedRequests`
-//
-// Despite its name this flag controls whether the PRT header should be added to
-// a given request, independent of the request being proxied or not. The
-// decision on enabling PRTs for non-proxied requests is controlled with
-// `kEnableProbabilisticRevealTokensForNonProxiedRequests`.
-//
-// If true, PRT header will be added to the not necessarily proxied requests
-// satisfying the right conditions specified by other PRT flags, i.e., whether
-// PRTs are enabled for the request/session, destination domain is eligible and
-// kProbabilisticRevealTokenFetchOnly is false.
-NET_EXPORT extern const base::FeatureParam<bool>
-    kProbabilisticRevealTokensAddHeaderToProxiedRequests;
 
 // Enables custom proxy configuration for the IP Protection experimental proxy.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableIpProtectionProxy);

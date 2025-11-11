@@ -380,6 +380,11 @@ extern bool IsMAICompactThemedDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDefaultDesignSystemEnabled();
 
+// This is a helper util which gates the infra for runtime token injection in
+// html templates used in WebUI.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsWebUIRunTimeTokenInjectionEnabled();
+
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMenuFontSizeEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)

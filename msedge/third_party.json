@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2175116,
+    "size": 2174941,
     "file_count": 183
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14773301,
+    "size": 14773468,
     "file_count": 839
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32427111,
-    "file_count": 3971
+    "size": 32480898,
+    "file_count": 3976
   },
   {
     "name": "boringssl",
-    "size": 75618,
+    "size": 76578,
     "file_count": 15
   },
   {
@@ -221,8 +221,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 92633665,
-    "file_count": 10907
+    "size": 92633834,
+    "file_count": 10908
   },
   {
     "name": "flac",
@@ -286,7 +286,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4405703,
+    "size": 4406167,
     "file_count": 80
   },
   {
@@ -301,8 +301,8 @@
   },
   {
     "name": "icu",
-    "size": 158113616,
-    "file_count": 7077
+    "size": 158116124,
+    "file_count": 7078
   },
   {
     "name": "inference_engine",
@@ -376,8 +376,8 @@
   },
   {
     "name": "libc++",
-    "size": 12314088,
-    "file_count": 1765
+    "size": 12320625,
+    "file_count": 1766
   },
   {
     "name": "libc++abi",
@@ -571,8 +571,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3930595,
-    "file_count": 582
+    "size": 3937696,
+    "file_count": 580
   },
   {
     "name": "perl",
@@ -591,8 +591,8 @@
   },
   {
     "name": "protobuf",
-    "size": 2265270,
-    "file_count": 488
+    "size": 2310000,
+    "file_count": 524
   },
   {
     "name": "protobuf-javascript",
@@ -625,14 +625,19 @@
     "file_count": 2
   },
   {
+    "name": "re2",
+    "size": 42657,
+    "file_count": 5
+  },
+  {
     "name": "readability",
     "size": 1572500,
     "file_count": 15
   },
   {
     "name": "rust",
-    "size": 1294122,
-    "file_count": 146
+    "size": 1324125,
+    "file_count": 152
   },
   {
     "name": "screen-ai",
@@ -656,7 +661,7 @@
   },
   {
     "name": "skia",
-    "size": 3539035,
+    "size": 3540539,
     "file_count": 1184
   },
   {
@@ -741,7 +746,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6640477,
+    "size": 6640016,
     "file_count": 177
   },
   {

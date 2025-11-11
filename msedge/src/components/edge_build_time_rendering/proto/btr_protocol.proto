@@ -8,6 +8,8 @@ option optimize_for = LITE_RUNTIME;
 message BuildTimeProtocol {
   map<string, StreamList> streams = 1;
   repeated string tokens = 2;
+  // Metadata for reserving buffer at runtime
+  uint32 estimated_buffer_size = 3;
 }
 
 message StreamList {
