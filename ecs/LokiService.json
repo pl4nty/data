@@ -1545,6 +1545,10 @@
         "SuggestedWorkingHoursInsightFilterSettings": "ConfidenceThreshold:0.44,WindowMinLengthThreshold:6.0,WindowMaxLengthThreshold:12.0,TimespanDiffThreshold:0.5",
         "SuggestedWorkingHoursInsightRetrieverMode": "Enabled",
         "SuggestedWorkingHoursNudgeInsightRetrieverCallMyAnalytics": false,
+        "UpcomingMeetingDataProviderConfig": {
+            "DaysToLoad": 30,
+            "RunSequentially": true
+        },
         "UseDotNetCoreForVivaTopicsInLPC": true,
         "UseObjectStoreHttpClientFactory": true,
         "UseOnlyPostMigratedProvider": true,
