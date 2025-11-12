@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10730512,
+    "size": 10730659,
     "file_count": 167
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32480898,
-    "file_count": 3976
+    "size": 32486988,
+    "file_count": 3978
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36561435,
+    "size": 36561562,
     "file_count": 102
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "name": "hunspell_dictionaries",
-    "size": 162751485,
+    "size": 162751722,
     "file_count": 188
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292895,
+    "size": 292986,
     "file_count": 47
   },
   {
@@ -661,7 +661,7 @@
   },
   {
     "name": "skia",
-    "size": 3540539,
+    "size": 3541218,
     "file_count": 1184
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "tflite",
-    "size": 1679781,
-    "file_count": 498
+    "size": 1689089,
+    "file_count": 504
   },
   {
     "name": "tflite_support",
