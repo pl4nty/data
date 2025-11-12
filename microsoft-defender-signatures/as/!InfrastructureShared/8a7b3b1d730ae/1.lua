@@ -21,7 +21,7 @@ if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this
 else
   return mp.CLEAN
 end
-if l_0_3 == "" or l_0_3 == nil then
+if l_0_3 == nil or l_0_3 == "" or not (string.find)(l_0_3, "/private/tmp/", 1, true) and not (string.find)(l_0_3, "/Users/Shared/", 1, true) and not (string.find)(l_0_3, "/Library/Caches/", 1, true) then
   return mp.CLEAN
 end
 if (sysio.IsFileExists)(l_0_3) then
