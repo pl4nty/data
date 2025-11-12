@@ -25,18 +25,22 @@ do
       l_0_0 = true
     end
     local l_0_6 = nil
-    -- DECOMPILER ERROR at PC80: Overwrote pending register: R3 in 'AssignReg'
+    if contains(l_0_6, {"core.microsoft", "adobedtm.com", "npmjs.org", "mce-sys.com", "adobess.com", "anthropic.com", "cloud.microsoft", "npmmirror.com", "preyproject.com", "adobelogin.com", "adobe.com", "adobe.io", "adobesc.com", "playwright.dev", "githubcopilot.com", "nuget.org", "http://192.168.", "http://10."}) then
+      return mp.CLEAN
+    end
+    local l_0_7 = nil
+    -- DECOMPILER ERROR at PC109: Overwrote pending register: R4 in 'AssignReg'
 
     if not (this_sigattrlog[1]).matched or (this_sigattrlog[1]).utf8p2 == nil or isnull(nil) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC89: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC118: Confused about usage of register: R4 in 'UnsetPending'
 
-    local l_0_7 = nil
+    local l_0_8 = nil
     if ((nil):lower()):match("node%.exe\"?%s+\"?([^\"]+%.js)\"?") then
       (bm.add_related_file)(((nil):lower()):match("node%.exe\"?%s+\"?([^\"]+%.js)\"?"))
     end
-    local l_0_8 = nil
+    local l_0_9 = nil
     if not l_0_0 then
       if not (string.find)(l_0_6, "%.") then
         return mp.CLEAN
@@ -45,10 +49,10 @@ do
         return mp.CLEAN
       end
     end
-    local l_0_9 = {SIG_CONTEXT = "NODE_JS", CONTENT_SOURCE = "BM", TAG = "INTERFLOW"}
-    local l_0_10 = SafeGetUrlReputation
-    l_0_10 = l_0_10({l_0_6}, l_0_9, false, 2000)
-    if (l_0_10.urls)[l_0_6] and ((l_0_10.urls)[l_0_6]).determination == 2 and ((l_0_10.urls)[l_0_6]).confidence >= 60 then
+    local l_0_10 = {SIG_CONTEXT = "NODE_JS", CONTENT_SOURCE = "BM", TAG = "INTERFLOW"}
+    local l_0_11 = SafeGetUrlReputation
+    l_0_11 = l_0_11({l_0_6}, l_0_10, false, 2000)
+    if (l_0_11.urls)[l_0_6] and ((l_0_11.urls)[l_0_6]).determination == 2 and ((l_0_11.urls)[l_0_6]).confidence >= 60 then
       return mp.INFECTED
     end
     return mp.CLEAN
