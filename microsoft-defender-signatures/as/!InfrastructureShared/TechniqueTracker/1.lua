@@ -2830,6 +2830,7 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["xmllite.dll"] = mp.INFECTED
   l_88_1["uevmonitor.dll"] = mp.INFECTED
   l_88_1["cnmpaui.dll"] = mp.INFECTED
+  l_88_1["sentinelagentcore.dll"] = mp.INFECTED
   l_88_1["sqlite3.dll"] = mp.LOWFI
   l_88_1["ffmpeg.dll"] = mp.LOWFI
   l_88_1["libvlc.dll"] = mp.LOWFI
