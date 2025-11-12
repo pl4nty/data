@@ -623,7 +623,6 @@
                 "enableCrossCloudByAccountGraphInTenants": true,
                 "enableCrossCloudTelemetry": true,
                 "enableGetSharedChannelFromGetAllChannel": true,
-                "enableLicenseCheckForTeamsPremium": true,
                 "enablePoPForOffice365ExchangeREST": true,
                 "enableRoomFrom3s": true,
                 "enableSPOMeetingCalendarFluidAccessReading": true,

@@ -23,6 +23,7 @@
     "CLI_IntuneEpmAgent": {
         "FlightingV2": {
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "b4028acf-b43c-4017-9d6c-4cd40d3c53db": true,
             "b97631b1-395c-41d5-8f3a-c3bd43f6d3b3": true,
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
         }
@@ -366,7 +367,8 @@
             "PRSv3-Phase1": true,
             "PRSv3-Phase2": true,
             "PRSv3-Phase3": true,
-            "PRSv3-Phase4": true
+            "PRSv3-Phase4": true,
+            "PRSv3-Validation": true
         }
     },
     "SVC_RACerts": {
@@ -415,7 +417,8 @@
         "customer_script_timeout": 3600,
         "internal_script_timeout": 3600,
         "use_custom_data_store": false,
-        "use_new_update_app_reporting": true
+        "use_new_update_app_reporting": true,
+        "use_sorted_policies": true
     },
     "UX_Core": {
         "FlightingV2": {
@@ -463,6 +466,7 @@
             "EnableWin32CatalogAppsForEsp": true,
             "EnableWindowsRestore": true,
             "EnrollmentFailureReportUserNotLicensedFilter": true,
+            "EnrollmentUserAbandonmentBladeDeprecation": true,
             "TandCSyncButtonEnableFlight": true
         }
     },
