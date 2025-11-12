@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MicrosoftSecurityBriefing APAC Nov 2025",
+    "downloadDescription": "MicrosoftSecurityBriefing Contents",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSecurityBriefing_202511.pdf",
+            "url": "https://download.microsoft.com/download/5ed0b3f1-8bd6-4db7-bcba-8c9d461e74eb/MicrosoftSecurityBriefing_202511.pdf",
+            "size": "7293451",
+            "version": "1",
+            "datePublished": "11/12/2025 1:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MicrosoftSecurityBriefing Contents for November 2025",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MicrosoftSecurityBriefing_202511.pdf"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "11/12/2025",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108456",
+    "downloadPreload": true
+}
