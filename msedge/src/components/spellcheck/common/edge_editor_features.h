@@ -23,6 +23,10 @@ bool IsEditorSpellcheckerDLPCheckEnabled();
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckEnabled();
 
+BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerUXV2);
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
+bool IsEditorSpellcheckerUXV2Enabled();
+
 }  // namespace edge
 }  // namespace features
 
