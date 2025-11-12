@@ -66805,6 +66805,46 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05",
+        "Abbreviation": "RCE",
+        "Definition": "Remote code execution",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05",
+        "Abbreviation": "EoP",
+        "Definition": "Elevation of privilege",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05",
+        "Abbreviation": "ID",
+        "Definition": "Information disclosure",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05",
+        "Abbreviation": "DoS",
+        "Definition": "Denial of service",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05",
+        "Abbreviation": "N/A",
+        "Definition": "Classification not available",
+        "Component": "Security patches"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-10-01",
         "Published": "October 8, 2025",
         "Patch level": "2025-10-05",
@@ -91998,6 +92038,11 @@
         "Severity": "High",
         "Updated AOSP versions": "11",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-11-01",
+        "Published": "November 11, 2025",
+        "Patch level": "2025-11-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-10-01",
