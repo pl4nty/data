@@ -182,6 +182,7 @@
         "azureml://registries/azure-openai/models/o1",
         "azureml://registries/azure-openai/models/o1-pro",
         "azureml://registries/azure-openai/models/o3",
+        "azureml://registries/azure-openai/models/o3-pro",
         "azureml://registries/azure-openai/models/o3-mini-alpha",
         "azureml://registries/azure-openai/models/o3-mini",
         "azureml://registries/azure-openai/models/o4-mini",
@@ -223,7 +224,10 @@
         "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-fast-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-code",
-        "azureml://registries/azureml-openai-oss/models/gpt-oss-120b"
+        "azureml://registries/azureml-openai-oss/models/gpt-oss-120b",
+        "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
+        "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
+        "azureml://registries/azureml-anthropic/models/claude-opus-4-1"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",
