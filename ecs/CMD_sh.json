@@ -934,6 +934,7 @@
         "ExtendTakeSnapshotActionParameters": true,
         "ExtendTimeoutForExpandDiskPartitionInResize": true,
         "FIRST_PAINT_OPT_IWP": true,
+        "FLDPrestartUsePreStartAction": false,
         "Feedback_IWP": true,
         "Feedback_IWP_Prod": true,
         "Feedback_Nighthawk": true,
