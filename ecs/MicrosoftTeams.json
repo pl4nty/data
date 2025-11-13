@@ -1893,6 +1893,12 @@
                     "IsEnabled": true
                 }
             ],
+            "TeamsMeetingAgendaSkill_ConsolidationForMeetingInfoQna": [
+                {
+                    "Flight": "isAgendaSkillConsolidationForMeetingInfoQnaEnabled",
+                    "IsEnabled": true
+                }
+            ],
             "TeamsWebSearchEnableAdditionalLanguageInstructions": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAdditionalLanguageInstructions",
@@ -1930,6 +1936,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_AgendaTracking_agendaNudge": [
+                {
+                    "Flight": "TM.agendaProactiveComposeAction",
                     "IsEnabled": true
                 }
             ],
