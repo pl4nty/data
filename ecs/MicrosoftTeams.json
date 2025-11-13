@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1930,6 +1930,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_AgendaTracking_agendaNudge": [
+                {
+                    "Flight": "TM.agendaProactiveComposeAction",
                     "IsEnabled": true
                 }
             ],
