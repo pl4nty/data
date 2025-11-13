@@ -1,15 +1,15 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\536b31a72bc64\1.luac 
+-- Command line: lua\!InfrastructureShared\55fb356ae0f6b\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[28]).matched and (this_sigattrlog[28]).utf8p1 ~= nil then
+  if (this_sigattrlog[29]).matched and (this_sigattrlog[29]).utf8p1 ~= nil then
     local l_0_0, l_0_1, l_0_2 = nil
   end
-  if not (this_sigattrlog[29]).matched or (this_sigattrlog[29]).utf8p1 == nil or (string.lower)((this_sigattrlog[29]).utf8p1) then
+  if not (this_sigattrlog[30]).matched or (this_sigattrlog[30]).utf8p1 == nil or (string.lower)((this_sigattrlog[30]).utf8p1) then
     local l_0_3 = nil
     if (bm.get_imagepath)() ~= nil and ((bm.get_imagepath)()):len() > 11 then
       local l_0_4 = nil
@@ -27,7 +27,7 @@ do
       do
         if l_0_3:find("windowspowershell\\v1.0\\", 1, true) or l_0_3:find("documents\\powershell\\", 1, true) then
           bm_AddRelatedFileFromCommandLine(l_0_3, nil, nil, 1)
-          TrackPidAndTechniqueBM((this_sigattrlog[28]).ppid, "T1546.013", "posh_profile_modify")
+          TrackPidAndTechniqueBM((this_sigattrlog[29]).ppid, "T1546.013", "posh_profile_modify")
           return mp.INFECTED
         end
         return mp.CLEAN

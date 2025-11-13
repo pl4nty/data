@@ -38,32 +38,35 @@ if (MpCommon.StringRegExpSearch)(l_0_3, l_0_2) or (MpCommon.StringRegExpSearch)(
   (bm.add_related_string)("MDE_Path", l_0_2, bm.RelatedStringBMReport)
   if not (string.find)(l_0_2, "advanced threat protection", 1, true) then
     (bm.add_related_string)("AV", "True", bm.RelatedStringBMReport)
-    local l_0_6 = contains
-    local l_0_7 = l_0_1
-    local l_0_8 = {}
-    -- DECOMPILER ERROR at PC109: No list found for R8 , SetList fails
+    l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
+    if l_0_1 then
+      local l_0_6 = contains
+      local l_0_7 = l_0_1
+      local l_0_8 = {}
+      -- DECOMPILER ERROR at PC116: No list found for R8 , SetList fails
 
-    -- DECOMPILER ERROR at PC113: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC120: Overwrote pending register: R6 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC114: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC121: Overwrote pending register: R6 in 'AssignReg'
 
-    if not l_0_6 then
-      l_0_6(l_0_7, l_0_8)
+      if not l_0_6 then
+        l_0_6(l_0_7, l_0_8)
+      end
     end
   end
   do
-    -- DECOMPILER ERROR at PC118: Overwrote pending register: R6 in 'AssignReg'
+    -- DECOMPILER ERROR at PC125: Overwrote pending register: R6 in 'AssignReg'
 
     do
       do
         local l_0_9 = l_0_6()
-        -- DECOMPILER ERROR at PC120: Overwrote pending register: R7 in 'AssignReg'
+        -- DECOMPILER ERROR at PC127: Overwrote pending register: R7 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC122: Overwrote pending register: R8 in 'AssignReg'
+        -- DECOMPILER ERROR at PC129: Overwrote pending register: R8 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC123: Overwrote pending register: R9 in 'AssignReg'
+        -- DECOMPILER ERROR at PC130: Overwrote pending register: R9 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R10 in 'AssignReg'
+        -- DECOMPILER ERROR at PC131: Overwrote pending register: R10 in 'AssignReg'
 
         ;
         (l_0_7.add_related_string)(l_0_8, ("C:\\ProgramData\\")("C:\\Program Files"), bm.RelatedStringBMReport)
