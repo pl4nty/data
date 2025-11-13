@@ -6,6 +6,8 @@ Subject: feat: integrate appcenter support in chromium
 Modifies the existing crashReporter module to submit crash reports
 to appcenter when the submitURL scheme is 'appcenter:'
 
+Patch cannot be upstreamed.
+
 diff --git a/third_party/crashpad/crashpad/handler/BUILD.gn b/third_party/crashpad/crashpad/handler/BUILD.gn
 index b3fc5d11e6fa5d12a6719e90acdcc774a4c30c29..06db149e11627b3e190dfa1b5cb4ee76746d19c3 100644
 --- a/third_party/crashpad/crashpad/handler/BUILD.gn

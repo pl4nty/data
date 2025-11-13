@@ -1,0 +1,291 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Fri, 17 Oct 2025 22:13:09 +0900
+Subject: feat: handle session end event gracefully
+
+//electron layer changes for https://github.com/microsoft/vscode/issues/249239
+
+Refer to //microsoft/patches/customization/chromium/feat_map_dir_assets_to_location_defined_in_resources_rc.patch
+for additional context.
+
+diff --git a/docs/api/app.md b/docs/api/app.md
+index 6b039868fa28a6e4f42633af57ef6b0c12089a4a..f32068a14970c56db92c26f00b81d3324b57e652 100644
+--- a/docs/api/app.md
++++ b/docs/api/app.md
+@@ -629,6 +629,7 @@ Returns `string` - The current application directory.
+   * `recent` Directory for the user's recent files (Windows only).
+   * `logs` Directory for your app's log folder.
+   * `crashDumps` Directory where crash dumps are stored.
++  * `appUpdate` Directory where update related files are stored.
+ 
+ Returns `string` - A path to a special directory or file associated with `name`. On
+ failure, an `Error` is thrown.
+diff --git a/filenames.gni b/filenames.gni
+index 488058008c20e2e1c648921251f1ccf3120a8b72..386e29489627765db2ce432731bbfe7dfa7ee6c2 100644
+--- a/filenames.gni
++++ b/filenames.gni
+@@ -107,6 +107,8 @@ filenames = {
+     "shell/browser/ui/win/notify_icon.h",
+     "shell/browser/ui/win/taskbar_host.cc",
+     "shell/browser/ui/win/taskbar_host.h",
++    "shell/browser/win/application_lifetime_desktop.cc",
++    "shell/browser/win/application_lifetime_desktop.h",
+     "shell/browser/win/dark_mode.cc",
+     "shell/browser/win/dark_mode.h",
+     "shell/browser/win/scoped_hstring.cc",
+diff --git a/shell/app/electron_main_delegate.cc b/shell/app/electron_main_delegate.cc
+index 2339136712a35f5731a7184c356372d2014b038f..8b1241df8bed2862ab25bd62bb5fc2dd999585af 100644
+--- a/shell/app/electron_main_delegate.cc
++++ b/shell/app/electron_main_delegate.cc
+@@ -179,6 +179,12 @@ bool ElectronPathProvider(int key, base::FilePath* result) {
+         return false;
+       create_dir = true;
+       break;
++    case DIR_APP_UPDATE:
++      if (!base::PathService::Get(chrome::DIR_USER_DATA, &cur))
++        return false;
++      cur = cur.Append(FILE_PATH_LITERAL("App Updates"));
++      create_dir = true;
++      break;
+ #endif
+     case DIR_APP_LOGS:
+ #if BUILDFLAG(IS_MAC)
+diff --git a/shell/browser/api/electron_api_app.cc b/shell/browser/api/electron_api_app.cc
+index ba0e9435bf9a7213c77ef3d35f38a57354b6a555..ebf03a3390cb73f8b47ac5b8056021dfef755925 100644
+--- a/shell/browser/api/electron_api_app.cc
++++ b/shell/browser/api/electron_api_app.cc
+@@ -412,6 +412,9 @@ int GetPathConstant(std::string_view name) {
+       {"userData", chrome::DIR_USER_DATA},
+       {"userDesktop", base::DIR_USER_DESKTOP},
+       {"videos", chrome::DIR_USER_VIDEOS},
++#if BUILDFLAG(IS_WIN)
++      {"appUpdate", DIR_APP_UPDATE},
++#endif
+   });
+   // clang-format on
+   auto iter = Lookup.find(name);
+diff --git a/shell/browser/browser.cc b/shell/browser/browser.cc
+index 0c0e7c8c5076f33d09d90c962455a971686a1800..a1a4c21710745d538f2eb0df95ef240c8e8594dd 100644
+--- a/shell/browser/browser.cc
++++ b/shell/browser/browser.cc
+@@ -122,6 +122,28 @@ void Browser::Exit(gin::Arguments* args) {
+   }
+ }
+ 
++void Browser::ExitNow() {
++  if (!ElectronBrowserMainParts::Get()->SetExitCode(0)) {
++    // Message loop is not ready, quit directly.
++    exit(0);
++  } else {
++    // Prepare to quit when all windows have been closed.
++    is_quitting_ = true;
++
++    // Remember this caller so that we don't emit unrelated events.
++    is_exiting_ = true;
++
++    // Must destroy windows before quitting, otherwise bad things can happen.
++    if (electron::WindowList::IsEmpty()) {
++      Shutdown();
++    } else {
++      // Unlike Quit(), we do not ask to close window, but destroy the window
++      // without asking.
++      electron::WindowList::DestroyAllWindows();
++    }
++  }
++}
++
+ void Browser::Shutdown() {
+   if (is_shutdown_)
+     return;
+diff --git a/shell/browser/browser.h b/shell/browser/browser.h
+index 925573615c500be471f304e5a4df4307d51e9197..7fc5d53c18ebb568c3421b40808f6663cf9be6a0 100644
+--- a/shell/browser/browser.h
++++ b/shell/browser/browser.h
+@@ -101,6 +101,7 @@ class Browser : private WindowListObserver {
+ 
+   // Exit the application immediately and set exit code.
+   void Exit(gin::Arguments* args);
++  void ExitNow();
+ 
+   // Cleanup everything and shutdown the application gracefully.
+   void Shutdown();
+diff --git a/shell/browser/browser_process_impl.cc b/shell/browser/browser_process_impl.cc
+index 7c6cc917ed9a832b9ceb3b574ce32d8a1832c881..0015b6b18e21af13ac206fc381ae7938f231da6d 100644
+--- a/shell/browser/browser_process_impl.cc
++++ b/shell/browser/browser_process_impl.cc
+@@ -10,8 +10,10 @@
+ 
+ #include "base/command_line.h"
+ #include "base/files/file_path.h"
++#include "base/files/file_util.h"
+ #include "base/notimplemented.h"
+ #include "base/path_service.h"
++#include "base/trace_event/trace_event.h"
+ #include "chrome/browser/browser_process.h"
+ #include "chrome/common/chrome_switches.h"
+ #include "components/os_crypt/async/browser/key_provider.h"
+@@ -32,6 +34,7 @@
+ #include "content/public/browser/network_service_instance.h"
+ #include "content/public/common/content_switches.h"
+ #include "extensions/common/constants.h"
++#include "microsoft/buildflags/buildflags.h"
+ #include "net/proxy_resolution/proxy_config.h"
+ #include "net/proxy_resolution/proxy_config_service.h"
+ #include "net/proxy_resolution/proxy_config_with_annotation.h"
+@@ -98,6 +101,17 @@ GlobalFeatures* BrowserProcessImpl::GetFeatures() {
+   return nullptr;
+ }
+ 
++void BrowserProcessImpl::EndSession() {
++#if BUILDFLAG(MICROSOFT_VERSIONED_APP_LAYOUT)
++  TRACE_EVENT("shutdown", "Electron::BrowserProcessImpl::EndSession");
++  base::FilePath update_path;
++  CHECK(base::PathService::Get(electron::DIR_APP_UPDATE, &update_path));
++  auto session_end_filename =
++      base::FilePath{FILE_PATH_LITERAL("session-ending.flag")};
++  base::WriteFile(update_path.Append(session_end_filename), "");
++#endif
++}
++
+ void BrowserProcessImpl::PostEarlyInitialization() {
+   PrefServiceFactory prefs_factory;
+   auto pref_registry = base::MakeRefCounted<PrefRegistrySimple>();
+diff --git a/shell/browser/browser_process_impl.h b/shell/browser/browser_process_impl.h
+index cd8c00243bb329c1ebe926662bc58568d93664aa..93fc96936e4c8b5e3feed8ee72c953623dcc7397 100644
+--- a/shell/browser/browser_process_impl.h
++++ b/shell/browser/browser_process_impl.h
+@@ -71,7 +71,7 @@ class BrowserProcessImpl : public BrowserProcess {
+   BuildState* GetBuildState() override;
+   GlobalFeatures* GetFeatures() override;
+   void CreateGlobalFeaturesForTesting() override {}
+-  void EndSession() override {}
++  void EndSession() override;
+   void FlushLocalStateAndReply(base::OnceClosure reply) override {}
+   bool IsShuttingDown() override;
+ 
+diff --git a/shell/browser/native_window_views_win.cc b/shell/browser/native_window_views_win.cc
+index 400d140fd58f24bd3520e69ac941a6825a92a3cb..ead692bf3f3181b1b8c4c818a97c1fce3a9ffeb3 100644
+--- a/shell/browser/native_window_views_win.cc
++++ b/shell/browser/native_window_views_win.cc
+@@ -16,6 +16,7 @@
+ #include "shell/browser/native_window_views.h"
+ #include "shell/browser/ui/views/root_view.h"
+ #include "shell/browser/ui/views/win_frame_view.h"
++#include "shell/browser/win/application_lifetime_desktop.h"
+ #include "shell/common/color_util.h"
+ #include "shell/common/electron_constants.h"
+ #include "skia/ext/skia_utils_win.h"
+@@ -431,7 +432,8 @@ bool NativeWindowViews::PreHandleMSG(UINT message,
+       if (w_param) {
+         NotifyWindowEndSession(reasons);
+       }
+-      return false;
++      electron::SessionEnding();
++      return true;
+     }
+     case WM_PARENTNOTIFY: {
+       if (LOWORD(w_param) == WM_CREATE) {
+diff --git a/shell/browser/win/application_lifetime_desktop.cc b/shell/browser/win/application_lifetime_desktop.cc
+new file mode 100644
+index 0000000000000000000000000000000000000000..3b154aa0f6c32f9d540a84c120e6d0ec11f7dbb3
+--- /dev/null
++++ b/shell/browser/win/application_lifetime_desktop.cc
+@@ -0,0 +1,42 @@
++// Copyright (c) 2025 Microsoft Inc. All rights reserved.
++// Use of this source code is governed by a BSD-style license that can be
++// found in the LICENSE-CHROMIUM file.
++
++#include "shell/browser/win/application_lifetime_desktop.h"
++
++#include "base/process/process.h"
++#include "base/trace_event/trace_event.h"
++#include "chrome/browser/browser_process.h"
++#include "shell/browser/browser.h"
++
++namespace electron {
++
++void SessionEnding() {
++  TRACE_EVENT("shutdown", "Electron::SessionEnding");
++  // This is a time-limited shutdown where we need to write as much to
++  // disk as we can as soon as we can, and where we must kill the
++  // process within a hang timeout to avoid user prompts.
++
++  // EndSession is invoked once per frame. Only do something the first time.
++  static bool already_ended = false;
++  // We may get called in the middle of shutdown, e.g. https://crbug.com/70852
++  // and https://crbug.com/1187418.  In this case, do nothing.
++  if (already_ended || !g_browser_process || !Browser::Get()) {
++    return;
++  }
++  already_ended = true;
++
++  // Write important data first.
++  g_browser_process->EndSession();
++
++  // Must destroy windows before quitting, otherwise bad things can happen.
++  Browser::Get()->ExitNow();
++
++  // On Windows 7 and later, the system will consider the process ripe for
++  // termination as soon as it hides or destroys its windows. Since any
++  // execution past that point will be non-deterministically cut short, we
++  // might as well put ourselves out of that misery deterministically.
++  base::Process::TerminateCurrentProcessImmediately(0);
++}
++
++}  // namespace electron
+diff --git a/shell/browser/win/application_lifetime_desktop.h b/shell/browser/win/application_lifetime_desktop.h
+new file mode 100644
+index 0000000000000000000000000000000000000000..cecba7bc6b2943a1275db3776d8a25a75340335a
+--- /dev/null
++++ b/shell/browser/win/application_lifetime_desktop.h
+@@ -0,0 +1,15 @@
++// Copyright (c) 2025 Microsoft Inc. All rights reserved.
++// Use of this source code is governed by a BSD-style license that can be
++// found in the LICENSE-CHROMIUM file.
++
++#ifndef ELECTRON_SHELL_BROWSER_WIN_APPLICATION_LIFETIME_DESKTOP_H_
++#define ELECTRON_SHELL_BROWSER_WIN_APPLICATION_LIFETIME_DESKTOP_H_
++
++namespace electron {
++
++// Begins shutdown of the application when the desktop session is ending.
++void SessionEnding();
++
++}  // namespace electron
++
++#endif  // ELECTRON_SHELL_BROWSER_WIN_APPLICATION_LIFETIME_DESKTOP_H_
+diff --git a/shell/common/electron_paths.h b/shell/common/electron_paths.h
+index c614f992940bbf51755650dd0a3375d242132138..44975da11980c881032a3cecba15832f52ee4222 100644
+--- a/shell/common/electron_paths.h
++++ b/shell/common/electron_paths.h
+@@ -27,7 +27,8 @@ enum {
+   DIR_SESSION_DATA,             // Where cookies, localStorage are stored.
+ 
+ #if BUILDFLAG(IS_WIN)
+-  DIR_RECENT,  // Directory where recent files live
++  DIR_RECENT,      // Directory where recent files live
++  DIR_APP_UPDATE,  // Directory where update related files are stored.
+ #endif
+ 
+ #if BUILDFLAG(IS_LINUX)
+diff --git a/spec/api-app-spec.ts b/spec/api-app-spec.ts
+index 30e5e96abcb7b2a9b11b105e0f5950b8b1de8fa2..af25217afc07401a2c59b734ea5abdd182314dc6 100644
+--- a/spec/api-app-spec.ts
++++ b/spec/api-app-spec.ts
+@@ -1203,6 +1203,16 @@ describe('app module', () => {
+         app.setPath('recent', 'C:\\fake-path');
+         expect(app.getPath('recent')).to.equal('C:\\fake-path');
+       });
++
++      it('can override update files path', () => {
++        const updatePath = path.join(__dirname, 'updates');
++
++        expect(fs.existsSync(updatePath)).to.be.false();
++        app.setPath('appUpdate', updatePath);
++        expect(fs.existsSync(updatePath)).to.be.false();
++
++        expect(app.getPath('appUpdate')).to.equal(updatePath);
++      });
+     }
+ 
+     it('uses the app name in getPath(userData)', () => {

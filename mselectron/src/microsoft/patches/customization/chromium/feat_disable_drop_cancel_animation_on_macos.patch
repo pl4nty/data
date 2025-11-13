@@ -5,11 +5,16 @@ Subject: feat: disable drop cancel animation on macOS
 
 Refs https://github.com/microsoft/vscode/issues/199635
 
+Attempt to upstream will require proposing a new property `event.dataTransfer.showFailAnimation`
+and getting it standardized in W3C, previous attempt https://github.com/whatwg/html/issues/10039
+
+Not worth the effort for now.
+
 diff --git a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
 index 2e5a4ae715529e3b7b5c8fbb7195c7cef78ca4ee..f5cc0ce8221543c7779fab89e13394623dd7d711 100644
 --- a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
 +++ b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
-@@ -276,9 +276,10 @@ STATIC_ASSERT_ENUM(NSDragOperationMove, ui::DragDropTypes::DRAG_MOVE);
+@@ -276,9 +276,10 @@ - (void)startDragWithDropData:(const DropData&)dropData
    _dragOperation = operationMask;
  
    // Run the drag operation.

@@ -6,11 +6,14 @@ Subject: Make autocorrect=off and spellcheck=false disable Touch Bar typing
 
 https://chromium-review.googlesource.com/c/chromium/src/+/1917603
 
+Patch cannot be upstreamed refer to discussion in https://issues.chromium.org/issues/40719955,
+however the patch can be removed once mac with touch bar support reaches EOL.
+
 diff --git a/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm b/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
-index ae798fc8f923a9b590c0d9ed703946a2bf5bd3d4..962dd1b0b2de739d013650bf5b9d3c213fcea6d3 100644
+index 3d5cf1f31281e8412e6cdb441e6aa7954ad2d601..c67e3b774a27bd01026ef318629fa15e877a3616 100644
 --- a/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
 +++ b/content/app_shim_remote_cocoa/render_widget_host_view_cocoa.mm
-@@ -2671,7 +2671,9 @@ extern NSString* NSTextInputReplacementRangeAttributeName;
+@@ -2670,7 +2670,9 @@ - (void)invalidateTouchBar {
  }
  
  - (NSTouchBar*)makeTouchBar {

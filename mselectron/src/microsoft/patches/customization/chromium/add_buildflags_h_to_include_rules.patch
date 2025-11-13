@@ -7,7 +7,7 @@ Added so that include in third_party\blink\renderer\bindings\core\v8\v8_compile_
 builds without error. May be good to upstream to Chromium.
 
 diff --git a/third_party/blink/renderer/bindings/core/v8/DEPS b/third_party/blink/renderer/bindings/core/v8/DEPS
-index d221839e072006783d4f46354bf1c32584569292..557835861e71460e871f625b224a3a11e1424f70 100644
+index f074e67c9be12171d8c9eb54b998e81c616c3a06..c4c8899fc0cb7fa8232fa83d3e2b8834bf7a9643 100644
 --- a/third_party/blink/renderer/bindings/core/v8/DEPS
 +++ b/third_party/blink/renderer/bindings/core/v8/DEPS
 @@ -1,5 +1,6 @@

@@ -9,10 +9,10 @@ This patch can not be upstreamed unless git provides a way to import rules
 in .gitignore from other files.
 
 diff --git a/.gitignore b/.gitignore
-index e7e272eababc23b5fc5f0b0c619948d7174206fa..04e6e09a942ba31672c3a592290ff019edc72188 100644
+index 210132f7864c04ac7ffab70875b1c8905bd00e62..221c22ecedcbc2c1979abd421016b5f04e4153c2 100644
 --- a/.gitignore
 +++ b/.gitignore
-@@ -233,6 +233,7 @@ vs-chromium-project.txt
+@@ -238,6 +238,7 @@ vs-chromium-project.txt
  /libassistant
  /libinteraction
  /llvm

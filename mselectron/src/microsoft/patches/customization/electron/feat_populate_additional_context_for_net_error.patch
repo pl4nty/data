@@ -1,0 +1,58 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Tue, 11 Nov 2025 02:47:47 +0900
+Subject: feat: populate additional context for net::Error
+
+Update the error event from ClientRequest to now provide
+a `cause` field pointing to additional error description
+obtained from `SimpleURLLoader::NetExtendedError`.
+
+Depends on //microsoft/patches/customization/chromium/net_add_support_for_extended_error_in_simpleurlloader.patch
+
+diff --git a/lib/common/api/net-client-request.ts b/lib/common/api/net-client-request.ts
+index a2682da670d22c975c67fc611480add65135d218..833cb173a61e9896e9560548d5407cc4dbf61725 100644
+--- a/lib/common/api/net-client-request.ts
++++ b/lib/common/api/net-client-request.ts
+@@ -450,8 +450,13 @@ export class ClientRequest extends Writable implements Electron.ClientRequest {
+     this._urlLoader.on('complete', () => {
+       if (this._response) { this._response._storeInternalData(null, null); }
+     });
+-    this._urlLoader.on('error', (event, netErrorString) => {
+-      const error = new Error(netErrorString);
++    this._urlLoader.on('error', (event, netErrorString, netExtendedError) => {
++      let error: Error;
++      if (netExtendedError) {
++        error = new Error(netErrorString, { cause: netExtendedError });
++      } else {
++        error = new Error(netErrorString);
++      }
+       if (this._response) this._response.destroy(error);
+       this._die(error);
+     });
+diff --git a/shell/common/api/electron_api_url_loader.cc b/shell/common/api/electron_api_url_loader.cc
+index 81084d9f1b7e8baaadb8c854c33bc9d7eba56ab5..cece62a5bb42d0e3ff3c18e444a990445d0767aa 100644
+--- a/shell/common/api/electron_api_url_loader.cc
++++ b/shell/common/api/electron_api_url_loader.cc
+@@ -736,7 +736,8 @@ void SimpleURLLoaderWrapper::OnComplete(bool success) {
+   if (success) {
+     Emit("complete");
+   } else {
+-    Emit("error", net::ErrorToString(loader_->NetError()));
++    Emit("error", net::ErrorToString(loader_->NetError()),
++         loader_->NetExtendedError());
+   }
+   // If users initiate process shutdown when the event is emitted, then
+   // we would perform cleanup of the wrapper and we should bail out below.
+diff --git a/typings/internal-ambient.d.ts b/typings/internal-ambient.d.ts
+index e0835799f2f19133382a49e4829a31fa3be39c88..1af859a2940ec903772e4bd531bb6f2b7cbbde20 100644
+--- a/typings/internal-ambient.d.ts
++++ b/typings/internal-ambient.d.ts
+@@ -207,7 +207,7 @@ declare namespace NodeJS {
+     on(eventName: 'data', listener: (event: any, data: ArrayBuffer, resume: () => void) => void): this;
+     on(eventName: 'response-started', listener: (event: any, finalUrl: string, responseHead: ResponseHead) => void): this;
+     on(eventName: 'complete', listener: (event: any) => void): this;
+-    on(eventName: 'error', listener: (event: any, netErrorString: string) => void): this;
++    on(eventName: 'error', listener: (event: any, netErrorString: string, netExtendedError: string) => void): this;
+     on(eventName: 'login', listener: (event: any, authInfo: Electron.AuthInfo, callback: (username?: string, password?: string) => void) => void): this;
+     on(eventName: 'redirect', listener: (event: any, redirectInfo: RedirectInfo, headers: Record<string, string>) => void): this;
+     on(eventName: 'upload-progress', listener: (event: any, position: number, total: number) => void): this;

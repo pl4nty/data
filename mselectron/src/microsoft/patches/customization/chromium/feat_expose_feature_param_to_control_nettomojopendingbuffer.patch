@@ -1,0 +1,73 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Mon, 29 Sep 2025 13:36:43 +0900
+Subject: feat: expose feature param to control NetToMojoPendingBuffer
+
+Refs https://github.com/microsoft/vscode/issues/268800
+
+Patch will be removed once the experiment to control buffer sizes in VSCode is complete.
+
+diff --git a/services/network/public/cpp/features.cc b/services/network/public/cpp/features.cc
+index 4152ecf4142660b85c20e1a6d45c3b04c51f00d1..6de9bae36df36eaa90e456127350fd3a193ea1b6 100644
+--- a/services/network/public/cpp/features.cc
++++ b/services/network/public/cpp/features.cc
+@@ -587,4 +587,13 @@ BASE_FEATURE_PARAM(bool,
+                    "url_loader",
+                    true);
+ 
++BASE_FEATURE(kNetAdapterMaxBufSizeFeature,
++             "NetAdapterMaxBufSizeFeature",
++             base::FEATURE_ENABLED_BY_DEFAULT);
++BASE_FEATURE_PARAM(size_t,
++                   kNetAdapterMaxBufSize,
++                   &kNetAdapterMaxBufSizeFeature,
++                   "NetAdapterMaxBufSize",
++                   64 * 1024);
++
+ }  // namespace network::features
+diff --git a/services/network/public/cpp/features.h b/services/network/public/cpp/features.h
+index dec892422d93353150971c30682853a2a029ccac..6f6045d489e7ce47e936fbe4c38c47944157972a 100644
+--- a/services/network/public/cpp/features.h
++++ b/services/network/public/cpp/features.h
+@@ -361,6 +361,14 @@ BASE_DECLARE_FEATURE_PARAM(bool, kNetworkServiceTaskSchedulerResourceScheduler);
+ COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+ BASE_DECLARE_FEATURE_PARAM(bool, kNetworkServiceTaskSchedulerURLLoader);
+ 
++// When enabled, the max buffer size of NetToMojoPendingBuffer can be configured.
++COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
++BASE_DECLARE_FEATURE(kNetAdapterMaxBufSizeFeature);
++
++// The max buffer size of NetToMojoPendingBuffer. This buffer size should be
++// smaller than the mojo ring buffer size.
++COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
++BASE_DECLARE_FEATURE_PARAM(size_t, kNetAdapterMaxBufSize);
+ }  // namespace network::features
+ 
+ #endif  // SERVICES_NETWORK_PUBLIC_CPP_FEATURES_H_
+diff --git a/services/network/public/cpp/net_adapters.cc b/services/network/public/cpp/net_adapters.cc
+index 95697b2f81c7d237da132d9a81197a5dd485ee2f..1e5d757fbd9b18851754847e483ba074f8230678 100644
+--- a/services/network/public/cpp/net_adapters.cc
++++ b/services/network/public/cpp/net_adapters.cc
+@@ -10,13 +10,10 @@
+ #include "base/containers/span.h"
+ #include "base/strings/string_view_util.h"
+ #include "net/base/net_errors.h"
++#include "services/network/public/cpp/features.h"
+ 
+ namespace network {
+ 
+-namespace {
+-constexpr size_t kMaxBufSize = 64 * 1024;
+-}
+-
+ NetToMojoPendingBuffer::NetToMojoPendingBuffer(
+     mojo::ScopedDataPipeProducerHandle handle,
+     base::span<char> buffer)
+@@ -33,6 +30,7 @@ MojoResult NetToMojoPendingBuffer::BeginWrite(
+     mojo::ScopedDataPipeProducerHandle* handle,
+     scoped_refptr<NetToMojoPendingBuffer>* pending) {
+   base::span<uint8_t> buf;
++  const size_t kMaxBufSize = features::kNetAdapterMaxBufSize.Get();
+   MojoResult result =
+       (*handle)->BeginWriteData(kMaxBufSize, MOJO_WRITE_DATA_FLAG_NONE, buf);
+   if (result != MOJO_RESULT_OK) {

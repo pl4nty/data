@@ -6,7 +6,7 @@ Subject: build: make Electron depend on internal stuff
 Hooks the Microsoft specific builds scripts to the Electron build.
 
 diff --git a/BUILD.gn b/BUILD.gn
-index 3ffb61f2021e703e6f517156e105b178a4814bec..da18c7a19c0d854278636bfaeb9e07588be1c532 100644
+index c27602f16406a70f7c07f019b664d945a13e362c..ccb2f2c731b54c47c0a44a480cc366be7f738030 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
 @@ -6,6 +6,7 @@ import("//components/spellcheck/spellcheck_build_features.gni")
@@ -25,7 +25,7 @@ index 3ffb61f2021e703e6f517156e105b178a4814bec..da18c7a19c0d854278636bfaeb9e0758
      "//net:extras",
      "//net:net_resources",
      "//printing/buildflags",
-@@ -1107,6 +1109,7 @@ if (is_mac) {
+@@ -1116,6 +1118,7 @@ if (is_mac) {
        ":electron_fuses",
        "//electron/build/config:generate_mas_config",
        "//electron/buildflags",
@@ -33,7 +33,7 @@ index 3ffb61f2021e703e6f517156e105b178a4814bec..da18c7a19c0d854278636bfaeb9e0758
      ]
      if (is_mas_build) {
        deps += [ ":electron_login_helper_app" ]
-@@ -1223,6 +1226,7 @@ if (is_mac) {
+@@ -1232,6 +1235,7 @@ if (is_mac) {
        "//components/crash/core/app",
        "//content:sandbox_helper_win",
        "//electron/buildflags",
