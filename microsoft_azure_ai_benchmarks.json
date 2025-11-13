@@ -512,7 +512,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 61.9565
+                        "attack_success_rate": 67
                     },
                     "modelAssetId": "azureml://registries/azureml-cohere/models/cohere-command-a/versions/1",
                     "modelName": "cohere-command-a",
@@ -580,7 +580,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 8.8757
+                        "attack_success_rate": 9.5477
                     },
                     "modelAssetId": "azureml://registries/azureml-cohere/models/cohere-command-a/versions/1",
                     "modelName": "cohere-command-a",
@@ -827,8 +827,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 37.078767,
-                        "index_metric": 37.078767
+                        "attack_success_rate": 38.983926,
+                        "index_metric": 38.983926
                     },
                     "modelAssetId": "azureml://registries/azureml-cohere/models/cohere-command-a/versions/1",
                     "modelName": "cohere-command-a",
@@ -1362,7 +1362,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 75.8242
+                        "attack_success_rate": 77.6596
                     },
                     "modelAssetId": "azureml://registries/azureml-cohere/models/Cohere-command-r-plus-08-2024/versions/1",
                     "modelName": "Cohere-command-r-plus-08-2024",
@@ -1677,8 +1677,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 51.16103,
-                        "index_metric": 51.16103
+                        "attack_success_rate": 51.772828,
+                        "index_metric": 51.772828
                     },
                     "modelAssetId": "azureml://registries/azureml-cohere/models/Cohere-command-r-plus-08-2024/versions/1",
                     "modelName": "cohere-command-r-plus-08-2024",
@@ -3028,7 +3028,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 59.1398
+                        "attack_success_rate": 62
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3-0324/versions/1",
                     "modelName": "DeepSeek-V3-0324",
@@ -3096,7 +3096,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 18.7817
+                        "attack_success_rate": 17.5
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3-0324/versions/1",
                     "modelName": "DeepSeek-V3-0324",
@@ -3343,8 +3343,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 41.30717,
-                        "index_metric": 41.30717
+                        "attack_success_rate": 41.833333,
+                        "index_metric": 41.833333
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3-0324/versions/1",
                     "modelName": "deepseek-v3-0324",
@@ -3878,7 +3878,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 44
+                        "attack_success_rate": 50.5051
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3.1/versions/1",
                     "modelName": "DeepSeek-V3.1",
@@ -3946,7 +3946,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 16.5803
+                        "attack_success_rate": 19
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3.1/versions/1",
                     "modelName": "DeepSeek-V3.1",
@@ -4193,8 +4193,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 37.52677,
-                        "index_metric": 37.52677
+                        "attack_success_rate": 40.501683,
+                        "index_metric": 40.501683
                     },
                     "modelAssetId": "azureml://registries/azureml-deepseek/models/DeepSeek-V3.1/versions/1",
                     "modelName": "deepseek-v3-1",
@@ -4730,11 +4730,11 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 47.9592
+                        "attack_success_rate": 48
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
                     "modelName": "gpt-4.1-mini",
-                    "modelVersion": "2025-04-14"
+                    "modelVersion": "14-04-2025"
                 },
                 "tags": {
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
@@ -4768,7 +4768,7 @@
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
                     "modelName": "gpt-4.1-mini",
-                    "modelVersion": "2025-04-14"
+                    "modelVersion": "14-04-2025"
                 },
                 "tags": {
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
@@ -4798,11 +4798,11 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 4.0201
+                        "attack_success_rate": 4.5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
                     "modelName": "gpt-4.1-mini",
-                    "modelVersion": "2025-04-14"
+                    "modelVersion": "14-04-2025"
                 },
                 "tags": {
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
@@ -5045,8 +5045,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 17.326428,
-                        "index_metric": 17.326428
+                        "attack_success_rate": 17.5,
+                        "index_metric": 17.5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-mini/versions/2025-04-14",
                     "modelName": "gpt-4-1-mini",
@@ -5582,7 +5582,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 41.573
+                        "attack_success_rate": 40
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-nano/versions/2025-04-14",
                     "modelName": "gpt-4.1-nano",
@@ -5650,7 +5650,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 0
+                        "attack_success_rate": 1.5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-nano/versions/2025-04-14",
                     "modelName": "gpt-4.1-nano",
@@ -5897,8 +5897,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 13.857678,
-                        "index_metric": 13.857678
+                        "attack_success_rate": 13.833333,
+                        "index_metric": 13.833333
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1-nano/versions/2025-04-14",
                     "modelName": "gpt-4-1-nano",
@@ -6434,7 +6434,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 23.6559
+                        "attack_success_rate": 27
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1/versions/2025-04-14",
                     "modelName": "gpt-4.1",
@@ -6502,7 +6502,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 2.0513
+                        "attack_success_rate": 2.5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1/versions/2025-04-14",
                     "modelName": "gpt-4.1",
@@ -6749,8 +6749,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 8.569065,
-                        "index_metric": 8.569065
+                        "attack_success_rate": 9.833333,
+                        "index_metric": 9.833333
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4.1/versions/2025-04-14",
                     "modelName": "gpt-4-1",
@@ -7220,7 +7220,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 16.25
+                        "attack_success_rate": 7
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
                     "modelName": "gpt-4o-mini",
@@ -7467,8 +7467,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 15.083333,
-                        "index_metric": 15.083333
+                        "attack_success_rate": 12,
+                        "index_metric": 12
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
                     "modelName": "gpt-4o-mini",
@@ -8720,7 +8720,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 1
+                        "attack_success_rate": 1.0526
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-mini/versions/2025-08-07",
                     "modelName": "gpt-5-mini",
@@ -8788,7 +8788,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 0.5291
+                        "attack_success_rate": 0.5348
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-mini/versions/2025-08-07",
                     "modelName": "gpt-5-mini",
@@ -9035,8 +9035,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 0.5097,
-                        "index_metric": 0.5097
+                        "attack_success_rate": 0.52913,
+                        "index_metric": 0.52913
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-mini/versions/2025-08-07",
                     "modelName": "gpt-5-mini",
@@ -9570,7 +9570,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 0
+                        "attack_success_rate": 5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-nano/versions/2025-08-07",
                     "modelName": "gpt-5-nano",
@@ -9885,8 +9885,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 0,
-                        "index_metric": 0
+                        "attack_success_rate": 1.666667,
+                        "index_metric": 1.666667
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-nano/versions/2025-08-07",
                     "modelName": "gpt-5-nano",
@@ -10735,8 +10735,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 0,
-                        "index_metric": 0
+                        "attack_success_rate": 0.001,
+                        "index_metric": 0.001
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
                     "modelName": "gpt-5-pro",
@@ -11270,7 +11270,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 3.0303
+                        "attack_success_rate": 3.2609
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5/versions/2025-08-07",
                     "modelName": "gpt-5",
@@ -11585,8 +11585,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 1.010101,
-                        "index_metric": 1.010101
+                        "attack_success_rate": 1.086957,
+                        "index_metric": 1.086957
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5/versions/2025-08-07",
                     "modelName": "gpt-5",
@@ -12120,7 +12120,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 5
+                        "attack_success_rate": 4
                     },
                     "modelAssetId": "azureml://registries/azureml-openai-oss/models/gpt-oss-120b/versions/4",
                     "modelName": "gpt-oss-120b",
@@ -12435,8 +12435,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 1.666667,
-                        "index_metric": 1.666667
+                        "attack_success_rate": 1.333333,
+                        "index_metric": 1.333333
                     },
                     "modelAssetId": "azureml://registries/azureml-openai-oss/models/gpt-oss-120b/versions/4",
                     "modelName": "gpt-oss-120b",
@@ -12970,7 +12970,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 83.6364
+                        "attack_success_rate": 76
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-3-mini/versions/1",
                     "modelName": "grok-3-mini",
@@ -13038,7 +13038,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 33.8235
+                        "attack_success_rate": 25.5
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-3-mini/versions/1",
                     "modelName": "grok-3-mini",
@@ -13285,8 +13285,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 54.819964,
-                        "index_metric": 54.819964
+                        "attack_success_rate": 49.5,
+                        "index_metric": 49.5
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-3-mini/versions/1",
                     "modelName": "grok-3-mini",
@@ -13888,7 +13888,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 19.7183
+                        "attack_success_rate": 24
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-3/versions/1",
                     "modelName": "grok-3",
@@ -14135,8 +14135,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 47.239437,
-                        "index_metric": 47.239437
+                        "attack_success_rate": 48.666667,
+                        "index_metric": 48.666667
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-3/versions/1",
                     "modelName": "grok-3",
@@ -14670,7 +14670,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 26.2626
+                        "attack_success_rate": 26.8041
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning/versions/1",
                     "modelName": "grok-4-fast-non-reasoning",
@@ -14985,8 +14985,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 36.087543,
-                        "index_metric": 36.087543
+                        "attack_success_rate": 36.26804,
+                        "index_metric": 36.26804
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning/versions/1",
                     "modelName": "grok-4-fast-non-reasoning",
@@ -17220,7 +17220,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 15
+                        "attack_success_rate": 13.1313
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-code-fast-1/versions/1",
                     "modelName": "grok-code-fast-1",
@@ -17288,7 +17288,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 9.6447
+                        "attack_success_rate": 10
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-code-fast-1/versions/1",
                     "modelName": "grok-code-fast-1",
@@ -17535,8 +17535,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 23.548223,
-                        "index_metric": 23.548223
+                        "attack_success_rate": 23.04377,
+                        "index_metric": 23.04377
                     },
                     "modelAssetId": "azureml://registries/azureml-xai/models/grok-code-fast-1/versions/1",
                     "modelName": "grok-code-fast-1",
@@ -18070,7 +18070,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 50.5155
+                        "attack_success_rate": 45
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-3.3-70B-Instruct/versions/7",
                     "modelName": "Llama-3.3-70B-Instruct",
@@ -18138,7 +18138,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 8.8608
+                        "attack_success_rate": 13
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-3.3-70B-Instruct/versions/7",
                     "modelName": "Llama-3.3-70B-Instruct",
@@ -18385,8 +18385,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 33.125408,
-                        "index_metric": 33.125408
+                        "attack_success_rate": 32.666667,
+                        "index_metric": 32.666667
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-3.3-70B-Instruct/versions/7",
                     "modelName": "llama-3-3-70b-instruct",
@@ -18920,7 +18920,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 43.1034
+                        "attack_success_rate": 50
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1",
                     "modelName": "Llama-4-Maverick-17B-128E-Instruct-FP8",
@@ -18988,7 +18988,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 7.5758
+                        "attack_success_rate": 7.5
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1",
                     "modelName": "Llama-4-Maverick-17B-128E-Instruct-FP8",
@@ -19235,8 +19235,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 25.226402,
-                        "index_metric": 25.226402
+                        "attack_success_rate": 27.5,
+                        "index_metric": 27.5
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1",
                     "modelName": "llama-4-maverick-17b-128e-instruct-fp8",
@@ -19770,7 +19770,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 44.898
+                        "attack_success_rate": 44
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Scout-17B-16E-Instruct/versions/2",
                     "modelName": "Llama-4-Scout-17B-16E-Instruct",
@@ -19838,7 +19838,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 10.7143
+                        "attack_success_rate": 14.5
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Scout-17B-16E-Instruct/versions/2",
                     "modelName": "Llama-4-Scout-17B-16E-Instruct",
@@ -20085,8 +20085,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 23.870748,
-                        "index_metric": 23.870748
+                        "attack_success_rate": 24.833333,
+                        "index_metric": 24.833333
                     },
                     "modelAssetId": "azureml://registries/azureml-meta/models/Llama-4-Scout-17B-16E-Instruct/versions/2",
                     "modelName": "llama-4-scout-17b-16e-instruct",
@@ -20418,7 +20418,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 85
+                        "attack_success_rate": 81.6327
                     },
                     "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
                     "modelName": "MAI-DS-R1",
@@ -20631,8 +20631,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 43.114478,
-                        "index_metric": 43.114478
+                        "attack_success_rate": 41.992028,
+                        "index_metric": 41.992028
                     },
                     "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
                     "modelName": "mai-ds-r1",
@@ -21166,7 +21166,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 78
+                        "attack_success_rate": 76
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1",
                     "modelName": "mistral-medium-2505",
@@ -21234,7 +21234,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 24.6231
+                        "attack_success_rate": 23
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1",
                     "modelName": "mistral-medium-2505",
@@ -21481,8 +21481,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 50.1941,
-                        "index_metric": 50.1941
+                        "attack_success_rate": 48.986395,
+                        "index_metric": 48.986395
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1",
                     "modelName": "mistral-medium-2505",
@@ -21880,7 +21880,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 62.8866
+                        "attack_success_rate": 68
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
                     "modelName": "mistral-small-2503",
@@ -21948,7 +21948,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_standard",
                     "metrics": {
-                        "attack_success_rate": 26.3959
+                        "attack_success_rate": 25.7576
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
                     "modelName": "mistral-small-2503",
@@ -22195,8 +22195,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 39.760846,
-                        "index_metric": 39.760846
+                        "attack_success_rate": 41.252527,
+                        "index_metric": 41.252527
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
                     "modelName": "mistral-small-2503",
@@ -24440,7 +24440,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 2
+                        "attack_success_rate": 0
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
                     "modelName": "o3-pro",
@@ -24474,7 +24474,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
-                        "attack_success_rate": 0
+                        "attack_success_rate": 1
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
                     "modelName": "o3-pro",
@@ -24755,8 +24755,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 1,
-                        "index_metric": 1
+                        "attack_success_rate": 0.666667,
+                        "index_metric": 0.666667
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10",
                     "modelName": "o3-pro",
