@@ -65,17 +65,13 @@ do
 
         -- DECOMPILER ERROR at PC240: Confused about usage of register: R15 in 'UnsetPending'
 
+        -- DECOMPILER ERROR at PC249: Confused about usage of register: R15 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC258: Confused about usage of register: R15 in 'UnsetPending'
+
         if (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "/a<</s/uri\n/uri(http", 1, true) ~= nil and (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "/type/action>>\n/subtype/link>>", 1, true) ~= nil then
-          if (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.zuwufag%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.godoxevez%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.tugoduzak%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.nurepikis%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.gonujovux%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.maxudijuz%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.pofezaf%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.dutabuz%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.bebopim%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.vimemug%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.lovali%.co%.za/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.riwitamo%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.muvemisavo%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.yftejum%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.pifazoveju%.com/", 1, false) ~= nil then
+          if (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.zuwufag%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.godoxevez%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.tugoduzak%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.nurepikis%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.gonujovux%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.maxudijuz%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.pofezaf%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.dutabuz%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.bebopim%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.vimemug%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.lovali%.co%.za/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.riwitamo%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.muvemisavo%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.yftejum%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.pifazoveju%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.bovetewa%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.jufewine%.com/", 1, false) ~= nil then
             (mp.set_mpattribute)("LUA:PDF/FakeCaptcha.AA")
-            return mp.INFECTED
-          end
-          -- DECOMPILER ERROR at PC256: Confused about usage of register: R15 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC265: Confused about usage of register: R15 in 'UnsetPending'
-
-          if (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.bovetewa%.com/", 1, false) ~= nil or (string.find)((string.lower)((mp.readfile)(l_0_12, 1200)), "http%a%://%w+%.jufewine%.com/", 1, false) ~= nil then
-            (mp.set_mpattribute)("LUA:PDF/FakeCaptcha.AB")
             return mp.INFECTED
           end
           return mp.INFECTED
@@ -88,13 +84,13 @@ do
         if l_0_6 < l_0_7 then
           break
         end
-        -- DECOMPILER ERROR at PC286: LeaveBlock: unexpected jumping out DO_STMT
+        -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out DO_STMT
 
       end
     end
   end
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC291: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC284: freeLocal<0 in 'ReleaseLocals'
 
 end
 
