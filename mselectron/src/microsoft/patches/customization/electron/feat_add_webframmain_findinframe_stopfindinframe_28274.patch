@@ -6,6 +6,9 @@ Subject: feat: add webFramMain.findInFrame/stopFindInFrame (#28274)
 Backports https://github.com/electron/electron/pull/28274
 Refs https://github.com/microsoft/vscode/issues/96307
 
+Depends on //microsoft/patches/customization/chromium/feat_optionally_make_findrequestmanager_to_start_search_from_a_rfh.patch,
+check that patch for additional context.
+
 diff --git a/docs/api/web-frame-main.md b/docs/api/web-frame-main.md
 index f72a935016f18fbf6b5b3caffa4980b256490a6e..744e44622fa8e797ca478e2a816a8592437a1986 100644
 --- a/docs/api/web-frame-main.md
@@ -81,10 +84,10 @@ index f72a935016f18fbf6b5b3caffa4980b256490a6e..744e44622fa8e797ca478e2a816a8592
  
  #### `frame.ipc` _Readonly_
 diff --git a/shell/browser/api/electron_api_web_contents.cc b/shell/browser/api/electron_api_web_contents.cc
-index 4679ab95cf2fbd6ee2bde1d4059001b68c4d2e58..63e06cde48f3f69c2958e0b14f20b9b876a8e985 100644
+index f031d6f40dc94e0363fde09bc531ba90f3d25d57..3245fab70c91a24562a9d37306b27c25c69925f7 100644
 --- a/shell/browser/api/electron_api_web_contents.cc
 +++ b/shell/browser/api/electron_api_web_contents.cc
-@@ -1553,7 +1553,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1559,7 +1559,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
                              int number_of_matches,
                              const gfx::Rect& selection_rect,
                              int active_match_ordinal,
@@ -94,7 +97,7 @@ index 4679ab95cf2fbd6ee2bde1d4059001b68c4d2e58..63e06cde48f3f69c2958e0b14f20b9b8
    if (!final_update)
      return;
  
-@@ -1565,7 +1566,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
+@@ -1571,7 +1572,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
    result.Set("selectionArea", selection_rect);
    result.Set("activeMatchOrdinal", active_match_ordinal);
    result.Set("finalUpdate", final_update);  // Deprecate after 2.0
@@ -110,10 +113,10 @@ index 4679ab95cf2fbd6ee2bde1d4059001b68c4d2e58..63e06cde48f3f69c2958e0b14f20b9b8
  
  void WebContents::OnRequestPointerLock(content::WebContents* web_contents,
 diff --git a/shell/browser/api/electron_api_web_contents.h b/shell/browser/api/electron_api_web_contents.h
-index e0daa212ee26418f4c668533642a1680332632a8..2db9865b8355af7c5e8ee5bb687237e4758f89ef 100644
+index 7291cdd1798ea1d21b4632031522d76dc6e22956..401e1d72cbd9007aac3e1cfba633b2eae41381df 100644
 --- a/shell/browser/api/electron_api_web_contents.h
 +++ b/shell/browser/api/electron_api_web_contents.h
-@@ -559,7 +559,8 @@ class WebContents final : public ExclusiveAccessContext,
+@@ -561,7 +561,8 @@ class WebContents final : public ExclusiveAccessContext,
                   int number_of_matches,
                   const gfx::Rect& selection_rect,
                   int active_match_ordinal,
@@ -306,7 +309,7 @@ index 56dc7497ac011e8af4e5fb4932b3e607d31feecd..38b2130ac34e3c7630fafdeef00e0575
    mojo::Remote<mojom::ElectronRenderer> renderer_api_;
    mojo::PendingReceiver<mojom::ElectronRenderer> pending_receiver_;
 diff --git a/spec/api-web-contents-spec.ts b/spec/api-web-contents-spec.ts
-index 442743cb45d777e653c39146d0d4285ca6d5908e..0e1e8329d807cba620e77b66522c3431cb2d0e4c 100644
+index e701ff98e0890c2bcc279486afea70fe6e6d26b3..f299698366d1813dc70ccc0c6c4952ede0448aae 100644
 --- a/spec/api-web-contents-spec.ts
 +++ b/spec/api-web-contents-spec.ts
 @@ -16,6 +16,8 @@ import { ifdescribe, defer, waitUntil, listen, ifit } from './lib/spec-helpers';
@@ -318,7 +321,7 @@ index 442743cb45d777e653c39146d0d4285ca6d5908e..0e1e8329d807cba620e77b66522c3431
  const features = process._linkedBinding('electron_common_features');
  
  describe('webContents module', () => {
-@@ -3303,4 +3305,66 @@ describe('webContents module', () => {
+@@ -3321,4 +3323,66 @@ describe('webContents module', () => {
        expect(w.getBounds().height).to.equal(height);
      });
    });

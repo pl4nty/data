@@ -6,11 +6,13 @@ Subject: feat: Optionally make FindRequestManager to start search from a RFH
 This patch adds the ability to search within a subtree of frames,
 rather than always starting from the top-level WebContents.
 
+Possible to upstream https://issues.chromium.org/issues/40755645
+
 diff --git a/chrome/browser/ui/browser.cc b/chrome/browser/ui/browser.cc
-index 0a9b3151af2e6d0544472a6b827edb72f974c61d..e19e954e38a28939994129abe1c70b912187d60c 100644
+index d22c3f134573a9ba91cedf24aa4dafc48332914f..9dcf7ebb4313e1dabf430651b41ff977d9f7d10b 100644
 --- a/chrome/browser/ui/browser.cc
 +++ b/chrome/browser/ui/browser.cc
-@@ -2761,7 +2761,8 @@ void Browser::FindReply(WebContents* web_contents,
+@@ -2839,7 +2839,8 @@ void Browser::FindReply(WebContents* web_contents,
                          int number_of_matches,
                          const gfx::Rect& selection_rect,
                          int active_match_ordinal,
@@ -21,10 +23,10 @@ index 0a9b3151af2e6d0544472a6b827edb72f974c61d..e19e954e38a28939994129abe1c70b91
        find_in_page::FindTabHelper::FromWebContents(web_contents);
    if (!find_tab_helper) {
 diff --git a/chrome/browser/ui/browser.h b/chrome/browser/ui/browser.h
-index b4bd5b6821b2ce9638abb40637454c91b5eac733..fceb1a83bf9ac5519f847879845bdadf36d8d0c9 100644
+index 037f5ecdf3a4437c935b90c45ef29536e0bfa2e3..a4eb2ed0e88d74f5908ef4d2f1d99c68091cc51c 100644
 --- a/chrome/browser/ui/browser.h
 +++ b/chrome/browser/ui/browser.h
-@@ -1011,7 +1011,8 @@ class Browser : public TabStripModelObserver,
+@@ -1021,7 +1021,8 @@ class Browser : public TabStripModelObserver,
                   int number_of_matches,
                   const gfx::Rect& selection_rect,
                   int active_match_ordinal,
@@ -164,10 +166,10 @@ index 1b6f53b4394fcc2719e56abfe650e0992b972883..e67c2daa497fa74fc359ce5f10897963
    // session, which uniquely identifies this session. Request IDs are included
    // in all find-related IPCs, which allows reply IPCs containing results from
 diff --git a/content/browser/web_contents/web_contents_impl.cc b/content/browser/web_contents/web_contents_impl.cc
-index be0788fff7498a4a51c08f09754394aa975123ef..53bd574c2e52bd6bdbfe213bf3154fa7746c536e 100644
+index 5b9daf8e31da1ebef7d154cb2a970f7d68566a12..3e2a46319e2228c82fd56909a716a63e1504c482 100644
 --- a/content/browser/web_contents/web_contents_impl.cc
 +++ b/content/browser/web_contents/web_contents_impl.cc
-@@ -10837,12 +10837,13 @@ void WebContentsImpl::NotifyFindReply(int request_id,
+@@ -10852,12 +10852,13 @@ void WebContentsImpl::NotifyFindReply(int request_id,
                                        int number_of_matches,
                                        const gfx::Rect& selection_rect,
                                        int active_match_ordinal,
@@ -184,10 +186,10 @@ index be0788fff7498a4a51c08f09754394aa975123ef..53bd574c2e52bd6bdbfe213bf3154fa7
  }
  
 diff --git a/content/browser/web_contents/web_contents_impl.h b/content/browser/web_contents/web_contents_impl.h
-index 4b86e98d2c4d79c89ebe0296915730438181686c..f2102661d0aef9c7f354d723db2f59206a14253d 100644
+index 55db63b3f99e465d2c77bb25dca5d50005df5ce7..0336af295da4404edfd20a48e7ff1f2b5fa290b5 100644
 --- a/content/browser/web_contents/web_contents_impl.h
 +++ b/content/browser/web_contents/web_contents_impl.h
-@@ -1353,7 +1353,8 @@ class CONTENT_EXPORT WebContentsImpl
+@@ -1356,7 +1356,8 @@ class CONTENT_EXPORT WebContentsImpl
                         int number_of_matches,
                         const gfx::Rect& selection_rect,
                         int active_match_ordinal,
@@ -198,10 +200,10 @@ index 4b86e98d2c4d79c89ebe0296915730438181686c..f2102661d0aef9c7f354d723db2f5920
    // Modify the counter of connected devices for this WebContents.
    void IncrementBluetoothConnectedDeviceCount();
 diff --git a/content/public/browser/web_contents_delegate.h b/content/public/browser/web_contents_delegate.h
-index d0842904102fee982bc8502478a0a9067bb77904..780bc04371d3ce988aefff4bae3b0f473333b308 100644
+index 543c1f5a0dc04fdaaf7a332ec9869d286f736763..17d242c2d351891f1e68d581ff162fac35ee9d7a 100644
 --- a/content/public/browser/web_contents_delegate.h
 +++ b/content/public/browser/web_contents_delegate.h
-@@ -574,7 +574,8 @@ class CONTENT_EXPORT WebContentsDelegate {
+@@ -585,7 +585,8 @@ class CONTENT_EXPORT WebContentsDelegate {
                           int number_of_matches,
                           const gfx::Rect& selection_rect,
                           int active_match_ordinal,
@@ -212,10 +214,10 @@ index d0842904102fee982bc8502478a0a9067bb77904..780bc04371d3ce988aefff4bae3b0f47
  #if BUILDFLAG(IS_ANDROID)
    // Provides the rects of the current find-in-page matches.
 diff --git a/extensions/browser/guest_view/web_view/web_view_guest.cc b/extensions/browser/guest_view/web_view/web_view_guest.cc
-index 37d0f2d821a731a68221fb661ec04ad234805522..b5ad08ae7ffca4fee892288bdb738bc6c592bdc1 100644
+index 5adcd5d4c125b40088f938f0cfc2d21b0fe099ef..5c70a3546a44937e3214e0797254373a641d5722 100644
 --- a/extensions/browser/guest_view/web_view/web_view_guest.cc
 +++ b/extensions/browser/guest_view/web_view/web_view_guest.cc
-@@ -770,9 +770,11 @@ void WebViewGuest::FindReply(WebContents* source,
+@@ -772,9 +772,11 @@ void WebViewGuest::FindReply(WebContents* source,
                               int number_of_matches,
                               const gfx::Rect& selection_rect,
                               int active_match_ordinal,

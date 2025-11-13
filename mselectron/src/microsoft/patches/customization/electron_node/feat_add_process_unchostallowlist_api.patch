@@ -5,6 +5,9 @@ Subject: feat: add process.uncHostAllowlist api
 
 Refs https://github.com/microsoft/vscode/issues/182070
 
+Patch can be removed once NTLM authentication for connecting to UNC hosts is no longer
+supported. Refs https://techcommunity.microsoft.com/blog/windows-itpro-blog/the-evolution-of-windows-authentication/3926848
+
 diff --git a/lib/child_process.js b/lib/child_process.js
 index bf62c5adf0e0d75cb50636f365f71db82c29ba29..145594f92773ba63db4865c508e65ecf81b9e9e9 100644
 --- a/lib/child_process.js

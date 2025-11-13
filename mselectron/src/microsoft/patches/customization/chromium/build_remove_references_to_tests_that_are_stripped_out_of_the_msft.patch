@@ -8,10 +8,10 @@ Chromium source code when making our local mirror. Remove those
 references to prevent gn from failing.
 
 diff --git a/BUILD.gn b/BUILD.gn
-index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e9248377b 100644
+index 788cbfa2d309564234cd83ee09641880ee765b73..9432bbbf17881c7451490c13cdc6d72edf787052 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
-@@ -1167,7 +1167,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1155,7 +1155,6 @@ if (use_blink && !is_cronet_build) {
          "//chrome",
          "//chrome/test/chromedriver:chromedriver_server",
          "//third_party/blink/tools:wpt_tests_isolate",
@@ -19,7 +19,7 @@ index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e
        ]
      }
  
-@@ -1183,7 +1182,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1171,7 +1170,6 @@ if (use_blink && !is_cronet_build) {
          "//chrome/test/chromedriver:chromedriver_server",
          "//headless:headless_shell",
          "//third_party/blink/tools:wpt_tests_isolate",
@@ -27,7 +27,7 @@ index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e
        ]
        if (is_mac || is_linux) {
          data_deps += [ "//third_party/hyphenation-patterns:bundle_hyphen_data" ]
-@@ -1370,7 +1368,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1358,7 +1356,6 @@ if (use_blink && !is_cronet_build) {
  
      data_deps = [
        ":blink_web_tests_support_data",
@@ -35,7 +35,7 @@ index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e
      ]
      data = [ "//third_party/blink/perf_tests/" ]
    }
-@@ -1381,7 +1378,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1369,7 +1366,6 @@ if (use_blink && !is_cronet_build) {
    # this target.
    group("blink_web_tests_expectations") {
      testonly = true
@@ -43,7 +43,7 @@ index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e
    }
  
    # https://chromium.googlesource.com/chromium/src/+/HEAD/docs/testing/web_tests.md
-@@ -1405,7 +1401,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1393,7 +1389,6 @@ if (use_blink && !is_cronet_build) {
  
      data_deps = [
        ":blink_web_tests_support_data",
@@ -51,7 +51,7 @@ index cf8b44c0062d4ff15472b1afb247d8a9e399eb18..46110487b61eccda31c457fb8f9d768e
      ]
      data = [ "//third_party/blink/perf_tests/" ]
    }
-@@ -1430,7 +1425,6 @@ if (use_blink && !is_cronet_build) {
+@@ -1418,7 +1413,6 @@ if (use_blink && !is_cronet_build) {
  
      data_deps = [
        ":blink_web_tests_support_data",

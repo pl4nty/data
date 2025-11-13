@@ -6,10 +6,10 @@ Subject: build: fix pdf
 We don't want pdf, so don't include it.
 
 diff --git a/chrome/browser/content_settings/BUILD.gn b/chrome/browser/content_settings/BUILD.gn
-index a50a2a88b0420f9f740e56ac073b4967e50eedaa..49f251e6eeb3c5b4fde1eee37153e6b3866725f9 100644
+index e24de988473b298d952f2ec54982771c7b4cea72..33d7485944aab1df09197c24d352cb7afac3fe13 100644
 --- a/chrome/browser/content_settings/BUILD.gn
 +++ b/chrome/browser/content_settings/BUILD.gn
-@@ -83,7 +83,6 @@ source_set("impl") {
+@@ -85,7 +85,6 @@ source_set("impl") {
      "//components/content_settings/core/browser:cookie_settings",
      "//components/pref_registry",
      "//components/supervised_user/core/browser",
@@ -18,10 +18,10 @@ index a50a2a88b0420f9f740e56ac073b4967e50eedaa..49f251e6eeb3c5b4fde1eee37153e6b3
      "//ui/webui",
    ]
 diff --git a/chrome/browser/ui/lens/BUILD.gn b/chrome/browser/ui/lens/BUILD.gn
-index 3b53b7954cbf22e4b54a76f62938ec61d915cf77..bd86302b534bd4aeba9953ad7c9194c616ac2577 100644
+index 04eaccab86643bbad90efea0ed21e3a96e035177..345b9d7883fc90414ab2e7f3753850db59e0ce9a 100644
 --- a/chrome/browser/ui/lens/BUILD.gn
 +++ b/chrome/browser/ui/lens/BUILD.gn
-@@ -279,7 +279,6 @@ source_set("browser_tests") {
+@@ -292,7 +292,6 @@ source_set("browser_tests") {
      "//content/test:test_support",
      "//mojo/public/cpp/bindings",
      "//net",
@@ -29,7 +29,7 @@ index 3b53b7954cbf22e4b54a76f62938ec61d915cf77..bd86302b534bd4aeba9953ad7c9194c6
      "//third_party/lens_server_proto:lens_overlay_proto",
      "//ui/base",
      "//ui/base:types",
-@@ -291,10 +290,6 @@ source_set("browser_tests") {
+@@ -304,10 +303,6 @@ source_set("browser_tests") {
      "//ui/views/controls/webview",
      "//url",
    ]
@@ -41,10 +41,10 @@ index 3b53b7954cbf22e4b54a76f62938ec61d915cf77..bd86302b534bd4aeba9953ad7c9194c6
    # enable the diagnostic by removing this line.
    configs += [ "//build/config/compiler:no_exit_time_destructors" ]
 diff --git a/chrome/test/BUILD.gn b/chrome/test/BUILD.gn
-index 244abec3d9a1758d78590f0f45b8af40615638e7..da581cb147dd379a15a83a0ecef4d713b80ab046 100644
+index 4650080f45da4e321d4b0f0dabd98f2bf097c7c2..85d06b8c63a2798a070f4ce5635cd6f3da2a994e 100644
 --- a/chrome/test/BUILD.gn
 +++ b/chrome/test/BUILD.gn
-@@ -4084,7 +4084,6 @@ if (!is_android) {
+@@ -4194,7 +4194,6 @@ if (!is_android) {
        deps += [
          "../browser/pdf",
          "../browser/pdf:pdf_extension_test_utils",

@@ -9,11 +9,13 @@ The new role incorrectly dismisses focus on the list elements
 when treating them as menu items which is more severe regression
 than the bug this change was trying to solve.
 
+Patch can be removed once https://issues.chromium.org/issues/422947637 is fixed.
+
 diff --git a/ui/accessibility/platform/browser_accessibility_cocoa.mm b/ui/accessibility/platform/browser_accessibility_cocoa.mm
-index 06eb79f7d39db15b862da9fbdb913318aa092215..d24f8d99f289e305ad0951f22ecfec438a72ad5c 100644
+index 73ca620925f1a7e0f40ebc51b8f626cdcd05f508..b3cdaa4bdfd888f4597b8965f4ec523836386391 100644
 --- a/ui/accessibility/platform/browser_accessibility_cocoa.mm
 +++ b/ui/accessibility/platform/browser_accessibility_cocoa.mm
-@@ -1239,13 +1239,6 @@ bool ui::IsNSRange(id value) {
+@@ -1076,13 +1076,6 @@ - (NSString*)role {
      cocoa_role = NSAccessibilityGroupRole;
    } else if (_owner->IsRootWebAreaForPresentationalIframe()) {
      cocoa_role = NSAccessibilityGroupRole;
@@ -27,7 +29,7 @@ index 06eb79f7d39db15b862da9fbdb913318aa092215..d24f8d99f289e305ad0951f22ecfec43
    } else if (role == ax::mojom::Role::kMenu && ![self hasMenuItemDescendant]) {
      // A menu without menu item descendants should be exposed as a group rather
      // than a menu to avoid confusing assistive technologies. This ensures
-@@ -1634,7 +1627,12 @@ bool ui::IsNSRange(id value) {
+@@ -1471,7 +1464,12 @@ - (id)value {
    DCHECK(_owner->node()->IsDataValid());
  
    if (ui::IsNameExposedInAXValueForRole([self internalRole])) {
