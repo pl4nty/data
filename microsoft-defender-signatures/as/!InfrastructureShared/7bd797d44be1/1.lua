@@ -57,25 +57,24 @@ do
 
   -- DECOMPILER ERROR at PC58: Overwrote pending register: R4 in 'AssignReg'
 
-  l_0_3(l_0_4)
-  -- DECOMPILER ERROR at PC60: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC61: Overwrote pending register: R3 in 'AssignReg'
-
   -- DECOMPILER ERROR at PC62: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC66: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC63: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC67: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
 
-  if l_0_3 then
-    return l_0_3
+  -- DECOMPILER ERROR at PC71: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC72: Overwrote pending register: R5 in 'AssignReg'
+
+  if l_0_3 and l_0_4 and l_0_4 ~= "" then
+    return l_0_5
   end
-  -- DECOMPILER ERROR at PC69: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC74: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC70: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC75: Overwrote pending register: R4 in 'AssignReg'
 
-  do return l_0_3 end
+  do return l_0_4 end
   -- WARNING: undefined locals caused missing assignments!
 end
 
