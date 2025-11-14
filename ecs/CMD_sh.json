@@ -84,6 +84,7 @@
         "DRmgmt_EnablePremiumDRPreviewList": false,
         "DSSAdminManagement_IWP": true,
         "DdsUseNewEventPartitionKey": true,
+        "DdsUseQueryForGetCloudPcById": true,
         "DdsUseSynchronousEventHubClient": true,
         "DedicatedResourceGroupCreation": true,
         "DedicatedResourceGroupCreationForConsumed": true,
