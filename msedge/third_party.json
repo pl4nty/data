@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32496053,
-    "file_count": 3979
+    "size": 32497332,
+    "file_count": 3978
   },
   {
     "name": "boringssl",
-    "size": 76578,
+    "size": 76595,
     "file_count": 15
   },
   {
@@ -431,8 +431,8 @@
   },
   {
     "name": "libusb",
-    "size": 833380,
-    "file_count": 61
+    "size": 833409,
+    "file_count": 62
   },
   {
     "name": "libwebp",
@@ -531,7 +531,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 30482,
+    "size": 30515,
     "file_count": 16
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3939452,
+    "size": 3939606,
     "file_count": 580
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "tflite",
-    "size": 1689089,
-    "file_count": 504
+    "size": 1691698,
+    "file_count": 505
   },
   {
     "name": "tflite_support",
@@ -776,7 +776,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29456115,
+    "size": 29493226,
     "file_count": 626
   },
   {
