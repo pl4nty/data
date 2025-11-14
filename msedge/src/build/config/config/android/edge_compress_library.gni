@@ -18,7 +18,6 @@ edge_library_always_compress = [
   "libmip_upe_sdk.so",
   "libmip_protection_sdk.so",
   "libmip_core.so",
-  "libmip_core_gn.so",
   "libmicrosoft_apis.so",
   "liblearning_tools.so",
   "libfullsslsdk.so",
