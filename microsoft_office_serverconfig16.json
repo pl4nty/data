@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19330.40125-->
+    <!--Build: 16.0.19505.40132-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -825,7 +825,7 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="cf53fce8-def6-4aeb-8d30-b158e7b1cf83" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="AugmentationLoopService">
-      <o:url>https://augloop.office.com</o:url>
+      <o:url>https://augloop.svc.cloud.microsoft</o:url>
     </o:service>
     <o:service o:name="AugloopPolymer1CdnStorage">
       <o:url>https://res.cdn.office.net/polymer/models</o:url>
@@ -1355,7 +1355,7 @@
       <o:url>https://pptcs.officeapps.live.com/document/export/pdf</o:url>
     </o:service>
     <o:service o:name="CreateModuleBaseCdnUrl">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/create-module</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/create-module</o:url>
     </o:service>
     <o:service o:name="DesignerDAS">
       <o:url>https://designerapp.officeapps.live.com/designerapp</o:url>
@@ -1379,7 +1379,7 @@
       <o:url>https://cdn.int.designerapp.osi.office.net/fonts</o:url>
     </o:service>
     <o:service o:name="DesignerFontCDNProd">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/fonts</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/fonts</o:url>
     </o:service>
     <o:service o:name="DesignerFontService">
       <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod</o:url>
@@ -1388,7 +1388,7 @@
       <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod/DesignerFonts/1.9</o:url>
     </o:service>
     <o:service o:name="DesignerCDN">
-      <o:url>https://cdn.designerapp.osi.office.net</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer</o:url>
     </o:service>
     <o:service o:name="DesignerHubble">
       <o:url>https://hubblecontent.osi.office.net/contentsvc/api/pivots/</o:url>
@@ -1397,19 +1397,19 @@
       <o:url>https://cdn.hubblecontent.osi.office.net/</o:url>
     </o:service>
     <o:service o:name="DesignerMobileCDN">
-      <o:url>https://cdn.designerapp.osi.office.net/designer-mobile</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designer-mobile</o:url>
     </o:service>
     <o:service o:name="DesignerMobileDynamicStringsBaseUrl">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/mobile-dynamic-strings</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/mobile-dynamic-strings</o:url>
     </o:service>
     <o:service o:name="DesignerMobileHomeScreenBaseUrl">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/mobile-home-screen</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/mobile-home-screen</o:url>
     </o:service>
     <o:service o:name="DesignerMobileCDNAssetsBaseUrl">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/mobile-assets</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/mobile-assets</o:url>
     </o:service>
     <o:service o:name="DesignerMobileDynamicToolbarBaseUrl">
-      <o:url>https://cdn.designerapp.osi.office.net/designerapp/mobile-toolbar</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/designer/designerapp/mobile-toolbar</o:url>
     </o:service>
     <o:service o:name="TodoServiceBase" o:authentication="2">
       <o:url>https://substrate.office.com/todob2/api/v1</o:url>
@@ -2243,6 +2243,8 @@
     <o:token o:name="Teams.BaseHost">teams.microsoft.com</o:token>
     <o:token o:name="OfficeApi.AuthHost">api.office.net</o:token>
     <o:token o:name="Growth.CdnBaseHost">res.cdn.office.net</o:token>
+    <o:token o:name="OneCdn.BaseHost">res.public.onecdn.static.microsoft</o:token>
+    <o:token o:name="OneCdn.BaseHost.Designer">res.public.onecdn.static.microsoft/designer</o:token>
     <o:token o:name="PPTCS.ThumbnailServiceBaseHost">thfd.edog.officeapps.live.com:7443</o:token>
     <o:token o:name="NotificationService.BaseHost">notification.m365.svc.cloud.microsoft</o:token>
     <o:token o:name="AADRedemptionServiceResourceId">https://redemptionservices.microsoft.com/</o:token>
@@ -2276,7 +2278,7 @@
     <o:token o:name="ADALRedirectUrlVisio">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALRedirectUrlWord">urn:ietf:wg:oauth:2.0:oob</o:token>
     <o:token o:name="ADALResourceId">https://officeapps.live.com</o:token>
-    <o:token o:name="AugmentationLoopServicePriority">https://augloop.office.com;https://augloop-int.officeppe.com;https://dogfood.augloop.svc.cloud.microsoft;https://augloop-dogfood.officeppe.com;https://msit.augloop.svc.cloud.microsoft;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
+    <o:token o:name="AugmentationLoopServicePriority">https://augloop.svc.cloud.microsoft;https://augloop-int.officeppe.com;https://dogfood.augloop.svc.cloud.microsoft;https://augloop-dogfood.officeppe.com;https://msit.augloop.svc.cloud.microsoft;https://augloop-gcc.office.com;https://augloop.gov.online.office365.us;https://augloop.dod.online.office365.us</o:token>
     <o:token o:name="BingGeospatialServiceKey">As8tQX71mxPDxIW_1SGPqLnpHp_reEWdy6qjMc6n007_8DLlATfivOyqV0tjuI39</o:token>
     <o:token o:name="BingGeospatialServiceKey3DMaps">Ajuvz1xHFIa2kqBFeM2U1q1fViBjPDsW7ZdDVihFbYM8dwRjemGMOvreAjjqRcxH</o:token>
     <o:token o:name="BingSpellerServiceAuthenticationId">FDD7CBDCD2C7BC531CBFCDB30B10E75034BDEC74</o:token>

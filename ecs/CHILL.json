@@ -3186,6 +3186,154 @@
                 }
             }
         },
+        "Floodgate_Campaign_SharePoint.83384bc2-8bc8-4738-bb5e-0b05e181a988": {
+            "CampaignId": "83384bc2-8bc8-4738-bb5e-0b05e181a988",
+            "EndTimeUtc": "2026-01-31T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-10-23T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NGSPDiscoverUsageTime",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "NGSPDiscoverUsageEvent",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very unlikely",
+                                    "questionLabel": "How likely are you to recommend the Discover experience to a colleague, if asked? ",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating2",
+                                    "leftLegendValue": "Not at all useful",
+                                    "questionLabel": "How useful was the Discover page in helping you find relevant content and suggestions?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very useful",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "It's easy to use.",
+                                        "The page is fast and responsive.",
+                                        "I can easily find what I'm looking for.",
+                                        "It suggests content that's relevant to me.",
+                                        "It has all the features I need to find and explore content."
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "Please rate the following statements about using the new Discover page to find content.",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Strongly disagree",
+                                        "Disagree",
+                                        "Neither agree nor disagree",
+                                        "Agree",
+                                        "Strongly agree"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "Please tell us more. Why did you choose that rating?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/83384bc2-8bc8-4738-bb5e-0b05e181a988/54c0f47b-5b6e-4842-8400-fd66c3da7c8e/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_SharePoint.dd025788-0c5d-4dde-812e-2b30af0d3bf9": {
             "CampaignId": "dd025788-0c5d-4dde-812e-2b30af0d3bf9",
             "EndTimeUtc": "2028-05-01T07:00:00Z",
