@@ -1308,6 +1308,7 @@
         "RMSEnableCustomNextLinkGenerator": true,
         "RMSEnableFlexTenantOffboard": true,
         "RMSEnableImmediateDeprovisionForFlexFraud": true,
+        "RMSEnablePartnerDataInListCloudPCs": true,
         "RMSEnablePowerStatusEventInsideDevice": true,
         "RMSEnablePrivilegedAdminCheckForLegacyAPI": true,
         "RMSEnableSchedulingOptimizationForRecoveryMode": true,
