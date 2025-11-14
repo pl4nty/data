@@ -20,35 +20,30 @@ do
       -- DECOMPILER ERROR at PC29: Confused about usage of register: R6 in 'UnsetPending'
 
       R6_PC29 = (mp.ContextualExpandEnvironmentVariables)(R6_PC29)
-      if (sysio.IsFileExists)(R6_PC29) then
-        if (mp.IsKnownFriendlyFile)(R6_PC29, true, false) then
-          local l_0_9 = {["mpksldrv.sys"] = true, ["ccmsetup.exe"] = true, ["svchost.exe"] = true, ["mbamswissarmy.sys"] = true, ["cyclorama64.sys"] = true}
-          if not l_0_9[(string.lower)(l_0_8:match("\\([^\\]+)$"))] then
+      local l_0_9 = (string.lower)(R6_PC29:match("\\([^\\]+)$"))
+      if not ({["pasensorservices.exe"] = true})[l_0_9] and (sysio.IsFileExists)(l_0_8) then
+        if (mp.IsKnownFriendlyFile)(l_0_8, true, false) then
+          local l_0_10 = nil
+          if not ({["mpksldrv.sys"] = true, ["ccmsetup.exe"] = true, ["svchost.exe"] = true, ["mbamswissarmy.sys"] = true, ["cyclorama64.sys"] = true})[l_0_9] then
             (mp.ReportLowfi)(l_0_8, 1394183950)
           end
         else
           do
             do
-              -- DECOMPILER ERROR at PC69: Confused about usage of register: R6 in 'UnsetPending'
-
               ;
               (mp.ReportLowfi)(l_0_8, 3656319915)
-              -- DECOMPILER ERROR at PC73: Confused about usage of register: R6 in 'UnsetPending'
-
               TrackFileAndTechnique(l_0_8, "T1543.003:exec_service_binary", 1000)
-              -- DECOMPILER ERROR at PC79: Confused about usage of register: R6 in 'UnsetPending'
-
               ;
               (bm.add_related_file)(l_0_8)
-              -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out DO_STMT
 
-              -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+              -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-              -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC81: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC86: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end
