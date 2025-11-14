@@ -20,10 +20,12 @@ do
         -- DECOMPILER ERROR at PC51: Confused about usage of register: R6 in 'UnsetPending'
 
         R6_PC51 = (mp.ContextualExpandEnvironmentVariables)(R6_PC51)
-        if (string.sub)(R6_PC51, -4) == ".log" or (string.sub)(R6_PC51, -4) == ".etl" or (string.sub)(R6_PC51, -4) == ".txt" then
+        local l_0_11 = (string.lower)(R6_PC51:match("\\([^\\]+)$"))
+        local l_0_12 = {["pasensorservices.exe"] = true}
+        if (string.sub)(l_0_10, -4) == ".log" or (string.sub)(l_0_10, -4) == ".etl" or (string.sub)(l_0_10, -4) == ".txt" then
           l_0_9 = true
         else
-          if (sysio.IsFileExists)(l_0_10) == true then
+          if not l_0_12[l_0_11] and (sysio.IsFileExists)(l_0_10) == true then
             (bm.add_related_file)(l_0_10)
             if (mp.IsKnownFriendlyFile)(l_0_10, true, false) then
               (mp.ReportLowfi)(l_0_10, 1394183950)
