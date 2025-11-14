@@ -66,6 +66,7 @@
                 "id": "MinecraftCommands.syntax-mcfunction"
             }
         },
+        "ArcticWarmth.simple-gist": true,
         "AugusteRame.zls-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -436,6 +437,7 @@
                 "id": "usernamehw.errorlens"
             }
         },
+        "PhraseApp.PhraseApp": true,
         "Pixelfear.composer-links": {
             "disallowInstall": true,
             "extension": {
@@ -596,7 +598,35 @@
                 "id": "visualstudiotoolsforunity.vstuc"
             }
         },
+        "VisualStudioExptTeam.intellicode-api-usage-examples": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot Chat",
+                "id": "github.copilot-chat"
+            }
+        },
+        "VisualStudioExptTeam.vscodeintellicode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot Chat",
+                "id": "github.copilot-chat"
+            }
+        },
+        "VisualStudioExptTeam.vscodeintellicode-completions": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot Chat",
+                "id": "github.copilot-chat"
+            }
+        },
         "VisualStudioExptTeam.vscodeintellicode-insiders": true,
+        "Vms-dotnettools.vscodeintellicode-csharp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot Chat",
+                "id": "github.copilot-chat"
+            }
+        },
         "Vue.vscode-typescript-vue-plugin": {
             "disallowInstall": true,
             "extension": {
@@ -804,6 +834,7 @@
             }
         },
         "azsdktm.SecurityIntelliSense": true,
+        "azurearc-dev.azurearc": true,
         "badochov.ocaml-formatter": {
             "disallowInstall": true,
             "extension": {
@@ -1095,6 +1126,13 @@
             }
         },
         "georgewfraser.vscode-tree-sitter": true,
+        "georgio.proverif-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ProVerif Language",
+                "id": "ProVerif.vscode-proverif"
+            }
+        },
         "gfrsoftware.structurizr-dsl-abacus-extension": {
             "disallowInstall": true,
             "extension": {
@@ -1135,6 +1173,13 @@
             }
         },
         "himanoa.Python-autopep8": true,
+        "hirosystems.clarity-lsp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Clarity - Stacks Labs",
+                "id": "stackslabs.clarity-stacks"
+            }
+        },
         "hoonoh.vscode-slonik-live-server": true,
         "huacnlee.auto-correct": {
             "disallowInstall": true,
@@ -1699,6 +1744,13 @@
         },
         "redhat.atlasmap-viewer": true,
         "redhat.datavirt-extension-pack": true,
+        "redhat.granitecode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Continue - open-source AI code agent",
+                "id": "Continue.continue"
+            }
+        },
         "redhat.vscode-camelk": {
             "disallowInstall": true,
             "extension": {
