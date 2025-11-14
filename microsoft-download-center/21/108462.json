@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2025 Management Pack for Linux Operating Systems",
+    "downloadDescription": "System Center 2025 Management Pack for Linux Operating Systems",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Universal_Linux_MP_Guide.doc",
+            "url": "https://download.microsoft.com/download/b21622f7-4314-4e26-9557-1d7937a696b2/Universal_Linux_MP_Guide.doc",
+            "size": "766828",
+            "version": "10.25.1016.0",
+            "datePublished": "11/14/2025 10:17:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLESMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b21622f7-4314-4e26-9557-1d7937a696b2/SLESMPGuide.doc",
+            "size": "401517",
+            "version": "10.25.1016.0",
+            "datePublished": "11/14/2025 10:17:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHELMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b21622f7-4314-4e26-9557-1d7937a696b2/RHELMPGuide.doc",
+            "size": "407043",
+            "version": "10.25.1016.0",
+            "datePublished": "11/14/2025 10:17:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center 2025 MP for Unix and Linux.msi",
+            "url": "https://download.microsoft.com/download/b21622f7-4314-4e26-9557-1d7937a696b2/Microsoft System Center 2025 MP for Unix and Linux.msi",
+            "size": "392560640",
+            "version": "10.25.1016.0",
+            "datePublished": "11/14/2025 10:17:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Linux Operating Systems Management Packs enable discovering, monitoring, and managing Linux computers with System Center Operations Manager 2025. They provide both proactive and reactive monitoring of the Linux operating systems. The management packs monitor components such as processes, resources, and server agents. The monitoring provided by the management packs includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of Linux components into your service-oriented monitoring scenarios. In addition to health monitoring capabilities, the management packs include reports, diagnostics, tasks, and views that enable near real-time diagnosis and resolution of detected issues. The management packs also enable the installation of the Audit Collection Services for Linux Management Packs.<br/><br/>\n\nFeature Summary: System Center 2025 Management Pack for Linux Operating Systems<br/>\n<ul>\n  <li>Provides monitoring of the Red Hat Enterprise Linux 7, 8, 9, 10 operating systems.</li>\n  <li>Provides monitoring of SUSE Linux Enterprise Server 12 and 15 operating systems.</li>\n  <li>Provides monitoring of OpenSUSE Linux Leap 15 operating systems.</li>\n  <li>Provides monitoring of Debian GNU/Linux 9, 10, 11, 12, 13 operating systems.</li>\n  <li>Provides monitoring of Oracle Linux 7, 8, 9, 10 operating systems.</li>\n  <li>Provides monitoring of Ubuntu Linux Server 16.04, 18.04, 20.04, 22.04, 24.04 operating systems.</li>\n  <li>Enables the installation of the Audit Collection Services for UNIX/Linux Management Packs.</li>\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.25.1016.0",
+    "detailsSection_file_name": [
+        "Universal_Linux_MP_Guide.doc",
+        "SLESMPGuide.doc",
+        "RHELMPGuide.doc",
+        "Microsoft System Center 2025 MP for Unix and Linux.msi"
+    ],
+    "detailsSection_file_size": [
+        "748.9 KB",
+        "392.1 KB",
+        "397.5 KB",
+        "374.4 MB"
+    ],
+    "detailsSection_file_date": "11/14/2025",
+    "systemRequirementsSection": "<b>Supported Operating Systems</b><br/>\nLinux, SUSE<br/><br/>\n<b>Supported SCOM Versions</b><br/>\nSystem Center Operations Manager 2025<br/>\nMonitoring of following Operating Systems is supported: RHEL 7, 8, 9, 10; SLES 12, 15; Ubuntu 16.04, 18.04, 20.04, 22.04, 24.04; Debian 9, 10, 11, 12, 13; Oracle Linux 7, 8, 9, 10; OpenSUSE Leap 15<br/><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Download and install System Center Operations Manager 2025.</li>\n  <li>Download and install the updated management packs.</li>\n  <li>Import the management packs for the monitored Linux server types.</li>\n  <li>Use the Operations Console to upgrade the Linux agents in the Administration\\UNIX/Linux computers view.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108462",
+    "downloadPreload": true
+}
