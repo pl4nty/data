@@ -1,0 +1,105 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+import "testing/libfuzzer/proto/json.proto";
+
+package copilot_prompt_data_proto;
+
+message CopilotPromptFuzzerInput {
+  repeated Group groups = 1;
+  optional json_proto.JsonObject other_input = 2;
+}
+
+message Group {
+  repeated Suggestion suggestions = 1;
+  optional json_proto.JsonValue other_input = 2;
+}
+
+message Suggestion {
+  optional json_proto.JsonValue id = 1;
+  optional json_proto.JsonValue prompt_id = 2;
+  required string display_text = 3;
+  required string command_text = 4;
+  optional json_proto.JsonValue title = 5;
+  optional json_proto.JsonValue display_category = 6;
+  optional json_proto.JsonValue products = 7;
+  optional json_proto.JsonValue reference_id = 8;
+  optional json_proto.JsonValue short_display_text = 9;
+  optional string text = 10;
+  optional json_proto.JsonValue origin = 11;
+  repeated HydratedEntity hydrated_entities = 12;
+  optional json_proto.JsonValue related_entities = 13;
+  optional json_proto.JsonValue user_activity = 14;
+  optional json_proto.JsonValue prompt_profile_attributes = 15;
+  optional json_proto.JsonValue other_input = 16;
+}
+
+message HydratedEntity {
+  required string type = 1 [default = "Event"];
+  required Entity entity = 2;
+  optional json_proto.JsonValue other_input = 3;
+}
+
+message Entity {
+  oneof entity {
+    EmailEntity email_entity = 1;
+    EventEntity event_entity = 2;
+    FileEntity file_entity = 3;
+    PeopleEntity people_entity = 4;
+    ChatEntity chat_entity = 5;
+    MessageEntity message_entity = 6;
+  }
+}
+
+message EmailEntity {
+  optional json_proto.JsonValue id = 1;
+  required string subject = 2;
+  optional json_proto.JsonValue sender = 3;
+  optional json_proto.JsonValue recipients = 4;
+  required string reference_id = 5;
+}
+
+message EventEntity {
+  optional json_proto.JsonValue id = 1;
+  required string subject = 2;
+  optional json_proto.JsonValue event_id = 3;
+  optional json_proto.JsonValue skype_teams_meeting_url = 4;
+  optional json_proto.JsonValue organizer_name = 5;
+  optional json_proto.JsonValue organizer_address = 6;
+  optional json_proto.JsonValue start = 7;
+  optional json_proto.JsonValue end = 8;
+  required string reference_id = 9;
+  optional json_proto.JsonValue original_id = 10;
+}
+
+message FileEntity {
+  optional json_proto.JsonValue id = 1;
+  required string file_name = 2;
+  optional string file_extension = 3;
+  optional json_proto.JsonValue access_url = 4;
+  required string reference_id = 5;
+  optional json_proto.JsonValue spo_id = 6;
+}
+
+message PeopleEntity {
+  optional json_proto.JsonValue id = 1;
+  required string display_name = 2;
+  optional json_proto.JsonValue email_addresses = 3;
+  required string reference_id = 4;
+}
+
+message ChatEntity {
+  optional json_proto.JsonValue id = 1;
+  required string name = 2;
+  required string reference_id = 3;
+}
+
+message MessageEntity {
+  optional json_proto.JsonValue id = 1;
+  required string subject = 2;
+  optional json_proto.JsonValue sender = 3;
+  required string reference_id = 4;
+}
