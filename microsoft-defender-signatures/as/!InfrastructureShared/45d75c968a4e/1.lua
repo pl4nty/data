@@ -30,7 +30,7 @@ do
     if l_0_4 == "64eacc49-6a31-42c6-9b39-c3d9148e65f4" or l_0_4 == "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" then
       return mp.INFECTED
     end
-    if l_0_4 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(1, false, true, true) == true then
+    if l_0_4 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(10, false, true, true) == true then
       return mp.LOWFI
     end
   end
