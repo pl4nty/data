@@ -305,6 +305,7 @@
             "EnableTokenAuthForCMDeviceActions": true,
             "ParseManagedDeviceParallely": true,
             "UDA_AADToMSGraphMigration": true,
+            "UDA_HPAFallbackDisabled": true,
             "UDA_RetryUpdateAADUser": true
         }
     },
@@ -379,6 +380,7 @@
     },
     "SVC_RAODJPlus": {
         "FlightingV2": {
+            "DisableLegacyODJConnector": true,
             "EnableLeastPrivilegedConnector": true,
             "EnableODJConnectorTelemetry": true
         }
