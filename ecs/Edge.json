@@ -17,11 +17,6 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
-        "EdgeAutofillUnifiedLogger": {
-            "enableFeatures": [
-                "msEdgeAutofillUnifiedLogger"
-            ]
-        },
         "EdgeOnRampShowVersionWhatsNew": {
             "enableFeatures": [
                 "msEdgeOnRampShowWhatsNew"
