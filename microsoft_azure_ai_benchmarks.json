@@ -6950,7 +6950,7 @@
                     "datasetFamily": "humaneval",
                     "datasetName": "humanevalplus",
                     "metrics": {
-                        "accuracy": 0.8232
+                        "accuracy": 0.808641975308642
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
                     "modelName": "gpt-4o-mini",
@@ -7493,6 +7493,142 @@
         {
             "annotations": {
                 "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.4482
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "modelName": "gpt-4o-mini",
+                    "modelVersion": "2024-07-18"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "azure_latest_model_version": "2024-07-18",
+                    "azure_model_name": "gpt-4o-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.7969
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "modelName": "gpt-4o-mini",
+                    "modelVersion": "2024-07-18"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "azure_latest_model_version": "2024-07-18",
+                    "azure_model_name": "gpt-4o-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_easy",
+                    "metrics": {
+                        "accuracy": 0.8873
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "modelName": "gpt-4o-mini",
+                    "modelVersion": "2024-07-18"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "azure_latest_model_version": "2024-07-18",
+                    "azure_model_name": "gpt-4o-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.6807
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "modelName": "gpt-4o-mini",
+                    "modelVersion": "2024-07-18"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o-mini/versions/2024-07-18",
+                    "azure_latest_model_version": "2024-07-18",
+                    "azure_model_name": "gpt-4o-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
@@ -7668,7 +7804,7 @@
                     "datasetFamily": "humaneval",
                     "datasetName": "humanevalplus",
                     "metrics": {
-                        "accuracy": 0.837
+                        "accuracy": 0.8353658536585366
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
                     "modelName": "gpt-4o",
@@ -8205,6 +8341,142 @@
                 "properties": {
                     "content_filter_enabled": true,
                     "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.4789473684210526
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "modelName": "gpt-4o",
+                    "modelVersion": "2024-11-20"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "azure_latest_model_version": "2024-11-20",
+                    "azure_model_name": "gpt-4o",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.4921875
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "modelName": "gpt-4o",
+                    "modelVersion": "2024-11-20"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "azure_latest_model_version": "2024-11-20",
+                    "azure_model_name": "gpt-4o",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_easy",
+                    "metrics": {
+                        "accuracy": 0.49295774647887325
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "modelName": "gpt-4o",
+                    "modelVersion": "2024-11-20"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "azure_latest_model_version": "2024-11-20",
+                    "azure_model_name": "gpt-4o",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.20238095238095238
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "modelName": "gpt-4o",
+                    "modelVersion": "2024-11-20"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-4o/versions/2024-11-20",
+                    "azure_latest_model_version": "2024-11-20",
+                    "azure_model_name": "gpt-4o",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
                 }
             }
         },
@@ -10422,13 +10694,13 @@
                     "metrics": {
                         "attack_success_rate": 0
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "dataset_category": "harmbench_contextual",
@@ -10456,13 +10728,13 @@
                     "metrics": {
                         "attack_success_rate": 0
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "dataset_category": "harmbench_copyright_violations",
@@ -10490,13 +10762,13 @@
                     "metrics": {
                         "attack_success_rate": 0
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "dataset_category": "harmbench_standard",
@@ -10524,13 +10796,13 @@
                     "metrics": {
                         "f1": 0.8813
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "dataset_category": "toxicity_detection",
@@ -10710,13 +10982,13 @@
                         "accuracy": 0.911425,
                         "index_metric": 0.911425
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
@@ -10738,13 +11010,13 @@
                         "attack_success_rate": 0.001,
                         "index_metric": 0.001
                     },
-                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
-                    "modelVersion": "2025-10-08"
+                    "modelVersion": "2025-10-06"
                 },
                 "tags": {
-                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-08",
-                    "azure_latest_model_version": "2025-10-08",
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
+                    "azure_latest_model_version": "2025-10-06",
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
@@ -20282,7 +20554,7 @@
                     "datasetFamily": "humaneval",
                     "datasetName": "humanevalplus",
                     "metrics": {
-                        "accuracy": 0.9438
+                        "accuracy": 0.94375
                     },
                     "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
                     "modelName": "MAI-DS-R1",
@@ -20651,6 +20923,310 @@
                 "properties": {
                     "content_filter_enabled": true,
                     "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.48071748878923765
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.9335
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.75
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_easy",
+                    "metrics": {
+                        "accuracy": 0.6083333333333333
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.3106060606060606
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.8984
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.8421
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.6887
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.8603
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "modelName": "MAI-DS-R1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/MAI-DS-R1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "MAI-DS-R1",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
                 }
             }
         },
@@ -21678,7 +22254,7 @@
                     "datasetFamily": "humaneval",
                     "datasetName": "humanevalplus",
                     "metrics": {
-                        "accuracy": 0.7927
+                        "accuracy": 0.7926829268292683
                     },
                     "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
                     "modelName": "mistral-small-2503",
@@ -22215,6 +22791,142 @@
                 "properties": {
                     "content_filter_enabled": true,
                     "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.4043859649122807
+                    },
+                    "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "modelName": "mistral-small-2503",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "mistral-small-2503",
+                    "azure_registry_name": "azureml-mistral",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.3828125
+                    },
+                    "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "modelName": "mistral-small-2503",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "mistral-small-2503",
+                    "azure_registry_name": "azureml-mistral",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_easy",
+                    "metrics": {
+                        "accuracy": 0.44366197183098594
+                    },
+                    "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "modelName": "mistral-small-2503",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "mistral-small-2503",
+                    "azure_registry_name": "azureml-mistral",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.10119047619047619
+                    },
+                    "modelAssetId": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "modelName": "mistral-small-2503",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-mistral/models/mistral-small-2503/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "mistral-small-2503",
+                    "azure_registry_name": "azureml-mistral",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
                 }
             }
         },
@@ -26923,6 +27635,412 @@
                 "properties": {
                     "content_filter_enabled": true,
                     "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.9196
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.06406080347448426
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.05844155844155844
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.9335
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.1640625
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_easy",
+                    "metrics": {
+                        "accuracy": 0.20422535211267606
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.023952095808383235
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.8789
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.8984
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.8421
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.6887
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.8603
+                    },
+                    "modelAssetId": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "modelName": "Phi-4-reasoning",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml/models/Phi-4-reasoning/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "Phi-4-reasoning",
+                    "azure_registry_name": "azureml",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
                 }
             }
         }
