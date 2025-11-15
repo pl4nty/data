@@ -94,13 +94,6 @@
             "enableFeatures": [
                 "msUnsupportedLanguageUXFix"
             ]
-        },
-        "v1ReLaunchEdgeCopilot": {
-            "enableFeatures": [
-                "msEdgeUndersideV2",
-                "msUndersideChatV2PermissionSettings",
-                "msEdgeSidePanePermissions"
-            ]
         }
     },
     "EdgeConfig": {

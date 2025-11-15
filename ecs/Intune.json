@@ -334,6 +334,11 @@
             "WindowsManagedAppClipboardSharingLevelFlightId": true
         }
     },
+    "SVC_Monolith_Compliance": {
+        "FlightingV2": {
+            "OnlyCreatePCOnChange": true
+        }
+    },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
             "EnrollDeviceActionAP": true,
@@ -437,7 +442,9 @@
     "UX_EPM": {
         "FlightingV2": {
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "724b547a-9286-439a-b01f-316146b132dc": true,
             "b97631b1-395c-41d5-8f3a-c3bd43f6d3b3": true,
+            "cc4fb261-e0b8-40b6-bebf-ce3695e5eed4": true,
             "df619680-9e16-4fbc-b271-c85db192b36e": true,
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
         }
