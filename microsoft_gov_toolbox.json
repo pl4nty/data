@@ -8,10 +8,10 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.1.0b1",
+        "version": "1.1.0b2",
         "versions": [
-            "1.1.0b1",
             "1.1.0b2",
+            "1.1.0b1",
             "1.0.0",
             "1.0.0b12"
         ]
@@ -360,15 +360,15 @@
         "name": "AzureAiInferencePythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.0b3",
+        "version": "1.0.0b9",
         "versions": [
-            "1.0.0b3",
-            "1.0.0b4",
-            "1.0.0b5",
-            "1.0.0b6",
-            "1.0.0b7",
+            "1.0.0b9",
             "1.0.0b8",
-            "1.0.0b9"
+            "1.0.0b7",
+            "1.0.0b6",
+            "1.0.0b5",
+            "1.0.0b4",
+            "1.0.0b3"
         ]
     },
     {
@@ -492,16 +492,16 @@
             "1.16.0",
             "1.15.0",
             "1.15.0-beta.1",
+            "1.14.1",
             "1.14.0",
             "1.14.0-beta.4",
             "1.14.0-beta.2",
             "1.14.0-beta.1",
-            "1.14.1",
+            "1.13.2",
+            "1.13.1",
             "1.13.0",
             "1.13.0-beta.2",
             "1.13.0-beta.1",
-            "1.13.2",
-            "1.13.1",
             "1.12.0"
         ]
     },
