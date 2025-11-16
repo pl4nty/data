@@ -1939,12 +1939,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_AgendaTracking_agendaNudge": [
-                {
-                    "Flight": "TM.agendaProactiveComposeAction",
-                    "IsEnabled": true
-                }
-            ],
             "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
                 {
                     "Flight": "TM.topicRelevancePromptV4",
