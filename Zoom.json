@@ -5,6 +5,7 @@
         "downloadVO": {
             "disableArmClientDownload": null,
             "disableZoomRoomsX32Download": true,
+            "enableWin32ClientSunset": false,
             "enableZoomRcITPackage": true,
             "is64Bit": false,
             "launcherUrlForLaunchClientFromWeb": null,
