@@ -390,6 +390,7 @@
         "EnableInstallRDAgentForVHD": true,
         "EnableInstantDeliveryForPostProvisioningPlugin": true,
         "EnableIntegrityValidationForScopeTag": true,
+        "EnableInterestedUserRegister": true,
         "EnableIntunePartnerSync": true,
         "EnableIntuneReEnrollNewActionType": true,
         "EnableIsMemberOfGroups": true,
