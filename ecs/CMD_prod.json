@@ -609,6 +609,7 @@
         "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbSsoForFleet": true,
         "EnableW365AMeter": true,
+        "EnableW365AMeterForHotPool": true,
         "EnableW365AMeterForOpal": true,
         "EnableW365DeviceSync": true,
         "EnableW365GnTV1": true,
