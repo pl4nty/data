@@ -306,6 +306,8 @@
         "EnableCPCInactiveToPendingTranslation": true,
         "EnableCPCMoveForUX": true,
         "EnableCUAAutoScaleFor1P": true,
+        "EnableCUADesiredSizeFor1P": false,
+        "EnableCUAGeoFor1P": true,
         "EnableCUAProvisioningSupport": true,
         "EnableCUAUserAssignmentSupport": true,
         "EnableCacheForReserveCPCs": true,
