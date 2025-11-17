@@ -284,6 +284,7 @@
             "APv2EnablePublishResultsResiliencyBehavior": true,
             "DJPPGroupsV2Enabled": true,
             "EnableDeviceDisownAdeApi": true,
+            "EnableNoDepDeviceFullSyncTriggerAfterProfileCorrection": true,
             "EnableRemoveDuplicateAccountIdInCompanyPortalPolicyTask": true,
             "EnableSearchECAWithoutDQCache": true,
             "S2SAntiPattern": true
