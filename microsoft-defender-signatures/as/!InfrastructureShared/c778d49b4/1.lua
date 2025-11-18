@@ -3,7 +3,14 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC26: Unhandled construct in 'MakeBoolean' P3
+local l_0_0 = (mp.GetHSTRCallerId)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.LOWFI
+end
+-- DECOMPILER ERROR at PC41: Unhandled construct in 'MakeBoolean' P3
 
 if (pehdr.SizeOfImage >= 786432 and pehdr.SizeOfImage <= 851968) or pehdr.SizeOfImage < 479232 or pehdr.SizeOfImage >= 589824 and pehdr.SizeOfImage <= 606208 then
   return mp.INFECTED
