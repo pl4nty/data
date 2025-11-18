@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -4119,7 +4119,6 @@
             "aplBackgrounds": []
         },
         "core": {
-            "allowHeapSnapshot": false,
             "backdropWindowEffectEnabled": true,
             "checkWebClientVersion": false,
             "collectCrashMetadata": false,

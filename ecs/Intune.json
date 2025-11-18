@@ -195,6 +195,11 @@
             }
         }
     },
+    "SVC_AdminTasks": {
+        "FlightingV2": {
+            "EnableReadController": true
+        }
+    },
     "SVC_AndroidSync": {
         "FlightingV2": {
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
@@ -234,6 +239,7 @@
     },
     "SVC_Compliance": {
         "FlightingV2": {
+            "CalculationLatencyMetricV2Enabled": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
             "EGM_UseRedisCache": true,
