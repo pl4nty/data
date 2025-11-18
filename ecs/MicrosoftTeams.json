@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -5251,36 +5251,6 @@
                 "tw": "https://csa.svcs.teams.office.com/api/v1",
                 "uk": "https://emea.csa.svcs.teams.office.com/api/v1",
                 "za": "https://emea.csa.svcs.teams.office.com/api/v1"
-            }
-        },
-        "ChatServicePartnerCall": {
-            "EnabledBasedOnTenantRegion": true,
-            "EndpointMappings": {
-                "ae": "https://ae.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "at": "https://at.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "au": "https://au.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "ca": "https://ca.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "ch": "https://ch.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "cl": "https://cl.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "de": "https://de.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "es": "https://es.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "fr": "https://fr.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "id": "https://id.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "il": "https://il.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "in": "https://in.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "it": "https://it.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "jp": "https://jp.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "kr": "https://kr.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "mx": "https://mx.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "my": "https://my.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "no": "https://no.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "nz": "https://nz.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "pl": "https://pl.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "qa": "https://qa.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "sg": "https://sg.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "tw": "https://tw.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "uk": "https://uk.msgapi.teams.microsoft.com:444/{0}/{1}",
-                "za": "https://za.msgapi.teams.microsoft.com:444/{0}/{1}"
             }
         },
         "Configuration": {
