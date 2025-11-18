@@ -657,6 +657,14 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRejuvFrameViewsForCoPilot);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeVisualRejuvFrameViewsForCoPilotModeEnabled();
+
+// If enabled, will use ThemeService-based dark mode detection (current
+// approach). If disabled, will use direct preference reading (legacy approach).
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeThemeServiceDarkMode);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeThemeServiceDarkModeEnabled(bool trigger_usage = false);
+
 }  // namespace edge
 }  // namespace features
 
