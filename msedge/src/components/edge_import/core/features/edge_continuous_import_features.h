@@ -425,6 +425,12 @@ BASE_DECLARE_FEATURE(kEnableCIFromAnaheim);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 bool IsCIFromAnaheimEnabled();
 
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEncryptPasswordsWithAsterAppBoundProvider);
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEncryptPaymentsWithAsterAppBoundProvider);
+
 }  // namespace edge_continuous_import
 }  // namespace features
 
