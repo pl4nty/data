@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1777,6 +1777,7 @@
             "EnableAgendaAdaptiveCardOnBotDialog": true,
             "EnableAuditEventForProactiveMessages": true,
             "EnableBatchTranscriptRequests": true,
+            "EnableBotRosterCheckForLiftPropertiesCache": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": true,
             "EnableCallSessionEndNotificationV2": false,
@@ -1785,12 +1786,16 @@
             "EnableEarlyCoTFromGCB": false,
             "EnableEarlyResponsesForInvokeBot": true,
             "EnableFetchCallConversationData": true,
+            "EnableLIFTUserVoiceQuerySignal": true,
+            "EnableLiftPropertiesCache": true,
             "EnableLocalizedAskFacilitator": true,
             "EnableLocalizedSuggestions": true,
             "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
             "EnableRerunOsdlStatementExecuteActivity": true,
+            "EnableSendMessageToCallParticipant": true,
+            "EnableStripUserQueryInClientMessage": true,
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "ShouldFetchMeetingBodyFromGraph": true,
@@ -1799,10 +1804,12 @@
         },
         "ODSPFeatureFlags": {
             "DisableAtMentionSuggestionInWelcomeMessage": true,
+            "DisableBotIconStorageOnTeamsGraph": true,
             "EnableAiMetadata": true,
             "EnableAttachAppIdToSendActivity": true,
             "EnableBizchatIntegration": true,
             "EnableConversationalContinuity": true,
+            "EnableDirectBotFrameworkIntegration": true,
             "EnableGetAppIdFromTurnContext": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableParallelMembersRetrieval": true,
@@ -1840,6 +1847,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGpt41IntentPlus",
+                    "IsEnabled": true
+                }
+            ],
+            "LiftVoiceNotification": [
+                {
+                    "Flight": "enableVoiceNotifications",
                     "IsEnabled": true
                 }
             ],
@@ -1962,6 +1975,12 @@
                 },
                 {
                     "Flight": "TM.freeWrapUp",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_CitationSources": [
+                {
+                    "Flight": "TM.agendaTopicCitation",
                     "IsEnabled": true
                 }
             ],
