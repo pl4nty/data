@@ -28,7 +28,7 @@ end
 if l_0_0 <= l_0_5 and l_0_5 <= l_0_1 then
   return mp.CLEAN
 end
-if l_0_1 < l_0_5 and (string.find)(l_0_2, "werfault.exe\"? /hc? /shared Global([%c\\])%w+ /t %d+ /p %d+ %d+ %d+ %d+ %d+ %d+ %d+") and ((string.find)(l_0_4.command_line, "svchost.exe\"? %-k WerSvcGroup$") or (string.find)(l_0_4.command_line, "C:\\ProgramData\\Microsoft\\AzureWatson\\[0-9]\\awdumpIFEO%.exe")) then
+if (l_0_1 < l_0_5 and (string.find)(l_0_2, "werfault%.exe\"? /hc? /shared Global([%c\\])%w+ /t %d+ /p %d+ %d+ %d+ %d+ %d+ %d+ %d+") and (string.find)(l_0_4.command_line, "svchost.exe\"? %-k WerSvcGroup$")) or (string.find)((string.lower)(l_0_4.command_line), "\\microsoft\\azurewatson\\[0-9]\\awdump.+werfault%.exe\"? /hc? /shared global([%c\\])%w+ /t %d+ /p %d+ %d+ %d+ %d+ %d+ %d+ %d+") then
   return mp.CLEAN
 end
 local l_0_7 = {}
