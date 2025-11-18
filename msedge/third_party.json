@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10731235,
+    "size": 10731480,
     "file_count": 167
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32493790,
-    "file_count": 3978
+    "size": 32498163,
+    "file_count": 3976
   },
   {
     "name": "boringssl",
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++abi",
-    "size": 31531,
+    "size": 31013,
     "file_count": 7
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "libxml",
-    "size": 344904,
+    "size": 344792,
     "file_count": 36
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292986,
+    "size": 293150,
     "file_count": 47
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3944083,
+    "size": 3944337,
     "file_count": 580
   },
   {

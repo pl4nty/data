@@ -171,13 +171,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kSplitCacheByIncludeCredentials);
 // available.
 NET_EXPORT BASE_DECLARE_FEATURE(kSplitCacheByNetworkIsolationKey);
 
-// This flag incorporates a boolean into the cache key that is true for
-// renderer-initiated main frame navigations when the request initiator site is
-// cross-site to the URL being navigated to. This provides protections against
-// certain cross-site leak attacks involving cross-site navigations.
-NET_EXPORT BASE_DECLARE_FEATURE(
-    kSplitCacheByCrossSiteMainFrameNavigationBoolean);
-
 // Splits the generated code cache by the request's NetworkIsolationKey if one
 // is available. Note that this feature is also gated behind
 // `net::HttpCache::IsSplitCacheEnabled()`.
@@ -919,6 +912,10 @@ NET_EXPORT BASE_DECLARE_FEATURE(kTryQuicByDefault);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(std::string, kQuicOptions);
 
 NET_EXPORT BASE_DECLARE_FEATURE(kDnsResponseDiscardPartialQuestions);
+
+// When enabled, users can make Secure DNS in AUTOMATIC mode fallback to a
+// well-known DoH provider before using insecure DNS.
+NET_EXPORT BASE_DECLARE_FEATURE(kAddAutomaticWithDohFallbackMode);
 
 }  // namespace net::features
 

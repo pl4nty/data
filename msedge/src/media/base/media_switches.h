@@ -70,6 +70,7 @@ MEDIA_EXPORT extern const char
 MEDIA_EXPORT extern const char kUseFakeDeviceForMediaStream[];
 MEDIA_EXPORT extern const char kUseFakeMjpegDecodeAccelerator[];
 MEDIA_EXPORT extern const char kUseFileForFakeAudioCapture[];
+MEDIA_EXPORT extern const char kUseFileForNeuralResidualEchoEstimatorModel[];
 MEDIA_EXPORT extern const char kUseFileForFakeVideoCapture[];
 MEDIA_EXPORT extern const char kVideoThreads[];
 
@@ -347,7 +348,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kVSyncMjpegDecoding);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kV4L2H264TemporalLayerHWEncoding);
 #endif  // BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kVideoBlitColorAccuracy);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kVideoPictureInPictureControlsUpdate2024);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastVideoEncoderFrameDrop);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kWebCodecsVideoEncoderFrameDrop);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kWebRTCHardwareVideoEncoderFrameDrop);

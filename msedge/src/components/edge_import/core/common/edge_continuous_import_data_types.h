@@ -5,6 +5,8 @@
 #ifndef COMPONENTS_EDGE_IMPORT_CORE_COMMON_EDGE_CONTINUOUS_IMPORT_DATA_TYPES_H_
 #define COMPONENTS_EDGE_IMPORT_CORE_COMMON_EDGE_CONTINUOUS_IMPORT_DATA_TYPES_H_
 
+#include <cstdint>
+
 namespace edge_continuous_migration {
 
 enum class SourceOfData : std::uint8_t {
@@ -18,6 +20,8 @@ enum class SourceOfData : std::uint8_t {
   IMPORTED_FROM_CHROME_OLD,
   // Record was imported from Chrome takeout importer
   CHROME_TAKEOUT_IMPORT,
+  // Record was imported from Chrome manual import
+  CHROME_MANUAL_IMPORT,
 };
 
 // Important:: whenever new enums are added make sure to update
@@ -118,6 +122,8 @@ enum class OpenTabsCampaignStates {
   kCampaignNeverShowChromeInstalledBeforeFRE = 12,
   kMaxValue = kCampaignNeverShowChromeInstalledBeforeFRE
 };
+
+bool IsSourceAsterImport(SourceOfData source_of_data);
 }  // namespace edge_continuous_migration
 
 #endif  // COMPONENTS_EDGE_IMPORT_CORE_COMMON_EDGE_CONTINUOUS_IMPORT_DATA_TYPES_H_
