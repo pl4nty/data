@@ -205,6 +205,8 @@
         "azureml://registries/azure-openai/models/gpt-5-chat",
         "azureml://registries/azure-openai/models/gpt-5-pro",
         "azureml://registries/azure-openai/models/gpt-5-reasoning-alpha",
+        "azureml://registries/azure-openai/models/gpt-5.1",
+        "azureml://registries/azure-openai/models/gpt-5.1-chat",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -323,7 +325,9 @@
         "gpt-5-mini",
         "gpt-5-nano",
         "gpt-5-chat",
-        "gpt-5-reasoning-alpha"
+        "gpt-5-reasoning-alpha",
+        "gpt-5.1",
+        "gpt-5.1-chat"
     ],
     "unauthHFLinkAssetIds": [],
     "visionMaaP": [
