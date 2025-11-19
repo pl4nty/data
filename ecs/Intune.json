@@ -47,6 +47,10 @@
             "FlightExpiry": "2026-06-20T00:00:00.0402432Z",
             "FlightValue": true
         },
+        "EnableGoldenSignals": {
+            "FlightExpiry": "2025-10-18T00:00:00.000Z",
+            "FlightValue": true
+        },
         "FileStreamForDetectionScripts": {
             "FlightExpiry": "2025-05-01T00:00:01.000Z",
             "FlightValue": true

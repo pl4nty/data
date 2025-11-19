@@ -458,9 +458,8 @@
         "name": "AzureFileSyncAgent",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "21.2.0.0",
+        "version": "20",
         "versions": [
-            "21.2.0.0",
             "20",
             "19.1.0.0",
             "18.2.0.0"
