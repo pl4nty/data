@@ -439,8 +439,14 @@
         "use_new_update_app_reporting": true,
         "use_sorted_policies": true
     },
+    "UX_AdminTasks": {
+        "FlightingV2": {
+            "EnableAdminTasks": true
+        }
+    },
     "UX_Core": {
         "FlightingV2": {
+            "DeviceLifecycleAgentUI": true,
             "HideCartToClass": true,
             "ShowAFDBanner": true
         }
@@ -498,6 +504,8 @@
     },
     "UX_Workflow": {
         "FlightingV2": {
+            "ApproverAgentUI": true,
+            "PolicyAgent": true,
             "SBUpgrade": true
         }
     },
