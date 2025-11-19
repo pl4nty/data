@@ -444,7 +444,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_contextual",
                     "metrics": {
-                        "attack_success_rate": 0.001
+                        "attack_success_rate": 0
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-haiku-4-5/versions/20251001",
                     "modelName": "claude-haiku-4-5",
@@ -478,7 +478,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
-                        "attack_success_rate": 0.001
+                        "attack_success_rate": 0
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-haiku-4-5/versions/20251001",
                     "modelName": "claude-haiku-4-5",
@@ -744,7 +744,7 @@
                     "azure_model_name": "claude-haiku-4-5",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -772,7 +772,7 @@
                     "azure_model_name": "claude-haiku-4-5",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -1260,7 +1260,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
-                        "attack_success_rate": 0.001
+                        "attack_success_rate": 0
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-1/versions/20250805",
                     "modelName": "claude-opus-4-1",
@@ -1526,7 +1526,7 @@
                     "azure_model_name": "claude-opus-4-1",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -1554,7 +1554,7 @@
                     "azure_model_name": "claude-opus-4-1",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -2042,7 +2042,7 @@
                     "datasetFamily": "harmbench",
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
-                        "attack_success_rate": 0.001
+                        "attack_success_rate": 0
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929",
                     "modelName": "claude-sonnet-4-5",
@@ -2308,7 +2308,7 @@
                     "azure_model_name": "claude-sonnet-4-5",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -2336,7 +2336,7 @@
                     "azure_model_name": "claude-sonnet-4-5",
                     "azure_registry_name": "azureml-anthropic",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -3090,7 +3090,7 @@
                     "azure_model_name": "cohere-command-a",
                     "azure_registry_name": "azureml-cohere",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -3118,7 +3118,7 @@
                     "azure_model_name": "cohere-command-a",
                     "azure_registry_name": "azureml-cohere",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -3869,10 +3869,10 @@
                 "tags": {
                     "azure_latest_model_asset_id": "azureml://registries/azureml-cohere/models/Cohere-command-r-plus-08-2024/versions/1",
                     "azure_latest_model_version": "1",
-                    "azure_model_name": "Cohere-command-r-plus-08-2024",
+                    "azure_model_name": "cohere-command-r-plus-08-2024",
                     "azure_registry_name": "azureml-cohere",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -3897,10 +3897,10 @@
                 "tags": {
                     "azure_latest_model_asset_id": "azureml://registries/azureml-cohere/models/Cohere-command-r-plus-08-2024/versions/1",
                     "azure_latest_model_version": "1",
-                    "azure_model_name": "Cohere-command-r-plus-08-2024",
+                    "azure_model_name": "cohere-command-r-plus-08-2024",
                     "azure_registry_name": "azureml-cohere",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -4620,7 +4620,7 @@
                     "azure_model_name": "DeepSeek-R1-0528",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -4648,7 +4648,7 @@
                     "azure_model_name": "DeepSeek-R1-0528",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -5402,7 +5402,7 @@
                     "azure_model_name": "DeepSeek-V3-0324",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -5430,7 +5430,7 @@
                     "azure_model_name": "DeepSeek-V3-0324",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -6184,7 +6184,7 @@
                     "azure_model_name": "DeepSeek-V3.1",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -6212,7 +6212,7 @@
                     "azure_model_name": "DeepSeek-V3.1",
                     "azure_registry_name": "azureml-deepseek",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -6968,7 +6968,7 @@
                     "azure_model_name": "gpt-4.1-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -6996,7 +6996,7 @@
                     "azure_model_name": "gpt-4.1-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -7752,7 +7752,7 @@
                     "azure_model_name": "gpt-4.1-nano",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -7780,7 +7780,7 @@
                     "azure_model_name": "gpt-4.1-nano",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -8536,7 +8536,7 @@
                     "azure_model_name": "gpt-4.1",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -8564,7 +8564,7 @@
                     "azure_model_name": "gpt-4.1",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -9254,7 +9254,7 @@
                     "azure_model_name": "gpt-4o-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -9282,7 +9282,7 @@
                     "azure_model_name": "gpt-4o-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -10040,7 +10040,7 @@
                     "azure_model_name": "gpt-4o",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -10068,7 +10068,7 @@
                     "azure_model_name": "gpt-4o",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -10890,7 +10890,7 @@
                     "azure_model_name": "gpt-5-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -10918,7 +10918,7 @@
                     "azure_model_name": "gpt-5-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -11672,7 +11672,7 @@
                     "azure_model_name": "gpt-5-nano",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -11700,7 +11700,7 @@
                     "azure_model_name": "gpt-5-nano",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -12454,7 +12454,7 @@
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -12469,8 +12469,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "attack_success_rate": 0.001,
-                        "index_metric": 0.001
+                        "attack_success_rate": 1e-07,
+                        "index_metric": 1e-07
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06",
                     "modelName": "gpt-5-pro",
@@ -12482,7 +12482,7 @@
                     "azure_model_name": "gpt-5-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -13236,7 +13236,7 @@
                     "azure_model_name": "gpt-5",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -13264,7 +13264,7 @@
                     "azure_model_name": "gpt-5",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -14018,7 +14018,7 @@
                     "azure_model_name": "gpt-oss-120b",
                     "azure_registry_name": "azureml-openai-oss",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -14046,7 +14046,7 @@
                     "azure_model_name": "gpt-oss-120b",
                     "azure_registry_name": "azureml-openai-oss",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -14800,7 +14800,7 @@
                     "azure_model_name": "grok-3-mini",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -14828,7 +14828,7 @@
                     "azure_model_name": "grok-3-mini",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -15582,7 +15582,7 @@
                     "azure_model_name": "grok-3",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -15610,7 +15610,7 @@
                     "azure_model_name": "grok-3",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -16364,7 +16364,7 @@
                     "azure_model_name": "grok-4-fast-non-reasoning",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -16392,7 +16392,7 @@
                     "azure_model_name": "grok-4-fast-non-reasoning",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -17146,7 +17146,7 @@
                     "azure_model_name": "grok-4-fast-reasoning",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -17174,7 +17174,7 @@
                     "azure_model_name": "grok-4-fast-reasoning",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -17928,7 +17928,7 @@
                     "azure_model_name": "grok-4",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -17956,7 +17956,7 @@
                     "azure_model_name": "grok-4",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -18710,7 +18710,7 @@
                     "azure_model_name": "grok-code-fast-1",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -18738,7 +18738,7 @@
                     "azure_model_name": "grok-code-fast-1",
                     "azure_registry_name": "azureml-xai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -19492,7 +19492,7 @@
                     "azure_model_name": "Llama-3.3-70B-Instruct",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -19520,7 +19520,7 @@
                     "azure_model_name": "Llama-3.3-70B-Instruct",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -20274,7 +20274,7 @@
                     "azure_model_name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azure-openai/models/o4-mini/versions/2025-04-16;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -20302,7 +20302,7 @@
                     "azure_model_name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azure-openai/models/o4-mini/versions/2025-04-16;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -21056,7 +21056,7 @@
                     "azure_model_name": "Llama-4-Scout-17B-16E-Instruct",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -21084,7 +21084,7 @@
                     "azure_model_name": "Llama-4-Scout-17B-16E-Instruct",
                     "azure_registry_name": "azureml-meta",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -21602,7 +21602,7 @@
                     "azure_model_name": "MAI-DS-R1",
                     "azure_registry_name": "azureml",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -21630,7 +21630,7 @@
                     "azure_model_name": "MAI-DS-R1",
                     "azure_registry_name": "azureml",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -22620,7 +22620,7 @@
                     "azure_model_name": "mistral-medium-2505",
                     "azure_registry_name": "azureml-mistral",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -22648,7 +22648,7 @@
                     "azure_model_name": "mistral-medium-2505",
                     "azure_registry_name": "azureml-mistral",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -23334,7 +23334,7 @@
                     "azure_model_name": "mistral-small-2503",
                     "azure_registry_name": "azureml-mistral",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -23362,7 +23362,7 @@
                     "azure_model_name": "mistral-small-2503",
                     "azure_registry_name": "azureml-mistral",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -24188,7 +24188,7 @@
                     "azure_model_name": "o1",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -24216,7 +24216,7 @@
                     "azure_model_name": "o1",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -24974,7 +24974,7 @@
                     "azure_model_name": "o3-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1;azureml://registries/azure-openai/models/o4-mini/versions/2025-04-16;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -25002,7 +25002,7 @@
                     "azure_model_name": "o3-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-mistral/models/mistral-medium-2505/versions/1;azureml://registries/azure-openai/models/o4-mini/versions/2025-04-16;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -25758,7 +25758,7 @@
                     "azure_model_name": "o3-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -25786,7 +25786,7 @@
                     "azure_model_name": "o3-pro",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -26542,7 +26542,7 @@
                     "azure_model_name": "o3",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -26570,7 +26570,7 @@
                     "azure_model_name": "o3",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -27326,7 +27326,7 @@
                     "azure_model_name": "o4-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -27354,7 +27354,7 @@
                     "azure_model_name": "o4-mini",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -27770,7 +27770,7 @@
                     "azure_model_name": "Phi-4-reasoning",
                     "azure_registry_name": "azureml",
                     "evaluation_type": "text_quality",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
@@ -27798,7 +27798,7 @@
                     "azure_model_name": "Phi-4-reasoning",
                     "azure_registry_name": "azureml",
                     "evaluation_type": "text_safety",
-                    "recommended_models": "azureml://registries/azureml/models/Phi-4/versions/7;azureml://registries/azureml-deepseek/models/DeepSeek-R1/versions/1;azureml://registries/azure-openai/models/o3-mini/versions/2025-01-31;azureml://registries/azureml-meta/models/Llama-4-Maverick-17B-128E-Instruct-FP8/versions/1"
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
                 }
             },
             "properties": {
