@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251116.8.0",
+        "CalendarCompanionDFVersion": "1.20251118.2.0",
         "CalendarCompanionMsitVersion": "1.20251113.2.0",
         "CalendarCompanionProdVersion": "1.20251109.1.0",
         "CompanionRing": "Prod",
@@ -208,6 +208,7 @@
                 "https://substrate.office365.us",
                 "https://substrate.partner.outlook.cn",
                 "https://cdn.config.centro.core.microsoft",
+                "https://prod-autodetect.outlookmobile.com",
                 "*.centro.core.microsoft"
             ],
             "default-src": [
@@ -408,7 +409,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20251031.6.0",
+        "LpcVersion": "1.20251107.6.1",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -2026,7 +2027,13 @@
             },
             "Performance": {
                 "defaultRate": 100,
-                "rules": []
+                "rules": [
+                    {
+                        "name": "FetchEndToEndLatencyEvent",
+                        "rate": 10,
+                        "requestName": "FetchProfilePhoto"
+                    }
+                ]
             },
             "UserAction": {
                 "defaultRate": 100,

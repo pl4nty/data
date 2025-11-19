@@ -844,6 +844,7 @@
         "EnableResizeForFirstPartyPartnerInPolicy": true,
         "EnableResizeThrottling": true,
         "EnableResourcePerfTopProcess": true,
+        "EnableRestartNotRunningVM": true,
         "EnableRestartVmRemediation": true,
         "EnableRestoreDeviceEvent": true,
         "EnableResumeCollectionProvisioning": true,
