@@ -2019,7 +2019,12 @@
         "samplingConfig": {
             "Event": {
                 "defaultRate": 100,
-                "rules": []
+                "rules": [
+                    {
+                        "name": "SuspensionTaskLifeCycleEvent",
+                        "rate": 5
+                    }
+                ]
             },
             "Impression": {
                 "defaultRate": 100,
@@ -2040,6 +2045,7 @@
                 "rules": []
             }
         },
+        "testversion": "0.0.0.0",
         "updatedFAQText_shared": 1
     },
     "Segmentation": {
