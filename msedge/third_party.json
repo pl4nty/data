@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2174941,
+    "size": 2176190,
     "file_count": 183
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10731480,
+    "size": 10731945,
     "file_count": 167
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32498163,
-    "file_count": 3976
+    "size": 32501201,
+    "file_count": 3977
   },
   {
     "name": "boringssl",
-    "size": 76595,
+    "size": 76575,
     "file_count": 15
   },
   {
@@ -115,6 +115,11 @@
     "file_count": 3
   },
   {
+    "name": "cloud_authenticator",
+    "size": 144811,
+    "file_count": 4
+  },
+  {
     "name": "content_analysis_sdk",
     "size": 8362,
     "file_count": 6
@@ -126,7 +131,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 36787,
+    "size": 37179,
     "file_count": 5
   },
   {
@@ -151,7 +156,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6964022,
+    "size": 6965960,
     "file_count": 59
   },
   {
@@ -551,8 +556,8 @@
   },
   {
     "name": "openscreen",
-    "size": 876994,
-    "file_count": 132
+    "size": 1745002,
+    "file_count": 535
   },
   {
     "name": "openxr",
@@ -571,7 +576,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3944337,
+    "size": 3944877,
     "file_count": 580
   },
   {
@@ -776,7 +781,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29493226,
+    "size": 29493478,
     "file_count": 626
   },
   {
