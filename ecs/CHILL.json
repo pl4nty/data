@@ -3104,7 +3104,7 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
+                    "IntervalSeconds": 3888000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
@@ -3113,7 +3113,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
+                "PercentageNumerator": 75,
                 "Type": 0
             },
             "PrimaryPriority": 3,
@@ -3129,7 +3129,7 @@
                         },
                         {
                             "Activity": "NGSPBuildUsageEvent",
-                            "Count": 2,
+                            "Count": 1,
                             "IsAggregate": true,
                             "Type": 0
                         }
