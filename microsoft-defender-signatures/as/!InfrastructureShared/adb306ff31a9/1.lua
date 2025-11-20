@@ -33,28 +33,42 @@ end
 local l_0_4 = (mp.GetParentProcInfo)()
 if l_0_4 and l_0_4.ppid then
   local l_0_5, l_0_6 = (MpCommon.GetProcessProtection)(l_0_4.ppid)
-  if l_0_5 and l_0_5 == 0 then
-    (bm.add_related_string)("PPlProcessCreated", l_0_3, bm.RelatedStringBMReport)
-    local l_0_7 = bm.add_related_string
-    local l_0_8 = "PPlLevel"
-    local l_0_9 = l_0_5
-    local l_0_10 = "_"
-    l_0_9 = l_0_9 .. l_0_10 .. (l_0_2 or "Error")
-    l_0_10 = bm
-    l_0_10 = l_0_10.RelatedStringBMReport
-    l_0_7(l_0_8, l_0_9, l_0_10)
-    l_0_7 = add_parents
-    l_0_7()
-    l_0_7 = mp
-    l_0_7 = l_0_7.INFECTED
-    return l_0_7
-  end
-end
-do
-  do
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC126: freeLocal<0 in 'ReleaseLocals'
+  if l_0_4.image_path then
+    do
+      if not (l_0_4.image_path):match("([^\\]+)$") then
+        local l_0_7, l_0_9 = not l_0_5 or l_0_5 ~= 0 or ""
+      end
+      do
+        local l_0_8 = nil
+        -- DECOMPILER ERROR at PC129: Confused about usage of register: R7 in 'UnsetPending'
 
+        if (mp.IsKnownFriendlyFile)(l_0_4.image_path, true, false) and (string.lower)(l_0_3:match("([^\\]+)$") or "") == (string.lower)(l_0_8) then
+          return mp.CLEAN
+        end
+        ;
+        (bm.add_related_string)("PPlProcessCreated", l_0_3, bm.RelatedStringBMReport)
+        local l_0_10 = bm.add_related_string
+        local l_0_11 = "PPlLevel"
+        local l_0_12 = l_0_5
+        local l_0_13 = "_"
+        do
+          do
+            l_0_12 = l_0_12 .. l_0_13 .. (l_0_2 or "Error")
+            l_0_13 = bm
+            l_0_13 = l_0_13.RelatedStringBMReport
+            l_0_10(l_0_11, l_0_12, l_0_13)
+            l_0_10 = add_parents
+            l_0_10()
+            l_0_10 = mp
+            l_0_10 = l_0_10.INFECTED
+            do return l_0_10 end
+            do return mp.CLEAN end
+            -- DECOMPILER ERROR at PC163: freeLocal<0 in 'ReleaseLocals'
+
+          end
+        end
+      end
+    end
   end
 end
 
