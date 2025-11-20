@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19513.40126-->
+    <!--Build: 16.0.19505.40132-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2529,7 +2529,7 @@
     <o:token o:name="MIPSDKCloud">3</o:token>
     <o:token o:name="AuthOfficePythonServiceResourceId">https://officepyservice.office.net/</o:token>
     <o:token o:name="AuthOfficePythonServiceScope">https://officepyservice.office.net/service.functionality</o:token>
-    <o:token o:name="SDXManifestsTokenValueList">CDNDOMAIN_STDVARIANT|res.cdn.office.net^CDNDOMAIN_SUBDOMAINVARIANT|public.cdn.office.net^FA000000054_PBIWFEURL|https://app.powerbi.com^FA000000054_PBISHAREDURL|https://analysis.windows.net/powerbi/api^APPCHAT_COPILOT_TASKPANE|taskpane^APPCHAT_COPILOT_MSGEXTDIALOG|msgExtDialog^APPCHAT_COPILOT_BYOADIALOG|byoaDialog^APPCHAT_COPILOT_OPERA|opera^APPCHAT_COPILOT_CLOUDFILEPICKERDIALOG|CloudFilePickerDialog^FA000000129_PPTDESIGNERURL|https://designerappservice.officeapps.live.com^FA000000125_WORDDESIGNERURL|https://designerappservice.officeapps.live.com^FA000000005_INSIGHTSURL|https://insights.microsoft.com^SERVICEDOMAIN_DOMAINVARIANT|cloud.microsoft</o:token>
+    <o:token o:name="SDXManifestsTokenValueList">CDNDOMAIN_STDVARIANT|res.cdn.office.net^CDNDOMAIN_SUBDOMAINVARIANT|public.cdn.office.net^FA000000054_PBIWFEURL|https://app.powerbi.com^FA000000054_PBISHAREDURL|https://analysis.windows.net/powerbi/api^APPCHAT_COPILOT_TASKPANE|taskpane^APPCHAT_COPILOT_MSGEXTDIALOG|msgExtDialog^APPCHAT_COPILOT_BYOADIALOG|byoaDialog^APPCHAT_COPILOT_OPERA|opera^APPCHAT_COPILOT_CLOUDFILEPICKERDIALOG|CloudFilePickerDialog^FA000000129_PPTDESIGNERURL|https://designerappservice.officeapps.live.com^FA000000125_WORDDESIGNERURL|https://designerappservice.officeapps.live.com^FA000000005_INSIGHTSURL|https://insights.microsoft.com</o:token>
     <o:token o:name="DSCRedemptionServiceMsaTarget">officesetup.getmicrosoftkey.com</o:token>
     <o:token o:name="WritingAssistanceEditorOverviewPanePrivacy">true</o:token>
     <o:token o:name="EditorServiceClientFeatureSupported">true</o:token>
@@ -2554,8 +2554,6 @@
     <o:token o:name="OCMPolicyFallbackEnabled">true</o:token>
     <o:token o:name="OCMAddonFeatureEnabled">true</o:token>
     <o:token o:name="FluidAudience">Production</o:token>
-    <o:token o:name="CreateAudience">Global</o:token>
-    <o:token o:name="AICreateModuleEnabled">true</o:token>
     <o:token o:name="OutlookDisabledFeaturesRing">1</o:token>
     <o:token o:name="NotebooksModuleEnabled">true</o:token>
     <o:token o:name="FailingUALFileRetentionWindow">30</o:token>
