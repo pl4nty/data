@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1803,6 +1803,9 @@
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "ShouldFallbackToGcbIfRTAFNotAvailable": true,
+            "ShouldFetchAttendeesIdsFromGraph": true,
+            "ShouldFetchAttendeesIdsFromGraphUsingPeopleAPI": false,
+            "ShouldFetchAttendeesOutOfOfficeStatus": true,
             "ShouldFetchMeetingBodyFromGraph": true,
             "ShouldUseMASTranscriptForMeetingData": true,
             "TranscriptsIngestionWaitTimeInSec": 5
@@ -1954,6 +1957,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.TimeModerator.gpt41TopicRelevance",
+                    "IsEnabled": true
+                }
+            ],
+            "TimeModeratorSkill_AgendaTracking_agendaNudge": [
+                {
+                    "Flight": "TM.agendaProactiveComposeAction",
                     "IsEnabled": true
                 }
             ],
