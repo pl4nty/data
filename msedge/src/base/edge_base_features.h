@@ -37,14 +37,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeProfileIDUpload);
 // If Enabled, will fake that system is in lockdown mode
 BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateLockdownMode);
 
-BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsHolographicSku);
-
-BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsTeamSku);
-
-BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsXboxSku);
-
-BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateWindowsServerSku);
-
 // If enabled, it forces the collection of histogram inventory data.
 BASE_EXPORT BASE_DECLARE_FEATURE(kForceEnableHistogramInventoryDataCollection);
 
