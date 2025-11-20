@@ -456,6 +456,7 @@
         "EnableOneDrive": true,
         "EnableOnlySendUpdatedMembership": true,
         "EnableOptimizePolicyDuplicateNameCheck": true,
+        "EnableOptimizeQuotaExceededError": true,
         "EnableOptimizedDispatch": true,
         "EnableOptionalDRNameOnUnavaiableReport": true,
         "EnableOutOfServiceReportUX": true,
