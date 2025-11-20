@@ -36,41 +36,36 @@ local l_0_4 = "c:\\\\programdata\\\\microsoft(_bak)?$|c:\\\\program files\\\\win
 local l_0_5 = "Windows\\System32\\spoolsv.exe"
 if (MpCommon.StringRegExpSearch)(l_0_3, l_0_2) or (MpCommon.StringRegExpSearch)(l_0_4, l_0_2) or (MpCommon.StringRegExpSearch)(l_0_5, l_0_2) then
   (bm.add_related_string)("MDE_Path", l_0_2, bm.RelatedStringBMReport)
+  local l_0_6 = add_parents()
+  if table_contains(l_0_6, "setup.exe", true) then
+    return mp.CLEAN
+  end
+  ;
+  (bm.add_related_string)("Parents", safeJsonSerialize(l_0_6), bm.RelatedStringBMReport)
   if not (string.find)(l_0_2, "advanced threat protection", 1, true) then
     (bm.add_related_string)("AV", "True", bm.RelatedStringBMReport)
     l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
     if l_0_1 then
-      local l_0_6 = contains
-      local l_0_7 = l_0_1
-      local l_0_8 = {}
-      -- DECOMPILER ERROR at PC116: No list found for R8 , SetList fails
+      local l_0_7 = contains
+      local l_0_8 = l_0_1
+      local l_0_9 = {}
+      -- DECOMPILER ERROR at PC137: No list found for R9 , SetList fails
 
-      -- DECOMPILER ERROR at PC120: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC141: Overwrote pending register: R7 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC121: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC142: Overwrote pending register: R7 in 'AssignReg'
 
-      if not l_0_6 then
-        l_0_6(l_0_7, l_0_8)
+      if not l_0_7 then
+        l_0_7(l_0_8, l_0_9)
       end
     end
   end
   do
-    -- DECOMPILER ERROR at PC125: Overwrote pending register: R6 in 'AssignReg'
-
     do
       do
-        local l_0_9 = l_0_6()
-        -- DECOMPILER ERROR at PC127: Overwrote pending register: R7 in 'AssignReg'
+        -- DECOMPILER ERROR at PC146: Overwrote pending register: R7 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC129: Overwrote pending register: R8 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC130: Overwrote pending register: R9 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC131: Overwrote pending register: R10 in 'AssignReg'
-
-        ;
-        (l_0_7.add_related_string)(l_0_8, ("C:\\ProgramData\\")("C:\\Program Files"), bm.RelatedStringBMReport)
-        do return mp.INFECTED end
+        do return l_0_7.INFECTED end
         do return mp.CLEAN end
         -- WARNING: undefined locals caused missing assignments!
       end
