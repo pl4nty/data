@@ -18,7 +18,7 @@ bool BrowserCreationWatcher::StartWatching(
   startup_event_.Set(
       CreateEvent(nullptr, FALSE, FALSE,
                   edge_external_task_manager::kEdgeStartupEventName));
-  if (!startup_event_.IsValid()) {
+  if (!startup_event_.is_valid()) {
     return false;
   }
   on_browser_created_callback_ = on_browser_created_callback;
