@@ -32,7 +32,7 @@ if l_0_3 == nil or type(l_0_3) ~= "string" then
   return mp.CLEAN
 end
 l_0_3 = (string.lower)(l_0_3)
-if l_0_3 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_3 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" and (l_0_3 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(100, false, true, true) ~= true) then
+if l_0_3 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_3 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" and (l_0_3 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(1000, false, true, true) ~= true) then
   return mp.CLEAN
 end
 return mp.INFECTED
