@@ -292,6 +292,7 @@
             "EnableNoDepDeviceFullSyncTriggerAfterProfileCorrection": true,
             "EnableRemoveDuplicateAccountIdInCompanyPortalPolicyTask": true,
             "EnableSearchECAWithoutDQCache": true,
+            "EnableWindowsRestoreReporting": true,
             "S2SAntiPattern": true
         }
     },
