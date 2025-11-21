@@ -41,8 +41,8 @@
   },
   {
     "name": "angle",
-    "size": 14773468,
-    "file_count": 839
+    "size": 14791110,
+    "file_count": 843
   },
   {
     "name": "anonymous_tokens",
@@ -56,7 +56,7 @@
   },
   {
     "name": "apple_apsl",
-    "size": 23899,
+    "size": 24802,
     "file_count": 6
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32501201,
-    "file_count": 3977
+    "size": 32528838,
+    "file_count": 3980
   },
   {
     "name": "boringssl",
-    "size": 76575,
+    "size": 75453,
     "file_count": 15
   },
   {
@@ -156,7 +156,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6965960,
+    "size": 6966313,
     "file_count": 59
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43068174,
-    "file_count": 3152
+    "size": 43149225,
+    "file_count": 3172
   },
   {
     "name": "googletest",
@@ -476,7 +476,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 293150,
+    "size": 293363,
     "file_count": 47
   },
   {
@@ -526,8 +526,8 @@
   },
   {
     "name": "node",
-    "size": 51684860,
-    "file_count": 2924
+    "size": 61304265,
+    "file_count": 3339
   },
   {
     "name": "oak",
@@ -576,8 +576,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3944877,
-    "file_count": 580
+    "size": 3953793,
+    "file_count": 583
   },
   {
     "name": "perl",
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3542861,
+    "size": 3543051,
     "file_count": 1184
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 536967,
+    "size": 545246,
     "file_count": 15
   },
   {
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1389847,
+    "size": 1395263,
     "file_count": 23
   },
   {
@@ -746,12 +746,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2499425,
+    "size": 2511190,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6640016,
+    "size": 6647054,
     "file_count": 177
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 263779,
+    "size": 263830,
     "file_count": 65
   },
   {
