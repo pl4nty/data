@@ -13,6 +13,20 @@ end
 if (string.find)(l_0_0, "/Users/[^/]+/Library/Group Containers/UBF8T346G9.Office/lck[^/]+", 1, false) then
   return mp.CLEAN
 end
+ExtendedSuspMacPathsToMonitor = function(l_1_0)
+  -- function num : 0_0
+  if SuspMacPathsToMonitor(l_1_0, true) then
+    return true
+  end
+  if l_1_0:find("^/Users/[^/]+/Desktop/", 1, false) or l_1_0:find("^/Users/[^/]+/Documents/", 1, false) or l_1_0:find("^/Users/[^/]+/Downloads/", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+$", 1, false) or l_1_0:find("^/Users/[^/]+/Library/[^/]+/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+$", 1, false) or l_1_0:find("^/Library/[^/]+/[^/]+$", 1, false) then
+    return true
+  end
+  return false
+end
+
+if not ExtendedSuspMacPathsToMonitor(l_0_0) then
+  return mp.CLEAN
+end
 local l_0_1 = (bm.get_imagepath)()
 if l_0_1 == nil then
   return mp.CLEAN

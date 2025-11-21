@@ -156,55 +156,82 @@ IsBasToolFilenameContext = function(l_3_0, l_3_1)
   end
 end
 
-BasToolTrackProcess = function(l_4_0, l_4_1, l_4_2, l_4_3)
+IsBasToolLocationContext = function(l_4_0, l_4_1)
   -- function num : 0_3
-  if l_4_0 == nil then
+  if l_4_0 == nil or type(l_4_0) ~= "string" then
     return 
   end
-  if l_4_3 == nil then
-    l_4_3 = 1
+  l_4_0 = (string.lower)(l_4_0)
+  do
+    local l_4_2 = {}
+    l_4_2[":\\program files\\attackiq\\agent"] = "attackiq"
+    l_4_2[":\\program files\\cymulate\\agent"] = "cymulate"
+    l_4_2[":\\program files\\picus security\\picus simulation agent"] = "picus"
+    l_4_2[":\\program files\\safebreach\\safebreach endpoint simulator"] = "safebreach"
+    for l_4_6,l_4_7 in pairs(l_4_2) do
+      if (string.find)(l_4_0, l_4_6, 1, true) or l_4_0:match(l_4_6) then
+        if l_4_1 ~= nil then
+          l_4_1 = (string.lower)(l_4_1)
+          return l_4_7 == l_4_1, l_4_7
+        else
+          return true, l_4_7
+        end
+      end
+    end
+    do return false, nil end
+    -- DECOMPILER ERROR: 3 unprocessed JMP targets
   end
-  local l_4_4 = "BasToolTracking"
-  l_4_0 = GetRealPidForScenario(l_4_0)
-  local l_4_5 = "bas-" .. l_4_0
-  if l_4_1 ~= nil then
-    l_4_1 = (string.lower)(l_4_1)
-    AppendToRollingQueueNamespaced(l_4_5, l_4_4, l_4_1)
-  else
-    l_4_1 = "any"
-  end
-  AppendToRollingQueueNamespaced(l_4_5, l_4_4, "any")
-  pcall(MpCommon.BmTriggerSig, l_4_0, l_4_4, l_4_1)
-  if l_4_2 ~= nil and type(l_4_2) == "string" then
-    l_4_2 = (string.lower)(l_4_2)
-    AppendToRollingQueueNamespaced(l_4_5, l_4_4, l_4_2, l_4_3)
-    pcall(MpCommon.BmTriggerSig, l_4_0, "BasToolTrackingContext", l_4_2)
-  end
-  return 
 end
 
-IsBasToolProcessForPpid = function(l_5_0, l_5_1, l_5_2)
+BasToolTrackProcess = function(l_5_0, l_5_1, l_5_2, l_5_3)
   -- function num : 0_4
   if l_5_0 == nil then
     return 
   end
-  local l_5_3 = "BasToolTracking"
+  if l_5_3 == nil then
+    l_5_3 = 1
+  end
+  local l_5_4 = "BasToolTracking"
   l_5_0 = GetRealPidForScenario(l_5_0)
-  local l_5_4 = "bas-" .. l_5_0
+  local l_5_5 = "bas-" .. l_5_0
   if l_5_1 ~= nil then
     l_5_1 = (string.lower)(l_5_1)
+    AppendToRollingQueueNamespaced(l_5_5, l_5_4, l_5_1)
   else
     l_5_1 = "any"
   end
-  local l_5_5, l_5_6 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_5_4, l_5_3, l_5_1)
-  if l_5_5 and l_5_6 ~= nil and l_5_6 >= 1 then
-    if l_5_2 == nil then
+  AppendToRollingQueueNamespaced(l_5_5, l_5_4, "any")
+  pcall(MpCommon.BmTriggerSig, l_5_0, l_5_4, l_5_1)
+  if l_5_2 ~= nil and type(l_5_2) == "string" then
+    l_5_2 = (string.lower)(l_5_2)
+    AppendToRollingQueueNamespaced(l_5_5, l_5_4, l_5_2, l_5_3)
+    pcall(MpCommon.BmTriggerSig, l_5_0, "BasToolTrackingContext", l_5_2)
+  end
+  return 
+end
+
+IsBasToolProcessForPpid = function(l_6_0, l_6_1, l_6_2)
+  -- function num : 0_5
+  if l_6_0 == nil then
+    return 
+  end
+  local l_6_3 = "BasToolTracking"
+  l_6_0 = GetRealPidForScenario(l_6_0)
+  local l_6_4 = "bas-" .. l_6_0
+  if l_6_1 ~= nil then
+    l_6_1 = (string.lower)(l_6_1)
+  else
+    l_6_1 = "any"
+  end
+  local l_6_5, l_6_6 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_6_4, l_6_3, l_6_1)
+  if l_6_5 and l_6_6 ~= nil and l_6_6 >= 1 then
+    if l_6_2 == nil then
       return true
     end
-    if l_5_2 ~= nil then
-      l_5_2 = (string.lower)(l_5_2)
-      local l_5_7, l_5_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_5_4, l_5_3, l_5_2)
-      if l_5_7 and l_5_8 ~= nil and l_5_8 >= 1 then
+    if l_6_2 ~= nil then
+      l_6_2 = (string.lower)(l_6_2)
+      local l_6_7, l_6_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_6_4, l_6_3, l_6_2)
+      if l_6_7 and l_6_8 ~= nil and l_6_8 >= 1 then
         return true
       end
     end
@@ -214,42 +241,42 @@ IsBasToolProcessForPpid = function(l_5_0, l_5_1, l_5_2)
   end
 end
 
-IsBasToolProcessFoundInParents = function(l_6_0, l_6_1, l_6_2, l_6_3)
-  -- function num : 0_5
-  if l_6_0 == nil then
+IsBasToolProcessFoundInParents = function(l_7_0, l_7_1, l_7_2, l_7_3)
+  -- function num : 0_6
+  if l_7_0 == nil then
     return 
   end
-  if l_6_2 == nil then
-    l_6_2 = 1
+  if l_7_2 == nil then
+    l_7_2 = 1
   end
-  if type(l_6_2) ~= "number" or l_6_2 > 15 then
+  if type(l_7_2) ~= "number" or l_7_2 > 15 then
     return 
   end
-  if l_6_2 <= 0 then
+  if l_7_2 <= 0 then
     return false
   end
-  local l_6_4 = l_6_0
-  l_6_0 = GetRealPidForScenario(l_6_0)
-  local l_6_5 = false
-  if (string.lower)(l_6_4) == "cmdhstr" then
-    l_6_5 = IsBasToolProcessForPpid(l_6_0, l_6_1, l_6_3)
-    if l_6_5 then
-      return l_6_5
+  local l_7_4 = l_7_0
+  l_7_0 = GetRealPidForScenario(l_7_0)
+  local l_7_5 = false
+  if (string.lower)(l_7_4) == "cmdhstr" then
+    l_7_5 = IsBasToolProcessForPpid(l_7_0, l_7_1, l_7_3)
+    if l_7_5 then
+      return l_7_5
     end
   end
-  local l_6_6 = (mp.GetParentProcInfo)(l_6_0)
-  if l_6_6 ~= nil and l_6_6.ppid ~= nil then
-    l_6_5 = IsBasToolProcessForPpid(l_6_6.ppid, l_6_1, l_6_3)
-    if l_6_5 then
-      return l_6_5
+  local l_7_6 = (mp.GetParentProcInfo)(l_7_0)
+  if l_7_6 ~= nil and l_7_6.ppid ~= nil then
+    l_7_5 = IsBasToolProcessForPpid(l_7_6.ppid, l_7_1, l_7_3)
+    if l_7_5 then
+      return l_7_5
     else
-      local l_6_7 = IsBasToolProcessFoundInParents
-      local l_6_8 = l_6_6.ppid
-      local l_6_9 = l_6_1
-      local l_6_10 = l_6_2 - 1
+      local l_7_7 = IsBasToolProcessFoundInParents
+      local l_7_8 = l_7_6.ppid
+      local l_7_9 = l_7_1
+      local l_7_10 = l_7_2 - 1
       do
-        local l_6_11 = l_6_3
-        do return l_6_7(l_6_8, l_6_9, l_6_10, l_6_11) end
+        local l_7_11 = l_7_3
+        do return l_7_7(l_7_8, l_7_9, l_7_10, l_7_11) end
         -- DECOMPILER ERROR at PC65: Confused about usage of register R8 for local variables in 'ReleaseLocals'
 
         do return false end
@@ -260,51 +287,51 @@ IsBasToolProcessFoundInParents = function(l_6_0, l_6_1, l_6_2, l_6_3)
   end
 end
 
-BasToolTrackFile = function(l_7_0, l_7_1, l_7_2, l_7_3)
-  -- function num : 0_6
-  if l_7_0 == nil then
-    return 
-  end
-  if l_7_3 == nil then
-    l_7_3 = 1
-  end
-  local l_7_4 = normalize_path(l_7_0)
-  local l_7_5 = "BasToolTracking"
-  if l_7_1 ~= nil then
-    l_7_1 = (string.lower)(l_7_1)
-    AppendToRollingQueueNamespaced(l_7_4, l_7_5, l_7_1)
-  else
-    l_7_1 = "any"
-  end
-  AppendToRollingQueueNamespaced(l_7_4, l_7_5, "any")
-  if l_7_2 ~= nil and type(l_7_2) == "string" then
-    l_7_2 = (string.lower)(l_7_2)
-    AppendToRollingQueueNamespaced(l_7_4, l_7_5, l_7_2, l_7_3)
-  end
-  return 
-end
-
-IsBasToolTrackedFile = function(l_8_0, l_8_1, l_8_2)
+BasToolTrackFile = function(l_8_0, l_8_1, l_8_2, l_8_3)
   -- function num : 0_7
   if l_8_0 == nil then
     return 
   end
-  local l_8_3 = normalize_path(l_8_0)
-  local l_8_4 = "BasToolTracking"
+  if l_8_3 == nil then
+    l_8_3 = 1
+  end
+  local l_8_4 = normalize_path(l_8_0)
+  local l_8_5 = "BasToolTracking"
   if l_8_1 ~= nil then
     l_8_1 = (string.lower)(l_8_1)
+    AppendToRollingQueueNamespaced(l_8_4, l_8_5, l_8_1)
   else
     l_8_1 = "any"
   end
-  local l_8_5, l_8_6 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_8_0, l_8_4, l_8_1)
-  if l_8_5 and l_8_6 ~= nil and l_8_6 >= 1 then
-    if l_8_2 == nil then
+  AppendToRollingQueueNamespaced(l_8_4, l_8_5, "any")
+  if l_8_2 ~= nil and type(l_8_2) == "string" then
+    l_8_2 = (string.lower)(l_8_2)
+    AppendToRollingQueueNamespaced(l_8_4, l_8_5, l_8_2, l_8_3)
+  end
+  return 
+end
+
+IsBasToolTrackedFile = function(l_9_0, l_9_1, l_9_2)
+  -- function num : 0_8
+  if l_9_0 == nil then
+    return 
+  end
+  local l_9_3 = normalize_path(l_9_0)
+  local l_9_4 = "BasToolTracking"
+  if l_9_1 ~= nil then
+    l_9_1 = (string.lower)(l_9_1)
+  else
+    l_9_1 = "any"
+  end
+  local l_9_5, l_9_6 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_9_0, l_9_4, l_9_1)
+  if l_9_5 and l_9_6 ~= nil and l_9_6 >= 1 then
+    if l_9_2 == nil then
       return true
     end
-    if l_8_2 ~= nil then
-      l_8_2 = (string.lower)(l_8_2)
-      local l_8_7, l_8_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_8_0, l_8_4, l_8_2)
-      if l_8_7 and l_8_8 ~= nil and l_8_8 >= 1 then
+    if l_9_2 ~= nil then
+      l_9_2 = (string.lower)(l_9_2)
+      local l_9_7, l_9_8 = pcall(MpCommon.RollingQueueCountValuesForKeyNamespaced, l_9_0, l_9_4, l_9_2)
+      if l_9_7 and l_9_8 ~= nil and l_9_8 >= 1 then
         return true
       end
     end
