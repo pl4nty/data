@@ -86,7 +86,7 @@ bool IsAppContainerProcess(HANDLE process_token) {
 IntegrityLevel GetProcessIntegrityLevel(HANDLE process_handle) {
   base::win::ScopedHandle process_token(
       GetProcessToken(process_handle, TOKEN_QUERY));
-  if (!process_token.IsValid()) {
+  if (!process_token.is_valid()) {
     return IntegrityLevel::Unknown;
   }
 
@@ -207,7 +207,7 @@ std::vector<std::wstring> GetProcessEnterpriseIds(HANDLE process_handle) {
 
   base::win::ScopedHandle process_token(
       GetProcessToken(process_handle, TOKEN_QUERY));
-  if (!process_token.IsValid()) {
+  if (!process_token.is_valid()) {
     return {};
   }
 
@@ -251,7 +251,7 @@ Process::Process(ULONG process_id,
   // that will let us obtain at least some of the information we want.
   full_process_handle_.Set(OpenProcess(
       PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, process_id));
-  if (!full_process_handle_.IsValid()) {
+  if (!full_process_handle_.is_valid()) {
     limited_process_handle_.Set(
         OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, process_id));
   }
@@ -280,7 +280,7 @@ void Process::Refresh() {
     integrity_level_ = GetProcessIntegrityLevel(handle);
   }
 
-  if (!full_process_handle_.IsValid()) {
+  if (!full_process_handle_.is_valid()) {
     return;
   }
 

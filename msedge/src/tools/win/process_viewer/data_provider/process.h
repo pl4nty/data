@@ -130,8 +130,8 @@ class Process {
   }
 
   HANDLE process_handle() {
-    return (full_process_handle_.IsValid() ? full_process_handle_.Get()
-                                           : limited_process_handle_.Get());
+    return (full_process_handle_.is_valid() ? full_process_handle_.Get()
+                                            : limited_process_handle_.Get());
   }
 
  private:
