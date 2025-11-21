@@ -139,8 +139,18 @@ if (string.find)(l_0_1, "grep -e", 1, true) ~= nil or (string.find)(l_0_1, "grep
   end
   if l_0_4 > 2 then
     TrackPidAndTechniqueBM("BM", "T1518.001", "SecuritySoftwareDiscovery_mt2023")
+    local l_0_10, l_0_11 = , (bm.get_process_relationships)()
+    for l_0_15,l_0_16 in ipairs(R8_PC587) do
+      local l_0_12 = nil
+      -- DECOMPILER ERROR at PC593: Confused about usage of register: R11 in 'UnsetPending'
+
+      ;
+      (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", l_0_1.ppid)
+    end
     return mp.INFECTED
   end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 
