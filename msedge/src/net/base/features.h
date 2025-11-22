@@ -296,13 +296,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kStaticKeyPinningEnforcement);
 // When enabled, cookies with a non-ASCII domain attribute will be rejected.
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieDomainRejectNonASCII);
 
-#if BUILDFLAG(MICROSOFT_EDGE_BRANDING) && BUILDFLAG(IS_WIN)
-// When enabled, imported cookies (from Aster browser import) will be
-// encrypted using the Aster key for enhanced security.
-NET_EXPORT BASE_DECLARE_FEATURE(
-    kEdgeUseAsterKeyForImportedDataEncryptionOfCookies);
-#endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING) && BUILDFLAG(IS_WIN)
-
 NET_EXPORT BASE_DECLARE_FEATURE(kThirdPartyStoragePartitioning);
 
 // Whether to enable the use of 3PC based on 3PCD metadata grants delivered via
