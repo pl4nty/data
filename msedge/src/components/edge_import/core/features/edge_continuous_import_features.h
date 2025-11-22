@@ -110,14 +110,39 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kNewlyConsentedCIUser);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCookieImportStartedWritingToDB);
+
+// Trigger fired when cookie import is triggered in manual, CI, or one-time
+// import.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCookieImportStarted);
+
+// Trigger fired when cookies are decrypted and ready to merge into database.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCookieImportBeforeMergingToDB);
+
+// Trigger fired when cookies are discovered for import.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kDiscoveredCookiesForImport);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kNewCIUserAndHighConfidenceChromePbUser);
+
+// Trigger fired when password import is triggered in manual, CI, or one-time
+// import.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kPasswordsImportStarted);
+
+// Trigger fired when passwords are discovered for import.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kDiscoveredPasswordsForImport);
+
+// Trigger fired when payment import is triggered in manual, CI, or one-time
+// import.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kPaymentsImportStarted);
+
+// Trigger fired when payments are discovered for import.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kDiscoveredPaymentsForImport);
 
 // Flag to stop import for cookies to test user impact for reverse Experiment.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -425,11 +450,25 @@ BASE_DECLARE_FEATURE(kEnableCIFromAnaheim);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 bool IsCIFromAnaheimEnabled();
 
+// Flag to enable encryption of all imported data (passwords, cookies, and
+// payments) with Aster app-bound keys in edge.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kEncryptPasswordsWithAsterAppBoundProvider);
+BASE_DECLARE_FEATURE(kEdgeEncryptImportedDataWithAsterKey);
 
+// Kill switch to disable Aster key encryption of imported passwords.
+// Requires kEdgeEncryptImportedDataWithAsterKey to be enabled.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kEncryptPaymentsWithAsterAppBoundProvider);
+BASE_DECLARE_FEATURE(kEncryptPasswordsWithAsterKey);
+
+// Kill switch to disable Aster key encryption of imported payments.
+// Requires kEdgeEncryptImportedDataWithAsterKey to be enabled.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEncryptPaymentsWithAsterKey);
+
+// Kill switch to disable Aster key encryption of imported cookies.
+// Requires kEdgeEncryptImportedDataWithAsterKey to be enabled.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEncryptCookiesWithAsterKey);
 
 }  // namespace edge_continuous_import
 }  // namespace features
