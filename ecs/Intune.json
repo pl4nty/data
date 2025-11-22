@@ -328,6 +328,7 @@
     },
     "SVC_IWService": {
         "FlightingV2": {
+            "DisableLegacyAadIdPatch": true,
             "DisableLegacyAadIdPatchForIOS": true,
             "DisableLegacyAadIdPatchForMac": true,
             "DisableLegacyAppTargeting": true,
