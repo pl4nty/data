@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251120.1.0",
+        "CalendarCompanionDFVersion": "1.20251122.5.0",
         "CalendarCompanionMsitVersion": "1.20251115.2.0",
         "CalendarCompanionProdVersion": "1.20251109.1.0",
         "CompanionRing": "Prod",
@@ -330,7 +330,30 @@
         "features.useNovaForCalendar": 0,
         "features.useNovaForSuggestions": 0,
         "hostFeatureFlags_shared": 0,
-        "offlineState_shared": 0
+        "offlineState_shared": 0,
+        "samplingConfig": {
+            "Event": {
+                "defaultRate": 100,
+                "rules": [
+                    {
+                        "name": "SuspensionTaskLifeCycleEvent",
+                        "rate": 5
+                    }
+                ]
+            },
+            "Impression": {
+                "defaultRate": 100,
+                "rules": []
+            },
+            "Performance": {
+                "defaultRate": 100,
+                "rules": []
+            },
+            "UserAction": {
+                "defaultRate": 100,
+                "rules": []
+            }
+        }
     },
     "ECS": {
         "ConfigLogTarget": "default"
@@ -1885,7 +1908,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251120.1.0",
+        "PeopleInTaskbarDFVersion": "1.20251122.6.0",
         "PeopleInTaskbarMsitVersion": "1.20251115.2.0",
         "PeopleInTaskbarProdVersion": "1.20251110.4.0",
         "campaignSchedules": {
