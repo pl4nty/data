@@ -489,8 +489,9 @@
         "name": "AzureIdentityDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.18.0-beta.1",
+        "version": "1.18.0-beta.2",
         "versions": [
+            "1.18.0-beta.2",
             "1.18.0-beta.1",
             "1.17.0",
             "1.16.0",
@@ -1036,8 +1037,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.8.0",
+        "version": "2.8.1",
         "versions": [
+            "2.8.1",
             "2.8.0",
             "2.7.2",
             "2.6.1",

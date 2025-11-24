@@ -140,6 +140,7 @@
         "EdpMigrationToNewSubSlow_healthmonitor": true,
         "EdpMigrationToNewSubSlow_ids": true,
         "EdpMigrationToNewSubSlow_image": true,
+        "EdpMigrationToNewSubSlow_meter": true,
         "EdpMigrationToNewSubSlow_net": true,
         "EdpMigrationToNewSubSlow_policy": true,
         "EdpMigrationToNewSubSlow_prov": true,
