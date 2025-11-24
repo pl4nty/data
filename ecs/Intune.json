@@ -209,8 +209,10 @@
             "EnableCredentialProviderForAuthenticator": true,
             "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
+            "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
             "EnablePrsv3ForAosp": true,
+            "EnableRequestEnterpriseUpgradeUrl": true,
             "EnableWpDeviceTypeUpdate": true
         }
     },

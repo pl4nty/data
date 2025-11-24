@@ -437,7 +437,6 @@
                 "id": "usernamehw.errorlens"
             }
         },
-        "PhraseApp.PhraseApp": true,
         "Pixelfear.composer-links": {
             "disallowInstall": true,
             "extension": {
@@ -620,13 +619,6 @@
             }
         },
         "VisualStudioExptTeam.vscodeintellicode-insiders": true,
-        "Vms-dotnettools.vscodeintellicode-csharp": {
-            "disallowInstall": true,
-            "extension": {
-                "displayName": "GitHub Copilot Chat",
-                "id": "github.copilot-chat"
-            }
-        },
         "Vue.vscode-typescript-vue-plugin": {
             "disallowInstall": true,
             "extension": {
@@ -665,6 +657,7 @@
         },
         "aaronpowell.vscode-profile-switcher": true,
         "abusaidm.html-snippets": true,
+        "actionforge.actionforge": true,
         "activecove.osmosis": {
             "disallowInstall": true,
             "extension": {
@@ -849,6 +842,7 @@
                 "id": "WSO2.ballerina"
             }
         },
+        "barbapapazes.utils-ai-vscode": true,
         "barretren.markdown-paste-file": true,
         "benjamin-thomas.roc-lang-support": {
             "disallowInstall": true,
@@ -1550,6 +1544,13 @@
             }
         },
         "ms-devlabs.extension-manifest-editor": true,
+        "ms-dotnettools.vscodeintellicode-csharp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot Chat",
+                "id": "github.copilot-chat"
+            }
+        },
         "ms-iot.vscode-ros": {
             "disallowInstall": true,
             "extension": {
