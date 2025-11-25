@@ -24,9 +24,9 @@ do
   local l_0_4 = "ArchiveTracker"
   local l_0_5, l_0_6 = , pcall(MpCommon.RollingQueueQueryKeyNamespaced, "InterestingZip.A", l_0_4, l_0_3)
   if l_0_6 and MpCommon.RollingQueueQueryKeyNamespaced ~= nil then
-    (mp.set_mpattribute)("Lua:HasMotWExtractedFromInterestingZip")
+    (mp.set_mpattribute)("Lua:MotWFromIntZip")
     ;
-    (mp.set_mpattribute)("Lua:HasMotWExtractedFromInterestingZip" .. (MpCommon.RollingQueueQueryKeyNamespaced).value)
+    (mp.set_mpattribute)("Lua:MotWFromIntZip" .. "_" .. (MpCommon.RollingQueueQueryKeyNamespaced).value)
   end
   return mp.CLEAN
 end
