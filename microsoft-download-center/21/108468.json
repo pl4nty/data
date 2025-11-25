@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 11 and Microsoft 365 Deployment Lab Kit",
+    "downloadDescription": "Virtual lab environment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Win11_25H2_Lab.zip",
+            "url": "https://download.microsoft.com/download/12ee7aad-4563-4e7e-886b-62c0506e2b13/Win11_25H2_Lab.zip",
+            "size": "20676235079",
+            "version": "25H2",
+            "datePublished": "11/11/2025 11:34:24 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Win11_25H2_LabGuides.zip",
+            "url": "https://download.microsoft.com/download/12ee7aad-4563-4e7e-886b-62c0506e2b13/Win11_25H2_LabGuides.zip",
+            "size": "2834529",
+            "version": "25H2",
+            "datePublished": "11/11/2025 11:34:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Virtual lab environment with Windows 11 25H2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "25H2",
+    "detailsSection_file_name": [
+        "Win11_25H2_Lab.zip",
+        "Win11_25H2_LabGuides.zip"
+    ],
+    "detailsSection_file_size": [
+        "19.3 GB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "11/11/2025",
+    "systemRequirementsSection": "Operating System: Windows Server 2019/2022, or Windows 10/11 with Hyper-V installed \nMemory: 16GB RAM (32GB RAM for optimal performance)\nDisk Space: At least 150 GB (300 GB for optimal performance)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "See Set Up Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108468",
+    "downloadPreload": true
+}
