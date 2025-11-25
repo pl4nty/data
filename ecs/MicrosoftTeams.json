@@ -1801,6 +1801,7 @@
             "EnableSendMessageToCallParticipant": true,
             "EnableSkipVerbalization": true,
             "EnableStripUserQueryInClientMessage": true,
+            "EnableTaskManagementOpenNotes": true,
             "EnableTranscriptIngestionToTCA": true,
             "EnableUsingBotNameFromContext": true,
             "ShouldFallbackToGcbIfRTAFNotAvailable": true,
