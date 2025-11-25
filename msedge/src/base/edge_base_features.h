@@ -111,6 +111,19 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kMitigateAttachedInputSpinBySleeping);
 #if BUILDFLAG(IS_ANDROID)
 // If enabled, reduces thread stack size on Android to save memory
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeEnabledSmallerThreadStackSize);
+
+// If enabled, partial low-end mode is enabled on Android for specific scopes
+BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeLowEndMemoryExperimentPartial);
+
+BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(std::string,
+                                       kEdgeLowEndMemoryExperimentScope);
+
+// Parameter name and values for kEdgeLowEndMemoryExperimentPartial
+BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentParamName[];
+BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeJavaWithZygote[];
+BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeInProcessZygote[];
+BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeNativeWithGpu[];
+BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeInProcessGpu[];
 #endif  // BUILDFLAG(IS_ANDROID)
 
 }  // namespace features
