@@ -432,7 +432,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20251107.6.1",
+        "LpcVersion": "1.20251117.2.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1250,7 +1250,7 @@
         "MePeoplePrompts": {
             "Prompts": [
                 {
-                    "CommandText": "Summarize most recent communications(emails, chats, files, meetings) and actions items in the last 28 days - organized by topics in <400 words , each topic providing a brief summary and list of action items , including type of communication and when it happened (e.g., \u201cEmail - Today 9:15 AM\u201d) -  from <entity type='person'>person</entity>",
+                    "CommandText": "Summarize most recent communications (emails, chats, files, meetings) and actions items in the last 28 days - organized by topics in <400 words, each topic providing a brief summary and list of action items, including type of communication and when it happened (e.g., \u201cEmail - Today 9:15 AM\u201d) - from <entity type='person'>person</entity>",
                     "DisplayText": "What is the latest from <entity type=\"placeholder\">person</entity>",
                     "PillText": "What is the latest from",
                     "QueryAnnotations": [
@@ -1286,7 +1286,7 @@
                     "SourceTypeId": "MePeoplePromptHowIsTeamDistributed"
                 },
                 {
-                    "CommandText": "In concise and organized language under 400 words include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes; and 3-5 agenda topics  by looking at most recent shared chats, emails, files and meetings within the last 28 day to help me prepare for my next meeting with <entity type='person'>person</entity>",
+                    "CommandText": "In concise and organized language under 400 words include meeting info; executive summary in 1-2 sentences; highlight open action items, follow ups, risks or changes; and 3-5 agenda topics by looking at most recent shared chats, emails, files and meetings within the last 28 day to help me prepare for my next meeting with <entity type='person'>person</entity>",
                     "DisplayText": "Help me prepare for my next meeting with <entity type=\"placeholder\">person</entity>",
                     "PillText": "Help me prepare for meeting with person",
                     "QueryAnnotations": [
@@ -1313,7 +1313,7 @@
                     "SourceTypeId": "MePeoplePromptDirectReportsCount"
                 },
                 {
-                    "CommandText": "Summarize due action items or tasks (including a brief description, priority, and source link \u2014 e.g., email, chat, file, or meeting \u2014 separated into tasks I owe the person and tasks the person owes me, and ordered by priority in a tabular format) from emails, chats, files, and meetings in the last 14 days **only** between me and <entity type='person'>person</entity>",
+                    "CommandText": "Summarize due action items or tasks (including a brief description, priority, and source link \u2014 e.g. email, chat, file, or meeting \u2014 separated into tasks I owe the person and tasks the person owes me, and ordered by priority in a tabular format) from emails, chats, files, and meetings in the last 14 days **only** between me and <entity type='person'>person</entity>",
                     "DisplayText": "Show me follow-up tasks with <entity type=\"placeholder\">person</entity>",
                     "PillText": "Show me follow-up tasks",
                     "QueryAnnotations": [],

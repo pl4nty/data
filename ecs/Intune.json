@@ -494,6 +494,7 @@
             "AllowOOBEUpdatesUX": true,
             "EnableAllowOOBEUpdatesUX": true,
             "EnableETGFailuresReportUX": true,
+            "EnableUpgradeButton": true,
             "EnableWin32CatalogAppsForDpp": true,
             "EnableWin32CatalogAppsForEsp": true,
             "EnableWindowsRestore": true,
