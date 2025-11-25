@@ -631,6 +631,7 @@
         "EnableTenantCleanUp": true,
         "EnableTenantESUServicePlanSync": true,
         "EnableTenantOnboardValidateTenantActualStatus": true,
+        "EnableThreeTierFeatureFixEuropeanUnion": true,
         "EnableThrowExceptionInsteadOfReturn": true,
         "EnableToggleSessionHostsAllowConnect": true,
         "EnableTriggerNetworkCreationForHotFix": true,
