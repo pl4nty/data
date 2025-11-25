@@ -204,10 +204,13 @@
         "azureml://registries/azure-openai/models/gpt-5-mini",
         "azureml://registries/azure-openai/models/gpt-5-nano",
         "azureml://registries/azure-openai/models/gpt-5-chat",
+        "azureml://registries/azure-openai/models/gpt-5-codex",
         "azureml://registries/azure-openai/models/gpt-5-pro",
         "azureml://registries/azure-openai/models/gpt-5-reasoning-alpha",
         "azureml://registries/azure-openai/models/gpt-5.1",
         "azureml://registries/azure-openai/models/gpt-5.1-chat",
+        "azureml://registries/azure-openai/models/gpt-5.1-codex",
+        "azureml://registries/azure-openai/models/gpt-5.1-codex-mini",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -230,7 +233,8 @@
         "azureml://registries/azureml-openai-oss/models/gpt-oss-120b",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
-        "azureml://registries/azureml-anthropic/models/claude-opus-4-1"
+        "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
+        "azureml://registries/azureml-anthropic/models/claude-opus-4-5"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",

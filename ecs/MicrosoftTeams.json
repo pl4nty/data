@@ -1822,6 +1822,7 @@
             "EnableGetAppIdFromTurnContext": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableParallelMembersRetrieval": true,
+            "EnableRefetchPBPFlow": true,
             "EnableShowTypingMiddleware": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
             "EnableWelcomeMessageFromInstallationUpdate": true,
