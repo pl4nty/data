@@ -361,6 +361,8 @@
         "FlightingV2": {
             "DisableMonotonicClock": true,
             "EnableAISettings": true,
+            "EnableBypassStatefulForAll": true,
+            "EnableBypassStatefulForMAMAppInst": true,
             "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
             "RequireDeviceAADJ": true,
