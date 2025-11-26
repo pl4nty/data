@@ -6,8 +6,7 @@
 #define COMPONENTS_EDGE_DLP_MOJOM_LLM_PAYLOAD_MONITOR_TYPES_H_
 
 #include "base/containers/flat_map.h"
-
-class GURL;
+#include "url/gurl.h"
 
 namespace dlp {
 
@@ -28,8 +27,24 @@ struct LLMPayloadMonitorSitePolicy {
   LLMPayloadMonitorConfig response_config = LLMPayloadMonitorConfig::kNone;
 };
 
-using LLMPayloadMonitorPolicies =
-    base::flat_map<GURL, dlp::LLMPayloadMonitorSitePolicy>;
+struct LLMPayloadMonitorPolicies {
+  struct DomainPolicyParts {
+    std::string domain;
+    LLMPayloadMonitorSitePolicy policy;
+  };
+
+  base::flat_map<GURL, dlp::LLMPayloadMonitorSitePolicy> exact_urls;
+  std::vector<DomainPolicyParts> domains;
+
+ public:
+  LLMPayloadMonitorPolicies();
+  LLMPayloadMonitorPolicies(const LLMPayloadMonitorPolicies& copy);
+  ~LLMPayloadMonitorPolicies();
+
+  bool IsRiskyUser(const GURL& url) const;
+  bool IsEmpty() const;
+  LLMPayloadMonitorSitePolicy GetSitePolicy(const GURL& sanitized_url) const;
+};
 
 }  // namespace dlp
 
