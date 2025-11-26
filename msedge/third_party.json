@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14791120,
+    "size": 14791243,
     "file_count": 843
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32612035,
-    "file_count": 3994
+    "size": 32577318,
+    "file_count": 3986
   },
   {
     "name": "boringssl",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43216567,
-    "file_count": 3186
+    "size": 43324372,
+    "file_count": 3194
   },
   {
     "name": "googletest",
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12321754,
+    "size": 12314199,
     "file_count": 1766
   },
   {
@@ -491,7 +491,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18755563,
+    "size": 18759147,
     "file_count": 19
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3949494,
+    "size": 3957133,
     "file_count": 582
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3543079,
+    "size": 3543676,
     "file_count": 1184
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6760647,
-    "file_count": 179
+    "size": 6870753,
+    "file_count": 182
   },
   {
     "name": "vulkan_memory_allocator",

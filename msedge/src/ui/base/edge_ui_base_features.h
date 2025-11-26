@@ -44,6 +44,12 @@ bool IsWebCaptureEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsCaptureSelectionInPDFEnabled();
 
+// If enabled, excludes sidebar search features in PWA contexts.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kExcludeSidebarSearchInPwa);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsExcludeSidebarSearchInPwaEnabled();
+
 // If enabled, Edge shortcuts are given an App id that is different from that
 // used by Chrome, to prevent an Edge shortcut from being hidden in the Start
 // Menu if a Chrome shortcut for the same page already exists.
