@@ -358,7 +358,7 @@
         "EnableFrontendServiceSupportListRetention": true,
         "EnableFrontlineAllotmentName": true,
         "EnableFrontlineAllotmentNameUX": true,
-        "EnableFrontlineDedicatedRetryResize": false,
+        "EnableFrontlineDedicatedRetryResize": true,
         "EnableFrontlineLicenseCardInReports": true,
         "EnableFrontlineLicensePreviewTag": true,
         "EnableFrontlineLicenseValidation": true,

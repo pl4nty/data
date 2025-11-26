@@ -429,6 +429,7 @@
         "EnableCommonProxySSRFAndDisposeFixes": true,
         "EnableConfigTenantProvisioningPace": true,
         "EnableConfigTenantProvisioningPaceV2": true,
+        "EnableConfigurationReportParameterChange": true,
         "EnableConnectivityAutoRemediation": true,
         "EnableConnectivityDiagnosticOptimizationByReboot": true,
         "EnableConnectivityStatus": true,
