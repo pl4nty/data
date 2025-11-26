@@ -1096,7 +1096,8 @@
             "MeCardAboutMeWithData_AcceptedDataQuery",
             "MeCardAboutMeWithData_UnacceptedDataQuery",
             "YouCardAboutMeWithData_DataQuery",
-            "AcceptAiGeneratedAboutMeMutation"
+            "AcceptAiGeneratedAboutMeMutation",
+            "ConversationsHistoryQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
