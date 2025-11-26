@@ -350,6 +350,7 @@
         "EnableFleetTenantFairness": true,
         "EnableFlexWindowsUpdateCOGSV2": true,
         "EnableFlsRestartActionProcessorV2": true,
+        "EnableFlsRestartV3": true,
         "EnableFlsResumeCollectionButton": true,
         "EnableFluUpdateAllotmentName": true,
         "EnableForceHiDpiOptimizationCustomRdpProperty": true,

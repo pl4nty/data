@@ -866,6 +866,7 @@
         "EnableTriggerNetworkCreationForHotFix": true,
         "EnableTroubleshootingReport": true,
         "EnableTroubleshootingUpdateFullScanResult": true,
+        "EnableTrueNonPersistenceReset": true,
         "EnableUPLAHandling": true,
         "EnableUPNForFrontlineCurrentConnectQuery": true,
         "EnableUXCloudPcTroubleshootReport": true,
