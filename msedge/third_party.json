@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2176190,
+    "size": 2177053,
     "file_count": 183
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 14791110,
+    "size": 14791120,
     "file_count": 843
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32627945,
-    "file_count": 3995
+    "size": 32612035,
+    "file_count": 3994
   },
   {
     "name": "boringssl",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43149225,
-    "file_count": 3172
+    "size": 43216567,
+    "file_count": 3186
   },
   {
     "name": "googletest",
@@ -476,7 +476,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 293363,
+    "size": 293568,
     "file_count": 47
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "openscreen",
-    "size": 1745002,
-    "file_count": 535
+    "size": 1741767,
+    "file_count": 528
   },
   {
     "name": "openxr",
@@ -576,8 +576,8 @@
   },
   {
     "name": "perfetto",
-    "size": 3953961,
-    "file_count": 583
+    "size": 3949494,
+    "file_count": 582
   },
   {
     "name": "perl",
@@ -751,8 +751,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6647237,
-    "file_count": 177
+    "size": 6760647,
+    "file_count": 179
   },
   {
     "name": "vulkan_memory_allocator",
