@@ -885,7 +885,7 @@
         "EnableUserLicenseAssignmentView": true,
         "EnableUserPreviewInUX": true,
         "EnableUserServiceNewGraphGetUserWithBatch": true,
-        "EnableUserSettingCheckForRelocation": false,
+        "EnableUserSettingCheckForRelocation": true,
         "EnableUserSettingsPersistenceGraphPermission": true,
         "EnableUsingGalleryImagePreviewVersion": true,
         "EnableUtilizationR90": true,
