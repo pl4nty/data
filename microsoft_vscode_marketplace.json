@@ -354,6 +354,7 @@
         "MS-CEINTL.vscode-language-pack-ps": true,
         "MS-CEINTL.vscode-language-pack-uk": true,
         "MSFTLearnTogether.learn-together-color-theme": true,
+        "MaxGripe.vscode-create-polyglot": true,
         "Meowcolm024.has-go": {
             "disallowInstall": true,
             "extension": {
@@ -442,6 +443,13 @@
             "extension": {
                 "displayName": "Composer",
                 "id": "DEVSENSE.composer-php-vscode"
+            }
+        },
+        "Qualyyy.folder-template-generator": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Custom Template Generator",
+                "id": "Qualyyy.vscode-custom-template-generator"
             }
         },
         "RedVanWorkshop.explorer-exclude-vscode-extension": {
@@ -1512,6 +1520,13 @@
             }
         },
         "moalamri.inline-fold": true,
+        "modular-mojotools.vscode-mojo-nightly": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Mojo \ud83d\udd25",
+                "id": "modular-mojotools.vscode-mojo"
+            }
+        },
         "mohitsingh.markdoc": {
             "disallowInstall": true,
             "extension": {
@@ -1641,6 +1656,7 @@
                 "id": "fregante.ghost-text"
             }
         },
+        "nickfode.latex-formatter": true,
         "nikitaKunevich.snippet-creator": true,
         "ninoseki.vscode-gem-lens": {
             "disallowInstall": true,
@@ -2416,7 +2432,7 @@
         },
         {
             "preferredResults": [
-                "github.copilot"
+                "github.copilot-chat"
             ],
             "query": "ai"
         },
@@ -2505,6 +2521,12 @@
                 "openai.chatgpt"
             ],
             "query": "codex"
+        },
+        {
+            "preferredResults": [
+                "github.copilot-chat"
+            ],
+            "query": "copilot"
         }
     ]
 }
