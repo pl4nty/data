@@ -989,7 +989,7 @@
         "EnableUserPreviewInUX": true,
         "EnableUserServiceNewGetUserLoginInfoAPI": true,
         "EnableUserServiceNewGraphGetUserWithBatch": true,
-        "EnableUserSettingCheckForRelocation": false,
+        "EnableUserSettingCheckForRelocation": true,
         "EnableUserSettingsPersistenceGraphPermission": true,
         "EnableUsingGalleryImagePreviewVersion": true,
         "EnableUsingPolicyBatchGetAppliedPolicies": true,
