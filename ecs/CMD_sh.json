@@ -1271,6 +1271,7 @@
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,
         "WCX_SelfHelp_VSBAdmin_InAppUX": true,
+        "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
             "GUI": {
