@@ -45,8 +45,75 @@ message SignalStream {
 }
 
 message IfStream {
-  string condition = 1;
+  reserved 1;  // Was: string condition (deprecated in favor of
+               // condition_expression)
   optional string template_name = 2;
+  ExpressionNode condition_expression = 3;
+}
+
+enum LogicalOperator {
+  LOGICAL_OPERATOR_UNSPECIFIED = 0;
+  LOGICAL_OPERATOR_AND = 1;
+  LOGICAL_OPERATOR_OR = 2;
+}
+
+// Comparison operators (==, !=, <, >, <=, >=) - compare actual values
+enum ComparisonOperator {
+  COMPARISON_OPERATOR_UNSPECIFIED = 0;
+  COMPARISON_OPERATOR_EQ = 1;
+  COMPARISON_OPERATOR_NE = 2;
+  COMPARISON_OPERATOR_GT = 3;
+  COMPARISON_OPERATOR_GE = 4;
+  COMPARISON_OPERATOR_LT = 5;
+  COMPARISON_OPERATOR_LE = 6;
+}
+
+enum UnaryOperator {
+  UNARY_OPERATOR_UNSPECIFIED = 0;
+  UNARY_OPERATOR_NOT = 1;
+}
+
+message ExpressionNode {
+  oneof node {
+    IdentifierNode identifier = 1;
+    LiteralNode literal = 2;
+    BinaryNode binary = 3;
+    UnaryNode unary = 4;
+    IdentifierNodeWithLength identifier_with_length = 5;
+  }
+}
+
+message IdentifierNode {
+  // e.g., ["appearance"], ["foo", "bar"]
+  repeated string path = 1;
+}
+
+message IdentifierNodeWithLength {
+  // Special node for IdentifierNode, but has implicit `length` at the end.
+  // eg. 'foo.bar.length' would be ["foo", "bar"]
+  repeated string path = 1;
+}
+
+message LiteralNode {
+  oneof value {
+    string string_value = 1;
+    double number_value = 2;
+    bool bool_value = 3;
+  }
+}
+
+message BinaryNode {
+  oneof operator_type {
+    LogicalOperator logical_operator = 1;
+    ComparisonOperator comparison_operator = 2;
+  }
+  ExpressionNode left = 4;
+  ExpressionNode right = 5;
+}
+
+message UnaryNode {
+  UnaryOperator operator = 1;
+  ExpressionNode operand = 2;
 }
 
 message AttributeStream {
