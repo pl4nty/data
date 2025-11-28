@@ -267,7 +267,6 @@
         "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
         "EnableBackFillCmdAgent": true,
-        "EnableBackFillForInterestedUserRegister": true,
         "EnableBackfillGroupDisplayName": true,
         "EnableBatchApplyTagsForNewDevices": true,
         "EnableBatchOperateDevice": true,

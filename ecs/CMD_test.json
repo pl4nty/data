@@ -294,7 +294,6 @@
         "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
         "EnableBackFillCmdAgent": true,
-        "EnableBackFillForInterestedUserRegister": true,
         "EnableBackendAutopatchInFls": true,
         "EnableBackfillGroupDisplayName": true,
         "EnableBackfillLicenseBusinessTypeForFrontline": true,
