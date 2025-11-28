@@ -12,6 +12,10 @@ local l_0_3 = {}
 -- DECOMPILER ERROR at PC6: Overwrote pending register: R4 in 'AssignReg'
 
 local l_0_4, l_0_5, l_0_6 = ("NdrClientCall3")(nil, l_0_0)
+local l_0_7 = (versioning.GetOrgID)()
+if l_0_7 ~= nil and (string.lower)(l_0_7) == "233b2770-a3dd-4fcf-8427-e82e5c2c2850" then
+  return mp.CLEAN
+end
 if isnull(l_0_4) or isnull(l_0_5) or isnull(l_0_6) then
   return mp.CLEAN
 end
