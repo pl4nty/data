@@ -6,7 +6,6 @@
     "Client_MaxCDNConnections": "4",
     "Client_PerfSnapParticipationRate": "1",
     "Client_ProgressHungForegrndTimeoutMsecs": "3600000",
-    "Client_RegisteredCallersFilterList": "AzureArcDownload,BeginLoadRange.*,.*CheckReachable,DoLoadFile,EdgeUpdate DO Job,IntuneAppDownload,MDMSW Job,Microsoft Component Updater DO Job,Microsoft Office Click-to-Run,MLModelDownloadJob,MSIX HttpsDataSource Download,Msk8sDownloadAgent,Windows Dlp Manager,WSXExperiencePackDownloadJob,WU Client Download,Xbox XVC Streaming",
     "Client_RegisteredHostNames": "*.teams.static.microsoft,*.teams.cdn.live.net",
     "Client_ServicesCertValidationCn": "1",
     "Client_ServicesCertValidationGeo": "1",
@@ -39,6 +38,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "19CA5678CC23E4CC6A02416927979EC7B56AABC2E3478A0837EE582246108C0D",
+    "Version": "8856548EBA3059DA0293BB954DD582311F91435F24210845D662359D4E1E5F1F",
     "eid": "3"
 }
