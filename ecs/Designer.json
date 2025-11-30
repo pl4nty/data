@@ -32,5 +32,8 @@
         "App.ToolbarAnimation": true,
         "App.TotalEventThrottle": 1000,
         "App.UploadPanel": true
+    },
+    "ECS": {
+        "ConfigLogTarget": "designer_default"
     }
 }
