@@ -28,31 +28,9 @@
                 }
             ]
         },
-        "FalconTextTranslationEndpointExperiment": {
-            "enableFeatures": [
-                "msTranslateServerSideScriptExperiment"
-            ],
-            "parameters": [
-                {
-                    "name": "script_type",
-                    "value": "5"
-                }
-            ]
-        },
         "FeatureFlagRefactorExperiment": {
             "enableFeatures": [
                 "msNurturingFeatureFlagRefactor"
-            ]
-        },
-        "InMemoryCachingExperimentClientFlag": {
-            "enableFeatures": [
-                "msTranslateScriptExperiment"
-            ],
-            "parameters": [
-                {
-                    "name": "script_type",
-                    "value": "5"
-                }
             ]
         },
         "SecureNetworkGA": {
