@@ -41,8 +41,8 @@
   },
   {
     "name": "angle",
-    "size": 14791333,
-    "file_count": 843
+    "size": 15121660,
+    "file_count": 844
   },
   {
     "name": "anonymous_tokens",
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32572412,
+    "size": 32574629,
     "file_count": 3985
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17280200,
-    "file_count": 2040
+    "size": 17325672,
+    "file_count": 2045
   },
   {
     "name": "entity_extraction",
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12314478,
+    "size": 12315750,
     "file_count": 1764
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 30874,
+    "size": 30910,
     "file_count": 16
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3543676,
+    "size": 3543957,
     "file_count": 1184
   },
   {
@@ -711,8 +711,8 @@
   },
   {
     "name": "tflite",
-    "size": 1691698,
-    "file_count": 505
+    "size": 1695451,
+    "file_count": 506
   },
   {
     "name": "tflite_support",
@@ -746,12 +746,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2511190,
+    "size": 2513159,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6870753,
+    "size": 6873262,
     "file_count": 182
   },
   {
@@ -781,7 +781,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29493478,
+    "size": 29566687,
     "file_count": 626
   },
   {
