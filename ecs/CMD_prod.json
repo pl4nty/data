@@ -470,6 +470,7 @@
         "EnableNotificatePartnerStatusChange": true,
         "EnableNsgNotification": true,
         "EnableOMSAPIInvalidParameterCatch": true,
+        "EnableOPNCStatusForwarderDataStream": true,
         "EnableOaiInRAS": true,
         "EnableOmnissaWorkspaceURL": true,
         "EnableOnFailureDeviceAccessDeniedInAutopilot": true,
