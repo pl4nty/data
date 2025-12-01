@@ -669,7 +669,7 @@
         "EnableWIN1124H2_250607": true,
         "EnableWIN1124H2_250810": true,
         "EnableWaitingForPostProvisioningPluginEvent": true,
-        "EnableWarmPoolNonBillableDevice": false,
+        "EnableWarmPoolNonBillableDevice": true,
         "EnableWdsPostProvisionError": true,
         "EnableWindows365BuiltInRoleInAnc": true,
         "EnableWindows365BuiltInRoleInCanary": true,
