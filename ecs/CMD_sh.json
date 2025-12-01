@@ -1028,6 +1028,7 @@
         "IsEnableAutoCleanForceDeleteVM": true,
         "IsEnableAutoCleanOrphanResources": true,
         "IsEnableCacheIntunePlatformRestricition": true,
+        "IsEnableCapacityServiceApiV2": true,
         "IsEnableConditionalDeletionOnDeployVMRetry": true,
         "IsEnableEndpointHealthCheck": true,
         "IsEnableFPAResourceGroupPermissionHealthCheck": true,
