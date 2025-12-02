@@ -10,10 +10,25 @@ if (this_sigattrlog[4]).matched then
   if not l_0_0 or #l_0_0 < 5 then
     return mp.CLEAN
   end
-  local l_0_1 = {}
-  local l_0_2, l_0_3 = pcall(mp.GetExecutablesFromCommandLine, l_0_0)
+  local l_0_1 = contains
+  local l_0_2 = l_0_0
+  local l_0_3 = {}
+  -- DECOMPILER ERROR at PC20: No list found for R3 , SetList fails
+
+  -- DECOMPILER ERROR at PC24: Overwrote pending register: R1 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R1 in 'AssignReg'
+
+  if l_0_1 then
+    return l_0_1
+  end
+  -- DECOMPILER ERROR at PC30: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC31: Overwrote pending register: R4 in 'AssignReg'
+
+  l_0_2 = l_0_2(l_0_3, "osdsetuphook")
   if l_0_2 and l_0_3 then
-    for l_0_7,l_0_8 in ipairs(l_0_3) do
+    for l_0_7,l_0_8 in ipairs(R5_PC39) do
       local l_0_9 = {}
       l_0_9.path = l_0_8
       l_0_8 = (mp.ContextualExpandEnvironmentVariables)(l_0_8)
@@ -28,58 +43,58 @@ if (this_sigattrlog[4]).matched then
           local l_0_14 = contains
           local l_0_15 = l_0_13
           local l_0_16 = {}
-          -- DECOMPILER ERROR at PC67: No list found for R16 , SetList fails
+          -- DECOMPILER ERROR at PC78: No list found for R16 , SetList fails
 
-          -- DECOMPILER ERROR at PC71: Overwrote pending register: R14 in 'AssignReg'
+          -- DECOMPILER ERROR at PC82: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC72: Overwrote pending register: R14 in 'AssignReg'
+          -- DECOMPILER ERROR at PC83: Overwrote pending register: R14 in 'AssignReg'
 
           if l_0_14 then
             return l_0_14
           end
-          -- DECOMPILER ERROR at PC76: Overwrote pending register: R14 in 'AssignReg'
+          -- DECOMPILER ERROR at PC87: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC77: Overwrote pending register: R14 in 'AssignReg'
+          -- DECOMPILER ERROR at PC88: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC83: Overwrote pending register: R14 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC84: Overwrote pending register: R14 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC85: Overwrote pending register: R15 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC89: Overwrote pending register: R14 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC90: Overwrote pending register: R14 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC91: Overwrote pending register: R15 in 'AssignReg'
+          -- DECOMPILER ERROR at PC94: Overwrote pending register: R14 in 'AssignReg'
 
           -- DECOMPILER ERROR at PC95: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC96: Overwrote pending register: R14 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC97: Overwrote pending register: R15 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC99: Overwrote pending register: R15 in 'AssignReg'
+          -- DECOMPILER ERROR at PC96: Overwrote pending register: R15 in 'AssignReg'
 
           -- DECOMPILER ERROR at PC100: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC101: Overwrote pending register: R15 in 'AssignReg'
+          -- DECOMPILER ERROR at PC101: Overwrote pending register: R14 in 'AssignReg'
 
           -- DECOMPILER ERROR at PC102: Overwrote pending register: R15 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC106: Overwrote pending register: R16 in 'AssignReg'
+          -- DECOMPILER ERROR at PC106: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC107: Overwrote pending register: R16 in 'AssignReg'
+          -- DECOMPILER ERROR at PC107: Overwrote pending register: R14 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC108: Overwrote pending register: R17 in 'AssignReg'
+          -- DECOMPILER ERROR at PC108: Overwrote pending register: R15 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC109: Overwrote pending register: R18 in 'AssignReg'
+          -- DECOMPILER ERROR at PC110: Overwrote pending register: R15 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC111: Overwrote pending register: R14 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC112: Overwrote pending register: R15 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC113: Overwrote pending register: R15 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC117: Overwrote pending register: R16 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC118: Overwrote pending register: R16 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC119: Overwrote pending register: R17 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC120: Overwrote pending register: R18 in 'AssignReg'
 
           if l_0_13 and l_0_14 and l_0_14 then
             l_0_16("C:\\Windows\\", "C:\\Program Files")
-            -- DECOMPILER ERROR at PC111: Overwrote pending register: R16 in 'AssignReg'
+            -- DECOMPILER ERROR at PC122: Overwrote pending register: R16 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC112: Overwrote pending register: R16 in 'AssignReg'
+            -- DECOMPILER ERROR at PC123: Overwrote pending register: R16 in 'AssignReg'
 
             l_0_16(l_0_13)
           end
@@ -92,7 +107,9 @@ if (this_sigattrlog[4]).matched then
       if next(l_0_1) then
         (bm.add_related_string)("UntrustedEntities", safeJsonSerialize(l_0_1), bm.RelatedStringBMReport)
       end
-      return mp.INFECTED
+      -- DECOMPILER ERROR at PC142: Overwrote pending register: R1 in 'AssignReg'
+
+      return l_0_1.INFECTED
     end
   end
 end
