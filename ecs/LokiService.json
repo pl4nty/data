@@ -163,7 +163,7 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251129.3.0",
-        "CalendarCompanionMsitVersion": "1.20251122.5.1",
+        "CalendarCompanionMsitVersion": "1.20251127.4.0",
         "CalendarCompanionProdVersion": "1.20251115.2.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -353,7 +353,8 @@
                 "defaultRate": 100,
                 "rules": []
             }
-        }
+        },
+        "simplifyTitleBar_shared_variant": "feedbackButton"
     },
     "ECS": {
         "ConfigLogTarget": "default"
@@ -759,7 +760,6 @@
         "EnableCopilotLicenseCheck": true,
         "EnableCosmicTmRouting": false,
         "EnableCustomDnsResolution": true,
-        "EnableDedicatedSubstrateResourceUri": true,
         "EnableDummyInsights": false,
         "EnableEventCategoryColors": true,
         "EnableExtendedRelationships": true,
@@ -1910,7 +1910,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251129.3.0",
+        "PeopleInTaskbarDFVersion": "1.20251201.2.0",
         "PeopleInTaskbarMsitVersion": "1.20251122.6.0",
         "PeopleInTaskbarProdVersion": "1.20251115.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
