@@ -234,7 +234,8 @@
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
-        "azureml://registries/azureml-anthropic/models/claude-opus-4-5"
+        "azureml://registries/azureml-anthropic/models/claude-opus-4-5",
+        "azureml://registries/azureml-mistral/models/mistral-large-3"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",

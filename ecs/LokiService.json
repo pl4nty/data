@@ -164,10 +164,10 @@
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251129.3.0",
         "CalendarCompanionMsitVersion": "1.20251127.4.0",
-        "CalendarCompanionProdVersion": "1.20251115.2.1",
+        "CalendarCompanionProdVersion": "1.20251122.5.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20251115.2.1",
+        "HostAppVersion": "1.20251122.5.1",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -433,7 +433,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20251117.2.0",
+        "LpcVersion": "1.20251124.5.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1911,8 +1911,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleInTaskbarDFVersion": "1.20251201.2.0",
-        "PeopleInTaskbarMsitVersion": "1.20251122.6.0",
-        "PeopleInTaskbarProdVersion": "1.20251115.2.0",
+        "PeopleInTaskbarMsitVersion": "1.20251126.1.0",
+        "PeopleInTaskbarProdVersion": "1.20251122.6.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
