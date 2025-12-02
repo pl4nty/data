@@ -675,6 +675,8 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeThemeServiceDarkMode);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeThemeServiceDarkModeEnabled(bool trigger_usage = false);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsNativeThemeUpstreamAlignmentEnabled(bool trigger_usage = false);
 
 }  // namespace edge
 }  // namespace features
