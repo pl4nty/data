@@ -341,6 +341,10 @@ BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunchExactMatchQuery);
 
+// Feature flag to enable next site suggestions in code for India
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEnableNextSiteSuggestionInCodeForIndia);
+
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnLaunch[];
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
