@@ -383,6 +383,7 @@
         "EnableCollectionCheckout": true,
         "EnableCollectionReset": true,
         "EnableCommonProxySSRFAndDisposeFixes": true,
+        "EnableConfigurationReportParameterChange": true,
         "EnableConnectivityAutoRemediation": true,
         "EnableConnectivityDiagnosticOptimizationByReboot": true,
         "EnableConnectivityStatus": true,
