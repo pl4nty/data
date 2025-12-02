@@ -27,86 +27,95 @@ local l_0_7 = {}
 
 -- DECOMPILER ERROR at PC33: No list found for R7 , SetList fails
 
--- DECOMPILER ERROR at PC34: No list found for R4 , SetList fails
+local l_0_8 = {}
+-- DECOMPILER ERROR at PC35: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC39: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC37: No list found for R8 , SetList fails
 
--- DECOMPILER ERROR at PC40: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC38: No list found for R4 , SetList fails
+
+-- DECOMPILER ERROR at PC43: Overwrote pending register: R2 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC44: Overwrote pending register: R2 in 'AssignReg'
 
 if l_0_2 then
   return l_0_2
 end
--- DECOMPILER ERROR at PC42: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC46: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC43: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC47: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC52: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC49: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC53: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC51: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC55: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC57: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC61: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC58: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC62: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC63: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC66: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC64: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC71: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC72: Overwrote pending register: R4 in 'AssignReg'
 
 if l_0_2 and l_0_3 and l_0_3 ~= "" then
   if l_0_4 then
     return l_0_4
   end
-  -- DECOMPILER ERROR at PC66: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC74: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC67: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC75: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC76: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC69: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC77: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC71: Overwrote pending register: R8 in 'AssignReg'
+  -- DECOMPILER ERROR at PC78: Overwrote pending register: R7 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC72: Overwrote pending register: R9 in 'AssignReg'
+  -- DECOMPILER ERROR at PC79: Overwrote pending register: R8 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC73: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC81: Overwrote pending register: R7 in 'AssignReg'
 
-  l_0_6 = l_0_6(l_0_7)
-  -- DECOMPILER ERROR at PC75: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC83: Overwrote pending register: R7 in 'AssignReg'
 
   l_0_4(l_0_5, l_0_6, l_0_7)
-  -- DECOMPILER ERROR at PC77: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC85: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC78: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC86: Overwrote pending register: R4 in 'AssignReg'
 
-  l_0_4 = l_0_4()
-  -- DECOMPILER ERROR at PC82: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC90: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC85: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC93: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC99: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC100: Overwrote pending register: R8 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC102: Overwrote pending register: R10 in 'AssignReg'
 
   if l_0_4 and l_0_5 then
-    l_0_5 = l_0_5()
-    -- DECOMPILER ERROR at PC91: Overwrote pending register: R7 in 'AssignReg'
-
-    l_0_7 = l_0_7(l_0_6, 150, nil, true)
-    local l_0_8 = nil
+    l_0_7 = l_0_7(l_0_8, 150, "", true)
     local l_0_9 = MpCommon.BmTriggerSig
     local l_0_10 = l_0_4.ppid
     local l_0_11 = "Tampering_Setup"
-    l_0_9(l_0_10, l_0_11, l_0_7 or l_0_8)
+    l_0_9(l_0_10, l_0_11, l_0_7 or (null))
   end
   do
     do
-      l_0_5 = mp
-      l_0_5 = l_0_5.INFECTED
-      do return l_0_5 end
-      -- DECOMPILER ERROR at PC108: Overwrote pending register: R3 in 'AssignReg'
+      -- DECOMPILER ERROR at PC113: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC109: Overwrote pending register: R3 in 'AssignReg'
+      -- DECOMPILER ERROR at PC114: Overwrote pending register: R5 in 'AssignReg'
+
+      do return l_0_5 end
+      -- DECOMPILER ERROR at PC116: Overwrote pending register: R3 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC117: Overwrote pending register: R3 in 'AssignReg'
 
       do return l_0_3 end
-      -- DECOMPILER ERROR at PC111: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC119: freeLocal<0 in 'ReleaseLocals'
 
     end
   end
