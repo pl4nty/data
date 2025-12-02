@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1821,6 +1821,7 @@
             "EnableConversationalContinuity": true,
             "EnableDirectBotFrameworkIntegration": true,
             "EnableGetAppIdFromTurnContext": true,
+            "EnableLoggingBotEngagementMetrics": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableParallelMembersRetrieval": true,
             "EnableRefetchPBPFlow": true,
