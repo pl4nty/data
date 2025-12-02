@@ -937,7 +937,6 @@
         "EnableStorageManagementSnapshotAPI": true,
         "EnableStoreFullScanResult": true,
         "EnableStoreHostPoolObjectId": true,
-        "EnableSubServiceGeoMigration": true,
         "EnableSubscriptionAcquireLock": true,
         "EnableSubscriptionHelloJob": true,
         "EnableSubscriptionPartition": true,
