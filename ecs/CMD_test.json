@@ -386,6 +386,7 @@
         "EnableCloudAppPreparingAppBackfill": true,
         "EnableCloudAppPublicPreviewUX": true,
         "EnableCloudAppTextWithPreview": false,
+        "EnableCloudDeviceLibCheck": true,
         "EnableCloudDevicePlatformSupportedRegions": true,
         "EnableCloudPCAdminHeadlineAPI": true,
         "EnableCloudPCAdminHeadlineUX": true,
