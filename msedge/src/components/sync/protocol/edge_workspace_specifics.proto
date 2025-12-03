@@ -65,12 +65,8 @@ message WorkspaceTab {
   // The favicon url associated with this page.
   optional string favicon_url = 5;
 
-  // Timestamp of the last time the tab was updated with a user navigation.
-  // Edge use this field to prevent ping/pong issue. If current device's
-  // user_nav_time_windows_epoch_micros < remote device's
-  // user_nav_time_windows_epoch_micros, the tab should navigate to the sync
-  // url.
-  optional int64 user_nav_time_windows_epoch_micros = 6;
+  reserved 6;
+  reserved "user_nav_time_windows_epoch_micros";
 
   // Whether the tab is pinned (in the TabStripModel) or not.
   // If not present, false/not-pinned is assumed.
