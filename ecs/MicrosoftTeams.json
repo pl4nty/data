@@ -1918,6 +1918,12 @@
                     "IsEnabled": true
                 }
             ],
+            "TaskManagementSkill_CombinedEvaluationMetrics": [
+                {
+                    "Flight": "EnableTMEvalCombinedPrompt",
+                    "IsEnabled": true
+                }
+            ],
             "TeamsMeetingAgendaSkill_ConsolidationForMeetingInfoQna": [
                 {
                     "Flight": "isAgendaSkillConsolidationForMeetingInfoQnaEnabled",
