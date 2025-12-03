@@ -396,8 +396,9 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.80.0",
+        "version": "2.81.0",
         "versions": [
+            "2.81.0",
             "2.80.0",
             "2.79.0",
             "2.78.0",
