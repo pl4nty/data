@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Dragon Copilot Desktop",
+    "downloadDescription": "Dragon Copilot Desktop v3.3.0",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dragon Copilot-US-3.3.0.998.zip",
+            "url": "https://download.microsoft.com/download/40d5ccbf-dfa5-4b7c-976f-11d81e4858ef/Microsoft Dragon Copilot-US-3.3.0.998.zip",
+            "size": "19465968",
+            "version": "3.3.0",
+            "datePublished": "12/3/2025 10:06:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dragon Copilot-US-3.3.0.998.msi",
+            "url": "https://download.microsoft.com/download/40d5ccbf-dfa5-4b7c-976f-11d81e4858ef/Microsoft Dragon Copilot-US-3.3.0.998.msi",
+            "size": "13148160",
+            "version": "3.3.0",
+            "datePublished": "12/3/2025 10:06:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "de-at",
+            "name": "German (Austria)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nl-be",
+            "name": "Dutch (Belgium)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "en-ie",
+            "name": "English (Ireland)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fr-be",
+            "name": "French (Belgium)"
+        },
+        {
+            "cultureCode": "en-ca",
+            "name": "English (Canada)"
+        }
+    ],
+    "detailsSection": "What is Dragon Copilot Desktop? Dragon Copilot Desktop is a Windows-based application that delivers advanced speech-to-text and ambient AI capabilities directly into electronic health record (EHR) workflows. It works without requiring deep integration and supports seamless transitions across mobile, web, and desktop platforms. It enables browser-based dictation through extensions and can be installed using either a zip package or an MSI installer, depending on user preference and administrative access. Dragon Copilot Desktop is ideal for healthcare professionals seeking fast, reliable voice input and intelligent assistance to streamline documentation and improve workflow efficiency.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.3.0",
+    "detailsSection_file_name": [
+        "Microsoft Dragon Copilot-US-3.3.0.998.zip",
+        "Microsoft Dragon Copilot-US-3.3.0.998.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.6 MB",
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "12/3/2025",
+    "systemRequirementsSection": "- Processor: Minimum 1.7 GHz (Recommended: 2.8 GHz) - RAM: Minimum 4 GB (Recommended: 8 GB) - Disk Space: Minimum 500 MB (Recommended: 1 GB) - Operating System: Windows 11, Server 2016/2019/2022 Dependencies: - Visual C++ Redistributable for Visual Studio 2015 - .NET Framework 4.8 - .NET Desktop Runtime 8.0.x - ASP.NET Core Runtime 8.x.x",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the installer package of your choice: - .zip archive: - Right-click the file and select \"Properties\". - Check \"Unblock\" if available, then click \"OK\". - Extract the contents to your preferred location. - Run Microsoft.DragonCopilot.Desktop.exe to start using the application. - .msi installer: - Double-click the .msi file to begin installation. - Follow the on-screen instructions to complete the setup. - Launch the application from the Start Menu or installation directory. Optional: Pin the application to your Start Menu for quick access.",
+    "additionalInformationSection": "AdditionalInformation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108477",
+    "downloadPreload": true
+}
