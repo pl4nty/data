@@ -123,8 +123,9 @@ message AttributeStream {
   bool raw_value = 4;
   bool attr_start = 5;
   bool attr_skip = 6;
-  bool boolean_attribute = 7;
-  bool complex = 8;
+  bool complex = 7;
+  // When set, use condition_expression instead of literal value.
+  optional ExpressionNode condition_expression = 8;
 }
 
 message ComponentStream {
