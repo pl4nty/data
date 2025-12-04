@@ -1005,6 +1005,7 @@
         "AppOnlyAuth": true,
         "AutopatchAllGroupMigration": true,
         "AutopatchReliabilityScoreModuleImpactSwitch": true,
+        "CVEReporting": true,
         "CacheAndFilterPrerequisiteFailedDevices": true,
         "ClientAgentMigration": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
