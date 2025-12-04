@@ -314,6 +314,7 @@
             "EnableTokenAuthForCMDeviceActions": true,
             "ParseManagedDeviceParallely": true,
             "UDA_AADToMSGraphMigration": true,
+            "UDA_EntraRestoreSupport": true,
             "UDA_HPAFallbackDisabled": true,
             "UDA_RetryUpdateAADUser": true
         }
