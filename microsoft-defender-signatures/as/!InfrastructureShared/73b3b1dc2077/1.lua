@@ -31,27 +31,21 @@ local l_0_1 = (bm.get_imagepath)()
 if l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_2 = l_0_0:match("%.([^./]+)$")
--- DECOMPILER ERROR at PC81: Unhandled construct in 'MakeBoolean' P3
-
-if l_0_2 == nil or (((l_0_2 == "docx" or l_0_2 == "doc") and l_0_1 == "/Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word") or l_0_2 == "xlsx" or l_0_2 ~= "xls" or l_0_2 == "pptx" or l_0_2 ~= "ppt" or l_0_1 == "/Applications/Microsoft PowerPoint.app/Contents/MacOS/Microsoft PowerPoint") then
-  return mp.CLEAN
-end
-local l_0_3 = "BM"
+local l_0_2 = "BM"
 do
   if (string.find)(l_0_1, "/chflags", -8, true) ~= nil then
-    local l_0_4 = (mp.GetParentProcInfo)()
-    if l_0_4 ~= nil and l_0_4.ppid ~= nil then
-      l_0_3 = l_0_4.ppid
+    local l_0_3 = (mp.GetParentProcInfo)()
+    if l_0_3 ~= nil and l_0_3.ppid ~= nil then
+      l_0_2 = l_0_3.ppid
     end
   end
-  if l_0_3 == "BM" then
+  if l_0_2 == "BM" then
     (bm.trigger_sig)("MacChflagsToHidden", l_0_0)
   else
     ;
-    (bm.trigger_sig)("MacChflagsToHidden", l_0_0, l_0_3)
+    (bm.trigger_sig)("MacChflagsToHidden", l_0_0, l_0_2)
   end
-  TrackPidAndTechniqueBM(l_0_3, "T1546.001", "DefenseEvasion_HideArtifacts_Chflags")
+  TrackPidAndTechniqueBM(l_0_2, "T1546.001", "DefenseEvasion_HideArtifacts_Chflags")
   return mp.INFECTED
 end
 
