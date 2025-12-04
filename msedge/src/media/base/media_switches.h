@@ -210,9 +210,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaptionMultiLanguage);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaptionSettingsTrigger);
 // Edge end
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDeferAudioFocusUntilAudible);
-#if !BUILDFLAG(IS_ANDROID)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDocumentPictureInPictureNavigation);
-#endif  // !BUILDFLAG(IS_ANDROID)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDocumentPictureInPictureAnimateResize);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDocumentPictureInPictureCapture);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEnableTabMuting);

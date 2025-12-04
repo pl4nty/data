@@ -16,8 +16,8 @@
   },
   {
     "name": "android_deps",
-    "size": 10737243,
-    "file_count": 167
+    "size": 11133049,
+    "file_count": 171
   },
   {
     "name": "android_prebuilts",
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15121660,
+    "size": 15121855,
     "file_count": 844
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32574629,
+    "size": 32577128,
     "file_count": 3985
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "cloud_authenticator",
-    "size": 144811,
+    "size": 145008,
     "file_count": 4
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "crashpad",
-    "size": 152928,
+    "size": 159907,
     "file_count": 31
   },
   {
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 92633665,
-    "file_count": 10907
+    "size": 95763762,
+    "file_count": 11071
   },
   {
     "name": "flac",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43373731,
-    "file_count": 3198
+    "size": 43379702,
+    "file_count": 3200
   },
   {
     "name": "googletest",
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3543957,
+    "size": 3544198,
     "file_count": 1184
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6873262,
-    "file_count": 182
+    "size": 6879750,
+    "file_count": 183
   },
   {
     "name": "vulkan_memory_allocator",
