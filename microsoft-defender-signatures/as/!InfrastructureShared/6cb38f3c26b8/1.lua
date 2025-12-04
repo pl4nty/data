@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a9b32d3113b7\1.luac 
+-- Command line: lua\!InfrastructureShared\6cb38f3c26b8\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -11,7 +11,7 @@ local l_0_3 = {}
 
 -- DECOMPILER ERROR at PC6: Overwrote pending register: R4 in 'AssignReg'
 
-local l_0_4, l_0_5, l_0_6 = ("DllGetClassObject")(this_sigattrlog[1], l_0_0)
+local l_0_4, l_0_5, l_0_6 = ("DllGetClassObject")(nil, l_0_0)
 if isnull(l_0_4) or isnull(l_0_5) or isnull(l_0_6) then
   return mp.CLEAN
 end

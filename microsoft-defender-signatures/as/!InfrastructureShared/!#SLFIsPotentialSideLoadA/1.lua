@@ -37,7 +37,7 @@ if (string.find)(l_0_8, "program files", 1, true) ~= nil or (string.find)(l_0_8,
   return mp.CLEAN
 end
 local l_0_9 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
-if l_0_9 == nil or (string.len)(l_0_9) > 20 then
+if l_0_9 == nil or (string.len)(l_0_9) > 23 then
   return mp.CLEAN
 end
 local l_0_10 = isFilenameInSideLoadIndicators(l_0_9)
