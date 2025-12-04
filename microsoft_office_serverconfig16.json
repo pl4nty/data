@@ -14,26 +14,26 @@
       <o:url>https://o15.officeredir.microsoft.com/r</o:url>
     </o:service>
     <o:service o:name="ClViewClientHelpId" o:authentication="1">
-      <o:url>https://support.office.com/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://prod.support.office.com/InAppHelp" o:headerValue="Bearer {}"/>
+      <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientHome" o:authentication="1">
-      <o:url>https://support.office.com/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://prod.support.office.com/InAppHelp" o:headerValue="Bearer {}"/>
+      <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientTemplate">
       <o:url>https://ocsa.office.microsoft.com/client/15/help/template</o:url>
     </o:service>
     <o:service o:name="ClViewClientSearch" o:authentication="1">
-      <o:url>https://support.office.com/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://prod.support.office.com/InAppHelp" o:headerValue="Bearer {}"/>
+      <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientSearchRedir" o:authentication="1">
       <o:url>https://support.office.microsoft.com/client/results</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://prod.support.office.com/InAppHelp" o:headerValue="Bearer {}"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientUpdate">
@@ -1565,6 +1565,9 @@
     <o:service o:name="UnifiedConsentWebViewURL">
       <o:url>https://admin.microsoft.com/centrohost?appname=OfficeUnifiedConsent&amp;feature=host-unified-consent#/</o:url>
     </o:service>
+    <o:service o:name="PPTWebRenderingService">
+      <o:url>https://pptwrs.officeapps.live.com</o:url>
+    </o:service>
     <o:service o:name="PPTCSThumbnailService">
       <o:url>https://thfd.edog.officeapps.live.com:7443/thumbnail</o:url>
     </o:service>
@@ -2205,8 +2208,8 @@
     <o:token o:name="TestInProd.WebHost">officeappsint.com</o:token>
     <o:token o:name="TestInProdRoaming.WebHost">officeapps.live.com</o:token>
     <o:token o:name="LifecycleBaseHost">lifecycle.office.com</o:token>
-    <o:token o:name="MAX.AuthHost">https://prod.support.office.com/InAppHelp</o:token>
-    <o:token o:name="MAX.BaseHost">support.office.com</o:token>
+    <o:token o:name="MAX.AuthHost">https://help.svc.cloud.microsoft/auth/signin</o:token>
+    <o:token o:name="MAX.BaseHost">help.svc.cloud.microsoft</o:token>
     <o:token o:name="MAX.ResourceId">447f78cd-93d4-4fe0-b8bd-9eca586cf156</o:token>
     <o:token o:name="HARMONYMT.ResourceId">https://harmony.microsoft.com</o:token>
     <o:token o:name="MSN.WebHost">msn.com</o:token>
