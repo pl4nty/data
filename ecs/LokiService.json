@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251203.1.0",
+        "CalendarCompanionDFVersion": "1.20251203.6.0",
         "CalendarCompanionMsitVersion": "1.20251129.3.0",
         "CalendarCompanionProdVersion": "1.20251122.5.1",
         "CompanionRing": "Prod",
@@ -358,13 +358,6 @@
     },
     "ECS": {
         "ConfigLogTarget": "default"
-    },
-    "EventToConfigIdsMapping": {
-        "Loki": {
-            "livepeoplecard_events": "P-R-1047016-2-24",
-            "livepeoplecard_qos": "P-R-1047016-2-24",
-            "livepeoplecards_flights": "P-R-1047016-2-24"
-        }
     },
     "GroupsManagement": {
         "MIPLabelsEnabled": false,
@@ -2086,6 +2079,11 @@
                         "name": "FetchEndToEndLatencyEvent",
                         "rate": 10,
                         "requestName": "FetchProfilePhoto"
+                    },
+                    {
+                        "name": "FetchEndToEndLatencyEvent",
+                        "rate": 10,
+                        "requestName": "FetchUsersPresence"
                     }
                 ]
             },
