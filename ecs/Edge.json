@@ -24,7 +24,7 @@
             "parameters": [
                 {
                     "name": "Browser Version",
-                    "value": "142.0.0.0"
+                    "value": "143.0.0.0"
                 }
             ]
         },
@@ -141,17 +141,6 @@
                 {
                     "name": "msEventOverrideList",
                     "value": "Microsoft.WebBrowser.Protobuf.UKM.SystemProfile,0,15;Microsoft.WebBrowser.Protobuf.UKM.Stats.LogStart,0,4;Microsoft.WebBrowser.Protobuf.UKM.Stats.LogComplete,0,4;"
-                }
-            ]
-        },
-        "OverrideHistograms": {
-            "enableFeatures": [
-                "msHistogramsGovernanceList"
-            ],
-            "parameters": [
-                {
-                    "name": "msHistogramOverrideList",
-                    "value": "Microsoft.NewTabPage.WidgetsRegionEnabled,1,,8; Microsoft.NewTabPage.WidgetsPrefChanged,1,,8;Microsoft.NewTabPage.TopSitesVisible,1,,12;Microsoft.NewTabPage.LayoutPrefChanged,1,,8;Microsoft.NewTabPage.FeedEngagement,1,,8;Microsoft.NewTabPage.FeedPrefChanged,1,,8;Microsoft.NewTabPage.FeedDisplayOption,1,,137438969912;Microsoft.NewTabPage.LayoutMode,1,,137438969880;"
                 }
             ]
         },
