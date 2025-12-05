@@ -2729,6 +2729,7 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["mscoree.dll"] = mp.INFECTED
   l_88_1["version.dll"] = mp.INFECTED
   l_88_1["cryptsp.dll"] = mp.INFECTED
+  l_88_1["msvcp140.dll"] = mp.INFECTED
   l_88_1["msedgeupdate.dll"] = mp.INFECTED
   l_88_1["msedge_elf.dll"] = mp.INFECTED
   l_88_1["chrome_elf.dll"] = mp.INFECTED
