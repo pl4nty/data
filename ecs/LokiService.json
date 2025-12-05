@@ -359,6 +359,13 @@
     "ECS": {
         "ConfigLogTarget": "default"
     },
+    "EventToConfigIdsMapping": {
+        "Loki": {
+            "livepeoplecard_events": "P-R-1047016-2-24",
+            "livepeoplecard_qos": "P-R-1047016-2-24",
+            "livepeoplecards_flights": "P-R-1047016-2-24"
+        }
+    },
     "GroupsManagement": {
         "MIPLabelsEnabled": false,
         "MIPLabelsFromCanaryEnabled": false,
@@ -1113,7 +1120,11 @@
             "RichHoverCardInternalQuery",
             "CopyLinkDialogCurrentUserQuery",
             "HeroCardWrapperSidecar_DataQuery",
-            "ShareAppDialogCurrentUserQuery"
+            "ShareAppDialogCurrentUserQuery",
+            "SharepointListsAgentQuery",
+            "EduLearnAgentQuery",
+            "OdspFilesAgentQuery",
+            "SharepointPageBuilderAgentQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,

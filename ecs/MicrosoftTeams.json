@@ -2025,6 +2025,12 @@
                     "Flight": "AS.enableAgendaSkillLoopAgendaDetection",
                     "IsEnabled": true
                 }
+            ],
+            "meetingAgendaSkill_ProactiveAgendaFetchCombinedPrompt_PartialChat": [
+                {
+                    "Flight": "AS.enableBypassConsentLogicForChat",
+                    "IsEnabled": true
+                }
             ]
         },
         "SomeDummyOptions": {
