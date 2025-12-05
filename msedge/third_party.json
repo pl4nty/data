@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2177053,
+    "size": 2178160,
     "file_count": 183
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 11133049,
+    "size": 11133418,
     "file_count": 171
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32577335,
-    "file_count": 3985
+    "size": 32580242,
+    "file_count": 3990
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "dawn",
-    "size": 36561562,
+    "size": 36561612,
     "file_count": 102
   },
   {
@@ -381,8 +381,8 @@
   },
   {
     "name": "libc++",
-    "size": 12315750,
-    "file_count": 1764
+    "size": 12307997,
+    "file_count": 1762
   },
   {
     "name": "libc++abi",
@@ -481,7 +481,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 293568,
+    "size": 294153,
     "file_count": 47
   },
   {
@@ -581,7 +581,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3960888,
+    "size": 3969210,
     "file_count": 583
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3544198,
+    "size": 3544468,
     "file_count": 1184
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6879750,
-    "file_count": 183
+    "size": 6879220,
+    "file_count": 182
   },
   {
     "name": "vulkan_memory_allocator",
