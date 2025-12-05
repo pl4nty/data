@@ -104,6 +104,7 @@
                 "SVC_Auditing",
                 "SVC_CertificateAuthority",
                 "SVC_ChromebookSync",
+                "SVC_ClientServices",
                 "SVC_CloudPki",
                 "SVC_Compliance",
                 "SVC_ContentService",
@@ -181,6 +182,7 @@
                 "UX_RemoteAssist",
                 "UX_TenantSetup",
                 "UX_TestProjectTeam",
+                "UX_Troubleshooting",
                 "UX_Workflow"
             ],
             "StrongConsistencyFlights": {
