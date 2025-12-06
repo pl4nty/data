@@ -281,11 +281,6 @@
             "QBSFSICoreMigrationSwitchOverBatch3": true
         }
     },
-    "SVC_DataPlatformMetadata": {
-        "FlightingV2": {
-            "EnableSchemaRetrievalFromNuGetPkg": true
-        }
-    },
     "SVC_Dep": {
         "FlightingV2": {
             "APv2EnableForcedRebootBehavior": true,
@@ -295,6 +290,8 @@
             "EnableDeviceDisownAdeApi": true,
             "EnableNoDepDeviceFullSyncTriggerAfterProfileCorrection": true,
             "EnableRemoveDuplicateAccountIdInCompanyPortalPolicyTask": true,
+            "EnableRemovingDuplicateDepRecordsFromAppleList": true,
+            "EnableSearchCallRefactorDepSync": true,
             "EnableSearchECAWithoutDQCache": true,
             "EnableWindowsRestoreReporting": true,
             "S2SAntiPattern": true
