@@ -27,6 +27,10 @@ BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerUXV2);
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckerUXV2Enabled();
 
+BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerNewServiceUrl);
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
+bool IsEditorSpellcheckerNewServiceUrlEnabled();
+
 }  // namespace edge
 }  // namespace features
 

@@ -416,24 +416,6 @@ extern const base::FeatureParam<int> kMacFrostedGlassVisualEffectDelayMs;
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetMacFrostedGlassVisualEffectDelayMs();
 
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kMacFrostedGlassVisualEffectHorizontalTab);
-// if enabled, frosted glass visual effect will be applied for horizontal tab.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsMacFrostedGlassVisualEffectHorizontalTabEnabled();
-
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kMacFrostedGlassVisualEffectHubAppTower);
-// if enabled, frosted glass visual effect will be applied for hub app tower.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsMacFrostedGlassVisualEffectHubAppTowerEnabled();
-
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kMacFrostedGlassVisualEffectBookmarkBar);
-// if enabled, frosted glass visual effect will be applied for bookmark bar.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsMacFrostedGlassVisualEffectBookmarkBarEnabled();
-
 // If enabled, the ring 0 icons will look minimal and more compact.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRefreshRingZeroIcons);
