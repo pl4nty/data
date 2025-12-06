@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15121855,
+    "size": 15120839,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32580242,
-    "file_count": 3990
+    "size": 32567398,
+    "file_count": 3986
   },
   {
     "name": "boringssl",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17325672,
-    "file_count": 2045
+    "size": 17609482,
+    "file_count": 2053
   },
   {
     "name": "entity_extraction",
@@ -226,7 +226,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 95763762,
+    "size": 95765828,
     "file_count": 11071
   },
   {
@@ -381,8 +381,8 @@
   },
   {
     "name": "libc++",
-    "size": 12307997,
-    "file_count": 1762
+    "size": 12314854,
+    "file_count": 1763
   },
   {
     "name": "libc++abi",
@@ -481,7 +481,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 294153,
+    "size": 294673,
     "file_count": 47
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18758123,
+    "size": 18758635,
     "file_count": 19
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 30910,
+    "size": 31142,
     "file_count": 16
   },
   {
@@ -581,7 +581,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3969210,
+    "size": 3969404,
     "file_count": 583
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3544468,
+    "size": 3544331,
     "file_count": 1184
   },
   {
@@ -711,8 +711,8 @@
   },
   {
     "name": "tflite",
-    "size": 1695451,
-    "file_count": 506
+    "size": 1695842,
+    "file_count": 508
   },
   {
     "name": "tflite_support",
@@ -736,7 +736,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1395322,
+    "size": 1403439,
     "file_count": 23
   },
   {
@@ -746,12 +746,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2513159,
+    "size": 2532895,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6879220,
+    "size": 6891240,
     "file_count": 182
   },
   {

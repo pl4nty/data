@@ -149,6 +149,13 @@ BASE_DECLARE_FEATURE(kUserProfileBasedPlayReadyCdmStorePath);
 // Displays MF Rendering Capabilities on edge://gpu.
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kMediaFoundationCapabilities);
+
+#if BUILDFLAG(ENABLE_PLATFORM_ENCRYPTED_DOLBY_VISION)
+// When enabled, skips the Dolby Vision app install check and always reports
+// DV as supported. Used for testing on machines without the DV app installed.
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+BASE_DECLARE_FEATURE(kSkipDolbyVisionInstallCheckForTesting);
+#endif  // BUILDFLAG(ENABLE_PLATFORM_ENCRYPTED_DOLBY_VISION)
 #endif  // BUILDFLAG(ENABLE_MEDIA_FOUNDATION_CDM)
 
 #if BUILDFLAG(IS_WIN)
