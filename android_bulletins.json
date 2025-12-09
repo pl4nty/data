@@ -1608,7 +1608,7 @@
         "CVE": "CVE-2025-48539",
         "References": "A-406785684",
         "Type": "RCE",
-        "Severity": "Critical",
+        "Severity": "High",
         "Updated AOSP versions": "15, 16",
         "Component": "System"
     },
