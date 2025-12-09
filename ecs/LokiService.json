@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251203.6.0",
+        "CalendarCompanionDFVersion": "1.20251206.5.0",
         "CalendarCompanionMsitVersion": "1.20251129.3.0",
         "CalendarCompanionProdVersion": "1.20251122.5.1",
         "CompanionRing": "Prod",
@@ -358,13 +358,6 @@
     },
     "ECS": {
         "ConfigLogTarget": "default"
-    },
-    "EventToConfigIdsMapping": {
-        "Loki": {
-            "livepeoplecard_events": "P-R-1047016-2-24",
-            "livepeoplecard_qos": "P-R-1047016-2-24",
-            "livepeoplecards_flights": "P-R-1047016-2-24"
-        }
     },
     "GroupsManagement": {
         "MIPLabelsEnabled": false,
@@ -594,6 +587,9 @@
         "DisableOutboundCancellationOnConfigurationCalls": true,
         "DisablePrefetchForGroupPersona": true,
         "DisableWorkingWithForEDU": true,
+        "DistributedLockExpirySeconds": 5,
+        "DistributedLockMaxWaitTimeSeconds": 5,
+        "DistributedLockPollIntervalMs": 150,
         "DmtAppIdAud": "94c63fef-13a3-47bc-8074-75af8c65887a",
         "DynamicsTenantId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
         "ECSVerification_Loki_FirstRelease": false,
@@ -1124,7 +1120,9 @@
             "SharepointListsAgentQuery",
             "EduLearnAgentQuery",
             "OdspFilesAgentQuery",
-            "SharepointPageBuilderAgentQuery"
+            "SharepointPageBuilderAgentQuery",
+            "PlaceDataQuery",
+            "PlaceAvailabilityWithModeQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1598,6 +1596,32 @@
         "SuggestedWorkingHoursInsightFilterSettings": "ConfidenceThreshold:0.44,WindowMinLengthThreshold:6.0,WindowMaxLengthThreshold:12.0,TimespanDiffThreshold:0.5",
         "SuggestedWorkingHoursInsightRetrieverMode": "Enabled",
         "SuggestedWorkingHoursNudgeInsightRetrieverCallMyAnalytics": false,
+        "SydneyProviderAllowList_ClientFeatures": [
+            "AnalystAgent",
+            "ResearcherAgent",
+            "SalesChatAgent"
+        ],
+        "SydneyProviderAllowList_GraphQlOperationNames": [
+            "WorkflowAgentHomePageBroadQuery",
+            "SurveyAgentHistoryQuery",
+            "SharepointListsAgentQuery",
+            "ResearcherHomePageBroadQuery",
+            "PromptCardViewQuery",
+            "Microsoft365adminAgentQuery",
+            "ListViewCardPaginationQuery",
+            "KnowledgeAgentQuery",
+            "AnalystHomePageV2BroadQuery",
+            "useAgentChatHistoryQuery",
+            "ResearcherHistoryQuery",
+            "Microsoft365adminAgentQuery",
+            "ResearcherHomePageQuery",
+            "KYTChatHistoryContentQuery",
+            "AnalystChatHistoryQuery",
+            "OdspFilesAgentQuery"
+        ],
+        "SydneyProviderAllowList_ProviderTypes": [
+            "GenerateAiAboutMeProvider"
+        ],
         "UpcomingMeetingDataProviderConfig": {
             "DaysToLoad": 30,
             "RunSequentially": true
@@ -1937,7 +1961,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251202.7.0",
+        "PeopleInTaskbarDFVersion": "1.20251206.6.0",
         "PeopleInTaskbarMsitVersion": "1.20251201.2.0",
         "PeopleInTaskbarProdVersion": "1.20251122.6.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,

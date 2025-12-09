@@ -13282,6 +13282,3904 @@
                     "metrics": {
                         "input_token_cost_per_1M_tokens": 1.25,
                         "output_token_cost_per_1M_tokens": 10,
+                        "total_cost_per_1M_tokens": 3.4375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "arena_hard",
+                    "datasetName": "arena_hard",
+                    "metrics": {
+                        "accuracy": 0.985
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "alignment_adversarial_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d989e6fd910d521dc8e9d12893c405e335fde51a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.921674
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.49386
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.814318
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gsm8k",
+                    "datasetName": "gsm8k",
+                    "metrics": {
+                        "accuracy": 0.9499
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.908537
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.924528
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.835938
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "math",
+                    "datasetName": "math",
+                    "metrics": {
+                        "accuracy": 0.977956
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "mathematical_instruction",
+                    "dataset_leaderboard": "math",
+                    "dataset_version": "928af07ab540ab5d598a32c80955c6e27fba7df7",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.815508
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.878758
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.915545
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1.010101
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.870808
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.782233
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.539216
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.608455
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 75.98,
+                        "latency_mean_secs": 29.88,
+                        "latency_p50_secs": 25.64,
+                        "latency_p90_secs": 34.17,
+                        "latency_p95_secs": 37.42,
+                        "latency_p99_secs": 117.04,
+                        "latency_ttft_secs": 0.65,
+                        "throughput_gtps_token_count": 75.98,
+                        "throughput_rps_request_count": 0.04,
+                        "throughput_ttps_token_count": 119.79,
+                        "time_between_tokens_secs": 0.2
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.903285,
+                        "index_metric": 0.903285
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.3367,
+                        "index_metric": 0.3367
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "modelName": "gpt-5.1-chat",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-chat/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-chat",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 1.25,
+                        "output_token_cost_per_1M_tokens": 10,
+                        "total_cost_per_1M_tokens": 3.4375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "arena_hard",
+                    "datasetName": "arena_hard",
+                    "metrics": {
+                        "accuracy": 0.9628
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "alignment_adversarial_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d989e6fd910d521dc8e9d12893c405e335fde51a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.928266
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.493827
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.868895
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gsm8k",
+                    "datasetName": "gsm8k",
+                    "metrics": {
+                        "accuracy": 0.9499
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.926829
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.946396
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.859504
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "math",
+                    "datasetName": "math",
+                    "metrics": {
+                        "accuracy": 0.983838
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "mathematical_instruction",
+                    "dataset_leaderboard": "math",
+                    "dataset_version": "928af07ab540ab5d598a32c80955c6e27fba7df7",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.830239
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.879188
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.886169
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1.010101
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 1.06383
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.885556
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.889803
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.736318
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.860478
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {},
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.915806,
+                        "index_metric": 0.915806
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.69131,
+                        "index_metric": 0.69131
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "modelName": "gpt-5.1-codex-max",
+                    "modelVersion": "2025-12-04"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-max/versions/2025-12-04",
+                    "azure_latest_model_version": "2025-12-04",
+                    "azure_model_name": "gpt-5.1-codex-max",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 0.25,
+                        "output_token_cost_per_1M_tokens": 2,
+                        "total_cost_per_1M_tokens": 0.6875
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "arena_hard",
+                    "datasetName": "arena_hard",
+                    "metrics": {
+                        "accuracy": 0.9093
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "alignment_adversarial_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d989e6fd910d521dc8e9d12893c405e335fde51a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.912243
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.466125
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.630653
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gsm8k",
+                    "datasetName": "gsm8k",
+                    "metrics": {
+                        "accuracy": 0.9499
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.914634
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.89434
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.853211
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "math",
+                    "datasetName": "math",
+                    "metrics": {
+                        "accuracy": 0.969758
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "mathematical_instruction",
+                    "dataset_leaderboard": "math",
+                    "dataset_version": "928af07ab540ab5d598a32c80955c6e27fba7df7",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.828418
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.841237
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.832313
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.888182
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.863241
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.708333
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.832941
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 43.12,
+                        "latency_mean_secs": 38.91,
+                        "latency_p50_secs": 38.91,
+                        "latency_p90_secs": 43.36,
+                        "latency_p95_secs": 43.7,
+                        "latency_p99_secs": 43.93,
+                        "latency_ttft_secs": 0.67,
+                        "throughput_gtps_token_count": 43.12,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 71.46,
+                        "time_between_tokens_secs": 0.02
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.862573,
+                        "index_metric": 0.862573
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.333333,
+                        "index_metric": 0.333333
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex-mini",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex-mini/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 1.25,
+                        "output_token_cost_per_1M_tokens": 10,
+                        "total_cost_per_1M_tokens": 3.4375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "arena_hard",
+                    "datasetName": "arena_hard",
+                    "metrics": {
+                        "accuracy": 0.9216
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "alignment_adversarial_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d989e6fd910d521dc8e9d12893c405e335fde51a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.914502
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.451554
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.812968
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gsm8k",
+                    "datasetName": "gsm8k",
+                    "metrics": {
+                        "accuracy": 0.9499
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.925926
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.924528
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.835052
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "math",
+                    "datasetName": "math",
+                    "metrics": {
+                        "accuracy": 0.975758
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "mathematical_instruction",
+                    "dataset_leaderboard": "math",
+                    "dataset_version": "928af07ab540ab5d598a32c80955c6e27fba7df7",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.840541
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.873457
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.875153
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.883737
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.832415
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.637255
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.821203
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 32.84,
+                        "latency_mean_secs": 36.94,
+                        "latency_p50_secs": 36.94,
+                        "latency_p90_secs": 40.61,
+                        "latency_p95_secs": 41.06,
+                        "latency_p99_secs": 41.26,
+                        "latency_ttft_secs": 0.25,
+                        "throughput_gtps_token_count": 32.84,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 52.65,
+                        "time_between_tokens_secs": 0.02
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.89866,
+                        "index_metric": 0.89866
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.333333,
+                        "index_metric": 0.333333
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "modelName": "gpt-5.1-codex",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1-codex/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1-codex",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 1.25,
+                        "output_token_cost_per_1M_tokens": 10,
+                        "total_cost_per_1M_tokens": 3.4375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "arena_hard",
+                    "datasetName": "arena_hard",
+                    "metrics": {
+                        "accuracy": 0.9737
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "alignment_adversarial_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d989e6fd910d521dc8e9d12893c405e335fde51a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.899891
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.499123
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.817568
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gsm8k",
+                    "datasetName": "gsm8k",
+                    "metrics": {
+                        "accuracy": 0.9499
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "humaneval",
+                    "datasetName": "humanevalplus",
+                    "metrics": {
+                        "accuracy": 0.926829
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "ifeval",
+                    "datasetName": "ifeval",
+                    "metrics": {
+                        "accuracy": 0.92467
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_version": "26d8ccdab6fec61b5c83ad6327ea8bda9e580288",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.900826
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "math",
+                    "datasetName": "math",
+                    "metrics": {
+                        "accuracy": 0.981964
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "mathematical_instruction",
+                    "dataset_leaderboard": "math",
+                    "dataset_version": "928af07ab540ab5d598a32c80955c6e27fba7df7",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.820856
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.878173
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.897185
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1.010101
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.88697
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.883465
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.786241
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.878788
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 75.76,
+                        "latency_mean_secs": 26.09,
+                        "latency_p50_secs": 26.09,
+                        "latency_p90_secs": 30.48,
+                        "latency_p95_secs": 31.06,
+                        "latency_p99_secs": 31.59,
+                        "latency_ttft_secs": 0.66,
+                        "throughput_gtps_token_count": 75.76,
+                        "throughput_rps_request_count": 0.04,
+                        "throughput_ttps_token_count": 118.11,
+                        "time_between_tokens_secs": 0.25
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.902956,
+                        "index_metric": 0.902956
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.3367,
+                        "index_metric": 0.3367
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "modelName": "gpt-5.1",
+                    "modelVersion": "2025-11-13"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.1/versions/2025-11-13",
+                    "azure_latest_model_version": "2025-11-13",
+                    "azure_model_name": "gpt-5.1",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 1.25,
+                        "output_token_cost_per_1M_tokens": 10,
                         "total_cost_per_1M_tokens": 3.6875
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5/versions/2025-08-07",

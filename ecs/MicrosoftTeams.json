@@ -518,7 +518,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -581,28 +581,6 @@
                 "skipCrossTenantLicenseInFreemiumTenant": true
             }
         }
-    },
-    "MicrosoftTeamsECSFaultsManagement": {
-        "Consumers": [
-            {
-                "Client": "MicrosoftTeams",
-                "Faults": [
-                    {
-                        "ControlTimer": {
-                            "Enabled": true,
-                            "EndTime": "2024-03-30 00:00:00Z",
-                            "StartTime": "2024-03-20 00:00:00Z"
-                        },
-                        "Enabled": true,
-                        "Id": "urn:ECS:Fault:ConfigRetriever:GetResponse:Forbidden/403-Forbidden",
-                        "Probability": 1
-                    }
-                ],
-                "ProjectTeam": "MicrosoftTeamsAuthSvc"
-            }
-        ],
-        "ControlSchemaVersion": "2023-12-01",
-        "FaultsEnabled": true
     },
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
@@ -4365,6 +4343,7 @@
             "meetingAddinEnableSetSkypeTeamsMeetingPropertiesWhenNotAvailable": false,
             "meetingAddinEnableSkipSchedulerForMeetingOccurrenceUpdate": false,
             "meetingAddinEnableSpeedyMeetings": false,
+            "meetingAddinEnableStampingPstnProperties2": false,
             "meetingAddinEnableStopEventViewerReadWhenErrors": false,
             "meetingAddinEnableStoringTeamsMeetingUrlOnOutlook": false,
             "meetingAddinEnableSupportForO365GroupCalendar": false,
