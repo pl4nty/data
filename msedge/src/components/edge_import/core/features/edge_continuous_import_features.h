@@ -336,6 +336,11 @@ BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunch);
 
+// Feature flag to enable personalized launch increased reach with V3 campaign.
+// This includes a holdout variant for experimentation.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kPersonalizedLaunchIncreasedReach);
+
 // Feature flag to use exact match query while looking up in history for
 // personalized site suggestions
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -344,6 +349,10 @@ BASE_DECLARE_FEATURE(kPersonalizedLaunchExactMatchQuery);
 // Feature flag to enable next site suggestions in code for India
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEnableNextSiteSuggestionInCodeForIndia);
+
+// Feature flag to enable sending subdomains for personalized launch
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kPersonalizedLaunchSendSubdomains);
 
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnLaunch[];
@@ -382,37 +391,44 @@ BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumer);
 // Trigger when user is a consumer, startup is set to New Tab, and the user
 // qualifies as a Chrome Primary Browser user based on their network usage
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumerStartupNewTab);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsumerNewTab);
 
 // Trigger when user is a consumer, startup is New Tab, user qualifies as a
 // Chrome PB user, and SAN consent has been given
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSanConsentedConsumerStartupNewTabChromePB);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsumerNewTabAsterPB);
 
 // Trigger when user is a consumer, startup is New Tab, user qualifies as a
 // Chrome PB user, and there are no previously imported tabs
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(
-    kSanConsentedConsumerStartupNewTabChromePBNoImportedTabs);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsumerNewTabAsterPBNoImport);
 
 // Trigger when user is a consumer, startup is New Tab, user qualifies as a
 // Chrome PB user,no previously imported tabs and last session was not Edge
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(
-    kSanConsentedConsumerStartupNewTabChromePBNoImportedTabsLastSessionChrome);
+BASE_DECLARE_FEATURE_TRIGGER(kSanConsumerNewTabAsterPBLastAsterSession);
 
 // Final trigger when all conditions are met: ML setting is ON, last session was
 // not Edge, user is a consumer, startup is New Tab, user is a Chrome PB user,
 // SAN consent is given, and there are no previously imported tabs
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(
-    kSanConsentedMlSettingLastSessionChromeConsumerStartupNewTabChromePBImportedTabs);
+BASE_DECLARE_FEATURE_TRIGGER(kMlEligibleAllConditionsMet);
 
 // Trigger to determine if we are trying to personalize the session after open
 // tabs import fails
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(
     kOpenTabsImportFailedTriggerPersonalizedTabsAddition);
+
+// Trigger fired when ML suggested tabs are shown to the personalized launch
+// users who satisfied all conditions
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kMlSuggestedTabsShown);
+
+// Trigger fired when user ignored the personalized launch campaign but still
+// meets all eligibility conditions
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kMlEligibleUserIgnoredCampaign);
 
 // Feature flag for open tabs perf optimization
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
