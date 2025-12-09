@@ -1,0 +1,58 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Message format for the MojoLPM fuzzer for the GuestContentsHost interface.
+
+syntax = "proto2";
+
+package edge.fuzzing.guest_contents_host.proto;
+
+import "components/guest_contents/common/guest_contents.mojom.mojolpm.proto";
+
+// Bind a new GuestContentsHost remote with a specific outer WebContents
+message NewGuestContentsHostAction {
+  required uint32 id = 1;
+  // Vary the outer WebContents configuration
+  optional uint32 outer_web_contents_id = 2;
+}
+
+// Create a new guest WebContents with a GuestContentsHandle
+message NewGuestContentsAction {
+  required uint32 guest_id = 1;
+}
+
+// Run the specific thread for (an indeterminate) period. This is not
+// intended to create a specific ordering, but to allow the fuzzer to delay a
+// later task until previous tasks have completed.
+message RunThreadAction {
+  enum ThreadId {
+    IO = 0;
+    UI = 1;
+  }
+  required ThreadId id = 1;
+}
+
+// Actions that can be performed by the fuzzer.
+message Action {
+  oneof action {
+    NewGuestContentsHostAction new_guest_contents_host = 1;
+    NewGuestContentsAction new_guest_contents = 2;
+    mojolpm.guest_contents.mojom.GuestContentsHost.RemoteAction
+        guest_contents_host_call = 3;
+    RunThreadAction run_thread = 4;
+  }
+}
+
+// Sequence provides a level of indirection which allows Testcase to compactly
+// express repeated sequences of actions.
+message Sequence {
+  repeated uint32 action_indexes = 1 [packed = true];
+}
+
+// Testcase is the top-level message type interpreted by the fuzzer.
+message Testcase {
+  repeated Action actions = 1;
+  repeated Sequence sequences = 2;
+  repeated uint32 sequence_indexes = 3 [packed = true];
+}

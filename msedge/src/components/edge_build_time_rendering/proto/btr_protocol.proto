@@ -24,7 +24,8 @@ message Stream {
     IfStream if_stream = 4;
     AttributeStream attribute = 5;
     ComponentStream component = 6;
-    UnknownStream unknown = 7;
+    HydrationStream hydration = 7;
+    UnknownStream unknown = 8;
   }
 }
 
@@ -130,6 +131,10 @@ message AttributeStream {
 
 message ComponentStream {
   string value = 1;
+}
+
+message HydrationStream {
+  uint32 attribute_count = 1;
 }
 
 message UnknownStream {}
