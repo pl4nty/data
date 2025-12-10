@@ -330,6 +330,16 @@
                             "toc_title": "affinity group"
                         },
                         {
+                            "href": "a_z_names_terms/a/agent-builder",
+                            "permissioned-type": "private",
+                            "toc_title": "Agent Builder"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/agent-mode",
+                            "permissioned-type": "private",
+                            "toc_title": "Agent Mode"
+                        },
+                        {
                             "href": "a_z_names_terms/a/agent-store",
                             "permissioned-type": "private",
                             "toc_title": "Agent Store"
@@ -590,7 +600,7 @@
                             "toc_title": "Applied AI Services"
                         },
                         {
-                            "href": "a_z_names_terms/a/appsource",
+                            "href": "a_z_names_terms/a/appsource-microsoft",
                             "permissioned-type": "private",
                             "toc_title": "AppSource"
                         },
@@ -633,6 +643,11 @@
                             "href": "a_z_names_terms/a/ask-learn",
                             "permissioned-type": "private",
                             "toc_title": "Ask Learn"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/ask-microsoft",
+                            "permissioned-type": "private",
+                            "toc_title": "Ask Microsoft"
                         },
                         {
                             "href": "a_z_names_terms/a/aspnet",
@@ -829,7 +844,7 @@
                                 {
                                     "href": "a_z_names_terms/a/azure-ai-content-understanding",
                                     "permissioned-type": "private",
-                                    "toc_title": "Azure AI Content Understanding"
+                                    "toc_title": "Azure Content Understanding"
                                 },
                                 {
                                     "href": "a_z_names_terms/a/azure-ai-custom-vision",
@@ -1050,6 +1065,11 @@
                             "toc_title": "Azure Cobalt 100"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-cobalt-200",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Cobalt 200"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-cobalt-cpu-series",
                             "permissioned-type": "private",
                             "toc_title": "Azure Cobalt CPU series"
@@ -1083,6 +1103,11 @@
                             "href": "a_z_names_terms/a/azure-container-storage-",
                             "permissioned-type": "private",
                             "toc_title": "Azure Container Storage"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-content-understanding",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Content Understanding"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-cosmos-db",
@@ -1198,6 +1223,11 @@
                             "href": "a_z_names_terms/a/azure-documentdb",
                             "permissioned-type": "private",
                             "toc_title": "Azure DocumentDB"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-document-intelligence",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Document Intelligence"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-edge-network-fabric-",
@@ -1353,6 +1383,11 @@
                             "href": "a_z_names_terms/a/azure-kubernetes-services-on-vmware",
                             "permissioned-type": "private",
                             "toc_title": "Azure Kubernetes Services on VMware"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-language",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Language"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-large-instances-",
@@ -1625,6 +1660,11 @@
                             "toc_title": "Azure Spatial Maps"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-speech",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Speech"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-sphere",
                             "permissioned-type": "private",
                             "toc_title": "Azure Sphere"
@@ -1725,6 +1765,11 @@
                             "toc_title": "Azure Test Plans"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-translator",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Translator"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-turbos",
                             "permissioned-type": "private",
                             "toc_title": "Azure Turbos"
@@ -1743,6 +1788,11 @@
                             "href": "a_z_names_terms/a/azure-virtual-enclaves-",
                             "permissioned-type": "private",
                             "toc_title": "Azure Virtual Enclaves"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-vision",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Vision"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-vmware-solution",
@@ -3457,6 +3507,11 @@
                                     "toc_title": "Quality Evaluation Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/d/d365agents/sales-close-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Sales Close Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/d/d365agents/sales-development-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Sales Development Agent"
@@ -4115,9 +4170,49 @@
                             "toc_title": "Forms Pro"
                         },
                         {
+                            "href": "a_z_names_terms/f/foundry-agent-service-sdk",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Agent Service SDK"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-agent-service",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Agent Service"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-control-plane",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Control Plane"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry IQ"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-labs",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Labs"
+                        },
+                        {
                             "href": "a_z_names_terms/f/foundry-local",
                             "permissioned-type": "private",
                             "toc_title": "Foundry Local"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-models",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Models"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-portal",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry portal"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/foundry-tools",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Tools"
                         },
                         {
                             "href": "a_z_names_terms/f/fraud-protection",
@@ -4158,6 +4253,11 @@
                             "href": "a_z_names_terms/g/game-stack",
                             "permissioned-type": "private",
                             "toc_title": "Game Stack"
+                        },
+                        {
+                            "href": "a_z_names_terms/g/game-summaries",
+                            "permissioned-type": "private",
+                            "toc_title": "Game Summaries"
                         },
                         {
                             "href": "a_z_names_terms/g/gateway-cluster",
@@ -5010,6 +5110,11 @@
                             "toc_title": "Managed Environments"
                         },
                         {
+                            "href": "a_z_names_terms/m/managed-instance-on-azure-app-service",
+                            "permissioned-type": "private",
+                            "toc_title": "Managed Instance on Azure App Service"
+                        },
+                        {
                             "href": "a_z_names_terms/m/managed-instance",
                             "permissioned-type": "private",
                             "toc_title": "managed instance"
@@ -5217,6 +5322,11 @@
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/surveys-agent",
                                             "permissioned-type": "private",
                                             "toc_title": "Surveys Agent"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/workflows-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Workflows Agent"
                                         }
                                     ],
                                     "toc_title": "Microsoft 365 agents"
@@ -5313,6 +5423,16 @@
                             "href": "a_z_names_terms/m/microsoft-account",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft account"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-agent-365",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Agent 365"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-agent-factory",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Agent Factory"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-ai-accelerator-for-sales",
@@ -5630,6 +5750,11 @@
                             "toc_title": "Microsoft Fabric"
                         },
                         {
+                            "href": "a_z_names_terms/m/microsoft-fabric-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Fabric IQ"
+                        },
+                        {
                             "href": "a_z_names_terms/m/microsoft-fabric-workload-development-kit",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Fabric Workload Development Kit"
@@ -5648,6 +5773,11 @@
                             "href": "a_z_names_terms/m/microsoft-flow",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Flow"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-foundry",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Foundry"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-government-cloud",
@@ -5833,6 +5963,11 @@
                             "href": "a_z_names_terms/m/microsoft-managed-desktop",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Managed Desktop"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-marketplace",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Marketplace"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-power-platform",
@@ -6272,6 +6407,11 @@
                                     "toc_title": "Microsoft Teams Rooms"
                                 },
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-teams/microsoft-teams-sdk",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Teams SDK"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-teams/payments-in-microsoft-teams",
                                     "permissioned-type": "private",
                                     "toc_title": "Payments in Microsoft Teams"
@@ -6648,6 +6788,11 @@
                             "href": "a_z_names_terms/o/object-anchors",
                             "permissioned-type": "private",
                             "toc_title": "Object Anchors"
+                        },
+                        {
+                            "href": "a_z_names_terms/o/observability",
+                            "permissioned-type": "private",
+                            "toc_title": "Observability"
                         },
                         {
                             "href": "a_z_names_terms/o/obsolete",
@@ -7845,6 +7990,11 @@
                             "toc_title": "relevant, relevance"
                         },
                         {
+                            "href": "a_z_names_terms/r/reliability-and-resilience-terms",
+                            "permissioned-type": "private",
+                            "toc_title": "reliability and resilience terms"
+                        },
+                        {
                             "href": "a_z_names_terms/r/remediation",
                             "permissioned-type": "private",
                             "toc_title": "remediation"
@@ -8220,6 +8370,11 @@
                             "toc_title": "security compute unit, SCU"
                         },
                         {
+                            "href": "a_z_names_terms/s/security-dashboard-for-ai",
+                            "permissioned-type": "private",
+                            "toc_title": "Security Dashboard for AI"
+                        },
+                        {
                             "href": "a_z_names_terms/s/security-information-and-event-management-siem",
                             "permissioned-type": "private",
                             "toc_title": "security information and event management, SIEM"
@@ -8408,6 +8563,11 @@
                             "href": "a_z_names_terms/s/signature-e-signature",
                             "permissioned-type": "private",
                             "toc_title": "signature, e-signature"
+                        },
+                        {
+                            "href": "a_z_names_terms/s/signing-transparency",
+                            "permissioned-type": "private",
+                            "toc_title": "Signing Transparency"
                         },
                         {
                             "href": "a_z_names_terms/s/simba-hive-odbc-driver",
@@ -9038,6 +9198,11 @@
                             "href": "a_z_names_terms/t/teams",
                             "permissioned-type": "private",
                             "toc_title": "Teams"
+                        },
+                        {
+                            "href": "a_z_names_terms/t/teams-mode",
+                            "permissioned-type": "private",
+                            "toc_title": "Teams Mode"
                         },
                         {
                             "href": "a_z_names_terms/t/telemetry",
@@ -9853,6 +10018,11 @@
                             "href": "a_z_names_terms/w/word",
                             "permissioned-type": "private",
                             "toc_title": "Word"
+                        },
+                        {
+                            "href": "a_z_names_terms/w/work-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Work IQ"
                         },
                         {
                             "href": "a_z_names_terms/w/work-or-school-account",
@@ -13984,7 +14154,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2662,
+        "count_of_node_with_href": 2696,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

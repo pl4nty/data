@@ -772,158 +772,6 @@
             }
         ]
     },
-    "MicrosoftTeamsPartitions": {
-        "ae": [
-            {
-                "partition": "ae01",
-                "percentage": 100
-            }
-        ],
-        "amer": [
-            {
-                "partition": "amer01",
-                "percentage": 0
-            },
-            {
-                "partition": "amer02",
-                "percentage": 0
-            },
-            {
-                "partition": "amer03",
-                "percentage": 100
-            },
-            {
-                "partition": "amer04",
-                "percentage": 0
-            }
-        ],
-        "apac": [
-            {
-                "partition": "apac01",
-                "percentage": 0
-            },
-            {
-                "partition": "apac02",
-                "percentage": 100
-            },
-            {
-                "partition": "apac03",
-                "percentage": 0
-            },
-            {
-                "partition": "apac04",
-                "percentage": 0
-            }
-        ],
-        "au": [
-            {
-                "partition": "au01",
-                "percentage": 100
-            }
-        ],
-        "br": [
-            {
-                "partition": "br01",
-                "percentage": 100
-            }
-        ],
-        "ca": [
-            {
-                "partition": "ca01",
-                "percentage": 100
-            }
-        ],
-        "ch": [
-            {
-                "partition": "ch01",
-                "percentage": 100
-            }
-        ],
-        "de": [
-            {
-                "partition": "de01",
-                "percentage": 100
-            }
-        ],
-        "emea": [
-            {
-                "partition": "emea01",
-                "percentage": 0
-            },
-            {
-                "partition": "emea02",
-                "percentage": 0
-            },
-            {
-                "partition": "emea03",
-                "percentage": 100
-            },
-            {
-                "partition": "emea04",
-                "percentage": 0
-            }
-        ],
-        "fr": [
-            {
-                "partition": "fr01",
-                "percentage": 100
-            }
-        ],
-        "gcc": [
-            {
-                "partition": "gcc01",
-                "percentage": 100
-            }
-        ],
-        "in": [
-            {
-                "partition": "in01",
-                "percentage": 100
-            }
-        ],
-        "jp": [
-            {
-                "partition": "jp01",
-                "percentage": 100
-            }
-        ],
-        "kr": [
-            {
-                "partition": "kr01",
-                "percentage": 100
-            }
-        ],
-        "no": [
-            {
-                "partition": "no01",
-                "percentage": 100
-            }
-        ],
-        "se": [
-            {
-                "partition": "se01",
-                "percentage": 100
-            }
-        ],
-        "sg": [
-            {
-                "partition": "sg01",
-                "percentage": 100
-            }
-        ],
-        "uk": [
-            {
-                "partition": "uk01",
-                "percentage": 100
-            }
-        ],
-        "za": [
-            {
-                "partition": "za01",
-                "percentage": 100
-            }
-        ]
-    },
     "MicrosoftTeamsPeopleCoreSvc": {
         "ringSettings": {
             "settings": {
@@ -1158,6 +1006,7 @@
                 "EnableDeleteGroupV2": true,
                 "EnableDenyNFTByDefault": true,
                 "EnableExtAuthCheckInNP": true,
+                "EnableExternalIdentitiesAlternatePaths": true,
                 "EnableExternallyAuthenticatedPropertySet": true,
                 "EnableGetGroupsForCascadeOperations": true,
                 "EnableGetTenantMetadataFromGraph": true,
@@ -1563,12 +1412,9 @@
         "EnableOmniChannelFlow": false,
         "EndpointDiscovery:PlsClient:EnableFaultInjection": false,
         "EnterpriseChatService:EnableFaultInjection": false,
-        "EnterpriseChatService:Enabled": true,
         "GdprChatService:EnableFaultInjection": false,
         "Interflow:EnableFaultInjection": false,
         "InviteVersionInPath": false,
-        "Invites:AllowedDomains:0": "live.com",
-        "Invites:AllowedDomains:1": "skype.com",
         "IsTestUser": false,
         "MaximumMessageLengthForSendingGeneral": 1000,
         "MaximumMessageLengthForSendingGuardian": 10000,
@@ -1697,15 +1543,12 @@
             },
             "Enabled": false
         },
-        "RedisCache:HttpCachingEnabled": false,
         "ResolveLink:CommunityOnNetworkLinkEnabled": false,
         "Scheduler:EnableFaultInjection": false,
         "SendGroupChatInviteeJoinedNotificationFromInviteService": false,
         "SettingStore:Client:EnableFaultInjection": false,
         "SkipMtlsAuthForMiddleTier": false,
         "SmsBridge:EnableFaultInjection": false,
-        "SpamDetect:ThreatScore:Threshold": 200,
-        "SpamDetect:ThreatScore:ThresholdType": "Max",
         "TeamsEmail:Client:EnableFaultInjection": false,
         "emailBody": 1,
         "emailBodyVersion": 7,
