@@ -1761,16 +1761,16 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 1209600,
+                    "IntervalSeconds": 604800,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
                 "NominationPeriod": {
-                    "IntervalSeconds": 604800,
+                    "IntervalSeconds": 432000,
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
+                "PercentageNumerator": 75,
                 "Type": 0
             },
             "PrimaryPriority": 3,
