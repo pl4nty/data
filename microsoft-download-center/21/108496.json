@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Test locale-Update",
+    "downloadDescription": "Test locale-Update",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "File 2.txt",
+            "url": "https://download.microsoft.com/download/a3bbaeab-0550-432d-9403-518625ecdf8c/dms2.txt",
+            "size": "10",
+            "version": "1",
+            "datePublished": "12/10/2025 5:37:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Test locale-Update",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "File 2.txt"
+    ],
+    "detailsSection_file_size": [
+        "10 bytes"
+    ],
+    "detailsSection_file_date": "12/10/2025",
+    "systemRequirementsSection": "Test locale-Update",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "Test locale-Update",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108496",
+    "downloadPreload": true
+}
