@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Exchange Server SE RTM SU4 (KB5071876)",
+    "downloadDescription": "Security Update for Exchange Server SE RTM SU4 (KB5071876)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-ko.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-ko.exe",
+            "size": "164607560",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-it.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-it.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-ja.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-ja.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-ru.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-ru.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-zh-hans.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-zh-hans.exe",
+            "size": "164607560",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server SE (KB5071876) Hash Table.docx",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/Exchange Server SE (KB5071876) Hash Table.docx",
+            "size": "17636",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-fr.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-fr.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-es.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-es.exe",
+            "size": "164607552",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-pt.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-pt.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-de.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-de.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-en.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-en.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5071876-x64-zh-hant.exe",
+            "url": "https://download.microsoft.com/download/7d3e1498-9b06-4be5-b5b5-d259967974f9/ExchangeSubscriptionEdition-KB5071876-x64-zh-hant.exe",
+            "size": "164607520",
+            "version": "15.02.2562.035",
+            "datePublished": "12/9/2025 5:37:56 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Please see the KB article for more information about security content in this update.</u></b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5071876",
+        "name": "KB5071876"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.2562.035",
+    "detailsSection_file_name": [
+        "ExchangeSubscriptionEdition-KB5071876-x64-ko.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-it.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-ja.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-ru.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-zh-hans.exe",
+        "Exchange Server SE (KB5071876) Hash Table.docx",
+        "ExchangeSubscriptionEdition-KB5071876-x64-fr.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-es.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-pt.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-de.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-en.exe",
+        "ExchangeSubscriptionEdition-KB5071876-x64-zh-hant.exe"
+    ],
+    "detailsSection_file_size": [
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "17.2 KB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB",
+        "157.0 MB"
+    ],
+    "detailsSection_file_date": "12/9/2025",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server Subscription Edition System Requirements and Prerequisites</b><br />\nFor information about Exchange Subscription Edition system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange Subscription Edition System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange Subscription Edition Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server Subscription Edition <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "We recommend that you restart your server before you install an update.\n\nThen, follow these steps:\n\n1.\tTo start the download, select the Download button, and then do one of the following:\no\ta. To start the installation immediately, temporarily disable any anti-virus software and then select Run.\no\tb. To copy the download file to your computer for installation at a later time, select Save.\n2.\tTemporarily disable any anti-virus software before starting the installation.\n3.\tAfter the installation is completed, re-enable the antivirus software, and then restart your computer. (The installation program may prompt you to restart. We strongly recommend that you restart the computer even if you are not prompted to do this.)\n\nIf problems occur during or after the installation, please see Fix failed Exchange Server updates (https://aka.ms/exupdatefaq) and run the Exchange Server Health Checker (https://aka.ms/ExchangeHealthChecker) tool. Check Exchange Team Blog (https://aka.ms/ExchangeTeamBlog) for latest news on updates. Microsoft Support is available for any persistent problems.",
+    "additionalInformationSection": "<b><u>Exchange Server Subscription Edition File Hash Information</u></b><br/><br/>\n\n<ol>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-de.exe<br/>\n    <b>Language:</b> <i>German (de-de)</i><br/>\n    <b>SHA 256:</b> B0DC65CEB23C521A6867A092618E445A92040A5A123A0EC05AAC543FAC6615E1\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-en.exe<br/>\n    <b>Language:</b> <i>English (en-us)</i><br/>\n    <b>SHA 256:</b> 7B0EB1EBFED3F8A1761934E64C925F177A318FE7EA0C63BE7EC22D67871C1187\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-es.exe<br/>\n    <b>Language:</b> <i>Spanish (es-es)</i><br/>\n    <b>SHA 256:</b> 1AA1F931D118031E434D0CC5174C8C6F162EAA587D8DC37A8E540BE7193EFDEF\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-fr.exe<br/>\n    <b>Language:</b> <i>French (fr-fr)</i><br/>\n    <b>SHA 256:</b> C19B15FE02C8582A97D726E0286CFEA27D44FDD7F9B016CDAF93B5229639CF4F\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-it.exe<br/>\n    <b>Language:</b> <i>Italian (it-it)</i><br/>\n    <b>SHA 256:</b> CE65197B70F317499111A1850DE4B55B51CEE1EA03A4E6AE4F05643A767D1496\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-ja.exe<br/>\n    <b>Language:</b> <i>Japanese (ja-jp)</i><br/>\n    <b>SHA 256:</b> A0C434F07EBEE8B77783E325EA1A44869FDC83A9D2EB5EEAAB6D24C7105537CD\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-ko.exe<br/>\n    <b>Language:</b> <i>Korean (ko-kr)</i><br/>\n    <b>SHA 256:</b> B714CAA3F9635DE6F19B420D20D7AF854B54A97329CC5E4C537151E64937EC11\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-pt.exe<br/>\n    <b>Language:</b> <i>Portuguese-Brazil (pt-br)</i><br/>\n    <b>SHA 256:</b> DC6CB81A86590B69ED373ED16B3CD5336862889598873DEF977A17A8D3A9C66B\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-ru.exe<br/>\n    <b>Language:</b> <i>Russian (ru-ru)</i><br/>\n    <b>SHA 256:</b> 04561326A616B94460E066BD2312F855768DC6F58E789CD8E93F050686DCFB53\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-zh-hans.exe<br/>\n    <b>Language:</b> <i>Chinese-China (zh-cn)</i><br/>\n    <b>SHA 256:</b> 60AACDE63CB3AE99F8244197617A03ADDA636383D57DB8F1ACA425BFA00D36EE\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5071876-x64-zh-hant.exe<br/>\n    <b>Language:</b> <i>Chinese-Taiwan (zh-tw)</i><br/>\n    <b>SHA 256:</b> ACB370CF4F12A2D01C71781789B22C4F39ACD124A006D63C19C56589FE96EFD2\n  </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108493",
+    "downloadPreload": true
+}

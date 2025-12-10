@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Test",
+    "downloadDescription": "Test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dms4.txt",
+            "url": "https://download.microsoft.com/download/1f98d3aa-10ab-4163-b507-cf9f3888d3ed/dms4.txt",
+            "size": "146",
+            "version": "1",
+            "datePublished": "12/10/2025 12:10:16 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "download.htm",
+            "url": "https://download.microsoft.com/download/1f98d3aa-10ab-4163-b507-cf9f3888d3ed/File 2.txt",
+            "size": "52732",
+            "version": "1",
+            "datePublished": "12/10/2025 12:10:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "dms4.txt",
+        "download.htm"
+    ],
+    "detailsSection_file_size": [
+        "146 bytes",
+        "51.5 KB"
+    ],
+    "detailsSection_file_date": "12/10/2025",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108497",
+    "downloadPreload": true
+}
