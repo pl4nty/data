@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\14cb3cad46ad9\1.luac 
+-- Command line: lua\!InfrastructureShared\175b3cb877277\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,17 +12,17 @@ if l_0_1 and l_0_1 == 0 then
   return mp.CLEAN
 end
 local l_0_3 = nil
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 then
-  l_0_3 = (this_sigattrlog[3]).utf8p1
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 then
+  l_0_3 = (this_sigattrlog[4]).utf8p1
 else
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 then
-    l_0_3 = (this_sigattrlog[4]).utf8p1
+  if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 then
+    l_0_3 = (this_sigattrlog[5]).utf8p1
   else
-    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 then
-      l_0_3 = (this_sigattrlog[5]).utf8p1
+    if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
+      l_0_3 = (this_sigattrlog[6]).utf8p1
     else
-      if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 then
-        l_0_3 = (this_sigattrlog[6]).utf8p1
+      if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
+        l_0_3 = (this_sigattrlog[7]).utf8p1
       end
     end
   end

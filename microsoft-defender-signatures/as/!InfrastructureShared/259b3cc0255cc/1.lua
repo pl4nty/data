@@ -1,37 +1,37 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1a3b3e12e8eda\1.luac 
+-- Command line: lua\!InfrastructureShared\259b3cc0255cc\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched then
+  if (this_sigattrlog[5]).matched then
     local l_0_0 = nil
   end
   -- DECOMPILER ERROR at PC23: Overwrote pending register: R0 in 'AssignReg'
 
   do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1 = (this_sigattrlog[3]).utf8p2
+    if not (this_sigattrlog[6]).matched or (this_sigattrlog[7]).matched then
+      local l_0_1 = (this_sigattrlog[6]).utf8p2
     end
     -- DECOMPILER ERROR at PC39: Overwrote pending register: R0 in 'AssignReg'
 
     do
-      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-        local l_0_2 = (this_sigattrlog[5]).utf8p2
+      if not (this_sigattrlog[8]).matched or (this_sigattrlog[9]).matched then
+        local l_0_2 = (this_sigattrlog[8]).utf8p2
       end
       -- DECOMPILER ERROR at PC55: Overwrote pending register: R0 in 'AssignReg'
 
       do
-        if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-          local l_0_3 = (this_sigattrlog[7]).utf8p2
+        if not (this_sigattrlog[10]).matched or (this_sigattrlog[11]).matched then
+          local l_0_3 = (this_sigattrlog[10]).utf8p2
         end
         -- DECOMPILER ERROR at PC71: Overwrote pending register: R0 in 'AssignReg'
 
         do
-          if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
-            local l_0_4 = (this_sigattrlog[9]).utf8p2
+          if not (this_sigattrlog[12]).matched or (this_sigattrlog[13]).matched then
+            local l_0_4 = (this_sigattrlog[12]).utf8p2
           end
           -- DECOMPILER ERROR at PC72: Confused about usage of register: R0 in 'UnsetPending'
 
