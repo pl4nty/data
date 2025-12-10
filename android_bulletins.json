@@ -1528,17 +1528,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-09-01",
         "Published": "September 2, 2025",
         "Patch level": "2025-09-01",
-        "CVE": "CVE-2025-48561",
-        "References": "A-399120953",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-09-01",
-        "Published": "September 2, 2025",
-        "Patch level": "2025-09-01",
         "CVE": "CVE-2025-48562",
         "References": "A-423815728",
         "Type": "ID",
@@ -93601,6 +93590,26 @@
         "Severity": "High",
         "Updated AOSP versions": "11",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-05",
+        "CVE": "CVE-2025-27064",
+        "References": "A-415774509",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-05",
+        "CVE": "CVE-2025-47321",
+        "References": "A-421893660",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-11-01",
