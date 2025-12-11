@@ -163,11 +163,11 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251209.9.0",
-        "CalendarCompanionMsitVersion": "1.20251203.6.0",
-        "CalendarCompanionProdVersion": "1.20251122.5.1",
+        "CalendarCompanionMsitVersion": "1.20251206.5.0",
+        "CalendarCompanionProdVersion": "1.20251129.3.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20251122.5.1",
+        "HostAppVersion": "1.20251129.3.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1663,6 +1663,7 @@
         "WriteSelfAssociationToPapi": true,
         "accountLinkingEnabled": true,
         "dummylokicopilotchildflight": true,
+        "enableBRS": true,
         "isProfanityCensorNotificationPanelEnabled": true
     },
     "Lps": {
@@ -1961,9 +1962,11 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
+        "PeopleCompanionRing": "Prod",
         "PeopleInTaskbarDFVersion": "1.20251210.1.0",
-        "PeopleInTaskbarMsitVersion": "1.20251201.2.0",
+        "PeopleInTaskbarMsitVersion": "1.20251202.7.0",
         "PeopleInTaskbarProdVersion": "1.20251201.2.0",
+        "PeopleInTaskbarVersion": "1.20251201.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
