@@ -362,6 +362,7 @@
         "FlightingV2": {
             "DisableMonotonicClock": true,
             "EnableAISettings": true,
+            "EnableAppInstanceExHandling": true,
             "EnableBypassStatefulForAll": true,
             "EnableBypassStatefulForMAMAppInst": true,
             "EnableNewMAMFPACheckinFlow": true,
