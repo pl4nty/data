@@ -1848,6 +1848,80 @@
             }
         }
     },
+    "ChillManageRewards": {
+        "Floodgate_Campaign_ManageRewards.5c4abe57-3f28-45f4-9931-726fe0875119": {
+            "CampaignId": "5c4abe57-3f28-45f4-9931-726fe0875119",
+            "EndTimeUtc": "2025-12-31T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 432000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 432000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-10-22T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "InitialVNextFeedback",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very satisfied",
+                                        "Satisfied",
+                                        "Neutral",
+                                        "Dissatisfied",
+                                        "Very Dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How would you rate this new experience?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What additional feedback do you have?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/5c4abe57-3f28-45f4-9931-726fe0875119/e6d3356e-1e35-4804-ad6b-3fa3b542c13a/Web-ManageRewards/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillMicrosoftDefenderXdr": {
         "Floodgate_Campaign_MicrosoftDefenderXDR.3beda878-1073-422b-b5e8-81f6347bcf2e": {
             "CampaignId": "3beda878-1073-422b-b5e8-81f6347bcf2e",

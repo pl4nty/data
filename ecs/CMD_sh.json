@@ -954,6 +954,7 @@
         "EnabledReplaceOldConnResultByNgCheckResult": true,
         "EnabledUserSettingsPersistence": true,
         "EnabledUserSettingsPersistenceConfiguration": true,
+        "EnabltSARMNSPEnforceMode": true,
         "EventSubscriptionAddResourceActionFailure": true,
         "ExpDivisionSettings": true,
         "ExpandDiskByCmdAgentPluginAsFallback": true,

@@ -1386,7 +1386,7 @@
         "OrganizationPrompts": {
             "IndividualContributorMe": [
                 {
-                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "CommandText": "How many employees are in <entity type='person'>person</entity> organization, grouped by managers and ICs?.",
                     "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "QueryAnnotations": [
@@ -1444,7 +1444,7 @@
             ],
             "ViewingIndividualContributor": [
                 {
-                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "CommandText": "How many employees are in <entity type='person'>person</entity> organization, grouped by managers and ICs?.",
                     "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "QueryAnnotations": [
@@ -1473,7 +1473,7 @@
             ],
             "ViewingManager": [
                 {
-                    "CommandText": "Show the number of people who report to <entity type='person'>person</entity>. Include the count of direct reports only. If the person has no direct reports, state this clearly in the output. Ensure the information is based on current organizational data.",
+                    "CommandText": "How many employees are in <entity type='person'>person</entity> organization, grouped by managers and ICs?.",
                     "DisplayText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "PillText": "How many direct reports does <entity type='person'>person</entity> have?",
                     "QueryAnnotations": [
@@ -1961,7 +1961,7 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
-        "PeopleInTaskbarDFVersion": "1.20251208.2.0",
+        "PeopleInTaskbarDFVersion": "1.20251209.1.0",
         "PeopleInTaskbarMsitVersion": "1.20251201.2.0",
         "PeopleInTaskbarProdVersion": "1.20251201.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,

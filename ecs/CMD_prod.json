@@ -303,7 +303,7 @@
         "EnableDeallocateFailedVm": true,
         "EnableDedicatedProvisionActionProcessorV2": true,
         "EnableDeferredCleanUp": true,
-        "EnableDelegatedRoleAssignment": false,
+        "EnableDelegatedRoleAssignment": true,
         "EnableDesiredQuotaUpsert": true,
         "EnableDeviceConnectivityAndUsage": true,
         "EnableDeviceConnectivityHistoryReportFLS": true,
