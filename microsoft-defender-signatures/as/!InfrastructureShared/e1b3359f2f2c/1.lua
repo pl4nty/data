@@ -29,9 +29,13 @@ if l_0_0 ~= nil and type(l_0_0) == "table" then
     end
   end
   do
+    ;
+    (bm.add_related_string)("uri_list", l_0_1, bm.RelatedStringBMReport)
     do
-      ;
-      (bm.add_related_string)("uri_list", l_0_1, bm.RelatedStringBMReport)
+      local l_0_11, l_0_12 = pcall(reportBmInfo)
+      if not l_0_11 and l_0_12 then
+        (bm.add_related_string)("bmInfoFailReason", tostring(l_0_12), bm.RelatedStringBMReport)
+      end
       do return mp.INFECTED end
       return mp.CLEAN
     end

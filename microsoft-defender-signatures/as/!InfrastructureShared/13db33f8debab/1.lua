@@ -1,10 +1,8 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6cb3e1d72404\1.luac 
+-- Command line: lua\!InfrastructureShared\13db33f8debab\1.luac 
 
 -- params : ...
 -- function num : 0
-sms_untrusted_process()
-add_parents()
 local l_0_0, l_0_1 = pcall(reportBmInfo)
 if not l_0_0 and l_0_1 then
   (bm.add_related_string)("bmInfoFailReason", tostring(l_0_1), bm.RelatedStringBMReport)
