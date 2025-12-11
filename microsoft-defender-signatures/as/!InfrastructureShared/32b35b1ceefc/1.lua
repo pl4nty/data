@@ -22,39 +22,49 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
     if l_0_0.Dll_Path then
       (bm.add_threat_file)(l_0_0.Dll_Path)
     end
+    local l_0_2, l_0_3 = pcall(reportBmInfo)
+    -- DECOMPILER ERROR at PC58: Overwrote pending register: R5 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC59: Overwrote pending register: R6 in 'AssignReg'
+
+    if not l_0_2 and l_0_3 then
+      (bm.add_related_string)("WinHex.exe", ("EBWebView.exe")(l_0_3), bm.RelatedStringBMReport)
+    end
     return mp.INFECTED
   end
-  local l_0_2 = (bm.get_imagepath)()
-  if not l_0_2 then
-    return mp.CLEAN
-  end
-  local l_0_3 = (MpCommon.GetOriginalFileName)(l_0_2)
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R5 in 'AssignReg'
-
   do
-    if not l_0_3 then
-      local l_0_4 = (sysio.GetPEVersionInfo)("WinHex.exe")
-      -- DECOMPILER ERROR at PC76: Overwrote pending register: R6 in 'AssignReg'
-
-      if l_0_4 and l_0_4.OriginalFilename then
-        l_0_3 = l_0_4.OriginalFilename .. ("EBWebView.exe")(l_0_4.FileDescription)
-      end
+    local l_0_4 = (bm.get_imagepath)()
+    if not l_0_4 then
+      return mp.CLEAN
     end
+    local l_0_5 = (MpCommon.GetOriginalFileName)(l_0_4)
     do
-      local l_0_5 = {}
-      -- DECOMPILER ERROR at PC83: No list found for R4 , SetList fails
+      if not l_0_5 then
+        local l_0_6 = (sysio.GetPEVersionInfo)(l_0_4)
+        if l_0_6 and l_0_6.OriginalFilename then
+          l_0_5 = l_0_6.OriginalFilename .. tostring(l_0_6.FileDescription)
+        end
+      end
+      local l_0_7 = {}
+      -- DECOMPILER ERROR at PC99: No list found for R4 , SetList fails
 
-      -- DECOMPILER ERROR at PC86: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC102: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC87: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC103: Overwrote pending register: R6 in 'AssignReg'
 
-      if l_0_3 and ("update.exetrend")((("vpnserver.*softether").lower)(l_0_3), l_0_5, false) then
+      if l_0_5 and ("update.exetrend")((("vpnserver.*softether").lower)(l_0_5), l_0_7, false) then
         if l_0_0.Dll_Path then
           (bm.add_threat_file)(l_0_0.Dll_Path)
         end
+        local l_0_8, l_0_9 = pcall(reportBmInfo)
+        if not l_0_8 and l_0_9 then
+          (bm.add_related_string)("bmInfoFailReason", tostring(l_0_9), bm.RelatedStringBMReport)
+        end
         return mp.INFECTED
       end
-      return mp.CLEAN
+      do
+        return mp.CLEAN
+      end
     end
   end
 end
