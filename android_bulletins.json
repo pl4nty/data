@@ -92569,6 +92569,94 @@
         "Patch level": "2021-01-01"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2024-6790",
+        "References": "A-466101848",
+        "Type": "DoS",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0050",
+        "References": "A-466100932",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0427",
+        "References": "A-466102474",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0819",
+        "References": "A-466107233",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2024-6790",
+        "References": "A-466102112",
+        "Type": "DoS",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV (4K)"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0050",
+        "References": "A-466093577",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV (4K)"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0427",
+        "References": "A-466102477",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV (4K)"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2025-12-01",
+        "Published": "December 9, 2025",
+        "Patch level": "2025-12-01",
+        "CVE": "CVE-2025-0819",
+        "References": "A-466104541",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "ARM",
+        "Component": "Chromecast with Google TV (4K)"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2024-12-01",
         "Published": "December 6, 2025",
         "Patch level": "2024-12-01",
