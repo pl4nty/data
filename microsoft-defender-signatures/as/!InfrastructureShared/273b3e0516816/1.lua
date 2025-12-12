@@ -35,7 +35,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
       if l_0_16 == bm.RELATIONSHIP_CREATED then
         local l_0_17 = (string.lower)(l_0_15.cmd_line)
         local l_0_18 = (string.sub)(l_0_17, -l_0_7)
-        if l_0_8 == l_0_18 then
+        if l_0_8 == l_0_18 or (string.find)(l_0_0, l_0_18, 1, true) then
           (bm.trigger_sig)("StartedViaRUNMRU.gen", "StartedViaRUNMRU.gen", l_0_15.ppid)
           ;
           (bm.trigger_sig_target_propagate)("ProcessChainViaRUNMRU", "ProcessChainViaRUNMRU", l_0_15.ppid)
