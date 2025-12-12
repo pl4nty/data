@@ -337,7 +337,6 @@
         "EnableCleanUpForNewHostPool": true,
         "EnableCleanUpLegacyRasEntities": true,
         "EnableCleanUpOnceProvisionFailed": true,
-        "EnableCleanupEnrollmentsRegistry": true,
         "EnableCleanupExpiredSnapshotsTimer": true,
         "EnableCleanupPITAfterRecover": true,
         "EnableCloudAppBackend": true,
