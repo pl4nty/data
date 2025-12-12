@@ -2732,6 +2732,7 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["msvcp140.dll"] = mp.INFECTED
   l_88_1["d3dx9_43.dll"] = mp.INFECTED
   l_88_1["atom.dll"] = mp.INFECTED
+  l_88_1["foxsdku32w.dll"] = mp.INFECTED
   l_88_1["msedgeupdate.dll"] = mp.INFECTED
   l_88_1["msedge_elf.dll"] = mp.INFECTED
   l_88_1["chrome_elf.dll"] = mp.INFECTED
