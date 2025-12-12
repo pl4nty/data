@@ -508,6 +508,7 @@
         "EnablePolicyCrossPoolMove": true,
         "EnablePolicyCrossPoolMove-PolicyService": true,
         "EnablePolicyFilter": true,
+        "EnablePolicyFunctionLock": true,
         "EnablePolicyHostPoolMappingForEnterprise": true,
         "EnablePolicyName": true,
         "EnablePolicyPamoViewForApex": true,
@@ -975,6 +976,7 @@
         "UseArrayContainsForANCInUse": true,
         "ValidateImageSizeForFrontline": true,
         "ValidationEnvironmentNeedToChange": true,
+        "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
             "GUI": {
