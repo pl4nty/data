@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15120839,
+    "size": 15120812,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32573871,
-    "file_count": 3987
+    "size": 32592733,
+    "file_count": 3988
   },
   {
     "name": "boringssl",
@@ -156,8 +156,8 @@
   },
   {
     "name": "depot_tools",
-    "size": 6966313,
-    "file_count": 59
+    "size": 6967839,
+    "file_count": 66
   },
   {
     "name": "devscripts",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43380755,
+    "size": 43381066,
     "file_count": 3200
   },
   {
@@ -396,8 +396,8 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1061651,
-    "file_count": 87
+    "size": 1275412,
+    "file_count": 88
   },
   {
     "name": "libgudev",
@@ -456,7 +456,7 @@
   },
   {
     "name": "libxslt",
-    "size": 410512,
+    "size": 412464,
     "file_count": 18
   },
   {
@@ -581,7 +581,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3969404,
+    "size": 3971476,
     "file_count": 583
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "skia",
-    "size": 3544484,
+    "size": 3544749,
     "file_count": 1184
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6899646,
+    "size": 6914418,
     "file_count": 182
   },
   {
