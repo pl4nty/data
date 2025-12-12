@@ -843,6 +843,7 @@
         "EnableRemoveOneCoreSKUForResize": true,
         "EnableRemoveReviewButton": true,
         "EnableRenamedExternalPartnerGraphApi": true,
+        "EnableRenamedExternalPartnerGraphApi_legacy": true,
         "EnableReplaceDSC": true,
         "EnableReplaceQueryOperationStatus": true,
         "EnableReprovisionRestoreFlow": true,
