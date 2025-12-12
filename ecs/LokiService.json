@@ -1617,7 +1617,8 @@
             "ResearcherHomePageQuery",
             "KYTChatHistoryContentQuery",
             "AnalystChatHistoryQuery",
-            "OdspFilesAgentQuery"
+            "OdspFilesAgentQuery",
+            "EduLearnAgentQuery"
         ],
         "SydneyProviderAllowList_ProviderTypes": [
             "GenerateAiAboutMeProvider"

@@ -627,6 +627,7 @@
         "EnableHideMoveHostPoolActionHistory": true,
         "EnableHidePreviewString": true,
         "EnableHostBasedEncryption": true,
+        "EnableHostPoolBackfillWorkspaceHoboTag": true,
         "EnableHostPoolHighDpiOptimizationBackfill": true,
         "EnableHostPoolKeystrokeRejection": true,
         "EnableHostPoolKeystrokeRejectionBackfill": true,
