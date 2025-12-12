@@ -96,6 +96,7 @@
                 "SVC_AdHocQuery",
                 "SVC_AdminApproval",
                 "SVC_AdminTasks",
+                "SVC_AdvAppMgmt",
                 "SVC_AMPAASSupport",
                 "SVC_AndroidSpecialized",
                 "SVC_AndroidSync",
@@ -506,6 +507,7 @@
             "EnableWindowsRestore": true,
             "EnrollmentFailureReportUserNotLicensedFilter": true,
             "EnrollmentUserAbandonmentBladeDeprecation": true,
+            "NewSkipKeysFlight": true,
             "TandCSyncButtonEnableFlight": true
         }
     },
