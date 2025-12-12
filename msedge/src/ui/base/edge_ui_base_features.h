@@ -480,7 +480,6 @@ extern void TriggerUsageFeatureGroupEdgeMTHoldout(const base::Feature& feature);
 
 // Refreshed Equal holdout which will be controlled via CT. By default
 // it's enabled for all users
-#if BUILDFLAG(IS_WIN)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeEqualRefreshedExperience);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -489,7 +488,6 @@ bool IsRefreshedLightningExperienceEnabled(const base::Feature& feature,
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 void TriggerUsageIfRefreshedLightningExperienceEnabled(
     const base::Feature& feature);
-#endif  // BUILDFLAG(IS_WIN)
 
 // EdgeENPDyn Holdout Feature Flags and Triggers.
 BASE_DECLARE_FIRST_RUN_FEATURE(kFeatureGroupEdgeENPDynHoldout);
