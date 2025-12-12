@@ -60,7 +60,6 @@
         "azureml://registries/azureml-nvidia/models/llama-3.3-70b-instruct-nim-microservice",
         "azureml://registries/azureml-nvidia/models/llama-3.1-8b-instruct-nim-microservice",
         "azureml://registries/azureml-nvidia/models/deepseek-r1-distill-llama-8b-nim-microservice",
-        "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-nvidia/models/mistral-7b-instruct-v0.3-nim-microservice",
         "azureml://registries/azureml-nvidia/models/mixtral-8x7b-instruct-v0.1-nim-microservice"
     ],
@@ -213,6 +212,8 @@
         "azureml://registries/azure-openai/models/gpt-5.1-codex",
         "azureml://registries/azure-openai/models/gpt-5.1-codex-mini",
         "azureml://registries/azure-openai/models/gpt-5.1-codex-max",
+        "azureml://registries/azure-openai/models/gpt-5.2",
+        "azureml://registries/azure-openai/models/gpt-5.2-chat",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -226,6 +227,7 @@
         "azureml://registries/azureml-deepseek/models/deepseek-v3",
         "azureml://registries/azureml-deepseek/models/deepseek-v3-0324",
         "azureml://registries/azureml-deepseek/models/deepseek-v3.1",
+        "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
@@ -336,6 +338,8 @@
         "gpt-5-reasoning-alpha",
         "gpt-5.1",
         "gpt-5.1-chat",
+        "gpt-5.2",
+        "gpt-5.2-chat",
         "kimi-k2-thinking"
     ],
     "unauthHFLinkAssetIds": [],

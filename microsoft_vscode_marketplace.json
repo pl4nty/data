@@ -1704,6 +1704,13 @@
                 "id": "quarkdown.quarkdown-vscode"
             }
         },
+        "patrickt.hledger-tools": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "hledger-lsp",
+                "id": "patrickt.hledger-lsp-vscode"
+            }
+        },
         "pcanella.marko": {
             "disallowInstall": true,
             "extension": {
@@ -2122,6 +2129,13 @@
             "extension": {
                 "displayName": "eps-server",
                 "id": "zuhanit.eps-server"
+            }
+        },
+        "zxh404.vscode-proto3": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Protobuf VSC",
+                "id": "DrBlury.protobuf-vsc"
             }
         }
     },
