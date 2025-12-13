@@ -15,12 +15,12 @@
     </o:service>
     <o:service o:name="ClViewClientHelpId" o:authentication="1">
       <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/InAppHelp" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientHome" o:authentication="1">
       <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/InAppHelp" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientTemplate">
@@ -28,12 +28,12 @@
     </o:service>
     <o:service o:name="ClViewClientSearch" o:authentication="1">
       <o:url>https://help.svc.cloud.microsoft/client/results?fullframe=yes</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/InAppHelp" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientSearchRedir" o:authentication="1">
       <o:url>https://support.office.microsoft.com/client/results</o:url>
-      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/auth/signin" o:headerValue="Bearer {}"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://help.svc.cloud.microsoft/InAppHelp" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="447f78cd-93d4-4fe0-b8bd-9eca586cf156" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="ClViewClientUpdate">
@@ -2208,7 +2208,7 @@
     <o:token o:name="TestInProd.WebHost">officeappsint.com</o:token>
     <o:token o:name="TestInProdRoaming.WebHost">officeapps.live.com</o:token>
     <o:token o:name="LifecycleBaseHost">lifecycle.office.com</o:token>
-    <o:token o:name="MAX.AuthHost">https://help.svc.cloud.microsoft/auth/signin</o:token>
+    <o:token o:name="MAX.AuthHost">https://help.svc.cloud.microsoft/InAppHelp</o:token>
     <o:token o:name="MAX.BaseHost">help.svc.cloud.microsoft</o:token>
     <o:token o:name="MAX.ResourceId">447f78cd-93d4-4fe0-b8bd-9eca586cf156</o:token>
     <o:token o:name="HARMONYMT.ResourceId">https://harmony.microsoft.com</o:token>
