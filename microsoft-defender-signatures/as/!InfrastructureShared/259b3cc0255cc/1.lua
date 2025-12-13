@@ -54,8 +54,10 @@ do
           do
             if not l_0_8 then
               local l_0_9 = (sysio.GetPEVersionInfo)(l_0_5)
-              if not l_0_9 or not l_0_9.OriginalFilename or l_0_9.OriginalFilename == "" then
+              if not l_0_7 and (not l_0_9 or not l_0_9.OriginalFilename or l_0_9.OriginalFilename == "") then
                 (bm.add_related_string)("OriginalFileName_PeParser", "null", bm.RelatedStringBMReport)
+                ;
+                (bm.add_threat_file)(l_0_5)
                 return mp.INFECTED
               end
               l_0_8 = l_0_9.OriginalFilename
@@ -70,6 +72,8 @@ do
             if l_0_7 and l_0_8 == "register-cimprovider2.exe" and l_0_10 == "register-cimprovider.exe" then
               return mp.CLEAN
             end
+            ;
+            (bm.add_threat_file)(l_0_5)
             ;
             (bm.add_related_string)("OriginalFileName_PeParser", l_0_5 .. "|" .. l_0_8, bm.RelatedStringBMReport)
             return mp.INFECTED
