@@ -473,6 +473,11 @@
             "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
         }
     },
+    "UX_Explorer": {
+        "FlightingV2": {
+            "EnableMultiSelectLibrary": true
+        }
+    },
     "UX_MAM": {
         "FlightingV2": {
             "EnableNewWindowsClipboardSharingStates": true
