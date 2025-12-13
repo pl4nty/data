@@ -1217,7 +1217,7 @@
             "EnableAMSImageDownloadForChatAgent": false
         },
         "TeamsChatAgentAL": {
-            "Endpoint": "https://augloop.svc.cloud.microsoft"
+            "DFEndpoint": "https://augloop.svc.cloud.microsoft"
         }
     },
     "TeamsCopilotAggregator_UserCtx": {
