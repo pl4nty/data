@@ -1489,6 +1489,20 @@
                     "IsEnabled": true
                 }
             ],
+            "meetingAgendaSkill_ProactiveAgendaFetchCombinedPrompt": [
+                {
+                    "Flight": "AS.enableAgendaSkillSyntheticAgendaDetection",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionForRecurringMeeting",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionForRecurringMeetingChatAndInvite",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_ProactiveAgendaFetchCombinedPrompt_PartialChat": [
                 {
                     "Flight": "AS.enableBypassConsentLogicForChat",
