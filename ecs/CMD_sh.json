@@ -325,6 +325,7 @@
         "EnableCdpImageBackfill": true,
         "EnableCdpImageBackfillFunction": true,
         "EnableCdpImageUpload": true,
+        "EnableCfarDataRetrieval": true,
         "EnableCfarProvisionAssessment": true,
         "EnableCheckAvailableVMSizeInVMMigration": true,
         "EnableCheckAzureADKerberosForHAADJProvision": true,
