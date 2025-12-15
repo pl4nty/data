@@ -36,7 +36,7 @@
   },
   {
     "name": "android_toolchain",
-    "size": 563777,
+    "size": 563853,
     "file_count": 9
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32592733,
-    "file_count": 3988
+    "size": 32595085,
+    "file_count": 3990
   },
   {
     "name": "boringssl",
@@ -226,7 +226,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 95765828,
+    "size": 95767662,
     "file_count": 11071
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "name": "harfbuzz-ng",
-    "size": 298259,
+    "size": 298943,
     "file_count": 32
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 46507,
+    "size": 47786,
     "file_count": 40
   },
   {
@@ -381,8 +381,8 @@
   },
   {
     "name": "libc++",
-    "size": 12314854,
-    "file_count": 1763
+    "size": 12329100,
+    "file_count": 1764
   },
   {
     "name": "libc++abi",
@@ -581,7 +581,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3971476,
+    "size": 3973922,
     "file_count": 583
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6914418,
+    "size": 6915418,
     "file_count": 182
   },
   {
