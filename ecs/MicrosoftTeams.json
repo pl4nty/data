@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1324,6 +1324,12 @@
             "LiveMeetingNotesV2Skill": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableLiveNotesV2Skill",
+                    "IsEnabled": true
+                }
+            ],
+            "MARSSkillQualityEvalExp": [
+                {
+                    "Flight": "EnableTeamsQualityEvaluatorForMars",
                     "IsEnabled": true
                 }
             ],
