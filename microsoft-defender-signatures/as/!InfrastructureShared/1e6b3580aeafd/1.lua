@@ -52,25 +52,85 @@ if (this_sigattrlog[10]).matched then
           l_0_16 = bm
           l_0_16 = l_0_16.RELATIONSHIP_INJECTION
           if l_0_15 == l_0_16 then
-            l_0_15 = bm
-            l_0_15 = l_0_15.add_related_string
-            l_0_16 = "InjectedBy"
-            l_0_15(l_0_16, l_0_14.image_path or "", bm.RelatedStringBMReport)
-            l_0_15 = bm
-            l_0_15 = l_0_15.add_related_string
-            l_0_16 = "File_Created"
-            l_0_15(l_0_16, l_0_0, bm.RelatedStringBMReport)
-            l_0_15 = mp
-            l_0_15 = l_0_15.INFECTED
-            return l_0_15
+            l_0_15 = l_0_14.image_path
+            if l_0_15 then
+              l_0_15 = contains
+              l_0_16 = l_0_14.image_path
+              l_0_15 = l_0_15(l_0_16, "wbem\\WmiPrvSE.exe")
+              if l_0_15 then
+                l_0_15 = bm
+                l_0_15 = l_0_15.get_current_process_startup_info
+                l_0_15 = l_0_15()
+                local l_0_17 = nil
+                if l_0_15 then
+                  l_0_16 = l_0_15.ppid
+                  if l_0_16 then
+                    l_0_16 = mp
+                    l_0_16 = l_0_16.GetProcessCommandLine
+                    l_0_17 = l_0_15.ppid
+                    l_0_16 = l_0_16(l_0_17)
+                    if not l_0_16 then
+                      l_0_16 = ""
+                      local l_0_18 = nil
+                    end
+                    do
+                      do
+                        do
+                          l_0_17 = contains
+                          l_0_17 = l_0_17(l_0_16, "svchost.exe -k secsvcs")
+                          if l_0_17 then
+                            l_0_17 = mp
+                            l_0_17 = l_0_17.CLEAN
+                            return l_0_17
+                          end
+                          l_0_15 = bm
+                          l_0_15 = l_0_15.add_related_string
+                          l_0_16 = "InjectedBy"
+                          l_0_15(l_0_16, l_0_14.image_path or "", bm.RelatedStringBMReport)
+                          l_0_15 = bm
+                          l_0_15 = l_0_15.add_related_string
+                          l_0_16 = "File_Created"
+                          l_0_15(l_0_16, l_0_0, bm.RelatedStringBMReport)
+                          l_0_15 = mp
+                          l_0_15 = l_0_15.INFECTED
+                          do return l_0_15 end
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out DO_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out DO_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                          -- DECOMPILER ERROR at PC106: LeaveBlock: unexpected jumping out IF_STMT
+
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
           end
         end
       end
-      do
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC78: Confused about usage of register R4 for local variables in 'ReleaseLocals'
+      do return mp.CLEAN end
+      -- DECOMPILER ERROR at PC111: Confused about usage of register R4 for local variables in 'ReleaseLocals'
 
-      end
     end
   end
 end

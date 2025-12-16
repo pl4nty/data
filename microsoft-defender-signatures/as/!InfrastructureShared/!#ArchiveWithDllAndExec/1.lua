@@ -30,7 +30,36 @@ end
 for l_0_13,l_0_14 in ipairs(l_0_9) do
   if l_0_14.value == l_0_1 then
     set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_0 .. "|" .. l_0_14.key), false)
-    return mp.INFECTED
+    local l_0_15 = (string.match)(l_0_2, "(.-)%->")
+    local l_0_16 = (string.match)(l_0_14.key, "([^\\>]+)$")
+    if l_0_15 and l_0_16 then
+      local l_0_17, l_0_18 = nil, nil
+      if l_0_6 == ".exe" then
+        l_0_18 = l_0_16
+        l_0_17 = l_0_15
+      else
+        l_0_18 = l_0_15
+        l_0_17 = l_0_16
+      end
+      local l_0_19, l_0_20, l_0_21 = IsDllInExpectedPath(l_0_17, l_0_1, l_0_18)
+      if l_0_21 then
+        (mp.set_mpattribute)("DllSideLoading_VulnerableExe->" .. l_0_21)
+      end
+      if l_0_19 then
+        (mp.set_mpattribute)("DllSideLoading_VulnerableDll->" .. l_0_19)
+      end
+    end
+    do
+      do
+        do return mp.INFECTED end
+        -- DECOMPILER ERROR at PC140: LeaveBlock: unexpected jumping out DO_STMT
+
+        -- DECOMPILER ERROR at PC140: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+        -- DECOMPILER ERROR at PC140: LeaveBlock: unexpected jumping out IF_STMT
+
+      end
+    end
   end
 end
 return mp.CLEAN
