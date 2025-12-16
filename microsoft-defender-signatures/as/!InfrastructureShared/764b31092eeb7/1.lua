@@ -29,45 +29,58 @@ if ((this_sigattrlog[7]).matched and not (this_sigattrlog[8]).matched) or not l_
 end
 -- DECOMPILER ERROR at PC55: Overwrote pending register: R2 in 'AssignReg'
 
-local l_0_3 = "c:\\\\programdata\\microsoft\\\\windows defender.*(\\.exe|\\.sys|\\.dll|\\.mui)(_bak)?$|c:\\\\.*\\\\microsoft\\\\windows defender advanced threat protection\\\\.*(\\.exe|\\.sys|\\.dll|\\.mui)(_bak)?$"
+local l_0_3 = "c:\\\\programdata\\\\microsoft\\\\windows defender.*(\\.exe|\\.sys|\\.dll|\\.mui)(_bak)?$|c:\\\\.*\\\\microsoft\\\\windows defender advanced threat protection\\\\.*(\\.exe|\\.sys|\\.dll|\\.mui)(_bak)?$"
 local l_0_4 = "c:\\\\programdata\\\\microsoft(_bak)?$|c:\\\\program files\\\\windows defender advanced threat protection(_bak)?$"
 -- DECOMPILER ERROR at PC58: Overwrote pending register: R5 in 'AssignReg'
 
 local l_0_5 = "Windows\\System32\\spoolsv.exe"
 if (MpCommon.StringRegExpSearch)(l_0_3, l_0_2) or (MpCommon.StringRegExpSearch)(l_0_4, l_0_2) or (MpCommon.StringRegExpSearch)(l_0_5, l_0_2) then
   (bm.add_related_string)("MDE_Path", l_0_2, bm.RelatedStringBMReport)
-  local l_0_6 = add_parents()
-  if table_contains(l_0_6, "setup.exe", true) then
-    return mp.CLEAN
-  end
-  ;
-  (bm.add_related_string)("Parents", safeJsonSerialize(l_0_6), bm.RelatedStringBMReport)
-  if not (string.find)(l_0_2, "advanced threat protection", 1, true) then
-    (bm.add_related_string)("AV", "True", bm.RelatedStringBMReport)
-    l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
-    if l_0_1 then
-      local l_0_7 = contains
-      local l_0_8 = l_0_1
-      local l_0_9 = {}
-      -- DECOMPILER ERROR at PC137: No list found for R9 , SetList fails
+  do
+    if not add_parents() then
+      local l_0_6 = {}
+    end
+    local l_0_7 = nil
+    if (bm.get_current_process_startup_info)() and ((bm.get_current_process_startup_info)()).ppid then
+      local l_0_8 = nil
+      local l_0_9 = checkParentCmdlineCaseInsensitive
+      local l_0_10 = l_0_8.ppid
+      local l_0_11 = {}
+      -- DECOMPILER ERROR at PC107: No list found for R10 , SetList fails
 
-      -- DECOMPILER ERROR at PC141: Overwrote pending register: R7 in 'AssignReg'
+      -- DECOMPILER ERROR at PC108: Overwrote pending register: R11 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC142: Overwrote pending register: R7 in 'AssignReg'
-
-      if not l_0_7 then
-        l_0_7(l_0_8, l_0_9)
+      l_0_9 = l_0_9(l_0_10, l_0_11, {"setup.exe", ""})
+      if l_0_9 then
+        l_0_9 = mp
+        l_0_9 = l_0_9.CLEAN
+        return l_0_9
       end
     end
-  end
-  do
     do
+      ;
+      (bm.add_related_string)("Parents", safeJsonSerialize(l_0_7), bm.RelatedStringBMReport)
+      if not (string.find)(l_0_2, "advanced threat protection", 1, true) then
+        (bm.add_related_string)("AV", "True", bm.RelatedStringBMReport)
+        l_0_1 = (MpCommon.PathToWin32Path)(l_0_1)
+        if l_0_1 then
+          local l_0_12 = nil
+          local l_0_13 = contains
+          local l_0_14 = l_0_1
+          l_0_13 = l_0_13(l_0_14, {"C:\\ProgramData\\", "C:\\Program Files", "c:\\windows\\"})
+          if not l_0_13 then
+            l_0_13 = bm
+            l_0_13 = l_0_13.trigger_sig
+            l_0_14 = "MpTamperPFRO_Susp"
+            l_0_13(l_0_14, l_0_2)
+          end
+        end
+      end
       do
-        -- DECOMPILER ERROR at PC146: Overwrote pending register: R7 in 'AssignReg'
-
-        do return l_0_7.INFECTED end
-        do return mp.CLEAN end
-        -- WARNING: undefined locals caused missing assignments!
+        do
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
       end
     end
   end
