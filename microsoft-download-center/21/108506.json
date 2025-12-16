@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Edit DMS Releases",
+    "downloadDescription": "Edit DMS Releases",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "output005 (1).txt",
+            "url": "https://download.microsoft.com/download/76a59d75-88ea-46c2-996d-1a8f2c3f5b63/output005 (1).txt",
+            "size": "3",
+            "version": "1",
+            "datePublished": "12/16/2025 5:50:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "output006.txt",
+            "url": "https://download.microsoft.com/download/76a59d75-88ea-46c2-996d-1a8f2c3f5b63/output006.txt",
+            "size": "4",
+            "version": "1",
+            "datePublished": "12/16/2025 5:50:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Edit DMS Releases",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "output005 (1).txt",
+        "output006.txt"
+    ],
+    "detailsSection_file_size": [
+        "3 bytes",
+        "4 bytes"
+    ],
+    "detailsSection_file_date": "12/16/2025",
+    "systemRequirementsSection": "Edit DMS Releases",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "Edit DMS Releases",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108506",
+    "downloadPreload": true
+}
