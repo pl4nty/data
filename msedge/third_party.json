@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 11133418,
+    "size": 11133426,
     "file_count": 171
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32595085,
-    "file_count": 3990
+    "size": 32613956,
+    "file_count": 3992
   },
   {
     "name": "boringssl",
@@ -396,8 +396,8 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1275412,
-    "file_count": 88
+    "size": 1310197,
+    "file_count": 89
   },
   {
     "name": "libgudev",
@@ -465,6 +465,11 @@
     "file_count": 3
   },
   {
+    "name": "litert",
+    "size": 177774,
+    "file_count": 60
+  },
+  {
     "name": "llvm-build",
     "size": 222338886,
     "file_count": 343
@@ -481,7 +486,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 294673,
+    "size": 294832,
     "file_count": 47
   },
   {
@@ -496,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18760171,
+    "size": 18837483,
     "file_count": 19
   },
   {
@@ -581,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3973922,
+    "size": 3975986,
     "file_count": 583
   },
   {
@@ -646,7 +651,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4572377,
+    "size": 4572932,
     "file_count": 83
   },
   {
@@ -751,7 +756,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6915418,
+    "size": 6916247,
     "file_count": 182
   },
   {

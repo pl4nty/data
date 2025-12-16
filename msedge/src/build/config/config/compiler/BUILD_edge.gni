@@ -85,7 +85,7 @@ template("edge_overlay_config_default_warnings") {
     forward_variables_from(invoker, "*", [])
 
     # Edge only enables at_exit distructor warning on win
-    if (!is_win) {
+    if (!is_win && !is_mac) {
       # TODO(crbug.com/40031409): We are migrating towards making this warning
       # enabled by default. Once that is completed, the warning
       # should always be added for clang builds.
