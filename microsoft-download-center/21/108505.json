@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Test en-us",
+    "downloadDescription": "Test en-us",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "edit_testcase.json",
+            "url": "https://download.microsoft.com/download/5041f154-2dcb-4071-a9f1-22fa0a6887dd/edit_testcase.json",
+            "size": "11765",
+            "version": "1",
+            "datePublished": "12/16/2025 5:32:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dms2.txt",
+            "url": "https://download.microsoft.com/download/5041f154-2dcb-4071-a9f1-22fa0a6887dd/dms2.txt",
+            "size": "6757",
+            "version": "1",
+            "datePublished": "12/16/2025 5:32:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dms3.txt",
+            "url": "https://download.microsoft.com/download/5041f154-2dcb-4071-a9f1-22fa0a6887dd/dms3.txt",
+            "size": "448",
+            "version": "1",
+            "datePublished": "12/16/2025 5:32:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "dms4.txt",
+            "url": "https://download.microsoft.com/download/5041f154-2dcb-4071-a9f1-22fa0a6887dd/dms4.txt",
+            "size": "146",
+            "version": "1",
+            "datePublished": "12/16/2025 5:32:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test en-us",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "edit_testcase.json",
+        "dms2.txt",
+        "dms3.txt",
+        "dms4.txt"
+    ],
+    "detailsSection_file_size": [
+        "11.5 KB",
+        "6.6 KB",
+        "448 bytes",
+        "146 bytes"
+    ],
+    "detailsSection_file_date": "12/16/2025",
+    "systemRequirementsSection": "Test en-us",
+    "systemRequirementsSection_supportedOS": [
+        "iOS"
+    ],
+    "installInstructionSection": "Test en-us",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108505",
+    "downloadPreload": true
+}
