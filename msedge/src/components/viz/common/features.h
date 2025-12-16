@@ -84,7 +84,6 @@ VIZ_COMMON_EXPORT extern const base::FeatureParam<std::string>
     kWebViewADPFSocManufacturerAllowlist;
 VIZ_COMMON_EXPORT extern const base::FeatureParam<std::string>
     kWebViewADPFSocManufacturerBlocklist;
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kWebViewEnableADPFRendererMain);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kWebViewEnableADPFGpuMain);
 #endif
 #if BUILDFLAG(IS_APPLE)
@@ -118,10 +117,7 @@ VIZ_COMMON_EXPORT extern const base::FeatureParam<std::string>
     kADPFSocManufacturerAllowlist;
 VIZ_COMMON_EXPORT extern const base::FeatureParam<std::string>
     kADPFSocManufacturerBlocklist;
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFScrollBoost);
-VIZ_COMMON_EXPORT extern const base::FeatureParam<base::TimeDelta>
-    kADPFBoostTimeout;
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableInteractiveOnlyADPFRenderer);
+VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFRendererMain);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableAdpfEfficiencyMode);
 enum class AdpfEfficiencyMode {
   // Never opts ADPF sessions into efficient scheduling (default).
@@ -142,7 +138,7 @@ VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kUseDisplaySDRMaxLuminanceNits);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kHideDelegatedFrameHostMac);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEvictionUnlocksResources);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kSingleVideoFrameRateThrottling);
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kLastVSyncArgsKillswitch);
+
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kVizDirectCompositorThreadIpcNonRoot);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
     kVizDirectCompositorThreadIpcFrameSinkManager);
