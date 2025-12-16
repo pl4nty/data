@@ -2840,6 +2840,7 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["sentinelagentcore.dll"] = mp.INFECTED
   l_88_1["log.dll"] = mp.INFECTED
   l_88_1["appvisvsubsystems64.dll"] = mp.INFECTED
+  l_88_1["windowscodecs.dll"] = mp.INFECTED
   l_88_1["sqlite.dll"] = mp.LOWFI
   l_88_1["sqlite3.dll"] = mp.LOWFI
   l_88_1["glib-2.0.dll"] = mp.LOWFI
