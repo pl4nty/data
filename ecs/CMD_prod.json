@@ -455,6 +455,7 @@
         "EnableLatestClientVersionForListSubscriptionsApi": true,
         "EnableLatestRDAgentVersion": true,
         "EnableLicenseStatusColumn": true,
+        "EnableLighthouseOptimization": true,
         "EnableLinkToDeviceInGracePeriod": true,
         "EnableLinkToPolicy": true,
         "EnableLogCollectionForCPC": true,

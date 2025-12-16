@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20251213.1.0",
-        "CalendarCompanionMsitVersion": "1.20251206.5.0",
+        "CalendarCompanionDFVersion": "1.20251214.4.0",
+        "CalendarCompanionMsitVersion": "1.20251211.1.0",
         "CalendarCompanionProdVersion": "1.20251129.3.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1964,8 +1964,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20251213.5.0",
-        "PeopleInTaskbarMsitVersion": "1.20251202.7.0",
+        "PeopleInTaskbarDFVersion": "1.20251214.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20251208.2.0",
         "PeopleInTaskbarProdVersion": "1.20251201.2.0",
         "PeopleInTaskbarVersion": "1.20251201.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
