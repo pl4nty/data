@@ -38,6 +38,14 @@ do
     local l_0_3 = nil
     ;
     (bm.add_related_string)("file_metadata", l_0_2 .. "|" .. nil, bm.RelatedStringBMReport)
+    local l_0_4, l_0_5 = , (bm.get_process_relationships)()
+    for l_0_9,l_0_10 in ipairs(R6_PC96) do
+      local l_0_6 = nil
+      -- DECOMPILER ERROR at PC102: Confused about usage of register: R9 in 'UnsetPending'
+
+      ;
+      (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", R9_PC102.ppid)
+    end
     return mp.INFECTED
   end
   do

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\58b3c3465bc4\1.luac 
+-- Command line: lua\!InfrastructureShared\49cb3caa0bd12\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,7 +8,7 @@ local l_0_17 = nil
 if 50000000 < (bm.GetSignatureMatchDuration)() then
   return mp.CLEAN
 end
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
+if (this_sigattrlog[22]).matched and (this_sigattrlog[22]).utf8p2 ~= nil then
   local l_0_0, l_0_1, l_0_4, l_0_6, l_0_9, l_0_10, l_0_12, l_0_13 = nil
   l_0_6 = string
   l_0_6 = l_0_6.match
@@ -25,8 +25,8 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
 end
 do
   do
-    if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-      local l_0_3, l_0_8, l_0_15 = (this_sigattrlog[2]).utf8p2
+    if (this_sigattrlog[23]).matched and (this_sigattrlog[23]).utf8p2 ~= nil then
+      local l_0_3, l_0_8, l_0_15 = (this_sigattrlog[23]).utf8p2
     end
     -- DECOMPILER ERROR at PC46: Confused about usage of register: R2 in 'UnsetPending'
 
