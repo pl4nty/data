@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1468,6 +1468,12 @@
                 },
                 {
                     "Flight": "TM.freeWrapUp",
+                    "IsEnabled": true
+                }
+            ],
+            "WebSearchSkill_declarativeAgent": [
+                {
+                    "Flight": "EnableWebSearchDA",
                     "IsEnabled": true
                 }
             ],
