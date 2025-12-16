@@ -413,7 +413,7 @@
         "IsQnACopilotEnabled": false,
         "LPCEnableAriaLogging": true,
         "LPCStikkontakt": false,
-        "LinkedInBindingEnabled": false,
+        "LinkedInBindingEnabled": true,
         "LinkedInDataPrebindDark": false,
         "LinkedInDeforkEnabled": false,
         "LinkedInSalesNavigatorEnabled": true,
@@ -2096,6 +2096,7 @@
                 "https://outlook-1-cdn.azureedge.microsoft.scloud"
             ]
         },
+        "hostRingBucket": "80",
         "nonLocalizedAppName_shared": 1,
         "samplingConfig": {
             "Event": {
