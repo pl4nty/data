@@ -4,7 +4,20 @@
 -- params : ...
 -- function num : 0
 if IsDeviceHVA() then
-  return mp.INFECTED
+  local l_0_0 = ""
+  local l_0_1 = ExtractDeviceProperties()
+  if l_0_1.DeviceRoles ~= nil then
+    for l_0_5,l_0_6 in pairs(l_0_1.DeviceRoles) do
+      l_0_0 = l_0_0 .. ";" .. l_0_5
+    end
+    local l_0_7 = (mp.GetParentProcInfo)()
+    if not isnull(l_0_7) and not isnull(l_0_7.ppid) then
+      (MpCommon.BmTriggerSig)(l_0_7.ppid, "HvaRoles!", l_0_0)
+      return mp.INFECTED
+    end
+  end
 end
-return mp.CLEAN
+do
+  return mp.CLEAN
+end
 
