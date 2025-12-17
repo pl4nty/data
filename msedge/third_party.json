@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2178969,
+    "size": 2179021,
     "file_count": 183
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15120812,
+    "size": 15121170,
     "file_count": 844
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32613956,
+    "size": 32618089,
     "file_count": 3992
   },
   {
     "name": "boringssl",
-    "size": 75000,
+    "size": 75088,
     "file_count": 15
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 47786,
+    "size": 47939,
     "file_count": 40
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12329100,
+    "size": 12329183,
     "file_count": 1764
   },
   {
@@ -396,8 +396,8 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1310197,
-    "file_count": 89
+    "size": 1333037,
+    "file_count": 90
   },
   {
     "name": "libgudev",
@@ -586,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3975986,
+    "size": 3977323,
     "file_count": 583
   },
   {
@@ -756,8 +756,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6916247,
-    "file_count": 182
+    "size": 6918670,
+    "file_count": 183
   },
   {
     "name": "vulkan_memory_allocator",
