@@ -17,7 +17,7 @@
         "CustomizationActionGroups": 1,
         "CustomizationTriggers": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2512.0",
+        "clientMinimumVersion": "6.2523.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -215,6 +215,7 @@
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
             "settings": {
+                "EnableEtagForAdminIntent": true,
                 "disableCreatedAtPropertyRemoval": true,
                 "enableAADSyncCrossCloudAdditionUpdates": true,
                 "enableAADSyncCrossCloudDeleteUpdates": true,
@@ -241,6 +242,7 @@
                 "enableSuggestedScheduledMessageDelivery": true,
                 "enableTeamSharedChannelsDeletion": true,
                 "enableTeamSharedChannelsRestoration": true,
+                "enableTenantStatusSentToAdminIntentEtagEndpoint": false,
                 "enableTenantToCloudMappingCache": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,

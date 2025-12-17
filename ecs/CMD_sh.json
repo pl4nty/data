@@ -8,6 +8,8 @@
         "AMDMigrationCapacitySyncEnable": true,
         "ActivateOaiLicense": false,
         "AddSuperFastLaneToWorkItemV2": true,
+        "AddValidationsForCloudApp": true,
+        "AddValidationsForFSLogix": true,
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
         "AllowVSBGetWarningGalleryImage": true,

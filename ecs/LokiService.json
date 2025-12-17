@@ -164,10 +164,10 @@
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20251214.4.0",
         "CalendarCompanionMsitVersion": "1.20251211.1.0",
-        "CalendarCompanionProdVersion": "1.20251129.3.0",
+        "CalendarCompanionProdVersion": "1.20251206.5.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20251129.3.0",
+        "HostAppVersion": "1.20251206.5.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -742,6 +742,9 @@
         "EmployeeAgentCacheTTL": "0.04:00:00",
         "EnableAadObjectIdUserResolutionForInsights": false,
         "EnableAdminCenter": true,
+        "EnableAgentActivityPanel": false,
+        "EnableAgentCardType": true,
+        "EnableAgentDetailsPanel": false,
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
         "EnableBizchatLocalFilesSupport": true,
