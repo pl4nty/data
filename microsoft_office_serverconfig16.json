@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19602.40125-->
+    <!--Build: 16.0.19513.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -234,7 +234,8 @@
     </o:service>
     <o:service o:name="OfficeLicensingService15" o:authentication="2">
       <o:url>https://ols.officeapps.live.com/olsc/OlsClient.svc/OlsClient</o:url>
-      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
+      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeLicensingServiceGlobal">
@@ -242,7 +243,8 @@
     </o:service>
     <o:service o:name="LicensingRestHost" o:authentication="2">
       <o:url>https://ols.officeapps.live.com/</o:url>
-      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
+      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeAddInClassifierOfficeEntities">
@@ -1095,13 +1097,6 @@
     <o:service o:name="FeedbackUploadUrl">
       <o:url>https://sas.office.microsoft.com/upload.ashx</o:url>
     </o:service>
-    <o:service o:name="FeedbackPetrolUnAuthUploadUrl">
-      <o:url>https://petrol.office.microsoft.com/v1/feedback</o:url>
-    </o:service>
-    <o:service o:name="FeedbackPetrolAuthUploadUrl" o:authentication="2">
-      <o:url>https://petrol.office.microsoft.com/v1/feedback/authenticated</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://petrol.office.microsoft.com/Feedback.ReadWrite" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
-    </o:service>
     <o:service o:name="RDCAriaCollectorUrl">
       <o:url>https://mobile.events.data.microsoft.com/Collector/3.0/</o:url>
     </o:service>
@@ -1685,9 +1680,6 @@
     <o:service o:name="CWCEligibilityUrlV3">
       <o:url>https://mss.office.com</o:url>
     </o:service>
-    <o:service o:name="MOS3CopilotEligibilityUrl">
-      <o:url>https://titles.prod.mos.microsoft.com</o:url>
-    </o:service>
     <o:service o:name="NotificationServiceRegisterEndpoint" o:authentication="1">
       <o:url>https://notification.m365.svc.cloud.microsoft/api/v1/register</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://notification.m365.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
@@ -1725,9 +1717,6 @@
     </o:service>
     <o:service o:name="OCMReputationTokenHost">
       <o:url>https://dataservice.o365filtering.com</o:url>
-    </o:service>
-    <o:service o:name="OCMIC3TeamsHost">
-      <o:url>https://ic3.teams.office.com</o:url>
     </o:service>
     <o:service o:name="OCMConvergedMPCHost" o:authentication="2">
       <o:url>https://home.microsoftpersonalcontent.com</o:url>
@@ -2575,7 +2564,6 @@
     <o:token o:name="FailingUALFileRetentionWindow">30</o:token>
     <o:token o:name="OutlookAccountUseOrgId">0</o:token>
     <o:token o:name="OutlookNetworkDiagnosticsConfigBit">0b00001</o:token>
-    <o:token o:name="ChatOverlayFeatureEnabled">true</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
