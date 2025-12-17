@@ -312,7 +312,7 @@
         "EnableCUADesiredSizeFor1P": true,
         "EnableCUAGeoFor1P": true,
         "EnableCUAProvisioningSupport": true,
-        "EnableCUAReprovisionAllFor1P": false,
+        "EnableCUAReprovisionAllFor1P": true,
         "EnableCUAUserAssignmentSupport": true,
         "EnableCacheForReserveCPCs": true,
         "EnableCacheForSingleCPCWhenCallDDS": true,
