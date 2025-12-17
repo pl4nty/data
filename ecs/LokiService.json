@@ -1967,10 +1967,10 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20251214.4.0",
+        "PeopleInTaskbarDFVersion": "1.20251216.1.0",
         "PeopleInTaskbarMsitVersion": "1.20251208.2.0",
-        "PeopleInTaskbarProdVersion": "1.20251201.2.0",
-        "PeopleInTaskbarVersion": "1.20251201.2.0",
+        "PeopleInTaskbarProdVersion": "1.20251202.7.0",
+        "PeopleInTaskbarVersion": "1.20251202.7.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
@@ -2013,7 +2013,9 @@
                 "https://fd.api.iris.microsoft.com",
                 "https://arc-emea.msn.com",
                 "https://ris.api.iris.microsoft.com",
-                "https://eudb.ris.api.iris.microsoft.com"
+                "https://eudb.ris.api.iris.microsoft.com",
+                "https://config.edge.skype.com",
+                "https://config.edge.skype.net"
             ],
             "default-src": [
                 "'none'"
