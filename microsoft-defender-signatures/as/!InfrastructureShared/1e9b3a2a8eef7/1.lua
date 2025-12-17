@@ -27,6 +27,9 @@ do
       if l_0_5 ~= nil and l_0_5 ~= "" and l_0_1 ~= nil and l_0_1 ~= "" then
         local l_0_8 = nil
         if l_0_5:match("/([^/]+%.app)") ~= nil and l_0_5:match("/([^/]+%.app)") ~= "" and l_0_8:find(l_0_5:match("/([^/]+%.app)"), 1, true) then
+          reportRelatedBmHits()
+          ;
+          (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
           return mp.INFECTED
         end
       end

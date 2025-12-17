@@ -15,6 +15,9 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
+if l_0_2:find("ScreenConnect.ClientSetup.sh", 1, false) then
+  return mp.CLEAN
+end
 if IsKeyValuePairInRollingQueue("MAC_UNS_ADHOC_PATHS", "unsigned_adhoc_items", l_0_0) or l_0_2:find("%s+/tmp/", 1, false) or l_0_2:find("%s+/private/tmp/", 1, false) or l_0_2:find("%s+/Users/Shared/", 1, false) or l_0_2:find("%s+/Users/.", 1, false) or l_0_2:find("%s+/Users/[^/]+/.", 1, false) or l_0_2:find("%s+/Users/[^/]+/Downloads/", 1, false) or l_0_2:find("%s+/Library/Caches/", 1, false) or l_0_2:find("%s+~/.", 1, false) then
   return mp.INFECTED
 end
