@@ -201,17 +201,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "December 2, 2025",
         "Patch level": "2025-12-01",
-        "CVE": "CVE-2025-48615",
-        "References": "A-433250316",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
-        "Published": "December 2, 2025",
-        "Patch level": "2025-12-01",
         "CVE": "CVE-2025-48618",
         "References": "A-404254549",
         "Type": "EoP",
@@ -514,17 +503,6 @@
         "Type": "ID",
         "Severity": "High",
         "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
-        "Published": "December 2, 2025",
-        "Patch level": "2025-12-01",
-        "CVE": "CVE-2025-48600",
-        "References": "A-435188844",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "15, 16",
         "Component": "System"
     },
     {
@@ -1230,6 +1208,15 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "December 2, 2025",
         "Patch level": "2025-12-01",
+        "Version": "1.2",
+        "Date": "December 17, 2025",
+        "Notes": "CVE-2025-48600 and CVE-2025-48615 have been removed from ASB#2025-12 due to an",
+        "Component": "5. What does an * next to the Android bug ID in the\n  References column mean?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
         "Version": "1.0",
         "Date": "December 1, 2025",
         "Notes": "Bulletin Published",
@@ -1242,6 +1229,15 @@
         "Version": "1.1",
         "Date": "December 4, 2025",
         "Notes": "Bulletin revised to include AOSP links",
+        "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
+        "Version": "1.2",
+        "Date": "December 17, 2025",
+        "Notes": "CVE-2025-48600 and CVE-2025-48615 have been removed from ASB#2025-12 due to an",
         "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
     },
     {
