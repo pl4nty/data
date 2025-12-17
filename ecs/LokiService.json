@@ -760,6 +760,7 @@
         "EnableCopilotLicenseCheck": true,
         "EnableCosmicTmRouting": false,
         "EnableCustomDnsResolution": true,
+        "EnableDistributedLockingForAadCalls": true,
         "EnableDummyInsights": false,
         "EnableEventCategoryColors": true,
         "EnableExtendedRelationships": true,
@@ -2015,7 +2016,8 @@
                 "https://ris.api.iris.microsoft.com",
                 "https://eudb.ris.api.iris.microsoft.com",
                 "https://config.edge.skype.com",
-                "https://config.edge.skype.net"
+                "https://config.edge.skype.net",
+                "https://localcdn.centro-dev.com:*"
             ],
             "default-src": [
                 "'none'"
