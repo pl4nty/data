@@ -48,40 +48,38 @@ if l_0_0 == nil then
       return mp.CLEAN
     end
     do
-      local l_0_13, l_0_14, l_0_15, l_0_16 = nil, nil, nil, nil
-      for l_0_20,l_0_21 in pairs(l_0_12) do
-        if (string.find)(l_0_21, "{90160000-1014-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
-          l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_21)
+      local l_0_13, l_0_14, l_0_15, l_0_16, l_0_17 = nil, nil, nil, nil, nil
+      for l_0_21,l_0_22 in pairs(l_0_12) do
+        if (string.find)(l_0_22, "{90160000-1014-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
+          l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_22)
           if l_0_13 then
-            local l_0_22 = (sysio.GetRegValueAsString)(l_0_13, "DisplayName")
-            if l_0_22 ~= nil then
-              if (string.find)(l_0_22, "KB5002760", 1, true) then
-                AppendToRollingQueue(l_0_2, "true", l_0_22, l_0_4)
-                ;
-                (mp.set_mpattribute)("Lua:spPatchFound")
-              else
-                ;
-                (mp.set_mpattribute)("Lua:spPatchNotFound")
-                AppendToRollingQueue(l_0_3, "true", "NoPatch", l_0_5)
-              end
+            local l_0_23 = (sysio.GetRegValueAsString)(l_0_13, "DisplayName")
+            if not l_0_23 then
+              return mp.CLEAN
             end
-            return mp.CLEAN
+            local l_0_24 = l_0_23:match("%([Kk][Bb](%d+)%)")
+            if not l_0_24 then
+              return mp.CLEAN
+            end
+            l_0_17 = tonumber(l_0_24)
+            l_0_14 = true
+            break
           else
             do
               do
                 ;
                 (mp.set_mpattribute)("Lua:spPatchQueryError")
                 do return mp.CLEAN end
-                if (string.find)(l_0_21, "{90160000-1012-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
-                  l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_21)
+                if (string.find)(l_0_22, "{90160000-1012-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
+                  l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_22)
                   if l_0_13 then
                     l_0_0 = (sysio.GetRegValueAsString)(l_0_13, "DisplayVersion")
                     if not l_0_0 then
                       return mp.CLEAN
                     end
                     l_0_0 = (string.gsub)(l_0_0, "%.", "")
-                    l_0_16 = tonumber(l_0_0)
-                    l_0_14 = true
+                    l_0_17 = tonumber(l_0_0)
+                    l_0_15 = true
                     break
                   else
                     ;
@@ -89,16 +87,16 @@ if l_0_0 == nil then
                     return mp.CLEAN
                   end
                 else
-                  if (string.find)(l_0_21, "{90160000-1010-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
-                    l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_21)
+                  if (string.find)(l_0_22, "{90160000-1010-0000-1000-0000000FF1CE}_Office16.OSERVER_{", 1, true) then
+                    l_0_13 = (sysio.RegOpenKey)(l_0_10 .. "\\" .. l_0_22)
                     if l_0_13 then
                       l_0_0 = (sysio.GetRegValueAsString)(l_0_13, "DisplayVersion")
                       if not l_0_0 then
                         return mp.CLEAN
                       end
                       l_0_0 = (string.gsub)(l_0_0, "%.", "")
-                      l_0_16 = tonumber(l_0_0)
-                      l_0_15 = true
+                      l_0_17 = tonumber(l_0_0)
+                      l_0_16 = true
                       break
                     else
                       ;
@@ -107,23 +105,23 @@ if l_0_0 == nil then
                     end
                   end
                 end
-                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC263: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC247: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
           end
         end
       end
-      if l_0_14 and l_0_16 then
-        if l_0_16 >= 1601041720037 then
+      if l_0_14 and l_0_17 then
+        if l_0_17 >= 5002760 then
           (mp.set_mpattribute)("Lua:spPatchFound")
           AppendToRollingQueue(l_0_2, "true", l_0_0, l_0_4)
         else
@@ -133,8 +131,19 @@ if l_0_0 == nil then
         end
         return mp.CLEAN
       end
-      if l_0_15 and l_0_16 then
-        if l_0_16 >= 1601852620508 then
+      if l_0_15 and l_0_17 then
+        if l_0_17 >= 1601041720037 then
+          (mp.set_mpattribute)("Lua:spPatchFound")
+          AppendToRollingQueue(l_0_2, "true", l_0_0, l_0_4)
+        else
+          ;
+          (mp.set_mpattribute)("Lua:spPatchNotFound")
+          AppendToRollingQueue(l_0_3, "true", "NoPatch", l_0_5)
+        end
+        return mp.CLEAN
+      end
+      if l_0_16 and l_0_17 then
+        if l_0_17 >= 1601852620508 then
           (mp.set_mpattribute)("Lua:spPatchFound")
           AppendToRollingQueue(l_0_2, "true", l_0_0, l_0_4)
         else
