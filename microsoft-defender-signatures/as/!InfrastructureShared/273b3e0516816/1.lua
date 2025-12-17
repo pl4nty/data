@@ -8,7 +8,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     return mp.CLEAN
   end
   local l_0_0 = ((this_sigattrlog[1]).utf8p2):lower()
-  if #l_0_0 < 62 then
+  if #l_0_0 < 32 then
     return mp.CLEAN
   end
   if (string.find)(l_0_0, "\\\\tsclient\\", 1, true) or (string.find)(l_0_0, "d:\\", 1, true) or (string.find)(l_0_0, "runpscommand", 1, true) then
