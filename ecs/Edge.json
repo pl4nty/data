@@ -62,11 +62,6 @@
             "disableFeatures": [
                 "msEdgeSyncSingleDeviceHistory"
             ]
-        },
-        "UnknownLanguageUXFixExperiment": {
-            "enableFeatures": [
-                "msUnsupportedLanguageUXFix"
-            ]
         }
     },
     "EdgeConfig": {
