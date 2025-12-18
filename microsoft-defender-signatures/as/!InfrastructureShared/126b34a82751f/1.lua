@@ -18,6 +18,9 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil and (this
   if IsExcludedByCmdlineMacOS(l_0_3) or IsExcludedByImagePathMacOS(l_0_2) then
     return mp.CLEAN
   end
+  if l_0_3:find("/private/var/akitra/shield/upgrade", 1, true) or l_0_3:find("/usr/local/jamf/bin/jamf", 1, true) then
+    return mp.CLEAN
+  end
   if not l_0_1:match("/%.[^/]+$") then
     return mp.CLEAN
   end
