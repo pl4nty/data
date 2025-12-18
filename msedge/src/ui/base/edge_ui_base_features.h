@@ -488,6 +488,8 @@ bool IsRefreshedLightningExperienceEnabled(const base::Feature& feature,
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 void TriggerUsageIfRefreshedLightningExperienceEnabled(
     const base::Feature& feature);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsRefreshedLightningHoldoutEnabled(bool trigger_usage_on_check = false);
 
 // EdgeENPDyn Holdout Feature Flags and Triggers.
 BASE_DECLARE_FIRST_RUN_FEATURE(kFeatureGroupEdgeENPDynHoldout);
