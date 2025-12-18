@@ -10,6 +10,9 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this
   if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
     return mp.CLEAN
   end
+  if l_0_1:find("DropboxUpdater --server", 1, true) or l_0_1:find("/Applications/hoteling-client.app", 1, true) then
+    return mp.CLEAN
+  end
   local l_0_3 = (this_sigattrlog[2]).utf8p2
   if SuspMacPathsToMonitor(l_0_3, true) and l_0_3:match("/%.[^/]+$") then
     return mp.INFECTED
