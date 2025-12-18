@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15121170,
+    "size": 15121626,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32618089,
-    "file_count": 3992
+    "size": 32577058,
+    "file_count": 3990
   },
   {
     "name": "boringssl",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17609482,
-    "file_count": 2053
+    "size": 17679828,
+    "file_count": 2058
   },
   {
     "name": "entity_extraction",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43381066,
+    "size": 43363738,
     "file_count": 3200
   },
   {
@@ -386,7 +386,7 @@
   },
   {
     "name": "libc++abi",
-    "size": 31013,
+    "size": 30898,
     "file_count": 7
   },
   {
@@ -471,8 +471,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 222338886,
-    "file_count": 343
+    "size": 223616570,
+    "file_count": 344
   },
   {
     "name": "logilab",
@@ -586,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3977323,
+    "size": 3977127,
     "file_count": 583
   },
   {
@@ -671,8 +671,8 @@
   },
   {
     "name": "skia",
-    "size": 3544749,
-    "file_count": 1184
+    "size": 3551526,
+    "file_count": 1185
   },
   {
     "name": "speech-dispatcher",
@@ -716,8 +716,8 @@
   },
   {
     "name": "tflite",
-    "size": 1695842,
-    "file_count": 508
+    "size": 1705162,
+    "file_count": 515
   },
   {
     "name": "tflite_support",
@@ -741,7 +741,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1403439,
+    "size": 1404978,
     "file_count": 23
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6918670,
+    "size": 6918924,
     "file_count": 183
   },
   {
