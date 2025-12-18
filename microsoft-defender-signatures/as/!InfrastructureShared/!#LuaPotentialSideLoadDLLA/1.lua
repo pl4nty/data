@@ -64,10 +64,14 @@ end
 l_0_16 = (string.match)(l_0_16, "ForwardedExports(.+)")
 local l_0_17 = "PotentialSideLoadExports"
 local l_0_18 = (string.format)("ExpCount=%d__FwdExpCount=%d__LocalExpCount=%d__ExpType=%s.%s__FwdExpNames=%s__LocalExpNames=%s__Size=%d", l_0_6, #l_0_8, #l_0_9, l_0_15, l_0_16, (table.concat)(l_0_8, ","), (table.concat)(l_0_9, ","), l_0_2)
-AppendToRollingQueue(l_0_17, l_0_0, l_0_18)
+AppendToRollingQueue(l_0_17, l_0_1, l_0_18)
 ;
 (mp.set_mpattribute)((string.format)("%s=%s", l_0_17, l_0_18))
 ;
 (MpCommon.SetOriginalFileName)(l_0_0, (string.format)("BM_%s", l_0_17))
+local l_0_19 = (MpCommon.PathToWin32Path)((string.match)(l_0_16, "=(.+)") or "")
+if l_0_19 then
+  (MpCommon.SetOriginalFileName)(l_0_19, (string.format)("BM_%s_Target", l_0_17))
+end
 return mp.INFECTED
 
