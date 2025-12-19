@@ -15,7 +15,7 @@ if not isnull(l_0_0) and not isnull(l_0_0.image_path) and not isnull(l_0_0.ppid)
         l_0_3 = l_0_3 .. ";" .. l_0_8
       end
       ;
-      (MpCommon.BmTriggerSig)(l_0_0.ppid, "HvaRoles!", l_0_3)
+      (MpCommon.BmTriggerSig)(l_0_0.ppid, "HvaRoles!WebSever", l_0_3)
       return mp.INFECTED
     end
   end
