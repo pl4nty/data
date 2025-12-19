@@ -28,7 +28,7 @@ do
       local l_0_7 = nil
       if safeJsonDeserialize(R6_PC39) then
         R6_PC39 = (safeJsonDeserialize(R6_PC39)).UnsignedFile
-        if not R6_PC39 then
+        if R6_PC39 then
           R6_PC39 = mp
           R6_PC39 = R6_PC39.INFECTED
           return R6_PC39

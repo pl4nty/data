@@ -12,7 +12,7 @@ if IsDeviceHVA() then
     end
     local l_0_7 = (mp.GetParentProcInfo)()
     if not isnull(l_0_7) and not isnull(l_0_7.ppid) then
-      (MpCommon.BmTriggerSig)(l_0_7.ppid, "HvaRoles!", l_0_0)
+      (MpCommon.BmTriggerSig)(l_0_7.ppid, "HvaRoles!DomainAdmin", l_0_0)
       return mp.INFECTED
     end
   end

@@ -32,9 +32,16 @@ do
   -- DECOMPILER ERROR at PC97: Confused about usage of register: R0 in 'UnsetPending'
 
   if (l_0_0 == nil or not (string.find)(l_0_0, "ifm", 1, true) or (not (string.find)(l_0_0, "activate ", 1, true) and not (string.find)(l_0_0, "ac ", 1, true) and not (string.find)(l_0_0, "act ", 1, true)) or (not (string.find)(l_0_0, "instance ", 1, true) and not (string.find)(l_0_0, "in ", 1, true) and not (string.find)(l_0_0, "i ", 1, true) and not (string.find)(l_0_0, "inst ", 1, true)) or ((string.find)(l_0_0, "create full", 1, true) or (string.find)(l_0_0, "cr fu", 1, true))) then
-    add_parents()
-    return mp.INFECTED
+    local l_0_11 = nil
+    if IsProcNameInParentProcessTree("BM", {"wsmprovhost.exe", "wmiprvse.exe", "explorer.exe"}) and IsDeviceHVA() then
+      local l_0_12 = nil
+      if (ExtractDeviceProperties()).DeviceRoles and ((ExtractDeviceProperties()).DeviceRoles).DomainController ~= nil then
+        return mp.INFECTED
+      end
+    end
   end
-  return mp.CLEAN
+  do
+    return mp.CLEAN
+  end
 end
 
