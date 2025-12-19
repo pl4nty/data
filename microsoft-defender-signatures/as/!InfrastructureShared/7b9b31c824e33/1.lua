@@ -1,8 +1,17 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\790b32f08c5aa\1.luac 
+-- Command line: lua\!InfrastructureShared\7b9b31c824e33\1.luac 
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0.command_line
+local l_0_2 = (bm.get_imagepath)()
+if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
+  return mp.CLEAN
+end
 TrackPidAndTechniqueBM("BM", "T1036.005", "DefenseEvasion_Masquerading_AppWithPopularDoubleExt")
 ;
 (mp.set_mpattribute)("DefenseEvasion_Masquerading_AppWithPopularDoubleExt")
