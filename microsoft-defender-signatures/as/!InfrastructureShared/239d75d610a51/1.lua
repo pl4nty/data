@@ -7,7 +7,7 @@ local l_0_0 = (mp.GetParentProcInfo)()
 if not isnull(l_0_0) and not isnull(l_0_0.image_path) and not isnull(l_0_0.ppid) then
   local l_0_1 = (string.lower)(l_0_0.image_path)
   local l_0_2 = l_0_1:match("([^\\]+)$")
-  if (l_0_2 == "w3wp.exe" or l_0_2 == "sqlservr.exe" or l_0_2 == "httpd.exe" or l_0_2 == "java.exe" or (string.find)(l_0_2, "tomcat", 1, true) or (string.find)(l_0_2, "apache", 1, true)) and IsDeviceHVA() then
+  if l_0_2 == "w3wp.exe" and IsDeviceHVA() then
     local l_0_3 = ""
     local l_0_4 = ExtractDeviceProperties()
     if l_0_4.DeviceRoles ~= nil and l_0_4.IsInternetFacing == true then
