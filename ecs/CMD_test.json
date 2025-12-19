@@ -219,7 +219,7 @@
         "EnableANCNameFilter": true,
         "EnableANCOverviewReactviewMigrationUX": true,
         "EnableANCRolePermissionPaneReactviewMigrationUX": true,
-        "EnableANCUXTURNHealthCheck": true,
+        "EnableANCUXTURNHealthCheck": false,
         "EnableAPIForHotStandby": true,
         "EnableAbnormalDeviceDetectTimerFunction": true,
         "EnableAbnormalDeviceReinstallTimerFunction": true,
