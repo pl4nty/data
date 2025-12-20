@@ -11,33 +11,35 @@ if (this_sigattrlog[1]).matched and not isnull((this_sigattrlog[1]).utf8p2) then
   if l_0_3 ~= nil then
     l_0_1.ACFilesEncrypted = l_0_3
     local l_0_4 = (MpCommon.AtomicCounterValueNamespaced)("rcount_sig_count", l_0_0)
-    if not l_0_4 then
+    if l_0_4 ~= nil then
       l_0_1.SigCounter = l_0_4
+    else
+      l_0_1.SigCounter = 0
     end
     local l_0_5 = safeJsonSerialize(l_0_1)
     local l_0_6 = SafeGetUrlReputation
     local l_0_7 = {}
-    -- DECOMPILER ERROR at PC43: No list found for R7 , SetList fails
+    -- DECOMPILER ERROR at PC45: No list found for R7 , SetList fails
 
     local l_0_8 = {}
     l_0_8.SIG_CONTEXT = "BM"
     l_0_8.CONTEXT_SOURCE = "GenRansomData3"
     l_0_8.TAG = "NOLOOKUP"
-    -- DECOMPILER ERROR at PC52: No list found for R8 , SetList fails
+    -- DECOMPILER ERROR at PC54: No list found for R8 , SetList fails
 
-    -- DECOMPILER ERROR at PC60: Overwrote pending register: R7 in 'AssignReg'
+    -- DECOMPILER ERROR at PC62: Overwrote pending register: R7 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC62: Overwrote pending register: R9 in 'AssignReg'
+    -- DECOMPILER ERROR at PC64: Overwrote pending register: R9 in 'AssignReg'
 
     if l_0_6 and l_0_7 == 3 then
       local l_0_9 = {}
-      -- DECOMPILER ERROR at PC68: Overwrote pending register: R10 in 'AssignReg'
+      -- DECOMPILER ERROR at PC70: Overwrote pending register: R10 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC70: Overwrote pending register: R12 in 'AssignReg'
+      -- DECOMPILER ERROR at PC72: Overwrote pending register: R12 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC72: No list found for R9 , SetList fails
+      -- DECOMPILER ERROR at PC74: No list found for R9 , SetList fails
 
-      -- DECOMPILER ERROR at PC74: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC76: Overwrote pending register: R6 in 'AssignReg'
 
     end
   end

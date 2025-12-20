@@ -339,7 +339,7 @@ for l_0_24 = 1, l_0_0 do
                               l_0_111.ip = l_0_18
                               l_0_112 = bm
                               l_0_112 = l_0_112.trigger_sig_delayed
-                              l_0_112("RemoteGenericRansomwareDelay:Type2", safeJsonSerialize(l_0_111), 1800000)
+                              l_0_112("RemoteGenericRansomwareDelay:Type2", safeJsonSerialize(l_0_111), 570000)
                               l_0_112 = l_0_110.urls
                               l_0_112 = l_0_112[l_0_18]
                               if l_0_112 then
