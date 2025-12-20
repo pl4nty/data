@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32577058,
-    "file_count": 3990
+    "size": 32543954,
+    "file_count": 3987
   },
   {
     "name": "boringssl",
@@ -371,7 +371,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 47939,
+    "size": 48847,
     "file_count": 40
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12329183,
+    "size": 12328984,
     "file_count": 1764
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 294832,
+    "size": 295366,
     "file_count": 47
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3977127,
+    "size": 3984632,
     "file_count": 583
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "skia",
-    "size": 3551526,
+    "size": 3551858,
     "file_count": 1185
   },
   {
@@ -751,12 +751,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2532895,
+    "size": 2536504,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6918924,
+    "size": 6922821,
     "file_count": 183
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "webrtc",
-    "size": 104620,
+    "size": 104970,
     "file_count": 53
   },
   {

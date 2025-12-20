@@ -660,6 +660,40 @@ extern bool IsEdgeThemeServiceDarkModeEnabled(bool trigger_usage = false);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsNativeThemeUpstreamAlignmentEnabled(bool trigger_usage = false);
 
+#if BUILDFLAG(IS_MAC)
+// Bit flags for native context menu features.
+enum class NativeContextMenuFeatures : int {
+  kShowAccelerators = 1 << 0,  // Show keyboard shortcuts on menu items.
+  kShowVectorIcons = 1 << 1,   // Show vector icons on menu items.
+};
+
+// Feature flag to control whether Edge should use native macOS context menus
+// instead of Edge-style context menu implementation. When enabled,
+// right-click context menus will use the system's native NSMenu on macOS.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeNativeContextMenuMac);
+
+// Feature parameter to control which features are enabled in native context
+// menus. This is a bitmask of NativeContextMenuFeatures values.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern const base::FeatureParam<int> kNativeContextMenuFeatures;
+
+// Returns true if the native context menu feature is enabled for macOS.
+// This function checks the kEdgeNativeContextMenuMac feature flag and triggers
+// usage tracking when called.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool ShouldUseNativeContextMenu();
+
+// Returns true if accelerators (keyboard shortcuts) should be shown in native
+// context menus.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool ShouldShowAcceleratorsInNativeContextMenu();
+
+// Returns true if vector icons should be shown in native context menus.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool ShouldShowVectorIconsInNativeContextMenu();
+#endif  // BUILDFLAG(IS_MAC)
+
 }  // namespace edge
 }  // namespace features
 
