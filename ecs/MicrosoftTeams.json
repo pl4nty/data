@@ -1473,12 +1473,6 @@
                     "IsEnabled": true
                 }
             ],
-            "WebSearchSkill_declarativeAgent": [
-                {
-                    "Flight": "EnableWebSearchDA",
-                    "IsEnabled": true
-                }
-            ],
             "meetingAgendaSkill_CitationSources": [
                 {
                     "Flight": "TM.agendaTopicCitation",
