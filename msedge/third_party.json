@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15121626,
+    "size": 15121816,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32543954,
-    "file_count": 3987
+    "size": 32567431,
+    "file_count": 3989
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "dawn",
-    "size": 36561612,
+    "size": 36561653,
     "file_count": 102
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17679828,
+    "size": 17679468,
     "file_count": 2058
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "name": "ink",
-    "size": 77857,
+    "size": 77465,
     "file_count": 11
   },
   {
@@ -546,7 +546,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 31142,
+    "size": 31175,
     "file_count": 16
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3984632,
+    "size": 3985000,
     "file_count": 583
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "name": "skia",
-    "size": 3551858,
+    "size": 3552217,
     "file_count": 1185
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6922821,
+    "size": 6922487,
     "file_count": 183
   },
   {
