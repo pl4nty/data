@@ -132,6 +132,7 @@
         "EdpMigrationToNewSub_wvdmanagement": true,
         "Enable15minConsumptionUnit": false,
         "Enable3TierRegionInternalApiComparation": true,
+        "EnableAIEnabledCloudPcReport": true,
         "EnableAbnormalDeviceReinstallTimerFunction": true,
         "EnableActionStatusGraphPermission": true,
         "EnableActionStatusReportVersionV01": true,
