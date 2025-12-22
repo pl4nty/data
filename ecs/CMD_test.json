@@ -506,6 +506,7 @@
         "EnableEditFLSPolicy": true,
         "EnableElevateToUserAccessAdminIncludeOnlyGlobalAdminRole": true,
         "EnableEmailDispatchTimerFunction": false,
+        "EnableEncryptionConversionForFLDDevicesManagedByWds": true,
         "EnableEndGracePeriodViaNugetInTBMS": true,
         "EnableEndUserCloudApp": true,
         "EnableEndpointCheckTimeout": true,
