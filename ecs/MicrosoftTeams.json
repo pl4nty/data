@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -608,7 +608,8 @@
         "isAriaEUDBComplianceEnabled": true,
         "isCaptionsEnabled": true,
         "isFeedbackSurveyEnabled": true,
-        "isNetworkDiagnosticsEnabled": true
+        "isNetworkDiagnosticsEnabled": true,
+        "isRealTimeTextEnabled": true
     },
     "MicrosoftTeamsTemplates": {
         "Domain": {
