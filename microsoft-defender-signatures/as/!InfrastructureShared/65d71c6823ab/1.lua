@@ -4,20 +4,24 @@
 -- params : ...
 -- function num : 0
 if IsDeviceHVA() then
-  local l_0_0 = ""
-  local l_0_1 = ExtractDeviceProperties()
-  if l_0_1.DeviceRoles ~= nil then
-    for l_0_5,l_0_6 in pairs(l_0_1.DeviceRoles) do
-      l_0_0 = l_0_0 .. ";" .. l_0_5
-    end
-    local l_0_7 = (mp.GetParentProcInfo)()
-    if not isnull(l_0_7) and not isnull(l_0_7.ppid) then
-      (MpCommon.BmTriggerSig)(l_0_7.ppid, "HvaRoles!DomainAdmin", l_0_0)
+  local l_0_0 = ExtractDeviceProperties()
+  if l_0_0.DeviceRoles ~= nil then
+    local l_0_1 = {}
+    -- DECOMPILER ERROR at PC14: No list found for R1 , SetList fails
+
+    -- DECOMPILER ERROR at PC15: Overwrote pending register: R2 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC16: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
+
+    if ("winrshost.exe")("wsmprovhost.exe", "wmiprvse.exe") then
       return mp.INFECTED
     end
   end
 end
 do
-  return mp.CLEAN
+  do return mp.CLEAN end
+  -- WARNING: undefined locals caused missing assignments!
 end
 
