@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32575242,
+    "size": 32589850,
     "file_count": 3991
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17679468,
-    "file_count": 2058
+    "size": 17707910,
+    "file_count": 2059
   },
   {
     "name": "entity_extraction",
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 95767662,
-    "file_count": 11071
+    "size": 96035448,
+    "file_count": 11100
   },
   {
     "name": "flac",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43363738,
+    "size": 43364927,
     "file_count": 3200
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1333037,
+    "size": 1332246,
     "file_count": 90
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 295366,
+    "size": 295456,
     "file_count": 47
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "perfetto",
-    "size": 3985000,
+    "size": 3990939,
     "file_count": 583
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 545246,
+    "size": 545373,
     "file_count": 15
   },
   {
@@ -756,8 +756,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6922487,
-    "file_count": 183
+    "size": 6927525,
+    "file_count": 184
   },
   {
     "name": "vulkan_memory_allocator",
