@@ -409,6 +409,8 @@
         "InsightBoldDesignEnabled": false,
         "IsConversationRecapLanguageSupportEnabled": true,
         "IsConversationRecapPromptEnabled": true,
+        "IsPlaceCollaboratorsPanelEnabled": true,
+        "IsPlaceReservationsPanelEnabled": true,
         "IsPreparePersonaOverWebsocketAllowed": true,
         "IsQnACopilotEnabled": false,
         "LPCEnableAriaLogging": true,
