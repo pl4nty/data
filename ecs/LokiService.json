@@ -409,6 +409,7 @@
         "InsightBoldDesignEnabled": false,
         "IsConversationRecapLanguageSupportEnabled": true,
         "IsConversationRecapPromptEnabled": true,
+        "IsPlaceCardEnabled": true,
         "IsPlaceCollaboratorsPanelEnabled": true,
         "IsPlaceReservationsPanelEnabled": true,
         "IsPreparePersonaOverWebsocketAllowed": true,
