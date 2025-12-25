@@ -396,6 +396,7 @@
         "EnableGetCollectionByIdInStatus": true,
         "EnableGetCollections": true,
         "EnableGetCrossRegionDRConfig4SnapshotBackend": true,
+        "EnableGetGpuDriverInfoV2": true,
         "EnableGetSingleCollection": true,
         "EnableGpuDriverInstall": true,
         "EnableGpuInPostProvisioning": true,
