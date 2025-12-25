@@ -594,6 +594,7 @@
         "EnableGetCollectionByIdInStatus": true,
         "EnableGetCollections": true,
         "EnableGetCrossRegionDRConfig4SnapshotBackend": true,
+        "EnableGetGpuDriverInfoV2": true,
         "EnableGetInfomationForHibernationIssue": true,
         "EnableGetMdepsUrlFromRemoteConfig": true,
         "EnableGetSingleCollection": true,
