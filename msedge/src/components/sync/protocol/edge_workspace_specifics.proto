@@ -42,6 +42,9 @@ message Workspace {
 
   // The intensity of the workspace color when adaptive themes are used.
   optional ColorVariant color_variant = 4;
+
+  // An optional project id associated with this workspace.
+  optional string project_id = 5;
 }
 
 // Sync protocol datatype extension for saved tabs. WorkspaceTabs

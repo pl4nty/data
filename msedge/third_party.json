@@ -46,7 +46,7 @@
   },
   {
     "name": "anonymous_tokens",
-    "size": 11348,
+    "size": 20849,
     "file_count": 5
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 32589850,
-    "file_count": 3991
+    "size": 32614721,
+    "file_count": 3994
   },
   {
     "name": "boringssl",
-    "size": 75088,
+    "size": 75680,
     "file_count": 15
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17707910,
+    "size": 17708101,
     "file_count": 2059
   },
   {
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 96035448,
-    "file_count": 11100
+    "size": 95994795,
+    "file_count": 11098
   },
   {
     "name": "flac",
@@ -381,8 +381,8 @@
   },
   {
     "name": "libc++",
-    "size": 12328984,
-    "file_count": 1764
+    "size": 12376538,
+    "file_count": 1768
   },
   {
     "name": "libc++abi",
@@ -486,7 +486,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 295456,
+    "size": 295611,
     "file_count": 47
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18837483,
+    "size": 18818539,
     "file_count": 19
   },
   {
@@ -533,6 +533,11 @@
     "name": "ninja",
     "size": 622091,
     "file_count": 4
+  },
+  {
+    "name": "nlohmann_json",
+    "size": 63416,
+    "file_count": 9
   },
   {
     "name": "node",
@@ -596,7 +601,7 @@
   },
   {
     "name": "pffft",
-    "size": 259177,
+    "size": 259128,
     "file_count": 24
   },
   {
@@ -716,7 +721,7 @@
   },
   {
     "name": "tflite",
-    "size": 1705162,
+    "size": 1706028,
     "file_count": 515
   },
   {
@@ -756,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6927525,
+    "size": 6928609,
     "file_count": 184
   },
   {
