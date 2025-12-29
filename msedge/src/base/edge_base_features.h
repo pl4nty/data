@@ -61,9 +61,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kWipShareContract);
 // implementation if there are messages to process to prevent the thread
 // from being marked as spinning.
 BASE_EXPORT BASE_DECLARE_FEATURE(kAvoidPeekMessageSpin);
-
-// Emit ETW event on long task in the StackHangETWEmitter class.
-BASE_EXPORT BASE_DECLARE_FEATURE(kEnableStackHangEtwEmitter);
 #endif // BUILDFLAG(IS_WIN)
 
 // This feature enables the "focus parent tab and close current tab" behavior
