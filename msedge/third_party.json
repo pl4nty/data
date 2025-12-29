@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32614721,
-    "file_count": 3994
+    "size": 32609358,
+    "file_count": 3990
   },
   {
     "name": "boringssl",
@@ -346,7 +346,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 28083,
+    "size": 28052,
     "file_count": 3
   },
   {
@@ -381,8 +381,8 @@
   },
   {
     "name": "libc++",
-    "size": 12376538,
-    "file_count": 1768
+    "size": 12453340,
+    "file_count": 1770
   },
   {
     "name": "libc++abi",
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3552217,
+    "size": 3496586,
     "file_count": 1185
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1404978,
+    "size": 1407941,
     "file_count": 23
   },
   {
@@ -756,12 +756,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2536504,
+    "size": 2553686,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6928609,
+    "size": 6924019,
     "file_count": 184
   },
   {
