@@ -27,7 +27,7 @@ if l_0_0 ~= nil then
         return mp.CLEAN
       end
       l_0_4 = (string.lower)(l_0_4)
-      if (string.find)(l_0_4, "|cmd", 1, true) or (string.find)(l_0_4, "| cmd", 1, true) then
+      if (string.find)(l_0_4, "|cmd", 1, true) or (string.find)(l_0_4, "| cmd", 1, true) or (string.find)(l_0_4, "|c:\\windows\\system32\\cmd.exe", 1, true) or (string.find)(l_0_4, "| c:\\windows\\system32\\cmd.exe", 1, true) then
         return mp.INFECTED
       end
       return mp.CLEAN
