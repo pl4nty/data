@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32ab3b6e833bb\1.luac 
+-- Command line: lua\!InfrastructureShared\3ceb3258111af\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -16,9 +16,9 @@ if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
 do
-  if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil and (this_sigattrlog[8]).utf8p2 ~= "" then
-    local l_0_3 = (this_sigattrlog[8]).utf8p2
-    if l_0_3:find("/private/tmp/", 1, true) == 1 or l_0_3:find("/Users/Shared/", 1, true) == 1 or l_0_3:find("/tmp/", 1, true) == 1 or l_0_3:find("/Library/Caches/", 1, true) ~= nil or l_0_3:find("^/Users/[^/]+/Downloads/[^/]+$", 1, false) == 1 then
+  if (this_sigattrlog[12]).matched and (this_sigattrlog[12]).utf8p2 ~= nil and (this_sigattrlog[12]).utf8p2 ~= "" then
+    local l_0_3 = (this_sigattrlog[12]).utf8p2
+    if l_0_3:find("/private/tmp/", 1, true) == 1 or l_0_3:find("/Users/Shared/", 1, true) == 1 or l_0_3:find("/tmp/", 1, true) == 1 or l_0_3:find("^/Users/[^/]+/Downloads/[^/]+$", 1, false) == 1 then
       return mp.INFECTED
     end
   end
