@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32613788,
-    "file_count": 3990
+    "size": 32583103,
+    "file_count": 3985
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17708101,
+    "size": 17708314,
     "file_count": 2059
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12455583,
+    "size": 12457654,
     "file_count": 1770
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18825195,
+    "size": 18823659,
     "file_count": 19
   },
   {
@@ -591,8 +591,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4000347,
-    "file_count": 583
+    "size": 4003775,
+    "file_count": 584
   },
   {
     "name": "perl",
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3496787,
+    "size": 3496688,
     "file_count": 1185
   },
   {
