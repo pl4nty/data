@@ -61,6 +61,9 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kWipShareContract);
 // implementation if there are messages to process to prevent the thread
 // from being marked as spinning.
 BASE_EXPORT BASE_DECLARE_FEATURE(kAvoidPeekMessageSpin);
+
+// Enable calling CoFreeUnusedLibraries on a timer.
+BASE_EXPORT BASE_DECLARE_FEATURE(kEnableCoFreeTimer);
 #endif // BUILDFLAG(IS_WIN)
 
 // This feature enables the "focus parent tab and close current tab" behavior
