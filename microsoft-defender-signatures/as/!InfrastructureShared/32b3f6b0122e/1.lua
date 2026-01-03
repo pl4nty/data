@@ -25,29 +25,25 @@ if (this_sigattrlog[1]).matched and not isnull((this_sigattrlog[1]).utf8p2) then
     l_0_8.SIG_CONTEXT = "BM"
     l_0_8.CONTEXT_SOURCE = "GenRansomData3"
     l_0_8.TAG = "NOLOOKUP"
-    -- DECOMPILER ERROR at PC54: No list found for R8 , SetList fails
-
-    -- DECOMPILER ERROR at PC62: Overwrote pending register: R7 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC64: Overwrote pending register: R9 in 'AssignReg'
-
-    if l_0_6 and l_0_7 == 3 then
-      local l_0_9 = {}
-      -- DECOMPILER ERROR at PC70: Overwrote pending register: R10 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC72: Overwrote pending register: R12 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC74: No list found for R9 , SetList fails
-
-      -- DECOMPILER ERROR at PC76: Overwrote pending register: R6 in 'AssignReg'
-
+    l_0_8.data = l_0_5
+    l_0_6 = l_0_6(l_0_7, l_0_8, false, 3000, false)
+    if l_0_6 then
+      l_0_7 = l_0_6.error
+      if l_0_7 == 3 then
+        l_0_1.CRReportError = "Failed the first attempt"
+        l_0_7 = SafeGetUrlReputation
+        local l_0_9 = {}
+        l_0_9.SIG_CONTEXT = "BM"
+        l_0_9.CONTEXT_SOURCE = "GenRansomData3"
+        l_0_9.TAG = "NOLOOKUP"
+        l_0_9.data = l_0_5
+        l_0_7, l_0_8 = l_0_7(l_0_8, l_0_9, false, 3000, false), {l_0_1.ip}
+        l_0_6 = l_0_7
+      end
     end
   end
 end
 do
-  do
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
-  end
+  return mp.CLEAN
 end
 
