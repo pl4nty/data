@@ -105,7 +105,6 @@
         "DailyResourceGroupExportCogsFastStream": true,
         "DailyResourceGroupExportCogsSlowStream": true,
         "DdsUseQueryForGetCloudPcById": true,
-        "DdsUseSynchronousEventHubClient": true,
         "DedicatedResourceGroupCreation": true,
         "DedicatedResourceGroupCreationForConsumed": true,
         "DeleteNoUseDeviceDuringBackfillVmId": true,
