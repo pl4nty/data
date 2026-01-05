@@ -149,6 +149,11 @@
             Disable WAM
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ROPCEnabled">
+            <summary>
+            Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.NewEXOModuleBaseUri">
             <summary>
             Base Uri for the NewEXOModule
@@ -332,6 +337,11 @@
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.TenantId">
             <summary>
             Tenant ID from the auth token
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.EXOModuleBasePath">
+            <summary>
+            Base directory path for storing temporary files
             </summary>
         </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.GetAuthHeader(System.String,System.String)">
@@ -786,12 +796,6 @@
             Unique guid for this cmdlet execution
             </summary>
         </member>
-        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.IsRpsSession">
-            <summary>
-            Whether this is an RPS session
-            Parameter is mandatory since assuming an incorrect default value can cause issues.
-            </summary>
-        </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.PreviousSession">
             <summary>
             The PreviousSession parameter
@@ -950,6 +954,11 @@
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.EnableSearchOnlySession">
             <summary>
             Switch to use IP Audience.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.EXOModuleBasePath">
+            <summary>
+            EXOModuleBasePath parameter
             </summary>
         </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetSystemMailboxRoutingHint(System.String)">
@@ -1200,19 +1209,9 @@
             Constant for the endpoint name
             </summary>
         </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.RPSSession">
-            <summary>
-            RPS session key
-            </summary>
-        </member>
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.AutogenSession">
             <summary>
             Autogen session key
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.IsRPSSession">
-            <summary>
-            If the session is RPS or autogen
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.ConnectionContext">
@@ -1984,6 +1983,11 @@
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DisableWAMHeader">
             <summary>
             DisableWAM Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ROPCEnabledHeader">
+            <summary>
+            Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper">
