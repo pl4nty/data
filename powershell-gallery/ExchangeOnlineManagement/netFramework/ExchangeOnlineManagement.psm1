@@ -95,135 +95,6 @@ $global:EXO_LastExecutionStatus = $true;
     }
 
     <#
-    .Synopsis Override Get-PSImplicitRemotingSession function for reconnection
-    #>
-    function global:UpdateImplicitRemotingHandler()
-    {
-        # Remote Powershell Sessions created by the ExchangeOnlineManagement module are given a name that starts with "ExchangeOnlineInternalSession".
-        # Only modules from such sessions should be modified here, to prevent modfification of RPS tmp_* modules created by running the New-PSSession cmdlet directly, or when connecting to exchange on-prem tenants.
-        $existingPSSession = Get-PSSession | Where-Object {$_.ConfigurationName -like "Microsoft.Exchange" -and $_.Name -like "ExchangeOnlineInternalSession*"}
-
-        if ($existingPSSession.count -gt 0) 
-        {
-            foreach ($session in $existingPSSession)
-            {
-                $module = Get-Module $session.CurrentModuleName
-                if ($module -eq $null)
-                {
-                    continue
-                }
-
-                [bool]$moduleProcessed = $false
-                [string] $moduleUrl = $module.Description
-                [int] $queryStringIndex = $moduleUrl.IndexOf("?")
-
-                if ($queryStringIndex -gt 0)
-                {
-                    $moduleUrl = $moduleUrl.SubString(0,$queryStringIndex)
-                }
-
-                if ($moduleUrl.EndsWith("/PowerShell-LiveId", [StringComparison]::OrdinalIgnoreCase) -or $moduleUrl.EndsWith("/PowerShell", [StringComparison]::OrdinalIgnoreCase))
-                {
-                    & $module { ${function:Get-PSImplicitRemotingSession} = `
-                    {
-                        param(
-                            [Parameter(Mandatory = $true, Position = 0)]
-                            [string]
-                            $commandName
-                        )
-
-                        $shouldRemoveCurrentSession = $false;
-                        # Clear any left over PS tmp modules
-                        if (($script:PSSession -ne $null) -and ($script:PSSession.PreviousModuleName -ne $null) -and ($script:PSSession.PreviousModuleName -ne $script:MyModule.Name))
-                        {
-                            $null = Remove-Module -Name $script:PSSession.PreviousModuleName -ErrorAction SilentlyContinue
-                            $script:PSSession.PreviousModuleName = $null
-                        }
-
-                        if (($script:PSSession -eq $null) -or ($script:PSSession.Runspace.RunspaceStateInfo.State -ne 'Opened'))
-                        {
-                            Set-PSImplicitRemotingSession `
-                                (& $script:GetPSSession `
-                                    -InstanceId $script:PSSession.InstanceId.Guid `
-                                    -ErrorAction SilentlyContinue )
-                        }
-                        if ($script:PSSession -ne $null)
-                        {
-                            if ($script:PSSession.Runspace.RunspaceStateInfo.State -eq 'Disconnected')
-                            {
-                                # If we are handed a disconnected session, try re-connecting it before creating a new session.
-                                Set-PSImplicitRemotingSession `
-                                    (& $script:ConnectPSSession `
-                                        -Session $script:PSSession `
-                                        -ErrorAction SilentlyContinue)
-                            }
-                            else
-                            {
-                                # Import the module once more to ensure that Test-ActiveToken is present
-                                Import-Module $global:_EXO_ModulePath -Cmdlet Test-ActiveToken;
-
-                                # If there is no active token run the new session flow
-                                $hasActiveToken = Test-ActiveToken -TokenExpiryTime $script:PSSession.TokenExpiryTime
-                                $sessionIsOpened = $script:PSSession.Runspace.RunspaceStateInfo.State -eq 'Opened'
-                                if (($hasActiveToken -eq $false) -or ($sessionIsOpened -ne $true))
-                                {
-                                    #If there is no active user token or opened session then ensure that we remove the old session
-                                    $shouldRemoveCurrentSession = $true;
-                                }
-                            }
-                        }
-                        if (($script:PSSession -eq $null) -or ($script:PSSession.Runspace.RunspaceStateInfo.State -ne 'Opened') -or ($shouldRemoveCurrentSession -eq $true))
-                        {
-                            # Import the module once more to ensure that New-ExoPSSession is present
-                            Import-Module $global:_EXO_ModulePath -Cmdlet New-ExoPSSession;
-
-                            Write-PSImplicitRemotingMessage ('Creating a new Remote PowerShell session using Modern Authentication for implicit remoting of "{0}" command ...' -f $commandName)
-                            $session = New-ExoPSSession -PreviousSession $script:PSSession
-
-                            if ($session -ne $null)
-                            {
-                                if ($shouldRemoveCurrentSession -eq $true)
-                                {
-                                    Remove-PSSession $script:PSSession
-                                }
-
-                                # Import the latest session to ensure that the next cmdlet call would occur on the new PSSession instance.
-                                if ([string]::IsNullOrEmpty($script:MyModule.ModulePrefix))
-                                {
-                                    $PSSessionModuleInfo = Import-PSSession $session -AllowClobber -DisableNameChecking -CommandName $script:MyModule.CommandName -FormatTypeName $script:MyModule.FormatTypeName
-                                }
-                                else
-                                {
-                                    $PSSessionModuleInfo = Import-PSSession $session -AllowClobber -DisableNameChecking -CommandName $script:MyModule.CommandName -FormatTypeName $script:MyModule.FormatTypeName -Prefix $script:MyModule.ModulePrefix
-                                }
-
-                                # Add the name of the module to clean up in case of removing the broken session
-                                $session | Add-Member -NotePropertyName "CurrentModuleName" -NotePropertyValue $PSSessionModuleInfo.Name
-
-                                $CurrentModule = Import-Module $PSSessionModuleInfo.Path -Global -DisableNameChecking -Prefix $script:MyModule.ModulePrefix -PassThru
-                                $CurrentModule | Add-Member -NotePropertyName "ModulePrefix" -NotePropertyValue $script:MyModule.ModulePrefix
-                                $CurrentModule | Add-Member -NotePropertyName "CommandName" -NotePropertyValue $script:MyModule.CommandName
-                                $CurrentModule | Add-Member -NotePropertyName "FormatTypeName" -NotePropertyValue $script:MyModule.FormatTypeName
-
-                                $session | Add-Member -NotePropertyName "PreviousModuleName" -NotePropertyValue $script:MyModule.Name
-
-                                UpdateImplicitRemotingHandler
-                                $script:PSSession = $session
-                            }
-                        }
-                        if (($script:PSSession -eq $null) -or ($script:PSSession.Runspace.RunspaceStateInfo.State -ne 'Opened'))
-                        {
-                            throw 'No session has been associated with this implicit remoting module'
-                        }
-
-                        return [Management.Automation.Runspaces.PSSession]$script:PSSession
-                    }}
-                }
-            }
-        }
-    }
-
-    <#
     .SYNOPSIS Extract organization name from UserPrincipalName
     #>
     function Get-OrgNameFromUPN
@@ -297,9 +168,6 @@ function Connect-ExchangeOnline
         #The way the output objects would be printed on the console
         [string[]] $FormatTypeName = @("*"),
 
-        # Use Remote PowerShell Session based connection
-        [switch] $UseRPSSession = $false,
-
         # Use to Skip Exchange Format file loading into current shell.
         [switch] $SkipLoadingFormatData = $false,
 
@@ -316,7 +184,10 @@ function Connect-ExchangeOnline
         [System.Security.Cryptography.X509Certificates.X509Certificate2] $SigningCertificate = $null,
 
         # switch to disable WAM
-        [switch] $DisableWAM = $false
+        [switch] $DisableWAM = $false,
+
+        # Temp Base Path
+        [string] $EXOModuleBasePath  = [System.IO.Path]::GetTempPath()
     )
     DynamicParam
     {
@@ -498,9 +369,12 @@ function Connect-ExchangeOnline
     process {
         $global:EXO_LastExecutionStatus = $true;
         $EnableSearchOnlySession = $false
-        $var = Get-Variable -Name "EnableSearchOnlySession" -Scope Script -ErrorAction SilentlyContinue
-        if ($null -ne $var) {
-            $EnableSearchOnlySession = $var.Value
+        if (Test-Path Variable:Script:EnableSearchOnlySession)
+        {
+            $var = Get-Variable -Name "EnableSearchOnlySession" -Scope Script -ErrorAction SilentlyContinue
+            if ($null -ne $var) {
+                $EnableSearchOnlySession = $var.Value
+            }
         }
         $startTime = Get-Date
 
@@ -539,10 +413,10 @@ function Connect-ExchangeOnline
             # Generate a ConnectionId to use in all logs and to send in all server calls.
             $connectionContextID = [System.Guid]::NewGuid()
 
-            $cmdletLogger = New-CmdletLogger -ExoModuleVersion $moduleVersion -LogDirectoryPath $LogDirectoryPath.Value -EnableErrorReporting:$EnableErrorReporting.Value -ConnectionId $connectionContextID -IsRpsSession:$UseRPSSession.IsPresent
+            $cmdletLogger = New-CmdletLogger -ExoModuleVersion $moduleVersion -LogDirectoryPath $LogDirectoryPath.Value -EnableErrorReporting:$EnableErrorReporting.Value -ConnectionId $connectionContextID
             $logFilePath = $cmdletLogger.GetCurrentLogFilePath()
             
-            if ($EnableErrorReporting.Value -eq $true -and $UseRPSSession -eq $false)
+            if ($EnableErrorReporting.Value -eq $true)
             {
                 Write-Message ("Writing cmdlet logs to " + $logFilePath)
             }
@@ -568,16 +442,17 @@ function Connect-ExchangeOnline
                 -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $CertificateThumbprint.Value -AppId $AppId.Value `
                 -Organization $Organization.Value -Device:$Device.Value -InlineCredential:$InlineCredential.Value -CommandName $CommandName `
                 -FormatTypeName $FormatTypeName -Prefix $Prefix -PageSize $PageSize.Value -ExoModuleVersion:$moduleVersion -Logger $cmdletLogger `
-                -ConnectionId $connectionContextID -IsRpsSession $UseRPSSession.IsPresent -EnableErrorReporting:$EnableErrorReporting.Value `
-                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession
+                -ConnectionId $connectionContextID -EnableErrorReporting:$EnableErrorReporting.Value `
+                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath
             }
             else
             {
                 $ConnectionContext = Get-ConnectionContext -ExchangeEnvironmentName $ExchangeEnvironmentName -ConnectionUri $ConnectionUri `
                 -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -Credential $Credential.Value -PSSessionOption $PSSessionOption `
                 -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -InlineCredential:$InlineCredential.Value `
-                -DelegatedOrg $DelegatedOrganization -CommandName $CommandName -FormatTypeName $FormatTypeName -Prefix $prefix -ExoModuleVersion:$moduleVersion `
-                -Logger $cmdletLogger -ConnectionId $connectionContextID -IsRpsSession $UseRPSSession.IsPresent -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession
+                -DelegatedOrg $DelegatedOrganization -CommandName $CommandName -FormatTypeName $FormatTypeName -Prefix $Prefix -ExoModuleVersion:$moduleVersion `
+                -Logger $cmdletLogger -ConnectionId $connectionContextID -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath
+
             }
 
             if ($isCloudShell -eq $false)
@@ -589,7 +464,7 @@ function Connect-ExchangeOnline
             {
                 try
                 {
-                    $BannerContent = Get-EXOBanner -ConnectionContext:$ConnectionContext -IsRPSSession:$UseRPSSession.IsPresent
+                    $BannerContent = Get-EXOBanner -ConnectionContext:$ConnectionContext
                     Write-Host -ForegroundColor Yellow $BannerContent
                 }
                 catch
@@ -611,93 +486,43 @@ function Connect-ExchangeOnline
             $ImportedModuleName = '';
             $LogModuleDirectoryPath = [System.IO.Path]::GetTempPath();
 
-            if ($UseRPSSession -eq $true)
+            
+
+            # Download the new web based EXOModule
+            if ($SigningCertificate -ne $null)
             {
-                $ExoPowershellModule = "Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll";
-                $ModulePath = [System.IO.Path]::Combine($PSScriptRoot, $ExoPowershellModule);
+                $ImportedModule = New-EXOModule -ConnectionContext $ConnectionContext -SkipLoadingFormatData:$SkipLoadingFormatData -SigningCertificate $SigningCertificate;
+            }
+            else
+            {
+                $ImportedModule = New-EXOModule -ConnectionContext $ConnectionContext -SkipLoadingFormatData:$SkipLoadingFormatData;
+            }
+            if ($null -ne $ImportedModule)
+            {
+                $ImportedModuleName = $ImportedModule.Name;
+                $LogModuleDirectoryPath = $ImportedModule.ModuleBase
 
-                Import-Module $ModulePath;
+                Write-Verbose "AutoGen EXOModule created at  $($ImportedModule.ModuleBase)"
 
-                $global:_EXO_ModulePath = $ModulePath;
-
-                $PSSession = New-ExoPSSession -ConnectionContext $ConnectionContext
-
-                if ($PSSession -ne $null)
+                if ($LoadCmdletHelp -eq $true -and $HelpFileNames -ne $null -and $HelpFileNames -is [array] -and $HelpFileNames.Count -gt 0)
                 {
-                    if ([string]::IsNullOrEmpty($Prefix))
-                    {
-                        $PSSessionModuleInfo = Import-PSSession $PSSession -AllowClobber -DisableNameChecking -CommandName $CommandName -FormatTypeName $FormatTypeName
-                    }
-                    else
-                    {
-                        $PSSessionModuleInfo = Import-PSSession $PSSession -AllowClobber -DisableNameChecking -CommandName $CommandName -FormatTypeName $FormatTypeName -Prefix $Prefix
-                    }
-                    # Add the name of the module to clean up in case of removing the broken session
-                    $PSSession | Add-Member -NotePropertyName "CurrentModuleName" -NotePropertyValue $PSSessionModuleInfo.Name
-
-                    # Import the above module globally. This is needed as with using psm1 files, 
-                    # any module which is dynamically loaded in the nested module does not reflect globally.
-                    $CurrentModule = Import-Module $PSSessionModuleInfo.Path -Global -DisableNameChecking -Prefix $Prefix -PassThru
-                    $CurrentModule | Add-Member -NotePropertyName "ModulePrefix" -NotePropertyValue $Prefix
-                    $CurrentModule | Add-Member -NotePropertyName "CommandName" -NotePropertyValue $CommandName
-                    $CurrentModule | Add-Member -NotePropertyName "FormatTypeName" -NotePropertyValue $FormatTypeName
-
-                    UpdateImplicitRemotingHandler
-
-                    # Import the REST module
-                    $RestPowershellModule = "Microsoft.Exchange.Management.RestApiClient.dll";
-                    $RestModulePath = [System.IO.Path]::Combine($PSScriptRoot, $RestPowershellModule);
-                    Import-Module $RestModulePath -Cmdlet Set-ExoAppSettings;
-
-                    $ImportedModuleName = $PSSessionModuleInfo.Name;
+                    Get-HelpFiles -HelpFileNames $HelpFileNames -ConnectionContext $ConnectionContext -ImportedModule $ImportedModule -EnableErrorReporting:$EnableErrorReporting.Value
+                }
+                else
+                {
+                    $cmdletLogger.LogGenericInfo($connectionContextID, "Skipping cmdlet help data");
                 }
             }
             else
             {
-                # Download the new web based EXOModule
-                if ($SigningCertificate -ne $null)
-                {
-                    $ImportedModule = New-EXOModule -ConnectionContext $ConnectionContext -SkipLoadingFormatData:$SkipLoadingFormatData -SigningCertificate $SigningCertificate;
-                }
-                else
-                {
-                    $ImportedModule = New-EXOModule -ConnectionContext $ConnectionContext -SkipLoadingFormatData:$SkipLoadingFormatData;
-                }
-                if ($null -ne $ImportedModule)
-                {
-                    $ImportedModuleName = $ImportedModule.Name;
-                    $LogModuleDirectoryPath = $ImportedModule.ModuleBase
-
-                    Write-Verbose "AutoGen EXOModule created at  $($ImportedModule.ModuleBase)"
-
-                    if ($LoadCmdletHelp -eq $true -and $HelpFileNames -ne $null -and $HelpFileNames -is [array] -and $HelpFileNames.Count -gt 0)
-                    {
-                        Get-HelpFiles -HelpFileNames $HelpFileNames -ConnectionContext $ConnectionContext -ImportedModule $ImportedModule -EnableErrorReporting:$EnableErrorReporting.Value
-                    }
-                    else
-                    {
-                        $cmdletLogger.LogGenericInfo($connectionContextID, "Skipping cmdlet help data");
-                    }
-                }
-                else
-                {
-                    $global:EXO_LastExecutionStatus = $false;
-                    throw "Module could not be correctly formed. Please run Connect-ExchangeOnline again."
-                }
+                $global:EXO_LastExecutionStatus = $false;
+                throw "Module could not be correctly formed. Please run Connect-ExchangeOnline again."
             }
+            
 
             # If we are configured to collect telemetry, add telemetry wrappers in case of an RPS connection
             if ($EnableErrorReporting.Value -eq $true)
             {
-                if ($UseRPSSession -eq $true)
-                {
-                    $FilePath = Add-EXOClientTelemetryWrapper -Organization (Get-OrgNameFromUPN -UPN $UserPrincipalName.Value) -PSSessionModuleName $ImportedModuleName -LogDirectoryPath $LogDirectoryPath.Value -LogModuleDirectoryPath $LogModuleDirectoryPath
-                    Write-Message("Writing telemetry records for this session to " + $FilePath[0] );
-                    $global:_EXO_TelemetryFilePath = $FilePath[0]
-                    Import-Module $FilePath[1] -DisableNameChecking -Global
-
-                    Push-EXOTelemetryRecord -TelemetryFilePath $global:_EXO_TelemetryFilePath -CommandName Connect-ExchangeOnline -CommandParams $PSCmdlet.MyInvocation.BoundParameters -OrganizationName  $global:_EXO_ExPSTelemetryOrganization -ScriptName $global:_EXO_ExPSTelemetryScriptName  -ScriptExecutionGuid $global:_EXO_ExPSTelemetryScriptExecutionGuid
-                }
 
                 $endTime = Get-Date
                 $cmdletLogger.LogEndTime($connectionContextID, $endTime);
@@ -731,7 +556,7 @@ function Connect-ExchangeOnline
 
             $cmdletLogger.CommitLog($connectionContextID);
 
-            if ($EnableErrorReporting.Value -eq $true -and $UseRPSSession -eq $true)
+            if ($EnableErrorReporting.Value -eq $true)
             {
                 if ($global:_EXO_TelemetryFilePath -eq $null)
                 {
@@ -806,9 +631,6 @@ function Connect-IPPSSession
         #The way the output objects would be printed on the console
         [string[]] $FormatTypeName = @("*"),
 
-        # Use Remote PowerShell Session based connection
-        [switch] $UseRPSSession = $false,
-
         # Show Banner of scc cmdlets Mapping and recent updates
         [switch] $ShowBanner = $true,
 
@@ -819,7 +641,10 @@ function Connect-IPPSSession
         [string] $AccessToken = '',
         
         # Switch to using OBO Token
-        [switch] $EnableSearchOnlySession = $false
+        [switch] $EnableSearchOnlySession = $false,
+
+        # TempBasePath
+        [string] $EXOModuleBasePath = [System.IO.Path]::GetTempPath()
     )
     DynamicParam
     {
@@ -870,7 +695,7 @@ function Connect-IPPSSession
             # Where to store command telemetry data. By default telemetry is stored in the directory "%TEMP%/EXOTelemetry" in the file : EXOCmdletTelemetry-yyyymmdd-hhmmss.csv.
             $LogDirectoryPath = New-Object System.Management.Automation.RuntimeDefinedParameter('LogDirectoryPath', [string], $attributeCollection)
             $LogDirectoryPath.Value = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "EXOCmdletTelemetry")
-            # Create a new attribute and valiate set against the LogLevel
+            # Create a new attribute and validate set against the LogLevel
             $LogLevelAttribute = New-Object System.Management.Automation.ParameterAttribute
             $LogLevelAttribute.Mandatory = $false
             $LogLevelAttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
@@ -959,16 +784,16 @@ function Connect-IPPSSession
                 # Will pass CertificateThumbprint if it is not null or not empty
                 if($certThumbprint)
                 {
-                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $certThumbprint -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $certThumbprint -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
                 }
                 else
                 {
-                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
                 }
             }
             else
             {
-                Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -PSSessionOption $PSSessionOption -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -UseRPSSession:$UseRPSSession -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value
+                Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -PSSessionOption $PSSessionOption -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
             }
         }
         finally

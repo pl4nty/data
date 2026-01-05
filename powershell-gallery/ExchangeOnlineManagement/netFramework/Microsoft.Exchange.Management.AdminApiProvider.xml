@@ -1848,6 +1848,14 @@
             <param name="message">log message</param>
             <param name="containsPii">contains Pii</param>
         </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.LogCallbackWithoutFileStorage(Microsoft.Identity.Client.LogLevel,System.String,System.Boolean)">
+            <summary>
+            Callback method for MSAL logging that intentionally discards all log messages
+            </summary>
+            <param name="level">log level</param>
+            <param name="message">log message</param>
+            <param name="containsPii">contains Pii</param>
+        </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.SetMsalCorrelationID(System.String)">
             <summary>
             set MSAL CorrelationID

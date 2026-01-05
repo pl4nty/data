@@ -2518,11 +2518,6 @@
             the UserPrincipalName
             </summary>
         </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.ExoMailbox.UMEnabled">
-            <summary>
-            the UMEnabled
-            </summary>
-        </member>
         <member name="P:Microsoft.Exchange.Management.RestApiClient.ExoMailbox.MaxSafeSenders">
             <summary>
             the MaxSafeSenders
@@ -6544,6 +6539,260 @@
         <member name="F:Microsoft.Exchange.Management.RestApiClient.VivaInsights.VivaInsightsSettingsConstants.EmfAdminSettings">
             <summary>
             The Emf Admin Settings name
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult">
+            <summary>
+            Represents the possible result from the add delegation access operation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult.Added">
+            <summary>
+            Delegation access record added successfully.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult.MissingLicense">
+            <summary>
+            Delegate doesn't have a valid license.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult.NotProcessed">
+            <summary>
+            The delegation access record already exists.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult.InvalidDelegator">
+            <summary>
+            The delegator is not valid due to team size or not licensed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult.AdminSettingsRevoked">
+            <summary>
+            The settings revoked the delegation access capability.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess">
+            <summary>
+            This class implements "Add-WorkforceInsightsDelegationAccess" Cmdlet
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.Delegate">
+            <summary>
+            Gets or sets the delegate user id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.Delegator">
+            <summary>
+            Gets or sets the delegator user id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.GetDisplayMessage(Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.AddDelegationAccessResult)">
+            <summary>
+            Gets the corresponding message by the result.
+            </summary>
+            <param name="result">The add delegation access result.</param>
+            <returns>The message to display.</returns>
+            <exception cref="T:Microsoft.Exchange.Management.RestApiClient.RestClientException">Throws when the result is unexpected.</exception>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.ConvertToAddDelegationAccessResult(System.String)">
+            <summary>
+            Converts string value to AddWorkforceInsightsDelegationAccess result.
+            </summary>
+            <param name="rawStringValue">The string value.</param>
+            <returns>The enum AddDelegationAccessResult.</returns>
+            <exception cref="T:Microsoft.Exchange.Management.RestApiClient.RestClientException">Throws when converting to enum fails.</exception>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.AddWorkforceInsightsDelegationAccess.InternalProcessRecord">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.GetWorkforceInsightsDelegationAccess">
+            <summary>
+            This class implements "Get-WorkforceInsightsDelegationAccess" Cmdlet.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.GetWorkforceInsightsDelegationAccess.Delegator">
+            <summary>
+            Gets or sets the delegator user id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.GetWorkforceInsightsDelegationAccess.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.GetWorkforceInsightsDelegationAccess.UrlStem">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.GetWorkforceInsightsDelegationAccess.InternalProcessRecord">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess">
+            <summary>
+            This class implements "Remove-WorkforceInsightsDelegationAccess" Cmdlet.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess.Delegate">
+            <summary>
+            Gets or sets the delegate user id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess.Delegator">
+            <summary>
+            Gets or sets the delegator user id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess.UrlStem">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.RemoveWorkforceInsightsDelegationAccess.InternalProcessRecord">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2">
+            <summary>
+            The base class for client side workforce insights delegation cmdlets implemented WeveAdminCmdlet
+            </summary>
+            <typeparam name="TDomainObject">The api type.</typeparam>
+            <typeparam name="TCmdlet">The cmdlet type.</typeparam>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.ManagerDelegationType">
+            <summary>
+            The string const of manager delegation type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.KnownErrorCodeToMessage">
+            <summary>
+            The dictionary to map message from the http status code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.UrlStem">
+            <summary>
+            The delegation access url stem.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.RemoveDelegationAccessEndpoint">
+            <summary>
+            The delegation access url stem for remove delegation access.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.GetDelegationAccessEndpoint">
+            <summary>
+            The delegation access url stem for get delegation access.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.ForbiddenErrorMessage">
+            <summary>
+            The message displayed for users when there is Forbidden error occurred.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Cmdlets.WorkforceInsightsDelegationCmdlet`2.GetDelegatedRolesListDisplay(Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessList)">
+            <summary>
+            The helper function to convert delegation access list to its display model.
+            </summary>
+            <param name="delegationAccessList">The delegation access list.</param>
+            <returns>The delegation access list for display.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.AddDelegationAccessRequest">
+            <summary>
+            Represents the request to add the list of delegation access.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.AddDelegationAccessRequest.DelegationAccess">
+            <summary>
+            Gets or sets the list of delegation access.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.AddDelegationAccessResponse">
+            <summary>
+            Represents the response of add-delegation-access request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.AddDelegationAccessResponse.AddResults">
+            <summary>
+            Gets or sets the result of add-delegation-access. The dictionary is delegate user id to status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.AddDelegationAccessResponse.AddedDelegations">
+            <summary>
+            Gets or sets the delegation access.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess">
+            <summary>
+            Represents the delegation access.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess.Id">
+            <summary>
+            Gets or sets the id of the role.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess.DelegationType">
+            <summary>
+            Gets or sets the role.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess.AssignedTo">
+            <summary>
+            Gets or sets the assigned to user object id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess.DelegatedFrom">
+            <summary>
+            Gets or sets the delegated from user object id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccess.ExpiresOn">
+            <summary>
+            Gets or sets expiry time for delegation access.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessList">
+            <summary>
+            Represents the list of delegation access.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessList.DelegationAccess">
+            <summary>
+            Gets or sets the list of delegation access.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessDisplay">
+            <summary>
+            Represents the delegation access to display.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessDisplay.Delegate">
+            <summary>
+            Gets or sets the assigned to user object id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.DelegationAccessDisplay.Delegator">
+            <summary>
+            Gets or sets the delegated from user object id.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.Display.DelegationAccessListDisplay">
+            <summary>
+            Represents the list of delegation access to display
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.Display.DelegationAccessListDisplay.DelegationAccess">
+            <summary>
+            Gets or sets the list of delegation access.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.RemoveDelegationAccessRequest">
+            <summary>
+            Represents the delegation access to remove.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.WorkforceInsights.Models.RemoveDelegationAccessRequest.DelegationAccess">
+            <summary>
+            Gets or sets the delegation access
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.Common.CAEException">
