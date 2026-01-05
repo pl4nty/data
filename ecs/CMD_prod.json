@@ -486,7 +486,6 @@
         "EnableIsMemberOfGroups": true,
         "EnableIsolatedFederatedClientCert": true,
         "EnableIsolatedOrderingClientCert": true,
-        "EnableIsolationCopySubscriptionForCrossRegionDR": true,
         "EnableKustoExtents": false,
         "EnableKustoTelemetryCommands": true,
         "EnableKustoTelemetryCommandsGlobal": true,
