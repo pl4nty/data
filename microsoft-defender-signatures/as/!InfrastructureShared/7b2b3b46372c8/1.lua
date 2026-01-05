@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\41b304ea6ce0\1.luac 
+-- Command line: lua\!InfrastructureShared\7b2b3b46372c8\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -78,15 +78,17 @@ if (not l_0_3 or l_0_2 ~= nil) and l_0_3 ~= nil and l_0_5 ~= nil and l_0_4 ~= ni
     l_0_18 = l_0_16.ppid
     l_0_17(l_0_18, "T1105", "CommandAndControl")
   end
+  addRelatedProcess()
+  reportRelatedBmHits()
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC117: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC121: Confused about usage of register R8 for local variables in 'ReleaseLocals'
 
 end
--- DECOMPILER ERROR at PC117: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC121: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC118: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC122: Overwrote pending register: R3 in 'AssignReg'
 
 do return l_0_3 end
--- DECOMPILER ERROR at PC120: Confused about usage of register R7 for local variables in 'ReleaseLocals'
+-- DECOMPILER ERROR at PC124: Confused about usage of register R7 for local variables in 'ReleaseLocals'
 
 
