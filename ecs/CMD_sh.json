@@ -599,7 +599,6 @@
         "EnableIsMemberOfGroups": true,
         "EnableIsolatedFederatedClientCert": false,
         "EnableIsolatedOrderingClientCert": true,
-        "EnableIsolationCopySubscriptionForCrossRegionDR": true,
         "EnableKeepingVMsForAllFailures": false,
         "EnableKustoExtents": false,
         "EnableKustoTelemetryCommands": true,
