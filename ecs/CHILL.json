@@ -109,108 +109,6 @@
         }
     },
     "ChillAdminCopilot": {
-        "Floodgate_Campaign_AdminPortal.0472551c-40a2-423b-8eb9-e35ded05618a": {
-            "CampaignId": "0472551c-40a2-423b-8eb9-e35ded05618a",
-            "EndTimeUtc": "2025-12-31T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-07-28T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "CopilotSearchUpdateSettings",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on Copilot Control System"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Extremely helpful",
-                                        "Very helpful",
-                                        "Neutral",
-                                        "Somewhat helpful",
-                                        "Not at all helpful"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How helpful did you find Copilot Search management in the Copilot Control System?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us more about why you chose that answer",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Thank You",
-                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText2",
-                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/0472551c-40a2-423b-8eb9-e35ded05618a/e76a3183-6323-4c5a-a83a-a81002941a72/Web-AdminPortal/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_AdminPortal.0e749c96-9de6-44aa-9baf-3f3652f9c726": {
             "CampaignId": "0e749c96-9de6-44aa-9baf-3f3652f9c726",
             "EndTimeUtc": "2026-01-30T08:00:00Z",
@@ -711,108 +609,6 @@
                 }
             }
         },
-        "Floodgate_Campaign_AdminPortal.3efd818d-0d7b-4dee-87f1-87940c7e6dd9": {
-            "CampaignId": "3efd818d-0d7b-4dee-87f1-87940c7e6dd9",
-            "EndTimeUtc": "2026-01-01T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-06-24T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "Office.Admin.Copilot.Control.System",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on Copilot Control System"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Extremely helpful",
-                                        "Very helpful",
-                                        "Neutral",
-                                        "Somewhat helpful",
-                                        "Not at all helpful"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How was your experience with agent management in Copilot Control System?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us more why you chose that answer",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Thank You",
-                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText2",
-                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/3efd818d-0d7b-4dee-87f1-87940c7e6dd9/7071d4f0-b1e4-4477-994e-8909a331bbc1/Web-AdminPortal/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_AdminPortal.89ca0760-82ca-43a8-8c20-5f11426769d6": {
             "CampaignId": "89ca0760-82ca-43a8-8c20-5f11426769d6",
             "EndTimeUtc": "2026-01-30T08:00:00Z",
@@ -911,79 +707,6 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/89ca0760-82ca-43a8-8c20-5f11426769d6/5ccb23f0-191b-4982-a608-2386293e3f8d/Web-AdminPortal/",
-                    "variables": {}
-                }
-            }
-        },
-        "Floodgate_Campaign_AdminPortal.aa7238bb-1faa-4f59-9ff7-58ef41081868": {
-            "CampaignId": "aa7238bb-1faa-4f59-9ff7-58ef41081868",
-            "EndTimeUtc": "2026-01-03T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-06-24T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "UserSettingChanged",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on Microsoft"
-                        },
-                        {
-                            "displayName": "Verbatim",
-                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "verbatim1",
-                                    "questionLabel": "What prompted this Copilot setting change? Your feedback helps us improve.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/aa7238bb-1faa-4f59-9ff7-58ef41081868/07fc14fe-bc52-4119-8490-20cb8cdd0e0b/Web-AdminPortal/",
                     "variables": {}
                 }
             }
@@ -1825,100 +1548,6 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/7f516662-457b-42c1-b1a8-747e2595f322/b5fb96bf-5424-43cc-abbf-2cab919b7a69/Web-Harmony/",
-                    "variables": {}
-                }
-            }
-        }
-    },
-    "ChillMSInvest": {
-        "Floodgate_Campaign_MicrosoftAdvertising.22205abf-bfa0-4d66-872f-b4a4befdef27": {
-            "CampaignId": "22205abf-bfa0-4d66-872f-b4a4befdef27",
-            "EndTimeUtc": "2025-12-31T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 604800,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 432000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 75,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-11-03T08:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "monetizecsatv1",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "additionalCapabilities": {
-                        "email": {
-                            "targetPage": 1
-                        }
-                    },
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on Monetize!"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "5 - Very satisfied",
-                                        "4 - Somewhat satisfied",
-                                        "3 - Neutral",
-                                        "2 - Somewhat dissatisfied",
-                                        "1 - Very dissatisfied"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How satisfied are you with the experience of the Monetize platform?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us how we can improve your experience.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/22205abf-bfa0-4d66-872f-b4a4befdef27/aafb6286-21d0-47bc-8aaf-f1cb8d1eea78/Web-MicrosoftAdvertising/",
                     "variables": {}
                 }
             }
@@ -2957,62 +2586,6 @@
         }
     },
     "ChillSharePoint": {
-        "Floodgate_Campaign_SharePoint.0d4678a0-27ae-4710-8438-6e1bbb25dc53": {
-            "CampaignId": "0d4678a0-27ae-4710-8438-6e1bbb25dc53",
-            "EndTimeUtc": "2025-12-31T16:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 5184000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-07-23T16:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "AppBarSwitchedToClassic",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "Content": {
-                    "Prompt": {
-                        "NoLabel": "Cancel",
-                        "Question": "Switch to Classic SharePoint?",
-                        "Title": "We'd love your feedback.",
-                        "YesLabel": "Submit"
-                    },
-                    "Question": {
-                        "Question": "Optional"
-                    },
-                    "Rating": {
-                        "IsZeroBased": false,
-                        "Question": "Why are you switching to classic SharePoint?",
-                        "RatingValuesAscending": [
-                            "I can't find what I'm looking for",
-                            "The new experience feels slower",
-                            "Other"
-                        ]
-                    }
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2
-            }
-        },
         "Floodgate_Campaign_SharePoint.41595e8c-cd08-4db0-a5fc-75ef508acaa1": {
             "CampaignId": "41595e8c-cd08-4db0-a5fc-75ef508acaa1",
             "EndTimeUtc": "2026-03-30T16:00:00Z",
@@ -3559,7 +3132,7 @@
     "ChillVivaGlint": {
         "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
             "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
-            "EndTimeUtc": "2026-01-23T05:00:00Z",
+            "EndTimeUtc": "2026-03-06T05:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3617,7 +3190,7 @@
         },
         "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
             "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
-            "EndTimeUtc": "2026-01-23T05:00:00Z",
+            "EndTimeUtc": "2026-03-06T05:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
