@@ -10,8 +10,14 @@ local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QU
 if l_0_0 == nil then
   return mp.CLEAN
 end
+if (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") == nil then
+  return mp.CLEAN
+end
+if IsSharepointServer() then
+  return mp.INFECTED
+end
 do
-  if (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") ~= nil and IsDeviceHVA() then
+  if IsDeviceHVA() then
     local l_0_1 = ExtractDeviceProperties()
     if l_0_1.DeviceRoles and (l_0_1.DeviceRoles).SharePointServer ~= nil then
       return mp.INFECTED

@@ -17,6 +17,9 @@ if l_0_0 ~= nil and l_0_0.image_path ~= nil and (string.find)((string.lower)(l_0
   if (string.find)(l_0_2, "-ap \"sharepoint", 1, true) then
     return mp.CLEAN
   end
+  if IsSharepointServer() then
+    return mp.INFECTED
+  end
   if IsDeviceHVA() then
     local l_0_3 = ExtractDeviceProperties()
     if l_0_3.DeviceRoles and (l_0_3.DeviceRoles).SharePointServer ~= nil then
