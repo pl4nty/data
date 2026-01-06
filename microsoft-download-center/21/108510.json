@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Maximizing Query Performance with Microsoft Fabric Data Warehouse",
+    "downloadDescription": "Fabric DW v. Azure Synapse whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Technical-Validation-Microsoft-Fabric-Dec-2025.pdf",
+            "url": "https://download.microsoft.com/download/188a28ba-9c3e-4b5d-b1be-61b5ad97788e/Technical-Validation-Microsoft-Fabric-Dec-2025.pdf",
+            "size": "726964",
+            "version": "1",
+            "datePublished": "1/6/2026 5:21:52 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A whitepaper comparing Azure Synapse\u2019s performance with Fabric DW.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Technical-Validation-Microsoft-Fabric-Dec-2025.pdf"
+    ],
+    "detailsSection_file_size": [
+        "709.9 KB"
+    ],
+    "detailsSection_file_date": "1/6/2026",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108510",
+    "downloadPreload": true
+}
