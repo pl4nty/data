@@ -310,6 +310,13 @@
             }
         },
         "JJHO.MicrosoftVisualStudioInternationalPack10SR1": true,
+        "JuliaComputing.juliasim-studio": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Dyad Studio",
+                "id": "JuliaComputing.dyad-studio"
+            }
+        },
         "KhanhTranQuoc.holistics-aml-extension": {
             "disallowInstall": true,
             "extension": {
@@ -354,6 +361,7 @@
         "MS-CEINTL.vscode-language-pack-ps": true,
         "MS-CEINTL.vscode-language-pack-uk": true,
         "MSFTLearnTogether.learn-together-color-theme": true,
+        "MaikeyShrimp.vscode-pets-shrimp-bata": true,
         "MaxGripe.vscode-create-polyglot": true,
         "Meowcolm024.has-go": {
             "disallowInstall": true,
@@ -1410,6 +1418,7 @@
             }
         },
         "logerfo.cd-repo": true,
+        "lone17.lone-vscode-pets": true,
         "lonefy.vscode-JS-CSS-HTML-formatter": true,
         "lvjiaxuan.eslint-disable": {
             "disallowInstall": true,
