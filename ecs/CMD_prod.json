@@ -1094,6 +1094,7 @@
         "FeatureConsentBackfill": true,
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
+        "IntuneDeviceInitializationSignal": true,
         "MigrateAuthToPMEForOneSettings": true,
         "MigrateQBSEndpoint": true,
         "MigrationAddClientBrokerInstallAdminAction": true,
