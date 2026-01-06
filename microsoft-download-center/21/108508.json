@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Test",
+    "downloadDescription": "Test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "File 2.txt",
+            "url": "https://download.microsoft.com/download/e57d3896-c4c2-4aac-a3e5-95a794b84e53/File 2.txt",
+            "size": "10",
+            "version": "1",
+            "datePublished": "1/6/2026 6:10:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "File 2.txt"
+    ],
+    "detailsSection_file_size": [
+        "10 bytes"
+    ],
+    "detailsSection_file_date": "1/6/2026",
+    "systemRequirementsSection": "Test",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108508",
+    "downloadPreload": true
+}
