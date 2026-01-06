@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dms4.txt",
+            "url": "https://download.microsoft.com/download/6e6fdbe1-9d5e-423f-af4e-203d49cc6841/dms4.txt",
+            "size": "146",
+            "version": "1",
+            "datePublished": "1/6/2026 11:15:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "authorize.htm",
+            "url": "https://download.microsoft.com/download/6e6fdbe1-9d5e-423f-af4e-203d49cc6841/authorize.htm",
+            "size": "48967",
+            "version": "1",
+            "datePublished": "1/6/2026 11:15:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "dms4.txt",
+        "authorize.htm"
+    ],
+    "detailsSection_file_size": [
+        "146 bytes",
+        "47.8 KB"
+    ],
+    "detailsSection_file_date": "1/6/2026",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108509",
+    "downloadPreload": true
+}
