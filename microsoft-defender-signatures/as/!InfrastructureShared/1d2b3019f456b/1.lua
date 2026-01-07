@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\11ab343260e85\1.luac 
+-- Command line: lua\!InfrastructureShared\1d2b3019f456b\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -9,12 +9,12 @@ local l_0_2 = (bm.get_imagepath)()
 if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
   return mp.CLEAN
 end
-if l_0_1:find("gitlab-runner run --working-directory", 1, true) or l_0_1:find("java -jar remoting.jar", 1, true) then
+if l_0_1:find("gitlab-runner run --working-directory", 1, true) or l_0_1:find("www.istitutomarangoni.com", 1, true) or l_0_1:find("gitlab-runner run --working-directory", 1, true) or l_0_1:find("java -jar remoting.jar", 1, true) then
   return mp.CLEAN
 end
 do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and (this_sigattrlog[4]).utf8p1 ~= "" then
-    local l_0_3 = (this_sigattrlog[4]).utf8p1
+  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil and (this_sigattrlog[7]).utf8p1 ~= "" then
+    local l_0_3 = (this_sigattrlog[7]).utf8p1
     if SuspMacPathsToMonitor(l_0_3, true) then
       return mp.INFECTED
     end

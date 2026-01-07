@@ -28,6 +28,9 @@ if not is_valid_ip(l_0_2) then
   return mp.CLEAN
 end
 if (string.find)(l_0_3, "/bin/bash", 1, true) or (string.find)(l_0_3, "/bin/zsh", 1, true) or (string.find)(l_0_3, "/bin/sh", 1, true) or l_0_3:match("\'bash\'") or l_0_3:match("\"bash\"") or l_0_3:match("\'sh\'") or l_0_3:match("\"sh\"") or l_0_3:match("\'zsh\'") or l_0_3:match("\"zsh\"") or l_0_3:find("zsh -i", 1, true) or l_0_3:find("bash -i", 1, true) or l_0_3:find("sh -i", 1, true) then
+  (bm.trigger_sig)("GenericReverseShell", l_0_0)
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
