@@ -162,36 +162,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kReactiveSearchWithAddressbar);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsReactiveSearchAddressbarEnabled();
 
-// If enabled, the "Try the new look and feel" toggle in
-// edge://settings/appearance will be removed.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kRemoveTryNewLAFToggle);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsRemoveTryNewLAFToggleEnabled();
-
-// Enum for kRemoveTryNewLAFToggle treatment configuration
-enum class RemoveTryNewLAFToggleTreatment : int {
-  kDefault = 0,      // Control: original behavior
-  kFullPhoenix = 1,  // Treatment A: Remove toggle, force enables full Phoenix
-  kPartialPhoenix = 2,  // Treatment B: Keep toggle visible, enable Phoenix UX
-                        // except for web contents rounded corners
-};
-
-// Get the treatment configuration for kRemoveTryNewLAFToggle
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-RemoveTryNewLAFToggleTreatment GetRemoveTryNewLAFToggleTreatment();
-
-// Treatment A: Remove toggle completely and force-enable all Phoenix
-// experiences
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsFullPhoenixEnabledWithoutToggle();
-
-// Treatment B: Keep toggle visible but not only web contents rounded corners
-// will be gated by the toggle, all other Phoenix experiences will be enabled
-// by default regardless of the toggle state.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsLimitedPhoenixEnabledWithToggle();
-
 // If enabled, launch a new SERP backround tab to accompany any windows
 // searches.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
