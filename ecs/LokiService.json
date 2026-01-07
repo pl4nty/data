@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260104.3.0",
-        "CalendarCompanionMsitVersion": "1.20251213.1.0",
+        "CalendarCompanionDFVersion": "1.20260106.4.0",
+        "CalendarCompanionMsitVersion": "1.20251217.9.0",
         "CalendarCompanionProdVersion": "1.20251213.1.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -354,7 +354,10 @@
                 "rules": []
             }
         },
-        "simplifyTitleBar_shared_variant": "feedbackButton"
+        "simplifyTitleBar_shared_variant": "feedbackButton",
+        "suspensionManagerParameters": {
+            "dismissSuspensionDelaySeconds": 180
+        }
     },
     "ECS": {
         "ConfigLogTarget": "default"
@@ -525,7 +528,10 @@
         "ismemoryusagetelemetryenabled": false,
         "ismultiplehighlightsenabled": true,
         "isnewoofdesignenabled": true,
+        "isorgexplorerfilteringenabled": false,
+        "isorgexplorerprofileimagetelemetryenabled": false,
         "isorgexplorerreportscountenabled": true,
+        "isorgexplorersearchinsideappenabled": false,
         "ispcvlaunchfromemailsectionenabled": false,
         "ispersonaworkaroundenabled": true,
         "ispresenceincontactenabled": false,
@@ -2114,6 +2120,10 @@
                 "defaultRate": 100,
                 "rules": [
                     {
+                        "name": "ResumedFromSuspensionEvent",
+                        "rate": 5
+                    },
+                    {
                         "name": "SuspensionTaskLifeCycleEvent",
                         "rate": 5
                     }
@@ -2126,6 +2136,10 @@
             "Performance": {
                 "defaultRate": 100,
                 "rules": [
+                    {
+                        "name": "SuspensionTaskResumptionPerformance",
+                        "rate": 5
+                    },
                     {
                         "name": "FetchEndToEndLatencyEvent",
                         "rate": 10,
