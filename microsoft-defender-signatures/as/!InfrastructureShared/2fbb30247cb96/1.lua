@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\148b351762eda\1.luac 
+-- Command line: lua\!InfrastructureShared\2fbb30247cb96\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_6 = nil
 local l_0_7 = (bm.get_current_process_startup_info)()
 local l_0_8 = (bm.get_imagepath)()
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil and (this_sigattrlog[4]).utf8p1 ~= "" then
+if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p1 ~= nil and (this_sigattrlog[8]).utf8p1 ~= "" then
   local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = l_0_7.command_line
 else
   do
@@ -14,7 +14,7 @@ else
 
     -- DECOMPILER ERROR at PC59: Unhandled construct in 'MakeBoolean' P3
 
-    if ((this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil and (this_sigattrlog[5]).utf8p1 ~= "" and l_0_6 == nil) or (string.find)(l_0_6, "/System/", 1, true) == 1 then
+    if ((this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p1 ~= nil and (this_sigattrlog[9]).utf8p1 ~= "" and l_0_6 == nil) or (string.find)(l_0_6, "/System/", 1, true) == 1 then
       return mp.CLEAN
     end
     ExtendedSuspMacPathsToMonitor = function(l_1_0)

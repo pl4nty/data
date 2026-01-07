@@ -8,6 +8,8 @@ do
     local l_0_0 = (this_sigattrlog[1]).utf8p2
     if (sysio.IsFileExists)(l_0_0) then
       (bm.add_threat_file)(l_0_0)
+      ;
+      (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
     end
     return mp.INFECTED
   end

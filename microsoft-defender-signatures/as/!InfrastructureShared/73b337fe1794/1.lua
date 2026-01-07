@@ -69,6 +69,9 @@ end
             (bm.add_related_string)("persisted_path", R9_PC110.value, bm.RelatedStringBMReport)
             ;
             (bm.add_related_file)(R9_PC110.value)
+            if (sysio.IsFileExists)(R9_PC110.value) then
+              (bm.add_threat_file)(R9_PC110.value)
+            end
             return mp.INFECTED
           end
         end

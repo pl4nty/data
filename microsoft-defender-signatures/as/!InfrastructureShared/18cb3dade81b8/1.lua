@@ -33,6 +33,8 @@ do
   end
   if is_valid_ip(l_0_4) then
     (bm.trigger_sig)("GenericReverseShell", l_0_5, l_0_6.ppid)
+    ;
+    (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
     return mp.INFECTED
   end
   return mp.CLEAN

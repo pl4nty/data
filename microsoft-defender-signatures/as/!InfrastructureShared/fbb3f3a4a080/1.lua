@@ -17,6 +17,8 @@ if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
 end
 if is_valid_ip(l_0_2) and ((string.find)(l_0_2, "/bin/bash", 1, true) or (string.find)(l_0_2, "/bin/zsh", 1, true) or (string.find)(l_0_2, "/bin/sh", 1, true) or l_0_2:match("\'(bash)\'") or l_0_2:match("\"(bash)\"") or l_0_2:match("\'(sh)\'") or l_0_2:match("\"(sh)\"") or l_0_2:match("\'(zsh)\'") or l_0_2:match("\"(zsh)\"") or l_0_2:find(" bash ", 1, true) or l_0_2:find(" sh ", 1, true) or l_0_2:find(" zsh ", 1, true) or l_0_2:find("zsh -i", 1, true) or l_0_2:find("bash -i", 1, true) or l_0_2:find("sh -i", 1, true)) then
   (bm.trigger_sig)("GenericReverseShell", l_0_0, l_0_1.ppid)
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
