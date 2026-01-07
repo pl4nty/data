@@ -15,6 +15,10 @@ do
     return mp.CLEAN
   end
   local l_0_3 = nil
+  if contains(l_0_3, {"127.0.0.1", "localhost", "bootstrap"}) then
+    return mp.CLEAN
+  end
+  local l_0_4 = nil
   if contains(l_0_3, {"downloadstring", "|iex", "|invoke-expression", "iwr", "invoke-webrequest", "frombase64string", "-enc", "-mppreference", "whoami", "hostname", "system.net.webclient", "localgroup administrators", "amsiinitfailed", "getfield"}) then
     (bm.add_related_string)("MaliciousNodeChild", tostring(l_0_3), bm.RelatedStringBMReport)
     return mp.INFECTED
