@@ -280,6 +280,7 @@
     "SVC_DataInfra": {
         "FlightingV2": {
             "HardwareConfigLogging": true,
+            "NoMaterializeForFastSlowStreamMerge": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true
         }
     },
