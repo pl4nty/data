@@ -637,6 +637,7 @@
         "EnableHostPoolKeystrokeRejectionBackfillManual": true,
         "EnableHostPoolPatchSSO": true,
         "EnableHostPoolSecurePluginBackfill": true,
+        "EnableHotDeviceBillingEvent": false,
         "EnableIWSPremiumDR": true,
         "EnableIdempotentCpcIdGeneration": true,
         "EnableIgnoreRetryDeleteException": true,

@@ -561,6 +561,7 @@
         "EnableHideMoveHostPoolActionHistory": true,
         "EnableHidePreviewString": false,
         "EnableHostBasedEncryption": true,
+        "EnableHostPoolBackfillWorkspaceHoboTag": true,
         "EnableHostPoolHighDpiOptimizationBackfill": true,
         "EnableHostPoolPatchSSO": true,
         "EnableIWSPremiumDR": true,
