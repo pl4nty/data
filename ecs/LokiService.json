@@ -2157,6 +2157,9 @@
                 "rules": []
             }
         },
+        "suspensionManagerParameters": {
+            "dismissSuspensionDelaySeconds": 180
+        },
         "updatedFAQText_shared": 1
     },
     "Segmentation": {
