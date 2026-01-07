@@ -287,11 +287,14 @@ for l_0_24 = 1, l_0_0 do
                         l_0_100 = l_0_100(l_0_12)
                         local l_0_101 = "1bb146aa"
                         local l_0_102 = "app_ext_" .. l_0_31
-                        local l_0_103 = (MpCommon.AtomicCounterValueNamespaced)(l_0_102, l_0_101)
+                        local l_0_103 = (MpCommon.AtomicCounterValueExNamespaced)(l_0_102, l_0_101)
                         if l_0_103 ~= nil then
-                          l_0_12.ACFilesEncrypted = l_0_103
+                          l_0_12.ACFilesEncryptCount = l_0_103.count
+                          l_0_12.ACCreationTime = l_0_103.insert_time
+                          l_0_12.ACExpirationTime = l_0_103.expire_time
+                          l_0_12.ACRecentTime = l_0_103.update_time
                         else
-                          l_0_12.ACFilesEncrypted = -1
+                          l_0_12.ACFilesEncryptCount = -1
                         end
                         ;
                         (bm.add_related_string)("RemoteClientData", l_0_100, bm.RelatedStringBMReport)
@@ -310,7 +313,7 @@ for l_0_24 = 1, l_0_0 do
                         end
                         local l_0_110 = SafeGetUrlReputation
                         local l_0_111 = {}
-                        -- DECOMPILER ERROR at PC702: No list found for R55 , SetList fails
+                        -- DECOMPILER ERROR at PC709: No list found for R55 , SetList fails
 
                         local l_0_112 = {}
                         l_0_112.SIG_CONTEXT = "BM"
@@ -335,105 +338,94 @@ for l_0_24 = 1, l_0_0 do
                         do
                           do
                             do
-                              l_0_111 = l_0_12
-                              l_0_111.ip = l_0_18
-                              l_0_112 = bm
-                              l_0_112 = l_0_112.trigger_sig_delayed
-                              l_0_112("RemoteGenericRansomwareDelay:Type2", safeJsonSerialize(l_0_111), 570000)
-                              l_0_112 = l_0_110.urls
-                              l_0_112 = l_0_112[l_0_18]
-                              if l_0_112 then
+                              l_0_111 = l_0_110.urls
+                              l_0_111 = l_0_111[l_0_18]
+                              if l_0_111 then
+                                l_0_111 = l_0_110.urls
+                                l_0_111 = l_0_111[l_0_18]
+                                l_0_111 = l_0_111.confidence
+                                l_0_12.confidence = l_0_111
+                                l_0_111 = l_0_110.urls
+                                l_0_111 = l_0_111[l_0_18]
+                                l_0_111 = l_0_111.context
+                                l_0_111 = l_0_111.Family
+                                l_0_12.family = l_0_111
+                                l_0_111 = l_0_110.urls
+                                l_0_111 = l_0_111[l_0_18]
+                                l_0_111 = l_0_111.determination
+                                l_0_12.determination = l_0_111
                                 l_0_112 = l_0_110.urls
                                 l_0_112 = l_0_112[l_0_18]
-                                l_0_112 = l_0_112.determination
-                                if l_0_112 ~= 2 then
-                                  l_0_112 = l_0_110.urls
-                                  l_0_112 = l_0_112[l_0_18]
-                                  l_0_112 = l_0_112.determination
-                                end
-                                if l_0_112 == 1 then
-                                  l_0_112 = l_0_110.urls
-                                  l_0_112 = l_0_112[l_0_18]
-                                  l_0_112 = l_0_112.confidence
-                                  if l_0_112 then
-                                    l_0_112 = l_0_110.urls
-                                    l_0_112 = l_0_112[l_0_18]
-                                    l_0_112 = l_0_112.confidence
-                                    if l_0_112 >= 50 then
-                                      l_0_112 = l_0_110.urls
-                                      l_0_112 = l_0_112[l_0_18]
-                                      l_0_112 = l_0_112.context
-                                      l_0_112 = l_0_112.Source
-                                      if l_0_112 == "GenRansom" then
-                                        l_0_112 = l_0_110.urls
-                                        l_0_112 = l_0_112[l_0_18]
-                                        l_0_112 = l_0_112.confidence
-                                        l_0_12.confidence = l_0_112
-                                        l_0_112 = l_0_110.urls
-                                        l_0_112 = l_0_112[l_0_18]
-                                        l_0_112 = l_0_112.context
-                                        l_0_112 = l_0_112.Family
-                                        l_0_12.family = l_0_112
-                                        l_0_112 = l_0_110.urls
-                                        l_0_112 = l_0_112[l_0_18]
-                                        l_0_112 = l_0_112.determination
-                                        l_0_12.determination = l_0_112
-                                        l_0_12.action, l_0_112 = l_0_112, {action = (((l_0_110.urls)[l_0_18]).context).action, parameter = (((l_0_110.urls)[l_0_18]).context).action_parameter, ttl = (((l_0_110.urls)[l_0_18]).context).action_ttl}
-                                        l_0_12.context = ((l_0_110.urls)[l_0_18]).context
-                                        l_0_12.ip = l_0_18
-                                        l_0_12.unscrubbed_username = l_0_14
-                                        l_0_12.unscrubbed_domain = l_0_15
-                                        ;
-                                        (bm.trigger_sig)("RemoteGenericRansomware:Malware", safeJsonSerialize(l_0_12))
-                                      end
-                                    end
-                                  end
+                                l_0_112 = l_0_112.context
+                                l_0_112 = l_0_112.action
+                                l_0_112 = l_0_110.urls
+                                l_0_112 = l_0_112[l_0_18]
+                                l_0_112 = l_0_112.context
+                                l_0_112 = l_0_112.action_parameter
+                                l_0_112 = l_0_110.urls
+                                l_0_112 = l_0_112[l_0_18]
+                                l_0_112 = l_0_112.context
+                                l_0_112 = l_0_112.action_ttl
+                                l_0_12.action, l_0_111 = l_0_111, {action = l_0_112, parameter = l_0_112, ttl = l_0_112}
+                                l_0_112 = l_0_110.urls
+                                l_0_112 = l_0_112[l_0_18]
+                                l_0_112 = l_0_112.context
+                                l_0_12.context = l_0_112
+                                l_0_12.ip = l_0_18
+                                l_0_12.unscrubbed_username = l_0_14
+                                l_0_12.unscrubbed_domain = l_0_15
+                                l_0_112 = safeJsonSerialize
+                                l_0_112 = l_0_112(l_0_12)
+                                ;
+                                (bm.trigger_sig_delayed)("RemoteGenericRansomwareDelay:Type2", l_0_112, 570000)
+                                if (((l_0_110.urls)[l_0_18]).determination == 2 or ((l_0_110.urls)[l_0_18]).determination == 1) and ((l_0_110.urls)[l_0_18]).confidence and ((l_0_110.urls)[l_0_18]).confidence >= 50 and (((l_0_110.urls)[l_0_18]).context).Source == "GenRansom" then
+                                  (bm.trigger_sig)("RemoteGenericRansomware:Malware", l_0_112)
                                 end
                               end
-                              -- DECOMPILER ERROR at PC825: Overwrote pending register: R43 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC829: Overwrote pending register: R43 in 'AssignReg'
 
                               ;
                               (bm.add_related_string)("sigcount_type2", l_0_98, bm.RelatedStringBMReport)
                               do return mp.INFECTED end
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC832: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
                             end
                           end
