@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260106.4.0",
+        "CalendarCompanionDFVersion": "1.20260106.7.0",
         "CalendarCompanionMsitVersion": "1.20251217.9.0",
         "CalendarCompanionProdVersion": "1.20251213.1.0",
         "CompanionRing": "Prod",
@@ -330,11 +330,17 @@
         "features.useNovaForCalendar": 0,
         "features.useNovaForSuggestions": 0,
         "hostFeatureFlags_shared": 0,
+        "logSuspensionMemorySnapshots": 1,
         "offlineState_shared": 0,
+        "refactorFeedbackConfig_shared": 1,
         "samplingConfig": {
             "Event": {
                 "defaultRate": 100,
                 "rules": [
+                    {
+                        "name": "ResumedFromSuspensionEvent",
+                        "rate": 5
+                    },
                     {
                         "name": "SuspensionTaskLifeCycleEvent",
                         "rate": 5
@@ -347,7 +353,12 @@
             },
             "Performance": {
                 "defaultRate": 100,
-                "rules": []
+                "rules": [
+                    {
+                        "name": "SuspensionTaskResumptionPerformance",
+                        "rate": 5
+                    }
+                ]
             },
             "UserAction": {
                 "defaultRate": 100,
@@ -1848,6 +1859,7 @@
         "enableClientTypeFilter": false,
         "enableDebugPanel": false,
         "enableVerticalsViaConfig": true,
+        "logSuspensionMemorySnapshots": 1,
         "searchBoxLoggingDelay": 0,
         "searchBoxPluginConfiguration": {
             "plugins": [
@@ -1928,6 +1940,9 @@
         "siteadmin.EnableResultClusterForMicrosoftSearch": true,
         "siteadmin.EnableSharePointAsAContentSource": true,
         "siteadmin.isResultCaptionsInResultTypesEnabled": true,
+        "suspensionManagerParameters": {
+            "dismissSuspensionDelaySeconds": 180
+        },
         "userQualificationCheckTimeoutInMiliseconds": 1000
     },
     "Office_Feed": {
@@ -1978,7 +1993,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260104.3.0",
+        "PeopleInTaskbarDFVersion": "1.20260106.7.0",
         "PeopleInTaskbarMsitVersion": "1.20251210.1.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251210.1.0",
@@ -2026,8 +2041,9 @@
                 "https://ris.api.iris.microsoft.com",
                 "https://eudb.ris.api.iris.microsoft.com",
                 "https://config.edge.skype.com",
-                "https://config.edge.skype.net",
-                "https://localcdn.centro-dev.com:*"
+                "https://localcdn.centro-dev.com:*",
+                "https://config.centro.core.microsoft",
+                "https://petrol-int.office.microsoft.com"
             ],
             "default-src": [
                 "'none'"

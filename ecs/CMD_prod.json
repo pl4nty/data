@@ -370,6 +370,7 @@
         "EnableEndUserCloudApp": true,
         "EnableEnterpriseCloudPcRecommendationV17": true,
         "EnableEntraDirectorySyncObserver": true,
+        "EnableEntraObjectLifeCycleState": true,
         "EnableEpaHPIntegration": true,
         "EnableErrorCategoryInCanaryResult": true,
         "EnableExpandDiskV2Script": true,
