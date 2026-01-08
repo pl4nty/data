@@ -280,13 +280,13 @@ if (this_sigattrlog[4]).matched then
       ;
       (bm.add_related_string)("UntrustedEntities", safeJsonSerialize(l_0_1), bm.RelatedStringBMReport)
       if l_0_2 > 0 then
-        (bm.trigger_sig)("SetupMode_Block", safeJsonSerialize(l_0_1))
+        (bm.trigger_sig)("SetupMode_Block", "untrusted_entities")
       end
     end
     local l_0_53 = nil
     local l_0_54 = l_0_41
     local l_0_55 = nil
-    if contains(l_0_0, {"\\Microsoft\\"}) then
+    if contains(l_0_0, {"software\\Microsoft\\"}) then
       do
         (bm.trigger_sig)("SetupMode_Block", "script_in_cmd")
         -- DECOMPILER ERROR at PC329: Confused about usage of register R23 for local variables in 'ReleaseLocals'
