@@ -834,7 +834,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableTidRoutingOnExternalDomain": true,
         "EnableUserPreferenceV2": true,
-        "EnableVNextQuery": true,
+        "EnableVNextQuery": false,
         "EnableVivaLearning": true,
         "EnableVivaSkillsDataExportProvider": true,
         "EnableVivaSkillsInLPE": true,
@@ -2130,6 +2130,7 @@
             ]
         },
         "hostRingBucket": "80",
+        "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
         "samplingConfig": {
             "Event": {
