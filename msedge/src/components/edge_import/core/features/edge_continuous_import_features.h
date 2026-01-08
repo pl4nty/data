@@ -278,14 +278,6 @@ BASE_DECLARE_FEATURE(kCISettingsToggleRow);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kHandleCIActivatedOnRemote);
 
-// Trigger to know if existing user is chrome heavy user.
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kChromeHeavyUser);
-
-// Trigger to know if quick links avaialbe for boosting media sites
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kQuickLinksAvailable);
-
 //  Trigger to know if continuous migration history import ended
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kContinuousMigrationHistoryImportEnded);

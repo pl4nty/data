@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 32593911,
+    "size": 32596508,
     "file_count": 3987
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17983392,
+    "size": 17982857,
     "file_count": 1008
   },
   {
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 95994795,
-    "file_count": 11098
+    "size": 96680710,
+    "file_count": 11169
   },
   {
     "name": "flac",
@@ -381,7 +381,7 @@
   },
   {
     "name": "libc++",
-    "size": 12468846,
+    "size": 12469930,
     "file_count": 1770
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "name": "node",
-    "size": 61304265,
+    "size": 61331930,
     "file_count": 3339
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4003937,
+    "size": 4013894,
     "file_count": 584
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3477401,
+    "size": 3477943,
     "file_count": 1184
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6930259,
+    "size": 6931225,
     "file_count": 184
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29546392,
+    "size": 29546812,
     "file_count": 626
   },
   {
