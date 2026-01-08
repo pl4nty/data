@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "test en-us",
+    "downloadDescription": "test en-us",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HindiFile-1.txt",
+            "url": "https://download.microsoft.com/download/3e62383c-9924-4249-b189-d10edfd0bd78/HindiFile-1.txt",
+            "size": "18",
+            "version": "1",
+            "datePublished": "1/8/2026 11:20:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "download.htm",
+            "url": "https://download.microsoft.com/download/3e62383c-9924-4249-b189-d10edfd0bd78/download.htm",
+            "size": "52732",
+            "version": "1",
+            "datePublished": "1/8/2026 11:20:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test en-us",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "HindiFile-1.txt",
+        "download.htm"
+    ],
+    "detailsSection_file_size": [
+        "18 bytes",
+        "51.5 KB"
+    ],
+    "detailsSection_file_date": "1/8/2026",
+    "systemRequirementsSection": "test en-us",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "test en-us",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108516",
+    "downloadPreload": true
+}
