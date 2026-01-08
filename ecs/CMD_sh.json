@@ -1025,7 +1025,6 @@
         "IWSBypassCPCFEforDirectLaunchUrl": true,
         "InstallRdAgentInCanaryEnabled": true,
         "IsAADSyncConfigEnabled": true,
-        "IsCpcSdkEnabled": true,
         "IsDisableAzureTenantReadinessOuterRetry": true,
         "IsEnableAADDeviceSyncHealthCheck": true,
         "IsEnableARMClientRandomRetryInterval": true,
