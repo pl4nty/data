@@ -1070,7 +1070,7 @@
         "Enable_IWS_PushModeSync": true,
         "Enable_IWS_excludeNonblockingAction": true,
         "Enable_PartnerCloudPC_BulkModifyDiskEncryptionType": true,
-        "Enable_ReturnCloudPCEntityFromDB": true,
+        "Enable_ReturnCloudPCEntityFromDB": false,
         "Enable_Windows_App_Cookie_Redirection": true,
         "Enable_Windows_App_Redirection": true,
         "Enable_Windows_App_Redirection_Auto_Open": true,
