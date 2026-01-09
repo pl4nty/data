@@ -207,86 +207,93 @@ if l_0_6 == "mpsigstub.exe" then
     return mp.CLEAN
   end
 end
-local l_0_7 = false
-local l_0_8 = (pe.get_versioninfo)()
-if l_0_8 ~= nil and l_0_8.OriginalFilename ~= nil then
-  local l_0_9 = ((string.lower)(l_0_8.OriginalFilename))
-  local l_0_10 = nil
-  l_0_10 = (string.match)(l_0_9, "%.([^%.]+)$")
-  if l_0_10 == nil then
-    l_0_9 = l_0_9 .. ".exe"
-    l_0_10 = "exe"
+local l_0_7 = (versioning.GetOrgID)()
+if l_0_7 ~= nil and l_0_7 ~= "" then
+  l_0_7 = (string.lower)(l_0_7)
+  if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(1, false, true, true) == true and l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
+    return mp.CLEAN
   end
-  if l_0_10 == "exe" then
+end
+local l_0_8 = false
+local l_0_9 = (pe.get_versioninfo)()
+if l_0_9 ~= nil and l_0_9.OriginalFilename ~= nil then
+  local l_0_10 = ((string.lower)(l_0_9.OriginalFilename))
+  local l_0_11 = nil
+  l_0_11 = (string.match)(l_0_10, "%.([^%.]+)$")
+  if l_0_11 == nil then
+    l_0_10 = l_0_10 .. ".exe"
+    l_0_11 = "exe"
+  end
+  if l_0_11 == "exe" then
     do
-      if (string.find)(l_0_9, "onedrivesetup.*%.exe") ~= nil then
-        local l_0_12 = (mp.IsTrustedFile)(false)
-        if l_0_12 == true then
+      if (string.find)(l_0_10, "onedrivesetup.*%.exe") ~= nil then
+        local l_0_13 = (mp.IsTrustedFile)(false)
+        if l_0_13 == true then
           return mp.CLEAN
         end
       end
-      local l_0_11 = sysio.IsFileExists
+      local l_0_12 = sysio.IsFileExists
       do
-        local l_0_13 = l_0_4 .. "\\system32\\" .. l_0_9
-        l_0_11 = l_0_11(l_0_13)
-        if l_0_11 then
-          l_0_7 = true
+        local l_0_14 = l_0_4 .. "\\system32\\" .. l_0_10
+        l_0_12 = l_0_12(l_0_14)
+        if l_0_12 then
+          l_0_8 = true
         end
-        if not l_0_7 then
-          l_0_11 = sysio
-          l_0_11 = l_0_11.IsFileExists
-          l_0_13 = l_0_4
-          l_0_13 = l_0_13 .. "\\syswow64\\" .. l_0_9
-          l_0_11 = l_0_11(l_0_13)
-          if l_0_11 then
-            l_0_7 = true
+        if not l_0_8 then
+          l_0_12 = sysio
+          l_0_12 = l_0_12.IsFileExists
+          l_0_14 = l_0_4
+          l_0_14 = l_0_14 .. "\\syswow64\\" .. l_0_10
+          l_0_12 = l_0_12(l_0_14)
+          if l_0_12 then
+            l_0_8 = true
           end
         end
-        if not l_0_7 and (string.match)(l_0_6, "(%.[^%.]+)$") == ".exe" then
+        if not l_0_8 and (string.match)(l_0_6, "(%.[^%.]+)$") == ".exe" then
           if (sysio.IsFileExists)(l_0_4 .. "\\system32\\" .. l_0_6) then
-            l_0_7 = true
+            l_0_8 = true
           end
-          if not l_0_7 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_6) then
-            l_0_7 = true
+          if not l_0_8 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_6) then
+            l_0_8 = true
           end
         end
-        if not l_0_7 then
-          local l_0_14 = (MpCommon.GetOriginalFileName)(l_0_2)
-          if l_0_14 ~= nil and l_0_14 ~= "" then
-            local l_0_15 = nil
-            l_0_15 = (string.match)(l_0_14, "%.([^%.]+)$")
-            if l_0_15 == nil then
-              l_0_14 = l_0_14 .. ".exe"
-              l_0_15 = "exe"
+        if not l_0_8 then
+          local l_0_15 = (MpCommon.GetOriginalFileName)(l_0_2)
+          if l_0_15 ~= nil and l_0_15 ~= "" then
+            local l_0_16 = nil
+            l_0_16 = (string.match)(l_0_15, "%.([^%.]+)$")
+            if l_0_16 == nil then
+              l_0_15 = l_0_15 .. ".exe"
+              l_0_16 = "exe"
             end
-            l_0_15 = (string.lower)(l_0_15)
-            if l_0_15 == "exe" then
-              if (sysio.IsFileExists)(l_0_4 .. "\\system32\\" .. l_0_14) then
-                l_0_7 = true
+            l_0_16 = (string.lower)(l_0_16)
+            if l_0_16 == "exe" then
+              if (sysio.IsFileExists)(l_0_4 .. "\\system32\\" .. l_0_15) then
+                l_0_8 = true
               end
-              if not l_0_7 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_14) then
-                l_0_7 = true
+              if not l_0_8 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_15) then
+                l_0_8 = true
               end
             end
           end
         end
         do
-          if l_0_7 then
-            local l_0_16 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-            if l_0_16 ~= nil and l_0_16 ~= "" then
-              l_0_16 = (string.lower)(l_0_16)
-              if l_0_16 == "svchost.exe" then
-                local l_0_17 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+          if l_0_8 then
+            local l_0_17 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+            if l_0_17 ~= nil and l_0_17 ~= "" then
+              l_0_17 = (string.lower)(l_0_17)
+              if l_0_17 == "svchost.exe" then
+                local l_0_18 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
                 do
                   do
-                    if l_0_17 ~= nil then
-                      local l_0_18 = (mp.GetProcessCommandLine)(l_0_17)
-                      if l_0_18 ~= nil and l_0_18 ~= "" then
-                        l_0_18 = (string.lower)(l_0_18)
-                        if (string.match)(l_0_18, "-s%s+([^%s]+)") == "bits" then
+                    if l_0_18 ~= nil then
+                      local l_0_19 = (mp.GetProcessCommandLine)(l_0_18)
+                      if l_0_19 ~= nil and l_0_19 ~= "" then
+                        l_0_19 = (string.lower)(l_0_19)
+                        if (string.match)(l_0_19, "-s%s+([^%s]+)") == "bits" then
                           return mp.CLEAN
                         end
-                        if (string.match)(l_0_18, "-s%s+(....)") == "bits" then
+                        if (string.match)(l_0_19, "-s%s+(....)") == "bits" then
                           return mp.CLEAN
                         end
                       end
@@ -299,11 +306,11 @@ if l_0_8 ~= nil and l_0_8.OriginalFilename ~= nil then
                     ;
                     (mp.set_mpattribute)("MpDisableCaching")
                     if (MpCommon.GetPersistContextCount)(l_0_2) == 0 then
-                      local l_0_19 = {}
+                      local l_0_20 = {}
                       ;
-                      (table.insert)(l_0_19, l_0_1)
+                      (table.insert)(l_0_20, l_0_1)
                       ;
-                      (MpCommon.SetPersistContext)(l_0_2, l_0_19, 0)
+                      (MpCommon.SetPersistContext)(l_0_2, l_0_20, 0)
                     else
                       do
                         do

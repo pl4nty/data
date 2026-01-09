@@ -373,15 +373,27 @@ do
   local l_0_22 = l_0_10:gsub(" ", "_")
   ;
   (mp.set_mpattribute)("Lua:PeFSFileName!" .. l_0_22)
-  local l_0_23 = l_0_0.InternalName
+  local l_0_23 = l_0_0.ProductName
   local l_0_24 = ""
   if l_0_23 then
     l_0_23 = (string.lower)(l_0_23)
     l_0_23 = l_0_23:gsub("%.exe%.mui", ".exe")
     l_0_24 = l_0_23:gsub(" ", "_")
     ;
-    (mp.set_mpattribute)("Lua:PeInternalName!" .. l_0_24)
-    if l_0_23 ~= l_0_10 then
+    (mp.set_mpattribute)("Lua:PeProductName!" .. l_0_24)
+  else
+    ;
+    (mp.set_mpattribute)("Lua:PeProductName!nil")
+  end
+  local l_0_25 = l_0_0.InternalName
+  local l_0_26 = ""
+  if l_0_25 then
+    l_0_25 = (string.lower)(l_0_25)
+    l_0_25 = l_0_25:gsub("%.exe%.mui", ".exe")
+    l_0_26 = l_0_25:gsub(" ", "_")
+    ;
+    (mp.set_mpattribute)("Lua:PeInternalName!" .. l_0_26)
+    if l_0_25 ~= l_0_10 then
       (mp.set_mpattribute)("Lua:PeInternalNameDiffFromFileName")
     else
       ;
@@ -391,15 +403,15 @@ do
     ;
     (mp.set_mpattribute)("Lua:PeInternalName!nil")
   end
-  local l_0_25 = l_0_0.OriginalFilename
-  local l_0_26 = ""
-  if l_0_25 then
-    l_0_25 = (string.lower)(l_0_25)
-    l_0_25 = l_0_25:gsub("%.exe%.mui", ".exe")
-    l_0_26 = l_0_25:gsub(" ", "_")
+  local l_0_27 = l_0_0.OriginalFilename
+  local l_0_28 = ""
+  if l_0_27 then
+    l_0_27 = (string.lower)(l_0_27)
+    l_0_27 = l_0_27:gsub("%.exe%.mui", ".exe")
+    l_0_28 = l_0_27:gsub(" ", "_")
     ;
-    (mp.set_mpattribute)("Lua:PeOriginalName!" .. l_0_26)
-    if l_0_25 ~= l_0_10 then
+    (mp.set_mpattribute)("Lua:PeOriginalName!" .. l_0_28)
+    if l_0_27 ~= l_0_10 then
       (mp.set_mpattribute)("Lua:PeOriginalNameDiffFromFileName")
       l_0_13 = true
     else
@@ -407,64 +419,64 @@ do
       (mp.set_mpattribute)("Lua:PeOriginalNameMatchedFileName")
     end
   else
-    l_0_25 = "nil"
+    l_0_27 = "nil"
     ;
     (mp.set_mpattribute)("Lua:PeOriginalName!nil")
   end
-  local l_0_27 = false
-  if l_0_21 == "exe" and (l_0_11[l_0_25] or l_0_11[l_0_10]) then
-    l_0_27 = true
+  local l_0_29 = false
+  if l_0_21 == "exe" and (l_0_11[l_0_27] or l_0_11[l_0_10]) then
+    l_0_29 = true
   end
-  if l_0_21 == "dll" and (l_0_12[l_0_25] or l_0_12[l_0_10]) then
-    l_0_27 = true
+  if l_0_21 == "dll" and (l_0_12[l_0_27] or l_0_12[l_0_10]) then
+    l_0_29 = true
   end
-  if l_0_19 or l_0_27 and not l_0_14 then
+  if l_0_19 or l_0_29 and not l_0_14 then
     if (mp.IsTrustedFile)() then
       l_0_18 = true
       ;
       (mp.set_mpattribute)("Lua:PeIsTrustedLolbin")
       ;
-      (mp.set_mpattribute)("Lua:PeIsTrustedLolbin!" .. l_0_25)
+      (mp.set_mpattribute)("Lua:PeIsTrustedLolbin!" .. l_0_27)
       ;
       (mp.set_mpattribute)("Lua:PeIsTrustedLolbinFile!" .. l_0_10)
     else
       ;
       (mp.set_mpattribute)("Lua:PeUntrustedLolbin")
       ;
-      (mp.set_mpattribute)("Lua:PeUnTrustedLolbin!" .. l_0_25)
+      (mp.set_mpattribute)("Lua:PeUnTrustedLolbin!" .. l_0_27)
       ;
       (mp.set_mpattribute)("Lua:PeUnTrustedLolbinFile!" .. l_0_10)
       ;
       (mp.set_mpattribute)("Lua:PeUntrustedLolbinExt!" .. l_0_21)
     end
   end
-  local l_0_28 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+  local l_0_30 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
   do
-    if l_0_28 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-      local l_0_29 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+    if l_0_30 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+      local l_0_31 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
       l_0_17 = true
       ;
       (mp.set_mpattribute)("Lua:NewPeFile")
       ;
       (mp.set_mpattribute)("Lua:NewPeFile!" .. l_0_10)
-      if 38 < #l_0_29 then
+      if 38 < #l_0_31 then
         (mp.set_mpattribute)("Lua:RtpProcNameTooLong")
       else
         ;
-        (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!" .. l_0_29)
+        (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!" .. l_0_31)
       end
-      if l_0_29:find("rufus", 1, true) then
+      if l_0_31:find("rufus", 1, true) then
         (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!rufus")
       end
-      if l_0_29 == "mscorsvw.exe" and (l_0_10:match("%.ni%.exe$") or l_0_10:match("%.ni%.dll$")) then
+      if l_0_31 == "mscorsvw.exe" and (l_0_10:match("%.ni%.exe$") or l_0_10:match("%.ni%.dll$")) then
         (mp.set_mpattribute)("Lua:CleanFileWrittenBy!mscorsvw.exe")
       end
-      if l_0_27 and not l_0_15 and not l_0_14 and l_0_13 then
+      if l_0_29 and not l_0_15 and not l_0_14 and l_0_13 then
         (mp.set_mpattribute)("MpDisableCaching")
       end
     end
-    local l_0_30 = "dll|ocx"
-    if l_0_17 and not l_0_15 and not l_0_14 and not l_0_18 and not l_0_16 and l_0_13 and l_0_30:find(l_0_21) then
+    local l_0_32 = "dll|ocx"
+    if l_0_17 and not l_0_15 and not l_0_14 and not l_0_18 and not l_0_16 and l_0_13 and l_0_32:find(l_0_21) then
       (mp.set_mpattribute)("Lua:PossiblyForSideloading!" .. l_0_10)
       ;
       (mp.set_mpattribute)("Lua:PeMonitorForSideload")
