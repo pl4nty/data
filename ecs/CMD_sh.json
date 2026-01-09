@@ -1027,6 +1027,7 @@
         "InstallRdAgentInCanaryEnabled": true,
         "InvokeCASForFLD": true,
         "IsAADSyncConfigEnabled": true,
+        "IsCpcSdkEnabled": true,
         "IsDisableAzureTenantReadinessOuterRetry": true,
         "IsEnableAADDeviceSyncHealthCheck": true,
         "IsEnableARMClientRandomRetryInterval": true,

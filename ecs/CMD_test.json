@@ -1167,6 +1167,7 @@
         "InvokeCASForFLD": true,
         "IsAADSyncConfigEnabled": true,
         "IsCosmosDBTriggerEnabled": true,
+        "IsCpcSdkEnabled": true,
         "IsDisableAzureTenantReadinessOuterRetry": true,
         "IsEnableAADDeviceSyncHealthCheck": true,
         "IsEnableARMClientRandomRetryInterval": true,
