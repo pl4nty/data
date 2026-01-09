@@ -1147,7 +1147,8 @@
             "OdspFilesAgentQuery",
             "SharepointPageBuilderAgentQuery",
             "PlaceDataQuery",
-            "PlaceAvailabilityWithModeQuery"
+            "PlaceAvailabilityWithModeQuery",
+            "MeetingInsightsProviderMutation"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1643,7 +1644,8 @@
             "KYTChatHistoryContentQuery",
             "AnalystChatHistoryQuery",
             "OdspFilesAgentQuery",
-            "EduLearnAgentQuery"
+            "EduLearnAgentQuery",
+            "CopilotTuningEvalAgentQuery"
         ],
         "SydneyProviderAllowList_ProviderTypes": [
             "GenerateAiAboutMeProvider"
@@ -1861,6 +1863,7 @@
         "enableDebugPanel": false,
         "enableVerticalsViaConfig": true,
         "logSuspensionMemorySnapshots": 1,
+        "refactorFeedbackConfig_shared": 1,
         "searchBoxLoggingDelay": 0,
         "searchBoxPluginConfiguration": {
             "plugins": [
