@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32596508,
-    "file_count": 3987
+    "size": 32613506,
+    "file_count": 3989
   },
   {
     "name": "boringssl",
@@ -471,7 +471,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 223616570,
+    "size": 223611146,
     "file_count": 344
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 31175,
+    "size": 31484,
     "file_count": 16
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4013894,
+    "size": 4018485,
     "file_count": 584
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3477943,
+    "size": 3477585,
     "file_count": 1184
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6931225,
+    "size": 6931459,
     "file_count": 184
   },
   {
