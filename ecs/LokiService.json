@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260106.7.0",
+        "CalendarCompanionDFVersion": "1.20260107.11.0",
         "CalendarCompanionMsitVersion": "1.20251217.9.0",
         "CalendarCompanionProdVersion": "1.20251213.1.0",
         "CompanionRing": "Prod",
@@ -469,6 +469,7 @@
         "TopicSuggestionsEnabled": false,
         "TrustedSenders": false,
         "UseAboutMeFromTemplate": true,
+        "UseDsApiSecurityContext": true,
         "UseListChannelsGraphBetaAPI": false,
         "UsePersonEndpointV2": false,
         "UseV3personacards": true,
