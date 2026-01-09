@@ -1473,6 +1473,60 @@
                     "IsEnabled": true
                 }
             ],
+            "Wave3ODM_EnableCheckAccessAPIMultiPersonCheck": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.EnableCheckAccessAPIMultiPersonCheck",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_EnableMarsSkillLocalization": [
+                {
+                    "Flight": "EnableMarsSkillLocalization",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_EnableOBOFlowForMars": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableOBOFlowForMars",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_EnableReactiveAIAssistance": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableReactiveAIAssistance",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_EnableShredderUserAccessAPI": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableShredderUserAccessAPI",
+                    "IsEnabled": false
+                }
+            ],
+            "Wave3ODM_EnableSyncTasksInPlanner": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableSyncTasksInPlanner",
+                    "IsEnabled": false
+                }
+            ],
+            "Wave3ODM_EnableTaskUpdateByTitle": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableTaskUpdateByTitle",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_enableMarsSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMarsSkill",
+                    "IsEnabled": true
+                }
+            ],
+            "Wave3ODM_enableTeamsTaskManagementSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsTaskManagementSkill",
+                    "IsEnabled": true
+                }
+            ],
             "WebSearchSkill_declarativeAgent": [
                 {
                     "Flight": "EnableWebSearchDA",
