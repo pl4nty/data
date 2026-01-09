@@ -7,6 +7,9 @@ local l_0_0 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH
 if l_0_0 == nil then
   return mp.CLEAN
 end
+if (string.sub)(l_0_0, 0, 4) == "\\\\?\\" then
+  l_0_0 = (string.sub)(l_0_0, 5)
+end
 ;
 (MpCommon.SetOriginalFileName)(l_0_0, "autoit3.exe")
 if not IsKeyInRollingQueue("RenamedAutoitPath", (string.lower)(l_0_0), true) then
