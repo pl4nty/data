@@ -3,17 +3,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "January 5, 2026",
         "Patch level": "2026-01-01",
-        "CVE": "CVE-2025-48631",
-        "References": "A-444671303",
-        "Type": "DoS",
-        "Severity": "Critical",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
-        "Published": "January 5, 2026",
-        "Patch level": "2026-01-01",
         "CVE": "CVE-2025-22420",
         "References": "A-337775777",
         "Type": "EoP",
@@ -1217,6 +1206,15 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "January 5, 2026",
         "Patch level": "2026-01-01",
+        "Version": "1.3",
+        "Date": "January 8, 2026",
+        "Notes": "CVE-2025-48631 has been removed due to an incomplete fix for Android 16 25Q4, all other",
+        "Component": "5. What does an * next to the Android bug ID in the\n  References column mean?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "January 5, 2026",
+        "Patch level": "2026-01-01",
         "Version": "1.0",
         "Date": "December 1, 2025",
         "Notes": "Bulletin Published",
@@ -1242,14 +1240,12 @@
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
-        "Published": "December 2, 2025",
-        "Patch level": "2025-12-01",
-        "CVE": "CVE-2025-48631",
-        "References": "A-444671303",
-        "Type": "DoS",
-        "Severity": "Critical",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "Framework"
+        "Published": "January 5, 2026",
+        "Patch level": "2026-01-01",
+        "Version": "1.3",
+        "Date": "January 8, 2026",
+        "Notes": "CVE-2025-48631 has been removed due to an incomplete fix for Android 16 25Q4, all other",
+        "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
@@ -2458,6 +2454,15 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "December 2, 2025",
         "Patch level": "2025-12-01",
+        "Version": "1.3",
+        "Date": "January 8, 2026",
+        "Notes": "CVE-2025-48631 has been removed due to an incomplete fix for Android 16 25Q4, all other",
+        "Component": "5. What does an * next to the Android bug ID in the\n  References column mean?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
         "Version": "1.0",
         "Date": "December 1, 2025",
         "Notes": "Bulletin Published",
@@ -2479,6 +2484,15 @@
         "Version": "1.2",
         "Date": "December 17, 2025",
         "Notes": "CVE-2025-48600 and CVE-2025-48615 have been removed from ASB#2025-12 due to an",
+        "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
+        "Version": "1.3",
+        "Date": "January 8, 2026",
+        "Notes": "CVE-2025-48631 has been removed due to an incomplete fix for Android 16 25Q4, all other",
         "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
     },
     {
