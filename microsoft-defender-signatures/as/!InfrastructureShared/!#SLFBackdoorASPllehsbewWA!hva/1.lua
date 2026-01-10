@@ -7,7 +7,7 @@ local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QU
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\v%d%d\\template\\layouts\\") == nil then
+if (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\%d%d\\template\\layouts\\") == nil then
   return mp.CLEAN
 end
 if IsSharepointServer() then
