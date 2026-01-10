@@ -16,8 +16,19 @@
         "AllowHostBasedEncryption": true,
         "ApiLatencyImprovementEnabled": "true",
         "Aspen": {
+            "CheckEnablement": {
+                "DnsSpoofingCheck": false,
+                "EndpointReachability": true,
+                "GraphicsCheck": true,
+                "InternetConnnectivity": true,
+                "NetworkVpnCheck": false,
+                "OsVersion": true,
+                "ShortpathCompatibilityCheck": false,
+                "TlsInspectionCheck": false
+            },
             "ConnectWithPolicyTimeout": true,
             "EnableAutoReconnect": true,
+            "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "EnableReconnectOnUnlock": true,
             "EnableTeamsVdi2": true,
