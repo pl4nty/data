@@ -1202,9 +1202,6 @@
     },
     "Teams-AadSync": {
         "EnableKaizalaActionService": false,
-        "EnableRetryService": false,
-        "EnableService": false,
-        "EnableTaskRunnerService": false,
         "TenantsDtasService_AddGroupMemberAsync": "a28d1cf5-96a9-4d00-9e8f-5f907ebc8778",
         "TenantsDtasService_DeleteGroupMemberAsync": "a28d1cf5-96a9-4d00-9e8f-5f907ebc8778"
     },
