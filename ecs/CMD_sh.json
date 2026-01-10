@@ -13,7 +13,18 @@
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
         "Aspen": {
+            "CheckEnablement": {
+                "DnsSpoofingCheck": false,
+                "EndpointReachability": true,
+                "GraphicsCheck": true,
+                "InternetConnnectivity": true,
+                "NetworkVpnCheck": false,
+                "OsVersion": true,
+                "ShortpathCompatibilityCheck": false,
+                "TlsInspectionCheck": false
+            },
             "ConnectWithPolicyTimeout": true,
+            "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true
