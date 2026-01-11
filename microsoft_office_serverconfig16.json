@@ -456,9 +456,6 @@
     <o:service o:name="ResourcesOnDemandEndpoint">
       <o:url>https://officecdn.microsoft.com/pr/uiraas/ios/</o:url>
     </o:service>
-    <o:service o:name="ProofingDownloadServiceEndpoint">
-      <o:url>https://fs.microsoft.com/fs/2.6</o:url>
-    </o:service>
     <o:service o:name="ProofingDownloadServiceV2_7">
       <o:url>https://fs.microsoft.com/fs/lexicons/2.7</o:url>
     </o:service>
@@ -558,7 +555,7 @@
       <o:url>https://www.bing.com/api/v4/spelling/proof</o:url>
     </o:service>
     <o:service o:name="NLProofingServiceUrl">
-      <o:url>https://nleditor.osi.office.net/NlEditor/CloudSuggest/V1</o:url>
+      <o:url>https://editor.svc.cloud.microsoft/NlEditor/CloudSuggest/V1</o:url>
     </o:service>
     <o:service o:name="PolicyTipsSyncService" o:authentication="2">
       <o:url>https://dataservice.protection.outlook.com/PolicySync/PolicySync.svc/SyncFile</o:url>
@@ -966,16 +963,16 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="EditorServiceCheckApiUrl">
-      <o:url>https://nleditor.osi.office.net/NlEditor/Check/V1</o:url>
+      <o:url>https://editor.svc.cloud.microsoft/NlEditor/Check/V1</o:url>
     </o:service>
     <o:service o:name="EditorServiceConfigApiUrl">
-      <o:url>https://nleditor.osi.office.net/NlEditor/Config/V2</o:url>
+      <o:url>https://editor.svc.cloud.microsoft/NlEditor/Config/V2</o:url>
     </o:service>
     <o:service o:name="EditorServiceInstrumentationApiUrl">
-      <o:url>https://nleditor.osi.office.net/NlEditor/Instrumentation/V1</o:url>
+      <o:url>https://editor.svc.cloud.microsoft/NlEditor/Instrumentation/V1</o:url>
     </o:service>
     <o:service o:name="EditorServiceLanguageInfoApiUrl">
-      <o:url>https://nleditor.osi.office.net/NlEditor/LanguageInfo/V1</o:url>
+      <o:url>https://editor.svc.cloud.microsoft/NlEditor/LanguageInfo/V1</o:url>
     </o:service>
     <o:service o:name="UAPActivityService" o:authentication="2">
       <o:url>https://outlook.office365.com/api/v1.0/me/Activities</o:url>
@@ -1526,10 +1523,10 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://oness.microsoft.com/api" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="C2RCDNBackgroundUrl">
-      <o:url>http://b.c2r.ts.cdn.office.net/pr</o:url>
+      <o:url>http://bg.tscdn.m365.static.microsoft/pr</o:url>
     </o:service>
     <o:service o:name="C2RCDNForegroundUrl">
-      <o:url>http://f.c2r.ts.cdn.office.net/pr</o:url>
+      <o:url>http://fg.tscdn.m365.static.microsoft/pr</o:url>
     </o:service>
     <o:service o:name="C2RDorisInteractiveInstallationUrl">
       <o:url>https://clients.config.office.net/c2r/v1.0/InteractiveInstallation</o:url>
@@ -2576,6 +2573,7 @@
     <o:token o:name="OutlookAccountUseOrgId">0</o:token>
     <o:token o:name="OutlookNetworkDiagnosticsConfigBit">0b00001</o:token>
     <o:token o:name="ChatOverlayFeatureEnabled">true</o:token>
+    <o:token o:name="PowerPointWRSAppId">04736c86-8245-4dcb-a0c9-ecc3fdf6083d</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
