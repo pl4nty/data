@@ -35,13 +35,38 @@ do
       local l_0_8 = l_0_6
       l_0_7 = l_0_7(l_0_8, {"downloadstring", "downloadfile"})
       if l_0_7 then
-        l_0_7 = MpCommon
-        l_0_7 = l_0_7.BmTriggerSig
-        l_0_8 = l_0_1.ppid
-        l_0_7(l_0_8, "APML_SuspDownload_Servers", l_0_6)
-        l_0_7 = mp
-        l_0_7 = l_0_7.INFECTED
-        return l_0_7
+        l_0_7 = "((ftp|http[s]?)://[^\\\"\\s\\\']+)"
+        l_0_8 = table_dedup
+        l_0_8 = l_0_8(multi_match_regex(l_0_6, l_0_7))
+        for l_0_12,l_0_13 in ipairs(l_0_8) do
+          local l_0_9 = {}
+          -- DECOMPILER ERROR at PC66: Confused about usage of register: R12 in 'UnsetPending'
+
+          local l_0_15 = UrlGrader(R12_PC66, "ALF:Trojan:Win32/PFApp_SuspDownload.A", false)
+          if l_0_15 < 0 then
+            return mp.CLEAN
+          end
+          if l_0_15 ~= 0 then
+            l_0_9[l_0_14] = R12_PC66
+          end
+          local l_0_16, l_0_17 = , safeJsonSerialize(l_0_9, 150, nil, true)
+          if not (string.find)(l_0_17, "Susfile_extension", 1, true) then
+            return mp.CLEAN
+          end
+          local l_0_18 = nil
+          -- DECOMPILER ERROR at PC103: Overwrote pending register: R17 in 'AssignReg'
+
+          if IsDeviceHVA() then
+            do
+              (MpCommon.BmTriggerSig)(l_0_1.ppid, "APML_SuspDownload_Servers", l_0_6 .. "[URLs]" .. l_0_17 .. "[HVA]" .. "")
+              -- DECOMPILER ERROR at PC115: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC115: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+        end
+        return mp.INFECTED
       end
     end
   end
