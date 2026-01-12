@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15124341,
+    "size": 15136483,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32614622,
-    "file_count": 3989
+    "size": 32630787,
+    "file_count": 3991
   },
   {
     "name": "boringssl",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17708765,
-    "file_count": 2059
+    "size": 17732039,
+    "file_count": 2060
   },
   {
     "name": "entity_extraction",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43364927,
-    "file_count": 3200
+    "size": 43748817,
+    "file_count": 3244
   },
   {
     "name": "googletest",
@@ -571,7 +571,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1741787,
+    "size": 1741808,
     "file_count": 528
   },
   {
@@ -651,8 +651,8 @@
   },
   {
     "name": "rust",
-    "size": 1324125,
-    "file_count": 152
+    "size": 1175517,
+    "file_count": 148
   },
   {
     "name": "screen-ai",
@@ -676,8 +676,8 @@
   },
   {
     "name": "skia",
-    "size": 3477585,
-    "file_count": 1184
+    "size": 3478593,
+    "file_count": 1185
   },
   {
     "name": "speech-dispatcher",
@@ -691,7 +691,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 545373,
+    "size": 545365,
     "file_count": 15
   },
   {
@@ -721,8 +721,8 @@
   },
   {
     "name": "tflite",
-    "size": 1706028,
-    "file_count": 515
+    "size": 1669914,
+    "file_count": 508
   },
   {
     "name": "tflite_support",
