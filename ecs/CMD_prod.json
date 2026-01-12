@@ -1124,6 +1124,7 @@
         "UseCachedOptInSetting": true,
         "UseManagedIdentityForSitopsPlatform": true,
         "ValdiateIntuneTenantSyncReadiness": true,
+        "Win365IntuneManagedDeviceCheck": true,
         "WindowsQualityUpdatePolicyUX": true
     }
 }
