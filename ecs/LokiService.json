@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260107.11.0",
+        "CalendarCompanionDFVersion": "1.20260109.9.0",
         "CalendarCompanionMsitVersion": "1.20251217.9.0",
         "CalendarCompanionProdVersion": "1.20251213.1.0",
         "CompanionRing": "Prod",
@@ -1148,7 +1148,8 @@
             "SharepointPageBuilderAgentQuery",
             "PlaceDataQuery",
             "PlaceAvailabilityWithModeQuery",
-            "MeetingInsightsProviderMutation"
+            "MeetingInsightsProviderMutation",
+            "CopilotTuningAgentQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1645,6 +1646,7 @@
             "AnalystChatHistoryQuery",
             "OdspFilesAgentQuery",
             "EduLearnAgentQuery",
+            "CopilotTuningAgentQuery",
             "CopilotTuningEvalAgentQuery"
         ],
         "SydneyProviderAllowList_ProviderTypes": [
@@ -1661,7 +1663,7 @@
         "UseUserLicenseV1Endpoint": true,
         "UseYggdrasilForOrgExplorer": true,
         "UserFormsQueryLimit ": 8,
-        "UserLicenseInformationCacheTtl": "0.04:00:00",
+        "UserLicenseInformationCacheTtl": "0.02:00:00",
         "VivaLicensesForOrgExplorer": [
             "61902246-d7cb-453e-85cd-53ee28eec138",
             "5c13104f-29c1-48d9-9f89-c305a0d4b70e"
@@ -1997,7 +1999,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260106.7.0",
+        "PeopleInTaskbarDFVersion": "1.20260110.4.0",
         "PeopleInTaskbarMsitVersion": "1.20251210.1.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251210.1.0",
