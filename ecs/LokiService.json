@@ -2136,6 +2136,7 @@
         "hostRingBucket": "80",
         "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
+        "refactorFeedbackConfig_shared ": 1,
         "samplingConfig": {
             "Event": {
                 "defaultRate": 100,
