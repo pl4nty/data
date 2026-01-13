@@ -281,7 +281,8 @@
         "FlightingV2": {
             "HardwareConfigLogging": true,
             "NoMaterializeForFastSlowStreamMerge": true,
-            "QBSFSICoreMigrationSwitchOverBatch3": true
+            "QBSFSICoreMigrationSwitchOverBatch3": true,
+            "QBSFSICoreMigrationSwitchOverBatch4": true
         }
     },
     "SVC_Dep": {

@@ -1628,115 +1628,6 @@
         }
     },
     "ChillMicrosoftDefenderXdr": {
-        "Floodgate_Campaign_MicrosoftDefenderXDR.3beda878-1073-422b-b5e8-81f6347bcf2e": {
-            "CampaignId": "3beda878-1073-422b-b5e8-81f6347bcf2e",
-            "EndTimeUtc": "2026-01-10T22:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-03-24T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "SiemUpsellSuccess",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "additionalCapabilities": {
-                        "email": {
-                            "targetPage": 1
-                        }
-                    },
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Tell us about your experience connecting Microsoft Sentinel"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "1 - Very difficult",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5",
-                                        "6",
-                                        "7 - Very easy"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How easy or difficult was it to set up the Microsoft Sentinel trial?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Help us understand why you chose this rating.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Thank You",
-                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText2",
-                                    "questionLabel": "Thank you for your feedback. Your response has been recorded.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/3beda878-1073-422b-b5e8-81f6347bcf2e/8f767900-e4aa-4648-8897-0419c1e39820/Web-MicrosoftDefenderXDR/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_MicrosoftDefenderXDR.610e6279-a960-499c-8f10-2a1b58b8480e": {
             "CampaignId": "610e6279-a960-499c-8f10-2a1b58b8480e",
             "EndTimeUtc": "2026-02-20T22:00:00Z",
@@ -2351,7 +2242,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 10,
+                "PercentageNumerator": 25,
                 "Type": 0
             },
             "PrimaryPriority": 1,
