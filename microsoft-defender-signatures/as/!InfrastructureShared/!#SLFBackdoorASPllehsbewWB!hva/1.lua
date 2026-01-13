@@ -3,23 +3,20 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_mpattribute)("Lua:FileExtensionAttr!config") then
-  return mp.CLEAN
-end
 local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_0 == nil then
   return mp.CLEAN
 end
-if (string.match)(l_0_0, "\\microsoft shared\\web server extensions\\%d%d\\template\\layouts\\") == nil then
+if (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\frontend\\") == nil and (string.match)(l_0_0, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") == nil then
   return mp.CLEAN
 end
-if IsSharepointServer() then
+if IsExchangeServer() then
   return mp.INFECTED
 end
 do
   if IsDeviceHVA() then
     local l_0_1 = ExtractDeviceProperties()
-    if l_0_1.DeviceRoles and (l_0_1.DeviceRoles).SharePointServer ~= nil then
+    if l_0_1.DeviceRoles and (l_0_1.DeviceRoles).ExchangeServer ~= nil then
       return mp.INFECTED
     end
   end

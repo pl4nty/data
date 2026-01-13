@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\51b3c9b141fb\1.luac 
+-- Command line: lua\!InfrastructureShared\7db3bc15e836\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -17,8 +17,8 @@ if l_0_1 == 52 and l_0_2 == 44 and l_0_0.ppid ~= nil then
     ;
     (MpCommon.AtomicCounterAddNamespaced)("rcount_sig_count", l_0_3, 1)
   end
-  local l_0_6 = (this_sigattrlog[1]).utf8p2
-  local l_0_7 = (this_sigattrlog[1]).utf8p1
+  local l_0_6 = (this_sigattrlog[2]).utf8p2
+  local l_0_7 = (this_sigattrlog[2]).utf8p1
   if #l_0_6 < #l_0_7 and l_0_7:find(l_0_6, 1, true) == 1 and l_0_7:byte(#l_0_6 + 1) ~= 58 then
     local l_0_8 = (string.sub)(l_0_7, #l_0_6 + 1)
     local l_0_9 = "app_ext_" .. l_0_8
@@ -31,8 +31,8 @@ if l_0_1 == 52 and l_0_2 == 44 and l_0_0.ppid ~= nil then
     end
   end
   do
-    local l_0_11 = (this_sigattrlog[2]).utf8p2
-    local l_0_12 = (this_sigattrlog[2]).utf8p1
+    local l_0_11 = (this_sigattrlog[3]).utf8p2
+    local l_0_12 = (this_sigattrlog[3]).utf8p1
     if #l_0_11 < #l_0_12 and l_0_12:find(l_0_11, 1, true) == 1 and l_0_12:byte(#l_0_11 + 1) ~= 58 then
       local l_0_13 = (string.sub)(l_0_12, #l_0_11 + 1)
       local l_0_14 = "app_ext_" .. l_0_13
@@ -45,8 +45,8 @@ if l_0_1 == 52 and l_0_2 == 44 and l_0_0.ppid ~= nil then
       end
     end
     do
-      local l_0_16 = (this_sigattrlog[3]).utf8p2
-      local l_0_17 = (this_sigattrlog[3]).utf8p1
+      local l_0_16 = (this_sigattrlog[4]).utf8p2
+      local l_0_17 = (this_sigattrlog[4]).utf8p1
       if #l_0_16 < #l_0_17 and l_0_17:find(l_0_16, 1, true) == 1 and l_0_17:byte(#l_0_16 + 1) ~= 58 then
         local l_0_18 = (string.sub)(l_0_17, #l_0_16 + 1)
         local l_0_19 = "app_ext_" .. l_0_18
