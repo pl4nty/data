@@ -452,6 +452,11 @@
             "EnableAdminTasks": true
         }
     },
+    "UX_AppLifecycle": {
+        "FlightingV2": {
+            "EnableWin32InstallerScriptsGA": true
+        }
+    },
     "UX_Core": {
         "FlightingV2": {
             "DeviceLifecycleAgentUI": true,
