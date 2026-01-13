@@ -208,8 +208,11 @@
                 "https://substrate.office365.us",
                 "https://substrate.partner.outlook.cn",
                 "https://cdn.config.centro.core.microsoft",
-                "https://prod-autodetect.outlookmobile.com",
-                "*.centro.core.microsoft"
+                "https://outlook.office365.com",
+                "*.centro.core.microsoft",
+                "https://config.edge.skype.com",
+                "https://localcdn.centro-dev.com:*",
+                "https://petrol-int.office.microsoft.com"
             ],
             "default-src": [
                 "'none'"
@@ -1659,6 +1662,7 @@
         "UseDotNetCoreForVivaTopicsInLPC": true,
         "UseObjectStoreHttpClientFactory": true,
         "UseOnlyPostMigratedProvider": true,
+        "UseOptimizedWorkingWith": true,
         "UsePcsProfileUrls": true,
         "UseUserLicenseV1Endpoint": true,
         "UseYggdrasilForOrgExplorer": true,
