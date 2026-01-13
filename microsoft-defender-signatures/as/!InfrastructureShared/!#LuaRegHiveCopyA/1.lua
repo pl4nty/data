@@ -25,8 +25,11 @@ if (string.find)(l_0_2, "svchost.exe", 1, true) then
   if (string.find)(l_0_4, "localService -p -s RemoteRegistry", 1, true) then
     (mp.set_mpattribute)("Lua:RemoteRegServiceRegHiveCopy.A")
   end
+  if (string.match)(l_0_4, "%-k LocalService %-p$") or (string.match)(l_0_4, "%-k LocalService$") then
+    (mp.set_mpattribute)("Lua:RemoteRegSharedService")
+  end
   local l_0_5 = GetTacticsTableForPid(l_0_3)
-  if l_0_5.remoteregistry then
+  if type(l_0_5) == "table" and l_0_5.remoteregistry then
     (mp.set_mpattribute)("Lua:RemoteRegServiceFromPid")
   end
 end
