@@ -163,11 +163,11 @@
     },
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20260109.9.0",
-        "CalendarCompanionMsitVersion": "1.20251217.9.0",
-        "CalendarCompanionProdVersion": "1.20251213.1.0",
+        "CalendarCompanionMsitVersion": "1.20260107.11.0",
+        "CalendarCompanionProdVersion": "1.20251217.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20251213.1.0",
+        "HostAppVersion": "1.20251217.9.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -498,6 +498,7 @@
         "enablePersonalInformationManager": false,
         "enablePronounsInProfileEditor": true,
         "enableSkillLibraryAvailable": true,
+        "enableSkillReordering": true,
         "enableSkillsFullList": true,
         "enableSkillsOCV": true,
         "enableVivaSkillsClient": false,
@@ -640,6 +641,7 @@
             "df6098a9-1374-407f-9522-9fe77aac0e55",
             "de5d9895-7a61-4a6f-ae45-5edd1afe3bf3",
             "da9343c8-0b38-41f9-acc4-2234dc14115d",
+            "d720e7df-a301-4b3c-b356-4266f1968bfd",
             "d3092f14-88d2-4a77-8942-296a0d2cc07e",
             "d1d01d05-a252-4e25-a63a-5b51ed673b96",
             "d19e4243-f480-4af5-8899-71f10798d806",
@@ -782,6 +784,7 @@
         "EnableContactUnlinking": true,
         "EnableConversationRecapAdvancedTelemetry": true,
         "EnableCopilotLicenseCheck": true,
+        "EnableCopilotTuningGraphQl": true,
         "EnableCosmicTmRouting": false,
         "EnableCustomDnsResolution": true,
         "EnableDistributedLockingForAadCalls": true,
@@ -2004,7 +2007,7 @@
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
         "PeopleInTaskbarDFVersion": "1.20260110.4.0",
-        "PeopleInTaskbarMsitVersion": "1.20251210.1.0",
+        "PeopleInTaskbarMsitVersion": "1.20251217.2.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251210.1.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
