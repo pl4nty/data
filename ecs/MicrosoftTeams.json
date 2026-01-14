@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1277,12 +1277,12 @@
             "EnableDirectBotFrameworkIntegration": true,
             "EnableGetAppIdFromTurnContext": true,
             "EnableLoggingBotEngagementMetrics": true,
+            "EnableMessageTextCaching": true,
             "EnableNewAppNameForODSPCustomCopilot": true,
             "EnableParallelMembersRetrieval": true,
             "EnableRefetchPBPFlow": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
-            "EnableWelcomeMessageFromInstallationUpdate": true,
-            "MigrateGetTeamsAppID": true
+            "EnableWelcomeMessageFromInstallationUpdate": true
         },
         "RingOptions": {
             "UserRing": "general"
@@ -1844,7 +1844,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2025121501"
+        "buildVersion": "2026010201"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
