@@ -9,11 +9,11 @@ if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE and l_0_0 ~= mp.SCANREASON_ONOPE
 end
 local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
 l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "\\windows\\system32\\config\\s", 1, true) or (string.find)(l_0_1, "\\windows\\system32\\config\\regback\\s", 1, true) or (string.find)(l_0_1, "\\sppcbshivestore\\", 1, true) or (string.find)(l_0_1, "\\adaptivacache\\os", 1, true) or (string.find)(l_0_1, "\\sources\\install", 1, true) or (string.find)(l_0_1, "\\amp\\tmp\\", 1, true) or (string.find)(l_0_1, "\\ntuser.dat", 1, true) or (string.find)(l_0_1, "\\docker\\windowsfilter\\", 1, true) then
+if (string.find)(l_0_1, "\\windows\\system32\\config\\s", 1, true) or (string.find)(l_0_1, "\\windows\\system32\\config\\regback\\s", 1, true) or (string.find)(l_0_1, "\\sppcbshivestore\\", 1, true) or (string.find)(l_0_1, "\\adaptivacache\\os", 1, true) or (string.find)(l_0_1, "\\sources\\install", 1, true) or (string.find)(l_0_1, "\\amp\\tmp\\", 1, true) or (string.find)(l_0_1, "\\ntuser.dat", 1, true) or (string.find)(l_0_1, "\\program files", 1, true) or (string.find)(l_0_1, "\\docker\\windowsfilter\\", 1, true) then
   return mp.CLEAN
 end
 local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-if (string.find)(l_0_2, "ir_agent.exe", 1, true) or (string.find)(l_0_2, "ccsvchst.exe", 1, true) or (string.find)(l_0_2, "mssense.exe", 1, true) or (string.find)(l_0_2, "userprofilemanager.exe", 1, true) then
+if (string.find)(l_0_2, "ir_agent.exe", 1, true) or (string.find)(l_0_2, "ccsvchst.exe", 1, true) or (string.find)(l_0_2, "mssense.exe", 1, true) or (string.find)(l_0_2, "backupfp.exe", 1, true) or (string.find)(l_0_2, "veeam.backup.manager.exe", 1, true) or (string.find)(l_0_2, "dellsupportassistremedationservice.exe", 1, true) or (string.find)(l_0_2, "userprofilemanager.exe", 1, true) then
   return mp.CLEAN
 end
 if (string.find)(l_0_2, "svchost.exe", 1, true) then
