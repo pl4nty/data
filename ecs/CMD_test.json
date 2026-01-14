@@ -1395,6 +1395,7 @@
         "SSO_IWP": true,
         "SU_ACCESS_M2": true,
         "SW_IWP": true,
+        "ScheduleWindowsUpdateStop2HoursAfterStart": true,
         "SchedulerMultiLaneForV2": true,
         "SchedulerMultipleQueueOnSameCpc": true,
         "SchedulerRetireMultiLaneV1": true,
