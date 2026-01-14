@@ -643,6 +643,7 @@
         "EnableHibernationCapabilityForNewCPC": true,
         "EnableHibernationCapabilityForNewCPCVSB": true,
         "EnableHibernationCapabilityForNewGPU": true,
+        "EnableHideACGPreviewTagUX": true,
         "EnableHideAncForApexOnlyTenant": true,
         "EnableHideMoveHostPoolActionHistory": true,
         "EnableHidePreviewString": true,
@@ -839,7 +840,7 @@
         "EnableRdpPropertySettingInFleet": true,
         "EnableReactViewForNotProvisionedWorkspaceGuidePane": true,
         "EnableReactViewForUpdateAdDomainAndFailedProvisionPane": true,
-        "EnableReactViewMigrationForCreateAzureConnection": true,
+        "EnableReactViewMigrationForCreateAzureConnection": false,
         "EnableReactViewMigrationForDisplayAzureConnection": false,
         "EnableReasonCodeForFLD": true,
         "EnableRecycleCDPImageResource": true,
@@ -1408,6 +1409,7 @@
         "SeparateCreateAndUpdateImageVersion": true,
         "SetChunkSizeTo1000": true,
         "ShareSnapshotSwitchToAMS": true,
+        "ShouldReturn404WhenCloudPCNotFound": true,
         "SkipFLDCrossRegionDRLicenseValidation": false,
         "SkipRemovingSecurityLogs": true,
         "SkipUnenrollIntuneOnDppFailure": true,
@@ -1549,6 +1551,13 @@
         },
         "wvdcs": true,
         "wvdmanagement": true
+    },
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,

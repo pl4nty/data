@@ -32,5 +32,12 @@
         "App.ToolbarAnimation": true,
         "App.TotalEventThrottle": 1000,
         "App.UploadPanel": true
+    },
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
     }
 }

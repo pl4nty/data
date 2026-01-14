@@ -208,7 +208,7 @@
         "EnableANCNameFilter": true,
         "EnableANCOverviewReactviewMigrationUX": false,
         "EnableANCRolePermissionPaneReactviewMigrationUX": true,
-        "EnableANCUXTURNHealthCheck": false,
+        "EnableANCUXTURNHealthCheck": true,
         "EnableAbnormalDeviceDetect": true,
         "EnableAbnormalDeviceReinstallTimerFunction": true,
         "EnableActionStatusGraphPermission": true,
@@ -325,6 +325,7 @@
         "EnableCacheForSingleCPCWhenCallDDS": true,
         "EnableCanaryActionPaneReactviewMigrationUX": false,
         "EnableCanaryNextGen": true,
+        "EnableCanaryTURNCheck": true,
         "EnableCanaryV2": true,
         "EnableCapacityManagementRegionClosedToNewCustomersException": true,
         "EnableCapacityProfileForSingleRegion": true,
@@ -1390,6 +1391,13 @@
         },
         "wvdcs": true,
         "wvdmanagement": true
+    },
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,

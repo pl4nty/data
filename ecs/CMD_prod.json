@@ -222,6 +222,7 @@
         "EnableAutopilotInFlsInUX": true,
         "EnableAutopilotInPolicy": true,
         "EnableAutopilotSummaryTitleRemoved": true,
+        "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
         "EnableBackFillCmdAgent": true,
         "EnableBackfillGroupDisplayName": true,
@@ -601,7 +602,7 @@
         "EnableRegionPhysicalInfoScanner": true,
         "EnableRegionRelocation": true,
         "EnableReinstallOldVersionDevicesService": true,
-        "EnableRemoteConfigToConfigGalleryImageRollout": false,
+        "EnableRemoteConfigToConfigGalleryImageRollout": true,
         "EnableRemoteStartMenuAppCheck": true,
         "EnableRemoveConnectionQualityPreviewTag": true,
         "EnableRemoveDeviceSlowStream": true,
@@ -1050,6 +1051,13 @@
                 "EnableBootToCloudSignInToPhysicalDevice": true,
                 "enableTheme": true
             }
+        }
+    },
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
         }
     },
     "MMD": {

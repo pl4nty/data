@@ -1,5 +1,10 @@
 {
     "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        },
         "ConfigLogTarget": "edge_stable",
         "ExcludeExternalConfigIdsInLog": true
     },
