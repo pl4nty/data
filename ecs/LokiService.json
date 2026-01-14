@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260109.9.0",
+        "CalendarCompanionDFVersion": "1.20260112.10.0",
         "CalendarCompanionMsitVersion": "1.20260107.11.0",
         "CalendarCompanionProdVersion": "1.20251217.9.0",
         "CompanionRing": "Prod",
@@ -1250,7 +1250,7 @@
                     {
                         "commandText": "Provide a summary that is concise and scannable, detailing role, current projects, and recent activity from files, meetings, chats, and emails, and include shared context such as projects, reporting lines, and collaboration for {people}",
                         "displayText": "Provide a summary that is concise and scannable, detailing role, current projects, and recent activity from files, meetings, chats, and emails, and include shared context such as projects, reporting lines, and collaboration for {people}",
-                        "pillText": "Tell me about",
+                        "pillText": "Tell me about {people}",
                         "sourceTypeId": "UpcomingMeetingWhoIs"
                     },
                     {
