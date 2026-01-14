@@ -282,6 +282,7 @@
             "HardwareConfigLogging": true,
             "NoMaterializeForFastSlowStreamMerge": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true,
+            "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreMigrationSwitchOverBatch4": true
         }
