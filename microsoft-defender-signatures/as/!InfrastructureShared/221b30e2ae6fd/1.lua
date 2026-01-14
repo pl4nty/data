@@ -23,7 +23,13 @@ do
   if #l_0_3 > 450 then
     return mp.CLEAN
   end
-  if #l_0_3 < 50 then
+  if #l_0_3 < 70 then
+    return mp.CLEAN
+  end
+  if StringEndsWith(l_0_3, "\\powershell.exe\"") then
+    return mp.CLEAN
+  end
+  if StringEndsWith(l_0_3, "\\powershell_ise.exe\"") then
     return mp.CLEAN
   end
   local l_0_4, l_0_5 = (bm.get_process_relationships)()
@@ -41,18 +47,18 @@ do
     local l_0_12 = l_0_3
     do
       local l_0_13 = {}
-      -- DECOMPILER ERROR at PC109: No list found for R7 , SetList fails
+      -- DECOMPILER ERROR at PC129: No list found for R7 , SetList fails
 
-      -- DECOMPILER ERROR at PC113: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC133: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC114: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC134: Overwrote pending register: R5 in 'AssignReg'
 
       if l_0_11 then
         return l_0_11
       end
-      -- DECOMPILER ERROR at PC116: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC136: Overwrote pending register: R5 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC117: Overwrote pending register: R5 in 'AssignReg'
+      -- DECOMPILER ERROR at PC137: Overwrote pending register: R5 in 'AssignReg'
 
       do return l_0_11 end
       -- WARNING: undefined locals caused missing assignments!

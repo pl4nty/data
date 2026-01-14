@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\159b364b8503f\1.luac 
+-- Command line: lua\!InfrastructureShared\8f4b3a72927f2\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -7,9 +7,9 @@ local l_0_4 = nil
 -- DECOMPILER ERROR at PC8: Overwrote pending register: R1 in 'AssignReg'
 
 do
-  if (this_sigattrlog[9]).matched then
+  if (this_sigattrlog[42]).matched then
     local l_0_1, l_0_3 = nil, ""
-    l_0_4 = (string.find)((this_sigattrlog[9]).utf8p1, "/bash", 1, true)
+    l_0_4 = (string.find)((this_sigattrlog[42]).utf8p1, "/bash", 1, true)
     local l_0_0, l_0_2 = nil
     if l_0_4 ~= nil then
       l_0_0 = sysio
@@ -43,7 +43,7 @@ do
 
   -- DECOMPILER ERROR at PC86: Overwrote pending register: R2 in 'AssignReg'
 
-  if ((((((this_sigattrlog[10]).matched and not (this_sigattrlog[11]).matched) or (this_sigattrlog[12]).matched) and not (this_sigattrlog[13]).matched) or (this_sigattrlog[14]).matched) and not (this_sigattrlog[15]).matched) or (this_sigattrlog[16]).matched then
+  if ((((((this_sigattrlog[43]).matched and not (this_sigattrlog[44]).matched) or (this_sigattrlog[45]).matched) and not (this_sigattrlog[46]).matched) or (this_sigattrlog[47]).matched) and not (this_sigattrlog[48]).matched) or (this_sigattrlog[49]).matched then
     do return mp.CLEAN end
     -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
 
