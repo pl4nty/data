@@ -42,36 +42,31 @@ do
           local l_0_9 = {}
           -- DECOMPILER ERROR at PC66: Confused about usage of register: R12 in 'UnsetPending'
 
-          local l_0_15 = UrlGrader(R12_PC66, "ALF:Trojan:Win32/PFApp_SuspDownload.A", false)
-          if l_0_15 < 0 then
+          if UrlGrader(R12_PC66, "ALF:Trojan:Win32/PFApp_SuspDownload.A", false) < 0 then
             return mp.CLEAN
           end
-          if l_0_15 ~= 0 then
+          if UrlGrader(R12_PC66, "ALF:Trojan:Win32/PFApp_SuspDownload.A", false) ~= 0 then
             l_0_9[l_0_14] = R12_PC66
           end
-          local l_0_16, l_0_17 = , safeJsonSerialize(l_0_9, 150, nil, true)
-          if not (string.find)(l_0_17, "Susfile_extension", 1, true) then
+        end
+        -- DECOMPILER ERROR at PC81: Confused about usage of register: R7 in 'UnsetPending'
+
+        local l_0_15, l_0_16 = , safeJsonSerialize(l_0_9, 150, nil, true)
+        if not (string.find)(l_0_16, "Susfile_extension", 1, true) then
+          return mp.CLEAN
+        end
+        local l_0_17 = nil
+        -- DECOMPILER ERROR at PC105: Overwrote pending register: R10 in 'AssignReg'
+
+        if IsDeviceHVA() then
+          do
+            (MpCommon.BmTriggerSig)(l_0_1.ppid, "APML_SuspDownload_Servers", l_0_6 .. "[URLs]" .. l_0_16 .. "[HVA]" .. "")
+            do return mp.INFECTED end
             return mp.CLEAN
           end
-          local l_0_18 = nil
-          -- DECOMPILER ERROR at PC103: Overwrote pending register: R17 in 'AssignReg'
-
-          if IsDeviceHVA() then
-            do
-              (MpCommon.BmTriggerSig)(l_0_1.ppid, "APML_SuspDownload_Servers", l_0_6 .. "[URLs]" .. l_0_17 .. "[HVA]" .. "")
-              -- DECOMPILER ERROR at PC115: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC115: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
-          end
         end
-        return mp.INFECTED
       end
     end
-  end
-  do
-    return mp.CLEAN
   end
 end
 
