@@ -214,6 +214,7 @@
         "azureml://registries/azure-openai/models/gpt-5.1-codex-max",
         "azureml://registries/azure-openai/models/gpt-5.2",
         "azureml://registries/azure-openai/models/gpt-5.2-chat",
+        "azureml://registries/azure-openai/models/gpt-5.2-codex",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -241,7 +242,11 @@
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-5",
-        "azureml://registries/azureml-mistral/models/mistral-large-3"
+        "azureml://registries/azureml-mistral/models/mistral-large-3",
+        "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b-thinking-2507",
+        "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b-instruct-2507",
+        "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b",
+        "azureml://registries/azureml-fireworks/models/fw-deepseek-v3.1-terminus"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",
@@ -344,6 +349,158 @@
         "gpt-5.2-chat",
         "kimi-k2-thinking"
     ],
+    "supportedModels": {
+        "assistantsNotSupportedStreamingModels": [
+            "o3-deep-research"
+        ],
+        "fdpAgentsModels": {
+            "notSupportedInUI": [],
+            "supported": [
+                "gpt-5",
+                "gpt-5-mini",
+                "gpt-5-nano",
+                "gpt-5-chat",
+                "gpt-4.1",
+                "gpt-4.1-mini",
+                "gpt-4.1-nano",
+                "gpt-4o",
+                "gpt-4o-mini",
+                "gpt-4",
+                "gpt-4-32k",
+                "gpt-35-turbo",
+                "model-router",
+                "o1",
+                "o3-deep-research",
+                "o3-mini",
+                "o3",
+                "o4-mini"
+            ]
+        },
+        "nonFDPAgentsModels": {
+            "notSupportedInUI": [],
+            "supported": [
+                "gpt-4o",
+                "gpt-4o-mini",
+                "gpt-4",
+                "gpt-35-turbo",
+                "gpt-4-32k"
+            ]
+        },
+        "reasoningModels": [
+            "o1",
+            "o3-mini",
+            "o3",
+            "o4-mini",
+            "o3-deep-research"
+        ],
+        "supportedChatModels": [
+            "gpt-4",
+            "gpt-4-32k",
+            "gpt-4.5-preview",
+            "gpt-35-turbo",
+            "gpt-35-turbo-instruct",
+            "gpt-35-turbo-16k",
+            "gptv",
+            "gpt-4v",
+            "gpt-4o",
+            "gpt-audio",
+            "gpt-audio-mini",
+            "gpt-4o-audio-preview",
+            "gpt-4o-mini-audio-preview",
+            "gpt-4o-mini",
+            "gpt-4.1",
+            "gpt-4.1-nano",
+            "gpt-4.1-mini",
+            "o1",
+            "o1-alpha",
+            "o1-mini",
+            "o1-preview",
+            "o3-mini-alpha",
+            "o3-mini",
+            "azure-openai-model-router",
+            "model-router",
+            "o3",
+            "o4-mini",
+            "o1-pro",
+            "gpt-oss-120b",
+            "gpt-oss-20b",
+            "gpt-5",
+            "gpt-5-mini",
+            "gpt-5-nano",
+            "gpt-5-chat",
+            "gpt-5-reasoning-alpha",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.2",
+            "gpt-5.2-chat",
+            "kimi-k2-thinking"
+        ],
+        "supportedCompletionModels": [
+            "babbage-002",
+            "davinci-002",
+            "code-davinci-002",
+            "text-ada-001",
+            "text-curie-001",
+            "text-davinci-001",
+            "text-davinci-002",
+            "text-davinci-003",
+            "text-chat-davinci-002"
+        ],
+        "supportedImageModels": [
+            "dall-e-3",
+            "dall-e-2",
+            "gpt-image-1",
+            "gpt-image-1-mini",
+            "flux.1-kontext-pro",
+            "flux-1.1-pro",
+            "flux.2-pro"
+        ],
+        "supportedMistralOcrModels": [
+            "mistral-document-ai-2505"
+        ],
+        "supportedRerankModels": [
+            "cohere-rerank-v4.0-fast",
+            "cohere-rerank-v4.0-pro",
+            "cohere-rerank-v4-pro",
+            "cohere-rerank-v4-fast"
+        ],
+        "supportedResponseModels": [
+            "computer-use-preview",
+            "codex-mini",
+            "gpt-5",
+            "gpt-5-nano",
+            "gpt-5-mini",
+            "gpt-5-codex",
+            "gpt-5.1",
+            "gpt-5.1-chat",
+            "gpt-5.1-codex",
+            "gpt-5.1-codex-mini",
+            "gpt-5.1-codex-max",
+            "gpt-5.2-codex",
+            "o1-pro",
+            "o3",
+            "o3-pro",
+            "o4-mini"
+        ],
+        "supportedTextToSpeechModels": [
+            "tts",
+            "tts-hd",
+            "gpt-4o-mini-tts"
+        ],
+        "supportedTranscribeModels": [
+            "whisper",
+            "gpt-4o-transcribe",
+            "gpt-4o-mini-transcribe",
+            "gpt-4o-transcribe-diarize"
+        ],
+        "supportedVideoModels": [
+            "aoai-sora",
+            "sora"
+        ],
+        "supportedVideoV2Models": [
+            "sora-2"
+        ]
+    },
     "unauthHFLinkAssetIds": [],
     "visionMaaP": [
         "azureml://registries/azureml/models/compvis-stable-diffusion-v1-4",
