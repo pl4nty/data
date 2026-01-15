@@ -62,7 +62,7 @@ try:
     subprocess.run(['sudo', 'apt-get', 'update'], check=True)
     subprocess.run(['sudo', 'apt-get', 'install', '-y', 'wimtools'], check=True)
     
-    metadata_file = downloaded_files.get('MetadataESD_professional_en-us.esd')
+    metadata_file = downloaded_files.get('professional_en-us.esd')
     if metadata_file:
         subprocess.run(['wiminfo', metadata_file], check=True)
         # print('WinRE files:')
