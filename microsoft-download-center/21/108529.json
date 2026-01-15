@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server\u00ae 2025 for Microsoft\u00ae Windows Latest Cumulative Update",
+    "downloadDescription": "Cumulative Update Package 1 for SQL Server 2025 - KB5074901",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2025-KB5074901-x64.exe",
+            "url": "https://download.microsoft.com/download/313ddc44-e6e1-47bc-b9b5-f9bf4d5f38f4/SQLServer2025-KB5074901-x64.exe",
+            "size": "411443808",
+            "version": "17.0.4005.7",
+            "datePublished": "1/15/2026 5:30:41 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "<b>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2025 and contains all updates released since the release of SQL Server 2025 RTM.</b><br /><br /><ul><br /><li>This Cumulative Update includes all fixes from all previous RTM Cumulative Updates, therefore it can be installed to resolve issues fixed in any previous RTM CU</li><br /><li>The latest 2025 update is <a name=\"KB5074901\"></a><a href=\"https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate1\">CU1 - KB5074901</a></li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5074901",
+        "name": "KB5074901"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.0.4005.7",
+    "detailsSection_file_name": [
+        "SQLServer2025-KB5074901-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "392.4 MB"
+    ],
+    "detailsSection_file_date": "1/15/2026",
+    "systemRequirementsSection": "For complete system requirements, please reference the detailed <a href=\"https://learn.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2025?view=sql-server-ver17\">Systems Requirements</a> page.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "After the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB5074901",
+            "url": "https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate1"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108529",
+    "downloadPreload": true
+}
