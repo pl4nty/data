@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19708.40125-->
+    <!--Build: 16.0.19612.40126-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -233,15 +233,15 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.office.net" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeLicensingService15" o:authentication="2">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/OlsClient.svc/OlsClient</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/OlsClient.svc/OlsClient</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeLicensingServiceGlobal">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/OlsClient.svc/OlsClient</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/OlsClient.svc/OlsClient</o:url>
     </o:service>
     <o:service o:name="LicensingRestHost" o:authentication="2">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/</o:url>
+      <o:url>https://ols.officeapps.live.com/</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
       <o:ticket o:idprovider="3" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -459,9 +459,6 @@
     <o:service o:name="ProofingDownloadServiceV2_7">
       <o:url>https://fs.microsoft.com/fs/lexicons/2.7</o:url>
     </o:service>
-    <o:service o:name="ProofingDownloadService1CDN">
-      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/proofing-android/prod/2.7</o:url>
-    </o:service>
     <o:service o:name="ProtectionSDKEndpoint">
       <o:url>https://api.aadrm.com</o:url>
     </o:service>
@@ -597,7 +594,7 @@
       <o:url>https://3pidentity.svc.cloud.microsoft/v1/token</o:url>
     </o:service>
     <o:service o:name="DSCRedemptionConfig">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/olsconfig.svc/redemption/locales</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/olsconfig.svc/redemption/locales</o:url>
     </o:service>
     <o:service o:name="OfficeEntityBaseUrl">
       <o:url>https://entity.osi.office.net/</o:url>
@@ -617,7 +614,7 @@
       <o:url>https://cdn.entity.osi.office.net/OfficeEntity/web/views/juno.mac.cshtml</o:url>
     </o:service>
     <o:service o:name="RedemptionFlightingBucket">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/olsconfig.svc/redemption/flighting/</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/olsconfig.svc/redemption/flighting/</o:url>
     </o:service>
     <o:service o:name="MyAccount">
       <o:url>https://go.microsoft.com/fwlink/?LinkID=808147</o:url>
@@ -782,10 +779,10 @@
       <o:ticket o:idprovider="3" o:resourceId="https://graph.windows.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="PinValidation">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/olsconfig.svc/pin/v2/</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/olsconfig.svc/pin/v2/</o:url>
     </o:service>
     <o:service o:name="PinValidationNoVersion">
-      <o:url>https://licensing.m365.svc.cloud.microsoft/olsc/olsconfig.svc/pin/</o:url>
+      <o:url>https://ols.officeapps.live.com/olsc/olsconfig.svc/pin/</o:url>
     </o:service>
     <o:service o:name="SfBAutoDiscover">
       <o:url>https://webdir.online.lync.com/autodiscover/autodiscoverservice.svc/root/</o:url>
@@ -1100,10 +1097,7 @@
     </o:service>
     <o:service o:name="FeedbackPetrolAuthUploadUrl" o:authentication="2">
       <o:url>https://petrol.office.microsoft.com/v1/feedback/authenticated</o:url>
-      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://petrol.office.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
-    </o:service>
-    <o:service o:name="FeedbackPetrolScopeUrlCredV3" o:authentication="2">
-      <o:url>https://petrol.office.microsoft.com/Feedback.ReadWrite</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://petrol.office.microsoft.com/Feedback.ReadWrite" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="RDCAriaCollectorUrl">
       <o:url>https://mobile.events.data.microsoft.com/Collector/3.0/</o:url>
