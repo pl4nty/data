@@ -1529,10 +1529,10 @@
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://oness.microsoft.com/api" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="C2RCDNBackgroundUrl">
-      <o:url>http://bg.tscdn.m365.static.microsoft/pr</o:url>
+      <o:url>http://b.c2r.ts.cdn.office.net/pr</o:url>
     </o:service>
     <o:service o:name="C2RCDNForegroundUrl">
-      <o:url>http://fg.tscdn.m365.static.microsoft/pr</o:url>
+      <o:url>http://f.c2r.ts.cdn.office.net/pr</o:url>
     </o:service>
     <o:service o:name="C2RDorisInteractiveInstallationUrl">
       <o:url>https://clients.config.office.net/c2r/v1.0/InteractiveInstallation</o:url>
