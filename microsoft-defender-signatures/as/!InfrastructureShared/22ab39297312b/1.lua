@@ -11,7 +11,7 @@ local l_0_1 = l_0_0.command_line
 if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
-if l_0_1:find("--user-data-dir=/var/folders", 1, true) or l_0_1:find("--load-extension=", 1, true) or l_0_1:find("--remote-debugging-port=0", 1, true) or l_0_1:find("--disable-features=", 1, true) or l_0_1:find("--disk-cache-size=", 1, true) or l_0_1:find("JetBrains/IntelliJIdea", 1, true) or l_0_1:find("/Library/Caches/ms-playwright/mcp-chrome", 1, true) or l_0_1:find("--user-data-dir=/private/var/folders", 1, true) then
+if l_0_1:find("--user-data-dir=/var/folders", 1, true) or l_0_1:find("--load-extension=", 1, true) or l_0_1:find("--remote-debugging-port=0", 1, true) or l_0_1:find("--disable-features=", 1, true) or l_0_1:find("--ignore-ssl-errors", 1, true) or l_0_1:find("--no-first-run", 1, true) or l_0_1:find("--ignore-ssl-errors", 1, true) or l_0_1:find("--disk-cache-size=", 1, true) or l_0_1:find("JetBrains/IntelliJIdea", 1, true) or l_0_1:find("/Library/Caches/ms-playwright/mcp-chrome", 1, true) or l_0_1:find("--user-data-dir=/private/var/folders", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED
