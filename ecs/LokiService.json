@@ -1999,6 +1999,7 @@
         "UseDsApiSecurityContextOrgX": true,
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
+        "isFilteringEnabled": true,
         "isPersistentQueriesEnabled": true,
         "isQuickNavigationActionsEnabled": true,
         "isReportsCountEnabled": true,
@@ -2007,7 +2008,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260110.4.0",
+        "PeopleInTaskbarDFVersion": "1.20260113.9.0",
         "PeopleInTaskbarMsitVersion": "1.20251217.2.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251210.1.0",
