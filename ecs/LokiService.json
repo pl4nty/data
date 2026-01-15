@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260112.10.0",
-        "CalendarCompanionMsitVersion": "1.20260107.11.0",
+        "CalendarCompanionDFVersion": "1.20260113.8.0",
+        "CalendarCompanionMsitVersion": "1.20260109.9.0",
         "CalendarCompanionProdVersion": "1.20251217.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1994,7 +1994,7 @@
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
-        "OrgExplorerBootstraperVersion": "1.20250919.3.0",
+        "OrgExplorerBootstraperVersion": "1.20260113.4.0",
         "OrgExplorerVersion": "1.20251024.3.0",
         "UseDsApiSecurityContextOrgX": true,
         "allowInAppFeedback": true,
