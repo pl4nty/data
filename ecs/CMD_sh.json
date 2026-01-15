@@ -10,6 +10,7 @@
         "AddSuperFastLaneToWorkItemV2": true,
         "AddValidationsForCloudApp": true,
         "AddValidationsForFSLogix": true,
+        "AdoptTouchlessServiceInstanceMove": true,
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
         "Aspen": {
@@ -1259,6 +1260,7 @@
         "SnptEnableVMagentCheck": true,
         "SnptLockSnptForShare": true,
         "Snpt_AlterRegionFromDrmgmt": true,
+        "Snpt_EnableFilterBeforeReport": true,
         "StorageSizeDefaultValueTo16": true,
         "SubscriptionManagementServiceDatabaseQueryIterationDelay": true,
         "SupportFLSCloudPcPerformanceReporting": true,
@@ -1287,7 +1289,6 @@
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,
         "WCX_SelfHelp_VSBAdmin_InAppUX": true,
-        "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
             "GUI": {
