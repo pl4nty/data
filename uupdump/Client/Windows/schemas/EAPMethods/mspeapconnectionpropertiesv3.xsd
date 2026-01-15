@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<xs:schema 
+      targetNamespace="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV3" 
+      elementFormDefault="qualified" 
+      xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV3" 
+      xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+      version="1.0"
+   >
+   <xs:element name="AllowPromptingWhenServerCANotFound"/>   
+   <xs:element name="PeapExtensionsV3" type="PeapExtensionsTypeV3"/>
+ 
+   <xs:complexType name="PeapExtensionsTypeV3">
+      <xs:sequence>
+         <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

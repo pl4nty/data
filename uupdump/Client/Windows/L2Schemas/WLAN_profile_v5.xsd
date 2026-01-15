@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WLAN/profile/v5"
+    xmlns="http://www.microsoft.com/networking/WLAN/profile/v5"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+  <!-- Flag for specifying whether QoS DSCP To UP Mapping allowed on this profile, set by policy (Default false) -->
+  <xs:element name="QoSDSCPToUPMappingAllowed" type="xs:boolean"/>
+
+</xs:schema>

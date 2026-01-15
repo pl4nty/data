@@ -1,0 +1,39 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WWAN/profile/v7"
+    xmlns="http://www.microsoft.com/networking/WWAN/profile/v7"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:WWAN_profile_v1="http://www.microsoft.com/networking/WWAN/profile/v1"
+    xmlns:WWAN_profile_v2="http://www.microsoft.com/networking/WWAN/profile/v2"
+    xmlns:WWAN_profile_v3="http://www.microsoft.com/networking/WWAN/profile/v3"
+    xmlns:WWAN_profile_v4="http://www.microsoft.com/networking/WWAN/profile/v4"
+    xmlns:WWAN_profile_v5="http://www.microsoft.com/networking/WWAN/profile/v5"
+    xmlns:WWAN_profile_v6="http://www.microsoft.com/networking/WWAN/profile/v6"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v1" schemaLocation="WWAN_profile_v1.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v2" schemaLocation="WWAN_profile_v2.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v3" schemaLocation="WWAN_profile_v3.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v4" schemaLocation="WWAN_profile_v4.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v5" schemaLocation="WWAN_profile_v5.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v6" schemaLocation="WWAN_profile_v6.xsd"/>
+
+    <!-- Optional flag to indicate whether this profile is based on a modem provisioned context. 
+         The default is "false" if this attribute is absent.
+         This is used as an extension to only elements of type MBNProfileExt 
+    -->
+    <xs:element name="IsBasedOnModemProvisionedContext" type="xs:boolean"/>
+
+    <!-- Optional element for ModemDMConfigProfile, containing a list of modem DM profile purpose GUIDs.
+         When a ModemDMConfigProfile is to be used to store a MBIM modem contexts, it should carry at least one modem DM profile purpose GUID.
+         A modem DM profile purpose GUID will translate into a modem context type GUID when interracting with MBIM modems.
+         A ModemDMConfigProfile may correspond to multiple modem DM profiles when those modem DM profiles have the same parameters.
+         Hence this element may contain multiple modem DM profile purpose GUIDs.
+    -->
+    <xs:element name="ModemDMProfilePurposes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DMProfilePurposeGuid" type="WWAN_profile_v4:guidType" maxOccurs="10"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

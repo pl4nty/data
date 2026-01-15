@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/networking/CarrierControl/WLAN/v2"
+    elementFormDefault="qualified"
+    xmlns="http://www.microsoft.com/networking/CarrierControl/WLAN/v2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="FIPSMode" type="xs:boolean"/>
+
+  <xs:element name="SSID">
+    <xs:complexType>
+      <!-- Either Hex or named SSID must be present. -->
+      <xs:choice>
+        <xs:element name="hex">
+          <xs:simpleType>
+            <xs:restriction base="xs:hexBinary">
+              <xs:minLength value="1" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="name">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SSIDPrefix">
+    <xs:complexType>
+      <!-- Either Hex or named SSID must be present. -->
+      <xs:choice>
+        <xs:element name="hex">
+          <xs:simpleType>
+            <xs:restriction base="xs:hexBinary">
+              <xs:minLength value="4" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="name">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="4" />
+              <xs:maxLength value="32" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

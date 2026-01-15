@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<xs:schema 
+ targetNamespace="http://www.microsoft.com/provisioning/EapHostConfig"
+ elementFormDefault="qualified" 
+ xmlns="http://www.microsoft.com/provisioning/EapHostConfig"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapMethodConfig"
+ xmlns:eapCommon="http://www.microsoft.com/provisioning/EapCommon"
+ version="1.0">
+
+  <xs:import 
+   namespace="http://www.microsoft.com/provisioning/BaseEapMethodConfig"
+   schemaLocation="BaseEapMethodConfig.xsd"/>
+
+  <xs:import 
+   namespace="http://www.microsoft.com/provisioning/EapCommon"
+   schemaLocation="EapCommon.xsd"/>
+
+   <xs:element name="EapHostConfig">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="EapMethod" type="eapCommon:EapMethodType"/>
+            <xs:choice>
+               <xs:element name="Config" type="baseEap:BaseEapMethodConfig"/>
+               <xs:element name="ConfigBlob" type="xs:hexBinary"/>
+            </xs:choice>
+            <!-- extension point for other namespaces -->
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##other"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+
+</xs:schema>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<xs:schema 
+ targetNamespace="http://www.microsoft.com/provisioning/BaseEapMethodConfig"
+ elementFormDefault="qualified" 
+ xmlns="http://www.microsoft.com/provisioning/BaseEapMethodConfig"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ version="1.0">
+
+   <xs:complexType name="BaseEapMethodConfig" >
+     <xs:sequence>
+      <xs:any processContents="lax" 
+       minOccurs="0" 
+       maxOccurs="unbounded" 
+       namespace="##any" />
+      <!-- One or more elements of the kind as follows should go in here. -->
+     </xs:sequence>
+   </xs:complexType>
+
+</xs:schema>
+

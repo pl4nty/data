@@ -1,0 +1,25 @@
+<xs:schema targetNamespace="http://www.microsoft.com/networking/WWAN/profile/v5"
+    xmlns="http://www.microsoft.com/networking/WWAN/profile/v5"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:WWAN_profile_v1="http://www.microsoft.com/networking/WWAN/profile/v1"
+    xmlns:WWAN_profile_v2="http://www.microsoft.com/networking/WWAN/profile/v2"
+    xmlns:WWAN_profile_v3="http://www.microsoft.com/networking/WWAN/profile/v3"
+    xmlns:WWAN_profile_v4="http://www.microsoft.com/networking/WWAN/profile/v4"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v1" schemaLocation="WWAN_profile_v1.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v2" schemaLocation="WWAN_profile_v2.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v3" schemaLocation="WWAN_profile_v3.xsd"/>
+    <xs:import namespace="http://www.microsoft.com/networking/WWAN/profile/v4" schemaLocation="WWAN_profile_v4.xsd"/>
+
+    <!-- Flag to indicate whether this profile must follow the enablement policy of internet connection. Default is "false" -->
+    <!-- If this element is present in a profile and is true, IsAdditionalPdpContextProfile must be true -->
+    <!-- This is used as an extension to only elements of type MBNProfileExt -->
+    <xs:element name="FollowInternetConnectionEnablementPolicy" type="xs:boolean"/>
+
+    <!-- Flag to indicate whether this porfile must follow the roam control policy of internet connection. Default is "false" -->
+    <!-- If this element is present in a profile and is true, IsAdditionalPdpContextProfile must be true -->
+    <!-- This is used as an extension to only elements of type MBNProfileExt -->
+    <xs:element name="FollowInternetConnectionRoamingPolicy" type="xs:boolean"/>
+
+</xs:schema>
