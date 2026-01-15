@@ -1260,7 +1260,6 @@
         "SnptEnableVMagentCheck": true,
         "SnptLockSnptForShare": true,
         "Snpt_AlterRegionFromDrmgmt": true,
-        "Snpt_EnableFilterBeforeReport": true,
         "StorageSizeDefaultValueTo16": true,
         "SubscriptionManagementServiceDatabaseQueryIterationDelay": true,
         "SupportFLSCloudPcPerformanceReporting": true,
