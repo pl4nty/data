@@ -41,7 +41,7 @@
   },
   {
     "name": "angle",
-    "size": 15136594,
+    "size": 15135594,
     "file_count": 844
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 32633701,
-    "file_count": 3991
+    "size": 32634798,
+    "file_count": 3992
   },
   {
     "name": "boringssl",
@@ -231,7 +231,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 96680710,
+    "size": 96680740,
     "file_count": 11169
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "litert",
-    "size": 187816,
+    "size": 188676,
     "file_count": 67
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 32152,
-    "file_count": 17
+    "size": 33381,
+    "file_count": 19
   },
   {
     "name": "oneds_sdk",
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3481990,
+    "size": 3481997,
     "file_count": 1185
   },
   {
@@ -761,12 +761,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2553686,
+    "size": 2553662,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6938194,
+    "size": 6938993,
     "file_count": 184
   },
   {
