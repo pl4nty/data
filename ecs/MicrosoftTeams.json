@@ -148,7 +148,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1385,6 +1385,12 @@
             "MeetingTimerSkill_enableTimerSmartActions": [
                 {
                     "Flight": "enableTimerSmartActions",
+                    "IsEnabled": true
+                }
+            ],
+            "Show_ODM_FRE": [
+                {
+                    "Flight": "TM.DocGenerationSkill",
                     "IsEnabled": true
                 }
             ],
