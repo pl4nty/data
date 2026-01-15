@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\21241e3c00205\1.luac 
+-- Command line: lua\!InfrastructureShared\22641db7fa2c2\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
     local l_0_0 = nil
   end
   -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
