@@ -1,4 +1,11 @@
 {
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
+    },
     "MicrosoftDefenderForWindowsClient": {
         "DCO_MpFC_TS_UseStrictOriginQuery": 0
     }

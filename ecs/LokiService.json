@@ -374,6 +374,11 @@
         }
     },
     "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        },
         "ConfigLogTarget": "default"
     },
     "GroupsManagement": {

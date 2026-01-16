@@ -72,6 +72,13 @@
             "FlightValue": true
         }
     },
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
+    },
     "Fundamentals": {
         "FlightingV2": {
             "Fundamentals_Test": false
