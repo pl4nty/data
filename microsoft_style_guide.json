@@ -365,6 +365,11 @@
                             "toc_title": "AI Agent Evaluation"
                         },
                         {
+                            "href": "a_z_names_terms/a/ai-agent-manager",
+                            "permissioned-type": "private",
+                            "toc_title": "AI agent manager"
+                        },
+                        {
                             "href": "a_z_names_terms/a/ai-builder",
                             "permissioned-type": "private",
                             "toc_title": "AI Builder"
@@ -510,6 +515,11 @@
                             "toc_title": "app"
                         },
                         {
+                            "href": "a_z_names_terms/a/app-accelerate",
+                            "permissioned-type": "private",
+                            "toc_title": "App Accelerate"
+                        },
+                        {
                             "href": "a_z_names_terms/a/app-advisor",
                             "permissioned-type": "private",
                             "toc_title": "app advisor"
@@ -653,6 +663,11 @@
                             "href": "a_z_names_terms/a/aspnet",
                             "permissioned-type": "private",
                             "toc_title": "ASP.NET"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/asset",
+                            "permissioned-type": "private",
+                            "toc_title": "asset"
                         },
                         {
                             "href": "a_z_names_terms/a/asset-management-",
@@ -1010,6 +1025,11 @@
                             "toc_title": "Azure Automation"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-backup-for-cosmos-db",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Backup for Cosmos DB"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-bastion",
                             "permissioned-type": "private",
                             "toc_title": "Azure Bastion"
@@ -1280,6 +1300,11 @@
                             "toc_title": "Azure HDInsight on AKS"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-horizon-db",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure HorizonDB"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-hybrid-services",
                             "permissioned-type": "private",
                             "toc_title": "Azure hybrid services"
@@ -1458,6 +1483,11 @@
                             "href": "a_z_names_terms/a/azure-marketplace",
                             "permissioned-type": "private",
                             "toc_title": "Azure Marketplace"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-mcp-server",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure MCP Server"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-messaging-catalog",
@@ -2173,6 +2203,11 @@
                             "href": "a_z_names_terms/c/capability",
                             "permissioned-type": "private",
                             "toc_title": "capability"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/capacity",
+                            "permissioned-type": "private",
+                            "toc_title": "capacity"
                         },
                         {
                             "href": "a_z_names_terms/c/capacity-node",
@@ -3335,6 +3370,11 @@
                             "toc_title": "Digital Contact Center Platform"
                         },
                         {
+                            "href": "a_z_names_terms/d/digital-labor",
+                            "permissioned-type": "private",
+                            "toc_title": "digital labor"
+                        },
+                        {
                             "href": "a_z_names_terms/d/digital-messaging-for-dynamics-365-customer-service",
                             "permissioned-type": "private",
                             "toc_title": "Digital Messaging for Dynamics 365 Customer Service"
@@ -3353,6 +3393,16 @@
                             "href": "a_z_names_terms/d/digital-transformation",
                             "permissioned-type": "private",
                             "toc_title": "digital transformation"
+                        },
+                        {
+                            "href": "a_z_names_terms/d/digital-worker",
+                            "permissioned-type": "private",
+                            "toc_title": "digital worker"
+                        },
+                        {
+                            "href": "a_z_names_terms/d/digital-workforce",
+                            "permissioned-type": "private",
+                            "toc_title": "digital workforce"
                         },
                         {
                             "href": "a_z_names_terms/d/direct-lake",
@@ -3690,6 +3740,11 @@
                             "toc_title": "email address"
                         },
                         {
+                            "href": "a_z_names_terms/e/embodiment",
+                            "permissioned-type": "private",
+                            "toc_title": "embodiment"
+                        },
+                        {
                             "href": "a_z_names_terms/e/emerging",
                             "permissioned-type": "private",
                             "toc_title": "emerging"
@@ -3850,6 +3905,11 @@
                             "toc_title": "Excel"
                         },
                         {
+                            "href": "a_z_names_terms/e/excel-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Excel Agent"
+                        },
+                        {
                             "href": "a_z_names_terms/e/exchange",
                             "permissioned-type": "private",
                             "toc_title": "Exchange"
@@ -3978,6 +4038,11 @@
                             "href": "a_z_names_terms/f/face-recognition",
                             "permissioned-type": "private",
                             "toc_title": "face recognition"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/factors",
+                            "permissioned-type": "private",
+                            "toc_title": "factors"
                         },
                         {
                             "href": "a_z_names_terms/f/family",
@@ -4615,6 +4680,11 @@
                             "toc_title": "info"
                         },
                         {
+                            "href": "a_z_names_terms/i/information-worker",
+                            "permissioned-type": "private",
+                            "toc_title": "information worker"
+                        },
+                        {
                             "href": "a_z_names_terms/i/infopath",
                             "permissioned-type": "private",
                             "toc_title": "InfoPath"
@@ -4830,6 +4900,16 @@
                             "toc_title": "label"
                         },
                         {
+                            "href": "a_z_names_terms/l/lakebase",
+                            "permissioned-type": "private",
+                            "toc_title": "Lakebase"
+                        },
+                        {
+                            "href": "a_z_names_terms/l/lakeguard",
+                            "permissioned-type": "private",
+                            "toc_title": "Lakeguard"
+                        },
+                        {
                             "href": "a_z_names_terms/l/lakehouse",
                             "permissioned-type": "private",
                             "toc_title": "lakehouse"
@@ -4953,6 +5033,11 @@
                             "href": "a_z_names_terms/l/live-tiles",
                             "permissioned-type": "private",
                             "toc_title": "Live Tiles"
+                        },
+                        {
+                            "href": "a_z_names_terms/l/llm-speech",
+                            "permissioned-type": "private",
+                            "toc_title": "LLM Speech"
                         },
                         {
                             "href": "a_z_names_terms/l/load-balancer",
@@ -5289,6 +5374,11 @@
                                             "toc_title": "Community Agent"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/designer",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Designer"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/facilitator",
                                             "permissioned-type": "private",
                                             "toc_title": "Facilitator"
@@ -5304,9 +5394,19 @@
                                             "toc_title": "Knowledge Agent"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/learning-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Learning Agent"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/microsoft-365-admin",
                                             "permissioned-type": "private",
                                             "toc_title": "Microsoft 365 admin"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/people-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "People Agent"
                                         },
                                         {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/project-manager",
@@ -5319,14 +5419,34 @@
                                             "toc_title": "Researcher"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/sharepoint-admin-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "SharePoint Admin Agent"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/sales-development-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Sales Development Agent"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/surveys-agent",
                                             "permissioned-type": "private",
                                             "toc_title": "Surveys Agent"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/teams-admin-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Teams Admin Agent"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/workflows-agent",
                                             "permissioned-type": "private",
                                             "toc_title": "Workflows Agent"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/workforce-insights-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Workforce Insights Agent"
                                         }
                                     ],
                                     "toc_title": "Microsoft 365 agents"
@@ -6232,9 +6352,44 @@
                                     "toc_title": "Alert Triage Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/app-lifecycle-management-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "App Lifecycle Management Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/change-review-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Change Review Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/conditional-access-optimization-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Conditional Access Optimization Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/data-security-posture-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Data Security Posture Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/data-security-triage-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Data Security Triage Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/device-offboarding-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Device Offboarding Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/dynamic-threat-detection-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Dynamic Threat Detection Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/identity-risk-management-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Identity Risk Management Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/phishing-triage-agent",
@@ -6242,9 +6397,19 @@
                                     "toc_title": "Phishing Triage Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/policy-configuration-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Policy Configuration Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/threat-intelligence-briefing-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Threat Intelligence Briefing Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/threat-hunting-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Threat Hunting Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/vulnerability-remediation-agent",
@@ -6800,6 +6965,11 @@
                             "toc_title": "obsolete"
                         },
                         {
+                            "href": "a_z_names_terms/o/offboard",
+                            "permissioned-type": "private",
+                            "toc_title": "offboard, employee offboarding"
+                        },
+                        {
                             "href": "a_z_names_terms/o/offer",
                             "permissioned-type": "private",
                             "toc_title": "offer"
@@ -7235,6 +7405,11 @@
                             "toc_title": "personalize"
                         },
                         {
+                            "href": "a_z_names_terms/p/personification",
+                            "permissioned-type": "private",
+                            "toc_title": "personification"
+                        },
+                        {
                             "href": "a_z_names_terms/p/phishing",
                             "permissioned-type": "private",
                             "toc_title": "phishing"
@@ -7483,6 +7658,11 @@
                             "href": "a_z_names_terms/p/powerpoint",
                             "permissioned-type": "private",
                             "toc_title": "PowerPoint"
+                        },
+                        {
+                            "href": "a_z_names_terms/p/powerpoint-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "PowerPoint Agent"
                         },
                         {
                             "href": "a_z_names_terms/p/powershell",
@@ -7930,6 +8110,11 @@
                             "toc_title": "record"
                         },
                         {
+                            "href": "a_z_names_terms/r/recoverability-recoverable",
+                            "permissioned-type": "private",
+                            "toc_title": "recoverability, recoverable"
+                        },
+                        {
                             "href": "a_z_names_terms/r/recovery-email",
                             "permissioned-type": "private",
                             "toc_title": "recovery email"
@@ -7993,6 +8178,11 @@
                             "href": "a_z_names_terms/r/reliability-and-resilience-terms",
                             "permissioned-type": "private",
                             "toc_title": "reliability and resilience terms"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/reliability-reliable",
+                            "permissioned-type": "private",
+                            "toc_title": "reliability, reliable"
                         },
                         {
                             "href": "a_z_names_terms/r/remediation",
@@ -8068,6 +8258,11 @@
                             "href": "a_z_names_terms/r/reset-to-default",
                             "permissioned-type": "private",
                             "toc_title": "reset to default"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/resiliency-resilient",
+                            "permissioned-type": "private",
+                            "toc_title": "resiliency, resilient"
                         },
                         {
                             "href": "a_z_names_terms/r/resource",
@@ -10020,6 +10215,11 @@
                             "toc_title": "Word"
                         },
                         {
+                            "href": "a_z_names_terms/w/word-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Word Agent"
+                        },
+                        {
                             "href": "a_z_names_terms/w/work-iq",
                             "permissioned-type": "private",
                             "toc_title": "Work IQ"
@@ -10098,6 +10298,21 @@
                             "href": "a_z_names_terms/z/zip-unzip",
                             "permissioned-type": "private",
                             "toc_title": "zip, unzip"
+                        },
+                        {
+                            "href": "a_z_names_terms/z/zonal",
+                            "permissioned-type": "private",
+                            "toc_title": "zonal"
+                        },
+                        {
+                            "href": "a_z_names_terms/z/zone-redundant-zone-redundancy",
+                            "permissioned-type": "private",
+                            "toc_title": "zone-redundant, zone redundancy"
+                        },
+                        {
+                            "href": "a_z_names_terms/z/zone-resilient-zone-resiliency",
+                            "permissioned-type": "private",
+                            "toc_title": "zone-resilient, zone resiliency"
                         }
                     ],
                     "toc_title": "Z"
@@ -10565,6 +10780,69 @@
         {
             "children": [
                 {
+                    "toc_title": "Product and feature names"
+                },
+                {
+                    "href": "product-names/product-names",
+                    "permissioned-type": "private",
+                    "toc_title": "Product names"
+                },
+                {
+                    "href": "product-names/new-product-and-feature-names",
+                    "permissioned-type": "private",
+                    "toc_title": "New product and feature names"
+                },
+                {
+                    "href": "product-names/referring-to-azure-product-names",
+                    "permissioned-type": "private",
+                    "toc_title": "Referring to Azure product names"
+                },
+                {
+                    "href": "product-names/referring-to-dynamics-365-names",
+                    "permissioned-type": "private",
+                    "toc_title": "Referring to Dynamics 365 names"
+                },
+                {
+                    "href": "product-names/referring-to-power-platform-product-names",
+                    "permissioned-type": "private",
+                    "toc_title": "Referring to Power Platform product names"
+                },
+                {
+                    "children": [
+                        {
+                            "href": "product-and-feature-names/microsoft-365/product-and-feature-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Product and feature names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/basic-attribution-guidelines",
+                            "permissioned-type": "private",
+                            "toc_title": "Basic attribution guidelines"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/feature-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Feature names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/microsoft-365-sku-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 SKU names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/microsoft-365-app-names",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 app names"
+                        },
+                        {
+                            "href": "product-and-feature-names/microsoft-365/office-to-microsoft-365-transition",
+                            "permissioned-type": "private",
+                            "toc_title": "Office to Microsoft 365 transition"
+                        }
+                    ],
+                    "toc_title": "Referring to Microsoft 365 product names"
+                },
+                {
                     "href": "naming/naming",
                     "permissioned-type": "private",
                     "toc_title": "Naming"
@@ -10871,71 +11149,6 @@
             "href": "phone-numbers",
             "permissioned-type": "private",
             "toc_title": "Phone numbers"
-        },
-        {
-            "children": [
-                {
-                    "href": "product-names/product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Product names"
-                },
-                {
-                    "href": "product-names/new-product-and-feature-names",
-                    "permissioned-type": "private",
-                    "toc_title": "New product and feature names"
-                },
-                {
-                    "href": "product-names/referring-to-azure-product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Azure product names"
-                },
-                {
-                    "href": "product-names/referring-to-dynamics-365-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Dynamics 365 names"
-                },
-                {
-                    "href": "product-names/referring-to-power-platform-product-names",
-                    "permissioned-type": "private",
-                    "toc_title": "Referring to Power Platform product names"
-                },
-                {
-                    "children": [
-                        {
-                            "href": "product-and-feature-names/microsoft-365/product-and-feature-names",
-                            "permissioned-type": "private",
-                            "toc_title": "Product and feature names"
-                        },
-                        {
-                            "href": "product-and-feature-names/microsoft-365/basic-attribution-guidelines",
-                            "permissioned-type": "private",
-                            "toc_title": "Basic attribution guidelines"
-                        },
-                        {
-                            "href": "product-and-feature-names/microsoft-365/feature-names",
-                            "permissioned-type": "private",
-                            "toc_title": "Feature names"
-                        },
-                        {
-                            "href": "product-and-feature-names/microsoft-365/microsoft-365-sku-names",
-                            "permissioned-type": "private",
-                            "toc_title": "Microsoft 365 SKU names"
-                        },
-                        {
-                            "href": "product-and-feature-names/microsoft-365/microsoft-365-app-names",
-                            "permissioned-type": "private",
-                            "toc_title": "Microsoft 365 app names"
-                        },
-                        {
-                            "href": "product-and-feature-names/microsoft-365/office-to-microsoft-365-transition",
-                            "permissioned-type": "private",
-                            "toc_title": "Office to Microsoft 365 transition"
-                        }
-                    ],
-                    "toc_title": "Referring to Microsoft 365 product names"
-                }
-            ],
-            "toc_title": "Product and feature names"
         },
         {
             "children": [
@@ -14154,7 +14367,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2696,
+        "count_of_node_with_href": 2739,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

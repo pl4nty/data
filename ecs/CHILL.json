@@ -2226,6 +2226,116 @@
             }
         }
     },
+    "ChillPPACInfra": {
+        "Floodgate_Campaign_PowerPlatformAdminCenter.b303fe86-2a21-4324-ad49-6a780e52a0f8": {
+            "CampaignId": "b303fe86-2a21-4324-ad49-6a780e52a0f8",
+            "EndTimeUtc": "2026-12-31T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2025-12-28T08:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReadyToPrompt",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [
+                        {
+                            "conditions": [
+                                {
+                                    "conditionType": "Equals",
+                                    "conditionValue": 4,
+                                    "sourceId": "rating1",
+                                    "sourcePageIndex": 0,
+                                    "sourceType": "Question"
+                                }
+                            ],
+                            "targets": [
+                                {
+                                    "hiddenPageIndices": [
+                                        1
+                                    ],
+                                    "type": "Page"
+                                }
+                            ]
+                        }
+                    ],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all likely",
+                                    "questionLabel": "How likely are you to recommend Power Platform Admin Center to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/b303fe86-2a21-4324-ad49-6a780e52a0f8/afdbbd9d-b8a0-46d0-8302-6391851ab237/Web-PowerPlatformAdminCenter/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillPowerApps": {
         "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
             "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
