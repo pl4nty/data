@@ -442,6 +442,7 @@
         "RolloutGroupV2": "G4"
     },
     "Sidecar_Mac": {
+        "app_policy_reporting_retry": true,
         "customer_script_timeout": 3600,
         "internal_script_timeout": 3600,
         "store_adhoc_script_result": true,

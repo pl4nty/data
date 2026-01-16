@@ -1156,7 +1156,11 @@
             "PlaceDataQuery",
             "PlaceAvailabilityWithModeQuery",
             "MeetingInsightsProviderMutation",
-            "CopilotTuningAgentQuery"
+            "CopilotTuningAgentQuery",
+            "SkillsQuery",
+            "SkillsSearchSuggestionsQuery",
+            "useSkillActionMutation",
+            "SkillsSnapshotBodyRefetchQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
