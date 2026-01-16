@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260113.8.0",
+        "CalendarCompanionDFVersion": "1.20260114.8.0",
         "CalendarCompanionMsitVersion": "1.20260109.9.0",
         "CalendarCompanionProdVersion": "1.20251217.9.0",
         "CompanionRing": "Prod",
@@ -1626,7 +1626,7 @@
             "Notifications": 5000
         },
         "SkypeContactsUrl": "https://contacts.skype.com:8443/contacts/v3/scdlookup",
-        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting",
+        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting,CloseColleague:Badge",
         "StreamPreviewTokenAudience": "https://*.microsoftstream.com",
         "SubstrateSearchInsightsRetrieverSettings": {
             "EnabledTypes": {

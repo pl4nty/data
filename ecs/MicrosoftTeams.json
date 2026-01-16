@@ -793,13 +793,6 @@
             }
         }
     },
-    "PstnSba": {
-        "LogsUpload": {
-            "BlobStorageEnabled": "false",
-            "Enabled": "false",
-            "GenevaEnabled": "false"
-        }
-    },
     "Segmentation": {
         "AudienceGroup": "general",
         "Cloud": "Public",
