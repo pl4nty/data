@@ -26,7 +26,7 @@ do
   if l_0_3 and #l_0_3 > 0 then
     local l_0_4 = {}
     for l_0_8,l_0_9 in ipairs(l_0_3) do
-      local l_0_10, l_0_11 = (MpCommon.StringRegExpSearch)("(alf:|slf:|tel:|detection:)", (string.lower)(l_0_9))
+      local l_0_10, l_0_11 = (MpCommon.StringRegExpSearch)("(alf:|slf:|tel:|detection:|HSTR:DefenderReg)", (string.lower)(l_0_9))
       if l_0_10 and #l_0_4 < 15 and l_0_9 ~= "Detection:FriendlyFiles" then
         (table.insert)(l_0_4, l_0_9)
       end

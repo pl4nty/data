@@ -64,7 +64,7 @@ if l_0_0 > 60 then
                   local l_0_34 = nil
                   local l_0_35 = table.insert
                   local l_0_36 = l_0_22
-                  l_0_35(l_0_36, {FileName = l_0_11, FolderPath = l_0_12, FileSize = l_0_17, Magic = l_0_18, Entropy100 = l_0_19})
+                  l_0_35(l_0_36, {FileName = l_0_11, FolderPath = l_0_12, FileSize = l_0_17, Magic = l_0_18, Entropy100 = l_0_19, RanExt = l_0_15})
                   l_0_20 = l_0_20 + 1
                   l_0_35 = l_0_9
                   l_0_36 = "|"
@@ -77,13 +77,27 @@ if l_0_0 > 60 then
                     l_0_35 = l_0_35.add_related_string
                     l_0_36 = "GenCRansom_encryptedData"
                     l_0_35(l_0_36, safeJsonSerialize(l_0_22), bm.RelatedStringBMReport)
+                    l_0_35 = bm
+                    l_0_35 = l_0_35.add_related_string
+                    l_0_36 = "GenericRansomware:Extension"
+                    l_0_35(l_0_36, l_0_15, bm.RelatedStringBMReport)
+                    l_0_35 = bm
+                    l_0_35 = l_0_35.trigger_sig
+                    l_0_36 = "GenericRansomware:Extension"
+                    l_0_35(l_0_36, l_0_15)
+                    l_0_35 = sms_untrusted_process
+                    l_0_35()
+                    l_0_35 = bm
+                    l_0_35 = l_0_35.add_action
+                    l_0_36 = "SmsAsyncScanEvent"
+                    l_0_35(l_0_36, 100)
                     l_0_35 = pcall
                     l_0_36 = reportBmInfo
                     l_0_35 = l_0_35(l_0_36)
-                    -- DECOMPILER ERROR at PC242: Overwrote pending register: R35 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC262: Overwrote pending register: R35 in 'AssignReg'
 
                     if not l_0_35 and l_0_36 then
-                      (bm.add_related_string)("bmInfoFailReason", tostring(R35_PC240), R35_PC240)
+                      (bm.add_related_string)("bmInfoFailReason", tostring(R35_PC260), R35_PC260)
                     end
                     reportTimingData()
                     return mp.INFECTED
@@ -99,7 +113,7 @@ if l_0_0 > 60 then
 end
 do
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC253: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC273: freeLocal<0 in 'ReleaseLocals'
 
 end
 
