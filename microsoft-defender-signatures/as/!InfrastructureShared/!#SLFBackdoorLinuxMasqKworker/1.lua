@@ -7,7 +7,7 @@ local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FN
 if l_0_1 == nil or l_0_1 == "" or l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "kworker", 1, true) then
+if l_0_1:match("^%[?kworker") then
   return mp.INFECTED
 end
 return mp.CLEAN
