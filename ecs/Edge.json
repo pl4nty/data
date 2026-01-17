@@ -29,7 +29,7 @@
             "parameters": [
                 {
                     "name": "Browser Version",
-                    "value": "143.0.3650.96"
+                    "value": "144.0.0000.00"
                 }
             ]
         },
@@ -61,11 +61,6 @@
                     "name": "UnsecureSiteAllTrigger",
                     "value": "true"
                 }
-            ]
-        },
-        "SingleClientHistoryRollback": {
-            "disableFeatures": [
-                "msEdgeSyncSingleDeviceHistory"
             ]
         }
     },
