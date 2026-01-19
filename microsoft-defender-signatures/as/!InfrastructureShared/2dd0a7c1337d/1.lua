@@ -43,7 +43,7 @@ do
     ;
     (mp.readprotection)(true)
     local l_0_9 = nil
-    set_research_data("EncodedBytes", (MpCommon.Base64Encode)((mp.readfile)(0, 256)), false)
+    set_research_data("EncodedBytes", (MpCommon.Base64Encode)((mp.readfile)(0, 512)), false)
     return mp.INFECTED
   end
 end
