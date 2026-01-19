@@ -1976,45 +1976,76 @@ table_distinct_values = function(l_73_0)
   return l_73_1
 end
 
-get_filepaths_from_string = function(l_74_0)
+get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
   -- function num : 0_73
   if l_74_0 == nil or type(l_74_0) ~= "string" or #l_74_0 <= 3 then
     return 
   end
-  local l_74_1 = (mp.GetExecutablesFromCommandLine)(l_74_0)
-  if l_74_1 == nil or type(l_74_1) ~= "table" then
-    l_74_1 = {}
+  local l_74_3 = (mp.GetExecutablesFromCommandLine)(l_74_0)
+  if l_74_3 == nil or type(l_74_3) ~= "table" then
+    l_74_3 = {}
   end
-  local l_74_2 = (string.gmatch)(l_74_0, "(.:\\.-%.[a-z]+)")
-  for l_74_6 in l_74_2 do
-    (table.insert)(l_74_1, l_74_6)
+  local l_74_4 = (string.gmatch)(l_74_0, "(.:\\.-%.[a-z]+)")
+  for l_74_8 in l_74_4 do
+    (table.insert)(l_74_3, l_74_8)
   end
-  local l_74_7 = (string.gmatch)(l_74_0, "(%%.-%.[a-z]+)")
-  for l_74_11 in l_74_7 do
-    local l_74_12 = (mp.ContextualExpandEnvironmentVariables)(l_74_11)
-    if l_74_12 ~= nil then
-      (table.insert)(l_74_1, l_74_12)
+  local l_74_9 = (string.gmatch)(l_74_0, "(%%.-%.[a-z]+)")
+  for l_74_13 in l_74_9 do
+    local l_74_14, l_74_15 = pcall(mp.ContextualExpandEnvironmentVariables, l_74_13)
+    if not l_74_14 then
+      l_74_15 = (MpCommon.ExpandEnvironmentVariables)(l_74_13)
+    end
+    if l_74_15 ~= nil then
+      (table.insert)(l_74_3, l_74_15)
     end
   end
-  local l_74_13 = (string.gmatch)(l_74_0, "[%s,]?(.-%.%a%a%a?)[%s,]?")
-  local l_74_14 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
-  for l_74_18 in l_74_13 do
-    if (string.find)(l_74_18, "\\", 1, true) == nil then
-      local l_74_19 = l_74_14 .. "\\system32\\" .. l_74_18
-      ;
-      (table.insert)(l_74_1, l_74_19)
-      local l_74_20 = l_74_14 .. "\\" .. l_74_18
-      ;
-      (table.insert)(l_74_1, l_74_20)
-      local l_74_21 = l_74_14 .. "\\system32\\wbem\\" .. l_74_18
-      ;
-      (table.insert)(l_74_1, l_74_21)
-      local l_74_22 = l_74_14 .. "\\system32\\windowspowershell\\v1.0\\" .. l_74_18
-      ;
-      (table.insert)(l_74_1, l_74_22)
+  local l_74_16 = false
+  local l_74_17 = false
+  if l_74_1 ~= nil and #l_74_1 > 3 then
+    l_74_16 = true
+    if (string.find)(l_74_1, "%", 1, true) then
+      l_74_1 = (MpCommon.ExpandEnvironmentVariables)(l_74_1)
     end
+    l_74_17 = (string.sub)(l_74_1, -1) == "\\"
   end
-  return l_74_1
+  local l_74_18 = (string.gmatch)(l_74_0, "[\'\"%s,]?(.-%.%a%a%a?)[\"%s,]?")
+  do
+    local l_74_19 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
+    for l_74_23 in l_74_18 do
+      if (string.find)(l_74_23, "\\", 1, true) == nil then
+        if l_74_2 ~= true then
+          local l_74_24 = l_74_19 .. "\\system32\\" .. l_74_23
+          ;
+          (table.insert)(l_74_3, l_74_24)
+          local l_74_25 = l_74_19 .. "\\" .. l_74_23
+          ;
+          (table.insert)(l_74_3, l_74_25)
+          local l_74_26 = l_74_19 .. "\\system32\\wbem\\" .. l_74_23
+          ;
+          (table.insert)(l_74_3, l_74_26)
+          local l_74_27 = l_74_19 .. "\\system32\\windowspowershell\\v1.0\\" .. l_74_23
+          ;
+          (table.insert)(l_74_3, l_74_27)
+          local l_74_28 = l_74_19 .. "\\syswow64\\" .. l_74_23
+          ;
+          (table.insert)(l_74_3, l_74_28)
+        end
+        if l_74_16 == true then
+          if l_74_17 == true then
+            local l_74_29 = l_74_1 .. l_74_23
+            ;
+            (table.insert)(l_74_3, l_74_29)
+          else
+            local l_74_30 = l_74_1 .. "\\" .. l_74_23
+            ;
+            (table.insert)(l_74_3, l_74_30)
+          end
+        end
+      end
+    end
+    do return l_74_3 end
+    -- DECOMPILER ERROR: 5 unprocessed JMP targets
+  end
 end
 
 IsProcNameInParentProcessTree = function(l_75_0, l_75_1, l_75_2)
@@ -2857,6 +2888,96 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["wptsextensions.dll"] = mp.LOWFI
   l_88_1["soldier.dll"] = mp.LOWFI
   return l_88_1[l_88_0]
+end
+
+isCommonScheduledTaskCommand = function(l_89_0)
+  -- function num : 0_88
+  if l_89_0 == nil or #l_89_0 <= 5 then
+    return 
+  end
+  l_89_0 = (string.lower)(l_89_0)
+  local l_89_1 = {}
+  local l_89_2 = {}
+  -- DECOMPILER ERROR at PC15: No list found for R2 , SetList fails
+
+  -- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R4 in 'AssignReg'
+
+  l_89_1["C:\\Windows\\System32\\gpupdate.exe"], l_89_2 = l_89_2, {" /ua /installsource scheduler", " /c"}
+  l_89_1["C:\\Windows\\System32\\taskhostw.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\wermgr.exe"], l_89_2 = l_89_2, {" -upload"}
+  l_89_1["\\Google\\GoogleUpdater\\"], l_89_2 = l_89_2, {" --wake --system"}
+  l_89_1["\\Microsoft Intune Management Extension\\ClientCertCheck.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\wsqmcons.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\appidcertstorecheck.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\Common Files\\microsoft shared\\ClickToRun\\officesvcmgr.exe"], l_89_2 = l_89_2, {" /checkin"}
+  l_89_1["C:\\Windows\\System32\\UsoClient.exe"], l_89_2 = l_89_2, {" ReportPolicies", " StartScan", " StartWork"}
+  l_89_1["\\Common Files\\microsoft shared\\ClickToRun\\OfficeC2RClient.exe"], l_89_2 = l_89_2, {" /frequentupdate SCHEDULEDTASK ", " /WatchService"}
+  l_89_1["\\Common Files\\Adobe\\ARM\\1.0\\AdobeARM.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\raserver.exe"], l_89_2 = l_89_2, {" /offerraupdate"}
+  l_89_1["\\Microsoft Office\\root\\Office16\\SDXHelper.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\rundll32.exe"], l_89_2 = l_89_2, {" C:\\WINDOWS\\system32\\PcaSvc.dll,PcaPatchSdbTask", " C:\\WINDOWS\\system32\\Windows.StateRepositoryClient.dll,StateRepositoryDoMaintenanceTasks", " C:\\WINDOWS\\system32\\CapabilityAccessManager.dll,CapabilityAccessManagerDoStoreMaintenance", " Startupscan.dll,SusRunTask"}
+  l_89_1["C:\\Windows\\System32\\dsregcmd.exe"], l_89_2 = l_89_2, {" $(Arg0) $(Arg1) $(Arg2)"}
+  l_89_1["C:\\Windows\\System32\\AppHostRegistrationVerifier.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\sc.exe"], l_89_2 = l_89_2, {" start InventorySvc", " start pushtoinstall registration", " start w32time task_started", " start wuauserv", " start pushtoinstall login"}
+  l_89_1["\\appdata\\local\\microsoft\\onedrive\\onedrivestandaloneupdater.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\UCPDMgr.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\DeviceCensus.exe"], l_89_2 = l_89_2, {" SystemCxt", " UserCxt"}
+  l_89_1["C:\\Windows\\System32\\dstokenclean.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\appidpolicyconverter.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\DiskSnapshot.exe"], l_89_2 = l_89_2, {" -z"}
+  l_89_1["C:\\Windows\\System32\\Speech_OneCore\\common\\SpeechModelDownload.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\Windows Autopatch Client Broker\\ClientBroker\\ClientBroker.exe"], l_89_2 = l_89_2, {" poll"}
+  l_89_1["C:\\Windows\\System32\\dmclient.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\ClipRenew.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\"], l_89_2 = l_89_2, {" -IdleTask -TaskName WdVerification", " -IdleTask -TaskName WdCacheMaintenance", " -IdleTask -TaskName WdCleanup"}
+  l_89_1["C:\\Windows\\System32\\UIEOrchestrator.exe"], l_89_2 = l_89_2, {" /SendHeartbeat"}
+  l_89_1["C:\\Windows\\System32\\hvsievaluator.exe"], l_89_2 = l_89_2, {" CSP"}
+  l_89_1["\\Microsoft Intune Management Extension\\ClientHealthEval.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\CCM\\CcmEval.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\cmd.exe"], l_89_2 = l_89_2, {"windowsdefenderatponboardingscript.cmd", "defenderatponboarding.cmd", "\\Utility\\GPODATA\\"}
+  l_89_1["C:\\Windows\\System32\\cleanmgr.exe"], l_89_2 = l_89_2, {" /autocleanstoragesense /d C:"}
+  l_89_1["\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\opushutil.exe"], l_89_2 = l_89_2, {" /pushregistration"}
+  l_89_1["\\Microsoft OneDrive\\OneDriveStandaloneUpdater.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\Microsoft.Data.UsageAndQualityInsights.MaintenanceTask.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\MusNotification.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\lpremove.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\LocationNotificationWindows.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\RUXIM\\PLUGScheduler.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\UCConfigTask.exe"], l_89_2 = l_89_2, {}
+  l_89_1["C:\\Windows\\System32\\msfeedssync.exe"], l_89_2 = l_89_2, {" sync"}
+  l_89_1["C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"], l_89_2 = l_89_2, {"\\Cloud\\DSREGCMD\' ; $DPath = $RPath.Replace(\'HKEY_LOCAL_MACHINE\',\'HKLM:\') ; Remove-Item -Path $DPath -Recurse -EA 0 ; $pattern = \' *[A-z]+ : [A-z0-9\\{\\}]+ *\' ; $dsregcmd = dsregcmd /status ", "\\Cloud\\Intune\' ; $DPath = $RPath.Replace(\'HKEY_LOCAL_MACHINE\',\'HKLM:\') ; Remove-ItemProperty -Path $DPath -Name \'*\' -EA 0 ; $QPath = \'HKLM:\\SOFTWARE\\Microsoft\\Enrollments\'"}
+  l_89_1["C:\\Windows\\System32\\SrTasks.exe"], l_89_2 = l_89_2, {" ExecuteScheduledSPPCreation"}
+  l_89_1["\\util\\ServiceExecution.exe"], l_89_2 = l_89_2, {"http://localhost/WebAPI/Utilities/support/DefenderDatUpdate"}
+  l_89_1["C:\\Windows\\System32\\dxgiadaptercache.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\Bin\\EpicHyperdriveTempDataCleanup.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Office16\\ActionsServer\\ActionsServer.exe"], l_89_2 = l_89_2, {" wacheck"}
+  l_89_1["C:\\Windows\\System32\\CompatTelRunner.exe"], l_89_2 = l_89_2, {}
+  l_89_1["\\ScheduleEventAction.exe"], l_89_2 = l_89_2, {" GenericMessagingAddin_Pulsation"}
+  l_89_1["C:\\Windows\\System32\\provtool.exe"], l_89_2 = l_89_2, {"/turn 5 /source LogonIdleTask"}
+  l_89_1["\\Thycotic\\Agents\\Agent\\TaskExecutor.exe"], l_89_2 = l_89_2, {" /ItemId:db9484d4-5488-4a63-98a1-368bd3b988e8 /DelayForMax:7200"}
+  l_89_1["C:\\Windows\\System32\\wscript.exe"], l_89_2 = l_89_2, {"C:\\Windows\\Packagelogs\\AADBrokerPlugIn_Remediation\\"}
+  l_89_1["\\ManageEngine\\UEMS_Agent\\bin\\dcagentupgrader.exe"], l_89_2 = l_89_2, {" Task"}
+  l_89_2 = pairs
+  l_89_2 = l_89_2(l_89_1)
+  for l_89_6,i_2 in l_89_2 do
+    if l_89_5 ~= nil and (string.find)(l_89_0, (string.lower)(l_89_5), 1, true) then
+      if #l_89_6 == 0 then
+        return true
+      else
+        for l_89_10,l_89_11 in ipairs(l_89_6) do
+          if l_89_11 ~= nil and (string.find)(l_89_0, (string.lower)(l_89_11), 1, true) then
+            return true
+          end
+        end
+        return false
+      end
+    end
+  end
+  do return false end
+  -- DECOMPILER ERROR at PC254: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+
 end
 
 
