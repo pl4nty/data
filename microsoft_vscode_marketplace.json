@@ -317,6 +317,13 @@
                 "id": "JuliaComputing.dyad-studio"
             }
         },
+        "JuliaComputing.pluto-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Advanced Pluto Notebook for VSCode",
+                "id": "juliapluto-pankgeorg.advanced-vscode-extension"
+            }
+        },
         "KhanhTranQuoc.holistics-aml-extension": {
             "disallowInstall": true,
             "extension": {
@@ -964,6 +971,13 @@
             }
         },
         "ctf0.htmlhint": true,
+        "cweijan.vscode-typora": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Office Viewer",
+                "id": "cweijan.vscode-office"
+            }
+        },
         "dalance.vscode-veryl": {
             "disallowInstall": true,
             "extension": {
@@ -2058,6 +2072,11 @@
         "utsavm9.c-cpp-flag-debugging": true,
         "v-test-publisher.vscode-azure-functions-remote-web-test": true,
         "virgilsisoe.python-auto-import": true,
+        "vknabel.swift-coverage": true,
+        "vknabel.vscode-apple-swift-format": true,
+        "vknabel.vscode-lithia": true,
+        "vknabel.vscode-swiftformat": true,
+        "vknabel.vscode-swiftlint": true,
         "vsciot-vscode.azure-iot-tools": true,
         "vsciot-vscode.vscode-arduino": true,
         "vsciot-vscode.vscode-iot-device-cube": true,

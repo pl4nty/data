@@ -60,6 +60,7 @@
         "enableListClientRendering": true,
         "enableMSBusinessAppsLaunchEventNotification": true,
         "enableManageCss": true,
+        "enableMetadataDiff": true,
         "enableMoveRedirectLogic": true,
         "enableNL2TextErrorFix": true,
         "enableNewEntityListModal": true,

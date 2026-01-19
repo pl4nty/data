@@ -470,6 +470,7 @@
         "EnableHideMoveHostPoolActionHistory": true,
         "EnableHidePreviewString": false,
         "EnableHostBasedEncryption": true,
+        "EnableHostPoolBackfillWorkspaceHoboTag": true,
         "EnableIWSPremiumDR": true,
         "EnableIdempotentCpcIdGeneration": true,
         "EnableIgnoreUnhealthySnapshotOnUX": true,
