@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\73b342536de8\1.luac 
+-- Command line: lua\!InfrastructureShared\146b312c936cf\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -15,9 +15,9 @@ if IsExcludedByCmdlineMacOS(l_0_3) or IsExcludedByImagePathMacOS(l_0_1) then
 end
 local l_0_4 = nil
 local l_0_5 = 0
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil and (this_sigattrlog[3]).np2 ~= nil then
-  l_0_4 = (this_sigattrlog[3]).utf8p1
-  l_0_5 = (this_sigattrlog[3]).np2
+if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p1 ~= nil and (this_sigattrlog[8]).np2 ~= nil then
+  l_0_4 = (this_sigattrlog[8]).utf8p1
+  l_0_5 = (this_sigattrlog[8]).np2
 end
 if l_0_4 == nil or l_0_5 == nil then
   return mp.CLEAN
