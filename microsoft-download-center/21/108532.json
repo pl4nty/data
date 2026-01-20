@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Local with disconnected operations v1.2.2.0",
+    "downloadDescription": "Azure Local with disconnected operations v1.2.2.0 SCOM MP",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Local with disconnected operations management pack guide v1.2.2.0.docx",
+            "url": "https://download.microsoft.com/download/cd5a8cd3-6910-4416-9fc7-2d39b506bba8/Azure Local with disconnected operations management pack guide v1.2.2.0.docx",
+            "size": "566784",
+            "version": "1.2.2.0",
+            "datePublished": "1/20/2026 4:24:52 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Azure Local with disconnected operations.msi",
+            "url": "https://download.microsoft.com/download/cd5a8cd3-6910-4416-9fc7-2d39b506bba8/Microsoft System Center Management Pack for Azure Local with disconnected operations.msi",
+            "size": "2273280",
+            "version": "1.2.2.0",
+            "datePublished": "1/20/2026 4:24:52 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Version 1.2.2.0 of the Management Pack for Azure Local with disconnected operations. This version is only applicable for SCOM 2025 Update Rollout 1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.2.0",
+    "detailsSection_file_name": [
+        "Azure Local with disconnected operations management pack guide v1.2.2.0.docx",
+        "Microsoft System Center Management Pack for Azure Local with disconnected operations.msi"
+    ],
+    "detailsSection_file_size": [
+        "553.5 KB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "1/20/2026",
+    "systemRequirementsSection": "\u2022\tMicrosoft Azure Local with disconnected operations API. You need to have Microsoft Azure Local with the corresponding API installed.\n\u2022\tOperations Manager 2016 or later. You need to have an Operations Manager 2016 or later environment installed external to Microsoft Azure Local.\n\u2022\tMicrosoft Azure Connection. The management server requires communication with Microsoft Azure. In this case, the workstation with the Operations Manager console, which will be used to configure Azure Local monitoring, must have connection to the Internet during the initial configuration process.\n\u2022\t.NET framework 4.6.2 or later. All management servers in your management server pool and the workstation with the Operations Manager console must have .NET framework 4.6.2 or later installed. \n\u2022\tAzure Local with disconnected operations SSL certificate. The same SSL certificate must be installed in the Trusted Root Certificate Authority Store on the computer with the management pack installed, that was provided for the Microsoft Azure Local deployment.\n\u2022\tService Principal. The SPN that will be used in the MP should be created.\n\u2022\tAzure Local with disconnected operations resource that is going to be monitored.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Guide doc provided: Azure Local with disconnected operations management pack guide v1.2.2.0.docx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108532",
+    "downloadPreload": true
+}
