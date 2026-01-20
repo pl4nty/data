@@ -162,12 +162,12 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260114.8.0",
-        "CalendarCompanionMsitVersion": "1.20260109.9.0",
-        "CalendarCompanionProdVersion": "1.20251217.9.0",
+        "CalendarCompanionDFVersion": "1.20260118.3.0",
+        "CalendarCompanionMsitVersion": "1.20260113.8.0",
+        "CalendarCompanionProdVersion": "1.20260109.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20251217.9.0",
+        "HostAppVersion": "1.20260109.9.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -2007,10 +2007,10 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260113.9.0",
+        "PeopleInTaskbarDFVersion": "1.20260118.3.0",
         "PeopleInTaskbarMsitVersion": "1.20260110.4.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
-        "PeopleInTaskbarVersion": "1.20251210.1.0",
+        "PeopleInTaskbarVersion": "1.20251217.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
