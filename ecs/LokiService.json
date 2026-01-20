@@ -451,7 +451,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260105.1.0",
+        "LpcVersion": "1.20260108.2.1",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -2192,6 +2192,7 @@
         "suspensionManagerParameters": {
             "dismissSuspensionDelaySeconds": 180
         },
+        "topWithPinnedIndependentSectionHandling": 1,
         "updatedFAQText_shared": 1
     },
     "Segmentation": {
