@@ -18,7 +18,7 @@
     "Client_PerfSnapParticipationRate": "0.01",
     "Client_ProgressHungBackgrndTimeoutMsecs": "10800000",
     "Client_ProgressHungForegrndTimeoutMsecs": "1800000",
-    "Client_RegisteredCallersFilterList": "BeginLoadRange.*,.*CheckReachable,DoLoadFile,EdgeUpdate DO Job,IntuneAppDownload,MDMSW Job,Microsoft Component Updater DO Job,Microsoft Office Click-to-Run,MLModelDownloadJob,MSIX HttpsDataSource Download,Msk8sDownloadAgent,Windows Dlp Manager,WSXExperiencePackDownloadJob,WU Client Download,Xbox XVC Streaming,Windows Recovery Media Creator",
+    "Client_RegisteredCallersFilterList": "BeginLoadRange.*,.*CheckReachable,DoLoadFile,EdgeUpdate DO Job,IntuneAppDownload,MDMSW Job,Microsoft Component Updater DO Job,Microsoft Office Click-to-Run,MLModelDownloadJob,MSIX HttpsDataSource Download,Msk8sDownloadAgent,Windows Dlp Manager,WSXExperiencePackDownloadJob,WU Client Download,Xbox XVC Streaming,Windows Recovery Media Creator,Azure Arc",
     "Client_RegisteredHostNames": "*.teams.static.microsoft,*.teams.cdn.live.net,*.m365.static.microsoft",
     "Client_RestrictPeerSelectionBy": "0",
     "Client_ServicesCertValidationCn": "1",
@@ -47,6 +47,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "4F87C87D52978D6262626D43BC1F3AD93ABD7C4ADD4714FF7A67466A61711499",
+    "Version": "7162F3D2133DE06F84B081EFB191358604B828E8018F2AAC83562E97FA25C944",
     "eid": "5"
 }

@@ -1315,7 +1315,7 @@
         "LpcResourceUrl_MinReactMinorVersion": 0,
         "MDSOutputExceptionMessage": false,
         "MRUFormsQueryLimit": 8,
-        "MeInsightFilterAndRankerSettings": "UpdatePhoneNumberNudge,NamePronunciation,UploadPhotoNudge,SuggestedWorkingHoursNudge,LinkedInProfileSuggestion,LanguageProficiency",
+        "MeInsightFilterAndRankerSettings": "UpdatePhoneNumberNudge,UploadPhotoNudge,SuggestedWorkingHoursNudge,LinkedInProfileSuggestion,LanguageProficiency",
         "MePeoplePrompts": {
             "Prompts": [
                 {
