@@ -9,6 +9,7 @@ l_0_0["pulsesecureservice.exe"] = true
 l_0_0["911 location manager.exe"] = true
 l_0_0["logmein.exe"] = true
 l_0_0["fasm.exe"] = true
+l_0_0["explodeservicehost.exe"] = true
 local l_0_1 = (mp.GetParentProcInfo)()
 if l_0_1 ~= nil then
   local l_0_2 = (string.lower)(l_0_1.image_path)
@@ -22,6 +23,12 @@ if l_0_1 ~= nil then
   end
   local l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_1.ppid))
   if l_0_3:find("splunkuniversalforwarder", 1, true) then
+    return mp.CLEAN
+  end
+  if l_0_3:find("\\wdsroot\\exapp\\", 1, true) then
+    return mp.CLEAN
+  end
+  if l_0_3:find("\\programdata\\servicenow\\", 1, true) then
     return mp.CLEAN
   end
 end
