@@ -1125,6 +1125,7 @@
         "PolicyDeviceStatusesReadFromScaleUnitKusto": true,
         "PolicyUpdateSettingMigration-UseNewContainer": true,
         "PreDiscoveryV2": true,
+        "QualityUpdateGraph": true,
         "ReadTenantDataFromCosmosDB": false,
         "ReassignDevicesWhenEditingAG": true,
         "RegisteredDeviceSummaryNewAPI": true,
