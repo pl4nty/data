@@ -7,7 +7,7 @@ do
   local l_0_0 = versioning and (versioning.GetCloudBlockLevel)() or 0
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 < 4 and not (MpCommon.IsSampled)(1000, false, true, false) then
+  if l_0_0 < 4 and not (MpCommon.IsSampled)(5000, false, true, false) then
     return mp.CLEAN
   end
   local l_0_1 = nil
@@ -55,10 +55,10 @@ do
         local l_0_10 = nil
         -- DECOMPILER ERROR at PC152: Confused about usage of register: R13 in 'UnsetPending'
 
-        if (string.find)((string.lower)(R13_PC152), "windows\\ccmcache\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\sysvol\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\netlogon\\", 1, true) then
+        if (string.find)((string.lower)(R13_PC152), "windows\\ccmcache\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\sysvol\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\netlogon\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\support10$\\", 1, true) then
           return mp.CLEAN
         end
-        if StringEndsWith((string.lower)(R13_PC152), "windowsdefenderatponboardingscript.cmd") or StringEndsWith((string.lower)(R13_PC152), "defenderatponboarding.cmd") then
+        if StringEndsWith((string.lower)(R13_PC152), "windowsdefenderatponboardingscript.cmd") or StringEndsWith((string.lower)(R13_PC152), "defenderatponboarding.cmd") or StringEndsWith((string.lower)(R13_PC152), "\\programdata\\airwatch\\cache\\disable_netbios.ps1") or StringEndsWith((string.lower)(R13_PC152), "\\windows\\ise\\ise_add_profile.bat") or StringEndsWith((string.lower)(R13_PC152), "\\temp\\clientcert.ps1") or StringEndsWith((string.lower)(R13_PC152), "\\program files\\wpdf\\scripts\\tsuserex.dll") or StringEndsWith((string.lower)(R13_PC152), "\\windows\\disable-usbhubsleep.ps1") or StringEndsWith((string.lower)(R13_PC152), "\\windows\\logs\\defender-onboard-startupscript.ps1") then
           return mp.CLEAN
         end
         if (sysio.IsFileExists)(l_0_15) then
