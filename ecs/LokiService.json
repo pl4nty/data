@@ -1878,6 +1878,7 @@
         "EnablePeopleCentricSearchController": false,
         "copilotHandoffFree_shared": true,
         "disableSharepointInfo": true,
+        "enableBackgroundAuthOnHost_shared": 1,
         "enableClientTypeFilter": false,
         "enableDebugPanel": false,
         "enableVerticalsViaConfig": true,
@@ -2143,6 +2144,7 @@
                 "https://outlook-1-cdn.azureedge.microsoft.scloud"
             ]
         },
+        "enableBackgroundAuthOnHost_shared": 1,
         "hostRingBucket": "80",
         "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
