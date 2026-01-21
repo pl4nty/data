@@ -67,6 +67,13 @@
             }
         },
         "ArcticWarmth.simple-gist": true,
+        "ArturoDent.symbol-jump-and-select": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Symbols Tree",
+                "id": "ArturoDent.symbols-tree"
+            }
+        },
         "AugusteRame.zls-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -1752,6 +1759,13 @@
                 "id": "iarsystems.iar-build"
             }
         },
+        "prettier.prettier-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Prettier - Code formatter",
+                "id": "esbenp.prettier-vscode"
+            }
+        },
         "projektanker.code-butler": {
             "disallowInstall": true,
             "extension": {
@@ -1852,6 +1866,10 @@
                 "id": "sa2taka.js-teleporter"
             }
         },
+        "sainnhe.edge": true,
+        "sainnhe.everforest": true,
+        "sainnhe.gruvbox-material": true,
+        "sainnhe.sonokai": true,
         "sanderledegen.angular-follow-selector": {
             "disallowInstall": true,
             "extension": {

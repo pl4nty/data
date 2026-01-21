@@ -16,6 +16,7 @@
         "enableActionsHub": true,
         "enableAddColorsInPages": true,
         "enableAuthorizationCache": true,
+        "enableBlogSupport": true,
         "enableBreadCrumbComponent": "true",
         "enableCardGalleryComponent": "true",
         "enableCdsCallForAnnotation": true,
