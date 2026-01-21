@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MoveLogins PowerShell Script",
+    "downloadDescription": "MoveLogins PowerShell Script",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MoveLogins.zip",
+            "url": "https://download.microsoft.com/download/daa02667-1230-4fb1-aa83-7377fb614c89/MoveLogins.zip",
+            "size": "65058",
+            "version": "2.0.0",
+            "datePublished": "1/20/2026 8:30:50 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PowerShell script to create a TSQL script to create logins, users, roles and simple permission from an on-premises SQL Server on a Azure SQL PaaS server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0",
+    "detailsSection_file_name": [
+        "MoveLogins.zip"
+    ],
+    "detailsSection_file_size": [
+        "63.5 KB"
+    ],
+    "detailsSection_file_date": "1/20/2026",
+    "systemRequirementsSection": "The file is a zipped folder that contains the PowerShell script and a License Terms document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Choose the Download button on this page to start the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108534",
+    "downloadPreload": true
+}
