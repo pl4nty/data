@@ -5,7 +5,17 @@
     "BDMLedTrials": {
         "ariaIngestionKey": "f5a97b2c637f45179524758aa8d22381-9e8c1645-5715-490b-b10d-ab6fd1927100-6687"
     },
+    "ChatServiceAgg": {
+        "PeopleTargetingService": {
+            "EnableCrossTenantValidation": true
+        }
+    },
     "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        },
         "ConfigLogTarget": "default"
     },
     "GroupCopilotBot": {

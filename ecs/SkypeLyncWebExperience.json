@@ -1,4 +1,11 @@
 {
+    "ECS": {
+        "ClientConfigurationUpdateEvent": {
+            "DeltaLogEnabled": false,
+            "FullSetFrequency": 100,
+            "FullSetLogEnabled": false
+        }
+    },
     "SkypeLyncWebExperience": {
         "cqf": {
             "groupCallPercentage": 50,
