@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260119.10.0",
+        "CalendarCompanionDFVersion": "1.20260120.8.0",
         "CalendarCompanionMsitVersion": "1.20260113.8.0",
         "CalendarCompanionProdVersion": "1.20260109.9.0",
         "CompanionRing": "Prod",
@@ -1970,12 +1970,6 @@
         "userQualificationCheckTimeoutInMiliseconds": 1000
     },
     "Office_Feed": {
-        "DiscoveryView": true,
-        "OfficeFeedDevtools": false,
-        "OfficeFeedInappFeedback": true,
-        "OfficeFeedTelemetry": true,
-        "OfficeFeedUseDocumentPreviewProvider": true,
-        "OfficeFeedVerboseLogging": false,
         "PPSProxyAllowedEndpoints": [
             "Feedback",
             "OfficeFeed",
@@ -1994,7 +1988,7 @@
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
-        "OrgExplorerBootstraperVersion": "1.20260113.4.0",
+        "OrgExplorerBootstraperVersion": "1.20260119.2.0",
         "OrgExplorerVersion": "1.20251024.3.0",
         "UseDsApiSecurityContextOrgX": true,
         "allowInAppFeedback": true,
@@ -2009,7 +2003,7 @@
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
         "PeopleInTaskbarDFVersion": "1.20260119.10.0",
-        "PeopleInTaskbarMsitVersion": "1.20260110.4.0",
+        "PeopleInTaskbarMsitVersion": "1.20260113.9.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251217.2.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
