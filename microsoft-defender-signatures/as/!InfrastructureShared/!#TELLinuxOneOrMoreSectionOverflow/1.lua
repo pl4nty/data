@@ -4,20 +4,21 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = 8
-local l_0_1 = 1
-local l_0_2 = 3
-local l_0_3 = 62
-local l_0_4 = 40
-local l_0_5 = 183
-local l_0_6 = elfhdr.ident
-local l_0_7 = (string.byte)(l_0_6, 6)
-if l_0_7 ~= l_0_1 or elfhdr.machine ~= l_0_2 and elfhdr.machine ~= l_0_3 and elfhdr.machine ~= l_0_4 and elfhdr.machine ~= l_0_5 then
+local l_0_1 = 0
+local l_0_2 = 1
+local l_0_3 = 3
+local l_0_4 = 62
+local l_0_5 = 40
+local l_0_6 = 183
+local l_0_7 = elfhdr.ident
+local l_0_8 = (string.byte)(l_0_7, 6)
+if l_0_8 ~= l_0_2 or elfhdr.machine ~= l_0_3 and elfhdr.machine ~= l_0_4 and elfhdr.machine ~= l_0_5 and elfhdr.machine ~= l_0_6 then
   return mp.CLEAN
 end
-local l_0_8 = (mp.getfilesize)()
-for l_0_12 = 1, elfhdr.shnum do
-  local l_0_13 = esec[l_0_12]
-  if l_0_13.type ~= l_0_0 and (l_0_13.offset < 0 or l_0_8 < l_0_13.offset or l_0_13.size < 0 or l_0_8 < l_0_13.size or l_0_8 < l_0_13.offset + l_0_13.size) then
+local l_0_9 = (mp.getfilesize)()
+for l_0_13 = 1, elfhdr.shnum do
+  local l_0_14 = esec[l_0_13]
+  if l_0_14.type ~= l_0_0 and l_0_14.type ~= l_0_1 and (l_0_14.offset < 0 or l_0_14.size < 0 or l_0_9 < l_0_14.offset or l_0_9 < l_0_14.size or l_0_9 < l_0_14.offset + l_0_14.size) then
     return mp.INFECTED
   end
 end
