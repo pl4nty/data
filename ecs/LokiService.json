@@ -1969,22 +1969,6 @@
         },
         "userQualificationCheckTimeoutInMiliseconds": 1000
     },
-    "Office_Feed": {
-        "PPSProxyAllowedEndpoints": [
-            "Feedback",
-            "OfficeFeed",
-            "FileConversations",
-            "SavedForLater",
-            "MicrosoftFeed",
-            "MicrosoftFeedMulti",
-            "StreamsPreviewById",
-            "SpPreview",
-            "graphql",
-            "YammerImagePreview",
-            "PeoplePhoto"
-        ],
-        "ppsgraphqlmyamutations": true
-    },
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
@@ -2002,7 +1986,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260119.10.0",
+        "PeopleInTaskbarDFVersion": "1.20260120.8.0",
         "PeopleInTaskbarMsitVersion": "1.20260113.9.0",
         "PeopleInTaskbarProdVersion": "1.20251210.1.0",
         "PeopleInTaskbarVersion": "1.20251217.2.0",

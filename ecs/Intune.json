@@ -425,7 +425,8 @@
     },
     "SVC_RACerts": {
         "FlightingV2": {
-            "DigiCert_SMIME": true
+            "DigiCert_SMIME": true,
+            "NewAsyncRequestOnEncryptionCertMismatch": true
         }
     },
     "SVC_RAODJPlus": {
