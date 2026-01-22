@@ -71,6 +71,10 @@
             "FlightExpiry": "2026-06-19T00:00:00.0402432Z",
             "FlightValue": true
         },
+        "TcpProbe": {
+            "FlightExpiry": "2026-08-01T00:00:00.000Z",
+            "FlightValue": true
+        },
         "wingetAppTimeoutHandlerEnabled": {
             "FlightExpiry": "2025-06-30T23:59:00Z",
             "FlightValue": true
@@ -88,11 +92,21 @@
             "Fundamentals_Test": false
         }
     },
+    "Fundamentals_TestProjectTeam": {
+        "FlightingV2": {
+            "TestFlight_Boolean": true,
+            "TestFlight_Float": 26.5,
+            "TestFlight_Integer": 1,
+            "TestFlight_Integer_2": 7,
+            "TestFlight_String": "6.2411.22.2000"
+        }
+    },
     "Infra_Fundamentals": {
         "FlightingV2Infra": {
             "AllowedProjectTeams": [
                 "CLI_IntuneEpmAgent",
                 "Fundamentals",
+                "Fundamentals_TestProjectTeam",
                 "Infra_Fundamentals",
                 "Infra_LogManager",
                 "INFRA_MessageBus",
