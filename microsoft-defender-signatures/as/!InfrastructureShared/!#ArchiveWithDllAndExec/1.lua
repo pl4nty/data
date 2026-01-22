@@ -75,45 +75,46 @@ do
 
             set_research_data("Evidence", (MpCommon.Base64Encode)(l_0_0 .. "|" .. l_0_19.key), false)
             local l_0_22 = nil
-            local l_0_23 = (string.match)(l_0_4, "(.-)%->")
-            if l_0_23 and (string.match)(l_0_22.key, "([^\\>]+)$") then
-              local l_0_24, l_0_25 = , nil
-              -- DECOMPILER ERROR at PC186: Overwrote pending register: R18 in 'AssignReg'
+            local l_0_23, l_0_24 = , (MpCommon.StringRegExpSearch)("([^\\\\/?%*:|\"<>\\.][A-Za-z0-9._\\-\\+\\(\\)\\[\\]\\{\\}&~]*[^\\\\/?%*:|\"<>\\.]\\.(exe|dll)+$)", l_0_4)
+            local l_0_25, l_0_26 = , (MpCommon.StringRegExpSearch)(l_0_23, l_0_22.key)
+            if l_0_25 and l_0_23 then
+              local l_0_27, l_0_28 = , nil
+              -- DECOMPILER ERROR at PC187: Overwrote pending register: R21 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC189: Overwrote pending register: R18 in 'AssignReg'
+              -- DECOMPILER ERROR at PC190: Overwrote pending register: R21 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC190: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC191: Overwrote pending register: R20 in 'AssignReg'
 
               if l_0_8 == ".exe" then
                 do
                   do
-                    local l_0_26, l_0_27, l_0_28 = , IsDllInExpectedPath(l_0_25, l_0_1, nil)
+                    local l_0_29, l_0_30, l_0_31 = , IsDllInExpectedPath(l_0_28, l_0_1, nil)
                     if l_0_1 then
-                      (mp.set_mpattribute)("DllSideLoading_VulnerableExe_" .. R24_PC202)
+                      (mp.set_mpattribute)("DllSideLoading_VulnerableExe_" .. R27_PC203)
                     end
-                    if l_0_27 then
-                      (mp.set_mpattribute)("DllSideLoading_VulnerableDll_" .. R24_PC202)
+                    if l_0_30 then
+                      (mp.set_mpattribute)("DllSideLoading_VulnerableDll_" .. R27_PC203)
                     end
-                    -- DECOMPILER ERROR at PC212: Overwrote pending register: R17 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC213: Overwrote pending register: R20 in 'AssignReg'
 
-                    do return l_0_25.INFECTED end
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out DO_STMT
+                    do return l_0_28.INFECTED end
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC216: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end
