@@ -1147,8 +1147,6 @@
         "MovePickedUpWorkItemsToEndOfQueue": true,
         "MovePostProvisionAheadofIntuneForVSB": true,
         "MoveSuspendedWorkItemToEndOfQueue": false,
-        "NewConnectivityHistoryAPI": true,
-        "NewConnectivityResultAPI": true,
         "Nh_Apex_CPC": true,
         "Nh_Auto_Enable_High_DPI": true,
         "Nh_Claims_Challenge": true,
@@ -1273,6 +1271,7 @@
         "SupportFLSCloudPcPerformanceReporting": true,
         "SupportSearchByConnectedUser": true,
         "SwitchChangeNotificationEnqueue": true,
+        "SwitchToGroupService": true,
         "SwitchToKronoxPublicApi": true,
         "SwitchUnsetDefaultCloudPCToHardDelete": true,
         "SyncAMSVersionEntity": true,
@@ -1296,6 +1295,7 @@
         "WCX_SelfHelp": true,
         "WCX_SelfHelp_UserNewHostingAppName": true,
         "WCX_SelfHelp_VSBAdmin_InAppUX": true,
+        "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
             "GUI": {
