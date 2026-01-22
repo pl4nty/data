@@ -3000,25 +3000,25 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   local l_47_4 = {}
   l_47_4.ExpectedLocation = "%programfiles%\\windows kits\\10\\windows performance toolkit"
   l_47_4.VulnerableApps = "%programfiles%\\windows kits\\10\\windows performance toolkit\\wprui.exe"
-  l_47_3["windowsperformancerecorderui.dl"] = l_47_4
-  l_47_3["uxcore.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows live\\installer", VulnerableApps = "%programfiles%\\windows live\\installer\\dashboard.exe"}
-  l_47_3["tedutil.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft sdks\\windows\\%version%\\bin", VulnerableApps = "%programfiles%\\microsoft sdks\\windows\\%version%\\bin\\topoedit.exe"}
-  l_47_3["symsrv.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\debuggers\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\%version%\\symstore.exe"}
-  l_47_3["rcdll.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\bin\\%version%\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\bin\\%version%\\%version%\\rc.exe"}
+  l_47_3["windowsperformancerecorderui.dll"] = l_47_4
+  l_47_3["uxcore.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows live\\installer", VulnerableApps = "%programfiles%\\windows live\\installer\\dashboard.exe"}
+  l_47_3["tedutil.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft sdks\\windows\\%version%\\bin", VulnerableApps = "%programfiles%\\microsoft sdks\\windows\\%version%\\bin\\topoedit.exe"}
+  l_47_3["symsrv.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\debuggers\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\%version%\\symstore.exe"}
+  l_47_3["rcdll.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\bin\\%version%\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\bin\\%version%\\%version%\\rc.exe"}
   l_47_3["ppcore.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft office\\office%version%;%programfiles%\\microsoft office\\root\\office%version%;%programfiles%\\microsoft office %version%\\clientx86\\root\\office%version%;%programfiles%\\microsoft office %version%\\clientx64\\root\\office%version%", VulnerableApps = "%programfiles%\\microsoft office\\office%version%\\powerpnt.exe;%programfiles%\\microsoft office\\root\\office%version%\\powerpnt.exe;%programfiles%\\microsoft office %version%\\clientx86\\root\\office%version%\\powerpnt.exe;%programfiles%\\microsoft office %version%\\clientx64\\root\\office%version%\\powerpnt.exe"}
   l_47_3["outllib.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft office\\office%version%;%programfiles%\\microsoft office\\root\\office%version%;%programfiles%\\microsoft office %version%\\clientx86\\root\\office%version%;%programfiles%\\microsoft office %version%\\clientx64\\root\\office%version%", VulnerableApps = "%programfiles%\\microsoft office\\office%version%\\outlook.exe;%programfiles%\\microsoft office\\root\\office%version%\\outlook.exe;%programfiles%\\microsoft office %version%\\clientx86\\root\\office%version%\\outlook.exe;%programfiles%\\microsoft office %version%\\clientx64\\root\\office%version%\\outlook.exe"}
-  l_47_3["mspgimme.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\common files\\microsoft shared\\modi\\11.0", VulnerableApps = "%programfiles%\\common files\\microsoft shared\\modi\\11.0\\mspscan.exe"}
+  l_47_3["mspgimme.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\common files\\microsoft shared\\modi\\11.0", VulnerableApps = "%programfiles%\\common files\\microsoft shared\\modi\\11.0\\mspscan.exe"}
   l_47_3["msimg32.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\haihaisoft pdf reader;%system32%;%syswow64%", VulnerableApps = "%programfiles%\\haihaisoft pdf reader\\hpreader.exe"}
-  l_47_3["msidcrl40.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\msn messenger", VulnerableApps = "%programfiles%\\msn messenger\\livecall.exe"}
+  l_47_3["msidcrl40.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\msn messenger", VulnerableApps = "%programfiles%\\msn messenger\\livecall.exe"}
   l_47_3["mpgear.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows defender advanced threat protection\\classification;%system32%\\mrt\\%version%", VulnerableApps = "%programfiles%\\windows defender advanced threat protection\\classification\\sensece.exe"}
   l_47_3["iviewers.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\bin\\%version%\\x86;%programfiles%\\windows kits\\10\\bin\\%version%\\x64;%programfiles%\\windows kits\\10\\bin\\%version%\\arm;%programfiles%\\windows kits\\10\\bin\\%version%\\arm64", VulnerableApps = "%programfiles%\\windows kits\\10\\bin\\%version%\\x86\\oleview.exe;%programfiles%\\windows kits\\10\\bin\\%version%\\x64\\oleview.exe;%programfiles%\\windows kits\\10\\bin\\%version%\\arm64\\oleview.exe"}
   l_47_3["imjp14k.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%;%programfiles%\\common files\\microsoft shared\\ime14\\shared", VulnerableApps = "%programfiles%\\common files\\microsoft shared\\ime14\\shared\\imecmnt.exe"}
   l_47_3["hha.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%;%programfiles%.help workshop", VulnerableApps = "%programfiles%.help workshop\\hhc.exe"}
-  l_47_3["gflagsui.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\debuggers\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\%version%\\gflags.exe"}
-  l_47_3["formdll.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\common files\\microsoft shared\\notesync forms", VulnerableApps = "%programfiles%\\common files\\microsoft shared\\notesync forms\\inkform.exe"}
+  l_47_3["gflagsui.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\10\\debuggers\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\%version%\\gflags.exe"}
+  l_47_3["formdll.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\common files\\microsoft shared\\notesync forms", VulnerableApps = "%programfiles%\\common files\\microsoft shared\\notesync forms\\inkform.exe"}
   l_47_3["dbgeng.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\windows kits\\%version%\\debuggers\\x86;%programfiles%\\windows kits\\%version%\\debuggers\\x64;%programfiles%\\windows kits\\%version%\\debuggers\\arm;%programfiles%\\windows kits\\%version%\\debuggers\\arm64;%system32%;%syswow64%", VulnerableApps = "windbg.exe"}
   l_47_3["concrt140.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft visual studio\\%version%\\community\\common7\\ide\\vc\\vcpackages;%programfiles%\\microsoft visual studio\\%version%\\buildtools\\common7\\ide\\vc\\vcpackages;%programfiles%\\microsoft visual studio\\%version%\\buildtools\\common7\\ide;%programfiles%\\microsoft intune management extension;%programfiles%\\microsoft\\edge\\application\\%version%;%programfiles%\\microsoft\\edgewebview\\application\\%version%;%programfiles%\\microsoft\\edgewebview\\application\\%version%;%programfiles%\\microsoft rdinfra\\rdmonitoringagent_%version%\\agent;%programfiles%\\windowsapps\\microsoft.vclibs.%version%;%programfiles%\\windowsapps\\microsoft.outlookforwindows_%version%;%system32%;%syswow64%", VulnerableApps = "vcpkgsrv.exe"}
-  l_47_3["atltracetoolui.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft visual studio 11.0\\common7\\tools", VulnerableApps = "%programfiles%\\microsoft visual studio 11.0\\common7\\tools\\atltracetool8.exe"}
+  l_47_3["atltracetoolui.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%programfiles%\\microsoft visual studio 11.0\\common7\\tools", VulnerableApps = "%programfiles%\\microsoft visual studio 11.0\\common7\\tools\\atltracetool8.exe"}
   l_47_3["xwtpw32.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\devicepairingwizard.exe;%system32%\\rasphone.exe"}
   l_47_3["xwizards.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\devicepairingwizard.exe;%system32%\\rasphone.exe"}
   l_47_3["xpsservices.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\printfilterpipelinesvc.exe"}
@@ -3037,7 +3037,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["wow64log.dll"], l_47_4 = l_47_4, {}
   l_47_3["wofutil.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\recoverydrive.exe;%system32%\\resetengine.exe;%system32%\\systemreset.exe"}
   l_47_3["wmsgapi.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\osk.exe"}
-  l_47_3["wmpdui.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\wmpdmc.exe"}
+  l_47_3["wmpdui.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\wmpdmc.exe"}
   l_47_3["wmiutils.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%\\wbem;%syswow64%\\wbem", VulnerableApps = "%system32%\\stordiag.exe;%system32%\\tasklist.exe"}
   l_47_3["wmidcom.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\stordiag.exe"}
   l_47_3["wmiclnt.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dispdiag.exe;%system32%\\iscsicli.exe"}
@@ -3054,7 +3054,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["winrnr.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\ftp.exe;%system32%\\hostname.exe;%system32%\\stordiag.exe;%programfiles%\\mozilla firefox\\firefox.exe"}
   l_47_3["winnsi.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_3["winmm.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mblctr.exe;%system32%\\mspaint.exe;%system32%\\mstsc.exe;%system32%\\osk.exe;%system32%\\presentationsettings.exe;%system32%\\proximityuxhost.exe;%system32%\\wfs.exe;%system32%\\winsat.exe"}
-  l_47_3["winmde.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mdeserver.exe"}
+  l_47_3["winmde.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mdeserver.exe"}
   l_47_3["winipsec.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_3["wininet.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\appvclient.exe;%system32%\\browserexport.exe;%system32%\\calc.exe;%system32%\\certreq.exe;%system32%\\computerdefaults.exe;%system32%\\dsregcmd.exe;%system32%\\fodhelper.exe;%system32%\\ie4uinit.exe;%system32%\\logagent.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\mstsc.exe;%system32%\\presentationhost.exe;%system32%\\quickassist.exe;%system32%\\tokenbrokercookies.exe;%system32%\\wkspbroker.exe;%system32%\\wksprt.exe"}
   l_47_3["winhttp.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\cmdl32.exe;%system32%\\devicecensus.exe;%system32%\\dmclient.exe;%system32%\\dsregcmd.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\msdt.exe;%system32%\\mshta.exe;%system32%\\mstsc.exe;%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\musnotifyicon.exe;%system32%\\netsh.exe;%system32%\\pacjsworker.exe;%system32%\\recoverydrive.exe;%system32%\\resetengine.exe;%system32%\\rpcping.exe;%system32%\\sgrmlpac.exe;%system32%\\sihclient.exe;%system32%\\systemreset.exe;%system32%\\wkspbroker.exe;%programfiles%\\minecraft launcher\\minecraftlauncher.exe"}
@@ -3075,7 +3075,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["webservices.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\clipup.exe;%system32%\\sppsvc.exe;%system32%\\vsgraphicsdesktopengine.exe;%system32%\\vsgraphicsremoteengine.exe;%system32%\\wifitask.exe;%system32%\\wksprt.exe"}
   l_47_3["wdscore.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\bootim.exe;%system32%\\deploymentcsphelper.exe;%system32%\\djoin.exe;%system32%\\dnscacheugc.exe;%system32%\\muiunattend.exe;%system32%\\netbtugc.exe;%system32%\\netiougc.exe;%system32%\\pnpunattend.exe;%system32%\\recoverydrive.exe;%system32%\\resetengine.exe;%system32%\\setupugc.exe;%system32%\\sysreseterr.exe;%system32%\\systemreset.exe;%system32%\\tapiunattend.exe;%system32%\\ieunatt.exe"}
   l_47_3["wdi.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\cofire.exe;%system32%\\msra.exe;%system32%\\netsh.exe;%system32%\\dpiscaling.exe;%system32%\\slui.exe"}
-  l_47_3["wcnnetsh.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\netsh.exe"}
+  l_47_3["wcnnetsh.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_3["wcmapi.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_3["wbemsvc.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%\\wbem;%syswow64%\\wbem", VulnerableApps = "%system32%\\cttune.exe;%system32%\\devicecensus.exe;%system32%\\driverquery.exe;%system32%\\getmac.exe;%system32%\\licensingdiag.exe;%system32%\\msinfo32.exe;%system32%\\stordiag.exe;%system32%\\systeminfo.exe;%system32%\\tasklist.exe;%programfiles%\\microsoft\\edge\\application\\msedge.exe;%programfiles%\\microsoft office\\root\\office%version%\\excelcnv.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\excel.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\msaccess.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\mspub.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\onenote.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\outlook.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\powerpnt.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\scanpst.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\winword.exe"}
   l_47_3["wbemprox.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%\\wbem;%syswow64%\\wbem", VulnerableApps = "%system32%\\cttune.exe;%system32%\\devicecensus.exe;%system32%\\driverquery.exe;%system32%\\getmac.exe;%system32%\\gpresult.exe;%system32%\\licensingdiag.exe;%system32%\\msinfo32.exe;%system32%\\stordiag.exe;%system32%\\systeminfo.exe;%system32%\\taskkill.exe;%system32%\\tasklist.exe;%programfiles%\\microsoft\\edge\\application\\msedge.exe;%programfiles%\\microsoft office\\root\\office%version%\\excelcnv.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\excel.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\msaccess.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\mspub.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\onenote.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\outlook.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\powerpnt.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\scanpst.exe;preconditions%programfiles%\\microsoft office\\root\\office%version%\\winword.exe"}
@@ -3091,9 +3091,9 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["utildll.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\change.exe;%system32%\\chglogon.exe;%system32%\\chgport.exe;%system32%\\query.exe;%system32%\\quser.exe;%system32%\\qprocess.exe;%system32%\\qwinsta.exe;%system32%\\reset.exe;%system32%\\rwinsta.exe;%system32%\\tscon.exe;%system32%\\tskill.exe"}
   l_47_3["userenv.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\appidpolicyconverter.exe;%system32%\\appvclient.exe;%system32%\\appvshnotify.exe;%system32%\\bdeuisrv.exe;%system32%\\colorcpl.exe;%system32%\\customshellhost.exe;%system32%\\dccw.exe;%system32%\\deviceenroller.exe;%system32%\\dmomacpmo.exe;%system32%\\dsregcmd.exe;%system32%\\efsui.exe;%system32%\\gpupdate.exe;%system32%\\mdmappinstaller.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\microsoftedgebchost.exe;%system32%\\microsoftedgecp.exe;%system32%\\microsoftedgesh.exe;%system32%\\mrt.exe;%system32%\\msra.exe;%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\netsh.exe;%system32%\\omadmclient.exe;%system32%\\proquota.exe;%system32%\\rekeywiz.exe;%system32%\\runexehelper.exe;%system32%\\securityhealthservice.exe;%system32%\\settingsynchost.exe;%system32%\\systemsettingsadminflows.exe;%system32%\\tttracer.exe;%system32%\\utcdecoderhost.exe;%system32%\\vaultcmd.exe;%system32%\\workfolders.exe;%system32%\\wpcmon.exe"}
   l_47_3["urlmon.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\bytecodegenerator.exe;%system32%\\ie4uinit.exe;%system32%\\ldifde.exe;%system32%\\presentationhost.exe;%system32%\\write.exe"}
-  l_47_3["upshared.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\musnotifyicon.exe"}
+  l_47_3["upshared.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\musnotifyicon.exe"}
   l_47_3["updatepolicy.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mousocoreworker.exe;%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\usoclient.exe;%system32%\\usocoreworker.exe"}
-  l_47_3["unattend.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\recoverydrive.exe"}
+  l_47_3["unattend.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\recoverydrive.exe"}
   l_47_3["umpdc.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\deviceenroller.exe;%system32%\\dmcertinst.exe;%system32%\\iesettingsync.exe;%system32%\\mousocoreworker.exe;%system32%\\netevtfwdr.exe;%system32%\\omadmclient.exe;%system32%\\settingsynchost.exe;%system32%\\usocoreworker.exe;%system32%\\wifitask.exe;%system32%\\runtimebroker.exe"}
   l_47_3["uiribbon.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\wordpad.exe"}
   l_47_3["uireng.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\psr.exe"}
@@ -3106,12 +3106,12 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["tsworkspace.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\wkspbroker.exe"}
   l_47_3["tquery.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\searchfilterhost.exe;%system32%\\searchprotocolhost.exe"}
   l_47_3["tpmcoreprovisioning.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\tpmtool.exe"}
-  l_47_3["timesync.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\systemsettingsadminflows.exe"}
+  l_47_3["timesync.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\systemsettingsadminflows.exe"}
   l_47_3["textshaping.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\x64\\logger.exe;%programfiles%\\windows kits\\10\\debuggers\\x64\\logviewer.exe"}
   l_47_3["tdh.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\plasrv.exe"}
   l_47_3["tbs.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\bootim.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\resetengine.exe;%system32%\\sgrmbroker.exe;%system32%\\systemreset.exe;%system32%\\tpmtool.exe"}
   l_47_3["tapi32.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dialer.exe;%system32%\\fxssvc.exe;%system32%\\tcmsetup.exe"}
-  l_47_3["systemsettingsthresholdadminflowui.dl"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\systemsettingsadminflows.exe"}
+  l_47_3["systemsettingsthresholdadminflowui.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\systemsettingsadminflows.exe"}
   l_47_3["sxshared.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\defrag.exe;%system32%\\dfrgui.exe"}
   l_47_3["structuredquery.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\certreq.exe;%system32%\\control.exe;%system32%\\explorer.exe;%system32%\\notepad.exe"}
   l_47_3["sti.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%programfiles%\\windows photo viewer\\imagingdevices.exe"}
@@ -3123,7 +3123,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3["srvcli.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\change.exe;%system32%\\chglogon.exe;%system32%\\chgport.exe;%system32%\\dcdiag.exe;%system32%\\dsdbutil.exe;%system32%\\driverquery.exe;%system32%\\eventcreate.exe;%system32%\\getmac.exe;%system32%\\gpresult.exe;%system32%\\ksetup.exe;%system32%\\net.exe;%system32%\\net1.exe;%system32%\\netdom.exe;%system32%\\ntdsutil.exe;%system32%\\openfiles.exe;%system32%\\query.exe;%system32%\\quser.exe;%system32%\\qwinsta.exe;%system32%\\reset.exe;%system32%\\rwinsta.exe;%system32%\\shrpubw.exe;%system32%\\spaceagent.exe;%system32%\\systempropertiesadvanced.exe;%system32%\\taskkill.exe;%system32%\\tasklist.exe;%system32%\\tscon.exe;%system32%\\tskill.exe;%system32%\\waitfor.exe;%system32%\\wbengine.exe"}
   l_47_3["srpapi.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\appidpolicyconverter.exe;%system32%\\mshta.exe;%system32%\\rdpclip.exe"}
   l_47_3["srmtrace.dll"], l_47_4 = l_47_4, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dirquota.exe;%system32%\\filescrn.exe;%system32%\\storrept.exe"}
-  l_47_4 = "srcore.dl"
+  l_47_4 = "srcore.dll"
   local l_47_5 = {}
   l_47_5.ExpectedLocation = "%system32%"
   l_47_5.VulnerableApps = "%system32%\\rstrui.exe;%system32%\\srtasks.exe"
@@ -3136,7 +3136,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\msinfo32.exe;%system32%\\netsh.exe;%system32%\\packageinspector.exe;%system32%\\slui.exe"}
   l_47_4 = "spp.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\rstrui.exe;%system32%\\sdclt.exe;%system32%\\srtasks.exe;%system32%\\wbengine.exe"}
-  l_47_4 = "spectrumsyncclient.dl"
+  l_47_4 = "spectrumsyncclient.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\spectrum.exe"}
   l_47_4 = "snmpapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\arp.exe;%system32%\\netstat.exe"}
@@ -3180,9 +3180,9 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%\\systemresetplatform;%syswow64%\\systemresetplatform", VulnerableApps = "%system32%\\systemresetplatform\\systemresetplatform.exe"}
   l_47_4 = "resutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dfsdiag.exe;%system32%\\msdtc.exe"}
-  l_47_4 = "resetengine.dl"
+  l_47_4 = "resetengine.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\resetengine.exe;%system32%\\systemreset.exe"}
-  l_47_4 = "reseteng.dl"
+  l_47_4 = "reseteng.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bootim.exe"}
   l_47_4 = "regapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\change.exe;%system32%\\chglogon.exe;%system32%\\query.exe;%system32%\\reset.exe"}
@@ -3204,7 +3204,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\printui.exe"}
   l_47_4 = "prvdmofcomp.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\register-cimprovider.exe"}
-  l_47_4 = "proximityservicepal.dl"
+  l_47_4 = "proximityservicepal.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\proximityuxhost.exe"}
   l_47_4 = "proximitycommon.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\proximityuxhost.exe"}
@@ -3228,7 +3228,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\sethc.exe"}
   l_47_4 = "pla.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\logman.exe"}
-  l_47_4 = "pkeyhelper.dl"
+  l_47_4 = "pkeyhelper.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\sppsvc.exe"}
   l_47_4 = "peerdistsh.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
@@ -3244,7 +3244,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_4 = "osuninst.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\convert.exe;%system32%\\vds.exe"}
-  l_47_4 = "osksupport.dl"
+  l_47_4 = "osksupport.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\osk.exe"}
   l_47_4 = "osbaseln.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\fondue.exe;%system32%\\optionalfeatures.exe"}
@@ -3338,7 +3338,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\charmap.exe;%system32%\\mspaint.exe;%system32%\\searchindexer.exe;%system32%\\searchprotocolhost.exe"}
   l_47_4 = "msedgeupdate.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\microsoft\\edgeupdate\\%version%;%programfiles%\\microsoft\\temp\\%version%", VulnerableApps = "%programfiles%\\microsoft\\edgeupdate\\microsoftedgeupdate.exe"}
-  l_47_4 = "msdtctm.dl"
+  l_47_4 = "msdtctm.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\msdtc.exe"}
   l_47_4 = "msdrm.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\gamepanel.exe;%system32%\\psr.exe;%system32%\\rmactivate.exe;%system32%\\rmactivate_isv.exe;%system32%\\snippingtool.exe"}
@@ -3358,7 +3358,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\osk.exe"}
   l_47_4 = "mrmcorer.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mcbuilder.exe"}
-  l_47_4 = "mpsvc.dl"
+  l_47_4 = "mpsvc.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programdata%\\microsoft\\windows defender\\platform\\%version%", VulnerableApps = "%programdata%\\microsoft\\windows defender\\platform\\%version%\\msmpeng.exe"}
   l_47_4 = "mprapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\rasautou.exe"}
@@ -3374,7 +3374,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\calc.exe;%system32%\\computerdefaults.exe;%system32%\\fodhelper.exe;%system32%\\ie4uinit.exe;%programfiles%\\microsoft office\\root\\office%version%\\excel.exe"}
   l_47_4 = "miutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\register-cimprovider.exe;%system32%\\winrs.exe;%system32%\\wsmanhttpconfig.exe;%system32%\\wsmprovhost.exe"}
-  l_47_4 = "mintdh.dl"
+  l_47_4 = "mintdh.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\applytrustoffline.exe;%system32%\\netsh.exe;%system32%\\pktmon.exe;%system32%\\plasrv.exe"}
   l_47_4 = "midimap.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\osk.exe"}
@@ -3388,17 +3388,17 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mfpmp.exe"}
   l_47_4 = "mfc42u.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\devicepairingwizard.exe;%system32%\\dirquota.exe;%system32%\\eudcedit.exe;%system32%\\filescrn.exe;%system32%\\ldp.exe;%system32%\\msconfig.exe;%system32%\\msinfo32.exe;%system32%\\mspaint.exe;%system32%\\nlbmgr.exe;%system32%\\shrpubw.exe;%system32%\\storrept.exe;%system32%\\verifiergui.exe;%system32%\\wfs.exe"}
-  l_47_4 = "mdmdiagnostics.dl"
+  l_47_4 = "mdmdiagnostics.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mdmdiagnosticstool.exe"}
-  l_47_4 = "mbaexmlparser.dl"
+  l_47_4 = "mbaexmlparser.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mbaeparsertask.exe"}
   l_47_4 = "mapistub.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\fixmapi.exe"}
-  l_47_4 = "maintenanceui.dl"
+  l_47_4 = "maintenanceui.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mschedexe.exe"}
   l_47_4 = "magnification.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\magnify.exe"}
-  l_47_4 = "lrwizdll.dl"
+  l_47_4 = "lrwizdll.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\licmgr.exe"}
   l_47_4 = "lpksetupproxyserv.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\lpksetup.exe"}
@@ -3406,7 +3406,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\logonui.exe"}
   l_47_4 = "logoncli.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\certutil.exe;%system32%\\change.exe;%system32%\\chglogon.exe;%system32%\\chgport.exe;%system32%\\csvde.exe;%system32%\\devicecensus.exe;%system32%\\djoin.exe;%system32%\\dsacls.exe;%system32%\\dsmgmt.exe;%system32%\\dsregcmd.exe;%system32%\\efsui.exe;%system32%\\gpfixup.exe;%system32%\\gpresult.exe;%system32%\\klist.exe;%system32%\\ksetup.exe;%system32%\\ldifde.exe;%system32%\\net1.exe;%system32%\\nltest.exe;%system32%\\netdom.exe;%system32%\\ntdsutil.exe;%system32%\\query.exe;%system32%\\quser.exe;%system32%\\qwinsta.exe;%system32%\\redircmp.exe;%system32%\\redirusr.exe;%system32%\\rekeywiz.exe;%system32%\\rendom.exe;%system32%\\repadmin.exe;%system32%\\reset.exe;%system32%\\rwinsta.exe;%system32%\\setspn.exe;%system32%\\systempropertiesadvanced.exe;%system32%\\systemsettingsadminflows.exe;%system32%\\tscon.exe;%system32%\\tskill.exe;%system32%\\w32tm.exe"}
-  l_47_4 = "lockhostingframework.dl"
+  l_47_4 = "lockhostingframework.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\lockapphost.exe"}
   l_47_4 = "loadperf.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\unlodctr.exe"}
@@ -3420,13 +3420,13 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\ktmutil.exe;%system32%\\msdtc.exe;%system32%\\mstsc.exe;%system32%\\netsh.exe;%system32%\\rstrui.exe;%system32%\\srtasks.exe;%system32%\\wkspbroker.exe"}
   l_47_4 = "ksuser.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mfpmp.exe;%system32%\\osk.exe"}
-  l_47_4 = "kdstub.dl"
+  l_47_4 = "kdstub.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\hvax64.exe;%system32%\\hvix64.exe"}
   l_47_4 = "joinutil.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\djoin.exe"}
-  l_47_4 = "iumsdk.dl"
+  l_47_4 = "iumsdk.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bioiso.exe;%system32%\\fsiso.exe;%system32%\\ngciso.exe"}
-  l_47_4 = "iumbase.dl"
+  l_47_4 = "iumbase.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bioiso.exe;%system32%\\fsiso.exe;%system32%\\ngciso.exe"}
   l_47_4 = "isv.exe_rsaenh.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\rmactivate"}
@@ -3440,7 +3440,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\deviceenroller.exe;%system32%\\dmcertinst.exe;%system32%\\dmcfghost.exe;%system32%\\dmomacpmo.exe;%system32%\\hvsievaluator.exe;%system32%\\mdmappinstaller.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\omadmclient.exe;%system32%\\usocoreworker.exe"}
   l_47_4 = "iphlpapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\arp.exe;%system32%\\colorcpl.exe;%system32%\\datausagelivetiletask.exe;%system32%\\dcdiag.exe;%system32%\\devicecensus.exe;%system32%\\dnscacheugc.exe;%system32%\\fxscover.exe;%system32%\\fxssvc.exe;%system32%\\fxsunatd.exe;%system32%\\ipconfig.exe;%system32%\\mousocoreworker.exe;%system32%\\msra.exe;%system32%\\mstsc.exe;%system32%\\nbtstat.exe;%system32%\\net.exe;%system32%\\netbtugc.exe;%system32%\\netiougc.exe;%system32%\\netsh.exe;%system32%\\netstat.exe;%system32%\\omadmclient.exe;%system32%\\pathping.exe;%system32%\\printbrmui.exe;%system32%\\printui.exe;%system32%\\rdpclip.exe;%system32%\\route.exe;%system32%\\tracert.exe;%system32%\\w32tm.exe;%system32%\\wfs.exe;%system32%\\wifitask.exe;%system32%\\wpnpinst.exe;%programfiles%\\minecraft launcher\\minecraftlauncher.exe;%programfiles%\\microsoft deployment toolkit\\bin\\microsoft.bdd.catalog35.exe;%localappdata%\\microsoft\\onedrive\\onedrive.exe;%localappdata%\\microsoft\\onedrive\\onedrivestandaloneupdater.exe;%localappdata%\\microsoft\\teams\\current\\teams.exe;%system32%\\dpiscaling.exe;%system32%\\rasphone.exe;%system32%\\slui.exe"}
-  l_47_4 = "inproclogger.dl"
+  l_47_4 = "inproclogger.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\easpolicymanagerbrokerhost.exe"}
   l_47_4 = "ifsutil.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\convert.exe;%system32%\\fsavailux.exe;%system32%\\label.exe;%system32%\\recover.exe;%system32%\\xcopy.exe"}
@@ -3470,7 +3470,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\charmap.exe"}
   l_47_4 = "fxstiff.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%system32%\\driverstore\\filerepository\\prnms002.inf_%version%\\amd64", VulnerableApps = "%system32%\\fxssvc.exe"}
-  l_47_4 = "fxsst.dl"
+  l_47_4 = "fxsst.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%windir%\\explorer.exe"}
   l_47_4 = "fxsapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%system32%\\driverstore\\filerepository\\prnms002.inf_%version%\\amd64;%syswow64%", VulnerableApps = "%system32%\\fxsunatd.exe"}
@@ -3482,9 +3482,9 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_4 = "fwbase.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\checknetisolation.exe;%system32%\\edpcleanup.exe;%system32%\\lpremove.exe;%system32%\\netsh.exe;%system32%\\securityhealthservice.exe;%system32%\\systemsettingsadminflows.exe"}
-  l_47_4 = "fvewiz.dl"
+  l_47_4 = "fvewiz.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bitlockerwizard.exe;%system32%\\bitlockerwizardelev.exe"}
-  l_47_4 = "fveskybackup.dl"
+  l_47_4 = "fveskybackup.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bitlockerdeviceencryption.exe"}
   l_47_4 = "fveapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\baaupdate.exe;%system32%\\bdechangepin.exe;%system32%\\fvenotify.exe;%system32%\\fveprompt.exe;%system32%\\resetengine.exe;%system32%\\systemreset.exe"}
@@ -3496,7 +3496,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\devicecensus.exe"}
   l_47_4 = "firewallapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\checknetisolation.exe;%system32%\\edpcleanup.exe;%system32%\\lpremove.exe;%system32%\\netsh.exe;%system32%\\securityhealthservice.exe;%system32%\\systemsettingsadminflows.exe"}
-  l_47_4 = "fhsvcctl.dl"
+  l_47_4 = "fhsvcctl.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\fhmanagew.exe"}
   l_47_4 = "fhcfg.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\filehistory.exe"}
@@ -3526,7 +3526,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe"}
   l_47_4 = "eappcfg.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\netsh.exe;%system32%\\rasphone.exe"}
-  l_47_4 = "dynamoapi.dl"
+  l_47_4 = "dynamoapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\mdmdiagnosticstool.exe"}
   l_47_4 = "dxva2.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dccw.exe;%system32%\\dispdiag.exe"}
@@ -3536,7 +3536,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\taskmgr.exe"}
   l_47_4 = "dwrite.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\cttune.exe;%system32%\\dataexchangehost.exe;%system32%\\gamepanel.exe"}
-  l_47_4 = "dwmcore.dl"
+  l_47_4 = "dwmcore.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\dwm.exe"}
   l_47_4 = "dwmapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\certreq.exe;%system32%\\devicepairingwizard.exe;%system32%\\displayswitch.exe;%system32%\\dxpserver.exe;%system32%\\fsquirt.exe;%system32%\\gamepanel.exe;%system32%\\lockscreencontentserver.exe;%system32%\\mblctr.exe;%system32%\\osk.exe;%system32%\\proximityuxhost.exe;%system32%\\rdpclip.exe;%system32%\\rdpshell.exe;%system32%\\rdvghelper.exe;%system32%\\sndvol.exe;%system32%\\snippingtool.exe;%system32%\\wmpdmc.exe"}
@@ -3578,7 +3578,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\omadmclient.exe;%system32%\\usocoreworker.exe"}
   l_47_4 = "dmiso8601utils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\mdmdiagnosticstool.exe;%system32%\\mousocoreworker.exe;%system32%\\omadmclient.exe;%system32%\\usocoreworker.exe"}
-  l_47_4 = "dmenterprisediagnostics.dl"
+  l_47_4 = "dmenterprisediagnostics.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\deviceenroller.exe;%system32%\\omadmclient.exe"}
   l_47_4 = "dmenrollengine.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\deviceenroller.exe;%system32%\\dmomacpmo.exe;%system32%\\mdmagent.exe;%system32%\\mdmappinstaller.exe;%system32%\\mdmdiagnosticstool.exe;%system32%\\omadmclient.exe;%system32%\\workfolders.exe"}
@@ -3616,7 +3616,7 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dfrgui.exe"}
   l_47_4 = "dcomp.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dataexchangehost.exe;%system32%\\gamepanel.exe;%system32%\\quickassist.exe"}
-  l_47_4 = "dcntel.dl"
+  l_47_4 = "dcntel.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\devicecensus.exe"}
   l_47_4 = "dbgmodel.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%;%programfiles%\\windows kits\\10\\debuggers\\%version%", VulnerableApps = "%programfiles%\\windows kits\\10\\debuggers\\%version%\\ntsd.exe"}
@@ -3674,11 +3674,11 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dwm.exe"}
   l_47_4 = "coremessaging.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\dwm.exe;%system32%\\sihost.exe"}
-  l_47_4 = "coredplus.dl"
+  l_47_4 = "coredplus.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\omadmclient.exe"}
   l_47_4 = "connect.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\rasphone.exe"}
-  l_47_4 = "configmanager2.dl"
+  l_47_4 = "configmanager2.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\hvsievaluator.exe"}
   l_47_4 = "comdlg32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\certreq.exe;%system32%\\notepad.exe"}
@@ -3708,11 +3708,11 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\notepad.exe"}
   l_47_4 = "cabinet.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\bootim.exe;%system32%\\certutil.exe;%system32%\\cmdl32.exe;%system32%\\expand.exe;%system32%\\extrac32.exe;%system32%\\iesettingsync.exe;%system32%\\licensingdiag.exe;%system32%\\makecab.exe;%system32%\\msdt.exe;%system32%\\musnotification.exe;%system32%\\musnotificationux.exe;%system32%\\netsh.exe;%system32%\\plasrv.exe;%system32%\\pnputil.exe;%system32%\\reagentc.exe;%system32%\\recdisc.exe;%system32%\\relpost.exe;%system32%\\resetengine.exe;%system32%\\sdclt.exe;%system32%\\sihclient.exe;%system32%\\systemreset.exe;%system32%\\usocoreworker.exe;%system32%\\wextract.exe;%system32%\\wimserv.exe;%system32%\\wpnpinst.exe;%system32%\\logman.exe"}
-  l_47_4 = "bootux.dl"
+  l_47_4 = "bootux.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bootim.exe"}
-  l_47_4 = "bootmenuux.dl"
+  l_47_4 = "bootmenuux.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\bootim.exe"}
-  l_47_4 = "bderepair.dl"
+  l_47_4 = "bderepair.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%", VulnerableApps = "%system32%\\repair-bde.exe"}
   l_47_4 = "bcrypt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\shellappruntime.exe;%system32%\\wordpad.exe"}
@@ -3758,17 +3758,17 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\applysettingstemplatecatalog.exe;%system32%\\agentservice.exe;%system32%\\dsadd.exe;%system32%\\dsget.exe;%system32%\\dsmod.exe;%system32%\\dsrm.exe;%system32%\\gpfixup.exe"}
   l_47_4 = "aclui.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\shrpubw.exe;%programfiles%\\windows kits\\10\\bin\\%version%\\x86\\oleview.exe"}
-  l_47_4 = "zlibwapi.dl"
+  l_47_4 = "zlibwapi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\ds clock", VulnerableApps = "%programfiles%\\ds clock\\dsclock.exe"}
-  l_47_4 = "atl71.dl"
+  l_47_4 = "atl71.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\common files\\thunder network\\tp\\%version%", VulnerableApps = "%programfiles%\\common files\\thunder network\\tp\\%version%\\xlbugreport.exe"}
   l_47_4 = "x32bridge.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "wxmsw313u_aui_vc_custom.dl"
+  l_47_4 = "wxmsw313u_aui_vc_custom.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\audacity", VulnerableApps = "%programfiles%\\audacity\\audacity.exe"}
-  l_47_4 = "libwsutil.dl"
+  l_47_4 = "libwsutil.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\wireshark", VulnerableApps = "%programfiles%\\wireshark\\mergecap.exe"}
-  l_47_4 = "libglib-2.0-0.dl"
+  l_47_4 = "libglib-2.0-0.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\wireshark", VulnerableApps = "%programfiles%\\wireshark\\mergecap.exe"}
   l_47_4 = "avutil.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\vso\\convertx\\7;%programfiles%\\vso\\convertxtodvd;%programfiles%\\common files\\oracle\\java\\javapath", VulnerableApps = "%programfiles%\\vso\\convertx\\7\\convertxtodvd.exe"}
@@ -3778,31 +3778,31 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%system32%;%syswow64%", VulnerableApps = "%system32%\\vmnat.exe"}
   l_47_4 = "glib-2.0.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\vmware\\vmware tools;%programfiles%\\vmware\\vmware workstation;%programfiles%\\vmware\\vmware player", VulnerableApps = "%programfiles%\\vmware\\vmware tools\\vmwarexferlogs.exe"}
-  l_47_4 = "libvlccore.dl"
+  l_47_4 = "libvlccore.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\videolan\\vlc", VulnerableApps = "%programfiles%\\videolan\\vlc\\vlc.exe"}
-  l_47_4 = "libvlc.dl"
+  l_47_4 = "libvlc.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\videolan\\vlc", VulnerableApps = "%programfiles%\\videolan\\vlc\\vlc.exe"}
   l_47_4 = "vivaldi_elf.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\vivaldi\\application;%localappdata%\\vivaldi\\application\\%version%", VulnerableApps = "%localappdata%\\vivaldi\\application\\vivaldi.exe"}
-  l_47_4 = "vntfxf32.dl"
+  l_47_4 = "vntfxf32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\venta\\ventafax & voice", VulnerableApps = "%programfiles%\\venta\\ventafax & voice\\spoololk.exe"}
-  l_47_4 = "vstdlib_s64.dl"
+  l_47_4 = "vstdlib_s64.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\steam", VulnerableApps = "%programfiles%\\steam\\steamerrorreporter64.exe"}
-  l_47_4 = "unityplayer.dl"
+  l_47_4 = "unityplayer.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\temp\\%version%\\windows", VulnerableApps = "kingdomtwocrowns.exe"}
   l_47_4 = "utiluniclient.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
   l_47_4 = "tmtap.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "tmdbglog.dl"
+  l_47_4 = "tmdbglog.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\trend micro\\titanium", VulnerableApps = "ptwatchdog.exe"}
-  l_47_4 = "tosbtkbd.dl"
+  l_47_4 = "tosbtkbd.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\toshiba\\bluetooth toshiba stack", VulnerableApps = "%programfiles%\\toshiba\\bluetooth toshiba stack\\tosbtkbd.exe"}
-  l_47_4 = "cc3260mt.dl"
+  l_47_4 = "cc3260mt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\tivo\\desktop", VulnerableApps = "%programfiles%\\tivo\\desktop\\tivoserver.exe"}
   l_47_4 = "tpsvc.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\vmware\\vmware tools;%programfiles%\\common files\\thinprint", VulnerableApps = "tpautoconnect.exe"}
-  l_47_4 = "mfcu100u.dl"
+  l_47_4 = "mfcu100u.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\techsmith\\camtasia studio 8", VulnerableApps = "%programfiles%\\techsmith\\camtasia studio 8\\cammenumaker.exe"}
   l_47_4 = "madhcnet32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\multimedia\\k-lite codec pack\\filters\\madvr;%programfiles%\\k-lite codec pack\\filters\\madvr", VulnerableApps = "%programfiles%\\k-lite codec pack\\filters\\madvr\\madhcctrl.exe"}
@@ -3812,25 +3812,25 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\symantec\\network connected devices auto setup;%system32%", VulnerableApps = "%programfiles%\\symantec\\network connected devices auto setup\\rastlsc.exe"}
   l_47_4 = "ldvpocx.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "safestore32.dl"
+  l_47_4 = "safestore32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\sophos\\sophos anti-virus", VulnerableApps = "%programfiles%\\sophos\\sophos anti-virus\\ssr32.exe"}
   l_47_4 = "sqlite.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\adobe\\acrobat reader dc\\reader;%programfiles%\\adobe\\acrobat dc\\acrobat", VulnerableApps = "%programfiles%\\adobe\\acrobat reader dc\\reader\\acrobroker.exe"}
-  l_47_4 = "smadhook32c.dl"
+  l_47_4 = "smadhook32c.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\smadav", VulnerableApps = "%programfiles%\\smadav\\smadhook.exe"}
-  l_47_4 = "epnsm.dl"
+  l_47_4 = "epnsm.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\epson software\\document capture server", VulnerableApps = "%programfiles%\\epson software\\document capture server\\eeventmanager.exe"}
-  l_47_4 = "flutter_gpu_texture_renderer_plugin.dl"
+  l_47_4 = "flutter_gpu_texture_renderer_plugin.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\rustdesk", VulnerableApps = "%localappdata%\\rustdesk\\rustdesk.exe"}
-  l_47_4 = "rzlog4cpp_logger.dl"
+  l_47_4 = "rzlog4cpp_logger.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\razer\\ingameengine\\cache\\rzfpsapplet", VulnerableApps = "%localappdata%\\razer\\ingameengine\\cache\\rzfpsapplet\\rzcefrenderprocess.exe"}
-  l_47_4 = "asfbncor.dl"
+  l_47_4 = "asfbncor.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\replay media splitter", VulnerableApps = "%programfiles%\\replay media splitter\\replaymediasplitter.exe"}
   l_47_4 = "qtgui4.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\audacity;%programfiles%\\aomei\\aomei backupper\\%version%", VulnerableApps = "%programfiles%\\audacity\\crashreporter.exe;%programfiles%\\aomei\\aomei backupper\\%version%\\shortcuttaskagent.exe"}
   l_47_4 = "qt5core.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\electronic arts\\ea desktop\\ea desktop;%programfiles%\\microsoft onedrive\\%version%;%localappdata%\\microsoft\\onedrive\\%version%;%programfiles%\\dropbox\\client\\%version%;%programfiles%\\logioptionsplus", VulnerableApps = "%programfiles%\\electronic arts\\ea desktop\\ea desktop\\easteamproxy.exe"}
-  l_47_4 = "keyscramblerie.dl"
+  l_47_4 = "keyscramblerie.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\keyscrambler", VulnerableApps = "%programfiles%\\keyscrambler\\keyscrambler.exe"}
   l_47_4 = "python39.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\python39%localappdata%\\temp\\%version%;%programfiles%\\microsoft visual studio\\2022\\community\\common7\\ide\\commonextensions\\microsoft\\vc\\securityissueanalysis\\python;%userprofile%\\anaconda3", VulnerableApps = "python39.exe"}
@@ -3838,21 +3838,21 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\python311;%localappdata%\\programs\\python\\python311", VulnerableApps = "pythonw.exe"}
   l_47_4 = "python310.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\python310;%localappdata%\\temp\\%version%;%programfiles%\\dwagent\\runtime;%userprofile%\\anaconda3", VulnerableApps = "pythonw.exe;dwagent.exe"}
-  l_47_4 = "libeay32.dl"
+  l_47_4 = "libeay32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\pspad editor", VulnerableApps = "%programfiles%\\pspad editor\\pspad.exe"}
-  l_47_4 = "winutils.dl"
+  l_47_4 = "winutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\palo alto networks\\traps", VulnerableApps = "%programfiles%\\palo alto networks\\traps\\cydump.exe"}
-  l_47_4 = "vboxrt.dl"
+  l_47_4 = "vboxrt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\oracle\\virtualbox", VulnerableApps = "%programfiles%\\oracle\\virtualbox\\vboxsvc.exe"}
-  l_47_4 = "qtcorevbox4.dl"
+  l_47_4 = "qtcorevbox4.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\oracle\\virtualbox", VulnerableApps = "%programfiles%\\oracle\\virtualbox\\vboxtestogl.exe"}
-  l_47_4 = "launcher.dl"
+  l_47_4 = "launcher.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\sql developer\\ide\\bin", VulnerableApps = "%programfiles%\\sql developer\\sqldeveloper.exe"}
-  l_47_4 = "opera_elf.dl"
+  l_47_4 = "opera_elf.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\programs\\opera\\%version%", VulnerableApps = "%localappdata%\\programs\\opera\\%version%\\opera.exe"}
-  l_47_4 = "nvsmartmax.dl"
+  l_47_4 = "nvsmartmax.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\nvidia corporation\\display", VulnerableApps = "%programfiles%\\nvidia corporation\\display\\nvsmartex.exe"}
-  l_47_4 = "libcef.dl"
+  l_47_4 = "libcef.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\nvidia corporation\\nvidia geforce experience", VulnerableApps = "program files (x86)\\nvidia corporation\\nvidia geforce experience\\nvida share.exe"}
   l_47_4 = "providers.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
@@ -3862,61 +3862,61 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\seamonkey;%programfiles%\\mozilla firefox;%programfiles%\\mozilla thunderbird", VulnerableApps = "%programfiles%\\seamonkey\\seamonkey.exe"}
   l_47_4 = "libxfont-1.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mobatek\\mobaxterm personal edition;%programfiles%\\mobatek\\mobaxterm", VulnerableApps = "%programfiles%\\mobatek\\mobaxterm personal edition\\mobaxterm.exe;%programfiles%\\mobatek\\mobaxterm\\mobaxterm.exe"}
-  l_47_4 = "tutil32.dl"
+  l_47_4 = "tutil32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\pde", VulnerableApps = "%programfiles%\\pde\\pde.exe"}
-  l_47_4 = "mediainfo_i386.dl"
+  l_47_4 = "mediainfo_i386.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mediainfo", VulnerableApps = "%programfiles%\\mediainfo\\mediainfo.exe"}
-  l_47_4 = "vsodscpl.dl"
+  l_47_4 = "vsodscpl.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mcafee\\virusscan enterprise", VulnerableApps = "scncfg32.exe"}
-  l_47_4 = "siteadv.dl"
+  l_47_4 = "siteadv.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\siteadvisor\\%version%", VulnerableApps = "sideadv.exe"}
-  l_47_4 = "mcutil.dl"
+  l_47_4 = "mcutil.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mcafee inc.\\mcafee total protection 2009", VulnerableApps = "mcoemcpy.exe"}
-  l_47_4 = "lockdown.dl"
+  l_47_4 = "lockdown.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mcafee\\virusscan enterprise", VulnerableApps = "mfeann.exe"}
-  l_47_4 = "ashldres.dl"
+  l_47_4 = "ashldres.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\mcafee.com\\vso", VulnerableApps = "mcvsshld.exe"}
-  l_47_4 = "facesdk.dl"
+  l_47_4 = "facesdk.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\luxand\\facesdk\\bin\\win64", VulnerableApps = "%programfiles%\\luxand\\facesdk\\bin\\win64\\facialfeaturedemo.exe"}
   l_47_4 = "lmiguardiandll.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\logmein;%programfiles%\\logmein\\x86;%programfiles%\\logmein\\x64", VulnerableApps = "lmiguardiansvc.exe"}
-  l_47_4 = "tts.dl"
+  l_47_4 = "tts.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\soundpad", VulnerableApps = "%programfiles%\\soundpad\\soundpad.exe"}
   l_47_4 = "quickdeskband.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "commfunc.dl"
+  l_47_4 = "commfunc.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\lenovo\\communications utility", VulnerableApps = "cammute.exe"}
-  l_47_4 = "krpt.dl"
+  l_47_4 = "krpt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\kingsoft\\wps office\\%version%\\office6", VulnerableApps = "%programfiles%\\kingsoft\\wps office\\%version%\\office6\\wpp.exe"}
-  l_47_4 = "webui.dl"
+  l_47_4 = "webui.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\itop screen recorder", VulnerableApps = "%programfiles%\\itop screen recorder\\iscrpaint.exe"}
-  l_47_4 = "rtl120.dl"
+  l_47_4 = "rtl120.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\dualsafe password manager", VulnerableApps = "%programfiles%\\dualsafe password manager\\dpminit.exe"}
-  l_47_4 = "common.dl"
+  l_47_4 = "common.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\iroot", VulnerableApps = "%programfiles%\\iroot\\romasterconnection.exe"}
-  l_47_4 = "register.dl"
+  l_47_4 = "register.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\iobit\\driver booster\\%version%", VulnerableApps = "%programfiles%\\iobit\\driver booster\\%version%\\driverbooster.exe"}
-  l_47_4 = "skinutils.dl"
+  l_47_4 = "skinutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\icqlite", VulnerableApps = "%programfiles%\\icqlite\\icqlite.exe"}
-  l_47_4 = "liteskinutils.dl"
+  l_47_4 = "liteskinutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\icqlite", VulnerableApps = "%programfiles%\\icqlite\\icqlite.exe"}
-  l_47_4 = "hpqhvsei.dl"
+  l_47_4 = "hpqhvsei.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\hp", VulnerableApps = "hpqhvind.exe"}
-  l_47_4 = "hpcustpartui.dl"
+  l_47_4 = "hpcustpartui.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\hp", VulnerableApps = "hpcustparticui.exe"}
-  l_47_4 = "iepdf32.dl"
+  l_47_4 = "iepdf32.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\handy viewer", VulnerableApps = "%programfiles%\\handy viewer\\hv.exe"}
   l_47_4 = "chrome_frame_helper.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\google\\chrome\\application;%programfiles%\\google\\chrome\\application", VulnerableApps = "chrome_frame_helper.exe"}
-  l_47_4 = "badata_x64.dl"
+  l_47_4 = "badata_x64.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\true burner", VulnerableApps = "%programfiles%\\true burner\\trueburner.exe"}
-  l_47_4 = "avkkid.dl"
+  l_47_4 = "avkkid.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\g data\\totalsecurity\\avkkid", VulnerableApps = "%programfiles%\\g data\\totalsecurity\\avkkid\\avkkid.exe"}
-  l_47_4 = "fnp_act_installer.dl"
+  l_47_4 = "fnp_act_installer.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\installshield\\%version%\\system", VulnerableApps = "%programfiles%\\installshield\\%version%\\system\\tsconfig.exe;%programfiles%\\installshield\\%version%\\system\\isdbg.exe"}
-  l_47_4 = "qrt.dl"
+  l_47_4 = "qrt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\f-secure\\anti-virus", VulnerableApps = "qrtfix.exe"}
-  l_47_4 = "eacore.dl"
+  l_47_4 = "eacore.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\electronic arts\\ea desktop\\ea desktop", VulnerableApps = "%programfiles%\\electronic arts\\ea desktop\\ea desktop\\eacoreserver.exe"}
   l_47_4 = "goopdate.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\dropbox\\update;%programfiles%\\dropbox\\update\\%version%;%localappdata%\\dropboxupdate\\update", VulnerableApps = "dropboxupdate.exe;dropboxcrashhandler.exe"}
@@ -3930,45 +3930,45 @@ IsDllInExpectedPath = function(l_47_0, l_47_1, l_47_2)
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\classic shell;%programfiles%\\open-shell", VulnerableApps = "classicexplorersettings.exe"}
   l_47_4 = "wcldll.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\cisco systems\\cisco jabber;%programfiles%\\webex\\applications;%programfiles%\\webex\\plugins", VulnerableApps = "%programfiles%\\webex\\applications\\ptinst.exe"}
-  l_47_4 = "ciscosparklauncher.dl"
+  l_47_4 = "ciscosparklauncher.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\ciscosparklauncher", VulnerableApps = "ciscocollabhost.exe"}
-  l_47_4 = "mfc140u.dl"
+  l_47_4 = "mfc140u.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\checkmal\\appcheck", VulnerableApps = "%programfiles%\\checkmal\\appcheck\\appcheck.exe"}
-  l_47_4 = "avupdate.dl"
+  l_47_4 = "avupdate.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\confer\\scanner\\upd.exe", VulnerableApps = "%programfiles%\\confer\\scanner\\upd.exe"}
   l_47_4 = "relay.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "calibre-launcher.dl"
+  l_47_4 = "calibre-launcher.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\calibre2", VulnerableApps = "calibre.exe"}
   l_47_4 = "bugsplat64.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\nitro\\pdf pro\\%programfiles%\\nitro\\pro", VulnerableApps = "bugsplathd64.exe"}
-  l_47_4 = "log.dl"
+  l_47_4 = "log.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\bitdefender antivirus free", VulnerableApps = "%programfiles%\\bitdefender antivirus free\\bdreinit.exe"}
   l_47_4 = "basicnetutils.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%localappdata%\\temp\\%version%\\application2;%programfiles%\\baidu\\baidupinyin\\%version%", VulnerableApps = "%localappdata%\\temp\\%version%\\application2\\xlgameupdate.exe"}
-  l_47_4 = "wsc.dl"
+  l_47_4 = "wsc.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\avast software\\avast", VulnerableApps = "wsc_proxy.exe"}
-  l_47_4 = "dal_keepalives.dl"
+  l_47_4 = "dal_keepalives.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\audinate\\shared files", VulnerableApps = "%programfiles%\\audinate\\shared files\\mdnsresponder.exe"}
   l_47_4 = "vender.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\asus\\gpu tweakii;%programfiles%\\asus\\vga com\\%version%", VulnerableApps = "%programfiles%\\asus\\gpu tweakii\\asusgpufanservice.exe"}
-  l_47_4 = "asus_wmi.dl"
+  l_47_4 = "asus_wmi.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\asus\\axsp\\%version%", VulnerableApps = "%programfiles%\\asus\\axsp\\%version%\\atkexcomsvc.exe"}
-  l_47_4 = "asio.dl"
+  l_47_4 = "asio.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\asus\\axsp\\%version%", VulnerableApps = "%programfiles%\\asus\\axsp\\4.02.12\\atkexcomsvc.exe"}
   l_47_4 = "corefoundation.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\common files\\apple\\apple application support;%system32%", VulnerableApps = "%programfiles%\\itunes\\ituneshelper.exe;%programfiles%\\quicktime\\quicktimeplayer.exe"}
-  l_47_4 = "duilib_u.dl"
+  l_47_4 = "duilib_u.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\anyviewer", VulnerableApps = "splashwin.exe"}
-  l_47_4 = "avdevice-54.dl"
+  l_47_4 = "avdevice-54.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\anymp4 studio\\anymp4 blu-ray creator", VulnerableApps = "%programfiles%\\anymp4 studio\\anymp4 blu-ray creator\\anymp4 blu-ray creator.exe"}
-  l_47_4 = "amindpdfcore.dl"
+  l_47_4 = "amindpdfcore.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\geekerpdf\\geekerpdf", VulnerableApps = "%programfiles%\\geekerpdf\\geekerpdf\\geekerpdf.exe"}
-  l_47_4 = "cc32290mt.dl"
+  l_47_4 = "cc32290mt.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\ahnenblatt4\\ahnenblatt4.exe", VulnerableApps = "%programfiles%\\ahnenblatt4\\ahnenblatt4.exe"}
   l_47_4 = "vcomp100.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {}
-  l_47_4 = "acrodistdll.dl"
+  l_47_4 = "acrodistdll.dll"
   l_47_3[l_47_4], l_47_5 = l_47_5, {ExpectedLocation = "%programfiles%\\adobe\\acrobat %version%\\acrobat", VulnerableApps = "%programfiles%\\adobe\\acrobat %version%\\acrobat\\acrodist.exe"}
   l_47_4 = false
   l_47_5 = false
