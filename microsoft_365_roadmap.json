@@ -14681,10 +14681,10 @@
     },
     {
         "created": "2025-10-30T23:15:09",
-        "description": "Extend Microsoft Purview Data Loss Prevention (DLP) policies and Insider Risk Management indicators to the network by integrating with your existing non-Microsoft Secure Access Service Edge (SASE) solution. This integration enables organizations to intercept and inspect traffic inline at the network layer and enforce actions based on DLP policy conditions. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, cloud storage, and content-sharing services - while managing alerts and incidents through Purview and Microsoft Defender. If configured, these signals also inform user risk indicators in Insider Risk Management.",
+        "description": "Extend Microsoft Purview Data Loss Prevention (DLP) policies and Insider Risk Management indicators to the network by integrating with your existing non-Microsoft Secure Access Service Edge (SASE) solution. This integration enables organizations to intercept and inspect traffic inline at the network layer and enforce actions based on DLP policy conditions. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, cloud storage, and content-sharing services - while managing alerts and incidents through Purview and Microsoft Defender. If configured, these signals also inform user risk indicators in Insider Risk Management",
         "id": 522095,
         "locale": null,
-        "modified": "2026-01-09T23:15:50",
+        "modified": "2026-01-22T20:00:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
@@ -14696,9 +14696,6 @@
             },
             {
                 "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Information Protection"
             },
             {
                 "tagName": "Microsoft Purview"
@@ -14719,9 +14716,6 @@
                 }
             ],
             "products": [
-                {
-                    "tagName": "Microsoft Information Protection"
-                },
                 {
                     "tagName": "Microsoft Purview"
                 }
@@ -16755,12 +16749,12 @@
         "description": "Microsoft Purview Insider Risk Management variant limit is being increased from 3 to 10 per indicator and an overall limit of 100 across all indicators. Along with this, the number of items in one detection group is being increased from 200 to 500.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 518291,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-01-22T18:30:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -70157,10 +70151,10 @@
     },
     {
         "created": "2025-03-07T01:00:51",
-        "description": "The Advanced Review Set Query Editor empowers reviewers to harness the power of real-time big data analytics on their review set data. This tool enhances data analysis by offering insights such as identifying top item types, spotting patterns, and trends within the review set. Reviewers can utilize powerful query constructs like complex filtering, pattern-based text extraction, and data format parsing to analyze and find key information specific to their case or organization. The results can then be visualized using time charts, histograms, and other flexible charting solutions, providing a comprehensive understanding of the data's story. ",
+        "description": "The Advanced Review Set Explorer empowers reviewers to harness the power of real-time big data analytics on their review set data leveraging. This tool enhances data analysis by offering insights such as identifying top item types, spotting patterns, and trends within the review set. Reviewers can utilize powerful Kusto query constructs like complex filtering, pattern-based text extraction, and data format parsing to analyze and find key information specific to their case or organization. The results can then be visualized using various flexible charting solutions, providing a comprehensive understanding of the data's story. ",
         "id": 484086,
         "locale": null,
-        "modified": "2025-12-12T00:15:16",
+        "modified": "2026-01-22T18:30:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "February CY2026",
@@ -70208,7 +70202,7 @@
                 }
             ]
         },
-        "title": "Microsoft Purview compliance portal: eDiscovery - Advanced Review Set Query Editor"
+        "title": "Microsoft Purview compliance portal: eDiscovery - Advanced Review Set Explorer"
     },
     {
         "created": "2025-03-06T22:45:53",
@@ -76824,12 +76818,12 @@
         "description": "With this update, Insider Risk Management will help admins identify risky AI usage. We are adding new detections of intentional and unintentional insider risk activity on generative AI apps that can pose a risk to an organization. Activities will include risky prompts containing sensitive info or risky intent and sensitive responses containing sensitive info or is generated from sensitive files or sites.  Coverage will span across Microsoft Copilots and 3P generative AI apps. These detections will also contribute to Adaptive Protection insider risk levels.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. #copilotcontrolsystem",
         "id": 480730,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-01-22T18:30:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -76884,7 +76878,7 @@
                 }
             ]
         },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Risky AI usage"
+        "title": "Microsoft Purview: Insider Risk Management - Risky AI usage"
     },
     {
         "created": "2025-02-11T00:15:15",
