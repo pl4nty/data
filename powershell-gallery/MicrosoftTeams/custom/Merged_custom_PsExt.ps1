@@ -1599,6 +1599,80 @@ function Set-CsPhoneNumberAssignment {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+function Set-CsPhoneNumberTenantConfiguration {
+    param(
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        ${AssignmentEmailEnabled},
+        
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        ${UnassignmentEmailEnabled},
+        
+        [Parameter(Mandatory=$false)]
+        [System.Int32]
+        ${AssignmentBlockedDays},
+        
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        ${AssignmentBlockedForever},
+
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        ${AllowOnPremToOnlineMigration},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsPhoneNumberTenantConfiguration @PSBoundParameters @httpPipelineArgs
+
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-Warning($result)
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Write diagnostic message back to console
 
 function Get-CsBusinessVoiceDirectoryDiagnosticData {
@@ -5972,6 +6046,100 @@ function Get-CsAutoAttendantTenantInformation {
 
 # Objective of this custom file: transforming the results to the custom objects
 
+function Get-CsAutoRecordingTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the auto recording template which is retrieved.
+		${Id},
+		
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            # Map Id to Identity for internal cmdlet
+            if ($PSBoundParameters.ContainsKey("Id")) {
+                $PSBoundParameters.Add("Identity", $Id)
+                $PSBoundParameters.Remove("Id") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsAutoRecordingTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $AutoRecording = [Microsoft.Rtc.Management.Hosted.Online.Models.AutoRecording]::new()
+                $AutoRecording.ParseFromGetResponse($result)
+            } 
+            else {
+                $AllAutoRecordingTemplate = @()
+                
+                if ($result.AutoRecordingTemplate -ne $null) {
+                    foreach ($model in $result.AutoRecordingTemplate) {
+                        $AutoRecording = [Microsoft.Rtc.Management.Hosted.Online.Models.AutoRecording]::new()
+                        $AllAutoRecordingTemplate += $AutoRecording.ParseFromDtoModel($model)
+                    }
+                }
+                
+                $AllAutoRecordingTemplate
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()  
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
 function Get-CsCallQueue {
     [CmdletBinding()]
     param(
@@ -8394,6 +8562,145 @@ function New-CsAutoAttendantPrompt {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsAutoRecordingTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the auto recording template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the auto recording template.
+        ${Description},
+
+        [Parameter(Mandatory=$false, position=2)]
+        [System.Boolean]
+        # The TranscriptionEnabled parameter value indicating whether transcription is enabled.
+        ${TranscriptionEnabled},
+
+        [Parameter(Mandatory=$false, position=3)]
+        [System.Boolean]
+        # The RecordingEnabled parameter value indicating whether recording is enabled.
+        ${RecordingEnabled},
+
+        [Parameter(Mandatory=$false, position=4)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.AgentViewPermission]
+        # The AgentViewPermission parameter value indicating agent view permission.
+        ${AgentViewPermission},
+
+        [Parameter(Mandatory=$true, position=5)]
+        [System.String]
+        # The SharePointHostName parameter provides the SharePoint host name where recordings are stored.
+        ${SharePointHostName},
+
+        [Parameter(Mandatory=$true, position=6)]
+        [System.String]
+        # The SharePointSiteName parameter provides the SharePoint site name where recordings are stored.
+        ${SharePointSiteName},
+
+        [Parameter(Mandatory=$true, position=7)]
+        [System.String]
+        # The RecordingDocumentOwner parameter provides recording document owner.
+        ${RecordingDocumentOwner},  
+
+        [Parameter(Mandatory=$false, position=8)]
+        [System.String]
+        # The AutoRecordingAnnouncementAudioFileId parameter provides the audio file ID for the auto-recording announcement.
+        ${AutoRecordingAnnouncementAudioFileId},
+
+        [Parameter(Mandatory=$false, position=9)]
+        [System.String]
+        # The AutoRecordingAnnouncementTextToSpeechPrompt parameter provides the text-to-speech prompt for the auto-recording announcement.
+        ${AutoRecordingAnnouncementTextToSpeechPrompt},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # Build the request body
+            $requestBody = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AutoRecordingTemplateDtoModel]::new()
+            $requestBody.Name = $Name
+            $requestBody.Description = $Description
+            $requestBody.SharePointHostName = $SharePointHostName
+            $requestBody.SharePointSiteName = $SharePointSiteName
+            $requestBody.RecordingDocumentOwner = $RecordingDocumentOwner
+            
+            if ($PSBoundParameters.ContainsKey('TranscriptionEnabled')) {
+                $requestBody.TranscriptionEnabled = $TranscriptionEnabled
+            }
+            
+            if ($PSBoundParameters.ContainsKey('RecordingEnabled')) {
+                $requestBody.RecordingEnabled = $RecordingEnabled
+            }
+            
+            if ($PSBoundParameters.ContainsKey('AgentViewPermission')) {
+                $requestBody.AgentViewPermission = [int]$AgentViewPermission
+            }
+            
+            if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementAudioFileId')) {
+                $requestBody.AutoRecordingAnnouncementAudioFileId = $AutoRecordingAnnouncementAudioFileId
+            }
+            
+            if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementTextToSpeechPrompt')) {
+                $requestBody.AutoRecordingAnnouncementTextToSpeechPrompt = $AutoRecordingAnnouncementTextToSpeechPrompt
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsAutoRecordingTemplate -Body $requestBody -ErrorAction Stop @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($internalOutput.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.AutoRecording]::new()
+            $output.ParseFromCreateResponse($internalOutput)
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: parsing the return result to the CallQueue object type.
 
 function New-CsCallQueue {
@@ -8855,6 +9162,11 @@ function New-CsCallQueue {
         ${SharedCallQueueHistoryTemplateId},
 
         [Parameter(Mandatory=$false)]
+        [System.String]
+        # Id for Auto Recording template.
+        ${AutoRecordingTemplateId},
+
+        [Parameter(Mandatory=$false)]
         [Switch]
         # Allow the cmdlet to run anyway
         ${Force},
@@ -8996,6 +9308,23 @@ function New-CsCallQueue {
 
             if ($PSBoundParameters.ContainsKey('SharedCallQueueHistoryTemplateId') -and $SharedCallQueueHistoryTemplateId -eq $null) {
                 $null = $PSBoundParameters.Remove('SharedCallQueueHistoryTemplateId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and $AutoRecordingTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('AutoRecordingTemplateId')
+            }
+
+            # Validate ConferenceMode requirement for AutoRecordingTemplateId
+            # ConferenceMode must be enabled before setting AutoRecordingTemplateId
+            $conferenceModeValue = $ConferenceMode
+            if (!$conferenceModeValue -and $PSBoundParameters.ContainsKey('ConferenceMode')) {
+                $conferenceModeValue = $PSBoundParameters['ConferenceMode']
+            }
+
+            if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and ![string]::IsNullOrWhiteSpace($AutoRecordingTemplateId)) {
+                if ($conferenceModeValue -ne $true) {
+                    throw "AutoRecordingTemplateId can only be set when ConferenceMode is enabled. Please set ConferenceMode to `$true before setting AutoRecordingTemplateId."
+                }
             }
 
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsCallQueue @PSBoundParameters @httpPipelineArgs
@@ -10170,6 +10499,78 @@ function Remove-CsAutoAttendant {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsAutoRecordingTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the auto recording template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {      
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsAutoRecordingTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: print out the diagnostics
 
 function Remove-CsCallQueue {
@@ -11118,6 +11519,203 @@ function Set-CsAutoAttendant {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsAutoRecordingTemplate {
+	[CmdletBinding(DefaultParameterSetName='Identity', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, ParameterSetName='Identity', position=0)]
+        [System.String]
+        # The Identity parameter is the unique identifier for the auto recording template.
+        ${Identity},
+
+        [Parameter(Mandatory=$true, ParameterSetName='Instance', ValueFromPipeline=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the auto recording template to be modified.
+        ${Instance},
+            
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the auto recording template.
+        ${Name},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The Description parameter provides a description for the auto recording template.
+        ${Description},
+
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        # The TranscriptionEnabled parameter value indicating whether transcription is enabled.
+        ${TranscriptionEnabled},
+
+        [Parameter(Mandatory=$false)]
+        [System.Boolean]
+        # The RecordingEnabled parameter value indicating whether recording is enabled.
+        ${RecordingEnabled},
+
+        [Parameter(Mandatory=$false)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.AgentViewPermission]
+        # The AgentViewPermission parameter value indicating agent view permission.
+        ${AgentViewPermission},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SharePointHostName parameter provides the SharePoint host name where recordings are stored.
+        ${SharePointHostName},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SharePointSiteName parameter provides the SharePoint site name where recordings are stored.
+        ${SharePointSiteName},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The RecordingDocumentOwner parameter provides recording document owner.
+        ${RecordingDocumentOwner},  
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The AutoRecordingAnnouncementAudioFileId parameter provides the audio file ID for the auto-recording announcement.
+        ${AutoRecordingAnnouncementAudioFileId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The AutoRecordingAnnouncementTextToSpeechPrompt parameter provides the text-to-speech prompt for the auto-recording announcement.
+        ${AutoRecordingAnnouncementTextToSpeechPrompt},
+
+        [Parameter(Mandatory=$false)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed.
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            # Determine the identity to use
+            $templateId = $null
+            if ($PSCmdlet.ParameterSetName -eq 'Instance') {
+                if ([string]::IsNullOrEmpty(${Instance}.Id)) {
+                    throw "Instance must have a valid Id property"
+                }
+                $templateId = ${Instance}.Id
+            }
+            else {
+                $templateId = $Identity
+            }
+
+            # Get the existing template using the custom Get cmdlet to use as base
+            $existingTemplate = Get-CsAutoRecordingTemplate -Id $templateId -ErrorAction Stop
+            
+            if ($existingTemplate -eq $null) {
+                throw "Auto Recording Template with Id '$templateId' not found"
+            }
+
+            # Build the request body, using existing values as defaults
+            $requestBody = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AutoRecordingTemplateDtoModel]::new()
+            
+            # Use provided parameters or fall back to Instance or existing values
+            if ($PSCmdlet.ParameterSetName -eq 'Instance') {
+                $requestBody.Name = if ($PSBoundParameters.ContainsKey('Name')) { $Name } else { ${Instance}.Name }
+                $requestBody.Description = if ($PSBoundParameters.ContainsKey('Description')) { $Description } else { ${Instance}.Description }
+                $requestBody.TranscriptionEnabled = if ($PSBoundParameters.ContainsKey('TranscriptionEnabled')) { $TranscriptionEnabled } else { ${Instance}.TranscriptionEnabled }
+                $requestBody.RecordingEnabled = if ($PSBoundParameters.ContainsKey('RecordingEnabled')) { $RecordingEnabled } else { ${Instance}.RecordingEnabled }
+                $requestBody.SharePointHostName = if ($PSBoundParameters.ContainsKey('SharePointHostName')) { $SharePointHostName } else { ${Instance}.SharePointHostName }
+                $requestBody.SharePointSiteName = if ($PSBoundParameters.ContainsKey('SharePointSiteName')) { $SharePointSiteName } else { ${Instance}.SharePointSiteName }
+                $requestBody.RecordingDocumentOwner = if ($PSBoundParameters.ContainsKey('RecordingDocumentOwner')) { $RecordingDocumentOwner } else { ${Instance}.RecordingDocumentOwner }
+                
+                if ($PSBoundParameters.ContainsKey('AgentViewPermission')) {
+                    $requestBody.AgentViewPermission = [int]$AgentViewPermission
+                } elseif (${Instance}.AgentViewPermission -ne $null) {
+                    $requestBody.AgentViewPermission = [int]${Instance}.AgentViewPermission
+                }
+                
+                $requestBody.AutoRecordingAnnouncementAudioFileId = if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementAudioFileId')) { $AutoRecordingAnnouncementAudioFileId } else { ${Instance}.AutoRecordingAnnouncementAudioFileId }
+                $requestBody.AutoRecordingAnnouncementTextToSpeechPrompt = if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementTextToSpeechPrompt')) { $AutoRecordingAnnouncementTextToSpeechPrompt } else { ${Instance}.AutoRecordingAnnouncementTextToSpeechPrompt }
+            }
+            else {
+                # Identity parameter set - use provided parameters or existing values from the custom AutoRecording object
+                $requestBody.Name = if ($PSBoundParameters.ContainsKey('Name')) { $Name } else { $existingTemplate.Name }
+                $requestBody.Description = if ($PSBoundParameters.ContainsKey('Description')) { $Description } else { $existingTemplate.Description }
+                $requestBody.TranscriptionEnabled = if ($PSBoundParameters.ContainsKey('TranscriptionEnabled')) { $TranscriptionEnabled } else { $existingTemplate.TranscriptionEnabled }
+                $requestBody.RecordingEnabled = if ($PSBoundParameters.ContainsKey('RecordingEnabled')) { $RecordingEnabled } else { $existingTemplate.RecordingEnabled }
+                $requestBody.SharePointHostName = if ($PSBoundParameters.ContainsKey('SharePointHostName')) { $SharePointHostName } else { $existingTemplate.SharePointHostName }
+                $requestBody.SharePointSiteName = if ($PSBoundParameters.ContainsKey('SharePointSiteName')) { $SharePointSiteName } else { $existingTemplate.SharePointSiteName }
+                $requestBody.RecordingDocumentOwner = if ($PSBoundParameters.ContainsKey('RecordingDocumentOwner')) { $RecordingDocumentOwner } else { $existingTemplate.RecordingDocumentOwner }
+                
+                if ($PSBoundParameters.ContainsKey('AgentViewPermission')) {
+                    $requestBody.AgentViewPermission = [int]$AgentViewPermission
+                } elseif ($existingTemplate.AgentViewPermission -ne $null) {
+                    $requestBody.AgentViewPermission = [int]$existingTemplate.AgentViewPermission
+                }
+                
+                $requestBody.AutoRecordingAnnouncementAudioFileId = if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementAudioFileId')) { $AutoRecordingAnnouncementAudioFileId } else { $existingTemplate.AutoRecordingAnnouncementAudioFileId }
+                $requestBody.AutoRecordingAnnouncementTextToSpeechPrompt = if ($PSBoundParameters.ContainsKey('AutoRecordingAnnouncementTextToSpeechPrompt')) { $AutoRecordingAnnouncementTextToSpeechPrompt } else { $existingTemplate.AutoRecordingAnnouncementTextToSpeechPrompt }
+            }
+
+            # ShouldProcess for confirmation
+            $target = "Auto Recording Template with Id: $templateId"
+            $action = "Update"
+            
+            if ($Force -or $PSCmdlet.ShouldProcess($target, $action)) {
+                
+                $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsAutoRecordingTemplate -Identity $templateId -Body $requestBody -ErrorAction Stop @httpPipelineArgs
+
+                # Stop execution if internal cmdlet is failing
+                if ($result -eq $null) {
+                    return $null
+                }
+
+                Write-AdminServiceDiagnostic($result.Diagnostic)
+
+                $output = [Microsoft.Rtc.Management.Hosted.Online.Models.AutoRecording]::new()
+                $output.ParseFromUpdateResponse($result)
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: replacing the parameters' names.
 
 function Set-CsCallQueue {
@@ -11577,6 +12175,11 @@ function Set-CsCallQueue {
         [System.String]
         # Id for Shared Call Queue History template.
         ${SharedCallQueueHistoryTemplateId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # Id for Auto Recording template.
+        ${AutoRecordingTemplateId},
 
         [Parameter(Mandatory=$false)]
         [System.String]
@@ -12190,6 +12793,26 @@ function Set-CsCallQueue {
             if (!$PSBoundParameters.ContainsKey('SharedCallQueueHistoryTemplateId') -and $null -ne $existingCallQueue.SharedCallQueueHistoryTemplateId) {
                 $PSBoundParameters.Add('SharedCallQueueHistoryTemplateId', $existingCallQueue.SharedCallQueueHistoryTemplateId)
             }
+
+            if (!$PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and $null -ne $existingCallQueue.AutoRecordingTemplateId) {
+                $PSBoundParameters.Add('AutoRecordingTemplateId', $existingCallQueue.AutoRecordingTemplateId)
+            }
+
+            # Validate ConferenceMode requirement for AutoRecordingTemplateId
+            # ConferenceMode must be enabled before setting AutoRecordingTemplateId
+            $conferenceModeValue = $ConferenceMode
+            if (!$conferenceModeValue -and $PSBoundParameters.ContainsKey('ConferenceMode')) {
+                $conferenceModeValue = $PSBoundParameters['ConferenceMode']
+            }
+            elseif (!$conferenceModeValue) {
+                $conferenceModeValue = $existingCallQueue.ConferenceMode
+            }
+
+            if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and ![string]::IsNullOrWhiteSpace($AutoRecordingTemplateId)) {
+                if ($conferenceModeValue -ne $true) {
+                    throw "AutoRecordingTemplateId can only be set when ConferenceMode is enabled. Please set ConferenceMode to `$true before setting AutoRecordingTemplateId."
+                }
+            }
    
 
             # Update the CallQueue.
@@ -12478,8 +13101,6 @@ function Set-CsMainlineAttendantQuestionAnswerFlow {
                     # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
                     $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
                     $Instance.KnowledgeBase = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString, "local_file")
-
-                    $Instance.KnowledgeBase
                 }
             } catch {
                 throw "Failed to read KnowledgeBase file: $_"
