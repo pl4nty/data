@@ -99,6 +99,14 @@ if l_0_0 > 60 then
                     if not l_0_35 and l_0_36 then
                       (bm.add_related_string)("bmInfoFailReason", tostring(R35_PC260), R35_PC260)
                     end
+                    local l_0_37 = pcall(reportBmInfo)
+                    -- DECOMPILER ERROR at PC273: Overwrote pending register: R35 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC278: Overwrote pending register: R37 in 'AssignReg'
+
+                    if not l_0_37 and reportBmInfo then
+                      (bm.add_related_string)(R35_PC260, tostring(R37_PC276), R37_PC276)
+                    end
                     reportTimingData()
                     return mp.INFECTED
                   end
@@ -113,7 +121,7 @@ if l_0_0 > 60 then
 end
 do
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC273: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC289: freeLocal<0 in 'ReleaseLocals'
 
 end
 
