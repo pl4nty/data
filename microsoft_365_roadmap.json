@@ -1,5 +1,109 @@
 [
     {
+        "created": "2026-01-23T00:15:29",
+        "description": "This update introduces logged-in user details (user email) on the device onboarding page for Windows devices bringing it in line with the experience for MacOS devices. \u200bAdmins can now see which user is currently signed in on a device, making It faster to confirm ownership and troubleshoot issues. ",
+        "id": 548669,
+        "locale": null,
+        "modified": "2026-01-23T00:15:29",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention- Logged-in user details on the Purview device onboarding page"
+    },
+    {
+        "created": "2026-01-23T00:15:29",
+        "description": "As with Teams Rooms on Windows, IT Admins can now set up Teams Rooms on Android to show dynamic signage content on the front-of-room display when the device is not in use for meetings or presentation. Configuration is available for tenant-wide and room-specific settings via the Teams Rooms Pro Management portal. The feature supports select third-party digital signage partners like Appspace and XOGO, and is included with Teams Rooms Pro.",
+        "id": 548647,
+        "locale": null,
+        "modified": "2026-01-23T00:15:29",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Digital signage in Teams Rooms on Android"
+    },
+    {
         "created": "2026-01-22T00:00:09",
         "description": "Any newly created Declarative Agents can now reliably ground answers in scanned PDFs and image-based documents referenced from SharePoint, unlocking a major class of enterprise content that was previously hard to use in agent scenarios. ",
         "id": 550514,
@@ -6697,9 +6801,9 @@
         "description": "This feature provides additional languages support for AI generated audio overview of top 10 news items in the Viva Connections news reader experience. Additionally, if the SharePoint Knowledge Agent is available in a site, site pages and news posts will now have the AI audio summary experience.",
         "id": 535423,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14513,9 +14617,9 @@
         "description": "Interact in real time with podcasts created by Copilot in Word. Today, audio summaries help you absorb content on the go, but they\u2019re one-way\u2014listeners can\u2019t clarify or explore without stopping. With this feature, you can ask questions with your voice while listening and get answers instantly, staying in the audio experience and understanding content faster.",
         "id": 523206,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14568,9 +14672,9 @@
         "description": "Interact in real time with read aloud in Word with Copilot. While your document is being read aloud, you can ask questions with your voice\u2014such as \u201cWhat does this mean?\u201d or \u201cSummarize this section\u201d\u2014and get answers instantly. No need to pause and search manually. This keeps you in context, reduces interruptions, and helps you understand and act faster.",
         "id": 523205,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -21886,9 +21990,9 @@
         "description": "In addition to Teams Cast and HDMI ingest; you are able to share wirelessly using Miracast with Teams Rooms on Windows devices including touch boards. Available in Teams Rooms Pro.",
         "id": 506748,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22644,9 +22748,9 @@
         "description": "When critical issues impact room functionality, users see a banner notification on both the front-of-room display and console in Teams Rooms on Windows.  Room health signals help get issues resolved quickly and ensure productive meetings. Available with Teams Rooms Pro.",
         "id": 508521,
         "locale": null,
-        "modified": "2025-11-05T00:00:26",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32368,12 +32472,12 @@
         "description": "Managers will be able to export the default sections from the Executive Summary report in Viva Glint directly to editable PowerPoint slides. This enhancement allows for easier and quicker consumption of this report outside Viva Glint, compared to the previous export method which included static screenshots.",
         "id": 499661,
         "locale": null,
-        "modified": "2025-08-12T23:00:16",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49046,9 +49150,9 @@
         "description": "This feature borrows the familiar custom permissions menu in Office and replaces the existing custom permissions UI in the Microsoft Purview Information Protection File Labeler. The new menu enables viewer, restricted editor, editor and owner permissions to be assigned to multiple groups at the same time.",
         "id": 493749,
         "locale": null,
-        "modified": "2025-05-15T23:15:36",
+        "modified": "2026-01-23T00:15:29",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49067,12 +49171,6 @@
             },
             {
                 "tagName": "Desktop"
-            },
-            {
-                "tagName": "Azure Information Protection"
-            },
-            {
-                "tagName": "Microsoft Information Protection"
             },
             {
                 "tagName": "Microsoft Purview"
@@ -49105,12 +49203,6 @@
                 }
             ],
             "products": [
-                {
-                    "tagName": "Azure Information Protection"
-                },
-                {
-                    "tagName": "Microsoft Information Protection"
-                },
                 {
                     "tagName": "Microsoft Purview"
                 }
