@@ -130,7 +130,8 @@
         },
         "KillSwitchPolyFill": {
             "disableFeatures": [
-                "RuntimeOnMessageWebExtensionPolyfillSupport"
+                "RuntimeOnMessageWebExtensionPolyfillSupport",
+                "ExtensionBrowserNamespaceAlternative"
             ]
         },
         "OverrideEvents": {

@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260120.8.0",
+        "CalendarCompanionDFVersion": "1.20260121.9.0",
         "CalendarCompanionMsitVersion": "1.20260113.8.0",
         "CalendarCompanionProdVersion": "1.20260109.9.0",
         "CompanionRing": "Prod",
@@ -1882,6 +1882,7 @@
         "enableClientTypeFilter": false,
         "enableDebugPanel": false,
         "enableVerticalsViaConfig": true,
+        "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "refactorFeedbackConfig_shared": 1,
         "searchBoxLoggingDelay": 0,
@@ -2124,6 +2125,7 @@
         },
         "enableBackgroundAuthOnHost_shared": 1,
         "hostRingBucket": "80",
+        "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
         "refactorFeedbackConfig_shared ": 1,
