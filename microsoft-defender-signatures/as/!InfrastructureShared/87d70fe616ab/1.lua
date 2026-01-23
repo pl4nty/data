@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\79d74b435544\1.luac 
+-- Command line: lua\!InfrastructureShared\87d70fe616ab\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,12 +8,12 @@ if not isnull(l_0_0) and not isnull(l_0_0.image_path) and not isnull(l_0_0.ppid)
   local l_0_1 = (string.lower)(l_0_0.image_path)
   local l_0_2 = l_0_1:match("([^\\]+)$")
   do
-    if l_0_2 == "powershell.exe" then
+    if l_0_2 == "powershell.exe" or l_0_2 == "cmd.exe" then
       local l_0_3 = (string.lower)((mp.GetProcessCommandLine)(l_0_0.ppid))
       if isnull(l_0_3) then
         return mp.CLEAN
       end
-      if (string.find)(l_0_3, ".ps1", 1, true) then
+      if (string.find)(l_0_3, ".ps1", 1, true) or (string.find)(l_0_3, ".bat", 1, true) or (string.find)(l_0_3, ".cmd", 1, true) then
         return mp.CLEAN
       end
     end
