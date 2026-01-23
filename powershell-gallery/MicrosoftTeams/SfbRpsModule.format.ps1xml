@@ -4762,6 +4762,10 @@
 								<Label>Pattern</Label>
 								<PropertyName>Pattern</PropertyName>
 							</ListItem>
+							<ListItem>
+								<Label>ResourceAccount</Label>
+								<PropertyName>ResourceAccount</PropertyName>
+							</ListItem>
 						</ListItems>
 					</ListEntry>
 				</ListEntries>
@@ -4795,6 +4799,10 @@
 							<ListItem>
 								<Label>Pattern</Label>
 								<PropertyName>Pattern</PropertyName>
+							</ListItem>
+							<ListItem>
+								<Label>ResourceAccount</Label>
+								<PropertyName>ResourceAccount</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>
@@ -25071,6 +25079,9 @@
 							<ListItem>
 								<PropertyName>SharedCallQueueHistoryTemplateId</PropertyName>
 							</ListItem>
+							<ListItem>
+								<PropertyName>AutoRecordingTemplateId</PropertyName>
+							</ListItem>
 						</ListItems>
 					</ListEntry>
 				</ListEntries>
@@ -26325,5 +26336,6 @@
 		</View>
 	</ViewDefinitions>
 </Configuration>
+
 <!-- SIG # Begin signature block
  -->

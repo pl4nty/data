@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.5.0'
+ModuleVersion = '7.6.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -91,6 +91,7 @@ FunctionsToExport =  @(
 	,'Get-CsAutoAttendantSupportedLanguage'
 	,'Get-CsAutoAttendantSupportedTimeZone'
 	,'Get-CsAutoAttendantTenantInformation'
+	,'Get-CsAutoRecordingTemplate'
 	,'Get-CsBatchPolicyAssignmentOperation'
 	,'Get-CsCallingLineIdentity'
 	,'Get-CsCallQueue'
@@ -142,6 +143,7 @@ FunctionsToExport =  @(
 	,'Get-CsPhoneNumberAssignment'
 	,'Get-CsPhoneNumberPolicyAssignment'
 	,'Get-CsPhoneNumberTag'
+	,'Get-CsPhoneNumberTenantConfiguration'
 	,'Get-CsPolicyPackage'
 	,'Get-CsSdgBulkSignInRequestStatus'
 	,'Get-CsSDGBulkSignInRequestsSummary'
@@ -151,14 +153,12 @@ FunctionsToExport =  @(
 	,'Get-CsTeamsEmergencyCallRoutingPolicy'
 	,'Get-CsTeamsEnhancedEncryptionPolicy'
 	,'Get-CsTeamsGuestCallingConfiguration'
-	,'Get-CsTeamsGuestMeetingConfiguration'
 	,'Get-CsTeamsGuestMessagingConfiguration'
 	,'Get-CsTeamsIPPhonePolicy'
 	,'Get-CsTeamsMediaLoggingPolicy'
 	,'Get-CsTeamsMeetingBroadcastConfiguration'
 	,'Get-CsTeamsMeetingBroadcastPolicy'
 	,'Get-CsTeamsMigrationConfiguration'
-	,'Get-CsTeamsMobilityPolicy'
 	,'Get-CsTeamsNetworkRoamingPolicy'
 	,'Get-CsTeamsRoomVideoTeleConferencingPolicy'
 	,'Get-CsTeamsSettingsCustomApp'
@@ -198,6 +198,7 @@ FunctionsToExport =  @(
 	,'Get-CsUserPolicyPackage'
 	,'Get-CsUserPolicyPackageRecommendation'
 	,'Get-CsVideoInteropServiceProvider'
+	,'Get-CsAiAgents'
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Get-CsSharedCallQueueHistoryTemplate'
@@ -222,7 +223,6 @@ FunctionsToExport =  @(
 	,'Grant-CsTeamsMeetingBroadcastPolicy'
 	,'Grant-CsTeamsMeetingPolicy'
 	,'Grant-CsTeamsMessagingPolicy'
-	,'Grant-CsTeamsMobilityPolicy'
 	,'Grant-CsTeamsRoomVideoTeleConferencingPolicy'
 	,'Grant-CsTeamsSurvivableBranchAppliancePolicy'
 	,'Grant-CsTeamsUpdateManagementPolicy'
@@ -246,6 +246,7 @@ FunctionsToExport =  @(
 	,'New-CsAutoAttendantMenu'
 	,'New-CsAutoAttendantMenuOption'
 	,'New-CsAutoAttendantPrompt'
+	,'New-CsAutoRecordingTemplate'
 	,'New-CsBatchPolicyAssignmentOperation'
 	,'New-CsBatchPolicyPackageAssignmentOperation'
 	,'New-CsCallingLineIdentity'
@@ -282,7 +283,6 @@ FunctionsToExport =  @(
 	,'New-CsTeamsEnhancedEncryptionPolicy'
 	,'New-CsTeamsIPPhonePolicy'
 	,'New-CsTeamsMeetingBroadcastPolicy'
-	,'New-CsTeamsMobilityPolicy'
 	,'New-CsTeamsNetworkRoamingPolicy'
 	,'New-CsTeamsRoomVideoTeleConferencingPolicy'
 	,'New-CsTeamsShiftsConnectionBatchTeamMap'
@@ -312,6 +312,7 @@ FunctionsToExport =  @(
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
+	,'Remove-CsAutoRecordingTemplate'
 	,'Remove-CsCallingLineIdentity'
 	,'Remove-CsCallQueue'
 	,'Remove-CsCustomPolicyPackage'
@@ -339,6 +340,7 @@ FunctionsToExport =  @(
 	,'Remove-CsPhoneNumberAssignment'
 	,'Remove-CsPhoneNumberAssignmentBlock'
 	,'Remove-CsPhoneNumberTag'
+	,'Remove-CsPhoneNumberTenantConfiguration'
 	,'Remove-CsTeamsAudioConferencingPolicy'
 	,'Remove-CsTeamsCallParkPolicy'
 	,'Remove-CsTeamsCortanaPolicy'
@@ -346,7 +348,6 @@ FunctionsToExport =  @(
 	,'Remove-CsTeamsEnhancedEncryptionPolicy'
 	,'Remove-CsTeamsIPPhonePolicy'
 	,'Remove-CsTeamsMeetingBroadcastPolicy'
-	,'Remove-CsTeamsMobilityPolicy'
 	,'Remove-CsTeamsNetworkRoamingPolicy'
 	,'Remove-CsTeamsRoomVideoTeleConferencingPolicy'
 	,'Remove-CsTeamsShiftsConnection'
@@ -375,6 +376,7 @@ FunctionsToExport =  @(
 	,'Set-CsApplicationAccessPolicy'
 	,'Set-CsApplicationMeetingConfiguration'
 	,'Set-CsAutoAttendant'
+	,'Set-CsAutoRecordingTemplate'
 	,'Set-CsCallingLineIdentity'
 	,'Set-CsCallQueue'
 	,'Set-CsInboundBlockedNumberPattern'
@@ -407,19 +409,18 @@ FunctionsToExport =  @(
 	,'Set-CsPhoneNumberAssignmentBlock'
 	,'Set-CsPhoneNumberPolicyAssignment'
 	,'Set-CsPhoneNumberTag'
+	,'Set-CsPhoneNumberTenantConfiguration'
 	,'Set-CsTeamsAudioConferencingPolicy'
 	,'Set-CsTeamsCallParkPolicy'
 	,'Set-CsTeamsCortanaPolicy'	
 	,'Set-CsTeamsEmergencyCallRoutingPolicy'
 	,'Set-CsTeamsEnhancedEncryptionPolicy'
 	,'Set-CsTeamsGuestCallingConfiguration'
-	,'Set-CsTeamsGuestMeetingConfiguration'
 	,'Set-CsTeamsGuestMessagingConfiguration'
 	,'Set-CsTeamsIPPhonePolicy'
 	,'Set-CsTeamsMeetingBroadcastConfiguration'
 	,'Set-CsTeamsMeetingBroadcastPolicy'
 	,'Set-CsTeamsMigrationConfiguration'
-	,'Set-CsTeamsMobilityPolicy'
 	,'Set-CsTeamsNetworkRoamingPolicy'
 	,'Set-CsTeamsRoomVideoTeleConferencingPolicy'
 	,'Set-CsTeamsSettingsCustomApp'
@@ -565,9 +566,11 @@ CmdletsToExport = @(
 	,'Get-CsTeamsAudioConferencingCustomPromptsConfiguration'
 	,'Get-CsTeamsSipDevicesConfiguration'
 	,'Get-CsTeamsCustomBannerText'
+    ,'Get-CsTeamsGuestMeetingConfiguration'
     ,'Get-CsTeamsVdiPolicy'
 	,'Get-CsTeamsMediaConnectivityPolicy'
     ,'Get-CsTeamsMeetingConfiguration'
+	,'Get-CsTeamsMobilityPolicy'
 	,'Get-CsTeamsWorkLocationDetectionPolicy'
     ,'Get-CsTeamsRecordingRollOutPolicy'
 	,'Get-CsTeamsRemoteLogCollectionConfiguration'
@@ -579,6 +582,10 @@ CmdletsToExport = @(
 	,'Get-CsTeamsMultiTenantOrganizationConfiguration'
 	,'Get-CsTeamsPersonalAttendantPolicy'
     ,'Get-CsPrivacyConfiguration'
+	,'Get-DirectToGroupAssignmentsMigrationStatus'
+    ,'Get-GroupAssignmentRecommendationsPerPolicyName'
+    ,'Get-GroupAssignmentRecommendationsPerPolicyType'
+    ,'Get-GroupPolicyAssignmentConflict'
 	,'Grant-CsTeamsAIPolicy'
     ,'Grant-CsTeamsMeetingBrandingPolicy'
     ,'Grant-CsExternalAccessPolicy'
@@ -598,9 +605,13 @@ CmdletsToExport = @(
 	,'Grant-CsTeamsWorkLocationDetectionPolicy'
     ,'Grant-CsTeamsBYODAndDesksPolicy'
 	,'Grant-CsTeamsPersonalAttendantPolicy'
+    ,'Grant-CsTeamsMobilityPolicy'
+	,'Invoke-ClearDirectToGroupAssignmentMigration'
+	,'Invoke-StartDirectToGroupAssignmentMigration'
     ,'New-Team'
     ,'New-TeamChannel'
     ,'New-TeamsApp'
+	,'New-CsPhoneNumberBulkUpdateTagsOrder'
 	,'New-CsTeamsAIPolicy'
     ,'New-CsTeamsMessagingPolicy'
     ,'New-CsTeamsMeetingPolicy'
@@ -612,6 +623,7 @@ CmdletsToExport = @(
 	,'New-CsTeamsMediaConnectivityPolicy'
     ,'New-CsTeamsMeetingBrandingTheme'
     ,'New-CsTeamsMeetingBackgroundImage'
+	,'New-CsTeamsMobilityPolicy'
     ,'New-CsTeamsNdiAssuranceSlate'
     ,'New-CsTeamsMeetingBrandingPolicy'
     ,'New-CsTeamsEmergencyCallingPolicy'
@@ -671,6 +683,7 @@ CmdletsToExport = @(
     ,'Remove-CsTeamsAppPermissionPolicy'
     ,'Remove-CsTeamsAppSetupPolicy'
     ,'Remove-CsTeamsMeetingTemplatePermissionPolicy'
+	,'Remove-CsTeamsMobilityPolicy'
     ,'Remove-CsLocationPolicy'
     ,'Remove-CsTeamsCarrierEmergencyCallRoutingPolicy'
     ,'Remove-CsTeamsVirtualAppointmentsPolicy'
@@ -733,6 +746,7 @@ CmdletsToExport = @(
 	,'Set-CsTeamsAudioConferencingCustomPromptsConfiguration'
 	,'Set-CsTeamsSipDevicesConfiguration'
     ,'Set-CsTeamsMeetingConfiguration'
+	,'Set-CsTeamsGuestMeetingConfiguration'
     ,'Set-CsTeamsVdiPolicy'
 	,'Set-CsTeamsWorkLocationDetectionPolicy'
 	,'Set-CsTeamsRemoteLogCollectionDevice'
@@ -741,6 +755,7 @@ CmdletsToExport = @(
 	,'Set-CsTeamsCustomBannerText'
     ,'Set-CsTeamsBYODAndDesksPolicy'
     ,'Set-CsTeamsNotificationAndFeedsPolicy'
+	,'Set-CsTeamsMobilityPolicy'
 	,'Set-CsTeamsPersonalAttendantPolicy'
     ,'Set-CsPrivacyConfiguration'
 	,'Update-M365TeamsApp'
@@ -817,21 +832,21 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.5.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Adds PickUpHeldCalls and JoinActiveCalls parameters to the [New|Set]-CsUserCallingDelegate cmdlets and corresponding output attributes to the Get-CsUserCallingSettings cmdlet.
-- Adds AssignmentBlockedState and AssignmentBlockedUntil output attributes to [Get]-CsPhoneNumberAssignment cmdlet.
-- Releases [Set|Remove]-CsPhoneNumberAssignmentBlock cmdlets.
-- Adds DynamicCallerIdMode parameter to [Get|Set]-CsOnlineDialInConferencingTenantSettings cmdlets.
-- Adds BackroomChat parameter to [New|Set]-CsTeamsMeetingPolicy and [New|Set]-CsTeamsEventsPolicy cmdlets.
-- Adds UseUnifiedDomain parameter to Set-CsTeamsClientConfiguration cmdlet.
-- [BREAKING CHANGE] Replaces MaxResolutionForTownhall parameter with TownhallMaxResolution in [Get|Set|New|Remove]-CsTeamsEventsPolicy cmdlets.
-- Adds ExternalPresenterJoinVerification parameter to [Set|New]-CsTeamsEventsPolicy cmdlets.
-- Adds PasiveVoiceEnrollment parameter to [New|Set]-CsTeamsAIPolicy cmdlets.
-- Adds SetRecordingAndTranscriptOwnership parameter to [New|Set]-CsTeamsMeetingPolicy cmdlets.
-- Adds EnableRecordingAndTranscriptionCustomMessage & RecordingAndTranscriptionCustomMessageIdentifier parameters to [New|Set]-CsTeamsMeetingPolicy & [New|Set]-CsTeamsCallingPolicy cmdlets.
-- Releases Get-CsTeamsRecordingAndTranscriptionCustomMessagesConfiguration cmdlet.
-- Releases [Get|Set|New|Remove]-CsTeamsRecordingAndTranscriptionCustomMessage cmdlets. 
-- Adds Voicemail as a supported value for the Type parameter in [New|Set]-CsAutoAttendantCallableEntity cmdlets.
+ **7.6.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Releases Get-CsAiAgents cmdlet.
+- Releases New-CsPhoneNumberBulkUpdateTagsOrder cmdlet.
+- Releases [Get|Set|Remove]-CsPhoneNumberTenantConfiguration cmdlets.
+- Releases [New|Get|Set|Remove]-CsAutoRecordingTemplate cmdlets.
+- Adds AutoRecordingTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
+- Adds ResourceAccount parameter to [New|Set]-InboundBlockedNumberPattern cmdlets.
+- Adds CallerNumber parameter to the [Get|Test]-CsEffectiveTenantDialPlan cmdlets.
+- Adds LinksInTeams parameter to [Set|New]-CsTeamsMobilityPolicy cmdlets.
+- Adds ReportCall parameter to [Set|New]-CsTeamsCallingPolicy cmdlets.
+- Adds AllowMultipleScreenshare and PasscodeComplexity parameters to [Set|New]-CsTeamsMeetingPolicy cmdlets.
+- Adds Registration parameter to [Set|New]-CsTeamsEventsPolicy cmdlets.
+- Adds UserSettingsDefault parameter to [Set|New]-CsTeamsWorkLocationDetectionPolicy cmdlets.
+- Adds ResourceAccount parameter to Test-InboundBlockedNumberPattern cmdlet.
+- Adds AllowMultipleScreenshare parameter to Set-CsTeamsGuestMeetingConfiguration cmdlet.
 
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes

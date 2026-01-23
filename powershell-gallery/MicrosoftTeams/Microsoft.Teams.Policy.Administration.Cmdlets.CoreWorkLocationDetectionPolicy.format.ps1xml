@@ -19,6 +19,10 @@
                         <Label>EnableWorkLocationDetection</Label>
                         <PropertyName>EnableWorkLocationDetection</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>UserSettingsDefault</Label>
+                        <PropertyName>UserSettingsDefault</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>

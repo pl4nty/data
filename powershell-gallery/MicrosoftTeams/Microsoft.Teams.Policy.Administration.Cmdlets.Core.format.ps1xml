@@ -1760,6 +1760,10 @@
                         <Label>VoiceSimulationInInterpreter</Label>
                         <PropertyName>VoiceSimulationInInterpreter</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>ReportCall</Label>
+                        <PropertyName>ReportCall</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -2350,6 +2354,10 @@
                         <PropertyName>BackroomChat</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>Registration</Label>
+                        <PropertyName>Registration</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>Description</Label>
                         <PropertyName>Description</PropertyName>
                     </ListItem>
@@ -2673,6 +2681,10 @@
                       <ListItems>
                         
                     <ListItem>
+                        <Label>MeetingReactions</Label>
+                        <PropertyName>MeetingReactions</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>DisplayName</Label>
                         <PropertyName>DisplayName</PropertyName>
                     </ListItem>
@@ -2727,6 +2739,37 @@
                     <ListItem>
                         <Label>Identity</Label>
                         <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>MeetingReactionItemModelView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.MeetingReactionItemModel</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ReactionImageUrl</Label>
+                        <PropertyName>ReactionImageUrl</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ReactionSpriteImageUrl</Label>
+                        <PropertyName>ReactionSpriteImageUrl</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ReactionType</Label>
+                        <PropertyName>ReactionType</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -2953,6 +2996,10 @@
                     <ListItem>
                         <Label>ScreenSharingMode</Label>
                         <PropertyName>ScreenSharingMode</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowMultipleScreenshare</Label>
+                        <PropertyName>AllowMultipleScreenshare</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>VideoFiltersMode</Label>
@@ -3198,6 +3245,10 @@
                         <Label>ParticipantSlideControl</Label>
                         <PropertyName>ParticipantSlideControl</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>PasscodeComplexity</Label>
+                        <PropertyName>PasscodeComplexity</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -3400,6 +3451,10 @@
                         <PropertyName>UseB2BInvitesToAddExternalUsers</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>AllowProactiveSummaries</Label>
+                        <PropertyName>AllowProactiveSummaries</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>DeleteCustomEmojis</Label>
                         <PropertyName>DeleteCustomEmojis</PropertyName>
                     </ListItem>
@@ -3449,6 +3504,10 @@
                     <ListItem>
                         <Label>MobileDialerPreference</Label>
                         <PropertyName>MobileDialerPreference</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LinksInTeams</Label>
+                        <PropertyName>LinksInTeams</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -4394,6 +4453,10 @@
                         <Label>Pattern</Label>
                         <PropertyName>Pattern</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>ResourceAccount</Label>
+                        <PropertyName>ResourceAccount</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -4856,6 +4919,10 @@
                     <ListItem>
                         <Label>DomainBlockingForMDOAdminsInTeams</Label>
                         <PropertyName>DomainBlockingForMDOAdminsInTeams</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>SecurityTeamAllowBlockListDelegation</Label>
+                        <PropertyName>SecurityTeamAllowBlockListDelegation</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -5515,6 +5582,10 @@
                         <Label>AllowFederatedUsersToDialOutToThirdParty</Label>
                         <PropertyName>AllowFederatedUsersToDialOutToThirdParty</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>DynamicCallerIdMode</Label>
+                        <PropertyName>DynamicCallerIdMode</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -5935,6 +6006,10 @@
                     <ListItem>
                         <Label>ScreenSharingMode</Label>
                         <PropertyName>ScreenSharingMode</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowMultipleScreenshare</Label>
+                        <PropertyName>AllowMultipleScreenshare</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AllowMeetNow</Label>

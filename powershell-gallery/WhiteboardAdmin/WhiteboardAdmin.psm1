@@ -235,6 +235,25 @@ function Send-GetWhiteboardsRequest
     return $response
 }
 
+function ExtractRequestIdsFromError
+{
+    $requestId = $null
+    $clientRequestId = $null
+
+    # Try to extract request IDs from ErrorDetails.Message (Graph SDK errors)
+    if ($_.ErrorDetails -and $_.ErrorDetails.Message) {
+        $errorDetails = $_.ErrorDetails.Message
+        if ($errorDetails -match 'request-id\s*:\s*([a-f0-9-]+)') {
+            $requestId = $Matches[1]
+        }
+        if ($errorDetails -match 'client-request-id\s*:\s*([a-f0-9-]+)') {
+            $clientRequestId = $Matches[1]
+        }
+    }
+
+    return @{ RequestId = $requestId; ClientRequestId = $clientRequestId }
+}
+
 function Send-GetSharepointWhiteboardsRequest
 {
     param(
@@ -253,11 +272,16 @@ function Send-GetSharepointWhiteboardsRequest
     try{
     	# Get the drive ID of the user
     	$Drives =  Get-MgUserDrive -UserId $user -ResponseHeadersVariable headers -ErrorAction Stop | Select-Object -ExpandProperty Id
-	    $requestId = $headers['request-id']
-	    $clientRequestId = $headers['client-request-id']
-        Write-Verbose "DriveIds for user $user is $Drives"
+	    $requestId = if ($headers) { $headers['request-id'] } else { $null }
+	    $clientRequestId = if ($headers) { $headers['client-request-id'] } else { $null }
+        Write-Host "DriveIds for user $user are $Drives"
     } catch {
         $errorMessage = $_.Exception.ToString()
+        
+        $requestIds = ExtractRequestIdsFromError
+        $requestId = $requestIds.RequestId
+        $clientRequestId = $requestIds.ClientRequestId
+
         if ($errorMessage -eq 'System.Exception: [accessDenied] : Access denied') {
             Write-Host "Admin does not have access to User $user OneDrive with REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId."
         } else {
@@ -265,6 +289,9 @@ function Send-GetSharepointWhiteboardsRequest
         }
 	    return $null
     }
+
+    $allDriveItems = @()
+
     if($Drives) {
         foreach($DriveId in $Drives){
             # Get migrated whiteboard documents from the user's drive
@@ -274,21 +301,35 @@ function Send-GetSharepointWhiteboardsRequest
                 } else {
                     $Uri = "https://graph.microsoft.com/v1.0/drives/$DriveId/root:/Whiteboards:/children"
                 }
+                Write-Host "Fetching drive items for User $user with DriveID $DriveId."
+
                 $driveItems = Invoke-MgGraphRequest -Method GET -Uri $Uri -ResponseHeadersVariable headers
-                $requestId = $headers['request-id']
-	            $clientRequestId = $headers['client-request-id']
+                $requestId = if ($headers) { $headers['request-id'] } else { $null }
+	            $clientRequestId = if ($headers) { $headers['client-request-id'] } else { $null }
+
+                if (-not $driveItems) {
+                    Write-Host "No drive items found for User $user with DriveID $DriveId for REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId."
+                    continue
+                }
+                
+                $allDriveItems += $driveItems.value
+                $itemCount = $driveItems.value.Count
+                Write-Host "Found $itemCount drive items for User $user with DriveID $DriveId for REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId."
+                
             } catch {
-                $errorMessage = $_.Exception
+                $requestIds = ExtractRequestIdsFromError
+                $requestId = $requestIds.RequestId
+                $clientRequestId = $requestIds.ClientRequestId
+
                 Write-Host "No drive items found for User $user with DriveID $DriveId for REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId."
-                return $null
             }
-            if(-not $driveItems)
-            {
-                Write-Host "No drive items found for User $user with DriveID $DriveId for REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId."
-                return $null
-            }
-            return $driveItems
         }
+        # Only return after checking all drives
+        if ($allDriveItems.Count -gt 0) {
+            return @{ value = $allDriveItems }
+        }
+
+        Write-Host "No drive items found for User $user after checking all drives."
         return $null
     }
 }
@@ -859,6 +900,332 @@ function Restore-Whiteboard
             -Endpoint "api/v1.0/admin/whiteboards/$WhiteboardId/fluidFileInfo" `
             -ContentType 'application/json' `
             -ForceAuthPrompt:$ForceAuthPrompt
+    }
+}
+
+<#
+.SYNOPSIS
+Gets all Azure whiteboards for a user and maps them with their migrated Fluid boards in SharePoint OneDrive.
+
+.PARAMETER UserId
+The ID of the user account to query whiteboards for.
+
+.PARAMETER IncrementalRunName
+(Optional) Saves incremental progress as the cmdlet runs. Use to resume a partially completed mapping operation.
+Use the same IncrementalRunName on later calls to continue a previously cancelled/failed run.
+Writes progress and results to JSON files in the current directory:
+ "WhiteboardMappings-*.json" contains the incremental mapping results where * is the provided IncrementalRunName
+
+.PARAMETER ForceAuthPrompt
+(Optional) Always prompt for auth. Use to ignore cached credentials.
+
+.EXAMPLE
+Get-WhiteboardMigrationMapping -UserId 00000000-0000-0000-0000-000000000001
+Gets all Azure whiteboards and migrated Fluid boards for the user and returns a mapping between them.
+
+.EXAMPLE
+Get-WhiteboardMigrationMapping -UserId 00000000-0000-0000-0000-000000000001 -IncrementalRunName run1
+Gets mapping and saves incremental progress to WhiteboardMappings-run1.json file in the current directory.
+#>
+function Get-WhiteboardMigrationMapping
+{
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$true)]
+        [Guid]$UserId,
+
+        [Parameter(Mandatory=$false)]
+        [string]$IncrementalRunName,
+
+        [Parameter(Mandatory=$false)]
+        [switch]$ForceAuthPrompt)
+
+    # Helper function to get Azure whiteboards with retry logic and pagination
+    function Get-AzureWhiteboardsWithRetry(
+        [Parameter(Mandatory=$true)]
+        [Guid]$UserId,
+        [Parameter(Mandatory=$false)]
+        [hashtable]$Headers,
+        [Parameter(Mandatory=$false)]
+        [switch]$ForceAuthPrompt) {
+        
+        $retryCount = 0
+        $allWhiteboards = @()
+        
+        while ($true) {
+            try {
+                Write-Verbose "Fetching Azure whiteboards for user $UserId (retry: $retryCount)"
+                $response = Send-GetWhiteboardsRequest -UserId $UserId -Headers $Headers -ForceAuthPrompt:$ForceAuthPrompt
+                
+                if ($response) {
+                    $allWhiteboards += $response
+                }
+                
+                # Note: Current API doesn't support pagination, but this structure allows for future enhancement
+                return $allWhiteboards
+            } catch {
+                Write-Verbose "Failed to get Azure whiteboards. Retry count: $retryCount"
+                $retryCount++
+                if ($retryCount -gt 1) {
+                    throw $_.Exception
+                }
+                Start-Sleep -Seconds ([Math]::Pow(2, $retryCount))
+            }
+        }
+    }
+
+    # Helper function to get migrated whiteboards from OneDrive with pagination
+    function Get-AllMigratedWhiteboards(
+        [Parameter(Mandatory=$true)]
+        [string]$DriveId,
+        [Parameter(Mandatory=$true)]
+        [Guid]$UserId) {
+        
+        $allItems = @()
+        $Uri = "https://graph.microsoft.com/v1.0/drives/$DriveId/root:/Whiteboards/Migration:/children"
+        $retryCount = 0
+        
+        while ($Uri) {
+            try {
+                Write-Verbose "Fetching migrated whiteboards from drive $DriveId (page)"
+                $driveItems = Invoke-MgGraphRequest -Method GET -Uri $Uri
+                
+                if ($driveItems -and $driveItems.value) {
+                    # Add DriveId property to each item for matching
+                    foreach ($item in $driveItems.value) {
+                        $item | Add-Member -NotePropertyName 'parentDriveId' -NotePropertyValue $DriveId -Force
+                        $allItems += $item
+                    }
+                    
+                    $itemCount = ($driveItems.value | Measure-Object).Count
+                    Write-Verbose "Retrieved $itemCount items from drive $DriveId"
+                }
+                
+                # Check for next page
+                $Uri = $driveItems.'@odata.nextLink'
+                $retryCount = 0  # Reset retry count on successful page
+                
+            } catch {
+                $message = "Failed to get migrated whiteboards for user $UserId from drive $DriveId."
+                $requestIds = ExtractRequestIdsFromError
+                $requestId = $requestIds.RequestId
+                $clientRequestId = $requestIds.ClientRequestId
+                if ($requestId -or $clientRequestId) {
+                    $message += " REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId"
+                }
+                Write-Warning $message
+
+                $retryCount++
+                if ($retryCount -gt 1) {
+                    Write-Warning "Failed to retrieve items from drive $DriveId after $retryCount retries."
+                    break
+                }
+                Start-Sleep -Seconds ([Math]::Pow(2, $retryCount))
+            }
+        }
+        
+        return $allItems
+    }
+
+    # Helper function to create mapping object
+    function New-WhiteboardMapping(
+        [Parameter(Mandatory=$false)]
+        [AllowNull()]
+        [object]$AzureBoard,
+        [Parameter(Mandatory=$false)]
+        [AllowNull()]
+        [object]$MigratedBoard) {
+
+        $mapping = [PSCustomObject]@{
+            AzureWhiteboardId = $null
+            AzureWhiteboardTitle = $null
+            AzureWhiteboardOwnerId = $null
+            AzureWhiteboardCreatedTime = $null
+            AzureWhiteboardBaseApi = $null
+            FluidFileId = $null
+            MigratedBoardDriveId = $null
+            MigratedBoardItemId = $null
+            MigratedBoardName = $null
+            MigratedBoardSize = $null
+            MigratedBoardLastModified = $null
+            MigratedBoardCreated = $null
+            MappingStatus = $null
+        }
+        
+        # Populate Azure board properties
+        if ($null -ne $AzureBoard) {
+            $mapping.AzureWhiteboardId = $AzureBoard.id
+            $mapping.AzureWhiteboardTitle = $AzureBoard.title
+            $mapping.AzureWhiteboardOwnerId = $AzureBoard.ownerId
+            $mapping.AzureWhiteboardCreatedTime = $AzureBoard.createdTime
+            $mapping.AzureWhiteboardBaseApi = $AzureBoard.baseApi
+            $mapping.FluidFileId = $AzureBoard.fluidFileId
+        }
+
+        # Populate migrated board properties
+        if ($null -ne $MigratedBoard) {
+            $mapping.MigratedBoardDriveId = $MigratedBoard.parentDriveId
+            $mapping.MigratedBoardItemId = $MigratedBoard.id
+            $mapping.MigratedBoardName = $MigratedBoard.name
+            $mapping.MigratedBoardSize = $MigratedBoard.size
+            $mapping.MigratedBoardLastModified = $MigratedBoard.lastModifiedDateTime
+            $mapping.MigratedBoardCreated = $MigratedBoard.createdDateTime
+        }
+
+        # Determine mapping status based on what was provided
+        $mapping.MappingStatus = if ($null -ne $AzureBoard -and $null -ne $MigratedBoard) {
+            "Fully Mapped"
+        } elseif ($null -ne $AzureBoard) {
+            "Migrated board not found"
+        } elseif ($null -ne $MigratedBoard) {
+            "Azure board not found"
+        } else {
+            "No data provided"
+        }
+
+        return $mapping
+    }
+
+    # Helper function to set up incremental run file
+    function Initialize-IncrementalRun(
+        [Parameter(Mandatory=$true)]
+        [string]$MappingResultsFileName) {
+
+        if (Test-Path -Path $MappingResultsFileName) {
+            Write-Host "Previous mapping file detected. Appending new results to $MappingResultsFileName`n"
+        } else {
+            New-Item -Name $MappingResultsFileName -ItemType "file" -Force | Out-Null
+            Write-Host "Starting new mapping operation`n"
+            Write-Host "Mappings will be saved to $MappingResultsFileName in the current directory`n"
+        }
+    }
+
+    # Main function logic starts here
+    $incrementalResults = -not [string]::IsNullOrEmpty($IncrementalRunName)
+    $mappingResultsFileName = "WhiteboardMappings-$IncrementalRunName.json"
+    
+    if ($incrementalResults) {
+        Initialize-IncrementalRun -MappingResultsFileName $mappingResultsFileName
+    }
+
+    # Connect to Microsoft Graph for OneDrive access
+    try {
+        Connect-MgGraph -Scopes "User.Read.All", "Files.Read.All", "Sites.Read.All", "Sites.ReadWrite.All" -ErrorAction Stop
+        Write-Host "Successfully connected to Microsoft Graph"
+    } catch {
+        Write-Error "Failed to connect to Microsoft Graph: $_"
+        return $null
+    }
+
+    # Get all Azure whiteboards for the user (including those with fluidFileId for mapping)
+    Write-Host "Getting all whiteboards for user $UserId"
+    try {
+        $allWhiteboards = Get-AzureWhiteboardsWithRetry -UserId $UserId -ForceAuthPrompt:$ForceAuthPrompt
+    } catch {
+        Write-Warning "Failed to get whiteboards for user $UserId : $_"
+        return $null
+    }
+
+    # Filter whiteboards with fluidFileId (migrated boards)
+    $whiteboardsWithFluidInfo = @($allWhiteboards | Where-Object { $_.fluidFileId })
+    
+    if ($whiteboardsWithFluidInfo.Count -gt 0) {
+        $mappedCount = ($whiteboardsWithFluidInfo | Measure-Object).Count
+        Write-Host "Found $mappedCount old whiteboards"
+    } else {
+        Write-Host "No migrated whiteboards found for user $UserId. Continuing to check for migrated-only boards."
+    }
+
+    # Get all migrated Fluid whiteboards from SharePoint OneDrive with pagination
+    Write-Host "Getting new migrated whiteboards from OneDrive for user $UserId"
+    try {
+        $Drives = Get-MgUserDrive -UserId $UserId -ErrorAction Stop | Select-Object -ExpandProperty Id
+        Write-Host "DriveIds for user $UserId : $Drives"
+    } catch {
+        $message = "Failed to get OneDrive for user $UserId : $_"
+        $requestIds = ExtractRequestIdsFromError
+        $requestId = $requestIds.RequestId
+        $clientRequestId = $requestIds.ClientRequestId
+        if ($requestId -or $clientRequestId) {
+            $message += " REQUEST ID: $requestId  CLIENT REQUEST ID: $clientRequestId"
+        }
+        Write-Warning $message
+        $Drives = $null
+    }
+
+    $migratedWhiteboards = @()
+    if ($Drives) {
+        foreach ($DriveId in $Drives) {
+            try {
+                $driveItems = Get-AllMigratedWhiteboards -DriveId $DriveId -UserId $UserId
+                if ($driveItems) {
+                    $migratedWhiteboards += $driveItems
+                    $driveCount = ($driveItems | Measure-Object).Count
+                    Write-Host "Found $driveCount migrated whiteboards in drive $DriveId for user $UserId"
+                }
+            } catch {
+                Write-Host "No migrated whiteboards found in drive $DriveId for user $UserId"
+            }
+        }
+    }
+
+    # Create mappings between Azure and migrated whiteboards (full outer join)
+    $mappings = @()
+    # Lookup dictionary for migrated whiteboards
+    $migratedLookup = @{}
+    # Track matched migrated keys to find migrated-only boards later
+    $matchedMigratedKeys = [System.Collections.Generic.HashSet[string]]::new()
+    $migratedWhiteboards = @($migratedWhiteboards)
+
+    # Build lookup dictionary for migrated whiteboards
+    foreach ($migrated in $migratedWhiteboards) {
+        $lookupKey = "{0}|{1}" -f $migrated.parentDriveId, $migrated.id
+        if (-not $migratedLookup.ContainsKey($lookupKey)) {
+            $migratedLookup[$lookupKey] = $migrated
+        }
+    }
+    
+    # Map Azure whiteboards with fluidFileId to migrated whiteboards 
+    foreach ($mappedBoard in $whiteboardsWithFluidInfo) {
+        $matchedMigrated = $null
+        $matchKey = $null
+
+        if ($mappedBoard.fluidFileId) {
+            # Parse fluidFileId to extract DriveId and ItemId
+            $fluidParts = $mappedBoard.fluidFileId -split '/'
+            if ($fluidParts.Count -eq 3) {
+                $expectedDriveId = $fluidParts[1]
+                $expectedItemId = $fluidParts[2]
+                if ($expectedDriveId -and $expectedItemId) {
+                    # Matching key format: "DriveId|ItemId"
+                    $matchKey = "$expectedDriveId|$expectedItemId"
+                    if ($migratedLookup.ContainsKey($matchKey)) {
+                        $matchedMigrated = $migratedLookup[$matchKey]
+                        $null = $matchedMigratedKeys.Add($matchKey)
+                    }
+                }
+            }
+        }
+
+        $mapping = New-WhiteboardMapping -AzureBoard $mappedBoard -MigratedBoard $matchedMigrated
+        $mappings += $mapping
+    }
+
+    # Find migrated-only whiteboards (no matching Azure board) and add them to mappings
+    foreach ($migratedOnly in $migratedWhiteboards) {
+        $migratedKey = "{0}|{1}" -f $migratedOnly.parentDriveId, $migratedOnly.id
+        if (-not $matchedMigratedKeys.Contains($migratedKey)) {         
+            $mapping = New-WhiteboardMapping -AzureBoard $null -MigratedBoard $migratedOnly
+            $mappings += $mapping
+        }
+    }
+
+    if ($incrementalResults) {
+        Add-Content -Path $mappingResultsFileName -Value (ConvertTo-Json $mappings -Compress -Depth 5)
+        Write-Host "Mapping results saved to $mappingResultsFileName"
+        return
+    } else {
+        return $mappings
     }
 }
 

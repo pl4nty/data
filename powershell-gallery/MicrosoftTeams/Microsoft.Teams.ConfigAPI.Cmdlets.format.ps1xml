@@ -1000,6 +1000,276 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgent</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgent</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>BotHandle</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CallingApiVersion</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Channel</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Cid</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsTeamsIvrEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsTeamsVoiceEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>MessagingApiVersion</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>MsaAppId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>MsaAppTenantId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ProviderId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PublishState</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>BotHandle</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallingApiVersion</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Channel</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Cid</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsTeamsIvrEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsTeamsVoiceEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MessagingApiVersion</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MsaAppId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>MsaAppTenantId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ProviderId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PublishState</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentDescription</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentDescription</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AgentId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AgentType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Capability</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Category</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DeveloperName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DeveloperPrivacyStatement</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DeveloperTermsOfService</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Disclosure</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DisplayName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ETag</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Extra</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IsTrusted</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Keyword</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PublisherCountry</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PublisherEmail</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>SkypeDisplayName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>StarRating</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>SupportedLocale</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UserTileExtraLargeUrl</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UserTileLargeUrl</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UserTileMediumUrl</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UserTileSmallUrl</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UserTileStaticUrl</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Webpage</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AgentId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AgentType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Capability</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Category</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DeveloperName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DeveloperPrivacyStatement</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DeveloperTermsOfService</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Disclosure</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ETag</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Extra</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IsTrusted</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Keyword</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PublisherCountry</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PublisherEmail</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SkypeDisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>StarRating</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SupportedLocale</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserTileExtraLargeUrl</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserTileLargeUrl</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserTileMediumUrl</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserTileSmallUrl</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserTileStaticUrl</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Webpage</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentQueryResult</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentQueryResult</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ContinuationToken</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ContinuationToken</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ApiErrorItem</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ApiErrorItem</TypeName>
@@ -1770,6 +2040,94 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AutoRecordingTemplateDtoModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AutoRecordingTemplateDtoModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AgentViewPermission</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AutoRecordingAnnouncementAudioFileId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AutoRecordingAnnouncementAudioFileName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AutoRecordingAnnouncementTextToSpeechPrompt</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RecordingDocumentOwner</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>RecordingEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>SharePointHostName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>SharePointSiteName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TranscriptionEnabled</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AgentViewPermission</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingAnnouncementAudioFileId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingAnnouncementAudioFileName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingAnnouncementTextToSpeechPrompt</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RecordingDocumentOwner</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>RecordingEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharePointHostName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharePointSiteName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TranscriptionEnabled</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.BatchAssignBody</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.BatchAssignBody</TypeName>
@@ -2259,6 +2617,9 @@
             <Label>AuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AutoRecordingTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallToAgentRatioThresholdBeforeOfferingCallback</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2606,6 +2967,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AuthorizedUser</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallToAgentRatioThresholdBeforeOfferingCallback</PropertyName>
@@ -3882,6 +4246,9 @@
             <Label>Bssid</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>CallerNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ChassisId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -4001,6 +4368,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Bssid</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallerNumber</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ChassisId</PropertyName>
@@ -4886,6 +5256,9 @@
             <Label>AuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AutoRecordingTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallToAgentRatioThresholdBeforeOfferingCallback</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5158,6 +5531,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AuthorizedUser</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallToAgentRatioThresholdBeforeOfferingCallback</PropertyName>
@@ -13408,6 +13784,58 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtGetTenantConfigurationResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtGetTenantConfigurationResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AllowOnPremToOnlineMigration</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AssignmentBlockedDays</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AssignmentBlockedForever</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AssignmentEmailEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TenantId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UnassignmentEmailEnabled</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AllowOnPremToOnlineMigration</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedDays</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentBlockedForever</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AssignmentEmailEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TenantId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UnassignmentEmailEnabled</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResponse</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtPhoneNumberPolicyAssignmentCmdletResponse</TypeName>
@@ -13541,6 +13969,68 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TelephoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateOrderResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateOrderResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>OrderType</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>OrderType</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateTagsRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateTagsRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>PhoneNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TagsToAdd</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TagsToRemove</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>PhoneNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TagsToAdd</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TagsToRemove</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -15094,12 +15584,18 @@
           <TableColumnHeader>
             <Label>IsNumberBlocked</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ResourceAccount</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>IsNumberBlocked</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ResourceAccount</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -15375,6 +15871,9 @@
             <Label>AuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AutoRecordingTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallToAgentRatioThresholdBeforeOfferingCallback</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -15647,6 +16146,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AuthorizedUser</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallToAgentRatioThresholdBeforeOfferingCallback</PropertyName>
