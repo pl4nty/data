@@ -158,7 +158,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1853,7 +1853,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026010201"
+        "buildVersion": "2026011602"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {

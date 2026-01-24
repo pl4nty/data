@@ -1,5 +1,121 @@
 [
     {
+        "created": "2026-01-23T23:00:31",
+        "description": "Copilot in Viva Glint will use the same access controls as Microsoft 365 Copilot, streamlining how organizations manage AI features. This reduces setup complexity and helps more managers and leaders access AI\u2011powered insights from employee feedback in their everyday workflow. ",
+        "id": 551197,
+        "locale": null,
+        "modified": "2026-01-23T23:00:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Simplified Glint Copilot enablement with Microsoft 365 controls "
+    },
+    {
+        "created": "2026-01-23T23:00:31",
+        "description": "The tenant\u2011level process report provides eDiscovery administrators and managers with a centralized view of eDiscovery processes running across cases in the tenant\u2014or across the cases they have access to. It surfaces key details such as process type, status, duration, timestamps, and who initiated each process, enabling better operational oversight, faster issue triage, and clearer end\u2011to\u2011end visibility into eDiscovery activity.",
+        "id": 551164,
+        "locale": null,
+        "modified": "2026-01-23T23:00:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: eDiscovery-Tenant level process report"
+    },
+    {
         "created": "2026-01-23T00:15:29",
         "description": "This update introduces logged-in user details (user email) on the device onboarding page for Windows devices bringing it in line with the experience for MacOS devices. \u200bAdmins can now see which user is currently signed in on a device, making It faster to confirm ownership and troubleshoot issues. ",
         "id": 548669,
@@ -1225,9 +1341,9 @@
         "description": "Historical reporting within Queues app will now support 45 days of historical data. The report will default a 7-day range with ability to customize the reporting range with up to 45 days of history.",
         "id": 547825,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -1246,6 +1362,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -1270,6 +1389,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2150,10 +2272,10 @@
     },
     {
         "created": "2026-01-06T23:45:19",
-        "description": "We\u2019re excited to announce that MODIS (Microsoft Organizational Data Ingestion System) is now available in the GCC-Moderate (GCC-M) environment! MODIS provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.\n",
+        "description": "We\u2019re excited to announce that Organizational Data in Microsoft 365 is now available in the GCC-Moderate (GCC-M) environment! Organizational Data in Microsoft 365 provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.",
         "id": 508518,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -2201,7 +2323,7 @@
                 }
             ]
         },
-        "title": "Microsoft Viva: Microsoft Organizational Data Ingestion System (MODIS) now available in GCC-Moderate"
+        "title": "Microsoft Viva: Organizational Data in Microsoft 365 is now available in GCC-Moderate"
     },
     {
         "created": "2026-01-06T23:45:19",
@@ -3921,9 +4043,9 @@
         "description": "Use the new =COPILOT function directly in Excel formulas to generate, classify, and summarize text and data.",
         "id": 499659,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8204,12 +8326,12 @@
         "description": "Task chat lets team members collaborate directly on tasks using rich text, formatting, and mentions - making it easier to discuss work and notify teammates on what needs attention.",
         "id": 512432,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16713,9 +16835,9 @@
         "description": "Use the new =COPILOT function directly in Excel formulas to generate, classify, and summarize text and data",
         "id": 499658,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23480,9 +23602,9 @@
         "description": "Use the new =COPILOT function directly in Excel formulas to generate, classify, and summarize text and data.",
         "id": 499660,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -51238,15 +51360,15 @@
     },
     {
         "created": "2025-05-07T23:15:15",
-        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint.",
+        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint. Updated January 23, 2026: We are no longer moving forward with this feature. We apologize for any inconvenience. ",
         "id": 492981,
         "locale": null,
-        "modified": "2025-10-21T22:15:10",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51293,15 +51415,15 @@
     },
     {
         "created": "2025-05-07T23:15:15",
-        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint.",
+        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint. Updated January 23, 2026: We are no longer moving forward with this feature. We apologize for any inconvenience. ",
         "id": 492980,
         "locale": null,
-        "modified": "2025-10-21T22:15:10",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51348,15 +51470,15 @@
     },
     {
         "created": "2025-05-07T23:15:15",
-        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint.",
+        "description": "You can now reference a Microsoft Teams meeting when you create a presentation with Copilot in PowerPoint. Updated January 23, 2026: We are no longer moving forward with this feature. We apologize for any inconvenience. ",
         "id": 492979,
         "locale": null,
-        "modified": "2025-10-21T22:15:10",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -56514,12 +56636,12 @@
         "description": "When using Copilot Pages side-by-side in Copilot Chat, you can now ask questions in chat about your open page, and Copilot will provide answers based on the contents of that page.",
         "id": 487848,
         "locale": null,
-        "modified": "2025-10-15T22:45:29",
+        "modified": "2026-01-23T23:00:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
