@@ -1270,6 +1270,10 @@
       <o:url>https://api.flow.microsoft.com/providers/Microsoft.ProcessSimple/environments</o:url>
       <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://service.flow.microsoft.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="PowerPlatformEnvironmentsUrl" o:authentication="2">
+      <o:url>https://api.flow.microsoft.com/providers/Microsoft.ProcessSimple/environments</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://api.powerplatform.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
     <o:service o:name="PAPIProfileServiceGetProfile" o:authentication="2">
       <o:url>https://substrate.office.com/profileb2/v2.0/me/V1Profile</o:url>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="substrate.office.com" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
@@ -2256,6 +2260,7 @@
     <o:token o:name="Substrate.BaseHost.FP">substrate.office.com</o:token>
     <o:token o:name="Outlook.AuthHost">outlook.office.com</o:token>
     <o:token o:name="Flow.AuthHost">https://service.flow.microsoft.com/</o:token>
+    <o:token o:name="PowerPlatform.AuthHost">https://api.powerplatform.com</o:token>
     <o:token o:name="Flow.BaseHost">flow.microsoft.com</o:token>
     <o:token o:name="Teams.BaseHost">teams.microsoft.com</o:token>
     <o:token o:name="OfficeApi.AuthHost">api.office.net</o:token>
@@ -2377,6 +2382,7 @@
     <o:token o:name="SafelinksGetParams">url</o:token>
     <o:token o:name="SafelinksDropParams">data;sdata;reserved</o:token>
     <o:token o:name="SafelinksSpoLofDropParams">xsdata;sdata;ovuser;clickParams</o:token>
+    <o:token o:name="SharepointConsumerAppID">0d9adc9a-fdcf-465b-b30f-969a08bfef07</o:token>
     <o:token o:name="SuggestionAbortRequestTimeMS">1000</o:token>
     <o:token o:name="SuggestionAuthFlags">0</o:token>
     <o:token o:name="SuggestionMaxRequestSize">2097152</o:token>
