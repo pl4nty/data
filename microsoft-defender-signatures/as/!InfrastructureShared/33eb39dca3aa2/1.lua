@@ -17,7 +17,7 @@ if l_0_0 > 60 then
       l_0_4 = l_0_4 + 1
     end
   end
-  if l_0_4 > 20 then
+  if l_0_4 > 15 then
     local l_0_9 = ""
     local l_0_10 = ""
     local l_0_11 = ""
@@ -72,7 +72,7 @@ if l_0_0 > 60 then
                   l_0_35 = AppendToRollingQueue
                   l_0_36 = l_0_25
                   l_0_35(l_0_36, l_0_26, l_0_27, l_0_28, l_0_29, 0)
-                  if l_0_20 > 20 and l_0_21 > 3 then
+                  if l_0_20 > 15 and l_0_21 > 3 then
                     l_0_35 = bm
                     l_0_35 = l_0_35.add_related_string
                     l_0_36 = "GenCRansom_encryptedData"
