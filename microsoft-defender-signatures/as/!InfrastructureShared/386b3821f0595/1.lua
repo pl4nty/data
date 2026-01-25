@@ -24,17 +24,51 @@ for l_0_23 = 1, l_0_0 do
   local l_0_24 = (sigattr_tail[l_0_23]).attribute
   if l_0_24 == 16384 then
     local l_0_25 = ((sigattr_tail[l_0_23]).utf8p1):lower()
-    local l_0_26 = l_0_25:match("%.[^%.]+$")
-    if l_0_26 ~= nil then
-      l_0_26 = l_0_26 .. "\""
-      if (mp.GetExtensionClass)(l_0_26) ~= 4 or isKnownRansomExtension(l_0_26) then
-        local l_0_27 = (mp.crc32)(0, l_0_25, 1, #l_0_25)
-        if l_0_1[l_0_27] ~= nil then
-          (table.insert)(l_0_1[l_0_27], l_0_23)
-        else
-          local l_0_28 = {}
-          -- DECOMPILER ERROR at PC71: No list found for R28 , SetList fails
+    if (MpCommon.IsSampled)(100, true, true, true) == true then
+      local l_0_26 = (mp.crc32)(0, l_0_25, 1, #l_0_25)
+      if l_0_1[l_0_26] ~= nil then
+        (table.insert)(l_0_1[l_0_26], l_0_23)
+      else
+        local l_0_27 = {}
+        -- DECOMPILER ERROR at PC61: No list found for R27 , SetList fails
 
+      end
+      do
+        do
+          -- DECOMPILER ERROR at PC66: Overwrote pending register: R28 in 'AssignReg'
+
+          ;
+          (bm.add_related_string)(l_0_23, "unchained", bm.RelatedStringBMReport)
+          local l_0_28 = l_0_25:match("%.[^%.]+$")
+          if l_0_28 ~= nil then
+            l_0_28 = l_0_28 .. "\""
+            if (mp.GetExtensionClass)(l_0_28) ~= 4 or isKnownRansomExtension(l_0_28) then
+              local l_0_29 = (mp.crc32)(0, l_0_25, 1, #l_0_25)
+              if l_0_1[l_0_29] ~= nil then
+                (table.insert)(l_0_1[l_0_29], l_0_23)
+              else
+                local l_0_30 = {}
+                -- DECOMPILER ERROR at PC109: No list found for R28 , SetList fails
+
+                -- DECOMPILER ERROR at PC111: Overwrote pending register: R17 in 'AssignReg'
+
+              end
+            end
+          end
+          do
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC112: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
         end
       end
     end
@@ -43,64 +77,64 @@ end
 if l_0_17 < 5 then
   return mp.CLEAN
 end
-for l_0_32 = 1, l_0_0 do
-  local l_0_33 = (sigattr_tail[l_0_32]).attribute
-  if l_0_33 == 16389 and (sigattr_tail[l_0_32]).utf8p2 == "ATTR_c09458eb" then
-    local l_0_34 = ((sigattr_tail[l_0_32]).utf8p1):lower()
-    -- DECOMPILER ERROR at PC103: Overwrote pending register: R29 in 'AssignReg'
+for l_0_34 = 1, l_0_0 do
+  local l_0_35 = (sigattr_tail[l_0_34]).attribute
+  if l_0_35 == 16389 and (sigattr_tail[l_0_34]).utf8p2 == "ATTR_c09458eb" then
+    local l_0_36 = ((sigattr_tail[l_0_34]).utf8p1):lower()
+    -- DECOMPILER ERROR at PC141: Overwrote pending register: R29 in 'AssignReg'
 
-    local l_0_35 = (mp.crc32)(0, l_0_34, l_0_23, #l_0_34)
-    if l_0_3[l_0_35] ~= nil then
-      (table.insert)(l_0_3[l_0_35], l_0_32)
+    local l_0_37 = (mp.crc32)(0, l_0_36, l_0_23, #l_0_36)
+    if l_0_3[l_0_37] ~= nil then
+      (table.insert)(l_0_3[l_0_37], l_0_34)
     else
-      local l_0_36 = {}
-      -- DECOMPILER ERROR at PC117: No list found for R27 , SetList fails
+      local l_0_38 = {}
+      -- DECOMPILER ERROR at PC155: No list found for R27 , SetList fails
 
     end
     do
-      -- DECOMPILER ERROR at PC124: Overwrote pending register: R28 in 'AssignReg'
+      -- DECOMPILER ERROR at PC162: Overwrote pending register: R28 in 'AssignReg'
 
       do
-        if not (string.find)(l_0_32, "\\[^\\]*$") then
-          local l_0_37, l_0_38, l_0_39 = l_0_1[l_0_35] == nil or 0
+        if not (string.find)(l_0_34, "\\[^\\]*$") then
+          local l_0_39, l_0_40, l_0_41 = l_0_1[l_0_37] == nil or 0
         end
-        -- DECOMPILER ERROR at PC134: Confused about usage of register: R27 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC172: Confused about usage of register: R27 in 'UnsetPending'
 
-        local l_0_40 = nil
-        if (string.find)(l_0_34, ".", l_0_37, true) ~= nil then
-          local l_0_41 = nil
-          if (string.sub)(l_0_34, l_0_40 + 1, (string.find)(l_0_34, ".", l_0_37, true) - 1) ~= nil then
-            if l_0_4[(string.sub)(l_0_34, l_0_40 + 1, (string.find)(l_0_34, ".", l_0_37, true) - 1)] == nil then
-              local l_0_42 = nil
-              l_0_4[l_0_42] = {l_0_35, l_0_32}
+        local l_0_42 = nil
+        if (string.find)(l_0_36, ".", l_0_39, true) ~= nil then
+          local l_0_43 = nil
+          if (string.sub)(l_0_36, l_0_42 + 1, (string.find)(l_0_36, ".", l_0_39, true) - 1) ~= nil then
+            if l_0_4[(string.sub)(l_0_36, l_0_42 + 1, (string.find)(l_0_36, ".", l_0_39, true) - 1)] == nil then
+              local l_0_44 = nil
+              l_0_4[l_0_44] = {l_0_37, l_0_34}
             else
               do
                 do
-                  -- DECOMPILER ERROR at PC158: Confused about usage of register: R29 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC196: Confused about usage of register: R29 in 'UnsetPending'
 
                   ;
-                  (table.insert)(l_0_4[l_0_42], l_0_32)
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out DO_STMT
+                  (table.insert)(l_0_4[l_0_44], l_0_34)
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end
@@ -111,144 +145,144 @@ for l_0_32 = 1, l_0_0 do
     end
   end
 end
--- DECOMPILER ERROR at PC162: Overwrote pending register: R17 in 'AssignReg'
+-- DECOMPILER ERROR at PC200: Overwrote pending register: R17 in 'AssignReg'
 
-local l_0_43 = {}
-for l_0_47 = 1, l_0_0 do
-  local l_0_48 = (sigattr_tail[l_0_47]).attribute
-  if l_0_48 == 16387 then
-    local l_0_49 = ((sigattr_tail[l_0_47]).utf8p1):lower()
-    local l_0_50 = (mp.crc32)(0, l_0_49, 1, #l_0_49)
-    if l_0_1[l_0_50] == nil then
-      (table.insert)(l_0_2, l_0_47)
+local l_0_45 = {}
+for l_0_49 = 1, l_0_0 do
+  local l_0_50 = (sigattr_tail[l_0_49]).attribute
+  if l_0_50 == 16387 then
+    local l_0_51 = ((sigattr_tail[l_0_49]).utf8p1):lower()
+    local l_0_52 = (mp.crc32)(0, l_0_51, 1, #l_0_51)
+    if l_0_1[l_0_52] == nil then
+      (table.insert)(l_0_2, l_0_49)
     else
-      l_0_3[l_0_50] = nil
+      l_0_3[l_0_52] = nil
     end
-    -- DECOMPILER ERROR at PC198: Overwrote pending register: R17 in 'AssignReg'
+    -- DECOMPILER ERROR at PC236: Overwrote pending register: R17 in 'AssignReg'
 
-    if l_0_43[l_0_50] == nil then
-      l_0_43[l_0_50] = 1
+    if l_0_45[l_0_52] == nil then
+      l_0_45[l_0_52] = 1
     end
   end
 end
 if l_0_17 < 5 then
   return mp.CLEAN
 end
-for l_0_54,l_0_55 in pairs(l_0_2) do
-  local l_0_56 = ((sigattr_tail[l_0_55]).utf8p1):lower()
+for l_0_56,l_0_57 in pairs(l_0_2) do
+  local l_0_58 = ((sigattr_tail[l_0_57]).utf8p1):lower()
   do
-    local l_0_57, l_0_58, l_0_59, l_0_60 = (string.find)(l_0_56, "\\[^\\]*$") or 0
-    -- DECOMPILER ERROR at PC227: Confused about usage of register: R27 in 'UnsetPending'
+    local l_0_59, l_0_60, l_0_61, l_0_62 = (string.find)(l_0_58, "\\[^\\]*$") or 0
+    -- DECOMPILER ERROR at PC265: Confused about usage of register: R27 in 'UnsetPending'
 
-    local l_0_61 = nil
-    if (string.find)(l_0_56, ".", l_0_57, true) ~= nil then
-      local l_0_62 = nil
-      local l_0_63 = (string.sub)(l_0_56, l_0_61 + 1, -1)
-      local l_0_64 = ((string.sub)(l_0_56, l_0_61 + 1, l_0_62 - 1))
-      -- DECOMPILER ERROR at PC250: Overwrote pending register: R31 in 'AssignReg'
+    local l_0_63 = nil
+    if (string.find)(l_0_58, ".", l_0_59, true) ~= nil then
+      local l_0_64 = nil
+      local l_0_65 = (string.sub)(l_0_58, l_0_63 + 1, -1)
+      local l_0_66 = ((string.sub)(l_0_58, l_0_63 + 1, l_0_64 - 1))
+      -- DECOMPILER ERROR at PC288: Overwrote pending register: R31 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC259: Confused about usage of register: R31 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC297: Confused about usage of register: R31 in 'UnsetPending'
 
-      if (l_0_63 == nil or l_0_64 ~= nil) and nil ~= nil and (mp.bitand)((mp.GetExtensionClass)(nil), 3) ~= 0 and l_0_4[l_0_64] ~= nil then
-        local l_0_65 = nil
-        -- DECOMPILER ERROR at PC274: Confused about usage of register: R32 in 'UnsetPending'
+      if (l_0_65 == nil or l_0_66 ~= nil) and nil ~= nil and (mp.bitand)((mp.GetExtensionClass)(nil), 3) ~= 0 and l_0_4[l_0_66] ~= nil then
+        local l_0_67 = nil
+        -- DECOMPILER ERROR at PC312: Confused about usage of register: R32 in 'UnsetPending'
 
-        if l_0_3[(l_0_4[l_0_64])[1]] ~= nil then
-          local l_0_66 = nil
-          if (l_0_1[l_0_66] == nil or not (l_0_1[l_0_66])[1] or #l_0_56 < #((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower()) and (((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower()):find(l_0_56, 1, true) == 1 and (((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower()):byte(#l_0_56 + 1) ~= 58 then
-            local l_0_67 = nil
-            -- DECOMPILER ERROR at PC319: Unhandled construct in 'MakeBoolean' P1
+        if l_0_3[(l_0_4[l_0_66])[1]] ~= nil then
+          local l_0_68 = nil
+          if (l_0_1[l_0_68] == nil or not (l_0_1[l_0_68])[1] or #l_0_58 < #((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower()) and (((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower()):find(l_0_58, 1, true) == 1 and (((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower()):byte(#l_0_58 + 1) ~= 58 then
+            local l_0_69 = nil
+            -- DECOMPILER ERROR at PC357: Unhandled construct in 'MakeBoolean' P1
 
-            if l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower(), #l_0_56 + 1)] ~= nil and l_0_6[l_0_66] == nil then
-              l_0_6[l_0_66] = 1
+            if l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower(), #l_0_58 + 1)] ~= nil and l_0_6[l_0_68] == nil then
+              l_0_6[l_0_68] = 1
               ;
-              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower(), #l_0_56 + 1)], (l_0_3[l_0_66])[1])
+              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower(), #l_0_58 + 1)], (l_0_3[l_0_68])[1])
               ;
-              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower(), #l_0_56 + 1)], l_0_55)
-              if #l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_64])[1]])[1]]).utf8p1):lower(), #l_0_56 + 1)] >= 10 then
-                local l_0_68 = nil
-                local l_0_69 = false
-                for l_0_73,l_0_74 in pairs(l_0_5[l_0_68]) do
-                  local l_0_70 = {count = 0}
-                  -- DECOMPILER ERROR at PC345: Confused about usage of register: R41 in 'UnsetPending'
+              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower(), #l_0_58 + 1)], l_0_57)
+              if #l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_66])[1]])[1]]).utf8p1):lower(), #l_0_58 + 1)] >= 10 then
+                local l_0_70 = nil
+                local l_0_71 = false
+                for l_0_75,l_0_76 in pairs(l_0_5[l_0_70]) do
+                  local l_0_72 = {count = 0}
+                  -- DECOMPILER ERROR at PC383: Confused about usage of register: R41 in 'UnsetPending'
 
-                  if (sysio.ReadFile)((sigattr_tail[R41_PC345]).utf8p1, 0, 4) ~= nil and l_0_70[(sysio.ReadFile)((sigattr_tail[R41_PC345]).utf8p1, 0, 4)] == nil then
-                    l_0_70[(sysio.ReadFile)((sigattr_tail[R41_PC345]).utf8p1, 0, 4)] = 1
-                    l_0_70.count = l_0_70.count + 1
+                  if (sysio.ReadFile)((sigattr_tail[R41_PC383]).utf8p1, 0, 4) ~= nil and l_0_72[(sysio.ReadFile)((sigattr_tail[R41_PC383]).utf8p1, 0, 4)] == nil then
+                    l_0_72[(sysio.ReadFile)((sigattr_tail[R41_PC383]).utf8p1, 0, 4)] = 1
+                    l_0_72.count = l_0_72.count + 1
                   end
-                  if l_0_7[l_0_75] ~= nil and l_0_15 == false then
-                    local l_0_76 = nil
-                    -- DECOMPILER ERROR at PC377: Confused about usage of register: R43 in 'UnsetPending'
+                  if l_0_7[l_0_77] ~= nil and l_0_15 == false then
+                    local l_0_78 = nil
+                    -- DECOMPILER ERROR at PC415: Confused about usage of register: R43 in 'UnsetPending'
 
-                    if not ((sigattr_tail[l_0_7[l_0_75]]).utf8p2):find("RemoteIp:;", 1, true) then
-                      local l_0_77 = nil
-                      if (string.find)((sigattr_tail[l_0_7[l_0_75]]).utf8p2, "RemoteIp", 17, true) ~= nil and #l_0_77 - (string.find)((sigattr_tail[l_0_7[l_0_75]]).utf8p2, "RemoteIp", 17, true) > 20 then
-                        local l_0_78 = nil
-                        for l_0_82,l_0_83 in (string.gmatch)(l_0_77, "(%w+):([^;]+)") do
-                          local l_0_79 = {}
-                          -- DECOMPILER ERROR at PC395: Confused about usage of register: R50 in 'UnsetPending'
+                    if not ((sigattr_tail[l_0_7[l_0_77]]).utf8p2):find("RemoteIp:;", 1, true) then
+                      local l_0_79 = nil
+                      if (string.find)((sigattr_tail[l_0_7[l_0_77]]).utf8p2, "RemoteIp", 17, true) ~= nil and #l_0_79 - (string.find)((sigattr_tail[l_0_7[l_0_77]]).utf8p2, "RemoteIp", 17, true) > 20 then
+                        local l_0_80 = nil
+                        for l_0_84,l_0_85 in (string.gmatch)(l_0_79, "(%w+):([^;]+)") do
+                          local l_0_81 = {}
+                          -- DECOMPILER ERROR at PC433: Confused about usage of register: R50 in 'UnsetPending'
 
-                          l_0_79[l_0_83] = R50_PC395
+                          l_0_81[l_0_85] = R50_PC433
                         end
-                        -- DECOMPILER ERROR at PC398: Confused about usage of register: R45 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC436: Confused about usage of register: R45 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC401: Confused about usage of register: R45 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC439: Confused about usage of register: R45 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC404: Confused about usage of register: R45 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC442: Confused about usage of register: R45 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC407: Confused about usage of register: R45 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC445: Confused about usage of register: R45 in 'UnsetPending'
 
-                        if l_0_79.UsrName ~= nil and l_0_79.Domain ~= nil and l_0_79.RemoteIp ~= nil then
-                          l_0_10 = l_0_79.UsrName
-                          -- DECOMPILER ERROR at PC408: Confused about usage of register: R45 in 'UnsetPending'
+                        if l_0_81.UsrName ~= nil and l_0_81.Domain ~= nil and l_0_81.RemoteIp ~= nil then
+                          l_0_10 = l_0_81.UsrName
+                          -- DECOMPILER ERROR at PC446: Confused about usage of register: R45 in 'UnsetPending'
 
-                          l_0_11 = l_0_79.Domain
-                          -- DECOMPILER ERROR at PC410: Confused about usage of register: R45 in 'UnsetPending'
+                          l_0_11 = l_0_81.Domain
+                          -- DECOMPILER ERROR at PC448: Confused about usage of register: R45 in 'UnsetPending'
 
-                          l_0_12 = scrubData(l_0_79.UsrName)
-                          -- DECOMPILER ERROR at PC414: Confused about usage of register: R45 in 'UnsetPending'
+                          l_0_12 = scrubData(l_0_81.UsrName)
+                          -- DECOMPILER ERROR at PC452: Confused about usage of register: R45 in 'UnsetPending'
 
-                          l_0_13 = scrubData(l_0_79.Domain)
-                          -- DECOMPILER ERROR at PC417: Confused about usage of register: R45 in 'UnsetPending'
+                          l_0_13 = scrubData(l_0_81.Domain)
+                          -- DECOMPILER ERROR at PC455: Confused about usage of register: R45 in 'UnsetPending'
 
-                          l_0_16 = l_0_79.FSize
-                          -- DECOMPILER ERROR at PC420: Confused about usage of register: R45 in 'UnsetPending'
+                          l_0_16 = l_0_81.FSize
+                          -- DECOMPILER ERROR at PC458: Confused about usage of register: R45 in 'UnsetPending'
 
-                          local l_0_84 = nil
-                          local l_0_85 = (string.match)(l_0_79.RemoteIp, "(.*):(.*)")
-                          -- DECOMPILER ERROR at PC436: Overwrote pending register: R47 in 'AssignReg'
+                          local l_0_86 = nil
+                          local l_0_87 = (string.match)(l_0_81.RemoteIp, "(.*):(.*)")
+                          -- DECOMPILER ERROR at PC474: Overwrote pending register: R47 in 'AssignReg'
 
-                          if (l_0_76 == nil or l_0_85 ~= nil) and (l_0_14 == "" or l_0_14 == l_0_85) then
-                            local l_0_86 = "NA"
-                            local l_0_87 = table.insert
-                            local l_0_88 = l_0_9
-                            l_0_87(l_0_88, {path = (sigattr_tail[l_0_75]).utf8p1, magic = l_0_86, fileSize = l_0_16})
-                            l_0_14 = l_0_85
+                          if (l_0_78 == nil or l_0_87 ~= nil) and (l_0_14 == "" or l_0_14 == l_0_87) then
+                            local l_0_88 = "NA"
+                            local l_0_89 = table.insert
+                            local l_0_90 = l_0_9
+                            l_0_89(l_0_90, {path = (sigattr_tail[l_0_77]).utf8p1, magic = l_0_88, fileSize = l_0_16})
+                            l_0_14 = l_0_87
                           else
                             do
                               do
                                 l_0_15 = true
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out DO_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out DO_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                -- DECOMPILER ERROR at PC457: LeaveBlock: unexpected jumping out IF_STMT
+                                -- DECOMPILER ERROR at PC495: LeaveBlock: unexpected jumping out IF_STMT
 
                               end
                             end
@@ -258,96 +292,96 @@ for l_0_54,l_0_55 in pairs(l_0_2) do
                     end
                   end
                 end
-                -- DECOMPILER ERROR at PC459: Confused about usage of register: R36 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC497: Confused about usage of register: R36 in 'UnsetPending'
 
-                if l_0_70.count > 4 then
-                  l_0_69 = true
+                if l_0_72.count > 4 then
+                  l_0_71 = true
                 end
                 ;
-                (bm.add_related_string)("magic_mismatch", tostring(l_0_69), bm.RelatedStringBMReport)
+                (bm.add_related_string)("magic_mismatch", tostring(l_0_71), bm.RelatedStringBMReport)
                 ;
-                (bm.add_related_string)("ransom_extension", l_0_68, bm.RelatedStringBMReport)
-                local l_0_89 = nil
-                local l_0_90 = {}
-                local l_0_91 = {}
+                (bm.add_related_string)("ransom_extension", l_0_70, bm.RelatedStringBMReport)
+                local l_0_91 = nil
                 local l_0_92 = {}
+                local l_0_93 = {}
+                local l_0_94 = {}
                 if isnull((bm.get_imagepath)()) then
-                  local l_0_93 = ("NA"):lower()
-                  local l_0_94 = (bm.get_current_process_startup_info)()
-                  -- DECOMPILER ERROR at PC501: Overwrote pending register: R42 in 'AssignReg'
+                  local l_0_95 = ("NA"):lower()
+                  local l_0_96 = (bm.get_current_process_startup_info)()
+                  -- DECOMPILER ERROR at PC539: Overwrote pending register: R42 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC504: Overwrote pending register: R41 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC542: Overwrote pending register: R41 in 'AssignReg'
 
-                  if l_0_94 ~= nil then
-                    local l_0_95 = ""
-                    for l_0_99,l_0_100 in pairs(l_0_5[l_0_68]) do
-                      local l_0_96 = "FileChain_MainSet:"
-                      -- DECOMPILER ERROR at PC517: Confused about usage of register: R48 in 'UnsetPending'
+                  if l_0_96 ~= nil then
+                    local l_0_97 = ""
+                    for l_0_101,l_0_102 in pairs(l_0_5[l_0_70]) do
+                      local l_0_98 = "FileChain_MainSet:"
+                      -- DECOMPILER ERROR at PC555: Confused about usage of register: R48 in 'UnsetPending'
 
                       do
-                        local l_0_102, l_0_103, l_0_104 = , (string.find)((sigattr_tail[l_0_87]).utf8p1, "\\[^\\]*$") or 0
-                        -- DECOMPILER ERROR at PC529: Confused about usage of register: R49 in 'UnsetPending'
+                        local l_0_104, l_0_105, l_0_106 = , (string.find)((sigattr_tail[l_0_89]).utf8p1, "\\[^\\]*$") or 0
+                        -- DECOMPILER ERROR at PC567: Confused about usage of register: R49 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC531: Confused about usage of register: R50 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC569: Confused about usage of register: R50 in 'UnsetPending'
 
-                        local l_0_105 = nil
-                        -- DECOMPILER ERROR at PC539: Confused about usage of register: R50 in 'UnsetPending'
+                        local l_0_107 = nil
+                        -- DECOMPILER ERROR at PC577: Confused about usage of register: R50 in 'UnsetPending'
 
                         do
-                          if (string.find)(l_0_102, ".", l_0_103, true) ~= nil then
-                            local l_0_106 = nil
-                            l_0_96 = l_0_96 .. (crypto.CRC32Buffer)(-1, (string.sub)(l_0_105, l_0_103 + 1, (string.find)(l_0_102, ".", l_0_103, true) - 1), 0, #(string.sub)(l_0_105, l_0_103 + 1, (string.find)(l_0_102, ".", l_0_103, true) - 1))
-                            l_0_96 = l_0_96 .. ";" .. (string.sub)(l_0_105, (string.find)(l_0_102, ".", l_0_103, true) + 1) .. ";"
+                          if (string.find)(l_0_104, ".", l_0_105, true) ~= nil then
+                            local l_0_108 = nil
+                            l_0_98 = l_0_98 .. (crypto.CRC32Buffer)(-1, (string.sub)(l_0_107, l_0_105 + 1, (string.find)(l_0_104, ".", l_0_105, true) - 1), 0, #(string.sub)(l_0_107, l_0_105 + 1, (string.find)(l_0_104, ".", l_0_105, true) - 1))
+                            l_0_98 = l_0_98 .. ";" .. (string.sub)(l_0_107, (string.find)(l_0_104, ".", l_0_105, true) + 1) .. ";"
                           end
                           ;
-                          (table.insert)(l_0_91, (sigattr_tail[l_0_101]).utf8p1)
-                          local l_0_107 = nil
-                          if l_0_7[l_0_101] ~= nil then
-                            if sigattr_tail[l_0_7[l_0_101]] ~= nil then
-                              local l_0_108 = nil
-                              local l_0_109 = nil
-                              -- DECOMPILER ERROR at PC596: Overwrote pending register: R52 in 'AssignReg'
+                          (table.insert)(l_0_93, (sigattr_tail[l_0_103]).utf8p1)
+                          local l_0_109 = nil
+                          if l_0_7[l_0_103] ~= nil then
+                            if sigattr_tail[l_0_7[l_0_103]] ~= nil then
+                              local l_0_110 = nil
+                              local l_0_111 = nil
+                              -- DECOMPILER ERROR at PC634: Overwrote pending register: R52 in 'AssignReg'
 
-                              if l_0_109 == nil then
+                              if l_0_111 == nil then
                                 do
-                                  (table.insert)(l_0_92, ((sigattr_tail[l_0_7[l_0_101]]).utf8p1):lower())
+                                  (table.insert)(l_0_94, ((sigattr_tail[l_0_7[l_0_103]]).utf8p1):lower())
                                   ;
-                                  (table.insert)(l_0_92, l_0_109)
-                                  if sigattr_tail[l_0_101] ~= nil then
-                                    local l_0_110 = nil
-                                    local l_0_111 = l_0_109
-                                    -- DECOMPILER ERROR at PC629: Overwrote pending register: R52 in 'AssignReg'
+                                  (table.insert)(l_0_94, l_0_111)
+                                  if sigattr_tail[l_0_103] ~= nil then
+                                    local l_0_112 = nil
+                                    local l_0_113 = l_0_111
+                                    -- DECOMPILER ERROR at PC667: Overwrote pending register: R52 in 'AssignReg'
 
-                                    if l_0_111 == nil then
+                                    if l_0_113 == nil then
                                       do
-                                        (table.insert)(l_0_92, ((sigattr_tail[l_0_101]).utf8p1):lower())
+                                        (table.insert)(l_0_94, ((sigattr_tail[l_0_103]).utf8p1):lower())
                                         ;
-                                        (table.insert)(l_0_92, l_0_111)
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                        (table.insert)(l_0_94, l_0_113)
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out DO_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out DO_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out IF_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out IF_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out DO_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out DO_STMT
 
-                                        -- DECOMPILER ERROR at PC640: LeaveBlock: unexpected jumping out DO_STMT
+                                        -- DECOMPILER ERROR at PC678: LeaveBlock: unexpected jumping out DO_STMT
 
                                       end
                                     end
@@ -359,153 +393,153 @@ for l_0_54,l_0_55 in pairs(l_0_2) do
                         end
                       end
                     end
-                    l_0_90.file_list = l_0_91
-                    l_0_90.file_size = l_0_92
-                    local l_0_112, l_0_113 = , (bm.get_process_relationships)()
-                    for l_0_117,l_0_118 in ipairs(l_0_113) do
-                      local l_0_114 = nil
-                      -- DECOMPILER ERROR at PC651: Confused about usage of register: R50 in 'UnsetPending'
+                    l_0_92.file_list = l_0_93
+                    l_0_92.file_size = l_0_94
+                    local l_0_114, l_0_115 = , (bm.get_process_relationships)()
+                    for l_0_119,l_0_120 in ipairs(l_0_115) do
+                      local l_0_116 = nil
+                      -- DECOMPILER ERROR at PC689: Confused about usage of register: R50 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC656: Confused about usage of register: R50 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC694: Confused about usage of register: R50 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC656: Overwrote pending register: R52 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC694: Overwrote pending register: R52 in 'AssignReg'
 
-                      if l_0_107.image_path ~= nil then
-                        (bm.add_related_process)(l_0_111)
+                      if l_0_109.image_path ~= nil then
+                        (bm.add_related_process)(l_0_113)
                       end
                     end
-                    -- DECOMPILER ERROR at PC661: Confused about usage of register: R45 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC699: Confused about usage of register: R45 in 'UnsetPending'
 
-                    for l_0_122,l_0_123 in ipairs(l_0_114) do
-                      local l_0_119 = nil
-                      -- DECOMPILER ERROR at PC664: Confused about usage of register: R50 in 'UnsetPending'
+                    for l_0_124,l_0_125 in ipairs(l_0_116) do
+                      local l_0_121 = nil
+                      -- DECOMPILER ERROR at PC702: Confused about usage of register: R50 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC669: Confused about usage of register: R50 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC707: Confused about usage of register: R50 in 'UnsetPending'
 
-                      if l_0_107.image_path ~= nil then
-                        (bm.add_related_process)(l_0_107.ppid)
-                        -- DECOMPILER ERROR at PC672: Confused about usage of register: R50 in 'UnsetPending'
+                      if l_0_109.image_path ~= nil then
+                        (bm.add_related_process)(l_0_109.ppid)
+                        -- DECOMPILER ERROR at PC710: Confused about usage of register: R50 in 'UnsetPending'
 
-                        TrackPidAndTechniqueBM(l_0_107.ppid, "T1485", "susp_ransomware_childproc_type4")
+                        TrackPidAndTechniqueBM(l_0_109.ppid, "T1485", "susp_ransomware_childproc_type4")
                       end
                     end
                     ;
-                    (bm.add_related_string)("ransom_files_main", l_0_112, bm.RelatedStringBMReport)
-                    local l_0_124 = nil
+                    (bm.add_related_string)("ransom_files_main", l_0_114, bm.RelatedStringBMReport)
+                    local l_0_126 = nil
                     ;
-                    (bm.add_related_string)("gend_ransom_meta", safeJsonSerialize(l_0_90), bm.RelatedStringBMReport)
+                    (bm.add_related_string)("gend_ransom_meta", safeJsonSerialize(l_0_92), bm.RelatedStringBMReport)
                     ;
-                    (bm.trigger_sig)("GenericRansomware:Type4", safeJsonSerialize(l_0_90))
+                    (bm.trigger_sig)("GenericRansomware:Type4", safeJsonSerialize(l_0_92))
                     ;
-                    (bm.trigger_sig_delayed)("DelayedRansom:Type4", safeJsonSerialize(l_0_90), 10000)
+                    (bm.trigger_sig_delayed)("DelayedRansom:Type4", safeJsonSerialize(l_0_92), 10000)
                     sms_untrusted_process()
                     ;
                     (bm.add_action)("SmsAsyncScanEvent", 100)
-                    TrackPidAndTechniqueBM(l_0_94, "T1486", "susp_ransomware_type4")
+                    TrackPidAndTechniqueBM(l_0_96, "T1486", "susp_ransomware_type4")
                     reportTimingData()
                     ;
                     (bm.add_related_string)("sigcount_type4", l_0_19, bm.RelatedStringBMReport)
                     reportSessionInformationInclusive()
-                    local l_0_125, l_0_126 = , pcall(reportBmInfo)
-                    -- DECOMPILER ERROR at PC743: Overwrote pending register: R52 in 'AssignReg'
+                    local l_0_127, l_0_128 = , pcall(reportBmInfo)
+                    -- DECOMPILER ERROR at PC781: Overwrote pending register: R52 in 'AssignReg'
 
-                    if not l_0_126 and reportBmInfo then
-                      (bm.add_related_string)("bmInfoFailReason", tostring(R52_PC741), R52_PC741)
+                    if not l_0_128 and reportBmInfo then
+                      (bm.add_related_string)("bmInfoFailReason", tostring(R52_PC779), R52_PC779)
                     end
                     if l_0_15 == false and #l_0_9 > 0 and l_0_14 ~= nil and l_0_14 ~= "" then
-                      local l_0_127 = nil
-                      if isnull((mp.GetExtensionClass)(l_0_68)) then
-                        local l_0_128, l_0_129 = 1000, nil
-                        -- DECOMPILER ERROR at PC765: Overwrote pending register: R52 in 'AssignReg'
+                      local l_0_129 = nil
+                      if isnull((mp.GetExtensionClass)(l_0_70)) then
+                        local l_0_130, l_0_131 = 1000, nil
+                        -- DECOMPILER ERROR at PC803: Overwrote pending register: R52 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC766: Overwrote pending register: R52 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC804: Overwrote pending register: R52 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC769: Overwrote pending register: R52 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC807: Overwrote pending register: R52 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC775: Overwrote pending register: R51 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC813: Overwrote pending register: R51 in 'AssignReg'
 
                         do
-                          if (R52_PC741 and not l_0_129) or nil == nil then
-                            local l_0_130 = nil
-                            l_0_130, R52_PC741 = R52_PC741, {State = 0, MaxTimeout = 0, Exclusions = "", AggressiveLevel = 0, Plugins = 0}
+                          if (R52_PC779 and not l_0_131) or nil == nil then
+                            local l_0_132 = nil
+                            l_0_132, R52_PC779 = R52_PC779, {State = 0, MaxTimeout = 0, Exclusions = "", AggressiveLevel = 0, Plugins = 0}
                           end
-                          local l_0_131 = nil
-                          l_0_8, R52_PC741 = R52_PC741, {Extension = l_0_68, ExtensionClass = l_0_128, imagePath = l_0_93, commandLine = l_0_95, ppID = l_0_94, UserName = l_0_12, Domain = l_0_13, file_list = l_0_9, Type = "Type4", RemoteEncConfig = l_0_131}
-                          R52_PC741 = safeJsonSerialize
-                          R52_PC741 = R52_PC741(l_0_8)
+                          local l_0_133 = nil
+                          l_0_8, R52_PC779 = R52_PC779, {Extension = l_0_70, ExtensionClass = l_0_130, imagePath = l_0_95, commandLine = l_0_97, ppID = l_0_96, UserName = l_0_12, Domain = l_0_13, file_list = l_0_9, Type = "Type4", RemoteEncConfig = l_0_133}
+                          R52_PC779 = safeJsonSerialize
+                          R52_PC779 = R52_PC779(l_0_8)
                           ;
-                          (bm.add_related_string)("RemoteClientData", R52_PC741, bm.RelatedStringBMReport)
+                          (bm.add_related_string)("RemoteClientData", R52_PC779, bm.RelatedStringBMReport)
                           ;
-                          (bm.trigger_sig)("RemoteGenericRansomware:Type4", R52_PC741)
-                          local l_0_132, l_0_133 = , pcall(updateSystemDNSServers)
-                          if not l_0_133 then
-                            (bm.add_related_string)("updateSystemDNSServers_fail", R57_PC826, bm.RelatedStringBMReport)
+                          (bm.trigger_sig)("RemoteGenericRansomware:Type4", R52_PC779)
+                          local l_0_134, l_0_135 = , pcall(updateSystemDNSServers)
+                          if not l_0_135 then
+                            (bm.add_related_string)("updateSystemDNSServers_fail", R57_PC864, bm.RelatedStringBMReport)
                           end
-                          local l_0_134, l_0_135, l_0_136, l_0_137 = , pcall(updateDomainInfo)
-                          if l_0_135 then
+                          local l_0_136, l_0_137, l_0_138, l_0_139 = , pcall(updateDomainInfo)
+                          if l_0_137 then
                             l_0_8.ipTypeFlags = GetRollingQueueKeyValue("domainInfo", l_0_14)
                           else
                             ;
-                            (bm.add_related_string)("updateDomainInfo_fail", l_0_136, bm.RelatedStringBMReport)
+                            (bm.add_related_string)("updateDomainInfo_fail", l_0_138, bm.RelatedStringBMReport)
                           end
-                          local l_0_138 = nil
-                          local l_0_139 = SafeGetUrlReputation
-                          local l_0_140 = {l_0_14}
-                          l_0_139 = l_0_139(l_0_140, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
-                          if l_0_139 then
-                            l_0_140 = l_0_139.error
-                            if l_0_140 == 3 then
+                          local l_0_140 = nil
+                          local l_0_141 = SafeGetUrlReputation
+                          local l_0_142 = {l_0_14}
+                          l_0_141 = l_0_141(l_0_142, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
+                          if l_0_141 then
+                            l_0_142 = l_0_141.error
+                            if l_0_142 == 3 then
                               l_0_8.CRReportError = "Failed the first attempt"
-                              l_0_140 = SafeGetUrlReputation
-                              local l_0_141 = {l_0_14}
-                              l_0_140 = l_0_140(l_0_141, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
-                              l_0_139 = l_0_140
+                              l_0_142 = SafeGetUrlReputation
+                              local l_0_143 = {l_0_14}
+                              l_0_142 = l_0_142(l_0_143, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
+                              l_0_141 = l_0_142
                             end
                           end
                           do
                             do
                               do
-                                l_0_140 = l_0_139.urls
-                                l_0_140 = l_0_140[l_0_14]
-                                if l_0_140 then
-                                  l_0_140 = l_0_139.urls
-                                  l_0_140 = l_0_140[l_0_14]
-                                  l_0_140 = l_0_140.determination
-                                  if l_0_140 ~= 2 then
-                                    l_0_140 = l_0_139.urls
-                                    l_0_140 = l_0_140[l_0_14]
-                                    l_0_140 = l_0_140.determination
+                                l_0_142 = l_0_141.urls
+                                l_0_142 = l_0_142[l_0_14]
+                                if l_0_142 then
+                                  l_0_142 = l_0_141.urls
+                                  l_0_142 = l_0_142[l_0_14]
+                                  l_0_142 = l_0_142.determination
+                                  if l_0_142 ~= 2 then
+                                    l_0_142 = l_0_141.urls
+                                    l_0_142 = l_0_142[l_0_14]
+                                    l_0_142 = l_0_142.determination
                                   end
-                                  if l_0_140 == 1 then
-                                    l_0_140 = l_0_139.urls
-                                    l_0_140 = l_0_140[l_0_14]
-                                    l_0_140 = l_0_140.confidence
-                                    if l_0_140 then
-                                      l_0_140 = l_0_139.urls
-                                      l_0_140 = l_0_140[l_0_14]
-                                      l_0_140 = l_0_140.confidence
-                                      if l_0_140 >= 50 then
-                                        l_0_140 = l_0_139.urls
-                                        l_0_140 = l_0_140[l_0_14]
-                                        l_0_140 = l_0_140.context
-                                        l_0_140 = l_0_140.Source
-                                        if l_0_140 == "GenRansom" then
-                                          l_0_140 = l_0_139.urls
-                                          l_0_140 = l_0_140[l_0_14]
-                                          l_0_140 = l_0_140.confidence
-                                          l_0_8.confidence = l_0_140
-                                          l_0_140 = l_0_139.urls
-                                          l_0_140 = l_0_140[l_0_14]
-                                          l_0_140 = l_0_140.context
-                                          l_0_140 = l_0_140.Family
-                                          l_0_8.family = l_0_140
-                                          l_0_140 = l_0_139.urls
-                                          l_0_140 = l_0_140[l_0_14]
-                                          l_0_140 = l_0_140.determination
-                                          l_0_8.determination = l_0_140
-                                          l_0_8.action, l_0_140 = l_0_140, {action = (((l_0_139.urls)[l_0_14]).context).action, parameter = (((l_0_139.urls)[l_0_14]).context).action_parameter, ttl = (((l_0_139.urls)[l_0_14]).context).action_ttl}
+                                  if l_0_142 == 1 then
+                                    l_0_142 = l_0_141.urls
+                                    l_0_142 = l_0_142[l_0_14]
+                                    l_0_142 = l_0_142.confidence
+                                    if l_0_142 then
+                                      l_0_142 = l_0_141.urls
+                                      l_0_142 = l_0_142[l_0_14]
+                                      l_0_142 = l_0_142.confidence
+                                      if l_0_142 >= 50 then
+                                        l_0_142 = l_0_141.urls
+                                        l_0_142 = l_0_142[l_0_14]
+                                        l_0_142 = l_0_142.context
+                                        l_0_142 = l_0_142.Source
+                                        if l_0_142 == "GenRansom" then
+                                          l_0_142 = l_0_141.urls
+                                          l_0_142 = l_0_142[l_0_14]
+                                          l_0_142 = l_0_142.confidence
+                                          l_0_8.confidence = l_0_142
+                                          l_0_142 = l_0_141.urls
+                                          l_0_142 = l_0_142[l_0_14]
+                                          l_0_142 = l_0_142.context
+                                          l_0_142 = l_0_142.Family
+                                          l_0_8.family = l_0_142
+                                          l_0_142 = l_0_141.urls
+                                          l_0_142 = l_0_142[l_0_14]
+                                          l_0_142 = l_0_142.determination
+                                          l_0_8.determination = l_0_142
+                                          l_0_8.action, l_0_142 = l_0_142, {action = (((l_0_141.urls)[l_0_14]).context).action, parameter = (((l_0_141.urls)[l_0_14]).context).action_parameter, ttl = (((l_0_141.urls)[l_0_14]).context).action_ttl}
                                           l_0_8.ip = l_0_14
-                                          l_0_8.context = ((l_0_139.urls)[l_0_14]).context
+                                          l_0_8.context = ((l_0_141.urls)[l_0_14]).context
                                           l_0_8.unscrubbed_username = l_0_10
                                           l_0_8.unscrubbed_domain = l_0_11
                                           ;
@@ -517,58 +551,58 @@ for l_0_54,l_0_55 in pairs(l_0_2) do
                                 end
                                 do return mp.INFECTED end
                                 do
-                                  local l_0_142 = nil
-                                  l_0_5[l_0_142] = {(l_0_3[l_0_66])[1], l_0_55}
-                                  l_0_6[l_0_66] = 1
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out DO_STMT
+                                  local l_0_144 = nil
+                                  l_0_5[l_0_144] = {(l_0_3[l_0_68])[1], l_0_57}
+                                  l_0_6[l_0_68] = 1
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC969: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1007: LeaveBlock: unexpected jumping out DO_STMT
 
                                 end
                               end
