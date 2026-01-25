@@ -1270,6 +1270,10 @@
       <o:url>https://api.flow.microsoft.com/providers/Microsoft.ProcessSimple/environments</o:url>
       <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://service.flow.microsoft.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="PowerPlatformEnvironmentsUrl" o:authentication="2">
+      <o:url>https://api.flow.microsoft.com/providers/Microsoft.ProcessSimple/environments</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://api.powerplatform.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
     <o:service o:name="PAPIProfileServiceGetProfile" o:authentication="2">
       <o:url>https://substrate.office.com/profileb2/v2.0/me/V1Profile</o:url>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="substrate.office.com" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
@@ -2256,6 +2260,7 @@
     <o:token o:name="Substrate.BaseHost.FP">substrate.office.com</o:token>
     <o:token o:name="Outlook.AuthHost">outlook.office.com</o:token>
     <o:token o:name="Flow.AuthHost">https://service.flow.microsoft.com/</o:token>
+    <o:token o:name="PowerPlatform.AuthHost">https://api.powerplatform.com</o:token>
     <o:token o:name="Flow.BaseHost">flow.microsoft.com</o:token>
     <o:token o:name="Teams.BaseHost">teams.microsoft.com</o:token>
     <o:token o:name="OfficeApi.AuthHost">api.office.net</o:token>
@@ -2377,6 +2382,7 @@
     <o:token o:name="SafelinksGetParams">url</o:token>
     <o:token o:name="SafelinksDropParams">data;sdata;reserved</o:token>
     <o:token o:name="SafelinksSpoLofDropParams">xsdata;sdata;ovuser;clickParams</o:token>
+    <o:token o:name="SharepointConsumerAppID">0d9adc9a-fdcf-465b-b30f-969a08bfef07</o:token>
     <o:token o:name="SuggestionAbortRequestTimeMS">1000</o:token>
     <o:token o:name="SuggestionAuthFlags">0</o:token>
     <o:token o:name="SuggestionMaxRequestSize">2097152</o:token>
@@ -2497,7 +2503,7 @@
     <o:token o:name="BlockedFileExtensionsList">accdb;accde;accdw;accdt;accda;accdr;accdu;ade;adp;app;appcontent-ms;application;appref-ms;appx;appxbundle;asa;asp;aspx;asx;bas;bat;bgi;cab;cer;chm;cmd;cnt;com;cpl;crt;csh;der;deskthemepack;diagcab;exe;fxp;gadget;grp;hlp;hpj;hta;htc;img;inf;ins;iso;isp;its;jar;jnlp;js;jse;ksh;library-ms;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;mav;maw;mcf;mda;mdb;mde;mdt;mdw;mdz;msc;msh;msh1;msh2;msh1xml;msh2xml;mshxml;msi;msix;msixbundle;msp;msstyles;mst;msu;ops;osd;pcd;pif;pl;plg;ppkg;prf;prg;printerexport;ps1;ps2;ps1xml;ps2xml;psc1;psc2;psd1;psdm1;pst;py;pyc;pyo;pyw;pyz;pyzw;rat;reg;scf;scr;sct;search-ms;settingcontent-ms;shb;shs;theme;themepack;tmp;url;vb;vbe;vbp;vbs;vhd;vhdx;vsmacros;vsw;webpnp;website;ws;wsc;wsf;wsh;xbap;xll;xnk</o:token>
     <o:token o:name="AMSIMaxStreamSizeForScanInBytes">16777216</o:token>
     <o:token o:name="AMSIContentTypesToScan">($^|embeddings)</o:token>
-    <o:token o:name="ActivationFilterGUIDs">FFFF;b;{DF630910-1C1D-11D0-AE36-8C0F5E000000}|FFFF;t;{EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}|FFFF;t;{8856F961-340A-11D0-A96B-00C04FD705A2}|</o:token>
+    <o:token o:name="ActivationFilterGUIDs">FFFF;b;{DF630910-1C1D-11D0-AE36-8C0F5E000000}|FFDF;b;{EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B}|FFFF;t;{8856F961-340A-11D0-A96B-00C04FD705A2}|</o:token>
     <o:token o:name="HlinkScopedActivationFilterBlockListGUIDs">FFFF;b;{3050F3DA-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F3B2-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F406-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{3050F3BC-98B5-11CF-BB82-00AA00BDCE0B}|FFFF;b;{30590066-98B5-11CF-BB82-00AA00BDCE0B}|</o:token>
     <o:token o:name="OneNotePdfConversionKey">0e3c51927ec44a3db5dbf4a2fcc18d0f</o:token>
     <o:token o:name="OneNoteEnableWebConnectedExperiences">true</o:token>
