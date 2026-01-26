@@ -316,6 +316,13 @@
                 "id": "cdm-processors.vscode-cdm-extension"
             }
         },
+        "JITX.jitpcb-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "JITX",
+                "id": "JITX.jitx-vscode"
+            }
+        },
         "JJHO.MicrosoftVisualStudioInternationalPack10SR1": true,
         "JuliaComputing.juliasim-studio": {
             "disallowInstall": true,
@@ -625,6 +632,13 @@
             "extension": {
                 "displayName": "Unity",
                 "id": "visualstudiotoolsforunity.vstuc"
+            }
+        },
+        "ValkyrLabsInc.vlcode-dev": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ValorIDE",
+                "id": "ValkyrLabsInc.valoride-dev"
             }
         },
         "VisualStudioExptTeam.intellicode-api-usage-examples": {
@@ -978,6 +992,20 @@
             }
         },
         "ctf0.htmlhint": true,
+        "cweijan.vscode-es-client2": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Database Client",
+                "id": "cweijan.vscode-database-client2"
+            }
+        },
+        "cweijan.vscode-myssql-client2": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Database Client",
+                "id": "cweijan.vscode-database-client2"
+            }
+        },
         "cweijan.vscode-typora": {
             "disallowInstall": true,
             "extension": {

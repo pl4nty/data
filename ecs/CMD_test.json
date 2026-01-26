@@ -1203,6 +1203,7 @@
         "IWP_UseNewLSUri": true,
         "IWSBypassCPCFEforDeviceAction": true,
         "IWSBypassCPCFEforDirectLaunchUrl": true,
+        "IWSPullModeForAllDevice": true,
         "IncludePolicyWithNoPartnerId": true,
         "InstallRdAgentInCanaryEnabled": true,
         "InvokeCASForFLD": true,
