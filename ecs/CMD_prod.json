@@ -197,6 +197,7 @@
         "EnableApex3TierRegionInPolicySvc": true,
         "EnableApexPreviewString": false,
         "EnableApexRemoteAction": true,
+        "EnableApexTenantOffboard": true,
         "EnableApiVersion20250301ForCdp": true,
         "EnableApplySSOForAADJInUX": true,
         "EnableApplySSOForHAADJInUX": true,
