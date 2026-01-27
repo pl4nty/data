@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "3D-printable accessory mounting designs",
+    "downloadDescription": "Download 3D-printable accessory mounting designs for Microsoft Adaptive Accessories.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MAA_3DMountingDesigns.zip",
+            "url": "https://download.microsoft.com/download/5793553f-336a-4ac4-972e-29b401bf2206/MAA_3DMountingDesigns.zip",
+            "size": "365929",
+            "version": "1",
+            "datePublished": "1/27/2026 4:42:00 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MAA_Hub_MountingCase.STEP",
+            "url": "https://download.microsoft.com/download/5793553f-336a-4ac4-972e-29b401bf2206/MAA_Hub_MountingCase.STEP",
+            "size": "1018512",
+            "version": "1",
+            "datePublished": "1/27/2026 4:42:00 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MAA_Button_Springlock.STEP",
+            "url": "https://download.microsoft.com/download/5793553f-336a-4ac4-972e-29b401bf2206/MAA_Button_Springlock.STEP",
+            "size": "747886",
+            "version": "1",
+            "datePublished": "1/27/2026 4:42:00 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MAA_Button_LargeBasePlate.STEP",
+            "url": "https://download.microsoft.com/download/5793553f-336a-4ac4-972e-29b401bf2206/MAA_Button_LargeBasePlate.STEP",
+            "size": "317257",
+            "version": "1",
+            "datePublished": "1/27/2026 4:42:00 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can download individual designs or all available designs for Microsoft Adaptive Accessories mounting. To ensure you select the correct size and design, please carefully review the file names (e.g., surf_pen_pincher_cap_large).\n\n3D-printable designs from Microsoft do not include or require a permanent change to or opening an accessory; such actions will void the accessory's warranty. Microsoft does not guarantee that these 3D-printable designs will work for everyone. Use these 3D-printable designs at your own risk. Microsoft is not responsible for any damage resulting from the use of these 3D-printable designs.\n\n3D printing services are provided and warrantied exclusively by the service provider. Microsoft is not responsible for the performance of any third-party service providers, or their compliance with applicable regulatory, compliance, safety or any other requirements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MAA_3DMountingDesigns.zip",
+        "MAA_Hub_MountingCase.STEP",
+        "MAA_Button_Springlock.STEP",
+        "MAA_Button_LargeBasePlate.STEP"
+    ],
+    "detailsSection_file_size": [
+        "357.4 KB",
+        "994.6 KB",
+        "730.4 KB",
+        "309.8 KB"
+    ],
+    "detailsSection_file_date": "1/27/2026",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "1. Select Download, select the file or files you want to download, and then select Download again.\n2. The download should start automatically. If prompted, select Save or Save this program to disk.\n3. Select Open file or find the file on your device and open it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108538",
+    "downloadPreload": true
+}
