@@ -23,8 +23,8 @@ if not StringEndsWith(l_0_3, "\\windows\\system32\\svchost.exe") then
   return mp.CLEAN
 end
 if IsCommandLineTrackedForTechnique(l_0_1, "LuaTriggerTaskResourceScanB") == true then
-  TrackPidAndTechniqueBM(l_0_2.ppid, "T1053.005", "schtask_target")
-  TrackPidAndTechniqueBM(l_0_2.ppid, "T1053.005", "BM:ScheduledTaskProcessExecution.B")
+  TrackPidAndTechniqueBM(l_0_0.ppid, "T1053.005", "schtask_target")
+  TrackPidAndTechniqueBM(l_0_0.ppid, "T1053.005", "BM:ScheduledTaskProcessExecution.B")
   return mp.INFECTED
 end
 return mp.CLEAN
