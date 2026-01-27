@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260124.6.0",
-        "CalendarCompanionMsitVersion": "1.20260113.8.0",
+        "CalendarCompanionDFVersion": "1.20260125.4.0",
+        "CalendarCompanionMsitVersion": "1.20260121.9.0",
         "CalendarCompanionProdVersion": "1.20260109.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -333,6 +333,7 @@
         "features.useNovaForCalendar": 0,
         "features.useNovaForSuggestions": 0,
         "hostFeatureFlags_shared": 0,
+        "hostRingBucket": "60",
         "logSuspensionMemorySnapshots": 1,
         "offlineState_shared": 0,
         "refactorFeedbackConfig_shared": 1,
@@ -1882,6 +1883,7 @@
         "enableClientTypeFilter": false,
         "enableDebugPanel": false,
         "enableVerticalsViaConfig": true,
+        "hostRingBucket": "60",
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "refactorFeedbackConfig_shared": 1,
@@ -1987,7 +1989,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260124.5.0",
+        "PeopleInTaskbarDFVersion": "1.20260125.4.0",
         "PeopleInTaskbarMsitVersion": "1.20260113.9.0",
         "PeopleInTaskbarProdVersion": "1.20251217.2.0",
         "PeopleInTaskbarVersion": "1.20251217.2.0",
@@ -2037,7 +2039,8 @@
                 "https://config.edge.skype.com",
                 "https://localcdn.centro-dev.com:*",
                 "https://config.centro.core.microsoft",
-                "https://petrol-int.office.microsoft.com"
+                "https://petrol-int.office.microsoft.com",
+                "https://cdn.config.centro.core.microsoft"
             ],
             "default-src": [
                 "'none'"
@@ -2124,7 +2127,7 @@
             ]
         },
         "enableBackgroundAuthOnHost_shared": 1,
-        "hostRingBucket": "80",
+        "hostRingBucket": "60",
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
