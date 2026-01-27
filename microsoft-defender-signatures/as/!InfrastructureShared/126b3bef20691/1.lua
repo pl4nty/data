@@ -70,7 +70,7 @@ do
           l_0_16 = l_0_16.add_related_file
           l_0_16(l_0_3)
           l_0_16 = bm
-          l_0_16 = l_0_16.add_related_file
+          l_0_16 = l_0_16.add_threat_file
           l_0_16(l_0_2)
           l_0_16 = mp
           l_0_16 = l_0_16.INFECTED
