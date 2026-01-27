@@ -1074,7 +1074,6 @@
         "AutopatchReliabilityScoreModuleImpactSwitch": true,
         "CVEReporting": true,
         "CacheAndFilterPrerequisiteFailedDevices": true,
-        "CdtTokenRolloutInDevice": true,
         "ClientAgentMigration": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
         "DSSApi": true,
