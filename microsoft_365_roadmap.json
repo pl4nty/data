@@ -1,5 +1,243 @@
 [
     {
+        "created": "2026-01-27T00:01:00",
+        "description": "Copilot now uses M365 Graph data to provide more relevant, contextual responses. Updated settings make it easier to view and manage what Copilot remembers and your personalization preferences.",
+        "id": 551195,
+        "locale": null,
+        "modified": "2026-01-27T00:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Enhanced M365 Copilot Memory - Copilot is now personalized with work data"
+    },
+    {
+        "created": "2026-01-27T00:01:00",
+        "description": "Edit your images directly in PowerPoint with Copilot, no need to switch apps or interrupt your flow. Whether you're refining visuals for a pitch deck, enhancing marketing assets, or simply making your slides pop, the image editor makes it fast and seamless. You can make edits like improving the resolution, removing the background, and more.",
+        "id": 551187,
+        "locale": null,
+        "modified": "2026-01-27T00:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Quickly edit an image in PowerPoint"
+    },
+    {
+        "created": "2026-01-27T00:01:00",
+        "description": "Protect file based on the website the file is downloaded or the app the file is created.",
+        "id": 547835,
+        "locale": null,
+        "modified": "2026-01-27T00:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention- Source context based file protection for Endpoint"
+    },
+    {
+        "created": "2026-01-27T00:01:00",
+        "description": "With this feature when multiple files are involved in a DLP enforcement action, the policy tip will now show multiple files and their respective status. ",
+        "id": 547832,
+        "locale": null,
+        "modified": "2026-01-27T00:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention- Show customized message or hyperlink for multiple file toast"
+    },
+    {
         "created": "2026-01-23T23:00:31",
         "description": "Copilot in Viva Glint will use the same access controls as Microsoft 365 Copilot, streamlining how organizations manage AI features. This reduces setup complexity and helps more managers and leaders access AI\u2011powered insights from employee feedback in their everyday workflow. ",
         "id": 551197,
