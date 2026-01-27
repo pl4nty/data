@@ -10,23 +10,23 @@ do
     if not (this_sigattrlog[1]).utf8p2 then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC18: Confused about usage of register: R2 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC20: Confused about usage of register: R2 in 'UnsetPending'
 
   end
   do
     if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 then
-      local l_0_3, l_0_4, l_0_5, l_0_7, l_0_9, l_0_10, l_0_11, l_0_13 = ((this_sigattrlog[2]).utf8p1):match("([^\\]+)$"), ((this_sigattrlog[1]).utf8p2):match("create(.*)binpath")
+      local l_0_3, l_0_4, l_0_5, l_0_7, l_0_9, l_0_10, l_0_11, l_0_13 = ((this_sigattrlog[2]).utf8p1):match("([^\\]+)$"), ((string.lower)((this_sigattrlog[1]).utf8p2)):match("create(.*)binpath")
     end
-    -- DECOMPILER ERROR at PC58: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC62: Confused about usage of register: R1 in 'UnsetPending'
 
     if ((this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 and not ((this_sigattrlog[3]).utf8p1):match("([^\\]+)$")) or not l_0_4 then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC64: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC68: Confused about usage of register: R1 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC65: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC69: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC72: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC76: Confused about usage of register: R0 in 'UnsetPending'
 
     if contains(l_0_4, ((this_sigattrlog[3]).utf8p1):match("([^\\]+)$")) then
       (bm.add_related_string)("RegisteredSrv", ((this_sigattrlog[3]).utf8p1):match("([^\\]+)$"), bm.RelatedStringBMReport)
