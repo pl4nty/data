@@ -1,5 +1,286 @@
 [
     {
+        "created": "2026-01-28T00:00:53",
+        "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation.",
+        "id": 552592,
+        "locale": null,
+        "modified": "2026-01-28T00:00:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Simplifying Content in the Input Box"
+    },
+    {
+        "created": "2026-01-28T00:00:53",
+        "description": "Users will now be able to upload .eml and .msg files and share it as context with Copilot Chat and M365 Copilot App.",
+        "id": 552591,
+        "locale": null,
+        "modified": "2026-01-28T00:00:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Upload Local Files now Support .eml and .msg file types"
+    },
+    {
+        "created": "2026-01-28T00:00:53",
+        "description": "Microsoft Edge has improved how a Progressive Web App (PWA) handles user navigation. When a user clicks a link, the browser will determine whether it should launch the installed PWA or open a new browser tab to give users a more seamless experience.",
+        "id": 551198,
+        "locale": null,
+        "modified": "2026-01-28T00:00:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Navigation management for Progress Web Apps"
+    },
+    {
+        "created": "2026-01-28T00:00:53",
+        "description": "The Copilot Dashboard\u2019s updated Readiness page provides IT leaders with tailored Copilot configuration recommendations. Th suggested settings are meant to streamline deployment, enhance user experience, and help users get most out of Microsoft 365 Copilot, Copilot Chat and agents. #copilotcontrolsystem",
+        "id": 551196,
+        "locale": null,
+        "modified": "2026-01-28T00:00:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Copilot Analytics - Copilot configuration insights in the Copilot Dashboard Readiness page"
+    },
+    {
+        "created": "2026-01-28T00:00:53",
+        "description": "Search folders are being moved to the Settings experience in the new Outlook for Windows and web, improving discoverability and alignment with modern organization workflows. In addition, we are expanding supported search folder types, including mail with attachments, old mail, and large mail and more. Users will also gain the ability to filter search folders by specific folders, providing more precise control over how email is organized and surfaced. #newoutlookforwindows",
+        "id": 549287,
+        "locale": null,
+        "modified": "2026-01-28T00:00:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: New search folder types"
+    },
+    {
         "created": "2026-01-27T00:01:00",
         "description": "Copilot now uses M365 Graph data to provide more relevant, contextual responses. Updated settings make it easier to view and manage what Copilot remembers and your personalization preferences.",
         "id": 551195,
@@ -1799,12 +2080,12 @@
         "description": "We're introducing the ability to save meeting invites as drafts on mobile. This feature allows users to begin composing a meeting and return to it later without sending the invite immediately\u2014helping them stay organized and flexible when scheduling.",
         "id": 545895,
         "locale": null,
-        "modified": "2026-01-13T00:00:10",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -2184,9 +2465,9 @@
         "description": "Identify if an external user is impersonating a brand commonly targeted by phishing attacks, during their initial contact with an enterprise user via Teams calling.",
         "id": 543239,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2251,9 +2532,9 @@
         "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. \n\nTo govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 545063,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4452,9 +4733,9 @@
         "description": "Teams meeting Notes, powered by Loop, are now available for instant calls and meetings, like those started from \u2018Meet now\u2019 and calls started from chat. Notes are Loop components in Teams meetings and chats that allow end users to co-create and collaborate on their meeting agenda, notes, and action items that can be co-authored and edited by everyone. Since Notes are Loop components, they stay in sync across all the places they have been shared. Once added, meeting notes can also be shared and edited in the Loop app in your web browser.",
         "id": 541831,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4800,9 +5081,9 @@
         "description": "The \"Copper, Collaborate & Compete\" update for Minecraft Education, bringing the version to 1.21.13.",
         "id": 542194,
         "locale": null,
-        "modified": "2025-12-12T00:15:16",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6295,9 +6576,9 @@
         "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
         "id": 536577,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7429,12 +7710,12 @@
         "description": "New enforcement to block access from unauthorized Microsoft 365 tenants directly in Microsoft Edge for Business, helping organizations maintain strict compliance and prevent data leakage across tenant boundaries.",
         "id": 536580,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7477,7 +7758,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Tenant Restrictions v2 (TRv2)"
+        "title": "Microsoft Edge: v.144 - Tenant Restrictions v2 (TRv2)"
     },
     {
         "created": "2025-12-03T00:15:38",
@@ -8381,12 +8662,12 @@
         "description": "We\u2019re bringing the power of Microsoft 365 Copilot directly into your daily file experience in Windows. With this feature, users can summarize files and send the summary within the share dialog. This feature will be available in File Explorer and OneDrive Activity Center. ",
         "id": 527840,
         "locale": null,
-        "modified": "2025-11-25T00:15:23",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8460,12 +8741,12 @@
         "description": "We're enhancing Activity Explorer to provide greater visibility into sensitive data flagged in Exchange Online. Previously, only the message body was viewable, which limited insight into flagged content. With this update, admins will be able to preview email attachments directly within Activity Explorer\u2014without needing to download the email.",
         "id": 527834,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11436,12 +11717,12 @@
         "description": "Microsoft Edge, on Windows systems without a physical GPU, will use the Windows Advanced Rasterization Platform (WARP) rasterizer for WebGL workloads. Prior versions use SwiftShader. This scenario is most common associated with headless environments and virtual machines. On non-Windows platforms, a physical GPU will be required for WebGL moving forward. ",
         "id": 527833,
         "locale": null,
-        "modified": "2025-11-14T01:15:08",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fwin32%2Fdirect3darticles%2Fdirectx-warp&data=05%7C02%7Cv-zbeg%40microsoft.com%7Cf203f7982a30414cb90a08de1e5e8d5d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638981588692598882%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=bK82pFEbE%2BVGvJO%2FbPYUuc8OmyOrOLCY2bhdmks936Q%3D&reserved=0",
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11478,7 +11759,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: New WebGL software backend"
+        "title": "Microsoft Edge: v.144 - New WebGL software backend"
     },
     {
         "created": "2025-11-14T01:15:08",
@@ -11595,12 +11876,12 @@
         "description": "Introduce two official Microsoft-designed dark themes for SharePoint sites, delivering a modern, elegant look with improved visual comfort and accessibility. These themes provide consistent branding options and enhance user experience in low-light environments while maintaining compliance with Microsoft design standards.",
         "id": 526788,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12546,12 +12827,12 @@
         "description": "Users will be able to update their storyline cover photo from Teams for iOS. This is already currently supported on Teams for Android or Windows, Mac, on the web.",
         "id": 526783,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13591,12 +13872,12 @@
         "description": "Users can now preview PDFs directly in the Outlook for Android app.",
         "id": 520386,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14239,12 +14520,12 @@
         "description": "Teams town hall producers can now restart a live event while the event is active in order to address technical issues that might arise during the execution of an instance. Whether technical, network, or other issue, this feature enables those managing the event to quickly resolve problems for attendees. This feature is designed to prevent the need for scheduling entirely new events.",
         "id": 523214,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14269,6 +14550,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -14302,6 +14586,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -15380,12 +15667,12 @@
         "description": "When users fill in an Address on a form, they will be prompted to choose whether to save it for future Autofill suggestions. This enhancement ensures Autofill data is saved intentionally by users and reduces unwanted entries as part of their Autofill suggestion.",
         "id": 522537,
         "locale": null,
-        "modified": "2025-11-06T00:00:20",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15422,19 +15709,19 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Improved Autofill experience in Microsoft Edge"
+        "title": "Microsoft Edge: v.144 - Improved Autofill experience in Microsoft Edge"
     },
     {
         "created": "2025-10-29T23:00:59",
         "description": "Admins can now configure policies for Edge for Business across macOS, iOS, and Android devices on top of their existing Windows configurations in the Edge management service.",
         "id": 522536,
         "locale": null,
-        "modified": "2025-10-29T23:00:59",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15563,9 +15850,9 @@
         "description": "The Learning agent helps employees build skills through personalized microlearning and structured learning experiences.",
         "id": 490154,
         "locale": null,
-        "modified": "2026-01-09T23:15:50",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16333,12 +16620,12 @@
         "description": "Introduces enhanced controls in Content Explorer\u2019s UI, enabling scoped visibility and filtering of SIT and label data. This will help with content discoverability and governance.",
         "id": 518224,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18076,12 +18363,12 @@
         "description": "Introducing a capability to Purview compliance admins via a Data Lifecycle Management to bypass retention hold or legal holds to delete content on OneDrive or SharePoint Online such as Teams meeting transcripts and/or recordings earlier than the hold durations to comply with emerging compliance requirements. Leveraging Simulation, authoring approvals, Audit and disposition reviews to set-up and enforce defensible policies.",
         "id": 518223,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -19113,9 +19400,9 @@
         "description": "Introducing a new indicator in channels to help users find meetings occurring live within the channel and join them.",
         "id": 513272,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20640,9 +20927,9 @@
         "description": "Pre-setup guides, editability, actionable errors & alerting support available for Connector admins.",
         "id": 502529,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20982,9 +21269,9 @@
         "description": "Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community. ",
         "id": 513275,
         "locale": null,
-        "modified": "2025-10-15T23:45:33",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25665,12 +25952,12 @@
         "description": "Delegates with existing calendar access of other users, can now search for meetings using Copilot Chat, helping to save time and streamline processes.",
         "id": 413718,
         "locale": null,
-        "modified": "2025-11-07T00:30:39",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36539,12 +36826,12 @@
         "description": "Beginning with this feature release, Focus Areas will be associated with survey cycles and goal periods will be retired. Users will be able to select the same Focus Area across multiple cycles. The Focus Area Overview report will be filterable to groups of interest (e.g. managers only). Draft/deleted Focus Areas will no longer be included in Focus Area calculations. ",
         "id": 498922,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36850,12 +37137,12 @@
         "description": "This feature introduces Admin Unit scoping to both Content Explorer and Data Explorer, enabling more granular visibility and control over M365 data. It ensures that data exploration respects organizational boundaries defined by Admin Units, enhancing compliance and governance.",
         "id": 498915,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43119,12 +43406,12 @@
     },
     {
         "created": "2025-06-12T23:00:59",
-        "description": "New Outlook will support the connection of accounts in special environments such as Microsoft 365 GCC High, Microsoft 365 DoD, and Microsoft 365 operated by 21Vianet (China).   In this release, all mailboxes connected to new Outlook will need to be hosted in the same special environment. #newoutlookforwindows",
+        "description": "New Outlook will support the connection of accounts in special environments, starting with GCC-High and DoD. In this release, all mailboxes connected to New Outlook will need to be hosted in the same special environment. Updates regarding rollout to additional specialized cloud environments will be provided in separate roadmap items as soon as projected timelines are available. #newoutlookforwindows",
         "id": 496375,
         "locale": null,
-        "modified": "2025-06-12T23:00:59",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43170,7 +43457,7 @@
                 }
             ]
         },
-        "title": "Outlook: New Outlook Support For GCC-High and Sovereign Clouds"
+        "title": "Outlook: New Outlook Support For GCC-High and DoD"
     },
     {
         "created": "2025-06-12T23:00:59",
@@ -48151,12 +48438,12 @@
         "description": "This report, under Data access governance within SharePoint admin center, provides SharePoint admin with a list of sites where the given user has direct and indirect permissions at a site/lib/folder/file level",
         "id": 492621,
         "locale": null,
-        "modified": "2025-12-12T23:00:26",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -58888,9 +59175,9 @@
         "description": "Enterprise customers can view sensitivity labels applied to MIP protected PDF to be well informed of the data classification to enable them to handle such sensitive documents. This change will be available in the new PDF viewer on Microsoft Edge.",
         "id": 489232,
         "locale": null,
-        "modified": "2025-09-19T22:00:03",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -66384,12 +66671,12 @@
         "description": "Customers will now be able to migrate content seamlessly from Slack public and private channels to Teams shared, public, and private channels. A new first-party migration tool in the Microsoft Admin Center (MAC) will allow admins to review which Slack channels they wish to migrate, then perform content migration to Teams.",
         "id": 485709,
         "locale": null,
-        "modified": "2025-12-12T00:15:16",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -80444,12 +80731,12 @@
         "description": "With this feature, insights will be generated for potentially risky behaviors at a user level and will be surfaced across the following experiences:\n\n1) Insider risk management context in DLP alert investigation\n2) Insider risk management context in Communication compliance alert investigation\n3) Insider risk management context in Microsoft Defender XDR user entity page\n4) Advanced hunting in Microsoft Defender XDR  \n\nUser analytics will cover all eligible users in the tenant including users not in the scope of any Insider risk management policy. Customers can enable/disable user analytics in their tenant from Insider Risk Management settings.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 475058,
         "locale": null,
-        "modified": "2025-10-17T22:00:54",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "March CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93123,15 +93410,15 @@
     },
     {
         "created": "2024-03-15T23:00:39",
-        "description": "Copilot in Viva Learning will act as a virtual learning companion, assisting users throughout their learning journey and providing personalized guidance, recommendations, and the ability to take actions. Users will be able to leverage Copilot to preview and consume courses from Copilot\u2019s search results, create learning collections in a single click, and see highly relevant search results by asking questions in natural language. Copilot will be visible to users on the Home page, My Learning tab, course details pages, and on Academies.",
+        "description": "Copilot in Viva Learning will act as a virtual learning companion, assisting users throughout their learning journey and providing personalized guidance, recommendations, and the ability to take actions. Users will be able to leverage Copilot to preview and consume courses from Copilot\u2019s search results, create learning collections in a single click, and see highly relevant search results by asking questions in natural language. Copilot will be visible to users on the Home page, My Learning tab, course details pages, and on Academies. This roadmap item is no longer accurate and will be removed from the roadmap. This feature will be delivered with Roadmap ID 490154. We apologize for any inconvenience.",
         "id": 372245,
         "locale": null,
-        "modified": "2025-05-14T23:00:01",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "May CY2024",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -97713,9 +98000,9 @@
         "description": "<div><span>All participants in meetings are now able to start collaborative annotations. This will only be available in the new Microsoft Teams experience.</span> </div><div> </div>",
         "id": 89975,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -102933,12 +103220,12 @@
         "description": "In new Outlook for Windows, the People Hub offers a streamlined contacts interface with a single view of each person, automatically linking duplicates and enriching them with organizational profiles. #newoutlookforwindows",
         "id": 413114,
         "locale": null,
-        "modified": "2025-07-23T23:00:18",
+        "modified": "2026-01-28T00:00:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
