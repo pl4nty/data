@@ -254,6 +254,7 @@
         "EnableAdminProvision": true,
         "EnableAdminRecoveryAncFallbackToCurrentAnc": true,
         "EnableAgentBlobCName": true,
+        "EnableAgentCloudPCPool": true,
         "EnableAgentDrivenDevicePreparationUX": true,
         "EnableAgentHealthCheckGraphAPIs": true,
         "EnableAgentHealthStatusChangeFeedProcessor": true,
