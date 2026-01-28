@@ -5,7 +5,7 @@ SHORT DESCRIPTION
 	Overview of DSC resources found in the DellBIOSProvider module
     
 LONG DESCRIPTION
-	NOTE: As of version 2.9.1 of the DellBIOSProvider, there are 22 categories of DSC resources.
+	NOTE: As of version 2.10.0 of the DellBIOSProvider, there are 22 categories of DSC resources.
 		  
     The DellBIOSProvider module contains the following Desired State Configuration (DSC) resources:
 		- DCPP_AdvancedBootOptions
