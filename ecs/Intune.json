@@ -274,7 +274,6 @@
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
             "EGM_UseRedisCache": true,
-            "EnableRiskScoreOptimization": true,
             "NoFallback_AADSTS500022": true,
             "NoFallback_AADSTS5000224": true,
             "NoFallback_AADSTS5000225": true,
@@ -289,6 +288,8 @@
     },
     "SVC_CorpDeviceEnrollment": {
         "FlightingV2": {
+            "AllowAcmeEnrollmentOnClosedSession": true,
+            "DisablePermanentFailureOfSession": true,
             "EnableAPSyncRequestMessage": true,
             "EnableAcmeIncomingRequestValidation": true,
             "EnableGenerateAcmeNewNonce": true,
