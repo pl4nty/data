@@ -2980,4 +2980,30 @@ isCommonScheduledTaskCommand = function(l_89_0)
 
 end
 
+isCommonScheduledTaskFile = function(l_90_0)
+  -- function num : 0_89
+  if l_90_0 == nil or #l_90_0 <= 5 then
+    return 
+  end
+  l_90_0 = (string.lower)(l_90_0)
+  if StringEndsWith(l_90_0, "defenderatponboardingscript.cmd") or StringEndsWith(l_90_0, "defenderatponboarding.cmd") or StringEndsWith(l_90_0, "\\programdata\\airwatch\\cache\\disable_netbios.ps1") or StringEndsWith(l_90_0, "\\windows\\ise\\ise_add_profile.bat") or StringEndsWith(l_90_0, "\\temp\\clientcert.ps1") or StringEndsWith(l_90_0, "\\program files\\wpdf\\scripts\\tsuserex.dll") or StringEndsWith(l_90_0, "\\windows\\disable-usbhubsleep.ps1") or StringEndsWith(l_90_0, "\\windows\\logs\\defender-onboard-startupscript.ps1") then
+    return true
+  end
+  do
+    local l_90_1, l_90_2, l_90_3 = (string.match)(l_90_0, "([^\\]+)$") or l_90_0
+    -- DECOMPILER ERROR at PC69: Confused about usage of register: R1 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC71: Confused about usage of register: R1 in 'UnsetPending'
+
+    if l_90_1 == nil or #l_90_1 <= 4 then
+      return 
+    end
+    local l_90_4 = nil
+    if ({["ws1_health_utility.ps1"] = true, ["configmgrclienthealth.ps1"] = true, ["enable-hybridazureadscheduletasks.ps1"] = true, ["psappdeploytoolkit-executeasuser.vbs"] = true, ["mdm_dsmcheck.ps1"] = true, ["noahbu.cmd"] = true, ["pslogcleanup.ps1"] = true, ["uemslogcollector.exe"] = true, ["map-paw-share.ps1"] = true, ["deploy-osicfromgpo.ps1"] = true, ["configmgrclienthealth.exe"] = true, ["sccm_client_install_v2.4.ps1"] = true, ["lock.bat"] = true, ["rungpresultreport.vbs"] = true, ["bitsadmin_change_to_no_proxy.bat"] = true, ["devicecomplianceonboardingscript.cmd"] = true, ["smime_auto_installation.vbs"] = true, ["manage.dla.ps1"] = true, ["invoke-mdesetup.ps1"] = true, ["enable-bitlocker.ps1"] = true, ["backup-log_v0.33.ps1"] = true, ["migrate-client.cmd"] = true, ["zd_nimda_cockpit_pw.ps1"] = true, ["dnswinsconfig.exe"] = true, ["setmcafeecustomprops.ps1"] = true, ["enableinheritance_final.ps1"] = true, ["vf-wdatp_registry.xml"] = true, ["windowsdefenderatponboardingscript.cmd"] = true, ["runtoasthidden.cmd"] = true, ["citrixvda_modreg.bat"] = true, ["win32agentipc.exe"] = true, ["set-ahcbitlockersequence.ps1"] = true, ["wudu.vbs"] = true, ["sccmclienteval_new.ps1"] = true, ["outlooksmime.vbs"] = true, ["get-newteamsversion.ps1"] = true, ["java_deployment.ps1"] = true, ["pxs_bvalidation.ps1"] = true, ["saverecoverykey.ps1"] = true, ["check-gpo.ps1"] = true, ["lockevent.bat"] = true, ["gporunpsscriptsilent.vbs"] = true, ["removelocalprofiles.ps1"] = true, ["configmgrstartup.vbs"] = true, ["clean-usertemp.ps1"] = true, ["ubsremoteassistendtasks.ps1"] = true, ["rac.exe"] = true, ["firstlaunch_teams.ps1"] = true, ["cer_automation.bat"] = true, ["launchdeployapps.vbs"] = true, ["intunescript-imageinformation-user.ps1"] = true, ["configupdater.ps1"] = true, ["addskypemeetingsplugintofirewall.ps1"] = true, ["users_fw.ps1"] = true, ["get-usersession-logoff-old-v1.ps1"] = true, ["user_logging_final.ps1"] = true, ["optumscriptswitchupdate.bat"] = true, ["reboot_check_updated.ps1"] = true, ["pcm-ucheck.ps1"] = true, ["remove-intunecurrentenrollment.ps1"] = true, ["browsercacheremoval.bat"] = true, ["workstationmanager-privilegerevocation.ps1"] = true, ["discovery-windows.exe"] = true, ["chama_ps1_configpatch.vbs"] = true, ["wudu_rollback.vbs"] = true, ["mugshotv2.bat"] = true, ["802.1x_authentication_settings.xml"] = true, ["docusnapscript-run.ps1"] = true, ["auditposte.exe"] = true, ["launchpsscript.vbs"] = true, ["itunes_stop.vbs"] = true, ["updatecertificat.ps1"] = true, ["windowsdefenderatplocalonboardingscript.cmd"] = true, ["n5start.ps1"] = true, ["winget-upgrade.ps1"] = true, ["dateprofile.ps1"] = true, ["setwin10smoptions.cmd"] = true, ["qualyscloudagentinstallation.bat"] = true, ["deployirtk.cmd"] = true, ["helios_it_zd_inventarisierung_ocs.ps1"] = true, ["monitor-nexthinkservice.ps1"] = true, ["readingrjpolicy.ps1"] = true})[l_90_4] ~= nil then
+      return true
+    end
+    return false
+  end
+end
+
 
