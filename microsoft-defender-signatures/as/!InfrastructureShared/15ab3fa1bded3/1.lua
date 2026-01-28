@@ -65,9 +65,20 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 then
             l_0_8 = l_0_8.add_related_file
             l_0_15 = l_0_0
             l_0_8(l_0_15)
-            l_0_8 = mp
-            l_0_8 = l_0_8.INFECTED
-            return l_0_8
+            l_0_8 = IsFileRecentlyDropped
+            l_0_15 = l_0_0
+            l_0_8 = l_0_8(l_0_15)
+            local l_0_16, l_0_17, l_0_18 = nil
+            if l_0_8 then
+              l_0_17 = bm
+              l_0_17 = l_0_17.add_related_string
+              l_0_18 = "BinaryPaths"
+              R11_PC155 = R11_PC155 .. "|" .. (safeJsonDeserialize(l_0_16) or "")
+              l_0_17(l_0_18, R11_PC155, bm.RelatedStringBMReport)
+            end
+            l_0_17 = mp
+            l_0_17 = l_0_17.INFECTED
+            return l_0_17
           end
         end
         do
