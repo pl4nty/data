@@ -162,8 +162,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260126.10.0",
-        "CalendarCompanionMsitVersion": "1.20260121.9.0",
+        "CalendarCompanionDFVersion": "1.20260127.8.0",
+        "CalendarCompanionMsitVersion": "1.20260124.6.0",
         "CalendarCompanionProdVersion": "1.20260113.8.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -334,6 +334,7 @@
         "features.useNovaForSuggestions": 0,
         "hostFeatureFlags_shared": 0,
         "hostRingBucket": "60",
+        "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "offlineState_shared": 0,
         "refactorFeedbackConfig_shared": 1,
@@ -1989,7 +1990,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260126.10.0",
+        "PeopleInTaskbarDFVersion": "1.20260127.8.0",
         "PeopleInTaskbarMsitVersion": "1.20260120.8.0",
         "PeopleInTaskbarProdVersion": "1.20251217.2.0",
         "PeopleInTaskbarVersion": "1.20260113.9.0",
