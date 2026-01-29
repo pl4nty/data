@@ -33,6 +33,9 @@ if l_0_4 == nil or l_0_4 == "" then
   return mp.CLEAN
 end
 l_0_4 = (string.lower)(l_0_4)
+if l_0_4 == nil or l_0_4 ~= nil and (string.find)(l_0_4, "startup", 1, true) == nil then
+  return mp.CLEAN
+end
 local l_0_5 = (MpCommon.PathToWin32Path)(l_0_4)
 if l_0_5 ~= nil and l_0_5 ~= "" then
   l_0_5 = (string.lower)(l_0_5)
