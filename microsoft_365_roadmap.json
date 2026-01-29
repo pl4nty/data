@@ -1,5 +1,407 @@
 [
     {
+        "created": "2026-01-29T00:15:19",
+        "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
+        "id": 553214,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Modernized Access Denied Web Experience"
+    },
+    {
+        "created": "2026-01-29T00:15:19",
+        "description": "Microsoft 365 Copilot Chat is now integrated in Microsoft Forms, including enabling the Surveys Agent from within Forms. Surveys Agent provides specialized capabilities to help with your form - from recommending and applying improvements to your form or quiz, to helping draft and send invitations, to analyzing your results. Surveys Agent is available to users with a Microsoft 365 Copilot license, and can be accessed by clicking the \"Copilot\" icon in Forms.",
+        "id": 553136,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Forms"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Forms"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Surveys Agent and Copilot Chat in Microsoft Forms"
+    },
+    {
+        "created": "2026-01-29T00:15:19",
+        "description": "The Microsoft Edge management service now allows admins to gain visibility into extensions installed across their managed users. From the extensions monitoring page, admins can see which extensions have been installed as well as manage user requests for blocked extensions.",
+        "id": 552597,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Extensions monitoring in the Edge management service"
+    },
+    {
+        "created": "2026-01-29T00:15:19",
+        "description": "Dark mode will now be supported in SharePoint Admin Center.",
+        "id": 552593,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Dark mode support in SharePoint Admin Center"
+    },
+    {
+        "created": "2026-01-29T00:15:19",
+        "description": "The image upload feature in Microsoft 365 Copilot allows users to upload images and seek insights from Copilot based on those images. We are bringing this capability to Government Cloud environments, delivering parity with existing Copilot experiences while ensuring the functionality operates within applicable Government Cloud boundaries.",
+        "id": 551194,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Image Upload in Copilot Chat for Government Cloud"
+    },
+    {
+        "created": "2026-01-29T00:15:19",
+        "description": "We\u2019re enhancing the room booking experience in the Places App to align with the desk booking flow and visuals. This unifies the booking experience across rooms and desks.",
+        "id": 547829,
+        "locale": null,
+        "modified": "2026-01-29T00:15:19",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Enhancements to the room booking experience in the Places app"
+    },
+    {
         "created": "2026-01-28T00:00:53",
         "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation.",
         "id": 552592,
@@ -4925,15 +5327,15 @@
     },
     {
         "created": "2025-12-12T23:00:26",
-        "description": "Security admins with Defender for Office 365 Plan 1 and above can block external users from sending messages, calls, meetings invitation over Microsoft Teams via the Tenant Allow Block List in Microsoft Defender portal",
+        "description": "Security admins with Defender for Office 365 Plan 1 and above can block external users from sending messages, calls, meetings invitation over Microsoft Teams via the Tenant Allow Block List in Microsoft Defender portal. Updated January 28, 2026: We are pausing rollout at this time as we address an ongoing issue. We apologize for any inconvenience. ",
         "id": 542189,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7012,12 +7414,12 @@
     },
     {
         "created": "2025-12-05T00:00:35",
-        "description": "Drafting emails is faster and easier with Quick Parts, now available for Outlook for Windows and web. Quick Parts are saved email snippets that can be reused when composing new messages, making it easy to assemble messages with reusable parts. ",
+        "description": "Drafting emails is faster and easier with Quick Parts, now available for Outlook for Windows and web. Quick Parts are saved email snippets that can be reused when composing new messages, making it easy to assemble messages with reusable parts. #newoutlookforwindows",
         "id": 532733,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8058,10 +8460,10 @@
         "description": "Engages theme moderation feature is a powerful AI tool to monitor and moderate content. With this update, images can now match to themes, just like text.",
         "id": 534607,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -12327,12 +12729,12 @@
         "description": "We are updating the UI for Copilot Chat so that the button is separate from the mail and event compose buttons. This feature will be available for users with a Copilot license.",
         "id": 527838,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -13970,9 +14372,9 @@
         "description": "Stay connected to your team\u2019s engagement with Viva Insights Workplace Metrics, available alongside your survey results in Viva Glint. Between survey cycles, leaders and managers can use these continuous, real-time metrics to see how their team is working and evaluate whether actions they are taking to improve engagement are having the desired impact. This feature currently supports work-life balance and collaboration metrics, with more areas planned in the future.",
         "id": 518289,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14184,9 +14586,9 @@
         "description": "Explore how Copilot is making a difference in your organization through Viva Engage posts that users have shared. The Copilot Dashboard showcases real-world success stories, user-shared excitement about new Copilot features, and vibrant community discussions. These examples offer a qualitative view into how Copilot is driving productivity and engagement across your tenant, directly in the Copilot Dashboard. #CopilotControlSystem\n",
         "id": 511813,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17800,12 +18202,12 @@
         "description": "A new capability called Auto-Archiving for Exchange Online will enter public preview in November 2025 (currently under private preview for selected customers). When a user's mailbox utilization exceeds 95% of its quota and archive mailbox is present, this feature automatically moves the oldest items excluding those tagged with \u201cNever Move to Archive\u201d from the primary mailbox to the archive mailbox to prevent mail flow disruptions by keeping usage below the safe threshold of 95% of mailbox quota. ",
         "id": 515172,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -70259,12 +70661,12 @@
         "description": "When a Chat and a Page are open side by side, prompts within the Chat can now be used to modify or add to the contents of the Page.",
         "id": 478647,
         "locale": null,
-        "modified": "2025-10-15T22:45:29",
+        "modified": "2026-01-29T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

@@ -513,7 +513,7 @@
         "EnableDeviceTypeForOutOfServiceReport": true,
         "EnableDifferentEventType": true,
         "EnableDirectLaunchUrl": true,
-        "EnableDirectStreamForGPUProvision": false,
+        "EnableDirectStreamForGPUProvision": true,
         "EnableDisasterRecoveryReport": true,
         "EnableDiskControllerTypeForImageDefinition": true,
         "EnableDiskControllerTypeStrategy": true,
