@@ -24,7 +24,7 @@ for l_0_23 = 1, l_0_0 do
   local l_0_24 = (sigattr_tail[l_0_23]).attribute
   if l_0_24 == 16384 then
     local l_0_25 = ((sigattr_tail[l_0_23]).utf8p1):lower()
-    if (MpCommon.IsSampled)(100, true, true, true) == true then
+    if (MpCommon.IsSampled)(1000, true, true, true) == true then
       local l_0_26 = (mp.crc32)(0, l_0_25, 1, #l_0_25)
       if l_0_1[l_0_26] ~= nil then
         (table.insert)(l_0_1[l_0_26], l_0_23)

@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
-if l_0_0 == nil or l_0_0.image_path == nil then
-  return mp.CLEAN
-end
-local l_0_1 = (string.lower)(l_0_0.image_path)
-local l_0_2 = l_0_1:match("([^\\]+)$")
-local l_0_3 = {}
-l_0_3["w3wp.exe"] = true
-if l_0_3[l_0_2] then
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC2: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC3: Overwrote pending register: R1 in 'AssignReg'
+
+if ("w3wp.exe")("cmdhstr", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
