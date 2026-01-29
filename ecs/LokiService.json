@@ -322,6 +322,7 @@
                 "https://res-gcch.cdn.office.net"
             ]
         },
+        "copilotAppHandoff_shared": 1,
         "enableCheckTeamsLicense_shared": 0,
         "exponentialBackoff": {
             "maxIntervalInSeconds": 86400,
@@ -1628,7 +1629,7 @@
             "Notifications": 5000
         },
         "SkypeContactsUrl": "https://contacts.skype.com:8443/contacts/v3/scdlookup",
-        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting,CloseColleague:Badge",
+        "SocialDistanceFilterAndRankerSettings": "Everyone:UpcomingMeeting,Everyone:PendingRSVPToMeeting,Everyone:Badge,Everyone:Birthday,Everyone:PostedAnnouncement,Everyone:StorylinePost,Everyone:WorkAnniversary,Everyone:PositionChange,Everyone:ArticlePost,Everyone:VideoPost,Stranger:NewHire,Everyone:PendingLinkedInInvitation,Everyone:CollabNetDocumentComment,Everyone:CollabNetDocumentMentionedMe,Everyone:CollabNetDocumentModify,Everyone:CollabNetDocumentMultipleModify,Everyone:CollabNetDocumentReply,Everyone:CollabNetDocumentSharing,Everyone:EmailWithLotsOfReactions,CloseColleague:NotFirstDegreeConnection,Stranger:SharedExperience,Stranger:SharedEducation,Everyone:PromotePeopleNote,Everyone:NewSmartNotesAvailable,Everyone:MissedMeeting",
         "StreamPreviewTokenAudience": "https://*.microsoftstream.com",
         "SubstrateSearchInsightsRetrieverSettings": {
             "EnabledTypes": {
