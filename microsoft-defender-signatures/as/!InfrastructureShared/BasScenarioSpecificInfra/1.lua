@@ -113,7 +113,7 @@ IsBasFileEncryptExt = function(l_1_0)
     l_1_2 = (string.lower)(l_1_2)
     local l_1_3 = {}
     l_1_3[".lockbit"] = true
-    if l_1_3[l_1_0] == true and l_1_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(100, false, true, true) == true then
+    if l_1_3[l_1_0] == true and l_1_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(1000, false, true, true) == true then
       return true
     end
   end
