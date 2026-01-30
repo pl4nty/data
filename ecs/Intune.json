@@ -354,6 +354,7 @@
     },
     "SVC_DiagnosticService": {
         "FlightingV2": {
+            "EnableAppInstallErrorReportingV2": true,
             "EnableRawKustoQuerySupport": true
         }
     },
