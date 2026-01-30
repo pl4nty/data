@@ -718,6 +718,7 @@
         "EnableLighthouseOptimization": true,
         "EnableLinkToDeviceInGracePeriod": true,
         "EnableLinkToPolicy": true,
+        "EnableLocalAdminDesiredState": true,
         "EnableLocationRecommendationReport": true,
         "EnableLogCollectionForCPC": true,
         "EnableLongTermGetCollectionList": true,

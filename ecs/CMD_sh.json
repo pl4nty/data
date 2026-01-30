@@ -1145,6 +1145,7 @@
         "Mobius_Enable_LoginHintParam": true,
         "Mobius_Enable_OpenNHWithLoginHintFragment": true,
         "Mobius_FLDStopPollingWhenNoLicenseAvailable": true,
+        "Mobius_FeedbackAuth": true,
         "Mobius_HasDownTime": true,
         "Mobius_HideBadgeInCard": true,
         "Mobius_HideLastLoginInCard": true,
