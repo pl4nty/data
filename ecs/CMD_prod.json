@@ -72,6 +72,7 @@
         "DiagnosticAzureFirewallEnabled": true,
         "DiagnosticNetworkActivityEnabled": true,
         "DiagnosticNetworkSecurityGroupEnabled": true,
+        "DisableAutoMap": true,
         "DisableBigFourRedirectionsForDevBox": false,
         "DisableBigFourRedirectionsInFLS": true,
         "DisableBigFourRedirectionsInPostProvisioning": true,
