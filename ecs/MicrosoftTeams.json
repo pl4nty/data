@@ -1240,7 +1240,7 @@
             "EnableBatchTranscriptRequests": true,
             "EnableBotRosterCheckForLiftPropertiesCache": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
-            "EnableCallSessionEndNotification": true,
+            "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
             "EnableDynamicSuggestedPrompts": true,

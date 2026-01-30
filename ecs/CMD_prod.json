@@ -1105,6 +1105,7 @@
         "EnableReportUpdatePercentage": true,
         "EnableReportingOnboard": true,
         "EnableReportingOnboardJITProvisionIPSAuth": true,
+        "EnableSecureBootReport": true,
         "EnableTrendFilter": true,
         "EnableTrendQueryWithoutScopeTagsForUnifiedReport": true,
         "EnableUXFF": true,
