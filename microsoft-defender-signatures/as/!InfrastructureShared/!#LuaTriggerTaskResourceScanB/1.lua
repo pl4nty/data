@@ -7,7 +7,7 @@ do
   local l_0_0 = versioning and (versioning.GetCloudBlockLevel)() or 0
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 < 4 and not (MpCommon.IsSampled)(30000, false, true, false) then
+  if l_0_0 < 4 and not (MpCommon.IsSampled)(50000, false, true, false) then
     return mp.CLEAN
   end
   local l_0_1 = nil

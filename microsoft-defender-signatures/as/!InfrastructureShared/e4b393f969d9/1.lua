@@ -15,7 +15,7 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if l_0_2:find("/usr/local/share/dotnet/sdk/", 1, true) or l_0_2:find("/libexec/bin/dart", 1, true) or l_0_2:find("/Applications/RebootControl.app/Contents/MacOS/", 1, true) or l_0_2:find("dotnet run", 1, true) or l_0_2:find("dotnet build", 1, true) or l_0_2:find("/Applications/anaconda3/_conda install", 1, true) or l_0_2:find("Scripts/com.omnissa.horizon.client.mac", 1, true) then
+if l_0_2:find("/usr/local/share/dotnet/sdk/", 1, true) or l_0_2:find("/libexec/bin/dart", 1, true) or l_0_2:find("/private/tmp/qemu-", 1, true) or l_0_2:find("/.dotnet/dotnet", 1, true) or l_0_2:find("/Applications/YASARA.app/Contents/yasara/lib/", 1, true) or l_0_2:find("XcodeDefault.xctoolchain", 1, true) or l_0_2:find("bash /dev/fd/", 1, true) or l_0_2:find("cmake/JianyingPro/Debug", 1, true) or l_0_2:find("/Applications/RebootControl.app/Contents/MacOS/", 1, true) or l_0_2:find("dotnet run", 1, true) or l_0_2:find("dotnet build", 1, true) or l_0_2:find("/Applications/anaconda3/_conda install", 1, true) or l_0_2:find("Scripts/com.omnissa.horizon.client.mac", 1, true) then
   return mp.CLEAN
 end
 do

@@ -1,9 +1,9 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\73b37eec7c48\1.luac 
+-- Command line: lua\!InfrastructureShared\155b30adfa491\1.luac 
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this_sigattrlog[2]).utf8p2 ~= "" then
+if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil and (this_sigattrlog[4]).utf8p2 ~= "" then
   local l_0_0 = (bm.get_current_process_startup_info)()
   local l_0_1 = l_0_0.command_line
   local l_0_2 = (bm.get_imagepath)()
@@ -13,7 +13,7 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this
   if l_0_1:find("DropboxUpdater --server", 1, true) or l_0_1:find("/Applications/hoteling-client.app", 1, true) then
     return mp.CLEAN
   end
-  local l_0_3 = (this_sigattrlog[2]).utf8p2
+  local l_0_3 = (this_sigattrlog[4]).utf8p2
   if SuspMacPathsToMonitor(l_0_3, true) and l_0_3:match("/%.[^/]+$") then
     return mp.INFECTED
   end
