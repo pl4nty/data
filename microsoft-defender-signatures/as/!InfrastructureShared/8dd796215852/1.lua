@@ -26,7 +26,7 @@ do
   if ("\\perflogs\\")("\\public\\", "c:\\temp") then
     return mp.INFECTED
   end
-  do return mp.LOWFI end
+  do return mp.CLEAN end
   -- WARNING: undefined locals caused missing assignments!
 end
 
