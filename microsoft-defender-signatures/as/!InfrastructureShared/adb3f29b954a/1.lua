@@ -15,7 +15,7 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if l_0_2:find("Frameworks/Chromium Framework.framework/Versions", 1, true) or l_0_2:find("^node", 1, false) or l_0_2:find("mpm install --release", 1, true) or l_0_2:find("/bin/node", 1, true) or l_0_2:find("/node_modules/app-builder-bin", 1, true) or l_0_2:find("MacOS/EpicGamesLauncher-", 1, true) then
+if l_0_2:find("Frameworks/Chromium Framework.framework/Versions", 1, true) or l_0_2:find("^node", 1, false) or l_0_2:find("mpm install --release", 1, true) or l_0_2:find("/bin/node", 1, true) or l_0_2:find("/node_modules/app-builder-bin", 1, true) or l_0_2:find("/PrinterLogicIdpAuthentication", 1, true) or l_0_2:find("Lark Framework Lark Framework.framework", 1, true) or l_0_2:find("XcodeDefault.xctoolchain", 1, true) or l_0_2:find("MacOS/EpicGamesLauncher-", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED

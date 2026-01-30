@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1ebb39edd9577\1.luac 
+-- Command line: lua\!InfrastructureShared\257b3774da647\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -15,8 +15,8 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if l_0_2:find("pre-commit install", 1, true) then
-  return mp.CLEAN
+if (string.find)(l_0_2, (string.rep)("\n", 11), 1, false) or (string.find)(l_0_2, (string.rep)("%s", 51), 1, false) then
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

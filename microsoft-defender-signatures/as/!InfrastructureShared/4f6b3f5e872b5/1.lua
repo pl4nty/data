@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\151b373a3cddf\1.luac 
+-- Command line: lua\!InfrastructureShared\4f6b3f5e872b5\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -15,11 +15,13 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if l_0_2:find("/usr/local/bin/moof", 1, true) or l_0_2:find("moof-", 1, true) or l_0_2:find("ycron <running 0> ipcheck", 1, true) then
+do
+  if (this_sigattrlog[18]).matched and (this_sigattrlog[18]).utf8p2 ~= nil and (this_sigattrlog[18]).utf8p2 ~= "" then
+    local l_0_3 = (this_sigattrlog[18]).utf8p2
+    if l_0_3:find("/private/tmp/", 1, true) == 1 or l_0_3:find("/Users/Shared/", 1, true) == 1 or l_0_3:find("/tmp/", 1, true) == 1 or l_0_3:find("^/Users/[^/]+/Downloads/[^/]+$", 1, false) == 1 then
+      return mp.INFECTED
+    end
+  end
   return mp.CLEAN
 end
-if (string.find)(l_0_2, (string.rep)("\n", 11), 1, false) or (string.find)(l_0_2, (string.rep)("%s", 51), 1, false) then
-  return mp.INFECTED
-end
-return mp.CLEAN
 
