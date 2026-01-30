@@ -1981,6 +1981,7 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
   if l_74_0 == nil or type(l_74_0) ~= "string" or #l_74_0 <= 3 then
     return 
   end
+  l_74_0 = (string.lower)(l_74_0)
   local l_74_3 = (mp.GetExecutablesFromCommandLine)(l_74_0)
   if l_74_3 == nil or type(l_74_3) ~= "table" then
     l_74_3 = {}
@@ -1999,6 +2000,19 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
       (table.insert)(l_74_3, l_74_15)
     end
   end
+  if (string.find)(l_74_0, "cmd.exe", 1, true) and (string.find)(l_74_0, " /d ", 1, true) then
+    if not l_74_0:match("/d%s+\"([^\"]+)\"") then
+      l_74_1 = l_74_0:match("/d%s+([^%s\"]+)")
+    end
+    l_74_1 = l_74_1:gsub("[\"\']", "")
+  else
+    if (string.find)(l_74_0, "powershell.exe", 1, true) and (string.find)(l_74_0, " -workingdirectory ", 1, true) then
+      if not l_74_0:match("%-workingdirectory%s+\"([^\"]+)\"") then
+        l_74_1 = l_74_0:match("%-workingdirectory%s+([^%s]+)")
+      end
+      l_74_1 = l_74_1:gsub("[\"\']", "")
+    end
+  end
   local l_74_16 = false
   local l_74_17 = false
   if l_74_1 ~= nil and #l_74_1 > 3 then
@@ -2008,7 +2022,10 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
     end
     l_74_17 = (string.sub)(l_74_1, -1) == "\\"
   end
-  local l_74_18 = (string.gmatch)(l_74_0, "[\'\"%s,]?(.-%.%a%a%a?)[\"%s,]?")
+  if (string.find)(l_74_0, "node.exe .", 1, true) or (string.find)(l_74_0, "node .", 1, true) or (string.find)(l_74_0, "node", 1, true) and ((string.find)(l_74_0, " -argumentlist \'.\'", 1, true) or (string.find)(l_74_0, " -argumentlist \".\"", 1, true)) then
+    l_74_0 = l_74_0 .. " index.js "
+  end
+  local l_74_18 = (string.gmatch)(l_74_0, "[\'\"%s,]?([^\"\'%s,]-%.%a+)[%\"\'%s,]?")
   do
     local l_74_19 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
     for l_74_23 in l_74_18 do
@@ -2044,7 +2061,7 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
       end
     end
     do return l_74_3 end
-    -- DECOMPILER ERROR: 5 unprocessed JMP targets
+    -- DECOMPILER ERROR: 7 unprocessed JMP targets
   end
 end
 
