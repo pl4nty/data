@@ -1,5 +1,231 @@
 [
     {
+        "created": "2026-01-30T00:15:33",
+        "description": "This feature will enable users to use discovery script and json file to define compliance policy to specific organziational needs. The experience mirrors Windows and Linux custom compliance experience.  ",
+        "id": 553222,
+        "locale": null,
+        "modified": "2026-01-30T00:15:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Intune"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Intune"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Intune: macOS Custom Compliance "
+    },
+    {
+        "created": "2026-01-30T00:15:33",
+        "description": "Introduces enhanced controls in Content Explorer\u2019s UI, enabling scoped visibility and filtering of SIT and label data. This will help with content discoverability and governance.",
+        "id": 553218,
+        "locale": null,
+        "modified": "2026-01-30T00:15:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection-Content Explorer \u2013 Enhanced Tag (SIT, Labels) Filter at UI Layer"
+    },
+    {
+        "created": "2026-01-30T00:15:33",
+        "description": "Within Purview's Data Security Posture Management (preview), Data Risk Assessment now supports scanning all Fabric workspaces for potentially overshared Fabric data (dashboards, reports, etc.). The new Fabric tab in Data Risk Assessment allows users to view default assessment results, create custom assessments for scoped Fabric workspaces, and take proactive actions to secure your Fabric data.",
+        "id": 553217,
+        "locale": null,
+        "modified": "2026-01-30T00:15:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Posture Management for AI: Fabric integration in Data Risk Assessment"
+    },
+    {
+        "created": "2026-01-30T00:15:33",
+        "description": "Users will now have basic options for printing calendar events in the #newoutlookforwindows and Teams calendar, including choosing whether to show or hide the attendee list on the printout.",
+        "id": 551199,
+        "locale": null,
+        "modified": "2026-01-30T00:15:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Print calendar events in new Outlook and Teams"
+    },
+    {
         "created": "2026-01-29T00:15:19",
         "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
         "id": 553214,
@@ -2934,9 +3160,9 @@
         "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. \n\nTo govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 545063,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3458,12 +3684,12 @@
         "description": "With this release, the file type coverage to scan, classify and protect sensitive content on Mac devices with Microsoft Purview Data Loss Prevention policies will increase from current ~40 file types to 100+ file types.\u000b\u000bThis release will make the coverage of file types on endpoint consistent with other locations such as Exchange, SharePoint and OneDrive. ",
         "id": 543714,
         "locale": null,
-        "modified": "2025-12-29T23:45:39",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -5220,9 +5446,9 @@
         "description": "With new branded reactions, organizations can now extend their visual identity directly into meetings. IT admins simply upload custom reaction icons reflecting brand elements or event themes, and these instantly become available for meeting participants.  A simple way to create more cohesive, on-brand meeting experiences.",
         "id": 541830,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6661,9 +6887,9 @@
         "description": "This new report helps admins proactively spot unusual or risky interactions with external organizations. By analyzing communication trends and detecting sudden spikes, new domains, or abnormal engagement patterns, it provides early visibility into potential data-sharing or security risks. As external collaboration grows, this report delivers actionable insights to safeguard your tenant while supporting productive cross-organization work.",
         "id": 536572,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9539,9 +9765,9 @@
         "description": "Enables users to schedule recurring prompts in the Web tab",
         "id": 531911,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9960,9 +10186,9 @@
         "description": "This feature allows users to simply express their intention conversationally, and Copilot infers their intention and creates a scheduled prompt automatically. ",
         "id": 531913,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10893,12 +11119,12 @@
         "description": "Administrators can troubleshoot Teams meetings and calls in Teams admin center with ease with a streamlined flow, meeting quality issues, and detailed telemetry.",
         "id": 526784,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11302,10 +11528,10 @@
         "description": "You\u2019ll soon be able to create Planner tasks and view task details directly in Microsoft 365 Copilot chat. This integration makes it easy to manage and update your tasks seamlessly across Copilot and Planner without switching apps. ",
         "id": 516577,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -11357,10 +11583,10 @@
         "description": "The new Project Manager agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We\u2019re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time.",
         "id": 516576,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -17957,12 +18183,12 @@
         "description": "The Interpreter agent acts as a translator in Microsoft Teams meetings, allowing participants to listen to the meeting in their chosen language with real-time translation so speaking different languages isn\u2019t a barrier to effective understanding and collaboration. It's now available in Teams Rooms on Windows licensed for Teams Rooms Pro.",
         "id": 516571,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20636,15 +20862,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group.",
+        "description": "Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group. Updated January 29, 2026: Due to a blocker we have paused rollout until March for this feature. We apologize for any inconvenience.",
         "id": 515465,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22624,9 +22850,9 @@
         "description": "Users will be able to use Copilot Notebooks in OneNote on iPhone and iPad.",
         "id": 511794,
         "locale": null,
-        "modified": "2025-10-08T23:15:04",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -24988,12 +25214,12 @@
         "description": "Choose an emoji to accompany section names in your chats and channels list.",
         "id": 503300,
         "locale": null,
-        "modified": "2025-11-06T00:00:20",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31443,9 +31669,9 @@
         "description": "With the new org chart users will not only be able to contextaulize a person, they will also be able to scroll through visited profiles, see a manager's reports counts, and more.",
         "id": 500696,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -42540,15 +42766,15 @@
     },
     {
         "created": "2025-06-20T23:30:45",
-        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a Brief page based on your notebook content\u2014no prompt writing needed.",
+        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a Brief page based on your notebook content\u2014no prompt writing needed. Updated January 29, 2026: We are no longer moving forward with this release. We apologize for the inconvenience. ",
         "id": 497134,
         "locale": null,
-        "modified": "2025-12-29T23:45:39",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42607,15 +42833,15 @@
     },
     {
         "created": "2025-06-20T23:30:45",
-        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a FAQ page based on your notebook content\u2014no prompt writing needed.",
+        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a FAQ page based on your notebook content\u2014no prompt writing needed. Updated January 29, 2026: We are no longer moving forward with this release. We apologize for the inconvenience. ",
         "id": 497133,
         "locale": null,
-        "modified": "2025-12-16T00:15:28",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61311,9 +61537,9 @@
         "description": "Viva Insights Copilot Dashboard will start showing Microsoft 365 Copilot Chat prompt category metrics within Copilot Chat (work) insights. #copilotcontrolsystem",
         "id": 486698,
         "locale": null,
-        "modified": "2025-12-16T00:15:28",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -80178,15 +80404,15 @@
     },
     {
         "created": "2025-01-28T00:00:21",
-        "description": "We have moved this item back to rolling out while GCCH clouds complete. We apologize for any inconvenience. IT Administrators can view and monitor the health of Teams desktop clients on both Windows and Mac platforms. This feature offers comprehensive admin actionable insights into client health metrics, including client crashes and launch failures. Administrators are equipped with detailed information on issues, insights, and mitigation tools to promptly and effectively address any potential client health problems. ",
+        "description": "IT Administrators can view and monitor the health of Teams desktop clients on both Windows and Mac platforms. This feature offers comprehensive admin actionable insights into client health metrics, including client crashes and launch failures. Administrators are equipped with detailed information on issues, insights, and mitigation tools to promptly and effectively address any potential client health problems.",
         "id": 478610,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-01-30T00:15:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
