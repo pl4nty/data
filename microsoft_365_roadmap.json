@@ -1,5 +1,359 @@
 [
     {
+        "created": "2026-01-30T23:15:49",
+        "description": "We are enhancing the room booking experience in the new calendar experience across Outlook for Windows, Outlook for the web, and Teams by introducing a map view within Places Finder. This update replaces the existing side panel with a full screen, easier to use interface that helps people quickly find and book the right space.\n\n",
+        "id": 553225,
+        "locale": null,
+        "modified": "2026-01-30T23:15:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: New map-based room booking experience in Places Finder"
+    },
+    {
+        "created": "2026-01-30T23:15:49",
+        "description": "Buildings, rooms and desks that are added to the Places directory will have new profile cards, accessible from Copilot Chat and across other Microsoft 365 entry points. ",
+        "id": 553219,
+        "locale": null,
+        "modified": "2026-01-30T23:15:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: New profile cards for buildings, rooms and desks "
+    },
+    {
+        "created": "2026-01-30T23:15:49",
+        "description": "Access to People Skills on the Microsoft 365 profile card is expanding to Microsoft Teams. With this update, employees will be able to view skills directly on the profile card in Teams\u2014making it easier to learn about colleagues, build meaningful connections, and manage their own skills profile right from within their everyday flow of work.",
+        "id": 552588,
+        "locale": null,
+        "modified": "2026-01-30T23:15:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: People Skills on the profile card expanding to Teams"
+    },
+    {
+        "created": "2026-01-30T23:15:49",
+        "description": "Currently, clicking on cited content in Copilot opens files outside of Copilot. With this new feature, content can be opened directly in Copilot Chat to make viewing documents more streamlined alongside chat. This change is not available on the Microsfot 365 Copilot mobile app or when using Copilot in Edge, Copilot in Excel, Copilot in Word, and Copilot PowerPoint.",
+        "id": 548641,
+        "locale": null,
+        "modified": "2026-01-30T23:15:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Microsoft Copilot (Microsoft 365): Open Word, Excel, and PowerPoint Files in Copilot Chat"
+    },
+    {
+        "created": "2026-01-30T23:15:49",
+        "description": "Copilot connectors enable organizations to integrate content from  other external data sources into Microsoft Graph, improving Copilot\u2019s intelligence, contextual responses, and content discoverability",
+        "id": 512428,
+        "locale": null,
+        "modified": "2026-01-30T23:15:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot connectors are available for U.S. Department of Defense environment"
+    },
+    {
+        "created": "2026-01-30T20:30:28",
+        "description": "Microsoft 365 Copilot Tuning is introducing new templates in Agent Builder, designed for tasks such as drafting complex documents, validating documents against guidelines, and editing to match a distinct writing style.  Users with Copilot Tuning enabled can further customize the template-based agents by tuning the context, tools, and underlying models with their organization\u2019s proprietary data, processes, and standards. This empowers your teams with customized agents aligned to how your organization works.",
+        "id": 552589,
+        "locale": null,
+        "modified": "2026-01-30T20:30:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Customize M365 Copilot for your organization with Copilot Tuning"
+    },
+    {
         "created": "2026-01-30T00:15:33",
         "description": "This feature will enable users to use discovery script and json file to define compliance policy to specific organziational needs. The experience mirrors Windows and Linux custom compliance experience.  ",
         "id": 553222,
@@ -1603,9 +1957,9 @@
         "description": "Now, you can connect your certified for Microsoft Teams personal Bluetooth device (such as your personal headset or earbuds) and with one press of the Teams button you can launch the Teams mobile app and invoke voice in Microsoft 365 Copilot within Teams. This feature eliminates the hassle of navigating menus on your mobile phone, giving you instant access to your personal AI assistant for quick conversational voice answers. This capability is initially available in iOS. Android and desktop client will be supported in a future release.",
         "id": 494149,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4599,12 +4953,12 @@
         "description": "Teams will automatically remove hidden metadata (EXIF) from images shared in conversations. This privacy protection helps prevent sensitive information such as photo location and device details from being shared without your knowledge.\n \n",
         "id": 542795,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6274,15 +6628,15 @@
     },
     {
         "created": "2025-12-11T00:00:03",
-        "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
+        "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. Updated January 30: This feature is still in development with a planned release of April 2026. We apologize for the inconvenience. ",
         "id": 516032,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7948,12 +8302,12 @@
         "description": "IT admins can customize the message and privacy link used to notify implicitly or gain explicit consent from meeting participants for the use of recording, transcription during the meeting.",
         "id": 536570,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8393,9 +8747,9 @@
         "description": "Users can view and respond to activity across multiple tenants without switching accounts. You can triage notifications, reply to chats, and pin tenants to the left rail for quick access.\n\n",
         "id": 534490,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9692,12 +10046,12 @@
         "description": "Scheduling with Copilot: Users can now schedule meetings directly from chat. Simply ask Copilot to schedule a meeting with colleagues, and it will find available times, book rooms, draft agendas, and send invites\u2014all within the chat experience. This feature will roll out in phases and is expected to be generally available in Copilot chat across all endpoints for users with a Microsoft 365 Copilot license in the coming months.",
         "id": 532735,
         "locale": null,
-        "modified": "2025-11-21T23:15:16",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10064,10 +10418,10 @@
         "description": "Copilot readiness in the Microsoft 365 admin center provides a centralized experience for applying Microsoft\u2019s recommended settings, policies, and actions for Copilot. It organizes these into predefined packages so admins can quickly deploy Copilot securely and confidently.",
         "id": 526793,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -10466,12 +10820,12 @@
         "description": "Microsoft Teams will soon increase the bandwidth when Network Device Interface (NDI) is used with Teams meetings, webinars, or town halls. When an NDI feed is subscribed within the meeting, the bandwidth will automatically increase without the need to pin or spotlight select users for prioritization. Customers can experience up to 8 distinct 1080p NDI streams based on network conditions.",
         "id": 529854,
         "locale": null,
-        "modified": "2025-11-20T00:00:17",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12010,12 +12364,12 @@
         "description": "Python in Excel allows you to bring the capabilities of Python directly into the Excel grid. As a part of this feature, users will be able to add Python formulas directly into their workbooks without any installation required. These Python formulas will be run by Excel in a secure container on the Microsoft Cloud with enterprise-level security as a compliant Microsoft 365 connected experience.",
         "id": 526786,
         "locale": null,
-        "modified": "2025-11-27T00:45:06",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -24884,10 +25238,10 @@
         "description": "Use the new PAYGO consumption-based meter to pay for your extra SharePoint storage needs. This reduces the operational overhead associated with purchasing extra storage packs and more seamlessly integrates with Microsoft 365 Archive.",
         "id": 506743,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -34187,9 +34541,9 @@
         "description": "Microsoft Purview Sensitivity Labels in OneNote will allow users to classify and protect OneNote Sections with the same compliance standards available across Microsoft 365 apps. Users will be able to apply labels directly within OneNote, ensuring sensitive content is encrypted, access-controlled, and compliant with the organization's policies.",
         "id": 500020,
         "locale": null,
-        "modified": "2025-08-07T23:15:46",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43878,12 +44232,12 @@
         "description": "When a Teams Rooms on Windows is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro.",
         "id": 496368,
         "locale": null,
-        "modified": "2025-10-21T23:15:01",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45989,9 +46343,9 @@
         "description": "The new Workflows app is to provide an experience that is both simpler and faster to enable everyday Teams and SharePoint users to create automations in three steps or less. This item is still In Development for production release; we apologize for any inconvenience.",
         "id": 491632,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -71912,7 +72266,7 @@
         "description": "Designer is now part of Copilot. Copilot Suggestions now brings you familiar Designer slide layout and presentation template suggestions in a vertical gallery, along with new capabilities.",
         "id": 483882,
         "locale": null,
-        "modified": "2025-08-11T23:00:11",
+        "modified": "2026-01-30T20:30:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2025",
         "publicPreviewDate": "",
@@ -71929,7 +72283,7 @@
                 "tagName": "Microsoft Copilot (Microsoft 365)"
             },
             {
-                "tagName": "PowerApps"
+                "tagName": "PowerPoint"
             },
             {
                 "tagName": "General Availability"
@@ -71951,7 +72305,7 @@
                     "tagName": "Microsoft Copilot (Microsoft 365)"
                 },
                 {
-                    "tagName": "PowerApps"
+                    "tagName": "PowerPoint"
                 }
             ],
             "releasePhase": [
@@ -77456,10 +77810,10 @@
     },
     {
         "created": "2025-02-14T00:15:58",
-        "description": "SharePoint agents' usage statistics will be available for every SharePoint site. This will be available on the site analytics page for the site owner persona. This will also include analytics on how many times source files are cited. #copilotcontrolsystem",
+        "description": "AI citations analytics will help you track the usage of SP documents, news and pages through copilot and AI agents. You will be able to see how often a page or a file is referenced in a copilot response. You can also get insights into SharePoint site content getting referenced in copilot responses aggregated at the site level.\n",
         "id": 480725,
         "locale": null,
-        "modified": "2025-09-11T00:00:04",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
@@ -77501,7 +77855,7 @@
                 }
             ]
         },
-        "title": "SharePoint: Agent usage statistics per SharePoint site"
+        "title": "SharePoint: AI citations analytics for documents and pages"
     },
     {
         "created": "2025-02-14T00:15:58",
@@ -97231,12 +97585,12 @@
         "description": "Enable the remediation of incompatible formulas and file links in formulas in Excel files after migration from other cloud platforms to Microsoft 365.",
         "id": 470436,
         "locale": null,
-        "modified": "2024-12-02T19:15:05",
+        "modified": "2026-01-30T23:15:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
