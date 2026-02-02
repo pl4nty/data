@@ -8,7 +8,7 @@
 RootModule = 'WhiteboardAdmin.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.13.8'
+ModuleVersion = '1.13.9'
 
 # ID used to uniquely identify this module
 GUID = 'CC24F7D4-4CF7-46D3-BD87-30A3D44ECF96'
