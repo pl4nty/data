@@ -7,8 +7,8 @@
         }
     },
     "OneShell": {
-        "CopilotBannerLoaderEnabled": false,
-        "M365CopilotBannerEnabled": false,
+        "CopilotBannerLoaderEnabled": true,
+        "M365CopilotBannerEnabled": true,
         "M365CopilotBannerSelfHostInternalEnabled": false,
         "M365CopilotRebrandingEnabled": true,
         "MaxRetriesForXMLRequest": 5,
