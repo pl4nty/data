@@ -76,6 +76,7 @@ do
         (bm.trigger_sig)("GenRansom_SD_RemotePath", safeJsonSerialize(l_0_19))
       end
       if l_0_17 >= 3 then
+        (bm.set_detection_string)(safeJsonSerialize(l_0_19))
         return mp.INFECTED
       end
       return mp.CLEAN
