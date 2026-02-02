@@ -1042,6 +1042,7 @@ function Get-WhiteboardMigrationMapping
             AzureWhiteboardOwnerId = $null
             AzureWhiteboardCreatedTime = $null
             AzureWhiteboardBaseApi = $null
+            AzurePreviousOwnerId = $null
             FluidFileId = $null
             MigratedBoardDriveId = $null
             MigratedBoardItemId = $null
@@ -1059,6 +1060,7 @@ function Get-WhiteboardMigrationMapping
             $mapping.AzureWhiteboardOwnerId = $AzureBoard.ownerId
             $mapping.AzureWhiteboardCreatedTime = $AzureBoard.createdTime
             $mapping.AzureWhiteboardBaseApi = $AzureBoard.baseApi
+            $mapping.AzurePreviousOwnerId = $AzureBoard.previousOwnerId
             $mapping.FluidFileId = $AzureBoard.fluidFileId
         }
 
