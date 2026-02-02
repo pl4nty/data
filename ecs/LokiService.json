@@ -162,7 +162,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260128.9.0",
+        "CalendarCompanionDFVersion": "1.20260131.9.0",
         "CalendarCompanionMsitVersion": "1.20260124.6.0",
         "CalendarCompanionProdVersion": "1.20260113.8.0",
         "CompanionRing": "Prod",
@@ -323,6 +323,7 @@
             ]
         },
         "copilotAppHandoff_shared": 1,
+        "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckTeamsLicense_shared": 0,
         "exponentialBackoff": {
             "maxIntervalInSeconds": 86400,
