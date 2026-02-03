@@ -104850,7 +104850,7 @@
         "description": "Copilot for Microsoft 365 usage will be added to the Microsoft Graph API, allowing for the creation of customized reporting and analytics. Metrics included in the Graph API will match those available in the Copilot for Microsoft 365 usage report in the Microsoft 365 admin center, including tenant-level count of enabled users and active users, as well as last activity date per user (all up and per Microsoft 365 app). #copilotcontrolsystem",
         "id": 396562,
         "locale": null,
-        "modified": "2026-01-09T23:15:50",
+        "modified": "2026-02-02T22:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "September CY2024",
@@ -104868,9 +104868,6 @@
             },
             {
                 "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Graph"
             },
             {
                 "tagName": "General Availability"
@@ -104896,9 +104893,6 @@
                 },
                 {
                     "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Graph"
                 }
             ],
             "releasePhase": [
@@ -104910,7 +104904,7 @@
                 }
             ]
         },
-        "title": "Microsoft Graph: Graph API - Copilot for Microsoft 365 usage"
+        "title": "Microsoft Copilot (Microsoft365): Graph API - Copilot for Microsoft 365 usage"
     },
     {
         "created": "2024-01-19T00:15:45",
