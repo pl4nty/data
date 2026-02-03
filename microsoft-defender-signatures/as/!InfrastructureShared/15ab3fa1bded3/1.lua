@@ -72,19 +72,31 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 then
             if l_0_8 then
               l_0_17 = bm
               l_0_17 = l_0_17.add_related_string
-              l_0_18 = "BinaryPaths"
+              l_0_18 = "RecentDrop"
               R11_PC155 = R11_PC155 .. "|" .. (safeJsonDeserialize(l_0_16) or "")
               l_0_17(l_0_18, R11_PC155, bm.RelatedStringBMReport)
             end
-            l_0_17 = mp
-            l_0_17 = l_0_17.INFECTED
-            return l_0_17
+            l_0_17 = sysio
+            l_0_17 = l_0_17.GetPEVersionInfo
+            l_0_18 = l_0_0
+            l_0_17 = l_0_17(l_0_18)
+            do
+              do
+                if not l_0_17 then
+                  local l_0_19, l_0_20 = nil
+                end
+                l_0_18 = bm
+                l_0_18 = l_0_18.add_related_string
+                l_0_18("version_info_dll", l_0_17, bm.RelatedStringBMReport)
+                l_0_18 = mp
+                l_0_18 = l_0_18.INFECTED
+                do return l_0_18 end
+                l_0_0 = mp
+                l_0_0 = l_0_0.CLEAN
+                return l_0_0
+              end
+            end
           end
-        end
-        do
-          l_0_0 = mp
-          l_0_0 = l_0_0.CLEAN
-          return l_0_0
         end
       end
     end
