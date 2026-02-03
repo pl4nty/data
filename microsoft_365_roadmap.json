@@ -1,5 +1,176 @@
 [
     {
+        "created": "2026-02-03T00:15:51",
+        "description": "Users can now copy tables created in Copilot. Leverage Copilot to make your content better and use it anywhere you need to.",
+        "id": 553595,
+        "locale": null,
+        "modified": "2026-02-03T00:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copy Tables in Microsoft 365 Copilot Chat"
+    },
+    {
+        "created": "2026-02-03T00:15:51",
+        "description": "We're simplifying the Input Box in Copilot Chat by bringing together various user actions under the Plus menu (+). The unified Plus menu (+) will continue to allow users to add content to prompts, while also letting them access tools/agents and manage data sources used to ground Copilot.",
+        "id": 552596,
+        "locale": null,
+        "modified": "2026-02-03T00:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Unified Plus menu (+)"
+    },
+    {
+        "created": "2026-02-03T00:15:51",
+        "description": "You can join a Microsoft webinar from a Teams Room on Android and interact seamlessly during the event. Available for Teams Rooms Pro.",
+        "id": 547824,
+        "locale": null,
+        "modified": "2026-02-03T00:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Attend Microsoft webinars from Teams Rooms on Android"
+    },
+    {
         "created": "2026-01-30T23:15:49",
         "description": "We are enhancing the room booking experience in the new calendar experience across Outlook for Windows, Outlook for the web, and Teams by introducing a map view within Places Finder. This update replaces the existing side panel with a full screen, easier to use interface that helps people quickly find and book the right space.\n\n",
         "id": 553225,
@@ -126,7 +297,7 @@
         "description": "Access to People Skills on the Microsoft 365 profile card is expanding to Microsoft Teams. With this update, employees will be able to view skills directly on the profile card in Teams\u2014making it easier to learn about colleagues, build meaningful connections, and manage their own skills profile right from within their everyday flow of work.",
         "id": 552588,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -147,6 +318,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -171,6 +345,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2549,12 +2726,12 @@
         "description": "People Skills is expanding AI powered skill inferencing to include Microsoft 365 E3 and E5 licensed users. Previously, AI powered skill inferencing was available only to Microsoft 365 Copilot and Microsoft Viva licensed users. With this update, admins will have the option to turn on AI powered skill inferencing for Microsoft 365 E3 / E5 licensed users directly in the Microsoft 365 admin center. AI powered skill inferencing uses AI to automatically identify and update skills on users\u2019 Microsoft 365 profiles based on their work activity from the Microsoft Graph. This control will be available to tenants with Copilot licenses.\n",
         "id": 548643,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14487,12 +14664,12 @@
         "description": "Microsoft Information Protection (MIP) content sensitivity label support in Planner will enable encryption, restrict unauthorised actions such as copying, printing, or exporting plan contents, and add visual markings like watermarks for clear sensitivity awareness. By enforcing content-level protections, Planner will help organisations prevent data leaks, maintain compliance, and enable secure collaboration without affecting productivity.",
         "id": 523819,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16466,9 +16643,9 @@
         "description": "Enable admins to configure retention policies for various Copilots and AI Apps.",
         "id": 520388,
         "locale": null,
-        "modified": "2025-12-19T00:15:46",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19235,12 +19412,12 @@
         "description": "Data Security Investigations (DSI) now features advanced AI analysis tools, including options to add investigative context for higher-quality results, as well as improvements in vector search relevance and content categorization to better identify risky material. Additionally, we've launched a new AI-powered search function that lets investigators use natural language to locate specific files by searching through keywords, metadata, and embeddings.\n",
         "id": 518228,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19290,12 +19467,12 @@
         "description": "Introducing a Data Security Investigations (DSI) lightweight cost estimator designed to help analysts model and forecast both storage and compute unit costs based on specific use cases, enabling more accurate budget planning. In addition to the estimator, a new report provides granular breakdowns of billed storage and compute unit usage, empowering DSI analysts to identify cost-saving opportunities and optimize resource allocation.",
         "id": 518225,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21445,12 +21622,12 @@
         "description": "Theme moderation in Engage will soon offer an option to block message creation if content aligns with a theme. This change expands on the previous release to monitor and mute content based on themes.\n\nWhen a theme is blocked, users will see a message explaining why their message can't be published. Users can edit or discard the message. \n\nAdmins and corporate communicators can control where blocks happen across storylines and communities. Leaders, corporate communicators, and network/verified/Engage admins cannot be blocked regardless of theme.",
         "id": 513277,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21958,9 +22135,9 @@
         "description": "This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.",
         "id": 500872,
         "locale": null,
-        "modified": "2025-11-21T00:00:57",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30656,12 +30833,12 @@
         "description": "This feature leverages AI to autocomplete the user's formula upon typing the '=' sign. It provides context-based suggestions, streamlining the formula creation process by offering intelligent and relevant completions.",
         "id": 496370,
         "locale": null,
-        "modified": "2025-08-28T23:00:27",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36280,15 +36457,15 @@
     },
     {
         "created": "2025-07-30T23:15:18",
-        "description": "Empower managers and leaders to gather additional context and check in on team progress after an org-wide Glint survey by sending a personalized Pulse that uses M365 Copilot to tailor the Pulse to the team's needs based on the Glint survey results. With Copilot-powered Pulse follow-ups, managers and leaders can gather a timely understanding of the team\u2019s progress to-date, make mid-point adjustments if needed, and maintain momentum in their efforts to improve engagement and employee experience.",
+        "description": "This item is no longer accurate and is being removed from the roadmap.\u00a0 We apologize for any inconvenience.",
         "id": 498917,
         "locale": null,
-        "modified": "2025-07-30T23:15:18",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36466,7 +36643,7 @@
         "description": "Remotely access devices over the cloud without requiring end user involvement by signing in with credentials.",
         "id": 499154,
         "locale": null,
-        "modified": "2025-08-14T23:15:02",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
@@ -46410,12 +46587,12 @@
         "description": "In the Teams admin center, admins can now modify, review, and apply configuration settings to Android devices without overriding other settings ensuring only the desired changes are made.",
         "id": 313800,
         "locale": null,
-        "modified": "2025-07-08T23:15:08",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46593,9 +46770,9 @@
         "description": "You can now interact with your favorite apps directly from Teams chat and channels compose box using slash commands.  Type / and start interacting with Apps and Agents, invoke workflows and more. ",
         "id": 495002,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46703,12 +46880,12 @@
         "description": "We are bringing Microsoft 365 Backup Service capabilities to GCC. Microsoft 365 Backup is a product offering spanning across the OneDrive, SharePoint, and Exchange Online services that provides customers with a consistent, cross product solution, to recover their M365 data from cataclysmic events such as: at scale ransomware attacks, or malicious/accidental data deletion/corruption by end users. ",
         "id": 494517,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -64343,10 +64520,10 @@
         "description": "Introducing Data lifecycle management capabilities for Microsoft Planner. Compliance admins can now create a retention policy to manage content located in Microsoft Planner such as tasks for plans associated with an Microsoft 365 Group.",
         "id": 486828,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -67146,12 +67323,12 @@
         "description": "Learners would be able to select skills for learning, view inferred skills and courses recommendations based on inferred skills. Inferred skills are generated by taking users activity in M365 ecosystem into account.",
         "id": 485780,
         "locale": null,
-        "modified": "2025-03-25T23:45:28",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -70247,12 +70424,12 @@
         "description": "Sync failure details pop-up will now have detailed error description and next steps.",
         "id": 477822,
         "locale": null,
-        "modified": "2025-05-23T22:15:52",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "August CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -72211,12 +72388,12 @@
         "description": "This creates LMS ingestion logs for sync summary, user sync, and LRS data. Logs will help admins debug any ingestion-related issues.",
         "id": 477817,
         "locale": null,
-        "modified": "2025-05-23T22:15:52",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "July CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -79665,67 +79842,6 @@
     },
     {
         "created": "2025-01-31T23:15:55",
-        "description": "We are launching the SIP Ladder diagram tool in Teams Admin center to enable admins to troubleshoot their Direct Routing calls in a self-serve way. This feature will be available via the Usage reports page under Teams Admin center. It will also enable admins to view the SIP requests, responses and associated SDP data between Microsoft teams proxy and the SBC through which the call was routed. This data will be available for all calls made more than 30 minutes and less than 30 days ago.",
-        "id": 479413,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Direct Routing Call Troubleshooting via SIP Ladder"
-    },
-    {
-        "created": "2025-01-31T23:15:55",
         "description": "Copilot in Forms can now help you monitor and collect responses for your forms, so you can get the data you need with much less effort. Copilot can create a collection plan, track your progress, and let you know when to take action with reminders and insights. Forms can notify you when early insights are ready, and you can easily continue your analysis with Copilot in Excel. Say goodbye to manual follow-ups and hello to smarter collection and analysis.",
         "id": 470604,
         "locale": null,
@@ -84771,103 +84887,6 @@
         "title": "Microsoft Teams: Integrate Chat notification with Meeting RSVP status"
     },
     {
-        "created": "2024-05-21T23:15:05",
-        "description": "User can upload their own custom emojis and reactions to personalize their communication. Emojis will be available within the user\u2019s  tenant in chat and channels via the emoji and reaction menus.",
-        "id": 80659,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Custom emojis and reactions"
-    },
-    {
         "created": "2024-11-07T00:30:03",
         "description": "For Microsoft 365 E5 and Teams Premium customers, we are making it easier to leverage sensitivity labels from Microsoft Purview Information Protection to help set the right protection settings to meetings. Admins can now set a label inheritance policy for meeting, so that when an attendee shares a file that has a higher sensitivity than the meeting itself in meeting chat or via Live share, the meeting's sensitivity can be updated either automatically or via a recommendation to the organizer, to match with the sensitivity of the shared file.",
         "id": 467247,
@@ -89696,12 +89715,12 @@
         "description": "Quickly understand strength of your network along with suggestions to conserve bandwidth if you are experiencing networking issues.",
         "id": 414513,
         "locale": null,
-        "modified": "2025-11-20T00:00:17",
+        "modified": "2026-02-03T00:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -90816,61 +90835,6 @@
             ]
         },
         "title": "SharePoint: Microsoft Lists - Conditional branching in Microsoft Lists forms"
-    },
-    {
-        "created": "2024-07-12T22:30:02",
-        "description": "Admins and security analysts of organizations who use a third-party reporting add-in in Outlook can configure using user-reported settings to send their user reports to Microsoft for analysis and learning.",
-        "id": 406167,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Exchange"
-            },
-            {
-                "tagName": "Microsoft Defender for Office 365"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Exchange"
-                },
-                {
-                    "tagName": "Microsoft Defender for Office 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Defender for Office 365: Third party add-in user report can be sent to Microsoft for analysis"
     },
     {
         "created": "2024-07-03T00:00:28",
@@ -94672,61 +94636,6 @@
         "title": "Microsoft Teams: Decorate your background for GCC and GCC High environments (Premium)"
     },
     {
-        "created": "2024-09-24T23:15:37",
-        "description": "Updates from Teams admin center for Teams devices will happen only when they are idle. This will minimise end-user disruption.",
-        "id": 418120,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Teams devices update only when idle"
-    },
-    {
         "created": "2024-10-29T23:15:28",
         "description": "Teams Notes and Loop components are now available in Microsoft 365 GCC High and DoD environments, enabling real-time collaboration in chats and meetings. Loop components allow users to co-author tables, action items, and lists directly in chats, while Collaborative Notes let meeting attendees co-create and collaborate on their meeting agendas, notes, and action items. As Loop components, these features stay up-to-date across all shared locations, and assigned tasks automatically sync with Microsoft To Do and Planner for seamless task management.",
         "id": 418119,
@@ -95836,55 +95745,6 @@
             ]
         },
         "title": "Microsoft Intune: Intune Suite - Endpoint Privilege Management on single session Azure Virtual Desktop"
-    },
-    {
-        "created": "2024-03-15T23:00:39",
-        "description": "In addition to basic information about a meeting such as date, description, and attendees, Meeting Details will now add content from Teams\u2019 intelligent meeting recap. This includes AI-generated meeting notes, AI-suggested tasks, and any documents shared during the Teams meeting.",
-        "id": 388747,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneNote: Teams Integrations with OneNote Meeting Details"
     },
     {
         "created": "2024-01-18T00:30:38",
@@ -98093,73 +97953,6 @@
             ]
         },
         "title": "OneDrive: Agents in OneDrive"
-    },
-    {
-        "created": "2024-11-14T00:45:04",
-        "description": "Teams now supports multiple windows on iPad. Effortlessly organize your Split View experience with two Teams windows to easily navigate across meetings, chats, and more.",
-        "id": 467246,
-        "locale": null,
-        "modified": "2025-04-02T21:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: iPad Multi-Window Support"
     },
     {
         "created": "2024-07-03T00:00:28",
