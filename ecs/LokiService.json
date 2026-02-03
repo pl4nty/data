@@ -154,10 +154,10 @@
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20260201.3.0",
         "CalendarCompanionMsitVersion": "1.20260128.9.0",
-        "CalendarCompanionProdVersion": "1.20260113.8.0",
+        "CalendarCompanionProdVersion": "1.20260124.6.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20260113.8.0",
+        "HostAppVersion": "1.20260124.6.0",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1982,7 +1982,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260128.9.0",
+        "PeopleInTaskbarDFVersion": "1.20260202.2.0",
         "PeopleInTaskbarMsitVersion": "1.20260120.8.0",
         "PeopleInTaskbarProdVersion": "1.20260113.9.0",
         "PeopleInTaskbarVersion": "1.20260113.9.0",
