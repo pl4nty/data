@@ -1,14 +1,4 @@
 {
-    "AIHub": {
-        "CatchupModuleVersionOverride": "1.latest",
-        "PeopleModuleVersionOverride": "1.latest",
-        "disableCatchupTelemetry": false,
-        "enableCatchupPeopleFiles": false,
-        "enableCatchupTelemetryLogToConsole": false,
-        "enableDeveloperExperienceV2": false,
-        "enableFileCommentsInPeoplePivot": true,
-        "enableFlightsUrlOverrides": false
-    },
     "AgentsInTaskbar": {
         "AgentsInTaskbarDFVersion": "1.20250723.7.0",
         "AgentsInTaskbarMsitVersion": "1.20250723.7.0",
@@ -162,8 +152,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260131.9.0",
-        "CalendarCompanionMsitVersion": "1.20260124.6.0",
+        "CalendarCompanionDFVersion": "1.20260201.3.0",
+        "CalendarCompanionMsitVersion": "1.20260128.9.0",
         "CalendarCompanionProdVersion": "1.20260113.8.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
