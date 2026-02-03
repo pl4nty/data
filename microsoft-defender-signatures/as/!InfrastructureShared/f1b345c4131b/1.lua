@@ -38,6 +38,7 @@ do
           return mp.CLEAN
         end
         if l_0_15 == l_0_4 or (string.find)(l_0_3, l_0_6:match("[^/]*$"), 1, true) then
+          (bm.trigger_sig)("CurlDownChmodExec", l_0_15)
           return mp.INFECTED
         end
       end
