@@ -270,6 +270,7 @@
     },
     "SVC_Compliance": {
         "FlightingV2": {
+            "AddAADDeviceIdToPolicyCompliance": true,
             "CalculationLatencyMetricV2Enabled": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
@@ -309,6 +310,7 @@
             "DeviceConfigurationPolicyStatusSummary": true,
             "HardwareConfigLogging": true,
             "NoMaterializeForFastSlowStreamMerge": true,
+            "QBSFSICoreHistoryMigrationSwitchOver": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
@@ -377,11 +379,6 @@
     "SVC_MAMAdmin": {
         "FlightingV2": {
             "WindowsManagedAppClipboardSharingLevelFlightId": true
-        }
-    },
-    "SVC_Monolith_Compliance": {
-        "FlightingV2": {
-            "OnlyCreatePCOnChange": true
         }
     },
     "SVC_Monolith_Enrollment": {

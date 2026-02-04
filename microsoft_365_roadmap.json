@@ -1,5 +1,353 @@
 [
     {
+        "created": "2026-02-04T00:15:25",
+        "description": "Insider Risk Management is providing the ability to create a case without content. With this, we will introduce a new active case limit (2000). This new functionality will allow customers to create more cases particularly when content download is unnecessary. If a case is created without content download, content download can be initiated anytime the case is active pending available content download limits. There is no change to the active content download limit (100). \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
+        "id": 554940,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Insider Risk Management \u2013 Ability to create cases without content in IRM"
+    },
+    {
+        "created": "2026-02-04T00:15:25",
+        "description": "When viewing your calendar on iPad, you can now expand an event to a full\u2011screen view, giving you more space to review information and make edits.",
+        "id": 554939,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Expand to Full Event Details on iPad"
+    },
+    {
+        "created": "2026-02-04T00:15:25",
+        "description": "Logical grouping of files with same schema and are under the same folder into a single file known as resource set. Using advanced resource set capability, customers can define pattern rules that will help group files based on custom patterns.",
+        "id": 554935,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Catalog \u2013 Advanced resource sets"
+    },
+    {
+        "created": "2026-02-04T00:15:25",
+        "description": "Navigate code blocks more easily with improved keyboard controls and default line numbers. Set code language quickly and reference specific lines for improved collaboration and workflow. \n \n",
+        "id": 554933,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Improved keyboard navigation and default line numbers in code blocks"
+    },
+    {
+        "created": "2026-02-04T00:15:25",
+        "description": "We are introducing a new Microsoft Purview RBAC role\u2014Purview Agent Deployment\u2014and adding it to various existing built in role groups used by analysts and admins across Purview. This change enables users who use built-in role analyst groups to deploy Security Copilot Agents in Purview without needing any additional roles. If your organization prefers to limit agent deployment permissions, you can create a custom role group that does not include the Purview Agent Deployment role and assign that custom role group to analysts who should not be able to deploy agents. This update does not change default data access or expand visibility into customer content. All other permissions within each role group remain unchanged. Analysts who are assigned to custom role groups will not be able to deploy agents unless the Purview Agent Deployment role is explicitly added to those custom groups. We recommend reviewing and updating your organization\u2019s RBAC documentation, internal processes, or onboarding guides to reflect these change We recommend reviewing and updating your organization\u2019s RBAC documentation, internal processes, or onboarding guides to reflect these changes.",
+        "id": 551147,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Role Group changes in Purview"
+    },
+    {
+        "created": "2026-02-04T00:15:25",
+        "description": "Copilot Search can now match on a person's department, and you can find/lookup all people in a given department when searching the people source directly. ",
+        "id": 508527,
+        "locale": null,
+        "modified": "2026-02-04T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Search Matches on People's Department"
+    },
+    {
         "created": "2026-02-03T00:15:51",
         "description": "Users can now copy tables created in Copilot. Leverage Copilot to make your content better and use it anywhere you need to.",
         "id": 553595,
@@ -3953,9 +4301,9 @@
         "description": "We\u2019re excited to announce that Organizational Data in Microsoft 365 is now available in the GCC-Moderate (GCC-M) environment! Organizational Data in Microsoft 365 provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.",
         "id": 508518,
         "locale": null,
-        "modified": "2026-01-23T23:00:31",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7132,9 +7480,9 @@
         "description": "Use scatter image effect directly in Copilot Chat and the create experience to further customize your visual artifacts generated with Copilot.",
         "id": 537288,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7211,9 +7559,9 @@
         "description": "When an image needs precise editing, masking enables users to more accurately select an object or area in their image for AI to edit. ",
         "id": 537287,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7516,9 +7864,9 @@
         "description": "Edit or enhance the lighting in uploaded or generated images directly in Copilot Chat and the Create experience.",
         "id": 537286,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -21774,12 +22122,12 @@
         "description": "Teams town hall will soon bring 1080P resolution to Teams town hall. This enhancement brings a sharper appearance with more visual clarity to videos, images, and other visual assets within your online events. This feature is available for town halls created by organizers with a Teams Premium license.",
         "id": 513270,
         "locale": null,
-        "modified": "2025-11-14T23:15:39",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23974,12 +24322,12 @@
         "description": "You can now open channels in a separate window to stay on top of multiple conversations at once.",
         "id": 509110,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26971,12 +27319,12 @@
         "description": "Facilitator can help users manage tasks and create documents during meetings. In addition to the tasks that the agent is automatically capturing during the meeting, users can ask Facilitator directly through the meeting chat to create, edit, and assign tasks, which sync to Planner. For tasks related to document creation, users can assign to Facilitator and it will draft the document based on the meeting discussion. Users can also ask the agent to create a draft document on a topic discussed in the meeting. ",
         "id": 500701,
         "locale": null,
-        "modified": "2025-09-23T23:15:02",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52584,12 +52932,12 @@
         "description": "After further review, we mistakenly marked the roadmap as \"launched.\" The correct status is In Development. We apologize the inconvenience. SharePoint FAQ web part help assist content owners keep their content fresh and relevant. Powered by Microsoft 365 Copilot, this new web part can help content owner easily curate FAQ by working with agents and connected grounding data. With a Human-in-the-Loop approach, it ensures high-quality, trustworthy FAQs\u2014without the hassle. The result? A living FAQ that evolves with your organization's needs.",
         "id": 482198,
         "locale": null,
-        "modified": "2025-11-14T01:15:08",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53347,12 +53695,12 @@
         "description": "Intelligent meeting recap can incorporate content shared on screen in the AI-based summary provided after the meeting, providing a richer and more comprehensive recap of the meeting.  It captures details that are shown when a participant shares their screen, ensuring those unspoken insights become part of the meeting recap.",
         "id": 490052,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -75795,15 +76143,15 @@
     },
     {
         "created": "2025-02-20T00:15:26",
-        "description": "Access permissions to learning content set in CSOD using Organizational Units are honored and reflected in Viva Learning.",
+        "description": "Access permissions to learning content set in CSOD using Organizational Units are honored and reflected in Viva Learning. This item is no longer accurate. We apologize for any inconvenience.",
         "id": 482186,
         "locale": null,
-        "modified": "2025-04-05T00:00:03",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -78106,12 +78454,12 @@
         "description": "With this update, Insider Risk Management will help admins identify risky AI usage. We are adding new detections of intentional and unintentional insider risk activity on generative AI apps that can pose a risk to an organization. Activities will include risky prompts containing sensitive info or risky intent and sensitive responses containing sensitive info or is generated from sensitive files or sites.  Coverage will span across Microsoft Copilots and 3P generative AI apps. These detections will also contribute to Adaptive Protection insider risk levels.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. #copilotcontrolsystem",
         "id": 480730,
         "locale": null,
-        "modified": "2026-01-22T18:30:44",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -78957,15 +79305,15 @@
     },
     {
         "created": "2025-02-05T00:15:53",
-        "description": "Users will be able to discover relevant internal SharePoint content seamlessly while searching within Viva Learning, ensuring they have access to all pertinent resources in one place.",
+        "description": "Users will be able to discover relevant internal SharePoint content seamlessly while searching within Viva Learning, ensuring they have access to all pertinent resources in one place. This item is no longer accurate. We apologize for any inconvenience",
         "id": 479752,
         "locale": null,
-        "modified": "2025-02-05T00:15:53",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "February CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93575,67 +93923,6 @@
         "title": "Microsoft 365 app: Use sensitivity labels in Microsoft 365 apps when connected experiences are disabled"
     },
     {
-        "created": "2024-03-15T23:00:39",
-        "description": "Copilot in Viva Learning will act as a virtual learning companion, assisting users throughout their learning journey and providing personalized guidance, recommendations, and the ability to take actions. Users will be able to leverage Copilot to preview and consume courses from Copilot\u2019s search results, create learning collections in a single click, and see highly relevant search results by asking questions in natural language. Copilot will be visible to users on the Home page, My Learning tab, course details pages, and on Academies. This roadmap item is no longer accurate and will be removed from the roadmap. This feature will be delivered with Roadmap ID 490154. We apologize for any inconvenience.",
-        "id": 372245,
-        "locale": null,
-        "modified": "2026-01-28T00:00:53",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "May CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Copilot in Viva Learning"
-    },
-    {
         "created": "2024-04-22T23:15:43",
         "description": "Enable filtering capabilities for the comment pane.",
         "id": 366127,
@@ -93686,15 +93973,15 @@
     },
     {
         "created": "2023-09-21T07:00:00",
-        "description": "<div><span style=\"\">Users can filter content based on the proficiency level of the content</span><span style=\"font-size:10.5pt;line-height:107%;font-family:&quot;Segoe UI&quot;, sans-serif;\">\u2014</span><span style=\"\">Beginner, Intermediate and Advanced.</span> </div>",
+        "description": "Users can filter content based on the proficiency level of the content - Beginner, Intermediate and Advanced. This item is no longer accurate. We apologize for any inconvenience.",
         "id": 162947,
         "locale": null,
-        "modified": "2024-07-17T23:30:54",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -110622,15 +110909,15 @@
     },
     {
         "created": "2024-08-16T22:30:02",
-        "description": "Current Learning Content details and Player page will be combined to give a more immersive consumption experience for users in Viva Learning. The update will impact all content details pages.",
+        "description": "Current Learning Content details and Player page will be combined to give a more immersive consumption experience for users in Viva Learning. The update will impact all content details pages. This item is no longer accurate. We apologize for any inconvenience.",
         "id": 412066,
         "locale": null,
-        "modified": "2025-02-25T18:15:03",
+        "modified": "2026-02-04T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "May CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
