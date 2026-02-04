@@ -7,7 +7,7 @@ do
   local l_0_0 = versioning and (versioning.GetCloudBlockLevel)() or 0
   -- DECOMPILER ERROR at PC9: Confused about usage of register: R0 in 'UnsetPending'
 
-  if l_0_0 < 4 and not (MpCommon.IsSampled)(60000, false, true, false) then
+  if l_0_0 < 4 and not (MpCommon.IsSampled)(70000, false, true, false) then
     return mp.CLEAN
   end
   local l_0_1 = nil
@@ -55,7 +55,7 @@ do
         local l_0_10 = nil
         -- DECOMPILER ERROR at PC152: Confused about usage of register: R13 in 'UnsetPending'
 
-        if (string.find)((string.lower)(R13_PC152), "windows\\ccmcache\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\sysvol\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\netlogon\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\support10$\\", 1, true) then
+        if (string.find)((string.lower)(R13_PC152), "windows\\ccmcache\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\sysvol\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\netlogon\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\support10$\\", 1, true) or (string.find)((string.lower)(R13_PC152), "\\program files", 1, true) or (string.find)((string.lower)(R13_PC152), "\\windows\\", 1, true) then
           return mp.CLEAN
         end
         if isCommonScheduledTaskFile((string.lower)(R13_PC152)) == true then
