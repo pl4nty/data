@@ -1171,6 +1171,7 @@
                 "id": "friggeri.pvc-vscode-theme"
             }
         },
+        "fudd.toggle-zen-mode": true,
         "gamunu.opentofu": {
             "disallowInstall": true,
             "extension": {
@@ -2606,6 +2607,26 @@
                 "vscjava.vscode-java-pack"
             ],
             "query": "java extension pack"
+        },
+        {
+            "preferredResults": [
+                "ms-azuretools.vscode-documentdb"
+            ],
+            "query": "documentdb"
+        },
+        {
+            "preferredResults": [
+                "mongodb.mongodb-vscode",
+                "ms-azuretools.vscode-documentdb"
+            ],
+            "query": "mongo"
+        },
+        {
+            "preferredResults": [
+                "mongodb.mongodb-vscode",
+                "ms-azuretools.vscode-documentdb"
+            ],
+            "query": "mongodb"
         },
         {
             "preferredResults": [
