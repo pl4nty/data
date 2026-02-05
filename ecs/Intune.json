@@ -248,7 +248,8 @@
     "SVC_AppLifecycle": {
         "FlightingV2": {
             "AESCustomCC": true,
-            "DisableMTGlobalAppSearch": true
+            "DisableMTGlobalAppSearch": true,
+            "UseEGATsForDPAs": true
         }
     },
     "SVC_AppleMDM": {

@@ -3,7 +3,7 @@
     "Client_CachedSvcCallAttemptCount": "5",
     "Client_ClusterCount": "0",
     "Client_ClusterMaxSizeBytes": "65536",
-    "Client_DnsPeerDiscoveryConsumerParticipationRate": "0.8",
+    "Client_DnsPeerDiscoveryConsumerParticipationRate": "0.3",
     "Client_DownloadRateAutoLimit": "1",
     "Client_DownloadRateBackgroundAutoLimit": "2",
     "Client_DownloadedPieceCheckIntervalRange": "1-1",
@@ -47,6 +47,6 @@
     "ParticipationRate": "1",
     "PublicParticipationRate": "1",
     "UploadLimitGBMonth": "20",
-    "Version": "C7709C6E9EB7D5A232D910023D58B94F70E89C7D8BE469F5A83BD2C507B2A2ED",
+    "Version": "215D1A971C3A6185163A9B134C2CE252D146B6E42BDAA1D5F0F53E247FC8ED13",
     "eid": "5"
 }
