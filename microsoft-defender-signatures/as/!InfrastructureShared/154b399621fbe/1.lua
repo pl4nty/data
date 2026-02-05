@@ -19,6 +19,9 @@ else
   return mp.CLEAN
 end
 if l_0_3 ~= "" and l_0_3 ~= nil then
+  if (sysio.IsFileExists)(l_0_3) then
+    (bm.add_threat_file)(l_0_3)
+  end
   return mp.INFECTED
 end
 return mp.CLEAN
