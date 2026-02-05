@@ -30,7 +30,7 @@ end
 if l_0_4 == "" or l_0_4 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_3, "local/bin/telepresence", 1, true) or (string.find)(l_0_3, "local/bin/ludus", 1, true) or (string.find)(l_0_3, "tools/roxctl", 1, true) or (string.find)(l_0_3, "/local/bin/tsh", 1, true) then
+if not (string.find)(l_0_3, "/private/tmp/update", 1, true) then
   return mp.CLEAN
 end
 do
