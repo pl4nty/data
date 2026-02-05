@@ -87933,67 +87933,6 @@
         "title": "Microsoft Purview compliance portal: Communication Compliance - Notify Users about Hidden Content Matches in Communication Compliance"
     },
     {
-        "created": "2024-10-09T23:15:44",
-        "description": "Gather and create notes with Copilot in your personal non-shared OneNote notebooks directly on the page.",
-        "id": 417475,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "Current Channel"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "Current Channel"
-                },
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Take notes with Copilot in OneNote directly in the flow from the canvas"
-    },
-    {
         "created": "2024-12-06T23:15:49",
         "description": "Writing a prompt to draft content based on your selection no longer expands your selection to the entire paragraph, table, or list. You can prompt based on a single sentence or item.",
         "id": 415418,
@@ -88272,55 +88211,6 @@
             ]
         },
         "title": "Microsoft Intune: Device clean up rule"
-    },
-    {
-        "created": "2024-10-22T23:00:59",
-        "description": "Loop workspaces support multiple owners, allowing end users to promote members to owners.",
-        "id": 362124,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Microsoft Loop - Promote members to owners in Loop workspaces"
     },
     {
         "created": "2023-09-15T22:05:59",
@@ -95050,61 +94940,6 @@
         "title": "Outlook: Optimized hover actions in the message list on Outlook on the Web and New Outlook for Windows"
     },
     {
-        "created": "2024-10-16T23:15:13",
-        "description": "The authorized group setting ensures that Edge respects the settings for \"Printer groups,\" \"Removable USB device groups,\" and \"Network share groups\" in the Microsoft Purview compliance portal. This change will prevent users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.",
-        "id": 422502,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v.136 - Authorized Group Setting in Microsoft Edge for Business"
-    },
-    {
         "created": "2024-10-08T23:15:42",
         "description": "With this feature, IRM analysts can identify if the user being investigated has any compromised user alerts in Microsoft Entra. This will help them formulate the right response action, like escalating the Incident to SOC teams for quick remediation, etc. \n\nMicrosoft Entra offers two types of compromised user detections.\n1. Sign in risk detections: compromise risk associated with a specific sign-in.\n2. User risk detections: compromise risk associated with a specific user.\n\nInsider risk management admins can opt into each of the above risk detections from Insider risk management global settings. Risk detections will be available in the indicator timeline within the alert investigation experience. Risk detections will not impact the risk score or severity of Insider risk management alerts.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 420938,
@@ -97384,61 +97219,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Insights - Publish analyst reports to Viva Insights App"
-    },
-    {
-        "created": "2024-02-17T00:30:40",
-        "description": "Customers can now send survey notifications and nudges directly through Microsoft Teams. This includes survey start notifications, reminders, results rollouts, and all nudge types\u2014ensuring a seamless and engaging experience for users.",
-        "id": 383656,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Glint - Notifications and Nudges in Teams"
     },
     {
         "created": "2024-09-20T22:15:31",
@@ -102270,55 +102050,6 @@
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Gain DLP policy insights with Copilot"
     },
     {
-        "created": "2024-11-13T00:15:18",
-        "description": "Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category will allow users to synchronize data regarding their utilization of Edge features across all their devices.",
-        "id": 464208,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v.136 - Feature Usage Data Sync"
-    },
-    {
         "created": "2024-11-12T00:45:33",
         "description": "Introducing exciting new features to help you better understand and improve adoption and impact of Copilot for Microsoft 365 through the Copilot Dashboard. Enhancements include supporting multi-select capabilities for Scope filters to facilitate group comparisons and the ability to upload HR organizational data for Scope filter updates.",
         "id": 429870,
@@ -103815,55 +103546,6 @@
         "title": "Outlook: People Hub improvements in new Outlook for Windows"
     },
     {
-        "created": "2024-08-06T00:00:26",
-        "description": "Viva Pulse administrators can now search for and export a user's Pulse report, user level, and tenant-level data to a .xlsx file.",
-        "id": 407636,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": " Microsoft Viva: Viva Pulse - Pulse administrators can export Pulse data"
-    },
-    {
         "created": "2024-07-08T23:15:04",
         "description": "Endpoint Privilege Management rules support specifying a list of allowable command parameters, ensuring elevation for only the allowed or mandatory arguments.",
         "id": 399934,
@@ -103929,73 +103611,6 @@
             ]
         },
         "title": "Microsoft Intune: Endpoint Privilege Management rules support specifying allowable command arguments"
-    },
-    {
-        "created": "2024-01-23T00:15:55",
-        "description": "Adaptive Protection will now be available in Government clouds. Adaptive Protection is a capability of Microsoft Purview that dynamically assigns appropriate Data Loss Prevention policies to users based on the risk levels analyzed by the machine learning models in Insider Risk Management. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 377674,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Adaptive Protection in Gov Cloud"
     },
     {
         "created": "2023-12-12T23:45:07",
@@ -105405,61 +105020,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Communication Compliance - Ability to set a retention period for a policy"
-    },
-    {
-        "created": "2024-10-22T23:00:59",
-        "description": "This feature sets the Home site as the default for the Viva Connections experience in Teams desktop. Once implemented, users will be able to access their organization's Home site through the Viva Connections app in Teams desktop. This change will only apply to customers who have not yet configured a Viva Connections experience.",
-        "id": 422815,
-        "locale": null,
-        "modified": "2025-04-05T00:00:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Connections experience for Homesite customers"
     },
     {
         "created": "2024-10-21T23:30:37",
