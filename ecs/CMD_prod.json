@@ -524,8 +524,6 @@
         "EnableNestedVirtualizationFor2Core": false,
         "EnableNestedVirtualizationFor4Core": false,
         "EnableNestedVirtualizationFor8Core": false,
-        "EnableNetReferenceCheck": true,
-        "EnableNetworkAllocation": true,
         "EnableNewReactViewPolicyUX": true,
         "EnableNewStorageBlobForCitrixAgent": true,
         "EnableNextPickUpTime": true,
