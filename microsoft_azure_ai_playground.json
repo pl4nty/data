@@ -231,6 +231,7 @@
         "azureml://registries/azureml-deepseek/models/deepseek-v3.2",
         "azureml://registries/azureml-deepseek/models/deepseek-v3.2-speciale",
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
+        "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
@@ -347,7 +348,8 @@
         "gpt-5.1-chat",
         "gpt-5.2",
         "gpt-5.2-chat",
-        "kimi-k2-thinking"
+        "kimi-k2-thinking",
+        "kimi-k2.5"
     ],
     "supportedModels": {
         "assistantsNotSupportedStreamingModels": [
@@ -433,7 +435,8 @@
             "gpt-5.1-chat",
             "gpt-5.2",
             "gpt-5.2-chat",
-            "kimi-k2-thinking"
+            "kimi-k2-thinking",
+            "kimi-k2.5"
         ],
         "supportedCompletionModels": [
             "babbage-002",
