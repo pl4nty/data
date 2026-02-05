@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19708.40125-->
+    <!--Build: 16.0.19727.40128-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2586,6 +2586,7 @@
     <o:token o:name="OutlookNetworkDiagnosticsConfigBit">0b00001</o:token>
     <o:token o:name="ChatOverlayFeatureEnabled">true</o:token>
     <o:token o:name="PowerPointWRSAppId">04736c86-8245-4dcb-a0c9-ecc3fdf6083d</o:token>
+    <o:token o:name="AllowAugLoopServiceUrlOverride">true</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
