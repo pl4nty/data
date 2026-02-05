@@ -1,5 +1,578 @@
 [
     {
+        "created": "2026-02-05T00:15:27",
+        "description": "Allows the administrator of an Exchange Online tenant to change the organizer of an existing meeting or meeting series via a PowerShell cmdlet. This can be used, for example, to maintain continuity and history of a long-running meeting series in cases where the meeting organizer has a new role, is on leave, or during the offboarding process. Once the meeting is transferred, the new organizer will be able to maintain all properties of the event including meeting time and recurrence, attendees, and description. Meeting attendees within the Exchange Online tenant will not need to re-RSVP and the existing event on their calendar will be silently updated with the new meeting organizer information.\n\nA subsequent feature will enable users to to change the organizer via Modern Calendar in OWA, New Outlook, and Teams. For user-initiated transfers the new organizer must accept the meeting before the transfer completes.",
+        "id": 554937,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Change Meeting Organizer via PowerShell Cmdlet in Exchange Online"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Shared mailbox users and delegates with full access permission will now be able to access Copilot Chat, directly from their shared and delegate mailboxes in new Outlook.",
+        "id": 554936,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot Chat available in shared and delegate mailboxes "
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license) .",
+        "id": 554934,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Chat in Outlook expands to reason over inbox, calendar, and enterprise data"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Researcher will be available for Microsoft 365 business and enterprise users with a Microsoft 365 Copilot add-on license. Researcher is an advanced deep reasoning agent in Microsoft 365 Copilot designed to tackle complex, multi-step tasks by acting as a deep research assistant.",
+        "id": 554928,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Researcher Agent for GCC"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
+        "id": 554927,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": " Microsoft Teams: Recently used emojis sync across devices"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Lightbox enhancements let users scroll through all previously shared images in a conversation, provide a clearer visual focus on the image being viewed, and add a header option that jumps directly to the original message where the image was posted.",
+        "id": 554924,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Image viewer improvements enable scrolling and jumping to original message"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "The voice tethering feature builds on the recent introduction of Sign Language Mode. It ensures that when an interpreter voices for a D/HH signer, captions and transcripts attribute the spoken content to the signer rather than the interpreter. This provides accurate representation in meetings and makes it clear who is contributing to the conversation. It also improves downstream meeting intelligence such as Copilot so that notes, summaries, action items, and insights are attributed to the correct participant.",
+        "id": 553223,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Voice tethering"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
+        "id": 532734,
+        "locale": null,
+        "modified": "2026-02-05T00:15:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Hide meetings toolbar"
+    },
+    {
+        "created": "2026-02-04T19:00:58",
+        "description": "Users can now use the Teams Meet app to discover events across their organization, track what important events are upcoming, and plan and organize their own professional events. ",
+        "id": 547834,
+        "locale": null,
+        "modified": "2026-02-04T19:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Events in Meet app in Teams"
+    },
+    {
         "created": "2026-02-04T00:15:25",
         "description": "Insider Risk Management is providing the ability to create a case without content. With this, we will introduce a new active case limit (2000). This new functionality will allow customers to create more cases particularly when content download is unnecessary. If a case is created without content download, content download can be initiated anytime the case is active pending available content download limits. There is no change to the active content download limit (100). \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 554940,
@@ -193,9 +766,9 @@
         "description": "Navigate code blocks more easily with improved keyboard controls and default line numbers. Set code language quickly and reference specific lines for improved collaboration and workflow. \n \n",
         "id": 554933,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -207,9 +780,6 @@
                 "tagName": "Desktop"
             },
             {
-                "tagName": "Linux"
-            },
-            {
                 "tagName": "Mac"
             },
             {
@@ -217,6 +787,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -230,9 +803,6 @@
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Linux"
-                },
-                {
                     "tagName": "Mac"
                 }
             ],
@@ -244,6 +814,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2366,9 +2939,9 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3016,10 +3589,10 @@
     },
     {
         "created": "2026-01-16T00:31:01",
-        "description": "Agent Mode in PowerPoint lets you transform, polish, and edit presentations through natural conversation in chat\u2014preserving your deck\u2019s formatting, structure, and branding. Guide Copilot to update slides, refine layouts, and iterate on content using enterprise data, so you can focus on your ideas and present with confidence. Available to Microsoft 365 users without a Microsoft 365 Copilot license.",
+        "description": "Agent Mode in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Microsoft 365 users.",
         "id": 548646,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -3254,10 +3827,10 @@
     },
     {
         "created": "2026-01-15T00:15:15",
-        "description": "Agent Mode in PowerPoint lets you transform, polish, and edit presentations through natural conversation in chat\u2014preserving your deck\u2019s formatting, structure, and branding. Guide Copilot to update slides, refine layouts, and iterate on content using enterprise data, so you can focus on your ideas and present with confidence. Available to Microsoft 365 users with a Microsoft 365 Copilot license.",
+        "description": "Agent Mode in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 548520,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -3367,12 +3940,12 @@
         "description": "Historical reporting within Queues app will now support 45 days of historical data. The report will default a 7-day range with ability to customize the reporting range with up to 45 days of history.",
         "id": 547825,
         "locale": null,
-        "modified": "2026-01-23T23:00:31",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -5960,9 +6533,9 @@
         "description": "Agent Mode lets you build and edit workbooks side by side with Copilot. When you're updating budgets, creating financial models, or analyzing data, Agent Mode uses Excel's most powerful tools like tables, charts, PivotTables, and formulas to help you get the job done.",
         "id": 542181,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6027,9 +6600,9 @@
         "description": "This update brings end user security reporting into Teams Admin Center. Admins can now view and download signals from messages users report as a security concern or not a security concern within TAC Protection reports, helping them identify trends and fine tune policies and responses. ",
         "id": 536571,
         "locale": null,
-        "modified": "2025-12-17T09:45:44",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6042,6 +6615,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -6059,6 +6635,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -15067,10 +15646,10 @@
         "description": "Microsoft Purview introduces the Classifier Simulation Mode, the first phase of the broader Classifier Health Monitoring Platform. \n \nThis capability enables you to test, analyze, and optimize custom classifiers on production data before publishing them, hence offering a reliable means of verifying the effectiveness of classifiers before committing them to live environments.  \n\nCustom classifiers are powerful tools but can sometimes include inefficient regex patterns or overly broad logic, leading to Noisy classifier due to high matches, False positives and High scanning latency \n\nSimulation Mode mitigates these risks by allowing you to validate classifier quality and performance before publishing, helping ensure healthy, performant, and more precise classification outcomes. ",
         "id": 523201,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -17406,10 +17985,10 @@
         "description": "A new Copilot icon button provides a quick, visible entry point to Copilot directly within the file previewer in OneDrive. Positioned at the bottom-right corner (instead of the command bar), this button surfaces contextual prompts tailored to the file type and offers seamless access to Copilot chat, making it easier to get insights and take action without leaving the preview experience.",
         "id": 513432,
         "locale": null,
-        "modified": "2025-11-13T00:15:06",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "November CY2025",
+        "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "Rolling out",
         "tags": [
@@ -22825,9 +23404,9 @@
         "description": "Start a chat with anyone who has an email address, even if they're not on Teams! They'll receive an email inviting them to join your chat session as a guest. You'll be able to chat, share files, and start calls all within Teams! We will be releasing to GA at a later date. We apologize for any inconvenience. ",
         "id": 513271,
         "locale": null,
-        "modified": "2025-12-16T00:15:28",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23002,12 +23581,12 @@
         "description": "Customers can connect M365 Copilot with Dropbox to access and manage cloud files with Copilot Connector.",
         "id": 513282,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48718,12 +49297,12 @@
         "description": "Organize your work environment to fit your needs. Users can open Teams' apps, like Chat, Calls, Activity and more in separate windows, allowing users to view and interact with these apps simultaneously.",
         "id": 495003,
         "locale": null,
-        "modified": "2025-11-05T00:00:26",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -60352,9 +60931,9 @@
         "description": "Microsoft Edge for Business plans to introduce an easy way for users to get summaries of their open page from the address bar using Microsoft 365 Copilot Chat. This feature seeks to help users more easily understand relevant content and save time.",
         "id": 489822,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "Launched",
@@ -92147,12 +92726,12 @@
         "description": "We are introducing flexibility on provider setup form where admins can sync data from specific dates for a provider instead of full data sync.",
         "id": 414523,
         "locale": null,
-        "modified": "2024-11-20T00:15:49",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "June CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -92983,10 +93562,10 @@
         "description": "This creates the ability to apply Retention to each SharePoint or OneDrive item based on when it was last accessed by a user. #copilotcontrolsystem",
         "id": 472030,
         "locale": null,
-        "modified": "2025-12-18T00:15:48",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "December CY2025",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -93634,12 +94213,12 @@
         "description": "Org level breakdown of Learning metrics in Viva Insights.",
         "id": 413717,
         "locale": null,
-        "modified": "2025-05-08T23:00:31",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -97928,12 +98507,12 @@
         "description": "Find yourself referencing the same files using Copilot in OneDrive? We are bringing the power of agents to OneDrive, allowing you to build, use, and share your own agents using files and content stored in your OneDrive. This feature requires a Microsoft Copilot for Microsoft 365 license and will be available to customers on OneDrive Web.",
         "id": 469503,
         "locale": null,
-        "modified": "2025-11-14T01:15:08",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -108606,10 +109185,10 @@
         "description": "This release will extend OCR support from standalone images (JPEG, JPG, PNG, BMP, TIFF, and PDF) to images embedded inside the following files and file types: Office files (XLSX, DOCX, PPTX), container files (zip, rar, 7z, and more), and PDF files. Image-only PDF files are already supported, and this this release will support hybrid PDF files containing images and searchable text.",
         "id": 381750,
         "locale": null,
-        "modified": "2024-09-18T23:15:03",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "August CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -109558,12 +110137,12 @@
         "description": "In our continued efforts to enhance classification capabilities, we have added a new feature, Word-Breaker, to our existing Thai Language support in Classification. Words in Thai language sentences do not have spaces between them. And for classification purpose, we relied on the right keywords to be added while creating Sensitive Information Type for ensuring accurate match. However, with this feature, spaces will be added automatically in keywords which will ensure higher match accuracy across all cloud locations (Exchange, Teams, One Drive, SharePoint).",
         "id": 366697,
         "locale": null,
-        "modified": "2025-06-19T16:30:29",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "June CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -109613,12 +110192,12 @@
         "description": "Thai Language sentences do not have spaces in between them. And for classification purpose, we relied on right keywords to be added while creating Sensitive Information Type for ensuring accurate match. However, with this feature, spaces will be added automatically in keywords which will ensure higher match accuracy in EndPoint.",
         "id": 365059,
         "locale": null,
-        "modified": "2025-08-25T23:15:14",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -110497,9 +111076,9 @@
         "description": "Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data in SharePoint Online and OneDrive. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP, and PDF (image-only PDF).\n",
         "id": 160010,
         "locale": null,
-        "modified": "2025-10-21T23:15:01",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -111339,10 +111918,10 @@
         "description": "<div>Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data on your Windows endpoint devices. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP and PDF (image only PDF). </div>",
         "id": 160008,
         "locale": null,
-        "modified": "2025-06-18T17:30:36",
+        "modified": "2026-02-05T00:15:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [

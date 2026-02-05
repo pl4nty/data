@@ -2839,6 +2839,161 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_SharePoint.f75faa5f-0e3f-47dc-b094-60be402f8db8": {
+            "CampaignId": "f75faa5f-0e3f-47dc-b094-60be402f8db8",
+            "EndTimeUtc": "2026-06-04T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 1209600,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-12-04T05:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SPFxDebugToolbarLoaded",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very dissatisfied",
+                                    "questionLabel": "How satisfied are you with the features provided by SharePoint Framework (SPFx) for extending SharePoint Online, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "Web part",
+                                        "Field Customizer extension",
+                                        "Application customizer",
+                                        "ListView Command Set extension",
+                                        "Search Query extension",
+                                        "Form customizer",
+                                        "Library component",
+                                        "Adaptive card"
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "How satisfied are you with the features provided by these SharePoint Framework (SPFx) components?",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Very dissatisfied",
+                                        "Dissatisfied",
+                                        "Neither satisfied nor dissatisfied",
+                                        "Satisfied",
+                                        "Very satisfied "
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale with Verbatim Question",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "SharePoint Framework documentation",
+                                        "SharePoint Framework samples",
+                                        "SharePoint Framework developer support"
+                                    ],
+                                    "id": "likert2",
+                                    "questionLabel": "How satisfied are you with the following SharePoint Framework supporting services?",
+                                    "required": false,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Very dissatisfied",
+                                        "Dissatisfied",
+                                        "Neither satisfied nor dissatisfied",
+                                        "Satisfied",
+                                        "Very satisfied "
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment3",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/f75faa5f-0e3f-47dc-b094-60be402f8db8/7428d7b9-d55b-4f7e-9934-eae78e693c97/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
         }
     },
     "ChillVivaGlint": {
