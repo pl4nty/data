@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\e9d7bd767b72\1.luac 
+-- Command line: lua\!InfrastructureShared\120d75ce6ed0a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -27,7 +27,7 @@ if l_0_0 ~= nil then
         return mp.CLEAN
       end
       l_0_4 = (string.lower)(l_0_4)
-      if (string.find)(l_0_4, "|cmd", 1, true) or (string.find)(l_0_4, "| cmd", 1, true) or (string.find)(l_0_4, "|c:\\windows\\system32\\cmd.exe", 1, true) or (string.find)(l_0_4, "| c:\\windows\\system32\\cmd.exe", 1, true) then
+      if (string.find)(l_0_4, "|cmd", 1, true) or (string.find)(l_0_4, "| cmd", 1, true) or (string.find)(l_0_4, "|c:\\windows\\system32\\cmd.exe", 1, true) or (string.find)(l_0_4, "| c:\\windows\\system32\\cmd.exe", 1, true) or (string.find)(l_0_4, " do call %", 1, true) then
         return mp.INFECTED
       end
       return mp.CLEAN
