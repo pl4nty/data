@@ -1052,7 +1052,6 @@
         "IWSPullModeForAllDevice": true,
         "IWSPullModeFromDDS": true,
         "InstallRdAgentInCanaryEnabled": true,
-        "InvokeCASForFLD": true,
         "IsAADSyncConfigEnabled": true,
         "IsCosmosDBTriggerEnabled": true,
         "IsDisableAzureTenantReadinessOuterRetry": true,

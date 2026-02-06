@@ -7,6 +7,8 @@
         "ActivateOaiLicense": false,
         "AddRegKeyNetJoinLegacyAccountReuse": true,
         "AddSuperFastLaneToWorkItemV2": true,
+        "AddValidationsForCloudApp": true,
+        "AddValidationsForFSLogix": true,
         "AllocateHostPoolEnabled": true,
         "AllowHostBasedEncryption": true,
         "Aspen": {
