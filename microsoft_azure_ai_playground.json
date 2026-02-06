@@ -243,6 +243,7 @@
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-5",
+        "azureml://registries/azureml-anthropic/models/claude-opus-4-6",
         "azureml://registries/azureml-mistral/models/mistral-large-3",
         "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b-thinking-2507",
         "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b-instruct-2507",
