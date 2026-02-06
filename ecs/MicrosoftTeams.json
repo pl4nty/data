@@ -3844,6 +3844,7 @@
         "EnableSecurityLabel": true,
         "EnableSubstrateTenantIdRoutingHint": false,
         "EnableUserSendErSignal": false,
+        "EnableVeTownhallRegistration": true,
         "EnabledMeetingAnalyticsFeature": true,
         "EngagementReactionTypeMapping": "{\"like\":\"like\",\"heart\":\"love\",\"laugh\":\"laugh\",\"applause\":\"applause\",\"surprised\":\"surprised\"}",
         "InMemoryCacheTTLInMinutesForAttendanceReport": 240,

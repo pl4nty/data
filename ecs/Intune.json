@@ -399,6 +399,7 @@
             "EnableBypassStatefulForMAMAppInst": true,
             "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
+            "OverrideMAMActionStringKey": true,
             "RequireDeviceAADJ": true,
             "UseFireAndForgetFlight": true,
             "UseMamConditionalAccessFirstPartyApplication": true,
