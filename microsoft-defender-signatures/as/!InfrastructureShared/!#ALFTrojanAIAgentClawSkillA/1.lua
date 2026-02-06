@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\TrojanAIAgentClawHavocC\ObMpAttributes\1.luac 
+-- Command line: lua\!InfrastructureShared\!#ALFTrojanAIAgentClawSkillA\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,6 +12,19 @@ if not l_0_0:find("\\.openclaw\\", 1, true) then
 end
 if not l_0_0:find("\\skills\\", 1, true) then
   return mp.CLEAN
+end
+local l_0_1 = nil
+l_0_1 = tostring(headerpage)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_1 = (string.lower)(l_0_1)
+local l_0_2 = {}
+l_0_2.owner = l_0_1:match("\"owner\"%s*:%s*\"(.-)\"")
+l_0_2.slug = l_0_1:match("\"slug\"%s*:%s*\"(.-)\"")
+l_0_2.displayname = l_0_1:match("\"displayname\"%s*:%s*\"(.-)\"")
+if next(l_0_2) then
+  (mp.SetDetectionString)(safeJsonSerialize(l_0_2))
 end
 return mp.INFECTED
 
