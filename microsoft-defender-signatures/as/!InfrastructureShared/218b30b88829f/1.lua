@@ -37,6 +37,9 @@ do
   if (string.find)(l_0_4, "xattr -c", 1, true) or (string.find)(l_0_4, "xattr -d", 1, true) or (string.find)(l_0_4, "xattr -rc", 1, true) or (string.find)(l_0_4, "xattr -rd", 1, true) then
     local l_0_5 = l_0_3:match("([^/]+)$")
     if l_0_5 ~= "" and l_0_5 ~= nil and (string.find)(l_0_4, l_0_5, 1, true) then
+      if (sysio.IsFileExists)(l_0_3) then
+        (bm.add_threat_file)(l_0_3)
+      end
       return mp.INFECTED
     end
   end
