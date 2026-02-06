@@ -1,5 +1,371 @@
 [
     {
+        "created": "2026-02-06T00:00:51",
+        "description": "Now Copilot Search can return matching people for your broader people search queries. Allowing you to discover, disambiguate, and explore known and new people to contact. Discover Whether you're looking for people with a specific skill like \"Project leadership\" or \"Artificial Intelligence\" Copilot Search can help you explore potential contacts through the People data source. Disambiguate When there are multiple people matching in exact name, email, or alias Copilot Search will help you disambiguate through a new carousel on the main results page alongside other relevant results.",
+        "id": 555240,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Search Helps You Discover People"
+    },
+    {
+        "created": "2026-02-06T00:00:51",
+        "description": "Audio recap in Teams will begin supporting 8 new languages. These are (in alphabetical order) Chinese, variations across English, French, German, Italian, Japanese, Portuguese, and Spanish.  ",
+        "id": 554926,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Audio recap language expansion"
+    },
+    {
+        "created": "2026-02-06T00:00:51",
+        "description": "Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
+        "id": 553590,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Multiple phone number assignment to a single user on Teams Phone Devices"
+    },
+    {
+        "created": "2026-02-06T00:00:51",
+        "description": "Administrators can now set organization-wide policies to automatically expire \"People in your organization\" sharing links after a specified period. This helps organizations maintain tighter control over internal content sharing by ensuring links don't remain active indefinitely. Configure expiration timeframes that align with your organization's data governance requirements\u2014whether that's 30 days, 90 days, or a custom period.",
+        "id": 553220,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Admin policy for expiring \"People in your organization\" links"
+    },
+    {
+        "created": "2026-02-06T00:00:51",
+        "description": "Discover and find people through Microsoft 365 Copilot Search based on your company's custom profile properties from SharePoint Online.",
+        "id": 508526,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Search Supports SharePoint Online Custom Properties Search"
+    },
+    {
+        "created": "2026-02-06T00:00:51",
+        "description": "Admins can govern and manage federated copilot connectors in Microsoft 365 admin center. #copilotcontrolsystem",
+        "id": 501584,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Admins can govern and manage federated copilot connectors in Microsoft 365 admin center "
+    },
+    {
         "created": "2026-02-05T00:15:27",
         "description": "Allows the administrator of an Exchange Online tenant to change the organizer of an existing meeting or meeting series via a PowerShell cmdlet. This can be used, for example, to maintain continuity and history of a long-running meeting series in cases where the meeting organizer has a new role, is on leave, or during the offboarding process. Once the meeting is transferred, the new organizer will be able to maintain all properties of the event including meeting time and recurrence, attendees, and description. Meeting attendees within the Exchange Online tenant will not need to re-RSVP and the existing event on their calendar will be silently updated with the new meeting organizer information.\n\nA subsequent feature will enable users to to change the organizer via Modern Calendar in OWA, New Outlook, and Teams. For user-initiated transfers the new organizer must accept the meeting before the transfer completes.",
         "id": 554937,
@@ -278,7 +644,7 @@
         "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
         "id": 554927,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -289,59 +655,13 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": " Microsoft Teams: Recently used emojis sync across devices"
-    },
-    {
-        "created": "2026-02-05T00:15:27",
-        "description": "Lightbox enhancements let users scroll through all previously shared images in a conversation, provide a clearer visual focus on the image being viewed, and add a header option that jumps directly to the original message where the image was posted.",
-        "id": 554924,
-        "locale": null,
-        "modified": "2026-02-05T00:15:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "In development",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
+                "tagName": "Android"
             },
             {
                 "tagName": "Desktop"
             },
             {
-                "tagName": "Linux"
+                "tagName": "iOS"
             },
             {
                 "tagName": "Mac"
@@ -351,6 +671,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -361,10 +684,13 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Linux"
+                    "tagName": "iOS"
                 },
                 {
                     "tagName": "Mac"
@@ -378,6 +704,76 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": " Microsoft Teams: Recently used emojis sync across devices"
+    },
+    {
+        "created": "2026-02-05T00:15:27",
+        "description": "Lightbox enhancements let users scroll through all previously shared images in a conversation, provide a clearer visual focus on the image being viewed, and add a header option that jumps directly to the original message where the image was posted.",
+        "id": 554924,
+        "locale": null,
+        "modified": "2026-02-06T00:00:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -4319,9 +4715,9 @@
         "description": "Structured Document Generation with Forms enables organizations to create, manage, and generate standardized documents at scale with built-in governance and compliance in SharePoint. Business process owners can centrally build and maintain form-driven templates -- such as contracts, agreements, proposals, and HR documents -- ensuring content stays accurate and up to date. Users can then generate the right document every time by just filling out the form, without manual formatting, versioning issues, or compliance risk, simplifying high-volume, structured document workflows across the organization.",
         "id": 545896,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4343,6 +4739,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -4370,6 +4769,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -4435,9 +4837,9 @@
         "description": "Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences.",
         "id": 543713,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11979,9 +12381,9 @@
         "description": "Users can now apply basic conditional formatting rules to the calendar in new Outlook, allowing events and appointments to be color-coded based on sender, location, attendees, and more. #newoutlookforwindows",
         "id": 529849,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -24119,12 +24521,12 @@
         "description": "Users will find Copilot-powered Notebook summaries and insights as a landing page within their Copilot Notebook.",
         "id": 512430,
         "locale": null,
-        "modified": "2025-12-16T00:15:28",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26916,9 +27318,9 @@
         "description": "We\u2019re introducing more flexible and precise targeting capabilities in Viva Engage, starting with Storyline Announcements. This new feature allows leaders and their delegates to define a custom audience at the time of posting, without relying on pre-configured Leader Audiences. Audiences can be built, and saved for reuse, using organizational attributes such as department, job title, or country, existing groups like M365 Groups, distribution lists, or security groups, and even individual users by name. This flexibility enables more relevant communication, helping leaders reach the right people with the right message. Notifications and delivery channels, including Teams and email, will continue to follow existing Storyline Announcement behavior, ensuring a seamless experience for recipients. This feature is designed to help leaders tailor communications to specific departments, locations, or groups, enhancing engagement and relevance across the organization.",
         "id": 499895,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27660,9 +28062,9 @@
         "description": "Admins can create custom Model Context Protocol (MCP) connectors in the Microsoft 365 Admin Centre and deploy them across Microsoft 365. This will allow admins to surface their organization's custom data in Microsoft 365 Copilot via these MCP-based connectors.",
         "id": 501585,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "Rolling out",
@@ -27678,6 +28080,9 @@
             },
             {
                 "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -27699,6 +28104,9 @@
             "releasePhase": [
                 {
                     "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -37192,9 +37600,9 @@
         "description": "Meeting organizers and presenters can share meeting recap notes and follow-up tasks directly from Teams to SharePoint as a news post, facilitating the seamless sharing of post meeting follow-up details. ",
         "id": 498494,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47020,9 +47428,9 @@
         "description": "For Admins, agents in the Frontier program can be managed through the Microsoft 365 Admin Center. They are listed under the agents & connectors tab in Copilot Control System, where you can view all agent inventory for your organization. Agents built by Microsoft and available in the Frontier program will be displayed in the Agent Store. This feature will support users to request these agents if blocked by organizational policies. Admins will have the opportunity to further approve and reject these user request. #copilotcontrolsystem",
         "id": 494809,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -66821,9 +67229,9 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import calendars and contacts from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 486840,
         "locale": null,
-        "modified": "2025-11-14T23:15:39",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -67554,9 +67962,9 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import calendars and contacts from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 486839,
         "locale": null,
-        "modified": "2025-11-14T23:15:39",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -68384,9 +68792,9 @@
         "description": "Admins can now specify the user mapping attributes in the LMS setup form. ",
         "id": 470026,
         "locale": null,
-        "modified": "2025-05-23T22:15:52",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -69488,12 +69896,12 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to browse and read contacts within a .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485755,
         "locale": null,
-        "modified": "2025-08-18T23:00:53",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -70472,9 +70880,9 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import emails from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485740,
         "locale": null,
-        "modified": "2025-09-22T23:00:43",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -70521,9 +70929,9 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import emails from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485739,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -92558,15 +92966,15 @@
     },
     {
         "created": "2024-09-23T23:30:03",
-        "description": "The Workday setup wizard will be modular and more intuitive going forward.",
+        "description": "The Workday setup wizard will be modular and more intuitive going forward. This item is no longer accurate. We apologize for any inconvenience.",
         "id": 414527,
         "locale": null,
-        "modified": "2024-11-20T00:15:49",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "June CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -92668,15 +93076,15 @@
     },
     {
         "created": "2024-09-04T23:30:32",
-        "description": "Customers can manually trigger sync for different data types on Manage providers in Viva Learning admin page.",
+        "description": "Customers can manually trigger sync for different data types on Manage providers in Viva Learning admin page. This item is no longer accurate. We apologize for any inconvenience.",
         "id": 414522,
         "locale": null,
-        "modified": "2024-11-20T00:15:49",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "June CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -105026,9 +105434,9 @@
         "description": "Administrative units allow admins with appropriate permissions to subdivide the organization into smaller units, and then assign specific admins or role groups that can manage only the members of those units. For example, German administrators can only create/manage policies for only German users, and German investigators can only investigate alerts and activities from only German users.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 422503,
         "locale": null,
-        "modified": "2025-10-09T23:15:42",
+        "modified": "2026-02-06T00:00:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
