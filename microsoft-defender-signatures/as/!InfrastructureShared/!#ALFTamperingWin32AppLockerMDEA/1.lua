@@ -26,6 +26,6 @@ if not l_0_3 then
   return mp.CLEAN
 end
 l_0_3 = (MpCommon.PathToWin32Path)(l_0_3)
-AppendToRollingQueue("RQ_RecentAppLockerPolicyFileDropped", l_0_3, "true", 86400, 50, 1)
+AppendToRollingQueue("RQ_RecentAppLockerPolicyFileDropped", l_0_3, l_0_2, 86400, 50, 1)
 return mp.INFECTED
 

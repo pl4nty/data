@@ -16,9 +16,26 @@ do
   l_0_2 = l_0_2:gsub("\"", "")
   l_0_2 = l_0_2:gsub("^%.\\", "")
   local l_0_3 = l_0_2:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
-  if pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentAppLockerPolicyFileDropped", l_0_3) then
-    return mp.INFECTED
+  local l_0_4, l_0_5 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentAppLockerPolicyFileDropped", l_0_3)
+  if l_0_4 and l_0_5 then
+    set_research_data("PolicyFile", (MpCommon.Base64Encode)(l_0_2 .. "|" .. l_0_5), false)
+    local l_0_6 = {}
+    l_0_6.policyFile = l_0_2
+    l_0_6.Condition = l_0_5
+    l_0_6.parents = add_parents_AMSI()
+    local l_0_7, l_0_8 = safeJsonSerialize(l_0_6, 150, nil, true)
+    do
+      do
+        if l_0_7 then
+          local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+          if l_0_9 then
+            (MpCommon.BmTriggerSig)(l_0_9, "LuaAppLockerMDE", safeJsonSerialize(l_0_7))
+          end
+        end
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
-  return mp.CLEAN
 end
 
