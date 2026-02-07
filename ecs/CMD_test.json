@@ -1475,6 +1475,7 @@
         "SwitchFeTroubleshootCloudPCAsync": true,
         "SwitchFeUpdateDeviceHibernationCapabilityAsync": true,
         "SwitchFeUpdateDiskEncryptionTypeAsync": true,
+        "SwitchGetSharedCloudPCInternalEndpoint": false,
         "SwitchToGroupService": true,
         "SwitchToKronoxPublicApi": true,
         "SwitchToNewOngoing": true,

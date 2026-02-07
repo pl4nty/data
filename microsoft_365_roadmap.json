@@ -1,5 +1,542 @@
 [
     {
+        "created": "2026-02-06T23:00:02",
+        "description": "Loop meeting notes now automatically inherit your meeting\u2019s sensitivity label. When admins enable label inheritance in the sensitivity label policy, any labeled meeting applies the same label to its Loop meeting notes, ensuring protections like encryption, access controls, and data handling rules carry forward consistently. This also ensures that Copilot and agent responses based on Loop meeting notes accurately reflect the meeting\u2019s sensitivity, keeping confidential content protected end to end.",
+        "id": 555857,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Sensitivity label inheritance for Loop meeting notes"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Positioned at the top of the chat and channels list, quick views give users fast access to mentions, followed threads, and more. Users can choose when and how quick views are displayed \u2013 selecting \u201calways show,\u201d \u201calways hide,\u201d or \u201cshow only when unread\u201d \u2013 and can collapse the section at any time.",
+        "id": 555856,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: New controls for quick views in the chat list"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "When in a meeting with another Teams Rooms on Windows that has multiple cameras, you can switch camera views in that room via the participant panel on the console, or video tile on a touch board, to optimize your views.\n",
+        "id": 555855,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Camera view switching in multi-camera Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
+        "id": 555239,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Annotations on Teams Single Window Sharing on Windows OS"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Admins now have a one-stop portal for inventory, health monitoring, management, and analytics for both Windows and Android devices with the Pro Management portal. Management of all Android Teams rooms, panels, and phone devices are transitioning to this portal from the Teams admin center, enabling easy, consistent, and secure management of Teams devices across all operating systems and manufacturers.\n",
+        "id": 555235,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: One-stop admin portal for Teams devices with Teams Rooms Pro Management"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Now, when opening a .eml attachment, users will see reply, reply all and forward options.",
+        "id": 555233,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Reply Options for EML Attachments"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Now, when opening a .eml attachment, users will see reply, reply all and forward options.",
+        "id": 555232,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Reply Options for EML Attachments"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "With a Microsoft365 Copilot license, Copilot AI-generated video projects have improved audio with realistic AI voiceover, professional sound effects, and enhanced audio mixing.",
+        "id": 550513,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Clipchamp"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Clipchamp"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Clipchamp: Improved audio for Copilot AI-generated video projects"
+    },
+    {
+        "created": "2026-02-06T23:00:02",
+        "description": "Flexible layouts and rich UX components will enable makers to build highly expressive agents, ultimately driving increased user engagement and virality.",
+        "id": 497844,
+        "locale": null,
+        "modified": "2026-02-06T23:00:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft CoPilot (Microsoft 365):  Makers can build DA's with Flexible layouts and rich UX components"
+    },
+    {
         "created": "2026-02-06T00:00:51",
         "description": "Now Copilot Search can return matching people for your broader people search queries. Allowing you to discover, disambiguate, and explore known and new people to contact. Discover Whether you're looking for people with a specific skill like \"Project leadership\" or \"Artificial Intelligence\" Copilot Search can help you explore potential contacts through the People data source. Disambiguate When there are multiple people matching in exact name, email, or alias Copilot Search will help you disambiguate through a new carousel on the main results page alongside other relevant results.",
         "id": 555240,
@@ -644,7 +1181,7 @@
         "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
         "id": 554927,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -665,6 +1202,9 @@
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -694,6 +1234,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -857,9 +1400,9 @@
         "description": "Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
         "id": 532734,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18259,9 +18802,9 @@
         "description": "The sharing panel in today\u2019s meetings is the default place for content discoverability and sharing.  New sharing panel UI is crafted with intent of modernising and simplifying default tasks such as window sharing, but also for easier discovery of sharing options and more discoverable file sharing.",
         "id": 502520,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19056,15 +19599,15 @@
     },
     {
         "created": "2025-10-24T22:00:49",
-        "description": "Just type \u2018=\u2019 in the grid or formula bar, describe what formula you need in plain language, and Copilot instantly generates the right formula - right where you\u2019re already working. No need to open a task pane or switch context; stay in your natural formula workflow",
+        "description": "This feature is no longer accurate and being removed from the roadmap in favor of the functionality available in Agent Mode in Excel.\nJust type \u2018=\u2019 in the grid or formula bar, describe what formula you need in plain language, and Copilot instantly generates the right formula - right where you\u2019re already working. No need to open a task pane or switch context; stay in your natural formula workflow.",
         "id": 518269,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20692,12 +21235,12 @@
         "description": "When opening a Microsoft Word, Excel, or PowerPoint file in the Microsoft 365 Copilot app on\u202fAndroid, users\u202fwill see a\u202fpreview\u202fexperience where they can use\u202fM365 Copilot Chat\u202fto command and ask questions about the file. If users wish to edit the document, they will transition to the standalone Word, Excel, or PowerPoint app. PDF scenarios are not affected. The feature will begin a phased rollout in December.",
         "id": 518290,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41321,9 +41864,9 @@
         "description": "After further review, this has been delayed to a later date. We apologize for any inconvenience. Users will receive a weekly notification in the Connections apps in Microsoft Teams on mobile and desktop linking them to relevant SharePoint news that they might have missed in the preceding week. This unread news will be available in the \"News\" tab in the Connections app under the \"unread\" pill.",
         "id": 498323,
         "locale": null,
-        "modified": "2025-09-26T22:15:02",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -48777,12 +49320,12 @@
         "description": "Compare Copilot active usage with benchmarks in Copilot Dashboard. External benchmarks will provide a reference for how usage compares to other companies. Internal benchmarks will enable users to compare similar groups, within your company. #copilotcontrolsystem",
         "id": 495464,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -72271,12 +72814,12 @@
         "description": "After further review, we continue rolling this out. We apologize for any inconvenience. With this release, Insider Risk Management administrators can include or exclude specific users, groups, and adaptive scopes within policies. We are also adding support for non-mail enabled Security Groups within IRM policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 484081,
         "locale": null,
-        "modified": "2025-06-23T23:15:26",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "April CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -82840,12 +83383,12 @@
         "description": "With this feature, insights will be generated for potentially risky behaviors at a user level and will be surfaced across the following experiences:\n\n1) Insider risk management context in DLP alert investigation\n2) Insider risk management context in Communication compliance alert investigation\n3) Insider risk management context in Microsoft Defender XDR user entity page\n4) Advanced hunting in Microsoft Defender XDR  \n\nUser analytics will cover all eligible users in the tenant including users not in the scope of any Insider risk management policy. Customers can enable/disable user analytics in their tenant from Insider Risk Management settings.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 475058,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "March CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106398,12 +106941,12 @@
         "description": "After further review, we continue rolling this out. We apologize for any inconvenience. This introduces the ability to exclude users and groups from IRM policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 412942,
         "locale": null,
-        "modified": "2025-06-23T23:15:26",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -114005,15 +114548,15 @@
     },
     {
         "created": "2024-11-20T00:15:49",
-        "description": "Create with Copilot in Excel helps customers write prompts to generate tailored templates and tables, using multi-turn conversion to refine the table schema, formulas, and visuals.",
+        "description": "This feature is no longer accurate and being removed from the roadmap because the functionality is available in Agent Mode in Excel.\nCreate with Copilot in Excel helps customers write prompts to generate tailored templates and tables, using multi-turn conversion to refine the table schema, formulas, and visuals.",
         "id": 429873,
         "locale": null,
-        "modified": "2025-04-09T23:15:17",
+        "modified": "2026-02-06T23:15:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
