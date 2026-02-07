@@ -1271,6 +1271,7 @@
         "SupportFLSCloudPcPerformanceReporting": true,
         "SupportSearchByConnectedUser": true,
         "SwitchChangeNotificationEnqueue": true,
+        "SwitchGetSharedCloudPCInternalEndpoint": false,
         "SwitchToGroupService": true,
         "SwitchToKronoxPublicApi": true,
         "SyncAMSVersionEntity": true,
