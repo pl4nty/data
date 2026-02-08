@@ -9,7 +9,7 @@ if l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = l_0_1.command_line
-if l_0_2 == nil or l_0_2 == "" or (l_0_2:lower()):find("/scripts/com.microsoft.wdav[^/]+/") then
+if l_0_2 == nil or l_0_2 == "" or (l_0_2:lower()):find("/scripts/com.microsoft.wdav[^/]+/") or (l_0_2:lower()):find("script for mosyle mdm") then
   return mp.CLEAN
 end
 if not IsExcludedByCmdlineMacOS(l_0_2) and not IsExcludedByImagePathMacOS(l_0_0) then
