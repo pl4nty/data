@@ -41,36 +41,43 @@ do
             l_0_17 = l_0_17.GetImagePathFromPid
             l_0_18 = l_0_15
             l_0_17 = l_0_17(l_0_18)
-            l_0_13 = l_0_17
-            -- DECOMPILER ERROR at PC95: freeLocal<0 in 'ReleaseLocals'
+            l_0_13 = l_0_17 or ""
+            -- DECOMPILER ERROR at PC97: freeLocal<0 in 'ReleaseLocals'
 
-            -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC97: Confused about usage of register: R0 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC97: Confused about usage of register: R1 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC99: Confused about usage of register: R1 in 'UnsetPending'
 
             if not l_0_8 or not l_0_12 then
               return mp.CLEAN
             end
-            -- DECOMPILER ERROR at PC103: Confused about usage of register: R1 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC105: Confused about usage of register: R1 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC104: Confused about usage of register: R0 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC106: Confused about usage of register: R0 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC111: Confused about usage of register: R0 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC113: Confused about usage of register: R0 in 'UnsetPending'
 
             if contains(l_0_12, l_0_8) then
               (bm.add_related_string)("RegisteredSrv", l_0_8, bm.RelatedStringBMReport)
               local l_0_28 = nil
               local l_0_29 = nil
-              -- DECOMPILER ERROR at PC118: Confused about usage of register: R2 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC120: Confused about usage of register: R2 in 'UnsetPending'
+
+              ;
+              (bm.add_related_string)("ProcName_Reg", l_0_13 or "", bm.RelatedStringBMReport)
+              if reportRelevantUntrustedEntities(0) and next(reportRelevantUntrustedEntities(0)) then
+                (bm.add_related_string)("UntrustedEntities", safeJsonSerialize(reportRelevantUntrustedEntities(0)), bm.RelatedStringBMReport)
+              end
+              -- DECOMPILER ERROR at PC146: Confused about usage of register: R2 in 'UnsetPending'
 
               do
-                ;
-                (bm.add_related_string)("ProcName_Reg", l_0_13 or "", bm.RelatedStringBMReport)
-                if reportRelevantUntrustedEntities(0) and next(reportRelevantUntrustedEntities(0)) then
-                  (bm.add_related_string)("UntrustedEntities", safeJsonSerialize(reportRelevantUntrustedEntities(0)), bm.RelatedStringBMReport)
+                local l_0_31 = nil
+                if not contains(l_0_13, {"reg.exe", "regedit.exe"}) then
+                  (bm.trigger_sig)("TEL_SuspSafebootN", l_0_28 .. "|" .. l_0_31)
+                  return mp.CLEAN
                 end
                 do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC146: freeLocal<0 in 'ReleaseLocals'
+                -- DECOMPILER ERROR at PC168: freeLocal<0 in 'ReleaseLocals'
 
                 return mp.CLEAN
               end
