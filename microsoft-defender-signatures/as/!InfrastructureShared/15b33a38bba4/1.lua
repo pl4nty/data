@@ -19,7 +19,7 @@ do
     if (string.find)(l_0_2, "\\python", 1, true) then
       return mp.INFECTED
     end
-    if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_2, "microsoft.watson", 1, true) or (string.find)(l_0_2, "mpsigstub.exe", 1, true) or (string.find)(l_0_2, "\\te.exe", 1, true) or (string.find)(l_0_2, "\\te.processhost.exe", 1, true) or (string.find)(l_0_2, "virtualboxvm.exe", 1, true) then
+    if (string.find)(l_0_2, "\\program files", 1, true) or (string.find)(l_0_2, "\\microsoft vs code\\", 1, true) or (string.find)(l_0_2, "microsoft.watson", 1, true) or (string.find)(l_0_2, "mpsigstub.exe", 1, true) or (string.find)(l_0_2, "\\te.exe", 1, true) or (string.find)(l_0_2, "\\te.processhost.exe", 1, true) or (string.find)(l_0_2, "virtualboxvm.exe", 1, true) or (string.find)(l_0_2, "\\svcfab\\_app\\", 1, true) or (string.find)(l_0_2, "\\fennec-windows", 1, true) or (string.find)(l_0_2, "\\mpscan.exe", 1, true) then
       return mp.CLEAN
     end
     return mp.INFECTED
