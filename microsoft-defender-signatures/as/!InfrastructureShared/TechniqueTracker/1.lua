@@ -3003,15 +3003,15 @@ isCommonScheduledTaskFile = function(l_90_0)
     return 
   end
   l_90_0 = (string.lower)(l_90_0)
-  if StringEndsWith(l_90_0, "defenderatponboardingscript.cmd") or StringEndsWith(l_90_0, "defenderatponboarding.cmd") or StringEndsWith(l_90_0, "\\programdata\\airwatch\\cache\\disable_netbios.ps1") or StringEndsWith(l_90_0, "\\windows\\ise\\ise_add_profile.bat") or StringEndsWith(l_90_0, "\\temp\\clientcert.ps1") or StringEndsWith(l_90_0, "\\program files\\wpdf\\scripts\\tsuserex.dll") or StringEndsWith(l_90_0, "\\windows\\disable-usbhubsleep.ps1") or StringEndsWith(l_90_0, "\\windows\\logs\\defender-onboard-startupscript.ps1") or StringEndsWith(l_90_0, "\\vf\\vf-removechat.ps1") or StringEndsWith(l_90_0, "w11migration\\dot1svc.ps1") or StringEndsWith(l_90_0, "\\pcdiag_m365\\run.ps1") or StringEndsWith(l_90_0, "\\support\\utils\\session\\bat\\unlockevent.bat") or StringEndsWith(l_90_0, "\\yvapps\\unlock.bat") then
+  if StringEndsWith(l_90_0, "defenderatponboardingscript.cmd") or StringEndsWith(l_90_0, "defenderatponboarding.cmd") or StringEndsWith(l_90_0, "\\programdata\\airwatch\\cache\\disable_netbios.ps1") or StringEndsWith(l_90_0, "\\windows\\ise\\ise_add_profile.bat") or StringEndsWith(l_90_0, "\\temp\\clientcert.ps1") or StringEndsWith(l_90_0, "\\program files\\wpdf\\scripts\\tsuserex.dll") or StringEndsWith(l_90_0, "\\windows\\disable-usbhubsleep.ps1") or StringEndsWith(l_90_0, "\\windows\\logs\\defender-onboard-startupscript.ps1") or StringEndsWith(l_90_0, "\\vf\\vf-removechat.ps1") or StringEndsWith(l_90_0, "w11migration\\dot1svc.ps1") or StringEndsWith(l_90_0, "\\pcdiag_m365\\run.ps1") or StringEndsWith(l_90_0, "\\support\\utils\\session\\bat\\unlockevent.bat") or StringEndsWith(l_90_0, "\\yvapps\\unlock.bat") or StringEndsWith(l_90_0, "\\anima-scripts\\delete_logs.bat") or StringEndsWith(l_90_0, "\\package-deploy\\enabledefender.cmd") or StringEndsWith(l_90_0, "\\temp\\lansweeper\\install.cmd") or StringEndsWith(l_90_0, "\\it\\lockscreen\\lockscreen.ps1") or StringEndsWith(l_90_0, "\\wdf\\cfr.ps1") then
     return true
   end
   local l_90_1 = {}
-  -- DECOMPILER ERROR at PC94: No list found for R1 , SetList fails
+  -- DECOMPILER ERROR at PC124: No list found for R1 , SetList fails
 
-  -- DECOMPILER ERROR at PC95: Overwrote pending register: R2 in 'AssignReg'
+  -- DECOMPILER ERROR at PC125: Overwrote pending register: R2 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC96: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC126: Overwrote pending register: R3 in 'AssignReg'
 
   for l_90_5,l_90_6 in ("windowsdefenderatponboardingpackage")("windowsdefenderatponboardingscript") do
     if (string.find)(l_90_0, l_90_6, 1, true) then
@@ -3020,18 +3020,134 @@ isCommonScheduledTaskFile = function(l_90_0)
   end
   do
     local l_90_7, l_90_8, l_90_9 = (string.match)(l_90_0, "([^\\]+)$") or l_90_0
-    -- DECOMPILER ERROR at PC120: Confused about usage of register: R2 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC150: Confused about usage of register: R2 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC122: Confused about usage of register: R2 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC152: Confused about usage of register: R2 in 'UnsetPending'
 
     if l_90_7 == nil or #l_90_7 <= 4 then
       return 
     end
     local l_90_10 = nil
-    if ({["ws1_health_utility.ps1"] = true, ["configmgrclienthealth.ps1"] = true, ["enable-hybridazureadscheduletasks.ps1"] = true, ["psappdeploytoolkit-executeasuser.vbs"] = true, ["mdm_dsmcheck.ps1"] = true, ["noahbu.cmd"] = true, ["pslogcleanup.ps1"] = true, ["uemslogcollector.exe"] = true, ["map-paw-share.ps1"] = true, ["deploy-osicfromgpo.ps1"] = true, ["configmgrclienthealth.exe"] = true, ["sccm_client_install_v2.4.ps1"] = true, ["lock.bat"] = true, ["rungpresultreport.vbs"] = true, ["bitsadmin_change_to_no_proxy.bat"] = true, ["devicecomplianceonboardingscript.cmd"] = true, ["smime_auto_installation.vbs"] = true, ["manage.dla.ps1"] = true, ["invoke-mdesetup.ps1"] = true, ["enable-bitlocker.ps1"] = true, ["backup-log_v0.33.ps1"] = true, ["migrate-client.cmd"] = true, ["zd_nimda_cockpit_pw.ps1"] = true, ["dnswinsconfig.exe"] = true, ["setmcafeecustomprops.ps1"] = true, ["enableinheritance_final.ps1"] = true, ["vf-wdatp_registry.xml"] = true, ["windowsdefenderatponboardingscript.cmd"] = true, ["runtoasthidden.cmd"] = true, ["citrixvda_modreg.bat"] = true, ["win32agentipc.exe"] = true, ["set-ahcbitlockersequence.ps1"] = true, ["wudu.vbs"] = true, ["sccmclienteval_new.ps1"] = true, ["outlooksmime.vbs"] = true, ["get-newteamsversion.ps1"] = true, ["java_deployment.ps1"] = true, ["pxs_bvalidation.ps1"] = true, ["saverecoverykey.ps1"] = true, ["check-gpo.ps1"] = true, ["lockevent.bat"] = true, ["gporunpsscriptsilent.vbs"] = true, ["removelocalprofiles.ps1"] = true, ["configmgrstartup.vbs"] = true, ["clean-usertemp.ps1"] = true, ["ubsremoteassistendtasks.ps1"] = true, ["rac.exe"] = true, ["firstlaunch_teams.ps1"] = true, ["cer_automation.bat"] = true, ["launchdeployapps.vbs"] = true, ["intunescript-imageinformation-user.ps1"] = true, ["configupdater.ps1"] = true, ["addskypemeetingsplugintofirewall.ps1"] = true, ["users_fw.ps1"] = true, ["get-usersession-logoff-old-v1.ps1"] = true, ["user_logging_final.ps1"] = true, ["optumscriptswitchupdate.bat"] = true, ["reboot_check_updated.ps1"] = true, ["pcm-ucheck.ps1"] = true, ["remove-intunecurrentenrollment.ps1"] = true, ["browsercacheremoval.bat"] = true, ["workstationmanager-privilegerevocation.ps1"] = true, ["discovery-windows.exe"] = true, ["chama_ps1_configpatch.vbs"] = true, ["wudu_rollback.vbs"] = true, ["mugshotv2.bat"] = true, ["802.1x_authentication_settings.xml"] = true, ["docusnapscript-run.ps1"] = true, ["auditposte.exe"] = true, ["launchpsscript.vbs"] = true, ["itunes_stop.vbs"] = true, ["updatecertificat.ps1"] = true, ["windowsdefenderatplocalonboardingscript.cmd"] = true, ["n5start.ps1"] = true, ["winget-upgrade.ps1"] = true, ["dateprofile.ps1"] = true, ["setwin10smoptions.cmd"] = true, ["qualyscloudagentinstallation.bat"] = true, ["deployirtk.cmd"] = true, ["helios_it_zd_inventarisierung_ocs.ps1"] = true, ["monitor-nexthinkservice.ps1"] = true, ["readingrjpolicy.ps1"] = true, ["mdm_edgeupdatehelper.ps1"] = true, ["unlockevent.bat"] = true, ["corporatebranding.bat"] = true, ["vf-mde-enable.ps1"] = true, ["migrate-user.vbs"] = true, ["iemode_update.bat"] = true, ["configmgrstartup_schedtask.wsf"] = true, ["uploadappjson.ps1"] = true, ["ecm-nl-live.js"] = true, ["1096notify.ps1"] = true, ["idleuserlogoff-8hours.ps1"] = true, ["zscaler_audit.ps1"] = true, ["disable-windowsfirewalllocalsmbrules.ps1"] = true, ["update_win_features.bat"] = true, ["chrome_bku_install.exe"] = true, ["lockscreensaver.exe"] = true, ["hivenightmarefix.ps1"] = true, ["automatic_pagefile_tuning.ps1"] = true, ["xmlchecker.ps1"] = true, ["cleanup.ps1"] = true, ["lockscreenbranding.ps1"] = true, ["print_disable.bat"] = true, ["sp_poshacme_renewal.ps1"] = true, ["healthcheckmdatp.ps1"] = true, ["delprof_adm.log"] = true, ["526-get-mcgtcpconnections.ps1"] = true, ["createczlocadmin.ps1"] = true, ["karmakvpnping.cmd"] = true, ["configbackgroundsync.ps1"] = true, ["push-ordrepattributes.ps1"] = true, ["mbamcheckstatus.vbs"] = true, ["get_csv_certificate.vbs"] = true, ["scheduleclientshutdowncommand.ps1"] = true, ["wwan_info_to_reg.ps1"] = true, ["removelocalwinrm.ps1"] = true, ["casvc-install.exe"] = true, ["checkmecm.bat"] = true, ["clear-printerdefaults.vbs"] = true, ["rebootlogging.ps1"] = true, ["nettoyagearchiveslogsec.ps1"] = true, ["wfdv_printers_local.vbs"] = true, ["alwaysonvpn_device.ps1"] = true, ["hwinventory.ps1"] = true, ["appdatafirewallrules.ps1"] = true, ["eyextensioninstallforcelist.exe"] = true, ["chrome_bku_tray.exe"] = true, ["sp_removejob.cmd"] = true, ["startupevent.bat"] = true, ["installskysea.vbe"] = true, ["skyseasetup.bat"] = true, ["AuditCopyCATsForAppVapps-ng.ps1"] = true, ["QuickAssistRemoval.ps1"] = true, ["java8uninstall.ps1"] = true, ["dsregcmd-leave.log"] = true, ["getPcInfo.ps1"] = true, ["prelude_fake_disk_mount.txt"] = true, ["eyofficetargetedsettings.exe"] = true, ["sp_audit_poshacme_certs_v2.ps1"] = true, ["auditcopycatsforappvapps-ng.ps1"] = true, ["quickassistremoval.ps1"] = true, ["acrlogin.log"] = true, ["set-script.ps1"] = true, ["random_reboot.ps1"] = true, ["wfdv_meditech_local.vbs"] = true, ["setpermissions.cmd"] = true, ["print_enable.bat"] = true, ["onboarding.bat"] = true, ["disable_netbios.ps1"] = true, ["uninstall_solarwinds_client_components.ps1"] = true, ["defaultimappregistrysettings.ps1"] = true, ["runhidden.vbs"] = true, ["pulizia.bat"] = true, ["qaw.proxcardcredprov.log"] = true, ["!!flash-uninstall-anddeletefiles.bat"] = true, ["backrunarg.vbs"] = true, ["controlproxy.ps1"] = true, ["pcut_upgrade.ps1"] = true, ["gp.vbs"] = true, ["audio_driver_remove.bat"] = true, ["eas delete.ps1"] = true, ["rebootwithdelay.vbs"] = true, ["sophoscentral-disinstalla-agent.ps1"] = true, ["checknetworkandteams_dnsdomain.ps1"] = true, ["disableflightmode.ps1"] = true, ["cpdloginscript.bat"] = true, ["dash-file-dist_bootstrapper.ps1"] = true, ["loghealthcentrally.ps1"] = true, ["retail-biosmanagement.ps1"] = true, ["bitlocker-enrollment.cmd"] = true, ["ciphersuite.ps1"] = true, ["onboard-device.cmd"] = true, ["set-disabledomaincreds.ps1"] = true, ["mdeonboardingwin10-11.cmd"] = true, ["exsynclauncher.vbs"] = true, ["windows-os-mmg_services_hostfile_update.bat"] = true, ["registerdns.ps1"] = true, ["cyberhavenmanager.exe"] = true, ["heartbeat.vbs"] = true, ["flex_sched_runinventory.bat"] = true, ["installagentscript.vbs"] = true, ["launchedgechromels.vbs"] = true, ["kiosk_reboot.vbs"] = true, ["sccm_metered_fix.ps1"] = true, ["desktop.ini"] = true, ["appxpackage_removal.vbs"] = true, ["gpo-scheduledtask-islhd-filesync.bat"] = true, ["fixunquotedserviceuninstall.ps1"] = true, ["invoke-setdevicetimestamp.ps1"] = true, ["deploymma2019.cmd"] = true, ["print_delete.bat"] = true, ["deleteprofiles-90days.ps1"] = true, ["loginreporttosql.exe"] = true, ["autosetup.vbe"] = true, ["mappadischi.vbs"] = true, ["set-processmitigation.ps1"] = true, ["cra_wifi_ecaw.cmd"] = true, ["windowsdefenderatp-gpo-onboarding.cmd"] = true, ["onedrivepcmover_scheduledtask.vbs"] = true, ["sendteamslogs.ps1"] = true, ["analyze-my-home-drive.vbs"] = true, ["install-eduroam-wlan-profile-8021xteapauthcheck.ps1"] = true})[l_90_10] ~= nil then
+    if ({["ws1_health_utility.ps1"] = true, ["configmgrclienthealth.ps1"] = true, ["enable-hybridazureadscheduletasks.ps1"] = true, ["psappdeploytoolkit-executeasuser.vbs"] = true, ["mdm_dsmcheck.ps1"] = true, ["noahbu.cmd"] = true, ["pslogcleanup.ps1"] = true, ["uemslogcollector.exe"] = true, ["map-paw-share.ps1"] = true, ["deploy-osicfromgpo.ps1"] = true, ["configmgrclienthealth.exe"] = true, ["sccm_client_install_v2.4.ps1"] = true, ["lock.bat"] = true, ["rungpresultreport.vbs"] = true, ["bitsadmin_change_to_no_proxy.bat"] = true, ["devicecomplianceonboardingscript.cmd"] = true, ["smime_auto_installation.vbs"] = true, ["manage.dla.ps1"] = true, ["invoke-mdesetup.ps1"] = true, ["enable-bitlocker.ps1"] = true, ["backup-log_v0.33.ps1"] = true, ["migrate-client.cmd"] = true, ["zd_nimda_cockpit_pw.ps1"] = true, ["dnswinsconfig.exe"] = true, ["setmcafeecustomprops.ps1"] = true, ["enableinheritance_final.ps1"] = true, ["vf-wdatp_registry.xml"] = true, ["windowsdefenderatponboardingscript.cmd"] = true, ["runtoasthidden.cmd"] = true, ["citrixvda_modreg.bat"] = true, ["win32agentipc.exe"] = true, ["set-ahcbitlockersequence.ps1"] = true, ["wudu.vbs"] = true, ["sccmclienteval_new.ps1"] = true, ["outlooksmime.vbs"] = true, ["get-newteamsversion.ps1"] = true, ["java_deployment.ps1"] = true, ["pxs_bvalidation.ps1"] = true, ["saverecoverykey.ps1"] = true, ["check-gpo.ps1"] = true, ["lockevent.bat"] = true, ["gporunpsscriptsilent.vbs"] = true, ["removelocalprofiles.ps1"] = true, ["configmgrstartup.vbs"] = true, ["clean-usertemp.ps1"] = true, ["ubsremoteassistendtasks.ps1"] = true, ["rac.exe"] = true, ["firstlaunch_teams.ps1"] = true, ["cer_automation.bat"] = true, ["launchdeployapps.vbs"] = true, ["intunescript-imageinformation-user.ps1"] = true, ["configupdater.ps1"] = true, ["addskypemeetingsplugintofirewall.ps1"] = true, ["users_fw.ps1"] = true, ["get-usersession-logoff-old-v1.ps1"] = true, ["user_logging_final.ps1"] = true, ["optumscriptswitchupdate.bat"] = true, ["reboot_check_updated.ps1"] = true, ["pcm-ucheck.ps1"] = true, ["remove-intunecurrentenrollment.ps1"] = true, ["browsercacheremoval.bat"] = true, ["workstationmanager-privilegerevocation.ps1"] = true, ["discovery-windows.exe"] = true, ["chama_ps1_configpatch.vbs"] = true, ["wudu_rollback.vbs"] = true, ["mugshotv2.bat"] = true, ["802.1x_authentication_settings.xml"] = true, ["docusnapscript-run.ps1"] = true, ["auditposte.exe"] = true, ["launchpsscript.vbs"] = true, ["itunes_stop.vbs"] = true, ["updatecertificat.ps1"] = true, ["windowsdefenderatplocalonboardingscript.cmd"] = true, ["n5start.ps1"] = true, ["winget-upgrade.ps1"] = true, ["dateprofile.ps1"] = true, ["setwin10smoptions.cmd"] = true, ["qualyscloudagentinstallation.bat"] = true, ["deployirtk.cmd"] = true, ["helios_it_zd_inventarisierung_ocs.ps1"] = true, ["monitor-nexthinkservice.ps1"] = true, ["readingrjpolicy.ps1"] = true, ["mdm_edgeupdatehelper.ps1"] = true, ["unlockevent.bat"] = true, ["corporatebranding.bat"] = true, ["vf-mde-enable.ps1"] = true, ["migrate-user.vbs"] = true, ["iemode_update.bat"] = true, ["configmgrstartup_schedtask.wsf"] = true, ["uploadappjson.ps1"] = true, ["ecm-nl-live.js"] = true, ["1096notify.ps1"] = true, ["idleuserlogoff-8hours.ps1"] = true, ["zscaler_audit.ps1"] = true, ["disable-windowsfirewalllocalsmbrules.ps1"] = true, ["update_win_features.bat"] = true, ["chrome_bku_install.exe"] = true, ["lockscreensaver.exe"] = true, ["hivenightmarefix.ps1"] = true, ["automatic_pagefile_tuning.ps1"] = true, ["xmlchecker.ps1"] = true, ["cleanup.ps1"] = true, ["lockscreenbranding.ps1"] = true, ["print_disable.bat"] = true, ["sp_poshacme_renewal.ps1"] = true, ["healthcheckmdatp.ps1"] = true, ["delprof_adm.log"] = true, ["526-get-mcgtcpconnections.ps1"] = true, ["createczlocadmin.ps1"] = true, ["karmakvpnping.cmd"] = true, ["configbackgroundsync.ps1"] = true, ["push-ordrepattributes.ps1"] = true, ["mbamcheckstatus.vbs"] = true, ["get_csv_certificate.vbs"] = true, ["scheduleclientshutdowncommand.ps1"] = true, ["wwan_info_to_reg.ps1"] = true, ["removelocalwinrm.ps1"] = true, ["casvc-install.exe"] = true, ["checkmecm.bat"] = true, ["clear-printerdefaults.vbs"] = true, ["rebootlogging.ps1"] = true, ["nettoyagearchiveslogsec.ps1"] = true, ["wfdv_printers_local.vbs"] = true, ["alwaysonvpn_device.ps1"] = true, ["hwinventory.ps1"] = true, ["appdatafirewallrules.ps1"] = true, ["eyextensioninstallforcelist.exe"] = true, ["chrome_bku_tray.exe"] = true, ["sp_removejob.cmd"] = true, ["startupevent.bat"] = true, ["installskysea.vbe"] = true, ["skyseasetup.bat"] = true, ["AuditCopyCATsForAppVapps-ng.ps1"] = true, ["QuickAssistRemoval.ps1"] = true, ["java8uninstall.ps1"] = true, ["dsregcmd-leave.log"] = true, ["getPcInfo.ps1"] = true, ["prelude_fake_disk_mount.txt"] = true, ["eyofficetargetedsettings.exe"] = true, ["sp_audit_poshacme_certs_v2.ps1"] = true, ["auditcopycatsforappvapps-ng.ps1"] = true, ["quickassistremoval.ps1"] = true, ["acrlogin.log"] = true, ["set-script.ps1"] = true, ["random_reboot.ps1"] = true, ["wfdv_meditech_local.vbs"] = true, ["setpermissions.cmd"] = true, ["print_enable.bat"] = true, ["onboarding.bat"] = true, ["disable_netbios.ps1"] = true, ["uninstall_solarwinds_client_components.ps1"] = true, ["defaultimappregistrysettings.ps1"] = true, ["runhidden.vbs"] = true, ["pulizia.bat"] = true, ["qaw.proxcardcredprov.log"] = true, ["!!flash-uninstall-anddeletefiles.bat"] = true, ["backrunarg.vbs"] = true, ["controlproxy.ps1"] = true, ["pcut_upgrade.ps1"] = true, ["gp.vbs"] = true, ["audio_driver_remove.bat"] = true, ["eas delete.ps1"] = true, ["rebootwithdelay.vbs"] = true, ["sophoscentral-disinstalla-agent.ps1"] = true, ["checknetworkandteams_dnsdomain.ps1"] = true, ["disableflightmode.ps1"] = true, ["cpdloginscript.bat"] = true, ["dash-file-dist_bootstrapper.ps1"] = true, ["loghealthcentrally.ps1"] = true, ["retail-biosmanagement.ps1"] = true, ["bitlocker-enrollment.cmd"] = true, ["ciphersuite.ps1"] = true, ["onboard-device.cmd"] = true, ["set-disabledomaincreds.ps1"] = true, ["mdeonboardingwin10-11.cmd"] = true, ["exsynclauncher.vbs"] = true, ["windows-os-mmg_services_hostfile_update.bat"] = true, ["registerdns.ps1"] = true, ["cyberhavenmanager.exe"] = true, ["heartbeat.vbs"] = true, ["flex_sched_runinventory.bat"] = true, ["installagentscript.vbs"] = true, ["launchedgechromels.vbs"] = true, ["kiosk_reboot.vbs"] = true, ["sccm_metered_fix.ps1"] = true, ["desktop.ini"] = true, ["appxpackage_removal.vbs"] = true, ["gpo-scheduledtask-islhd-filesync.bat"] = true, ["fixunquotedserviceuninstall.ps1"] = true, ["invoke-setdevicetimestamp.ps1"] = true, ["deploymma2019.cmd"] = true, ["print_delete.bat"] = true, ["deleteprofiles-90days.ps1"] = true, ["loginreporttosql.exe"] = true, ["autosetup.vbe"] = true, ["mappadischi.vbs"] = true, ["set-processmitigation.ps1"] = true, ["cra_wifi_ecaw.cmd"] = true, ["windowsdefenderatp-gpo-onboarding.cmd"] = true, ["onedrivepcmover_scheduledtask.vbs"] = true, ["sendteamslogs.ps1"] = true, ["analyze-my-home-drive.vbs"] = true, ["install-eduroam-wlan-profile-8021xteapauthcheck.ps1"] = true, ["checkreboot.ps1"] = true, ["report.vbs"] = true, ["logonalert_win11.vbs"] = true, ["hide-console.vbs"] = true, ["regcmdstarthidden.exe"] = true, ["mappadischi.exe"] = true, ["karmakfusionbranchserver.ps1"] = true, ["delete_old_archived_winevent_logs.ps1"] = true, ["rem_everyone.ps1"] = true, ["selfscan.exe"] = true, ["updatewlapps-system.ps1"] = true})[l_90_10] ~= nil then
       return true
     end
     return false
+  end
+end
+
+getCommandLineType = function(l_91_0)
+  -- function num : 0_90
+  if not l_91_0 or #l_91_0 <= 3 then
+    return nil, nil
+  end
+  local l_91_1 = l_91_0:lower()
+  local l_91_2 = {}
+  local l_91_3 = {}
+  l_91_3.key = "node.exe"
+  l_91_3.type = "nodejs"
+  l_91_3.gentype = "script"
+  local l_91_4 = {}
+  l_91_4.key = "node "
+  l_91_4.type = "nodejs"
+  l_91_4.gentype = "script"
+  local l_91_5 = {}
+  l_91_5.key = "wscript"
+  l_91_5.type = "wsh"
+  l_91_5.gentype = "script"
+  local l_91_6 = {}
+  l_91_6.key = "cscript"
+  l_91_6.type = "wsh"
+  l_91_6.gentype = "script"
+  local l_91_7 = {}
+  l_91_7.key = "mshta"
+  l_91_7.type = "mshta"
+  l_91_7.gentype = "script"
+  local l_91_8 = {}
+  l_91_8.key = "python.exe"
+  l_91_8.type = "python"
+  l_91_8.gentype = "script"
+  local l_91_9 = {}
+  l_91_9.key = "python "
+  l_91_9.type = "python"
+  l_91_9.gentype = "script"
+  local l_91_10 = {}
+  l_91_10.key = "java.exe"
+  l_91_10.type = "java"
+  l_91_10.gentype = "script"
+  local l_91_11 = {}
+  l_91_11.key = "java "
+  l_91_11.type = "java"
+  l_91_11.gentype = "script"
+  local l_91_12 = {}
+  l_91_12.key = "rundll32"
+  l_91_12.type = "rundll32"
+  l_91_12.gentype = "dll_loader"
+  local l_91_13 = {}
+  l_91_13.key = "regsvr32"
+  l_91_13.type = "regsvr32"
+  l_91_13.gentype = "dll_loader"
+  local l_91_14 = {}
+  l_91_14.key = "curl"
+  l_91_14.type = "curl"
+  l_91_14.gentype = "downloader"
+  local l_91_15 = {}
+  l_91_15.key = "wget"
+  l_91_15.type = "wget"
+  l_91_15.gentype = "downloader"
+  local l_91_16 = {}
+  l_91_16.key = "certutil"
+  l_91_16.type = "certutil"
+  l_91_16.gentype = "downloader"
+  local l_91_17 = {}
+  l_91_17.key = "msiexec"
+  l_91_17.type = "msi"
+  l_91_17.gentype = "script"
+  local l_91_18 = {}
+  l_91_18.key = "powershell_ise"
+  l_91_18.type = "powershell"
+  l_91_18.gentype = "script"
+  local l_91_19 = {}
+  l_91_19.key = "pwsh"
+  l_91_19.type = "powershell"
+  l_91_19.gentype = "script"
+  local l_91_20 = {}
+  l_91_20.key = "powershell"
+  l_91_20.type = "powershell"
+  l_91_20.gentype = "script"
+  local l_91_21 = {}
+  l_91_21.key = "wmic"
+  l_91_21.type = "wmic"
+  l_91_21.gentype = "wmi"
+  local l_91_22 = {}
+  l_91_22.key = "cmd.exe"
+  l_91_22.type = "cmd"
+  l_91_22.gentype = "shell"
+  do
+    local l_91_23 = {}
+    l_91_23.key = "cmd "
+    l_91_23.type = "cmd"
+    l_91_23.gentype = "shell"
+    -- DECOMPILER ERROR at PC94: No list found for R2 , SetList fails
+
+    l_91_3 = 1
+    l_91_4 = #l_91_2
+    l_91_5 = 1
+    for l_91_6 = l_91_3, l_91_4, l_91_5 do
+      l_91_7 = l_91_2[l_91_6]
+      l_91_8, l_91_9 = l_91_1:find, l_91_1
+      l_91_10 = l_91_7.key
+      l_91_11 = 1
+      l_91_12 = true
+      l_91_8 = l_91_8(l_91_9, l_91_10, l_91_11, l_91_12)
+      if l_91_8 then
+        l_91_8 = l_91_7.type
+        l_91_9 = l_91_7.gentype
+        return l_91_8, l_91_9
+      end
+    end
+    do return nil, nil end
+    -- DECOMPILER ERROR at PC113: Confused about usage of register R6 for local variables in 'ReleaseLocals'
+
   end
 end
 
