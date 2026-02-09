@@ -186,11 +186,6 @@
                 }
             ]
         },
-        "WidthAndHeightAsPresentationAttributesOnNestedSvgPayload": {
-            "disableFeatures": [
-                "WidthAndHeightAsPresentationAttributesOnNestedSvg"
-            ]
-        },
         "advanceConsentCleanupForceful": {
             "enableFeatures": [
                 "msAdvanceConsentForcefulCleanup"

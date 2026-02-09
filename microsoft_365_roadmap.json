@@ -81091,67 +81091,6 @@
     },
     {
         "created": "2025-02-05T00:15:53",
-        "description": "Revamp the community \"info\" experience to be in line with the existing Engage user patterns. Editing the info, will now be available within the settings experience. Users can read the info from the \"About\" section additionally.",
-        "id": 479405,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Editing and viewing community 'info' revamped"
-    },
-    {
-        "created": "2025-02-05T00:15:53",
         "description": "Microsoft 365 Copilot will soon use pronouns from user profiles when responding, creating a more personalized interaction for users.",
         "id": 478648,
         "locale": null,
@@ -88540,67 +88479,6 @@
             ]
         },
         "title": "Microsoft Teams: Shared tab in channel"
-    },
-    {
-        "created": "2024-10-31T23:30:09",
-        "description": "Organizers of town hall instances can now reach wider audiences in a single event with an expansion to a maximum of 50,000 simultaneous attendees. This increase serves as a significant jump from the previous attendee cap of 20,000 for organizers with a Teams Premium license. The quality and stability of town halls up to this new limit will remain constant, providing high-quality and reliable content to participants. For events with more than 20,000 concurrent attendees, some interactivity features are disabled for all attendees. Organizations can get support for audiences up to 50,000 concurrent attendees by reaching out to the Microsoft 365 Live Event Assistance Program (LEAP) for assistance (Microsoft 365 Live Event Assistance Program \u2013 Microsoft Adoption). This feature is available for town hall organizers that have an active Teams Premium license.",
-        "id": 429538,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Town hall concurrent attendee increase to 50,000"
     },
     {
         "created": "2024-10-22T23:00:59",
@@ -96161,55 +96039,6 @@
         "title": "Outlook: Delivery and read receipts in Outlook mobile"
     },
     {
-        "created": "2024-10-08T23:15:42",
-        "description": "Viva Engage will offer a new way to see contributions from close contacts and leaders within conversation threads. In the home feed, users see two comments that are meaningful to them and the overall conversation. Users can see the rest of the conversation with one click. There are no changes to the comment, reply, or reaction experiences with the new recommended comments feature.",
-        "id": 420338,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Engage - Recommended comments"
-    },
-    {
         "created": "2024-09-12T23:15:19",
         "description": "To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We are making no changes to the functionality of any setting and all settings will remain on the same page as they are today but will be behind clickable sections. The first is introducing quick access to the most used actions on the landing page of Edge Settings. Second, each densely populated page\u2014Privacy, search, and services; Appearance; Cookies and site permissions; System and performance\u2014will feature quick access to its most used actions. Third, for these same pages, each section will now click-through to its respective sub-settings (similar to a table of contents).",
         "id": 416093,
@@ -99447,55 +99276,6 @@
             ]
         },
         "title": "SharePoint: Enterprise Application Insights for SharePoint sites"
-    },
-    {
-        "created": "2024-09-10T23:15:45",
-        "description": "This is part of SharePoint Advanced Management capabilities which allows SharePoint admins to restrict content discoverability in organization-wide search and Copilot experiences. ",
-        "id": 416065,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: SharePoint Advanced Management - Restricted content discoverability"
     },
     {
         "created": "2024-09-12T23:15:19",
@@ -103733,55 +103513,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Information Protection - SharePoint Online extends library permissions to downloaded files."
-    },
-    {
-        "created": "2024-11-07T00:30:03",
-        "description": "Users can schedule a poll for publication in Engage. Users can also edit a poll prior to publication, though once published, a poll is not editable.\n\nThis change brings the edit and schedule capability to polls, like all other post types in Engage (discussion, question, praise, and article).",
-        "id": 467251,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Engage - Edit and schedule polls"
     },
     {
         "created": "2024-11-07T00:30:03",
@@ -113894,61 +113625,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Microsoft Purview Information Protection Tracking and Revocation - End-User Tracking and Revocation"
-    },
-    {
-        "created": "2023-07-24T23:42:57",
-        "description": "Users can access the Microsoft Purview compliance portal to check who has tried accessing their sensitivity labeled and encrypted local Office files and revoke access when needed.",
-        "id": 152126,
-        "locale": null,
-        "modified": "2025-04-08T23:15:07",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2024",
-        "publicPreviewDate": "August CY2023",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Information Protection: Tracking and Revocation in Compliance Portal"
     },
     {
         "created": "2024-12-23T23:00:26",
