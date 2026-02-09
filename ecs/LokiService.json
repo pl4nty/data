@@ -1309,6 +1309,8 @@
         "LpcResourceUrl_MinReactMinorVersion": 0,
         "MDSOutputExceptionMessage": false,
         "MRUFormsQueryLimit": 8,
+        "MaxNumberOfPersonasToPrefetch": 50,
+        "MaxNumberOfPersonasToPrefetchInParallel": 2,
         "MeInsightFilterAndRankerSettings": "UpdatePhoneNumberNudge,UploadPhotoNudge,SuggestedWorkingHoursNudge,LinkedInProfileSuggestion,LanguageProficiency",
         "MePeoplePrompts": {
             "Prompts": [
