@@ -1198,8 +1198,9 @@
         "name": "SSMS",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "19.0.20196.0",
+        "version": "22.2.1",
         "versions": [
+            "22.2.1",
             "19.0.20196.0",
             "18.12.1"
         ]

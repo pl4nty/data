@@ -224,6 +224,11 @@
             }
         }
     },
+    "SVC_AdHocQuery": {
+        "FlightingV2": {
+            "TemplateEngineV2": true
+        }
+    },
     "SVC_AdminTasks": {
         "FlightingV2": {
             "EnableReadController": true
@@ -316,6 +321,11 @@
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreMigrationSwitchOverBatch4": true
+        }
+    },
+    "SVC_DataPlatformMetadata": {
+        "FlightingV2": {
+            "EnableSchemaOrchestration": true
         }
     },
     "SVC_Dep": {
