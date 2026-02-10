@@ -5,11 +5,15 @@
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 ~= nil then
+  local l_0_1 = (string.lower)(l_0_0.image_path)
+  if l_0_1:match("([^\\]+)$") == "explorer.exe" or l_0_1:match("([^\\]+)$") == "conhost.exe" then
+    return mp.INFECTED
+  end
   if l_0_0.ppid and IsKeyInRollingQueue("IsProcessChainViaRUNMRU", l_0_0.ppid, true) then
     return mp.INFECTED
   end
-  local l_0_1 = (mp.GetParentProcInfo)(l_0_0.ppid)
-  if l_0_1 ~= nil and l_0_1.ppid and IsKeyInRollingQueue("IsProcessChainViaRUNMRU", l_0_1.ppid, true) then
+  local l_0_2 = (mp.GetParentProcInfo)(l_0_0.ppid)
+  if l_0_2 ~= nil and l_0_2.ppid and IsKeyInRollingQueue("IsProcessChainViaRUNMRU", l_0_2.ppid, true) then
     return mp.INFECTED
   end
 end
