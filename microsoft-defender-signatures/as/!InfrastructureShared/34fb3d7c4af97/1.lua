@@ -17,6 +17,7 @@ if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p2 ~= nil and (th
   l_0_3 = (string.lower)((this_sigattrlog[11]).utf8p2)
 end
 if (string.find)(l_0_3, "kmditemfsname", 1, true) or (string.find)(l_0_3, "kmditemfssize", 1, true) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
