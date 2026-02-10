@@ -227,6 +227,7 @@
     },
     "SVC_AdHocQuery": {
         "FlightingV2": {
+            "ExternalTableBGService": true,
             "TemplateEngineV2": true
         }
     },
