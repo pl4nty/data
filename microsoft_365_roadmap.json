@@ -1,5 +1,60 @@
 [
     {
+        "created": "2026-02-10T00:15:36",
+        "description": "Shared display mode in Teams is now available in government CCC-H environments, enabling more seamless and private meeting hosting from your PC. Additionally, peripheral detection for bring-your-own-device spaces is available for inventory management and reporting through the Teams Rooms Pro Management portal.",
+        "id": 553592,
+        "locale": null,
+        "modified": "2026-02-10T00:15:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Teams shared display mode and peripheral detection available for GCC-H environments"
+    },
+    {
         "created": "2026-02-06T23:00:02",
         "description": "Loop meeting notes now automatically inherit your meeting\u2019s sensitivity label. When admins enable label inheritance in the sensitivity label policy, any labeled meeting applies the same label to its Loop meeting notes, ensuring protections like encryption, access controls, and data handling rules carry forward consistently. This also ensures that Copilot and agent responses based on Loop meeting notes accurately reflect the meeting\u2019s sensitivity, keeping confidential content protected end to end.",
         "id": 555857,
@@ -71,9 +126,9 @@
         "description": "Positioned at the top of the chat and channels list, quick views give users fast access to mentions, followed threads, and more. Users can choose when and how quick views are displayed \u2013 selecting \u201calways show,\u201d \u201calways hide,\u201d or \u201cshow only when unread\u201d \u2013 and can collapse the section at any time.",
         "id": 555856,
         "locale": null,
-        "modified": "2026-02-06T23:00:02",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -98,6 +153,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -128,6 +186,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -199,7 +260,7 @@
         "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
         "id": 555239,
         "locale": null,
-        "modified": "2026-02-06T23:00:02",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -217,6 +278,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -238,6 +302,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -660,15 +727,15 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
+        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
         "id": 553590,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10558,9 +10625,9 @@
         "description": "Security admins with Defender for Office 365 Plan 1 can avail the benefits of end user reporting of Teams Messages",
         "id": 531760,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14980,12 +15047,12 @@
         "description": "ServiceNow Tickets Copilot connector did not use to correctly update the ticket status because of not ingesting inactive tickets. But now, the connector updates the change in ticket status more frequently. Additionally, users can now edit the data query filter to include inactive tickets even for existing connections. By default, copilot connectors now ingest both active & inactive tickets to ensure better quality responses in Copilot connectors.",
         "id": 505437,
         "locale": null,
-        "modified": "2025-11-14T01:15:08",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15474,12 +15541,12 @@
         "description": "Currently you can create Purview Endpoint DLP policy and assign to specific users or user groups. This feature will allow you to create and assign policy based on both users and machines. You can use this feature to achieve different policies for same user on different Mac devices.",
         "id": 526792,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16848,12 +16915,12 @@
         "description": "AI and IT admins in Microsoft Admin Center can 1) gain visibility around oversharing risks and drive remediations 2) Understand how much of sensitive copilot interactions are protected and turn on Purview DLP for M365 Copilot right from there. Enables secure adoption of Copilot.",
         "id": 523212,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18350,12 +18417,12 @@
         "description": "Interact in real time with read aloud in Word with Copilot. While your document is being read aloud, you can ask questions with your voice\u2014such as \u201cWhat does this mean?\u201d or \u201cSummarize this section\u201d\u2014and get answers instantly. No need to pause and search manually. This keeps you in context, reduces interruptions, and helps you understand and act faster.",
         "id": 523205,
         "locale": null,
-        "modified": "2026-01-23T00:15:29",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18747,12 +18814,12 @@
         "description": "Admins can now configure policies for Edge for Business across macOS, iOS, and Android devices on top of their existing Windows configurations in the Edge management service.",
         "id": 522536,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18991,12 +19058,12 @@
         "description": "Inline protections for text and file uploads, directly integrated into for Edge for Business, can be applied to more unmanaged consumer GenAI apps. Admins can now apply Purview collection policies and Purview DLP policies to detect and protect inline against sensitive data sharing in the Edge browser by users on Intune-managed Windows devices to a selection of new unmanaged app locations.  ",
         "id": 518643,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19046,12 +19113,12 @@
         "description": "Inline protections for file upload protection are directly integrated into for Edge for Business to help prevent data leakage when users upload files to consumer GenAI apps in the browser. In addition to existing text upload controls in Purview collection and DLP policies, Admins can now detect and enforce inline protections on file uploads. Policies can target file-specific conditions such as file size, file type, and sensitive information types, enabling organizations to audit or block activities for users in Edge on Intune-managed Windows devices.",
         "id": 518642,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20226,12 +20293,12 @@
         "description": "We're adding support in Microsoft Graph to read and write users' Working Hours and Location #MicrosoftPlaces",
         "id": 503315,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26463,9 +26530,9 @@
         "description": "Quickly send images to Bing Visual Search from the Edge Desktop Search Bar to identify images, people, animals, and shows; extract, copy, and translate text while keeping its format. Solve questions quickly in various subjects and get trusted information to boost your knowledge. Discover products, fashion, recipes, identify a location and more. Available on Windows devices.\u00a0 Admins can control availability to this feature using the\u00a0VisualSearchEnabled policy.\u00a0",
         "id": 508519,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34412,12 +34479,12 @@
         "description": "We are expanding the access to Diagnostics beyond Global Admin to: Compliance Administrator, Security Administrator and Organization Management.",
         "id": 500894,
         "locale": null,
-        "modified": "2025-09-12T22:00:20",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37890,15 +37957,15 @@
     },
     {
         "created": "2025-07-31T23:15:15",
-        "description": "The News page renders news items in a given site. It is typically accessed via the \"see all\" experience of a news web part.  We are updating the user experience of this page and bringing in Copilot capabilities to licensed users. ",
+        "description": "The News page renders news items in a given site. It is typically accessed via the \"see all\" experience of a news web part.  We are updating the user experience of this page and bringing in Copilot capabilities to licensed users. Updated February 9, 2026: GA rollout for this item is starting in late February. We apologize for any inconvenience.",
         "id": 499654,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38521,9 +38588,9 @@
         "description": "Remotely access devices over the cloud without requiring end user involvement by signing in with credentials.",
         "id": 499154,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -48398,12 +48465,12 @@
         "description": "The new Workflows app is to provide an experience that is both simpler and faster to enable everyday Teams and SharePoint users to create automations in three steps or less. This item is still In Development for production release; we apologize for any inconvenience.",
         "id": 491632,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -50144,9 +50211,9 @@
         "description": "Advanced Collaboration Analytics for GGC provides Teams admins with insights into external collaboration patterns - covering teams, federated domains, channels, guests, and internal users - along with recommended actions to enhance security for external collaboration.",
         "id": 493742,
         "locale": null,
-        "modified": "2025-09-24T23:15:27",
+        "modified": "2026-02-10T00:15:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

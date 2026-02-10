@@ -30,6 +30,7 @@
     },
     "CLI_MHS": {
         "EmailRegex_BugFix": true,
+        "HashedExitPin_SupportEnabled": false,
         "MAABluetooth_FeatureEnabled": true,
         "MAAGetHelp_FeatureEnabled": true,
         "MAASessionPin_FeatureEnabled": true,
@@ -299,6 +300,7 @@
             "DisablePermanentFailureOfSession": true,
             "EnableAPSyncRequestMessage": true,
             "EnableAcmeIncomingRequestValidation": true,
+            "EnableAppleACMEBYODEnrollment": true,
             "EnableGenerateAcmeNewNonce": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
