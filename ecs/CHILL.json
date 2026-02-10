@@ -516,7 +516,7 @@
         },
         "Floodgate_Campaign_AdminPortal.e187a7f9-a8d3-496a-835d-5b1d1b7a1d62": {
             "CampaignId": "e187a7f9-a8d3-496a-835d-5b1d1b7a1d62",
-            "EndTimeUtc": "2026-03-28T07:00:00Z",
+            "EndTimeUtc": "2026-04-06T18:30:00Z",
             "GovernedChannelType": 1,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1332,7 +1332,7 @@
     "ChillMicrosoftDefenderXdr": {
         "Floodgate_Campaign_MicrosoftDefenderXDR.610e6279-a960-499c-8f10-2a1b58b8480e": {
             "CampaignId": "610e6279-a960-499c-8f10-2a1b58b8480e",
-            "EndTimeUtc": "2026-02-20T22:00:00Z",
+            "EndTimeUtc": "2026-04-10T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1426,7 +1426,7 @@
         },
         "Floodgate_Campaign_MicrosoftDefenderXDR.9f028b68-0dcb-43ba-8540-ea2f152df55e": {
             "CampaignId": "9f028b68-0dcb-43ba-8540-ea2f152df55e",
-            "EndTimeUtc": "2026-02-20T22:00:00Z",
+            "EndTimeUtc": "2026-04-10T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1710,7 +1710,7 @@
         },
         "Floodgate_Campaign_MicrosoftDefenderXDR.d06bb221-ae87-4076-bd6c-f5f8ff7f899c": {
             "CampaignId": "d06bb221-ae87-4076-bd6c-f5f8ff7f899c",
-            "EndTimeUtc": "2026-02-20T22:00:00Z",
+            "EndTimeUtc": "2026-04-10T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2041,7 +2041,7 @@
     "ChillPowerApps": {
         "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
             "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
-            "EndTimeUtc": "2026-02-28T23:00:00Z",
+            "EndTimeUtc": "2026-04-10T22:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

@@ -81036,67 +81036,6 @@
     },
     {
         "created": "2025-02-05T00:15:53",
-        "description": "Semantic search capability understands context and nuances of user queries, providing more accurate and relevant results.",
-        "id": 479749,
-        "locale": null,
-        "modified": "2025-04-09T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Semantic search support for in-app Searches"
-    },
-    {
-        "created": "2025-02-05T00:15:53",
         "description": "The centralized community membership approval experience undergoes a revamp to make it easier for community admins to manage approval requests for all communities they administer, in ONE single place.",
         "id": 479406,
         "locale": null,
@@ -88662,55 +88601,6 @@
             ]
         },
         "title": "Microsoft 365 app: Microsoft Loop \u2013 New personal Loop workspace"
-    },
-    {
-        "created": "2024-10-30T23:30:52",
-        "description": "Admins can manage membership, ownership, deletion, and restoration of Loop workspaces in the SharePoint Embedded admin center or PowerShell. These changes are visible within the Loop experience.",
-        "id": 421613,
-        "locale": null,
-        "modified": "2025-04-09T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Microsoft Loop - Admin management tasks enabled for all Loop workspaces"
     },
     {
         "created": "2024-09-20T22:15:31",
@@ -103916,61 +103806,6 @@
             ]
         },
         "title": "Microsoft Intune: Endpoint Privilege Management rules support specifying allowable command arguments"
-    },
-    {
-        "created": "2023-12-12T23:45:07",
-        "description": "Ability to save the filters applied to Activity Explorer and use them later. ",
-        "id": 374375,
-        "locale": null,
-        "modified": "2025-04-09T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Information Protection - Save filters for Activity Explorer"
     },
     {
         "created": "2023-08-29T23:20:56",
