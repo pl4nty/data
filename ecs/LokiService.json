@@ -154,10 +154,10 @@
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20260208.5.0",
         "CalendarCompanionMsitVersion": "1.20260204.9.0",
-        "CalendarCompanionProdVersion": "1.20260124.6.0",
+        "CalendarCompanionProdVersion": "1.20260131.9.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
-        "HostAppVersion": "1.20260124.6.0",
+        "HostAppVersion": "1.20260131.9.1",
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1924,6 +1924,7 @@
         "searchux.enableCustomSERPConfiguration": false,
         "searchux.enableDotNetCoreEndPoint": true,
         "searchux.enableMrtCacheFlight": false,
+        "searchux.enableOcvFeedback": true,
         "searchux.enableQueryStringParam": true,
         "searchux.enableRPCCall": true,
         "searchux.enableRefinerValuesCap": true,
