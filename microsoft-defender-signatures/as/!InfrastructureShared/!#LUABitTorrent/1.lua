@@ -26,7 +26,7 @@ if (string.find)(l_0_1, "utorrent", 1, true) or (string.find)(l_0_1, "trretweb",
   (mp.set_mpattribute)("PUA:Block:uTorrent_BundleInstaller")
   return mp.INFECTED
 end
-if (string.find)(l_0_1, "bittorrent", 1, true) or (string.find)(l_0_1, "ittrrent", 1, true) or (string.find)(l_0_1, "bttorrent", 1, true) then
+if (string.find)(l_0_1, "bittorrent", 1, true) or (string.find)(l_0_1, "ittrrent", 1, true) or (string.find)(l_0_1, "bttorrent", 1, true) or (string.find)(l_0_1, "ittrent", 1, true) then
   (mp.set_mpattribute)("PUA:Block:BitTorrent_BundleInstaller")
   return mp.INFECTED
 end
