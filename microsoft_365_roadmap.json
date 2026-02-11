@@ -1,5 +1,1423 @@
 [
     {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference webpages when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555898,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference webpages when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference webpages when creating a presentation with Copilot in PowerPoint using Agent Mode.",
+        "id": 555896,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference webpages when creating a presentation with Agent Mode in  PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference SharePoint libraries and OneDrive folders when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "id": 555894,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference webpages when creating a presentation with Copilot in PowerPoint using Agent Mode.",
+        "id": 555893,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference webpages when creating a presentation with Agent Mode in  PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference the content of a PowerPoint file when creating a presentation with Copilot in PowerPoint using Agent Mode.",
+        "id": 555892,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference the content of a PowerPoint file when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference an email when creating a presentation with Copilot in PowerPoint using Agent Mode. ",
+        "id": 555891,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an email when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "id": 555890,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Attach and reference an image when creating a presentation with Copilot in PowerPoint using Agent Mode."
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference the content of a PowerPoint file when creating a presentation with Copilot in PowerPoint using Agent Mode.",
+        "id": 555889,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference the content of a PowerPoint file when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference an email when creating a presentation with Copilot in PowerPoint using Agent Mode. ",
+        "id": 555888,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an email when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference the content of a PowerPoint file when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555887,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference the content of a PowerPoint file when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference an email when creating a presentation with Copilot in PowerPoint using Agent Mode.",
+        "id": 555886,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an email when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference a Teams meeting or chat when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555885,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference a Teams meeting or chat when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference a Teams meeting or chat when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555884,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference a Teams meeting or chat when creating a presentation with Agent Mode in  PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference a Teams meeting or chat when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555883,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference a Teams meeting or chat when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "id": 555882,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Attach and reference an image when creating a presentation with Copilot in PowerPoint using Agent Mode."
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "You can now attach and reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "id": 555881,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Attach and reference an image when creating a presentation with Copilot in PowerPoint using Agent Mode."
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
+        "id": 555877,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create executive summary slides with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
+        "id": 555875,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create executive summary slides with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Now with Agent Mode in Copilot in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
+        "id": 555874,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create presentations with Work IQ using Agent Mode in Copilot in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Now with Agent Mode in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
+        "id": 555873,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): ): Create presentations with Work IQ using Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Now with Agent Mode in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
+        "id": 555872,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create presentations with Work IQ using Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Tenant admins can enable a meeting policy setting that generates 8 digit numeric-only passcodes for meetings organized by selected users/groups. Because numeric-only passcodes increase the risk of unauthorized access, enabling the setting displays a warning and requires explicit confirmation.",
+        "id": 555858,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Admin setting for simpler meeting passcodes (numeric\u2011only)"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "For desktop users, Microsoft Edge can now autofill additional document types\u2014including passports, driver\u2019s licenses, and other specialized forms\u2014on top of your saved addresses.",
+        "id": 554938,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Enhanced Autofill"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Teams town halls will soon provide support for a backup RTMP stream to keep a live broadcast running in the event of an interruption with the main stream.",
+        "id": 554932,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Backup RTMP Support for Teams town halls"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "Microsoft Teams will soon support Secure Reliable Transport (SRT) streaming in Teams town halls. SRT is a network protocol designed to deliver high-quality, low-latency video across the public internet.\n",
+        "id": 554931,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Microsoft Teams: Secure Reliable Transport (SRT) Support for Teams town halls"
+    },
+    {
+        "created": "2026-02-11T00:15:04",
+        "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
+        "id": 553594,
+        "locale": null,
+        "modified": "2026-02-11T00:15:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Built\u2011in AI Interpreter for Calls on Teams Phone Devices"
+    },
+    {
         "created": "2026-02-10T00:15:36",
         "description": "Shared display mode in Teams is now available in government CCC-H environments, enabling more seamless and private meeting hosting from your PC. Additionally, peripheral detection for bring-your-own-device spaces is available for inventory management and reporting through the Teams Rooms Pro Management portal.",
         "id": 553592,
@@ -199,9 +1617,9 @@
         "description": "When in a meeting with another Teams Rooms on Windows that has multiple cameras, you can switch camera views in that room via the participant panel on the console, or video tile on a touch board, to optimize your views.\n",
         "id": 555855,
         "locale": null,
-        "modified": "2026-02-06T23:00:02",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2773,9 +4191,9 @@
         "description": "Microsoft 365 Copilot Chat is now integrated in Microsoft Forms, including enabling the Surveys Agent from within Forms. Surveys Agent provides specialized capabilities to help with your form - from recommending and applying improvements to your form or quiz, to helping draft and send invitations, to analyzing your results. Surveys Agent is available to users with a Microsoft 365 Copilot license, and can be accessed by clicking the \"Copilot\" icon in Forms.",
         "id": 553136,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4781,12 +6199,12 @@
         "description": "Viva Glint Reporting users like managers and leaders will be able to retrace their navigation flow i.e. drill down and drill up in reports rather than lose their navigation flow within reports. Navigation improvements will replace \"Go Back\" to Reporting home page with an alternative clickable UX to enable users to go back to the last page of reporting they were in. In other words, this feature will cater to Back navigation improvements in Reporting.",
         "id": 547836,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -5166,12 +6584,12 @@
         "description": "We're introducing the ability to save meeting invites as drafts on mobile. This feature allows users to begin composing a meeting and return to it later without sending the invite immediately\u2014helping them stay organized and flexible when scheduling.",
         "id": 545895,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9071,12 +10489,12 @@
         "description": "Use scatter image effect directly in Copilot Chat and the create experience to further customize your visual artifacts generated with Copilot.",
         "id": 537288,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11894,12 +13312,12 @@
         "description": "Customers can now connect Microsoft 365 Copilot to Bitbucket with Copilot connectors to query knowledge base content and pull requests.",
         "id": 515163,
         "locale": null,
-        "modified": "2025-11-25T00:15:23",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13644,12 +15062,12 @@
         "description": "We\u2019re expanding the Interpreter agent in Microsoft Teams to include real-time speech-to-speech interpretation for Teams calls. This brings the same functionality previously available in meetings to calls, enabling users to speak and listen in up to nine supported languages. Interpreter helps eliminate language barriers and fosters seamless collaboration across global teams. For a more inclusive experience, users can also opt to have Interpreter simulate their personal voice.",
         "id": 526777,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15352,12 +16770,12 @@
         "description": "We\u2019re bringing the power of Microsoft 365 Copilot directly into your daily file management experience in macOS. With this update, users can interact with Copilot in Finder to ask questions about their OneDrive files.\n",
         "id": 527839,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15663,12 +17081,12 @@
         "description": "Administrator can monitor which locations and users across their organization are facing meeting quality issues due to unoptimized VDI.",
         "id": 526781,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19950,12 +21368,12 @@
         "description": "Customers can now connect Microsoft 365 Copilot to Miro with Copilot connectors to query visual boards and diagrams.",
         "id": 515166,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19999,7 +21417,7 @@
         "description": "Customers can now connect Microsoft 365 Copilot to Coda with Copilot connectors to query collaborative documents and wikis.\n",
         "id": 515165,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
@@ -20097,12 +21515,12 @@
         "description": "Customers can now connect Microsoft 365 Copilot to GitLab with Copilot connectors to query knowledge base content and merge requests",
         "id": 515162,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20702,12 +22120,12 @@
         "description": "Customers can connect M365 Copilot with Shortcut to manage agile development workflows with Copilot Connector.",
         "id": 515178,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20751,7 +22169,7 @@
         "description": "Customers can connect M365 Copilot with Monday.com to track work and team progress with Copilot Connector.",
         "id": 515177,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
@@ -20849,7 +22267,7 @@
         "description": "Customers can connect M365 Copilot with Asana to manage projects and tasks with Copilot Connector.",
         "id": 515175,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
@@ -21051,12 +22469,12 @@
         "description": "Customers can connect M365 Copilot with Aha! to manage product features and customer ideas with Copilot Connector.",
         "id": 515159,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21790,9 +23208,9 @@
         "description": "With Agents in Notebooks, use the specialized skills and knowledge of Agents on the content that matter most to your task at hand, whether it\u2019s transforming complex data into clear insights and visualizations with Analyst, or creating stunning designs with Designer.",
         "id": 516041,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22431,12 +23849,12 @@
         "description": "Trust Indicators are visual badges next to external users in Microsoft Teams that show a person\u2019s trust level. They help you quickly see if someone is internal, external, a guest, or anonymous. This lets you collaborate confidently with users from external organizations and avoid sharing sensitive information with the wrong audience.",
         "id": 515169,
         "locale": null,
-        "modified": "2025-12-12T00:15:16",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23561,12 +24979,12 @@
         "description": "Theme moderation in Engage will soon offer an option to block message creation if content aligns with a theme. This change expands on the previous release to monitor and mute content based on themes.\n\nWhen a theme is blocked, users will see a message explaining why their message can't be published. Users can edit or discard the message. \n\nAdmins and corporate communicators can control where blocks happen across storylines and communities. Leaders, corporate communicators, and network/verified/Engage admins cannot be blocked regardless of theme.",
         "id": 513277,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26707,12 +28125,12 @@
         "description": "Search for images by message content, people, or where they were shared. See results as you type, filter to show only images, or explore them in the dedicated Images tab \u2014 all from the search bar.",
         "id": 505443,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -33632,7 +35050,7 @@
         "description": "Design and edit images, posters, banners, infographics, text drafts, and forms with Copilot\u2014align them to your brand using kits built by you or your team.",
         "id": 498548,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -33643,7 +35061,7 @@
                 "tagName": "GCC"
             },
             {
-                "tagName": "DoD"
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Web"
@@ -33661,7 +35079,7 @@
                     "tagName": "GCC"
                 },
                 {
-                    "tagName": "DoD"
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -41382,12 +42800,12 @@
         "description": "Users without a Microsoft 365 Copilot license can now easily summarize emails in a single click, using Copilot chat. Users must have access to Copilot chat and pinning enabled to utilize. This change is coming to both Classic and New Outlook for Windows #newoutlookforwindows",
         "id": 498320,
         "locale": null,
-        "modified": "2025-09-05T22:15:55",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -79336,12 +80754,12 @@
         "description": "Authors of Viva Engage posts will be able to add multiple manually written translations to a single post.",
         "id": 478924,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "July CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -79721,10 +81139,10 @@
         "description": "AI citations analytics will help you track the usage of SP documents, news and pages through copilot and AI agents. You will be able to see how often a page or a file is referenced in a copilot response. You can also get insights into SharePoint site content getting referenced in copilot responses aggregated at the site level.\n",
         "id": 480725,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -79739,6 +81157,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -79760,6 +81181,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -99334,15 +100758,15 @@
     },
     {
         "created": "2024-09-30T23:30:14",
-        "description": "The Teams app usage report will be renamed to the Integrated Apps usage report and redesigned with new metrics and charts. These will provide insights into apps enabled for Teams, Outlook, Microsoft 365 apps, and Microsoft 365 Copilot (Copilot extensions) in your organization. The report will feature two sections: App Usage and User Activity. Insights will be organized by Publishing Type (Line-of-business apps, Microsoft partner apps, and Microsoft apps), Host Product (Teams, Microsoft 365 app, Outlook, Copilot), and Platform (Desktop, Mobile, Web). Additionally, the report will include views of app and user details. #copilotcontrolsystem",
+        "description": "The Teams app usage report will be renamed to the Integrated Apps usage report and redesigned with new metrics and charts. These will provide insights into apps enabled for Teams, Outlook, Microsoft 365 apps, and Microsoft 365 Copilot (Copilot extensions) in your organization. The report will feature two sections: App Usage and User Activity. Insights will be organized by Publishing Type (Line-of-business apps, Microsoft partner apps, and Microsoft apps), Host Product (Teams, Microsoft 365 app, Outlook, Copilot), and Platform (Desktop, Mobile, Web). Additionally, the report will include views of app and user details.  This feature is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.  #copilotcontrolsystem",
         "id": 410248,
         "locale": null,
-        "modified": "2025-09-11T00:00:04",
+        "modified": "2026-02-11T00:15:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
