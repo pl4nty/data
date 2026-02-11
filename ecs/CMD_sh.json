@@ -1260,6 +1260,7 @@
         "SubscriptionManagementServiceDatabaseQueryIterationDelay": true,
         "SupportFLSCloudPcPerformanceReporting": true,
         "SupportSearchByConnectedUser": true,
+        "Support_BCDR_EUDB": true,
         "SwitchChangeNotificationEnqueue": true,
         "SwitchGetSharedCloudPCInternalEndpoint": false,
         "SwitchToGroupService": true,
