@@ -78717,55 +78717,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Audio summary of your file "
     },
     {
-        "created": "2025-02-21T23:16:02",
-        "description": "Easily locate your Copilot Chat sessions with LLM generated titles.",
-        "id": 388373,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): LLM generated titles for Copilot Chat sessions"
-    },
-    {
         "created": "2025-02-21T00:15:07",
         "description": "The Pro Management service and admin portal is now available for GCC High customer tenants.",
         "id": 482187,
@@ -89592,61 +89543,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Downgrade/remove sensitivity label"
-    },
-    {
-        "created": "2024-12-18T00:15:02",
-        "description": "The Copilot page in the Microsoft 365 admin center is the dedicated place for tools, insights, and resources for Copilot administration. The Copilot page will be updated with enhancements to the Overview section and we will be introducing a new Health section. The Overview section will be updated to include key success metrics and insights such as the active user rate, AI assistance score, Copilot assisted hours, and user sentiment.",
-        "id": 472918,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 admin center: Enhancements to Copilot admin page"
     },
     {
         "created": "2024-12-20T00:00:02",
@@ -101343,67 +101239,6 @@
         "title": "Microsoft Purview compliance portal: Audit - New filters in Audit Search"
     },
     {
-        "created": "2024-04-01T21:30:42",
-        "description": "With so many of us in back-to-back meetings, it can be a real struggle to stay on top of pre-reads, action items, and even what each meeting is about. Copilot can identify and summarize the key points so you can show up prepared in just a few minutes. When you open an upcoming meeting that has a summary available, click on \"Prepare\" and get a detailed briefing of your meeting leveraging the power of the Microsoft Graph. Now you have all the most important details you need and can arrive prepared and ready to engage in a productive conversation. This feature will be available in the new Outlook for Windows and web. #newoutlookforwindows",
-        "id": 374723,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Prepare for Meetings with Copilot in the new Outlook for Windows and web"
-    },
-    {
         "created": "2023-11-28T02:13:58",
         "description": "<div>We are introducing a new people experiences category in Adoption Score in the Microsoft 365 admin center. The new category helps organizations understand the adoption Microsoft Copilot features in Microsoft 365. </div>",
         "id": 185700,
@@ -102434,67 +102269,6 @@
             ]
         },
         "title": "Microsoft 365 app: Microsoft Loop - Admin usage reports for Loop"
-    },
-    {
-        "created": "2024-09-27T22:45:32",
-        "description": "Authoring Copilot in SharePoint combines the power of Large Language Models (LLMs), your data in the Microsoft Graph, and best practices to create engaging new web pages. It can utilize built-in templates or custom templates from your organization, along with existing documents as grounding data, to generate high-quality page content. All of this is achieved while upholding our commitment to data security and privacy in the enterprise.",
-        "id": 418126,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: Authoring Copilot in SharePoint"
     },
     {
         "created": "2024-10-28T17:00:31",
@@ -109348,55 +109122,6 @@
         "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Enhanced content extraction and file type coverage for DLP on Windows devices"
     },
     {
-        "created": "2024-09-12T00:00:50",
-        "description": "Project for the web and Roadmap features are rolling out to Project GGCH customers.",
-        "id": 416299,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Project"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Project"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Project: Project for the web and Roadmap for GCCH"
-    },
-    {
         "created": "2024-09-23T23:30:03",
         "description": "With this capability, OneDrive users can open PDF files that are protected with Microsoft Purview Information Protection sensitivity labels and read them using OneDrive web in read-only mode. Only authorized users will be able to access these PDF files.",
         "id": 416077,
@@ -112676,73 +112401,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Engage \u2013 Engage content surfacing in Copilot results"
-    },
-    {
-        "created": "2024-08-06T00:00:26",
-        "description": "Viva Engage questions from communities, storyline, and Answers will surface in Copilot results.",
-        "id": 408166,
-        "locale": null,
-        "modified": "2025-04-10T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Engage \u2013 Questions surfacing in Copilot results"
     },
     {
         "created": "2024-08-06T00:00:26",
