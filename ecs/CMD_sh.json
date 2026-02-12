@@ -1268,7 +1268,7 @@
         "SupportSearchByConnectedUser": true,
         "Support_BCDR_EUDB": true,
         "SwitchChangeNotificationEnqueue": true,
-        "SwitchGetSharedCloudPCInternalEndpoint": false,
+        "SwitchGetSharedCloudPCInternalEndpoint": true,
         "SwitchToGroupService": true,
         "SwitchToKronoxPublicApi": true,
         "SyncAMSVersionEntity": true,
