@@ -152,8 +152,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260209.9.0",
-        "CalendarCompanionMsitVersion": "1.20260204.9.0",
+        "CalendarCompanionDFVersion": "1.20260210.8.0",
+        "CalendarCompanionMsitVersion": "1.20260207.1.0",
         "CalendarCompanionProdVersion": "1.20260131.9.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -202,7 +202,8 @@
                 "*.centro.core.microsoft",
                 "https://config.edge.skype.com",
                 "https://localcdn.centro-dev.com:*",
-                "https://petrol-int.office.microsoft.com"
+                "https://petrol-int.office.microsoft.com",
+                "https://autodiscover.*.com"
             ],
             "default-src": [
                 "'none'"
@@ -606,7 +607,6 @@
         "CmkTenantList": [
             "c27d9064-898a-49e6-a302-45537791c332"
         ],
-        "CosmicRolloutMode": null,
         "DecoratedProfileLookupBatchSize": 10,
         "DisableDisplayNameInConversationQuery": true,
         "DisableOutboundCancellationOnConfigurationCalls": true,
@@ -785,7 +785,6 @@
         "EnableConversationRecapAdvancedTelemetry": true,
         "EnableCopilotLicenseCheck": true,
         "EnableCopilotTuningGraphQl": true,
-        "EnableCosmicTmRouting": false,
         "EnableCustomDnsResolution": true,
         "EnableDistributedLockingForAadCalls": true,
         "EnableDummyInsights": false,
@@ -1985,7 +1984,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260210.4.0",
+        "PeopleInTaskbarDFVersion": "1.20260210.8.0",
         "PeopleInTaskbarMsitVersion": "1.20260128.9.0",
         "PeopleInTaskbarProdVersion": "1.20260120.8.0",
         "PeopleInTaskbarVersion": "1.20260120.8.0",
@@ -2123,6 +2122,7 @@
             ]
         },
         "enableBackgroundAuthOnHost_shared": 1,
+        "enableHostRingBuckets": 1,
         "freDialog_shared": 1,
         "freDialog_shared_variant": "freCompleteExperience",
         "hostRingBucket": "60",
