@@ -1,5 +1,579 @@
 [
     {
+        "created": "2026-02-12T00:15:53",
+        "description": "We\u2019re updating permissions to ensure that all roles with access to view DLP policies in Microsoft Purview can also run diagnostics on those policies. This change enhances visibility and empowers authorized users to troubleshoot and validate policy behavior more effectively.\nThe following roles will now have diagnostic access:\nOrganization Configuration\nView-Only Configuration\nCompliance Admin\nSecurity Admin\nSecurity Reader\nDLP Compliance Management\nView-Only DLP Compliance Management\nInsider Risk Management Admin\nInformation Protection Admin\nInformation Protection Analyst\nInformation Protection Investigator\nData Security AI Admin",
+        "id": 557192,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Enable DLP Diagnostics for All Roles with Purview DLP Policy Access"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Insider Risk Management is excited to announce the ability to preview content directly within an IRM alert without having to create a case. Users with appropriate permissions will be able to preview relevant files referenced directly within activity explorer in each alert.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
+        "id": 557189,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Insider Risk Management \u2013 Ability to preview content in Insider Risk Management Alerts"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Admins will be able to select hard delete configuration while setting up a priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
+        "id": 557188,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - Hard delete capability for OneDrive and SharePoint through secure priority cleanup workflows"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Edge for Business extends its capability to deliver Intune App Protection Policies via Intune MAM. Organizations are enabled to apply data loss prevention controls to Edge for Business profiles even on devices managed by another tenant. This capability enforces Intune MAM policies\u2014such as clipboard boundaries, watermarking, and protected downloads\u2014within the Edge work profile, ensuring sensitive data remains governed by your tenant. When enabled, downloads initiated in Edge are redirected to OneDrive for Business instead of local storage, and leak controls for screenshots and DevTools activate when data protection settings are applied. This approach secures cross-tenant scenarios like contractors or mergers without requiring additional apps or disrupting the end user experience.\n",
+        "id": 557187,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Cross Tenant Support using Intune MAM"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Meeting recordings now automatically inherit the meeting\u2019s sensitivity label. When label inheritance is enabled in sensitivity label policies, a labeled meeting applies the same label to its MP4 recording, ensuring access controls, data handling rules, and Copilot or agent responses based on transcripts consistently respect the meeting\u2019s sensitivity end to end.",
+        "id": 557178,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Sensitivity label inheritance for meeting recordings"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Agent Mode in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
+        "id": 557177,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "We're excited to bring M365 Copilot in OneDrive, a new unified Copilot chat experience designed to make working with your files simpler, smarter, and more seamless across Microsoft 365.",
+        "id": 557174,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Microsoft 365 Copilot in OneDrive"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "We\u2019ve simplified the app bar to help you focus on what matters. Apps are easier to scan in a cleaner View more apps list, the overflow menu is less cluttered, and you can choose to show or hide the app bar to create more space for your work.",
+        "id": 557169,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Simplified Teams app bar to create a cleaner and more focused experience."
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
+        "id": 555876,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create executive summary slides with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-12T00:15:53",
+        "description": "Agent Mode in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
+        "id": 499655,
+        "locale": null,
+        "modified": "2026-02-12T00:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Agent Mode in PowerPoint"
+    },
+    {
         "created": "2026-02-11T00:15:04",
         "description": "You can now reference webpages when creating a presentation with Agent Mode in PowerPoint.",
         "id": 555898,
@@ -1373,9 +1947,9 @@
         "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 553594,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2026,12 +2600,12 @@
         "description": "Now Copilot Search can return matching people for your broader people search queries. Allowing you to discover, disambiguate, and explore known and new people to contact. Discover Whether you're looking for people with a specific skill like \"Project leadership\" or \"Artificial Intelligence\" Copilot Search can help you explore potential contacts through the People data source. Disambiguate When there are multiple people matching in exact name, email, or alias Copilot Search will help you disambiguate through a new carousel on the main results page alongside other relevant results.",
         "id": 555240,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -3300,12 +3874,12 @@
         "description": "Copilot Search can now match on a person's department, and you can find/lookup all people in a given department when searching the people source directly. ",
         "id": 508527,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -5198,9 +5772,9 @@
         "description": "As with Teams Rooms on Windows, IT Admins can now set up Teams Rooms on Android to show dynamic signage content on the front-of-room display when the device is not in use for meetings or presentation. Configuration is available for tenant-wide and room-specific settings via the Teams Rooms Pro Management portal. The feature supports select third-party digital signage partners like Appspace and XOGO, and is included with Teams Rooms Pro.",
         "id": 548647,
         "locale": null,
-        "modified": "2026-01-23T00:15:29",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5296,9 +5870,9 @@
         "description": "With Teams Rooms on Android consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548652,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6071,12 +6645,12 @@
         "description": "People Skills is expanding AI powered skill inferencing to include Microsoft 365 E3 and E5 licensed users. Previously, AI powered skill inferencing was available only to Microsoft 365 Copilot and Microsoft Viva licensed users. With this update, admins will have the option to turn on AI powered skill inferencing for Microsoft 365 E3 / E5 licensed users directly in the Microsoft 365 admin center. AI powered skill inferencing uses AI to automatically identify and update skills on users\u2019 Microsoft 365 profiles based on their work activity from the Microsoft Graph. This control will be available to tenants with Copilot licenses.\n",
         "id": 548643,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8414,12 +8988,12 @@
         "description": "Available for Microsoft 365 subscribers without a Microsoft 365 Copilot license. Agent Mode is releasing to Copilot in Excel for the web, Windows and Mac, enabling users to build and edit workbooks with Copilot using multi-step workflows. When you're updating budgets, creating financial models, or analyzing data, Agent Mode uses Excel's most powerful tools like tables, charts, PivotTables, and formulas to help you get the job done.",
         "id": 543242,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9389,9 +9963,9 @@
         "description": "Edge for Business will soon help users quickly take contextual action on their open pages using contextual nudges attached to the Copilot icon in the toolbar",
         "id": 537284,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11415,9 +11989,9 @@
         "description": "Application Lifecycle Management Agent: This agent unifies the entire application lifecycle into one intelligent workflow\u2014replacing multiple\ndisconnected admin tasks with a single, guided experience. It automatically discovers unmanaged private apps using Global Secure Access telemetry, recommends onboarding them to Microsoft Entra, and handles setup with automated naming, tagging, and least-privilege scoping. After onboarding, the agent continuously monitors app usage and permissions, flags unused high privileged apps and proactively notifies owners with clear next steps via Teams or email. Using the data the agent has gathered, it suggests a phased disablement plan that admins can customize to their risk prioritization preferences.",
         "id": 536578,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12177,10 +12751,10 @@
         "description": "Earlier, permissions were synced only in the periodic full crawl which generally ha a default frequency of 1 day for most of the connectors. Now, we have support for doing permission syncs more frequently in an incremental way.\n",
         "id": 503570,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -17740,12 +18314,12 @@
         "description": "Earlier admins had to create new connections to adopt to the hierarchical permissions for ServiceNow Knowledge & Catalog Copilot Connectors as the edit capability was missing. Now, admins can easily edit their existing connections to switch between the permission handling option i.e. Simple vs Advanced to quickly adopt to the hierarchical permission feature.",
         "id": 505438,
         "locale": null,
-        "modified": "2025-11-07T00:30:39",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18535,12 +19109,12 @@
         "description": "Users will find an updated, streamlined UX flow within Copilot Notebooks.",
         "id": 516042,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19115,9 +19689,9 @@
         "description": "Highlight a sentence, paragraph, or table from the response and ask Copilot to work only on that selection. Get focused explanations, concise summaries, quick translations, or next steps for the exact passage you\u2019re reviewing\u2014no more over broad answers. Your selection is previewed in the prompt so you can edit before you send. It\u2019s a faster, more controlled way to get help right where you\u2019re working.",
         "id": 522616,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19581,15 +20155,15 @@
     },
     {
         "created": "2025-10-31T22:00:11",
-        "description": "Support connection edit of user mapping, query filter for SNow, Confluence, Salesforce, Jira connectors.",
+        "description": "Support connection edit of user mapping, query filter for ServiceNow",
         "id": 503590,
         "locale": null,
-        "modified": "2025-10-31T22:00:11",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19626,7 +20200,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Admins can now edit user mappings and query filters for connected tools like Jira, Confluence, and Salesforce"
+        "title": "Microsoft Copilot (Microsoft 365): Admins can now edit user mappings and query filters for ServiceNow Connector"
     },
     {
         "created": "2025-10-31T22:00:11",
@@ -21081,55 +21655,6 @@
             ]
         },
         "title": "Outlook: Support for Storing S/MIME Certificates in Contacts in New Outlook"
-    },
-    {
-        "created": "2025-10-24T22:00:49",
-        "description": "This feature is no longer accurate and being removed from the roadmap in favor of the functionality available in Agent Mode in Excel.\nJust type \u2018=\u2019 in the grid or formula bar, describe what formula you need in plain language, and Copilot instantly generates the right formula - right where you\u2019re already working. No need to open a task pane or switch context; stay in your natural formula workflow.",
-        "id": 518269,
-        "locale": null,
-        "modified": "2026-02-06T23:15:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Excel: Generate formulas directly in the grid with natural language"
     },
     {
         "created": "2025-10-24T22:00:49",
@@ -23495,12 +24020,12 @@
         "description": "Now you can filter your search as you type. Use person and source filters right in the Search box to refine results instantly. Get smart suggestions and see only what matters, all without leaving the box.\n1.\tWhen \u201cperson\u201d or \u201csource\u201d is typed, a list of relevant filter suggestions appears. This helps auto-complete the filter expression and enables effective pre-scoping.\n2.\tOnce filters are applied in the Search box, all subsequent suggestions are refined based on those filters.\n",
         "id": 508529,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25192,9 +25717,9 @@
         "description": "Users will now have access to their Copilot Notebooks on the web version of OneNote.",
         "id": 511797,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27771,12 +28296,12 @@
         "description": "New Create module within M365 Copilot App to access Word, Excel and PPT templates.",
         "id": 506847,
         "locale": null,
-        "modified": "2025-10-02T23:15:34",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -27820,9 +28345,9 @@
         "description": "Track user sentiment of Microsoft 365 Copilot. Understand how users perceive Copilot value by analyzing the breakdown of thumbs up and thumbs down ratings after Copilot interactions.  See trends over time and breakdowns by group.",
         "id": 496655,
         "locale": null,
-        "modified": "2025-12-19T00:15:46",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -39820,55 +40345,6 @@
     },
     {
         "created": "2025-07-30T23:15:18",
-        "description": "This item is no longer accurate and is being removed from the roadmap.\u00a0 We apologize for any inconvenience.",
-        "id": 498917,
-        "locale": null,
-        "modified": "2026-02-03T00:15:51",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Copilot in Pulse follow-ups for Glint surveys"
-    },
-    {
-        "created": "2025-07-30T23:15:18",
         "description": "Copilot Analytics users can now view metrics that reflect Copilot Chat (Work and Web) activity across Word, Excel, and PowerPoint. These updates reflect the latest addition of Copilot Chat to these apps to help users transition seamlessly between workflows and will be displayed alongside existing app chat metrics for continuity. The updated metrics are available in the Copilot Dashboard, the M365 Copilot Adoption and Impact PBI reports, with additional query support for all chat prompt metrics.",
         "id": 498913,
         "locale": null,
@@ -44807,12 +45283,12 @@
         "description": "Users will be able to search for and select Teams Channels in the Context IQ menu to help ground their prompts when using Copilot Chat.",
         "id": 429645,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46162,12 +46638,12 @@
         "description": "Copilot Chat can automatically create and open a Page side-by-side when it detects a relevant scenario, enabling instant editing, steering, and sharing.",
         "id": 497161,
         "locale": null,
-        "modified": "2025-11-20T00:00:17",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46657,140 +47133,6 @@
             ]
         },
         "title": "SharePoint: Site attestation"
-    },
-    {
-        "created": "2025-06-20T23:30:45",
-        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a Brief page based on your notebook content\u2014no prompt writing needed. Updated January 29, 2026: We are no longer moving forward with this release. We apologize for the inconvenience. ",
-        "id": 497134,
-        "locale": null,
-        "modified": "2026-01-30T00:15:33",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mobile"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mobile"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): 1-click to create a Brief page based on content in Copilot Notebook"
-    },
-    {
-        "created": "2025-06-20T23:30:45",
-        "description": "The 1-click page generation feature helps you complete tasks quickly. With a single click, Copilot creates a FAQ page based on your notebook content\u2014no prompt writing needed. Updated January 29, 2026: We are no longer moving forward with this release. We apologize for the inconvenience. ",
-        "id": 497133,
-        "locale": null,
-        "modified": "2026-01-30T00:15:33",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mobile"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mobile"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): 1-click to create a FAQ page based on content in Copilot Notebook"
     },
     {
         "created": "2025-06-20T23:30:45",
@@ -67272,12 +67614,12 @@
         "description": "Camera in our editor will be updated to a newer version with improved recording controls and command bar options.",
         "id": 488100,
         "locale": null,
-        "modified": "2025-04-02T21:15:43",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -67321,12 +67663,12 @@
         "description": "With Microsoft Clipchamp Windows widget, Windows 11 users will have a quick way to launch screen recording, camera recording and create video projects.",
         "id": 488099,
         "locale": null,
-        "modified": "2025-04-02T21:15:43",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -79109,55 +79451,6 @@
     },
     {
         "created": "2025-02-20T00:15:26",
-        "description": "Access permissions to learning content set in CSOD using Organizational Units are honored and reflected in Viva Learning. This item is no longer accurate. We apologize for any inconvenience.",
-        "id": 482186,
-        "locale": null,
-        "modified": "2026-02-04T00:15:25",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "December CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - CSOD permissions sync in Viva Learning"
-    },
-    {
-        "created": "2025-02-20T00:15:26",
         "description": "Intelligent meeting recap will be available in GCC High for impromptu calls and meetings, like those started from \u2018Meet now\u2019 and calls started from chat. You can easily browse the recording by speakers and topics, as well as access AI-generated notes, AI-generated tasks, and name mentions after the ad-hoc meeting ends. This capability will be available for users with a Teams Premium or M365 Copilot license.",
         "id": 481353,
         "locale": null,
@@ -82225,67 +82518,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Ability to export policy settings"
-    },
-    {
-        "created": "2025-02-05T00:15:53",
-        "description": "Users will be able to discover relevant internal SharePoint content seamlessly while searching within Viva Learning, ensuring they have access to all pertinent resources in one place. This item is no longer accurate. We apologize for any inconvenience",
-        "id": 479752,
-        "locale": null,
-        "modified": "2026-02-04T00:15:25",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - SharePoint results integration in Viva Learning Search"
     },
     {
         "created": "2025-02-05T00:15:53",
@@ -94280,61 +94512,6 @@
         "title": "Microsoft Teams: Shared call history for call delegation on Teams phone devices"
     },
     {
-        "created": "2024-09-23T23:30:03",
-        "description": "The Workday setup wizard will be modular and more intuitive going forward. This item is no longer accurate. We apologize for any inconvenience.",
-        "id": 414527,
-        "locale": null,
-        "modified": "2026-02-06T00:00:51",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Setup wizard UX improvements for Workday integration"
-    },
-    {
         "created": "2024-09-04T23:30:32",
         "description": "We are introducing flexibility on provider setup form where admins can sync data from specific dates for a provider instead of full data sync.",
         "id": 414523,
@@ -94388,61 +94565,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Learning - Sync provider data from a specific date range"
-    },
-    {
-        "created": "2024-09-04T23:30:32",
-        "description": "Customers can manually trigger sync for different data types on Manage providers in Viva Learning admin page. This item is no longer accurate. We apologize for any inconvenience.",
-        "id": 414522,
-        "locale": null,
-        "modified": "2026-02-06T00:00:51",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Manual sync trigger options for provider data"
     },
     {
         "created": "2024-08-08T23:15:13",
@@ -96064,55 +96186,6 @@
             ]
         },
         "title": "Microsoft 365 app: Use sensitivity labels in Microsoft 365 apps when connected experiences are disabled"
-    },
-    {
-        "created": "2023-09-21T07:00:00",
-        "description": "Users can filter content based on the proficiency level of the content - Beginner, Intermediate and Advanced. This item is no longer accurate. We apologize for any inconvenience.",
-        "id": 162947,
-        "locale": null,
-        "modified": "2026-02-04T00:15:25",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Proficiency level content filter"
     },
     {
         "created": "2024-12-10T00:15:43",
@@ -98381,12 +98454,12 @@
         "description": "We are adding support for sort by flag status, flag due date and flag start date.",
         "id": 416091,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -100651,55 +100724,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Graph Connectors in CIQ"
-    },
-    {
-        "created": "2024-09-30T23:30:14",
-        "description": "The Teams app usage report will be renamed to the Integrated Apps usage report and redesigned with new metrics and charts. These will provide insights into apps enabled for Teams, Outlook, Microsoft 365 apps, and Microsoft 365 Copilot (Copilot extensions) in your organization. The report will feature two sections: App Usage and User Activity. Insights will be organized by Publishing Type (Line-of-business apps, Microsoft partner apps, and Microsoft apps), Host Product (Teams, Microsoft 365 app, Outlook, Copilot), and Platform (Desktop, Mobile, Web). Additionally, the report will include views of app and user details.  This feature is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.  #copilotcontrolsystem",
-        "id": 410248,
-        "locale": null,
-        "modified": "2026-02-11T00:15:04",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 admin center: Usage reports - Integrated apps and Copilot extensions"
     },
     {
         "created": "2024-07-26T22:30:19",
@@ -110632,12 +110656,12 @@
         "description": "Auto-Expanding Archives are a component that provides customers the ability to grow their mailbox archives over the normal 100 GB quota limit.",
         "id": 395793,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-02-12T00:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -112096,67 +112120,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal:  Insider Risk Management - Security policy violations by risky users"
-    },
-    {
-        "created": "2024-08-16T22:30:02",
-        "description": "Current Learning Content details and Player page will be combined to give a more immersive consumption experience for users in Viva Learning. The update will impact all content details pages. This item is no longer accurate. We apologize for any inconvenience.",
-        "id": 412066,
-        "locale": null,
-        "modified": "2026-02-04T00:15:25",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "May CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Immersive Content Consumption Update"
     },
     {
         "created": "2024-08-01T23:15:01",
@@ -114761,67 +114724,6 @@
             ]
         },
         "title": "Microsoft Teams: Separate policies to control transcription for Town halls and Webinars"
-    },
-    {
-        "created": "2024-11-20T00:15:49",
-        "description": "This feature is no longer accurate and being removed from the roadmap because the functionality is available in Agent Mode in Excel.\nCreate with Copilot in Excel helps customers write prompts to generate tailored templates and tables, using multi-turn conversion to refine the table schema, formulas, and visuals.",
-        "id": 429873,
-        "locale": null,
-        "modified": "2026-02-06T23:15:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Create with Copilot in Excel generates templates and tables"
     },
     {
         "created": "2023-10-27T22:13:27",
