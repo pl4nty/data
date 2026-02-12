@@ -310,6 +310,7 @@
         "EnableCloudPcEncryptionTypeUX": true,
         "EnableCloudPcFrontlineConcurrencyScenario": true,
         "EnableCloudPcFrontlineInsufficientLicensesScenario": true,
+        "EnableCloudPcFrontlineInsufficientLicensesScenarioV2": true,
         "EnableCloudPcFrontlineSharedBulkActionDeviceValidation": true,
         "EnableCloudPcImageUploadScenarioV2": true,
         "EnableCloudPcInGracePeriodScenarioV2": true,
