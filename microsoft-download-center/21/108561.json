@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Dragon Copilot desktop",
+    "downloadDescription": "Dragon Copilot desktop 3.4.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dragon Copilot-US-3.4.1.1117.zip",
+            "url": "https://download.microsoft.com/download/daaeeb68-d788-4288-b552-e097b05c4059/Microsoft Dragon Copilot-US-3.4.1.1117.zip",
+            "size": "19364387",
+            "version": "3.4.1",
+            "datePublished": "2/13/2026 11:53:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dragon Copilot-US-3.4.1.1117.msi",
+            "url": "https://download.microsoft.com/download/daaeeb68-d788-4288-b552-e097b05c4059/Microsoft Dragon Copilot-US-3.4.1.1117.msi",
+            "size": "13123584",
+            "version": "3.4.1",
+            "datePublished": "2/13/2026 11:53:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-ca",
+            "name": "English (Canada)"
+        },
+        {
+            "cultureCode": "fr-ca",
+            "name": "French (Canada)"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-ie",
+            "name": "English (Ireland)"
+        },
+        {
+            "cultureCode": "nl-be",
+            "name": "Dutch (Belgium)"
+        },
+        {
+            "cultureCode": "fr-be",
+            "name": "French (Belgium)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-at",
+            "name": "German (Austria)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        }
+    ],
+    "detailsSection": "Microsoft Dragon Copilot is an AI clinical assistant that unifies natural language dictation, ambient speech technology, and extensible AI workflows to empower healthcare teams. Designed for role-based experiences, it streamlines documentation, surfaces key insights, and automates routine tasks across care settings. Built on Microsoft's secure, scalable architecture, Dragon Copilot helps organizations enhance clinical efficiency, improve patient outcomes, and support clinician wellbeing, delivering measurable impact across the healthcare ecosystem.<br/><br/>This Windows-based application can be installed using either a zip package or an MSI installer, depending on user preference and administrative access.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.4.1",
+    "detailsSection_file_name": [
+        "Microsoft Dragon Copilot-US-3.4.1.1117.zip",
+        "Microsoft Dragon Copilot-US-3.4.1.1117.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.5 MB",
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "2/13/2026",
+    "systemRequirementsSection": "For full software and hardware prerequisites, consult the official product <a href=\"https://learn.microsoft.com/industry/healthcare/dragon-copilot/installation/desktop#hardware-requirements\">documentation</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed installation instructions, see the product <a href=\"https://learn.microsoft.com/industry/healthcare/dragon-copilot/installation/desktop#step-1-install-the-desktop-app\">documentation</a>",
+    "additionalInformationSection": "To learn more about Dragon Copilot, visit Microsoft Dragon Copilot <a href=\"https://learn.microsoft.com/industry/healthcare/dragon-copilot/\">Portal</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108561",
+    "downloadPreload": true
+}
