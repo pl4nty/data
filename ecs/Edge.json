@@ -22,17 +22,6 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
-        "EdgeOnRampShowVersionWhatsNew": {
-            "enableFeatures": [
-                "msEdgeOnRampShowWhatsNew"
-            ],
-            "parameters": [
-                {
-                    "name": "Browser Version",
-                    "value": "144.0.0000.00"
-                }
-            ]
-        },
         "FeatureFlagRefactorExperiment": {
             "enableFeatures": [
                 "msNurturingFeatureFlagRefactor"
@@ -65,6 +54,17 @@
         }
     },
     "EdgeConfig": {
+        "EdgeOnRampShowVersionWhatsNew": {
+            "enableFeatures": [
+                "msEdgeOnRampShowWhatsNew"
+            ],
+            "parameters": [
+                {
+                    "name": "Browser Version",
+                    "value": "145.0.0000.00"
+                }
+            ]
+        },
         "EdgeSecureNetworkConfig": {
             "enableFeatures": [
                 "msVpnService"
