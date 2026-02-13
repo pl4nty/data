@@ -19,7 +19,7 @@ else
   return mp.CLEAN
 end
 local l_0_4 = (string.lower)(l_0_3)
-if (string.find)(l_0_4, " -wa ", 1, true) or (string.find)(l_0_4, " -ga ", 1, true) or (string.find)(l_0_4, " -gwa ", 1, true) or (string.find)(l_0_4, " -wga ", 1, true) or (string.find)(l_0_4, " -a ", 1, true) or (string.find)(l_0_4, " -g ", 1, true) or (string.find)(l_0_4, " -s ", 1, true) then
+if (string.find)(l_0_4, " -wa ", 1, true) or (string.find)(l_0_4, " -ga ", 1, true) or (string.find)(l_0_4, " -gwa ", 1, true) or (string.find)(l_0_4, " -wga ", 1, true) or (string.find)(l_0_4, " -a ", 1, true) or (string.find)(l_0_4, " -g ", 1, true) or (string.find)(l_0_4, " -w ", 1, true) or (string.find)(l_0_4, " -s ", 1, true) then
   TrackPidAndTechniqueBM("BM", "T1016", "Discovery_NetworkConfDiscovery_SecurityFindPass")
   return mp.INFECTED
 end
