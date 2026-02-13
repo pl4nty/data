@@ -959,6 +959,7 @@
         "SPA_REDIRECT_OPT_IWP": false,
         "SSO_IWP": true,
         "SW_IWP": true,
+        "ScheduleWindowsUpdateStop2HoursAfterStart": true,
         "SchedulerMultiLaneForV2": true,
         "SchedulerMultipleQueueOnSameCpc": true,
         "SchedulerRetireMultiLaneV1": true,

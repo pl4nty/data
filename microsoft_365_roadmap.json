@@ -1,5 +1,376 @@
 [
     {
+        "created": "2026-02-13T00:15:26",
+        "description": "The Microsoft Purview Data Loss Prevention policy to restrict Microsoft 365 Copilot processing sensitive files in Word, Excel, and PowerPoint will now apply regardless of file storage location. ",
+        "id": 557255,
+        "locale": null,
+        "modified": "2026-02-13T00:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Word"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                },
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Word"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention to prevent Microsoft 365 Copilot processing content with sensitivity labels supports all storage locations"
+    },
+    {
+        "created": "2026-02-13T00:15:26",
+        "description": "Enterprise preview provides a simpler way for admins to flight pre-release Edge builds to their users. To reduce friction and bolster usage, users will receive pre-release builds directly inside of their Stable Edge application. Admins can allow users to easily opt-out of the preview experience, using built-in rollback to switch between their pre-release and stable channels with ease. Microsoft 365 admin center users can configure the feature, view their flighting population, and receive personalized recommendations all in one place. ",
+        "id": 557185,
+        "locale": null,
+        "modified": "2026-02-13T00:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Validate Edge builds early with enterprise preview"
+    },
+    {
+        "created": "2026-02-13T00:15:26",
+        "description": "When you return to a conversation within a short duration of time, your selected tab, opened side panel, and layout are restored automatically, so you can keep working without resetting your workspace. In addition, returning to a Quick View within a short duration will restore your previously selected message. ",
+        "id": 557184,
+        "locale": null,
+        "modified": "2026-02-13T00:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Context preservation in Teams"
+    },
+    {
+        "created": "2026-02-13T00:15:26",
+        "description": "Introducing a new mode for Interpreter that enables consecutive interpretation for the entire meeting. When enabled, interpretation becomes a shared experience for everyone in the meeting, not just for private listening. This mode supports bidirectional translation between a selected language pair (e.g., English and Spanish).  ",
+        "id": 557180,
+        "locale": null,
+        "modified": "2026-02-13T00:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Consecutive mode for Interpreter"
+    },
+    {
+        "created": "2026-02-13T00:15:26",
+        "description": "To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.",
+        "id": 552598,
+        "locale": null,
+        "modified": "2026-02-13T00:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Improvements to site permissions user interfaces"
+    },
+    {
         "created": "2026-02-12T00:15:53",
         "description": "We\u2019re updating permissions to ensure that all roles with access to view DLP policies in Microsoft Purview can also run diagnostics on those policies. This change enhances visibility and empowers authorized users to troubleshoot and validate policy behavior more effectively.\nThe following roles will now have diagnostic access:\nOrganization Configuration\nView-Only Configuration\nCompliance Admin\nSecurity Admin\nSecurity Reader\nDLP Compliance Management\nView-Only DLP Compliance Management\nInsider Risk Management Admin\nInformation Protection Admin\nInformation Protection Analyst\nInformation Protection Investigator\nData Security AI Admin",
         "id": 557192,
@@ -419,9 +790,9 @@
         "description": "We\u2019ve simplified the app bar to help you focus on what matters. Apps are easier to scan in a cleaner View more apps list, the overflow menu is less cluttered, and you can choose to show or hide the app bar to create more space for your work.",
         "id": 557169,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -437,6 +808,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -458,6 +832,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -1733,7 +2110,7 @@
         "description": "Tenant admins can enable a meeting policy setting that generates 8 digit numeric-only passcodes for meetings organized by selected users/groups. Because numeric-only passcodes increase the risk of unauthorized access, enabling the setting displays a warning and requires explicit confirmation.",
         "id": 555858,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -1751,6 +2128,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -1772,6 +2152,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2118,7 +2501,7 @@
         "description": "Positioned at the top of the chat and channels list, quick views give users fast access to mentions, followed threads, and more. Users can choose when and how quick views are displayed \u2013 selecting \u201calways show,\u201d \u201calways hide,\u201d or \u201cshow only when unread\u201d \u2013 and can collapse the section at any time.",
         "id": 555856,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -2127,6 +2510,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -2154,6 +2546,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -5650,12 +6051,12 @@
         "description": "The tenant\u2011level process report provides eDiscovery administrators and managers with a centralized view of eDiscovery processes running across cases in the tenant\u2014or across the cases they have access to. It surfaces key details such as process type, status, duration, timestamps, and who initiated each process, enabling better operational oversight, faster issue triage, and clearer end\u2011to\u2011end visibility into eDiscovery activity.",
         "id": 551164,
         "locale": null,
-        "modified": "2026-01-23T23:00:31",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6700,12 +7101,12 @@
         "description": "We're introducing the ability to open and send OFT files (Outlook File Templates) on mobile. This feature allows users to view and open OFT files as a draft message, so users can easily resue their Outlook email templates. ",
         "id": 548642,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11666,9 +12067,9 @@
         "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
         "id": 536577,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13447,12 +13848,12 @@
         "description": "When creating an event, you can now book a workspace directly from the location field by searching or tapping Browse Workspaces. This feature is only available if you have workspace bookings enabled in settings and by your IT admin. ",
         "id": 529847,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14404,9 +14805,9 @@
         "description": "The Microsoft 365 Copilot browser extension for Chrome brings Copilot Chat and Search directly into the browser, enabling users to ask questions, summarize webpages, and search enterprise content without switching tabs. This improves productivity, reduces context switching, and provides secure, compliant in-browser AI assistance for Microsoft 365 users.",
         "id": 530577,
         "locale": null,
-        "modified": "2025-11-20T00:00:17",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16173,9 +16574,9 @@
         "description": "Planner in Outlook brings all your tasks, plans, and the new Project Manager agent directly into your inbox, so you can manage work where you already work.",
         "id": 513278,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18186,12 +18587,12 @@
         "description": "We are updating the toolbar when selecting multiple emails so you can customize the order and placement of the actions to suit your needs.",
         "id": 525365,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -18247,12 +18648,12 @@
         "description": "We are updating the toolbar when composing an email so you can customize the order and placement of the actions to suit your needs.",
         "id": 525364,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32841,7 +33242,7 @@
         "description": "Microsoft 365 will introduce new Graph API endpoints designed to empower IT administrators and developers with robust programmatic access to app and agent management across Copilot, Teams, Outlook, and other MetaOS hosts. \nKey Features: \n\u2022\tInventory API: Retrieve a comprehensive inventory of all apps and agents within your tenant, with advanced filtering by type (1P, 3P, LOB, Shared), host (Copilot, Outlook, Teams, Office), last updated date, and more. This enables bulk management, compliance checks, and streamlined governance for large organizations.  \n\u2022\tDetails API: Access detailed metadata for any specific app or agent, including availability, deployment status, supported hosts, creator information, version, sensitivity, categories, and capabilities (such as Graph connectors, knowledge sources, and plugin actions). This supports auditing, lifecycle management, and integration into existing IT workflows. #copilotcontrolsystem",
         "id": 502875,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -32889,7 +33290,7 @@
                 }
             ]
         },
-        "title": "Microsoft CoPilot (Microsoft 365): Microsoft Graph APIs for App & Agent Inventory and Details. "
+        "title": "Microsoft Copilot (Microsoft 365): Microsoft Graph APIs for App & Agent Inventory and Details. "
     },
     {
         "created": "2025-09-09T23:15:14",
@@ -49740,15 +50141,15 @@
     },
     {
         "created": "2025-06-05T23:00:34",
-        "description": "Copilot makes it easy to identify high-priority emails and emails that need a reply, by offering a priority view directly within your Outlook inbox.",
+        "description": "Copilot makes it easy to identify high-priority emails and emails that need a reply, by offering a priority view directly within your Outlook inbox. Updated February 4, 2026: This feature has been removed from outlook for iOS and Android in response to user feedback and costs. We apologize for any inconvenience.",
         "id": 495261,
         "locale": null,
-        "modified": "2025-07-23T23:00:18",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -84728,9 +85129,9 @@
         "description": "This backend change will now address the 'separation of attendee' invites from the events crew. This feature allows the organizers of Townhalls to maintain separate invites for attendees.",
         "id": 476488,
         "locale": null,
-        "modified": "2025-09-17T23:00:20",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103355,18 +103756,15 @@
         "description": "This aligns the capture experience in camera and editor by enabling a seamless switch to the Clipchamp editor to make videos more appealing and impactful using advanced edit capabilities.",
         "id": 468293,
         "locale": null,
-        "modified": "2025-06-19T23:00:45",
+        "modified": "2026-02-13T00:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
             },
             {
                 "tagName": "Web"
@@ -103382,9 +103780,6 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
                 }
             ],
             "platforms": [
