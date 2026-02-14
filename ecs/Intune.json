@@ -301,7 +301,6 @@
             "DisablePermanentFailureOfSession": true,
             "EnableAPSyncRequestMessage": true,
             "EnableAcmeIncomingRequestValidation": true,
-            "EnableAppleACMEBYODEnrollment": true,
             "EnableGenerateAcmeNewNonce": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
