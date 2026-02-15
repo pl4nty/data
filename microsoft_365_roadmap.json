@@ -74333,67 +74333,6 @@
     },
     {
         "created": "2025-03-17T19:15:47",
-        "description": "This brings the editable Copilot Pages feature which is already shipped WW to the government environment. The pages feature enables users to add their M365 Copilot responses to a page where they can edit and share with others for collaboration. This happens right within the M365 Copilot app.",
-        "id": 485177,
-        "locale": null,
-        "modified": "2025-04-14T16:45:06",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds"
-    },
-    {
-        "created": "2025-03-17T19:15:47",
         "description": "When you are in meetings or calls, you will be able to pop out, drag, and resize live captions (including live translated captions), and real-time-text (RTT) from the main meeting window. This enables you to position the captions and RTT wherever you prefer on your screen, so you can easily focus on the meeting while viewing the incoming text in a position most comfortable for you.",
         "id": 484113,
         "locale": null,
