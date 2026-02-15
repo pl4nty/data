@@ -84235,67 +84235,6 @@
     },
     {
         "created": "2025-01-29T00:15:46",
-        "description": "Data classification on files in macOS devices will be triggered when handing files on read access to improve classification operations. ",
-        "id": 478930,
-        "locale": null,
-        "modified": "2025-04-14T23:15:33",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Classification improvements on file read access in macOS devices using Endpoint Data Loss Prevention"
-    },
-    {
-        "created": "2025-01-29T00:15:46",
         "description": "IT Administrators can now monitor Teams client version update adoption and access detailed adoption information. This feature enables administrators to proactively understand version adoption, assess version health, and access granular details about devices and users who are on the latest client versions. Additionally, it provides visibility on recency of client versions. Administrators can now proactively view insights and address issues preventing users from automatically updating to the latest and most secure version of the Teams client.",
         "id": 478609,
         "locale": null,
@@ -105436,61 +105375,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Microsoft Purview Endpoint DLP blanket protections for unscannable file types"
-    },
-    {
-        "created": "2024-11-05T00:30:50",
-        "description": "You can use Endpoint data loss prevention (DLP) just-in-time (JIT) protection to block all egress activities on monitored files while waiting for policy evaluation to successfully complete.\n\nWhen JIT protection is enabled, and while policy evaluation is processing, Endpoint DLP blocks all egress activities for each user whose account is in the selected scope. Endpoint DLP audits the egress activities for all user accounts that have been excluded (via the Exclude setting) or are otherwise not in scope.",
-        "id": 417161,
-        "locale": null,
-        "modified": "2025-04-14T23:15:33",
-        "moreInfoLink": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit?view=o365-worldwide",
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Just-in-time support on MacOS"
     },
     {
         "created": "2024-09-30T23:30:14",
