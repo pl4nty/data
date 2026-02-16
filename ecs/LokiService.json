@@ -1990,7 +1990,7 @@
         "PeopleInTaskbarDFVersion": "1.20260214.9.0",
         "PeopleInTaskbarMsitVersion": "1.20260207.1.0",
         "PeopleInTaskbarProdVersion": "1.20260120.8.0",
-        "PeopleInTaskbarVersion": "1.20260120.8.0",
+        "PeopleInTaskbarVersion": "1.20260128.9.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
@@ -2132,6 +2132,7 @@
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "nonLocalizedAppName_shared": 1,
+        "reduceSearchResults": 1,
         "refactorFeedbackConfig_shared ": 1,
         "samplingConfig": {
             "Event": {
