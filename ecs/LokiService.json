@@ -152,7 +152,7 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260211.8.0",
+        "CalendarCompanionDFVersion": "1.20260214.9.0",
         "CalendarCompanionMsitVersion": "1.20260207.1.0",
         "CalendarCompanionProdVersion": "1.20260131.9.1",
         "CompanionRing": "Prod",
@@ -316,6 +316,7 @@
         "copilotAppHandoff_shared": 1,
         "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckTeamsLicense_shared": 0,
+        "enableHostRingBuckets": 1,
         "exponentialBackoff": {
             "maxIntervalInSeconds": 86400,
             "rate": 1.5
@@ -1981,11 +1982,12 @@
         "isQuickNavigationActionsEnabled": true,
         "isReportsCountEnabled": true,
         "isVivaSkillsFilteringEnabled": true,
-        "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
+        "ocvAppId": "2952",
+        "privacyUrl": "https://aka.ms/dpn"
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260210.8.0",
+        "PeopleInTaskbarDFVersion": "1.20260214.9.0",
         "PeopleInTaskbarMsitVersion": "1.20260207.1.0",
         "PeopleInTaskbarProdVersion": "1.20260120.8.0",
         "PeopleInTaskbarVersion": "1.20260120.8.0",
