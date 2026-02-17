@@ -152,8 +152,8 @@
         }
     },
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260214.9.0",
-        "CalendarCompanionMsitVersion": "1.20260207.1.0",
+        "CalendarCompanionDFVersion": "1.20260214.12.0",
+        "CalendarCompanionMsitVersion": "1.20260211.8.0",
         "CalendarCompanionProdVersion": "1.20260131.9.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -317,6 +317,7 @@
         "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckTeamsLicense_shared": 0,
         "enableHostRingBuckets": 1,
+        "enableSharedRoutes_shared": true,
         "exponentialBackoff": {
             "maxIntervalInSeconds": 86400,
             "rate": 1.5
@@ -1987,7 +1988,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260214.9.0",
+        "PeopleInTaskbarDFVersion": "1.20260214.12.0",
         "PeopleInTaskbarMsitVersion": "1.20260207.1.0",
         "PeopleInTaskbarProdVersion": "1.20260120.8.0",
         "PeopleInTaskbarVersion": "1.20260128.9.0",
