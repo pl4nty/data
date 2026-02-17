@@ -1161,7 +1161,9 @@
             "SkillsSearchSuggestionsQuery",
             "useSkillActionMutation",
             "SkillsSnapshotBodyRefetchQuery",
-            "subscribeToNotificationsQuery"
+            "subscribeToNotificationsQuery",
+            "PersonViewContentQuery",
+            "PersonViewHeaderContentQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1666,6 +1668,7 @@
         "SydneyProviderAllowList_ProviderTypes": [
             "GenerateAiAboutMeProvider"
         ],
+        "TrimDsApiSecurityContext": true,
         "UpcomingMeetingDataProviderConfig": {
             "DaysToLoad": 30,
             "RunSequentially": true
