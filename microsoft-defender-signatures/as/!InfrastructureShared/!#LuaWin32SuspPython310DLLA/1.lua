@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
+if not (mp.get_mpattribute)("HSTR:Win32/Python310DLL") and not (mp.get_mpattribute)("Lua:FnameAttr!python310.dll") then
+  return mp.CLEAN
+end
 if not (mp.get_mpattribute)("Lua:Context/FileExportCountGTE!50") then
   return mp.CLEAN
 end
@@ -50,27 +53,27 @@ for l_0_8,l_0_9 in pairs(l_0_2) do
                 l_0_3 = true
                 ;
                 (mp.set_mpattribute)(l_0_17)
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC118: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC133: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
