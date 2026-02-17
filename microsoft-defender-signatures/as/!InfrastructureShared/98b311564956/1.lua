@@ -14,6 +14,9 @@ do
   return false
 end
 
+    if (string.find)(l_0_0, "/Users/Shared/.com.googlecode.munki.", 1, true) then
+      return mp.CLEAN
+    end
     if ExtendedSuspMacPathsToMonitor(l_0_0) then
       if (sysio.IsFileExists)(l_0_0) then
         (bm.add_threat_file)(l_0_0)
