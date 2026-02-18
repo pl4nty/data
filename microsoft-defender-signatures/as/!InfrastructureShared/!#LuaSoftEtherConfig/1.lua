@@ -23,12 +23,11 @@ report_scpt = function(l_1_0, l_1_1)
     if #l_1_3 > 0 then
       (table.sort)(l_1_3)
       local l_1_10 = (table.concat)(l_1_3, ":")
-      if #l_1_10 <= 128 then
-        (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. l_1_10)
-        ;
-        (mp.ReportLowfi)((mp.getfilename)(), l_1_1)
-        return true
-      end
+      ;
+      (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. l_1_10:sub(1, 64))
+      ;
+      (mp.ReportLowfi)((mp.getfilename)(), l_1_1)
+      return true
     end
   end
 end
