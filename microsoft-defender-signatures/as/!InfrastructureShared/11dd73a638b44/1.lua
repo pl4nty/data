@@ -33,7 +33,7 @@ if l_0_0 ~= nil then
   end
   l_0_5 = (string.lower)(l_0_5)
   l_0_5 = (string.gsub)(l_0_5, "%^", "")
-  if (string.find)(l_0_5, "iwr ", 1, true) or (string.find)(l_0_5, "iwr(", 1, true) or (string.find)(l_0_5, "irm ", 1, true) or (string.find)(l_0_5, "irm(", 1, true) or (string.find)(l_0_5, "curl", 1, true) or (string.find)(l_0_5, "wget", 1, true) or (string.find)(l_0_5, "http", 1, true) or (string.find)(l_0_5, ".gettype(", 1, true) or (string.find)(l_0_5, ").content", 1, true) or (string.find)(l_0_5, "finger", 1, true) or (string.find)(l_0_5, " /c set ", 1, true) then
+  if (string.find)(l_0_5, "iwr ", 1, true) or (string.find)(l_0_5, "iwr(", 1, true) or (string.find)(l_0_5, "irm ", 1, true) or (string.find)(l_0_5, "irm(", 1, true) or (string.find)(l_0_5, "curl", 1, true) or (string.find)(l_0_5, "wget", 1, true) or (string.find)(l_0_5, "http", 1, true) or (string.find)(l_0_5, ".gettype(", 1, true) or (string.find)(l_0_5, ").content", 1, true) or (string.find)(l_0_5, "finger", 1, true) or (string.find)(l_0_5, "nslookup", 1, true) or (string.find)(l_0_5, " /c set ", 1, true) then
     return mp.INFECTED
   end
 end
