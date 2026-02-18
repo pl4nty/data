@@ -241,6 +241,7 @@
         "azureml://registries/azureml-openai-oss/models/gpt-oss-120b",
         "azureml://registries/azureml-openai-oss/models/gpt-oss-20b",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
+        "azureml://registries/azureml-anthropic/models/claude-sonnet-4-6",
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-5",
@@ -470,7 +471,8 @@
             "flux.2-pro"
         ],
         "supportedMistralOcrModels": [
-            "mistral-document-ai-2505"
+            "mistral-document-ai-2505",
+            "mistral-document-ai-2512"
         ],
         "supportedRerankModels": [
             "cohere-rerank-v4.0-fast",

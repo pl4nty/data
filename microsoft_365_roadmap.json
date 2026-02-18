@@ -1,5 +1,549 @@
 [
     {
+        "created": "2026-02-18T00:00:38",
+        "description": "This feature introduces admin controls for managing Anthropic as a model provider for specific users and groups in the tenant. ",
+        "id": 557371,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] IT Admins will be able to enable Anthropic models by specific users and groups in the tenant"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "Customers can submit their custom Copilot agents built in Agent Builder to the Agent Store under the \"Built by your org\" section, after admin review and approval in M365 Admin Center. This governed flow enables admins to review, approve, and publish submitted agents so that they can be discovered and used by others in the Agent Store. This helps organizations share validated agents at scale while maintaining quality and governance.",
+        "id": 557173,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Submit agent to Agent Store from Agent Builder"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "The Microsoft Teams live chat widget lets customers engage in one to one conversations with your business directly from your website, and now also enables appointment scheduling.",
+        "id": 557172,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enable customers to book appointments from a live chat widget on your website"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "Teams Rooms on Windows proactively monitors room audio, video, and display signals to detect issues in meeting spaces. Teams Rooms Pro Management automatically remediates common issues that can be resolved through software, configuration changes, or device resets during nightly maintenance. This ensures users have reliable, ready-to-use meeting rooms, while IT admins benefit from reduced manual troubleshooting and increased uptime. Available for Teams Rooms Pro-licensed rooms.",
+        "id": 557167,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enhanced issue detection in Teams Rooms on Windows and auto-remediation with Teams Rooms Pro Management."
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping the design consistent.",
+        "id": 555880,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an attached PowerPoint deck\u2019s style when creating a new presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping formatting consistent.",
+        "id": 555879,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an attached PowerPoint deck\u2019s style when creating a new presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping formatting consistent.",
+        "id": 555878,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference an attached PowerPoint deck\u2019s style when creating a new presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "Resize the top video gallery in Teams meetings to see more people when content is being shared.\n",
+        "id": 554925,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Resizable Gallery in Teams Meetings"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "Enhancing comment reporting by using Copilot to develop customer-specific comment topics and keywords.",
+        "id": 553224,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Dynamic topics and keywords"
+    },
+    {
+        "created": "2026-02-18T00:00:38",
+        "description": "To empower organizations to run additional employee listening programs, like AI transformation or change management cases, we are creating a dedicated Survey Designer role. This role grants a user just enough permissions to run a Viva Glint survey without full access to platform settings and sensitive data, thus creating a more democratized platform. ",
+        "id": 548640,
+        "locale": null,
+        "modified": "2026-02-18T00:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Viva Glint - Survey Designer Role"
+    },
+    {
         "created": "2026-02-13T23:15:55",
         "description": "Infinite scroll enables users to continuously browse older chat sessions by automatically loading additional conversations as they scroll. This creates a smoother, more modern chat history experience",
         "id": 557348,
@@ -3971,7 +4515,7 @@
         "description": "Lightbox enhancements let users scroll through all previously shared images in a conversation, provide a clearer visual focus on the image being viewed, and add a header option that jumps directly to the original message where the image was posted.",
         "id": 554924,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -3980,6 +4524,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -4004,6 +4557,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -8036,12 +8598,12 @@
         "description": "This release brings the next evolution in immersive collaboration in Teams. Designed for creators and event organizers, these new capabilities empower users to create, manage, and use immersive templates for immersive events in Teams and save those templates to collections to use in future events\u2014directly within the Teams Meet app. Users can save customized immersive events as reusable templates to an immersive collection, and share them with others by adding co-owners and members to collections.",
         "id": 542794,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10670,12 +11232,12 @@
         "description": "Security admins with Defender for Office 365 Plan 1 and above can block external users from sending messages, calls, meetings invitation over Microsoft Teams via the Tenant Allow Block List in Microsoft Defender portal. Updated January 28, 2026: We are pausing rollout at this time as we address an ongoing issue. We apologize for any inconvenience. ",
         "id": 542189,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11654,12 +12216,12 @@
         "description": "We\u2019re excited to announce UX improvements to the DLP Alerts Portal in Purview to help you triage incidents faster and more efficiently. What\u2019s New: 1. Unified View: Events related to each alert are now available directly on the alerts page \u2014 no need to switch to new tab or drill down. 2. Faster Access: Access event details (e.g. Impacted assets) with just 1 click on the main alerts page itself, compared to 4 clicks earlier, reducing triage time significantly. 3. Enhanced Context: We've added 4 new columns - Location, DLP Rule name, DLP Policy name, Rule Action to display key alert and event attributes upfront \u2014 giving you more visibility at a glance. 4. Performance Boost: Cache improvements to ensure faster load times and a smoother experience. These updates are designed to streamline your workflow, reduce response times, and give you the context you need \u2014 all in a single, efficient view.\n",
         "id": 537275,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -12696,9 +13258,9 @@
         "description": "Enables effortless list creation for Copilot users through prompts, with intelligent schema generation and setup. This agent helps teams to quickly transform structured information and Copilot responses to Microsoft Lists.",
         "id": 534606,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13184,12 +13746,12 @@
         "description": "This feature provides additional languages support for AI generated audio overview of top 10 news items in the Viva Connections news reader experience. Additionally, if the SharePoint Knowledge Agent is available in a site, site pages and news posts will now have the AI audio summary experience.",
         "id": 535423,
         "locale": null,
-        "modified": "2026-01-23T00:15:29",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13269,12 +13831,12 @@
         "description": "Security admins with Defender for Office 365 Plan 1 can avail the benefits of end user reporting of Teams Messages",
         "id": 531760,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13635,9 +14197,9 @@
         "description": "Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode. ",
         "id": 530578,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15977,12 +16539,12 @@
         "description": "Queues app now supports shared history for all missed, incoming, and outgoing calls in a queue. This new feature provides greater visibility and collaboration by allowing users to view a complete call history across the team. Shared history can be enabled by your Teams admin, who can choose to grant access to either: All members of the queue, or  Only authorized users",
         "id": 530579,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17124,12 +17686,12 @@
         "description": "Python in Excel allows you to bring the capabilities of Python directly into the Excel grid. As a part of this feature, users will be able to add Python formulas directly into their workbooks without any installation required. These Python formulas will be run by Excel in a secure container on the Microsoft Cloud with enterprise-level security as a compliant Microsoft 365 connected experience.",
         "id": 526786,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -21006,9 +21568,9 @@
         "description": "Interact in real time with podcasts created by Copilot in Word. Today, audio summaries help you absorb content on the go, but they\u2019re one-way\u2014listeners can\u2019t clarify or explore without stopping. With this feature, you can ask questions with your voice while listening and get answers instantly, staying in the audio experience and understanding content faster.",
         "id": 523206,
         "locale": null,
-        "modified": "2026-01-23T00:15:29",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31797,9 +32359,9 @@
         "description": "Agents in Viva Engage communities supports communities by answering questions, facilitating knowledge sharing, citing sources, and scaling expertise.",
         "id": 499898,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32877,12 +33439,12 @@
         "description": "Customers can now customize their M365 profile cards by adding new properties such as Cost Center, Role, Employee Type, Employee ID and Division. These properties will show in the Contact Information section and can be ingested from external sources like HR systems, so that users' profiles are enriched with relevant information.",
         "id": 503111,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41134,9 +41696,9 @@
         "description": "Remotely access devices over the cloud without requiring end user involvement by signing in with credentials.",
         "id": 499154,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -50590,12 +51152,12 @@
         "description": "We\u2019re updating the Microsoft Edge profile flyout to deliver a cleaner, more intuitive experience. The refreshed design makes it easier to distinguish between work and personal profiles, manage credentials, and quickly access key settings\u2014all within a polished interface that supports modern browsing needs. With streamlined sign-in, clearer profile types, and organization branding preserved, this update enables a more efficient and trustworthy experience for customers.",
         "id": 495833,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-02-18T00:15:37",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -57295,12 +57857,12 @@
         "description": "We are adding more offline functionality in the new Outlook for Windows. You will now be able to create, edit, and delete events in your calendar when not connected to the internet. #newoutlookforwindows",
         "id": 490059,
         "locale": null,
-        "modified": "2025-11-08T00:00:04",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -69894,12 +70456,12 @@
     },
     {
         "created": "2025-03-28T00:30:57",
-        "description": "Admins will have the ability to set up rules for various scenarios, such as -\n\n1. Auto block risky agents.\n2. Auto publish agents that meet a criterion.\n3. Auto install agents that meet a criterion. \n\n. #copilotcontrolsystem\n",
+        "description": "Admins will have the ability to set up rules for various scenarios, such as -\n\n1. Auto block risky agents.\n2. Auto delete inactive agents.\n3. Auto reassign ownerless agents to manager. \n\n. #copilotcontrolsystem\n",
         "id": 481518,
         "locale": null,
-        "modified": "2025-10-28T23:15:02",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -74890,9 +75452,9 @@
         "description": "Viva Pulse authors can now work with M365 Copilot to add a question, rewrite a question, and create a survey from scratch to quickly create and send their surveys to their teams to collect feedback. M365 Copilot can seamlessly capture the author's needs to recommend survey questions that fit their unique scenario. #copilotcontrolsystem",
         "id": 484851,
         "locale": null,
-        "modified": "2025-09-11T00:00:04",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -111955,9 +112517,9 @@
         "description": "Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.",
         "id": 392328,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-02-18T00:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
