@@ -414,6 +414,7 @@
             "OverrideMAMActionStringKey": true,
             "RequireDeviceAADJ": true,
             "UseFireAndForgetFlight": true,
+            "UseGetAction": true,
             "UseMamConditionalAccessFirstPartyApplication": true,
             "UseMamConditionalAccessFirstPartyApplicationDisableFallback": true
         }
@@ -435,6 +436,7 @@
             "PRSv3-Phase3": true,
             "PRSv3-Phase4": true,
             "PRSv3-Phase5": true,
+            "PRSv3-Phase6": true,
             "PRSv3-Validation": true
         }
     },
@@ -510,6 +512,7 @@
     },
     "UX_DeviceConfig": {
         "FlightingV2": {
+            "AndroidDCv2ManagementModeFilter": true,
             "EnableDeviceExecutionStatusReportExportV2": true
         }
     },
