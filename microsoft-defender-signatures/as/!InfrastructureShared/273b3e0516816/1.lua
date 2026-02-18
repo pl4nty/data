@@ -11,7 +11,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
   if #l_0_0 < 32 then
     return mp.CLEAN
   end
-  if (string.find)(l_0_0, "\\\\tsclient\\", 1, true) or (string.find)(l_0_0, "d:\\", 1, true) or (string.find)(l_0_0, "claude.ai/install", 1, true) or (string.find)(l_0_0, "runpscommand", 1, true) then
+  if (string.find)(l_0_0, "\\\\tsclient\\", 1, true) or (string.find)(l_0_0, "d:\\", 1, true) or (string.find)(l_0_0, "claude.ai/install", 1, true) or (string.find)(l_0_0, "openclaw.ai/install", 1, true) or (string.find)(l_0_0, "runpscommand", 1, true) then
     return mp.CLEAN
   end
   l_0_0 = (string.gsub)(l_0_0, "\\1$", "")
