@@ -23,7 +23,7 @@ l_0_3 = (string.lower)(l_0_3)
 if #l_0_3 < 50 then
   return mp.CLEAN
 end
-if (MpCommon.StringRegExpSearch)("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_3) then
+if (MpCommon.StringRegExpSearch)("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|m[inimized]*)\\s+", l_0_3) then
   return mp.INFECTED
 end
 return mp.CLEAN

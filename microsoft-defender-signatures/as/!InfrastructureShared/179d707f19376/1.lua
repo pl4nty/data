@@ -77,7 +77,7 @@ l_0_9 = l_0_9(l_0_6, "powershell.exe")
 if l_0_9 then
   l_0_9 = MpCommon
   l_0_9 = l_0_9.StringRegExpSearch
-  l_0_9 = l_0_9("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|minimized)\\s+", l_0_7)
+  l_0_9 = l_0_9("(?i)[^\\w\\d\\s]w[indowstyle]*\\s+(?:h[iden]*|1|m[inimized]*)\\s+", l_0_7)
   local l_0_10 = nil
   if l_0_9 and (MpCommon.StringRegExpSearch)(l_0_4, l_0_3) then
     return mp.INFECTED
