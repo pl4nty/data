@@ -78048,55 +78048,6 @@
     },
     {
         "created": "2025-02-27T22:00:02",
-        "description": "Bringing Microsoft 365 Copilot GCC your AI assistant for work in the GCC environment. It combines the power of Large Language Models with your work content and context, to help you draft and rewrite, summarize and organize, catch up on what you missed, and get answers to questions via open prompts. Copilot generates answers using the rich, people-centric data and insights available in the Microsoft Graph. Microsoft 365 Copilot GCC is now available in Stream, SharePoint, OneNote, and Pages in Loop.",
-        "id": 483357,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): M365 Copilot for GCC Environments: Wave 2 "
-    },
-    {
-        "created": "2025-02-27T22:00:02",
         "description": "We have improved user options for sharing a link for a Teams app or a Microsoft 365 Copilot agent in a chat. Links to apps and agents will have a new preview card with user ratings for users to consider before installing apps or agents in Teams and clear actions like Add (which installs the app or agent) and View detail. A Microsoft 365 Copilot license is not required to share Copilot agent links but may be required to install and use the agent.",
         "id": 483356,
         "locale": null,
@@ -93434,79 +93385,6 @@
         "title": "Microsoft Teams: Sensitivity label support for town hall and webinars (Premium)"
     },
     {
-        "created": "2024-06-25T23:30:01",
-        "description": "Users can now embed Teams town halls in the SharePoint sites they manage. This capability allows town hall attendees to watch the event instance within a particular SharePoint site.",
-        "id": 401120,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": " Microsoft Teams: Embed Support for Teams town hall"
-    },
-    {
         "created": "2024-07-05T22:15:57",
         "description": "The latest Teams meetings experience with performance improvements will be available for anonymous users who join Teams meetings on web in Edge browser.",
         "id": 401117,
@@ -98736,79 +98614,6 @@
             ]
         },
         "title": "Microsoft Intune: Intune Suite - Endpoint Privilege Management on single session Azure Virtual Desktop"
-    },
-    {
-        "created": "2024-01-18T00:30:38",
-        "description": "Users can arrange folders in any desired order effortlessly by dragging and dropping the folders in the position that they want. #newoutlookforwindows",
-        "id": 378775,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Organize and reorder folders in the new Outlook for Windows and web"
     },
     {
         "created": "2024-12-02T18:00:37",
@@ -104847,61 +104652,6 @@
         "title": "Microsoft Viva: Viva Pulse - Pulse series for continuous feedback supporting AI transformations and change management"
     },
     {
-        "created": "2024-06-27T17:45:59",
-        "description": "This creates the new virtual printer\u2014OneNote (Desktop) - Protected\u2014for OneNote Windows app, built on top of the Microsoft IPP class print driver. This printer will be compliant and functional with Widows Protected Print (WPP) mode.",
-        "id": 402540,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "Current Channel"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "Current Channel"
-                },
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneNote: Windows app - New protected virtual printer"
-    },
-    {
         "created": "2024-06-11T23:30:01",
         "description": "The Copilot context menu will include an option for getting AI-generated coaching. Copilot will review the writing and offer suggestions for high-impact areas, such as logical structure, flow, and tone.",
         "id": 399923,
@@ -105663,55 +105413,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Downgrade/remove sensitivity label"
-    },
-    {
-        "created": "2024-11-06T00:30:44",
-        "description": "Purview Endpoint DLP supports a set of specific file extensions and types. For file extensions not listed in this document, customers must use the 'File extension is' or 'File type is' rule condition. However, this approach can be challenging, as it requires manually enumerate all desired file extensions. This feature will enable protection for files outside the standard Purview Endpoint DLP monitoring scope.",
-        "id": 464998,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about#monitored-files",
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Microsoft Purview Endpoint DLP blanket protections for unscannable file types"
     },
     {
         "created": "2024-09-30T23:30:14",
@@ -112139,79 +111840,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Microsoft Copilot with enterprise data protection"
-    },
-    {
-        "created": "2024-07-30T23:30:34",
-        "description": "We are adding two additional pre-configured quick policy templates for crown jewel protection and email exfiltration for admins that want to deploy scenario specific policy templates with little configurations needed to get started faster. These templates are in addition to the existing data leak and data theft quick policies. All 4 scenario based quick policies can be found in the Policies page> Create Policies. Additional tuning post deployment to meet individual alert volume needs can be expected. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. ",
-        "id": 409966,
-        "locale": null,
-        "modified": "2025-04-17T23:15:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management- New scenario based policy templates"
     },
     {
         "created": "2024-07-26T22:30:19",
