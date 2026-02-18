@@ -316,6 +316,8 @@
                 "id": "cdm-processors.vscode-cdm-extension"
             }
         },
+        "Iterative.dvc": true,
+        "Iterative.vscode-dvc-pack": true,
         "JITX.jitpcb-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -2222,6 +2224,9 @@
         "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
     },
     "malicious": [
+        "bl-vc-java.bl-tomcat",
+        "WhenSunset.chatgpt-china",
+        "zhukunpeng.chat-moss",
         "heartacker.git-graph-ai",
         "Med-H.git-graph-revamped",
         "betterthanalltime.calva-vscode",
