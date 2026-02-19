@@ -3151,4 +3151,19 @@ getCommandLineType = function(l_91_0)
   end
 end
 
+isKnownCleanPathContext = function(l_92_0)
+  -- function num : 0_91
+  if l_92_0 == nil or #l_92_0 <= 3 then
+    return 
+  end
+  l_92_0 = (string.lower)(normalize_path(l_92_0))
+  if (string.sub)(l_92_0, 1, 1) ~= "c" then
+    return true
+  end
+  if (string.find)(l_92_0, "\\program files", 1, true) ~= nil or (string.find)(l_92_0, "c:\\windows\\system32\\", 1, true) ~= nil or (string.find)(l_92_0, "c:\\windows\\syswow64\\", 1, true) ~= nil or (string.find)(l_92_0, "windows\\winsxs", 1, true) ~= nil or (string.find)(l_92_0, "windows\\assembly", 1, true) ~= nil or (string.find)(l_92_0, "windows\\microsoft.net", 1, true) ~= nil or (string.find)(l_92_0, "\\$windows.\\", 1, true) ~= nil or (string.find)(l_92_0, "\\windows.\\", 1, true) ~= nil or (string.find)(l_92_0, "\\winpe\\windows\\", 1, true) ~= nil or (string.find)(l_92_0, "\\$winreagent\\", 1, true) ~= nil or (string.find)(l_92_0, "\\bin", 1, true) ~= nil or (string.find)(l_92_0, "\\dev", 1, true) ~= nil or (string.find)(l_92_0, "\\drvsetup", 1, true) ~= nil or (string.find)(l_92_0, "\\lib\\", 1, true) ~= nil or (string.find)(l_92_0, "\\git\\", 1, true) ~= nil or (string.find)(l_92_0, "\\wintrv", 1, true) ~= nil or (string.find)(l_92_0, "\\x64", 1, true) ~= nil or (string.find)(l_92_0, "debug", 1, true) ~= nil or (string.find)(l_92_0, "release", 1, true) ~= nil or (string.find)(l_92_0, "\\sccmcontentlib\\filelib", 1, true) ~= nil then
+    return true
+  end
+  return false
+end
+
 
