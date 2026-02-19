@@ -443,6 +443,7 @@
     },
     "SVC_RACerts": {
         "FlightingV2": {
+            "BYPASS-DisallowingUnknownExtensions": false,
             "DigiCert_SMIME": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true
         }
