@@ -18,6 +18,9 @@
         },
         "ConfigLogTarget": "default"
     },
+    "GG-SkypeGraph": {
+        "ContentModeration": true
+    },
     "GroupCopilotBot": {
         "ProjectAgent": {
             "EnableSkipSendActivityInSignInInvoke": true
