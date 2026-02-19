@@ -1171,5 +1171,67 @@
         </DFProperties>
       </Node>
     </Node>
+    <Node>
+      <NodeName>SecureBoot</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>SecurebootCertificateUpdateStatus</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Returns the current state of the Secure Boot certificate updates on the device.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SecurebootCertificateUpdateError</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Returns the first error encountered during Secure Boot certificate update (if any). This error corresponds to the event log error that was logged.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+        </DFProperties>
+      </Node>
+    </Node>
   </Node>
 </MgmtTree>

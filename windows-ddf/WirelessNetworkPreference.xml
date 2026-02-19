@@ -7,7 +7,7 @@
   <MSFT:Diagnostics></MSFT:Diagnostics>
   <Node>
     <NodeName>WirelessNetworkPreference</NodeName>
-    <Path>./Device/Vendor/MSFT</Path>
+    <Path>./Vendor/MSFT</Path>
     <DFProperties>
       <AccessType>
         <Get />

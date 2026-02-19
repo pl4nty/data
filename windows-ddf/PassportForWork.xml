@@ -1564,11 +1564,11 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>ESS will be disabled on systems with capable software and hardware. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be disabled on systems with capable software and hardware. Authentication operations of non-ESS peripheral Windows Hello capable devices will be allowed, subject to current feature limitations.</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>ESS will be enabled on systems with capable software and hardware when the user's first biometric enrollment is created using an ESS biometric device, following the existing default behavior in Windows. Authentication operations of any non-ESS biometric device will be blocked and not available for Windows Hello.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
           <MSFT:GpMapping GpEnglishName="Enable ESS with Supported Peripherals" GpAreaPath="Passport~AT~WindowsComponents~MSPassportForWorkCategory" />

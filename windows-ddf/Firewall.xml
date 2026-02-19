@@ -327,8 +327,8 @@
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
-              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+              <MSFT:OsBuildVersion>10.0.26100.7019, 10.0.26200.7019</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.0</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
               <MSFT:Enum>
@@ -4384,7 +4384,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
               </DFType>
               <MSFT:Applicability>
                 <MSFT:OsBuildVersion>10.0.19045.2913, 10.0.22621.1635, 10.0.22000.1880</MSFT:OsBuildVersion>
-                <MSFT:CspVersion>1.1</MSFT:CspVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
               </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="RegEx">
                 <MSFT:Value>^[A-Za-z0-9_.:/]+$</MSFT:Value>

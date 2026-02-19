@@ -1499,7 +1499,7 @@ Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Educati
           <Get />
           <Replace />
         </AccessType>
-        <Description>Allows or disallows updating device during OOBE via NDUP. By default devices are allowed to update during OOBE.</Description>
+        <Description>Allows or disallows updating device during OOBE via NDUP. By default devices are not allowed to update during OOBE.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -1512,7 +1512,7 @@ Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Educati
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>1</DefaultValue>
+        <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
           <MSFT:CspVersion>9.9</MSFT:CspVersion>

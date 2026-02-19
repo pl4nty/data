@@ -342,6 +342,32 @@
               </MSFT:Applicability>
             </DFProperties>
           </Node>
+          <Node>
+            <NodeName>ErrorDetail</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Detailed error if the profile download and install procedure failed (None = 0, CardGeneralFailure = 1, ConfirmationCodeIncorrect = 2, ConfirmationCodeMissing = 3, ConfirmationCodeMaxRetriesExceeded = 4, ForbiddenByPolicy = 5, InvalidMatchingId = 6, NoEligibleProfileForThisDevice = 7, NotEnoughSpaceOnCard = 8, OperationAborted = 9, ProfileEidMismatch = 10, ProfileNotAvailableForNewBinding = 11, ProfileNotReleasedByOperator = 12, RemoteServerGeneralFailure = 13, RemoteServerUnreachable = 14, TimeoutWaitingForUserConsent = 15, OperationProhibitedByProfileClass = 16, ProvisioningProfileNotPresent = 17, NoCorrespondingRequest = 18, TimeoutWaitingForResponse = 19, IccidAlreadyExists = 20, ProfileProcessingError = 21, RemoteServerNotTrusted = 22, ProfileDownloadMaxRetriesExceeded = 23, WinhttpNameNotResolved = 24, WinhttpOperationCancelled = 25).</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
+            </DFProperties>
+          </Node>
         </Node>
       </Node>
       <Node>

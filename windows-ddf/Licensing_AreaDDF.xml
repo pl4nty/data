@@ -117,7 +117,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy is deprecated and will only work on Windows 10. Setting this policy will have no effect for other supported versions of Windows.                                 This policy enables or disables subscription check for Windows 10 Extended Security Updates. If enabled, the device will check for ESU subscription status of the signed-in AAD user account.</Description>
+        <Description>This policy will only work on Windows 10. Setting this policy will have no effect for other supported versions of Windows. This policy enables or disables subscription check for Windows 10 Extended Security Updates. If enabled, the device will check for ESU subscription status of the signed-in Microsoft Entra ID user account.</Description>
         <DFFormat>
           <int />
         </DFFormat>
