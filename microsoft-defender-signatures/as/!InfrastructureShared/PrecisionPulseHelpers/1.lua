@@ -188,15 +188,22 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
             l_1_47 = l_1_47[l_1_45]
             l_1_47.Exists = false
           end
-          l_1_47 = AppendToRollingQueueNamespaced
-          l_1_48 = "hmdprecisionpulsefullfilepathscan"
-          l_1_49 = l_1_2
-          l_1_47(l_1_48, l_1_49, l_1_45, 1, l_1_6, 500, 1)
-          l_1_47 = mp
-          l_1_47 = l_1_47.TriggerScanResource
-          l_1_48 = "file"
-          l_1_49 = l_1_45
-          l_1_47(l_1_48, l_1_49, 0, 5000)
+          l_1_47 = pcallEx
+          l_1_48 = "AppendToRollingQueueNamespaced"
+          l_1_49 = AppendToRollingQueueNamespaced
+          l_1_47 = l_1_47(l_1_48, l_1_49, "hmdprecisionpulsefullfilepathscan", l_1_2, l_1_45, 1, l_1_6, 500, 1)
+          if not l_1_47 then
+            l_1_49 = GetRollingQueueKeys
+            l_1_49 = l_1_49("LuaError")
+            -- DECOMPILER ERROR at PC292: Confused about usage of register: R27 in 'UnsetPending'
+
+            if l_1_49 and type(l_1_49) == "table" then
+              ((l_1_9.FullFilePathScan)[l_1_45]).RQErrors = safeJsonSerialize(l_1_49, 260)
+            end
+          end
+          l_1_49 = mp
+          l_1_49 = l_1_49.TriggerScanResource
+          l_1_49("file", l_1_45, 0, 5000)
         end
       end
       do
@@ -248,15 +255,15 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                 end
                 if l_1_27 ~= nil then
                   local l_1_71 = #l_1_27 + 2
-                  -- DECOMPILER ERROR at PC397: Confused about usage of register: R30 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC418: Confused about usage of register: R30 in 'UnsetPending'
 
                   ;
                   (l_1_9.FolderEnumeration)[l_1_27] = {}
-                  -- DECOMPILER ERROR at PC401: Confused about usage of register: R30 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC422: Confused about usage of register: R30 in 'UnsetPending'
 
                   ;
                   ((l_1_9.FolderEnumeration)[l_1_27]).Files = {}
-                  -- DECOMPILER ERROR at PC405: Confused about usage of register: R30 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC426: Confused about usage of register: R30 in 'UnsetPending'
 
                   ;
                   ((l_1_9.FolderEnumeration)[l_1_27]).Subfolders = {}
@@ -279,7 +286,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                       if l_1_60 then
                         local l_1_85 = l_1_8
                         local l_1_86 = (MpCommon.AtomicCounterAddNamespaced)(l_1_3, l_1_2, 1)
-                        -- DECOMPILER ERROR at PC462: Confused about usage of register: R40 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC483: Confused about usage of register: R40 in 'UnsetPending'
 
                         if l_1_85 <= l_1_86 then
                           ((l_1_9.FolderEnumeration)[l_1_27]).ExceededMaxScanCounter = true
@@ -336,7 +343,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                     end
                   end
                   AppendToRollingQueueNamespaced("hmdprecisionpulseenumeratefolder", l_1_2, l_1_27, 1, l_1_6, 500, 1)
-                  -- DECOMPILER ERROR at PC553: Confused about usage of register R34 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC574: Confused about usage of register R34 for local variables in 'ReleaseLocals'
 
                 end
               end
@@ -359,27 +366,27 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                 l_1_27 = (string.lower)((MpCommon.Base64Decode)(l_1_64))
                 if l_1_27 ~= nil then
                   local l_1_102 = nil
-                  -- DECOMPILER ERROR at PC584: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC605: Confused about usage of register: R25 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC588: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC609: Confused about usage of register: R25 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC592: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC613: Confused about usage of register: R25 in 'UnsetPending'
 
                   local l_1_103 = nil
                   local l_1_104 = nil
-                  -- DECOMPILER ERROR at PC603: Overwrote pending register: R27 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC624: Overwrote pending register: R27 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC604: Overwrote pending register: R27 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC625: Overwrote pending register: R27 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC606: Overwrote pending register: R28 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC627: Overwrote pending register: R28 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC607: Overwrote pending register: R28 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC628: Overwrote pending register: R28 in 'AssignReg'
 
                   if (sysio.RegEnumKeys)((sysio.RegOpenKey)(l_1_27)) ~= nil then
                     l_1_69(l_1_70, l_1_71)
-                    -- DECOMPILER ERROR at PC612: Overwrote pending register: R27 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC633: Overwrote pending register: R27 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC613: Overwrote pending register: R28 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC634: Overwrote pending register: R28 in 'AssignReg'
 
                     if (sysio.RegEnumValues)(l_1_69) ~= nil then
                       l_1_69 = l_1_69(l_1_70)
@@ -390,151 +397,151 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                         l_1_87 = (l_1_87((sysio.RegOpenKey)(l_1_27), l_1_95))
                         local l_1_110 = nil
                         local l_1_111 = nil
-                        -- DECOMPILER ERROR at PC624: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC645: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC625: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC646: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC632: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC653: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC633: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC654: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC634: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC655: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC637: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC658: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC638: Overwrote pending register: R34 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC659: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC639: Overwrote pending register: R35 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC660: Overwrote pending register: R35 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC640: Overwrote pending register: R35 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC661: Overwrote pending register: R35 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC641: Overwrote pending register: R35 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC662: Overwrote pending register: R35 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC642: Overwrote pending register: R35 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC663: Overwrote pending register: R35 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC643: Overwrote pending register: R36 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC664: Overwrote pending register: R36 in 'AssignReg'
 
                         if not l_1_95 then
                           l_1_98 = " (REG_SZ)"
-                          -- DECOMPILER ERROR at PC645: Overwrote pending register: R36 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC666: Overwrote pending register: R36 in 'AssignReg'
 
                           l_1_95(l_1_96, l_1_97)
-                          -- DECOMPILER ERROR at PC650: Overwrote pending register: R34 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC671: Overwrote pending register: R34 in 'AssignReg'
 
-                          -- DECOMPILER ERROR at PC651: Overwrote pending register: R34 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC672: Overwrote pending register: R34 in 'AssignReg'
 
-                          -- DECOMPILER ERROR at PC652: Overwrote pending register: R35 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC673: Overwrote pending register: R35 in 'AssignReg'
 
-                          -- DECOMPILER ERROR at PC653: Overwrote pending register: R36 in 'AssignReg'
+                          -- DECOMPILER ERROR at PC674: Overwrote pending register: R36 in 'AssignReg'
 
                           if l_1_87 == 2 then
                             l_1_95 = l_1_95(l_1_96, l_1_97)
-                            -- DECOMPILER ERROR at PC659: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC680: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC660: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC681: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC663: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC684: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC664: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC685: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC665: Overwrote pending register: R35 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC686: Overwrote pending register: R35 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC666: Overwrote pending register: R35 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC687: Overwrote pending register: R35 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC667: Overwrote pending register: R35 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC688: Overwrote pending register: R35 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC668: Overwrote pending register: R35 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC689: Overwrote pending register: R35 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC669: Overwrote pending register: R36 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC690: Overwrote pending register: R36 in 'AssignReg'
 
                             l_1_98 = " (REG_EXPAND_SZ)"
-                            -- DECOMPILER ERROR at PC671: Overwrote pending register: R36 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC692: Overwrote pending register: R36 in 'AssignReg'
 
                             l_1_95(l_1_96, l_1_97)
                           else
-                            -- DECOMPILER ERROR at PC676: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC697: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC677: Overwrote pending register: R34 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC698: Overwrote pending register: R34 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC678: Overwrote pending register: R35 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC699: Overwrote pending register: R35 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC679: Overwrote pending register: R36 in 'AssignReg'
+                            -- DECOMPILER ERROR at PC700: Overwrote pending register: R36 in 'AssignReg'
 
                             if l_1_87 == 3 then
                               l_1_95 = l_1_95(l_1_96, l_1_97)
-                              -- DECOMPILER ERROR at PC685: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC706: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC686: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC707: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC689: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC710: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC690: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC711: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC691: Overwrote pending register: R35 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC712: Overwrote pending register: R35 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC692: Overwrote pending register: R35 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC713: Overwrote pending register: R35 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC693: Overwrote pending register: R35 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC714: Overwrote pending register: R35 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC694: Overwrote pending register: R35 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC715: Overwrote pending register: R35 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC695: Overwrote pending register: R36 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC716: Overwrote pending register: R36 in 'AssignReg'
 
                               l_1_98 = " (REG_BINARY)"
-                              -- DECOMPILER ERROR at PC697: Overwrote pending register: R36 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC718: Overwrote pending register: R36 in 'AssignReg'
 
                               l_1_95(l_1_96, l_1_97)
                             else
-                              -- DECOMPILER ERROR at PC702: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC723: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC703: Overwrote pending register: R34 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC724: Overwrote pending register: R34 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC704: Overwrote pending register: R35 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC725: Overwrote pending register: R35 in 'AssignReg'
 
-                              -- DECOMPILER ERROR at PC705: Overwrote pending register: R36 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC726: Overwrote pending register: R36 in 'AssignReg'
 
                               if l_1_87 == 4 then
                                 l_1_95 = l_1_95(l_1_96, l_1_97)
-                                -- DECOMPILER ERROR at PC711: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC732: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC712: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC733: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC715: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC736: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC716: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC737: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC717: Overwrote pending register: R35 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC738: Overwrote pending register: R35 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC718: Overwrote pending register: R35 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC739: Overwrote pending register: R35 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC719: Overwrote pending register: R35 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC740: Overwrote pending register: R35 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC720: Overwrote pending register: R35 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC741: Overwrote pending register: R35 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC721: Overwrote pending register: R36 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC742: Overwrote pending register: R36 in 'AssignReg'
 
                                 l_1_98 = " (REG_DWORD)"
-                                -- DECOMPILER ERROR at PC723: Overwrote pending register: R36 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC744: Overwrote pending register: R36 in 'AssignReg'
 
                                 l_1_95(l_1_96, l_1_97)
                               else
-                                -- DECOMPILER ERROR at PC728: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC749: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC729: Overwrote pending register: R34 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC750: Overwrote pending register: R34 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC730: Overwrote pending register: R35 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC751: Overwrote pending register: R35 in 'AssignReg'
 
-                                -- DECOMPILER ERROR at PC731: Overwrote pending register: R36 in 'AssignReg'
+                                -- DECOMPILER ERROR at PC752: Overwrote pending register: R36 in 'AssignReg'
 
                                 if l_1_87 == 7 then
                                   l_1_95 = l_1_95(l_1_96, l_1_97)
-                                  -- DECOMPILER ERROR at PC737: Overwrote pending register: R34 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC758: Overwrote pending register: R34 in 'AssignReg'
 
-                                  -- DECOMPILER ERROR at PC738: Overwrote pending register: R34 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC759: Overwrote pending register: R34 in 'AssignReg'
 
-                                  -- DECOMPILER ERROR at PC741: Overwrote pending register: R34 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC762: Overwrote pending register: R34 in 'AssignReg'
 
-                                  -- DECOMPILER ERROR at PC742: Overwrote pending register: R35 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC763: Overwrote pending register: R35 in 'AssignReg'
 
                                   l_1_95 = l_1_95(l_1_96)
                                   for l_1_98,l_1_99 in l_1_95 do
@@ -551,42 +558,42 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                                     l_1_100(l_1_101, l_1_102)
                                   end
                                 else
-                                  -- DECOMPILER ERROR at PC762: Overwrote pending register: R35 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC783: Overwrote pending register: R35 in 'AssignReg'
 
-                                  -- DECOMPILER ERROR at PC763: Overwrote pending register: R36 in 'AssignReg'
+                                  -- DECOMPILER ERROR at PC784: Overwrote pending register: R36 in 'AssignReg'
 
-                                  -- DECOMPILER ERROR at PC772: Confused about usage of register: R34 in 'UnsetPending'
+                                  -- DECOMPILER ERROR at PC793: Confused about usage of register: R34 in 'UnsetPending'
 
                                   if not (sysio.GetRegValueAsQword)(l_1_96, l_1_97) then
                                     do
                                       (table.insert)((((l_1_9.RegkeyEnumeration)[l_1_27]).Values)[l_1_73], (l_1_87 ~= 11 or "Value not set") .. " (REG_QWORD)")
-                                      -- DECOMPILER ERROR at PC796: Confused about usage of register: R34 in 'UnsetPending'
+                                      -- DECOMPILER ERROR at PC817: Confused about usage of register: R34 in 'UnsetPending'
 
                                       ;
                                       (table.insert)((((l_1_9.RegkeyEnumeration)[l_1_27]).Values)[l_1_73], ((sysio.GetRegValueAsString)((sysio.RegOpenKey)(l_1_27), l_1_73) or "Value not set") .. " (UNKNOWN TYPE)")
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                      -- DECOMPILER ERROR at PC807: LeaveBlock: unexpected jumping out IF_STMT
+                                      -- DECOMPILER ERROR at PC828: LeaveBlock: unexpected jumping out IF_STMT
 
                                     end
                                   end
@@ -599,20 +606,20 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                     end
                   end
                   local l_1_117 = nil
-                  -- DECOMPILER ERROR at PC811: Overwrote pending register: R28 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC832: Overwrote pending register: R28 in 'AssignReg'
 
                   local l_1_118 = nil
                   do
                     local l_1_119 = nil
                     ;
                     (table.insert)(l_1_70, {enumerateregistrykey = l_1_27})
-                    -- DECOMPILER ERROR at PC815: Confused about usage of register R38 for local variables in 'ReleaseLocals'
+                    -- DECOMPILER ERROR at PC836: Confused about usage of register R38 for local variables in 'ReleaseLocals'
 
-                    -- DECOMPILER ERROR at PC815: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC815: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC815: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC836: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end
@@ -633,55 +640,55 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                   if #l_1_27 == 2 then
                     local l_1_127 = nil
                     local l_1_128 = nil
-                    -- DECOMPILER ERROR at PC851: Confused about usage of register: R26 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC872: Confused about usage of register: R26 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC854: Confused about usage of register: R24 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC875: Confused about usage of register: R24 in 'UnsetPending'
 
                     local l_1_129 = nil
                     if (sysio.RegOpenKey)(l_1_27[1]) ~= nil then
                       (mp.set_mpattribute)("/EnablePrecPulseScanner")
-                      -- DECOMPILER ERROR at PC865: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC886: Confused about usage of register: R24 in 'UnsetPending'
 
                       local l_1_130 = nil
                       AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyscan", l_1_2, (string.format)("%s\\\\%s", l_1_27[1], l_1_27[2]), l_1_87, l_1_6, 500, 1)
-                      -- DECOMPILER ERROR at PC882: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC903: Overwrote pending register: R32 in 'AssignReg'
 
                       local l_1_131, l_1_132 = nil
-                      -- DECOMPILER ERROR at PC887: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC908: Confused about usage of register: R24 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC887: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC908: Overwrote pending register: R32 in 'AssignReg'
 
                       ;
                       (mp.TriggerScanResource)("regkey", l_1_87)
-                      -- DECOMPILER ERROR at PC891: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC912: Overwrote pending register: R32 in 'AssignReg'
 
                       AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyvaluescan", l_1_87, (string.format)("%s\\\\%s", l_1_27[1], l_1_27[2]), 1, l_1_6, 500, 1)
-                      -- DECOMPILER ERROR at PC901: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC922: Overwrote pending register: R32 in 'AssignReg'
 
                       local l_1_133, l_1_134 = nil
-                      -- DECOMPILER ERROR at PC905: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC926: Overwrote pending register: R32 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC906: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC927: Overwrote pending register: R32 in 'AssignReg'
 
                       l_1_87("regkeyvalue", (string.format)("%s\\\\%s", l_1_27[1], l_1_27[2]))
                     else
-                      -- DECOMPILER ERROR at PC912: Confused about usage of register: R24 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC933: Confused about usage of register: R24 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC912: Confused about usage of register: R27 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC933: Confused about usage of register: R27 in 'UnsetPending'
 
                     end
                     local l_1_135 = nil
-                    -- DECOMPILER ERROR at PC915: Overwrote pending register: R28 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC936: Overwrote pending register: R28 in 'AssignReg'
 
                     local l_1_136 = nil
                     local l_1_137 = nil
-                    -- DECOMPILER ERROR at PC917: Confused about usage of register: R24 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC938: Confused about usage of register: R24 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC917: Overwrote pending register: R30 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC938: Overwrote pending register: R30 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC919: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC940: Confused about usage of register: R25 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC919: Overwrote pending register: R32 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC940: Overwrote pending register: R32 in 'AssignReg'
 
                     ;
                     (table.insert)(pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseregkeyscan", l_1_2, l_1_87), {deleteregistryvalue = pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_1_87, l_1_2, (string.format)("%s\\\\%s", l_1_27[1], l_1_27[2])) .. " " .. l_1_87})
@@ -730,7 +737,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
               l_1_59 = l_1_59(l_1_28)
               for l_1_145,l_1_146 in l_1_59 do
                 local l_1_142, l_1_143, l_1_144, l_1_145, l_1_146 = nil
-                -- DECOMPILER ERROR at PC987: Confused about usage of register: R21 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1008: Confused about usage of register: R21 in 'UnsetPending'
 
                 local l_1_147 = nil
                 if (MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid) then
@@ -739,11 +746,11 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                   local l_1_150 = nil
                   ;
                   (table.insert)(l_1_9.Processed, {firewall = (MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid)})
-                  -- DECOMPILER ERROR at PC1006: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1027: Confused about usage of register: R22 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1010: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1031: Confused about usage of register: R22 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1011: Confused about usage of register: R22 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1032: Confused about usage of register: R22 in 'UnsetPending'
 
                   if #explode((MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid), "_") == 3 then
                     local l_1_151 = nil
@@ -760,7 +767,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
               l_1_28 = l_1_28(l_1_27, ",")
               for l_1_160,l_1_161 in ipairs(l_1_28) do
                 local l_1_157, l_1_158, l_1_159, l_1_160, l_1_161 = nil
-                -- DECOMPILER ERROR at PC1047: Confused about usage of register: R21 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1068: Confused about usage of register: R21 in 'UnsetPending'
 
                 local l_1_162 = nil
                 local l_1_163 = nil
@@ -768,11 +775,11 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                 local l_1_165 = nil
                 ;
                 (table.insert)(l_1_9.Processed, {sinkholeDNS_data = (MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid)})
-                -- DECOMPILER ERROR at PC1065: Confused about usage of register: R22 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1086: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1069: Confused about usage of register: R22 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1090: Confused about usage of register: R22 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1071: Confused about usage of register: R22 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1092: Confused about usage of register: R22 in 'UnsetPending'
 
                 if (MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid) then
                   local l_1_166 = nil
@@ -787,7 +794,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
               l_1_28 = l_1_28(l_1_27, ",")
               for l_1_170,l_1_171 in ipairs(l_1_28) do
                 local l_1_167, l_1_168, l_1_169, l_1_170, l_1_171 = nil
-                -- DECOMPILER ERROR at PC1093: Confused about usage of register: R21 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1114: Confused about usage of register: R21 in 'UnsetPending'
 
                 local l_1_172 = nil
                 local l_1_173 = nil
@@ -811,7 +818,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
               local l_1_179 = nil
               for l_1_183,l_1_184 in ipairs(l_1_28) do
                 local l_1_180, l_1_181, l_1_182, l_1_183, l_1_184 = nil
-                -- DECOMPILER ERROR at PC1142: Confused about usage of register: R22 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1163: Confused about usage of register: R22 in 'UnsetPending'
 
                 local l_1_185 = nil
                 local l_1_186 = nil
@@ -821,70 +828,70 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
                 (table.insert)(l_1_9.Processed, {debug = (MpCommon.Base64Decode)(explode((MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid), "_"))})
                 for l_1_192,l_1_193 in ipairs((split((MpCommon.Base64Decode)(explode((MpCommon.Base64Decode)((((sysio.GetProcessFromFileName)(l_1_59 .. "svchost.exe"))[1]).pid), "_")), "_"))) do
                   local l_1_189, l_1_190, l_1_191, l_1_192, l_1_193 = nil
-                  -- DECOMPILER ERROR at PC1159: Overwrote pending register: R32 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1180: Overwrote pending register: R32 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1160: Confused about usage of register: R31 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1181: Confused about usage of register: R31 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1164: Overwrote pending register: R25 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1185: Overwrote pending register: R25 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1165: Confused about usage of register: R31 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1186: Confused about usage of register: R31 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1165: Overwrote pending register: R26 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1186: Overwrote pending register: R26 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1168: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1189: Confused about usage of register: R25 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1168: Overwrote pending register: R32 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1189: Overwrote pending register: R32 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1171: Overwrote pending register: R32 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1192: Overwrote pending register: R32 in 'AssignReg'
 
                   if nil == "PC" then
                     local l_1_194 = nil
-                    -- DECOMPILER ERROR at PC1176: Confused about usage of register: R26 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1197: Confused about usage of register: R26 in 'UnsetPending'
 
                   else
-                    -- DECOMPILER ERROR at PC1181: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1202: Confused about usage of register: R25 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1183: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1204: Confused about usage of register: R25 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1183: Overwrote pending register: R32 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1204: Overwrote pending register: R32 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1185: Confused about usage of register: R26 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1206: Confused about usage of register: R26 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1186: Overwrote pending register: R32 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1207: Overwrote pending register: R32 in 'AssignReg'
 
                     if nil == "PCNP" then
                       local l_1_195 = nil
-                      -- DECOMPILER ERROR at PC1191: Confused about usage of register: R26 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1212: Confused about usage of register: R26 in 'UnsetPending'
 
                     else
-                      -- DECOMPILER ERROR at PC1196: Confused about usage of register: R25 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1217: Confused about usage of register: R25 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC1198: Confused about usage of register: R25 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1219: Confused about usage of register: R25 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC1198: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC1219: Overwrote pending register: R32 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC1200: Confused about usage of register: R26 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1221: Confused about usage of register: R26 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC1201: Overwrote pending register: R32 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC1222: Overwrote pending register: R32 in 'AssignReg'
 
                       if nil == "RQ" then
                         local l_1_196 = nil
-                        -- DECOMPILER ERROR at PC1206: Confused about usage of register: R26 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC1227: Confused about usage of register: R26 in 'UnsetPending'
 
                       else
-                        -- DECOMPILER ERROR at PC1211: Confused about usage of register: R25 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC1232: Confused about usage of register: R25 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC1213: Confused about usage of register: R25 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC1234: Confused about usage of register: R25 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC1213: Overwrote pending register: R32 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1234: Overwrote pending register: R32 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1215: Confused about usage of register: R26 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC1236: Confused about usage of register: R26 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC1216: Overwrote pending register: R32 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1237: Overwrote pending register: R32 in 'AssignReg'
 
                         if nil == "AC" then
                           local l_1_197 = nil
-                          -- DECOMPILER ERROR at PC1221: Confused about usage of register: R26 in 'UnsetPending'
+                          -- DECOMPILER ERROR at PC1242: Confused about usage of register: R26 in 'UnsetPending'
 
                         end
                       end
@@ -898,7 +905,7 @@ EnablePrecisionPulse = function(l_1_0, l_1_1, l_1_2, l_1_3, l_1_4)
             l_1_10.report = safeJsonSerialize(l_1_9, 260)
             l_1_10.TAG = "NOLOOKUP"
             pcall(mp.GetUrlReputation, l_1_28, l_1_10)
-            -- DECOMPILER ERROR at PC1245: Confused about usage of register R37 for local variables in 'ReleaseLocals'
+            -- DECOMPILER ERROR at PC1266: Confused about usage of register R37 for local variables in 'ReleaseLocals'
 
             -- DECOMPILER ERROR: 57 unprocessed JMP targets
           end
