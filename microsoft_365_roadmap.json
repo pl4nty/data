@@ -1,5 +1,372 @@
 [
     {
+        "created": "2026-02-19T00:15:25",
+        "description": "Data Security Investigations (DSI) now further enhances its AI analysis tools, including the ability to choose between a standard categorization for potential time and/or cost savings or a more advanced categorization to include AI-generated topics. Additionally, we are making the DSI workflow faster by automatically preparing data for AI analysis as it is being added to the investigation, saving critical investigation time.",
+        "id": 557556,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 AI analysis enhancements"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.\n",
+        "id": 557554,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 File Testing Against Sensitive Information Classifiers"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "A new export functionality will be introduced in two locations: the Data Loss Prevention > Policies page and the Information Protection > Label publishing policies page. This feature will allow users to export their existing DLP configurations and label policies, including schema, as a downloadable ZIP file. The exported file can be attached to support tickets to accelerate troubleshooting. ",
+        "id": 557553,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Export DLP and Label Policy Configurations"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "When you apply a filter in the message list, Outlook for iOS now helps you search for all matching messages\u2014even older ones that aren\u2019t currently synced. If more results may be available, you can tap to run a search with the filter already applied.",
+        "id": 557350,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Improved results when filtering your message list"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "When you apply a filter in the message list, Outlook for iOS now helps you search for all matching messages\u2014even older ones that aren\u2019t currently synced. If more results may be available, you can tap to run a search with the filter already applied. ",
+        "id": 557349,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Improved results when filtering your message list"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "Use a prepaid capacity pack as the sole billing method for supported Copilot experiences. Admins can configure billing policies with prepaid capacity such that usage for users in the policy is deducted exclusively from prepaid capacity credits, with no pay as you go charges.",
+        "id": 557175,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365 admin center: Copilot - Billing and usage - Standalone consumption of prepaid capacity pack credits"
+    },
+    {
+        "created": "2026-02-19T00:15:25",
+        "description": "When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group.  You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.",
+        "id": 557165,
+        "locale": null,
+        "modified": "2026-02-19T00:15:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Chat for organizers and presenters in structured meetings and webinars on Teams Rooms on Windows"
+    },
+    {
         "created": "2026-02-18T00:00:38",
         "description": "This feature introduces admin controls for managing Anthropic as a model provider for specific users and groups in the tenant. ",
         "id": 557371,
@@ -395,7 +762,7 @@
         "description": "Resize the top video gallery in Teams meetings to see more people when content is being shared.\n",
         "id": 554925,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -416,6 +783,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -440,6 +810,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -6406,12 +6779,12 @@
         "description": "Microsoft Edge has improved how a Progressive Web App (PWA) handles user navigation. When a user clicks a link, the browser will determine whether it should launch the installed PWA or open a new browser tab to give users a more seamless experience.",
         "id": 551198,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6448,7 +6821,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Navigation management for Progress Web Apps"
+        "title": "Microsoft Edge: v.145 - Navigation management for Progress Web Apps"
     },
     {
         "created": "2026-01-28T00:00:53",
@@ -6812,10 +7185,10 @@
     },
     {
         "created": "2026-01-23T23:00:31",
-        "description": "Copilot in Viva Glint will use the same access controls as Microsoft 365 Copilot, streamlining how organizations manage AI features. This reduces setup complexity and helps more managers and leaders access AI\u2011powered insights from employee feedback in their everyday workflow. ",
+        "description": "Copilot in Viva Glint will align with Microsoft's enterprise AI governance platform: enabling your IT and compliance teams to use centralized governance tools for access management and unified monitoring and reporting across all AI deployments in your tenant. This reduces governance complexity and audit burden by providing a single control plane for managing AI features across Microsoft 365. This change removes the existing Copilot toggles in the Viva Glint admin UI, making Viva Feature Access Management (VFAM) the single control plane for Copilot enablement.",
         "id": 551197,
         "locale": null,
-        "modified": "2026-01-23T23:00:31",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -6857,7 +7230,7 @@
                 }
             ]
         },
-        "title": "Microsoft Viva: Simplified Glint Copilot enablement with Microsoft 365 controls "
+        "title": "Microsoft Viva: Enhanced AI governance for Glint Copilot "
     },
     {
         "created": "2026-01-23T23:00:31",
@@ -8152,12 +8525,12 @@
         "description": "Historical reporting within Queues app will now support 45 days of historical data. The report will default a 7-day range with ability to customize the reporting range with up to 45 days of history.",
         "id": 547825,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30566,12 +30939,12 @@
         "description": "Microsoft Edge will detect and revoke malicious sideloaded extensions.",
         "id": 503593,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30608,7 +30981,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Adding protection against malicious sideloaded extensions"
+        "title": "Microsoft Edge: v.145 - Adding protection against malicious sideloaded extensions"
     },
     {
         "created": "2025-09-25T23:15:43",
@@ -40691,12 +41064,12 @@
         "description": "Get relevant answers and insights about your open YouTube videos in Copilot Chat in Edge. ",
         "id": 499424,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42678,12 +43051,12 @@
         "description": "Microsoft Edge will expand its existing \u201cAsk Copilot\u201d integration in the built-in PDF reader by introducing two new actions \u2014 \u201cSummarize\u201d and \u201cExplain.\u201d These options will allow users to generate a concise overview or simplify complex content within a PDF or selected portion. The new actions build on the existing \u201cAsk Copilot\u201d integration and follow the same enterprise controls and policies.",
         "id": 498641,
         "locale": null,
-        "modified": "2026-01-09T23:15:50",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42720,7 +43093,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Add \u201cSummarize\u201d and \u201cExplain\u201d Copilot actions in PDF reader"
+        "title": "Microsoft Edge: v.145 - Add \u201cSummarize\u201d and \u201cExplain\u201d Copilot actions in PDF reader"
     },
     {
         "created": "2025-07-25T22:15:54",
@@ -43605,12 +43978,12 @@
         "description": "The Global Address List, or Address Book, is getting a major visual redesign to make it easier to navigate, show more contact information in the search results list, improve its accessibility, and improve its appearance overall. This window is accessible via the To/Cc/Bcc buttons in the email compose form. #newoutlookforwindows",
         "id": 498897,
         "locale": null,
-        "modified": "2025-10-06T23:00:40",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48145,9 +48518,9 @@
         "description": "Menus in Edge where the user has highlighted content in the browser will soon support a summarization, translation, and citation with Microsoft Copilot and Microsoft 365 Copilot Chat. ",
         "id": 497135,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49908,12 +50281,12 @@
         "description": "Microsoft 365 Copilot Chat in Edge will soon be able to answer contextual questions about a user's open window. This extends the existing capability which can only access the open page. All existing user settings and policies and DLP considerations will continue to be respected. ",
         "id": 496364,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51439,12 +51812,12 @@
         "description": "The new Workflows app is to provide an experience that is both simpler and faster to enable everyday Teams and SharePoint users to create automations in three steps or less. This item is still In Development for production release; we apologize for any inconvenience.",
         "id": 491632,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52306,12 +52679,12 @@
         "description": "Automatic spelling and grammar checking when composing an email message. Corrections are underlined on the draft, and clicking on them reveals suggested corrections.",
         "id": 495466,
         "locale": null,
-        "modified": "2025-10-29T23:00:59",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -75513,12 +75886,12 @@
         "description": "Users will be able to toggle a \"Reply to\" field in the email compose form, which will allow them to add one or multiple addresses which will be used as the recipients for any replies to that message. #newoutlookforwindows",
         "id": 483487,
         "locale": null,
-        "modified": "2025-04-29T23:15:05",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -77776,12 +78149,12 @@
         "description": "An \"External\" tag will be added to contact suggestions that appear in the dropdown when entering contacts in the email compose form in the new Outlook for Windows. #newoutlookforwindows",
         "id": 483488,
         "locale": null,
-        "modified": "2025-05-06T23:15:04",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -109547,9 +109920,9 @@
         "description": "Delegate access for mailbox and folders can be granted from the new Outlook app. Users will be able to view the permissions granted for a mailboxes and folders. #newoutlookforwindows",
         "id": 417063,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-02-19T00:15:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

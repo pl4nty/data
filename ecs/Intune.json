@@ -280,6 +280,7 @@
         "FlightingV2": {
             "AddAADDeviceIdToPolicyCompliance": true,
             "CalculationLatencyMetricV2Enabled": true,
+            "DeleteDPSBlob": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
             "EGM_UseRedisCache": true,
