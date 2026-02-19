@@ -7,9 +7,6 @@ local l_0_0 = tostring(headerpage) .. tostring(footerpage)
 l_0_0 = (string.lower)(l_0_0)
 local l_0_1 = nil
 local l_0_2 = (string.match)(l_0_0, "<conditions>.*publishername=\"(.-)\".*</conditions>")
-if l_0_2 and (string.find)(l_0_2, "microsoft", 1, true) then
-  l_0_1 = true
-end
 l_0_2 = (string.match)(l_0_0, "<conditions>.*path=\"(.-)\".*</conditions>")
 if l_0_2 and ((string.find)(l_0_2, "program files\\windows defender\\", 1, true) or (string.find)(l_0_2, "\\windows defender advanced threat protection", 1, true)) then
   l_0_1 = true

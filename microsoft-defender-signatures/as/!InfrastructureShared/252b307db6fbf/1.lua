@@ -21,15 +21,12 @@ do
     -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
 
     local l_0_4 = (string.lower)((this_sigattrlog[4]).utf8p2)
-    local l_0_5 = (string.match)(l_0_4, "<conditions>.*publishername=\"(.-)\".*</conditions>")
-    if l_0_5 and (string.find)(l_0_5, "microsoft", 1, true) then
-      l_0_5 = (string.match)(l_0_4, "<conditions>.*binaryname=\"(.-)\".*</conditions>")
-      if l_0_5 and isMDEBlockingPolicy(l_0_5) then
-        return mp.INFECTED
-      end
-    end
-    l_0_5 = (string.match)(l_0_4, "<conditions>.*path=\"(.-)\".*</conditions>")
+    local l_0_5 = (string.match)(l_0_4, "<conditions>.*path=\"(.-)\".*</conditions>")
     if l_0_5 and ((string.find)(l_0_5, "program files\\windows defender\\", 1, true) or (string.find)(l_0_5, "\\windows defender advanced threat protection", 1, true)) then
+      return mp.INFECTED
+    end
+    l_0_5 = (string.match)(l_0_4, "<conditions>.*binaryname=\"(.-)\".*</conditions>")
+    if l_0_5 and isMDEBlockingPolicy(l_0_5) then
       return mp.INFECTED
     end
     return mp.CLEAN
