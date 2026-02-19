@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DDF V2 Files Feb 2026",
+    "downloadDescription": "DDF V2 Files Feb 2026",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DDFV2Feb26.zip.zip",
+            "url": "https://download.microsoft.com/download/015bd9f5-9cca-4821-8a85-a4c5f9a5d0f2/DDFv2Feb2026.zip",
+            "size": "727650",
+            "version": "2602",
+            "datePublished": "2/19/2026 6:04:53 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DDF V2 Files Feb 2026 for MDM ISV",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2602",
+    "detailsSection_file_name": [
+        "DDFV2Feb26.zip.zip"
+    ],
+    "detailsSection_file_size": [
+        "710.6 KB"
+    ],
+    "detailsSection_file_date": "2/19/2026",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Access ZIP",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108563",
+    "downloadPreload": true
+}
