@@ -19,12 +19,18 @@ end
 local l_0_2 = {}
 local l_0_3 = {}
 l_0_3.ExportApi = "Py_Main"
-l_0_3.CleanCodeInit = 2213317461
+local l_0_4 = {}
+l_0_4[2213317461] = true
+l_0_4[1760330568] = true
+l_0_4[1222413132] = true
+l_0_4[1223459656] = true
+l_0_4[2202555200] = true
+l_0_3.CleanCodeInit = l_0_4
 l_0_3.CleanCodeSize = 42
 l_0_3.CleanCodeCrc32 = 2027010068
 l_0_2["1000-1300"] = l_0_3
 l_0_3 = false
-local l_0_4 = "Lua:Win32/SuspPython310DLL.A!"
+l_0_4 = "Lua:Win32/SuspPython310DLL.A!"
 local l_0_5 = 500
 for l_0_9,l_0_10 in pairs(l_0_2) do
   local l_0_11, l_0_12 = l_0_9:match("^(%d+)%s*%-%s*(%d+)$")
@@ -52,16 +58,17 @@ for l_0_9,l_0_10 in pairs(l_0_2) do
             local l_0_23 = (mp.readfile)(l_0_21, l_0_19)
             if l_0_23 ~= nil then
               local l_0_24 = l_0_4 .. (string.lower)(l_0_18)
-              if (mp.readu_u32)(l_0_23, 1) == l_0_22 then
-                local l_0_25 = (mp.crc32)(-1, l_0_23, 1, l_0_19)
-                local l_0_26 = l_0_10.CleanCodeCrc32
-                if l_0_25 ~= nil and l_0_26 ~= nil and l_0_25 ~= l_0_26 then
+              local l_0_25 = (mp.readu_u32)(l_0_23, 1)
+              if l_0_22[l_0_25] == true then
+                local l_0_26 = (mp.crc32)(-1, l_0_23, 1, l_0_19)
+                local l_0_27 = l_0_10.CleanCodeCrc32
+                if l_0_26 ~= nil and l_0_27 ~= nil and l_0_26 ~= l_0_27 then
                   l_0_3 = true
                   ;
                   (mp.set_mpattribute)(l_0_24)
-                  local l_0_27 = "Lua:Win32/SuspPythonApiCodeCrc32.A!" .. (string.lower)(l_0_18)
+                  local l_0_28 = "Lua:Win32/SuspPythonApiCodeCrc32.A!" .. (string.lower)(l_0_18)
                   ;
-                  (mp.set_mpattribute)(l_0_27)
+                  (mp.set_mpattribute)(l_0_28)
                 end
               else
                 do
@@ -69,30 +76,30 @@ for l_0_9,l_0_10 in pairs(l_0_2) do
                   ;
                   (mp.set_mpattribute)(l_0_24)
                   do
-                    local l_0_28 = "Lua:Win32/SuspPythonApiCodeInit.A!" .. (string.lower)(l_0_18)
+                    local l_0_29 = "Lua:Win32/SuspPythonApiCodeInit.A!" .. (string.lower)(l_0_18)
                     ;
-                    (mp.set_mpattribute)(l_0_28)
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out DO_STMT
+                    (mp.set_mpattribute)(l_0_29)
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end
