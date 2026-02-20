@@ -36,8 +36,17 @@ do
 
     if (string.sub)(l_0_7, -1) ~= "\\" or (sysio.IsFileExists)(l_0_7 .. l_0_6) then
       (mp.ReportLowfi)(l_0_7 .. l_0_6, 1924697406)
+      local l_0_9 = nil
+      ;
+      (mp.set_mpattribute)((string.format)("%s!%s", "SuspiciousAppDomainAssembly", l_0_9))
+      local l_0_10 = nil
+      if not isnull((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)) then
+        (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), l_0_10, (string.format)("Config=%s;Assembly=%s", l_0_0, l_0_9))
+      end
     end
-    return mp.INFECTED
+    do
+      return mp.INFECTED
+    end
   end
 end
 
