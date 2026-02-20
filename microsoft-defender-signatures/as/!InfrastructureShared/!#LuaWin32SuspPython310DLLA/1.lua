@@ -3,6 +3,9 @@
 
 -- params : ...
 -- function num : 0
+if (mp.get_mpattribute)("BM_UPX_PACKED") then
+  return mp.CLEAN
+end
 if not (mp.get_mpattribute)("HSTR:Win32/Python310DLL") and not (mp.get_mpattribute)("Lua:FnameAttr!python310.dll") and not (mp.get_mpattribute)("Lua:CPythonModuleFileName.A") then
   return mp.CLEAN
 end
@@ -25,6 +28,7 @@ l_0_4[1760330568] = true
 l_0_4[1222413132] = true
 l_0_4[1223459656] = true
 l_0_4[2202555200] = true
+l_0_4[3968026707] = true
 l_0_3.CleanCodeInit = l_0_4
 l_0_3.CleanCodeSize = 42
 l_0_3.CleanCodeCrc32 = 2027010068
@@ -79,27 +83,27 @@ for l_0_9,l_0_10 in pairs(l_0_2) do
                     local l_0_29 = "Lua:Win32/SuspPythonApiCodeInit.A!" .. (string.lower)(l_0_18)
                     ;
                     (mp.set_mpattribute)(l_0_29)
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC199: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC209: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end
