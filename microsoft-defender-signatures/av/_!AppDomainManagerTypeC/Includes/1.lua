@@ -4,7 +4,10 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if isnull(l_0_0) or (string.find)(l_0_0, "program files", 1, true) or not (string.find)(l_0_0, ".exe.config$") then
+if isnull(l_0_0) or (string.find)(l_0_0, "program files", 1, true) or not (string.find)(l_0_0, "%.exe%.config$") then
+  return mp.CLEAN
+end
+if (mp.GetMachineGUID)() or (string.lower)(l_0_0) ~= "c:\\windows\\microsoft.net\\framework\\v4.0.30319\\ngentask.exe.config" or "" == "0CA8A424-55F3-D616-23EC-EEF8DB1E3F15" then
   return mp.CLEAN
 end
 l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
@@ -27,9 +30,9 @@ if not (string.find)(l_0_4, ".exe$") then
 end
 do
   local l_0_5, l_0_6, l_0_7 = l_0_3:match("<probing privatePath=\"([^\"\r\n]+)") or l_0_1
-  -- DECOMPILER ERROR at PC100: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC117: Confused about usage of register: R5 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC103: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC120: Confused about usage of register: R5 in 'UnsetPending'
 
   local l_0_8 = nil
   if not (sysio.IsFileExists)((MpCommon.PathToWin32Path)(l_0_5 .. ((string.sub)(l_0_5, -1) == "\\" and "" or "\\") .. l_0_4)) and (l_0_8 == l_0_1 or not (sysio.IsFileExists)(l_0_1 .. "\\" .. l_0_4)) then
@@ -40,7 +43,7 @@ do
   (mp.ReportLowfi)(l_0_9, 1924697406)
   ;
   (mp.set_mpattribute)((string.format)("%s!%s", "SuspiciousAppDomainAssembly", l_0_9))
-  -- DECOMPILER ERROR at PC157: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC174: Confused about usage of register: R7 in 'UnsetPending'
 
   ;
   (MpCommon.SetOriginalFileName)(l_0_9, (string.format)("BM_%s", "SuspiciousAppDomainAssembly"))
