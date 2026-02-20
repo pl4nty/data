@@ -1,5 +1,170 @@
 [
     {
+        "created": "2026-02-20T00:00:24",
+        "description": "Extending support for modern Excel workbooks stored on your device to Agent Mode in Excel, giving users the flexibility to use multi-step editing capabilities with Copilot in Excel no matter whether files are stored locally or in the cloud.",
+        "id": 557564,
+        "locale": null,
+        "modified": "2026-02-20T00:00:24",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Local file support for Agent Mode in Excel"
+    },
+    {
+        "created": "2026-02-20T00:00:24",
+        "description": "Azure PST Import is a migration method that enables PST files stored in Azure Blob Storage to be imported directly into Exchange Online mailboxes. It follows the standard two\u2011step Exchange Migration Service pattern: an initial analysis phase to validate and assess PST data, followed by execution of the actual migration. The process also involves creating a migration endpoint, running an analysis-only migration batch, using the analysis results to configure the final batch, and then starting the batch to import PST content into target mailboxes.\n",
+        "id": 557559,
+        "locale": null,
+        "modified": "2026-02-20T00:00:24",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management- Azure PST Import"
+    },
+    {
+        "created": "2026-02-20T00:00:24",
+        "description": "Adding below enhancements to Data Security Triage Agent in MS Purview - Metadata supported Custom Instructions (DLP only) : Earlier the agent only supported custom instructions which are related to content (E.g. Focus on alerts related to financial information). Now we also support instructions related to metadata. (E.g. Focus on alerts related to financial information for user Adam in last 20 days) - Consolidated Agent settings : Earlier we had seperate controls for deployment configuration and triggers. We are now merging them into a single view as the settings can be altered anytime and it becomes easier for admins and analysts to change them from single view. - Support for alerts with Non content contains condition (DLP only) : Till now we were showing alerts generated from non-content contains conditions as unsupported. (E.g. Condition = RecipientDomainIs matches and triggers alert, alert is unsupported). Now we are bringing the alerts into triage capability and determining categorization for them also - Agent Identity : Now the Triage agent can be deployed with Agent's own identity generated in Microsoft Entra. There won't be a need to have the agent run using the user's identity who was setting up the agent. This provides cleaner audit capabilities.\n",
+        "id": 557552,
+        "locale": null,
+        "modified": "2026-02-20T00:00:24",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Enhancements to Data Security Triage Agent"
+    },
+    {
         "created": "2026-02-19T00:15:25",
         "description": "Data Security Investigations (DSI) now further enhances its AI analysis tools, including the ability to choose between a standard categorization for potential time and/or cost savings or a more advanced categorization to include AI-generated topics. Additionally, we are making the DSI workflow faster by automatically preparing data for AI analysis as it is being added to the investigation, saving critical investigation time.",
         "id": 557556,
@@ -4288,10 +4453,10 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
+        "description": "We will release this feature at a later date and will provide an update soon. We apologize for any inconvenience this may cause. Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
         "id": 553590,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -8791,15 +8956,15 @@
     },
     {
         "created": "2026-01-13T00:00:10",
-        "description": "Admins or app owners can now safely pause an app\u2019s access to Entra protected resources without deleting it or disrupting configuration. When deactivated, the app and its service principals globally (across tenants) can\u2019t request new tokens and user sign ins are blocked, while existing tokens simply expire on their normal schedule. This makes it easy for admins to temporarily freeze suspicious or unused apps during investigations, bulk cleanup, or tenant hygiene work. This capability will initially be available via Microsoft Graph API.",
+        "description": "Admins or app owners can now safely pause an app\u2019s access to Entra protected resources without deleting it or disrupting configuration. When deactivated, the app and its service principals globally (across tenants) can\u2019t request new tokens and user sign ins are blocked, while existing tokens simply expire on their normal schedule. This makes it easy for admins to temporarily freeze suspicious or unused apps during investigations, bulk cleanup, or tenant hygiene work. This capability\u00a0is now available in the Entra admin center (App registrations, Enterprise apps) and Microsoft Graph API.",
         "id": 545894,
         "locale": null,
-        "modified": "2026-01-13T00:00:10",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/deactivate-application-portal",
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10172,12 +10337,12 @@
         "description": "Word Agent helps you handle research, structure, and formatting so you can stay focused on your ideas. Use multi\u2011turn chat to refine your draft or open it in Word for full editing and collaboration. It\u2019s designed for long\u2011form, information\u2011dense work\u2014like strategic plans, policy documents, and technical papers\u2014making it easier to turn complex material into clear, well\u2011written content. Available to Microsoft 365 users with or without a Microsoft 365 Copilot license.",
         "id": 543420,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11660,12 +11825,12 @@
         "description": "Admins can control whether users can install web apps through the browser using the WebAppInstallByUserEnabled policy.",
         "id": 542183,
         "locale": null,
-        "modified": "2025-12-12T23:00:26",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11702,7 +11867,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Introducing a new policy that can enable/disable web app installation from the browser"
+        "title": "Microsoft Edge: v.145 - Introducing a new policy that can enable/disable web app installation from the browser"
     },
     {
         "created": "2025-12-12T23:00:26",
@@ -17815,9 +17980,9 @@
         "description": "Custom templates let you create reusable, pre-designed layouts tailored to your organization\u2019s needs, ensuring consistency and saving time. They provide flexibility to standardize content while allowing easy customization for specific scenarios.",
         "id": 512431,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19608,12 +19773,12 @@
         "description": "Edge for Business will introduce a \"What's New\" enhancements page to the Edge update experience. This page will help your users understand how to best utilize the browser's newest features for maximum productivity. ",
         "id": 526798,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20011,12 +20176,12 @@
         "description": "Leverage the latest AI advancements to build prototypes, learning applications or interactive reports using your favorite tools in Edge without worrying about your data. This extension enables apps to leverage some new security improvements for safely executing AI generated code.",
         "id": 525366,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20059,7 +20224,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Securely enable AI generated applications"
+        "title": "Microsoft Edge: v.145 - Securely enable AI generated applications"
     },
     {
         "created": "2025-11-06T00:00:20",
@@ -20439,9 +20604,9 @@
         "description": "Simplify frontline onboarding with an improved Teams mobile experience on personal devices. Workers can easily download and start using the Teams mobile app on their own device in compliance with organizational security policies, reducing the need for manager assistance and IT support.",
         "id": 523213,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36479,9 +36644,9 @@
         "description": "Microsoft Viva is expanding access to M365 Copilot Chat Insights in Microsoft Copilot Dashboard by enabling tenants with 1-49 M365 Copilot licenses- allowing more tenants, including those with fewer licenses, to track adoption trends. Insights will include usage over time, group level adoption, retention, app-level breakdowns, retention, and more. Users can filter by organizational attributes to uncover usage patterns.",
         "id": 501581,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43606,12 +43771,12 @@
         "description": "New Outlook for Windows will now support Wait on Send for Oversharing.\nThis feature allows admins to block sending of emails in case DLP policy evaluation is not completed for labeled or sensitive content. #newoutlookforwindows",
         "id": 498920,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44802,12 +44967,12 @@
         "description": "New VDI solution for Teams introduces multimedia offloading and optimization solution for Microsoft Teams when running in Amazon WorkSpaces (Personal and Pools).\nUsers of the WorkSpaces Client for Windows can enjoy a high-definition experience in virtual desktops, where audio/video/screensharing are offloaded to the user's device and processed by the SlimCore media engine.\nThis entry applies to WorkSpaces only (AppStream is not supported).",
         "id": 498355,
         "locale": null,
-        "modified": "2025-08-21T23:15:03",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -96895,9 +97060,9 @@
         "description": "Users can manually insert a signature into a calendar event like they can in the classic outlook. #newoutlookforwindows",
         "id": 422817,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-02-20T00:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
