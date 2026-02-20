@@ -256,6 +256,7 @@
         "FlightingV2": {
             "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true,
+            "SCGWUseEGATsForAppsTargeting": true,
             "UseEGATsForDPAs": true
         }
     },

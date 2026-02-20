@@ -805,14 +805,9 @@
                             "toc_title": "Azure Access Point"
                         },
                         {
-                            "href": "a_z_names_terms/a/azure-active-directory",
-                            "permissioned-type": "private",
-                            "toc_title": "Azure Active Directory"
-                        },
-                        {
                             "href": "a_z_names_terms/a/azure-active-directory-azure-ad-ds",
                             "permissioned-type": "private",
-                            "toc_title": "Azure Active Directory (Azure AD DS)"
+                            "toc_title": "Azure Active Directory Domain Services(AD DS)"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-active-directory-b2c",
@@ -2010,6 +2005,11 @@
                             "toc_title": "Blockchain Workbench"
                         },
                         {
+                            "href": "a_z_names_terms/b/blueprint-blueprint-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "blueprint, blueprint agent"
+                        },
+                        {
                             "href": "a_z_names_terms/b/bluetooth-accessories",
                             "permissioned-type": "private",
                             "toc_title": "Bluetooth accessories"
@@ -2253,6 +2253,11 @@
                             "href": "a_z_names_terms/c/change",
                             "permissioned-type": "private",
                             "toc_title": "change"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/change-log",
+                            "permissioned-type": "private",
+                            "toc_title": "change log"
                         },
                         {
                             "href": "a_z_names_terms/c/channel",
@@ -5384,6 +5389,11 @@
                                             "toc_title": "Facilitator"
                                         },
                                         {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/frontline-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Frontline Agent"
+                                        },
+                                        {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/interpreter",
                                             "permissioned-type": "private",
                                             "toc_title": "Interpreter"
@@ -5608,6 +5618,11 @@
                             "href": "a_z_names_terms/m/microsoft-cloud-pki",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Cloud PKI"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-cloud-switcher",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Cloud Switcher"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-code-studio",
@@ -7673,6 +7688,11 @@
                             "href": "a_z_names_terms/p/praise",
                             "permissioned-type": "private",
                             "toc_title": "Praise"
+                        },
+                        {
+                            "href": "a_z_names_terms/p/pre-purchase",
+                            "permissioned-type": "private",
+                            "toc_title": "pre-purchase"
                         },
                         {
                             "href": "a_z_names_terms/p/prebuilt",
@@ -10113,6 +10133,16 @@
                             "href": "a_z_names_terms/w/windows-autopatch",
                             "permissioned-type": "private",
                             "toc_title": "Windows Autopatch"
+                        },
+                        {
+                            "href": "a_z_names_terms/w/windows-autopilot",
+                            "permissioned-type": "private",
+                            "toc_title": "Windows Autopilot"
+                        },
+                        {
+                            "href": "a_z_names_terms/w/windows-autopilot-device-preparation",
+                            "permissioned-type": "private",
+                            "toc_title": "Windows Autopilot device preparation"
                         },
                         {
                             "href": "a_z_names_terms/w/windows-azure",
@@ -14367,7 +14397,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2739,
+        "count_of_node_with_href": 2745,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
