@@ -75,53 +75,63 @@ do
           local l_0_40 = scrubData(l_0_11.Domain)
           local l_0_41 = {NotePath = (sigattr_tail[l_0_3]).utf8p1, TriggedSigs = l_0_18, ppID = l_0_25, RemoteInfo = l_0_11, UserName = l_0_39, Domain = l_0_40, Type = "NoteDrop", NoteFileMeta = l_0_26, RemoteEncConfig = l_0_36}
           local l_0_42 = SafeGetUrlReputation
-          do
-            local l_0_43 = {l_0_17}
-            l_0_42 = l_0_42(l_0_43, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansomNote", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_41)})
+          local l_0_43 = {l_0_17}
+          l_0_42 = l_0_42(l_0_43, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansomNote", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_41)})
+          l_0_43 = l_0_42.urls
+          l_0_43 = l_0_43[l_0_17]
+          if l_0_43 ~= nil then
             l_0_43 = l_0_42.urls
             l_0_43 = l_0_43[l_0_17]
-            if l_0_43 ~= nil then
+            l_0_43 = l_0_43.determination
+            if l_0_43 == 2 then
               l_0_43 = l_0_42.urls
               l_0_43 = l_0_43[l_0_17]
-              l_0_43 = l_0_43.determination
-              if l_0_43 == 2 then
+              l_0_43 = l_0_43.confidence
+              if l_0_43 ~= nil then
                 l_0_43 = l_0_42.urls
                 l_0_43 = l_0_43[l_0_17]
                 l_0_43 = l_0_43.confidence
-                if l_0_43 ~= nil then
+                if l_0_43 >= 60 then
                   l_0_43 = l_0_42.urls
                   l_0_43 = l_0_43[l_0_17]
-                  l_0_43 = l_0_43.confidence
-                  if l_0_43 >= 60 then
+                  l_0_43 = l_0_43.context
+                  l_0_43 = l_0_43.Source
+                  if l_0_43 == "GenRansomNote" then
+                    l_0_43 = l_0_42.urls
+                    l_0_43 = l_0_43[l_0_17]
+                    l_0_43 = l_0_43.confidence
+                    l_0_41.confidence = l_0_43
                     l_0_43 = l_0_42.urls
                     l_0_43 = l_0_43[l_0_17]
                     l_0_43 = l_0_43.context
-                    l_0_43 = l_0_43.Source
-                    if l_0_43 == "GenRansomNote" then
-                      l_0_43 = l_0_42.urls
-                      l_0_43 = l_0_43[l_0_17]
-                      l_0_43 = l_0_43.confidence
-                      l_0_41.confidence = l_0_43
-                      l_0_43 = l_0_42.urls
-                      l_0_43 = l_0_43[l_0_17]
-                      l_0_43 = l_0_43.context
-                      l_0_43 = l_0_43.Family
-                      l_0_41.family = l_0_43
-                      l_0_41.action, l_0_43 = l_0_43, {action = (((l_0_42.urls)[l_0_17]).context).action, parameter = (((l_0_42.urls)[l_0_17]).context).action_parameter, ttl = (((l_0_42.urls)[l_0_17]).context).action_ttl}
-                      l_0_41.ip = l_0_17
-                      l_0_41.unscrubbed_username = l_0_37
-                      l_0_41.unscrubbed_domain = l_0_38
-                      ;
-                      (bm.add_related_string)("RemoteGenericMassRansomNoteDrop:Malware", safeJsonSerialize(l_0_41), bm.RelatedStringBMReport)
-                    end
+                    l_0_43 = l_0_43.Family
+                    l_0_41.family = l_0_43
+                    l_0_41.action, l_0_43 = l_0_43, {action = (((l_0_42.urls)[l_0_17]).context).action, parameter = (((l_0_42.urls)[l_0_17]).context).action_parameter, ttl = (((l_0_42.urls)[l_0_17]).context).action_ttl}
+                    l_0_41.ip = l_0_17
+                    l_0_41.unscrubbed_username = l_0_37
+                    l_0_41.unscrubbed_domain = l_0_38
+                    ;
+                    (bm.add_related_string)("RemoteGenericMassRansomNoteDrop:Malware", safeJsonSerialize(l_0_41), bm.RelatedStringBMReport)
                   end
                 end
               end
             end
-            l_0_43 = mp
-            l_0_43 = l_0_43.INFECTED
-            do return l_0_43 end
-            return mp.CLEAN
+          end
+          l_0_43 = MpCommon
+          l_0_43 = l_0_43.IsSampled
+          l_0_43 = l_0_43(1000, true, true, true)
+          if l_0_43 == true then
+            l_0_43 = pcall
+            local l_0_44 = reportBmInfoUrlRep
+            l_0_43(l_0_44, {ip = l_0_17})
+          end
+          do
+            do
+              l_0_43 = mp
+              l_0_43 = l_0_43.INFECTED
+              do return l_0_43 end
+              return mp.CLEAN
+            end
           end
         end
       end
