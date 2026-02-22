@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a8b37faa4979\1.luac 
+-- Command line: lua\!InfrastructureShared\189b3081fd015\1.luac 
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil then
+if not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).utf8p2 == nil then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p2)
+local l_0_0 = (string.lower)((this_sigattrlog[7]).utf8p2)
 local l_0_1 = (bm.get_imagepath)()
 if not l_0_1:match("\\([^\\]+)$") then
   local l_0_2 = (string.lower)(isnull(l_0_1) or (string.len)(l_0_1) <= 4 or "")
@@ -49,7 +49,7 @@ if not l_0_1:match("\\([^\\]+)$") then
     if (mp.IsKnownFriendlyFile)(l_0_6, true, false) then
       return mp.CLEAN
     end
-    local l_0_13 = (this_sigattrlog[2]).utf8p1
+    local l_0_13 = (this_sigattrlog[7]).utf8p1
     do
       if not isnull(l_0_13) then
         local l_0_14 = (string.match)((string.lower)(l_0_13), "\\services\\([^\\]+)")

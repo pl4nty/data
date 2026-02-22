@@ -1,33 +1,33 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1e8b3ce3384bf\1.luac 
+-- Command line: lua\!InfrastructureShared\2c9b3da46d551\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
+if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p2 ~= nil then
   local l_0_0, l_0_1, l_0_3, l_0_4 = nil, nil
   l_0_3 = this_sigattrlog
-  l_0_3 = l_0_3[2]
+  l_0_3 = l_0_3[7]
   l_0_1 = l_0_3.utf8p1
   local l_0_2, l_0_5 = nil
 else
 end
 do
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
+  if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p2 ~= nil then
     do return mp.CLEAN end
     do
-      if not (this_sigattrlog[4]).matched then
-        local l_0_6 = (this_sigattrlog[3]).utf8p2
+      if not (this_sigattrlog[9]).matched then
+        local l_0_6 = (this_sigattrlog[8]).utf8p2
       end
-      if not (this_sigattrlog[5]).matched then
+      if not (this_sigattrlog[10]).matched then
         return mp.CLEAN
       end
       -- DECOMPILER ERROR at PC52: Confused about usage of register: R0 in 'UnsetPending'
 
       local l_0_7 = nil
       if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_6)) then
-        local l_0_8 = (this_sigattrlog[3]).utf8p1
+        local l_0_8 = (this_sigattrlog[8]).utf8p1
         local l_0_9 = nil
         -- DECOMPILER ERROR at PC74: Overwrote pending register: R5 in 'AssignReg'
 
@@ -39,7 +39,7 @@ do
 
           -- DECOMPILER ERROR at PC112: Overwrote pending register: R6 in 'AssignReg'
 
-          if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p1 == nil or (this_sigattrlog[5]).matched) and (this_sigattrlog[5]).utf8p1 ~= nil then
+          if (not (this_sigattrlog[9]).matched or (this_sigattrlog[9]).utf8p1 == nil or (this_sigattrlog[10]).matched) and (this_sigattrlog[10]).utf8p1 ~= nil then
             local l_0_11 = nil
             local l_0_12 = nil
             -- DECOMPILER ERROR at PC125: Confused about usage of register: R6 in 'UnsetPending'
