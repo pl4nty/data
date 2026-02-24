@@ -4,6 +4,9 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (bm.get_imagepath)()
+if l_0_0 == nil or l_0_0 == "" or (l_0_0:lower()):find("/kandji/kandji agent.app/") then
+  return mp.CLEAN
+end
 local l_0_1 = (bm.get_current_process_startup_info)()
 if l_0_1 == nil then
   return mp.CLEAN
