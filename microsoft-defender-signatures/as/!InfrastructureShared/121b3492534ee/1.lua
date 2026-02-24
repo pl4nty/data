@@ -3,26 +3,23 @@
 
 -- params : ...
 -- function num : 0
-if IsSenseRelatedProc() == true then
-  return mp.CLEAN
-end
 local l_0_0 = "TamperETWPatch"
 local l_0_1 = "T1562.002"
 local l_0_2 = "ntdll.dll"
 local l_0_3 = {}
--- DECOMPILER ERROR at PC16: No list found for R3 , SetList fails
+-- DECOMPILER ERROR at PC9: No list found for R3 , SetList fails
 
--- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC10: Overwrote pending register: R4 in 'AssignReg'
 
 local l_0_4 = "EtwEventWrite"
--- DECOMPILER ERROR at PC18: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC11: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC19: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC12: Overwrote pending register: R6 in 'AssignReg'
 
--- DECOMPILER ERROR at PC20: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC13: Overwrote pending register: R7 in 'AssignReg'
 
 local l_0_5, l_0_6, l_0_7 = ("NtTraceEvent")("EtwEventWriteEx", "EtwEventWriteTransfer")
--- DECOMPILER ERROR at PC22: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC15: Overwrote pending register: R8 in 'AssignReg'
 
 if ("EtwEventWriteFull")(l_0_5) or isnull(l_0_6) or isnull(l_0_7) then
   return mp.CLEAN

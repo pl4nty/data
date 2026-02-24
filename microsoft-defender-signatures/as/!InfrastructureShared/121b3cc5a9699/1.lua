@@ -1,18 +1,15 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\f8b3047c588f\1.luac 
+-- Command line: lua\!InfrastructureShared\121b3cc5a9699\1.luac 
 
 -- params : ...
 -- function num : 0
-if IsSenseRelatedProc() == true then
-  return mp.CLEAN
-end
 local l_0_0 = "TamperLoaderPatch"
 local l_0_1 = "T1562.002"
 local l_0_2 = "ntdll.dll"
 local l_0_3 = {}
--- DECOMPILER ERROR at PC12: No list found for R3 , SetList fails
+-- DECOMPILER ERROR at PC5: No list found for R3 , SetList fails
 
--- DECOMPILER ERROR at PC13: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC6: Overwrote pending register: R4 in 'AssignReg'
 
 local l_0_4 = "LdrLoadDll"
 local l_0_5, l_0_6, l_0_7 = helper_tamperapi_setup(nil, l_0_0)
