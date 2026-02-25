@@ -6,13 +6,13 @@
 if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
   local l_0_0 = (this_sigattrlog[5]).utf8p2
   local l_0_1 = {}
-  -- DECOMPILER ERROR at PC54: No list found for R1 , SetList fails
+  -- DECOMPILER ERROR at PC55: No list found for R1 , SetList fails
 
-  -- DECOMPILER ERROR at PC55: Overwrote pending register: R2 in 'AssignReg'
+  -- DECOMPILER ERROR at PC56: Overwrote pending register: R2 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC56: Overwrote pending register: R3 in 'AssignReg'
+  -- DECOMPILER ERROR at PC57: Overwrote pending register: R3 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC57: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC58: Overwrote pending register: R4 in 'AssignReg'
 
   if not ("Wovdnut")("AsyncRat", "Donut") then
     return mp.CLEAN
@@ -21,11 +21,11 @@ else
   do
     do return mp.CLEAN end
     local l_0_2 = nil
-    -- DECOMPILER ERROR at PC95: Overwrote pending register: R0 in 'AssignReg'
+    -- DECOMPILER ERROR at PC96: Overwrote pending register: R0 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC109: Overwrote pending register: R0 in 'AssignReg'
+    -- DECOMPILER ERROR at PC110: Overwrote pending register: R0 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC113: Unhandled construct in 'MakeBoolean' P3
+    -- DECOMPILER ERROR at PC114: Unhandled construct in 'MakeBoolean' P3
 
     if (((this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and not (this_sigattrlog[3]).matched) or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p2 ~= nil then
       do return mp.CLEAN end
@@ -34,9 +34,9 @@ else
       end
       do
         local l_0_3, l_0_4 = pcall(reportBmInfo)
-        -- DECOMPILER ERROR at PC142: Overwrote pending register: R5 in 'AssignReg'
+        -- DECOMPILER ERROR at PC143: Overwrote pending register: R5 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC143: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC144: Overwrote pending register: R6 in 'AssignReg'
 
         if not l_0_3 and l_0_4 then
           (bm.add_related_string)("bmInfoFailReason", ("Rugmi")("HeavensGate"), bm.RelatedStringBMReport)

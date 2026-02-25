@@ -17,6 +17,7 @@ if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil and (this
   l_0_3 = (string.lower)((this_sigattrlog[4]).utf8p2)
 end
 if (string.find)(l_0_3, "do shell script", 1, true) and (string.find)(l_0_3, "mkdir -p", 1, true) and (string.find)(l_0_3, "filegrabber", 1, true) and (string.find)(l_0_3, "tell application", 1, true) and ((string.find)(l_0_3, "documents", 1, true) or (string.find)(l_0_3, "downloads", 1, true)) and ((string.find)(l_0_3, "posix file", 1, true) or (string.find)(l_0_3, "posix path", 1, true)) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
