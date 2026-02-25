@@ -40,7 +40,7 @@ else
       l_0_2 = l_0_2 + 5
     end
     local l_0_7 = nil
-    if contains(l_0_5, {"(new-object system.net.http.httpclient).getasync", "(new-object system.net.http.httpclient).getstringasync", "(new-object system.net.webclient).downloadstring", "(new-object system.net.webclient).downloadfile", "(new-object net.webclient).downloadfile", "(new-object net.webclient).downloadstring", "[net.webclient]::downloadstring", "curl", "wget", "invoke-restmethod", "irm", "invoke-webrequest", "iwr", "invoke-expression", "iex", "invoke-command", "[scriptblock]::create", "scriptblock::create", "content).invoke()", "invoke()", "start-process", "saps", "cmd /c powershell", "://", "[char]105+[char]119+[char]114", "([text.encoding]::utf8.getstring", "([system.text.encoding]::ascii.getstring", "[system.convert]::frombase64string", "[system.text.encoding]::utf8.getstring([system.convert]::frombase64string", "-usebasicparsing", "-useb ", "-uri", "-response", "http", "substring", "downloadfile", "downloadstring"}) then
+    if contains(l_0_5, {"(new-object system.net.http.httpclient).getasync", "(new-object system.net.http.httpclient).getstringasync", "(new-object system.net.webclient).downloadstring", "(new-object system.net.webclient).downloadfile", "(new-object net.webclient).downloadfile", "(new-object net.webclient).downloadstring", "[net.webclient]::downloadstring", "curl", "wget", "invoke-restmethod", "irm", "invoke-webrequest", "iwr", "invoke-expression", "iex", "invoke-command", "[scriptblock]::create", "scriptblock::create", "content).invoke()", "invoke()", "start-process", "saps", "cmd /c powershell", "://", "[char]105+[char]119+[char]114", "([text.encoding]::utf8.getstring", "([system.text.encoding]::ascii.getstring", "[system.convert]::frombase64string", "[system.text.encoding]::utf8.getstring([system.convert]::frombase64string", "-usebasicparsing", " -useb", "-uri", "-response", "http", "substring", "downloadfile", "downloadstring"}) then
       l_0_2 = l_0_2 + 5
     end
     local l_0_8 = nil
@@ -78,7 +78,10 @@ else
     if l_0_5:match("(%w%^)%%*%w") or l_0_5:match("\"%w\"%s*\"") then
       l_0_2 = l_0_2 + 4
     end
-    if l_0_2 >= 12 then
+    if l_0_2 >= 10 and l_0_2 < 15 then
+      (bm.trigger_sig)("SuspClickFix_SA", (string.format)("score=%s;cmdline=%s", tostring(l_0_2), tostring(l_0_1)))
+    end
+    if l_0_2 >= 15 then
       (bm.add_related_string)("SuspClickFix_SA", tostring(l_0_1), bm.RelatedStringBMReport)
       ;
       (bm.add_related_string)("SuspClickFix_SA_score", tostring(l_0_2), bm.RelatedStringBMReport)
