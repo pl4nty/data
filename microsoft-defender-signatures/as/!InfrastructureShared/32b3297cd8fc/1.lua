@@ -52,10 +52,10 @@ l_0_7 = bm
 l_0_7 = l_0_7.set_detection_string
 l_0_7(l_0_6)
 l_0_7 = bm
-l_0_7 = l_0_7.add_related_file
+l_0_7 = l_0_7.add_threat_file
 l_0_7(l_0_0)
 l_0_7 = bm
-l_0_7 = l_0_7.add_related_file
+l_0_7 = l_0_7.add_threat_file
 l_0_7(l_0_1)
 l_0_7 = mp
 l_0_7 = l_0_7.INFECTED
