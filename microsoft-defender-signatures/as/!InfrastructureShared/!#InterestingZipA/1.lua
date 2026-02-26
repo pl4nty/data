@@ -32,7 +32,7 @@ do
   if l_0_2 == nil then
     return mp.CLEAN
   end
-  if (mp.get_mpattribute)("AGGR:Lua:ZipEncrypted") then
+  if (mp.get_mpattribute)("Lua:ZipEncrypted") then
     l_0_2 = l_0_2 .. "Encrypted"
   else
     if (mp.get_mpattribute)("BRUTE:ZipFileExtStringInHeader") or (mp.get_mpattribute)("BRUTE:ZipFileExtStringInFooter") then
