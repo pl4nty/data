@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2602.25",
+    "downloadDescription": "PIX 2602.25",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PIX-2602.25-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/c81262f0-aecc-4de5-ae82-7af7dd8bb863/PIX-2602.25-Installer-x64.exe",
+            "size": "212691560",
+            "version": "2602.25",
+            "datePublished": "2/26/2026 3:41:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2602.25-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/c81262f0-aecc-4de5-ae82-7af7dd8bb863/PIX-2602.25-Installer-ARM64.exe",
+            "size": "177951464",
+            "version": "2602.25",
+            "datePublished": "2/26/2026 3:41:11 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2602.25.002-preview-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/c81262f0-aecc-4de5-ae82-7af7dd8bb863/PIX-2602.25.002-preview-Installer-x64.exe",
+            "size": "212713480",
+            "version": "2602.25",
+            "datePublished": "2/26/2026 3:41:11 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2602.25.002-preview-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/c81262f0-aecc-4de5-ae82-7af7dd8bb863/PIX-2602.25.002-preview-Installer-ARM64.exe",
+            "size": "177986104",
+            "version": "2602.25",
+            "datePublished": "2/26/2026 3:41:11 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2602.25 and 2602.25-preview \u2013 support for new D3D features and misc quality-of-life improvements",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2602.25",
+    "detailsSection_file_name": [
+        "PIX-2602.25-Installer-x64.exe",
+        "PIX-2602.25-Installer-ARM64.exe",
+        "PIX-2602.25.002-preview-Installer-x64.exe",
+        "PIX-2602.25.002-preview-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "202.8 MB",
+        "169.7 MB",
+        "202.9 MB",
+        "169.7 MB"
+    ],
+    "detailsSection_file_date": "2/26/2026",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and run the installer, and follow its instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108566",
+    "downloadPreload": true
+}
