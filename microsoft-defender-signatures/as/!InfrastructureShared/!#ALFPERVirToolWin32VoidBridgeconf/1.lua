@@ -9,36 +9,20 @@ l_0_0[1794461769] = "SCPT:HardBridge"
 l_0_0[3011729072] = "SCPT:NullBridge"
 for l_0_4,l_0_5 in pairs(l_0_0) do
   local l_0_6 = (mp.enum_mpattributesubstring)(l_0_5)
-  if #l_0_6 > 0 then
-    local l_0_7 = {}
-    for l_0_11,l_0_12 in ipairs(l_0_6) do
-      local l_0_13 = l_0_12:match("%.(%u+)$")
-      if l_0_13 and #l_0_13 <= 3 then
-        l_0_7[#l_0_7 + 1] = l_0_13
-      end
+  local l_0_7 = {}
+  for l_0_11 = 1, #l_0_6 <= 32 and #l_0_6 or 32 do
+    local l_0_12 = (l_0_6[l_0_11]):match("%.(%u+)$")
+    if l_0_12 and #l_0_12 <= 3 then
+      l_0_7[#l_0_7 + 1] = l_0_12
     end
-    do
-      if #l_0_7 > 32 or not #l_0_7 then
-        do
-          local l_0_14 = (table.concat)(l_0_7, ":", 1, #l_0_7 <= 0 or 32)
-          ;
-          (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. l_0_14)
-          ;
-          (mp.changedetectionname)(l_0_4)
-          do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC62: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
+  end
+  if #l_0_7 > 0 then
+    (table.sort)(l_0_7)
+    ;
+    (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. (table.concat)(l_0_7, ":"))
+    ;
+    (mp.changedetectionname)(l_0_4)
+    return mp.INFECTED
   end
 end
 return mp.CLEAN
