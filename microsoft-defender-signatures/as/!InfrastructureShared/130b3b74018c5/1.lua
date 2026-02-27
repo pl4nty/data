@@ -16,7 +16,7 @@ local l_0_3 = nil
 if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil and (this_sigattrlog[4]).utf8p2 ~= "" then
   l_0_3 = (string.lower)((this_sigattrlog[4]).utf8p2)
 end
-if (string.find)(l_0_3, " -s ", 1, true) and (string.find)(l_0_3, "http", 1, true) and (string.find)(l_0_3, "api-key", 1, true) then
+if (string.find)(l_0_3, " -s ", 1, true) and (string.find)(l_0_3, "http", 1, true) and ((string.find)(l_0_3, "api-key", 1, true) or (string.find)(l_0_3, "?build=", 1, true)) then
   (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
