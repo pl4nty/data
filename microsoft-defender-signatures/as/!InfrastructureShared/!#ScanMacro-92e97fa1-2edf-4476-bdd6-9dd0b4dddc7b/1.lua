@@ -75,7 +75,7 @@ do
     end
     -- DECOMPILER ERROR at PC271: Unhandled construct in 'MakeBoolean' P3
 
-    if (l_0_7 ~= nil and l_0_7 < versioning.ENGINE_RING_2_PREVIEW) or l_0_8 == "ba11743e-6a8f-4599-93fb-2425110e2a75" then
+    if (l_0_7 ~= nil and l_0_7 < versioning.ENGINE_RING_3_STAGED) or l_0_8 == "ba11743e-6a8f-4599-93fb-2425110e2a75" then
       local l_0_9 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
       if l_0_9 ~= nil and l_0_9 ~= "" then
         l_0_9 = (MpCommon.PathToWin32Path)(l_0_9)
