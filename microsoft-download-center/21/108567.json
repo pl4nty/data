@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "MITT Tool",
+    "downloadDescription": "Test tools for validating Low Power Buses",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MITT_9_0_0.msi",
+            "url": "https://download.microsoft.com/download/be0ee519-416e-4eb9-bde9-b72ca6b3f297/MITT_9_0_0.msi",
+            "size": "2023424",
+            "version": "9.0.0",
+            "datePublished": "2/26/2026 10:55:13 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MITT_8_3_0.msi",
+            "url": "https://download.microsoft.com/download/be0ee519-416e-4eb9-bde9-b72ca6b3f297/MITT_8_3_0.msi",
+            "size": "21114880",
+            "version": "9.0.0",
+            "datePublished": "2/26/2026 10:55:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test tools for validating Low Power Buses",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.0",
+    "detailsSection_file_name": [
+        "MITT_9_0_0.msi",
+        "MITT_8_3_0.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "20.1 MB"
+    ],
+    "detailsSection_file_date": "2/26/2026",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Instructions at aka.ms/mitttool",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108567",
+    "downloadPreload": true
+}
