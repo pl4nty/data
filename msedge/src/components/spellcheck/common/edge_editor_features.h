@@ -15,10 +15,19 @@ namespace edge {
 
 // If enabled, edge uses DLP check to determine whether to use remote
 // spellchecking service.
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerDlpCheck);
+
+// If enabled, detects the appropriate Microsoft Editor endpoint based on
+// the user's sovereign cloud environment from their AAD sign-in.
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeEditorEnvironmentEndpointDetection);
 
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckerDLPCheckEnabled();
+
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
+bool IsEditorEnvironmentEndpointDetectionEnabled();
 
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckEnabled();
@@ -26,10 +35,6 @@ bool IsEditorSpellcheckEnabled();
 BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerUXV2);
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckerUXV2Enabled();
-
-BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerNewServiceUrl);
-COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
-bool IsEditorSpellcheckerNewServiceUrlEnabled();
 
 }  // namespace edge
 }  // namespace features

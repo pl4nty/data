@@ -23,13 +23,13 @@ message JourneyPageContentData {
   // Page url.
   optional string url = 3;
 
-  // Part of the page content used in Journey creation.
-  optional string page_content_body = 4;
+  // Part of the page content used in Journey creation (gzip compressed).
+  optional bytes compressed_page_content_body = 4;
 
-  // Page summary.
-  optional string page_content_summary = 5;
+  // Page summary (gzip compressed).
+  optional bytes compressed_page_content_summary = 5;
 
-  // Whethere this page content is filtered.
+  // Indicates if this page content is filtered.
   optional bool is_content_filtered = 6;
 }
 
@@ -51,13 +51,13 @@ message JourneyData {
   // Journey content data.
   optional string content_data = 2;
 
-  // Identifiers of journey image for destop and mobile.
+  // Identifiers of journey image for desktop and mobile.
   optional string desktop_image_id = 3;
   optional string mobile_image_id = 4;
 }
 
 message EdgeJourneySpecifics {
-  // An guid that refers to the sync journey object.
+  // A guid that refers to the sync journey object.
   optional string guid = 1;
 
   // Timestamps for CRUD operations.
@@ -70,4 +70,7 @@ message EdgeJourneySpecifics {
     JourneyData journey_data = 5;
     JourneyEventData journey_event_data = 6;
   }
+
+  // List of URLs extracted from page contents and event data source_set.
+  repeated string urls = 7;
 }

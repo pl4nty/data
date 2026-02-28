@@ -1,13 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2155635,
+    "size": 2169217,
     "file_count": 183
-  },
-  {
-    "name": "alsa",
-    "size": 27873,
-    "file_count": 7
   },
   {
     "name": "android_build_tools",
@@ -16,8 +11,8 @@
   },
   {
     "name": "android_deps",
-    "size": 11133426,
-    "file_count": 171
+    "size": 13060417,
+    "file_count": 183
   },
   {
     "name": "android_prebuilts",
@@ -41,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 15135594,
-    "file_count": 844
+    "size": 15171807,
+    "file_count": 845
   },
   {
     "name": "anonymous_tokens",
@@ -76,18 +71,18 @@
   },
   {
     "name": "blink",
-    "size": 32634798,
-    "file_count": 3992
+    "size": 32859850,
+    "file_count": 4007
   },
   {
     "name": "boringssl",
-    "size": 75680,
+    "size": 76205,
     "file_count": 15
   },
   {
     "name": "breakpad",
-    "size": 17982857,
-    "file_count": 1008
+    "size": 17987391,
+    "file_count": 1006
   },
   {
     "name": "cast_core",
@@ -131,7 +126,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 37215,
+    "size": 37249,
     "file_count": 5
   },
   {
@@ -141,13 +136,13 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 139935,
+    "size": 173977,
     "file_count": 5
   },
   {
     "name": "dawn",
-    "size": 36561834,
-    "file_count": 102
+    "size": 36565084,
+    "file_count": 107
   },
   {
     "name": "dbus",
@@ -156,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6967839,
+    "size": 6971857,
     "file_count": 66
   },
   {
@@ -166,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7187817,
+    "size": 7188160,
     "file_count": 29
   },
   {
@@ -195,9 +190,14 @@
     "file_count": 2
   },
   {
+    "name": "edge_user_context_platform",
+    "size": 3322,
+    "file_count": 5
+  },
+  {
     "name": "eigen3",
-    "size": 17733624,
-    "file_count": 2060
+    "size": 17810819,
+    "file_count": 2125
   },
   {
     "name": "entity_extraction",
@@ -215,11 +215,6 @@
     "file_count": 7
   },
   {
-    "name": "facebookresearch.fastText",
-    "size": 172873,
-    "file_count": 8
-  },
-  {
     "name": "farmhash",
     "size": 1244953,
     "file_count": 12
@@ -231,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 96680740,
-    "file_count": 11169
+    "size": 96874419,
+    "file_count": 11172
   },
   {
     "name": "flac",
@@ -266,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43748817,
-    "file_count": 3244
+    "size": 43869071,
+    "file_count": 3270
   },
   {
     "name": "googletest",
@@ -293,6 +288,11 @@
     "name": "harfbuzz-ng",
     "size": 298943,
     "file_count": 32
+  },
+  {
+    "name": "highway",
+    "size": 1117211,
+    "file_count": 15
   },
   {
     "name": "hunspell",
@@ -351,7 +351,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 28052,
+    "size": 28969,
     "file_count": 3
   },
   {
@@ -376,8 +376,8 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 49535,
-    "file_count": 40
+    "size": 57176,
+    "file_count": 43
   },
   {
     "name": "libbrlapi",
@@ -401,8 +401,8 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1139665,
-    "file_count": 88
+    "size": 1236189,
+    "file_count": 101
   },
   {
     "name": "libgudev",
@@ -471,13 +471,13 @@
   },
   {
     "name": "litert",
-    "size": 188676,
+    "size": 186912,
     "file_count": 67
   },
   {
     "name": "llvm-build",
-    "size": 223611146,
-    "file_count": 344
+    "size": 223633271,
+    "file_count": 346
   },
   {
     "name": "logilab",
@@ -486,12 +486,12 @@
   },
   {
     "name": "mediapipe",
-    "size": 660642,
-    "file_count": 339
+    "size": 661524,
+    "file_count": 336
   },
   {
     "name": "metrics_proto",
-    "size": 295611,
+    "size": 292337,
     "file_count": 47
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18830827,
+    "size": 19236331,
     "file_count": 19
   },
   {
@@ -556,8 +556,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 33381,
-    "file_count": 19
+    "size": 54938,
+    "file_count": 35
   },
   {
     "name": "oneds_sdk",
@@ -576,8 +576,8 @@
   },
   {
     "name": "openscreen",
-    "size": 1741808,
-    "file_count": 528
+    "size": 1745407,
+    "file_count": 529
   },
   {
     "name": "openxr",
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4018485,
-    "file_count": 584
+    "size": 4183106,
+    "file_count": 596
   },
   {
     "name": "perl",
@@ -656,12 +656,12 @@
   },
   {
     "name": "rust",
-    "size": 1175517,
-    "file_count": 148
+    "size": 1677010,
+    "file_count": 214
   },
   {
     "name": "screen-ai",
-    "size": 4572932,
+    "size": 4594733,
     "file_count": 83
   },
   {
@@ -681,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3481997,
-    "file_count": 1185
+    "size": 3476335,
+    "file_count": 1187
   },
   {
     "name": "speech-dispatcher",
@@ -696,17 +696,17 @@
   },
   {
     "name": "spirv-headers",
-    "size": 545365,
+    "size": 548427,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 200102,
+    "size": 200378,
     "file_count": 11
   },
   {
     "name": "sqlite",
-    "size": 565906,
+    "size": 568401,
     "file_count": 12
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1669914,
-    "file_count": 508
+    "size": 1686159,
+    "file_count": 522
   },
   {
     "name": "tflite_support",
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1408049,
+    "size": 1432447,
     "file_count": 23
   },
   {
@@ -761,13 +761,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2553662,
+    "size": 2609125,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 6938993,
-    "file_count": 184
+    "size": 7241828,
+    "file_count": 188
   },
   {
     "name": "vulkan_memory_allocator",
@@ -776,7 +776,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 263830,
+    "size": 263881,
     "file_count": 65
   },
   {
@@ -786,7 +786,7 @@
   },
   {
     "name": "webrtc",
-    "size": 104970,
+    "size": 105039,
     "file_count": 53
   },
   {
@@ -796,8 +796,8 @@
   },
   {
     "name": "win_build_output",
-    "size": 29546812,
-    "file_count": 626
+    "size": 29933270,
+    "file_count": 629
   },
   {
     "name": "wp.client",
@@ -808,6 +808,11 @@
     "name": "wpt_tools",
     "size": 383455,
     "file_count": 60
+  },
+  {
+    "name": "xnnpack",
+    "size": 1111,
+    "file_count": 5
   },
   {
     "name": "zstd",

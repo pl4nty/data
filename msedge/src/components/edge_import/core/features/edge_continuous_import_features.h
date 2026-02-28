@@ -248,6 +248,11 @@ BASE_DECLARE_FEATURE_TRIGGER(kImportEndedAfterAdvanceToCIConversion);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kTriggerAdvanceConsentUser);
 
+// Trigger fired when a color theme is found in the source browser during
+// import.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kUserColorThemeDetectedOnThemesImport);
+
 // Uploading diagnostic data for browser network usage.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportUploadBrowserNetworkUsage);
@@ -274,6 +279,9 @@ BASE_DECLARE_FEATURE(kAdvanceConsentForcefulCleanup);
 
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kCISettingsToggleRow);
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kCIRowInOtherImportOptionsSection);
 
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kHandleCIActivatedOnRemote);
@@ -320,6 +328,16 @@ BASE_DECLARE_FEATURE_TRIGGER(kContinuousImportInsertKeywordSearchTerms);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTerms);
 
+// Feature to show imported history keyword search terms in zero input
+// suggestions
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kContinuousImportUseSearchTermsInZeroInput);
+
+// Feature to generate keyword search terms from Imported history urls even if
+// user is not a Chrome PB user.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTermsIgnorePB);
+
 // Feature to observe visible browser launch for CI
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
@@ -345,14 +363,6 @@ BASE_DECLARE_FEATURE(kEnableNextSiteSuggestionInCodeForIndia);
 // Feature flag to enable sending subdomains for personalized launch
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kPersonalizedLaunchSendSubdomains);
-
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnLaunch[];
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-extern const char kPersonalizedLaunchSiteSuggestionsRestoredOnUserOptIn[];
-
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-extern const base::FeatureParam<std::string> kVariantTypeForSiteSuggestions;
 
 // Feature flag for disabling Autolaunch Activation across all devices for a
 // specific profile.

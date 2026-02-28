@@ -430,6 +430,18 @@ template("ios_edge_framework_bundle") {
   } else {
     ios_framework_bundle(target_name) {
       forward_variables_from(invoker, "*", [])
+
+      # The set_defaults uses default_compiler_configs (appropriate for the
+      # static library path). For the shared library path, add the missing
+      # linker and shared library configs so that lld is used (Apple ld cannot
+      # read Chromium-built .a archives) and proper iOS dynamic flags are set.
+      # Note: strip_all is intentionally omitted to avoid binary corruption
+      # caused by stripping frameworks with LC_ENCRYPTION_INFO_64.
+      configs += [
+        "//build/config:default_libs",
+        "//build/config/compiler:linker",
+        "//build/config:shared_library_config",
+      ]
     }
   }
 }

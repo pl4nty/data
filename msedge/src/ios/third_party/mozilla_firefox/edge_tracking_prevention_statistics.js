@@ -2,12 +2,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+import { sendWebKitMessage } from '//ios/web/public/js_messaging/resources/utils.js';
+
 'use strict';
 
 install();
 
 function install() {
-  let _enabled = true
+  let _enabled = true;
 
   Object.defineProperty(
       window, '__edgeTrackingPreventionStatistics',
@@ -25,46 +27,48 @@ function install() {
 
           _enabled = enabled;
           injectStatsTracking(enabled);
-        }
-      })
+        },
+      });
 
-  let sendUrls = new Array();
+  let sendUrls = [];
   let sendUrlsTimeout = null;
 
   function sendMessage(url) {
     if (!_enabled) {
-      return
+      return;
     }
 
     try {
-      let mainDocHost = document.location.host;
-      let u = new URL(url);
+      const mainDocHost = document.location.host;
+      const u = new URL(url);
       // First party urls are not blocked
       if (mainDocHost === u.host) {
-        return
+        return;
       }
     } catch (e) {
     }
 
     if (url) {
-      sendUrls.push(url)
+      sendUrls.push(url);
     }
 
     // If already set, return
-    if (sendUrlsTimeout)
+    if (sendUrlsTimeout) {
       return;
+    }
 
     // Send the URLs in batches every 200ms to avoid perf issues
     // from calling js-to-native too frequently.
     sendUrlsTimeout = setTimeout(() => {
       sendUrlsTimeout = null;
-      if (sendUrls.length < 1)
+      if (sendUrls.length < 1) {
         return;
+      }
 
-      __gCrWeb.common.sendWebKitMessage(
+      sendWebKitMessage(
           'EdgeTrackingPreventionHandler', {'blockedUrls': sendUrls});
 
-      sendUrls = new Array();
+      sendUrls = [];
     }, 200);
   }
 
@@ -80,7 +84,7 @@ function install() {
     [].slice.apply(document.getElementsByTagName('iframe'))
         .forEach(function(el) {
           sendMessage(el.src);
-        })
+        });
   }
 
   let originalXHROpen = null;
@@ -123,8 +127,8 @@ function install() {
 
     // WeakMaps for storing "private" properties that
     // are inaccessible to web content.
-    var _url = new WeakMap();
-    var _tpErrorHandler = new WeakMap();
+    const _url = new WeakMap();
+    const _tpErrorHandler = new WeakMap();
 
     XMLHttpRequest.prototype.open = function(method, url) {
       _url.set(this, url);
@@ -150,7 +154,7 @@ function install() {
         sendMessage(input.url);
       }
 
-      var result = originalFetch.apply(window, arguments);
+      const result = originalFetch.apply(window, arguments);
       return result;
     };
 
@@ -171,7 +175,7 @@ function install() {
       set: function(value) {
         sendMessage(this.src);
         originalImageSrc.set.call(this, value);
-      }
+      },
     });
 
     // -------------------------------------------------

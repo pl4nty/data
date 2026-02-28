@@ -5,6 +5,7 @@
 #ifndef CHROME_COMMON_IMPORTER_EDGE_IMPORTER_PROFILE_METRICS_H_
 #define CHROME_COMMON_IMPORTER_EDGE_IMPORTER_PROFILE_METRICS_H_
 
+#include "chrome/common/importer/edge_themes_import_item.h"
 #include "components/user_data_importer/common/importer_data_types.h"
 
 #if BUILDFLAG(IS_WIN)
@@ -352,9 +353,23 @@ enum class ThemesImportState {
   kColorThemeFound = 12,
   kColorThemeImported = 13,
   kColorThemeApplied = 14,
-  kColorThemeNotAppliedDueToFeatureFlagDisabled = 15,
+  kColorThemeNotAppliedDueToFeatureFlagDisabled = 15,  // Deprecated
   kColorThemeNotAppliedDueToNoUserConsent = 16,
-  kMaxValue = kColorThemeNotAppliedDueToNoUserConsent
+  kColorThemeImportedInForegroundMode = 17,
+  kColorThemeImportedInBackgroundMode = 18,
+  kThemeExtensionImportedInForegroundMode = 19,
+  kThemeExtensionImportedInBackgroundMode = 20,
+  kColorThemeFlyoutTriggered = 21,
+  kColorThemeFlyoutNotTriggeredInBackgroundMode = 22,
+  kThemeExtensionFlyoutNotTriggeredInBackgroundMode = 23,
+  kColorThemeFlyoutAccepted = 24,
+  kThemeExtensionFlyoutAccepted = 25,
+  kColorThemeFlyoutNotTriggeredDueToFeatureFlagDisabled = 26,
+  kColorThemeFlyoutTriggeredOnBrowserAdded = 27,
+  kThemeExtensionFlyoutTriggeredOnBrowserAdded = 28,
+  kColorThemeFlyoutTriggeredInForeground = 29,
+  kThemeExtensionFlyoutTriggeredInForeground = 30,
+  kMaxValue = kThemeExtensionFlyoutTriggeredInForeground
 };
 
 namespace metrics {
@@ -362,6 +377,10 @@ namespace metrics {
 #if BUILDFLAG(IS_WIN)
 inline constexpr std::string_view kEdgeContinuousThemesImportState =
     "Microsoft.ContinuousMigration.ThemesImport.State";
+
+inline constexpr std::string_view kEdgeContinuousImportUndoThemeTypeHistogram =
+    "Microsoft.ContinuousMigration.ImportedThemesApplied.Undo."
+    "ThemesImportType";
 #endif  // BUILDFLAG(IS_WIN)
 
 const char* GetImportTargetType(user_data_importer::ImporterType source_type);
@@ -557,6 +576,9 @@ void LogCopyFileErrorSize(user_data_importer::ImporterType source_type,
 
 // Log themes import state
 void LogThemesImportState(ThemesImportState state);
+
+// Log imported themes applied undo type
+void LogImportedThemesAppliedUndoType(ThemesImportType type);
 #endif
 
 // Log pref states for imported bool prefs
