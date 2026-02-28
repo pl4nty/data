@@ -173,7 +173,7 @@ def convert_lua(out, data):
 
 
 def decompile(infile, outscript):
-    result = subprocess.run(['luadec.exe', infile], capture_output=True)
+    result = subprocess.run(['java', '-jar', 'unluac.jar', infile], capture_output=True)
     with open(outscript, "wb") as f:
         f.write(result.stdout)
     return
