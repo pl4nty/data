@@ -42,7 +42,7 @@
         "BCDRReportEnableFilter": true,
         "BackFillGroupLicenseAssignmentId": true,
         "BackfillCloudAppListForImages": true,
-        "BackfillMitigateVsbWin10": false,
+        "BackfillMitigateVsbWin10": true,
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
         "Branding_And_Licensing": true,
