@@ -316,8 +316,20 @@
                 "id": "cdm-processors.vscode-cdm-extension"
             }
         },
-        "Iterative.dvc": true,
-        "Iterative.vscode-dvc-pack": true,
+        "Iterative.dvc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "DVC by lakeFS",
+                "id": "lakeFS.lakefs-dvc"
+            }
+        },
+        "Iterative.vscode-dvc-pack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "DVC extension pack",
+                "id": "lakeFS.lakefs-dvc-pack"
+            }
+        },
         "JITX.jitpcb-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -680,6 +692,13 @@
                 "id": "WSO2.micro-integrator"
             }
         },
+        "WangBowen.simple-scp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Simple SFTP Plus",
+                "id": "WangBowen.simple-sftp"
+            }
+        },
         "WhenSunset.chatgpt-china": true,
         "XGM.warcode": {
             "disallowInstall": true,
@@ -857,6 +876,13 @@
             "extension": {
                 "displayName": "Axon Ivy Designer 13",
                 "id": "axon-ivy.designer-13"
+            }
+        },
+        "axonivy.vscode-designer-13": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Axon Ivy PRO Designer 14",
+                "id": "axonivy.vscode-designer-14"
             }
         },
         "aykansal.anon": {

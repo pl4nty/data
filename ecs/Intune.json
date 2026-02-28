@@ -227,6 +227,7 @@
     },
     "SVC_AdHocQuery": {
         "FlightingV2": {
+            "CreateDeviceIngestedTable": true,
             "ExternalTableBGService": true,
             "TemplateEngineV2": true
         }
@@ -294,7 +295,8 @@
             "NoFallback_ComplianceFPADisabled": true,
             "NoFallback_Directory_ResourceSizeExceeded": true,
             "NoFallback_MSGraphGetUserAsync": true,
-            "NoFallback_OnAllException": true
+            "NoFallback_OnAllException": true,
+            "RefreshPCWithDifferentAADDeviceId": true
         }
     },
     "SVC_CorpDeviceEnrollment": {
@@ -303,6 +305,9 @@
             "DisablePermanentFailureOfSession": true,
             "EnableAPSyncRequestMessage": true,
             "EnableAcmeIncomingRequestValidation": true,
+            "EnableAppleACMEBYODEnrollment": true,
+            "EnableAppleACMEBulkUserEnrollment": true,
+            "EnableAppleACMEBulkUserlessEnrollment": true,
             "EnableGenerateAcmeNewNonce": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
@@ -323,8 +328,7 @@
             "QBSFSICoreHistoryMigrationSwitchOver": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch2": true,
-            "QBSFSICoreMigrationSwitchOverBatch3": true,
-            "QBSFSICoreMigrationSwitchOverBatch4": true
+            "QBSFSICoreMigrationSwitchOverBatch3": true
         }
     },
     "SVC_DataPlatformMetadata": {
@@ -428,6 +432,7 @@
     },
     "SVC_Pivot": {
         "FlightingV2": {
+            "EnableGenericQueryParser": true,
             "EnableMultiDevicePivotGACalls": true
         }
     },
