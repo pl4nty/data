@@ -1,0 +1,46 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
+L0_1 = mp
+L0_1 = L0_1.bitand
+L1_1 = mp
+L1_1 = L1_1.readu_u32
+L2_1 = headerpage
+L3_1 = 1
+L1_1 = L1_1(L2_1, L3_1)
+L2_1 = 16777215
+L0_1 = L0_1(L1_1, L2_1)
+if L0_1 ~= 5461830 then
+  L0_1 = mp
+  L0_1 = L0_1.CLEAN
+  return L0_1
+end
+L0_1 = {}
+L0_1["SCRIPT:FlashExp_90eb7133c9"] = 3
+L0_1["SCRIPT:FlashExp_241c61c3e8"] = 3
+L0_1["SCRIPT:FlashExp_21212121212121212121"] = 2
+L0_1["SCRIPT:FlashExp_90909090909090909090"] = 2
+L0_1["SCRIPT:FlashExp_loadbytes"] = 1
+L0_1["SCRIPT:FlashExp_enter_frame"] = 1
+L0_1["SCRIPT:FlashExp_gotoandplay"] = 1
+L0_1["SCRIPT:FlashExp_readunsignedbyte"] = 1
+L0_1["SCRIPT:FlashExp_writebyte"] = 1
+L1_1 = 0
+L2_1 = pairs
+L3_1 = L0_1
+L2_1, L3_1, L4_1 = L2_1(L3_1)
+for L5_1, L6_1 in L2_1, L3_1, L4_1 do
+  L7_1 = mp
+  L7_1 = L7_1.get_mpattribute
+  L8_1 = L5_1
+  L7_1 = L7_1(L8_1)
+  if L7_1 then
+    L1_1 = L1_1 + L6_1
+  end
+end
+if 10 <= L1_1 then
+  L2_1 = mp
+  L2_1 = L2_1.INFECTED
+  return L2_1
+end
+L2_1 = mp
+L2_1 = L2_1.CLEAN
+return L2_1
