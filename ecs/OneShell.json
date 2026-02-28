@@ -8,6 +8,7 @@
     },
     "OneShell": {
         "CopilotBannerLoaderEnabled": true,
+        "EnableSaveSettingsFix": true,
         "M365CopilotBannerEnabled": true,
         "M365CopilotBannerSelfHostInternalEnabled": false,
         "M365CopilotRebrandingEnabled": true,

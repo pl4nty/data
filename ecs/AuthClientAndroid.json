@@ -9,6 +9,7 @@
     "com.microsoft.identity.broker": {
         "EnableBrokerProtocolVersionCheck": true,
         "EnableDcfInBroker": true,
+        "ForceBrokerDiscoveryEnabledForIntune": true,
         "TelemetrySamplingRate": 0.25
     }
 }
