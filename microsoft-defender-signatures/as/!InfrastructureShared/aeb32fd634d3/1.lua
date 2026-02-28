@@ -1,0 +1,39 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = bm
+L0_1 = L0_1.get_current_process_startup_info
+L0_1 = L0_1()
+L1_1 = TrackPidAndTechniqueBM
+L2_1 = L0_1.ppid
+L3_1 = "T1562.001"
+L4_1 = "mptamper-titokensteal"
+L1_1(L2_1, L3_1, L4_1)
+L1_1 = nil
+L2_1 = nil
+L3_1 = this_sigattrlog
+L3_1 = L3_1[1]
+L3_1 = L3_1.matched
+if L3_1 then
+  L3_1 = this_sigattrlog
+  L3_1 = L3_1[1]
+  L1_1 = L3_1.p1
+  L3_1 = this_sigattrlog
+  L3_1 = L3_1[1]
+  L2_1 = L3_1.p2
+end
+L3_1 = bm
+L3_1 = L3_1.add_related_string
+L4_1 = "OldName"
+L5_1 = L1_1
+L6_1 = bm
+L6_1 = L6_1.RelatedStringBMReport
+L3_1(L4_1, L5_1, L6_1)
+L3_1 = bm
+L3_1 = L3_1.add_related_string
+L4_1 = "NewName"
+L5_1 = L2_1
+L6_1 = bm
+L6_1 = L6_1.RelatedStringBMReport
+L3_1(L4_1, L5_1, L6_1)
+L3_1 = mp
+L3_1 = L3_1.INFECTED
+return L3_1

@@ -1,0 +1,53 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1
+L0_1 = mp
+L0_1 = L0_1.GetNormalizedScript
+L1_1 = true
+L0_1 = L0_1(L1_1)
+L1_1 = {}
+L2_1 = string
+L2_1 = L2_1.gmatch
+L3_1 = L0_1
+L4_1 = "([Hh][Tt][Tt][Pp][Ss]?://%w.-)['\"]"
+L2_1, L3_1, L4_1 = L2_1(L3_1, L4_1)
+for L5_1 in L2_1, L3_1, L4_1 do
+  L6_1 = L1_1[L5_1]
+  if L6_1 == nil then
+    L6_1 = table
+    L6_1 = L6_1.insert
+    L7_1 = L1_1
+    L8_1 = L5_1
+    L6_1(L7_1, L8_1)
+  end
+end
+if L1_1 ~= nil then
+  L2_1 = #L1_1
+  if L2_1 ~= 0 then
+    goto lbl_30
+  end
+end
+L2_1 = mp
+L2_1 = L2_1.CLEAN
+do return L2_1 end
+::lbl_30::
+L2_1 = {}
+L2_1.SIG_CONTEXT = "LuaGen"
+L2_1.CONTENT_SOURCE = "HTML"
+L2_1.FILELESS = "false"
+L2_1.CMDLINE_URL = "false"
+L2_1.BREAK_AT_FIRST_HIT_MALWARE = "60"
+L2_1.BREAK_AT_FIRST_HIT_PHISH = "60"
+L2_1.BREAK_AT_FIRST_HIT_CLEAN = "60"
+L2_1.TAG = "Email"
+L3_1 = CheckUrlReputationSimple
+L4_1 = L1_1
+L5_1 = L2_1
+L6_1 = 60
+L3_1 = L3_1(L4_1, L5_1, L6_1)
+if L3_1 then
+  L4_1 = mp
+  L4_1 = L4_1.INFECTED
+  return L4_1
+end
+L4_1 = mp
+L4_1 = L4_1.CLEAN
+return L4_1

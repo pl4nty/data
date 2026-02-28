@@ -1,0 +1,34 @@
+local L0_1, L1_1
+L0_1 = 0
+L1_1 = hstrlog
+L1_1 = L1_1[1]
+L1_1 = L1_1.matched
+if L1_1 then
+  L0_1 = L0_1 + 1
+end
+L1_1 = hstrlog
+L1_1 = L1_1[2]
+L1_1 = L1_1.matched
+if L1_1 then
+  L0_1 = L0_1 + 1
+end
+L1_1 = mp
+L1_1 = L1_1.getfilesize
+L1_1 = L1_1()
+if L1_1 < 300000 then
+  if L0_1 ~= 2 then
+    L1_1 = hstrlog
+    L1_1 = L1_1[3]
+    L1_1 = L1_1.matched
+    if not L1_1 then
+      goto lbl_29
+    end
+  end
+  L1_1 = mp
+  L1_1 = L1_1.INFECTED
+  return L1_1
+end
+::lbl_29::
+L1_1 = mp
+L1_1 = L1_1.CLEAN
+return L1_1

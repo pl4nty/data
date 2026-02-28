@@ -1,0 +1,30 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = IsDetectionThresholdMet
+L1_1 = "BM"
+L0_1 = L0_1(L1_1)
+if L0_1 then
+  L0_1 = GetRollingQueueKeysAsString
+  L1_1 = "TT_ModifiedServices"
+  L2_1 = "|"
+  L0_1 = L0_1(L1_1, L2_1)
+  if L0_1 then
+    L1_1 = bm
+    L1_1 = L1_1.add_related_string
+    L2_1 = "TT_ModifiedServices"
+    L3_1 = L0_1
+    L4_1 = bm
+    L4_1 = L4_1.RelatedStringBMReport
+    L1_1(L2_1, L3_1, L4_1)
+    L1_1 = TrackPidAndTechniqueBM
+    L2_1 = "BM"
+    L3_1 = "T1489"
+    L4_1 = "mass_service_stop"
+    L1_1(L2_1, L3_1, L4_1)
+    L1_1 = mp
+    L1_1 = L1_1.INFECTED
+    return L1_1
+  end
+end
+L0_1 = mp
+L0_1 = L0_1.CLEAN
+return L0_1

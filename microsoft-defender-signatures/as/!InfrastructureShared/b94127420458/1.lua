@@ -1,0 +1,99 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
+L0_1 = {}
+L1_1 = this_sigattrlog
+L1_1 = L1_1[3]
+L1_1 = L1_1.np2
+L0_1.source_port = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[2]
+L1_1 = L1_1.utf8p1
+L0_1.destination_address = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[2]
+L1_1 = L1_1.np2
+L0_1.destination_port = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[4]
+L1_1 = L1_1.np1
+L0_1.protocol_p1 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[4]
+L1_1 = L1_1.np2
+L0_1.protocol_p2 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[5]
+L1_1 = L1_1.np1
+L0_1.client_version_p1 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[5]
+L1_1 = L1_1.np2
+L0_1.client_version_p2 = L1_1
+L1_1 = string
+L1_1 = L1_1.match
+L2_1 = this_sigattrlog
+L2_1 = L2_1[6]
+L2_1 = L2_1.utf8p1
+L3_1 = "Cookie: mstshash=(.*)"
+L1_1 = L1_1(L2_1, L3_1)
+L0_1.cookie = L1_1
+L1_1 = string
+L1_1 = L1_1.match
+L2_1 = this_sigattrlog
+L2_1 = L2_1[6]
+L2_1 = L2_1.utf8p1
+L3_1 = "Cookie: msts=(.*)"
+L1_1 = L1_1(L2_1, L3_1)
+L0_1.routing_token = L1_1
+L1_1 = L0_1.cookie
+if not L1_1 then
+  L1_1 = L0_1.routing_token
+  if not L1_1 then
+    L1_1 = this_sigattrlog
+    L1_1 = L1_1[6]
+    L1_1 = L1_1.utf8p1
+    L0_1.undefined_cookie = L1_1
+  end
+end
+L1_1 = this_sigattrlog
+L1_1 = L1_1[6]
+L1_1 = L1_1.np2
+L0_1.client_security_p2 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[7]
+L1_1 = L1_1.np1
+L0_1.server_negotiation_p1 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[7]
+L1_1 = L1_1.np2
+L0_1.server_negotiation_p2 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[8]
+L1_1 = L1_1.np1
+L0_1.client_encryption_p1 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[8]
+L1_1 = L1_1.np2
+L0_1.client_encryption_p2 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[9]
+L1_1 = L1_1.np1
+L0_1.client_cluster_flags_p1 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[9]
+L1_1 = L1_1.np2
+L0_1.client_cluster_flags_p2 = L1_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[3]
+L1_1 = L1_1.utf8p1
+L2_1 = AppendToRollingQueue
+L3_1 = "RDPIncomingConnection"
+L4_1 = L1_1
+L5_1 = safeJsonSerialize
+L6_1 = L0_1
+L5_1 = L5_1(L6_1)
+L6_1 = 3600
+L7_1 = 100
+L2_1(L3_1, L4_1, L5_1, L6_1, L7_1)
+L2_1 = mp
+L2_1 = L2_1.INFECTED
+return L2_1

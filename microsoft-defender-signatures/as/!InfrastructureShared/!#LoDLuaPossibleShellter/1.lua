@@ -1,0 +1,42 @@
+local L0_1, L1_1
+L0_1 = pehdr
+L0_1 = L0_1.DllCharacteristics
+if L0_1 ~= 0 then
+  L0_1 = mp
+  L0_1 = L0_1.CLEAN
+  return L0_1
+end
+L0_1 = peattributes
+L0_1 = L0_1.isexe
+if L0_1 ~= true then
+  L0_1 = mp
+  L0_1 = L0_1.CLEAN
+  return L0_1
+end
+L0_1 = pehdr
+L0_1 = L0_1.DataDirectory
+L0_1 = L0_1[4]
+L0_1 = L0_1.RVA
+if L0_1 == 0 then
+  L0_1 = pehdr
+  L0_1 = L0_1.DataDirectory
+  L0_1 = L0_1[4]
+  L0_1 = L0_1.Size
+  if L0_1 == 0 then
+    goto lbl_30
+  end
+end
+L0_1 = mp
+L0_1 = L0_1.CLEAN
+do return L0_1 end
+::lbl_30::
+L0_1 = pehdr
+L0_1 = L0_1.Machine
+if L0_1 ~= 332 then
+  L0_1 = mp
+  L0_1 = L0_1.CLEAN
+  return L0_1
+end
+L0_1 = mp
+L0_1 = L0_1.INFECTED
+return L0_1

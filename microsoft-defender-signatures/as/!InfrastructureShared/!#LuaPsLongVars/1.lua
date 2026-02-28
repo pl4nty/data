@@ -1,0 +1,29 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1
+L0_1 = mp
+L0_1 = L0_1.getfilesize
+L0_1 = L0_1()
+if L0_1 == nil or L0_1 < 2000000 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L1_1 = mp
+L1_1 = L1_1.GetNormalizedScript
+L2_1 = true
+L1_1 = L1_1(L2_1)
+L2_1 = string
+L2_1 = L2_1.gmatch
+L3_1 = L1_1
+L4_1 = "%$[a-zA-Z0-9_]+"
+L2_1, L3_1, L4_1 = L2_1(L3_1, L4_1)
+for L5_1 in L2_1, L3_1, L4_1 do
+  L6_1 = #L5_1
+  if 150 < L6_1 then
+    L6_1 = mp
+    L6_1 = L6_1.INFECTED
+    return L6_1
+  end
+end
+L2_1 = mp
+L2_1 = L2_1.CLEAN
+return L2_1

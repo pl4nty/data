@@ -1,0 +1,371 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1
+L0_1 = mp
+L0_1 = L0_1.getfilesize
+L0_1 = L0_1()
+if L0_1 ~= nil and 8192 <= L0_1 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L1_1 = mp
+L1_1 = L1_1.enum_mpattributesubstring
+L2_1 = "SCPT:ClnWordsCat1"
+L1_1 = L1_1(L2_1)
+L2_1 = mp
+L2_1 = L2_1.enum_mpattributesubstring
+L3_1 = "SCPT:ClnWordsCat2"
+L2_1 = L2_1(L3_1)
+L3_1 = mp
+L3_1 = L3_1.enum_mpattributesubstring
+L4_1 = "SCPT:ClnWordsCat3"
+L3_1 = L3_1(L4_1)
+L4_1 = #L1_1
+if not (1 <= L4_1) then
+  L4_1 = #L1_1
+  L5_1 = #L2_1
+  L4_1 = L4_1 + L5_1
+  if not (6 <= L4_1) then
+    L4_1 = #L3_1
+    if not (3 <= L4_1) then
+      goto lbl_37
+    end
+  end
+end
+L4_1 = mp
+L4_1 = L4_1.CLEAN
+do return L4_1 end
+::lbl_37::
+L4_1 = mp
+L4_1 = L4_1.enum_mpattributesubstring
+L5_1 = "SCPT:RansomNoteCat1"
+L4_1 = L4_1(L5_1)
+L5_1 = mp
+L5_1 = L5_1.enum_mpattributesubstring
+L6_1 = "SCPT:RansomNoteCat2"
+L5_1 = L5_1(L6_1)
+L6_1 = mp
+L6_1 = L6_1.enum_mpattributesubstring
+L7_1 = "SCPT:RansomNoteCat3"
+L6_1 = L6_1(L7_1)
+L7_1 = mp
+L7_1 = L7_1.enum_mpattributesubstring
+L8_1 = "SCPT:RansomNoteCat4"
+L7_1 = L7_1(L8_1)
+L8_1 = mp
+L8_1 = L8_1.enum_mpattributesubstring
+L9_1 = "SCPT:RansomNoteCat5"
+L8_1 = L8_1(L9_1)
+L9_1 = mp
+L9_1 = L9_1.enum_mpattributesubstring
+L10_1 = "SCPT:RansomNoteCat6"
+L9_1 = L9_1(L10_1)
+L10_1 = #L4_1
+L11_1 = #L5_1
+L10_1 = L10_1 + L11_1
+if L10_1 ~= 0 then
+  L11_1 = #L6_1
+  if L11_1 ~= 0 then
+    L11_1 = #L7_1
+    L12_1 = #L8_1
+    L11_1 = L11_1 + L12_1
+    L12_1 = #L9_1
+    L11_1 = L11_1 + L12_1
+    if not (L11_1 <= 2) then
+      goto lbl_79
+    end
+  end
+end
+L11_1 = mp
+L11_1 = L11_1.CLEAN
+do return L11_1 end
+::lbl_79::
+L11_1 = mp
+L11_1 = L11_1.HEADERPAGE_SZ
+if L11_1 < 1596 then
+  L11_1 = mp
+  L11_1 = L11_1.CLEAN
+  return L11_1
+end
+L11_1 = tostring
+L12_1 = headerpage
+L11_1 = L11_1(L12_1)
+L12_1 = {}
+L12_1.infect = 500
+L12_1.ransom = 500
+L12_1.attack = 200
+L12_1.corrupt = 200
+L12_1.damage = 200
+L12_1.locked = 200
+L12_1.payment = 200
+L12_1.purchase = 200
+L12_1.recover = 200
+L12_1.restore = 200
+L12_1.secret = 200
+L12_1.hacked = 100
+L12_1["buy bitcoins"] = 500
+L12_1["decrypt data"] = 500
+L12_1["decrypt files"] = 500
+L12_1["decryption tool"] = 500
+L12_1["encrypted files"] = 500
+L12_1["files encrypted"] = 500
+L12_1.onion = 500
+L12_1["recover files"] = 500
+L12_1["restore files"] = 500
+L12_1["aes-128"] = 200
+L12_1.bitcoin = 200
+L12_1["rsa-1024"] = 200
+L12_1["rsa-2048"] = 200
+L12_1["send decryption"] = 200
+L12_1["tor browser"] = 200
+L12_1["tor project"] = 200
+L12_1.torbrowser = 200
+L12_1["tor-browser"] = 200
+L12_1.wallet = 200
+L12_1["aes 128"] = 100
+L12_1["aes 256"] = 100
+L12_1["aes-256"] = 100
+L12_1["airmail.cc"] = 100
+L12_1["bitmessage.ch"] = 100
+L12_1.cipher = 100
+L12_1.cryptocurrencies = 100
+L12_1["cryptography algorithm"] = 100
+L12_1.cryptosystem = 100
+L12_1.extension = 100
+L12_1["firemail.cc"] = 100
+L12_1.guarantee = 100
+L12_1["important files"] = 100
+L12_1["mail.ch"] = 100
+L12_1["private key"] = 100
+L12_1.protonmail = 100
+L12_1["rsa 1024"] = 100
+L12_1["rsa 2048"] = 100
+L12_1["tuta.io"] = 100
+L12_1.tutanota = 100
+L12_1["return files"] = 50
+L12_1["third part"] = 50
+L12_1["third-part"] = 50
+L12_1["write email"] = 50
+L12_1.weakness = 20
+L12_1.decryption = 100
+L12_1.encryption = 100
+L12_1.overwrite = 100
+L12_1.permanent = 100
+L12_1.scam = 100
+L12_1.unlock = 100
+L12_1["valuable data"] = 100
+L12_1.dropbox = 50
+L12_1.encrypted = 50
+L12_1.files = 50
+L12_1.identification = 50
+L12_1.important = 50
+L12_1.impossib = 50
+L12_1.irrevocably = 50
+L12_1.lose = 50
+L12_1.paying = 50
+L12_1.personal = 50
+L12_1.price = 50
+L12_1.program = 50
+L12_1.shutdown = 50
+L12_1.strong = 50
+L12_1.warning = 50
+L12_1.website = 50
+L12_1.assistance = 20
+L12_1.attention = 20
+L12_1.business = 20
+L12_1.chat = 20
+L12_1.computer = 20
+L12_1.data = 20
+L12_1.documents = 20
+L12_1.download = 20
+L12_1.folder = 20
+L12_1.follow = 20
+L12_1.free = 20
+L12_1.hours = 20
+L12_1.https = 20
+L12_1.hxxps = 20
+L12_1.information = 20
+L12_1.install = 20
+L12_1.instruction = 20
+L12_1.mail = 20
+L12_1.money = 20
+L12_1.photos = 20
+L12_1.possible = 20
+L12_1.private = 20
+L12_1.problem = 20
+L12_1["return"] = 20
+L12_1.send = 20
+L12_1.server = 20
+L12_1.software = 20
+L12_1.sure = 20
+L12_1.time = 20
+L12_1.tool = 20
+L12_1.unique = 20
+L12_1.video = 20
+L12_1.danger = 200
+L12_1.locker = 100
+L12_1.greetings = 20
+L12_1.welcome = 20
+L12_1.sorry = 100
+L12_1["what happened"] = 50
+L12_1["crypto locker"] = 500
+L12_1["bad news"] = 100
+L12_1["do not worry"] = 100
+L12_1["dont worry"] = 100
+L12_1["contact us"] = 50
+L12_1["restore file"] = 200
+L12_1["please be careful"] = 200
+L12_1["read this text carefully"] = 200
+L12_1["do not modify"] = 200
+L12_1["do not delete"] = 200
+L12_1["do not rename"] = 200
+L12_1["do not try restore"] = 200
+L12_1.decoded = 50
+L12_1["your network"] = 100
+L12_1["personal files"] = 200
+L12_1["all your data"] = 200
+L12_1["recover my files"] = 200
+L12_1["bitcoin network"] = 200
+L12_1["bitcoin wallet"] = 200
+L12_1.bitfinex = 200
+L12_1.bitpanda = 200
+L12_1.bitquick = 200
+L12_1.bitstamp = 200
+L12_1.bittybot = 200
+L12_1.bittylicious = 200
+L12_1.btcdirect = 200
+L12_1.coinatmradar = 200
+L12_1.coinbase = 200
+L12_1.coincafe = 200
+L12_1.coincorner = 200
+L12_1.coindesk = 200
+L12_1.coinfinity = 200
+L12_1.coinfloor = 200
+L12_1.coinhouse = 200
+L12_1.coinmama = 200
+L12_1.cubits = 200
+L12_1["file decryption costs money"] = 500
+L12_1["free decryption"] = 200
+L12_1["get private key"] = 200
+L12_1["got hacked"] = 500
+L12_1["guarantee before paying"] = 500
+L12_1["guarantee file recovery"] = 500
+L12_1["guaranteed recovery"] = 500
+L12_1.happycoins = 200
+L12_1["install tor"] = 500
+L12_1["irrevocably changed"] = 200
+L12_1.localbitcoins = 200
+L12_1["military grade algorithms"] = 500
+L12_1["much expensive"] = 100
+L12_1["obtain bitcoins"] = 200
+L12_1["permanent data loss"] = 200
+L12_1["permanently deleted"] = 200
+L12_1["purchase bitcoins"] = 500
+L12_1["purchase decrypt tool"] = 200
+L12_1["recovering files"] = 200
+L12_1["rename encrypted files"] = 200
+L12_1["military grade encryption"] = 500
+L12_1["strongest encryption"] = 500
+L12_1["bad luck"] = 100
+L12_1["compromised data downloaded"] = 100
+L12_1["contain valuable data"] = 50
+L12_1["decryption test"] = 100
+L12_1["decryptor home page"] = 100
+L12_1["easiest way"] = 50
+L12_1["enough time"] = 50
+L12_1["following steps"] = 50
+L12_1["may cause increased price"] = 200
+L12_1["never restore"] = 100
+L12_1["original files back"] = 100
+L12_1["payment method"] = 200
+L12_1["payments history"] = 50
+L12_1.paypal = 100
+L12_1["personal code"] = 100
+L12_1["personal id"] = 50
+L12_1["personal identification number"] = 50
+L12_1["secret server !!!"] = 100
+L12_1["security problem"] = 50
+L12_1["special price"] = 100
+L12_1["specified time"] = 50
+L12_1["strong encryption"] = 200
+L12_1["unique key"] = 100
+L12_1["waste time trying"] = 200
+L12_1["waste valuable time searching"] = 200
+L12_1["data using third party software"] = 200
+L12_1["data within"] = 20
+L12_1["data without payment"] = 200
+L12_1["get answer"] = 20
+L12_1["key file"] = 20
+L12_1["letter must contain"] = 20
+L12_1["please follow"] = 50
+L12_1["please note"] = 50
+L12_1["please scroll"] = 50
+L12_1["price depends"] = 100
+L12_1.protected = 20
+L12_1["send one"] = 20
+L12_1["send us"] = 20
+L12_1["send us prvkey"] = 200
+L12_1["software payments"] = 200
+L12_1.sooner = 50
+L12_1["telegram id"] = 20
+L12_1["total received"] = 20
+L12_1["trust us"] = 100
+L12_1["try searching"] = 200
+L12_1["use free decryption tools"] = 200
+L12_1.victim = 100
+L12_1["within 24 hours"] = 200
+L12_1["without saving prvkey"] = 200
+L12_1["write us"] = 20
+L13_1 = 0
+L14_1 = 0
+L15_1 = pairs
+L16_1 = L12_1
+L15_1, L16_1, L17_1 = L15_1(L16_1)
+for L18_1, L19_1 in L15_1, L16_1, L17_1 do
+  L20_1 = 0
+  L21_1 = 0
+  while true do
+    L22_1 = string
+    L23_1 = "find"
+    L22_1 = L22_1[L23_1]
+    L23_1 = L11_1
+    L24_1 = L18_1
+    L25_1 = 1
+    L25_1 = L20_1 + L25_1
+    L22_1 = L22_1(L23_1, L24_1, L25_1)
+    L20_1 = L22_1
+    L22_1 = nil
+    if L20_1 == L22_1 then
+      break
+    end
+    L22_1 = 0
+    if L21_1 == L22_1 then
+      L22_1 = 1
+      L14_1 = L14_1 + L22_1
+    end
+    L13_1 = L13_1 + L19_1
+    L22_1 = 1
+    L21_1 = L21_1 + L22_1
+    L22_1 = 5
+    if L21_1 == L22_1 then
+      break
+    end
+  end
+end
+L15_1 = 2500
+if L13_1 >= L15_1 then
+  L15_1 = 10
+  if L14_1 >= L15_1 then
+    L15_1 = mp
+    L16_1 = "set_mpattribute"
+    L15_1 = L15_1[L16_1]
+    L16_1 = "MpDisableCaching"
+    L15_1(L16_1)
+    L15_1 = mp
+    L16_1 = "INFECTED"
+    L15_1 = L15_1[L16_1]
+    return L15_1
+  end
+end
+L15_1 = mp
+L15_1 = L15_1.CLEAN
+return L15_1

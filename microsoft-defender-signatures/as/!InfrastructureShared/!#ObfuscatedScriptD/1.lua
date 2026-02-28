@@ -1,0 +1,124 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1
+L0_1 = mp
+L0_1 = L0_1.get_contextdata
+L1_1 = mp
+L1_1 = L1_1.CONTEXT_DATA_SCANREASON
+L0_1 = L0_1(L1_1)
+L1_1 = mp
+L1_1 = L1_1.SCANREASON_ONOPEN
+if L0_1 ~= L1_1 then
+  L1_1 = mp
+  L1_1 = L1_1.SCANREASON_ONMODIFIEDHANDLECLOSE
+  if L0_1 ~= L1_1 then
+    L1_1 = mp
+    L1_1 = L1_1.CLEAN
+    return L1_1
+  end
+end
+L1_1 = string
+L1_1 = L1_1.lower
+L2_1 = string
+L2_1 = L2_1.sub
+L3_1 = mp
+L3_1 = L3_1.get_contextdata
+L4_1 = mp
+L4_1 = L4_1.CONTEXT_DATA_FILENAME
+L3_1 = L3_1(L4_1)
+L4_1 = -3
+L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1 = L2_1(L3_1, L4_1)
+L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1)
+L2_1 = string
+L2_1 = L2_1.lower
+L3_1 = string
+L3_1 = L3_1.sub
+L4_1 = mp
+L4_1 = L4_1.get_contextdata
+L5_1 = mp
+L5_1 = L5_1.CONTEXT_DATA_FILENAME
+L4_1 = L4_1(L5_1)
+L5_1 = -4
+L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1 = L3_1(L4_1, L5_1)
+L2_1 = L2_1(L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1)
+if L1_1 ~= ".js" and L2_1 ~= ".vbs" and L2_1 ~= ".ps1" and L2_1 ~= ".wsf" then
+  L3_1 = mp
+  L3_1 = L3_1.CLEAN
+  return L3_1
+end
+L3_1 = BuildHexadecimalHistogram
+L3_1 = L3_1()
+L4_1 = L3_1[1]
+if L4_1 == 0 or L4_1 == nil then
+  L5_1 = mp
+  L5_1 = L5_1.CLEAN
+  return L5_1
+end
+L5_1 = L3_1[2]
+L6_1 = 0
+L7_1 = 0
+L8_1 = pairs
+L9_1 = L5_1
+L8_1, L9_1, L10_1 = L8_1(L9_1)
+for L11_1, L12_1 in L8_1, L9_1, L10_1 do
+  if 3 < L11_1 then
+    if L12_1 > L6_1 then
+      L7_1 = L6_1
+      L6_1 = L12_1
+    elseif L12_1 < L6_1 and L12_1 > L7_1 then
+      L7_1 = L12_1
+    end
+  end
+end
+L8_1 = BuildAlphaNumericHistogram
+L8_1 = L8_1()
+L9_1 = L8_1[1]
+if L9_1 == 0 or L9_1 == nil then
+  L10_1 = mp
+  L10_1 = L10_1.CLEAN
+  return L10_1
+end
+L10_1 = L8_1[2]
+L11_1 = 0
+L12_1 = 0
+L13_1 = pairs
+L14_1 = L10_1
+L13_1, L14_1, L15_1 = L13_1(L14_1)
+for L16_1, L17_1 in L13_1, L14_1, L15_1 do
+  if 3 < L16_1 then
+    if L17_1 > L11_1 then
+      L12_1 = L11_1
+      L11_1 = L17_1
+    elseif L17_1 < L11_1 and L17_1 > L12_1 then
+      L12_1 = L17_1
+    end
+  end
+end
+L13_1 = L4_1 * 100
+L13_1 = L13_1 / L9_1
+if not (30 <= L13_1) then
+  L13_1 = L6_1 + L7_1
+  L13_1 = L13_1 * 100
+  L13_1 = L13_1 / L9_1
+  if not (25 <= L13_1) then
+    L13_1 = L6_1 * 100
+    L13_1 = L13_1 / L9_1
+    if not (20 <= L13_1) then
+      L13_1 = L11_1 + L12_1
+      L13_1 = L13_1 * 100
+      L13_1 = L13_1 / L9_1
+      if not (40 <= L13_1) then
+        L13_1 = L11_1 * 100
+        L13_1 = L13_1 / L9_1
+        if not (25 <= L13_1) then
+          goto lbl_139
+        end
+      end
+    end
+  end
+end
+L13_1 = mp
+L13_1 = L13_1.INFECTED
+do return L13_1 end
+::lbl_139::
+L13_1 = mp
+L13_1 = L13_1.CLEAN
+return L13_1

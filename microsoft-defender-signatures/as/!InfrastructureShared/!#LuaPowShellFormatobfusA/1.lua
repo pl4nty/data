@@ -1,0 +1,75 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = mp
+L0_1 = L0_1.getfilename
+L1_1 = mp
+L1_1 = L1_1.FILEPATH_QUERY_LOWERCASE
+L0_1 = L0_1(L1_1)
+L2_1 = L0_1
+L1_1 = L0_1.find
+L3_1 = "psdeobfus-stg1"
+L4_1 = 1
+L5_1 = true
+L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1)
+if L1_1 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L1_1 = tostring
+L2_1 = headerpage
+L1_1 = L1_1(L2_1)
+if L1_1 then
+  L2_1 = string
+  L2_1 = L2_1.gsub
+  L3_1 = L1_1
+  L4_1 = "`?%s?"
+  L5_1 = ""
+  L2_1 = L2_1(L3_1, L4_1, L5_1)
+  L1_1 = L2_1
+  L2_1 = string
+  L2_1 = L2_1.gsub
+  L3_1 = L1_1
+  L4_1 = "[%'\"]%)?%+%(?[%'\"]"
+  L5_1 = ""
+  L2_1 = L2_1(L3_1, L4_1, L5_1)
+  L1_1 = L2_1
+  L2_1 = string
+  L2_1 = L2_1.gsub
+  L3_1 = L1_1
+  L4_1 = "%([%'\"]([%w%.%-]+)[%'\"]%)"
+  L5_1 = "'%1'"
+  L2_1 = L2_1(L3_1, L4_1, L5_1)
+  L1_1 = L2_1
+  L2_1 = string
+  L2_1 = L2_1.gsub
+  L3_1 = L1_1
+  L4_1 = "%.[%'\"](%w+)[%'\"]"
+  L5_1 = "%.%1"
+  L2_1 = L2_1(L3_1, L4_1, L5_1)
+  L1_1 = L2_1
+  L2_1 = string
+  L2_1 = L2_1.gsub
+  L3_1 = L1_1
+  L4_1 = "::[%'\"](%w+)[%'\"]"
+  L5_1 = "::%1"
+  L2_1 = L2_1(L3_1, L4_1, L5_1)
+  L1_1 = L2_1
+  L2_1 = string
+  L2_1 = L2_1.lower
+  L3_1 = L1_1
+  L2_1 = L2_1(L3_1)
+  L1_1 = L2_1
+  L2_1 = mp
+  L2_1 = L2_1.vfo_add_buffer
+  L3_1 = L1_1
+  L4_1 = "[psdeobfus-stg1]"
+  L5_1 = mp
+  L5_1 = L5_1.ADD_VFO_TAKE_ACTION_ON_DAD
+  L2_1(L3_1, L4_1, L5_1)
+  L2_1 = mp
+  L2_1 = L2_1.INFECTED
+  return L2_1
+end
+L2_1 = mp
+L2_1 = L2_1.CLEAN
+return L2_1

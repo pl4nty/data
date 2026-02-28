@@ -1,0 +1,84 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = mp
+L0_1 = L0_1.GetScannedPPID
+L0_1 = L0_1()
+if L0_1 ~= nil then
+  L1_1 = string
+  L1_1 = L1_1.lower
+  L2_1 = mp
+  L2_1 = L2_1.GetProcessCommandLine
+  L3_1 = L0_1
+  L2_1, L3_1, L4_1, L5_1 = L2_1(L3_1)
+  L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1)
+  if L1_1 == nil then
+    L2_1 = mp
+    L2_1 = L2_1.CLEAN
+    return L2_1
+  end
+  L2_1 = L1_1.find
+  L3_1 = "ffffffff%s+.force"
+  L2_1 = L2_1(L3_1)
+  if L2_1 then
+    L2_1 = mp
+    L2_1 = L2_1.CLEAN
+    return L2_1
+  end
+  L2_1 = string
+  L2_1 = L2_1.match
+  L3_1 = L1_1
+  L4_1 = "conhost%.exe$"
+  L2_1 = L2_1(L3_1, L4_1)
+  if not L2_1 then
+    L2_1 = string
+    L2_1 = L2_1.match
+    L3_1 = L1_1
+    L4_1 = "conhost%.exe[^a-z0-9A-Z]*$"
+    L2_1 = L2_1(L3_1, L4_1)
+    if not L2_1 then
+      L2_1 = string
+      L2_1 = L2_1.match
+      L3_1 = L1_1
+      L4_1 = "%d%d%d%d%d+%-%d%d%d%d%d+%-%d%d%d%d%d+%-%d%d%d%d%d"
+      L2_1 = L2_1(L3_1, L4_1)
+      if not L2_1 then
+        L2_1 = string
+        L2_1 = L2_1.match
+        L3_1 = L1_1
+        L4_1 = " 0xfff"
+        L2_1 = L2_1(L3_1, L4_1)
+        if not L2_1 then
+          L2_1 = string
+          L2_1 = L2_1.match
+          L3_1 = L1_1
+          L4_1 = "0x4"
+          L2_1 = L2_1(L3_1, L4_1)
+          if not L2_1 then
+            L2_1 = string
+            L2_1 = L2_1.match
+            L3_1 = L1_1
+            L4_1 = "--headless"
+            L2_1 = L2_1(L3_1, L4_1)
+            if not L2_1 then
+              goto lbl_71
+            end
+          end
+        end
+      end
+    end
+  end
+  L2_1 = mp
+  L2_1 = L2_1.CLEAN
+  do return L2_1 end
+  ::lbl_71::
+  L2_1 = TrackPidAndTechnique
+  L3_1 = L0_1
+  L4_1 = "T1202"
+  L5_1 = "indirectcmdexec"
+  L2_1(L3_1, L4_1, L5_1)
+  L2_1 = mp
+  L2_1 = L2_1.LOWFI
+  return L2_1
+end
+L1_1 = mp
+L1_1 = L1_1.CLEAN
+return L1_1

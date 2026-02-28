@@ -1,0 +1,45 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1
+L0_1 = GetPersistContextValueForKeyRegex
+L1_1 = "NewServiceRegistered_LoadsBeforeEdr"
+L0_1 = L0_1(L1_1)
+if L0_1 then
+  L1_1 = next
+  L2_1 = L0_1
+  L1_1 = L1_1(L2_1)
+  if L1_1 then
+    L1_1 = bm
+    L1_1 = L1_1.add_related_string
+    L2_1 = "NewMinifilterServiceRegistered"
+    L3_1 = safeJsonSerialize
+    L4_1 = L0_1
+    L3_1 = L3_1(L4_1)
+    L4_1 = bm
+    L4_1 = L4_1.RelatedStringBMReport
+    L1_1(L2_1, L3_1, L4_1)
+  end
+end
+L1_1 = this_sigattrlog
+L1_1 = L1_1[1]
+L1_1 = L1_1.matched
+if not L1_1 then
+  L1_1 = this_sigattrlog
+  L1_1 = L1_1[2]
+  L1_1 = L1_1.matched
+  if not L1_1 then
+    goto lbl_35
+  end
+end
+L1_1 = SetPersistContextNoPath
+L2_1 = "SymLinkCreatedForMDE"
+L3_1 = "AV"
+L1_1(L2_1, L3_1)
+goto lbl_39
+::lbl_35::
+L1_1 = SetPersistContextNoPath
+L2_1 = "SymLinkCreatedForMDE"
+L3_1 = "EDR"
+L1_1(L2_1, L3_1)
+::lbl_39::
+L1_1 = mp
+L1_1 = L1_1.INFECTED
+return L1_1

@@ -1,0 +1,52 @@
+local L0_1, L1_1, L2_1, L3_1
+L0_1 = reportAndSinkholeDNSTelemetry
+L1_1 = "altDNSServerUsage"
+L2_1 = "AlternateDNSServerUsage"
+L0_1(L1_1, L2_1)
+L0_1 = MpCommon
+L0_1 = L0_1.SetPersistContextNoPath
+L1_1 = "altDNSServerUsage"
+L2_1 = {}
+L3_1 = 1
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = bm
+L0_1 = L0_1.add_related_string
+L1_1 = "debug"
+L2_1 = "Current"
+L3_1 = bm
+L3_1 = L3_1.RelatedStringBMReport
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = reportPersistedContext
+L1_1 = "dnsServers"
+L2_1 = "bmurl"
+L3_1 = "AlternateDNSServerUsage"
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = bm
+L0_1 = L0_1.add_related_string
+L1_1 = "debug"
+L2_1 = "Previous"
+L3_1 = bm
+L3_1 = L3_1.RelatedStringBMReport
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = reportPersistedContext
+L1_1 = "lastDnsServers"
+L2_1 = "bmurl"
+L3_1 = "AlternateDNSServerUsage"
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = bm
+L0_1 = L0_1.add_related_string
+L1_1 = "debug"
+L2_1 = "Refresh"
+L3_1 = bm
+L3_1 = L3_1.RelatedStringBMReport
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = updateSystemDNSServers
+L0_1()
+L0_1 = reportPersistedContext
+L1_1 = "dnsServers"
+L2_1 = "bmurl"
+L3_1 = "AlternateDNSServerUsage"
+L0_1(L1_1, L2_1, L3_1)
+L0_1 = mp
+L0_1 = L0_1.INFECTED
+return L0_1

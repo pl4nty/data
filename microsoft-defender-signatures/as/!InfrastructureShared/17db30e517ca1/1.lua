@@ -1,0 +1,39 @@
+local L0_1, L1_1, L2_1, L3_1
+L1_1 = this_sigattrlog
+L1_1 = L1_1[6]
+L1_1 = L1_1.matched
+if L1_1 then
+  L1_1 = this_sigattrlog
+  L1_1 = L1_1[6]
+  L1_1 = L1_1.utf8p2
+  if L1_1 ~= nil then
+    L1_1 = this_sigattrlog
+    L1_1 = L1_1[6]
+    L0_1 = L1_1.utf8p2
+  end
+end
+L1_1 = isnull
+L2_1 = L0_1
+L1_1 = L1_1(L2_1)
+if L1_1 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L2_1 = L0_1
+L1_1 = L0_1.lower
+L1_1 = L1_1(L2_1)
+L0_1 = L1_1
+L2_1 = L0_1
+L1_1 = L0_1.match
+L3_1 = "node%.exe\"?%s+\"?([^\"]+%.js)\"?"
+L1_1 = L1_1(L2_1, L3_1)
+if L1_1 then
+  L2_1 = bm
+  L2_1 = L2_1.add_related_file
+  L3_1 = L1_1
+  L2_1(L3_1)
+end
+L2_1 = mp
+L2_1 = L2_1.INFECTED
+return L2_1

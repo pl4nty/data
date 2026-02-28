@@ -1,0 +1,27 @@
+local L0_1, L1_1, L2_1, L3_1
+L0_1 = mp
+L0_1 = L0_1.get_contextdata
+L1_1 = mp
+L1_1 = L1_1.CONTEXT_DATA_SCANREASON
+L0_1 = L0_1(L1_1)
+L1_1 = mp
+L1_1 = L1_1.SCANREASON_ONOPEN
+if L0_1 == L1_1 then
+  L1_1 = string
+  L1_1 = L1_1.lower
+  L2_1 = mp
+  L2_1 = L2_1.get_contextdata
+  L3_1 = mp
+  L3_1 = L3_1.CONTEXT_DATA_PROCESSNAME
+  L2_1, L3_1 = L2_1(L3_1)
+  L1_1 = L1_1(L2_1, L3_1)
+  if L1_1 == "chrome.exe" then
+    L2_1 = mp
+    L2_1 = L2_1.set_mpattribute
+    L3_1 = "LUA:Trojan:JS/Kilim!FB_rem_chr_tab_ext"
+    L2_1(L3_1)
+  end
+end
+L1_1 = mp
+L1_1 = L1_1.CLEAN
+return L1_1

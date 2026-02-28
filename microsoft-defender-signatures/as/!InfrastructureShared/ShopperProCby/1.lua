@@ -1,0 +1,9 @@
+local L0_1, L1_1, L2_1
+L0_1 = {}
+L1_1 = "{A5A51D2A-505A-4D84-AFC6-E0FA87E47B8C}"
+L2_1 = "{FCE3FA8B-BA81-467C-81D8-E43C00D1BC71}"
+L0_1[1] = L1_1
+L0_1[2] = L2_1
+L1_1 = Infrastructure_IE_DisableExtensions
+L2_1 = L0_1
+L1_1(L2_1)

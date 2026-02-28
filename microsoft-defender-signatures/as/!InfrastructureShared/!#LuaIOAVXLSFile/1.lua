@@ -1,0 +1,77 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1
+L0_1 = mp
+L0_1 = L0_1.getfilename
+L1_1 = mp
+L1_1 = L1_1.bitor
+L2_1 = mp
+L2_1 = L2_1.FILEPATH_QUERY_FNAME
+L3_1 = mp
+L3_1 = L3_1.FILEPATH_QUERY_LOWERCASE
+L1_1, L2_1, L3_1, L4_1, L5_1, L6_1 = L1_1(L2_1, L3_1)
+L0_1 = L0_1(L1_1, L2_1, L3_1, L4_1, L5_1, L6_1)
+L1_1 = #L0_1
+if L1_1 < 5 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L1_1 = nil
+L2_1 = string
+L2_1 = L2_1.sub
+L3_1 = L0_1
+L4_1 = -5
+L2_1 = L2_1(L3_1, L4_1)
+if L2_1 == ".xlsb" then
+  L1_1 = "XLSBFile"
+elseif L2_1 == ".xltm" then
+  L1_1 = "XLTMFile"
+else
+  L3_1 = mp
+  L3_1 = L3_1.CLEAN
+  return L3_1
+end
+L3_1 = mp
+L3_1 = L3_1.get_mpattribute
+L4_1 = "RPF:TopLevelFile"
+L3_1 = L3_1(L4_1)
+if L3_1 then
+  L3_1 = mp
+  L3_1 = L3_1.set_mpattribute
+  L4_1 = "Lua:IOAVTopLevel"
+  L5_1 = L1_1
+  L4_1 = L4_1 .. L5_1
+  L3_1(L4_1)
+  L3_1 = mp
+  L3_1 = L3_1.set_mpattribute
+  L4_1 = "//Lua:GIOAVTopLevel"
+  L5_1 = L1_1
+  L4_1 = L4_1 .. L5_1
+  L3_1(L4_1)
+else
+  L3_1 = mp
+  L3_1 = L3_1.get_mpattribute
+  L4_1 = "//Lua:GIOAVFirst"
+  L5_1 = L1_1
+  L6_1 = "InContainer"
+  L4_1 = L4_1 .. L5_1 .. L6_1
+  L3_1 = L3_1(L4_1)
+  if not L3_1 then
+    L3_1 = mp
+    L3_1 = L3_1.set_mpattribute
+    L4_1 = "Lua:IOAVFirst"
+    L5_1 = L1_1
+    L6_1 = "InContainer"
+    L4_1 = L4_1 .. L5_1 .. L6_1
+    L3_1(L4_1)
+    L3_1 = mp
+    L3_1 = L3_1.set_mpattribute
+    L4_1 = "//Lua:GIOAVFirst"
+    L5_1 = L1_1
+    L6_1 = "InContainer"
+    L4_1 = L4_1 .. L5_1 .. L6_1
+    L3_1(L4_1)
+  end
+end
+L3_1 = mp
+L3_1 = L3_1.CLEAN
+return L3_1

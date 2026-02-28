@@ -1,0 +1,65 @@
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1
+L0_1 = mp
+L0_1 = L0_1.GetResmgrBasePlugin
+L0_1 = L0_1()
+if L0_1 ~= "Taskscheduler" then
+  L0_1 = mp
+  L0_1 = L0_1.CLEAN
+  return L0_1
+end
+L0_1 = mp
+L0_1 = L0_1.getfilename
+L1_1 = mp
+L1_1 = L1_1.bitor
+L2_1 = mp
+L2_1 = L2_1.FILEPATH_QUERY_FULL
+L3_1 = mp
+L3_1 = L3_1.FILEPATH_QUERY_LOWERCASE
+L1_1, L2_1, L3_1, L4_1, L5_1 = L1_1(L2_1, L3_1)
+L0_1 = L0_1(L1_1, L2_1, L3_1, L4_1, L5_1)
+L1_1 = string
+L1_1 = L1_1.find
+L2_1 = L0_1
+L3_1 = ":\\windows\\system32"
+L4_1 = 1
+L5_1 = true
+L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1)
+if L1_1 == nil then
+  L1_1 = string
+  L1_1 = L1_1.find
+  L2_1 = L0_1
+  L3_1 = ":\\windows\\syswow64"
+  L4_1 = 1
+  L5_1 = true
+  L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1)
+  if L1_1 == nil then
+    L1_1 = string
+    L1_1 = L1_1.find
+    L2_1 = L0_1
+    L3_1 = ":\\windows\\tasks"
+    L4_1 = 1
+    L5_1 = true
+    L1_1 = L1_1(L2_1, L3_1, L4_1, L5_1)
+    if L1_1 == nil then
+      goto lbl_49
+    end
+  end
+end
+L1_1 = mp
+L1_1 = L1_1.CLEAN
+do return L1_1 end
+::lbl_49::
+L1_1 = mp
+L1_1 = L1_1.IsKnownFriendlyFile
+L2_1 = L0_1
+L3_1 = true
+L4_1 = false
+L1_1 = L1_1(L2_1, L3_1, L4_1)
+if L1_1 then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
+end
+L1_1 = mp
+L1_1 = L1_1.INFECTED
+return L1_1
