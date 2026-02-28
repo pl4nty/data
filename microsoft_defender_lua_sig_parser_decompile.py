@@ -173,9 +173,14 @@ def convert_lua(out, data):
 
 
 def decompile(infile, outscript):
-    result = subprocess.run(['java', '-jar', 'unluac.jar', infile], capture_output=True, timeout=1)
-    with open(outscript, "wb") as f:
-        f.write(result.stdout)
+    try:
+        result = subprocess.run(['java', '-jar', 'unluac.jar', infile], capture_output=True, timeout=1)
+        with open(outscript, "wb") as f:
+            f.write(result.stdout)
+    except subprocess.TimeoutExpired as e:
+        print(f"The command timed out: {e}")
+    except subprocess.CalledProcessError as e:
+        print(f"The command failed: {e}")
     return
 
 
