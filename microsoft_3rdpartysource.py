@@ -483,9 +483,10 @@ def main():
     
     # Microsoft Electron for Windows
     # zip isn't nested so we carve directly. pretty slow from Aus but fast on GHA
-    latest_electron = get_latest_electron_release(data)
-    print(f"Latest Electron version: {latest_electron['release']}")
-    zip_url = latest_electron['url']
+    # they swapped to .tgz...
+    # latest_electron = get_latest_electron_release(data)
+    # print(f"Latest Electron version: {latest_electron['release']}")
+    # zip_url = latest_electron['url']
 
     try:
         # Process ZIP contents
