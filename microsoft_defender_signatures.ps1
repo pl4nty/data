@@ -17,8 +17,7 @@ cl /std:c++17 /EHsc ..\extract_sig.cpp
 .\extract_sig.exe . mpavbase.extracted mpavdlta.extracted
 
 Invoke-WebRequest -UseBasicParsing -Uri "https://sourceforge.net/projects/unluac/files/Unstable/unluac_2025_12_23.jar/download" -OutFile "unluac.jar" -UserAgent "Microsoft-Delivery-Optimization/10.1"
-# 'as', 
-'av' | ForEach-Object {
+'as', 'av' | ForEach-Object {
   python ..\data\microsoft_defender_lua_sig_parser_decompile.py "lua_standalone_sig_mp$($_)base.extracted.csv"
   # comment if you want to keep compiled lua binaries, like getting a better decomp with https://luadec.metaworm.site/
   Get-ChildItem .\lua -Recurse -Filter *.luac | Remove-Item
