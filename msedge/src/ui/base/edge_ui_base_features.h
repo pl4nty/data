@@ -23,7 +23,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsAddressBarReadonlyFeatureAllowed();
 // If enabled, link preview will be generated when link is copied from within
 // the page.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeLinkPreviewInPage);
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsClipboardReadWriteErrorDetailsLogEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsLinkPreviewInPageEnabled();
 
 // If enabled, add an explicit entry point "Copy Link Preview" to right click
@@ -84,15 +83,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kSwipeToShyUi);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kAllowPictureInPicture);
 
-// If enabled, shows a floating button overlaid on supported videos.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kShowPictureInPictureOverlay);
-
-// Start using messages received from Blink instead of injected JS for PIP
-// overlayfeature.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kPIPOverlayBlinkBackend);
-
 // Enable PIP invocation using media session api.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kPictureInPictureMediaSession);
@@ -105,6 +95,12 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kFavoritesBarNTP);
 // If enabled, show feedback smile button on toolbar UI for stable channel.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kFeedbackSmileButton);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsFeedbackSmileButtonEnabled();
+
+// If enabled, font family values are read from design tokens instead of
+// platform defaults.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kFontFamilyTokenization);
+COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsFontFamilyTokenizationEnabled();
 
 // If enabled, context menus will display and enable Generate Passwords
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kGeneratePassword);
@@ -179,8 +175,18 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeInlineStartWriting);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeInlineMiniMenu);
+
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeInlineNewUX);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineNewUXAllowInputElements);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeComposeCopilotChat);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsEdgeComposeCopilotChatEnabled();
+
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeInlineMonotoneWithTooltip);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -220,8 +226,15 @@ BASE_DECLARE_FEATURE(kTouchbarRing0WithSearch);
 // Supports command line enabling of high contrast controls for PiP
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kHighContrastForPip);
 
-// If enabled, will show the new PIP views.
+// If enabled, will show the current Edge only PIP Experience.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgePipAdvanced);
+
+#if !BUILDFLAG(IS_ANDROID)
+// If enabled, will use the Picture in Picture UI which is more closely
+// aligned with the upstream UI.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgePipAlignedUI);
+#endif  // !BUILDFLAG(IS_ANDROID)
 
 // If enabled, domain actions for Enhanced Copy Paste will be parsed and applied
 // to the relevant domains.
@@ -342,7 +355,7 @@ enum class SemanticTheme : int {
   kDefault = 3,         // MAI default design system
 };
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kMaiDesignSystem);
+BASE_DECLARE_FIRST_RUN_FEATURE(kMaiDesignSystem);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -385,6 +398,10 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern const base::FeatureParam<int> kMacFrostedGlassVisualEffectDelayMs;
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetMacFrostedGlassVisualEffectDelayMs();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern int GetMacFrostedGlassVisualEffectBackgroundAlpha();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern int GetMacFrostedGlassVisualEffectTabAlpha();
 
 // If enabled, the ring 0 icons will look minimal and more compact.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -473,6 +490,13 @@ extern void TriggerUsageFeatureGroupEdgeENPDynHoldout(
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kAppLayerForCentralContainer);
+
+// If enabled, forces the browser window to have no rounded corners and margins.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kForceNoRoundedCornerAndMargin);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsForceNoRoundedCornerAndMarginEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetRoundedCornerRadius();
@@ -590,7 +614,7 @@ extern bool IsEdgeFixedBoundsForWebViewEnabled();
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeR1ColorThemes);
+BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeR1ColorThemes);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeR1ColorThemesEnabled();
 #endif // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)

@@ -30,6 +30,13 @@ message Workspace {
     EXPRESSIVE = 5;
   }
 
+  // Keep in sync with edge::spaceworks::CreationSource.
+  enum CreationSource {
+    MIGRATION = 0;
+    EDGE_CLIENT = 1;
+    WINDOWS_COPILOT_APP = 2;
+  }
+
   // The displayed title of the workspace.
   optional string title = 1;
 
@@ -43,8 +50,19 @@ message Workspace {
   // The intensity of the workspace color when adaptive themes are used.
   optional ColorVariant color_variant = 4;
 
-  // An optional project id associated with this workspace.
-  optional string project_id = 5;
+  // The position of the workspace among other pinned workspaces.
+  // If present and valid, the workspace is pinned. If absent or invalid, it is
+  // not pinned. This uses UniquePosition for conflict-free reordering.
+  optional UniquePosition pin_position = 5;
+
+  // How the workspace was created.
+  optional CreationSource creation_source = 6;
+
+  // An optional copilot project id associated with this workspace.
+  optional string copilot_project_id = 7;
+
+  // Whether the copilot project feature is enabled for this workspace.
+  optional bool is_copilot_project_enabled = 8;
 }
 
 // Sync protocol datatype extension for saved tabs. WorkspaceTabs

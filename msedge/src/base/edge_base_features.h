@@ -116,6 +116,9 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeEnabledSmallerThreadStackSize);
 // flag for v8 in render
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeOomAndV8CrashOptimize);
 
+// If enabled, will enable the OOM intervention feature on Android
+BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeRenderOomOptimize);
+
 // If enabled, partial low-end mode is enabled on Android for specific scopes
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeLowEndMemoryExperimentPartial);
 

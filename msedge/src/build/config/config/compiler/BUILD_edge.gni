@@ -9,6 +9,26 @@ if (current_cpu == "x64") {
   import("//build/config/x64.gni")
 }
 
+declare_args() {
+  edge_clang_sample_profile_path = ""
+
+  # Some configurations have default sample profiles. If this is true and
+  # clang_sample_profile_path is empty, we'll fall back to the default.
+  #
+  # We currently only have default profiles for Chromium in-tree, so we disable
+  # this by default for all downstream projects, since these profiles are likely
+  # nonsensical for said projects.
+  edge_clang_use_default_sample_profile =
+      chrome_pgo_phase == 0 && build_with_chromium && is_official_build
+}
+declare_args() {
+  # Enable --call-graph-profile-sort selectively for targets where it's
+  # beneficial.
+  edge_enable_call_graph_profile_sort =
+      chrome_pgo_phase == 4 || (edge_clang_use_default_sample_profile ||
+                                edge_clang_sample_profile_path != "")
+}
+
 template("edge_overlay_group_all") {
   # Intentionally empty to make the linking between BUILD.gn and BUILD_edge.gni work by adding targets into the BUILD.gn scope.
   group(target_name) {
@@ -84,12 +104,11 @@ template("edge_overlay_config_default_warnings") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
 
-    # Edge only enables at_exit distructor warning on win
-    if (!is_win && !is_mac) {
-      # TODO(crbug.com/40031409): We are migrating towards making this warning
-      # enabled by default. Once that is completed, the warning
-      # should always be added for clang builds.
-      cflags -= [ "-Wexit-time-destructors" ]
+    # Edge only enforces -Wexit-time-destructors on Windows, Mac and Android.
+    # Use -Wno- to suppress rather than -= to remove, since upstream
+    # doesn't add the flag on all platforms.
+    if (is_clang && !is_win && !is_mac && !is_android) {
+      cflags += [ "-Wno-exit-time-destructors" ]
     }
   }
 }
@@ -206,24 +225,14 @@ template("edge_overlay_config_compiler") {
     forward_variables_from(invoker, "*", [])
 
     # Edge overlays:
-    declare_args() {
-      edge_clang_sample_profile_path = ""
 
-      # Some configurations have default sample profiles. If this is true and
-      # clang_sample_profile_path is empty, we'll fall back to the default.
-      #
-      # We currently only have default profiles for Chromium in-tree, so we disable
-      # this by default for all downstream projects, since these profiles are likely
-      # nonsensical for said projects.
-      edge_clang_use_default_sample_profile =
-          chrome_pgo_phase == 0 && build_with_chromium && is_official_build
-    }
-    declare_args() {
-      # Enable --call-graph-profile-sort selectively for targets where it's
-      # beneficial.
-      edge_enable_call_graph_profile_sort =
-          chrome_pgo_phase == 4 || (edge_clang_use_default_sample_profile ||
-                                    edge_clang_sample_profile_path != "")
+    # Edge's Clang does not support -fno-lifetime-dse (upstream added it in
+    # crbug.com/484082200 after a Clang roll that included that flag).
+    if (is_clang) {
+      cflags -= [ "-fno-lifetime-dse" ]
+      if (is_posix || is_fuchsia) {
+        asmflags -= [ "-fno-lifetime-dse" ]
+      }
     }
 
     if (!is_win) {
@@ -235,25 +244,9 @@ template("edge_overlay_config_compiler") {
       }
     }
 
-    if (use_lld && edge_enable_call_graph_profile_sort) {
-      if (is_win) {
-        # Upstream turns it off, remove that.
-        ldflags -= [ "/call-graph-profile-sort:no" ]
-      } else if (is_android) {
-        # Upstream turns it off, remove that.
-        ldflags -= [ "-Wl,--no-call-graph-profile-sort" ]
-      }
-    }
-
     if (is_apple) {
       # TODO(crbug.com/1519899): Figure out how to remove this.
       cflags += [ "-fno-define-target-os-macros" ]
-    }
-
-    # TODO(crbug.com/1253924): Enable on apple/lld for arm64 too once it works.
-    if (invoker.use_icf && is_apple && use_lld && current_cpu == "arm64") {
-      # Remove or modify the ICF flag for Apple ARM64
-      ldflags -= [ "-Wl,--icf=all" ]
     }
     if (!is_debug && use_thin_lto && is_a_target_toolchain) {
       if (is_ios) {
@@ -273,15 +266,108 @@ template("edge_overlay_config_compiler") {
       ]
     }
 
-    if (use_lld && is_apple) {
-      ldflags -= [ "-Wl,--strict-auto-link" ]
-    }
-
     if (is_clang && invoker.show_includes) {
       if (is_win) {
         # TODO(crbug.com/1223741): Goma mixes the -H and /showIncludes output.
         assert(!use_goma, "show_includes on Windows is not reliable with goma")
       }
+    }
+  }
+}
+
+template("edge_overlay_config_linker") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    if (use_lld && edge_enable_call_graph_profile_sort) {
+      if (is_win) {
+        # Upstream turns it off, remove that.
+        ldflags -= [ "/call-graph-profile-sort:no" ]
+      } else if (is_android) {
+        # Upstream turns it off, remove that.
+        ldflags -= [ "-Wl,--no-call-graph-profile-sort" ]
+      }
+    }
+
+    # TODO(crbug.com/1253924): Enable on apple/lld for arm64 too once it works.
+    if (invoker.use_icf && is_apple && use_lld && current_cpu == "arm64") {
+      # Remove or modify the ICF flag for Apple ARM64
+      ldflags -= [ "-Wl,--icf=all" ]
+    }
+
+    if (use_lld && is_apple) {
+      ldflags -= [ "-Wl,--strict-auto-link" ]
+    }
+  }
+}
+
+template("edge_overlay_config_clang_revision") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    if (is_clang && clang_base_path == default_clang_base_path &&
+        current_os != "zos") {
+      if (llvm_force_head_revision) {
+      } else {
+        _edge_clang_revision = read_file(
+                "//third_party/llvm-build/Release+Asserts/cr_build_revision",
+                "trim string")
+
+        # Somehow our _clang_revision ends up with a list of platforms after the rev string
+        _edge_clang_revision_parts = string_split(_edge_clang_revision, ",")
+        _edge_clang_revision = _edge_clang_revision_parts[0]
+
+        # Ensure that the synced clang version matches what's in git.
+        if (invoker._perform_consistency_checks) {
+          # Parse the clang version from the Python script.
+          _clang_version_lines = filter_include(
+                  read_file("//tools/clang/scripts/update.py", "list lines"),
+                  [ "CLANG_*REVISION_EDGE = *" ])
+          _py_revision = string_replace(_clang_version_lines[0],
+                                        "CLANG_REVISION_EDGE = '",
+                                        "")
+          _py_revision = string_replace(_py_revision, "'", "")
+          _py_subrevision = string_replace(_clang_version_lines[1],
+                                           "CLANG_SUB_REVISION_EDGE = ",
+                                           "")
+          _expected_clang_revision = "$_py_revision-$_py_subrevision"
+
+          # Copied from upstream code
+          # TODO(agrieve): Change filter_include to _clang_revision ==
+          # _expected_clang_revision once angle & webrtc use a GCS DEPS entry
+          # rather than a update.py runhook.
+          assert(
+              filter_include([ _edge_clang_revision ],
+                             [
+                               _expected_clang_revision,
+                               "$_expected_clang_revision,*",
+                             ]) != [],
+              "edge_clang_revision=\"$_edge_clang_revision\" but update.py expected \"$_expected_clang_revision\". Did you forget to gclient sync?")
+        }
+      }
+
+      # This is here so that all files get recompiled after a clang roll and
+      # when turning clang on or off. (defines are passed via the command line,
+      # and build system rebuild things when their commandline changes). Nothing
+      # should ever read this define.
+      defines -= [ "CR_CLANG_REVISION=\"${invoker._clang_revision}\"" ]
+      defines += [ "CR_CLANG_REVISION=\"$_edge_clang_revision\"" ]
+    }
+  }
+}
+
+template("edge_overlay_config_sanitize_c_array_bounds") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge: Remove flags that are not supported by Edge's Clang toolchain yet.
+    # These flags were added upstream in acb47d9a6b56c but require a newer Clang.
+    # Error: unknown warning option '-Wno-unsafe-buffer-usage-in-static-sized-array'
+    if (!is_ubsan && is_clang && !(is_asan && target_cpu == "x86")) {
+      cflags -= [
+        "-fsanitize-ignore-for-ubsan-feature=array-bounds",
+        "-Wno-unsafe-buffer-usage-in-static-sized-array",
+      ]
     }
   }
 }

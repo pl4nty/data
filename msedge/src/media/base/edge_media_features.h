@@ -26,13 +26,7 @@ namespace edge {
 // name within the corresponding flag section.
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kAutoplayAllowListUI);
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kAutoplayBlockListUI);
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kAutoplayUserSettingBlockOption);
 
 #if !BUILDFLAG(IS_CHROMEOS)
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
@@ -121,9 +115,6 @@ bool AllowMFDolbyVisionDecoding();
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kDisablePlayReadyHardwareDrm);
 
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kDisablePlayReadyHardwareDrm25668132);
-
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES) BASE_DECLARE_FEATURE(kIdlOverride);
 
 // Use whitelisted domains for idl override instead of the regular
@@ -164,11 +155,6 @@ BASE_DECLARE_FEATURE(kSkipDolbyVisionInstallCheckForTesting);
 #endif  // BUILDFLAG(ENABLE_MEDIA_FOUNDATION_CDM)
 
 #if BUILDFLAG(IS_WIN)
-// If enabled, fallback to use `Media Foundation For Clear` for the playback of
-// HEVC/AV1 encoded video.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kCodecFallbackUsingMFClear);
-
 // If enabled, silently install Microsoft.AV1VideoExtension from Microsoft
 // Store if possible.
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
@@ -184,12 +170,6 @@ BASE_DECLARE_FEATURE(kMediaFoundationHwH264Encoding);
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 bool IsMediaFoundationHwH264EncodingEnabled();
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kMediaFoundationClearAV1Support);
-
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kMediaFoundationClearBatteryExclusiveStart);
 #endif  // BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC)
@@ -209,23 +189,12 @@ COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 extern const base::FeatureParam<bool> kVideoSuperResolutionAllowOnBattery;
 #endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC)
 
-#if BUILDFLAG(EDGE_ENABLE_VIDEO_ELEMENT_IMG_CONTENTS)
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kVideoElementImgContents);
-#endif  // BUILDFLAG(EDGE_ENABLE_VIDEO_ELEMENT_IMG_CONTENTS)
-
 #if BUILDFLAG(ENABLE_WIDEVINE)
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES) BASE_DECLARE_FEATURE(kWidevinePlatform);
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 extern bool IsWidevinePlatformEnabled();
 #endif  // BUILDFLAG(ENABLE_WIDEVINE)
-
-// If enabled, loads the Media Internals Services extension into the browser
-// Used for media diagnostics log. Feature flag can be used as a kill switch if
-// media log is crashing the feedback dialog.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kMediaInternalsServices);
 
 #if BUILDFLAG(ENABLE_WEBRTC_INTERNALS)
 // If enabled, load the Webrtc internals extension for getting Webrtc logs
@@ -277,18 +246,6 @@ BASE_DECLARE_FEATURE(kEdgeSupportTranslateAttributeForVideo);
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kTranslateVideoTrackCPUUsage);
 
-// This feature flag is used to enable the video translation feature for power
-// user. For our experiment, power users are those whose browser is set to a
-// non-English language or have added any languages to their always translate
-// list.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kTranslateVideoPowerUser);
-
-// This feature flag is used to enable the video translation feature for
-// non-power user.
-COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
-BASE_DECLARE_FEATURE(kTranslateVideoNonPowerUser);
-
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kTranslateVideoEnglishToChinese);
 
@@ -332,6 +289,22 @@ BASE_DECLARE_FEATURE(kUseAndroidMediaExtractor);
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 bool IsAndroidMediaExtractorEnabled(bool trigger_usage_on_check = false);
 #endif  // BUILDFLAG(EDGE_ENABLE_ANDROID_MEDIA_EXTRACTOR)
+
+// Native video scrubbing detection feature and params.
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeNativeVideoScrubbing);
+
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+extern const base::FeatureParam<int> kShortRangeScrubCount;
+
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+extern const base::FeatureParam<int> kLongRangeScrubCount;
+
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+extern const base::FeatureParam<int> kShortRangeTimeWindowSeconds;
+
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+extern const base::FeatureParam<int> kLongRangeTimeWindowSeconds;
 
 }  // namespace edge
 

@@ -68,6 +68,8 @@ BASE_DECLARE_FEATURE(kOffloadAcceptCHFrameCheck);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kAcceptCHFrameOffloadNotAllowedHints);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE_PARAM(bool, kAlwaysGenerateNotAllowedClientHints);
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kAcceptCHOffloadWithRedirect);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kAcceptCHOffloadForSubframe);
@@ -97,6 +99,8 @@ BASE_DECLARE_FEATURE_PARAM(bool, kLocalNetworkAccessChecksWarn);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kLocalNetworkAccessChecksWebRTC);
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kURLLoaderUseProvidedResponseBodyStream);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kLocalNetworkAccessChecksWebRTCLoopbackOnly);
 
@@ -152,9 +156,6 @@ COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kSkipTpcdMitigationsForAdsTopLevelTrial);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kAvoidResourceRequestCopies);
-
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kDocumentIsolationPolicy);
 
 // Should connection allowlists be enforced?
@@ -191,6 +192,8 @@ COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kDeprecateUnload);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kDeprecateUnloadByAllowList);
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kDeprecateUnloadByBucket);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(int, kDeprecateUnloadPercent);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
@@ -324,12 +327,6 @@ BASE_DECLARE_FEATURE(kProtectedAudienceCorsSafelistKVv2Signals);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kStorageAccessHeadersRespectPermissionsPolicy);
 
-// When enabled, a shared remote Mojo interface of
-// DeviceBoundSessionAccessObserver is used to reduce Clone() IPC.
-// See https://crbug.com/407680127 for more details.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kDeviceBoundSessionAccessObserverSharedRemote);
-
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kCSPScriptSrcV2);
 
@@ -338,20 +335,16 @@ BASE_DECLARE_FEATURE(kCSPScriptSrcV2);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kCSPScriptSrcHashesInV1);
 
-// When enabled, fetches for "pervasive" scripts that match one of the
+// When enabled, fetches for "pervasive" resources that match one of the
 // configured patterns will use a shared, single-keyed cache.
 // See https://chromestatus.com/feature/5202380930678784
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kCacheSharingForPervasiveScripts);
+BASE_DECLARE_FEATURE(kCacheSharingForPervasiveResources);
 
 // When enabled, sends SameSite=Lax cookies for FedCM requests in addition to
 // SameSite=None.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kSendSameSiteLaxForFedCM);
-
-// newline-delimited list of URL patterns for "pervasive" scripts.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(std::string, kPervasiveScriptURLPatterns);
 
 // When enabled, disk-based shared dictionaries will use a memory cache to
 // keep frequently used dictionaries in memory.
@@ -382,6 +375,22 @@ BASE_DECLARE_FEATURE_PARAM(bool, kNetworkServiceTaskSchedulerURLLoader);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kNetworkServicePerPriorityTaskQueues);
 
+// When enabled, URLLoader in Network Service check header consistency for the
+// ServiceWorker SyntheticResponse.
+// TODO(crbug.com/447039330): This is temporary for the SyntheticResponse
+// experiment and will be removed after standardization.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kServiceWorkerSyntheticResponseHeaderCheck);
+
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE_PARAM(std::string,
+                           kServiceWorkerSyntheticResponseIgnoredHeaders);
+
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kServiceWorkerSyntheticResponseReportInconsistentHeader);
+
 // When enabled the browser process will start an UnexportableKeyService proxy
 // service that can be used by other processes. It will also make the network
 // process start using the proxy. This is needed for example when implementing
@@ -389,6 +398,20 @@ BASE_DECLARE_FEATURE(kNetworkServicePerPriorityTaskQueues);
 // than what the network process has.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kUseUnexportableKeyServiceInBrowserProcess);
+
+// When enabled, allows redirects to unsafe schemes (like data:) for fetch()
+// requests with redirect mode "manual". The redirect URL is censored to
+// "data:," for security.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kAllowUnsafeRedirectSchemesForManualMode);
+
+// A base feature to hold parameters for Durable Messages infrastructure.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kDurableMessages);
+
+// Global limit for all durable messages
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE_PARAM(int, kDurableMessagesGlobalBufferSize);
 
 }  // namespace network::features
 

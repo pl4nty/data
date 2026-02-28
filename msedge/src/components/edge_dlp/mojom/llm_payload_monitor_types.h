@@ -20,6 +20,12 @@ enum LLMPayloadMonitorConfig {
   kMaxValue = kBlockAndNotify,
 };
 
+enum MatchedBy {
+  kNoMatch,
+  kByExactURL,
+  kByDomain,
+};
+
 // Keep in sync with LLMPayloadMonitorSitePolicy in
 // llm_payload_monitor_types.mojom.
 struct LLMPayloadMonitorSitePolicy {
@@ -44,6 +50,8 @@ struct LLMPayloadMonitorPolicies {
   bool IsRiskyUser(const GURL& url) const;
   bool IsEmpty() const;
   LLMPayloadMonitorSitePolicy GetSitePolicy(const GURL& sanitized_url) const;
+  LLMPayloadMonitorSitePolicy GetSitePolicy(const GURL& sanitized_url,
+                                            dlp::MatchedBy& match_by_out) const;
 };
 
 }  // namespace dlp

@@ -181,14 +181,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kSplitCodeCacheByNetworkIsolationKey);
 // See https://github.com/MattMenke2/Explainer---Partition-Network-State.
 NET_EXPORT BASE_DECLARE_FEATURE(kPartitionConnectionsByNetworkIsolationKey);
 
-// "__Http-" prefix for cookies.
-// https://github.com/httpwg/http-extensions/pull/3110
-NET_EXPORT BASE_DECLARE_FEATURE(kPrefixCookieHttp);
-
-// "__HostHttp-" prefix for cookies.
-// https://github.com/httpwg/http-extensions/issues/3111
-NET_EXPORT BASE_DECLARE_FEATURE(kPrefixCookieHostHttp);
-
 // Changes the interval between two search engine preconnect attempts.
 NET_EXPORT BASE_DECLARE_FEATURE(kSearchEnginePreconnectInterval);
 
@@ -339,17 +331,20 @@ NET_EXPORT BASE_DECLARE_FEATURE(kTcpPortReuseMetricsWin);
 NET_EXPORT BASE_DECLARE_FEATURE(kTcpSocketIoCompletionPortWin);
 #endif
 
+#if BUILDFLAG(IS_MAC)
+// Whether or not to enable TCP port randomization on macOS by choosing a
+// randomized ephemeral source port.
+NET_EXPORT BASE_DECLARE_FEATURE(kTcpPortRandomizationMac);
+// How long (in seconds) to avoid reusing a recently-used ephemeral port for
+// the same peer. Defaults to 120 to match common NAT timeout values.
+NET_EXPORT extern const base::FeatureParam<int>
+    kTcpPortRandomizationReuseDelaySec;
+#endif
+
 // Avoid creating cache entries for transactions that are most likely no-store.
 NET_EXPORT BASE_DECLARE_FEATURE(kAvoidEntryCreationForNoStore);
 NET_EXPORT extern const base::FeatureParam<int>
     kAvoidEntryCreationForNoStoreCacheSize;
-
-// A flag for new Kerberos feature, that suggests new UI
-// when Kerberos authentication in browser fails on ChromeOS.
-// b/260522530
-#if BUILDFLAG(IS_CHROMEOS)
-NET_EXPORT BASE_DECLARE_FEATURE(kKerberosInBrowserRedirect);
-#endif
 
 // A flag to use asynchronous session creation for new QUIC sessions.
 NET_EXPORT BASE_DECLARE_FEATURE(kAsyncQuicSession);
@@ -417,15 +412,11 @@ NET_EXPORT BASE_DECLARE_FEATURE(kUseNewAlpsCodepointQUIC);
 // Enables truncating the response body to the content length.
 NET_EXPORT BASE_DECLARE_FEATURE(kTruncateBodyToContentLength);
 
-#if BUILDFLAG(IS_MAC)
-// Reduces the frequency of IP address change notifications that result in
-// TCP and QUIC connection resets.
-NET_EXPORT BASE_DECLARE_FEATURE(kReduceIPAddressChangeNotification);
-
+#if BUILDFLAG(IS_APPLE)
 // Uses the Network framework path monitor instead of SCNetworkReachability for
-// connection type change detection on macOS.
+// connection type change detection on macOS & iOS.
 NET_EXPORT BASE_DECLARE_FEATURE(kUseNetworkPathMonitorForNetworkChangeNotifier);
-#endif  // BUILDFLAG(IS_MAC)
+#endif  // BUILDFLAG(IS_APPLE)
 
 // This feature will enable the Device Bound Session Credentials protocol to let
 // the server assert sessions (and cookies) are bound to a specific device.
@@ -476,6 +467,20 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
 // This feature controls whether DBSC has a signing quota instead of a refresh
 // quota, and has associated signing caching for refreshes.
 NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionSigningQuotaAndCaching);
+
+// This feature controls whether DBSC is allowed to register sessions on
+// a certain list of sites, as specified in
+// `device_bound_sessions_restricted_sites` in the
+// `NetworkContextParams`.
+NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionsForRestrictedSites);
+
+// This feature controls whether we add a query param to registration on
+// restricted sites.
+NET_EXPORT BASE_DECLARE_FEATURE(
+    kDeviceBoundSessionsForRestrictedSitesExperimentId);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    std::string,
+    kDeviceBoundSessionsForRestrictedSitesExperimentIdParam);
 
 // Enables more checks when creating a SpdySession for proxy. These checks are
 // already applied to non-proxy SpdySession creations.
@@ -542,17 +547,33 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
 // Disables synchronous writes in the WAL file of the SQL disk cache's DB.
 // This is faster but less safe.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kSqlDiskCacheSynchronousOff);
+// Enables the database preloading for the SQL disk cache backend.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kSqlDiskCachePreloadDatabase);
 // The number of shards for the SQL disk cache.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kSqlDiskCacheShardCount);
 // Loads the in-memory index on initialization.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kSqlDiskCacheLoadIndexOnInit);
+// The maximum size of the write buffer for all entries.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
+                                      kSqlDiskCacheMaxWriteBufferTotalSize);
+// The maximum size of the write buffer for a single entry.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
+                                      kSqlDiskCacheMaxWriteBufferSizePerEntry);
+// The maximum size of the read buffer for all entries.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kSqlDiskCacheMaxReadBufferTotalSize);
+// Execute the checkpoint serially.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kSqlDiskCacheSerialCheckpoint);
+// Whether to use size and priority aware eviction for the SQL disk cache.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kSqlDiskCacheSizeAndPriorityAwareEviction);
 #endif  // ENABLE_DISK_CACHE_SQL_BACKEND
 
 // If enabled, ignore Strict-Transport-Security for [*.]localhost hosts.
 NET_EXPORT BASE_DECLARE_FEATURE(kIgnoreHSTSForLocalhost);
 
 // If enabled, main frame navigation resources will be prioritized in Simple
-// Cache. So they will be less likely to be evicted.
+// Cache and SQL Cache. So they will be less likely to be evicted.
 NET_EXPORT BASE_DECLARE_FEATURE(kSimpleCachePrioritizedCaching);
 // This is a factor by which we divide the size of an entry that has the
 // HINT_HIGH_PRIORITY flag set to prioritize it for eviction to be less likely
@@ -745,11 +766,20 @@ NET_EXPORT BASE_DECLARE_FEATURE(
 // be randomized for better load balancing of the initial DoH URL lookups.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableBootstrapIPRandomizationForDoh);
 
+// Controls whether X509Util on Android (Cronet, and WebView only) should use
+// lock-free certificate verification mechanism.
+NET_EXPORT BASE_DECLARE_FEATURE(kUseLockFreeX509Verification);
+
 #if BUILDFLAG(IS_APPLE)
 // If enabled, the GURL conversion for NSURLs will use the data representation
 // of the URL if it differs from the absolute string.
 NET_EXPORT BASE_DECLARE_FEATURE(kUseNSURLDataForGURLConversion);
 #endif  // BUILDFLAG(IS_APPLE)
+
+// If enabled, SPDY sessions will be synchronously drained when the underlying
+// transport socket is detected to be disconnected in GetRemoteEndpoint().
+NET_EXPORT BASE_DECLARE_FEATURE(
+    kDrainSpdySessionSynchronouslyOnRemoteEndpointDisconnect);
 
 }  // namespace net::features
 
