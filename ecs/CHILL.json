@@ -402,6 +402,93 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.719835bd-9541-4b85-91f7-4f8a72a35dee": {
+            "CampaignId": "719835bd-9541-4b85-91f7-4f8a72a35dee",
+            "EndTimeUtc": "2026-06-29T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 15552000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 2,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-01-30T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UsedCopilot_TriggerCopilotNPS",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Very satisfied",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Very dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How satisfied are you with Copilot & Agents management in the admin center?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/719835bd-9541-4b85-91f7-4f8a72a35dee/60b8f537-5e4e-4d72-9c8b-12a87cc35b2d/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.80b4464c-47da-4833-8386-a263b1f3bb2c": {
             "CampaignId": "80b4464c-47da-4833-8386-a263b1f3bb2c",
             "EndTimeUtc": "2026-06-29T18:30:00Z",
