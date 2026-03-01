@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2169217,
+    "size": 2171061,
     "file_count": 183
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15171807,
+    "size": 15172459,
     "file_count": 845
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 32859850,
-    "file_count": 4007
+    "size": 32875923,
+    "file_count": 4008
   },
   {
     "name": "boringssl",
-    "size": 76205,
+    "size": 76351,
     "file_count": 15
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17810819,
-    "file_count": 2125
+    "size": 17898276,
+    "file_count": 2162
   },
   {
     "name": "entity_extraction",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 350492,
-    "file_count": 76
+    "size": 352540,
+    "file_count": 77
   },
   {
     "name": "ffmpeg",
@@ -311,7 +311,7 @@
   },
   {
     "name": "icu",
-    "size": 158116124,
+    "size": 158116254,
     "file_count": 7078
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 54938,
+    "size": 55154,
     "file_count": 35
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4183106,
+    "size": 4190946,
     "file_count": 596
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7241828,
+    "size": 7242758,
     "file_count": 188
   },
   {
