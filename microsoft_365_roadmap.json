@@ -96234,61 +96234,6 @@
         "title": "OneNote: Boost productivity using voice with Copilot on OneNote Mobile (iPhone)"
     },
     {
-        "created": "2024-10-15T23:15:51",
-        "description": "Once you update your template(s) to PowerPoint's best practices, your templates will work even better with Copilot. You'll get beautiful on-brand slides every time you open your optimized template and create a presentation with Copilot.",
-        "id": 417060,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "PowerPoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "PowerPoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Improved template support when you create a presentation with Copilot"
-    },
-    {
         "created": "2024-09-17T23:30:46",
         "description": "Call delegators and their delegates can now view shared call history records for the shared line directly on their Teams phone devices. This enhancement promotes greater transparency and collaboration. All delegates associated with a user will be able to monitor incoming and outgoing calls for the shared line, irrespective of their participation in the call.",
         "id": 416292,
@@ -97947,61 +97892,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Create the perfect banner for your document with Copilot and Designer"
     },
     {
-        "created": "2024-12-10T00:15:43",
-        "description": "Now, you can ask questions about images stored in your OneDrive. Select up to 5 images and ask questions like explaining the contents of an image or extracting relevant text from an image. This feature requires a Microsoft Copilot for Microsoft 365 license and will be available to commercial customers on OneDrive Web.",
-        "id": 469499,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneDrive: Ask Copilot questions about images"
-    },
-    {
         "created": "2024-11-15T00:30:25",
         "description": "These enrollment policies for iOS/iPadOS contains enrollment time grouping, improved UI, and removes automatic deployment of the Company Portal app and deprecated settings.",
         "id": 469032,
@@ -98591,61 +98481,6 @@
             ]
         },
         "title": "Outlook: Notifications pane batching"
-    },
-    {
-        "created": "2024-12-06T00:00:08",
-        "description": "Introducing the Quick Summarization feature for eDiscovery, an embedded Security Copilot skill in Purview, designed to streamline case management with an intuitive, at-a-glance overview. This new capability allows users to quickly access a comprehensive summary of eDiscovery cases, holds, and searches, eliminating the need to navigate through multiple tabs to assess status, statistics of completed actions, pending tasks, and ongoing jobs. The Quick Summarization feature consolidates this information into a single, easy-to-understand summary. Additionally, similar summary views are available for both Search and Hold within the eDiscovery case. Powered by existing \u201ccontextual summary\u201d skill, the system analyzes case/search/hold metadata and generates natural language summaries, providing users with a clear, actionable overview of key details in real time.",
-        "id": 466741,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: eDiscovery - Quick Summarization in eDiscovery"
     },
     {
         "created": "2024-11-16T00:00:49",
@@ -103451,79 +103286,6 @@
         "title": "Microsoft 365 app: Microsoft Loop - Admin usage reports for Loop"
     },
     {
-        "created": "2024-10-28T17:00:31",
-        "description": "The new, streamlined chat and channels experience makes it easier to stay on top of what matters most and organize your digital workspace. Catch up on chat, channels and teams in one place, create custom sections to organize conversations by topics, use filters to triage messages and more.",
-        "id": 415249,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: New Microsoft Teams chat and channels experience"
-    },
-    {
         "created": "2024-09-12T23:15:19",
         "description": "Site access review allows SharePoint admins to delegate access governance to site owners in the context of potential oversharing as defined within DAG reports. We earlier released site access review from within \"Content shared with everyone except external users\" report. Now, the same functionality will be available from all \"Sharing link\" reports as well.",
         "id": 414525,
@@ -103571,61 +103333,6 @@
             ]
         },
         "title": "SharePoint: Site access review from Sharing link reports in Data Access Governance"
-    },
-    {
-        "created": "2024-08-27T23:15:04",
-        "description": "Address inactive content on your tenant with inactive sites policy. Admins can configure policies to Detect inactive sites, send notifications to all site owners, and archive these sites or put them in a read-only state if there is no action from notification recipients.",
-        "id": 412940,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Introducing archival and other enforcement actions with inactive site lifecycle management policy"
     },
     {
         "created": "2024-07-31T23:45:06",
@@ -104456,55 +104163,6 @@
             ]
         },
         "title": "Microsoft Intune: Intune Suite - Automated device enrollment without user affinity for visionOS and tvOS"
-    },
-    {
-        "created": "2024-11-14T00:45:04",
-        "description": "Users can create their own Clipchamp templates for personal use or share with their teammates. ",
-        "id": 468295,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Clipchamp"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Clipchamp"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Clipchamp: Template creation in Commercial"
     },
     {
         "created": "2024-11-14T00:45:04",
@@ -106763,61 +106421,6 @@
             ]
         },
         "title": "Microsoft Teams: Cross location Shifts"
-    },
-    {
-        "created": "2024-10-25T00:00:13",
-        "description": "Admins have transparency on granular metadata (data source, custom actions) for agents.",
-        "id": 429877,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Extensibility \u2013 Admins have transparency on granular metadata for agents"
     },
     {
         "created": "2024-10-29T00:00:51",
@@ -109132,61 +108735,6 @@
         "title": "Microsoft Edge: v.139 - Edge Settings Improvements"
     },
     {
-        "created": "2024-10-01T23:30:20",
-        "description": "New forms created from Microsoft OneDrive and SharePoint Online will use the new data sync solution.",
-        "id": 418378,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "Forms"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                },
-                {
-                    "tagName": "Forms"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Forms: New data sync solution to Excel for the web in Microsoft OneDrive and SharePoint Online"
-    },
-    {
         "created": "2024-10-03T23:30:37",
         "description": "Scope Copilot queries in emails for delegated mailboxes.",
         "id": 416062,
@@ -109270,79 +108818,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Scope delegated mailbox access for emails in Business Chat"
-    },
-    {
-        "created": "2024-08-23T22:15:47",
-        "description": "The Copilot for Microsoft 365 team is working on supporting 12 new languages across all M365 Copilot features: Bulgarian, Croatian, Estonian, Greek, Indonesian, Latvian, Lithuanian, Romanian, Serbian (Latin), Slovak, Slovenia, and Vietnamese. They're also improving the handling of these language variants: Dutch (Belgium), German (Switzerland), English (UK), Spanish (Mexico), and French (Canada). ",
-        "id": 411778,
-        "locale": null,
-        "modified": "2025-05-01T23:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Language expansion coming in M365 Copilot"
     },
     {
         "created": "2024-04-18T23:15:11",

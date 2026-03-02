@@ -248,6 +248,7 @@
             "EnableDeviceNameTemplate": true,
             "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
+            "EnableMhsAppPolicyReviseBehavior": true,
             "EnablePrsv3ForAosp": true,
             "EnableRequestEnterpriseUpgradeUrl": true,
             "EnableWpDeviceTypeUpdate": true
@@ -306,7 +307,6 @@
             "EnableAPSyncRequestMessage": true,
             "EnableAcmeIncomingRequestValidation": true,
             "EnableAppleACMEBYODEnrollment": true,
-            "EnableAppleACMEBulkUserEnrollment": true,
             "EnableAppleACMEBulkUserlessEnrollment": true,
             "EnableGenerateAcmeNewNonce": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,

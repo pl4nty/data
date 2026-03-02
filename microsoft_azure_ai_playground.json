@@ -469,7 +469,8 @@
             "gpt-image-1-mini",
             "flux.1-kontext-pro",
             "flux-1.1-pro",
-            "flux.2-pro"
+            "flux.2-pro",
+            "flux.2-flex"
         ],
         "supportedMistralOcrModels": [
             "mistral-document-ai-2505",
@@ -541,6 +542,7 @@
         "azureml://registries/azureml-blackforestlabs/models/flux-1.1-pro",
         "azureml://registries/azureml-blackforestlabs/models/flux.1-kontext-pro",
         "azureml://registries/azureml-blackforestlabs/models/flux.2-pro",
+        "azureml://registries/azureml-blackforestlabs/models/flux.2-flex",
         "azureml://registries/azureml-bria/models/bria-2.3-fast",
         "azureml://registries/azure-openai/models/dall-e-3",
         "azureml://registries/azure-openai/models/gpt-image-1",
