@@ -1,10 +1,6 @@
 {
   "OOBEDEFAULTUSERSESSION": {
-    "irisPlacementId": {
-      "value": "",
-      "overrideValue": "88001035",
-      "overrideFeature": "OobeCloudNavmesh"
-    },
+    "irisPlacementId": "88001035",
     "start": "StartSelector",
     "error": "OobeError",
     "reconnectHandler": {
@@ -44,15 +40,52 @@
       "cxid": "OobeNetworkLossError",
       "frameAnimation": "errorLottie.json",
       "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeNetworkLossError-main.html",
-      "successID": "InPlaceResume",
-      "failID": "InPlaceResume",
-      "cancelID": "InPlaceResume",
-      "abortID": "InPlaceResume",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "abortID": "ReconnectionEntry",
       "disableErrorPageOnFailure": true,
       "disableBackNavigationToNode": true,
       "disableBackNavigationFromNode": true,
       "visibility": false,
       "measureId": 57739732
+    },
+    "ReconnectionEntry": {
+      "cxid": "ReconnectionEntry",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory?target=DesktopLiteNetworkReconnect&persistent=true",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "visibility": false,
+      "successID": "InPlaceResume",
+      "failID": "InPlaceResumeReconnectionFailure",
+      "cancelID": "InPlaceResume",
+      "action1ID": "ReconnectCaptivePortal",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59180368
+    },
+    "ReconnectCaptivePortal": {
+      "cxid": "ReconnectCaptivePortal",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "requiredFeatureName": "OobeHostReconnectCaptivePortal",
+      "credUIStyle": "Popup",
+      "visibility": false,
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59305782
+    },
+    "InPlaceResumeReconnectionFailure": {
+      "cxid": "InPlaceResumeReconnectionFailure",
+      "launcher": "js:InPlaceResumeReconnectionFailure",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "InPlaceResume",
+      "cancelID": "InPlaceResume",
+      "failID": "InPlaceResume",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
     },
     "InPlaceResume": {
       "cxid": "InPlaceResume",
@@ -98,7 +131,6 @@
       "abortID": "OobeMSANGCEnroll",
       "offlineID": "OobeMSANGCEnroll",
       "disableBackNavigationToNodeOnSuccess": true,
-      "disableErrorPageOnFailure": true,
       "visibility": false,
       "measureId": 56733615
     },
@@ -117,7 +149,6 @@
       "abortID": "OobeSettingsSelector",
       "offlineID": "OobeSettingsSelector",
       "disableBackNavigationToNodeOnSuccess": true,
-      "disableErrorPageOnFailure": true,
       "visibility": false,
       "intraWebAppVisibility": false,
       "customProperty": "UseOobeBroker",
@@ -138,7 +169,6 @@
       "abortID": "OobeSettingsSelector",
       "offlineID": "OobeSettingsSelector",
       "disableBackNavigationToNodeOnSuccess": true,
-      "disableErrorPageOnFailure": true,
       "visibility": false,
       "intraWebAppVisibility": false,
       "customProperty": "UseOobeBroker",
@@ -262,11 +292,7 @@
     }
   },
   "OOBE": {
-    "irisPlacementId": {
-      "value": "",
-      "overrideValue": "88001035",
-      "overrideFeature": "OobeCloudNavmesh"
-    },
+    "irisPlacementId": "88001035",
     "start": "StartSelector",
     "error": {
       "value": "Error",

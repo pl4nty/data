@@ -10,8 +10,7 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
             this.isInternetAvailable = isInternetAvailable;
             let oobeSettingsToggles = this.getSettingsToggles();
             this.contentSettings = oobeSettingsToggles.settingsData;
-            this.settingsObjects = oobeSettingsToggles.settingsObjects;        
-            this.learnMoreContent = oobePrivacySettingsData.getLearnMoreContent();
+            this.settingsObjects = oobeSettingsToggles.settingsObjects;
             this.scrolledToTheBottom = true;
             this.firstUpdateForScrollState = true;
             this.scrollViewEle = null;
@@ -156,9 +155,9 @@ define(['lib/knockout', 'oobeprivacysettings-data', 'legacy/bridge', 'legacy/eve
 
         onAfterViewNameUpdated() {
             let learnMoreIFrame = document.getElementById("learnMoreIFrame");
-            let doc = learnMoreIFrame.contentWindow.document;
-            oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, doc, document.documentElement.dir, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreTitle);
-        }
+            let dirVal = document.documentElement.dir;
+            oobePrivacySettingsData.updateLearnMoreContentForRender(learnMoreIFrame, dirVal, this.isInternetAvailable, this.resources.NavigationError, this.resources.LearnMoreTitle);
+         }
 
         updateForScrollState() {
             if (this.firstUpdateForScrollState || !this.scrolledToTheBottom) {

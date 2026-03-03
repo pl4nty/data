@@ -32,13 +32,28 @@
                 return result.oobeprivacysettings_data.initializePrivacySettingsAsync();
             });
 
+            let isOutOfBoxExperienceIncompletePromise = requireAsync(['legacy/bridge']).then((result) => {
+                const bridge = result.legacy_bridge;
+                return bridge.invoke("CloudExperienceHost.Bridge.isFunctionAvailable", "Environment.isOutOfBoxExperienceIncomplete")
+                .then((isFunctionAvailable) => {
+                    if (isFunctionAvailable) {
+                        bridge.invoke("Environment.isOutOfBoxExperienceIncomplete").then((isOOBEIncomplete) => {
+                            this.isOutOfBoxExperienceIncomplete = isOOBEIncomplete;
+                        });
+                    }
+                    else {
+                        this.isOutOfBoxExperienceIncomplete = (Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState != Windows.System.Profile.SystemOutOfBoxExperienceState.completed);
+                    }
+                });
+            });
+
             let isConnectedToNetworkPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess");
             }).then((isConnectedToNetwork) => {
                 this.isInternetAvailable = isConnectedToNetwork;
             });
 
-            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise, initializePrivacySettingsPromise: initializePrivacySettingsPromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
+            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise, initializePrivacySettingsPromise: initializePrivacySettingsPromise, isOutOfBoxExperienceIncompletePromise: isOutOfBoxExperienceIncompletePromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
         },
         error: (e) => {
             require(['legacy/bridge', 'legacy/events'], (bridge, constants) => {
@@ -53,7 +68,7 @@
                 window.KoHelpers = KoHelpers;
 
                 // Apply bindings and show the page
-                let vm = new OobePrivacySettingsAadcViewModel.OobePrivacySettingsAadcViewModel(this.resourceStrings, this.settingsEntryResourceStrings, this.isInternetAvailable);
+                let vm = new OobePrivacySettingsAadcViewModel.OobePrivacySettingsAadcViewModel(this.resourceStrings, this.settingsEntryResourceStrings, this.isOutOfBoxExperienceIncomplete, this.isInternetAvailable);
                 ko.applyBindings(vm, document.documentElement);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");

@@ -44,6 +44,7 @@ define([
             this.TSM_PROCESS_NAME = "DeviceLinkPage";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK = "ConfigureDeviceLink";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK = "ApplyDeviceLink";
+            this.TSM_STATE_CONFIGURE_DEVICE_LINK_ACKNOWLEDGE_DEVICE_LINK = "AcknowledgeDeviceLink";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK_MAA_ATTEST = "MaaAttestation";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK_RETRIEVE_DEVICE_LINK = "RetrieveDeviceLink";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK_TPM_ATTEST = "TpmAttestation";
@@ -55,6 +56,7 @@ define([
             this.TSM_STATE_PAGE_INITIALIZATION = "PageInitialization";
             this.TSM_STATE_REQUEST_DISCOVERY_URL = "RequestDiscoverUrl";
             this.TSM_STATE_REQUEST_ENROLLMENT_DISCOVERY = "RequestEnrollmentDiscovery";
+            this.TSM_STATE_TPM_INITIALIZING = "TpmInitializing";
             
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT = "onSuccessfulDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START = "onSuccessfulDapPageExitToOobeStart";
@@ -575,10 +577,7 @@ define([
 
         onSuccessVirtualPageVisible() {
             this.showDeviceLinkOptionsVirtualPage(false);
-            this.successResultBody(
-                this.commercialDiagnosticsUtilities.formatMessage(
-                    this.resourceStrings["DeviceLinkSuccessResultBody"],
-                    "Contoso, Inc."));
+            this.successResultBody(this.resourceStrings["DeviceLinkSuccessResultBody"]);
         }
 
         onFailureVirtualPageVisible() {
@@ -698,6 +697,15 @@ define([
                 }, async (progress) => {
                     if (this.currentVirtualPageId() == this.VIRTUAL_PAGE_ID_DEVICE_LINK_PROGRESS) {
                         switch (progress) {
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.tpmInitializing:
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_TPM_INITIALIZING;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_TPM_INITIALIZING);
+                                break;
+
                             case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.enrollmentDiscovery:
                                 if (currentConfigurationStep != null) {
                                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
@@ -716,7 +724,7 @@ define([
                                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_TPM_ATTEST);
                                 break;
 
-                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.initiatingMaaAttestationRequest:                                
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.requestMaaJwt:
                                 if (currentConfigurationStep != null) {
                                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
                                 }
@@ -750,6 +758,15 @@ define([
 
                                 currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK;
                                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_APPLY_DEVICE_LINK);
+                                break;
+
+                            case ModernDeployment.Autopilot.Core.DeviceLinkConfigurationStatus.acknowledgeDeviceLink:
+                                if (currentConfigurationStep != null) {
+                                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, currentConfigurationStep);
+                                }
+
+                                currentConfigurationStep = this.TSM_STATE_CONFIGURE_DEVICE_LINK_ACKNOWLEDGE_DEVICE_LINK;
+                                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_CONFIGURE_DEVICE_LINK_ACKNOWLEDGE_DEVICE_LINK);
                                 break;
 
                             default:

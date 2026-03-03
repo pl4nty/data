@@ -86,12 +86,7 @@ var CloudExperienceHost;
                 if (!validReboot) {
                     let videoSrc = navMesh.getIntroVideoPath();
                     if (videoSrc !== "") {
-                        if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("OobeIntroVideoSynchronization")) {
-                            this._initializeIntroVideo(videoSrc);
-                        }
-                        else {
-                            this._playIntroVideo(videoSrc);
-                        }
+                        this._initializeIntroVideo(videoSrc);
                     }
                 }
                 if (navMesh.getInclusive() != 0) {
@@ -150,36 +145,6 @@ var CloudExperienceHost;
             else if (connectivityLevel != Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess) {
                 CloudExperienceHost.Storage.VolatileSharableData.removeItem("NetworkingValues", "CaptivePortalConnect");
             }
-        }
-        _playIntroVideo(videoSrc) {
-            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("StartToPlayIntroVideo");
-            let videoWrapperElement = document.createElement('div');
-            videoWrapperElement.setAttribute('class', 'introvideo-wrapper');
-            let videoElement = document.createElement('video');
-            let mediaElement = videoElement;
-            if (!mediaElement.canPlayType || !mediaElement.canPlayType("video/mp4")) {
-                return;
-            }
-            videoElement.setAttribute('class', 'introvideo-container');
-            videoElement.src = videoSrc;
-            videoWrapperElement.appendChild(videoElement);
-            document.body.appendChild(videoWrapperElement);
-            this._setRootElementDisplayed(false);
-            videoElement.addEventListener("error", () => {
-                this._setRootElementDisplayed(true);
-                videoWrapperElement.style.display = "none";
-            });
-            videoElement.addEventListener("loadeddata", () => {
-                videoElement.play();
-                AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
-                let videoDuration = (videoElement.duration && (videoElement.duration > 0)) ? videoElement.duration : 5; // default to be 5s if failed to get the video duration
-                this._startPlayIntroVideoTimer(videoWrapperElement, videoDuration);
-            });
-            videoElement.addEventListener('ended', () => {
-                this._removeIntroVideoWrapper(videoWrapperElement);
-                this._stopPlayIntrovideoTimer();
-                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("EndToPlayIntroVideo");
-            });
         }
         _initializeIntroVideo(videoSrc) {
             CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("StartToInitializeIntroVideo");
@@ -434,6 +399,41 @@ var CloudExperienceHost;
                     throw new Error(CloudExperienceHost.ErrorNames.ActivationNotSupported);
                     break;
             }
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("BlockRestrictedFlows")) {
+                const BLOCKED_COMMANDS_GLOBAL = [
+                    "LOCALONLY"
+                ];
+                const BLOCKED_COMMANDS_OOBE = [
+                    "SETADDLOCALONLY",
+                    "SETSQSALOCALONLY",
+                    "SETADDNEWUSER",
+                    "INCLUSIVETEST",
+                    "TEST",
+                    "CLOUDNAVMESHTEST",
+                    "LITETEST"
+                ];
+                if ((scenario !== null) && (typeof scenario === "string") && scenario.toLowerCase().startsWith("ms-cxh:")) {
+                    try {
+                        const expDesc = CloudExperienceHost.ExperienceDescription.Create(scenario);
+                        const experienceName = CloudExperienceHost.ExperienceDescription.getExperience(expDesc);
+                        const experienceNameUpper = experienceName ? experienceName.toUpperCase() : "";
+                        if (BLOCKED_COMMANDS_GLOBAL.indexOf(experienceNameUpper) >= 0) {
+                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("ScenarioBlocked", scenario);
+                            scenario = null;
+                        }
+                        else if ((Windows.System.Profile.SystemSetupInfo.outOfBoxExperienceState !== Windows.System.Profile.SystemOutOfBoxExperienceState.completed) && (BLOCKED_COMMANDS_OOBE.indexOf(experienceNameUpper) >= 0)) {
+                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("ScenarioBlockedDuringOOBE", scenario);
+                            scenario = null;
+                        }
+                    }
+                    catch (e) {
+                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("ScenarioBlockParseError", JSON.stringify({
+                            error: e && e.toString(),
+                            scenario
+                        }));
+                    }
+                }
+            }
             if (!scenario || (scenario.length === 0)) {
                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("CloseCXHDueToEmptyScenario");
                 WinJS.Application.stop();
@@ -473,28 +473,20 @@ var CloudExperienceHost;
                 let inclusive = (inclusiveFromNode === undefined) ? inclusiveFromMesh : ((inclusiveFromNode === true) ? 1 : 0);
                 let isCloudPolicyEnforced = CloudExperienceHostAPI.Environment.isCloudPolicyEnforced ? 1 : 0;
                 let nodeCapabilities = (currentNode && currentNode.nodeCapabilities) ? JSON.stringify(currentNode.nodeCapabilities) : undefined;
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GetDefaultAccountTokenCXHHelper")) {
-                    context.capabilities = JSON.stringify({
-                        "PrivatePropertyBag": 1,
-                        "PasswordlessConnect": 1,
-                        "Inclusive": inclusive,
-                        "IsCloudPolicyEnforced": isCloudPolicyEnforced,
-                        "PasswordlessSelfConnect": 1,
-                        "VisibilityTimerCancelledByShowProgress": true,
-                        "NodeCapabilities": nodeCapabilities,
-                        "GetTokenSilently": 1
-                    });
-                }
-                else {
-                    context.capabilities = JSON.stringify({
-                        "PrivatePropertyBag": 1,
-                        "PasswordlessConnect": 1,
-                        "Inclusive": inclusive,
-                        "IsCloudPolicyEnforced": isCloudPolicyEnforced,
-                        "PasswordlessSelfConnect": 1,
-                        "VisibilityTimerCancelledByShowProgress": true,
-                        "NodeCapabilities": nodeCapabilities
-                    });
+                context.capabilities = JSON.stringify({
+                    "PrivatePropertyBag": 1,
+                    "PasswordlessConnect": 1,
+                    "Inclusive": inclusive,
+                    "IsCloudPolicyEnforced": isCloudPolicyEnforced,
+                    "PasswordlessSelfConnect": 1,
+                    "VisibilityTimerCancelledByShowProgress": true,
+                    "NodeCapabilities": nodeCapabilities,
+                    "GetTokenSilently": 1
+                });
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RequestRawDA")) {
+                    const identityCapabilities = JSON.parse(CloudExperienceHostAPI.Environment.identityCapabilities);
+                    const existingCapabilities = JSON.parse(context.capabilities);
+                    context.capabilities = JSON.stringify(Object.assign({}, existingCapabilities, identityCapabilities));
                 }
                 context.experienceName = CloudExperienceHost.ExperienceDescription.getExperience(this._description);
                 let discoveryMesh = this.getDiscoveryNavMesh();
@@ -784,13 +776,8 @@ var CloudExperienceHost;
                 this._hasNotifiedFirstVisible = true;
                 CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("FirstWebAppVisible", this._currentNode && this._currentNode.cxid);
                 if (this._navigator && this._navigator.getNavMesh().getNotifyOnFirstVisible()) {
-                    if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("OobeIntroVideoSynchronization")) {
-                        if (this._introVideoElement != null) {
-                            this._playIntroVideoIfLoaded();
-                        }
-                        else {
-                            AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
-                        }
+                    if (this._introVideoElement != null) {
+                        this._playIntroVideoIfLoaded();
                     }
                     else {
                         AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").onFirstOOBEWebAppVisible();
@@ -917,7 +904,7 @@ var CloudExperienceHost;
                     this._logDuplicateWebAppTerminationAttempt("DuplicateInternalDone", result);
                     return;
                 }
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("IgnoreLauncherDuplicateWebappDone") && this._currentNode && this._currentNode.launcher) {
+                if (this._currentNode && this._currentNode.launcher) {
                     this._logDuplicateWebAppTerminationAttempt("DuplicateLauncherDone", result);
                     return;
                 }
@@ -1224,8 +1211,10 @@ var CloudExperienceHost;
                     AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").reportResult(cxhResult);
                     AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.Synchronization").reportSubResult(this._appResult);
                 }
-                if (CloudExperienceHost.getContext().host.toLowerCase() === "frx") {
-                    AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyOobeReadyStateChanged(false);
+                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeHostAppInDefaultUserSession")) {
+                    if (CloudExperienceHost.getContext().host.toLowerCase() === "frx") {
+                        AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyOobeReadyStateChanged(false);
+                    }
                 }
                 AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.AppEventNotificationManager").notifyAppFinished(cxhResult, this._appResult);
                 if (this._navigator && this._navigator.getNavMesh() && this._navigator.getNavMesh().getNotifyOnLastFinished()) {

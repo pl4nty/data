@@ -39,6 +39,7 @@ define([
             this.resourceStrings = resourceStrings;
             this.sessionUtilities = sessionUtilities;
             this.categoryViewModel = categoryViewModel;
+            this.screenReaderMessageAnnouncer = null;
             this.storedCategoryStatus = {};
 
             this.startOneActionBatchPromise = null;
@@ -221,6 +222,12 @@ define([
         }
 
 
+        announceToScreenReader(message) {
+            if (this.screenReaderMessageAnnouncer && message) {
+                this.screenReaderMessageAnnouncer(message);
+            } 
+        }
+
         handleClickEventOnDetailsButton() {
             if (this.sessionUtilities.isElementHidden(this.subcategoriesSectionElement)) {
                 this.sessionUtilities.showElement(this.subcategoriesSectionElement, true);
@@ -264,6 +271,8 @@ define([
                     statusText);
 
                 this.sessionUtilities.replaceNodeText(subcategory.getUiElement(), subcategoryText);
+                
+                this.announceToScreenReader(subcategoryText);
             }
 
             let newSubcategoryProperties = {};
@@ -381,8 +390,13 @@ define([
 
                         if (subcategoryDisposition === this.sessionUtilities.SUBCATEGORY_DISPOSITION_VISIBLE) {
                             let finalMessage = this.commercialDiagnosticsUtilities.formatMessage(subcategoryTextTemplate, title, progressText);
+                            let previousText = this.getSubcategoryProperty(currentSubcategory.getId(), this.SUBCATEGORY_PROPERTY_NAME_STATUS_TEXT);
 
                             this.sessionUtilities.replaceNodeText(uiElement, finalMessage);
+
+                            if (finalMessage != previousText) {
+                                this.announceToScreenReader(finalMessage);
+                            }
 
                             let newSubcategoryProperties = {};
                             newSubcategoryProperties[this.SUBCATEGORY_PROPERTY_NAME_STATUS_TEXT] = finalMessage;
@@ -578,6 +592,8 @@ define([
 
             this.sessionUtilities.showElement(this.statusIconBackground, false);
             this.sessionUtilities.showElement(this.statusIconGlyph, false);
+
+            this.announceToScreenReader(`${this.categoryViewModel.getTitle()}: ${message}`);
         }
 
         setFailureVisuals(message) {
@@ -590,6 +606,8 @@ define([
 
             this.sessionUtilities.showElement(this.statusIconBackground, false);
             this.sessionUtilities.showElement(this.statusIconGlyph, false);
+
+            this.announceToScreenReader(`${this.categoryViewModel.getTitle()}: ${message}`);
         }
 
         resetVisuals() {
@@ -656,6 +674,16 @@ define([
 
         getCategoryBody() {
             return this.categoryBody;
+        }
+
+        setScreenReaderMessageAnnouncer(screenReaderMessageAnnouncer) {
+            if (screenReaderMessageAnnouncer) {
+                this.screenReaderMessageAnnouncer = screenReaderMessageAnnouncer;
+            } else {
+                this.commercialDiagnosticsUtilities.logInfoEvent(
+                    "CommercialOOBE_BootstrapStatusCategory_SkippedScreenReaderAnnouncerSet",
+                    "BootstrapStatus: Screen reader announcements will be skipped - missing screenReaderMessageAnnouncer.");
+            }
         }
 
         isCategoryInTerminalState() {

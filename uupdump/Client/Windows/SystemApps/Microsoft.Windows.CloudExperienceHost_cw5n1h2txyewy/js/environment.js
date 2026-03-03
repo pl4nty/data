@@ -435,9 +435,29 @@ var CloudExperienceHost;
             return CloudExperienceHostAPI.OobeDeviceNameManager.getIsValidDeviceNameAsync(deviceName);
         }
         static setDeviceNameAsync(deviceName) {
-            return CloudExperienceHostAPI.OobeDeviceNameManager.setDeviceNameAsync(deviceName).then(() => {
-                CloudExperienceHost.setRebootForOOBE("OobeWirelessAfterDeviceNameReboot");
-            });
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("DeviceNameRebootMove")) {
+                const allowedIdentityProviders = CloudExperienceHost.getAllowedIdentityProviders();
+                let aadAllowed = (allowedIdentityProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.AAD) != -1);
+                let msaAllowed = (allowedIdentityProviders.indexOf(CloudExperienceHost.SignInIdentityProviders.MSA) != -1);
+                CloudExperienceHost.Telemetry.logEvent("setDeviceNameAsync", JSON.stringify({
+                    aadAllowed,
+                    msaAllowed
+                }));
+                if (!aadAllowed && msaAllowed) {
+                    CloudExperienceHost.Storage.VolatileSharableData.addItem("DeviceNameValues", "DeviceNameChangeRequested", deviceName);
+                    return WinJS.Promise.wrap();
+                }
+                else {
+                    return CloudExperienceHostAPI.OobeDeviceNameManager.setDeviceNameAsync(deviceName).then(() => {
+                        CloudExperienceHost.setRebootForOOBE("OobeWirelessAfterDeviceNameReboot");
+                    });
+                }
+            }
+            else {
+                return CloudExperienceHostAPI.OobeDeviceNameManager.setDeviceNameAsync(deviceName).then(() => {
+                    CloudExperienceHost.setRebootForOOBE("OobeWirelessAfterDeviceNameReboot");
+                });
+            }
         }
     }
     CloudExperienceHost.DeviceName = DeviceName;

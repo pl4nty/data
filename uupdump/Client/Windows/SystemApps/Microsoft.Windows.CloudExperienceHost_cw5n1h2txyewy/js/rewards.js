@@ -32,54 +32,7 @@ var CloudExperienceHost;
         }
 
         function reportRewardsActivityAsync() {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("WamTokenAcquisition")) {
-                throw "ApiNonexistentOnClient";
-            }
-
-            return new WinJS.Promise(function (completeDispatch, errorDispatch) {
-                if (shouldReportRewards) {
-                    try {
-                        Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.findAccountProviderAsync("https://login.windows.local").then(function (provider) {
-                            if (provider && (provider.authority === "consumers")) {
-                                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("RewardsAccountDefault");
-                                let tokenRequest = new Windows.Security.Authentication.Web.Core.WebTokenRequest(provider, "service::prod.rewardsplatform.microsoft.com::MBI"); // rewards site requires MBI policy
-                                return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.getTokenSilentlyAsync(tokenRequest);
-                            }
-                            else {
-                                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("RewardsAccountNotDefault");
-                                return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.findAccountProviderAsync("https://login.microsoft.com", "consumers").then(function (provider) {
-                                    let tokenRequest = new Windows.Security.Authentication.Web.Core.WebTokenRequest(provider, "service::prod.rewardsplatform.microsoft.com::MBI"); // rewards site requires MBI policy
-                                    return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.findAllAccountsAsync(provider).then(function (findAllAccountsResult) {
-                                        if ((findAllAccountsResult != null) && (findAllAccountsResult.accounts != null) && (findAllAccountsResult.accounts.size == 1)) {
-                                            return Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager.getTokenSilentlyAsync(tokenRequest, findAllAccountsResult.accounts[0]);
-                                        }
-                                        else {
-                                            completeDispatch(0); // return 0 to indicate no work done
-                                        }
-                                    });
-                                });
-                            }
-                        }).then(function(tokenResponse) {
-                            if (tokenResponse) {
-                                return reportRewardsActivityRestAsync(tokenResponse.responseData[0].token);
-                            }
-                            else {
-                                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("RewardsAccountNoToken");
-                                completeDispatch(0);
-                            }
-                        }).then(function(result) {
-                            completeDispatch(result);
-                        });
-                    }
-                    catch (ex) {
-                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logCriticalEvent2("ReportRewardsActivityError", CloudExperienceHost.GetJsonFromError(ex));
-                        errorDispatch(ex);
-                    }
-                }
-                else {
-                    completeDispatch(0); // no work done
-                }
-            });
+            throw "ApiNonexistentOnClient";
         }
         Rewards.reportRewardsActivityAsync = reportRewardsActivityAsync;
     })(CloudExperienceHost.Rewards || (CloudExperienceHost.Rewards = {}));

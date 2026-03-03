@@ -231,6 +231,90 @@ var CloudExperienceHost;
                 });
             });
         }
+        static findLanguagesFromCbsPackages(forceRefresh = false, packageTypes = 0) {
+            CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_findLanguagesFromCbsPackagesStarted", forceRefresh);
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPLanguageRemoval")) {
+                    AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").findLanguagesFromCbsPackagesAsync(forceRefresh, packageTypes).then((result) => {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_findLanguagesFromCbsPackagesSucceeded", JSON.stringify(result));
+                        let languages = [];
+                        Object.keys(result).forEach(function (key) {
+                            languages.push(result[key]);
+                        });
+                        completeDispatch(languages);
+                    }, (err) => {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_findLanguagesFromCbsPackagesFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_findLanguagesFromCbsPackagesFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
+        static removeCbsPackagesForLanguages(languages) {
+            CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_removeCbsPackagesForLanguagesStarted: ", JSON.stringify(languages));
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPLanguageRemoval")) {
+                    AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").removeCbsPackagesForLanguagesAsync(languages).then((reboot) => {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_removeCbsPackagesForLanguagesAsyncSucceeded", reboot);
+                        completeDispatch(reboot);
+                    }, (err) => {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_removeCbsPackagesForLanguagesAsyncFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_removeCbsPackagesForLanguagesAsyncFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
+        static getLanguagesOnDevice() {
+            CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getLanguagesOnDeviceStarted");
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPLanguageRemoval")) {
+                    try {
+                        let languages = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeDisplayLanguagesCore").getDisplayLanguages();
+                        let languageTags = [];
+                        languages.forEach((item) => {
+                            languageTags.push(item.tag);
+                        });
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getLanguagesOnDeviceSucceeded", JSON.stringify(languageTags));
+                        completeDispatch(languageTags);
+                    }
+                    catch (err) {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getLanguagesOnDeviceFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    }
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getLanguagesOnDeviceFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
+        static isNDUPAllowedByCSP() {
+            CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_IsNDUPAllowedByCSPStarted");
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPCSPBridgeAPI")) {
+                    try {
+                        const isNDUPAllowed = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").isNDUPAllowedByCSP();
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPSucceeded", JSON.stringify(isNDUPAllowed));
+                        completeDispatch(isNDUPAllowed);
+                    }
+                    catch (err) {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    }
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
     }
     CloudExperienceHost.ExpeditedUpdate = ExpeditedUpdate;
 })(CloudExperienceHost || (CloudExperienceHost = {}));

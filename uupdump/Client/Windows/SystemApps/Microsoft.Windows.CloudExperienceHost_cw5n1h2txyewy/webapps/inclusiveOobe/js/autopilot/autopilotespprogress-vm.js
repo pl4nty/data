@@ -97,6 +97,16 @@ define([
             this.showContinueAnywayHyperlinkEnabled = ko.observable(false);
             this.showSignOutHyperlinkEnabled = ko.observable(false);
 
+            this.screenReaderAnnouncement = ko.observable("");
+
+            this.screenReaderMessageAnnouncer = (message) => {
+                this.screenReaderAnnouncement(message);
+            };
+
+            for (let i = 0; i < this.categoryUiContainers.length; i++) {
+                this.categoryUiContainers[i].setScreenReaderMessageAnnouncer(this.screenReaderMessageAnnouncer);
+            }
+
             this.continueAnywayButton = {
                 automationId: "idContinueAnywayButton",
                 buttonText: this.resourceStrings["BootstrapPageContinueAnywayButton"],

@@ -10,7 +10,11 @@
     "wallpaperBackdropEnabled": true,
     "NthMSAHello": {
       "cxid": "NthMSAHello",
-      "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-main.html",
+      "url": {
+        "value": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-main.html",
+        "overrideValue": "ms-appx-web:///webapps/inclusiveOobe/view/OobeHello-nth-main.html",
+        "overrideFeature": "HelloNthValueMessaging"
+      },
       "preloadCheck": "CloudExperienceHost.NthBioExperience",
       "preloadCheckSkipOnFailure": true,
       "preloadSkipID": "NthSnapshotCapture",
@@ -109,5 +113,64 @@
       "ignoreResult": true,
       "visibility": false
     }
+  },
+  "NTHWASC": {
+    "start": "NthWindowsAccountSyncConsent",
+    "notifyOnFirstVisible": true,
+    "disableErrorPageOnFailure": true,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "frameName": "oobe-light-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "NthWindowsAccountSyncConsent": {
+      "cxid": "NthWindowsAccountSyncConsent",
+      "url": "https://sdx.microsoft.com/frx/windows-account-sync-consent/nthlogon",
+      "urlint": "https://sdx.microsoft-int.com/frx/windows-account-sync-consent/nthlogon",
+      "internetRequired": true,
+      "skipReconnectHandler": true,
+      "failID": "ExitOnFailure",
+      "cancelID": "ExitOnFailure",
+      "abortID": "ExitOnFailure",
+      "offlineID": "ExitOnFailure",
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "intraWebAppVisibility": false,
+      "measureId": 59693456
+    },
+    "ExitOnFailure": {
+      "cxid": "ExitOnFailure",
+      "launcher": "js:OobeSkipNode",
+      "disableErrorPageOnFailure": true,
+      "visibility": false
+    }
+  },
+  "NTHM365PINNING": {
+      "start": "NthM365Pinning",
+      "notifyOnFirstVisible": true,
+      "speechCapable": true,
+      "speechDisabled": true,
+      "frameName": "oobe-light-frame",
+      "personality": "CloudExperienceHost.Personality.LiteWhite",
+      "NthM365Pinning": {
+        "cxid": "NthM365Pinning",
+        "url": "https://sdx.microsoft.com/frx/nthm365pinning",
+        "urlint": "https://sdx.microsoft-int.com/frx/nthm365pinning",
+        "internetRequired": true,
+        "skipReconnectHandler": true,
+        "failID": "ExitOnFailure",
+        "cancelID": "ExitOnFailure",
+        "abortID": "ExitOnFailure",
+        "offlineID": "ExitOnFailure",
+        "disableErrorPageOnFailure": true,
+        "visibility": false,
+        "intraWebAppVisibility": false,
+        "measureId": 59721036
+      },
+      "ExitOnFailure": {
+        "cxid": "ExitOnFailure",
+        "launcher": "js:OobeSkipNode",
+        "disableErrorPageOnFailure": true,
+        "visibility": false
+      }
   }
 }

@@ -329,6 +329,9 @@
     </div>
 </head>
 <body class="webapp-inner">
+    <!-- Hidden aria-live region for screen reader announcements -->
+    <div id="categoryAnnouncements" aria-live="polite" aria-atomic="false" aria-role="alert" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;" data-bind="text: $root.screenReaderAnnouncement"></div>
+    
     <div class="body-container" id="esp-body-container">
         <div class="container-content no-scroll">
             <oobe-header params="title: $root.pageTitle, subtitle: $root.pageLeadText"></oobe-header>

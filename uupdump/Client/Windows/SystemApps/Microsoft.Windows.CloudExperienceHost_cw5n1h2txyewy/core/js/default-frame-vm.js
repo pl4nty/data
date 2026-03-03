@@ -36,19 +36,17 @@ define(['legacy/appViewManager'], (appViewManager) => {
                 webViewCtrl.style.width = "100%";
                 webViewCtrl.setAttribute("aria-hidden", "true");
 
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CustomDefaultFrameSizing")) {
-                    let frameMargin = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleMargin() : null;
-                    if (frameMargin != null) {
-                        webViewCtrl.style.margin = frameMargin;
-                    }
-                    let frameHeight = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleHeight() : null;
-                    if (frameHeight != null) {
-                        webViewCtrl.style.height = frameHeight;
-                    }
-                    let frameWidth = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleWidth() : null;
-                    if (frameWidth != null) {
-                        webViewCtrl.style.width = frameWidth;
-                    }
+                let frameMargin = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleMargin() : null;
+                if (frameMargin != null) {
+                    webViewCtrl.style.margin = frameMargin;
+                }
+                let frameHeight = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleHeight() : null;
+                if (frameHeight != null) {
+                    webViewCtrl.style.height = frameHeight;
+                }
+                let frameWidth = CloudExperienceHost.getNavMesh ? CloudExperienceHost.getNavMesh().getFrameStyleWidth() : null;
+                if (frameWidth != null) {
+                    webViewCtrl.style.width = frameWidth;
                 }
 
                 this._webViewCtrl = webViewCtrl;

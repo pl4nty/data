@@ -1124,16 +1124,8 @@
         "start": "MSA",
         "msaTicketContext": "WindowsLogon",
         "notifyOnFirstVisible": true,
-        "frameName": {
-            "value": "default-frame",
-            "overrideValue": "oobe-light-frame",
-            "overrideFeature": "LiteWhiteNTH"
-        },
-        "personality": {
-            "value": "CloudExperienceHost.Personality.Unspecified",
-            "overrideValue": "CloudExperienceHost.Personality.LiteWhite",
-            "overrideFeature": "LiteWhiteNTH"
-        },
+        "frameName": "oobe-light-frame",
+        "personality": "CloudExperienceHost.Personality.LiteWhite",
         "MSA": {
             "cxid": "MSA",
             "url": "https://login.live.com/ppsecure/inlinePOPAuth.srf?id=80605",
@@ -1444,7 +1436,7 @@
             "successID": "OobeEnterpriseProvisioning",
             "failID": "OobeEnterpriseProvisioning",
             "cancelID": "OobeEnterpriseProvisioning",
-            "action1ID": "OobeLanguage",
+            "action1ID": "AutoPilotPrefetch",
             "visibility": false,
             "disableBackNavigationToNode": true
         },
@@ -2150,20 +2142,30 @@
             "requiredFeatureName": "NDUPEarlyOobeNode",
             "internetRequired": true,
             "skipReconnectHandler": true,
-            "successID": "EarlyRebootNDUP",
-            "failID": "EarlyRebootNDUP",
-            "cancelID": "EarlyRebootNDUP",
-            "abortID": "EarlyRebootNDUP",
-            "offlineID": "EarlyRebootNDUP",
+            "successID": "OobeDeviceNameCommit",
+            "failID": "OobeDeviceNameCommit",
+            "cancelID": "OobeDeviceNameCommit",
+            "abortID": "OobeDeviceNameCommit",
+            "offlineID": "OobeDeviceNameCommit",
             "disableErrorPageOnFailure": true,
             "disableBackNavigationToNode": true,
             "visibility": false,
             "allowDisplayModeChange": true
         },
+        "OobeDeviceNameCommit": {
+            "cxid": "OobeDeviceNameCommit",
+            "launcher": "js:OobeDeviceNameCommit",
+            "requiredFeatureName": "DeviceNameRebootMove",
+            "successID": "EarlyRebootNDUP",
+            "failID": "EarlyRebootNDUP",
+            "cancelID": "EarlyRebootNDUP",
+            "offlineID": "EarlyRebootNDUP",
+            "disableBackNavigationToNode": true,
+            "visibility": false
+        },
         "EarlyRebootNDUP": {
             "cxid": "EarlyRebootNDUP",
             "launcher": "js:OOBEReboot",
-            "preloadCheck": "CloudExperienceHost.ExpeditedUpdate",
             "requiredFeatureName": "NDUPEarlyOobeNode",
             "disableBackNavigationToNode": true,
             "visibility": false,
@@ -2434,24 +2436,6 @@
             "supportedSignInIdentityProviders": [ "msa", "aad" ],
             "internetRequired": true,
             "skipReconnectHandler": true,
-            "successID": "OobeMSACloudBackupRestore",
-            "failID": "OobeMSACloudBackupRestore",
-            "cancelID": "OobeMSACloudBackupRestore",
-            "abortID": "OobeMSACloudBackupRestore",
-            "offlineID": "OobeMSACloudBackupRestore",
-            "disableErrorPageOnFailure": true,
-            "ignoreResult": true,
-            "visibility": false
-        },
-        "OobeMSACloudBackupRestore": {
-            "cxid": "OobeMSACloudBackupRestore",
-            "url": "https://sdx.microsoft.com/frx/cloud-backup-restore2",
-            "urlint": "https://sdx.microsoft-int.com/frx/cloud-backup-restore2",
-            "preloadCheck": "CloudExperienceHost.BackupRestore.OobeCloudBackupRestore",
-            "requiredDisabledFeatureName": "OobeRestoreUx",
-            "supportedSignInIdentityProviders": [ "msa" ],
-            "internetRequired": true,
-            "skipReconnectHandler": true,
             "successID": "OobeMSACloudBackupRestoreUX",
             "failID": "OobeMSACloudBackupRestoreUX",
             "cancelID": "OobeMSACloudBackupRestoreUX",
@@ -2459,15 +2443,13 @@
             "offlineID": "OobeMSACloudBackupRestoreUX",
             "disableErrorPageOnFailure": true,
             "ignoreResult": true,
-            "visibility": false,
-            "intraWebAppVisibility": false
+            "visibility": false
         },
         "OobeMSACloudBackupRestoreUX": {
             "cxid": "OobeMSACloudBackupRestoreUX",
             "url": "https://sdx.microsoft.com/frx/cloud-backup-restore2",
             "urlint": "https://sdx.microsoft-int.com/frx/cloud-backup-restore2",
             "preloadCheck": "CloudExperienceHost.BackupRestore.OobeCloudBackupRestore",
-            "requiredFeatureName": "OobeRestoreUx",
             "supportedSignInIdentityProviders": [ "msa" ],
             "internetRequired": true,
             "successID": "OobePrepEnduserSession",
@@ -3959,6 +3941,34 @@
           "disableErrorPageOnFailure": true,
           "visibility": false
        }
+    },
+    "NTHAADCLOUDBACKUPRESTORE": {
+        "start": "NthAADCloudBackupRestore",
+        "notifyOnFirstVisible": true,
+        "disableErrorPageOnFailure": true,
+        "speechCapable": true,
+        "speechDisabled": true,
+        "frameName": "oobe-light-frame",
+        "personality": "CloudExperienceHost.Personality.LiteWhite",
+        "NthAADCloudBackupRestore": {
+            "cxid": "NthAADCloudBackupRestore",
+            "url": "https://sdx.microsoft.com/frx/cloud-backup-restore-aad-nthlogon",
+            "urlint": "https://sdx.microsoft-int.com/frx/cloud-backup-restore-aad-nthlogon",
+            "internetRequired": true,
+            "skipReconnectHandler": true,
+            "failID": "ExitOnFailure",
+            "cancelID": "ExitOnFailure",
+            "abortID": "ExitOnFailure",
+            "offlineID": "ExitOnFailure",
+            "disableErrorPageOnFailure": true,
+            "visibility": false
+        },
+        "ExitOnFailure": {
+            "cxid": "ExitOnFailure",
+            "launcher": "js:OobeSkipNode",
+            "disableErrorPageOnFailure": true,
+            "visibility": false
+        }
     }
     ,"NTHSNAPSHOTCAPTURE": {
          "start": "NthSnapshotCapture",

@@ -27,12 +27,6 @@ var CloudExperienceHost;
                             errorMessage: "",
                             errorCode: ""
                         };
-                        if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GetDefaultAccountTokenCXHHelper")) {
-                            responseObject.errorMessage = "FeatureIsDisabled";
-                            responseObject.errorCode = "2147780800"; // PPCRL_REQUEST_E_FEATURE_NOT_SUPPORTED
-                            errorDispatch(responseObject);
-                            return;
-                        }
                         let parsedRequest = JSON.parse(requestJson);
                         let provider = parsedRequest.provider;
                         let scope = parsedRequest.scope;

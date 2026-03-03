@@ -8,8 +8,6 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 // Show the progress ring while committing async.
                 bridge.fireEvent(CloudExperienceHost.Events.showProgressWhenPageIsBusy);
 
-                let userChoicesAndPresentationVersion = [];
-
                 let userChoices = [];
                 for (let setting of settings) {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", this.privacySettingKindToString(setting.settingKind), setting.value);
@@ -17,10 +15,7 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                     userChoices.push(setting.value);
                 }
 
-                userChoicesAndPresentationVersion.push(userChoices);
-                userChoicesAndPresentationVersion.push(privacyConsentPresentationVersion);
-
-                bridge.invoke("CloudExperienceHost.Privacy.commitSettingsAsync", userChoicesAndPresentationVersion).then(() => {
+                bridge.invoke("CloudExperienceHost.Privacy.commitSettingsAsync", userChoices, privacyConsentPresentationVersion).then(() => {
                     bridge.fireEvent(constants.Events.done, constants.AppResult.success);
                 }, (err) => {
                     bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "CommitSettingsAsyncWorkerFailure", core.GetJsonFromError(err));
@@ -41,7 +36,9 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             bridge.invoke("CloudExperienceHost.Privacy.getInitialUserSettingsAsync").then((initialUserSettings) => {
                 this.initialUserSettings = initialUserSettings;
             });
+        }
 
+        initializeLearnMoreAsync() {
             bridge.invoke("CloudExperienceHost.Privacy.getLearnMorePlainTextAsync").then((learnMoreContent) => {
                 this.learnMoreContent = learnMoreContent;
             });
@@ -270,13 +267,12 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             return this.learnMoreContent;
         }
 
-        updateLearnMoreContentForRender(iFrameElement, doc, dirVal, isInternetAvailable, errorMessage, scrollTitle, elementToAnchor) {
+        updateLearnMoreContentForRender(iFrameElement, dirVal, isInternetAvailable, errorMessage, scrollTitle, elementToAnchor) {
+            let doc = iFrameElement.contentWindow.document;
             // Set the content of the iframe to the learn more content
             doc.body.innerHTML = this.getLearnMoreContent();
             // Set learn more scroll region title here for screen reader to read
             doc.body.title = scrollTitle;
-            // Make body focusable
-            doc.body.setAttribute('tabindex', '0');
             // Styling on the local resource html content is managed by applying cssOverride
             let cssOverride = "/webapps/inclusiveOobe/css/light-iframe-content.css";
             let fileRef = doc.head.ownerDocument.createElement("link");
@@ -294,37 +290,14 @@ define(["lib/knockout", 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                     }
             }
             doc.head.appendChild(fileRef);
-            doc.body.focus();
     
             let privacyLinks = doc.querySelectorAll("a");
             for (let i = 0; i < privacyLinks.length; i++) {
                 let link = privacyLinks[i];
                 link.onclick = (e) => {
-                    this.showLearnMoreContent(iFrameElement, doc, e.target.href, dirVal, isInternetAvailable, errorMessage);
+                    KoHelpers.showLearnMoreContent(iFrameElement, e.target.href, dirVal, isInternetAvailable, errorMessage, scrollTitle);
                     e.preventDefault();
                 };
-            }
-        }
-
-        showLearnMoreContent(iFrameElement, doc, href, dirVal, isInternetAvailable, errorMessage) {
-            // Styling on the local resource html content is managed by applying cssOverride
-            let cssOverride = "/webapps/inclusiveOobe/css/light-iframe-content.css";      
-            if (isInternetAvailable) {
-                let url = href + "&profile=transparentLight";
-                WinJS.xhr({ url: url }).then((response) => {
-                    // TODO: task.ms/58115852 - Might need a Narrator accessibility fix to add a name property for screen reader
-                    doc.location.href = url;
-                    doc.body.focus();
-                }, (error) => {
-                    let html = "<html><head><link href=\"" + cssOverride + "\" rel=\"stylesheet\">";
-                    html = html + "</head><body><p>" + errorMessage + "</p></body></html>";
-                    KoHelpers.loadIframeContent(iFrameElement, doc, { content: html, dir: dirVal });
-                });
-            }
-            else {
-                let innerHTML = "<html><head><link href=\"" + cssOverride + "\" rel=\"stylesheet\">";
-                innerHTML = innerHTML + "</head><body><p>" + errorMessage + "</p></body></html>";
-                doc.body.innerHTML = innerHTML;
             }
         }
     }

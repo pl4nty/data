@@ -1,7 +1,7 @@
 ﻿//
 // Copyright (C) Microsoft. All rights reserved.
 //
-define(() => {
+define(["legacy/bridge"], (bridge) => {
     class OobeToggleViewModel {
         constructor(params, element) {
             this.titleText = ko.isObservable(params.titleText) ? params.titleText : ko.observable(params.titleText);
@@ -29,6 +29,22 @@ define(() => {
             this.clickHandler = this.onClick.bind(this);
             element.addEventListener("click", this.clickHandler);
             element.addEventListener("pointerdown", this.onPointerDown, true /*useCapture*/ );
+
+            this.keydownHandler = this.onKeyDown.bind(this);
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "WxhDisableToggleOnArrowKeys").done(function (result) {
+                if (result) {
+                    this.element.addEventListener("keydown", this.keydownHandler, true /*useCapture*/);
+                }
+            }.bind(this));
+        }
+
+        onKeyDown(ev) {
+            const arrowKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+            // WinJS toggle control changes state on arrow keys, WinUI controls do not.
+            // Disable handling arrow keys per Accessibility ask to have consistent behavior with SystemSettings.
+            if (arrowKeys.includes(ev.key)) {
+                ev.stopImmediatePropagation();
+            }
         }
 
         onClick(ev) {

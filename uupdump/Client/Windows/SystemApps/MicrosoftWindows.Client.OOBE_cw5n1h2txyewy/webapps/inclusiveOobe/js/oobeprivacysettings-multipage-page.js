@@ -28,13 +28,17 @@
                 return result.oobeprivacysettings_data.initializePrivacySettingsAsync();
             });
 
+            let initializeLearnMorePromise = requireAsync(['oobeprivacysettings-data']).then((result) => {
+                return result.oobeprivacysettings_data.initializeLearnMoreAsync();
+            });
+
             let isConnectedToNetworkPromise = requireAsync(['legacy/bridge']).then((result) => {
                 return result.legacy_bridge.invoke("CloudExperienceHost.Environment.hasInternetAccess");
             }).then((isConnectedToNetwork) => {
                 this.isInternetAvailable = isConnectedToNetwork;
             });
 
-            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise, initializePrivacySettingsPromise: initializePrivacySettingsPromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
+            return WinJS.Promise.join({ loadCssPromise: loadCssPromise, langAndDirPromise: langAndDirPromise, getLocalizedStringsPromise: getLocalizedStringsPromise, getSettingsLocalizedStringsPromise: getSettingsLocalizedStringsPromise, initializePrivacySettingsPromise: initializePrivacySettingsPromise, initializeLearnMorePromise: initializeLearnMorePromise, isConnectedToNetworkPromise: isConnectedToNetworkPromise });
         },
         error: (e) => {
             require(['legacy/bridge', 'legacy/events'], (bridge, constants) => {

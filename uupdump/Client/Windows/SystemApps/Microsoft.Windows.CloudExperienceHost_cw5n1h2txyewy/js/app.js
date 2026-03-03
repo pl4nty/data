@@ -520,11 +520,9 @@ var CloudExperienceHost;
     var BridgeHelpers;
     (function (BridgeHelpers) {
         function requireCallerUri(target, propertyKey, descriptor) {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("PassCallerUriArgs")) {
-                const metadata = descriptor.value.__metadata || {};
-                metadata.requireCallerUri = true;
-                descriptor.value.__metadata = metadata;
-            }
+            const metadata = descriptor.value.__metadata || {};
+            metadata.requireCallerUri = true;
+            descriptor.value.__metadata = metadata;
         }
         BridgeHelpers.requireCallerUri = requireCallerUri;
         class ResultMetadata {
@@ -537,22 +535,17 @@ var CloudExperienceHost;
         function validateCallbackUri(target, propertyKey, descriptor) {
             let original = descriptor.value;
             descriptor.value = function (...args) {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ValidateCallbackUri")) {
-                    return WinJS.Promise.as(original.apply(this, args)).then(function (result) {
-                        if (result instanceof ResultMetadata) {
-                            result.validateCallbackUri = true;
-                            return result;
-                        }
-                        else {
-                            let wrapper = new ResultMetadata(result);
-                            wrapper.validateCallbackUri = true;
-                            return wrapper;
-                        }
-                    });
-                }
-                else {
-                    return original.apply(this, args);
-                }
+                return WinJS.Promise.as(original.apply(this, args)).then(function (result) {
+                    if (result instanceof ResultMetadata) {
+                        result.validateCallbackUri = true;
+                        return result;
+                    }
+                    else {
+                        let wrapper = new ResultMetadata(result);
+                        wrapper.validateCallbackUri = true;
+                        return wrapper;
+                    }
+                });
             };
             descriptor.value.__metadata = original.__metadata;
         }

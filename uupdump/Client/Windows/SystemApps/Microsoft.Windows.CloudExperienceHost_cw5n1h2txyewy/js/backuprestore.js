@@ -1,4 +1,10 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     var BackupRestore;
@@ -301,6 +307,74 @@ var CloudExperienceHost;
                 }
             }
             OobeAadCloudBackupRestore.setRegistryStringValueForRestoreCSPAsync = setRegistryStringValueForRestoreCSPAsync;
+            function firstLogonRestoreAsync(correlationVector) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FSIR_RestoreApi")) {
+                    if ((correlationVector === null) || (correlationVector === undefined)) {
+                        correlationVector = "";
+                    }
+                    return CloudExperienceHostAPI.BackupRestoreManager.firstLogonRestoreAsync(correlationVector);
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("Feature_FSIR_RestoreApi_Disabled", "firstLogonRestoreAsync");
+                    throw "ApiNonexistentOnClient";
+                }
+            }
+            OobeAadCloudBackupRestore.firstLogonRestoreAsync = firstLogonRestoreAsync;
         })(OobeAadCloudBackupRestore = BackupRestore.OobeAadCloudBackupRestore || (BackupRestore.OobeAadCloudBackupRestore = {}));
+        class TokenProvider {
+            static getAADUserGraphTokenAsync(callerUri, redirectUri) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FSIR_WamAuth")) {
+                    return new WinJS.Promise(function (completeDispatch, errorDispatch) {
+                        try {
+                            CloudExperienceHostAPI.BackupRestoreManager.getAADUserGraphTokenAsync(callerUri, redirectUri).then((graphToken) => {
+                                completeDispatch(graphToken);
+                            }, (error) => {
+                                CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserGraphTokenAsyncError", CloudExperienceHost.GetJsonFromError(error));
+                                errorDispatch(error);
+                            });
+                        }
+                        catch (error) {
+                            CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserGraphTokenAsyncCatch", CloudExperienceHost.GetJsonFromError(error));
+                            errorDispatch(error);
+                        }
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("Feature_FSIR_WamAuth_Disabled", "getAADUserGraphTokenAsync");
+                    throw "ApiNonexistentOnClient";
+                }
+            }
+            static getAADUserPdrsTokenAsync(callerUri, redirectUri) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FSIR_WamAuth")) {
+                    return new WinJS.Promise(function (completeDispatch, errorDispatch) {
+                        try {
+                            CloudExperienceHostAPI.BackupRestoreManager.getAADUserPDRSTokenAsync(callerUri, redirectUri).then((pdrsToken) => {
+                                completeDispatch(pdrsToken);
+                            }, (error) => {
+                                CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserPDRSTokenAsyncError", CloudExperienceHost.GetJsonFromError(error));
+                                errorDispatch(error);
+                            });
+                        }
+                        catch (error) {
+                            CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserPDRSTokenAsyncCatch", CloudExperienceHost.GetJsonFromError(error));
+                            errorDispatch(error);
+                        }
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("Feature_FSIR_WamAuth_Disabled", "getAADUserPdrsTokenAsync");
+                    throw "ApiNonexistentOnClient";
+                }
+            }
+        }
+        __decorate([
+            CloudExperienceHost.BridgeHelpers.requireCallerUri,
+            CloudExperienceHost.BridgeHelpers.validateCallbackUri
+        ], TokenProvider, "getAADUserGraphTokenAsync", null);
+        __decorate([
+            CloudExperienceHost.BridgeHelpers.requireCallerUri,
+            CloudExperienceHost.BridgeHelpers.validateCallbackUri
+        ], TokenProvider, "getAADUserPdrsTokenAsync", null);
+        BackupRestore.TokenProvider = TokenProvider;
     })(BackupRestore = CloudExperienceHost.BackupRestore || (CloudExperienceHost.BackupRestore = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));

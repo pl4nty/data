@@ -1,4 +1,4 @@
-define(() => {
+define(["legacy/bridge"], (bridge) => {
     class OobeToggleViewModel {
         constructor(params, element) {
             this.titleText = ko.isObservable(params.titleText) ? params.titleText : ko.observable(params.titleText);
@@ -16,20 +16,35 @@ define(() => {
                 let sliderAt = isChecked ? this.labelOnText : this.labelOffText;
                 return this.summaryFormatString.replace("%1", description).replace("%2", sliderAt);
             });
+            
+            this.checkedValue.subscribe(() => {
+                const title = this.titleText();
+                this.titleText(" ");
+                this.titleText(title);
+            });
 
             this.element = element;
             this.clickHandler = this.onClick.bind(this);
             element.addEventListener("click", this.clickHandler);
             element.addEventListener("pointerdown", this.onPointerDown, true /*useCapture*/ );
+
+            this.keydownHandler = this.onKeyDown.bind(this);
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "DisableToggleOnArrowKeys").done(function (result) {
+                if (result) {
+                    this.element.addEventListener("keydown", this.keydownHandler, true /*useCapture*/);
+                }
+            }.bind(this));
+        }
+
+        onKeyDown(ev) {
+            const arrowKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+            if (arrowKeys.includes(ev.key)) {
+                ev.stopImmediatePropagation();
+            }
         }
 
         onClick(ev) {
             this.checkedValue(!this.checkedValue());
-
-            let title = this.titleText();
-            this.titleText(" ");
-            this.titleText(title);
-
             ev.preventDefault();
         }
 
@@ -40,6 +55,7 @@ define(() => {
         dispose() {
             this.element.removeEventListener("click", this.clickHandler);
             this.element.removeEventListener("pointerdown", this.onPointerDown);
+            this.element.removeEventListener("keydown", this.keydownHandler);
         }
     }
     return OobeToggleViewModel;

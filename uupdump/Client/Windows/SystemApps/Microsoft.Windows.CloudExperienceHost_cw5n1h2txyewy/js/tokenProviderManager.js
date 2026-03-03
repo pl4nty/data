@@ -292,7 +292,16 @@ var CloudExperienceHost;
             context.source = "TokenBroker";
             context.platform = this._platform;
             let chromelessUI = (CloudExperienceHostAPI.Environment.platform == 7 || CloudExperienceHostAPI.Environment.platform == 8) ? 1 : 0;
-            context.capabilities = JSON.stringify({ "PrivatePropertyBag": 1, "PasswordlessConnect": 1, "PreferAssociate": 1, "ChromelessUI": chromelessUI });
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RequestRawDA")) {
+                let identityCapabilities = JSON.parse(CloudExperienceHostAPI.Environment.identityCapabilities);
+                context.capabilities = JSON.stringify(Object.assign({}, { "PrivatePropertyBag": 1,
+                    "PasswordlessConnect": 1,
+                    "PreferAssociate": 1,
+                    "ChromelessUI": chromelessUI }, identityCapabilities));
+            }
+            else {
+                context.capabilities = JSON.stringify({ "PrivatePropertyBag": 1, "PasswordlessConnect": 1, "PreferAssociate": 1, "ChromelessUI": chromelessUI });
+            }
             return context;
         }
         _onDone(result) {

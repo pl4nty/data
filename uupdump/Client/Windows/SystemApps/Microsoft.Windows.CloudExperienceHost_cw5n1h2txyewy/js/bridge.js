@@ -140,12 +140,10 @@ var CloudExperienceHost;
             for (var i = 0; i < namespaces.length; i++) {
                 context = context[namespaces[i]];
             }
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("PassCallerUriArgs")) {
-                var instance = context[func];
-                const metadata = instance.__metadata;
-                if (metadata && metadata.requireCallerUri === true) {
-                    args.unshift(callerUri);
-                }
+            var instance = context[func];
+            const metadata = instance.__metadata;
+            if (metadata && metadata.requireCallerUri === true) {
+                args.unshift(callerUri);
             }
             return context[func].apply(context, args);
         }
@@ -245,14 +243,12 @@ var CloudExperienceHost;
         _invokeLocal(m) {
             let callerUri = this._target.src;
             this._contractHandler.invokeFromString(callerUri, m.value.name, m.value.args).done(function (result) {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ValidateCallbackUri")) {
-                    if (result instanceof CloudExperienceHost.BridgeHelpers.ResultMetadata) {
-                        if (result.validateCallbackUri && (callerUri !== this._target.src)) {
-                            CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("CallbackUriValidationFailed", m.value.name);
-                            return;
-                        }
-                        result = result.result;
+                if (result instanceof CloudExperienceHost.BridgeHelpers.ResultMetadata) {
+                    if (result.validateCallbackUri && (callerUri !== this._target.src)) {
+                        CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("CallbackUriValidationFailed", m.value.name);
+                        return;
                     }
+                    result = result.result;
                 }
                 if (m.value.context) {
                     this._callback(m, result, false);

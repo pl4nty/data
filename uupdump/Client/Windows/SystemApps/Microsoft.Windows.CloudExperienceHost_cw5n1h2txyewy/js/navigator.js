@@ -625,6 +625,9 @@ var CloudExperienceHost;
                 }
                 catch (e) {
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));
+                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("PreloadCheckErrorHandling")) {
+                        skipPromise = WinJS.Promise.as(!!this._currentNode.preloadCheckSkipOnFailure);
+                    }
                 }
                 skipPromise = skipPromise.then(null, (e) => {
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckAsyncError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));

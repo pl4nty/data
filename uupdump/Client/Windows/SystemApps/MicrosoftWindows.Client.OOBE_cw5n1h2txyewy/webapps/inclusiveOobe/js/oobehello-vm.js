@@ -24,16 +24,28 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             this.switchEnrollmentKindText = ko.observable(resourceStrings.HelloSwitchFaceToFingerprint);
             this.isConfirmationPageVisible = ko.observable(false);
 
+            //#region clean up this block during Feature_OobeHostPostMSAFlowMigration removal, and remove all usages of areIFrameFixesEnabled
+            this.areIFrameFixesEnabled = false;
+            // Initialize the URL regardless of feature flag to prevent undefined binding
+            // Feature_OobeHostPostMSAFlowMigration cleanup - remove href,personalityQSParam, url, this.learnMoreWebSource
             let href = "https://go.microsoft.com/fwlink/p/?linkid=2169254";
             let personalityQSParam = (this.isLiteWhitePersonality) ? "&profile=transparentLight" : "";
             let url = href + personalityQSParam;
 
             this.learnMoreWebSource = url;
+            bridge.invoke("CloudExperienceHost.FeatureStaging.tryGetIsFeatureEnabled", "OobeHostPostMSAFlowMigration").done((response) => {
+                if ((response.result === 1) && (response.value === 1)) {
+                    this.areIFrameFixesEnabled = true;
+                    this.learnMoreWebSource = null;
+                }
+            });
+            //#endregion
+
             this.learnMoreVisible = ko.observable(false);
             this.learnMoreVisible.subscribe((newValue) => {
                 if (newValue === false) {
                     // Reenable button interaction if we're not showing Learn More. On the Learn More page,
-                    // buttons will be enabled after the iframe is shown after oobeSettingsData.showLearnMoreContent()
+                    // buttons will be enabled after the iframe is shown
                     this.processingFlag(false);
                 }
             });
@@ -284,12 +296,24 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                 bridge.invoke("CloudExperienceHost.Telemetry.logUserInteractionEvent", "LearnMoreButtonClicked");
                 this.processingFlag(true);
                 this.learnMoreVisible(true);
+                this.showLearnMore();
+                this.processingFlag(false);
+            }
+        }
 
+        showLearnMore() {
+            let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");
+
+            // Feature_OobeHostPostMSAFlowMigration cleanup - remove if / else, and keep content of if block
+            if (this.areIFrameFixesEnabled === true) {
+                // Feature_OobeHostPostMSAFlowMigration cleanup - keep these lines
+                let dirVal = document.documentElement.dir;
+                let href = "https://go.microsoft.com/fwlink/p/?linkid=2169254"
+                KoHelpers.showLearnMoreContent(learnMoreIFrame, href, dirVal, true, this.resourceStrings.HelloLearnMoreNavigationError, this.resourceStrings.HelloLearnMoreLinkText, "mainwindowshellomodule");
+            } else {
                 // Since the iframe isn't scrolled to the right anchor when loaded, we need to refresh the page for it to scroll to the Windows Hello section
-                let learnMoreIFrame = document.getElementById("hello-learnmore-iframe");
                 learnMoreIFrame.src = learnMoreIFrame.src;
                 learnMoreIFrame.focus();
-                this.processingFlag(false);
             }
         }
 

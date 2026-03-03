@@ -211,10 +211,6 @@ var CloudExperienceHost;
         }
         static _processCloudJson(mesh, experience, target) {
             return new WinJS.Promise(function (completeDispatch) {
-                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("StaticCloudNavmesh")) {
-                    completeDispatch(mesh);
-                    return;
-                }
                 let cloudOverride;
                 if (mesh) {
                     cloudOverride = mesh.cloudOverride;
@@ -300,65 +296,34 @@ var CloudExperienceHost;
                     var exp = ExperienceDescription.getExperience(experience);
                     var navigationList = JSON.parse(navData);
                     var mesh = navigationList[exp];
-                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("StaticCloudNavmesh")) {
-                        if (mesh) {
-                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavMeshPreReplace", JSON.stringify(mesh));
-                            let target;
-                            try {
-                                target = CloudExperienceHost.Environment.getTarget();
-                                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("TargetEnvironment", target);
-                            }
-                            catch (ex) {
-                                target = CloudExperienceHost.TargetEnvironment.PROD;
-                            }
-                            Discovery._processCloudJson(mesh, experience, target).then(function (updatedMesh) {
-                                Object.keys(updatedMesh).forEach(function (key) {
-                                    if (updatedMesh[key].url !== undefined) {
-                                        let urlOverride = CloudExperienceHostAPI.Environment.getRegValue(updatedMesh[key].cxid + "Override");
-                                        if (urlOverride !== "") {
-                                            updatedMesh[key].url = urlOverride;
-                                        }
-                                        else if ((updatedMesh[key].urlint !== undefined) && (target == CloudExperienceHost.TargetEnvironment.INT)) {
-                                            updatedMesh[key].url = updatedMesh[key].urlint;
-                                        }
-                                    }
-                                    delete updatedMesh[key].urlint;
-                                });
-                                completeDispatch(updatedMesh);
-                            });
+                    if (mesh) {
+                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavMeshPreReplace", JSON.stringify(mesh));
+                        let target;
+                        try {
+                            target = CloudExperienceHost.Environment.getTarget();
+                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("TargetEnvironment", target);
                         }
-                        else {
-                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavigationMeshNotDefinedInJson", exp);
-                            completeDispatch(mesh);
+                        catch (ex) {
+                            target = CloudExperienceHost.TargetEnvironment.PROD;
                         }
-                    }
-                    else {
-                        if (mesh) {
-                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavMeshPreReplace", JSON.stringify(mesh));
-                            let target;
-                            try {
-                                target = CloudExperienceHost.Environment.getTarget();
-                                CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("TargetEnvironment", target);
-                            }
-                            catch (ex) {
-                                target = CloudExperienceHost.TargetEnvironment.PROD;
-                            }
-                            Object.keys(mesh).forEach(function (key) {
-                                if (mesh[key].url !== undefined) {
-                                    let urlOverride = CloudExperienceHostAPI.Environment.getRegValue(mesh[key].cxid + "Override");
+                        Discovery._processCloudJson(mesh, experience, target).then(function (updatedMesh) {
+                            Object.keys(updatedMesh).forEach(function (key) {
+                                if (updatedMesh[key].url !== undefined) {
+                                    let urlOverride = CloudExperienceHostAPI.Environment.getRegValue(updatedMesh[key].cxid + "Override");
                                     if (urlOverride !== "") {
-                                        mesh[key].url = urlOverride;
+                                        updatedMesh[key].url = urlOverride;
                                     }
-                                    else if ((mesh[key].urlint !== undefined) && (target == CloudExperienceHost.TargetEnvironment.INT)) {
-                                        mesh[key].url = mesh[key].urlint;
+                                    else if ((updatedMesh[key].urlint !== undefined) && (target == CloudExperienceHost.TargetEnvironment.INT)) {
+                                        updatedMesh[key].url = updatedMesh[key].urlint;
                                     }
                                 }
-                                delete mesh[key].urlint;
+                                delete updatedMesh[key].urlint;
                             });
-                        }
-                        else {
-                            CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavigationMeshNotDefinedInJson", exp);
-                        }
+                            completeDispatch(updatedMesh);
+                        });
+                    }
+                    else {
+                        CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("NavigationMeshNotDefinedInJson", exp);
                         completeDispatch(mesh);
                     }
                 }, function (e) {
