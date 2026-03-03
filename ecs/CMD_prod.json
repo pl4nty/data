@@ -267,6 +267,7 @@
         "EnableCUAAutoScaleFor1P": true,
         "EnableCUADesiredSizeFor1P": true,
         "EnableCUAGeoFor1P": true,
+        "EnableCUANotificationFor1POffboard": false,
         "EnableCUAProvisioningSupport": true,
         "EnableCUAReprovisionAllFor1P": false,
         "EnableCUAUserAssignmentSupport": true,
