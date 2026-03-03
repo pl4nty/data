@@ -1,25 +1,25 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\136b3066e37e9\1.luac 
+-- Command line: lua\!InfrastructureShared\217b3696073f1\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
+  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil then
     local l_0_0 = nil
   else
   end
   -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
 
   do
-    if (not (this_sigattrlog[3]).matched or (this_sigattrlog[3]).utf8p1 == nil or (this_sigattrlog[4]).matched) and (this_sigattrlog[4]).utf8p1 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[3]).utf8p1
+    if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p1 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p1 ~= nil then
+      local l_0_1, l_0_2 = (this_sigattrlog[8]).utf8p1
     else
     end
-    if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
+    if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
       do return mp.CLEAN end
-      local l_0_3 = (string.lower)((this_sigattrlog[5]).utf8p1)
+      local l_0_3 = (string.lower)((this_sigattrlog[10]).utf8p1)
       local l_0_4 = (string.match)(l_0_3, "\\([^\\]+)$")
       if l_0_4 == nil then
         return mp.CLEAN
