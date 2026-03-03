@@ -229,6 +229,7 @@
         "FlightingV2": {
             "CreateDeviceIngestedTable": true,
             "ExternalTableBGService": true,
+            "QueryDeviceIngestedTable": true,
             "TemplateEngineV2": true
         }
     },
