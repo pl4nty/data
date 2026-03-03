@@ -1,5 +1,274 @@
 [
     {
+        "created": "2026-03-02T23:45:11",
+        "description": "We are bringing a set of new Copilot metrics including actions taken in Microsoft 365 Copilot app, Edge and OneNote, and more key use cases across Outlook, Word, Excel, and PowerPoint including suggested reply, translate, coach, clean data and more. This will empower customers to more deeply understand the key Copilot adoption cases in Copilot Dashboard and Advanced Analysis in Viva Insights. ",
+        "id": 557981,
+        "locale": null,
+        "modified": "2026-03-02T23:45:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Insights - New Copilot Metrics Available"
+    },
+    {
+        "created": "2026-03-02T23:45:11",
+        "description": "Teams Rooms on Windows now supports separate chats for event coordination and audience engagement in structured meetings and webinars. When a room joins as an organizer, co-organizer, or presenter, organizers and presenters \u2013 including external presenters \u2013 can communicate privately in the Event Group chat, while switching to a separate chat to engage attendees. This helps to improve backstage coordination, reduce in event friction, and deliver smoother, more professional live experiences. Available in Teams Rooms Pro\u2013licensed rooms.",
+        "id": 557720,
+        "locale": null,
+        "modified": "2026-03-02T23:45:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Private organizer and presenter chat for structured meetings and webinars on Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-03-02T23:45:11",
+        "description": "You can now reference SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint.",
+        "id": 555897,
+        "locale": null,
+        "modified": "2026-03-02T23:45:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-03-02T23:45:11",
+        "description": "You can now reference SharePoint libraries and OneDrive folders when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "id": 555895,
+        "locale": null,
+        "modified": "2026-03-02T23:45:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Reference SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint"
+    },
+    {
+        "created": "2026-03-02T23:45:11",
+        "description": "IT can set a custom wallpaper, company logo and name on the Windows 365 Link login screen",
+        "id": 546245,
+        "locale": null,
+        "modified": "2026-03-02T23:45:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Windows 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Windows 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Windows 365: Windows 365 Link - Customization of the login screen"
+    },
+    {
         "created": "2026-02-27T23:15:13",
         "description": "Security Store is now integrated into the Microsoft Purview DLP experience, giving admins an in-product way to discover, purchase, and enable a curated set of integrations that extend Purview capabilities, including data security capabilities for the network. This integration simplifies how organizations activate and manage partner integrations directly within Purview.",
         "id": 557977,
@@ -108,7 +377,7 @@
         "description": "Centralized notification settings streamline channel notification setup and management. Available in Teams settings, users have a single place to review and adjust notifications for all visible channels, instead of managing each individually.",
         "id": 557970,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -129,6 +398,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -153,6 +425,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -209,10 +484,10 @@
     },
     {
         "created": "2026-02-27T23:15:13",
-        "description": "Administrators will be able to assign multiple phone numbers (up to 10) to a single user. Users will be able to make and receive phone calls using any number assigned to them without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.\n",
+        "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support across Teams desktop, Teams mobile, and Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities - all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers.",
         "id": 557716,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -223,10 +498,13 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
-                "tagName": "Linux"
+                "tagName": "iOS"
             },
             {
                 "tagName": "Mac"
@@ -236,6 +514,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -246,10 +527,13 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Linux"
+                    "tagName": "iOS"
                 },
                 {
                     "tagName": "Mac"
@@ -263,10 +547,13 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
-        "title": "Microsoft Teams: Multiple phone number assignment to a single user"
+        "title": "Microsoft Teams: Teams Phone user multi-line"
     },
     {
         "created": "2026-02-27T23:15:13",
@@ -5853,12 +6140,12 @@
         "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
         "id": 555239,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6320,15 +6607,15 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "We will release this feature at a later date and will provide an update soon. We apologize for any inconvenience this may cause. Multi\u2011line support allows a single Teams Phone Device to handle multiple phone numbers assigned to the same user account, enabling users to make and receive calls from any of their numbers without switching accounts or devices. This capability brings flexibility and efficiency to scenarios where individuals manage multiple roles, regions, or responsibilities.",
+        "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support on Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities\u2014all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers. ",
         "id": 553590,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-03-02T23:45:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6365,7 +6652,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Multiple phone number assignment to a single user on Teams Phone Devices"
+        "title": "Microsoft Teams: Teams Phone user multi-line"
     },
     {
         "created": "2026-02-06T00:00:51",
@@ -7835,12 +8122,12 @@
         "description": "Access to People Skills on the Microsoft 365 profile card is expanding to Microsoft Teams. With this update, employees will be able to view skills directly on the profile card in Teams\u2014making it easier to learn about colleagues, build meaningful connections, and manage their own skills profile right from within their everyday flow of work.",
         "id": 552588,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9556,7 +9843,7 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -9573,6 +9860,9 @@
                 "tagName": "GCC High"
             },
             {
+                "tagName": "DoD"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
@@ -9583,6 +9873,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -9595,6 +9888,9 @@
                 },
                 {
                     "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -9613,6 +9909,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -9672,9 +9971,9 @@
         "description": "Now, you can connect your certified for Microsoft Teams personal Bluetooth device (such as your personal headset or earbuds) and with one press of the Teams button you can launch the Teams mobile app and invoke voice in Microsoft 365 Copilot within Teams. This feature eliminates the hassle of navigating menus on your mobile phone, giving you instant access to your personal AI assistant for quick conversational voice answers. This capability is initially available in iOS. Android and desktop client will be supported in a future release.",
         "id": 494149,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10667,10 +10966,10 @@
         "description": "This feature enables users to export fresher row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis at day level. #copilotcontrolsystem",
         "id": 547749,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -11991,9 +12290,9 @@
         "description": "With a Microsoft 365 Copilot license, transform offline discussions into structured, actionable, and searchable content with voice notes in Copilot.",
         "id": 498640,
         "locale": null,
-        "modified": "2025-12-23T00:00:28",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12747,9 +13046,9 @@
         "description": "In the Engage app for Android and Engage app in Teams for iOS and Android, we are introducing the Community Expert. Experts will be able to endorse accurate and credible answers and be recognized as community experts with a special label next to their name.  As well, experts & community admins will be able to mark answers to questions as verified answers to signal a credible and accurate answer. Verified answers will receive its own special label. ",
         "id": 537270,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12808,12 +13107,12 @@
         "description": "A new Data Security Investigations (DSI) mitigation action, purge, is now available to help admins quickly and efficiently delete sensitive or overshared content during investigations, within the product UX. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
         "id": 542930,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14242,9 +14541,9 @@
         "description": "Community admins will be able to add and remove members from their communities.",
         "id": 532722,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15663,12 +15962,12 @@
         "description": "Enables effortless list creation for Copilot users through prompts, with intelligent schema generation and setup. This agent helps teams to quickly transform structured information and Copilot responses to Microsoft Lists.",
         "id": 534606,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15779,12 +16078,12 @@
         "description": "This update now enables users to install and update the Network Device Interface (NDI) automatically in Microsoft Teams on MAC devices without any manual process. This allows organizations to broadcast audio and video streams from Teams instances to a user's local network.",
         "id": 532724,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28060,12 +28359,12 @@
         "description": "Introducing a new indicator in channels to help users find meetings occurring live within the channel and join them.",
         "id": 513272,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28176,12 +28475,12 @@
         "description": "Use rollback by group to selectively revert updates for specific device or user groups managed by cloud update. This feature helps recover devices to a previous version of Microsoft 365 Apps in the event an issue occurs following an update. Updates can then be resumed from the portal or with the next release of Monthly Enterprise Channel. It works for organizations of any size and delivers a quick and efficient recovery method.",
         "id": 515151,
         "locale": null,
-        "modified": "2025-10-20T23:15:15",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29697,7 +29996,7 @@
         "description": "Add web links as references in your Copilot Notebooks.",
         "id": 516040,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -29752,12 +30051,12 @@
         "description": "Use rollback all devices to quickly revert updates for all device managed by cloud update and on the latest N-0 release of Monthly Enterprise Channel. This feature helps recover devices to a previous version of Microsoft 365 Apps in the event an issue occurs following an update. Updates can then be resumed from the portal or with the next release of Monthly Enterprise Channel. It works for organizations of any size and delivers a quick and efficient recovery method.",
         "id": 515152,
         "locale": null,
-        "modified": "2025-10-15T22:45:29",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -47420,9 +47719,9 @@
         "description": "After further review, this has been delayed to a later date. We apologize for any inconvenience. Users will receive a weekly notification in the Connections apps in Microsoft Teams on mobile and desktop linking them to relevant SharePoint news that they might have missed in the preceding week. This unread news will be available in the \"News\" tab in the Connections app under the \"unread\" pill.",
         "id": 498323,
         "locale": null,
-        "modified": "2026-02-06T23:15:31",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47878,12 +48177,12 @@
         "description": "Users can use the new Account Manager feature to learn more about their Microsoft account, display their profile picture, and add new accounts (if permitted by their organization). ",
         "id": 497546,
         "locale": null,
-        "modified": "2025-12-03T00:15:38",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52390,12 +52689,12 @@
     },
     {
         "created": "2025-06-10T23:00:26",
-        "description": "After further review, we need to roll this back. We apologize for any inconvenience.\nOutlook Mobile now supports Data Loss Prevention (DLP) policy tips, helping users avoid accidental data leaks. When sensitive content is detected, users are alerted with inline tips or pop-ups, based on admin-configured rules. This update aligns DLP behavior across all Outlook clients for consistent compliance enforcement.",
+        "description": "Outlook Mobile now supports Data Loss Prevention (DLP) policy tips, helping users avoid accidental data leaks. When sensitive content is detected, users are alerted with inline tips or pop-ups, based on admin-configured rules. This update aligns DLP behavior across all Outlook clients for consistent compliance enforcement.",
         "id": 496146,
         "locale": null,
-        "modified": "2025-09-29T23:15:03",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -63651,12 +63950,12 @@
         "description": "Copilot can generate an audio overview of your transcribed meetings, transforming one or multiple meetings into an engaging listening experience. Users can choose how they want to listen: select one or two speakers, adjust the tone from concise to playful, and tailor the length. This capability is only available in English currently. ",
         "id": 490051,
         "locale": null,
-        "modified": "2025-09-04T23:15:49",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -78193,10 +78492,10 @@
         "description": "Microsoft Purview is launching a new Personalization page which will help users personalize their individual experience on Purview. \n",
         "id": 483884,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -109799,9 +110098,9 @@
         "description": "As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips",
         "id": 396575,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -109988,9 +110287,9 @@
         "description": "As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips",
         "id": 394279,
         "locale": null,
-        "modified": "2025-12-23T23:00:50",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -113228,9 +113527,9 @@
         "description": "Information Barriers (IB) V2 brings new capabilities including larger segment scale support, multi-segment support, and flexible people discoverability etc. Existing IB v1 tenants require an upgrade to IB v2 to take advantage of these new capabilities. This roadmap item is intended only for all IB v1 customers. All other customers will get IB v2 capabilities when they enable IB in their tenants. IB v2 upgrade will be opt-in.",
         "id": 115482,
         "locale": null,
-        "modified": "2025-01-10T23:15:46",
+        "modified": "2026-03-03T00:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
