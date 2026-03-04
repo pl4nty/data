@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15173023,
+    "size": 15173595,
     "file_count": 845
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32909996,
-    "file_count": 4012
+    "size": 32919616,
+    "file_count": 4014
   },
   {
     "name": "boringssl",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16810138,
-    "file_count": 1928
+    "size": 16811070,
+    "file_count": 1931
   },
   {
     "name": "entity_extraction",
@@ -376,7 +376,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 57176,
+    "size": 57244,
     "file_count": 43
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4192150,
+    "size": 4195802,
     "file_count": 596
   },
   {
@@ -681,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3476544,
-    "file_count": 1187
+    "size": 3477161,
+    "file_count": 1188
   },
   {
     "name": "speech-dispatcher",
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7242962,
+    "size": 7252101,
     "file_count": 188
   },
   {
