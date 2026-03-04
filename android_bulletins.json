@@ -1347,17 +1347,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "December 2, 2025",
         "Patch level": "2025-12-01",
-        "CVE": "CVE-2025-48565",
-        "References": "A-407763772",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
-        "Published": "December 2, 2025",
-        "Patch level": "2025-12-01",
         "CVE": "CVE-2025-48572",
         "References": "A-385736540",
         "Type": "EoP",
@@ -2491,6 +2480,15 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
         "Published": "December 2, 2025",
         "Patch level": "2025-12-01",
+        "Version": "1.4",
+        "Date": "March 3, 2026",
+        "Notes": "CVE-2025-48565 A-407763772 will be removed from ASB#2025-12 due to an incomplete fix.",
+        "Component": "5. What does an * next to the Android bug ID in the\n  References column mean?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
         "Version": "1.0",
         "Date": "December 1, 2025",
         "Notes": "Bulletin Published",
@@ -2530,6 +2528,15 @@
         "Version": "1.3",
         "Date": "February 10, 2026",
         "Notes": "CVE-2025-48612 A-429417453 will be removed from ASB#2025-12 due to a possible regression that",
+        "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-12-01",
+        "Published": "December 2, 2025",
+        "Patch level": "2025-12-01",
+        "Version": "1.4",
+        "Date": "March 3, 2026",
+        "Notes": "CVE-2025-48565 A-407763772 will be removed from ASB#2025-12 due to an incomplete fix.",
         "Component": "6. Why are security vulnerabilities split between this bulletin and\n  device/partner security bulletins, such as the Pixel bulletin?"
     },
     {
@@ -69316,6 +69323,226 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0114",
+        "References": "A-454604426",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0120",
+        "References": "A-454076522",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0122",
+        "References": "A-454078934",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Subcomponent": "Baseband",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2024-56184",
+        "References": "A-308585798",
+        "Type": "EoP",
+        "Severity": "Critical",
+        "Subcomponent": "Bootloader",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0116",
+        "References": "A-321712082",
+        "Type": "RCE",
+        "Severity": "High",
+        "Subcomponent": "MFC",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2025-48611",
+        "References": "A-416259739",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Companion",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0107",
+        "References": "A-449752657",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "CPM",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0110",
+        "References": "A-440358226",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0111",
+        "References": "A-461921661",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Cellular Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0112",
+        "References": "A-463676597",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "VPU",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0113",
+        "References": "A-441209133",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Cellular Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0117",
+        "References": "A-337803567",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "MFC",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0118",
+        "References": "A-427469428",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "oobconfig",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0119",
+        "References": "A-439846057",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "Shannon Baseband",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0108",
+        "References": "A-467269839",
+        "Type": "ID",
+        "Severity": "High",
+        "Subcomponent": "GPU",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0121",
+        "References": "A-466090114",
+        "Type": "ID",
+        "Severity": "High",
+        "Subcomponent": "VPU",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2025-36920",
+        "References": "A-431949921",
+        "Type": "EoP",
+        "Severity": "Moderate",
+        "Subcomponent": "pKVM",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0123",
+        "References": "A-430693465",
+        "Type": "EoP",
+        "Severity": "Moderate",
+        "Subcomponent": "AOC",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0115",
+        "References": "A-221125054",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Trusted Execution Environment",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2026-0109",
+        "References": "A-438245439",
+        "Type": "DoS",
+        "Severity": "Moderate",
+        "Subcomponent": "Wifi",
+        "Component": "Pixel"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-02-01",
         "Published": "February 3, 2026",
         "Patch level": "2026-02-05",
@@ -95055,6 +95282,26 @@
         "Severity": "High",
         "Updated AOSP versions": "11",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2025-47333",
+        "References": "A-430052467",
+        "Severity": "Moderate",
+        "Subcomponent": "Bootloader",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2026/2026-03-01",
+        "Published": "March 3, 2026",
+        "Patch level": "2026-03-05",
+        "CVE": "CVE-2025-47383",
+        "References": "A-442618257",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-12-01",
