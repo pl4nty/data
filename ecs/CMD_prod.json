@@ -1084,6 +1084,7 @@
         "EnableBidirectionalSync": true,
         "EnableCheckOnboardedTime": true,
         "EnableDriverHotQueryTest": true,
+        "EnableFIREAlerting": true,
         "EnableLocationServiceSmartMapping": true,
         "EnableNewDeviceReadiness": true,
         "EnableOnboardedTestTenants": true,

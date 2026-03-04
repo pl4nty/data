@@ -214,6 +214,7 @@
         "azureml://registries/azure-openai/models/gpt-5.1-codex-max",
         "azureml://registries/azure-openai/models/gpt-5.2",
         "azureml://registries/azure-openai/models/gpt-5.2-chat",
+        "azureml://registries/azure-openai/models/gpt-5.3-chat",
         "azureml://registries/azure-openai/models/gpt-5.2-codex",
         "azureml://registries/azure-openai/models/gpt-5.3-codex",
         "azureml://registries/azureml-routers-staging/models/model-router",
@@ -361,6 +362,7 @@
         "gpt-5.1-chat",
         "gpt-5.2",
         "gpt-5.2-chat",
+        "gpt-5.3-chat",
         "kimi-k2-thinking",
         "kimi-k2.5"
     ],
@@ -448,6 +450,7 @@
             "gpt-5.1-chat",
             "gpt-5.2",
             "gpt-5.2-chat",
+            "gpt-5.3-chat",
             "kimi-k2-thinking",
             "kimi-k2.5"
         ],

@@ -355,6 +355,7 @@
     },
     "SVC_DeviceCheckin": {
         "FlightingV2": {
+            "AutopilotTimeOutUserEsp": true,
             "DeferMMPCEnrollmentDuringAPv2Provisioning": true,
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
             "EnableAllowOOBEUpdates": true,

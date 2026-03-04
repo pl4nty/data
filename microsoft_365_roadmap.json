@@ -1,5 +1,384 @@
 [
     {
+        "created": "2026-03-04T00:00:25",
+        "description": "Copilot in Viva Glint now generates AI-powered summaries of employee survey results directly within Team Summary and Executive Summary reports, helping leaders quickly understand strengths, opportunities, and trends across their teams. Copilot Highlights surfaces key insights - such as notable score changes, benchmark comparisons, and response rate confidence - so leaders can move from data to action faster. With general availability, Copilot Highlights expands to support multilingual summaries, enabling global organizations to deliver AI-generated survey insights in their preferred language.",
+        "id": 558111,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Glint: AI-generated survey insights with Copilot Highlights"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "A new Data Security Investigations (DSI) mitigation action, soft purge, is now available to help admins quickly and efficiently soft-delete sensitive or overshared content during investigations. Content deleted using soft purge is retained until the deleted item retention period expires, allowing admins to have further control of their data. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
+        "id": 558109,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 Introducing new soft purge mitigation action"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "One-time email passcodes provide an easy way for tenant administrators and event organizers to verify anonymous, external presenters invited to their events. Anonymous external presenters will be shown with a \"Verified\" tag once completing the process. Based on admin settings, the event organizer will also have a set of options available to them that applies to all external presenters, providing the ability to control who is admitted to the meeting or allowing uninvited users with the link to be admitted from the lobby.",
+        "id": 557975,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: One-time email passcodes for external presenters in Teams events"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "Managing your email automation in Outlook is now effortless with name search built into your key productivity tools. You can search within Rules, Conditional Formatting, Quick Steps, and Search Folders, filtering the list by name so you jump straight to the item you need. Whether you have dozens of rules or a growing library of quick steps, just type a few characters to narrow down results instantly. No more scrolling through long lists to find the right one, search puts you in control. Stay organized and make changes faster, right where you need them. #newoutlookforwindows",
+        "id": 557678,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Instantly Find Rules, Quick Steps, and More by Name"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "Once a Copilot Chat user has finished researching, creating, and collecting content in Copilot Pages, they can take it to a SharePoint News Post with the press of 'SharePoint' button under 'Create'.",
+        "id": 557566,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Create SharePoint News Post from Copilot Pages"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "OneDrive desktop sync users now get clearer, more actionable error messages when file paths exceed the supported 520-character limit. The updated experience shows exactly how many characters a path exceeds the limit and points users to the specific folder location where they can shorten names to resolve the issue. When multiple files in the same folder are affected, a single consolidated message guides users to the right location, reducing error noise and making resolution faster. Available on both Windows and Mac.",
+        "id": 557563,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Improved max path error experience on desktop"
+    },
+    {
+        "created": "2026-03-04T00:00:25",
+        "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
+        "id": 557170,
+        "locale": null,
+        "modified": "2026-03-04T00:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: delete meeting generated content in recap"
+    },
+    {
         "created": "2026-03-02T23:45:11",
         "description": "We are bringing a set of new Copilot metrics including actions taken in Microsoft 365 Copilot app, Edge and OneNote, and more key use cases across Outlook, Word, Excel, and PowerPoint including suggested reply, translate, coach, clean data and more. This will empower customers to more deeply understand the key Copilot adoption cases in Copilot Dashboard and Advanced Analysis in Viva Insights. ",
         "id": 557981,
@@ -3716,9 +4095,9 @@
         "description": "Introducing a new mode for Interpreter that enables consecutive interpretation for the entire meeting. When enabled, interpretation becomes a shared experience for everyone in the meeting, not just for private listening. This mode supports bidirectional translation between a selected language pair (e.g., English and Spanish).  ",
         "id": 557180,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3899,10 +4278,10 @@
         "description": "Insider Risk Management is excited to announce the ability to preview content directly within an IRM alert without having to create a case. Users with appropriate permissions will be able to preview relevant files referenced directly within activity explorer in each alert.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 557189,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -8488,9 +8867,9 @@
         "description": "Within Purview's Data Security Posture Management (preview), Data Risk Assessment now supports scanning all Fabric workspaces for potentially overshared Fabric data (dashboards, reports, etc.). The new Fabric tab in Data Risk Assessment allows users to view default assessment results, create custom assessments for scoped Fabric workspaces, and take proactive actions to secure your Fabric data.",
         "id": 553217,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9843,7 +10222,7 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -10618,12 +10997,12 @@
         "description": "We're introducing the ability to open and send OFT files (Outlook File Templates) on mobile. This feature allows users to view and open OFT files as a draft message, so users can easily resue their Outlook email templates. ",
         "id": 548642,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15584,9 +15963,9 @@
         "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
         "id": 536577,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20207,10 +20586,10 @@
         "description": "Project Manager agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
         "id": 511820,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
-        "publicPreviewDate": "January CY2025",
+        "publicPreviewDate": "March CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -28420,12 +28799,12 @@
         "description": "Outlook mobile users can now prepare for their meetings using Copilot chat in a single tap. This feature requires a Microsoft 365 Copilot license. ",
         "id": 516568,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32385,9 +32764,9 @@
         "description": "Quickly send images to Bing Visual Search from the Edge Desktop Search Bar to identify images, people, animals, and shows; extract, copy, and translate text while keeping its format. Solve questions quickly in various subjects and get trusted information to boost your knowledge. Discover products, fashion, recipes, identify a location and more. Available on Windows devices.\u00a0 Admins can control availability to this feature using the\u00a0VisualSearchEnabled policy.\u00a0",
         "id": 508519,
         "locale": null,
-        "modified": "2026-02-10T00:15:36",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -39469,12 +39848,12 @@
         "description": "Design and edit images, posters, banners, infographics, text drafts, and forms with Copilot\u2014align them to your brand using kits built by you or your team.",
         "id": 498548,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -42061,7 +42440,7 @@
         "description": "Microsoft 365 companions is a suite of apps, including People, File Search, and Calendar, designed to enhance productivity through quick access to key tools directly from the Windows 11 taskbar. These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts and navigate organization charts, locate files, view calendars and streamline workflows without distractions. \n",
         "id": 486856,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
@@ -51033,12 +51412,12 @@
         "description": "We are adding support for the OneDrive Sync admin reports for the GCC-H and DoD environments.",
         "id": 496988,
         "locale": null,
-        "modified": "2025-06-20T23:30:45",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -62506,12 +62885,12 @@
         "description": "Users have long been able to use personal Microsoft accounts with the OneDrive app on corporate Windows devices\u2014unless restricted by admin policy. This new feature introduces a prompt only when a personal account is already signed in on the device, encouraging users to also sign in to the OneDrive app with that account. Administrators who have already restricted personal accounts on corporate devices can continue to manage this as before. Organizations that have already disabled personal OneDrive accounts on corporate devices with the DisablePersonalSync policy will not see this prompt. Administrators can also suppress it using the DisableNewAccountDetection policy. More information on configuring policies can be found here:",
         "id": 490064,
         "locale": null,
-        "modified": "2025-07-24T23:15:15",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": "https://learn.microsoft.com/en-us/sharepoint/use-group-policy#manage-onedrive-using-group-policy",
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -68923,12 +69302,12 @@
         "description": "SharePoint Online Tenant Administrators can now allow script sources for modern pages in SharePoint sites. This is particularly useful in scenarios where modern pages have custom code that load scripts (e.g. TypeScript code) from external sources like CDN. SharePoint will now report to administrators where are loaded from sources that have not been allowed giving administrators a way to identify those sources and take actions. Tenant Administrators can also enforce browsers to only load scripts from allowed sources. This behavior can be enabled using SharePoint Online Management Shell.",
         "id": 485797,
         "locale": null,
-        "modified": "2025-04-10T23:15:50",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -94988,12 +95367,12 @@
         "description": "We are making meeting URL shorter and removing unnecessary symbols/info from there to make it more convenient for sharing",
         "id": 381953,
         "locale": null,
-        "modified": "2025-09-04T23:15:49",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -109074,9 +109453,9 @@
         "description": "Admins can perform a bulk replacement or removal of a retention label using the Purview compliance portal. They can perform the action across the entire tenant or targeted to specific content using KQL and static or adaptive scopes.",
         "id": 392457,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -111074,10 +111453,10 @@
         "description": "Admins can perform a bulk replacement or removal of a retention label using the Purview compliance portal. They can perform the action across the entire tenant or targeted to specific content using KQL and static or adaptive scopes.",
         "id": 392456,
         "locale": null,
-        "modified": "2025-12-05T00:00:35",
+        "modified": "2026-03-04T00:15:19",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [

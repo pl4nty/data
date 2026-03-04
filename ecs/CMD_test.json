@@ -17,14 +17,14 @@
         "ApiLatencyImprovementEnabled": "true",
         "Aspen": {
             "CheckEnablement": {
-                "DnsSpoofingCheck": false,
+                "DnsSpoofingCheck": true,
                 "EndpointReachability": true,
                 "GraphicsCheck": true,
                 "InternetConnnectivity": true,
-                "NetworkVpnCheck": false,
+                "NetworkVpnCheck": true,
                 "OsVersion": true,
-                "ShortpathCompatibilityCheck": false,
-                "TlsInspectionCheck": false
+                "ShortpathCompatibilityCheck": true,
+                "TlsInspectionCheck": true
             },
             "ConnectWithPolicyTimeout": true,
             "EnableAutoReconnect": true,
