@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\84b379a46881\1.luac 
+-- Command line: lua\!InfrastructureShared\130b3c67d1779\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -20,8 +20,8 @@ IsArrayMember = function(l_1_0, l_1_1)
 end
 
 local l_0_0 = nil
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[4]).utf8p2))
+if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
+  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p2))
 else
   return mp.CLEAN
 end

@@ -98,14 +98,14 @@ if not l_0_8.projects then
                           local l_0_42 = table.insert
                           do
                             local l_0_43 = l_0_15.mcpServers
-                            l_0_42(l_0_43, {name = l_0_27, type = l_0_28.type, url = l_0_28.url, command = l_0_28.command, args = l_0_28.args, transport = l_0_29, headers = l_0_35, environment = l_0_41})
-                            -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out DO_STMT
+                            l_0_42(l_0_43, {name = l_0_27, type = l_0_28.type, url = l_0_28.url, command = l_0_28.command, args = l_0_28.args, tools = l_0_28.tools, transport = l_0_29, headers = l_0_35, environment = l_0_41})
+                            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out DO_STMT
+                            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC198: LeaveBlock: unexpected jumping out IF_STMT
 
                           end
                         end
@@ -114,25 +114,25 @@ if not l_0_8.projects then
                   end
                   ;
                   (table.insert)(l_0_9, l_0_15)
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC205: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end
