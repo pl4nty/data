@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15172459,
+    "size": 15173023,
     "file_count": 845
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32875923,
-    "file_count": 4008
+    "size": 32909996,
+    "file_count": 4012
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17987391,
+    "size": 17993792,
     "file_count": 1006
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17898276,
-    "file_count": 2162
+    "size": 16810138,
+    "file_count": 1928
   },
   {
     "name": "entity_extraction",
@@ -476,8 +476,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 223633271,
-    "file_count": 346
+    "size": 226678838,
+    "file_count": 347
   },
   {
     "name": "logilab",
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4190946,
+    "size": 4192150,
     "file_count": 596
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3476335,
+    "size": 3476544,
     "file_count": 1187
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "tflite",
-    "size": 1686159,
+    "size": 1688504,
     "file_count": 522
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7242758,
+    "size": 7242962,
     "file_count": 188
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 383455,
+    "size": 391808,
     "file_count": 60
   },
   {

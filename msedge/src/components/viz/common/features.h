@@ -93,6 +93,8 @@ VIZ_COMMON_EXPORT bool AllowSingleSourceThrottling();
 #endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
     kAckCopyOutputRequestEarlyForViewTransition);
+VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kThrottleFrameSinksOnInteraction);
+VIZ_COMMON_EXPORT bool ShouldThrottleWhenInteractiveFrameSinks();
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAllowUndamagedNonrootRenderPassToSkip);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
     kAllowForceMergeRenderPassWithRequireOverlayQuads);
