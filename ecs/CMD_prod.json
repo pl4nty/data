@@ -1025,6 +1025,7 @@
         "enableSoftDeleteTenantReOnboarding": true,
         "enableSoftDeleteWhenPatchChange": true,
         "enbaleFLWInUX": true,
+        "enforceW365aBillingPlanValidation": true,
         "filterAssignPlanByServiceInstance": true,
         "regionConfigMigration": true,
         "scplConnectToStorageAccountMgmt": true,

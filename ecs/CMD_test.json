@@ -1569,6 +1569,7 @@
         "enableTenantGetDeleteTenantInfoApi": true,
         "enableVMMetricPullOrchestrator": true,
         "enbaleFLWInUX": true,
+        "enforceW365aBillingPlanValidation": true,
         "epa": true,
         "filterAssignPlanByServiceInstance": true,
         "hadr": true,
