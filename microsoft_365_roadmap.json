@@ -1,5 +1,262 @@
 [
     {
+        "created": "2026-03-05T00:15:18",
+        "description": "This enables analysts to publish Viva Insights Power BI reports to anyone in their organization. Today, analysts can publish them only to people with Copilot Dashboard access.",
+        "id": 558257,
+        "locale": null,
+        "modified": "2026-03-05T00:15:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Expanded published report recipients"
+    },
+    {
+        "created": "2026-03-05T00:15:18",
+        "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the new, refreshed Copilot New Tab Page.",
+        "id": 558256,
+        "locale": null,
+        "modified": "2026-03-05T00:15:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicPreviewDate": "November CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Copilot New Tab Page"
+    },
+    {
+        "created": "2026-03-05T00:15:18",
+        "description": "Catch up in Teams mobile provides a unified view of all directed and followed conversations across chats, meeting chats, channels and threads. The mobile-optimized card view supports swipe actions, helping you quickly review and triage lists of important items.",
+        "id": 558108,
+        "locale": null,
+        "modified": "2026-03-05T00:15:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Catch up on conversations in Microsoft Teams mobile"
+    },
+    {
+        "created": "2026-03-05T00:15:18",
+        "description": "This feature enables Company Admins to customize the default Microsoft Viva Glint confidentiality statement. Admins can choose to turn off the default statement and instead define confidentiality messaging tailored to their specific program settings, such as whether responses are configured to be confidential.",
+        "id": 557982,
+        "locale": null,
+        "modified": "2026-03-05T00:15:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Viva Glint - Custom confidentiality statements"
+    },
+    {
+        "created": "2026-03-05T00:15:18",
+        "description": "We're improving the experience when the active meeting window is minimized. Users can now raise their hand and send reactions without restoring the full meeting window. They can also choose between two minimized views: an expanded view that shows up to 4 participant videos, or a compact view that does not display other participants' video.",
+        "id": 557179,
+        "locale": null,
+        "modified": "2026-03-05T00:15:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Minimized meeting window enhancements"
+    },
+    {
         "created": "2026-03-04T00:00:25",
         "description": "Copilot in Viva Glint now generates AI-powered summaries of employee survey results directly within Team Summary and Executive Summary reports, helping leaders quickly understand strengths, opportunities, and trends across their teams. Copilot Highlights surfaces key insights - such as notable score changes, benchmark comparisons, and response rate confidence - so leaders can move from data to action faster. With general availability, Copilot Highlights expands to support multilingual summaries, enabling global organizations to deliver AI-generated survey insights in their preferred language.",
         "id": 558111,
@@ -322,7 +579,7 @@
         "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
         "id": 557170,
         "locale": null,
-        "modified": "2026-03-04T00:00:25",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -346,6 +603,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -373,10 +633,13 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
-        "title": "Microsoft Teams: delete meeting generated content in recap"
+        "title": "Microsoft Teams: Delete meeting generated content in recap"
     },
     {
         "created": "2026-03-02T23:45:11",
@@ -4174,9 +4437,9 @@
         "description": "To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.",
         "id": 552598,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6367,12 +6630,12 @@
         "description": "Positioned at the top of the chat and channels list, quick views give users fast access to mentions, followed threads, and more. Users can choose when and how quick views are displayed \u2013 selecting \u201calways show,\u201d \u201calways hide,\u201d or \u201cshow only when unread\u201d \u2013 and can collapse the section at any time.",
         "id": 555856,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6916,12 +7179,12 @@
         "description": "Audio recap in Teams will begin supporting 8 new languages. These are (in alphabetical order) Chinese, variations across English, French, German, Italian, Japanese, Portuguese, and Spanish.  ",
         "id": 554926,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8965,7 +9228,7 @@
         "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
         "id": 553214,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -10222,7 +10485,7 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -10252,9 +10515,6 @@
             },
             {
                 "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -10288,9 +10548,6 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -12047,7 +12304,7 @@
         "description": "Use the Drafts quick view to easily find, edit, and send draft messages.",
         "id": 542789,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -12059,9 +12316,6 @@
             },
             {
                 "tagName": "Desktop"
-            },
-            {
-                "tagName": "Linux"
             },
             {
                 "tagName": "Mac"
@@ -12085,9 +12339,6 @@
             "platforms": [
                 {
                     "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Linux"
                 },
                 {
                     "tagName": "Mac"
@@ -15561,7 +15812,7 @@
         "description": "Microsoft Teams now gives you control over how the Enter key works when composing messages. You can choose whether pressing Enter sends your message or starts a new line\u2014making it easier to write longer messages without accidental sends.",
         "id": 537279,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -15582,9 +15833,6 @@
             },
             {
                 "tagName": "Desktop"
-            },
-            {
-                "tagName": "Linux"
             },
             {
                 "tagName": "Mac"
@@ -15617,9 +15865,6 @@
             "platforms": [
                 {
                     "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Linux"
                 },
                 {
                     "tagName": "Mac"
@@ -16914,7 +17159,7 @@
         "description": "Security admins with Defender for Office 365 Plan 1 can avail the benefits of end user reporting of Teams Messages",
         "id": 531760,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
@@ -16932,9 +17177,6 @@
             },
             {
                 "tagName": "iOS"
-            },
-            {
-                "tagName": "Linux"
             },
             {
                 "tagName": "Mac"
@@ -16967,9 +17209,6 @@
                 },
                 {
                     "tagName": "iOS"
-                },
-                {
-                    "tagName": "Linux"
                 },
                 {
                     "tagName": "Mac"
@@ -17445,9 +17684,9 @@
         "description": "Engages theme moderation feature is a powerful AI tool to monitor and moderate content. With this update, images can now match to themes, just like text.",
         "id": 534607,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20952,7 +21191,7 @@
         "description": "Security admins with Defender for Office 365 Plan 1 can utilize Zero-hour auto purge (ZAP) and admin quarantine for zapped Teams messages.",
         "id": 529816,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
@@ -20970,9 +21209,6 @@
             },
             {
                 "tagName": "iOS"
-            },
-            {
-                "tagName": "Linux"
             },
             {
                 "tagName": "Mac"
@@ -21005,9 +21241,6 @@
                 },
                 {
                     "tagName": "iOS"
-                },
-                {
-                    "tagName": "Linux"
                 },
                 {
                     "tagName": "Mac"
@@ -25286,12 +25519,12 @@
         "description": "A new Copilot icon button provides a quick, visible entry point to Copilot directly within the file previewer in OneDrive. Positioned at the bottom-right corner (instead of the command bar), this button surfaces contextual prompts tailored to the file type and offers seamless access to Copilot chat, making it easier to get insights and take action without leaving the preview experience.",
         "id": 513432,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42495,9 +42728,9 @@
         "description": "Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters.",
         "id": 500242,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -73463,9 +73696,9 @@
         "description": "Admins will have the ability to set up rules for various scenarios, such as -\n\n1. Auto block risky agents.\n2. Auto delete inactive agents.\n3. Auto reassign ownerless agents to manager. \n\n. #copilotcontrolsystem\n",
         "id": 481518,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -106605,10 +106838,10 @@
         "description": "Perform file-level browse/search and then restore using Microsoft 365 Backup. With this enhancement you will be able to browse for files across in a site from available daily restore points and apply filters to narrow results, restore at the original location by overwriting existing content or to a new place by creating a copy of the content. ",
         "id": 464991,
         "locale": null,
-        "modified": "2025-08-06T23:15:03",
+        "modified": "2026-03-05T00:15:18",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
