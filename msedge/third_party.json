@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15170318,
+    "size": 15170498,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32920481,
-    "file_count": 4014
+    "size": 32935987,
+    "file_count": 4015
   },
   {
     "name": "boringssl",
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7188160,
+    "size": 7188287,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16822332,
-    "file_count": 1933
+    "size": 16889952,
+    "file_count": 1941
   },
   {
     "name": "entity_extraction",
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4195802,
+    "size": 4196074,
     "file_count": 596
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7254043,
+    "size": 7256635,
     "file_count": 188
   },
   {

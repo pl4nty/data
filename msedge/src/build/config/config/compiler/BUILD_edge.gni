@@ -289,12 +289,6 @@ template("edge_overlay_config_linker") {
       }
     }
 
-    # TODO(crbug.com/1253924): Enable on apple/lld for arm64 too once it works.
-    if (invoker.use_icf && is_apple && use_lld && current_cpu == "arm64") {
-      # Remove or modify the ICF flag for Apple ARM64
-      ldflags -= [ "-Wl,--icf=all" ]
-    }
-
     if (use_lld && is_apple) {
       ldflags -= [ "-Wl,--strict-auto-link" ]
     }
