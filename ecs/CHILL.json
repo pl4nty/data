@@ -1279,11 +1279,11 @@
                 },
                 "FallbackSurveyDurationSeconds": 0,
                 "NominationPeriod": {
-                    "IntervalSeconds": 2592000,
+                    "IntervalSeconds": 1209600,
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 50,
+                "PercentageNumerator": 10,
                 "Type": 0
             },
             "PrimaryPriority": 3,
