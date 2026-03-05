@@ -1508,6 +1508,124 @@
             }
         }
     },
+    "ChillMSInvest": {
+        "Floodgate_Campaign_MicrosoftAdvertising.782d9f4d-7d0e-405e-8bcc-edb429caba9f": {
+            "CampaignId": "782d9f4d-7d0e-405e-8bcc-edb429caba9f",
+            "EndTimeUtc": "2026-03-29T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-02-27T08:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "We have two questions for you.",
+                        "Title": "We'd love your feedback.",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "What could we do to improve our text asset recommendations?"
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How would you rate the overall quality of our recommended text assets?",
+                        "RatingValuesAscending": [
+                            "1 - Poor",
+                            "2",
+                            "3",
+                            "4",
+                            "5 - Excellent"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2
+            }
+        },
+        "Floodgate_Campaign_MicrosoftAdvertising.813d6c6d-1102-40c5-bb02-21e2507ad68b": {
+            "CampaignId": "813d6c6d-1102-40c5-bb02-21e2507ad68b",
+            "EndTimeUtc": "2026-10-01T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-03-02T08:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "We have two questions for you.",
+                        "Title": "We'd love your feedback.",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "What could we do to improve our text asset recommendations?"
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How would you rate the overall quality of our recommended text assets?",
+                        "RatingValuesAscending": [
+                            "1 - Poor",
+                            "2",
+                            "3",
+                            "4",
+                            "5 - Excellent"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2
+            }
+        }
+    },
     "ChillManageRewards": {
         "Floodgate_Campaign_ManageRewards.5c4abe57-3f28-45f4-9931-726fe0875119": {
             "CampaignId": "5c4abe57-3f28-45f4-9931-726fe0875119",

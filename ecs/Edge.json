@@ -27,6 +27,11 @@
                 "msNurturingFeatureFlagRefactor"
             ]
         },
+        "FuncIntegrity": {
+            "enableFeatures": [
+                "msFunctionIntegrityValidation"
+            ]
+        },
         "SecureNetworkGA": {
             "enableFeatures": [
                 "msVpnModes",
