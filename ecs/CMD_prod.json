@@ -1064,6 +1064,7 @@
         "DeviceUserDeltaSyncInAM": true,
         "DevicesReportNewTitle": true,
         "DisableHermesDeviceRegistrationFlighting": true,
+        "DisableInstallLatestWindows10OnWindows11IneligibleDevice": true,
         "DiscardExcludePolicyDuringEnrollment": true,
         "DriverUpdatePreaggregateThreshold": true,
         "EnableAccessControlRolesFetch": true,
