@@ -25,7 +25,6 @@ describe('PasswordEditor Component Tests', () => {
         url: 'https://example.com',
         username: 'testuser',
         password: 'testpassword123',
-        category: EdgePasswordCategory.K_DEFAULT,
         note: 'Test note',
     };
 
@@ -255,7 +254,6 @@ describe('PasswordEditor Component Tests', () => {
                 url: '  example.com  ',
                 username: '  testuser  ',
                 password: '  testpass  ',
-                category: EdgePasswordCategory.K_BUSINESS,
                 note: '  test note  ',
             };
 
@@ -264,7 +262,6 @@ describe('PasswordEditor Component Tests', () => {
             expect(sanitized.url).to.equal('https://example.com');
             expect(sanitized.username).to.equal('testuser');
             expect(sanitized.password).to.equal('testpass');
-            expect(sanitized.category).to.equal(EdgePasswordCategory.K_BUSINESS);
             expect(sanitized.note).to.equal('test note');
         });
 
@@ -306,7 +303,6 @@ describe('PasswordEditor Component Tests', () => {
             expect(sanitized.url).to.equal('https://');
             expect(sanitized.username).to.equal('');
             expect(sanitized.password).to.equal('');
-            expect(sanitized.category).to.equal(EdgePasswordCategory.K_DEFAULT);
             expect(sanitized.note).to.equal('');
         });
     });
@@ -428,7 +424,6 @@ describe('PasswordEditor Component Tests', () => {
                 url: 'https://valid-site.com',
                 username: 'validuser',
                 password: 'validpassword123',
-                category: EdgePasswordCategory.K_DEFAULT,
                 note: 'Valid note',
             };
 
@@ -451,7 +446,6 @@ describe('PasswordEditor Component Tests', () => {
                 url: 'https://valid-site.com',
                 username: 'validuser',
                 password: 'validpassword123',
-                category: EdgePasswordCategory.K_DEFAULT,
                 note: 'Valid note',
             };
 
@@ -489,7 +483,6 @@ describe('PasswordEditor Component Tests', () => {
                 mockPasswordModel.url,
                 mockPasswordModel.username,
                 mockPasswordModel.password,
-                mockPasswordModel.category,
                 mockPasswordModel.note,
             );
             expect(mockToastService.open).to.have.been.calledWith('Password added successfully', 'success');
@@ -513,7 +506,6 @@ describe('PasswordEditor Component Tests', () => {
                 mockPasswordModel.url,
                 mockPasswordModel.username,
                 mockPasswordModel.password,
-                mockPasswordModel.category,
                 mockPasswordModel.note,
             );
             expect(mockToastService.open).to.have.been.calledWith('Password updated successfully', 'success');
@@ -778,7 +770,6 @@ describe('PasswordEditor Component Tests', () => {
             expect(result.url).to.equal('https://');
             expect(result.username).to.equal('');
             expect(result.password).to.equal('');
-            expect(result.category).to.equal(EdgePasswordCategory.K_DEFAULT);
             expect(result.note).to.equal('');
         });
 
@@ -907,25 +898,6 @@ describe('PasswordEditor Component Tests', () => {
     });
 
     describe('Additional Functionality Tests', () => {
-        it('should handle different password categories correctly', () => {
-            const testCases = [
-                { category: EdgePasswordCategory.K_BUSINESS, expected: EdgePasswordCategory.K_BUSINESS },
-                { category: EdgePasswordCategory.K_FINANCE, expected: EdgePasswordCategory.K_FINANCE },
-                { category: EdgePasswordCategory.K_EMAIL, expected: EdgePasswordCategory.K_EMAIL },
-                { category: undefined, expected: EdgePasswordCategory.K_DEFAULT },
-            ];
-
-            testCases.forEach(({ category, expected }) => {
-                const result = element.santitinizePasswordModel({
-                    url: 'example.com',
-                    username: 'user',
-                    password: 'pass',
-                    category,
-                });
-                expect(result.category).to.equal(expected);
-            });
-        });
-
         it('should handle different URL formats correctly', () => {
             const testCases = [
                 { input: 'example.com', expected: 'https://example.com' },
