@@ -12,11 +12,17 @@ local l_0_2 = (bm.get_imagepath)()
 if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
   return mp.CLEAN
 end
-local l_0_3 = nil
+local l_0_3, l_0_4 = nil, nil
 if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this_sigattrlog[3]).utf8p2 ~= "" then
   l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p2)
+  l_0_4 = (this_sigattrlog[3]).utf8p2
 end
 if l_0_3 ~= "" and l_0_3 ~= nil and ((string.find)(l_0_3, "com.apple.", 1, true) or (string.find)(l_0_3, "com.zoom.", 1, true)) then
+  if l_0_4 ~= "" and l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
+    (bm.add_threat_file)(l_0_4)
+  end
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
