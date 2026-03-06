@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4129aca73475\1.luac 
+-- Command line: lua\!InfrastructureShared\4629be0297cc\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -26,7 +26,7 @@ for l_0_6,l_0_7 in ("_log")(".log") do
   end
 end
 local l_0_8 = LoadMatchedDataInBuffer()
-local l_0_9 = "curl http://[%d]+%.[%d]+%.[%d]+%.[%d]+/[/%w%.%-_]+;%schmod%s7+%s[/%w%.%-_]+;%s+[/%w%.%-_]+"
+local l_0_9 = "curl http://[%d]+%.[%d]+%.[%d]+%.[%d]+/[/%w%.%-_]+%s%-o%s[%w%.%-_]+;%schmod%s7+%s[/%w%.%-_]+;%s+[/%w%.%-_]+"
 if GetPatternOccurenceCount(l_0_8, l_0_9) > 8 then
   return mp.INFECTED
 end
