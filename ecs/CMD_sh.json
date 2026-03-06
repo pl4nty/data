@@ -548,6 +548,7 @@
         "EnableFrontlineLicensePreviewTag": true,
         "EnableFrontlineLicenseValidation": "true",
         "EnableFrontlineUnassignedProperties": true,
+        "EnableFullScanActivityTimeoutProtect": true,
         "EnableGAScopeFo3TierRegion": false,
         "EnableGAScopeForApexUX": false,
         "EnableGPURestrictionForFLSInPolicyBackend": true,
