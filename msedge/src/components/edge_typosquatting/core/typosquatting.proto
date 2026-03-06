@@ -1,0 +1,46 @@
+// Copyright 2022 The Chromium Authors. All rights reserved.
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge_typosquatting;
+
+message TyposquattingUrl {
+  enum BlockType {
+    UNKNOWN = 0;
+    FLYOUT = 1;
+    BLOCKING_PAGE = 2;
+    DEEPIQ_BLOCK = 3;
+  }
+  // |url| is a eTLD+1 domain. For example, for
+  // example.test/test-path-for-typosquatting/test.html we are using
+  // example.test
+  string url = 1;
+  string suggestion = 2;
+  BlockType block_type = 3;
+}
+
+message AllowedUrl {
+  // |url| is a full URL, without scheme/username/password/port, such as
+  // example.test/test-path-for-typosquatting/test.html.
+  string url = 1;
+}
+
+// Configuration for the typosquatting component. A binary version of this proto
+// will be distributed to Edge clients via component updater. The binary will
+// contain a single instance of this message.
+message TyposquattingConfig {
+  uint32 version_id = 1;
+
+  // List of pages on which to show the Typosquatting UI. This must be sorted by
+  // URL.
+  repeated TyposquattingUrl typosquatting_urls = 2;
+
+  // List of urls that are explicitly allowed. This must be sorted. Used to
+  // mitigate false positives in our warnings.
+  repeated AllowedUrl allowed_urls = 3;
+}
