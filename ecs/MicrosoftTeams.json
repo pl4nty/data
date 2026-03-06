@@ -1440,6 +1440,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableUnifiedTeamsCopilotSkill": [
+                {
+                    "Flight": "enableUnifiedTeamsCopilotSkill",
+                    "IsEnabled": false
+                }
+            ],
             "IntentPlus": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIntentPlus",
@@ -1447,6 +1453,18 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGpt41IntentPlus",
+                    "IsEnabled": true
+                }
+            ],
+            "IntentPlus.EnableChainOfThought": [
+                {
+                    "Flight": "IntentPlus.EnableChainOfThought",
+                    "IsEnabled": true
+                }
+            ],
+            "IntentPlus.enableSelfRespond": [
+                {
+                    "Flight": "IntentPlus.enableSelfRespond",
                     "IsEnabled": true
                 }
             ],
