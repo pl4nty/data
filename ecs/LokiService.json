@@ -655,6 +655,7 @@
         "EnableInboundRequestLimiting": true,
         "EnableInferredPeopleSkills": true,
         "EnableInsightBasedPrompts": false,
+        "EnableKnowYourTeamAdminPromptApi": true,
         "EnableLlmInsights": false,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableMRUFormsRetrieval": false,
