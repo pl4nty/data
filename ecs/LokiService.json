@@ -1988,6 +1988,7 @@
         "hostRingBucket": "60",
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
+        "lokiConfigMgrAsync": 1,
         "reduceSearchResults": 1,
         "refactorFeedbackConfig_shared ": 1,
         "samplingConfig": {

@@ -35,7 +35,6 @@
         "AuditLogsToGov": true,
         "BCDRParity_EnableReporting": false,
         "BCDRReportEnableFilter": true,
-        "BackFillGroupLicenseAssignmentId": true,
         "BackfillMitigateVsbWin10": true,
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
