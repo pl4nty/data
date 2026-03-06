@@ -28,14 +28,15 @@ do
     return mp.CLEAN
   end
   local l_0_7 = nil
-  -- DECOMPILER ERROR at PC75: Overwrote pending register: R6 in 'AssignReg'
-
-  if pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_2, l_0_4, "CreatedByPPID") ~= true or isnull(nil) then
+  local l_0_8, l_0_9 = nil, pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_2, l_0_4, "CreatedByPPID")
+  if l_0_9 == true then
+    l_0_8 = (MpCommon.RollingQueueQueryKeyNamespaced).value
+  end
+  if isnull(l_0_8) then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC84: Confused about usage of register: R6 in 'UnsetPending'
-
-  if l_0_5 == nil then
+  if l_0_5 == l_0_8 then
+    (bm.add_related_file)(l_0_2)
     return mp.INFECTED
   end
   return mp.CLEAN

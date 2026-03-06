@@ -73,9 +73,11 @@ do
     if l_0_8 ~= nil and l_0_8 ~= "" then
       l_0_8 = (string.lower)(l_0_8)
     end
-    -- DECOMPILER ERROR at PC271: Unhandled construct in 'MakeBoolean' P3
+    -- DECOMPILER ERROR at PC286: Unhandled construct in 'MakeBoolean' P3
 
-    if (l_0_7 ~= nil and l_0_7 < versioning.ENGINE_RING_4_BROAD) or l_0_8 == "ba11743e-6a8f-4599-93fb-2425110e2a75" then
+    -- DECOMPILER ERROR at PC286: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_7 ~= nil and l_0_7 < versioning.ENGINE_RING_4_BROAD) or l_0_7 == nil or l_0_7 ~= versioning.ENGINE_RING_4_BROAD or l_0_8 == "ba11743e-6a8f-4599-93fb-2425110e2a75" then
       local l_0_9 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
       if l_0_9 ~= nil and l_0_9 ~= "" then
         l_0_9 = (MpCommon.PathToWin32Path)(l_0_9)

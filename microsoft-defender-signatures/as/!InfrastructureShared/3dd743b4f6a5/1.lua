@@ -23,11 +23,10 @@ local l_0_3 = (mp.GetParentProcInfo)()
 do
   if l_0_3 and (string.find)((string.lower)(l_0_3.image_path), "python", 1, true) and IsProcNameInParentProcessTree("cmdhstr", "ai_exec_server.exe") then
     local l_0_4 = (versioning.GetOrgID)()
-    if l_0_4 == nil or l_0_4 == "" then
-      return mp.CLEAN
+    if l_0_4 ~= nil and l_0_4 ~= "" then
+      l_0_4 = (string.lower)(l_0_4)
     end
-    l_0_4 = (string.lower)(l_0_4)
-    if l_0_4 == "64eacc49-6a31-42c6-9b39-c3d9148e65f4" or l_0_4 == "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" or l_0_4 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_4 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(8000, false, true, true) == true then
+    if l_0_4 == "64eacc49-6a31-42c6-9b39-c3d9148e65f4" or l_0_4 == "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" or l_0_4 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_4 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(15000, false, true, true) == true then
       return mp.INFECTED
     else
       return mp.LOWFI
