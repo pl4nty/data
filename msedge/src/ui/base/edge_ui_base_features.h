@@ -182,6 +182,11 @@ BASE_DECLARE_FEATURE(kEdgeComposeInlineNewUX);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineNewUXAllowInputElements);
 
+// 0: Blink side implementation of compose inline entry.
+// 1: Default, Browser side implementation of compose inline entry.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(int, kEdgeComposeInlineNewUXImplVersion);
+
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeCopilotChat);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
