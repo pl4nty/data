@@ -348,6 +348,7 @@
         "EnableCasConfigurationForwarderDataStream": true,
         "EnableCdpCollectionServiceApiVersion20240601": true,
         "EnableCdpImageBackfill": false,
+        "EnableCdpImageBackfillFunction": true,
         "EnableCdpImageUpload": true,
         "EnableCfarDataRetrieval": true,
         "EnableCfarProvisionAssessment": true,
