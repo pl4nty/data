@@ -29,20 +29,22 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     l_0_0 = l_0_2
     local l_0_7 = #l_0_0 / 2
     local l_0_8 = (string.sub)(l_0_0, -l_0_7)
-    local l_0_9, l_0_10 = (bm.get_process_relationships)()
-    for l_0_14,l_0_15 in ipairs(l_0_10) do
-      local l_0_16 = (mp.bitand)(l_0_15.reason_ex, bm.RELATIONSHIP_CREATED)
-      if l_0_16 == bm.RELATIONSHIP_CREATED then
-        local l_0_17 = (string.lower)(l_0_15.cmd_line)
-        local l_0_18 = (string.sub)(l_0_17, -l_0_7)
-        if l_0_8 == l_0_18 or (string.find)(l_0_0, l_0_18, 1, true) then
-          (bm.trigger_sig)("StartedViaRUNMRU.gen", "StartedViaRUNMRU.gen", l_0_15.ppid)
+    local l_0_9 = l_0_0:gsub("\"", "")
+    local l_0_10, l_0_11 = (bm.get_process_relationships)()
+    for l_0_15,l_0_16 in ipairs(l_0_11) do
+      local l_0_17 = (mp.bitand)(l_0_16.reason_ex, bm.RELATIONSHIP_CREATED)
+      if l_0_17 == bm.RELATIONSHIP_CREATED then
+        local l_0_18 = (string.lower)(l_0_16.cmd_line)
+        local l_0_19 = (string.sub)(l_0_18, -l_0_7)
+        local l_0_20 = l_0_19:gsub("\"", "")
+        if l_0_8 == l_0_19 or l_0_0:find(l_0_19, 1, true) or l_0_9:find(l_0_20, 1, true) then
+          (bm.trigger_sig)("StartedViaRUNMRU.gen", "StartedViaRUNMRU.gen", l_0_16.ppid)
           ;
-          (bm.trigger_sig_target_propagate)("ProcessChainViaRUNMRU", "ProcessChainViaRUNMRU", l_0_15.ppid)
-          if not (MpCommon.DoesProcessHaveAttribute)(l_0_15.ppid, "StartedViaRUNMRU") then
-            (MpCommon.AddProcessAttribute)(l_0_15.ppid, "StartedViaRUNMRU", tostring(l_0_17), true)
+          (bm.trigger_sig_target_propagate)("ProcessChainViaRUNMRU", "ProcessChainViaRUNMRU", l_0_16.ppid)
+          if not (MpCommon.DoesProcessHaveAttribute)(l_0_16.ppid, "StartedViaRUNMRU") then
+            (MpCommon.AddProcessAttribute)(l_0_16.ppid, "StartedViaRUNMRU", tostring(l_0_18), true)
           end
-          AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_15.ppid, 1, 30)
+          AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_16.ppid, 1, 30)
         end
       end
     end
