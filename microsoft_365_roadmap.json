@@ -97499,67 +97499,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Automatic summary of documents on file-open in Word"
     },
     {
-        "created": "2024-06-12T23:15:10",
-        "description": "On blank documents, Copilot in Word will provide one-click examples of prompts that quickly help you get going on your document.",
-        "id": 399919,
-        "locale": null,
-        "modified": "2025-05-07T20:00:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Word"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Get started on a draft immediately with example prompts"
-    },
-    {
         "created": "2024-06-05T23:15:07",
         "description": "When you open a document, Copilot will generate a summary in the Word window. You can hide the summary or open the Copilot chat pane to ask specific questions about the document.",
         "id": 397096,
@@ -105428,55 +105367,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management - New Insider Risk Management Reporting Capabilities"
-    },
-    {
-        "created": "2024-09-18T23:15:03",
-        "description": "Managers and delegates will be able to see the user who has responded to meeting invites in shared calendars. This feature will be available in the new Outlook for Windows and web #newoutlookforwindows",
-        "id": 417064,
-        "locale": null,
-        "modified": "2025-05-07T20:00:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: RSVP response in meeting invite message for shared calendars"
     },
     {
         "created": "2024-08-26T23:15:15",

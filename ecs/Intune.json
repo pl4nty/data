@@ -301,6 +301,11 @@
             "RefreshPCWithDifferentAADDeviceId": true
         }
     },
+    "SVC_ContentService": {
+        "FlightingV2": {
+            "MDSAddToCacheFromSecondaryStorage": true
+        }
+    },
     "SVC_CorpDeviceEnrollment": {
         "FlightingV2": {
             "AllowAcmeEnrollmentOnClosedSession": true,
