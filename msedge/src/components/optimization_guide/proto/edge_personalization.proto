@@ -1,0 +1,37 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto2";
+
+package optimization_guide.proto;
+
+option optimize_for = LITE_RUNTIME;
+
+message Segment {
+  required string id = 1;
+  required float score = 2;
+}
+
+message Scenario {
+  required string id = 1;
+
+  // This stores the internal value needed to construct a base::Time object.
+  required int64 inference_time = 2;
+
+  repeated Segment segments = 3;
+}
+
+message PersonalizationInfo {
+  repeated Scenario scenarios = 1;
+}
+
+// Request PersonalizationInfo
+message GetPersonalizationRequest {
+  required string anid = 1;
+}
+
+// Response to the GetPersonalization request.
+message GetPersonalizationResponse {
+  required PersonalizationInfo personalization_info = 1;
+}

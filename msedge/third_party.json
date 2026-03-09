@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 32948688,
+    "size": 32960738,
     "file_count": 4018
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17993792,
+    "size": 17994044,
     "file_count": 1006
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6971857,
+    "size": 6978025,
     "file_count": 66
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 226678838,
+    "size": 226919881,
     "file_count": 347
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4197453,
+    "size": 4199191,
     "file_count": 596
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1688504,
-    "file_count": 522
+    "size": 1714243,
+    "file_count": 528
   },
   {
     "name": "tflite_support",
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7257041,
+    "size": 7257243,
     "file_count": 188
   },
   {

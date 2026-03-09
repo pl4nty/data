@@ -679,6 +679,7 @@ BASE_DECLARE_FEATURE(kEdgeNativeContextMenuMac);
 
 // Feature parameter to control which features are enabled in native context
 // menus. This is a bitmask of NativeContextMenuFeatures values.
+inline constexpr char kNativeContextMenuFeaturesName[] = "menu_features";
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern const base::FeatureParam<int> kNativeContextMenuFeatures;
 

@@ -353,16 +353,6 @@ template("edge_overlay_config_clang_revision") {
 template("edge_overlay_config_sanitize_c_array_bounds") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
-
-    # Edge: Remove flags that are not supported by Edge's Clang toolchain yet.
-    # These flags were added upstream in acb47d9a6b56c but require a newer Clang.
-    # Error: unknown warning option '-Wno-unsafe-buffer-usage-in-static-sized-array'
-    if (!is_ubsan && is_clang && !(is_asan && target_cpu == "x86")) {
-      cflags -= [
-        "-fsanitize-ignore-for-ubsan-feature=array-bounds",
-        "-Wno-unsafe-buffer-usage-in-static-sized-array",
-      ]
-    }
   }
 }
 
