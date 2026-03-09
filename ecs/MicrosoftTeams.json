@@ -176,7 +176,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1642,12 +1642,26 @@
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "IntentPlus.AbsorbMeetingsQnADuringMeeting",
+                    "Flight": "IntentPlus.AbsorbMeetingsQnA",
                     "IsEnabled": true
                 },
                 {
                     "Flight": "IntentPlus.CategorizeDirectResponse",
                     "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnableLimitedMode",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnableLimitedModeOcps",
+                    "IsEnabled": true
+                }
+            ],
+            "SelfRespond_RAIPolicyId": [
+                {
+                    "Flight": "RAIPolicyId",
+                    "Value": "189"
                 }
             ],
             "Show_ODM_FRE": [
