@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260304.10.0",
+        "CalendarCompanionDFVersion": "1.20260307.3.0",
         "CalendarCompanionMsitVersion": "1.20260228.11.1",
         "CalendarCompanionProdVersion": "1.20260221.8.1",
         "CompanionRing": "Prod",
@@ -179,6 +179,7 @@
         "hostRingBucket": "60",
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
+        "lokiConfigMgrAsync": 1,
         "offlineState_shared": 0,
         "refactorFeedbackConfig_shared": 1,
         "samplingConfig": {
@@ -1843,7 +1844,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260304.10.0",
+        "PeopleInTaskbarDFVersion": "1.20260307.3.0",
         "PeopleInTaskbarMsitVersion": "1.20260225.1.0",
         "PeopleInTaskbarProdVersion": "1.20260128.9.0",
         "PeopleInTaskbarVersion": "1.20260128.9.0",

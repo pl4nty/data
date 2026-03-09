@@ -1,5 +1,66 @@
 [
     {
+        "created": "2026-03-09T16:15:07",
+        "description": "In Outlook, Copilot now works side by side with users to draft, refine, and format emails conversationally, powered by the same agentic capabilities available in Word, Excel, and PowerPoint. ",
+        "id": 552595,
+        "locale": null,
+        "modified": "2026-03-09T16:15:07",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Draft, edit and format emails conversationally with Copilot in Outlook "
+    },
+    {
         "created": "2026-03-06T23:00:47",
         "description": "New enhancements for SharePoint and OneDrive enable organizations to automatically override manually applied sensitivity labels and remove labels at scale on Word, Excel, PowerPoint, and PDF files. These capabilities help ensure data remains correctly classified as policies, labels, and business requirements evolve\u2014reducing reliance on manual user updates and improving consistency for data at rest across Microsoft 365.",
         "id": 558342,
@@ -86207,61 +86268,6 @@
         "title": "Microsoft Viva: Feature Access Management for Copilot in Viva Glint"
     },
     {
-        "created": "2025-02-07T23:15:09",
-        "description": "This update aligns Copilot Chat prompt input box across chat experiences.",
-        "id": 478654,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Updates to Copilot Chat prompt input box"
-    },
-    {
         "created": "2025-02-07T00:15:04",
         "description": "Efficiently create channels directly from the header menu, eliminating the need to scroll down to the specific team. As a channel creator, you will have the flexibility to choose from all the teams you can create a channel in to host your new channel.",
         "id": 479744,
@@ -86921,61 +86927,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Copilot in Forms has been refreshed to help users better refine and edit their forms"
     },
     {
-        "created": "2025-02-04T00:15:04",
-        "description": "When creating a form with Copilot, users can now reference existing documents such as Word, Excel, and PowerPoint. Users can also reference an existing form by pasting the form's URL into the prompt box. Additionally, Copilot can search and suggest relevant files when generating a form, so users can easily create a draft that meets their needs.",
-        "id": 474658,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Forms"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Forms"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot in Forms can now reference files to help generate drafts"
-    },
-    {
         "created": "2025-01-31T23:15:55",
         "description": "Copilot in Forms can now help you monitor and collect responses for your forms, so you can get the data you need with much less effort. Copilot can create a collection plan, track your progress, and let you know when to take action with reminders and insights. Forms can notify you when early insights are ready, and you can easily continue your analysis with Copilot in Excel. Say goodbye to manual follow-ups and hello to smarter collection and analysis.",
         "id": 470604,
@@ -87322,55 +87273,6 @@
             ]
         },
         "title": "OneNote: Copilot on OneNote brings in notes from Video and Images (iPhone)"
-    },
-    {
-        "created": "2025-01-30T00:15:44",
-        "description": "Microsoft Purview has introduced a new separate role for downloading the original evidence for Endpoint. It is applicable for both Customer Managed and Microsoft Managed storage when you try to download the evidence using Purview or XDR portal.",
-        "id": 478660,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Separate role added for downloading the original file evidence for Endpoint"
     },
     {
         "created": "2025-01-30T00:15:44",
@@ -89069,67 +88971,6 @@
         "title": "Microsoft Purview compliance portal: Insider Risk Management- DLP alerts as indicators"
     },
     {
-        "created": "2025-01-22T00:15:32",
-        "description": "Using everyday language, ask Copilot to perform advanced analytics that would usually take you hours or is beyond your skillset like machine learning, predictive forecasting, and more. Copilot will write Python code for you and insert it on the grid, resulting in deeper insights and stunning visuals. Available on Excel for Mac in English, Simplified Chinese, French, German, Italian, Japanese, Brazilian Portuguese, and Spanish, with additional languages coming soon.",
-        "id": 473456,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for Mac"
-    },
-    {
         "created": "2025-01-17T23:15:23",
         "description": "Microsoft Purview Endpoint Data Loss Prevention adds support for instances where users try to paste sensitive content into a web browser on macOS devices using Edge, Safari, and other browsers.",
         "id": 476073,
@@ -90314,79 +90155,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Copilot extensibility \u2013 Developers can build custom engine agents with the Microsoft 365 Agents SDK"
     },
     {
-        "created": "2025-01-10T23:15:46",
-        "description": "Copilot Analytics is designed to empower every IT and business leader to measure adoption and business impact of Copilot and agents with out-of-the-box experiences in Copilot Dashboard and customizable reporting for deeper analysis against your KPIs. With Viva Insights included, IT admins and analysts can now tailor advanced prebuilt Copilot reports with their business data or create custom reports with organizational attributes, longer usage data sets, and more granular controls.",
-        "id": 471002,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Analytics available in Microsoft 365 Copilot "
-    },
-    {
         "created": "2025-01-10T00:15:38",
         "description": "Developers can use Microsoft 365 Copilot Chat and enable developer mode to debug.",
         "id": 474450,
@@ -91120,67 +90888,6 @@
         "title": "Microsoft Teams: Meeting recap can be shared via link"
     },
     {
-        "created": "2024-11-14T00:45:04",
-        "description": "The updated Gallery View in Teams Rooms on Windows arranges all participants in consistent tile sizes, prioritizes video on the meeting stage, offers additional layout options, optimizes for single and dual displays, and provides a unified meeting experience across both Teams Rooms and desktop.",
-        "id": 468277,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Updates to Gallery\nView in Teams Rooms on Windows"
-    },
-    {
         "created": "2024-11-15T00:30:25",
         "description": "Enable presenters to more easily access the meeting chat while screensharing by adding an entry point in the presenter toolbar.",
         "id": 467445,
@@ -91430,109 +91137,6 @@
         "title": "Microsoft Teams: Integrate Chat notification with Meeting RSVP status"
     },
     {
-        "created": "2024-11-07T00:30:03",
-        "description": "For Microsoft 365 E5 and Teams Premium customers, we are making it easier to leverage sensitivity labels from Microsoft Purview Information Protection to help set the right protection settings to meetings. Admins can now set a label inheritance policy for meeting, so that when an attendee shares a file that has a higher sensitivity than the meeting itself in meeting chat or via Live share, the meeting's sensitivity can be updated either automatically or via a recommendation to the organizer, to match with the sensitivity of the shared file.",
-        "id": 467247,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "January CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Microsoft Purview supports inheriting sensitivity labels from shared files to Teams meetings (Premium)"
-    },
-    {
         "created": "2024-10-17T23:15:03",
         "description": "We are expanding the existing \u2018Meeting chat\u2019 control in Teams Admin Center with two new values, \u201cIn-meeting only for everyone\u201d and \u201cIn-meeting only except anonymous users.\u201d In Teams Admin Center, admins will see a setting called \u2018Meeting chat\u2019 under Meetings > Meeting Policies > Meeting Engagement. Admins can now select from five options in the \u2018Meeting chat\u2019 setting: (1) \u201cOn for everyone\u201d (2) \u201cOn for everyone but anonymous users\u201d (3) \u201cOff\u201d (4) \u201cIn-meeting only for everyone\u201d (5) \u201cIn-meeting only except anonymous users.\u201d  Admins can select the \u201cIn-meeting only\u201d values to disable participants\u2019 ability to send messages in the meeting chat before or after the meeting, for meetings organized by specific users in their tenant. When one of these \u201cIn-meeting only\u201d values are selected, participants can read past chat history but no one can send messages in the meeting chat unless the meeting is active.",
         "id": 422808,
@@ -91762,79 +91366,6 @@
             ]
         },
         "title": "Microsoft Teams: Third-Party chat and meeting keyboard shortcut support"
-    },
-    {
-        "created": "2024-12-05T00:15:07",
-        "description": "VDI users can join meetings with people in other Microsoft 365 cloud environments (e.g., a user in GCCH joining a meeting in commercial, GCC or DOD) through three options: authenticated access via cross-cloud meeting connection, authenticated access using a guest account, or anonymous access. These scenarios require Slimcore-based optimization, as WebRTC-based optimization does not support meetings across different cloud environments.",
-        "id": 471434,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Cross Cloud collaboration in VDI"
     },
     {
         "created": "2024-12-20T23:15:46",
@@ -94266,67 +93797,6 @@
             ]
         },
         "title": "Outlook: Sync folder order"
-    },
-    {
-        "created": "2024-10-15T23:15:51",
-        "description": "SharePoint Document Libraries will begin to leverage the Approvals app in Microsoft Teams. Users will be able to navigate to the Automate dropdown, Configure Approvals to enable the feature on the library. Once enabled you can specify the approver for the file, submit a request which will appear in the Approvals app in Teams or can be approved directly in the library. Once approved, the file metadata will update in the Approval status column.",
-        "id": 420336,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: Approvals integration in Document Libraries"
     },
     {
         "created": "2024-09-04T23:30:32",
@@ -98512,85 +97982,6 @@
     },
     {
         "created": "2024-12-10T00:15:43",
-        "description": "Modernized user experience for leveraging general and notification settings within Viva Engage",
-        "id": 472019,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Enhanced User Settings experience in Viva Engage"
-    },
-    {
-        "created": "2024-12-10T00:15:43",
         "description": "From the Outlook for iOS and Android apps, you can request Outlook to attempt to recall a message sent to a colleague within your organization",
         "id": 471444,
         "locale": null,
@@ -99325,67 +98716,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Lifecycle separate retention policies for Copilots and AI Apps"
-    },
-    {
-        "created": "2024-11-22T23:15:35",
-        "description": "Batches are groups of cards in the user's Notification pane separated by subject. Items from the same email thread, document, sheet, etc. will be grouped into a single batch. #newouotlookforwindows ",
-        "id": 470021,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Notifications pane batching"
     },
     {
         "created": "2024-11-16T00:00:49",
@@ -103037,85 +102367,6 @@
         "title": "Microsoft Purview compliance portal: Audit - New filters in Audit Search"
     },
     {
-        "created": "2024-03-26T23:15:09",
-        "description": "Customers will have the ability to add shared folders to their favorites. This enhancement offers users increased flexibility and convenience, allowing easy and quick access to important shared content directly from their Favorites list. #newoutlookforwindows",
-        "id": 388913,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Add Shared Folders to Favorites in the new Outlook for Windows and web"
-    },
-    {
         "created": "2024-02-23T00:15:24",
         "description": "Audit Search allows customers to retrieve audit logs relevant to a security or compliance investigation. With this change, customers will now be able to search for relevant audit logs using additional fields such as Record ID, UserKey, UserType, and ClientIP.",
         "id": 384092,
@@ -103169,67 +102420,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Audit - New filters in Audit Search"
-    },
-    {
-        "created": "2023-11-28T02:13:58",
-        "description": "<div>We are introducing a new people experiences category in Adoption Score in the Microsoft 365 admin center. The new category helps organizations understand the adoption Microsoft Copilot features in Microsoft 365. </div>",
-        "id": 185700,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft 365 admin center: AI adoption score"
     },
     {
         "created": "2023-09-19T23:09:39",
@@ -103358,55 +102548,6 @@
             ]
         },
         "title": "Excel: Refresh queries from Authenticated Data Sources in Excel for the Web"
-    },
-    {
-        "created": "2024-11-20T00:15:49",
-        "description": "We are introducing an Exchange Web Services (EWS) usage report in the Microsoft 365 admin center that provides comprehensive insights into the applications in your tenant that use EWS. The report provides detailed information on the specific actions performed by these applications along with their respective call volumes over a selected period. This new report enhances your ability to understand EWS activity prior to EWS deprecation in Exchange Online.",
-        "id": 469510,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 admin center: New EWS usage report"
     },
     {
         "created": "2024-11-20T00:15:49",
@@ -104256,85 +103397,6 @@
             ]
         },
         "title": "Outlook: Fonts in Outlook for iOS and Android"
-    },
-    {
-        "created": "2024-07-22T23:30:07",
-        "description": "Use Microsoft Copilot in Viva Pulse to receive an AI-generated summary of your results from a Viva Pulse report. Viva Pulse authors can share it with their team members as well use it to promote transparency.",
-        "id": 407863,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Pulse - Generate Pulse summary with Microsoft Copilot in Viva Pulse "
     },
     {
         "created": "2024-07-16T23:15:43",
@@ -106248,61 +105310,6 @@
         "title": "Outlook: Custom account icons in Outlook Mobile"
     },
     {
-        "created": "2024-11-05T00:30:50",
-        "description": "This feature is an enhancement to the existing IRM Office Indicator - Downgrading sensitivity labels applied to SharePoint files and removing sensitivity labels from SharePoint files.\n\nIn the current version, only sensitivity label changes on SharePoint Web app are captured in IRM. But with the latest update, this indicator captures the sensitivity label changes (downgrade/remove) when performed on OneDrive, AIP, and Endpoint (SharePoint file opened in Office app or any sensitivity label change on the local files on your device).\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 466742,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Downgrade/remove sensitivity label"
-    },
-    {
         "created": "2024-09-30T23:30:14",
         "description": "In new Outlook for Windows, the People Hub offers a streamlined contacts interface with a single view of each person, automatically linking duplicates and enriching them with organizational profiles. #newoutlookforwindows",
         "id": 413114,
@@ -106887,61 +105894,6 @@
             ]
         },
         "title": "Microsoft 365: Create full-workload backup policies for Microsoft 365 Backup"
-    },
-    {
-        "created": "2024-10-29T23:15:28",
-        "description": "Create backup policies for your OneDrive and Exchange data based on distribution lists and security groups memberships, and have the tool automatically update these policies based on dynamic membership changes. Updated May 2025 to change the rollout start date from June 2025 to April 2025.\n",
-        "id": 464989,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft 365: Create Dynamic rule-based backup policies for Microsoft 365 Backup"
     },
     {
         "created": "2024-10-30T23:30:52",
@@ -108155,67 +107107,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Communication Compliance - Adaptive policy scope"
-    },
-    {
-        "created": "2023-12-21T00:30:17",
-        "description": "Adaptive Protection is a capability of Microsoft Purview that dynamically assigns appropriate Data Loss Prevention policies to users based on the risk levels analyzed by the machine learning models in Insider Risk Management. \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 335856,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Adaptive Protection"
     },
     {
         "created": "2024-05-08T23:45:39",
@@ -110041,55 +108932,6 @@
         "title": "OneDrive: View PDFs with Purview Information Protection sensitivity labels on OneDrive Web"
     },
     {
-        "created": "2024-09-19T23:15:45",
-        "description": "Classic Microsoft Purview Compliance portal will be retired by 2024 and the new Microsoft Purview portal will provide all existing capabilities and more. The new Purview portal offers a streamlined design and a unified experience, allowing you to discover and access data security, data governance, and risk and compliance solutions for all your data, wherever it resides across your data estate.",
-        "id": 415454,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Classic Microsoft Purview Compliance portal will be retired by end of 2024"
-    },
-    {
         "created": "2024-09-16T23:30:04",
         "description": "Secure sites by identifying sites with \"similar files\" and identifying different policies and settings. Admin now choose a site and compare the contents with ALL other sites. The report provides a percentage on how similar the contents of the sites are and then compares the settings. This helps admin to identify and administer same/similar settings and policies to similar sites all using the power of AI.",
         "id": 415167,
@@ -110149,79 +108991,6 @@
             ]
         },
         "title": "SharePoint: SharePoint site content & policy comparison using AI"
-    },
-    {
-        "created": "2024-08-12T23:00:27",
-        "description": "This roadmap item was released earlier than expected and unfortunately, we missed making this update. We apologize for the inconvenience this may have caused.\nThis introduces an \"always on\" ability to see who is in the office based on Work Hours and Location. This information will be pinned (available) on the top-right corner of the Calendar surface in the new Outlook for Windows and web. #newoutlookforwindows",
-        "id": 410986,
-        "locale": null,
-        "modified": "2025-05-08T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Exchange"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Exchange"
-                },
-                {
-                    "tagName": "Microsoft 365"
-                },
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Pinned ability to always see who is in the office based on Work Hours and Location"
     },
     {
         "created": "2024-08-13T23:15:23",

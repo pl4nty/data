@@ -440,6 +440,7 @@
         "EnableCrossRegionDRreport": true,
         "EnableCrossRegionDisasterRecoveryInUserSettingUX": true,
         "EnableCrossRegionDisasterRecoveryReport": true,
+        "EnableCrossRegionForceFailback": true,
         "EnableCustomImageForwarderDataStream": true,
         "EnableCustomizedBatchSizer": true,
         "EnableDBAutoSplit": true,

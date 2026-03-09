@@ -176,7 +176,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -5269,6 +5269,9 @@
         },
         "EnableCertificateValidationLibrary": false,
         "EnableFollowMuteConversation": 1,
+        "Encryption": {
+            "LegacyDecryptionEnabled": true
+        },
         "IsCnameWhitelistingEnabled": {
             "AAD": true,
             "KeyVault": true

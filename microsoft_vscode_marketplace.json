@@ -44,6 +44,13 @@
                 "id": "Leathong.openscad-language-support"
             }
         },
+        "AlexeyEremeev.1c-drive-test-helper": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "KOT for 1C",
+                "id": "AlexeyEremeev.kot-test-toolkit"
+            }
+        },
         "Ampier.vscode-ampier": {
             "disallowInstall": true,
             "extension": {
@@ -2250,6 +2257,9 @@
         "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
     },
     "malicious": [
+        "zhukunpeng.codemoss",
+        "zhukunpeng.vscode-tinypng-pro",
+        "live-servers.LiveeServer",
         "bl-vc-java.bl-tomcat",
         "WhenSunset.chatgpt-china",
         "zhukunpeng.chat-moss",
