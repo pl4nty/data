@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\37fb398d81bd6\1.luac 
+-- Command line: lua\!InfrastructureShared\42eb3be4a8483\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -287,7 +287,7 @@ if l_0_8 ~= "" then
           l_0_11("SHELLCODE_SIZE: ", l_0_10, bm.RelatedStringBMReport)
         end
         l_0_11 = TrackPidAndTechniqueBM
-        l_0_11("BM", "T1055", "Behavior:Win32/SusPowerShellExecution.AM!Ofn")
+        l_0_11("BM", "T1055", "Behavior:Win32/SusPowerShellExecution.MK!Ofn")
         l_0_11 = bm
         l_0_11 = l_0_11.add_action
         l_0_11("SmsAsyncScanEvent", 5000)
