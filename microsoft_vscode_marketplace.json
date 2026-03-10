@@ -1697,6 +1697,7 @@
                 "id": "ms-azuretools.vscode-azureresourcegroups"
             }
         },
+        "ms-vscode.copilot-mermaid-diagram": true,
         "ms-vscode.latex": {
             "disallowInstall": true,
             "extension": {

@@ -218,6 +218,7 @@
         "azureml://registries/azure-openai/models/gpt-5.2-codex",
         "azureml://registries/azure-openai/models/gpt-5.3-codex",
         "azureml://registries/azure-openai/models/gpt-5.4",
+        "azureml://registries/azure-openai/models/gpt-5.4-pro",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -241,6 +242,8 @@
         "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-fast-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-code",
+        "azureml://registries/azureml-xai/models/grok-4-1-fast-non-reasoning",
+        "azureml://registries/azureml-xai/models/grok-4-1-fast-reasoning",
         "azureml://registries/azureml-openai-oss/models/gpt-oss-120b",
         "azureml://registries/azureml-openai-oss/models/gpt-oss-20b",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
@@ -262,7 +265,11 @@
         "azureml://registries/azureml-fireworks/models/fw-qwen3-235b-a22b",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-instruct-0905",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-instruct",
-        "azureml://registries/azureml-fireworks/models/fw-deepseek-v3.1-terminus"
+        "azureml://registries/azureml-fireworks/models/fw-qwen3-14b",
+        "azureml://registries/azureml-fireworks/models/fw-kimi-k2.5",
+        "azureml://registries/azureml-fireworks/models/fw-deepseek-v3.1-terminus",
+        "azureml://registries/azureml-fireworks/models/fw-glm-5",
+        "azureml://registries/azureml-fireworks/models/fw-minimax-m2.5"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",
@@ -365,6 +372,7 @@
         "gpt-5.2-chat",
         "gpt-5.3-chat",
         "gpt-5.4",
+        "gpt-5.4-pro",
         "kimi-k2-thinking",
         "kimi-k2.5"
     ],
@@ -429,7 +437,8 @@
             "gpt-5.2-chat",
             "gpt-5.3-codex",
             "gpt-5.3-chat",
-            "gpt-5.4"
+            "gpt-5.4",
+            "gpt-5.4-pro"
         ],
         "supportedChatModels": [
             "gpt-4",
@@ -473,6 +482,7 @@
             "gpt-5.2-chat",
             "gpt-5.3-chat",
             "gpt-5.4",
+            "gpt-5.4-pro",
             "kimi-k2-thinking",
             "kimi-k2.5"
         ],
@@ -522,6 +532,7 @@
             "gpt-5.2-codex",
             "gpt-5.3-codex",
             "gpt-5.4",
+            "gpt-5.4-pro",
             "o1-pro",
             "o3",
             "o3-pro",

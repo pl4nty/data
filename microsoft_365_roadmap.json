@@ -1,5 +1,237 @@
 [
     {
+        "created": "2026-03-09T23:15:17",
+        "description": "When create or edit a presentation with Copilot in PowerPoint, you can now select which model to use, including both Open AI and Anthropic models. Available to Microsoft 365 Copilot\u2013licensed users.",
+        "id": 558443,
+        "locale": null,
+        "modified": "2026-03-09T23:15:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Edit with the model of your choice in PowerPoint"
+    },
+    {
+        "created": "2026-03-09T23:15:17",
+        "description": "We're expanding the Data Security Posture Agent with a new credential scanning capability. Discover exposed credentials and data security risks across scoped locations. Assign scanning tasks to the agent, track progress across stages, and take action on prioritized findings. The agent scans selected data locations, analyzing scoped files to detect credentials, such as Microsoft Entra user credentials, private keys, and API tokens. Each finding includes a risk score, AI-generated insights, confidence score, and credential category so you can review, confirm, and act from a single task board view.",
+        "id": 558436,
+        "locale": null,
+        "modified": "2026-03-09T23:15:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Credential Scanning in Data Security Posture Agent "
+    },
+    {
+        "created": "2026-03-09T23:15:17",
+        "description": "Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
+        "id": 558343,
+        "locale": null,
+        "modified": "2026-03-09T23:15:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management\u2013 Hard delete capability for OneDrive and SharePoint through secure priority cleanup workflows"
+    },
+    {
+        "created": "2026-03-09T23:15:17",
+        "description": "Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.",
+        "id": 557557,
+        "locale": null,
+        "modified": "2026-03-09T23:15:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: DSPM data risk assessments: item-level investigation & remediation"
+    },
+    {
         "created": "2026-03-09T16:15:07",
         "description": "In Outlook, Copilot now works side by side with users to draft, refine, and format emails conversationally, powered by the same agentic capabilities available in Word, Excel, and PowerPoint. ",
         "id": 552595,
@@ -114,7 +346,7 @@
         "description": "Users will now find controls for switching between the accounts and tenants that they are signed into making it easier to navigate on Mac.",
         "id": 558340,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -132,6 +364,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -153,6 +388,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -224,7 +462,7 @@
         "description": "Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.\n",
         "id": 558254,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -238,16 +476,19 @@
                 "tagName": "Desktop"
             },
             {
-                "tagName": "Linux"
+                "tagName": "Mac"
             },
             {
-                "tagName": "Mac"
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -261,10 +502,10 @@
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Linux"
+                    "tagName": "Mac"
                 },
                 {
-                    "tagName": "Mac"
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -275,6 +516,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2477,12 +2721,12 @@
         "description": "We are introducing a new URL click alert that proactively notifies security teams when a user clicks on a malicious link in Teams, helping organizations quickly identify risk and respond before further impact occurs.",
         "id": 557549,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4009,7 +4253,7 @@
         "description": "Teams Rooms on Windows proactively monitors room audio, video, and display signals to detect issues in meeting spaces. Teams Rooms Pro Management automatically remediates common issues that can be resolved through software, configuration changes, or device resets during nightly maintenance. This ensures users have reliable, ready-to-use meeting rooms, while IT admins benefit from reduced manual troubleshooting and increased uptime. Available for Teams Rooms Pro-licensed rooms.",
         "id": 557167,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -4018,6 +4262,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Teams and Surface Devices"
@@ -4033,6 +4283,12 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -8060,10 +8316,10 @@
     },
     {
         "created": "2026-02-05T00:15:27",
-        "description": "Shared mailbox users and delegates with full access permission will now be able to access Copilot Chat, directly from their shared and delegate mailboxes in new Outlook.",
+        "description": "Shared mailbox users and delegates with Read and manage (full access), and/or mail folder-level permission will now be able to access Copilot Chat directly from their shared and delegate mailboxes in new Outlook.",
         "id": 554936,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -8513,9 +8769,9 @@
         "description": "Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
         "id": 532734,
         "locale": null,
-        "modified": "2026-02-06T23:15:31",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8702,12 +8958,12 @@
         "description": "When viewing your calendar on iPad, you can now expand an event to a full\u2011screen view, giving you more space to review information and make edits.",
         "id": 554939,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10594,12 +10850,12 @@
         "description": "With this feature when multiple files are involved in a DLP enforcement action, the policy tip will now show multiple files and their respective status. ",
         "id": 547832,
         "locale": null,
-        "modified": "2026-01-27T00:01:00",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -12169,9 +12425,9 @@
         "description": "The Researcher Agent in Microsoft 365 Copilot empowers users to create rich, detailed reports on any topic they choose whether from work or web content. We are introducing new output formats in the Researcher Agent that will allow users to export and consume generated reports in their preferred formats. Users will be able to export their Researcher reports to PowerPoint, PDF, Infographic or an Audio Overview. We are also updating the UX for previously existing output formats- Word and Pages.  ",
         "id": 546246,
         "locale": null,
-        "modified": "2026-01-13T00:00:10",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13712,12 +13968,12 @@
         "description": "We are adding to Insider Risk Management a pre-configured quick policy template to detect data theft from Microsoft Fabric and non-Microsoft 365 data sources like Box, Dropbox, Google Drive, Azure and Amazon Web Services (AWS). This will enable admins to create scenario-specific policies, with little configurations needed, to get started faster. All scenario based quick policies can be found in the Policies page > Create Policies. Additional tuning post deployment to meet individual alert volume needs can be expected. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.\n",
         "id": 543244,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15793,9 +16049,9 @@
         "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. Updated January 30: This feature is still in development with a planned release of April 2026. We apologize for the inconvenience. ",
         "id": 516032,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17580,12 +17836,12 @@
         "description": "This feature provides additional languages support for AI generated audio overview of top 10 news items in the Viva Connections news reader experience. Additionally, if the SharePoint Knowledge Agent is available in a site, site pages and news posts will now have the AI audio summary experience.",
         "id": 535423,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19757,12 +20013,12 @@
         "description": "Enable customers to edit the scheduled prompt schedule ",
         "id": 531912,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32623,12 +32879,12 @@
         "description": "After executing a search in classic Outlook, users will have the option to easily opt into seeing an AI generated summary of their search results in their Copilot side pane. They can ask further questions in their chat, navigate to cited files and emails, or go back to their email experience easily.",
         "id": 510107,
         "locale": null,
-        "modified": "2025-12-18T00:15:48",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35248,9 +35504,9 @@
         "description": "Endpoint DLP can now classify Office files stored in Windows devices that have Azure RMS protection applied.  Classification will be triggered when file is used in applications or when just-in-time classification is enabled. ",
         "id": 503780,
         "locale": null,
-        "modified": "2025-09-22T23:00:43",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40831,9 +41087,9 @@
         "description": "Endpoint DLP can now classify Office files stored in Windows devices that have Azure RMS protection applied.  Classification will be triggered when file is used in applications or when just-in-time classification is enabled",
         "id": 500895,
         "locale": null,
-        "modified": "2025-08-21T23:15:03",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -44544,9 +44800,9 @@
         "description": "Get relevant answers and insights about your open cloud documents in Copilot Chat in Edge. ",
         "id": 499423,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -83073,12 +83329,12 @@
         "description": "Allow files from OneDrive to be added as a grounding source in the Sources tab when creating a custom agent. This would apply to agents created from both OneDrive and SharePoint.",
         "id": 480728,
         "locale": null,
-        "modified": "2025-10-08T23:15:04",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -88768,12 +89024,12 @@
         "description": "Insert emojis directly from your keyboard without any distractions. Use colons (e.g. :smile:) in the compose box to add any emoji, even your custom ones, making it quicker to express yourself.",
         "id": 369345,
         "locale": null,
-        "modified": "2025-06-03T23:15:26",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -104905,9 +105161,9 @@
         "description": "This feature is about improving the alerting capabilities and customization in Communication Compliance.",
         "id": 181825,
         "locale": null,
-        "modified": "2025-09-08T23:45:21",
+        "modified": "2026-03-09T23:15:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "July CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
