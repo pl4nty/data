@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Arc Mouse firmware v2.2",
+    "downloadDescription": "Surface Arc Mouse firmware v2.2 supporting iOS Windows App",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SurfaceArcMouseDrivers_Win11_x64_22621_26.031.12959.0.msi",
+            "url": "https://download.microsoft.com/download/9dfd7bec-87ab-483d-8b38-c6ae0e43015b/Surface Arc Mouse firmware v2.2 X64 edition.msi",
+            "size": "782336",
+            "version": "1.0.0",
+            "datePublished": "3/10/2026 6:44:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceArcMouseDrivers_Win11_arm64_22621_26.031.12962.0.msi",
+            "url": "https://download.microsoft.com/download/9dfd7bec-87ab-483d-8b38-c6ae0e43015b/Surface Arc Mouse firmware v2.2 ARM64 edition.msi",
+            "size": "794624",
+            "version": "1.0.0",
+            "datePublished": "3/10/2026 6:44:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Surface Arc Mouse firmware v2.2 supporting iOS Windows App",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "SurfaceArcMouseDrivers_Win11_x64_22621_26.031.12959.0.msi",
+        "SurfaceArcMouseDrivers_Win11_arm64_22621_26.031.12962.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "764.0 KB",
+        "776.0 KB"
+    ],
+    "detailsSection_file_date": "3/10/2026",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "1, double click the msi package, complete the driver installation\n2, reboot the PC \n3, connect the Surface Arc Mouse, keep it still for about 10 minutes",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108580",
+    "downloadPreload": true
+}
