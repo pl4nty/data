@@ -577,6 +577,8 @@
     },
     "UX_RemoteAssist": {
         "FlightingV2": {
+            "ManagedInstallerScoping": true,
+            "ManagedInstallerScopingAndExclusions": true,
             "ManagedInstallerTargetingUX": true
         }
     },
