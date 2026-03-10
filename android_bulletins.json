@@ -399,17 +399,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "CVE": "CVE-2025-48653",
-        "References": "A-435737668",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "14, 15, 16, 16-qpr2",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
-        "Published": "March 2, 2026",
-        "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0017",
         "References": "A-444673089",
         "Type": "EoP",
@@ -585,17 +574,20 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "Subcomponent": "Permission Controller",
-        "CVE": "CVE-2025-48653",
+        "Subcomponent": "Profiling",
+        "CVE": "CVE-2025-48585, CVE-2025-48587",
         "Component": "Google Play system updates"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "Subcomponent": "Profiling",
-        "CVE": "CVE-2025-48585, CVE-2025-48587",
-        "Component": "Google Play system updates"
+        "CVE": "CVE-2024-43859",
+        "References": "A-455892000Upstream kernel",
+        "Type": "EoP",
+        "Severity": "Critical",
+        "Subcomponent": "Flash-Friendly File System",
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
@@ -606,80 +598,80 @@
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "Protected Kernel-Based Virtual Machine",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0038",
-        "References": "A-459479964Upstream kernel [2] [3] [4] [5] [6] [7]",
+        "References": "-459479964",
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "Hypervisor",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-38616",
-        "References": "A-440544812Upstream kernel [2]",
+        "References": "A-440544812",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "Transport Layer Security",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-38618",
-        "References": "A-439253642Upstream kernel [2] [3]",
+        "References": "A-439253642",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "vsock",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-39682",
-        "References": "A-440544511Upstream kernel [2] [3]",
+        "References": "A-440544511",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "Transport Layer Security",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-39946",
-        "References": "A-446648770Upstream kernel [2] [3]",
+        "References": "A-446648770",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "Transport Layer Security",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0029",
-        "References": "A-443668075Upstream kernel [2] [3]",
+        "References": "A-443668075",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "Protected Kernel-Based Virtual Machine",
-        "Component": "Kernel components"
+        "Component": "Kernel"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0027",
-        "References": "A-456069704Upstream kernel [2] [3]",
+        "References": "A-456069704",
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "Protected Kernel-Based Virtual Machine",
@@ -690,7 +682,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0028",
-        "References": "A-443123065Upstream kernel [2] [3]",
+        "References": "A-443123065",
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "pKVM",
@@ -701,7 +693,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0030",
-        "References": "A-441808375Upstream kernel [2] [3]",
+        "References": "A-441808375",
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "pKVM",
@@ -712,7 +704,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0031",
-        "References": "A-443072657Upstream kernel [2] [3]",
+        "References": "A-443072657",
         "Type": "EoP",
         "Severity": "Critical",
         "Subcomponent": "pKVM",
@@ -723,7 +715,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-39946",
-        "References": "A-432728472Upstream kernel [2] [3]",
+        "References": "A-432728472",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "TLS",
@@ -734,7 +726,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-40266",
-        "References": "A-439862698Upstream kernel [2] [3]",
+        "References": "A-439862698",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "pKVM",
@@ -745,7 +737,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0032",
-        "References": "A-439996285Upstream kernel [2]",
+        "References": "A-439996285",
         "Type": "EoP",
         "Severity": "High",
         "Subcomponent": "pKVM",
@@ -756,7 +748,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-2879",
-        "References": "A-427973176*",
+        "References": "A-427973176",
         "Severity": "High",
         "Subcomponent": "Mali",
         "Component": "Arm components"
@@ -766,77 +758,77 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-10865",
-        "References": "A-449129642*",
+        "References": "A-449129642",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-13952",
-        "References": "A-464496427*",
+        "References": "A-464496427",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-58407",
-        "References": "A-449121737*",
+        "References": "A-449121737",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-58408",
-        "References": "A-429381685*",
+        "References": "A-429381685",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-58409",
-        "References": "A-440384860*",
+        "References": "A-440384860",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-58411",
-        "References": "A-449122377*",
+        "References": "A-449122377",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-21735",
-        "References": "A-450584982*",
+        "References": "A-450584982",
         "Severity": "High",
         "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies components"
+        "Component": "Imagination Technologies"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20795",
-        "References": "A-457250114M-ALPS10276761*",
+        "References": "A-457250114",
         "Severity": "High",
         "Subcomponent": "KeyInstall",
         "Component": "MediaTek components"
@@ -846,7 +838,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20425",
-        "References": "A-473379718M-ALPS10320471*",
+        "References": "A-473379718",
         "Severity": "High",
         "Subcomponent": "display",
         "Component": "MediaTek components"
@@ -856,7 +848,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20426",
-        "References": "A-473321948M-ALPS10320471*",
+        "References": "A-473321948",
         "Severity": "High",
         "Subcomponent": "display",
         "Component": "MediaTek components"
@@ -866,7 +858,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20427",
-        "References": "A-473385373M-ALPS10320471*",
+        "References": "A-473385373",
         "Severity": "High",
         "Subcomponent": "display",
         "Component": "MediaTek components"
@@ -876,7 +868,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20428",
-        "References": "A-473385374M-ALPS10320471*",
+        "References": "A-473385374",
         "Severity": "High",
         "Subcomponent": "display",
         "Component": "MediaTek components"
@@ -886,7 +878,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20434",
-        "References": "A-473385376M-MOLY00782946*",
+        "References": "A-473385376",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -896,7 +888,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20760",
-        "References": "A-457246939M-MOLY01676750*",
+        "References": "A-457246939",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -906,7 +898,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20761",
-        "References": "A-457250116M-MOLY01311265*",
+        "References": "A-457250116",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -916,7 +908,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20762",
-        "References": "A-457246938M-MOLY01685181*",
+        "References": "A-457246938",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -926,7 +918,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20793",
-        "References": "A-457250115M-MOLY01430930*",
+        "References": "A-457250115",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -936,7 +928,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20794",
-        "References": "A-457251533M-MOLY01689259*M-MOLY01586470*",
+        "References": "A-457251533",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -946,7 +938,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20401",
-        "References": "A-464955064M-MOLY01738310*",
+        "References": "A-464955064",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -956,7 +948,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20402",
-        "References": "A-464955066M-MOLY00693083*",
+        "References": "A-464955066",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -966,7 +958,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20403",
-        "References": "A-464955070M-MOLY01689259*M-MOLY01689254*",
+        "References": "A-464955070",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -976,7 +968,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20404",
-        "References": "A-464812757M-MOLY01689248*",
+        "References": "A-464812757",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -986,7 +978,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20405",
-        "References": "A-464956288M-MOLY01688495*",
+        "References": "A-464956288",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -996,7 +988,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20406",
-        "References": "A-464956289M-MOLY01726634*",
+        "References": "A-464956289",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -1006,7 +998,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20420",
-        "References": "A-464812755M-MOLY01738313*",
+        "References": "A-464812755",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -1016,7 +1008,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20421",
-        "References": "A-464956284M-MOLY01738293*",
+        "References": "A-464956284",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -1026,7 +1018,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-20422",
-        "References": "A-464955069M-MOLY00827332*",
+        "References": "A-464955069",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "MediaTek components"
@@ -1036,7 +1028,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-48613",
-        "References": "A-416491056*",
+        "References": "A-416491056",
         "Severity": "High",
         "Subcomponent": "VBMeta",
         "Component": "Misc OEM"
@@ -1046,7 +1038,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-61612",
-        "References": "A-472608390U-3145406*",
+        "References": "A-472608390",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1056,7 +1048,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-61613",
-        "References": "A-472608389U-3145409*",
+        "References": "A-472608389",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1066,7 +1058,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-61614",
-        "References": "A-472596020U-3145411*",
+        "References": "A-472596020",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1076,7 +1068,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-61615",
-        "References": "A-472596019U-3145413*",
+        "References": "A-472596019",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1086,7 +1078,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-61616",
-        "References": "A-472596017U-3145415*",
+        "References": "A-472596017",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1096,7 +1088,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-69278",
-        "References": "A-472608387U-3145418*",
+        "References": "A-472608387",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1106,7 +1098,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-69279",
-        "References": "A-472596366U-3145421*",
+        "References": "A-472596366",
         "Severity": "High",
         "Subcomponent": "Modem",
         "Component": "Unisoc components"
@@ -1115,8 +1107,18 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
+        "CVE": "CVE-2025-47388",
+        "References": "A-449733645",
+        "Severity": "High",
+        "Subcomponent": "Security",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
+        "Published": "March 2, 2026",
+        "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47394",
-        "References": "A-449732573QC-CR#4202921",
+        "References": "A-449732573",
         "Severity": "High",
         "Subcomponent": "Kernel",
         "Component": "Qualcomm components"
@@ -1126,7 +1128,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47396",
-        "References": "A-449733129QC-CR#4204623",
+        "References": "A-449733129",
         "Severity": "High",
         "Subcomponent": "Display",
         "Component": "Qualcomm components"
@@ -1136,7 +1138,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47397",
-        "References": "A-457747735QC-CR#4205207 [2]",
+        "References": "A-457747735",
         "Severity": "High",
         "Subcomponent": "Display",
         "Component": "Qualcomm components"
@@ -1146,7 +1148,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47398",
-        "References": "A-457746802QC-CR#4229974 [2]",
+        "References": "A-457746802",
         "Severity": "High",
         "Subcomponent": "Display",
         "Component": "Qualcomm components"
@@ -1156,7 +1158,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-59600",
-        "References": "A-465462602QC-CR#4249775 [2]",
+        "References": "A-465462602",
         "Severity": "High",
         "Subcomponent": "Display",
         "Component": "Qualcomm components"
@@ -1166,7 +1168,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2026-21385",
-        "References": "A-478214401QC-CR#4387106 [2]",
+        "References": "A-478214401",
         "Severity": "High",
         "Subcomponent": "Display",
         "Component": "Qualcomm components"
@@ -1176,7 +1178,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47339",
-        "References": "A-430042394*",
+        "References": "A-430042394",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1186,7 +1188,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47346",
-        "References": "A-430043562*",
+        "References": "A-430043562",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1196,7 +1198,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47348",
-        "References": "A-430043784*",
+        "References": "A-430043784",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1206,7 +1208,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47366",
-        "References": "A-436259280*",
+        "References": "A-436259280",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1216,7 +1218,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47378",
-        "References": "A-442620485*",
+        "References": "A-442620485",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1226,7 +1228,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47385",
-        "References": "A-442621008*",
+        "References": "A-442621008",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1236,7 +1238,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47395",
-        "References": "A-449732115*",
+        "References": "A-449732115",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -1246,7 +1248,7 @@
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
         "CVE": "CVE-2025-47402",
-        "References": "A-457748468*",
+        "References": "A-457748468",
         "Severity": "High",
         "Subcomponent": "Closed-source component",
         "Component": "Qualcomm closed-source components"
@@ -69344,7 +69346,7 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
         "Published": "March 3, 2026",
         "Patch level": "2026-03-05",
-        "CVE": "CVE-2024-56184",
+        "CVE": "CVE-2026-0124",
         "References": "A-308585798",
         "Type": "EoP",
         "Severity": "Critical",
