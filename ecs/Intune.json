@@ -435,7 +435,11 @@
     },
     "SVC_MultiAdminApproval": {
         "FlightingV2": {
-            "EnableMAA": true
+            "EnableMAA": true,
+            "EnableMAA_CompliancePolicy": true,
+            "EnableMAA_ComplianceSettings": true,
+            "EnableMAA_DcV2SettingsCatalog": true,
+            "EnableMultiAdminApprovalForDeviceCleanupRules": true
         }
     },
     "SVC_Pivot": {
@@ -556,7 +560,11 @@
     },
     "UX_MultiAdminApproval": {
         "FlightingV2": {
-            "EnableMAA": true
+            "EnableMAA": true,
+            "EnableMAA_CompliancePolicyUX": true,
+            "EnableMAA_ConfigurationPolicy": true,
+            "EnableMAA_DcV2SettingsCatalog": true,
+            "EnableMAA_DeviceCleanupRules": true
         }
     },
     "UX_Pivot": {
