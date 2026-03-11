@@ -8,7 +8,7 @@
 RootModule = 'WhiteboardAdmin.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.13.9'
+ModuleVersion = '1.14.0'
 
 # ID used to uniquely identify this module
 GUID = 'CC24F7D4-4CF7-46D3-BD87-30A3D44ECF96'
@@ -43,7 +43,9 @@ FunctionsToExport = @(
     'Get-WhiteboardsForTenantMigrated',
     'Get-OriginalFluidWhiteboardsForTenant',
     'Get-OriginalFluidWhiteboards',
-    'Get-WhiteboardMigrationMapping')
+    'Get-WhiteboardMigrationMapping',
+    'Export-WhiteboardHtml',
+    'Invoke-WhiteboardHtmlRetry')
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
 AliasesToExport = @()

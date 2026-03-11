@@ -1,4 +1,4 @@
-Set-Variable AdalClientId -option Constant -value '1950a258-227b-4e31-a9cf-717495945fc2'
+﻿Set-Variable AdalClientId -option Constant -value '1950a258-227b-4e31-a9cf-717495945fc2'
 Set-Variable AdalRedirectUri -option Constant -value 'https://login.microsoftonline.com/common/oauth2/nativeclient'
 New-Variable -Name UserAccount -Scope Script -Force
 New-Variable -Name PublicClient -Scope Script -Force
@@ -1467,6 +1467,9 @@ function Get-WhiteboardResourceId(
         default { return  "https://whiteboard.microsoft.com" }
     }
 }
+
+. "$PSScriptRoot\..\scripts\Export-WhiteboardHtml.ps1"
+. "$PSScriptRoot\..\scripts\Invoke-WhiteboardHtmlRetry.ps1"
 
 function Get-AadAuthority(
     [Parameter(Mandatory=$false)]
