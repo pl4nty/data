@@ -1,5 +1,401 @@
 [
     {
+        "created": "2026-03-10T23:00:58",
+        "description": "You can choose to select Anthropic models, in addition to OpenAI models, when editing a Word document using Copilot.",
+        "id": 558440,
+        "locale": null,
+        "modified": "2026-03-10T23:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Word"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Word"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Chose Anthropic models when editing with Copilot in Word"
+    },
+    {
+        "created": "2026-03-10T23:00:58",
+        "description": "New improvements are coming to the rollout wave functionality for Cloud Update. These enhancements will allow organizations to continue leveraging Microsoft Entra ID groups to set up rollout waves, with increased flexibility to configure more than the current limit of three waves. Additionally, admins will be able to assign custom delays between each wave, streamlining phased deployments and offering greater control over update distribution.",
+        "id": 558251,
+        "locale": null,
+        "modified": "2026-03-10T23:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft 365 Apps: Cloud Update - Enhanced Rollout Waves"
+    },
+    {
+        "created": "2026-03-10T23:00:58",
+        "description": "Use device selection criteria in Cloud Update to assign profiles using Microsoft Entra ID groups and streamline the onboarding process. Admins can combine channel and profile assignment in a single step, making it easier to move devices between update channels and maintain consistent update management across the organization.",
+        "id": 558250,
+        "locale": null,
+        "modified": "2026-03-10T23:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft 365 Apps: Cloud Update - Simplified Channel Management"
+    },
+    {
+        "created": "2026-03-10T23:00:58",
+        "description": "Use enhanced error reporting in Cloud Update for Microsoft 365 Apps updates to access clear, descriptive error messages that help you easily identify why an update did not complete successfully. Admins can review comprehensive insights across all Cloud Update-managed devices and drill down into individual devices for detailed information. This improved feature expands on the existing upgrade progress insights by grouping issues according to error codes and providing straightforward descriptions. These advancements enable admins to diagnose problems more efficiently, reduce support escalations, and take decisive corrective actions to boost monthly compliance rates.",
+        "id": 558249,
+        "locale": null,
+        "modified": "2026-03-10T23:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft 365 Apps: Cloud Update - Descriptive Errors"
+    },
+    {
+        "created": "2026-03-10T23:00:58",
+        "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and New Outlook for Windows #newoutlookforwindows",
+        "id": 558110,
+        "locale": null,
+        "modified": "2026-03-10T23:00:58",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Summarize email with Copilot chat in Outlook "
+    },
+    {
+        "created": "2026-03-10T22:00:39",
+        "description": "Microsoft Purview network data security now integrates with Island, extending protection to Island\u2019s browser-based workflows at the point of user interaction. With this integration, new and existing Island customers can configure Microsoft Purview collection and data loss prevention policies to detect and protect data shared with unmanaged cloud apps through the Island Enterprise Browser, the Island Extension, and browser add ins via HTTP and HTTPS, using the same classifiers, sensitive information types, and sensitivity labels used in other Purview policies. Island provides visibility and control at the presentation layer, including typed and pasted input, file transfers, and extension activity, so data can be inspected before it ever leaves the browser. This integration further enriches Purview Data Security Posture Management (DSPM), Insider Risk Management (IRM) risk score, enables data security and compliance for AI interactions, and more.",
+        "id": 558437,
+        "locale": null,
+        "modified": "2026-03-10T22:00:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention\u2013 Unmanaged cloud app discovery and protection with Microsoft Purview and the Island Enterprise Browser"
+    },
+    {
         "created": "2026-03-09T23:15:17",
         "description": "When create or edit a presentation with Copilot in PowerPoint, you can now select which model to use, including both Open AI and Anthropic models. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 558443,
@@ -5419,9 +5815,9 @@
         "description": "Edge for Business extends its capability to deliver Intune App Protection Policies via Intune MAM. Organizations are enabled to apply data loss prevention controls to Edge for Business profiles even on devices managed by another tenant. This capability enforces Intune MAM policies\u2014such as clipboard boundaries, watermarking, and protected downloads\u2014within the Edge work profile, ensuring sensitive data remains governed by your tenant. When enabled, downloads initiated in Edge are redirected to OneDrive for Business instead of local storage, and leak controls for screenshots and DevTools activate when data protection settings are applied. This approach secures cross-tenant scenarios like contractors or mergers without requiring additional apps or disrupting the end user experience.\n",
         "id": 557187,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8465,9 +8861,9 @@
         "description": "Researcher will be available for Microsoft 365 business and enterprise users with a Microsoft 365 Copilot add-on license. Researcher is an advanced deep reasoning agent in Microsoft 365 Copilot designed to tackle complex, multi-step tasks by acting as a deep research assistant.",
         "id": 554928,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10911,12 +11307,12 @@
         "description": "Copilot in Viva Glint will align with Microsoft's enterprise AI governance platform: enabling your IT and compliance teams to use centralized governance tools for access management and unified monitoring and reporting across all AI deployments in your tenant. This reduces governance complexity and audit burden by providing a single control plane for managing AI features across Microsoft 365. This change removes the existing Copilot toggles in the Viva Glint admin UI, making Viva Feature Access Management (VFAM) the single control plane for Copilot enablement.",
         "id": 551197,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13328,12 +13724,12 @@
         "description": "Users can now schedule meetings directly from chat or by clicking \"Schedule with Copilot\" in the UI. Simply ask Copilot to schedule a meeting with colleagues, and it will find available times, book rooms, draft agendas, and send invites\u2014all within the chat experience. This feature is available to users with a Microsoft 365 Copilot license. ",
         "id": 542185,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15072,12 +15468,12 @@
         "description": "With so many of us in back-to-back meetings, it can be a real struggle to stay on top of pre-reads, action items, and even what each meeting is about. Copilot quickly prepares you for meetings within minutes by bringing real-time insights and summarizing relevant context, tasks, documents, and other resources. You can also chat directly with Copilot to prepare more deeply, to ensure you're ready to go. This feature is already available in the new Outlook for Windows, Web, Mac, and Mobile and is now being adding to classic Outlook for Windows. It is only available for users with a Microsoft 365 Copilot license. ",
         "id": 542186,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15991,15 +16387,15 @@
     },
     {
         "created": "2025-12-11T00:00:03",
-        "description": "Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.",
+        "description": "Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people. We are cancelling this Roadmap item as it is a duplicate. For future updates please refer to Roadmap ID 523202. We apologize for the inconvenience. ",
         "id": 527832,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20330,12 +20726,12 @@
         "description": "You can now declutter your calendar by hiding declined meetings. If you\u2019ve enabled \u201cShow declined meetings\u201d in New Outlook or Outlook for the Web, you\u2019ll see a setting in Outlook Mobile to hide them for a simpler view. ",
         "id": 529848,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22148,12 +22544,12 @@
         "description": "If you have enabled Show declined events in New Outlook, you can choose to hide declined events in your Outlook iOS or Android app. Go to Settings > Calendar > Hide Declined Events. This will filter out declined events from your mobile calendar, while keeping those events visible in New Outlook.",
         "id": 526795,
         "locale": null,
-        "modified": "2026-01-06T00:15:27",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38365,12 +38761,12 @@
         "description": "We\u2019re adding a new set of image effects to Microsoft 365 Copilot that make it easy to enhance your visuals. Whether you're using AI-generated images or uploading your own, you can apply these effects in the Create experience or directly in Copilot Chat to make your content stand out.",
         "id": 502844,
         "locale": null,
-        "modified": "2025-11-06T00:00:20",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49960,9 +50356,9 @@
         "description": "As a Microsoft Purview user, you'll be able to view outages, service issues, and advisories that might impact your services. This new dashboard will combine the services and solutions health of Purview, Microsoft 365 services, and Azure Cloud Services in one central place in the Purview portal, eliminating the need to go to several places to find this information. ",
         "id": 497944,
         "locale": null,
-        "modified": "2025-09-24T23:15:27",
+        "modified": "2026-03-10T23:00:58",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
