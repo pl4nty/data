@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15173046,
+    "size": 15173884,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 32970209,
-    "file_count": 4019
+    "size": 33004052,
+    "file_count": 4020
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16910335,
+    "size": 16910122,
     "file_count": 1941
   },
   {
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 352540,
-    "file_count": 77
+    "size": 377734,
+    "file_count": 83
   },
   {
     "name": "ffmpeg",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43869071,
-    "file_count": 3270
+    "size": 43905922,
+    "file_count": 3278
   },
   {
     "name": "googletest",
@@ -401,8 +401,8 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1248902,
-    "file_count": 102
+    "size": 1263180,
+    "file_count": 103
   },
   {
     "name": "libgudev",
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4199259,
+    "size": 4200727,
     "file_count": 596
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1432447,
+    "size": 1437917,
     "file_count": 23
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7257340,
+    "size": 7257848,
     "file_count": 188
   },
   {
