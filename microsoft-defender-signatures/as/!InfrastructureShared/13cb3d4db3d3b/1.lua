@@ -8,6 +8,9 @@ if l_0_0 == nil then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
+if StringEndsWith(l_0_0, "\\basf service monitor.exe") or StringEndsWith(l_0_0, "\\basf welcome wizard.exe") or StringEndsWith(l_0_0, "\\pdqinventoryscanner.exe") or StringEndsWith(l_0_0, "\\dism.exe") or StringEndsWith(l_0_0, "\\mpam-d.exe") then
+  return mp.CLEAN
+end
 if StringEndsWith(l_0_0, "\\powershell.exe") and IsProcNameInParentProcessTree("BM", "microsoft.management.services.intunewindowsagent.exe") then
   return mp.CLEAN
 end
