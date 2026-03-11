@@ -734,7 +734,7 @@
         "EnableLongTermGetCollectionList": true,
         "EnableMHNReferenceNewName": "true",
         "EnableMTTFReport": true,
-        "EnableMTTRReport": true,
+        "EnableMTTRReport": false,
         "EnableMaintenanceWindowsUX": true,
         "EnableManagedConfigurationSummary": true,
         "EnableManagedDeviceNameList": true,

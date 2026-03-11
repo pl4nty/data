@@ -2037,7 +2037,8 @@
         "suspensionManagerParameters": {
             "dismissSuspensionDelaySeconds": 180
         },
-        "topWithPinnedIndependentSectionHandling": 1
+        "topWithPinnedIndependentSectionHandling": 1,
+        "useAccountIdForCredentialAcquisition": 1
     },
     "Segmentation": {
         "CompanionDevRing": "false",
