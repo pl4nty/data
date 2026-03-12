@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Slim Pen 2 2026 edition firmware update driver MSI package",
+    "downloadDescription": "Surface Slim Pen 2 2026 edition firmware update driver MSI package",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfacePen0CB3Drivers_Win11_arm64_22000_26.023.36539.0.msi",
+            "url": "https://download.microsoft.com/download/ea127d83-a4f6-4434-95c5-045b7e7f40ec/Surface Slim Pen 2 2026 Edition firmware ARM64.msi",
+            "size": "1011712",
+            "version": "26.023",
+            "datePublished": "3/11/2026 11:57:36 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SurfacePen0CB3Drivers_Win11_x64_22000_26.023.36532.0.msi",
+            "url": "https://download.microsoft.com/download/ea127d83-a4f6-4434-95c5-045b7e7f40ec/Surface Slim Pen 2 2026 Edition firmware X64.msi",
+            "size": "950272",
+            "version": "26.023",
+            "datePublished": "3/11/2026 11:57:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Firmware update for improving the Surface Slim Pen 2 2026 edition haptic performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "26.023",
+    "detailsSection_file_name": [
+        "SurfacePen0CB3Drivers_Win11_arm64_22000_26.023.36539.0.msi",
+        "SurfacePen0CB3Drivers_Win11_x64_22000_26.023.36532.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "988.0 KB",
+        "928.0 KB"
+    ],
+    "detailsSection_file_date": "3/11/2026",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "follow the standard MSI installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108593",
+    "downloadPreload": true
+}
