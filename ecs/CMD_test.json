@@ -311,6 +311,7 @@
         "EnableAutopilotInFlsInUX": true,
         "EnableAutopilotInPolicy": true,
         "EnableAutopilotNormalTitle": true,
+        "EnableAutopilotNormalTitleForReserve": true,
         "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
         "EnableBackFillCmdAgent": true,

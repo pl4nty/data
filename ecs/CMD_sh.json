@@ -286,6 +286,7 @@
         "EnableAutopilotInFlsInUX": true,
         "EnableAutopilotInPolicy": true,
         "EnableAutopilotNormalTitle": true,
+        "EnableAutopilotNormalTitleForReserve": false,
         "EnableAzureClientWithCredentials": true,
         "EnableAzureMetricsExporterInIvty": true,
         "EnableBYOImageValidationRegionSelector": true,
