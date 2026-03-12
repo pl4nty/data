@@ -565,7 +565,7 @@
         "EnableGetCloudProfileInWDS": true,
         "EnableGetCollectionByIdInStatus": true,
         "EnableGetCrossRegionDRConfig4SnapshotBackend": true,
-        "EnableGetDiskByAPI": false,
+        "EnableGetDiskByAPI": true,
         "EnableGetGpuDriverInfoV2": true,
         "EnableGetMdepsUrlFromRemoteConfig": true,
         "EnableGnTCosmosDbBatchRateLimit": true,

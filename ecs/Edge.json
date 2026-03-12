@@ -294,6 +294,154 @@
                 {
                     "applied_policy": "OptOut",
                     "domain": "web.whatsapp.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "copilot.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "adobe.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "arc.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "canva.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "capcut.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "character.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "chatgpt.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "claude.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "cohere.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "deepai.org"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "deepl.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "deepseek.me"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "deepseek.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "diaai.org"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "elevenlabs.io"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "gemini.google.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "x.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "markcopy.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "meta.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "murf.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "myninja.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "n8n.io"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "otter.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "perplexity.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "poe.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "presentations.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "prisma.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "quillbot.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "qwen.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "remove.bg"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "runwayml.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "suno.ai"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "synthesia.io"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "textcortex.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "writer.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "you.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "zapier.com"
                 }
             ],
             "policies": [
