@@ -28,11 +28,13 @@ if l_0_3 == nil then
 end
 l_0_3 = (string.lower)(l_0_3)
 local l_0_4 = {}
-l_0_4.owner = l_0_3:match("\"owner\"%s*:%s*\"(.-)\"")
-l_0_4.slug = l_0_3:match("\"slug\"%s*:%s*\"(.-)\"")
-l_0_4.displayname = l_0_3:match("\"displayname\"%s*:%s*\"(.-)\"")
-if next(l_0_4) then
-  (mp.SetDetectionString)(safeJsonSerialize(l_0_4))
+if not l_0_3:match("\"owner\"%s*:%s*\"(.-)\"") then
+  l_0_4.owner = l_0_3:match("\"ownerid\"%s*:%s*\"(.-)\"")
+  l_0_4.slug = l_0_3:match("\"slug\"%s*:%s*\"(.-)\"")
+  l_0_4.displayname = l_0_3:match("\"displayname\"%s*:%s*\"(.-)\"")
+  if next(l_0_4) then
+    (mp.SetDetectionString)(safeJsonSerialize(l_0_4))
+  end
+  return mp.INFECTED
 end
-return mp.INFECTED
 

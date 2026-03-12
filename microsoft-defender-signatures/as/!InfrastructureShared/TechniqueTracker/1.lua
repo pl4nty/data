@@ -1986,18 +1986,14 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
   if l_74_3 == nil or type(l_74_3) ~= "table" then
     l_74_3 = {}
   end
-  local l_74_4 = (string.gmatch)(l_74_0, "(.:\\.-%.[a-z]+)")
+  local l_74_4 = (string.gmatch)(l_74_0, "(%%.-%.[a-z]+)")
   for l_74_8 in l_74_4 do
-    (table.insert)(l_74_3, l_74_8)
-  end
-  local l_74_9 = (string.gmatch)(l_74_0, "(%%.-%.[a-z]+)")
-  for l_74_13 in l_74_9 do
-    local l_74_14, l_74_15 = pcall(mp.ContextualExpandEnvironmentVariables, l_74_13)
-    if not l_74_14 then
-      l_74_15 = (MpCommon.ExpandEnvironmentVariables)(l_74_13)
+    local l_74_9, l_74_10 = pcall(mp.ContextualExpandEnvironmentVariables, l_74_8)
+    if not l_74_9 then
+      l_74_10 = (MpCommon.ExpandEnvironmentVariables)(l_74_8)
     end
-    if l_74_15 ~= nil then
-      (table.insert)(l_74_3, l_74_15)
+    if l_74_10 ~= nil then
+      (table.insert)(l_74_3, l_74_10)
     end
   end
   if (string.find)(l_74_0, "cmd.exe", 1, true) and (string.find)(l_74_0, " /d ", 1, true) then
@@ -2013,55 +2009,99 @@ get_filepaths_from_string = function(l_74_0, l_74_1, l_74_2)
       l_74_1 = l_74_1:gsub("[\"\']", "")
     end
   end
-  local l_74_16 = false
-  local l_74_17 = false
+  local l_74_11 = false
+  local l_74_12 = false
   if l_74_1 ~= nil and #l_74_1 > 3 then
-    l_74_16 = true
+    l_74_11 = true
     if (string.find)(l_74_1, "%", 1, true) then
       l_74_1 = (MpCommon.ExpandEnvironmentVariables)(l_74_1)
     end
-    l_74_17 = (string.sub)(l_74_1, -1) == "\\"
+    l_74_12 = (string.sub)(l_74_1, -1) == "\\"
   end
   if (string.find)(l_74_0, "node.exe .", 1, true) or (string.find)(l_74_0, "node .", 1, true) or (string.find)(l_74_0, "node", 1, true) and ((string.find)(l_74_0, " -argumentlist \'.\'", 1, true) or (string.find)(l_74_0, " -argumentlist \".\"", 1, true)) then
     l_74_0 = l_74_0 .. " index.js "
   end
-  local l_74_18 = (string.gmatch)(l_74_0, "[\'\"%s,]?([^\"\'%s,]-%.%a+)[%\"\'%s,]?")
+  if (string.find)(l_74_0, "node", 1, true) then
+    local l_74_13 = function(l_75_0)
+    -- function num : 0_73_0
+    do
+      if not l_75_0:match("\"[^\"]*\\node%.exe\"%s+\"([^\"]+)\"") then
+        local l_75_1 = l_75_0:match("\"[^\"]*\\node%.exe\"%s+\'([^\']+)\'")
+      end
+      -- DECOMPILER ERROR at PC8: Confused about usage of register: R1 in 'UnsetPending'
+
+      -- DECOMPILER ERROR at PC10: Confused about usage of register: R1 in 'UnsetPending'
+
+      if l_75_1 then
+        return l_75_1
+      end
+      -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
+
+      if l_75_0:match("%snode%.exe%s+\"([^\"]+)\"") or l_75_0:match("%snode%.exe%s+\'([^\']+)\'") then
+        return l_75_0:match("%snode%.exe%s+\'([^\']+)\'")
+      end
+      -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
+
+      if l_75_0:match("%snode%s+\"([^\"]+)\"") or l_75_0:match("%snode%s+\'([^\']+)\'") then
+        return l_75_0:match("%snode%s+\'([^\']+)\'")
+      end
+      if not l_75_0:match("\"[^\"]*\\node%.exe\"%s+([^%s]+)") and not l_75_0:match("%snode%.exe%s+([^%s]+)") then
+        do
+          do return l_75_0:match("%snode%s+([^%s]+)") end
+          -- DECOMPILER ERROR at PC50: freeLocal<0 in 'ReleaseLocals'
+
+        end
+      end
+    end
+  end
+
+    local l_74_14 = l_74_13(l_74_0)
+    if l_74_14 ~= nil then
+      l_74_14 = l_74_14 .. "\\index.js"
+      l_74_0 = l_74_0 .. " \"" .. l_74_14 .. "\""
+    end
+  end
+  local l_74_15 = (string.gmatch)(l_74_0, "(.:\\.-%.[a-z]+)")
+  for l_74_19 in l_74_15 do
+    (table.insert)(l_74_3, l_74_19)
+  end
+  local l_74_20 = (string.gmatch)(l_74_0, "[\'\"%s,]?([^\"\'%s,]-%.%a+)[%\"\'%s,]?")
   do
-    local l_74_19 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
-    for l_74_23 in l_74_18 do
-      if (string.find)(l_74_23, "\\", 1, true) == nil then
+    local l_74_21 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
+    for l_74_25 in l_74_20 do
+      if (string.find)(l_74_25, "\\", 1, true) == nil then
         if l_74_2 ~= true then
-          local l_74_24 = l_74_19 .. "\\system32\\" .. l_74_23
-          ;
-          (table.insert)(l_74_3, l_74_24)
-          local l_74_25 = l_74_19 .. "\\" .. l_74_23
-          ;
-          (table.insert)(l_74_3, l_74_25)
-          local l_74_26 = l_74_19 .. "\\system32\\wbem\\" .. l_74_23
+          local l_74_26 = l_74_21 .. "\\system32\\" .. l_74_25
           ;
           (table.insert)(l_74_3, l_74_26)
-          local l_74_27 = l_74_19 .. "\\system32\\windowspowershell\\v1.0\\" .. l_74_23
+          local l_74_27 = l_74_21 .. "\\" .. l_74_25
           ;
           (table.insert)(l_74_3, l_74_27)
-          local l_74_28 = l_74_19 .. "\\syswow64\\" .. l_74_23
+          local l_74_28 = l_74_21 .. "\\system32\\wbem\\" .. l_74_25
           ;
           (table.insert)(l_74_3, l_74_28)
+          local l_74_29 = l_74_21 .. "\\system32\\windowspowershell\\v1.0\\" .. l_74_25
+          ;
+          (table.insert)(l_74_3, l_74_29)
+          local l_74_30 = l_74_21 .. "\\syswow64\\" .. l_74_25
+          ;
+          (table.insert)(l_74_3, l_74_30)
         end
-        if l_74_16 == true then
-          if l_74_17 == true then
-            local l_74_29 = l_74_1 .. l_74_23
+        if l_74_11 == true then
+          if l_74_12 == true then
+            local l_74_31 = l_74_1 .. l_74_25
             ;
-            (table.insert)(l_74_3, l_74_29)
+            (table.insert)(l_74_3, l_74_31)
           else
-            local l_74_30 = l_74_1 .. "\\" .. l_74_23
+            local l_74_32 = l_74_1 .. "\\" .. l_74_25
             ;
-            (table.insert)(l_74_3, l_74_30)
+            (table.insert)(l_74_3, l_74_32)
           end
         end
       end
     end
     do return l_74_3 end
-    -- DECOMPILER ERROR: 7 unprocessed JMP targets
+    -- DECOMPILER ERROR: 9 unprocessed JMP targets
   end
 end
 
