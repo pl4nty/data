@@ -8,7 +8,7 @@
 RootModule = 'WhiteboardAdmin.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.14.0'
+ModuleVersion = '1.14.1'
 
 # ID used to uniquely identify this module
 GUID = 'CC24F7D4-4CF7-46D3-BD87-30A3D44ECF96'
@@ -58,6 +58,8 @@ RequiredAssemblies = @(
 # List of all files packaged with this module
 FileList = @(
     'WhiteboardAdmin.psm1',
+    'Export-WhiteboardHtml.psm1',
+    'Invoke-WhiteboardHtmlRetry.psm1',
     'packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.dll',
     'packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.xml'
 )

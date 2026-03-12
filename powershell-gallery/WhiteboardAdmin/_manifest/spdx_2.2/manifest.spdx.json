@@ -1,35 +1,16 @@
 {
   "files": [
     {
-      "fileName": "./WhiteboardAdmin.psm1",
-      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psm1-866B685910DBCFA7AD690BE7FC51C18D4752C239",
+      "fileName": "./Export-WhiteboardHtml.psm1",
+      "SPDXID": "SPDXRef-File--Export-WhiteboardHtml.psm1-62D0FF688C44FD24F470D8CE76D00DF649EF48B4",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "b0f00a8c0005e5ebe5ed98b88fb6354c36ae26092d0872587b2584822a558eda"
+          "checksumValue": "a5ecffb4d97ac0e9413a6664490fd6c85ddc971794e9b2cdb057e8eca55d6fed"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "866b685910dbcfa7ad690be7fc51c18d4752c239"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.xml",
-      "SPDXID": "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "e00360a35096b676d48a0c8a7fe80645ac0d8c8ae876c8e02aab0607dbe54d9f"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "e7b3bec45f62de9962024e8b3430b2728e154056"
+          "checksumValue": "62d0ff688c44fd24f470d8ce76d00df649ef48b4"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -58,16 +39,73 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./WhiteboardAdmin.psd1",
-      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psd1-19CA6ED69AFCEBA4E28625A548E7373A462C0CC1",
+      "fileName": "./Invoke-WhiteboardHtmlRetry.psm1",
+      "SPDXID": "SPDXRef-File--Invoke-WhiteboardHtmlRetry.psm1-D28D030A8BED5BC4BC48F58429A4EBED8B3E189C",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "f6c975f42a5dba656ec95a12e3b73f75ad6f49d1ed4712616f055cdfadac52a6"
+          "checksumValue": "2dc6fb20a95879d19820cfb7a18f36431985b511cf19ae6939c2fc3962d58e41"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "19ca6ed69afceba4e28625a548e7373a462c0cc1"
+          "checksumValue": "d28d030a8bed5bc4bc48f58429a4ebed8b3e189c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./WhiteboardAdmin.psm1",
+      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psm1-5206BCE3A84B6CCC52B4F01C4E6D1912B91025DC",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f0ea81456342b818377321b60722e2c28a8b58457aa3de033102c067b83dcab"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5206bce3a84b6ccc52b4f01c4e6d1912b91025dc"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./WhiteboardAdmin.psd1",
+      "SPDXID": "SPDXRef-File--WhiteboardAdmin.psd1-3FFF6A051501678A712B387CC92B8BC5A25FABFF",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa187eb061c22b2056e4aecb4e59c28dd40684f685646fe7759e4f43ba1e8ce8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3fff6a051501678a712b387cc92b8bc5a25fabff"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./packages/Microsoft.Identity.Client.4.44.0/lib/net45/Microsoft.Identity.Client.xml",
+      "SPDXID": "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e00360a35096b676d48a0c8a7fe80645ac0d8c8ae876c8e02aab0607dbe54d9f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e7b3bec45f62de9962024e8b3430b2728e154056"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -78,24 +116,6 @@
     }
   ],
   "packages": [
-    {
-      "name": "Microsoft.Identity.Client",
-      "SPDXID": "SPDXRef-Package-A2326A08518E45A2390BA5BBD3BC5FB145479CDBE39668CA81F7957A6ED25DD0",
-      "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
-      "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "NOASSERTION",
-      "copyrightText": "NOASSERTION",
-      "versionInfo": "4.44.0",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator": "pkg:nuget/Microsoft.Identity.Client@4.44.0"
-        }
-      ],
-      "supplier": "Organization: Microsoft"
-    },
     {
       "name": "Azure Pipelines Hosted Image win22",
       "SPDXID": "SPDXRef-Package-0F4DD3E37627E4019C9F050092A9C34540F56980950493D4EF40BD4FC24B4AF7",
@@ -115,11 +135,29 @@
       "supplier": "Organization: Microsoft/GitHub"
     },
     {
+      "name": "Microsoft.Identity.Client",
+      "SPDXID": "SPDXRef-Package-A2326A08518E45A2390BA5BBD3BC5FB145479CDBE39668CA81F7957A6ED25DD0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "4.44.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Microsoft.Identity.Client@4.44.0"
+        }
+      ],
+      "supplier": "Organization: Microsoft"
+    },
+    {
       "name": "WhiteboardAdmin CI",
       "SPDXID": "SPDXRef-RootPackage",
       "downloadLocation": "NOASSERTION",
       "packageVerificationCode": {
-        "packageVerificationCodeValue": "f9ebb4b0bf3dd96ac81cc717757840994f09232c"
+        "packageVerificationCodeValue": "0c4394ce9726a5ce8cb0839ede4066df859a5c49"
       },
       "filesAnalyzed": true,
       "licenseConcluded": "NOASSERTION",
@@ -128,29 +166,31 @@
       ],
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "versionInfo": "723055",
+      "versionInfo": "723212",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:swid/Microsoft/sbom.microsoft/WhiteboardAdmin%20CI@723055?tag_id=dee014a1-bab4-45c4-b02f-ff0b157813da"
+          "referenceLocator": "pkg:swid/Microsoft/sbom.microsoft/WhiteboardAdmin%20CI@723212?tag_id=a132756b-0536-4b2a-b3e2-e789dc1e2bc4"
         }
       ],
       "supplier": "Organization: Microsoft",
       "hasFiles": [
+        "SPDXRef-File--WhiteboardAdmin.psd1-3FFF6A051501678A712B387CC92B8BC5A25FABFF",
+        "SPDXRef-File--WhiteboardAdmin.psm1-5206BCE3A84B6CCC52B4F01C4E6D1912B91025DC",
         "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.dll-BBFC0645C3428475C97FB583BB531F5B170CAB66",
-        "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056",
-        "SPDXRef-File--WhiteboardAdmin.psm1-866B685910DBCFA7AD690BE7FC51C18D4752C239",
-        "SPDXRef-File--WhiteboardAdmin.psd1-19CA6ED69AFCEBA4E28625A548E7373A462C0CC1"
+        "SPDXRef-File--Export-WhiteboardHtml.psm1-62D0FF688C44FD24F470D8CE76D00DF649EF48B4",
+        "SPDXRef-File--Invoke-WhiteboardHtmlRetry.psm1-D28D030A8BED5BC4BC48F58429A4EBED8B3E189C",
+        "SPDXRef-File--packages-Microsoft.Identity.Client.4.44.0-lib-net45-Microsoft.Identity.Client.xml-E7B3BEC45F62DE9962024E8B3430B2728E154056"
       ]
     }
   ],
   "externalDocumentRefs": [],
   "relationships": [
     {
-      "relationshipType": "DEPENDS_ON",
-      "relatedSpdxElement": "SPDXRef-Package-0F4DD3E37627E4019C9F050092A9C34540F56980950493D4EF40BD4FC24B4AF7",
-      "spdxElementId": "SPDXRef-RootPackage"
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
     },
     {
       "relationshipType": "DEPENDS_ON",
@@ -158,18 +198,18 @@
       "spdxElementId": "SPDXRef-RootPackage"
     },
     {
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-RootPackage",
-      "spdxElementId": "SPDXRef-DOCUMENT"
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-0F4DD3E37627E4019C9F050092A9C34540F56980950493D4EF40BD4FC24B4AF7",
+      "spdxElementId": "SPDXRef-RootPackage"
     }
   ],
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "WhiteboardAdmin CI 723055",
-  "documentNamespace": "https://sbom.microsoft/1:K7IFStlWFUCE6zVug8yWyg:zUZDBP0ynUe6UuKcYdz1Tw/408:723055/z3AdstqsoUCR3EQZS6CO8Q",
+  "name": "WhiteboardAdmin CI 723212",
+  "documentNamespace": "https://sbom.microsoft/1:K7IFStlWFUCE6zVug8yWyg:zUZDBP0ynUe6UuKcYdz1Tw/408:723212/BYfzkMAfQ02x6K7wK6jDcw",
   "creationInfo": {
-    "created": "2026-03-11T09:48:31Z",
+    "created": "2026-03-12T09:18:23Z",
     "creators": [
       "Organization: Microsoft",
       "Tool: Microsoft.SBOMTool-4.1.8"

@@ -1468,8 +1468,8 @@ function Get-WhiteboardResourceId(
     }
 }
 
-. "$PSScriptRoot\..\scripts\Export-WhiteboardHtml.ps1"
-. "$PSScriptRoot\..\scripts\Invoke-WhiteboardHtmlRetry.ps1"
+Import-Module "$PSScriptRoot\Export-WhiteboardHtml.psm1" -Force
+Import-Module "$PSScriptRoot\Invoke-WhiteboardHtmlRetry.psm1" -Force
 
 function Get-AadAuthority(
     [Parameter(Mandatory=$false)]
