@@ -1,5 +1,207 @@
 [
     {
+        "created": "2026-03-11T23:30:17",
+        "description": "Now you can create workflows quickly and easily using slash commands directly from the Teams compose box.",
+        "id": 558544,
+        "locale": null,
+        "modified": "2026-03-11T23:30:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Create workflows with slash commands"
+    },
+    {
+        "created": "2026-03-11T23:30:17",
+        "description": "The featured conversation feature in public Viva Engage communities will include the option to feature a conversation to all network members or only to community members.",
+        "id": 558438,
+        "locale": null,
+        "modified": "2026-03-11T23:30:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Feature conversations to all network members"
+    },
+    {
+        "created": "2026-03-11T23:30:17",
+        "description": "A new toggle is added in the profile settings to give users the ability to create or remove the profile desktop shortcut. Available only for Windows devices.",
+        "id": 558311,
+        "locale": null,
+        "modified": "2026-03-11T23:30:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Add setting to create or remove profile desktop shortcut for Windows"
+    },
+    {
+        "created": "2026-03-11T23:30:17",
+        "description": "SMB Admins can use Microsoft 365 Admin Agent in Microsoft Teams to complete common admin tasks and get guidance on critical setup actions.  Admin Agent can add users and assign licenses on behalf of the admin, as well as provide guidance on key SMB related topics such as organisation setup, security settings, and password resets\u2014without leaving the Teams interface.",
+        "id": 558255,
+        "locale": null,
+        "modified": "2026-03-11T23:30:17",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Run SMB admin tasks faster with Microsoft 365 Admin Agent in Microsoft Teams"
+    },
+    {
         "created": "2026-03-10T23:00:58",
         "description": "You can choose to select Anthropic models, in addition to OpenAI models, when editing a Word document using Copilot.",
         "id": 558440,
@@ -858,7 +1060,7 @@
         "description": "Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.\n",
         "id": 558254,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -867,6 +1069,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -891,6 +1102,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -4417,7 +4637,7 @@
         "description": "When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group.  You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.",
         "id": 557165,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -4429,6 +4649,12 @@
             },
             {
                 "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Teams and Surface Devices"
@@ -4447,6 +4673,12 @@
                 },
                 {
                     "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -10788,12 +11020,12 @@
         "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation.",
         "id": 552592,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14145,12 +14377,12 @@
         "description": "Excel Agent helps you turn data into clear charts, summaries, and insights using built\u2011in formulas and logic. It streamlines data preparation, formulas, and visualization so you can stay focused on the story behind the numbers. Use multi\u2011turn chat to refine your output or open it in Excel for full editing and collaboration. Ideal for financial forecasts, project plans, and decision\u2011making tools. Available to Microsoft 365 users with or without a Microsoft 365 Copilot license.",
         "id": 543422,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14218,12 +14450,12 @@
         "description": "PowerPoint Agent helps you build polished presentations with strong storytelling and visual structure. It streamlines research, formatting, and layout so you can stay focused on your message. Use multi\u2011turn chat to refine content or open the deck in PowerPoint for full editing and collaboration. Ideal for executive presentations, strategic updates, and market overviews. Available to Microsoft 365 users with or without a Microsoft 365 Copilot license.",
         "id": 543421,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15011,9 +15243,9 @@
         "description": "Password autofill suggestions in Edge are currently based on top-level domain matching, which means the same credentials can be suggested on sites like account.microsoft.com and office.microsoft.com. With this feature, Edge groups related domains together across various desktop and mobile properties called affiliations. When a customer visits a URL, the Edge client will query the affiliations backend to obtain \u201caffiliated groups\u201d for that URL. The process involves sending a hash of the visited URLs to the service, which then returns a list of affiliated URLs and ensures that the relevant credentials will be displayed in the autofill suggestions across affiliated domains. Admins can control access to this feature using the PasswordManagerEnabled policy.",
         "id": 537277,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -21983,9 +22215,9 @@
         "description": "Project Manager agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
         "id": 511820,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "March CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23758,10 +23990,10 @@
         "description": "Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:\n1. Unscanned Files Summary\nDisplays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.\n2. Classification History Insights\nShows trends and details of classification changes over time, helping admins to discover the stale data in their organization",
         "id": 526796,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -36681,12 +36913,12 @@
         "description": "Delegates with existing calendar access of other users, can now search for meetings using Copilot Chat, helping to save time and streamline processes.",
         "id": 413718,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36760,12 +36992,12 @@
         "description": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers.\n",
         "id": 501451,
         "locale": null,
-        "modified": "2025-09-18T16:15:27",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41752,12 +41984,12 @@
         "description": "With the new org chart users will not only be able to contextaulize a person, they will also be able to scroll through visited profiles, see a manager's reports counts, and more.",
         "id": 500696,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45814,15 +46046,15 @@
     },
     {
         "created": "2025-07-31T23:15:15",
-        "description": "Meeting organizers and presenters can share meeting recap notes and follow-up tasks directly from Teams to SharePoint as a news post, facilitating the seamless sharing of post meeting follow-up details. ",
+        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Meeting organizers and presenters can share meeting recap notes and follow-up tasks directly from Teams to SharePoint as a news post, facilitating the seamless sharing of post meeting follow-up details. ",
         "id": 498494,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49568,12 +49800,12 @@
         "description": "This feature provides an AI generated audio overview of top 10 news items in the Viva Connections news reader experience. It plays the 10 audio clips sequentially to help users catch up on top news in a hands-free manner. This experience will be available in the Viva Connections App in Teams mobile on iOS and android.",
         "id": 498233,
         "locale": null,
-        "modified": "2025-11-05T00:00:26",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -76521,9 +76753,9 @@
         "description": "Organizations can build their own collections of prompts that are tailored to their business needs and workflows and distribute these to all users within the tenant.",
         "id": 486695,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -86503,9 +86735,9 @@
         "description": "Loop workspaces and the full Loop app experience are available to Microsoft 365 GCC customers at loop.cloud.microsoft.",
         "id": 481154,
         "locale": null,
-        "modified": "2025-10-03T00:30:40",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103774,9 +104006,9 @@
         "description": "When users delete a Loop workspace, owners can restore it from a recycle bin in Loop.",
         "id": 421615,
         "locale": null,
-        "modified": "2025-08-13T23:15:04",
+        "modified": "2026-03-11T23:30:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

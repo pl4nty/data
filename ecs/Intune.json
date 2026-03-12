@@ -382,6 +382,7 @@
     "SVC_DiagnosticService": {
         "FlightingV2": {
             "EnableAppInstallErrorReportingV2": true,
+            "EnableEnrollmentErrorReportingV2": true,
             "EnableRawKustoQuerySupport": true
         }
     },
@@ -559,7 +560,9 @@
     "UX_MultiAdminApproval": {
         "FlightingV2": {
             "EnableMAA": true,
+            "EnableMAA_AccessPolicy_CompliancePolicyUX": true,
             "EnableMAA_CompliancePolicyUX": true,
+            "EnableMAA_ComplianceSettings": true,
             "EnableMAA_ConfigurationPolicy": true,
             "EnableMAA_DcV2SettingsCatalog": true,
             "EnableMAA_DeviceCleanupRules": true

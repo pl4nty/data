@@ -2,7 +2,6 @@
     "activeDirectoryDataLake": "https://datalake.azure.net/",
     "appInsightsResourceId": "https://api.applicationinsights.io",
     "appInsightsTelemetryChannelResourceId": "https://dc.applicationinsights.azure.com/v2/track",
-    "appServiceResourceId": "https://appservice.azure.com",
     "attestationResourceId": "https://attest.azure.net",
     "authentication": {
         "audiences": [
