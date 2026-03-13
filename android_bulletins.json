@@ -102,17 +102,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "CVE": "CVE-2025-48605",
-        "References": "A-395640609",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "14, 15, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
-        "Published": "March 2, 2026",
-        "Patch level": "2026-03-01",
         "CVE": "CVE-2025-48619",
         "References": "A-414387646",
         "Type": "EoP",
