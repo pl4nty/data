@@ -1,11 +1,11 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\694186105dc0\1.luac 
+-- Command line: lua\!InfrastructureShared\55419e5ef8a2\1.luac 
 
 -- params : ...
 -- function num : 0
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-  local l_0_0 = (this_sigattrlog[2]).utf8p1
-  if (string.find)(l_0_0, ".installeranalytics.com", 1, true) then
+if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
+  local l_0_0 = (this_sigattrlog[1]).utf8p1
+  if IsUriKnownHostname(l_0_0) or (string.find)(l_0_0, ".installeranalytics.com", 1, true) then
     return mp.CLEAN
   end
   local l_0_1 = {}

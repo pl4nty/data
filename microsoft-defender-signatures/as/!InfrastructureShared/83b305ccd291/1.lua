@@ -119,7 +119,7 @@ do
           end
           l_0_43 = MpCommon
           l_0_43 = l_0_43.IsSampled
-          l_0_43 = l_0_43(50000, true, true, true)
+          l_0_43 = l_0_43(65000, true, true, true)
           if l_0_43 == true then
             l_0_43 = pcall
             local l_0_44 = reportBmInfoUrlRep
