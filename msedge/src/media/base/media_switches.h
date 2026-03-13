@@ -137,6 +137,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kAudioDuckingWin);
 
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAudioFocusDuckFlash);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoPictureInPictureForVideoPlayback);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoPictureInPictureSurveys);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoplayBypassForMicCamera);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoplayDisableSettings);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAVDColorSpaceChanges);
@@ -281,6 +282,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kApplicationAudioCaptureMac);
 #endif  // BUILDFLAG(IS_MAC)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaCapabilitiesQueryGpuFactories);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaCapabilitiesWithParameters);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoplayPoliciesAndroid);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaEngagementBypassAutoplayPolicies);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaEngagementHTTPSOnly);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaFoundationCdm);
@@ -486,6 +488,8 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLogToConsole);
 
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAomVpxUsePresentationThreadType);
 
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseRustJpegParser);
+
 #if BUILDFLAG(IS_WIN)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D12VideoDecoder);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D12VideoEncodeAccelerator);
@@ -524,10 +528,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLinkHelpers);
 
 // Enables showing auto picture-in-picture permission details in page info.
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAutoPictureInPicturePageInfoDetails);
-
-// Enables sending provisioning requests in the body of the POST request rather
-// than encoding it inside the URL.
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kUsePostBodyForUrlProvisionFetcher);
 
 // Causes the AVC parser to output Treats H.264 SEI recovery points with a
 // `recovery_frame_cnt=0` as keyframes.

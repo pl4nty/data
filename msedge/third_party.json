@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15173884,
+    "size": 15184492,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33004052,
-    "file_count": 4020
+    "size": 33006180,
+    "file_count": 4021
   },
   {
     "name": "boringssl",
@@ -136,7 +136,7 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 173977,
+    "size": 173981,
     "file_count": 5
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16910122,
+    "size": 16916039,
     "file_count": 1941
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 57842,
+    "size": 58316,
     "file_count": 43
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 55202,
+    "size": 55374,
     "file_count": 35
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4200727,
+    "size": 4209524,
     "file_count": 596
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3477161,
+    "size": 3477237,
     "file_count": 1188
   },
   {
@@ -761,13 +761,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2609125,
+    "size": 2616698,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7257848,
-    "file_count": 188
+    "size": 7318553,
+    "file_count": 190
   },
   {
     "name": "vulkan_memory_allocator",
