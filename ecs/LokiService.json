@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20260309.11.0",
-        "CalendarCompanionMsitVersion": "1.20260304.10.0",
+        "CalendarCompanionMsitVersion": "1.20260307.3.0",
         "CalendarCompanionProdVersion": "1.20260228.11.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1615,118 +1615,7 @@
         "M365CompanionSystemTrayDFVersion": "1.20250930.2.0",
         "M365CompanionSystemTrayDevVersion": "1.latest",
         "M365CompanionSystemTrayMsitVersion": "1.20250930.2.0",
-        "M365CompanionSystemTrayProdVersion": "1.20250930.2.0",
-        "contentSecurityPolicy": {
-            "base-uri": [
-                "'self'"
-            ],
-            "connect-src": [
-                "blob:",
-                "data:",
-                "*.events.data.microsoft.com",
-                "https://clients.config.office.net",
-                "*.loki.delve.office.com",
-                "https://loki.delve.office.com",
-                "*.loki.office365.us",
-                "https://loki.office365.cn",
-                "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud",
-                "https://admin.microsoft.com",
-                "*.cdn.office.net",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "https://petrol.office.microsoft.com",
-                "https://arc.msn.com",
-                "https://fd.api.iris.microsoft.com",
-                "https://arc-emea.msn.com",
-                "https://ris.api.iris.microsoft.com",
-                "https://eudb.ris.api.iris.microsoft.com"
-            ],
-            "default-src": [
-                "'none'"
-            ],
-            "font-src": [
-                "'self'",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "*.cdn.office.net",
-                "*.loki.delve.office.com",
-                "https://loki.delve.office.com",
-                "https://gcc.loki.delve.office.com",
-                "*.loki.office365.us",
-                "https://loki.office365.cn",
-                "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud"
-            ],
-            "form-action": [
-                "'none'"
-            ],
-            "frame-src": [
-                "'none'"
-            ],
-            "img-src": [
-                "'self'",
-                "blob:",
-                "data:",
-                "*.cdn.office.net",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "https://res-dev.cdn.officeppe.net",
-                "*.loki.delve.office.com",
-                "*.loki.office365.us",
-                "https://loki.office365.cn",
-                "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud",
-                "https://media.licdn.com"
-            ],
-            "media-src": [
-                "'none'"
-            ],
-            "object-src": [
-                "'none'"
-            ],
-            "script-src": [
-                "'self'",
-                "'report-sample'",
-                "*.cdn.office.net",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "*.loki.delve.office.com",
-                "https://loki.delve.office.com",
-                "*.loki.office365.us",
-                "https://loki.office365.cn",
-                "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud",
-                "https://res-dev.cdn.officeppe.net"
-            ],
-            "style-src": [
-                "'unsafe-inline'",
-                "'self'",
-                "'report-sample'",
-                "*.cdn.office.net",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud",
-                "*.loki.delve.office.com",
-                "https://loki.delve.office.com",
-                "*.loki.office365.us",
-                "https://loki.office365.cn",
-                "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud"
-            ],
-            "upgrade-insecure-requests": [],
-            "worker-src": [
-                "'self'",
-                "*.cdn.office.net",
-                "https://res-1.cdn.partner.office365.cn",
-                "https://outlook-1-cdn.azureedge.eaglex.ic.gov",
-                "https://outlook-1-cdn.azureedge.microsoft.scloud"
-            ]
-        }
+        "M365CompanionSystemTrayProdVersion": "1.20250930.2.0"
     },
     "MicrosoftSearch": {
         "EnablePeopleCentricSearchController": false,
@@ -1844,8 +1733,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260310.10.0",
-        "PeopleInTaskbarMsitVersion": "1.20260301.3.0",
+        "PeopleInTaskbarDFVersion": "1.20260311.10.0",
+        "PeopleInTaskbarMsitVersion": "1.20260307.3.0",
         "PeopleInTaskbarProdVersion": "1.20260128.9.0",
         "PeopleInTaskbarVersion": "1.20260128.9.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,

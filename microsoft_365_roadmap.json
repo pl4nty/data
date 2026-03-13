@@ -1,10 +1,541 @@
 [
     {
+        "created": "2026-03-12T23:00:54",
+        "description": "Speed up analysis of exfiltrated content by launching Data Security Investigations (DSI) from Unified Audit Log activity. In DSI, build your audit log query by specifying criteria such as time range, activities, users, and keywords. DSI then automatically pulls the associated files into the investigation (for example, UserA downloaded a file on 3/1/2026).",
+        "id": 558548,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 analyze files tied to audit log activities"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "Speed up analysis of exfiltrated content by launching Data Security Investigations (DSI) from endpoint Data Loss Prevention (DLP) alerts. In DSI, define your endpoint DLP query (for example, time range, users, and endpoints). DSI then automatically gathers the related files that triggered the alerts for review (for example, UserA downloaded a file on 3/1/2026).",
+        "id": 558547,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 analyze files tied to endpoint DLP alerts"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "We are simplifying Data Security Investigations (DSI) roles following customer feedback and the continued integration with Data Security Posture Management (DSPM), Insider Risk Management (IRM), and Defender XDR. We added the Data Security Investigation Admin role to the Compliance Administrator role group. We added the Data Security Investigation Contributor role to the: Organization Management role group; Data Security Management role group; Insider Risk management role group.",
+        "id": 558546,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 role-based access simplification"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "Spoken language detection is now fully automatic. Teams will automatically detect each speaker\u2019s spoken language and update it in real time as the conversation evolves. Manual spoken language selection will no longer be available. This applies to both live captions and transcripts when Interpreter is enabled or when multilingual speech recognition is turned on in meeting options, helping deliver more accurate language recognition and a more consistent multilingual meeting experience.",
+        "id": 558543,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Spoken language detection is now automatic"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "Intelligent meeting recap will now include video-based recaps. Video recap creates narrated video highlights from recorded meetings, featuring key takeaways and short clips that showcase important moments.",
+        "id": 558540,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Video recap in Teams"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "This feature allows you to edit new and existing pages with an AI chat pane. Now, with just prompts, you can add webparts, grounding documents, and refine the visuals and text on your page. ",
+        "id": 558441,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Plan and Create Pages with AI "
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "Interpreter now delivers more accurate real-time interpretation, with improved recognition of people\u2019s names and common industry terms. It also supports your organization\u2019s Custom Dictionary from the Microsoft 365 admin center, so tenant-specific terms can be translated more consistently across meetings. Traditional Chinese is also now supported.",
+        "id": 558434,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enhancements to Interpreter quality and support for Traditional Chinese"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "Windows 365 Link will be available for sale in Norway and Philippines.",
+        "id": 558253,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Windows 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Windows 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Windows 365: Windows 365 Link  - Market Expansion"
+    },
+    {
+        "created": "2026-03-12T23:00:54",
+        "description": "File Quarantine action in Microsoft Purview DLP for SharePoint and OneDrive, enables stronger, immediate protection for sensitive data. When a DLP policy is triggered, the File Quarantine action automatically moves the file to a restricted, admin\u2011controlled & defined quarantine location\u2014instantly removing access for all users while preserving the file for review and investigation. This capability helps organizations contain data\u2011exposure risks, prevents further sharing or misuse, and delivers a powerful new layer of enforcement.",
+        "id": 557190,
+        "locale": null,
+        "modified": "2026-03-12T23:00:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 File Quarantine Action in DLP for SharePoint/OneDrive"
+    },
+    {
         "created": "2026-03-11T23:30:17",
         "description": "Now you can create workflows quickly and easily using slash commands directly from the Teams compose box.",
         "id": 558544,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -25,6 +556,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -49,6 +583,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -459,10 +996,10 @@
     },
     {
         "created": "2026-03-10T23:00:58",
-        "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and New Outlook for Windows #newoutlookforwindows",
+        "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and new Outlook for Windows, Outlook for Mac and Outlook Mobile. Summaries of email attachments in Copilot chat will also be available in new Outlook for Windows, Outlook for Mac and Outlook Mobile.  #newoutlookforwindows",
         "id": 558110,
         "locale": null,
-        "modified": "2026-03-10T23:00:58",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -15475,9 +16012,9 @@
         "description": "Agent Mode lets you build and edit workbooks side by side with Copilot. When you're updating budgets, creating financial models, or analyzing data, Agent Mode uses Excel's most powerful tools like tables, charts, PivotTables, and formulas to help you get the job done.",
         "id": 542181,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26127,12 +26664,12 @@
         "description": "1. Allow IT admins to customize filters at a data source level.\n2. IT admins can add/delete a filter at data source level.\n",
         "id": 502534,
         "locale": null,
-        "modified": "2025-10-31T22:00:11",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26781,9 +27318,9 @@
         "description": "The sharing panel in today\u2019s meetings is the default place for content discoverability and sharing.  New sharing panel UI is crafted with intent of modernising and simplifying default tasks such as window sharing, but also for easier discovery of sharing options and more discoverable file sharing.",
         "id": 502520,
         "locale": null,
-        "modified": "2026-02-06T23:15:31",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27862,12 +28399,12 @@
         "description": "Customers can now connect Microsoft 365 Copilot to Coda with Copilot connectors to query collaborative documents and wikis.\n",
         "id": 515165,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28058,12 +28595,12 @@
         "description": "Customers can now connect Microsoft 365 Copilot to Guru with Copilot connectors to retrieve internal knowledge and team insights.",
         "id": 513281,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28272,12 +28809,12 @@
         "description": "Developers can now publish Azure AI Foundry Agents directly to the Microsoft 365 Copilot Agent Store with a simplified, no-code experience.",
         "id": 501112,
         "locale": null,
-        "modified": "2025-10-24T22:00:49",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28614,12 +29151,12 @@
         "description": "Customers can connect M365 Copilot with Monday.com to track work and team progress with Copilot Connector.",
         "id": 515177,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28712,12 +29249,12 @@
         "description": "Customers can connect M365 Copilot with Asana to manage projects and tasks with Copilot Connector.",
         "id": 515175,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28963,12 +29500,12 @@
         "description": "Customers can connect M365 Copilot with GitLab Issues (Cloud and Server) to track engineering tasks and bugs with Copilot Connector.",
         "id": 515158,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30169,15 +30706,15 @@
     },
     {
         "created": "2025-10-22T23:15:17",
-        "description": "Gracefully handle Foundry agents that will either be blocked or will work with sub-optimal experiences",
+        "description": "Gracefully handle Foundry agents that will either be blocked or will work with sub-optimal experiences. This item is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.",
         "id": 501113,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-03-12T23:30:40",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31683,15 +32220,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Support of Audit logs for custom engine agents.",
+        "description": "Support of Audit logs for custom engine agents. This item is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.",
         "id": 503775,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-03-12T23:30:40",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31781,15 +32318,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Users can share custom engine agents with others to boost collaboration and reuse",
+        "description": "Users can share custom engine agents with others to boost collaboration and reuse. This item is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.",
         "id": 503766,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-03-12T23:30:40",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32358,12 +32895,12 @@
         "description": "Customers can connect M365 Copilot with Amazon S3 to access structured document repositories with Copilot Connector.",
         "id": 513285,
         "locale": null,
-        "modified": "2025-10-13T23:00:30",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32554,12 +33091,12 @@
         "description": "Customers can connect M365 Copilot with Zendesk Help Center to retrieve support articles and FAQs with Copilot Connector",
         "id": 513279,
         "locale": null,
-        "modified": "2025-10-13T23:00:30",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34436,12 +34973,12 @@
         "description": "Admins now have visibility and insight for voice and facial profile enrollments through a dashboard in the Teams Admin Center (TAC). Voice and face profiles are critical for supporting AI-enhanced meeting experiences for users across the organization. The dashboard provides metrics on enrollments over time.  ",
         "id": 506750,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37111,15 +37648,15 @@
     },
     {
         "created": "2025-09-17T23:00:20",
-        "description": "Quickly grasp the key topics, summaries, and insights from your Copilot Notebooks - without having to dig through every document or detail.",
+        "description": "Quickly grasp the key topics, summaries, and insights from your Copilot Notebooks - without having to dig through every document or detail. This item is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.",
         "id": 503757,
         "locale": null,
-        "modified": "2025-09-17T23:00:20",
+        "modified": "2026-03-12T23:30:40",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38682,12 +39219,12 @@
         "description": "Agent metadata export in Microsoft 365 admin center includes expanded metadata fields, covering Capabilities, Data Sources, Actions, Created In, and Created By. Enables enhanced visibility for auditing, governance, and lifecycle tracking. #copilotcontrolsystem",
         "id": 502878,
         "locale": null,
-        "modified": "2025-09-11T00:00:04",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -40788,12 +41325,12 @@
         "description": "Microsoft Viva is expanding access to M365 Copilot Chat Insights in Microsoft Copilot Dashboard by enabling tenants with 1-49 M365 Copilot licenses- allowing more tenants, including those with fewer licenses, to track adoption trends. Insights will include usage over time, group level adoption, retention, app-level breakdowns, retention, and more. Users can filter by organizational attributes to uncover usage patterns.",
         "id": 501581,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45099,12 +45636,12 @@
         "description": "Enhancement to Copilot studio agents report (Viva Insights) - 1. Inclusion of agents with \"generative\" orchestration 2. Autonomous agent adoption and impact (maker led time and cost saving).",
         "id": 499422,
         "locale": null,
-        "modified": "2025-08-04T23:15:38",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49910,12 +50447,12 @@
         "description": "The Researcher agent now has easier entry points on the Word canvas \u2014making it faster to go from idea to polished research report without breaking your flow.",
         "id": 497913,
         "locale": null,
-        "modified": "2025-07-10T23:00:59",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -88749,12 +89286,12 @@
         "description": "Developers and makers can embed knowledge (pdf, doc/docx, ppt) into their declarative agents built with Teams Toolkit for additional grounding capabilities.",
         "id": 474448,
         "locale": null,
-        "modified": "2025-01-28T00:00:21",
+        "modified": "2026-03-12T23:15:41",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -89317,9 +89854,9 @@
         "description": "This backend change will now address the 'separation of attendee' invites from the events crew. This feature allows the organizers of Townhalls to maintain separate invites for attendees.",
         "id": 476488,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -102785,9 +103322,9 @@
         "description": "Microsoft Teams Rooms on Windows will provide native Pan-Tilt-Zoom (PTZ) controls for connected cameras that support this capability. The feature will initially contain limited support for cameras with mechanical/optical PTZ, with digital PTZ to come in the future.",
         "id": 409534,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-03-12T23:00:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103533,15 +104070,15 @@
     },
     {
         "created": "2024-11-20T00:15:49",
-        "description": "With Copilot, you will be able to catch up on important updates such as a summary of new \"at\" mentions that need your attention, new changes made to files you've been active in, and quick snippets of new files shared with you. Catch up will be available in OneDrive Web for our commercial customers and requires a Microsoft Copilot for Microsoft 365 license. Catch up will initially work for Word, Excel, and PowerPoint files.",
+        "description": "With Copilot, you will be able to catch up on important updates such as a summary of new \"at\" mentions that need your attention, new changes made to files you've been active in, and quick snippets of new files shared with you. Catch up will be available in OneDrive Web for our commercial customers and requires a Microsoft Copilot for Microsoft 365 license. Catch up will initially work for Word, Excel, and PowerPoint files. This item is no longer accurate and will be removed from the roadmap.  We apologize for any inconvenience.",
         "id": 469498,
         "locale": null,
-        "modified": "2024-11-20T00:15:49",
+        "modified": "2026-03-12T23:30:40",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -103550,10 +104087,10 @@
                 "tagName": "Web"
             },
             {
-                "tagName": "OneDrive"
+                "tagName": "Microsoft Copilot (Microsoft 365)"
             },
             {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
+                "tagName": "OneDrive"
             },
             {
                 "tagName": "General Availability"
@@ -103572,10 +104109,10 @@
             ],
             "products": [
                 {
-                    "tagName": "OneDrive"
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
                 },
                 {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                    "tagName": "OneDrive"
                 }
             ],
             "releasePhase": [
