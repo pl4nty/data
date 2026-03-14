@@ -18,7 +18,7 @@ if not l_0_2 then
 end
 l_0_2 = (string.lower)(l_0_2)
 local l_0_3 = l_0_2:match("([^\\]+)$")
-if not (string.find)(l_0_0, (string.lower)(l_0_3)) then
+if not (string.find)(l_0_0, (string.lower)(l_0_3), 1, true) then
   return mp.CLEAN
 end
 local l_0_4 = (MpCommon.PathToWin32Path)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))

@@ -38,18 +38,19 @@ end
 if (string.find)(l_0_1, "\\program files (x86)\\", 1, true) ~= nil then
   return mp.CLEAN
 end
+local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
 if (mp.IsTrustedFile)(false) == true then
   return mp.CLEAN
 end
 if (mp.IsKnownFriendlyFile)(l_0_1, true, false) == true then
   return mp.CLEAN
 end
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-if l_0_2 then
-  (MpCommon.BmTriggerSigPropagate)(l_0_2, "UnsignedDllLoad", l_0_1)
-  ;
-  (mp.set_mpattribute)("MpDisableCaching")
-  return mp.INFECTED
-end
-return mp.CLEAN
+;
+(MpCommon.BmTriggerSigPropagate)(l_0_2, "UnsignedDllLoad", l_0_1)
+;
+(mp.set_mpattribute)("MpDisableCaching")
+return mp.INFECTED
 

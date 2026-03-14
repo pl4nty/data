@@ -16,7 +16,7 @@ if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE or l_0_0 == mp.SCANREASON_UNKNOW
     local l_0_5 = (mp.IOAVGetProcessPath)()
     if l_0_5 then
       local l_0_6 = l_0_5:match("([^\\]+)$")
-      l_0_1 = (string.find)(l_0_2, (string.lower)(l_0_6))
+      l_0_1 = (string.find)(l_0_2, (string.lower)(l_0_6), 1, true)
       l_0_3 = (mp.IOAVGetDownloadUrl)()
     end
   end
@@ -41,9 +41,9 @@ else
       l_0_8.TAG = "INTERFLOW"
       local l_0_9 = SafeGetUrlReputation
       local l_0_10 = {}
-      -- DECOMPILER ERROR at PC95: No list found for R6 , SetList fails
+      -- DECOMPILER ERROR at PC97: No list found for R6 , SetList fails
 
-      -- DECOMPILER ERROR at PC96: Overwrote pending register: R7 in 'AssignReg'
+      -- DECOMPILER ERROR at PC98: Overwrote pending register: R7 in 'AssignReg'
 
       l_0_9 = l_0_9(l_0_10, l_0_3, false, 2000)
       if l_0_9 then

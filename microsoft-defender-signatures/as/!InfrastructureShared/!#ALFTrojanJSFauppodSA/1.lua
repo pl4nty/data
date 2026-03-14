@@ -17,7 +17,7 @@ if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE or l_0_0 == mp.SCANREASON_UNKNOW
     if l_0_5 then
       l_0_5 = (string.lower)(l_0_5)
       local l_0_6 = l_0_5:match("([^\\]+)$")
-      l_0_1 = (string.find)(l_0_2, (string.lower)(l_0_6))
+      l_0_1 = (string.find)(l_0_2, (string.lower)(l_0_6), 1, true)
       l_0_3 = (mp.IOAVGetDownloadUrl)()
     end
   end
