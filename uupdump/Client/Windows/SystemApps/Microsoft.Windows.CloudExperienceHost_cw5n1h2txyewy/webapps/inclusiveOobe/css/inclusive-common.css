@@ -149,6 +149,11 @@ oobe-textinput {
     max-width: 480px;
 }
 
+/* Using zh-CN specific configuration in OOBE local account win-textboxes to override WinJS' language-specific assignments to meet GB18030 PUA Compliance requirement */
+:lang(zh-CN) .oobe-localaccount .win-textbox {
+    font-family: "Microsoft YaHei UI",Ebrima,"Nirmala UI",Gadugi,"Segoe UI Emoji",Symbols,"Yu Gothic UI","Yu Gothic","Meiryo UI","Leelawadee UI","Microsoft JhengHei UI","Malgun Gothic","Segoe UI Historic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Javanese Text","Cambria Math", "Sans Serif Collection", "Segoe UI", "Segoe UI Symbol", "SimSun", "SimSun-ExtB", "SimSun-ExtG" !important;
+}
+
 /* Consider merging into include-desktop.css */
 .center-background {
     background-repeat: no-repeat;

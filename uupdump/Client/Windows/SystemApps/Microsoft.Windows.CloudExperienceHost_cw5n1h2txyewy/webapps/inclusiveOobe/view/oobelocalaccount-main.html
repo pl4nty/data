@@ -12,7 +12,7 @@
     <script src="/core/js/requirePath-config-core.js"></script>
     <script data-main="/webapps/inclusiveOobe/js/oobelocalaccount-page.js" src="/lib/require.js"></script>
 </head>
-<body class="webapp-inner">
+<body class="webapp-inner oobe-localaccount">
     <script type="text/html" id="panel-template">
         <div class="oobe-panel" data-bind="css: { hasError: ($data.errorText && $data.errorText() != '') },
              attr: { 'data-panel-index': KoHelpers.getElementIndex($element.parentElement), 'data-panel-id': id, 'aria-label': $data.errorText && $data.errorText() ? $data.errorText() : null }, panelIndexVisible: $root.currentPanelIndex">

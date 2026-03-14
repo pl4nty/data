@@ -102,6 +102,35 @@
       "visibility": false,
       "measureId": 48471668
     },
+    "OobeMSAValueProp": {
+      "cxid": "OobeMSAValueProp",
+      "requiredFeatureName": "WebView2MSAFlowMigration",
+      "url": "https://sdx.microsoft.com/frx/msa-benefits",
+      "urlint": "https://sdx.microsoft-int.com/frx/msa-benefits",
+      "internetRequired": true,
+      "skipReconnectHandler": true,
+      "defaultID": "OobeMSA",
+      "visibility": false,
+      "ignoreResult": true,
+      "disableErrorPageOnFailure": true,
+      "measureId": 60612548
+    },
+    "OobeMSA": {
+      "cxid": "OobeMSA",
+      "requiredFeatureName": "WebView2MSAFlowMigration",
+      "url": "https://login.live.com/ppsecure/inlineconnect.srf?id=80600",
+      "urlint": "https://login.live-int.com/ppsecure/inlineconnect.srf?id=80600",
+      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForLogin",
+      "internetRequired": true,
+      "successID": "OobeWindowsAccountSyncConsent",
+      "failID": "OobeLocal",
+      "cancelID": "OobeIDPS",
+      "offlineID": "OobeLocal",
+      "disableBackNavigationToNode": true,
+      "abortID": "OobeMSAOfferStatic",
+      "disableErrorPageOnFailure": true,
+      "measureId": 60612531
+    },
     "OobeWindowsAccountSyncConsent": {
       "cxid": "OobeWindowsAccountSyncConsent",
       "url": "https://sdx.microsoft.com/frx/windows-account-sync-consent/oobe",
@@ -245,7 +274,7 @@
       "url": "https://sdx.microsoft.com/frx/snapshot-capture",
       "urlint": "https://sdx.microsoft-int.com/frx/snapshot-capture",
       "preloadCheck": "CloudExperienceHost.SnapshotCapture.ComingSoon",
-      "requiredFeatureName": "SingleEnduserOobeApp",
+      "requiredFeatureName": "OobeHostPostMSAFlowMigration",
       "internetRequired": true,
       "skipReconnectHandler": true,
       "successID": "OobeMSACloudBackupRestoreUX",
@@ -294,11 +323,7 @@
   "OOBE": {
     "irisPlacementId": "88001035",
     "start": "StartSelector",
-    "error": {
-      "value": "Error",
-      "overrideValue": "OobeError",
-      "overrideFeature": "OobeNaviNameFix"
-    },
+    "error": "OobeError",
     "msaTicketContext": "OOBE",
     "notifyOnFirstVisible": true,
     "notifyOnLastFinished": true,
@@ -318,20 +343,12 @@
       "visibility": false,
       "measureId": 48471513
     },
-    "Error": {
-      "cxid": "Error",
-      "frameAnimation": "errorLottie.json",
-      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
-      "visibility": false,
-      "measureId": 48471631
-    },
     "OobeError": {
       "cxid": "OobeError",
       "frameAnimation": "errorLottie.json",
       "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
       "visibility": false,
-      "measureId": 48471631,
-      "requiredFeatureName": "OobeNaviNameFix"
+      "measureId": 48471631
     },
     "OobeExit": {
       "cxid": "OobeExit",
@@ -542,7 +559,6 @@
         "overrideFeature": "SnapshotCaptureA9Oobe"
       },
       "preloadCheck": "CloudExperienceHost.SnapshotCapture",
-      "requiredFeatureName": "SingleEnduserOobeApp",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -558,7 +574,6 @@
     "OobeTelemetryFlush": {
       "cxid": "OobeTelemetryFlush",
       "launcher": "js:OobeTelemetryFlush",
-      "requiredFeatureName": "SingleEnduserOobeApp",
       "successID": "OobeExit",
       "cancelID": "OobeExit",
       "offlineID": "OobeExit",
@@ -651,7 +666,6 @@
     "OobeTelemetryFlush": {
       "cxid": "OobeTelemetryFlush",
       "launcher": "js:OobeTelemetryFlush",
-      "requiredFeatureName": "SingleEnduserOobeApp",
       "successID": "OobeExit",
       "cancelID": "OobeExit",
       "offlineID": "OobeExit",

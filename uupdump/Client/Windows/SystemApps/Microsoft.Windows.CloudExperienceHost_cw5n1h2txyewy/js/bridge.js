@@ -84,6 +84,16 @@ var CloudExperienceHost;
                 });
             }
         }
+        canInvokeFromString(callerUri, method) {
+            try {
+                this._verifyFunctionExists(method);
+                this.checkIfPermissionAllowed(callerUri, method);
+                return true;
+            }
+            catch (e) {
+                return false;
+            }
+        }
         checkIfPermissionAllowed(callerUri, method) {
             var trimmedCallerUri = this._trimUri(callerUri);
             var isAllowed = false;
@@ -359,6 +369,16 @@ var CloudExperienceHost;
                 this._target.addEventListener("MSWebViewScriptNotify", this._scriptNotifyHandler);
                 this._target.addEventListener("MSWebViewPermissionRequested", this._permissionRequestedHandler);
                 this._connectedToTarget = true;
+            }
+        }
+        static isFunctionAvailable(method) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBEDefaultFolderUserName")) {
+                let bridge = CloudExperienceHost.AppManager.getGlobalBridgeInstance();
+                return bridge._contractHandler.canInvokeFromString(bridge._target.src, method);
+            }
+            else {
+                CloudExperienceHost.Telemetry.logEvent("ApiNonexistentOnClient", "isFunctionAvailable");
+                throw "ApiNonexistentOnClient";
             }
         }
     }

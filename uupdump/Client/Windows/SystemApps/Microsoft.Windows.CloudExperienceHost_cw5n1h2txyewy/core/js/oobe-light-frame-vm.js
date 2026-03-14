@@ -207,12 +207,8 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                 backgroundContainer.innerHTML += svgBackdropHTML;
             }
         }
-
+        
         SetBackgroundImageUsingAppDataUri(appDataUri) {
-            if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeSetBackgroundImage")) {
-                return;
-            }
-
             if (!this.isValidAppDataUrl(appDataUri)) {
                 CloudExperienceHost.Telemetry.logEvent("SetBackgroundImageUsingAppDataUri_InvalidAppDataUri");
             }

@@ -2139,7 +2139,6 @@
             "preloadCheck": "CloudExperienceHost.ExpeditedUpdate",
             "url": "https://sdx.microsoft.com/frx/cloud-ndup?earlyOobe=1",
             "urlint": "https://sdx.microsoft-int.com/frx/cloud-ndup?earlyOobe=1",
-            "requiredFeatureName": "NDUPEarlyOobeNode",
             "internetRequired": true,
             "skipReconnectHandler": true,
             "successID": "OobeDeviceNameCommit",
@@ -2166,7 +2165,6 @@
         "EarlyRebootNDUP": {
             "cxid": "EarlyRebootNDUP",
             "launcher": "js:OOBEReboot",
-            "requiredFeatureName": "NDUPEarlyOobeNode",
             "disableBackNavigationToNode": true,
             "visibility": false,
             "successID": "OobeMSAValueProp",
@@ -2815,154 +2813,23 @@
             "visibility": false
         }
     },
-  "FRXNDUPONLY": {
-    "start": "StartSelector",
-    "error": "OobeError",
-    "msaTicketBroker": true,
-    "msaTicketContext": "OOBE",
-    "notifyOnFirstVisible": true,
-    "notifyOnLastFinished": true,
-    "waitForTaskbarReady": true,
-    "showProgressTextAtEndTimeout": 500,
-    "initializeExternalModalRects": true,
-    "useBackstackForBackNavigation": true,
-    "reconnectHandlerCxid": "OobeNetworkLossError",
-    "frameName": "oobe-light-frame",
-    "personality": "CloudExperienceHost.Personality.LiteWhite",
-    "speechCapable": true,
-    "speechDisabled": true,
-    "blockLateWebAppCalls": true,
-    "blockEarlyExit": true,
-    "StartSelector": {
-        "cxid": "StartSelector",
-        "launcher": "js:OOBEStartSelector",
-        "successID": "OobeTelemetryFlush",
-        "visibility": false
+    "FRXMOBILE": {
+        "start": "AAD",
+        "notifyOnLastFinished": true,
+        "AAD": {
+            "cxid": "AAD",
+            "url": "https://login.microsoftonline.com/WebApp/CloudDomainJoin/10",
+            "urlint": "https://login.windows-ppe.net/WebApp/CloudDomainJoin/10",
+            "showErrorPageOnFailure": true,
+            "successID": "NGC"
+        },
+        "NGC": {
+            "cxid": "NGC",
+            "url": "https://login.microsoftonline.com/webapp/windowsngc/1",
+            "urlint": "https://login.windows-ppe.net/webapp/windowsngc/1",
+            "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount"
+        }
     },
-    "OobeTelemetryFlush": {
-        "cxid": "OobeTelemetryFlush",
-        "preloadCheck": "CloudExperienceHost.AccountAndServices",
-        "launcher": "js:OobeTelemetryFlush",
-        "ignoreResult": true,
-        "successID": "OobeNDUP",
-        "failID": "OobeNDUP",
-        "cancelID": "OobeNDUP",
-        "abortID": "OobeNDUP",
-        "visibility": false,
-        "disableBackNavigationToNode": true,
-        "disableErrorPageOnFailure": true
-    },
-    "OobeNDUP": {
-        "cxid": "OobeNDUP",
-        "preloadCheck": "CloudExperienceHost.ExpeditedUpdate",
-        "url": "https://sdx.microsoft.com/frx/cloud-ndup",
-        "urlint": "https://sdx.microsoft-int.com/frx/cloud-ndup",
-        "requiredDisabledFeatureName": "NDUPEarlyOobeNode",
-        "internetRequired": true,
-        "skipReconnectHandler": true,
-        "successID": "OobeCleanupEnduserSession",
-        "failID": "OobeCleanupEnduserSession",
-        "cancelID": "OobeCleanupEnduserSession",
-        "abortID": "OobeCleanupEnduserSession",
-        "offlineID": "OobeCleanupEnduserSession",
-        "disableErrorPageOnFailure": true,
-        "disableBackNavigationToNode": true,
-        "visibility": false,
-        "allowDisplayModeChange": true
-    },
-    "OobeCleanupEnduserSession": {
-        "cxid": "OobeCleanupEnduserSession",
-        "preloadCheck": "CloudExperienceHost.ExpeditedUpdate",
-        "launcher": "js:OobeCleanupEnduserSession",
-        "disableBackNavigationToNode": true,
-        "disableErrorPageOnFailure": true,
-        "visibility": false,
-        "successID": "RebootNDUP",
-        "failID": "RebootNDUP",
-        "cancelID": "RebootNDUP",
-        "abortID": "RebootNDUP"
-    },
-   "RebootNDUP": {
-       "cxid": "RebootNDUP",
-       "launcher": "js:OOBEReboot",
-       "preloadCheck": "CloudExperienceHost.ExpeditedUpdate",
-       "requiredDisabledFeatureName": "NDUPEarlyOobeNode",
-       "canExitCxh": true,
-       "disableBackNavigationToNode": true,
-       "visibility": false,
-       "successID": "OobeSnapshotCapture",
-       "failID": "OobeSnapshotCapture",
-       "cancelID": "OobeSnapshotCapture",
-       "abortID": "OobeSnapshotCapture"
-   },
-   "OobeSnapshotCapture": {
-       "cxid": "OobeSnapshotCapture",
-       "url": {
-         "value": "https://sdx.microsoft.com/frx/snapshot-capture2",
-         "overrideValue": "https://sdx.microsoft.com/frx/snapshot-capture3",
-         "overrideFeature": "SnapshotCaptureA9Oobe"
-       },
-       "urlint": {
-          "value": "https://sdx.microsoft-int.com/frx/snapshot-capture2",
-          "overrideValue": "https://sdx.microsoft-int.com/frx/snapshot-capture3",
-          "overrideFeature": "SnapshotCaptureA9Oobe"
-       },
-       "preloadCheck": "CloudExperienceHost.SnapshotCaptureConsent",
-       "requiredFeatureName": "SnapshotCaptureAsLastOobePage",
-       "internetRequired": true,
-       "skipReconnectHandler": true,
-       "successID": "OobeFirstWebAppVisible",
-       "failID": "OobeFirstWebAppVisible",
-       "cancelID": "OobeFirstWebAppVisible",
-       "abortID": "OobeFirstWebAppVisible",
-       "offlineID": "OobeFirstWebAppVisible",
-       "disableErrorPageOnFailure": true,
-       "ignoreResult": true,
-       "visibility": false
-   },
-    "OobeFirstWebAppVisible": {
-        "cxid": "OobeFirstWebAppVisible",
-        "launcher": "js:FireFirstOobeWebAppVisibleEvent",
-        "disableBackNavigationToNode": true,
-        "disableErrorPageOnFailure": true,
-        "visibility": false,
-        "successID": "OobeExit",
-        "failID": "OobeExit",
-        "cancelID": "OobeExit",
-        "abortID": "OobeExit"
-    },
-    "OobeExit": {
-        "cxid": "OobeExit",
-        "launcher": "js:OobeSkipNode",
-        "canExitCxh": true,
-        "disableErrorPageOnFailure": true,
-        "visibility": false
-    },
-    "OobeEarlyExitOnFailure": {
-        "cxid": "OobeEarlyExitOnFailure",
-        "launcher": "js:OobeSkipNode",
-        "canExitCxh": true,
-        "disableErrorPageOnFailure": true,
-        "visibility": false
-    }
-  },
-  "FRXMOBILE": {
-    "start": "AAD",
-    "notifyOnLastFinished": true,
-    "AAD": {
-      "cxid": "AAD",
-      "url": "https://login.microsoftonline.com/WebApp/CloudDomainJoin/10",
-      "urlint": "https://login.windows-ppe.net/WebApp/CloudDomainJoin/10",
-      "showErrorPageOnFailure": true,
-      "successID": "NGC"
-    },
-    "NGC": {
-      "cxid": "NGC",
-      "url": "https://login.microsoftonline.com/webapp/windowsngc/1",
-      "urlint": "https://login.windows-ppe.net/webapp/windowsngc/1",
-      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForAccount"
-    }
-  },
     "FRXMOBILEBULKAAD": {
         "start": "BULKAAD",
         "notifyOnLastFinished": true,

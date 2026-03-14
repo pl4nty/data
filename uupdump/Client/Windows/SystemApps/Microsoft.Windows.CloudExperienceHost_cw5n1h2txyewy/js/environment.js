@@ -459,6 +459,15 @@ var CloudExperienceHost;
                 });
             }
         }
+        static setSamFolderNameForMsa(folderName) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBEDefaultFolderUserName")) {
+                CloudExperienceHostAPI.OobeDeviceNameManager.setSamFolderNameForMsa(folderName);
+            }
+            else {
+                CloudExperienceHost.Telemetry.logEvent("ApiNonexistentOnClient", "setSamFolderNameForMsa");
+                throw "ApiNonexistentOnClient";
+            }
+        }
     }
     CloudExperienceHost.DeviceName = DeviceName;
     class SnapshotCapture {
