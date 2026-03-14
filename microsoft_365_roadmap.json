@@ -1,5 +1,164 @@
 [
     {
+        "created": "2026-03-13T22:00:48",
+        "description": "With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).",
+        "id": 558688,
+        "locale": null,
+        "modified": "2026-03-13T22:00:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Add support of hyperlinks in warn & block toast messages for Edge browser"
+    },
+    {
+        "created": "2026-03-13T22:00:48",
+        "description": "Enhance current API infrastructure to provide easy and simple way for customers to export data to integrate with SIEM tools, create automated workflows and generate customizable reports. Today alert data is present in Graph API and DLP rule match event details are present in Management API. This work enriches the graph API with DLP event data to make correlation and integration easy for customers.",
+        "id": 558681,
+        "locale": null,
+        "modified": "2026-03-13T22:00:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Enrich Defender alerts Graph API with DLP event data"
+    },
+    {
+        "created": "2026-03-13T22:00:48",
+        "description": "Microsoft Teams integrates with the Do not disturb setting in Windows to help reduce interruptions. Teams notifications are paused when Do not disturb is turned on, and resume after it is turned off.",
+        "id": 557974,
+        "locale": null,
+        "modified": "2026-03-13T22:00:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Honor Windows Do not disturb setting "
+    },
+    {
         "created": "2026-03-12T23:00:54",
         "description": "Speed up analysis of exfiltrated content by launching Data Security Investigations (DSI) from Unified Audit Log activity. In DSI, build your audit log query by specifying criteria such as time range, activities, users, and keywords. DSI then automatically pulls the associated files into the investigation (for example, UserA downloaded a file on 3/1/2026).",
         "id": 558548,
@@ -163,7 +322,7 @@
         "description": "Spoken language detection is now fully automatic. Teams will automatically detect each speaker\u2019s spoken language and update it in real time as the conversation evolves. Manual spoken language selection will no longer be available. This applies to both live captions and transcripts when Interpreter is enabled or when multilingual speech recognition is turned on in meeting options, helping deliver more accurate language recognition and a more consistent multilingual meeting experience.",
         "id": 558543,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -174,10 +333,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -187,6 +355,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -197,10 +368,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -214,6 +394,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -224,7 +407,7 @@
         "description": "Intelligent meeting recap will now include video-based recaps. Video recap creates narrated video highlights from recorded meetings, featuring key takeaways and short clips that showcase important moments.",
         "id": 558540,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -247,6 +430,9 @@
                 "tagName": "Mac"
             },
             {
+                "tagName": "Web"
+            },
+            {
                 "tagName": "Microsoft Teams"
             },
             {
@@ -254,6 +440,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -274,6 +463,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -287,6 +479,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -358,7 +553,7 @@
         "description": "Interpreter now delivers more accurate real-time interpretation, with improved recognition of people\u2019s names and common industry terms. It also supports your organization\u2019s Custom Dictionary from the Microsoft 365 admin center, so tenant-specific terms can be translated more consistently across meetings. Traditional Chinese is also now supported.",
         "id": 558434,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -378,16 +573,19 @@
                 "tagName": "iOS"
             },
             {
-                "tagName": "Linux"
+                "tagName": "Mac"
             },
             {
-                "tagName": "Mac"
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -407,10 +605,10 @@
                     "tagName": "iOS"
                 },
                 {
-                    "tagName": "Linux"
+                    "tagName": "Mac"
                 },
                 {
-                    "tagName": "Mac"
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -421,6 +619,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -480,10 +681,10 @@
         "description": "File Quarantine action in Microsoft Purview DLP for SharePoint and OneDrive, enables stronger, immediate protection for sensitive data. When a DLP policy is triggered, the File Quarantine action automatically moves the file to a restricted, admin\u2011controlled & defined quarantine location\u2014instantly removing access for all users while preserving the file for review and investigation. This capability helps organizations contain data\u2011exposure risks, prevents further sharing or misuse, and delivers a powerful new layer of enforcement.",
         "id": 557190,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -694,9 +895,9 @@
         "description": "SMB Admins can use Microsoft 365 Admin Agent in Microsoft Teams to complete common admin tasks and get guidance on critical setup actions.  Admin Agent can add users and assign licenses on behalf of the admin, as well as provide guidance on key SMB related topics such as organisation setup, security settings, and password resets\u2014without leaving the Teams interface.",
         "id": 558255,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -712,6 +913,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -733,6 +937,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -1932,9 +2139,9 @@
         "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the new, refreshed Copilot New Tab Page.",
         "id": 558256,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5174,9 +5381,9 @@
         "description": "When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group.  You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.",
         "id": 557165,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6005,9 +6212,9 @@
         "description": "You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.  ",
         "id": 557168,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9776,12 +9983,12 @@
         "description": "Lightbox enhancements let users scroll through all previously shared images in a conversation, provide a clearer visual focus on the image being viewed, and add a header option that jumps directly to the original message where the image was posted.",
         "id": 554924,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15829,10 +16036,10 @@
         "description": "Deep citations let users quickly verify Copilot's results by linking directly to the relevant part of the reference, boosting trust. We're starting with Word and PPT files, then adding Meetings, Web, and PDF references.",
         "id": 523223,
         "locale": null,
-        "modified": "2025-12-18T00:15:48",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
-        "publicPreviewDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -20053,10 +20260,10 @@
     },
     {
         "created": "2025-11-26T00:45:03",
-        "description": "Windows 365 Frontline in Shared mode availability for Switzerland North, Switzerland West, Norway East, Norway East, Norway West, UAE central, UAE north",
+        "description": "Windows 365 Frontline in Shared mode availability for Switzerland West, Norway West, UAE central",
         "id": 495263,
         "locale": null,
-        "modified": "2025-11-26T00:45:03",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
@@ -22749,10 +22956,10 @@
     },
     {
         "created": "2025-11-18T17:15:10",
-        "description": "Project Manager agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
+        "description": "Planner Agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
         "id": 511820,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "March CY2025",
@@ -22824,7 +23031,7 @@
                 }
             ]
         },
-        "title": "Planner: Project Manager agent in basic plans"
+        "title": "Planner: Planner Agent in basic plans"
     },
     {
         "created": "2025-11-18T17:15:10",
@@ -38719,12 +38926,12 @@
         "description": "Teams admins can now control whether Teams meetings and calls appear in users\u2019 iPhone call logs.",
         "id": 503106,
         "locale": null,
-        "modified": "2025-10-28T23:15:02",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45843,12 +46050,12 @@
         "description": "Tools acts as a lightweight entry point into high-value, task-specific Copilot features and capabilities directly from the prompt box. By selecting Tools, users get a menu where they can easily discover and trigger the right Copilot feature or capability for their current task, while also providing consistent interactions across tools.",
         "id": 497298,
         "locale": null,
-        "modified": "2025-10-06T23:00:40",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52232,10 +52439,10 @@
     },
     {
         "created": "2025-06-27T22:15:28",
-        "description": "Windows 365 Frontline in Shared Mode is expanding to Korea Central & Germany West Central, helping frontline workers in these regions to securely share Cloud PCs across shifts.",
+        "description": "Windows 365 Frontline in Shared Mode is expanding to Korea Central, helping frontline workers in these regions to securely share Cloud PCs across shifts.",
         "id": 495262,
         "locale": null,
-        "modified": "2025-06-30T23:00:15",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "",
@@ -91900,61 +92107,6 @@
         "title": "Microsoft 365 admin center: New Feature access management UI in Admin Center"
     },
     {
-        "created": "2025-01-07T00:01:00",
-        "description": "In addition to being able to book a desk in advance through Outlook, now you can instantly reserve an individual desk when plugging into a peripheral on a shared desk. IT admins can also get valuable desk utilization data in the Teams Rooms Pro Management portal making flexible work environments better for users and IT. This feature requires a Teams premium license. ",
-        "id": 473570,
-        "locale": null,
-        "modified": "2025-05-13T11:00:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Ad-hoc individual desk booking in Teams"
-    },
-    {
         "created": "2025-01-04T00:00:04",
         "description": "We\u2019re introducing modifications in the container type creation cmdlets. The New-SPOContainerType cmdlet will only create a new container type. We are introducing the Add-SPOContainerTypeBilling cmdlet to add billing profile to the new container type. ",
         "id": 472920,
@@ -104637,55 +104789,6 @@
         "title": "Microsoft 365 app: Microsoft Loop - Admin usage reports for Loop"
     },
     {
-        "created": "2024-09-12T23:15:19",
-        "description": "Site access review allows SharePoint admins to delegate access governance to site owners in the context of potential oversharing as defined within DAG reports. We earlier released site access review from within \"Content shared with everyone except external users\" report. Now, the same functionality will be available from all \"Sharing link\" reports as well.",
-        "id": 414525,
-        "locale": null,
-        "modified": "2025-05-13T11:00:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Site access review from Sharing link reports in Data Access Governance"
-    },
-    {
         "created": "2024-07-31T23:45:06",
         "description": "We heard feedback from you, our customers, and are adding support for choosing fonts while you compose in Outlook for iOS and Android. There is also improved support for fonts in the reading pane. ",
         "id": 409969,
@@ -104806,104 +104909,6 @@
             ]
         },
         "title": "Outlook: Use Copilot to select and rewrite specific pieces of text in an email in classic Outlook for Windows"
-    },
-    {
-        "created": "2024-08-01T23:15:01",
-        "description": "SharePoint admins can use Data Access Governance reports to discover potential oversharing within their tenant. Once discovered, SharePoint admins can now request that site owners review permissions using the specific context of that report from within the report. They can also track all such requests raised from a central location. The site owners will receive a corresponding email and are redirected to a section within the site (site reviews) that clearly enunciates the corresponding data related to sharing and permissions along with the ability to take action. This feature is now available for Data Access Governance - Permissions based reports - count of permissioned user report.",
-        "id": 406553,
-        "locale": null,
-        "modified": "2025-05-13T11:00:17",
-        "moreInfoLink": "https://aka.ms/DAGSiteAccessReviews",
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Site Access Review offers a way for SharePoint tenants to empower site owners using Data Access Governance"
-    },
-    {
-        "created": "2024-08-01T23:15:01",
-        "description": "SharePoint admins can now use Data Access Governance (DAG) to understand their tenant's current permission landscape and make better decisions regarding applications based on permissions such as Copilot. DAG now provides a report that will reflect the latest state of permissions in the entire tenant and return sites that have a greater count of permissioned users than the SharePoint admin specified number. This count considers users accessing sites via site membership and users accessing via unique permissions, as well and acts like a potential threshold for oversharing. Along with the permissioned user count, the report also provides information on the number of existing sharing links (Anyone and People-in-your-org) in those sites and enables SharePoint admins to identify potential root causes for oversharing. You can find more details about this report at the link below.",
-        "id": 406552,
-        "locale": null,
-        "modified": "2025-05-13T11:00:17",
-        "moreInfoLink": "https://aka.ms/DAGReportOnPermissions",
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Using Data Access Governance to understand the tenant's current permission landscape"
     },
     {
         "created": "2024-09-04T23:30:32",
@@ -112297,9 +112302,9 @@
         "description": "Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.",
         "id": 392328,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-13T22:00:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

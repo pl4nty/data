@@ -1370,6 +1370,11 @@
                             "toc_title": "Azure Key Vault Managed HSM"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-kubernetes-application-network",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Kubernetes Application Network"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-kubernetes-fleet-manager",
                             "permissioned-type": "private",
                             "toc_title": "Azure Kubernetes Fleet Manager"
@@ -3035,11 +3040,6 @@
                             "toc_title": "Data Catalog"
                         },
                         {
-                            "href": "a_z_names_terms/d/data-factory",
-                            "permissioned-type": "private",
-                            "toc_title": "Data Factory"
-                        },
-                        {
                             "href": "a_z_names_terms/d/data-lake-analytics",
                             "permissioned-type": "private",
                             "toc_title": "Data Lake Analytics"
@@ -4010,9 +4010,9 @@
                             "toc_title": "fabric"
                         },
                         {
-                            "href": "a_z_names_terms/f/fabric-data-engineer",
+                            "href": "a_z_names_terms/f/fabric-data-engineering",
                             "permissioned-type": "private",
-                            "toc_title": "Fabric Data Engineer"
+                            "toc_title": "Fabric Data Engineering"
                         },
                         {
                             "href": "a_z_names_terms/f/fabric-data-factory",
@@ -4033,6 +4033,11 @@
                             "href": "a_z_names_terms/f/fabric-databases",
                             "permissioned-type": "private",
                             "toc_title": "Fabric Databases"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/fabric-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Fabric IQ"
                         },
                         {
                             "href": "a_z_names_terms/f/fabric-real-time-intelligence",
@@ -4190,11 +4195,6 @@
                             "toc_title": "Flipgrid"
                         },
                         {
-                            "href": "a_z_names_terms/f/flow-flows",
-                            "permissioned-type": "private",
-                            "toc_title": "flow, flows"
-                        },
-                        {
                             "href": "a_z_names_terms/f/fluid-relay",
                             "permissioned-type": "private",
                             "toc_title": "Fluid Relay"
@@ -4298,6 +4298,11 @@
                             "href": "a_z_names_terms/f/freelance-toolkit",
                             "permissioned-type": "private",
                             "toc_title": "freelance toolkit"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/frontier-firm",
+                            "permissioned-type": "private",
+                            "toc_title": "Frontier Firm"
                         },
                         {
                             "href": "a_z_names_terms/f/frontline-worker",
@@ -5197,7 +5202,7 @@
                         {
                             "href": "a_z_names_terms/m/managed-environments",
                             "permissioned-type": "private",
-                            "toc_title": "Managed Environments"
+                            "toc_title": "managed environments"
                         },
                         {
                             "href": "a_z_names_terms/m/managed-instance-on-azure-app-service",
@@ -5885,11 +5890,6 @@
                             "toc_title": "Microsoft Fabric"
                         },
                         {
-                            "href": "a_z_names_terms/m/microsoft-fabric-iq",
-                            "permissioned-type": "private",
-                            "toc_title": "Microsoft Fabric IQ"
-                        },
-                        {
                             "href": "a_z_names_terms/m/microsoft-fabric-workload-development-kit",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Fabric Workload Development Kit"
@@ -6103,6 +6103,11 @@
                             "href": "a_z_names_terms/m/microsoft-marketplace",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft Marketplace"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/microsoft-onelake",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft OneLake"
                         },
                         {
                             "href": "a_z_names_terms/m/microsoft-power-platform",
@@ -6803,6 +6808,11 @@
                             "href": "a_z_names_terms/m/mobile-services",
                             "permissioned-type": "private",
                             "toc_title": "Mobile Services"
+                        },
+                        {
+                            "href": "a_z_names_terms/m/model-context-protocol-mcp-server",
+                            "permissioned-type": "private",
+                            "toc_title": "model context protocol (MCP) server"
                         },
                         {
                             "href": "a_z_names_terms/m/model-driven-app",
@@ -8088,6 +8098,11 @@
                             "href": "a_z_names_terms/r/reading-view",
                             "permissioned-type": "private",
                             "toc_title": "reading view"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/readme-file",
+                            "permissioned-type": "private",
+                            "toc_title": "README file"
                         },
                         {
                             "href": "a_z_names_terms/r/real-time-intelligence",
@@ -10250,6 +10265,11 @@
                             "toc_title": "Word Agent"
                         },
                         {
+                            "href": "a_z_names_terms/f/flow-flows",
+                            "permissioned-type": "private",
+                            "toc_title": "workflow, workflows"
+                        },
+                        {
                             "href": "a_z_names_terms/w/work-iq",
                             "permissioned-type": "private",
                             "toc_title": "Work IQ"
@@ -10468,6 +10488,11 @@
                             "href": "copilot-guidance/copilot/copilot-in-dynamics-365-guides",
                             "permissioned-type": "private",
                             "toc_title": "Copilot in Dynamics 365 Guides"
+                        },
+                        {
+                            "href": "copilot-guidance/copilot/copilot-in-microsoft-fabric",
+                            "permissioned-type": "private",
+                            "toc_title": "Copilot in Microsoft Fabric"
                         },
                         {
                             "href": "copilot-guidance/copilot/copilot-pages",
@@ -14397,7 +14422,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2745,
+        "count_of_node_with_href": 2750,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
