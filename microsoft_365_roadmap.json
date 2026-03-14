@@ -83681,55 +83681,6 @@
     },
     {
         "created": "2025-02-26T23:15:50",
-        "description": "New enhancements for RAC policy for SharePoint administrators to restrict access to SharePoint sites including managing M365 group connected sites with M365 groups or Security groups. ",
-        "id": 483028,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Restricted Access Control Enhancements "
-    },
-    {
-        "created": "2025-02-26T23:15:50",
         "description": "Copilot in PowerPoint will rewrite paragraphs into bullet points or lists.",
         "id": 483003,
         "locale": null,
@@ -88500,61 +88451,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Suggestions for slide templates as you work"
     },
     {
-        "created": "2025-02-04T00:15:04",
-        "description": "Copilot in Forms has been revamped to more easily help users refine and modify their forms. Users can now type prompts to Copilot to help with editing and refinement, so they can get tailored suggestions and easily get their forms ready to send. ",
-        "id": 474659,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Forms"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Forms"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot in Forms has been refreshed to help users better refine and edit their forms"
-    },
-    {
         "created": "2025-01-31T23:15:55",
         "description": "Copilot in Forms can now help you monitor and collect responses for your forms, so you can get the data you need with much less effort. Copilot can create a collection plan, track your progress, and let you know when to take action with reminders and insights. Forms can notify you when early insights are ready, and you can easily continue your analysis with Copilot in Excel. Say goodbye to manual follow-ups and hello to smarter collection and analysis.",
         "id": 470604,
@@ -88608,67 +88504,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot in Forms can help monitor response collection and insights"
-    },
-    {
-        "created": "2025-01-31T00:15:03",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to group messages as conversation for emails within .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows, #pstfilesupport",
-        "id": 479412,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Group messages as conversation for PST files in new Outlook for Windows"
     },
     {
         "created": "2025-01-31T00:15:03",
@@ -90829,79 +90664,6 @@
             ]
         },
         "title": "Planner: Smart backgrounds for basic plans"
-    },
-    {
-        "created": "2025-01-17T23:15:23",
-        "description": "This creates Preview mode for authors to view how their Pages and News will look across different device types while editing.",
-        "id": 473452,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: Preview for Pages and News"
     },
     {
         "created": "2025-01-17T00:00:53",
@@ -94081,67 +93843,6 @@
     },
     {
         "created": "2024-12-20T00:00:02",
-        "description": "This feature is an enhancement to the existing IRM Office Indicator. In the current version, only sensitivity label changes on the SharePoint Web app are captured in IRM. With the latest update, this indicator captures the sensitivity label changes (downgrade/ remove) when performed on OneDrive, AIP, and Endpoint (SharePoint file opened in Office app, or any sensitivity label change on the local files on your device).\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 473431,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Downgrade/remove sensitivity label"
-    },
-    {
-        "created": "2024-12-20T00:00:02",
         "description": "Copilot for Security in DLP can summarize DLP policies. This enhancement enables DLP admins to gain insights on coverage of policies viz. location, classifiers and notifications, and more. \n \nDLP admins can get these insights on all the policies or on few selected policies. They will be able to use prompts to gain deeper level view of how a policy is configured for their digital landscape. This helps them align their data posture on a regular basis and make corrections to policy posture as needed. #copilotcontrolsystem",
         "id": 472031,
         "locale": null,
@@ -94525,67 +94226,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Write a prompt for selected portions of text in Word"
     },
     {
-        "created": "2024-08-06T23:00:44",
-        "description": "Enrollment time grouping for Android Enterprise Corporate devices ensures targeted apps and policies get to devices faster and reduce latency of device setup.",
-        "id": 408535,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Intune"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Intune"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Intune: Enrollment time grouping for Android Enterprise Corporate devices"
-    },
-    {
         "created": "2024-07-09T18:30:38",
         "description": "You will no longer need to reference certain types of organizational data for Copilot to generate contextually relevant content. People and chats will still need to be referenced explicitly.",
         "id": 405753,
@@ -94785,73 +94425,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Information Protection - Named entity coverage for additional markets and languages (U.S. Government clouds)"
-    },
-    {
-        "created": "2024-12-19T00:15:21",
-        "description": "Authorized users will be able to enter into a monitoring session with selected agents for private coaching. They can listen to customer calls, whisper to the agents for private message, even barge into or takeover the call.",
-        "id": 473884,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Queues App to add Monitor Whisper Barge and Takeover"
     },
     {
         "created": "2024-12-19T00:15:21",
@@ -105547,61 +105120,6 @@
     },
     {
         "created": "2024-11-12T00:45:33",
-        "description": "Copilot for Security in DLP is capable of summarizing DLP policies. This enhancement enables DLP admins to gain insights on coverage of policies viz. location, classifiers and notifications, and more. \n \nDLP admins can get these insights on all the policies or on few selected policies. They will be able to use prompts to gain a deeper view of how a policy is configured for their digital landscape. This helps them align their data posture on a regular basis and make corrections to policy posture as needed.",
-        "id": 466740,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Gain DLP policy insights with Copilot"
-    },
-    {
-        "created": "2024-11-12T00:45:33",
         "description": "Introducing exciting new features to help you better understand and improve adoption and impact of Copilot for Microsoft 365 through the Copilot Dashboard. Enhancements include supporting multi-select capabilities for Scope filters to facilitate group comparisons and the ability to upload HR organizational data for Scope filter updates.",
         "id": 429870,
         "locale": null,
@@ -106388,55 +105906,6 @@
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Progressive alert scoring"
     },
     {
-        "created": "2023-08-02T23:14:31",
-        "description": "<div><span>The Communication Compliance homepage provides two columns that offer a quick overview of policy performance: the first column shows the number of scanned parent items in real time, giving visibility into scanning progress; the second column keeps you informed about parent items that meet policy conditions, ensuring you stay updated on potential issues requiring attention and maintaining control over communication compliance.&nbsp;</span><span></span><span style=\"\">Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.</span> </div>",
-        "id": 145793,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insightful Policy Performance"
-    },
-    {
         "created": "2023-09-19T23:09:27",
         "description": "<div><span style=\"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black;\">Just-in-time\nprotection for SharePoint in Microsoft Purview DLP allows organizations to\nextend protection to unclassified files in SharePoint and apply restrictions\ndefined in DLP policies at the time of egress</span>. </div>",
         "id": 139457,
@@ -106722,73 +106191,6 @@
             ]
         },
         "title": "Outlook: People Hub improvements in new Outlook for Windows"
-    },
-    {
-        "created": "2024-07-08T23:15:04",
-        "description": "Endpoint Privilege Management rules support specifying a list of allowable command parameters, ensuring elevation for only the allowed or mandatory arguments.",
-        "id": 399934,
-        "locale": null,
-        "modified": "2025-05-13T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Intune"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Intune"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Intune: Endpoint Privilege Management rules support specifying allowable command arguments"
     },
     {
         "created": "2023-08-29T23:20:56",
