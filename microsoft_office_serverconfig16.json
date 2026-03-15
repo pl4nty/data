@@ -160,7 +160,7 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/v2.0/hrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
       <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
