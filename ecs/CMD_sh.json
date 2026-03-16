@@ -368,6 +368,7 @@
         "EnableCleanupEnrollmentsRegistry": true,
         "EnableCleanupExpiredSnapshotsTimer": true,
         "EnableCleanupPITAfterRecover": true,
+        "EnableCleanupStaleRDRegistryOnUninstall": true,
         "EnableCloudAppBackEndPup": true,
         "EnableCloudAppBackend": true,
         "EnableCloudAppCache": true,

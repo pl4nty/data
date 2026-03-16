@@ -69900,61 +69900,6 @@
     },
     {
         "created": "2025-04-15T23:15:26",
-        "description": " This feature will provide users conversation history list structure through grouping conversations by time frame to make it easy for users to visually parse.\n",
-        "id": 486464,
-        "locale": null,
-        "modified": "2025-05-15T23:15:36",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Sessions Grouped by Time frame"
-    },
-    {
-        "created": "2025-04-15T23:15:26",
         "description": "Create Copilot Pages on your mobile phone to continue working on the go. Pages shared in Microsoft 365 are interactive and automatically synchronized for seamless collaboration.",
         "id": 485721,
         "locale": null,
@@ -88904,55 +88849,6 @@
     },
     {
         "created": "2025-01-29T00:15:46",
-        "description": " This feature will provide users conversation history list structure through grouping conversations by time frame to make it easy for users to visually parse.\n",
-        "id": 477358,
-        "locale": null,
-        "modified": "2025-05-15T23:15:36",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Sessions Grouped by Time frame"
-    },
-    {
-        "created": "2025-01-29T00:15:46",
         "description": "This allows the customer to use a label for a non-Office/PDF file without productivity impact.",
         "id": 476494,
         "locale": null,
@@ -106444,79 +106340,6 @@
         "title": "Microsoft Purview compliance portal: Information Protection - MIP auto-labeling for Azure SQL & Storage"
     },
     {
-        "created": "2024-10-30T23:30:52",
-        "description": "If a tenant has the (EnableHoldTheFile) GPO enabled, and the end users run into Office file conflicts, then end users can open the file in Office to merge changes. If a tenant has the GPO disabled, and the end users run into Office file conflicts, then OneDrive automatically creates a copy of the file in conflict. When tenants have this GPO disabled, it leads to end users potentially having to manually merge hundreds of conflicts because OneDrive automatically forks a file instead of allowing the users to have the option to merge conflicts in Office. The proposal no longer allows tenants to disable this GPO thus not automatically forking a file when in conflict for end users. ",
-        "id": 429875,
-        "locale": null,
-        "modified": "2025-05-15T23:15:36",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneDrive: Office Files on Hold "
-    },
-    {
         "created": "2024-05-09T23:00:20",
         "description": "Cross-Location Shifts empowers organizations by enabling their Frontline workers to access and select open shifts from multiple locations within a region. Managers benefit from a larger labor pool by opening shift availability across multiple locations: a worker from one store location may select a shift in any other store across their region. This feature is accessible both via desktop and mobile.",
         "id": 394351,
@@ -106594,79 +106417,6 @@
             ]
         },
         "title": "Microsoft Teams: Cross location Shifts"
-    },
-    {
-        "created": "2024-10-29T00:00:51",
-        "description": "If a tenant has the (EnableAllOcsiClients) GPO enabled, Office and OneDrive are able to communicate smoothly. Right now, tenants have the option to disable the GPO, and when they disable the GPO, it becomes difficult to ensure that all internal versions of Office files are kept up to date so that features like autosave, version history, real time user collab, and merging in the case of conflicts can work. ",
-        "id": 429874,
-        "locale": null,
-        "modified": "2025-05-15T23:15:36",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneDrive: Enable OCSI for Tenants "
     },
     {
         "created": "2024-07-30T23:30:34",

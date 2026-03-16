@@ -160,6 +160,13 @@
                 "id": "Plone.plone-vs-utilities"
             }
         },
+        "Derpius.nanosworld": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "nanos world Lua",
+                "id": "go-horse-studios.nanos-world"
+            }
+        },
         "DevonDCarew.bazel-code": {
             "disallowInstall": true,
             "extension": {
@@ -1979,6 +1986,41 @@
                 "id": "fill-labs.dependi"
             }
         },
+        "sickag.appengine-emulator": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SICK App Designer AppEngine Emulator",
+                "id": "sickag.app-designer-appengine-emulator"
+            }
+        },
+        "sickag.appspace-lua-language-server": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SICK App Designer Lua Toolbox",
+                "id": "sickag.app-designer-lua-toolbox"
+            }
+        },
+        "sickag.appspace-programmable-core": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SICK App Designer Core",
+                "id": "sickag.app-designer-core"
+            }
+        },
+        "sickag.appspace-sdk-extension-pack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SICK App Designer",
+                "id": "sickag.app-designer-extension-pack"
+            }
+        },
+        "sickag.appspace-ui-builder": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SICK App Designer UI-Builder",
+                "id": "sickag.app-designer-ui-builder"
+            }
+        },
         "silvenon.mdx": {
             "disallowInstall": true,
             "extension": {
@@ -2258,6 +2300,10 @@
         "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
     },
     "malicious": [
+        "AtroxEGO.better-folding-plus",
+        "avenableivytech.vscode-sqlite-av",
+        "ben14.ayu-warm",
+        "nicovy.symbolsnicovy",
         "zhukunpeng.codemoss",
         "zhukunpeng.vscode-tinypng-pro",
         "live-servers.LiveeServer",
