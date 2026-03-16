@@ -164,6 +164,7 @@
         "copilotAppHandoff_shared": 1,
         "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckTeamsLicense_shared": 0,
+        "enableCreateNewEvent": 1,
         "enableHostRingBuckets": 1,
         "enableSharedRoutes_shared": true,
         "exponentialBackoff": {
