@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15184492,
+    "size": 15184379,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33006321,
-    "file_count": 4021
+    "size": 33029223,
+    "file_count": 4027
   },
   {
     "name": "boringssl",
@@ -156,7 +156,7 @@
   },
   {
     "name": "devscripts",
-    "size": 65458,
+    "size": 65504,
     "file_count": 8
   },
   {
@@ -176,7 +176,7 @@
   },
   {
     "name": "dpkg-shlibdeps",
-    "size": 57694,
+    "size": 57794,
     "file_count": 10
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16916039,
+    "size": 16917452,
     "file_count": 1941
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 377734,
+    "size": 373839,
     "file_count": 83
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43905922,
-    "file_count": 3278
+    "size": 43908782,
+    "file_count": 3284
   },
   {
     "name": "googletest",
@@ -376,7 +376,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 58316,
+    "size": 58605,
     "file_count": 43
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4209524,
+    "size": 4210049,
     "file_count": 596
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7318553,
+    "size": 7314388,
     "file_count": 190
   },
   {

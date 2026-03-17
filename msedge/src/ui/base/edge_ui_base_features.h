@@ -246,6 +246,11 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgePipAlignedUI);
 #endif  // !BUILDFLAG(IS_ANDROID)
 
+// Returns true when the Edge-specific advanced PIP UI should be used.
+// This is the case when kEdgePipAdvanced is enabled and kEdgePipAlignedUI
+// (which re-aligns with upstream) is not overriding it.
+COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAdvancedUiEnabled();
+
 // If enabled, domain actions for Enhanced Copy Paste will be parsed and applied
 // to the relevant domains.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
