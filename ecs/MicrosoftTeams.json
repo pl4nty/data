@@ -174,7 +174,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1667,6 +1667,12 @@
             "Show_ODM_FRE": [
                 {
                     "Flight": "TM.DocGenerationSkill",
+                    "IsEnabled": true
+                }
+            ],
+            "SkillTelemetry": [
+                {
+                    "Flight": "Teams.PA.EnableSkillsTelemetry",
                     "IsEnabled": true
                 }
             ],
