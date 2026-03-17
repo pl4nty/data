@@ -117,7 +117,6 @@ do
             l_0_35.enabled = (l_0_8.autoApprovalSettings).enabled
             l_0_35.enableNotifications = (l_0_8.autoApprovalSettings).enableNotifications
             l_0_35.version = (l_0_8.autoApprovalSettings).version
-            l_0_35.nonexistentField = (l_0_8.autoApprovalSettings).nonexistentField
             l_0_35.actions = (l_0_8.autoApprovalSettings).actions
             l_0_9.autoApprovalSettings = l_0_35
           end
