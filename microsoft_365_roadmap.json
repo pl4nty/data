@@ -1,5 +1,225 @@
 [
     {
+        "created": "2026-03-16T23:00:10",
+        "description": "Admins can now see the sync status of sensitivity label publishing policies directly in the Purview portal. This provides clear confirmation that label policy changes have been fully applied across Microsoft 365 workloads, reducing guesswork, speeding troubleshooting, and increasing confidence during large scale label deployments.",
+        "id": 558687,
+        "locale": null,
+        "modified": "2026-03-16T23:00:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection - Policy sync status for M365 Label publishing policies"
+    },
+    {
+        "created": "2026-03-16T23:00:10",
+        "description": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.",
+        "id": 558686,
+        "locale": null,
+        "modified": "2026-03-16T23:00:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection - Sensitivity label inheritance for Teams meeting artifacts"
+    },
+    {
+        "created": "2026-03-16T23:00:10",
+        "description": "To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups\u2014expanding policy targeting beyond individual users and mail enabled groups.",
+        "id": 558685,
+        "locale": null,
+        "modified": "2026-03-16T23:00:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection - Exclude modern groups / include dynamic security groups support for sensitivity label policies "
+    },
+    {
+        "created": "2026-03-16T23:00:10",
+        "description": "Use intelligent summaries in Copilot Dashboard to quickly surface what\u2019s working and where targeted attention can accelerate Copilot adoption. Intelligent summaries highlight key adoption trends to focus on areas of success. Suggested prompts enable deeper exploration of underlying trends and drivers.\n",
+        "id": 557681,
+        "locale": null,
+        "modified": "2026-03-16T23:00:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Intelligent Summaries in Copilot Dashboard"
+    },
+    {
         "created": "2026-03-13T22:00:48",
         "description": "With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).",
         "id": 558688,
@@ -114,7 +334,7 @@
         "description": "Microsoft Teams integrates with the Do not disturb setting in Windows to help reduce interruptions. Teams notifications are paused when Do not disturb is turned on, and resume after it is turned off.",
         "id": 557974,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -132,6 +352,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -153,6 +376,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2802,15 +3028,15 @@
     },
     {
         "created": "2026-03-02T23:45:11",
-        "description": "Teams Rooms on Windows now supports separate chats for event coordination and audience engagement in structured meetings and webinars. When a room joins as an organizer, co-organizer, or presenter, organizers and presenters \u2013 including external presenters \u2013 can communicate privately in the Event Group chat, while switching to a separate chat to engage attendees. This helps to improve backstage coordination, reduce in event friction, and deliver smoother, more professional live experiences. Available in Teams Rooms Pro\u2013licensed rooms.",
+        "description": "This item is cancelled as a duplicate of 557165. We are sorry for any inconvenience it may cause. Teams Rooms on Windows now supports separate chats for event coordination and audience engagement in structured meetings and webinars. When a room joins as an organizer, co-organizer, or presenter, organizers and presenters \u2013 including external presenters \u2013 can communicate privately in the Event Group chat, while switching to a separate chat to engage attendees. This helps to improve backstage coordination, reduce in event friction, and deliver smoother, more professional live experiences. Available in Teams Rooms Pro\u2013licensed rooms.",
         "id": 557720,
         "locale": null,
-        "modified": "2026-03-02T23:45:11",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -3123,9 +3349,9 @@
         "description": "Centralized notification settings streamline channel notification setup and management. Available in Teams settings, users have a single place to review and adjust notifications for all visible channels, instead of managing each individually.",
         "id": 557970,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5277,12 +5503,12 @@
         "description": "When you apply a filter in the message list, Outlook for iOS now helps you search for all matching messages\u2014even older ones that aren\u2019t currently synced. If more results may be available, you can tap to run a search with the filter already applied. ",
         "id": 557349,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10068,12 +10294,12 @@
         "description": "The voice tethering feature builds on the recent introduction of Sign Language Mode. It ensures that when an interpreter voices for a D/HH signer, captions and transcripts attribute the spoken content to the signer rather than the interpreter. This provides accurate representation in meetings and makes it clear who is contributing to the conversation. It also improves downstream meeting intelligence such as Copilot so that notes, summaries, action items, and insights are attributed to the correct participant.",
         "id": 553223,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11203,9 +11429,9 @@
         "description": "Introduces enhanced controls in Content Explorer\u2019s UI, enabling scoped visibility and filtering of SIT and label data. This will help with content discoverability and governance.",
         "id": 553218,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12332,12 +12558,12 @@
         "description": "The tenant\u2011level process report provides eDiscovery administrators and managers with a centralized view of eDiscovery processes running across cases in the tenant\u2014or across the cases they have access to. It surfaces key details such as process type, status, duration, timestamps, and who initiated each process, enabling better operational oversight, faster issue triage, and clearer end\u2011to\u2011end visibility into eDiscovery activity.",
         "id": 551164,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12985,9 +13211,9 @@
         "description": "When requesting a Microsoft 365 Copilot license, users can now provide a business justification explaining why they need Copilot. This context is shown to admins during review, helping them make faster, more informed approval decisions and supporting governance and audit needs.",
         "id": 547731,
         "locale": null,
-        "modified": "2026-01-21T00:15:51",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13846,12 +14072,12 @@
         "description": "We're introducing the ability to save meeting invites as drafts on mobile. This feature allows users to begin composing a meeting and return to it later without sending the invite immediately\u2014helping them stay organized and flexible when scheduling. Updated February 13, 2026: This item is still rolling and has not completed yet. We apologize for any inconvenience. ",
         "id": 545895,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15395,12 +15621,12 @@
         "description": "With this update, Insider Risk Management extends its risk-detection capabilities to Microsoft Fabric lakehouses (in addition to Power BI which is supported today) by offering ready-to-use risk indicators based on user activities in Fabric lakehouses. Organizations can use these new indicators in data theft and data leaks policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.\n",
         "id": 543243,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15926,12 +16152,12 @@
         "description": "This feature introduces the ability to classify DLP alerts directly in the Purview portal. In addition to assigning a status, customers can now categorize alerts as True Positive, False Positive, or Benign Positive. This capability helps security teams better organize, track, and manage alerts, enabling more accurate reporting and efficient incident handling. ",
         "id": 542791,
         "locale": null,
-        "modified": "2025-12-18T00:15:48",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -16645,9 +16871,9 @@
         "description": "Edge for Business will soon help users quickly take contextual action on their open pages using contextual nudges attached to the Copilot icon in the toolbar",
         "id": 537284,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17623,12 +17849,12 @@
         "description": "User-Based Aggregation consolidates DLP alerts by user identity i.e. a DLP rule violations, in a specified aggregation time window, of the same rule and single user will be aggregated into a single alert enabling quicker triage and remediation. Instead of reviewing alerts containing rule match events of multiple users, DLP admin can now analyze grouped DLP rule match events per user, gaining insights into repeated policy violations and anomalous behavior.",
         "id": 537276,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -18720,12 +18946,12 @@
         "description": "Enables effortless list creation for Copilot users through prompts, with intelligent schema generation and setup. This agent helps teams to quickly transform structured information and Copilot responses to Microsoft Lists.",
         "id": 534606,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21193,15 +21419,15 @@
     },
     {
         "created": "2025-11-20T00:00:17",
-        "description": "Copilot readiness in the Microsoft 365 admin center provides a centralized experience for applying Microsoft\u2019s recommended settings, policies, and actions for Copilot. It organizes these into predefined packages so admins can quickly deploy Copilot securely and confidently.",
+        "description": "The new Copilot settings landing experience in the Microsoft 365 admin center centralizes visibility into key configuration status and helps admins optimize settings for Copilot success using Microsoft\u2011recommended policies, actions, and guidance\u2014enabling secure and confident Copilot deployment.",
         "id": 526793,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21250,7 +21476,7 @@
                 }
             ]
         },
-        "title": "Microsoft 365 admin center: Copilot settings \u2013 readiness"
+        "title": "Microsoft 365 admin center: Copilot settings \u2013 Optimize view"
     },
     {
         "created": "2025-11-20T00:00:17",
@@ -22959,12 +23185,12 @@
         "description": "Planner Agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
         "id": 511820,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "March CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27018,9 +27244,9 @@
         "description": "Interact in real time with podcasts created by Copilot in Word. Today, audio summaries help you absorb content on the go, but they\u2019re one-way\u2014listeners can\u2019t clarify or explore without stopping. With this feature, you can ask questions with your voice while listening and get answers instantly, staying in the audio experience and understanding content faster.",
         "id": 523206,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31942,9 +32168,9 @@
         "description": "Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group. Updated January 29, 2026: Due to a blocker we have paused rollout until March for this feature. We apologize for any inconvenience.",
         "id": 515465,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -33872,12 +34098,12 @@
         "description": "Introducing a Microsoft Purview Insider Risk Management pay-as-you-go feature usage report designed to provide transparency to the customers, enabling more accurate budget planning and policy tuning. This report provides granular breakdowns of billed processing unit usage across different data source categories and activity indicators over time, empowering IRM admins to identify cost-saving opportunities and tune their policies. ",
         "id": 511816,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35131,12 +35357,12 @@
         "description": "Quickly send images to Bing Visual Search from the Edge Desktop Search Bar to identify images, people, animals, and shows; extract, copy, and translate text while keeping its format. Solve questions quickly in various subjects and get trusted information to boost your knowledge. Discover products, fashion, recipes, identify a location and more. Available on Windows devices.\u00a0 Admins can control availability to this feature using the\u00a0VisualSearchEnabled policy.\u00a0",
         "id": 508519,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35173,7 +35399,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Desktop Visual Search"
+        "title": "Microsoft Edge: v.146 - Desktop Visual Search"
     },
     {
         "created": "2025-10-01T23:01:01",
@@ -38822,9 +39048,9 @@
         "description": "This feature will allow admins to specify a limited set of sites to exclude from web grounding in M365 Copilot and Copilot Chat #copilotcontrolsystem",
         "id": 503144,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46677,12 +46903,12 @@
         "description": "Admins can retrieve diagnostic 'Always-on diagnostic' traces directly from Windows endpoints and selectively upload them to Microsoft through the Purview Portal at the time of an investigation request such as submitting a support ticket, without disrupting end users or impacting their productivity. This eliminates the need for user coordination while maintaining seamless troubleshooting capabilities",
         "id": 499431,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48604,12 +48830,12 @@
         "description": "New Outlook for Windows will now support ability to show customizable oversharing dialog for Data Loss Prevention. The support will be to configure custom title, body, business justifications, and dynamic variables/tokens for matched recipients, attachment names, and labels. #newoutlookforwindows",
         "id": 498921,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -50227,12 +50453,12 @@
         "description": "Deploy a frontline worker (FLW) pilot in Teams Admin Center",
         "id": 498226,
         "locale": null,
-        "modified": "2025-11-14T23:15:39",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51161,12 +51387,12 @@
         "description": "With the Microsoft 365 Copilot app on Windows, say \u201cHey Copilot\u201d to activate real-time voice conversations with Copilot. The wake word keeps you in flow, helping you draft content, analyze data, and get critical insights without having to navigate to a separate app or window. Built for enterprise, it respects your organization\u2019s compliance and privacy settings, activating only when called.",
         "id": 497848,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -58550,9 +58776,9 @@
         "description": "As you enable M365 Copilot Chat pay-as-you-go billing, AI administrators can view usage insights to inform agent management decisions. This feature displays the cost and number of messages in total and per agent. Cost and usage details can be filtered by billing policy and date range.",
         "id": 492616,
         "locale": null,
-        "modified": "2025-09-10T23:15:44",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -63228,12 +63454,12 @@
         "description": "The Exchange Online Moderation feature gives message moderators the ability to Approve or Reject sending a moderated message to its intended recipients via a special email message form that includes Approve and Reject buttons in the Outlook Desktop or Outlook on the web toolbar. However, the ability to approve or reject a moderated message currently isn't supported on Outlook for iOS, Outlook for Android, or Outlook for Mac. With this update to use Actionable Messages for moderation approval messages, moderators with mailboxes hosted in Exchange Online will now be able to approve or reject moderated messages via all the Microsoft email clients: from Outlook for Windows, Outlook for Mac, Outlook for iOS and Outlook for Android.",
         "id": 492743,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -99454,9 +99680,9 @@
         "description": "Ensure via optional IT admin policy that new shared Loop workspaces are connected to and managed by an existing Teams enabled Microsoft 365 Group.",
         "id": 422725,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -102071,9 +102297,9 @@
         "description": "<div><span>All participants in meetings are now able to start collaborative annotations. This will only be available in the new Microsoft Teams experience.</span> </div><div> </div>",
         "id": 89975,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-16T23:00:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
