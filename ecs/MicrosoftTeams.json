@@ -750,45 +750,6 @@
             }
         }
     },
-    "MicrosoftTeamsTenantRegionOverrideList": {
-        "RegionList": {
-            "DoD": [
-                "dod"
-            ],
-            "GCCH": [
-                "gcch"
-            ],
-            "Production": [
-                "amer",
-                "emea",
-                "apac",
-                "uk",
-                "in",
-                "gcc",
-                "au",
-                "jp",
-                "ca",
-                "fr",
-                "ae",
-                "kr",
-                "sg",
-                "za"
-            ]
-        },
-        "TenantRegionOverrideMap": {
-            "162c9438-7f19-4681-947b-4248bbc181bd": "ca",
-            "17747ef2-bf9d-484f-a5ac-fed395fab17d": "jp",
-            "698c9f0f-3958-40bd-91c0-56aa4e532451": "au",
-            "6f86442a-e2aa-4243-8634-03ffa9a0d9ca": "jp",
-            "7804a3f4-d201-4921-b7d0-3c4c9ef4ae72": "jp",
-            "a85696bb-51a9-4b52-aa43-3a2a65c4c169": "ca",
-            "b78d1248-3703-4938-9176-2db1804cf792": "ca",
-            "cd5fad7d-a4bc-441f-8cff-8a4c8cd0410b": "jp",
-            "cfa4fa51-38f7-4957-80f7-047c1a1eaceb": "au",
-            "d011e4d6-e5d8-4268-9f07-a9776a4a464b": "jp",
-            "f9e738ed-f4fa-4186-93eb-78fcf830a74d": "au"
-        }
-    },
     "MicrosoftTeamsUserClassificationRuleConfiguration": {
         "userClassificationConfiguration": {
             "adminRolePrepinnedAppIds": [],
@@ -830,6 +791,7 @@
         "EDPSTenants": "false",
         "EarlyR2Ring": "false",
         "EliteUsers": "false",
+        "FrontierAudience": "None",
         "IsInternalUser": "false",
         "M365ChatAllow": "false",
         "M365CopilotPPVAll": "false",
@@ -2180,7 +2142,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026020401"
+        "buildVersion": "2026022703"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
