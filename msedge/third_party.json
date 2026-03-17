@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2167825,
+    "size": 2172587,
     "file_count": 182
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33029223,
-    "file_count": 4027
+    "size": 33027519,
+    "file_count": 4028
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16917452,
+    "size": 16917697,
     "file_count": 1941
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 373839,
+    "size": 372548,
     "file_count": 83
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19236331,
+    "size": 19232235,
     "file_count": 19
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 55374,
+    "size": 56357,
     "file_count": 35
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7314388,
+    "size": 7315056,
     "file_count": 190
   },
   {
