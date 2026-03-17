@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33027519,
+    "size": 33027155,
     "file_count": 4028
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16917697,
+    "size": 16917013,
     "file_count": 1941
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43908782,
-    "file_count": 3284
+    "size": 43918279,
+    "file_count": 3286
   },
   {
     "name": "googletest",
@@ -286,7 +286,7 @@
   },
   {
     "name": "harfbuzz-ng",
-    "size": 298943,
+    "size": 300264,
     "file_count": 32
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "litert",
-    "size": 186424,
+    "size": 186530,
     "file_count": 67
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4210049,
+    "size": 4210380,
     "file_count": 596
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3477237,
+    "size": 3477045,
     "file_count": 1188
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1714243,
-    "file_count": 528
+    "size": 1698330,
+    "file_count": 531
   },
   {
     "name": "tflite_support",
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7315056,
+    "size": 7315796,
     "file_count": 190
   },
   {
