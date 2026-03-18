@@ -1,5 +1,115 @@
 [
     {
+        "created": "2026-03-17T22:45:46",
+        "description": "Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR.",
+        "id": 558860,
+        "locale": null,
+        "modified": "2026-03-17T22:45:46",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR "
+    },
+    {
+        "created": "2026-03-17T22:45:46",
+        "description": "Review set limit per case is increased from 20 per case to 100 per case.",
+        "id": 558858,
+        "locale": null,
+        "modified": "2026-03-17T22:45:46",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: eDiscovery - review set limit increase"
+    },
+    {
         "created": "2026-03-16T23:00:10",
         "description": "Admins can now see the sync status of sensitivity label publishing policies directly in the Purview portal. This provides clear confirmation that label policy changes have been fully applied across Microsoft 365 workloads, reducing guesswork, speeding troubleshooting, and increasing confidence during large scale label deployments.",
         "id": 558687,
@@ -858,9 +968,9 @@
         "description": "Windows 365 Link will be available for sale in Norway and Philippines.",
         "id": 558253,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2909,9 +3019,9 @@
         "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
         "id": 557170,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3242,10 +3352,10 @@
     },
     {
         "created": "2026-02-27T23:15:13",
-        "description": "Security Store is now integrated into the Microsoft Purview DLP experience, giving admins an in-product way to discover, purchase, and enable a curated set of integrations that extend Purview capabilities, including data security capabilities for the network. This integration simplifies how organizations activate and manage partner integrations directly within Purview.",
+        "description": "Microsoft Security Store is now integrated into the Microsoft Purview DLP experience, giving admins an in\u2011product way to discover a curated set of integrations that extend Purview capabilities, including data security capabilities for the network. Purchasing and management are completed through Security Store, simplifying how organizations procure partner integrations.",
         "id": 557977,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
@@ -4917,12 +5027,12 @@
         "description": "The updated Copilot adoption Power BI report will come with a streamlined UX and new Power user insights. ",
         "id": 557674,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10130,9 +10240,9 @@
         "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
         "id": 554927,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13022,9 +13132,9 @@
         "description": "Adaptive Scope for SharePoint is a dynamic scoping capability in Microsoft Purview DLP that allows administrators to automatically target DLP policies to the right sites based on attributes such as site URL, site name, or custom site metadata. Unlike static scoping, which requires manually listing sites and maintaining them over time, adaptive scopes continuously evaluate site properties and auto\u2011include or exclude locations as they evolve. This enables scalable policy deployment, eliminates the 100\u2011site static policy limit, and delivers granular, and automated targeting.",
         "id": 549288,
         "locale": null,
-        "modified": "2026-01-21T00:15:51",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18428,9 +18538,9 @@
         "description": "Purview enablement in AI Foundry, allows Foundry admins to activate Microsoft Purview on their subscription. Once enabled, AI interaction data from all apps and agents flows into Purview for centralized compliance, governance, and posture management of AI data.",
         "id": 537271,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19239,12 +19349,12 @@
         "description": "Microsoft Teams now includes a capability that lets users flag calls they believe are unusual or suspicious. When a call is reported, the signal helps Microsoft strengthen security measures and reduce future unwanted or malicious call activity. This feature empowers users to actively contribute to real-time threat detection, enhancing organizational safety.",
         "id": 536573,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19751,12 +19861,12 @@
         "description": "Users can view and respond to activity across multiple tenants without switching accounts. You can triage notifications, reply to chats, and pin tenants to the left rail for quick access.\n\n",
         "id": 534490,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22587,12 +22697,12 @@
         "description": "Admins have access to a new overview page in the Teams Admin Center under the external collaboration section. This page allows admins to review and modify their organization's external collaboration settings. To make changes, admins can use a guided flow and select either the open or controlled preset modes, or choose to customize the settings.",
         "id": 523211,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23856,12 +23966,12 @@
         "description": "Introduce two official Microsoft-designed dark themes for SharePoint sites, delivering a modern, elegant look with improved visual comfort and accessibility. These themes provide consistent branding options and enhance user experience in low-light environments while maintaining compliance with Microsoft design standards.",
         "id": 526788,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29077,9 +29187,9 @@
         "description": "This feature introduces automated, role-targeted onboarding emails for Leaders to drive discovery of the Copilot Dashboard in Viva insights.",
         "id": 511801,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -29486,12 +29596,12 @@
         "description": "The Interpreter agent acts as a translator in Microsoft Teams meetings, allowing participants to listen to the meeting in their chosen language with real-time translation so speaking different languages isn\u2019t a barrier to effective understanding and collaboration. It's now available in Teams Rooms on Windows licensed for Teams Rooms Pro.",
         "id": 516571,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31508,12 +31618,12 @@
         "description": "This feature allows users to add only a sampled subset of search results to a review set, rather than adding the entire query output. Users can configure sampling parameters\u2014such as confidence level and sample size\u2014to ensure the subset meets their review objectives while reducing unnecessary data ingestion.",
         "id": 516578,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31575,12 +31685,12 @@
         "description": "Users will be able to click on \"Explain this' on an acronym, text box, an image, or even a complete slide, and get a detailed contextual explanation of the selected object.",
         "id": 516567,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31630,12 +31740,12 @@
         "description": "Users will be able to click on \"Explain this' on an acronym, text box, an image, or even a complete slide, and get a detailed contextual explanation of the selected object.",
         "id": 516566,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31685,12 +31795,12 @@
         "description": "Users will be able to click on \"Explain this' on an acronym, text box, an image, or even a complete slide, and get a detailed contextual explanation of the selected object.",
         "id": 516565,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -39829,12 +39939,12 @@
         "description": "New call controls and streamlined transitions enable simple and seamless transfers for Teams Phone users on Android devices.",
         "id": 502521,
         "locale": null,
-        "modified": "2025-10-21T23:15:01",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43154,12 +43264,12 @@
         "description": "With AI Workflows in the Workflows app, you will have access to custom AI-powered templates to automate complex tasks and streamline daily operations. AI Workflows enhance productivity by simplifying task execution and helping users stay organized throughout the day. Admins can enable this feature to equip users with intelligent automation tools that make managing work more efficient and intuitive.",
         "id": 500379,
         "locale": null,
-        "modified": "2025-09-18T23:15:06",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -78464,15 +78574,15 @@
     },
     {
         "created": "2025-03-20T23:45:15",
-        "description": "Sophisticated algorithms analyze the review set and pick out the best set of documents to review while hiding redundant information. A new analytics relationship view and detailed reports for each analytic run through the new unified reporting format allow you to have confidence in the results. The analytical information is available in both our new insights experience and export load files, allowing you to easily adopt this efficiency boost into any workflow.",
+        "description": "Microsoft has decided not to proceed with Efficient Review with Advanced Minimization Algorithms. We apologize for the inconvenience.",
         "id": 485766,
         "locale": null,
-        "modified": "2025-09-17T23:00:20",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -95498,12 +95608,12 @@
         "description": "Quickly understand strength of your network along with suggestions to conserve bandwidth if you are experiencing networking issues.",
         "id": 414513,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-03-17T23:00:24",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

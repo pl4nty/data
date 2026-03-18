@@ -232,6 +232,7 @@
         "EnableBackFillCmdAgent": true,
         "EnableBackfillGroupDisplayName": true,
         "EnableBackfillRegionInfoNew": true,
+        "EnableBackfillinActiveSubnetAvailableIPCount": true,
         "EnableBatchApplyTagsForNewDevices": true,
         "EnableBatchOperateDevice": true,
         "EnableBatchProcessInTimerFunction": true,

@@ -442,6 +442,14 @@
                 {
                     "applied_policy": "OptOut",
                     "domain": "zapier.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "copilot.microsoft.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "tiktok.com"
                 }
             ],
             "policies": [
@@ -2997,6 +3005,7 @@
         "BingAll": "false",
         "ContentServicesAll": "false",
         "EdgeAll": "false",
+        "FrontierAudience": "None",
         "M365CoreAll": "false",
         "MAIAll": "false",
         "MicrosoftUser": "false",

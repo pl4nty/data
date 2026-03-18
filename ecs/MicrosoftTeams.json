@@ -290,155 +290,6 @@
     "MicrosoftTeamsMiddleTierDeploymentConfig": {
         "TestFeature": "true"
     },
-    "MicrosoftTeamsOfficeStoreAppsBase64Mapping": {
-        "appsWithCdnUrls": [
-            {
-                "id": "05274a45-7312-4c23-8f64-d57fe4a28d6d",
-                "version": "1.0.1"
-            },
-            {
-                "id": "f46ad259-0fe5-4f12-872d-c737b174bcb4",
-                "version": "2.0.0.0"
-            },
-            {
-                "id": "67cf2c5a-db0e-4256-a423-14010cbeafdd",
-                "version": "1.1.0"
-            },
-            {
-                "id": "1d62a1f0-4be5-464e-8eb2-521cc317189c",
-                "version": "1.0"
-            },
-            {
-                "id": "db56b299-d2c0-4fdb-ac68-8af237a4456e",
-                "version": "1.0.4"
-            },
-            {
-                "id": "40733ef5-45e1-44f7-8fae-4a4ac3b23d77",
-                "version": "1.0"
-            },
-            {
-                "id": "f02fddc9-159a-4d58-9800-d94c4f64bfe8",
-                "version": "1.0"
-            },
-            {
-                "id": "b66766e5-61ce-4001-b2e6-6817710d6d02",
-                "version": "1.0.6"
-            },
-            {
-                "id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
-                "version": "1.0.0"
-            },
-            {
-                "id": "256ff1bc-fd16-4f82-aeb3-8a6977ff2ec4",
-                "version": "1.0.0"
-            },
-            {
-                "id": "220dc633-1f3d-4346-ad61-3805e88be8c0",
-                "version": "1.2.0"
-            },
-            {
-                "id": "28b871ff-85bf-48a5-9bee-364f2b74d104",
-                "version": "1.2.0"
-            },
-            {
-                "id": "bcb050bd-ad7e-4e0e-94a7-e38d7fa098c9",
-                "version": "1.0.1"
-            },
-            {
-                "id": "F708066C-137D-41A1-A88B-A6F3AE8982E2",
-                "version": "1.0.0.4"
-            },
-            {
-                "id": "90381cb0-998f-4ba3-9699-130201de5ddb",
-                "version": "1.0.0"
-            },
-            {
-                "id": "012be6ac-6f34-4ffa-9344-b857f7bc74e1",
-                "version": "1.0"
-            },
-            {
-                "id": "6cceb7cf-854d-4a5f-a11a-64ed78c8de0e",
-                "version": "1.0.0"
-            },
-            {
-                "id": "9b605b74-4185-4c1a-8e03-ec8c3d7fb973",
-                "version": "1.0.0"
-            },
-            {
-                "id": "37567f93-e2a7-4e2a-ad37-a9160fc62647",
-                "version": "1.0"
-            },
-            {
-                "id": "F4D81E8E-4500-44C2-8328-9E06CBE037C5",
-                "version": "1.2"
-            },
-            {
-                "id": "9ce8b7b7-4435-4edb-9c6f-205a9efe944d",
-                "version": "1.0"
-            },
-            {
-                "id": "14510476-fa9d-4dad-add9-aa5975a60a8b",
-                "version": "1.0.0"
-            },
-            {
-                "id": "1542629c-01b3-4a6d-8f76-1938b779e48d",
-                "version": "1.0"
-            },
-            {
-                "id": "4D0F0848-3FDD-4046-9976-D5568C8B71F4",
-                "version": "1.0.0"
-            },
-            {
-                "id": "afe63f50-aadc-4139-82dc-ba8da6270be9",
-                "version": "1.0"
-            },
-            {
-                "id": "606f1645-4ee6-4f8d-a94f-54744a8446b6",
-                "version": "1.0.0"
-            },
-            {
-                "id": "aa5fe6c5-f91c-45ed-88de-640e235ad21b",
-                "version": "1.1.1"
-            },
-            {
-                "id": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
-                "version": "1.7"
-            },
-            {
-                "id": "e542a070-4325-4794-ab33-ec988b944e3b",
-                "version": "1.2.2"
-            },
-            {
-                "id": "7C01AF81-AE7D-416E-98A3-C139CAE8CFB0",
-                "version": "1.0.1"
-            },
-            {
-                "id": "05ab3377-bd38-41dc-b917-b05449c13c78",
-                "version": "1.0.0"
-            },
-            {
-                "id": "dce6afe6-4718-4679-80b0-9281ef1b07b8",
-                "version": "1.0.0"
-            },
-            {
-                "id": "4892605a-e6eb-457c-9e45-c680503987c6",
-                "version": "1.0.0.1"
-            },
-            {
-                "id": "95bab789-a64a-4cbf-a83e-70b7a7b06193",
-                "version": "1.1"
-            }
-        ]
-    },
-    "MicrosoftTeamsPeopleCoreSvc": {
-        "ringSettings": {
-            "settings": {
-                "userMigration": {
-                    "Action": "None"
-                }
-            }
-        }
-    },
     "MicrosoftTeamsRetailServices": {
         "CORSSettings": {
             "AllowedDomains": [
@@ -772,15 +623,6 @@
                     "disableMessageForReplyChainTrim": true,
                     "showEXOContacts": false
                 }
-            }
-        }
-    },
-    "OsamaTest1": {
-        "Config": {
-            "BlackListConfig": {
-                "TenantIds": [
-                    "tenant2"
-                ]
             }
         }
     },
@@ -2191,38 +2033,6 @@
             }
         }
     },
-    "TeamsMailhook_RateLimiter_Config": {
-        "RateLimiterSettings": {
-            "DataCenterPolicy": {
-                "CustomGroups": [],
-                "DefaultGroup": {},
-                "DefaultS2SGroup": {
-                    "ApiNameList": null,
-                    "Description": "This rate limiter group include all S2S API",
-                    "Name": "DefaultS2S",
-                    "Rules": [
-                        {
-                            "MaxCount": 6,
-                            "State": "Enabled",
-                            "ThrottleWarningPercentage": 70,
-                            "Type": "AppIdClientTypeTenantId"
-                        },
-                        {
-                            "MaxCount": 8,
-                            "State": "Enabled",
-                            "ThrottleWarningPercentage": 80,
-                            "Type": "AppIdTenantId"
-                        }
-                    ]
-                }
-            },
-            "NodePolicy": {
-                "CustomGroups": [],
-                "DefaultGroup": {},
-                "DefaultS2SGroup": {}
-            }
-        }
-    },
     "TeamsMailhook_RegionSetting_Config": {
         "FeatureFlags": {
             "SharepointAppFoldersFeatureFlag": {
@@ -2257,6 +2067,7 @@
             "CHE": "ch",
             "CHL": "cl",
             "DEU": "de",
+            "DNK": "dk",
             "ESP": "es",
             "EUR": "emea",
             "FRA": "fr",
@@ -2294,6 +2105,7 @@
                 "CHE": "ch",
                 "CHL": "cl",
                 "DEU": "de",
+                "DNK": "dk",
                 "ESP": "es",
                 "EUR": "emea",
                 "FRA": "fr",
@@ -4314,9 +4126,6 @@
             "titleBarOverlay": false,
             "useTextScaleFactor": false
         }
-    },
-    "TestTest": {
-        "value": "nonmatch"
     },
     "TflNorthstar": {
         "core": {
