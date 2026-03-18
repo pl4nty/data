@@ -174,7 +174,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": false,
+                "adoPipelineTestFeatureFlag": true,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1056,6 +1056,7 @@
         },
         "GroupCopilotRolloutFlags": {
             "CheckTranscriptStateBeforeIngestion": true,
+            "EnableAMSImageDownloadForChatAgent": true,
             "EnableAdaptiveCardOnBotDialog": true,
             "EnableAdaptiveCardOnNotificationCallback": true,
             "EnableAgendaAdaptiveCardOnBotDialog": true,
@@ -1068,10 +1069,13 @@
             "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
+            "EnableDownloadImagesApi": true,
             "EnableDynamicSuggestedPrompts": true,
             "EnableEarlyCoTFromGCB": false,
             "EnableEarlyResponsesForInvokeBot": true,
             "EnableFetchCallConversationData": true,
+            "EnableHumanInTheLoopApprovalFlow": true,
+            "EnableImageUnderstanding": false,
             "EnableLIFTUserVoiceQuerySignal": true,
             "EnableLiftPropertiesCache": true,
             "EnableLocalizedAskFacilitator": true,
@@ -1079,6 +1083,8 @@
             "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
+            "EnableNewWelcomeMessageForChatAgent": true,
+            "EnableOdslHumanInTheLoopApprovalFlow": true,
             "EnablePlannerGroundingInPA": true,
             "EnableRTAFConfigureUrlValidation": true,
             "EnableRTAFJoinConversation": true,
@@ -1657,6 +1663,18 @@
             "WebSearchSkill_declarativeAgent": [
                 {
                     "Flight": "EnableWebSearchDA",
+                    "IsEnabled": true
+                }
+            ],
+            "enableImageUnderstanding": [
+                {
+                    "Flight": "enableImageUnderstanding",
+                    "IsEnabled": false
+                }
+            ],
+            "enableImageUnderstandingViaIntentDetection": [
+                {
+                    "Flight": "enableImageUnderstandingViaIntentDetection",
                     "IsEnabled": true
                 }
             ],

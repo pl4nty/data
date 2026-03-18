@@ -293,8 +293,6 @@
             "EGM_UseRedisCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
-            "EnableGetDirectThreatCISettings": true,
-            "EnablePartnerDeviceHealthComplianceAggregator2": true,
             "NoFallback_AADSTS500022": true,
             "NoFallback_AADSTS5000224": true,
             "NoFallback_AADSTS5000225": true,
@@ -363,7 +361,8 @@
             "EnableSearchCallRefactorDepSync": true,
             "EnableSearchECAWithoutDQCache": true,
             "EnableWindowsRestoreReporting": true,
-            "S2SAntiPattern": true
+            "S2SAntiPattern": true,
+            "UseSecondaryRegionCosmosDB": true
         }
     },
     "SVC_DeviceCheckin": {
@@ -421,7 +420,8 @@
             "EnrollDeviceActionAP": true,
             "EnrollDeviceActionNonAP": true,
             "FetchTrustedTpmCertificates": true,
-            "RecoveryUserId": true
+            "RecoveryUserId": true,
+            "ValidateEnrollmentKeyAttestation": true
         }
     },
     "SVC_Monolith_MAM": {
