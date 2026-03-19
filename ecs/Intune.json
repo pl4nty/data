@@ -370,6 +370,7 @@
             "AutopilotTimeOutUserEsp": true,
             "DeferMMPCEnrollmentDuringAPv2Provisioning": true,
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
+            "EnableAdditionalFilteringForCSPNonStoreNode": true,
             "EnableAllowOOBEUpdates": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
             "EnableSendingAttestStatusToReporting": true,

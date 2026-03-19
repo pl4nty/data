@@ -1567,6 +1567,7 @@
         "accountLinkingEnabled": true,
         "dummylokicopilotchildflight": true,
         "enableBRS": true,
+        "enableSkillsYouViewForUnlicensedUsers": true,
         "isProfanityCensorNotificationPanelEnabled": true
     },
     "Lps": {

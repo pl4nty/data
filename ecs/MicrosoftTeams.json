@@ -1690,6 +1690,12 @@
                     "IsEnabled": true
                 }
             ],
+            "meetingAgendaSkill_ProactiveAgendaAlwaysTimed": [
+                {
+                    "Flight": "AS.enableAgendaSkillProactiveAgendaAlwaysTimed",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",

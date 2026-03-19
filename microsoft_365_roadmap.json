@@ -1,13 +1,13 @@
 [
     {
-        "created": "2026-03-17T22:45:46",
-        "description": "Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR.",
-        "id": 558860,
+        "created": "2026-03-18T23:15:26",
+        "description": "Organizations can now manually apply Purview Information Protection sensitivity labels in Engage. Allowing admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage communities. End users in Engage will be able to then manually apply labels to communities and in turn classify and protect their sensitive data via privacy and external user access controls. ",
+        "id": 558684,
         "locale": null,
-        "modified": "2026-03-17T22:45:46",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -25,9 +25,6 @@
             },
             {
                 "tagName": "Preview"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -52,9 +49,116 @@
                 },
                 {
                     "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection - Sensitivity label support in Engage"
+    },
+    {
+        "created": "2026-03-18T23:15:26",
+        "description": "Administrators can choose a severity threshold and receive alerts when a new Edge update includes security fixes that meet or exceed that level, including zero day fixes. This helps organizations quickly identify updates that may require attention, while avoiding unnecessary notifications for routine releases.",
+        "id": 558435,
+        "locale": null,
+        "modified": "2026-03-18T23:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Security Update Alerts in the Edge management service"
+    },
+    {
+        "created": "2026-03-17T22:45:46",
+        "description": "Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR.",
+        "id": 558860,
+        "locale": null,
+        "modified": "2026-03-18T23:15:26",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -5088,12 +5192,12 @@
         "description": "IT admins can now customize the local OneDrive sync root folder name on users' Windows computers. By default, the folder is named \"OneDrive - {organization name},\" which can consume valuable path length for deeply nested files and folders. With this new policy, admins can set a shorter, organization-specific folder name \u2014 reducing path length issues and giving users a cleaner file system experience. ",
         "id": 557562,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10240,7 +10344,7 @@
         "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
         "id": 554927,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -10249,6 +10353,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -10279,6 +10392,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -12381,12 +12503,12 @@
         "description": "Copilot now uses M365 Graph data to provide more relevant, contextual responses. Updated settings make it easier to view and manage what Copilot remembers and your personalization preferences.",
         "id": 551195,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20703,9 +20825,9 @@
         "description": "At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps\u2014so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.",
         "id": 532728,
         "locale": null,
-        "modified": "2025-11-25T00:15:23",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -44389,15 +44511,15 @@
     },
     {
         "created": "2025-08-13T23:15:04",
-        "description": "Users can include an email in their prompt as a reference by typing '/' and selecting one from the ContextIQ menu when using either the full app or side pane Copilot Chat experience in Outlook. Copilot Chat will reference the included email as part of its response. This feature applies to users without a Microsoft 365 Copilot license (Copilot Chat users) and to users with a license (Microsoft 365 Copilot users) when they are toggled to web scope in chat.",
+        "description": "Users can include an email in their prompt as a reference by typing '/' and selecting one from the ContextIQ menu when using either the full app or side pane Copilot Chat experience in Outlook. Copilot Chat will reference the included email as part of its response. This feature applies to users without a Microsoft 365 Copilot license (Copilot Chat users) and to users with a license (Microsoft 365 Copilot users) when they are toggled to web scope in chat. Updated March 18, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. ",
         "id": 500377,
         "locale": null,
-        "modified": "2025-11-13T00:15:06",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -86082,9 +86204,9 @@
         "description": "Users can chat one-on-one with a SharePoint agent directly within Teams chat.",
         "id": 481825,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-03-18T23:15:26",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
