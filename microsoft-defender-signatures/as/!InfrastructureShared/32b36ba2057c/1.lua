@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b3f6b0122e\1.luac 
+-- Command line: lua\!InfrastructureShared\32b36ba2057c\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -19,10 +19,13 @@ if (this_sigattrlog[1]).matched and not isnull((this_sigattrlog[1]).utf8p2) then
     else
       l_0_1.SigCounter = 0
     end
+    if l_0_1.DelayedTriggerCount then
+      l_0_1.DelayedTriggerCount = l_0_1.DelayedTriggerCount + 1
+    end
     local l_0_5 = safeJsonSerialize(l_0_1)
     local l_0_6 = SafeGetUrlReputation
     local l_0_7 = {}
-    -- DECOMPILER ERROR at PC52: No list found for R7 , SetList fails
+    -- DECOMPILER ERROR at PC58: No list found for R7 , SetList fails
 
     local l_0_8 = {}
     l_0_8.SIG_CONTEXT = "BM"
@@ -44,9 +47,21 @@ if (this_sigattrlog[1]).matched and not isnull((this_sigattrlog[1]).utf8p2) then
         l_0_6 = l_0_7
       end
     end
+    do
+      do
+        l_0_7 = 6
+        l_0_8 = l_0_1.DelayedTriggerCount
+        if l_0_8 then
+          l_0_8 = l_0_1.DelayedTriggerCount
+          if l_0_8 < l_0_7 then
+            l_0_8 = bm
+            l_0_8 = l_0_8.trigger_sig_delayed
+            l_0_8("RemoteGenericRansomwareDelay:Type2", l_0_5, 570000)
+          end
+        end
+        return mp.CLEAN
+      end
+    end
   end
-end
-do
-  return mp.CLEAN
 end
 

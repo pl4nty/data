@@ -376,6 +376,7 @@ for l_0_24 = 1, l_0_0 do
                                 l_0_12.ip = l_0_18
                                 l_0_12.unscrubbed_username = l_0_14
                                 l_0_12.unscrubbed_domain = l_0_15
+                                l_0_12.DelayedTriggerCount = 0
                                 l_0_112 = safeJsonSerialize
                                 l_0_112 = l_0_112(l_0_12)
                                 ;
@@ -384,50 +385,50 @@ for l_0_24 = 1, l_0_0 do
                                   (bm.trigger_sig)("RemoteGenericRansomware:Malware", l_0_112)
                                 end
                               end
-                              -- DECOMPILER ERROR at PC831: Overwrote pending register: R43 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC832: Overwrote pending register: R43 in 'AssignReg'
 
                               ;
                               (bm.add_related_string)("sigcount_type2", l_0_98, bm.RelatedStringBMReport)
                               do return mp.INFECTED end
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out DO_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                              -- DECOMPILER ERROR at PC838: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC839: LeaveBlock: unexpected jumping out IF_STMT
 
                             end
                           end
