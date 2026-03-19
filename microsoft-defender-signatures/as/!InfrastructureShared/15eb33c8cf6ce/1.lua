@@ -41,7 +41,7 @@ do
         local l_0_6 = (string.lower)(l_0_3)
         local l_0_7 = contains
         local l_0_8 = l_0_6
-        l_0_7 = l_0_7(l_0_8, {"\\node_modules\\", "/node_modules/", "\\.openclaw\\skills\\"})
+        l_0_7 = l_0_7(l_0_8, {"\\node_modules\\", "/node_modules/", "\\.openclaw\\skills\\", "\\openclaw-restart-", "\\node-compile-cache\\"})
         if l_0_7 then
           l_0_7 = mp
           l_0_7 = l_0_7.CLEAN

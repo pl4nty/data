@@ -23,6 +23,7 @@ do
   if l_0_4 == nil then
     return mp.CLEAN
   end
+  l_0_4 = l_0_4:gsub(":%\\\\", "://")
   local l_0_5 = {}
   l_0_5.SIG_CONTEXT = "CMD"
   l_0_5.CONTENT_SOURCE = "MSIEXEC_CMDLINE"
