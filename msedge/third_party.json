@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33027155,
-    "file_count": 4028
+    "size": 33044052,
+    "file_count": 4030
   },
   {
     "name": "boringssl",
@@ -91,8 +91,8 @@
   },
   {
     "name": "catapult",
-    "size": 10214066,
-    "file_count": 767
+    "size": 4938072,
+    "file_count": 338
   },
   {
     "name": "checkstyle",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36565084,
+    "size": 36565105,
     "file_count": 107
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19232235,
+    "size": 19225067,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4210380,
+    "size": 4212456,
     "file_count": 596
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1437917,
+    "size": 1456306,
     "file_count": 23
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7315796,
+    "size": 7318587,
     "file_count": 190
   },
   {

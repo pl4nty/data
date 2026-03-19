@@ -23,6 +23,7 @@ enum LLMPayloadMonitorConfig {
 enum MatchedBy {
   kNoMatch,
   kByExactURL,
+  kByPrefixURL,
   kByDomain,
 };
 
