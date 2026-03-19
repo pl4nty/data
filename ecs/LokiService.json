@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260314.10.0",
-        "CalendarCompanionMsitVersion": "1.20260308.8.0",
+        "CalendarCompanionDFVersion": "1.20260317.9.0",
+        "CalendarCompanionMsitVersion": "1.20260314.10.0",
         "CalendarCompanionProdVersion": "1.20260307.3.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -300,7 +300,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260215.5.0",
+        "LpcVersion": "1.20260309.1.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,

@@ -810,6 +810,7 @@
         "IsEnabledTriggerNextGen": true,
         "IsEndpointConfigrationEnabled": true,
         "IsReadyToExpandDiagEHNS": true,
+        "IsSplitApiEnabled": false,
         "IsWebhookEnabled": true,
         "LimitW365AADSyncTimerInterval": true,
         "MAC_Refresh_Token_IWP": true,
@@ -975,7 +976,6 @@
         "UseArrayContainsForANCInUse": true,
         "UseCopilotPlusWallpaper": true,
         "ValidateImageSizeForFrontline": true,
-        "ValidationEnvironmentNeedToChange": true,
         "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
