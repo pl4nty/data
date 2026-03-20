@@ -1433,6 +1433,88 @@
                 }
             }
         },
+        "Floodgate_Campaign_Harmony.59373b91-e244-4786-8bec-867fd1dcf702": {
+            "CampaignId": "59373b91-e244-4786-8bec-867fd1dcf702",
+            "EndTimeUtc": "2026-04-15T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-03-16T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTimeNPS",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very Unlikely",
+                                    "questionLabel": "How likely are you to recommend the M365 Copilot App to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/59373b91-e244-4786-8bec-867fd1dcf702/c62cb3d4-63e5-4cbd-bb26-adbcc8d3f685/Web-Harmony/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_Harmony.7f516662-457b-42c1-b1a8-747e2595f322": {
             "CampaignId": "7f516662-457b-42c1-b1a8-747e2595f322",
             "EndTimeUtc": "2026-04-30T07:00:00Z",
