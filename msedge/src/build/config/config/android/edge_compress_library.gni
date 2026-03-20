@@ -29,5 +29,4 @@ edge_library_always_compress = [
   "libchrome.so",
   "libc++_shared.so",
   "libbingopus.so",
-  "libtrace-canary.so",
 ]
