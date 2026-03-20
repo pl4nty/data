@@ -1,5 +1,384 @@
 [
     {
+        "created": "2026-03-19T23:30:43",
+        "description": "This update introduces logged-in user details (user email) on the device onboarding page for Windows devices bringing it in line with the experience for MacOS devices. \u200bAdmins can now see which user is currently signed in on a device, making It faster to confirm ownership and troubleshoot issues. \u200b",
+        "id": 559028,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Logged-in user details on the Purview device onboarding page"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "Provides access to the same device health details currently available through the export function on the device onboarding page. \u200bWith the new device status API, customers can pull device-level information directly into their own BI tools, dashboards, and workflows, eliminating manual exports and making it easier to automate reporting at scale.",
+        "id": 559027,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Endpoint DLP Device Status API"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "Microsoft Purview network data security now integrates with Palo Alto Prisma Access, extending discovery and protection to network traffic. With this integration, new and existing Palo Alto Prisma Access customers can configure Microsoft Purview collection and data loss prevention policies to discover and protect sensitive data shared with unmanaged cloud apps via HTTP/HTTPS, using the same classifiers, sensitive information types, and sensitivity labels used in other Purview policies. This integration further enriches Purview Data Security Posture Management (DSPM), Insider Risk Management (IRM), enables data security & compliance for AI interactions, and more.",
+        "id": 558939,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Unmanaged cloud app discovery and protection with Microsoft Purview and Palo Alto Prisma Access"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "Now when composing emails, users can change the font color and add highlight color to their text. Additionally, users will now have easy access to recently used fonts in the font list.",
+        "id": 558936,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Font Improvements in Outlook for Android"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "The new content composition experience makes it easier and faster to share in Viva Engage with a cleaner, more intuitive publishing experience. It brings clearer layout, better accessibility, and smarter organization of tools\u2014so you can focus on creating great posts without extra clicks or clutter.",
+        "id": 558935,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Modernized content composition experience in Engage"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "You can now select multiple appointments and meetings in the new Outlook for Windows and Teams calendars. Use Ctrl+click to select individual items, or Shift+click to quickly select a range events. Once selected, you can take common actions across all selected items. Click anywhere outside the selection to clear it. #newoutlookforwindows",
+        "id": 558857,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Multiselect in the New Outlook and Teams calendars"
+    },
+    {
+        "created": "2026-03-19T23:30:43",
+        "description": "Microsoft Word, Microsoft PowerPoint, and Microsoft Excel files now open in a standardized preview in Teams on Android and iOS, delivering faster performance, improved reliability, and a more consistent viewing experience.",
+        "id": 558679,
+        "locale": null,
+        "modified": "2026-03-19T23:30:43",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Standardized preview experience for Word, PowerPoint, and Excel files"
+    },
+    {
         "created": "2026-03-18T23:15:26",
         "description": "Organizations can now manually apply Purview Information Protection sensitivity labels in Engage. Allowing admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage communities. End users in Engage will be able to then manually apply labels to communities and in turn classify and protect their sensitive data via privacy and external user access controls. ",
         "id": 558684,
@@ -6450,9 +6829,9 @@
         "description": "Infinite scroll enables users to continuously browse older chat sessions by automatically loading additional conversations as they scroll. This creates a smoother, more modern chat history experience",
         "id": 557348,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7286,9 +7665,9 @@
         "description": "Meeting recordings now automatically inherit the meeting\u2019s sensitivity label. When label inheritance is enabled in sensitivity label policies, a labeled meeting applies the same label to its MP4 recording, ensuring access controls, data handling rules, and Copilot or agent responses based on transcripts consistently respect the meeting\u2019s sensitivity end to end.",
         "id": 557178,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9131,9 +9510,9 @@
         "description": "Loop meeting notes now automatically inherit your meeting\u2019s sensitivity label. When admins enable label inheritance in the sensitivity label policy, any labeled meeting applies the same label to its Loop meeting notes, ensuring protections like encryption, access controls, and data handling rules carry forward consistently. This also ensures that Copilot and agent responses based on Loop meeting notes accurately reflect the meeting\u2019s sensitivity, keeping confidential content protected end to end.",
         "id": 555857,
         "locale": null,
-        "modified": "2026-02-06T23:00:02",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9869,12 +10248,12 @@
         "description": "Administrators can now set organization-wide policies to automatically expire \"People in your organization\" sharing links after a specified period. This helps organizations maintain tighter control over internal content sharing by ensuring links don't remain active indefinitely. Configure expiration timeframes that align with your organization's data governance requirements\u2014whether that's 30 days, 90 days, or a custom period.",
         "id": 553220,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12076,12 +12455,12 @@
         "description": "The image upload feature in Microsoft 365 Copilot allows users to upload images and seek insights from Copilot based on those images. We are bringing this capability to Government Cloud environments, delivering parity with existing Copilot experiences while ensuring the functionality operates within applicable Government Cloud boundaries.",
         "id": 551194,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -18203,12 +18582,12 @@
         "description": "Use scatter image effect directly in Copilot Chat and the create experience to further customize your visual artifacts generated with Copilot.",
         "id": 537288,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34660,9 +35039,9 @@
         "description": "Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.",
         "id": 511791,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -86204,10 +86583,10 @@
         "description": "Users can chat one-on-one with a SharePoint agent directly within Teams chat.",
         "id": 481825,
         "locale": null,
-        "modified": "2026-03-18T23:15:26",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
-        "publicPreviewDate": "January CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -99742,9 +100121,9 @@
         "description": "Users will be able to automatically see their auto-mapped calendars when toggling from classic Outlook to the new. #newoutlookforwindows",
         "id": 415168,
         "locale": null,
-        "modified": "2026-01-08T00:15:46",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103702,9 +104081,9 @@
         "description": "Office for the web in Microsoft 365 supports the application of sensitivity labels with user-defined permissions.",
         "id": 468888,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-19T23:30:43",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

@@ -1052,7 +1052,8 @@
     },
     "TeamsCopilotAggregator_UserCtx": {
         "CustomerServiceCopilotRolloutFlags": {
-            "EnableBookings": true
+            "EnableBookings": true,
+            "EnableUnifiedLiveChatAgent": true
         },
         "GroupCopilotRolloutFlags": {
             "CheckTranscriptStateBeforeIngestion": true,
