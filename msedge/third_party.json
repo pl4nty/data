@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15184379,
+    "size": 15184405,
     "file_count": 844
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33056864,
+    "size": 33058102,
     "file_count": 4030
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16917013,
+    "size": 16987203,
     "file_count": 1941
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43918279,
-    "file_count": 3286
+    "size": 43922777,
+    "file_count": 3288
   },
   {
     "name": "googletest",
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19225067,
+    "size": 19223531,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4212456,
+    "size": 4212915,
     "file_count": 596
   },
   {
@@ -761,12 +761,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2616698,
+    "size": 2642648,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7318587,
+    "size": 7370048,
     "file_count": 190
   },
   {
@@ -796,7 +796,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29933364,
+    "size": 29933796,
     "file_count": 629
   },
   {
