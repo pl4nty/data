@@ -2,6 +2,18 @@
 var CloudExperienceHost;
 (function (CloudExperienceHost) {
     class ExpeditedUpdate {
+        static emitCtacTelemetry() {
+            try {
+                CloudExperienceHost.Environment.getAnalyticsInfoSystemPropertiesAsync('["+WU", "+IRISCLIENT"]').then((attributes) => {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_emitCtacTelemetry", attributes);
+                }, (err) => {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_emitCtacTelemetry_failure", CloudExperienceHost.GetJsonFromError(err));
+                });
+            }
+            catch (err) {
+                CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_emitCtacTelemetry_failure", CloudExperienceHost.GetJsonFromError(err));
+            }
+        }
         static getShouldSkipAsync() {
             let localAccountManager = new CloudExperienceHostBroker.Account.LocalAccountManager();
             let zdpManager = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeZdpManagerStaticsCore");
@@ -14,6 +26,9 @@ var CloudExperienceHost;
                 }
                 catch (error) {
                 }
+            }
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPCtacTelemetry")) {
+                this.emitCtacTelemetry();
             }
             return WinJS.Promise.wrap(skipExpeditedUpdate);
         }
