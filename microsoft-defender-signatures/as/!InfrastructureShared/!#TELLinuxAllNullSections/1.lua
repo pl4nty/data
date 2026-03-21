@@ -10,5 +10,7 @@ for l_0_4 = 1, elfhdr.shnum do
     return mp.CLEAN
   end
 end
+;
+(mp.set_mpattribute)("MpEnableSegmentBasedElfScanning")
 return mp.INFECTED
 
