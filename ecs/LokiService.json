@@ -1620,6 +1620,27 @@
         "M365CompanionSystemTrayMsitVersion": "1.20250930.2.0",
         "M365CompanionSystemTrayProdVersion": "1.20250930.2.0"
     },
+    "M365Companions": {
+        "CalendarCompanionDFVersion": "1.20260318.9.0",
+        "CalendarCompanionMsitVersion": "1.20260314.10.0",
+        "CalendarCompanionProdVersion": "1.20260307.3.0",
+        "FileSearchCompanionDFVersion": "1.20260317.9.0",
+        "FileSearchCompanionMsitVersion": "1.20260310.11.0",
+        "FileSearchCompanionProdVersion": "1.20260223.8.0",
+        "HostAppVersion": "1.20260307.3.0",
+        "PeopleInTaskbarDFVersion": "1.20260318.9.0",
+        "PeopleInTaskbarMsitVersion": "1.20260311.10.0",
+        "PeopleInTaskbarProdVersion": "1.20260128.9.0",
+        "PeopleInTaskbarVersion": "1.20260128.9.0",
+        "enableBackgroundAuthOnHost_shared": 1,
+        "enableHostRingBuckets": 1,
+        "hostTrySuspend_shared": 1,
+        "logSuspensionMemorySnapshots": 1,
+        "lokiConfigMgrAsync": 1,
+        "suspensionManagerParameters": {
+            "dismissSuspensionDelaySeconds": 180
+        }
+    },
     "MicrosoftSearch": {
         "EnablePeopleCentricSearchController": false,
         "copilotHandoffFree_shared": true,
