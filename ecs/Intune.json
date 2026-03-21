@@ -413,6 +413,7 @@
     },
     "SVC_MAMAdmin": {
         "FlightingV2": {
+            "EnableSubstratePartnerTokenProviderV2": true,
             "WindowsManagedAppClipboardSharingLevelFlightId": true
         }
     },
