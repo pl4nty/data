@@ -326,6 +326,7 @@
         "EnableCMKForDedicated": false,
         "EnableCMKWithCDPStorageResourceManager": true,
         "EnableCMKWithWDS": true,
+        "EnableCOGsForRetentionSnapshot": true,
         "EnableCPCAIEnabledReport": true,
         "EnableCPCAgentHealthUX": true,
         "EnableCPCInactiveToPendingTranslation": true,
