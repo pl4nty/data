@@ -345,7 +345,8 @@
     },
     "SVC_DataPlatformMetadata": {
         "FlightingV2": {
-            "EnableSchemaOrchestration": true
+            "EnableSchemaOrchestration": true,
+            "EnableSchemaRetrievalFromDPMService": true
         }
     },
     "SVC_Dep": {
