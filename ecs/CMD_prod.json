@@ -716,6 +716,7 @@
         "EnableW365AMeterForHotPool": true,
         "EnableW365AMeterForOpal": true,
         "EnableW365AMeterForWarmPoolEvent": true,
+        "EnableW365AMeterHotDeviceAggregation": true,
         "EnableW365DeviceSync": true,
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableW365MeterDataCompatibility": true,
