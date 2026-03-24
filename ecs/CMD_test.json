@@ -72,7 +72,6 @@
         "ClientAgent_CPC_EQUAL_EnableAgentHealthCheckAPI": true,
         "ClientAgent_CPC_FleetManagement_DisableBigFourRedirectionsInPostProvisioning": true,
         "ClientAgent_CPC_FleetManagement_DisableBigFourRedirectionsInPostProvisioning_DevBox": false,
-        "ClientAgent_CPC_FleetManagement_EnableLocalAdminPluginManagedCode": true,
         "ClientAgent_CPC_FleetManagement_EnableVsbDisconnectOnIdle": true,
         "ClientAgent_CPC_FleetManagement_EnableWindowsUpdateForceScan": true,
         "ClientAgent_CPC_HostingAndInsights_PreShutdown_Https_Priority": true,

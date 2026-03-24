@@ -493,6 +493,7 @@
     "SVC_RemoteAssist": {
         "FlightingV2": {
             "EnableDedupe": true,
+            "FicGcchNewApp": true,
             "ManagedInstallerTargeting": true,
             "ManagedInstallerTargetingAPDP": true,
             "RedirectActionFlow": true
