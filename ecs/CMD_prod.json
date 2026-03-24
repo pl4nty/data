@@ -519,6 +519,7 @@
         "EnableNestedVirtualizationFor2Core": false,
         "EnableNestedVirtualizationFor4Core": false,
         "EnableNestedVirtualizationFor8Core": false,
+        "EnableNetworkReferenceCheckStateOverrideOnEndpointConnectivityFailure": true,
         "EnableNewReactViewPolicyUX": true,
         "EnableNewStorageBlobForCitrixAgent": true,
         "EnableNextPickUpTime": true,
@@ -1018,6 +1019,7 @@
         }
     },
     "MMD": {
+        "AITargetingPcsMockEnabled": true,
         "AccessControlAuth": true,
         "AddIntuneTranslatorResult": true,
         "AlternativeSubscriptionSync": false,

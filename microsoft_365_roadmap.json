@@ -81724,67 +81724,6 @@
     },
     {
         "created": "2025-03-13T23:00:33",
-        "description": "We are excited to announce the addition of two post creation options\u2014Article and Question\u2014to the centralized creation button in Viva Engage for premium users. Starting April 2025, a Viva Engage premium licensed user will be able to create an article or a question post type directly by clicking on the \"Create new\" button, easing the process of creation of these post types, while also helping users discover them quicker. Kindly note that this roll out does not entail adding new types of content creation, but brings forth a unified and easier way to create these post types when a user is already licensed to use them.\nBy 'Viva Engage premium licensed user', we mean this feature is available for users licensed to the Microsoft Viva Suite or the Microsoft Viva Employee Communications and Communities Suite. ",
-        "id": 484852,
-        "locale": null,
-        "modified": "2025-05-23T22:15:52",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Engage - Create articles and questions more easily with the updated \"Create new\" button."
-    },
-    {
-        "created": "2025-03-13T23:00:33",
         "description": "Sync failure details pop-up will now have detailed error description and next steps.",
         "id": 477822,
         "locale": null,
@@ -87260,79 +87199,6 @@
             ]
         },
         "title": "OneDrive: Annotate with Apple Pencil Experience on OneDrive for iOS"
-    },
-    {
-        "created": "2025-02-19T00:00:11",
-        "description": "Card animation will enable motion for web parts on Pages and News.",
-        "id": 481510,
-        "locale": null,
-        "modified": "2025-05-23T22:15:52",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: Card animation"
     },
     {
         "created": "2025-02-19T00:00:11",
@@ -93879,55 +93745,6 @@
             ]
         },
         "title": "Microsoft Teams: In-meeting Chat, Copilot, and Notes panes can be popped out from the meeting window"
-    },
-    {
-        "created": "2024-12-20T23:15:46",
-        "description": "This release will add a dwell time graph to Amplify reporting. The dwell time graph will indicate the average time users spend reading a publication, giving important insight into the engagement of users with the Amplify campaign. This graph will be supported from SharePoint and Outlook channels.",
-        "id": 421193,
-        "locale": null,
-        "modified": "2025-05-23T22:15:52",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Amplify - Support for dwell time graph in Amplify reporting"
     },
     {
         "created": "2024-09-26T20:00:09",
