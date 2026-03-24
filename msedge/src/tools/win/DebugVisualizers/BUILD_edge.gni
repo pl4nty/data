@@ -1,0 +1,12 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+template("edge_overlay_config_chrome") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", TESTONLY_AND_VISIBILITY)
+    forward_variables_from(invoker, TESTONLY_AND_VISIBILITY)
+
+    # Edge overlays:
+    ldflags +=
+        [ "/NATVIS:" + rebase_path("microsoftedge.natvis", root_build_dir) ]
+  }
+}
