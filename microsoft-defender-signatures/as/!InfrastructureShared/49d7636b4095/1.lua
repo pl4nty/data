@@ -6,7 +6,7 @@
 if not IsProcNameInParentProcessTree("CMDHSTR", "svchost.exe", 1) then
   return mp.CLEAN
 end
-local l_0_0 = getAndDecodePowershellEncodedCommand("CMDHSTR")
+local l_0_0 = getAndDecodePowershellEncodedCommand("CMDHSTR", 800)
 if l_0_0 == nil or #l_0_0 <= 50 or #l_0_0 >= 800 then
   return mp.CLEAN
 end

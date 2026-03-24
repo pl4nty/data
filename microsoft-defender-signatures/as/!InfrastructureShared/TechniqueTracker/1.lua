@@ -3207,52 +3207,56 @@ isKnownCleanPathContext = function(l_92_0)
   return false
 end
 
-getAndDecodePowershellEncodedCommand = function(l_93_0)
+getAndDecodePowershellEncodedCommand = function(l_93_0, l_93_1)
   -- function num : 0_92
   if l_93_0 == nil then
     return 
   end
-  local l_93_1 = l_93_0
   local l_93_2 = l_93_0
-  local l_93_3 = (string.lower)(l_93_2)
-  if l_93_3 == "cmdhstr" or l_93_3 == "bm" or l_93_3 == "amsi" or l_93_3 == "rtp" then
-    l_93_2 = GetProcessPpidByScenario(l_93_2)
+  local l_93_3 = l_93_0
+  local l_93_4 = (string.lower)(l_93_3)
+  if l_93_4 == "cmdhstr" or l_93_4 == "bm" or l_93_4 == "amsi" or l_93_4 == "rtp" then
+    l_93_3 = GetProcessPpidByScenario(l_93_3)
   end
-  if l_93_2:sub(1, 4) == "pid:" then
-    l_93_1 = (mp.GetProcessCommandLine)(l_93_2)
+  if l_93_3 ~= nil and l_93_3:sub(1, 4) == "pid:" then
+    l_93_2 = (mp.GetProcessCommandLine)(l_93_3)
   end
-  if l_93_1 == nil or (string.find)((string.lower)(l_93_1), " -e", 1, true) == nil then
+  if l_93_2 == nil or (string.find)((string.lower)(l_93_2), " -e", 1, true) == nil then
     return nil
   end
   do
-    if not l_93_1:match("[%-/]%s*[Ee][Nn][Cc][Oo][Dd][Ee][Dd][Cc][Oo][Mm][Mm][Aa][Nn][Dd]%s+\"([A-Za-z0-9+/=]+)\"") and not l_93_1:match("[%-/]%s*[Ee][Nn][Cc]%s+\"([A-Za-z0-9+/=]+)\"") then
-      local l_93_4, l_93_5, l_93_7, l_93_9 = l_93_1:match("[%-/]%s*[Ee]%s+\"([A-Za-z0-9+/=]+)\"")
+    if not l_93_2:match("[%-/]%s*[Ee][Nn][Cc][Oo][Dd][Ee][Dd][Cc][Oo][Mm][Mm][Aa][Nn][Dd]%s+\"([A-Za-z0-9+/=]+)\"") and not l_93_2:match("[%-/]%s*[Ee][Nn][Cc]%s+\"([A-Za-z0-9+/=]+)\"") then
+      local l_93_5, l_93_6, l_93_7, l_93_9, l_93_11, l_93_13 = l_93_2:match("[%-/]%s*[Ee]%s+\"([A-Za-z0-9+/=]+)\"")
     end
-    -- DECOMPILER ERROR at PC61: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC63: Confused about usage of register: R5 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC65: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC67: Confused about usage of register: R5 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC72: Confused about usage of register: R5 in 'UnsetPending'
 
     do
-      if l_93_4 then
-        local l_93_6 = nil
-        if (MpCommon.Base64Decode)(l_93_4) then
-          return normalize_unicode((MpCommon.Base64Decode)(l_93_4))
+      if l_93_5 and (l_93_1 == nil or #l_93_5 <= l_93_1) then
+        local l_93_8 = nil
+        if (MpCommon.Base64Decode)(l_93_5) then
+          return normalize_unicode((MpCommon.Base64Decode)(l_93_5))
         end
         return nil
       end
       do
-        if not l_93_1:match("[%-/]%s*[Ee][Nn][Cc][Oo][Dd][Ee][Dd][Cc][Oo][Mm][Mm][Aa][Nn][Dd]%s+([A-Za-z0-9+/=]+)") and not l_93_1:match("[%-/]%s*[Ee][Nn][Cc]%s+([A-Za-z0-9+/=]+)") then
-          local l_93_8, l_93_10 = , l_93_1:match("[%-/]%s*[Ee]%s+([A-Za-z0-9+/=]+)")
+        if not l_93_2:match("[%-/]%s*[Ee][Nn][Cc][Oo][Dd][Ee][Dd][Cc][Oo][Mm][Mm][Aa][Nn][Dd]%s+([A-Za-z0-9+/=]+)") and not l_93_2:match("[%-/]%s*[Ee][Nn][Cc]%s+([A-Za-z0-9+/=]+)") then
+          local l_93_10, l_93_12, l_93_14 = , l_93_2:match("[%-/]%s*[Ee]%s+([A-Za-z0-9+/=]+)")
         end
-        -- DECOMPILER ERROR at PC89: Confused about usage of register: R5 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC96: Confused about usage of register: R6 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC93: Confused about usage of register: R5 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC100: Confused about usage of register: R6 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC105: Confused about usage of register: R6 in 'UnsetPending'
 
         do
-          if l_93_10 then
-            local l_93_11 = nil
-            if (MpCommon.Base64Decode)(l_93_10) then
-              return normalize_unicode((MpCommon.Base64Decode)(l_93_10))
+          if l_93_12 and (l_93_1 == nil or #l_93_12 <= l_93_1) then
+            local l_93_15 = nil
+            if (MpCommon.Base64Decode)(l_93_12) then
+              return normalize_unicode((MpCommon.Base64Decode)(l_93_12))
             end
           end
           return nil
