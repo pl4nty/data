@@ -22,7 +22,7 @@ if l_0_1 == nil then
   return mp.CLEAN
 end
 l_0_1 = (string.lower)(l_0_1:gsub("%W", ""))
-if (string.find)(l_0_1, "utorrent", 1, true) or (string.find)(l_0_1, "trretweb", 1, true) or (string.find)(l_0_1, "utrrntweb", 1, true) or (string.find)(l_0_1, "utrrent", 1, true) or (string.find)(l_0_1, "utetweb", 1, true) or (string.find)(l_0_1, "utetclassic", 1, true) or (string.find)(l_0_1, "uorrntclassic", 1, true) or (string.find)(l_0_1, "uenweb", 1, true) then
+if (string.find)(l_0_1, "utorrent", 1, true) or (string.find)(l_0_1, "trretweb", 1, true) or (string.find)(l_0_1, "utrrntweb", 1, true) or (string.find)(l_0_1, "utrrent", 1, true) or (string.find)(l_0_1, "utetweb", 1, true) or (string.find)(l_0_1, "utetclassic", 1, true) or (string.find)(l_0_1, "uorrntclassic", 1, true) or (string.find)(l_0_1, "uentclassic", 1, true) or (string.find)(l_0_1, "tweb", 1, true) or (string.find)(l_0_1, "uenweb", 1, true) then
   (mp.set_mpattribute)("PUA:Block:uTorrent_BundleInstaller")
   return mp.INFECTED
 end
