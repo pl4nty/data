@@ -1,5 +1,365 @@
 [
     {
+        "created": "2026-03-23T23:15:39",
+        "description": "This dashboard will allow admins to view the device health across all their devices to ensure the system is healthy and ready to receive policy updates and quickly identify devices that are not ready.",
+        "id": 559267,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Device Health Reporting Dashboard"
+    },
+    {
+        "created": "2026-03-23T23:15:39",
+        "description": "Microsoft Teams stores call logs in several persistent locations, such as CDR logs. Currently, these logs are retained indefinitely. However, regulatory requirements in various countries specify maximum retention periods for calling-related logs. This discrepancy creates a compliance gap, as the existing retention practices may not meet regulatory obligations. \nAdditionally, tenant administrators may prefer to retain data for longer periods to improve the user experience. Therefore, this solution would help organizations ensure that Microsoft Teams remains compliant with regulatory mandates while also supporting evolving product features and business needs.",
+        "id": 559261,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - DLM Retention support Microsoft Teams call logs"
+    },
+    {
+        "created": "2026-03-23T23:15:39",
+        "description": "Create an interactive report, visualization, or dashboard using Copilot Pages. Copilot uses web data and the latest LLM models and can also ground responses in your Work data.",
+        "id": 558940,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create interactive visuals in Copilot Pages"
+    },
+    {
+        "created": "2026-03-23T23:15:39",
+        "description": "Now you can add Microsoft Planner as a tab in shared and private channels in Microsoft Teams, which allows to create and manage tasks directly within the channel.\n \n",
+        "id": 558928,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Microsoft Planner tab support for shared and private channels in Microsoft Teams"
+    },
+    {
+        "created": "2026-03-23T23:15:39",
+        "description": "Emails with reactions disallowed will now see the Reactions button grayed out correctly. Additionally, when any attempt to react fails, the local update will no longer remain onscreen and be properly undone.",
+        "id": 558442,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/manage/manage-outlook-reactions?view=o365-worldwide",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Improved handling of disallowed and failed email reactions"
+    },
+    {
+        "created": "2026-03-23T23:15:39",
+        "description": "File Creation and File Modification conditions in Microsoft Purview DLP for SharePoint and OneDrive and AutoLabelling will give organizations more precise control over DLP policy definition. These conditions allow admins to configure policies based on when the files were created or last modified, enabling policies that target newly created documents, recently edited files, or older content that may require stricter governance. With these new date-based predicates, Purview DLP delivers stronger lifecycle-aware protection, improved policy accuracy, and greater flexibility in securing data across SPOD.",
+        "id": 557590,
+        "locale": null,
+        "modified": "2026-03-23T23:15:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: File Creation/Modification conditions in DLP for Sharepoint/OneDrive and AutoLabelling"
+    },
+    {
         "created": "2026-03-20T22:00:36",
         "description": "Copilot Notebooks enables users to generate PowerPoint presentations directly from the content and references collected in a notebook. Using the notebook\u2019s curated context, Copilot creates a structured, editable slide deck that users can open and refine in PowerPoint, helping turn research, notes, and insights into shareable presentations more quickly.",
         "id": 558938,
@@ -162,10 +522,10 @@
         "description": "Attendee capacity packs provide increased capacity limits for Teams events. Organizers can scale event attendance beyond base limits while maintaining a consistent Teams events experience. ",
         "id": 558856,
         "locale": null,
-        "modified": "2026-03-20T22:00:36",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -180,6 +540,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -201,6 +564,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -1555,7 +1921,7 @@
         "description": "Intelligent meeting recap will now include video-based recaps. Video recap creates narrated video highlights from recorded meetings, featuring key takeaways and short clips that showcase important moments.",
         "id": 558540,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -1564,12 +1930,6 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
             },
             {
                 "tagName": "Desktop"
@@ -1597,12 +1957,6 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -2043,9 +2397,9 @@
         "description": "SMB Admins can use Microsoft 365 Admin Agent in Microsoft Teams to complete common admin tasks and get guidance on critical setup actions.  Admin Agent can add users and assign licenses on behalf of the admin, as well as provide guidance on key SMB related topics such as organisation setup, security settings, and password resets\u2014without leaving the Teams interface.",
         "id": 558255,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3446,9 +3800,9 @@
         "description": "We're improving the experience when the active meeting window is minimized. Users can now raise their hand and send reactions without restoring the full meeting window. They can also choose between two minimized views: an expanded view that shows up to 4 participant videos, or a compact view that does not display other participants' video.",
         "id": 557179,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6712,9 +7066,9 @@
         "description": "The Microsoft Teams live chat widget lets customers engage in one to one conversations with your business directly from your website, and now also enables appointment scheduling.",
         "id": 557172,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9778,12 +10132,12 @@
         "description": "Shared display mode in Teams is now available in government CCC-H and DoD environments, enabling more seamless and private meeting hosting from your PC. Additionally, peripheral detection for bring-your-own-device spaces is available for inventory management and reporting through the Teams Rooms Pro Management portal.",
         "id": 553592,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -14383,12 +14737,12 @@
         "description": "Signers will be able to add their electronic signature to PDFs using a stylus, touch, or mouse, in addition to the existing typed signature option.",
         "id": 548670,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17970,9 +18324,9 @@
         "description": "Language under Settings > Privacy, search, and services > Cookies will be clarified to better describe the choices users have in managing third-party cookies.",
         "id": 541832,
         "locale": null,
-        "modified": "2025-12-12T23:00:26",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18012,7 +18366,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: clarify choices surrounding third-party cookie settings"
+        "title": "Microsoft Edge: Clarify choices surrounding third-party cookie settings"
     },
     {
         "created": "2025-12-12T00:15:16",
@@ -18135,9 +18489,9 @@
         "description": "The Data Security Posture Agent is designed to expand the capacity of data security admins as they proactively work to stay on top of a dynamic data and risk landscape within their organization. Its primary job is to help discover sensitive data across your data estate. This agent is designed to analyze and search documents, emails, and messages that match the natural-language discovery intent requested by the user and assess associated risks. By moving beyond traditional keyword and information-type analysis and harnessing the power of LLMs, this agent enables organizations to identify risks based on the actual purpose and context of the content and take appropriate action.",
         "id": 542188,
         "locale": null,
-        "modified": "2025-12-12T23:00:26",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26682,9 +27036,9 @@
         "description": "Simplify frontline onboarding with an improved Teams mobile experience on personal devices. Workers can easily download and start using the Teams mobile app on their own device in compliance with organizational security policies, reducing the need for manager assistance and IT support.",
         "id": 523213,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26890,9 +27244,9 @@
         "description": "Stay connected to your team\u2019s engagement with Viva Insights Workplace Metrics, available alongside your survey results in Viva Glint. Between survey cycles, leaders and managers can use these continuous, real-time metrics to see how their team is working and evaluate whether actions they are taking to improve engagement are having the desired impact. This feature currently supports work-life balance and collaboration metrics, with more areas planned in the future.",
         "id": 518289,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30971,12 +31325,12 @@
         "description": "Edit your images directly in PowerPoint with Copilot, no need to switch apps or interrupt your flow.  Whether you're refining visuals for a pitch deck, enhancing marketing assets, or simply making your slides pop, the image editor makes it fast and seamless. You can make edits like improving the resolution, removing the background, and more.",
         "id": 508530,
         "locale": null,
-        "modified": "2026-01-09T00:00:20",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37695,9 +38049,9 @@
         "description": "We\u2019re introducing more flexible and precise targeting capabilities in Viva Engage, starting with Storyline Announcements. This new feature allows leaders and their delegates to define a custom audience at the time of posting, without relying on pre-configured Leader Audiences. Audiences can be built, and saved for reuse, using organizational attributes such as department, job title, or country, existing groups like M365 Groups, distribution lists, or security groups, and even individual users by name. This flexibility enables more relevant communication, helping leaders reach the right people with the right message. Notifications and delivery channels, including Teams and email, will continue to follow existing Storyline Announcement behavior, ensuring a seamless experience for recipients. This feature is designed to help leaders tailor communications to specific departments, locations, or groups, enhancing engagement and relevance across the organization.",
         "id": 499895,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41696,12 +42050,12 @@
         "description": "In #newoutlookforwindows, users can now apply more than one category to their calendar events from the event right-click context menu. Selected categories will be indicated with a check mark within this menu.  This specific update is for applying multiple categories to an event.",
         "id": 501453,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52657,9 +53011,9 @@
         "description": "A new agents usage report will be available in the Microsoft 365 admin center. The report will be scoped to include agents in M365 Copilot and Copilot Chat with usage by both M365 Copilot licensed and unlicensed users. The report will include total active agent users, total active agents, active users segmentation by licensed and unlicensed users, and active users and active agents segmentation by publisher type (i.e. user-created agents, agents built by your org, agents built by Microsoft, agents built by Microsoft partners). The report will also include usage details per user, agent, and user-agent pair. #copilotcontrolsystem",
         "id": 497999,
         "locale": null,
-        "modified": "2025-12-12T23:00:26",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "August CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -57494,9 +57848,9 @@
         "description": "For Admins, agents in the Frontier program can be managed through the Microsoft 365 Admin Center. They are listed under the agents & connectors tab in Copilot Control System, where you can view all agent inventory for your organization. Agents built by Microsoft and available in the Frontier program will be displayed in the Agent Store. This feature will support users to request these agents if blocked by organizational policies. Admins will have the opportunity to further approve and reject these user request. #copilotcontrolsystem",
         "id": 494809,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -67484,9 +67838,9 @@
         "description": "A new report to help IT admins manage costs for billed messages that are Pay-as-you-go enabled for Copilot Chat. Reporting includes drill down of billed messages per user, per billing policy, per agent-level and agent-user level pair. #copilotcontrolsystem",
         "id": 490738,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "May CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -72615,12 +72969,12 @@
         "description": "SharePoint Online Tenant Administrators can now allow script sources for modern pages in SharePoint sites. This is particularly useful in scenarios where modern pages have custom code that load scripts (e.g. TypeScript code) from external sources like CDN. SharePoint will now report to administrators where are loaded from sources that have not been allowed giving administrators a way to identify those sources and take actions. Tenant Administrators can also enforce browsers to only load scripts from allowed sources. This behavior can be enabled using SharePoint Online Management Shell.",
         "id": 485797,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -108441,12 +108795,12 @@
     },
     {
         "created": "2024-10-03T23:30:37",
-        "description": "Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge.",
+        "description": "Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge. Updated March 20, 2026: We have paused release of this feature temporarily and will announce new release timelines soon. We apologize for any inconvenience. ",
         "id": 420335,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-03-23T23:15:39",
         "moreInfoLink": "https://learn.microsoft.com/en-us/copilot/edge",
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

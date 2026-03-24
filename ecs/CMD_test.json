@@ -149,6 +149,7 @@
         "DisableDRManagementRegionWorkflow": false,
         "DisableSettingsUXCriticalRestartsAndRestartPrompts": true,
         "DisableSupportDataDisk": true,
+        "DisableW365ABillingPlanCheck": true,
         "DisplayCopilotPlusStatusOnIntuneDeviceBlade": true,
         "ENABLE_MSAL_V4": true,
         "EUA_Enable_BuildAbsoluteScaleUnitUri": true,
