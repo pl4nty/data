@@ -20,6 +20,6 @@ end
 if (not (l_0_0.sg_search1).matched and not (l_0_0.sg_search2).matched) or (l_0_0.sg_use1).matched or not (l_0_0.sg_instr).matched then
   return mp.CLEAN
 end
-AddPotentialMaliciousUrlToResearchData()
+ExtractCmdLinePayload()
 return mp.INFECTED
 

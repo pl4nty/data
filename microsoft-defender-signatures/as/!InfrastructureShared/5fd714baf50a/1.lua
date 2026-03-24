@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if IsBasToolProcessForPpid("CMDHSTR", "SafeBreach") or IsBasToolProcessFoundInParents("CMDHSTR", "SafeBreach", 4) then
-  (mp.set_mpattribute)("TEL:HackTool:Win32/ValidDomainAccounts.A!bas")
+  (mp.changedetectionname)(2153861156)
 end
 return mp.INFECTED
 

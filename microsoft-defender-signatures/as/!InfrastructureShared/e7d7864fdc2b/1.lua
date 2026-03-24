@@ -15,6 +15,6 @@ end
 if (not (l_0_0.br_msedge).matched and not (l_0_0.br_webview2).matched and not (l_0_0.br_chrome).matched) or not (l_0_0.q_qmark).matched and not (l_0_0.q_amp).matched and not (l_0_0.qenc_qmark).matched and not (l_0_0.qenc_amp).matched then
   return mp.CLEAN
 end
-AddPotentialMaliciousUrlToResearchData()
+ExtractCmdLinePayload()
 return mp.INFECTED
 

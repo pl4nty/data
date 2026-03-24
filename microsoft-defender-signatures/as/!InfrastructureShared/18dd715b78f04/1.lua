@@ -28,7 +28,7 @@ do
     if not l_0_2 or not (l_0_0.rep_pseudocode).matched then
       return mp.CLEAN
     end
-    AddPotentialMaliciousUrlToResearchData()
+    ExtractCmdLinePayload()
     return mp.INFECTED
   end
 end
