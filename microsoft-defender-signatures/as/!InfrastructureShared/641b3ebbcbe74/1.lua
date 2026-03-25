@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\495b30a9a079a\1.luac 
+-- Command line: lua\!InfrastructureShared\641b3ebbcbe74\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -7,41 +7,41 @@ if not IsDeviceHVA() then
   return mp.CLEAN
 end
 local l_0_0 = nil
-if (this_sigattrlog[8]).matched and (this_sigattrlog[8]).utf8p1 ~= nil then
-  l_0_0 = (this_sigattrlog[8]).utf8p1
+if (this_sigattrlog[12]).matched and (this_sigattrlog[12]).utf8p1 ~= nil then
+  l_0_0 = (this_sigattrlog[12]).utf8p1
 else
-  if (this_sigattrlog[9]).matched and (this_sigattrlog[9]).utf8p1 ~= nil then
-    l_0_0 = (this_sigattrlog[9]).utf8p1
+  if (this_sigattrlog[13]).matched and (this_sigattrlog[13]).utf8p1 ~= nil then
+    l_0_0 = (this_sigattrlog[13]).utf8p1
   else
-    if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-      l_0_0 = (this_sigattrlog[10]).utf8p1
+    if (this_sigattrlog[14]).matched and (this_sigattrlog[14]).utf8p1 ~= nil then
+      l_0_0 = (this_sigattrlog[14]).utf8p1
     else
-      if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p1 ~= nil then
-        l_0_0 = (this_sigattrlog[11]).utf8p1
+      if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p1 ~= nil then
+        l_0_0 = (this_sigattrlog[15]).utf8p1
       else
-        if (this_sigattrlog[12]).matched and (this_sigattrlog[12]).utf8p1 ~= nil then
-          l_0_0 = (this_sigattrlog[12]).utf8p1
+        if (this_sigattrlog[16]).matched and (this_sigattrlog[16]).utf8p1 ~= nil then
+          l_0_0 = (this_sigattrlog[16]).utf8p1
         else
-          if (this_sigattrlog[13]).matched and (this_sigattrlog[13]).utf8p1 ~= nil then
-            l_0_0 = (this_sigattrlog[13]).utf8p1
+          if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).utf8p1 ~= nil then
+            l_0_0 = (this_sigattrlog[17]).utf8p1
           else
-            if (this_sigattrlog[14]).matched and (this_sigattrlog[14]).utf8p1 ~= nil then
-              l_0_0 = (this_sigattrlog[14]).utf8p1
+            if (this_sigattrlog[18]).matched and (this_sigattrlog[18]).utf8p1 ~= nil then
+              l_0_0 = (this_sigattrlog[18]).utf8p1
             else
-              if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p1 ~= nil then
-                l_0_0 = (this_sigattrlog[15]).utf8p1
+              if (this_sigattrlog[19]).matched and (this_sigattrlog[19]).utf8p1 ~= nil then
+                l_0_0 = (this_sigattrlog[19]).utf8p1
               else
-                if (this_sigattrlog[16]).matched and (this_sigattrlog[16]).utf8p1 ~= nil then
-                  l_0_0 = (this_sigattrlog[16]).utf8p1
+                if (this_sigattrlog[20]).matched and (this_sigattrlog[20]).utf8p1 ~= nil then
+                  l_0_0 = (this_sigattrlog[20]).utf8p1
                 else
-                  if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).utf8p1 ~= nil then
-                    l_0_0 = (this_sigattrlog[17]).utf8p1
+                  if (this_sigattrlog[21]).matched and (this_sigattrlog[21]).utf8p1 ~= nil then
+                    l_0_0 = (this_sigattrlog[21]).utf8p1
                   else
-                    if (this_sigattrlog[18]).matched and (this_sigattrlog[18]).utf8p1 ~= nil then
-                      l_0_0 = (this_sigattrlog[18]).utf8p1
+                    if (this_sigattrlog[22]).matched and (this_sigattrlog[22]).utf8p1 ~= nil then
+                      l_0_0 = (this_sigattrlog[22]).utf8p1
                     else
-                      if (this_sigattrlog[19]).matched and (this_sigattrlog[19]).utf8p1 ~= nil then
-                        l_0_0 = (this_sigattrlog[19]).utf8p1
+                      if (this_sigattrlog[23]).matched and (this_sigattrlog[23]).utf8p1 ~= nil then
+                        l_0_0 = (this_sigattrlog[23]).utf8p1
                       end
                     end
                   end
@@ -62,6 +62,9 @@ if (string.find)(l_0_0, "\\windows\\ntds\\ntds.dit", 1, true) then
   return mp.CLEAN
 end
 if (string.find)(l_0_0, "\\windows defender\\", 1, true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_0, "psscriptpolicytest", 1, true) then
   return mp.CLEAN
 end
 local l_0_1 = "T1003.003"

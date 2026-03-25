@@ -44,6 +44,8 @@ if not l_0_2:match("[^\\]+$") then
   l_0_3["basupsrvc.exe"] = "NAble"
   l_0_3["rport.exe"] = "RPort"
   l_0_3["besclient.exe"] = "HCLBigFix"
+  l_0_3["netbird.exe"] = "NetBird"
+  l_0_3["netbird-ui.exe"] = "NetBird"
   local l_0_4 = l_0_3[l_0_2]
   if l_0_4 == nil then
     return mp.CLEAN
@@ -52,7 +54,7 @@ if not l_0_2:match("[^\\]+$") then
     return mp.CLEAN
   end
   local l_0_5 = ExtractDeviceProperties()
-  if l_0_5.DeviceRoles and (l_0_5.DeviceRoles).SharePointServer ~= nil then
+  if l_0_5.DeviceRoles and ((l_0_5.DeviceRoles).DomainController ~= nil or (l_0_5.DeviceRoles).Dns ~= nil or (l_0_5.DeviceRoles).SharePointServer ~= nil) then
     set_research_data("RMMToolProcOnHVA", l_0_4 .. "|" .. l_0_2, false)
     return mp.INFECTED
   end

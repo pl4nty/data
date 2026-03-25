@@ -85,6 +85,8 @@ l_0_2["asgremotedesktop.exe"] = "ASGRemoteDesktop"
 l_0_2["aemagent.exe"] = "ManageEngineRMM"
 l_0_2["dcagentservice.exe"] = "ManageEngineRMM"
 l_0_2["xeox-agent.exe"] = "Xeox"
+l_0_2["netbird.exe"] = "NetBird"
+l_0_2["netbird-ui.exe"] = "NetBird"
 local l_0_3 = l_0_2[l_0_1]
 if l_0_3 == nil then
   return mp.CLEAN
@@ -93,7 +95,7 @@ if not IsDeviceHVA() then
   return mp.CLEAN
 end
 local l_0_4 = ExtractDeviceProperties()
-if l_0_4.DeviceRoles and (l_0_4.DeviceRoles).SharePointServer ~= nil then
+if l_0_4.DeviceRoles and ((l_0_4.DeviceRoles).DomainController ~= nil or (l_0_4.DeviceRoles).Dns ~= nil or (l_0_4.DeviceRoles).SharePointServer ~= nil) then
   set_research_data("RMMToolOnHVA", l_0_3 .. "|" .. l_0_1, false)
   return mp.INFECTED
 end
