@@ -174,7 +174,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1322,6 +1322,18 @@
                 },
                 {
                     "Flight": "includeUncitedResponseAttributions",
+                    "IsEnabled": true
+                }
+            ],
+            "LiftRecompose": [
+                {
+                    "Flight": "LIFT.SkipRecompose",
+                    "IsEnabled": true
+                }
+            ],
+            "LiftSelfRespond": [
+                {
+                    "Flight": "IntentPlus.LiftEnableSelfRespond",
                     "IsEnabled": true
                 }
             ],

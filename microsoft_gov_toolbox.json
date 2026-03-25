@@ -1037,8 +1037,9 @@
         "name": "PSResourceGet",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.2.0-rc3",
+        "version": "1.2.0",
         "versions": [
+            "1.2.0",
             "1.2.0-rc3"
         ]
     },
@@ -1082,8 +1083,9 @@
         "name": "AzureHPCGPUDriversWindows",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "553.24",
+        "version": "553.86.10",
         "versions": [
+            "553.86.10",
             "553.24",
             "535.86.10",
             "529.19",

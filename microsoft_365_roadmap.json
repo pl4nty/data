@@ -1,5 +1,328 @@
 [
     {
+        "created": "2026-03-24T23:15:57",
+        "description": "We are introducing a refreshed chat-first design in the Microsoft 365 Copilot mobile app, bringing a cleaner, more intuitive interface to users. This update includes a modernized design language, streamlined navigation, and other improvements that make it easier and faster for users to start, continue, and manage chats on the mobile app.",
+        "id": 559310,
+        "locale": null,
+        "modified": "2026-03-24T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Updated chat-first design in the Microsoft 365 Copilot mobile app"
+    },
+    {
+        "created": "2026-03-24T23:15:57",
+        "description": "Multimodal capture enables users to transcribe audio, take images, and type notes in a single session. Copilot then creates a structured Copilot Page with insights and user-captured content, saved to a user-selected Copilot Notebook. Designed for capturing offline work moments\u2014including in-person conversations, whiteboard sessions, and personal notes. Other endpoints coming soon.",
+        "id": 559095,
+        "locale": null,
+        "modified": "2026-03-24T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "OneNote: Multimodal capture in Copilot Notebooks (iPhone)"
+    },
+    {
+        "created": "2026-03-24T23:15:57",
+        "description": "Mind Maps in Copilot Notebooks are interactive visual artifacts that help users understand notebook content through a grounded map of key topics, themes, and relationships. Users can explore the Mind Map, view summaries for individual nodes, and use Notebook chat to get more detail about a node. Available across OneNote and Microsoft 365 Copilot App.",
+        "id": 559029,
+        "locale": null,
+        "modified": "2026-03-24T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "OneNote"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Mind Maps in Copilot Notebooks"
+    },
+    {
+        "created": "2026-03-24T23:15:57",
+        "description": "Admin should be able to see the Endpoint DLP policy sync status on the Purview portal within 30 mins.",
+        "id": 558682,
+        "locale": null,
+        "modified": "2026-03-24T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins"
+    },
+    {
+        "created": "2026-03-24T23:15:57",
+        "description": "Agent 365 is the control plane for AI agents. It empowers IT and security administrators to observe, govern, and secure agents across Microsoft 365 and connected platforms at scale.",
+        "id": 558448,
+        "locale": null,
+        "modified": "2026-03-24T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Agent 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Agent 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Agent 365: the control plane for agents"
+    },
+    {
         "created": "2026-03-23T23:15:39",
         "description": "This dashboard will allow admins to view the device health across all their devices to ensure the system is healthy and ready to receive policy updates and quickly identify devices that are not ready.",
         "id": 559267,
@@ -2970,9 +3293,9 @@
         "description": "Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
         "id": 558343,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10882,7 +11205,7 @@
         "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support on Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities\u2014all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers. ",
         "id": 553590,
         "locale": null,
-        "modified": "2026-03-02T23:45:11",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -10891,6 +11214,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "Android"
@@ -10906,6 +11232,9 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -25467,9 +25796,9 @@
         "description": "With this update, Risky AI usage policy template will support priority content. Customers can define Sensitive Info Types (SITs), Trainable Classifiers, Sensitivity Labels as priority content, and get alerted only when the activity matches the selected priority content. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 528978,
         "locale": null,
-        "modified": "2025-11-12T00:30:39",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -29503,9 +29832,9 @@
         "description": "A new usage report will be available in the Microsoft 365 admin center for Copilot Connectors in Microsoft 365 Copilot, designed to give organizations a detailed view of how connectors are being used within Microsoft 365 Copilot. This report provides insights into overall connector activity, publisher-level trends, and connector powered response patterns over time, along with detailed user-level connectors adoption data. With these analytics, admins can monitor adoption, identify usage patterns, and optimize Copilot experiences to drive greater value across their organization. #copilotcontrolsystem ",
         "id": 519571,
         "locale": null,
-        "modified": "2025-11-18T00:00:20",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34671,12 +35000,12 @@
         "description": "Customers can connect M365 Copilot with Egnyte to collaborate on secure file storage with Copilot Connector.",
         "id": 513283,
         "locale": null,
-        "modified": "2025-10-13T23:00:30",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43382,12 +43711,12 @@
         "description": "Copilot Chat will soon be available for Teams chats, channels, calling and meetings.",
         "id": 501107,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -86961,12 +87290,12 @@
         "description": "Continue working with Copilot and colleagues while on the go, with the ability to view, edit and share Pages on mobile.",
         "id": 481821,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -112122,12 +112451,12 @@
         "description": "New detections are being added to Communication Compliance that enables you to build safer online environments by detecting potential hate and violence then assigning severity scores to unsafe text across languages. These classifiers are built using large language models. Microsoft Purview Communication Compliance\u202fprovides the tools to help\u202forganizations detect business conduct and\u202fregulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are\u202fopted in by an admin, and audit logs are in place to help ensure user-level privacy.",
         "id": 169212,
         "locale": null,
-        "modified": "2025-10-28T23:15:02",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -113482,12 +113811,12 @@
         "description": "When authoring pages, this will create the ability to choose heading level for webparts to help define the hierarchy of information on a page.",
         "id": 387500,
         "locale": null,
-        "modified": "2024-04-18T23:15:11",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -114000,12 +114329,12 @@
         "description": "Catch Up allows you to stay in sync with your collaborators in Word, Excel, and PowerPoint by showing you the latest comment activity that is directed at you and a summary of recent changes. Based on your feedback, we made improvements to the Catch Up feature. The comment activity directed at you will now persist in Catch Up between sessions for up to 28 days. New items will be indicated with a blue dot for clarity. You can also dismiss items individually if you do not wish to keep them in Catch Up.",
         "id": 184359,
         "locale": null,
-        "modified": "2024-01-26T23:15:25",
+        "modified": "2026-03-24T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2024",
         "publicPreviewDate": "November CY2023",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
