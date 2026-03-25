@@ -232,6 +232,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kFeatureManagementLiveTranslateCrOS);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kFileDialogsBlockPictureInPicture);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kFileDialogsTuckPictureInPicture);
 #endif  // !BUILDFLAG(IS_ANDROID)
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kForceSoftwareForRtcLowResolutions);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kGetDisplayMediaConfersActivation);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kGlobalMediaControlsAutoDismiss);
 #if !BUILDFLAG(IS_ANDROID)
@@ -269,7 +270,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kLiveCaptionExperimentalLanguages);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kLiveCaptionUseGreedyTextStabilizer);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kLiveCaptionUseWaitK);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kLiveCaptionWebAudio);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kLiveTranslate);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kLogSodaLoadFailures);
 #if BUILDFLAG(IS_WIN)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kApplicationAudioCaptureWin);
@@ -401,6 +401,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseAudioLatencyFromHAL);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseAudioManagerMaxChannelLayout);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseSecurityLevelWhenCheckingMediaDrmVersion);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kNdkVideoEncodeAcceleratorNativeSvc);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kNdkVideoEncodeAcceleratorBitrateLayering);
 #endif  // BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(USE_LINUX_VIDEO_ACCELERATION)
@@ -549,6 +550,9 @@ MEDIA_EXPORT bool IsChromeWideEchoCancellationEnabled();
 // residual echo estimator instead of the default heuristics, when applying
 // WebRTC echo cancellation.
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kWebRtcAudioNeuralResidualEchoEstimation);
+
+// Flag to enable or disable parsing of MP4 timed metadata tracks.
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kMP4TimedMetadataTrack);
 
 // Controls a global feature for sending ML model updates from the Optimization
 // Guide framework in the browser process to the audio process.

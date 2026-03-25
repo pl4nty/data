@@ -431,8 +431,6 @@ extern bool IsFavBarVisualRefreshEnabled();
 // Visual Refresh Ring Zero Triggers
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kFavBarVisualRefreshTrigger);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kVisualRefreshRingZeroNormalModeTrigger);
 
 // Toolbar Button Count Triggers
 COMPONENT_EXPORT(UI_BASE_FEATURES)

@@ -90,6 +90,7 @@ message OneDriveSignalMessage {
     string upload_url = 1;
     uint32 file_id = 2;
     uint64 expire_time = 3;
+    string spo_token = 4;  // SPO auth token for upload (non-tempauth flow)
   }
   message UploadFileUpdate {
     uint32 file_id = 1;

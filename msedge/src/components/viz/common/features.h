@@ -86,11 +86,6 @@ VIZ_COMMON_EXPORT extern const char kTargetForVSyncAnimation[];
 VIZ_COMMON_EXPORT extern const char kTargetForVSyncInteraction[];
 #endif
 
-#if BUILDFLAG(MICROSOFT_EDGE_BRANDING)
-VIZ_COMMON_EXPORT bool IsFrameRateThrottlingDisableOverrideEnabled();
-VIZ_COMMON_EXPORT bool IsForceFrameRateThrottlingEnabled();
-VIZ_COMMON_EXPORT bool AllowSingleSourceThrottling();
-#endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
     kAckCopyOutputRequestEarlyForViewTransition);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kThrottleFrameSinksOnInteraction);
@@ -202,8 +197,6 @@ VIZ_COMMON_EXPORT bool ShouldUseAdpfForSoc(std::string_view soc_allowlist,
                                            std::string_view soc);
 
 #endif  // BUILDFLAG(IS_ANDROID)
-
-VIZ_COMMON_EXPORT void SetForceFrameRateThrottlingEnabled(bool enable);
 
 VIZ_COMMON_EXPORT bool ShouldAckCOREarlyForViewTransition();
 

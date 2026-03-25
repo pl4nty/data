@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15184405,
+    "size": 15184706,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33058582,
-    "file_count": 4030
+    "size": 33093090,
+    "file_count": 4033
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16987203,
+    "size": 16988941,
     "file_count": 1941
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "expat",
-    "size": 5500,
+    "size": 5635,
     "file_count": 7
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "name": "glib",
-    "size": 52998245,
+    "size": 52998266,
     "file_count": 2384
   },
   {
@@ -271,8 +271,8 @@
   },
   {
     "name": "gperf",
-    "size": 2400816,
-    "file_count": 203
+    "size": 2615255,
+    "file_count": 212
   },
   {
     "name": "grpc",
@@ -521,7 +521,7 @@
   },
   {
     "name": "mutter",
-    "size": 29870907,
+    "size": 29870943,
     "file_count": 2013
   },
   {
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4212915,
-    "file_count": 596
+    "size": 4218293,
+    "file_count": 597
   },
   {
     "name": "perl",
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3477045,
+    "size": 3477016,
     "file_count": 1188
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1698330,
-    "file_count": 531
+    "size": 1721594,
+    "file_count": 534
   },
   {
     "name": "tflite_support",
@@ -766,8 +766,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7370048,
-    "file_count": 190
+    "size": 7440663,
+    "file_count": 191
   },
   {
     "name": "vulkan_memory_allocator",
@@ -776,7 +776,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 264015,
+    "size": 264049,
     "file_count": 65
   },
   {
