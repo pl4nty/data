@@ -502,6 +502,13 @@
                 "id": "DEVSENSE.composer-php-vscode"
             }
         },
+        "PlanSoftwareGmbH.3pq-extension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "4PACE 3PQ Extension",
+                "id": "4PACE.4pace-3pq-extension"
+            }
+        },
         "Qualyyy.folder-template-generator": {
             "disallowInstall": true,
             "extension": {
@@ -1112,6 +1119,13 @@
                 "id": "platformOS.platformos-check-vscode"
             }
         },
+        "dodona.dodona-exercise-plugin": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Dodona Exercise Assistant",
+                "id": "DodonaLearningTechnologies.dodona-exercise-assistant"
+            }
+        },
         "dogukanakkaya.chatgpt-code": true,
         "dongli.python-preview": true,
         "donjayamanne.jupyter": {
@@ -1661,6 +1675,7 @@
             }
         },
         "ms-devlabs.extension-manifest-editor": true,
+        "ms-dotnettools.dotnet-interactive-vscode": true,
         "ms-dotnettools.vscodeintellicode-csharp": {
             "disallowInstall": true,
             "extension": {

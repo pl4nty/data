@@ -38,18 +38,6 @@
     {
         "cloud_instance_name": "microsoftonline.us",
         "e": "AQAB",
-        "kid": "IAzQT0lDZrQ9kAuCfAsMp74YGkA",
-        "kty": "RSA",
-        "n": "r0MUNBLlVJlhOzSMz1gq7fKQ-VtRBGo5e0JoljylUqL14kqDaHwayhIc2o_Vx6sdo22p8-JQMPnBqMllGdgHZfNK28ROMvbdpRmWx4SdDgtmm9pTuZSCsZAh6IMT-MV7h5MqfqeoURhoqjScz5jLsGziO7fRvBrL0JPWrgk21XGguUGbdKRxBzlMTY4-5JPQ0GmJz81BQ4JVs6TB1flNSIQtjb2zC2q-fgWZBmhgmjSTgHDppiwIYUFKagQcxdFuVQM2HNlbWfELjiatlV1wgv-4SjEVDbuXRV7-EElfnKv4RgFlZFFqDcDbJqXlhnkBt_bZ1WH9c3QQcBoE2G0CBw",
-        "use": "sig",
-        "x5c": [
-            "MIIC6jCCAdKgAwIBAgIJALXyS77AxpNPMA0GCSqGSIb3DQEBCwUAMCMxITAfBgNVBAMTGGxvZ2luLm1pY3Jvc29mdG9ubGluZS51czAeFw0yNjAyMjIxNzAwMzZaFw0zMTAyMjIxNzAwMzZaMCMxITAfBgNVBAMTGGxvZ2luLm1pY3Jvc29mdG9ubGluZS51czCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK9DFDQS5VSZYTs0jM9YKu3ykPlbUQRqOXtCaJY8pVKi9eJKg2h8GsoSHNqP1cerHaNtqfPiUDD5wajJZRnYB2XzStvETjL23aUZlseEnQ4LZpvaU7mUgrGQIeiDE/jFe4eTKn6nqFEYaKo0nM+Yy7Bs4ju30bway9CT1q4JNtVxoLlBm3SkcQc5TE2OPuST0NBpic/NQUOCVbOkwdX5TUiELY29swtqvn4FmQZoYJo0k4Bw6aYsCGFBSmoEHMXRblUDNhzZW1nxC44mrZVdcIL/uEoxFQ27l0Ve/hBJX5yr+EYBZWRRag3A2yal5YZ5Abf22dVh/XN0EHAaBNhtAgcCAwEAAaMhMB8wHQYDVR0OBBYEFG+C3O9dX6jgCqwTGFkyIoWutm1WMA0GCSqGSIb3DQEBCwUAA4IBAQAwQAu3uzx782oGJov1kxv4kISw33up1g0MAWyr3Jn9eI0/b94TD4LCuGU+tcac/4YItYLb9fS9J3Vm3wPRYUFY1f31hDFBq4DfUR6MjZreWz/8w4n+vK+Vbjx0JJS2y/evqLjCQvPfuRrdnNltXPLhpOk1OHSD1fzgJsWHwTvm/SZtWFGwQVU1Tf/gbF6li/bAZ0HLawHhJFB+8tzGK+Rch4dhvrRjxMC3o3LpD8uZb0SDlv7j2Wu8liiT7juumoE+DKuVzW4z+6DJEokaysFVvnCVVMzYiHaOKwag4lVwqCaFSTWXMP3eDkRwI6AgwrMoDcSUZqom77QveVFf2J5L"
-        ],
-        "x5t": "IAzQT0lDZrQ9kAuCfAsMp74YGkA"
-    },
-    {
-        "cloud_instance_name": "microsoftonline.us",
-        "e": "AQAB",
         "kid": "f7KrzilBpolqOtp7jkXLCZ_kqPk",
         "kty": "RSA",
         "n": "0TZJZO4l_djg_BRdseSFBcpQOo9NXpy7MLkV1LvqpLP1dYnjsufxeCV84uYfmpYIOmqVQD7fTMrwB4tjqEYoN5YHDfXyjD3h1mcVC6J1qvNdgWnlz2G-RgKS4NE2UMCktvBfMqQ7G2fj7qutTPgraTypmeFimUJptBOc1fw3VtNcZoKTh3xCGRU2T_2wR1XwsNJf27-bp24h0-wo6NvIkacn7_jtwK2C3XZ94te1x-C_EZ3nF4OdJw0E4-j06DnlWFp_xqTFVaXOIyZjzUfj6AZmhLP8TlZ961CDoiSDaRuQ-AFciJNFG1oI-IObd6KP4GA7h_M6uYPmJonECiIdkQ",
