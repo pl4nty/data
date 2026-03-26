@@ -623,6 +623,7 @@
         "reloadRedirects": true,
         "test123": false,
         "urlCacheEnabled": true,
-        "urlSchemeHandlerEnabled": true
+        "urlSchemeHandlerEnabled": true,
+        "webViewDownloadManagerEnabled": false
     }
 }
