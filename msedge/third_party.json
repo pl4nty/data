@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12930177,
+    "size": 12930577,
     "file_count": 165
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15184706,
+    "size": 15182441,
     "file_count": 844
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33093090,
-    "file_count": 4033
+    "size": 33126195,
+    "file_count": 4035
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16988941,
+    "size": 16989975,
     "file_count": 1941
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4406167,
+    "size": 4406264,
     "file_count": 80
   },
   {
@@ -311,8 +311,8 @@
   },
   {
     "name": "icu",
-    "size": 158116737,
-    "file_count": 7078
+    "size": 162932129,
+    "file_count": 7200
   },
   {
     "name": "inference_engine",
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19518443,
+    "size": 19532267,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4218293,
+    "size": 4221396,
     "file_count": 597
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3477016,
+    "size": 3477271,
     "file_count": 1188
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "tflite",
-    "size": 1721594,
+    "size": 1721521,
     "file_count": 534
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1456306,
+    "size": 1462434,
     "file_count": 23
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7440663,
+    "size": 7427506,
     "file_count": 191
   },
   {
