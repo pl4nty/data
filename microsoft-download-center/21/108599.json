@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2603.25",
+    "downloadDescription": "PIX 2603.25",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PIX-2603.25-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/6a45de18-2ba5-4702-9ab6-9fb654b57f90/PIX-2603.25-Installer-ARM64.exe",
+            "size": "177951136",
+            "version": "2603.25",
+            "datePublished": "3/25/2026 11:18:44 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2603.25-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/6a45de18-2ba5-4702-9ab6-9fb654b57f90/PIX-2603.25-Installer-x64.exe",
+            "size": "212687208",
+            "version": "2603.25",
+            "datePublished": "3/25/2026 11:18:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2603.25 - misc bug fixes and improvements",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2603.25",
+    "detailsSection_file_name": [
+        "PIX-2603.25-Installer-ARM64.exe",
+        "PIX-2603.25-Installer-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "169.7 MB",
+        "202.8 MB"
+    ],
+    "detailsSection_file_date": "3/25/2026",
+    "systemRequirementsSection": "Window 10 or 11, and a DirectX 12 capable GPU",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Run the installer and follow its instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108599",
+    "downloadPreload": true
+}
