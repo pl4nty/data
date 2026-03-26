@@ -1,5 +1,249 @@
 [
     {
+        "created": "2026-03-25T23:15:06",
+        "description": "Data Security Investigations (DSI) is introducing a new examination focus area concentrated on identifying personal data. The personal data examination will identify and extract various types of personal data from the selected items including but not limited to, names, addresses, bank account numbers, and more. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
+        "id": 559388,
+        "locale": null,
+        "modified": "2026-03-25T23:15:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 Introducing new personal data examination"
+    },
+    {
+        "created": "2026-03-25T23:15:06",
+        "description": "Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).",
+        "id": 558286,
+        "locale": null,
+        "modified": "2026-03-25T23:15:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap)"
+    },
+    {
+        "created": "2026-03-25T23:15:06",
+        "description": "OneDrive and SharePoint will use Microsoft Entra B2B as the invitation and authentication method for external users, replacing the legacy SharePoint One Time Passcode (SPO OTP) experience. External sharing will automatically create B2B guest accounts in your directory, delivering consistent external collaboration across Microsoft 365, stronger guest identity management, and modern security aligned with Microsoft Entra standards.",
+        "id": 557682,
+        "locale": null,
+        "modified": "2026-03-25T23:15:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Entra B2B integration for external sharing in OneDrive & SharePoint"
+    },
+    {
+        "created": "2026-03-25T23:15:06",
+        "description": "Microsoft is announcing the General Availability (GA) of federated Copilot connectors for Microsoft 365 Copilot. Federated Copilot connectors enable users to securely connect Copilot to popular third\u2011party sources and retrieve data in real time using the Model Context Protocol (MCP). These connectors do not store or index customer data in Microsoft services; access occurs in real time using the user\u2019s identity, while administrators retain full governance and control through the Microsoft 365 admin center. With GA, federated Copilot connectors will be supported in Researcher agent, Microsoft 365 Chat, and Agent Mode in Excel, enabling users to bring external data directly into their workflows.",
+        "id": 501120,
+        "locale": null,
+        "modified": "2026-03-25T23:15:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "December CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Federated Copilot Connectors"
+    },
+    {
         "created": "2026-03-24T23:15:57",
         "description": "We are introducing a refreshed chat-first design in the Microsoft 365 Copilot mobile app, bringing a cleaner, more intuitive interface to users. This update includes a modernized design language, streamlined navigation, and other improvements that make it easier and faster for users to start, continue, and manage chats on the mobile app.",
         "id": 559310,
@@ -1945,9 +2189,9 @@
         "description": "Microsoft Teams integrates with the Do not disturb setting in Windows to help reduce interruptions. Teams notifications are paused when Do not disturb is turned on, and resume after it is turned off.",
         "id": 557974,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5189,10 +5433,10 @@
     },
     {
         "created": "2026-02-26T23:45:10",
-        "description": "SharePoint home sites are getting the following new updates - A resources web part, a new UX to customize the SharePoint app (Viva Connections) experience for Teams desktop and mobile and ability to set up a new home site in the SharePoint admin center. Additionally, Announcements web part and a new layout for News web part will be available in all sites.",
+        "description": "SharePoint home sites are getting the following new updates - A resources web part, a new UX to customize the SharePoint app (Viva Connections) experience for Teams desktop and mobile and ability to set up a new home site in the SharePoint admin center. Additionally, the Announcements web part and a new layout for News web part will be available in all sites.",
         "id": 557983,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -5252,7 +5496,7 @@
                 }
             ]
         },
-        "title": "SharePoint: New SharePoint Home site experience"
+        "title": "SharePoint: Updates to SharePoint home sites"
     },
     {
         "created": "2026-02-26T23:45:10",
@@ -6193,12 +6437,12 @@
         "description": "Updates include dynamic, channel\u2011aware welcome messages, greater flexibility in channel creation (with or without an agent), expanded agent permissions for member management, scheduling enhancements, and overall quality improvements.",
         "id": 557555,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6784,9 +7028,9 @@
         "description": "Azure PST Import is a migration method that enables PST files stored in Azure Blob Storage to be imported directly into Exchange Online mailboxes. It follows the standard two\u2011step Exchange Migration Service pattern: an initial analysis phase to validate and assess PST data, followed by execution of the actual migration. The process also involves creating a migration endpoint, running an analysis-only migration batch, using the analysis results to configure the final batch, and then starting the batch to import PST content into target mailboxes.\n",
         "id": 557559,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13211,9 +13455,9 @@
         "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
         "id": 553214,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13967,12 +14211,12 @@
         "description": "Edit your images directly in PowerPoint with Copilot, no need to switch apps or interrupt your flow. Whether you're refining visuals for a pitch deck, enhancing marketing assets, or simply making your slides pop, the image editor makes it fast and seamless. You can make edits like improving the resolution, removing the background, and more.",
         "id": 551187,
         "locale": null,
-        "modified": "2026-01-27T00:01:00",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16464,9 +16708,9 @@
         "description": "We are updating private channels to use a shared mailbox, similar to shared channels, instead of messages being stored in each user's mailbox. With this change, compliance policies set for the team's Microsoft 365 group will apply to private channels messages going forward. In addition, teams will support more than 30 private channels, up to the 1000 total channel limit for the team. Private channel member limits will increase from 250 to 5000. You will also be able to schedule meetings in private channels.",
         "id": 500381,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18439,9 +18683,9 @@
         "description": "With new branded reactions, organizations can now extend their visual identity directly into meetings. IT admins simply upload custom reaction icons reflecting brand elements or event themes, and these instantly become available for meeting participants.  A simple way to create more cohesive, on-brand meeting experiences.",
         "id": 541830,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23045,12 +23289,12 @@
         "description": "The new Copilot settings landing experience in the Microsoft 365 admin center centralizes visibility into key configuration status and helps admins optimize settings for Copilot success using Microsoft\u2011recommended policies, actions, and guidance\u2014enabling secure and confident Copilot deployment.",
         "id": 526793,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24344,12 +24588,12 @@
         "description": "Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. Item-level insights like sensitivity label and sharing links created help users identify potentially overshared items. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.",
         "id": 523202,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34530,9 +34774,9 @@
         "description": "This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.",
         "id": 500872,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34591,9 +34835,9 @@
         "description": "Add web links as references in your Copilot Notebooks.",
         "id": 516040,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40671,9 +40915,9 @@
         "description": "This feature will allow admins to specify a limited set of sites to exclude from web grounding in M365 Copilot and Copilot Chat #copilotcontrolsystem",
         "id": 503144,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -50563,10 +50807,10 @@
         "description": "This feature introduces Admin Unit scoping to both Content Explorer and Data Explorer, enabling more granular visibility and control over M365 data. It ensures that data exploration respects organizational boundaries defined by Admin Units, enhancing compliance and governance.",
         "id": 498916,
         "locale": null,
-        "modified": "2025-10-28T23:15:02",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -53395,9 +53639,9 @@
         "description": "Users will be able to list the file attachments that they received or sent over email in M365 Copilot.",
         "id": 497909,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -106785,12 +107029,12 @@
         "description": "Perform file-level browse/search and then restore using Microsoft 365 Backup. With this enhancement you will be able to browse for files across in a site from available daily restore points and apply filters to narrow results, restore at the original location by overwriting existing content or to a new place by creating a copy of the content. ",
         "id": 464991,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-03-25T23:15:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

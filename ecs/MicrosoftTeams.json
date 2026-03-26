@@ -174,7 +174,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1116,6 +1116,7 @@
             "EnablePopPftToken": true
         },
         "ODSPFeatureFlags": {
+            "DisableAugLoopSessionReuse": true,
             "DisableBotIconStorageOnTeamsGraph": true,
             "EnableAiMetadata": true,
             "EnableAttachAppIdToSendActivity": true,
@@ -1131,7 +1132,8 @@
             "EnablePbpSkipPreference": true,
             "EnableRefetchPBPFlow": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
-            "EnableWelcomeMessageFromInstallationUpdate": true
+            "EnableWelcomeMessageFromInstallationUpdate": true,
+            "GetTokenForEachResource": true
         },
         "RingOptions": {
             "UserRing": "general"
