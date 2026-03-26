@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\c2b3ba5ad709\1.luac 
+-- Command line: lua\!InfrastructureShared\109b349a405d3\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -9,6 +9,9 @@ if l_0_0 == nil then
 end
 local l_0_1 = (string.lower)(l_0_0.command_line)
 if l_0_1 == nil or #l_0_1 <= 10 then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, ".js") ~= nil then
   return mp.CLEAN
 end
 local l_0_2 = function(l_1_0)
@@ -48,7 +51,7 @@ local l_0_2 = function(l_1_0)
 
     -- DECOMPILER ERROR at PC68: Confused about usage of register: R2 in 'UnsetPending'
 
-    if (l_1_0:match("\"[^\"]*\\node%.exe\"%s+([^%s]+)") or l_1_0:match("%snode%.exe%s+([^%s]+)") or l_1_2) and (function(l_2_0)
+    if (l_1_0:match("\"[^\"]*\\node%.exe\"%s+([^%s\"\']+)") or l_1_0:match("%snode%.exe%s+([^%s\"\']+)") or l_1_2) and (function(l_2_0)
     -- function num : 0_0_0
     return not l_2_0:match("%.[%a%d]+$")
   end
@@ -63,6 +66,10 @@ end
 
 local l_0_3 = l_0_2(l_0_1)
 if l_0_3 == nil then
+  return mp.CLEAN
+end
+if not (sysio.IsFolderExists)(l_0_3) then
+  (bm.trigger_sig)("SuspNodeJSExecInSpecificFolderC", l_0_3)
   return mp.CLEAN
 end
 if not StringEndsWith(l_0_3, "\\") then

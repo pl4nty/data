@@ -211,7 +211,7 @@ local l_0_7 = (versioning.GetOrgID)()
 if l_0_7 ~= nil and l_0_7 ~= "" then
   l_0_7 = (string.lower)(l_0_7)
 end
-if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (versioning.IsSampled)(8000, false, true, true) == true) and l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
+if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (versioning.IsSampled)(15000, false, true, true) == true) and l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
   return mp.CLEAN
 end
 local l_0_8 = false

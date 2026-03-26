@@ -398,7 +398,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_10 = MpCommon
       l_0_11 = "IsSampled"
       l_0_10 = l_0_10[l_0_11]
-      l_0_11 = 55000
+      l_0_11 = 70000
       l_0_12 = false
       l_0_13 = true
       l_0_14 = true
@@ -414,7 +414,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_10 = MpCommon
       l_0_11 = "IsSampled"
       l_0_10 = l_0_10[l_0_11]
-      l_0_11 = 25000
+      l_0_11 = 40000
       l_0_12 = false
       l_0_13 = true
       l_0_14 = true
