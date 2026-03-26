@@ -61,21 +61,87 @@ l_0_10.tools_elevated = l_0_9(l_0_8, "tools", "elevated")
 if isnull(l_0_10) then
   return mp.CLEAN
 end
-local l_0_11 = safeJsonSerialize(l_0_10)
-local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-if l_0_12 and l_0_13 ~= nil then
-  for l_0_17,l_0_18 in pairs(l_0_13) do
-    if l_0_17 == l_0_4 and l_0_18 == l_0_11 then
-      return mp.CLEAN
+local l_0_11 = {}
+if l_0_8.mcpServers or l_0_8.servers then
+  do
+    if not l_0_8.mcpServers then
+      local l_0_12, l_0_13 = l_0_8.servers
+    end
+    -- DECOMPILER ERROR at PC153: Confused about usage of register: R12 in 'UnsetPending'
+
+    for l_0_17,l_0_18 in pairs(l_0_12) do
+      local l_0_14 = nil
+      -- DECOMPILER ERROR at PC160: Overwrote pending register: R18 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC165: Overwrote pending register: R18 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC170: Overwrote pending register: R18 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC172: Overwrote pending register: R18 in 'AssignReg'
+
+      if (l_0_19.type and not l_0_19.transport) or l_0_19.url then
+        local l_0_20 = ""
+        if l_0_19.headers then
+          for l_0_24,l_0_25 in pairs(l_0_19.headers) do
+            local l_0_21 = {}
+            local l_0_27 = contains
+            local l_0_28 = l_0_25
+            l_0_27 = l_0_27(l_0_28, {"api_key", "brave_api_key", "authorization", "access_token"})
+            if not l_0_27 then
+              l_0_21[l_0_25] = l_0_26
+            end
+          end
+        end
+        do
+          local l_0_29 = nil
+          if l_0_19.env then
+            for l_0_33,l_0_34 in pairs(l_0_19.env) do
+              local l_0_30 = {}
+              local l_0_36 = contains
+              local l_0_37 = l_0_34
+              l_0_36 = l_0_36(l_0_37, {"api_key", "brave_api_key", "authorization", "access_token"})
+              if not l_0_36 then
+                l_0_30[l_0_34] = l_0_35
+              end
+            end
+          end
+          do
+            do
+              local l_0_38 = nil
+              l_0_11[l_0_18] = {type = l_0_19.type, url = l_0_19.url, command = l_0_19.command, args = l_0_19.args, tools = l_0_19.tools, transport = l_0_20, headers = l_0_29, environment = l_0_38}
+              -- DECOMPILER ERROR at PC232: LeaveBlock: unexpected jumping out DO_STMT
+
+              -- DECOMPILER ERROR at PC232: LeaveBlock: unexpected jumping out DO_STMT
+
+              -- DECOMPILER ERROR at PC232: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+              -- DECOMPILER ERROR at PC232: LeaveBlock: unexpected jumping out IF_STMT
+
+            end
+          end
+        end
+      end
+    end
+    if next(l_0_11) then
+      l_0_10.mcpServers = l_0_11
+    end
+    local l_0_39 = safeJsonSerialize(l_0_10)
+    local l_0_40, l_0_41 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+    if l_0_40 and l_0_41 ~= nil then
+      for l_0_45,l_0_46 in pairs(l_0_41) do
+        if l_0_45 == l_0_4 and l_0_46 == l_0_39 then
+          return mp.CLEAN
+        end
+      end
+    end
+    do
+      AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_39, l_0_5, 100)
+      ;
+      (mp.SetDetectionString)(l_0_39)
+      ;
+      (mp.set_mpattribute)("MpDisableCaching")
+      return mp.INFECTED
     end
   end
-end
-do
-  AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_11, l_0_5, 100)
-  ;
-  (mp.SetDetectionString)(l_0_11)
-  ;
-  (mp.set_mpattribute)("MpDisableCaching")
-  return mp.INFECTED
 end
 
