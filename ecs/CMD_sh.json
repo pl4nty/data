@@ -806,6 +806,7 @@
         "EnableRemoteStartMenuAppCheck": true,
         "EnableRemoveConnectionQualityPreviewTag": true,
         "EnableRemoveOneCoreSKUForResize": true,
+        "EnableRemoveReviewButton": true,
         "EnableRenameFrontlineLicenseServicePlanAPI": true,
         "EnableReplaceQueryOperationStatus": true,
         "EnableRescheduleOnWindowsUpdate": true,
