@@ -24,6 +24,5 @@ edge_library_always_compress = [
   "liblog4cpp.so",
   "libchrome_crashpad_handler.so",
   "libchrome.so",
-  "libc++_shared.so",
   "libbingopus.so",
 ]

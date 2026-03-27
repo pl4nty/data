@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15182441,
+    "size": 15182868,
     "file_count": 844
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 33126195,
-    "file_count": 4035
+    "size": 33136308,
+    "file_count": 4038
   },
   {
     "name": "boringssl",
-    "size": 76351,
+    "size": 76594,
     "file_count": 15
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 36565105,
+    "size": 36565135,
     "file_count": 107
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16989975,
-    "file_count": 1941
+    "size": 17029807,
+    "file_count": 1943
   },
   {
     "name": "entity_extraction",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43922777,
+    "size": 43923193,
     "file_count": 3288
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "name": "harfbuzz-ng",
-    "size": 300264,
+    "size": 300631,
     "file_count": 32
   },
   {
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4221396,
-    "file_count": 597
+    "size": 4234811,
+    "file_count": 599
   },
   {
     "name": "perl",
@@ -681,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3477271,
-    "file_count": 1188
+    "size": 3478818,
+    "file_count": 1189
   },
   {
     "name": "speech-dispatcher",
@@ -761,12 +761,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2642648,
+    "size": 2656783,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7427506,
+    "size": 7438819,
     "file_count": 191
   },
   {
