@@ -519,6 +519,7 @@
     "Sidecar_Mac": {
         "app_policy_reporting_retry": true,
         "customer_script_timeout": 3600,
+        "enable_afd_connectivity_ip_range": false,
         "internal_script_timeout": 3600,
         "store_adhoc_script_result": true,
         "use_custom_data_store": false,
@@ -563,6 +564,11 @@
         "FlightingV2": {
             "EnableGraphPrompts": true,
             "EnableMultiSelectLibrary": true
+        }
+    },
+    "UX_GnT": {
+        "FlightingV2": {
+            "EnableDMTForAndroid": true
         }
     },
     "UX_MAM": {

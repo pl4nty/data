@@ -325,6 +325,7 @@
         "EnableCollectionActionPipeline": true,
         "EnableCollectionV2": true,
         "EnableCommonProxySSRFAndDisposeFixes": true,
+        "EnableConnectionConfigurationOfViewDataTableQueryV2": true,
         "EnableConnectivityAutoRemediation": true,
         "EnableConnectivityStatus": true,
         "EnableConsumeCapacityProfileEvent": true,
