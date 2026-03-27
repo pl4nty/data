@@ -174,7 +174,7 @@
         "MobrTesting": true,
         "ringSettings": {
             "settings": {
-                "adoPipelineTestFeatureFlag": true,
+                "adoPipelineTestFeatureFlag": false,
                 "blacklistLicenseForBasicLiveEvents": true,
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
@@ -1754,6 +1754,18 @@
                     "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionRefactored",
                     "IsEnabled": true
                 }
+            ],
+            "meetingAgendaSkill_SyntheticAgendaDetectionWithDuration": [
+                {
+                    "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionWithDuration",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_WriteBackToLoopAgenda": [
+                {
+                    "Flight": "AS.enableAgendaSkillWriteBackToLoopAgenda",
+                    "IsEnabled": true
+                }
             ]
         },
         "SomeDummyOptions": {
@@ -2282,6 +2294,7 @@
                 },
                 "loggingns": {
                     "*": 1,
+                    "app_state_set": 100,
                     "cdl_data_store_provider": 0,
                     "cdl_db_cleanup": 100,
                     "cdl_request": 0.1,
@@ -2293,6 +2306,10 @@
                     "cdl_worker_startup_error_trusted_policy": 1,
                     "cdl_worker_startup_error_verify_worker_script": 1,
                     "cdl_worker_startup_error_wait_on_auth": 1,
+                    "cmd_call_hold_state_change": 100,
+                    "cmd_handle_multi_calls": 100,
+                    "cmd_hold_call": 100,
+                    "cmd_horizontals_get_cloud_count_from_native": 100,
                     "cmd_meeting_copilot_get_transcript_data": 0.1,
                     "cmd_meeting_copilot_skip_get_transcript_data": 0.1,
                     "cmd_meetings_virtual_events_streaming_join_timeout|Error": 100,
@@ -4277,6 +4294,7 @@
                 },
                 "loggingns": {
                     "*": 1,
+                    "app_state_set": 100,
                     "cdl_data_store_provider": 0,
                     "cdl_db_cleanup": 100,
                     "cdl_request": 0.1,
@@ -4288,6 +4306,10 @@
                     "cdl_worker_startup_error_trusted_policy": 1,
                     "cdl_worker_startup_error_verify_worker_script": 1,
                     "cdl_worker_startup_error_wait_on_auth": 1,
+                    "cmd_call_hold_state_change": 100,
+                    "cmd_handle_multi_calls": 100,
+                    "cmd_hold_call": 100,
+                    "cmd_horizontals_get_cloud_count_from_native": 100,
                     "cmd_meeting_copilot_get_transcript_data": 0.1,
                     "cmd_meeting_copilot_skip_get_transcript_data": 0.1,
                     "cmd_meetings_virtual_events_streaming_join_timeout|Error": 100,

@@ -432,6 +432,7 @@
             "EnableAppInstanceExHandling": true,
             "EnableBypassStatefulForAll": true,
             "EnableBypassStatefulForMAMAppInst": true,
+            "EnableNewFilterEvaluator": true,
             "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
             "OverrideMAMActionStringKey": true,

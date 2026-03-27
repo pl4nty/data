@@ -1,5 +1,262 @@
 [
     {
+        "created": "2026-03-26T23:15:28",
+        "description": "See what Copilot can do the moment you preview a file in OneDrive or SharePoint. Ready-to-use prompts appear alongside the Copilot button, helping you summarize documents, generate FAQs, and more \u2014 all without writing a single prompt.",
+        "id": 559481,
+        "locale": null,
+        "modified": "2026-03-26T23:15:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Discover Copilot actions in File Preview"
+    },
+    {
+        "created": "2026-03-26T23:15:28",
+        "description": "Users can now view, edit and share Copilot Pages with Outlook for Android, making it easier to continue working with Copilot and colleagues while on the go.",
+        "id": 559389,
+        "locale": null,
+        "modified": "2026-03-26T23:15:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: View, edit & share Copilot Pages with Outlook for Android"
+    },
+    {
+        "created": "2026-03-26T23:15:28",
+        "description": "[Introduction] Microsoft Teams Phone devices will support AI-powered live interpretation directly within calls and meetings, enabling real-time multilingual communication without requiring external interpreters. [Timelines:] General Availability (Worldwide): We will begin rolling out mid-May 2026 and expect to complete by May 2026. General Availability (GCC): We will begin rolling out mid-May 2026 and expect to complete by May 2026. General Availability (GCC High): TBD General Availability (DoD): TBD [How this will affect your organization:] Once enabled, users on Teams Phone devices (touch and non-touch) with a Microsoft 365 Copilot license will have access to real-time AI interpretation during VoIP calls, group calls, and scheduled meetings. This allows multilingual teams to communicate across language barriers without requiring external interpreters or separate conferencing tools. Eligible users will be able to use AI Interpreter on certified Teams Phone Devices (both touch and non-touch) during: \u2022 1:1 VoIP and PSTN calls \u2022 Group VoIP calls and VoIP group call escalated with a PSTN user \u2022 Ad-hoc and Scheduled meetings Pure group PSTN calls are not supported. [What you need to do to prepare:] This feature is off by default and requires admin enablement: \u2022 License: Users must have a Microsoft 365 Copilot license \u2022 Calling policy: Enable AI Interpreter via Set-CsTeamsCallingPolicy \u2022 Meeting policy: Enable AI Interpreter via Set-CsTeamsMeetingPolicy\n",
+        "id": 559268,
+        "locale": null,
+        "modified": "2026-03-26T23:15:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: AI Interpreter Agent on Teams Phone Devices"
+    },
+    {
+        "created": "2026-03-26T23:15:28",
+        "description": "You\u2019ll notice media quality improvements including support for up to 16 participant videos (4\u00d74 grid) and simulcast streaming when using Direct Guest Join. These updates make cross platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.",
+        "id": 558922,
+        "locale": null,
+        "modified": "2026-03-26T23:15:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enhanced media quality for Direct Guest Join"
+    },
+    {
+        "created": "2026-03-26T23:15:28",
+        "description": "Add conversational intelligence to your phone communications to ensure every customer gets served no matter what time of day - even after hours and holidays. Microsoft Teams Phone Attendant Agent greets callers, answers common questions, schedules appointments, and routes calls to the right person or department with context. Through seamless integration with Microsoft Copilot Studio, businesses can embed custom voice agents into Attendant Agent to handle specialized workflows like billing, order status, or inventory checks.",
+        "id": 558680,
+        "locale": null,
+        "modified": "2026-03-26T23:15:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Attendant Agent "
+    },
+    {
         "created": "2026-03-25T23:15:06",
         "description": "Data Security Investigations (DSI) is introducing a new examination focus area concentrated on identifying personal data. The personal data examination will identify and extract various types of personal data from the selected items including but not limited to, names, addresses, bank account numbers, and more. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
         "id": 559388,
@@ -53,9 +310,9 @@
         "description": "Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).",
         "id": 558286,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -74,6 +331,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -98,10 +358,13 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
-        "title": "Microsoft Teams: Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap)"
+        "title": "Microsoft Teams: Intelligent meeting recap available without saving transcript"
     },
     {
         "created": "2026-03-25T23:15:06",
@@ -1969,10 +2232,10 @@
         "description": "To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups\u2014expanding policy targeting beyond individual users and mail enabled groups.",
         "id": 558685,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -2866,12 +3129,12 @@
         "description": "The featured conversation feature in public Viva Engage communities will include the option to feature a conversation to all network members or only to community members.",
         "id": 558438,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7517,9 +7780,9 @@
         "description": "This feature introduces admin controls for managing Anthropic as a model provider for specific users and groups in the tenant. ",
         "id": 557371,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7694,9 +7957,9 @@
         "description": "Teams Rooms on Windows proactively monitors room audio, video, and display signals to detect issues in meeting spaces. Teams Rooms Pro Management automatically remediates common issues that can be resolved through software, configuration changes, or device resets during nightly maintenance. This ensures users have reliable, ready-to-use meeting rooms, while IT admins benefit from reduced manual troubleshooting and increased uptime. Available for Teams Rooms Pro-licensed rooms.",
         "id": 557167,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8330,9 +8593,9 @@
         "description": "The Microsoft Purview Data Loss Prevention policy to restrict Microsoft 365 Copilot processing sensitive files in Word, Excel, and PowerPoint will now apply regardless of file storage location. ",
         "id": 557255,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10650,7 +10913,7 @@
         "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 553594,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -10659,6 +10922,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "Android"
@@ -10674,6 +10940,9 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -11821,9 +12090,9 @@
         "description": "Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license) .",
         "id": 554934,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13455,7 +13724,7 @@
         "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
         "id": 553214,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -14712,9 +14981,9 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19325,9 +19594,9 @@
         "description": "Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you haven't enrolled, you\u2019ll get an in-product prompt to opt-in and enroll your voice profile simply by speaking in a meeting. Admins can enable or disable this feature for their organization.",
         "id": 537269,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34322,9 +34591,9 @@
         "description": "Your Viva Engage communities will now be available in Teams along side teams, chats and channels. Engage communities in Microsoft Teams make it simple to connect, share, and learn across your organization. This new experience brings discoverable, asynchronous conversations and leadership engagement into Teams\u2014helping employees explore ideas and perspectives beyond project-based collaboration.",
         "id": 513274,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35067,9 +35336,9 @@
         "description": "Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community. ",
         "id": 513275,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36937,9 +37206,9 @@
         "description": "When critical issues impact room functionality, users see a banner notification on both the front-of-room display and console in Teams Rooms on Windows.  Room health signals help get issues resolved quickly and ensure productive meetings. Available with Teams Rooms Pro.",
         "id": 508521,
         "locale": null,
-        "modified": "2026-01-23T00:15:29",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38048,10 +38317,10 @@
         "description": "Use the new PAYGO consumption-based meter to pay for your extra SharePoint storage needs. This reduces the operational overhead associated with purchasing extra storage packs and more seamlessly integrates with Microsoft 365 Archive.",
         "id": 506743,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -60258,9 +60527,9 @@
         "description": "Admins can proactively manage peripherals in bring your own device (BYOD) rooms and desks with reports in the Pro Management portal that now flag if devices are faulty, undetectable by a PC, missing, or moved. Reports in the Pro Management portal require a Teams Shared Devices license for the room, and reports for desks are in public preview.",
         "id": 493319,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -73920,9 +74189,9 @@
         "description": "When users connect to their organization's Wi-Fi, Teams will soon be able to automatically update their work location to reflect the building they're working from.\nThis feature will be off by default. Tenant admins will decide whether to enable it and require end-users to opt-in.",
         "id": 488800,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -87473,9 +87742,9 @@
         "description": "Users can chat one-on-one with a SharePoint agent directly within Teams chat.",
         "id": 481825,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -104776,9 +105045,9 @@
         "description": "Your organization can now control who can access your data depending on the sensitive information detected in Fabric semantic models and lakehouses. DLP restrict access action allows you to block access to guest users or all users depending on what labels or sensitive information types matches your semantic models or lakehouses. This is in addition to the ability already supported by DLP policies to audit and notify users via Policy Tips based on sensitive content within Fabric semantic models and lakehouses.",
         "id": 422501,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-03-26T23:15:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2024",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
