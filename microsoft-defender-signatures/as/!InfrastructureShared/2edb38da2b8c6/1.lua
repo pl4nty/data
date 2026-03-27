@@ -17,7 +17,7 @@ for l_0_7 = 1, l_0_0 do
     l_0_1[l_0_9] = l_0_7
   end
 end
-if l_0_2 < 5 then
+if l_0_2 < 3 then
   return mp.CLEAN
 end
 local l_0_10 = {}
@@ -71,7 +71,7 @@ for l_0_26 = 1, l_0_0 do
               end
               do
                 do
-                  if #l_0_11[l_0_35] >= 5 then
+                  if #l_0_11[l_0_35] >= 3 then
                     local l_0_37 = 0
                     -- DECOMPILER ERROR at PC193: Overwrote pending register: R30 in 'AssignReg'
 
@@ -80,13 +80,13 @@ for l_0_26 = 1, l_0_0 do
                         l_0_37 = l_0_37 + 1
                       end
                     end
-                    if l_0_37 >= 5 then
+                    if l_0_37 >= 3 then
                       l_0_10 = l_0_11
                       l_0_33 = l_0_35
                       l_0_22 = true
                     end
                   end
-                  if #l_0_10[l_0_33] >= 5 then
+                  if #l_0_10[l_0_33] >= 3 then
                     local l_0_43 = false
                     local l_0_44 = {}
                     l_0_44.count = 0
@@ -159,7 +159,7 @@ for l_0_26 = 1, l_0_0 do
                         end
                       end
                     end
-                    if l_0_44.count > 4 then
+                    if l_0_44.count >= 3 then
                       l_0_43 = true
                     end
                     ;
