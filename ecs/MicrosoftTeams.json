@@ -1100,6 +1100,7 @@
             "EnableSkipVerbalization": true,
             "EnableStripUserQueryInClientMessage": true,
             "EnableTaskManagementOpenNotes": true,
+            "EnableTrackingActiveCallRoster": true,
             "EnableUsingBotNameFromContext": true,
             "RTAFReadTranscriptFromCombinedBot": true,
             "ShouldControlAlTrigger": true,

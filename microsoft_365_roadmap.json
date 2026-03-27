@@ -105,10 +105,10 @@
     },
     {
         "created": "2026-03-26T23:15:28",
-        "description": "[Introduction] Microsoft Teams Phone devices will support AI-powered live interpretation directly within calls and meetings, enabling real-time multilingual communication without requiring external interpreters. [Timelines:] General Availability (Worldwide): We will begin rolling out mid-May 2026 and expect to complete by May 2026. General Availability (GCC): We will begin rolling out mid-May 2026 and expect to complete by May 2026. General Availability (GCC High): TBD General Availability (DoD): TBD [How this will affect your organization:] Once enabled, users on Teams Phone devices (touch and non-touch) with a Microsoft 365 Copilot license will have access to real-time AI interpretation during VoIP calls, group calls, and scheduled meetings. This allows multilingual teams to communicate across language barriers without requiring external interpreters or separate conferencing tools. Eligible users will be able to use AI Interpreter on certified Teams Phone Devices (both touch and non-touch) during: \u2022 1:1 VoIP and PSTN calls \u2022 Group VoIP calls and VoIP group call escalated with a PSTN user \u2022 Ad-hoc and Scheduled meetings Pure group PSTN calls are not supported. [What you need to do to prepare:] This feature is off by default and requires admin enablement: \u2022 License: Users must have a Microsoft 365 Copilot license \u2022 Calling policy: Enable AI Interpreter via Set-CsTeamsCallingPolicy \u2022 Meeting policy: Enable AI Interpreter via Set-CsTeamsMeetingPolicy\n",
+        "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 559268,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-03-27T16:00:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",

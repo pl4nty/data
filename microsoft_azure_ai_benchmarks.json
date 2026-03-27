@@ -1578,7 +1578,7 @@
                     "datasetFamily": "tau2_telecom",
                     "datasetName": "tau2_telecom_inspectai",
                     "metrics": {
-                        "accuracy": 0.97
+                        "accuracy": 0.973684
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-6/versions/1",
                     "modelName": "claude-opus-4-6",
@@ -1612,7 +1612,7 @@
                     "datasetFamily": "chembench",
                     "datasetName": "chembench_inspect",
                     "metrics": {
-                        "accuracy": 0.85
+                        "accuracy": 0.678995
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-6/versions/1",
                     "modelName": "claude-opus-4-6",
@@ -1646,7 +1646,7 @@
                     "datasetFamily": "musr",
                     "datasetName": "musr_inspect",
                     "metrics": {
-                        "accuracy": 0.73
+                        "accuracy": 0.772
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-6/versions/1",
                     "modelName": "claude-opus-4-6",
@@ -1680,7 +1680,7 @@
                     "datasetFamily": "frontierscience",
                     "datasetName": "frontierscience_inspectai",
                     "metrics": {
-                        "accuracy": 0.52
+                        "accuracy": 0.53125
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-6/versions/1",
                     "modelName": "claude-opus-4-6",
@@ -2307,8 +2307,8 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "accuracy": 0.833539,
-                        "index_metric": 0.833539
+                        "accuracy": 0.819281,
+                        "index_metric": 0.819281
                     },
                     "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-opus-4-6/versions/1",
                     "modelName": "claude-opus-4-6",
@@ -14928,6 +14928,1578 @@
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.3-codex/versions/2026-02-24",
                     "azure_latest_model_version": "2026-02-24",
                     "azure_model_name": "gpt-5.3-codex",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
+                        "accuracy": 0.631579
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.677558
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.224
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.4375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.828571
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 0.75,
+                        "output_token_cost_per_1M_tokens": 4.5,
+                        "total_cost_per_1M_tokens": 1.6875
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.917365
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.501317
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.777027
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.904762
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.824324
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.854855
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.789223
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.8792
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.85205
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.58159
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.852285
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 142.41,
+                        "latency_mean_secs": 14.16,
+                        "latency_p50_secs": 14.16,
+                        "latency_p90_secs": 15.9,
+                        "latency_p95_secs": 16.16,
+                        "latency_p99_secs": 16.37,
+                        "latency_ttft_secs": 0.56,
+                        "throughput_gtps_token_count": 142.41,
+                        "throughput_rps_request_count": 0.07,
+                        "throughput_ttps_token_count": 218.81,
+                        "time_between_tokens_secs": 4.51
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.668026,
+                        "index_metric": 0.668026
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 1e-07,
+                        "index_metric": 1e-07
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "modelName": "gpt-5.4-mini",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-mini/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-mini",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
+                        "accuracy": 0.77193
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.599282
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.172
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.34375
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.618644
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 0.25,
+                        "output_token_cost_per_1M_tokens": 1.25,
+                        "total_cost_per_1M_tokens": 0.5
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.885036
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.445707
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.731061
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.775
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.814815
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.78343
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.693446
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1.818182
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "f1": 0.8792
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.810327
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.554113
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.784661
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 177.46,
+                        "latency_mean_secs": 11.55,
+                        "latency_p50_secs": 11.55,
+                        "latency_p90_secs": 12.87,
+                        "latency_p95_secs": 13,
+                        "latency_p99_secs": 13.18,
+                        "latency_ttft_secs": 0.58,
+                        "throughput_gtps_token_count": 177.46,
+                        "throughput_rps_request_count": 0.09,
+                        "throughput_ttps_token_count": 272.61,
+                        "time_between_tokens_secs": 0.1
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "200",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "80:20",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "1000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.637663,
+                        "index_metric": 0.637663
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.606061,
+                        "index_metric": 0.606061
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "modelName": "gpt-5.4-nano",
+                    "modelVersion": "2026-03-17"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5.4-nano/versions/2026-03-17",
+                    "azure_latest_model_version": "2026-03-17",
+                    "azure_model_name": "gpt-5.4-nano",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
                     "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"

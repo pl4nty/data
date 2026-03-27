@@ -81,6 +81,19 @@
             "FlightValue": true
         }
     },
+    "ConfigV2ECSTesting": {
+        "SampleConfig": {
+            "ConfigSettings": [
+                {
+                    "ConfigurationFileName": "StatelessLocatorBGTaskServiceSettings.xml",
+                    "ManifestVersion": "6.0.2601.2",
+                    "ParameterName": "ConfigTest1",
+                    "SectionName": "TestConfigV2Config.Configuration",
+                    "Value": "MultiConfigTest1Again"
+                }
+            ]
+        }
+    },
     "ECS": {
         "ClientConfigurationUpdateEvent": {
             "DeltaLogEnabled": false,
