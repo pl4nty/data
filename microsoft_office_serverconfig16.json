@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19909.40129-->
+    <!--Build: 16.0.19824.40125-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -160,7 +160,7 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/v2.0/hrd</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
       <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
