@@ -7,7 +7,7 @@ if (mp.get_mpattribute)("Lua:FileExtensionAttr!py") then
   return mp.CLEAN
 end
 local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 2097152 then
+if l_0_0 > 8388608 then
   return mp.CLEAN
 end
 ;

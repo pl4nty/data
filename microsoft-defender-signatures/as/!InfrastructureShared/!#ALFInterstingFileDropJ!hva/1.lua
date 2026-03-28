@@ -5,7 +5,7 @@
 -- function num : 0
 if IsDeviceHVA() then
   local l_0_0 = ExtractDeviceProperties()
-  if (l_0_0.DeviceRoles).DomainController ~= nil then
+  if l_0_0.DeviceRoles then
     local l_0_1 = false
     local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
     if not l_0_2 then

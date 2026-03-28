@@ -8,7 +8,7 @@ if IsDeviceHVA() then
   if l_0_0 == nil then
     return mp.CLEAN
   end
-  if l_0_0.DeviceRoles and (l_0_0.DeviceRoles).DomainController ~= nil then
+  if l_0_0.DeviceRoles then
     local l_0_1 = false
     local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
     if not l_0_2 then
@@ -20,13 +20,13 @@ if IsDeviceHVA() then
       if l_0_3 and l_0_4 and l_0_4 ~= "" then
         local l_0_5 = scrubData(l_0_4)
         ;
-        (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: IP_Scrubbed =" .. l_0_5)
+        (bm.add_related_string)("RDP_IP_Scrubbed", l_0_5, bm.RelatedStringBMReport)
         local l_0_6, l_0_7 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REMOTE_SESSION_DOMAINNAME)
         do
           if l_0_6 and l_0_7 and l_0_7 ~= "" then
             local l_0_8 = scrubData(l_0_7)
             ;
-            (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: Domain_Scrubbed =" .. l_0_8)
+            (bm.add_related_string)("RDP_Domain_Scrubbed", l_0_8, bm.RelatedStringBMReport)
           end
           local l_0_9, l_0_10 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REMOTE_SESSION_USERNAME)
           do
@@ -34,7 +34,7 @@ if IsDeviceHVA() then
               if l_0_9 and l_0_10 and l_0_10 ~= "" then
                 local l_0_11 = scrubData(l_0_10)
                 ;
-                (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: User_Scrubbed =" .. l_0_11)
+                (bm.add_related_string)("RDP_User_Scrubbed", l_0_11, bm.RelatedStringBMReport)
               end
               do return mp.INFECTED end
               return mp.CLEAN
