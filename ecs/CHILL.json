@@ -2256,6 +2256,111 @@
             }
         }
     },
+    "ChillMicrosoftFabric": {
+        "Floodgate_Campaign_MicrosoftFabric.d5812f01-9002-4973-bd6a-a5efe47cb456": {
+            "CampaignId": "d5812f01-9002-4973-bd6a-a5efe47cb456",
+            "EndTimeUtc": "2028-03-29T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 33,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2026-02-28T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 300,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReadytoPrompt",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all likely",
+                                    "questionLabel": "How likely are you to recommend Microsoft Fabric Community to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft Fabric Community!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/d5812f01-9002-4973-bd6a-a5efe47cb456/01e8aba5-ce3f-4732-800e-1df16a01681a/Web-MicrosoftFabric/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillNexusInteractiveAI": {
         "Floodgate_Campaign_Dynamics365FinanceandOperations.d8b3a33a-a708-497a-b248-27a9b98faa76": {
             "CampaignId": "d8b3a33a-a708-497a-b248-27a9b98faa76",

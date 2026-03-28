@@ -25,6 +25,7 @@
                 "TlsInspectionCheck": true
             },
             "ConnectWithPolicyTimeout": true,
+            "EnableCrashReporting": true,
             "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "IncludePartnersInApiResponse": true,

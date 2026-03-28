@@ -27,6 +27,7 @@
             },
             "ConnectWithPolicyTimeout": true,
             "EnableAutoReconnect": true,
+            "EnableCrashReporting": true,
             "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "EnableReconnectOnUnlock": true,
