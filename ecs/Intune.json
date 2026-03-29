@@ -462,7 +462,8 @@
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,
             "EnableMAA_DcV2SettingsCatalog": true,
-            "EnableMultiAdminApprovalForDeviceCleanupRules": true
+            "EnableMultiAdminApprovalForDeviceCleanupRules": true,
+            "authonlyapp": true
         }
     },
     "SVC_Pivot": {

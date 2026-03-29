@@ -1516,6 +1516,10 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTaskManagementSkillPromptV2",
                     "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableOnlineWorkflowEvaluation",
+                    "IsEnabled": true
                 }
             ],
             "TeamsMeetingAgendaSkill_ConsolidationForMeetingInfoQna": [
