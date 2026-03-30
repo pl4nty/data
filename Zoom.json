@@ -31,10 +31,10 @@
             },
             "zoomArm64": {
                 "archType": "winarm64",
-                "displayVersion": "7.0.0 (33767)",
+                "displayVersion": "7.0.1 (34140)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "7.0.0.33767"
+                "version": "7.0.1.34140"
             },
             "zoomRC": {
                 "displayVersion": "6.5.0 (427)",
@@ -50,17 +50,17 @@
             },
             "zoomRoomsX64": {
                 "archType": "x64",
-                "displayVersion": "6.7.5 (7278)",
+                "displayVersion": "7.0.0 (7486)",
                 "packageName": "ZoomRooms.exe",
                 "packageNameForIT": "ZoomRoomsInstaller.msi",
                 "version": "latest"
             },
             "zoomX64": {
                 "archType": "x64",
-                "displayVersion": "7.0.0 (33767)",
+                "displayVersion": "7.0.1 (34140)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "7.0.0.33767"
+                "version": "7.0.1.34140"
             }
         },
         "fromGov": false,

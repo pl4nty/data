@@ -546,6 +546,7 @@
                 "EnableResolveAdminContextInAuthzTask": true,
                 "EnableSetUserSiteAdminRoleByIdInternalAPI": true,
                 "EnableSettingsStoreDependency": false,
+                "EnableSettingsStoreSiteIdFallbackForSoftDelete": true,
                 "EnableSharePointTemplatesIntegration": true,
                 "EnableSharedChannelsPolicy": true,
                 "EnableSiteIdFallbackForSoftDelete": true,
@@ -1034,7 +1035,8 @@
     },
     "TeamsAdminCenter_Prod": {
         "Feature": {
-            "UI.Mgmt.Copilot.UserProfileSuggestionPills": true
+            "UI.Mgmt.Copilot.UserProfileSuggestionPills": true,
+            "UI.Mgmt.Perf.GraphGroupsCaching": true
         }
     },
     "TeamsAppMonetService": {

@@ -273,6 +273,7 @@
         "FlightingV2": {
             "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true,
+            "EgatEgpaConsolidationBGTask": true,
             "SCGWUseEGATsForAppsTargeting": true,
             "UseEGATsForDPAs": true
         }
@@ -335,7 +336,8 @@
             "EnableNoAcmeChallengeAsQueryParameter": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
             "EnableSendNonceinResponseV2": true,
-            "EnableVerifyAcmeChallengeFromIdentifier": true
+            "EnableVerifyAcmeChallengeFromIdentifier": true,
+            "GroupIdCheckForValidateScope": true
         }
     },
     "SVC_DFCI": {
@@ -445,6 +447,7 @@
             "EnableAppInstanceExHandling": true,
             "EnableBypassStatefulForAll": true,
             "EnableBypassStatefulForMAMAppInst": true,
+            "EnableMamFilterWhatIfMode": true,
             "EnableNewFilterEvaluator": true,
             "EnableNewMAMFPACheckinFlow": true,
             "MAMReportingV2_FastStream": true,
@@ -639,12 +642,12 @@
         }
     },
     "ios_mam_tunnel_sdk": {
+        "09D9FD0B-66E4-4AFB-9D36-AD875228A3E4": false,
         "loginServiceUrlBypassEnabled": true,
         "mamServiceUrlBypassEnabled": true,
         "reloadRedirects": true,
         "test123": false,
         "urlCacheEnabled": true,
-        "urlSchemeHandlerEnabled": true,
-        "webViewDownloadManagerEnabled": false
+        "urlSchemeHandlerEnabled": true
     }
 }
