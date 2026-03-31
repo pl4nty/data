@@ -45,22 +45,26 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
   local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsefullfilepathscan", l_0_0, l_0_7 .. "\\" .. l_0_8)
   if l_0_12 and l_0_13 then
     (mp.set_mpattribute)("MpNonPIIFileType")
-    if l_0_6 <= (MpCommon.AtomicCounterAddNamespaced)(l_0_1, l_0_0, 1) then
+    local l_0_14 = (MpCommon.AtomicCounterAddNamespaced)(l_0_1, l_0_0, 1)
+    if l_0_6 <= l_0_14 then
       return mp.CLEAN
     end
+    pcall(AppendToRollingQueueNamespaced, "scan_completed_hmdprecisionpulsefullfilepathscan", l_0_0, l_0_7 .. "\\" .. l_0_8, 1, 900, 500, 1)
     return mp.INFECTED
   end
-  local l_0_14, l_0_15 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsescanfile", l_0_0, l_0_8)
-  if l_0_14 and l_0_15 then
-    (mp.set_mpattribute)("MpNonPIIFileType")
-    if l_0_6 <= (MpCommon.AtomicCounterAddNamespaced)(l_0_1, l_0_0, 1) then
+  do
+    do
+      local l_0_15, l_0_16 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsescanfile", l_0_0, l_0_8)
+      if l_0_15 and l_0_16 then
+        (mp.set_mpattribute)("MpNonPIIFileType")
+        if l_0_6 <= (MpCommon.AtomicCounterAddNamespaced)(l_0_1, l_0_0, 1) then
+          return mp.CLEAN
+        end
+        return mp.INFECTED
+      end
+      do return mp.CLEAN end
       return mp.CLEAN
     end
-    return mp.INFECTED
   end
-  return mp.CLEAN
-end
-do
-  return mp.CLEAN
 end
 

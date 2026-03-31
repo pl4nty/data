@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\217b331416445\1.luac 
+-- Command line: lua\!InfrastructureShared\217b3c154da7e\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -65,25 +65,42 @@ do
       if l_0_10[l_0_9] then
         return mp.CLEAN
       end
+      local l_0_11 = {}
+      l_0_11["ccmexec.exe"] = true
+      l_0_11["sccmclicmd.exe"] = true
+      l_0_11["ccmsetup.exe"] = true
+      l_0_11["intunemanagementextension.exe"] = true
+      l_0_11["airwatchagent.exe"] = true
+      l_0_11["svchost.exe"] = true
+      l_0_11["wusa.exe"] = true
+      l_0_11["dism.exe"] = true
+      l_0_11["robocopy.exe"] = true
+      l_0_11["gpscript.exe"] = true
+      if l_0_11[l_0_9] then
+        return mp.CLEAN
+      end
       if l_0_9 == "setup.exe" and (string.find)(l_0_8, "microsoft office", 1, true) then
         return mp.CLEAN
       end
-      local l_0_11 = (mp.ContextualExpandEnvironmentVariables)(l_0_3)
-      if not isnull(l_0_11) then
-        l_0_11 = (string.lower)(l_0_11)
-      else
-        l_0_11 = l_0_3
-      end
-      if (mp.IsKnownFriendlyFile)(l_0_11, true, false) then
+      if (mp.IsKnownFriendlyFile)(l_0_8, true, false) then
         return mp.CLEAN
       end
-      if (sysio.IsFileExists)(l_0_11) then
-        (bm.add_related_file)(l_0_11)
+      local l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_3)
+      if not isnull(l_0_12) then
+        l_0_12 = (string.lower)(l_0_12)
+      else
+        l_0_12 = l_0_3
+      end
+      if (mp.IsKnownFriendlyFile)(l_0_12, true, false) then
+        return mp.CLEAN
+      end
+      if (sysio.IsFileExists)(l_0_12) then
+        (bm.add_related_file)(l_0_12)
         ;
-        (bm.add_threat_file)(l_0_11)
+        (bm.add_threat_file)(l_0_12)
       end
       ;
-      (bm.add_related_string)("DroppedTemplate", l_0_11, bm.RelatedStringBMReport)
+      (bm.add_related_string)("DroppedTemplate", l_0_12, bm.RelatedStringBMReport)
       ;
       (bm.add_related_string)("DroppingProcess", l_0_8, bm.RelatedStringBMReport)
       add_parents()
