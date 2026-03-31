@@ -20,23 +20,23 @@ if l_0_1 then
   local l_0_3, l_0_4 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REMOTE_SESSION_IP)
   if l_0_3 and l_0_4 and l_0_4 ~= "" then
     local l_0_5 = scrubData(l_0_4)
-    ;
-    (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: IP_Scrubbed =" .. l_0_5)
+    set_research_data("RDP_IP_Scrubbed", l_0_5, false)
     local l_0_6, l_0_7 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REMOTE_SESSION_DOMAINNAME)
     do
       if l_0_6 and l_0_7 and l_0_7 ~= "" then
         local l_0_8 = scrubData(l_0_7)
-        ;
-        (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: Domain_Scrubbed =" .. l_0_8)
+        set_research_data("RDP_Domain_Scrubbed", l_0_8, false)
       end
       local l_0_9, l_0_10 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_REMOTE_SESSION_USERNAME)
       do
-        if l_0_9 and l_0_10 and l_0_10 ~= "" then
-          local l_0_11 = scrubData(l_0_10)
-          ;
-          (mp.set_mpattribute)("MpInternal_researchdata= DC_RDP: User_Scrubbed =" .. l_0_11)
+        do
+          if l_0_9 and l_0_10 and l_0_10 ~= "" then
+            local l_0_11 = scrubData(l_0_10)
+            set_research_data("RDP_User_Scrubbed", l_0_11, false)
+          end
+          do return mp.INFECTED end
+          return mp.CLEAN
         end
-        return mp.CLEAN
       end
     end
   end
