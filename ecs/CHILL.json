@@ -1591,64 +1591,6 @@
         }
     },
     "ChillMSInvest": {
-        "Floodgate_Campaign_MicrosoftAdvertising.782d9f4d-7d0e-405e-8bcc-edb429caba9f": {
-            "CampaignId": "782d9f4d-7d0e-405e-8bcc-edb429caba9f",
-            "EndTimeUtc": "2026-03-29T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2026-02-27T08:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "AppUsageTime",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "Content": {
-                    "Prompt": {
-                        "NoLabel": "Not now",
-                        "Question": "We have two questions for you.",
-                        "Title": "We'd love your feedback.",
-                        "YesLabel": "Sure"
-                    },
-                    "Question": {
-                        "Question": "What could we do to improve our text asset recommendations?"
-                    },
-                    "Rating": {
-                        "IsZeroBased": false,
-                        "Question": "How would you rate the overall quality of our recommended text assets?",
-                        "RatingValuesAscending": [
-                            "1 - Poor",
-                            "2",
-                            "3",
-                            "4",
-                            "5 - Excellent"
-                        ]
-                    }
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2
-            }
-        },
         "Floodgate_Campaign_MicrosoftAdvertising.813d6c6d-1102-40c5-bb02-21e2507ad68b": {
             "CampaignId": "813d6c6d-1102-40c5-bb02-21e2507ad68b",
             "EndTimeUtc": "2026-10-01T07:00:00Z",
@@ -3749,7 +3691,7 @@
     "ChillVivaGlint": {
         "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
             "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
-            "EndTimeUtc": "2026-04-17T04:00:00Z",
+            "EndTimeUtc": "2026-05-29T04:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3807,7 +3749,7 @@
         },
         "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
             "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
-            "EndTimeUtc": "2026-04-17T04:00:00Z",
+            "EndTimeUtc": "2026-05-29T04:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

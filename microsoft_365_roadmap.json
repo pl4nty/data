@@ -1,5 +1,316 @@
 [
     {
+        "created": "2026-03-30T23:00:38",
+        "description": "Copilot Notebooks allows users to generate Excel spreadsheets using the content and references gathered in a notebook. Copilot drafts a structured spreadsheet grounded in the notebook\u2019s context, which can be opened and edited in Excel, helping users move from ideas and source material to a ready\u2011to\u2011use spreadsheet with fewer manual steps.",
+        "id": 559480,
+        "locale": null,
+        "modified": "2026-03-30T23:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create Excel"
+    },
+    {
+        "created": "2026-03-30T23:00:38",
+        "description": "Copilot now provides coaching feedback on email drafts via chat and can apply suggestions directly to your message in Outlook. Users have the option to choose which suggestions are applied, and Copilot updates your email in place.",
+        "id": 559418,
+        "locale": null,
+        "modified": "2026-03-30T23:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot provides coaching feedback in chat as you draft, edit and format emails"
+    },
+    {
+        "created": "2026-03-30T23:00:38",
+        "description": "In Outlook for Android, shareable links now automatically show as the document name in meeting descriptions. Additionally, users can manage the link permissions on the shareable links directly from the meeting description, ensuring a more secure file sharing process.",
+        "id": 559023,
+        "locale": null,
+        "modified": "2026-03-30T23:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Shareable links now show as the document name in meeting descriptions"
+    },
+    {
+        "created": "2026-03-30T23:00:38",
+        "description": "The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for users with a Microsoft 365 Copilot Chat starter license. Previously available only to premium Copilot licensees, this update extends contextual file prompts to starter license users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app.",
+        "id": 558595,
+        "locale": null,
+        "modified": "2026-03-30T23:00:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Companion apps - Copilot prompts in the Files app now available for starter license users"
+    },
+    {
+        "created": "2026-03-30T23:00:38",
+        "description": "Multiple MAM (Mobile Application Management) Intune Accounts will now be supported in Outlook for iOS. Only one MDM (mobile device management) account will be supported at a time per device.",
+        "id": 558252,
+        "locale": null,
+        "modified": "2026-03-30T23:00:38",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/purview/dlp-exchange-conditions-and-actions#recipients",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Multiple Intune Accounts for Outlook on iOS"
+    },
+    {
         "created": "2026-03-30T16:15:57",
         "description": "Responses are generated by GPT and Claude working together, with GPT drafting an initial response and Claude reviewing for increased response accuracy, completeness, and citation integrity. ",
         "id": 558538,
@@ -248,7 +559,7 @@
         "description": "Support for bulk breakout room participant assignment using a CSV file, helping organizers save time when setting up breakout rooms.",
         "id": 559387,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -266,6 +577,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -287,6 +601,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -294,18 +611,21 @@
     },
     {
         "created": "2026-03-27T22:15:31",
-        "description": "Manage call queues and engage with customers wherever work takes you. The Queues app on Teams mobile enables on the go workers to stay connected and responsive when handling customer calls. Calling representatives and supervisor leads can view assigned queues, opt in or out of a queue's call routing, and review a unified call history\u2014all from their mobile device. Supervisor leads can also bulk manage queue participation for their teams. With seamless mobile access, the Queues app helps teams respond faster, handle calls more smoothly, and deliver a better customer experience anytime, anywhere.",
+        "description": "Manage call queues and engage with customers wherever work takes you. The Queues app on Teams mobile enables on the go workers to stay connected and responsive when handling customer calls. Calling representatives and supervisor leads can view assigned queues, opt in or out of a queue's call routing, and review their call history\u2014all from their mobile device. Supervisor leads can also bulk manage queue participation for their teams. With seamless mobile access, the Queues app helps teams respond faster, handle calls more smoothly, and deliver a better customer experience anytime, anywhere.",
         "id": 559386,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
             },
             {
                 "tagName": "iOS"
@@ -324,6 +644,9 @@
                 }
             ],
             "platforms": [
+                {
+                    "tagName": "Android"
+                },
                 {
                     "tagName": "iOS"
                 }
@@ -401,7 +724,7 @@
         "description": "Enable Teams Rooms on Android to join third-party meetings via SIP, delivering seamless cross-platform interoperability. This capability ensures users can connect to external meeting services directly from Teams Rooms, maintaining a consistent and reliable meeting experience across diverse environments. Available on Teams Rooms Pro license.",
         "id": 558539,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -410,6 +733,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "DoD"
@@ -428,6 +757,12 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 },
                 {
                     "tagName": "DoD"
@@ -670,7 +1005,7 @@
         "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 559268,
         "locale": null,
-        "modified": "2026-03-27T16:00:10",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -718,7 +1053,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: AI Interpreter Agent on Teams Phone Devices"
+        "title": "Microsoft Teams: AI Interpreter on Teams Phone Devices"
     },
     {
         "created": "2026-03-26T23:15:28",
@@ -5054,12 +5389,12 @@
     },
     {
         "created": "2026-03-05T00:15:18",
-        "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the new, refreshed Copilot New Tab Page.",
+        "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the new, refreshed Copilot New Tab Page. Users can also view personalized news and activities.",
         "id": 558256,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7389,9 +7724,9 @@
         "description": "IT gets new building level insights on the recommended actions page in the Teams Rooms Pro Management portal.  This feature intelligently identifies buildings with high Teams Rooms utilization to help IT prioritize upgrades of bring your own device (BYOD) meeting spaces and ensure consistent, high-quality user experiences throughout their office buildings.  Available with a Teams Rooms Pro or Shared Space license.",
         "id": 553591,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9346,10 +9681,10 @@
     },
     {
         "created": "2026-02-13T00:15:26",
-        "description": "Introducing a new mode for Interpreter that enables consecutive interpretation for the entire meeting. When enabled, interpretation becomes a shared experience for everyone in the meeting, not just for private listening. This mode supports bidirectional translation between a selected language pair (e.g., English and Spanish).  ",
+        "description": "Consecutive interpretation enables turn-based interpretation for everyone in the meeting. Interpretation happens after each speaker finishes talking, creating a turn-based flow that supports interactive discussions across two languages.\u00a0",
         "id": 557180,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -9421,7 +9756,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Consecutive mode for Interpreter"
+        "title": "Microsoft Teams: Consecutive interpretation in Interpreter"
     },
     {
         "created": "2026-02-13T00:15:26",
@@ -11389,9 +11724,9 @@
         "description": "Microsoft Teams will soon support Secure Reliable Transport (SRT) streaming in Teams town halls. SRT is a network protocol designed to deliver high-quality, low-latency video across the public internet.\n",
         "id": 554931,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17136,9 +17471,9 @@
         "description": "Identify if an external user is impersonating a brand commonly targeted by phishing attacks, during their initial contact with an enterprise user via Teams calling.",
         "id": 543239,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25559,12 +25894,12 @@
         "description": "The new Project Manager agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We\u2019re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time.",
         "id": 516576,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35439,7 +35774,7 @@
         "description": "Add web links as references in your Copilot Notebooks.",
         "id": 516040,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -41788,9 +42123,9 @@
         "description": "Missed many messages? Copilot will automatically generate a summary of the new messages in a chat conversation, so you can catch up quickly without reading every message.",
         "id": 501201,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -65571,12 +65906,12 @@
         "description": "Ask Copilot to generate an audio overview of your document from the Summary tab in the document snapshot. We have updated the status to accurately reflect the current state of the feature.",
         "id": 492615,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -81757,12 +82092,12 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import emails from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485739,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-03-30T23:00:38",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

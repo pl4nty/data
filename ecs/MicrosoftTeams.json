@@ -538,6 +538,8 @@
                 "EnableNetworkResiliencyForSubstrateServiceCalls": true,
                 "EnableOutgoingPfat": true,
                 "EnableOutlookHpaAppOnlyInsteadOfCachedPft": true,
+                "EnablePCK2GracefulHandleAadTokenErrors": true,
+                "EnablePCK2GracefulHandleSoftDeletedTenants": true,
                 "EnablePFTForOutgoingSDSCall": false,
                 "EnablePassingDataDirectlyToDTF": true,
                 "EnablePersistPftTokenInCacheWhenOrchestrationQueued": true,
