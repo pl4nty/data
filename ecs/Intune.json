@@ -14,6 +14,11 @@
         "terms.termspage.enabled": true,
         "workplacejoin.workplacejoinheal.enabled": 1
     },
+    "CLI_DeviceInventory": {
+        "FlightingV2": {
+            "b07651fe-b4f8-4882-93f9-ee12a21a833c": true
+        }
+    },
     "CLI_FireDrill_25": {
         "evanve_convertToDefault_1": true,
         "evanve_defaultTobeOverriden_enabled": false,
@@ -264,6 +269,7 @@
             "EnableCredentialProviderForAuthenticator": true,
             "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
+            "EnableDiscoveredAppsStateFilter": true,
             "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
             "EnableMhsAppPolicyReviseBehavior": true,

@@ -243,21 +243,11 @@
             "settings": {
                 "EnableEtagForAdminIntent": true,
                 "disableCreatedAtPropertyRemoval": true,
-                "enableAADSyncCrossCloudAdditionUpdates": true,
-                "enableAADSyncCrossCloudDeleteUpdates": true,
-                "enableAADSyncCrossCloudSoftDeletionUpdates": true,
-                "enableAADSyncInCloudDeleteUpdates": true,
-                "enableAccountGraphTenantListCache": true,
-                "enableAllowedCloudsFromAadXtapCache": true,
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableChannelOnlyMemberGetTeam": true,
                 "enableConvUXChannelCreation": true,
                 "enableCreateDefaultOneNoteTabOnTeamOrChannelCreation": true,
                 "enableCreateDefaultOneNoteTabOnTeamOrChannelCreationInS2SContext": true,
-                "enableCrossCloudByAccountGraphInInvitations": true,
-                "enableCrossCloudByAccountGraphInNotifications": true,
-                "enableCrossCloudByAccountGraphInTenants": true,
-                "enableCrossCloudTelemetry": true,
                 "enableGetSharedChannelFromGetAllChannel": true,
                 "enablePoPForOffice365ExchangeREST": true,
                 "enableRoomFrom3s": true,
@@ -269,7 +259,6 @@
                 "enableTeamSharedChannelsDeletion": true,
                 "enableTeamSharedChannelsRestoration": true,
                 "enableTenantStatusSentToAdminIntentEtagEndpoint": false,
-                "enableTenantToCloudMappingCache": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
                 "meetingsOptions": {
@@ -1062,6 +1051,7 @@
     "TeamsCopilotAggregator_UserCtx": {
         "CustomerServiceCopilotRolloutFlags": {
             "EnableBookings": true,
+            "EnableDeletedTagDetection": true,
             "EnableUnifiedLiveChatAgent": true
         },
         "GroupCopilotRolloutFlags": {
