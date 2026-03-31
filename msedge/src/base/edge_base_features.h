@@ -32,6 +32,11 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeProfileID);
 
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeProfileIDUpload);
 
+// Investigation only: enables TRACE_EVENT logging in PostDelayedTask to capture
+// the source file and function name of every posted task. Expensive on hot
+// paths.
+BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeEnablePostTaskTracing);
+
 // If Enabled, will fake that system is in lockdown mode
 BASE_EXPORT BASE_DECLARE_FEATURE(kEmulateLockdownMode);
 

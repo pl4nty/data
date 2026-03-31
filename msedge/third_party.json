@@ -11,8 +11,8 @@
   },
   {
     "name": "android_deps",
-    "size": 12930577,
-    "file_count": 165
+    "size": 13704868,
+    "file_count": 169
   },
   {
     "name": "android_prebuilts",
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33136979,
+    "size": 33141864,
     "file_count": 4038
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 36565135,
-    "file_count": 107
+    "size": 36685645,
+    "file_count": 113
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6978025,
+    "size": 6978013,
     "file_count": 66
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17029807,
+    "size": 17030061,
     "file_count": 1943
   },
   {
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 96874419,
-    "file_count": 11172
+    "size": 97561424,
+    "file_count": 11239
   },
   {
     "name": "flac",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43923193,
+    "size": 43916374,
     "file_count": 3288
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 28969,
+    "size": 29054,
     "file_count": 3
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4234811,
+    "size": 4235350,
     "file_count": 599
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3478818,
+    "size": 3478914,
     "file_count": 1189
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 200378,
+    "size": 200588,
     "file_count": 11
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "tflite",
-    "size": 1721521,
+    "size": 1721678,
     "file_count": 534
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7438819,
+    "size": 7434634,
     "file_count": 191
   },
   {
@@ -816,7 +816,7 @@
   },
   {
     "name": "zstd",
-    "size": 325237,
+    "size": 325306,
     "file_count": 48
   }
 ]
