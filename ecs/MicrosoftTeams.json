@@ -4980,6 +4980,11 @@
         }
     },
     "Webhook": {
+        "ActivityContext": {
+            "DisplayBannerForMobile": {
+                "Enabled": false
+            }
+        },
         "CSAPartnerCall": {
             "EnabledBasedOnTenantRegion": true,
             "EndpointMappings": {
