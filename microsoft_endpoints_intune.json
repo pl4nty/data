@@ -1049,10 +1049,6 @@
         "serviceAreaDisplayName": "Microsoft Endpoint Manager",
         "tcpPorts": "443",
         "urls": [
-            "contentauthassetscdn-prod.azureedge.net",
-            "contentauthassetscdn-prodeur.azureedge.net",
-            "contentauthrafcontentcdn-prod.azureedge.net",
-            "contentauthrafcontentcdn-prodeur.azureedge.net",
             "fd.api.orgmsg.microsoft.com",
             "ris.prod.api.personalization.ideas.microsoft.com"
         ]

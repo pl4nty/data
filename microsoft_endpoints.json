@@ -282,7 +282,6 @@
         "serviceAreaDisplayName": "SharePoint Online and OneDrive for Business",
         "tcpPorts": "443",
         "urls": [
-            "*.search.production.apac.trafficmanager.net",
             "*.search.production.emea.trafficmanager.net",
             "*.search.production.us.trafficmanager.net"
         ]

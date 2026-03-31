@@ -1066,8 +1066,9 @@
         "name": "AzureHPCGPUDriversLinux",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "560.35.03",
+        "version": "580.95.05",
         "versions": [
+            "580.95.05",
             "560.35.03",
             "535.161.08",
             "535.104.05",
@@ -1083,8 +1084,9 @@
         "name": "AzureHPCGPUDriversWindows",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "553.86.10",
+        "version": "560.94",
         "versions": [
+            "560.94",
             "553.86.10",
             "553.24",
             "535.86.10",

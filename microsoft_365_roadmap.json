@@ -81001,61 +81001,6 @@
     },
     {
         "created": "2025-03-19T21:45:14",
-        "description": "Admins now can set Intune policies via the Edge management service, alongside the existing cloud policies. This enables admins to deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that will streamline the creation process into a comprehensive, step-by-step flow.",
-        "id": 485799,
-        "locale": null,
-        "modified": "2025-05-30T22:00:38",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: Intune policies in the Edge management service"
-    },
-    {
-        "created": "2025-03-19T21:45:14",
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to browse and read contacts within a .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485755,
         "locale": null,
@@ -111377,61 +111322,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Microsoft Information Protection and Insider Risk Management support multicloud environments"
-    },
-    {
-        "created": "2024-01-11T00:30:11",
-        "description": "With this feature, the admins can see more information like name, size, labels about the attachments present in the email that violated the Data Loss Prevention rules. Note: The month and status have been updated to reflect the current state.  We apologize for any inconvenience this may cause.",
-        "id": 369015,
-        "locale": null,
-        "modified": "2025-05-30T22:00:38",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "February CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention- Adding matched attachment details in Activity Explorer for Data Loss Prevention rules in Exchange"
     },
     {
         "created": "2023-09-21T07:00:00",

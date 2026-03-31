@@ -611,7 +611,6 @@
         "EnableRestartNotRunningVM": true,
         "EnableRestartVmRemediation": true,
         "EnableResumeCollectionProvisioning": true,
-        "EnableRetrieveCloudPcCountByStatus": true,
         "EnableRetrieveProvisioningSourceTypeFromPolicy": true,
         "EnableRetryDppProfileNotEnabled": true,
         "EnableReturnCUATypeForPlcy": true,
