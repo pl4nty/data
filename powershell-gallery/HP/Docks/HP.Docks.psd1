@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -15,12 +15,12 @@
 
     RootModule = 'HP.Docks.dll'
    
-    #FullModuleVersion = '1.8.5.1220'
-    ModuleVersion = '1.8.5'
+    #FullModuleVersion = '1.8.6.1458'
+    ModuleVersion = '1.8.6'
     GUID = '281fc451-4c65-4d46-a99a-86e1a46f0f76'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'
-    Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
+    Copyright = '(C) Copyright 2018-2026 HP Development Company, L.P.'
     Description = 'Docks module for HP Client Management Script Library'
     PowerShellVersion = '5.1'
   

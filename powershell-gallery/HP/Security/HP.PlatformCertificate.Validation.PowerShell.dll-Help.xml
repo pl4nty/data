@@ -2,6 +2,289 @@
 <helpItems schema="maml" xmlns="http://msh">
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
+      <command:name>Get-HpEpscBootlogEvidence</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HpEpscBootlogEvidence</command:noun>
+      <maml:description>
+        <maml:para>Retrieves HP Endpoint Security Controller Bootlog Evidence</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command retrieves HP Endpoint Security Controller (EpSC) bootlog evidence that contains attestation data about the system boot process. The evidence includes cryptographic signatures and measurements that can be used to verify the integrity and authenticity of the boot sequence.</maml:para>
+      <maml:para>The cmdlet can operate in different modes: 1. BIOS Extraction Mode : When neither -InFile nor -OutFile are specified, the cmdlet retrieves evidence directly from the EpSC on the current system using a random nonce. 2. BIOS Extraction with Custom Nonce : When -Nonce parameter is provided, the cmdlet uses the specified 32-byte nonce for evidence generation. 3. BIOS Extraction with File Output : When -OutFile parameter is provided, the raw evidence data is saved to the specified file in addition to returning the parsed evidence object. 4. File Input Mode : When -InFile parameter is provided, the cmdlet loads and parses evidence from the specified binary file instead of extracting from the current system. DEPENDENCY : HP Endpoint Security Controller Gen5 is required if evidence is being retrieved from EpSC on the current platform.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HpEpscBootlogEvidence</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Nonce</maml:name>
+          <maml:description>
+            <maml:para>A 32-byte array to be used as the input nonce for HP EpSC evidence generation. This parameter is optional and only used when the EpSC evidence is retrieved directly from the HP EpSC component on the target system. The HP EpSC will include this nonce in the evidence to confirm the evidence is fresh and not a replay of old evidence.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Byte[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Byte[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>InFile</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is present, the HP EpSC bootlog evidence will be loaded from the specified binary format file instead of loading from the current system. This parameter is optional and mutually exclusive with -OutFile and -Nonce.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutFile</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is present, the raw HP EpSC bootlog evidence (retrieved from the current system's EpSC) will be saved to the specified file name in binary format. This parameter is optional and mutually exclusive with -InFile.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Nonce</maml:name>
+        <maml:description>
+          <maml:para>A 32-byte array to be used as the input nonce for HP EpSC evidence generation. This parameter is optional and only used when the EpSC evidence is retrieved directly from the HP EpSC component on the target system. The HP EpSC will include this nonce in the evidence to confirm the evidence is fresh and not a replay of old evidence.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Byte[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Byte[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>InFile</maml:name>
+        <maml:description>
+          <maml:para>If this parameter is present, the HP EpSC bootlog evidence will be loaded from the specified binary format file instead of loading from the current system. This parameter is optional and mutually exclusive with -OutFile and -Nonce.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutFile</maml:name>
+        <maml:description>
+          <maml:para>If this parameter is present, the raw HP EpSC bootlog evidence (retrieved from the current system's EpSC) will be saved to the specified file name in binary format. This parameter is optional and mutually exclusive with -InFile.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>EpscBootlogEvidenceView</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns an object containing: - RawData : The raw binary evidence data - Version : The evidence structure version - Ecr0 : ECR0 attestation data - Ecr1 : ECR1 attestation data - Nonce : The nonce used for evidence generation - Uuid : The system UUID - SignedData : The cryptographically signed portion of the evidence</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- DEPENDENCY : HP Endpoint Security Controller Gen5 is required if evidence is being retrieved from EpSC on the current platform - This command requires an HP system with Endpoint Security Controller (EpSC) support</maml:para>
+        <maml:para>- When extracting from EpSC, the command requires appropriate system permissions</maml:para>
+        <maml:para>- The nonce parameter must be exactly 32 bytes when specified</maml:para>
+        <maml:para>- Binary evidence files should contain valid EpSC bootlog evidence data</maml:para>
+        <maml:para>- Evidence data includes cryptographic signatures that can be validated using Invoke-HpEpscBootlogEvidenceValidation</maml:para>
+        <maml:para>- Both -InFile and -OutFile should not be used together</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence</dev:code>
+        <dev:remarks>
+          <maml:para>Returns an object with HP EpSC bootlog evidence using a random nonce read from the EpSC on the current system.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
+PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce</dev:code>
+        <dev:remarks>
+          <maml:para>Creates a custom 32-byte nonce and retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence -InFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+        <dev:remarks>
+          <maml:para>Returns an object with HP EpSC bootlog evidence loaded from the specified binary file.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+        <dev:remarks>
+          <maml:para>Retrieves HP EpSC bootlog evidence using a random nonce and saves the raw evidence data to the specified file.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
+PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+        <dev:remarks>
+          <maml:para>Creates a custom 32-byte nonce, retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system, and saves the raw evidence data to the specified file.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HPEpscCerts</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HPEpscCerts</command:noun>
+      <maml:description>
+        <maml:para>Retrieves HP Endpoint Security Controller Certificates</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command retrieves three HP Endpoint Security Controller certificates as an object with a 3x2 array that includes the name of each certificate and a System.Security.Cryptography.X509Certificates.X509Certificate2 object for each. DEPENDENCY : HP Endpoint Security Controller Gen5 is required if certificates are being retrieved from EpSC on the current platform.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HPEpscCerts</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>InFile</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is present, the three HP EpSC certificates will be loaded from the specified PEM format file instead of loading from the current system. This parameter is optional and mutually exclusive with -OutFile.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>OutFile</maml:name>
+          <maml:description>
+            <maml:para>If this parameter is present, the HP EpSC certificates (whether retrieved from the current system's EpSC or loaded from an input file) will be saved to the specified file name in PEM format. This parameter is optional and mutually exclusive with -InFile.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>InFile</maml:name>
+        <maml:description>
+          <maml:para>If this parameter is present, the three HP EpSC certificates will be loaded from the specified PEM format file instead of loading from the current system. This parameter is optional and mutually exclusive with -OutFile.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>OutFile</maml:name>
+        <maml:description>
+          <maml:para>If this parameter is present, the HP EpSC certificates (whether retrieved from the current system's EpSC or loaded from an input file) will be saved to the specified file name in PEM format. This parameter is optional and mutually exclusive with -InFile.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns a 3x2 array of objects, each containing: - Name: The descriptive name of the certificate</maml:para>
+          <maml:para>- Certificate: A System.Security.Cryptography.X509Certificates.X509Certificate2 object representing the certificate</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- DEPENDENCY : HP Endpoint Security Controller Gen5 is required if certificates are being retrieved from EpSC on the current platform - This command requires an HP system with Endpoint Security Controller (EpSC) support</maml:para>
+        <maml:para>- When extracting from EpSC, the command requires appropriate system permissions</maml:para>
+        <maml:para>- PEM format files should contain the certificates in standard PEM encoding format</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscCerts</dev:code>
+        <dev:remarks>
+          <maml:para>Returns an object with three HP EpSC certificates.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscCerts -OutFile "HP EpSC Certificates.pem"</dev:code>
+        <dev:remarks>
+          <maml:para>Retrieves HP EpSC certificates from current platform, returns an object with three HP EpSC certificates, and saves the certificates in PEM format to the specified file name.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HpEpscCerts -InFile "HP EpSC Certificates.pem"</dev:code>
+        <dev:remarks>
+          <maml:para>Reads the specified HP EpSC certificate file in PEM format and returns an object with three HP EpSC certificates.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
       <command:name>Get-HPPlatformCertificateData</command:name>
       <command:verb>Get</command:verb>
       <command:noun>HPPlatformCertificateData</command:noun>
@@ -18,7 +301,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>PlatformCertificate</maml:name>
           <maml:description>
-            <maml:para>Specifies the path to either a platform certificate file, a directory containing platform certificates, or a zip file containing platform certificates that are stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. When providing a folder or a zip file, the tool will search for the certificate file named in the following format: HPInc.&lt;serial number&gt;.BASE.cer</maml:para>
+            <maml:para>Specifies the path to either a platform certificate file, a directory containing platform certificates, or a zip file containing platform certificates that are stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. When providing a folder or a zip file, the tool will search for the certificate file named in the following format: HPInc.&lt;serial_number_of_the_pc&gt;.BASE.cer .</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -38,13 +321,60 @@
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseOssIntegration</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Url</maml:name>
+          <maml:description>
+            <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>PlatformCertificate</maml:name>
         <maml:description>
-          <maml:para>Specifies the path to either a platform certificate file, a directory containing platform certificates, or a zip file containing platform certificates that are stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. When providing a folder or a zip file, the tool will search for the certificate file named in the following format: HPInc.&lt;serial number&gt;.BASE.cer</maml:para>
+          <maml:para>Specifies the path to either a platform certificate file, a directory containing platform certificates, or a zip file containing platform certificates that are stored offline either locally in the PC or in a shared location. If the platform certificate belongs to the PC, the tool installs platform certificate in the local PC in both EFI system partition and UEFI variable. When providing a folder or a zip file, the tool will search for the certificate file named in the following format: HPInc.&lt;serial_number_of_the_pc&gt;.BASE.cer .</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -65,11 +395,83 @@
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseOssIntegration</maml:name>
+        <maml:description>
+          <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Url</maml:name>
+        <maml:description>
+          <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
     </command:parameters>
-    <command:inputTypes />
-    <command:returnValues />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns a platform certificate data object containing the parsed contents of the x509 Platform Certificate according to the TCG Platform Certificate Profile specification. The object includes platform properties, component information, and can be converted to JSON format.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>- This cmdlet requires the platform certificate to be in x509 format following TCG Platform Certificate Profile, version 1.1 Revision 19</maml:para>
+        <maml:para>- When using -UseLocalPlatformCertificate, the certificate must be installed in the EFI System Partition or UEFI variable</maml:para>
+        <maml:para>- The output object can be converted to JSON using ConvertTo-Json for easier viewing and processing</maml:para>
+        <maml:para>- When using -UseOssIntegration, network connectivity and valid OSS API credentials are required</maml:para>
+        <maml:para>- The tool can automatically install platform certificates when provided via -PlatformCertificate parameter</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -90,7 +492,7 @@
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\</dev:code>
         <dev:remarks>
-          <maml:para>Gets platform certificate data from a directory containing platform certificates</maml:para>
+          <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -102,9 +504,37 @@
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
-        <dev:code>PS C:\> Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\Certificates.zip</dev:code>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -PlatformCertificate C:\Users\Tools\Test\Certificates.zip</dev:code>
         <dev:remarks>
-          <maml:para>Gets platform certificate data from a zip file containing platform certificates</maml:para>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -UseOssIntegration</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 9 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -UseOssIntegration -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -128,10 +558,33 @@
       </command:syntaxItem>
     </command:syntax>
     <command:parameters />
-    <command:inputTypes />
-    <command:returnValues />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns an object representing the current PC configuration that matches with the TCG Platform Certificate Profile specification, version 1.1 Revision 19. The object includes hardware components, firmware information, and system identifiers. The output can be converted to JSON format for easier viewing and processing.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>- This cmdlet reads hardware and firmware configuration directly from the current system</maml:para>
+        <maml:para>- The output format conforms to TCG Platform Certificate Profile specification, version 1.1 Revision 19</maml:para>
+        <maml:para>- The returned object can be converted to JSON using ConvertTo-Json for easier analysis</maml:para>
+        <maml:para>- This command is useful for comparing current system configuration against platform certificates</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -169,66 +622,115 @@
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Invoke-HPCertificateChainValidation</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>PlatformCertificate &lt;string&gt;</maml:name>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Ica &lt;string&gt;</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Ica</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to the Intermediate Certificate Authority (ICA) certificate file for validating the HP Platform Certificate. Required when not using -UseOnlineCertificateChain.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>ValidateRevocation</maml:name>
+          <maml:name>PlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-      </command:syntaxItem>
-      <command:syntaxItem>
-        <maml:name>Invoke-HPCertificateChainValidation</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UseLocalPlatformCertificate</maml:name>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Ica &lt;string&gt;</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>ValidateRevocation</maml:name>
-        </command:parameter>
-      </command:syntaxItem>
-      <command:syntaxItem>
-        <maml:name>Invoke-HPCertificateChainValidation</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>PlatformCertificate &lt;string&gt;</maml:name>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UseOnlineCertificateChain</maml:name>
+          <maml:description>
+            <maml:para>If specified, the tool automatically downloads and uses the online certificate chain for validation instead of requiring a local ICA certificate. This enables automatic retrieval of intermediate and root CA certificates.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseOssIntegration</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Url</maml:name>
+          <maml:description>
+            <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ValidateRevocation</maml:name>
-        </command:parameter>
-      </command:syntaxItem>
-      <command:syntaxItem>
-        <maml:name>Invoke-HPCertificateChainValidation</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>UseLocalPlatformCertificate</maml:name>
-        </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>UseOnlineCertificateChain</maml:name>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>ValidateRevocation</maml:name>
+          <maml:description>
+            <maml:para>If specified, the tool will perform online revocation checks on all certificates in the chain: - Platform certificate revocation: checks if the serial number of the leaf certificate is present on the ICA's CRL</maml:para>
+            <maml:para>- ICA revocation: checks if the serial number of the ICA is present on the Root's CRL</maml:para>
+            <maml:para>- RootCA revocation: checks if the serial number of the RootCA is present on the Root's CRL</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>PlatformCertificate</maml:name>
-        <maml:description>
-          <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Ica</maml:name>
         <maml:description>
@@ -242,10 +744,23 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PlatformCertificate</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UseLocalPlatformCertificate</maml:name>
         <maml:description>
-          <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are:&#10;- EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform&#10;- UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+          <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
         </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
           <maml:uri />
@@ -257,6 +772,7 @@
         <maml:description>
           <maml:para>If specified, the tool automatically downloads and uses the online certificate chain for validation instead of requiring a local ICA certificate. This enables automatic retrieval of intermediate and root CA certificates.</maml:para>
         </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
           <maml:uri />
@@ -264,13 +780,61 @@
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseOssIntegration</maml:name>
+        <maml:description>
+          <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Url</maml:name>
+        <maml:description>
+          <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ValidateRevocation</maml:name>
         <maml:description>
-          <maml:para>If specified, the tool will perform online revocation checks on all certificates in the chain:
-- Platform certificate revocation: checks if the serial number of the leaf certificate is present on the ICA's CRL
-- ICA revocation: checks if the serial number of the ICA is present on the Root's CRL
-- RootCA revocation: checks if the serial number of the RootCA is present on the Root's CRL</maml:para>
+          <maml:para>If specified, the tool will perform online revocation checks on all certificates in the chain: - Platform certificate revocation: checks if the serial number of the leaf certificate is present on the ICA's CRL</maml:para>
+          <maml:para>- ICA revocation: checks if the serial number of the ICA is present on the Root's CRL</maml:para>
+          <maml:para>- RootCA revocation: checks if the serial number of the RootCA is present on the Root's CRL</maml:para>
         </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
           <maml:name>SwitchParameter</maml:name>
           <maml:uri />
@@ -278,10 +842,35 @@
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
     </command:parameters>
-    <command:inputTypes />
-    <command:returnValues />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns a validation result object containing information about the certificate chain validation, including the status of each certificate in the chain, trust chain verification results, and any revocation check results if -ValidateRevocation was specified.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>- Intermediate CA certificates can be obtained from the Authority Information Access (AIA) extension in the platform certificate</maml:para>
+        <maml:para>- Use Get-HPPlatformCertificateData to retrieve the ICA location from the platform certificate</maml:para>
+        <maml:para>- When using -UseOnlineCertificateChain, the tool automatically downloads intermediate and root CA certificates</maml:para>
+        <maml:para>- The -ValidateRevocation parameter requires online connectivity to check Certificate Revocation Lists (CRLs)</maml:para>
+        <maml:para>- Offline mode requires manual download and storage of intermediate CA certificates</maml:para>
+        <maml:para>- When using -UseOssIntegration, valid OSS API credentials and network connectivity are required</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -300,60 +889,387 @@
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -Ica 'C:\Users\Tools\Test\ica-2024.cer'</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 6 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -UseOnlineCertificateChain</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 7 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain -ValidateRevocation</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 8 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain -ValidateRevocation</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 9 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\Certificates.zip -Ica 'C:\Users\Tools\Test\ica-2024.cer'</dev:code>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret" -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation</dev:code>
         <dev:remarks>
-          <maml:para>Validates certificate chain using a zip file containing platform certificates</maml:para>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 10 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain -ValidateRevocation</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 11 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain -ValidateRevocation</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 12 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret" -UseOnlineCertificateChain -ValidateRevocation</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 13 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\Certificates.zip -Ica 'C:\Users\Tools\Test\ica-2024.cer'</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 14 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\ -Ica 'C:\Users\Tools\Test\ica-2024.cer'</dev:code>
         <dev:remarks>
-          <maml:para>Validates certificate chain using a directory containing platform certificates</maml:para>
           <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 15 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -Ica 'C:\Users\Tools\Test\ica-2024.cer'</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 16 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPCertificateChainValidation -UseOssIntegration -ClientId "your-client-id" -ClientSecret "your-client-secret" -UseOnlineCertificateChain</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-HpEpscBootlogEvidenceValidation</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>HpEpscBootlogEvidenceValidation</command:noun>
+      <maml:description>
+        <maml:para>Validates HP Endpoint Security Controller Bootlog Evidence.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This cmdlet validates HP Endpoint Security Controller (EpSC) bootlog evidence. This includes evaluation of the security posture reported by the EpSC, the digital signature over that evidence generated by the reporting EpSC, and the certificate chain of the reporting EpSC that describes the key that was used by the reporting EpSC to sign the evidence. The cmdlet can also optionally confirm that the evidence includes a reference nonce and/or uuid value.</maml:para>
+      <maml:para>The cmdlet can operate in different modes:</maml:para>
+      <maml:para>1. With EpSC Evidence and Certificates : When both HpEpscEvidence and HpEpscCerts parameters are provided, the cmdlet performs the EpSC security posture validation, the digital signature over that evidence generated by the reporting EpSC, and the certificate chain of the reporting EpSC that describes the key that was used by the reporting EpSC to sign the evidence.</maml:para>
+      <maml:para>2. Without EpSC Certificates : When the NoHpEpscCerts switch is specified, the security posture validation is performed without validating the digital signature over the evidence that is generated by the reporting EpSC.</maml:para>
+      <maml:para>3. Local vs External Platform Certificate : The cmdlet can use either a local platform certificate (UseLocalPlatformCertificate) or an external one (PlatformCertificate parameter) to validate the reporting EpSC is the same component that was in the system when the HP Platform Certificate was issued by HP. DEPENDENCY : HP Endpoint Security Controller Gen5 is required for retrieving evidence and certificates from the current platform.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-HpEpscBootlogEvidenceValidation</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HpEpscEvidence</maml:name>
+          <maml:description>
+            <maml:para>The HP EpSC boot log evidence obtained from Get-HpEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Object[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty array</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>HpEpscCerts</maml:name>
+          <maml:description>
+            <maml:para>HP EpSC certificates from the current system obtained from Get-HpEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Object[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty array</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty string</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseLocalPlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Nonce</maml:name>
+          <maml:description>
+            <maml:para>A 32-byte array to be used as the input nonce for HP EpSC evidence validation. This nonce should match the one used when obtaining the bootlog evidence to ensure the evidence freshness and prevent replay attacks.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Byte[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Byte[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty array</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Uuid</maml:name>
+          <maml:description>
+            <maml:para>The UUID of the system to be used for validation. This parameter allows validation of evidence from a specific system when the UUID is known.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Empty string</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>NoHpEpscCerts</maml:name>
+          <maml:description>
+            <maml:para>If specified, the cmdlet will not gather EpSC Certificates from the EpSC device on the current device and instead perform validations without using HP EpSC certificates. This is useful when EpSC certificates are not available or when performing validation in offline scenarios.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HpEpscEvidence</maml:name>
+        <maml:description>
+          <maml:para>The HP EpSC boot log evidence obtained from Get-HpEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Object[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty array</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>HpEpscCerts</maml:name>
+        <maml:description>
+          <maml:para>HP EpSC certificates from the current system obtained from Get-HpEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Object[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty array</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>PlatformCertificate</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty string</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseLocalPlatformCertificate</maml:name>
+        <maml:description>
+          <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Nonce</maml:name>
+        <maml:description>
+          <maml:para>A 32-byte array to be used as the input nonce for HP EpSC evidence validation. This nonce should match the one used when obtaining the bootlog evidence to ensure the evidence freshness and prevent replay attacks.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Byte[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Byte[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty array</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Uuid</maml:name>
+        <maml:description>
+          <maml:para>The UUID of the system to be used for validation. This parameter allows validation of evidence from a specific system when the UUID is known.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Empty string</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>NoHpEpscCerts</maml:name>
+        <maml:description>
+          <maml:para>If specified, the cmdlet will not gather EpSC Certificates from the EpSC device on the current device and instead perform validations without using HP EpSC certificates. This is useful when EpSC certificates are not available or when performing validation in offline scenarios.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns an object containing: - Certificates: The HP EpSC certificates used for validation</maml:para>
+          <maml:para>- Evidence: The HP EpSC bootlog evidence that was validated</maml:para>
+          <maml:para></maml:para>
+          <maml:para>If no HP EpSC Certificates or Evidence are found, the cmdlet outputs an informational message.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- DEPENDENCY : HP Endpoint Security Controller Gen5 is required for retrieving evidence and certificates from the current platform - This command requires an HP system with Endpoint Security Controller (EpSC) support</maml:para>
+        <maml:para>- The validation process verifies cryptographic signatures and attestation data integrity</maml:para>
+        <maml:para>- Nonce parameter should be a 32-byte array for proper validation</maml:para>
+        <maml:para>- When using NoHpEpscCerts parameter, some validation features may be limited</maml:para>
+        <maml:para>- Platform certificate validation is essential for establishing trust in the validation process</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using certificates from the current system and the local platform certificate.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\HPInc.12345678.BASE.cer"</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using certificates from the current system and a specific platform certificate file.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence -Nonce $customNonce
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using a custom nonce for the validation process.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence -Nonce $customNonce
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using all possible evaluations including custom nonce and system UUID verification.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -NoHpEpscCerts -UseLocalPlatformCertificate</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence without using HP EpSC certificates.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\" -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using a directory containing platform certificates and a specific system UUID.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HpEpscCerts
+PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\certificates.zip"</dev:code>
+        <dev:remarks>
+          <maml:para>Validates EpSC bootlog evidence using platform certificates from a zip file.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -375,17 +1291,86 @@
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Invoke-HPPlatformIntegrityCheck</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>PlatformCertificate &lt;string&gt;</maml:name>
-        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>NoInstallPlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>If specified, the command will not save the Platform Certificate passed into the PlatformCertificate parameter locally on the PC.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
-      </command:syntaxItem>
-      <command:syntaxItem>
-        <maml:name>Invoke-HPPlatformIntegrityCheck</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to a platform certificate file, directory containing platform certificates, or zip file with platform certificates. When using a directory or zip file, the tool searches for files named in the format: HPInc.&lt;serial_number&gt;.BASE.cer</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UseLocalPlatformCertificate</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseOssIntegration</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Url</maml:name>
+          <maml:description>
+            <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
     </command:syntax>
@@ -417,7 +1402,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UseLocalPlatformCertificate</maml:name>
         <maml:description>
-          <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are:&#10;- EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform&#10;- UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
+          <maml:para>If specified, this command uses the Platform Certificate that is stored locally in the PC. The default locations for the certificate are: - EFI System Partition: /boot/tcg/cert/platform/ or \efi\tcg\cert\platform - UEFI Variable: HpPlatformCertificateBase GUID {B44ED025-A047-4312-9E62-A1C3ACC8684D}</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -426,11 +1411,83 @@
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseOssIntegration</maml:name>
+        <maml:description>
+          <maml:para>If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Url</maml:name>
+        <maml:description>
+          <maml:para>Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
     </command:parameters>
-    <command:inputTypes />
-    <command:returnValues />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns an integrity check result object containing detailed validation results for each component verified against the platform certificate. The object includes pass/fail status for disk, memory, processor, graphics card, chassis, baseboard, networking devices, PCIe devices, NVMe devices, BIOS firmware version, feature byte, UUID, and Endpoint Security Controller (EpSC) ID certificate hash.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>- This cmdlet performs comprehensive hardware and firmware validation against the platform certificate</maml:para>
+        <maml:para>- When using -PlatformCertificate without -NoInstallPlatformCertificate, the certificate will be installed locally</maml:para>
+        <maml:para>- The tool verifies multiple components: disk, memory, processor, graphics, chassis, baseboard, network devices, PCIe devices, NVMe devices, BIOS version, feature byte, UUID, and EpSC ID certificate hash</maml:para>
+        <maml:para>- When using -UseOssIntegration, valid OSS API credentials and network connectivity are required</maml:para>
+        <maml:para>- The validation process compares current system configuration against the specifications in the platform certificate</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -458,7 +1515,6 @@
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -PlatformCertificate C:\Users\Tools\Test</dev:code>
         <dev:remarks>
-          <maml:para>Verifies platform integrity using a directory containing platform certificates</maml:para>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
@@ -466,7 +1522,34 @@
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -PlatformCertificate C:\Users\Tools\Test\Certificates.zip</dev:code>
         <dev:remarks>
-          <maml:para>Verifies platform integrity using a zip file containing platform certificates</maml:para>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -UseOssIntegration</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 9 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPPlatformIntegrityCheck -UseOssIntegration -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
+        <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
       </command:example>
@@ -484,7 +1567,14 @@
     </command:details>
     <maml:description>
       <maml:para>This verification process ensures the TPM in the executing PC is authentic and matches Platform Certificate. It also validates that the collection of root and intermediate certificates that used to sign the TPM certificates were indeed issued by the TPM Vendors. The TPM's certificate used for this evaluation is the TPM EK Certificate found at the register of the TPM.</maml:para>
-      <maml:para>After successful verification, it provides the user with the confidence in the TPM to attest the validation commands executed by the verification tool.</maml:para>
+      <maml:para>After successful verification, it provides the user with the confidence in the TPM to attest the validation commands executed by the verification tool. TPM Certificate Chain Architectures: TPM systems can have different certificate chain architectures depending on the TPM manufacturer and model:</maml:para>
+      <maml:para>- 2-Level Chain (EK → Root CA): - The TPM EK certificate is signed directly by the Root CA    - Only the Root CA certificate is needed for validation</maml:para>
+      <maml:para>- 3-Level Chain (EK → ICA → Root CA): - The TPM EK certificate is signed by an Intermediate CA (ICA)    - The ICA is then signed by the Root CA    - Both ICA and Root CA certificates are required for validation</maml:para>
+      <maml:para>- 4-Level Chain (EK → ICA-1 → ICA-2 → Root CA): - The TPM EK certificate is signed by the Intermediate CA 1 (ICA-1)    - The ICA-1 is then signed by the Intermediate CA 2 (ICA-2)    - The ICA-2 is then signed by the Root CA    - All three certificates (ICA-1, ICA-2, and Root CA) are required for validation Certificate Validation Process: The tool validates the certificate chain by matching the Authority Key Identifier (AKI) of each certificate with the Subject Key Identifier (SKI) of its issuer: - For 2-level chains: EK's AKI must match Root CA's SKI</maml:para>
+      <maml:para>- For 3-level chains: EK's AKI must match ICA's SKI, and ICA's AKI must match Root CA's SKI</maml:para>
+      <maml:para>- For 4-level chains: EK's AKI must match ICA-1's SKI, ICA-1's AKI must match ICA-2's SKI, and ICA-2's AKI must match Root CA's SKI</maml:para>
+      <maml:para></maml:para>
+      <maml:para>Providing the wrong certificates (e.g., only Root CA when ICA is required) will result in validation failure because the key identifiers won't match.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -504,7 +1594,20 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>TpmCertificateChain</maml:name>
           <maml:description>
-            <maml:para>Specifies the whole TPM's certificate chain for the tool to validate. The tool will try to match the TPM's EK certificate with the certificate chain passed as parameter and validate them. Path to TPM's ICA certificate is the offline path of the certificate. User needs to download the intermediate certificate(s) online and save it offline before the tool execution. RootCa is the root CA of the TPM EK certificate. Path to TPM's root certificate is the offline path of the certificate. User needs to download the root certificate online and save it offline before the tool execution.</maml:para>
+            <maml:para>Specifies the whole TPM's certificate chain for the tool to validate. The tool will try to match the TPM's EK certificate with the certificate chain passed as parameter and validate them. Path to TPM's ICA certificate is the offline path of the certificate. User needs to download the intermediate certificate(s) online and save it offline before the tool execution. RootCa is the root CA of the TPM EK certificate. Path to TPM's root certificate is the offline path of the certificate. User needs to download the root certificate online and save it offline before the tool execution. IMPORTANT - Certificate Order: Certificates must be provided in order from the certificate closest to the EK (leaf) to the Root CA: - Format: ica, rootCa (NOT rootCa, ica) Supported Certificate Chain Formats: 1. rootCa only - For 2-level chains where EK is signed directly by Root CA:</maml:para>
+            <maml:para></maml:para>
+            <maml:para>-TpmCertificateChain rootCa.cer</maml:para>
+            <maml:para></maml:para>
+            <maml:para>2. ica, rootCa - For 3-level chains:</maml:para>
+            <maml:para></maml:para>
+            <maml:para>-TpmCertificateChain ica.cer, rootCa.cer</maml:para>
+            <maml:para></maml:para>
+            <maml:para>The tool validates: Root CA (self-signed) → ICA (signed by Root CA) → EK (signed by ICA)</maml:para>
+            <maml:para>3. ica1, ica2, rootCa - For 4-level chains:</maml:para>
+            <maml:para></maml:para>
+            <maml:para>-TpmCertificateChain ica1.cer, ica2.cer, rootCa.cer</maml:para>
+            <maml:para></maml:para>
+            <maml:para>The tool validates: Root CA (self-signed) → ICA-2 (signed by Root CA) → ICA-1 (signed by ICA-2) → EK (signed by ICA-1)</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
           <dev:type>
@@ -531,7 +1634,20 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>TpmCertificateChain</maml:name>
         <maml:description>
-          <maml:para>Specifies the whole TPM's certificate chain for the tool to validate. The tool will try to match the TPM's EK certificate with the certificate chain passed as parameter and validate them. Path to TPM's ICA certificate is the offline path of the certificate. User needs to download the intermediate certificate(s) online and save it offline before the tool execution. RootCa is the root CA of the TPM EK certificate. Path to TPM's root certificate is the offline path of the certificate. User needs to download the root certificate online and save it offline before the tool execution.</maml:para>
+          <maml:para>Specifies the whole TPM's certificate chain for the tool to validate. The tool will try to match the TPM's EK certificate with the certificate chain passed as parameter and validate them. Path to TPM's ICA certificate is the offline path of the certificate. User needs to download the intermediate certificate(s) online and save it offline before the tool execution. RootCa is the root CA of the TPM EK certificate. Path to TPM's root certificate is the offline path of the certificate. User needs to download the root certificate online and save it offline before the tool execution. IMPORTANT - Certificate Order: Certificates must be provided in order from the certificate closest to the EK (leaf) to the Root CA: - Format: ica, rootCa (NOT rootCa, ica) Supported Certificate Chain Formats: 1. rootCa only - For 2-level chains where EK is signed directly by Root CA:</maml:para>
+          <maml:para></maml:para>
+          <maml:para>-TpmCertificateChain rootCa.cer</maml:para>
+          <maml:para></maml:para>
+          <maml:para>2. ica, rootCa - For 3-level chains:</maml:para>
+          <maml:para></maml:para>
+          <maml:para>-TpmCertificateChain ica.cer, rootCa.cer</maml:para>
+          <maml:para></maml:para>
+          <maml:para>The tool validates: Root CA (self-signed) → ICA (signed by Root CA) → EK (signed by ICA)</maml:para>
+          <maml:para>3. ica1, ica2, rootCa - For 4-level chains:</maml:para>
+          <maml:para></maml:para>
+          <maml:para>-TpmCertificateChain ica1.cer, ica2.cer, rootCa.cer</maml:para>
+          <maml:para></maml:para>
+          <maml:para>The tool validates: Root CA (self-signed) → ICA-2 (signed by Root CA) → ICA-1 (signed by ICA-2) → EK (signed by ICA-1)</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
         <dev:type>
@@ -541,10 +1657,35 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
     </command:parameters>
-    <command:inputTypes />
-    <command:returnValues />
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns a validation result object containing information about the TPM credential validation, including the TPM EK certificate details, verification status of the certificate chain, and confirmation that the TPM matches the one specified in the platform certificate.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>- This cmdlet validates the TPM EK (Endorsement Key) certificate found in the TPM register</maml:para>
+        <maml:para>- The Microsoft TrustedTpm.cab file can be downloaded from: https://learn.microsoft.com/en-us/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-install-trusted-tpm-root-certificates</maml:para>
+        <maml:para>- Using -CabFile is recommended as it simplifies TPM certificate chain management</maml:para>
+        <maml:para>- When using -TpmCertificateChain, intermediate and root certificates must be downloaded manually and stored offline. Also, It must be provided in leaf-to-root order: ica, rootCa (NOT rootCa, ica).</maml:para>
+        <maml:para>- The tool verifies that root and intermediate certificates were issued by legitimate TPM vendors</maml:para>
+        <maml:para>- Successful validation provides confidence in the TPM's ability to attest validation commands</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -565,7 +1706,21 @@
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Invoke-HPTPMCredentialValidation -TpmCertificateChain ica.cer, rootCa.cer</dev:code>
         <dev:remarks>
-          <maml:para></maml:para>
+          <maml:para>Validates a TPM with a 3-level certificate chain (EK → ICA → Root CA), providing both ICA and Root CA certificates in the correct order.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPTPMCredentialValidation -TpmCertificateChain rootCa.cer</dev:code>
+        <dev:remarks>
+          <maml:para>Validates a TPM with a 2-level certificate chain (EK → Root CA) using only the Root CA certificate.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPTPMCredentialValidation -TpmCertificateChain "ica1.cer", "ica2.cer", "rootCa.cer"</dev:code>
+        <dev:remarks>
+          <maml:para>Validates a TPM with a 4-level certificate chain (EK → ICA-1 → ICA-2 → Root CA), providing both intermediate certificates and the Root CA in the correct order.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>

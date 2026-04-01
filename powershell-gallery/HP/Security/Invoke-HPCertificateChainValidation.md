@@ -13,10 +13,17 @@ Validates HP Platform Certificate trust chains.
 ## SYNTAX
 
 ```
-Invoke-HPCertificateChainValidation -PlatformCertificate <string> -Ica <string> [-ValidateRevocation] [<CommonParameters>]
-Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica <string> [-ValidateRevocation] [<CommonParameters>]
-Invoke-HPCertificateChainValidation -PlatformCertificate <string> -UseOnlineCertificateChain [-ValidateRevocation] [<CommonParameters>]
+Invoke-HPCertificateChainValidation -PlatformCertificate <String> -Ica <String> [-ValidateRevocation] [<CommonParameters>]
+
+Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica <String> [-ValidateRevocation] [<CommonParameters>]
+
+Invoke-HPCertificateChainValidation -UseOssIntegration [-Url <String>] [-ClientId <String>] [-ClientSecret <String>] -Ica <String> [-ValidateRevocation] [<CommonParameters>]
+
+Invoke-HPCertificateChainValidation -PlatformCertificate <String> -UseOnlineCertificateChain [-ValidateRevocation] [<CommonParameters>]
+
 Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain [-ValidateRevocation] [<CommonParameters>]
+
+Invoke-HPCertificateChainValidation -UseOssIntegration [-Url <String>] [-ClientId <String>] [-ClientSecret <String>] -UseOnlineCertificateChain [-ValidateRevocation] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,6 +42,7 @@ ICA location can be retrieved from the certificate by using Get-HPPlatformCertif
 ```powershell
 PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -Ica 'C:\Users\Tools\Test\ica-2024.cer'
 ```
+
 ### Example 2
 ```powershell
 PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C:\Users\Tools\Test\ica-2024.cer'
@@ -42,41 +50,72 @@ PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C
 
 ### Example 3
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -Ica 'C:\Users\Tools\Test\ica-2024.cer'
 ```
 
 ### Example 4
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain
+PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain
 ```
 
 ### Example 5
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation
+PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain
 ```
+
 ### Example 6
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -UseOnlineCertificateChain
 ```
 
 ### Example 7
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain -ValidateRevocation
+PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation
 ```
 
 ### Example 8
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain -ValidateRevocation
+PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation
 ```
 
 ### Example 9
 ```powershell
-PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\Certificates.zip -Ica 'C:\Users\Tools\Test\ica-2024.cer'
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret" -Ica 'C:\Users\Tools\Test\ica-2024.cer' -ValidateRevocation
 ```
 
 ### Example 10
 ```powershell
+PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate 'C:\Users\Tools\Test\HPInc.00036635D0.BASE.cer' -UseOnlineCertificateChain -ValidateRevocation
+```
+
+### Example 11
+```powershell
+PS C:\> Invoke-HPCertificateChainValidation -UseLocalPlatformCertificate -UseOnlineCertificateChain -ValidateRevocation
+```
+
+### Example 12
+```powershell
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret" -UseOnlineCertificateChain -ValidateRevocation
+```
+
+### Example 13
+```powershell
+PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\Certificates.zip -Ica 'C:\Users\Tools\Test\ica-2024.cer'
+```
+
+### Example 14
+```powershell
 PS C:\> Invoke-HPCertificateChainValidation -PlatformCertificate C:\Users\Tools\Test\ -Ica 'C:\Users\Tools\Test\ica-2024.cer'
+```
+
+### Example 15
+```powershell
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -Ica 'C:\Users\Tools\Test\ica-2024.cer'
+```
+
+### Example 16
+```powershell
+PS C:\> Invoke-HPCertificateChainValidation -UseOssIntegration -ClientId "your-client-id" -ClientSecret "your-client-secret" -UseOnlineCertificateChain
 ```
 
 ## PARAMETERS
@@ -143,6 +182,66 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -UseOssIntegration
+If specified, this command uses the OSS (Order Status Service) API integration to retrieve the platform certificate. When this option is used, the tool can automatically prompt for OSS API credentials (client ID and client secret) and retrieve the platform certificate for the current device from the OSS system. Optional connection details can be supplied with `-Url`, `-ClientId`, and `-ClientSecret`. This option requires network connectivity and valid OSS API credentials.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Url
+Specifies a custom OSS API endpoint URL for integration operations. This parameter is optional and can be used with the -UseOssIntegration parameter to override the default OSS API endpoint. If not specified, the tool uses the default production OSS API endpoint.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClientId
+Specifies the OSS integration client identifier used to authenticate when `-UseOssIntegration` is provided. If omitted, the cmdlet first prompts the user to enter the client ID interactively before asking for the client secret.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClientSecret
+Specifies the OSS integration client secret used together with `-ClientId` when `-UseOssIntegration` is enabled. Provide this value when using custom OSS credentials or automation scenarios. When not supplied, the cmdlet securely prompts for the secret immediately after the client ID prompt.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ValidateRevocation
 If specified, the tool will perform online revocation checks on all certificates in the chain:
 - Platform certificate revocation: checks if the serial number of the leaf certificate is present on the ICA's CRL
@@ -163,3 +262,21 @@ Accept wildcard characters: False
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### None
+This cmdlet does not accept pipeline input.
+
+## OUTPUTS
+
+### System.Object
+Returns a validation result object containing information about the certificate chain validation, including the status of each certificate in the chain, trust chain verification results, and any revocation check results if -ValidateRevocation was specified.
+
+## NOTES
+- Intermediate CA certificates can be obtained from the Authority Information Access (AIA) extension in the platform certificate
+- Use Get-HPPlatformCertificateData to retrieve the ICA location from the platform certificate
+- When using -UseOnlineCertificateChain, the tool automatically downloads intermediate and root CA certificates
+- The -ValidateRevocation parameter requires online connectivity to check Certificate Revocation Lists (CRLs)
+- Offline mode requires manual download and storage of intermediate CA certificates
+- When using -UseOssIntegration, valid OSS API credentials and network connectivity are required

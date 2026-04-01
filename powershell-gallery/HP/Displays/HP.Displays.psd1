@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -15,12 +15,12 @@
 
     RootModule = 'HP.Displays.dll'
    
-    #FullModuleVersion = '1.8.5.1220'
-    ModuleVersion = '1.8.5'
+    #FullModuleVersion = '1.8.6.1458'
+    ModuleVersion = '1.8.6'
     GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'
-    Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
+    Copyright = '(C) Copyright 2018-2026 HP Development Company, L.P.'
     Description = 'Displays module for HP Client Management Script Library'
     PowerShellVersion = '5.1'
   

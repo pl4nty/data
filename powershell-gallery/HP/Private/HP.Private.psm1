@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -61,29 +61,69 @@ function Get-HPPrivateReadINI {
   # remove any leading forward slashes
   $file = $file.TrimStart("/")
 
+  $httpClient = $null
   try {
     if ($file.StartsWith("https://",$true,$null)) {
       Write-Verbose ("Reading network file: $file")
 
       [int]$retries = $maxRetries
+      [bool]$useDefaultHttpClientHandler = $false
       do {
         try {
           Write-Verbose "Downloading CVA file $file, try $($maxRetries-$retries) / $maxRetries"
-          [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
           $userAgent = Get-HPPrivateUserAgent
-          $data = Invoke-WebRequest -Uri $file -UserAgent $userAgent -UseBasicParsing -ErrorAction Stop
+
+          if ($useDefaultHttpClientHandler) {
+            $nativeHandler = New-Object System.Net.Http.HttpClientHandler
+            $nativeHandler.UseProxy = $true
+            $nativeHandler.Proxy = [System.Net.WebRequest]::DefaultWebProxy
+            $nativeHandler.DefaultProxyCredentials = [System.Net.CredentialCache]::DefaultCredentials
+            $httpClient = New-Object System.Net.Http.HttpClient($nativeHandler, $true)
+          }
+          else {
+            $proxyHandler = New-Object HP.CMSLHelper.HttpProxyMessageHandler
+            $httpClient = New-Object System.Net.Http.HttpClient($proxyHandler, $true)
+          }
+          $httpClient.DefaultRequestHeaders.Add("User-Agent", $userAgent)
+          
+          $response = $httpClient.GetAsync($file, [System.Net.Http.HttpCompletionOption]::ResponseHeadersRead).GetAwaiter().GetResult()
+          
+          if (-not $response.IsSuccessStatusCode) {
+            throw "HTTP request failed with status code: $($response.StatusCode)"
+          }
+          
+          $stream = $response.Content.ReadAsStreamAsync().GetAwaiter().GetResult()
+          $streamReader = New-Object System.IO.StreamReader ($stream)
           $retries = 0
         }
         catch {
+          if ($_.Exception -and $_.Exception.ToString().Contains("maximum buffer size") -and (-not $useDefaultHttpClientHandler)) {
+            Write-Verbose "Detected max response buffer limit in proxy path. Retrying with native HttpClientHandler streaming path."
+            if ($httpClient) {
+              $httpClient.Dispose()
+              $httpClient = $null
+            }
+            $useDefaultHttpClientHandler = $true
+            if ($retries -le 0) {
+              $retries = 1
+            }
+            continue
+          }
+
           $retries = $retries - 1
           Write-Verbose ("Download failed: $($_.Exception)")
+          if ($httpClient) {
+            $httpClient.Dispose()
+            $httpClient = $null
+          }
           if ($retries -le 0) { throw $_ }
           Start-Sleep 5
-
         }
       } while ($retries -gt 0)
 
-      $streamReader = New-Object System.IO.StreamReader ($data.RawContentStream)
+      if ($null -eq $streamReader) {
+        throw "Failed to open response stream for '$file'."
+      }
     }
     else {
       Write-Verbose ("Reading filesystem file: $file")
@@ -149,6 +189,10 @@ function Get-HPPrivateReadINI {
       $streamReader.Close()
       $streamReader.Dispose()
       $streamReader = $null
+    }
+    if ($httpClient) {
+      $httpClient.Dispose()
+      $httpClient = $null
     }
   }
   return $ini
@@ -329,11 +373,10 @@ function Invoke-HPPrivateDownloadFile {
   )
 
   Write-Verbose ("Requesting to download $url to $target with progress: $progress and signatureCheckSkip: $skipSignatureCheck")
-  [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
   $userAgent = Get-HPPrivateUserAgent
   $targetStream = $null
   $responseStream = $null
-  $response = $null
+  $httpClient = $null
 
   try {
     if (Test-Path $target -PathType Leaf) {
@@ -363,24 +406,55 @@ function Invoke-HPPrivateDownloadFile {
     }
 
     $uri = New-Object "System.Uri" "$url"
+    $response = $null
     $retries = $maxRetries
+    [bool]$useDefaultHttpClientHandler = $false
 
     do {
-      $request = [System.Net.HttpWebRequest]::Create($uri)
-      $request.set_Timeout(60000)
-
-      if ($request -is [System.Net.HttpWebRequest]){
-        Write-Verbose "Setting user agent $userAgent in HttpWebRequest"
-        $request.UserAgent = $userAgent
+      if ($useDefaultHttpClientHandler) {
+        $nativeHandler = New-Object System.Net.Http.HttpClientHandler
+        $nativeHandler.UseProxy = $true
+        $nativeHandler.Proxy = [System.Net.WebRequest]::DefaultWebProxy
+        $nativeHandler.DefaultProxyCredentials = [System.Net.CredentialCache]::DefaultCredentials
+        $httpClient = New-Object System.Net.Http.HttpClient($nativeHandler, $true)
       }
+      else {
+        $proxyHandler = New-Object HP.CMSLHelper.HttpProxyMessageHandler($null)
+        $httpClient = New-Object System.Net.Http.HttpClient($proxyHandler, $true)
+      }
+      $httpClient.DefaultRequestHeaders.Add("User-Agent", $userAgent)
 
       try {
         Write-Verbose "Executing query on $uri, try $($maxRetries-$retries) / $maxRetries"
-        $response = $request.GetResponse()
+        $response = $httpClient.GetAsync($uri, [System.Net.Http.HttpCompletionOption]::ResponseHeadersRead).GetAwaiter().GetResult()
+        
+        if (-not $response.IsSuccessStatusCode) {
+          throw "HTTP request failed with status code: $($response.StatusCode)"
+        }
+        
         $retries = 0
       }
       catch {
+        if ((-not $useDefaultHttpClientHandler)) {
+          Write-Warning "Proxy handler failed: $_. Exception type: $($_.Exception.GetType().FullName) Message: $($_.Exception.Message)"
+          Write-Verbose "Retrying with native HttpClientHandler streaming path."
+          if ($httpClient) {
+            $httpClient.Dispose()
+            $httpClient = $null
+          }
+          $useDefaultHttpClientHandler = $true
+          if ($retries -le 0) {
+            $retries = 1
+          }
+          continue
+        }
+
         $retries = $retries - 1
+        
+        if ($httpClient) {
+          $httpClient.Dispose()
+          $httpClient = $null
+        }
 
         if ($retries -le 0) {
           throw "Query failed: $($_.Exception)"
@@ -393,7 +467,11 @@ function Invoke-HPPrivateDownloadFile {
 
     } while ($retries -gt 0)
 
-    $responseContentLength = $response.get_ContentLength()
+    if ($null -eq $response) {
+      throw "Failed to retrieve HTTP response for '$url'."
+    }
+
+    $responseContentLength = $response.Content.Headers.ContentLength
     if ($responseContentLength -ge 1024) {
       $totalLength = [System.Math]::Floor($responseContentLength / 1024)
     }
@@ -410,19 +488,19 @@ function Invoke-HPPrivateDownloadFile {
     if(Test-Path -Path $target -PathType leaf){
       $r = GetHPSharedFileInformation -File $target -Mode "Read" -Wait -maxRetries $maxRetries -Progress:$progress -skipSignatureCheck:$skipSignatureCheck
       if ($noclobber -eq "skip") {
-        if (($r[0] -eq $response.get_ContentLength()) -and ($r[2] -eq $true)) {
+        if (($r[0] -eq $responseContentLength) -and ($r[2] -eq $true)) {
           Write-Verbose "File already exists or another process has finished downloading this file for us."
           return
         }
         else {
           # overwrite=skip means skip overwriting existing files without error so will not proceed with download 
-          Write-Verbose ("Existing file $target doesn't seem correct (size=$($r[0]) vs expected $($response.get_ContentLength()), signature_check=$($r[2]). Skipping (will not overwrite). ")
+          Write-Verbose ("Existing file $target doesn't seem correct (size=$($r[0]) vs expected $responseContentLength, signature_check=$($r[2]). Skipping (will not overwrite). ")
           return 
         }
       }
     }
 
-    $responseStream = $response.GetResponseStream()
+    $responseStream = $response.Content.ReadAsStreamAsync().GetAwaiter().GetResult()
     $targetStream = GetHPLockedStreamForWrite -maxRetries $maxRetries -Target $target
    
     $buffer = New-Object byte[] 10KB
@@ -477,8 +555,8 @@ function Invoke-HPPrivateDownloadFile {
       $responseStream.Dispose()
     }
 
-    if ($response) {
-      $response.Close()
+    if ($httpClient) {
+      $httpClient.Dispose()
     }
   }
 
@@ -536,47 +614,41 @@ function Send-HPPrivateKMSRequest
 
   Write-Verbose "HTTPS Request $KMSUri : $Method => $jsonPayload"
   $userAgent = Get-HPPrivateUserAgent
-  $request = [System.Net.HttpWebRequest]::Create($KMSUri)
-
-  if ($request -is [System.Net.HttpWebRequest]){
-    Write-Verbose "Setting user agent $userAgent in HttpWebRequest"
-    $request.UserAgent = $userAgent
-  }
+  $httpClient = $null
+  $statusDescription = $null
+  $responseContent = $null
   
-  $request.Method = $Method
-  $request.Timeout = -1
-  $request.KeepAlive = $true
-  $request.ReadWriteTimeout = -1
-  $request.Headers.Add("Authorization","Bearer $AccessToken")
-  if ($JsonPayload) {
-    $content = [System.Text.Encoding]::UTF8.GetBytes($JsonPayload)
-    $request.ContentType = "application/json"
-    $request.ContentLength = $content.Length
-    $stream = $request.GetRequestStream()
-    $stream.Write($content,0,$content.Length)
-    $stream.Flush()
-    $stream.Close()
-  }
 
   try {
-    [System.Net.WebResponse]$response = $request.GetResponse()
-  }
-  catch [System.Net.WebException]{
-    Write-Verbose $_.Exception.Message
-    $response = $_.Exception.Response
-  }
+    $proxyHandler = New-Object HP.CMSLHelper.HttpProxyMessageHandler
+    $httpClient = New-Object System.Net.Http.HttpClient($proxyHandler, $true)
+    $httpClient.DefaultRequestHeaders.Add("User-Agent", $userAgent)
+    $httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer $AccessToken")
+    $httpClient.Timeout = [System.TimeSpan]::FromMilliseconds([System.Threading.Timeout]::Infinite)
 
-  if ($response.PSObject.Properties.Name -match 'StatusDescription') {
-    $statusDescription = $response.StatusDescription
-    $receiveStream = $response.GetResponseStream()
-    $streamReader = New-Object System.IO.StreamReader $receiveStream
-    $responseContent = $streamReader.ReadToEnd()
-    $streamReader.Close()
-    $streamReader.Dispose()
+    $httpMethod = New-Object System.Net.Http.HttpMethod($Method)
+    $request = New-Object System.Net.Http.HttpRequestMessage($httpMethod, $KMSUri)
+    
+    if ($JsonPayload) {
+      $content = New-Object System.Net.Http.StringContent($JsonPayload, [System.Text.Encoding]::UTF8, "application/json")
+      $request.Content = $content
+    }
+
+    $response = $httpClient.SendAsync($request).GetAwaiter().GetResult()
+    $statusDescription = $response.ReasonPhrase
+    $responseContent = $response.Content.ReadAsStringAsync().GetAwaiter().GetResult()
+    
     Write-Verbose $responseContent
   }
+  catch {
+    throw $_.Exception.Message
+  }
+  finally {
+    if ($httpClient) {
+      $httpClient.Dispose()
+    }
+  }
 
-  $response.Close()
   return $statusDescription,$responseContent
 }
 
@@ -1151,20 +1223,32 @@ function Test-HPPrivateIsDownloadNeeded {
 
   Write-Verbose "Checking if we need a new copy of $file from $url"
 
-  # $c = [System.Net.ServicePointManager]::SecurityProtocol
-  # Write-Verbose ("Allowed HTTPS protocols: $c")
-  [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
   $userAgent = Get-HPPrivateUserAgent
 
   # need to validate if $header can be generated, in other words if $url is legitimate
+  $httpClient = $null
   try {
-    $headers = (Invoke-WebRequest -Uri $url -UserAgent $userAgent -Method HEAD -UseBasicParsing).Headers
-    [datetime]$offered = [string]$headers["Last-Modified"]
-    Write-Verbose "File on server has timestamp $offered"
+    $proxyHandler = New-Object HP.CMSLHelper.HttpProxyMessageHandler
+    $httpClient = New-Object System.Net.Http.HttpClient($proxyHandler, $true)
+    $httpClient.DefaultRequestHeaders.Add("User-Agent", $userAgent)
+    
+    $request = New-Object System.Net.Http.HttpRequestMessage ([System.Net.Http.HttpMethod]::Head, $url)
+    $response = $httpClient.SendAsync($request).GetAwaiter().GetResult()
+    
+    if (-not $response.IsSuccessStatusCode) {
+      throw "HTTP request failed with status code: $($response.StatusCode)"
+    }
+    
+    [datetime]$offered = $response.Content.Headers.LastModified.UtcDateTime
+    Write-Verbose "File on server has timestamp $offered (UTC)"
   }
   catch {
-    Write-Verbose "HTTPS request to $url failed: $($_.Exception.Message)"
-    throw
+    throw "HTTPS request to $url failed: $($_.Exception.Message)"
+  }
+  finally {
+    if ($httpClient) {
+      $httpClient.Dispose()
+    }
   }
 
   $exists = Test-Path -Path $file -PathType leaf
@@ -1174,9 +1258,9 @@ function Test-HPPrivateIsDownloadNeeded {
     $true
   }
   else {
-    [datetime]$have = (Get-Item $file).CreationTime
+    [datetime]$have = (Get-Item $file).LastWriteTime.ToUniversalTime()
     $r = ($have -lt $offered)
-    Write-Verbose "Cached file exists and has timestamp $have. Need to download: $r"
+    Write-Verbose "Cached file exists and has timestamp $have (UTC). Need to download: $r"
 
     $offered
     $r

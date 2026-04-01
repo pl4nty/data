@@ -1,7 +1,7 @@
 ---
 external help file: HP.Displays.dll-Help.xml
 Module Name: HP.Displays
-online version:
+online version: https://developers.hp.com/hp-client-management/doc/set-hpdisplay
 schema: 2.0.0
 ---
 
@@ -17,7 +17,12 @@ Set-HPDisplay [[-SerialNumber] <String[]>] [[-Brightness] <Int32>] [[-CurrentRes
  [[-Frequency] <Int32>] [[-Contrast] <Int32>] [[-ActiveInput] <String>] [[-AutoInputEnabled] <Boolean>]
  [[-PowerManagement] <String>] [[-MuteSpeaker] <Boolean>] [[-BuiltInAudio] <String>] [[-USBCPort] <String>]
  [[-BlackStretch] <String>] [[-ColorPreset] <String>] [[-SpeakerVolume] <Int32>]
- [[-RestrictFileXfer] <Boolean>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [[-RestrictFileXfer] <Boolean>] [-MaintainInputUntilUSBDisconnect <String>]
+ [-SinglePowerOnMessage <String>] [[-Language] <String>] [[-SystemVolume] <Int32>]
+ [[-ResponseTime] <String>] [[-AutoSleepMode] <String>] [[-VirtualMultipleDisplaysConfiguration] <String>]
+ [[-PresenceDetection] <String>] [[-EthernetPort] <String>] [[-USBHub] <String>] [[-AudioMenu] <String>]
+ [[-Speakers] <String>] [[-WebCam] <String>] [[-Microphone] <String>] [[-DeviceBridgeFileTransfer] <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,6 +36,23 @@ PS C:\> Set-HPDisplay -Contrast 70 -ActiveInput DigitalDVI2
 ```
 
 ## PARAMETERS
+
+### -AudioMenu
+Allows the IT administrator to disable (lock) the audio menu. 
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 25
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ActiveInput
 Specifies the active input to set to the display.
@@ -60,6 +82,23 @@ Aliases:
 
 Required: False
 Position: 6
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutoSleepMode
+Specifies the value of the auto-sleep mode to set to the display. 
+Valid values are: Off, On
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Off, On
+
+Required: False
+Position: 20
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -118,13 +157,13 @@ Accept wildcard characters: False
 
 ### -ColorPreset
 Specifies the color preset to set to the display.
-Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT7709,BT601,P3D65,AdobeRGBE50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM
+Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT709,BT709D65,BT601,P3D65,AdobeRGBD50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,GameRemasterMode,ECO,FPS,RPG,RTS,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
-Accepted values: UserCalib1, UserCalib2, UserCalib3, UserCalib4, UserCalib5, UserCalib6, UserCalib7, UserCalib8, UserCalib9, UserCalib10, UserCalib11, UserCalib12, UserCalib13, UserCalib14, UserCalib15, UserCalib16, DesignforprintsRGBD50, DesignforwebsRGBD65, PhotographyP3D65, HDvideoBT709, sRGBD50, BT7709, BT601, P3D65, AdobeRGBE50, AdobeRGBD65, BT2020, sRGBD65, EPD, DICOM, FullNative, SDRCustom1, SDRCustom2, SDRCustom3, SDRCustom4, SDRCustom5, Warm, Cool, Neutral, Standard, Gaming, Cinema, Multimedia, Photo, HPEnhance, CustomRGB, RetroGamingMode, ColorMatch, PQHDR10, HLG, SDRLowBlueLight, ReadingMode, Vivid, Movie, Night, DisplayP3, ColorPresetsRGB, ColorPresetPanelNative, ColorPresetCinema, ColorPresetWarm, ColorPresetStandardNeutral, ColorPresetCool, ColorPresetGaming, ColorPresetVivid, ColorPresetCustomColor, ColorPresetHPEnhancePlus, ColorPresetLowBlueLight, Reading, TrNight, TrDicom, TrDicom0, TrDicom2, Text, Custom, MovieorCinema, LegacyPhoto, LegacyGaming, LegacyHPEnhancePlus, LegacyLowBlueLight, LegacyReading, LegacyNight, LegacyTechnicolor, LegacyMultimedia, LegacyWarm, LegacyNeutralorStandard, LegacyCool, Full, sRGB, Rec709BT709, AdobeRGB, Rec601, DCIP3, Custom1, Custom2, Custom3, Custom4, Custom5, Custom6, Custom7, DCIM
+Accepted values: UserCalib1, UserCalib2, UserCalib3, UserCalib4, UserCalib5, UserCalib6, UserCalib7, UserCalib8, UserCalib9, UserCalib10, UserCalib11, UserCalib12, UserCalib13, UserCalib14, UserCalib15, UserCalib16, DesignforprintsRGBD50, DesignforwebsRGBD65, PhotographyP3D65, HDvideoBT709, sRGBD50, BT709, BT709D65, BT601, P3D65, AdobeRGBD50, AdobeRGBD65, BT2020, sRGBD65, EPD, DICOM, FullNative, SDRCustom1, SDRCustom2, SDRCustom3, SDRCustom4, SDRCustom5, Warm, Cool, Neutral, Standard, Gaming, Cinema, Multimedia, Photo, HPEnhance, CustomRGB, RetroGamingMode, ColorMatch, PQHDR10, HLG, SDRLowBlueLight, ReadingMode, Vivid, Movie, Night, DisplayP3, GameRemasterMode, ECO, FPS, RPG, RTS, ColorPresetsRGB, ColorPresetPanelNative, ColorPresetCinema, ColorPresetWarm, ColorPresetStandardNeutral, ColorPresetCool, ColorPresetGaming, ColorPresetVivid, ColorPresetCustomColor, ColorPresetHPEnhancePlus, ColorPresetLowBlueLight, Reading, TrNight, TrDicom, TrDicom0, TrDicom2, Text, Custom, MovieorCinema, LegacyPhoto, LegacyGaming, LegacyHPEnhancePlus, LegacyLowBlueLight, LegacyReading, LegacyNight, LegacyTechnicolor, LegacyMultimedia, LegacyWarm, LegacyNeutralorStandard, LegacyCool, Full, sRGB, Rec709BT709, AdobeRGB, Rec601, DCIP3, Custom1, Custom2, Custom3, Custom4, Custom5, Custom6, Custom7, DCIM
 
 Required: False
 Position: 12
@@ -166,6 +205,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DeviceBridgeFileTransfer
+Allows the IT administrator to disable (lock) the device bridge file transfer function. 
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 29
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EthernetPort
+Allows the IT administrator to disable (lock) the ethernet port menu. 
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 23
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Frequency
 Specifies the frequency in Hz to set the display.
 If a decimal value is specified, it will be rounded to the nearest integer.
@@ -177,6 +250,40 @@ Aliases:
 
 Required: False
 Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Language
+Specifies the language to set to the display. 
+Valid values are: ChineseTraditional, English, French, German, Italian, Japanese, Korean, PortuguesePortugal, Russian, Spanish, Swedish, Turkish, ChineseSimplified, PortugueseBrazil, Arabic, Bulgarian, Croatian, Czech, Danish, Dutch, Estonian, Finnish, Greek, Hebrew, Hindi, Hungarian, Latvian, Lituanian, Norwegian, Polish, Romanian, Serbian, Slovak, Slovenian, Thai, Ukrainian, Vietnamese
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: ChineseTraditional, English, French, German, Italian, Japanese, Korean, PortuguesePortugal, Russian, Spanish, Swedish, Turkish, ChineseSimplified, PortugueseBrazil, Arabic, Bulgarian, Croatian, Czech, Danish, Dutch, Estonian, Finnish, Greek, Hebrew, Hindi, Hungarian, Latvian, Lituanian, Norwegian, Polish, Romanian, Serbian, Slovak, Slovenian, Thai, Ukrainian, Vietnamese
+
+Required: False
+Position: 17
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Microphone
+Allows the IT administrator to disable (lock) the microphone function.
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 28
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -215,6 +322,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PresenceDetection
+Allows the IT administrator to disable (lock) presence detection menu.
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 22
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResponseTime
+Specifes the response time value to set to the display. 
+Valid values are: Off, Level1, Level2, Level3, Level4, Level5, Level6
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Off, Level1, Level2, Level3, Level4, Level5, Level6
+
+Required: False
+Position: 19
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestrictFileXfer
 If set to false, the display will not restrict file transfer.
 If set to true, the display will restrict file transfer.
@@ -247,10 +388,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Speakers
+Allows the IT adminstrator to disable (lock) speaker function.
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 26
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SpeakerVolume
 Specifies the volume level to set to the display's speaker.
 Valid values are between 0 and 100.
-If a decimal value is specified, it will be rounded to the nearest integer
+If a decimal value is specified, it will be rounded to the nearest integer. If connected via USBC, SpeakerVolume will follow SystemVolume despite value specified by SpeakerVolume parameter.
 
 ```yaml
 Type: Int32
@@ -259,6 +417,39 @@ Aliases:
 
 Required: False
 Position: 13
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SystemVolume
+Specifies the volume level to set to the system. Display volume is synced with the host when connected via USB. 
+Valid values are between 0 and 100.
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 18
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -USBHub
+Allows the IT administrator to disable (lock) the USB Hub.
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 24
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -281,5 +472,79 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -VirtualMultipleDisplaysConfiguration
+Specifies the split screen value to set to the display. 
+Valid values are: SplitScreenOff, PbP, DeviceBridge, VirtualDualDisplay, PiP, PbP1_4, PbP3_4, VMD1, VDD1_4, VDD3_4, VMD2, ToggleSplitScreenOnorOff, ToggleBetweenWSplitScreenOptions, SwapLeftorRightSplitScreenInputs, ResetSplitScreenMenu, PbP1_3, PbP3_1
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: SplitScreenOff, PbP, DeviceBridge, VirtualDualDisplay, PiP, PbP1_4, PbP3_4, VMD1, VDD1_4, VDD3_4, VMD2, ToggleSplitScreenOnorOff, ToggleBetweenWSplitScreenOptions, SwapLeftorRightSplitScreenInputs, ResetSplitScreenMenu, PbP1_3, PbP3_1
+
+Required: False
+Position: 21
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WebCam
+Allows the IT administrator to disable (lock) the webcam function.
+Valid values are Disable and Enable.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+Accepted values: Disable, Enable
+
+Required: False
+Position: 27
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaintainInputUntilUSBDisconnect
+Specifies the switch USB value to set to the display. 
+Valid values are: Default, Off, On
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SinglePowerOnMessage
+Specifies the value of the single power on message to set to the display. 
+Valid values are: Off, On
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+## NOTES
+
+## RELATED LINKS

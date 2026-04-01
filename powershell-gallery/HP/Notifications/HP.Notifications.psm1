@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -28,7 +28,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
 }
 
 <#
@@ -685,13 +685,30 @@ function Register-HPNotificationApplication {
     throw [System.Security.AccessControl.PrivilegeNotHeldException]"elevated administrator"
   }
 
-  Write-Verbose "Registering notification application with id: $Id and display name: $DisplayName and icon path: $IconPath"
-
   $drive = Get-PSDrive -Name HKCR -ErrorAction SilentlyContinue
   if (-not $drive) {
     $drive = New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT -Scope Script
   }
+
   $appRegPath = Join-Path -Path "$($drive):" -ChildPath 'AppUserModelId'
+
+  # check if there are any registry entries with the same $DisplayName and same $IconPath 
+  $existingEntries = Get-ChildItem -Path $appRegPath | Where-Object {
+    $props = Get-ItemProperty -Path $_.PSPath
+    ($props.DisplayName -eq $DisplayName) -and ($props.IconUri -eq $IconPath)
+  }
+
+  if ($existingEntries.Count -gt 0) {
+    Write-Verbose "Notification application with the same DisplayName and IconPath is already registered. Skipping registration."
+
+    # get ID of the existing entry
+    $existingId = $existingEntries[0].PSChildName
+    Remove-PSDrive -Name HKCR -Force
+    return $existingId
+  }
+
+  Write-Verbose "Registering notification application with id: $Id and display name: $DisplayName and icon path: $IconPath"
+
   $regPath = Join-Path -Path $appRegPath -ChildPath $Id
   if (-not (Test-Path $regPath))
   {
@@ -707,11 +724,12 @@ function Register-HPNotificationApplication {
   Remove-PSDrive -Name HKCR -Force
 
   Write-Verbose "Registered toast notification application: $DisplayName"
+  return $Id
 }
 
 <#
 .SYNOPSIS
-  UnRegister-HPNotificationApplication
+  Unregister-HPNotificationApplication
 
 .DESCRIPTION
   This function unregisters toast notification applications. Do not unregister the application if you want to snooze the notification.
@@ -809,7 +827,7 @@ function Invoke-HPRebootNotification {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
 
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  $Id = Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
 
   # When using system privileges, the block executes in a different context, 
   # so the relative path for LogoImage must be converted to an absolute path.
@@ -844,28 +862,55 @@ function Invoke-HPRebootNotification {
       }
    
       [scriptblock]$scriptBlock = {
-        $path = $pwd.Path
-        Import-Module -Force $path\HP.Notifications.psd1
-        $params = @{
-          Title = $env:HPRebootTitle
-          Message = $env:HPRebootMessage
-          Attribution = $env:HPRebootAttribution
-        }
+        try { 
+          # See comment in Invoke-HPNotificationFromXML function about limitations of error propagation in this scriptBlock
+          $path = $pwd.Path
+          Import-Module -Force $path\HP.Notifications.psd1
+          $params = @{
+            Title = $env:HPRebootTitle
+            Message = $env:HPRebootMessage
+            Attribution = $env:HPRebootAttribution
+          }
 
-        if ($env:HPRebootLogoImage) {
-          $params.LogoImage = $env:HPRebootLogoImage
+          if ($env:HPRebootLogoImage) {
+            $params.LogoImage = $env:HPRebootLogoImage
+          }
+        
+          if ($env:HPRebootExpiration) {
+            $params.Expiration = $env:HPRebootExpiration
+          }
+        
+          Invoke-HPPrivateRebootNotificationAsUser @params
+          exit 0
         }
-       
-        if ($env:HPRebootExpiration) {
-          $params.Expiration = $env:HPRebootExpiration
+        catch {
+          Write-Error -Message "Failed to invoke reboot notification as current user: $($_.Exception.Message)" -Exception $_.Exception
+
+          # save exception message to environment variable to propagate to parent process
+          [System.Environment]::SetEnvironmentVariable('HPRebootNotificationErrorMessage',$_.Exception.Message,[System.EnvironmentVariableTarget]::Machine)
+          exit [ProcessExtensions]::ERROR_EXIT_CODE
         }
-      
-        Invoke-HPPrivateRebootNotificationAsUser @params
       }
-
+        
       $encodedCommand = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($scriptBlock))
       $psCommand = "-ExecutionPolicy Bypass -Window Normal -EncodedCommand $($encodedCommand)"
-      [ProcessExtensions]::StartProcessAsCurrentUser($psPath,"`"$psPath`" $psCommand",$PSScriptRoot)
+      Write-Verbose "Starting process as current user"
+      $exitCode = $null
+      $output = [ProcessExtensions]::StartProcessAsCurrentUser($psPath,[ref]$exitCode,"`"$psPath`" $psCommand",$PSScriptRoot)
+      if($output -eq 0){
+        Write-Verbose "Successfully invoked reboot notification as current user. Now checking exit code."
+      }
+      else {
+        Write-Error "An error occurred when invoking reboot notification as current user: $output"
+      }
+
+      if($exitCode -eq [ProcessExtensions]::ERROR_EXIT_CODE){
+        Write-Error "Caught error from toast invocation in user context: $([System.Environment]::GetEnvironmentVariable('HPRebootNotificationErrorMessage',[System.EnvironmentVariableTarget]::Machine))"
+      }
+      else {
+        Write-Verbose "Exit code from toast invocation in user context: $($exitCode)"
+      }
+
       [System.Environment]::SetEnvironmentVariable('HPRebootTitle',$null,[System.EnvironmentVariableTarget]::Machine)
       [System.Environment]::SetEnvironmentVariable('HPRebootMessage',$null,[System.EnvironmentVariableTarget]::Machine)
       [System.Environment]::SetEnvironmentVariable('HPRebootAttribution',$null,[System.EnvironmentVariableTarget]::Machine)
@@ -882,10 +927,6 @@ function Invoke-HPRebootNotification {
       Write-Error -Message "Could not execute as currently logged on user: $($_.Exception.Message)" -Exception $_.Exception
     }
   }
-
-  # add a delay before unregistering the app because if you unregister the app right away, toast notification won't pop up 
-  Start-Sleep -Seconds 5
-  UnRegister-HPNotificationApplication -Id $Id
 
   return
 }
@@ -1009,7 +1050,8 @@ function Invoke-HPNotificationFromXML {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
 
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  # get Id of existing registration if one exists with the same DisplayName and IconPath
+  $Id = Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
 
   $privs = whoami /priv /fo csv | ConvertFrom-Csv | Where-Object { $_. 'Privilege Name' -eq 'SeDelegateSessionUserImpersonatePrivilege' }
   if ($privs.State -eq "Disabled") {
@@ -1046,24 +1088,57 @@ function Invoke-HPNotificationFromXML {
       }
 
       [scriptblock]$scriptBlock = {
-        $path = $pwd.Path
-        Import-Module -Force $path\HP.Notifications.psd1
-        $params = @{
-          Xml = $env:HPNotificationFromXmlXml
-          Actions = $env:HPNotificationFromXmlActions
-          Attribution = $env:HPNotificationFromXmlAttribution
-        }
+        try {
+          # Limitation: if we run into errors running the contents of this scriptBlock, we are unsure how to propagate the exception to the parent process
+          # For example, if Import-Module fails, we cannot propagate the exception to the parent process, but 
+          # for users with CMSL installed, toast can still be invoked because the scriptBlock would use installed CMSL HP.Notifications module instead.
+          # However, for users without CMSL installed, toast invocation would fail but no error is propagated up to the parent process
+          # for debugging purposes, we reflect error in an environment variable that the parent process can read
+          $path = $pwd.Path
+          Import-Module -Force $path\HP.Notifications.psd1
 
-        if ($env:HPNotificationFromXmlExpiration) {
-          $params.Expiration = $env:HPNotificationFromXmlExpiration
-        }
+          $params = @{
+            Xml = $env:HPNotificationFromXmlXml
+            Actions = $env:HPNotificationFromXmlActions
+            Attribution = $env:HPNotificationFromXmlAttribution
+          }
 
-        Invoke-HPPrivateNotificationAsUser @params
+          if ($env:HPNotificationFromXmlExpiration) {
+            $params.Expiration = $env:HPNotificationFromXmlExpiration
+          }
+
+          Invoke-HPPrivateNotificationAsUser @params -Verbose
+          exit 0
+        }
+        catch {
+          Write-Error -Message "Failed to invoke notification from XML: $($_.Exception.Message)" -Exception $_.Exception
+
+          # save exception message to environment variable to propagate to parent process
+          [System.Environment]::SetEnvironmentVariable('HPNotificationFromXmlErrorMessage',$_.Exception.Message,[System.EnvironmentVariableTarget]::Machine)
+
+          exit [ProcessExtensions]::ERROR_EXIT_CODE
+        }
       }
 
       $encodedCommand = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($scriptBlock))
       $psCommand = "-ExecutionPolicy Bypass -Window Normal -EncodedCommand $($encodedCommand)"
-      [ProcessExtensions]::StartProcessAsCurrentUser($psPath,"`"$psPath`" $psCommand",$PSScriptRoot)
+      Write-Verbose "Starting process as current user"
+      $exitCode = $null
+      $output = [ProcessExtensions]::StartProcessAsCurrentUser($psPath, [ref]$exitCode, "`"$psPath`" $psCommand",$PSScriptRoot)
+
+      if($output -eq 0){
+        Write-Verbose "Successfully invoked notification from XML as current user. Now checking exit code."
+      }
+      else {
+        Write-Error "An error occurred when invoking notification from XML as current user: $output"
+      }
+  
+      if($exitCode -eq [ProcessExtensions]::ERROR_EXIT_CODE){
+        Write-Error "Caught error from toast invocation in user context: $([System.Environment]::GetEnvironmentVariable('HPNotificationFromXmlErrorMessage',[System.EnvironmentVariableTarget]::Machine))"
+      }
+      else {
+        Write-Verbose "Exit code from toast invocation in user context: $($exitCode)"
+      }
 
       [System.Environment]::SetEnvironmentVariable('HPNotificationFromXmlAttribution',$null,[System.EnvironmentVariableTarget]::Machine)
       [System.Environment]::SetEnvironmentVariable('HPNotificationFromXmlXml',$null,[System.EnvironmentVariableTarget]::Machine)
@@ -1169,7 +1244,7 @@ function Invoke-HPNotification {
   $TitleBarIcon = (Get-Item -Path $TitleBarIcon).FullName
   
   # An app registration is needed to set the issuer name and icon in the title bar 
-  Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon
+  $Id = Register-HPNotificationApplication -Id $Id -DisplayName $TitleBarHeader -IconPath $TitleBarIcon 
 
   # When using system privileges, the block executes in a different context, 
   # so the relative path for LogoImage must be converted to an absolute path.
@@ -1221,30 +1296,55 @@ function Invoke-HPNotification {
       }
    
       [scriptblock]$scriptBlock = {
-        $path = $pwd.Path
-        Import-Module -Force $path\HP.Notifications.psd1
-        $params = @{
-          Title = $env:HPNotificationTitle
-          Message = $env:HPNotificationMessage
-          Signature = $env:HPNotificationSignature
-          Attribution = $env:HPNotificationAttribution
-          NoDismiss = $env:HPNotificationNoDismiss
-        }
+        try {
+          # See comment in Invoke-HPNotificationFromXML function about limitations of error propagation in this scriptBlock
+          $path = $pwd.Path
+          Import-Module -Force $path\HP.Notifications.psd1
+          $params = @{
+            Title = $env:HPNotificationTitle
+            Message = $env:HPNotificationMessage
+            Signature = $env:HPNotificationSignature
+            Attribution = $env:HPNotificationAttribution
+            NoDismiss = $env:HPNotificationNoDismiss
+          }
 
-        if ($env:HPNotificationLogoImage) {
-          $params.LogoImage = $env:HPNotificationLogoImage
-        }
-       
-        if ($env:HPNotificationExpiration) {
-          $params.Expiration = $env:HPNotificationExpiration
-        }
+          if ($env:HPNotificationLogoImage) {
+            $params.LogoImage = $env:HPNotificationLogoImage
+          }
+        
+          if ($env:HPNotificationExpiration) {
+            $params.Expiration = $env:HPNotificationExpiration
+          }
 
-        Invoke-HPPrivateNotificationAsUser @params
+          Invoke-HPPrivateNotificationAsUser @params
+          exit 0
+        }
+        catch {
+          Write-Error -Message "Failed to invoke notification: $($_.Exception.Message)" -Exception $_.Exception
+          # save exception message to environment variable to propagate to parent process
+          [System.Environment]::SetEnvironmentVariable('HPNotificationErrorMessage',$_.Exception.Message,[System.EnvironmentVariableTarget]::Machine)
+          exit [ProcessExtensions]::ERROR_EXIT_CODE
+        }
       }
 
       $encodedCommand = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($scriptBlock))
       $psCommand = "-ExecutionPolicy Bypass -Window Normal -EncodedCommand $($encodedCommand)"
-      [ProcessExtensions]::StartProcessAsCurrentUser($psPath,"`"$psPath`" $psCommand",$PSScriptRoot)
+      Write-Verbose "Starting process as current user"
+      $exitCode = $null
+      $output = [ProcessExtensions]::StartProcessAsCurrentUser($psPath, [ref]$exitCode,"`"$psPath`" $psCommand",$PSScriptRoot)
+      if($output -eq 0){
+        Write-Verbose "Successfully invoked notification as current user. Now checking exit code."
+      }
+      else {
+        Write-Error "An error occurred when invoking notification as current user: $output"
+      }
+
+      if($exitCode -eq [ProcessExtensions]::ERROR_EXIT_CODE){
+        Write-Error "Caught error from toast invocation in user context: $([System.Environment]::GetEnvironmentVariable('HPNotificationErrorMessage',[System.EnvironmentVariableTarget]::Machine))"
+      }
+      else {
+        Write-Verbose "Exit code from toast invocation in user context: $($exitCode)"
+      }
 
       [System.Environment]::SetEnvironmentVariable('HPNotificationTitle',$null,[System.EnvironmentVariableTarget]::Machine)
       [System.Environment]::SetEnvironmentVariable('HPNotificationMessage',$null,[System.EnvironmentVariableTarget]::Machine)
@@ -1263,10 +1363,6 @@ function Invoke-HPNotification {
       Write-Error -Message "Could not execute as currently logged on user: $($_.Exception.Message)" -Exception $_.Exception
     }
   }
-
-  # add a delay before unregistering the app because if you unregister the app right away, toast notification won't pop up 
-  Start-Sleep -Seconds 5
-  UnRegister-HPNotificationApplication -Id $Id
 
   return
 }

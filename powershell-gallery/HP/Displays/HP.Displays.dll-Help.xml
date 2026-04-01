@@ -44,9 +44,20 @@
       </command:parameter>
     </command:parameters>
     <command:inputTypes />
-    <command:returnValues />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -57,7 +68,239 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/get-hpdisplay</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HPDisplayCalibrationReport</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HPDisplayCalibrationReport</command:noun>
+      <maml:description>
+        <maml:para>Generates and saves an HTML report for each connected display with the specified calibration preset to the current directory</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command generates and saves an HTML report for each connected display with the specified calibration preset to the current directory in a file with name format: &lt;SerialNumber&gt;_&lt;CalibrationPreset&gt;_CalibrationReport.html by default unless the value specified in the SaveAs parameter includes a file name.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HPDisplayCalibrationReport</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>SerialNumber</maml:name>
+          <maml:description>
+            <maml:para>Specifies the serial number of the display(s) to generate a report for. If multiple serial number(s) are given and multiple displays are connected, only reports for Displays associated with specified serial number(s) will be generated. If not specified, reports for all connected displays will be generated.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>CalibrationPreset</maml:name>
+          <maml:description>
+            <maml:para>Specifies the calibration preset to generate a report for. Valid values are: sRGBD65, BT709D65, AdobeRGBD65, BT601, P3D65, BT2020, EPD, sRGBD50, AdobeRGBD50, DICOM, DesignforwebsRGBD65, DesignforprintsRGBD50, PhotographyP3D65, HDvideoBT709, DisplayP3, sRGB, AdobeRGB, BT709, ITURBT2100, PQ2084HDR10, HLG</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">sRGBD65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT709D65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AdobeRGBD65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT601</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">P3D65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT2020</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">EPD</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">sRGBD50</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AdobeRGBD50</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DICOM</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DesignforwebsRGBD65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DesignforprintsRGBD50</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PhotographyP3D65</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HDvideoBT709</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DisplayP3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">sRGB</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AdobeRGB</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT709</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ITURBT2100</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PQ2084HDR10</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HLG</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>SaveAs</maml:name>
+          <maml:description>
+            <maml:para>Specifies a rooted and fully qualified file path to save an HTML report to. You can specify the path with or without a file name. If file name is specified, file name must end in .html. If file name is not specified, the file name will follow the format: &lt;SerialNumber&gt;_&lt;CalibrationPreset&gt;_CalibrationReport.html</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>LaunchReport</maml:name>
+          <maml:description>
+            <maml:para>If set to true, the command will open the report that was generated. Default is false.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>CalibrationPreset</maml:name>
+        <maml:description>
+          <maml:para>Specifies the calibration preset to generate a report for. Valid values are: sRGBD65, BT709D65, AdobeRGBD65, BT601, P3D65, BT2020, EPD, sRGBD50, AdobeRGBD50, DICOM, DesignforwebsRGBD65, DesignforprintsRGBD50, PhotographyP3D65, HDvideoBT709, DisplayP3, sRGB, AdobeRGB, BT709, ITURBT2100, PQ2084HDR10, HLG</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>LaunchReport</maml:name>
+        <maml:description>
+          <maml:para>If set to true, the command will open the report that was generated. Default is false.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>SaveAs</maml:name>
+        <maml:description>
+          <maml:para>Specifies a rooted and fully qualified file path to save an HTML report to. You can specify the path with or without a file name. If file name is specified, file name must end in .html. If file name is not specified, the file name will follow the format: &lt;SerialNumber&gt;_&lt;CalibrationPreset&gt;_CalibrationReport.html</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>SerialNumber</maml:name>
+        <maml:description>
+          <maml:para>Specifies the serial number of the display(s) to generate a report for. If multiple serial number(s) are given and multiple displays are connected, only reports for Displays associated with specified serial number(s) will be generated. If not specified, reports for all connected displays will be generated.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPDisplayCalibrationReport -SerialNumber "CN40380ARD" -CalibrationPreset HDvideoBT709</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/get-hpdisplaycalibrationreport</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-HPDisplayFactoryReset</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>HPDisplayFactoryReset</command:noun>
+      <maml:description>
+        <maml:para>Invokes a factory reset on connected displays</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command invokes a factory reset on connected displays. Brightness, Contrast, Color, Camera, and Audio features will be set to their default values.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-HPDisplayFactoryReset</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>SerialNumber</maml:name>
+          <maml:description>
+            <maml:para>Specifies the serial number of the display(s) to reset. If multiple serial number(s) are given and multiple displays are connected, only displays associated with specified serial number(s) will be reset to factory settings. If not specified, all connected displays will be reset.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>SerialNumber</maml:name>
+        <maml:description>
+          <maml:para>Specifies the serial number of the display(s) to reset. If multiple serial number(s) are given and multiple displays are connected, only displays associated with specified serial number(s) will be reset to factory settings. If not specified, all connected displays will be reset.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Invoke-HPDisplayFactoryReset -SerialNumber "CN40380ARD"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/invoke-hpdisplayfactoryreset</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -148,7 +391,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
           <maml:name>ColorPreset</maml:name>
           <maml:description>
-            <maml:para>Specifies the color preset to set to the display. Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT7709,BT601,P3D65,AdobeRGBE50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM</maml:para>
+            <maml:para>Specifies the color preset to set to the display. Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT709,BT709D65,BT601,P3D65,AdobeRGBD50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,GameRemasterMode,ECO,FPS,RPG,RTS,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">UserCalib1</command:parameterValue>
@@ -172,10 +415,11 @@
             <command:parameterValue required="false" command:variableLength="false">PhotographyP3D65</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">HDvideoBT709</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">sRGBD50</command:parameterValue>
-            <command:parameterValue required="false" command:variableLength="false">BT7709</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT709</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">BT709D65</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">BT601</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">P3D65</command:parameterValue>
-            <command:parameterValue required="false" command:variableLength="false">AdobeRGBE50</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">AdobeRGBD50</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">AdobeRGBD65</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">BT2020</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">sRGBD65</command:parameterValue>
@@ -207,6 +451,11 @@
             <command:parameterValue required="false" command:variableLength="false">Movie</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">Night</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">DisplayP3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">GameRemasterMode</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ECO</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">FPS</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RPG</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">RTS</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">ColorPresetsRGB</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">ColorPresetPanelNative</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">ColorPresetCinema</command:parameterValue>
@@ -262,7 +511,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="13" aliases="none">
           <maml:name>SpeakerVolume</maml:name>
           <maml:description>
-            <maml:para>Specifies the volume level to set to the display's speaker. Valid values are between 0 and 100. If a decimal value is specified, it will be rounded to the nearest integer</maml:para>
+            <maml:para>Specifies the volume level to set to the display's speaker. Valid values are between 0 and 100. If a decimal value is specified, it will be rounded to the nearest integer. If connected via USBC, SpeakerVolume will follow SystemVolume despite value specified by SpeakerVolume parameter.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -283,11 +532,270 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="17" aliases="none">
+          <maml:name>Language</maml:name>
+          <maml:description>
+            <maml:para>Specifies the language to set to the display.  Valid values are: ChineseTraditional, English, French, German, Italian, Japanese, Korean, PortuguesePortugal, Russian, Spanish, Swedish, Turkish, ChineseSimplified, PortugueseBrazil, Arabic, Bulgarian, Croatian, Czech, Danish, Dutch, Estonian, Finnish, Greek, Hebrew, Hindi, Hungarian, Latvian, Lituanian, Norwegian, Polish, Romanian, Serbian, Slovak, Slovenian, Thai, Ukrainian, Vietnamese</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">ChineseTraditional</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">English</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">French</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">German</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Italian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Japanese</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Korean</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PortuguesePortugal</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Russian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Spanish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Swedish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Turkish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ChineseSimplified</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PortugueseBrazil</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Arabic</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Bulgarian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Croatian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Czech</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Danish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Dutch</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Estonian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Finnish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Greek</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Hebrew</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Hindi</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Hungarian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Latvian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Lituanian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Norwegian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Polish</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Romanian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Serbian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Slovak</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Slovenian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Thai</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Ukrainian</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Vietnamese</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="18" aliases="none">
+          <maml:name>SystemVolume</maml:name>
+          <maml:description>
+            <maml:para>Specifies the volume level to set to the system. Display volume is synced with the host when connected via USB.  Valid values are between 0 and 100.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="19" aliases="none">
+          <maml:name>ResponseTime</maml:name>
+          <maml:description>
+            <maml:para>Specifes the response time value to set to the display.  Valid values are: Off, Level1, Level2, Level3, Level4, Level5, Level6</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Off</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level1</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level5</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Level6</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>CurrentResolution</maml:name>
           <maml:description>
             <maml:para>Specifies the resolution to set to the display. Format of string 1234x1234 where two integers are separated by 'x' and the first integer is the width and the second integer is the height.</maml:para>
           </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="20" aliases="none">
+          <maml:name>AutoSleepMode</maml:name>
+          <maml:description>
+            <maml:para>Specifies the value of the auto-sleep mode to set to the display.  Valid values are: Off, On</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Off</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">On</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="21" aliases="none">
+          <maml:name>VirtualMultipleDisplaysConfiguration</maml:name>
+          <maml:description>
+            <maml:para>Specifies the split screen value to set to the display.  Valid values are: SplitScreenOff, PbP, DeviceBridge, VirtualDualDisplay, PiP, PbP1_4, PbP3_4, VMD1, VDD1_4, VDD3_4, VMD2, ToggleSplitScreenOnorOff, ToggleBetweenWSplitScreenOptions, SwapLeftorRightSplitScreenInputs, ResetSplitScreenMenu, PbP1_3, PbP3_1</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">SplitScreenOff</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PbP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">DeviceBridge</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">VirtualDualDisplay</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PiP</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PbP1_4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PbP3_4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">VMD1</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">VDD1_4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">VDD3_4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">VMD2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ToggleSplitScreenOnorOff</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ToggleBetweenWSplitScreenOptions</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">SwapLeftorRightSplitScreenInputs</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ResetSplitScreenMenu</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PbP1_3</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">PbP3_1</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="22" aliases="none">
+          <maml:name>PresenceDetection</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) presence detection menu. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="23" aliases="none">
+          <maml:name>EthernetPort</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the ethernet port menu.  Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="24" aliases="none">
+          <maml:name>USBHub</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the USB Hub. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="25" aliases="none">
+          <maml:name>AudioMenu</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the audio menu.  Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="26" aliases="none">
+          <maml:name>Speakers</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT adminstrator to disable (lock) speaker function. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="27" aliases="none">
+          <maml:name>WebCam</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the webcam function. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="28" aliases="none">
+          <maml:name>Microphone</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the microphone function. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="29" aliases="none">
+          <maml:name>DeviceBridgeFileTransfer</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable (lock) the device bridge file transfer function.  Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
@@ -412,9 +920,45 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MaintainInputUntilUSBDisconnect</maml:name>
+          <maml:description>
+            <maml:para>Specifies the switch USB value to set to the display.  Valid values are: Default, Off, On</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SinglePowerOnMessage</maml:name>
+          <maml:description>
+            <maml:para>Specifies the value of the single power on message to set to the display.  Valid values are: Off, On</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="25" aliases="none">
+        <maml:name>AudioMenu</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the audio menu.  Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>ActiveInput</maml:name>
         <maml:description>
@@ -435,6 +979,18 @@
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
           <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="20" aliases="none">
+        <maml:name>AutoSleepMode</maml:name>
+        <maml:description>
+          <maml:para>Specifies the value of the auto-sleep mode to set to the display.  Valid values are: Off, On</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -478,7 +1034,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="12" aliases="none">
         <maml:name>ColorPreset</maml:name>
         <maml:description>
-          <maml:para>Specifies the color preset to set to the display. Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT7709,BT601,P3D65,AdobeRGBE50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM</maml:para>
+          <maml:para>Specifies the color preset to set to the display. Valid values are: UserCalib1,UserCalib2,UserCalib3,UserCalib4,UserCalib5,UserCalib6,UserCalib7,UserCalib8,UserCalib9,UserCalib10,UserCalib11,UserCalib12,UserCalib13,UserCalib14,UserCalib15,UserCalib16,DesignforprintsRGBD50,DesignforwebsRGBD65,PhotographyP3D65,HDvideoBT709,sRGBD50,BT709,BT709D65,BT601,P3D65,AdobeRGBD50,AdobeRGBD65,BT2020,sRGBD65,EPD,DICOM,FullNative,SDRCustom1,SDRCustom2,SDRCustom3,SDRCustom4,SDRCustom5,Warm,Cool,Neutral,Standard,Gaming,Cinema,Multimedia,Photo, HPEnhance,CustomRGB,RetroGamingMode,ColorMatch,PQHDR10,HLG,SDRLowBlueLight,ReadingMode,Vivid,Movie,Night,DisplayP3,GameRemasterMode,ECO,FPS,RPG,RTS,ColorPresetsRGB,ColorPresetPanelNative,ColorPresetCinema,ColorPresetWarm,ColorPresetStandardNeutral,ColorPresetCool,ColorPresetGaming,ColorPresetVivid,ColorPresetCustomColor,ColorPresetHPEnhancePlus,ColorPresetLowBlueLight,Reading,TrNight,TrDicom,TrDicom0,TrDicom2,Text,Custom,MovieorCinema,LegacyPhoto,LegacyGaming,LegacyHPEnhancePlus,LegacyLowBlueLight,LegacyReading,LegacyNight,LegacyTechnicolor,LegacyMultimedia,LegacyWarm,LegacyNeutralorStandard,LegacyCool,Full,sRGB,Rec709BT709,AdobeRGB,Rec601,DCIP3,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM,Custom1,Custom2,Custom3,Custom4,Custom5,Custom6,Custom7,DCIM</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -511,6 +1067,30 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="29" aliases="none">
+        <maml:name>DeviceBridgeFileTransfer</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the device bridge file transfer function.  Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="23" aliases="none">
+        <maml:name>EthernetPort</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the ethernet port menu.  Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>Frequency</maml:name>
         <maml:description>
@@ -519,6 +1099,30 @@
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
           <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="17" aliases="none">
+        <maml:name>Language</maml:name>
+        <maml:description>
+          <maml:para>Specifies the language to set to the display.  Valid values are: ChineseTraditional, English, French, German, Italian, Japanese, Korean, PortuguesePortugal, Russian, Spanish, Swedish, Turkish, ChineseSimplified, PortugueseBrazil, Arabic, Bulgarian, Croatian, Czech, Danish, Dutch, Estonian, Finnish, Greek, Hebrew, Hindi, Hungarian, Latvian, Lituanian, Norwegian, Polish, Romanian, Serbian, Slovak, Slovenian, Thai, Ukrainian, Vietnamese</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="28" aliases="none">
+        <maml:name>Microphone</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the microphone function. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -539,6 +1143,30 @@
         <maml:name>PowerManagement</maml:name>
         <maml:description>
           <maml:para>Specifies the power management value to set to the display. Valid values are: PowerSaverMode, PerformanceMode</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="22" aliases="none">
+        <maml:name>PresenceDetection</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) presence detection menu. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="19" aliases="none">
+        <maml:name>ResponseTime</maml:name>
+        <maml:description>
+          <maml:para>Specifes the response time value to set to the display.  Valid values are: Off, Level1, Level2, Level3, Level4, Level5, Level6</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -571,14 +1199,50 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="26" aliases="none">
+        <maml:name>Speakers</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT adminstrator to disable (lock) speaker function. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="13" aliases="none">
         <maml:name>SpeakerVolume</maml:name>
         <maml:description>
-          <maml:para>Specifies the volume level to set to the display's speaker. Valid values are between 0 and 100. If a decimal value is specified, it will be rounded to the nearest integer</maml:para>
+          <maml:para>Specifies the volume level to set to the display's speaker. Valid values are between 0 and 100. If a decimal value is specified, it will be rounded to the nearest integer. If connected via USBC, SpeakerVolume will follow SystemVolume despite value specified by SpeakerVolume parameter.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
           <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="18" aliases="none">
+        <maml:name>SystemVolume</maml:name>
+        <maml:description>
+          <maml:para>Specifies the volume level to set to the system. Display volume is synced with the host when connected via USB.  Valid values are between 0 and 100.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="24" aliases="none">
+        <maml:name>USBHub</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the USB Hub. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -595,11 +1259,61 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="21" aliases="none">
+        <maml:name>VirtualMultipleDisplaysConfiguration</maml:name>
+        <maml:description>
+          <maml:para>Specifies the split screen value to set to the display.  Valid values are: SplitScreenOff, PbP, DeviceBridge, VirtualDualDisplay, PiP, PbP1_4, PbP3_4, VMD1, VDD1_4, VDD3_4, VMD2, ToggleSplitScreenOnorOff, ToggleBetweenWSplitScreenOptions, SwapLeftorRightSplitScreenInputs, ResetSplitScreenMenu, PbP1_3, PbP3_1</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="27" aliases="none">
+        <maml:name>WebCam</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable (lock) the webcam function. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MaintainInputUntilUSBDisconnect</maml:name>
+        <maml:description>
+          <maml:para>Specifies the switch USB value to set to the display.  Valid values are: Default, Off, On</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SinglePowerOnMessage</maml:name>
+        <maml:description>
+          <maml:para>Specifies the value of the single power on message to set to the display.  Valid values are: Off, On</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
     </command:parameters>
     <command:inputTypes />
     <command:returnValues />
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -610,7 +1324,12 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/set-hpdisplay</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -622,8 +1341,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command updates firmware on connected displays if available. Please note that daisy chained devices are not currently supported. Prerequisites: </maml:para>
-      <maml:para>* Close all running applications to avoid installation issues.</maml:para>
+      <maml:para>This command updates firmware on connected displays if available. Please note that daisy chained devices are not currently supported. Prerequisites: * Close all running applications to avoid installation issues.</maml:para>
       <maml:para>* Keep the monitor's power cable connected during the update process.</maml:para>
       <maml:para>* Ensure the monitor is powered ON and displaying active video throughout the update.</maml:para>
       <maml:para>* Avoid putting the computer system into sleep or shutdown mode during the update.</maml:para>
@@ -645,10 +1363,10 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-		<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>Experience</maml:name>
           <maml:description>
-            <maml:para>Specifies whether update should run silently or interactively. If not specified, default is silent. If the display does not yet support silent install, an error will be thrown.</maml:para>
+            <maml:para>Specifies whether update should run silently or interactively. If not specified, default is silent. If the display does not yet support silent install, an error will be thrown. Please note that this parameter cannot be used with the -Stage parameter.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">Silent</command:parameterValue>
@@ -662,20 +1380,58 @@
           <dev:defaultValue>Silent</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Update-HPDisplayFirmware</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>SerialNumber</maml:name>
+          <maml:description>
+            <maml:para>Specifies the serial number(s) of the display(s) to update. If not specified, all connected displays will be updated.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SignalCheck</maml:name>
+          <maml:description>
+            <maml:para>Specifies the interval in minutes for checking the signal status. The default is 0 minutes.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Stage</maml:name>
+          <maml:description>
+            <maml:para>If specified, the command will try and apply disconnected updates if supported and available. This parameter cannot be used with the -Experience parameter.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>StageDelay</maml:name>
+          <maml:description>
+            <maml:para>Specifies how long in minutes after signal loss to intiate the disconnected firmware update. The default is 10 minutes.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-	<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
-        <maml:name>Experience</maml:name>
-        <maml:description>
-          <maml:para>Specifies whether update should run silently or interactively. If not specified, default is silent. If the display does not yet support silent install, an error will be thrown.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-        <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>Silent</dev:defaultValue>
-      </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>SerialNumber</maml:name>
         <maml:description>
@@ -688,11 +1444,61 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Experience</maml:name>
+        <maml:description>
+          <maml:para>Specifies whether update should run silently or interactively. If not specified, default is silent. If the display does not yet support silent install, an error will be thrown. Please note that this parameter cannot be used with the -Stage parameter.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Silent</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SignalCheck</maml:name>
+        <maml:description>
+          <maml:para>Specifies the interval in minutes for checking the signal status. The default is 0 minutes.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Stage</maml:name>
+        <maml:description>
+          <maml:para>If specified, the command will try and apply disconnected updates if supported and available. This parameter cannot be used with the -Experience parameter.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>StageDelay</maml:name>
+        <maml:description>
+          <maml:para>Specifies how long in minutes after signal loss to intiate the disconnected firmware update. The default is 10 minutes.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
     </command:parameters>
     <command:inputTypes />
     <command:returnValues />
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -703,6 +1509,11 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/update-hpdisplayfirmware</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
 </helpItems>

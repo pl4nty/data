@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
 }
 
 <#
@@ -1611,6 +1611,49 @@ function Get-HPDeviceBootInformation {
 .EXAMPLE
   Get-HPBIOSUpdates -Flash -Version "01.26.00"
 #>
+
+function Invoke-HPPrivateHttpWebRequest {
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Uri,
+    [Parameter(Mandatory = $false)]
+    [string]$UserAgent
+  )
+  
+  $httpClient = $null
+  try {
+    $proxyHandler = New-Object HP.CMSLHelper.HttpProxyMessageHandler
+    $httpClient = New-Object System.Net.Http.HttpClient($proxyHandler, $true)
+    if ($UserAgent) {
+      $httpClient.DefaultRequestHeaders.Add("User-Agent", $UserAgent)
+    }
+    
+    $response = $httpClient.GetAsync($Uri).GetAwaiter().GetResult()
+    
+    if (-not $response.IsSuccessStatusCode) {
+      if ($response.StatusCode -eq [System.Net.HttpStatusCode]::NotFound) {
+        throw [System.Net.WebException]"(404) Not Found"
+      }
+      throw "HTTP request failed with status code: $($response.StatusCode)"
+    }
+    
+    $content = $response.Content.ReadAsStringAsync().GetAwaiter().GetResult()
+    
+    # Return an object that mimics Invoke-WebRequest for compatibility
+    return [PSCustomObject]@{
+      Content = $content
+      StatusCode = [int]$response.StatusCode
+      Headers = $response.Headers
+    }
+  }
+  finally {
+    if ($httpClient) {
+      $httpClient.Dispose()
+    }
+  }
+}
+
 function Get-HPBIOSUpdates {
 
   [CmdletBinding(DefaultParameterSetName = "ViewSet",
@@ -1709,23 +1752,23 @@ function Get-HPBIOSUpdates {
 
   # access xml file 
   try {
-    [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
-    $data = Invoke-WebRequest -Uri $uri -UserAgent $ua -UseBasicParsing -ErrorAction Stop
+    $data = Invoke-HPPrivateHttpWebRequest -Uri $uri -UserAgent $ua
+    $content = $data.Content
   }
-  catch {
+  catch [System.Net.WebException] {
     # checking 404 based on exception message 
-    # bc PS5 throws WebException while PS7 throws httpResponseException 
-    # bc PS5 is based on WebRequest while PS7 is based on HttpClient
-    if ($_.Exception.Message.contains("(404) Not Found") -or $_.Exception.Message.contains("404 (Not Found)")){
+    if ($_.Exception.Message.contains("(404) Not Found")) {
       throw [System.Management.Automation.ItemNotFoundException]"Unable to retrieve BIOS data for a platform with ID $platform (data file not found)."
     }
-
+    throw $_.Exception
+  }
+  catch {
     throw $_.Exception
   }
 
   # read xml file 
   try {
-    [xml]$doc = [System.IO.StreamReader]::new($data.RawContentStream).ReadToEnd()
+    [xml]$doc = $content
   }
   catch {
     throw [System.FormatException]"Unable to read data: $($_.Exception.Message)"
@@ -1761,6 +1804,7 @@ function Get-HPBIOSUpdates {
 
     $args = @{}
     if ($all.IsPresent) {
+      Write-Verbose ("Retrieving all known BIOS update information for every entry.")
       $args.Property = (@{ Name = 'Ver'; expr = { $_.Ver.TrimStart("0") } },"Date","Bin",`
            (@{ Name = 'RollbackAllowed'; expr = { [bool][int]$_.RB.trim() } }),`
            (@{ Name = 'Importance'; expr = { [Enum]::ToObject([BiosUpdateCriticality],[int]$_.L.trim()) } }),`
@@ -1784,12 +1828,15 @@ function Get-HPBIOSUpdates {
         $retrieved = 0
         # determine the local BIOS version
         [string]$haveVer = Get-HPBIOSVersion -Target $target
+
         # latest should return whichever is latest, between local and remote for current system.
         if ([string]$haveVer -ge [string]$latestVer[0].Ver)
         {
-          # local is the latest. So, retrieve attributes other than BIOSVersion to print for latest
+          Write-Verbose "Local BIOS version is greater than or equal to remote BIOS version, so the local BIOS version $haveVer is the latest."
+          # local is the latest. Retrieve attributes other than BIOSVersion to print for latest from XML
           for ($i = 0; $i -lt $refined_doc.Length; $i++) {
             if ($refined_doc[$i].Ver -eq $haveVer) {
+              # found the entry for local BIOS version in XML
               $haveVerFromDoc = $refined_doc[$i]
               $pso = [pscustomobject]@{
                 Ver = $haveVerFromDoc.Ver
@@ -1797,20 +1844,26 @@ function Get-HPBIOSUpdates {
                 Bin = $haveVerFromDoc.Bin
                 Sha384 = $haveVerFromDoc.Sha384
               }
+              
               if ($all) {
+                Write-Verbose "Retrieving additional information for the latest BIOS version $($pso.Ver)"
                 $pso | Add-Member -MemberType ScriptProperty -Name RollbackAllowed -Value { [bool][int]$haveVerFromDoc.RB.trim() }
                 $pso | Add-Member -MemberType ScriptProperty -Name Importance -Value { [Enum]::ToObject([BiosUpdateCriticality],[int]$haveVerFromDoc.L.trim()) }
                 $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { [string]$haveVerFromDoc.DP.trim }
-                $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { [string]$haveVerFromDoc.Sha384.trim }
               }
+
               $retrieved = 1
+
               if ($pso) {
+                Write-Verbose "Formatting output for latest BIOS version $($pso.Ver)"
                 formatBiosVersionsOutputList ($pso)
                 return
               }
             }
           }
+
           if ($retrieved -eq 0) {
+            # if cannot find the entry from XML, try and get information from CIM class
             Write-Verbose "Retrieving entry from XML failed, get the information from CIM class."
             # calculating date from Win32_BIOS
             $year = (Get-CimInstance Win32_BIOS).ReleaseDate.Year
@@ -1825,12 +1878,15 @@ function Get-HPBIOSUpdates {
               Date = $date
               Bin = $null
             }
+
             if ($all) {
+              Write-Verbose "Cannot retrieve additional information from XML for the latest BIOS version $($pso.Ver), setting RollbackAllowed, Importance, Dependency and Sha384 to null."
               $pso | Add-Member -MemberType ScriptProperty -Name RollbackAllowed -Value { $null }
               $pso | Add-Member -MemberType ScriptProperty -Name Importance -Value { $null }
               $pso | Add-Member -MemberType ScriptProperty -Name Dependency -Value { $null }
               $pso | Add-Member -MemberType ScriptProperty -Name Sha384 -Value { $null }
             }
+
             if ($pso) {
               $retrieved = 1
               formatBiosVersionsOutputList ($pso)
@@ -1839,11 +1895,13 @@ function Get-HPBIOSUpdates {
           }
         }
         else {
-          # remote is the latest
+          # if All parameter is specified, the entry for the latest version is already updated with all the properties
+          Write-Verbose "Remote BIOS version is the latest." 
           $args.First = 1
         }
       }
     }
+
     formatBiosVersionsOutputList ($refined_doc | Sort-Object -Property ver -Descending | Select-Object @args)
   }
   else {
@@ -1973,10 +2031,9 @@ function Get-HPBIOSUpdates {
 
 }
 
-function Get-HPPrivateBIOSFamilyNameAndVersion {
+function Get-HPBIOSFamily {
   [CmdletBinding()]
-  param(
-  )
+  param()
 
   $params = @{
     ClassName = 'Win32_BIOS'
@@ -1986,7 +2043,7 @@ function Get-HPPrivateBIOSFamilyNameAndVersion {
   $obj = Get-CimInstance @params -ErrorAction stop
   $verfield = (getWmiField $obj "SMBIOSBIOSVersion").Split()
 
-  return $verfield[0],$verfield[2]
+  return $verfield[0]
 }
 
 
@@ -2103,18 +2160,17 @@ function Get-HPBIOSWindowsUpdate {
   throw [System.ArgumentException]"Only HTTPS or valid existing directory paths are supported."
   }
 
-  if ($Family -and -not $Version) {
-    $_,$biosVersion = Get-HPPrivateBIOSFamilyNameAndVersion
+  if(-not $Family) {
+    $biosFamily = Get-HPBIOSFamily
+  }
+  else {
     $biosFamily = $Family
   }
-  elseif (-not $Family -and $Version) {
-    $biosFamily,$_ = Get-HPPrivateBIOSFamilyNameAndVersion
-    $biosVersion = $Version
+
+  if(-not $Version) {
+    $biosVersion = Get-HPBIOSVersion
   }
-  elseif (-not $Version -and -not $Family) {
-    $biosFamily,$biosVersion = Get-HPPrivateBIOSFamilyNameAndVersion
-  } else {
-    $biosFamily = $Family
+  else {
     $biosVersion = $Version
   }
 
@@ -2123,16 +2179,17 @@ function Get-HPBIOSWindowsUpdate {
   Write-Verbose "BIOS Version: $biosVersion"
 
   $ua = Get-HPPrivateUserAgent
-  [System.Net.ServicePointManager]::SecurityProtocol = Get-HPPrivateAllowedHttpsProtocols
+  
+  # access json file
   try {
-    $data = Invoke-WebRequest -Uri $uri -UserAgent $ua -UseBasicParsing -ErrorAction Stop
+    $data = Invoke-HPPrivateHttpWebRequest -Uri $uri -UserAgent $ua
+    $content = $data.Content
   }
   catch {
-    Write-Verbose $_.Exception
-    throw [System.Management.Automation.ItemNotFoundException]"Platform family $biosFamily is not currently supported. Unable to retrieve the $biosFamily BIOS update catalog. For list of supported platforms, please visit https://ftp.ext.hp.com/pub/caps-softpaq/cmit/imagepal/ref/platformList.html"
+    throw [System.Management.Automation.ItemNotFoundException]"Platform family $biosFamily is not currently supported. Unable to retrieve the $biosFamily BIOS update catalog. For list of supported platforms, please visit https://ftp.ext.hp.com/pub/caps-softpaq/cmit/imagepal/ref/platformList.html: $($_.Exception.Message)"
   }
 
-  $doc = [System.IO.StreamReader]::new($data.RawContentStream).ReadToEnd() | ConvertFrom-Json
+  $doc = $content | ConvertFrom-Json
 
   if ($List.IsPresent) {
     $data = $doc | Sort-Object -Property biosVersion -Descending

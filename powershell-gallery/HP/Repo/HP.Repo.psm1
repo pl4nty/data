@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -20,7 +20,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.5\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
 }
 
 enum ErrorHandling
@@ -952,7 +952,8 @@ function Get-HPRepositoryInfo ()
 .PARAMETER ReferenceUrl
   Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. This URL must be HTTPS. The Reference files are expected to be at the location pointed to by this URL inside a directory named after the platform ID you want a SoftPaq list for.
   Using system ID 83b2, OS Win10, and OSVer 2009 reference files as an example, this command will call the Get-HPSoftpaqList command to find the corresponding files in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab.
-  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default, and fallback is set to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'.
+  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default. 
+  When OfflineCacheMode is enabled, offline cache files (platform list, advisory, knowledge base) are downloaded from this ReferenceUrl location. If default ReferenceUrl is used, it will fall back to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/' if not found.
 
 .EXAMPLE
   Invoke-HPRepositorySync -Quiet
@@ -1015,7 +1016,7 @@ function Invoke-HPRepositorySync
     $ReferenceUrl = $ReferenceUrl + "/"
   }
 
-  # Fallback to FTP only if ReferenceUrl is the default, and not when a custom ReferenceUrl is specified
+  # set Offline cache fallback URL if needed
   if ($ReferenceUrl -eq 'https://hpia.hpcloud.hp.com/ref/') {
     $referenceFallbackUrL = 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'
   }

@@ -1,5 +1,5 @@
 #
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 #
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -12,12 +12,12 @@
 @{
 
   RootModule = 'HP.SmartExperiences.psm1'
-  #FullModuleVersion = '1.8.5.1220'
-  ModuleVersion = '1.8.5'
+  #FullModuleVersion = '1.8.6.1458'
+  ModuleVersion = '1.8.6'
   GUID = '04c79fde-7cc7-49e4-b11b-d2892e11f6d1'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'
-  Copyright = '(C) Copyright 2018-2025 HP Development Company, L.P.'
+  Copyright = '(C) Copyright 2018-2026 HP Development Company, L.P.'
   Description = 'SmartExperiences module'
   PowerShellVersion = '5.1'
 

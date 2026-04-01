@@ -1,5 +1,5 @@
 # 
-#  Copyright 2018-2025 HP Development Company, L.P.
+#  Copyright 2018-2026 HP Development Company, L.P.
 #  All Rights Reserved.
 # 
 # NOTICE:  All information contained herein is, and remains the property of HP Development Company, L.P.
@@ -277,9 +277,7 @@ function Get-HPSoftpaq {
   }
   catch
   {
-    Write-Host -ForegroundColor Magenta "(Warning) Could not retrieve $loc."
-    Write-Host -ForegroundColor Magenta $_.Exception.Message
-    throw $_.Exception
+    throw "(Warning) Could not retrieve $loc. $($_.Exception.Message)"
   }
 
   # check digital signatures
@@ -669,9 +667,8 @@ function Clear-HPSoftpaqCache {
   If this parameter is not specified, all release types are included.
 
 .PARAMETER ReferenceUrl
-  Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. If passing a file path, the path can be relative path or absolute path. If passing a URL to this parameter, the URL must be a HTTPS URL. The HPIA Reference files are expected to be inside a directory named after the platform ID pointed to by this parameter. 
-  For example, if you want to point to system ID 83b2, OS Win10, and OSVer 2009 reference files, the Get-HPSoftpaqList command will try to find them in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab
-  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default, and fallback is set to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'.
+  Specifies an alternate location for SoftPaq recommendations. 
+  If not specified, 'https://workforceexperience.hp.com/services/srs/api/1.1/recommendations/' is used by default, and fallback is set to 'https://hpia.hpcloud.hp.com/ref/'.
 
 .PARAMETER SoftpaqUrl
   Specifies an alternate location for the SoftPaq URL. This URL must be HTTPS. The SoftPaqs are expected to be at the location pointed to by this URL. If not specified, ftp.hp.com is used via HTTPS protocol.
@@ -805,7 +802,7 @@ function Get-HPSoftpaqList {
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 1,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$Bitness,
 
-    [ValidateSet($null,"win7","win8","win8.1","win81","win10","win11")]
+    [ValidateSet("win10","win11")]
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 2,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$Os,
 
@@ -815,7 +812,7 @@ function Get-HPSoftpaqList {
 
     [Parameter(ParameterSetName = "DownloadParams")]
     [Alias('Url')]
-    [Parameter(Position = 4,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$ReferenceUrl = "https://hpia.hpcloud.hp.com/ref",
+    [Parameter(Position = 4,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$ReferenceUrl = "https://workforceexperience.hp.com/services/srs/api/1.1/recommendations/",
 
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 5,Mandatory = $false,ParameterSetName = "ViewParams")] [switch]$Quiet,
@@ -892,84 +889,150 @@ function Get-HPSoftpaqList {
     $ReferenceUrl = $ReferenceUrl + "/"
   }
 
-  # Fallback to FTP only if ReferenceUrl is the default, and not when a custom ReferenceUrl is specified
-  if ($ReferenceUrl -eq 'https://hpia.hpcloud.hp.com/ref/') {
-    $referenceFallbackUrL = 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'
+  # Determine which method to use based on ReferenceUrl
+  # If ReferenceUrl is the default API URL, use the API method with fallback to reference files
+  # If ReferenceUrl is custom, assume it's a reference file server and use download files method only
+  $useApiMethod = $ReferenceUrl -eq 'https://workforceexperience.hp.com/services/srs/api/1.1/recommendations/'
+  
+  if ($useApiMethod) {
+    # API method with fallback to HPIA reference files
+    $referenceFallbackUrL = 'https://hpia.hpcloud.hp.com/ref/'
   }
   else {
-    $referenceFallbackUrL = ''
+    # Custom ReferenceUrl specified - use download files method
+    $referenceFallbackUrL = $ReferenceUrl
   }
 
   if ($quiet.IsPresent) { $progress = -not $quiet }
   if (-not $platform) { $platform = Get-HPDeviceProductID }
   $platform = $platform.ToLower()
 
+  # get build number for each OS 
+  $osBuildNumbers = @{
+    "win11" = @("22000", "22621", "22631", "26100", "26200")
+    "win10" = @("17763", "18362", "18363", "19041", "19042", "19043", "19044", "19045")
+  }
+
+  # list of all build numbers regardless if win10 or win11
+  $allOsBuildNumbers = $osBuildNumbers.GetEnumerator() | ForEach-Object { $_.Value } | Select-Object -Unique
+
   if($LatestSupportedOS.IsPresent){
+    # check latest first 
+    $allOsBuildNumbers = $allOsBuildNumbers.GetEnumerator() | Sort-Object -Descending
+    $bitnessList = @("arm 64-bit processor","64-bit","32-bit")
     
-    # latest first 
     $osList = @("win11","win10","win81","win8.1", "win8","win7")
-    $osVerList = @("25h2", "24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
+    $osVerList = @("25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
     $bitnessList = @("arm64","64","32")
 
+    # for every combination of OS Build Numbers and Bitness, check for response 
     $continueSearch = $true
-
-    # for every combination of OS, OSVer and Bitness, test if file exists
-    foreach ($os in $osList) {
-      foreach ($osVer in $osVerList) {
-        foreach ($bitness in $bitnessList) {
+    
+    # Only try API method if using the default API URL
+    if ($useApiMethod) {
+      foreach ($buildNumber in $allOsBuildNumbers) {
+        foreach ($osArch in $bitnessList) {
 
           if ($continueSearch -eq $false) {
             # Found latest OS combination, no need to continue searching
             break
           }
 
-          switch ($os)
-          {
-            "win10" { $ver = "10.0." + $osver.ToString() }
-            "win11" { $ver = "11.0." + $osver.ToString() }
-            "win81" { $ver = "6.3" }
-            "win8.1" { $ver = "6.3" }
-            "win8" { $ver = "6.2" }
-            "win7" { $ver = "6.1" }
-          }
-
           if($PreferLTSC.IsPresent) {
-            $fn = "$($platform)_$($bitness)_$($ver).e"
+            $qurl = "$($ReferenceUrl)?system-id=$platform&os-arch=$osArch&os-build-number=$buildNumber&is-ltsc=true"
           }
           else {
-            $fn = "$($platform)_$($bitness)_$($ver)"
+            $qurl = "$($ReferenceUrl)?system-id=$platform&os-arch=$osArch&os-build-number=$buildNumber&is-ltsc=false"
           }
 
-          $qurl = "$($ReferenceUrl)$platform/$fn.cab"
-          $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
-          $downloadedFile = "$qfile.dir\$fn.xml"
           try {
-            $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
-            Write-Verbose "Found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
-            $continueSearch = $false
-
-            if ($result[1] -eq $false){
-              Write-Verbose "Do not need to download again"
+            $response = Invoke-RestMethod -Uri $qurl -Method Get -UseBasicParsing -ErrorAction Stop
+            Write-Verbose "Found for platform: $platform, Build Number: $buildNumber, OS Arch: $osArch, url: $qurl"
+            if (-not $response -or -not $response.softpaqs){
+              Write-Verbose "No SoftPaqs found, continuing search." 
             }
-            else{
-              Write-Verbose "Need to download again"
+            else {
+              $continueSearch = $false
             }
-        
           }
           catch {
-            Write-Verbose "Not found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
-            $fn = $null
+            Write-Verbose "Not found for platform: $platform, Build Number: $buildNumber, OS Arch: $osArch"
           }
         }
       }
     }
 
-    if($null -eq $fn) {
-      if($PreferLTSC.IsPresent){
-        throw [System.Net.WebException]"Could not find any LTSB/LTSC data file for any OS combination for platform $platform."
+    if($continueSearch -eq $true) {
+      # If API method didn't find results or we're using custom ReferenceUrl, try reference files
+      if($referenceFallbackUrL){
+        Write-Verbose "Using reference files from: $referenceFallbackUrL"
+
+        $osList = @("win11","win10")
+        $osVerList = @("25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
+        $bitnessList = @("arm64","64","32")
+        # for every combination of OS, OSVer and Bitness, test if file exists
+        foreach ($os in $osList) {
+          foreach ($osVer in $osVerList) {
+            foreach ($bitness in $bitnessList) {
+
+              if ($continueSearch -eq $false) {
+                # Found latest OS combination, no need to continue searching
+                break
+              }
+
+              switch ($os)
+              {
+                "win10" { $ver = "10.0." + $osver.ToString() }
+                "win11" { $ver = "11.0." + $osver.ToString() }
+              }
+
+              if($PreferLTSC.IsPresent) {
+                $fn = "$($platform)_$($bitness)_$($ver).e"
+              }
+              else {
+                $fn = "$($platform)_$($bitness)_$($ver)"
+              }
+
+              $qurl = "$($referenceFallbackUrL)$platform/$fn.cab"
+              $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
+              $downloadedFile = "$qfile.dir\$fn.xml"
+              try {
+                $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+                Write-Verbose "Found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
+                $continueSearch = $false
+
+                if ($result[1] -eq $false){
+                  Write-Verbose "Do not need to download again"
+                }
+                else {
+                  Write-Verbose "Need to download again"
+                }
+            
+              }
+              catch {
+                Write-Verbose "Not found for platform: $platform, OS: $os, OSVer: $osVer, Bitness: $bitness"
+                $fn = $null
+              }
+            }
+          }
+        }
+
+        if($continueSearch -eq $true) {
+          if($PreferLTSC.IsPresent){
+            throw [System.Net.WebException]"Could not find any LTSB/LTSC data for any OS combination for platform $platform."
+          }
+          else {
+            throw [System.Net.WebException]"Could not find any data for any OS combination for platform $platform."
+          }
+        }
       }
-      else{
-        throw [System.Net.WebException]"Could not find any data file for any OS combination for platform $platform."
+      else {
+        if($PreferLTSC.IsPresent){
+          throw [System.Net.WebException]"Could not find any LTSB/LTSC data for any OS combination for platform $platform."
+        }
+        else {
+          throw [System.Net.WebException]"Could not find any data for any OS combination for platform $platform."
+        }
       }
     }
   }
@@ -983,30 +1046,126 @@ function Get-HPSoftpaqList {
       $os = Get-HPPrivateCurrentOs
     }
 
+    # determine if OsVer passed in is a valid OS version for Windows 10 and greater
     if (([System.Environment]::OSVersion.Version.Major -eq 10) -and $OsVer) {
-
       try {
         # try converting OsVer to int
         $OSVer = [int]$OsVer
 
-        if ($OSVer -gt 2009 -or $OSVer -lt 1507) {
+        if ($OSVer -lt 1507 -or $OSVer -gt 2009) {
           throw "Unsupported operating system version"
         }
       }
       catch {
+        Write-Verbose "Exception caught while converting OSVer to int: $($_.Exception.Message)"
+        # check other format of OSVer
         if (!($OSVer -match '[0-9]{2}[hH][0-9]')) {
           throw "Unsupported operating system version"
         }
       }
     }
 
-    # determine OSVer for Win10 if OSVer is not passed
+    # determine OSVer for Win10 and greater if OSVer is not passed
     if (([System.Environment]::OSVersion.Version.Major -eq 10) -and (!$osver))
     {
       Write-Verbose "need to determine OSVer"
       $osver = GetHPCurrentOSVer
     }
 
+    # map OS and OSVer to the OS build number in $osBuildNumbers
+    $buildNumber = $null
+    if ($Os -eq "win10" -and $OsVer -and $osBuildNumbers.ContainsKey($Os)) {
+      switch ($OsVer)
+      {
+        "1809" { $buildNumber = "17763" }
+        "1903" { $buildNumber = "18362" }
+        "1909" { $buildNumber = "18363" }
+        "2004" { $buildNumber = "19041" }
+        "2009" { $buildNumber = "19042" } 
+        "20H2" { $buildNumber = "19042" } 
+        "21H1" { $buildNumber = "19043" }
+        "21H2" { $buildNumber = "19044" }
+        "22H2" { $buildNumber = "19045" }
+        default {
+          throw [System.ArgumentException]"Unsupported OS version: $OsVer"
+        }
+      }
+    }
+    elseif ($Os -eq "win11" -and $OsVer -and $osBuildNumbers.ContainsKey($Os)) {
+      switch ($OsVer)
+      {
+        "21H2" { $buildNumber = "22000" }
+        "22H2" { $buildNumber = "22621" }
+        "23H2" { $buildNumber = "22631" }
+        "24H2" { $buildNumber = "26100" }
+        "25H2" { $buildNumber = "26200" }
+        default {
+          throw [System.ArgumentException]"Unsupported OS version: $OsVer"
+        }
+      }
+    }
+    else {
+      throw [System.ArgumentException]"Unsupported OS: $Os or OS version: $OsVer"
+    }
+
+    # check if build number is in the list of supported OS build numbers
+    Write-Verbose "Using build number: $buildNumber" 
+    if ($buildNumber -and -not $osBuildNumbers[$Os].Contains($buildNumber)) {
+      throw [System.ArgumentException]"Unsupported OS build number: $buildNumber for OS: $Os"
+    }
+
+    $response = $null 
+    $result = $null
+    $LTSCExists = $false
+
+    switch ($Bitness){
+      "32" { $osArch = "32-bit"}
+      "64" { $osArch = "64-bit" }
+      "arm64" { $osArch = "arm 64-bit processor" }
+      default {
+        throw [System.ArgumentException]"Unsupported OS architecture: $Bitness"
+      }
+    }
+
+    # Only try API method if using the default API URL
+    if ($useApiMethod) {
+      if ($PreferLTSC.IsPresent) {
+        $qurl = "$($ReferenceUrl)?system-id=$platform&os-arch=$osArch&os-build-number=$buildNumber&is-ltsc=true"
+
+        try {
+          # read JSON data from the reference URL
+          Write-Verbose "Trying to read from $qurl"
+          $response = Invoke-RestMethod -Uri $qurl -Method Get -UseBasicParsing -ErrorAction Stop
+          Write-Verbose "Read response: $response"
+          $LTSCExists = $true
+        }
+        catch {
+          Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
+        }
+      }
+
+      # if LTSC(B) doesn't exist, fall back to non-LTSC data 
+      if ((-not $PreferLTSC.IsPresent) -or ($PreferLTSC.IsPresent -and ($LTSCExists -eq $false))) {
+        $qurl = "$($ReferenceUrl)?system-id=$platform&os-arch=$osArch&os-build-number=$buildNumber&is-ltsc=false"
+        try {
+          Write-Verbose "Trying to read from $qurl"
+          $response = Invoke-RestMethod -Uri $qurl -Method Get -UseBasicParsing -ErrorAction Stop
+          Write-Verbose "Read response: $response"
+        }
+        catch {
+          Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
+        }
+      }
+    }
+  }
+
+  if ((-not $response -or -not $response.softpaqs) -and $referenceFallbackUrL) {
+    if ($useApiMethod) {
+      Write-Verbose "Falling back to HPIA reference files: $referenceFallbackUrL"
+    }
+    else {
+      Write-Verbose "Using reference files from: $referenceFallbackUrL"
+    }
     switch ($os)
     {
       "win10" { $ver = "10.0." + $osver.ToString() }
@@ -1023,10 +1182,9 @@ function Get-HPSoftpaqList {
     $LTSCExists = $false
 
     if ($PreferLTSC.IsPresent) {
-      $qurl = "$($ReferenceUrl)$platform/$fn.e.cab"
+      $qurl = "$($referenceFallbackUrL)$platform/$fn.e.cab"
       $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.e.cab" -cacheDir $cacheDir
       $downloadedFile = "$qfile.dir\$fn.e.xml"
-      $try_on_ftp = $false
       try {
         $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
         if ($result[1] -eq $true) {
@@ -1036,36 +1194,15 @@ function Get-HPSoftpaqList {
       }
       catch {
         Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
-        if ($referenceFallbackUrL) {
-          $try_on_ftp = $true
-        }
-      }
 
-      if ($try_on_ftp) {
-        try {
-          Write-Verbose "Failed to download $qurl. Trying to download from the fallback location..."
-          $qurl = "$($ReferenceFallbackUrl)$platform/$fn.e.cab"
-          $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
-          if ($result[1] -eq $true) {
-            $LTSCExists = $true
-          }
-        }
-        catch {
-          Write-Verbose "HTTPS request to $qurl failed: $($_.Exception.Message)"
-          if (-not $quiet -or $result[1] -eq $false) {
-            Write-Host -ForegroundColor Magenta "LTSB/LTSC data file doesn't exist for platform $platform ($os $osver)"
-            Write-Host -ForegroundColor Cyan "Getting the regular (non-LTSB/LTSC) data file for this platform"
-          }
-        }
       }
     }
 
     # if LTSC(B) file doesn't exist, fall back to regular Ref file
     if ((-not $PreferLTSC.IsPresent) -or ($PreferLTSC.IsPresent -and ($LTSCExists -eq $false))) {
-      $qurl = "$($ReferenceUrl)$platform/$fn.cab"
+      $qurl = "$($referenceFallbackUrL)$platform/$fn.cab"
       $qfile = Get-HPPrivateTemporaryFileName -FileName "$fn.cab" -cacheDir $cacheDir
       $downloadedFile = "$qfile.dir\$fn.xml"
-      $try_on_ftp = $false
       try {
         $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
         if ($result[1] -eq $true) {
@@ -1073,131 +1210,210 @@ function Get-HPSoftpaqList {
         }
       }
       catch {
-        Write-Host "HTTPS request to $qurl failed: $($_.Exception.Message)"
-        if ($referenceFallbackUrL) {
-          $try_on_ftp = $true
+        throw [System.Net.WebException]"Could not find data file $qurl for $platform platform: $($_.Exception.Message)"
+      }
+    }
+
+    if ($result -and $result[1] -eq $true) {
+      Write-Verbose "Cleaning cached data and downloading the data file."
+      Invoke-HPPrivateDeleteCachedItem -cab $qfile
+      Invoke-HPPrivateDownloadFile -url $qurl -Target $qfile -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -maxRetries $maxRetries
+      (Get-Item $qfile).CreationTime = ($result[0])
+      (Get-Item $qfile).LastWriteTime = ($result[0])
+    }
+
+    # Need to make sure that the expanded data file exists and is not corrupted. 
+    # Otherwise, expand the cab file.
+    if (-not (Test-Path $downloadedFile) -or (-not (Test-HPPrivateIsValidXmlFile -File $downloadedFile)))
+    {
+      Write-Verbose "Extracting the data file and looking for $downloadedFile."
+      $file = Invoke-HPPrivateExpandCAB -cab $qfile -expectedFile $downloadedFile -Verbose:$VerbosePreference
+    }
+
+    Write-Verbose "Reading XML document  $downloadedFile"
+    # Default encoding for PS5.1 is Default meaning the encoding that correpsonds to the system's active code page
+    # Default encoding for PS7.3 is utf8NoBOM 
+    [xml]$data = Get-Content $downloadedFile -Encoding UTF8
+    Write-Verbose "Parsing the document"
+
+    $d = Select-Xml -Xml $data -XPath "//ImagePal/Solutions/UpdateInfo"
+
+    $results = $d.Node | ForEach-Object {
+      if (($null -ne $releaseType) -and ($_.ReleaseType -notin $releaseType)) { return }
+      if (-not (matchCategory -cat $_.Category -allowed $category -EQ $true)) { return }
+      if ("ContentTypes" -in $_.PSObject.Properties.Name) { $ContentTypes = $_.ContentTypes } else { $ContentTypes = $null }
+      if (($null -ne $characteristic) -and (-not (matchAllCharacteristic $characteristic -SSM $_.SSMCompliant -DPB $_.DPBCompliant -UWP $ContentTypes))) { return }
+      if ($AddHttps.IsPresent) {
+        $objUrl = "https://$($_.url)"
+        $objReleaseNotes = "https://$($_.ReleaseNotesUrl)"
+        $objMetadata = "https://$($_.CvaUrl)"
+      }
+      else {
+        $objUrl = $_.url
+        $objReleaseNotes = $_.ReleaseNotesUrl
+        $objMetadata = $_.CvaUrl
+      }
+
+      $pso = [pscustomobject]@{
+        id = $_.id
+        Name = $_.Name
+        Category = $_.Category
+        Version = $_.Version.TrimStart("0.")
+        Vendor = $_.Vendor
+        ReleaseType = $_.ReleaseType
+        SSM = $_.SSMCompliant
+        DPB = $_.DPBCompliant
+        url = $objUrl
+        ReleaseNotes = $objReleaseNotes
+        Metadata = $objMetadata
+        Size = $_.Size
+        ReleaseDate = $_.DateReleased
+        UWP = $(if ("ContentTypes" -in $_.PSObject.Properties.Name) { $true } else { $false })
+      }
+      $pso
+
+      if ($download.IsPresent) {
+        $id = $pso.id.ToString().ToLower().Replace("sp","")
+        if ($friendlyName.IsPresent) {
+          Write-Verbose "Need to get CVA data to determine Friendly Name for download file"
+          $target = getfriendlyFileName -Number $pso.id.ToString().ToLower().TrimStart("sp") -From $pso.Name -Verbose:$VerbosePreference        
+        }
+        else { 
+          $idString = $pso.id.ToString().ToLower()
+          if (-not $idString.StartsWith("sp")) { $idString = "sp$idString" }
+          $target = $idString
+        }
+
+        if ($downloadDirectory) {
+          $target = [System.IO.Path]::Combine($downloadDirectory, $target)
         }
         else {
-          throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
+          $cwd = Convert-Path .
+          $target = [System.IO.Path]::Combine($cwd, $target)
+        }
+
+        if ($downloadMetadata.IsPresent)
+        {
+          $loc = Get-HPPrivateItemUrl -Number $Id -Ext "cva" -url $SoftpaqUrl
+          Invoke-HPPrivateDownloadFile -url $loc -Target "$target.cva" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
+        }
+
+        $loc = Get-HPPrivateItemUrl -Number $Id -Ext "exe" -url $SoftpaqUrl
+
+        Invoke-HPPrivateDownloadFile -url $loc -Target "$target.exe" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -maxRetries $maxRetries
+
+        if ($downloadNotes.IsPresent)
+        {
+          $loc = Get-HPPrivateItemUrl -Number $Id -Ext "html" -url $SoftpaqUrl
+          Invoke-HPPrivateDownloadFile -url $loc -Target "$target.htm" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
+        }
+      }
+    }
+
+    $result = $results | Select-Object * -Unique
+    switch ($format)
+    {
+      "xml" { $result | ConvertTo-Xml -As String }
+      "json" { $result | ConvertTo-Json }
+      "csv" { $result | ConvertTo-Csv -NoTypeInformation }
+      default { return $result }
+    }
+  }
+  else {
+    Write-Verbose "Found $($response.softpaqs.Count) SoftPaqs"
+    $results = foreach ($item in $response.softpaqs) {
+      Write-Verbose "Processing SoftPaq: $($item.softpaqId) - $($item.title)"
+      if (($null -ne $releaseType) -and ($item.releaseType -notin $ReleaseType)) { continue }
+      if (-not (matchCategory -cat $item.categoryName -allowed $category -EQ $true)) { continue }
+
+      if($null -ne $Characteristic){
+        if ($Characteristic -contains "SSM" -and $item.IsManageable -ne $true) { continue }
+        if ($Characteristic -contains "DPB" -and $item.isDpbCompliant -ne $true) { continue }
+        if ($Characteristic -contains "UWP" -and $item.isUwpApp -ne $true) { continue }
+      }
+
+      # URLs should already have HTTPS, but if not, add it
+      if ($AddHttps.IsPresent) {
+        if ($item.downloadUrl -notmatch "^https://") {
+          $item.downloadUrl = "https://$($item.downloadUrl)"
+        }
+        if ($item.releaseNotesUrl -notmatch "^https://") {
+          $item.releaseNotesUrl = "https://$($item.releaseNotesUrl)"
+        }
+        if ($item.metadataUrl -notmatch "^https://") {
+          $item.metadataUrl = "https://$($item.metadataUrl)"
         }
       }
 
-      if ($try_on_ftp) {
-        try {
-          Write-Verbose "Failed to download $qurl. Trying to download from the fallback location..."
-          $qurl = "$($ReferenceFallbackUrl)$platform/$fn.cab"
-          $result = Test-HPPrivateIsDownloadNeeded -url $qurl -File $qfile -Verbose:$VerbosePreference
+      $objUrl = $item.downloadUrl
+      $objReleaseNotes = $item.releaseNotesUrl
+      $objMetadata = $item.metadataUrl
+      
+      $pso = [pscustomobject]@{
+        id = $item.softpaqId
+        Name = $item.title
+        Category = $item.categoryName
+        Version = $item.version.TrimStart("0.")
+        Vendor = $item.vendor 
+        ReleaseType = $item.releaseType
+        SSM = $item.IsManageable
+        DPB = $item.isDpbCompliant 
+        url = $objUrl
+        ReleaseNotes = $objReleaseNotes
+        Metadata = $objMetadata
+        Size = $item.softpaqBinarySize
+        ReleaseDate = $item.effectivityDate 
+        UWP = $item.isUwpApp
+      }
+
+      $pso
+
+      if ($download.IsPresent) {
+        $id = $pso.id.ToString().ToLower().Replace("sp","")
+        if ($friendlyName.IsPresent) {
+          Write-Verbose "Need to get CVA data to determine Friendly Name for download file"
+          $target = getfriendlyFileName -Number $pso.id.ToString().ToLower().TrimStart("sp") -From $pso.Name -Verbose:$VerbosePreference        
         }
-        catch {
-          Write-Host "HTTPS request to $qurl failed: $($_.Exception.Message)"
-          if (-not $quiet -or $result[1] -eq $false) {
-            Write-Host -ForegroundColor Magenta $_.Exception.Message
-          }
-          throw [System.Net.WebException]"Could not find data file $qurl for platform $platform."
+        else { 
+          $idString = $pso.id.ToString().ToLower()
+          if (-not $idString.StartsWith("sp")) { $idString = "sp$idString" }
+          $target = $idString
+        }
+
+        if ($downloadDirectory) {
+          $target = [System.IO.Path]::Combine($downloadDirectory, $target)
+        }
+        else {
+          $cwd = Convert-Path .
+          $target = [System.IO.Path]::Combine($cwd, $target)
+        }
+
+        if ($downloadMetadata.IsPresent)
+        {
+          $loc = Get-HPPrivateItemUrl -Number $Id -Ext "cva" -url $SoftpaqUrl
+          Invoke-HPPrivateDownloadFile -url $loc -Target "$target.cva" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
+        }
+
+        $loc = Get-HPPrivateItemUrl -Number $Id -Ext "exe" -url $SoftpaqUrl
+
+        Invoke-HPPrivateDownloadFile -url $loc -Target "$target.exe" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -maxRetries $maxRetries
+
+        if ($downloadNotes.IsPresent)
+        {
+          $loc = Get-HPPrivateItemUrl -Number $Id -Ext "html" -url $SoftpaqUrl
+          Invoke-HPPrivateDownloadFile -url $loc -Target "$target.htm" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
         }
       }
     }
-  }
 
-  if ($result -and $result[1] -eq $true) {
-    Write-Verbose "Cleaning cached data and downloading the data file."
-    Invoke-HPPrivateDeleteCachedItem -cab $qfile
-    Invoke-HPPrivateDownloadFile -url $qurl -Target $qfile -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -maxRetries $maxRetries
-    (Get-Item $qfile).CreationTime = ($result[0])
-    (Get-Item $qfile).LastWriteTime = ($result[0])
-  }
-
-  # Need to make sure that the expanded data file exists and is not corrupted. 
-  # Otherwise, expand the cab file.
-  if (-not (Test-Path $downloadedFile) -or (-not (Test-HPPrivateIsValidXmlFile -File $downloadedFile)))
-  {
-    Write-Verbose "Extracting the data file and looking for $downloadedFile."
-    $file = Invoke-HPPrivateExpandCAB -cab $qfile -expectedFile $downloadedFile -Verbose:$VerbosePreference
-  }
-
-  Write-Verbose "Reading XML document  $downloadedFile"
-  # Default encoding for PS5.1 is Default meaning the encoding that correpsonds to the system's active code page
-  # Default encoding for PS7.3 is utf8NoBOM 
-  [xml]$data = Get-Content $downloadedFile -Encoding UTF8
-  Write-Verbose "Parsing the document"
-
-  $d = Select-Xml -Xml $data -XPath "//ImagePal/Solutions/UpdateInfo"
-
-  $results = $d.Node | ForEach-Object {
-    if (($null -ne $releaseType) -and ($_.ReleaseType -notin $releaseType)) { return }
-    if (-not (matchCategory -cat $_.Category -allowed $category -EQ $true)) { return }
-    if ("ContentTypes" -in $_.PSObject.Properties.Name) { $ContentTypes = $_.ContentTypes } else { $ContentTypes = $null }
-    if (($null -ne $characteristic) -and (-not (matchAllCharacteristic $characteristic -SSM $_.SSMCompliant -DPB $_.DPBCompliant -UWP $ContentTypes))) { return }
-    if ($AddHttps.IsPresent) {
-      $objUrl = "https://$($_.url)"
-      $objReleaseNotes = "https://$($_.ReleaseNotesUrl)"
-      $objMetadata = "https://$($_.CvaUrl)"
+    $result = $results | Select-Object * -Unique
+    switch ($format)
+    {
+      "xml" { $result | ConvertTo-Xml -As String }
+      "json" { $result | ConvertTo-Json }
+      "csv" { $result | ConvertTo-Csv -NoTypeInformation }
+      default { return $result }
     }
-    else {
-      $objUrl = $_.url
-      $objReleaseNotes = $_.ReleaseNotesUrl
-      $objMetadata = $_.CvaUrl
-    }
-
-    $pso = [pscustomobject]@{
-      id = $_.id
-      Name = $_.Name
-      Category = $_.Category
-      Version = $_.Version.TrimStart("0.")
-      Vendor = $_.Vendor
-      ReleaseType = $_.ReleaseType
-      SSM = $_.SSMCompliant
-      DPB = $_.DPBCompliant
-      url = $objUrl
-      ReleaseNotes = $objReleaseNotes
-      Metadata = $objMetadata
-      Size = $_.Size
-      ReleaseDate = $_.DateReleased
-      UWP = $(if ("ContentTypes" -in $_.PSObject.Properties.Name) { $true } else { $false })
-    }
-    $pso
-
-
-
-    if ($download.IsPresent) {
-      [int]$id = $pso.id.ToLower().Replace("sp","")
-      if ($friendlyName.IsPresent) {
-        Write-Verbose "Need to get CVA data to determine Friendly Name for download file"
-        $target = getfriendlyFileName -Number $pso.id.ToLower().TrimStart("sp") -From $pso.Name -Verbose:$VerbosePreference
-      }
-      else { $target = $pso.id }
-
-      if ($downloadDirectory) { $target = "$downloadDirectory\$target" }
-      else {
-        $cwd = Convert-Path .
-        $target = "$cwd\$target"
-      }
-
-      if ($downloadMetadata.IsPresent)
-      {
-        $loc = Get-HPPrivateItemUrl -Number $Id -Ext "cva" -url $SoftpaqUrl
-        Invoke-HPPrivateDownloadFile -url $loc -Target "$target.cva" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
-      }
-
-      $loc = Get-HPPrivateItemUrl -Number $Id -Ext "exe" -url $SoftpaqUrl
-
-      Invoke-HPPrivateDownloadFile -url $loc -Target "$target.exe" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -maxRetries $maxRetries
-
-      if ($downloadNotes.IsPresent)
-      {
-        $loc = Get-HPPrivateItemUrl -Number $Id -Ext "html" -url $SoftpaqUrl
-        Invoke-HPPrivateDownloadFile -url $loc -Target "$target.htm" -progress $progress -NoClobber $overwrite -Verbose:$VerbosePreference -skipSignatureCheck -maxRetries $maxRetries
-      }
-    }
-  }
-
-  $result = $results | Select-Object * -Unique
-  switch ($format)
-  {
-    "xml" { $result | ConvertTo-Xml -As String }
-    "json" { $result | ConvertTo-Json }
-    "csv" { $result | ConvertTo-Csv -NoTypeInformation }
-    default { return $result }
   }
 }
 
@@ -1503,25 +1719,25 @@ function matchCategory ([string]$cat,[string[]]$allowed)
   # add "Driver - Display" to the list of allowed categories if "Driver - Graphics" is allowed
   if ($allowed -contains "Driver - Graphics") {$allowed += "Driver - Display"}
   
-  if (($cat.StartsWith("Driver")) -and ($allowed.Contains("Driver"))) { return $true }
+  if (($cat.StartsWith("Driver")) -and ($allowed -contains "Driver")) { return $true }
 
   $listOfDriverCategories = @("Graphics","Audio","Chipset","Keyboard, Mouse and Input Devices","Enabling","Network","Storage","Controller","Display")
   foreach ($driverCategory in $listOfDriverCategories) {
     if ($cat -match "Driver - $driverCategory") {
-      return $allowed -eq "Driver - $driverCategory"
+      return $allowed -contains "Driver - $driverCategory"
     }
   }
 
-  if ($cat.StartsWith("Operating System -") -eq $true) { return $allowed -eq "os" }
-  if ($cat.StartsWith("Manageability - Driver Pack") -eq $true) { return $allowed -eq "driverpack" }
-  if ($cat.StartsWith("Manageability - UWP Pack") -eq $true) { return $allowed -eq "UWPPack" }
-  if ($cat.StartsWith("Manageability -") -eq $true) { return $allowed -eq "manageability" }
-  if ($cat.StartsWith("Utility -") -eq $true) { return $allowed -eq "utility" }
-  if (($cat.StartsWith("Dock -") -eq $true) -or ($cat -eq "Docks")) { return $allowed -eq "dock" }
-  if (($cat -eq "BIOS") -or ($cat.StartsWith("BIOS -") -eq $true)) { return $allowed -eq "BIOS" }
-  if ($cat -eq "firmware") { return $allowed -eq "firmware" }
-  if ($cat -eq "diagnostic") { return $allowed -eq "diagnostic" }
-  if ($cat.StartsWith("Software -") -or ($cat -eq "Software")) { return $allowed -eq "software"}
+  if ($cat.StartsWith("Operating System -") -eq $true) { return $allowed -contains "os" }
+  if ($cat.StartsWith("Manageability - Driver Pack") -eq $true) { return $allowed -contains "driverpack" }
+  if ($cat.StartsWith("Manageability - UWP Pack") -eq $true) { return $allowed -contains "UWPPack" }
+  if ($cat.StartsWith("Manageability -") -eq $true) { return $allowed -contains "manageability" }
+  if ($cat.StartsWith("Utility -") -eq $true) { return $allowed -contains "utility" }
+  if (($cat.StartsWith("Dock -") -eq $true) -or ($cat -eq "Docks")) { return $allowed -contains "dock" }
+  if (($cat -eq "BIOS") -or ($cat.StartsWith("BIOS -") -eq $true)) { return $allowed -contains "BIOS" }
+  if ($cat -eq "firmware") { return $allowed -contains "firmware" }
+  if ($cat -eq "diagnostic") { return $allowed -contains "diagnostic" }
+  if ($cat.StartsWith("Software -") -or ($cat -eq "Software")) { return $allowed -contains "software"}
 
   return $false
 }
@@ -1868,11 +2084,13 @@ function New-HPBuildDriverPack {
 
     foreach ($ientry in $softpaqsArray) {
       Write-Verbose "Processing $($ientry.id)"
-      $url = $ientry.url -Replace "/$($ientry.id).exe$",''
+      # Remove the file name from the URL to get the base URL for API calls, and ensure it starts with https://
+      $url = $ientry.url -replace '/[^/]+\.exe(?:\?.*)?$', ''
       if (-not ($url -like 'https://*')) {
         $url = "https://$url"
       }
       try {
+        Write-Verbose "URL: $url"
         $metadata = Get-HPSoftpaqMetadata -Number $ientry.id -MaxRetries 3 -Url $url
       }
       catch {
