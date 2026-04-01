@@ -4,10 +4,10 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.hstr_full_log)()
-if not InitiatingProcessGate() then
+if not initiating_process_gate() then
   return mp.CLEAN
 end
-if not BrowserExecutableFromScannedCmdlineGate() then
+if not browser_executable_from_scanned_cmdline_gate() then
   return mp.CLEAN
 end
 -- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
@@ -28,7 +28,7 @@ do
     if not l_0_2 or not (l_0_0.rep_pseudocode).matched then
       return mp.CLEAN
     end
-    ExtractCmdLinePayload()
+    extract_cmdline_payload("")
     return mp.INFECTED
   end
 end
