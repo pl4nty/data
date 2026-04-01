@@ -745,7 +745,7 @@
         "ExpandDiskByCmdAgentPluginAsFallback": true,
         "ExtendTakeSnapshotActionParameters": true,
         "FIRST_PAINT_OPT_IWP": true,
-        "FLDPrestartUsePreStartAction": false,
+        "FLDPrestartUsePreStartAction": true,
         "Feedback_IWP": true,
         "Feedback_IWP_Prod": true,
         "Feedback_Nighthawk": true,

@@ -511,6 +511,7 @@
                 "EnableCreateTeamAdminContext": false,
                 "EnableDeleteGroupV2": true,
                 "EnableDenyNFTByDefault": true,
+                "EnableExcludeInvalidRecipientTypesFromGroupMembership": true,
                 "EnableExtAuthCheckInNP": true,
                 "EnableExternalIdentitiesAlternatePaths": true,
                 "EnableExternallyAuthenticatedPropertySet": true,
@@ -534,6 +535,7 @@
                 "EnablePersistPftTokenInCacheWhenOrchestrationQueued": true,
                 "EnablePftAuthStrategyForSpeedWayInOrchestration": true,
                 "EnablePreferredDataLocation": true,
+                "EnableRecipientTypeValidationForChannelMigration": true,
                 "EnableResolveAdminContextInAuthzTask": true,
                 "EnableSetUserSiteAdminRoleByIdInternalAPI": true,
                 "EnableSettingsStoreDependency": false,
@@ -2061,6 +2063,15 @@
                 },
                 "nrtdlp": {
                     "isEnabled": "True"
+                }
+            }
+        }
+    },
+    "TeamsInfoProtectionPhishDetectService": {
+        "rootSettingConfig": {
+            "settings": {
+                "phishingDetect": {
+                    "llmJudgeSamplingPermyriad": 100
                 }
             }
         }

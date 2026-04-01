@@ -283,6 +283,7 @@
             "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true,
             "EgatEgpaConsolidationBGTask": true,
+            "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "SCGWUseEGATsForAppsTargeting": true,
             "UseEGATsForDPAs": true
         }

@@ -1,5 +1,286 @@
 [
     {
+        "created": "2026-03-31T23:15:47",
+        "description": "Microsoft Teams displays a badge on the app bar that reflects activity across chats and channels. Now, it\u2019s easier to find and clear the messages behind that badge. Unmuted chats show a purple indicator when they affect the badge, while mentions, followed threads, and tag mentions display a purple number indicating how many items within are unread and part of the count.",
+        "id": 559612,
+        "locale": null,
+        "modified": "2026-03-31T23:15:47",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Badging updates help find messages that count in the chat list"
+    },
+    {
+        "created": "2026-03-31T23:15:47",
+        "description": "Teams chat and channel lists can be filtered to show unread items only. When this filter is applied, hovering over a section reveals an eye icon next to the section name. Selecting the eye icon opens a list of read chats or channels within that section, allowing you to open them without leaving the unread-only view.",
+        "id": 559608,
+        "locale": null,
+        "modified": "2026-03-31T23:15:47",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Quick access to read items from unread-only view"
+    },
+    {
+        "created": "2026-03-31T23:15:47",
+        "description": "Users will be able to see a community's pinned resources and related communities in Teams for iOS.",
+        "id": 559107,
+        "locale": null,
+        "modified": "2026-03-31T23:15:47",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: [Engage] Pinned resources & related communities in Teams for iOS"
+    },
+    {
+        "created": "2026-03-31T23:15:47",
+        "description": "Introduce an AI-powered capability leveraging Microsoft Security Copilot to automatically generate natural language explanations of changes made to DLP policies after each update within Microsoft Purview. This feature will analyze policy version deltas (pre-update vs. post-update) and produce a structured, human-readable summary that clearly explains: What changed Where the change occurred (rule, condition, action, location, etc.) The impact of the change The potential enforcement implications The goal is to eliminate manual policy diff analysis, reduce configuration ambiguity, and improve governance transparency for compliance and security administrators.",
+        "id": 559106,
+        "locale": null,
+        "modified": "2026-03-31T23:15:47",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Apply default SharePoint library labels to data at rest"
+    },
+    {
+        "created": "2026-03-31T23:15:47",
+        "description": "Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.",
+        "id": 559105,
+        "locale": null,
+        "modified": "2026-03-31T23:15:47",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection - Apply default SharePoint library labels to data at rest"
+    },
+    {
         "created": "2026-03-30T23:00:38",
         "description": "Copilot Notebooks allows users to generate Excel spreadsheets using the content and references gathered in a notebook. Copilot drafts a structured spreadsheet grounded in the notebook\u2019s context, which can be opened and edited in Excel, helping users move from ideas and source material to a ready\u2011to\u2011use spreadsheet with fewer manual steps.",
         "id": 559480,
@@ -196,10 +477,10 @@
     },
     {
         "created": "2026-03-30T23:00:38",
-        "description": "The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for users with a Microsoft 365 Copilot Chat starter license. Previously available only to premium Copilot licensees, this update extends contextual file prompts to starter license users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app.",
+        "description": "The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for Copilot Chat users. Previously available only to Microsoft 365 Copilot licensees, this update extends contextual file prompts to Microsoft 365 Copilot Chat users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app. ",
         "id": 558595,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -241,7 +522,7 @@
                 }
             ]
         },
-        "title": "Microsoft 365: Companion apps - Copilot prompts in the Files app now available for starter license users"
+        "title": "Microsoft 365: Companion apps - Copilot prompts in the Files app now available for Copilot Chat users"
     },
     {
         "created": "2026-03-30T23:00:38",
@@ -791,12 +1072,12 @@
         "description": "With this release, the file type coverage to scan, classify and protect sensitive content on Mac devices with Microsoft Purview Data Loss Prevention policies will increase from current ~40 file types to 100+ file types. This release will make the coverage of file types on endpoint consistent with other locations such as Exchange, SharePoint and OneDrive. This will also include other enhancements like detecting label from pfile, detecting sensitive content in metadata, and detecting sensitive content in PDF forms.\n",
         "id": 558289,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -1002,15 +1283,15 @@
     },
     {
         "created": "2026-03-26T23:15:28",
-        "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
+        "description": "This item is cancelled as a duplicate of 553594. We are sorry for any inconvenience it may cause. With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 559268,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4459,9 +4740,9 @@
         "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and new Outlook for Windows, Outlook for Mac and Outlook Mobile. Summaries of email attachments in Copilot chat will also be available in new Outlook for Windows, Outlook for Mac and Outlook Mobile.  #newoutlookforwindows",
         "id": 558110,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5057,9 +5338,9 @@
         "description": "Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.\n",
         "id": 558254,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6803,9 +7084,9 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557277,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6858,9 +7139,9 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557276,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8316,12 +8597,12 @@
         "description": "A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.\n",
         "id": 557554,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9257,9 +9538,9 @@
         "description": "When composing an email on your mobile device, Outlook can recommend or automatically apply an appropriate sensitivity label if your organization\u2019s automatic or recommended labeling policies are enabled by admins and the message contains sensitive information. For recommended labels, you\u2019ll see a prompt to review and apply the suggested label, and automatic labels will be applied without needing any action from you.",
         "id": 557254,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9306,9 +9587,9 @@
         "description": "When composing an email on your mobile device, Outlook can recommend or automatically apply an appropriate sensitivity label if your organization\u2019s automatic or recommended labeling policies are enabled by admins and the message contains sensitive information. For recommended labels, you\u2019ll see a prompt to review and apply the suggested label, and automatic labels will be applied without needing any action from you.",
         "id": 557253,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9684,9 +9965,9 @@
         "description": "Consecutive interpretation enables turn-based interpretation for everyone in the meeting. Interpretation happens after each speaker finishes talking, creating a turn-based flow that supports interactive discussions across two languages.\u00a0",
         "id": 557180,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10111,12 +10392,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 557177,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12587,10 +12868,10 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support on Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities\u2014all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers. ",
+        "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support on Teams Phone Android devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities\u2014all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers.",
         "id": 553590,
         "locale": null,
-        "modified": "2026-03-24T23:15:57",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -12638,7 +12919,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Teams Phone user multi-line"
+        "title": "Microsoft Teams: Teams Phone Device user multi-line"
     },
     {
         "created": "2026-02-06T00:00:51",
@@ -16512,12 +16793,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 548646,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16750,12 +17031,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 548520,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17031,9 +17312,9 @@
         "description": "The Researcher Agent in Microsoft 365 Copilot empowers users to create rich, detailed reports on any topic they choose whether from work or web content. We are introducing new output formats in the Researcher Agent that will allow users to export and consume generated reports in their preferred formats. Users will be able to export their Researcher reports to PowerPoint, PDF, Infographic or an Audio Overview. We are also updating the UX for previously existing output formats- Word and Pages.  ",
         "id": 546246,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17794,9 +18075,9 @@
         "description": "We\u2019re excited to announce that Organizational Data in Microsoft 365 is now available in the GCC-Moderate (GCC-M) environment! Organizational Data in Microsoft 365 provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.",
         "id": 508518,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -28542,9 +28823,9 @@
         "description": "Engage content from private communities and events will be used as grounding source for M365 Copilot. When a user queries in M365 Copilot, they will only be able to see content they are privileged to access.",
         "id": 515144,
         "locale": null,
-        "modified": "2025-11-05T00:00:26",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34852,9 +35133,9 @@
         "description": "Once you connect your asset library hosted on Adobe Experience Manager to Microsoft365 and Copilot, Copilot will create presentations using your organization's images.",
         "id": 516039,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34907,9 +35188,9 @@
         "description": "Once you connect your asset library hosted on Adobe Experience Manager to Microsoft365 and Copilot, Copilot will create presentations using your organization's images.",
         "id": 516038,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34962,9 +35243,9 @@
         "description": "Once you connect your asset library hosted on Adobe Experience Manager to Microsoft365 and Copilot, Copilot will create presentations using your organization's images.",
         "id": 516037,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35017,12 +35298,12 @@
         "description": "We are expanding Microsoft Purview Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot, including pre-built agents in Microsoft 365 Copilot,  from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web.",
         "id": 515945,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37387,9 +37668,9 @@
         "description": "Action Segments empowers IT Admins to target Organizational Messages using dynamic, pre-defined usage segments. This behavior-based targeting approach goes beyond existing static group definitions, ensuring messages reach the most relevant users.",
         "id": 503563,
         "locale": null,
-        "modified": "2025-10-06T23:00:40",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -37442,9 +37723,9 @@
         "description": "Organizational Messages now includes Email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams Popovers.",
         "id": 503562,
         "locale": null,
-        "modified": "2025-11-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49453,12 +49734,12 @@
         "description": "The News page renders news items in a given site. It is typically accessed via the \"see all\" experience of a news web part.  We are updating the user experience of this page and bringing in Copilot capabilities to licensed users. Updated February 9, 2026: GA rollout for this item is starting in late February. We apologize for any inconvenience.",
         "id": 499654,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61961,10 +62242,10 @@
         "description": "Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.",
         "id": 494839,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "February CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -65662,9 +65943,9 @@
         "description": "After further review, we mistakenly marked the roadmap as \"launched.\" The correct status is In Development. We apologize the inconvenience. SharePoint FAQ web part help assist content owners keep their content fresh and relevant. Powered by Microsoft 365 Copilot, this new web part can help content owner easily curate FAQ by working with agents and connected grounding data. With a Human-in-the-Loop approach, it ensures high-quality, trustworthy FAQs\u2014without the hassle. The result? A living FAQ that evolves with your organization's needs. Updated February 24, 2026: We previously marked this item as launched when it is still in Preview. We expect to move to GA later this year. We apologize for this inconvenience. ",
         "id": 482198,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -75688,7 +75969,7 @@
         "description": "The Employee Self-Service Agent in M365 Copilot expedites answers for the most common workplace policy-related questions and takes action on key HR and IT related tasks,\u00a0connecting employees\u00a0to authorized\u00a0knowledge bases and HR/IT systems of record for faster resolution time and a streamlined employee experience.",
         "id": 487836,
         "locale": null,
-        "modified": "2025-11-06T00:00:20",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "August CY2025",
@@ -75705,7 +75986,10 @@
                 "tagName": "Desktop"
             },
             {
-                "tagName": "Teams and Surface Devices"
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mobile"
             },
             {
                 "tagName": "Web"
@@ -75737,7 +76021,10 @@
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Teams and Surface Devices"
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mobile"
                 },
                 {
                     "tagName": "Web"
@@ -105265,12 +105552,12 @@
         "description": "App centric management for app deployment will introduce a new admin setting to control who in the tenant has specific Teams apps preinstalled. Similar to app assignments, admins will be able to select from three options: 'Deployed to all users', 'Deployed to specific users and groups', or 'Deployed to no users'. This feature replaces the existing Installed apps section of app setup policies and provides admins with the ability to manage app deployment individually. The Installed apps section of app setup policies for existing customers will be migrated to maintain existing admin settings in the tenant.",
         "id": 394274,
         "locale": null,
-        "modified": "2024-07-24T23:15:18",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -108895,12 +109182,12 @@
         "description": "High Volume Email is a new service for line of business applications and other high-volume SMTP scenarios that enables you to send internal messages beyond the current limits of Exchange Online.",
         "id": 382633,
         "locale": null,
-        "modified": "2025-10-03T22:00:02",
+        "modified": "2026-03-31T23:15:47",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "April CY2024",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
