@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260329.7.0",
+        "CalendarCompanionDFVersion": "1.20260330.10.0",
         "CalendarCompanionMsitVersion": "1.20260325.9.0",
         "CalendarCompanionProdVersion": "1.20260321.4.0",
         "CompanionRing": "Prod",
@@ -1622,6 +1622,7 @@
         "M365CompanionSystemTrayProdVersion": "1.20250930.2.0"
     },
     "M365Companions": {
+        "allowUndocking_shared": 1,
         "contentSecurityPolicy": {
             "base-uri": [
                 "'self'"
@@ -1828,12 +1829,15 @@
         "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckCompanionLicense_shared": true,
         "enableCheckCopilotLicense_shared": true,
+        "enableFullScreenMessageState_shared": true,
         "enableHostRingBuckets": 1,
         "enableManualSignInPage_shared": true,
+        "enableNPSCampaign_shared": 1,
         "enableSharedRoutes_shared": true,
         "enableSharedSearchBox_shared": 1,
         "extendedHostRings_shared": 1,
         "extendedRings_shared": 1,
+        "feedbackPoliciesFromLoki_shared": true,
         "freDialog_shared": true,
         "freDialog_shared_variant": "freCompleteExperience",
         "getCombinedLokiConfig_shared": true,

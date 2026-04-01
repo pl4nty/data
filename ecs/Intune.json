@@ -471,6 +471,7 @@
     },
     "SVC_MultiAdminApproval": {
         "FlightingV2": {
+            "AutopatchMaaExclusion": true,
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,
