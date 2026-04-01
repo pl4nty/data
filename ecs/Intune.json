@@ -574,6 +574,7 @@
     "UX_DeviceConfig": {
         "FlightingV2": {
             "AndroidDCv2ManagementModeFilter": true,
+            "CanAccessSupportCentralWidget": true,
             "EnableDeviceExecutionStatusReportExportV2": true
         }
     },
