@@ -1676,6 +1676,11 @@
             Http Status Code
             </summary>
         </member>
+        <member name="F:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.SingleResponseTeam._headers">
+            <summary>
+            Response headers (e.g. Retry-After for 429 responses)
+            </summary>
+        </member>
         <member name="P:Microsoft.Teams.PowerShell.TeamsCmdlets.Model.SingleResponseTeam.Body">
             <summary>
             Body of the response which contains the Team object or an Error bject

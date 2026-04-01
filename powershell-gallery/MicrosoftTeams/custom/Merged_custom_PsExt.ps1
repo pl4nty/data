@@ -1370,6 +1370,60 @@ function New-CsOnlineTelephoneNumberReleaseOrder {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+function New-CsPhoneNumberUsageChangeOrderModern {
+    [CmdletBinding(PositionalBinding=$false)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String[]]
+        # Telephone numbers to update usage
+        ${TelephoneNumber},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # Telephone numbers to update usage
+        ${Usage},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsPhoneNumberUsageChangeOrder -TelephoneNumber $TelephoneNumber -Usage $Usage @httpPipelineArgs
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 function Remove-CsOnlineTelephoneNumberModern {
     [CmdletBinding(PositionalBinding=$false)]
     param(
@@ -5456,6 +5510,100 @@ function Find-CsOnlineApplicationInstance {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsAgent {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the AI Agent which is retrieved.
+		${Id},
+		
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+        
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            # Map Id to Identity for internal cmdlet
+            if ($PSBoundParameters.ContainsKey("Id")) {
+                $PSBoundParameters.Add("Identity", $Id)
+                $PSBoundParameters.Remove("Id") | Out-Null
+            }
+            
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsAgent @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $AIAgentConfiguration = [Microsoft.Rtc.Management.Hosted.Online.Models.AIAgentConfiguration]::new()
+                $AIAgentConfiguration.ParseFromGetResponse($result)
+            } 
+            else {
+                $AllAIAgentConfiguration = @()
+                
+                if ($result.AIAgent -ne $null) {
+                    foreach ($model in $result.AIAgent) {
+                        $AIAgentConfiguration = [Microsoft.Rtc.Management.Hosted.Online.Models.AIAgentConfiguration]::new()
+                        $AllAIAgentConfiguration += $AIAgentConfiguration.ParseFromDtoModel($model)
+                    }
+                }
+
+                $AllAIAgentConfiguration
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()  
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Format output of the cmdlet
 
 function Get-CsAutoAttendant {
@@ -6461,13 +6609,13 @@ function Get-CsMainlineAttendantFlow {
 
         [Parameter(Mandatory=$false)]
         [System.String]
-        # The identity of the mainline attendant flow which is retrieved.
+        # The type of the mainline attendant flow which is retrieved.
         ${Type},
 
         [Parameter(Mandatory=$false)]
         [System.String]
-        # The identity of the mainline attendant flow which is retrieved.
-        ${ConfigurationId},
+        # The identity of the related configuration (i.e., the Mainline Attendant Id) which the mainline attendant flow is associated with.
+        ${RelatedConfigurationId},
 
         [Parameter(Mandatory=$false)]
         [int]
@@ -6642,6 +6790,229 @@ function Get-CsMainlineAttendantQuestionAnswerFlow {
                 }
                 $questionAnswerFlows
             }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: Return Mainline Attendant supported languages
+# parsed from the MainlineAttendantTenantInformation section of the tenant information response.
+
+function Get-CsMainlineAttendantSupportedLanguages {
+    [CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$false)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            $null = $PSBoundParameters.Remove("Force")
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $tenantInfoOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsAutoAttendantTenantInformation @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($tenantInfoOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($tenantInfoOutput.Diagnostic)
+
+            # Extract languages from the MainlineAttendantTenantInformation section only
+            $supportedLanguagesOutput = @()
+            foreach ($supportedLanguage in $tenantInfoOutput.MainlineAttendantTenantInformationSupportedLanguage) {
+                $languageOutput = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantLanguage]::new()
+                $languageOutput.ParseFrom($supportedLanguage)
+                $supportedLanguagesOutput += $languageOutput
+            }
+
+            $supportedLanguagesOutput
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: Return Mainline Attendant supported voices
+# parsed from the MainlineAttendantTenantInformation section of the tenant information response.
+
+function Get-CsMainlineAttendantSupportedVoices {
+    [CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$false)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            $null = $PSBoundParameters.Remove("Force")
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $tenantInfoOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsAutoAttendantTenantInformation @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($tenantInfoOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($tenantInfoOutput.Diagnostic)
+
+            # Extract voices from the MainlineAttendantTenantInformation section only
+            $supportedVoicesOutput = @()
+            foreach ($voice in $tenantInfoOutput.MainlineAttendantTenantInformationSupportedVoice) {
+                $voiceOutput = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantVoice]::new()
+                $voiceOutput.ParseFrom($voice)
+                $supportedVoicesOutput += $voiceOutput
+            }
+
+            $supportedVoicesOutput
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: Return Mainline Attendant tenant information
+# (supported languages and voices) parsed from the Auto Attendant tenant information response.
+
+function Get-CsMainlineAttendantTenantInformation {
+    [CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$false, position=0)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            $null = $PSBoundParameters.Remove("Force")
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsAutoAttendantTenantInformation @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($internalOutput.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantTenantInformation]::new()
+            $output.ParseFrom($internalOutput)
+
+            $output
 
         } catch {
             $customCmdletUtils.SendTelemetry()
@@ -7087,14 +7458,14 @@ function Get-CsOnlineVoicemailUserSettings {
 
 # Objective of this custom file: transforming the results to the custom objects
 
-function Get-CsSharedCallQueueHistoryTemplate {
+function Get-CsSharedCallHistoryTemplate {
 	[CmdletBinding()]
 	param(
 		[Parameter(Mandatory=$false)]
 		[System.String]
-		# The identity of the shared call queue history template which is retrieved.
+		# The identity of the shared call history template which is retrieved.
 		${Id},
-		
+
 		[Parameter(Mandatory=$false)]
 		[Switch]
 		${Force},
@@ -7118,33 +7489,88 @@ function Get-CsSharedCallQueueHistoryTemplate {
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
             }
-        
+
             if ($PSBoundParameters.ContainsKey("Force")) {
                 $PSBoundParameters.Remove("Force") | Out-Null
             }
 
-            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
-
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsSharedCallHistoryTemplate @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
-            if ($result -eq $null) {
+            if ($null -eq $result) {
                 return $null
             }
 
             Write-AdminServiceDiagnostic($result.Diagnostic)
 
             if (![string]::IsNullOrEmpty(${Id})) {
-                $SharedCallQueueHistory = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
-                $SharedCallQueueHistory.ParseFromGetResponse($result)
-            } 
-            else {
-                $AllSharedCallQueueHistory = @()
-                foreach ($model in $result.AllSharedCallQueueHistory) {
-                    $SharedCallQueueHistory = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
-                    $AllSharedCallQueueHistory += $SharedCallQueueHistory.ParseFromDtoModel($model)
-                }
-            $AllSharedCallQueueHistory
+                $SharedCallHistoryTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallHistoryTemplate]::new()
+                $SharedCallHistoryTemplate.ParseFromGetResponse($result)
             }
+            else {
+                $AllSharedCallHistoryTemplates = @()
+                foreach ($model in $result.AllSharedCallHistoryTemplate) {
+                    $SharedCallHistoryTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallHistoryTemplate]::new()
+                    $AllSharedCallHistoryTemplates += $SharedCallHistoryTemplate.ParseFromDtoModel($model)
+                }
+            $AllSharedCallHistoryTemplates
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsSharedCallQueueHistoryTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the shared call history template which is retrieved.
+		${Id},
+
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            Write-Warning -Message "This cmdlet is deprecated and will be removed in future releases. Please use Get-CsSharedCallHistoryTemplate instead."
+
+            # Forward to the new cmdlet
+            Get-CsSharedCallHistoryTemplate @PSBoundParameters
 
         } catch {
             $customCmdletUtils.SendTelemetry()
@@ -7446,6 +7872,96 @@ function Import-CsOnlineAudioFile {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsAgent {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the AI Agent.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a AgentId for the AI Agent.
+        ${AIAgentId},
+        
+        [Parameter(Mandatory=$true, position=2)]
+        [System.String]
+        # The Description parameter provides a AgentType for the AI Agent.
+        ${AIAgentType},
+        
+        [Parameter(Mandatory=$false, position=3)]
+        [System.String]
+        # The Description parameter provides a AgentType for the AI Agent.
+        ${AIAgentTargetTagTemplateId},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # Build the request body
+            $requestBody = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentConfigurationDtoModel]::new()
+            $requestBody.Name = $Name
+            $requestBody.AgentId = $AIAgentId
+            $requestBody.AgentType = $AIAgentType           
+            if ($PSBoundParameters.ContainsKey('AIAgentTargetTagTemplateId')) {
+                $requestBody.AgentTargetTagTemplateId = $AIAgentTargetTagTemplateId
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsAgent -Body $requestBody -ErrorAction Stop @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($internalOutput.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.AIAgentConfiguration]::new()
+            $output.ParseFromCreateResponse($internalOutput)
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Format output of cmdlet
 
 function New-CsAutoAttendant {
@@ -7688,14 +8204,6 @@ function New-CsAutoAttendant {
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
                 }
 
-                # For mainline attendant as of now, we only support "en-US" language.
-                $supportedLanguageId = "en-US"
-                if ($LanguageId -ne $supportedLanguageId) {
-                    Write-Warning "The provided LanguageId '$LanguageId' is not supported for mainline attendant. Defaulting to 'en-US'."
-                    $null = $PSBoundParameters.Remove('LanguageId')
-                    $PSBoundParameters.Add('LanguageId', $supportedLanguageId)
-                }
-
                 # For mainline attendant, we only support specific voice ids.
                 $mainlineAttendantVoiceIds = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantSupportedVoiceIds]
                 if ([string]::IsNullOrWhiteSpace($MainlineAttendantAgentVoiceId) -or
@@ -7792,6 +8300,11 @@ function New-CsAutoAttendantCallableEntity {
         ${CallPriority},
 
         [Parameter(Mandatory=$false, position=5)]
+        [System.String]
+        # The SharedVoicemailHistoryTemplateId parameter is the Id of the Shared Call History Template for Shared Voicemail.
+        ${SharedVoicemailHistoryTemplateId},
+
+        [Parameter(Mandatory=$false, position=6)]
         [Switch]
         # The Force parameter indicates if we force the action to be performed. (Deprecated)
         ${Force},
@@ -8390,6 +8903,9 @@ function New-CsAutoAttendantMenuOption {
                 }
                 if ($CallTarget.Type -eq 'ApplicationEndpoint'  -or $CallTarget.Type -eq 'ConfigurationEndpoint') {
                     $PSBoundParameters.Add('CallTargetCallPriority', $CallTarget.CallPriority)
+                }
+                if ($CallTarget.SharedVoicemailHistoryTemplateId) {
+                    $PSBoundParameters.Add('CallTargetSharedVoicemailHistoryTemplateId', $CallTarget.SharedVoicemailHistoryTemplateId)
                 }
             }
 
@@ -9650,12 +10166,12 @@ function New-CsMainlineAttendantQuestionAnswerFlow  {
                                 
                     # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
                     $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
-                    $KnowledgeBaseContentLocalFileContent = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString, "local_file")
+                    $KnowledgeBaseContent = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString)
 
                     # The user input of `KnowledgeBase` parameter is the knowledge-base file path,
                     # but we need to provide the content of the knowledge-base to the downstream backend service.
                     $PSBoundParameters.Remove('KnowledgeBase') | Out-Null
-                    $PSBoundParameters.Add("KnowledgeBase", $KnowledgeBaseContentLocalFileContent)
+                    $PSBoundParameters.Add("KnowledgeBase", $KnowledgeBaseContent)
                 } 
                 else 
                 {
@@ -10187,6 +10703,92 @@ function New-CsOnlineTimeRange {
 
 # Objective of this custom file: transforming the results to the custom objects
 
+function New-CsSharedCallHistoryTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the shared call history template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the shared call history template.
+        ${Description},
+
+        [Parameter(Mandatory=$false, position=2)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.IncomingMissedCalls]
+        # The IncomingMissedCalls parameter determines whether the Shared Call history is to be delivered to supervisors, agents and supervisors or none.
+        ${IncomingMissedCalls},
+
+        [Parameter(Mandatory=$false, position=3)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.AnsweredAndOutboundCalls]
+        # The AnsweredAndOutboundCalls parameter determines whether the Shared Call history is to be delivered to supervisors, agents and supervisors or none.
+        ${AnsweredAndOutboundCalls},
+
+        [Parameter(Mandatory=$false, position=4)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.IncomingRedirectedCalls]
+        # The IncomingRedirectedCalls parameter determines whether the Shared Call history is to be delivered to authorized users, authorized users and group members or none.
+        ${IncomingRedirectedCalls},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsSharedCallHistoryTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallHistoryTemplate]::new()
+            $output.ParseFromCreateResponse($result)
+
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
 function New-CsSharedCallQueueHistoryTemplate {
 	[CmdletBinding(PositionalBinding=$true)]
     param(
@@ -10210,6 +10812,11 @@ function New-CsSharedCallQueueHistoryTemplate {
         # The AnsweredAndOutboundCalls parameter determines whether the Shared Call Queue history is to be delivered to supervisors, agents and supervisors or none.
         ${AnsweredAndOutboundCalls},
 
+        [Parameter(Mandatory=$false, position=4)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.IncomingRedirectedCalls]
+        # The IncomingRedirectedCalls parameter determines whether the Shared Call history is to be delivered to authorized users, authorized users and group members or none.
+        ${IncomingRedirectedCalls},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -10223,22 +10830,10 @@ function New-CsSharedCallQueueHistoryTemplate {
 
     process {
         try {
-            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            Write-Warning -Message "This cmdlet is deprecated and will be removed in future releases. Please use New-CsSharedCallHistoryTemplate instead."
 
-            # Default ErrorAction to $ErrorActionPreference
-            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
-                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
-            }
-
-            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
-
-            # Stop execution if internal cmdlet is failing
-            if ($internalOutput -eq $null) {
-                return $null
-            }
-
-            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
-            $output.ParseFromCreateResponse($internalOutput)
+            # Forward to the new cmdlet
+            New-CsSharedCallHistoryTemplate @PSBoundParameters
         }
         catch {
             $customCmdletUtils.SendTelemetry()
@@ -10310,6 +10905,9 @@ function New-CsTag {
             }
             if ($TagDetails.Type -eq 'ApplicationEndpoint' -or $TagDetails.Type -eq 'ConfigurationEndpoint') {
                 $PSBoundParameters.Add('TagDetailCallPriority', $TagDetails.CallPriority)
+            }
+            if ($TagDetails.SharedVoicemailHistoryTemplateId) {
+                $PSBoundParameters.Add('TagDetailSharedVoicemailHistoryTemplateId', $TagDetails.SharedVoicemailHistoryTemplateId)
             }
         }
 
@@ -10411,6 +11009,76 @@ function New-CsTagsTemplate {
             throw
         }
     }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsAgent {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the AI Agent to be removed.
+        ${Id},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            
+            # Map Id to Identity for internal cmdlet
+            if ($PSBoundParameters.ContainsKey("Id")) {
+                $PSBoundParameters.Add("Identity", $Id)
+                $PSBoundParameters.Remove("Id") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsAgent @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
     end {
         $customCmdletUtils.SendTelemetry()
     }
@@ -11097,12 +11765,12 @@ function Remove-CsOnlineSchedule {
 
 # Objective of this custom file: print out the diagnostic
 
-function Remove-CsSharedCallQueueHistoryTemplate {
+function Remove-CsSharedCallHistoryTemplate {
     [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter(Mandatory=$true, position=0)]
         [System.String]
-        # The identifier of the shared call queue history template to be removed.
+        # The identifier of the shared call history template to be removed.
         ${Id},
 
         [Parameter(Mandatory=$false, position=1)]
@@ -11133,7 +11801,7 @@ function Remove-CsSharedCallQueueHistoryTemplate {
                 $PSBoundParameters.Remove("Force") | Out-Null
             }
 
-            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsSharedCallQueueHistoryTemplate @PSBoundParameters @httpPipelineArgs
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsSharedCallHistoryTemplate @PSBoundParameters @httpPipelineArgs
 
             # Stop execution if internal cmdlet is failing
             if ($result -eq $null) {
@@ -11142,6 +11810,62 @@ function Remove-CsSharedCallQueueHistoryTemplate {
 
             Write-AdminServiceDiagnostic($result.Diagnostic)
             $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Remove-CsSharedCallQueueHistoryTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the shared call queue history template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            Write-Warning -Message "This cmdlet is deprecated and will be removed in future releases. Please use Remove-CsSharedCallHistoryTemplate instead."
+
+            # Forward to the new cmdlet
+            Remove-CsSharedCallHistoryTemplate @PSBoundParameters
 
         } catch {
             $customCmdletUtils.SendTelemetry()
@@ -11217,6 +11941,85 @@ function Remove-CsTagsTemplate {
 
         } catch {
             $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsAgent {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to AI Agent to be modified.
+        ${Instance},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $params = @{
+                ConfigurationId = ${Instance}.Id
+                Name = ${Instance}.Name
+                AgentId = ${Instance}.AIAgentId
+                AgentType = ${Instance}.AIAgentType
+                AgentTargetTagTemplateId = ${Instance}.AIAgentTargetTagTemplateId
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance") 
+
+             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsAgent @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.OAA.Models.AIAgentConfiguration]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
             throw
         }
     }
@@ -11440,14 +12243,6 @@ function Set-CsAutoAttendant {
                         }
                     )
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
-                }
-
-                # For mainline attendant as of now, we only support "en-US" language.
-                $supportedLanguageId = "en-US"
-                if ($Instance.LanguageId -ne $supportedLanguageId) {
-                    Write-Warning ("The provided LanguageId '{0}' is not supported for mainline attendant. Defaulting to 'en-US'." -f $Instance.LanguageId)
-                    $null = $PSBoundParameters.Remove('LanguageId')
-                    $PSBoundParameters.Add('LanguageId', $supportedLanguageId)
                 }
 
                 # For mainline attendant, we only support specific voice ids.
@@ -13003,7 +13798,7 @@ function Set-CsMainlineAttendantAppointmentBookingFlow {
                 Name = ${Instance}.Name
                 Identity = ${Instance}.Identity
                 Type = ${Instance}.Type
-                ConfigurationId = ${Instance}.ConfigurationId
+                RelatedConfigurationIds = ${Instance}.RelatedConfigurationIds
                 Description = ${Instance}.Description
                 CallerAuthenticationMethod = ${Instance}.CallerAuthenticationMethod
                 ApiAuthenticationType = ${Instance}.ApiAuthenticationType
@@ -13100,7 +13895,7 @@ function Set-CsMainlineAttendantQuestionAnswerFlow {
                                 
                     # Create an instance of MainlineAttendantQuestionAnswerFlow to get the local file content
                     $mainlineAttendantQuestionAnswerFlow =  [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
-                    $Instance.KnowledgeBase = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString, "local_file")
+                    $Instance.KnowledgeBase = $mainlineAttendantQuestionAnswerFlow.ReadKnowledgeBaseContent($KnowledgeBaseJsonString)
                 }
             } catch {
                 throw "Failed to read KnowledgeBase file: $_"
@@ -13111,7 +13906,7 @@ function Set-CsMainlineAttendantQuestionAnswerFlow {
                 Name = ${Instance}.Name
                 Identity = ${Instance}.Identity
                 Type = ${Instance}.Type
-                ConfigurationId = ${Instance}.ConfigurationId
+                RelatedConfigurationIds = ${Instance}.RelatedConfigurationIds
                 Description = ${Instance}.Description
                 ApiAuthenticationType = ${Instance}.ApiAuthenticationType
                 KnowledgeBase = ${Instance}.KnowledgeBase
@@ -13554,12 +14349,12 @@ function Set-CsOnlineVoicemailUserSettings {
 
 # Objective of this custom file: transforming the results to the custom objects
 
-function Set-CsSharedCallQueueHistoryTemplate {
+function Set-CsSharedCallHistoryTemplate {
 	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
         [Parameter(Mandatory=$true, position=0)]
         [PSObject]
-        # The Instance parameter is the object reference to the shared call queue history template to be modified.
+        # The Instance parameter is the object reference to the shared call history template to be modified.
         ${Instance},
 
         [Parameter(Mandatory=$false, position=1)]
@@ -13594,6 +14389,7 @@ function Set-CsSharedCallQueueHistoryTemplate {
                 Description = ${Instance}.Description
                 IncomingMissedCalls = ${Instance}.IncomingMissedCalls
                 AnsweredAndOutboundCalls = ${Instance}.AnsweredAndOutboundCalls
+                IncomingRedirectedCalls = ${Instance}.IncomingRedirectedCalls
             }
 
             # Get common parameters
@@ -13604,16 +14400,72 @@ function Set-CsSharedCallQueueHistoryTemplate {
             }
 
             $null = $params.Remove("Instance")
-            
-            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsSharedCallQueueHistoryTemplate @params @httpPipelineArgs
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsSharedCallHistoryTemplate @params @httpPipelineArgs
 
              # Stop execution if internal cmdlet is failing
             if ($result -eq $null) {
                 return $null
             }
 
-            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallQueueHistory]::new()
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedCallHistoryTemplate]::new()
             $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsSharedCallQueueHistoryTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the shared call queue history template to be modified.
+        ${Instance},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            Write-Warning -Message "This cmdlet is deprecated and will be removed in future releases. Please use Set-CsSharedCallHistoryTemplate instead."
+
+            # Forward to the new cmdlet
+            Set-CsSharedCallHistoryTemplate @PSBoundParameters
 
         } catch {
            $customCmdletUtils.SendTelemetry()

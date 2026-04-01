@@ -8645,8 +8645,8 @@
 								<PropertyName>ExternalAccessWithTrialTenants</PropertyName>
 							</ListItem>
 							<ListItem>
-								<Label>DomainBlockingForMDOAdminsInTeams</Label>
-								<PropertyName>DomainBlockingForMDOAdminsInTeams</PropertyName>
+								<Label>SecurityTeamAllowBlockListDelegation</Label>
+								<PropertyName>SecurityTeamAllowBlockListDelegation</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>
@@ -24227,6 +24227,9 @@
 							</ListItem>
 							<ListItem>
 								<PropertyName>CallPriority</PropertyName>
+							</ListItem>
+							<ListItem>
+								<PropertyName>SharedVoicemailHistoryTemplateId</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>

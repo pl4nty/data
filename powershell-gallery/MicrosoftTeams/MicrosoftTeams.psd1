@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.6.0'
+ModuleVersion = '7.7.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -104,6 +104,9 @@ FunctionsToExport =  @(
 	,'Get-CsInboundExemptNumberPattern'
 	,'Get-CsMainlineAttendantAppointmentBookingFlow'
 	,'Get-CsMainlineAttendantFlow'
+	,'Get-CsMainlineAttendantSupportedLanguages'
+	,'Get-CsMainlineAttendantSupportedVoices'
+	,'Get-CsMainlineAttendantTenantInformation'
 	,'Get-CsMainlineAttendantQuestionAnswerFlow'
 	,'Get-CsMeetingMigrationStatus'
 	,'Get-CsOnlineApplicationInstance'
@@ -198,11 +201,13 @@ FunctionsToExport =  @(
 	,'Get-CsUserPolicyPackage'
 	,'Get-CsUserPolicyPackageRecommendation'
 	,'Get-CsVideoInteropServiceProvider'
+	,'Get-CsAgent'
 	,'Get-CsAiAgents'
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Get-CsSharedCallQueueHistoryTemplate'
 	,'Get-CsTagsTemplate'
+	,'Get-CsSharedCallHistoryTemplate'
 	,'Grant-CsCallingLineIdentity'
 	,'Grant-CsDialoutPolicy'
 	,'Grant-CsGroupPolicyPackageAssignment'
@@ -237,6 +242,7 @@ FunctionsToExport =  @(
 	,'Import-CsOnlineAudioFile'
 	,'Invoke-CsInternalPSTelemetry'
 	,'Move-CsInternalHelper'
+	,'New-CsAgent'
 	,'New-CsApplicationAccessPolicy'
 	,'New-CsAutoAttendant'
 	,'New-CsAutoAttendantCallableEntity'
@@ -309,7 +315,9 @@ FunctionsToExport =  @(
 	,'New-CsTagsTemplate'
 	,'New-CsTag'
 	,'New-CsSharedCallQueueHistoryTemplate'
+	,'New-CsSharedCallHistoryTemplate'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
+	,'Remove-CsAgent'
 	,'Remove-CsApplicationAccessPolicy'
 	,'Remove-CsAutoAttendant'
 	,'Remove-CsAutoRecordingTemplate'
@@ -339,6 +347,7 @@ FunctionsToExport =  @(
 	,'Remove-CsOnlineVoiceRoutingPolicy'
 	,'Remove-CsPhoneNumberAssignment'
 	,'Remove-CsPhoneNumberAssignmentBlock'
+	,'Remove-CsPhoneNumberSmsActivation'
 	,'Remove-CsPhoneNumberTag'
 	,'Remove-CsPhoneNumberTenantConfiguration'
 	,'Remove-CsTeamsAudioConferencingPolicy'
@@ -373,6 +382,8 @@ FunctionsToExport =  @(
 	,'Remove-CsComplianceRecordingForCallQueueTemplate'
 	,'Remove-CsTagsTemplate'
 	,'Remove-CsSharedCallQueueHistoryTemplate'
+	,'Remove-CsSharedCallHistoryTemplate'
+	,'Set-CsAgent'
 	,'Set-CsApplicationAccessPolicy'
 	,'Set-CsApplicationMeetingConfiguration'
 	,'Set-CsAutoAttendant'
@@ -408,6 +419,7 @@ FunctionsToExport =  @(
 	,'Set-CsPhoneNumberAssignment'
 	,'Set-CsPhoneNumberAssignmentBlock'
 	,'Set-CsPhoneNumberPolicyAssignment'
+	,'Set-CsPhoneNumberSmsActivation'
 	,'Set-CsPhoneNumberTag'
 	,'Set-CsPhoneNumberTenantConfiguration'
 	,'Set-CsTeamsAudioConferencingPolicy'
@@ -449,6 +461,7 @@ FunctionsToExport =  @(
 	,'Set-CsComplianceRecordingForCallQueueTemplate'
 	,'Set-CsTagsTemplate'
 	,'Set-CsSharedCallQueueHistoryTemplate'
+	,'Set-CsSharedCallHistoryTemplate'
 	,'Start-CsExMeetingMigration'
 	,'Sync-CsOnlineApplicationInstance'
 	,'Test-CsEffectiveTenantDialPlan'
@@ -832,22 +845,21 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.6.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Releases Get-CsAiAgents cmdlet.
-- Releases New-CsPhoneNumberBulkUpdateTagsOrder cmdlet.
-- Releases [Get|Set|Remove]-CsPhoneNumberTenantConfiguration cmdlets.
-- Releases [New|Get|Set|Remove]-CsAutoRecordingTemplate cmdlets.
-- Adds AutoRecordingTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
-- Adds ResourceAccount parameter to [New|Set]-InboundBlockedNumberPattern cmdlets.
-- Adds CallerNumber parameter to the [Get|Test]-CsEffectiveTenantDialPlan cmdlets.
-- Adds LinksInTeams parameter to [Set|New]-CsTeamsMobilityPolicy cmdlets.
-- Adds ReportCall parameter to [Set|New]-CsTeamsCallingPolicy cmdlets.
-- Adds AllowMultipleScreenshare and PasscodeComplexity parameters to [Set|New]-CsTeamsMeetingPolicy cmdlets.
-- Adds Registration parameter to [Set|New]-CsTeamsEventsPolicy cmdlets.
-- Adds UserSettingsDefault parameter to [Set|New]-CsTeamsWorkLocationDetectionPolicy cmdlets.
-- Adds ResourceAccount parameter to Test-InboundBlockedNumberPattern cmdlet.
-- Adds AllowMultipleScreenshare parameter to Set-CsTeamsGuestMeetingConfiguration cmdlet.
-
+ **7.7.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Fixes IPAddressVersion parameter in [Set|New]-CsOnlinePstnGateway cmdlets.
+- Releases [Set|Remove]-CsPhoneNumberSmsActivation cmdlets.
+- Adds the SmsActivationState output attribute to the Get-CsPhoneNumberAssignment cmdlet.
+- Adds support for application-based authentication in the Set-CsTeamsSettingsCustomApp cmdlet.
+- Updates the Get-Team cmdlet to improve performance and reliability.
+- [BREAKING CHANGE] Renames ConfigurationId parameter in Get-CsMainlineAttendantFlow cmdlet to RelatedConfigurationId.
+- Releases Get-CsMainlineAttendantTenantInformation, Get-CsMainlineAttendantSupportedLanguages, and Get-CsMainlineAttendantSupportedVoices cmdlets.
+- Adds AgentId, AgentIds, ContinuationToken, DisplayNameContains, DisplayNamePrefix, MaxResult, and ShowCount parameters to the Get-CsAiAgents cmdlet.
+- Adds support for URL-based descriptions in [New|Set]-CsMainlineAttendantQuestionAnswerFlow cmdlets.
+- [BREAKING CHANGE] Renames DomainBlockingForMDOAdminsInTeams parameter in Set-CsTenantFederationConfiguration cmdlet to SecurityTeamAllowBlockListDelegation.
+- Releases [Get|New|Set|Remove]-CsAgent cmdlets for managing AI agent for resource account integration.
+- Adds IncomingRedirectedCalls parameter to New-CsSharedCallQueueHistoryTemplate cmdlet.
+- Releases [Get|New|Set|Remove]-CsSharedCallHistoryTemplate cmdlets. These cmdlets will replace [Get|New|Set|Remove]-CsSharedCallQueueHistoryTemplate cmdlets in future.
+- Adds SharedVoicemailHistoryTemplateId parameter to New-CsAutoAttendantCallableEntity.
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

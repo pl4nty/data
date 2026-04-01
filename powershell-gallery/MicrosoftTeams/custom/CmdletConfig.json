@@ -674,7 +674,16 @@
         "SelfHost"
       ]
     },
-    "New-CsPhoneNumberBulkUpdateTagsOrder":{
+    "New-CsPhoneNumberUsageChangeOrder": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "New-CsPhoneNumberBulkUpdateTagsOrder": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -753,6 +762,24 @@
       ]
     },
     "Remove-CsPhoneNumberTenantConfiguration": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsPhoneNumberSmsActivation": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsPhoneNumberSmsActivation": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -970,7 +997,25 @@
         "Torus"
       ]
     },
+    "Get-CsSharedCallHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Get-CsAutoRecordingTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsAgent": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -2504,6 +2549,15 @@
         "Torus"
       ]
     },
+    "New-CsAgent": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsTagsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -2555,6 +2609,15 @@
       ]
     },
     "New-CsSharedCallQueueHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "New-CsSharedCallHistoryTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -2627,6 +2690,33 @@
       ]
     },
     "Remove-CsMainlineAttendantQuestionAnswerFlow": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsMainlineAttendantTenantInformation": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsMainlineAttendantSupportedLanguages": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsMainlineAttendantSupportedVoices": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3201,6 +3291,15 @@
         "Torus"
       ]
     },
+    "Remove-CsAgent": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Remove-CsTagsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -3211,6 +3310,15 @@
       ]
     },
     "Remove-CsSharedCallQueueHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsSharedCallHistoryTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",
@@ -3805,6 +3913,15 @@
         "Torus"
       ]
     },
+    "Set-CsSharedCallHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Set-CsInboundBlockedNumberPattern": {
       "CmdletType": "Remoting",
       "ModernCmdlet": "Set-CsConfigurationModern",
@@ -3964,6 +4081,15 @@
       ]
     },
     "Set-CsAutoRecordingTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsAgent": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",

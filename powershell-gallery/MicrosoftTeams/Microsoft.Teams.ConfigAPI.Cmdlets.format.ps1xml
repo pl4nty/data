@@ -1082,6 +1082,52 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentConfigurationDtoModel</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentConfigurationDtoModel</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AgentId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AgentTargetTagTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AgentType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ConfigurationId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AgentId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AgentTargetTagTemplateId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AgentType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ConfigurationId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentDescription</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.AiAgentDescription</TypeName>
@@ -1255,12 +1301,18 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
+            <Label>AgentCount</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ContinuationToken</Label>
           </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AgentCount</PropertyName>
+              </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ContinuationToken</PropertyName>
               </TableColumnItem>
@@ -2395,6 +2447,9 @@
             <Label>Id</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailHistoryTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Type</Label>
           </TableColumnHeader>
         </TableHeaders>
@@ -2412,6 +2467,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailHistoryTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Type</PropertyName>
@@ -5139,6 +5197,9 @@
             <Label>Id</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailHistoryTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Type</Label>
           </TableColumnHeader>
         </TableHeaders>
@@ -5156,6 +5217,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailHistoryTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Type</PropertyName>
@@ -6188,9 +6252,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallQueueHistoryRequest</Name>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallHistoryTemplateRequest</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallQueueHistoryRequest</TypeName>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedCallHistoryTemplateRequest</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -6202,6 +6266,9 @@
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingRedirectedCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Name</Label>
@@ -6218,6 +6285,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingRedirectedCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -7890,6 +7960,28 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.GetAiAgentConfigurationsResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.GetAiAgentConfigurationsResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AgentCount</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AgentCount</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.GetApplicationInstanceAssociationResponse</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.GetApplicationInstanceAssociationResponse</TypeName>
@@ -9254,9 +9346,6 @@
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
-            <Label>ConfigurationId</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
             <Label>Description</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -9280,9 +9369,6 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>ConfigurationId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Description</PropertyName>
@@ -9318,9 +9404,6 @@
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
-            <Label>ConfigurationId</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
             <Label>Description</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -9349,9 +9432,6 @@
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
-                <PropertyName>ConfigurationId</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
                 <PropertyName>Description</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
@@ -9372,6 +9452,34 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantLanguage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantLanguage</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>DisplayName</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantQuestionAnswerFlow</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantQuestionAnswerFlow</TypeName>
@@ -9380,9 +9488,6 @@
         <TableHeaders>
           <TableColumnHeader>
             <Label>ApiAuthenticationType</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>ConfigurationId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Description</Label>
@@ -9407,9 +9512,6 @@
                 <PropertyName>ApiAuthenticationType</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
-                <PropertyName>ConfigurationId</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
                 <PropertyName>Description</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
@@ -9423,6 +9525,68 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantTenantInformation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantTenantInformation</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>DefaultLanguage</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DefaultTimeZone</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>DefaultVoice</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>DefaultLanguage</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DefaultTimeZone</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DefaultVoice</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantVoice</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantVoice</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -11614,6 +11778,34 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.RelatedConfiguration</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.RelatedConfiguration</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.RemoveApplicationInstanceAssociationsRequest</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.RemoveApplicationInstanceAssociationsRequest</TypeName>
@@ -12750,9 +12942,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistory</Name>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplate</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistory</TypeName>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplate</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -12767,6 +12959,9 @@
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingRedirectedCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Name</Label>
@@ -12786,6 +12981,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingRedirectedCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -12796,9 +12994,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDomainModel</Name>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplateDomainModel</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDomainModel</TypeName>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplateDomainModel</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -12813,6 +13011,9 @@
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingRedirectedCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Name</Label>
@@ -12832,6 +13033,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingRedirectedCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -12842,9 +13046,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDtoModel</Name>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplateDtoModel</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallQueueHistoryDtoModel</TypeName>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedCallHistoryTemplateDtoModel</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -12859,6 +13063,9 @@
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>IncomingMissedCall</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>IncomingRedirectedCall</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>Name</Label>
@@ -12878,6 +13085,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>IncomingMissedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>IncomingRedirectedCall</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -13118,6 +13328,9 @@
             <Label>ReverseNumberLookup</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SmsActivationState</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Tag</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -13191,10 +13404,57 @@
                 <PropertyName>ReverseNumberLookup</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>SmsActivationState</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>Tag</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TelephoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletCapabilityUpdateRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletCapabilityUpdateRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>TelephoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>TelephoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletCapabilityUpdateResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletCapabilityUpdateResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -13305,6 +13565,56 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TelephoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletPhoneNumberUsageChangeOrderRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletPhoneNumberUsageChangeOrderRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>TelephoneNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Usage</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>TelephoneNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Usage</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletPhoneNumberUsageUpdateResponse</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtCmdletPhoneNumberUsageUpdateResponse</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -15807,9 +16117,6 @@
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
-            <Label>ConfigurationId</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
             <Label>Description</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -15833,9 +16140,6 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>ConfigurationId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Description</PropertyName>
@@ -16653,9 +16957,6 @@
             <Label>ApiAuthenticationType</Label>
           </TableColumnHeader>
           <TableColumnHeader>
-            <Label>ConfigurationId</Label>
-          </TableColumnHeader>
-          <TableColumnHeader>
             <Label>Description</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -16676,9 +16977,6 @@
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>ApiAuthenticationType</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>ConfigurationId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Description</PropertyName>
