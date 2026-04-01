@@ -193,6 +193,16 @@ BASE_DECLARE_FEATURE(kVisibleCIAutoLaunchOnStartup);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kVisibleCIAutoLaunchOnUnlock);
 
+// Flag to allow CI to start in suppressed autolaunch sessions.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kStartCIInAutolaunchSuppression);
+
+// Keep alive duration (seconds) for CI-active suppressed autolaunch sessions.
+// Configurable via ECS through `kStartCIInAutolaunchSuppression`.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<int>
+    kStartCIInAutolaunchSuppressionKeepAliveDurationInSeconds;
+
 // Browser usage threshold in which auto launch should be activated.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const base::FeatureParam<int> kAutoLaunchActivationThreshold;

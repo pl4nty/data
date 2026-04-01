@@ -44,6 +44,7 @@ class OneAuthProxy;
 class Profile;
 class PwaIdentityProxy;
 class ScopedAllowBlockingForLegacySmartScreenImport;
+class ScopedAllowBlockingForProcessSingletonNotification;
 class StartupBrowserCreator;
 struct StartupProfileInfo;
 class WebEngineContentBrowserClient;

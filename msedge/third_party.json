@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33141860,
-    "file_count": 4038
+    "size": 33161820,
+    "file_count": 4037
   },
   {
     "name": "boringssl",
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 36685645,
-    "file_count": 113
+    "size": 36565135,
+    "file_count": 108
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6978013,
+    "size": 6978071,
     "file_count": 66
   },
   {
@@ -376,8 +376,8 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 58605,
-    "file_count": 43
+    "size": 59339,
+    "file_count": 45
   },
   {
     "name": "libbrlapi",
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19546603,
+    "size": 19543019,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4235350,
+    "size": 4239645,
     "file_count": 599
   },
   {
@@ -696,7 +696,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 548427,
+    "size": 548933,
     "file_count": 15
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7434634,
+    "size": 7435654,
     "file_count": 191
   },
   {
