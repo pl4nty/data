@@ -45,6 +45,10 @@ l_0_10.defaultApprovalMode = l_0_9(l_0_8.general, "defaultApprovalMode", "defaul
 l_0_10.enablePermanentToolApproval = l_0_9(l_0_8.security, "enablePermanentToolApproval", "false")
 l_0_10.enableAutoUpdate = l_0_9(l_0_8.general, "enableAutoUpdate", "true")
 l_0_10.modelName = l_0_9(l_0_8.model, "name", "")
+l_0_10.mcpServers = {}
+if not isnull(l_0_8.mcpServers) and type(l_0_8.mcpServers) == "table" then
+  (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_8.mcpServers))
+end
 local l_0_11 = safeJsonSerialize(l_0_10)
 local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
 if l_0_12 and l_0_13 ~= nil then

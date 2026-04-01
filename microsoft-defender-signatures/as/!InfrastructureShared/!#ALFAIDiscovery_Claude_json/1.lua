@@ -70,90 +70,36 @@ if not l_0_8.projects then
             end
           end
           do
-            if l_0_15.mcpServers or l_0_15.servers then
+            do
               do
-                do
-                  if not l_0_15.mcpServers then
-                    local l_0_22, l_0_23 = l_0_15.servers
-                  end
-                  -- DECOMPILER ERROR at PC149: Confused about usage of register: R17 in 'UnsetPending'
-
-                  for l_0_27,l_0_28 in pairs(l_0_22) do
-                    local l_0_24 = nil
-                    -- DECOMPILER ERROR at PC156: Overwrote pending register: R23 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC161: Overwrote pending register: R23 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC166: Overwrote pending register: R23 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC168: Overwrote pending register: R23 in 'AssignReg'
-
-                    if (l_0_29.type and not l_0_29.transport) or l_0_29.url then
-                      local l_0_30 = ""
-                      if l_0_29.headers then
-                        for l_0_34,l_0_35 in pairs(l_0_29.headers) do
-                          local l_0_31 = {}
-                          -- DECOMPILER ERROR at PC179: Confused about usage of register: R29 in 'UnsetPending'
-
-                          if l_0_35 ~= "Authorization" then
-                            l_0_31[l_0_35] = R29_PC179
-                          end
-                        end
-                      end
-                      do
-                        local l_0_36 = nil
-                        if l_0_29.env then
-                          for l_0_40,l_0_41 in pairs(l_0_29.env) do
-                            local l_0_37 = {}
-                            -- DECOMPILER ERROR at PC192: Confused about usage of register: R30 in 'UnsetPending'
-
-                            if l_0_41 ~= "API_KEY" then
-                              l_0_37[l_0_41] = R30_PC192
-                            end
-                          end
-                        end
-                        do
-                          local l_0_42 = nil
-                          local l_0_43 = table.insert
-                          do
-                            local l_0_44 = l_0_16.mcpServers
-                            l_0_43(l_0_44, {name = l_0_28, type = l_0_29.type, url = l_0_29.url, command = l_0_29.command, args = l_0_29.args, tools = l_0_29.tools, transport = l_0_30, headers = l_0_36, environment = l_0_42})
-                            -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out DO_STMT
-
-                            -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out DO_STMT
-
-                            -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC214: LeaveBlock: unexpected jumping out IF_STMT
-
-                          end
-                        end
-                      end
-                    end
-                  end
-                  ;
-                  (table.insert)(l_0_10, l_0_16)
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC221: LeaveBlock: unexpected jumping out IF_STMT
-
+                if not l_0_15.mcpServers and not l_0_15.servers then
+                  local l_0_22, l_0_23, l_0_24, l_0_25 = (l_0_15.mcp).servers
                 end
+                -- DECOMPILER ERROR at PC147: Confused about usage of register: R17 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC155: Confused about usage of register: R17 in 'UnsetPending'
+
+                if next(l_0_22) then
+                  (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_22))
+                end
+                ;
+                (table.insert)(l_0_10, l_0_16)
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+
               end
             end
           end
@@ -175,19 +121,19 @@ if not l_0_8.projects then
   if isnull(l_0_10) then
     return mp.CLEAN
   end
-  local l_0_45 = safeJsonSerialize(l_0_10)
-  local l_0_46, l_0_47 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-  if l_0_46 and l_0_47 ~= nil then
-    for l_0_51,l_0_52 in pairs(l_0_47) do
-      if l_0_51 == l_0_4 and l_0_52 == l_0_45 then
+  local l_0_26 = safeJsonSerialize(l_0_10)
+  local l_0_27, l_0_28 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+  if l_0_27 and l_0_28 ~= nil then
+    for l_0_32,l_0_33 in pairs(l_0_28) do
+      if l_0_32 == l_0_4 and l_0_33 == l_0_26 then
         return mp.CLEAN
       end
     end
   end
   do
-    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_45, l_0_5, 100)
+    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_26, l_0_5, 100)
     ;
-    (mp.SetDetectionString)(l_0_45)
+    (mp.SetDetectionString)(l_0_26)
     ;
     (mp.set_mpattribute)("MpDisableCaching")
     return mp.INFECTED

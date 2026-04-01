@@ -57,25 +57,39 @@ local l_0_10 = {}
 l_0_10.model = l_0_9(l_0_8, "model")
 l_0_10.reasoning_effort = l_0_9(l_0_8, "reasoning_effort")
 l_0_10.marketplaces = l_0_9(l_0_8, "marketplaces")
-l_0_10.mcpServers = l_0_9(l_0_8, "mcpServers")
-if isnull(l_0_10) then
-  return mp.CLEAN
-end
-local l_0_11 = safeJsonSerialize(l_0_10)
-local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-if l_0_12 and l_0_13 ~= nil then
-  for l_0_17,l_0_18 in pairs(l_0_13) do
-    if l_0_17 == l_0_4 and l_0_18 == l_0_11 then
-      return mp.CLEAN
+do
+  if not l_0_8.mcpServers and not l_0_8.servers then
+    local l_0_11, l_0_12, l_0_13, l_0_14 = (l_0_8.mcp).servers
+  end
+  -- DECOMPILER ERROR at PC118: Confused about usage of register: R11 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC126: Confused about usage of register: R11 in 'UnsetPending'
+
+  if next(l_0_11) then
+    (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_11))
+  end
+  if isnull(l_0_10) then
+    return mp.CLEAN
+  end
+  local l_0_15 = nil
+  local l_0_16, l_0_17 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+  if l_0_17 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
+    for l_0_21,l_0_22 in pairs(R16_PC152) do
+      local l_0_18 = nil
+      -- DECOMPILER ERROR at PC156: Confused about usage of register: R19 in 'UnsetPending'
+
+      if l_0_22 == l_0_4 and R19_PC156 == l_0_16 then
+        return mp.CLEAN
+      end
     end
   end
-end
-do
-  AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_11, l_0_5, 100)
-  ;
-  (mp.SetDetectionString)(l_0_11)
-  ;
-  (mp.set_mpattribute)("MpDisableCaching")
-  return mp.INFECTED
+  do
+    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_16, l_0_5, 100)
+    ;
+    (mp.SetDetectionString)(l_0_16)
+    ;
+    (mp.set_mpattribute)("MpDisableCaching")
+    return mp.INFECTED
+  end
 end
 
