@@ -1,5 +1,334 @@
 [
     {
+        "created": "2026-04-01T23:15:50",
+        "description": "Skills allow extensibility of the SharePoint AI Agent, enabling customizable solutions that adapt to unique business needs. They address gaps in out-of-the-box functionality for unique business processes and enable reusable multi-step workflows. ",
+        "id": 559800,
+        "locale": null,
+        "modified": "2026-04-01T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "SharePoint: Extending AI in SharePoint using custom skills"
+    },
+    {
+        "created": "2026-04-01T23:15:50",
+        "description": "Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences.",
+        "id": 559605,
+        "locale": null,
+        "modified": "2026-04-01T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Improved organization for muted and meeting chats"
+    },
+    {
+        "created": "2026-04-01T23:15:50",
+        "description": "A new feed type available to users to catch up on posts from people and communities they follow with featured, leadership, and corporate updates.",
+        "id": 559482,
+        "locale": null,
+        "modified": "2026-04-01T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Following feed in Viva Engage"
+    },
+    {
+        "created": "2026-04-01T23:15:50",
+        "description": "Use the in-product migration tool in Unified Catalog to migrate classic glossary terms, associated term templates, and asset and column relationships to Unified Catalog\n",
+        "id": 558683,
+        "locale": null,
+        "modified": "2026-04-01T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Catalog \u2013 Migration tool in Unified Catalog to migrate classic glossary terms to Unified Catalog"
+    },
+    {
+        "created": "2026-04-01T23:15:50",
+        "description": "Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.",
+        "id": 558341,
+        "locale": null,
+        "modified": "2026-04-01T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Facilitator detects and answers questions"
+    },
+    {
         "created": "2026-03-31T23:15:47",
         "description": "Microsoft Teams displays a badge on the app bar that reflects activity across chats and channels. Now, it\u2019s easier to find and clear the messages behind that badge. Unmuted chats show a purple indicator when they affect the badge, while mentions, followed threads, and tag mentions display a purple number indicating how many items within are unread and part of the count.",
         "id": 559612,
@@ -285,7 +614,7 @@
         "description": "Copilot Notebooks allows users to generate Excel spreadsheets using the content and references gathered in a notebook. Copilot drafts a structured spreadsheet grounded in the notebook\u2019s context, which can be opened and edited in Excel, helping users move from ideas and source material to a ready\u2011to\u2011use spreadsheet with fewer manual steps.",
         "id": 559480,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
@@ -345,7 +674,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Create Excel"
+        "title": "Microsoft Copilot (Microsoft 365): Create Excel spreadsheets from Copilot Notebooks"
     },
     {
         "created": "2026-03-30T23:00:38",
@@ -950,9 +1279,9 @@
         "description": "We\u2019re introducing support for Microsoft Lists as a knowledge source for custom agents in SharePoint and OneDrive. These custom agents can now ground responses in a list stored on a SharePoint site or your OneDrive.",
         "id": 559022,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -1390,9 +1719,9 @@
         "description": "Add conversational intelligence to your phone communications to ensure every customer gets served no matter what time of day - even after hours and holidays. Microsoft Teams Phone Attendant Agent greets callers, answers common questions, schedules appointments, and routes calls to the right person or department with context. Through seamless integration with Microsoft Copilot Studio, businesses can embed custom voice agents into Attendant Agent to handle specialized workflows like billing, order status, or inventory checks.",
         "id": 558680,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -1408,6 +1737,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -1429,6 +1761,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -6712,12 +7047,12 @@
         "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support across Teams desktop, Teams mobile, and Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities - all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers.",
         "id": 557716,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13653,15 +13988,15 @@
     },
     {
         "created": "2026-02-05T00:15:27",
-        "description": "Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
+        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
         "id": 532734,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19325,12 +19660,12 @@
         "description": "In the Engage app for Android and Engage app in Teams for iOS and Android, we are introducing the Community Expert. Experts will be able to endorse accurate and credible answers and be recognized as community experts with a special label next to their name.  As well, experts & community admins will be able to mark answers to questions as verified answers to signal a credible and accurate answer. Verified answers will receive its own special label. ",
         "id": 537270,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19904,12 +20239,12 @@
         "description": "Provides access to the same device health details currently available through the export function on the device onboarding page. \u200bWith the new device status API, customers can pull device-level information directly into their own BI tools, dashboards, and workflows, eliminating manual exports and making it easier to automate reporting at scale.",
         "id": 542792,
         "locale": null,
-        "modified": "2025-12-16T00:15:28",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20588,12 +20923,12 @@
         "description": "With this release, usage from OneNote files (.one) in SharePoint will be included in SharePoint site analytics metrices \"Unique viewers\" and \"Site visits\". You will also see OneNote files appear in the popular content section if a OneNote file is heavily used in the last 7 days. Refer to the more information link to learn more about the list of excluded file types.",
         "id": 537285,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": "https://support.microsoft.com/en-us/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e",
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20692,9 +21027,9 @@
         "description": "Copilot Chat will be available for Microsoft 365 Copilot users from the side pane on the right-hand side when using Copilot Search in the Microsoft 365 Copilot app. This allows users to engage with Copilot while browsing universal search without switching pages or losing context.",
         "id": 537281,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20820,12 +21155,12 @@
         "description": "Community admins will be able to add and remove members from their communities.",
         "id": 532722,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29557,9 +29892,9 @@
         "description": "Popular graph connector prompts will now be available in the Prompt Gallery for use in Copilot Chat.",
         "id": 501448,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31840,12 +32175,12 @@
         "description": "Users have always been able to dial a phone number and add someone to a meeting. Now, meeting organizers can seamlessly consult and merge PSTN callers to active Teams meetings even if they are behind auto-attendants that require Dual-Tone Multi-Frequency, or DTMF, navigation. For example, you can connect with and consult a subject matter expert through an audio conference dial-in before adding them to the group discussion.",
         "id": 518218,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53534,12 +53869,12 @@
         "description": "After further review, this has been delayed to a later date. We apologize for any inconvenience. Users will receive a weekly notification in the Connections apps in Microsoft Teams on mobile and desktop linking them to relevant SharePoint news that they might have missed in the preceding week. This unread news will be available in the \"News\" tab in the Connections app under the \"unread\" pill.",
         "id": 498323,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -60129,9 +60464,9 @@
         "description": "You can now interact with your favorite apps directly from Teams chat and channels compose box using slash commands.  Type / and start interacting with Apps and Agents, invoke workflows and more. ",
         "id": 495002,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -65943,12 +66278,12 @@
         "description": "After further review, we mistakenly marked the roadmap as \"launched.\" The correct status is In Development. We apologize the inconvenience. SharePoint FAQ web part help assist content owners keep their content fresh and relevant. Powered by Microsoft 365 Copilot, this new web part can help content owner easily curate FAQ by working with agents and connected grounding data. With a Human-in-the-Loop approach, it ensures high-quality, trustworthy FAQs\u2014without the hassle. The result? A living FAQ that evolves with your organization's needs. Updated February 24, 2026: We previously marked this item as launched when it is still in Preview. We expect to move to GA later this year. We apologize for this inconvenience. ",
         "id": 482198,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -104038,12 +104373,12 @@
         "description": "Office for the web in Microsoft 365 supports the application of sensitivity labels with user-defined permissions.",
         "id": 468888,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-04-01T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

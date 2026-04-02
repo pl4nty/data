@@ -266,6 +266,7 @@
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
             "EnableBteOnboarding": true,
+            "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
             "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
