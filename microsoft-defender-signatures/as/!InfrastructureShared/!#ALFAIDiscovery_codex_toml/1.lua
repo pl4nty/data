@@ -27,32 +27,33 @@ local l_0_7 = tostring((mp.readfile)(0, l_0_6))
 if isnull(l_0_7) then
   return mp.CLEAN
 end
-local l_0_8 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  if not (string.match)(l_1_0, "\n%s*" .. l_1_1 .. "%s*=%s*\"([^\"]*)\"") then
-    return (string.match)(l_1_0, "^%s*" .. l_1_1 .. "%s*=%s*\"([^\"]*)\"")
-  end
+local l_0_8, l_0_9 = pcall(MpCommon.TomlDeserialize, l_0_7)
+if not l_0_8 or not l_0_9 then
+  return mp.CLEAN
 end
-
-local l_0_9 = {}
-l_0_9.model = l_0_8(l_0_7, "model") or ""
-l_0_9.model_provider = l_0_8(l_0_7, "model_provider") or ""
-l_0_9.approval_policy = l_0_8(l_0_7, "approval_policy") or ""
-l_0_9.sandbox_mode = l_0_8(l_0_7, "sandbox_mode") or ""
-l_0_9.web_search = l_0_8(l_0_7, "web_search") or ""
-local l_0_10 = safeJsonSerialize(l_0_9)
-local l_0_11, l_0_12 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-if l_0_11 and l_0_12 ~= nil then
-  for l_0_16,l_0_17 in pairs(l_0_12) do
-    if l_0_16 == l_0_4 and l_0_17 == l_0_10 then
+local l_0_10 = {}
+l_0_10.model = l_0_9.model
+l_0_10.model_provider = l_0_9.model_provider
+l_0_10.approval_policy = l_0_9.approval_policy
+l_0_10.sandbox_mode = l_0_9.sandbox_mode
+l_0_10.web_search = l_0_9.web_search
+l_0_10.mcpServers = {}
+if not isnull(l_0_9.mcp_servers) and type(l_0_9.mcp_servers) == "table" then
+  (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_9.mcp_servers))
+end
+local l_0_11 = safeJsonSerialize(l_0_10)
+local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+if l_0_12 and l_0_13 ~= nil then
+  for l_0_17,l_0_18 in pairs(l_0_13) do
+    if l_0_17 == l_0_4 and l_0_18 == l_0_11 then
       return mp.CLEAN
     end
   end
 end
 do
-  AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_10, l_0_5, 100)
+  AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_11, l_0_5, 100)
   ;
-  (mp.SetDetectionString)(l_0_10)
+  (mp.SetDetectionString)(l_0_11)
   ;
   (mp.set_mpattribute)("MpDisableCaching")
   return mp.INFECTED
