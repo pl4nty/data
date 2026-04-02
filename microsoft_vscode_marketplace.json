@@ -516,6 +516,13 @@
                 "id": "Qualyyy.vscode-custom-template-generator"
             }
         },
+        "RamiroHenriques.ezasp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "EZASP 2",
+                "id": "RafaelMartins.ezasp2"
+            }
+        },
         "RedVanWorkshop.explorer-exclude-vscode-extension": {
             "disallowInstall": true,
             "extension": {
@@ -2315,6 +2322,13 @@
         "joaomoreno.banana": "https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security"
     },
     "malicious": [
+        "lumirelle.shell-format-rev",
+        "IoliteLabs.solidity-linux",
+        "IoliteLabs.solidity-macos",
+        "IoliteLabs.solidity-windows",
+        "SVO.continue-svo-test",
+        "Milynn.bongocat-sidebar",
+        "anwar.papyrus-pdf",
         "AtroxEGO.better-folding-plus",
         "avenableivytech.vscode-sqlite-av",
         "ben14.ayu-warm",
