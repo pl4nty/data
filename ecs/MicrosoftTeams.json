@@ -87,21 +87,6 @@
             }
         }
     },
-    "MicrosoftTeamsAndroidDeviceAdminAgent": {
-        "healthSignalConfig": {
-            "isEnabled": true,
-            "teams": {
-                "pairinghealth": {
-                    "allowedTenantIds": [],
-                    "isEnabled": true,
-                    "isReleased": false
-                },
-                "secondarydisplay": {
-                    "isEnabled": false
-                }
-            }
-        }
-    },
     "MicrosoftTeamsAppCatalog": {
         "appCatalog": {
             "appCatalogMetadata": {

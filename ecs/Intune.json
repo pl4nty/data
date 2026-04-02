@@ -476,7 +476,7 @@
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,
-            "EnableMAA_DcV2SettingsCatalog": true,
+            "EnableMAA_DcV2SettingsCatalog": false,
             "EnableMultiAdminApprovalForDeviceCleanupRules": true,
             "authonlyapp": true
         }
@@ -612,8 +612,8 @@
             "EnableMAA_AccessPolicy_CompliancePolicyUX": true,
             "EnableMAA_CompliancePolicyUX": true,
             "EnableMAA_ComplianceSettings": true,
-            "EnableMAA_ConfigurationPolicy": true,
-            "EnableMAA_DcV2SettingsCatalog": true,
+            "EnableMAA_ConfigurationPolicy": false,
+            "EnableMAA_DcV2SettingsCatalog": false,
             "EnableMAA_DeviceCleanupRules": true
         }
     },

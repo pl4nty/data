@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260330.10.0",
+        "CalendarCompanionDFVersion": "1.20260331.10.0",
         "CalendarCompanionMsitVersion": "1.20260325.9.0",
         "CalendarCompanionProdVersion": "1.20260321.4.0",
         "CompanionRing": "Prod",
@@ -302,7 +302,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260317.1.0",
+        "LpcVersion": "1.20260323.1.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1844,6 +1844,7 @@
         "getLokiConfigFromHost_shared": true,
         "hostFeatureFlags_shared": true,
         "hostTrySuspend_shared": 1,
+        "logEnabledFeatureFlags": 1,
         "logSuspensionMemorySnapshots": 1,
         "lokiConfigMgrAsync": 1,
         "noResultToCopilotHandoff_shared": 1,
@@ -1975,10 +1976,10 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260329.7.0",
-        "PeopleInTaskbarMsitVersion": "1.20260322.2.0",
+        "PeopleInTaskbarDFVersion": "1.20260331.10.0",
+        "PeopleInTaskbarMsitVersion": "1.20260325.9.0",
         "PeopleInTaskbarProdVersion": "1.20260311.10.0",
-        "PeopleInTaskbarVersion": "1.20260311.10.0",
+        "PeopleInTaskbarVersion": "1.20260318.9.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
