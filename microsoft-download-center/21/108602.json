@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "591.59-data-center-tesla-desktop-win10-win11-64bit-dch-international",
+    "downloadDescription": "[Windows] CUDA 13.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "591.59-data-center-tesla-desktop-win10-win11-64bit-dch-international.exe",
+            "url": "https://download.microsoft.com/download/8920fc6c-3546-458b-99d9-647c4e8621a4/591.59-data-center-tesla-desktop-win10-win11-64bit-dch-international.exe",
+            "size": "737076976",
+            "version": "591.59",
+            "datePublished": "4/1/2026 10:46:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "[Windows] CUDA 13.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "591.59",
+    "detailsSection_file_name": [
+        "591.59-data-center-tesla-desktop-win10-win11-64bit-dch-international.exe"
+    ],
+    "detailsSection_file_size": [
+        "702.9 MB"
+    ],
+    "detailsSection_file_date": "4/1/2026",
+    "systemRequirementsSection": "win10/11; winsvr 2022/2025",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "see https://learn.microsoft.com/en-us/azure/virtual-machines/windows/n-series-driver-setup",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108602",
+    "downloadPreload": true
+}
