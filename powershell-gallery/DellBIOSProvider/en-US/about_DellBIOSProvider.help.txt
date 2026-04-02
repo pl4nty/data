@@ -20,9 +20,8 @@ DRIVES
 	DellSmbios:
 
 NEW FEATURES
-	DCPP 2.10.0 includes the following new features.
-	-- Removed unsupported attributes MemRSA, CpuRSA and PcieRSA
-	-- Added Support for AMD Platforms.
+	DCPP 2.10.1 includes the following new features.
+	-- Improved performance and increased system stability.
 
 RUNTIME REQUIREMENTS
 	1. PowerShell 3.0 or later
