@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 33161820,
-    "file_count": 4037
+    "size": 33181709,
+    "file_count": 4036
   },
   {
     "name": "boringssl",
-    "size": 76594,
+    "size": 76757,
     "file_count": 15
   },
   {
@@ -491,7 +491,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292349,
+    "size": 292601,
     "file_count": 47
   },
   {
@@ -500,13 +500,8 @@
     "file_count": 8
   },
   {
-    "name": "microsoft_information_protection",
-    "size": 16025306,
-    "file_count": 18
-  },
-  {
     "name": "microsoft_pdf",
-    "size": 19543019,
+    "size": 19564523,
     "file_count": 19
   },
   {
@@ -596,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4239645,
+    "size": 4239785,
     "file_count": 599
   },
   {
@@ -796,7 +791,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29933796,
+    "size": 29935719,
     "file_count": 629
   },
   {
