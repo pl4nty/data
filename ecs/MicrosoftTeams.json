@@ -34,6 +34,8 @@
         "isEUTenant": false,
         "myAvatarsUrl": "https://substrate.office.com/imageb2/v1.0/me/avatars",
         "sessionsUrl": "https://sessions.mesh.cloud.microsoft",
+        "signalRCustomization": 1,
+        "signalREvent": 1,
         "worldsUrl": "https://global.worlds.mesh.cloud.microsoft"
     },
     "M365HubConfiguration": {
