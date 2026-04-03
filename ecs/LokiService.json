@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260331.10.0",
+        "CalendarCompanionDFVersion": "1.20260401.9.0",
         "CalendarCompanionMsitVersion": "1.20260325.9.0",
         "CalendarCompanionProdVersion": "1.20260321.4.0",
         "CompanionRing": "Prod",
@@ -1825,7 +1825,6 @@
             ]
         },
         "copilotAppHandoff_shared": true,
-        "copilotHandoffFree_shared": true,
         "enableBackgroundAuthOnHost_shared": 1,
         "enableCheckCompanionLicense_shared": true,
         "enableCheckCopilotLicense_shared": true,
