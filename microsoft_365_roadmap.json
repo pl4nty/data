@@ -1,5 +1,274 @@
 [
     {
+        "created": "2026-04-02T23:15:15",
+        "description": "AI and IT admins in Microsoft Admin Center can 1) gain visibility around oversharing risks and drive remediations 2) Understand how much of sensitive copilot interactions are protected and turn on Purview DLP for M365 Copilot right from there. Enables secure adoption of Copilot.",
+        "id": 559617,
+        "locale": null,
+        "modified": "2026-04-02T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Purview in Microsoft Admin Center"
+    },
+    {
+        "created": "2026-04-02T23:15:15",
+        "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
+        "id": 559611,
+        "locale": null,
+        "modified": "2026-04-02T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Annotations on Teams Single Window Sharing on macOS"
+    },
+    {
+        "created": "2026-04-02T23:15:15",
+        "description": "Viva Glint admins will be able to manage an exclusion list in Viva Feature Access Management that prevents selected people and groups from being included in Viva Insights data shared with Viva Glint. This simplifies configuration and helps organizations apply consistent, privacy-conscious controls for the integration.",
+        "id": 559266,
+        "locale": null,
+        "modified": "2026-04-02T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Viva Glint and Viva Insights Integration - Exclusion List for data sharing"
+    },
+    {
+        "created": "2026-04-02T23:15:15",
+        "description": "With Purview enabled in Microsoft Foundry, Purview admins can setup inline DLP policies to prompts on Foundry built apps and agents to ensure data loss prevention of sensitive data.  ",
+        "id": 558565,
+        "locale": null,
+        "modified": "2026-04-02T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Inline DLP for Prompts for Microsoft Foundry apps and agents "
+    },
+    {
+        "created": "2026-04-02T23:15:15",
+        "description": "Block External Domain/User action in Microsoft Purview DLP for SharePoint and OneDrive, gives organizations stronger control over who can access sensitive files. With this enhancement, admins can configure DLP policies that block file access for specific external domains or individual users. This capability helps prevent unintended exposure by external users and supports enterprise compliance requirements.",
+        "id": 557191,
+        "locale": null,
+        "modified": "2026-04-02T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 Block External Domain/User action in DLP for SharePoint/OneDrive"
+    },
+    {
         "created": "2026-04-01T23:15:50",
         "description": "Skills allow extensibility of the SharePoint AI Agent, enabling customizable solutions that adapt to unique business needs. They address gaps in out-of-the-box functionality for unique business processes and enable reusable multi-step workflows. ",
         "id": 559800,
@@ -59,7 +328,7 @@
         "description": "Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences.",
         "id": 559605,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -68,6 +337,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -95,6 +373,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -254,7 +541,7 @@
         "description": "Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.",
         "id": 558341,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -287,6 +574,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -323,6 +613,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -1459,15 +1752,15 @@
     },
     {
         "created": "2026-03-27T22:15:31",
-        "description": "You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking, streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.",
+        "description": "This item is cancelled as a duplicate of 558287. We are sorry for any inconvenience it may cause. You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking, streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.",
         "id": 558287,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -6619,9 +6912,9 @@
         "description": "We are bringing a set of new Copilot metrics including actions taken in Microsoft 365 Copilot app, Edge and OneNote, and more key use cases across Outlook, Word, Excel, and PowerPoint including suggested reply, translate, coach, clean data and more. This will empower customers to more deeply understand the key Copilot adoption cases in Copilot Dashboard and Advanced Analysis in Viva Insights. ",
         "id": 557981,
         "locale": null,
-        "modified": "2026-03-02T23:45:11",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10026,7 +10319,7 @@
         "description": "You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.  ",
         "id": 557168,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -10035,6 +10328,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Android"
@@ -10050,6 +10349,12 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -10239,12 +10544,12 @@
         "description": "When you return to a conversation within a short duration of time, your selected tab, opened side panel, and layout are restored automatically, so you can keep working without resetting your workspace. In addition, returning to a Quick View within a short duration will restore your previously selected message. ",
         "id": 557184,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14357,12 +14662,12 @@
         "description": "We are introducing a new Microsoft Purview RBAC role\u2014Purview Agent Deployment\u2014and adding it to various existing built in role groups used by analysts and admins across Purview. This change enables users who use built-in role analyst groups to deploy Security Copilot Agents in Purview without needing any additional roles. If your organization prefers to limit agent deployment permissions, you can create a custom role group that does not include the Purview Agent Deployment role and assign that custom role group to analysts who should not be able to deploy agents. This update does not change default data access or expand visibility into customer content. All other permissions within each role group remain unchanged. Analysts who are assigned to custom role groups will not be able to deploy agents unless the Purview Agent Deployment role is explicitly added to those custom groups. We recommend reviewing and updating your organization\u2019s RBAC documentation, internal processes, or onboarding guides to reflect these change We recommend reviewing and updating your organization\u2019s RBAC documentation, internal processes, or onboarding guides to reflect these changes.",
         "id": 551147,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20352,10 +20657,10 @@
     },
     {
         "created": "2025-12-16T00:15:28",
-        "description": "Teams meeting Notes, powered by Loop, are now available for instant calls and meetings, like those started from \u2018Meet now\u2019 and calls started from chat. Notes are Loop components in Teams meetings and chats that allow end users to co-create and collaborate on their meeting agenda, notes, and action items that can be co-authored and edited by everyone. Since Notes are Loop components, they stay in sync across all the places they have been shared. Once added, meeting notes can also be shared and edited in the Loop app in your web browser.",
+        "description": "Teams meeting Notes, powered by Loop, are now available for instant meetings that started via \u2018Meet now\u2019 from the calendar. Notes are Loop components in Teams meetings and chats that allow end users to co-create and collaborate on their meeting agenda, notes, and action items that can be co-authored and edited by everyone. Since Notes are Loop components, they stay in sync across all the places they have been shared. Once added, meeting notes can also be shared and edited in the Loop app in your web browser.",
         "id": 541831,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -26571,9 +26876,9 @@
         "description": "Stay on top of your inbox with the new Copilot voice experience in the Outlook mobile app. Copilot starts by summarizing your most recent unread emails and then suggests actions like flagging, pinning, archiving, deleting or drafting a reply \u2013 all without the hassle of navigating your inbox by hand. You can interrupt or redirect Copilot at any point in the conversation. ",
         "id": 516575,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26751,10 +27056,10 @@
     },
     {
         "created": "2025-11-18T17:15:10",
-        "description": "Planner Agent will now be available for M365 Copilot licensed users in all Planner plans, including basic plans.",
+        "description": "Planner Agent will now be available for M365 Copilot licensed users in all group-based Planner plans, including basic plans.",
         "id": 511820,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "March CY2025",
@@ -26826,7 +27131,7 @@
                 }
             ]
         },
-        "title": "Planner: Planner Agent in basic plans"
+        "title": "Planner: Planner Agent in group-based basic plans"
     },
     {
         "created": "2025-11-18T17:15:10",
@@ -29892,9 +30197,9 @@
         "description": "Popular graph connector prompts will now be available in the Prompt Gallery for use in Copilot Chat.",
         "id": 501448,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40921,12 +41226,12 @@
         "description": "Admins can create custom Model Context Protocol (MCP) connectors in the Microsoft 365 Admin Centre and deploy them across Microsoft 365. This will allow admins to surface their organization's custom data in Microsoft 365 Copilot via these MCP-based connectors.",
         "id": 501585,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49101,12 +49406,12 @@
         "description": "Voice in Microsoft 365 Copilot brings a natural, hands-free conversational experience to your desktop and mobile devices \u2013 enabling you to talk to Copilot like a colleague, unlocking a faster, more intuitive way to work. Speak directly to M365 Copilot to search for information, catch up between meetings, brainstorm out loud, and do it all in multiple languages.",
         "id": 481138,
         "locale": null,
-        "modified": "2025-10-06T23:00:40",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -110455,10 +110760,10 @@
         "description": "This release will extend OCR support from standalone images (JPEG, JPG, PNG, BMP, TIFF, and PDF) to images embedded inside the following files and file types: Office files (XLSX, DOCX, PPTX), container files (zip, rar, 7z, and more), and PDF files. Image-only PDF files are already supported, and this this release will support hybrid PDF files containing images and searchable text.",
         "id": 381750,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-04-02T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
