@@ -7,7 +7,7 @@
 
 do
   if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8 = nil
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9 = nil
   end
   -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
 
@@ -30,9 +30,14 @@ do
     end
     -- DECOMPILER ERROR at PC53: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
+    if l_0_0:find("bflinfsccm03.bfl.com\\.+\\smstsvc") then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC61: Confused about usage of register: R0 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC65: Confused about usage of register: R0 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC66: Confused about usage of register: R0 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC73: Confused about usage of register: R0 in 'UnsetPending'
 
     if l_0_0:find("\\\\.+\\c%$\\") or l_0_0:find("\\\\.+\\admin%$\\") then
       (bm.add_threat_file)(l_0_0)
