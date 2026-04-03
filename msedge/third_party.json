@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33205374,
-    "file_count": 4037
+    "size": 33206358,
+    "file_count": 4035
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16205610,
+    "size": 16203698,
     "file_count": 1953
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4246409,
+    "size": 4248034,
     "file_count": 600
   },
   {
@@ -691,7 +691,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 549154,
+    "size": 549700,
     "file_count": 15
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7440118,
+    "size": 7433327,
     "file_count": 193
   },
   {
