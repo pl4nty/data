@@ -63,6 +63,7 @@ define([
             this.firstPostOobeCategoryIndex = -1;
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities();
             this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging();
+            this.AUTOPILOT_FWT_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotFastWindowsTelemetry");
             this.onBatteryReportUpdatedHandler = this.batteryReportUpdatedOnHololens.bind(this);
 
             this.syncFailTimeoutInMilliseconds = 60 * 60 * 1000;
@@ -259,6 +260,15 @@ define([
             WinJS.Promise.join(categoryUiContainerInitializationPromises).then(() => {
                 return this.waitForDebuggerAttachment();
             }).then(() => {
+                if (this.AUTOPILOT_FWT_ENABLED) {
+                    this.fwtPageStartTime = Date.now();
+                    this.autopilotLogger.reportFwtEventAsync(
+                        this.commercialDiagnosticsUtilities.FWT_EVENT_ESP_PAGE_START,
+                        true,  // status
+                        0,     // errorCode
+                        0);    // durationMs
+                }
+
                 return bridge.invoke("CloudExperienceHost.Storage.SharableData.getValue", this.RETURNED_FROM_DIAGNOSTICS_PAGE_FLAG_NAME);
             }).then((flag) => {
                 if (this.RETURNED_FROM_DIAGNOSTICS_PAGE_FLAG_VALUE !== flag) {
@@ -858,6 +868,15 @@ define([
         }
 
         exitPage() {
+            if (this.AUTOPILOT_FWT_ENABLED) {
+                let durationMs = this.fwtPageStartTime ? (Date.now() - this.fwtPageStartTime) : 0;
+                this.autopilotLogger.reportFwtEventAsync(
+                    this.commercialDiagnosticsUtilities.FWT_EVENT_ESP_PAGE_END,
+                    this.provisioningCompleted,  // status
+                    0,                           // errorCode
+                    durationMs);
+            }
+
             if (this.isLiteWhitePersonality()) {
                 this.subheaderText(this.resourceStrings["BootstrapPageStatusSuccess"]);
             }
@@ -920,6 +939,17 @@ define([
                 "CommercialOOBE_ESPProgress_Category_Started",
                 `BootstrapStatus: Starting category ${this.categoryUiContainers[this.currentCategoryIndex].getId()}...`);
 
+            let fwtCategoryStartTime = 0;
+            if (this.AUTOPILOT_FWT_ENABLED) {
+                let currentCategoryId = this.categoryUiContainers[this.currentCategoryIndex].getId();
+                fwtCategoryStartTime = Date.now();
+                this.autopilotLogger.reportFwtEventAsync(
+                    this.commercialDiagnosticsUtilities.FWT_EVENT_ESP_PHASE_PREFIX + currentCategoryId,
+                    true,  // status (starting)
+                    0,     // errorCode
+                    0);    // durationMs
+            }
+
             if (this.currentCategoryIndex === this.firstPostOobeCategoryIndex) {
                 previousCategorySucceeded = true;
             }
@@ -940,9 +970,24 @@ define([
                     }).then(() => {
                         return this.categoryUiContainers[this.currentCategoryIndex].startActionsAsync(previousCategorySucceeded, tryingAgain).then(
                             (previousCategorySucceeded) => {
-                                this.commercialDiagnosticsUtilities.logInfoEvent(
-                                    previousCategorySucceeded? "CommercialOOBE_ESPProgress_Category_Success" : "CommercialOOBE_ESPProgress_Category_Failed",
-                                    `BootstrapStatus: Category ${this.categoryUiContainers[this.currentCategoryIndex].getId()} ${previousCategorySucceeded ? "succeeded" : "failed"}.`);
+                                if (this.AUTOPILOT_FWT_ENABLED) {
+                                    let currentCategoryId = this.categoryUiContainers[this.currentCategoryIndex].getId();
+                                    let durationMs = fwtCategoryStartTime ? (Date.now() - fwtCategoryStartTime) : 0;
+
+                                    this.commercialDiagnosticsUtilities.logInfoEvent(
+                                        previousCategorySucceeded? "CommercialOOBE_ESPProgress_Category_Success" : "CommercialOOBE_ESPProgress_Category_Failed",
+                                        `BootstrapStatus: Category ${currentCategoryId} ${previousCategorySucceeded ? "succeeded" : "failed"}.`);
+
+                                    this.autopilotLogger.reportFwtEventAsync(
+                                        this.commercialDiagnosticsUtilities.FWT_EVENT_ESP_PHASE_PREFIX + currentCategoryId,
+                                        previousCategorySucceeded,
+                                        0,          // errorCode
+                                        durationMs);
+                                } else {
+                                    this.commercialDiagnosticsUtilities.logInfoEvent(
+                                        previousCategorySucceeded? "CommercialOOBE_ESPProgress_Category_Success" : "CommercialOOBE_ESPProgress_Category_Failed",
+                                        `BootstrapStatus: Category ${this.categoryUiContainers[this.currentCategoryIndex].getId()} ${previousCategorySucceeded ? "succeeded" : "failed"}.`);
+                                }
 
                                 this.currentCategoryIndex++;
                                 return this.runOneCategory(previousCategorySucceeded, tryingAgain);
@@ -953,6 +998,17 @@ define([
                                     "CommercialOOBE_ESPProgress_StartActionsAsync_Failed",
                                     "BootstrapStatus: startActionAsync failed",
                                     e);
+
+                                if (this.AUTOPILOT_FWT_ENABLED) {
+                                    let currentCategoryId = this.categoryUiContainers[this.currentCategoryIndex].getId();
+                                    let durationMs = fwtCategoryStartTime ? (Date.now() - fwtCategoryStartTime) : 0;
+                                    let errorCode = e.number ? e.number : 0;
+                                    this.autopilotLogger.reportFwtEventAsync(
+                                        this.commercialDiagnosticsUtilities.FWT_EVENT_ESP_PHASE_PREFIX + currentCategoryId,
+                                        false,      // status
+                                        errorCode,
+                                        durationMs);
+                                }
                             });
                     });
             });

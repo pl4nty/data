@@ -38,6 +38,7 @@ define([
 
             this.AUTOPILOT_RESILIENCE_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppResilience");
             this.AUTOPILOT_DPP_REBOOT_CHANGES_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppRebootFix");
+            this.AUTOPILOT_FWT_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotFastWindowsTelemetry");
             this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID = "DppOptionPolicy:7273";
 
             this.AUTOPILOT_DEVICE_PREPARATION_UTILITIES_INSTANCENAME = "autopilotDevicePreparationUtilitiesInstance";
@@ -151,11 +152,21 @@ define([
             this.sessionUtilities = sessionUtilities;
             this.commercialDiagnosticsUtilities = new commercialDiagnosticsUtilities(this.sessionUtilities);
 
-            if (this.AUTOPILOT_RESILIENCE_ENABLED) {
-                this.listenerFailedCount = 0;
+            if (this.AUTOPILOT_FWT_ENABLED) {
+                this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging();
+                
+                if (this.AUTOPILOT_RESILIENCE_ENABLED) {
+                    this.listenerFailedCount = 0;
+                } else {
+                    this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
+                }
             } else {
-                this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging(); // Note: not used anywhere
-                this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
+                if (this.AUTOPILOT_RESILIENCE_ENABLED) {
+                    this.listenerFailedCount = 0;
+                } else {
+                    this.autopilotLogger = new ModernDeployment.Autopilot.Core.AutopilotLogging(); // Note: not used anywhere
+                    this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
+                }
             }
 
             this.autopilotDevicePreparationUtilities = new ModernDeployment.Autopilot.Core.AutopilotDevicePreparationUtilities();
@@ -312,9 +323,18 @@ define([
 
 
             let initializationPromise = this.waitForDebuggerAttachmentAsync().then(() => {
-                return this.logTsmProcessStartAsync(this.TSM_STATE_PAGE_START, "").then(() => {
-                    return this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_INITIALIZATION_START, "");
-                })
+                if (this.AUTOPILOT_FWT_ENABLED) {
+                    this.fwtPageStartTime = Date.now();
+                    return this.autopilotLogger.reportFwtEventAsync(this.commercialDiagnosticsUtilities.FWT_EVENT_DPP_PAGE_START, true, 0, 0).then(() => {
+                        return this.logTsmProcessStartAsync(this.TSM_STATE_PAGE_START, "").then(() => {
+                            return this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_INITIALIZATION_START, "");
+                        });
+                    });
+                } else {
+                    return this.logTsmProcessStartAsync(this.TSM_STATE_PAGE_START, "").then(() => {
+                        return this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_INITIALIZATION_START, "");
+                    });
+                }
             }).then(() => {
                 if (this.AUTOPILOT_RESILIENCE_ENABLED) {
                     return this.checkDppFlightOptionForResilienceAsync();
@@ -1225,6 +1245,16 @@ define([
                 let bitlockerDeferralEnabled = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotBitlockerOobeDeferral");
                 if (bitlockerDeferralEnabled) {
                     this.sessionUtilities.signalBitlockerProvisioningComplete(3); 
+                }
+
+                if (this.AUTOPILOT_FWT_ENABLED) {
+                    let succeeded = (devicePrepPageStatus === ModernDeployment.Autopilot.Core.DevicePreparationPageStatus.exitedOnSuccess);
+                    let durationMs = this.fwtPageStartTime ? (Date.now() - this.fwtPageStartTime) : 0;
+                    await this.autopilotLogger.reportFwtEventAsync(
+                        this.commercialDiagnosticsUtilities.FWT_EVENT_DPP_PAGE_END,
+                        succeeded,
+                        0,          // errorCode
+                        durationMs);
                 }
 
                 await this.transitionToSuccessPageAsync(CloudExperienceHost.Events.done, this.PAGE_TRANSITION_POST_DPP_SUCCESS_PAGE);

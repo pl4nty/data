@@ -17,6 +17,12 @@ define(['legacy/bridge'], (bridge) => {
 
             this.EXPORT_LOGS_REMOVABLE_DRIVE_SETTING = "ESP.AutomaticallyExportLogsToRemovableDrive";
 
+            this.FWT_EVENT_DPP_PAGE_START = "WindowsAutopilot.Telemetry.EarlyBoot.DPP.PageStart";
+            this.FWT_EVENT_DPP_PAGE_END   = "WindowsAutopilot.Telemetry.EarlyBoot.DPP.PageEnd";
+            this.FWT_EVENT_ESP_PAGE_START  = "WindowsAutopilot.Telemetry.EarlyBoot.ESP.PageStart";
+            this.FWT_EVENT_ESP_PAGE_END    = "WindowsAutopilot.Telemetry.EarlyBoot.ESP.PageEnd";
+            this.FWT_EVENT_ESP_PHASE_PREFIX = "WindowsAutopilot.Telemetry.EarlyBoot.ESP.Phase.";
+
             this.sessionUtilities = sessionUtilities;
         }
 

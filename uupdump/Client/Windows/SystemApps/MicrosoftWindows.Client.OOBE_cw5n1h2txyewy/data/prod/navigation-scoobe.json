@@ -459,23 +459,6 @@
             "visibility": false
         }
     },
-    "SCOOBEM365RENEWAL": {
-        "irisPlacementId": "88000709",
-        "start": "PlaceholderSkipNode",
-        "msaTicketContext": "OOBE",
-        "notifyOnFirstVisible": true,
-        "initializeExternalModalRects": true,
-        "useBackstackForBackNavigation": true,
-        "frameName": "oobe-frame",
-        "personality": "CloudExperienceHost.Personality.LiteWhite",
-        "PlaceholderSkipNode": {
-            "cxid": "PlaceholderSkipNode",
-            "launcher": "js:OobeSkipNode",
-            "canExitCxh": true,
-            "disableErrorPageOnFailure": true,
-            "visibility": false
-        }
-    },
   "SCOOBESUBSRENEWAL": {
     "irisPlacementId": "88001131",
     "start": "PlaceholderSkipNode",
