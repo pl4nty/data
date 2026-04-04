@@ -5,11 +5,14 @@
 -- function num : 0
 local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_2 = l_0_1:sub(-3)
-local l_0_3 = "ps1|dll|sm1|xml|txt|bak"
+local l_0_3 = "ps1|dll|sm1|xml|txt|bak|pkg|log|spl"
 if l_0_3:find(l_0_2, 1, true) then
   return mp.CLEAN
 end
 if l_0_0:match("users\\.-\\appdata\\local\\temp") then
+  return mp.CLEAN
+end
+if l_0_0:match("microsoft\\office\\solutionpackages") then
   return mp.CLEAN
 end
 local l_0_4 = ExtractDeviceProperties()
