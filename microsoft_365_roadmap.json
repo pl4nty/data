@@ -69037,73 +69037,6 @@
     },
     {
         "created": "2025-04-25T22:15:45",
-        "description": "We will modernize the existing email subscription management experience in Viva Engage to make it more user-friendly and intuitive. Previously, unsubscribe and notification settings links in emails opened legacy web pages with limited functionality. After this update, those links will direct users to refreshed, modern pages where they can easily manage their email preferences. Users will be able to unsubscribe or resubscribe to specific email types in a cleaner and more accessible experience. ",
-        "id": 489829,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Modernized Viva Engage Email Subscription Management"
-    },
-    {
-        "created": "2025-04-25T22:15:45",
         "description": "IT administrators will now have the ability to access detailed logs for both the \"Give and Take Control\" and \"Screenshare\" features. These logs will provide comprehensive information, including the names and timestamps of the individuals involved in each action. Specifically, the logs will indicate who initiated or received control, as well as who started the screenshare session, along with the corresponding timestamps and names. This enhancement ensures greater transparency and accountability for all control and screenshare activities. Accessible in Teams Admin Centre. ",
         "id": 489224,
         "locale": null,
@@ -81092,104 +81025,6 @@
     },
     {
         "created": "2025-03-21T23:15:06",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be only able to add folders from a .pst file to Favorites. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
-        "id": 485754,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Add folders from a .pst file to Favorites in new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-21T23:15:06",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be only able to add folders from a .pst file to Favorites. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
-        "id": 485753,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Add folders from a .pst file to Favorites in new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-21T23:15:06",
         "description": "This feature allows Microsoft 365 administrators to enable Microsoft 365 certified SaaS applications within their tenant through org-wide settings for third-party apps.\u00a0Admins can choose to allow a subset of applications that have already been verified against industry security and compliance standards. This ensures organizations can confidently adopt apps while maintaining governance and reducing approval overhead.",
         "id": 485712,
         "locale": null,
@@ -81419,67 +81254,6 @@
             ]
         },
         "title": "Outlook: Move to in the pop-out ribbon in New Outlook and Outlook for Web"
-    },
-    {
-        "created": "2025-03-21T23:15:06",
-        "description": "Easily organize your inbox with quick-access category shortcuts! The shortcuts you loved in Classic Outlook will be available in the new Outlook for Windows, making it easier than ever to categorize emails. #newoutlookforwindows",
-        "id": 483508,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Category Shortcuts in the New Outlook for Windows"
     },
     {
         "created": "2025-03-21T23:15:06",
@@ -84754,61 +84528,6 @@
     },
     {
         "created": "2025-03-07T23:15:12",
-        "description": "Easily organize your inbox with quick-access category shortcuts! The shortcuts you loved in classic Outlook for Windows will be available in the new Outlook for Windows, making it easier than ever to categorize emails. #newoutlookforwindows",
-        "id": 483507,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Category Shortcuts in the New Outlook for Windows"
-    },
-    {
-        "created": "2025-03-07T23:15:12",
         "description": "Now users will be able to view ratings when they view apps within the in-context store in teams.",
         "id": 483506,
         "locale": null,
@@ -87490,55 +87209,6 @@
         "title": "OneDrive: OneDrive files as knowledge sources for agents"
     },
     {
-        "created": "2025-02-24T20:30:39",
-        "description": "Copilot generated summary provides an overview of the details and outcomes of transferred calls. It includes information such as the caller's details, the reason for the transfer, and the final resolution.",
-        "id": 475855,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Copilot generated summaries for call transfers on Teams phone devices"
-    },
-    {
         "created": "2025-02-24T18:30:16",
         "description": "Declarative Agents have already rolled out to Microsoft 365 Copilot chat, with this update we will be adding support for the same set of agents in Copilot chat in Outlook too. #newoutlookforwindows",
         "id": 481558,
@@ -87879,55 +87549,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Audio summary of your file "
-    },
-    {
-        "created": "2025-02-21T00:15:07",
-        "description": "The Pro Management service and admin portal is now available for GCC High customer tenants.",
-        "id": 482187,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: GCC High support in Teams Rooms Pro Management"
     },
     {
         "created": "2025-02-21T00:15:07",
@@ -93179,67 +92800,6 @@
     },
     {
         "created": "2025-01-17T00:00:53",
-        "description": "Teams Webinars are now available for the DoD community. DoD users can now schedule webinar instances with internal audiences, and leverage capabilities such as creation of an event page, attendee registration, automated emails, and more.",
-        "id": 475279,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Webinars in DoD"
-    },
-    {
-        "created": "2025-01-17T00:00:53",
         "description": "SharePoint OCR feature now extends support to Microsoft Office files. Previously, OCR was limited to PDFs and images but with this update, you can seamlessly extract and utilize text from any embedded images within any Microsoft Office files like Word, PowerPoint, and Excel.",
         "id": 475248,
         "locale": null,
@@ -93646,55 +93206,6 @@
             ]
         },
         "title": "Windows 365: Resize is enabled for Windows 365 Frontline Cloud PCs"
-    },
-    {
-        "created": "2025-01-10T23:15:46",
-        "description": "Python in Excel allows you to bring the capabilities of Python directly into the Excel grid. As a part of this feature, users with access to Excel for Windows will be able to add Python formulas directly into their workbooks without any installation required. These Python formulas will be run by Excel in a secure container on the Microsoft Cloud with enterprise-level security as a compliant Microsoft 365 connected experience.",
-        "id": 475046,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Excel: Python in Excel for GCC"
     },
     {
         "created": "2025-01-10T23:15:46",
@@ -99037,73 +98548,6 @@
         "title": "OneNote: Boost productivity using voice with Copilot on OneNote Mobile (iPhone)"
     },
     {
-        "created": "2024-09-17T23:30:46",
-        "description": "Call delegators and their delegates can now view shared call history records for the shared line directly on their Teams phone devices. This enhancement promotes greater transparency and collaboration. All delegates associated with a user will be able to monitor incoming and outgoing calls for the shared line, irrespective of their participation in the call.",
-        "id": 416292,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Shared call history for call delegation on Teams phone devices"
-    },
-    {
         "created": "2024-09-04T23:30:32",
         "description": "We are introducing flexibility on provider setup form where admins can sync data from specific dates for a provider instead of full data sync.",
         "id": 414523,
@@ -100047,61 +99491,6 @@
             ]
         },
         "title": "Outlook: Insert signature into calendar events"
-    },
-    {
-        "created": "2024-11-19T18:30:19",
-        "description": "Data Security analytics will serve as a launchpad for administrators, enabling them to swiftly navigate day-to-day tasks. It will provide a comprehensive overview of an organization\u2019s sensitive data landscape, visibility into potential risks, and offer contextual recommendations to strengthen the organization's data security posture. The Data Security Copilot will serve as an intelligent AI assistant layered on top of data security analytics, supporting tasks related to administration, risk assessment, alert triage, and reporting. \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 420941,
-        "locale": null,
-        "modified": "2025-06-03T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "December CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Data Security Analytics "
     },
     {
         "created": "2024-10-04T23:15:50",
