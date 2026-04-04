@@ -257,40 +257,52 @@ if l_0_4.DeviceRoles then
                 l_0_12[R24_PC375] = tostring(l_0_29)
               end
               do
-                local l_0_30 = l_0_28
                 -- DECOMPILER ERROR at PC382: Overwrote pending register: R24 in 'AssignReg'
 
-                R24_PC375 = R24_PC375(l_0_14, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 5)
-                local l_0_31, l_0_32 = nil
-                if not l_0_32 or not l_0_14 then
-                  local l_0_33 = nil
-                  l_0_12.Parent = "Untracked"
-                else
-                  do
+                -- DECOMPILER ERROR at PC384: Overwrote pending register: R24 in 'AssignReg'
+
+                local l_0_30, l_0_31 = l_0_28, pcall(R24_PC375, l_0_14, MpCommon.WTSClientName)
+                if l_0_31 and R24_PC375 and R24_PC375 ~= "" then
+                  local l_0_32 = R24_PC375
+                  local l_0_33 = scrubData(R26_PC398)
+                  l_0_12[R26_PC398] = tostring(l_0_33)
+                end
+                do
+                  local l_0_34 = l_0_32
+                  -- DECOMPILER ERROR at PC405: Overwrote pending register: R26 in 'AssignReg'
+
+                  R26_PC398 = R26_PC398(l_0_14, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
+                  local l_0_35, l_0_36 = nil
+                  if not l_0_36 or not l_0_14 then
+                    local l_0_37 = nil
+                    l_0_12.Parent = "Untracked"
+                  else
                     do
                       do
-                        -- DECOMPILER ERROR at PC396: Confused about usage of register: R25 in 'UnsetPending'
-
-                        l_0_12.Parent = l_0_33
-                        l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                        -- DECOMPILER ERROR at PC419: Overwrote pending register: R11 in 'AssignReg'
-
-                        l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
-                        -- DECOMPILER ERROR at PC432: Overwrote pending register: R11 in 'AssignReg'
-
-                        if l_0_10 then
-                          l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                          local l_0_34 = "EntryType"
-                          l_0_12[l_0_34] = "NewMarkerAndEntry"
-                        end
                         do
+                          -- DECOMPILER ERROR at PC419: Confused about usage of register: R27 in 'UnsetPending'
+
+                          l_0_12.Parent = l_0_37
+                          l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                          -- DECOMPILER ERROR at PC442: Overwrote pending register: R11 in 'AssignReg'
+
+                          l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
+                          -- DECOMPILER ERROR at PC455: Overwrote pending register: R11 in 'AssignReg'
+
+                          if l_0_10 then
+                            l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                            local l_0_38 = "EntryType"
+                            l_0_12[l_0_38] = "NewMarkerAndEntry"
+                          end
                           do
-                            if not l_0_10 then
-                              l_0_12.Error = l_0_11
+                            do
+                              if not l_0_10 then
+                                l_0_12.Error = l_0_11
+                              end
+                              set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_12), false)
+                              do return mp.INFECTED end
+                              return mp.CLEAN
                             end
-                            set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_12), false)
-                            do return mp.INFECTED end
-                            return mp.CLEAN
                           end
                         end
                       end

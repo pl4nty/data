@@ -45,14 +45,21 @@ if l_0_4.DeviceRoles then
           end
           local l_0_18, l_0_19 = pcall(MpCommon.QuerySessionInformation, l_0_5, MpCommon.WTSClientAddress)
           do
+            if l_0_18 and l_0_19 and l_0_19 ~= "" then
+              local l_0_20 = scrubData(l_0_19)
+              l_0_6.IP = tostring(l_0_20)
+            end
+            local l_0_21, l_0_22 = pcall(MpCommon.QuerySessionInformation, l_0_5, MpCommon.WTSClientName)
             do
-              if l_0_18 and l_0_19 and l_0_19 ~= "" then
-                local l_0_20 = scrubData(l_0_19)
-                l_0_6.IP = tostring(l_0_20)
+              do
+                if l_0_21 and l_0_22 and l_0_22 ~= "" then
+                  local l_0_23 = scrubData(l_0_22)
+                  l_0_6.ClientName = tostring(l_0_23)
+                end
+                set_research_data("HVASessionInfo", safeJsonSerialize(l_0_6), false)
+                do return mp.INFECTED end
+                return mp.CLEAN
               end
-              set_research_data("HVASessionInfo", safeJsonSerialize(l_0_6), false)
-              do return mp.INFECTED end
-              return mp.CLEAN
             end
           end
         end

@@ -40,16 +40,26 @@ do
           R11_PC83 = R11_PC83(scrubData(R11_PC83))
           l_0_1.IP = R11_PC83
         end
-        local l_0_15 = l_0_14
-        R11_PC83 = R11_PC83(l_0_0, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
-        local l_0_16, l_0_17 = nil
-        if not l_0_17 or not l_0_0 then
-          l_0_1.Parent = "Untracked"
-        else
-          l_0_1.Parent = l_0_0
+        -- DECOMPILER ERROR at PC90: Overwrote pending register: R11 in 'AssignReg'
+
+        local l_0_15, l_0_16 = l_0_14, pcall(R11_PC83, l_0_0, MpCommon.WTSClientName)
+        do
+          if l_0_16 and R11_PC83 and R11_PC83 ~= "" then
+            local l_0_17 = R11_PC83
+            R13_PC103 = R13_PC103(scrubData(R13_PC103))
+            l_0_1.ClientName = R13_PC103
+          end
+          local l_0_18 = l_0_17
+          R13_PC103 = R13_PC103(l_0_0, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
+          local l_0_19, l_0_20 = nil
+          if not l_0_20 or not l_0_0 then
+            l_0_1.Parent = "Untracked"
+          else
+            l_0_1.Parent = l_0_0
+          end
+          set_research_data("HVASessionInfo", safeJsonSerialize(l_0_1), false)
+          return mp.INFECTED
         end
-        set_research_data("HVASessionInfo", safeJsonSerialize(l_0_1), false)
-        return mp.INFECTED
       end
     end
   end

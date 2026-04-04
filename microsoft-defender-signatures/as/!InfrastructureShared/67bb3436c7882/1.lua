@@ -42,15 +42,22 @@ if IsDeviceHVA() then
             end
             local l_0_11, l_0_12 = pcall(MpCommon.QuerySessionInformation, l_0_1, MpCommon.WTSClientAddress)
             do
+              if l_0_11 and l_0_12 and l_0_12 ~= "" then
+                local l_0_13 = scrubData(l_0_12)
+                l_0_3.IP = tostring(l_0_13)
+              end
+              local l_0_14, l_0_15 = pcall(MpCommon.QuerySessionInformation, l_0_1, MpCommon.WTSClientName)
               do
-                if l_0_11 and l_0_12 and l_0_12 ~= "" then
-                  local l_0_13 = scrubData(l_0_12)
-                  l_0_3.IP = tostring(l_0_13)
+                do
+                  if l_0_14 and l_0_15 and l_0_15 ~= "" then
+                    local l_0_16 = scrubData(l_0_15)
+                    l_0_3.ClientName = tostring(l_0_16)
+                  end
+                  ;
+                  (bm.add_related_string)("HVASessionInfo", safeJsonSerialize(l_0_3), bm.RelatedStringBMReport)
+                  do return mp.INFECTED end
+                  return mp.CLEAN
                 end
-                ;
-                (bm.add_related_string)("HVASessionInfo", safeJsonSerialize(l_0_3), bm.RelatedStringBMReport)
-                do return mp.INFECTED end
-                return mp.CLEAN
               end
             end
           end

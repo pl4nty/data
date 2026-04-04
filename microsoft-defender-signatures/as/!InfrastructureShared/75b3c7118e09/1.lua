@@ -41,16 +41,26 @@ if IsDeviceHVA() then
 
           local l_0_13, l_0_14 = l_0_12, pcall(R10_PC75, l_0_1, MpCommon.WTSClientAddress)
           do
+            if l_0_14 and R10_PC75 and R10_PC75 ~= "" then
+              local l_0_15 = R10_PC75
+              R12_PC95 = R12_PC95(scrubData(R12_PC95))
+              l_0_2.IP = R12_PC95
+            end
+            -- DECOMPILER ERROR at PC102: Overwrote pending register: R12 in 'AssignReg'
+
+            local l_0_16, l_0_17 = l_0_15, pcall(R12_PC95, l_0_1, MpCommon.WTSClientName)
             do
-              if l_0_14 and R10_PC75 and R10_PC75 ~= "" then
-                local l_0_15 = R10_PC75
-                R12_PC95 = R12_PC95(scrubData(R12_PC95))
-                l_0_2.IP = R12_PC95
+              do
+                if l_0_17 and R12_PC95 and R12_PC95 ~= "" then
+                  local l_0_18 = R12_PC95
+                  R14_PC115 = R14_PC115(scrubData(R14_PC115))
+                  l_0_2.ClientName = R14_PC115
+                end
+                ;
+                (bm.add_related_string)(R14_PC115, safeJsonSerialize(l_0_2), bm.RelatedStringBMReport)
+                do return mp.INFECTED end
+                return mp.CLEAN
               end
-              ;
-              (bm.add_related_string)(R12_PC95, safeJsonSerialize(l_0_2), bm.RelatedStringBMReport)
-              do return mp.INFECTED end
-              return mp.CLEAN
             end
           end
         end
