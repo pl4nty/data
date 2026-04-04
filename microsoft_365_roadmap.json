@@ -1,5 +1,78 @@
 [
     {
+        "created": "2026-04-03T22:15:57",
+        "description": "Recording and transcript owners can now grant recording and transcript access to specified people when copying or sharing recap link, and the specified people can access the recap without having to request access.",
+        "id": 559606,
+        "locale": null,
+        "modified": "2026-04-03T22:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Windows 10"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Windows 10"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Sharing recap access"
+    },
+    {
         "created": "2026-04-02T23:15:15",
         "description": "AI and IT admins in Microsoft Admin Center can 1) gain visibility around oversharing risks and drive remediations 2) Understand how much of sensitive copilot interactions are protected and turn on Purview DLP for M365 Copilot right from there. Enables secure adoption of Copilot.",
         "id": 559617,
@@ -65,7 +138,7 @@
         "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
         "id": 559611,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -76,13 +149,16 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
-                "tagName": "Desktop"
+                "tagName": "Mac"
             },
             {
                 "tagName": "Microsoft Teams"
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -93,7 +169,7 @@
             ],
             "platforms": [
                 {
-                    "tagName": "Desktop"
+                    "tagName": "Mac"
                 }
             ],
             "products": [
@@ -104,6 +180,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -218,10 +297,10 @@
         "description": "Block External Domain/User action in Microsoft Purview DLP for SharePoint and OneDrive, gives organizations stronger control over who can access sensitive files. With this enhancement, admins can configure DLP policies that block file access for specific external domains or individual users. This capability helps prevent unintended exposure by external users and supports enterprise compliance requirements.",
         "id": 557191,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -1752,10 +1831,10 @@
     },
     {
         "created": "2026-03-27T22:15:31",
-        "description": "This item is cancelled as a duplicate of 558287. We are sorry for any inconvenience it may cause. You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking, streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.",
+        "description": "This item is cancelled as a duplicate of 557168. We are sorry for any inconvenience it may cause. You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking, streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.",
         "id": 558287,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -20660,12 +20739,12 @@
         "description": "Teams meeting Notes, powered by Loop, are now available for instant meetings that started via \u2018Meet now\u2019 from the calendar. Notes are Loop components in Teams meetings and chats that allow end users to co-create and collaborate on their meeting agenda, notes, and action items that can be co-authored and edited by everyone. Since Notes are Loop components, they stay in sync across all the places they have been shared. Once added, meeting notes can also be shared and edited in the Loop app in your web browser.",
         "id": 541831,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25058,12 +25137,12 @@
         "description": "Declarative Agents have been enhanced to interpret and ground responses using images embedded in files such as Word documents (.docx), PowerPoint presentations (.pptx), and PDFs. This capability allows the agent to extract insights from visual elements like charts, diagrams, and screenshots, ensuring that answers are not only text-based but also informed by graphical context. By combining textual and visual understanding, Declarative Agents deliver more comprehensive and contextually accurate responses for complex queries.",
         "id": 531758,
         "locale": null,
-        "modified": "2025-11-21T00:00:57",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29775,12 +29854,12 @@
         "description": "Code interpreter runs on files you upload in your agent or that the user explicitly attaches in the interaction. Files that Copilot Chat finds via enterprise search can be now analyzed by code interpreter without the need to explicitly link or upload them.",
         "id": 519570,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35217,12 +35296,12 @@
         "description": "Outlook mobile users can now prepare for their meetings using Copilot chat in a single tap. This feature requires a Microsoft 365 Copilot license. ",
         "id": 516568,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37691,12 +37770,12 @@
         "description": "Users will find Copilot-powered Notebook summaries and insights as a landing page within their Copilot Notebook.",
         "id": 512430,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -74852,9 +74931,9 @@
         "description": "Access will add magnification slider (10% to 500%) in lower right of the application, similar to the feature in Word, PowerPoint, and Excel. It will also be keyboard accessible and available on the ribbon.",
         "id": 489227,
         "locale": null,
-        "modified": "2025-09-24T23:15:27",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -77426,9 +77505,9 @@
         "description": "Remove the 22-inch size limit and modernize Access forms and reports work well on large format monitors and provide responsive behavior for different form factors.",
         "id": 478926,
         "locale": null,
-        "modified": "2025-10-15T22:45:29",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -111468,10 +111547,10 @@
         "description": "Admins can perform a bulk replacement or removal of a retention label using the Purview compliance portal. They can perform the action across the entire tenant or targeted to specific content using KQL and static or adaptive scopes.",
         "id": 392456,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-04-03T22:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
