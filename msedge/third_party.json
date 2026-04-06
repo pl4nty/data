@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33196346,
+    "size": 33204991,
     "file_count": 4033
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16203698,
+    "size": 16220791,
     "file_count": 1953
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43915920,
-    "file_count": 3288
+    "size": 43920564,
+    "file_count": 3294
   },
   {
     "name": "googletest",
@@ -311,8 +311,8 @@
   },
   {
     "name": "icu",
-    "size": 162932129,
-    "file_count": 7200
+    "size": 162933108,
+    "file_count": 7201
   },
   {
     "name": "inference_engine",
@@ -471,7 +471,7 @@
   },
   {
     "name": "litert",
-    "size": 186530,
+    "size": 186992,
     "file_count": 67
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 56357,
+    "size": 56637,
     "file_count": 35
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perl",
-    "size": 186755607,
+    "size": 186755651,
     "file_count": 11896
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3480648,
+    "size": 3480606,
     "file_count": 1190
   },
   {
@@ -721,8 +721,8 @@
   },
   {
     "name": "tflite",
-    "size": 1721678,
-    "file_count": 534
+    "size": 1722694,
+    "file_count": 533
   },
   {
     "name": "tflite_support",
@@ -761,8 +761,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7433327,
-    "file_count": 193
+    "size": 7435537,
+    "file_count": 194
   },
   {
     "name": "vulkan_memory_allocator",

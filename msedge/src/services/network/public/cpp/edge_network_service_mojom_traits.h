@@ -16,16 +16,16 @@ struct EnumTraits<network::mojom::CircuitBreakerOpenMechanism,
                   network::CircuitBreakerOpenMechanism> {
   static network::mojom::CircuitBreakerOpenMechanism ToMojom(
       network::CircuitBreakerOpenMechanism input);
-  static bool FromMojom(network::mojom::CircuitBreakerOpenMechanism input,
-                        network::CircuitBreakerOpenMechanism* output);
+  static network::CircuitBreakerOpenMechanism FromMojom(
+      network::mojom::CircuitBreakerOpenMechanism input);
 };
 
 template <>
 struct EnumTraits<network::mojom::Mitigation, tracking_prevention::Mitigation> {
   static network::mojom::Mitigation ToMojom(
       tracking_prevention::Mitigation input);
-  static bool FromMojom(network::mojom::Mitigation input,
-                        tracking_prevention::Mitigation* output);
+  static tracking_prevention::Mitigation FromMojom(
+      network::mojom::Mitigation input);
 };
 
 template <>
@@ -33,8 +33,8 @@ struct EnumTraits<network::mojom::TrackerType,
                   tracking_prevention::TrackerType> {
   static network::mojom::TrackerType ToMojom(
       tracking_prevention::TrackerType input);
-  static bool FromMojom(network::mojom::TrackerType input,
-                        tracking_prevention::TrackerType* output);
+  static tracking_prevention::TrackerType FromMojom(
+      network::mojom::TrackerType input);
 };
 }  // namespace mojo
 

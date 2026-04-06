@@ -35,62 +35,8 @@ template("edge_overlay_group_all") {
     forward_variables_from(invoker, "*", [])
   }
 
-  declare_args() {
-    # The orderfile is trained on PGO builds (for arm64) and AFDO builds (for
-    # arm32), so apply them only in these cases.
-    edge_chrome_orderfile_path = ""
-    if (defined(default_chrome_orderfile)) {
-      if (((current_cpu == "arm64" || current_cpu == "x64") &&
-           chrome_pgo_phase == 2) ||
-          ((current_cpu == "arm" || current_cpu == "x86") &&
-           edge_clang_use_default_sample_profile)) {
-        edge_edge_chrome_orderfile_path = default_chrome_orderfile
-      }
-    } else if (is_clang && is_official_build) {
-      edge_chrome_orderfile_path = "//chrome/build/chrome.$target_cpu.orderfile"
-    }
-  }
-
   assert(!(llvm_force_head_revision && use_goma),
          "can't use goma with trunk clang")
-
-  # TODO(task.ms/56539106)
-  # Uncomment this block once we have a link order file for Android
-  #  if (is_android) {
-  #    config("edge_chrome_orderfile_config") {
-  #      if (edge_chrome_orderfile_path != "") {
-  #        ldflags += [
-  #          "-Wl,--symbol-ordering-file",
-  #          "-Wl,$_rebased_orderfile",
-  #          "-Wl,--no-warn-symbol-ordering",
-  #        ]
-  #        inputs += [ edge_chrome_orderfile_path ]
-  #      }
-  #    }
-  #  }
-
-  if (is_win && target_cpu == "x64") {
-    # Use orderfile for linking Chrome on Windows.
-    # This config enables using an orderfile for linking in LLD.
-    config("edge_chrome_orderfile_config") {
-      # Don't try to use an orderfile with call graph sorting, except on Android,
-      # where we care about memory used by code, so we still want to mandate
-      # ordering.
-      if (edge_chrome_orderfile_path != "") {
-        assert(use_lld)
-        _rebased_orderfile =
-            rebase_path(edge_chrome_orderfile_path, root_build_dir)
-        ldflags = [
-          "/order:@$_rebased_orderfile",
-
-          # Ignore warnings about missing functions or functions not in their
-          # own section.
-          "/ignore:4037",
-          "/ignore:4065",
-        ]
-      }
-    }
-  }
 }
 
 template("edge_overlay_config_treat_warnings_as_errors") {
@@ -244,10 +190,6 @@ template("edge_overlay_config_compiler") {
       }
     }
 
-    if (is_apple) {
-      # TODO(crbug.com/1519899): Figure out how to remove this.
-      cflags += [ "-fno-define-target-os-macros" ]
-    }
     if (!is_debug && use_thin_lto && is_a_target_toolchain) {
       if (is_ios) {
         # TODO Task 42271118: Remove Edge customization

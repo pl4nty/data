@@ -19,8 +19,8 @@ struct EnumTraits<dlp::mojom::LLMPayloadMonitorConfig,
                   dlp::LLMPayloadMonitorConfig> {
   static dlp::mojom::LLMPayloadMonitorConfig ToMojom(
       dlp::LLMPayloadMonitorConfig input);
-  static bool FromMojom(dlp::mojom::LLMPayloadMonitorConfig input,
-                        dlp::LLMPayloadMonitorConfig* out);
+  static dlp::LLMPayloadMonitorConfig FromMojom(
+      dlp::mojom::LLMPayloadMonitorConfig input);
 };
 
 template <>
