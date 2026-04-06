@@ -1,5 +1,56 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01",
+        "CVE": "CVE-2026-0049",
+        "References": "A-456471290",
+        "Type": "DoS",
+        "Severity": "Critical",
+        "Updated AOSP versions": "14, 15, 16, 16-qpr2",
+        "Component": "Framework"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01",
+        "CVE": "CVE-2025-48651",
+        "References": "A-434039170",
+        "Severity": "High",
+        "Subcomponent": "StrongBox",
+        "Component": "Google"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01",
+        "CVE": "CVE-2025-48651",
+        "References": "A-467765081",
+        "Severity": "High",
+        "Subcomponent": "StrongBox",
+        "Component": "NXP components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01",
+        "CVE": "CVE-2025-48651",
+        "References": "A-467765894",
+        "Severity": "High",
+        "Subcomponent": "StrongBox",
+        "Component": "STMicroelectronics"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01",
+        "CVE": "CVE-2025-48651",
+        "References": "A-467762899",
+        "Severity": "High",
+        "Subcomponent": "StrongBox",
+        "Component": "Thales"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
@@ -93472,6 +93523,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01"
@@ -94097,17 +94153,22 @@
         "Patch level": "2021-01-01"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026-03-01",
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026-02-01",
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-02-01",
         "Published": "February 2, 2026",
         "Patch level": "2026-02-01"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026-01-01",
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-01-01",
         "Published": "January 5, 2026",
         "Patch level": "2026-01-01"
     },
@@ -94773,6 +94834,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-04-01",
+        "Published": "April 6, 2026",
+        "Patch level": "2026-04-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-03-01",
