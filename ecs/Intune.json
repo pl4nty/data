@@ -376,6 +376,7 @@
     "SVC_Dep": {
         "FlightingV2": {
             "APv2EnableForcedRebootBehavior": true,
+            "APv2EnableManagedInstallerProvider": true,
             "APv2EnableMinimumGetMdmProvisioningStatusesCalls": true,
             "APv2EnablePublishResultsResiliencyBehavior": true,
             "DJPPGroupsV2Enabled": true,
@@ -476,7 +477,7 @@
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,
-            "EnableMAA_DcV2SettingsCatalog": false,
+            "EnableMAA_DcV2SettingsCatalog": true,
             "EnableMultiAdminApprovalForDeviceCleanupRules": true,
             "authonlyapp": true
         }
@@ -612,8 +613,8 @@
             "EnableMAA_AccessPolicy_CompliancePolicyUX": true,
             "EnableMAA_CompliancePolicyUX": true,
             "EnableMAA_ComplianceSettings": true,
-            "EnableMAA_ConfigurationPolicy": false,
-            "EnableMAA_DcV2SettingsCatalog": false,
+            "EnableMAA_ConfigurationPolicy": true,
+            "EnableMAA_DcV2SettingsCatalog": true,
             "EnableMAA_DeviceCleanupRules": true
         }
     },

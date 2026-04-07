@@ -4,7 +4,7 @@
         "description": "Recording and transcript owners can now grant recording and transcript access to specified people when copying or sharing recap link, and the specified people can access the recap without having to request access.",
         "id": 559606,
         "locale": null,
-        "modified": "2026-04-03T22:15:57",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -21,10 +21,10 @@
                 "tagName": "GCC High"
             },
             {
-                "tagName": "Mac"
+                "tagName": "Desktop"
             },
             {
-                "tagName": "Windows 10"
+                "tagName": "Mac"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -34,6 +34,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -50,10 +53,10 @@
             ],
             "platforms": [
                 {
-                    "tagName": "Mac"
+                    "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Windows 10"
+                    "tagName": "Mac"
                 }
             ],
             "products": [
@@ -67,6 +70,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -4575,12 +4581,12 @@
         "description": "Spoken language detection is now fully automatic. Teams will automatically detect each speaker\u2019s spoken language and update it in real time as the conversation evolves. Manual spoken language selection will no longer be available. This applies to both live captions and transcripts when Interpreter is enabled or when multilingual speech recognition is turned on in meeting options, helping deliver more accurate language recognition and a more consistent multilingual meeting experience.",
         "id": 558543,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8505,12 +8511,12 @@
         "description": "Admins will be able to define a tenant\u2011wide default value for the Mail Compose and Reply setting that controls whether commas are used to separate recipients.",
         "id": 557676,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15791,12 +15797,12 @@
         "description": "Dark mode will now be supported in SharePoint Admin Center.",
         "id": 552593,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17805,12 +17811,12 @@
         "description": "The below diagnostics will help users understand which sensitive information exist in their document and what labels applied and what policies have been triggered: DLP SharePoint Diagnostics DLP EXO Diagnostics Auto labeling diagnostics for SPO/ODB\n",
         "id": 547833,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17970,10 +17976,10 @@
         "description": "This feature enables users to export fresher row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis at day level. #copilotcontrolsystem",
         "id": 547749,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -22960,12 +22966,12 @@
         "description": "Drafting emails is faster and easier with Quick Parts, now available for Outlook for Windows and web. Quick Parts are saved email snippets that can be reused when composing new messages, making it easy to assemble messages with reusable parts. #newoutlookforwindows",
         "id": 532733,
         "locale": null,
-        "modified": "2026-01-29T00:15:19",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -59226,9 +59232,9 @@
         "description": "Outlook Mobile now supports Data Loss Prevention (DLP) policy tips, helping users avoid accidental data leaks. When sensitive content is detected, users are alerted with inline tips or pop-ups, based on admin-configured rules. This update aligns DLP behavior across all Outlook clients for consistent compliance enforcement.",
         "id": 496146,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -61404,12 +61410,12 @@
         "description": "When composing a message in the new Outlook for Windows and Outlook on the web, there will be a new Graphics button under the Insert ribbon tab. This opens a panel that will allow users to search and pick from a large selection of emoji, stock photos, and stickers, which are inserted into the message when selected. #newoutlookforwindows",
         "id": 495467,
         "locale": null,
-        "modified": "2025-12-05T23:45:06",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -77383,9 +77389,9 @@
         "description": "GCC-H and DoD sovereign cloud customers will be able to use features in Excel run by Insights Services, including Analyze Data found on the Data tab.",
         "id": 488142,
         "locale": null,
-        "modified": "2025-10-21T23:15:01",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -77902,10 +77908,10 @@
         "description": "Introducing Data lifecycle management capabilities for Microsoft Planner. Compliance admins can now create a retention policy to manage content located in Microsoft Planner such as tasks for plans associated with an Microsoft 365 Group.",
         "id": 486828,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -109021,9 +109027,9 @@
         "description": "Purview policies like Data loss prevention (DLP) auto labelling can scan for sensitive content in most of the textual files, but images are not supported for content scanning today on Mac endpoint devices. We are adding OCR support on Mac endpoints to detect sensitive content in images and apply policies to protect these images.",
         "id": 410247,
         "locale": null,
-        "modified": "2025-09-17T23:00:20",
+        "modified": "2026-04-06T23:15:32",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

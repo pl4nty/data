@@ -89,6 +89,33 @@
             }
         }
     },
+    "MicrosoftTeamsAndroidDeviceAdminAgent": {
+        "healthSignalConfig": {
+            "isEnabled": true,
+            "teams": {
+                "authhealth": {
+                    "isEnabled": true,
+                    "isReleased": true
+                },
+                "blebeaconhealthevent": {
+                    "isEnabled": true,
+                    "isReleased": true
+                },
+                "networkhealth": {
+                    "isEnabled": true,
+                    "isReleased": true
+                },
+                "pairinghealth": {
+                    "isEnabled": true,
+                    "isReleased": true
+                },
+                "storagehealth": {
+                    "isEnabled": true,
+                    "isReleased": true
+                }
+            }
+        }
+    },
     "MicrosoftTeamsAppCatalog": {
         "appCatalog": {
             "appCatalogMetadata": {
@@ -1700,6 +1727,10 @@
                 {
                     "Flight": "TM.agendaTopicCitation",
                     "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaTopicIndividualCitation",
+                    "IsEnabled": true
                 }
             ],
             "meetingAgendaSkill_ProactiveAgendaAlwaysTimed": [
@@ -1761,6 +1792,12 @@
             "meetingAgendaSkill_WriteBackToLoopAgenda": [
                 {
                     "Flight": "AS.enableAgendaSkillWriteBackToLoopAgenda",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_graphFallback": [
+                {
+                    "Flight": "AS.enableGraphCalendarFallback",
                     "IsEnabled": true
                 }
             ]
