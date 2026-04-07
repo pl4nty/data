@@ -78,6 +78,30 @@ do
   if l_0_3 then
     l_0_2 = l_0_2 + 3
   end
+  l_0_3 = contains
+  l_0_4 = l_0_0
+  l_0_3 = l_0_3(l_0_4, "operator.admin")
+  if l_0_3 then
+    l_0_2 = l_0_2 + 5
+  end
+  l_0_3 = containsall
+  l_0_4 = l_0_0
+  l_0_3 = l_0_3(l_0_4, {"pair", "approve"})
+  if l_0_3 then
+    l_0_2 = l_0_2 + 4
+  end
+  l_0_3 = containsall
+  l_0_4 = l_0_0
+  l_0_3 = l_0_3(l_0_4, {"device-pair", "scope"})
+  if l_0_3 then
+    l_0_2 = l_0_2 + 4
+  end
+  l_0_3 = containsall
+  l_0_4 = l_0_0
+  l_0_3 = l_0_3(l_0_4, {".openclaw", "credentials"})
+  if l_0_3 then
+    l_0_2 = l_0_2 + 4
+  end
   if l_0_2 < 3 then
     l_0_3 = mp
     l_0_3 = l_0_3.CLEAN

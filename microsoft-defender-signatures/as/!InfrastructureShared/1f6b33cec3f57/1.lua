@@ -46,7 +46,7 @@ do
 
           local l_0_6 = nil
           local l_0_7 = (string.lower)(l_0_4)
-          if not contains(l_0_7, {"/dev/tcp/", "bash -i >& /dev/", "mkfifo", "nc -e /bin/", "ncat -e /bin/", "| bash", "| sh", "-o /tmp/", "crontab -e", "crontab -r", "/etc/cron", "authorized_keys", "/etc/shadow", "+x /tmp/", "chmod 777"}) then
+          if not contains(l_0_7, {"/dev/tcp/", "bash -i >& /dev/", "mkfifo", "nc -e /bin/", "ncat -e /bin/", "| bash", "| sh", "-o /tmp/", "crontab -e", "crontab -r", "/etc/cron", "authorized_keys", "/etc/shadow", "+x /tmp/", "chmod 777", "operator.admin", "pair approve", "device-pair", ".openclaw/config", ".openclaw/credentials"}) then
             return mp.CLEAN
           end
           TrackPidAndTechniqueBM("BM", "T1059", "Execution")
