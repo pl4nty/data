@@ -49,6 +49,10 @@
         "VirtualHomeString_BugFix": true
     },
     "CLI_SideCar": {
+        "APv2EnableAutoReconnectOnRestart": {
+            "FlightExpiry": "2027-03-17T00:00:00.0402432Z",
+            "FlightValue": true
+        },
         "APv2UseStandardUserProviderNative": {
             "FlightExpiry": "2026-06-20T00:00:00.0402432Z",
             "FlightValue": true

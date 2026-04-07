@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19909.40129-->
+    <!--Build: 16.0.19923.40134-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1645,7 +1645,7 @@
       <o:url>https://templatesmetadata.office.net/</o:url>
     </o:service>
     <o:service o:name="OfficePythonServiceEndpointUrl">
-      <o:url>https://service.officepy.microsoftusercontent.com/</o:url>
+      <o:url>https://service.officepy.svc.usercontent.microsoft/</o:url>
     </o:service>
     <o:service o:name="ToDoMosAppContentUrl" o:authentication="1">
       <o:url>https://outlook.office365.com/tasks?app&amp;hostApp=metaOSHub</o:url>
@@ -1743,6 +1743,12 @@
     <o:service o:name="DeferredDeepLinkService" o:authentication="2">
       <o:url>https://deeplinkservice.svc.cloud.microsoft/api/deeplinkprompt</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://deeplinkservice.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="InAppFeedbackCentrohostUrl">
+      <o:url>https://admin.microsoft.cloud/centrohost</o:url>
+    </o:service>
+    <o:service o:name="InAppFeedbackECSCentrohostUrl">
+      <o:url>https://cdn.config.centro.core.microsoft/index</o:url>
     </o:service>
     <o:service o:name="TemplatesWebsiteExploreAmazingTemplatesForWord">
       <o:url>https://templates.office.com/templates-for-word?ocid=oo_toc_client_app_MARVEL_UPS_templates_gopremiumLandingPage</o:url>

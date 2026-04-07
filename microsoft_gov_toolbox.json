@@ -401,8 +401,9 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.84.0",
+        "version": "2.85.0",
         "versions": [
+            "2.85.0",
             "2.84.0",
             "2.83.0",
             "2.82.0",
@@ -576,8 +577,9 @@
         "name": "AzureMLPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.31.0",
+        "version": "1.32.0",
         "versions": [
+            "1.32.0",
             "1.31.0",
             "1.19.0",
             "1.18.0",
@@ -1105,8 +1107,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.26.0",
+        "version": "2.30.0",
         "versions": [
+            "2.30.0",
             "2.26.0",
             "2.21.0",
             "2.15.0",

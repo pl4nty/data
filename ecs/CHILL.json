@@ -313,95 +313,6 @@
                 }
             }
         },
-        "Floodgate_Campaign_AdminPortal.277ce749-64ef-483c-940f-a3fe816dcccc": {
-            "CampaignId": "277ce749-64ef-483c-940f-a3fe816dcccc",
-            "EndTimeUtc": "2026-04-25T17:46:40Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-12-01T00:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "Copilot_Trial_Disable",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Help us improve Copilot trials for your organization"
-                        },
-                        {
-                            "displayName": "MultiSelect Verbatim",
-                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Need more admin control for managing trials (e.g. enablement, timing, revocation)",
-                                        "Rollout or pilot plan isn't finalized",
-                                        "Need to show Copilot's return on investment to leadership before enabling trials",
-                                        "Trials create administrative overhead ",
-                                        "Security or compliance concerns with unsupervised trials ",
-                                        "Organization uses a different AI solution",
-                                        "Other"
-                                    ],
-                                    "id": "multiselect1",
-                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
-                                    "required": true,
-                                    "type": "MultipleChoice",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "verbatim1",
-                                    "questionLabel": "Please tell us more (optional). What would help your organization feel ready for Copilot trials?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/277ce749-64ef-483c-940f-a3fe816dcccc/8c20a2f6-a881-464e-a2e3-bda5723fec51/Web-AdminPortal/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_AdminPortal.719835bd-9541-4b85-91f7-4f8a72a35dee": {
             "CampaignId": "719835bd-9541-4b85-91f7-4f8a72a35dee",
             "EndTimeUtc": "2026-06-29T18:30:00Z",
@@ -1296,6 +1207,12 @@
                             "Count": 300,
                             "IsAggregate": true,
                             "Type": 0
+                        },
+                        {
+                            "Activity": "AppUsageTimeNPSSatisfied",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
                         }
                     ],
                     "Type": 1
@@ -1727,7 +1644,7 @@
     "ChillMicrosoftDefenderXdr": {
         "Floodgate_Campaign_MicrosoftDefenderXDR.610e6279-a960-499c-8f10-2a1b58b8480e": {
             "CampaignId": "610e6279-a960-499c-8f10-2a1b58b8480e",
-            "EndTimeUtc": "2026-04-10T21:00:00Z",
+            "EndTimeUtc": "2026-05-31T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1821,7 +1738,7 @@
         },
         "Floodgate_Campaign_MicrosoftDefenderXDR.9f028b68-0dcb-43ba-8540-ea2f152df55e": {
             "CampaignId": "9f028b68-0dcb-43ba-8540-ea2f152df55e",
-            "EndTimeUtc": "2026-04-10T21:00:00Z",
+            "EndTimeUtc": "2026-05-31T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2105,7 +2022,7 @@
         },
         "Floodgate_Campaign_MicrosoftDefenderXDR.d06bb221-ae87-4076-bd6c-f5f8ff7f899c": {
             "CampaignId": "d06bb221-ae87-4076-bd6c-f5f8ff7f899c",
-            "EndTimeUtc": "2026-04-10T21:00:00Z",
+            "EndTimeUtc": "2026-05-31T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
