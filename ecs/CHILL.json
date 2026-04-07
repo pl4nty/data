@@ -2541,7 +2541,7 @@
     "ChillPowerApps": {
         "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
             "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
-            "EndTimeUtc": "2026-04-10T22:00:00Z",
+            "EndTimeUtc": "2026-06-05T22:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3065,7 +3065,7 @@
         },
         "Floodgate_Campaign_SharePoint.79808b4a-7a47-47f5-be77-2c8d304f28c6": {
             "CampaignId": "79808b4a-7a47-47f5-be77-2c8d304f28c6",
-            "EndTimeUtc": "2026-04-24T16:00:00Z",
+            "EndTimeUtc": "2026-06-03T16:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

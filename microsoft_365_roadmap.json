@@ -88584,67 +88584,6 @@
     },
     {
         "created": "2025-02-14T23:15:12",
-        "description": "Currently Endpoint DLP only supports Audit only, Block, Block with override. This feature will add Off and Allow. Off means Endpoint DLP will not fire any event/Alert and will not trigger any toast. Customer can use this enforcement mode to have restriction for specific group. Allow means Endpoint DLP will not fire any Alert and will not trigger any toast but will fire event on Activity Explorer.",
-        "id": 481356,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Add Allow/Off mode for each Action type overall enforcement"
-    },
-    {
-        "created": "2025-02-14T23:15:12",
         "description": "You can now take advantage of speaker recognition, transcript attribution, and AI capabilities in Teams Rooms on Android. Intelligent speaker functionalities are brought to existing speakers via the cloud. This feature identifies and attributes people in live transcripts, utilizing a unique voice profile for each participant enabling intelligent recaps and maximum value from Microsoft 365 Copilot and Teams Premium in meetings. Users can easily and securely enroll voices via Teams Settings. This feature requires a Teams Rooms Pro license.",
         "id": 480715,
         "locale": null,
@@ -89082,73 +89021,6 @@
             ]
         },
         "title": "SharePoint: AI citations analytics for documents and pages"
-    },
-    {
-        "created": "2025-02-13T01:15:14",
-        "description": "Full File Evidence supports activities like Cloud egress, paste to supported browser, copy to USB, Network share, RDP, Bluetooth app. Now we are expanding full file evidence collection for unallowed apps as well.",
-        "id": 479757,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention: Full file evidence support for restricted apps"
     },
     {
         "created": "2025-02-12T00:00:39",
@@ -90238,67 +90110,6 @@
     },
     {
         "created": "2025-01-31T00:15:03",
-        "description": "Introducing the \"Quick Summarization\" feature for eDiscovery in Purview Copilot\u2014designed to streamline case management with an intuitive, at-a-glance overview. This new capability allows users to quickly access a comprehensive summary of eDiscovery cases, holds, and searches, eliminating the need to navigate through multiple tabs to assess status, statistics of completed actions, pending tasks, and ongoing jobs.\n\nThe \"Quick Summarization\" feature consolidates this information into a single, easy-to-understand summary. Additionally, similar summary views are available for both Search and Hold within the eDiscovery case. Powered by existing \u201ccontextual summary\u201d skill, the system analyzes case/search/hold metadata and generates natural language summaries, providing users with a clear, actionable overview of key details in real-time.",
-        "id": 478928,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: eDiscovery - Quick Summarizations in eDiscovery"
-    },
-    {
-        "created": "2025-01-31T00:15:03",
         "description": "With this new feature in OneNote mobile, you can share videos and images into OneNote and watch the magic unfold. All the key insights from the video and images are captured effortlessly into notes so that you do not have to manually create them.",
         "id": 422325,
         "locale": null,
@@ -90845,55 +90656,6 @@
             ]
         },
         "title": "Microsoft Teams: Teams client health dashboards in Teams Admin Center"
-    },
-    {
-        "created": "2025-01-28T00:00:21",
-        "description": "The Purview eDiscovery team has increased the limits for Hold policies for eDiscovery Premium in the new purview.microsoft.com portal. \n\nThe maximum number of mailboxes in a single case hold has been increased from 1,000 to 2,000. This limit includes the combined total of user mailboxes and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Viva Engage Groups.\n\nThe maximum number of sites in a single case hold has been increased from 100 to 2,000. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Viva Engage Groups. \n\nOverall, the maximum allowed locations in a premium case hold policy in a premium case is 4,000 (2,000 each). This is possible through the new user interface in Purview portal and not through the Classic eDiscovery experience. Additionally, this is not currently possible with Graph. The maximum hold limits for a standard case remain the same as earlier: 1,000 mailboxes and 100 sites. All other settings for eDiscovery hold continue as is. \n\nLastly, in case of license downgrade, the system won't remove any existing holds and won't allow adding more, such as for a policy with a higher number of locations in it (e.g. 1500 Mailbox and 1500 Sites), and if the case setting is downgraded to E3, you will not be able to add more locations in it based on E3 limits, but you will be able to remove locations from it.",
-        "id": 477367,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: eDiscovery - Hold limits increased per hold policy for eDiscovery Premium"
     },
     {
         "created": "2025-01-28T00:00:21",
@@ -111634,67 +111396,6 @@
         "title": "Microsoft Purview compliance portal: Communication Compliance - Advanced trainable classifiers to detect workplace safety scenarios"
     },
     {
-        "created": "2023-09-20T23:13:54",
-        "description": "Now organizations who are automating eDiscovery workflows will be able to authenticate and execute workflows with an application based authentication method.",
-        "id": 169083,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: eDiscovery - App Permissions for Graph API"
-    },
-    {
         "created": "2023-08-04T22:05:23",
         "description": "<div>Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data on your Windows endpoint devices. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP and PDF (image only PDF). </div>",
         "id": 160008,
@@ -111754,61 +111455,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Optical character recognition (OCR) support for endpoint"
-    },
-    {
-        "created": "2023-06-30T21:09:10",
-        "description": "Now organizations who are automating eDiscovery workflows will be able to authenticate and execute workflows with an application based authentication method.",
-        "id": 145797,
-        "locale": null,
-        "modified": "2025-06-06T22:15:39",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "December CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: eDiscovery (Premium) - App Permissions for Graph API"
     },
     {
         "created": "2023-06-19T23:33:43",

@@ -503,6 +503,7 @@
     "SVC_RACerts": {
         "FlightingV2": {
             "BYPASS-DisallowingUnknownExtensions": false,
+            "DeviceActionCertRevocationMessage": true,
             "DigiCert_SMIME": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true
         }

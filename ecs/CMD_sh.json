@@ -968,6 +968,7 @@
         "EnableUsingPolicyBatchGetAppliedPolicies": true,
         "EnableUtilizationR90": true,
         "EnableUtilizationR90DeviceLevel": true,
+        "EnableVFLForDpp": true,
         "EnableVHDPreferredRegionAllocation": true,
         "EnableVMBalanceDuringProvision": true,
         "EnableVMwareHPGracePeriod": true,
