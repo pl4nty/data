@@ -31,7 +31,7 @@
   },
   {
     "name": "android_toolchain",
-    "size": 563853,
+    "size": 563552,
     "file_count": 9
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33204991,
-    "file_count": 4033
+    "size": 33203121,
+    "file_count": 4032
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16220791,
+    "size": 16241263,
     "file_count": 1953
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19566571,
+    "size": 19588587,
     "file_count": 19
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 56637,
+    "size": 56686,
     "file_count": 35
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4248034,
+    "size": 4251536,
     "file_count": 600
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "skia",
-    "size": 3480606,
-    "file_count": 1190
+    "size": 3480921,
+    "file_count": 1191
   },
   {
     "name": "speech-dispatcher",
@@ -761,8 +761,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7435537,
-    "file_count": 194
+    "size": 7438227,
+    "file_count": 195
   },
   {
     "name": "vulkan_memory_allocator",
