@@ -857,16 +857,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "CVE": "CVE-2026-21735",
-        "References": "A-450584982",
-        "Severity": "High",
-        "Subcomponent": "PowerVR-GPU",
-        "Component": "Imagination Technologies"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
-        "Published": "March 2, 2026",
-        "Patch level": "2026-03-01",
         "CVE": "CVE-2025-20795",
         "References": "A-457250114",
         "Severity": "High",
@@ -69348,6 +69338,46 @@
         "Severity": "Low",
         "Affected versions": "5.0 and 5.1",
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
+        "Published": "April 7, 2026",
+        "Patch level": "2026-04-05",
+        "Abbreviation": "RCE",
+        "Definition": "Remote code execution",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
+        "Published": "April 7, 2026",
+        "Patch level": "2026-04-05",
+        "Abbreviation": "EoP",
+        "Definition": "Elevation of privilege",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
+        "Published": "April 7, 2026",
+        "Patch level": "2026-04-05",
+        "Abbreviation": "ID",
+        "Definition": "Information disclosure",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
+        "Published": "April 7, 2026",
+        "Patch level": "2026-04-05",
+        "Abbreviation": "DoS",
+        "Definition": "Denial of service",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
+        "Published": "April 7, 2026",
+        "Patch level": "2026-04-05",
+        "Abbreviation": "N/A",
+        "Definition": "Classification not available",
+        "Component": "Security patches"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-03-01",
