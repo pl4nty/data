@@ -8,8 +8,9 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "versions": [
+            "2.0.1",
             "2.0.0",
             "1.1.0b2",
             "1.1.0b1",
@@ -535,8 +536,9 @@
         "name": "AzureIdentityPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.25.2",
+        "version": "1.25.3",
         "versions": [
+            "1.25.3",
             "1.25.2",
             "1.25.1",
             "1.25.0",
@@ -560,8 +562,9 @@
         "name": "AzureMLCliExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.34.0",
+        "version": "2.35.0",
         "versions": [
+            "2.35.0",
             "2.34.0",
             "2.30.1",
             "2.28.0",
@@ -694,8 +697,9 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.71.0",
+        "version": "3.77.0",
         "versions": [
+            "3.77.0",
             "3.71.0",
             "3.66.0",
             "3.62.0",
