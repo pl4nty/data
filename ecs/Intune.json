@@ -335,6 +335,7 @@
     },
     "SVC_ContentService": {
         "FlightingV2": {
+            "EnableV12AzureStorageWrapper": true,
             "MDSAddToCacheFromSecondaryStorage": true
         }
     },
@@ -368,7 +369,8 @@
             "QBSFSICoreHistoryMigrationSwitchOver": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch2": true,
-            "QBSFSICoreMigrationSwitchOverBatch3": true
+            "QBSFSICoreMigrationSwitchOverBatch3": true,
+            "QBSFSICoreOrganizationMigrationSwitchOver": true
         }
     },
     "SVC_DataPlatformMetadata": {

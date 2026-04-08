@@ -581,6 +581,7 @@
         "EnableGrandfatheredStatus": true,
         "EnableGraphApiSupportRecover": true,
         "EnableGroupAssignmentEtagCheck": true,
+        "EnableGroupAssignmentMigration": true,
         "EnableGroupByToGetTenants": true,
         "EnableGroupByToGetTenantsForWorkItemV2": true,
         "EnableGroupMembershipLargeCosmosDbPageSize": true,

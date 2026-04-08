@@ -1,5 +1,243 @@
 [
     {
+        "created": "2026-04-07T23:15:03",
+        "description": "Get Copilot suggestions in the Outlook search menu to help you stay on top of your inbox and calendar, find what you are looking for and get more done in Outlook.",
+        "id": 559990,
+        "locale": null,
+        "modified": "2026-04-07T23:15:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot Search Suggestions for Outlook"
+    },
+    {
+        "created": "2026-04-07T23:00:18",
+        "description": "Customers can now view and understand their agent landscape through the new Overview page that will be included as part of the Agent Dashboard in Microsoft Viva. This experience will provide customers with key at-a-glance insights on adoption in their organizations, visibility into who\u2019s creating agents used in their organization, and details on what business process categories these agents are used for.",
+        "id": 559996,
+        "locale": null,
+        "modified": "2026-04-07T23:00:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: New Overview experience and agent categories in Agent Dashboard "
+    },
+    {
+        "created": "2026-04-07T23:00:18",
+        "description": "Enable Global and Insights admins to turn on additional attributes as filters in Power BI reports, including reserved attributes and your organization\u2019s custom attributes. Users who have access to Power BI reports can then use these newly enabled filters to tailor reports to their business needs.",
+        "id": 559995,
+        "locale": null,
+        "modified": "2026-04-07T23:00:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Unlocking Deeper Copilot Insights with Enhanced Power BI Filtering "
+    },
+    {
+        "created": "2026-04-07T23:00:18",
+        "description": "Outlook for Mac now supports Data Loss Prevention (DLP) policy tips, helping users avoid accidental data leaks. When sensitive content is detected, users are alerted with inline tips or pop-ups, based on admin-configured rules. ",
+        "id": 558689,
+        "locale": null,
+        "modified": "2026-04-07T23:00:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "November CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Data Loss Prevention (DLP) Policy Tips & Override in Outlook for Mac"
+    },
+    {
         "created": "2026-04-03T22:15:57",
         "description": "Recording and transcript owners can now grant recording and transcript access to specified people when copying or sharing recap link, and the specified people can access the recap without having to request access.",
         "id": 559606,
@@ -1303,7 +1541,7 @@
         "description": "Responses are generated by GPT and Claude working together, with GPT drafting an initial response and Claude reviewing for increased response accuracy, completeness, and citation integrity. ",
         "id": 558538,
         "locale": null,
-        "modified": "2026-03-30T16:15:57",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "March CY2026",
@@ -1364,7 +1602,7 @@
         "description": "Council in Researcher runs multiple leading AI models from different providers in parallel in one place, so you can quickly compare outputs and see consensus vs. conflict) to make high-stakes decisions with greater confidence\u2014without switching tools.",
         "id": 553213,
         "locale": null,
-        "modified": "2026-03-30T16:15:57",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "March CY2026",
@@ -3267,12 +3505,12 @@
         "description": "Attendee capacity packs provide increased capacity limits for Teams events. Organizers can scale event attendance beyond base limits while maintaining a consistent Teams events experience. ",
         "id": 558856,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4666,12 +4904,12 @@
         "description": "Intelligent meeting recap will now include video-based recaps. Video recap creates narrated video highlights from recorded meetings, featuring key takeaways and short clips that showcase important moments.",
         "id": 558540,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6655,12 +6893,12 @@
         "description": "A new Data Security Investigations (DSI) mitigation action, soft purge, is now available to help admins quickly and efficiently soft-delete sensitive or overshared content during investigations. Content deleted using soft purge is retained until the deleted item retention period expires, allowing admins to have further control of their data. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
         "id": 558109,
         "locale": null,
-        "modified": "2026-03-04T00:00:25",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11117,12 +11355,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 557177,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11337,12 +11575,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot connects to your brand kit so you can apply branded templates, insert brand\u2011approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 499655,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13913,12 +14151,12 @@
         "description": "Shared mailbox users and delegates with Read and manage (full access), and/or mail folder-level permission will now be able to access Copilot Chat directly from their shared and delegate mailboxes in new Outlook.",
         "id": 554936,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15138,12 +15376,12 @@
         "description": "Access to People Skills on the Microsoft 365 profile card is expanding to Microsoft Teams. With this update, employees will be able to view skills directly on the profile card in Teams\u2014making it easier to learn about colleagues, build meaningful connections, and manage their own skills profile right from within their everyday flow of work.",
         "id": 552588,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15553,12 +15791,12 @@
         "description": "Users will now have basic options for printing calendar events in the #newoutlookforwindows and Teams calendar, including choosing whether to show or hide the attendee list on the printout.",
         "id": 551199,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21362,9 +21600,9 @@
         "description": "In Outlook Web, the new and updated People Hub delivers a modern, multi-column contacts experience, with fast search and a streamlined interface. It provides a unified view of each person, automatically links duplicate entries, and enriches contacts with organizational profile information where available.",
         "id": 537282,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -28053,12 +28291,12 @@
         "description": "Empower tenant admins to centrally manage SharePoint site branding using PowerShell scripts. This feature enables organizations to enforce consistent branding, apply enterprise themes to individual sites, disable custom branding on specific sites, and audit branding changes - ensuring branding compliance and a unified brand experience across all SharePoint sites.",
         "id": 526794,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -57420,9 +57658,9 @@
         "description": "Microsoft Places features will now be available in GCC cloud",
         "id": 495465,
         "locale": null,
-        "modified": "2025-10-29T23:00:59",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -60433,9 +60671,9 @@
         "description": "Users can now see their teammates' calendars (including peers, direct reports, and managers) automatically displayed in the left navigation pane of the new outlook. #newoutlookforwindows",
         "id": 495468,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-04-07T23:15:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
