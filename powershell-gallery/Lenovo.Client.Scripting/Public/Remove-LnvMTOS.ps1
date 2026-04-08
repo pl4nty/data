@@ -23,13 +23,17 @@ Description: The operating system to search for.
 Use tab complete to select from OS options ("Win10", "Win11").
 
 .PARAMETER ListPath
-Set the file path where the json file is stored. Or it will searh by default
+Set the file path where the json file is stored. Or it will search by default
 at "C:\ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json."
 
 .EXAMPLE
 Remove-LnvMTOS -MachineType 11W2 -OS Win11 -Path "C:\ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json"
 
 .NOTES
+=====================================================
+| NOTICE: This cmdlet is being deprecated and will  |
+| be removed in a future release.                   |
+=====================================================
 The json database file is created by the Add-LnvMTOS cmdlet. Use it to add
 models and their current updates to the json file.
 #>

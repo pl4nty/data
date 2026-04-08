@@ -20,6 +20,10 @@
   .OUTPUTS
 
   .NOTES
+  =====================================================
+  | NOTICE: This cmdlet is being deprecated and will  |
+  | be removed in a future release.                   |
+  =====================================================
 
 #>
 
@@ -44,6 +48,5 @@ function Show-LnvApplicableUpdate {
         Write-Output $packageids.TrimEnd(', ')
     }
 }
-
 
 # SIG # Begin signature block

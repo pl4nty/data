@@ -18,6 +18,10 @@ Set the file path for the json file to be stored. Or it will store by default at
 Add-LnvMTOS -MachineType 11W2 -OS Win11 -Path "C:\ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json"
 
 .NOTES
+=====================================================
+| NOTICE: This cmdlet is being deprecated and will  |
+| be removed in a future release.                   |
+=====================================================
 
 #>
 
@@ -38,7 +42,7 @@ function Add-LnvMTOS {
     Begin{
         # Set a default path if -Path is not specified or is empty
         if (-not $ListPath -or $ListPath.Trim() -eq "") {
-            $ListPath = "C:\ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json"
+            $ListPath = "$env:ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json"
             Write-Output "No path provided. Using default path: $ListPath"
         }
 
@@ -49,7 +53,7 @@ function Add-LnvMTOS {
         }
 
         # Define folder paths
-        $baseFolderPath = "C:\ProgramData\Lenovo"
+        $baseFolderPath = "$env:ProgramData\Lenovo"
         $subFolderPath = Join-Path -Path $baseFolderPath -ChildPath "ClientScriptingModule"
 
         # Check and create base folder if it doesn't exist
@@ -107,8 +111,8 @@ function Add-LnvMTOS {
         # Check if the machine + OS pair already exists in json file
         $exists = [array]$jsonContent.Machines | Where-Object { $_.MachineType -eq $MachineType -and $_.OS -eq $OS }
         if ($exists) {
-            Write-Output "Entry for $MachineType and $OS already exists in the jsonContent."
-            continue
+            Write-Output "Entry for $MachineType and $OS already exists in the Machine + OS list."
+            return
         }
 
         # Initialize arrays for storing the extracted data
@@ -124,7 +128,7 @@ function Add-LnvMTOS {
 
         } catch {
             Write-Error "Failed to load CRC XML document: $_"
-            exit
+            return
         }
 
 
@@ -142,7 +146,7 @@ function Add-LnvMTOS {
 
         } catch {
             Write-Error "Failed to load XML document: $_"
-            exit
+            return
         }
 
 
@@ -167,7 +171,7 @@ function Add-LnvMTOS {
             Write-Output "MachineType: $MachineType and OS: $OS were saved to JSON file"
         } catch {
             Write-Error "Failed to save JSON file: $_"
-            exit
+            return
         }
 
     }

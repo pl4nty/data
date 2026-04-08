@@ -26,86 +26,116 @@ Get-LnvCVE
 .NOTES
 
 #>
-function Get-LnvCVE {
+function Get-LnvCVE
+{
     param (
-        [ValidateLength(4,4)]
+        [ValidateLength(4, 4)]
         [parameter(position = 0, Mandatory = $false, helpMessage = "Enter the Machine Type to search for")] [String] $MachineType
 
     )
     $catalogUrl = "https://download.lenovo.com/catalog/"
 
-    if ([string]::IsNullOrWhiteSpace($MachineType)) {
+    if ([string]::IsNullOrWhiteSpace($MachineType))
+    {
         $MachineType = Get-LnvMachineType
     }
 
-    try {
+    try
+    {
         [xml]$catalog = Get-LnvXmlFilePvt ($catalogUrl + $MachineType + "_Win11.xml")
     }
-    catch {
+    catch
+    {
         Write-Output $_
         return
     }
 
-    try {
+    try
+    {
         $pkgxmlUrls = $catalog.SelectNodes("//location[../category='BIOS UEFI']")
+        if ($pkgxmlUrls.Count -eq 0)
+        {
+            Write-Output -InputObject "No BIOS update currently available for that machine type."
+            return
+        }
+
+        $pathUrl = $pkgxmlUrls[0].'#text'.Substring(0, $pkgxmlUrls[0].'#text'.LastIndexOf('/') + 1)
+        if ([string]::IsNullOrEmpty($pathUrl))
+        {
+            Write-Output -InputObject "Unable to determine package URL path."
+            return
+        }
     }
-    catch {
+    catch
+    {
         Write-Output -InputObject "No BIOS update currently available for that machine type."
         return
     }
 
-    $pathUrl = $pkgxmlUrls[0].'#text'.Substring(0, $pkgxmlUrls[0].'#text'.LastIndexOf('/') + 1)
-
-    if ($pkgxmlUrls.Count -gt 1) {
+    if ($pkgxmlUrls.Count -gt 1)
+    {
         #skip EC FW update only package in T490, etc. case
-        try {
+        try
+        {
             [xml]$pkgDescriptor = Get-LnvXmlFilePvt ($pkgxmlUrls[1].'#text')
         }
-        catch {
+        catch
+        {
             Write-Output $_
             return
         }
     }
-    else {
+    else
+    {
         #only one BIOS update in catalog
-        try {
+        try
+        {
             [xml]$pkgDescriptor = Get-LnvXmlFilePvt ($pkgxmlUrls[0].'#text')
         }
-        catch {
+        catch
+        {
             Write-Output $_
             return
         }
     }
 
-    try {
+    try
+    {
         $readmeUrl = $pkgDescriptor.Package.Files.Readme.File.Name
     }
-    catch {
+    catch
+    {
         Write-Output -InputObject "BIOS update package descriptor is missing readme file link."
         return
     }
 
     $url = $pathUrl + $readmeUrl
-    try {
-        $readme = (Invoke-WebRequest -Uri $url | Select-Object -ExpandProperty Content) -Split "`n"
+    try
+    {
+        $readme = (Invoke-WebRequest -Uri $url -UseBasicParsing | Select-Object -ExpandProperty Content) -Split "`n"
     }
-    catch {
+    catch
+    {
         Write-Output $_
         return
     }
 
     $cves = @()
-    foreach ($line in $readme) {
+    foreach ($line in $readme)
+    {
         $Regex = [regex] 'CVE-\d{4}-\d{4,7}'
         $Found = $Regex.Matches($line)
-        foreach ($Match in $Found) {
-            if (-Not $cves.Contains($Match.Value)) {
+        foreach ($Match in $Found)
+        {
+            if (-Not $cves.Contains($Match.Value))
+            {
                 $cves += $Match.Value
                 Write-Output -InputObject $Match.Value
             }
         }
     }
-    if ($cves.Count -eq 0) {
+    if ($cves.Count -eq 0)
+    {
         Write-Output -InputObject "No CVE list found for this model: $MachineType."
     }
 }

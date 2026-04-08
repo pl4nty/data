@@ -4,8 +4,7 @@ Enable or disable logging for the System Update Addin for Commercial Vantage
 
 .DESCRIPTION
 This cmdlet sets the appropriate registry key to cause the System Update Add-in
-to perfrom logging during update sessions. If neither the -Enable or -Disable
-switches are specified, then logging will be ENABLED.
+to perfrom logging during update sessions. 
 
 .PARAMETER Enable
 Enables logging
@@ -17,7 +16,7 @@ Disables logging
 Add-LnvSULogging -Enable
 
 .NOTES
-If logging is enabled, log path is located at %ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs
+If logging is enabled, log path is located at %ProgramData%\Lenovo\Vantage\Logs\LenovoSystemUpdateAddin
 
 #>
 
@@ -48,8 +47,10 @@ function Add-LnvSULogging
     }
 
     # Define reg key variables
-    $Path = "HKLM:\SOFTWARE\WOW6432Node\Lenovo\SystemUpdateAddin\Logs"
-    $Name = "EnableLogs"
+    $Path = "HKLM:\SOFTWARE\WOW6432Node\Lenovo\VantageService\FileLogger"
+    $Name1 = "LenovoVantageShell"
+    $Name2 = "AllLogs"
+
     $PathExists = Test-Path -Path $Path
 
     # Create the key if it doesn't exist
@@ -67,25 +68,25 @@ function Add-LnvSULogging
     if ($Disable.IsPresent)
     {
         try {
-            Set-ItemProperty $Path $Name -Value $false -ErrorAction Stop
+            Set-ItemProperty $Path $Name1 -Value $false -ErrorAction Stop
+            Set-ItemProperty $Path $Name2 -Value $false -ErrorAction Stop
             Write-Output -InputObject "System Update logging disabled."
         }
         catch {
-            Write-Output -InputObject "Unable to update $Name to false."
+            Write-Output -InputObject "Unable to update $Name1 and/or $Name2 to false."
             return
         }    }
     elseif ($Enable.IsPresent)
     {
          try {
-            Set-ItemProperty $Path $Name -Value $true -ErrorAction Stop
+            Set-ItemProperty $Path $Name1 -Value "Trace" -ErrorAction Stop
+            Set-ItemProperty $Path $Name2 -Value "Trace" -ErrorAction Stop
             Write-Output -InputObject "System Update logging enabled."
         }
         catch {
-            Write-Output -InputObject "Unable to update $Name to true."
+            Write-Output -InputObject "Unable to update $Name1 or $Name2 to Trace."
             return
         }
     }
 }
-
-
 # SIG # Begin signature block

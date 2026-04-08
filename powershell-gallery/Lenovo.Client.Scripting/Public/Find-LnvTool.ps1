@@ -27,38 +27,47 @@
   .NOTES
 
 #>
-function Find-LnvTool {
+function Find-LnvTool
+{
     param (
         [parameter(position = 0, Mandatory = $true, helpMessage = "Enter the tool name or use tab completion")]
-        [ValidateSet("DockManager", "SystemUpdate", "ThinInstaller", "UpdateRetriever")]
+        [ValidateSet("DockManager", "SystemUpdate", "ThinInstaller", "UpdateRetriever", "WinAIA")]
         [String] $Tool,
         [Switch] $Url
     )
 
-    try {
+    try
+    {
         [xml]$catalog = Get-LnvDATCatalog
     }
-    catch {
+    catch
+    {
         Write-Output $_
         return
     }
 
-    Switch($Tool)
+    switch ($Tool)
     {
         'DockManager' { $toolName = "Lenovo Dock Manager" }
         'SystemUpdate' { $toolName = "Lenovo System Update" }
         'ThinInstaller' { $toolName = "Lenovo Thin Installer" }
         'UpdateRetriever' { $toolName = "Lenovo Update Retriever" }
+        'WinAIA' { $toolName = "Windows Utility To Read and Write Asset ID Information" }
     }
 
     $node = $catalog.ModelList.ToolList.Tool | Where-Object { $_.name -eq "$toolName" }
-    if($null -eq $node)
+    if ($null -eq $node)
     {
         Write-Output "$toolName was not found"
-    } else {
-        if ($Url) {
+    }
+    else
+    {
+        if ($Url)
+        {
             return $node.'#text'
-        } else {
+        }
+        else
+        {
             return $node
         }
     }

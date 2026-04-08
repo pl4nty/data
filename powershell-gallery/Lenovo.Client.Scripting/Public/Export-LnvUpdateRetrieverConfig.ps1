@@ -43,11 +43,11 @@ function Export-LnvUpdateRetrieverConfig {
 
     $Key = Get-ChildItem -Path (Join-Path -Path (Join-Path -Path $Path -ChildPath "Preferences") -ChildPath "UserSettings") | Where-Object { $_.Name -match "General" }
 
-    $Outfile = $Outfile.Split('.')[0]
+    $Outfile = [System.IO.Path]::GetFileNameWithoutExtension($Outfile)
 
     try {
         Write-Output -InputObject "Exporting Update Retriever Configuration as a .reg file..."
-        Invoke-Command { reg.exe export $Key "$($Outfile).reg" /y }
+        & reg.exe export $Key.Name "$($Outfile).reg" /y
     }
     catch {
         Write-Warning -Message $_.Exception.Message

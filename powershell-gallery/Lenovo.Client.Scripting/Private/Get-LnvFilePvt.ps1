@@ -42,7 +42,6 @@ function Get-LnvFilePvt {
     #Retry policy
     $stop = $false
     $retryCount = 0
-    #$status = $null
 
     do {
         try {
@@ -52,7 +51,6 @@ function Get-LnvFilePvt {
         }catch {
             if ($retrycount -gt 3) {
                 $stop = $true
-                # $status = $_
             }
             else {
                 Start-Sleep -Seconds 5
@@ -62,26 +60,13 @@ function Get-LnvFilePvt {
     }
 
     While ($stop -eq $false)
- <#
-    if(!(Test-Path $DestinationPath)){
-        switch -Wildcard ($status)
-        {
-            "*400*" { throw "$($Url): Bad Request" }
-            "*401*" { throw "$($Url): Unauthorized" }
-            "*403*" { throw "$($Url): Forbidden" }
-            "*404*" { throw "$($Url): Not Found" }
-            "*407*" { throw "$($Url): Proxy Authentication Required" }
-            "*408*" { throw "$($Url): Request Timeout" }
-            "*500*" { throw "$($Url): Internal Server Error" }
-            "*501*" { throw "$($Url): Not Implemented" }
-            "*502*" { throw "$($Url): Bad Gateway" }
-            "*503*" { throw "$($Url): Service Unavailable" }
-            "*504*" { throw "$($Url): Gateway Timeout" }
-            default { throw "$($Url): Unknown exception"}
-        }
+
+    # Guard: if all retries failed and the file was never created, return false immediately.
+    if (-not (Test-Path -Path $DestinationPath)) {
+        return $false
     }
-#>
-    #Return if the file is .txt
+
+    #Return if the file is .txt or .html to ignore Readme files from CRC and size check
     $extension = [IO.Path]::GetExtension($DestinationPath)
     if ($extension -eq ".txt" -or $extension -eq ".html") {
         return $true

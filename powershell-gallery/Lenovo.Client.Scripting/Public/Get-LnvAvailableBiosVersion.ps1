@@ -129,6 +129,12 @@ function Get-LnvAvailableBiosVersion
     }
 
     # Process each package URL
+    $highestVersion = $null
+    $highestReleaseDate = $null
+    $highestPackageExe = $null
+    $highestReadmeUrl = $null
+    $highestInstallerName = $null
+
     foreach ($Url in $PackageUrls)
     {
         try
@@ -163,69 +169,77 @@ function Get-LnvAvailableBiosVersion
                 $PackageVersion = $PackageVersion.Substring(0,4)
             }
 
-            # If running on the same machine, compare versions
-            if ($script:isSelf)
+            # Track the highest version seen
+            if ($null -eq $highestVersion -or $PackageVersion -gt $highestVersion)
             {
-                if ($BiosVersion -lt $PackageVersion)
-                {
-                    Write-Output "Installed version: $BiosVersion"
-                    Write-Output "Available version: $PackageVersion released $ReleaseDate"
-                }
-                else
-                {
-                    Write-Output "BIOS is current: $BiosVersion"
-                }
-            }
-            else
-            {
-                Write-Output "Available version: $PackageVersion released $ReleaseDate"
-            }
-
-            # Display the ReadMe file
-            if ($ReadMe)
-            {
-                if ($PackageXml.Package.Files.Readme.File.Name)
-                {
-                    $readmeUrl = $baseUrl + $PackageXml.Package.Files.Readme.File.Name
-                    try
-                    {
-                        Write-Output "Opening ReadMe file..."
-                        Start-Process -FilePath $readmeUrl -ErrorAction SilentlyContinue
-                    }
-                    catch
-                    {
-                        Write-Error "Failed to open ReadMe file from $readmeUrl. Error: $($_.Exception.Message)"
-                    }
-                }
-                else
-                {
-                    Write-Output "ReadMe not found for this package."
-                }
-            }
-            # Download the package if requested
-            if ($Download)
-            {
-                try
-                {
-                    # Build the destination path
-                    $dest = Join-Path -Path $DownloadPath -ChildPath $PackageXml.Package.Files.Installer.File.Name
-
-                    # Attempt the download
-                    Invoke-WebRequest -Uri $PackageExe -OutFile $dest -ErrorAction Stop
-
-                    Write-Output "Downloaded BIOS package to $dest"
-                    Write-Output "To view the ReadMe file, use the -ReadMe parameter."
-                }
-                catch
-                {
-                    # Catch any errors during the download process
-                    Write-Error "Failed to download BIOS package from $PackageExe. Error: $($_.Exception.Message)"
-                }
+                $highestVersion = $PackageVersion
+                $highestReleaseDate = $ReleaseDate
+                $highestPackageExe = $PackageExe
+                $highestReadmeUrl = if ($PackageXml.Package.Files.Readme.File.Name) { $baseUrl + $PackageXml.Package.Files.Readme.File.Name } else { $null }
+                $highestInstallerName = $PackageXml.Package.Files.Installer.File.Name
             }
         }
         catch
         {
             Write-Error "Error processing package URL ${Url}: $_"
+        }
+    }
+
+    # Output a single result based on the highest version found
+    if ($null -ne $highestVersion)
+    {
+        if ($script:isSelf)
+        {
+            if ($BiosVersion -lt $highestVersion)
+            {
+                Write-Output "Installed version: $BiosVersion"
+                Write-Output "Available version: $highestVersion released $highestReleaseDate"
+            }
+            else
+            {
+                Write-Output "BIOS is current: $BiosVersion"
+            }
+        }
+        else
+        {
+            Write-Output "Available version: $highestVersion released $highestReleaseDate"
+        }
+
+        # Display the ReadMe file
+        if ($ReadMe)
+        {
+            if ($highestReadmeUrl)
+            {
+                try
+                {
+                    Write-Output "Opening ReadMe file..."
+                    Start-Process -FilePath $highestReadmeUrl -ErrorAction SilentlyContinue
+                }
+                catch
+                {
+                    Write-Error "Failed to open ReadMe file from $highestReadmeUrl. Error: $($_.Exception.Message)"
+                }
+            }
+            else
+            {
+                Write-Output "ReadMe not found for this package."
+            }
+        }
+
+        # Download the package if requested
+        if ($Download)
+        {
+            try
+            {
+                $dest = Join-Path -Path $DownloadPath -ChildPath $highestInstallerName
+                Invoke-WebRequest -Uri $highestPackageExe -OutFile $dest -UseBasicParsing -ErrorAction Stop
+                Write-Output "Downloaded BIOS package to $dest"
+                Write-Output "To view the ReadMe file, use the -ReadMe parameter."
+            }
+            catch
+            {
+                Write-Error "Failed to download BIOS package from $highestPackageExe. Error: $($_.Exception.Message)"
+            }
         }
     }
 }

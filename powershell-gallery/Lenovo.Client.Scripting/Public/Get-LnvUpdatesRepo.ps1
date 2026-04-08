@@ -115,6 +115,10 @@
   Get-LnvUpdatesRepo.ps1 -RepositoryPath 'Z:\21DD' -PackageTypes "1,2,3" -RebootTypes "0,3,5" -RT5toRT3
 
   .NOTES
+  =====================================================
+  | NOTICE: This cmdlet is being deprecated and will  |
+  | be removed in a future release.                   |
+  =====================================================
 #>
 function Get-LnvUpdatesRepo
 {
@@ -491,7 +495,7 @@ function Get-LnvUpdatesRepo
             {
                 if ((Get-CimInstance -Namespace root/cimv2 -ClassName Win32_ComputerSystemProduct).Vendor.ToLower() -ne 'lenovo')
                 {
-                    Write-LnvLog -Level Warning "This script is only supported on Lenovo commercial PC products."
+                    Write-LnvLog -Level Warning -Message "This script is only supported on Lenovo commercial PC products."
                     return
                 }
                 $TrimmedMachineType = (Get-CimInstance -Namespace root/cimv2 -ClassName Win32_ComputerSystemProduct).Name.Substring(0, 4).ToUpper().Trim()
@@ -560,11 +564,7 @@ function Get-LnvUpdatesRepo
             $DatabaseXsdPath = Join-Path -Path $RepositoryPath -ChildPath "database.xsd"
             $dbxsd.Save($DatabaseXsdPath)
 
-            <#
-            1.2 Create an XML document object to contain database.xml
-            Array of severities to translate integer into string
-            #>
-            $Severities = @("None", "Critical", "Recommended", "Optional")
+            # 1.2 Create an XML document object to contain database.xml
 
             # Initialize dbxml
             [System.XML.XMLDocument]$dbxml = New-Object -TypeName System.Xml.XmlDocument
@@ -731,7 +731,6 @@ function Get-LnvUpdatesRepo
                 $__url = $url.SubString(0, $url.LastIndexOf('/') + 1)
                 $__localRepositoryPath = [IO.Path]::Combine($RepositoryPath, $__packageID, $__filename)
                 $__localpath = [IO.Path]::Combine("\", $__packageID, $__filename)
-                #$__severity = $severities[$pkgXML.Package.Severity.type]
                 switch ($pkgXML.Package.Severity.type)
                 {
                     0 { $__severity = "Default" }

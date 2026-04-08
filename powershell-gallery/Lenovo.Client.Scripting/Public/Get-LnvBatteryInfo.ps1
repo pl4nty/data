@@ -97,7 +97,7 @@ try {
         }
     }
 } catch {
-    Write-Object -InputObject 'Unexpected error reading Win32_PortableBattery class.'
+    Write-Output -InputObject 'Unexpected error reading Win32_PortableBattery class.'
     # continue attempting to collect other battery details
 }
 
@@ -118,7 +118,7 @@ try {
     }
 }
 catch {
-    Write-Object -InputObject 'Unexpected error reading BatteryStatus class from root\wmi.'
+    Write-Output -InputObject 'Unexpected error reading BatteryStatus class from root\wmi.'
 }
 
 return $myLnvBatteries

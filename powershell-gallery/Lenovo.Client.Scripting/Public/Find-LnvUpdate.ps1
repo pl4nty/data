@@ -81,6 +81,12 @@
 
     .Example
         -Find-LnvUpdate 20C1 -PackageType 2
+
+    .NOTES
+    =====================================================
+    | NOTICE: This cmdlet is being deprecated and will  |
+    | be removed in a future release.                   |
+    =====================================================
 #>
 function Find-LnvUpdate {
     param (
@@ -98,7 +104,7 @@ function Find-LnvUpdate {
         [parameter(position = 6, Mandatory = $false )][Switch] $ListAll
     )
 
-    $url_1 = "http://download.lenovo.com/catalog/" + $MachineType + "_win" + $WindowsVersion + ".xml"
+    $url_1 = "https://download.lenovo.com/catalog/" + $MachineType + "_win" + $WindowsVersion + ".xml"
 
     try {
         [xml]$systemUpdates_1 = Get-LnvXmlFilePvt $url_1
@@ -184,7 +190,7 @@ function Find-LnvUpdate {
     if ($ListAll) {
         return $tbl
     } else {
-        $selection = ($tbl | Out-GridView -OutputMode Multiple -Title 'Found updates')
+        $selection = ($tbl | Out-GridView -OutputMode Single -Title 'Found updates')
         if ($null -ne $selection) {
             $selection
         }

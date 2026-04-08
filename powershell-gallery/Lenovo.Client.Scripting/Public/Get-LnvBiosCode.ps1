@@ -20,9 +20,24 @@
 
 #>
   function Get-LnvBiosCode {
-    #probs need to mock this
-    $biosversion = Get-CimInstance -Class "Win32_Bios" -Namespace "root/cimv2" | Select-Object $_.SMBIOSBIOSVersion
-    return $biosversion.SMBIOSBIOSVersion.SubString(0, 4)
+
+    try {
+            $biosversion = Get-CimInstance -Class "Win32_Bios" -Namespace "root/cimv2" -Property "SMBIOSBIOSVersion"
+            if ($null -eq $biosversion)
+            {
+                Write-Output -InputObject 'Unable to read BIOS version information from device.'
+                return
+            }
+            else
+            {
+                # The BIOS code is the first 4 characters of the SMBIOSBIOSVersion property
+                return $biosversion.SMBIOSBIOSVersion.SubString(0, 4)
+            }
+
+    }
+    catch {
+        Write-Output -InputObject 'An unexpected error occurred while reading BIOS version information.'
+    }
 }
 
 # SIG # Begin signature block

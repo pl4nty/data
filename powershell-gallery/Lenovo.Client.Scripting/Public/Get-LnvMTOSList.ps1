@@ -12,6 +12,10 @@ File path where the json file is stored. Stored by default at "C:\ProgramData\Le
 Get-LnvMTOSList -Path "C:\ProgramData\Lenovo\ClientScriptingModule\lnvUpdatesDatabase.json."
 
 .NOTES
+=====================================================
+| NOTICE: This cmdlet is being deprecated and will  |
+| be removed in a future release.                   |
+=====================================================
 To add a machine, use the Add-LnvMTOS cmdlet. To remove a machine, use the Remove-MTOS cmdlet.
 
 #>
@@ -33,7 +37,7 @@ function Get-LnvMTOSList{
         # Validate the path
         $directory = Split-Path -Parent $ListPath
         if (-not (Test-Path -Path $directory)) {
-            New-Item -ItemType Directory -Path $directoryPath -Force
+            New-Item -ItemType Directory -Path $directory -Force
             Write-Error "The specified path is not valid. Please enter a valid path."
             return
         }

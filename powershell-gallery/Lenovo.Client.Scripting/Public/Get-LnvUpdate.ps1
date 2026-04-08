@@ -56,7 +56,7 @@
 function Get-LnvUpdate {
     param (
         [ValidateLength(4,4)][parameter(Mandatory = $true, position = 0)] [String] $MachineType,
-        [parameter(position = 4, Mandatory = $false )][ValidateSet("10","11")]
+        [parameter(position = 1, Mandatory = $false )][ValidateSet("10","11")]
         [String] $WindowsVersion = "10",
         [parameter(position = 2)][String] $RepositoryFolder = "c:\testrepo",
         [parameter(position = 3)][String] $PackageType = "9",
@@ -251,7 +251,7 @@ function Get-LnvUpdate {
     if($Expand)
     {
         while ($Jobs.Runspace.IsCompleted -contains $false) {
-            Write-Output (Get-date).Tostring() "Still expanding packages..."
+            Write-Output ("$(Get-date) Still expanding packages...")
             Start-Sleep 1
         }
         $RunspacePool.Dispose()

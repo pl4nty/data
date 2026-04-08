@@ -38,29 +38,29 @@ function Get-LnvBiosVersion {
 
     )
 
+    $product = Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_ComputerSystemProduct
+    $bios    = Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS
+
     # ThinkPad
-    if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkPad%"') {
+    if ($product.Version -like "ThinkPad*") {
         if ($Format -eq "decimal") {
-            [string]$major = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMajorVersion
-            [string]$minor = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMinorVersion
-            $minor = $minor.PadLeft(2, '0')
-            $BiosVersion = $major + "." + $minor
+            [string]$major = $bios.SystemBIOSMajorVersion
+            [string]$minor = ($bios.SystemBIOSMinorVersion).ToString().PadLeft(2, '0')
+            $BiosVersion = "$major.$minor"
         }
         else {
-            $BiosVersion = ((Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion | Out-String).Trim()
+            $BiosVersion = ($bios.SMBIOSBIOSVersion | Out-String).Trim()
         }
     }
 
     # ThinkCentre/ThinkStation:
-    if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation%"') {
-        if ($Format -eq "decimal") {
-            $BiosVersionHex = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion
-            $BiosVersionHex = "0x" + $BiosVersionHex.Substring(5,2)
-            $BiosVersion = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMajorVersion
-            $BiosVersion += "."  + [Convert]::ToInt32($BiosVersionHex, 16)
+    if ($product.Version -like "ThinkCentre*" -or $product.Version -like "ThinkStation*") {
+        if ($Format -eq 'decimal') {
+            $hex = '0x' + $bios.SMBIOSBIOSVersion.Substring(5, 2)
+            $BiosVersion = $bios.SystemBIOSMajorVersion.ToString() + '.' + [Convert]::ToInt32($hex, 16)
         }
         else {
-           $BiosVersion = ((Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion | Out-String).Trim()
+            $BiosVersion = ($bios.SMBIOSBIOSVersion | Out-String).Trim()
         }
     }
     return $BiosVersion

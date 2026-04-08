@@ -70,7 +70,7 @@ function Find-LnvDriverPack
             Write-Warning "Machine type '$MachineType' was not found in the catalog."
             return
         }
-
+        $modelName = $node.Name
         # If SCCM driver packs exist, return them or return the latest, if requested
         $sccmPacks = $node.SCCM
         if ($null -eq $sccmPacks)
@@ -82,12 +82,36 @@ function Find-LnvDriverPack
         if ($Latest)
         {
             # Return only the latest SCCM driver pack
-            return $sccmPacks | Select-Object -Last 1
+            [PSCustomObject]$outList = @()
+            $pack = $sccmPacks | Select-Object -Last 1
+            $outList += [PSCustomObject]@{
+                Model        = $modelName
+                OS           = $pack.OS
+                OSVersion    = $pack.Version
+                SHA256       = $pack.CRC
+                MD5          = $pack.MD5
+                DateReleased = $pack.Date
+                URL          = $pack.'#text'
+            }
+            return $outList
         }
         else
         {
             # Return all SCCM driver packs for the machine type
-            return $sccmPacks
+            [PSCustomObject]$outList = @()
+            foreach ($pack in $sccmPacks)
+            {
+                $outList += [PSCustomObject]@{
+                    Model        = $modelName
+                    OS           = $pack.OS
+                    OSVersion    = $pack.Version
+                    SHA256       = $pack.CRC
+                    MD5          = $pack.MD5
+                    DateReleased = $pack.Date
+                    URL          = $pack.'#text'
+                }
+            }
+            return $outList
         }
     }
     catch

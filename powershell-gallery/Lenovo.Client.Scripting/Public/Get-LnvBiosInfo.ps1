@@ -45,23 +45,26 @@ function Get-LnvBiosInfo {
 
     ### Get Version and VersionString
     try {
-        # ThinkPad
-        if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkPad%"') {
 
-            [string]$major = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMajorVersion
-            [string]$minor = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMinorVersion
+        $product = Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_ComputerSystemProduct
+        $bios    = Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS
+        # ThinkPad
+        if ($product.Version -like "ThinkPad*") {
+
+            [string]$major = $bios.SystemBIOSMajorVersion
+            [string]$minor = $bios.SystemBIOSMinorVersion
             $myLnvBios.Version = $major + "." + $minor
-            $myLnvBios.VersionString = ((Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion | Out-String).Trim()
+            $myLnvBios.VersionString = ($bios.SMBIOSBIOSVersion | Out-String).Trim()
         }
 
         # ThinkCentre/ThinkStation:
-        if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation%"') {
-            $BiosVersionHex = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion
+        if ($product.Version -like "ThinkCentre*" -or $product.Version -like "ThinkStation*") {
+            $BiosVersionHex = $bios.SMBIOSBIOSVersion
             $BiosVersionHex = "0x" + $BiosVersionHex.Substring(5,2)
-            $myLnvBios.Version = (Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SystemBIOSMajorVersion
+            $myLnvBios.Version = $bios.SystemBIOSMajorVersion
             $myLnvBios.Version += "."  + [Convert]::ToInt32($BiosVersionHex, 16)
 
-            $myLnvBios.VersionString = ((Get-CimInstance -Namespace root/CIMV2 -ClassName Win32_BIOS).SMBIOSBIOSVersion | Out-String).Trim()
+            $myLnvBios.VersionString = ($bios.SMBIOSBIOSVersion | Out-String).Trim()
         }
     }
     catch {
@@ -71,8 +74,7 @@ function Get-LnvBiosInfo {
 
     ### Get ImageCode
     try {
-        $biosversion = Get-CimInstance -Class "Win32_Bios" -Namespace "root/cimv2" | Select-Object $_.SMBIOSBIOSVersion
-        $myLnvBios.ImageCode = $biosversion.SMBIOSBIOSVersion.SubString(0, 4)
+        $myLnvBios.ImageCode = $bios.SMBIOSBIOSVersion.SubString(0, 4)
     }
     catch {
         Write-Output -InputObject 'Unexpected error reading from Win32_Bios'
@@ -81,7 +83,7 @@ function Get-LnvBiosInfo {
 
     ### Get AvailableVersion
     try {
-        $MachineType = ((Get-CimInstance Win32_ComputerSystem).Model.SubString(0, 4)).Trim()
+        $MachineType = ($product.Name.SubString(0, 4)).Trim()
     }
     catch {
         Write-Output -InputObject 'Unexpected error retrieving Machine Type.'
@@ -136,7 +138,7 @@ function Get-LnvBiosInfo {
                 }
 
                 # ThinkCentre/ThinkStation have full BIOS image name with hex build number in package XML version attribute
-                if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation"') {
+                if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation%"') {
                     $PackageVersionHex = "0x" + $PackageVersion.SubString(5,2)
                     $PackageVersion = "1." + [Convert]::ToInt32($PackageVersionHex, 16)
                 }
@@ -192,7 +194,7 @@ function Get-LnvBiosInfo {
 
                 71 { $myLnvBios.PasswordsSet = "71: Supervisor + System Management + Power On + User HDD and/or User HDD Master Password" }
 
-                default { $myLnvBios.PasswordsSet = $lbp.PasswordState.ToString }
+                default { $myLnvBios.PasswordsSet = $lbp.PasswordState.ToString() }
             }
         } else {
             $myLnvBios.PasswordsSet = "Requires elevated access."
@@ -215,8 +217,8 @@ function Get-LnvBiosInfo {
         }
 
         $cves = @()
+        $Regex = [regex] 'CVE-\d{4}-\d{4,7}'
         foreach ($line in $readme) {
-            $Regex = [regex] 'CVE-\d{4}-\d{4,7}'
             $Found = $Regex.Matches($line)
             foreach ($Match in $Found) {
                 if (-Not $cves.Contains($Match.Value)) {

@@ -149,20 +149,21 @@ function Get-LnvUpdatesNotification {
                     if ($descCRC -ne $crc) {
                         $updatesFound = $true
 
-                        # Get the package locations from the description XML
-                        $packageLocations = $xmlDesc.SelectNodes("//catalog/location") | ForEach-Object { $_.InnerText }
+                        # Get the catalog location from the description XML
+                        $catalogLocation = $xmlDesc.SelectNodes("//catalog/location") | ForEach-Object { $_.InnerText }
 
                         # Construct the package URLs
-                        $catalogUpdates = $packageLocations | ForEach-Object { "https://download.lenovo.com/catalog/$_" }
+                        #$catalogUpdates = $catalogLocation | ForEach-Object { "https://download.lenovo.com/catalog/$_" }
+                        $catalogUpdates = "https://download.lenovo.com/catalog/$catalogLocation"
 
                         # Find the update node in the description XML
-                        [System.XML.XMLDocument]$xmlPackage = Get-LnvXmlFilePvt $catalogUpdates
+                        [System.XML.XMLDocument]$xmlPackages = Get-LnvXmlFilePvt $catalogUpdates
 
                         # Extract the location node texts
-                        $packageLocations = $xmlPackage.SelectNodes("//packages/package/location") | ForEach-Object { $_.InnerText }
+                        $packageLocations = $xmlPackages.SelectNodes("//packages/package/location") | ForEach-Object { $_.InnerText }
 
                         # Find new updates and add to newAvailableUpdates list
-                        $newUpdates = $packageLocations | Where-Object { $availableUpdates -notcontains $_ }#$packageLocations}
+                        $newUpdates = $packageLocations | Where-Object { $availableUpdates -notcontains $_ }
                         $newAvailableUpdates += $newUpdates
 
                         $totalUpdates = $newUpdates.Count

@@ -34,13 +34,11 @@ function Find-LnvBiosInfo
 {
     [CmdletBinding(DefaultParameterSetName = 'MT')]
     param (
-        #different parameter sets to prevent both from showing
-        #something should be mandatory
         [ValidateLength(4, 4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character Machine Type to search for", ParameterSetName = "MT")] [String] $MachineType,
         [ValidateLength(4, 4)][parameter(position = 0, Mandatory = $true, helpMessage = "Enter the four-character BIOS Image Name to search for", ParameterSetName = "BIOS")] [String] $BiosCode
     )
 
-    #change to hashtable?
+
     class LnvBiosDetails
     {
         [string]$ImageCode
@@ -128,12 +126,12 @@ function Find-LnvBiosInfo
             $myLnvBios.AvailableVersion = 'Not found'
         }
 
-        if ($PackageUrls.Count -eq 0)
+        if (@($PackageUrls).Count -eq 0)
         {
             Write-Output -InputObject "No BIOS update available in catalog"
             $myLnvBios.AvailableVersion = 'Not found'
         }
-        elseif ($PackageUrls.Count -gt 1)
+        elseif (@($PackageUrls).Count -gt 1)
         {
             #replace the multiple found with the actual urls via -join
             $myLnvBios.AvailableVersion = 'Multiple found'
@@ -164,7 +162,7 @@ function Find-LnvBiosInfo
             }
 
             # ThinkCentre/ThinkStation have full BIOS image name with hex build number in package XML version attribute
-            if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation"')
+            if (Get-CimInstance -Query 'SELECT * from Win32_ComputerSystemProduct WHERE Version LIKE "ThinkCentre%" OR Version LIKE "ThinkStation%"')
             {
                 $PackageVersionHex = "0x" + $PackageVersion.SubString(5, 2)
                 $PackageVersion = "1." + [Convert]::ToInt32($PackageVersionHex, 16)
@@ -195,9 +193,9 @@ function Find-LnvBiosInfo
         }
 
         $cves = @()
+        $Regex = [regex] 'CVE-\d{4}-\d{4,7}'
         foreach ($line in $readme)
         {
-            $Regex = [regex] 'CVE-\d{4}-\d{4,7}'
             $Found = $Regex.Matches($line)
             foreach ($Match in $Found)
             {
