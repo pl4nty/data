@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260403.13.0",
+        "CalendarCompanionDFVersion": "1.20260406.9.0",
         "CalendarCompanionMsitVersion": "1.20260401.9.0",
         "CalendarCompanionProdVersion": "1.20260325.9.0",
         "CompanionRing": "Prod",
@@ -279,6 +279,7 @@
         "ImmersiveProfile": false,
         "InferredContacts": true,
         "InsightBoldDesignEnabled": false,
+        "IsAssistantEnabledInOrgExplorer": true,
         "IsAssistantInProfileEditorEnabled": true,
         "IsConversationRecapLanguageSupportEnabled": true,
         "IsConversationRecapPromptEnabled": true,
@@ -1975,7 +1976,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260331.10.0",
+        "PeopleInTaskbarDFVersion": "1.20260406.9.0",
         "PeopleInTaskbarMsitVersion": "1.20260325.9.0",
         "PeopleInTaskbarProdVersion": "1.20260318.9.0",
         "PeopleInTaskbarVersion": "1.20260318.9.0",
