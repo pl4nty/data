@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13704868,
+    "size": 13716243,
     "file_count": 169
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "name": "android_toolchain",
-    "size": 563552,
+    "size": 564597,
     "file_count": 9
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 33203121,
-    "file_count": 4032
+    "size": 33208485,
+    "file_count": 4033
   },
   {
     "name": "boringssl",
-    "size": 76757,
+    "size": 77563,
     "file_count": 15
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "name": "catapult",
-    "size": 4938072,
+    "size": 4938063,
     "file_count": 338
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 37249,
+    "size": 37206,
     "file_count": 5
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16241263,
+    "size": 16250217,
     "file_count": 1953
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19588587,
+    "size": 19601387,
     "file_count": 19
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 56686,
+    "size": 59984,
     "file_count": 35
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4251536,
+    "size": 4250533,
     "file_count": 600
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "skia",
-    "size": 3480921,
-    "file_count": 1191
+    "size": 3481264,
+    "file_count": 1193
   },
   {
     "name": "speech-dispatcher",
@@ -746,7 +746,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1462434,
+    "size": 1469304,
     "file_count": 23
   },
   {
@@ -756,12 +756,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2656783,
+    "size": 2671314,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7438227,
+    "size": 7437938,
     "file_count": 195
   },
   {
