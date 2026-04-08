@@ -1045,7 +1045,6 @@
     },
     "TeamsAdminCenter_Prod": {
         "Feature": {
-            "UI.Mgmt.Copilot.UserProfileSuggestionPills": true,
             "UI.Mgmt.Perf.GraphGroupsCaching": true
         }
     },
