@@ -63,6 +63,9 @@ message Workspace {
 
   // Whether the copilot project feature is enabled for this workspace.
   optional bool is_copilot_project_enabled = 8;
+
+  // An optional emoji icon for the workspace.
+  optional string emoji = 9;
 }
 
 // Sync protocol datatype extension for saved tabs. WorkspaceTabs

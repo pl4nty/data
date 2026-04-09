@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33208485,
-    "file_count": 4033
+    "size": 33212150,
+    "file_count": 4034
   },
   {
     "name": "boringssl",
@@ -176,7 +176,7 @@
   },
   {
     "name": "dpkg-shlibdeps",
-    "size": 57794,
+    "size": 57793,
     "file_count": 10
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "skia",
-    "size": 3481264,
-    "file_count": 1193
+    "size": 3481465,
+    "file_count": 1195
   },
   {
     "name": "speech-dispatcher",
