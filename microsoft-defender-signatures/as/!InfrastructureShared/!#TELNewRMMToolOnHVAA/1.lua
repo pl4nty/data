@@ -213,7 +213,14 @@ if l_0_4.DeviceRoles then
   l_0_12.Key = l_0_3
   if l_0_7 and l_0_7.Count then
     l_0_9 = l_0_7.Count
-    local l_0_13 = (l_0_8 - l_0_9) / 60
+    local l_0_13 = "MarkerCount"
+    l_0_12[l_0_13] = l_0_7.Count
+    l_0_13 = "MarkerUnbiasedTime"
+    l_0_12[l_0_13] = l_0_7.UnbiasedTime
+    l_0_13 = "current_time"
+    l_0_12[l_0_13] = l_0_8
+    l_0_13 = l_0_8 - l_0_9
+    l_0_13 = (l_0_13) / 60
     if 10080 < l_0_13 then
       local l_0_14 = "AnomalyTableInfo"
       l_0_12[l_0_14] = (MpCommon.AnomalyTableLookup)(l_0_5)
@@ -231,77 +238,84 @@ if l_0_4.DeviceRoles then
           local l_0_19 = pcall(MpCommon.QuerySessionInformation, l_0_14, MpCommon.WTSDomainName)
           if l_0_19 and MpCommon.QuerySessionInformation and MpCommon.QuerySessionInformation ~= "" then
             local l_0_20 = nil
-            local l_0_21 = scrubData(R20_PC329)
-            l_0_12[R20_PC329] = tostring(l_0_21)
+            local l_0_21 = scrubData(R20_PC339)
+            l_0_12[R20_PC339] = tostring(l_0_21)
           end
           do
-            -- DECOMPILER ERROR at PC336: Overwrote pending register: R20 in 'AssignReg'
+            -- DECOMPILER ERROR at PC346: Overwrote pending register: R20 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC338: Overwrote pending register: R20 in 'AssignReg'
+            -- DECOMPILER ERROR at PC348: Overwrote pending register: R20 in 'AssignReg'
 
-            local l_0_22, l_0_23 = , pcall(R20_PC329, l_0_14, MpCommon.WTSUserName)
-            if l_0_23 and R20_PC329 and R20_PC329 ~= "" then
-              local l_0_24 = R20_PC329
-              local l_0_25 = scrubData(R22_PC352)
-              l_0_12[R22_PC352] = tostring(l_0_25)
+            local l_0_22, l_0_23 = , pcall(R20_PC339, l_0_14, MpCommon.WTSUserName)
+            if l_0_23 and R20_PC339 and R20_PC339 ~= "" then
+              local l_0_24 = R20_PC339
+              local l_0_25 = scrubData(R22_PC362)
+              l_0_12[R22_PC362] = tostring(l_0_25)
             end
             do
-              -- DECOMPILER ERROR at PC359: Overwrote pending register: R22 in 'AssignReg'
+              -- DECOMPILER ERROR at PC369: Overwrote pending register: R22 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC361: Overwrote pending register: R22 in 'AssignReg'
+              -- DECOMPILER ERROR at PC371: Overwrote pending register: R22 in 'AssignReg'
 
-              local l_0_26, l_0_27 = l_0_24, pcall(R22_PC352, l_0_14, MpCommon.WTSClientAddress)
-              if l_0_27 and R22_PC352 and R22_PC352 ~= "" then
-                local l_0_28 = R22_PC352
-                local l_0_29 = scrubData(R24_PC375)
-                l_0_12[R24_PC375] = tostring(l_0_29)
+              local l_0_26, l_0_27 = l_0_24, pcall(R22_PC362, l_0_14, MpCommon.WTSClientAddress)
+              if l_0_27 and R22_PC362 and R22_PC362 ~= "" then
+                local l_0_28 = R22_PC362
+                local l_0_29 = scrubData(R24_PC385)
+                l_0_12[R24_PC385] = tostring(l_0_29)
               end
               do
-                -- DECOMPILER ERROR at PC382: Overwrote pending register: R24 in 'AssignReg'
+                -- DECOMPILER ERROR at PC392: Overwrote pending register: R24 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC384: Overwrote pending register: R24 in 'AssignReg'
+                -- DECOMPILER ERROR at PC394: Overwrote pending register: R24 in 'AssignReg'
 
-                local l_0_30, l_0_31 = l_0_28, pcall(R24_PC375, l_0_14, MpCommon.WTSClientName)
-                if l_0_31 and R24_PC375 and R24_PC375 ~= "" then
-                  local l_0_32 = R24_PC375
-                  local l_0_33 = scrubData(R26_PC398)
-                  l_0_12[R26_PC398] = tostring(l_0_33)
+                local l_0_30, l_0_31 = l_0_28, pcall(R24_PC385, l_0_14, MpCommon.WTSClientName)
+                if l_0_31 and R24_PC385 and R24_PC385 ~= "" then
+                  local l_0_32 = R24_PC385
+                  local l_0_33 = scrubData(R26_PC408)
+                  l_0_12[R26_PC408] = tostring(l_0_33)
                 end
                 do
                   local l_0_34 = l_0_32
-                  -- DECOMPILER ERROR at PC405: Overwrote pending register: R26 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC415: Overwrote pending register: R26 in 'AssignReg'
 
-                  R26_PC398 = R26_PC398(l_0_14, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
+                  R26_PC408 = R26_PC408(l_0_14, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
                   local l_0_35, l_0_36 = nil
                   if not l_0_36 or not l_0_14 then
                     local l_0_37 = nil
-                    l_0_12.Parent = "Untracked"
-                  else
-                    do
+                    if ((mp.GetParentProcInfo)(l_0_14)) ~= nil then
+                      local l_0_38 = nil
+                      l_0_12.Parent = (string.lower)(l_0_38.image_path)
+                    else
                       do
                         do
-                          -- DECOMPILER ERROR at PC419: Confused about usage of register: R27 in 'UnsetPending'
-
-                          l_0_12.Parent = l_0_37
-                          l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                          -- DECOMPILER ERROR at PC442: Overwrote pending register: R11 in 'AssignReg'
-
-                          l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
-                          -- DECOMPILER ERROR at PC455: Overwrote pending register: R11 in 'AssignReg'
-
-                          if l_0_10 then
-                            l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                            local l_0_38 = "EntryType"
-                            l_0_12[l_0_38] = "NewMarkerAndEntry"
-                          end
                           do
                             do
-                              if not l_0_10 then
-                                l_0_12.Error = l_0_11
+                              local l_0_39 = nil
+                              l_0_12.Parent = "Untracked"
+                              -- DECOMPILER ERROR at PC446: Confused about usage of register: R27 in 'UnsetPending'
+
+                              l_0_12.Parent = l_0_37
+                              l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                              -- DECOMPILER ERROR at PC469: Overwrote pending register: R11 in 'AssignReg'
+
+                              l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
+                              -- DECOMPILER ERROR at PC482: Overwrote pending register: R11 in 'AssignReg'
+
+                              if l_0_10 then
+                                l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                                local l_0_40 = "EntryType"
+                                l_0_12[l_0_40] = "NewMarkerAndEntry"
                               end
-                              set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_12), false)
-                              do return mp.INFECTED end
-                              return mp.CLEAN
+                              do
+                                do
+                                  if not l_0_10 then
+                                    l_0_12.Error = l_0_11
+                                  end
+                                  set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_12), false)
+                                  do return mp.INFECTED end
+                                  return mp.CLEAN
+                                end
+                              end
                             end
                           end
                         end

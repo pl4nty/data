@@ -53,12 +53,21 @@ do
           R13_PC103 = R13_PC103(l_0_0, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
           local l_0_19, l_0_20 = nil
           if not l_0_20 or not l_0_0 then
-            l_0_1.Parent = "Untracked"
+            local l_0_21 = nil
+            if (mp.GetParentProcInfo)(l_0_0) ~= nil then
+              l_0_1.Parent = (string.lower)(((mp.GetParentProcInfo)(l_0_0)).image_path)
+            else
+              l_0_1.Parent = "Untracked"
+            end
           else
-            l_0_1.Parent = l_0_0
+            do
+              -- DECOMPILER ERROR at PC132: Confused about usage of register: R14 in 'UnsetPending'
+
+              l_0_1.Parent = l_0_21
+              set_research_data("HVASessionInfo", safeJsonSerialize(l_0_1), false)
+              return mp.INFECTED
+            end
           end
-          set_research_data("HVASessionInfo", safeJsonSerialize(l_0_1), false)
-          return mp.INFECTED
         end
       end
     end
