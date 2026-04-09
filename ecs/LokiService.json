@@ -2123,6 +2123,7 @@
         "hostTrySuspend_shared": 1,
         "logSuspensionMemorySnapshots": 1,
         "lokiConfigMgrAsync": 1,
+        "preStartSignIn": true,
         "reduceSearchResults": 1,
         "refactorFeedbackConfig_shared ": 1,
         "samplingConfig": {
