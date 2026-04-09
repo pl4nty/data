@@ -278,6 +278,7 @@
             "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
             "EnableMhsAppPolicyReviseBehavior": true,
+            "EnablePatchConfigAssignmentOnAlreadyExistsException": true,
             "EnablePrsv3ForAosp": true,
             "EnableRequestEnterpriseUpgradeUrl": true,
             "EnableWpDeviceTypeUpdate": true

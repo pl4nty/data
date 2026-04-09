@@ -1,5 +1,176 @@
 [
     {
+        "created": "2026-04-08T23:00:03",
+        "description": "Preview videos and audio files with an improved player directly in the Outlook iOS mobile app. The enhanced player provides updated controls and a smoother playback experience.",
+        "id": 560056,
+        "locale": null,
+        "modified": "2026-04-08T23:00:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Upgraded Video and Audio Player for iOS"
+    },
+    {
+        "created": "2026-04-08T23:00:03",
+        "description": "Admins can enable a tenant-wide policy that allows Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods. This enables Copilot to continue answering questions about past meetings even after transcripts expire. Admins can also configure how long this AI-generated meeting archive is stored.",
+        "id": 558933,
+        "locale": null,
+        "modified": "2026-04-08T23:00:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: AI-generated meeting archive for knowledge retention"
+    },
+    {
+        "created": "2026-04-08T23:00:03",
+        "description": "Teams rooms on Windows supports Entra Resource Accounts for secure, passwordless sign-in that separates device and user identities. IT admins can migrate to Entra accounts easily with the migration wizard, and track progress using a dashboard in the Pro Management portal.",
+        "id": 558853,
+        "locale": null,
+        "modified": "2026-04-08T23:00:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Entra passwordless resource account support for Teams Rooms on Windows devices"
+    },
+    {
         "created": "2026-04-07T23:15:03",
         "description": "Get Copilot suggestions in the Outlook search menu to help you stay on top of your inbox and calendar, find what you are looking for and get more done in Outlook.",
         "id": 559990,
@@ -5114,12 +5285,12 @@
     },
     {
         "created": "2026-03-12T23:00:54",
-        "description": "Windows 365 Link will be available for sale in Norway and Philippines.",
+        "description": "Windows 365 Link will be available for sale in Norway",
         "id": 558253,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9933,9 +10104,9 @@
         "description": "Customers can submit their custom Copilot agents built in Agent Builder to the Agent Store under the \"Built by your org\" section, after admin review and approval in M365 Admin Center. This governed flow enables admins to review, approve, and publish submitted agents so that they can be discovered and used by others in the Agent Store. This helps organizations share validated agents at scale while maintaining quality and governance.",
         "id": 557173,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11184,12 +11355,12 @@
         "description": "Admins will be able to select hard delete configuration while setting up a priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
         "id": 557188,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12785,12 +12956,12 @@
         "description": "Tenant admins can enable a meeting policy setting that generates 8 digit numeric-only passcodes for meetings organized by selected users/groups. Because numeric-only passcodes increase the risk of unauthorized access, enabling the setting displays a warning and requires explicit confirmation.",
         "id": 555858,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36377,9 +36548,9 @@
         "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
         "id": 513429,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36432,9 +36603,9 @@
         "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
         "id": 513428,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36487,9 +36658,9 @@
         "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
         "id": 513427,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -58835,9 +59006,9 @@
         "description": "Users will able to select content sources on Copilot Chat. When users select content sources the responses generated will be limited to content from the selected sources.",
         "id": 496596,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -65421,15 +65592,15 @@
     },
     {
         "created": "2025-05-14T23:00:01",
-        "description": "Copilot suggests how users should RSVP to meeting requests, based on meeting importance, availability, and working hours. With help from Copilot, users can streamline meeting request triaging, increase the number of triaged meetings, and reduce the time required for triaging.",
+        "description": "Copilot suggests how users should RSVP to meeting requests, based on meeting importance, availability, and working hours. With help from Copilot, users can streamline meeting request triaging, increase the number of triaged meetings, and reduce the time required for triaging. We will not be launching this feature at this time. We apologize for any inconveniences. ",
         "id": 487412,
         "locale": null,
-        "modified": "2025-07-24T23:15:15",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -78537,12 +78708,12 @@
         "description": "In this update, we are making the below enhancements to IRM exclusions to reduce alert noise. 1. Keyword logic update for email - An email will be excluded from scoring only when all the attachments match the keyword exclusions or email subject matches the keyword exclusions. This will be helpful to reduce the email signature noise which commonly contains keyword \"image\". 2. Keyword exclusions on both target and source file paths - For signals like file copied to removable media, keyword exclusions apply on both target and source file paths. 3. File path exclusions for removable media - We will start supporting file path exclusions for removable media. 4. Exclusion support for browser - Domain exclusions are now supported for browsing indicators. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 486826,
         "locale": null,
-        "modified": "2025-07-09T23:00:43",
+        "modified": "2026-04-08T23:00:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"

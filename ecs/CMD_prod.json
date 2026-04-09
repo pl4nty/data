@@ -770,6 +770,7 @@
         "FrontlineUnassignedDevices_EnableListCloudPCs": true,
         "FrontlineUnassignedDevices_EnableRemoteActionDetour": true,
         "FrontlineWaitForStopWorkflowCompletionForCloudPCActivation": true,
+        "FrontlineWorkflowCRSReporting": true,
         "HandleWdsConnectivityResultInDenoramlize": true,
         "HideMovePreviewTag": true,
         "HideUtilizationReportPreviewTag": true,
