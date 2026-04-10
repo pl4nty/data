@@ -26,7 +26,7 @@ has been advised of the possibility of such damages.
 RootModule = 'Lenovo.Client.Scripting.psm1'
 
 # Version number of this module.
-ModuleVersion = '2.4.0'
+ModuleVersion = '2.4.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -112,9 +112,7 @@ FunctionsToExport = @(
     "Get-LnvProductNumber",
     "Get-LnvSerial",
     "Get-LnvSystemFirmwareVersion",
-    "Get-LnvUpdate",
     "Get-LnvUpdatesNotification",
-    "Get-LnvUpdatesRepo",
     "Get-LnvWarranty",
     "Get-LnvWUFriendlyName",
     "Invoke-LnvCVLogViewer",

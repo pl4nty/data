@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 Stores list of available updates, based on machine type and OS input, into an updates database file (lnvUpdatesDatabase.json). The database consists of Machine Type, OS, CRC, and Available Updates. The updates come from the System Update catalog for the machine type & OS combination.
 
