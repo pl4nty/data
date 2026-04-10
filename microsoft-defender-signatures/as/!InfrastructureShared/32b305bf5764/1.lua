@@ -8,6 +8,8 @@ do
     local l_0_0 = (this_sigattrlog[1]).utf8p2
     ;
     (bm.trigger_sig_delayed)("Report_hmdprecisionpulsefullfilepathscan_statuscheck_10", l_0_0, 300000)
+    ;
+    (bm.trigger_sig)("SummaryReport_hmdprecisionpulsefullfilepathscan", "A")
   end
   return mp.CLEAN
 end

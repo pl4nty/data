@@ -45,26 +45,29 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
           local l_0_26 = l_0_25.key
           local l_0_27 = l_0_25.value
           if l_0_26 == "Payload" then
-            do
-              do
-                l_0_20 = l_0_27
-                EnablePrecisionPulse(l_0_20, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
-                do break end
-                -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out DO_STMT
-
-                -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
+            l_0_20 = l_0_27
+            local l_0_28, l_0_29 = pcall(EnablePrecisionPulse, l_0_20, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
+            if l_0_29 then
+              local l_0_30 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
+              local l_0_31 = {}
+              l_0_31[1] = l_0_30
+              local l_0_32 = {}
+              l_0_32.SIG_CONTEXT = "LUA_GENERIC"
+              l_0_32.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
+              l_0_32.TAG = "NOLOOKUP"
+              l_0_32.Report_Error = l_0_29
+              pcall(mp.GetUrlReputation, l_0_31, l_0_32)
             end
+            break
           end
         end
       end
     end
   end
 end
-l_0_0 = mp
-l_0_0 = l_0_0.CLEAN
-return l_0_0
+do
+  l_0_0 = mp
+  l_0_0 = l_0_0.CLEAN
+  return l_0_0
+end
 

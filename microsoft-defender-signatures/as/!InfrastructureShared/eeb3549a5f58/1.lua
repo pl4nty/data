@@ -46,6 +46,8 @@ l_0_1["Trojan:Win64/Amadey.Z!sms"] = true
 l_0_1["Trojan:Win32/Amadey.ZZ!sms"] = true
 l_0_1["Trojan:Win64/Amadey.ZZ!sms"] = true
 l_0_1["Trojan:Win64/Stealc.ZZ!sms"] = true
+l_0_1["Trojan:Win64/Stealc.ZY!sms"] = true
+l_0_1["PWS:Win64/StealC.STA!sms"] = true
 if not l_0_1[l_0_0.utf8p2] then
   (bm.trigger_sig)("MaceNonVetted_Sig", tostring(l_0_0.utf8p2))
   return mp.CLEAN

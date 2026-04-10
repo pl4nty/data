@@ -1,16 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6d78ad28dc96\1.luac 
+-- Command line: lua\!InfrastructureShared\ff78fd5e36da\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetHSTRCallerId)()
-if isnull(l_0_0) then
-  return mp.CLEAN
-end
-if mp.HSTR_CALLER_SMS == l_0_0 then
+if l_0_0 ~= nil and mp.HSTR_CALLER_SMS == l_0_0 then
+  reportDetectedRegions()
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("SLF:Trojan:Win32/LokiScexecDLL.A")
 return mp.LOWFI
 

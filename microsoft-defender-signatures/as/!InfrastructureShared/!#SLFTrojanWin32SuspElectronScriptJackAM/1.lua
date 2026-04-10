@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32ElectronScriptJackAM\1.luac 
+-- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32SuspElectronScriptJackAM\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -48,7 +48,7 @@ do
     end
     -- DECOMPILER ERROR at PC392: Confused about usage of register: R4 in 'UnsetPending'
 
-    if l_0_6 < 10 then
+    if l_0_6 < 15 then
       return mp.CLEAN
     end
     set_research_data("electron_susp_js_path", l_0_1, false)

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\8c7888ffbab2\1.luac 
+-- Command line: lua\!InfrastructureShared\807872cb3c30\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -21,7 +21,7 @@ do
     return mp.INFECTED
   end
   ;
-  (mp.set_mpattribute)("SLF:Trojan:Win32/LokiAssemblyDLL.A")
+  (mp.set_mpattribute)("SLF:Trojan:Win32/LokiScexecDLL.A")
   return mp.LOWFI
 end
 
