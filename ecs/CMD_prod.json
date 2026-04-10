@@ -313,6 +313,7 @@
         "EnableCloudPcInGracePeriodScenarioV2": true,
         "EnableCloudPcInaccessibleScenario": true,
         "EnableCloudPcInsightReport": true,
+        "EnableCloudPcNewL2Entry": true,
         "EnableCloudPcOnPremNetworkConnectionScenarioV2": true,
         "EnableCloudPcProvisionScenarioV2": true,
         "EnableCloudPcReboot": true,
