@@ -734,44 +734,48 @@
       <o:url>https://shredder.osi.office.net/ShredderService/web/desktop/views/main.cshtml</o:url>
     </o:service>
     <o:service o:name="EnrichmentUrl">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/web/view/desktop/main.cshtml</o:url>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/web/view/desktop/main.cshtml</o:url>
     </o:service>
     <o:service o:name="EnrichmentDisambiguateUrl" o:authentication="1">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/Resolve/v1</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.osi.office.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/Resolve/v1</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="osi.office.net" o:headerName="Authorization" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
     </o:service>
     <o:service o:name="EnrichmentBloomFilterBaseUrl">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/web/Metadata/</o:url>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/web/Metadata/</o:url>
     </o:service>
     <o:service o:name="EnrichmentMetadataUrl" o:authentication="1">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/web/Metadata/metadata.json</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.osi.office.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/web/Metadata/metadata.json</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="osi.office.net" o:headerName="Authorization" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
     </o:service>
     <o:service o:name="EnrichmentRefreshUrl" o:authentication="1">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/Refresh/v1</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.osi.office.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/Refresh/v1</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="osi.office.net" o:headerName="Authorization" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
     </o:service>
     <o:service o:name="EnrichmentReportContentUrl">
       <o:url>https://petrol.office.microsoft.com/v1/feedback</o:url>
     </o:service>
     <o:service o:name="EnrichmentSearchUrl" o:authentication="1">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/Search/v1</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.osi.office.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/Search/v1</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="osi.office.net" o:headerName="Authorization" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
     </o:service>
     <o:service o:name="EnrichmentIPCheckUrl">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/ipcheck/v1</o:url>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/ipcheck/v1</o:url>
     </o:service>
     <o:service o:name="EnrichmentWACUrl">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/web/view/web/main.cshtml</o:url>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/web/view/web/main.cshtml</o:url>
     </o:service>
     <o:service o:name="EnrichmentStockHistoryUrl" o:authentication="1">
-      <o:url>https://enrichment.osi.office.net/OfficeEnrichment/StockHistory/v1</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.osi.office.net/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://enrichment.svc.cloud.microsoft/OfficeEnrichment/StockHistory/v1</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://enrichment.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="osi.office.net" o:headerName="Authorization" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
+    </o:service>
+    <o:service o:name="UrlReputationCheckEndpoint" o:authentication="2">
+      <o:url>https://safelinks.protection.outlook.com/api/GetUrlReputation</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://dataservice.o365filtering.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="UrlReputationService" o:authentication="2">
       <o:url>https://safelinks.protection.outlook.com/api/GetPolicy</o:url>

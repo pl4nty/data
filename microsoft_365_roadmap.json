@@ -1,5 +1,231 @@
 [
     {
+        "created": "2026-04-09T23:15:51",
+        "description": "This feature empowers authors to create rich, interactive charts with AI in SharePoint when editing SharePoint pages. Authors can describe the chart they want to create in plain language within a chat on a SharePoint page. ",
+        "id": 560076,
+        "locale": null,
+        "modified": "2026-04-09T23:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Create charts on pages with AI"
+    },
+    {
+        "created": "2026-04-09T23:15:51",
+        "description": "With this feature, IRM alerts and other supporting data will be available in the following Microsoft Defender XDR experiences:\n\n1. IRM alerts will be surfaced in unified alert and Incident queue in Microsoft Defender XDR.\n2. IRM alerts, Indicators and enriched events will be available in Microsoft Defender XDR advanced hunting. Analysts can leverage KQL queries to identify potentially hidden risky patterns in data security related user activity.\n3. IRM alert, Indicators and enriched events will be exposed through Graph API.\n\nThis feature can be enabled through \u201cShare data with Microsoft Defender XDR\u201d within Microsoft Insider Risk Management settings\n\nIRM data in Microsoft Defender XDR does not honor anonymization. This is to enable effective correlation of IRM alerts with alerts from other solutions in Microsoft Defender XDR platform (such as Defender for Endpoint, Defender for Cloud apps, etc.).\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
+        "id": 560075,
+        "locale": null,
+        "modified": "2026-04-09T23:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Insider Risk Management- IRM alerts in XDR"
+    },
+    {
+        "created": "2026-04-09T23:15:51",
+        "description": "GCC-H and DoD customers can now experience multi-stream IntelliFrame in Microsoft Teams Rooms on Windows, which sends separate video feeds of each in-room participant to improve hybrid meeting visibility and inclusivity. Requires a compatible intelligent camera. Available with Teams Rooms Pro.",
+        "id": 560052,
+        "locale": null,
+        "modified": "2026-04-09T23:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Multi-stream IntelliFrame support for GCC-H and DoD in Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-04-09T23:15:51",
+        "description": "GCC-H and DoD cloud customers can now experience multi-camera views in Microsoft Teams Rooms on Windows, allowing remote participants to switch between multiple in-room camera feeds for improved visibility and engagement in larger spaces. Find camera requirements here. Available with Teams Rooms Pro.",
+        "id": 560049,
+        "locale": null,
+        "modified": "2026-04-09T23:15:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Multi\u2011camera view support for GCC-H and DoD in Teams Rooms on Windows"
+    },
+    {
         "created": "2026-04-08T23:00:03",
         "description": "Preview videos and audio files with an improved player directly in the Outlook iOS mobile app. The enhanced player provides updated controls and a smoother playback experience.",
         "id": 560056,
@@ -53,10 +279,10 @@
         "description": "Admins can enable a tenant-wide policy that allows Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods. This enables Copilot to continue answering questions about past meetings even after transcripts expire. Admins can also configure how long this AI-generated meeting archive is stored.",
         "id": 558933,
         "locale": null,
-        "modified": "2026-04-08T23:00:03",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -76,7 +302,7 @@
                 "tagName": "General Availability"
             },
             {
-                "tagName": "Preview"
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -103,7 +329,7 @@
                     "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Preview"
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -3463,12 +3689,12 @@
         "description": "File Creation and File Modification conditions in Microsoft Purview DLP for SharePoint and OneDrive and AutoLabelling will give organizations more precise control over DLP policy definition. These conditions allow admins to configure policies based on when the files were created or last modified, enabling policies that target newly created documents, recently edited files, or older content that may require stricter governance. With these new date-based predicates, Purview DLP delivers stronger lifecycle-aware protection, improved policy accuracy, and greater flexibility in securing data across SPOD.",
         "id": 557590,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4611,9 +4837,9 @@
         "description": "Use intelligent summaries in Copilot Dashboard to quickly surface what\u2019s working and where targeted attention can accelerate Copilot adoption. Intelligent summaries highlight key adoption trends to focus on areas of success. Suggested prompts enable deeper exploration of underlying trends and drivers.\n",
         "id": 557681,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6002,12 +6228,12 @@
         "description": "When create or edit a presentation with Copilot in PowerPoint, you can now select which model to use, including both Open AI and Anthropic models. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 558443,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7620,12 +7846,12 @@
         "description": "Microsoft Security Store is now integrated into the Microsoft Purview DLP experience, giving admins an in\u2011product way to discover a curated set of integrations that extend Purview capabilities, including data security capabilities for the network. Purchasing and management are completed through Security Store, simplifying how organizations procure partner integrations.",
         "id": 557977,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8761,12 +8987,12 @@
         "description": "Other AI apps will move to pay-as-you-go model. Microsoft Copilot experiences indicators can still be used for free even without subscription. To continue using Other AI apps indicators, please link an Azure subscription to Microsoft Purview to enable billing. \n\nInsider Risk Management indicators transitioning to a pay-as-you-go pricing model: \u201cEntering risky prompt in Other AI apps\u201d. This indicator is present in Policy indicators-> Generative AI apps -> Other AI apps \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent\u202finsider risks, such as IP theft, data leakage,\u202fand security violations.\u202fInsider Risk Management enables customers to\u202fcreate policies to manage security and compliance. Built with privacy by\u202fdesign, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure\u202fuser-level privacy.\u202f\u200b\u202f ",
         "id": 557548,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15046,12 +15272,12 @@
         "description": "Logical grouping of files with same schema and are under the same folder into a single file known as resource set. Using advanced resource set capability, customers can define pattern rules that will help group files based on custom patterns.",
         "id": 554935,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36218,9 +36444,9 @@
         "description": "The PDF Viewer in Microsoft Edge is migrating to WebUI2, enhancing responsiveness and introducing a series of subtle visual upgrades aimed at improving overall usability and utility. This migration ensures UI coherence with the rest of the browser while maintaining the same user experience.\nThe update focuses on improving underlying performance, consistency in design elements, and a smoother interaction without altering any existing workflows for users.",
         "id": 516043,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103295,15 +103521,15 @@
     },
     {
         "created": "2024-04-15T23:15:00",
-        "description": "Audit Search allows customers to retrieve audit logs relevant to a security or compliance investigation. With this change, customers will now be able to search for relevant audit logs using additional fields such as Record ID, UserKey, UserType, and ClientIP.",
+        "description": "Microsoft has decided not to proceed with New filters in Audit Search",
         "id": 392842,
         "locale": null,
-        "modified": "2025-08-18T23:00:53",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "GCC"
@@ -103356,15 +103582,15 @@
     },
     {
         "created": "2024-02-23T00:15:24",
-        "description": "Audit Search allows customers to retrieve audit logs relevant to a security or compliance investigation. With this change, customers will now be able to search for relevant audit logs using additional fields such as Record ID, UserKey, UserType, and ClientIP.",
+        "description": "Microsoft has decided not to proceed with New filters in Audit Search.",
         "id": 384092,
         "locale": null,
-        "modified": "2025-07-24T23:15:15",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "April CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -113412,10 +113638,10 @@
         "description": "This release of eDiscovery features the implementation of customer-managed key (CMK) options, allowing users to manage their own encryption keys for the data stored in eDiscovery review sets in addition to the default, strong Microsoft-managed encryption already in place.",
         "id": 117569,
         "locale": null,
-        "modified": "2025-12-09T00:00:24",
+        "modified": "2026-04-09T23:15:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
-        "publicPreviewDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [

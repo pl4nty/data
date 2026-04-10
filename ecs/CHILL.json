@@ -1505,6 +1505,165 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_Harmony.e675cbd9-6799-406a-b5fe-09c7deef3e92": {
+            "CampaignId": "e675cbd9-6799-406a-b5fe-09c7deef3e92",
+            "EndTimeUtc": "2026-05-02T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1209600,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 10,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-04-02T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "MultiTurnChatUsage",
+                            "Count": 2,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AppInactivityLengthSatisfied",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [
+                        {
+                            "conditions": [
+                                {
+                                    "conditionType": "Equals",
+                                    "conditionValue": false,
+                                    "sourceId": "surveyPickerB",
+                                    "sourceType": "Variable"
+                                }
+                            ],
+                            "targets": [
+                                {
+                                    "hiddenPageIndices": [
+                                        1
+                                    ],
+                                    "type": "Page"
+                                }
+                            ]
+                        },
+                        {
+                            "conditions": [
+                                {
+                                    "conditionType": "Equals",
+                                    "conditionValue": true,
+                                    "sourceId": "surveyPickerB",
+                                    "sourceType": "Variable"
+                                }
+                            ],
+                            "targets": [
+                                {
+                                    "hiddenPageIndices": [
+                                        0
+                                    ],
+                                    "type": "Page"
+                                }
+                            ]
+                        }
+                    ],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very disappointed",
+                                        "Somewhat disappointed",
+                                        "Not disappointed",
+                                        "Relieved"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How would you feel if you could no longer use the M365 Copilot App?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What about the M365 Copilot App would you miss the most if you no longer had access to it?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very disappointed",
+                                        "Somewhat disappointed",
+                                        "Not disappointed",
+                                        "Relieved"
+                                    ],
+                                    "id": "singleselect2",
+                                    "questionLabel": "How would you feel if you could no longer use the M365 Copilot App?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "What would you change in the M365 Copilot App to make it more helpful and essential for you?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/e675cbd9-6799-406a-b5fe-09c7deef3e92/e9cda0f3-2fe2-4f6a-a6dd-3a8b76cfe96d/Web-Harmony/",
+                    "variables": {
+                        "surveyPickerB": true
+                    }
+                }
+            }
         }
     },
     "ChillMSInvest": {
@@ -3671,6 +3830,152 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/f75faa5f-0e3f-47dc-b094-60be402f8db8/7428d7b9-d55b-4f7e-9934-eae78e693c97/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        }
+    },
+    "ChillVivaGlint": {
+        "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
+            "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
+            "EndTimeUtc": "2026-05-29T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NPSStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very unlikely",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5 - Very likely"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How likely are you to recommend Glint to others, if asked?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/64136d79-3325-42a4-83c4-c88d2a3588e2/78467781-f378-4b5b-8f4a-a81091f9050a/Web-VivaGlint/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
+            "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
+            "EndTimeUtc": "2026-05-29T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NSATStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very unsatisfied",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5 - Very satisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How satisfied are you with Glint?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/fb84830a-f4c4-4312-a8ee-781e174a0ad7/e733fe7c-ad1d-4239-a6a1-3bdb77241f74/Web-VivaGlint/",
                     "variables": {}
                 }
             }

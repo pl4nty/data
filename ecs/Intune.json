@@ -14,6 +14,9 @@
         "terms.termspage.enabled": true,
         "workplacejoin.workplacejoinheal.enabled": 1
     },
+    "CLI_DesktopMAM": {
+        "DesktopMAM_Canary": 1
+    },
     "CLI_DeviceInventory": {
         "FlightingV2": {
             "b07651fe-b4f8-4882-93f9-ee12a21a833c": true
@@ -371,7 +374,8 @@
             "QBSFSICoreMigrationSwitchOverBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
-            "QBSFSICoreOrganizationMigrationSwitchOver": true
+            "QBSFSICoreOrganizationMigrationSwitchOver": true,
+            "UseLKG_DetectedMalware": true
         }
     },
     "SVC_DataPlatformMetadata": {
@@ -632,14 +636,16 @@
             "EnableFilterSearchSortV2": true,
             "EnableIRGFilterSearchSort": true,
             "EnableMDQErrorSplitting": true,
-            "EnableMDQExportToCSV": true
+            "EnableMDQExportToCSV": true,
+            "MDQAddToGroup": true
         }
     },
     "UX_RemoteAssist": {
         "FlightingV2": {
             "ManagedInstallerScoping": true,
             "ManagedInstallerScopingAndExclusions": true,
-            "ManagedInstallerTargetingUX": true
+            "ManagedInstallerTargetingUX": true,
+            "TeamViewerV2": true
         }
     },
     "UX_TenantSetup": {
