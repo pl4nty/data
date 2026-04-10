@@ -16,6 +16,9 @@ do
     if (string.find)(l_0_1, "finger ", 1, true) and (string.find)(l_0_1, "delims=", 1, true) and (string.find)(l_0_1, "call ", 1, true) and (string.find)(l_0_1, "@", 1, true) then
       return mp.INFECTED
     end
+    if (string.find)(l_0_1, "&& certutil -decode", 1, true) and (string.find)(l_0_1, "&& conhost.exe --headless", 1, true) then
+      return mp.INFECTED
+    end
   end
   return mp.CLEAN
 end
