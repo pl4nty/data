@@ -71555,73 +71555,6 @@
     },
     {
         "created": "2025-04-23T16:15:28",
-        "description": "Customers now have new experience to discover, install, and use/reuse agents within the Copilot app for Microsoft 365.",
-        "id": 486699,
-        "locale": null,
-        "modified": "2025-06-10T23:00:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Enhanced contextual discovery of agents within Microsoft 365"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
         "description": "This new capability further integrates SharePoint Online with Purview sensitivity labeling. SharePoint Online document library owners can set a new type of default label on the library, which automatically applies that label to all unprotected Word, Excel, PowerPoint, and PDF files within the library. This simplifies labeling in bulk across document libraries in an organization, enriches DLP and Copilot with signal to allow admins to monitor and restrict access to this content, and enables inheritance of sensitivity labels to output artifacts in Copilot. #copilotcontrolsystem",
         "id": 485733,
         "locale": null,
@@ -86595,67 +86528,6 @@
         "title": "Microsoft Teams: Local PTZ camera controls for Microsoft Teams Rooms on Android"
     },
     {
-        "created": "2025-02-26T23:15:50",
-        "description": "You can use Endpoint data loss prevention (DLP) just-in-time (JIT) protection to block all egress activities on monitored files while waiting for policy evaluation to successfully complete. When JIT protection is enabled, and while policy evaluation is processing, Endpoint DLP blocks all egress activities for each user whose account is in the selected scope. Endpoint DLP audits the egress activities for all user accounts that have been excluded (via the Exclude setting) or are otherwise not in scope.",
-        "id": 483354,
-        "locale": null,
-        "modified": "2025-06-10T23:00:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint DLP support - Just-in-time on MacOS"
-    },
-    {
         "created": "2025-02-26T20:15:57",
         "description": "Copilot is only available during the live call session and will not be accessible after the call ends. No recording or transcription is required to use Copilot during the call.\n\n ",
         "id": 482745,
@@ -91737,61 +91609,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Information Protection - Scan cold files in SharePoint and OneDrive for sensitive information"
-    },
-    {
-        "created": "2025-01-23T00:15:18",
-        "description": "Viva Amplify will support sending mail with sensitivity. ",
-        "id": 477370,
-        "locale": null,
-        "modified": "2025-06-10T23:00:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "April CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": " Microsoft Viva: Viva Amplify - Sensitivity labels"
     },
     {
         "created": "2025-01-23T00:15:18",
