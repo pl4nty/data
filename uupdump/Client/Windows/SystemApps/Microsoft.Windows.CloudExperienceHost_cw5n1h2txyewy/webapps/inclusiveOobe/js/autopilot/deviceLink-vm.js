@@ -285,17 +285,16 @@ define([
             try {
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
 
-                let walletBarcode = new Windows.ApplicationModel.Wallet.WalletBarcode(Windows.ApplicationModel.Wallet.WalletBarcodeSymbology.qr, this.deviceLinkInfo);
+                let autopilotUtilities = new ModernDeployment.Autopilot.Core.AutopilotUtilities();
+                let streamRef = await autopilotUtilities.getQrCodeImageAsync(this.deviceLinkInfo);
 
-                let image = await walletBarcode.getImageAsync();
-                if (image != null) {
+                if (streamRef != null) {
                     let qrCodeElement = document.getElementById("qrCodeImage");
-
                     qrCodeElement.setAttribute("aria-label", resourceStrings.DeviceLinkQRCodeNarratorText);
-                    let blob = await image.openReadAsync();
 
-                    let qrImageStream = MSApp.createStreamFromInputStream("image/bmp", blob);
-                    qrCodeElement.src = URL.createObjectURL(qrImageStream);
+                    let stream = await streamRef.openReadAsync();
+                    let blob = MSApp.createBlobFromRandomAccessStream("image/png", stream);
+                    qrCodeElement.src = URL.createObjectURL(blob);
 
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
                 } else {

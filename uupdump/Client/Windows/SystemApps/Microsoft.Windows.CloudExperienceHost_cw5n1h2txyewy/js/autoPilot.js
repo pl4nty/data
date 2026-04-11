@@ -131,21 +131,45 @@ var CloudExperienceHost;
                 });
             }
 
-            async function checkIfShouldSkipAsync() {
+            async function shouldSkipDeviceRenameDueToCloudAssignedDeviceName() {
                 try {
                     let deviceName = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("CloudAssignedDeviceName");
 
                     if ((deviceName === null) || (deviceName === "")) {
-                        CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Info: No device name specified. Skipping Autopilot device rename.");
+                        CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.shouldSkipDeviceRenameDueToCloudAssignedDeviceName: Info: No device name specified. Skipping Autopilot device rename.");
                         return true;
                     } else {
                         let deviceNameLastProcessed = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("CloudAssignedDeviceNameLastProcessed");
                         if (deviceName === deviceNameLastProcessed) {
-                            CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Info: Autopilot device rename has already been set. Skipping device rename.");
+                            CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.shouldSkipDeviceRenameDueToCloudAssignedDeviceName: Info: Autopilot device name has already been set. Skipping device rename.");
                             return true;
                         }
                         return false;
                     }
+                } catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.shouldSkipDeviceRenameDueToCloudAssignedDeviceName: Failure: AutoPilotDeviceRename preload check failed. Skipping Autopilot device rename.", JSON.stringify(err));
+                    return true;
+                }
+            }
+
+            async function checkIfShouldSkipAsync() {
+                try {
+                    if (CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging")) {
+                        let autopilotUtilities = new ModernDeployment.Autopilot.Core.AutopilotUtilities();
+                        let dnsDeviceNameValue = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("DnsDeviceName");
+                        if ((dnsDeviceNameValue !== null) && (dnsDeviceNameValue !== "")) {
+                            let dnsDeviceNameValueLastProcessed = await EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotUtilStatics.getStringPolicyAsync("DnsDeviceNameLastProcessed");
+                            if (dnsDeviceNameValue === dnsDeviceNameValueLastProcessed) {
+                                CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Info: Skip setting long device name since the same name had already been set.");
+                                return true;
+                            } else {
+                                CloudExperienceHost.Telemetry.logEvent("Autopilot long device name policy is configured.");
+                                return false;
+                            }
+                        }
+                    }
+
+                    return await shouldSkipDeviceRenameDueToCloudAssignedDeviceName();
                 } catch (err) {
                     CloudExperienceHost.Telemetry.logEvent("ShouldSkipDeviceRename.checkIfShouldSkipAsync: Failure: AutoPilotDeviceRename preload check failed. Skipping Autopilot device rename.", JSON.stringify(err));
                     return true;

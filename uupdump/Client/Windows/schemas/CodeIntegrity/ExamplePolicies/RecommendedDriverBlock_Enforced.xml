@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.29520.0</VersionEx>
+  <VersionEx>10.0.29545.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -626,7 +626,15 @@
     <Deny ID="ID_DENY_EIO64_5" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Sha1" Hash="ED54E23998978F8124BD1F97C265F708DDBA1DE0" />
     <Deny ID="ID_DENY_EIO64_6" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Sha256" Hash="D4E7335A177E47688D68AD89940C272F82728C882623F1630E7FD2E03E16F003" />
     <Deny ID="ID_DENY_EIO64_7" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha1" Hash="D1AAAAF1EEA34073BAF39C7494E646C5AD2475F5" />
-    <Deny ID="ID_DENY_EIO64_8" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha256" Hash="796BEC283155309F2DF0B1779CABC78A3B2161FFCED9F521DB231550DCB376A1" />
+    <Deny ID="ID_DENY_EIO64_8" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha256" Hash="796BEC283155309F2DF0B1779CABC78A3B2161FFCED9F521DB231550DCB376A1" />    
+    <Deny ID="ID_DENY_ENPORT_1" FriendlyName="EnPortv.sys\8af0621a8bb84196247f673bb76473406a3e87c0ca47813684a63b16b270cd30 Hash Sha1" Hash="AD319BF9C0C0C80735629316AA4DC067EA65DD08"/>
+    <Deny ID="ID_DENY_ENPORT_2" FriendlyName="EnPortv.sys\8af0621a8bb84196247f673bb76473406a3e87c0ca47813684a63b16b270cd30 Hash Sha256" Hash="1A4FE27DC388234440A049B7077E6F8C107A002A22C22B4356F1656BAB6A310D"/>
+    <Deny ID="ID_DENY_ENPORT_3" FriendlyName="EnPortv.sys\8af0621a8bb84196247f673bb76473406a3e87c0ca47813684a63b16b270cd30 Hash Page Sha1" Hash="F871E94F605F29DD43DB00D8B58E5524EEE647FB"/>
+    <Deny ID="ID_DENY_ENPORT_4" FriendlyName="EnPortv.sys\8af0621a8bb84196247f673bb76473406a3e87c0ca47813684a63b16b270cd30 Hash Page Sha256" Hash="F65D183F336C11E6BB379D1F7627633DD555B26529A7250FC4AC5552ACDE70CC"/>
+    <Deny ID="ID_DENY_ENPORT_5" FriendlyName="EnPortv.sys\df0966c93c5c3d47bca2805a5bfa00664c2f1bbaf0275f96fa9d8b2f21846f4b Hash Sha1" Hash="6539771AF5822F82276936178AEDE3AC5C549134"/>
+    <Deny ID="ID_DENY_ENPORT_6" FriendlyName="EnPortv.sys\df0966c93c5c3d47bca2805a5bfa00664c2f1bbaf0275f96fa9d8b2f21846f4b Hash Sha256" Hash="C9177E12BA44C309C66DD85DE1853A736CAA6B6F0D2C36C473C8B65789C782D0"/>
+    <Deny ID="ID_DENY_ENPORT_7" FriendlyName="EnPortv.sys\f831f0128c23e9b6559773e6d52890b511b1107aa730a4fed671379cb1c7008c Hash Sha1" Hash="63C1F7A73C98EF4A00DB6DDB98ED05D8E16A110F"/>
+    <Deny ID="ID_DENY_ENPORT_8" FriendlyName="EnPortv.sys\f831f0128c23e9b6559773e6d52890b511b1107aa730a4fed671379cb1c7008c Hash Sha256" Hash="ADFA9184BEBFF5B2B2A249F9E733C40CCF83F44896C52156E9EA8C507D630150"/>
     <Deny ID="ID_DENY_FH_ETHER_1" FriendlyName="Omron FH-Ether\ae71f40f06edda422efcd16f3a48f5b795b34dd6d9bb19c9c8f2e083f0850eb7 Hash Sha1" Hash="364F53ED52E121182BE0E0A21C17C2254894713D"/>
     <Deny ID="ID_DENY_FH_ETHER_2" FriendlyName="Omron FH-Ether\ae71f40f06edda422efcd16f3a48f5b795b34dd6d9bb19c9c8f2e083f0850eb7 Hash Sha256" Hash="5E7B92E6A1F656A70ED56EF2A190FCE6BB3F12063B891FBFD722CA4E951DE15F"/>
     <Deny ID="ID_DENY_GEDEVDRV_1" FriendlyName="GEDevDrv.sys\51145a3fa8258aac106f65f34159d23c54b48b6d54ec0421748b3939ab6778eb Hash Sha1" Hash="ED3F9E742B37A81DB447D9D398F3EA26235E05AA"/>
@@ -1705,6 +1713,12 @@
     <Deny ID="ID_DENY_WINRING_23" FriendlyName="WinRing0.sys\32df55a6f917c549b1bf7b73a94c7386012265e87992ee065161a0a51e35ae57" Hash="CD19C1C9629F9E8AC8B64B52242A925171522894" />
     <Deny ID="ID_DENY_WINRING_24" FriendlyName="WinRing0.sys\32df55a6f917c549b1bf7b73a94c7386012265e87992ee065161a0a51e35ae57 " Hash="49A1FD9D7B7EB4713210EC04C216A4153EF8E34D74DF11DA42426F2422F04EC3" />
     <Deny ID="ID_DENY_WINRING_25" FriendlyName="WinRing0x64.sys\394a34adfb3dcc2ab37fead7592a25531d625582cebe6fa687913d8900e79b76" Hash="394A34ADFB3DCC2AB37FEAD7592A25531D625582CEBE6FA687913D8900E79B76" />
+    <Deny ID="ID_DENY_WSFTPRM_1" FriendlyName="wsftprm.sys\160a6619e5b4ee9e9bd4344f55115748e35e1635a23dbee49ad2a810cba40fa1" Hash="5245396687EBD7AD7035A2D89400341244FDD8B8"/>
+    <Deny ID="ID_DENY_WSFTPRM_2" FriendlyName="wsftprm.sys\160a6619e5b4ee9e9bd4344f55115748e35e1635a23dbee49ad2a810cba40fa1" Hash="160A6619E5B4EE9E9BD4344F55115748E35E1635A23DBEE49AD2A810CBA40FA1"/>
+    <Deny ID="ID_DENY_WSFTPRM_3" FriendlyName="wsftprm.sys\2e763aae36ef08978d13c262ebc0b53b99acc61268e4e71a6347d276f978a676" Hash="6E14FDA9AB14E04A40D59F1D672C93D345D3D8BF"/>
+    <Deny ID="ID_DENY_WSFTPRM_4" FriendlyName="wsftprm.sys\2e763aae36ef08978d13c262ebc0b53b99acc61268e4e71a6347d276f978a676" Hash="2E763AAE36EF08978D13C262EBC0B53B99ACC61268E4E71A6347D276F978A676"/>
+    <Deny ID="ID_DENY_WSFTPRM_5" FriendlyName="wsftprm.sys\e20381b3c01bc1df17a1dba6926a2a014baccd76273a49e03a6b947a28477155" Hash="DB9C24DF7236EC7F36A18F28268A7B5D7526DF5B"/>
+    <Deny ID="ID_DENY_WSFTPRM_6" FriendlyName="wsftprm.sys\e20381b3c01bc1df17a1dba6926a2a014baccd76273a49e03a6b947a28477155" Hash="E20381B3C01BC1DF17A1DBA6926A2A014BACCD76273A49E03A6B947A28477155"/>
     <!-- Deny and FileAttrib rules specifying FileName should always specify MinimumFileVersion and MaximumFileVersion. SiPolicy checks matches minVer <= ver && maxVer >= ver-->
     <Deny ID="ID_DENY_PROCESSHACKER" FriendlyName="kprocesshacker.sys FileRule" FileName="kprocesshacker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.65535.65535" />
     <Deny ID="ID_DENY_AMP" FriendlyName="System Mechanic CVE-2018-5701" FileName="amp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="5.4.11.1" />
@@ -1767,7 +1781,8 @@
     <FileAttrib ID="ID_FILEATTRIB_ECSIODRV" FriendlyName="EliteGroup ECSioDriver\270547552060c6f4f5b2ebd57a636d5e71d5f8a9d4305c2b0fe5db0aa2f389cc FileAttribute" FileName="ECSIoDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_EIO64" FriendlyName="ASUS EIO64.sys\1fac3fab8ea2137a7e81a26de121187bf72e7d16ffa3e9aec3886e2376d3c718 FileAttribute" FileName="EIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_EELAM" FriendlyName="ESET eelam Overpermissive ELAM FileAttribute" FileName="eelam.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.16.0" />
-    <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
+    <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />    
+    <FileAttrib ID="ID_FILEATTRIB_ENPORT" FriendlyName="Encase Enport.sys\030ec373e4eb92592cbfc5e590ddbcbc5ece2d43809b141bb3fffceb0e01f72e FileAttribute" FileName="EnPortv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>    
     <FileAttrib ID="ID_FILEATTRIB_ETDSUPPORT" FriendlyName="HP EtdSupport\0d383e469d0e27ebb713770f01f7f1a57068a7d30478221e6f2276125048d1c9 FileAttribute" FileName="etdsupp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="20.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_FAIRPLAY" FriendlyName="Deny FairplayKD.sys MTA San Andreas Versions 367.*" ProductName="MTA San Andreas" MinimumFileVersion="367.0.0.0" MaximumFileVersion="367.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_FPCIE" FriendlyName="Feature Integration FPCIE2COM.sys\17942865680bd3d6e6633c90cc4bd692ae0951a8589dbe103c1e293b3067344d FileAttribute" FileName="FPCIE2COM.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1786,6 +1801,7 @@
     <FileAttrib ID="ID_FILEATTRIB_IOMEM" FriendlyName="DT Research iomem\2b507e0ad4515d9d47fb7f0bfa1f1eb11de25db4fca49fc1417ea991dc33b6bf FileAttribute" FileName="iomem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.21" />
     <FileAttrib ID="ID_FILEATTRIB_JNPRVA" FriendlyName="neofltr.sys\37507cdb5df5669862f0213feb521dc82a3c87b85c5489bbffdaedd1c43da132 FileAttribute" FileName="neofltr.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="22.0.0.0"/>
+    <FileAttrib ID="ID_FILEATTRIB_K7RKSCAN" FriendlyName="K7RKScan.sys\02bf867ca3f4bd7f3d2829f4eaf0ad10a32e67e7c976f80ef0d1009c2d9cdf25 FileAttribute" FileName="K7RKScan" MinimumFileVersion="0.0.0.0" MaximumFileVersion="23.0.0.10"/>
     <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_KSAPI" FriendlyName="KingSoft ksapi.sys FileAttribute" FileName="ksapi.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2020.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LDIAGO_1" FriendlyName="Lenovo ldiagio.sys\68ca1b5151181a98cd6da55d6dfd6ef0c94f0cf9379be37a8f86dd996d677946 FileAttribute" FileName="LDiagIO_legacy.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1865,6 +1881,8 @@
     <FileAttrib ID="ID_FILEATTRIB_WIRWADRV" FriendlyName="Winstron wirwadrv\d8fc8e3a1348393c5d7c3a84bcbae383d85a4721a751ad7afac5428e5e579b4e FileAttribute" FileName="WiRwaDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_WNBIOS" FriendlyName="wnbios.sys\530d9223ec7e4123532a403abef96dfd1af5291eb49497392ff5d14d18fccfbb  FileAttribute" FileName="wnbios.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_WRKRN" FriendlyName="WRkrn.sys\061d9e1cbb06bee5bad025bbc190de1d83bc8298610a6eb525102d9600cfd683  FileAttribute" FileName="WRkrn.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="9.0.42.41" />
+    <FileAttrib ID="ID_FILEATTRIB_WSFTPRM" FriendlyName="Gaz Steffani Topaz wsftprm.sys\006e089d3e53a5d3cd55ea7dd7b629e4aae3fbd96ee236b88306ab78236c36ee FileAttribute" FileName="wsftprm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0"/>
     <FileAttrib ID="ID_FILEATTRIB_ZAM_1" FriendlyName="Zemana ZAM\a3908b3fa59c0fc7600ff8887a87861a4f8566ca0a3bdcf2371bb9f36745db91 FileAttribute" FileName="ZAM.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ZAM_2" FriendlyName="Zemana Zam\036c1151a30a9c25afc961d7305c58cbf8f68e5e5c1e726565c9a8168c2f3cdb FileAttribute" ProductName="AntiLogger Free" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ZAM_3" FriendlyName="Zemana Zam\0aa79d4c5c3baca0aee095bdbdfddfe70fad495c791066c416bd732eaec2d965 FileAttribute" ProductName="ZAM" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1892,7 +1910,9 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_K7RKSCAN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IOMAP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IOMEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
@@ -1922,6 +1942,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_SYSDETECTOR_6" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VDBSV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WNBIOS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WSFTPRM" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2010_2" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
@@ -2045,11 +2066,13 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ASWSP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATIDSMXX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_FPCIE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HWRWDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_K7RKSCAN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LV_DIAG" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MBAMCHAMELEON" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
@@ -2067,6 +2090,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_TRUESIGHT"/>
       <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WNBIOS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WSFTPRM" />
     </Signer>
     <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2014" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
@@ -2084,12 +2108,14 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_CGWIN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CORSAIRLLACCESS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_GDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HAXM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HW" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IOBITUNLOCKER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_K7RKSCAN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
@@ -2117,6 +2143,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WISEUNLO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WNBIOS" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WSFTPRM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZAM_1" />
     </Signer>
    <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2010" Name="Microsoft Third Party Component Windows PCA 2010">
@@ -2135,6 +2162,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CP2X72C_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_GDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
@@ -3017,6 +3045,30 @@
       <CertPublisher Value="Shandong Anzai Information Technology CO.,Ltd."/>
       <FileAttribRef RuleID="ID_FILEATTRIB_NSECKRNL"/>
     </Signer>
+    <Signer ID="ID_SIGNER_BRAINSTORM" Name="BRAINSTORM SISTEMAS/BRAIN STORM LTDA">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
+      <CertOemID Value="BRAINSTORM SISTEMAS DE SOFTWARE"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_WRKRN" Name="Microsoft Windows Third Party Component CA 2014">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
+      <CertOemID Value="Webroot Inc."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_WRKRN"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_K7RKSCAN" Name="Thawte Code Signing CA - G2">
+      <CertRoot Type="TBS" Value="95795D2AA2A554A423BC8C6E5B0A016D14887D35"/>
+      <CertPublisher Value="Binzhoushi Yongyu Feed Co.,LTd."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_K7RKSCAN"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_ENPORT_1" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF"/>
+      <CertPublisher Value="Guidance Software, Inc."/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_ENPORT_2" Name="USERTrust RSA Certification Authority">
+      <CertRoot Type="TBS" Value="435FE6564241D6B3828352EF9BE443D511C21F0AFB325C4038A5820F00D87774A8EF2193DDAAE065B2572FAF2BF0EE63"/>
+      <CertPublisher Value="Open Text Corporation"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_ENPORT"/>
+    </Signer>
     <!-- Malicious Signers -->
     <Signer ID="ID_SIGNER_AMON" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
@@ -3155,6 +3207,7 @@
           <DeniedSigner SignerId="ID_SIGNER_BDAPI_UTIL" />
           <DeniedSigner SignerId="ID_SIGNER_BEIJING_CHUNBAI" />
           <DeniedSigner SignerId="ID_SIGNER_BEIJING_VSK" />
+          <DeniedSigner SignerId="ID_SIGNER_BRAINSTORM" />
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
           <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_CLEVERSOAR" />
@@ -3169,6 +3222,8 @@
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ECSIODRV" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
+          <DeniedSigner SignerId="ID_SIGNER_ENPORT_1" />
+          <DeniedSigner SignerId="ID_SIGNER_ENPORT_2" />
           <DeniedSigner SignerId="ID_SIGNER_ETDSUPPORT" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_1" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_2" />
@@ -3220,6 +3275,7 @@
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
           <DeniedSigner SignerId="ID_SIGNER_JNPRVA_1" />
           <DeniedSigner SignerId="ID_SIGNER_JNPRVA_2" />
+          <DeniedSigner SignerId="ID_SIGNER_K7RKSCAN" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_1" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_2" />
           <DeniedSigner SignerId="ID_SIGNER_KSAPI_3" />
@@ -3898,6 +3954,14 @@
           <FileRuleRef RuleID="ID_DENY_EIO64_6" />
           <FileRuleRef RuleID="ID_DENY_EIO64_7" />
           <FileRuleRef RuleID="ID_DENY_EIO64_8" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_1" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_2" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_3" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_4" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_5" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_6" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_7" />
+          <FileRuleRef RuleID="ID_DENY_ENPORT_8" />
           <FileRuleRef RuleID="ID_DENY_FH_ETHER_1" />
           <FileRuleRef RuleID="ID_DENY_FH_ETHER_2" />
           <FileRuleRef RuleID="ID_DENY_GEDEVDRV_1" />
@@ -4977,6 +5041,12 @@
           <FileRuleRef RuleID="ID_DENY_WINRING_23"/>
           <FileRuleRef RuleID="ID_DENY_WINRING_24"/>
           <FileRuleRef RuleID="ID_DENY_WINRING_25"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_1"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_2"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_3"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_4"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_5"/>
+          <FileRuleRef RuleID="ID_DENY_WSFTPRM_6"/>
           <FileRuleRef RuleID="ID_DENY_PROCESSHACKER"/>
           <FileRuleRef RuleID="ID_DENY_AMP"/>
           <FileRuleRef RuleID="ID_DENY_ASMMAP"/>
@@ -5008,7 +5078,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.29520.0</String>
+        <String>10.0.29545.0</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
