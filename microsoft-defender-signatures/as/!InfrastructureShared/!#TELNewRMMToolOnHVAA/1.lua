@@ -202,116 +202,112 @@ local l_0_4 = ExtractDeviceProperties()
 if l_0_4.DeviceRoles then
   local l_0_5 = "Anomaly_RMM"
   local l_0_6 = "NewRMMToolOnHVA.J"
-  local l_0_7 = (MpCommon.AnomalyEventLookup)(l_0_5, "MarkerRecord_RMMAnomaly", 1)
-  local l_0_8 = (MpCommon.GetCurrentTimeT)()
-  local l_0_9 = l_0_8
-  local l_0_10, l_0_11 = nil, nil
-  local l_0_12 = {}
-  l_0_12.TrackedProcess = l_0_1
-  l_0_12.SignatureName = l_0_6
-  l_0_12.AnomalyTableName = l_0_5
-  l_0_12.Key = l_0_3
+  local l_0_7 = ((MpCommon.AnomalyEventLookup)(l_0_5, "MarkerRecord_RMMAnomaly", 1))
+  local l_0_8, l_0_9 = nil, nil
+  local l_0_10 = {}
+  l_0_10.TrackedProcess = l_0_1
+  l_0_10.SignatureName = l_0_6
+  l_0_10.AnomalyTableName = l_0_5
+  l_0_10.Key = l_0_3
   if l_0_7 and l_0_7.Count then
-    l_0_9 = l_0_7.Count
-    local l_0_13 = "MarkerCount"
-    l_0_12[l_0_13] = tostring(l_0_7.Count)
-    l_0_13 = "MarkerUnbiasedTime"
-    l_0_12[l_0_13] = tostring(l_0_7.UnbiasedTime)
-    l_0_13 = "current_time"
-    l_0_12[l_0_13] = l_0_8
-    l_0_13 = l_0_8 - l_0_9
-    l_0_13 = (l_0_13) / 60
-    if 10080 < l_0_13 then
-      local l_0_14 = "AnomalyTableInfo"
-      l_0_12[l_0_14] = (MpCommon.AnomalyTableLookup)(l_0_5)
-      l_0_14 = "EntryType"
-      l_0_12[l_0_14] = "AddedAfterThreshold"
-      l_0_14 = mp
-      l_0_14 = l_0_14.get_contextdata
-      l_0_14 = l_0_14(mp.CONTEXT_DATA_PROCESS_PPID)
-      if l_0_14 then
-        local l_0_15 = pcall(MpCommon.QuerySessionInformation, l_0_14, MpCommon.WTSIsRemoteSession)
+    local l_0_11 = "MarkerCount"
+    l_0_10[l_0_11] = tostring(l_0_7.Count)
+    l_0_11 = "MarkerUnbiasedTime"
+    l_0_10[l_0_11] = tostring(l_0_7.UnbiasedTime)
+    l_0_11 = "UnbiasedTime"
+    l_0_11 = l_0_7[l_0_11]
+    if 10080 < l_0_11 then
+      l_0_11 = "AnomalyTableInfo"
+      l_0_10[l_0_11] = (MpCommon.AnomalyTableLookup)(l_0_5)
+      l_0_11 = "EntryType"
+      l_0_10[l_0_11] = "AddedAfterThreshold"
+      l_0_11 = mp
+      l_0_11 = l_0_11.get_contextdata
+      l_0_11 = l_0_11(mp.CONTEXT_DATA_PROCESS_PPID)
+      if l_0_11 then
+        local l_0_12 = pcall(MpCommon.QuerySessionInformation, l_0_11, MpCommon.WTSIsRemoteSession)
         do
-          local l_0_16, l_0_17 = l_0_15 and MpCommon.QuerySessionInformation or "FALSE"
-          local l_0_18 = nil
-          l_0_12.isRemote = tostring(l_0_18)
-          local l_0_19 = pcall(MpCommon.QuerySessionInformation, l_0_14, MpCommon.WTSDomainName)
-          if l_0_19 and MpCommon.QuerySessionInformation and MpCommon.QuerySessionInformation ~= "" then
-            local l_0_20 = nil
-            local l_0_21 = scrubData(R20_PC343)
-            l_0_12[R20_PC343] = tostring(l_0_21)
+          local l_0_13, l_0_14 = l_0_12 and MpCommon.QuerySessionInformation or "FALSE"
+          local l_0_15 = nil
+          l_0_10.isRemote = tostring(l_0_15)
+          local l_0_16 = pcall(MpCommon.QuerySessionInformation, l_0_11, MpCommon.WTSDomainName)
+          if l_0_16 and MpCommon.QuerySessionInformation and MpCommon.QuerySessionInformation ~= "" then
+            local l_0_17 = nil
+            local l_0_18 = scrubData(R17_PC333)
+            l_0_10[R17_PC333] = tostring(l_0_18)
           end
           do
-            -- DECOMPILER ERROR at PC350: Overwrote pending register: R20 in 'AssignReg'
+            -- DECOMPILER ERROR at PC340: Overwrote pending register: R17 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC352: Overwrote pending register: R20 in 'AssignReg'
+            -- DECOMPILER ERROR at PC342: Overwrote pending register: R17 in 'AssignReg'
 
-            local l_0_22, l_0_23 = , pcall(R20_PC343, l_0_14, MpCommon.WTSUserName)
-            if l_0_23 and R20_PC343 and R20_PC343 ~= "" then
-              local l_0_24 = R20_PC343
-              local l_0_25 = scrubData(R22_PC366)
-              l_0_12[R22_PC366] = tostring(l_0_25)
+            local l_0_19, l_0_20 = , pcall(R17_PC333, l_0_11, MpCommon.WTSUserName)
+            if l_0_20 and R17_PC333 and R17_PC333 ~= "" then
+              local l_0_21 = R17_PC333
+              local l_0_22 = scrubData(R19_PC356)
+              l_0_10[R19_PC356] = tostring(l_0_22)
             end
             do
-              -- DECOMPILER ERROR at PC373: Overwrote pending register: R22 in 'AssignReg'
+              -- DECOMPILER ERROR at PC363: Overwrote pending register: R19 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC375: Overwrote pending register: R22 in 'AssignReg'
+              -- DECOMPILER ERROR at PC365: Overwrote pending register: R19 in 'AssignReg'
 
-              local l_0_26, l_0_27 = l_0_24, pcall(R22_PC366, l_0_14, MpCommon.WTSClientAddress)
-              if l_0_27 and R22_PC366 and R22_PC366 ~= "" then
-                local l_0_28 = R22_PC366
-                local l_0_29 = scrubData(R24_PC389)
-                l_0_12[R24_PC389] = tostring(l_0_29)
+              local l_0_23, l_0_24 = l_0_21, pcall(R19_PC356, l_0_11, MpCommon.WTSClientAddress)
+              if l_0_24 and R19_PC356 and R19_PC356 ~= "" then
+                local l_0_25 = R19_PC356
+                local l_0_26 = scrubData(R21_PC379)
+                l_0_10[R21_PC379] = tostring(l_0_26)
               end
               do
-                -- DECOMPILER ERROR at PC396: Overwrote pending register: R24 in 'AssignReg'
+                -- DECOMPILER ERROR at PC386: Overwrote pending register: R21 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC398: Overwrote pending register: R24 in 'AssignReg'
+                -- DECOMPILER ERROR at PC388: Overwrote pending register: R21 in 'AssignReg'
 
-                local l_0_30, l_0_31 = l_0_28, pcall(R24_PC389, l_0_14, MpCommon.WTSClientName)
-                if l_0_31 and R24_PC389 and R24_PC389 ~= "" then
-                  local l_0_32 = R24_PC389
-                  local l_0_33 = scrubData(R26_PC412)
-                  l_0_12[R26_PC412] = tostring(l_0_33)
+                local l_0_27, l_0_28 = l_0_25, pcall(R21_PC379, l_0_11, MpCommon.WTSClientName)
+                if l_0_28 and R21_PC379 and R21_PC379 ~= "" then
+                  local l_0_29 = R21_PC379
+                  local l_0_30 = scrubData(R23_PC402)
+                  l_0_10[R23_PC402] = tostring(l_0_30)
                 end
                 do
-                  local l_0_34 = l_0_32
-                  -- DECOMPILER ERROR at PC419: Overwrote pending register: R26 in 'AssignReg'
+                  local l_0_31 = l_0_29
+                  -- DECOMPILER ERROR at PC409: Overwrote pending register: R23 in 'AssignReg'
 
-                  R26_PC412 = R26_PC412(l_0_14, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
-                  local l_0_35, l_0_36 = nil
-                  if not l_0_36 or not l_0_14 then
-                    local l_0_37 = nil
-                    if ((mp.GetParentProcInfo)(l_0_14)) ~= nil then
-                      local l_0_38 = nil
-                      l_0_12.Parent = (string.lower)(l_0_38.image_path)
+                  R23_PC402 = R23_PC402(l_0_11, "|psexesvc.exe|dllhost.exe|rundll32.exe|regsvr32.exe|wmiprvse.exe|winrshost.exe|wsmprovhost.exe|cmd.exe|powershell.exe|pwsh.exe|console.exe|bash.exe|services.exe|explorer.exe|svchost.exe|", 2)
+                  local l_0_32, l_0_33 = nil
+                  if not l_0_33 or not l_0_11 then
+                    local l_0_34 = nil
+                    if ((mp.GetParentProcInfo)(l_0_11)) ~= nil then
+                      local l_0_35 = nil
+                      l_0_10.Parent = (string.lower)(l_0_35.image_path)
                     else
                       do
                         do
                           do
                             do
-                              local l_0_39 = nil
-                              l_0_12.Parent = "Untracked"
-                              -- DECOMPILER ERROR at PC450: Confused about usage of register: R27 in 'UnsetPending'
+                              local l_0_36 = nil
+                              l_0_10.Parent = "Untracked"
+                              -- DECOMPILER ERROR at PC440: Confused about usage of register: R24 in 'UnsetPending'
 
-                              l_0_12.Parent = l_0_37
-                              l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                              -- DECOMPILER ERROR at PC473: Overwrote pending register: R11 in 'AssignReg'
+                              l_0_10.Parent = l_0_34
+                              l_0_11 = pcall
+                              l_0_11 = l_0_11(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                              l_0_9 = 
+                              l_0_8 = l_0_11
+                              l_0_8 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
+                              -- DECOMPILER ERROR at PC476: Overwrote pending register: R9 in 'AssignReg'
 
-                              l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
-                              -- DECOMPILER ERROR at PC486: Overwrote pending register: R11 in 'AssignReg'
-
-                              if l_0_10 then
-                                l_0_10 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
-                                local l_0_40 = "EntryType"
-                                l_0_12[l_0_40] = "NewMarkerAndEntry"
+                              if l_0_8 then
+                                l_0_8 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
+                                local l_0_37 = "EntryType"
+                                l_0_10[l_0_37] = "NewMarkerAndEntry"
                               end
                               do
                                 do
-                                  if not l_0_10 then
-                                    l_0_12.Error = l_0_11
+                                  if not l_0_8 then
+                                    l_0_10.Error = l_0_9
                                   end
-                                  set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_12), false)
+                                  set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_10), false)
                                   do return mp.INFECTED end
                                   return mp.CLEAN
                                 end

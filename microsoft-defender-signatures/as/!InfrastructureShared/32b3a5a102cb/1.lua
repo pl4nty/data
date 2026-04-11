@@ -50,6 +50,9 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
         end
       end
       do
+        if l_0_0 == 8 then
+          pcall(ReportSupportLog)
+        end
         l_0_3 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1)
         local l_0_16, l_0_17 = nil, nil
         if l_0_3 and l_0_4 then
@@ -75,19 +78,19 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
         local l_0_26 = false
         for l_0_30 = 0, 1 do
           local l_0_27 = nil
-          -- DECOMPILER ERROR at PC156: Confused about usage of register: R20 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC161: Confused about usage of register: R20 in 'UnsetPending'
 
-          l_0_27 = SafeGetUrlReputation(l_0_23, l_0_24, false, 2000 + R20_PC156 * 1000)
+          l_0_27 = SafeGetUrlReputation(l_0_23, l_0_24, false, 2000 + R20_PC161 * 1000)
           if l_0_27 and l_0_27.urls and (l_0_27.urls)[l_0_22] and ((l_0_27.urls)[l_0_22]).determination == 4 then
             do
               do
                 l_0_26 = true
                 do break end
-                -- DECOMPILER ERROR at PC181: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC186: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC181: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC186: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC181: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC186: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -117,7 +120,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
                   end
                   ;
                   (bm.trigger_sig_delayed)("Report_hmdprecisionpulsefullfilepathscan_statuscheck_" .. l_0_0, l_0_1, 300000)
-                  -- DECOMPILER ERROR at PC264: freeLocal<0 in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC269: freeLocal<0 in 'ReleaseLocals'
 
                   return mp.CLEAN
                 end
