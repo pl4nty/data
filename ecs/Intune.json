@@ -158,6 +158,7 @@
                 "SVC_AppleVPP",
                 "SVC_AppLifecycle",
                 "SVC_Auditing",
+                "SVC_AuthZ",
                 "SVC_CertificateAuthority",
                 "SVC_ChromebookSync",
                 "SVC_ClientServices",
@@ -375,7 +376,18 @@
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreOrganizationMigrationSwitchOver": true,
-            "UseLKG_DetectedMalware": true
+            "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
+            "UseLKG_AgentStatusSummary": true,
+            "UseLKG_AutopilotV2DepStatus": true,
+            "UseLKG_DependentAppsInstallStatus": true,
+            "UseLKG_DetectedMalware": true,
+            "UseLKG_DetectedMalwareAggregate": true,
+            "UseLKG_DetectedMalwareAggregateByCategory": true,
+            "UseLKG_DetectedMalwareAggregateBySeverity": true,
+            "UseLKG_DetectedMalwareAggregateByState": true,
+            "UseLKG_DeviceRunStatesByScript": true,
+            "UseLKG_EnrollmentActivityUser": true,
+            "UseLKG_ScriptRunSummary": true
         }
     },
     "SVC_DataPlatformMetadata": {

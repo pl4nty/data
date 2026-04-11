@@ -1,5 +1,249 @@
 [
     {
+        "created": "2026-04-10T21:45:06",
+        "description": "Before joining a meeting on your pre-join screen, you can test your microphone and speaker to make sure others will hear you clearly. Select Test mic and speaker to record a short audio clip and play it back. This helps you confirm that the right devices are selected and that you\u2019ll be heard\u2014and hear others\u2014once the meeting starts.",
+        "id": 560074,
+        "locale": null,
+        "modified": "2026-04-10T21:45:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Test your microphone before you join"
+    },
+    {
+        "created": "2026-04-10T21:45:06",
+        "description": "You can now choose your preferred image model including OpenAI\u2019s GPT Image, Flux, or Auto for smart, dynamic selection when creating or editing images with Copilot in PowerPoint, or when generating a new presentation or page.",
+        "id": 559479,
+        "locale": null,
+        "modified": "2026-04-10T21:45:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Create and Edit images with the model of your choice"
+    },
+    {
+        "created": "2026-04-10T21:45:06",
+        "description": "You can now choose your preferred image model including OpenAI\u2019s GPT Image, Flux, or Auto for smart, dynamic selection when creating or editing images with Copilot in PowerPoint, or when generating a new presentation or page.",
+        "id": 559478,
+        "locale": null,
+        "modified": "2026-04-10T21:45:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Create and Edit images with the model of your choice"
+    },
+    {
+        "created": "2026-04-10T21:45:06",
+        "description": "Copilot will be able to find meetings based on topics or keywords from relevant data like meeting body, chat and transcription.",
+        "id": 559110,
+        "locale": null,
+        "modified": "2026-04-10T21:45:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Find meetings based on topics and keywords"
+    },
+    {
         "created": "2026-04-09T23:15:51",
         "description": "This feature empowers authors to create rich, interactive charts with AI in SharePoint when editing SharePoint pages. Authors can describe the chart they want to create in plain language within a chat on a SharePoint page. ",
         "id": 560076,
@@ -120,7 +364,7 @@
         "description": "GCC-H and DoD customers can now experience multi-stream IntelliFrame in Microsoft Teams Rooms on Windows, which sends separate video feeds of each in-room participant to improve hybrid meeting visibility and inclusivity. Requires a compatible intelligent camera. Available with Teams Rooms Pro.",
         "id": 560052,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -134,7 +378,7 @@
                 "tagName": "DoD"
             },
             {
-                "tagName": "Desktop"
+                "tagName": "Teams and Surface Devices"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -154,7 +398,7 @@
             ],
             "platforms": [
                 {
-                    "tagName": "Desktop"
+                    "tagName": "Teams and Surface Devices"
                 }
             ],
             "products": [
@@ -175,8 +419,8 @@
         "description": "GCC-H and DoD cloud customers can now experience multi-camera views in Microsoft Teams Rooms on Windows, allowing remote participants to switch between multiple in-room camera feeds for improved visibility and engagement in larger spaces. Find camera requirements here. Available with Teams Rooms Pro.",
         "id": 560049,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
-        "moreInfoLink": null,
+        "modified": "2026-04-10T21:45:06",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoftteams/rooms/multicamera-view",
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
@@ -2524,12 +2768,12 @@
         "description": "See what Copilot can do the moment you preview a file in OneDrive or SharePoint. Ready-to-use prompts appear alongside the Copilot button, helping you summarize documents, generate FAQs, and more \u2014 all without writing a single prompt.",
         "id": 559481,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4782,9 +5026,9 @@
         "description": "To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups\u2014expanding policy targeting beyond individual users and mail enabled groups.",
         "id": 558685,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8011,12 +8255,12 @@
         "description": "With this feature, users will be able to share their agent with a Microsoft Teams team. Users can search for and find teams in the agent sharing dialog box. Users can also send a notification to the main channel of that team to make members aware of an agent being shared with them, and as an easy way to install and start using the agent.",
         "id": 557947,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9408,9 +9652,9 @@
         "description": "This feature enhances the PowerPoint Live meeting experience by using Copilot to let attendees select slide text and get explanations for the content.",
         "id": 557256,
         "locale": null,
-        "modified": "2026-02-21T00:30:02",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11100,12 +11344,12 @@
         "description": "The Microsoft Purview Data Loss Prevention policy to restrict Microsoft 365 Copilot processing sensitive files in Word, Excel, and PowerPoint will now apply regardless of file storage location. ",
         "id": 557255,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15205,12 +15449,12 @@
         "description": "When viewing your calendar on iPad, you can now expand an event to a full\u2011screen view, giving you more space to review information and make edits.",
         "id": 554939,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19374,9 +19618,9 @@
         "description": "Enhancing the Engage Events experience with additional capabilities such as Broadcast for large scale produced events, Meetings based Events. Organizers will have additional support for moderating the posted questions and conversations, and attendees can post questions anonymously. An Events Landing page allows for attendees and organizers to have one place for the contiguous events experience of \"Before\", \"During\" and \"After\"\n",
         "id": 537280,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20685,12 +20929,12 @@
         "description": "In the Engage app for Android and Engage app in Teams for iOS and Android, we are introducing the Community Expert. Experts will be able to endorse accurate and credible answers and be recognized as community experts with a special label next to their name.  As well, experts & community admins will be able to mark answers to questions as verified answers to signal a credible and accurate answer. Verified answers will receive its own special label. ",
         "id": 537270,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22180,12 +22424,12 @@
         "description": "Community admins will be able to add and remove members from their communities.",
         "id": 532722,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31838,12 +32082,12 @@
         "description": "Interact in real time with podcasts created by Copilot in Word. Today, audio summaries help you absorb content on the go, but they\u2019re one-way\u2014listeners can\u2019t clarify or explore without stopping. With this feature, you can ask questions with your voice while listening and get answers instantly, staying in the audio experience and understanding content faster.",
         "id": 523206,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38142,9 +38386,9 @@
         "description": "New analytics experiences available that complement the new Viva Engage Events.",
         "id": 511812,
         "locale": null,
-        "modified": "2025-10-10T22:00:01",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38973,9 +39217,9 @@
         "description": "Organizational Messages now supports Hybrid-joined Devices.",
         "id": 503564,
         "locale": null,
-        "modified": "2025-10-06T23:00:40",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40115,12 +40359,12 @@
         "description": "When you choose \u201cRun Rule Now\u201d in Outlook, you\u2019ll now see a visual progress indicator in both the message list and the rules page, showing that the rule is actively being applied. This helps confirm the action is in progress especially for large mailboxes, so you\u2019re not left wondering if anything is happening. #newoutlookforwindows",
         "id": 500395,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42409,12 +42653,12 @@
         "description": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers.\n",
         "id": 501451,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42653,12 +42897,12 @@
         "description": "When in a meeting with another Teams Rooms on Windows that has multiple cameras, you can switch camera views in that room via the participant panel on the console, or video tile on a touch board, to optimize your views.",
         "id": 503104,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -57500,12 +57744,12 @@
         "description": "Users can now expand and collapse folder trees in the move/copy email dialog. This makes it easier to navigate large folder structures and find the right destination faster, improving efficiency and control during email triage. #newoutlookforwindows",
         "id": 497418,
         "locale": null,
-        "modified": "2025-11-19T00:15:24",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65614,12 +65858,12 @@
         "description": "Allows Engage event organizers to answer questions from specific attendees without displaying the reply to the other participants. This capability can be helpful for sensitive questions, personal inquiries, or follow-up discussions that are not intended to be broadcast to the entire audience.",
         "id": 493949,
         "locale": null,
-        "modified": "2025-08-14T23:15:02",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65943,12 +66187,12 @@
         "description": "Organizers can now disable reactions in Engage events. When this setting is turned off, attendees won\u2019t see or be able to use reactions on questions, discussions or comments. Organizers can manage this option under additional settings in the event creation/edit page. ",
         "id": 492983,
         "locale": null,
-        "modified": "2025-05-13T23:00:09",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -66993,12 +67237,12 @@
         "description": "Organizers & attendees can now post comments anonymously during Engage events\u2014just like anonymous questions. When enabled by the organizer, these comments are fully anonymous in the UI and compliance systems, helping foster open, honest conversations. Look for the \u201cComment anonymously\u201d toggle when posting to protect your identity and encourage authentic engagement.",
         "id": 492626,
         "locale": null,
-        "modified": "2025-05-08T23:00:31",
+        "modified": "2026-04-10T21:45:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

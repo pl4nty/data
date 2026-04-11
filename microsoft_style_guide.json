@@ -110,11 +110,6 @@
                             "toc_title": "+ (plus sign) (Microsoft 365)"
                         },
                         {
-                            "href": "a_z_names_terms/number-symbols/right-angle-bracket",
-                            "permissioned-type": "private",
-                            "toc_title": "> (right angle bracket)"
-                        },
-                        {
                             "href": "a_z_names_terms/number-symbols/64-bit-and-32-bit",
                             "permissioned-type": "private",
                             "toc_title": "64-bit and 32-bit"
@@ -2650,6 +2645,11 @@
                             "toc_title": "conciseness"
                         },
                         {
+                            "href": "a_z_names_terms/c/conference",
+                            "permissioned-type": "private",
+                            "toc_title": "conference"
+                        },
+                        {
                             "href": "a_z_names_terms/c/confidence",
                             "permissioned-type": "private",
                             "toc_title": "confidence"
@@ -3108,6 +3108,11 @@
                             "href": "a_z_names_terms/d/data-stories-gallery",
                             "permissioned-type": "private",
                             "toc_title": "data stories gallery"
+                        },
+                        {
+                            "href": "a_z_names_terms/d/database",
+                            "permissioned-type": "private",
+                            "toc_title": "database"
                         },
                         {
                             "href": "a_z_names_terms/d/database-migration-service",
@@ -3868,6 +3873,11 @@
                             "href": "a_z_names_terms/e/environmental-credit-service",
                             "permissioned-type": "private",
                             "toc_title": "Environmental Credit Service"
+                        },
+                        {
+                            "href": "a_z_names_terms/e/environment-management",
+                            "permissioned-type": "private",
+                            "toc_title": "environment management"
                         },
                         {
                             "href": "a_z_names_terms/e/erp-enterprise-resource-planning",
@@ -5202,7 +5212,7 @@
                         {
                             "href": "a_z_names_terms/m/managed-environments",
                             "permissioned-type": "private",
-                            "toc_title": "managed environments"
+                            "toc_title": "managed environment"
                         },
                         {
                             "href": "a_z_names_terms/m/managed-instance-on-azure-app-service",
@@ -6300,6 +6310,11 @@
                                     "href": "a_z_names_terms/m/microsoft-purview/microsoft-purview-solutions-trial",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft Purview Solutions Trial"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-purview/microsoft-purview-unified-catalog",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Purview Unified Catalog"
                                 }
                             ],
                             "toc_title": "Microsoft Purview"
@@ -7540,11 +7555,6 @@
                             "toc_title": "please try again"
                         },
                         {
-                            "href": "a_z_names_terms/p/plug-in-plugin",
-                            "permissioned-type": "private",
-                            "toc_title": "plug-in, plugin"
-                        },
-                        {
                             "href": "a_z_names_terms/p/point-to",
                             "permissioned-type": "private",
                             "toc_title": "point to"
@@ -8760,11 +8770,6 @@
                             "toc_title": "Show more, Show less"
                         },
                         {
-                            "href": "a_z_names_terms/s/show-more-show-less-microsoft-365",
-                            "permissioned-type": "private",
-                            "toc_title": "Show more, Show less (Microsoft 365)"
-                        },
-                        {
                             "href": "a_z_names_terms/s/show-vs-see",
                             "permissioned-type": "private",
                             "toc_title": "Show vs. See"
@@ -9338,16 +9343,6 @@
                             "href": "a_z_names_terms/s/synapse",
                             "permissioned-type": "private",
                             "toc_title": "Synapse"
-                        },
-                        {
-                            "href": "a_z_names_terms/s/sync",
-                            "permissioned-type": "private",
-                            "toc_title": "sync"
-                        },
-                        {
-                            "href": "a_z_names_terms/s/sync-synchronize",
-                            "permissioned-type": "private",
-                            "toc_title": "sync, synchronize"
                         },
                         {
                             "href": "a_z_names_terms/s/system-administrator",
@@ -10098,11 +10093,6 @@
                             "href": "a_z_names_terms/w/which",
                             "permissioned-type": "private",
                             "toc_title": "which"
-                        },
-                        {
-                            "href": "a_z_names_terms/w/white-paper",
-                            "permissioned-type": "private",
-                            "toc_title": "white paper"
                         },
                         {
                             "href": "a_z_names_terms/w/whiteboard",
@@ -14422,7 +14412,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2750,
+        "count_of_node_with_href": 2748,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

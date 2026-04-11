@@ -2046,17 +2046,6 @@
             }
         }
     },
-    "TeamsForLifeSearchService": {
-        "ringSettings": {
-            "settings": {
-                "FeatureFlags": {
-                    "Filters": {
-                        "ShowInternal": true
-                    }
-                }
-            }
-        }
-    },
     "TeamsGateway": {
         "TokenDrainageConfig": {
             "DateTimeToStartRejectingToken": "0001-01-01T00:00:00",
