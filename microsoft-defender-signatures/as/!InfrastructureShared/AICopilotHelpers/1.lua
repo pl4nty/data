@@ -27,21 +27,17 @@ initiating_process_gate = function()
   l_2_0.chrome = true
   l_2_0["ms-teams"] = true
   l_2_0.teams = true
-  local l_2_1 = (mp.GetScannedPPID)()
-  if not l_2_1 then
-    return false
-  end
-  local l_2_2 = (mp.GetParentProcInfo)(l_2_1)
-  if not l_2_2 or not l_2_2.image_path then
+  local l_2_1 = (mp.GetParentProcInfo)()
+  if not l_2_1 or not l_2_1.image_path then
     return false
   end
   do
-    local l_2_3 = basename(l_2_2.image_path)
-    if not l_2_3 then
+    local l_2_2 = basename(l_2_1.image_path)
+    if not l_2_2 then
       return false
     end
-    l_2_3 = l_2_3:gsub("%.exe$", "")
-    do return l_2_0[l_2_3] == true end
+    l_2_2 = l_2_2:gsub("%.exe$", "")
+    do return l_2_0[l_2_2] == true end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 end
