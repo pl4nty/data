@@ -269,6 +269,7 @@
     },
     "SVC_AndroidSync": {
         "FlightingV2": {
+            "CompanyPortalBatteryOptimizationBlockEnabled": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
@@ -285,7 +286,9 @@
             "EnablePatchConfigAssignmentOnAlreadyExistsException": true,
             "EnablePrsv3ForAosp": true,
             "EnableRequestEnterpriseUpgradeUrl": true,
-            "EnableWpDeviceTypeUpdate": true
+            "EnableWpDeviceTypeUpdate": true,
+            "LtwBatteryOptimizationForByodWpBlockEnabled": true,
+            "LtwBatteryOptimizationForDoBlockEnabled": true
         }
     },
     "SVC_AppLifecycle": {

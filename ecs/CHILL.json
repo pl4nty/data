@@ -775,16 +775,16 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 86400,
+                    "IntervalSeconds": 7776000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
                 "NominationPeriod": {
-                    "IntervalSeconds": 8640000,
+                    "IntervalSeconds": 2592000,
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
+                "PercentageNumerator": 30,
                 "Type": 0
             },
             "PrimaryPriority": 3,

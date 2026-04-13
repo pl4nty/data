@@ -5137,6 +5137,9 @@
             },
             "UserMessageSliceMetadata": {
                 "isSpeculativeRetriesEnabled": true
+            },
+            "VipSliceMetadata": {
+                "isSpeculativeRetriesEnabled": true
             }
         },
         "EnableCertificateValidationLibrary": false,

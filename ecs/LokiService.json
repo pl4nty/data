@@ -1023,7 +1023,16 @@
             "PersonViewContentQuery",
             "PersonViewHeaderContentQuery",
             "PeopleSkillsQuery",
-            "FetchOneWeekQuery"
+            "FetchOneWeekQuery",
+            "PersonaSearchQuery",
+            "fetchCalendarInitQuery",
+            "CalendarInitQuery",
+            "FileSearchResultSectionQuery",
+            "FetchTwoWeeksQuery",
+            "HeroCardWrapper_sidecar_DataQuery",
+            "FetchThreeWeeksQuery",
+            "useChatPromptSuggestionsQuery",
+            "HeroCardWrapper_canvas_DataQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
