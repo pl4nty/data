@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "595.97_grid_win10_win11_server2022_server2025_dch_64bit_international_azure_swl",
+    "downloadDescription": "GRID V20",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "595.97_grid_win10_win11_server2022_server2025_dch_64bit_international_azure_swl.exe",
+            "url": "https://download.microsoft.com/download/169e58c8-9099-481e-a9a9-c237a189710c/595.97_grid_win10_win11_server2022_server2025_dch_64bit_international_azure_swl.exe",
+            "size": "747976872",
+            "version": "595.97",
+            "datePublished": "4/13/2026 5:16:20 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "595.97_grid_win10_win11_server2022_server2025_dch_64bit_international_azure_swl",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "595.97",
+    "detailsSection_file_name": [
+        "595.97_grid_win10_win11_server2022_server2025_dch_64bit_international_azure_swl.exe"
+    ],
+    "detailsSection_file_size": [
+        "713.3 MB"
+    ],
+    "detailsSection_file_date": "4/13/2026",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Ubuntu"
+    ],
+    "installInstructionSection": "https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/hpccompute-gpu-windows",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108616",
+    "downloadPreload": true
+}

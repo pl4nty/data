@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Sybase ASE Mixed Collation Scan Utility",
+    "downloadDescription": "Scans char and varchar columns across all databases on a server for mixed collation and invalid characters",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SybaseScanV1.0.0.zip",
+            "url": "https://download.microsoft.com/download/5a532e7f-28b7-4321-902c-daa924281554/SybaseScanV1.0.0.zip",
+            "size": "1177028",
+            "version": "1.0.0",
+            "datePublished": "4/13/2026 2:52:22 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sybase ASE servers configured with iso_1 (ISO 8859-1) treat bytes store in char/varchar columns as single-byte characters which can be abused to store multi-byte encoded data (UTF-8, Shift-JIS) as raw bytes. When this data is migrated to SQL Server it can cause conversion failures or silent data corruption. This tool identifies those columns before migration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "SybaseScanV1.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "4/13/2026",
+    "systemRequirementsSection": ".Net 8 runtime, Sybase ODBC Driver",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download the .zip and extract the files. Update the appsettings.json or use parameters.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108614",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "NVIDIA-Linux-x86_64-595.58.03-grid-azure.run",
+    "downloadDescription": "NVIDIA-Linux-x86_64-595.58.03-grid-azure.run",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "NVIDIA-Linux-x86_64-595.58.03-grid-azure.run",
+            "url": "https://download.microsoft.com/download/51239696-ec04-4c02-a6b3-1d9c608fb57c/NVIDIA-Linux-x86_64-595.58.03-grid-azure.run",
+            "size": "428443655",
+            "version": "595.58.03",
+            "datePublished": "4/13/2026 4:58:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "GRID v20",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "595.58.03",
+    "detailsSection_file_name": [
+        "NVIDIA-Linux-x86_64-595.58.03-grid-azure.run"
+    ],
+    "detailsSection_file_size": [
+        "408.6 MB"
+    ],
+    "detailsSection_file_date": "4/13/2026",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Ubuntu"
+    ],
+    "installInstructionSection": "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/n-series-driver-setup",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108615",
+    "downloadPreload": true
+}
