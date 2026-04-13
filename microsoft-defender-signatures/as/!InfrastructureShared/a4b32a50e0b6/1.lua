@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a4b3be3b9bc9\1.luac 
+-- Command line: lua\!InfrastructureShared\a4b32a50e0b6\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -70,6 +70,11 @@ if l_0_8 == "" or l_0_8 == nil then
   return mp.CLEAN
 end
 if l_0_3 == l_0_6 and (string.find)(l_0_8, l_0_7, 1, true) and ((string.find)(l_0_8, "com.apple.", 1, true) or (string.find)(l_0_8, "com.zoom.", 1, true) or (string.find)(l_0_8, "com.python.", 1, true)) then
+  if (sysio.IsFileExists)(l_0_7) then
+    (bm.add_threat_file)(l_0_7)
+  end
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
