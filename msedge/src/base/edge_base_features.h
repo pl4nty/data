@@ -112,9 +112,6 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeAllowDmaOverride);
 BASE_EXPORT BASE_DECLARE_FEATURE(kMitigateAttachedInputSpinBySleeping);
 
 #if BUILDFLAG(IS_ANDROID)
-// If enabled, reduces thread stack size on Android to save memory
-BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeEnabledSmallerThreadStackSize);
-
 // If enabled, will enable the OomIntervention and set the "optimize-for-size"
 // flag for v8 in render
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeOomAndV8CrashOptimize);
