@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13035611,
+    "size": 13035608,
     "file_count": 163
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "name": "android_toolchain",
-    "size": 564597,
+    "size": 564617,
     "file_count": 9
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33216162,
+    "size": 33215075,
     "file_count": 4034
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16250217,
-    "file_count": 1953
+    "size": 16151335,
+    "file_count": 1941
   },
   {
     "name": "entity_extraction",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 372548,
-    "file_count": 83
+    "size": 336730,
+    "file_count": 79
   },
   {
     "name": "ffmpeg",
@@ -676,8 +676,8 @@
   },
   {
     "name": "skia",
-    "size": 3481465,
-    "file_count": 1195
+    "size": 3482019,
+    "file_count": 1199
   },
   {
     "name": "speech-dispatcher",
@@ -706,7 +706,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 108380,
+    "size": 108371,
     "file_count": 7
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74644,
+    "size": 74267,
     "file_count": 13
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7437837,
+    "size": 7446104,
     "file_count": 195
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29936796,
+    "size": 29949309,
     "file_count": 629
   },
   {
