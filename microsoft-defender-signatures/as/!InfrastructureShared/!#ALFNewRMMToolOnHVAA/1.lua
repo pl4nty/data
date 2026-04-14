@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELNewRMMToolOnHVAA\1.luac 
+-- Command line: lua\!InfrastructureShared\!#ALFNewRMMToolOnHVAA\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -290,12 +290,14 @@ if l_0_4.DeviceRoles then
                               -- DECOMPILER ERROR at PC440: Confused about usage of register: R24 in 'UnsetPending'
 
                               l_0_10.Parent = l_0_34
+                              set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_10), false)
+                              do return mp.INFECTED end
                               l_0_11 = pcall
                               l_0_11 = l_0_11(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
                               l_0_9 = 
                               l_0_8 = l_0_11
                               l_0_8 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, "MarkerRecord_RMMAnomaly", 1, 1)
-                              -- DECOMPILER ERROR at PC476: Overwrote pending register: R9 in 'AssignReg'
+                              -- DECOMPILER ERROR at PC487: Overwrote pending register: R9 in 'AssignReg'
 
                               if l_0_8 then
                                 l_0_8 = pcall(MpCommon.AnomalyEventUpdate, l_0_5, l_0_3, 1, 1)
@@ -307,8 +309,6 @@ if l_0_4.DeviceRoles then
                                   if not l_0_8 then
                                     l_0_10.Error = l_0_9
                                   end
-                                  set_research_data("RMM_Anomaly", safeJsonSerialize(l_0_10), false)
-                                  do return mp.INFECTED end
                                   return mp.CLEAN
                                 end
                               end

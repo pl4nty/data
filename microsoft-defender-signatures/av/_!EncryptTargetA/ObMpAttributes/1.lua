@@ -8,7 +8,7 @@ if l_0_0 == nil or type(l_0_0) ~= "string" then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
-if ((l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and l_0_0 ~= "392708a8-b7f0-49e3-bc8f-ca134f1f60d7") or (MpCommon.IsSampled)(70000, false, false, false) ~= true) and (MpCommon.IsSampled)(8000, false, false, false) ~= true then
+if ((l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and l_0_0 ~= "392708a8-b7f0-49e3-bc8f-ca134f1f60d7") or (MpCommon.IsSampled)(85000, false, false, false) ~= true) and (MpCommon.IsSampled)(15000, false, false, false) ~= true then
   return mp.CLEAN
 end
 local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)

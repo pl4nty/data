@@ -211,17 +211,17 @@ local l_0_7 = (versioning.GetOrgID)()
 if l_0_7 ~= nil and l_0_7 ~= "" then
   l_0_7 = (string.lower)(l_0_7)
 end
-if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (versioning.IsSampled)(80000, false, true, true) == true) and l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
+if l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
   return mp.CLEAN
 end
 local l_0_8 = false
 local l_0_9 = {}
--- DECOMPILER ERROR at PC762: No list found for R9 , SetList fails
+-- DECOMPILER ERROR at PC749: No list found for R9 , SetList fails
 
 local l_0_10 = false
--- DECOMPILER ERROR at PC768: Overwrote pending register: R11 in 'AssignReg'
+-- DECOMPILER ERROR at PC755: Overwrote pending register: R11 in 'AssignReg'
 
--- DECOMPILER ERROR at PC770: Overwrote pending register: R12 in 'AssignReg'
+-- DECOMPILER ERROR at PC757: Overwrote pending register: R12 in 'AssignReg'
 
 if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "0d8b3247-a1a9-44c3-a65b-a9dc4d1b70d5") and ((l_0_4 .. "\\syswow64\\").IsSampled)(l_0_4 .. "\\system32\\windowspowershell\\v1.0\\", false, false, false) == true then
   l_0_10 = true

@@ -314,7 +314,7 @@ for l_0_24 = 1, l_0_0 do
                           (bm.add_related_string)("updateDomainInfo_fail", l_0_107, bm.RelatedStringBMReport)
                         end
                         do
-                          if (MpCommon.IsSampled)(1000, true, true, true) == true then
+                          if (MpCommon.IsSampled)(10000, true, true, true) == true then
                             local l_0_110, l_0_111 = pcall(getBmInfo)
                             if l_0_110 and l_0_111 then
                               l_0_12.BmInfo = l_0_111
