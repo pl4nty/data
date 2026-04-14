@@ -363,8 +363,8 @@ extern bool IsSemanticNonColorTokensForP2SurfacesEnabled();
 
 // Enum for MAI design system theme configuration
 enum class SemanticTheme : int {
-  kPhoenix = 0,         // MAI phoenix design system (default)
-  kCompactNeutral = 1,  // MAI compact-neutral design system
+  kPhoenix = 0,         // MAI phoenix design system
+  kCompactNeutral = 1,  // MAI compact-neutral design system (default)
   kCompactThemed = 2,   // MAI compact-themed design system
   kDefault = 3,         // MAI default design system
 };
