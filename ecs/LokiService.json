@@ -360,7 +360,7 @@
         "enableSkillsFullList": true,
         "enableSkillsOCV": true,
         "enableUpdateSkillsDeeplink": true,
-        "enableVivaSkillsClient": false,
+        "enableVivaSkillsClient": true,
         "enableVivaSkillsPP4": true,
         "enabledeeplinktelemetry": true,
         "enablelivepersonaeditorinlpcandev": false,
