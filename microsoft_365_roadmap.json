@@ -1,10 +1,71 @@
 [
     {
-        "created": "2026-04-10T21:45:06",
-        "description": "Before joining a meeting on your pre-join screen, you can test your microphone and speaker to make sure others will hear you clearly. Select Test mic and speaker to record a short audio clip and play it back. This helps you confirm that the right devices are selected and that you\u2019ll be heard\u2014and hear others\u2014once the meeting starts.",
-        "id": 560074,
+        "created": "2026-04-13T23:15:13",
+        "description": "Review set limit per case is increased from 20 per case to 100 per case.",
+        "id": 560322,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
+        "modified": "2026-04-13T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: eDiscovery - review set limit increase"
+    },
+    {
+        "created": "2026-04-13T23:15:13",
+        "description": "You can now use a work week calendar view on iOS and iPad to focus on the days you work. On iPad, you can select \"work week\" directly from the view picker. On iOS, you can select work week from the view picker when you rotate your device to landscape. You can choose which days are included in your work week by syncing from your default account or by customizing the days just for your device.",
+        "id": 559795,
+        "locale": null,
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -13,6 +74,198 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Work week view for Outlook iOS and iPad"
+    },
+    {
+        "created": "2026-04-13T23:15:13",
+        "description": "You can now control whether meeting invitations are automatically removed from your inbox after you RSVP. Simply to go to settings, calendar, and turn off or on \"Delete Invite After RSVP.\" ",
+        "id": 559794,
+        "locale": null,
+        "modified": "2026-04-13T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Keep Invitations After Responding in Outlook Mobile"
+    },
+    {
+        "created": "2026-04-13T23:15:13",
+        "description": "Copilot Chat can now better match search results from Scanned PDFs and from text that appears inside images embedded in Word, Excel, and PowerPoint files \u2014 such as scanned contracts in Word, screenshots of tables in Excel, or whiteboard photos in PowerPoint \u2014 content that was previously difficult to search and find.",
+        "id": 559613,
+        "locale": null,
+        "modified": "2026-04-13T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Chat can now better match search results from Scanned PDFs and from text inside images embedded in Word, Excel, and PowerPoint"
+    },
+    {
+        "created": "2026-04-10T21:45:06",
+        "description": "Before joining a meeting on your pre-join screen, you can test your microphone and speaker to make sure others will hear you clearly. Select Test mic and speaker to record a short audio clip and play it back. This helps you confirm that the right devices are selected and that you\u2019ll be heard\u2014and hear others\u2014once the meeting starts.",
+        "id": 560074,
+        "locale": null,
+        "modified": "2026-04-13T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "GCC High"
@@ -31,12 +284,18 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 },
                 {
                     "tagName": "GCC High"
@@ -61,6 +320,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -364,8 +626,8 @@
         "description": "GCC-H and DoD customers can now experience multi-stream IntelliFrame in Microsoft Teams Rooms on Windows, which sends separate video feeds of each in-room participant to improve hybrid meeting visibility and inclusivity. Requires a compatible intelligent camera. Available with Teams Rooms Pro.",
         "id": 560052,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
-        "moreInfoLink": null,
+        "modified": "2026-04-13T23:15:13",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoftteams/devices/multistream-intelliframe",
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
@@ -2715,55 +2977,6 @@
         "title": "Microsoft Purview: Data Loss Prevention\u2013 Enhanced content extraction and file type coverage for DLP on Mac devices"
     },
     {
-        "created": "2026-03-27T22:15:31",
-        "description": "This item is cancelled as a duplicate of 557168. We are sorry for any inconvenience it may cause. You can now make an upcoming meeting reservation from a Teams panel by browsing the calendar on the device and choosing any open time slot through midnight the next day. Add a guest during booking, streamlining ad-hoc scheduling and coordination. Available with Teams Rooms Pro and Shared Device licenses.",
-        "id": 558287,
-        "locale": null,
-        "modified": "2026-04-03T22:15:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Book future meetings directly from Teams panels"
-    },
-    {
         "created": "2026-03-26T23:15:28",
         "description": "See what Copilot can do the moment you preview a file in OneDrive or SharePoint. Ready-to-use prompts appear alongside the Copilot button, helping you summarize documents, generate FAQs, and more \u2014 all without writing a single prompt.",
         "id": 559481,
@@ -2866,61 +3079,6 @@
             ]
         },
         "title": "Outlook: View, edit & share Copilot Pages with Outlook for Android"
-    },
-    {
-        "created": "2026-03-26T23:15:28",
-        "description": "This item is cancelled as a duplicate of 553594. We are sorry for any inconvenience it may cause. With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
-        "id": 559268,
-        "locale": null,
-        "modified": "2026-03-31T23:15:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: AI Interpreter on Teams Phone Devices"
     },
     {
         "created": "2026-03-26T23:15:28",
@@ -9280,12 +9438,12 @@
         "description": "View and control live transcription during a meeting from a Teams\nRooms on Android device. The real-time transcript includes speaker names and\ntimestamps. You can adjust settings such as spoken language, translated\nlanguage, and whether both original and translated transcripts are displayed\nside by side on the front of room display. This feature is available in Teams Rooms Pro.",
         "id": 555234,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9762,12 +9920,12 @@
         "description": "The updated Copilot adoption Power BI report will come with a streamlined UX and new Power user insights. ",
         "id": 557674,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11648,9 +11806,9 @@
         "description": "To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.",
         "id": 552598,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14938,12 +15096,12 @@
         "description": "Researcher will be available for Microsoft 365 business and enterprise users with a Microsoft 365 Copilot add-on license. Researcher is an advanced deep reasoning agent in Microsoft 365 Copilot designed to tackle complex, multi-step tasks by acting as a deep research assistant.",
         "id": 554928,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -15254,67 +15412,6 @@
             ]
         },
         "title": "Microsoft Teams: Voice tethering"
-    },
-    {
-        "created": "2026-02-05T00:15:27",
-        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Users can now hide their entire meeting controls toolbar during meetings to create more space or simply clean up their workspace. The setting will persist across their meetings, and the toolbar can be accessed through hover or tab functionality even when in hidden mode. Keyboard shortcuts will still remain active as they are today.",
-        "id": 532734,
-        "locale": null,
-        "modified": "2026-04-01T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Hide meetings toolbar"
     },
     {
         "created": "2026-02-04T19:00:58",
@@ -16938,12 +17035,12 @@
         "description": "Users will now be able to upload .eml and .msg files and share it as context with Copilot Chat and M365 Copilot App.",
         "id": 552591,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17573,12 +17670,12 @@
         "description": "As with Teams Rooms on Windows, IT Admins can now set up Teams Rooms on Android to show dynamic signage content on the front-of-room display when the device is not in use for meetings or presentation. Configuration is available for tenant-wide and room-specific settings via the Teams Rooms Pro Management portal. The feature supports select third-party digital signage partners like Appspace and XOGO, and is included with Teams Rooms Pro.",
         "id": 548647,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17671,12 +17768,12 @@
         "description": "With Teams Rooms on Android consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548652,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22888,9 +22985,9 @@
         "description": "When an image needs precise editing, masking enables users to more accurately select an object or area in their image for AI to edit. ",
         "id": 537287,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23406,9 +23503,9 @@
         "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
         "id": 536577,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25431,9 +25528,9 @@
         "description": "At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps\u2014so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.",
         "id": 532728,
         "locale": null,
-        "modified": "2026-03-18T23:15:26",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30837,12 +30934,12 @@
         "description": "Users will find an updated, streamlined UX flow within Copilot Notebooks.",
         "id": 516042,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32302,12 +32399,12 @@
         "description": "Enable admins to configure retention policies for various Copilots and AI Apps.",
         "id": 520388,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -33126,9 +33223,9 @@
         "description": "The new Outlook now supports LDAP (Lightweight Directory Access Protocol) directories for sending S/MIME encrypted emails. This allows users to add an LDAP directory in the new Outlook and use it to fetch recipients\u2019 certificates from the configured directory when sending S/MIME encrypted messages. #newoutlookforwindows",
         "id": 518287,
         "locale": null,
-        "modified": "2025-10-27T23:15:26",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41793,9 +41890,9 @@
         "description": "Endpoint DLP can now classify Office files stored in Windows devices that have Azure RMS protection applied.  Classification will be triggered when file is used in applications or when just-in-time classification is enabled. ",
         "id": 503780,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47065,12 +47162,12 @@
         "description": "Design and edit images, posters, banners, infographics, text drafts, and forms with Copilot\u2014align them to your brand using kits built by you or your team.",
         "id": 498548,
         "locale": null,
-        "modified": "2026-03-04T00:15:19",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -47120,12 +47217,12 @@
         "description": "M365 Copilot will be showing the rich and interactive Bing web answer cards like Weather, Stocks etc. to relevant queries to enrich the responses.",
         "id": 500865,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -55138,12 +55235,12 @@
         "description": "After further review, this has been delayed to a later date. We apologize for any inconvenience. Users will receive a weekly notification in the Connections apps in Microsoft Teams on mobile and desktop linking them to relevant SharePoint news that they might have missed in the preceding week. This unread news will be available in the \"News\" tab in the Connections app under the \"unread\" pill.",
         "id": 498323,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -60501,9 +60598,9 @@
         "description": "Use Copilot in the backstage view, accessible from the tile tab or start menu, to see a summary of the latest changes and comments made to your Word, Excel, and PowerPoint files before opening them.",
         "id": 489826,
         "locale": null,
-        "modified": "2025-07-29T23:15:56",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -66700,9 +66797,9 @@
         "description": "Use Copilot to see a summary of the latest comments and changes made to your Word, Excel and PowerPoint files using the Copilot chat pane.",
         "id": 489825,
         "locale": null,
-        "modified": "2025-07-29T23:15:56",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -68310,12 +68407,12 @@
         "description": "Intelligent meeting recap can incorporate content shared on screen in the AI-based summary provided after the meeting, providing a richer and more comprehensive recap of the meeting.  It captures details that are shown when a participant shares their screen, ensuring those unspoken insights become part of the meeting recap.",
         "id": 490052,
         "locale": null,
-        "modified": "2026-02-04T00:15:25",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -97753,12 +97850,12 @@
         "description": "Following further review, this feature continues in development. We apologize for any inconvenience. When single clicking on an empty time slot on the calendar surface, the quick compose pop-up will no longer be shown - instead, you will be able to create an appointment by typing directly in the time slot on the calendar grid, just as you can in classic Outlook for Windows. There will be no change to double click behavior, the full compose form will still open as it does today. #newoutlookforwindows",
         "id": 406948,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-04-13T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

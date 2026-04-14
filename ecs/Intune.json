@@ -270,10 +270,12 @@
     "SVC_AndroidSync": {
         "FlightingV2": {
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
+            "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
+            "EnableAppsPostFilterConflictResolution": true,
             "EnableBteOnboarding": true,
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
