@@ -373,6 +373,7 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "AzMonBGServiceFSICoreEnabled": true,
             "DeviceConfigurationPolicyStatusSummary": true,
             "HardwareConfigLogging": true,
             "NoMaterializeForFastSlowStreamMerge": true,

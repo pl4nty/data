@@ -71078,61 +71078,6 @@
     },
     {
         "created": "2025-04-23T16:15:28",
-        "description": "We are making it easier for users to type prompts with access to CIQ, local files, attach cloud files, and agents by adding it under the Plus Menu.",
-        "id": 490548,
-        "locale": null,
-        "modified": "2025-06-13T22:15:41",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Simplified Input box update in Copilot Chat"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
         "description": "The Microsoft 365 Copilot app is your starting place for AI at work, offering quick access to secure AI chat, search, files, and content creation in one seamless app.",
         "id": 490155,
         "locale": null,
@@ -79829,61 +79774,6 @@
     },
     {
         "created": "2025-03-26T23:45:25",
-        "description": "As with Microsoft Teams Rooms, admins can now access detailed call quality reports for BYOD rooms with associated peripherals in the Pro Management portal. These reports include call history and session details that help diagnose network, audio, and video issues. Reports in the Pro Management portal requires a Teams Shared Devices license for the room.",
-        "id": 486830,
-        "locale": null,
-        "modified": "2025-06-13T22:15:41",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Call quality reports for BYOD rooms in the Pro Management portal"
-    },
-    {
-        "created": "2025-03-26T23:45:25",
         "description": "This feature will enable you to assign shared lines to a line key and view the boss and delegates of the line along with their presence on Teams Phone devices with touch screens. This feature allows delegates to pick up calls on behalf of the boss by pressing the line key and join active calls. Additionally, users will be able to assign the transfer action to the line key, enabling them to transfer active calls by simply pressing that line key.",
         "id": 486829,
         "locale": null,
@@ -81894,61 +81784,6 @@
             ]
         },
         "title": "Microsoft Teams: Personal meeting templates (Premium)"
-    },
-    {
-        "created": "2025-03-19T23:00:32",
-        "description": "Share custom prompts with members of a Microsoft Teams team from the Copilot Prompt Gallery in Copilot Chat, allowing team members to easily discover and utilize these prompts in Copilot Prompt Gallery.",
-        "id": 483951,
-        "locale": null,
-        "modified": "2025-06-13T22:15:41",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt to a Microsoft Team's team"
     },
     {
         "created": "2025-03-19T21:45:14",
