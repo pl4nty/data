@@ -2936,16 +2936,16 @@ isFilenameInSideLoadIndicators = function(l_88_0)
   l_88_1["python310.dll"] = mp.INFECTED
   l_88_1["u2ec.dll"] = mp.INFECTED
   l_88_1["wer.dll"] = mp.INFECTED
-  l_88_1["sqlite.dll"] = mp.LOWFI
+  l_88_1["sqlite.dll"] = mp.INFECTED
+  l_88_1["glib-2.0.dll"] = mp.INFECTED
+  l_88_1["crashrpt1403.dll"] = mp.INFECTED
+  l_88_1["asus_wmi.dll"] = mp.INFECTED
+  l_88_1["wptsextensions.dll"] = mp.INFECTED
+  l_88_1["soldier.dll"] = mp.INFECTED
+  l_88_1["libvlc.dll"] = mp.INFECTED
   l_88_1["sqlite3.dll"] = mp.LOWFI
-  l_88_1["glib-2.0.dll"] = mp.LOWFI
-  l_88_1["crashrpt1403.dll"] = mp.LOWFI
   l_88_1["ffmpeg.dll"] = mp.LOWFI
-  l_88_1["libvlc.dll"] = mp.LOWFI
   l_88_1["jli.dll"] = mp.LOWFI
-  l_88_1["asus_wmi.dll"] = mp.LOWFI
-  l_88_1["wptsextensions.dll"] = mp.LOWFI
-  l_88_1["soldier.dll"] = mp.LOWFI
   return l_88_1[l_88_0]
 end
 

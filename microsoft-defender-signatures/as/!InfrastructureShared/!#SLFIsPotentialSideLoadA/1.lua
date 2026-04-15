@@ -25,7 +25,7 @@ if l_0_6 then
     return mp.CLEAN
   end
 end
-local l_0_8 = (MpCommon.PathToWin32Path)((mp.getfilename)())
+local l_0_8 = normalize_path((mp.getfilename)())
 if not l_0_8 then
   return mp.CLEAN
 end
