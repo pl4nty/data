@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\77b3d663374e\1.luac 
+-- Command line: lua\!InfrastructureShared\77b337e5a33b\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -28,6 +28,9 @@ do
     if (string.find)(l_0_1, l_0_3, 1, true) then
       return mp.CLEAN
     end
+  end
+  if (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+    return mp.CLEAN
   end
   ;
   (bm.add_related_file)(l_0_0)

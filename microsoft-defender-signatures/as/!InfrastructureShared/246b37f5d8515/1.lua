@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\246b3adf38bf8\1.luac 
+-- Command line: lua\!InfrastructureShared\246b37f5d8515\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -19,15 +19,18 @@ if (string.find)(l_0_1, "\\windows defender\\msmpeng.exe", 1, true) then
   return mp.CLEAN
 end
 local l_0_2 = {}
--- DECOMPILER ERROR at PC75: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC79: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC76: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC80: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC77: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC81: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC78: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC82: Overwrote pending register: R5 in 'AssignReg'
 
 if ("\\update.exe")("\\squirrel.exe", "\\setup.exe", true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "\\system32\\svchost.exe", 1, true) and ((string.find)(l_0_0, "\\windowsapps\\", 1, true) or (string.find)(l_0_0, "\\program files\\", 1, true) or (string.find)(l_0_0, "\\program files (x86)\\", 1, true)) then
   return mp.CLEAN
 end
 local l_0_3 = (string.find)(l_0_0, "\\resources\\app", 1, true)
@@ -35,11 +38,14 @@ do
   do
     if l_0_3 then
       local l_0_4 = (string.sub)(l_0_0, 1, l_0_3 - 1)
-      -- DECOMPILER ERROR at PC105: Overwrote pending register: R8 in 'AssignReg'
+      -- DECOMPILER ERROR at PC148: Overwrote pending register: R8 in 'AssignReg'
 
       if (string.find)(l_0_1, l_0_4, "\\windows\\system32\\msiexec.exe", true) then
         return mp.CLEAN
       end
+    end
+    if (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+      return mp.CLEAN
     end
     ;
     (bm.add_related_string)("electron_scriptjack_path", l_0_0, bm.RelatedStringBMReport)

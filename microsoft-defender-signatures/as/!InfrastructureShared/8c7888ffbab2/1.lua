@@ -7,21 +7,32 @@ local l_0_0 = (mp.GetHSTRCallerId)()
 if isnull(l_0_0) then
   return mp.CLEAN
 end
-do
-  if mp.HSTR_CALLER_SMS ~= l_0_0 then
-    local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
-    if not isnull(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+if mp.HSTR_CALLER_SMS ~= l_0_0 then
+  if peattributes.isexe then
+    return mp.CLEAN
+  end
+  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
+  if not isnull(l_0_1) then
+    if (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
       return mp.CLEAN
     end
-    if checkIfCertificateHit() then
+    local l_0_2 = (string.lower)(l_0_1)
+    if (string.find)(l_0_2, "amsistream-", 1, true) then
       return mp.CLEAN
     end
   end
-  if mp.HSTR_CALLER_SMS == l_0_0 then
-    return mp.INFECTED
+  do
+    do
+      if checkIfCertificateHit() then
+        return mp.CLEAN
+      end
+      if mp.HSTR_CALLER_SMS == l_0_0 then
+        return mp.INFECTED
+      end
+      ;
+      (mp.set_mpattribute)("Trojan:Win32/SuspLokiAssemblyLoad.A")
+      return mp.LOWFI
+    end
   end
-  ;
-  (mp.set_mpattribute)("SLF:Trojan:Win32/LokiAssemblyDLL.A")
-  return mp.LOWFI
 end
 

@@ -7,21 +7,24 @@ local l_0_0 = (mp.GetHSTRCallerId)()
 if isnull(l_0_0) then
   return mp.CLEAN
 end
-do
-  if mp.HSTR_CALLER_SMS ~= l_0_0 then
-    local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
-    if not isnull(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
-      return mp.CLEAN
-    end
-    if checkIfCertificateHit() then
-      return mp.CLEAN
-    end
+if mp.HSTR_CALLER_SMS ~= l_0_0 then
+  if peattributes.isexe then
+    return mp.CLEAN
   end
+  local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
+  if not isnull(l_0_1) and (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
+    return mp.CLEAN
+  end
+  if checkIfCertificateHit() then
+    return mp.CLEAN
+  end
+end
+do
   if mp.HSTR_CALLER_SMS == l_0_0 then
     return mp.INFECTED
   end
   ;
-  (mp.set_mpattribute)("SLF:Trojan:Win32/LokiScexecDLL.A")
+  (mp.set_mpattribute)("Trojan:Win32/SuspLokiScexecLoad.A")
   return mp.LOWFI
 end
 
