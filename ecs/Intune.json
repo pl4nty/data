@@ -94,7 +94,8 @@
         }
     },
     "CompanyPortal_Mac": {
-        "96340F47-D7BB-4D83-A324-9D74B7BCCAF8": true
+        "96340F47-D7BB-4D83-A324-9D74B7BCCAF8": true,
+        "F5E0CCEB-19D5-4D9D-8442-8A882D57800E": true
     },
     "ConfigV2ECSTesting": {
         "SampleConfig": {
@@ -270,12 +271,10 @@
     "SVC_AndroidSync": {
         "FlightingV2": {
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
-            "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
-            "EnableAppsPostFilterConflictResolution": true,
             "EnableBteOnboarding": true,
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
@@ -384,6 +383,7 @@
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreOrganizationMigrationSwitchOver": true,
             "UseLKG_ActiveMalwareAggregateByCategory": true,
+            "UseLKG_ActiveMalwareAggregateBySeverity": true,
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
             "UseLKG_AgentStatusSummary": true,
             "UseLKG_AutopilotV2DepStatus": true,
@@ -393,8 +393,7 @@
             "UseLKG_DetectedMalwareAggregateByState": true,
             "UseLKG_DeviceRunStatesByScript": true,
             "UseLKG_EnrollmentActivityUser": true,
-            "UseLKG_ScriptRunSummary": true,
-            "UseLKG_UseLKG_ActiveMalwareAggregateBySeverity": true
+            "UseLKG_ScriptRunSummary": true
         }
     },
     "SVC_DataPlatformMetadata": {
