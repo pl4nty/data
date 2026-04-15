@@ -143,11 +143,6 @@ BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchForImageShownInContextMenu);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchOpened);
 
-// Trigger fired when the pref kPhoenixRoundedFrameEnabled is disabled from LAF
-// toggle on settings page.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kPhoenixRoundedFrameDisabledTrigger);
-
 // Trigger flag for Mica.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kVisualRejuvMicaTrigger);
