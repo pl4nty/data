@@ -1,5 +1,689 @@
 [
     {
+        "created": "2026-04-14T23:00:25",
+        "description": "With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).",
+        "id": 560398,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Add support of hyperlinks in warn & block toast messages for Edge browser"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.",
+        "id": 560397,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Enforce DLP protection upon new content before its saved"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.",
+        "id": 560396,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Expand protection to Copilot + PC devices for Recall snapshots through custom policies"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "Currently admins can set Purview DLP policies to protect sensitive data from being sent to any Generative AI apps, users get blocked from sending their prompts to LLM when this is triggered and stops their workflow. This new add-on to the feature shows a new UI that will give users the option to be redirected to M365 Copilot which will open and navigate to this M365 Copilot tab and allow them to send the same prompt there.",
+        "id": 560341,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Shadow AI"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "Access Copilot directly when previewing files in Outlook. Tap the Copilot button to get smart suggestions, summaries, and answers about your documents without leaving the previewer. Get quick help understanding attachments and files right when you need it.",
+        "id": 560340,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot in File Previewer for iOS"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "Plan Mode for Copilot in Excel helps users make complex changes with confidence by outlining a clear, step by step approach before anything in the workbook is updated. Users can review how Copilot intends to complete the task, see which data or capabilities may be used, and adjust the plan as needed\u2014ensuring edits are intentional, transparent, and aligned with their goals before they\u2019re applied. This makes it easier to tackle multi step or high impact tasks while staying in control of every change.",
+        "id": 560338,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Excel: Plan Mode for Copilot in Excel"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "The OneDrive mobile Shared view now features a streamlined two-tab layout. The \"With you\" tab shows files others have shared with you, while the \"By you\" tab displays files you've shared. Quickly find shared content with new sorting options and file type filters, plus see recent sharing and editing activity at a glance.",
+        "id": 560330,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Improved Shared file experience on mobile"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "We are updating the default profanity filter setting for live captions from On to Off across Teams meetings, calls, events, and Microsoft Teams Rooms (MTR) devices to improve accessibility and align with EU requirements. This change will only affect users who have never configured their live captions profanity filter preference. Users who have already set their preference will keep their current setting. As a result, some users may begin seeing unfiltered profanity in live captions by default after this rollout. Users can update this preference in settings at any time.",
+        "id": 560323,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Profanity filter is disabled by default for captions"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "When users have more than one Copilot-enabled account added to new Outlook, the Copilot side pane in Calendar will include an account dropdown that makes it clear which Copilot-enabled account you\u2019re using and lets you switch accounts without relying on Outlook UI\u2019s account context.",
+        "id": 559991,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Account Selector in Outlook Copilot Side Pane"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees.",
+        "id": 559602,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Front-of-Room view control for Webinars & Structured Meetings in Teams Rooms on Android"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "When viewing Engage notifications from the Teams Activity app, users will also see other trending posts in their organization.",
+        "id": 559108,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: [Engage] More for you feed when opening posts"
+    },
+    {
+        "created": "2026-04-14T23:00:25",
+        "description": "If you're unable to attend a meeting, you can select Follow as your response to help you stay informed of the meeting events. Following a meeting reminds the organizer to record the meeting and alert you to any follow-up items.",
+        "id": 557347,
+        "locale": null,
+        "modified": "2026-04-14T23:00:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Follow meetings in Outlook mobile"
+    },
+    {
         "created": "2026-04-13T23:15:13",
         "description": "Review set limit per case is increased from 20 per case to 100 per case.",
         "id": 560322,
@@ -3134,10 +3818,10 @@
         "description": "Add conversational intelligence to your phone communications to ensure every customer gets served no matter what time of day - even after hours and holidays. Microsoft Teams Phone Attendant Agent greets callers, answers common questions, schedules appointments, and routes calls to the right person or department with context. Through seamless integration with Microsoft Copilot Studio, businesses can embed custom voice agents into Attendant Agent to handle specialized workflows like billing, order status, or inventory checks.",
         "id": 558680,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -3154,7 +3838,7 @@
                 "tagName": "General Availability"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -3178,11 +3862,11 @@
                     "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
                 }
             ]
         },
-        "title": "Microsoft Teams: Attendant Agent "
+        "title": "Microsoft Teams: Teams Phone Agent"
     },
     {
         "created": "2026-03-25T23:15:06",
@@ -6923,12 +7607,12 @@
         "description": "New enhancements for SharePoint and OneDrive enable organizations to automatically override manually applied sensitivity labels and remove labels at scale on Word, Excel, PowerPoint, and PDF files. These capabilities help ensure data remains correctly classified as policies, labels, and business requirements evolve\u2014reducing reliance on manual user updates and improving consistency for data at rest across Microsoft 365.",
         "id": 558342,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6972,12 +7656,12 @@
         "description": "Users will now find controls for switching between the accounts and tenants that they are signed into making it easier to navigate on Mac.",
         "id": 558340,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7967,7 +8651,7 @@
         "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
         "id": 557170,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -7979,6 +8663,9 @@
             },
             {
                 "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Desktop"
@@ -8003,6 +8690,9 @@
                 },
                 {
                     "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -8944,12 +9634,12 @@
         "description": "Today, sharing a folder requires manually sharing each parent folder in the hierarchy. Outlook will simplify this by allowing users to share a folder in a single step, automatically applying the required permissions to its parent folders. Before sharing, users will clearly see which folders (including parent folders) will be shared. This removes manual effort while keeping users informed and in control.",
         "id": 557680,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -10402,12 +11092,12 @@
         "description": "A new export functionality will be introduced in two locations: the Data Loss Prevention > Policies page and the Information Protection > Label publishing policies page. This feature will allow users to export their existing DLP configurations and label policies, including schema, as a downloadable ZIP file. The exported file can be attached to support tickets to accelerate troubleshooting. ",
         "id": 557553,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10506,12 +11196,12 @@
         "description": "When you apply a filter in the message list, Outlook for iOS now helps you search for all matching messages\u2014even older ones that aren\u2019t currently synced. If more results may be available, you can tap to run a search with the filter already applied. ",
         "id": 557349,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -39216,12 +39906,12 @@
         "description": "Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.",
         "id": 511791,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-04-14T23:00:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

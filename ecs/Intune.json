@@ -340,7 +340,8 @@
             "NoFallback_Directory_ResourceSizeExceeded": true,
             "NoFallback_MSGraphGetUserAsync": true,
             "NoFallback_OnAllException": true,
-            "RefreshPCWithDifferentAADDeviceId": true
+            "RefreshPCWithDifferentAADDeviceId": true,
+            "RequireIsManagedForGraphDeviceIsCompliantPatch": true
         }
     },
     "SVC_ContentService": {
@@ -382,18 +383,18 @@
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreOrganizationMigrationSwitchOver": true,
+            "UseLKG_ActiveMalwareAggregateByCategory": true,
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
             "UseLKG_AgentStatusSummary": true,
             "UseLKG_AutopilotV2DepStatus": true,
             "UseLKG_DependentAppsInstallStatus": true,
             "UseLKG_DetectedMalware": true,
             "UseLKG_DetectedMalwareAggregate": true,
-            "UseLKG_DetectedMalwareAggregateByCategory": true,
-            "UseLKG_DetectedMalwareAggregateBySeverity": true,
             "UseLKG_DetectedMalwareAggregateByState": true,
             "UseLKG_DeviceRunStatesByScript": true,
             "UseLKG_EnrollmentActivityUser": true,
-            "UseLKG_ScriptRunSummary": true
+            "UseLKG_ScriptRunSummary": true,
+            "UseLKG_UseLKG_ActiveMalwareAggregateBySeverity": true
         }
     },
     "SVC_DataPlatformMetadata": {
@@ -691,6 +692,7 @@
     },
     "ios_mam_tunnel_sdk": {
         "09D9FD0B-66E4-4AFB-9D36-AD875228A3E4": false,
+        "97900BBB-BEC4-4296-8C54-5F1A89F684BB": false,
         "loginServiceUrlBypassEnabled": true,
         "mamServiceUrlBypassEnabled": true,
         "reloadRedirects": true,
