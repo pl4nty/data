@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.19923.40134-->
+    <!--Build: 16.0.20006.40125-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1746,6 +1746,7 @@
     </o:service>
     <o:service o:name="DeferredDeepLinkService" o:authentication="2">
       <o:url>https://deeplinkservice.svc.cloud.microsoft/api/deeplinkprompt</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://deeplinkservice.svc.cloud.microsoft/.default" o:headerValue="Bearer {}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://deeplinkservice.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="InAppFeedbackCentrohostUrl">
@@ -2518,7 +2519,7 @@
     <o:token o:name="OneNotePdfConversionKey">0e3c51927ec44a3db5dbf4a2fcc18d0f</o:token>
     <o:token o:name="OneNoteEnableWebConnectedExperiences">true</o:token>
     <o:token o:name="IsIntuneSupported">true</o:token>
-    <o:token o:name="AllowedServiceNamesInDisconnectedState">GetFederationProvider,GetIdentityProvider,HomeRealmDiscovery,IAPIImageServiceGetPhoto,IdentityService,LicensingRestHost,LiveCreateProfile,LiveEditProfile,LiveIdFederatedToOrgIdForDesktop,LiveIdFederatedToOrgIdForImmersive,LiveOAuthGetToken,LiveOAuthLoginBase,LiveOAuthLoginEnd,LiveOAuthLoginError,LiveOAuthLoginStart,LiveOAuthSignOut,LiveOAuthSignUp,LiveProfileService,LiveProfileServicesGetInfo,LiveProfileServicesGetPhoneNumber,LumosHost,MsGraphGetPhoto,Nexus,NexusRules,OfficeLicensingService,OfficeLicensingService15,OCSettingsUrl,ConfigOCSettingsTenantAssociationFullUrl,OCSettingsTenantAssociationUrl,OCSettingsCloudPolicyServiceUrl,OCSettingsCloudPolicyServiceMacUrl,OCSettingsCloudPolicyServicIOSUrl,OCSettingsCloudPolicyServiceAndroidUrl,ONetUrl,ORedir,PAPIProfileServiceGetProfile,TestODCService,TestUTAllowOffline,OneNoteHierarchySyncWebSocket,OneNoteHierarchySyncWebSocketNCUS,OneNoteHierarchySyncWebSocketWUS2,OneNoteHierarchySyncMultiplexerWebSocket,OneNoteHierarchySyncMultiplexerWebSocketNCUS,OneNoteHierarchySyncMultiplexerWebSocketWUS2,OneNoteSyncApi,OneNoteSyncApiDogfood,OneNoteSyncApiTeamDogfood,OneNoteSyncAttachment,OneNoteSyncAttachmentDogfood,OneNoteSyncAttachmentTeamDogfood,OneNoteSyncGetMissingAttachmentIds,OneNoteSyncWebSocket,OneNoteSyncWebSocketDogfood,OneNoteSyncWebSocketTeamDogfood,C2RCDNBackgroundUrl,C2RCDNForegroundUrl,C2RDorisInteractiveInstallationUrl,C2RDeltaAdvisoryUrl,TeamsAuthEndpoint,TeamsSchedulerService,TeamsUpgradeV2,TeamsUserAggregateSettings,MroDeviceMgrC2R</o:token>
+    <o:token o:name="AllowedServiceNamesInDisconnectedState">GetFederationProvider,GetIdentityProvider,HomeRealmDiscovery,IAPIImageServiceGetPhoto,IdentityService,LicensingRestHost,LiveCreateProfile,LiveEditProfile,LiveIdFederatedToOrgIdForDesktop,LiveIdFederatedToOrgIdForImmersive,LiveOAuthGetToken,LiveOAuthLoginBase,LiveOAuthLoginEnd,LiveOAuthLoginError,LiveOAuthLoginStart,LiveOAuthSignOut,LiveOAuthSignUp,LiveProfileService,LiveProfileServicesGetInfo,LiveProfileServicesGetPhoneNumber,LumosHost,MsGraphGetPhoto,Nexus,NexusRules,OfficeLicensingService,OfficeLicensingService15,OCSettingsUrl,OCSettingsTenantAssociationFullUrl,OCSettingsTenantAssociationUrl,OCSettingsCloudPolicyServiceUrl,OCSettingsCloudPolicyServiceMacUrl,OCSettingsCloudPolicyServicIOSUrl,OCSettingsCloudPolicyServiceAndroidUrl,ONetUrl,ORedir,PAPIProfileServiceGetProfile,TestODCService,TestUTAllowOffline,OneNoteHierarchySyncWebSocket,OneNoteHierarchySyncWebSocketNCUS,OneNoteHierarchySyncWebSocketWUS2,OneNoteHierarchySyncMultiplexerWebSocket,OneNoteHierarchySyncMultiplexerWebSocketNCUS,OneNoteHierarchySyncMultiplexerWebSocketWUS2,OneNoteSyncApi,OneNoteSyncApiDogfood,OneNoteSyncApiTeamDogfood,OneNoteSyncAttachment,OneNoteSyncAttachmentDogfood,OneNoteSyncAttachmentTeamDogfood,OneNoteSyncGetMissingAttachmentIds,OneNoteSyncWebSocket,OneNoteSyncWebSocketDogfood,OneNoteSyncWebSocketTeamDogfood,C2RCDNBackgroundUrl,C2RCDNForegroundUrl,C2RDorisInteractiveInstallationUrl,C2RDeltaAdvisoryUrl,TeamsAuthEndpoint,TeamsSchedulerService,TeamsUpgradeV2,TeamsUserAggregateSettings,MroDeviceMgrC2R</o:token>
     <o:token o:name="ControllerServiceNames">AddInEmailTemplate,AddinsAppSourceLandingPage,AddInsInClientStore,AddInsPowerBIInClientStore,AddInsWXPInClientStore,AppAcquisitionLogging,AppDownload,AppInfoQuery15,AppInstallInfoQuery15,AppLandingPage,AppQuery15,AppsForOfficeCDNUrl,AppStateQuery15,BingGeospatialEndpointServiceUrl,BingInsertMediaImmersive,ClientAppInstallInfoQuery15,CommerceQuery15,ConsumerMyAccountSubscription,DeepLinkingService,DeepLinkingServiceBlackForest,DeepLinkingServiceChina,DeepLinkingServiceDogfood,DeepLinkingTemplates,EnrichmentReportContentUrl,EntitlementQuery15,EntitlementQueryOrgId,FirstPartyAppCDN,FirstPartyAppQuery,HubbleLoggingSvc,InsertMediaTelemetry,LastStoreCatalogUpdate,MyApps,ODCInsertMedia,OfficeHomeStoreCatalogEndpoint,OfficeHubCarouselSubscription,OfficeHubSubscription,OfficeOnlineContent,OfficeOnlineContent3DModel,OfficeOnlineContentClipArt,OfficeOnlineContentFb,OfficeOnlineContentFl,OfficeOnlineContentImages,OfficeOnlineContentOD,OfficeOnlineContentOEmbed,OfficeOnlineContentGetVideoProviderList,OfficeOnlineContentVideoHostPage,OfficeOnlineContentVideos,OfficeSoloStoreCatalogEndpoint,OMEXRemoveAppsAndSsoConsentOrgId,OMEXSideloadingAddinSSOConsentPage,OMEXSSOConsentPage,OutlookWebStore,PreinstalledAppsQuery,RemoveApps,RemoveAppsOrgId,ReviewQuery15,StoreUserStatus,InsightsDesktop,HelpContactSupport,OutlookWeatherMSN</o:token>
     <o:token o:name="LastSignInPortalURL">https://mysignins.microsoft.com/</o:token>
     <o:token o:name="SafeDocsMaxRetry">3</o:token>
@@ -2584,6 +2585,7 @@
     <o:token o:name="LinksOpenRightTuiImageHC200Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-hc-200.png</o:token>
     <o:token o:name="IsRestrictedEnvironment">false</o:token>
     <o:token o:name="OutlookTeamsStoreBaseUrl">https://teams.microsoft.com</o:token>
+    <o:token o:name="OutlookBizChatOcdiUrl">https://m365copilotapp.svc.cloud.microsoft</o:token>
     <o:token o:name="OCMPolicyFallbackEnabled">true</o:token>
     <o:token o:name="OCMAddonFeatureEnabled">true</o:token>
     <o:token o:name="FluidAudience">Production</o:token>

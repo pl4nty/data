@@ -305,6 +305,7 @@
     "SVC_AppleMDM": {
         "FlightingV2": {
             "DeviceInventoryReporting": true,
+            "EnableAppleDdmLobApps": true,
             "EnforceEdgeManifestSignatureValidation": true,
             "ValidateEdgeManifestSignatures": true
         }

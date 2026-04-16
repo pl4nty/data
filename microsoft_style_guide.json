@@ -10580,6 +10580,11 @@
                             "toc_title": "Microsoft 365 Copilot Chat"
                         },
                         {
+                            "href": "copilot-guidance/copilot/microsoft-365-copilot-cowork",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft 365 Copilot Cowork"
+                        },
+                        {
                             "href": "copilot-guidance/copilot/microsoft-365-copilot-library",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft 365 Copilot Library"
@@ -14412,7 +14417,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2748,
+        "count_of_node_with_href": 2749,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,
