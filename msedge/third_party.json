@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33229540,
+    "size": 33230986,
     "file_count": 4034
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16153692,
-    "file_count": 1941
+    "size": 16171991,
+    "file_count": 1942
   },
   {
     "name": "entity_extraction",
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19620331,
+    "size": 19553259,
     "file_count": 19
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4259222,
+    "size": 4260863,
     "file_count": 601
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3482453,
+    "size": 3484413,
     "file_count": 1201
   },
   {
@@ -691,7 +691,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 549700,
+    "size": 549938,
     "file_count": 15
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "tflite",
-    "size": 1722694,
+    "size": 1724712,
     "file_count": 533
   },
   {
@@ -746,7 +746,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1469304,
+    "size": 1479345,
     "file_count": 23
   },
   {
@@ -756,13 +756,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2671314,
+    "size": 2697638,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7448022,
-    "file_count": 195
+    "size": 7462137,
+    "file_count": 194
   },
   {
     "name": "vulkan_memory_allocator",
