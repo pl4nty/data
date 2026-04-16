@@ -1,20 +1,20 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1ffb3f48de66a\1.luac 
+-- Command line: lua\!InfrastructureShared\251b37e72664d\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
+  if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil then
     local l_0_0 = nil
   else
   end
   -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
 
   do
-    if (not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p2 == nil or (this_sigattrlog[6]).matched) and (this_sigattrlog[6]).utf8p2 ~= nil then
-      local l_0_1, l_0_2 = (string.lower)((this_sigattrlog[5]).utf8p2)
+    if (not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).utf8p2 == nil or (this_sigattrlog[8]).matched) and (this_sigattrlog[8]).utf8p2 ~= nil then
+      local l_0_1, l_0_2 = (string.lower)((this_sigattrlog[7]).utf8p2)
     end
     -- DECOMPILER ERROR at PC53: Confused about usage of register: R0 in 'UnsetPending'
 
@@ -40,7 +40,7 @@ do
 
     -- DECOMPILER ERROR at PC138: Unhandled construct in 'MakeBoolean' P3
 
-    if ((((not (this_sigattrlog[7]).matched or (this_sigattrlog[7]).utf8p2 == nil or (this_sigattrlog[8]).matched) and not (this_sigattrlog[9]).matched) or (this_sigattrlog[10]).matched) and nil == nil) or nil == "" then
+    if ((((not (this_sigattrlog[9]).matched or (this_sigattrlog[9]).utf8p2 == nil or (this_sigattrlog[10]).matched) and not (this_sigattrlog[11]).matched) or (this_sigattrlog[12]).matched) and nil == nil) or nil == "" then
       return mp.CLEAN
     end
     -- DECOMPILER ERROR at PC141: Confused about usage of register: R1 in 'UnsetPending'
