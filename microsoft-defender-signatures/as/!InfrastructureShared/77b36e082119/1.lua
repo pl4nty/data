@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1c4b39683bf4d\1.luac 
+-- Command line: lua\!InfrastructureShared\77b36e082119\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -7,7 +7,7 @@ if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p1 == nil then
   return mp.CLEAN
 end
 local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-if not (string.find)(l_0_0, "/resources/app", 1, true) then
+if (string.find)(l_0_0, "/node_modules/", 1, true) then
   return mp.CLEAN
 end
 local l_0_1 = (bm.get_imagepath)()
@@ -16,24 +16,24 @@ if isnull(l_0_1) then
 end
 local l_0_2 = (string.lower)(l_0_1)
 local l_0_3 = {}
--- DECOMPILER ERROR at PC72: No list found for R3 , SetList fails
+-- DECOMPILER ERROR at PC62: No list found for R3 , SetList fails
 
--- DECOMPILER ERROR at PC73: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC63: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC74: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC75: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC65: Overwrote pending register: R6 in 'AssignReg'
 
-if ("/node")("/npm", "/npx", true) then
+if ("/dpkg")("/apt", "/yum", true) then
   return mp.CLEAN
 end
-local l_0_4 = (string.find)(l_0_0, "/resources/app", 1, true)
+local l_0_4 = (string.find)(l_0_0, "/resources/", 1, true)
 do
   if l_0_4 then
     local l_0_5 = (string.sub)(l_0_0, 1, l_0_4 - 1)
-    -- DECOMPILER ERROR at PC102: Overwrote pending register: R9 in 'AssignReg'
+    -- DECOMPILER ERROR at PC92: Overwrote pending register: R9 in 'AssignReg'
 
-    if (string.find)(l_0_2, l_0_5, "/electron-builder", true) then
+    if (string.find)(l_0_2, l_0_5, "/brew", true) then
       return mp.CLEAN
     end
   end
@@ -50,9 +50,8 @@ do
         return mp.CLEAN
       end
       ;
-      (bm.add_related_string)("xp_electron_scriptjack_path", l_0_0, bm.RelatedStringBMReport)
-      add_parents()
-      TrackPidAndTechniqueBM("BM", "T1218.015", "ElectronScriptJackXP")
+      (bm.add_related_file)((this_sigattrlog[2]).utf8p1)
+      TrackPidAndTechniqueBM("BM", "T1218.015", "SuspElectronNodeLoadXP")
       do return mp.INFECTED end
       -- WARNING: undefined locals caused missing assignments!
     end
