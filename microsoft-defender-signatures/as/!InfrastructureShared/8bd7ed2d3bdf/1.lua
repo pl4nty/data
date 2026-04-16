@@ -5,15 +5,15 @@
 -- function num : 0
 if IsDeviceHVA() then
   local l_0_0 = ExtractDeviceProperties()
-  if l_0_0.DeviceRoles ~= nil then
+  if l_0_0 ~= nil and l_0_0.DeviceRoles ~= nil then
     local l_0_1 = {}
-    -- DECOMPILER ERROR at PC14: No list found for R1 , SetList fails
+    -- DECOMPILER ERROR at PC16: No list found for R1 , SetList fails
 
-    -- DECOMPILER ERROR at PC15: Overwrote pending register: R2 in 'AssignReg'
+    -- DECOMPILER ERROR at PC17: Overwrote pending register: R2 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC16: Overwrote pending register: R3 in 'AssignReg'
+    -- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC17: Overwrote pending register: R4 in 'AssignReg'
+    -- DECOMPILER ERROR at PC19: Overwrote pending register: R4 in 'AssignReg'
 
     if ("winrshost.exe")("wsmprovhost.exe", "wmiprvse.exe") then
       return mp.INFECTED

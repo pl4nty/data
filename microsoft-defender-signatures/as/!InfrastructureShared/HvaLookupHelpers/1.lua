@@ -74,4 +74,24 @@ IsDeviceHVA = function()
   return false
 end
 
+IsDeviceHVAWithAD = function()
+  -- function num : 0_2
+  local l_3_0 = false
+  do
+    if IsDeviceHVA() then
+      local l_3_1 = ExtractDeviceProperties()
+      if l_3_1 ~= nil and l_3_1.DeviceRoles ~= nil then
+        l_3_0 = true
+      end
+    end
+    if not l_3_0 and IsActiveDirectoryRole() then
+      l_3_0 = true
+    end
+    if l_3_0 == true then
+      return true
+    end
+    return false
+  end
+end
+
 

@@ -223,7 +223,7 @@ local l_0_10 = false
 
 -- DECOMPILER ERROR at PC757: Overwrote pending register: R12 in 'AssignReg'
 
-if (l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "0d8b3247-a1a9-44c3-a65b-a9dc4d1b70d5") and ((l_0_4 .. "\\syswow64\\").IsSampled)(l_0_4 .. "\\system32\\windowspowershell\\v1.0\\", false, false, false) == true then
+if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "0d8b3247-a1a9-44c3-a65b-a9dc4d1b70d5" or ((l_0_4 .. "\\syswow64\\").IsSampled)(l_0_4 .. "\\system32\\windowspowershell\\v1.0\\", false, false, false) == true then
   l_0_10 = true
 end
 local l_0_11 = (pe.get_versioninfo)()

@@ -19,9 +19,11 @@ local l_0_2 = function(l_1_0, l_1_1)
       return l_2_1
     else
       do
-        local l_2_2 = {}
-        l_2_2.key1 = l_1_2(l_2_0 - 1)
-        do return l_2_2 end
+        local l_2_2 = l_2_0 - 1
+        local l_2_3, l_2_4 = pcall(l_1_2, l_2_2)
+        local l_2_5 = {}
+        l_2_5.key1 = l_2_4
+        do return l_2_5 end
       end
     end
   end
@@ -30,20 +32,24 @@ local l_0_2 = function(l_1_0, l_1_1)
       local l_1_4 = {}
       -- DECOMPILER ERROR at PC8: Confused about usage of register: R7 in 'UnsetPending'
 
-      l_1_4["key" .. R7_PC8] = l_1_3(l_1_1)
+      local l_1_9 = "key" .. R7_PC8
+      _ = pcall(l_1_3, l_1_1)
     end
-    -- DECOMPILER ERROR at PC15: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC17: Confused about usage of register: R3 in 'UnsetPending'
 
     do return l_1_4 end
-    -- DECOMPILER ERROR at PC16: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC18: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
 
-local l_0_3 = 260
+local l_0_3 = 512
 local l_0_4 = 30
-local l_0_5 = l_0_2(l_0_3, l_0_4)
-if not pcall(MpCommon.JsonSerialize, l_0_5) then
+local l_0_5, l_0_6 = pcall(l_0_2, l_0_3, l_0_4)
+if not l_0_5 then
+  return mp.CLEAN
+end
+if not pcall(MpCommon.JsonSerialize, l_0_6) then
   return mp.CLEAN
 end
 if not MpCommon.JsonSerialize then
