@@ -314,6 +314,7 @@
         "EnableAutoOnboardGalleryImage": true,
         "EnableAutoProcessForPendingRecoverWorkItem": true,
         "EnableAutoProcessQuotaRequest": true,
+        "EnableAutoRefreshMSIXIcon": true,
         "EnableAutoResetForUX": true,
         "EnableAutoResetTimer": true,
         "EnableAutoUndispatchedQuotaGenerate": true,
