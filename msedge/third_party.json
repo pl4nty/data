@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13035608,
+    "size": 13035693,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15911239,
+    "size": 15911273,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33217994,
+    "size": 33229540,
     "file_count": 4034
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16150521,
+    "size": 16153692,
     "file_count": 1941
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43969347,
-    "file_count": 3318
+    "size": 43982324,
+    "file_count": 3329
   },
   {
     "name": "googletest",
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19590123,
+    "size": 19620331,
     "file_count": 19
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4256654,
+    "size": 4259222,
     "file_count": 601
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3482368,
+    "size": 3482453,
     "file_count": 1201
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7449372,
+    "size": 7448022,
     "file_count": 195
   },
   {
