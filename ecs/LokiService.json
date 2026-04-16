@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260412.8.0",
+        "CalendarCompanionDFVersion": "1.20260414.10.0",
         "CalendarCompanionMsitVersion": "1.20260403.13.2",
         "CalendarCompanionProdVersion": "1.20260325.9.0",
         "CompanionRing": "Prod",
@@ -1500,11 +1500,11 @@
         },
         "RouteEndpointThrottlingLimits_ByIp": 100,
         "RouteEndpointThrottlingLimits_ByIp_ByPath": {
-            "Notifications": 500
+            "Notifications": 1500
         },
         "RouteEndpointThrottlingLimits_ByTenantsPerIp": 20,
         "RouteEndpointThrottlingLimits_ByTenantsPerIp_ByPath": {
-            "Notifications": 20
+            "Notifications": 50
         },
         "RouteEndpointThrottlingLimits_ByVm": 5000,
         "RouteEndpointThrottlingLimits_ByVm_ByPath": {
@@ -2004,7 +2004,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260413.8.0",
+        "PeopleInTaskbarDFVersion": "1.20260414.10.0",
         "PeopleInTaskbarMsitVersion": "1.20260406.9.0",
         "PeopleInTaskbarProdVersion": "1.20260325.9.0",
         "PeopleInTaskbarVersion": "1.20260331.10.0",
