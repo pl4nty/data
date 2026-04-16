@@ -1303,6 +1303,7 @@
         "MISE_IWP": true,
         "MarkProvisionFailedWhenDeviceWithSameSizeExists": true,
         "MarkStuckWorkItemsAsFailed": true,
+        "MigrateWinREInExpandDisk": true,
         "Mobius_AllowAVDEmpty": true,
         "Mobius_AllowConnectFLDWhenRequestFlexAPIFailed": true,
         "Mobius_AlwaysAllowConnectEnabledForFLD": true,
@@ -1554,9 +1555,6 @@
         "ValidateImageSizeForFrontline": true,
         "W365MeterForTestingLLMPurpose": true,
         "WCX_EnableRailDiagnosticTool": true,
-        "WCX_SelfHelp": true,
-        "WCX_SelfHelp_UserNewHostingAppName": true,
-        "WCX_SelfHelp_VSBAdmin_InAppUX": true,
         "WaitForOaiModelDownload": true,
         "WaitOneHourForEachGetMetadataFailure": true,
         "Windows365Client": {
