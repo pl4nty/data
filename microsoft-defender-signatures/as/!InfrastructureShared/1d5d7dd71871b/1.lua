@@ -8,7 +8,7 @@ local l_0_0 = {}
 
 -- DECOMPILER ERROR at PC3: Overwrote pending register: R1 in 'AssignReg'
 
-if ("node")("cmdhstr", l_0_0) then
+if ("node.exe")("cmdhstr", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
