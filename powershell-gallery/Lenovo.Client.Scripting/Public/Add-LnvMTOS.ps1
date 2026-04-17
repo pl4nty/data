@@ -33,7 +33,7 @@ function Add-LnvMTOS {
         [string]$MachineType,
 
         [ValidateSet("Win10", "Win11")]
-        [parameter(position = 1, Mandatory = $true, helpMessage = “Specify the appropriate OS value.”)]
+        [parameter(position = 1, Mandatory = $true, helpMessage = "Specify the appropriate OS value.")]
         [string]$OS,
 
         [parameter(position = 2, Mandatory = $false)][string]$ListPath
