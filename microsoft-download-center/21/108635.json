@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Database Obfuscate",
+    "downloadDescription": "Obfuscates the character columns of a SQL Server database.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ObfuscateV1.1.0.zip",
+            "url": "https://download.microsoft.com/download/bb6f1b2c-818b-4136-8656-ace9eafcc79a/ObfuscateV1.1.0.zip",
+            "size": "5707004",
+            "version": "1.1.0",
+            "datePublished": "4/17/2026 6:07:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A utility program that changes all of the character columns (char, varchar, nchar, nvarchar, xml, json) in a database into random strings of the same length as the original. This effectively obfuscates the data since it cannot be reverse engineered.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0",
+    "detailsSection_file_name": [
+        "ObfuscateV1.1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "4/17/2026",
+    "systemRequirementsSection": ".net 8",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download the .zip, extract it to a folder, edit the appsettings.json, run the .exe",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108635",
+    "downloadPreload": true
+}

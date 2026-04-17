@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "VAMT- ESU Configuration May 2026",
+    "downloadDescription": "Update to the VAMT Configuration files",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "pkconfig_winServer2016.xrm-ms",
+            "url": "https://download.microsoft.com/download/b9449874-4eaa-4fb0-9762-8500beeaedac/pkconfig_winServer2016.xrm-ms",
+            "size": "687292",
+            "version": "1.0",
+            "datePublished": "4/17/2026 5:48:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update enables the VAMT tool to deploy and activate ESU keys on Windows Server 2016, Windows 10 Enterprise 2016 LTSB, Windows 10 Enterprise N 2016 LTSB and Windows 10 IoT Enterprise 2016 LTSB",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "pkconfig_winServer2016.xrm-ms"
+    ],
+    "detailsSection_file_size": [
+        "671.2 KB"
+    ],
+    "detailsSection_file_date": "4/17/2026",
+    "systemRequirementsSection": "Latest ADK/VAMT installed on the machine,  SQL server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "1) Download the following configuration file - \npkconfig_winServer2016.xrm-ms\n\n2) Replace the files here: C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\VAMT3\\pkconfig with the new files\n\nGet the latest ADK/VAMT here: https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install\n\nFor VAMT Setup and Activation, Refer to: https://docs.microsoft.com/en-us/windows/deployment/volume-activation/introduction-vamt",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108634",
+    "downloadPreload": true
+}
