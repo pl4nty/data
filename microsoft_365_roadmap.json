@@ -83753,55 +83753,6 @@
     },
     {
         "created": "2025-03-18T23:15:13",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to reply and forward  emails in a .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
-        "id": 485741,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Reply and forward emails in a PST file in new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-18T23:15:13",
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import emails from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485740,
         "locale": null,
@@ -84001,55 +83952,6 @@
             ]
         },
         "title": "Outlook: Export mailbox to PST file in new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-18T23:15:13",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to group messages as conversation for emails within .pst file. Future releases of new Outlook will expand the support for .pst file capabilities, #newoutlookforwindows, #pstfilesupport.",
-        "id": 485736,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Group messages as conversation for PST files in new Outlook for Windows"
     },
     {
         "created": "2025-03-18T23:15:13",
@@ -86410,61 +86312,6 @@
             ]
         },
         "title": "PowerPoint: Designer is now part of Copilot, enhanced with new template and slide Suggestions."
-    },
-    {
-        "created": "2025-03-04T23:15:18",
-        "description": "The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture.",
-        "id": 483490,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: Secure password deployment in the Edge management service"
     },
     {
         "created": "2025-03-04T23:15:18",
@@ -89691,61 +89538,6 @@
             ]
         },
         "title": "SharePoint: SharePoint Agents in Teams Channels"
-    },
-    {
-        "created": "2025-02-14T23:15:12",
-        "description": "You can now take advantage of speaker recognition, transcript attribution, and AI capabilities in Teams Rooms on Android. Intelligent speaker functionalities are brought to existing speakers via the cloud. This feature identifies and attributes people in live transcripts, utilizing a unique voice profile for each participant enabling intelligent recaps and maximum value from Microsoft 365 Copilot and Teams Premium in meetings. Users can easily and securely enroll voices via Teams Settings. This feature requires a Teams Rooms Pro license.",
-        "id": 480715,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Speaker recognition and attribution in Teams Rooms on Android"
     },
     {
         "created": "2025-02-14T23:15:12",
@@ -96016,55 +95808,6 @@
             ]
         },
         "title": "Outlook: Sync folder order"
-    },
-    {
-        "created": "2024-09-04T23:30:32",
-        "description": "LMS setup form will now have detailed error description for LMS setup failures.",
-        "id": 414517,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Learning - Detailed error description for LMS setup failures"
     },
     {
         "created": "2024-07-12T22:30:02",
@@ -104312,67 +104055,6 @@
         "title": "Microsoft Copilot (Microsoft 365): BizChat - Edge contextual capabilities in Business Chat work mode"
     },
     {
-        "created": "2024-11-19T18:30:19",
-        "description": "Data assessments in Microsoft Purview AI Hub provides a way for admins to drive data security outcomes by creating scoped assessments, reviewing the data sensitivity and user accesses on locations, and performing remediation actions to mitigate risk.",
-        "id": 464997,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Microsoft Purview AI Hub \u2013 Data Assessments"
-    },
-    {
         "created": "2024-10-31T23:30:09",
         "description": "Microsoft 365 Copilot Chat Copilot is available at no additional cost for Microsoft 365 GCC users who sign in with their Microsoft Entra account (no Microsoft 365 Copilot license required). Microsoft 365 Copilot Chat offers enterprise data protection (EDP), and secure AI chat designed for work, powered by the latest large language models with optional web grounding. The general availability of this release will be delivered to the users with web grounding OFF by default to meet US Government requirements. This will help protect sensitive information which should not leave the GCC compliance boundary.",
         "id": 464984,
@@ -106142,61 +105824,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Information Protection - SharePoint Online extends library permissions to downloaded files."
-    },
-    {
-        "created": "2024-11-07T00:30:03",
-        "description": "Soon, you'll be able to choose a custom icon so that it's easier to tell your accounts apart while using Outlook on iOS and Android.",
-        "id": 467250,
-        "locale": null,
-        "modified": "2025-06-16T23:15:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Custom account icons in Outlook Mobile"
     },
     {
         "created": "2024-09-30T23:30:14",
