@@ -1,5 +1,201 @@
 [
     {
+        "created": "2026-04-16T23:15:53",
+        "description": "OneDrive now makes it easier to find and access your SharePoint document libraries on your iPhone and iPad. Search for libraries by name, browse an updated Libraries view with recent and alphabetical sorting, and navigate directly to the site's default document library for ease of access. Whether you're on the go or working remotely, you can quickly locate and open organizational content that matters to you.",
+        "id": 560329,
+        "locale": null,
+        "modified": "2026-04-16T23:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Improved finding and browsing document libraries on iPhone and iPad"
+    },
+    {
+        "created": "2026-04-16T23:15:53",
+        "description": "Data Security Investigations now delivers proactive AI insights within the Data Security Posture Management (DSPM) experience. When DSPM identifies potential data exfiltration, DSI automatically analyzes the flagged content against risk dimensions like intellectual property, financial data, and credentials. Results are surfaced directly in DSPM, helping security teams identify sensitive data at risk before an incident occurs \u2014 and take action in DSI when deeper investigation is needed.",
+        "id": 560327,
+        "locale": null,
+        "modified": "2026-04-16T23:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 Proactive AI insight powered by Data Security Posture Management"
+    },
+    {
+        "created": "2026-04-16T23:15:53",
+        "description": "We're adding pre-built search templates to Microsoft Purview Data Security Investigations. Templates provide pre-configured search queries for common data security scenarios, allowing investigators to scope an investigation in just a few clicks instead of manually building queries. Users select a template, provide minimal inputs (such as a user or site), and the search is configured and ready to run.",
+        "id": 560326,
+        "locale": null,
+        "modified": "2026-04-16T23:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 Investigation templates for common data security scenarios"
+    },
+    {
+        "created": "2026-04-16T23:15:53",
+        "description": "We're introducing notification capabilities and search improvements to Microsoft Purview Data Security Investigations. Investigators will receive notifications when key investigation events occur, such as when AI jobs complete or when new data is added to scope. Search improvements include enhanced query building to more easily identify potentially impacted data\n",
+        "id": 560325,
+        "locale": null,
+        "modified": "2026-04-16T23:15:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 notification and improved search capabilities"
+    },
+    {
         "created": "2026-04-15T22:45:13",
         "description": "With this update, the indicators belonging to cloud storage apps (Box, Dropbox, Google Drive), cloud services (Azure, Amazon Web Services) and Microsoft Fabric (Power BI, Lakehouse) will be supported as triggers in Data leaks policy. With triggers, customers can define the conditions for bringing the user into the scope of a policy while the respective indicators are used to determine risk score.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 560399,
@@ -56,10 +252,10 @@
     },
     {
         "created": "2026-04-15T22:45:13",
-        "description": "Organizers can now use breakout rooms in Teams events with up to 1,000 attendees, enabling more interactive sessions, smaller group discussions, and improved audience engagement without compromising scale or performance.",
+        "description": "Organizers can now use breakout rooms in Teams meetings with up to 1,000 attendees, enabling more interactive sessions, smaller group discussions, and improved audience engagement without compromising scale or performance.",
         "id": 560320,
         "locale": null,
-        "modified": "2026-04-15T22:45:13",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
@@ -107,7 +303,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Breakout rooms in Teams events"
+        "title": "Microsoft Teams: Breakout rooms up to 1,000 Attendees in Teams meetings"
     },
     {
         "created": "2026-04-15T22:45:13",
@@ -596,7 +792,7 @@
         "description": "We are updating the default profanity filter setting for live captions from On to Off across Teams meetings, calls, events, and Microsoft Teams Rooms (MTR) devices to improve accessibility and align with EU requirements. This change will only affect users who have never configured their live captions profanity filter preference. Users who have already set their preference will keep their current setting. As a result, some users may begin seeing unfiltered profanity in live captions by default after this rollout. Users can update this preference in settings at any time.",
         "id": 560323,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -607,7 +803,31 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -623,11 +843,35 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -19898,12 +20142,12 @@
         "description": "The Researcher Agent in Microsoft 365 Copilot empowers users to create rich, detailed reports on any topic they choose whether from work or web content. We are introducing new output formats in the Researcher Agent that will allow users to export and consume generated reports in their preferred formats. Users will be able to export their Researcher reports to PowerPoint, PDF, Infographic or an Audio Overview. We are also updating the UX for previously existing output formats- Word and Pages.  ",
         "id": 546246,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32399,9 +32643,9 @@
         "description": "Highlight a sentence, paragraph, or table from the response and ask Copilot to work only on that selection. Get focused explanations, concise summaries, quick translations, or next steps for the exact passage you\u2019re reviewing\u2014no more over broad answers. Your selection is previewed in the prompt so you can edit before you send. It\u2019s a faster, more controlled way to get help right where you\u2019re working.",
         "id": 522616,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43632,15 +43876,15 @@
     },
     {
         "created": "2025-09-18T16:15:27",
-        "description": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers.\n",
+        "description": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have launched to Preview only.\n",
         "id": 501451,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43695,7 +43939,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Knowledge Agent"
+        "title": "Microsoft Copilot (Microsoft 365): AI in SharePoint"
     },
     {
         "created": "2025-09-18T16:15:27",
@@ -98747,9 +98991,9 @@
         "description": "The first release of Priority cleanup enables admins to create a recurring exception to delete items under a broader retention policy and/or legal hold on Exchange workload. Creating a Priority cleanup will require a separate security role, multiple approvers, and will have a complete audit trail.",
         "id": 392838,
         "locale": null,
-        "modified": "2025-08-13T23:15:04",
+        "modified": "2026-04-16T23:15:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "February CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

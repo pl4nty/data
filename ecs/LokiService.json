@@ -1597,7 +1597,8 @@
         "dummylokicopilotchildflight": true,
         "enableBRS": true,
         "enableSkillsYouViewForUnlicensedUsers": true,
-        "isProfanityCensorNotificationPanelEnabled": true
+        "isProfanityCensorNotificationPanelEnabled": true,
+        "isagentsettingsenabled": true
     },
     "Lps": {
         "AllowLinkedInCallsWithJustDisplayName": false,
