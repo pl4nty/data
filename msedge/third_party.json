@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15911273,
+    "size": 15920473,
     "file_count": 846
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 33230986,
-    "file_count": 4034
+    "size": 33196230,
+    "file_count": 4033
   },
   {
     "name": "boringssl",
-    "size": 77563,
+    "size": 77566,
     "file_count": 15
   },
   {
@@ -136,13 +136,13 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 173981,
+    "size": 173306,
     "file_count": 5
   },
   {
     "name": "dawn",
-    "size": 36565135,
-    "file_count": 108
+    "size": 161942065,
+    "file_count": 19061
   },
   {
     "name": "dbus",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 336730,
-    "file_count": 79
+    "size": 337215,
+    "file_count": 80
   },
   {
     "name": "ffmpeg",
@@ -476,8 +476,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 363762674,
-    "file_count": 353
+    "size": 400981175,
+    "file_count": 358
   },
   {
     "name": "logilab",
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19553259,
+    "size": 19552747,
     "file_count": 19
   },
   {
@@ -551,7 +551,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 59984,
+    "size": 60019,
     "file_count": 35
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4260863,
+    "size": 4261309,
     "file_count": 601
   },
   {
@@ -716,7 +716,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74267,
+    "size": 74541,
     "file_count": 13
   },
   {

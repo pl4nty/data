@@ -1,0 +1,61 @@
+# Copyright 2026 The Chromium Authors
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Edge Safety Checker — paths control file.
+# Controls which directories/files are checked by the edge-safety clang plugin.
+#
+# Format:
+#   # comment
+#   $ relative/path/to/source/root  (from this file's directory)
+#   . group1,group2,...             (check groups to enable; omit for all)
+#   + path/to/include/              (opt-in this directory or file — prefix)
+#   - path/to/exclude/              (opt-out this directory or file — prefix)
+#   ~-third_party/                  (opt-out any path containing pattern)
+#   ~+first_party/                  (opt-in any path containing pattern)
+#   @ reserved for future use
+#
+# Check groups: lifetime, ipc, cpp, memory, integer, url, design,
+#               injection, sensitive, webui, deser, value, all
+#
+# Matching order:
+#   1. Longest prefix match (+/-) is checked first.
+#   2. If no prefix matches, substring rules (~+/~-) are checked.
+#      If multiple substring rules match, the longest pattern wins.
+#   3. If nothing matches, the file is checked by default.
+#   4. #pragma allow_edge_safety in a file overrides everything.
+
+# Enable all check groups.
+.all
+
+# Path from this file to the source root.
+$../../
+
+# --- Directories to exclude from checks ---
+
+# Third-party code we don't own.
+-third_party/
+# But check Blink (first-party).
++third_party/blink/
+
+# Exclude ANY nested third_party directory (e.g. chrome/browser/third_party/).
+~-third_party/
+
+# Build tooling / generated code.
+-out/
+-build/
+-buildtools/
+-tools/
+
+# Test infrastructure (tests have legitimate patterns that would trigger).
+-testing/
+
+# Platform-specific code we don't build.
+-chromecast/
+-chromeos/
+-fuchsia_web/
+-ios/
+
+# --- Specific opt-outs for known false-positive-heavy areas ---
+# Add entries here as needed during rollout.

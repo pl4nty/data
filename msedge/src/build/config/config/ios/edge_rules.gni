@@ -239,24 +239,14 @@ template("ios_edge_xcframework_bundle_prebuilt") {
     _name = invoker.framework_name
     _dir = invoker.framework_dir
     _slice = "ios"
-    if (defined(invoker.is_fat) && invoker.is_fat) {
-      if (target_environment == "device") {
-        _slice += "-arm64"
-      } else {
-        _slice += "-arm64_x86_64"
-      }
+    _is_fat = defined(invoker.is_fat) && invoker.is_fat
+    if (!_is_fat) {
+      assert(target_cpu == "arm64", "unsupported cpu: $target_cpu")
+    }
+    if (_is_fat && target_environment != "device") {
+      _slice += "-arm64_x86_64"
     } else {
-      if (target_cpu == "x86") {
-        _slice += "-i386"
-      } else if (target_cpu == "x64") {
-        _slice += "-x86_64"
-      } else if (target_cpu == "arm") {
-        _slice += "-armv7"
-      } else if (target_cpu == "arm64") {
-        _slice += "-arm64"
-      } else {
-        assert(false, "unsupported cpu: $target_cpu")
-      }
+      _slice += "-arm64"
     }
     if (target_environment == "device") {
     } else if (target_environment == "simulator") {
