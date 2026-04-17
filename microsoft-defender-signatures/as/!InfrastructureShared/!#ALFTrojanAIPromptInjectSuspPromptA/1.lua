@@ -476,86 +476,112 @@ local l_0_51 = {}
 
 -- DECOMPILER ERROR at PC453: Overwrote pending register: R8 in 'AssignReg'
 
--- DECOMPILER ERROR at PC460: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC460: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC461: Overwrote pending register: R9 in 'AssignReg'
+-- DECOMPILER ERROR at PC461: Overwrote pending register: R10 in 'AssignReg'
 
 if l_0_8 ~= 1 or l_0_4 then
-  for l_0_11,l_0_12 in l_0_8 do
-    -- DECOMPILER ERROR at PC464: Overwrote pending register: R13 in 'AssignReg'
+  for l_0_12,l_0_13 in l_0_9 do
+    -- DECOMPILER ERROR at PC464: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC465: Overwrote pending register: R13 in 'AssignReg'
+    -- DECOMPILER ERROR at PC465: Overwrote pending register: R14 in 'AssignReg'
 
   end
 else
-  -- DECOMPILER ERROR at PC470: Overwrote pending register: R8 in 'AssignReg'
+  -- DECOMPILER ERROR at PC470: Overwrote pending register: R9 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC471: Overwrote pending register: R9 in 'AssignReg'
+  -- DECOMPILER ERROR at PC471: Overwrote pending register: R10 in 'AssignReg'
 
-  for i_1,i_2 in l_0_8(l_0_9) do
-    -- DECOMPILER ERROR at PC474: Overwrote pending register: R13 in 'AssignReg'
+  for i_1,i_2 in l_0_9(l_0_10) do
+    -- DECOMPILER ERROR at PC474: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC475: Overwrote pending register: R13 in 'AssignReg'
+    -- DECOMPILER ERROR at PC475: Overwrote pending register: R14 in 'AssignReg'
 
   end
 end
--- DECOMPILER ERROR at PC482: Overwrote pending register: R11 in 'AssignReg'
+-- DECOMPILER ERROR at PC482: Overwrote pending register: R12 in 'AssignReg'
 
 if next(i_1) == nil then
   return mp.CLEAN
 end
-for l_0_13,l_0_14 in ipairs(l_0_5) do
-  -- DECOMPILER ERROR at PC493: Overwrote pending register: R15 in 'AssignReg'
+for l_0_14,l_0_15 in ipairs(l_0_5) do
+  -- DECOMPILER ERROR at PC493: Overwrote pending register: R16 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC494: Overwrote pending register: R16 in 'AssignReg'
+  -- DECOMPILER ERROR at PC494: Overwrote pending register: R17 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC495: Overwrote pending register: R17 in 'AssignReg'
+  -- DECOMPILER ERROR at PC495: Overwrote pending register: R18 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC496: Overwrote pending register: R18 in 'AssignReg'
+  -- DECOMPILER ERROR at PC496: Overwrote pending register: R19 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC497: Overwrote pending register: R18 in 'AssignReg'
+  -- DECOMPILER ERROR at PC497: Overwrote pending register: R19 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC498: Overwrote pending register: R19 in 'AssignReg'
+  -- DECOMPILER ERROR at PC498: Overwrote pending register: R20 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC499: Overwrote pending register: R20 in 'AssignReg'
+  -- DECOMPILER ERROR at PC499: Overwrote pending register: R21 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC504: Overwrote pending register: R20 in 'AssignReg'
+  -- DECOMPILER ERROR at PC504: Overwrote pending register: R21 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC505: Overwrote pending register: R20 in 'AssignReg'
+  -- DECOMPILER ERROR at PC505: Overwrote pending register: R21 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC506: Confused about usage of register: R9 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC506: Confused about usage of register: R10 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC506: Confused about usage of register: R9 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC506: Confused about usage of register: R10 in 'UnsetPending'
 
 end
-if l_0_18 ~= true or 0 + l_0_16 < l_0_3 then
+if l_0_19 ~= true or 0 + l_0_17 < l_0_3 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC531: Overwrote pending register: R13 in 'AssignReg'
+-- DECOMPILER ERROR at PC531: Overwrote pending register: R14 in 'AssignReg'
 
--- DECOMPILER ERROR at PC533: Overwrote pending register: R14 in 'AssignReg'
+-- DECOMPILER ERROR at PC533: Overwrote pending register: R15 in 'AssignReg'
 
--- DECOMPILER ERROR at PC551: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC554: Confused about usage of register: R8 in 'UnsetPending'
-
--- DECOMPILER ERROR at PC563: Confused about usage of register: R9 in 'UnsetPending'
-
--- DECOMPILER ERROR at PC568: Confused about usage of register: R9 in 'UnsetPending'
-
--- DECOMPILER ERROR at PC584: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC551: Overwrote pending register: R11 in 'AssignReg'
 
 if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") or (mp.get_mpattribute)("MpIsAiMcpODRScan") then
-  do
-    set_research_data("AIPromptInject", safeJsonSerialize({score = tostring(0 + l_0_16), threshold = tostring(l_0_3), matched = (table.concat)({}, ","), count = tostring(#{}), scaninfo = (table.concat)({type = "MpIsAiMcpAmsiScan"}, ",")}), l_0_15)
-    -- DECOMPILER ERROR at PC588: Confused about usage of register: R11 in 'UnsetPending'
+  for l_0_16,l_0_17 in pairs({type = "MpIsAiMcpAmsiScan"}) do
+    -- DECOMPILER ERROR at PC557: Overwrote pending register: R18 in 'AssignReg'
 
-    ;
-    (mp.SetDetectionString)(safeJsonSerialize({score = tostring(0 + l_0_16), threshold = tostring(l_0_3), matched = (table.concat)({}, ","), count = tostring(#{}), scaninfo = (table.concat)({type = "MpIsAiMcpAmsiScan"}, ",")}))
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC593: Confused about usage of register R14 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC558: Overwrote pending register: R18 in 'AssignReg'
 
-    -- WARNING: undefined locals caused missing assignments!
+    -- DECOMPILER ERROR at PC559: Overwrote pending register: R19 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC560: Overwrote pending register: R20 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC561: Overwrote pending register: R21 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC562: Overwrote pending register: R22 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC564: Overwrote pending register: R19 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
+
+  end
+  -- DECOMPILER ERROR at PC570: Confused about usage of register: R9 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC579: Confused about usage of register: R10 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC580: Overwrote pending register: R16 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC584: Confused about usage of register: R10 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC589: Confused about usage of register: R12 in 'UnsetPending'
+
+  -- DECOMPILER ERROR at PC602: Overwrote pending register: R18 in 'AssignReg'
+
+  if (MpCommon.IsSampled)(1000, true, true, l_0_18) == false then
+    do
+      set_research_data("AIPromptInject", safeJsonSerialize({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))}), false)
+      -- DECOMPILER ERROR at PC624: Confused about usage of register: R13 in 'UnsetPending'
+
+      ;
+      (mp.SetDetectionString)(safeJsonSerialize({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))}))
+      do return mp.INFECTED end
+      -- DECOMPILER ERROR at PC629: Confused about usage of register R17 for local variables in 'ReleaseLocals'
+
+      -- WARNING: undefined locals caused missing assignments!
+    end
   end
 end
 

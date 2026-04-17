@@ -16,7 +16,7 @@ if l_0_0 == true then
     l_0_2.Parent = "wsmprovhost.exe"
   else
     local l_0_4 = pcall(MpCommon.QuerySessionInformation, l_0_3, MpCommon.WTSIsRemoteSession)
-    if MpCommon.QuerySessionInformation then
+    if MpCommon.QuerySessionInformation == true then
       l_0_1 = true
       l_0_2.Parent = "RemoteSession"
     end

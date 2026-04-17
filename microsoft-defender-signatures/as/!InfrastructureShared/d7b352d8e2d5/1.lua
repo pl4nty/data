@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\7fb38eea3917\1.luac 
+-- Command line: lua\!InfrastructureShared\d7b352d8e2d5\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -9,7 +9,7 @@ if l_0_0 == true then
   if not l_0_1 then
     return mp.CLEAN
   end
-  local l_0_2 = getSessionInfo(l_0_1, "ScreenConnectRemote")
+  local l_0_2 = getSessionInfo(l_0_1, "NtdsDump")
   set_research_data("HVASessionInfo", safeJsonSerialize(l_0_2), false)
   return mp.INFECTED
 end

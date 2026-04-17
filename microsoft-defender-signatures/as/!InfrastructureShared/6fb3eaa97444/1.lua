@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d7b3ee46ee5f\1.luac 
+-- Command line: lua\!InfrastructureShared\6fb3eaa97444\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -9,9 +9,12 @@ if l_0_0 == true then
   if not l_0_1 then
     return mp.CLEAN
   end
-  local l_0_2 = getSessionInfo(l_0_1, "NtdsDump")
+  local l_0_2 = getSessionInfo(l_0_1, "MalExcl")
   set_research_data("HVASessionInfo", safeJsonSerialize(l_0_2), false)
-  return mp.INFECTED
+  local l_0_3 = reportAVExcludedEntities()
+  if next(l_0_3) then
+    return mp.INFECTED
+  end
 end
 do
   return mp.CLEAN
