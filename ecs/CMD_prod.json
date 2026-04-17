@@ -641,11 +641,13 @@
         "EnableServicePlanSkuRemoteConfigV2andFamilyDefinition": true,
         "EnableSessionEnvServiceRemediation": true,
         "EnableSetSessionPathForRDAgentInMove": true,
+        "EnableSettingSvcForSelfProvision": true,
         "EnableSettingsUXAIEnabled": true,
         "EnableSettingsUXDisasterRecoveryPlus": false,
         "EnableSettingsUXRedSeaInput": true,
         "EnableSettingsUXResetRestore": true,
         "EnableSettingsUXResetRestoreDisasterRecovery": true,
+        "EnableSettingsUXSelfProvision": true,
         "EnableShareFrontlineTypeInUX": true,
         "EnableShareRetentionSnapshot": true,
         "EnableShareSnapshotActionModeratorIntegration": true,
@@ -815,7 +817,7 @@
         "IsEnabledTriggerNextGen": true,
         "IsEndpointConfigrationEnabled": true,
         "IsReadyToExpandDiagEHNS": true,
-        "IsSplitApiEnabled": false,
+        "IsSplitApiEnabled": true,
         "IsSubnetUsageAvailableIpCountIpv6FallbackEnabled": true,
         "IsWebhookEnabled": true,
         "LimitW365AADSyncTimerInterval": true,
@@ -1024,7 +1026,6 @@
     "MMD": {
         "AITargetingPcsMockEnabled": true,
         "AccessControlAuth": true,
-        "AddIntuneTranslatorResult": true,
         "AlternativeSubscriptionSync": false,
         "AppOnlyAuth": true,
         "AutopatchAllGroupMigration": true,
@@ -1101,7 +1102,6 @@
         "UseCachedOptInSetting": true,
         "UseManagedIdentityForSitopsPlatform": true,
         "ValdiateIntuneTenantSyncReadiness": true,
-        "Win365IntuneManagedDeviceCheck": true,
         "WindowsQualityUpdatePolicyUX": true
     }
 }
