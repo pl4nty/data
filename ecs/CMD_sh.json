@@ -29,7 +29,8 @@
             "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "IncludePartnersInApiResponse": true,
-            "LockOnDisconnect": true
+            "LockOnDisconnect": true,
+            "ReserveCloudPc": true
         },
         "AssignAudit": false,
         "AuditLogsToGov": true,

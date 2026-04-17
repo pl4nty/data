@@ -36,6 +36,7 @@
             "EnableTeamsVdi2": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true,
+            "ReserveCloudPc": true,
             "SpeculateForFLS": true
         },
         "AssignAudit": true,

@@ -10,7 +10,8 @@
         "AddValidationsForFSLogix": true,
         "AllowHostBasedEncryption": true,
         "Aspen": {
-            "LockOnDisconnect": true
+            "LockOnDisconnect": true,
+            "ReserveCloudPc": true
         },
         "AssignAudit": false,
         "AuditLogsToGov": true,

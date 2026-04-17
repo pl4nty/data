@@ -382,7 +382,6 @@
             "QBSFSICoreMigrationSwitchOverBatch1": true,
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
-            "QBSFSICoreOrganizationMigrationSwitchOver": true,
             "UseLKG_ActiveMalwareAggregateByCategory": true,
             "UseLKG_ActiveMalwareAggregateBySeverity": true,
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
