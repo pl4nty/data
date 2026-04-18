@@ -594,6 +594,7 @@
     },
     "UX_AppLifecycle": {
         "FlightingV2": {
+            "EnableIosDdmReqApps": true,
             "EnableWin32InstallerScriptsGA": true
         }
     },
