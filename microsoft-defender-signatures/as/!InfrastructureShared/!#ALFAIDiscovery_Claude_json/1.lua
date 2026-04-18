@@ -72,33 +72,35 @@ if not l_0_8.projects then
           do
             do
               do
-                if not l_0_15.mcpServers and not l_0_15.servers then
-                  local l_0_22, l_0_23, l_0_24, l_0_25 = (l_0_15.mcp).servers
+                if not l_0_15.mcpServers and not l_0_15.servers and l_0_15.mcp then
+                  local l_0_22, l_0_23, l_0_24, l_0_25, l_0_26 = (l_0_15.mcp).servers
                 end
-                -- DECOMPILER ERROR at PC147: Confused about usage of register: R17 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC150: Confused about usage of register: R17 in 'UnsetPending'
 
                 -- DECOMPILER ERROR at PC155: Confused about usage of register: R17 in 'UnsetPending'
 
-                if next(l_0_22) then
+                -- DECOMPILER ERROR at PC163: Confused about usage of register: R17 in 'UnsetPending'
+
+                if not isnull(l_0_22) and type(l_0_22) == "table" then
                   (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_22))
                 end
                 ;
                 (table.insert)(l_0_10, l_0_16)
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC163: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -121,19 +123,19 @@ if not l_0_8.projects then
   if isnull(l_0_10) then
     return mp.CLEAN
   end
-  local l_0_26 = safeJsonSerialize(l_0_10)
-  local l_0_27, l_0_28 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-  if l_0_27 and l_0_28 ~= nil then
-    for l_0_32,l_0_33 in pairs(l_0_28) do
-      if l_0_32 == l_0_4 and l_0_33 == l_0_26 then
+  local l_0_27 = safeJsonSerialize(l_0_10)
+  local l_0_28, l_0_29 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+  if l_0_28 and l_0_29 ~= nil then
+    for l_0_33,l_0_34 in pairs(l_0_29) do
+      if l_0_33 == l_0_4 and l_0_34 == l_0_27 then
         return mp.CLEAN
       end
     end
   end
   do
-    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_26, l_0_5, 100)
+    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_27, l_0_5, 100)
     ;
-    (mp.SetDetectionString)(l_0_26)
+    (mp.SetDetectionString)(l_0_27)
     ;
     (mp.set_mpattribute)("MpDisableCaching")
     return mp.INFECTED

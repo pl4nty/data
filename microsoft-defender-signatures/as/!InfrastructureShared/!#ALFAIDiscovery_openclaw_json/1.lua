@@ -58,39 +58,107 @@ l_0_10.model_defaults = l_0_9(l_0_8, "agents", "defaults", "models")
 l_0_10.tools_allow = l_0_9(l_0_8, "tools", "allow")
 l_0_10.tools_deny = l_0_9(l_0_8, "tools", "deny")
 l_0_10.tools_elevated = l_0_9(l_0_8, "tools", "elevated")
-if isnull(l_0_10) then
-  return mp.CLEAN
-end
-do
-  if not l_0_8.mcpServers and not l_0_8.servers then
-    local l_0_11, l_0_12, l_0_13, l_0_14 = (l_0_8.mcp).servers
-  end
-  -- DECOMPILER ERROR at PC150: Confused about usage of register: R11 in 'UnsetPending'
+local l_0_11 = l_0_9(l_0_8, "gateway", "mode")
+if not isnull(l_0_11) and type(l_0_11) == "string" then
+  local l_0_12 = {}
+  l_0_12.mode = (string.lower)(l_0_11)
+  if l_0_12.mode == "remote" then
+    local l_0_13 = l_0_9(l_0_8, "gateway", "remote", "url")
+    if not isnull(l_0_13) then
+      local l_0_14 = ExtractPartsFromUri(l_0_13)
+      l_0_12.host = l_0_14.host
+      l_0_12.port = l_0_14.port
+    end
+  else
+    do
+      local l_0_15 = (l_0_9(l_0_8, "gateway", "bind"))
+      local l_0_16 = nil
+      if not isnull(l_0_15) and type(l_0_15) == "string" then
+        local l_0_17 = (string.lower)(l_0_15)
+        if l_0_17 == "loopback" then
+          l_0_16 = "127.0.0.1"
+        else
+          if l_0_17 == "custom" then
+            local l_0_18 = l_0_9(l_0_8, "gateway", "customBindHost")
+            if not isnull(l_0_18) and type(l_0_18) == "string" then
+              l_0_16 = l_0_18
+            end
+          else
+            do
+              do
+                do
+                  do
+                    l_0_16 = "0.0.0.0"
+                    l_0_12.host = l_0_16
+                    l_0_12.port = l_0_9(l_0_8, "gateway", "port")
+                    l_0_10.gateway = l_0_12
+                    local l_0_19 = l_0_9(l_0_8, "models", "providers")
+                    do
+                      if not isnull(l_0_19) and type(l_0_19) == "table" then
+                        local l_0_20 = {}
+                        for l_0_24,l_0_25 in pairs(l_0_19) do
+                          local l_0_26 = {}
+                          l_0_26.baseUrl = l_0_25.baseUrl
+                          l_0_26.models = {}
+                          if not isnull(l_0_25.models) and type(l_0_25.models) == "table" then
+                            for l_0_30,l_0_31 in pairs(l_0_25.models) do
+                              (table.insert)(l_0_26.models, l_0_31.id)
+                            end
+                          end
+                          do
+                            do
+                              l_0_20[l_0_24] = l_0_26
+                              -- DECOMPILER ERROR at PC275: LeaveBlock: unexpected jumping out DO_STMT
 
-  -- DECOMPILER ERROR at PC158: Confused about usage of register: R11 in 'UnsetPending'
+                            end
+                          end
+                        end
+                        l_0_10.providers = l_0_20
+                      end
+                      if isnull(l_0_10) then
+                        return mp.CLEAN
+                      end
+                      do
+                        if not l_0_8.mcpServers and not l_0_8.servers and l_0_8.mcp then
+                          local l_0_32, l_0_33, l_0_34, l_0_35, l_0_36 = (l_0_8.mcp).servers
+                        end
+                        -- DECOMPILER ERROR at PC298: Confused about usage of register: R13 in 'UnsetPending'
 
-  if next(l_0_11) then
-    (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_11))
-  end
-  local l_0_15 = nil
-  local l_0_16, l_0_17 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-  if l_0_17 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
-    for l_0_21,l_0_22 in pairs(R16_PC176) do
-      local l_0_18 = nil
-      -- DECOMPILER ERROR at PC180: Confused about usage of register: R19 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC303: Confused about usage of register: R13 in 'UnsetPending'
 
-      if l_0_22 == l_0_4 and R19_PC180 == l_0_16 then
-        return mp.CLEAN
+                        -- DECOMPILER ERROR at PC311: Confused about usage of register: R13 in 'UnsetPending'
+
+                        if not isnull(l_0_32) and type(l_0_32) == "table" then
+                          (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_32))
+                        end
+                        local l_0_37 = nil
+                        local l_0_38, l_0_39 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+                        if l_0_39 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
+                          for l_0_43,l_0_44 in pairs(R18_PC329) do
+                            local l_0_40 = nil
+                            if l_0_44 == l_0_4 and l_0_28 == l_0_38 then
+                              return mp.CLEAN
+                            end
+                          end
+                        end
+                        do
+                          AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_38, l_0_5, 100)
+                          ;
+                          (mp.SetDetectionString)(l_0_38)
+                          ;
+                          (mp.set_mpattribute)("MpDisableCaching")
+                          return mp.INFECTED
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
     end
-  end
-  do
-    AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_16, l_0_5, 100)
-    ;
-    (mp.SetDetectionString)(l_0_16)
-    ;
-    (mp.set_mpattribute)("MpDisableCaching")
-    return mp.INFECTED
   end
 end
 

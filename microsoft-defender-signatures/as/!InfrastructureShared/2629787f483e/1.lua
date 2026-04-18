@@ -1,8 +1,11 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFExploitScriptVulnMachineKeyB\1.luac 
+-- Command line: lua\!InfrastructureShared\2629787f483e\1.luac 
 
 -- params : ...
 -- function num : 0
+if not (mp.get_mpattribute)("RPF:TopLevelFile") or not (mp.get_mpattribute)("BM_XML_FILE") then
+  return mp.CLEAN
+end
 local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME) or "")
 if not (string.find)(l_0_0, "%.config$") then
   return mp.CLEAN
@@ -31,10 +34,10 @@ if not (string.match)(l_0_3, l_0_1) or not (string.match)(l_0_3, l_0_2) then
   end
 end
 do
-  -- DECOMPILER ERROR at PC97: Confused about usage of register: R4 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC112: Confused about usage of register: R4 in 'UnsetPending'
 
   local l_0_5 = (string.lower)((string.gsub)(l_0_4, "%z", ""))
-  -- DECOMPILER ERROR at PC107: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC122: Confused about usage of register: R5 in 'UnsetPending'
 
   local l_0_7 = (string.lower)((string.gsub)(l_0_6, "%z", ""))
   local l_0_8 = {}
@@ -156,9 +159,11 @@ do
   l_0_8["07e3160e6c32ff59f297ec5ed94882494474431bc41ab94e73765d2f0c657fd6707e5e61f5ac748db5f22aaf042525f99242ffca0d61bd472768f9c90bc68ab8"] = "895ad2bb6a27a2d6fe8fe7b898481ecc856544a2264d6a34cdcbdacceac68445"
   l_0_8["07eb329d53146a1c9822f2a3f6017b13f38527686d9c5a8063877325606af7ceb460f628a6142647876d1ca76490d612410376c53390646fc9bc0d9458d8ffbc"] = "a769f1e4a193dcfb859b5a8475bdb1ae45279554cc06360c"
   l_0_8["0818253c87371283712363957b1832c0106ef75c8ef2b4edf51a630a66802ad7097746d523bbfb76e511c2b02b013ea6e3e354e5fba4c9da0bbab20809d2d9dd"] = "590621403a6096ded4297b5850aa22212566b3369376ab85"
-  l_0_8["0825ab010a378dbc1eeff40cf9322bc81b2cc61374c70c21a786bd4b5606d671"] = "6928291e1bada5e7d037b167159e11191496de525ad694afd5311b378874a1aa"
-  l_0_8["08364ea1ceb23e265eccce22dca0fde70de178b5a4ff44cf443d5e2ad47b749193b52cbde73097cd79c224c47f821574e45a699400975cb30f1a3437046943c2"] = "ba6db46c7b5261197c434c70ca1e58476da5ad4f36c17428"
-  local l_0_9 = "08477d331d8ec95625719958bb0cea63b428c1de62201eebb55cd4293080955b6d9e578627ac115c15ce8bc955fe9220124ce278241c8345604d19825a36e86a"
+  local l_0_9 = "0825ab010a378dbc1eeff40cf9322bc81b2cc61374c70c21a786bd4b5606d671"
+  l_0_8[l_0_9] = "6928291e1bada5e7d037b167159e11191496de525ad694afd5311b378874a1aa"
+  l_0_9 = "08364ea1ceb23e265eccce22dca0fde70de178b5a4ff44cf443d5e2ad47b749193b52cbde73097cd79c224c47f821574e45a699400975cb30f1a3437046943c2"
+  l_0_8[l_0_9] = "ba6db46c7b5261197c434c70ca1e58476da5ad4f36c17428"
+  l_0_9 = "08477d331d8ec95625719958bb0cea63b428c1de62201eebb55cd4293080955b6d9e578627ac115c15ce8bc955fe9220124ce278241c8345604d19825a36e86a"
   l_0_8[l_0_9] = "215e4e415e17fc7e55db07086da44df6804d18b3b6bec040e2d27c1cc2a16d3b"
   l_0_9 = "0854e941bac770213d75032332f0a5a6def942581a6bf4ca7c6741b78192deee10f236f4af2d742933bd4d64074cc8fbd31e0790a57021ca87b067ad9c9f7f47"
   l_0_8[l_0_9] = "e70f33f1198f7e46dc185a765adc7c964c91a619f0e16d6f"
