@@ -72,11 +72,13 @@ define([
 
             this.DEVICE_LINK_FORMAT_FLAGS = ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.json | ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags.base64;
 
+            this.QR_FORMAT_FLAGS = ['minimizedJson', 'compressed', 'base64UriSafe', 'uriEnvelope'];
+
             this.E_AUTOPILOT_DEVICE_LINK_NO_TPM = -2130460668; // 0x8103c004
             this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM = -2130460667 // 0x8103c005
 
             this.deviceLinkInfo = null;
-            this.initializationSucceeded = false;
+            this.deviceLinkUtilities = null;
 
             this.resourceStrings = resourceStrings;
             
@@ -176,7 +178,7 @@ define([
                 pageTitle: this.resourceStrings["DeviceLinkPageTitleOptions"],
                 isVisible: this.showDeviceLinkOptionsVirtualPage,
                 lottieAnimation: this.LOTTIE_FILE_SUCCESS,
-                buttonSet: [this.cancelButtonProperties, this.nextEnabledButtonProperties],
+                buttonSet: [this.cancelButtonProperties, this.nextDisabledButtonProperties],
                 onVisibleHandler: this.onOptionsVirtualPageVisible.bind(this)
             };
 
@@ -247,35 +249,14 @@ define([
                 return this.allVirtualPages[this.currentVirtualPageId()].buttonSet;
             });
 
-            return this.waitForDebuggerAttachmentAsync().then(async () => {
+            return this.waitForDebuggerAttachmentAsync().done(async () => {
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE)
-                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
-            }).then(async () => {
-                try {
-                    this.deviceLinkUtilities = new ModernDeployment.Autopilot.Core.DeviceLinkUtilities();
-                    this.deviceLinkInfo = await this.deviceLinkUtilities.getDeviceLinkInfoAsync(this.DEVICE_LINK_FORMAT_FLAGS);
-                    this.initializationSucceeded = true;
-                } catch (e) {
-                    if ((e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_TPM) ||
-                        (e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM)) {
-                        this.currentVirtualPageId(this.VIRTUAL_PAGE_ID_DEVICE_LINK_NOT_SUPPORTED_RESULT);
-                    } else {
-                        this.currentVirtualPageId(this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT);
-                    }
 
-                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
-                        this.TSM_PROCESS_NAME, 
-                        this.TSM_STATE_PAGE_INITIALIZATION,
-                        null,
-                        "Failed to create initialize device link info.",
-                        e);
-                }
-            }).done(async () => {
-                if (this.initializationSucceeded) {
-                    await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
-                }
+                await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
 
                 this.displayVirtualPage(this.currentVirtualPageId());
+
+                await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE_INITIALIZATION);
 
                 bridge.fireEvent(CloudExperienceHost.Events.visible, true);
             });
@@ -286,7 +267,15 @@ define([
                 await this.commercialDiagnosticsUtilities.logTsmProcessStartAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
 
                 let autopilotUtilities = new ModernDeployment.Autopilot.Core.AutopilotUtilities();
-                let streamRef = await autopilotUtilities.getQrCodeImageAsync(this.deviceLinkInfo);
+
+                let qrFormatFlags = this.QR_FORMAT_FLAGS.reduce((acc, flag) => {
+                    if (ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags[flag] === undefined) {
+                        throw new Error(`Missing DeviceLinkFormatFlag: ${flag}`);
+                    }
+                    return acc | ModernDeployment.Autopilot.Core.DeviceLinkFormatFlags[flag];
+                }, 0);
+                let qrDeviceLinkInfo = await this.deviceLinkUtilities.getDeviceLinkInfoAsync(qrFormatFlags);
+                let streamRef = await autopilotUtilities.getQrCodeImageAsync(qrDeviceLinkInfo);
 
                 if (streamRef != null) {
                     let qrCodeElement = document.getElementById("qrCodeImage");
@@ -598,7 +587,75 @@ define([
 
                 this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_SUCCESS_RESULT);
             } else {
+                try {
+                    let existingTag = await this.sessionUtilities.getSettingAsync("CloudAssignedDeviceAssociationTag");
+                    if (existingTag && existingTag.length > 0) {
+                        this.commercialDiagnosticsUtilities.logInfoEvent(
+                            "DeviceLinkPage_ExistingTagFound",
+                            "A device link tag JWT is already stored on this device.");
+
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_LINK_DEVICE_OPTIONS, "Existing device link tag found in UEFI.");
+
+                        this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_SUCCESS_RESULT);
+                        return;
+                    }
+                } catch (e) {
+                    this.commercialDiagnosticsUtilities.logInfoEvent(
+                        "DeviceLinkPage_NoExistingTag",
+                        "No existing device link tag found, proceeding with QR/CSV flow.");
+                }
+
+                try {
+                    if (!this.deviceLinkUtilities) {
+                        this.deviceLinkUtilities = new ModernDeployment.Autopilot.Core.DeviceLinkUtilities();
+                    }
+                } catch (e) {
+                    if ((e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_TPM) ||
+                        (e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM)) {
+                        this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_NOT_SUPPORTED_RESULT);
+                    } else {
+                        await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
+                            this.TSM_PROCESS_NAME,
+                            this.TSM_STATE_LINK_DEVICE_OPTIONS,
+                            null,
+                            "Failed to initialize device link utilities.",
+                            e);
+                        this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT);
+                    }
+                    return;
+                }
+
                 this.createQrCodeAsync();
+
+                this.ensureDeviceLinkInfoAsync();
+            }
+        }
+
+        async ensureDeviceLinkInfoAsync() {
+            if (this.deviceLinkInfo) {
+                this.allVirtualPages[this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS].buttonSet = [this.cancelButtonProperties, this.nextEnabledButtonProperties];
+                this.currentVirtualPageId.valueHasMutated();
+                return;
+            }
+
+            try {
+                this.deviceLinkInfo = await this.deviceLinkUtilities.getDeviceLinkInfoAsync(this.DEVICE_LINK_FORMAT_FLAGS);
+
+                this.allVirtualPages[this.VIRTUAL_PAGE_ID_DEVICE_LINK_OPTIONS].buttonSet = [this.cancelButtonProperties, this.nextEnabledButtonProperties];
+                this.currentVirtualPageId.valueHasMutated();
+            } catch (e) {
+                if ((e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_TPM) ||
+                    (e.number == this.E_AUTOPILOT_DEVICE_LINK_NO_COMPATIBLE_TPM)) {
+                    this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_NOT_SUPPORTED_RESULT);
+                } else {
+                    await this.commercialDiagnosticsUtilities.logTsmProcessEndErrorAsync(
+                        this.TSM_PROCESS_NAME,
+                        this.TSM_STATE_LINK_DEVICE_OPTIONS,
+                        null,
+                        "Failed to load device link info.",
+                        e);
+                    this.displayVirtualPage(this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT);
+                }
             }
         }
 

@@ -39,6 +39,7 @@ define([
             this.AUTOPILOT_RESILIENCE_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppResilience");
             this.AUTOPILOT_DPP_REBOOT_CHANGES_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppRebootFix");
             this.AUTOPILOT_FWT_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotFastWindowsTelemetry");
+            this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppCrashRecovery");
             this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID = "DppOptionPolicy:7273";
 
             this.AUTOPILOT_DEVICE_PREPARATION_UTILITIES_INSTANCENAME = "autopilotDevicePreparationUtilitiesInstance";
@@ -187,6 +188,9 @@ define([
             this.networkConnectionLostTimerPromise = null;
             this.isNetworkConnected = false;
             this.lastSubheaderText = null;
+            this.agentConnectionLostTimerPromise = null;
+            this.isAgentConnected = true;
+            this.lastSubheaderTextBeforeAgentLost = null;
 
             this.COMPLETION_PERCENTAGE_FORMAT_TEMPLATE = this.resourceStrings["DevicePrepCompletionPercentage"];
 
@@ -1582,7 +1586,13 @@ define([
         handleAgentHeartbeat(event) {
             event.handled = true; // Set the event handled property to true to indicate that the event has been handled
             try {
-                this.resetOrchestratorKeepAliveTimeout();
+                if (this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED) {
+                    if (this.isAgentConnected !== false) {
+                        this.resetOrchestratorKeepAliveTimeout();
+                    }
+                } else {
+                    this.resetOrchestratorKeepAliveTimeout();
+                }
             } catch (e) {
             }
         }
@@ -1745,13 +1755,59 @@ define([
                             case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionLost:
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
                                     "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionLost",
-                                    "DevicePrepPage: Agent connection lost.");
+                                    "DevicePrepPage: Agent connection lost. Pausing progress and waiting for agent recovery.");
+
+                                if (this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED) {
+                                    this.isAgentConnected = false;
+
+                                    if (null == this.agentConnectionLostTimerPromise) {
+                                        this.agentConnectionLostTimerPromise = WinJS.Promise.timeout(this.MAX_WAIT_FOR_CONTINUED_LOST_INTERNET_CONNECTION_IN_MILLESECONDS).then(() => {
+                                            if (this.connectionChangedListenerRegistered && !this.isAgentConnected) {
+                                                if (this.lastSubheaderText == null) {
+                                                    this.lastSubheaderTextBeforeAgentLost = this.subheaderText();
+                                                    this.pauseCompletionPercentageIncrementation = true;
+                                                    this.subheaderText(this.resourceStrings["DevicePrepPageSubheaderConnectivityError"]);
+                                                    this.errorOccurred(true);
+                                                }
+
+                                                this.commercialDiagnosticsUtilities.logInfoEvent(
+                                                    "DevicePrepPage_AgentConnectionLost_UXDisplayed",
+                                                    "DevicePrepPage: Agent connection still lost after grace period. Displaying error UX.");
+                                            }
+                                            this.agentConnectionLostTimerPromise = null;
+                                        }, () => { this.agentConnectionLostTimerPromise = null; });                                    }
+                                }
                                 break;
 
                             case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionRestored:
                                 this.commercialDiagnosticsUtilities.logInfoEvent(
                                     "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionRestored",
-                                    "DevicePrepPage: Agent connection restored.");
+                                    "DevicePrepPage: Agent connection restored. Resuming progress.");
+
+                                if (this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED) {
+                                    this.isAgentConnected = true;
+
+                                    if (this.lastSubheaderTextBeforeAgentLost != null) {
+                                        this.subheaderText(this.lastSubheaderTextBeforeAgentLost);
+                                        this.errorOccurred(false);
+                                        this.pauseCompletionPercentageIncrementation = false;
+                                        this.lastSubheaderTextBeforeAgentLost = null;
+                                    }
+
+                                    if (this.agentConnectionLostTimerPromise != null) {
+                                        this.agentConnectionLostTimerPromise.cancel();
+                                        this.agentConnectionLostTimerPromise = null;
+                                    }
+
+                                    try {
+                                        this.resetOrchestratorKeepAliveTimeout();
+                                    } catch (e) {
+                                        this.commercialDiagnosticsUtilities.logExceptionEvent(
+                                            "DevicePrepPage_AgentConnectionRestored_KeepAliveResetFailed",
+                                            "DevicePrepPage: Failed to reset keepAlive after agent connection restored.",
+                                            e);
+                                    }
+                                }
                                 break;
 
                             case Windows.Management.Setup.DeploymentSessionConnectionChange.internetConnectionLost:
@@ -2018,13 +2074,59 @@ define([
                     case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionLost:
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionLost",
-                            "DevicePrepPage: Agent connection lost.");
+                            "DevicePrepPage: Agent connection lost. Pausing progress and waiting for agent recovery.");
+
+                        if (this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED) {
+                            this.isAgentConnected = false;
+
+                            if (null == this.agentConnectionLostTimerPromise) {
+                                this.agentConnectionLostTimerPromise = WinJS.Promise.timeout(this.MAX_WAIT_FOR_CONTINUED_LOST_INTERNET_CONNECTION_IN_MILLESECONDS).then(() => {
+                                    if (this.connectionChangedListenerRegistered && !this.isAgentConnected) {
+                                        if (this.lastSubheaderText == null) {
+                                            this.lastSubheaderTextBeforeAgentLost = this.subheaderText();
+                                            this.pauseCompletionPercentageIncrementation = true;
+                                            this.subheaderText(this.resourceStrings["DevicePrepPageSubheaderConnectivityError"]);
+                                            this.errorOccurred(true);
+                                        }
+
+                                        this.commercialDiagnosticsUtilities.logInfoEvent(
+                                            "DevicePrepPage_AgentConnectionLost_UXDisplayed",
+                                            "DevicePrepPage: Agent connection still lost after grace period. Displaying error UX.");
+                                    }
+                                    this.agentConnectionLostTimerPromise = null;
+                                }, () => { this.agentConnectionLostTimerPromise = null; });                            }
+                        }
                         break;
 
                     case Windows.Management.Setup.DeploymentSessionConnectionChange.agentConnectionRestored:
                         this.commercialDiagnosticsUtilities.logInfoEvent(
                             "DevicePrepPage_AgentProgress_ConnectionChanged_AgentConnectionRestored",
-                            "DevicePrepPage: Agent connection restored.");
+                            "DevicePrepPage: Agent connection restored. Resuming progress.");
+
+                        if (this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED) {
+                            this.isAgentConnected = true;
+
+                            if (this.lastSubheaderTextBeforeAgentLost != null) {
+                                this.subheaderText(this.lastSubheaderTextBeforeAgentLost);
+                                this.errorOccurred(false);
+                                this.pauseCompletionPercentageIncrementation = false;
+                                this.lastSubheaderTextBeforeAgentLost = null;
+                            }
+
+                            if (this.agentConnectionLostTimerPromise != null) {
+                                this.agentConnectionLostTimerPromise.cancel();
+                                this.agentConnectionLostTimerPromise = null;
+                            }
+
+                            try {
+                                this.resetOrchestratorKeepAliveTimeout();
+                            } catch (e) {
+                                this.commercialDiagnosticsUtilities.logExceptionEvent(
+                                    "DevicePrepPage_AgentConnectionRestored_KeepAliveResetFailed",
+                                    "DevicePrepPage: Failed to reset keepAlive after agent connection restored.",
+                                    e);
+                            }
+                        }
                         break;
 
                     case Windows.Management.Setup.DeploymentSessionConnectionChange.internetConnectionLost:
