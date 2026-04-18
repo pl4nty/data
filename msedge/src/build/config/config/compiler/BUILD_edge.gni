@@ -62,13 +62,6 @@ template("edge_overlay_config_default_warnings") {
 template("edge_overlay_config_prevent_unsafe_narrowing") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
-
-    if (is_clang) {
-      cflags += [ "-Wimplicit-int-conversion" ]
-      if (!is_fuchsia) {
-        cflags -= [ "-Wimplicit-int-conversion" ]
-      }
-    }
   }
 }
 
@@ -289,12 +282,6 @@ template("edge_overlay_config_clang_revision") {
       defines -= [ "CR_CLANG_REVISION=\"${invoker._clang_revision}\"" ]
       defines += [ "CR_CLANG_REVISION=\"$_edge_clang_revision\"" ]
     }
-  }
-}
-
-template("edge_overlay_config_sanitize_c_array_bounds") {
-  config(target_name) {
-    forward_variables_from(invoker, "*", [])
   }
 }
 
