@@ -398,6 +398,8 @@
     },
     "SVC_DataPlatformMetadata": {
         "FlightingV2": {
+            "EnableProductSecurityUpdateSummaryForExplorer": true,
+            "EnableProductSecurityUpdateSummaryForExternalTableCreation": true,
             "EnableSchemaOrchestration": true,
             "EnableSchemaRetrievalFromDPMService": true
         }
