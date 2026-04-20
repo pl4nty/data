@@ -894,6 +894,7 @@
         "EnablePreviewStringForSSO": false,
         "EnablePrioritizedAlertRecordRetrieval": true,
         "EnablePriorityForCompletion": true,
+        "EnableProcessTimeoutFromActionEntity": true,
         "EnableProgressMarkersForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
         "EnableProvisionFailureByANCSubcategory": true,
         "EnableProvisionForwarderDataStream": true,
