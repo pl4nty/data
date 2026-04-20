@@ -165,15 +165,6 @@ template("edge_overlay_config_compiler") {
 
     # Edge overlays:
 
-    # Edge's Clang does not support -fno-lifetime-dse (upstream added it in
-    # crbug.com/484082200 after a Clang roll that included that flag).
-    if (is_clang) {
-      cflags -= [ "-fno-lifetime-dse" ]
-      if (is_posix || is_fuchsia) {
-        asmflags -= [ "-fno-lifetime-dse" ]
-      }
-    }
-
     if (!is_win) {
       # Edge: To control the size of our debug artifacts, compile our Linux builds
       # with -fdebug-types-section
