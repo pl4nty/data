@@ -1171,6 +1171,7 @@
         "LinkedInMsGraphUrl": "https://graph.microsoft.com/",
         "LogDarkFeedItemCount": false,
         "LokiAppIdAppAssertedSpo": "394866fc-eedb-4f01-8536-3ff84b16be2a",
+        "LokiNotification": true,
         "LokiThrottlingSettings": {
             "*": 100,
             "configuration": 20,

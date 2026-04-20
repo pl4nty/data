@@ -476,6 +476,8 @@
     },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
+            "EnableReportingV2ForARSEnrollmentTopFailures": true,
+            "EnableReportingV2ForARSEnrollmentTrend": true,
             "EnrollDeviceActionAP": true,
             "EnrollDeviceActionNonAP": true,
             "FetchTrustedTpmCertificates": true,
