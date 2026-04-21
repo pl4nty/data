@@ -409,10 +409,6 @@ BASE_DECLARE_FEATURE_TRIGGER(kMacFrostedGlassVisualEffectTrigger);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMacFrostedGlassVisualEffectEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern const base::FeatureParam<int> kMacFrostedGlassVisualEffectDelayMs;
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern int GetMacFrostedGlassVisualEffectDelayMs();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetMacFrostedGlassVisualEffectBackgroundAlpha();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetMacFrostedGlassVisualEffectTabAlpha();
@@ -624,6 +620,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeR1ColorThemes);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeR1ColorThemesEnabled();
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeR1ColorThemesSelfhost);
 #endif // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 // If enabled, Edge DLP features will have access to the private clipboard.
