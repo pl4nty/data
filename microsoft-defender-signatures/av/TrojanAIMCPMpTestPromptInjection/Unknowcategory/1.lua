@@ -8,7 +8,7 @@ if l_0_0 == nil or l_0_0 ~= mp.SCANREASON_NET_PROMPTSTREAM then
   return mp.CLEAN
 end
 local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK)
-if l_0_1 == nil or l_0_1 ~= "Ollama" then
+if l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
