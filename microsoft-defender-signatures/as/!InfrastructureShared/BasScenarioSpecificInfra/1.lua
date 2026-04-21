@@ -105,21 +105,11 @@ IsBasFileEncryptExt = function(l_1_0)
   l_1_1[".files-frozen-need-to-make-payment-for-decryptor-or-all-your-files-will-be-permanenlty-deleted"] = true
   l_1_1[".mailto[sevenoneone@cock.li].b6d27"] = true
   l_1_1[".ryk"] = true
+  l_1_1[".lockbit"] = true
   if l_1_1[l_1_0] == true then
     return true
   end
-  local l_1_2 = (versioning.GetOrgID)()
-  if l_1_2 ~= nil and l_1_2 ~= "" then
-    l_1_2 = (string.lower)(l_1_2)
-    local l_1_3 = {}
-    l_1_3[".lockbit"] = true
-    if l_1_3[l_1_0] == true and (l_1_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_1_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(80000, false, true, true) == true) then
-      return true
-    end
-  end
-  do
-    return false
-  end
+  return false
 end
 
 IsBasFileNoisyEncryptExt = function(l_2_0)
