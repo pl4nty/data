@@ -5001,6 +5001,11 @@
                 "Enabled": false
             }
         },
+        "CNS": {
+            "ChannelMentionSettings": {
+                "Enabled": false
+            }
+        },
         "CSAPartnerCall": {
             "EnabledBasedOnTenantRegion": true,
             "EndpointMappings": {

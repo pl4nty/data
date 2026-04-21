@@ -81025,79 +81025,6 @@
     },
     {
         "created": "2025-03-28T22:30:31",
-        "description": "Copilot can now analyze text by identifying themes or sentiments, cite examples in the data, and insert a column with theme/sentiment labels.",
-        "id": 485188,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot advanced text analysis in Excel"
-    },
-    {
-        "created": "2025-03-28T22:30:31",
         "description": "When creating a new presentation with Copilot in PowerPoint, choose a template from your organization's collection for on-brand presentations, or select from Microsoft's handpicked templates, ensuring the new presentation is built as per your chosen template.",
         "id": 485181,
         "locale": null,
@@ -101085,61 +101012,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Ground prompts using SharePoint Sites"
     },
     {
-        "created": "2024-07-16T23:15:43",
-        "description": "Microsoft Entra Conditional Access What If API can be used to programmatically test the impact of conditional access policies on user and workload identity sign-ins.",
-        "id": 406760,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "September CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Entra"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Entra"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Entra: Conditional Access What If API"
-    },
-    {
         "created": "2024-06-20T23:15:19",
         "description": "When scoping policies to Microsoft 365 Groups in Teams DLP policies, members of Teams standard and shared channel chats associated with the groups are currently protected by the policies. This change will automatically extend the protection to standard/shared channels chats in other Microsfot 365 Groups and 1:1/n (non-channel) chats. There is no longer a need to add users, security groups or other Microsoft 365 groups to protect these chats, except for customers that have enabled optical character recognition (OCR) in Teams chat.",
         "id": 401127,
@@ -105045,61 +104917,6 @@
         "title": "Outlook: Use Copilot to select and rewrite specific pieces of text in an email in classic Outlook for Windows"
     },
     {
-        "created": "2024-09-04T23:30:32",
-        "description": "Site ownership policy is a one-stop solution to effectively manage ownership needs of all SharePoint sites in your tenant. It helps you to define your organization's ownership criteria and identify sites that are not compliant. You can further notify predefined set of users of your choice to find the next best site owner or admin. You can also choose to automate actions on sites that remain ownerless for more than 3 months to prevent risks of data mismanagement.",
-        "id": 396172,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Site ownership policy"
-    },
-    {
         "created": "2024-02-28T00:45:58",
         "description": "Admins can now use advance mapping options to link AAD and Workday.",
         "id": 384068,
@@ -107846,61 +107663,6 @@
         "title": "Microsoft Teams: Microsoft 365 admin centers \u2013  Manage Teams apps that work on Outlook and Microsoft 365 App"
     },
     {
-        "created": "2024-01-04T00:15:15",
-        "description": "Introducing an upgraded onboarding experience tailored for new Forms users, designed to provide a seamless and user-friendly initiation to the platform. Get started effortlessly with our refreshed interface and streamlined features.",
-        "id": 375742,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Forms"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Forms"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Forms: New user onboarding experience"
-    },
-    {
         "created": "2023-09-11T23:14:26",
         "description": "Adaptive policy scopes enable your organization to create scopes that automatically updates which users to include in your policy based on geography, group, or another user attribute. The policy will automatically update to match the criteria defined in the scope instead of you constantly needing to update the static list of users in your policies.",
         "id": 172024,
@@ -108832,67 +108594,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Communication Compliance - User scoping role-based access control (RBAC)"
-    },
-    {
-        "created": "2022-05-20T22:03:33",
-        "description": "This feature will reduce the detection to investigation time to under an hour, allowing your organization to respond promptly to policy violations. The alert will be reviewed by a policy investigator, who is explicitly granted permission to review policy alerts by the Communication Compliance admin role. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.",
-        "id": 93324,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": "https://docs.microsoft.com/en-us/microsoft-365/compliance/communication-compliance-investigate-remediate?view=o365-worldwide",
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Communication Compliance - Reduce detection to investigation time from 24 hours to 1 hour (U.S. Government clouds)"
     },
     {
         "created": "2024-10-09T23:15:44",
@@ -111737,61 +111438,6 @@
         "title": "Microsoft Viva: Viva Amplify - Video templates"
     },
     {
-        "created": "2024-05-31T22:30:03",
-        "description": "Enhance your posts in Viva Engage with the integrated emoji picker. No need to memorize shortcuts; just click the emoji icon in the command bar to express yourself with ease.",
-        "id": 398708,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Emoji picker in Viva Engage"
-    },
-    {
         "created": "2024-04-08T23:15:13",
         "description": "Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.",
         "id": 392328,
@@ -112516,55 +112162,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Optical character recognition (OCR) support for endpoint"
-    },
-    {
-        "created": "2023-06-19T23:33:43",
-        "description": "<div>Named entities are sensitive information types (SITs) that can\u2019t easily be identified by a regular expression or a function; these include person names, physical addresses, and medical terms and conditions. This update expands name and address coverage to an additional 7 countries, such as China and Russia, and expands medical terms and conditions (specifically for the Diseases SIT) to an additional 29 languages covering much of Europe, China, Japan, and Korea. </div>",
-        "id": 139460,
-        "locale": null,
-        "modified": "2025-06-20T23:30:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Information Protection - Named entity coverage for additional markets and languages"
     },
     {
         "created": "2023-03-10T00:09:52",
