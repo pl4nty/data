@@ -428,17 +428,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
         "Published": "March 2, 2026",
         "Patch level": "2026-03-01",
-        "CVE": "CVE-2025-48650",
-        "References": "A-388530367",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "14, 15, 16",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-03-01",
-        "Published": "March 2, 2026",
-        "Patch level": "2026-03-01",
         "CVE": "CVE-2026-0017",
         "References": "A-444673089",
         "Type": "EoP",
@@ -2565,17 +2554,6 @@
         "Type": "RCE",
         "Severity": "Critical",
         "Updated AOSP versions": "13, 14, 15, 16",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-11-01",
-        "Published": "November 3, 2025",
-        "Patch level": "2025-11-01",
-        "CVE": "CVE-2025-48581",
-        "References": "A-428945391",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "16",
         "Component": "System"
     },
     {
