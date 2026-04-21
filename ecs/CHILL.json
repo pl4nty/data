@@ -1534,80 +1534,6 @@
                 }
             }
         },
-        "Floodgate_Campaign_Harmony.7f516662-457b-42c1-b1a8-747e2595f322": {
-            "CampaignId": "7f516662-457b-42c1-b1a8-747e2595f322",
-            "EndTimeUtc": "2026-04-30T07:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 5,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-11-13T08:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "BizchatUsage",
-                            "Count": 1,
-                            "IsAggregate": true,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "I wasn't sure if Chat could help with my task.",
-                                        "I didn't need to use Chat for my task.",
-                                        "I'm not confident the answers would be accurate.",
-                                        "I have privacy or compliance concerns.",
-                                        "I don't know how to begin this task in Chat.",
-                                        "Other (please tell us)",
-                                        "I used Copilot Chat during this visit."
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "What was the main reason you didn't use Chat for your task today?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "If you chose other, please explain your answer in the box below",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/7f516662-457b-42c1-b1a8-747e2595f322/f8c48f07-f3cf-4711-adc2-67f7edc0fad4/Web-Harmony/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_Harmony.e675cbd9-6799-406a-b5fe-09c7deef3e92": {
             "CampaignId": "e675cbd9-6799-406a-b5fe-09c7deef3e92",
             "EndTimeUtc": "2026-05-02T04:00:00Z",
@@ -3458,7 +3384,7 @@
         },
         "Floodgate_Campaign_SharePoint.83384bc2-8bc8-4738-bb5e-0b05e181a988": {
             "CampaignId": "83384bc2-8bc8-4738-bb5e-0b05e181a988",
-            "EndTimeUtc": "2026-05-08T07:00:00Z",
+            "EndTimeUtc": "2026-06-19T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

@@ -335,6 +335,11 @@
                             "toc_title": "Agent Mode"
                         },
                         {
+                            "href": "a_z_names_terms/a/agent-skills-for-microsoft-fabric",
+                            "permissioned-type": "private",
+                            "toc_title": "Agent Skills for Microsoft Fabric"
+                        },
+                        {
                             "href": "a_z_names_terms/a/agent-store",
                             "permissioned-type": "private",
                             "toc_title": "Agent Store"
@@ -1125,6 +1130,11 @@
                             "toc_title": "Azure Cosmos DB"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-cosmos-db-shell",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Cosmos DB Shell"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-cost-management-and-billing",
                             "permissioned-type": "private",
                             "toc_title": "Azure Cost Management and Billing"
@@ -1283,6 +1293,11 @@
                             "href": "a_z_names_terms/a/azure-government",
                             "permissioned-type": "private",
                             "toc_title": "Azure Government"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-hardware-and-systems-summit",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Hardware and Systems Summit"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-hdinsight-on-aks",
@@ -3577,6 +3592,11 @@
                                     "toc_title": "Sales Development Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/d/d365agents/sales-opportunity-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Sales Opportunity Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/d/d365agents/sales-order-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Sales Order Agent"
@@ -3673,6 +3693,11 @@
                             "href": "a_z_names_terms/d/dynamics-365-remote-assist",
                             "permissioned-type": "private",
                             "toc_title": "Dynamics 365 Remote Assist"
+                        },
+                        {
+                            "href": "a_z_names_terms/d/dynamics-365-sustainability",
+                            "permissioned-type": "private",
+                            "toc_title": "Dynamics 365 Sustainability"
                         }
                     ],
                     "toc_title": "D"
@@ -3968,6 +3993,11 @@
                             "href": "a_z_names_terms/e/exposure-score",
                             "permissioned-type": "private",
                             "toc_title": "exposure score"
+                        },
+                        {
+                            "href": "a_z_names_terms/e/express",
+                            "permissioned-type": "private",
+                            "toc_title": "Express"
                         },
                         {
                             "href": "a_z_names_terms/e/express-install",
@@ -5190,6 +5220,11 @@
                             "toc_title": "machine teaching, machine-teaching"
                         },
                         {
+                            "href": "a_z_names_terms/m/maia-link",
+                            "permissioned-type": "private",
+                            "toc_title": "Maia Link"
+                        },
+                        {
                             "href": "a_z_names_terms/m/major-region",
                             "permissioned-type": "private",
                             "toc_title": "major region"
@@ -5432,6 +5467,11 @@
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/people-agent",
                                             "permissioned-type": "private",
                                             "toc_title": "People Agent"
+                                        },
+                                        {
+                                            "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/planner-agent",
+                                            "permissioned-type": "private",
+                                            "toc_title": "Planner Agent"
                                         },
                                         {
                                             "href": "a_z_names_terms/m/microsoft-365/microsoft-365-agents/project-manager",
@@ -5822,6 +5862,11 @@
                                     "toc_title": "Microsoft Entra Agent ID"
                                 },
                                 {
+                                    "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-backup-and-recovery",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Entra Backup and Recovery"
+                                },
+                                {
                                     "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-conditional-access",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft Entra Conditional Access"
@@ -5875,6 +5920,11 @@
                                     "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-suite",
                                     "permissioned-type": "private",
                                     "toc_title": "Microsoft Entra Suite"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-tenant-governance",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Microsoft Entra Tenant Governance"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-entra/microsoft-entra-verified-id",
@@ -6435,6 +6485,16 @@
                                     "href": "a_z_names_terms/m/microsoft-security-agents/policy-configuration-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Policy Configuration Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/security-alert-triage-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Security Alert Triage Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/m/microsoft-security-agents/security-analyst-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Security Analyst Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/m/microsoft-security-agents/threat-intelligence-briefing-agent",
@@ -14417,7 +14477,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2749,
+        "count_of_node_with_href": 2761,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

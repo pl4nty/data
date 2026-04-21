@@ -1389,6 +1389,7 @@
         "Nh_SendDirectConnection_Diagnostics": true,
         "Nh_Skip_3p_Cookie_Request": true,
         "Nh_Split_Screen": true,
+        "Nh_Static_Redirect_URI": true,
         "Nh_Use_CAE": true,
         "Nh_Use_CreateDirectConnection": true,
         "Nh_Use_EndUserApi_GetCpc": true,

@@ -523,6 +523,7 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
+            "PRSv3-DeviceReportTransforms": true,
             "PRSv3-Phase1": true,
             "PRSv3-Phase2": true,
             "PRSv3-Phase3": true,
