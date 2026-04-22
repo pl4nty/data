@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\240b34a4757ea\1.luac 
+-- Command line: lua\!InfrastructureShared\240b312c5ebc8\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -34,7 +34,7 @@ if l_0_4 ~= nil and l_0_0 == l_0_4 then
     if l_0_3 then
       (bm.add_related_string)("SelfCopyToSys32", "\\downloads\\", ("\\documents\\").RelatedStringBMReport)
     end
-    TrackPidAndTechniqueBM("BM", "T1574.001", "DefenderCloudPlaceholderLPE.AM")
+    TrackPidAndTechniqueBM("BM", "T1574.001", "DefenderCloudPlaceholderLPE.MK")
     do return mp.INFECTED end
     -- WARNING: undefined locals caused missing assignments!
   end
