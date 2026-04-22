@@ -339,6 +339,7 @@
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
+            "MigratePartnerDeviceAttributeToMB": true,
             "NoFallback_AADSTS500022": true,
             "NoFallback_AADSTS5000224": true,
             "NoFallback_AADSTS5000225": true,
