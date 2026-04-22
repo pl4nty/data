@@ -7,14 +7,27 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 == nil or l_0_0 ~= mp.SCANREASON_NET_PROMPTSTREAM then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK) == nil then
+local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK)
+if l_0_1 == nil then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE) == nil then
+local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
+if l_0_2 == nil then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_AI_PROB_MALICIOUS) >= 999999850 then
-  return mp.INFECTED
+local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_AI_PROB_MALICIOUS)
+do
+  if l_0_3 >= 999999850 then
+    local l_0_4 = (versioning.GetOrgID)()
+    if l_0_4 ~= nil and l_0_4 ~= "" then
+      l_0_4 = (string.lower)(l_0_4)
+    end
+    if l_0_4 == "1beec53c-4b52-4aec-a1b1-716d6da36984" or l_0_4 == "25044e66-9451-403b-a3a6-1cb863e3d45e" then
+      return mp.INFECTED
+    else
+      return mp.LOWFI
+    end
+  end
+  return mp.CLEAN
 end
-return mp.CLEAN
 

@@ -6,6 +6,6 @@
 if GetRollingQueueCount("FireFalcon_Clash") > 0 then
   return mp.CLEAN
 end
-AppendToRollingQueue("FireFalcon_Clash", "1", 1, 172800)
+AppendToRollingQueue("FireFalcon_Clash", "1", 1, 604800)
 return mp.INFECTED
 

@@ -3,6 +3,10 @@
 
 -- params : ...
 -- function num : 0
+local l_0_0 = (bm.get_imagepath)()
+if l_0_0 and ((string.find)(l_0_0, "/chrome_crashpad_handler", 1, true) or (string.find)(l_0_0, "/galaxy-services/", 1, true)) then
+  return mp.CLEAN
+end
 TerminateParentProcessForLinux()
 addRelatedProcess()
 TrackPidAndTechniqueBM("BM", "T1003.005", "CredentialAccess")
