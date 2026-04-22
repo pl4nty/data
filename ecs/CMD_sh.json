@@ -757,6 +757,7 @@
         "EnablePoolFeature": true,
         "EnablePoolGraphPermission": true,
         "EnablePoolStatusMoveForwardBeforeIntegration": false,
+        "EnablePoolTrueNonPersistenceReset": true,
         "EnablePostProvisioningFallbackForBusiness": true,
         "EnablePostProvisioningFallbackForEnterprise": true,
         "EnablePostProvisioningFallbackForPartner": true,

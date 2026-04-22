@@ -1,5 +1,714 @@
 [
     {
+        "created": "2026-04-21T23:00:01",
+        "description": "\nWhen a user performs a search on google.com from a work profile, Microsoft Edge can detect whether organization-specific results are available for that query. When relevant results are found, a banner is shown with a link to explore those work results. This builds on the existing experience already available on Bing and extends it to Google, helping users seamlessly access work-related information regardless of their search engine. Admins can control access to this feature using the EdgeWorkSearchBannerEnabled policy.",
+        "id": 560823,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Work Search Banner for Google\u201d"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Managers will be able to export the default sections from the Heat Map report in Viva Glint directly to editable PowerPoint slides. This enhancement allows for easier and quicker consumption of this report outside Viva Glint, compared to the previous export method which included static screenshots.",
+        "id": 560821,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Viva Glint - Export Heat Map report in Viva Glint to editable PowerPoint slides"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "AI-powered intent for classifiers: Microsoft Purview Information Protection will generate a human-readable semantic intent for custom Sensitive Information Types (SITs), helping customers better understand what their classifiers detect and refine them for higher accuracy and fewer false positives.",
+        "id": 560708,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection \u2013 AI-powered intent for classifiers"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Understand who is building a habit using Copilot with the new power user insights in Copilot dashboard",
+        "id": 560705,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Copilot Analytics - Power user insights in Copilot dashboard"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "A new Security Detection Report in the Teams admin center provides a centralized view of messaging security detections, including impersonation, malicious URLs, and weaponizable file types. Admins can review detection activity in one place and export detailed data to support investigation and response. This capability helps consolidate security signals for Teams messaging scenarios.",
+        "id": 560702,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Security Detection Report in Teams Admin Center"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "You can now create a presentation with Copilot in PowerPoint straight from the PowerPoint Home in file menu.",
+        "id": 560694,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create a presentation with Copilot in PowerPoint directly from the PowerPoint Home"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "AI in SharePoint can now generate code which allows it to take what you ask and build the behind-the-scenes instructions or \"helper programs\" needed to actually do the work, like generating reports.",
+        "id": 560596,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: AI in SharePoint can generate code to translate your intent into reliable workflows "
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Site owners have a critical role to play in ensuring accuracy of site information, including the site's necessity, its owners, members, permissions, and sharing settings. We\u2019re introducing the Governance Reviews Dashboard in Private Preview, a centralized view where site owners can see all pending site governance reviews (inactivity, ownership, attestation) across the sites they own.\nThe dashboard shows required actions, due timelines, and site enforcement status and allows site owners to take action directly from one place. Combined with consolidated policy notifications, it replaces multiple emails with a single, actionable governance surface. ",
+        "id": 560541,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Governance Reviews Dashboard for Site Owners"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Users can export de-identified, row-level agent metrics and attributes from the Agent Dashboard. Exported data provides detailed insights into agent usage and user-level agent interactions across the organization, with personal identifiers removed. \n#copilotcontrolsystem",
+        "id": 560538,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Copilot Analytics - Export metrics from Agent Dashboard"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "You can now create a presentation with Copilot in PowerPoint just as you open the PowerPoint web app.",
+        "id": 560537,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Create a presentation with Copilot in PowerPoint directly from the PowerPoint Web App"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Introducing built-in Planner Agent chat with natural language Q&A, smart task discovery, and in-plan task management.",
+        "id": 560532,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Planner: Planner Agent chat"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "You can ask AI in SharePoint to create a Word, Excel or PowerPoint file based on the information you've gathered within SharePoint",
+        "id": 560337,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Create Word, Excel, and PowerPoint files with AI"
+    },
+    {
+        "created": "2026-04-21T23:00:01",
+        "description": "Microsoft Edge will update the Look and Feel to give customers a unified experience across all of Microsoft AI surfaces including Copilot and Bing. This will change multiple elements of the UX such as spacing, corners, fonts, default colors, etc.",
+        "id": 559993,
+        "locale": null,
+        "modified": "2026-04-21T23:00:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Modern, unified, and updated Look and Feel"
+    },
+    {
         "created": "2026-04-21T16:15:19",
         "description": "Account discovery provides visibility into who has access to connected applications by discovering local and orphaned accounts and identifying accounts that can be matched to Microsoft Entra ID users.\nAccount discovery will help administrators identify access that exists outside of Microsoft Entra ID Governance and bring that access under governance\u2014simplifying application onboarding while improving visibility and control over application access.",
         "id": 559476,
@@ -11043,10 +11752,10 @@
         "description": "We are expanding Microsoft Purview DLP for Microsoft 365 Copilot and Copilot Chat to safeguard web searches containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from using sensitive data for external web search. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot.",
         "id": 548671,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -12053,12 +12762,12 @@
     },
     {
         "created": "2026-02-20T23:15:06",
-        "description": "We are introducing a reimagined SharePoint experience designed to be simple and intuitive, centered on the core jobs of discovering knowledge, publishing content, and building solutions. This update establishes the foundation for AI-assisted creation across the product. This includes an updated information architecture and cohesive design language, delivering a clean and consistent experience across surfaces.\n",
+        "description": "We are introducing a reimagined SharePoint experience designed to be simple and intuitive, centered on the core jobs of discovering knowledge, publishing content, and building solutions. This update establishes the foundation for AI-assisted creation across the product. This includes an updated information architecture and cohesive design language, delivering a clean and consistent experience across surfaces.",
         "id": 547732,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12318,12 +13027,12 @@
         "description": "Data Security Investigations (DSI) now further enhances its AI analysis tools, including the ability to choose between a standard categorization for potential time and/or cost savings or a more advanced categorization to include AI-generated topics. Additionally, we are making the DSI workflow faster by automatically preparing data for AI analysis as it is being added to the investigation, saving critical investigation time.",
         "id": 557556,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12941,12 +13650,12 @@
         "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping the design consistent.",
         "id": 555880,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12996,12 +13705,12 @@
         "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping formatting consistent.",
         "id": 555879,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13051,12 +13760,12 @@
         "description": "When creating a presentation with Copilot in PowerPoint using Agent Mode, you can reference an existing PowerPoint file, so Copilot applies its theme and styles to the new deck, keeping formatting consistent.",
         "id": 555878,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14345,12 +15054,12 @@
         "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
         "id": 555876,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15335,12 +16044,12 @@
         "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
         "id": 555877,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15390,12 +16099,12 @@
         "description": "Generate an Executive Summary slide for your presentation with Agent Mode in PowerPoint. Copilot delivers a polished draft that highlights your key points and provides a clear, executive ready summary.",
         "id": 555875,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15445,12 +16154,12 @@
         "description": "Now with Agent Mode in Copilot in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
         "id": 555874,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15500,12 +16209,12 @@
         "description": "Now with Agent Mode in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
         "id": 555873,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15555,12 +16264,12 @@
         "description": "Now with Agent Mode in PowerPoint, you can create presentations based on your Work IQ. Build rich presentations without the heavy lift of finding all the right files, meetings, and emails to compose relevant slides.",
         "id": 555872,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16189,12 +16898,12 @@
         "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
         "id": 555239,
         "locale": null,
-        "modified": "2026-03-03T00:00:03",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18445,12 +19154,12 @@
         "description": "Introduces enhanced controls in Content Explorer\u2019s UI, enabling scoped visibility and filtering of SIT and label data. This will help with content discoverability and governance.",
         "id": 553218,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -20038,9 +20747,9 @@
         "description": "Adaptive Scope for SharePoint is a dynamic scoping capability in Microsoft Purview DLP that allows administrators to automatically target DLP policies to the right sites based on attributes such as site URL, site name, or custom site metadata. Unlike static scoping, which requires manually listing sites and maintaining them over time, adaptive scopes continuously evaluate site properties and auto\u2011include or exclude locations as they evolve. This enables scalable policy deployment, eliminates the 100\u2011site static policy limit, and delivers granular, and automated targeting.",
         "id": 549288,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23229,9 +23938,9 @@
         "description": "Password autofill suggestions in Edge are currently based on top-level domain matching, which means the same credentials can be suggested on sites like account.microsoft.com and office.microsoft.com. With this feature, Edge groups related domains together across various desktop and mobile properties called affiliations. When a customer visits a URL, the Edge client will query the affiliations backend to obtain \u201caffiliated groups\u201d for that URL. The process involves sending a hash of the visited URLs to the service, which then returns a list of affiliated URLs and ensures that the relevant credentials will be displayed in the autofill suggestions across affiliated domains. Admins can control access to this feature using the PasswordManagerEnabled policy.",
         "id": 537277,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23528,12 +24237,12 @@
         "description": "This update brings end user security reporting into Teams Admin Center. Admins can now view and download signals from messages users report as a security concern or not a security concern within TAC Protection reports, helping them identify trends and fine tune policies and responses. ",
         "id": 536571,
         "locale": null,
-        "modified": "2026-02-05T00:15:27",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30591,12 +31300,12 @@
         "description": "Resize the video gallery in Teams meetings to see more people when content is being shared",
         "id": 528930,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42220,12 +42929,12 @@
         "description": "Admins now have visibility and insight for voice and facial profile enrollments through a dashboard in the Teams Admin Center (TAC). Voice and face profiles are critical for supporting AI-enhanced meeting experiences for users across the organization. The dashboard provides metrics on enrollments over time.  ",
         "id": 506750,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -82969,12 +83678,12 @@
         "description": "This feature allows Microsoft 365 administrators to enable Microsoft 365 certified SaaS applications within their tenant through org-wide settings for third-party apps.\u00a0Admins can choose to allow a subset of applications that have already been verified against industry security and compliance standards. This ensures organizations can confidently adopt apps while maintaining governance and reducing approval overhead.",
         "id": 485712,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -90558,9 +91267,9 @@
         "description": "AI citations analytics will help you track the usage of SP documents, news and pages through copilot and AI agents. You will be able to see how often a page or a file is referenced in a copilot response. You can also get insights into SharePoint site content getting referenced in copilot responses aggregated at the site level.\n",
         "id": 480725,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-04-21T23:00:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

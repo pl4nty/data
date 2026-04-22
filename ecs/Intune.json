@@ -615,7 +615,8 @@
         "FlightingV2": {
             "AndroidDCv2ManagementModeFilter": true,
             "CanAccessSupportCentralWidget": true,
-            "EnableDeviceExecutionStatusReportExportV2": true
+            "EnableDeviceExecutionStatusReportExportV2": true,
+            "EnableWpa3PersonalForIosFlight": true
         }
     },
     "UX_EPM": {
