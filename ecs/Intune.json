@@ -88,6 +88,14 @@
             "FlightExpiry": "2026-08-01T00:00:00.000Z",
             "FlightValue": true
         },
+        "redirectFsForScriptsEnabled": {
+            "FlightExpiry": "2026-11-01T00:00:01.000Z",
+            "FlightValue": true
+        },
+        "skipUserContextAppsWithoutUserLoggedInEnabled": {
+            "FlightExpiry": "2026-06-01T00:00:01.000Z",
+            "FlightValue": true
+        },
         "wingetAppTimeoutHandlerEnabled": {
             "FlightExpiry": "2025-06-30T23:59:00Z",
             "FlightValue": true
