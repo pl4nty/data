@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.2.0
+.VERSION 1.3.0
 
 .GUID 9516d007-5e02-4bfd-84a4-436ea6778687
 
@@ -25,6 +25,12 @@
 .EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
+2026-04-22 v1.3.0
+    Introduce -AsObjects switch to return results as objects for better integration with other tools.
+    Introduce firewall rule checks for port validation.
+    Introduce support bundle generation with verbose logging for issue reproduction.
+    Reorganize MCC and Policy outputs.
+
 2024-04-04 v1.2.0
     Introduce MCC related checks.
     Reorganize output data.
@@ -42,6 +48,7 @@
     .SYNOPSIS
         Script for:
         - Checking Device, Network, DO, P2P and MCC Settings.
+        - Generating a support bundle with diagnostic information.
 
     .PARAMETER HealthCheck
         A Health Checker script that displays settings to help the user to validate if there are any wrong settings in the user device, network, DO.
@@ -51,6 +58,15 @@
 
     .PARAMETER MCC
         Show MCC settings to allow customers to ensure the Windows device can correctly connect to the CacheHost server on the network, for supported content downloads.
+
+    .PARAMETER AsObjects
+        Changes the output of the script to return PowerShell objects instead of formatted text, allowing for easier integration with other tools and scripts.
+
+    .PARAMETER GenerateSupportBundle
+        Generates a comprehensive support bundle containing logs, configuration, and diagnostic information.
+
+    .PARAMETER ReproduceIssueWithVerboseLogs
+        Used with GenerateSupportBundle. Enables verbose logging and waits for user to reproduce the issue before capturing logs.
 
     .EXAMPLE
         To run all script verifications
@@ -71,13 +87,42 @@
         To run only MCC validation
 
             DeliveryOptimizationTroubleshooter.ps1 -MCC
+
+    .EXAMPLE
+        To run all script verifications and get the output as PS objects
+
+            DeliveryOptimizationTroubleshooter.ps1 -AsObjects
+
+    .EXAMPLE
+        To generate a support bundle
+
+            DeliveryOptimizationTroubleshooter.ps1 -GenerateSupportBundle
+
+    .EXAMPLE
+        To generate a support bundle with verbose logging for issue reproduction
+
+            DeliveryOptimizationTroubleshooter.ps1 -GenerateSupportBundle -ReproduceIssueWithVerboseLogs
 #>
 
-[CmdLetBinding()]
+[CmdLetBinding(DefaultParameterSetName = 'Diagnostics')]
 Param(
+    [Parameter(ParameterSetName = 'Diagnostics')]
     [switch] $HealthCheck,
+
+    [Parameter(ParameterSetName = 'Diagnostics')]
     [switch] $P2P,
-    [switch] $MCC
+
+    [Parameter(ParameterSetName = 'Diagnostics')]
+    [switch] $MCC,
+
+    [Parameter(ParameterSetName = 'Diagnostics')]
+    [switch] $AsObjects,
+
+    [Parameter(ParameterSetName = 'SupportBundle', Mandatory = $true)]
+    [switch] $GenerateSupportBundle,
+
+    [Parameter(ParameterSetName = 'SupportBundle')]
+    [switch] $ReproduceIssueWithVerboseLogs
 )
 
 #----------------------------------------------------------------------------------#
@@ -102,15 +147,28 @@ Add-Type -TypeDefinition @"
     }
 "@
 
+Add-Type -TypeDefinition @"
+    public enum GroupIdSource
+    {
+        Unset             = 0,
+        ActiveDirectory   = 1,
+        DomainSID         = 2,
+        DhcpOption234     = 3,
+        DnsSuffix         = 4,
+        AAD               = 5,
+    }
+"@
+
 enum DhcpOption
 {
-    DOGroupId  = 234
-    DOMccHost  = 235
+    DOGroupId = 234
+    DOMccHost = 235
 }
 
 #----------------------------------------------------------------------------------#
 # Get Custom Objects
-function Get-DOErrorsTable(){
+function Get-DOErrorsTable()
+{
     $errorsObj = @'
 [
     {
@@ -259,7 +317,7 @@ function Get-DOErrorsTable(){
         "ErrorCode": "0x80D03807",
         "Description": "DO core paused the completed job due to detection of VPN network.",
         "RelatedPolicyName": "DOAllowVPNPeerCaching",
-        "SuggestedRemedy": "Check you are connected to any VPN when you are doing P2P."
+        "SuggestedRemedy": "VPN usage was detected in logs. Check if AllowVPNPeerCaching policy should be set to Allowed."
     },
     {
         "ErrorCode": "0x80D03808",
@@ -417,10 +475,11 @@ function Get-DOErrorsTable(){
     return $errorsObj
 }
 
-function Get-DOPolicyTable(){
+function Get-DOPolicyTable()
+{
     $linkBase = "https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization-reference"
 
-@"
+    @"
     [
         {
             "PolicyCode": "DODownloadMode",
@@ -431,13 +490,13 @@ function Get-DOPolicyTable(){
         {
             "PolicyCode": "DOGroupId",
             "PolicyName": "Group ID",
-            "Description": "Unique GUID group id to create a custom group.",
+            "Description": "Use a GroupID to create a custom peer group, requires DownloadMode '2'.",
             "Link": "$linkBase#group-id"
         },
         {
             "PolicyCode": "DOGroupIdSource",
             "PolicyName": "Group ID Source",
-            "Description": "Restrict peer selection to a specific source.",
+            "Description": "Use a GroupID source to create a custom peer group, requires DownloadMode '2'.",
             "Link": "$linkBase#select-the-source-of-group-ids"
         },
         {
@@ -467,7 +526,7 @@ function Get-DOPolicyTable(){
         {
             "PolicyCode": "DOMaxCacheAge",
             "PolicyName": "Max Cache Age",
-            "PolicyUnit": "(secs)",
+            "PolicyUnit": "(in seconds)",
             "Description": "Max number of seconds a file can be held in DO cache.",
             "Link": "$linkBase#max-cache-age"
         },
@@ -475,7 +534,7 @@ function Get-DOPolicyTable(){
             "PolicyCode": "DOMaxCacheSize",
             "PolicyName": "Max Cache Size",
             "PolicyUnit": "%",
-            "Description": "Percentage of available disk drive space allowed​.",
+            "Description": "Percentage of available disk drive space allowed.",
             "Link": "$linkBase#max-cache-size"
         },
         {
@@ -530,28 +589,31 @@ function Get-DOPolicyTable(){
 function Print-OSInfo()
 {
     # Check OS Version
-    Write-Host "`nWindows" $(Get-OSVersion) -NoNewline
+    $os = Get-OSVersion
+    $windowsVersion = "`nWindows $os"
 
-    switch ($os.BuildNumber)
+    # OS Build titles [update with new versions if necessary]
+    $windowsVersionTitle = [string]::Empty
+    switch ($os.Build)
     {
-        "10240" { Write-Host " - TH1" }
-        "10586" { Write-Host " - TH2" }
-        "14393" { Write-Host " - RS1" }
-        "15063" { Write-Host " - RS2" }
-        "16299" { Write-Host " - RS3" }
-        "17134" { Write-Host " - RS4" }
-        "17763" { Write-Host " - RS5" }
-        "18362" { Write-Host " - Titanium 19H1" }
-        "18363" { Write-Host " - Vanadium 19H2" }
-        "19041" { Write-Host " - Vibranium 20H1" }
-        "19042" { Write-Host " - Vibranium (v2) 20H2" }
-        "19645" { Write-Host " - Manganese" }
-        "19043" { Write-Host " - Vibranium (v3) 21H1" }
-        "19044" { Write-Host " - Vibranium (v4) 21H2" }
-        "20348" { Write-Host " - Iron" }
-        "22000" { Write-Host " - Cobalt" }
-        "22621" { Write-Host " - Nickel" }
-        default { Write-Host "" }
+        "10240" { $windowsVersionTitle = "TH1" }
+        "10586" { $windowsVersionTitle = "TH2" }
+        "14393" { $windowsVersionTitle = "RS1" }
+        "15063" { $windowsVersionTitle = "RS2" }
+        "16299" { $windowsVersionTitle = "RS3" }
+        "17134" { $windowsVersionTitle = "RS4" }
+        "17763" { $windowsVersionTitle = "RS5" }
+        "18362" { $windowsVersionTitle = "Titanium 19H1" }
+        "18363" { $windowsVersionTitle = "Vanadium 19H2" }
+        "19041" { $windowsVersionTitle = "Vibranium 20H1" }
+        "19042" { $windowsVersionTitle = "Vibranium (v2) 20H2" }
+        "19645" { $windowsVersionTitle = "Manganese" }
+        "19043" { $windowsVersionTitle = "Vibranium (v3) 21H1" }
+        "19044" { $windowsVersionTitle = "Vibranium (v4) 21H2" }
+        "20348" { $windowsVersionTitle = "Iron" }
+        "22000" { $windowsVersionTitle = "Cobalt" }
+        "22621" { $windowsVersionTitle = "Nickel" }
+        default { }
     }
 
     # Check UUS Version
@@ -559,11 +621,34 @@ function Print-OSInfo()
     if (Test-Path $uusVerPath)
     {
         $uusVersion = Get-Content $uusVerPath
-        Write-Host "UUS" $uusVersion
     }
 
-    $PSVersion = "PS Version $($PSVersionTable.PSVersion)"
-    Write-Verbose $PSVersion
+    #Check PowerShell Version
+    $PSVersion = $PSVersionTable.PSVersion
+
+    if ($AsObjects)
+    {
+        $outputObj = @()
+        $outputObj += [pscustomobject] @{ Name = "Windows Version"; Result = $os; Details = $windowsVersionTitle }
+        $outputObj += [pscustomobject] @{ Name = "UUS Version"; Result = $uusVersion; Details = $uusVerPath }
+        $outputObj += [pscustomobject] @{ Name = "PowerShell Version"; Result = $PSVersion; Details = [string]::Empty }
+        $outputObj
+    }
+    else
+    {
+        if (-not [string]::IsNullOrEmpty($windowsVersionTitle))
+        {
+            $windowsVersion += " - $windowsVersionTitle"
+        }
+        Write-Host $windowsVersion
+
+        if (-not [string]::IsNullOrEmpty($uusVersion))
+        {
+            Write-Host "UUS $uusVersion"
+        }
+
+        Write-Verbose "PS Version $PSVersion"
+    }
 }
 
 function Print-Title([string] $TextTitle)
@@ -576,22 +661,34 @@ function Print-SubTitle([string] $TextSubTitle)
     Write-Host ("--> {0}:`n{1}" -f $TextSubTitle, ('-' * 55))
 }
 
-function Format-ResultObject([pscustomobject] $Object)
+function Format-ResultObject([pscustomobject] $Object, [int] $Width = 10)
 {
-    $Object | Format-Table -Wrap -Property  @{ Label = "Name"; Expression={ $_.Name }; Align='left'; Width = 30; },
-                                            @{ Label = "Result"; Expression={ switch ($_.Result)
-                                                                                {
-                                                                                    "Fail" { $color = "91"; break }
-                                                                                    "Pass" { $color = "92"; break }
-                                                                                    "Warn" { $color = "93"; break }
-                                                                                    "Disabled" { $color = "93"; break }
-                                                                                    default { $color = "37" }
-                                                                                }
-                                                                                $text = $_.Result.ToString().ToUpper()
-                                                                                ; $e = [char]27
-                                                                                ;"$e[${color}m$($text)${e}[0m"
-                                                                            }; Align='center'; Width = 10;},
-                                            @{ Label = "Details"; Expression={ "$($_.Details) `n" }; Align='left'; }
+    $Object | Format-Table -Wrap -Property  @{ Label = "Name"; Expression = { $_.Name }; Align = 'left'; Width = 30; },
+    @{ Label = "Result"; Expression = {
+            $resultValue = $_.Result
+
+            # Only apply color formatting if Result is a TestResult enum
+            if ($resultValue -is [TestResult])
+            {
+                switch ($resultValue)
+                {
+                    "Fail" { $color = "91"; break }
+                    "Pass" { $color = "92"; break }
+                    "Warn" { $color = "93"; break }
+                    "Disabled" { $color = "93"; break }
+                    default { $color = "37" }
+                }
+                $text = $resultValue.ToString().ToUpper()
+                ; $e = [char]27
+                ; "$e[${color}m$($text)${e}[0m"
+            }
+            else
+            {
+                Write-Output $resultValue
+            }
+        }; Align = 'center'; Width = $Width;
+    },
+    @{ Label = "Details"; Expression = { "$($_.Details) `n" }; Align = 'left'; }
 }
 
 #----------------------------------------------------------------------------------#
@@ -611,9 +708,9 @@ function Check-AdminPrivileges([string] $InvocationLine)
     $scriptParams = ""
     $firstParam = $InvocationLine.IndexOf('-')
 
-    if($firstParam -gt 0)
+    if ($firstParam -gt 0)
     {
-        $scriptParams = $InvocationLine.Substring($firstParam-1)
+        $scriptParams = $InvocationLine.Substring($firstParam - 1)
     }
 
     $scriptCmd = "$ScriptPath $scriptParams"
@@ -664,7 +761,7 @@ function Check-NetInterface()
 
             if ($name)
             {
-               $networkInterface += "($name) $description "
+                $networkInterface += "($name) $description "
             }
         }
 
@@ -700,32 +797,48 @@ function Check-CacheFolder()
 
         $acl = Get-Acl $dosvcWorkingDir
 
-        $IdentityReferenceDO = "NT SERVICE\DoSvc"
-        $IdentityReferenceNS = "NT AUTHORITY\NETWORK SERVICE"
+        # Use SIDs instead of account names for language-independent checks
+        # S-1-5-20 = NT AUTHORITY\NETWORK SERVICE (well-known SID)
+        $networkServiceSid = New-Object System.Security.Principal.SecurityIdentifier("S-1-5-20")
+        # NT SERVICE\DoSvc is a virtual service account - get its SID dynamically
+        $doSvcAccount = New-Object System.Security.Principal.NTAccount("NT SERVICE\DoSvc")
+        $doSvcSid = $doSvcAccount.Translate([System.Security.Principal.SecurityIdentifier])
+
+        $requiredSids = @($networkServiceSid, $doSvcSid)
         $inheritanceFlags = [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor ([System.Security.AccessControl.InheritanceFlags]::ObjectInherit)
 
-        # Filter to DO/NS permissions
-        $permissionEntries = $acl.Access | where { @($IdentityReferenceDO, $IdentityReferenceNS) -contains $_.IdentityReference.Value }
+        # Filter to DO/NS permissions using SID comparison
+        $permissionEntries = $acl.Access | Where-Object { $requiredSids -contains $_.IdentityReference.Translate([System.Security.Principal.SecurityIdentifier]) }
         # This might be interesting here: Write-Verbose $permissionEntries
 
-        # Look for Allow/FullControl/Full inheritance
-        $permissionEntries = $permissionEntries | where { ($_.AccessControlType -eq "Allow") -and ($_.FileSystemRights -eq "FullControl") -and ($_.InheritanceFlags -eq $inheritanceFlags) }
-
-        if ($permissionEntries)
+        # Check for Deny ACEs first; they take precedence over Allow in Windows ACLs
+        $denyEntries = $permissionEntries | Where-Object { $_.AccessControlType -eq "Deny" }
+        if ($denyEntries)
         {
-            $result = [TestResult]::Pass
+            $description = "Deny permissions found for required accounts: $($denyEntries.IdentityReference -join ", ")"
+            $result = [TestResult]::Fail
         }
         else
         {
-            $description = "Required permissions missing"
-            $result = [TestResult]::Fail
+            # Look for Allow/FullControl/Full inheritance
+            $allowEntries = $permissionEntries | Where-Object { ($_.AccessControlType -eq "Allow") -and ($_.FileSystemRights -eq "FullControl") -and ($_.InheritanceFlags -eq $inheritanceFlags) }
+
+            if ($allowEntries)
+            {
+                $result = [TestResult]::Pass
+            }
+            else
+            {
+                $description = "Required permissions missing"
+                $result = [TestResult]::Fail
+            }
         }
 
         [pscustomobject] @{ Name = $outputName; Result = $result; Details = $description }
     }
     catch
     {
-        [pscustomobject] @{ Name = $outputName; Result = $null; Details = $_.Exception }
+        [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Fail; Details = $_.Exception }
     }
 }
 
@@ -815,7 +928,7 @@ function Check-RAMRequired()
 
     try
     {
-        $totalRAM = (Get-WmiObject Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum | Select-Object -ExpandProperty Sum)/1GB
+        $totalRAM = (Get-WmiObject Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum | Select-Object -ExpandProperty Sum) / 1GB
 
         if ($totalRAM -ge $doConfig.MinTotalRAM)
         {
@@ -844,7 +957,7 @@ function Check-DiskRequired()
 
     try
     {
-        $diskSize = Get-WmiObject -Class win32_logicaldisk | Where-Object DeviceId -eq $env:SystemDrive | Select-Object @{N='Disk'; E={$_.DeviceId}}, @{N='Size'; E={[math]::Round($_.Size/1GB,2)}}, @{N='FreeSpace'; E={[math]::Round($_.FreeSpace/1GB,2)}}
+        $diskSize = Get-WmiObject -Class win32_logicaldisk | Where-Object DeviceId -eq $env:SystemDrive | Select-Object @{N = 'Disk'; E = { $_.DeviceId } }, @{N = 'Size'; E = { [math]::Round($_.Size / 1GB, 2) } }, @{N = 'FreeSpace'; E = { [math]::Round($_.FreeSpace / 1GB, 2) } }
 
         if ($diskSize.FreeSpace -ge $doConfig.MinTotalDiskSize)
         {
@@ -961,31 +1074,47 @@ function Check-PowerBattery()
 #----------------------------------------------------------------------------------#
 # Connection Check
 
-function Test-Port([int] $Port, [switch] $Optional)
+function Test-Port([int] $Port, [string] $Protocol, [switch] $Outbound, [switch] $Optional)
 {
     $outputName = "Check Port"
     $oldPreference = $Global:ProgressPreference
     $result = [TestResult]::Unset
-    $description = "$Port"
+    $direction = if ($Outbound) { "Outbound" } else { "Inbound" }
+    $description = "$Protocol - $Port ($direction)"
 
     try
     {
         $Global:ProgressPreference = 'SilentlyContinue'
-        $resultTest = Test-NetConnection -Computer localhost -Port $Port -WarningAction SilentlyContinue -InformationLevel 'Quiet'
 
-        if ($resultTest)
+        $netConnectionCheck = if ($Outbound)
+        {
+            # We want to skip Test-NetConnection for outbound (Teredo port 3544 comes through here).
+            # TODO: Improve Teredo check in another way (netsh interface teredo show state?)
+            $true
+        }
+        else
+        {
+            Test-NetConnection -Computer localhost -Port $Port -WarningAction SilentlyContinue -InformationLevel 'Quiet'
+        }
+
+        # Check firewall rules
+        $firewallCheck = Check-FirewallRules -Port $Port -Protocol $Protocol -Outbound:$Outbound
+
+        if ($netConnectionCheck -and ($firewallCheck.Result -eq [TestResult]::Pass))
         {
             $result = [TestResult]::Pass
         }
         else
         {
-            if ($Optional -or ((Check-DownloadMode).Result -ne [TestResult]::Pass))
+            $isOptional = ($Optional -or ((Check-DownloadMode).Result -ne [TestResult]::Pass))
+            $result = if ($isOptional) { [TestResult]::Warn } else { [TestResult]::Fail }
+            if (-not $netConnectionCheck)
             {
-                $result = [TestResult]::Warn
+                $description += "`nTest-NetConnection to localhost:$Port failed."
             }
-            else
+            if ($firewallCheck.Result -ne [TestResult]::Pass)
             {
-                $result = [TestResult]::Fail
+                $description += "`nFirewall: $($firewallCheck.Details)"
             }
         }
 
@@ -1007,12 +1136,22 @@ function Check-DownloadMode()
     $result = [TestResult]::Fail
     $downloadMode = $doConfig.DownloadMode
 
+    $policyValue = switch ([int]$downloadMode)
+    {
+        0 { "CdnOnly - 0" }
+        1 { "LAN - 1" }
+        2 { "Group - 2" }
+        3 { "Internet - 3" }
+        99 { "Simple - 99" }
+        100 { "Bypass - 100" }
+        default { $downloadMode.ToString() }
+    }
     if (@("Lan", "Group", "Internet") -contains $downloadMode)
     {
         $result = [TestResult]::Pass
     }
 
-    [pscustomobject] @{ Name = $outputName; Result = $result; Details = $downloadMode }
+    [pscustomobject] @{ Name = $outputName; Result = $result; Details = $policyValue }
 }
 
 function Test-Hostname([string] $HostName)
@@ -1023,8 +1162,8 @@ function Test-Hostname([string] $HostName)
 
     try
     {
-        $dnsHostnames = Resolve-DnsName $HostName | Select-Object -Unique -Property NameHost | % {[string]$_.NameHost}
-        $dnsHostnames = $dnsHostnames | Where {!$_.Equals("")}
+        $dnsHostnames = Resolve-DnsName $HostName | Select-Object -Unique -Property NameHost | % { [string]$_.NameHost }
+        $dnsHostnames = $dnsHostnames | Where { !$_.Equals("") }
 
         $result = [TestResult]::Fail
 
@@ -1035,7 +1174,7 @@ function Test-Hostname([string] $HostName)
         }
         else
         {
-            foreach($dnsHostname in $dnsHostnames)
+            foreach ($dnsHostname in $dnsHostnames)
             {
                 $test = Test-NetConnection $dnsHostname -Port 80 -WarningAction SilentlyContinue
                 if ($test.TcpTestSucceeded)
@@ -1090,7 +1229,7 @@ function Get-GeoResponse()
         $details = "HR: $($_.Exception.HResult) - $($_.Exception.Message)"
     }
 
-    [pscustomobject] @{ StatusCode = $statusCode; Type = $contentType; Details = $details; Success = $success}
+    [pscustomobject] @{ StatusCode = $statusCode; Type = $contentType; Details = $details; Success = $success }
 }
 
 function Test-InternetInfo()
@@ -1135,13 +1274,13 @@ function Test-InternetInfo()
     else
     {
         $resultInt = [TestResult]::Pass
-        $resultIp  = [TestResult]::Pass
+        $resultIp = [TestResult]::Pass
 
         $msgIp = $geoResponse.Details.ExternalIpAddress
     }
 
     $testResults += [pscustomobject] @{ Name = $outputNameInt; Result = $resultInt; Details = $msgInt; Connection = ($resultInt -eq [TestResult]::Pass) }
-    $testResults += [pscustomobject] @{ Name = $outputNameIp;  Result = $resultIp;  Details = $msgIp }
+    $testResults += [pscustomobject] @{ Name = $outputNameIp; Result = $resultIp; Details = $msgIp }
 
     return $testResults
 }
@@ -1166,7 +1305,7 @@ function Check-ByteRange()
         $contentRange = $return.GetResponseHeader("Content-Range")
         $description = "$statusCode - $($return.StatusCode) , Content-Range: $contentRange"
 
-        if(($statusCode -eq 206) -and ($contentRange -eq "bytes 0-9/25006511"))
+        if (($statusCode -eq 206) -and ($contentRange -eq "bytes 0-9/25006511"))
         {
             $result = [TestResult]::Pass
         }
@@ -1203,7 +1342,7 @@ function Import-Winrt()
     {
         if ($PSVersionTable.PSVersion.Major -lt 6)
         {
-            $null = [Windows.Management.Policies.NamedPolicy,Windows.Management.Policies,ContentType=WindowsRuntime]
+            $null = [Windows.Management.Policies.NamedPolicy, Windows.Management.Policies, ContentType = WindowsRuntime]
         }
         else
         {
@@ -1220,7 +1359,7 @@ function Import-Winrt()
                 throw "BurntToast path doesn't exists: $path"
             }
 
-            $dllsPath = Get-ChildItem -Path $path -Filter *.dll -Recurse | %{$_.FullName}
+            $dllsPath = Get-ChildItem -Path $path -Filter *.dll -Recurse | % { $_.FullName }
             if (-not $dllsPath)
             {
                 throw [System.IO.FileNotFoundException] "Dlls not found in $path"
@@ -1292,13 +1431,13 @@ function Get-PolicyData([string] $PolicyCode)
     }
 
     Write-Verbose "The $PolicyCode value is: [$return] - $description"
-    [pscustomobject] @{ PolicyCodeValue = $return; Details = $description ; Fail = $fail}
+    [pscustomobject] @{ PolicyCodeValue = $return; Details = $description ; Fail = $fail }
 }
 
 function Check-PeerEfficiency()
 {
     Write-Progress -Activity "Checking Peer Efficiency" -Status "Gathering data to determine P2P efficiency (it can take a few minutes)" -PercentComplete 10
-    $logInfo = "Peer Efficiency for this month:  "
+    $logInfo = "Peer efficiency results this month:"
 
     try
     {
@@ -1330,7 +1469,7 @@ function Check-PeerEfficiency()
     }
 
 
-    [pscustomobject] @{ Peer_Info = $logInfo; Description = $description}
+    [pscustomobject] @{ Peer_Info = $logInfo; Description = $description }
 }
 
 function Get-PeerLogErrors()
@@ -1344,13 +1483,13 @@ function Get-PeerLogErrors()
     Write-Progress -Activity "Finding errors in DO logs" -Status "Parsing logs (it can take a couple of minutes)" -PercentComplete 10
 
     $startDate = (Get-Date).AddDays(-15)
-    $hrRegistered = (Get-DeliveryOptimizationLog -LevelFilter 3) | Where-Object {($_.TimeCreated -gt $startDate) -and ($_.ErrorCode -ne $null)} | Sort-Object -Property ErrorCode -Unique
+    $hrRegistered = (Get-DeliveryOptimizationLog -LevelFilter 3) | Where-Object { ($_.TimeCreated -gt $startDate) -and ($_.ErrorCode -ne $null) } | Sort-Object -Property ErrorCode -Unique
     Write-Progress -Activity "Finding errors in DO logs" -Status "Filtering errors" -PercentComplete 40
 
-    if($hrRegistered)
+    if ($hrRegistered)
     {
         Write-Progress -Activity "Finding errors in DO logs" -Status "Returning errors" -PercentComplete 80
-        Get-DOErrorsTable | Where-Object {$hrRegistered.ErrorCode -contains $_.ErrorCode}
+        Get-DOErrorsTable | Where-Object { $hrRegistered.ErrorCode -contains $_.ErrorCode }
     }
 
     Write-Progress -Activity "Finding errors in DO logs" -Status "Returning errors" -Completed
@@ -1372,27 +1511,28 @@ function Get-DOPolicies([pscustomobject] $ErrorsFound)
 
     try
     {
-        foreach($policy in $policyTable)
+        foreach ($policy in $policyTable)
         {
             $policyRelatedError = $false
             $policyValue = $null
+            $descriptionPolicy = [string]::Empty
 
             Write-Progress -Activity "Checking DO Policies" -Status "Getting $($policy.PolicyCode) data" -PercentComplete $percentComp
-            $percentComp += 100/$policyTable.Count
+            $percentComp += 100 / $policyTable.Count
 
             #Policy Setup adjustments.
             $policyValue = (Get-PolicyData -PolicyCode $policy.PolicyCode).PolicyCodeValue
 
-            if($policyValue)
+            if ($policyValue)
             {
-                if($policy.PolicyUnit)
+                if ($policy.PolicyUnit)
                 {
                     $policyValue += " $($policy.PolicyUnit)"
                 }
 
-                if($policy.PolicyCode -eq "DODownloadMode")
+                if ($policy.PolicyCode -eq "DODownloadMode")
                 {
-                    $policyValue = switch ( $policyValue)
+                    $policyValue = switch ($policyValue)
                     {
                         0 { "CdnOnly - 0" }
                         1 { "LAN - 1" }
@@ -1400,25 +1540,64 @@ function Get-DOPolicies([pscustomobject] $ErrorsFound)
                         3 { "Internet - 3" }
                         99 { "Simple - 99" }
                         100 { "Bypass - 100" }
-                        default {  $policyValue }
+                        default { $policyValue }
+                    }
+                }
+                elseif ($policy.PolicyCode -eq "DOGroupId")
+                {
+                    $downloadMode = (Get-PolicyData -PolicyCode "DODownloadMode").PolicyCodeValue
+                    if ($downloadMode -ne "2")
+                    {
+                        $descriptionPolicy += "GroupID requires DownloadMode '2'. Since it's not set, GroupID will be ignored."
+                    }
+                }
+                elseif ($policy.PolicyCode -eq "DOGroupIdSource")
+                {
+                    if ($policyValue -eq [Int32][GroupIdSource]::DhcpOption234)
+                    {
+                        $dhcpGroupID = Get-DhcpStringOptionValue([Int32][DhcpOption]::DOGroupId)
+                        if ($dhcpGroupID)
+                        {
+                            $descriptionPolicy += "GroupID from DHCP Option: $dhcpGroupID. "
+                        }
+                        else
+                        {
+                            $descriptionPolicy += "The device was not able to retrieve GroupID from DHCP Option. "
+                        }
+                    }
+
+                    $downloadMode = (Get-PolicyData -PolicyCode "DODownloadMode").PolicyCodeValue
+                    if (-not [string]::IsNullOrEmpty($policyValue))
+                    {
+                        if (($downloadMode -ne "2") -and ($policyValue -ne "0"))
+                        {
+                            $descriptionPolicy += "GroupID requires DownloadMode '2'. Since it's not set, GroupID will be ignored. "
+                        }
+
+                        $gidSource = [GroupIdSource]$policyValue
+                        $policyValue = "$gidSource - $policyValue"
                     }
                 }
             }
 
-            $policyError = $ErrorsFound | Where-Object {$_.RelatedPolicyName -eq $policy.PolicyCode}
+            $policyError = $ErrorsFound | Where-Object { $_.RelatedPolicyName -eq $policy.PolicyCode }
 
             if ($policyError)
             {
-                $description = $policyError.SuggestedRemedy
-                $policyRelatedError = $true
+                $descriptionPolicy += $policyError.SuggestedRemedy
+            }
+
+            if ([string]::IsNullOrEmpty($descriptionPolicy))
+            {
+                $descriptionPolicy = $policy.Description
             }
             else
             {
-                $description = $policy.Description
+                $policyRelatedError = $true
             }
 
-            $description += "`r`nMORE INFO: $($policy.Link)`r`n"
-            $policyOutputs += [pscustomobject] @{ Name = $policy.PolicyName; Configuration = $policyValue; MoreInfo = $description; PolicySuggestion = $policyRelatedError }
+            $descriptionPolicy += "`r`n$($policy.Link)`r`n"
+            $policyOutputs += [pscustomobject] @{ Name = $policy.PolicyName; Configuration = $policyValue; MoreInfo = $descriptionPolicy; PolicySuggestion = $policyRelatedError }
         }
     }
     catch
@@ -1434,21 +1613,22 @@ function Get-DOPolicies([pscustomobject] $ErrorsFound)
 # MCC Check
 function Check-ConfiguredCacheHostServer()
 {
-    $outputName = "DOCacheHost Server Configured"
+    $outputName = "CacheHost server configured"
     $progressActivity = "Checking if device is configured to use CacheHost Server"
     $description = [string]::Empty
+    $cacheHost = [string]::Empty
 
     Write-Progress -Activity $progressActivity -Status "Checking Windows 11 Settings" -PercentComplete 10
     $vpnCacheServerPolicyInWin11 = Get-DODisallowCacheServerPolicyInWin11
-    if($vpnCacheServerPolicyInWin11.disallowMccOnVpn)
+    if ($vpnCacheServerPolicyInWin11.disallowMccOnVpn)
     {
         if ($vpnCacheServerPolicyInWin11.VpnConnected)
         {
-            return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Fail; Details = "MCC usage is disabled because DO is set to disallow CacheServer downloads on VPN, and you are connected to a VPN." }
+            return [pscustomobject] @{ Name = $outputName; Result = $cacheHost; Details = "MCC usage is disabled because DO is set to disallow CacheServer downloads on VPN, and you are connected to a VPN." }
         }
         else
         {
-            $description += "[Warning: DODisallowCacheServerDownloadsOnVPN is set, so a VPN connection will disallow CacheServer downloads] "
+            $description = "[Warning: DODisallowCacheServerDownloadsOnVPN is set, so a VPN connection will disallow CacheServer downloads] "
         }
     }
 
@@ -1456,163 +1636,244 @@ function Check-ConfiguredCacheHostServer()
     $mccHostInfo = Get-CacheHostServer
 
     Write-Progress -Activity $progressActivity -Status "Validating Data" -PercentComplete 70
-    # ------------------------------------------------------------------ #
-    # 1 -> Validate if no MCC config was found
-    # [ERROR]
-    $descriptionValidation = Check-CacheHostNotFound -CacheHostObject $mccHostInfo
-    if ($descriptionValidation)
+    if ($mccHostInfo.PolicyCacheHostSource -eq [CacheHostSource]::DHCPOption235Force)
     {
-        $description += $descriptionValidation
-        return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Fail; Details = $description }
-    }
-
-    # ------------------------------------------------------------------ #
-    # 2 -> Validate if PolicyCacheHostSource is DHCPOption235Force and, CacheHostPolicy and DHCPOptionSet are set
-    # [WARN] - Returning DHCP Option Value
-    $descriptionValidation = Check-DHCPOption235WithCacheHostPolicyAndDHCPOptionSet -CacheHostObject $mccHostInfo
-    if ($descriptionValidation.Description)
-    {
-        $description += $descriptionValidation.Description
-        return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Warn; Details = $descriptionValidation.Description; MCCHost = $descriptionValidation.CacheHost }
-    }
-
-    # ------------------------------------------------------------------ #
-    # 3 -> Validate if GeoCacheHostFlag is set and possibles cache hosts.
-    # [SUCCESS]
-    $geoCacheHostFlagValidation = Check-GeoCacheHostFlagSetToUseDhcpOption -CacheHostObject $mccHostInfo
-    if ($geoCacheHostFlagValidation.Description)
-    {
-        $description += $geoCacheHostFlagValidation.Description
-        return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Warn; Details = $description; MCCHost = $geoCacheHostFlagValidation.CacheHost }
-    }
-
-    # ------------------------------------------------------------------ #
-    # 4 -> Validate DisableDNSSD cases.
-    # [SUCCESS]
-    if ($mccHostInfo.PolicyCacheHostSource -eq [CacheHostSource]::DisableDNSSD)
-    {
-        $disableDNSSDValidation = Check-DisableDNSSDCases -CacheHostObject $mccHostInfo
-        $description += $disableDNSSDValidation.Description
-        return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Pass; Details = $description; MCCHost = $disableDNSSDValidation.CacheHost }
-    }
-
-    # ------------------------------------------------------------------ #
-    # 5 -> Validate DHCP Option235 cases.
-    # [SUCCESS]
-    $dhcpOption235Validation = Check-DHCPOption235Cases -CacheHostObject $mccHostInfo
-    $description += $dhcpOption235Validation.Description
-    return [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Pass; Details = $description; MCCHost = $dhcpOption235Validation.CacheHost }
-
-    Write-Progress -Activity $progressActivity -Status "Returning data" -Completed
-}
-
-function Check-DHCPOption235Cases([pscustomobject] $CacheHostObject)
-{
-
-    $description = "This device has CacheHostSource configured to use <$([Int32]$CacheHostObject.PolicyCacheHostSource) = $($CacheHostObject.PolicyCacheHostSource)>, so it will dynamically use "
-    $cacheHost = [string]::Empty
-
-    if (!$CacheHostObject.DHCPCacheHost)
-    {
-        if($CacheHostObject.GeoCacheHost)
+        if (-not [string]::IsNullOrEmpty($mccHostInfo.DHCPCacheHost))
         {
-            $description += "the Cache Host '$($CacheHostObject.GeoCacheHost)' set via Delivery Optimization Cloud Service."
-            $cacheHost = $CacheHostObject.GeoCacheHost
+            $cacheHost = $mccHostInfo.DHCPCacheHost
+            $description += "Device is using a CacheHost server from DHCP Option defined by the CacheHostSource ($([int]$mccHostInfo.PolicyCacheHostSource)). Verify policy value accuracy and MCC is functioning."
         }
         else
         {
-            $description += "the Cache Host '$($CacheHostObject.PolicyCacheHost)' set via 'DOCacheHost' Policy"
-            $cacheHost = $CacheHostObject.PolicyCacheHost
+            if (-not [string]::IsNullOrEmpty($mccHostInfo.PolicyCacheHost))
+            {
+                $cacheHost = $mccHostInfo.PolicyCacheHost
+                $description += "Device is using a CacheHost server set by the CacheHost policy. The CacheHostSource policy ($([int]$mccHostInfo.PolicyCacheHostSource)) is set but unable to retrieve value."
+            }
+            elseif (-not [string]::IsNullOrEmpty($mccHostInfo.GeoCacheHost))
+            {
+                $cacheHost = $mccHostInfo.GeoCacheHost
+                $description += "Device is using a CacheHost server, set by DO services. The CacheHostSource policy ($([int]$mccHostInfo.PolicyCacheHostSource)) is set but unable to retrieve value."
+            }
+            else
+            {
+                $description += "Device does not have a CacheHost server set. The CacheHostSource policy ($([int]$mccHostInfo.PolicyCacheHostSource)) is set but unable to retrieve value."
+            }
+
+            $firewallCheck = Check-DHCPServerFailures
+            if (-not [string]::IsNullOrEmpty($firewallCheck))
+            {
+                $description += "`nPossible causes for failure to reach DHCP server: $firewallCheck"
+            }
         }
+
+        return [pscustomobject] @{ Name = $outputName; Result = $cacheHost; Details = $description }
     }
-    else
+    elseif ($mccHostInfo.PolicyCacheHostSource -eq [CacheHostSource]::DHCPOption235)
     {
-        $description += "the DHCP option: $($CacheHostObject.DHCPCacheHost)."
-        $cacheHost = $CacheHostObject.DHCPCacheHost
-    }
-
-    return [pscustomobject] @{ Description = $description; CacheHost = $cacheHost }
-}
-
-function Check-DisableDNSSDCases([pscustomobject] $CacheHostObject)
-{
-    $description = "This device has CacheHostSource configured to use <0 = DisableDNSSD> and "
-    $cacheHost = [string]::Empty
-
-    if($CacheHostObject.GeoCacheHost)
-    {
-        $description += "The CacheHost server '$($CacheHostObject.GeoCacheHost)' is set via Delivery Optimization Cloud Service."
-        $cacheHost = $CacheHostObject.GeoCacheHost
-    }
-    else
-    {
-        $description += "The CacheHost server '$($CacheHostObject.PolicyCacheHost)' is set via DOCacheHost Policy."
-        $cacheHost = $CacheHostObject.PolicyCacheHost
-    }
-
-    return [pscustomobject] @{ Description = $description; CacheHost = $cacheHost }
-}
-
-function Check-GeoCacheHostFlagSetToUseDhcpOption([pscustomobject] $CacheHostObject)
-{
-    $description = [string]::Empty
-    $cacheHost = [string]::Empty
-
-    if ($CacheHostObject.GeoDhcpFlagIsSet)
-    {
-        if (($CacheHostObject.DHCPCacheHost) -and ($CacheHostObject.GeoCacheHost))
+        if (-not [string]::IsNullOrEmpty($mccHostInfo.PolicyCacheHost))
         {
-            $description = "Both DHCP option $($CacheHostObject.DHCPCacheHost) and GeoCacheHost $($CacheHostObject.GeoCacheHost) are set, but $($CacheHostObject.GeoCacheHost) will be used as MCC Cache Server because DHCPOption235 flag is set in Delivery Optimization Cloud Service."
-            $cacheHost = $($CacheHostObject.GeoCacheHost)
-        }
-        elseif ($CacheHostObject.DHCPCacheHost)
-        {
-            $description = "The DHCP option $($CacheHostObject.DHCPCacheHost) will be dynamically used as MCC Cache Server because DHCPOption235 flag is set in Delivery Optimization Cloud Service."
-            $cacheHost = $CacheHostObject.DHCPCacheHost
+            $cacheHost = $mccHostInfo.PolicyCacheHost
+            $description += "Device is using a CacheHost server set by the CacheHost policy. Verify policy value accuracy and MCC is functioning."
         }
         else
         {
-            $description = "The GeoCacheHost $($CacheHostObject.GeoCacheHost) will be dynamically used as MCC Cache Server because DHCPOption235 flag is set in Delivery Optimization Cloud Service."
-            $cacheHost = $CacheHostObject.GeoCacheHost
+            if (-not [string]::IsNullOrEmpty($mccHostInfo.DHCPCacheHost))
+            {
+                $cacheHost = $mccHostInfo.DHCPCacheHost
+                $description += "Device is using a CacheHost server from DHCP Option defined by the CacheHostSource ($([int]$mccHostInfo.PolicyCacheHostSource)). Verify policy value accuracy and MCC is functioning."
+            }
+            elseif (-not [string]::IsNullOrEmpty($mccHostInfo.GeoCacheHost))
+            {
+                $cacheHost = $mccHostInfo.GeoCacheHost
+                $description += "Device is using a CacheHost server, set by DO services. The CacheHostSource policy ($([int]$mccHostInfo.PolicyCacheHostSource)) is set but unable to retrieve value."
+            }
+            else
+            {
+                $description += "Device does not have a CacheHost server set. The CacheHostSource policy ($([int]$mccHostInfo.PolicyCacheHostSource)) is set but unable to retrieve value. "
+            }
+
+            $firewallCheck = Check-DHCPServerFailures
+            if ([string]::IsNullOrEmpty($mccHostInfo.DHCPCacheHost) -and (-not [string]::IsNullOrEmpty($firewallCheck)))
+            {
+                $description += "`nPossible causes for failure to reach DHCP server: $firewallCheck"
+            }
+        }
+
+        return [pscustomobject] @{ Name = $outputName; Result = $cacheHost; Details = $description }
+    }
+    else
+    {
+        if (($mccHostInfo.GeoDhcpFlagIsSet) -and (-not [string]::IsNullOrEmpty($mccHostInfo.DHCPCacheHost)))
+        {
+            $cacheHost = $mccHostInfo.DHCPCacheHost
+            $description += "Device is using a CacheHost server from DHCP Option 235, set by DO services."
+        }
+        elseif (-not [string]::IsNullOrEmpty($mccHostInfo.PolicyCacheHost))
+        {
+            $cacheHost = $mccHostInfo.PolicyCacheHost
+            $description += "Device is using a CacheHost server set by the CacheHost policy. Verify policy value accuracy and MCC is functioning."
+        }
+        elseif (-not [string]::IsNullOrEmpty($mccHostInfo.GeoCacheHost))
+        {
+            $cacheHost = $mccHostInfo.GeoCacheHost
+            $description += "Device is using a CacheHost server set by DO services."
+        }
+        else
+        {
+            $description += "Device does not have a CacheHost server set."
+        }
+
+        if (($mccHostInfo.GeoDhcpFlagIsSet) -and ([string]::IsNullOrEmpty($mccHostInfo.DHCPCacheHost)))
+        {
+            $firewallCheck = Check-DHCPServerFailures
+            if (-not [string]::IsNullOrEmpty($firewallCheck))
+            {
+                $description += "`nDO Cloud Service indicated to use DHCP. Possible causes for failure to reach DHCP server: $firewallCheck"
+            }
+        }
+
+        return [pscustomobject] @{ Name = $outputName; Result = $cacheHost; Details = $description }
+    }
+}
+
+function Check-DHCPServerFailures()
+{
+    $description = [string]::Empty
+    # Firewall Policies: <Note: script should check UDP ports>:
+    # If UDP 67 (outbound) & UDP 68 (inbound) are not allowed, show: Allow UDP 68 (inbound) or UDP 67 (outbound).
+    $inboundPort = Check-FirewallRules -Port 68 -Protocol "UDP"
+    if ($inboundPort.Result -ne [TestResult]::Pass)
+    {
+        $description += "`n$($inboundPort.Details)"
+    }
+
+    $outboundPort = Check-FirewallRules -Port 67 -Protocol "UDP" -Outbound
+    if ($outboundPort.Result -ne [TestResult]::Pass)
+    {
+        $description += "`n$($outboundPort.Details)"
+    }
+
+    $policyMergeCheck = Check-LocalPolicyMerge -trafficType "DHCP"
+    if (-not [string]::IsNullOrEmpty($policyMergeCheck))
+    {
+        $description += "`n$policyMergeCheck"
+    }
+
+    return $description
+}
+
+function Check-FirewallRules(
+    [Parameter(Mandatory = $true)]
+    [int] $Port,
+    [string] $Protocol,
+    [switch] $Outbound
+)
+{
+    $outputName = "Check Port Firewall Rules"
+    $result = [TestResult]::Pass
+    $details = [string]::Empty
+
+    if ([string]::IsNullOrEmpty($Protocol))
+    {
+        $Protocol = "ANY"
+    }
+    $protocolNum = Get-ProtocolNumber -ProtocolName $Protocol
+
+    try
+    {
+        if ($Outbound)
+        {
+            # Outbound must NOT be blocked by any explicit rule
+            $outboundRules = Get-NetFirewallPortFilter -PolicyStore ActiveStore -Protocol @($Protocol, $protocolNum) -ErrorAction SilentlyContinue | `
+                    Where-Object { $_.LocalPort -eq $Port } | Get-NetFirewallRule | Where-Object { $_.Direction -eq 'Outbound' -and $_.Action -eq 'Block' }
+
+            if ($outboundRules.Count -gt 0)
+            {
+                if ($outboundRules.PrimaryStatus -eq 'OK' -and $outboundRules.Enabled -eq 'True' )
+                {
+                    $details += "Remove outbound rule that is blocking $Protocol on port $Port. "
+                    $result = [TestResult]::Fail
+                }
+                else
+                {
+                    $details += "Found blocking outbound rule for $Protocol on port $Port, but it is disabled or status is not OK. "
+                    $result = [TestResult]::Warn
+                }
+
+                $details += Check-LocalPolicyMerge -trafficType "[$Protocol $Port]"
+            }
+
+            [pscustomobject] @{ Name = $outputName; Result = $result; Details = $details }
+        }
+        else
+        {
+            # Inbound must be allowed by an explicit rule
+            $inboundRules = Get-NetFirewallPortFilter -PolicyStore ActiveStore -Protocol @($Protocol, $protocolNum) -ErrorAction SilentlyContinue | `
+                    Where-Object { $_.LocalPort -eq $Port } | Get-NetFirewallRule | Where-Object { $_.Direction -eq 'Inbound' -and $_.Action -eq 'Allow' }
+
+            if ($inboundRules.Count -eq 0)
+            {
+                $details += "Add inbound rule to allow $Protocol on port $Port"
+                $result = [TestResult]::Fail
+            }
+            else
+            {
+                # Check that valid rules have RemoteAddress and RemotePort set to Any
+                $validRules = $inboundRules | Where-Object { $_.PrimaryStatus -eq 'OK' -and $_.Enabled -eq 'True' }
+
+                if ($validRules.Count -eq 0)
+                {
+                    $details += "Update inbound rule Status to OK or enable it to allow $Protocol on port $Port. "
+                    $result = [TestResult]::Fail
+                }
+                else
+                {
+                    $rulesWithCorrectAddressPort = $validRules | Where-Object {
+                        $portFilter = $_ | Get-NetFirewallPortFilter -ErrorAction SilentlyContinue
+                        $addressFilter = $_ | Get-NetFirewallAddressFilter -ErrorAction SilentlyContinue
+                        ($portFilter.RemotePort -contains 'Any') -and ($addressFilter.RemoteAddress -contains 'Any')
+                    }
+
+                    if ($rulesWithCorrectAddressPort.Count -eq 0)
+                    {
+                        $result = [TestResult]::Fail
+                        $details += "Update inbound rule RemoteAddress and/or RemotePort to 'Any' to allow $Protocol on port $Port. "
+                    }
+                }
+            }
+
+            if (-not [string]::IsNullOrEmpty($details))
+            {
+                $details += Check-LocalPolicyMerge -trafficType "[$Protocol $Port]"
+            }
+
+            [pscustomobject] @{ Name = $outputName; Result = $result; Details = $details }
         }
     }
-
-    return [pscustomobject] @{ Description = $description; CacheHost = $cacheHost }
+    catch
+    {
+        [pscustomobject] @{ Name = $outputName; Result = [TestResult]::Fail; Details = $_.Exception }
+    }
 }
 
-function Check-DHCPOption235WithCacheHostPolicyAndDHCPOptionSet([pscustomobject] $CacheHostObject)
+function Check-LocalPolicyMerge([string]$trafficType)
 {
     $description = [string]::Empty
-    $cacheHost = $null
 
-    if (($CacheHostObject.PolicyCacheHostSource -eq [CacheHostSource]::DHCPOption235Force) -and
-            ![string]::IsNullOrEmpty($CacheHostObject.PolicyCacheHost) -and
-            ![string]::IsNullOrEmpty($CacheHostObject.DHCPCacheHost))
+    # Check Local Policy Merge 
+    $localPolicyMerge = Get-LocalPolicyMerge
+    foreach ($localPolicy in $localPolicyMerge)
     {
-        $description = "Detecting both CacheHost Policy and DHCP Option set. Therefore, DHCP Option 235 Force string $($CacheHostObject.DHCPCacheHost) will be used according < $([Int32]$CacheHostObject.PolicyCacheHostSource) = $($CacheHostObject.PolicyCacheHostSource)>."
-        $cacheHost = $CacheHostObject.DHCPCacheHost
-    }
-    elseif (($CacheHostObject.PolicyCacheHostSource -eq [CacheHostSource]::DHCPOption235) -and
-            ![string]::IsNullOrEmpty($CacheHostObject.PolicyCacheHost) -and
-            ![string]::IsNullOrEmpty($CacheHostObject.DHCPCacheHost))
-    {
-        $description = "Detecting both CacheHost Policy and DHCP Option set. Therefore, the Cache Host Policy string $($CacheHostObject.PolicyCacheHost) will be used according < $([Int32]$CacheHostObject.PolicyCacheHostSource) = $($CacheHostObject.PolicyCacheHostSource)>."
-        $cacheHost = $CacheHostObject.PolicyCacheHost
-    }
-
-    return [pscustomobject] @{ Description = $description; CacheHost = $cacheHost }
-}
-
-function Check-CacheHostNotFound([pscustomobject] $CacheHostObject)
-{
-    $infoPage = "https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#cache-server-hostname"
-    $description = [string]::Empty
-
-    if ([string]::IsNullOrEmpty($CacheHostObject.PolicyCacheHost) -and
-        [string]::IsNullOrEmpty($CacheHostObject.GeoCacheHost)    -and
-        [string]::IsNullOrEmpty($CacheHostObject.DHCPCacheHost))
-    {
-        $description = "Unable to get any MCC CacheHost configuration on this device. For more information: $infoPage"
+        Write-Verbose "$($localPolicy.Profile) Profile Reg: $($localPolicy.RegistryPath)"
+        if ([string]::IsNullOrEmpty($localPolicy.AllowLocalPolicyMerge))
+        {
+            $description += "`n> Local Policy Merge is not configured for $($localPolicy.Profile) Profile. Ensure that firewall rules do not block $trafficType traffic."
+        }
+        else
+        {
+            $description += "`n> Local Policy Merge is set to $($localPolicy.AllowLocalPolicyMerge) for $($localPolicy.Profile) Profile. Ensure that firewall rules do not block $trafficType traffic."
+        }
     }
 
     return $description
@@ -1625,7 +1886,7 @@ function Get-CacheHostServer()
     $dhcpCacheHost = $null
     $cacheHostSourcePolicy = Get-DOCacheHostSource
 
-    if($cacheHostSourcePolicy -in [CacheHostSource]::DHCPOption235, [CacheHostSource]::DHCPOption235Force)
+    if ($cacheHostSourcePolicy -in [CacheHostSource]::DHCPOption235, [CacheHostSource]::DHCPOption235Force)
     {
         $dhcpCacheHost = Get-DhcpStringOptionValue([Int32][DhcpOption]::DOMccHost)
     }
@@ -1635,18 +1896,18 @@ function Get-CacheHostServer()
         $cacheHostPolicy = (Get-PolicyData -PolicyCode "DOCacheHost").PolicyCodeValue
     }
 
-    if(([string]::IsNullOrEmpty($cacheHostPolicy)) -and ([string]::IsNullOrEmpty($dhcpCacheHost)))
+    if (([string]::IsNullOrEmpty($cacheHostPolicy)) -and ([string]::IsNullOrEmpty($dhcpCacheHost)))
     {
         $geoCacheHostRequest = Get-CacheHostServerFromGeoService
         $geoCacheHost = $geoCacheHostRequest.CacheHost
-        if($geoCacheHostRequest.CacheHostFlag -eq 1)
+        if ($geoCacheHostRequest.CacheHostFlag -eq 1)
         {
             $dhcpGeoFlag = $true
             $dhcpCacheHost = Get-DhcpStringOptionValue([Int32][DhcpOption]::DOMccHost)
         }
     }
 
-    $returnValue = [pscustomobject] @{ PolicyCacheHost = $cacheHostPolicy; PolicyCacheHostSource = $cacheHostSourcePolicy; GeoCacheHost = $geoCacheHost; GeoDhcpFlagIsSet = $dhcpGeoFlag; DHCPCacheHost = $dhcpCacheHost}
+    $returnValue = [pscustomobject] @{ PolicyCacheHost = $cacheHostPolicy; PolicyCacheHostSource = $cacheHostSourcePolicy; GeoCacheHost = $geoCacheHost; GeoDhcpFlagIsSet = $dhcpGeoFlag; DHCPCacheHost = $dhcpCacheHost }
     Write-Verbose $returnValue
     $returnValue
 }
@@ -1682,9 +1943,9 @@ function Get-DODisallowCacheServerPolicyInWin11()
         {
             $disallowMccOnVpn = ((Get-PolicyData -PolicyCode "DODisallowCacheServerDownloadsOnVPN").PolicyCodeValue) -eq "1"
 
-            if($disallowMccOnVpn -eq $true)
+            if ($disallowMccOnVpn -eq $true)
             {
-                $vpn = Get-VPNconnection | Where-Object {$_.ConnectionStatus -eq "Connected"}
+                $vpn = Get-VPNconnection | Where-Object { $_.ConnectionStatus -eq "Connected" }
 
                 if ($vpn.Length -ne 0) { $vpnConn = $true }
             }
@@ -1696,6 +1957,85 @@ function Get-DODisallowCacheServerPolicyInWin11()
     }
 
     [pscustomobject] @{ DisallowMccOnVpn = $disallowMccOnVpn; VpnConnected = $vpnConn }
+}
+
+function Get-LocalPolicyMerge([string[]] $profiles = @())
+{
+    $result = @()
+
+    # If no profiles specified, get the active profile(s)
+    if ($profiles.Count -eq 0)
+    {
+        try
+        {
+            $activeProfiles = Get-NetConnectionProfile | Select-Object -ExpandProperty NetworkCategory -Unique
+            foreach ($prof in $activeProfiles)
+            {
+                switch ($prof)
+                {
+                    "DomainAuthenticated" { $profiles += "Domain" }
+                    "Private" { $profiles += "Private" }
+                    "Public" { $profiles += "Public" }
+                    default { throw "Invalid profile value '$prof'. Falling back to check all profiles." }
+                }
+            }
+        }
+        catch
+        {
+            Write-Host "Unable to determine active profile: $($_.Exception.Message)"
+            $profiles = @()
+        }
+
+        # Fallback to checking all if we couldn't determine active profiles
+        if ($profiles.Count -eq 0)
+        {
+            $profiles = @("Domain", "Private", "Public")
+        }
+    }
+
+    foreach ($p in $profiles)
+    {
+        $regPath = "HKLM:\SOFTWARE\Policies\Microsoft\WindowsFirewall\{0}Profile" -f $p
+        $allowLocalPolicyMerge = [string]::Empty
+
+        if (Test-Path $regPath)
+        {
+            $props = Get-ItemProperty -Path $regPath -ErrorAction SilentlyContinue
+            if ($props)
+            {
+                $allowLocalPolicyMerge = [string]$props.AllowLocalPolicyMerge
+            }
+        }
+
+        $result += [pscustomobject] @{ Profile = $p; RegistryPath = $regPath; AllowLocalPolicyMerge = $allowLocalPolicyMerge }
+    }
+
+    return $result
+}
+
+function Get-ProtocolNumber
+{
+    param(
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
+        [string] $ProtocolName
+    )
+    switch ($ProtocolName.ToUpper())
+    {
+        # Transport Layer Protocol Numbers
+        'TCP' { return "6" }
+        'UDP' { return "17" }
+
+        # Control / tunneling
+        'ICMP' { return "1" }   # ICMPv4
+        'ICMPV4' { return "1" }
+        'ICMPV6' { return "58" }
+        'GRE' { return "47" }
+        'ESP' { return "50" }
+        'AH' { return "51" }
+        'ANY' { return "256" } # Windows Firewall uses a special value for Any
+        default { return "0" }  # Unknown protocol
+    }
 }
 
 function Add-PInvokeTypes()
@@ -1968,7 +2308,7 @@ function Confirm-HasPreferredAddress([System.Net.NetworkInformation.NetworkInter
     $preferredIpv4Address = $Adapter.GetIPProperties().UnicastAddresses.Address |
         Where-Object { $_.AddressFamily -eq [System.Net.Sockets.AddressFamily]::InterNetwork }
     return ($preferredIpv4Address -and ![IPAddress]::IsLoopback($preferredIpv4Address) `
-        -and !(Confirm-IsLinkLocal -Ip $preferredIpv4Address))
+            -and !(Confirm-IsLinkLocal -Ip $preferredIpv4Address))
 }
 
 function Confirm-PhysicalNetworkType([System.Net.NetworkInformation.NetworkInterface] $Adapter)
@@ -1979,12 +2319,12 @@ function Confirm-PhysicalNetworkType([System.Net.NetworkInformation.NetworkInter
     if ($isConnectorPresent)
     {
         $physicalNetworkType = @([System.Net.NetworkInformation.NetworkInterfaceType]::Ethernet,
-                            [System.Net.NetworkInformation.NetworkInterfaceType]::FastEthernetT,
-                            [System.Net.NetworkInformation.NetworkInterfaceType]::FastEthernetFx,
-                            [System.Net.NetworkInformation.NetworkInterfaceType]::GigabitEthernet,
-                            [System.Enum]::Parse([System.Net.NetworkInformation.NetworkInterfaceType], 55),
-                            [System.Net.NetworkInformation.NetworkInterfaceType]::Wireless80211,
-                            [System.Enum]::Parse([System.Net.NetworkInformation.NetworkInterfaceType], 161))
+            [System.Net.NetworkInformation.NetworkInterfaceType]::FastEthernetT,
+            [System.Net.NetworkInformation.NetworkInterfaceType]::FastEthernetFx,
+            [System.Net.NetworkInformation.NetworkInterfaceType]::GigabitEthernet,
+            [System.Enum]::Parse([System.Net.NetworkInformation.NetworkInterfaceType], 55),
+            [System.Net.NetworkInformation.NetworkInterfaceType]::Wireless80211,
+            [System.Enum]::Parse([System.Net.NetworkInformation.NetworkInterfaceType], 161))
         return $physicalNetworkType.Contains($Adapter.NetworkInterfaceType)
     }
 }
@@ -2086,7 +2426,7 @@ function Check-DownloadCacheHostServer ([string] $CacheHost)
 
     Write-Progress -Activity $progressActivity -Status "Download using MCC URL" -PercentComplete 50
     $mccServers = $CacheHost -split ","
-    foreach($mccServer in $mccServers)
+    foreach ($mccServer in $mccServers)
     {
         $mccUrl = Get-MccDownloadTestUrl -CacheHost $mccServer
         try
@@ -2133,61 +2473,39 @@ function Get-MccDownloadTestUrl([string] $CacheHost)
 
 function Check-DownloadPercentageCacheHost()
 {
-    $outputName = "Percentage of Download using DOCacheHost"
+    $outputName = "Connected cache results this month"
     $progressActivity = "Calculating Percentage of Download"
     $result = [TestResult]::Fail
     $percentageCacheServer = 0
+    $details = [string]::Empty
 
     Write-Progress -Activity $progressActivity -Status "Get DeliveryOptimization Download Information" -PercentComplete 10
-    $downloadInformation = Get-DeliveryOptimizationPerfSnapThisMonth
-    if(-not $downloadInformation)
+    try
     {
-        return [pscustomobject] @{ Name = $outputName; Result = $result; Details = "Unable to get results from Get-DeliveryOptimizationPerfSnapThisMonth." }
-    }
+        $downloadInformation = Get-DeliveryOptimizationPerfSnapThisMonth
+        if (-not $downloadInformation)
+        {
+            return [pscustomobject] @{ Name = $outputName; Result = $result; Details = "Unable to get results from Get-DeliveryOptimizationPerfSnapThisMonth." }
+        }
 
-    Write-Progress -Activity $progressActivity -Status "Calculate Percentage of CacheServer" -PercentComplete 50
-    if ($downloadInformation.DownloadCacheHostBytes -ne 0)
-    {
-        $percentageCacheServer = 100 * ($downloadInformation.DownloadCacheHostBytes / ($downloadInformation.DownloadHttpBytes + $downloadInformation.DownloadLanBytes + $downloadInformation.DownloadInternetBytes))
-        $percentageCacheServer = [math]::Round($percentageCacheServer, 2)
-        $description = "This device has downloaded content from MCC this month. To improve the efficiency, check the 'DelayCacheServer' configuration below."
-    }
-    else
-    {
-        $description = "This device has not downloaded content from MCC this month."
-    }
+        Write-Progress -Activity $progressActivity -Status "Calculate Percentage of CacheServer" -PercentComplete 50
+        if ($downloadInformation.DownloadCacheHostBytes -ne 0)
+        {
+            $percentageCacheServer = 100 * ($downloadInformation.DownloadCacheHostBytes / ($downloadInformation.DownloadHttpBytes + $downloadInformation.DownloadLanBytes + $downloadInformation.DownloadInternetBytes))
+            $percentageCacheServer = [math]::Round($percentageCacheServer, 2)
+        }
 
-    $result = "$percentageCacheServer%"
+        $result = "$percentageCacheServer%"
+    }
+    catch
+    {
+        $details = $_.Exception.Message
+        Write-Error $details
+    }
 
     Write-Progress -Activity $progressActivity -Status "Returning data" -Completed
-    return [pscustomobject] @{ Name = $outputName; Result = $result; Details = $description }
+    return [pscustomobject] @{ Name = $outputName; Result = $result; Details = $details }
 }
-
-function Check-DelayCacheServerFallbackPolicy($PolicyName, $RecommendedValue)
-{
-    $outputName = "Check $($PolicyName.Substring(2))"
-    $result = 0
-
-    $policyInfo = Get-PolicyData -PolicyCode $PolicyName
-
-    if ($policyInfo.Fail)
-    {
-        $description = $policyInfo.Details
-    }
-    elseif ($policyInfo.PolicyCodeValue)
-    {
-        $description = "$($policyInfo.Details) To improve % from Cache server try setting this value to $RecommendedValue seconds as a starting point."
-        $result = $policyInfo.PolicyCodeValue
-    }
-    else
-    {
-        $description = "$($policyInfo.Details) By increasing this value it may improve chances of foreground downloads to pull from MCC server. Try $RecommendedValue seconds as a starting point."
-    }
-
-
-    return [pscustomobject] @{ Name = $outputName; Result = $result; Details = $description }
-}
-
 
 #----------------------------------------------------------------------------------#
 # Aux Functions
@@ -2232,7 +2550,7 @@ function Check-ModuleIsInstalled([string] $Module)
         else
         {
             # If module is not imported, but available on disk
-            $checkModuleAvailableDisk = Get-Module -ListAvailable | Where-Object {$_.Name -eq $Module}
+            $checkModuleAvailableDisk = Get-Module -ListAvailable | Where-Object { $_.Name -eq $Module }
 
             if ($checkModuleAvailableDisk)
             {
@@ -2260,33 +2578,49 @@ function Check-ModuleIsInstalled([string] $Module)
 # Heath Checker:
 function Invoke-HealthChecker()
 {
-    Print-Title " Device Health Check:"
-    Write-Host ""
-    Print-SubTitle "Device Settings"
-
+    # Device Settings:
     $deviceSettings = @()
     $deviceSettings += Check-DownloadMode
     $deviceSettings += Check-Service -ServiceName "dosvc"
     $deviceSettings += Check-CacheFolder
     $deviceSettings += Check-KeyAccess
     $deviceSettings += Check-Vpn
-    Format-ResultObject $deviceSettings
 
-    Print-SubTitle "Hardware Settings"
+    if ($AsObjects)
+    {
+        Write-Output $deviceSettings
+    }
+    else
+    {
+        Print-Title " Device Health Check:"
+        Write-Host ""
+        Print-SubTitle "Device Settings"
+        Format-ResultObject $deviceSettings
+    }
+
+    # Hardware Settings:
     $hardwareCheck = @()
     $hardwareCheck += Check-RAMRequired
     $hardwareCheck += Check-DiskRequired
     $hardwareCheck += Check-PowerBattery
-    Format-ResultObject $hardwareCheck
+    if ($AsObjects)
+    {
+        Write-Output $hardwareCheck
+    }
+    else
+    {
+        Print-SubTitle "Hardware Settings"
+        Format-ResultObject $hardwareCheck
+    }
 
-    Print-SubTitle "Connection Check"
+    # Connection Check:
     Write-Progress -Activity "Connection Check" -Status "Checking net interface" -PercentComplete 0
     $connectionCheck = @()
     $connectionCheck += Check-NetInterface
     Write-Progress -Activity "Connection Check" -Status "Testing port 7680" -PercentComplete 15
-    $connectionCheck += Test-Port -Port 7680           # 7680 - DO port
-    Write-Progress -Activity "Connection Check" -Status "Testing port 7680" -PercentComplete 30
-    $connectionCheck += Test-Port -Port 3544 -Optional # 3544 - Teredo port
+    $connectionCheck += Test-Port -Port 7680 -Protocol "TCP" # 7680 - DO port
+    Write-Progress -Activity "Connection Check" -Status "Testing port 3544" -PercentComplete 30
+    $connectionCheck += Test-Port -Port 3544 -Protocol "UDP" -Outbound -Optional # 3544 - Teredo port (outbound)
     Write-Progress -Activity "Connection Check" -Status "Testing internet connection" -PercentComplete 45
     $connInformation = Test-InternetInfo
     $connectionCheck += $connInformation
@@ -2298,7 +2632,7 @@ function Invoke-HealthChecker()
         $connectionCheck += Check-ByteRange
 
         Write-Progress -Activity "Connection Check" -Status "Checking hostnames" -PercentComplete 75
-        foreach($hostName in $hostNames)
+        foreach ($hostName in $hostNames)
         {
             $connectionCheck += Test-Hostname -HostName $hostName
         }
@@ -2312,7 +2646,7 @@ function Invoke-HealthChecker()
         $connectionCheck += [pscustomobject] @{ Name = "HTTP Byte-Range Support"; Result = $result; Details = ($description + "HTTP Byte-Range Support") }
 
         #Test-Hostname:
-        foreach($hostName in $hostNames)
+        foreach ($hostName in $hostNames)
         {
             $connectionCheck += [pscustomobject] @{ Name = "Host Connection"; Result = $result; Details = ($description + $hostName) }
         }
@@ -2320,58 +2654,422 @@ function Invoke-HealthChecker()
 
     Write-Progress -Activity "Connection Check" -Status "Showing results" -Completed
 
-    Format-ResultObject $connectionCheck
+    if ($AsObjects)
+    {
+        Write-Output $connectionCheck
+    }
+    else
+    {
+        Print-SubTitle "Connection Check"
+        Format-ResultObject $connectionCheck
+    }
+
 }
 
 # P2P Check:
 function Invoke-P2PHealthChecker()
 {
-    Print-Title " P2P Health, Errors, Configuration:"
-    Write-Host ""
-    Print-SubTitle "Peer Validation"
-
     $peerEfficiency = Check-PeerEfficiency
-    Write-Host "`n$($peerEfficiency.Peer_Info)  $($peerEfficiency.Description)"
-
-    #***** Check Errors Found  *****#
-    Write-Host ""
-    if($PSVersionTable.PSVersion.Major -lt 7) { Write-Host "" } # Adding an extra breakline in PS5 to keep the pattern of the next header
-
-    Print-SubTitle "Errors Found (excluding transient errors)"
-    $errorsFound = Get-PeerLogErrors
-    if($errorsFound)
+    if ($AsObjects)
     {
-        $errorsFound | Format-Table -Wrap -Autosize -Property @{Label='Error Code'; e={"0x{0:X}" -f $_.ErrorCode}}, Description
+        [pscustomobject] @{ Name = $peerEfficiency.Peer_Info; Result = $peerEfficiency.Description; Details = [string]::Empty }
     }
     else
     {
-        Write-Host "  No errors Found!"
+        Print-Title " P2P Health, Errors, Configuration:"
+        Write-Host "`n--> $($peerEfficiency.Peer_Info)  $($peerEfficiency.Description)`n"
+    }
+
+
+    #***** Check Errors Found  *****#
+    if ($PSVersionTable.PSVersion.Major -lt 7) { Write-Host "" } # Adding an extra breakline in PS5 to keep the pattern of the next header
+
+    $errorsFound = Get-PeerLogErrors
+    if ($AsObjects)
+    {
+        if (-not $errorsFound)
+        {
+            [pscustomobject] @{ Name = "Errors Found (excluding transient errors)"; Result = " No errors Found!"; Details = [string]::Empty }
+        }
+        else
+        {
+            foreach ($errorFound in $errorsFound)
+            {
+                [pscustomobject] @{ Name = "Errors Found (excluding transient errors)"; Result = $errorFound.ErrorCode; Details = $errorFound.Description }
+            }
+        }
+    }
+    else
+    {
+        Print-SubTitle "Errors Found (excluding transient errors)"
+        if ($errorsFound)
+        {
+            $errorsFound | Format-Table -Wrap -Autosize -Property @{Label = 'Error Code'; e = { "0x{0:X}" -f $_.ErrorCode } }, Description
+        }
+        else
+        {
+            Write-Host " No errors Found!`n"
+        }
     }
 
     #***** Get DOPolicies *****#
-
-    Print-SubTitle "Policy Settings"
-    Get-DOPolicies -ErrorsFound $errorsFound | Format-Table -Wrap -Property @{Label='Name'; e={ "$($_.Name)  " } ; Align='Left'; },
-    @{Label='Configuration'; e={ if ($_.Configuration) { " $($_.Configuration)  " } else { " Not Set " } }; Align='Center' ; },
-    @{Label='More Info'; e={ if ($_.PolicySuggestion) { $color = "93"; $e = [char]27; "$e[${color}m$($_.MoreInfo)${e}[0m" } else { $_.MoreInfo } } ; }
+    $policies = Get-DOPolicies -ErrorsFound $errorsFound
+    if ($AsObjects)
+    {
+        foreach ($policy in $policies)
+        {
+            [pscustomobject] @{ Name = $policy.Name; Result = $policy.Configuration; Details = $policy.MoreInfo }
+        }
+    }
+    else
+    {
+        Print-SubTitle "P2P Policy Settings"
+        $policies | Format-Table -Wrap -Property @{Label = 'Name'; e = { "$($_.Name)  " } ; Align = 'Left'; },
+        @{Label = 'Configuration'; e = { if ($_.Configuration) { " $($_.Configuration)  " } else { " Not Set " } }; Align = 'Center' ; },
+        @{Label = 'Details'; e = { if ($_.PolicySuggestion) { $color = "93"; $e = [char]27; "$e[${color}m$($_.MoreInfo)${e}[0m" } else { $_.MoreInfo } } ; }
+    }
 }
 
 # MCC Check:
 function Invoke-MCCHealthChecker()
 {
-    Print-Title " MCC Device Setup:"
+    $downloadPercentage = Check-DownloadPercentageCacheHost
+    if ($AsObjects)
+    {
+        Write-Output $downloadPercentage
+    }
+    else
+    {
+        Print-Title " Connected Cache Setup and Configuration:"
+        Write-Host "`n--> $($downloadPercentage.Name):  $($downloadPercentage.Result)`n"
+    }
+
+    $cacheHostInfo = Check-ConfiguredCacheHostServer
+    $cacheHost = $cacheHostInfo.Result
+    if ([string]::IsNullOrEmpty($cacheHost))
+    {
+        $cacheHostInfo.Result = "  Not Set  "
+    }
 
     $mccCheck = @()
-    $mccCheck += Check-ConfiguredCacheHostServer
-    $mccCheck += Check-DownloadCacheHostServer -CacheHost $mccCheck[0].MCCHost
-    Format-ResultObject $mccCheck
+    $mccCheck += $cacheHostInfo
+    $mccCheck += Check-DownloadCacheHostServer -CacheHost $cacheHost
 
-    Print-Title " MCC Results on this Device:"
+    if ($AsObjects)
+    {
+        Write-Output $mccCheck
+    }
+    else
+    {
+        Print-SubTitle "Connected Cache Setup"
+        Format-ResultObject -Object $mccCheck -Width 20
+    }
+
     $mccResults = @()
-    $mccResults += Check-DownloadPercentageCacheHost
-    $mccResults += Check-DelayCacheServerFallbackPolicy -PolicyName "DODelayCacheServerFallbackForeground" -RecommendedValue 30
-    $mccResults += Check-DelayCacheServerFallbackPolicy -PolicyName "DODelayCacheServerFallbackBackground" -RecommendedValue 90
-    Format-ResultObject $mccResults
+    $cacheHostPolicy = (Get-PolicyData -PolicyCode "DOCacheHost").PolicyCodeValue
+    if ([string]::IsNullOrEmpty($cacheHostPolicy))
+    {
+        $cacheHostPolicy = "Not Set"
+    }
+    $mccResults += [pscustomobject] @{ Name = "Cache server hostname"; Result = $cacheHostPolicy; Details = "Identify the cachehost server. 'https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#cache-server-hostname'" }
+
+    $cacheHostSource = (Get-PolicyData -PolicyCode "DOCacheHostSource").PolicyCodeValue
+    if ([string]::IsNullOrEmpty($cacheHostSource))
+    {
+        $cacheHostSource = "Not Set"
+    }
+    $mccResults += [pscustomobject] @{ Name = "Cache server hostname source"; Result = $cacheHostSource; Details = "Identify the cachehost server source. 'https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#cache-server-hostname-source'" }
+
+    $delayFallbackForeground = (Get-PolicyData -PolicyCode "DODelayCacheServerFallbackForeground").PolicyCodeValue
+    if ([string]::IsNullOrEmpty($delayFallbackForeground))
+    {
+        $delayFallbackForeground = "Not Set"
+    }
+    $mccResults += [pscustomobject] @{ Name = "Delay foreground download cache server fallback"; Result = $delayFallbackForeground; Details = "Delay the fallback to the HTTP source for foreground downloads. 'https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs'" }
+
+    $delayFallbackBackground = (Get-PolicyData -PolicyCode "DODelayCacheServerFallbackBackground").PolicyCodeValue
+    if ([string]::IsNullOrEmpty($delayFallbackBackground))
+    {
+        $delayFallbackBackground = "Not Set"
+    }
+    $mccResults += [pscustomobject] @{ Name = "Delay background download cache server fallback"; Result = $delayFallbackBackground; Details = "Delay the fallback to the HTTP source for background downloads. 'https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs'" }
+
+    $policyInfo = Get-DODisallowCacheServerPolicyInWin11
+    $mccResults += [pscustomobject] @{ Name = "Disallow downloads from a cachehost server when connected via VPN"; Result = $policyInfo.DisallowMccOnVpn; Details = "Turn off the ability to download from a cachehost server. 'https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs'" }
+
+    if ($AsObjects)
+    {
+        Write-Output $mccResults
+    }
+    else
+    {
+        Print-SubTitle "Connected Cache Policy Settings"
+        $mccResults | Format-Table -Wrap -Property @{ Label = "Name"; Expression = { $_.Name }; Align = 'left'; Width = 30; },
+        @{Label = 'Configuration'; Expression = { $_.Result; }; Align = 'center'; },
+        @{Label = "Details"; Expression = { "$($_.Details) `n" }; Align = 'left'; }
+    }
+}
+
+#----------------------------------------------------------------------------------#
+# Support Bundle Generation
+function New-SupportBundle
+{
+    param
+    (
+        [switch] $ReproduceIssueWithVerboseLogs
+    )
+
+    Write-Host "`n========================================" -ForegroundColor Cyan
+    Write-Host "  Delivery Optimization Support Bundle  " -ForegroundColor Cyan
+    Write-Host "========================================`n" -ForegroundColor Cyan
+
+    # Create temporary folder with timestamp
+    $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+    $tempDir = Join-Path $env:TEMP "dosvc-diag-$(hostname)-$timestamp"
+
+    Write-Host "Creating temporary directory: $tempDir" -ForegroundColor Yellow
+    New-Item -ItemType Directory -Path $tempDir -Force | Out-Null
+    Write-Host "Temporary directory created successfully.`n" -ForegroundColor Green
+
+    try
+    {
+        # Step 1: Capture existing DO logs
+        Write-Host "[Step 1/12] Capturing and converting existing Delivery Optimization logs..." -ForegroundColor Yellow
+        try
+        {
+            Get-DeliveryOptimizationLog -Flush | Set-Content (Join-Path $tempDir "logs-dosvc-existing.txt")
+            Write-Host "  Existing logs captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture existing logs: $($_.Exception.Message)"
+        }
+
+        # Step 2: Capture DO status
+        Write-Host "`n[Step 2/12] Capturing Delivery Optimization status..." -ForegroundColor Yellow
+        try
+        {
+            Get-DeliveryOptimizationStatus | Out-File (Join-Path $tempDir "status-dosvc.txt") -Width 4096
+            Write-Host "  Status captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture status: $($_.Exception.Message)"
+        }
+
+        # Step 3: Capture DO performance snapshot
+        Write-Host "`n[Step 3/12] Capturing Delivery Optimization performance snapshot..." -ForegroundColor Yellow
+        try
+        {
+            Get-DeliveryOptimizationPerfSnapThisMonth | Out-File (Join-Path $tempDir "perfsnap-dosvc.txt")
+            Write-Host "  Performance snapshot captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture performance snapshot: $($_.Exception.Message)"
+        }
+
+        # Step 4: Capture DO configuration
+        Write-Host "`n[Step 4/12] Capturing Delivery Optimization configuration..." -ForegroundColor Yellow
+        try
+        {
+            Get-DOConfig -Verbose 4>&1 | Out-File (Join-Path $tempDir "config-dosvc.txt") -Width 4096
+            Write-Host "  Configuration captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture configuration: $($_.Exception.Message)"
+        }
+
+        # Step 5: Capture network configuration
+        Write-Host "`n[Step 5/12] Capturing network configuration (ipconfig /all)..." -ForegroundColor Yellow
+        try
+        {
+            ipconfig /all | Out-File (Join-Path $tempDir "network-ipconfig.txt")
+            Write-Host "  Network configuration captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture network configuration: $($_.Exception.Message)"
+        }
+
+        # Step 6: Capture NLM network data
+        Write-Host "`n[Step 6/12] Capturing NLM network data..." -ForegroundColor Yellow
+        try
+        {
+            $nlmQueryOutputFile = Join-Path $tempDir "network-nlm-data.txt"
+            netsh nlm query all $nlmQueryOutputFile
+            Write-Host "  NLM network data captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture NLM network data: $($_.Exception.Message)"
+        }
+
+        # Step 7: Capture NLM cost
+        Write-Host "`n[Step 7/12] Capturing NLM cost..." -ForegroundColor Yellow
+        try
+        {
+            netsh nlm show cost | Out-File (Join-Path $tempDir "network-nlm-cost.txt")
+            Write-Host "  NLM cost captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture NLM cost: $($_.Exception.Message)"
+        }
+
+        # Step 8: Capture proxy settings
+        Write-Host "`n[Step 8/12] Capturing proxy settings..." -ForegroundColor Yellow
+        try
+        {
+            $proxyInfo = @()
+            $proxyInfo += "=== WinHTTP Proxy Settings ==="
+            $proxyInfo += netsh winhttp show proxy
+            $proxyInfo += "`n=== Internet Explorer Proxy Settings ==="
+            $proxyInfo += Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" |
+                Select-Object ProxyEnable, ProxyServer, ProxyOverride, AutoConfigURL | Out-String
+            $proxyInfo | Out-File (Join-Path $tempDir "network-proxy-settings.txt")
+            Write-Host "  Proxy settings captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture proxy settings: $($_.Exception.Message)"
+        }
+
+        # Step 9: Export DoSvc registry key
+        Write-Host "`n[Step 9/12] Exporting DoSvc registry key..." -ForegroundColor Yellow
+        try
+        {
+            $regExportPath = Join-Path $tempDir "dosvc-registry.reg"
+            reg export "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc" $regExportPath /y | Out-Null
+            Write-Host "  DoSvc registry key exported successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to export DoSvc registry key: $($_.Exception.Message)"
+        }
+
+        # Step 10: Run troubleshooter diagnostics and capture output
+        Write-Host "`n[Step 10/12] Running troubleshooter diagnostics..." -ForegroundColor Yellow
+        try
+        {
+            Write-Host "  Script path: $PSCommandPath" -ForegroundColor Yellow
+            & $PSCommandPath -AsObjects | Format-List | Out-File (Join-Path $tempDir "troubleshooter-output.txt") -Width 4096
+            Write-Host "  Troubleshooter output captured successfully." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture troubleshooter output: $($_.Exception.Message)"
+        }
+
+        # Step 11: Handle verbose logging and reproduction (if requested)
+        if ($ReproduceIssueWithVerboseLogs)
+        {
+            Write-Host "`n[Step 11/12] Enabling verbose logging for issue reproduction..." -ForegroundColor Yellow
+            try
+            {
+                Enable-DeliveryOptimizationVerboseLogs -Force
+                Write-Host "  Verbose logging enabled successfully." -ForegroundColor Green
+
+                # Delete old timestamped log files to start fresh (old logs captured in Step 1).
+                # If DoSvc is stopped, delete all; otherwise keep the latest (in use).
+                $workingDir = (Get-DOConfig -Verbose).WorkingDirectory
+                $logsFolder = Join-Path (Split-Path $workingDir -Parent) "Logs"
+                if (Test-Path $logsFolder)
+                {
+                    Write-Host "  Deleting any old log files in: $logsFolder" -ForegroundColor Yellow
+                    $existingLogs = Get-ChildItem -Path $logsFolder -Filter "dosvc.*.etl" -ErrorAction SilentlyContinue |
+                        Sort-Object LastWriteTime -Descending
+                    $doSvcStatus = (Get-Service -Name "DoSvc" -ErrorAction SilentlyContinue).Status
+                    if ($doSvcStatus -ne 'Stopped')
+                    {
+                        $existingLogs = $existingLogs | Select-Object -Skip 1
+                    }
+                    if ($existingLogs)
+                    {
+                        Write-Host "  Deleting $($existingLogs.Count) old log file(s)..." -ForegroundColor Yellow
+                        $existingLogs | Remove-Item -Force -ErrorAction SilentlyContinue
+                        Write-Host "  Old log files deleted." -ForegroundColor Green
+                    }
+                    else
+                    {
+                        Write-Host "  No old log files found; nothing to delete." -ForegroundColor Yellow
+                    }
+                }
+                else
+                {
+                    Write-Host "  Logs folder not found; skipping old log deletion." -ForegroundColor Yellow
+                }
+
+                Write-Host "`n" -NoNewline
+                Write-Host "==================================================================================" -ForegroundColor Cyan
+                Write-Host "  Please reproduce the issue now, then press ENTER to continue..." -ForegroundColor Cyan
+                Write-Host "==================================================================================" -ForegroundColor Cyan
+                Read-Host
+
+                Write-Host "`nStopping Delivery Optimization service..." -ForegroundColor Yellow
+                Stop-Service -Name "DoSvc" -Force -ErrorAction SilentlyContinue
+                Start-Sleep -Seconds 2
+                Write-Host "  Service stopped successfully." -ForegroundColor Green
+
+                Write-Host "`nCapturing reproduction logs..." -ForegroundColor Yellow
+                Get-DeliveryOptimizationLog -Flush | Set-Content (Join-Path $tempDir "logs-dosvc-repro.txt")
+                Write-Host "  Reproduction logs captured successfully." -ForegroundColor Green
+
+                Write-Host "`nDisabling verbose logging..." -ForegroundColor Yellow
+                Disable-DeliveryOptimizationVerboseLogs -Force
+                Write-Host "  Verbose logging disabled successfully." -ForegroundColor Green
+            }
+            catch
+            {
+                Write-Warning "  Failed during verbose logging/reproduction: $($_.Exception.Message)"
+                try
+                {
+                    Disable-DeliveryOptimizationVerboseLogs -Force -ErrorAction SilentlyContinue
+                }
+                catch
+                {
+                    Write-Warning "  Failed to disable verbose logging: $($_.Exception.Message)"
+                }
+            }
+        }
+        else
+        {
+            Write-Host "`n[Step 11/12] Skipping verbose logging (not requested)." -ForegroundColor Gray
+        }
+
+        # Step 9: Zip the contents
+        Write-Host "`n[Step 12/12] Creating support bundle archive..." -ForegroundColor Yellow
+        $zipPath = $tempDir + ".zip"
+
+        try
+        {
+            Compress-Archive -Path "$tempDir\*" -DestinationPath $zipPath -Force
+            Write-Host "  Archive created successfully.`n" -ForegroundColor Green
+
+            # Show the result
+            Write-Host "========================================" -ForegroundColor Green
+            Write-Host "  Support Bundle Generated Successfully  " -ForegroundColor Green
+            Write-Host "========================================" -ForegroundColor Green
+            Write-Host "`nSupport bundle location:"
+            Write-Host "  $zipPath" -ForegroundColor Green
+            Write-Host "`nPlease provide this zip file to Microsoft for analysis.`n" -ForegroundColor Cyan
+        }
+        catch
+        {
+            Write-Error "Failed to create archive: $($_.Exception.Message)"
+        }
+    }
+    finally
+    {
+        # Clean up temporary directory
+        if (Test-Path $tempDir)
+        {
+            Write-Host "Cleaning up temporary directory..." -ForegroundColor Yellow
+            Remove-Item -Path $tempDir -Recurse -Force -ErrorAction SilentlyContinue
+            Write-Host "  Cleanup completed.`n" -ForegroundColor Green
+        }
+    }
 }
 
 #----------------------------------------------------------------------------------#
@@ -2386,7 +3084,22 @@ if (!$admin) { return }
 # The version numbers must follow the rules of semantic versioning. See here for more details: https://semver.org/
 $versionLine = Get-Content $MyInvocation.MyCommand.Definition -TotalCount 6 | Select-String '.VERSION'
 $version = [Version]($versionLine -split ' ')[1]
-Write-Host "Version $version"
+
+if ($AsObjects)
+{
+    [pscustomobject] @{ Name = "Script Version"; Result = $version; Details = [string]::Empty }
+}
+else
+{
+    Write-Host "Version $version"
+}
+
+# Handle Support Bundle Generation (mutually exclusive parameter set)
+if ($GenerateSupportBundle)
+{
+    New-SupportBundle -ReproduceIssueWithVerboseLogs:$ReproduceIssueWithVerboseLogs
+    return
+}
 
 $doConfig = Get-DOConfig -Verbose
 
@@ -2397,7 +3110,7 @@ $onlyHealthCheck = ($HealthCheck -and !$P2P -and !$MCC)
 
 if (-not $onlyHealthCheck)
 {
-    if($PSVersionTable.PSVersion.Major -gt 6)
+    if ($PSVersionTable.PSVersion.Major -gt 6)
     {
         $burntToastPreInstalled = Check-ModuleIsInstalled $moduleName
 
@@ -2422,8 +3135,8 @@ if (!$HealthCheck -and !$P2P -and !$MCC)
 else
 {
     if ($HealthCheck) { Invoke-HealthChecker }
-    if ($P2P){ Invoke-P2PHealthChecker }
-    if ($MCC){ Invoke-MCCHealthChecker }
+    if ($P2P) { Invoke-P2PHealthChecker }
+    if ($MCC) { Invoke-MCCHealthChecker }
 }
 
 #***** Remove Burnt Toast if it wasn't installed before in PS7 *****#
