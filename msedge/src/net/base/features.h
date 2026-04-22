@@ -146,6 +146,9 @@ NET_EXPORT BASE_DECLARE_FEATURE(kEnableTLS13EarlyData);
 // quality estimator (NQE).
 NET_EXPORT BASE_DECLARE_FEATURE(kNetworkQualityEstimator);
 
+// Enables caching of IsPrivateHost() results in NetworkQualityEstimator.
+NET_EXPORT BASE_DECLARE_FEATURE(kNetworkQualityEstimatorIsPrivateHostCache);
+
 // The maximum age in seconds of observations to be used for calculating the
 // HTTP RTT from the historical data.
 // Negative value means infinite. i.e. all data are used.
@@ -866,6 +869,8 @@ NET_EXPORT BASE_DECLARE_FEATURE(kIgnoreMemoryPressureForSslClientSessionCache);
 // equals sign and has another equals sign. Such cookies have an ambiguous
 // serialization.
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieParseRejectEmptyNameAmbiguous);
+
+NET_EXPORT BASE_DECLARE_FEATURE(kEnablePrivateVerificationTokens);
 
 }  // namespace net::features
 

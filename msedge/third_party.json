@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2193003,
+    "size": 2200018,
     "file_count": 183
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33199467,
-    "file_count": 4033
+    "size": 33220908,
+    "file_count": 4035
   },
   {
     "name": "boringssl",
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161942065,
-    "file_count": 19061
+    "size": 161941987,
+    "file_count": 19058
   },
   {
     "name": "dbus",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16171991,
-    "file_count": 1942
+    "size": 16205055,
+    "file_count": 1944
   },
   {
     "name": "entity_extraction",
@@ -351,7 +351,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 29054,
+    "size": 29251,
     "file_count": 3
   },
   {
@@ -386,8 +386,8 @@
   },
   {
     "name": "libc++",
-    "size": 12469930,
-    "file_count": 1770
+    "size": 12471160,
+    "file_count": 1771
   },
   {
     "name": "libc++abi",
@@ -446,8 +446,8 @@
   },
   {
     "name": "libusb",
-    "size": 833409,
-    "file_count": 62
+    "size": 834613,
+    "file_count": 63
   },
   {
     "name": "libwebp",
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19643883,
+    "size": 19644395,
     "file_count": 19
   },
   {
@@ -591,8 +591,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4261309,
-    "file_count": 601
+    "size": 4287201,
+    "file_count": 602
   },
   {
     "name": "perl",
@@ -651,8 +651,8 @@
   },
   {
     "name": "rust",
-    "size": 1677010,
-    "file_count": 214
+    "size": 1677557,
+    "file_count": 219
   },
   {
     "name": "screen-ai",
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3484323,
+    "size": 3483878,
     "file_count": 1201
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7462137,
+    "size": 7473348,
     "file_count": 194
   },
   {

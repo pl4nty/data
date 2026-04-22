@@ -118,15 +118,6 @@ template("edge_overlay_config_symbols") {
     forward_variables_from(invoker, "*", [])
 
     # Edge overlays:
-    if (is_win) {
-      if (is_clang) {
-        cflags -= [
-          # Pump: Include the below arg when an llvm change happens.
-          # Tracked with bug 42316201
-          "-gno-codeview-command-line",
-        ]
-      }
-    }
     if (is_clang && is_win && is_component_build) {
       # This is enabled upstream but not in component builds
       cflags += [ "-gomit-unreferenced-methods" ]
