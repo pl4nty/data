@@ -16,7 +16,7 @@ if (string.find)(l_0_0, "\\lsass.exe", 1, true) then
     for l_0_6,l_0_7 in ipairs(l_0_1) do
       if l_0_7.image_path ~= nil and (mp.bitand)(l_0_7.reason_ex, 2) == 2 then
         local l_0_8 = (string.lower)(l_0_7.image_path)
-        if (string.find)(l_0_8, "\\dell secureworks\\red cloak\\[^\\]+\\entwine.exe") or (string.find)(l_0_8, "\\program files\\morphisec\\bin\\protectorservice64.exe", 1, true) or (string.find)(l_0_8, "\\sentinelone\\sentinel agent[^\\]+\\sentinelagent.exe") then
+        if (string.find)(l_0_8, "\\dell secureworks\\red cloak\\[^\\]+\\entwine.exe") or (string.find)(l_0_8, "\\program files\\morphisec\\bin\\protectorservice64.exe", 1, true) or (string.find)(l_0_8, "\\programdata\\wiz\\sensor\\host-store\\mount\\wizsensorengine.exe", 1, true) or (string.find)(l_0_8, "\\sentinelone\\sentinel agent[^\\]+\\sentinelagent.exe") then
           return mp.CLEAN
         end
       end
