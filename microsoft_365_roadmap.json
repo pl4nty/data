@@ -1,10 +1,370 @@
 [
     {
+        "created": "2026-04-22T23:30:25",
+        "description": "Recipient groups in eSignature\u202fallow a\u202frecipient\u202fslot to be assigned to multiple people, such that any\u202fone\u202f of those people can fulfil the signing requirement on behalf of the group.  ",
+        "id": 560822,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: eSignature for Microsoft 365 - Recipient groups"
+    },
+    {
+        "created": "2026-04-22T23:30:25",
+        "description": "Users can now multi-select events on calendar surface and perform bulk operations like open, copy -paste, delete & categorize in #newoutlookforwindows, similar to classic Outlook.",
+        "id": 560698,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Multiselect events on calendar surface"
+    },
+    {
+        "created": "2026-04-22T23:30:25",
+        "description": "Users can now bulk select/deselect all calendars within a group on left rail in calendar in #newoutlookforwindows, similar to classic Outlook.",
+        "id": 560697,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Bulk Opening/Closing calendar groups in the left nav"
+    },
+    {
+        "created": "2026-04-22T23:30:25",
+        "description": "Users can now see colleagues\u2019 and direct reports\u2019 calendars in the left navigation by default\u2014without manual setup. #newoutlookforwindows",
+        "id": 560695,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Teammates Calendars in Left Nav in calendar"
+    },
+    {
+        "created": "2026-04-22T23:30:25",
+        "description": "OneDrive Sync supports syncing up to 1 million items on Windows devices, helping teams manage large document libraries and shared content at scale without compromising access across devices. This preview requires the Insiders ring and that devices meet minimum hardware and configuration requirements. Devices that don't meet these requirements continue to sync at the existing 300,000-item supported limit with no disruption.",
+        "id": 560549,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "OneDrive: Sync Support for up to 1 million items on Windows"
+    },
+    {
+        "created": "2026-04-22T23:30:25",
+        "description": "The Microsoft 365 Copilot mobile app will proactively send push notifications for common productivity workflows like 'Your Day at a Glance' and 'Items waiting for you', which send users to the respective Copilot response when opened. This feature taps into your Copilot Memory and will be available for users with Microsoft 365 Copilot licenses and can also be accessed once opening the Microsoft 365 Copilot app.",
+        "id": 560339,
+        "locale": null,
+        "modified": "2026-04-22T23:30:25",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Proactive push notifications for the Microsoft 365 Copilot mobile app"
+    },
+    {
         "created": "2026-04-21T23:00:01",
-        "description": "\nWhen a user performs a search on google.com from a work profile, Microsoft Edge can detect whether organization-specific results are available for that query. When relevant results are found, a banner is shown with a link to explore those work results. This builds on the existing experience already available on Bing and extends it to Google, helping users seamlessly access work-related information regardless of their search engine. Admins can control access to this feature using the EdgeWorkSearchBannerEnabled policy.",
+        "description": "When a user performs a search on google.com from a work profile, Microsoft Edge can detect whether organization-specific results are available for that query. When relevant results are found, a banner is shown with a link to explore those work results with Microsoft 365 Copilot. This builds on the existing experience already available on Bing and extends it to Google, helping users seamlessly access work-related information regardless of their search engine. Admins can control access to this feature using the EdgeWorkSearchBannerEnabled policy.",
         "id": 560823,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -46,7 +406,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Work Search Banner for Google\u201d"
+        "title": "Microsoft Edge: Work Search Banner for Google"
     },
     {
         "created": "2026-04-21T23:00:01",
@@ -829,7 +1189,7 @@
         "description": "Teams efficiency mode improves performance and responsiveness on hardware constrained devices by applying a reduced resource configuration by default, helping maintain meeting quality and responsiveness during collaboration.",
         "id": 560055,
         "locale": null,
-        "modified": "2026-04-20T18:45:45",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -838,6 +1198,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -850,12 +1219,24 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -874,6 +1255,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2501,10 +2885,10 @@
         "description": "When users have more than one Copilot-enabled account added to new Outlook, the Copilot side pane in Calendar will include an account dropdown that makes it clear which Copilot-enabled account you\u2019re using and lets you switch accounts without relying on Outlook UI\u2019s account context.",
         "id": 559991,
         "locale": null,
-        "modified": "2026-04-14T23:00:25",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -2519,6 +2903,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -2540,6 +2927,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -3575,9 +3965,9 @@
         "description": "Teams rooms on Windows supports Entra Resource Accounts for secure, passwordless sign-in that separates device and user identities. IT admins can migrate to Entra accounts easily with the migration wizard, and track progress using a dashboard in the Pro Management portal.",
         "id": 558853,
         "locale": null,
-        "modified": "2026-04-08T23:00:03",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9216,15 +9606,15 @@
     },
     {
         "created": "2026-03-10T23:00:58",
-        "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and new Outlook for Windows, Outlook for Mac and Outlook Mobile. Summaries of email attachments in Copilot chat will also be available in new Outlook for Windows, Outlook for Mac and Outlook Mobile.  #newoutlookforwindows",
+        "description": "Easily summarize your email with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and new Outlook for Windows, Outlook for Mac and Outlook Mobile. Summaries of email attachments in Copilot chat will also be available in new Outlook for Windows, Outlook for Mac and Outlook Mobile.  #newoutlookforwindows Updated April 21, 2026: We are no longer proceeding with this change at this time. We apologize for any inconvenience. ",
         "id": 558110,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "GCC"
@@ -10372,12 +10762,12 @@
         "description": "Copilot in Viva Glint now generates AI-powered summaries of employee survey results directly within Team Summary and Executive Summary reports, helping leaders quickly understand strengths, opportunities, and trends across their teams. Copilot Highlights surfaces key insights - such as notable score changes, benchmark comparisons, and response rate confidence - so leaders can move from data to action faster. With general availability, Copilot Highlights expands to support multilingual summaries, enabling global organizations to deliver AI-generated survey insights in their preferred language.",
         "id": 558111,
         "locale": null,
-        "modified": "2026-03-04T00:00:25",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11569,12 +11959,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557277,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11624,12 +12014,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557276,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16441,12 +16831,12 @@
         "description": "Teams town halls will soon provide support for a backup RTMP stream to keep a live broadcast running in the event of an interruption with the main stream.",
         "id": 554932,
         "locale": null,
-        "modified": "2026-02-26T23:45:10",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16465,6 +16855,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -16492,6 +16885,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -16563,9 +16959,9 @@
         "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
         "id": 553594,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18623,12 +19019,12 @@
         "description": "We're simplifying the Input Box in Copilot Chat by bringing together various user actions under the Plus menu (+). The unified Plus menu (+) will continue to allow users to add content to prompts, while also letting them access tools/agents and manage data sources used to ground Copilot.",
         "id": 552596,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19712,15 +20108,15 @@
     },
     {
         "created": "2026-01-28T00:00:53",
-        "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation.",
+        "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation. Updated April 22, 2026: We are moving this item back to In Development and will be relaunching after further updates. We apologize for any inconvenience. ",
         "id": 552592,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27549,9 +27945,9 @@
         "description": "Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode. ",
         "id": 530578,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31099,12 +31495,12 @@
         "description": "We\u2019re introducing cross-tenant group synchronization, a new capability that enables organizations to synchronize security groups across Microsoft Entra tenants. This feature simplifies collaboration scenarios by allowing shared access to resources across tenants while maintaining centralized group management. It also streamlines administration of multiple tenants by centralizing group membership control, reducing duplication and manual overhead.  ",
         "id": 518221,
         "locale": null,
-        "modified": "2025-12-12T00:15:16",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -40430,9 +40826,9 @@
         "description": "This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.",
         "id": 500872,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46129,15 +46525,15 @@
     },
     {
         "created": "2025-09-12T22:00:20",
-        "description": "Easily summarize your email and attachments with Copilot chat in a single click. This will be available to users with a Microsoft 365 Copilot license who have pinning enabled. This change is coming to both Classic and New Outlook for Windows #newoutlookforwindows Updated February 13, 2026: We previously marked this as Launched, but this feature is still rolling out. We apologize for the inconvenience. ",
+        "description": "Easily summarize your email and attachments with Copilot chat. This will be available to Android and iOS users with a Microsoft 365 Copilot license who have pinning enabled.  Updated April 21, 2026: We have cancelled rollout of this feature to Desktop, Mac, Web and both Classic and New Outlook for Windows at this time. We apologize for the inconvenience. ",
         "id": 503316,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46146,16 +46542,7 @@
                 "tagName": "Android"
             },
             {
-                "tagName": "Desktop"
-            },
-            {
                 "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
             },
             {
                 "tagName": "Outlook"
@@ -46178,16 +46565,7 @@
                     "tagName": "Android"
                 },
                 {
-                    "tagName": "Desktop"
-                },
-                {
                     "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -52489,9 +52867,9 @@
         "description": "Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters.",
         "id": 500242,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103783,10 +104161,10 @@
     },
     {
         "created": "2023-05-24T23:12:48",
-        "description": "<div><span>All participants in meetings are now able to start collaborative annotations. This will only be available in the new Microsoft Teams experience.</span> </div><div> </div>",
+        "description": "In Microsoft Teams meetings, participants who are not sharing their screen can request to start a collaborative annotation session while a screen or window is being shared. The active sharer (presenter) must approve the request before annotations start for everyone in the meeting. Organizers and co-organizers can control who can start annotations via a new Meeting Options setting under Participation (Everyone (default) or Active sharer).",
         "id": 89975,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-22T23:30:25",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -103858,7 +104236,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Ability for all participants to start collaborative annotations"
+        "title": "Microsoft Teams: Meeting participants can request collaborative annotation sessions (host approval\u00a0required)"
     },
     {
         "created": "2024-11-22T23:15:35",

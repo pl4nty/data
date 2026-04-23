@@ -397,12 +397,16 @@
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
             "UseLKG_AgentStatusSummary": true,
             "UseLKG_AutopilotV2DepStatus": true,
+            "UseLKG_CatalogAppsUpdateList": true,
             "UseLKG_DependentAppsInstallStatus": true,
             "UseLKG_DetectedMalware": true,
             "UseLKG_DetectedMalwareAggregate": true,
             "UseLKG_DetectedMalwareAggregateByState": true,
+            "UseLKG_DeviceEncryptionStatusesDetailV3": true,
             "UseLKG_DeviceRunStatesByScript": true,
             "UseLKG_EnrollmentActivityUser": true,
+            "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": true,
+            "UseLKG_RemediationRunSummary": true,
             "UseLKG_ScriptRunSummary": true
         }
     },
