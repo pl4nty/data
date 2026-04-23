@@ -22,6 +22,11 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
+        "FeatureFlagRefactorExperiment": {
+            "enableFeatures": [
+                "msNurturingFeatureFlagRefactor"
+            ]
+        },
         "FuncIntegrity": {
             "enableFeatures": [
                 "msFunctionIntegrityValidation"
