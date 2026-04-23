@@ -566,7 +566,7 @@
         "EnablePolicyPamoViewForFLS": true,
         "EnablePolicyPassCdpImageReferenceId": true,
         "EnablePolicyRetry": true,
-        "EnablePolicyTenantDbSync": true,
+        "EnablePolicyTenantDbSync": false,
         "EnablePolicyTimezoneForSchedule": true,
         "EnablePolicyUXFetchFLsRegionFromGraph": true,
         "EnablePolicyUXFilterANCFLSRegionFromGraph": true,
