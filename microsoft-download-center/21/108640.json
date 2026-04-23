@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DXVA Specification for APV",
+    "downloadDescription": "This specification defines DirectX Video Acceleration (DXVA) extensions for hardware-accelerated decoding of APV (Advanced Professional Video) content on Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DXVA Specification for APV.docx",
+            "url": "https://download.microsoft.com/download/8a51ccbd-bd1f-41a3-b5ab-0c9e681e58ef/DXVA Specification for APV.docx",
+            "size": "92583",
+            "version": "1.0",
+            "datePublished": "4/22/2026 9:58:46 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This specification defines DirectX Video Acceleration (DXVA) extensions for hardware-accelerated decoding of APV (Advanced Professional Video) content on Windows, covering off-host VLD profiles, picture parameter structures, tile control, and quantization matrix interfaces for D3D11 and D3D12.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA Specification for APV.docx"
+    ],
+    "detailsSection_file_size": [
+        "90.4 KB"
+    ],
+    "detailsSection_file_date": "4/22/2026",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108640",
+    "downloadPreload": true
+}
