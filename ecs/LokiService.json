@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260420.8.0",
-        "CalendarCompanionMsitVersion": "1.20260415.6.0",
+        "CalendarCompanionDFVersion": "1.20260421.5.0",
+        "CalendarCompanionMsitVersion": "1.20260417.8.0",
         "CalendarCompanionProdVersion": "1.20260411.6.1",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -971,6 +971,7 @@
             "fetchMyTeamQuery",
             "KnowYourTeamAgentQuery",
             "ExternalProfilesWithData_LPCExternalProfiles_DataQuery",
+            "CitationPanelWithData_LPCCitation_DataQuery",
             "useShouldShowPrivacyNoticeQuery",
             "DefaultTeamSearchQuery",
             "useFiltersConfigPeopleQuery",
@@ -1502,11 +1503,11 @@
         },
         "RouteEndpointThrottlingLimits_ByIp": 100,
         "RouteEndpointThrottlingLimits_ByIp_ByPath": {
-            "Notifications": 1500
+            "Notifications": 2500
         },
         "RouteEndpointThrottlingLimits_ByTenantsPerIp": 20,
         "RouteEndpointThrottlingLimits_ByTenantsPerIp_ByPath": {
-            "Notifications": 50
+            "Notifications": 1550
         },
         "RouteEndpointThrottlingLimits_ByVm": 5000,
         "RouteEndpointThrottlingLimits_ByVm_ByPath": {
@@ -2007,10 +2008,10 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260420.8.0",
+        "PeopleInTaskbarDFVersion": "1.20260421.5.0",
         "PeopleInTaskbarMsitVersion": "1.20260415.6.0",
         "PeopleInTaskbarProdVersion": "1.20260331.10.0",
-        "PeopleInTaskbarVersion": "1.20260331.10.0",
+        "PeopleInTaskbarVersion": "1.20260411.6.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {
