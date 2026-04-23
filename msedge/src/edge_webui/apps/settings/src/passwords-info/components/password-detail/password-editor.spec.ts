@@ -11,7 +11,7 @@ import { Updates } from '@microsoft/fast-element';
 import { PasswordServiceKey } from '../../../autofill-settings-shared/di/password-service-interface.js';
 import { ToastServiceKey } from '../../../autofill-settings-shared/toast-service/toast-service.js';
 import { PaymentServiceKey } from '../../../autofill-settings-shared/di/payment-service-interface.js';
-import { EdgePasswordCategory, type PasswordEditorModel, SavePasswordStatus } from '../../../autofill-settings-shared/types/password-model.js';
+import { type PasswordEditorModel, SavePasswordStatus } from '../../../autofill-settings-shared/types/password-model.js';
 import { setI18nText } from '../../../autofill-settings-shared/utils/TL-helper.js';
 import { Prefs } from '../../../autofill-settings-shared/constants/prefs.js';
 
@@ -72,8 +72,6 @@ describe('PasswordEditor Component Tests', () => {
             'passwordsUsernamePlaceholder': 'Enter username',
             'passwordsPasswordLabel': 'Password',
             'passwordsPasswordPlaceholder': 'Enter password',
-            'passwordCategoryBusiness': 'Business',
-            'passwordCategoryOther': 'Other',
         });
 
         // Reset all stubs

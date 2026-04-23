@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15920498,
+    "size": 15920609,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33220908,
+    "size": 33230077,
     "file_count": 4035
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161941987,
-    "file_count": 19058
+    "size": 162046280,
+    "file_count": 19105
   },
   {
     "name": "dbus",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16205055,
+    "size": 16213869,
     "file_count": 1944
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 43982324,
+    "size": 43983436,
     "file_count": 3329
   },
   {
@@ -471,7 +471,7 @@
   },
   {
     "name": "litert",
-    "size": 186992,
+    "size": 189116,
     "file_count": 67
   },
   {
@@ -491,7 +491,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292589,
+    "size": 292620,
     "file_count": 47
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4287201,
+    "size": 4287496,
     "file_count": 602
   },
   {
@@ -721,8 +721,8 @@
   },
   {
     "name": "tflite",
-    "size": 1724712,
-    "file_count": 533
+    "size": 1728442,
+    "file_count": 536
   },
   {
     "name": "tflite_support",
@@ -756,12 +756,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2697638,
+    "size": 2697416,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7473348,
+    "size": 7473190,
     "file_count": 194
   },
   {
