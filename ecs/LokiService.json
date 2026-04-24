@@ -1163,6 +1163,7 @@
         "IsDryRunMigration": true,
         "IsHighlightsBatchingEnabled": true,
         "IsLinkedInHighlightsTelemetryEnabled": true,
+        "IsNotifyEmailEnabled": true,
         "IsPresenceBatchingEnabled": true,
         "KeepAliveMax": 100,
         "LPCConfigProviderRefactoring": false,
