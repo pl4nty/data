@@ -37,6 +37,7 @@
         }
     },
     "CLI_MHS": {
+        "CoreThirdPartyLicenses_FeatureEnabled": false,
         "EmailRegex_BugFix": true,
         "HashedExitPin_SupportEnabled": false,
         "MAABluetooth_FeatureEnabled": true,
