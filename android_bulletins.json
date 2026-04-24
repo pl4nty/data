@@ -94402,112 +94402,12 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-12-01",
         "Published": "December 5, 2023",
-        "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-48425",
-        "References": "A-291138519",
-        "Severity": "High",
-        "Subcomponent": "U-Boot",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-12-01",
-        "Published": "December 5, 2023",
-        "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-48426",
-        "References": "A-286113302",
-        "Severity": "High",
-        "Subcomponent": "U-Boot",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-12-01",
-        "Published": "December 5, 2023",
-        "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-48424",
-        "References": "A-286458481",
-        "Severity": "High",
-        "Subcomponent": "U-Boot",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-12-01",
-        "Published": "December 5, 2023",
-        "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-6181",
-        "References": "A-291138116",
-        "Severity": "Moderate",
-        "Subcomponent": "U-Boot",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-12-01",
-        "Published": "December 5, 2023",
-        "Patch level": "2023-10-01",
-        "CVE": "CVE-2023-48417",
-        "References": "A-288311233",
-        "Severity": "Moderate",
-        "Subcomponent": "KeyChain",
-        "Component": "System"
+        "Patch level": "2023-10-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
         "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42536",
-        "References": "A-258698524",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
-        "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42537",
-        "References": "A-258699189",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
-        "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42541",
-        "References": "A-258698507",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
-        "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42538",
-        "References": "A-258698938",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
-        "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42540",
-        "References": "A-258699554",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-07-01",
-        "Published": "September 27, 2023",
-        "Patch level": "2023-07-01",
-        "CVE": "CVE-2022-42539",
-        "References": "A-258699550",
-        "Severity": "High",
-        "Subcomponent": "Secure Monitor",
-        "Component": "AMLogic"
+        "Patch level": "2023-07-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-06-01",
@@ -94517,331 +94417,22 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-04-01",
         "Published": "April 14, 2023",
-        "Patch level": "2023-01-01",
-        "Abbreviation": "RCE",
-        "Definition": "Remote code execution",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-04-01",
-        "Published": "April 14, 2023",
-        "Patch level": "2023-01-01",
-        "Abbreviation": "EoP",
-        "Definition": "Elevation of privilege",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-04-01",
-        "Published": "April 14, 2023",
-        "Patch level": "2023-01-01",
-        "Abbreviation": "ID",
-        "Definition": "Information disclosure",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-04-01",
-        "Published": "April 14, 2023",
-        "Patch level": "2023-01-01",
-        "Abbreviation": "DoS",
-        "Definition": "Denial of service",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2023-04-01",
-        "Published": "April 14, 2023",
-        "Patch level": "2023-01-01",
-        "Abbreviation": "N/A",
-        "Definition": "Classification not available",
-        "Component": "Security patches"
+        "Patch level": "2023-01-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-12-01",
         "Published": "December 5, 2022",
-        "Patch level": "2022-10-05",
-        "Abbreviation": "RCE",
-        "Definition": "Remote code execution",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-12-01",
-        "Published": "December 5, 2022",
-        "Patch level": "2022-10-05",
-        "Abbreviation": "EoP",
-        "Definition": "Elevation of privilege",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-12-01",
-        "Published": "December 5, 2022",
-        "Patch level": "2022-10-05",
-        "Abbreviation": "ID",
-        "Definition": "Information disclosure",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-12-01",
-        "Published": "December 5, 2022",
-        "Patch level": "2022-10-05",
-        "Abbreviation": "DoS",
-        "Definition": "Denial of service",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-12-01",
-        "Published": "December 5, 2022",
-        "Patch level": "2022-10-05",
-        "Abbreviation": "N/A",
-        "Definition": "Classification not available",
-        "Component": "Security patches"
+        "Patch level": "2022-10-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-10-01",
         "Published": "October 20, 2022",
-        "Patch level": "2022-07-05",
-        "Abbreviation": "RCE",
-        "Definition": "Remote code execution",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-10-01",
-        "Published": "October 20, 2022",
-        "Patch level": "2022-07-05",
-        "Abbreviation": "EoP",
-        "Definition": "Elevation of privilege",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-10-01",
-        "Published": "October 20, 2022",
-        "Patch level": "2022-07-05",
-        "Abbreviation": "ID",
-        "Definition": "Information disclosure",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-10-01",
-        "Published": "October 20, 2022",
-        "Patch level": "2022-07-05",
-        "Abbreviation": "DoS",
-        "Definition": "Denial of service",
-        "Component": "Security patches"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-10-01",
-        "Published": "October 20, 2022",
-        "Patch level": "2022-07-05",
-        "Abbreviation": "N/A",
-        "Definition": "Classification not available",
-        "Component": "Security patches"
+        "Patch level": "2022-07-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
         "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20363",
-        "References": "A-210068010*",
-        "Type": "EoP",
-        "Severity": "High",
-        "Component": "AMLogic",
-        "Subcomponent": "U-Boot"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39692",
-        "References": "A-209611539",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39796",
-        "References": "A-205595291",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20004",
-        "References": "A-179699767",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20005",
-        "References": "A-219044664",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20007",
-        "References": "A-211481342",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39700",
-        "References": "A-201645790",
-        "Type": "ID",
-        "Severity": "Moderate",
-        "Updated AOSP versions": "10",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39667",
-        "References": "A-205702093",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Media Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39803",
-        "References": "A-193790350",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "Media Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-0957",
-        "References": "A-193149550 [2]",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39704",
-        "References": "A-209965481",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39706",
-        "References": "A-200164168 [2]",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39707",
-        "References": "A-200688991",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39807",
-        "References": "A-209446496",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39808",
-        "References": "A-209966086",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20114",
-        "References": "A-211114016",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2021-39809",
-        "References": "A-205837191",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20011",
-        "References": "A-214999128",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/chromecast/2022-07-01",
-        "Published": "July 18, 2022",
-        "Patch level": "2022-02-05",
-        "CVE": "CVE-2022-20112",
-        "References": "A-206987762",
-        "Type": "DoS",
-        "Severity": "High",
-        "Updated AOSP versions": "10",
-        "Component": "System"
+        "Patch level": "2022-02-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-04-01",
@@ -94851,24 +94442,7 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-03-01",
         "Published": "March 2, 2026",
-        "Patch level": "2026-03-05",
-        "CVE": "CVE-2024-31328",
-        "References": "A-319101158",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "14, 16",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-03-01",
-        "Published": "March 2, 2026",
-        "Patch level": "2026-03-05",
-        "CVE": "CVE-2025-48636",
-        "References": "A-447366259",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "16",
-        "Component": "System"
+        "Patch level": "2026-03-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-02-01",
@@ -94918,46 +94492,7 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
         "Published": "May 5, 2025",
-        "Patch level": "2025-05-05",
-        "CVE": "CVE-2025-26439",
-        "References": "A-372227605",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "14",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 5, 2025",
-        "Patch level": "2025-05-05",
-        "CVE": "CVE-2025-26419",
-        "References": "A-387497730",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13, 14",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 5, 2025",
-        "Patch level": "2025-05-05",
-        "CVE": "CVE-2025-26431",
-        "References": "A-371195880",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "14",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-05-01",
-        "Published": "May 5, 2025",
-        "Patch level": "2025-05-05",
-        "CVE": "CVE-2024-40664",
-        "References": "A-338974267",
-        "Type": "DoS",
-        "Severity": "High",
-        "AOSP versions": "13, 14",
-        "Component": "System"
+        "Patch level": "2025-05-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-04-01",
@@ -94967,35 +94502,12 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-03-01",
         "Published": "March 3, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2025-22414",
-        "References": "A-286591853",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13, 14",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-03-01",
-        "Published": "March 3, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2025-22415",
-        "References": "A-380885358",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13, 14",
-        "Component": "System"
+        "Patch level": "2025-03-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-02-01",
         "Published": "February 3, 2025",
-        "Patch level": "2025-02-05",
-        "CVE": "CVE-2024-49731",
-        "References": "A-319902231",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2025-02-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2025/2025-01-01",
@@ -95010,24 +94522,7 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-11-01",
         "Published": "November 4, 2024",
-        "Patch level": "2024-11-05",
-        "CVE": "CVE-2024-43094",
-        "References": "A-303960097",
-        "Type": "ID",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-11-01",
-        "Published": "November 4, 2024",
-        "Patch level": "2024-11-05",
-        "CVE": "CVE-2024-31330",
-        "References": "A-355642327",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-11-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-10-01",
@@ -95037,145 +94532,27 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-09-01",
         "Published": "September 3, 2024",
-        "Patch level": "2024-09-05",
-        "CVE": "CVE-2024-40665",
-        "References": "A-339218569",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-09-01",
-        "Published": "September 3, 2024",
-        "Patch level": "2024-09-05",
-        "CVE": "CVE-2024-40664",
-        "References": "A-338974267",
-        "Type": "DoS",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-09-01",
-        "Published": "September 3, 2024",
-        "Patch level": "2024-09-05",
-        "CVE": "CVE-2024-40663",
-        "References": "A-322816693",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-09-01",
-        "Published": "September 3, 2024",
-        "Patch level": "2024-09-05",
-        "CVE": "CVE-2024-40666",
-        "References": "A-339609745",
-        "Type": "EoP",
-        "Severity": "High",
-        "AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-09-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-08-01",
         "Published": "August 5, 2024",
-        "Patch level": "2024-08-05",
-        "CVE": "CVE-2024-34745",
-        "References": "A-307251159",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-08-01",
-        "Published": "August 5, 2024",
-        "Patch level": "2024-08-05",
-        "CVE": "CVE-2024-34744",
-        "References": "A-326925455",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-08-01",
-        "Published": "August 5, 2024",
-        "Patch level": "2024-08-05",
-        "CVE": "CVE-2024-34746",
-        "References": "A-304082471",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-08-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-07-01",
         "Published": "July 1, 2024",
-        "Patch level": "2024-07-05",
-        "CVE": "CVE-2024-31338",
-        "References": "A-324406734",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-07-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-06-01",
         "Published": "June 3, 2024",
-        "Patch level": "2024-06-05",
-        "CVE": "CVE-2024-31329",
-        "References": "A-310686440",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-06-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-05-01",
         "Published": "May 6, 2024",
-        "Patch level": "2024-05-05",
-        "CVE": "CVE-2024-23700",
-        "References": "A-310634539",
-        "Type": "ID",
-        "Severity": "Critical",
-        "Updated AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-05-01",
-        "Published": "May 6, 2024",
-        "Patch level": "2024-05-05",
-        "CVE": "CVE-2024-23703",
-        "References": "A-268737818",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-05-01",
-        "Published": "May 6, 2024",
-        "Patch level": "2024-05-05",
-        "CVE": "CVE-2024-23701",
-        "References": "A-300267802",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-05-01",
-        "Published": "May 6, 2024",
-        "Patch level": "2024-05-05",
-        "CVE": "CVE-2024-23702",
-        "References": "A-290819041",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-05-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-04-01",
@@ -95185,13 +94562,7 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-03-01",
         "Published": "March 4, 2024",
-        "Patch level": "2024-03-05",
-        "CVE": "CVE-2023-21234",
-        "References": "A-260859883",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
+        "Patch level": "2024-03-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-02-01",
@@ -95201,23 +94572,12 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2024/2024-01-01",
         "Published": "January 3, 2024",
-        "Patch level": "2024-01-05",
-        "CVE": "CVE-2023-33085",
-        "References": "A-304307278",
-        "Severity": "High",
-        "Subcomponent": "Security",
-        "Component": "Qualcomm components"
+        "Patch level": "2024-01-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-12-01",
         "Published": "December 4, 2023",
-        "Patch level": "2023-12-05",
-        "CVE": "CVE-2023-40094",
-        "References": "A-307719731",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "System"
+        "Patch level": "2023-12-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-11-01",
@@ -95237,130 +94597,17 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
         "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21229",
-        "References": "A-265431830",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21230",
-        "References": "A-191680486",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "Platform"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21231",
-        "References": "A-187307530",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21234",
-        "References": "A-260859883",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21235",
-        "References": "A-133761964",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-35689",
-        "References": "A-265474852",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21232",
-        "References": "A-267251033",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "11, 13",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2023/2023-08-01",
-        "Published": "August 7, 2023",
-        "Patch level": "2023-08-05",
-        "CVE": "CVE-2023-21233",
-        "References": "A-261073851",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "11",
-        "Component": "System"
+        "Patch level": "2023-08-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2026/2026-03-01",
         "Published": "March 3, 2026",
-        "Patch level": "2026-03-05",
-        "CVE": "CVE-2025-47333",
-        "References": "A-430052467",
-        "Severity": "Moderate",
-        "Subcomponent": "Bootloader",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2026/2026-03-01",
-        "Published": "March 3, 2026",
-        "Patch level": "2026-03-05",
-        "CVE": "CVE-2025-47383",
-        "References": "A-442618257",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
+        "Patch level": "2026-03-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-12-01",
         "Published": "December 9, 2025",
-        "Patch level": "2025-12-05",
-        "CVE": "CVE-2025-27064",
-        "References": "A-415774509",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-12-01",
-        "Published": "December 9, 2025",
-        "Patch level": "2025-12-05",
-        "CVE": "CVE-2025-47321",
-        "References": "A-421893660",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
+        "Patch level": "2025-12-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-11-01",
@@ -95370,32 +94617,17 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-10-01",
         "Published": "October 8, 2025",
-        "Patch level": "2025-10-05",
-        "CVE": "CVE-2025-27033",
-        "References": "A-400451941",
-        "Severity": "Moderate",
-        "Subcomponent": "Video",
-        "Component": "Qualcomm components"
+        "Patch level": "2025-10-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-09-01",
         "Published": "September 3, 2025",
-        "Patch level": "2025-09-05",
-        "CVE": "CVE-2025-27030",
-        "References": "A-400452676",
-        "Severity": "Moderate",
-        "Subcomponent": "Audio",
-        "Component": "Qualcomm components"
+        "Patch level": "2025-09-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-08-01",
         "Published": "August 5, 2025",
-        "Patch level": "2025-08-05",
-        "CVE": "CVE-2025-21472",
-        "References": "A-394094576",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
+        "Patch level": "2025-08-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-07-01",
@@ -95405,114 +94637,17 @@
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
         "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-45540",
-        "References": "A-372022568",
-        "Severity": "Moderate",
-        "Subcomponent": "Bootloader",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
-        "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-45544",
-        "References": "A-372021858",
-        "Severity": "Moderate",
-        "Subcomponent": "Kernel",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
-        "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-45554",
-        "References": "A-377303606",
-        "Severity": "Moderate",
-        "Subcomponent": "Kernel",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
-        "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-45562",
-        "References": "A-377305518",
-        "Severity": "Moderate",
-        "Subcomponent": "Bootloader",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
-        "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-45564",
-        "References": "A-377305469",
-        "Severity": "Moderate",
-        "Subcomponent": "Bootloader",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-06-01",
-        "Published": "June 10, 2025",
-        "Patch level": "2025-06-05",
-        "CVE": "CVE-2024-43046",
-        "References": "A-381913701",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
+        "Patch level": "2025-06-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
         "Published": "March 5, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2024-56191",
-        "References": "A-369779393",
-        "Type": "EoP",
-        "Severity": "High",
-        "Subcomponent": "dhd4381",
-        "Component": "SoC"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
-        "Published": "March 5, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2024-56192",
-        "References": "A-370519083",
-        "Type": "EoP",
-        "Severity": "High",
-        "Subcomponent": "dhd4381",
-        "Component": "SoC"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
-        "Published": "March 5, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2024-43057",
-        "References": "A-364021259",
-        "Severity": "Moderate",
-        "Subcomponent": "Kernel",
-        "Component": "Qualcomm components"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
-        "Published": "March 5, 2025",
-        "Patch level": "2025-03-05",
-        "CVE": "CVE-2024-38426",
-        "References": "A-364021142",
-        "Severity": "Moderate",
-        "Subcomponent": "Closed-source component",
-        "Component": "Qualcomm closed-source components"
+        "Patch level": "2025-03-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-12-01",
         "Published": "December 5, 2024",
-        "Patch level": "2024-12-05",
-        "CVE": "CVE-2024-33039",
-        "References": "A-344628792",
-        "Severity": "Moderate",
-        "Subcomponent": "Audio",
-        "Component": "Qualcomm components"
+        "Patch level": "2024-12-05"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-08-01",
