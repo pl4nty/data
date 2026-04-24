@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") then
+if not (mp.get_mpattribute)("MpIsPowerShellAMSIScan") and not (mp.get_mpattribute)("MpIsRunDialogAmsiScan") then
   return mp.CLEAN
 end
 if (mp.get_mpattribute)("SCRIPT:SuspClickfix.A") then
