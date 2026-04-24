@@ -68554,55 +68554,6 @@
     },
     {
         "created": "2025-05-19T23:00:56",
-        "description": "The new Microsoft 365 Copilot Interaction Export API enable customers and ISVs to export Copilot interaction data for processing in their security and compliance (S+C) applications. This new Interaction Export API captures the user prompts and Copilot responses in the Copilot private interactions and provide insights into the resources Copilot has accessed to generate the response. It will be available in Public Cloud for General Availability.",
-        "id": 491631,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot: Microsoft 365 Copilot Interaction Export API"
-    },
-    {
-        "created": "2025-05-19T23:00:56",
         "description": "You can now react to messages and posts with multiple emojis per message, enhancing your ability to express a wide range of emotions effectively. Use combinations of emojis for a richer and more nuanced response, quickly conveying your feelings and thoughts, like agreement, urgency or sentiment, without extra replies\u2014keeping discussions focused and efficient.",
         "id": 491468,
         "locale": null,
@@ -75189,79 +75140,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "Agent has been released to Desktop/Web Copilot and now we are enabling Agent UX in mobile endpoints. It will allow end-users to discover installed agents, add new agents and chat with them in mobile Copilot on Teams, Outlook and Microsoft 365 Copilot App (formerly Microsoft 365 App).",
-        "id": 482545,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Teams"
-                },
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Discover agent in Microsoft Copilot on iOS/Android"
     },
     {
         "created": "2025-04-23T16:15:28",
@@ -82619,61 +82497,6 @@
     },
     {
         "created": "2025-03-28T00:15:04",
-        "description": "The Cloud Policy service allows Microsoft 365 administrators to configure policies for Microsoft 365 apps and assign these policies using Microsoft 365 or Entra ID groups. Once configured, these policies are automatically enforced as users sign in and use Microsoft 365 apps and services. The initial release will support policies for Microsoft 365 Apps for enterprise on Windows and future updates will bring support for additional applications and platforms. For additional information about the Cloud Policy service, refer to \"Overview of the Cloud Policy service for Microsoft 365 Apps for enterprise\".",
-        "id": 486984,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy",
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 App: Availability of the Cloud Policy service for Microsoft 365 Government GCC-H and DoD"
-    },
-    {
-        "created": "2025-03-28T00:15:04",
         "description": "Rich insights on SharePoint agents for content governance as part of SharePoint Advanced Management controls.",
         "id": 486861,
         "locale": null,
@@ -85686,55 +85509,6 @@
             ]
         },
         "title": "Outlook: Auto-Export mailbox to PST file in new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-18T23:15:13",
-        "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to reply and forward  emails in a .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
-        "id": 485742,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Reply and forward emails in a PST file in new Outlook for Windows"
     },
     {
         "created": "2025-03-18T23:15:13",
@@ -96047,103 +95821,6 @@
         "title": "Microsoft Teams: Presenter Chat while screensharing"
     },
     {
-        "created": "2023-09-25T23:04:17",
-        "description": "Microsoft Teams users will be able to control how they get notified in meeting chats through RSVP to their meetings. When you decline a meeting, you will not receive notifications or see the chats in chat list; when you accept a meeting, you will receive notification for all new messages.",
-        "id": 161739,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release (Entire Organization)"
-            },
-            {
-                "tagName": "Targeted Release (Select People)"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release (Entire Organization)"
-                },
-                {
-                    "tagName": "Targeted Release (Select People)"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Integrate Chat notification with Meeting RSVP status"
-    },
-    {
         "created": "2023-10-20T22:29:17",
         "description": "<div><span style=\"font-family:&quot;Segoe UI&quot;, sans-serif;font-size:12px;text-align:left;background-color:rgb(255, 255, 255);display:inline !important;\">Co-organizers can edit webinar details, publish the event, and cancel the event, similar to the organizer.</span> </div>",
         "id": 168524,
@@ -104256,61 +103933,6 @@
             ]
         },
         "title": "OneDrive: Agents in OneDrive"
-    },
-    {
-        "created": "2024-07-03T00:00:28",
-        "description": "With this change, customers will start seeing a new Copilot location within the Content Explorer. This will have all the sensitive information which is present in Copilot conversations",
-        "id": 405118,
-        "locale": null,
-        "modified": "2025-06-23T23:15:26",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - New workload for Copilot in Content Explorer"
     },
     {
         "created": "2024-02-06T02:15:52",
