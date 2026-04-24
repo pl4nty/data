@@ -14,6 +14,7 @@
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
 #include "base/time/time.h"
+#include "build/branding_buildflags.h"
 #include "build/build_config.h"
 #include "crypto/crypto_buildflags.h"
 #include "net/base/net_export.h"
@@ -657,6 +658,15 @@ NET_EXPORT BASE_DECLARE_FEATURE(kExcludeLargeBodyReports);
 // Website Set to access partitioned non-cookie storage. See
 // https://github.com/explainers-by-googlers/related-website-partition-api.
 NET_EXPORT BASE_DECLARE_FEATURE(kRelatedWebsitePartitionAPI);
+
+#if BUILDFLAG(MICROSOFT_EDGE_BRANDING)
+// If enabled, brotli decompression in //net (content-encoding and TLS cert
+// compression) is performed by the Rust `brotli` crate instead of the C
+// `//third_party/brotli` library. Streams that carry a shared dictionary
+// always fall back to the C library as they are not supported by the Rust crate
+// yet.
+NET_EXPORT BASE_DECLARE_FEATURE(kRustBrotliNet);
+#endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 
 #if BUILDFLAG(IS_ANDROID)
 // If enabled, Android OS's certificate verification (CertVerifyProcAndroid) is

@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33230077,
+    "size": 33239008,
     "file_count": 4035
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 162046280,
-    "file_count": 19105
+    "size": 162161226,
+    "file_count": 19153
   },
   {
     "name": "dbus",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16213869,
-    "file_count": 1944
+    "size": 16317685,
+    "file_count": 1952
   },
   {
     "name": "entity_extraction",
@@ -256,7 +256,7 @@
   },
   {
     "name": "glib",
-    "size": 52998266,
+    "size": 52998296,
     "file_count": 2384
   },
   {
@@ -406,12 +406,12 @@
   },
   {
     "name": "libgudev",
-    "size": 181074,
+    "size": 181104,
     "file_count": 52
   },
   {
     "name": "libinput",
-    "size": 6422603,
+    "size": 6422633,
     "file_count": 467
   },
   {
@@ -491,7 +491,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 292620,
+    "size": 292946,
     "file_count": 47
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "mutter",
-    "size": 29870943,
+    "size": 29870973,
     "file_count": 2013
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7473190,
+    "size": 7478113,
     "file_count": 194
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29949309,
+    "size": 29959251,
     "file_count": 629
   },
   {

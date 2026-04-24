@@ -65,6 +65,11 @@ CC_BASE_EXPORT extern const base::FeatureParam<double>
 // image map.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kPreserveDiscardableImageMapQuality);
 
+// When enabled, the scroll jank v4 metric handles slow-path scrolls more
+// reliably. Specifically, we send GSEs to the main thread if the corresponding
+// GSUs were also routed to the main thread.
+CC_BASE_EXPORT BASE_DECLARE_FEATURE(kScrollEndRepaintFollowsScrollUpdate);
+
 // Kill switch for a bunch of optimizations for cc-slimming project.
 // Please see crbug.com/335450599 for more details.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kCCSlimming);
@@ -180,11 +185,6 @@ CC_BASE_EXPORT void SetIsEligibleForThrottleMainFrameTo60Hz(bool is_eligible);
 // instead displays the properly constructed frame while at the same doing
 // capture.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kViewTransitionCaptureAndDisplay);
-
-// When enabled, the view transition capture transform is floored instead of
-// rounded and we use the render surface pixel snapping to counteract the blurry
-// effect.
-CC_BASE_EXPORT BASE_DECLARE_FEATURE(kViewTransitionFloorTransform);
 
 // Allow the main thread to throttle the main frame rate.
 // Note that the composited animations will not be affected.
