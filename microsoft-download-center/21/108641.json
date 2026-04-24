@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager 2016 SP3 for Entra ID P1 and P2 Customers (KB5091577)",
+    "downloadDescription": "Microsoft Identity Manager 2016 SP3 for Entra ID P1 and P2 Customers (KB5091577)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Data Warehouse Support Scripts.zip",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/Data Warehouse Support Scripts.zip",
+            "size": "56139",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Add-ins and extensions.zip",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/Add-ins and extensions.zip",
+            "size": "40913247",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "readme.txt",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/readme.txt",
+            "size": "157",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Language Packs.zip",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/Language Packs.zip",
+            "size": "111377577",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Synchronization Service.zip",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/Synchronization Service.zip",
+            "size": "19895386",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Service and Portal.zip",
+            "url": "https://download.microsoft.com/download/a6565cf2-5c98-4ce4-9c1e-6bd724cdebf7/Service and Portal.zip",
+            "size": "35716625",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:13:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released Microsoft Identity Manager 2016 with Service Pack 3 for Entra ID P1 and P2 customers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5091577",
+        "name": "KB5091577"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.9",
+    "detailsSection_file_name": [
+        "Data Warehouse Support Scripts.zip",
+        "Add-ins and extensions.zip",
+        "readme.txt",
+        "Language Packs.zip",
+        "Synchronization Service.zip",
+        "Service and Portal.zip"
+    ],
+    "detailsSection_file_size": [
+        "54.8 KB",
+        "39.0 MB",
+        "157 bytes",
+        "106.2 MB",
+        "19.0 MB",
+        "34.1 MB"
+    ],
+    "detailsSection_file_date": "4/24/2026",
+    "systemRequirementsSection": "Windows Server 2019, Windows Server 2022\n\n SQL Server 2022, Sharepoint Server SE",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msi from an administrative command prompt. Visit the documentation site for more information.",
+    "additionalInformationSection": "<ul>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/\">Microsoft Identity Manager Documentation</a>\n</li>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history\">Microsoft Identity Manager Version Release</a>\n</li>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108641",
+    "downloadPreload": true
+}

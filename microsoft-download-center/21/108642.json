@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager 2016 SP3 for Entra ID P1 and P2 Customers (KB5091577)",
+    "downloadDescription": "Microsoft Identity Manager 2016 SP3 for Entra ID P1 and P2 Customers (KB5091577)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMSyncService_KB5091577.msp",
+            "url": "https://download.microsoft.com/download/4973c02a-9a60-4e4f-acae-89e89386279f/MIMSyncService_KB5091577.msp",
+            "size": "33890304",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:15:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB5091577.msp",
+            "url": "https://download.microsoft.com/download/4973c02a-9a60-4e4f-acae-89e89386279f/MIMServiceLP_x64_KB5091577.msp",
+            "size": "17633280",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:15:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMService_x64_KB5091577.msp",
+            "url": "https://download.microsoft.com/download/4973c02a-9a60-4e4f-acae-89e89386279f/MIMService_x64_KB5091577.msp",
+            "size": "150327296",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:15:56 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIMAddinsExtensionsLP_x64_KB5091577.msp",
+            "url": "https://download.microsoft.com/download/4973c02a-9a60-4e4f-acae-89e89386279f/MIMAddinsExtensionsLP_x64_KB5091577.msp",
+            "size": "9175040",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:15:56 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x64_KB5091577.msp",
+            "url": "https://download.microsoft.com/download/4973c02a-9a60-4e4f-acae-89e89386279f/MIMAddinsExtensions_x64_KB5091577.msp",
+            "size": "15745024",
+            "version": "4.7.9",
+            "datePublished": "4/24/2026 2:15:56 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a Service Pack 3 for Microsoft Identity Manager 2016. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains additional supported platforms and improvements outlined in <a href=\"https://support.microsoft.com/topic/a8e64840-39ef-43ef-8623-c79cf69073db\">Knowledge Base Article 5091577</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5091577",
+        "name": "KB5091577"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.9",
+    "detailsSection_file_name": [
+        "MIMSyncService_KB5091577.msp",
+        "MIMServiceLP_x64_KB5091577.msp",
+        "MIMService_x64_KB5091577.msp",
+        "MIMAddinsExtensionsLP_x64_KB5091577.msp",
+        "MIMAddinsExtensions_x64_KB5091577.msp"
+    ],
+    "detailsSection_file_size": [
+        "32.3 MB",
+        "16.8 MB",
+        "143.4 MB",
+        "8.8 MB",
+        "15.0 MB"
+    ],
+    "detailsSection_file_date": "4/24/2026",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "additionalInformationSection": "<ul>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/\">Microsoft Identity Manager Documentation</a>\n</li>\n<li>\n<a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history\">Microsoft Identity Manager Version Release</a>\n</li>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108642",
+    "downloadPreload": true
+}
