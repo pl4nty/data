@@ -1,5 +1,341 @@
 [
     {
+        "created": "2026-04-24T22:00:04",
+        "description": "At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps\u2014so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.",
+        "id": 561036,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: DSPM \u2013 New Microsoft Purview Data Security Posture Management Experience"
+    },
+    {
+        "created": "2026-04-24T22:00:04",
+        "description": "We\u2019re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which conditions evaluated as true or false.\nFor Microsoft 365 E5 customers, the experience also includes Copilot-powered insights and tailored recommendations to accelerate troubleshooting and policy optimization.",
+        "id": 561032,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention \u2013 New Guided Experience to Diagnose and Resolve DLP Issues"
+    },
+    {
+        "created": "2026-04-24T22:00:04",
+        "description": "Microsoft Teams extends Quick Share to images, making it fast and easy to share visual content across chats and channels. With access from hover, right click, overflow menus, and shared tabs, you can quickly copy links or share images while preserving existing permissions.",
+        "id": 560816,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Quick Share for Images"
+    },
+    {
+        "created": "2026-04-24T22:00:04",
+        "description": "Microsoft Teams makes it easier to find and attach files by enabling search directly within the quick sharing experience. You can now locate cloud based files while attaching content, reducing friction when sharing files across chats and channels.",
+        "id": 560814,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Search in quick sharing experience"
+    },
+    {
+        "created": "2026-04-24T22:00:04",
+        "description": "Large file sharing in Teams today introduces blocking behavior, forcing users to wait for uploads to complete and disrupting real-time collaboration. To improve productivity and reduce perceived latency, we are introducing asynchronous file uploads. This allows users to continue sending messages while the file uploads in the background, enabling a more seamless and uninterrupted collaboration experience.\n",
+        "id": 560813,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Unblock users to send message while file is uploading in the background"
+    },
+    {
+        "created": "2026-04-24T22:00:04",
+        "description": "We\u2019ve improved how Copilot reads long and complex files by making it more aware of document structure. When you ask a question, Copilot can now navigate to the most relevant parts of your document (for example, specific sections/pages) before answering\u2014helping reduce missed details and improving confidence with clearer citations that are easier to trace back to the source.",
+        "id": 559614,
+        "locale": null,
+        "modified": "2026-04-24T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot improved long files navigation using document structure, enabling more accurate answers and clearer citations."
+    },
+    {
         "created": "2026-04-23T23:15:05",
         "description": "Previously, auto expanding archive mailbox expansion was supported only up to 1.5\u202fTB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5\u202fTB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability will be offered as a consumption\u2011based feature for auto expanding archive beyond 1.5 TB and will be billed at $0.25 per GB per month (or $0.0082 per GB per day). \n",
         "id": 560820,
@@ -10713,12 +11049,12 @@
         "description": "This enables analysts to publish Viva Insights Power BI reports to anyone in their organization. Today, analysts can publish them only to people with Copilot Dashboard access.",
         "id": 558257,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13009,9 +13345,9 @@
         "description": "This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: \u201cApproved by\u201d.",
         "id": 555852,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14486,9 +14822,9 @@
         "description": "Enhancing comment reporting by using Copilot to develop customer-specific comment topics and enhance the quality of existing comment-to-topic assignment.",
         "id": 553224,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -21259,9 +21595,9 @@
         "description": "Microsoft 365 Archive is designed to help organizations manage their inactive data efficiently. It allows you to move inactive SharePoint sites into a cold storage tier, which reduces storage costs while maintaining the same searchability, security, and compliance standards as active data. This feature is already available in Production and is now being released to GCC-L cloud.",
         "id": 545013,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -29964,12 +30300,12 @@
         "description": "Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 531910,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -40405,9 +40741,9 @@
         "description": "Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group. Updated January 29, 2026: Due to a blocker we have paused rollout until March for this feature. We apologize for any inconvenience.",
         "id": 515465,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -48450,12 +48786,12 @@
         "description": "Easily access Copilot Chat from a side pane in Word, Excel, PowerPoint, and OneNote. This is available for Copilot Chat users with a Microsoft 365 license and for Microsoft 365 Copilot licensed users.",
         "id": 502854,
         "locale": null,
-        "modified": "2025-11-21T00:00:57",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -59319,12 +59655,12 @@
         "description": "With the Microsoft 365 Copilot app on Windows, say \u201cHey Copilot\u201d to activate real-time voice conversations with Copilot. The wake word keeps you in flow, helping you draft content, analyze data, and get critical insights without having to navigate to a separate app or window. Built for enterprise, it respects your organization\u2019s compliance and privacy settings, activating only when called.",
         "id": 497848,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-24T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
