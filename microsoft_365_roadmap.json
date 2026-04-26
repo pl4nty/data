@@ -82608,61 +82608,6 @@
     {
         "created": "2025-03-28T22:30:31",
         "description": "When creating a new presentation with Copilot in PowerPoint, choose a template from your organization's collection for on-brand presentations, or select from Microsoft's handpicked templates, ensuring the new presentation is built as per your chosen template.",
-        "id": 485181,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "PowerPoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "PowerPoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Easily select a template while you create a new PowerPoint presentation with Copilot"
-    },
-    {
-        "created": "2025-03-28T22:30:31",
-        "description": "When creating a new presentation with Copilot in PowerPoint, choose a template from your organization's collection for on-brand presentations, or select from Microsoft's handpicked templates, ensuring the new presentation is built as per your chosen template.",
         "id": 485180,
         "locale": null,
         "modified": "2025-08-12T23:00:16",
@@ -89596,73 +89541,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Copilot uses Enterprise assets hosted on Templafy when creating presentations with Copilot"
     },
     {
-        "created": "2025-02-25T19:30:46",
-        "description": "We are introducing several enhancements to the eDiscovery modernized user interface. These updates include a comprehensive case-level data source view, the ability to retry failed locations for a more complete search statistics estimate. Users will also be able to duplicate search and copy search from hold or hold from search within the same case, reusing the data sources and queries. Additionally, customers will be able to access a more comprehensive reporting in all process reports including information like compliance boundary, encryption settings and more.",
-        "id": 482558,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Modern eDiscovery enhancements"
-    },
-    {
         "created": "2025-02-25T19:00:08",
         "description": "The Teams Rooms Pro Management portal now supports and enforces licenses for devices in Teams Rooms on Windows with a Standard or Basic license. IT admins get a unified device management experience through the Pro Management portal where they can manage those devices with the same functionality found in Teams admin center for that license type.",
         "id": 482539,
@@ -89832,73 +89710,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Support for summarization of very long documents"
-    },
-    {
-        "created": "2025-02-25T18:15:03",
-        "description": "A new Storage tab will be added to usage report for SharePoint within the Microsoft 365 admin center. The new tab will provide visibility into storage quota consumption, a usage trend, and recommended actions and resources for storage management and optimization",
-        "id": 482200,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 admin center: Usage reports - SharePoint storage insights, actions, and resources"
     },
     {
         "created": "2025-02-24T20:30:39",
@@ -93165,61 +92976,6 @@
             ]
         },
         "title": "Microsoft Teams: Monitor Teams client updates in Teams Admin center"
-    },
-    {
-        "created": "2025-01-29T00:15:46",
-        "description": "This allows the customer to use a label for a non-Office/PDF file without productivity impact.",
-        "id": 476494,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Labeling improvement for non-Office/PDF files using endpoint DLP"
     },
     {
         "created": "2025-01-29T00:15:46",
@@ -99843,61 +99599,6 @@
         "title": "Microsoft 365: Updated settings for the Microsoft 365 app on Windows"
     },
     {
-        "created": "2024-11-07T00:30:03",
-        "description": "This rollout introduces the privacy setting for \"Turn on optional connected experiences\" in Outlook on the web which is available in other Office apps today. The setting is found under Settings > General > Privacy and data > Privacy settings.",
-        "id": 467248,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Optional connected experiences privacy setting"
-    },
-    {
         "created": "2024-11-26T00:15:41",
         "description": "Users can now access Copilot Notebooks inside OneNote. Using Copilot Notebooks, users can pull together and reason over a wide range of content such as notes, documents, websites, meeting recordings, and more. ",
         "id": 464995,
@@ -102257,79 +101958,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Microsoft 365 Groups scoping in Teams DLP policy extend protection to 1:1/n chats"
-    },
-    {
-        "created": "2024-07-08T23:15:04",
-        "description": "Plan ahead by scheduling essential prompts for repeated tasks in Copilot chat. Create a productive routine that helps you stay organized and efficient. ",
-        "id": 401124,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "December CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Developer"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Developer"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Scheduled prompts"
     },
     {
         "created": "2024-07-03T22:15:21",
@@ -105417,61 +105045,6 @@
             ]
         },
         "title": "OneDrive: Create a presentation from a Word file"
-    },
-    {
-        "created": "2024-11-20T00:15:49",
-        "description": "Select a meeting recording in your OneDrive and ask Copilot to recap the meeting, highlight parts where you were mentioned, or recommend action items and next steps. This feature requires a Microsoft Copilot for Microsoft 365 license and will be available to commercial customers on OneDrive Web.",
-        "id": 469500,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneDrive: Ask Copilot questions on meeting recordings"
     },
     {
         "created": "2024-11-16T00:00:49",
@@ -113348,73 +112921,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal : Insider Risk Management \u2013 Bring your own detections"
-    },
-    {
-        "created": "2024-05-14T23:30:08",
-        "description": "Enable managers and leaders to gather additional information and check in on team progress after an org-wide Glint survey. By leveraging a Pulse survey that recommends questions based on the top strengths and opportunities identified in the org-wide Glint survey, managers and leaders can gather a timely understanding of the team\u2019s progress to-date in addressing key focus areas, make mid-point adjustments if needed, and maintain momentum in their efforts to improve engagement and employee experience.",
-        "id": 396563,
-        "locale": null,
-        "modified": "2025-06-25T23:00:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Pulse \u2013 Integration into Viva Glint Dashboard"
     },
     {
         "created": "2024-05-08T23:45:39",
