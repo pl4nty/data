@@ -8,8 +8,9 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.0.1",
+        "version": "2.1.0",
         "versions": [
+            "2.1.0",
             "2.0.1",
             "2.0.0",
             "1.1.0b2",
@@ -700,8 +701,9 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.79.0",
+        "version": "3.81.0",
         "versions": [
+            "3.81.0",
             "3.79.0",
             "3.77.0",
             "3.71.0",
@@ -1191,8 +1193,9 @@
         "name": "OpenAIDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.9.1",
+        "version": "2.10.0",
         "versions": [
+            "2.10.0",
             "2.9.1",
             "2.8.0",
             "2.7.0",

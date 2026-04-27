@@ -70255,55 +70255,6 @@
     },
     {
         "created": "2025-05-13T11:00:17",
-        "description": "This feature enables Glint Admins to add cycles to programs created using the \"custom blank recurring\" program type. Previously unavailable, this capability is now supported for both existing and newly created programs.",
-        "id": 493325,
-        "locale": null,
-        "modified": "2025-06-26T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Glint - Add cycles to a custom blank recurring program"
-    },
-    {
-        "created": "2025-05-13T11:00:17",
         "description": "This feature enables AI administrators to pin specific agents in M365 Copilot Chat for all users in the tenant or defined users and groups, improving user accessibility to the most relevant and agents for their work. #copilotcontrolsystem",
         "id": 492613,
         "locale": null,
@@ -94643,55 +94594,6 @@
         "title": "SharePoint: Syntex Optical Character Recognition (OCR) extends support for Microsoft Office files"
     },
     {
-        "created": "2025-01-17T00:00:53",
-        "description": "Delegates can now create new categories on behalf of the person who granted them permissions. They can also apply said categories to the Calendar of that same person who granted them permissions. Delegates can view the list of the delegator's Categories by visiting the Accounts > Categories page of the Settings window and selecting the delegator's account from the dropdown. #newoutlookforwindows",
-        "id": 473438,
-        "locale": null,
-        "modified": "2025-06-26T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Delegates can now create new categories for the account owner's Calendar"
-    },
-    {
         "created": "2025-01-16T00:00:43",
         "description": "A new graph added to Microsoft Purview Data Security Posture Management for AI displays the departments of users interacting with M365 Copilot. #copilotcontrolsystem",
         "id": 475377,
@@ -98995,73 +98897,6 @@
         "title": "Microsoft Purview compliance portal: Insider Risk Management - IRM alerts in XDR"
     },
     {
-        "created": "2024-08-09T22:00:51",
-        "description": "Microsoft Lists forms will enable users to create dynamic forms featuring branching and conditional logic. This update allows users to customize their forms to display relevant questions based on conditions applied to previous responses, empowering them to design smarter forms that adapt to their data collection needs.",
-        "id": 410771,
-        "locale": null,
-        "modified": "2025-06-26T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Microsoft Lists - Conditional branching in Microsoft Lists forms"
-    },
-    {
         "created": "2024-07-03T00:00:28",
         "description": "Admins can now select tenant type for their institution from the policy wizard. This setting can be changed anytime from the wizard.",
         "id": 402185,
@@ -103037,73 +102872,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Actionable Email Notifications for Enhanced Incident Remediation"
-    },
-    {
-        "created": "2024-11-12T00:45:33",
-        "description": "Now while you are composing in Outlook for iOS or Android, you can use the same attach option you already know to select and attach emails to your mail.",
-        "id": 464206,
-        "locale": null,
-        "modified": "2025-06-26T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Add emails as attachments while composing an email on Outlook for iOS and Android"
     },
     {
         "created": "2024-11-01T23:00:59",
@@ -109048,73 +108816,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Enriching Insider risk management with Communication compliance as an indicator"
-    },
-    {
-        "created": "2024-01-11T00:30:11",
-        "description": "Co-organizers can edit town hall details, publish the event, and cancel the event, similar to the organizer.",
-        "id": 377703,
-        "locale": null,
-        "modified": "2025-06-26T23:15:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Co-organizer updates in town hall"
     },
     {
         "created": "2023-12-14T23:30:55",
