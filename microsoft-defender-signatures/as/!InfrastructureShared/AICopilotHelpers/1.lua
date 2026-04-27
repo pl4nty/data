@@ -10,7 +10,7 @@ basename = function(l_1_0)
   end
   local l_1_1, l_1_2 = ((string.lower)(l_1_0)):match, (string.lower)(l_1_0)
   do
-    local l_1_3 = "([^\\\\]+)$"
+    local l_1_3 = "([^\\/:]+)$"
     do return l_1_1(l_1_2, l_1_3) end
     -- DECOMPILER ERROR at PC12: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
@@ -73,24 +73,19 @@ end
 
 local l_0_3 = function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_1, l_0_0
-  local l_5_5 = nil
   if not l_5_0 or l_5_0 == "" then
     return nil
   end
-  local l_5_1, l_5_2 = commandline_to_argv(l_5_0)
-  if l_5_1 > 0 and l_5_2 ~= nil and l_5_2[1] ~= nil and l_5_2[1] ~= "" then
-    local l_5_3 = l_0_1
-    local l_5_4 = l_5_2[1]
-    do return l_5_3(l_5_4) end
-    -- DECOMPILER ERROR at PC23: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
-  end
-  local l_5_6 = nil
+  local l_5_1 = l_0_1(l_0_0(l_5_0))
+  local l_5_2, l_5_3, l_5_4 = pcall(commandline_to_argv, l_5_0)
   do
-    local l_5_7, l_5_8 = .end
-    do return l_0_1(l_5_6(l_5_0), l_5_7, l_5_8) end
-    -- DECOMPILER ERROR at PC29: Confused about usage of register R4 for local variables in 'ReleaseLocals'
-
+    if l_5_2 and l_5_3 > 0 and l_5_4 ~= nil and l_5_4[1] ~= nil and l_5_4[1] ~= "" then
+      local l_5_5 = l_0_1(l_5_4[1])
+      if l_5_1 == nil or l_5_5 == l_5_1 then
+        return l_5_5
+      end
+    end
+    return l_5_1
   end
 end
 
