@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2604.27004-preview -  support for new D3D12 Preview features, and more",
+    "downloadDescription": "PIX 2604.27004-preview -  support for new D3D12 Preview features, and more",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2604.27.004-preview-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/9f996c76-30f0-4c6c-99d8-714badaadf78/PIX-2604.27.004-preview-Installer-x64.exe",
+            "size": "214689952",
+            "version": "2604.27004-preview",
+            "datePublished": "4/27/2026 5:21:07 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2604.27004-preview -  support for new D3D12 Preview features, and more",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2604.27004-preview",
+    "detailsSection_file_name": [
+        "PIX-2604.27.004-preview-Installer-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "204.7 MB"
+    ],
+    "detailsSection_file_date": "4/27/2026",
+    "systemRequirementsSection": "Windows 10/11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Please download and run the applicable installer and follow its instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108643",
+    "downloadPreload": true
+}
