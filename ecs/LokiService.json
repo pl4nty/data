@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260422.9.0",
+        "CalendarCompanionDFVersion": "1.20260425.10.0",
         "CalendarCompanionMsitVersion": "1.20260417.8.0",
         "CalendarCompanionProdVersion": "1.20260411.6.1",
         "CompanionRing": "Prod",
@@ -304,7 +304,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260412.10.0",
+        "LpcVersion": "1.20260419.13.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1598,6 +1598,7 @@
         "WorkingHoursPredictionLoggingEnabled": true,
         "WriteSelfAssociationToPapi": true,
         "accountLinkingEnabled": true,
+        "copilotBriefsAugloopTargetRing": "production",
         "dummylokicopilotchildflight": true,
         "enableBRS": true,
         "enableSkillsYouViewForUnlicensedUsers": true,
@@ -2009,8 +2010,8 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260422.9.0",
-        "PeopleInTaskbarMsitVersion": "1.20260415.6.0",
+        "PeopleInTaskbarDFVersion": "1.20260425.10.0",
+        "PeopleInTaskbarMsitVersion": "1.20260420.8.0",
         "PeopleInTaskbarProdVersion": "1.20260411.6.0",
         "PeopleInTaskbarVersion": "1.20260411.6.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
