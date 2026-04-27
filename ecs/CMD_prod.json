@@ -616,6 +616,7 @@
         "EnableRemoveReviewButton": true,
         "EnableRenamedExternalPartnerGraphApi": true,
         "EnableReplaceQueryOperationStatus": true,
+        "EnableRescheduleOnWindowsUpdate": true,
         "EnableReserveDeprovisionForwarderDataStream": true,
         "EnableReserveHealthForwarderDataStream": true,
         "EnableReserveLicenseReportReport": true,
@@ -991,6 +992,7 @@
         "SyncAMSVersionEntitySlowStreamByEnv": true,
         "TURNHealthCheckEnabled": false,
         "TargetAssignmentChangeCallApi": false,
+        "TerminateWorkflowWhenWindowsUpdateInProgress": true,
         "UFP_ENABLE_AVD_REDIRECT": true,
         "UFP_ENABLE_B2B": true,
         "UFP_NEW_ASSETS": true,
@@ -1088,6 +1090,7 @@
         "SplitConfig": true,
         "UnificationWave1": true,
         "UseCachedOptInSetting": true,
+        "UseDlsAutopatchHostNames": true,
         "ValdiateIntuneTenantSyncReadiness": true
     }
 }

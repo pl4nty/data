@@ -329,6 +329,11 @@
             "DisableEntraRegistrationHPAFallback": true
         }
     },
+    "SVC_CloudPki": {
+        "FlightingV2": {
+            "BackfillCaVersionStatusBgTask": true
+        }
+    },
     "SVC_Compliance": {
         "FlightingV2": {
             "AddAADDeviceIdToPolicyCompliance": true,
@@ -556,6 +561,7 @@
     "SVC_RACerts": {
         "FlightingV2": {
             "BYPASS-DisallowingUnknownExtensions": false,
+            "CloudPKILeafCertificateReportingv2": true,
             "DeviceActionCertRevocationMessage": true,
             "DigiCert_SMIME": true,
             "ImportPFXRemediation": true,
