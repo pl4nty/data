@@ -382,6 +382,7 @@
         "EnableEditFLSPolicy": true,
         "EnableEndGracePeriodViaNugetInTBMS": true,
         "EnableEndUserCloudApp": true,
+        "EnableEndpointHealthCheckWithTimeout": true,
         "EnableEnterpriseCloudPcRecommendationV17": true,
         "EnableEntraDirectorySyncObserver": true,
         "EnableEntraObjectLifeCycleState": true,

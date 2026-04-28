@@ -567,6 +567,7 @@
         "EnableDeviceTypeForCua": true,
         "EnableDeviceTypeForOutOfServiceReport": true,
         "EnableDiagnoseAndRepairForTroubleshoot": true,
+        "EnableDictBasedDesiredQuotaRules": true,
         "EnableDifferentEventType": true,
         "EnableDirectLaunchUrl": true,
         "EnableDirectStream": true,
