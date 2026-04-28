@@ -594,6 +594,7 @@
             "EnableRemoteHelpCertExpiry": true,
             "RemoveEmsPolicyUnencryptedScript": true,
             "SetEmsPolicyEncryptedScript": true,
+            "SwitchPolicyStateMessageToDefaultFlowForMac": true,
             "UninstallAgentOnZombieMacs": true,
             "isSqlAggAadAuthEnabled": true
         }

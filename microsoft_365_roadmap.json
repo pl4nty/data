@@ -1,5 +1,378 @@
 [
     {
+        "created": "2026-04-27T23:15:13",
+        "description": "A single group with broad membership or a special group for vendors etc. - can expose sensitive content to unintended recipients. With this new report, SharePoint admins can now see every site a group can access and the extent of that access.",
+        "id": 561039,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Admin Center - Data Access Governance - Permission report for a given group"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "The new report provides SharePoint Advanced Management admins complete item level details of permissions granted to Everyone except external user and Everyone special SharePoint groups.",
+        "id": 561038,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Admin Center - detailed report on Everyone except external user permissions"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "This dashboard will allow admins to view the device health across all their devices to ensure the system is healthy and ready to receive policy updates and quickly identify devices that are not ready.\n",
+        "id": 561033,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention \u2013 Device Health Reporting Dashboard"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "Microsoft Teams is improving the call transfer experience on desktop (Windows and Mac) with a streamlined workflow that makes transferring calls faster and more intuitive. These changes reduce the number of steps to initiate a transfer and introduce transfer suggestions to help users find the right transfer target more quickly.",
+        "id": 561028,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Teams Phone Call Transfer Improvements"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "Download manager updates in Microsoft Teams make it easier to track file progress with improved visibility, control, and accessibility. You can now open the manager from the title bar or by using a keyboard shortcut, and view downloads without blocking key chat and channel actions.",
+        "id": 560815,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Improved visibility and control for downloads"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
+        "id": 560700,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: AI-powered notes for in-person\nmeetings with Facilitator in Teams Rooms on Android"
+    },
+    {
+        "created": "2026-04-27T23:15:13",
+        "description": "We're updating dynamic distribution groups (DDGs) in Exchange Online to make group membership available sooner after creation or a filter change. For DDGs with 5,000 members or fewer, membership is now populated as part of the creation or modification operation \u2014 no more waiting up to 2 hours.",
+        "id": 560550,
+        "locale": null,
+        "modified": "2026-04-27T23:15:13",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Exchange"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Exchange"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Exchange: Dynamic distribution groups now populate membership faster on creation and modification"
+    },
+    {
         "created": "2026-04-24T22:00:04",
         "description": "At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps\u2014so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.",
         "id": 561036,
@@ -175,7 +548,7 @@
         "description": "Microsoft Teams makes it easier to find and attach files by enabling search directly within the quick sharing experience. You can now locate cloud based files while attaching content, reducing friction when sharing files across chats and channels.",
         "id": 560814,
         "locale": null,
-        "modified": "2026-04-24T22:00:04",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -196,6 +569,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -220,6 +596,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -230,7 +609,7 @@
         "description": "Large file sharing in Teams today introduces blocking behavior, forcing users to wait for uploads to complete and disrupting real-time collaboration. To improve productivity and reduce perceived latency, we are introducing asynchronous file uploads. This allows users to continue sending messages while the file uploads in the background, enabling a more seamless and uninterrupted collaboration experience.\n",
         "id": 560813,
         "locale": null,
-        "modified": "2026-04-24T22:00:04",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -251,6 +630,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -275,6 +657,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -6864,12 +7249,12 @@
         "description": "Data Security Investigations (DSI) is introducing a new examination focus area concentrated on identifying personal data. The personal data examination will identify and extract various types of personal data from the selected items including but not limited to, names, addresses, bank account numbers, and more. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
         "id": 559388,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10476,12 +10861,12 @@
         "description": "Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.",
         "id": 557557,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -12143,12 +12528,12 @@
         "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support across Teams desktop, Teams mobile, and Teams devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities - all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers.",
         "id": 557716,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14358,12 +14743,12 @@
         "description": "This feature introduces admin controls for managing Anthropic as a model provider for specific users and groups in the tenant. ",
         "id": 557371,
         "locale": null,
-        "modified": "2026-04-23T23:15:05",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15713,12 +16098,12 @@
         "description": "Edge for Business extends its capability to deliver Intune App Protection Policies via Intune MAM. Organizations are enabled to apply data loss prevention controls to Edge for Business profiles even on devices managed by another tenant. This capability enforces Intune MAM policies\u2014such as clipboard boundaries, watermarking, and protected downloads\u2014within the Edge work profile, ensuring sensitive data remains governed by your tenant. When enabled, downloads initiated in Edge are redirected to OneDrive for Business instead of local storage, and leak controls for screenshots and DevTools activate when data protection settings are applied. This approach secures cross-tenant scenarios like contractors or mergers without requiring additional apps or disrupting the end user experience.\n",
         "id": 557187,
         "locale": null,
-        "modified": "2026-03-10T23:00:58",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17454,7 +17839,7 @@
         "description": "Microsoft Teams will soon support Secure Reliable Transport (SRT) streaming in Teams town halls. SRT is a network protocol designed to deliver high-quality, low-latency video across the public internet.\n",
         "id": 554931,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -17478,6 +17863,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -17505,6 +17893,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -18320,12 +18711,12 @@
         "description": "Teams Phone user multi\u2011line gives callers more flexibility and control by allowing administrators to assign up to 10 phone numbers to a single user. With full support on Teams Phone Android devices, users can seamlessly make and receive calls from multiple numbers without switching accounts or hardware. This makes it easy to manage different roles, departments, or regional identities\u2014all from one unified Teams experience. The result is a familiar, localized calling experience for users who work across diverse markets or with global customers.",
         "id": 553590,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23518,12 +23909,12 @@
         "description": "We are updating private channels to use a shared mailbox, similar to shared channels, instead of messages being stored in each user's mailbox. With this change, compliance policies set for the team's Microsoft 365 group will apply to private channels messages going forward. In addition, teams will support more than 30 private channels, up to the 1000 total channel limit for the team. Private channel member limits will increase from 250 to 5000. You will also be able to schedule meetings in private channels.",
         "id": 500381,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -26025,9 +26416,9 @@
         "description": "In Outlook Web, the new and updated People Hub delivers a modern, multi-column contacts experience, with fast search and a streamlined interface. It provides a unified view of each person, automatically links duplicate entries, and enriches contacts with organizational profile information where available.",
         "id": 537282,
         "locale": null,
-        "modified": "2026-04-07T23:15:03",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35475,12 +35866,12 @@
         "description": "Copilot Conversations as Search Results: Users can now retrieve historical Copilot interaction, including chats from notebooks, agents, and the main Copilot chat interface, directly in the search results (SERP). Dedicated Data Source in Right Rail: A new entry labeled \u201cCopilot Chats\u201d appears in the right rail, allowing users to scope their search specifically to Copilot-generated content. Scoped Query Formulation (QF) Suggestions: When users select \u201cCopilot Chats\u201d as the active data source, the search box dynamically offers scoped QF suggestions tailored to that source. These suggestions help differentiate between session recall and prompt execution, aligning with user intent.\n",
         "id": 506751,
         "locale": null,
-        "modified": "2025-12-19T00:15:46",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42323,12 +42714,12 @@
         "description": "Video recaps in Copilot Chat makes it easy to catch up on recorded meetings directly in Copilot Chat. It identifies and extracts key topics from transcripts, provides AI generated narration to summarize discussions, and pairs these with 20\u201340 second video snippets highlighting impactful moments of your meeting.",
         "id": 501452,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43056,9 +43447,9 @@
         "description": "Action Segments empowers IT Admins to target Organizational Messages using dynamic, pre-defined usage segments. This behavior-based targeting approach goes beyond existing static group definitions, ensuring messages reach the most relevant users.",
         "id": 503563,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43111,9 +43502,9 @@
         "description": "Organizational Messages now includes Email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams Popovers.",
         "id": 503562,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47438,9 +47829,9 @@
         "description": "This feature will allow admins to specify a limited set of sites to exclude from web grounding in M365 Copilot and Copilot Chat #copilotcontrolsystem",
         "id": 503144,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-04-27T23:15:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

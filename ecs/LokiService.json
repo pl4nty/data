@@ -2061,7 +2061,8 @@
                 "https://localcdn.centro-dev.com:*",
                 "https://config.centro.core.microsoft",
                 "https://petrol-int.office.microsoft.com",
-                "https://cdn.config.centro.core.microsoft"
+                "https://cdn.config.centro.core.microsoft",
+                "http://127.0.0.1:*"
             ],
             "default-src": [
                 "'none'"
@@ -2136,7 +2137,8 @@
                 "*.loki.office365.us",
                 "https://loki.office365.cn",
                 "https://loki.officenet.eaglex.ic.gov",
-                "https://loki.officenet.microsoft.scloud"
+                "https://loki.officenet.microsoft.scloud",
+                "https://res-dev.cdn.officeppe.net"
             ],
             "upgrade-insecure-requests": [],
             "worker-src": [

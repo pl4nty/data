@@ -1476,6 +1476,10 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.RequestSuggestionCountFromFMTApi",
                     "Value": "10"
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableRecurringMeetings",
+                    "IsEnabled": true
                 }
             ],
             "SelfRespond": [
