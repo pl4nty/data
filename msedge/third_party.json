@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2200018,
+    "size": 2199769,
     "file_count": 183
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33239008,
-    "file_count": 4035
+    "size": 33244574,
+    "file_count": 4034
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994044,
+    "size": 17994124,
     "file_count": 1006
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 162161226,
-    "file_count": 19153
+    "size": 161899064,
+    "file_count": 19093
   },
   {
     "name": "dbus",
@@ -151,8 +151,8 @@
   },
   {
     "name": "depot_tools",
-    "size": 6978071,
-    "file_count": 66
+    "size": 6978682,
+    "file_count": 67
   },
   {
     "name": "devscripts",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16317685,
+    "size": 16335141,
     "file_count": 1952
   },
   {
@@ -321,8 +321,8 @@
   },
   {
     "name": "ink",
-    "size": 77465,
-    "file_count": 11
+    "size": 91588,
+    "file_count": 13
   },
   {
     "name": "inspector_protocol",
@@ -376,8 +376,8 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 59339,
-    "file_count": 45
+    "size": 60709,
+    "file_count": 46
   },
   {
     "name": "libbrlapi",
@@ -476,7 +476,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 400981175,
+    "size": 401188023,
     "file_count": 358
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19646443,
+    "size": 19646955,
     "file_count": 19
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "mutter",
-    "size": 29870973,
+    "size": 29870911,
     "file_count": 2013
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4287496,
+    "size": 4288899,
     "file_count": 602
   },
   {
@@ -656,7 +656,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4631359,
+    "size": 4372589,
     "file_count": 83
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3483878,
+    "size": 3483890,
     "file_count": 1201
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 108371,
+    "size": 180513,
     "file_count": 7
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7478113,
+    "size": 7478245,
     "file_count": 194
   },
   {

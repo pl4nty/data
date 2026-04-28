@@ -38,6 +38,15 @@ $../../
 -third_party/
 # But check Blink (first-party).
 +third_party/blink/
+# Blink nocompile tests use -Xclang -verify; edge-safety warnings are
+# unexpected.  Prefix rules beat the ~-_nocompile.nc substring rule, so
+# we need explicit prefix opt-outs here.
+-third_party/blink/common/tokens/multi_token_nocompile.nc
+-third_party/blink/renderer/core/probe/probe_nocompile.nc
+-third_party/blink/renderer/platform/heap/test/heap_bind_nocompile.nc
+-third_party/blink/renderer/platform/wtf/cross_thread_functional_nocompile.nc
+-third_party/blink/renderer/platform/wtf/functional_nocompile.nc
+-third_party/blink/renderer/platform/wtf/text/string_view_nocompile.nc
 
 # Exclude ANY nested third_party directory (e.g. chrome/browser/third_party/).
 ~-third_party/
@@ -56,6 +65,11 @@ $../../
 -chromeos/
 -fuchsia_web/
 -ios/
+
+# Nocompile tests (.nc) use -Xclang -verify which requires every diagnostic
+# to be annotated. Edge-safety warnings are unexpected by upstream .nc files,
+# causing build failures. Exclude them.
+~-_nocompile.nc
 
 # --- Specific opt-outs for known false-positive-heavy areas ---
 # Add entries here as needed during rollout.

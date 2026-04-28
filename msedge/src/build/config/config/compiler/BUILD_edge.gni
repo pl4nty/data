@@ -205,10 +205,6 @@ template("edge_overlay_config_linker") {
         ldflags -= [ "-Wl,--no-call-graph-profile-sort" ]
       }
     }
-
-    if (use_lld && is_apple) {
-      ldflags -= [ "-Wl,--strict-auto-link" ]
-    }
   }
 }
 
