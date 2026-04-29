@@ -3,23 +3,22 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = "https://"
-local l_0_1 = ""
-local l_0_2 = (mp.GetParentProcInfo)()
-if l_0_2 == nil or l_0_2.image_path == nil then
-  return mp.CLEAN
+local l_0_0 = (mp.GetParentProcInfo)()
+if l_0_0 == nil or l_0_0.image_path == nil then
+  return mp.LOWFI
 end
-local l_0_3 = (string.lower)(l_0_2.image_path)
-if l_0_3:match("([^\\]+)$") ~= "explorer.exe" then
-  return mp.CLEAN
+local l_0_1 = (string.lower)(l_0_0.image_path)
+if not l_0_1:find("\\explorer.exe") then
+  return mp.LOWFI
 end
-local l_0_4 = (mp.GetScannedPPID)()
-if l_0_4 == "" or l_0_4 == nil then
-  return mp.CLEAN
+local l_0_2 = (mp.GetScannedPPID)()
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.LOWFI
 end
-l_0_1 = (string.lower)((mp.GetProcessCommandLine)(l_0_4))
-local l_0_5 = (string.match)(l_0_1, "\\\\([%w\\%.%-]+)")
-l_0_5 = l_0_0 .. l_0_5
+local l_0_3 = "https://"
+local l_0_4 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
+local l_0_5 = (string.match)(l_0_4, "\\\\([%w\\%.%-]+)")
+l_0_5 = l_0_3 .. l_0_5
 l_0_5 = (string.gsub)(l_0_5, "\\", "/")
 local l_0_6 = {}
 l_0_6.SIG_CONTEXT = "CmdHstr"
