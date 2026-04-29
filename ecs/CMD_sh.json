@@ -730,6 +730,7 @@
         "EnableOptimizedDispatch": true,
         "EnableOptionalDRNameOnUnavaiableReport": true,
         "EnablePAMOConnectivityStatusColumn": true,
+        "EnablePAMOConnectivityStatusColumnForENT": true,
         "EnablePAMOConnectivityStatusColumnForFLD": true,
         "EnablePAMOConnectivityStatusColumnForReserve": true,
         "EnablePITRestore": true,
