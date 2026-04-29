@@ -9,11 +9,6 @@
         "ExcludeExternalConfigIdsInLog": true
     },
     "Edge": {
-        "AdobePdfViewerHighCoresIteration3": {
-            "enableFeatures": [
-                "msPdfSharedLibraryHighCores"
-            ]
-        },
         "AdsPlatformXEdgeexp": {
             "enableFeatures": [
                 "msEdgeAdPlatformUI",
@@ -22,27 +17,9 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
-        "FeatureFlagRefactorExperiment": {
-            "enableFeatures": [
-                "msNurturingFeatureFlagRefactor"
-            ]
-        },
         "FuncIntegrity": {
             "enableFeatures": [
                 "msFunctionIntegrityValidation"
-            ]
-        },
-        "ReadAloudIconOnAddressBarLogicBased": {
-            "enableFeatures": [
-                "msReadAloudIconOnAddressBarLogicBased",
-                "msReadAloudIconReaderModeEligible",
-                "msReadAloudIconDisallowList"
-            ],
-            "parameters": [
-                {
-                    "name": "content_size",
-                    "value": "7000"
-                }
             ]
         },
         "SecureNetworkGA": {

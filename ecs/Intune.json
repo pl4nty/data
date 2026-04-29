@@ -443,6 +443,7 @@
             "EnableRemovingDuplicateDepRecordsFromAppleList": true,
             "EnableSearchCallRefactorDepSync": true,
             "EnableSearchECAWithoutDQCache": true,
+            "EnableSupportedDevicePlatformsConsistencyCheck": true,
             "EnableWindowsRestoreReporting": true,
             "S2SAntiPattern": true,
             "UseSecondaryRegionCosmosDB": true
