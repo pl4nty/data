@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-validate_research_data = function(l_1_0, l_1_1)
+local l_0_0 = function(l_1_0, l_1_1)
   -- function num : 0_0
   local l_1_2 = 1024
   local l_1_3 = 4
@@ -17,7 +17,7 @@ validate_research_data = function(l_1_0, l_1_1)
   end
 end
 
-set_researchdata_fromtable = function(l_2_0, l_2_1)
+local l_0_1 = function(l_2_0, l_2_1)
   -- function num : 0_1
   if l_2_0 == nil then
     return false
@@ -132,7 +132,7 @@ AddTacticForPid = function(l_9_0, l_9_1, l_9_2)
   end
 end
 
-AddPidGlobal = function(l_10_0, l_10_1)
+local l_0_2 = function(l_10_0, l_10_1)
   -- function num : 0_9
   l_10_0 = GetRealPidForScenario(l_10_0)
   AppendToRollingQueue("gPidsTable", l_10_0, 1, l_10_1, 500, 1)
@@ -263,7 +263,7 @@ GetTacticsCountGlobal = function()
   return 0
 end
 
-GetTrackedPidsCountGlobal = function()
+local l_0_3 = function()
   -- function num : 0_18
   local l_19_0, l_19_1 = pcall(MpCommon.RollingQueueCount, "gPidsTable")
   if l_19_0 and l_19_1 ~= nil then
@@ -617,13 +617,13 @@ GetTaintLevelML = function()
 end
 
 AddPidSpecificTechniqueAndTactic = function(l_34_0, l_34_1, l_34_2, l_34_3)
-  -- function num : 0_33
+  -- function num : 0_33 , upvalues : l_0_2
   l_34_0 = GetRealPidForScenario(l_34_0)
   if l_34_0 ~= nil then
     if not l_34_3 then
       l_34_3 = 3600
     end
-    AddPidGlobal(l_34_0, l_34_3)
+    l_0_2(l_34_0, l_34_3)
     if l_34_1 ~= nil and l_34_1 ~= "" and l_34_1 ~= "T0000" then
       AddTechniqueForPid(l_34_0, l_34_1, l_34_3)
       AddTechniqueGlobal(l_34_1, l_34_3)
@@ -636,7 +636,7 @@ AddPidSpecificTechniqueAndTactic = function(l_34_0, l_34_1, l_34_2, l_34_3)
 end
 
 AddResearchData = function(l_35_0, l_35_1)
-  -- function num : 0_34
+  -- function num : 0_34 , upvalues : l_0_3, l_0_1
   l_35_0 = GetRealPidForScenario(l_35_0)
   if not l_35_1 then
     l_35_1 = false
@@ -647,7 +647,7 @@ AddResearchData = function(l_35_0, l_35_1)
   l_35_4.TrackedPid = l_35_0
   l_35_4.IsThresholdMet = tostring(l_35_2)
   l_35_4.ThresholdMetReason = "000" .. tostring(l_35_3)
-  l_35_4.PidsCount = "000" .. tostring(GetTrackedPidsCountGlobal())
+  l_35_4.PidsCount = "000" .. tostring(l_0_3())
   do
     if GetRollingQueueKeysAsString("Tech-" .. l_35_0) == nil then
       local l_35_5, l_35_6 = l_35_0 .. " tech table missing"
@@ -697,7 +697,7 @@ AddResearchData = function(l_35_0, l_35_1)
                     l_35_4.AttackMachines = GetRollingQueueKeysAsString("SuspAttackServer")
                   end
                 end
-                set_researchdata_fromtable(l_35_4, l_35_1)
+                l_0_1(l_35_4, l_35_1)
               end
             end
           end
@@ -2156,7 +2156,7 @@ IsProcNameInParentProcessTree = function(l_75_0, l_75_1, l_75_2)
   end
 end
 
-IsExcludedHostCheck = function(l_76_0)
+local l_0_4 = function(l_76_0)
   -- function num : 0_75
   if l_76_0 == nil or l_76_0 == "" then
     return true
@@ -2202,7 +2202,7 @@ TrackAttackerServer = function(l_77_0, l_77_1)
 end
 
 IsHostAttackServerCloudChk = function(l_78_0, l_78_1, l_78_2, l_78_3, l_78_4)
-  -- function num : 0_77
+  -- function num : 0_77 , upvalues : l_0_4
   if not l_78_0 then
     return false
   end
@@ -2213,7 +2213,7 @@ IsHostAttackServerCloudChk = function(l_78_0, l_78_1, l_78_2, l_78_3, l_78_4)
   if IsKeyInRollingQueue("CleanHostCache", l_78_0) then
     return false
   end
-  if IsExcludedHostCheck(l_78_0) then
+  if l_0_4(l_78_0) then
     return false
   end
   local l_78_6 = IsKeyInRollingQueue("SuspAttackServer", l_78_5.host, false)
@@ -2263,7 +2263,7 @@ IsHostAttackServerCloudChk = function(l_78_0, l_78_1, l_78_2, l_78_3, l_78_4)
 end
 
 IsHostAttackServer = function(l_79_0, l_79_1)
-  -- function num : 0_78
+  -- function num : 0_78 , upvalues : l_0_4
   local l_79_2 = false
   if not l_79_1 then
     l_79_1 = false
@@ -2273,7 +2273,7 @@ IsHostAttackServer = function(l_79_0, l_79_1)
     if not l_79_1 then
       l_79_1 = false
     end
-    if IsExcludedHostCheck(l_79_3.host) then
+    if l_0_4(l_79_3.host) then
       return false
     end
     l_79_2 = IsKeyInRollingQueue("SuspAttackServer", l_79_3.host, l_79_1)

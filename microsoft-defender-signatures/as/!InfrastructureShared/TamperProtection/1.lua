@@ -128,7 +128,7 @@ Infrastructure_CheckNonUxControlledWDDefaults = function()
   end
 end
 
-Infrastructure_ShouldRunAntiTamperingRepair = function()
+local l_0_0 = function()
   -- function num : 0_6
   local l_7_0 = {}
   -- DECOMPILER ERROR at PC2: No list found for R0 , SetList fails
@@ -170,8 +170,8 @@ Infrastructure_ShouldRunAntiTamperingRepair = function()
 end
 
 Infrastructure_AntiTamperingCheckAndRepair = function()
-  -- function num : 0_7
-  if Infrastructure_ShouldRunAntiTamperingRepair() then
+  -- function num : 0_7 , upvalues : l_0_0
+  if l_0_0() then
     Infrastructure_CheckNonUxControlledWDDefaults()
   end
   return 

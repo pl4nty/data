@@ -1,22 +1,22 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\11eb319ca1532\1.luac 
+-- Command line: lua\!InfrastructureShared\155b33456b552\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[1]).matched then
+  if (this_sigattrlog[4]).matched then
     local l_0_0, l_0_1, l_0_2 = nil
   else
   end
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).ppid == nil then
+  if not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).ppid == nil then
     return mp.CLEAN
   end
   local l_0_3 = nil
   local l_0_4 = {}
-  local l_0_5 = {"node.exe", "npm-cli.js"}
-  local l_0_6 = {"node.exe", "npx-cli.js"}
+  local l_0_5 = {"node", "npm-cli.js"}
+  local l_0_6 = {"node", "npx-cli.js"}
   -- DECOMPILER ERROR at PC35: No list found for R1 , SetList fails
 
   l_0_5 = checkParentCmdline
