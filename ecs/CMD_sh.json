@@ -1458,6 +1458,7 @@
                 "EnableBootKillMsrdcOnResumeFromSleepLock": true,
                 "EnableBootToCloudReturnToLocal": true,
                 "EnableBootToCloudSignInToPhysicalDevice": true,
+                "EnablePinToDesktopShortcuts": true,
                 "enablePreviewUx": true,
                 "enableTheme": true
             },
