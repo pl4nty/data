@@ -290,6 +290,7 @@
             "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
             "EnableDiscoveredAppsStateFilter": true,
+            "EnableEnrollmentModeMismatchBlock": true,
             "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
             "EnableMhsAppPolicyReviseBehavior": true,
@@ -454,6 +455,7 @@
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
             "EnableAdditionalFilteringForCSPNonStoreNode": true,
             "EnableAllowOOBEUpdates": true,
+            "EnableAssignmentFilterMetadataCache": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
             "EnableSendingAttestStatusToReporting": true,
             "MMPCDeviceRecoveryHotfixRollout": true

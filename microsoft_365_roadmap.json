@@ -1,5 +1,261 @@
 [
     {
+        "created": "2026-04-28T22:45:03",
+        "description": "Today, Insider Risk Management (IRM) provides policy-driven protection for data leaks, data theft, and risky AI usage. However, while policy-driven protections are powerful, customers may not always have clear visibility into where coverage can be optimized or expanded to address latent insider risk.\n\nIRM now provides guidance on what protections are missing or which policy configurations deliver the most incremental value, providing customers with more comprehensive coverage to mitigate their most critical insider risk.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  \n\n",
+        "id": 560600,
+        "locale": null,
+        "modified": "2026-04-28T22:45:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Insider Risk Management \u2013 Policy Recommendation Panel in IRM"
+    },
+    {
+        "created": "2026-04-28T22:45:03",
+        "description": "In the new Outlook for Windows, users can choose to save 1 year or 2 years of email on their device for offline access. This expands the existing offline settings and allows users to access more email when they are not connected to the internet. The new options are available under Settings > General > Offline > Days of email to save, giving users greater flexibility based on their storage and offline needs.\" ",
+        "id": 560535,
+        "locale": null,
+        "modified": "2026-04-28T22:45:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: 1-year and 2-year options for email sync window (Offline settings)"
+    },
+    {
+        "created": "2026-04-28T22:45:03",
+        "description": "You can now quickly search for and navigate to any folder in your mailbox using the new Go to Folder feature. Instead of scrolling through long folder lists, just press Ctrl+Y or access it from your accounts context menu to instantly find what you need. Type a few letters of the folder name and jump straight there. #newoutlookforwindows",
+        "id": 559801,
+        "locale": null,
+        "modified": "2026-04-28T22:45:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Jump to Any Folder Instantly with Go to Folder"
+    },
+    {
+        "created": "2026-04-28T22:45:03",
+        "description": "Today, Copilot can show up to 25 meeting results, which can limit visibility in larger calendars. We\u2019re expanding this limit so you can see more relevant meetings at once making it easier to find, review, and act on the full context you need.",
+        "id": 559111,
+        "locale": null,
+        "modified": "2026-04-28T22:45:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Developer"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Additional meeting results in Copilot responses"
+    },
+    {
         "created": "2026-04-27T23:15:13",
         "description": "A single group with broad membership or a special group for vendors etc. - can expose sensitive content to unintended recipients. With this new report, SharePoint admins can now see every site a group can access and the extent of that access.",
         "id": 561039,
@@ -163,7 +419,7 @@
         "description": "Microsoft Teams is improving the call transfer experience on desktop (Windows and Mac) with a streamlined workflow that makes transferring calls faster and more intuitive. These changes reduce the number of steps to initiate a transfer and introduce transfer suggestions to help users find the right transfer target more quickly.",
         "id": 561028,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -184,6 +440,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -208,6 +467,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -218,7 +480,7 @@
         "description": "Download manager updates in Microsoft Teams make it easier to track file progress with improved visibility, control, and accessibility. You can now open the manager from the title bar or by using a keyboard shortcut, and view downloads without blocking key chat and channel actions.",
         "id": 560815,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -239,6 +501,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -263,6 +528,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -10239,9 +10507,9 @@
         "description": "SMB Admins can use Microsoft 365 Admin Agent in Microsoft Teams to complete common admin tasks and get guidance on critical setup actions.  Admin Agent can add users and assign licenses on behalf of the admin, as well as provide guidance on key SMB related topics such as organisation setup, security settings, and password resets\u2014without leaving the Teams interface.",
         "id": 558255,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10294,9 +10562,9 @@
         "description": "You can choose to select Anthropic models, in addition to OpenAI models, when editing a Word document using Copilot.",
         "id": 558440,
         "locale": null,
-        "modified": "2026-03-10T23:00:58",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11801,12 +12069,12 @@
         "description": "One-time email passcodes provide an easy way for tenant administrators and event organizers to verify anonymous, external presenters invited to their events. Anonymous external presenters will be shown with a \"Verified\" tag once completing the process. Based on admin settings, the event organizer will also have a set of options available to them that applies to all external presenters, providing the ability to control who is admitted to the meeting or allowing uninvited users with the link to be admitted from the lobby.",
         "id": 557975,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12363,12 +12631,12 @@
         "description": "Admins can now scope Purview collection policies for unmanaged cloud apps based on the presence of sensitivity labels, enabling more precise discovery of sensitive activity across inline network traffic and the Edge for Business browser. Purview DLP policies also support \"URL contains text\" as a\u00a0condition and exception, providing finer control over unmanaged cloud app usage across the network and Edge for Business, along with configurable email notifications to alert end users when activities are blocked.",
         "id": 557976,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22200,12 +22468,12 @@
         "description": "Add watermarks for AI-generated video, audio, and image gen content.",
         "id": 547831,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25683,12 +25951,12 @@
         "description": "Provides access to the same device health details currently available through the export function on the device onboarding page. \u200bWith the new device status API, customers can pull device-level information directly into their own BI tools, dashboards, and workflows, eliminating manual exports and making it easier to automate reporting at scale.",
         "id": 542792,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30557,9 +30825,9 @@
         "description": "This feature allows users to simply express their intention conversationally, and Copilot infers their intention and creates a scheduled prompt automatically. ",
         "id": 531913,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30892,9 +31160,9 @@
         "description": "Users can now apply basic conditional formatting rules to the calendar in new Outlook, allowing events and appointments to be color-coded based on sender, location, attendees, and more. #newoutlookforwindows",
         "id": 529849,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36764,9 +37032,9 @@
         "description": "The sharing panel in today\u2019s meetings is the default place for content discoverability and sharing.  New sharing panel UI is crafted with intent of modernising and simplifying default tasks such as window sharing, but also for easier discovery of sharing options and more discoverable file sharing.",
         "id": 502520,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38090,9 +38358,9 @@
         "description": "This feature introduces automated, role-targeted onboarding emails for Leaders to drive discovery of the Copilot Dashboard in Viva insights.",
         "id": 511801,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40472,12 +40740,12 @@
         "description": "This feature allows users to add only a sampled subset of search results to a review set, rather than adding the entire query output. Users can configure sampling parameters\u2014such as confidence level and sample size\u2014to ensure the subset meets their review objectives while reducing unnecessary data ingestion.",
         "id": 516578,
         "locale": null,
-        "modified": "2026-03-17T23:00:24",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41834,9 +42102,9 @@
         "description": "Add web links as references in your Copilot Notebooks.",
         "id": 516040,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-04-28T22:45:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
