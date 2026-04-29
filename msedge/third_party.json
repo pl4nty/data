@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2199769,
-    "file_count": 183
+    "size": 2206974,
+    "file_count": 184
   },
   {
     "name": "android_build_tools",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15920609,
+    "size": 15920743,
     "file_count": 846
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33244574,
-    "file_count": 4034
+    "size": 33255454,
+    "file_count": 4035
   },
   {
     "name": "boringssl",
@@ -136,7 +136,7 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 173306,
+    "size": 284678,
     "file_count": 5
   },
   {
@@ -226,7 +226,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 97561424,
+    "size": 97560475,
     "file_count": 11239
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 60709,
+    "size": 60792,
     "file_count": 46
   },
   {
@@ -386,7 +386,7 @@
   },
   {
     "name": "libc++",
-    "size": 12471160,
+    "size": 12480271,
     "file_count": 1771
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4288899,
+    "size": 4288970,
     "file_count": 602
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3483890,
+    "size": 3483878,
     "file_count": 1201
   },
   {
@@ -691,7 +691,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 549938,
+    "size": 549481,
     "file_count": 15
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7478245,
+    "size": 7475177,
     "file_count": 194
   },
   {

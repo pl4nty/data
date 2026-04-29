@@ -50,10 +50,9 @@ template("edge_overlay_config_default_warnings") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
 
-    # Edge only enforces -Wexit-time-destructors on Windows, Mac and Android.
-    # Use -Wno- to suppress rather than -= to remove, since upstream
-    # doesn't add the flag on all platforms.
-    if (is_clang && !is_win && !is_mac && !is_android) {
+    # TODO(task.ms/61663186):
+    # Fix exit-time-destructor warnings on iOS and remove this suppression.
+    if (is_clang && is_ios) {
       cflags += [ "-Wno-exit-time-destructors" ]
     }
   }
