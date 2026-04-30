@@ -34,7 +34,7 @@ end
 local l_0_9 = {}
 l_0_9.defaultAgent = {}
 l_0_9.customAgents = {}
-l_0_9.mcpServers = {}
+l_0_9.mcpServers = nil
 l_0_9.toolExecEnable = true
 local l_0_10 = {}
 l_0_10.host = (l_0_8.gateway).host or "0.0.0.0"
@@ -65,15 +65,15 @@ if not l_0_10 then
               l_0_18.model = (string.lower)(l_0_14.model or "")
               l_0_18.provider = (string.lower)(l_0_14.provider or "")
               l_0_16(l_0_17, l_0_18)
-              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out DO_STMT
 
-              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC179: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end
@@ -84,6 +84,8 @@ if not l_0_10 then
 end
 if not isnull(l_0_8.tools) and type(l_0_8.tools) == "table" then
   if not isnull((l_0_8.tools).mcpServers) and type((l_0_8.tools).mcpServers) == "table" then
+    l_0_9.mcpServers = {}
+    ;
     (table.insert)(l_0_9.mcpServers, McpParseHelper((l_0_8.tools).mcpServers))
   end
   if not isnull((l_0_8.tools).exec) and type((l_0_8.tools).exec) == "table" then
@@ -103,7 +105,7 @@ if l_0_19 and l_0_20 ~= nil then
   end
 end
 do
-  -- DECOMPILER ERROR at PC253: Overwrote pending register: R13 in 'AssignReg'
+  -- DECOMPILER ERROR at PC254: Overwrote pending register: R13 in 'AssignReg'
 
   l_0_21(l_0_3, l_0_2, l_0_4, safeJsonSerialize(l_0_9), l_0_5, 100)
   ;
@@ -111,7 +113,7 @@ do
   ;
   (mp.set_mpattribute)("MpDisableCaching")
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC272: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC273: Confused about usage of register R13 for local variables in 'ReleaseLocals'
 
 end
 

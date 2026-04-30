@@ -3,22 +3,25 @@
 
 -- params : ...
 -- function num : 0
+if GetRollingQueue("SuspNpmPackage") == nil then
+  return mp.CLEAN
+end
 local l_0_0 = (mp.GetParentProcInfo)()
 if not isnull(l_0_0) and not isnull(l_0_0.image_path) and not isnull(l_0_0.ppid) and (string.find)(l_0_0.image_path, "/node", 1, true) then
   local l_0_1 = {}
   local l_0_2 = {}
-  -- DECOMPILER ERROR at PC31: No list found for R2 , SetList fails
+  -- DECOMPILER ERROR at PC39: No list found for R2 , SetList fails
 
   local l_0_3 = {}
-  -- DECOMPILER ERROR at PC33: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC41: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC35: No list found for R3 , SetList fails
+  -- DECOMPILER ERROR at PC43: No list found for R3 , SetList fails
 
-  -- DECOMPILER ERROR at PC36: No list found for R1 , SetList fails
+  -- DECOMPILER ERROR at PC44: No list found for R1 , SetList fails
 
-  -- DECOMPILER ERROR at PC39: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC47: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC48: Overwrote pending register: R5 in 'AssignReg'
 
   l_0_2 = l_0_2(l_0_3, "node npm-cli.js", "npm install")
   if l_0_2 then

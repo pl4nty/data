@@ -35,10 +35,12 @@ local l_0_10 = {}
 l_0_10.model_provider = l_0_9.default_provider
 l_0_10.model = l_0_9.default_model
 l_0_10.autonomyLevel = l_0_9.autonomy and (l_0_9.autonomy).level or "supervised"
-l_0_10.mcpServers = {}
+l_0_10.mcpServers = nil
 l_0_10.integrations = {}
-l_0_10.gateway = {}
+l_0_10.gateway = nil
 if not isnull(l_0_9.mcp) and type(l_0_9.mcp) == "table" and not isnull((l_0_9.mcp).servers) and type((l_0_9.mcp).servers) == "table" then
+  l_0_10.mcpServers = {}
+  ;
   (table.insert)(l_0_10.mcpServers, McpParseHelper((l_0_9.mcp).servers))
 end
 local l_0_11 = {}

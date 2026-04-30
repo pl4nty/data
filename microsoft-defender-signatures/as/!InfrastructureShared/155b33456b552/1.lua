@@ -13,15 +13,18 @@ do
   if not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).ppid == nil then
     return mp.CLEAN
   end
+  if GetRollingQueue("SuspNpmPackage") == nil then
+    return mp.CLEAN
+  end
   local l_0_3 = nil
   local l_0_4 = {}
   local l_0_5 = {"node", "npm-cli.js"}
   local l_0_6 = {"node", "npx-cli.js"}
-  -- DECOMPILER ERROR at PC35: No list found for R1 , SetList fails
+  -- DECOMPILER ERROR at PC43: No list found for R1 , SetList fails
 
   l_0_5 = checkParentCmdline
   l_0_6 = l_0_3
-  -- DECOMPILER ERROR at PC38: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC46: Overwrote pending register: R4 in 'AssignReg'
 
   l_0_5 = l_0_5(l_0_6, {"", "npm install"}, 5)
   if l_0_5 then

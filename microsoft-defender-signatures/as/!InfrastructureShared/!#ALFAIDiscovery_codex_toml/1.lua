@@ -37,8 +37,10 @@ l_0_10.model_provider = l_0_9.model_provider
 l_0_10.approval_policy = l_0_9.approval_policy
 l_0_10.sandbox_mode = l_0_9.sandbox_mode
 l_0_10.web_search = l_0_9.web_search
-l_0_10.mcpServers = {}
+l_0_10.mcpServers = nil
 if not isnull(l_0_9.mcp_servers) and type(l_0_9.mcp_servers) == "table" then
+  l_0_10.mcpServers = {}
+  ;
   (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_9.mcp_servers))
 end
 local l_0_11 = safeJsonSerialize(l_0_10)
