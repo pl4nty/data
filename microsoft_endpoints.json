@@ -275,20 +275,6 @@
     {
         "category": "Default",
         "expressRoute": false,
-        "id": 33,
-        "notes": "SharePoint Hybrid Search - Endpoint to SearchContentService where the hybrid crawler feeds documents",
-        "required": false,
-        "serviceArea": "SharePoint",
-        "serviceAreaDisplayName": "SharePoint Online and OneDrive for Business",
-        "tcpPorts": "443",
-        "urls": [
-            "*.search.production.emea.trafficmanager.net",
-            "*.search.production.us.trafficmanager.net"
-        ]
-    },
-    {
-        "category": "Default",
-        "expressRoute": false,
         "id": 35,
         "required": true,
         "serviceArea": "SharePoint",

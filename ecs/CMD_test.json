@@ -1033,6 +1033,7 @@
         "EnableSettingsUXBasicRedirections": true,
         "EnableSettingsUXBranding": true,
         "EnableSettingsUXBusinessContinuityDisasterRecovery": true,
+        "EnableSettingsUXDefaultDisplaySettings": true,
         "EnableSettingsUXDirectStream": true,
         "EnableSettingsUXDisasterRecoveryPlus": false,
         "EnableSettingsUXGranularRedirections": true,

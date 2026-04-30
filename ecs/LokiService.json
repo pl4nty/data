@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260427.9.0",
-        "CalendarCompanionMsitVersion": "1.20260422.9.0",
+        "CalendarCompanionDFVersion": "1.20260428.9.0",
+        "CalendarCompanionMsitVersion": "1.20260425.10.0",
         "CalendarCompanionProdVersion": "1.20260417.8.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -691,6 +691,7 @@
         "EnablePureJsonHighlightBasedPrompts": true,
         "EnablePureJsonPromptsMapping": true,
         "EnableRecommendedBrandsPanel": true,
+        "EnableRecordingHydration": true,
         "EnableRedirectOnTopLevelDomain": false,
         "EnableRefactoredDummyProvider": false,
         "EnableSdsEndpoints": false,
