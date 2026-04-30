@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20016.40130-->
+    <!--Build: 16.0.20025.40125-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -822,6 +822,10 @@
     <o:service o:name="FormsMobileHostCreateURL">
       <o:url>https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?lang={0}&amp;Host={1}#Action=Create</o:url>
     </o:service>
+    <o:service o:name="LearningActivitiesApi" o:authentication="2">
+      <o:url>https://learningactivities.edu.cloud.microsoft/api/</o:url>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="22d27567-b3f0-4dc2-9ec2-46ed368ba538" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
     <o:service o:name="StreamWebResource" o:authentication="2">
       <o:url>https://stream.microsoft.com</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="cf53fce8-def6-4aeb-8d30-b158e7b1cf83" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
@@ -1105,6 +1109,7 @@
     <o:service o:name="FeedbackPetrolAuthUploadUrl" o:authentication="2">
       <o:url>https://petrol.office.microsoft.com/v1/feedback/authenticated</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://petrol.office.microsoft.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://petrol.office.microsoft.com/Feedback.ReadWrite" o:headerValue="Bearer {}"/>
     </o:service>
     <o:service o:name="FeedbackPetrolScopeUrlCredV3" o:authentication="2">
       <o:url>https://petrol.office.microsoft.com/Feedback.ReadWrite</o:url>
@@ -1321,6 +1326,9 @@
       <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
       <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://api.loop.cloud.microsoft/.default" o:headerValue="{}"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="21e903d7-8d1b-423b-b5e9-4f2afe3b28e1" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="M365Origin">
+      <o:url>https://m365.cloud.microsoft/</o:url>
     </o:service>
     <o:service o:name="MeControlLiveIDUrl">
       <o:url>https://account.microsoft.com/?ref=ocpp</o:url>
