@@ -1058,6 +1058,7 @@
         "EnableAccessControlRolesFetch": true,
         "EnableAccessControlVisibility": true,
         "EnableAdminToDynamicMove": true,
+        "EnableAutopatchOverview": true,
         "EnableBidirectionalSync": true,
         "EnableCheckOnboardedTime": true,
         "EnableDriverHotQueryTest": true,

@@ -1,5 +1,237 @@
 [
     {
+        "created": "2026-04-29T23:15:48",
+        "description": "We are introducing a new dedicated License Requests page in the Microsoft 365 Admin Center to help admins more easily discover, review, and manage Microsoft 365 Copilot license requests submitted by users.",
+        "id": 561206,
+        "locale": null,
+        "modified": "2026-04-29T23:15:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft 365 admin center: New dedicated License Requests page in Microsoft 365 Admin Center"
+    },
+    {
+        "created": "2026-04-29T23:15:48",
+        "description": "The Microsoft365CopilotChatIconEnabled policy is becoming the standard for configuring Copilot Chat. Extension and sidebar policies will no longer affect the appearance or functionality of Copilot Chat.",
+        "id": 561041,
+        "locale": null,
+        "modified": "2026-04-29T23:15:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Unifying Copilot Chat policy controls"
+    },
+    {
+        "created": "2026-04-29T23:15:48",
+        "description": "We are introducing new Power Automate integration capabilities for forms in SharePoint, enabling customers to create automated workflows based on responses collected using list forms, file upload forms, and document generation forms. \nWith this update, a new trigger and action are now available in Power Automate:\nTrigger: When a form is submitted\nThis operation triggers a flow when a list form, document generation form, or file upload form is submitted. Customers can use this trigger to initiate automated workflows such as approvals, notifications, or routing based on form submission events.\n\nAction: Get form metadata\n\nThis action retrieves the metadata of a form, which includes the form ID, title, link, form type, output format, and the form questions used to collect information. This enables Power Automate flows to dynamically read form schema before executing downstream automation logic.\nDisclaimer: Document generation forms are part of AI in SharePoint Public Preview. Access to DocGen Forms capabilities may be limited to customers enrolled in the preview program. List forms and file upload forms are not part of the AI in SharePoint preview.",
+        "id": 561025,
+        "locale": null,
+        "modified": "2026-04-29T23:15:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Power Automate"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Power Automate"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "SharePoint: Power Automate trigger and action for forms in SharePoint"
+    },
+    {
+        "created": "2026-04-29T23:15:48",
+        "description": "Previously customers would have system files either included or excluded manually configured. With this feature there is now a capability to provide this by default and have the option of including or excluding those paths. This list is managed by Microsoft to ensure accuracy and ease of management.\n ",
+        "id": 560057,
+        "locale": null,
+        "modified": "2026-04-29T23:15:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention: Add control to include or exclude Default file paths exclusions for Windows"
+    },
+    {
         "created": "2026-04-28T22:45:03",
         "description": "Today, Insider Risk Management (IRM) provides policy-driven protection for data leaks, data theft, and risky AI usage. However, while policy-driven protections are powerful, customers may not always have clear visibility into where coverage can be optimized or expanded to address latent insider risk.\n\nIRM now provides guidance on what protections are missing or which policy configurations deliver the most incremental value, providing customers with more comprehensive coverage to mitigate their most critical insider risk.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  \n\n",
         "id": 560600,
@@ -541,9 +773,9 @@
         "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
         "id": 560700,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2001,9 +2233,9 @@
         "description": "Users can export de-identified, row-level agent metrics and attributes from the Agent Dashboard. Exported data provides detailed insights into agent usage and user-level agent interactions across the organization, with personal identifiers removed. \n#copilotcontrolsystem",
         "id": 560538,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5302,9 +5534,9 @@
         "description": "Customers can now view and understand their agent landscape through the new Overview page that will be included as part of the Agent Dashboard in Microsoft Viva. This experience will provide customers with key at-a-glance insights on adoption in their organizations, visibility into who\u2019s creating agents used in their organization, and details on what business process categories these agents are used for.",
         "id": 559996,
         "locale": null,
-        "modified": "2026-04-07T23:00:18",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7511,9 +7743,9 @@
         "description": "Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).",
         "id": 558286,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7827,9 +8059,9 @@
         "description": "Multimodal capture enables users to transcribe audio, take images, and type notes in a single session. Copilot then creates a structured Copilot Page with insights and user-captured content, saved to a user-selected Copilot Notebook. Designed for capturing offline work moments\u2014including in-person conversations, whiteboard sessions, and personal notes. Other endpoints coming soon.",
         "id": 559095,
         "locale": null,
-        "modified": "2026-03-24T23:15:57",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10818,12 +11050,12 @@
         "description": "When create or edit a presentation with Copilot in PowerPoint, you can now select which model to use, including both Open AI and Anthropic models. Available to Microsoft 365 Copilot\u2013licensed users.",
         "id": 558443,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13028,12 +13260,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557277,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13083,12 +13315,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 557276,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13949,9 +14181,9 @@
         "description": "IT gets new building level insights on the recommended actions page in the Teams Rooms Pro Management portal.  This feature intelligently identifies buildings with high Teams Rooms utilization to help IT prioritize upgrades of bring your own device (BYOD) meeting spaces and ensure consistent, high-quality user experiences throughout their office buildings.  Available with a Teams Rooms Pro or Shared Space license.",
         "id": 553591,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14804,9 +15036,9 @@
         "description": "When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group.  You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.",
         "id": 557165,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -17967,9 +18199,9 @@
         "description": "Microsoft Teams will soon support Secure Reliable Transport (SRT) streaming in Teams town halls. SRT is a network protocol designed to deliver high-quality, low-latency video across the public internet.\n",
         "id": 554931,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22645,12 +22877,12 @@
         "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Available to Copilot Chat users (without a Microsoft 365 Copilot license).",
         "id": 548646,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -30843,9 +31075,9 @@
         "description": "Enables users to schedule recurring prompts to declarative agents like Analyst, Idea Coach and more.",
         "id": 531759,
         "locale": null,
-        "modified": "2026-01-15T00:15:15",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31972,10 +32204,10 @@
         "description": "You\u2019ll soon be able to create Planner tasks and view task details directly in Microsoft 365 Copilot chat. This integration makes it easy to manage and update your tasks seamlessly across Copilot and Planner without switching apps. ",
         "id": 516577,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -32085,15 +32317,15 @@
     },
     {
         "created": "2025-11-18T17:15:10",
-        "description": "Stay on top of your inbox with the new Copilot voice experience in the Outlook mobile app. Copilot starts by summarizing your most recent unread emails and then suggests actions like flagging, pinning, archiving, deleting or drafting a reply \u2013 all without the hassle of navigating your inbox by hand. You can interrupt or redirect Copilot at any point in the conversation. ",
+        "description": "Stay on top of your inbox with the new Copilot voice experience in the Outlook mobile app. Ask Copilot to summarize your recent unread emails and then take action like flagging, pinning, archiving, or marking as read\u00a0\u2013 all without the hassle of navigating your inbox by hand. You can interrupt or redirect Copilot at any point in the conversation.",
         "id": 516575,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43092,12 +43324,12 @@
         "description": "Users will be able to use Copilot Notebooks in OneNote on iPhone and iPad.",
         "id": 511794,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -67123,9 +67355,9 @@
         "description": "Admins can proactively manage peripherals in bring your own device (BYOD) rooms and desks with reports in the Pro Management portal that now flag if devices are faulty, undetectable by a PC, missing, or moved. Reports in the Pro Management portal require a Teams Shared Devices license for the room, and reports for desks are in public preview.",
         "id": 493319,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -109170,12 +109402,12 @@
         "description": "Leverage policy scope insights to understand the aggregated volume of policy violations that are missed from users that are not currently scoped into the policy. Communication Compliance provides the tools to help organizations detect code of conduct and regulatory compliance violations, such as harassing or threatening language, sharing of adult content, and inappropriate sharing of sensitive information. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.",
         "id": 168843,
         "locale": null,
-        "modified": "2025-09-23T23:15:02",
+        "modified": "2026-04-29T23:15:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"

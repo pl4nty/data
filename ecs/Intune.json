@@ -261,7 +261,11 @@
                     "SharedFlight3",
                     "SharedFlight4",
                     "SharedFlight5",
-                    "Fundamentals_Test"
+                    "Fundamentals_Test",
+                    "SharedBoolFlight1",
+                    "SharedStringFlight1",
+                    "SharedIntFlight1",
+                    "SharedFloatFlight1"
                 ]
             }
         }
@@ -306,7 +310,6 @@
         "FlightingV2": {
             "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true,
-            "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "SCGWUseEGATsForAppsTargeting": true,
             "UseEGATsForDPAs": true
