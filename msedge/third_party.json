@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33255454,
-    "file_count": 4035
+    "size": 33290826,
+    "file_count": 4036
   },
   {
     "name": "boringssl",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16335141,
+    "size": 16335487,
     "file_count": 1952
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43983436,
-    "file_count": 3329
+    "size": 44000146,
+    "file_count": 3334
   },
   {
     "name": "googletest",
@@ -291,7 +291,7 @@
   },
   {
     "name": "highway",
-    "size": 1117211,
+    "size": 1129421,
     "file_count": 15
   },
   {
@@ -386,8 +386,8 @@
   },
   {
     "name": "libc++",
-    "size": 12480271,
-    "file_count": 1771
+    "size": 12477908,
+    "file_count": 1770
   },
   {
     "name": "libc++abi",
@@ -501,7 +501,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19647979,
+    "size": 19660779,
     "file_count": 19
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4288970,
+    "size": 4292778,
     "file_count": 602
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3483878,
+    "size": 3484022,
     "file_count": 1201
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7475177,
+    "size": 7475242,
     "file_count": 194
   },
   {
