@@ -5,15 +5,15 @@
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
 if l_0_0 == nil or l_0_0.image_path == nil then
-  return mp.LOWFI
+  return mp.CLEAN
 end
 local l_0_1 = (string.lower)(l_0_0.image_path)
 if not l_0_1:find("\\explorer.exe") then
-  return mp.LOWFI
+  return mp.CLEAN
 end
 local l_0_2 = (mp.GetScannedPPID)()
 if l_0_2 == "" or l_0_2 == nil then
-  return mp.LOWFI
+  return mp.CLEAN
 end
 local l_0_3 = "https://"
 local l_0_4 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
@@ -33,5 +33,5 @@ l_0_7[0] = l_0_5
 if CheckUrlReputationSimple(l_0_7, l_0_6, 60) == true then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

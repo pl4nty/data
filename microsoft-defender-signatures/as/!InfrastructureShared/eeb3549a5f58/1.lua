@@ -49,37 +49,80 @@ l_0_1["Trojan:Win64/Stealc.ZZ!sms"] = true
 l_0_1["Trojan:Win64/Stealc.ZY!sms"] = true
 l_0_1["PWS:Win64/StealC.STA!sms"] = true
 l_0_1["Trojan:Win64/Petwosel.A!sms"] = true
+local l_0_2 = true
 if not l_0_1[l_0_0.utf8p2] then
-  (bm.trigger_sig)("MaceNonVetted_Sig", tostring(l_0_0.utf8p2))
-  return mp.CLEAN
+  l_0_2 = false
 end
-local l_0_2 = (string.format)("DetectedRegions:%s", l_0_0.ppid)
-local l_0_3 = GetRollingQueue(l_0_2)
-if not l_0_3 or type(l_0_3) ~= "table" then
-  return mp.CLEAN
-end
-local l_0_4 = 0
-for l_0_8,l_0_9 in ipairs(l_0_3) do
-  local l_0_10 = 32768
-  for l_0_14 = 1, #l_0_9.value, l_0_10 do
-    l_0_4 = l_0_4 + 1
-    local l_0_15 = (string.format)("f09d0e89_%d", l_0_4)
-    local l_0_16 = (string.sub)(l_0_9.value, l_0_14, l_0_14 + l_0_10 - 1)
-    ;
-    (bm.add_related_string)(l_0_15, l_0_16, bm.RelatedStringBMReport)
+do
+  if not l_0_2 then
+    local l_0_3 = mp.SIGATTR_LOG_SZ
+    for l_0_7 = l_0_3, 1, -1 do
+      if (sigattr_tail[l_0_7]).attribute == 16491 and (sigattr_tail[l_0_7]).utf8p1 == "SmsScanDetection" then
+        local l_0_8 = ((sigattr_tail[l_0_7]).utf8p2):lower()
+        if l_0_8 then
+          local l_0_9 = {}
+          -- DECOMPILER ERROR at PC89: No list found for R9 , SetList fails
+
+          -- DECOMPILER ERROR at PC90: Overwrote pending register: R10 in 'AssignReg'
+
+          if ("trojan:win64/stealc.zy")(l_0_8, l_0_9) then
+            do
+              do
+                l_0_2 = true
+                do break end
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out DO_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                -- DECOMPILER ERROR at PC98: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
+            end
+          end
+        end
+      end
+    end
   end
-  if l_0_4 == 0 then
+  if not l_0_2 then
+    (bm.trigger_sig)("MaceNonVetted_Sig", tostring(l_0_0.utf8p2))
     return mp.CLEAN
   end
-  l_0_4 = l_0_4 + 1
-  local l_0_17 = (string.format)("f09d0e89_%d", l_0_4)
+  local l_0_10 = (string.format)("DetectedRegions:%s", l_0_0.ppid)
+  local l_0_11 = GetRollingQueue(l_0_10)
+  if not l_0_11 or type(l_0_11) ~= "table" then
+    return mp.CLEAN
+  end
+  local l_0_12 = 0
+  for l_0_16,l_0_17 in ipairs(l_0_11) do
+    local l_0_18 = 32768
+    for l_0_22 = 1, #l_0_17.value, l_0_18 do
+      l_0_12 = l_0_12 + 1
+      local l_0_23 = (string.format)("f09d0e89_%d", l_0_12)
+      local l_0_24 = (string.sub)(l_0_17.value, l_0_22, l_0_22 + l_0_18 - 1)
+      ;
+      (bm.add_related_string)(l_0_23, l_0_24, bm.RelatedStringBMReport)
+    end
+    if l_0_12 == 0 then
+      return mp.CLEAN
+    end
+    l_0_12 = l_0_12 + 1
+    local l_0_25 = (string.format)("f09d0e89_%d", l_0_12)
+    ;
+    (bm.add_related_string)(l_0_25, ";", bm.RelatedStringBMReport)
+  end
+  if l_0_12 == 0 then
+    return mp.CLEAN
+  end
   ;
-  (bm.add_related_string)(l_0_17, ";", bm.RelatedStringBMReport)
+  (bm.add_related_string)("d9f18702", l_0_0.utf8p2, bm.RelatedStringBMReport)
+  return mp.INFECTED
 end
-if l_0_4 == 0 then
-  return mp.CLEAN
-end
-;
-(bm.add_related_string)("d9f18702", l_0_0.utf8p2, bm.RelatedStringBMReport)
-return mp.INFECTED
 
