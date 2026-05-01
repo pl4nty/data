@@ -36,6 +36,9 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
   if l_0_12 and l_0_12.error == 3 then
     l_0_11.CRReportError = "Failed the first attempt"
     l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)
+    if l_0_12 and l_0_12.error then
+      return mp.CLEAN
+    end
   end
   for l_0_16,l_0_17 in ipairs(l_0_12.urls) do
     if l_0_17.determination == 4 then

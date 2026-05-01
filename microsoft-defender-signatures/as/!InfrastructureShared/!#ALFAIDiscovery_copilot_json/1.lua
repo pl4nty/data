@@ -10,10 +10,10 @@ end
 if not (mp.get_mpattribute)("Lua:FnameAttr!config.json") then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if not (string.find)(l_0_1, "\\.copilot\\config.json", 1, false) then
+if not (mp.get_mpattribute)("Lua:LastFolder0!.copilot") then
   return mp.CLEAN
 end
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_2 = "ai_discovery_scan"
 local l_0_3 = "ai_copilot_json"
 local l_0_4 = (string.lower)("ai_copilot_json" .. l_0_1)
@@ -61,9 +61,9 @@ do
   if not l_0_8.mcpServers and not l_0_8.servers then
     local l_0_11, l_0_12, l_0_13, l_0_14 = (l_0_8.mcp).servers
   end
-  -- DECOMPILER ERROR at PC118: Confused about usage of register: R11 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC115: Confused about usage of register: R11 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC126: Confused about usage of register: R11 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC123: Confused about usage of register: R11 in 'UnsetPending'
 
   if next(l_0_11) then
     (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_11))
@@ -74,11 +74,11 @@ do
   local l_0_15 = nil
   local l_0_16, l_0_17 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
   if l_0_17 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
-    for l_0_21,l_0_22 in pairs(R16_PC152) do
+    for l_0_21,l_0_22 in pairs(R16_PC149) do
       local l_0_18 = nil
-      -- DECOMPILER ERROR at PC156: Confused about usage of register: R19 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC153: Confused about usage of register: R19 in 'UnsetPending'
 
-      if l_0_22 == l_0_4 and R19_PC156 == l_0_16 then
+      if l_0_22 == l_0_4 and R19_PC153 == l_0_16 then
         return mp.CLEAN
       end
     end
