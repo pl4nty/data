@@ -349,6 +349,7 @@
             "EGM_UseRedisCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
+            "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
             "EnableRiskScoreOptimization": true,
             "MigratePartnerDeviceAttributeToMB": true,
@@ -614,6 +615,7 @@
         }
     },
     "Segmentation": {
+        "EdgeAll": "true",
         "RolloutGroup": "G4",
         "RolloutGroupV2": "G4"
     },
