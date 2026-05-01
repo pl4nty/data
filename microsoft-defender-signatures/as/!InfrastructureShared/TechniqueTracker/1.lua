@@ -3273,4 +3273,22 @@ getAndDecodePowershellEncodedCommand = function(l_93_0, l_93_1)
   end
 end
 
+extractUrlParts = function(l_94_0)
+  -- function num : 0_93
+  if l_94_0 == nil and #l_94_0 < 5 then
+    return 
+  end
+  local l_94_1 = l_94_0:match("^%w+://([^/%s]+)")
+  if not l_94_1 then
+    return nil, nil, nil
+  end
+  local l_94_2 = l_94_1:match(":(%d+)$")
+  l_94_1 = l_94_1:gsub(":%d+$", "")
+  local l_94_3, l_94_4 = l_94_1:match("([^.]+)%.([^.]+)$")
+  if not l_94_3 or not l_94_4 then
+    return nil, nil, l_94_2
+  end
+  return l_94_3, l_94_4, l_94_2
+end
+
 

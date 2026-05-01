@@ -1149,7 +1149,7 @@ EnablePrecisionPulse = function(l_4_0, l_4_1, l_4_2, l_4_3, l_4_4)
           l_4_27 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
           l_4_10.report = safeJsonSerialize(l_4_9, 260)
           l_4_10.TAG = "NOLOOKUP"
-          pcall(mp.GetUrlReputation, l_4_28, l_4_10)
+          SafeGetUrlReputation(l_4_28, l_4_10, false, 2000)
           -- DECOMPILER ERROR at PC1453: Confused about usage of register R37 for local variables in 'ReleaseLocals'
 
           -- DECOMPILER ERROR: 60 unprocessed JMP targets

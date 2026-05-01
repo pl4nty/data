@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAHmdEnablePrecisionPulseRec\1.luac 
+-- Command line: lua\!InfrastructureShared\!#LUAHmdEnablePrecisionPulseRecurring\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -32,31 +32,32 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
   l_0_11.SIG_CONTEXT = "LUA_GENERIC"
   l_0_11.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
   l_0_11.TAG = "NOLOOKUP"
-  local l_0_12, l_0_13 = pcall(mp.GetUrlReputation, l_0_10, l_0_11)
-  if not l_0_12 or not l_0_13 or not l_0_13.urls then
-    return mp.CLEAN
+  local l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 2000)
+  if l_0_12 and l_0_12.error == 3 then
+    l_0_11.CRReportError = "Failed the first attempt"
+    l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)
   end
-  for l_0_17,l_0_18 in ipairs(l_0_13.urls) do
-    if l_0_18.determination == 4 then
-      local l_0_19 = l_0_18.urlresponsecontext
-      local l_0_20 = ""
-      if l_0_19 then
-        for l_0_24,l_0_25 in ipairs(l_0_19) do
-          local l_0_26 = l_0_25.key
-          local l_0_27 = l_0_25.value
-          if l_0_26 == "Payload" then
-            l_0_20 = l_0_27
-            local l_0_28, l_0_29 = pcall(EnablePrecisionPulse, l_0_20, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
-            if l_0_29 then
-              local l_0_30 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
+  for l_0_16,l_0_17 in ipairs(l_0_12.urls) do
+    if l_0_17.determination == 4 then
+      local l_0_18 = l_0_17.urlresponsecontext
+      local l_0_19 = ""
+      if l_0_18 then
+        for l_0_23,l_0_24 in ipairs(l_0_18) do
+          local l_0_25 = l_0_24.key
+          local l_0_26 = l_0_24.value
+          if l_0_25 == "Payload" then
+            l_0_19 = l_0_26
+            local l_0_27, l_0_28 = pcall(EnablePrecisionPulse, l_0_19, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
+            if l_0_28 then
+              local l_0_29 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
+              local l_0_30 = {}
+              l_0_30[1] = l_0_29
               local l_0_31 = {}
-              l_0_31[1] = l_0_30
-              local l_0_32 = {}
-              l_0_32.SIG_CONTEXT = "LUA_GENERIC"
-              l_0_32.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-              l_0_32.TAG = "NOLOOKUP"
-              l_0_32.Report_Error = l_0_29
-              pcall(mp.GetUrlReputation, l_0_31, l_0_32)
+              l_0_31.SIG_CONTEXT = "LUA_GENERIC"
+              l_0_31.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
+              l_0_31.TAG = "NOLOOKUP"
+              l_0_31.Report_Error = l_0_28
+              SafeGetUrlReputation(l_0_30, l_0_31, false, 4000)
             end
             break
           end
