@@ -563,7 +563,8 @@
             "PRSv3-Phase5": true,
             "PRSv3-Phase6": true,
             "PRSv3-Phase7": true,
-            "PRSv3-Validation": true
+            "PRSv3-Validation": true,
+            "ProcessRestrictedApps": true
         }
     },
     "SVC_RACerts": {
