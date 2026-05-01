@@ -27,19 +27,6 @@
                 "msFunctionIntegrityValidation"
             ]
         },
-        "ReadAloudIconOnAddressBarLogicBased": {
-            "enableFeatures": [
-                "msReadAloudIconOnAddressBarLogicBased",
-                "msReadAloudIconReaderModeEligible",
-                "msReadAloudIconDisallowList"
-            ],
-            "parameters": [
-                {
-                    "name": "content_size",
-                    "value": "7000"
-                }
-            ]
-        },
         "SecureNetworkGA": {
             "enableFeatures": [
                 "msVpnModes",
