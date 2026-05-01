@@ -237,6 +237,8 @@
         "azureml://registries/azureml-deepseek/models/deepseek-v3.1",
         "azureml://registries/azureml-deepseek/models/deepseek-v3.2",
         "azureml://registries/azureml-deepseek/models/deepseek-v3.2-speciale",
+        "azureml://registries/azureml-deepseek/models/deepseek-v4-pro",
+        "azureml://registries/azureml-deepseek/models/deepseek-v4-flash",
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",

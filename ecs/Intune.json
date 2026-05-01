@@ -652,6 +652,11 @@
             "EnableWpa3PersonalForIosFlight": true
         }
     },
+    "UX_DeviceUsers": {
+        "FlightingV2": {
+            "ManagedHomeScreenRemoteActions": true
+        }
+    },
     "UX_EPM": {
         "FlightingV2": {
             "1474d187-578a-4054-8f4d-8e77aa8deb5a": true,

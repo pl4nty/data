@@ -643,10 +643,13 @@
     "Segmentation": {
         "AudienceGroup": "general",
         "Cloud": "Public",
+        "CopilotAdminAudience": "CopilotWW",
+        "CopilotAudience": "CopilotWW",
         "DataDonationDisabledGroups": "false",
         "EDPSTenants": "false",
         "EarlyR2Ring": "false",
         "EliteUsers": "false",
+        "FrontierAdminAudience": "None",
         "FrontierAudience": "None",
         "IsInternalUser": "false",
         "M365ChatAllow": "false",

@@ -1,5 +1,218 @@
 [
     {
+        "created": "2026-04-30T23:30:16",
+        "description": "Authoritative Sites feature empowers administrators to designate specific SharePoint sites as official, trusted sources of information. By classifying these sites as authoritative these high-quality, credible content, such as company news, policies, and updates, are prioritized across Copilot Chat and Copilot Search experiences",
+        "id": 561323,
+        "locale": null,
+        "modified": "2026-04-30T23:30:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "SharePoint: Authoritative Sites "
+    },
+    {
+        "created": "2026-04-30T23:30:16",
+        "description": "We are introducing a new Power Automate action that enables automated document generation using document generation (DocGen) forms in SharePoint. \nGenerate document from form (Preview) allows customers to create documents from a template by mapping data inputs to predefined template fields.\nDocuments are generated as part of an automated flow and stored in SharePoint.\nThis capability supports scenarios such as creating contracts, invoices, letters, or reports using structured templates and form-driven inputs.\nThe action works by mapping input data to template fields and returns the generated document along with file metadata such as location and status.",
+        "id": 561026,
+        "locale": null,
+        "modified": "2026-04-30T23:30:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Automate"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Automate"
+                },
+                {
+                    "tagName": "SharePoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Generate documents using forms in SharePoint with Power Automate"
+    },
+    {
+        "created": "2026-04-30T23:30:16",
+        "description": "Meetings as References in Copilot Notebooks bring Teams meeting content into the notebook experience, enabling users to ground Copilot on the discussions, decisions, and context that drive their work. By adding meetings as knowledge sources, users can connect transcripts, notes, chats, and shared content directly to their projects, enriching notebooks beyond files alone and improving downstream outputs like presentations and briefs. \n\nAvailable in Copilot Notebooks across Microsoft 365.",
+        "id": 560706,
+        "locale": null,
+        "modified": "2026-04-30T23:30:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Teams Meetings in Copilot Notebooks"
+    },
+    {
         "created": "2026-04-29T23:15:48",
         "description": "We are introducing a new dedicated License Requests page in the Microsoft 365 Admin Center to help admins more easily discover, review, and manage Microsoft 365 Copilot license requests submitted by users.",
         "id": 561206,
@@ -6534,9 +6747,9 @@
         "description": "Users will be able to see a community's pinned resources and related communities in Teams for iOS.",
         "id": 559107,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19601,9 +19814,9 @@
         "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
         "id": 554927,
         "locale": null,
-        "modified": "2026-03-18T23:15:26",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20259,9 +20472,9 @@
         "description": "Users can now copy tables created in Copilot. Leverage Copilot to make your content better and use it anywhere you need to.",
         "id": 553595,
         "locale": null,
-        "modified": "2026-02-03T00:15:51",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -20613,12 +20826,12 @@
         "description": "Currently, clicking on cited content in Copilot opens files outside of Copilot. With this new feature, content can be opened directly in Copilot Chat to make viewing documents more streamlined alongside chat. This change is not available on the Microsfot 365 Copilot mobile app or when using Copilot in Edge, Copilot in Excel, Copilot in Word, and Copilot PowerPoint.",
         "id": 548641,
         "locale": null,
-        "modified": "2026-01-30T23:15:49",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21577,12 +21790,12 @@
         "description": "The Copilot Dashboard\u2019s updated Readiness page provides IT leaders with tailored Copilot configuration recommendations. Th suggested settings are meant to streamline deployment, enhance user experience, and help users get most out of Microsoft 365 Copilot, Copilot Chat and agents. #copilotcontrolsystem",
         "id": 551196,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22584,9 +22797,9 @@
         "description": "When requesting a Microsoft 365 Copilot license, users can now provide a business justification explaining why they need Copilot. This context is shown to admins during review, helping them make faster, more informed approval decisions and supporting governance and audit needs.",
         "id": 547731,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -24159,9 +24372,9 @@
         "description": "We\u2019re excited to announce that Organizational Data in Microsoft 365 is now available in the GCC-Moderate (GCC-M) environment! Organizational Data in Microsoft 365 provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.",
         "id": 508518,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26831,9 +27044,9 @@
         "description": "Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you haven't enrolled, you\u2019ll get an in-product prompt to opt-in and enroll your voice profile simply by speaking in a meeting. Admins can enable or disable this feature for their organization.",
         "id": 537269,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41724,9 +41937,9 @@
         "description": "Your Viva Engage communities will now be available in Teams along side teams, chats and channels. Engage communities in Microsoft Teams make it simple to connect, share, and learn across your organization. This new experience brings discoverable, asynchronous conversations and leadership engagement into Teams\u2014helping employees explore ideas and perspectives beyond project-based collaboration.",
         "id": 513274,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -44644,9 +44857,9 @@
         "description": "Viva Insights is creating an Agent Dashboard, designed to be a central place for leaders, delegates and analysts to understand how your organization is adopting agents. #copilotcontrolsystem",
         "id": 506749,
         "locale": null,
-        "modified": "2026-02-24T00:15:57",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -112366,9 +112579,9 @@
         "description": "Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.",
         "id": 392328,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-04-30T23:30:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
