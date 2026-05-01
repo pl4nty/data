@@ -330,6 +330,26 @@ var CloudExperienceHost;
                 }
             });
         }
+        static getDaysOutOfDate() {
+            CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getDaysOutOfDateStarted");
+            return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPDaysOutOfDate")) {
+                    try {
+                        const daysOutOfDate = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").getDaysOutOfDate();
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getDaysOutOfDateSucceeded", JSON.stringify(daysOutOfDate));
+                        completeDispatch(daysOutOfDate);
+                    }
+                    catch (err) {
+                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getDaysOutOfDateFailure", CloudExperienceHost.GetJsonFromError(err));
+                        errorDispatch(err);
+                    }
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_getDaysOutOfDateFailure", "ApiNonexistentOnClient");
+                    errorDispatch("ApiNonexistentOnClient");
+                }
+            });
+        }
     }
     CloudExperienceHost.ExpeditedUpdate = ExpeditedUpdate;
 })(CloudExperienceHost || (CloudExperienceHost = {}));

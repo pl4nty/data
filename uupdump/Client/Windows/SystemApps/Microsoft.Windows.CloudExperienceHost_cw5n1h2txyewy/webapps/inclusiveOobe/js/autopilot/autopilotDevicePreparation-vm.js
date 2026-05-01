@@ -40,6 +40,7 @@ define([
             this.AUTOPILOT_DPP_REBOOT_CHANGES_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppRebootFix");
             this.AUTOPILOT_FWT_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotFastWindowsTelemetry");
             this.AUTOPILOT_DPP_CRASH_RECOVERY_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDppCrashRecovery");
+            this.AUTOPILOT_DEVICE_TAGGING_ENABLED = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("AutopilotDeviceTagging");
             this.AUTOPILOT_RESILIENCE_CONTEXT_OPTION_ID = "DppOptionPolicy:7273";
 
             this.AUTOPILOT_DEVICE_PREPARATION_UTILITIES_INSTANCENAME = "autopilotDevicePreparationUtilitiesInstance";
@@ -184,6 +185,7 @@ define([
             this.currentResultCode = "";
             this.currentDetails = "";
             this.terminalVirtualPageAlreadyDisplayed = false;
+            this.isExitingPage = false;
             this.currentVirtualPageId = this.VIRTUAL_PAGE_IN_PROGRESS;
             this.networkConnectionLostTimerPromise = null;
             this.isNetworkConnected = false;
@@ -927,6 +929,14 @@ define([
                 "DevicePrepPage_NextButtonClicked_Started",
                 "DevicePrepPage: Next button selected");
 
+            if (this.isExitingPage) {
+                this.commercialDiagnosticsUtilities.logInfoEvent(
+                    "DevicePrepPage_NextButtonClicked_Skipped",
+                    "DevicePrepPage: Skipping Next button click because page exit is already in progress.");
+                return WinJS.Promise.as(true);
+            }
+
+            this.isExitingPage = true;
             return this.exitPageAsync(ModernDeployment.Autopilot.Core.DevicePreparationPageStatus.exitedOnSuccess);
         }
 
@@ -2669,6 +2679,33 @@ define([
                     });
 
                 await this.logTsmProcessInfoAsync(this.TSM_STATE_PAGE_CLEANUP_END_WITH_SUCCESS, "");
+
+                if (this.AUTOPILOT_DEVICE_TAGGING_ENABLED) {
+                    this.commercialDiagnosticsUtilities.logInfoEvent(
+                        "DevicePrepPage_AutoExitOnSuccess_Started",
+                        "DevicePrepPage: Auto-exiting success page after brief delay.");
+
+                    await new WinJS.Promise((resolve) => setTimeout(resolve, this.HOLD_COMPLETION_PERCENTAGE_IN_MILLISECONDS));
+
+                    if (!this.isExitingPage) {
+                        this.isExitingPage = true;
+
+                        try {
+                            await this.exitPageAsync(ModernDeployment.Autopilot.Core.DevicePreparationPageStatus.exitedOnSuccess);
+                        } catch (autoExitError) {
+                            this.commercialDiagnosticsUtilities.logExceptionEvent(
+                                "DevicePrepPage_AutoExitOnSuccess_Failed",
+                                "DevicePrepPage: Auto-exit failed. User can still click Next to proceed.",
+                                autoExitError);
+
+                            this.isExitingPage = false;
+                        }
+                    } else {
+                        this.commercialDiagnosticsUtilities.logInfoEvent(
+                            "DevicePrepPage_AutoExitOnSuccess_Skipped",
+                            "DevicePrepPage: Skipping auto-exit because page exit is already in progress.");
+                    }
+                }
 
             } catch (e) {
                 if (this.terminalVirtualPageAlreadyDisplayed) {

@@ -279,11 +279,15 @@ define([
 
                 if (streamRef != null) {
                     let qrCodeElement = document.getElementById("qrCodeImage");
-                    qrCodeElement.setAttribute("aria-label", resourceStrings.DeviceLinkQRCodeNarratorText);
 
                     let stream = await streamRef.openReadAsync();
                     let blob = MSApp.createBlobFromRandomAccessStream("image/png", stream);
                     qrCodeElement.src = URL.createObjectURL(blob);
+
+                    let qrNarratorText = this.resourceStrings["DeviceLinkQRCodeNarratorText"] || "";
+                    qrCodeElement.setAttribute("alt", qrNarratorText);
+                    qrCodeElement.setAttribute("aria-label", qrNarratorText);
+                    qrCodeElement.removeAttribute("aria-hidden");
 
                     await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_GENERATE_QR);
                 } else {

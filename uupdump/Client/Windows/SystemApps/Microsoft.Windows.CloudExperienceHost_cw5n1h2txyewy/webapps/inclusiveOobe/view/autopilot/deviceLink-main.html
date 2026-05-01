@@ -50,7 +50,10 @@
             <div id="scrollableSection" class="scroll-view body-sub-header">
                 <div id="deviceLinkOptionsVirtualPageSection" data-bind="if: $root.showDeviceLinkOptionsVirtualPage">
                     <p id="option1Title" class="optionTitle" data-bind="html: $root.option1Title"></p>
-                    <p><img id="qrCodeImage" class="qr" /></p>
+                    <!-- aria-hidden removed by deviceLink-vm.js createQrCodeAsync() after image loads -->
+                    <div aria-live="polite">
+                        <p><img id="qrCodeImage" class="qr" alt="" role="img" aria-hidden="true" /></p>
+                    </div>
                     <p id="option1Body" data-bind="html: $root.option1Body"></p>
 
                     <p id="option2Title" class="optionTitle" data-bind="html: $root.option2Title"></p>
