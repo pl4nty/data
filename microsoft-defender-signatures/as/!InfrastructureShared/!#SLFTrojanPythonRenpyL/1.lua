@@ -3,11 +3,12 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-if not l_0_0 or l_0_0 == nil then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+if not l_0_1 or not l_0_0 then
   return mp.CLEAN
 end
-if (mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE) == "__init__.py" and (string.match)(l_0_0, "\\data\\python%-packages\\[^\\]+\\__init__%.py$") then
+if l_0_0 == "__init__.py" and (string.match)(l_0_1, "\\data\\python%-packages\\[^\\]+\\__init__%.py$") then
   return mp.INFECTED
 end
 return mp.CLEAN
