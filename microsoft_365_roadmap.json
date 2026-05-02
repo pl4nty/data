@@ -73969,55 +73969,6 @@
     },
     {
         "created": "2025-04-28T23:15:36",
-        "description": "Teams Audit Events for Meetings, including MeetingDetail and MeetingParticipantDetail, will soon be available in GCC. This enhancement will provide administrators with comprehensive insights into meeting activities, helping to ensure compliance and improve operational efficiency. MeetingDetail: Captures detailed information about meetings, including start and end times, meeting subject, and organizer details. MeetingParticipantDetail: Logs participant information, including join and leave times, participant roles, and any changes in participant status during the meeting. Audit logs are accessible through the Microsoft Purview portal, where administrators can search, filter, and export audit data for detailed analysis. These logs are essential for maintaining compliance, investigating incidents, and ensuring the security of Teams activities.\n",
-        "id": 491010,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Teams Meeting Audit Events in GCC"
-    },
-    {
-        "created": "2025-04-28T23:15:36",
         "description": "The Interpreter agent enables real-time interpretation in Teams meetings in up to nine languages so each participant can speak and listen in the language of their choice. Meeting participants can also opt-in to have Interpreter simulate their personal voice for a more inclusive experience.",
         "id": 490740,
         "locale": null,
@@ -75860,61 +75811,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot surfaces key statistics in the top of a document"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "Copilot can turn the referenced files in a notebook into a dynamic audio overview, transforming them into a listening experience that\u2019s easy to follow. To generate an audio overview in Copilot Notebooks, select \u2018Generate audio overview\u2019 at the top of the notebook. This capability is only available in English currently.",
-        "id": 487854,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot can generate an audio overview of a notebook"
     },
     {
         "created": "2025-04-23T16:15:28",
@@ -81847,73 +81743,6 @@
         "title": "Microsoft Purview compliance portal: Data Security Posture Management for AI"
     },
     {
-        "created": "2025-04-05T00:00:03",
-        "description": "Data assessments in Microsoft Purview Data Security Posture Management for AI provides a way for admins to drive data security outcomes by viewing default assessments, reviewing the data sensitivity and user accesses on locations, and performing remediation actions to mitigate risk. ",
-        "id": 485767,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Security Posture Management for AI - Data Assessments"
-    },
-    {
         "created": "2025-04-03T23:45:17",
         "description": "Detection, processing and storage of interactions done on Enterprise AI and AI applications such as Security Copilot, Copilot Studio and others under Microsoft Purview Data Compliance solutions including Data Lifecycle Management, eDiscovery, and Communication Compliance will begin using a pay-as-you-go pricing model on May 1 in preparation for general availability.\u202fMicrosoft Purview Audit will only use pay-as-you-go pricing for audit logs related to non-Microsoft Enterprise AI and AI applications. Microsoft 365 Copilot Chat data (with or without a Copilot license) will not be impacted by these new pay-as-you-go meters. \nMicrosoft Purview Communication Compliance provides the tools to help organizations detect regulatory\u202fcompliance\u202fviolations (for example SEC or FINRA), such as sensitive or confidential\u202finformation, harassing or threatening language, and sharing of adult content. Built with privacy by design,\u202fusernames are pseudonymized by\u202fdefault, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in\u202fplace to ensure user-level privacy. \n",
         "id": 488495,
@@ -85292,73 +85121,6 @@
     },
     {
         "created": "2025-03-21T23:15:06",
-        "description": "The \"Move To\" option is now available in the pop-out ribbon in New Outlook and Outlook for Web, making it easier to organize emails. Quickly move messages to any folder without switching back to the main window. This update ensures a seamless and consistent email management experience.  #newoutlookforwindows",
-        "id": 484059,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Move to in the pop-out ribbon in New Outlook and Outlook for Web"
-    },
-    {
-        "created": "2025-03-21T23:15:06",
         "description": "We are streamlining the campaign management experience in Viva Amplify and campaigns will no longer be tied to M365 groups. As such, M365 Group admins will no longer be a required role to configure Viva Amplify and only SharePoint admin role will be required. Also, when you create a campaign, there will no longer be a campaign channel tied to the Viva Amplify campaign, simplifying the campaign creation experience.",
         "id": 481155,
         "locale": null,
@@ -88318,67 +88080,6 @@
     },
     {
         "created": "2025-03-06T22:45:53",
-        "description": "The \"Move To\" option is now available in the pop-out ribbon in New Outlook and Outlook for Web, making it easier to organize emails. Quickly move messages to any folder without switching back to the main window. This update ensures a seamless and consistent email management experience.  #newoutlookforwindows",
-        "id": 484058,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Outlook: Move to in the pop-out ribbon in New Outlook and Outlook for Web"
-    },
-    {
-        "created": "2025-03-06T22:45:53",
         "description": "When you add a blank flexible section to your page, you will now be able to open up the Design Ideas panel to get blank section suggestions just as you can for standard sections. ",
         "id": 484054,
         "locale": null,
@@ -89437,67 +89138,6 @@
             ]
         },
         "title": "Outlook: External tag in contact suggestions"
-    },
-    {
-        "created": "2025-02-28T21:45:15",
-        "description": "Admins have options to manage Copilot extensibility under Copilot tab including agent management for IT published agents and shared agents. ",
-        "id": 481829,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 Admin Center"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 Admin Center"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Extensibility - Admins can manage Copilot extensibility under Copilot tab in Microsoft 365 admin center"
     },
     {
         "created": "2025-02-28T21:30:32",
@@ -92301,61 +91941,6 @@
     },
     {
         "created": "2025-02-14T00:15:58",
-        "description": "We are excited to introduce an enhancement to our system that will provide more accurate and detailed information for forwarded emails. This new feature will ensure that the correct user, recipient information, and email evidence are displayed in the alert generated. This improvement will help admins accurately trace the origin and intended recipient of forwarded emails, reducing confusion and minimizing the risk of false positives. The update will be reflected in our audit logs, alerts page, and activity explorer page",
-        "id": 481343,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "April CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention: Enrich the details of the auto forwarded emails in the Exchange DLP"
-    },
-    {
-        "created": "2025-02-14T00:15:58",
         "description": "Teams users can now report security risks and concerns in external one-on-one, group and meeting chats.",
         "id": 481147,
         "locale": null,
@@ -95037,61 +94622,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management- DLP alerts as indicators"
-    },
-    {
-        "created": "2025-01-17T23:15:23",
-        "description": "Microsoft Purview Endpoint Data Loss Prevention adds support for instances where users try to paste sensitive content into a web browser on macOS devices using Edge, Safari, and other browsers.",
-        "id": 476073,
-        "locale": null,
-        "modified": "2025-07-01T23:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Paste to Browser prevention support on macOS device with endpoint DLP"
     },
     {
         "created": "2025-01-17T23:15:23",
