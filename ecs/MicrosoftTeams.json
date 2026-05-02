@@ -4,8 +4,15 @@
         "ariaIngestionKey": "f5a97b2c637f45179524758aa8d22381-9e8c1645-5715-490b-b10d-ab6fd1927100-6687"
     },
     "ChatServiceAgg": {
+        "GrpcClientAuth": {
+            "MtlsEnabled": true,
+            "TokenAuthEnabled": true
+        },
         "PeopleTargetingService": {
             "EnableCrossTenantValidation": true
+        },
+        "TargetingGRPCService": {
+            "GRPCUpgrade": true
         }
     },
     "ECS": {
@@ -2051,20 +2058,6 @@
             "enableEcsConfigs": true,
             "enableLegacyTasksPnhFlow": false,
             "notifyFromEventHubTasksFlow": false
-        }
-    },
-    "TeamsForLifeSearchEnvironmentConfig": {
-        "ringSettings": {
-            "settings": {
-                "FeatureFlags": {
-                    "Filters": {
-                        "BlockedThreadIdsFilterList": [
-                            "PlaceholderId"
-                        ],
-                        "InternalOnly": true
-                    }
-                }
-            }
         }
     },
     "TeamsGateway": {

@@ -986,7 +986,7 @@
         "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
         "id": 560700,
         "locale": null,
-        "modified": "2026-04-29T23:15:48",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -995,6 +995,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Teams and Surface Devices"
@@ -1013,6 +1019,12 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -4539,12 +4551,12 @@
         "description": "When users have more than one Copilot-enabled account added to new Outlook, the Copilot side pane in Calendar will include an account dropdown that makes it clear which Copilot-enabled account you\u2019re using and lets you switch accounts without relying on Outlook UI\u2019s account context.",
         "id": 559991,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -4771,12 +4783,12 @@
         "description": "Review set limit per case is increased from 20 per case to 100 per case.",
         "id": 560322,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -6058,12 +6070,12 @@
         "description": "Presenters can now share a single application window and enable participants to annotate directly on top of that content, without exposing their entire desktop. This means cleaner presentations, protected privacy, and more engaging discussions across training sessions, workshops, and client meetings.",
         "id": 559611,
         "locale": null,
-        "modified": "2026-04-03T22:15:57",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9743,12 +9755,12 @@
         "description": "Review set limit per case is increased from 20 per case to 100 per case.",
         "id": 558858,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12887,12 +12899,12 @@
         "description": "Microsoft Security Store is now integrated into the Microsoft Purview DLP experience, giving admins an in\u2011product way to discover a curated set of integrations that extend Purview capabilities, including data security capabilities for the network. Purchasing and management are completed through Security Store, simplifying how organizations procure partner integrations.",
         "id": 557977,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16366,12 +16378,12 @@
         "description": "Consecutive interpretation enables turn-based interpretation for everyone in the meeting. Interpretation happens after each speaker finishes talking, creating a turn-based flow that supports interactive discussions across two languages.\u00a0",
         "id": 557180,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16726,9 +16738,9 @@
         "description": "Meeting recordings now automatically inherit the meeting\u2019s sensitivity label. When label inheritance is enabled in sensitivity label policies, a labeled meeting applies the same label to its MP4 recording, ensuring access controls, data handling rules, and Copilot or agent responses based on transcripts consistently respect the meeting\u2019s sensitivity end to end.",
         "id": 557178,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18595,9 +18607,9 @@
         "description": "Loop meeting notes now automatically inherit your meeting\u2019s sensitivity label. When admins enable label inheritance in the sensitivity label policy, any labeled meeting applies the same label to its Loop meeting notes, ensuring protections like encryption, access controls, and data handling rules carry forward consistently. This also ensures that Copilot and agent responses based on Loop meeting notes accurately reflect the meeting\u2019s sensitivity, keeping confidential content protected end to end.",
         "id": 555857,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -21631,9 +21643,9 @@
         "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation. Updated April 22, 2026: We are moving this item back to In Development and will be relaunching after further updates. We apologize for any inconvenience. ",
         "id": 552592,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26402,12 +26414,12 @@
         "description": "With new branded reactions, organizations can now extend their visual identity directly into meetings. IT admins simply upload custom reaction icons reflecting brand elements or event themes, and these instantly become available for meeting participants.  A simple way to create more cohesive, on-brand meeting experiences.",
         "id": 541830,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -68991,12 +69003,12 @@
         "description": "Insider Risk Management is releasing the ability to select multiple Data Loss Prevention (DLP) policies as triggering events in a policy. Previously, admins could only select one DLP policy as a triggering event within Insider Risk Management policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 493757,
         "locale": null,
-        "modified": "2025-05-21T23:15:06",
+        "modified": "2026-05-01T21:45:13",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "August CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"

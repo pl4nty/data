@@ -617,7 +617,8 @@
     "Segmentation": {
         "EdgeAll": "true",
         "RolloutGroup": "G4",
-        "RolloutGroupV2": "G4"
+        "RolloutGroupV2": "G4",
+        "RolloutGroupV3": "G3"
     },
     "Sidecar_Mac": {
         "app_policy_reporting_retry": true,
