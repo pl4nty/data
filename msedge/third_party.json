@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15920743,
+    "size": 15920817,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33290826,
+    "size": 33303005,
     "file_count": 4036
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 161899064,
+    "size": 161899236,
     "file_count": 19093
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16335487,
-    "file_count": 1952
+    "size": 16365776,
+    "file_count": 1953
   },
   {
     "name": "entity_extraction",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 337215,
-    "file_count": 80
+    "size": 340874,
+    "file_count": 81
   },
   {
     "name": "ffmpeg",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44000146,
-    "file_count": 3334
+    "size": 44008041,
+    "file_count": 3336
   },
   {
     "name": "googletest",
@@ -386,8 +386,8 @@
   },
   {
     "name": "libc++",
-    "size": 12477908,
-    "file_count": 1770
+    "size": 12550859,
+    "file_count": 1780
   },
   {
     "name": "libc++abi",
@@ -591,7 +591,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4292778,
+    "size": 4293153,
     "file_count": 602
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3484022,
+    "size": 3484541,
     "file_count": 1201
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7475242,
+    "size": 7476107,
     "file_count": 194
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29959251,
+    "size": 30202068,
     "file_count": 629
   },
   {
