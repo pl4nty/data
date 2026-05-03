@@ -70883,55 +70883,6 @@
     },
     {
         "created": "2025-05-13T23:00:09",
-        "description": "This feature enables Viva Glint admins to create and edit hierarchies directly within the platform. It empowers admins to easily update and maintain the structure of user data without requiring support.",
-        "id": 491638,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Glint - User Schema Enhancements- Create and Edit Hierarchies"
-    },
-    {
-        "created": "2025-05-13T23:00:09",
         "description": "Copilot in Excel gains powerful new insights and visualizations with Advanced Analysis. Explore your data in a natural, conversational way, while Copilot does the heavy lifting using Python, a rich programming language that supercharges what is possible in your spreadsheets.",
         "id": 489217,
         "locale": null,
@@ -75460,61 +75411,6 @@
     },
     {
         "created": "2025-04-23T16:15:28",
-        "description": "The Microsoft 365 Copilot app is your starting place for AI at work, offering quick access to secure AI chat, search, files, and content creation in one seamless app.",
-        "id": 490155,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Updated UI for Microsoft 365 Copilot App"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
         "description": "Copilot can generate an audio overview of your transcribed meetings, transforming one or multiple meetings into an engaging listening experience. Users can choose how they want to listen: select one or two speakers, adjust the tone from concise to playful, and tailor the length. This capability is only available in English currently. ",
         "id": 490051,
         "locale": null,
@@ -78018,61 +77914,6 @@
             ]
         },
         "title": "Outlook: Find Text when reading email on Outlook on the Web and New Outlook for Windows"
-    },
-    {
-        "created": "2025-04-16T23:15:19",
-        "description": "Copilot in Excel gains powerful new insights and visualizations with Advanced Analysis. Explore your data in a natural, conversational way, while Copilot does the heavy lifting using Python, a rich programming language that supercharges what is possible in your spreadsheets.",
-        "id": 489216,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for GCC"
     },
     {
         "created": "2025-04-16T23:15:19",
@@ -81680,67 +81521,6 @@
             ]
         },
         "title": "Microsoft Teams: Specify who has control of production tools in Teams Town hall"
-    },
-    {
-        "created": "2025-04-05T00:00:03",
-        "description": "Microsoft Purview AI Hub has been rebranded to Microsoft Purview Data Security Posture Management for AI (DSPM for AI). Microsoft Purview Data Security Posture Management for AI is a centralized location to gain insights into generative AI activity including the sensitive data flowing in AI prompts.  ",
-        "id": 485771,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Security Posture Management for AI"
     },
     {
         "created": "2025-04-03T23:45:17",
@@ -87683,61 +87463,6 @@
     },
     {
         "created": "2025-03-10T23:30:35",
-        "description": "In this update, we are adding two new email indicators to Insider Risk Management.\n1.  Sending email with attachments to free public domains: This alerts when business-sensitive data is potentially leaked from a work email account to a free public domain email, potentially leading to a data security incident. \n\n2. Sending email with attachments to self: This alerts when business-sensitive data is potentially leaked from a work email account to user's personal email account or emailing self, potentially leading to a data security incident. \nAdmins with appropriate permissions can enable these indicators from the settings page and use these new indicators in the data leaks or data theft policy template.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
-        "id": 483520,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: New email indicators to alert on exfiltration of business sensitive data to free public "
-    },
-    {
-        "created": "2025-03-10T23:30:35",
         "description": "Design Ideas now provides formatting suggestions for the quick links webpart. This includes suggesting icons and images for a given link, as well as showing how the webpart would look with different card sizes, for single quick link webparts in a section.",
         "id": 482411,
         "locale": null,
@@ -88748,79 +88473,6 @@
             ]
         },
         "title": "PowerPoint: Designer is now part of Copilot, enhanced with new template and slide Suggestions."
-    },
-    {
-        "created": "2025-03-04T23:15:18",
-        "description": "The \"Recipient/Domain Count Over\" feature, designed to address a critical need for managing and controlling the distribution of sensitive information via email. This feature allows organizations to set specific policies that trigger alerts or actions when the number of recipients or domains in outgoing emails exceeds a defined threshold. By implementing this feature, organizations can enhance data security, ensure compliance with regulatory requirements, and prevent unauthorized data dissemination, providing peace of mind and safeguarding sensitive information.",
-        "id": 483158,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "April CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": " Microsoft Purview compliance portal: Data Loss Prevention - New predicate in Email DLP - Detect number of domains/Recipients"
     },
     {
         "created": "2025-03-04T23:15:18",
@@ -98014,73 +97666,6 @@
         "title": "Microsoft Teams: Ability for meeting participants to edit their display name"
     },
     {
-        "created": "2022-01-21T00:11:40",
-        "description": "<div>Support for bulk export of device status, including username, sync app version, known folders, last sync date, and sync errors. </div>",
-        "id": 88870,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "July CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "OneDrive: Sync admin reports - bulk data export"
-    },
-    {
         "created": "2024-12-18T00:15:02",
         "description": "If you like brevity or more depth in the summaries that Copilot generates when you open a document, you can now specify your preference as brief, standard, or detailed.",
         "id": 473462,
@@ -100402,61 +99987,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Automatic summary of documents on file-open in Word"
-    },
-    {
-        "created": "2024-06-05T23:15:07",
-        "description": "When you open a document, Copilot will generate a summary in the Word window. You can hide the summary or open the Copilot chat pane to ask specific questions about the document.",
-        "id": 397096,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Word"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Word: Automatic summary of documents on file-open in Word"
     },
     {
         "created": "2024-05-22T23:30:29",
@@ -105284,61 +104814,6 @@
         "title": "Microsoft Copilot (Microsoft 365): BizChat - Edge contextual capabilities in Business Chat work mode"
     },
     {
-        "created": "2024-10-31T23:30:09",
-        "description": "Microsoft 365 Copilot Chat Copilot is available at no additional cost for Microsoft 365 GCC users who sign in with their Microsoft Entra account (no Microsoft 365 Copilot license required). Microsoft 365 Copilot Chat offers enterprise data protection (EDP), and secure AI chat designed for work, powered by the latest large language models with optional web grounding. The general availability of this release will be delivered to the users with web grounding OFF by default to meet US Government requirements. This will help protect sensitive information which should not leave the GCC compliance boundary.",
-        "id": 464984,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": "https://learn.microsoft.com/en-us/copilot/overview",
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365) Microsoft 365 Copilot Chat general availability for GCC"
-    },
-    {
         "created": "2024-11-19T18:30:19",
         "description": "Your organization can now control who can access your data depending on the sensitive information detected in Fabric semantic models and lakehouses. DLP restrict access action allows you to block access to guest users or all users depending on what labels or sensitive information types matches your semantic models or lakehouses. This is in addition to the ability already supported by DLP policies to audit and notify users via Policy Tips based on sensitive content within Fabric semantic models and lakehouses.",
         "id": 422501,
@@ -110023,67 +109498,6 @@
             ]
         },
         "title": "Outlook: Grant mail delegate sharing permissions from the new Outlook"
-    },
-    {
-        "created": "2024-09-13T22:15:36",
-        "description": "With this release, the file type coverage to scan, classify and protect sensitive content on windows endpoint devices with Microsoft Purview Data Loss Prevention policies will increase from current ~40 file types to 100+ file types. This release will make the coverage of file types on endpoint consistent with other locations such as Exchange, SharePoint and OneDrive. This will also include other enhancements like detecting label from pfile, detecting sensitive content in metadata, and detecting sensitive content in PDF forms.",
-        "id": 416481,
-        "locale": null,
-        "modified": "2025-07-02T23:15:48",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Enhanced content extraction and file type coverage for DLP on Windows devices"
     },
     {
         "created": "2024-09-23T23:30:03",
