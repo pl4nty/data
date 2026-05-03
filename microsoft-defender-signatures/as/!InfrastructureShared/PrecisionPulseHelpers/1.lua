@@ -96,41 +96,57 @@ ReportResource = function(l_3_0, l_3_1, l_3_2, l_3_3)
     return 
   end
   local l_3_4 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.update"
-  local l_3_5 = {}
-  l_3_5[1] = l_3_4
+  local l_3_5 = 64500
+  local l_3_6 = 1000
+  local l_3_7 = 320
+  local l_3_8 = #l_3_1
+  local l_3_9 = 1
   do
-    if #l_3_1 < 2086912 then
-      local l_3_6 = {}
-      l_3_6.SIG_CONTEXT = "Lua_Custom_Upload_Resource"
-      l_3_6.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-      l_3_6.TAG = "NOLOOKUP"
-      l_3_6.ResourceName = l_3_0
-      l_3_6.ResourceContent = l_3_1
-      l_3_6.ResourceInfo = safeJsonSerialize(l_3_2)
-      l_3_6.Source = l_3_4
-      SafeGetUrlReputation(l_3_5, l_3_6, false, 2000)
-      return 
-    end
-    local l_3_7 = 2086912
-    local l_3_8 = #l_3_1
-    local l_3_9 = 1
     local l_3_10 = 0
-    local l_3_11 = 10
-    while l_3_9 <= l_3_8 and l_3_10 < l_3_11 do
-      local l_3_12 = l_3_1:sub(l_3_9, l_3_9 + l_3_7 - 1)
-      l_3_9 = l_3_9 + l_3_7
-      local l_3_13 = {}
-      l_3_13.SIG_CONTEXT = "Lua_Custom_Upload_Resource"
-      l_3_13.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-      l_3_13.TAG = "NOLOOKUP"
-      l_3_13.ResourceName = l_3_0
-      l_3_13.ResourceContent = l_3_12
-      l_3_13.ResourceInfo = safeJsonSerialize(l_3_2)
-      l_3_13.Index = l_3_10
-      l_3_13.Source = l_3_4
-      l_3_10 = l_3_10 + 1
-      SafeGetUrlReputation(l_3_5, l_3_13, false, 2000 + (l_3_10) * 500)
+    while 1 do
+      if l_3_9 <= l_3_8 and l_3_10 < l_3_7 then
+        local l_3_11 = l_3_1:sub(l_3_9, l_3_9 + l_3_5 - 1)
+        l_3_9 = l_3_9 + l_3_5
+        local l_3_12 = {}
+        l_3_12.SIG_CONTEXT = "Lua_Custom_Upload_Resource"
+        l_3_12.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
+        l_3_12.TAG = "NOLOOKUP"
+        l_3_12.ResourceName = l_3_0
+        l_3_12.ResourceInfo = safeJsonSerialize(l_3_2)
+        l_3_12.Index = l_3_10
+        l_3_12.Source = l_3_3
+        local l_3_13 = 1
+        local l_3_14 = 0
+        local l_3_15 = #l_3_11
+        local l_3_16 = 0
+        while 1 do
+          if l_3_13 <= l_3_15 then
+            local l_3_17 = l_3_11:sub(l_3_13, l_3_13 + l_3_6 - 1)
+            local l_3_18 = #l_3_17
+          end
+          if l_3_5 < l_3_16 + l_3_18 then
+            break
+          end
+          l_3_12["ResourceContent_" .. l_3_14] = l_3_17
+          l_3_16 = l_3_16 + l_3_18
+          l_3_13 = l_3_13 + l_3_6
+          l_3_14 = l_3_14 + 1
+        end
+        do
+          do
+            local l_3_19 = {}
+            l_3_19[1] = l_3_4 .. "?indx=" .. l_3_10
+            -- DECOMPILER ERROR at PC77: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC77: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC77: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
     end
+    -- WARNING: undefined locals caused missing assignments!
   end
 end
 
