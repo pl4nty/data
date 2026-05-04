@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 (KB5085154)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 (KB5085154)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "synchronization service utility tools.zip",
+            "url": "https://download.microsoft.com/download/60df922d-e971-47bc-88b6-e33978bbb6f8/synchronization service utility tools.zip",
+            "size": "159369",
+            "version": "4.7.6.0",
+            "datePublished": "5/4/2026 3:47:57 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a hotfix for Microsoft Identity Manager 2016 Service Pack 3. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016 Synchronization Service Utility Tools",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5085154",
+        "name": "KB5085154"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.6.0",
+    "detailsSection_file_name": [
+        "synchronization service utility tools.zip"
+    ],
+    "detailsSection_file_size": [
+        "155.6 KB"
+    ],
+    "detailsSection_file_date": "5/4/2026",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Copy the zipped executable files into Microsoft Identity Manager installation bin folder (C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Synchronization Service\\Bin). Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108644",
+    "downloadPreload": true
+}
