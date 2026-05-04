@@ -22,6 +22,7 @@ initiating_process_gate = function()
   local l_2_0 = {}
   l_2_0.outlook = true
   l_2_0.olk = true
+  l_2_0.winword = true
   l_2_0.msedge = true
   l_2_0.msedgewebview2 = true
   l_2_0.chrome = true
@@ -186,7 +187,7 @@ do
   end
 end
 
-  -- DECOMPILER ERROR at PC56: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC55: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end

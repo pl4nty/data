@@ -3,18 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
 if not initiating_process_gate() then
   return mp.CLEAN
 end
-if not browser_executable_from_scanned_cmdline_gate() then
+if not current_cmdline_matches_prompt_link_runtime_checks() then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC51: Unhandled construct in 'MakeBoolean' P3
+local l_0_0 = (mp.GetScannedPPID)()
+do
+  local l_0_1, l_0_2 = l_0_0 and (mp.GetProcessCommandLine)(l_0_0) or nil
+  -- DECOMPILER ERROR at PC26: Confused about usage of register: R1 in 'UnsetPending'
 
-if (not (l_0_0.br_msedge).matched and not (l_0_0.br_webview2).matched and not (l_0_0.br_chrome).matched) or not (l_0_0.q_qmark).matched and not (l_0_0.q_amp).matched and not (l_0_0.qenc_qmark).matched and not (l_0_0.qenc_amp).matched then
-  return mp.CLEAN
+  if not l_0_1 then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+
+  if not (string.find)((string.lower)(l_0_1), "copilot.microsoft.com", 1, true) then
+    return mp.CLEAN
+  end
+  extract_cmdline_payload("")
+  return mp.INFECTED
 end
-extract_cmdline_payload("")
-return mp.INFECTED
 

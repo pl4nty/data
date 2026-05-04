@@ -84,7 +84,9 @@ do
   if StringEndsWith(l_0_5, "\\wmiprvse.exe") and (StringEndsWith(l_0_4, "\\appxprovider.dll") or StringEndsWith(l_0_4, "\\dismcore.dll") or StringEndsWith(l_0_4, "\\dismprov.dll") or StringEndsWith(l_0_4, "\\api-ms-win-core-processthreads-l1-1-1.dll") or StringEndsWith(l_0_4, ".mof") or StringEndsWith(l_0_4, "c:\\app\\monitoring\\")) then
     return mp.CLEAN
   end
-  getDirectoryPath = function(l_1_0)
+  local l_0_8 = nil
+  local l_0_9 = nil
+  if isnull((function(l_1_0)
   -- function num : 0_0
   local l_1_1, l_1_2 = l_1_0:match, l_1_0
   do
@@ -94,27 +96,35 @@ do
 
   end
 end
+)((string.lower)(l_0_3))) or #(function(l_1_0)
+  -- function num : 0_0
+  local l_1_1, l_1_2 = l_1_0:match, l_1_0
+  do
+    local l_1_3 = "^(.*)[/\\][^/\\]+$"
+    do return l_1_1(l_1_2, l_1_3) end
+    -- DECOMPILER ERROR at PC4: Confused about usage of register R2 for local variables in 'ReleaseLocals'
 
-  local l_0_8 = nil
-  if isnull(getDirectoryPath((string.lower)(l_0_3))) or #getDirectoryPath((string.lower)(l_0_3)) <= 3 then
+  end
+end
+)((string.lower)(l_0_3)) <= 3 then
     return mp.CLEAN
   end
-  local l_0_9 = nil
-  if isnull(getDirectoryPath((string.lower)(l_0_4))) or #getDirectoryPath((string.lower)(l_0_4)) <= 3 then
+  local l_0_10 = nil
+  if isnull(l_0_9((string.lower)(l_0_4))) or #l_0_9((string.lower)(l_0_4)) <= 3 then
     return mp.CLEAN
   end
-  if l_0_9 ~= getDirectoryPath((string.lower)(l_0_4)) then
+  if l_0_10 ~= l_0_9((string.lower)(l_0_4)) then
     return mp.CLEAN
   end
-  if isKnownCleanPathContext(l_0_9) then
+  if isKnownCleanPathContext(l_0_10) then
     return mp.CLEAN
   end
   if (mp.IsKnownFriendlyFile)(l_0_4, true, true) == true then
     return mp.CLEAN
   end
-  local l_0_10 = nil
+  local l_0_11 = nil
   AppendToRollingQueueNamespaced(l_0_3, "Posilod", "CreatedByPPID", l_0_7)
-  -- DECOMPILER ERROR at PC396: Confused about usage of register: R8 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC395: Confused about usage of register: R9 in 'UnsetPending'
 
   AppendToRollingQueueNamespaced(l_0_4, "Posilod", "CreatedByPPID", l_0_7)
   return mp.INFECTED

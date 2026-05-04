@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFPERVirToolWin32VoidBridgeconf\1.luac 
+-- Command line: lua\!InfrastructureShared\!#TELVirToolWin32VoidBridgeconf\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
-l_0_0[2460690537] = "SCPT:GoatBridge"
-l_0_0[1794461769] = "SCPT:HardBridge"
-l_0_0[3011729072] = "SCPT:NullBridge"
+l_0_0[135105627] = "SCPT:GoatBridge"
+l_0_0[4032033915] = "SCPT:HardBridge"
+l_0_0[3730411570] = "SCPT:NullBridge"
 for l_0_4,l_0_5 in pairs(l_0_0) do
   local l_0_6 = (mp.enum_mpattributesubstring)(l_0_5)
   local l_0_7 = {}
