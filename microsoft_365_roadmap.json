@@ -84486,61 +84486,6 @@
     },
     {
         "created": "2025-03-24T23:00:41",
-        "description": "Microsoft Purview Data Security Posture Management for AI support for Fabric Copilot and Security Copilot.",
-        "id": 486697,
-        "locale": null,
-        "modified": "2025-07-03T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Microsoft Purview Data Security Posture Management for AI- additional Microsoft Copilot integrations"
-    },
-    {
-        "created": "2025-03-24T23:00:41",
         "description": "We will be adding declarative agents support in Copilot Chat in Outlook. This roadmap item tracks availability in Outlook for Mac.",
         "id": 486696,
         "locale": null,
@@ -113419,55 +113364,6 @@
             ]
         },
         "title": "Exchange: Adding support for Inbound SMTP DANE with DNSSEC for Exchange Online GCC-H and DoD"
-    },
-    {
-        "created": "2023-10-30T23:08:51",
-        "description": "<div><span style=\"\">Users can access the\nMicrosoft Purview compliance portal to check who has tried accessing their\nsensitivity labeled and encrypted local Office files and revoke access when\nneeded.</span> </div>",
-        "id": 177890,
-        "locale": null,
-        "modified": "2025-07-03T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Information Protection: Tracking and Revocation in Compliance Portal "
     },
     {
         "created": "2023-08-24T23:14:20",
