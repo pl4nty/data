@@ -1,5 +1,24 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-05-01",
+        "Published": "May 4, 2026",
+        "Patch level": "2026-05-01",
+        "CVE": "CVE-2026-0073",
+        "References": "A-469080888",
+        "Type": "RCE",
+        "Severity": "Critical",
+        "Updated AOSP versions": "14, 15, 16, 16-qpr2",
+        "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-05-01",
+        "Published": "May 4, 2026",
+        "Patch level": "2026-05-01",
+        "Subcomponent": "adbd",
+        "CVE": "CVE-2026-0073",
+        "Component": "Google Play system updates"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-04-01",
         "Published": "April 6, 2026",
         "Patch level": "2026-04-01",
@@ -93531,6 +93550,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-05-01",
+        "Published": "May 4, 2026",
+        "Patch level": "2026-05-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-04-01",
         "Published": "April 6, 2026",
         "Patch level": "2026-04-01"
@@ -94159,6 +94183,11 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-01-01",
         "Published": "January 12, 2021",
         "Patch level": "2021-01-01"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-05-01",
+        "Published": "May 4, 2026",
+        "Patch level": "2026-05-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-04-01",
@@ -94842,6 +94871,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-05-01",
+        "Published": "May 4, 2026",
+        "Patch level": "2026-05-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-04-01",
