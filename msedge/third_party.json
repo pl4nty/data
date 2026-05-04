@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33303005,
+    "size": 33300326,
     "file_count": 4036
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994124,
+    "size": 17994164,
     "file_count": 1006
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16365776,
+    "size": 16373627,
     "file_count": 1953
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44008041,
-    "file_count": 3336
+    "size": 43984888,
+    "file_count": 3335
   },
   {
     "name": "googletest",
@@ -386,8 +386,8 @@
   },
   {
     "name": "libc++",
-    "size": 12550859,
-    "file_count": 1780
+    "size": 12564991,
+    "file_count": 1781
   },
   {
     "name": "libc++abi",
@@ -471,7 +471,7 @@
   },
   {
     "name": "litert",
-    "size": 189116,
+    "size": 190089,
     "file_count": 67
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "skia",
-    "size": 3484541,
+    "size": 3484553,
     "file_count": 1201
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "tflite",
-    "size": 1728442,
+    "size": 1730909,
     "file_count": 536
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7476107,
+    "size": 7476372,
     "file_count": 194
   },
   {

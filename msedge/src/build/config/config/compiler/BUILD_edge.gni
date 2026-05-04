@@ -49,12 +49,6 @@ template("edge_overlay_config_treat_warnings_as_errors") {
 template("edge_overlay_config_default_warnings") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
-
-    # TODO(task.ms/61663186):
-    # Fix exit-time-destructor warnings on iOS and remove this suppression.
-    if (is_clang && is_ios) {
-      cflags += [ "-Wno-exit-time-destructors" ]
-    }
   }
 }
 
