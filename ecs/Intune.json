@@ -304,7 +304,8 @@
             "EnableRequestEnterpriseUpgradeUrl": true,
             "EnableWpDeviceTypeUpdate": true,
             "LtwBatteryOptimizationForByodWpBlockEnabled": true,
-            "LtwBatteryOptimizationForDoBlockEnabled": true
+            "LtwBatteryOptimizationForDoBlockEnabled": true,
+            "NewPolicyAuditingForDoDevicesEnabled": true
         }
     },
     "SVC_AppLifecycle": {
@@ -644,6 +645,7 @@
     "UX_Core": {
         "FlightingV2": {
             "DeviceLifecycleAgentUI": true,
+            "EnableSingleDeviceReactView": true,
             "HideCartToClass": true,
             "ShowAFDBanner": true
         }
@@ -653,6 +655,7 @@
             "AndroidDCv2ManagementModeFilter": true,
             "CanAccessSupportCentralWidget": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
+            "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true
         }
     },
