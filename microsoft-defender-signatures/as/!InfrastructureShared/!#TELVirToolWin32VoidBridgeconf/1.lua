@@ -7,6 +7,7 @@ local l_0_0 = {}
 l_0_0[135105627] = "SCPT:GoatBridge"
 l_0_0[4032033915] = "SCPT:HardBridge"
 l_0_0[3730411570] = "SCPT:NullBridge"
+l_0_0[2080484669] = "SCPT:SpikeBridge"
 for l_0_4,l_0_5 in pairs(l_0_0) do
   local l_0_6 = (mp.enum_mpattributesubstring)(l_0_5)
   local l_0_7 = {}
