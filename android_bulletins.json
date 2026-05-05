@@ -69337,6 +69337,46 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-05-01",
+        "Published": "May 5, 2026",
+        "Patch level": "2026-05-05",
+        "Abbreviation": "RCE",
+        "Definition": "Remote code execution",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-05-01",
+        "Published": "May 5, 2026",
+        "Patch level": "2026-05-05",
+        "Abbreviation": "EoP",
+        "Definition": "Elevation of privilege",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-05-01",
+        "Published": "May 5, 2026",
+        "Patch level": "2026-05-05",
+        "Abbreviation": "ID",
+        "Definition": "Information disclosure",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-05-01",
+        "Published": "May 5, 2026",
+        "Patch level": "2026-05-05",
+        "Abbreviation": "DoS",
+        "Definition": "Denial of service",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-05-01",
+        "Published": "May 5, 2026",
+        "Patch level": "2026-05-05",
+        "Abbreviation": "N/A",
+        "Definition": "Classification not available",
+        "Component": "Security patches"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-04-01",
         "Published": "April 7, 2026",
         "Patch level": "2026-04-05",
