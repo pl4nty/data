@@ -19,7 +19,9 @@
     },
     "CLI_DeviceInventory": {
         "FlightingV2": {
-            "b07651fe-b4f8-4882-93f9-ee12a21a833c": true
+            "8b36e72f-0d48-4b6d-bc46-760349ccf3f2": true,
+            "b07651fe-b4f8-4882-93f9-ee12a21a833c": true,
+            "c6a64feb-0619-4207-bef6-e3ef88fb07e0": true
         }
     },
     "CLI_FireDrill_25": {
@@ -465,7 +467,19 @@
             "EnableAssignmentFilterMetadataCache": true,
             "EnableBlockAppleRenewalForBlockedUser": true,
             "EnableSendingAttestStatusToReporting": true,
-            "MMPCDeviceRecoveryHotfixRollout": true
+            "MMPCDeviceRecoveryHotfixRollout": true,
+            "SkipAppInvCollectionInProcessPhase": true,
+            "SkipMultipleAppInvCollectionPerDay": true
+        }
+    },
+    "SVC_DeviceConfigV2": {
+        "FlightingV2": {
+            "Enable_ApplicationProperties_Settings": true
+        }
+    },
+    "SVC_DeviceDataUpload": {
+        "FlightingV2": {
+            "EnableAppInventoryPrPMVR": true
         }
     },
     "SVC_DeviceFE": {
@@ -654,6 +668,7 @@
         "FlightingV2": {
             "AndroidDCv2ManagementModeFilter": true,
             "CanAccessSupportCentralWidget": true,
+            "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true
@@ -661,6 +676,7 @@
     },
     "UX_DeviceUsers": {
         "FlightingV2": {
+            "EnableAppInventoryUXPrPMVR": true,
             "ManagedHomeScreenRemoteActions": true
         }
     },

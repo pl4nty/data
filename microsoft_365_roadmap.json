@@ -1,5 +1,176 @@
 [
     {
+        "created": "2026-05-04T23:00:45",
+        "description": "This feature is bringing the Information Protection Filer Labeler and Viewer applications to the MacOS platform. Enabling customers to have the same capabilities available on Mac. Core functionality will be available with the exception of the Advanced label-based protection feature.",
+        "id": 561489,
+        "locale": null,
+        "modified": "2026-05-04T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Security Investigations \u2013 Introducing OCR support"
+    },
+    {
+        "created": "2026-05-04T23:00:45",
+        "description": "A refreshed design for the Microsoft 365 Copilot web and desktop app simplifies the user experience to drive engagement with Copilot. This includes updates to the chat home screen, chat response layout, and navigation pane.",
+        "id": 561488,
+        "locale": null,
+        "modified": "2026-05-04T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Simplified design for the Microsoft 365 Copilot app"
+    },
+    {
+        "created": "2026-05-04T23:00:45",
+        "description": "Microsoft Edge is introducing improvements to help users quickly resolve website issues directly from the browser. When a site is not functioning as expected, users may be guided to relevant troubleshooting options such as adjusting tracking prevention settings (e.g., Strict mode) and reviewing site-specific configurations. This experience surfaces relevant actions in-context to help users restore site functionality without navigating deep into settings.",
+        "id": 561486,
+        "locale": null,
+        "modified": "2026-05-04T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Improved website compatibility with site troubleshooting controls"
+    },
+    {
         "created": "2026-04-30T23:30:16",
         "description": "Authoritative Sites feature empowers administrators to designate specific SharePoint sites as official, trusted sources of information. By classifying these sites as authoritative these high-quality, credible content, such as company news, policies, and updates, are prioritized across Copilot Chat and Copilot Search experiences",
         "id": 561323,
@@ -3044,9 +3215,9 @@
         "description": "Viva Glint survey takers will be able to use a streamlined version of Microsoft Copilot in the Glint survey taking experience to help them rewrite their comments, helping survey takers feel more confident about the feedback they\u2019re providing. By increasing perceived security through reducing identifiable writing patterns and minimizing the effort required to refine feedback, this experience can encourage greater participation, longer responses, and more candid comments, which can drive higher engagement and richer insights from surveys.",
         "id": 560595,
         "locale": null,
-        "modified": "2026-04-17T22:15:50",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -5411,12 +5582,12 @@
         "description": "GCC-H and DoD customers can now experience multi-stream IntelliFrame in Microsoft Teams Rooms on Windows, which sends separate video feeds of each in-room participant to improve hybrid meeting visibility and inclusivity. Requires a compatible intelligent camera. Available with Teams Rooms Pro.",
         "id": 560052,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": "https://learn.microsoft.com/en-us/microsoftteams/devices/multistream-intelliframe",
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -5466,12 +5637,12 @@
         "description": "GCC-H and DoD cloud customers can now experience multi-camera views in Microsoft Teams Rooms on Windows, allowing remote participants to switch between multiple in-room camera feeds for improved visibility and engagement in larger spaces. Find camera requirements here. Available with Teams Rooms Pro.",
         "id": 560049,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": "https://learn.microsoft.com/en-us/microsoftteams/rooms/multicamera-view",
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -6704,12 +6875,12 @@
         "description": "Teams chat and channel lists can be filtered to show unread items only. When this filter is applied, hovering over a section reveals an eye icon next to the section name. Selecting the eye icon opens a list of read chats or channels within that section, allowing you to open them without leaving the unread-only view.",
         "id": 559608,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6725,6 +6896,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -6749,6 +6923,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -7766,12 +7943,12 @@
         "description": "See what Copilot can do the moment you preview a file in OneDrive or SharePoint. Ready-to-use prompts appear alongside the Copilot button, helping you summarize documents, generate FAQs, and more \u2014 all without writing a single prompt.",
         "id": 559481,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8571,12 +8748,12 @@
         "description": "Microsoft Teams stores call logs in several persistent locations, such as CDR logs. Currently, these logs are retained indefinitely. However, regulatory requirements in various countries specify maximum retention periods for calling-related logs. This discrepancy creates a compliance gap, as the existing retention practices may not meet regulatory obligations. \nAdditionally, tenant administrators may prefer to retain data for longer periods to improve the user experience. Therefore, this solution would help organizations ensure that Microsoft Teams remains compliant with regulatory mandates while also supporting evolving product features and business needs.",
         "id": 559261,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8821,12 +8998,12 @@
         "description": "File Creation and File Modification conditions in Microsoft Purview DLP for SharePoint and OneDrive and AutoLabelling will give organizations more precise control over DLP policy definition. These conditions allow admins to configure policies based on when the files were created or last modified, enabling policies that target newly created documents, recently edited files, or older content that may require stricter governance. With these new date-based predicates, Purview DLP delivers stronger lifecycle-aware protection, improved policy accuracy, and greater flexibility in securing data across SPOD.",
         "id": 557590,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9969,9 +10146,9 @@
         "description": "Use intelligent summaries in Copilot Dashboard to quickly surface what\u2019s working and where targeted attention can accelerate Copilot adoption. Intelligent summaries highlight key adoption trends to focus on areas of success. Suggested prompts enable deeper exploration of underlying trends and drivers.\n",
         "id": 557681,
         "locale": null,
-        "modified": "2026-04-09T23:15:51",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -10134,12 +10311,12 @@
         "description": "Microsoft Teams integrates with the Do not disturb setting in Windows to help reduce interruptions. Teams notifications are paused when Do not disturb is turned on, and resume after it is turned off.",
         "id": 557974,
         "locale": null,
-        "modified": "2026-03-25T23:15:06",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10189,12 +10366,12 @@
         "description": "Speed up analysis of exfiltrated content by launching Data Security Investigations (DSI) from Unified Audit Log activity. In DSI, build your audit log query by specifying criteria such as time range, activities, users, and keywords. DSI then automatically pulls the associated files into the investigation (for example, UserA downloaded a file on 3/1/2026).",
         "id": 558548,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10299,12 +10476,12 @@
         "description": "We are simplifying Data Security Investigations (DSI) roles following customer feedback and the continued integration with Data Security Posture Management (DSPM), Insider Risk Management (IRM), and Defender XDR. We added the Data Security Investigation Admin role to the Compliance Administrator role group. We added the Data Security Investigation Contributor role to the: Organization Management role group; Data Security Management role group; Insider Risk management role group.",
         "id": 558546,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14315,12 +14492,12 @@
         "description": "This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: \u201cApproved by\u201d.",
         "id": 555852,
         "locale": null,
-        "modified": "2026-04-24T22:00:04",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14516,9 +14693,9 @@
         "description": "When working in an open Word, Excel, or PowerPoint file, users will now be able to send a copy of the locally stored file by email through the new Outlook for Windows.  #newoutlookforwindows",
         "id": 557675,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16506,12 +16683,12 @@
         "description": "We\u2019re updating permissions to ensure that all roles with access to view DLP policies in Microsoft Purview can also run diagnostics on those policies. This change enhances visibility and empowers authorized users to troubleshoot and validate policy behavior more effectively.\nThe following roles will now have diagnostic access:\nOrganization Configuration\nView-Only Configuration\nCompliance Admin\nSecurity Admin\nSecurity Reader\nDLP Compliance Management\nView-Only DLP Compliance Management\nInsider Risk Management Admin\nInformation Protection Admin\nInformation Protection Analyst\nInformation Protection Investigator\nData Security AI Admin",
         "id": 557192,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22162,12 +22339,12 @@
         "description": "Copilot in Viva Glint will align with Microsoft's enterprise AI governance platform: enabling your IT and compliance teams to use centralized governance tools for access management and unified monitoring and reporting across all AI deployments in your tenant. This reduces governance complexity and audit burden by providing a single control plane for managing AI features across Microsoft 365. This change removes the existing Copilot toggles in the Viva Glint admin UI, making Viva Feature Access Management (VFAM) the single control plane for Copilot enablement.",
         "id": 551197,
         "locale": null,
-        "modified": "2026-03-10T23:00:58",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23951,9 +24128,9 @@
         "description": "Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences.",
         "id": 543713,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30663,15 +30840,15 @@
     },
     {
         "created": "2025-11-21T23:15:16",
-        "description": "Enables users to schedule recurring prompts in the Web tab",
+        "description": "We previously communicated plans to bring Scheduled Prompts to the Web tab; however, this work is no longer moving forward as we shift focus to higher\u2011value priorities.\n\nWe apologize for any confusion and appreciate your understanding as we continue improving the core Scheduled Prompts experience.",
         "id": 531911,
         "locale": null,
-        "modified": "2026-01-30T00:15:33",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31087,9 +31264,9 @@
         "description": "This feature allows users to simply express their intention conversationally, and Copilot infers their intention and creates a scheduled prompt automatically. ",
         "id": 531913,
         "locale": null,
-        "modified": "2026-04-28T22:45:03",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43824,12 +44001,12 @@
         "description": "Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.",
         "id": 511791,
         "locale": null,
-        "modified": "2026-04-14T23:00:25",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -63761,12 +63938,12 @@
         "description": "Microsoft Teams will soon support noise suppression for dial-in participants. This feature automatically filters out background noise (e.g., traffic, typing) for users who join meetings via phone (PSTN). It enhances clarity and reduces distractions for all meeting participants. The feature will be rolled out gradually. However, if you'd like to enable it yourself, you will be able to do so via the Teams Admin Center:\n1. Go to Meeting policy 2. Navigate to the Audio & video section 3. Set Noise suppression for dial-in participants to Enabled or programmatically with MicrosoftTeamsPowerShell by setting NoiseSuppressionForDialInParticipants setting inside of CsTeamsMeetingPolicy to \"Enabled\".",
         "id": 496150,
         "locale": null,
-        "modified": "2025-10-21T23:15:01",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -64798,12 +64975,12 @@
         "description": "Outlook Mobile now supports Data Loss Prevention (DLP) policy tips, helping users avoid accidental data leaks. When sensitive content is detected, users are alerted with inline tips or pop-ups, based on admin-configured rules. This update aligns DLP behavior across all Outlook clients for consistent compliance enforcement.",
         "id": 496146,
         "locale": null,
-        "modified": "2026-04-06T23:15:32",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -103408,12 +103585,12 @@
         "description": "In Microsoft Teams meetings, participants who are not sharing their screen can request to start a collaborative annotation session while a screen or window is being shared. The active sharer (presenter) must approve the request before annotations start for everyone in the meeting. Organizers and co-organizers can control who can start annotations via a new Meeting Options setting under Participation (Everyone (default) or Active sharer).",
         "id": 89975,
         "locale": null,
-        "modified": "2026-04-23T23:15:05",
+        "modified": "2026-05-04T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
