@@ -55,18 +55,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC112: Overwrote pending register: R2 in 'AssignReg'
-
-if versioning.IsMSFT then
-  l_0_1 = pcall(Infrastructure_ScanBITSJobs)
-  if not l_0_1 then
-    l_0_0.ScanBITSJobs = l_0_2
-    if l_0_2 == "Scanning aborted by the user!" then
-      error((MpCommon.JsonSerialize)(l_0_0))
-    end
-  end
-end
--- DECOMPILER ERROR at PC129: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC109: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanSuweezy, "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths")
 if not l_0_1 then
@@ -75,7 +64,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC146: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC126: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanSuweezy, "HKLM\\SOFTWARE\\Microsoft\\Microsoft Antimalware\\Exclusions\\Paths")
 if not l_0_1 then
@@ -84,7 +73,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC163: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC143: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_NeobarReportPathExclusions, "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths")
 if not l_0_1 then
@@ -93,7 +82,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC180: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC160: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_NeobarReportPathExclusions, "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths")
 if not l_0_1 then
@@ -102,7 +91,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC197: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC177: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_SoctuseerReportPathExclusions, "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths")
 if not l_0_1 then
@@ -111,7 +100,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC214: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC194: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_SoctuseerReportPathExclusions, "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths")
 if not l_0_1 then
@@ -128,7 +117,7 @@ local l_0_3 = function()
   end
 end
 
--- DECOMPILER ERROR at PC231: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC211: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(l_0_3)
 if not l_0_1 then
@@ -137,7 +126,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC247: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC227: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanWDFirewallBlockRules)
 if not l_0_1 then
@@ -146,7 +135,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC263: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC243: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanKryptomixASEPKeyPath)
 if not l_0_1 then
@@ -155,7 +144,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC279: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC259: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_AntiTamperingCheckAndRepair)
 if not l_0_1 then
@@ -164,7 +153,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC295: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC275: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_MSRTDASTelemetry)
 if not l_0_1 then
@@ -173,7 +162,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC311: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC291: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanMpCfgDefaults)
 if not l_0_1 then
@@ -182,7 +171,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC327: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC307: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanEmotetV5)
 if not l_0_1 then
@@ -191,7 +180,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC343: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC323: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanADFSPath)
 if not l_0_1 then
@@ -200,7 +189,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC359: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC339: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_NewmanScan)
 if not l_0_1 then
@@ -209,7 +198,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC375: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC355: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_3CXScan)
 if not l_0_1 then
@@ -218,7 +207,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC391: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC371: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanUefiEnvironmentVariables)
 if not l_0_1 then
@@ -227,7 +216,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC407: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC387: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_DLAMTelemetry)
 if not l_0_1 then
@@ -236,7 +225,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC424: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC404: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_AsrLinkScan, "qscanmachine")
 if not l_0_1 then
@@ -245,7 +234,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC440: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC420: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ExclusionTelemetry)
 if not l_0_1 then
@@ -254,7 +243,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC456: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC436: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_FirstTimeAT)
 if not l_0_1 then
@@ -263,7 +252,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC472: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC452: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_ScanEFISystemPartitions)
 if not l_0_1 then
@@ -272,7 +261,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC488: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC468: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_MicrosoftIRScan)
 if not l_0_1 then
@@ -281,7 +270,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC504: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC484: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_AnomalyTableTelemetry)
 if not l_0_1 then
@@ -290,7 +279,7 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
--- DECOMPILER ERROR at PC529: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC509: Overwrote pending register: R2 in 'AssignReg'
 
 if (MpCommon.IsSampled)(100, true, true, true) then
   l_0_1 = pcall(Infrastructure_ReportUEFIData)
@@ -301,7 +290,7 @@ if (MpCommon.IsSampled)(100, true, true, true) then
     end
   end
 end
--- DECOMPILER ERROR at PC545: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC525: Overwrote pending register: R2 in 'AssignReg'
 
 l_0_1 = pcall(Infrastructure_SharePointScan)
 if not l_0_1 then
