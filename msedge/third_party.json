@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15920817,
+    "size": 15921508,
     "file_count": 846
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33300841,
-    "file_count": 4037
+    "size": 33312554,
+    "file_count": 4038
   },
   {
     "name": "boringssl",
@@ -256,8 +256,8 @@
   },
   {
     "name": "glib",
-    "size": 52998296,
-    "file_count": 2384
+    "size": 53001749,
+    "file_count": 2387
   },
   {
     "name": "glslang",
@@ -280,13 +280,18 @@
     "file_count": 3477
   },
   {
+    "name": "gsettings-desktop-schemas",
+    "size": 3837,
+    "file_count": 6
+  },
+  {
     "name": "gvdb",
     "size": 136258,
     "file_count": 23
   },
   {
     "name": "harfbuzz",
-    "size": 300631,
+    "size": 311358,
     "file_count": 32
   },
   {
@@ -326,7 +331,7 @@
   },
   {
     "name": "inspector_protocol",
-    "size": 51706,
+    "size": 52109,
     "file_count": 12
   },
   {
@@ -521,13 +526,13 @@
   },
   {
     "name": "mutter",
-    "size": 29870911,
-    "file_count": 2013
+    "size": 29874718,
+    "file_count": 2014
   },
   {
     "name": "nasm",
-    "size": 285070,
-    "file_count": 14
+    "size": 341588,
+    "file_count": 18
   },
   {
     "name": "nearby",
@@ -596,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4314589,
-    "file_count": 603
+    "size": 4325089,
+    "file_count": 604
   },
   {
     "name": "perl",
@@ -696,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 549481,
+    "size": 550322,
     "file_count": 15
   },
   {
@@ -766,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7476372,
+    "size": 7476537,
     "file_count": 194
   },
   {
