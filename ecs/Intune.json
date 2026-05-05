@@ -563,6 +563,11 @@
             "authonlyapp": true
         }
     },
+    "SVC_O365Processor": {
+        "FlightingV2": {
+            "MifoSPDisable": true
+        }
+    },
     "SVC_Pivot": {
         "FlightingV2": {
             "EnableGenericQueryParser": true,

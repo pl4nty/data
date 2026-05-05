@@ -1072,6 +1072,7 @@
         "EnableNewDeviceReadiness": true,
         "EnableOnboardedTestTenants": true,
         "EnableReportingOnboard": true,
+        "EnableSecureBootPhase2": true,
         "EnableSecureBootReport": true,
         "EnableTrendFilter": true,
         "EnableUXFF": true,
