@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33300326,
-    "file_count": 4036
+    "size": 33300841,
+    "file_count": 4037
   },
   {
     "name": "boringssl",
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161899236,
-    "file_count": 19093
+    "size": 161904927,
+    "file_count": 19094
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6978682,
+    "size": 6978828,
     "file_count": 67
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11346466,
+    "size": 11346659,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16373627,
-    "file_count": 1953
+    "size": 16397496,
+    "file_count": 1956
   },
   {
     "name": "entity_extraction",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 43984888,
-    "file_count": 3335
+    "size": 44062383,
+    "file_count": 3353
   },
   {
     "name": "googletest",
@@ -386,8 +386,8 @@
   },
   {
     "name": "libc++",
-    "size": 12564991,
-    "file_count": 1781
+    "size": 12563755,
+    "file_count": 1780
   },
   {
     "name": "libc++abi",
@@ -401,7 +401,7 @@
   },
   {
     "name": "libdmg-hfsplus",
-    "size": 1263180,
+    "size": 1263236,
     "file_count": 103
   },
   {
@@ -485,13 +485,18 @@
     "file_count": 83
   },
   {
+    "name": "lzma_sdk",
+    "size": 15398,
+    "file_count": 4
+  },
+  {
     "name": "mediapipe",
     "size": 661524,
     "file_count": 336
   },
   {
     "name": "metrics_proto",
-    "size": 292946,
+    "size": 293622,
     "file_count": 47
   },
   {
@@ -501,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19649003,
+    "size": 19653099,
     "file_count": 19
   },
   {
@@ -571,7 +576,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1745407,
+    "size": 1745478,
     "file_count": 529
   },
   {
@@ -591,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4293153,
-    "file_count": 602
+    "size": 4314589,
+    "file_count": 603
   },
   {
     "name": "perl",
@@ -676,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3484553,
-    "file_count": 1201
+    "size": 3485318,
+    "file_count": 1203
   },
   {
     "name": "speech-dispatcher",
