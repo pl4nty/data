@@ -17,6 +17,31 @@
                 "msEdgeAdPlatformUseIdentity"
             ]
         },
+        "EdgeSecureNetworkGA": {
+            "enableFeatures": [
+                "msVpnModes",
+                "msEdgeVpnDiscoverability",
+                "msEmbeddedVpnUI"
+            ],
+            "parameters": [
+                {
+                    "name": "ExperimentVersion",
+                    "value": "7"
+                },
+                {
+                    "name": "GlobalPrefEnabled",
+                    "value": "true"
+                },
+                {
+                    "name": "WiFiTrigger",
+                    "value": "true"
+                },
+                {
+                    "name": "UnsecureSiteAllTrigger",
+                    "value": "true"
+                }
+            ]
+        },
         "FeatureFlagRefactorExperiment": {
             "enableFeatures": [
                 "msNurturingFeatureFlagRefactor"
