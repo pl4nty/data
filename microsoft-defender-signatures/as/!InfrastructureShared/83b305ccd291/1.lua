@@ -73,60 +73,78 @@ do
           local l_0_38 = l_0_11.Domain
           local l_0_39 = scrubData(l_0_11.UsrName)
           local l_0_40 = scrubData(l_0_11.Domain)
-          local l_0_41, l_0_42 = {NotePath = (sigattr_tail[l_0_3]).utf8p1, TriggedSigs = l_0_18, ppID = l_0_25, RemoteInfo = l_0_11, UserName = l_0_39, Domain = l_0_40, Type = "NoteDrop", NoteFileMeta = l_0_26, RemoteEncConfig = l_0_36}, pcall(getBmInfo)
-          if l_0_42 and getBmInfo then
-            l_0_41.BmInfo = getBmInfo
-          end
-          local l_0_43 = nil
-          local l_0_44 = SafeGetUrlReputation
-          do
-            local l_0_45 = {l_0_17}
-            l_0_44 = l_0_44(l_0_45, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansomNote", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_41)})
-            l_0_41.BmInfo = nil
-            l_0_45 = l_0_44.urls
-            l_0_45 = l_0_45[l_0_17]
-            if l_0_45 ~= nil then
-              l_0_45 = l_0_44.urls
-              l_0_45 = l_0_45[l_0_17]
-              l_0_45 = l_0_45.determination
-              if l_0_45 == 2 then
-                l_0_45 = l_0_44.urls
-                l_0_45 = l_0_45[l_0_17]
-                l_0_45 = l_0_45.confidence
-                if l_0_45 ~= nil then
-                  l_0_45 = l_0_44.urls
-                  l_0_45 = l_0_45[l_0_17]
-                  l_0_45 = l_0_45.confidence
-                  if l_0_45 >= 60 then
-                    l_0_45 = l_0_44.urls
-                    l_0_45 = l_0_45[l_0_17]
-                    l_0_45 = l_0_45.context
-                    l_0_45 = l_0_45.Source
-                    if l_0_45 == "GenRansomNote" then
-                      l_0_45 = l_0_44.urls
-                      l_0_45 = l_0_45[l_0_17]
-                      l_0_45 = l_0_45.confidence
-                      l_0_41.confidence = l_0_45
-                      l_0_45 = l_0_44.urls
-                      l_0_45 = l_0_45[l_0_17]
-                      l_0_45 = l_0_45.context
-                      l_0_45 = l_0_45.Family
-                      l_0_41.family = l_0_45
-                      l_0_41.action, l_0_45 = l_0_45, {action = (((l_0_44.urls)[l_0_17]).context).action, parameter = (((l_0_44.urls)[l_0_17]).context).action_parameter, ttl = (((l_0_44.urls)[l_0_17]).context).action_ttl}
-                      l_0_41.ip = l_0_17
-                      l_0_41.unscrubbed_username = l_0_37
-                      l_0_41.unscrubbed_domain = l_0_38
-                      ;
-                      (bm.add_related_string)("RemoteGenericMassRansomNoteDrop:Malware", safeJsonSerialize(l_0_41), bm.RelatedStringBMReport)
+          if (MpCommon.IsSampled)(1000, true, true, true) == true then
+            local l_0_41 = {NotePath = (sigattr_tail[l_0_3]).utf8p1, TriggedSigs = l_0_18, ppID = l_0_25, RemoteInfo = l_0_11, UserName = l_0_39, Domain = l_0_40, Type = "NoteDrop", NoteFileMeta = l_0_26, RemoteEncConfig = l_0_36}
+            local l_0_42 = "GenRansomNote_enc"
+            local l_0_43 = 36000
+            local l_0_44 = 10
+            if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
+              local l_0_45 = nil
+              if l_0_17 and l_0_17 ~= "" then
+                do
+                  do
+                    AppendToRollingQueue(l_0_42, tostring(((bm.get_current_process_startup_info)()).ppid) .. "|" .. l_0_17, safeJsonSerialize(l_0_41), l_0_43, l_0_44, 1)
+                    l_0_41.typex_enc_transfer = "success"
+                    l_0_41.typex_enc_transfer = "failure"
+                    local l_0_46, l_0_47 = , pcall(getBmInfo)
+                    if l_0_47 and getBmInfo then
+                      l_0_46.BmInfo = getBmInfo
+                    end
+                    local l_0_48 = nil
+                    local l_0_49 = SafeGetUrlReputation
+                    do
+                      local l_0_50 = {l_0_17}
+                      l_0_49 = l_0_49(l_0_50, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansomNote", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_46)})
+                      l_0_46.BmInfo = nil
+                      l_0_50 = l_0_49.urls
+                      l_0_50 = l_0_50[l_0_17]
+                      if l_0_50 ~= nil then
+                        l_0_50 = l_0_49.urls
+                        l_0_50 = l_0_50[l_0_17]
+                        l_0_50 = l_0_50.determination
+                        if l_0_50 == 2 then
+                          l_0_50 = l_0_49.urls
+                          l_0_50 = l_0_50[l_0_17]
+                          l_0_50 = l_0_50.confidence
+                          if l_0_50 ~= nil then
+                            l_0_50 = l_0_49.urls
+                            l_0_50 = l_0_50[l_0_17]
+                            l_0_50 = l_0_50.confidence
+                            if l_0_50 >= 60 then
+                              l_0_50 = l_0_49.urls
+                              l_0_50 = l_0_50[l_0_17]
+                              l_0_50 = l_0_50.context
+                              l_0_50 = l_0_50.Source
+                              if l_0_50 == "GenRansomNote" then
+                                l_0_50 = l_0_49.urls
+                                l_0_50 = l_0_50[l_0_17]
+                                l_0_50 = l_0_50.confidence
+                                l_0_46.confidence = l_0_50
+                                l_0_50 = l_0_49.urls
+                                l_0_50 = l_0_50[l_0_17]
+                                l_0_50 = l_0_50.context
+                                l_0_50 = l_0_50.Family
+                                l_0_46.family = l_0_50
+                                l_0_46.action, l_0_50 = l_0_50, {action = (((l_0_49.urls)[l_0_17]).context).action, parameter = (((l_0_49.urls)[l_0_17]).context).action_parameter, ttl = (((l_0_49.urls)[l_0_17]).context).action_ttl}
+                                l_0_46.ip = l_0_17
+                                l_0_46.unscrubbed_username = l_0_37
+                                l_0_46.unscrubbed_domain = l_0_38
+                                ;
+                                (bm.add_related_string)("RemoteGenericMassRansomNoteDrop:Malware", safeJsonSerialize(l_0_46), bm.RelatedStringBMReport)
+                              end
+                            end
+                          end
+                        end
+                      end
+                      l_0_50 = mp
+                      l_0_50 = l_0_50.INFECTED
+                      do return l_0_50 end
+                      return mp.CLEAN
                     end
                   end
                 end
               end
             end
-            l_0_45 = mp
-            l_0_45 = l_0_45.INFECTED
-            do return l_0_45 end
-            return mp.CLEAN
           end
         end
       end

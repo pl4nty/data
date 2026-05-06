@@ -128,11 +128,14 @@ local l_0_6 = function(l_10_0, l_10_1)
     do return l_10_0 ~= "perplexity.ai" end
     if l_10_1 ~= "/" then
       do return l_10_0 ~= "copilot.microsoft.com" and l_10_0 ~= "chatgpt.com" and l_10_0 ~= "chat.openai.com" end
-      if l_10_0 == "claude.ai" or l_10_0 == "grok.com" or l_10_0 == "chat.deepseek.com" then
-        return true
+      if l_10_1 ~= "/" and l_10_1 ~= "/new" then
+        do return l_10_0 ~= "claude.ai" end
+        if l_10_1 ~= "/" then
+          do return l_10_0 ~= "grok.com" and l_10_0 ~= "chat.deepseek.com" end
+          do return false end
+          -- DECOMPILER ERROR: 10 unprocessed JMP targets
+        end
       end
-      do return false end
-      -- DECOMPILER ERROR: 7 unprocessed JMP targets
     end
   end
 end
