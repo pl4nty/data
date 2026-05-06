@@ -324,6 +324,7 @@
             "DeviceInventoryReporting": true,
             "EnableAppleDdmLobApps": true,
             "EnforceEdgeManifestSignatureValidation": true,
+            "GetToken": true,
             "ValidateEdgeManifestSignatures": true
         }
     },
