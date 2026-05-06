@@ -1,6 +1,7 @@
 {
     "autoUpdate": {
-        "anthropic.claude-code": "1.0.23"
+        "anthropic.claude-code": "1.0.23",
+        "openai.chatgpt": "26.409.20454"
     },
     "deprecated": {
         "2gua.rainbow-brackets": {
