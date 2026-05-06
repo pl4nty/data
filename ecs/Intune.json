@@ -444,6 +444,7 @@
             "APv2EnableManagedInstallerProvider": true,
             "APv2EnableMinimumGetMdmProvisioningStatusesCalls": true,
             "APv2EnablePublishResultsResiliencyBehavior": true,
+            "AllowNonOobeBootstrappingFlight": true,
             "DJPPGroupsV2Enabled": true,
             "EnableDeviceDisownAdeApi": true,
             "EnableNoDepDeviceFullSyncTriggerAfterProfileCorrection": true,
@@ -576,6 +577,7 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
+            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-Phase1": true,
             "PRSv3-Phase2": true,
@@ -746,6 +748,8 @@
             "AllowOOBEUpdatesUX": true,
             "EnableAllowOOBEUpdatesUX": true,
             "EnableETGFailuresReportUX": true,
+            "EnableReactVersionOfAndroidEnrollmentPropertiesBladeAndWizard": true,
+            "EnableReactVersionOfOverviewBlade": true,
             "EnableUpgradeButton": true,
             "EnableViewQrCodeSlideOutReact": true,
             "EnableWin32CatalogAppsForDpp": true,

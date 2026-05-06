@@ -222,6 +222,7 @@
         "azureml://registries/azure-openai/models/gpt-5.4-mini",
         "azureml://registries/azure-openai/models/gpt-5.4-nano",
         "azureml://registries/azure-openai/models/gpt-5.5",
+        "azureml://registries/azure-openai/models/gpt-chat-latest",
         "azureml://registries/azureml-routers-staging/models/model-router",
         "azureml://registries/azureml-routers/models/model-router",
         "azureml://registries/azureml-staging/models/gpt-4.5-preview",
@@ -390,6 +391,7 @@
         "gpt-5.4-mini",
         "gpt-5.4-nano",
         "gpt-5.5",
+        "gpt-chat-latest",
         "kimi-k2-thinking",
         "kimi-k2.5",
         "kimi-k2.6"
@@ -459,7 +461,8 @@
             "gpt-5.4-pro",
             "gpt-5.4-mini",
             "gpt-5.4-nano",
-            "gpt-5.5"
+            "gpt-5.5",
+            "gpt-chat-latest"
         ],
         "supportedChatModels": [
             "gpt-4",
@@ -507,6 +510,7 @@
             "gpt-5.4-mini",
             "gpt-5.4-nano",
             "gpt-5.5",
+            "gpt-chat-latest",
             "kimi-k2-thinking",
             "kimi-k2.5",
             "kimi-k2.6"
