@@ -28,8 +28,9 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "15.6.0",
+        "version": "15.6.1",
         "versions": [
+            "15.6.1",
             "15.6.0",
             "15.5.0",
             "15.4.0",

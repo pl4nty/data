@@ -285,6 +285,10 @@
                 },
                 {
                     "applied_policy": "OptOut",
+                    "domain": "cloud.microsoft"
+                },
+                {
+                    "applied_policy": "OptOut",
                     "domain": "live.net"
                 },
                 {
@@ -458,6 +462,10 @@
                 {
                     "applied_policy": "OptOut",
                     "domain": "google.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "ups.com"
                 }
             ],
             "policies": [
