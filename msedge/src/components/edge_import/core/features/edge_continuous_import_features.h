@@ -278,9 +278,6 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kCISettingsToggleRow);
 
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kCIRowInOtherImportOptionsSection);
-
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kHandleCIActivatedOnRemote);
 
 //  Trigger to know if continuous migration history import ended
