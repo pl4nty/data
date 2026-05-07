@@ -1971,6 +1971,11 @@
         "MaxPhoneNumberPerTenant": 2,
         "MaxRetriesSubscribeToMeeting": 10
     },
+    "TeamsEvalDataHub": {
+        "Features": {
+            "EcsIntegrationEnabled": true
+        }
+    },
     "TeamsFaultInjectionManagement": {
         "ChaosPolicyConfigurations": {
             "ChaosPolicyOptionsGroups": {
