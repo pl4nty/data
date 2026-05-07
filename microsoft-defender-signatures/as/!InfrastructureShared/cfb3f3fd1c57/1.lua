@@ -17,6 +17,11 @@ if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this
   l_0_3 = (this_sigattrlog[3]).utf8p2
 end
 if l_0_3 ~= "" and l_0_3 ~= nil then
+  if (sysio.IsFileExists)(l_0_3) then
+    (bm.add_threat_file)(l_0_3)
+  end
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN

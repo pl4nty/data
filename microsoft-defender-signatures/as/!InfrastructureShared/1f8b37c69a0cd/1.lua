@@ -12,6 +12,8 @@ local l_0_2 = (bm.get_imagepath)()
 if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
   return mp.CLEAN
 else
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
