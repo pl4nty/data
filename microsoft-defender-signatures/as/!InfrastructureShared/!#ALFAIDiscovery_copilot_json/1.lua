@@ -7,7 +7,7 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Lua:FnameAttr!config.json") then
+if not (mp.get_mpattribute)("Lua:FnameAttr!config.json") and not (mp.get_mpattribute)("Lua:FnameAttr!settings.json") then
   return mp.CLEAN
 end
 if not (mp.get_mpattribute)("Lua:LastFolder0!.copilot") then
@@ -61,11 +61,11 @@ do
   if not l_0_8.mcpServers and not l_0_8.servers then
     local l_0_11, l_0_12, l_0_13, l_0_14, l_0_15 = (l_0_8.mcp).servers
   end
-  -- DECOMPILER ERROR at PC115: Confused about usage of register: R11 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC121: Confused about usage of register: R11 in 'UnsetPending'
 
   if next(l_0_11) then
     l_0_10.mcpServers = {}
-    -- DECOMPILER ERROR at PC125: Confused about usage of register: R11 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC131: Confused about usage of register: R11 in 'UnsetPending'
 
     ;
     (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_11))
@@ -76,11 +76,11 @@ do
   local l_0_16 = nil
   local l_0_17, l_0_18 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
   if l_0_18 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
-    for l_0_22,l_0_23 in pairs(R16_PC151) do
+    for l_0_22,l_0_23 in pairs(R16_PC157) do
       local l_0_19 = nil
-      -- DECOMPILER ERROR at PC155: Confused about usage of register: R19 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC161: Confused about usage of register: R19 in 'UnsetPending'
 
-      if l_0_23 == l_0_4 and R19_PC155 == l_0_17 then
+      if l_0_23 == l_0_4 and R19_PC161 == l_0_17 then
         return mp.CLEAN
       end
     end
