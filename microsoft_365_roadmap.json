@@ -1,12 +1,348 @@
 [
     {
+        "created": "2026-05-06T23:15:10",
+        "description": "What\u2019s new\nTeams now supports audio and video offloading for Town hall attendees in VDI environments that are using the new optimization. Media streams are offloaded directly to the user\u2019s local device, improving performance and delivering a high definition viewing experience while reducing virtual desktop resource usage.\nWho it applies to\n\u2022\tWindows endpoints only using the new VDI optimization\n\u2022\tSupported VDI platforms:\no\tAzure Virtual Desktop and Windows 365\no\tCitrix\no\tOmnissa\no\tAmazon WorkSpaces\nWhat stays the same\nAll attendee interactivity features remain supported, including captions, DVR, reactions, streaming chat, and Q&A.\nAdditional details\nFirst party and third party eCDNs are supported. When enabled, the attendee\u2019s endpoint establishes a direct peer to peer connection using the local device network, avoiding virtual desktop double hop traffic.\nAction required\nNo action is required if the new optimization for Microsoft Teams is already enabled.\n",
+        "id": 561648,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Town hall media optimization for VDI attendees"
+    },
+    {
+        "created": "2026-05-06T23:15:10",
+        "description": "Improves eDiscovery workflows for Loop and Copilot pages by enabling full indexing of page content for keyword search within review sets and adding HTML format support for export from search.",
+        "id": 561492,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: eDiscovery \u2013 Enhancement of Loop and Copilot Pages in Review and Export"
+    },
+    {
+        "created": "2026-05-06T23:15:10",
+        "description": "You will now be able to access different Copilot settings directly in classic Outlook for Windows.",
+        "id": 561491,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot Settings in classic Outlook for Windows"
+    },
+    {
+        "created": "2026-05-06T23:15:10",
+        "description": "Administrators can temporarily roll back specific applications to a previous WebView2 Evergreen Runtime version (N-1 or N-2) using the new Downgrade Version policy in msedgewebview2.admx. This policy allows enterprises to mitigate critical regressions by specifying per-application exe-to-version mappings. The Edge Updater installs the target version side-by-side, and the WebView2 Loader redirects targeted apps accordingly. Downgrades auto-expire with each new WebView2 release: apps pinned to N-1 remain on the same version (now N-2) and auto-update in the next release, while apps pinned to N-2 revert to the current Evergreen version. The policy applies only to enterprise-managed devices (domain-joined or MDM-enrolled).",
+        "id": 561329,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Enterprise WebView2 runtime downgrade via Downgrade Version policy"
+    },
+    {
+        "created": "2026-05-06T23:15:10",
+        "description": "A day level Copilot adoption Power BI report reflecting the most recent copilot activity & freshest insights.",
+        "id": 561325,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "August CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Copilot Analytics: Copilot usage snapshot PBI at day level with fresh data"
+    },
+    {
+        "created": "2026-05-06T23:15:10",
+        "description": "Users have better experiences in flexible work environments with Microsoft Teams panel-based desk dock devices coming later this year. The Teams panel app now enables devices, such as the Yealink Linkhub, to enhance bookable desk experiences by indicating at-a-glance availability and letting visitors book directly on the device. Each device requires a Teams Shared Space license.",
+        "id": 561031,
+        "locale": null,
+        "modified": "2026-05-06T23:15:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enhanced bookable desk experience with Teams panel-based desk dock devices"
+    },
+    {
         "created": "2026-05-05T23:00:02",
         "description": "Presenters can use Proximity Join with Teams Rooms (MTRoW and MTRoA) to seamlessly connect to nearby room systems during Town halls, webinars, and structured meetings\u2014making live presentations fast and effortless.",
         "id": 561550,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -333,7 +669,7 @@
         "description": "Microsoft Teams on desktop now shows rich link previews when you share SharePoint pages. Links automatically expand into a visually appealing card with a thumbnail image and page description, making it easier to understand and engage with shared SharePoint content directly in Teams.",
         "id": 561321,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -354,6 +690,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -378,6 +717,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -601,9 +943,9 @@
         "description": "Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
         "id": 561034,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6152,15 +6494,15 @@
     },
     {
         "created": "2026-04-10T21:45:06",
-        "description": "You can now choose your preferred image model including OpenAI\u2019s GPT Image, Flux, or Auto for smart, dynamic selection when creating or editing images with Copilot in PowerPoint, or when generating a new presentation or page.",
+        "description": "You can now choose your preferred image model including OpenAI\u2019s GPT Image, Black Forest Lab\u2019s Flux and Microsoft\u2019s MAI-Image and more, for smart, dynamic selection when creating or editing images with Copilot in PowerPoint, or when generating a new presentation or page.",
         "id": 559478,
         "locale": null,
-        "modified": "2026-04-10T21:45:06",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7985,12 +8327,12 @@
         "description": "Copilot now provides coaching feedback on email drafts via chat and can apply suggestions directly to your message in Outlook. Users have the option to choose which suggestions are applied, and Copilot updates your email in place.",
         "id": 559418,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10266,12 +10608,12 @@
         "description": "Provides access to the same device health details currently available through the export function on the device onboarding page. \u200bWith the new device status API, customers can pull device-level information directly into their own BI tools, dashboards, and workflows, eliminating manual exports and making it easier to automate reporting at scale.",
         "id": 559027,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -12507,12 +12849,12 @@
         "description": "In Outlook, Copilot now works side by side with users to draft, refine, and format emails conversationally, powered by the same agentic capabilities available in Word, Excel, and PowerPoint. ",
         "id": 552595,
         "locale": null,
-        "modified": "2026-03-09T16:15:07",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14842,12 +15184,12 @@
     },
     {
         "created": "2026-02-25T00:15:23",
-        "description": "When users open links from Outlook, Microsoft Edge can automatically open the Copilot side pane to provide contextual insights and actionable suggestion chips based on email and destination content - such as highlighting key points, and recommending next actions - without disrupting the browsing flow. This experience helps users quickly understand content, take action with fewer steps, and get more value from Copilot while extending productive browsing time in Edge.",
+        "description": "When users open links from Outlook, Microsoft Edge can automatically open the Copilot side pane to provide contextual insights and actionable suggestion chips based on email and destination content - such as highlighting key points, and recommending next actions - without disrupting the browsing flow. This experience helps users quickly understand content, take action with fewer steps, and get more value from Copilot while extending productive browsing time in Edge. Admins can control availability to this feature using the M365LinksAutoOpenCopilotEnabled policy.",
         "id": 557561,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15681,12 +16023,12 @@
         "description": "We are introducing a reimagined SharePoint experience designed to be simple and intuitive, centered on the core jobs of discovering knowledge, publishing content, and building solutions. This update establishes the foundation for AI-assisted creation across the product. This includes an updated information architecture and cohesive design language, delivering a clean and consistent experience across surfaces.",
         "id": 547732,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38752,9 +39094,9 @@
         "description": "A new usage report will be available in the Microsoft 365 admin center for Copilot Connectors in Microsoft 365 Copilot, designed to give organizations a detailed view of how connectors are being used within Microsoft 365 Copilot. This report provides insights into overall connector activity, publisher-level trends, and connector powered response patterns over time, along with detailed user-level connectors adoption data. With these analytics, admins can monitor adoption, identify usage patterns, and optimize Copilot experiences to drive greater value across their organization. #copilotcontrolsystem ",
         "id": 519571,
         "locale": null,
-        "modified": "2026-03-24T23:15:57",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43303,9 +43645,9 @@
         "description": "This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.",
         "id": 500872,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -73026,12 +73368,12 @@
         "description": "After further review, we mistakenly marked the roadmap as \"launched.\" The correct status is In Development. We apologize the inconvenience. SharePoint FAQ web part help assist content owners keep their content fresh and relevant. Powered by Microsoft 365 Copilot, this new web part can help content owner easily curate FAQ by working with agents and connected grounding data. With a Human-in-the-Loop approach, it ensures high-quality, trustworthy FAQs\u2014without the hassle. The result? A living FAQ that evolves with your organization's needs. Updated February 24, 2026: We previously marked this item as launched when it is still in Preview. We expect to move to GA later this year. We apologize for this inconvenience. ",
         "id": 482198,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -87033,12 +87375,12 @@
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to import emails from .pst file to mailbox. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485740,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -94756,12 +95098,12 @@
         "description": "Organizations that do not currently use Microsoft Teams can now seamlessly join and present within Teams Town halls using their own video conferencing devices (VTC). By integrating Cloud Video Interoperability (CVI) capabilities into the event form, organizers and presenters receive join codes for their tenant. CVI presenters who join the call will automatically join and interact with other users in the green room prior to the event starting. This capability ensures all participants can see each other (and see the meeting video) without any limitations, providing a seamless and inclusive experience for everyone involved.",
         "id": 476487,
         "locale": null,
-        "modified": "2025-05-16T22:15:06",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -102407,12 +102749,12 @@
         "description": "Ensure via optional IT admin policy that new shared Loop workspaces are connected to and managed by an existing Teams enabled Microsoft 365 Group.",
         "id": 422725,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-05-06T23:15:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

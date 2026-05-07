@@ -1058,13 +1058,11 @@
         "DriverUpdatePreaggregateThreshold": true,
         "EnableAccessControlRolesFetch": true,
         "EnableAccessControlVisibility": true,
-        "EnableAdminToDynamicMove": true,
         "EnableAutopatchOverview": true,
         "EnableBidirectionalSync": true,
         "EnableCheckOnboardedTime": true,
         "EnableDriverHotQueryTest": true,
         "EnableFIREAlerting": true,
-        "EnableLocationServiceSmartMapping": true,
         "EnableNewDeviceReadiness": true,
         "EnableOnboardedTestTenants": true,
         "EnableReportingOnboard": true,
@@ -1073,14 +1071,11 @@
         "EnableTrendFilter": true,
         "EnableUXFF": true,
         "EnableUnifiedData": true,
-        "FUReleaseScopeTagBackfill": true,
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
         "HotpatchOnByDefaultOptOut": true,
-        "MigrateQBSEndpoint": true,
         "MigrationAddClientBrokerInstallAdminAction": true,
         "NestedGroupRemediationFlight": true,
-        "NewDeviceQUSummaryAPI": true,
         "NoFeatureActivation": true,
         "PolicyDeviceStatusesReadFromScaleUnitKusto": true,
         "QualityUpdateGraph": true,
@@ -1092,8 +1087,6 @@
         "ShowClientBrokerOnAdminActions": true,
         "SplitConfig": true,
         "UnificationWave1": true,
-        "UseCachedOptInSetting": true,
-        "UseDlsAutopatchHostNames": true,
-        "ValdiateIntuneTenantSyncReadiness": true
+        "UseDlsAutopatchHostNames": true
     }
 }
