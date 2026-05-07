@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13035598,
+    "size": 13035801,
     "file_count": 163
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33312554,
+    "size": 33313628,
     "file_count": 4038
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 161904927,
+    "size": 161908728,
     "file_count": 19094
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16397496,
+    "size": 16421808,
     "file_count": 1956
   },
   {
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 97560475,
-    "file_count": 11239
+    "size": 97560627,
+    "file_count": 11240
   },
   {
     "name": "flac",
@@ -261,7 +261,7 @@
   },
   {
     "name": "glslang",
-    "size": 44062383,
+    "size": 44063367,
     "file_count": 3353
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 29251,
+    "size": 29521,
     "file_count": 3
   },
   {
@@ -391,8 +391,8 @@
   },
   {
     "name": "libc++",
-    "size": 12563755,
-    "file_count": 1780
+    "size": 12570804,
+    "file_count": 1783
   },
   {
     "name": "libc++abi",
@@ -481,7 +481,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 401188023,
+    "size": 401183927,
     "file_count": 358
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 293622,
+    "size": 293961,
     "file_count": 47
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19653099,
+    "size": 19671019,
     "file_count": 19
   },
   {
@@ -561,8 +561,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 60019,
-    "file_count": 35
+    "size": 61857,
+    "file_count": 36
   },
   {
     "name": "oneds_sdk",
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4325089,
+    "size": 4332598,
     "file_count": 604
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550322,
+    "size": 550324,
     "file_count": 15
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1479345,
+    "size": 1483531,
     "file_count": 23
   },
   {
@@ -766,12 +766,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2697416,
+    "size": 2712478,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7476537,
+    "size": 7482138,
     "file_count": 194
   },
   {
