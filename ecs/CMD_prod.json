@@ -1093,6 +1093,7 @@
         "ShowClientBrokerInstallAssignedEntraGroups": true,
         "ShowClientBrokerOnAdminActions": true,
         "SplitConfig": true,
+        "SubscriptionHealthDisable": true,
         "UnificationWave1": true,
         "UseDlsAutopatchHostNames": true
     }
