@@ -11,9 +11,5 @@ l_0_0 = pcall(reportRelatedFilesFromBmEvents)
 if not l_0_0 and l_0_1 then
   (bm.add_related_string)("ErrorBMreport", l_0_1, bm.RelatedStringBMReport)
 end
-local l_0_2, l_0_3 = pcall(reportBmInfo)
-if not l_0_2 and l_0_3 then
-  (bm.add_related_string)("bmInfoFailReason", tostring(l_0_3), bm.RelatedStringBMReport)
-end
 return mp.INFECTED
 

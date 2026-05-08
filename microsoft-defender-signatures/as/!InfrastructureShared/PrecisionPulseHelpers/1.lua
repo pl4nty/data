@@ -205,42 +205,29 @@ MamadutReport = function()
             end
           end
         end
-      else
-        do
-          do
-            -- DECOMPILER ERROR at PC146: Overwrote pending register: R7 in 'AssignReg'
-
-            ;
-            (l_4_7.add_related_string)("FileNotExist_" .. l_4_6, "true", bm.RelatedStringBMReport)
-            -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-            -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
       end
     end
   end
   do
-    local l_4_17, l_4_18 = nil
-    -- DECOMPILER ERROR at PC165: Overwrote pending register: R3 in 'AssignReg'
+    do
+      local l_4_17, l_4_18 = nil
+      -- DECOMPILER ERROR at PC155: Overwrote pending register: R3 in 'AssignReg'
 
-    if not l_4_1 and l_4_17 then
-      l_4_18("bmInfoFailReason", tostring(l_4_17), bm.RelatedStringBMReport)
+      if not l_4_1 and l_4_17 then
+        l_4_18("bmInfoFailReason", tostring(l_4_17), bm.RelatedStringBMReport)
+      end
+      -- DECOMPILER ERROR at PC163: Overwrote pending register: R3 in 'AssignReg'
+
+      l_4_18()
+      -- DECOMPILER ERROR at PC165: Overwrote pending register: R3 in 'AssignReg'
+
+      l_4_18()
+      -- DECOMPILER ERROR at PC167: Overwrote pending register: R3 in 'AssignReg'
+
+      l_4_18()
+      do return  end
+      -- WARNING: undefined locals caused missing assignments!
     end
-    -- DECOMPILER ERROR at PC173: Overwrote pending register: R3 in 'AssignReg'
-
-    l_4_18()
-    -- DECOMPILER ERROR at PC175: Overwrote pending register: R3 in 'AssignReg'
-
-    l_4_18()
-    -- DECOMPILER ERROR at PC177: Overwrote pending register: R3 in 'AssignReg'
-
-    l_4_18()
-    do return  end
-    -- WARNING: undefined locals caused missing assignments!
   end
 end
 

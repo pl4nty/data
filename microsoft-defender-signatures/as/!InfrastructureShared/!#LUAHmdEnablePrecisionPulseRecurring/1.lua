@@ -40,27 +40,25 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
       return mp.CLEAN
     end
   end
-  for l_0_16,l_0_17 in ipairs(l_0_12.urls) do
+  for l_0_16,l_0_17 in pairs(l_0_12.urls) do
     if l_0_17.determination == 4 then
-      local l_0_18 = l_0_17.urlresponsecontext
+      local l_0_18 = l_0_17.context
       local l_0_19 = ""
       if l_0_18 then
-        for l_0_23,l_0_24 in ipairs(l_0_18) do
-          local l_0_25 = l_0_24.key
-          local l_0_26 = l_0_24.value
-          if l_0_25 == "Payload" then
-            l_0_19 = l_0_26
-            local l_0_27, l_0_28 = pcall(EnablePrecisionPulse, l_0_19, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
-            if l_0_28 then
-              local l_0_29 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
-              local l_0_30 = {}
-              l_0_30[1] = l_0_29
-              local l_0_31 = {}
-              l_0_31.SIG_CONTEXT = "LUA_GENERIC"
-              l_0_31.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-              l_0_31.TAG = "NOLOOKUP"
-              l_0_31.Report_Error = l_0_28
-              SafeGetUrlReputation(l_0_30, l_0_31, false, 4000)
+        for l_0_23,l_0_24 in pairs(l_0_18) do
+          if l_0_23 == "Payload" then
+            l_0_19 = l_0_24
+            local l_0_25, l_0_26 = pcall(EnablePrecisionPulse, l_0_19, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
+            if l_0_26 then
+              local l_0_27 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
+              local l_0_28 = {}
+              l_0_28[1] = l_0_27
+              local l_0_29 = {}
+              l_0_29.SIG_CONTEXT = "LUA_GENERIC"
+              l_0_29.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
+              l_0_29.TAG = "NOLOOKUP"
+              l_0_29.Report_Error = l_0_26
+              SafeGetUrlReputation(l_0_28, l_0_29, false, 4000)
             end
             break
           end
