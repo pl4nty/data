@@ -483,7 +483,7 @@ for l_0_56,l_0_57 in pairs(l_0_2) do
                             (bm.add_related_string)("updateDomainInfo_fail", l_0_138, bm.RelatedStringBMReport)
                           end
                           do
-                            if (MpCommon.IsSampled)(1000, true, true, true) == true then
+                            if (MpCommon.IsSampled)(5000, true, true, true) == true then
                               local l_0_140, l_0_141 = , pcall(getBmInfo)
                               if l_0_141 and getBmInfo then
                                 l_0_8.BmInfo = getBmInfo
