@@ -268,6 +268,7 @@
         "EnableCdpCollectionServiceApiVersion20240601": true,
         "EnableCdpIntegrationForPool": true,
         "EnableCfarDataRetrieval": true,
+        "EnableChangeUserAccountTypePlugin": true,
         "EnableCheckAzureADKerberosForHAADJProvision": true,
         "EnableCheckDeviceAgentEndpointUrl": true,
         "EnableCheckDeviceSessionHostStatusForActions": true,
