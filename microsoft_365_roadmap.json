@@ -1,5 +1,298 @@
 [
     {
+        "created": "2026-05-07T23:15:02",
+        "description": "Microsoft Edge is introducing support for passkey synchronization for enterprise users, enabling secure, passwordless authentication across devices. Passkeys created in Edge can now be synced seamlessly, improving sign-in experience while maintaining strong security standards.",
+        "id": 561652,
+        "locale": null,
+        "modified": "2026-05-07T23:15:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Passkey Sync for Enterprise Users"
+    },
+    {
+        "created": "2026-05-07T23:15:02",
+        "description": "The chat panel will open by default in gallery view, allowing participants in Teams Room on Android to quickly see ongoing meeting chat when they join. Admins can configure this default device behavior, and users can close the panel in one tap during meetings. \n \n",
+        "id": 561604,
+        "locale": null,
+        "modified": "2026-05-07T23:15:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Chat panel open by default in the gallery view on Teams Rooms on Android"
+    },
+    {
+        "created": "2026-05-07T23:15:02",
+        "description": "Organizers and presenters who have access to production tools can now upload custom backgrounds in the \"Manage what attendees see\" experience for Teams events. This enhancement allows organizations to display their brand identity by replacing the default backgrounds with their own images, such as company logos, event-specific artwork, or themed visuals. Custom backgrounds appear behind presenters and content, giving attendees a polished viewing experience. This feature is available for Teams events organizers with a Teams Premium license. This feature is available on Teams for Windows desktop and Mac desktop.",
+        "id": 561493,
+        "locale": null,
+        "modified": "2026-05-07T23:15:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Upload custom backgrounds for Teams events"
+    },
+    {
+        "created": "2026-05-07T23:15:02",
+        "description": "This feature is bringing the Information Protection Filer Labeler and Viewer applications to the MacOS platform. Enabling customers to have the same capabilities available on Mac. Core functionality will be available with the exception of the Advanced label-based protection feature.",
+        "id": 561327,
+        "locale": null,
+        "modified": "2026-05-07T23:15:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection- File Labeler and File Viewer for MacOS"
+    },
+    {
+        "created": "2026-05-07T23:15:02",
+        "description": "When files are opened in Windows, the operating system, and applications (for example, Microsoft Office and browsers) can create, rename, and delete temporary files as part of normal behavior. The Endpoint client audits these activities, resulting in high-volume, low-signal events that appear as \u201cnoise\u201d for Insider Risk Management (IRM) customers. While global exclusions exist (file type, keyword, file path, etc.), some temporary file naming patterns are not easily captured with the current exclusions, leaving customers without a practical way to reduce noise without over-excluding. This feature introduces built-in filtering for well-known temporary file name patterns so that Endpoint file operations are excluded from IRM activity explorer and scoring reducing noise allowing customers to focus on the most relevant alerts. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.\n",
+        "id": 560601,
+        "locale": null,
+        "modified": "2026-05-07T23:15:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Insider Risk Management \u2013 Reduce temporary file noise for Endpoint activities in IRM"
+    },
+    {
         "created": "2026-05-06T23:15:10",
         "description": "What\u2019s new\nTeams now supports audio and video offloading for Town hall attendees in VDI environments that are using the new optimization. Media streams are offloaded directly to the user\u2019s local device, improving performance and delivering a high definition viewing experience while reducing virtual desktop resource usage.\nWho it applies to\n\u2022\tWindows endpoints only using the new VDI optimization\n\u2022\tSupported VDI platforms:\no\tAzure Virtual Desktop and Windows 365\no\tCitrix\no\tOmnissa\no\tAmazon WorkSpaces\nWhat stays the same\nAll attendee interactivity features remain supported, including captions, DVR, reactions, streaming chat, and Q&A.\nAdditional details\nFirst party and third party eCDNs are supported. When enabled, the attendee\u2019s endpoint establishes a direct peer to peer connection using the local device network, avoiding virtual desktop double hop traffic.\nAction required\nNo action is required if the new optimization for Microsoft Teams is already enabled.\n",
         "id": 561648,
@@ -340,7 +633,7 @@
         "description": "Presenters can use Proximity Join with Teams Rooms (MTRoW and MTRoA) to seamlessly connect to nearby room systems during Town halls, webinars, and structured meetings\u2014making live presentations fast and effortless.",
         "id": 561550,
         "locale": null,
-        "modified": "2026-05-06T23:15:10",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -349,6 +642,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
             },
             {
                 "tagName": "Android"
@@ -373,6 +672,12 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
                 }
             ],
             "platforms": [
@@ -8150,7 +8455,7 @@
         "description": "Introduce an AI-powered capability leveraging Microsoft Security Copilot to automatically generate natural language explanations of changes made to DLP policies after each update within Microsoft Purview. This feature will analyze policy version deltas (pre-update vs. post-update) and produce a structured, human-readable summary that clearly explains: What changed Where the change occurred (rule, condition, action, location, etc.) The impact of the change The potential enforcement implications The goal is to eliminate manual policy diff analysis, reduce configuration ambiguity, and improve governance transparency for compliance and security administrators.",
         "id": 559106,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "May CY2026",
@@ -8198,7 +8503,7 @@
                 }
             ]
         },
-        "title": "Microsoft Purview: Data Loss Prevention - Apply default SharePoint library labels to data at rest"
+        "title": "Microsoft Purview: Data Loss Prevention - DLP Policy Change Insights with Security Copilot"
     },
     {
         "created": "2026-03-31T23:15:47",
@@ -12495,12 +12800,12 @@
         "description": "Use enhanced error reporting in Cloud Update for Microsoft 365 Apps updates to access clear, descriptive error messages that help you easily identify why an update did not complete successfully. Admins can review comprehensive insights across all Cloud Update-managed devices and drill down into individual devices for detailed information. This improved feature expands on the existing upgrade progress insights by grouping issues according to error codes and providing straightforward descriptions. These advancements enable admins to diagnose problems more efficiently, reduce support escalations, and take decisive corrective actions to boost monthly compliance rates.",
         "id": 558249,
         "locale": null,
-        "modified": "2026-03-10T23:00:58",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12555,7 +12860,7 @@
                 }
             ]
         },
-        "title": "Microsoft 365 Apps: Cloud Update - Descriptive Errors"
+        "title": "Microsoft 365 Apps: Cloud Update - Update Health"
     },
     {
         "created": "2026-03-10T22:00:39",
@@ -13410,12 +13715,12 @@
         "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the new, refreshed Copilot New Tab Page. Users can also view personalized news and activities.",
         "id": 558256,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13465,12 +13770,12 @@
         "description": "Catch up in Teams mobile provides a unified view of all directed and followed conversations across chats, meeting chats, channels and threads. The mobile-optimized card view supports swipe actions, helping you quickly review and triage lists of important items.",
         "id": 558108,
         "locale": null,
-        "modified": "2026-03-06T00:00:43",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14345,9 +14650,9 @@
         "description": "Centralized notification settings streamline channel notification setup and management. Available in Teams settings, users have a single place to review and adjust notifications for all visible channels, instead of managing each individually.",
         "id": 557970,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27811,9 +28116,9 @@
         "description": "Edge for Business will soon help users quickly take contextual action on their open pages using contextual nudges attached to the Copilot icon in the toolbar",
         "id": 537284,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30764,9 +31069,9 @@
         "description": "Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode. ",
         "id": 530578,
         "locale": null,
-        "modified": "2026-04-22T23:30:25",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -37513,10 +37818,10 @@
         "description": "I can access Universal Print audit records of key administrator and user activities, such as print job submissions, configuration changes, and printer registrations. Audit records will be available in Microsoft Purview\u2019s Unified Audit Log for compliance and long-term record-keeping. ",
         "id": 519573,
         "locale": null,
-        "modified": "2025-10-31T22:00:11",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
-        "publicPreviewDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -40231,10 +40536,10 @@
         "description": "I can scan documents using my regular scanning capable multi-functional-printer and will get an email notification that my scan is ready to download.",
         "id": 519572,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -98104,9 +98409,9 @@
         "description": "Copilot for Security in DLP can summarize DLP policies. This enhancement enables DLP admins to gain insights on coverage of policies viz. location, classifiers and notifications, and more. \n \nDLP admins can get these insights on all the policies or on few selected policies. They will be able to use prompts to gain deeper level view of how a policy is configured for their digital landscape. This helps them align their data posture on a regular basis and make corrections to policy posture as needed. #copilotcontrolsystem",
         "id": 472031,
         "locale": null,
-        "modified": "2025-09-11T00:00:04",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -98158,7 +98463,7 @@
                 }
             ]
         },
-        "title": "Data Loss Prevention- Gain DLP policy insights with Security Copilot"
+        "title": "Data Loss Prevention- DLP Policy Change Insights with Security Copilot"
     },
     {
         "created": "2024-12-10T00:15:43",
@@ -114170,10 +114475,10 @@
         "description": "With a new Azure Monitor integration, Universal Print customers can send detailed diagnostic logs to a Log Analytics workspace to conduct troubleshooting and configure custom alerts.",
         "id": 396782,
         "locale": null,
-        "modified": "2025-10-23T23:00:40",
+        "modified": "2026-05-07T23:15:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [

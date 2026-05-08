@@ -288,6 +288,7 @@
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
+            "EnableAndroidSyncCredentialProviderProcessing": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
             "EnableBteOnboarding": true,
@@ -316,7 +317,8 @@
             "DisableMTGlobalAppSearch": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "SCGWUseEGATsForAppsTargeting": true,
-            "UseEGATsForDPAs": true
+            "UseEGATsForDPAs": true,
+            "enableCredentialProviderProperty": true
         }
     },
     "SVC_AppleMDM": {
@@ -660,6 +662,12 @@
             "EnableAdminTasks": true
         }
     },
+    "UX_AndroidEnterprise": {
+        "FlightingV2": {
+            "EnableCredentialProviderPolicyAE": true,
+            "EnableCredentialProviderPolicyBYOD": true
+        }
+    },
     "UX_AppLifecycle": {
         "FlightingV2": {
             "EnableIosDdmReqApps": true,
@@ -749,6 +757,7 @@
     "UX_TenantSetup": {
         "FlightingV2": {
             "AllowOOBEUpdatesUX": true,
+            "EnableADEScopeTagBypass": true,
             "EnableAllowOOBEUpdatesUX": true,
             "EnableETGFailuresReportUX": true,
             "EnableReactVersionOfAndroidEnrollmentPropertiesBladeAndWizard": true,
