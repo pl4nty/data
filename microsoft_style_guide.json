@@ -11774,6 +11774,11 @@
                                     "toc_title": "responsible AI"
                                 },
                                 {
+                                    "href": "responsible-ai-style-guide/a-z-word-list/r/responsible-ai-standard",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Responsible AI Standard"
+                                },
+                                {
                                     "href": "responsible-ai-style-guide/a-z-word-list/r/restricted-uses",
                                     "permissioned-type": "private",
                                     "toc_title": "restricted uses"
@@ -14477,7 +14482,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2761,
+        "count_of_node_with_href": 2762,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

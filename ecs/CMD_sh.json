@@ -45,6 +45,7 @@
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
         "Branding_And_Licensing": true,
+        "BuildDummyUpnWithDomainName": true,
         "BypassImageCheckInOAI": true,
         "CASEnableGetCloudPCsByPlatformSdk": true,
         "CASWdsColdStartRecoveryEnabled": true,

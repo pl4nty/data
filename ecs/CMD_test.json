@@ -54,6 +54,7 @@
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
         "Branding_And_Licensing": true,
+        "BuildDummyUpnWithDomainName": true,
         "BulkAction5KBatchSizeTest_Restart": true,
         "BulkAction5KBatchSizeTest_Restore": true,
         "BulkAction5KBatchSizeTest_Troubleshoot": true,
