@@ -93851,67 +93851,6 @@
     },
     {
         "created": "2025-01-30T00:15:44",
-        "description": "A central hub for corporate communicators and network administrators to access information and manage tasks across the communications lifecycle, starting with campaigns, analytics, leader and audiences, and advanced moderation.",
-        "id": 478656,
-        "locale": null,
-        "modified": "2025-07-09T23:00:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Engage Communications Dashboard"
-    },
-    {
-        "created": "2025-01-30T00:15:44",
         "description": "The Facilitator agent works alongside you and your team to help you manage your meetings effortlessly. Throughout the meeting, Facilitator takes notes that everyone can co-author, manages the time and agenda, and can quickly surface relevant information from the web or the conversation itself. Users can now use the Facilitator agent in Teams Rooms on Windows for real-time notes and action items during both scheduled hybrid and impromptu in-person meetings using AI. In hybrid meetings, the agent appears in the notes panel. For in-person meetings, a participant can scan the QR code on the display in the room to invoke the agent as the group's assistant.",
         "id": 478611,
         "locale": null,
@@ -97531,55 +97470,6 @@
             ]
         },
         "title": "Microsoft Teams: Hiding of inactive channels"
-    },
-    {
-        "created": "2024-12-20T00:00:02",
-        "description": "FSLogix support for the new Outlook for Windows includes registering the new Outlook for Windows package by family name and persisting the user data in LocalAppData. It will allow the roaming of user data in new Outlook for non-persistent VDI. #newoutlookforwindows",
-        "id": 473803,
-        "locale": null,
-        "modified": "2025-07-09T23:00:43",
-        "moreInfoLink": "https://learn.microsoft.com/microsoft-365-apps/outlook/get-started/virtualized-desktop-infrastructure",
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: FSLogix support for the new Outlook for Windows"
     },
     {
         "created": "2024-12-20T00:00:02",
@@ -106162,73 +106052,6 @@
             ]
         },
         "title": "Microsoft Viva: Microsoft Copilot Dashboard Scope Filter enhancements"
-    },
-    {
-        "created": "2024-10-10T23:15:45",
-        "description": "Org Explorer for Outlook helps you to visualize and explore your company\u2019s internal structure, work teams, and individual roles. This feature will be available in Outlook for all M365 enterprise users, including Microsoft Viva users.",
-        "id": 421191,
-        "locale": null,
-        "modified": "2025-07-09T23:00:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Org Explorer available for all M365 commercial users"
     },
     {
         "created": "2024-08-26T23:15:15",
