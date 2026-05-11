@@ -53,6 +53,7 @@
         "BackfillMitigateVsbWin10": true,
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
+        "BlockUpdateSizeInPolicyWhenDynamic": true,
         "Branding_And_Licensing": true,
         "BuildDummyUpnWithDomainName": true,
         "BulkAction5KBatchSizeTest_Restart": true,
