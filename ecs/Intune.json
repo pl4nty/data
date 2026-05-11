@@ -300,6 +300,7 @@
             "EnableEnrollmentModeMismatchBlock": true,
             "EnableEnterpriseTypeRefreshForAfwAccount": true,
             "EnableGoogleDeviceDeleteOnEnrollment": true,
+            "EnableKioskModeExitCodeDataReferences": true,
             "EnableMhsAppPolicyReviseBehavior": true,
             "EnablePasswordDefaultHighComplexityForAmApiWorkProfile": true,
             "EnablePatchConfigAssignmentOnAlreadyExistsException": true,
