@@ -705,8 +705,9 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.81.0",
+        "version": "3.82.0",
         "versions": [
+            "3.82.0",
             "3.81.0",
             "3.79.0",
             "3.77.0",
@@ -1122,8 +1123,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.32.0",
+        "version": "2.36.0",
         "versions": [
+            "2.36.0",
             "2.32.0",
             "2.30.0",
             "2.26.0",
