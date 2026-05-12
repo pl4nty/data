@@ -17,9 +17,9 @@
 #include "mojo/core/embedder/embedder.h"
 #include "mojo/core/embedder/scoped_ipc_support.h"
 #include "mojo/public/c/system/core.h"
-#include "tools/win/process_viewer/data_provider/ie_task_provider.h"
-#include "tools/win/process_viewer/data_provider/process_data_provider.h"
-#include "tools/win/process_viewer/data_provider/task_manager_client_sync.h"
+#include "tools/win/process_viewer/edge_data_provider/ie_task_provider.h"
+#include "tools/win/process_viewer/edge_data_provider/process_data_provider.h"
+#include "tools/win/process_viewer/edge_data_provider/task_manager_client_sync.h"
 
 namespace process_viewer {
 

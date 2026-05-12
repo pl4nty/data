@@ -91,12 +91,11 @@ template("edge_overlay_config_optimize") {
 
       # TODO(task.ms/49530439) [Pump follow-up] Validate and update optimize PGO
       if (chrome_pgo_phase != 2) {
-        # Favor size over speed, /O1 must be before the common flags.
+        # Favor size over speed for C/C++, /O1 must be before the common flags.
         # /O1 implies /Os and /GF.
         # make sure /Oy- is after /O1
+        # Rust optimization level inherits upstream "-Copt-level=3" (speed).
         cflags += [ "/O1" ] + [ "/Oy-" ] + [ "/Oi" ]
-        rustflags -= [ "-Copt-level=3" ]
-        rustflags += [ "-Copt-level=s" ]
       } else {
         # PGO requires all translation units to be compiled with /O2. The actual
         # optimization level will be decided based on the profiling data.

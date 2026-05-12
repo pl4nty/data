@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2206974,
+    "size": 2207028,
     "file_count": 184
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13035801,
+    "size": 13039791,
     "file_count": 163
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "name": "android_sdk",
-    "size": 3456,
+    "size": 3255,
     "file_count": 2
   },
   {
@@ -31,12 +31,12 @@
   },
   {
     "name": "android_toolchain",
-    "size": 564617,
+    "size": 564635,
     "file_count": 9
   },
   {
     "name": "angle",
-    "size": 15921508,
+    "size": 15920924,
     "file_count": 846
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "name": "arcore-android-sdk",
-    "size": 14737,
+    "size": 14750,
     "file_count": 12
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33313628,
-    "file_count": 4038
+    "size": 33323592,
+    "file_count": 4040
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994164,
+    "size": 17994142,
     "file_count": 1006
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "name": "checkstyle",
-    "size": 41824,
+    "size": 41836,
     "file_count": 11
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6978828,
+    "size": 6979781,
     "file_count": 67
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11346659,
+    "size": 11421981,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16421808,
-    "file_count": 1956
+    "size": 16988383,
+    "file_count": 1996
   },
   {
     "name": "entity_extraction",
@@ -226,7 +226,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 97560627,
+    "size": 97560881,
     "file_count": 11240
   },
   {
@@ -311,7 +311,7 @@
   },
   {
     "name": "hyphenation-patterns",
-    "size": 3091515,
+    "size": 3091486,
     "file_count": 290
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "kotlinc",
-    "size": 317938,
+    "size": 318011,
     "file_count": 53
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 60792,
+    "size": 60858,
     "file_count": 46
   },
   {
@@ -496,8 +496,8 @@
   },
   {
     "name": "mediapipe",
-    "size": 661524,
-    "file_count": 336
+    "size": 634836,
+    "file_count": 323
   },
   {
     "name": "metrics_proto",
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19671019,
+    "size": 19714027,
     "file_count": 19
   },
   {
@@ -581,8 +581,8 @@
   },
   {
     "name": "openscreen",
-    "size": 1745478,
-    "file_count": 529
+    "size": 1221891,
+    "file_count": 297
   },
   {
     "name": "openxr",
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4332598,
+    "size": 4337160,
     "file_count": 604
   },
   {
@@ -661,12 +661,12 @@
   },
   {
     "name": "rust",
-    "size": 1684521,
-    "file_count": 222
+    "size": 1961411,
+    "file_count": 244
   },
   {
     "name": "screen-ai",
-    "size": 4372589,
+    "size": 4372524,
     "file_count": 83
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3485318,
+    "size": 3485714,
     "file_count": 1203
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74541,
+    "size": 74554,
     "file_count": 13
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1483531,
+    "size": 1479345,
     "file_count": 23
   },
   {
@@ -766,12 +766,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2712478,
+    "size": 2697416,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7482138,
+    "size": 7479945,
     "file_count": 194
   },
   {
@@ -781,7 +781,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 264049,
+    "size": 264139,
     "file_count": 65
   },
   {

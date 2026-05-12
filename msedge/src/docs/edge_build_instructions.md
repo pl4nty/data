@@ -13,6 +13,9 @@ This document will be referencing sections of the Chromium build instructions at
 
 1.  Follow the instructions under the **Setting up Windows** header in
     [windows_build_instructions.md](windows_build_instructions.md).
+    Chromium is based on Windows SDK  10.0.26100.7705+ and Visual Studio Professional 2026 18.3.2+ and these MUST be installed
+    This location lists Visual Studio Version 2026 Versions https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-history which can assist in finding Visual Studio Professional 2026 18.3.2+
+
 2.  Follow the instructions under the **Install depot_tools** header in
     [windows_build_instructions.md](windows_build_instructions.md), placing the **depot_tools** folder adjacent to the
     extracted **src** folder.
@@ -33,7 +36,7 @@ This document will be referencing sections of the Chromium build instructions at
     example:
 
     ```
-    python build\toolchain\win\setup_toolchain.py "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community" "c:\Program Files (x86)\Windows Kits\10" "%EDGE_ROOT%\src\out\Release" win x64 "%EDGE_ROOT%\src\out\Release\environment.x64"
+    python build\toolchain\win\setup_toolchain.py "C:\Program Files\Microsoft Visual Studio\18\Professional" "c:\Program Files (x86)\Windows Kits\10" "%EDGE_ROOT%\src\out\Release" win x64 "%EDGE_ROOT%\src\out\Release\environment.x64"
     ```
 
 8.  Run the command `python -m pip install pywin32`.

@@ -250,6 +250,9 @@ BASE_DECLARE_FEATURE(kEdgePipAlignedUI);
 // (which re-aligns with upstream) is not overriding it.
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAdvancedUiEnabled();
 
+// Returns true when the Edge PiP aligned UI feature is enabled.
+COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAlignedUiEnabled();
+
 // If enabled, domain actions for Enhanced Copy Paste will be parsed and applied
 // to the relevant domains.
 COMPONENT_EXPORT(UI_BASE_FEATURES)

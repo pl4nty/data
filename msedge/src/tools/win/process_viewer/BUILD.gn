@@ -11,7 +11,7 @@ executable("edge_process_list") {
   sources = [ "edge_process_list/main.cc" ]
 
   deps = [
-    ":data_provider",
+    ":edge_data_provider",
     "//base",
     "//chrome/common/edge_external_task_manager",
     "//mojo/core/embedder",
@@ -30,7 +30,7 @@ executable("edge_process_watcher") {
   ]
 
   deps = [
-    ":data_provider",
+    ":edge_data_provider",
     ":mojom",
     "//base",
     "//chrome/common:common_lib",
@@ -44,47 +44,49 @@ executable("edge_process_watcher") {
 
 shared_library("process_viewer_data") {
   sources = [
-    "data_provider/edge_watcher_client_export.cc",
-    "data_provider/ie_task_provider_export.cc",
-    "data_provider/main_export.cc",
-    "data_provider/process_data_provider_export.cc",
-    "data_provider/task_export.cc",
-    "data_provider/task_manager_client_export.cc",
+    "edge_data_provider/edge_watcher_client_export.cc",
+    "edge_data_provider/ie_task_provider_export.cc",
+    "edge_data_provider/main_export.cc",
+    "edge_data_provider/process_data_provider_export.cc",
+    "edge_data_provider/task_export.cc",
+    "edge_data_provider/task_manager_client_export.cc",
   ]
 
   deps = [
-    ":data_provider",
+    ":edge_data_provider",
     "//base",
     "//chrome/common/edge_external_task_manager",
     "//mojo/core/embedder",
   ]
 }
 
-source_set("data_provider") {
+source_set("edge_data_provider") {
   sources = [
     "common/edge_watcher_common.h",
-    "data_provider/edge_process.cc",
-    "data_provider/edge_process.h",
-    "data_provider/edge_process_constants.cc",
-    "data_provider/edge_process_constants.h",
-    "data_provider/edge_watcher_client.cc",
-    "data_provider/edge_watcher_client.h",
-    "data_provider/edge_webview_process.cc",
-    "data_provider/edge_webview_process.h",
-    "data_provider/ie_process.cc",
-    "data_provider/ie_process.h",
-    "data_provider/ie_task_provider.cc",
-    "data_provider/ie_task_provider.h",
-    "data_provider/ntdefs.h",
-    "data_provider/process.cc",
-    "data_provider/process.h",
-    "data_provider/process_data_provider.cc",
-    "data_provider/process_data_provider.h",
-    "data_provider/task_export.h",
-    "data_provider/task_manager_client.cc",
-    "data_provider/task_manager_client.h",
-    "data_provider/task_manager_client_sync.cc",
-    "data_provider/task_manager_client_sync.h",
+    "edge_data_provider/edge_process.cc",
+    "edge_data_provider/edge_process.h",
+    "edge_data_provider/edge_process_constants.cc",
+    "edge_data_provider/edge_process_constants.h",
+    "edge_data_provider/edge_watcher_client.cc",
+    "edge_data_provider/edge_watcher_client.h",
+    "edge_data_provider/edge_webview_process.cc",
+    "edge_data_provider/edge_webview_process.h",
+    "edge_data_provider/ie_process.cc",
+    "edge_data_provider/ie_process.h",
+    "edge_data_provider/ie_task_provider.cc",
+    "edge_data_provider/ie_task_provider.h",
+    "edge_data_provider/ipc_thread.cc",
+    "edge_data_provider/ipc_thread.h",
+    "edge_data_provider/ntdefs.h",
+    "edge_data_provider/process.cc",
+    "edge_data_provider/process.h",
+    "edge_data_provider/process_data_provider.cc",
+    "edge_data_provider/process_data_provider.h",
+    "edge_data_provider/task_export.h",
+    "edge_data_provider/task_manager_client.cc",
+    "edge_data_provider/task_manager_client.h",
+    "edge_data_provider/task_manager_client_sync.cc",
+    "edge_data_provider/task_manager_client_sync.h",
   ]
 
   deps = [
@@ -112,16 +114,18 @@ mojom("mojom") {
 
 test("process_viewer_unittests") {
   sources = [
-    "data_provider/edge_process_constants_unittest.cc",
+    "edge_data_provider/edge_process_constants_unittest.cc",
+    "edge_data_provider/ipc_thread_unittest.cc",
     "test/run_all_unittests.cc",
   ]
 
   deps = [
-    ":data_provider",
+    ":edge_data_provider",
     "//base/test:test_support",
     "//chrome/common:non_code_constants",
     "//components/crash/core/app:run_as_crashpad_handler",
     "//extensions/buildflags",
+    "//mojo/core/embedder",
     "//testing/gtest",
   ]
 

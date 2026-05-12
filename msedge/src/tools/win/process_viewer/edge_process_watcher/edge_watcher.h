@@ -9,8 +9,8 @@
 
 #include "base/observer_list.h"
 #include "chrome/common/edge_external_task_manager/external_task_manager.mojom.h"
-#include "tools/win/process_viewer/data_provider/process_data_provider.h"
-#include "tools/win/process_viewer/data_provider/task_manager_client.h"
+#include "tools/win/process_viewer/edge_data_provider/process_data_provider.h"
+#include "tools/win/process_viewer/edge_data_provider/task_manager_client.h"
 #include "tools/win/process_viewer/edge_process_watcher/browser_creation_watcher.h"
 
 namespace process_viewer {

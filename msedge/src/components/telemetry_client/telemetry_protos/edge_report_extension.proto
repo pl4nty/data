@@ -9,7 +9,7 @@ option optimize_for = LITE_RUNTIME;
 package telemetry_client;
 
 // This is the message type sent from Chrome to the UKM collector.
-// Next tag: 11
+// Next tag: 21
 message EdgeReportExtension {
   // A unique identifier for a Chrome install. This ID should be used only
   // in UKM reports, and not linked to any other data sources.
@@ -48,4 +48,5 @@ message EdgeReportExtension {
   optional string payload_report_ukm_default = 18;
   // Only set for testing purposes.
   optional string payload_report_none = 19;
+  optional string payload_web_features = 20;
 }
