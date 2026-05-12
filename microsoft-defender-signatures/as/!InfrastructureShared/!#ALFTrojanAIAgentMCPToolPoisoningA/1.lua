@@ -73,6 +73,9 @@ do
       end
       local l_0_17 = nil
       if ((not l_0_9 or l_0_10) and not l_0_17) or (string.find)(l_0_8, "access_token", 1, true) then
+        local l_0_18 = nil
+        set_research_data("AIAgent_MCPToolPoisoning", safeJsonSerialize({file = l_0_4, pattern = "important_tag", pattern_html = "html_comment", pattern_zw = "zero_width_chars", has_payload = "true"}), false)
+        ;
         (mp.SetDetectionString)(safeJsonSerialize({file = l_0_4, pattern = "important_tag", pattern_html = "html_comment", pattern_zw = "zero_width_chars", has_payload = "true"}))
         return mp.INFECTED
       end

@@ -53,10 +53,11 @@ end
 local l_0_14 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_15 = {}
 do
+  set_research_data("AIAgent_MCPSSHKeyLeak", safeJsonSerialize(l_0_15), false)
   ;
   (mp.SetDetectionString)(safeJsonSerialize(l_0_15))
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC166: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC172: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end

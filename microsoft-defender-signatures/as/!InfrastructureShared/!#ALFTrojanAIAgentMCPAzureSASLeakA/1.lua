@@ -50,10 +50,11 @@ do
     local l_0_8 = nil
     local l_0_9 = nil
     do
+      set_research_data("AIAgent_MCPAzureSASLeak", safeJsonSerialize({file = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)) or "unknown", sas_param_count = tostring(l_0_9)}), false)
       ;
       (mp.SetDetectionString)(safeJsonSerialize({file = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)) or "unknown", sas_param_count = tostring(l_0_9)}))
       do return mp.INFECTED end
-      -- DECOMPILER ERROR at PC229: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC235: freeLocal<0 in 'ReleaseLocals'
 
     end
   end

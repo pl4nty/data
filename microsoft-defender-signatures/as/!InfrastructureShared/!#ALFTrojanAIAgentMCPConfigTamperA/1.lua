@@ -49,10 +49,11 @@ local l_0_8 = {}
 do
   l_0_8.file = l_0_7 or "unknown"
   l_0_8.tamper_types = (table.concat)(l_0_6, ",")
+  set_research_data("AIAgent_MCPConfigTamper", safeJsonSerialize(l_0_8), false)
   ;
   (mp.SetDetectionString)(safeJsonSerialize(l_0_8))
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC212: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC218: freeLocal<0 in 'ReleaseLocals'
 
 end
 

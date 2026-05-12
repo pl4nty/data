@@ -65,10 +65,11 @@ do
   local l_0_15 = nil
   local l_0_16 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
   do
+    set_research_data("AIAgent_MCPSchemaPoisoning", safeJsonSerialize({file = l_0_16 or "unknown", injections = (table.concat)(l_0_8, ",")}), false)
     ;
     (mp.SetDetectionString)(safeJsonSerialize({file = l_0_16 or "unknown", injections = (table.concat)(l_0_8, ",")}))
     do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC228: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC234: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

@@ -44,9 +44,11 @@ end
 local l_0_10 = nil
 local l_0_11 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 do
+  set_research_data("AIAgent_MCPCredExposure", safeJsonSerialize({file = l_0_11 or "unknown", cred_types = (table.concat)(l_0_6, ",")}), false)
+  ;
   (mp.SetDetectionString)(safeJsonSerialize({file = l_0_11 or "unknown", cred_types = (table.concat)(l_0_6, ",")}))
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC233: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC239: freeLocal<0 in 'ReleaseLocals'
 
   -- DECOMPILER ERROR: 3 unprocessed JMP targets
 end
