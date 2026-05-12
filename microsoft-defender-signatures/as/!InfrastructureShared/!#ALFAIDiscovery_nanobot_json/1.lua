@@ -108,12 +108,24 @@ do
   -- DECOMPILER ERROR at PC254: Overwrote pending register: R13 in 'AssignReg'
 
   l_0_21(l_0_3, l_0_2, l_0_4, safeJsonSerialize(l_0_9), l_0_5, 100)
-  ;
-  (mp.SetDetectionString)(safeJsonSerialize(l_0_9))
-  ;
-  (mp.set_mpattribute)("MpDisableCaching")
-  do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC273: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+  do
+    local l_0_27 = nil
+    if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+      l_0_27 = MpCommon
+      l_0_27 = l_0_27.BmTriggerSig
+      l_0_27((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_nanobot_json", safeJsonSerialize(l_0_9))
+    end
+    l_0_27 = mp
+    l_0_27 = l_0_27.SetDetectionString
+    l_0_27(safeJsonSerialize(l_0_9))
+    l_0_27 = mp
+    l_0_27 = l_0_27.set_mpattribute
+    l_0_27("MpDisableCaching")
+    l_0_27 = mp
+    l_0_27 = l_0_27.INFECTED
+    do return l_0_27 end
+    -- DECOMPILER ERROR at PC286: Confused about usage of register R13 for local variables in 'ReleaseLocals'
 
+  end
 end
 

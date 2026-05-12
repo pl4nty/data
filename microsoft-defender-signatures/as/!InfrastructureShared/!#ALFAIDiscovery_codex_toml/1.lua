@@ -54,6 +54,10 @@ if l_0_12 and l_0_13 ~= nil then
 end
 do
   AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_11, l_0_5, 100)
+  local l_0_19 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+  if l_0_19 then
+    (MpCommon.BmTriggerSig)(l_0_19, "AIDiscovery_codex_toml", l_0_11)
+  end
   ;
   (mp.SetDetectionString)(l_0_11)
   ;

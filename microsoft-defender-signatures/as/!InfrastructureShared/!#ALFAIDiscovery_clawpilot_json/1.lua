@@ -122,13 +122,25 @@ if not isnull(l_0_10) and type(l_0_10) == "table" then
               end
               do
                 AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_27, l_0_5, 100)
-                ;
-                (mp.SetDetectionString)(l_0_27)
-                ;
-                (mp.set_mpattribute)("MpDisableCaching")
-                do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC323: Confused about usage of register R14 for local variables in 'ReleaseLocals'
+                do
+                  local l_0_47 = nil
+                  if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+                    l_0_47 = MpCommon
+                    l_0_47 = l_0_47.BmTriggerSig
+                    l_0_47((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_clawpilot_json", l_0_27)
+                  end
+                  l_0_47 = mp
+                  l_0_47 = l_0_47.SetDetectionString
+                  l_0_47(l_0_27)
+                  l_0_47 = mp
+                  l_0_47 = l_0_47.set_mpattribute
+                  l_0_47("MpDisableCaching")
+                  l_0_47 = mp
+                  l_0_47 = l_0_47.INFECTED
+                  do return l_0_47 end
+                  -- DECOMPILER ERROR at PC336: Confused about usage of register R14 for local variables in 'ReleaseLocals'
 
+                end
               end
             end
           end

@@ -131,6 +131,10 @@ do
           end
           do
             AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_36, l_0_5, 100)
+            local l_0_44 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+            if l_0_44 then
+              (MpCommon.BmTriggerSig)(l_0_44, "AIDiscovery_cline_json", l_0_36)
+            end
             ;
             (mp.SetDetectionString)(l_0_36)
             ;

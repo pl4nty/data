@@ -145,6 +145,10 @@ if not isnull(l_0_11) and type(l_0_11) == "string" then
                         end
                         do
                           AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_39, l_0_5, 100)
+                          local l_0_46 = nil
+                          if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+                            (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_openclaw_json", l_0_39)
+                          end
                           ;
                           (mp.SetDetectionString)(l_0_39)
                           ;

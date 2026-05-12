@@ -87,6 +87,10 @@ do
   end
   do
     AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_17, l_0_5, 100)
+    local l_0_24 = nil
+    if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+      (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_copilot_json", l_0_17)
+    end
     ;
     (mp.SetDetectionString)(l_0_17)
     ;
