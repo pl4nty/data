@@ -317,7 +317,7 @@ for l_0_24 = 1, l_0_0 do
                         if l_0_110 and l_0_111 then
                           l_0_12.BmInfo = l_0_111
                         end
-                        if (MpCommon.IsSampled)(5000, true, true, true) == true then
+                        if (MpCommon.IsSampled)(20000, true, true, true) == true then
                           local l_0_112 = "GenRansomNote_enc"
                           local l_0_113 = (bm.get_current_process_startup_info)()
                           if l_0_113 ~= nil and l_0_113.ppid ~= nil then
@@ -336,7 +336,7 @@ for l_0_24 = 1, l_0_0 do
                             do
                               do
                                 l_0_12.typex_enc_transfer = "failure general"
-                                if (MpCommon.IsSampled)(5000, true, true, true) == true then
+                                if (MpCommon.IsSampled)(20000, true, true, true) == true then
                                   local l_0_116 = "GenB_enc_ft"
                                   local l_0_117 = 36000
                                   local l_0_118 = 10
