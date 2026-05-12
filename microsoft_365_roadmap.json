@@ -1,5 +1,529 @@
 [
     {
+        "created": "2026-05-11T23:15:11",
+        "description": "The Role groups page in the Microsoft Purview compliance portal now allows admins to look up permissions by roles and memberships.",
+        "id": 562033,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Role groups UI enhancements"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "Users will be able access an AI generated audio summary of SharePoint News posts in the SharePoint app for Teams (Viva Connections).",
+        "id": 562018,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: AI overview for SharePoint News posts in the SharePoint app for Teams"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "Granular Protections for Exchange Online is available in public preview. This release gives administrators fine-grained control to create DLP policies based on specific classification or text extraction failure types \u2014 such as timeout, throttling and other scan errors \u2014 rather than one blanket policy for all failure conditions.",
+        "id": 561916,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Granular classification error controls (Exchange online) "
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "We are expanding Microsoft Purview DLP for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot. ",
+        "id": 561892,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts for government clouds"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "When exporting comments to spreadsheet from the Comments report, the topic(s) assigned to each comment will be included in the export. ",
+        "id": 561857,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Viva Glint - Topic Assignments Included in Comment Report Export"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "Access extends zoom capabilities to continuous forms and pop-up forms, building on zoom support already available in tables and queries. Adjust magnification from 10 percent to 500 percent using the slider in the lower-right corner or controls on the ribbon. Keyboard shortcuts are also available, making it easy to quickly change your view and focus on the details that matter most.",
+        "id": 561856,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Access"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Access"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Access: Zooming for Continuous Forms and Multiple-Items Forms"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "We\u2019re making it easier to give your Access apps a polished, up-to-date feel. With the new CornerRadius property, you can add rounded corners to form controls\u2014bringing a softer, more modern look to your designs.",
+        "id": 561854,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Access"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Access"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Access: Rounded corners on Access form controls"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "Teams meetings automatically create a corresponding Planner plan to capture meeting tasks. However, when teams use meetings as their primary collaboration surface for long-running initiatives, tasks from the same project can become scattered across multiple auto-generated plans. With this capability, users can now connect Teams meetings to existing Planner plans, so all related tasks across meetings can be tracked in one place.",
+        "id": 561490,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Connect Teams meeting to existing Planner Plans"
+    },
+    {
+        "created": "2026-05-11T23:15:11",
+        "description": "Vision in Microsoft 365 Copilot helps you make faster, more informed decisions by understanding context from what you share on your screen. Copilot can analyze visual inputs from shared desktop screens and provide detailed insights about the content. Talk to Copilot for answers grounded in work and web data.",
+        "id": 561037,
+        "locale": null,
+        "modified": "2026-05-11T23:15:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Vision in Microsoft 365 Copilot can analyze content shared on-screen"
+    },
+    {
         "created": "2026-05-08T22:15:03",
         "description": "Ability to create PDFs from email messages and preserve Sensitivity labels. This feature is accessible from File -> Open & Export -> Create PDF. ",
         "id": 561651,
@@ -59,7 +583,7 @@
         "description": "In the Events app in Teams, Teams events organizers will now be able to see if the chosen room or space they have selected for their event is available at the designated time or not. This feature is available for any Teams event organizer with a Teams Enterprise license.",
         "id": 561647,
         "locale": null,
-        "modified": "2026-05-08T22:15:03",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -77,6 +601,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -98,6 +625,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -224,7 +754,7 @@
         "description": "Organizers and presenters who have access to production tools can now upload custom backgrounds in the \"Manage what attendees see\" experience for Teams events. This enhancement allows organizations to display their brand identity by replacing the default backgrounds with their own images, such as company logos, event-specific artwork, or themed visuals. Custom backgrounds appear behind presenters and content, giving attendees a polished viewing experience. This feature is available for Teams events organizers with a Teams Premium license. This feature is available on Teams for Windows desktop and Mac desktop.",
         "id": 561493,
         "locale": null,
-        "modified": "2026-05-08T22:15:03",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -233,6 +763,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -254,6 +793,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -5973,12 +6521,12 @@
         "description": "Currently admins can set Purview DLP policies to protect sensitive data from being sent to any Generative AI apps, users get blocked from sending their prompts to LLM when this is triggered and stops their workflow. This new add-on to the feature shows a new UI that will give users the option to be redirected to M365 Copilot which will open and navigate to this M365 Copilot tab and allow them to send the same prompt there.",
         "id": 560341,
         "locale": null,
-        "modified": "2026-04-14T23:00:25",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6027,7 +6575,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Shadow AI"
+        "title": "Microsoft Edge: v.148 - Shadow AI"
     },
     {
         "created": "2026-04-14T23:00:25",
@@ -9630,10 +10178,10 @@
     },
     {
         "created": "2026-03-26T23:15:28",
-        "description": "You\u2019ll notice media quality improvements including support for up to 16 participant videos (4\u00d74 grid) and simulcast streaming when using Direct Guest Join. These updates make cross platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.",
+        "description": "You\u2019ll notice\u00a0media quality improvements including support for up to 16 participant videos (4\u00d74 grid)\u00a0available in May\u00a0and simulcast streaming\u00a0(June)\u00a0when using Direct Guest Join.\u00a0These updates make cross\u2011platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.\u00a0Direct Guest Join is not yet available for Google Meet on Teams Rooms for Android.\u00a0",
         "id": 558922,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -11787,12 +12335,12 @@
         "description": "With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).",
         "id": 558688,
         "locale": null,
-        "modified": "2026-04-20T22:45:53",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13435,9 +13983,9 @@
         "description": "Other AI apps will move to pay-as-you-go model. Microsoft Copilot experiences indicators can still be used for free even without subscription. To continue using Other AI apps indicators, please link an Azure subscription to Microsoft Purview to enable billing. Insider Risk Management indicators transitioning to a pay-as-you-go pricing model: \u201cEntering risky prompt in Other AI apps\u201d. This indicator is present in Policy indicators-> Generative AI apps -> Other AI apps Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent\u202finsider risks, such as IP theft, data leakage,\u202fand security violations.\u202fInsider Risk Management enables customers to\u202fcreate policies to manage security and compliance. Built with privacy by\u202fdesign, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure\u202fuser-level privacy.\u202f\u200b\n",
         "id": 558288,
         "locale": null,
-        "modified": "2026-03-06T23:00:47",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14375,12 +14923,12 @@
         "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
         "id": 557170,
         "locale": null,
-        "modified": "2026-04-14T23:00:25",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15962,12 +16510,12 @@
         "description": "Admins will be able to define a tenant\u2011wide default value for the Mail Compose and Reply setting that controls whether commas are used to separate recipients.",
         "id": 557676,
         "locale": null,
-        "modified": "2026-04-06T23:15:32",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16761,12 +17309,12 @@
         "description": "A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.\n",
         "id": 557554,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20986,12 +21534,12 @@
         "description": "Audio recap in Teams will begin supporting 8 new languages. These are (in alphabetical order) Chinese, variations across English, French, German, Italian, Japanese, Portuguese, and Spanish.  ",
         "id": 554926,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22088,12 +22636,12 @@
         "description": "Navigate code blocks more easily with improved keyboard controls and default line numbers. Set code language quickly and reference specific lines for improved collaboration and workflow. \n \n",
         "id": 554933,
         "locale": null,
-        "modified": "2026-03-27T22:15:31",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23004,12 +23552,12 @@
         "description": "We\u2019re introducing a visual refresh of the Access Denied web experience across Microsoft 365, where users can request access to files, sites, and meeting recordings. This update features a modern Fluent design with new illustrations, animations, and clearer messaging to help users quickly gain confidence and seamlessly continue their collaboration.",
         "id": 553214,
         "locale": null,
-        "modified": "2026-04-17T22:15:50",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27574,12 +28122,12 @@
         "description": "Password autofill suggestions in Edge are currently based on top-level domain matching, which means the same credentials can be suggested on sites like account.microsoft.com and office.microsoft.com. With this feature, Edge groups related domains together across various desktop and mobile properties called affiliations. When a customer visits a URL, the Edge client will query the affiliations backend to obtain \u201caffiliated groups\u201d for that URL. The process involves sending a hash of the visited URLs to the service, which then returns a list of affiliated URLs and ensures that the relevant credentials will be displayed in the autofill suggestions across affiliated domains. Admins can control access to this feature using the PasswordManagerEnabled policy.",
         "id": 537277,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27616,7 +28164,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Password affiliation service"
+        "title": "Microsoft Edge: v.148 - Password affiliation service"
     },
     {
         "created": "2025-12-18T00:15:48",
@@ -28709,12 +29257,12 @@
         "description": "In Outlook Web, the new and updated People Hub delivers a modern, multi-column contacts experience, with fast search and a streamlined interface. It provides a unified view of each person, automatically links duplicate entries, and enriches contacts with organizational profile information where available.",
         "id": 537282,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29423,12 +29971,12 @@
         "description": "Microsoft Edge can now send IT admin selected work related browsing history to Copilot to improve search relevance. When a user searches for something on Copilot search, Copilot will also show results from browser history when relevant.",
         "id": 537283,
         "locale": null,
-        "modified": "2026-04-20T22:45:53",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32425,67 +32973,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Scheduling with Copilot"
     },
     {
-        "created": "2025-11-21T23:15:16",
-        "description": "We previously communicated plans to bring Scheduled Prompts to the Web tab; however, this work is no longer moving forward as we shift focus to higher\u2011value priorities.\n\nWe apologize for any confusion and appreciate your understanding as we continue improving the core Scheduled Prompts experience.",
-        "id": 531911,
-        "locale": null,
-        "modified": "2026-05-04T23:00:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "November CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Scheduled prompts for Web tab"
-    },
-    {
         "created": "2025-11-21T00:00:57",
         "description": "Declarative Agents have been enhanced to interpret and ground responses using images embedded in files such as Word documents (.docx), PowerPoint presentations (.pptx), and PDFs. This capability allows the agent to extract insights from visual elements like charts, diagrams, and screenshots, ensuring that answers are not only text-based but also informed by graphical context. By combining textual and visual understanding, Declarative Agents deliver more comprehensive and contextually accurate responses for complex queries.",
         "id": 531758,
@@ -34375,9 +34862,9 @@
         "description": "Planner in Outlook brings all your tasks, plans, and the new Project Manager agent directly into your inbox, so you can manage work where you already work.",
         "id": 513278,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41856,12 +42343,12 @@
         "description": "Chat in Work and PowerPoint now supports voice. Users can talk and interact with Copilot to brainstorm ideas, create content, and analyze information. Same as text, voice understand documents, work and web context.",
         "id": 516569,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45471,12 +45958,12 @@
         "description": "In addition to Teams Cast and HDMI ingest; you are able to share wirelessly using Miracast with Teams Rooms on Windows devices including touch boards. Available in Teams Rooms Pro.",
         "id": 506748,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45740,12 +46227,12 @@
         "description": "Action Segments empowers IT Admins to target Organizational Messages using dynamic, pre-defined usage segments. This behavior-based targeting approach goes beyond existing static group definitions, ensuring messages reach the most relevant users.",
         "id": 503563,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45795,12 +46282,12 @@
         "description": "Organizational Messages now includes Email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams Popovers.",
         "id": 503562,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48847,12 +49334,12 @@
         "description": "Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.",
         "id": 502519,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -59593,9 +60080,9 @@
         "description": "Introduction of a new report that provides transparency into platform activity by dashboard users. Metrics such as report views, Team Conversations completed, Focus Areas created, and more will be visible and filterable with this report. ",
         "id": 498923,
         "locale": null,
-        "modified": "2025-10-29T23:00:59",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -62669,9 +63156,9 @@
         "description": "A new agents usage report will be available in the Microsoft 365 admin center. The report will be scoped to include agents in M365 Copilot and Copilot Chat with usage by both M365 Copilot licensed and unlicensed users. The report will include total active agent users, total active agents, active users segmentation by licensed and unlicensed users, and active users and active agents segmentation by publisher type (i.e. user-created agents, agents built by your org, agents built by Microsoft, agents built by Microsoft partners). The report will also include usage details per user, agent, and user-agent pair. #copilotcontrolsystem",
         "id": 497999,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "August CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -66036,7 +66523,7 @@
         "description": "New Outlook will support the connection of accounts in special environments, starting with GCC-High and DoD. In this release, all mailboxes connected to New Outlook will need to be hosted in the same special environment. Updates regarding rollout to additional specialized cloud environments will be provided in separate roadmap items as soon as projected timelines are available. #newoutlookforwindows",
         "id": 496375,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
@@ -66056,7 +66543,7 @@
                 "tagName": "Outlook"
             },
             {
-                "tagName": "Preview"
+                "tagName": "General Availability"
             }
         ],
         "tagsContainer": {
@@ -66080,7 +66567,7 @@
             ],
             "releasePhase": [
                 {
-                    "tagName": "Preview"
+                    "tagName": "General Availability"
                 }
             ]
         },
@@ -93722,67 +94209,6 @@
         "title": "Microsoft Viva: Advanced moderation access control for corporate communicators"
     },
     {
-        "created": "2025-01-31T00:15:03",
-        "description": "With this new feature in OneNote mobile, you can share videos and images into OneNote and watch the magic unfold. All the key insights from the video and images are captured effortlessly into notes so that you do not have to manually create them.\n\nUpdate: Image\u2011based capture is being delivered as part of a unified multimodal capture experience in Copilot Notebooks in OneNote, which combines images, voice, and typed notes in a single session. Please track via Roadmap ID 559095. We apologize for any inconvenience.",
-        "id": 422325,
-        "locale": null,
-        "modified": "2026-05-05T23:00:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "June CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "OneNote: Copilot on OneNote brings in notes from Video and Images (iPhone)"
-    },
-    {
         "created": "2025-01-30T00:15:44",
         "description": "The Facilitator agent works alongside you and your team to help you manage your meetings effortlessly. Throughout the meeting, Facilitator takes notes that everyone can co-author, manages the time and agenda, and can quickly surface relevant information from the web or the conversation itself. Users can now use the Facilitator agent in Teams Rooms on Windows for real-time notes and action items during both scheduled hybrid and impromptu in-person meetings using AI. In hybrid meetings, the agent appears in the notes panel. For in-person meetings, a participant can scan the QR code on the display in the room to invoke the agent as the group's assistant.",
         "id": 478611,
@@ -100233,189 +100659,6 @@
         "title": "OneNote: Summary and Q&A in OneNote Mobile with Copilot (Android)"
     },
     {
-        "created": "2024-10-22T23:00:59",
-        "description": "With this new feature in OneNote mobile, you can share videos and images into OneNote and watch the magic unfold. All the key insights from the video and images are captured effortlessly into notes so that you do not have to manually create them.\n\nUpdate: Image\u2011based capture is being delivered as part of a unified multimodal capture experience in Copilot Notebooks in OneNote. Android availability will be shared in a future roadmap update. We apologize for any inconvenience.",
-        "id": 422322,
-        "locale": null,
-        "modified": "2026-05-05T23:00:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "June CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "OneNote: Copilot on OneNote brings in notes from Video and Images (Android)"
-    },
-    {
-        "created": "2024-10-22T23:00:59",
-        "description": "Copilot in OneNote transforms fragmented voice thoughts and conversation recordings into clear, actionable insights. It enhances productivity by accurately capturing and organizing verbal notes, filling in gaps, and providing structured summaries, making it easier to review and utilize information effectively.  Exciting News! Copilot in OneNote can now access and understand verbal notes, synthesize conversations, and transform fragmented thoughts into clear, actionable insights, boosting productivity.\n\nUpdate: This capability is being delivered as part of a unified multimodal capture experience in Copilot Notebooks in OneNote. Android availability will be shared in a future roadmap update. We apologize for any inconvenience.",
-        "id": 422321,
-        "locale": null,
-        "modified": "2026-05-05T23:00:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "June CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "OneNote: Boost productivity using voice with Copilot on OneNote Mobile (Android)"
-    },
-    {
-        "created": "2024-10-22T23:00:59",
-        "description": "Copilot in OneNote transforms fragmented voice thoughts and conversation recordings into clear, actionable insights. It enhances productivity by accurately capturing and organizing verbal notes, filling in gaps, and providing structured summaries, making it easier to review and utilize information effectively.  Exciting News! Copilot in OneNote can now access and understand verbal notes, synthesize conversations, and transform fragmented thoughts into clear, actionable insights, boosting productivity.\n\nUpdate: This capability is being delivered as part of a unified multimodal capture experience in Copilot Notebooks in OneNote, which combines voice, images, and typed notes in a single session. Please track via Roadmap ID 559095. We apologize for any inconvenience.",
-        "id": 422320,
-        "locale": null,
-        "modified": "2026-05-05T23:00:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "June CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "OneNote: Boost productivity using voice with Copilot on OneNote Mobile (iPhone)"
-    },
-    {
         "created": "2024-09-04T23:30:32",
         "description": "We are introducing flexibility on provider setup form where admins can sync data from specific dates for a provider instead of full data sync.",
         "id": 414523,
@@ -105377,15 +105620,15 @@
     },
     {
         "created": "2024-10-16T23:15:13",
-        "description": "View and monitor Loop usage in the tenant through existing M365 admin usage dashboards.",
+        "description": "View and monitor Loop usage in the tenant through existing M365 admin usage dashboards. Updated May 11, 2026: We have decided not to move forward with this change at this time. We apologize for the inconvenience.",
         "id": 421611,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-05-11T23:15:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
