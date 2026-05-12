@@ -171,6 +171,7 @@
         "Enable5KCollectionSize": true,
         "EnableAADDeviceIdBackfill": true,
         "EnableAIEnabledCloudPcReport": true,
+        "EnableANCNameLengthValidation": true,
         "EnableANCUXTURNHealthCheck": true,
         "EnableAbnormalDeviceReinstallTimerFunction": true,
         "EnableActivationExpirationColumn": true,
