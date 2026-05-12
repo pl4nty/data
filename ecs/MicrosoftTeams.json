@@ -9,7 +9,8 @@
             "TokenAuthEnabled": true
         },
         "PeopleTargetingService": {
-            "EnableCrossTenantValidation": true
+            "EnableCrossTenantValidation": true,
+            "ExemptExternalMembersFromCrossTenantValidation": true
         },
         "TargetingGRPCService": {
             "GRPCUpgrade": true

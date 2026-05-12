@@ -142,6 +142,11 @@
             "TestFlight_String": "6.2411.22.2000"
         }
     },
+    "INFRA_Storage": {
+        "FlightingV2": {
+            "RetryOnClientSidePatchesWithNullOrStarETag": true
+        }
+    },
     "Infra_Fundamentals": {
         "FlightingV2Infra": {
             "AllowedProjectTeams": [
