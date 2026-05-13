@@ -666,7 +666,8 @@
         "MWWhilteListedUser": "false",
         "SmeTenantsSize1thru9": "NotInGroup",
         "TeamsRing": "general",
-        "VirtualizationEnabled": "false"
+        "VirtualizationEnabled": "false",
+        "isMAIUser": "false"
     },
     "SkypeTeamsMT_RateLimiter_Config": {
         "RateLimiterSettings": {
