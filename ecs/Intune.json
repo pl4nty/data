@@ -272,7 +272,11 @@
                     "SharedBoolFlight1",
                     "SharedStringFlight1",
                     "SharedIntFlight1",
-                    "SharedFloatFlight1"
+                    "SharedFloatFlight1",
+                    "SharedBoolFlight2",
+                    "SharedStringFlight2",
+                    "SharedIntFlight2",
+                    "SharedFloatFlight2"
                 ]
             }
         }

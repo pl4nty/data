@@ -32,6 +32,7 @@
             "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
             "EnableReconnectOnUnlock": true,
+            "EnableSilentAuthForGraph": true,
             "EnableTeamsVdi2": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true,

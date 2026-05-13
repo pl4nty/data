@@ -26,6 +26,7 @@
             "EnableCrashReporting": true,
             "EnableHealthChecks": false,
             "EnableMultiCloudPcSelector": true,
+            "EnableSilentAuthForGraph": true,
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true,
             "ReserveCloudPc": true

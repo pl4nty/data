@@ -1,5 +1,457 @@
 [
     {
+        "created": "2026-05-12T23:00:33",
+        "description": " When DLP rules detect policy violations in Exchange Online, they generate audit records that administrators rely on for compliance monitoring, incident investigation, and policy tuning. Previously, these records only showed Sensitive Information Type matches. This feature aims to extend that to sender domain, subject keywords, attachment type, or recipient information. Now they will be visible in alerts and Activity Explorer providing data enrichment to the administrators. ",
+        "id": 562051,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Enriched Audit Data for Matched Rules "
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "Key Microsoft 365 Copilot metrics in custom person queries and reports will have values up to 2-3 days old from the current date. This will provide fresher copilot usage analysis to analysts in Viva Advanced analysis.",
+        "id": 562017,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Fresh Copilot Metrics in Custom Person Queries & Reports- Viva Advanced Analysis"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "AI agent skill to detect and alert unhealthy policy sync and device configuration.",
+        "id": 562016,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI Skill"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "With this feature, users accessing search through the Teams search icon while within the SharePoint app in Teams (Viva Connections) will be able to receive search result scoped to SharePoint global search. Hitting enter on the search query will then open the SharePoint search page.",
+        "id": 562015,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Scoped Search for SharePoint app in Teams (Viva Connections)"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "Agent Builder now supports using a SharePoint list as a knowledge source for agents in Microsoft 365 Copilot. Makers can ground an agent in structured list data so users can ask questions and get responses based on information stored in a selected SharePoint list. For this release, each agent can reference one SharePoint list with up to 20,000 items, alongside other knowledge source types. Support for list attachments and lookup columns is not yet available.",
+        "id": 561920,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): SharePoint list support in Agent Builder"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "We are expanding Microsoft Purview DLP for Microsoft 365 Copilot and Copilot Chat to safeguard risks from external emails. This real-time control helps organizations mitigate data risks by preventing Microsoft 365 Copilot and Chat from processing emails from senders external to your organization. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot.",
+        "id": 561552,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention to restrict processing external emails in Microsoft 365 Copilot and Copilot Chat"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "The protected downloads feature for Intune MAM will now save downloaded files to the Documents > Microsoft Edge > Downloads folder in OneDrive. ",
+        "id": 561551,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Intune MAM Protected Downloads"
+    },
+    {
+        "created": "2026-05-12T23:00:33",
+        "description": "When users are signed in with a work account, some Microsoft 365 sites (for example, microsoft.com, cloud.microsoft, and microsoft365.com) may open authentication pop-up windows to Microsoft sign-in endpoints such as login.microsoftonline.com, login.live.com, or login.microsoft.com. These pop-ups are required to complete sign-in. Microsoft Edge now allows authentication pop-up windows from Microsoft first party services by default. Admins can control availability to this feature using the M365AuthPopupsInWorkEnabled policy. ",
+        "id": 561035,
+        "locale": null,
+        "modified": "2026-05-12T23:00:33",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Allow M365 authentication popups in work profiles"
+    },
+    {
         "created": "2026-05-11T23:15:11",
         "description": "The Role groups page in the Microsoft Purview compliance portal now allows admins to look up permissions by roles and memberships.",
         "id": 562033,
@@ -1294,10 +1746,10 @@
     },
     {
         "created": "2026-05-05T23:00:02",
-        "description": "Presenters can use Proximity Join with Teams Rooms (MTRoW and MTRoA) to seamlessly connect to nearby room systems during Town halls, webinars, and structured meetings\u2014making live presentations fast and effortless.",
+        "description": "Presenters can take advantage of proximity join with Teams Rooms on Windows or Android for fast, effortless connection to nearby room systems during Teams events, such as town halls, webinars, and structured meetings. This feature enables seamless live presentations.",
         "id": 561550,
         "locale": null,
-        "modified": "2026-05-07T23:15:02",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -1369,7 +1821,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: MTR Proximity Join support for Presenters in Town Halls, Webinars, and Structured meetings"
+        "title": "Microsoft Teams: Proximity join support for presenters in Teams events from Teams Rooms on Windows and Android"
     },
     {
         "created": "2026-05-05T23:00:02",
@@ -1808,15 +2260,24 @@
         "description": "Provide insights on Copilots and AI Apps usage and recommend retention policies for customers to govern their Copilots and AI App interactions.",
         "id": 561209,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Web"
@@ -1835,6 +2296,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -6082,9 +6552,9 @@
         "description": "We're introducing notification capabilities and search improvements to Microsoft Purview Data Security Investigations. Investigators will receive notifications when key investigation events occur, such as when AI jobs complete or when new data is added to scope. Search improvements include enhanced query building to more easily identify potentially impacted data\n",
         "id": 560325,
         "locale": null,
-        "modified": "2026-04-16T23:15:53",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7869,9 +8339,9 @@
         "description": "Admins can enable a tenant-wide policy that allows Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods. This enables Copilot to continue answering questions about past meetings even after transcripts expire. Admins can also configure how long this AI-generated meeting archive is stored.",
         "id": 558933,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8638,12 +9108,12 @@
         "description": "Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences.",
         "id": 559605,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10181,12 +10651,12 @@
         "description": "You\u2019ll notice\u00a0media quality improvements including support for up to 16 participant videos (4\u00d74 grid)\u00a0available in May\u00a0and simulcast streaming\u00a0(June)\u00a0when using Direct Guest Join.\u00a0These updates make cross\u2011platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.\u00a0Direct Guest Join is not yet available for Google Meet on Teams Rooms for Android.\u00a0",
         "id": 558922,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11516,9 +11986,9 @@
         "description": "This update introduces logged-in user details (user email) on the device onboarding page for Windows devices bringing it in line with the experience for MacOS devices. \u200bAdmins can now see which user is currently signed in on a device, making It faster to confirm ownership and troubleshoot issues. \u200b",
         "id": 559028,
         "locale": null,
-        "modified": "2026-03-19T23:30:43",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26372,12 +26842,12 @@
         "description": "Identify if an external user is impersonating a brand commonly targeted by phishing attacks, during their initial contact with an enterprise user via Teams calling.",
         "id": 543239,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -39623,9 +40093,9 @@
         "description": "The Learning agent helps employees build skills through personalized microlearning and structured learning experiences.",
         "id": 490154,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -39665,7 +40135,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Learning agent in Microsoft 365 Copilot"
+        "title": "Microsoft Copilot (Microsoft 365): Learning Agent in Microsoft 365 Copilot"
     },
     {
         "created": "2025-10-28T23:45:15",
@@ -43970,15 +44440,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
+        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly. Updated May 12, 2026: We have decided not to move forward with this feature at this time. We apologize for the inconvenience. ",
         "id": 513429,
         "locale": null,
-        "modified": "2026-04-08T23:00:03",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44025,15 +44495,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
+        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly. Updated May 12, 2026: We have decided not to move forward with this feature at this time. We apologize for the inconvenience. ",
         "id": 513428,
         "locale": null,
-        "modified": "2026-04-08T23:00:03",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44080,15 +44550,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly.",
+        "description": "Copilot in PowerPoint now helps you create a compelling title, a concise summary, or captions for your visuals. Just describe what you want in natural language and Copilot will generate text based on the content of your slide. It\u2019s a simple way to turn ideas into content quickly. Updated May 12, 2026: We have decided not to move forward with this feature at this time. We apologize for the inconvenience. ",
         "id": 513427,
         "locale": null,
-        "modified": "2026-04-08T23:00:03",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -84836,12 +85306,12 @@
         "description": "Admins will have the ability to set up rules for various scenarios, such as -\n\n1. Auto block risky agents.\n2. Auto delete inactive agents.\n3. Auto reassign ownerless agents to manager. \n\n. #copilotcontrolsystem\n",
         "id": 481518,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -92022,9 +92492,9 @@
         "description": "This feature will introduce an alternative solution to the existing Advanced Configurations feature that allows an Admin to perform historical imports into the Viva Glint platform. This alternate reduces the number of needed files and offers a simplified user experience to bring historical data into Viva Glint.",
         "id": 479755,
         "locale": null,
-        "modified": "2026-02-13T23:15:55",
+        "modified": "2026-05-12T23:00:33",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
