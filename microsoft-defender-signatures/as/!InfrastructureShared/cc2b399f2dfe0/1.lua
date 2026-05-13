@@ -274,7 +274,7 @@ do
                 local l_0_129, l_0_130, l_0_131, l_0_132 = pcall(updateDomainInfo)
                 if l_0_129 then
                   (bm.add_related_string)("updateDomainInfo_fail", l_0_130, bm.RelatedStringBMReport)
-                  if (MpCommon.IsSampled)(20000, true, true, true) == true then
+                  if (MpCommon.IsSampled)(50000, true, true, true) == true then
                     local l_0_133 = "GenRansomNote_enc"
                     local l_0_134 = (bm.get_current_process_startup_info)()
                     if l_0_134 ~= nil and l_0_134.ppid ~= nil then

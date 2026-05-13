@@ -73,7 +73,7 @@ do
           local l_0_38 = l_0_11.Domain
           local l_0_39 = scrubData(l_0_11.UsrName)
           local l_0_40 = scrubData(l_0_11.Domain)
-          if (MpCommon.IsSampled)(20000, true, true, true) == true then
+          if (MpCommon.IsSampled)(50000, true, true, true) == true then
             local l_0_41 = {NotePath = (sigattr_tail[l_0_3]).utf8p1, TriggedSigs = l_0_18, ppID = l_0_25, RemoteInfo = l_0_11, UserName = l_0_39, Domain = l_0_40, Type = "NoteDrop", NoteFileMeta = l_0_26, RemoteEncConfig = l_0_36}
             local l_0_42 = "GenRansomNote_enc"
             local l_0_43 = 36000
