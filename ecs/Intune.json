@@ -400,6 +400,7 @@
             "EnableAppleACMEBYODEnrollment": true,
             "EnableAppleACMEBulkUserEnrollment": true,
             "EnableAppleACMEBulkUserlessEnrollment": true,
+            "EnableFullBufferedRequestReadForTRS": true,
             "EnableGenerateAcmeNewNonce": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
@@ -441,7 +442,7 @@
             "UseLKG_FailedAndPendingAppsByUserId": true,
             "UseLKG_InventoryPolicySettingDetailsDCv2v3": true,
             "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": true,
-            "UseLKG_PolicySettingDetailsDCv2ver3": true,
+            "UseLKG_PolicySettingDetailsDCv2ver3": false,
             "UseLKG_RemediationRunSummary": true,
             "UseLKG_ScriptRunSummary": true
         }
@@ -462,6 +463,7 @@
             "APv2EnablePublishResultsResiliencyBehavior": true,
             "AllowNonOobeBootstrappingFlight": true,
             "DJPPGroupsV2Enabled": true,
+            "ECv2RaceConditionFix": true,
             "EnableDeviceDisownAdeApi": true,
             "EnableNoDepDeviceFullSyncTriggerAfterProfileCorrection": true,
             "EnableRemoveDuplicateAccountIdInCompanyPortalPolicyTask": true,

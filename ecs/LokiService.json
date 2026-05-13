@@ -666,6 +666,7 @@
         "EnableInferredPeopleSkills": true,
         "EnableInsightBasedPrompts": false,
         "EnableKnowYourTeamAdminPromptApi": true,
+        "EnableKnowYourTeamCopilotSettingsApi": true,
         "EnableLlmInsights": false,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableMRUFormsRetrieval": false,
