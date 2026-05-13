@@ -87,8 +87,6 @@ VIZ_COMMON_EXPORT extern const char kTargetForVSyncAnimation[];
 VIZ_COMMON_EXPORT extern const char kTargetForVSyncInteraction[];
 #endif
 
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(
-    kAckCopyOutputRequestEarlyForViewTransition);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kThrottleFrameSinksOnInteraction);
 VIZ_COMMON_EXPORT bool ShouldThrottleWhenInteractiveFrameSinks();
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAllowUndamagedNonrootRenderPassToSkip);
@@ -196,8 +194,6 @@ VIZ_COMMON_EXPORT bool ShouldUseAdpfForSoc(std::string_view soc_allowlist,
                                            std::string_view soc);
 
 #endif  // BUILDFLAG(IS_ANDROID)
-
-VIZ_COMMON_EXPORT bool ShouldAckCOREarlyForViewTransition();
 
 }  // namespace features
 

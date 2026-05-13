@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15921543,
+    "size": 15923585,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33334037,
+    "size": 33339460,
     "file_count": 4041
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44063367,
-    "file_count": 3353
+    "size": 44116309,
+    "file_count": 3373
   },
   {
     "name": "googletest",
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4337665,
+    "size": 4338333,
     "file_count": 604
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1479345,
+    "size": 1483531,
     "file_count": 23
   },
   {
@@ -766,12 +766,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2697416,
+    "size": 2712478,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7479945,
+    "size": 7496282,
     "file_count": 194
   },
   {
