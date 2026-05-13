@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2207028,
+    "size": 2216638,
     "file_count": 184
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13039791,
+    "size": 13035789,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15920924,
+    "size": 15921543,
     "file_count": 846
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33323592,
-    "file_count": 4040
+    "size": 33334037,
+    "file_count": 4041
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994142,
+    "size": 17994056,
     "file_count": 1006
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161908728,
-    "file_count": 19094
+    "size": 161918802,
+    "file_count": 19096
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6979781,
+    "size": 6986392,
     "file_count": 67
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16988383,
+    "size": 16988870,
     "file_count": 1996
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4337160,
+    "size": 4337665,
     "file_count": 604
   },
   {
@@ -661,7 +661,7 @@
   },
   {
     "name": "rust",
-    "size": 1961411,
+    "size": 1961612,
     "file_count": 244
   },
   {
