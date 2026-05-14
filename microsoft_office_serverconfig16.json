@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20025.40125-->
+    <!--Build: 16.0.20107.40125-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -1565,6 +1565,12 @@
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="OneDriveConvergedMPCPersonalEndpoint" o:authentication="1">
+      <o:url>https://my.microsoftpersonalcontent.com/personal</o:url>
+      <o:ticket o:policy="MBI" o:idprovider="2" o:target="officeapps.live.com"/>
+      <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
     <o:service o:name="AppServicesResource">
       <o:url>https://titles.prod.mos.microsoft.com</o:url>
     </o:service>
@@ -1710,6 +1716,9 @@
     <o:service o:name="NotificationServiceRegisterEndpoint" o:authentication="1">
       <o:url>https://notification.m365.svc.cloud.microsoft/api/v1/register</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://notification.m365.svc.cloud.microsoft/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="NotificationServiceRegisterDeviceEndpoint" o:authentication="1">
+      <o:url>https://notification.m365.svc.cloud.microsoft/api/v1/registerdevice</o:url>
     </o:service>
     <o:service o:name="FamilyOnboardingAggregator">
       <o:url>https://onboardingaggregator.family.microsoft.com</o:url>
@@ -2582,6 +2591,7 @@
     <o:token o:name="FeedbackTenantCloudType">Worldwide</o:token>
     <o:token o:name="FeedbackDefaultCPSBehaviour">true</o:token>
     <o:token o:name="NotificationServiceRegisterScope">https://notification.m365.svc.cloud.microsoft/PushNotifications.Register</o:token>
+    <o:token o:name="NotificationServiceRegisterDeviceClientId">5da6234c-e1dd-4990-9b26-d1e9ad656797</o:token>
     <o:token o:name="LinksOpenRightTuiImageLight100Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-light-100.png</o:token>
     <o:token o:name="LinksOpenRightTuiImageLight150Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-light-150.png</o:token>
     <o:token o:name="LinksOpenRightTuiImageLight200Url">https://statics.teams.cdn.office.net/evergreen-assets/illustrations/win32/m365-device-desktop-light-200.png</o:token>
