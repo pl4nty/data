@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Vulnerable Driver Blocklist",
+    "downloadDescription": "Microsoft Vulnerable Driver Blocklist",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VulnerableDriverBlockList.zip",
+            "url": "https://download.microsoft.com/download/75bf7aa6-7700-43cc-bbac-9dfc0cc4ed50/VulnerableDriverBlockList.zip",
+            "size": "333655",
+            "version": "10.0.29545.0",
+            "datePublished": "5/14/2026 10:50:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Vulnerable Driver Blocklist May 2026 Update",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.29545.0",
+    "detailsSection_file_name": [
+        "VulnerableDriverBlockList.zip"
+    ],
+    "detailsSection_file_size": [
+        "325.8 KB"
+    ],
+    "detailsSection_file_date": "5/14/2026",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108667",
+    "downloadPreload": true
+}
