@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13035789,
+    "size": 13036577,
     "file_count": 163
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33339460,
+    "size": 33341723,
     "file_count": 4041
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6986392,
+    "size": 6988309,
     "file_count": 67
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 16988870,
-    "file_count": 1996
+    "size": 17180421,
+    "file_count": 2016
   },
   {
     "name": "entity_extraction",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44116309,
-    "file_count": 3373
+    "size": 44126336,
+    "file_count": 3381
   },
   {
     "name": "googletest",
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19714027,
+    "size": 19715563,
     "file_count": 19
   },
   {
@@ -561,8 +561,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 61857,
-    "file_count": 36
+    "size": 65338,
+    "file_count": 39
   },
   {
     "name": "oneds_sdk",
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4338333,
+    "size": 4344370,
     "file_count": 604
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3485714,
+    "size": 3486394,
     "file_count": 1203
   },
   {
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1483531,
+    "size": 1505332,
     "file_count": 23
   },
   {
@@ -766,13 +766,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2712478,
+    "size": 2752134,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7496282,
-    "file_count": 194
+    "size": 7521168,
+    "file_count": 195
   },
   {
     "name": "vulkan_memory_allocator",

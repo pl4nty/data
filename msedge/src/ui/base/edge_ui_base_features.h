@@ -350,11 +350,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern VisualRejuvControlsConfig GetVisualRejuvControlsConfig();
 COMPONENT_EXPORT(UI_BASE_FEATURES) extern bool IsVisualRejuvMaterialsEnabled();
 
-#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsCentralizedPhoenixTokenPipelineEnabled();
-#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kSemanticNonColorTokenCentralized);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -540,12 +535,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kPhoenixShowContainersInEdge);
 
 
-#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-// Master feature flag for phoenix token centralization.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kPhoenixTokenCentralized);
-#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-
 // If activated, Rewards will automatically be pinned to toolbar
 // if user clicks Microsoft Rewards via More Menu dropdown
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -591,9 +580,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kSemanticColorTokens);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeSemanticColorTokenEnabled(bool trigger_usage = false);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeSemanticOrPhoenixColorTokenEnabled(
-    bool trigger_usage = false);
 #endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
