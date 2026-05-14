@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 13036577,
+    "size": 12944942,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15923585,
+    "size": 15951897,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33341723,
+    "size": 33354166,
     "file_count": 4041
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161918802,
-    "file_count": 19096
+    "size": 161922088,
+    "file_count": 19097
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6988309,
+    "size": 6988324,
     "file_count": 67
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11421981,
+    "size": 11425769,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17180421,
-    "file_count": 2016
+    "size": 17199748,
+    "file_count": 2026
   },
   {
     "name": "entity_extraction",
@@ -221,7 +221,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 340874,
+    "size": 341844,
     "file_count": 81
   },
   {
@@ -391,8 +391,8 @@
   },
   {
     "name": "libc++",
-    "size": 12570804,
-    "file_count": 1783
+    "size": 12557768,
+    "file_count": 1780
   },
   {
     "name": "libc++abi",
@@ -601,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4344370,
-    "file_count": 604
+    "size": 4348205,
+    "file_count": 605
   },
   {
     "name": "perl",
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550324,
+    "size": 550328,
     "file_count": 15
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7521168,
+    "size": 7522886,
     "file_count": 195
   },
   {
