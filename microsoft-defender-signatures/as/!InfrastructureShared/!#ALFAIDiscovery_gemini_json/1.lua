@@ -51,25 +51,47 @@ if not isnull(l_0_8.mcpServers) and type(l_0_8.mcpServers) == "table" then
   ;
   (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_8.mcpServers))
 end
-local l_0_11 = safeJsonSerialize(l_0_10)
-local l_0_12, l_0_13 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-if l_0_12 and l_0_13 ~= nil then
-  for l_0_17,l_0_18 in pairs(l_0_13) do
-    if l_0_17 == l_0_4 and l_0_18 == l_0_11 then
-      return mp.CLEAN
+local l_0_11 = nil
+if (versioning.GetHostOsType)() == 1 then
+  local l_0_12 = (mp.ContextualExpandEnvironmentVariables)("%APPDATA%")
+  if not isnull(l_0_12) and l_0_12 ~= "" then
+    l_0_11 = l_0_12 .. "\\npm\\node_modules\\@google\\gemini-cli\\package.json"
+  end
+else
+  do
+    l_0_11 = "/usr/local/lib/node_modules/@google/gemini-cli/package.json"
+    if l_0_11 and (sysio.IsFileExists)(l_0_11) then
+      local l_0_13 = (sysio.ReadFile)(l_0_11, 0, 300)
+      if l_0_13 then
+        local l_0_14 = (tostring(l_0_13)):match("\"version\"%s*:%s*\"([^\"]+)\"")
+        if l_0_14 then
+          l_0_10.version = l_0_14
+        end
+      end
+    end
+    do
+      local l_0_15 = safeJsonSerialize(l_0_10)
+      local l_0_16, l_0_17 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+      if l_0_16 and l_0_17 ~= nil then
+        for l_0_21,l_0_22 in pairs(l_0_17) do
+          if l_0_21 == l_0_4 and l_0_22 == l_0_15 then
+            return mp.CLEAN
+          end
+        end
+      end
+      do
+        AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_15, l_0_5, 100)
+        local l_0_23 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+        if l_0_23 then
+          (MpCommon.BmTriggerSig)(l_0_23, "AIDiscovery_gemini_json", l_0_15)
+        end
+        ;
+        (mp.SetDetectionString)(l_0_15)
+        ;
+        (mp.set_mpattribute)("MpDisableCaching")
+        return mp.INFECTED
+      end
     end
   end
-end
-do
-  AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_11, l_0_5, 100)
-  local l_0_19 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-  if l_0_19 then
-    (MpCommon.BmTriggerSig)(l_0_19, "AIDiscovery_gemini_json", l_0_11)
-  end
-  ;
-  (mp.SetDetectionString)(l_0_11)
-  ;
-  (mp.set_mpattribute)("MpDisableCaching")
-  return mp.INFECTED
 end
 

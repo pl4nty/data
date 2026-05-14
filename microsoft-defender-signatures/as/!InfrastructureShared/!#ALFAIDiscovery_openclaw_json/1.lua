@@ -134,26 +134,51 @@ if not isnull(l_0_11) and type(l_0_11) == "string" then
                           (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_32))
                         end
                         local l_0_38 = nil
-                        local l_0_39, l_0_40 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-                        if l_0_40 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
-                          for l_0_44,l_0_45 in pairs(R18_PC331) do
-                            local l_0_41 = nil
-                            if l_0_45 == l_0_4 and l_0_28 == l_0_39 then
-                              return mp.CLEAN
+                        do
+                          if (versioning.GetHostOsType)() == 1 then
+                            local l_0_39 = ""
+                            if not isnull((mp.ContextualExpandEnvironmentVariables)("%APPDATA%")) and (mp.ContextualExpandEnvironmentVariables)("%APPDATA%") ~= "" then
+                              l_0_39 = (mp.ContextualExpandEnvironmentVariables)("%APPDATA%") .. "\\npm\\node_modules\\openclaw\\package.json"
+                            end
+                          else
+                          end
+                          -- DECOMPILER ERROR at PC342: Confused about usage of register: R14 in 'UnsetPending'
+
+                          -- DECOMPILER ERROR at PC348: Confused about usage of register: R14 in 'UnsetPending'
+
+                          if "/usr/local/lib/node_modules/openclaw/package.json" and (sysio.IsFileExists)("/usr/local/lib/node_modules/openclaw/package.json") then
+                            local l_0_40 = nil
+                            if (sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300) then
+                              local l_0_41 = nil
+                              if (tostring((sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300))):match("\"version\"%s*:%s*\"([^\"]+)\"") then
+                                l_0_10.version = (tostring((sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300))):match("\"version\"%s*:%s*\"([^\"]+)\"")
+                              end
                             end
                           end
-                        end
-                        do
-                          AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_39, l_0_5, 100)
-                          local l_0_46 = nil
-                          if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
-                            (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_openclaw_json", l_0_39)
+                          do
+                            local l_0_42 = nil
+                            local l_0_43, l_0_44 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+                            if l_0_44 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
+                              for l_0_48,l_0_49 in pairs(R19_PC378) do
+                                local l_0_45 = nil
+                                if l_0_49 == l_0_4 and l_0_29 == l_0_43 then
+                                  return mp.CLEAN
+                                end
+                              end
+                            end
+                            do
+                              AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_43, l_0_5, 100)
+                              local l_0_50 = nil
+                              if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+                                (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_openclaw_json", l_0_43)
+                              end
+                              ;
+                              (mp.SetDetectionString)(l_0_43)
+                              ;
+                              (mp.set_mpattribute)("MpDisableCaching")
+                              return mp.INFECTED
+                            end
                           end
-                          ;
-                          (mp.SetDetectionString)(l_0_39)
-                          ;
-                          (mp.set_mpattribute)("MpDisableCaching")
-                          return mp.INFECTED
                         end
                       end
                     end
