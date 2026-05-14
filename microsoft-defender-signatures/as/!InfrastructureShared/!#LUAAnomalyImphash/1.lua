@@ -10,48 +10,58 @@ if l_0_0 ~= nil and #l_0_0 > 0 then
     if l_0_6 == nil then
       return mp.CLEAN
     end
-    local l_0_7 = (MpCommon.AnomalyEventLookup)("ImphashTableNewBloom", "ImphashTableMarker", 100)
-    if l_0_7 == nil then
-      (MpCommon.AnomalyEventUpdate)("ImphashTableNewBloom", "ImphashTableMarker", 1, 1)
-      return mp.CLEAN
+    local l_0_7 = "ImphashTableHVA"
+    local l_0_8 = (MpCommon.AnomalyEventLookup)(l_0_7, "ImphashTableMarker", 1)
+    local l_0_9 = 0
+    local l_0_10 = (MpCommon.GetCurrentTimeT)()
+    local l_0_11 = l_0_10
+    local l_0_12, l_0_13 = nil, nil
+    local l_0_14 = {}
+    l_0_14.AnomalyTableName = l_0_7
+    l_0_14.Key = l_0_6
+    if l_0_8 then
+      l_0_14.MarkerEntryType = "MarkerFound"
+      if l_0_8.Count then
+        l_0_11 = l_0_8.Count
+      end
+      l_0_9 = l_0_8.LastSeen
+    else
+      l_0_11 = l_0_10
+      l_0_12 = pcall(MpCommon.AnomalyEventUpdate, l_0_7, "ImphashTableMarker", l_0_10, 1)
+      if not l_0_12 then
+        l_0_14.Error = l_0_13
+      end
+      l_0_14.MarkerEntryType = "MarkerCreated"
     end
-    local l_0_8 = (MpCommon.AnomalyEventLookup)("ImphashTableNewBloom", l_0_6, 1)
-    if l_0_8 == nil then
-      (MpCommon.AnomalyEventUpdate)("ImphashTableNewBloom", l_0_6, 1, 1)
-      local l_0_9, l_0_10 = (MpCommon.Sha1SearchBloomFilter)(98, l_0_6 .. "00000000")
-      if l_0_9 == true and l_0_10 == "!#ImpHashCommonGlobal" then
+    local l_0_15 = (l_0_10 - l_0_11) / 60
+    l_0_14.TableUnbiasedTime = l_0_15
+    l_0_14.current_time = l_0_10
+    l_0_14.marker_UnbiasedTime = l_0_11
+    l_0_14.TableLastSeen = l_0_9
+    local l_0_16 = (MpCommon.AnomalyEventLookup)(l_0_7, l_0_6, 1)
+    if l_0_16 == nil then
+      (MpCommon.AnomalyEventUpdate)(l_0_7, l_0_6, 1, 1)
+      local l_0_17, l_0_18, l_0_19 = (MpCommon.SNidSearch)(98, l_0_6 .. "00000000")
+      if l_0_17 == true and l_0_18 == "!#ImpHashCommonGlobal" then
         return mp.CLEAN
       end
-      if l_0_7.UnbiasedTime > 7200 then
-        (mp.set_mpattribute)("Lua:AnomalyImphashNewBloom")
+      if l_0_15 > 10080 then
+        l_0_14.EntryType = "AddedAfterThreshold"
+        set_research_data("Imphash_Anomaly", safeJsonSerialize(l_0_14), false)
+        ;
+        (mp.set_mpattribute)("Lua:AnomalyImphashNew")
         return mp.INFECTED
       end
     else
       do
-        ;
-        (MpCommon.AnomalyEventUpdate)("ImphashTableNewBloom", l_0_6, l_0_8.Count + 1, 1)
         do
-          local l_0_11, l_0_12 = (MpCommon.Sha1SearchBloomFilter)(98, l_0_6 .. "00000000")
-          if l_0_11 == true and l_0_12 == "!#ImpHashCommonGlobal" then
-            return mp.CLEAN
-          end
-          if l_0_8.Count == 1 then
-            (mp.set_mpattribute)("Lua:AnomalyImphashObsMal")
-            return mp.INFECTED
-          end
-          if l_0_8.Count < 3 and l_0_8.UnbiasedTime > 20160 then
-            (mp.set_mpattribute)("Lua:AnomalyImphashNotFreqBloom")
-            return mp.INFECTED
-          end
-          if l_0_8.UnbiasedTime >= 43200 then
-            (MpCommon.AnomalyEventUpdate)("ImphashTableNewBloom", l_0_6, 1, 1)
-            return mp.INFECTED
-          end
-          -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out DO_STMT
+          ;
+          (MpCommon.AnomalyEventUpdate)(l_0_7, l_0_6, l_0_16.Count + 1, 1)
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-          -- DECOMPILER ERROR at PC139: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
