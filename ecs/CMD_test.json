@@ -1482,6 +1482,7 @@
         "ReduceSnapshotAcrossRegionQueryIntervalForMove": true,
         "RegionOutageNewWorkflow": true,
         "RegisterRdAgentByCmdAgentPluginAsPrimary": true,
+        "RegularSyncGroupMembers": true,
         "ReportNewConnectivityStatusEnums": true,
         "ReserveCloudPCNoConnectionEvent": true,
         "ReserveLicenseExpiring": true,
