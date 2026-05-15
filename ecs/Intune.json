@@ -432,19 +432,19 @@
             "UseLKG_ActiveMalwareAggregateBySeverity": true,
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
             "UseLKG_AgentStatusSummary": true,
-            "UseLKG_AutopilotV2DepStatus": true,
-            "UseLKG_CatalogAppsUpdateList": true,
-            "UseLKG_DCv2SettingsInInventoryPolicyForDeviceV3": true,
+            "UseLKG_AutopilotV2DepStatus": false,
+            "UseLKG_CatalogAppsUpdateList": false,
+            "UseLKG_DCv2SettingsInInventoryPolicyForDeviceV3": false,
             "UseLKG_DependentAppsInstallStatus": true,
             "UseLKG_DetectedMalware": true,
             "UseLKG_DetectedMalwareAggregate": true,
             "UseLKG_DetectedMalwareAggregateByState": true,
-            "UseLKG_DeviceEncryptionStatusesDetailV3": true,
+            "UseLKG_DeviceEncryptionStatusesDetailV3": false,
             "UseLKG_DeviceRunStatesByScript": true,
             "UseLKG_EnrollmentActivityUser": true,
-            "UseLKG_FailedAndPendingAppsByUserId": true,
-            "UseLKG_InventoryPolicySettingDetailsDCv2v3": true,
-            "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": true,
+            "UseLKG_FailedAndPendingAppsByUserId": false,
+            "UseLKG_InventoryPolicySettingDetailsDCv2v3": false,
+            "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": false,
             "UseLKG_PolicySettingDetailsDCv2ver3": false,
             "UseLKG_RemediationRunSummary": true,
             "UseLKG_ScriptRunSummary": true
@@ -764,7 +764,9 @@
             "EnableIRGFilterSearchSort": true,
             "EnableMDQErrorSplitting": true,
             "EnableMDQExportToCSV": true,
-            "MDQAddToGroup": true
+            "MDQAddToGroup": true,
+            "MDQEnumAttributeType": true,
+            "MDQFilterSearchSort": true
         }
     },
     "UX_RemoteAssist": {

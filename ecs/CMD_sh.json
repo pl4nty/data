@@ -1434,6 +1434,9 @@
         "usage": true,
         "user": true,
         "windows365client": {
+            "Aspen": {
+                "enableHealthCheckAvdDiagnostics": true
+            },
             "GUI": {
                 "EnableBootKillMsrdcOnResumeFromSleepLock": true,
                 "EnableBootToCloudReturnToLocal": true,
@@ -1442,7 +1445,10 @@
                 "enablePreviewUx": true,
                 "enableTheme": true
             },
-            "ProxyResolver": true
+            "ProxyResolver": true,
+            "rdcore": {
+                "enableclientcorehealthcheck": true
+            }
         },
         "wvdcs": true,
         "wvdmanagement": true
