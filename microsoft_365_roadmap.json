@@ -1,10 +1,236 @@
 [
     {
+        "created": "2026-05-14T23:15:59",
+        "description": "Unlock deeper insights into Copilot agent adoption with flexible, self-serve analytics. Insights global and partition analysts can access and combine granular agent usage metrics with agent and organizational attributes to uncover agent adoption trends, export and customize reporting, and drive more informed decisions, without relying on predefined dashboards.\n",
+        "id": 562412,
+        "locale": null,
+        "modified": "2026-05-14T23:15:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Agent metrics for custom reporting in Insights analyst workbench"
+    },
+    {
+        "created": "2026-05-14T23:15:59",
+        "description": "Organizations now have expanded meeting interoperability with two-way Direct Guest Join (DGJ) between Google Meet and Teams meetings.  Teams Rooms on Windows devices can join Google Meet meetings, and Google Meet devices can join Teams meetings. Users can join with one click through the calendar or by meeting ID. This capability is now available for both Commercial (Feb 2026) and Government cloud environments.",
+        "id": 562341,
+        "locale": null,
+        "modified": "2026-05-14T23:15:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Join Google Meet meetings in Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-05-14T23:15:59",
+        "description": "Users can now upload videos directly into a Teams event or meeting from OneDrive from the \"Manage view\" options when an organizer has turned on Manage What Attendees See mode. This ensures a smoother high quality video playback with a more consistent experience for attendees.",
+        "id": 562340,
+        "locale": null,
+        "modified": "2026-05-14T23:15:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Preloaded video for Teams Events and Meetings"
+    },
+    {
+        "created": "2026-05-14T23:15:59",
+        "description": "Add an agent node to your workflow to reason over data, call tools, and return a response, all within a single step. The agent node lets you embed reasoning directly into your workflow. This means fewer manual handoffs, faster processing times, and workflows that can handle nuanced decisions without additional development effort, helping teams automate more of their end-to-end processes and reduce operational overhead.",
+        "id": 562222,
+        "locale": null,
+        "modified": "2026-05-14T23:15:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Invoke agents as workflow steps with the agent node"
+    },
+    {
         "created": "2026-05-13T23:00:44",
         "description": "We\u2019re introducing 3 enhancements to AI Interpreter\u2019s Simultaneous mode. First, the interpreter audio and live captions now match exactly, with both using the same language the user selects. Second, admins can fully disable voice simulation if needed. Third, users will have more platform voice options, with dynamic voice assignments that help distinguish each speaker and make conversations easier to follow.",
         "id": 562035,
         "locale": null,
-        "modified": "2026-05-13T23:00:44",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -24,9 +250,6 @@
                 "tagName": "iOS"
             },
             {
-                "tagName": "Linux"
-            },
-            {
                 "tagName": "Mac"
             },
             {
@@ -34,6 +257,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -53,9 +279,6 @@
                     "tagName": "iOS"
                 },
                 {
-                    "tagName": "Linux"
-                },
-                {
                     "tagName": "Mac"
                 }
             ],
@@ -67,6 +290,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -779,9 +1005,9 @@
         "description": "When users are signed in with a work account, some Microsoft 365 sites (for example, microsoft.com, cloud.microsoft, and microsoft365.com) may open authentication pop-up windows to Microsoft sign-in endpoints such as login.microsoftonline.com, login.live.com, or login.microsoft.com. These pop-ups are required to complete sign-in. Microsoft Edge now allows authentication pop-up windows from Microsoft first party services by default. Admins can control availability to this feature using the M365AuthPopupsInWorkEnabled policy. ",
         "id": 561035,
         "locale": null,
-        "modified": "2026-05-12T23:00:33",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4304,9 +4530,9 @@
         "description": "We\u2019re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which conditions evaluated as true or false.\nFor Microsoft 365 E5 customers, the experience also includes Copilot-powered insights and tailored recommendations to accelerate troubleshooting and policy optimization.",
         "id": 561032,
         "locale": null,
-        "modified": "2026-04-24T22:00:04",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -4695,9 +4921,9 @@
         "description": "This feature introduces confidence scoring and reasoning trace explainability into the Data Security Triage Agent in DLP, addressing a critical trust gap reported across multiple customers. Today, without transparency into why the agent makes a decision or how confident it is, analysts are forced to fall back to manual review \u2014 completely negating the automation value. The feature will surface a reasoning trace alongside each agent decision and a confidence score, giving analysts a clear signal of how reliable the agent's output is. This provides SOC teams with an auditable, explainable output they can validate rather than blindly trust, enabling them to progressively increase reliance on automation over time.",
         "id": 560597,
         "locale": null,
-        "modified": "2026-04-23T23:15:05",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8900,10 +9126,10 @@
         "description": "Customers can now view and understand their agent landscape through the new Overview page that will be included as part of the Agent Dashboard in Microsoft Viva. This experience will provide customers with key at-a-glance insights on adoption in their organizations, visibility into who\u2019s creating agents used in their organization, and details on what business process categories these agents are used for.",
         "id": 559996,
         "locale": null,
-        "modified": "2026-04-29T23:15:48",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -13848,9 +14074,9 @@
         "description": "File Quarantine action in Microsoft Purview DLP for SharePoint and OneDrive, enables stronger, immediate protection for sensitive data. When a DLP policy is triggered, the File Quarantine action automatically moves the file to a restricted, admin\u2011controlled & defined quarantine location\u2014instantly removing access for all users while preserving the file for review and investigation. This capability helps organizations contain data\u2011exposure risks, prevents further sharing or misuse, and delivers a powerful new layer of enforcement.",
         "id": 557190,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14886,12 +15112,12 @@
         "description": "Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.\n",
         "id": 558254,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18041,12 +18267,12 @@
         "description": "Adding below enhancements to Data Security Triage Agent in MS Purview - Metadata supported Custom Instructions (DLP only) : Earlier the agent only supported custom instructions which are related to content (E.g. Focus on alerts related to financial information). Now we also support instructions related to metadata. (E.g. Focus on alerts related to financial information for user Adam in last 20 days) - Consolidated Agent settings : Earlier we had seperate controls for deployment configuration and triggers. We are now merging them into a single view as the settings can be altered anytime and it becomes easier for admins and analysts to change them from single view. - Support for alerts with Non content contains condition (DLP only) : Till now we were showing alerts generated from non-content contains conditions as unsupported. (E.g. Condition = RecipientDomainIs matches and triggers alert, alert is unsupported). Now we are bringing the alerts into triage capability and determining categorization for them also - Agent Identity : Now the Triage agent can be deployed with Agent's own identity generated in Microsoft Entra. There won't be a need to have the agent run using the user's identity who was setting up the agent. This provides cleaner audit capabilities.\n",
         "id": 557552,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29080,9 +29306,9 @@
         "description": "The Data Security Posture Agent is designed to expand the capacity of data security admins as they proactively work to stay on top of a dynamic data and risk landscape within their organization. Its primary job is to help discover sensitive data across your data estate. This agent is designed to analyze and search documents, emails, and messages that match the natural-language discovery intent requested by the user and assess associated risks. By moving beyond traditional keyword and information-type analysis and harnessing the power of LLMs, this agent enables organizations to identify risks based on the actual purpose and context of the content and take appropriate action.",
         "id": 542790,
         "locale": null,
-        "modified": "2025-12-17T00:15:13",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30001,12 +30227,12 @@
         "description": "The Data Security Triage Agent creates an agent-managed alert queue that identifies and prioritizes the DLP and IRM alerts that pose the greatest risk to your organization. It delivers a summary and clear explanation for why each alert was prioritized, helping analysts focus on what matters most.\nFor this GA release, we\u2019re introducing expanded coverage (which also includes Endpoint DLP alerts as well as alerts that leverage Custom SITs (Sensitive Information Types)) and support for Entra Agent ID.",
         "id": 542187,
         "locale": null,
-        "modified": "2025-12-11T00:00:03",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34801,10 +35027,10 @@
         "description": "Users can manually select text and ask Copilot to help provide relevant information. ",
         "id": 508524,
         "locale": null,
-        "modified": "2025-12-10T00:15:49",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -41712,12 +41938,12 @@
         "description": "This feature introduces automated, role-targeted onboarding emails for Leaders to drive discovery of the Copilot Dashboard in Viva insights.",
         "id": 511801,
         "locale": null,
-        "modified": "2026-04-28T22:45:03",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44699,12 +44925,12 @@
         "description": "We are expanding Microsoft Purview Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot, including pre-built agents in Microsoft 365 Copilot,  from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web.",
         "id": 515945,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46690,12 +46916,12 @@
         "description": "Microsoft Purview Insider Risk Management variant limit is being increased from 3 to 10 per indicator and an overall limit of 100 across all indicators. Along with this, the number of items in one detection group is being increased from 200 to 500.",
         "id": 511798,
         "locale": null,
-        "modified": "2025-10-07T23:00:08",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49243,9 +49469,9 @@
         "description": "We\u2019re introducing more flexible and precise targeting capabilities in Viva Engage, starting with Storyline Announcements. This new feature allows leaders and their delegates to define a custom audience at the time of posting, without relying on pre-configured Leader Audiences. Audiences can be built, and saved for reuse, using organizational attributes such as department, job title, or country, existing groups like M365 Groups, distribution lists, or security groups, and even individual users by name. This flexibility enables more relevant communication, helping leaders reach the right people with the right message. Notifications and delivery channels, including Teams and email, will continue to follow existing Storyline Announcement behavior, ensuring a seamless experience for recipients. This feature is designed to help leaders tailor communications to specific departments, locations, or groups, enhancing engagement and relevance across the organization.",
         "id": 499895,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -50450,9 +50676,9 @@
         "description": "Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have launched to Preview only.\n",
         "id": 501451,
         "locale": null,
-        "modified": "2026-04-16T23:15:53",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -69512,9 +69738,9 @@
         "description": "You can now interact with your favorite apps directly from Teams chat and channels compose box using slash commands.  Type / and start interacting with Apps and Agents, invoke workflows and more. ",
         "id": 495002,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -95690,9 +95916,9 @@
         "description": "This backend change will now address the 'separation of attendee' invites from the events crew. This feature allows the organizers of Townhalls to maintain separate invites for attendees.",
         "id": 476488,
         "locale": null,
-        "modified": "2026-03-12T23:00:54",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -105647,12 +105873,12 @@
         "description": "Microsoft Priva Privacy Risk Management extends its overexposure policies into data contained in Azure SQL, Azure Data Lake Storage, and Amazon S3. Organizations can create privacy policies that specify which data sources, databases, or storage buckets are in scope and Priva will automatically notify data asset owners when matches are detected.",
         "id": 398711,
         "locale": null,
-        "modified": "2025-06-30T23:00:15",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "June CY2024",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106334,15 +106560,15 @@
     },
     {
         "created": "2024-10-30T23:30:52",
-        "description": "When users delete a Loop workspace, owners can restore it from a recycle bin in Loop.",
+        "description": "When users delete a Loop workspace, owners can restore it from a recycle bin in Loop. Updated May 14, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.",
         "id": 421615,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-05-14T23:15:59",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

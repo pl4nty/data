@@ -1089,6 +1089,7 @@
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
         "HotpatchOnByDefaultOptOut": true,
+        "IntunePartnerSyncRepair": true,
         "MigrationAddClientBrokerInstallAdminAction": true,
         "NoFeatureActivation": true,
         "PolicyDeviceStatusesReadFromScaleUnitKusto": true,

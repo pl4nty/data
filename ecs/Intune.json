@@ -276,7 +276,8 @@
                     "SharedBoolFlight2",
                     "SharedStringFlight2",
                     "SharedIntFlight2",
-                    "SharedFloatFlight2"
+                    "SharedFloatFlight2",
+                    "TypedInvalidValueFlight"
                 ]
             }
         }
@@ -295,11 +296,13 @@
     "SVC_AndroidSync": {
         "FlightingV2": {
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
+            "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
             "EnableAndroidSyncCredentialProviderProcessing": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
+            "EnableAppsPostFilterConflictResolution": true,
             "EnableBteOnboarding": true,
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
@@ -679,13 +682,16 @@
     },
     "UX_AndroidEnterprise": {
         "FlightingV2": {
+            "EnableAELOBAppConfigUX": true,
             "EnableCredentialProviderPolicyAE": true,
             "EnableCredentialProviderPolicyBYOD": true
         }
     },
     "UX_AppLifecycle": {
         "FlightingV2": {
+            "EnableAELOBAppCreation": true,
             "EnableIosDdmReqApps": true,
+            "EnableNewAppPicker": true,
             "EnableWin32InstallerScriptsGA": true
         }
     },
