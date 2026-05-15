@@ -45,7 +45,7 @@ if l_0_0 ~= nil and #l_0_0 > 0 then
       if l_0_17 == true and l_0_18 == "!#ImpHashCommonGlobal" then
         return mp.CLEAN
       end
-      if l_0_15 > 10080 then
+      if l_0_15 > 2880 then
         l_0_14.EntryType = "AddedAfterThreshold"
         set_research_data("Imphash_Anomaly", safeJsonSerialize(l_0_14), false)
         ;
