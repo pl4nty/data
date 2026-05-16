@@ -452,13 +452,33 @@ local l_0_7 = function()
 
   -- DECOMPILER ERROR at PC152: No list found for R38 , SetList fails
 
+  local l_8_39 = {}
+  -- DECOMPILER ERROR at PC154: Overwrote pending register: R40 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC156: No list found for R39 , SetList fails
+
+  local l_8_40 = {}
+  -- DECOMPILER ERROR at PC158: Overwrote pending register: R41 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC160: No list found for R40 , SetList fails
+
+  local l_8_41 = {}
+  -- DECOMPILER ERROR at PC162: Overwrote pending register: R42 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC164: No list found for R41 , SetList fails
+
+  local l_8_42 = {}
+  -- DECOMPILER ERROR at PC166: Overwrote pending register: R43 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC168: No list found for R42 , SetList fails
+
   do
-    local l_8_39 = {}
-    -- DECOMPILER ERROR at PC154: Overwrote pending register: R40 in 'AssignReg'
+    local l_8_43 = {}
+    -- DECOMPILER ERROR at PC170: Overwrote pending register: R44 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC156: No list found for R39 , SetList fails
+    -- DECOMPILER ERROR at PC172: No list found for R43 , SetList fails
 
-    -- DECOMPILER ERROR at PC157: No list found for R0 , SetList fails
+    -- DECOMPILER ERROR at PC173: No list found for R0 , SetList fails
 
     do return l_8_0 end
     -- WARNING: undefined locals caused missing assignments!
