@@ -1,5 +1,530 @@
 [
     {
+        "created": "2026-05-15T22:00:42",
+        "description": "Easily find keyboard shortcuts with a new searchable experience in Microsoft Teams. Search by shortcut name or enter part of a key combination directly in the dialog.",
+        "id": 562413,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Searchable keyboard shortcuts from the dialog in Teams"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "Request feedback from Copilot on your Page by selecting \"Suggested edits\" in the Copilot Shortcuts menu. Copilot will analyze the content on your page and provide actionable suggestions about what you can change to improve clarity and quality of your written content. You can then apply suggestions directly to the page.",
+        "id": 562351,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Get actionable suggestions from Copilot in your Copilot Page"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "This release introduces a new condition for Exchange Online policies: \u201cCount of labeled documents is greater than.\u201d  This condition evaluates the number of attachments in an email message that carry a matching sensitivity label. When the count exceeds a defined threshold, the DLP rule is triggered, and configured actions are applied. This capability enables detection of high-volume data exfiltration scenarios, where multiple sensitive files\u2014individually low-risk\u2014collectively represent a significant compliance or security risk. Existing conditions evaluate file content, but do not provide controls based on the volume of labeled attachments.",
+        "id": 562342,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Count of Labelled Documents Condition"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "Admins can map employee badge credentials (card or NFC) to user identities in Universal Print, enabling users to release secure print jobs at compatible printers with a simple tap\u2014no app, PIN, or sign-in required at the device. This enhances existing badge-based release with a standardized, cloud-based identity mapping model integrated with Microsoft 365.",
+        "id": 561921,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Universal Print"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Universal Print"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Universal Print: Badge API"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "Empower Chiefs of Staff and delegated roles to efficiently organize events on behalf of leaders or teams using shared or delegated mailboxes. By sending trusted invites from the chosen mailbox, this capability ensures consistent identity, improved trust, and smoother event setup.",
+        "id": 561912,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Shared & Delegate Mailbox Scheduling for Events"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "Copilot People Connector now supports importing people data with access controls into Microsoft 365. This release enables organizations to bring people data from external systems into Microsoft 365 along with associated access control lists (ACLs), ensuring Copilot respects existing permissions defined in source systems. The imported data can be scoped to specific individuals and groups, allowing Copilot to reason over people data while honoring access restrictions.",
+        "id": 561326,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot People Connectors introduces people data ingestions with differentiated access control"
+    },
+    {
+        "created": "2026-05-15T22:00:42",
+        "description": "Data Lifecycle Management (DLM) billing will be based on the volume of data retained. For example, any number of non\u2011Microsoft 365 generative AI prompts and responses that collectively amount to 1 GB of retained data will be billed at $0.25 per GB per month (equivalent to ~$0.0082 per GB per day). In the updated model, DLM is billed based on the total volume of text messages managed by a DLM policy. Each non\u2011Microsoft 365 generative AI prompt and response is treated as an individual text message and is retained and deleted according to the configured Microsoft Purview retention settings. Billing is calculated on the managed text messages in storage, at a rate equivalent to $6 per one million text messages per month. Customer impact Customers will need to migrate from the legacy meter to the new meter. Based on current analysis, the overall cost impact is expected to be cost\u2011neutral or lower for customers under the new billing model.\n",
+        "id": 560324,
+        "locale": null,
+        "modified": "2026-05-15T22:00:42",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - DLM Meter Change"
+    },
+    {
+        "created": "2026-05-15T18:00:35",
+        "description": "Integrate proprietary systems, dynamic knowledge sources, and custom actions into your agentic workflows with MCP support, accelerating extensibility while preserving workflow reliability. This integration improves reuse across agents and workflows, reduces duplication of integrations, and embraces an emerging open and extensible agent ecosystem.",
+        "id": 562221,
+        "locale": null,
+        "modified": "2026-05-15T18:00:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Use MCP-compliant tools in agent workflows"
+    },
+    {
+        "created": "2026-05-15T18:00:35",
+        "description": "Add resilient, AI-powered UI automation directly into your workflows with computer use tools. Makers can build reusable, goal-oriented automations that adapt dynamically to website or app changes, while admins maintain governance through access controls, hosted browser management, and environment-level permissions.",
+        "id": 562220,
+        "locale": null,
+        "modified": "2026-05-15T18:00:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Supercharge your workflows with computer use"
+    },
+    {
         "created": "2026-05-14T23:15:59",
         "description": "Unlock deeper insights into Copilot agent adoption with flexible, self-serve analytics. Insights global and partition analysts can access and combine granular agent usage metrics with agent and organizational attributes to uncover agent adoption trends, export and customize reporting, and drive more informed decisions, without relying on predefined dashboards.\n",
         "id": 562412,
@@ -2237,10 +2762,10 @@
         "description": "A day level Copilot adoption Power BI report reflecting the most recent copilot activity & freshest insights.",
         "id": 561325,
         "locale": null,
-        "modified": "2026-05-06T23:15:10",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "August CY2026",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -4585,7 +5110,7 @@
         "description": "Microsoft Teams extends Quick Share to images, making it fast and easy to share visual content across chats and channels. With access from hover, right click, overflow menus, and shared tabs, you can quickly copy links or share images while preserving existing permissions.",
         "id": 560816,
         "locale": null,
-        "modified": "2026-04-24T22:00:04",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -4606,6 +5131,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -4630,6 +5158,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -7333,9 +7864,9 @@
         "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Windows. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
         "id": 560318,
         "locale": null,
-        "modified": "2026-04-15T22:45:13",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23814,12 +24345,12 @@
         "description": "Copilot Search can now match on a person's department, and you can find/lookup all people in a given department when searching the people source directly. ",
         "id": 508527,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26774,12 +27305,12 @@
         "description": "The below diagnostics will help users understand which sensitive information exist in their document and what labels applied and what policies have been triggered: DLP SharePoint Diagnostics DLP EXO Diagnostics Auto labeling diagnostics for SPO/ODB\n",
         "id": 547833,
         "locale": null,
-        "modified": "2026-04-06T23:15:32",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "January CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45914,9 +46445,9 @@
         "description": "Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community. ",
         "id": 513275,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -50402,12 +50933,12 @@
         "description": "Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.",
         "id": 502519,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-05-15T22:00:42",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -91044,67 +91575,6 @@
     },
     {
         "created": "2025-03-03T21:30:03",
-        "description": "Microsoft Purview Endpoint Data Loss Prevention adds support on users trying to paste sensitive content into web browsers on macOS devices using Edge, Safari, and other browsers.",
-        "id": 483491,
-        "locale": null,
-        "modified": "2025-07-15T23:00:46",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention- Paste to Browser prevention support on macOS device with endpoint DLP"
-    },
-    {
-        "created": "2025-03-03T21:30:03",
         "description": "SharePoint agents' usage statistics would be aggregated across all SharePoint sites and available for the tenant admin persona.",
         "id": 480729,
         "locale": null,
@@ -108049,67 +108519,6 @@
         "title": "Microsoft Viva: Viva Glint - Self service for bulk custom access"
     },
     {
-        "created": "2023-03-17T22:47:11",
-        "description": "Outlook on the web and New Outlook will match the highest sensitivity label from attachments on email. Admins can configure this either using the cmdlet set-label policy advanced setting or the Compliance portal to configure the label policy (Roadmap 100158). Customers will automatically see or will be recommended that an email gets the higher label from an attachment's label. #newoutlookforwindows",
-        "id": 117579,
-        "locale": null,
-        "modified": "2025-07-15T23:00:46",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Outlook: Labeling email from attachment's label in Outlook on the web and New Outlook"
-    },
-    {
         "created": "2024-10-31T23:30:09",
         "description": "You can now record and share the correct pronunciation of your name, promoting inclusivity and helping colleagues avoid mispronunciations. With a click, you can play and listen to your colleagues' name pronunciations. #newoutlookforwindows ",
         "id": 465000,
@@ -111029,67 +111438,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Information Barriers v2 support for all new onboarding customers"
-    },
-    {
-        "created": "2024-06-10T23:30:43",
-        "description": "This adds the ability to save the filters applied to Activity Explorer and use them later.",
-        "id": 397771,
-        "locale": null,
-        "modified": "2025-07-15T23:00:46",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Information Protection - Save filters for Activity Explorer"
     },
     {
         "created": "2024-05-14T23:30:08",

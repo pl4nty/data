@@ -1664,6 +1664,9 @@
             "App": {
                 "httpRequestTimeoutSec": 10
             },
+            "Aspen": {
+                "enableHealthCheckAvdDiagnostics": true
+            },
             "GUI": {
                 "EnablePinToDesktopShortcuts": true,
                 "enablePreviewUx": true,
