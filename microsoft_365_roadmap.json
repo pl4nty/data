@@ -76049,61 +76049,6 @@
     },
     {
         "created": "2025-05-07T23:15:15",
-        "description": "You can now create a presentation with Copilot straight from the PowerPoint backstage view, accessible when you start PowerPoint or when you select the File tab.",
-        "id": 491469,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "PowerPoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "PowerPoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Create a presentation with Copilot from the PowerPoint backstage view"
-    },
-    {
-        "created": "2025-05-07T23:15:15",
         "description": "We are adding more offline functionality in the new Outlook for Windows. You will now be able to create, edit, and delete events in your calendar when not connected to the internet. #newoutlookforwindows",
         "id": 490059,
         "locale": null,
@@ -77528,67 +77473,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Enable policy tips for recipients when emailed as part of a distribution group"
-    },
-    {
-        "created": "2025-04-28T23:15:36",
-        "description": "Currently you can create Purview Endpoint DLP policy and assign to specific users or user groups. This feature will allow you to create and release feature based on both users and machines. You can use this feature to achieve different policies for same user on different devices.",
-        "id": 491011,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Compliance Portal: Endpoint Data Loss Prevention - Device and Device group-based policy scoping support for Endpoint DLP"
     },
     {
         "created": "2025-04-28T23:15:36",
@@ -82974,61 +82858,6 @@
             ]
         },
         "title": "Access: Enable zoom magnification to Microsoft Access for Forms, Tables, Queries"
-    },
-    {
-        "created": "2025-04-10T23:15:50",
-        "description": "For agents with uploaded files as knowledge source, admins now can regulate and manage including but not limited to agent filtering, reviewing sensitivity label, metadata, etc.",
-        "id": 489214,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] [b.2.3] Governance control for agents with file uploaded as knowledge source"
     },
     {
         "created": "2025-04-10T23:15:50",
@@ -88689,73 +88518,6 @@
     },
     {
         "created": "2025-03-18T23:15:13",
-        "description": "Users are warned when they are emailing a large number of recipients which can help them make the correct decision about wording, tone, and content.",
-        "id": 485759,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Large Audience Warnings in Outlook for iOS and Android"
-    },
-    {
-        "created": "2025-03-18T23:15:13",
         "description": "The template feature in the new Outlook allows users to create and save email templates for quick and consistent communication, streamlining the process of sending repetitive messages. Additionally, it allows for the seamless import of templates saved as .oft files. #newoutlookforwindows",
         "id": 485758,
         "locale": null,
@@ -91206,79 +90968,6 @@
             ]
         },
         "title": "Microsoft Teams: Ability to Stop Copilot while it is generating a response"
-    },
-    {
-        "created": "2025-03-05T23:30:41",
-        "description": "New Outlook for Windows will now support a two-click view for encrypted emails. This feature enables admins to require user confirmation before allowing access to encrypted emails. Admins can find the \"TwoClickMailPreviewEnabled\" setting in the Microsoft Azure directory. Alternatively, admins can access and set the value for this setting using the Microsoft PowerShell cmdlet \"-Set-OrganizationConfiquration\" in the Microsoft Exchange Online PowerShell.\n#newoutlookforwindows\n\n",
-        "id": 483883,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: 2-click view of encrypted emails in New Outlook"
     },
     {
         "created": "2025-03-05T23:30:41",
@@ -96486,61 +96175,6 @@
     },
     {
         "created": "2025-01-23T00:15:18",
-        "description": "Delegate management and remediation authority for different people in different regions or organization units with role-based access control (RBAC). For example, German investigators should be able to investigate alerts and audit events for only German users. This update extends support to SharePoint for Microsoft 365. ",
-        "id": 475970,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "April CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Admin units support for SharePoint Online"
-    },
-    {
-        "created": "2025-01-23T00:15:18",
         "description": "With this feature, insights will be generated for potentially risky behaviors at a user level and will be surfaced across the following experiences:\n\n1) Insider risk management context in DLP alert investigation\n2) Insider risk management context in Communication compliance alert investigation\n3) Insider risk management context in Microsoft Defender XDR user entity page\n4) Advanced hunting in Microsoft Defender XDR  \n\nUser analytics will cover all eligible users in the tenant including users not in the scope of any Insider risk management policy. Customers can enable/disable user analytics in their tenant from Insider Risk Management settings.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 475058,
         "locale": null,
@@ -100162,61 +99796,6 @@
     },
     {
         "created": "2024-12-18T00:15:02",
-        "description": "If you like brevity or more depth in the summaries that Copilot generates when you open a document, you can now specify your preference as brief, standard, or detailed.",
-        "id": 473462,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Word"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Word: Choose the level of detail for summaries when documents are opened"
-    },
-    {
-        "created": "2024-12-18T00:15:02",
         "description": "Draft on a selection and retain your existing formatting so that your content is seamless and fits with your document.",
         "id": 473461,
         "locale": null,
@@ -100263,61 +99842,6 @@
             ]
         },
         "title": "Word: Draft on a selection and retain your existing formatting"
-    },
-    {
-        "created": "2024-12-18T00:15:02",
-        "description": "If you like brevity or more depth in the summaries that Copilot generates when you open a document, you can now specify your preference as brief, standard, or detailed.",
-        "id": 473445,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Word"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Word: Choose the level of detail for summaries when documents are opened"
     },
     {
         "created": "2024-12-18T00:15:02",
@@ -104903,67 +104427,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention - Actionable Email Notifications for Enhanced Incident Remediation"
-    },
-    {
-        "created": "2024-11-01T23:00:59",
-        "description": "This feature is designed to enhance transparency by introducing a notification banner that alerts users when keywords embedded in hidden content, such as hyperlinks or encoded strings, trigger a compliance policy match. With this update, investigators will be able to quickly recognize that some or all keyword matches are not immediately visible in the main content body, saving time and ensuring a more efficient triage experience.",
-        "id": 429872,
-        "locale": null,
-        "modified": "2025-07-16T23:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Communication Compliance - Notify users about hidden content matches in Communication Compliance"
     },
     {
         "created": "2024-08-06T00:00:26",
