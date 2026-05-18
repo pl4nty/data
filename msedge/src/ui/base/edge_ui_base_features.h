@@ -182,6 +182,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineNewUXAllowInputElements);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineIgnoreWritingSuggestions);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeCopilotChat);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsEdgeComposeCopilotChatEnabled();
@@ -628,12 +631,6 @@ BASE_DECLARE_FEATURE(kEdgeToolbarButtonUIPolish);
 #endif  // BUILDFLAG(IS_MAC)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeToolbarButtonUIPolishEnabled();
-
-// If enabled, the browser frame refresh in CoPilot Mode will be applied.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kVisualRejuvFrameViewsForCoPilot);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeVisualRejuvFrameViewsForCoPilotModeEnabled();
 
 // If enabled, will use ThemeService-based dark mode detection (current
 // approach). If disabled, will use direct preference reading (legacy approach).

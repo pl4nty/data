@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2216638,
+    "size": 2219599,
     "file_count": 184
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33354166,
+    "size": 33377093,
     "file_count": 4041
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17199748,
-    "file_count": 2026
+    "size": 17309581,
+    "file_count": 2029
   },
   {
     "name": "entity_extraction",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44126336,
-    "file_count": 3381
+    "size": 44138197,
+    "file_count": 3389
   },
   {
     "name": "googletest",
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19715563,
+    "size": 19717099,
     "file_count": 19
   },
   {
@@ -601,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4348205,
-    "file_count": 605
+    "size": 4362118,
+    "file_count": 615
   },
   {
     "name": "perl",
@@ -676,7 +676,7 @@
   },
   {
     "name": "sentencepiece",
-    "size": 16367,
+    "size": 16731,
     "file_count": 5
   },
   {
@@ -686,8 +686,8 @@
   },
   {
     "name": "skia",
-    "size": 3486394,
-    "file_count": 1203
+    "size": 3489090,
+    "file_count": 1204
   },
   {
     "name": "speech-dispatcher",
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550328,
+    "size": 550504,
     "file_count": 15
   },
   {
@@ -711,12 +711,12 @@
   },
   {
     "name": "sqlite",
-    "size": 568401,
+    "size": 569786,
     "file_count": 12
   },
   {
     "name": "subresource-filter-ruleset",
-    "size": 180513,
+    "size": 181276,
     "file_count": 7
   },
   {
@@ -771,8 +771,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7522886,
-    "file_count": 195
+    "size": 7531041,
+    "file_count": 196
   },
   {
     "name": "vulkan_memory_allocator",
@@ -811,8 +811,8 @@
   },
   {
     "name": "wpt_tools",
-    "size": 391808,
-    "file_count": 60
+    "size": 191830,
+    "file_count": 13
   },
   {
     "name": "xnnpack",
