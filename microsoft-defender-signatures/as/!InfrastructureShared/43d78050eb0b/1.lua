@@ -14,5 +14,8 @@ end
 if (string.find)(l_0_0, "add-mppreference", 1, true) ~= nil and ((string.find)(l_0_0, " -exclusionpath (get-location) -force", 1, true) ~= nil or (string.find)(l_0_0, " -exclusionprocess (get-process -pid $pid). -force", 1, true) ~= nil) then
   return mp.INFECTED
 end
+if #l_0_0 <= 150 and (string.find)(l_0_0, " iex (iwr -useb ", 1, true) ~= nil then
+  return mp.INFECTED
+end
 return mp.CLEAN
 
