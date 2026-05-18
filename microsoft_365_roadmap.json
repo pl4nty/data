@@ -79023,61 +79023,6 @@
     },
     {
         "created": "2025-04-23T16:15:28",
-        "description": "Right-click on your content to ask Copilot about it on Copilot PC devices.",
-        "id": 487856,
-        "locale": null,
-        "modified": "2025-07-17T23:00:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot App - Ask M365 Copilot"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
         "description": "Copilot includes a summary at the top of key statistics from your Word document.",
         "id": 487855,
         "locale": null,
@@ -79423,55 +79368,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "Use the Copilot key and Win + C shortcut on Windows 11 devices to quickly interact with Copilot.",
-        "id": 482544,
-        "locale": null,
-        "modified": "2025-07-17T23:00:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Quickly start a chat with Copilot from anywhere on your PC"
     },
     {
         "created": "2025-04-22T23:15:19",
@@ -96958,67 +96854,6 @@
             ]
         },
         "title": "Outlook: Summarize email attachments with Copilot"
-    },
-    {
-        "created": "2025-01-16T00:00:43",
-        "description": "Developers can create, test and update custom engine agents using Teams Toolkit & Microsoft Copilot Studio, so that they can run in Microsoft 365 Copilot and Teams.",
-        "id": 474439,
-        "locale": null,
-        "modified": "2025-07-17T23:00:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "February CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot extensibility \u2013 Developers can create, test and update custom engine agents to run in Microsoft 365 Copilot and Teams"
     },
     {
         "created": "2025-01-15T00:00:52",

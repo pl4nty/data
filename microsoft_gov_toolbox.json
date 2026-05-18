@@ -589,8 +589,9 @@
         "name": "AzureMLPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.32.0",
+        "version": "1.33.0",
         "versions": [
+            "1.33.0",
             "1.32.0",
             "1.31.0",
             "1.19.0",
@@ -707,8 +708,9 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.82.0",
+        "version": "3.83.0",
         "versions": [
+            "3.83.0",
             "3.82.0",
             "3.81.0",
             "3.79.0",
@@ -1125,8 +1127,9 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.36.0",
+        "version": "2.37.0",
         "versions": [
+            "2.37.0",
             "2.36.0",
             "2.32.0",
             "2.30.0",
