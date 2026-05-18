@@ -753,6 +753,7 @@
         "EnableW365AMeterForWarmPoolEvent": true,
         "EnableW365AMeterHotDeviceAggregation": true,
         "EnableW365APoolTenantFanOutTimer": true,
+        "EnableW365AWarmPoolMetering": true,
         "EnableW365DeviceSync": true,
         "EnableW365GroupSoftDeleteAndRestore": true,
         "EnableW365MeterDataCompatibility": true,

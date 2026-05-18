@@ -625,6 +625,7 @@
         "EnableFLSUserAssignment": true,
         "EnableFLWPolicyBackendPublicAPI": true,
         "EnableFLWTenantOffboard": true,
+        "EnableFallbackFLDHibernateEligibilityCheck": true,
         "EnableFastFailedForVmExtensionOperationTimeout": true,
         "EnableFastTrackTip": true,
         "EnableFetchANCWithInformationalStatus": true,
