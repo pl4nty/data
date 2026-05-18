@@ -79,6 +79,10 @@
                         <Label>FeedbackSurveyForAnonymousUsers</Label>
                         <PropertyName>FeedbackSurveyForAnonymousUsers</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>ReportMeeting</Label>
+                        <PropertyName>ReportMeeting</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>

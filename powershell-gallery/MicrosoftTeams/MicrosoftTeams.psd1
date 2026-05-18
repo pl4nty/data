@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.7.0'
+ModuleVersion = '7.8.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -312,6 +312,11 @@ FunctionsToExport =  @(
 	,'New-CsOnlineDirectRoutingTelephoneNumberUploadOrder'
 	,'New-CsOnlineTelephoneNumberReleaseOrder'
 	,'New-CsComplianceRecordingForCallQueueTemplate'
+	,'New-CsPhoneNumberBulkUpdateTagsOrder'
+	,'New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder'
+	,'New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder'
+	,'New-CsPhoneNumberBulkUpdateReverseNumberLookupOrder'
+	,'New-CsPhoneNumberBulkUpdateLocationIdOrder'
 	,'New-CsTagsTemplate'
 	,'New-CsTag'
 	,'New-CsSharedCallQueueHistoryTemplate'
@@ -537,6 +542,7 @@ CmdletsToExport = @(
     ,'Get-TeamUser'
 	,'Get-M365TeamsApp'
 	,'Get-AllM365TeamsApps'
+    ,'Get-AIGeneratedKnowledgeContainer'
 	,'Get-M365UnifiedTenantSettings'
 	,'Get-M365UnifiedCustomPendingApps'
     ,'Get-CsTeamsAcsFederationConfiguration'
@@ -624,7 +630,6 @@ CmdletsToExport = @(
     ,'New-Team'
     ,'New-TeamChannel'
     ,'New-TeamsApp'
-	,'New-CsPhoneNumberBulkUpdateTagsOrder'
 	,'New-CsTeamsAIPolicy'
     ,'New-CsTeamsMessagingPolicy'
     ,'New-CsTeamsMeetingPolicy'
@@ -671,6 +676,7 @@ CmdletsToExport = @(
 	,'New-CsTeamsVdiPolicy'
     ,'New-CsTeamsBYODAndDesksPolicy'
 	,'New-CsTeamsPersonalAttendantPolicy'
+    ,'Remove-AIGeneratedKnowledge'
     ,'Remove-SharedWithTeam'
     ,'Remove-Team'
     ,'Remove-TeamChannel'
@@ -845,21 +851,15 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.7.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Fixes IPAddressVersion parameter in [Set|New]-CsOnlinePstnGateway cmdlets.
-- Releases [Set|Remove]-CsPhoneNumberSmsActivation cmdlets.
-- Adds the SmsActivationState output attribute to the Get-CsPhoneNumberAssignment cmdlet.
-- Adds support for application-based authentication in the Set-CsTeamsSettingsCustomApp cmdlet.
-- Updates the Get-Team cmdlet to improve performance and reliability.
-- [BREAKING CHANGE] Renames ConfigurationId parameter in Get-CsMainlineAttendantFlow cmdlet to RelatedConfigurationId.
-- Releases Get-CsMainlineAttendantTenantInformation, Get-CsMainlineAttendantSupportedLanguages, and Get-CsMainlineAttendantSupportedVoices cmdlets.
-- Adds AgentId, AgentIds, ContinuationToken, DisplayNameContains, DisplayNamePrefix, MaxResult, and ShowCount parameters to the Get-CsAiAgents cmdlet.
-- Adds support for URL-based descriptions in [New|Set]-CsMainlineAttendantQuestionAnswerFlow cmdlets.
-- [BREAKING CHANGE] Renames DomainBlockingForMDOAdminsInTeams parameter in Set-CsTenantFederationConfiguration cmdlet to SecurityTeamAllowBlockListDelegation.
-- Releases [Get|New|Set|Remove]-CsAgent cmdlets for managing AI agent for resource account integration.
-- Adds IncomingRedirectedCalls parameter to New-CsSharedCallQueueHistoryTemplate cmdlet.
-- Releases [Get|New|Set|Remove]-CsSharedCallHistoryTemplate cmdlets. These cmdlets will replace [Get|New|Set|Remove]-CsSharedCallQueueHistoryTemplate cmdlets in future.
-- Adds SharedVoicemailHistoryTemplateId parameter to New-CsAutoAttendantCallableEntity.
+ **7.8.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Fixes Get-TenantPrivateChannelMigrationStatus cmdlet in GCC, GCC High & DoD environments.
+- Releases New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder, New-CsPhoneNumberBulkUpdateLocationIdOrder, New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder, and New-CsPhoneNumberBulkUpdateReverseNumberLookupOrder cmdlets.
+- [BREAKING CHANGE] Renames EnableExternalAccessRestrictionsForChatPartipants and EnableMutualFederationForChatPartipants parameters in Set-CsTenantFederationSettings cmdlet to EnableExternalAccessRestrictionsForChatParticipants and EnableMutualFederationForChatParticipants respectively.
+- Adds PreventComplianceRecording and DisableAudioAnnouncementsForResourceAccounts parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- Adds PreventComplianceRecording parameter to [New|Set]-CsTeamsCallingPolicy cmdlets.
+- Adds Communities parameter to Set-CsTeamsMessagingConfiguration cmdlet.
+- Adds ReportMeeting parameter to Set-CsTeamsMeetingConfiguration cmdlet.
+
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

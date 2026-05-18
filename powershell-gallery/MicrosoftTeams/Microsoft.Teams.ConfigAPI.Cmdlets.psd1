@@ -1,7 +1,7 @@
 @{
   GUID = '82b0bf19-c5cd-4c30-8db4-b458a4b84495'
   RootModule = './Microsoft.Teams.ConfigAPI.Cmdlets.psm1'
-  ModuleVersion = '9.0325.2'
+  ModuleVersion = '9.0514.3'
   CompatiblePSEditions = 'Core', 'Desktop'
   Author="Microsoft Corporation"
   CompanyName="Microsoft Corporation"

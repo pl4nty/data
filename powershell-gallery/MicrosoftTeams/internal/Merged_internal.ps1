@@ -8898,6 +8898,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODY <ICreateAutoAttendantRequest>: .
   [AuthorizedUser <String[]>]: 
+  [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
@@ -9066,6 +9067,12 @@ param(
     [System.String[]]
     # .
     ${AuthorizedUser},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Auto Recording template.
+    ${AutoRecordingTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [AllowEmptyCollection()]
@@ -24967,6 +24974,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODY <ICreateAutoAttendantRequest>: .
   [AuthorizedUser <String[]>]: 
+  [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
@@ -25135,6 +25143,12 @@ param(
     [System.String[]]
     # .
     ${AuthorizedUser},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Auto Recording template.
+    ${AutoRecordingTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [AllowEmptyCollection()]
@@ -33118,6 +33132,7 @@ To create the parameters described below, construct a hash table containing the 
 BODY <IAutoAttendant>: .
   [ApplicationInstance <String[]>]: 
   [AuthorizedUser <String[]>]: 
+  [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
@@ -33424,6 +33439,13 @@ param(
     [System.String[]]
     # .
     ${AuthorizedUser},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Auto Recording template.
+    ${AutoRecordingTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -43908,6 +43930,7 @@ To create the parameters described below, construct a hash table containing the 
 BODY <IAutoAttendant>: .
   [ApplicationInstance <String[]>]: 
   [AuthorizedUser <String[]>]: 
+  [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
@@ -44214,6 +44237,13 @@ param(
     [System.String[]]
     # .
     ${AuthorizedUser},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Auto Recording template.
+    ${AutoRecordingTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]

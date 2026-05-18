@@ -1681,6 +1681,10 @@
                         <PropertyName>ExplicitRecordingConsent</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>PreventComplianceRecording</Label>
+                        <PropertyName>PreventComplianceRecording</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>EnableRecordingAndTranscriptionCustomMessage</Label>
                         <PropertyName>EnableRecordingAndTranscriptionCustomMessage</PropertyName>
                     </ListItem>
@@ -1691,6 +1695,10 @@
                     <ListItem>
                         <Label>AllowTranscriptionForCalling</Label>
                         <PropertyName>AllowTranscriptionForCalling</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>RecordingAndTranscriptionAudioNotification</Label>
+                        <PropertyName>RecordingAndTranscriptionAudioNotification</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>PopoutForIncomingPstnCalls</Label>
@@ -2914,6 +2922,10 @@
                         <PropertyName>ExplicitRecordingConsent</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>PreventComplianceRecording</Label>
+                        <PropertyName>PreventComplianceRecording</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>EnableRecordingAndTranscriptionCustomMessage</Label>
                         <PropertyName>EnableRecordingAndTranscriptionCustomMessage</PropertyName>
                     </ListItem>
@@ -2950,12 +2962,28 @@
                         <PropertyName>SetRecordingAndTranscriptOwnership</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>RecordingAndTranscriptionAudioNotification</Label>
+                        <PropertyName>RecordingAndTranscriptionAudioNotification</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>FilterProfanityInTranscript</Label>
+                        <PropertyName>FilterProfanityInTranscript</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowRecordingStorageOutsideRegion</Label>
                         <PropertyName>AllowRecordingStorageOutsideRegion</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>RecordingStorageMode</Label>
                         <PropertyName>RecordingStorageMode</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowMeetingKnowledgeGeneration</Label>
+                        <PropertyName>AllowMeetingKnowledgeGeneration</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>MeetingKnowledgeExpirationDays</Label>
+                        <PropertyName>MeetingKnowledgeExpirationDays</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AllowOutlookAddIn</Label>
@@ -3248,6 +3276,14 @@
                     <ListItem>
                         <Label>PasscodeComplexity</Label>
                         <PropertyName>PasscodeComplexity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ExternalBotAccessMode</Label>
+                        <PropertyName>ExternalBotAccessMode</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DisableAudioAnnouncementsForResourceAccounts</Label>
+                        <PropertyName>DisableAudioAnnouncementsForResourceAccounts</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -3605,6 +3641,60 @@
                     <ListItem>
                         <Label>AllowPublicTeams</Label>
                         <PropertyName>AllowPublicTeams</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRemoteLogCollectionPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRemoteLogCollectionPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Devices</Label>
+                        <PropertyName>Devices</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsRemoteLogDeviceView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsRemoteLogDevice</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DeviceId</Label>
+                        <PropertyName>DeviceId</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ExpireAfter</Label>
+                        <PropertyName>ExpireAfter</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -4924,6 +5014,14 @@
                         <Label>SecurityTeamAllowBlockListDelegation</Label>
                         <PropertyName>SecurityTeamAllowBlockListDelegation</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>EnableExternalAccessRestrictionsForChatPartipants</Label>
+                        <PropertyName>EnableExternalAccessRestrictionsForChatPartipants</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableMutualFederationForChatPartipants</Label>
+                        <PropertyName>EnableMutualFederationForChatPartipants</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -5782,9 +5880,9 @@
                </ListControl>
               </View>
 <View>
-                  <Name>TeamsConfigurationView</Name>
+                  <Name>TeamsCallHoldValidationConfigurationView</Name>
                <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsConfiguration</TypeName>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsCallHoldValidationConfiguration</TypeName>
                </ViewSelectedBy>
                <ListControl>
                 <ListEntries>
@@ -5796,43 +5894,12 @@
                         <PropertyName>Identity</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>EnabledForVoice</Label>
-                        <PropertyName>EnabledForVoice</PropertyName>
+                        <Label>AudioFileValidationEnabled</Label>
+                        <PropertyName>AudioFileValidationEnabled</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>EnabledForMessaging</Label>
-                        <PropertyName>EnabledForMessaging</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsUpgradeConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsUpgradeConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>DownloadTeams</Label>
-                        <PropertyName>DownloadTeams</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>SfBMeetingJoinUx</Label>
-                        <PropertyName>SfBMeetingJoinUx</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>BlockLegacyAuthorization</Label>
-                        <PropertyName>BlockLegacyAuthorization</PropertyName>
+                        <Label>AudioFileValidationUri</Label>
+                        <PropertyName>AudioFileValidationUri</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -5927,6 +5994,223 @@
                </ListControl>
               </View>
 <View>
+                  <Name>TeamsConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnabledForVoice</Label>
+                        <PropertyName>EnabledForVoice</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnabledForMessaging</Label>
+                        <PropertyName>EnabledForMessaging</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>CustomBannerTextView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.CustomBannerText</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Text</Label>
+                        <PropertyName>Text</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Description</Label>
+                        <PropertyName>Description</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsEducationConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsEducationConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ParentGuardianPreferredContactMethod</Label>
+                        <PropertyName>ParentGuardianPreferredContactMethod</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EduGenerativeAIEnhancements</Label>
+                        <PropertyName>EduGenerativeAIEnhancements</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>UpdateParentInformation</Label>
+                        <PropertyName>UpdateParentInformation</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsEffectiveMeetingSurveyConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsEffectiveMeetingSurveyConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Survey</Label>
+                        <PropertyName>Survey</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DefaultOrganizerMode</Label>
+                        <PropertyName>DefaultOrganizerMode</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsExternalAccessConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsExternalAccessConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BlockedUsers</Label>
+                        <PropertyName>BlockedUsers</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BlockExternalUserAccess</Label>
+                        <PropertyName>BlockExternalUserAccess</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsGuestCallingConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsGuestCallingConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowPrivateCalling</Label>
+                        <PropertyName>AllowPrivateCalling</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsGuestMeetingConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsGuestMeetingConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowIPVideo</Label>
+                        <PropertyName>AllowIPVideo</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ScreenSharingMode</Label>
+                        <PropertyName>ScreenSharingMode</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowMultipleScreenshare</Label>
+                        <PropertyName>AllowMultipleScreenshare</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowMeetNow</Label>
+                        <PropertyName>AllowMeetNow</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LiveCaptionsEnabledType</Label>
+                        <PropertyName>LiveCaptionsEnabledType</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowTranscription</Label>
+                        <PropertyName>AllowTranscription</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowParticipantGiveRequestControl</Label>
+                        <PropertyName>AllowParticipantGiveRequestControl</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowExternalParticipantGiveRequestControl</Label>
+                        <PropertyName>AllowExternalParticipantGiveRequestControl</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
                   <Name>TeamsGuestMessagingConfigurationView</Name>
                <ViewSelectedBy>
                   <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsGuestMessagingConfiguration</TypeName>
@@ -5986,80 +6270,6 @@
                </ListControl>
               </View>
 <View>
-                  <Name>TeamsGuestMeetingConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsGuestMeetingConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowIPVideo</Label>
-                        <PropertyName>AllowIPVideo</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>ScreenSharingMode</Label>
-                        <PropertyName>ScreenSharingMode</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowMultipleScreenshare</Label>
-                        <PropertyName>AllowMultipleScreenshare</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowMeetNow</Label>
-                        <PropertyName>AllowMeetNow</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>LiveCaptionsEnabledType</Label>
-                        <PropertyName>LiveCaptionsEnabledType</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowTranscription</Label>
-                        <PropertyName>AllowTranscription</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowParticipantGiveRequestControl</Label>
-                        <PropertyName>AllowParticipantGiveRequestControl</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowExternalParticipantGiveRequestControl</Label>
-                        <PropertyName>AllowExternalParticipantGiveRequestControl</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsGuestCallingConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsGuestCallingConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AllowPrivateCalling</Label>
-                        <PropertyName>AllowPrivateCalling</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
                   <Name>TeamsMeetingBroadcastConfigurationView</Name>
                <ViewSelectedBy>
                   <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsMeetingBroadcastConfiguration</TypeName>
@@ -6080,91 +6290,6 @@
                     <ListItem>
                         <Label>AllowSdnProviderForBroadcastMeeting</Label>
                         <PropertyName>AllowSdnProviderForBroadcastMeeting</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsEffectiveMeetingSurveyConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsEffectiveMeetingSurveyConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Survey</Label>
-                        <PropertyName>Survey</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>DefaultOrganizerMode</Label>
-                        <PropertyName>DefaultOrganizerMode</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsCallHoldValidationConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsCallHoldValidationConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AudioFileValidationEnabled</Label>
-                        <PropertyName>AudioFileValidationEnabled</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>AudioFileValidationUri</Label>
-                        <PropertyName>AudioFileValidationUri</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsEducationConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsEducationConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>ParentGuardianPreferredContactMethod</Label>
-                        <PropertyName>ParentGuardianPreferredContactMethod</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>EduGenerativeAIEnhancements</Label>
-                        <PropertyName>EduGenerativeAIEnhancements</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>UpdateParentInformation</Label>
-                        <PropertyName>UpdateParentInformation</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -6322,6 +6447,10 @@
                         <PropertyName>Storyline</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>Communities</Label>
+                        <PropertyName>Communities</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>MessagingNotes</Label>
                         <PropertyName>MessagingNotes</PropertyName>
                     </ListItem>
@@ -6340,64 +6469,6 @@
                     <ListItem>
                         <Label>ReportIncorrectSecurityDetections</Label>
                         <PropertyName>ReportIncorrectSecurityDetections</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>CustomBannerTextView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.CustomBannerText</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Id</Label>
-                        <PropertyName>Id</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Text</Label>
-                        <PropertyName>Text</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>Description</Label>
-                        <PropertyName>Description</PropertyName>
-                    </ListItem>
-                      </ListItems>
-                    </ListEntry>
-                </ListEntries>
-               </ListControl>
-              </View>
-<View>
-                  <Name>TeamsExternalAccessConfigurationView</Name>
-               <ViewSelectedBy>
-                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsExternalAccessConfiguration</TypeName>
-               </ViewSelectedBy>
-               <ListControl>
-                <ListEntries>
-                    <ListEntry>
-                      <ListItems>
-                        
-                    <ListItem>
-                        <Label>Identity</Label>
-                        <PropertyName>Identity</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>BlockedUsers</Label>
-                        <PropertyName>BlockedUsers</PropertyName>
-                    </ListItem>
-                    <ListItem>
-                        <Label>BlockExternalUserAccess</Label>
-                        <PropertyName>BlockExternalUserAccess</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -6643,6 +6714,37 @@
                     <ListItem>
                         <Label>SendMessageThresholdForTrialTenants</Label>
                         <PropertyName>SendMessageThresholdForTrialTenants</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsUpgradeConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsUpgradeConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DownloadTeams</Label>
+                        <PropertyName>DownloadTeams</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>SfBMeetingJoinUx</Label>
+                        <PropertyName>SfBMeetingJoinUx</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BlockLegacyAuthorization</Label>
+                        <PropertyName>BlockLegacyAuthorization</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

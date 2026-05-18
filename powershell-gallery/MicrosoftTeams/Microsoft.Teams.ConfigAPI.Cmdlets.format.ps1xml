@@ -2005,6 +2005,9 @@
             <Label>AuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AutoRecordingTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>DialByNameResourceId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2049,6 +2052,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>AuthorizedUser</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>DialByNameResourceId</PropertyName>
@@ -5112,6 +5118,9 @@
             <Label>AuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AutoRecordingTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>HideAuthorizedUser</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5144,6 +5153,9 @@
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>AuthorizedUser</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AutoRecordingTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>HideAuthorizedUser</PropertyName>
@@ -14286,6 +14298,96 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateAcquiredCapabilitiesRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateAcquiredCapabilitiesRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>AcquiredCapabilitiesToAdd</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AcquiredCapabilitiesToRemove</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PhoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AcquiredCapabilitiesToAdd</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AcquiredCapabilitiesToRemove</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PhoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateLocationIdRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateLocationIdRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>LocationId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PhoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>LocationId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PhoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateNetworkSiteIdRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateNetworkSiteIdRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>NetworkSiteId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PhoneNumber</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>NetworkSiteId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PhoneNumber</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateOrderResponse</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateOrderResponse</TypeName>
@@ -14307,6 +14409,40 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>OrderType</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateReverseNumberLookupRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SkypeTelephoneNumberMgmtTenantTnUpdateReverseNumberLookupRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>PhoneNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ReverseNumberLookupToAdd</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ReverseNumberLookupToRemove</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>PhoneNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ReverseNumberLookupToAdd</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ReverseNumberLookupToRemove</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>

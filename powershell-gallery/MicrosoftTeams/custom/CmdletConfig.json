@@ -691,6 +691,38 @@
         "SelfHost"
       ]
     },
+    "New-CsPhoneNumberBulkUpdateLocationIdOrder": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "New-CsPhoneNumberBulkUpdateReverseNumberLookupOrder": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
     "Set-CsPhoneNumberAssignmentBlock": {
       "CmdletType": "AutoRest",
       "ExportsTo": [

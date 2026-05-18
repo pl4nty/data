@@ -12,7 +12,7 @@ RootModule = './Microsoft.Teams.PowerShell.TeamsCmdlets.psm1'
 
 # Version number of this module.
 # There's a string replace for the actual module version in the build pipeline
-ModuleVersion = '1.6.2'
+ModuleVersion = '1.6.6'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -86,12 +86,14 @@ CmdletsToExport = @(
     ,'Get-TeamUser'
     ,'Get-M365TeamsApp'
     ,'Get-AllM365TeamsApps'
+    ,'Get-AIGeneratedKnowledgeContainer'
     ,'Get-M365UnifiedTenantSettings'
     ,'Get-M365UnifiedCustomPendingApps'
     ,'Get-TenantPrivateChannelMigrationStatus'
     ,'New-Team'
     ,'New-TeamChannel'
     ,'New-TeamsApp'
+    ,'Remove-AIGeneratedKnowledge'
     ,'Remove-SharedWithTeam'
     ,'Remove-Team'
     ,'Remove-TeamChannel'
