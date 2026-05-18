@@ -1085,6 +1085,7 @@
         "EnableDriverHotQueryTest": true,
         "EnableFIREAlerting": true,
         "EnableNewDeviceReadiness": true,
+        "EnableOnByDefaultReportingBanner": true,
         "EnableOnboardedTestTenants": true,
         "EnableReportingOnboard": true,
         "EnableSecureBootPhase2": true,

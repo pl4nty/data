@@ -330,6 +330,7 @@
             "DisableMTGlobalAppSearch": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "SCGWUseEGATsForAppsTargeting": true,
+            "SLDMEnableEGATsCache": true,
             "UseEGATsForDPAs": true,
             "enableCredentialProviderProperty": true
         }
