@@ -3501,7 +3501,7 @@
     "ChillPowerApps": {
         "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
             "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
-            "EndTimeUtc": "2026-06-05T22:00:00Z",
+            "EndTimeUtc": "2026-07-17T22:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -4021,6 +4021,95 @@
         }
     },
     "ChillSharePoint": {
+        "Floodgate_Campaign_SharePoint.0ce88e0c-6586-48c0-85a9-b0a661b52f8f": {
+            "CampaignId": "0ce88e0c-6586-48c0-85a9-b0a661b52f8f",
+            "EndTimeUtc": "2026-12-30T16:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 3888000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 50,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-31T16:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "PageModernizationSwitchToClassic",
+                            "Count": 3,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "Help us improve the modern view for classic pages by answering a few quick questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on the modern view for classic pages"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Page rendering is too slow",
+                                        "Web Parts do not render correctly",
+                                        "The page layout looks broken",
+                                        "Page content is missing or corrupted",
+                                        "The page looks visually unappealing",
+                                        "I prefer the classic experience",
+                                        "Other"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "Why are you switching back to the classic page view?",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. What did not work as expected in the modern view for this classic page.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/0ce88e0c-6586-48c0-85a9-b0a661b52f8f/bcab5836-57ab-411b-b15d-cb5ecb5e183b/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_SharePoint.79808b4a-7a47-47f5-be77-2c8d304f28c6": {
             "CampaignId": "79808b4a-7a47-47f5-be77-2c8d304f28c6",
             "EndTimeUtc": "2026-06-03T16:00:00Z",

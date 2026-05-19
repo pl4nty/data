@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20260516.1.0",
-        "CalendarCompanionMsitVersion": "1.20260509.7.0",
+        "CalendarCompanionMsitVersion": "1.20260513.9.0",
         "CalendarCompanionProdVersion": "1.20260501.11.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -2176,6 +2176,7 @@
                 "https://outlook-1-cdn.azureedge.microsoft.scloud"
             ]
         },
+        "disableMultipleCompletions": 1,
         "enableBackgroundAuthOnHost_shared": 1,
         "enableHostRingBuckets": 1,
         "enableNPSCampaign_shared": 1,
