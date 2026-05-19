@@ -1067,6 +1067,7 @@
         "AccessControlAuth": true,
         "AlternativeSubscriptionSync": false,
         "AppOnlyAuth": true,
+        "BypassOfficeAppCheckForCoManagedDevice": true,
         "CVEReporting": true,
         "CdtTokenRolloutInDevice": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,

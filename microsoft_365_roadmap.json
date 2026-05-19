@@ -1,5 +1,219 @@
 [
     {
+        "created": "2026-05-18T22:30:51",
+        "description": "Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.",
+        "id": 562345,
+        "locale": null,
+        "modified": "2026-05-18T22:30:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - Archive OneDrive and SharePoint files under retention"
+    },
+    {
+        "created": "2026-05-18T22:30:51",
+        "description": "Insights on sensitive M365 data (OneDrive and SharePoint) and recommendations on retention policies for customers to better govern their sensitive data.",
+        "id": 562343,
+        "locale": null,
+        "modified": "2026-05-18T22:30:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - Insights and policy recommendations on sensitive M365 data for better Data Security and Compliance posture"
+    },
+    {
+        "created": "2026-05-18T22:30:51",
+        "description": "Microsoft Teams Rooms on Windows now supports human interpreter listening mode in meetings where organizers enable language interpretation in Meeting options, allowing room participants to select a language and hear interpreter audio.",
+        "id": 562050,
+        "locale": null,
+        "modified": "2026-05-18T22:30:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Support human interpreter listening mode in Microsoft Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-05-18T22:30:51",
+        "description": " Allows developers to invoke the Researcher agent through the Work IQ endpoint to perform multi\u2011step analysis, deep reasoning, and synthesis across enterprise content as part of agentic workflows.",
+        "id": 559018,
+        "locale": null,
+        "modified": "2026-05-18T22:30:51",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Work IQ APIs: Researcher Agent Access"
+    },
+    {
         "created": "2026-05-15T22:00:42",
         "description": "Easily find keyboard shortcuts with a new searchable experience in Microsoft Teams. Search by shortcut name or enter part of a key combination directly in the dialog.",
         "id": 562413,
@@ -254,7 +468,7 @@
         "description": "Empower Chiefs of Staff and delegated roles to efficiently organize events on behalf of leaders or teams using shared or delegated mailboxes. By sending trusted invites from the chosen mailbox, this capability ensures consistent identity, improved trust, and smoother event setup.",
         "id": 561912,
         "locale": null,
-        "modified": "2026-05-15T22:00:42",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -275,6 +489,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -299,6 +516,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -956,7 +1176,7 @@
         "description": "Organizers for Teams events instances will now be able to reuse their event configurations in the Events app in Teams. Organizers can save these configurations as a template in the Events app to use again for future Teams events.",
         "id": 561915,
         "locale": null,
-        "modified": "2026-05-13T23:00:44",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -974,6 +1194,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -995,6 +1218,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -4878,9 +5104,9 @@
         "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
         "id": 560700,
         "locale": null,
-        "modified": "2026-05-01T21:45:13",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11829,12 +12055,12 @@
         "description": "Data Security Investigations (DSI) is introducing a new examination focus area concentrated on identifying personal data. The personal data examination will identify and extract various types of personal data from the selected items including but not limited to, names, addresses, bank account numbers, and more. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.",
         "id": 559388,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12652,12 +12878,12 @@
         "description": "Emails with reactions disallowed will now see the Reactions button grayed out correctly. Additionally, when any attempt to react fails, the local update will no longer remain onscreen and be properly undone.",
         "id": 558442,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": "https://learn.microsoft.com/en-us/microsoft-365-apps/outlook/manage/manage-outlook-reactions?view=o365-worldwide",
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14343,12 +14569,12 @@
         "description": "Intelligent meeting recap will now include video-based recaps. Video recap creates narrated video highlights from recorded meetings, featuring key takeaways and short clips that showcase important moments.",
         "id": 558540,
         "locale": null,
-        "modified": "2026-04-07T23:15:03",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14874,7 +15100,7 @@
         "description": "You can choose to select Anthropic models, in addition to OpenAI models, when editing a Word document using Copilot.",
         "id": 558440,
         "locale": null,
-        "modified": "2026-04-28T22:45:03",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
@@ -14883,6 +15109,12 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
             },
             {
                 "tagName": "Web"
@@ -14904,6 +15136,12 @@
                 }
             ],
             "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
                 {
                     "tagName": "Web"
                 }
@@ -19415,12 +19653,12 @@
         "description": "Teams Rooms on Windows proactively monitors room audio, video, and display signals to detect issues in meeting spaces. Teams Rooms Pro Management automatically remediates common issues that can be resolved through software, configuration changes, or device resets during nightly maintenance. This ensures users have reliable, ready-to-use meeting rooms, while IT admins benefit from reduced manual troubleshooting and increased uptime. Available for Teams Rooms Pro-licensed rooms.",
         "id": 557167,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19641,12 +19879,12 @@
         "description": "Resize the top video gallery in Teams meetings to see more people when content is being shared.\n",
         "id": 554925,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26243,12 +26481,12 @@
         "description": "As with Teams Rooms on Windows, IT Admins can now set up Teams Rooms on Android to show dynamic signage content on the front-of-room display when the device is not in use for meetings or presentation. Configuration is available for tenant-wide and room-specific settings via the Teams Rooms Pro Management portal. The feature supports select third-party digital signage partners like Appspace and XOGO, and is included with Teams Rooms Pro.",
         "id": 548647,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26408,9 +26646,9 @@
         "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
         "id": 548648,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27739,9 +27977,9 @@
         "description": "Structured Document Generation with Forms enables organizations to create, manage, and generate standardized documents at scale with built-in governance and compliance in SharePoint. Business process owners can centrally build and maintain form-driven templates -- such as contracts, agreements, proposals, and HR documents -- ensuring content stays accurate and up to date. Users can then generate the right document every time by just filling out the form, without manual formatting, versioning issues, or compliance risk, simplifying high-volume, structured document workflows across the organization.",
         "id": 545896,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27806,12 +28044,12 @@
         "description": "This release brings the next evolution in immersive collaboration in Teams. Designed for creators and event organizers, these new capabilities empower users to create, manage, and use immersive templates for immersive events in Teams and save those templates to collections to use in future events\u2014directly within the Teams Meet app. Users can save customized immersive events as reusable templates to an immersive collection, and share them with others by adding co-owners and members to collections.",
         "id": 542794,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28172,12 +28410,12 @@
         "description": "Use the Drafts quick view to easily find, edit, and send draft messages.",
         "id": 542789,
         "locale": null,
-        "modified": "2026-03-05T00:15:18",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28233,12 +28471,12 @@
         "description": "Enhancing the Engage Events experience with additional capabilities such as Broadcast for large scale produced events, Meetings based Events. Organizers will have additional support for moderating the posted questions and conversations, and attendees can post questions anonymously. An Events Landing page allows for attendees and organizers to have one place for the contiguous events experience of \"Before\", \"During\" and \"After\"\n",
         "id": 537280,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43747,12 +43985,12 @@
         "description": "The Microsoft 365 Copilot app now has a simpler, cleaner navigation. Key updates include an expanded chat history, quick actions to create new Notebooks and Agents, and intuitive feature grouping so users can find what they need faster and unlock more AI value. ",
         "id": 518222,
         "locale": null,
-        "modified": "2025-12-18T00:15:48",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46490,85 +46728,6 @@
         "title": "Microsoft Viva: Engage Community feed improvements"
     },
     {
-        "created": "2025-10-14T23:15:41",
-        "description": "We are not releasing this feature at this time. We apologize for any inconvenience this may cause. Start a chat with anyone who has an email address, even if they're not on Teams! They'll receive an email inviting them to join your chat session as a guest. You'll be able to chat, share files, and start calls all within Teams!",
-        "id": 513271,
-        "locale": null,
-        "modified": "2026-05-08T22:15:03",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Chat with anyone who has an email address"
-    },
-    {
         "created": "2025-10-13T23:00:30",
         "description": "Customers can connect M365 Copilot with Amazon S3 to access structured document repositories with Copilot Connector.",
         "id": 513285,
@@ -48315,12 +48474,12 @@
         "description": "When critical issues impact room functionality, users see a banner notification on both the front-of-room display and console in Teams Rooms on Windows.  Room health signals help get issues resolved quickly and ensure productive meetings. Available with Teams Rooms Pro.",
         "id": 508521,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51567,9 +51726,9 @@
         "description": "You can now use Shift+Click or CTRL+Click to select non-consecutive dates in the calendar mini-month. This will allow you to easily view and take action on the dates you care about. #newoutlookforwindows",
         "id": 502562,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -56114,12 +56273,12 @@
         "description": "With the new org chart users will not only be able to contextaulize a person, they will also be able to scroll through visited profiles, see a manager's reports counts, and more.",
         "id": 500696,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -82088,12 +82247,12 @@
         "description": "Microsoft Edge will launch the new version of the built-in PDF reader that's powered by Adobe\u2019s PDF rendering engine. The new PDF reader ensures that there's no loss of functionality and delivers an enhanced PDF experience. This experience includes richer rendering, improved performance, strong security for PDF handling, and greater accessibility.",
         "id": 489231,
         "locale": null,
-        "modified": "2025-11-07T00:30:39",
+        "modified": "2026-05-18T22:30:51",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106325,55 +106484,6 @@
             ]
         },
         "title": "Microsoft 365 app: Microsoft Loop - User accessible recycle bin for Loop workspaces"
-    },
-    {
-        "created": "2024-10-16T23:15:13",
-        "description": "View and monitor Loop usage in the tenant through existing M365 admin usage dashboards. Updated May 11, 2026: We have decided not to move forward with this change at this time. We apologize for the inconvenience.",
-        "id": 421611,
-        "locale": null,
-        "modified": "2026-05-11T23:15:11",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Microsoft Loop - Admin usage reports for Loop"
     },
     {
         "created": "2024-07-31T23:45:06",

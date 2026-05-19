@@ -71,6 +71,10 @@
             "FlightExpiry": "2025-10-18T00:00:00.000Z",
             "FlightValue": true
         },
+        "EnableUserSessionFix": {
+            "FlightExpiry": "2026-01-02T00:00:00.0402432Z",
+            "FlightValue": false
+        },
         "FileStreamForDetectionScripts": {
             "FlightExpiry": "2025-05-01T00:00:01.000Z",
             "FlightValue": true
@@ -329,6 +333,7 @@
             "AESCustomCC": true,
             "DisableMTGlobalAppSearch": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
+            "SCGWUseBranchDescriptorCache": true,
             "SCGWUseEGATsForAppsTargeting": true,
             "SLDMEnableEGATsCache": true,
             "UseEGATsForDPAs": true,
@@ -429,25 +434,25 @@
             "QBSFSICoreMigrationSwitchOverBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch3": true,
             "QBSFSICoreOrganizationMigrationSwitchOver": true,
-            "UseLKG_ActiveMalwareAggregateByCategory": true,
-            "UseLKG_ActiveMalwareAggregateBySeverity": true,
+            "UseLKG_ActiveMalwareAggregateByCategory": false,
+            "UseLKG_ActiveMalwareAggregateBySeverity": false,
             "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
             "UseLKG_AgentStatusSummary": true,
             "UseLKG_AutopilotV2DepStatus": false,
             "UseLKG_CatalogAppsUpdateList": false,
             "UseLKG_DCv2SettingsInInventoryPolicyForDeviceV3": false,
-            "UseLKG_DependentAppsInstallStatus": true,
+            "UseLKG_DependentAppsInstallStatus": false,
             "UseLKG_DetectedMalware": true,
             "UseLKG_DetectedMalwareAggregate": true,
-            "UseLKG_DetectedMalwareAggregateByState": true,
+            "UseLKG_DetectedMalwareAggregateByState": false,
             "UseLKG_DeviceEncryptionStatusesDetailV3": false,
             "UseLKG_DeviceRunStatesByScript": true,
-            "UseLKG_EnrollmentActivityUser": true,
+            "UseLKG_EnrollmentActivityUser": false,
             "UseLKG_FailedAndPendingAppsByUserId": false,
             "UseLKG_InventoryPolicySettingDetailsDCv2v3": false,
             "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": false,
             "UseLKG_PolicySettingDetailsDCv2ver3": false,
-            "UseLKG_RemediationRunSummary": true,
+            "UseLKG_RemediationRunSummary": false,
             "UseLKG_ScriptRunSummary": true
         }
     },
