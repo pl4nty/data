@@ -570,15 +570,19 @@ if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") or (mp.get_mpattribute)("MpIsAi
 
   -- DECOMPILER ERROR at PC602: Overwrote pending register: R18 in 'AssignReg'
 
+  -- DECOMPILER ERROR at PC620: Overwrote pending register: R18 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC622: Overwrote pending register: R18 in 'AssignReg'
+
   if (MpCommon.IsSampled)(1000, true, true, l_0_18) == false then
     do
-      set_research_data("AIPromptInject", safeJsonSerialize({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))}), false)
-      -- DECOMPILER ERROR at PC624: Confused about usage of register: R13 in 'UnsetPending'
+      set_research_data("AIPromptInject", (MpCommon.Base64Encode)(l_0_18), l_0_18)
+      -- DECOMPILER ERROR at PC626: Confused about usage of register: R13 in 'UnsetPending'
 
       ;
-      (mp.SetDetectionString)(safeJsonSerialize({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))}))
+      (mp.SetDetectionString)({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))})
       do return mp.INFECTED end
-      -- DECOMPILER ERROR at PC629: Confused about usage of register R17 for local variables in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC631: Confused about usage of register R17 for local variables in 'ReleaseLocals'
 
       -- WARNING: undefined locals caused missing assignments!
     end
