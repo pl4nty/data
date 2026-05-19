@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33377093,
+    "size": 33378327,
     "file_count": 4041
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17309581,
+    "size": 17309638,
     "file_count": 2029
   },
   {
@@ -316,8 +316,8 @@
   },
   {
     "name": "icu",
-    "size": 162933108,
-    "file_count": 7201
+    "size": 162935609,
+    "file_count": 7202
   },
   {
     "name": "inference_engine",
@@ -481,7 +481,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 401183927,
+    "size": 401182903,
     "file_count": 358
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4362118,
+    "size": 4388553,
     "file_count": 615
   },
   {
@@ -701,12 +701,12 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550504,
+    "size": 550734,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 200588,
+    "size": 200637,
     "file_count": 11
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7531041,
+    "size": 7531996,
     "file_count": 196
   },
   {
