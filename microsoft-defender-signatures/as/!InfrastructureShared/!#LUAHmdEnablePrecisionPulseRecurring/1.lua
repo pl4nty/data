@@ -32,7 +32,7 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
   l_0_11.SIG_CONTEXT = "LUA_GENERIC"
   l_0_11.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
   l_0_11.TAG = "NOLOOKUP"
-  local l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 2000)
+  local l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)
   if l_0_12 and l_0_12.error == 3 then
     l_0_11.CRReportError = "Failed the first attempt"
     l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)

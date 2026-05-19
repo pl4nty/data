@@ -32,21 +32,14 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
       if l_0_0 == 10 then
         local l_0_8 = (sysio.GetFileSize)(l_0_1)
         local l_0_9 = (sysio.GetFileLastWriteTime)(l_0_1)
-        local l_0_10 = {}
-        l_0_10.FileSize = l_0_8
-        l_0_10.FileLastWriteTime = l_0_9
-        local l_0_11, l_0_12, l_0_13, l_0_14, l_0_15, l_0_16 = pcall(CollectFile, l_0_1, l_0_8, true)
-        if l_0_11 then
-          if l_0_12 then
-            l_0_10.Sha1 = l_0_13
-            l_0_10.Sha256 = l_0_14
-            l_0_10.PartialSha1 = l_0_15
-            l_0_10.PartialSha256 = l_0_16
-          else
-            l_0_10.Error_Facility = l_0_13
-            l_0_10.Error_Code = l_0_14
+        local l_0_10, l_0_11, l_0_12 = pcall(CollectFile, l_0_1, l_0_8, true)
+        if l_0_10 and l_0_12 then
+          l_0_12.FileSize = l_0_8
+          l_0_12.FileLastWriteTime = l_0_9
+          if not l_0_11 then
+            l_0_11 = "NULL"
           end
-          pcall(ReportResource, l_0_1, l_0_12, l_0_10, "BM")
+          pcall(ReportResource, l_0_1, l_0_11, l_0_12, "BM")
         end
       end
       do
@@ -54,64 +47,64 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
           pcall(ReportSupportLog)
         end
         l_0_3 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1)
-        local l_0_17, l_0_18 = nil, nil
+        local l_0_13, l_0_14 = nil, nil
         if l_0_3 and l_0_4 then
-          l_0_17 = safeJsonSerialize(l_0_4, 150, nil, true)
+          l_0_13 = safeJsonSerialize(l_0_4, 150, nil, true)
         end
-        local l_0_19 = "scan_counter"
-        local l_0_20 = "max_scan"
-        local l_0_21 = (MpCommon.AtomicCounterValueNamespaced)(l_0_19, l_0_2)
-        local l_0_22 = (MpCommon.AtomicCounterValueNamespaced)(l_0_20, l_0_2)
-        local l_0_23 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.update"
-        local l_0_24 = {}
-        l_0_24[1] = l_0_23
-        local l_0_25 = {}
-        l_0_25.SIG_CONTEXT = "BM_Custom_Update"
-        l_0_25.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-        l_0_25.TAG = "NOLOOKUP"
-        l_0_25.FilePath = l_0_1
-        l_0_25.PrvScanInfo = l_0_17 or l_0_18
-        l_0_25.SigCounter = l_0_0
-        l_0_25.FileScanCounter = l_0_21
-        l_0_25.MaxFileScanCounter = l_0_22
-        local l_0_27 = false
-        for l_0_31 = 0, 1 do
-          local l_0_28 = nil
-          -- DECOMPILER ERROR at PC167: Confused about usage of register: R19 in 'UnsetPending'
+        local l_0_15 = "scan_counter"
+        local l_0_16 = "max_scan"
+        local l_0_17 = (MpCommon.AtomicCounterValueNamespaced)(l_0_15, l_0_2)
+        local l_0_18 = (MpCommon.AtomicCounterValueNamespaced)(l_0_16, l_0_2)
+        local l_0_19 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.update"
+        local l_0_20 = {}
+        l_0_20[1] = l_0_19
+        local l_0_21 = {}
+        l_0_21.SIG_CONTEXT = "BM_Custom_Update"
+        l_0_21.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
+        l_0_21.TAG = "NOLOOKUP"
+        l_0_21.FilePath = l_0_1
+        l_0_21.PrvScanInfo = l_0_13 or l_0_14
+        l_0_21.SigCounter = l_0_0
+        l_0_21.FileScanCounter = l_0_17
+        l_0_21.MaxFileScanCounter = l_0_18
+        local l_0_23 = false
+        for l_0_27 = 0, 1 do
+          local l_0_24 = nil
+          -- DECOMPILER ERROR at PC162: Confused about usage of register: R19 in 'UnsetPending'
 
-          l_0_28 = SafeGetUrlReputation(l_0_24, l_0_25, false, 2000 + "BM" * 1000)
-          if l_0_28 and l_0_28.urls and (l_0_28.urls)[l_0_23] and ((l_0_28.urls)[l_0_23]).determination == 4 then
+          l_0_24 = SafeGetUrlReputation(l_0_20, l_0_21, false, 2000 + R19_PC162 * 1000)
+          if l_0_24 and l_0_24.urls and (l_0_24.urls)[l_0_19] and ((l_0_24.urls)[l_0_19]).determination == 4 then
             do
               do
-                l_0_27 = true
+                l_0_23 = true
                 do break end
-                -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC187: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC187: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC192: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC187: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
           end
         end
         do
-          if not l_0_27 then
-            local l_0_33 = nil
+          if not l_0_23 then
+            local l_0_29 = nil
             pcall(AppendToRollingQueueNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1, "[SigCounter:" .. l_0_0 .. "]CloudLookupFailed", 3000, 500, 1)
           end
-          if l_0_27 then
-            if l_0_21 and l_0_22 and l_0_22 <= l_0_21 then
-              (MpCommon.AtomicCounterAddNamespaced)(l_0_20, l_0_2, 1)
-              local l_0_34 = nil
-              pcall(AppendToRollingQueueNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1, "[SigCounter:" .. l_0_0 .. "]HmdMaxScanCounter hit " .. l_0_21 .. "|" .. l_0_22, 3000, 500, 1)
+          if l_0_23 then
+            if l_0_17 and l_0_18 and l_0_18 <= l_0_17 then
+              (MpCommon.AtomicCounterAddNamespaced)(l_0_16, l_0_2, 1)
+              local l_0_30 = nil
+              pcall(AppendToRollingQueueNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1, "[SigCounter:" .. l_0_0 .. "]HmdMaxScanCounter hit " .. l_0_17 .. "|" .. l_0_18, 3000, 500, 1)
             end
             do
               ;
               (mp.TriggerScanResource)("file", l_0_1, 0, 10000)
               do
                 do
-                  local l_0_35 = nil
+                  local l_0_31 = nil
                   pcall(AppendToRollingQueueNamespaced, "hmdprecisionpulseDebug", l_0_2, l_0_1, "[SigCounter:" .. l_0_0 .. "]Issued a rescan!", 3000, 500, 1)
                   l_0_0 = l_0_0 - 1
                   if l_0_0 <= 0 then
@@ -119,7 +112,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 and (this_sigatt
                   end
                   ;
                   (bm.trigger_sig_delayed)("Report_hmdprecisionpulsefullfilepathscan_statuscheck_" .. l_0_0, l_0_1, 300000)
-                  -- DECOMPILER ERROR at PC275: freeLocal<0 in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC270: freeLocal<0 in 'ReleaseLocals'
 
                   return mp.CLEAN
                 end
