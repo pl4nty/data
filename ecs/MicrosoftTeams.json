@@ -1097,7 +1097,6 @@
             "EnableAgendaAdaptiveCardOnBotDialog": true,
             "EnableAuditEventForProactiveMessages": true,
             "EnableAuthzCheckForConversationData": true,
-            "EnableBatchConversationArtifactsIngestion": true,
             "EnableBatchTranscriptRequests": true,
             "EnableBotRosterCheckForLiftPropertiesCache": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
