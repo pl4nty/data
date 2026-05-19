@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2c1b3737bf213\1.luac 
+-- Command line: lua\!InfrastructureShared\347b30a3db2f8\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
 
 do
-  if (this_sigattrlog[16]).matched and (this_sigattrlog[16]).utf8p2 ~= nil then
+  if (this_sigattrlog[19]).matched and (this_sigattrlog[19]).utf8p2 ~= nil then
     local l_0_0, l_0_1, l_0_8 = nil
   end
   -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
@@ -26,12 +26,21 @@ do
   end
   do
     local l_0_9, l_0_10 = (bm.get_process_relationships)()
-    for l_0_14,l_0_15 in ipairs(l_0_10) do
-      if l_0_15.image_path and (string.find)((string.lower)(l_0_15.image_path), "\\bun.exe", -8, true) then
-        TrackPidAndTechniqueBM(l_0_15.ppid, "T1195.001", "SuspBunProcess", 1800)
+    if l_0_9 ~= nil then
+      for l_0_14,l_0_15 in ipairs(l_0_9) do
+        if l_0_15.image_path and (string.find)((string.lower)(l_0_15.image_path), "\\bun.exe", -8, true) then
+          return mp.CLEAN
+        end
       end
     end
-    return mp.INFECTED
+    do
+      for l_0_19,l_0_20 in ipairs(l_0_10) do
+        if l_0_20.image_path and (string.find)((string.lower)(l_0_20.image_path), "\\bun.exe", -8, true) then
+          TrackPidAndTechniqueBM(l_0_20.ppid, "T1195.001", "SuspBunProcess", 1800)
+        end
+      end
+      return mp.INFECTED
+    end
   end
 end
 

@@ -8,7 +8,7 @@ if l_0_0 == nil then
   return mp.CLEAN
 end
 local l_0_1 = GetRollingQueueKeyValue("memPagesMetadata", "PPID")
-if not l_0_1 or tonumber(l_0_1) ~= l_0_0 then
+if not l_0_1 or l_0_1 ~= l_0_0 then
   return mp.CLEAN
 end
 if getScannedRegions() == 0 then
