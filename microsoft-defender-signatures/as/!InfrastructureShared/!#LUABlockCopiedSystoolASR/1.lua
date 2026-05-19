@@ -207,159 +207,189 @@ if l_0_6 == "mpsigstub.exe" then
     return mp.CLEAN
   end
 end
-local l_0_7 = (versioning.GetOrgID)()
-if l_0_7 ~= nil and l_0_7 ~= "" then
-  l_0_7 = (string.lower)(l_0_7)
-end
 if l_0_6 == "klist.exe" and (string.find)(l_0_3, ":\\program files[^\\]*\\.+\\jre\\bin\\") ~= nil then
   return mp.CLEAN
 end
-local l_0_8 = false
-local l_0_9 = {}
--- DECOMPILER ERROR at PC749: No list found for R9 , SetList fails
+local l_0_7 = false
+local l_0_8 = {}
+-- DECOMPILER ERROR at PC737: No list found for R8 , SetList fails
 
-local l_0_10 = false
--- DECOMPILER ERROR at PC755: Overwrote pending register: R11 in 'AssignReg'
+-- DECOMPILER ERROR at PC738: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC757: Overwrote pending register: R12 in 'AssignReg'
+local l_0_9 = ((l_0_4 .. "\\system32\\").get_versioninfo)()
+-- DECOMPILER ERROR at PC743: Overwrote pending register: R10 in 'AssignReg'
 
-if l_0_7 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_7 == "0d8b3247-a1a9-44c3-a65b-a9dc4d1b70d5" or ((l_0_4 .. "\\syswow64\\").IsSampled)(l_0_4 .. "\\system32\\windowspowershell\\v1.0\\", false, false, false) == true then
-  l_0_10 = true
-end
-local l_0_11 = (pe.get_versioninfo)()
-if l_0_11 ~= nil and l_0_11.OriginalFilename ~= nil then
-  local l_0_12 = ((string.lower)(l_0_11.OriginalFilename))
-  local l_0_13 = nil
-  l_0_13 = (string.match)(l_0_12, "%.([^%.]+)$")
-  if l_0_13 == nil then
-    l_0_12 = l_0_12 .. ".exe"
-    l_0_13 = "exe"
+-- DECOMPILER ERROR at PC748: Overwrote pending register: R11 in 'AssignReg'
+
+if l_0_9 ~= nil and l_0_4 .. "\\syswow64\\" ~= nil then
+  local l_0_10 = ((string.lower)(l_0_4 .. "\\system32\\windowspowershell\\v1.0\\"))
+  local l_0_11 = nil
+  -- DECOMPILER ERROR at PC751: Overwrote pending register: R12 in 'AssignReg'
+
+  l_0_11 = ((l_0_4 .. "\\syswow64\\windowspowershell\\v1.0\\").match)(l_0_10, "%.([^%.]+)$")
+  if l_0_11 == nil then
+    l_0_10 = l_0_10 .. ".exe"
+    l_0_11 = "exe"
   end
-  if l_0_13 == "exe" then
+  if l_0_11 == "exe" then
     do
-      if (string.find)(l_0_12, "onedrivesetup.*%.exe") ~= nil then
-        local l_0_15 = (mp.IsTrustedFile)(false)
-        if l_0_15 == true then
+      if (string.find)(l_0_10, "onedrivesetup.*%.exe") ~= nil then
+        local l_0_13 = (mp.IsTrustedFile)(false)
+        if l_0_13 == true then
           return mp.CLEAN
         end
       end
-      if not l_0_10 then
-        local l_0_14 = sysio.IsFileExists
-        local l_0_16 = l_0_4 .. "\\system32\\" .. l_0_12
-        l_0_14 = l_0_14(l_0_16)
-        if l_0_14 then
-          l_0_8 = true
+      local l_0_12 = 1
+      for i = l_0_12, #l_0_8 do
+        if not l_0_7 and (sysio.IsFileExists)(l_0_8[l_0_16] .. l_0_10) then
+          l_0_7 = true
         end
-        if not l_0_8 then
-          l_0_14 = sysio
-          l_0_14 = l_0_14.IsFileExists
-          l_0_16 = l_0_4
-          l_0_16 = l_0_16 .. "\\syswow64\\" .. l_0_12
-          l_0_14 = l_0_14(l_0_16)
-          if l_0_14 then
-            l_0_8 = true
-          end
-        end
-      else
-        do
-          for l_0_20 = 1, #l_0_9 do
-            if not l_0_8 and (sysio.IsFileExists)(l_0_9[l_0_20] .. l_0_12) then
-              l_0_8 = true
+      end
+      -- DECOMPILER ERROR at PC797: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+
+      if not l_0_7 then
+        l_0_10 = string
+        l_0_10 = l_0_10.match
+        l_0_11 = l_0_6
+        l_0_10 = l_0_10(l_0_11, "(%.[^%.]+)$")
+        if l_0_10 == ".exe" then
+          l_0_10 = 1
+          l_0_11 = #l_0_8
+          for l_0_20 = l_0_10, l_0_11 do
+            local l_0_19, l_0_20 = nil
+            if not l_0_7 then
+              l_0_19 = sysio
+              l_0_19 = l_0_19.IsFileExists
+              l_0_20 = l_0_8[l_0_18]
+              l_0_20 = l_0_20 .. l_0_6
+              l_0_19 = l_0_19(l_0_20)
+              if l_0_19 then
+                l_0_7 = true
+              end
             end
           end
-          do
-            if not l_0_8 and (string.match)(l_0_6, "(%.[^%.]+)$") == ".exe" then
-              if not l_0_10 then
-                if (sysio.IsFileExists)(l_0_4 .. "\\system32\\" .. l_0_6) then
-                  l_0_8 = true
-                end
-                if not l_0_8 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_6) then
-                  l_0_8 = true
-                end
-              else
-                for l_0_24 = 1, #l_0_9 do
-                  if not l_0_8 and (sysio.IsFileExists)(l_0_9[l_0_24] .. l_0_6) then
-                    l_0_8 = true
+        end
+      end
+      do
+        if not l_0_7 then
+          local l_0_21 = nil
+          if (MpCommon.GetOriginalFileName)(l_0_2) ~= nil and (MpCommon.GetOriginalFileName)(l_0_2) ~= "" then
+            local l_0_22 = nil
+            -- DECOMPILER ERROR at PC834: Overwrote pending register: R12 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC838: Overwrote pending register: R11 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC841: Overwrote pending register: R12 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC842: Overwrote pending register: R13 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC845: Overwrote pending register: R12 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC846: Overwrote pending register: R12 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC847: Overwrote pending register: R13 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC852: Overwrote pending register: R12 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC853: Overwrote pending register: R13 in 'AssignReg'
+
+            if nil ~= nil or l_0_21 == "exe" then
+              for l_0_26 = l_0_21, l_0_22 do
+                local l_0_25, l_0_26 = nil
+                -- DECOMPILER ERROR at PC859: Overwrote pending register: R16 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC862: Overwrote pending register: R17 in 'AssignReg'
+
+                if not l_0_7 then
+                  l_0_25 = l_0_25(l_0_26)
+                  if l_0_25 then
+                    l_0_7 = true
                   end
                 end
               end
+              -- DECOMPILER ERROR at PC868: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+
             end
+          end
+        end
+        if l_0_7 then
+          local l_0_27 = l_0_22
+          -- DECOMPILER ERROR at PC881: Overwrote pending register: R12 in 'AssignReg'
+
+          if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) ~= nil and (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) ~= "" and (string.lower)(l_0_21) == "svchost.exe" then
+            local l_0_28 = nil
             do
-              if not l_0_8 then
-                local l_0_25 = (MpCommon.GetOriginalFileName)(l_0_2)
-                if l_0_25 ~= nil and l_0_25 ~= "" then
-                  local l_0_26 = nil
-                  l_0_26 = (string.match)(l_0_25, "%.([^%.]+)$")
-                  if l_0_26 == nil then
-                    l_0_25 = l_0_25 .. ".exe"
-                    l_0_26 = "exe"
-                  end
-                  l_0_26 = (string.lower)(l_0_26)
-                  if l_0_26 == "exe" then
-                    if not l_0_10 then
-                      if (sysio.IsFileExists)(l_0_4 .. "\\system32\\" .. l_0_25) then
-                        l_0_8 = true
-                      end
-                      if not l_0_8 and (sysio.IsFileExists)(l_0_4 .. "\\syswow64\\" .. l_0_25) then
-                        l_0_8 = true
-                      end
-                    else
-                      for l_0_30 = 1, #l_0_9 do
-                        if not l_0_8 and (sysio.IsFileExists)(l_0_9[l_0_30] .. l_0_25) then
-                          l_0_8 = true
-                        end
-                      end
+              do
+                if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) ~= nil then
+                  local l_0_29 = nil
+                  -- DECOMPILER ERROR at PC901: Overwrote pending register: R13 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC902: Overwrote pending register: R13 in 'AssignReg'
+
+                  if (mp.GetProcessCommandLine)(l_0_27) ~= nil and (mp.GetProcessCommandLine)(l_0_27) ~= "" then
+                    l_0_28 = (mp.GetProcessCommandLine)(l_0_27)
+                    l_0_27 = l_0_27(l_0_28)
+                    -- DECOMPILER ERROR at PC907: Overwrote pending register: R13 in 'AssignReg'
+
+                    l_0_28 = l_0_27
+                    l_0_29 = "-s%s+([^%s]+)"
+                    l_0_27 = l_0_27(l_0_28, l_0_29)
+                    if l_0_27 == "bits" then
+                      l_0_28 = mp
+                      l_0_28 = l_0_28.CLEAN
+                      return l_0_28
+                    end
+                    l_0_28 = string
+                    l_0_28 = l_0_28.match
+                    -- DECOMPILER ERROR at PC918: Confused about usage of register: R12 in 'UnsetPending'
+
+                    l_0_29 = l_0_27
+                    l_0_28 = l_0_28(l_0_29, "-s%s+(....)")
+                    l_0_27 = l_0_28
+                    if l_0_27 == "bits" then
+                      l_0_28 = mp
+                      l_0_28 = l_0_28.CLEAN
+                      return l_0_28
                     end
                   end
                 end
-              end
-              do
-                if l_0_8 then
-                  local l_0_31 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-                  if l_0_31 ~= nil and l_0_31 ~= "" then
-                    l_0_31 = (string.lower)(l_0_31)
-                    if l_0_31 == "svchost.exe" then
-                      local l_0_32 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-                      do
-                        do
-                          if l_0_32 ~= nil then
-                            local l_0_33 = (mp.GetProcessCommandLine)(l_0_32)
-                            if l_0_33 ~= nil and l_0_33 ~= "" then
-                              l_0_33 = (string.lower)(l_0_33)
-                              if (string.match)(l_0_33, "-s%s+([^%s]+)") == "bits" then
-                                return mp.CLEAN
-                              end
-                              if (string.match)(l_0_33, "-s%s+(....)") == "bits" then
-                                return mp.CLEAN
-                              end
-                            end
-                          end
-                          if (string.match)(l_0_6, "(%.[^%.]+)$") == ".tmp" then
-                            return mp.CLEAN
-                          end
-                          ;
-                          (mp.set_mpattribute)("MpDisableMOACSyncInsert")
-                          ;
-                          (mp.set_mpattribute)("MpDisableCaching")
-                          if (MpCommon.GetPersistContextCount)(l_0_2) == 0 then
-                            local l_0_34 = {}
-                            ;
-                            (table.insert)(l_0_34, l_0_1)
-                            ;
-                            (MpCommon.SetPersistContext)(l_0_2, l_0_34, 0)
-                          else
-                            do
-                              do
-                                if not (MpCommon.QueryPersistContext)(l_0_2, l_0_1) then
-                                  (MpCommon.AppendPersistContext)(l_0_2, l_0_1, 0)
-                                end
-                                do return mp.INFECTED end
-                                return mp.CLEAN
-                              end
-                            end
-                          end
-                        end
+                if (string.match)(l_0_27, l_0_28) == ".tmp" then
+                  return mp.CLEAN
+                end
+                ;
+                (mp.set_mpattribute)("MpDisableMOACSyncInsert")
+                ;
+                (mp.set_mpattribute)("MpDisableCaching")
+                if (MpCommon.GetPersistContextCount)(l_0_2) == 0 then
+                  local l_0_30 = l_0_28
+                  -- DECOMPILER ERROR at PC954: Overwrote pending register: R13 in 'AssignReg'
+
+                  ;
+                  (table.insert)(l_0_27, l_0_30)
+                  -- DECOMPILER ERROR at PC959: Overwrote pending register: R13 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC960: Confused about usage of register: R11 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC960: Overwrote pending register: R14 in 'AssignReg'
+
+                  ;
+                  (MpCommon.SetPersistContext)(l_0_27, l_0_30, 0)
+                else
+                  do
+                    do
+                      -- DECOMPILER ERROR at PC967: Overwrote pending register: R13 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC974: Overwrote pending register: R13 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC975: Overwrote pending register: R14 in 'AssignReg'
+
+                      if not (MpCommon.QueryPersistContext)(l_0_2, l_0_27) then
+                        (MpCommon.AppendPersistContext)(l_0_2, l_0_27, l_0_30)
                       end
+                      do return mp.INFECTED end
+                      do return mp.CLEAN end
+                      -- DECOMPILER ERROR at PC983: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+
                     end
                   end
                 end
