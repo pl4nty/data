@@ -415,6 +415,7 @@
             "EnableSendAcmeChallengeAsIdentifier": true,
             "EnableSendNonceinResponseV2": true,
             "EnableVerifyAcmeChallengeFromIdentifier": true,
+            "EnsurePlatformMatchesProfileAsyncNulRefFix": true,
             "GroupIdCheckForValidateScope": true
         }
     },
@@ -426,6 +427,7 @@
     "SVC_DataInfra": {
         "FlightingV2": {
             "AzMonBGServiceFSICoreEnabled": true,
+            "BatchAzMonBGServiceFSICoreEnabled": true,
             "DeviceConfigurationPolicyStatusSummary": true,
             "HardwareConfigLogging": true,
             "NoMaterializeForFastSlowStreamMerge": true,
