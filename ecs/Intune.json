@@ -376,6 +376,7 @@
             "EnableComplianceUpdateReportingPublisher": true,
             "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
+            "EnableRegisteredCompliancePartnersJson": true,
             "EnableRiskScoreOptimization": true,
             "IgnorePCWithDifferentAADDeviceId": true,
             "MigratePartnerDeviceAttributeToMB": true,
@@ -504,6 +505,7 @@
     },
     "SVC_DeviceConfigV2": {
         "FlightingV2": {
+            "EnableBlockingOpenClaw": true,
             "Enable_ApplicationProperties_Settings": true
         }
     },
@@ -747,6 +749,7 @@
     "UX_Explorer": {
         "FlightingV2": {
             "EnableGraphPrompts": true,
+            "EnableLocalAiAgent": true,
             "EnableMultiSelectLibrary": true
         }
     },
