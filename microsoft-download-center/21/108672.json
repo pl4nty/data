@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "nothing.txt",
+            "url": "https://download.microsoft.com/download/927d9787-b302-410f-8baa-dad4f027cb0f/nothing.txt",
+            "size": "9",
+            "version": "0",
+            "datePublished": "5/20/2026 12:34:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0",
+    "detailsSection_file_name": [
+        "nothing.txt"
+    ],
+    "detailsSection_file_size": [
+        "9 bytes"
+    ],
+    "detailsSection_file_date": "5/20/2026",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108672",
+    "downloadPreload": true
+}
