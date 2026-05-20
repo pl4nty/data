@@ -552,6 +552,8 @@
                 "EnableNetworkResiliencyForSubstrateServiceCalls": true,
                 "EnableOutgoingPfat": true,
                 "EnableOutlookHpaAppOnlyInsteadOfCachedPft": true,
+                "EnablePCK2CleanupFailedMarkersCLQP": true,
+                "EnablePCK2CleanupFailedMarkersTLQP": true,
                 "EnablePCK2ExcludedTenantsCheck": true,
                 "EnablePCK2GracefulHandleAadTokenErrors": true,
                 "EnablePCK2GracefulHandleForbiddenThrottling": true,
