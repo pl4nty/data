@@ -154,9 +154,6 @@ class EdgeSessionRestoreLog;
 }
 
 namespace syncer {
-// Replacing upstream |syncer::SyncServerConnectionManager| which does
-// blocking operation on |syncer::HttpBridge| on a worker thread.
-class EdgeCloudMessagingConnectionManager;
 class ModelSafeWorker;
 }
 
