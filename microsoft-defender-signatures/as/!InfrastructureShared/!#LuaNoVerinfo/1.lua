@@ -17,12 +17,22 @@ else
   ;
   (mp.set_mpattribute)("Lua:PeCompanyName!nil")
 end
-local l_0_2 = l_0_0.ProductName
+local l_0_2 = l_0_0.LegalCopyright
 if l_0_2 then
   l_0_2 = (string.lower)(l_0_2)
   l_0_2 = l_0_2:gsub(" ", "__")
   ;
-  (mp.set_mpattribute)("Lua:PeProductName!" .. l_0_2)
+  (mp.set_mpattribute)("Lua:PeLegalCopyright!" .. l_0_2)
+else
+  ;
+  (mp.set_mpattribute)("Lua:PeLegalCopyright!nil")
+end
+local l_0_3 = l_0_0.ProductName
+if l_0_3 then
+  l_0_3 = (string.lower)(l_0_3)
+  l_0_3 = l_0_3:gsub(" ", "__")
+  ;
+  (mp.set_mpattribute)("Lua:PeProductName!" .. l_0_3)
 else
   ;
   (mp.set_mpattribute)("Lua:PeProductName!nil")

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\154b34f10d092\1.luac 
+-- Command line: lua\!InfrastructureShared\154b3c8fe3cfc\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,7 +8,7 @@ if l_0_0 == nil or l_0_0 == "" or type(l_0_0) ~= "string" then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
-if l_0_0 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_0 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" and l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(80000, false, false, false) ~= true then
+if l_0_0 ~= "64eacc49-6a31-42c6-9b39-c3d9148e65f4" and l_0_0 ~= "0d5a49d5-57c7-40c0-ab8b-3a066e83b05a" and (l_0_0 ~= "d7c7c745-195f-4223-9c7a-99fb420fd000" or (MpCommon.IsSampled)(1000, false, false, false) ~= true) then
   return mp.CLEAN
 end
 local l_0_1 = (bm.get_imagepath)()

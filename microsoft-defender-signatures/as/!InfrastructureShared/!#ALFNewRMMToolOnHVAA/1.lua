@@ -434,6 +434,11 @@ if l_0_4.DeviceRoles then
                                         l_0_46 = MpCommon
                                         l_0_46 = l_0_46.AnomalyEventUpdate
                                         l_0_46(l_0_5, l_0_3, l_0_45, 1)
+                                        l_0_46 = set_research_data
+                                        l_0_46("RMM_Anomaly", safeJsonSerialize(l_0_13), false)
+                                        l_0_46 = mp
+                                        l_0_46 = l_0_46.set_mpattribute
+                                        l_0_46("Lua:RMMAnomalyNewKey")
                                         return mp.CLEAN
                                       end
                                     end

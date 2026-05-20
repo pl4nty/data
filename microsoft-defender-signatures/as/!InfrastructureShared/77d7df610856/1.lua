@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\77d7330c25a1\1.luac 
+-- Command line: lua\!InfrastructureShared\77d7df610856\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -15,10 +15,14 @@ local l_0_2 = (mp.GetScannedPPID)()
 if l_0_2 == "" or l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_3 = "https://"
-local l_0_4 = (string.lower)((mp.GetProcessCommandLine)(l_0_2))
-local l_0_5 = (string.match)(l_0_4, "\\\\([%w\\%.%-]+)")
-l_0_5 = l_0_3 .. l_0_5
+local l_0_3 = (mp.GetProcessCommandLine)(l_0_2)
+if l_0_3 == nil then
+  return mp.CLEAN
+end
+l_0_3 = (string.lower)(l_0_3)
+local l_0_4 = "https://"
+local l_0_5 = (string.match)(l_0_3, "\\\\([%w\\%.%-]+)")
+l_0_5 = l_0_4 .. l_0_5
 l_0_5 = (string.gsub)(l_0_5, "\\", "/")
 local l_0_6 = {}
 l_0_6.SIG_CONTEXT = "CmdHstr"
