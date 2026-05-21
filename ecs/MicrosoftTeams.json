@@ -1572,6 +1572,16 @@
                     "IsEnabled": true
                 }
             ],
+            "TaskManagementUsageDrop_Flights": [
+                {
+                    "Flight": "TaskManagementHandleActionItem",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TaskManagementUpdateQueryIntent",
+                    "IsEnabled": true
+                }
+            ],
             "TaskManagement_OverInvokeFix": [
                 {
                     "Flight": "TMUpdatePromptTReduceOverTrigger",

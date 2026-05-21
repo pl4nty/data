@@ -307,6 +307,7 @@
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAppRemovalAsExplicitUninstall": true,
             "EnableAppsPostFilterConflictResolution": true,
+            "EnableAuthenticatorNewEnrollmentBatteryOptimizationBlock": true,
             "EnableBteOnboarding": true,
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
