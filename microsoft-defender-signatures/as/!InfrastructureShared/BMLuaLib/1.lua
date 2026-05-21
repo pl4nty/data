@@ -472,13 +472,43 @@ local l_0_7 = function()
 
   -- DECOMPILER ERROR at PC168: No list found for R42 , SetList fails
 
+  local l_8_43 = {}
+  -- DECOMPILER ERROR at PC170: Overwrote pending register: R44 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC172: No list found for R43 , SetList fails
+
+  local l_8_44 = {}
+  -- DECOMPILER ERROR at PC174: Overwrote pending register: R45 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC176: No list found for R44 , SetList fails
+
+  local l_8_45 = {}
+  -- DECOMPILER ERROR at PC178: Overwrote pending register: R46 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC180: No list found for R45 , SetList fails
+
+  local l_8_46 = {}
+  -- DECOMPILER ERROR at PC182: Overwrote pending register: R47 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC184: No list found for R46 , SetList fails
+
+  local l_8_47 = {}
+  -- DECOMPILER ERROR at PC186: Overwrote pending register: R48 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC188: No list found for R47 , SetList fails
+
+  local l_8_48 = {}
+  -- DECOMPILER ERROR at PC190: Overwrote pending register: R49 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC192: No list found for R48 , SetList fails
+
   do
-    local l_8_43 = {}
-    -- DECOMPILER ERROR at PC170: Overwrote pending register: R44 in 'AssignReg'
+    local l_8_49 = {}
+    -- DECOMPILER ERROR at PC194: Overwrote pending register: R50 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC172: No list found for R43 , SetList fails
+    -- DECOMPILER ERROR at PC196: No list found for R49 , SetList fails
 
-    -- DECOMPILER ERROR at PC173: No list found for R0 , SetList fails
+    -- DECOMPILER ERROR at PC197: No list found for R0 , SetList fails
 
     do return l_8_0 end
     -- WARNING: undefined locals caused missing assignments!

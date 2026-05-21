@@ -15,7 +15,7 @@ do
   -- DECOMPILER ERROR at PC54: Unhandled construct in 'MakeBoolean' P3
 
   if (((this_sigattrlog[2] == nil or not (this_sigattrlog[2]).matched or nil == nil) and (this_sigattrlog[3]).utf8p1 ~= nil) or (this_sigattrlog[4]).utf8p1 == nil) and this_sigattrlog[5] ~= nil and (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9 = (this_sigattrlog[5]).utf8p1
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13, l_0_14 = (this_sigattrlog[5]).utf8p1
   end
   -- DECOMPILER ERROR at PC54: Confused about usage of register: R0 in 'UnsetPending'
 
@@ -54,6 +54,31 @@ do
   -- DECOMPILER ERROR at PC126: Confused about usage of register: R0 in 'UnsetPending'
 
   if (string.find)(l_0_0, "/tmp/ssh-", 1, true) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC138: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "/dev/shm/esso_", 1, true) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC150: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "/tmp/crmsh_", 1, true) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC162: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "/tmp/qb-event-", 1, true) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC174: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "/tmp/hstcert_", 1, true) then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC186: Confused about usage of register: R0 in 'UnsetPending'
+
+  if (string.find)(l_0_0, "/tmp/PrivateArkEx_", 1, true) then
     return mp.CLEAN
   end
   addRelatedProcess()
