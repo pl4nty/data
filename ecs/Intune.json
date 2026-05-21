@@ -359,11 +359,6 @@
             "DisableEntraRegistrationHPAFallback": true
         }
     },
-    "SVC_CloudPki": {
-        "FlightingV2": {
-            "BackfillCaVersionStatusBgTask": true
-        }
-    },
     "SVC_Compliance": {
         "FlightingV2": {
             "AddAADDeviceIdToPolicyCompliance": true,
@@ -709,6 +704,11 @@
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
             "EnableWin32InstallerScriptsGA": true
+        }
+    },
+    "UX_CloudPki": {
+        "FlightingV2": {
+            "CloudPkiNewReactUI": true
         }
     },
     "UX_Core": {

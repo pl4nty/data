@@ -98,6 +98,11 @@
         }
     },
     "MicrosoftTeamsAndroidDeviceAdminAgent": {
+        "deviceAgentConfigFetcher": {
+            "delayInSec": 60,
+            "maxDelayInSec": 300,
+            "maxRetries": 3
+        },
         "healthSignalConfig": {
             "isEnabled": true,
             "teams": {

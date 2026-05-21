@@ -737,6 +737,859 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.d8728456-5946-4aba-bf14-08f45cccc151": {
+            "CampaignId": "d8728456-5946-4aba-bf14-08f45cccc151",
+            "EndTimeUtc": "2028-06-29T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 20,
+                "Type": 0
+            },
+            "PrimaryPriority": 0,
+            "StartTimeUtc": "2026-05-14T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "ResetPassword_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ResetPassword_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddUser_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddUser_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeleteUser_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeleteUser_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DomainRemoved",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethod_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethod_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddSharedMailbox_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddSharedMailbox_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "LicensesAndApps_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditMembers_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditMembers_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddUserTemplates_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddUserTemplates_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UnlicensedDeleteUser_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UnlicensedDeleteUser_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditUserEmailAliases_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditUserEmailAliases_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ManageMailForwarding_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ManageMailForwarding_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalance_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalance_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SimplifiedAddUser_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SimplifiedAddUser_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethod_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethod_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddGroup_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddGroup_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditUserName_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditUserName_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditOwners_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "EditOwners_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddTeam_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddTeam_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SimplifiedLicensesAndApps_React_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SimplifiedLicensesAndApps_React_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlDownloadProductAndCopyKey_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlDownloadProductAndCopyKey_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlDownloadProduct_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlDownloadProduct_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlCopyKey_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "VlCopyKey_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UTPEditMembers_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UTPEditMembers_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UTPEditOwners_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "UTPEditOwners_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDate_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDate_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicenses_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicenses_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicenses_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicenses_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MessageCenterClosed_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizard_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizard_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalanceWizard_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalanceWizard_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalanceFlyout_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "SettleBalanceFlyout_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMthodWizard_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizard_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "InvoicePayNow_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "InvoicePayNow_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "NewCommerceCheckout_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "NewCommerceCheckout_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "LegacyCheckout_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "LegacyCheckout_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePIBillingProfile_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePIBillingProfile_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizard_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizard_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardHybrid_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardHybrid_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardHybrid_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardHybrid_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardHybrid_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "MigratePaymentMethodWizardHybrid_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicensesLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicensesLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicensesModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddLicensesModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicensesLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicensesLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicensesModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "RemoveLicensesModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDateLegacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDateLegacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDateModern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ExtendEndDateModern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodIDPFlyout_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodIDPFlyout_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Legacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Legacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Modern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Modern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Hybrid_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePaymentMethodWizardV2Hybrid_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Legacy_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Legacy_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Modern_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Modern_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Hybrid_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "DeletePaymentMethodWizardV2Hybrid_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePIBillingProfileWizard_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReplacePIBillingProfileWizard_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddTemplate_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AddTemplate_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "CreateBillingProfileSurvey_Success",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "CreateBillingProfileSurvey_Failure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "InvoicePdfDownloadSuccess",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "InvoicePdfDownloadFailure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "TaxReceiptPdfDownloadSuccess",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "TaxReceiptPdfDownloadFailure",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Very Unlikely",
+                                    "questionLabel": "How likely are you to recommend Microsoft 365 to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very Likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "How could we make it better?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/d8728456-5946-4aba-bf14-08f45cccc151/3995c45f-46b1-4e07-b17d-40eb3e712724/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.e187a7f9-a8d3-496a-835d-5b1d1b7a1d62": {
             "CampaignId": "e187a7f9-a8d3-496a-835d-5b1d1b7a1d62",
             "EndTimeUtc": "2026-06-29T18:30:00Z",
