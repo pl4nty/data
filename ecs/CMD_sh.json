@@ -910,6 +910,8 @@
         "EnableScopeTagCPCFEOverall": true,
         "EnableScopeTagForACGUpload": true,
         "EnableScopeTagForCPCBulkAction": true,
+        "EnableScopeTagForCloudPcTroubleshootReports": true,
+        "EnableScopeTagForRemoteConnections": true,
         "EnableScopeTagInProxyToRMS": false,
         "EnableScopeTagUX": true,
         "EnableSearchBox": true,

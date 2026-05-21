@@ -1298,6 +1298,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableTlcLoopTaskFetching": [
+                {
+                    "Flight": "EnableTlcLoopTaskFetching",
+                    "IsEnabled": true
+                }
+            ],
             "EnableUnifiedTeamsCopilotSkill": [
                 {
                     "Flight": "enableUnifiedTeamsCopilotSkill",
@@ -1563,6 +1569,12 @@
             "TaskManagementSkill_CombinedEvaluationMetrics": [
                 {
                     "Flight": "EnableTMEvalCombinedPrompt",
+                    "IsEnabled": true
+                }
+            ],
+            "TaskManagement_OverInvokeFix": [
+                {
+                    "Flight": "TMUpdatePromptTReduceOverTrigger",
                     "IsEnabled": true
                 }
             ],
