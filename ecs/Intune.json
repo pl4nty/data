@@ -506,7 +506,8 @@
     "SVC_DeviceConfigV2": {
         "FlightingV2": {
             "EnableBlockingOpenClaw": true,
-            "Enable_ApplicationProperties_Settings": true
+            "Enable_ApplicationProperties_Settings": true,
+            "Enable_LocalAiAgent_Settings": true
         }
     },
     "SVC_DeviceDataUpload": {

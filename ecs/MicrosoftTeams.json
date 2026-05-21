@@ -1169,6 +1169,7 @@
             "EnableMessagesWithoutMention": true,
             "EnableParallelMembersRetrieval": true,
             "EnablePbpSkipPreference": true,
+            "EnableRedeemSharingLink": true,
             "EnableRefetchPBPFlow": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
             "EnableWelcomeMessageFromInstallationUpdate": true,
