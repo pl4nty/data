@@ -274,177 +274,171 @@ do
                 local l_0_129, l_0_130, l_0_131, l_0_132 = pcall(updateDomainInfo)
                 if l_0_129 then
                   (bm.add_related_string)("updateDomainInfo_fail", l_0_130, bm.RelatedStringBMReport)
-                  if (MpCommon.IsSampled)(75000, true, true, true) == true then
-                    local l_0_133 = "GenRansomNote_enc"
-                    local l_0_134 = (bm.get_current_process_startup_info)()
-                    if l_0_134 ~= nil and l_0_134.ppid ~= nil then
-                      local l_0_135 = tostring(l_0_134.ppid)
-                      if l_0_22 and l_0_22 ~= "" then
-                        do
-                          local l_0_136 = GetRollingQueueKeyValues(l_0_133, l_0_135)
-                          if l_0_136 ~= nil then
-                            local l_0_137 = SafeGetUrlReputation
-                            local l_0_138 = {}
-                            -- DECOMPILER ERROR at PC807: Overwrote pending register: R47 in 'AssignReg'
+                  local l_0_133 = "GenRansomNote_enc"
+                  local l_0_134 = (bm.get_current_process_startup_info)()
+                  if l_0_134 ~= nil and l_0_134.ppid ~= nil then
+                    local l_0_135 = tostring(l_0_134.ppid)
+                    if l_0_22 and l_0_22 ~= "" then
+                      do
+                        local l_0_136 = GetRollingQueueKeyValues(l_0_133, l_0_135)
+                        -- DECOMPILER ERROR at PC796: Overwrote pending register: R47 in 'AssignReg'
 
-                            -- DECOMPILER ERROR at PC808: No list found for R46 , SetList fails
+                        if l_0_136 ~= nil then
+                          local l_0_137 = l_0_135
+                          local l_0_138 = {}
+                          -- DECOMPILER ERROR at PC799: No list found for R48 , SetList fails
 
-                            local l_0_139 = {}
-                            -- DECOMPILER ERROR at PC827: Overwrote pending register: R46 in 'AssignReg'
+                          local l_0_139 = {}
+                          -- DECOMPILER ERROR at PC818: Overwrote pending register: R48 in 'AssignReg'
 
+                          do
                             do
                               do
-                                do
-                                  if l_0_137 and l_0_138 == 3 then
-                                    local l_0_140 = {}
-                                    -- DECOMPILER ERROR at PC843: Overwrote pending register: R45 in 'AssignReg'
-
-                                  end
-                                  -- DECOMPILER ERROR at PC844: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC845: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC848: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC849: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC850: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC853: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC854: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC855: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC858: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC859: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC860: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC863: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC864: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC865: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC868: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC869: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC870: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC871: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC874: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC875: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC876: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC878: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC879: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC880: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC881: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC883: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC884: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC885: Overwrote pending register: R46 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC888: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC889: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC890: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC891: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC893: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC894: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC895: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC896: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC898: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC899: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC900: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC901: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC905: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC906: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC907: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC911: Overwrote pending register: R47 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC912: Overwrote pending register: R47 in 'AssignReg'
-
-                                  if l_0_138 and (l_0_138 == 2 or l_0_138 == 1) and l_0_138 and l_0_138 >= 50 and l_0_138 == "GenRansom" then
-                                    l_0_139("RemoteGenericRansomware:Malware", safeJsonSerialize(l_0_125))
-                                  end
-                                  -- DECOMPILER ERROR at PC918: Overwrote pending register: R34 in 'AssignReg'
-
-                                  do return l_0_121.INFECTED end
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC921: LeaveBlock: unexpected jumping out IF_STMT
+                                if l_0_137 and l_0_138 == 3 then
+                                  local l_0_140 = {}
+                                  -- DECOMPILER ERROR at PC834: Overwrote pending register: R47 in 'AssignReg'
 
                                 end
+                                -- DECOMPILER ERROR at PC835: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC836: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC839: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC840: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC841: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC844: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC845: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC846: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC849: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC850: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC851: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC854: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC855: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC856: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC859: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC860: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC861: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC862: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC865: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC866: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC867: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC869: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC870: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC871: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC872: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC874: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC875: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC876: Overwrote pending register: R48 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC879: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC880: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC881: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC882: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC884: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC885: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC886: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC887: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC889: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC890: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC891: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC892: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC896: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC897: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC898: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC902: Overwrote pending register: R49 in 'AssignReg'
+
+                                -- DECOMPILER ERROR at PC903: Overwrote pending register: R49 in 'AssignReg'
+
+                                if l_0_138 and (l_0_138 == 2 or l_0_138 == 1) and l_0_138 and l_0_138 >= 50 and l_0_138 == "GenRansom" then
+                                  l_0_139("RemoteGenericRansomware:Malware", safeJsonSerialize(l_0_125))
+                                end
+                                -- DECOMPILER ERROR at PC909: Overwrote pending register: R34 in 'AssignReg'
+
+                                do return l_0_121.INFECTED end
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out DO_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out DO_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out DO_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out DO_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                                -- DECOMPILER ERROR at PC912: LeaveBlock: unexpected jumping out IF_STMT
+
                               end
                             end
                           end

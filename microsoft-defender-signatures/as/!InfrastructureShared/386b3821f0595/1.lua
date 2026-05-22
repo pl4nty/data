@@ -482,138 +482,132 @@ for l_0_56,l_0_57 in pairs(l_0_2) do
                             ;
                             (bm.add_related_string)("updateDomainInfo_fail", l_0_138, bm.RelatedStringBMReport)
                           end
+                          local l_0_140, l_0_141 = , pcall(getBmInfo)
+                          if l_0_141 and getBmInfo then
+                            l_0_8.BmInfo = getBmInfo
+                          end
+                          local l_0_142 = nil
+                          local l_0_143 = SafeGetUrlReputation
+                          local l_0_144 = {l_0_14}
+                          l_0_143 = l_0_143(l_0_144, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
+                          if l_0_143 then
+                            l_0_144 = l_0_143.error
+                            if l_0_144 == 3 then
+                              l_0_8.CRReportError = "Failed the first attempt"
+                              l_0_144 = SafeGetUrlReputation
+                              local l_0_145 = {l_0_14}
+                              l_0_144 = l_0_144(l_0_145, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
+                              l_0_143 = l_0_144
+                            end
+                          end
                           do
-                            if (MpCommon.IsSampled)(75000, true, true, true) == true then
-                              local l_0_140, l_0_141 = , pcall(getBmInfo)
-                              if l_0_141 and getBmInfo then
-                                l_0_8.BmInfo = getBmInfo
-                              end
-                            end
-                            local l_0_142 = nil
-                            local l_0_143 = SafeGetUrlReputation
-                            local l_0_144 = {l_0_14}
-                            l_0_143 = l_0_143(l_0_144, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
-                            if l_0_143 then
-                              l_0_144 = l_0_143.error
-                              if l_0_144 == 3 then
-                                l_0_8.CRReportError = "Failed the first attempt"
-                                l_0_144 = SafeGetUrlReputation
-                                local l_0_145 = {l_0_14}
-                                l_0_144 = l_0_144(l_0_145, {SIG_CONTEXT = "BM", CONTEXT_SOURCE = "GenRansom3", TAG = "NOLOOKUP", data = safeJsonSerialize(l_0_8)}, false, 3000, false)
-                                l_0_143 = l_0_144
-                              end
-                            end
                             do
                               do
-                                do
+                                l_0_144 = l_0_143.urls
+                                l_0_144 = l_0_144[l_0_14]
+                                if l_0_144 then
                                   l_0_144 = l_0_143.urls
                                   l_0_144 = l_0_144[l_0_14]
-                                  if l_0_144 then
+                                  l_0_144 = l_0_144.determination
+                                  if l_0_144 ~= 2 then
                                     l_0_144 = l_0_143.urls
                                     l_0_144 = l_0_144[l_0_14]
                                     l_0_144 = l_0_144.determination
-                                    if l_0_144 ~= 2 then
-                                      l_0_144 = l_0_143.urls
-                                      l_0_144 = l_0_144[l_0_14]
-                                      l_0_144 = l_0_144.determination
-                                    end
-                                    if l_0_144 == 1 then
+                                  end
+                                  if l_0_144 == 1 then
+                                    l_0_144 = l_0_143.urls
+                                    l_0_144 = l_0_144[l_0_14]
+                                    l_0_144 = l_0_144.confidence
+                                    if l_0_144 then
                                       l_0_144 = l_0_143.urls
                                       l_0_144 = l_0_144[l_0_14]
                                       l_0_144 = l_0_144.confidence
-                                      if l_0_144 then
+                                      if l_0_144 >= 50 then
                                         l_0_144 = l_0_143.urls
                                         l_0_144 = l_0_144[l_0_14]
-                                        l_0_144 = l_0_144.confidence
-                                        if l_0_144 >= 50 then
+                                        l_0_144 = l_0_144.context
+                                        l_0_144 = l_0_144.Source
+                                        if l_0_144 == "GenRansom" then
+                                          l_0_144 = l_0_143.urls
+                                          l_0_144 = l_0_144[l_0_14]
+                                          l_0_144 = l_0_144.confidence
+                                          l_0_8.confidence = l_0_144
                                           l_0_144 = l_0_143.urls
                                           l_0_144 = l_0_144[l_0_14]
                                           l_0_144 = l_0_144.context
-                                          l_0_144 = l_0_144.Source
-                                          if l_0_144 == "GenRansom" then
-                                            l_0_144 = l_0_143.urls
-                                            l_0_144 = l_0_144[l_0_14]
-                                            l_0_144 = l_0_144.confidence
-                                            l_0_8.confidence = l_0_144
-                                            l_0_144 = l_0_143.urls
-                                            l_0_144 = l_0_144[l_0_14]
-                                            l_0_144 = l_0_144.context
-                                            l_0_144 = l_0_144.Family
-                                            l_0_8.family = l_0_144
-                                            l_0_144 = l_0_143.urls
-                                            l_0_144 = l_0_144[l_0_14]
-                                            l_0_144 = l_0_144.determination
-                                            l_0_8.determination = l_0_144
-                                            l_0_8.action, l_0_144 = l_0_144, {action = (((l_0_143.urls)[l_0_14]).context).action, parameter = (((l_0_143.urls)[l_0_14]).context).action_parameter, ttl = (((l_0_143.urls)[l_0_14]).context).action_ttl}
-                                            l_0_8.ip = l_0_14
-                                            l_0_8.context = ((l_0_143.urls)[l_0_14]).context
-                                            l_0_8.unscrubbed_username = l_0_10
-                                            l_0_8.unscrubbed_domain = l_0_11
-                                            ;
-                                            (bm.trigger_sig)("RemoteGenericRansomware:Malware", safeJsonSerialize(l_0_8))
-                                          end
+                                          l_0_144 = l_0_144.Family
+                                          l_0_8.family = l_0_144
+                                          l_0_144 = l_0_143.urls
+                                          l_0_144 = l_0_144[l_0_14]
+                                          l_0_144 = l_0_144.determination
+                                          l_0_8.determination = l_0_144
+                                          l_0_8.action, l_0_144 = l_0_144, {action = (((l_0_143.urls)[l_0_14]).context).action, parameter = (((l_0_143.urls)[l_0_14]).context).action_parameter, ttl = (((l_0_143.urls)[l_0_14]).context).action_ttl}
+                                          l_0_8.ip = l_0_14
+                                          l_0_8.context = ((l_0_143.urls)[l_0_14]).context
+                                          l_0_8.unscrubbed_username = l_0_10
+                                          l_0_8.unscrubbed_domain = l_0_11
+                                          ;
+                                          (bm.trigger_sig)("RemoteGenericRansomware:Malware", safeJsonSerialize(l_0_8))
                                         end
                                       end
                                     end
                                   end
-                                  do return mp.INFECTED end
-                                  do
-                                    local l_0_146 = nil
-                                    l_0_5[l_0_146] = {(l_0_3[l_0_68])[1], l_0_57}
-                                    l_0_6[l_0_68] = 1
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
+                                end
+                                do return mp.INFECTED end
+                                do
+                                  local l_0_146 = nil
+                                  l_0_5[l_0_146] = {(l_0_3[l_0_68])[1], l_0_57}
+                                  l_0_6[l_0_68] = 1
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC1015: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC1024: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  end
                                 end
                               end
                             end
