@@ -560,6 +560,7 @@
         "EnableFLSWestUS3": false,
         "EnableFLWPolicyBackendPublicAPI": true,
         "EnableFLWTenantOffboard": true,
+        "EnableFallbackFLDHibernateEligibilityCheck": true,
         "EnableFastFailedForVmExtensionOperationTimeout": true,
         "EnableFetchANCWithInformationalStatus": true,
         "EnableFetchSourceImagesByUserToken": true,

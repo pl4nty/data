@@ -1,5 +1,315 @@
 [
     {
+        "created": "2026-05-21T23:15:57",
+        "description": "You can now quickly switch between your favorite folders without opening the full folder pane. When the pane is collapsed, your favorite folders appear as a vertical list, giving you one-click access to the folders you use most. Each folder shows unread or total counts so you always know what needs attention. Right-click any favorite for the same options you're used to, and your selections stay put across sessions. It's a familiar experience for anyone who loved favorites in classic Outlook, now built right into the new Outlook. #newoutlookforwindows",
+        "id": 563810,
+        "locale": null,
+        "modified": "2026-05-21T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "August CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Navigate Your Favorite Folders Without Expanding the Folder Pane"
+    },
+    {
+        "created": "2026-05-21T23:15:57",
+        "description": "You can now pick whether each folder in your folder pane shows the unread count or the total item count. Until now, Outlook only displayed unread counts, but sometimes you need to see how many items are in a folder overall. Just right-click any folder and choose whether to show the total or unread count. It gives you more control over how you keep track of your email without changing how anything else works. #newoutlookforwindows",
+        "id": 563807,
+        "locale": null,
+        "modified": "2026-05-21T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Outlook: Choose to Show Unread or Total Count for Each Folder"
+    },
+    {
+        "created": "2026-05-21T23:15:57",
+        "description": "The External tag on an email, set by the ExternalInOutlook feature, will now be usable as a condition in Outlook Inbox Rules. This change also makes available the ability to create or modify these Rules on the new Outlook for Windows, Outlook Web, and Outlook for Mac.",
+        "id": 563806,
+        "locale": null,
+        "modified": "2026-05-21T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Exchange"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Exchange"
+                },
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Emails marked with External to be supported as Rules conditions"
+    },
+    {
+        "created": "2026-05-21T23:15:57",
+        "description": "Policy updates in Microsoft Purview now sync faster, reducing wait times from up to 2 hours to just 30 minutes, so your protections stay up to date and take effect more quickly across your organization.",
+        "id": 562994,
+        "locale": null,
+        "modified": "2026-05-21T23:15:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins"
+    },
+    {
         "created": "2026-05-20T23:15:13",
         "description": "The Interpreter agent acts as a translator in Microsoft Teams meetings, allowing participants to listen to the meeting in their chosen language with real-time translation so speaking different languages isn\u2019t a barrier to effective understanding and collaboration. It's now available in Teams Rooms on Android licensed for Teams Rooms Pro.",
         "id": 562665,
@@ -2462,7 +2772,7 @@
         "description": "Teams meetings automatically create a corresponding Planner plan to capture meeting tasks. However, when teams use meetings as their primary collaboration surface for long-running initiatives, tasks from the same project can become scattered across multiple auto-generated plans. With this capability, users can now connect Teams meetings to existing Planner plans, so all related tasks across meetings can be tracked in one place.",
         "id": 561490,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
@@ -2486,6 +2796,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -2513,6 +2826,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -2993,9 +3309,9 @@
         "description": "What\u2019s new\nTeams now supports audio and video offloading for Town hall attendees in VDI environments that are using the new optimization. Media streams are offloaded directly to the user\u2019s local device, improving performance and delivering a high definition viewing experience while reducing virtual desktop resource usage.\nWho it applies to\n\u2022\tWindows endpoints only using the new VDI optimization\n\u2022\tSupported VDI platforms:\no\tAzure Virtual Desktop and Windows 365\no\tCitrix\no\tOmnissa\no\tAmazon WorkSpaces\nWhat stays the same\nAll attendee interactivity features remain supported, including captions, DVR, reactions, streaming chat, and Q&A.\nAdditional details\nFirst party and third party eCDNs are supported. When enabled, the attendee\u2019s endpoint establishes a direct peer to peer connection using the local device network, avoiding virtual desktop double hop traffic.\nAction required\nNo action is required if the new optimization for Microsoft Teams is already enabled.\n",
         "id": 561648,
         "locale": null,
-        "modified": "2026-05-08T22:15:03",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3688,7 +4004,7 @@
         "description": "Microsoft Teams on desktop now shows rich link previews when you share SharePoint pages. Links automatically expand into a visually appealing card with a thumbnail image and page description, making it easier to understand and engage with shared SharePoint content directly in Teams.",
         "id": 561321,
         "locale": null,
-        "modified": "2026-05-06T23:15:10",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -3703,6 +4019,9 @@
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -3726,6 +4045,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -4499,9 +4821,9 @@
         "description": "Meetings as References in Copilot Notebooks bring Teams meeting content into the notebook experience, enabling users to ground Copilot on the discussions, decisions, and context that drive their work. By adding meetings as knowledge sources, users can connect transcripts, notes, chats, and shared content directly to their projects, enriching notebooks beyond files alone and improving downstream outputs like presentations and briefs. \n\nAvailable in Copilot Notebooks across Microsoft 365.",
         "id": 560706,
         "locale": null,
-        "modified": "2026-04-30T23:30:16",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -8260,9 +8582,9 @@
         "description": "Organizers can now use breakout rooms in Teams meetings with up to 1,000 attendees, enabling more interactive sessions, smaller group discussions, and improved audience engagement without compromising scale or performance.",
         "id": 560320,
         "locale": null,
-        "modified": "2026-04-20T22:45:53",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11303,12 +11625,12 @@
         "description": "Copilot Notebooks allows users to generate Excel spreadsheets using the content and references gathered in a notebook. Copilot drafts a structured spreadsheet grounded in the notebook\u2019s context, which can be opened and edited in Excel, helping users move from ideas and source material to a ready\u2011to\u2011use spreadsheet with fewer manual steps.",
         "id": 559480,
         "locale": null,
-        "modified": "2026-04-01T23:15:50",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15294,9 +15616,9 @@
         "description": "SMB Admins can use Microsoft 365 Admin Agent in Microsoft Teams to complete common admin tasks and get guidance on critical setup actions.  Admin Agent can add users and assign licenses on behalf of the admin, as well as provide guidance on key SMB related topics such as organisation setup, security settings, and password resets\u2014without leaving the Teams interface.",
         "id": 558255,
         "locale": null,
-        "modified": "2026-04-28T22:45:03",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19841,12 +20163,12 @@
         "description": "The Microsoft Teams live chat widget lets customers engage in one to one conversations with your business directly from your website, and now also enables appointment scheduling.",
         "id": 557172,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24881,7 +25203,7 @@
         "description": "Users can now copy tables created in Copilot. Leverage Copilot to make your content better and use it anywhere you need to.",
         "id": 553595,
         "locale": null,
-        "modified": "2026-05-19T22:45:25",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -25235,9 +25557,9 @@
         "description": "Currently, clicking on cited content in Copilot opens files outside of Copilot. With this new feature, content can be opened directly in Copilot Chat to make viewing documents more streamlined alongside chat. This change is not available on the Microsfot 365 Copilot mobile app or when using Copilot in Edge, Copilot in Excel, Copilot in Word, and Copilot PowerPoint.",
         "id": 548641,
         "locale": null,
-        "modified": "2026-04-30T23:30:16",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "Launched",
@@ -31587,9 +31909,9 @@
         "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. Updated January 30: This feature is still in development with a planned release of April 2026. We apologize for the inconvenience. ",
         "id": 516032,
         "locale": null,
-        "modified": "2026-03-09T23:15:17",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36948,9 +37270,9 @@
         "description": "Planner in Outlook brings all your tasks, plans, and the new Project Manager agent directly into your inbox, so you can manage work where you already work.",
         "id": 513278,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -93608,12 +93930,12 @@
         "description": "Users can chat one-on-one with a SharePoint agent directly within Teams chat.",
         "id": 481825,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -96281,9 +96603,9 @@
         "description": "This backend change will now address the 'separation of attendee' invites from the events crew. This feature allows the organizers of Townhalls to maintain separate invites for attendees.",
         "id": 476488,
         "locale": null,
-        "modified": "2026-05-14T23:15:59",
+        "modified": "2026-05-21T23:15:57",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
