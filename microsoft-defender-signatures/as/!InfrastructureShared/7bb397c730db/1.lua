@@ -19,6 +19,7 @@ else
   return mp.CLEAN
 end
 if l_0_3 ~= "" and l_0_3 ~= nil and (string.find)(l_0_3, "character id", 1, true) and (string.find)(l_0_3, "- (item ", 1, true) and (string.find)(l_0_3, " mod ", 1, true) and (string.find)(l_0_3, "count of", 1, true) and (string.find)(l_0_3, "exit ", 1, true) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN

@@ -7,8 +7,11 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE and l_0_0 ~= mp.SCANREASON_UNKNOWN then
   return mp.CLEAN
 end
+if #(mp.enum_mpattributesubstring)("SCPT:ShaiWorm") <= 2 then
+  return mp.CLEAN
+end
 local l_0_1 = (mp.getfilesize)()
-if l_0_1 == nil or l_0_1 < 307200 or l_0_1 > 614400 then
+if l_0_1 == nil or l_0_1 < 409600 or l_0_1 > 614400 then
   return mp.CLEAN
 end
 local l_0_2 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))

@@ -7,6 +7,9 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE and l_0_0 ~= mp.SCANREASON_UNKNOWN then
   return mp.CLEAN
 end
+if #(mp.enum_mpattributesubstring)("SCPT:ShaiWorm_") < 1 then
+  return mp.CLEAN
+end
 local l_0_1 = (string.lower)((mp.getfilename)(mp.FILEPATH_QUERY_FNAME))
 do
   if l_0_1 == "cat.py" then
