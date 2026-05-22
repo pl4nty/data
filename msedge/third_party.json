@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15951897,
+    "size": 15951805,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33378500,
+    "size": 33397734,
     "file_count": 4041
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161922088,
-    "file_count": 19097
+    "size": 161940763,
+    "file_count": 19105
   },
   {
     "name": "dbus",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17309638,
-    "file_count": 2029
+    "size": 17457831,
+    "file_count": 2036
   },
   {
     "name": "entity_extraction",
@@ -326,12 +326,12 @@
   },
   {
     "name": "ink",
-    "size": 91588,
+    "size": 91590,
     "file_count": 13
   },
   {
     "name": "inspector_protocol",
-    "size": 52109,
+    "size": 52491,
     "file_count": 12
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 294164,
+    "size": 295906,
     "file_count": 47
   },
   {
@@ -581,7 +581,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1221891,
+    "size": 1221910,
     "file_count": 297
   },
   {
@@ -601,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4388553,
-    "file_count": 615
+    "size": 4414519,
+    "file_count": 616
   },
   {
     "name": "perl",
@@ -621,7 +621,7 @@
   },
   {
     "name": "protobuf",
-    "size": 2310000,
+    "size": 2309999,
     "file_count": 524
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3489090,
+    "size": 3489288,
     "file_count": 1204
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550734,
+    "size": 550833,
     "file_count": 15
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7531996,
+    "size": 7532604,
     "file_count": 196
   },
   {

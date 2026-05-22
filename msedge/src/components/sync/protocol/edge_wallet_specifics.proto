@@ -42,8 +42,9 @@ message Barcode {
 message MembershipCard {
   enum MembershipCardType {
     option allow_alias = true;
-    FREQUENTFLYER = 1;
-    FREQUENT_FLYER = 1;
+    // Deprecated. Frequent Flyer feature has been removed.
+    FREQUENTFLYER = 1 [deprecated = true];
+    FREQUENT_FLYER = 1 [deprecated = true];
   }
   optional string program_name = 1;
   optional string program_number = 2;
