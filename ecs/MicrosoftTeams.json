@@ -1308,6 +1308,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableTranscriptFetchFromTcaConversationApi": [
+                {
+                    "Flight": "EnableTranscriptFetchFromTcaConversationApi",
+                    "IsEnabled": true
+                }
+            ],
             "EnableUnifiedTeamsCopilotSkill": [
                 {
                     "Flight": "enableUnifiedTeamsCopilotSkill",
