@@ -332,6 +332,13 @@ BASE_DECLARE_FEATURE(kContinuousImportUseSearchTermsInZeroInput);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTermsIgnorePB);
 
+// Feature flag that, when enabled, expands the audience for CI-imported
+// keyword search terms in Omnibox Query Formulation (QF) by bypassing the
+// high-confidence Chrome-PB-user check and the visible-autolaunch-session
+// check in ShouldFetchImportedKeywordSearchTermsForUser().
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kContinuousImportExpandQFAudience);
+
 // Feature to observe visible browser launch for CI
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
