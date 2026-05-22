@@ -73054,55 +73054,6 @@
     },
     {
         "created": "2025-05-22T23:15:53",
-        "description": "M365 Commercial customers can use Edge polices (WebContentFilteringBlockedCategories) to block non-secure LLMs in Edge and block other browsers to redirect users to a more secure alternative like Copilot Chat.\n",
-        "id": 494516,
-        "locale": null,
-        "modified": "2025-07-21T23:15:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v.138 - Policies to manage Shadow IT"
-    },
-    {
-        "created": "2025-05-22T23:15:53",
         "description": "You can now reference an Excel file when you create a presentation with Copilot within the PowerPoint application.",
         "id": 493733,
         "locale": null,
@@ -97586,61 +97537,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Copilot extensibility \u2013 Developers can use Kiota as an API plugin generation tool"
     },
     {
-        "created": "2025-01-14T00:15:48",
-        "description": "When changing the Cloud PC size on a specific assignment within the provisioning policy for W365 Frontline, all of the Cloud PCs in that assignment will be resized to the newly selected Cloud PC size.",
-        "id": 475246,
-        "locale": null,
-        "modified": "2025-07-21T23:15:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "May CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Windows 365"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Windows 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Windows 365: Resize is enabled for Windows 365 Frontline Cloud PCs"
-    },
-    {
         "created": "2025-01-10T23:15:46",
         "description": "Developers can now leverage an automatic project scaffolding for Graph connector applications within the Teams Toolkit, allowing for the generation of a full production-ready Graph connector application from just an API description file, significantly reducing setup time and complexity. ",
         "id": 474447,
@@ -108325,85 +108221,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Glint - Self service for bulk custom access"
-    },
-    {
-        "created": "2024-10-31T23:30:09",
-        "description": "You can now record and share the correct pronunciation of your name, promoting inclusivity and helping colleagues avoid mispronunciations. With a click, you can play and listen to your colleagues' name pronunciations. #newoutlookforwindows ",
-        "id": 465000,
-        "locale": null,
-        "modified": "2025-07-21T23:15:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "November CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Outlook: Name pronunciation on profile card in Outlook web and Outlook desktop"
     },
     {
         "created": "2024-10-29T23:15:28",

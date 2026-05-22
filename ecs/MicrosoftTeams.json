@@ -103,6 +103,10 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
+        "enrollConfig": {
+            "isPmpOtpFallbackEnabled": false,
+            "isPmpOtpProvisioningEnabled": false
+        },
         "healthSignalConfig": {
             "isEnabled": true,
             "teams": {
