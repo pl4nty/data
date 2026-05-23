@@ -1,5 +1,66 @@
 [
     {
+        "created": "2026-05-22T22:15:37",
+        "description": "Users will now see chat history scoped to their current Copilot Chat endpoint, with the option to see \u2018All chats\u2019 view.",
+        "id": 559601,
+        "locale": null,
+        "modified": "2026-05-22T22:15:37",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Chat History Filtering by Copilot Experience"
+    },
+    {
         "created": "2026-05-21T23:15:57",
         "description": "You can now quickly switch between your favorite folders without opening the full folder pane. When the pane is collapsed, your favorite folders appear as a vertical list, giving you one-click access to the folders you use most. Each folder shows unread or total counts so you always know what needs attention. Right-click any favorite for the same options you're used to, and your selections stay put across sessions. It's a familiar experience for anyone who loved favorites in classic Outlook, now built right into the new Outlook. #newoutlookforwindows",
         "id": 563810,
@@ -1534,9 +1595,9 @@
         "description": "We\u2019re introducing 3 enhancements to AI Interpreter\u2019s Simultaneous mode. First, the interpreter audio and live captions now match exactly, with both using the same language the user selects. Second, admins can fully disable voice simulation if needed. Third, users will have more platform voice options, with dynamic voice assignments that help distinguish each speaker and make conversations easier to follow.",
         "id": 562035,
         "locale": null,
-        "modified": "2026-05-14T23:15:59",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3614,9 +3675,9 @@
         "description": "Users have better experiences in flexible work environments with Microsoft Teams panel-based desk dock devices coming later this year. The Teams panel app now enables devices, such as the Yealink Linkhub, to enhance bookable desk experiences by indicating at-a-glance availability and letting visitors book directly on the device. Each device requires a Teams Shared Space license.",
         "id": 561031,
         "locale": null,
-        "modified": "2026-05-06T23:15:10",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11247,9 +11308,9 @@
         "description": "Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.",
         "id": 558341,
         "locale": null,
-        "modified": "2026-04-02T23:15:15",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13052,12 +13113,12 @@
         "description": "Mind Maps in Copilot Notebooks are interactive visual artifacts that help users understand notebook content through a grounded map of key topics, themes, and relationships. Users can explore the Mind Map, view summaries for individual nodes, and use Notebook chat to get more detail about a node. Available across OneNote and Microsoft 365 Copilot App.",
         "id": 559029,
         "locale": null,
-        "modified": "2026-03-24T23:15:57",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24855,12 +24916,12 @@
         "description": "Insider Risk Management is providing the ability to create a case without content. With this, we will introduce a new active case limit (2000). This new functionality will allow customers to create more cases particularly when content download is unnecessary. If a case is created without content download, content download can be initiated anytime the case is active pending available content download limits. There is no change to the active content download limit (100). \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 554940,
         "locale": null,
-        "modified": "2026-02-20T23:15:06",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -26045,12 +26106,12 @@
         "description": "Microsoft 365 Copilot Chat is now integrated in Microsoft Forms, including enabling the Surveys Agent from within Forms. Surveys Agent provides specialized capabilities to help with your form - from recommending and applying improvements to your form or quiz, to helping draft and send invitations, to analyzing your results. Surveys Agent is available to users with a Microsoft 365 Copilot license, and can be accessed by clicking the \"Copilot\" icon in Forms.",
         "id": 553136,
         "locale": null,
-        "modified": "2026-05-19T22:45:25",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37139,15 +37200,15 @@
     },
     {
         "created": "2025-11-18T17:15:10",
-        "description": "The new Project Manager agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We\u2019re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time.",
+        "description": "The new Project Manager agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We\u2019re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time. Updated May 21, 2026: We previously launched in Preview and GA is expected in June. We apologize for any inconvenience. ",
         "id": 516576,
         "locale": null,
-        "modified": "2026-03-30T23:00:38",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65911,12 +65972,12 @@
         "description": "Users will be able to search for and select SharePoint Lists through the Context IQ menu to help ground their prompts when using Copilot Chat.",
         "id": 422308,
         "locale": null,
-        "modified": "2026-01-16T00:31:01",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -94253,9 +94314,9 @@
         "description": "This introduces archiving at the file level for Microsoft 365 Archive. ",
         "id": 477371,
         "locale": null,
-        "modified": "2025-11-05T00:00:26",
+        "modified": "2026-05-22T22:15:37",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -94270,10 +94331,10 @@
                 "tagName": "SharePoint"
             },
             {
-                "tagName": "Preview"
+                "tagName": "General Availability"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -94294,10 +94355,10 @@
             ],
             "releasePhase": [
                 {
-                    "tagName": "Preview"
+                    "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
                 }
             ]
         },
