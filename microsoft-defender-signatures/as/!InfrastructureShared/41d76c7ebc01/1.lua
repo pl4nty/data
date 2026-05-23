@@ -8,13 +8,13 @@ if not l_0_0 or not l_0_0.image_path then
   return mp.CLEAN
 end
 local l_0_1 = {}
--- DECOMPILER ERROR at PC18: No list found for R1 , SetList fails
+-- DECOMPILER ERROR at PC19: No list found for R1 , SetList fails
 
--- DECOMPILER ERROR at PC21: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC22: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC25: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC26: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
 
 if l_0_0 and "werfault.exe" and Contains_any_caseinsenstive("svchost.exe", "WerFaultSecure.exe") then
   return mp.CLEAN
@@ -27,22 +27,22 @@ local l_0_3 = (mp.GetProcessCommandLine)(l_0_2)
 if not l_0_3 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC54: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC55: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC60: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC61: Overwrote pending register: R6 in 'AssignReg'
 
 local l_0_4 = (string.match)(l_0_3, "NisSrv.exe")
 if not l_0_4 then
   return mp.CLEAN
 end
 local l_0_5 = {}
--- DECOMPILER ERROR at PC69: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC70: Overwrote pending register: R7 in 'AssignReg'
 
--- DECOMPILER ERROR at PC70: No list found for R5 , SetList fails
+-- DECOMPILER ERROR at PC71: No list found for R5 , SetList fails
 
--- DECOMPILER ERROR at PC71: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC72: Overwrote pending register: R6 in 'AssignReg'
 
--- DECOMPILER ERROR at PC72: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC73: Overwrote pending register: R7 in 'AssignReg'
 
 for l_0_9,l_0_10 in ("HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinDefend")("te.processhost.exe") do
   local l_0_11 = (sysio.RegOpenKey)(l_0_10)
@@ -61,29 +61,54 @@ for l_0_9,l_0_10 in ("HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinDefend")("te
               if l_0_0 and l_0_0.ppid then
                 (MpCommon.BmTriggerSig)(l_0_0.ppid, "SuspWerFaultSec_CMD", l_0_19)
               end
-              return mp.INFECTED
+              if l_0_0 and l_0_0.image_path then
+                local l_0_20 = Contains_any_caseinsenstive
+                local l_0_21 = l_0_0.image_path
+                local l_0_22 = {}
+                -- DECOMPILER ERROR at PC161: No list found for R22 , SetList fails
+
+                -- DECOMPILER ERROR at PC165: Overwrote pending register: R20 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC166: Overwrote pending register: R20 in 'AssignReg'
+
+                if l_0_20 then
+                  return l_0_20
+                end
+              end
+              do
+                do
+                  -- DECOMPILER ERROR at PC168: Overwrote pending register: R20 in 'AssignReg'
+
+                  do return l_0_20.INFECTED end
+                  -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out DO_STMT
+
+                  -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                  -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
+
+                end
+              end
             end
           end
         end
-        do
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_STMT
 
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_STMT
 
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-          -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
+        -- DECOMPILER ERROR at PC173: LeaveBlock: unexpected jumping out IF_STMT
 
-        end
       end
     end
   end
 end
 do return mp.CLEAN end
--- DECOMPILER ERROR at PC160: Confused about usage of register R8 for local variables in 'ReleaseLocals'
+-- DECOMPILER ERROR at PC178: Confused about usage of register R8 for local variables in 'ReleaseLocals'
 
+-- WARNING: undefined locals caused missing assignments!
 

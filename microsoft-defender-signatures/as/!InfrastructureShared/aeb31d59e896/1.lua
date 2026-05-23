@@ -55,7 +55,7 @@ local l_0_5 = nil
 if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this_sigattrlog[3]).utf8p2 ~= "" then
   l_0_5 = (this_sigattrlog[3]).utf8p2
 end
-if l_0_5 == "" or l_0_5 == nil then
+if l_0_5 == "" or l_0_5 == nil or (string.find)(l_0_5, "/.local/bin/officecli.new", 1, true) then
   return mp.CLEAN
 end
 local l_0_6, l_0_7 = l_0_4(l_0_5)

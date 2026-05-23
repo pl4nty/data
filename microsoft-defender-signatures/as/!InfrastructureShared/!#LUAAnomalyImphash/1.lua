@@ -51,21 +51,17 @@ if l_0_0 ~= nil and #l_0_0 > 0 then
         ;
         (mp.set_mpattribute)("Lua:AnomalyImphashNew")
         return mp.INFECTED
-      else
-        set_research_data("Imphash_Anomaly", safeJsonSerialize(l_0_14), false)
-        ;
-        (mp.set_mpattribute)("Lua:AnomalyImphashWithinTraining")
       end
     else
       do
         do
           ;
           (MpCommon.AnomalyEventUpdate)(l_0_7, l_0_6, l_0_16.Count + 1, 1)
-          -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out DO_STMT
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out DO_STMT
 
-          -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-          -- DECOMPILER ERROR at PC136: LeaveBlock: unexpected jumping out IF_STMT
+          -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out IF_STMT
 
         end
       end
