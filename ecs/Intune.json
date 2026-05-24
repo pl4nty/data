@@ -370,7 +370,6 @@
             "EGM_UseRedisCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
-            "EnableCustomComplianceEvaluationDedup": true,
             "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
             "EnableRegisteredCompliancePartnersJson": true,
