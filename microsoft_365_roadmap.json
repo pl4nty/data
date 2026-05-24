@@ -74560,73 +74560,6 @@
     },
     {
         "created": "2025-05-15T23:15:36",
-        "description": "Users will be able to assign and remove categories to mails on Android devices.",
-        "id": 493945,
-        "locale": null,
-        "modified": "2025-07-23T23:00:18",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Mail Categories"
-    },
-    {
-        "created": "2025-05-15T23:15:36",
         "description": "This feature borrows the familiar custom permissions menu in Office and replaces the existing custom permissions UI in the Microsoft Purview Information Protection File Labeler. The new menu enables viewer, restricted editor, editor and owner permissions to be assigned to multiple groups at the same time.",
         "id": 493749,
         "locale": null,
@@ -79597,67 +79530,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot Pages module on Microsoft 365 Copilot mobile app"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "Microsoft 365 Copilot leverages insights inferred from conversations between the user and Copilot, along with data from the Microsoft Graph and custom instructions to provide personalized help for tasks. Users have full control and can view, manage, disable or clear memory at any time.",
-        "id": 486701,
-        "locale": null,
-        "modified": "2025-07-23T23:00:18",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365):  Copilot Memory"
     },
     {
         "created": "2025-04-23T16:15:28",
@@ -99314,61 +99186,6 @@
             ]
         },
         "title": "Microsoft Intune: Device clean up rule"
-    },
-    {
-        "created": "2023-09-15T22:05:59",
-        "description": "<div>Named entities are sensitive information types (SITs) that can\u2019t easily be identified by a regular expression or a function; these include person names, physical addresses, and medical terms and conditions. This update expands name and address coverage to an additional 7 countries, such as China and Russia, and expands medical terms and conditions (specifically for the Diseases SIT) to an additional 29 languages covering much of Europe, China, Japan, and Korea. </div>",
-        "id": 139461,
-        "locale": null,
-        "modified": "2025-07-23T23:00:18",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Information Protection - Named entity coverage for additional markets and languages (U.S. Government clouds)"
     },
     {
         "created": "2024-12-04T00:15:03",
