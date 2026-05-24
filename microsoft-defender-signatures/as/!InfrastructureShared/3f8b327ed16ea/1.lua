@@ -21,13 +21,15 @@ else
   return mp.CLEAN
 end
 local l_0_2 = {}
--- DECOMPILER ERROR at PC64: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC65: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC65: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC66: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC66: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC67: Overwrote pending register: R4 in 'AssignReg'
 
-if ("chocolatey")("Seek(0,0)", l_0_2) then
+-- DECOMPILER ERROR at PC68: Overwrote pending register: R5 in 'AssignReg'
+
+if ("chocolatey")("Seek(0,0)", "MINIPLASMA_INCONCLUSIVE") then
   return mp.CLEAN
 end
 local l_0_3 = nil
