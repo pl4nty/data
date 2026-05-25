@@ -440,6 +440,7 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern void SetTouchModeEnabled(bool is_touch_ui);
 
 // Look and feel feature holdout feature group.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kFeatureGroupLookAndFeelHoldout);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEnabledFeatureGroupLookAndFeelHoldout(

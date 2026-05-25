@@ -21,7 +21,7 @@
   },
   {
     "name": "android_sdk",
-    "size": 3255,
+    "size": 3264,
     "file_count": 2
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33397734,
-    "file_count": 4041
+    "size": 33412566,
+    "file_count": 4043
   },
   {
     "name": "boringssl",
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161940763,
-    "file_count": 19105
+    "size": 161952505,
+    "file_count": 19107
   },
   {
     "name": "dbus",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17457831,
-    "file_count": 2036
+    "size": 17479086,
+    "file_count": 2040
   },
   {
     "name": "entity_extraction",
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4414519,
+    "size": 4416928,
     "file_count": 616
   },
   {
@@ -661,8 +661,8 @@
   },
   {
     "name": "rust",
-    "size": 1961612,
-    "file_count": 244
+    "size": 1966938,
+    "file_count": 249
   },
   {
     "name": "screen-ai",
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3489288,
+    "size": 3489383,
     "file_count": 1204
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "name": "tflite",
-    "size": 1730909,
+    "size": 1731292,
     "file_count": 536
   },
   {

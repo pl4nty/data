@@ -323,9 +323,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kAlpsParsing);
 // Whether ALPS parsing is on for client hint parsing specifically.
 NET_EXPORT BASE_DECLARE_FEATURE(kAlpsClientHintParsing);
 
-// Whether to kill the session on Error::kAcceptChMalformed.
-NET_EXPORT BASE_DECLARE_FEATURE(kShouldKillSessionOnAcceptChMalformed);
-
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableWebsocketsOverHttp3);
 
 #if BUILDFLAG(IS_WIN)
@@ -489,14 +486,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionSigningQuotaAndCaching);
 // `device_bound_sessions_restricted_sites` in the
 // `NetworkContextParams`.
 NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessionsForRestrictedSites);
-
-// This feature controls whether we add a query param to registration on
-// restricted sites.
-NET_EXPORT BASE_DECLARE_FEATURE(
-    kDeviceBoundSessionsForRestrictedSitesExperimentId);
-NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
-    std::string,
-    kDeviceBoundSessionsForRestrictedSitesExperimentIdParam);
 
 // This feature will enable the browser to use Device Bound Session Credentials
 // for Single Sign On. This feature is only valid if `kDeviceBoundSessions` is
@@ -810,11 +799,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kDohFallbackAllowedWithLocalNameservers);
 // When enabled, users can make Secure DNS in AUTOMATIC mode fallback to a
 // well-known DoH provider before using insecure DNS.
 NET_EXPORT BASE_DECLARE_FEATURE(kAddAutomaticWithDohFallbackMode);
-
-// When enabled, and when the configured secure_dns_mode is AUTOMATIC, the DoH
-// fallback setting (dns_over_https.automatic_mode_fallback_to_doh) should be
-// forced to be interpreted as enabled.
-NET_EXPORT BASE_DECLARE_FEATURE(kForceSecureDnsDohFallback);
 
 // If true, a CONNECT-UDP response is not needed to start sending datagrams.
 NET_EXPORT BASE_DECLARE_FEATURE(
