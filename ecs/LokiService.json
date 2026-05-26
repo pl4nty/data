@@ -458,6 +458,10 @@
         "AllowRawInsightsEndpoint": false,
         "AlternateRouting_Endpoint": null,
         "AlternateRouting_Geographies": null,
+        "BlockParticularEndpoints": true,
+        "BlockedEndpointsList": [
+            "/api/v2/graphql/subscribeToNotificationsMutation"
+        ],
         "BlockedGqlFieldsList": [],
         "BypassTokenParsing": false,
         "CacheEventSamplingPercentage": 1,

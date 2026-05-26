@@ -1700,6 +1700,7 @@
                 "enableclientcorehealthcheck": true
             }
         },
+        "windows365client/RdClient/DisableDisconnectDialog": true,
         "wvdcs": true,
         "wvdmanagement": true
     },

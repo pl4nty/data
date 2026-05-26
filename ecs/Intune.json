@@ -345,8 +345,10 @@
         "FlightingV2": {
             "DeviceInventoryReporting": true,
             "EnableAppleDdmLobApps": true,
+            "EnableVerifyRecoveryLock": true,
             "EnforceEdgeManifestSignatureValidation": true,
             "GetToken": true,
+            "RecoveryLock": true,
             "ValidateEdgeManifestSignatures": true
         }
     },
@@ -437,14 +439,14 @@
             "QBSFSICoreOrganizationMigrationSwitchOver": true,
             "UseLKG_ActiveMalwareAggregateByCategory": false,
             "UseLKG_ActiveMalwareAggregateBySeverity": false,
-            "UseLKG_AdmxSettingsInPolicyForDeviceV3": true,
-            "UseLKG_AgentStatusSummary": true,
+            "UseLKG_AdmxSettingsInPolicyForDeviceV3": false,
+            "UseLKG_AgentStatusSummary": false,
             "UseLKG_AutopilotV2DepStatus": false,
             "UseLKG_CatalogAppsUpdateList": false,
             "UseLKG_DCv2SettingsInInventoryPolicyForDeviceV3": false,
             "UseLKG_DependentAppsInstallStatus": false,
             "UseLKG_DetectedMalware": true,
-            "UseLKG_DetectedMalwareAggregate": true,
+            "UseLKG_DetectedMalwareAggregate": false,
             "UseLKG_DetectedMalwareAggregateByState": false,
             "UseLKG_DeviceEncryptionStatusesDetailV3": false,
             "UseLKG_DeviceRunStatesByScript": true,

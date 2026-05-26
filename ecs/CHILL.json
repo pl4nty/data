@@ -3065,6 +3065,222 @@
         }
     },
     "ChillSCC": {
+        "Floodgate_Campaign_Security&ComplianceCenter.00e7744c-22b2-43c9-a0a1-79ce4539089f": {
+            "CampaignId": "00e7744c-22b2-43c9-a0a1-79ce4539089f",
+            "EndTimeUtc": "2027-05-30T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-19T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SiemMigrationWizard_S1_Landing_Exit",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Wanted to learn more about the process first",
+                                        "Prerequisites or permissions were unclear",
+                                        "Don't have the source SIEM export ready",
+                                        "Concerned about cost, scope, or impact",
+                                        "Just exploring - not ready to start"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "What stopped you from continuing today?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What would have helped you proceed?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/00e7744c-22b2-43c9-a0a1-79ce4539089f/d13b6809-ad28-4b5e-9211-98c02d0a37ce/Web-Security&ComplianceCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_Security&ComplianceCenter.452cf9d6-65ee-4aca-8951-66729d6a3f21": {
+            "CampaignId": "452cf9d6-65ee-4aca-8951-66729d6a3f21",
+            "EndTimeUtc": "2027-05-30T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-19T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SiemMigrationWizard_S2_Upload_Exit",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Export not ready",
+                                        "Export instructions unclear",
+                                        "Don't have source SIEM permissions",
+                                        "Source SIEM not supported",
+                                        "Just exploring - not ready to upload"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "What stopped you at the upload step?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What would make uploading easier?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/452cf9d6-65ee-4aca-8951-66729d6a3f21/800a9f67-1f61-459c-bdea-ae4a59c3df63/Web-Security&ComplianceCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_Security&ComplianceCenter.b4fc2400-f09e-4438-b8dd-1d433bd23e9b": {
+            "CampaignId": "b4fc2400-f09e-4438-b8dd-1d433bd23e9b",
+            "EndTimeUtc": "2027-05-30T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-19T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SiemMigrationWizard_S4_Workspace_Exit",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "No suitable workspace yet",
+                                        "Wrong workspace shown",
+                                        "Permissions issue",
+                                        "Need to discuss with my team",
+                                        "Not sure which workspace to pick"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "What stopped you at the workspace step?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What would have made workspace selection easier?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/b4fc2400-f09e-4438-b8dd-1d433bd23e9b/5cb8f670-e287-4a0c-a59e-11bef34a6ab9/Web-Security&ComplianceCenter/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_Security&ComplianceCenter.cbe6cd2b-8b3f-43a4-82d1-9f9a378339de": {
             "CampaignId": "cbe6cd2b-8b3f-43a4-82d1-9f9a378339de",
             "EndTimeUtc": "2026-06-17T21:00:00Z",
@@ -3155,6 +3371,150 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/cbe6cd2b-8b3f-43a4-82d1-9f9a378339de/523a937a-3fce-4599-9a7d-f2e96394c67c/Web-Security&ComplianceCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_Security&ComplianceCenter.d72fe0e3-ce52-4216-9e92-1045609d886f": {
+            "CampaignId": "d72fe0e3-ce52-4216-9e92-1045609d886f",
+            "EndTimeUtc": "2027-05-30T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-19T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SiemMigrationWizard_S3_Overview_Exit",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Rule count or coverage looks wrong",
+                                        "Unsure what happens next",
+                                        "Want to refine the export first",
+                                        "Need to discuss with my team",
+                                        "Performance or usability issue"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Why didn't you continue from the analysis overview?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What would have given you confidence to continue?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/d72fe0e3-ce52-4216-9e92-1045609d886f/fb59820a-0db2-4aac-99be-a9df7f24be5a/Web-Security&ComplianceCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_Security&ComplianceCenter.f89aaf40-e148-4963-8ed5-a92ac2b7bc6e": {
+            "CampaignId": "f89aaf40-e148-4963-8ed5-a92ac2b7bc6e",
+            "EndTimeUtc": "2027-05-30T21:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-05-19T21:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SiemMigrationWizard_S5_ExistingRecs_Exit",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Didn't want to overwrite existing recommendations",
+                                        "Unclear what happens to existing recs if I proceed",
+                                        "Want a diff or preview before re-running",
+                                        "Need approval before overwriting",
+                                        "Concerned about losing prior analysis data"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Why did you stop here after seeing existing recommendations?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What would make you confident to proceed?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/f89aaf40-e148-4963-8ed5-a92ac2b7bc6e/b6438199-7648-4aee-aa6e-30eda821296e/Web-Security&ComplianceCenter/",
                     "variables": {}
                 }
             }

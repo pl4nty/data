@@ -1218,6 +1218,12 @@
                     "IsEnabled": false
                 }
             ],
+            "EnableInteractiveTaskUpdate": [
+                {
+                    "Flight": "EnableInteractiveTaskUpdate",
+                    "IsEnabled": true
+                }
+            ],
             "EnableIterationResults": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIterationResults",
