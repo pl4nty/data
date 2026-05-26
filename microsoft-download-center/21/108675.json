@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for FTP",
+    "downloadDescription": "System Center 2022 Integration Pack for FTP",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_IntegrationPack_for_FTP.oip",
+            "url": "https://download.microsoft.com/download/165d5e34-9de5-4cc5-b606-3ca5b54ed012/System_Center_IntegrationPack_for_FTP.oip",
+            "size": "1195910",
+            "version": "10.22.10.3",
+            "datePublished": "5/26/2026 10:48:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for FTP is an add-on for System Center 2022 Orchestrator that enables you to create activities within runbooks that automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.22.10.3",
+    "detailsSection_file_name": [
+        "System_Center_IntegrationPack_for_FTP.oip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "5/26/2026",
+    "systemRequirementsSection": "<b>Supported Operating Systems</b>\n\nWindows Server 2022\n\n<ul>\n  <li>System Center 2022 - Orchestrator</li>\n  <li>FTP Server</li>\n  <li>Windows Server 2019 or higher</li>\n  <li>.NET Framework 4.0 or higher (NET 4.7.2 recommended)</li>\n  <li>RAM \u2013 minimum 1GB (recommended 2GB)</li>\n  <li>Disk space minimum 200MB</li>\n  <li>CPU Dual Core or better</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108675",
+    "downloadPreload": true
+}
