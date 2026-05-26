@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = getOrgIdScrubbed()
-if l_0_0 ~= nil and l_0_0 == "PII_c475ba7b0a466d24d1eaa5283dec456f150a341f" then
+if l_0_0 ~= nil and (l_0_0 == "PII_c475ba7b0a466d24d1eaa5283dec456f150a341f" or l_0_0 == "PII_20ee2910cfb5158311549d8df218145fafa8183b") then
   return mp.LOWFI
 end
 local l_0_1 = (mp.GetParentProcInfo)()
