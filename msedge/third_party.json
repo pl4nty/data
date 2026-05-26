@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2219599,
-    "file_count": 184
+    "size": 2243226,
+    "file_count": 185
   },
   {
     "name": "android_build_tools",
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33412566,
+    "size": 33413032,
     "file_count": 4043
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161952505,
-    "file_count": 19107
+    "size": 161955519,
+    "file_count": 19111
   },
   {
     "name": "dbus",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17479086,
-    "file_count": 2040
+    "size": 17503111,
+    "file_count": 2041
   },
   {
     "name": "entity_extraction",
@@ -561,7 +561,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 65338,
+    "size": 65380,
     "file_count": 39
   },
   {
@@ -601,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4416928,
-    "file_count": 616
+    "size": 4428240,
+    "file_count": 617
   },
   {
     "name": "perl",
@@ -686,8 +686,8 @@
   },
   {
     "name": "skia",
-    "size": 3489383,
-    "file_count": 1204
+    "size": 3489941,
+    "file_count": 1206
   },
   {
     "name": "speech-dispatcher",
