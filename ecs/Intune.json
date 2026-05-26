@@ -368,6 +368,7 @@
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
             "EGM_UseRedisCache": true,
+            "EnableAadDeviceChangeDedup": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
             "EnableDeviceCleanupPtiDeletion": true,
