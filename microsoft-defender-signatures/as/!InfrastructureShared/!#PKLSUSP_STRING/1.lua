@@ -27,6 +27,7 @@ l_0_0["SCPT:VenomousSugar.I"] = 1
 l_0_0["SCRIPT:StringCurl"] = 1
 l_0_0["SCPT:wget.parameter"] = 1
 l_0_0["SCRIPT:ChmodToExec"] = 1
+l_0_0["SCPT:PKLSuspPSString"] = 2
 local l_0_1 = 0
 for l_0_5,l_0_6 in pairs(l_0_0) do
   if (mp.get_mpattribute)(l_0_5) then
