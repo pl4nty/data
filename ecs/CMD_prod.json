@@ -726,6 +726,7 @@
         "EnableSyncAllForReady": true,
         "EnableSyncInterestedUserFilter": true,
         "EnableSystemLocaleSettingInFleet": true,
+        "EnableTargetAssignmentMigration": true,
         "EnableTaskProgressRefreshForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
         "EnableTenantESUServicePlanSync": true,
         "EnableTenantOffboardEventhub": true,

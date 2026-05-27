@@ -808,6 +808,7 @@
         "EnableMigrationForDisasterRecoveryPlus": false,
         "EnableMinorImageVersionCheckAutopilot": true,
         "EnableMmdEnrollmentInBackend": true,
+        "EnableMonitoringLicenseUtilizationPage": true,
         "EnableMoveActionErrorDetail": true,
         "EnableMsa": true,
         "EnableMultiNATGatewayForSubnetInDiffStatus": true,
@@ -1414,6 +1415,7 @@
         "Nh_Avd_Additional_Telemetry": true,
         "Nh_Claims_Challenge": true,
         "Nh_CloudApps": true,
+        "Nh_Enable_Clipboard_Retries": true,
         "Nh_Enable_CoreInput_DVC": true,
         "Nh_Enable_Drag_And_Drop": true,
         "Nh_Enable_Extended_Clipboard": true,
@@ -1696,11 +1698,13 @@
                 "enableTheme": true
             },
             "ProxyResolver": true,
+            "RdClient": {
+                "DisableDisconnectDialog": true
+            },
             "rdcore": {
                 "enableclientcorehealthcheck": true
             }
         },
-        "windows365client/RdClient/DisableDisconnectDialog": true,
         "wvdcs": true,
         "wvdmanagement": true
     },

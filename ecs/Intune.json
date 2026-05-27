@@ -354,7 +354,8 @@
     },
     "SVC_AppleVPP": {
         "FlightingV2": {
-            "AppleVPPv2": true
+            "AppleVPPv2": true,
+            "LicenseTargetPK": true
         }
     },
     "SVC_CertificateAuthority": {
