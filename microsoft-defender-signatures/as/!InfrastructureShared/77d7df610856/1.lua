@@ -33,7 +33,7 @@ l_0_6.BREAK_AT_FIRST_HIT_MALWARE = "60"
 l_0_6.BREAK_AT_FIRST_HIT_PHISH = "60"
 l_0_6.BREAK_AT_FIRST_HIT_CLEAN = "60"
 local l_0_7 = {}
-l_0_7[0] = l_0_5
+l_0_7[1] = l_0_5
 if CheckUrlReputationSimple(l_0_7, l_0_6, 60) == true then
   return mp.INFECTED
 end
