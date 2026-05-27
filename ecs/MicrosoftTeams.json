@@ -1073,6 +1073,7 @@
     },
     "TeamsAdminCenter_Prod": {
         "Feature": {
+            "UI.Mgmt.DirectRouting.SIPLadderUIActionGuardWhenOutsideSLA": true,
             "UI.Mgmt.Perf.GraphGroupsCaching": true
         }
     },
