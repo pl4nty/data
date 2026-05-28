@@ -1109,6 +1109,7 @@
         "EnableUXFF": true,
         "EnableUnifiedData": true,
         "EntraDeviceSyncer": true,
+        "GraphValidation": true,
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
         "HotpatchOnByDefaultOptOut": true,
