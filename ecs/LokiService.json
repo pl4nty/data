@@ -179,6 +179,7 @@
         "features.useDayViewAsDefault": "1",
         "features.useNovaForCalendar": 0,
         "features.useNovaForSuggestions": 0,
+        "followCapability": 1,
         "hostFeatureFlags_shared": 0,
         "hostRingBucket": "60",
         "hostTrySuspend_shared": 1,
