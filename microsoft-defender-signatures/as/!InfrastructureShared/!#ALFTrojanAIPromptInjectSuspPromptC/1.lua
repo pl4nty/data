@@ -237,21 +237,21 @@ do
           if (((not l_0_49 and l_0_50) or (MpCommon.IsSampled)(l_0_54, l_0_55, l_0_56, l_0_57) == false) and safeJsonSerialize({score = tostring(l_0_54), threshold = tostring(l_0_54), matched = (table.concat)(l_0_54, l_0_55), categories = (table.concat)(l_0_54, l_0_55), count = tostring(l_0_54), raw_matches = tostring(l_0_54), verb_gate = tostring(l_0_54), trigger = l_0_47 and "categorical" or "score", agent_session_id = tostring(l_0_54), framework = tostring(l_0_54), buffer_len = tostring(l_0_54), last_message = l_0_51, buffer = (MpCommon.Base64Encode)(l_0_54(l_0_55))}) == nil) or #safeJsonSerialize({score = tostring(l_0_54), threshold = tostring(l_0_54), matched = (table.concat)(l_0_54, l_0_55), categories = (table.concat)(l_0_54, l_0_55), count = tostring(l_0_54), raw_matches = tostring(l_0_54), verb_gate = tostring(l_0_54), trigger = l_0_47 and "categorical" or "score", agent_session_id = tostring(l_0_54), framework = tostring(l_0_54), buffer_len = tostring(l_0_54), last_message = l_0_51, buffer = (MpCommon.Base64Encode)(l_0_54(l_0_55))}) == 0 then
             return mp.CLEAN
           end
-          -- DECOMPILER ERROR at PC621: Overwrote pending register: R46 in 'AssignReg'
+          -- DECOMPILER ERROR at PC628: Overwrote pending register: R46 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC622: Overwrote pending register: R46 in 'AssignReg'
+          -- DECOMPILER ERROR at PC629: Overwrote pending register: R47 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC623: Overwrote pending register: R47 in 'AssignReg'
+          if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+            (MpCommon.BmTriggerSig)(l_0_56, l_0_57, l_0_58)
+          end
+          -- DECOMPILER ERROR at PC634: Overwrote pending register: R46 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC625: Overwrote pending register: R47 in 'AssignReg'
-
-          set_research_data("AtrAIPromptInject", l_0_56, l_0_57)
           ;
-          (mp.SetDetectionString)(safeJsonSerialize({score = tostring(l_0_54), threshold = tostring(l_0_54), matched = (table.concat)(l_0_54, l_0_55), categories = (table.concat)(l_0_54, l_0_55), count = tostring(l_0_54), raw_matches = tostring(l_0_54), verb_gate = tostring(l_0_54), trigger = l_0_47 and "categorical" or "score", agent_session_id = tostring(l_0_54), framework = tostring(l_0_54), buffer_len = tostring(l_0_54), last_message = l_0_51, buffer = (MpCommon.Base64Encode)(l_0_54(l_0_55))}))
+          (mp.SetDetectionString)(l_0_56)
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC634: Confused about usage of register R45 for local variables in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC639: Confused about usage of register R45 for local variables in 'ReleaseLocals'
 
-          -- DECOMPILER ERROR: 24 unprocessed JMP targets
+          -- DECOMPILER ERROR: 25 unprocessed JMP targets
         end
       end
     end

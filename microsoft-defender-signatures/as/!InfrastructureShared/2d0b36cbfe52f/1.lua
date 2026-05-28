@@ -1,9 +1,9 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanAIModelReverseShellA\1.luac 
+-- Command line: lua\!InfrastructureShared\2d0b36cbfe52f\1.luac 
 
 -- params : ...
 -- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:pyWebShell") >= 4 then
+if GetRollingQueueKeys("Medicated64Sliver") or GetRollingQueueKeys("Medicated32Sliver") then
   return mp.INFECTED
 end
 return mp.CLEAN

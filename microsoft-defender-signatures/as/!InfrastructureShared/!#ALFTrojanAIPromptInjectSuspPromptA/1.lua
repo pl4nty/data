@@ -538,54 +538,54 @@ end
 -- DECOMPILER ERROR at PC551: Overwrote pending register: R11 in 'AssignReg'
 
 if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") or (mp.get_mpattribute)("MpIsAiMcpODRScan") then
-  for l_0_16,l_0_17 in pairs({type = "MpIsAiMcpAmsiScan"}) do
-    -- DECOMPILER ERROR at PC557: Overwrote pending register: R18 in 'AssignReg'
+  do
+    for l_0_16,l_0_17 in pairs({type = "MpIsAiMcpAmsiScan"}) do
+      -- DECOMPILER ERROR at PC557: Overwrote pending register: R18 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC558: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC558: Overwrote pending register: R18 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC559: Overwrote pending register: R19 in 'AssignReg'
+      -- DECOMPILER ERROR at PC559: Overwrote pending register: R19 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC560: Overwrote pending register: R20 in 'AssignReg'
+      -- DECOMPILER ERROR at PC560: Overwrote pending register: R20 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC561: Overwrote pending register: R21 in 'AssignReg'
+      -- DECOMPILER ERROR at PC561: Overwrote pending register: R21 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC562: Overwrote pending register: R22 in 'AssignReg'
+      -- DECOMPILER ERROR at PC562: Overwrote pending register: R22 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC564: Overwrote pending register: R19 in 'AssignReg'
+      -- DECOMPILER ERROR at PC564: Overwrote pending register: R19 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC565: Confused about usage of register: R12 in 'UnsetPending'
 
-  end
-  -- DECOMPILER ERROR at PC570: Confused about usage of register: R9 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC579: Confused about usage of register: R10 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC580: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC584: Confused about usage of register: R10 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC589: Confused about usage of register: R12 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC602: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC620: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC622: Overwrote pending register: R18 in 'AssignReg'
-
-  if (MpCommon.IsSampled)(1000, true, true, l_0_18) == false then
-    do
-      set_research_data("AIPromptInject", (MpCommon.Base64Encode)(l_0_18), l_0_18)
-      -- DECOMPILER ERROR at PC626: Confused about usage of register: R13 in 'UnsetPending'
-
-      ;
-      (mp.SetDetectionString)({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))})
-      do return mp.INFECTED end
-      -- DECOMPILER ERROR at PC631: Confused about usage of register R17 for local variables in 'ReleaseLocals'
-
-      -- WARNING: undefined locals caused missing assignments!
     end
+    -- DECOMPILER ERROR at PC570: Confused about usage of register: R9 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC579: Confused about usage of register: R10 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC580: Overwrote pending register: R16 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC584: Confused about usage of register: R10 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC589: Confused about usage of register: R12 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC602: Overwrote pending register: R18 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC626: Overwrote pending register: R18 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC627: Overwrote pending register: R19 in 'AssignReg'
+
+    if (MpCommon.IsSampled)(1000, true, true, l_0_18) ~= false or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+      (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), l_0_18, l_0_19)
+    end
+    -- DECOMPILER ERROR at PC631: Confused about usage of register: R13 in 'UnsetPending'
+
+    ;
+    (mp.SetDetectionString)({score = tostring(0 + l_0_17), threshold = tostring(l_0_3), matched = (table.concat)({}, l_0_16), count = tostring(#{}), scaninfo = (table.concat)({}, ","), ostype = l_0_8 or 0, buffer = (MpCommon.Base64Encode)(tostring(l_0_2))})
+    do return mp.INFECTED end
+    -- DECOMPILER ERROR at PC636: Confused about usage of register R17 for local variables in 'ReleaseLocals'
+
+    -- WARNING: undefined locals caused missing assignments!
   end
 end
 

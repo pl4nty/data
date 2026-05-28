@@ -525,60 +525,55 @@ do
               -- DECOMPILER ERROR at PC545: Overwrote pending register: R34 in 'AssignReg'
 
               if not l_0_49 or (((l_0_50 or not l_0_50) and l_0_50) or l_0_49) then
-                for l_0_53,l_0_54 in l_0_50 do
-                  -- DECOMPILER ERROR at PC549: Overwrote pending register: R38 in 'AssignReg'
+                do
+                  for l_0_53,l_0_54 in l_0_50 do
+                    -- DECOMPILER ERROR at PC549: Overwrote pending register: R38 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC555: Overwrote pending register: R39 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC555: Overwrote pending register: R39 in 'AssignReg'
 
-                end
-                -- DECOMPILER ERROR at PC559: Overwrote pending register: R33 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC563: Overwrote pending register: R35 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC564: Confused about usage of register: R24 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC564: Overwrote pending register: R36 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC573: Confused about usage of register: R26 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC574: Overwrote pending register: R37 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC579: Confused about usage of register: R25 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC584: Confused about usage of register: R26 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC595: Confused about usage of register: R29 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC622: Overwrote pending register: R38 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC623: Overwrote pending register: R39 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC639: Overwrote pending register: R38 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC640: Overwrote pending register: R38 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC641: Overwrote pending register: R39 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC643: Overwrote pending register: R39 in 'AssignReg'
-
-                if (MpCommon.IsSampled)(1000, true, l_0_55, l_0_56) == false then
-                  do
-                    R36_PC636("AIPromptInject", l_0_55, l_0_56)
-                    -- DECOMPILER ERROR at PC645: Overwrote pending register: R36 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC646: Overwrote pending register: R36 in 'AssignReg'
-
-                    R36_PC636(safeJsonSerialize(R36_PC636))
-                    -- DECOMPILER ERROR at PC649: Overwrote pending register: R36 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC650: Overwrote pending register: R36 in 'AssignReg'
-
-                    do return R36_PC636 end
-                    -- DECOMPILER ERROR at PC652: Confused about usage of register R37 for local variables in 'ReleaseLocals'
-
-                    -- WARNING: undefined locals caused missing assignments!
-                    -- DECOMPILER ERROR: 22 unprocessed JMP targets
                   end
+                  -- DECOMPILER ERROR at PC559: Overwrote pending register: R33 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC563: Overwrote pending register: R35 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC564: Confused about usage of register: R24 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC564: Overwrote pending register: R36 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC573: Confused about usage of register: R26 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC574: Overwrote pending register: R37 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC579: Confused about usage of register: R25 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC584: Confused about usage of register: R26 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC595: Confused about usage of register: R29 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC622: Overwrote pending register: R38 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC623: Overwrote pending register: R39 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC638: Overwrote pending register: R36 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC646: Overwrote pending register: R38 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC647: Overwrote pending register: R39 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC648: Overwrote pending register: R40 in 'AssignReg'
+
+                  if (MpCommon.IsSampled)(1000, true, l_0_55, l_0_56) ~= false or R36_PC636 then
+                    (MpCommon.BmTriggerSig)(l_0_55, l_0_56, l_0_57)
+                  end
+                  -- DECOMPILER ERROR at PC652: Overwrote pending register: R38 in 'AssignReg'
+
+                  ;
+                  (mp.SetDetectionString)(l_0_55)
+                  do return mp.INFECTED end
+                  -- DECOMPILER ERROR at PC657: Confused about usage of register R37 for local variables in 'ReleaseLocals'
+
+                  -- WARNING: undefined locals caused missing assignments!
+                  -- DECOMPILER ERROR: 23 unprocessed JMP targets
                 end
               end
             end
