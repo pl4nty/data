@@ -181,6 +181,7 @@
                 "SVC_Auditing",
                 "SVC_AuthZ",
                 "SVC_CertificateAuthority",
+                "SVC_CertRuntimeValidation",
                 "SVC_ChromebookSync",
                 "SVC_ClientServices",
                 "SVC_CloudPki",
@@ -294,6 +295,7 @@
     },
     "SVC_AdminTasks": {
         "FlightingV2": {
+            "EnableCUDController": true,
             "EnableReadController": true
         }
     },
@@ -694,6 +696,7 @@
     },
     "UX_AdminTasks": {
         "FlightingV2": {
+            "EnableATAssignTo": true,
             "EnableAdminTasks": true
         }
     },
