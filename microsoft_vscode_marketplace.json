@@ -183,6 +183,13 @@
                 "id": "DiscreteTom.string-hover"
             }
         },
+        "DmitriiKholkin.happy-db": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "RapiDB",
+                "id": "DmitriiKholkin.rapidb"
+            }
+        },
         "DougFinke.vscode-pandoc": {
             "disallowInstall": true,
             "extension": {
@@ -543,6 +550,7 @@
             "additionalInfo": "Please use the built-in [Settings Sync](https://aka.ms/vscode-settings-sync-help) functionality instead.",
             "disallowInstall": true
         },
+        "ShivaPrasanth.dotbook": true,
         "Shopify.rubocop-lsp": {
             "disallowInstall": true,
             "extension": {
@@ -1057,6 +1065,13 @@
                 "id": "cweijan.vscode-database-client2"
             }
         },
+        "cweijan.vscode-excel": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Office Viewer",
+                "id": "cweijan.vscode-office"
+            }
+        },
         "cweijan.vscode-myssql-client2": {
             "disallowInstall": true,
             "extension": {
@@ -1091,6 +1106,13 @@
             "extension": {
                 "displayName": "ESLint",
                 "id": "dbaeumer.vscode-eslint"
+            }
+        },
+        "deanmlittle.vscode-sbpf-asm": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "sBPF Toolkit",
+                "id": "blueshift-gg.vscode-sbpf-toolkit"
             }
         },
         "deitry.unity-debug": {
@@ -1267,6 +1289,13 @@
             }
         },
         "glen-84.sass-lint": true,
+        "goSiqueira.sindarin-for-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Sindarin for VSCode",
+                "id": "SindarinCorp.sindarin-lang"
+            }
+        },
         "hackwaly.ocaml": true,
         "halcolo.moonkai": {
             "disallowInstall": true,
@@ -1391,6 +1420,13 @@
                 "id": "apicurio.apicurio-registry-explorer"
             }
         },
+        "jitera.jitera": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Jitera: AI Context Platform (Japan)",
+                "id": "jitera.jitera-extension"
+            }
+        },
         "joaompinto.asciidoctor-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -1405,6 +1441,13 @@
                 "id": "circleci.circleci"
             }
         },
+        "jorsm.vertex-anthropic": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Vertex AI Models Chat Provider",
+                "id": "jorsm.vertex-ai-models-chat-provider"
+            }
+        },
         "josin.kusto-syntax-highlighting": true,
         "jpogran.puppet-vscode": {
             "disallowInstall": true,
@@ -1414,6 +1457,7 @@
             }
         },
         "jroesch.lean": true,
+        "jsiwhitehead.vscode-maraca": true,
         "juanm04.rinfo-unlp": {
             "disallowInstall": true,
             "extension": {
@@ -1576,6 +1620,13 @@
             "extension": {
                 "displayName": "Marko VSCode",
                 "id": "Marko-JS.marko-vscode"
+            }
+        },
+        "matronator.mtrgen-yaml-templates": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "MTRGen Templates Support - Syntax Highlighting, File Creation and more...",
+                "id": "matronator.mtrgen-syntax"
             }
         },
         "maximedenes.vscoq": {
@@ -2136,6 +2187,13 @@
             "extension": {
                 "displayName": "textlint",
                 "id": "3w36zj6.textlint"
+            }
+        },
+        "tal7aouy.icons": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Icons \u2013 Maintained",
+                "id": "yusifaliyevpro.vscicons"
             }
         },
         "tao-cumplido.hex-viewer": {

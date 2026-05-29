@@ -394,7 +394,6 @@
         "tcpPorts": "80,443",
         "urls": [
             "officecdn.microsoft.com",
-            "officecdn.microsoft.com.edgesuite.net",
             "otelrules.azureedge.net"
         ]
     },
