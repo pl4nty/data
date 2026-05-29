@@ -1532,8 +1532,6 @@
         "SendAllVMs": true,
         "SeparateCreateAndUpdateImageVersion": true,
         "SetChunkSizeTo1000": true,
-        "SetPolicyTenantEntityNeedBackfillTag_BackfillAustralAsiaGeoLocation": true,
-        "SetPolicyTenantEntityNeedBackfillTag_BackfillMexicoGeoLocation": true,
         "SetPolicyTenantEntityNeedBackfillTag_BackfillMitigateVsbWin10": false,
         "ShareSnapshotSwitchToAMS": true,
         "ShouldReturn404WhenCloudPCNotFound": true,

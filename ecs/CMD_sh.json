@@ -1337,8 +1337,6 @@
         "ScplTenentEventProcess": true,
         "SeahawkToWindowsAppMigrationPhase": 3,
         "SeparateCreateAndUpdateImageVersion": true,
-        "SetPolicyTenantEntityNeedBackfillTag_BackfillAustralAsiaGeoLocation": false,
-        "SetPolicyTenantEntityNeedBackfillTag_BackfillMexicoGeoLocation": false,
         "ShareSnapshotSwitchToAMS": true,
         "ShouldReturn404WhenCloudPCNotFound": true,
         "SkipRemovingSecurityLogs": true,
