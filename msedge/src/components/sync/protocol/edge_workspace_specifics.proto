@@ -37,6 +37,14 @@ message Workspace {
     WINDOWS_COPILOT_APP = 2;
   }
 
+  // Keep in sync with edge::spaceworks::SpaceworkTabStripState. Absence of
+  // tab_strip_state represents unset.
+  enum TabStripState {
+    TAB_STRIP_STATE_HORIZONTAL = 1;
+    TAB_STRIP_STATE_VERTICAL_PINNED = 2;
+    TAB_STRIP_STATE_VERTICAL_COLLAPSED = 3;
+  }
+
   // The displayed title of the workspace.
   optional string title = 1;
 
@@ -66,6 +74,9 @@ message Workspace {
 
   // An optional emoji icon for the workspace.
   optional string emoji = 9;
+
+  // The durable tab strip state for this workspace.
+  optional TabStripState tab_strip_state = 10;
 }
 
 // Sync protocol datatype extension for saved tabs. WorkspaceTabs

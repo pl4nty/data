@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12944942,
+    "size": 12945270,
     "file_count": 163
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33420696,
-    "file_count": 4043
+    "size": 33437532,
+    "file_count": 4044
   },
   {
     "name": "boringssl",
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161955519,
-    "file_count": 19111
+    "size": 161969537,
+    "file_count": 19119
   },
   {
     "name": "dbus",
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11425769,
+    "size": 11426793,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17503148,
-    "file_count": 2041
+    "size": 17616339,
+    "file_count": 2046
   },
   {
     "name": "entity_extraction",
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 97560881,
-    "file_count": 11240
+    "size": 98529524,
+    "file_count": 11371
   },
   {
     "name": "flac",
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44138197,
-    "file_count": 3389
+    "size": 44215413,
+    "file_count": 3402
   },
   {
     "name": "googletest",
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 60858,
+    "size": 61541,
     "file_count": 46
   },
   {
@@ -476,12 +476,12 @@
   },
   {
     "name": "litert",
-    "size": 190089,
+    "size": 190637,
     "file_count": 67
   },
   {
     "name": "llvm-build",
-    "size": 401182903,
+    "size": 401202871,
     "file_count": 358
   },
   {
@@ -501,7 +501,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 295906,
+    "size": 296059,
     "file_count": 47
   },
   {
@@ -601,8 +601,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4428651,
-    "file_count": 617
+    "size": 4465839,
+    "file_count": 621
   },
   {
     "name": "perl",
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3489941,
+    "size": 3484885,
     "file_count": 1206
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 550833,
+    "size": 551103,
     "file_count": 15
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "name": "tflite",
-    "size": 1731292,
+    "size": 1733030,
     "file_count": 536
   },
   {
@@ -742,6 +742,11 @@
   {
     "name": "trust_protection_lists",
     "size": 53837,
+    "file_count": 7
+  },
+  {
+    "name": "typescript",
+    "size": 94900,
     "file_count": 7
   },
   {
@@ -756,7 +761,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1505332,
+    "size": 1506040,
     "file_count": 23
   },
   {
@@ -766,13 +771,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2752134,
+    "size": 2754239,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7532604,
-    "file_count": 196
+    "size": 7536143,
+    "file_count": 195
   },
   {
     "name": "vulkan_memory_allocator",
