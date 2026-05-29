@@ -502,13 +502,56 @@ local l_0_7 = function()
 
   -- DECOMPILER ERROR at PC192: No list found for R48 , SetList fails
 
+  local l_8_49 = {}
+  -- DECOMPILER ERROR at PC194: Overwrote pending register: R50 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC196: No list found for R49 , SetList fails
+
   do
-    local l_8_49 = {}
-    -- DECOMPILER ERROR at PC194: Overwrote pending register: R50 in 'AssignReg'
+    local l_8_50 = {}
+    -- DECOMPILER ERROR at PC198: Overwrote pending register: R51 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC196: No list found for R49 , SetList fails
+    -- DECOMPILER ERROR at PC200: No list found for R50 , SetList fails
 
-    -- DECOMPILER ERROR at PC197: No list found for R0 , SetList fails
+    -- DECOMPILER ERROR at PC201: No list found for R0 , SetList fails
+
+    -- DECOMPILER ERROR at PC207: Overwrote pending register: R3 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC211: Overwrote pending register: R4 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC215: Overwrote pending register: R5 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC219: Overwrote pending register: R6 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC223: Overwrote pending register: R7 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC227: Overwrote pending register: R8 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC231: Overwrote pending register: R9 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC235: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC239: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC243: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC247: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC251: Overwrote pending register: R14 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC255: Overwrote pending register: R15 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC259: Overwrote pending register: R16 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC263: Overwrote pending register: R17 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC267: Overwrote pending register: R18 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC271: Overwrote pending register: R19 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC275: Overwrote pending register: R20 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC278: No list found for R0 , SetList fails
 
     do return l_8_0 end
     -- WARNING: undefined locals caused missing assignments!

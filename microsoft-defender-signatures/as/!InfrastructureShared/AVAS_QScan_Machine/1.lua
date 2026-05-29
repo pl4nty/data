@@ -55,10 +55,10 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
-local l_0_3 = (versioning.GetMachineGuid)()
+local l_0_3 = (versioning.GetEngineRing)()
 -- DECOMPILER ERROR at PC117: Overwrote pending register: R2 in 'AssignReg'
 
-if l_0_3 ~= nil and l_0_3:lower() == "c196eba5-1b0d-4a24-a65c-3efcda1a2cb9" then
+if l_0_3 ~= nil and l_0_3 <= versioning.ENGINE_RING_1_PRERELEASE then
   l_0_1 = pcall(Infrastructure_ScanBITSJobs)
   if not l_0_1 then
     l_0_0.ScanBITSJobs = l_0_2

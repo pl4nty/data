@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = {}
-local l_0_1 = (nri.GetURI)()
+local l_0_1 = (nri.GetRawRequestBlob)()
 if l_0_1 == nil then
   return mp.CLEAN
 end
