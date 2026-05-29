@@ -768,6 +768,25 @@
         ]
     },
     {
+        "displayName": "GitHub Copilot CLI",
+        "displayPublisher": "GitHub",
+        "displaySummary": "GitHub Copilot coding agent in the terminal.",
+        "icon": "data:image/png;base64,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",
+        "keywords": [
+            "GitHub Copilot",
+            "Copilot",
+            "CLI",
+            "Coding"
+        ],
+        "name": "GitHubCopilotCli",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "1.0.51",
+        "versions": [
+            "1.0.51"
+        ]
+    },
+    {
         "displayName": "HPC Drivers Scripts",
         "displayPublisher": "Microsoft",
         "displaySummary": "The latest Ubuntu and Alma Scripts provided to the Air-Gapped Cloud",

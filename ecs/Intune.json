@@ -515,7 +515,8 @@
     },
     "SVC_DeviceDataUpload": {
         "FlightingV2": {
-            "EnableAppInventoryPrPMVR": true
+            "EnableAppInventoryPrPMVR": true,
+            "EnableLocalAiAgent": true
         }
     },
     "SVC_DeviceFE": {
