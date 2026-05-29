@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 (KB5085154)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 (KB5085154)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Upgrade-SP3.ps1",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/Upgrade-SP3.ps1",
+            "size": "49330",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMServiceLP_x64_KB5085154.msp",
+            "size": "17616896",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMService_x64_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMService_x64_KB5085154.msp",
+            "size": "150450176",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x86_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMAddinsExtensionsLP_x86_KB5085154.msp",
+            "size": "3166208",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x64_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMAddinsExtensionsLP_x64_KB5085154.msp",
+            "size": "9154560",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x86_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMAddinsExtensions_x86_KB5085154.msp",
+            "size": "8159232",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIMAddinsExtensions_x64_KB5085154.msp",
+            "url": "https://download.microsoft.com/download/39a00559-4263-450c-8239-21612f0eb46c/MIMAddinsExtensions_x64_KB5085154.msp",
+            "size": "15777792",
+            "version": "4.7.6.0",
+            "datePublished": "5/29/2026 3:26:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a Service Pack 3 for Microsoft Identity Manager 2016. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains additional supported platforms and improvements outlined in <a href=\"https://support.microsoft.com/en-us/topic/microsoft-identity-manager-2016-sp3-4-7-6-0-update-rollup-is-available-f29532c8-43ae-46e4-a663-f8b751c6cca6\">Knowledge Base Article 5085154</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5085154",
+        "name": "KB5085154"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.6.0",
+    "detailsSection_file_name": [
+        "Upgrade-SP3.ps1",
+        "MIMServiceLP_x64_KB5085154.msp",
+        "MIMService_x64_KB5085154.msp",
+        "MIMAddinsExtensionsLP_x86_KB5085154.msp",
+        "MIMAddinsExtensionsLP_x64_KB5085154.msp",
+        "MIMAddinsExtensions_x86_KB5085154.msp",
+        "MIMAddinsExtensions_x64_KB5085154.msp"
+    ],
+    "detailsSection_file_size": [
+        "48.2 KB",
+        "16.8 MB",
+        "143.5 MB",
+        "3.0 MB",
+        "8.7 MB",
+        "7.8 MB",
+        "15.0 MB"
+    ],
+    "detailsSection_file_date": "5/29/2026",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Perform a backup of your data and run the PowerShell script Upgrade-SP3 in administrative mode. Visit the Microsoft Identity Manager Upgrade to SP3 guide for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Upgrade to SP3 guide",
+            "url": "https://learn.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-2016-upgrade-from-service-pack-2-to-service-pack-3"
+        },
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108677",
+    "downloadPreload": true
+}
