@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "en-us",
+    "downloadDescription": "en-us",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ClawpilotDev-Windows-9.9.9-x64-Setup.exe",
+            "url": "https://download.microsoft.com/download/72e8d311-7160-4754-a2fa-2c9a8ee937dd/ClawpilotDev-Windows-9.9.9-x64-Setup.exe",
+            "size": "99487448",
+            "version": "0.01",
+            "datePublished": "5/29/2026 11:29:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "en-us",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.01",
+    "detailsSection_file_name": [
+        "ClawpilotDev-Windows-9.9.9-x64-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "94.9 MB"
+    ],
+    "detailsSection_file_date": "5/29/2026",
+    "systemRequirementsSection": "en-us",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 11"
+    ],
+    "installInstructionSection": "en-us",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108678",
+    "downloadPreload": true
+}
