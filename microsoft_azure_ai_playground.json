@@ -243,6 +243,7 @@
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",
+        "azureml://registries/azure-mai/models/mai-thinking-1",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
@@ -395,7 +396,8 @@
         "gpt-chat-latest",
         "kimi-k2-thinking",
         "kimi-k2.5",
-        "kimi-k2.6"
+        "kimi-k2.6",
+        "mai-thinking-1"
     ],
     "supportedModels": {
         "assistantsNotSupportedStreamingModels": [
@@ -514,7 +516,8 @@
             "gpt-chat-latest",
             "kimi-k2-thinking",
             "kimi-k2.5",
-            "kimi-k2.6"
+            "kimi-k2.6",
+            "mai-thinking-1"
         ],
         "supportedCompletionModels": [
             "babbage-002",
@@ -536,6 +539,8 @@
             "gpt-image-2",
             "mai-image-2",
             "mai-image-2e",
+            "mai-image-2.5",
+            "mai-image-2.5-flash",
             "flux.1-kontext-pro",
             "flux-1.1-pro",
             "flux.2-pro",
@@ -627,6 +632,8 @@
         "azureml://registries/azure-openai/models/gpt-image-2",
         "azureml://registries/azure-mai/models/mai-image-2",
         "azureml://registries/azure-mai/models/mai-image-2e",
+        "azureml://registries/azure-mai/models/mai-image-2.5",
+        "azureml://registries/azure-mai/models/mai-image-2.5-flash",
         "azureml://registries/azureml-staging/models/aoai-sora",
         "azureml://registries/azureml-staging/models/sora",
         "azureml://registries/azure-openai/models/sora",

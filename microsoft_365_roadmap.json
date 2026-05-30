@@ -83178,73 +83178,6 @@
     },
     {
         "created": "2025-04-14T23:15:33",
-        "description": "Admins can protect OneDrive shadow files, that are not locally synced on an endpoint device. This feature has a dependency on Just-in-time (JIT) to provide the interim protection.",
-        "id": 489842,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "April CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Compliance Portal: Endpoint DLP - Protect shadow files for OneDrive"
-    },
-    {
-        "created": "2025-04-14T23:15:33",
         "description": "Within Microsoft Purview Data Security Posture Management for AI, a specific page is dedicated to showing protection capabilities and usage for M365 Copilot. #copilotcontrolsystem",
         "id": 489828,
         "locale": null,
@@ -83419,55 +83352,6 @@
             ]
         },
         "title": "Microsoft Purview: Data Loss Prevention OCR Cost Estimator Support for MAC Endpoints"
-    },
-    {
-        "created": "2025-04-14T23:15:33",
-        "description": "We\u2019re introducing a new activity pane in SharePoint Online to help users track and troubleshoot Content AI model processing. Starting with document translation and autofill, users will be able to view real-time status (in progress, completed, failed) for individual files, bulk selections, or the full library. Completed status will include enriched details like language codes, glossary usage, and column extraction counts. This new pane will eventually replace the current \u201cprocessing status\u201d column, providing a more consistent and actionable experience.",
-        "id": 489453,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Improved processing status experience for Content AI models in SharePoint Online"
     },
     {
         "created": "2025-04-14T23:15:33",
@@ -95029,73 +94913,6 @@
     },
     {
         "created": "2025-02-14T00:15:58",
-        "description": "Teams users can now report security risks and concerns in external one-on-one, group and meeting chats.",
-        "id": 481147,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Report a Message for External Collaboration"
-    },
-    {
-        "created": "2025-02-14T00:15:58",
         "description": "Explore how your employees used key SharePoint agent features over a given time period and understand the ROI. #copilotcontrolsystem",
         "id": 480726,
         "locale": null,
@@ -97234,79 +97051,6 @@
             ]
         },
         "title": "Microsoft Teams: \u2018Add emoji\u2019 updated keyboard shortcut"
-    },
-    {
-        "created": "2025-01-22T00:15:32",
-        "description": "IRM admins can now select DLP alerts as indicators in IRM policies. IRM admins can select DLP policies that they would like to bring into IRM. By enabling this indicator, admins can detect if a user has alerts for the pre-selected DLP policies. When an IRM alert is generated, admin can see if there are any high-risk alerts for this user within DLP for the policies that are enabled as indicators. This feature will help admins view this information within IRM itself without having to switch to DLP.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy",
-        "id": 475057,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management- DLP alerts as indicators"
     },
     {
         "created": "2025-01-17T23:15:23",
@@ -101740,79 +101484,6 @@
         "title": "Microsoft Viva: Viva Learning - Private thumbnail using SharePoint links for courses"
     },
     {
-        "created": "2023-03-10T00:09:55",
-        "description": "<div><span style=\"font-size:12.0pt;font-family:DengXian;color:black;\">Policy tuning analysis provides admins with a\nreal-time prediction based on the number of users that could match a given set\nof policy conditions. It helps organizations efficiently adjust the selection\nof indicators and thresholds of activity occurrence, so they don<span lang=ZH-CN>\u2019</span>t have too few or too many alerts from a policy. Microsoft\nPurview Insider Risk Management correlates various signals to identify\npotential malicious or inadvertent insider risks, such as IP theft, data\nleakage, and security violations. Insider Risk Management enables customers to\ncreate policies to manage security and compliance. Built with privacy by\ndesign, users are pseudonymized by default, and role-based access controls and\naudit logs are in place to help ensure user-level privacy.</span> </div>",
-        "id": 122280,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": "https://learn.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide",
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "April CY2023",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal : Insider Risk Management \u2013 Real-time policy tuning analysis"
-    },
-    {
         "created": "2024-12-13T00:15:57",
         "description": "We are adding more functionality to offline mode in the new Outlook for Windows. You will now be able to open and save attachments from your email without an internet connection. #newoutlookforwindows",
         "id": 472026,
@@ -101927,61 +101598,6 @@
             ]
         },
         "title": "Microsoft 365: Updated settings for the Microsoft 365 app on Windows"
-    },
-    {
-        "created": "2024-11-26T00:15:41",
-        "description": "Users can now access Copilot Notebooks inside OneNote. Using Copilot Notebooks, users can pull together and reason over a wide range of content such as notes, documents, websites, meeting recordings, and more. ",
-        "id": 464995,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "OneNote"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "OneNote: Copilot Notebooks inside OneNote"
     },
     {
         "created": "2024-10-22T23:00:59",
@@ -102147,61 +101763,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Learning - Sync provider data from a specific date range"
-    },
-    {
-        "created": "2024-07-23T23:30:44",
-        "description": "When investigating alerts within Microsoft Purview Insider Risk Management, you can now harness the power of Microsoft Copilot for Security. This tool not only provides concise alert summaries, but it also allows you to delve into specific user activities. By doing so, you can promptly assess whether the user associated with the alert warrants further investigation or if the alert can be safely dismissed. Additionally, with just a click, you can obtain a succinct summary of the user\u2019s risk profile, highlighting crucial details and top risk factors. Leveraging Copilot for Security streamlines investigations, ultimately reducing the triage workload and enabling faster decision making.",
-        "id": 407864,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "August CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Enhanced alert and user investigation using Copilot for Security in Insider Risk Management"
     },
     {
         "created": "2024-07-16T23:15:43",
@@ -111506,67 +111067,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Object Character Recognition (OCR) support for embedded images in Exchange Online and Microsoft Teams"
-    },
-    {
-        "created": "2023-07-27T23:39:47",
-        "description": "<div>With this update, admins with appropriate permissions will have the ability to view a sensitivity analysis, which shows the  count of users in the organization that would meet specific indicator thresholds. The sensitivity analysis is presented as a bar chart, with potential inputs of an indicator threshold on the x-axis and the corresponding count of users on the y-axis. Admins can utilize this chart to make informed decisions on which threshold to apply for each indicator. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. </div>",
-        "id": 156015,
-        "locale": null,
-        "modified": "2025-07-29T23:15:56",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Sensitivity analysis for policy tuning"
     },
     {
         "created": "2023-07-31T23:16:10",
