@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b0d78753a06b\1.luac 
+-- Command line: lua\!InfrastructureShared\dad7cf30faa9\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -8,7 +8,7 @@ local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
 if l_0_1 == nil then
   return mp.CLEAN
 end
-if not (string.find)(l_0_1, "& rundll32", 1, true) then
+if not (string.find)(l_0_1, "& rundll32", 1, true) and not (string.find)(l_0_1, "=rundll32", 1, true) then
   return mp.CLEAN
 end
 local l_0_2 = (mp.GetParentProcInfo)()
