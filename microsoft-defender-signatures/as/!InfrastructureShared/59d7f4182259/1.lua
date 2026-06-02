@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5bd799c85ebd\1.luac 
+-- Command line: lua\!InfrastructureShared\59d7f4182259\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,7 +12,7 @@ l_0_1 = l_0_1:lower()
 l_0_1 = l_0_1:gsub("%^", "")
 l_0_1 = l_0_1:gsub("\'", "")
 l_0_1 = l_0_1:gsub("%s+", " ")
-if ((string.find)(l_0_1, " in (curl", 1, true) or (string.find)(l_0_1, " in (finger", 1, true)) and ((string.find)(l_0_1, ") do call %", 1, true) or (string.find)(l_0_1, ") do %", 1, true) or (string.find)(l_0_1, ") do @cmd", 1, true)) then
+if ((string.find)(l_0_1, " in (curl", 1, true) or (string.find)(l_0_1, " in (finger", 1, true) or (string.find)(l_0_1, ") do curl ", 1, true)) and ((string.find)(l_0_1, ") do call %", 1, true) or (string.find)(l_0_1, ") do %", 1, true) or (string.find)(l_0_1, ") do @cmd", 1, true) or (string.find)(l_0_1, " && mshta ", 1, true)) then
   local l_0_2 = (mp.GetParentProcInfo)()
   if l_0_2 ~= nil then
     local l_0_3 = (string.lower)(l_0_2.image_path)
