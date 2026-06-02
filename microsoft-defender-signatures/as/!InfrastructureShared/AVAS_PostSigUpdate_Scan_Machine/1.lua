@@ -155,6 +155,11 @@ if not l_0_1 then
     error((MpCommon.JsonSerialize)(l_0_0))
   end
 end
+local l_0_3 = (versioning.GetEngineRing)()
+if l_0_3 < versioning.ENGINE_RING_1_PRERELEASE and not (inventory.SetVulnerabilities)("cpe:2.3:a:igor_pavlov:7_zip_26_00_x64:26.00:*:*:*:*:*:*:*", "CVE-2026-48095") then
+  l_0_0.SetVulnerabilities = "7z"
+  error((MpCommon.JsonSerialize)(l_0_0))
+end
 if next(l_0_0) ~= nil then
   error((MpCommon.JsonSerialize)(l_0_0))
 end
