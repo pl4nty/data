@@ -6,6 +6,7 @@
 local l_0_0 = GetRollingQueue("NewServiceCreated")
 if l_0_0 and next(l_0_0) then
   (bm.add_related_string)("BYOD", safeJsonSerialize(l_0_0), bm.RelatedStringBMReport)
+  return mp.INFECTED
 end
-return mp.INFECTED
+return mp.CLEAN
 

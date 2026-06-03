@@ -1,12 +1,12 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1c0b39bb20067\1.luac 
+-- Command line: lua\!InfrastructureShared\1e9b34be18e2c\1.luac 
 
 -- params : ...
 -- function num : 0
-if not (this_sigattrlog[1]).matched then
+if not (this_sigattrlog[2]).matched then
   return mp.CLEAN
 end
-if not (this_sigattrlog[5]).matched or (this_sigattrlog[5]).utf8p1 == nil then
+if not (this_sigattrlog[6]).matched or (this_sigattrlog[6]).utf8p1 == nil then
   return mp.CLEAN
 end
 local l_0_0 = (bm.get_imagepath)()
@@ -43,7 +43,7 @@ do
   if not l_0_2 then
     return mp.CLEAN
   end
-  local l_0_8 = (string.lower)((this_sigattrlog[5]).utf8p1)
+  local l_0_8 = (string.lower)((this_sigattrlog[6]).utf8p1)
   ;
   (bm.add_related_string)("masq_proc", l_0_0, bm.RelatedStringBMReport)
   ;
