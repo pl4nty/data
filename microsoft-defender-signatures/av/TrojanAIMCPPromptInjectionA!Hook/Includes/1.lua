@@ -35,13 +35,15 @@ do
     local l_0_8 = nil
     do
       do
-        if l_0_7 ~= nil then
+        if l_0_7 ~= nil or l_0_7 ~= nil then
           local l_0_9 = (MpCommon.Base64Encode)((string.sub)(l_0_6, 1, 1024))
           ;
           (mp.SetDetectionString)(safeJsonSerialize({AgentSessionId = l_0_7, LastMessage = l_0_9}))
         end
         do return mp.INFECTED end
-        return mp.CLEAN
+        -- DECOMPILER ERROR at PC114: Overwrote pending register: R4 in 'AssignReg'
+
+        return l_0_7.CLEAN
       end
     end
   end
