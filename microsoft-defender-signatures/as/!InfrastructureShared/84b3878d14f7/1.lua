@@ -17,7 +17,7 @@ if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (this
   l_0_3 = (string.lower)((this_sigattrlog[3]).utf8p2)
   l_0_4 = (this_sigattrlog[3]).utf8p2
 end
-if l_0_3 ~= "" and l_0_3 ~= nil and ((string.find)(l_0_3, "com.apple.", 1, true) or (string.find)(l_0_3, "com.zoom.", 1, true)) then
+if l_0_3 ~= "" and l_0_3 ~= nil and ((string.find)(l_0_3, "com.apple.", 1, true) or (string.find)(l_0_3, "com.zoom.", 1, true) or (string.find)(l_0_3, "/com.microsoft.helper", -21, true) or (string.find)(l_0_3, "/.google.docs", -13, true)) then
   if l_0_4 ~= "" and l_0_4 ~= nil and (sysio.IsFileExists)(l_0_4) then
     (bm.add_threat_file)(l_0_4)
   end
