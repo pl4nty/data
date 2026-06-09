@@ -72,11 +72,14 @@ do
   if not (string.find)(l_0_1, "localaccounttokenfilterpolicy", 1, true) or ((not (string.find)(l_0_1, "-value 1", 1, true) and not (string.find)(l_0_1, "-value \'1\'", 1, true) and not (string.find)(l_0_1, "-value \"1\"", 1, true) and not (string.find)(l_0_1, "-propertytype dword", 1, true) and (string.find)(l_0_1, "-value 0", 1, true)) or ((((((((not (string.find)(l_0_1, "\"*\"", 1, true) and not (string.find)(l_0_1, "\'*\'", 1, true) and not (string.find)(l_0_1, "-value *", 1, true) and not (string.find)(l_0_1, "-value \'*\'", 1, true) and not (string.find)(l_0_1, "-value \"*\"", 1, true)) or (string.find)(l_0_1, "enable-psremoting", 1, true)) and (string.find)(l_0_1, "-force", 1, true) and not (string.find)(l_0_1, "enable-wsmancredssp", 1, true)) or (string.find)(l_0_1, "allowunencrypted", 1, true)) and not (string.find)(l_0_1, "true", 1, true) and not (string.find)(l_0_1, "service\\auth\\basic", 1, true)) or (string.find)(l_0_1, "true", 1, true) or (string.find)(l_0_1, "quickconfig", 1, true)) and not (string.find)(l_0_1, "create", 1, true)) or isnull(l_0_10))) then
     return mp.CLEAN
   end
+  WinRMSessionTrackProcess("BM", nil, "Listener")
+  ;
+  (mp.set_mpattribute)("Lua:ContextDataProcess/WinRMSessionProcess.A")
   ;
   (bm.add_related_string)("WinRMSrvEn_reason", l_0_10, bm.RelatedStringBMReport)
   ;
   (bm.add_related_string)("WinRMSrvEn_cmd", l_0_1, bm.RelatedStringBMReport)
-  TrackPidAndTechniqueBM("BM", "T1021.006", "SuspWinRMServerEnable")
+  TrackPidAndTechniqueBM("BM", "T1021.006", "WinRMServerEnable")
   add_parents()
   do return mp.INFECTED end
   -- WARNING: undefined locals caused missing assignments!

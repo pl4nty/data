@@ -1,0 +1,268 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\_!WwwrootkitAM\Includes\1.luac 
+
+-- params : ...
+-- function num : 0
+local l_0_0 = (MpCommon.ExpandEnvironmentVariables)("%ExchangeInstallPath%")
+if not isnull(l_0_0) and l_0_0 ~= "%ExchangeInstallPath%" and (sysio.IsFileExists)(l_0_0 .. "bin\\Microsoft.Exchange.Store.Service.exe") then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_FILENAME)
+if not l_0_1 or isnull(l_0_2) then
+  return mp.CLEAN
+end
+local l_0_3 = (string.match)(l_0_2, "(%.[^%.]+)$")
+if isnull(l_0_3) then
+  return mp.CLEAN
+end
+l_0_3 = (string.lower)(l_0_3)
+local l_0_4 = {}
+l_0_4[".asp"] = true
+l_0_4[".aspx"] = true
+l_0_4[".ashx"] = true
+l_0_4[".asmx"] = true
+l_0_4[".ascx"] = true
+l_0_4[".asax"] = true
+l_0_4[".cshtml"] = true
+l_0_4[".vbhtml"] = true
+if not l_0_4[l_0_3] then
+  return mp.CLEAN
+end
+local l_0_5 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)))
+if isnull(l_0_5) then
+  return mp.CLEAN
+end
+l_0_5 = (string.lower)(l_0_5)
+local l_0_6 = false
+local l_0_7 = (MpCommon.ExpandEnvironmentVariables)("%SystemDrive%\\inetpub\\wwwroot")
+if not isnull(l_0_7) and (string.find)(l_0_5, (string.lower)(l_0_7), 1, true) then
+  l_0_6 = true
+end
+if not l_0_6 then
+  local l_0_8 = (MpCommon.ExpandEnvironmentVariables)("%windir%\\system32\\inetsrv\\config\\applicationHost.config")
+  if isnull(l_0_8) then
+    return mp.CLEAN
+  end
+  local l_0_9 = (MpCommon.GetIisInstallPaths)(l_0_8)
+  if isnull(l_0_9) then
+    return mp.CLEAN
+  end
+  for l_0_13,l_0_14 in ipairs(l_0_9) do
+    if not isnull(l_0_14.Path) and (string.find)(l_0_5, (string.lower)(l_0_14.Path), 1, true) then
+      l_0_6 = true
+      break
+    end
+  end
+end
+do
+  if not l_0_6 then
+    l_0_8 = mp
+    l_0_8 = l_0_8.CLEAN
+    return l_0_8
+  end
+  l_0_8 = mp
+  l_0_8 = l_0_8.getfilesize
+  l_0_8 = l_0_8()
+  local l_0_15 = nil
+  l_0_9 = isnull
+  l_0_15 = l_0_8
+  l_0_9 = l_0_9(l_0_15)
+  if l_0_9 or l_0_8 < 20 then
+    l_0_9 = mp
+    l_0_9 = l_0_9.CLEAN
+    return l_0_9
+  end
+  if l_0_8 > 524288 then
+    l_0_9 = 524288
+  end
+  if not l_0_9 then
+    l_0_9 = l_0_8
+    local l_0_16, l_0_17, l_0_18 = nil
+  end
+  do
+    l_0_15 = mp
+    l_0_15 = l_0_15.readprotection
+    l_0_15(false)
+    l_0_15 = mp
+    l_0_15 = l_0_15.readfile
+    l_0_15 = l_0_15(0, l_0_9)
+    local l_0_19 = nil
+    l_0_19 = mp
+    l_0_19 = l_0_19.readprotection
+    l_0_19(true)
+    l_0_19 = isnull
+    l_0_19 = l_0_19(l_0_15)
+    if l_0_19 then
+      l_0_19 = mp
+      l_0_19 = l_0_19.CLEAN
+      return l_0_19
+    end
+    l_0_19 = string
+    l_0_19 = l_0_19.lower
+    l_0_19 = l_0_19(tostring(l_0_15))
+    local l_0_20 = nil
+    l_0_20 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  for l_1_5,l_1_6 in ipairs(l_1_1) do
+    if (string.find)(l_1_0, l_1_6, 1, true) then
+      return true
+    end
+  end
+  return false
+end
+
+    local l_0_21 = nil
+    l_0_21 = 0
+    local l_0_22 = nil
+    l_0_22 = false
+    local l_0_23 = nil
+    l_0_23 = false
+    local l_0_24 = nil
+    l_0_24 = false
+    local l_0_25 = nil
+    local l_0_26 = nil
+    l_0_26 = "request.form"
+    l_0_26 = l_0_20
+    l_0_26 = l_0_26(l_0_19, l_0_25)
+    if l_0_26 then
+      l_0_22 = true
+      l_0_21 = l_0_21 + 2
+    end
+    local l_0_27 = nil
+    l_0_27 = "process.start"
+    l_0_27 = l_0_20
+    l_0_27 = l_0_27(l_0_19, l_0_26)
+    if l_0_27 then
+      l_0_23 = true
+      l_0_21 = l_0_21 + 5
+    end
+    local l_0_28 = nil
+    l_0_28 = "executeglobal"
+    l_0_28 = l_0_20
+    l_0_28 = l_0_28(l_0_19, l_0_27)
+    if l_0_28 then
+      l_0_24 = true
+      l_0_21 = l_0_21 + 5
+    end
+    local l_0_29 = nil
+    l_0_29 = "eval(request"
+    l_0_29 = l_0_20
+    l_0_29 = l_0_29(l_0_19, l_0_28)
+    local l_0_30 = nil
+    local l_0_31 = nil
+    l_0_31 = "activator.createinstance"
+    l_0_31 = l_0_20
+    l_0_31 = l_0_31(l_0_19, l_0_30)
+    if l_0_31 then
+      l_0_21 = l_0_21 + 2
+    end
+    l_0_31 = string
+    l_0_31 = l_0_31.find
+    l_0_31 = l_0_31(l_0_19, "eval(", 1, true)
+    if not l_0_31 then
+      l_0_31 = string
+      l_0_31 = l_0_31.find
+      l_0_31 = l_0_31(l_0_19, "new function(", 1, true)
+    end
+    if l_0_31 then
+      l_0_21 = l_0_21 + 1
+    end
+    local l_0_32 = nil
+    l_0_32 = "frombase64string"
+    l_0_32 = l_0_20
+    l_0_32 = l_0_32(l_0_19, l_0_31)
+    if l_0_32 then
+      l_0_21 = l_0_21 + 2
+    end
+    local l_0_33 = nil
+    l_0_33 = "webclient"
+    l_0_33 = l_0_20
+    l_0_33 = l_0_33(l_0_19, l_0_32)
+    if l_0_33 then
+      l_0_21 = l_0_21 + 2
+    end
+    local l_0_34 = nil
+    l_0_34 = "scripting.filesystemobject"
+    l_0_34 = l_0_20
+    l_0_34 = l_0_34(l_0_19, l_0_33)
+    if l_0_34 then
+      l_0_21 = l_0_21 + 2
+    end
+    local l_0_35 = nil
+    l_0_35 = "response.write"
+    l_0_35 = l_0_20
+    l_0_35 = l_0_35(l_0_19, l_0_34)
+    if l_0_35 then
+      l_0_21 = l_0_21 + 1
+    end
+    local l_0_36 = nil
+    l_0_36 = "china chopper"
+    l_0_36 = l_0_20
+    l_0_36 = l_0_36(l_0_19, l_0_35)
+    local l_0_37 = nil
+    local l_0_38 = nil
+    l_0_38 = "redirectstandardoutput"
+    l_0_38 = l_0_20
+    l_0_38 = l_0_38(l_0_19, l_0_37)
+    local l_0_39 = nil
+    if l_0_36 then
+      l_0_39 = set_research_data
+      l_0_39("webshell_path", l_0_5, false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_reason", "family_fingerprint", false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_score", tostring(l_0_21), false)
+      l_0_39 = mp
+      l_0_39 = l_0_39.INFECTED
+      return l_0_39
+    end
+    if l_0_29 then
+      l_0_39 = set_research_data
+      l_0_39("webshell_path", l_0_5, false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_reason", "eval_of_request", false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_score", tostring(l_0_21), false)
+      l_0_39 = mp
+      l_0_39 = l_0_39.INFECTED
+      return l_0_39
+    end
+    if l_0_22 and l_0_24 then
+      l_0_39 = set_research_data
+      l_0_39("webshell_path", l_0_5, false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_reason", "input_to_dyncode", false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_score", tostring(l_0_21), false)
+      l_0_39 = mp
+      l_0_39 = l_0_39.INFECTED
+      return l_0_39
+    end
+    if l_0_22 and l_0_23 and l_0_38 then
+      l_0_39 = set_research_data
+      l_0_39("webshell_path", l_0_5, false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_reason", "command_shell_with_output", false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_score", tostring(l_0_21), false)
+      l_0_39 = mp
+      l_0_39 = l_0_39.INFECTED
+      return l_0_39
+    end
+    if l_0_22 and l_0_23 and l_0_21 >= 9 then
+      l_0_39 = set_research_data
+      l_0_39("webshell_path", l_0_5, false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_reason", "input_to_cmdexec", false)
+      l_0_39 = set_research_data
+      l_0_39("webshell_score", tostring(l_0_21), false)
+      l_0_39 = mp
+      l_0_39 = l_0_39.INFECTED
+      return l_0_39
+    end
+    l_0_39 = mp
+    l_0_39 = l_0_39.CLEAN
+    return l_0_39
+  end
+end
+

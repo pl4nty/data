@@ -40,6 +40,11 @@ end
 if (string.find)(l_0_4, "localhost", 1, true) or (string.find)(l_0_4, "127.", 1, true) or (string.find)(l_0_4, "::1", 1, true) then
   return mp.CLEAN
 end
+WinRMSessionTrackProcess("BM", nil, "Client")
+;
+(mp.set_mpattribute)("Lua:ContextDataProcess/WinRMSessionProcess.A")
+;
+(mp.set_mpattribute)("Lua:ContextDataProcess/WinRMClientProcess.A")
 ;
 (bm.add_related_string)("WebSvrWinRM_server", l_0_2, bm.RelatedStringBMReport)
 ;
@@ -48,7 +53,7 @@ end
 (bm.add_related_string)("WebSvrWinRM_cmd", l_0_4, bm.RelatedStringBMReport)
 ;
 (bm.add_related_string)("WebSvrWinRM_img", l_0_1, bm.RelatedStringBMReport)
-TrackPidAndTechniqueBM("BM", "T1021.006", "SuspWebSvrWinRM")
+TrackPidAndTechniqueBM("BM", "T1021.006", "WebSvrWinRM")
 add_parents()
 return mp.INFECTED
 

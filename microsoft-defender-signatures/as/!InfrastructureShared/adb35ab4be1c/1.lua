@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not IsDeviceHVA() then
-  return mp.CLEAN
-end
 local l_0_0 = (bm.get_current_process_startup_info)()
 if isnull(l_0_0) or not l_0_0.command_line then
   return mp.CLEAN
@@ -17,14 +14,14 @@ if isnull(l_0_2) then
 end
 local l_0_3 = (string.lower)(l_0_2)
 local l_0_4 = {}
--- DECOMPILER ERROR at PC47: No list found for R4 , SetList fails
+-- DECOMPILER ERROR at PC40: No list found for R4 , SetList fails
 
--- DECOMPILER ERROR at PC48: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC41: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC49: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC42: Overwrote pending register: R6 in 'AssignReg'
 
 for l_0_8,l_0_9 in ("/opt/microsoft/omsagent/")("/opt/microsoft/scx/") do
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R10 in 'AssignReg'
+  -- DECOMPILER ERROR at PC45: Overwrote pending register: R10 in 'AssignReg'
 
   if (("omsagent").find)(l_0_3, l_0_9, 1, true) or (string.find)(l_0_1, l_0_9, 1, true) then
     return mp.CLEAN
@@ -140,26 +137,26 @@ end
 if not l_0_10 then
   local l_0_13 = 0
   local l_0_14 = {}
-  -- DECOMPILER ERROR at PC468: No list found for R9 , SetList fails
+  -- DECOMPILER ERROR at PC461: No list found for R9 , SetList fails
 
-  -- DECOMPILER ERROR at PC469: Overwrote pending register: R10 in 'AssignReg'
+  -- DECOMPILER ERROR at PC462: Overwrote pending register: R10 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC470: Overwrote pending register: R11 in 'AssignReg'
+  -- DECOMPILER ERROR at PC463: Overwrote pending register: R11 in 'AssignReg'
 
   for l_0_18,l_0_19 in ("whoami")(" id ") do
-    -- DECOMPILER ERROR at PC473: Overwrote pending register: R15 in 'AssignReg'
+    -- DECOMPILER ERROR at PC466: Overwrote pending register: R15 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC475: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC468: Overwrote pending register: R16 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC476: Overwrote pending register: R17 in 'AssignReg'
+    -- DECOMPILER ERROR at PC469: Overwrote pending register: R17 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC477: Overwrote pending register: R18 in 'AssignReg'
+    -- DECOMPILER ERROR at PC470: Overwrote pending register: R18 in 'AssignReg'
 
   end
 end
 do
   do
-    -- DECOMPILER ERROR at PC492: Overwrote pending register: R8 in 'AssignReg'
+    -- DECOMPILER ERROR at PC485: Overwrote pending register: R8 in 'AssignReg'
 
     if ((("ip addr").find)("ip route", "netstat", "ss -", true) and l_0_13 < 2) or not l_0_10 then
       return l_0_13.CLEAN
@@ -170,7 +167,7 @@ do
     (bm.add_related_string)("OMIChild_cmd", l_0_1, bm.RelatedStringBMReport)
     ;
     (bm.add_related_string)("OMIChild_img", l_0_3, bm.RelatedStringBMReport)
-    TrackPidAndTechniqueBM("BM", l_0_11, "SuspOMIChild")
+    TrackPidAndTechniqueBM("BM", l_0_11, "OMIChild")
     add_parents()
     do return mp.INFECTED end
     -- WARNING: undefined locals caused missing assignments!

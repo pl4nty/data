@@ -3,15 +3,12 @@
 
 -- params : ...
 -- function num : 0
-if not IsDeviceHVA() then
-  return mp.CLEAN
-end
 local l_0_0 = ""
 do
   if not (this_sigattrlog[16]).utf8p2 then
     local l_0_1 = this_sigattrlog[16] == nil or not (this_sigattrlog[16]).matched or ""
   end
-  -- DECOMPILER ERROR at PC25: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC18: Confused about usage of register: R1 in 'UnsetPending'
 
   do
     local l_0_2 = (string.lower)(l_0_1)
@@ -24,6 +21,9 @@ do
     (bm.add_related_string)("WinRMCfg_reason", l_0_0, bm.RelatedStringBMReport)
     ;
     (bm.add_related_string)("WinRMCfg_regval", l_0_2, bm.RelatedStringBMReport)
+    WinRMSessionTrackProcess("BM", nil, "Listener")
+    ;
+    (mp.set_mpattribute)("Lua:ContextDataProcess/WinRMSessionProcess.A")
     TrackPidAndTechniqueBM("BM", "T1021.006", "WinRMConfig")
     add_parents()
     do return mp.INFECTED end
@@ -74,6 +74,9 @@ do
     (bm.add_related_string)("WinRMCfg_reason", l_0_0, bm.RelatedStringBMReport)
     ;
     (bm.add_related_string)("WinRMCfg_cmd", l_0_4, bm.RelatedStringBMReport)
+    WinRMSessionTrackProcess("BM", nil, "Listener")
+    ;
+    (mp.set_mpattribute)("Lua:ContextDataProcess/WinRMSessionProcess.A")
     TrackPidAndTechniqueBM("BM", "T1021.006", "WinRMConfig")
     add_parents()
     return mp.INFECTED

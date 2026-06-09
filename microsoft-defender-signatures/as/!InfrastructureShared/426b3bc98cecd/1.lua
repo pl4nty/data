@@ -78,123 +78,58 @@ do
           -- DECOMPILER ERROR at PC257: Confused about usage of register: R2 in 'UnsetPending'
 
           local l_0_30 = (string.lower)(l_0_25)
-          -- DECOMPILER ERROR at PC271: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC280: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC289: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC298: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC307: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC316: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC325: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC334: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC343: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC352: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC361: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC370: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC379: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC388: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC397: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC406: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC415: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC424: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC433: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC442: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC451: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC460: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC469: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC478: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC487: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC496: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC505: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC514: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC523: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC532: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC541: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC550: Confused about usage of register: R2 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC559: Confused about usage of register: R2 in 'UnsetPending'
-
+          local l_0_31 = nil
           do
-            if not (string.find)((string.lower)(l_0_27), "-encodedcommand", 1, true) and not (string.find)((string.lower)(l_0_27), "-encoded ", 1, true) and not (string.find)((string.lower)(l_0_27), " -enc ", 1, true) and not (string.find)((string.lower)(l_0_27), "-enc ", 1, true) and not (string.find)((string.lower)(l_0_27), "iex(", 1, true) and not (string.find)((string.lower)(l_0_27), "iex (", 1, true) and not (string.find)((string.lower)(l_0_27), " iex ", 1, true) and not (string.find)((string.lower)(l_0_27), "invoke-expression", 1, true) and not (string.find)((string.lower)(l_0_27), "downloadstring", 1, true) and not (string.find)((string.lower)(l_0_27), "downloadfile", 1, true) and not (string.find)((string.lower)(l_0_27), "downloaddata", 1, true) and not (string.find)((string.lower)(l_0_27), "invoke-webrequest", 1, true) and not (string.find)((string.lower)(l_0_27), " iwr ", 1, true) and not (string.find)((string.lower)(l_0_27), "start-bitstransfer", 1, true) and not (string.find)((string.lower)(l_0_27), "compress-archive", 1, true) and not (string.find)((string.lower)(l_0_27), "set-mppreference", 1, true) and not (string.find)((string.lower)(l_0_27), "add-mppreference", 1, true) and not (string.find)((string.lower)(l_0_27), "frombase64string", 1, true) and not (string.find)((string.lower)(l_0_27), "::frombase64", 1, true) and not (string.find)((string.lower)(l_0_27), " whoami", 1, true) and not (string.find)((string.lower)(l_0_27), " tasklist", 1, true) and not (string.find)((string.lower)(l_0_27), " netstat", 1, true) and not (string.find)((string.lower)(l_0_27), " systeminfo", 1, true) and not (string.find)((string.lower)(l_0_27), " ipconfig", 1, true) and not (string.find)((string.lower)(l_0_27), " net user", 1, true) and not (string.find)((string.lower)(l_0_27), " net group", 1, true) and not (string.find)((string.lower)(l_0_27), "/c whoami", 1, true) and not (string.find)((string.lower)(l_0_27), "/c tasklist", 1, true) and not (string.find)((string.lower)(l_0_27), "/c netstat", 1, true) and not (string.find)((string.lower)(l_0_27), "/c systeminfo", 1, true) and not (string.find)((string.lower)(l_0_27), "reg add ", 1, true) and not (string.find)((string.lower)(l_0_27), "reg delete ", 1, true) and not (string.find)((string.lower)(l_0_27), "schtasks /create", 1, true) then
-              local l_0_31 = nil
+            if not (string.find)(l_0_31, "-encodedcommand", 1, true) and not (string.find)(l_0_31, "-encoded ", 1, true) and not (string.find)(l_0_31, " -enc ", 1, true) and not (string.find)(l_0_31, "-enc ", 1, true) and not (string.find)(l_0_31, "iex(", 1, true) and not (string.find)(l_0_31, "iex (", 1, true) and not (string.find)(l_0_31, " iex ", 1, true) and not (string.find)(l_0_31, "invoke-expression", 1, true) and not (string.find)(l_0_31, "downloadstring", 1, true) and not (string.find)(l_0_31, "downloadfile", 1, true) and not (string.find)(l_0_31, "downloaddata", 1, true) and not (string.find)(l_0_31, "invoke-webrequest", 1, true) and not (string.find)(l_0_31, " iwr ", 1, true) and not (string.find)(l_0_31, "start-bitstransfer", 1, true) and not (string.find)(l_0_31, "compress-archive", 1, true) and not (string.find)(l_0_31, "set-mppreference", 1, true) and not (string.find)(l_0_31, "add-mppreference", 1, true) and not (string.find)(l_0_31, "frombase64string", 1, true) and not (string.find)(l_0_31, "::frombase64", 1, true) and not (string.find)(l_0_31, " whoami", 1, true) and not (string.find)(l_0_31, " tasklist", 1, true) and not (string.find)(l_0_31, " netstat", 1, true) and not (string.find)(l_0_31, " systeminfo", 1, true) and not (string.find)(l_0_31, " ipconfig", 1, true) and not (string.find)(l_0_31, " net user", 1, true) and not (string.find)(l_0_31, " net group", 1, true) and not (string.find)(l_0_31, "/c whoami", 1, true) and not (string.find)(l_0_31, "/c tasklist", 1, true) and not (string.find)(l_0_31, "/c netstat", 1, true) and not (string.find)(l_0_31, "/c systeminfo", 1, true) and not (string.find)(l_0_31, "reg add ", 1, true) and not (string.find)(l_0_31, "reg delete ", 1, true) and not (string.find)(l_0_31, "schtasks /create", 1, true) then
+              local l_0_32 = (string.lower)(l_0_27)
             end
-            if not (string.find)((string.lower)(l_0_27), "wmic process call create", 1, true) then
+            if not (string.find)(l_0_31, "wmic process call create", 1, true) then
               return mp.CLEAN
             end
-            local l_0_32 = nil
-            -- DECOMPILER ERROR at PC577: Overwrote pending register: R4 in 'AssignReg'
+            local l_0_33 = nil
+            -- DECOMPILER ERROR at PC585: Overwrote pending register: R5 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC586: Overwrote pending register: R4 in 'AssignReg'
+            -- DECOMPILER ERROR at PC594: Overwrote pending register: R5 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC595: Overwrote pending register: R4 in 'AssignReg'
+            -- DECOMPILER ERROR at PC603: Overwrote pending register: R5 in 'AssignReg'
 
             if ((not (this_sigattrlog[10]).matched or (this_sigattrlog[11]).matched) and not (this_sigattrlog[12]).matched) or not isnull(nil) then
               TrackPidAndTechniqueBM("BM", "T1505.003", "iis_shell_spawn", 28800)
-              -- DECOMPILER ERROR at PC609: Confused about usage of register: R4 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC617: Confused about usage of register: R5 in 'UnsetPending'
 
               ;
               (bm.add_related_process)(nil)
             end
-            local l_0_33 = nil
-            if not isnull((mp.GetExecutablesFromCommandLine)(l_0_32)) then
-              local l_0_34 = nil
+            local l_0_34 = nil
+            if not isnull((mp.GetExecutablesFromCommandLine)(l_0_33)) then
+              local l_0_35 = nil
               do
-                if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 1 then
-                  local l_0_35 = nil
-                  if not isnull((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1]), true, false) then
-                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1]))
+                if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 1 then
+                  local l_0_36 = nil
+                  if not isnull((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1]), true, false) then
+                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1]))
                   end
                 end
-                -- DECOMPILER ERROR at PC650: Confused about usage of register: R6 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC658: Confused about usage of register: R7 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC654: Confused about usage of register: R5 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC662: Confused about usage of register: R6 in 'UnsetPending'
 
                 do
-                  if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 2 then
-                    local l_0_36 = nil
-                    if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_35[2])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_35[2])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_35[2]), true, false) then
-                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_35[2]))
+                  if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 2 then
+                    local l_0_37 = nil
+                    if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_36[2])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2]), true, false) then
+                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2]))
                     end
                   end
-                  -- DECOMPILER ERROR at PC679: Confused about usage of register: R6 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC687: Confused about usage of register: R7 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC683: Confused about usage of register: R5 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC691: Confused about usage of register: R6 in 'UnsetPending'
 
                   do
-                    if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 3 then
-                      local l_0_37 = nil
-                      if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_36[3])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_36[3])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_36[3]), true, false) then
-                        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_36[3]))
+                    if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 3 then
+                      local l_0_38 = nil
+                      if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_37[3])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3]), true, false) then
+                        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3]))
                       end
                     end
                     ;
@@ -202,7 +137,7 @@ do
                     ;
                     (bm.add_related_string)("iis_shell_child_name", l_0_28, bm.RelatedStringBMReport)
                     ;
-                    (bm.add_related_string)("iis_shell_cmd_len", tostring(#l_0_32), bm.RelatedStringBMReport)
+                    (bm.add_related_string)("iis_shell_cmd_len", tostring(#l_0_33), bm.RelatedStringBMReport)
                     add_parents()
                     return mp.INFECTED
                   end

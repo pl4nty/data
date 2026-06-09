@@ -87,6 +87,11 @@ do
   if ((((((string.find)(l_0_1, "-credential", 1, true) and not (string.find)(l_0_1, "-authentication credssp", 1, true)) or (string.find)(l_0_1, "-authentication basic", 1, true)) and not (string.find)(l_0_1, "-usessl", 1, true)) or (string.find)(l_0_1, "-skipcacheck", 1, true) or (string.find)(l_0_1, "-skipcncheck", 1, true) or (string.find)(l_0_1, "convertto-securestring", 1, true)) and not (string.find)(l_0_1, "frombase64string", 1, true)) or isnull(l_0_11) then
     return mp.CLEAN
   end
+  WinRMSessionTrackProcess("BM", nil, "Client")
+  ;
+  (mp.set_mpattribute)("Lua:ContextDataProcess/WinRMSessionProcess.A")
+  ;
+  (mp.set_mpattribute)("Lua:ContextDataProcess/WinRMClientProcess.A")
   ;
   (bm.add_related_string)("WinRMLM_reason", l_0_11, bm.RelatedStringBMReport)
   ;
@@ -95,7 +100,7 @@ do
   (bm.add_related_string)("WinRMLM_host", l_0_3, bm.RelatedStringBMReport)
   ;
   (bm.add_related_string)("WinRMLM_cmd", l_0_1, bm.RelatedStringBMReport)
-  TrackPidAndTechniqueBM("BM", "T1021.006", "SuspWinRMLateralMove")
+  TrackPidAndTechniqueBM("BM", "T1021.006", "WinRMLateralMove")
   add_parents()
   do return mp.INFECTED end
   -- WARNING: undefined locals caused missing assignments!

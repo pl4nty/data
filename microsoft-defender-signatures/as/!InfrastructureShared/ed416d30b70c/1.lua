@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not IsDeviceHVA() then
-  return mp.CLEAN
-end
 local l_0_0 = (nri.GetRawRequestBlob)()
 if isnull(l_0_0) then
   return mp.CLEAN
@@ -25,9 +22,9 @@ local l_0_6 = false
 if (string.find)(l_0_5, "powershell", 1, true) and ((string.find)(l_0_5, "-enc", 1, true) or (string.find)(l_0_5, "encodedcommand", 1, true)) then
   l_0_6 = true
 end
--- DECOMPILER ERROR at PC138: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC131: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC138: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC131: Unhandled construct in 'MakeBoolean' P3
 
 if ((string.find)(l_0_5, "certutil", 1, true) and (string.find)(l_0_5, "-urlcache", 1, true)) or not (string.find)(l_0_5, "bitsadmin", 1, true) or (string.find)(l_0_5, "downloadfile", 1, true) then
   l_0_6 = true
@@ -47,48 +44,48 @@ if not l_0_6 then
       local l_0_10 = (string.sub)(l_0_0, l_0_8, l_0_9 - 1)
       do
         local l_0_11, l_0_12 = (string.match)(l_0_10, "^%s*(.-)%s*$") or ""
-        -- DECOMPILER ERROR at PC252: Confused about usage of register: R11 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC245: Confused about usage of register: R11 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC258: Confused about usage of register: R11 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC251: Confused about usage of register: R11 in 'UnsetPending'
 
         if #l_0_11 > 4 then
           local l_0_13, l_0_14 = , pcall(MpCommon.Base64Decode, l_0_11)
           if l_0_14 and MpCommon.Base64Decode ~= nil then
             local l_0_15 = nil
-            -- DECOMPILER ERROR at PC269: Overwrote pending register: R15 in 'AssignReg'
+            -- DECOMPILER ERROR at PC262: Overwrote pending register: R15 in 'AssignReg'
 
-            R15_PC267 = R15_PC267((string.lower)(R15_PC267), "invoke-expression", 1, true)
-            if not R15_PC267 then
-              R15_PC267 = string
-              R15_PC267 = R15_PC267.find
-              R15_PC267 = R15_PC267((string.lower)(R15_PC267), "invoke-mimikatz", 1, true)
-              if not R15_PC267 then
-                R15_PC267 = string
-                R15_PC267 = R15_PC267.find
-                R15_PC267 = R15_PC267((string.lower)(R15_PC267), "frombase64string", 1, true)
-                if not R15_PC267 then
-                  R15_PC267 = string
-                  R15_PC267 = R15_PC267.find
-                  R15_PC267 = R15_PC267((string.lower)(R15_PC267), "amsiutils", 1, true)
-                  if not R15_PC267 then
-                    R15_PC267 = string
-                    R15_PC267 = R15_PC267.find
-                    R15_PC267 = R15_PC267((string.lower)(R15_PC267), "net.webclient", 1, true)
-                    if not R15_PC267 then
-                      R15_PC267 = string
-                      R15_PC267 = R15_PC267.find
-                      R15_PC267 = R15_PC267((string.lower)(R15_PC267), "set-mppreference", 1, true)
-                      if not R15_PC267 then
-                        R15_PC267 = string
-                        R15_PC267 = R15_PC267.find
-                        R15_PC267 = R15_PC267((string.lower)(R15_PC267), "downloadstring", 1, true)
+            R15_PC260 = R15_PC260((string.lower)(R15_PC260), "invoke-expression", 1, true)
+            if not R15_PC260 then
+              R15_PC260 = string
+              R15_PC260 = R15_PC260.find
+              R15_PC260 = R15_PC260((string.lower)(R15_PC260), "invoke-mimikatz", 1, true)
+              if not R15_PC260 then
+                R15_PC260 = string
+                R15_PC260 = R15_PC260.find
+                R15_PC260 = R15_PC260((string.lower)(R15_PC260), "frombase64string", 1, true)
+                if not R15_PC260 then
+                  R15_PC260 = string
+                  R15_PC260 = R15_PC260.find
+                  R15_PC260 = R15_PC260((string.lower)(R15_PC260), "amsiutils", 1, true)
+                  if not R15_PC260 then
+                    R15_PC260 = string
+                    R15_PC260 = R15_PC260.find
+                    R15_PC260 = R15_PC260((string.lower)(R15_PC260), "net.webclient", 1, true)
+                    if not R15_PC260 then
+                      R15_PC260 = string
+                      R15_PC260 = R15_PC260.find
+                      R15_PC260 = R15_PC260((string.lower)(R15_PC260), "set-mppreference", 1, true)
+                      if not R15_PC260 then
+                        R15_PC260 = string
+                        R15_PC260 = R15_PC260.find
+                        R15_PC260 = R15_PC260((string.lower)(R15_PC260), "downloadstring", 1, true)
                       end
                     end
                   end
                 end
               end
             end
-            if R15_PC267 then
+            if R15_PC260 then
               l_0_6 = true
             end
           end
@@ -102,10 +99,10 @@ if not l_0_6 then
           local l_0_16 = reportHeaders
           do
             local l_0_17 = {}
-            -- DECOMPILER ERROR at PC351: No list found for R8 , SetList fails
+            -- DECOMPILER ERROR at PC344: No list found for R8 , SetList fails
 
             l_0_16(l_0_17)
-            -- DECOMPILER ERROR at PC354: Overwrote pending register: R7 in 'AssignReg'
+            -- DECOMPILER ERROR at PC347: Overwrote pending register: R7 in 'AssignReg'
 
             do return l_0_16 end
             -- WARNING: undefined locals caused missing assignments!
