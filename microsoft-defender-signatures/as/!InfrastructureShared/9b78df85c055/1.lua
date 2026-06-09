@@ -3,9 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if not (hstrlog[2]).matched then
-  return mp.CLEAN
-end
 if not peattributes.isexe then
   return mp.CLEAN
 end
