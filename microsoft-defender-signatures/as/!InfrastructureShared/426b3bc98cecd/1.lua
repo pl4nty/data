@@ -79,57 +79,60 @@ do
 
           local l_0_30 = (string.lower)(l_0_25)
           local l_0_31 = nil
+          local l_0_32 = (string.lower)(l_0_27)
+          local l_0_33 = {"-encodedcommand", "-encoded ", " -enc ", "-enc ", "iex(", "iex (", " iex ", "invoke-expression", "downloadstring", "downloadfile", "downloaddata", "invoke-webrequest", " iwr ", "start-bitstransfer", "compress-archive", "frombase64string", "::frombase64", "set-mppreference", "add-mppreference", "reg add ", "reg delete ", "schtasks /create", "wmic process call create"}
+          local l_0_34 = {" whoami", " tasklist", " netstat", " systeminfo", " ipconfig", " hostname", " arp ", " route print", " nslookup", " nltest", " quser", " qwinsta", " query user", " net user", " net group", " net localgroup", " net view", " net use", " net start", " dsquery", " date /t", " time /t", " sc query", " wmic nic", " netsh interface", " getmac", "/c whoami", "/c tasklist", "/c netstat", "/c systeminfo", "/c ipconfig", "/c hostname", "/c arp", "/c route", "/c nslookup", "/c nltest", "/c quser", "/c qwinsta", "/c query user", "/c net user", "/c net group", "/c net localgroup", "/c net view", "/c net use", "/c net start", "/c dsquery", "/c date /t", "/c time /t", "/c dir", "/c ver", "/c sc query", "/c wmic nic", "/c netsh interface", "/c getmac"}
           do
-            if not (string.find)(l_0_31, "-encodedcommand", 1, true) and not (string.find)(l_0_31, "-encoded ", 1, true) and not (string.find)(l_0_31, " -enc ", 1, true) and not (string.find)(l_0_31, "-enc ", 1, true) and not (string.find)(l_0_31, "iex(", 1, true) and not (string.find)(l_0_31, "iex (", 1, true) and not (string.find)(l_0_31, " iex ", 1, true) and not (string.find)(l_0_31, "invoke-expression", 1, true) and not (string.find)(l_0_31, "downloadstring", 1, true) and not (string.find)(l_0_31, "downloadfile", 1, true) and not (string.find)(l_0_31, "downloaddata", 1, true) and not (string.find)(l_0_31, "invoke-webrequest", 1, true) and not (string.find)(l_0_31, " iwr ", 1, true) and not (string.find)(l_0_31, "start-bitstransfer", 1, true) and not (string.find)(l_0_31, "compress-archive", 1, true) and not (string.find)(l_0_31, "set-mppreference", 1, true) and not (string.find)(l_0_31, "add-mppreference", 1, true) and not (string.find)(l_0_31, "frombase64string", 1, true) and not (string.find)(l_0_31, "::frombase64", 1, true) and not (string.find)(l_0_31, " whoami", 1, true) and not (string.find)(l_0_31, " tasklist", 1, true) and not (string.find)(l_0_31, " netstat", 1, true) and not (string.find)(l_0_31, " systeminfo", 1, true) and not (string.find)(l_0_31, " ipconfig", 1, true) and not (string.find)(l_0_31, " net user", 1, true) and not (string.find)(l_0_31, " net group", 1, true) and not (string.find)(l_0_31, "/c whoami", 1, true) and not (string.find)(l_0_31, "/c tasklist", 1, true) and not (string.find)(l_0_31, "/c netstat", 1, true) and not (string.find)(l_0_31, "/c systeminfo", 1, true) and not (string.find)(l_0_31, "reg add ", 1, true) and not (string.find)(l_0_31, "reg delete ", 1, true) and not (string.find)(l_0_31, "schtasks /create", 1, true) then
-              local l_0_32 = (string.lower)(l_0_27)
+            if not contains(l_0_31, l_0_33, true) and not contains(l_0_31, l_0_34, true) then
+              local l_0_35 = nil
             end
-            if not (string.find)(l_0_31, "wmic process call create", 1, true) then
+            if not contains(l_0_31, {"get-wmiobject", "gwmi ", "get-ciminstance", "gcim ", "win32_computersystem", "win32_operatingsystem", "win32_bios", "win32_networkadapterconfiguration", "win32_process", "win32_service", "get-localuser", "get-localgroup", "get-localgroupmember", "get-aduser", "get-adgroup", "get-adcomputer", "get-netuser", "get-netgroup", "get-netcomputer", "get-domainuser", "get-domaingroup", "get-domaincomputer", "get-process", "get-service", "get-childitem", "gci ", "get-netipaddress", "get-nettcpconnection", "get-ipconfiguration", "get-computerinfo", "get-volume", "get-disk", "get-physicaldisk", "get-eventlog", "get-winevent", "psversiontable", "$profile"}, true) then
               return mp.CLEAN
             end
-            local l_0_33 = nil
-            -- DECOMPILER ERROR at PC585: Overwrote pending register: R5 in 'AssignReg'
+            local l_0_36 = nil
+            -- DECOMPILER ERROR at PC421: Overwrote pending register: R8 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC594: Overwrote pending register: R5 in 'AssignReg'
+            -- DECOMPILER ERROR at PC430: Overwrote pending register: R8 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC603: Overwrote pending register: R5 in 'AssignReg'
+            -- DECOMPILER ERROR at PC439: Overwrote pending register: R8 in 'AssignReg'
 
             if ((not (this_sigattrlog[10]).matched or (this_sigattrlog[11]).matched) and not (this_sigattrlog[12]).matched) or not isnull(nil) then
               TrackPidAndTechniqueBM("BM", "T1505.003", "iis_shell_spawn", 28800)
-              -- DECOMPILER ERROR at PC617: Confused about usage of register: R5 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC453: Confused about usage of register: R8 in 'UnsetPending'
 
               ;
               (bm.add_related_process)(nil)
             end
-            local l_0_34 = nil
-            if not isnull((mp.GetExecutablesFromCommandLine)(l_0_33)) then
-              local l_0_35 = nil
+            local l_0_37 = nil
+            if not isnull((mp.GetExecutablesFromCommandLine)(l_0_32)) then
+              local l_0_38 = nil
               do
-                if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 1 then
-                  local l_0_36 = nil
-                  if not isnull((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1]), true, false) then
-                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_33))[1]))
+                if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 1 then
+                  local l_0_39 = nil
+                  if not isnull((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1]), true, false) then
+                    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1]))
                   end
                 end
-                -- DECOMPILER ERROR at PC658: Confused about usage of register: R7 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC494: Confused about usage of register: R10 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC662: Confused about usage of register: R6 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC498: Confused about usage of register: R9 in 'UnsetPending'
 
                 do
-                  if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 2 then
-                    local l_0_37 = nil
-                    if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_36[2])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2]), true, false) then
-                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_36[2]))
+                  if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 2 then
+                    local l_0_40 = nil
+                    if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_39[2])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_39[2])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_39[2]), true, false) then
+                      (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_39[2]))
                     end
                   end
-                  -- DECOMPILER ERROR at PC687: Confused about usage of register: R7 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC523: Confused about usage of register: R10 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC691: Confused about usage of register: R6 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC527: Confused about usage of register: R9 in 'UnsetPending'
 
                   do
-                    if #(mp.GetExecutablesFromCommandLine)(l_0_33) >= 3 then
-                      local l_0_38 = nil
-                      if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_37[3])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3]), true, false) then
-                        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_37[3]))
+                    if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 3 then
+                      local l_0_41 = nil
+                      if not isnull((mp.ContextualExpandEnvironmentVariables)(l_0_40[3])) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(l_0_40[3])) and not (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)(l_0_40[3]), true, false) then
+                        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_40[3]))
                       end
                     end
                     ;
@@ -137,7 +140,7 @@ do
                     ;
                     (bm.add_related_string)("iis_shell_child_name", l_0_28, bm.RelatedStringBMReport)
                     ;
-                    (bm.add_related_string)("iis_shell_cmd_len", tostring(#l_0_33), bm.RelatedStringBMReport)
+                    (bm.add_related_string)("iis_shell_cmd_len", tostring(#l_0_32), bm.RelatedStringBMReport)
                     add_parents()
                     return mp.INFECTED
                   end
