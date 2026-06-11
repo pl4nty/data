@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_FULL))
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_CNAME))
 if l_0_0 == nil or #l_0_0 == 0 or l_0_0:sub(-7) ~= ".config" then
   return mp.CLEAN
 end
@@ -24,14 +24,18 @@ local l_0_4 = (string.match)(l_0_3, "%s*(%d+)")
 if l_0_4 == nil then
   return mp.CLEAN
 end
-local l_0_5 = "ROQ_SECFG_REV"
-if IsKeyValuePairInRollingQueue(l_0_5, l_0_0, l_0_4) then
-  return mp.CLEAN
+do
+  if (mp.get_mpattribute)("RPF:TopLevelFile") then
+    local l_0_5 = "ROQ_SECFG_REV"
+    if IsKeyValuePairInRollingQueue(l_0_5, l_0_0, l_0_4) then
+      return mp.CLEAN
+    end
+    if not AppendToRollingQueue(l_0_5, l_0_0, l_0_4, 86400) then
+      return mp.CLEAN
+    end
+  end
+  ;
+  (mp.set_mpattribute)("Lua:SoftEtherConfigScan")
+  return mp.INFECTED
 end
-if not AppendToRollingQueue(l_0_5, l_0_0, l_0_4, 172800) then
-  return mp.CLEAN
-end
-;
-(mp.set_mpattribute)("Lua:SoftEtherConfigScan")
-return mp.INFECTED
 

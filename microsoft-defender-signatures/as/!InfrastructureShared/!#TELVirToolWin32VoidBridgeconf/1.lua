@@ -8,22 +8,25 @@ l_0_0[135105627] = "SCPT:GoatBridge"
 l_0_0[4032033915] = "SCPT:HardBridge"
 l_0_0[3730411570] = "SCPT:NullBridge"
 l_0_0[2080484669] = "SCPT:SpikeBridge"
-for l_0_4,l_0_5 in pairs(l_0_0) do
-  local l_0_6 = (mp.enum_mpattributesubstring)(l_0_5)
-  local l_0_7 = {}
-  for l_0_11 = 1, #l_0_6 <= 32 and #l_0_6 or 32 do
-    local l_0_12 = (l_0_6[l_0_11]):match("%.(%u+)$")
-    if l_0_12 and #l_0_12 <= 3 then
-      l_0_7[#l_0_7 + 1] = l_0_12
+local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_CNAME))
+if l_0_1 == nil or #l_0_1 == 0 then
+  return mp.CLEAN
+end
+for l_0_5,l_0_6 in pairs(l_0_0) do
+  local l_0_7 = (mp.enum_mpattributesubstring)(l_0_6)
+  local l_0_8 = {}
+  for l_0_12 = 1, #l_0_7 <= 32 and #l_0_7 or 32 do
+    local l_0_13 = (l_0_7[l_0_12]):match("%.(%u+)$")
+    if l_0_13 and #l_0_13 <= 3 then
+      l_0_8[#l_0_8 + 1] = l_0_13
     end
   end
-  if #l_0_7 > 0 then
-    (table.sort)(l_0_7)
+  if #l_0_8 > 0 then
+    (table.sort)(l_0_8)
     ;
-    (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. (table.concat)(l_0_7, ":"))
+    (mp.set_mpattribute)("MpInternal_researchdata=SCPTSFX=" .. (table.concat)(l_0_8, ":"))
     ;
-    (mp.changedetectionname)(l_0_4)
-    return mp.INFECTED
+    (mp.ReportLowfi)(l_0_1, l_0_5)
   end
 end
 return mp.CLEAN
