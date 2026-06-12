@@ -46,6 +46,7 @@ if ((".nib").find)(".png", ".jpeg", ".jpg", true) then
         (bm.add_threat_file)(l_0_3)
       end
       if SuspMacPathsToMonitor(l_0_2, true) or (string.find)(l_0_2, "/Users/[^/]+/Downloads/", 1, false) or (string.find)(l_0_2, "/Users/[^/]+/Documents/", 1, false) or (string.find)(l_0_2, "/Users/[^/]+/Desktop/", 1, false) then
+        TrackPidAndTechniqueBM("BM", "T1036.008", "DefenseEvasion_PRI1_Masquerading_FileType")
         return mp.INFECTED
       end
     end
@@ -53,7 +54,7 @@ if ((".nib").find)(".png", ".jpeg", ".jpg", true) then
 end
 do
   do
-    -- DECOMPILER ERROR at PC149: Overwrote pending register: R6 in 'AssignReg'
+    -- DECOMPILER ERROR at PC154: Overwrote pending register: R6 in 'AssignReg'
 
     do return l_0_6 end
     -- WARNING: undefined locals caused missing assignments!

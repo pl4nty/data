@@ -37,6 +37,7 @@ if (string.find)(l_0_3, "http", 1, true) and ((mp.bitand)(l_0_8, 1) == 1 or (mp.
   if l_0_5 ~= "" and l_0_5 ~= nil then
     (bm.trigger_sig)("UnsignedFileDownloadExecuted", l_0_5)
   end
+  TrackPidAndTechniqueBM("BM", "T1204.002", "Execution_PRI1_MaliciousFile_CurlExec")
   return mp.INFECTED
 end
 return mp.CLEAN

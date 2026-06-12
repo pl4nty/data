@@ -22,6 +22,7 @@ if l_0_3 == "" or l_0_3 == nil then
   return mp.CLEAN
 end
 if IsKeyValuePairInRollingQueue("MAC_BROWSERDOWNLOAD_PATH", "mac_browserdownload_path", l_0_3) then
+  TrackPidAndTechniqueBM("BM", "T1564.014", "DefenseEvasion_PRI2_ExtendedAttributes_Browser")
   return mp.INFECTED
 end
 return mp.CLEAN
