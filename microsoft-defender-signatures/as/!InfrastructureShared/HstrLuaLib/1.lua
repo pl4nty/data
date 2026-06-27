@@ -1240,56 +1240,41 @@ end
 
 getScannedRegions = function()
   -- function num : 0_12
-  local l_13_0 = function(l_14_0)
-    -- function num : 0_12_0
-    local l_14_1 = (mp.bitand)(l_14_0, 4294967295)
-    local l_14_2, l_14_3, l_14_4, l_14_5 = (mp.bsplit)(l_14_1, 8)
-    return (string.char)(l_14_2) .. (string.char)(l_14_3) .. (string.char)(l_14_4) .. (string.char)(l_14_5)
-  end
-
-  local l_13_1 = function(l_15_0)
-    -- function num : 0_12_1
-    local l_15_1 = (mp.bitand)((mp.shr64)(l_15_0, 32), 4294967295)
-    local l_15_2 = (mp.bitand)(l_15_0, 4294967295)
-    local l_15_3, l_15_4, l_15_5, l_15_6 = (mp.bsplit)(l_15_2, 8)
-    local l_15_7, l_15_8, l_15_9, l_15_10 = (mp.bsplit)(l_15_1, 8)
-    return (string.char)(l_15_3) .. (string.char)(l_15_4) .. (string.char)(l_15_5) .. (string.char)(l_15_6) .. (string.char)(l_15_7) .. (string.char)(l_15_8) .. (string.char)(l_15_9) .. (string.char)(l_15_10)
-  end
-
   if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
     return 1
   end
-  local l_13_2 = (mp.GetScannedPPID)()
-  local l_13_3 = (mp.GetSMSMemRanges)()
-  local l_13_4 = "memRegionsMetadata"
-  local l_13_5 = 0
-  local l_13_6 = {}
-  l_13_6.ppid = l_13_2
-  l_13_6.arch = (mp.GetSMSProcArchitecture)()
-  l_13_6.regions = {}
-  for l_13_10,l_13_11 in ipairs(l_13_3) do
-    l_13_5 = l_13_5 + 1
-    if l_13_5 <= 150 then
-      if not l_13_11.addr or not l_13_11.size or not l_13_11.prot or not l_13_11.alloc_prot then
+  local l_13_0 = (mp.GetScannedPPID)()
+  local l_13_1 = (mp.GetSMSMemRanges)()
+  local l_13_2 = "memRegionsMetadata"
+  local l_13_3 = 0
+  local l_13_4 = {}
+  l_13_4.ppid = l_13_0
+  l_13_4.arch = (mp.GetSMSProcArchitecture)()
+  l_13_4.regions = {}
+  for l_13_8,l_13_9 in ipairs(l_13_1) do
+    l_13_3 = l_13_3 + 1
+    if l_13_3 <= 150 then
+      if not l_13_9.addr or not l_13_9.size or not l_13_9.prot or not l_13_9.alloc_prot then
         return 3
       end
-      local l_13_12 = l_13_6.regions
-      local l_13_13 = #l_13_6.regions + 1
-      local l_13_14 = {}
-      l_13_14.addr = l_13_1(l_13_11.addr)
-      l_13_14.size = l_13_0(l_13_11.size)
-      l_13_14.alloc_prot = l_13_0(l_13_11.alloc_prot)
-      l_13_14.prot = l_13_0(l_13_11.prot)
-      l_13_14.state_type = l_13_0(l_13_11.state_type)
-      l_13_14.flags = l_13_0(l_13_11.flags)
-      l_13_12[l_13_13] = l_13_14
+      local l_13_10 = l_13_4.regions
+      local l_13_11 = #l_13_4.regions + 1
+      local l_13_12 = {}
+      l_13_12.addr = l_13_9.addr
+      l_13_12.size = l_13_9.size
+      l_13_12.alloc_prot = l_13_9.alloc_prot
+      l_13_12.prot = l_13_9.prot
+      l_13_12.state_type = l_13_9.state_type
+      l_13_12.flags = l_13_9.flags
+      l_13_10[l_13_11] = l_13_12
     end
   end
-  l_13_6.nRegions = l_13_5
-  local l_13_15 = (MpCommon.JsonSerialize)(l_13_6)
-  AppendToRollingQueue(l_13_4, "data", l_13_15)
+  l_13_4.nRegions = l_13_3
+  local l_13_13 = (MpCommon.JsonSerialize)(l_13_4)
+  local l_13_14 = (MpCommon.Base64Encode)(l_13_13)
+  AppendToRollingQueue(l_13_2, "data", l_13_14)
   ;
-  (MpCommon.BmTriggerSig)(l_13_2, l_13_4, (string.format)("nRegions %d", l_13_5))
+  (MpCommon.BmTriggerSig)(l_13_0, l_13_2, (string.format)("nRegions %d", l_13_3))
   return 0
 end
 

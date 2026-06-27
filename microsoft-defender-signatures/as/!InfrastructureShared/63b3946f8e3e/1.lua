@@ -36,10 +36,7 @@ do
   end
 end
 
-  local l_0_4 = l_0_3(l_0_1)
-  local l_0_5 = l_0_3(l_0_2)
-  if l_0_4 == l_0_5 then
-    (mp.TriggerScanResource)("file", l_0_1, 0)
+  if l_0_3(l_0_1) == l_0_3(l_0_2) then
     return mp.INFECTED
   end
   return mp.CLEAN

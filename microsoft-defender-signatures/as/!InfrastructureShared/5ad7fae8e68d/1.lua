@@ -15,7 +15,7 @@ l_0_1 = (string.lower)(l_0_1)
 local l_0_2 = nil
 l_0_2 = (string.match)(l_0_1, "binpath=\"?([^\"%s]+%.sys)\"?")
 if not l_0_2 then
-  AppendToRollingQueue("NewServiceCreated", l_0_1, l_0_2, 3600)
+  AppendToRollingQueue("NewServiceCreated", l_0_1, l_0_2, 500)
   return mp.CLEAN
 end
 return mp.INFECTED

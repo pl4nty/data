@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") and not (mp.get_mpattribute)("MpIsAiMcpODRScan") then
+if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") and not (mp.get_mpattribute)("MpIsAiNetPromptScan") then
   return mp.CLEAN
 end
 CollectXpiaEncodingTelemetry()

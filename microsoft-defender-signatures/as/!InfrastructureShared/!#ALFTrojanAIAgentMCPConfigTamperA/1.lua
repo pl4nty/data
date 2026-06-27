@@ -9,51 +9,52 @@ if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOS
 end
 local l_0_1 = (mp.get_mpattribute)("Lua:FnameAttr!mcp.json")
 local l_0_2 = (mp.get_mpattribute)("Lua:FnameAttr!claude_desktop_config.json")
-if not l_0_1 and not l_0_2 then
+local l_0_3 = (mp.get_mpattribute)("Lua:FnameAttr!openclaw.json")
+if not l_0_1 and not l_0_2 and not l_0_3 then
   return mp.CLEAN
 end
-local l_0_3 = (mp.getfilesize)()
-if l_0_3 < 20 or l_0_3 > 524288 then
+local l_0_4 = (mp.getfilesize)()
+if l_0_4 < 20 or l_0_4 > 524288 then
   return mp.CLEAN
 end
 ;
 (mp.readprotection)(false)
-local l_0_4 = tostring((mp.readfile)(0, l_0_3))
+local l_0_5 = tostring((mp.readfile)(0, l_0_4))
 ;
 (mp.readprotection)(true)
-if not l_0_4 then
+if not l_0_5 then
   return mp.CLEAN
 end
-local l_0_5 = (string.lower)(l_0_4)
-if not (string.find)(l_0_5, "mcpservers", 1, true) and not (string.find)(l_0_5, "\"servers\"", 1, true) then
+local l_0_6 = (string.lower)(l_0_5)
+if not (string.find)(l_0_6, "mcpservers", 1, true) and not (string.find)(l_0_6, "\"servers\"", 1, true) then
   return mp.CLEAN
 end
-local l_0_6 = {}
-if (string.find)(l_0_4, "process%.env%.") then
-  l_0_6[#l_0_6 + 1] = "process_env"
+local l_0_7 = {}
+if (string.find)(l_0_5, "process%.env%.") then
+  l_0_7[#l_0_7 + 1] = "process_env"
 end
-if (string.find)(l_0_4, "os%.environ") then
-  l_0_6[#l_0_6 + 1] = "os_environ"
+if (string.find)(l_0_5, "os%.environ") then
+  l_0_7[#l_0_7 + 1] = "os_environ"
 end
-if (string.find)(l_0_4, "$(", 1, true) then
-  l_0_6[#l_0_6 + 1] = "shell_cmd_substitution"
+if (string.find)(l_0_5, "$(", 1, true) then
+  l_0_7[#l_0_7 + 1] = "shell_cmd_substitution"
 end
-if ((not (string.find)(l_0_5, "\"sse\"", 1, true) and not (string.find)(l_0_5, "\"transport\":\"sse\"", 1, true)) or (((string.find)(l_0_5, "http://", 1, true) or not (string.find)(l_0_5, "localhost", 1, true)) and not (string.find)(l_0_5, "https://", 1, true)) or not (string.find)(l_0_5, "127.0.0.1", 1, true)) then
-  l_0_6[#l_0_6 + 1] = "remote_sse_transport"
+if ((not (string.find)(l_0_6, "\"sse\"", 1, true) and not (string.find)(l_0_6, "\"transport\":\"sse\"", 1, true)) or (((string.find)(l_0_6, "http://", 1, true) or not (string.find)(l_0_6, "localhost", 1, true)) and not (string.find)(l_0_6, "https://", 1, true)) or not (string.find)(l_0_6, "127.0.0.1", 1, true)) then
+  l_0_7[#l_0_7 + 1] = "remote_sse_transport"
 end
-if #l_0_6 == 0 then
+if #l_0_7 == 0 then
   return mp.CLEAN
 end
-local l_0_7 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-local l_0_8 = {}
+local l_0_8 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_9 = {}
 do
-  l_0_8.file = l_0_7 or "unknown"
-  l_0_8.tamper_types = (table.concat)(l_0_6, ",")
-  set_research_data("AIAgent_MCPConfigTamper", safeJsonSerialize(l_0_8), false)
+  l_0_9.file = l_0_8 or "unknown"
+  l_0_9.tamper_types = (table.concat)(l_0_7, ",")
+  set_research_data("AIAgent_MCPConfigTamper", safeJsonSerialize(l_0_9), false)
   ;
-  (mp.SetDetectionString)(safeJsonSerialize(l_0_8))
+  (mp.SetDetectionString)(safeJsonSerialize(l_0_9))
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC218: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC224: freeLocal<0 in 'ReleaseLocals'
 
 end
 

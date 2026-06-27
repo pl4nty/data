@@ -9,5 +9,9 @@ for l_0_5,l_0_6 in ipairs(l_0_1) do
     TrackPidAndTechniqueBM(l_0_6.ppid, "T1195.001", "SuspBunProcess", 1800)
   end
 end
+local l_0_7, l_0_8 = pcall(reportBmInfo)
+if not l_0_7 and l_0_8 then
+  (bm.add_related_string)("bmInfoFailReason", tostring(l_0_8), bm.RelatedStringBMReport)
+end
 return mp.INFECTED
 

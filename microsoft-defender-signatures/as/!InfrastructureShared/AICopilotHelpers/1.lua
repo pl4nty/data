@@ -115,7 +115,7 @@ local l_0_5 = function(l_9_0)
   if not l_9_0 or l_9_0 == "" then
     return false
   end
-  do return l_9_0 == "copilot.microsoft.com" or l_9_0 == "chatgpt.com" or l_9_0 == "chat.openai.com" or l_9_0 == "perplexity.ai" or l_9_0 == "claude.ai" or l_9_0 == "grok.com" or l_9_0 == "chat.deepseek.com" end
+  do return l_9_0 == "copilot.microsoft.com" or l_9_0 == "m365.cloud.microsoft" or l_9_0 == "chatgpt.com" or l_9_0 == "chat.openai.com" or l_9_0 == "perplexity.ai" or l_9_0 == "claude.ai" or l_9_0 == "grok.com" or l_9_0 == "chat.deepseek.com" end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 
@@ -126,14 +126,17 @@ local l_0_6 = function(l_10_0, l_10_1)
   end
   if l_10_1 ~= "/search" then
     do return l_10_0 ~= "perplexity.ai" end
-    if l_10_1 ~= "/" then
-      do return l_10_0 ~= "copilot.microsoft.com" and l_10_0 ~= "chatgpt.com" and l_10_0 ~= "chat.openai.com" end
-      if l_10_1 ~= "/" and l_10_1 ~= "/new" then
-        do return l_10_0 ~= "claude.ai" end
-        if l_10_1 ~= "/" then
-          do return l_10_0 ~= "grok.com" and l_10_0 ~= "chat.deepseek.com" end
-          do return false end
-          -- DECOMPILER ERROR: 10 unprocessed JMP targets
+    if l_10_1 ~= "/search" and l_10_1 ~= "/search/" then
+      do return l_10_0 ~= "m365.cloud.microsoft" end
+      if l_10_1 ~= "/" then
+        do return l_10_0 ~= "copilot.microsoft.com" and l_10_0 ~= "chatgpt.com" and l_10_0 ~= "chat.openai.com" end
+        if l_10_1 ~= "/" and l_10_1 ~= "/new" then
+          do return l_10_0 ~= "claude.ai" end
+          if l_10_1 ~= "/" then
+            do return l_10_0 ~= "grok.com" and l_10_0 ~= "chat.deepseek.com" end
+            do return false end
+            -- DECOMPILER ERROR: 12 unprocessed JMP targets
+          end
         end
       end
     end
@@ -166,22 +169,22 @@ end
 
 do
   local l_0_12 = function(l_12_0)
-  -- function num : 0_11 , upvalues : l_0_3, l_0_4
+  -- function num : 0_11 , upvalues : l_0_3, l_0_4, l_0_5
   if not l_12_0 or l_12_0 == "" then
     return nil
   end
   for l_12_4 in l_12_0:gmatch("https?://[^%s\"\']+") do
-    local l_12_5 = l_0_3(l_12_4)
-    if l_0_4(l_12_5) then
+    local l_12_5, l_12_6 = l_0_3(l_12_4)
+    if l_0_4(l_12_5) and l_0_5(l_12_5, l_12_6) then
       return l_12_4
     end
   end
-  local l_12_6 = urldecode(l_12_0)
-  if l_12_6 and l_12_6 ~= l_12_0 then
-    for l_12_10 in l_12_6:gmatch("https?://[^%s\"\']+") do
-      local l_12_11 = l_0_3(l_12_10)
-      if l_0_4(l_12_11) then
-        return l_12_10
+  local l_12_7 = urldecode(l_12_0)
+  if l_12_7 and l_12_7 ~= l_12_0 then
+    for l_12_11 in l_12_7:gmatch("https?://[^%s\"\']+") do
+      local l_12_12, l_12_13 = l_0_3(l_12_11)
+      if l_0_4(l_12_12) and l_0_5(l_12_12, l_12_13) then
+        return l_12_11
       end
     end
   end
@@ -190,7 +193,7 @@ do
   end
 end
 
-  -- DECOMPILER ERROR at PC55: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC56: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end

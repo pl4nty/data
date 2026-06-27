@@ -77,22 +77,25 @@ local l_0_4 = {}
 if ("node_modules/node-gyp/")("node_modules/node-sass/", "pnpm install") then
   return mp.CLEAN
 end
-do
-  local l_0_5 = {}
-  -- DECOMPILER ERROR at PC194: Overwrote pending register: R8 in 'AssignReg'
+local l_0_5 = {}
+-- DECOMPILER ERROR at PC194: Overwrote pending register: R8 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC195: No list found for R5 , SetList fails
+-- DECOMPILER ERROR at PC195: No list found for R5 , SetList fails
 
-  -- DECOMPILER ERROR at PC196: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC196: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC197: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC197: Overwrote pending register: R7 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC198: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC198: Overwrote pending register: R8 in 'AssignReg'
 
-  if ("npm install --workspaces")("pnpm -r install", "pnpm i ") then
-    return mp.CLEAN
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+if ("npm install --workspaces")("pnpm -r install", "pnpm i ") then
+  return mp.CLEAN
 end
+local l_0_6, l_0_7 = pcall(reportBmInfo)
+-- DECOMPILER ERROR at PC214: Overwrote pending register: R9 in 'AssignReg'
+
+if not l_0_6 and l_0_7 then
+  (bm.add_related_string)("node_modules/canvas/", tostring(l_0_7), bm.RelatedStringBMReport)
+end
+return mp.INFECTED
 

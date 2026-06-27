@@ -46,6 +46,10 @@ do
             TrackPidAndTechniqueBM(l_0_21.ppid, "T1195.001", "SuspBunProcess", 1800)
           end
         end
+        local l_0_22, l_0_23 = pcall(reportBmInfo)
+        if not l_0_22 and l_0_23 then
+          (bm.add_related_string)("bmInfoFailReason", tostring(l_0_23), bm.RelatedStringBMReport)
+        end
         return mp.INFECTED
       end
     end

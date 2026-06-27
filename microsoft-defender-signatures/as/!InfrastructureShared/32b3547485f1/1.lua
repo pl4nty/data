@@ -206,9 +206,24 @@ end
             end
           end
         end
-        l_0_0 = mp
-        l_0_0 = l_0_0.INFECTED
-        return l_0_0
+        l_0_0 = pcall
+        l_0_1 = reportBmInfo
+        l_0_0 = l_0_0(l_0_1)
+        local l_0_37, l_0_38 = nil
+        if not l_0_0 and l_0_1 then
+          l_0_2 = bm
+          l_0_2 = l_0_2.add_related_string
+          l_0_7 = "bmInfoFailReason"
+          l_0_8 = tostring
+          l_0_9 = 
+          l_0_8 = l_0_8(l_0_9)
+          l_0_9 = bm
+          l_0_9 = l_0_9.RelatedStringBMReport
+          l_0_2(l_0_7, l_0_8, l_0_9)
+        end
+        l_0_2 = mp
+        l_0_2 = l_0_2.INFECTED
+        return l_0_2
       end
     end
   end

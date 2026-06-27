@@ -31,58 +31,64 @@ do
               end
               local l_0_10 = {}
               local l_0_11 = add_parents()
-              do
-                local l_0_12 = add_parents_mp()
-                l_0_10.parents_info = l_0_11
-                l_0_10.parents_info_mp = l_0_12
-                if (this_sigattrlog[14]).matched and (this_sigattrlog[14]).utf8p2 then
-                  l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[14]).timestamp
-                else
-                  if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p2 then
-                    l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[15]).timestamp
-                  end
+              local l_0_12 = add_parents_mp()
+              l_0_10.parents_info = l_0_11
+              l_0_10.parents_info_mp = l_0_12
+              if (this_sigattrlog[14]).matched and (this_sigattrlog[14]).utf8p2 then
+                l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[14]).timestamp
+              else
+                if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p2 then
+                  l_0_10.BM_Parent_TimeStamp = (this_sigattrlog[15]).timestamp
                 end
-                ;
-                (bm.add_related_string)("Debug_Info", safeJsonSerialize(l_0_10), bm.RelatedStringBMReport)
-                for l_0_16,l_0_17 in ipairs(l_0_12) do
-                  if l_0_17.ImagePath then
-                    local l_0_18 = (string.lower)(l_0_17.ImagePath)
-                    if contains(l_0_18, "onedrive") then
-                      local l_0_19 = bm.trigger_sig
-                      local l_0_20 = "SuspChild_Onedrive"
+              end
+              ;
+              (bm.add_related_string)("Debug_Info", safeJsonSerialize(l_0_10), bm.RelatedStringBMReport)
+              for l_0_16,l_0_17 in ipairs(l_0_12) do
+                if l_0_17.ImagePath then
+                  local l_0_18 = (string.lower)(l_0_17.ImagePath)
+                  if contains(l_0_18, "onedrive") then
+                    local l_0_19 = bm.trigger_sig
+                    local l_0_20 = "SuspChild_Onedrive"
+                    do
                       do
-                        do
-                          l_0_19(l_0_20, l_0_2 or "OriginalOneDriveFile")
-                          do break end
-                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out DO_STMT
+                        l_0_19(l_0_20, l_0_2 or "OriginalOneDriveFile")
+                        do break end
+                        -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out DO_STMT
 
-                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
 
-                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                          -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC175: LeaveBlock: unexpected jumping out IF_STMT
 
-                        end
                       end
                     end
                   end
                 end
+              end
+              do
+                local l_0_22, l_0_23 = , pcall(reportBmInfo)
+                -- DECOMPILER ERROR at PC191: Overwrote pending register: R17 in 'AssignReg'
+
+                if not l_0_23 and reportBmInfo then
+                  (bm.add_related_string)("bmInfoFailReason", tostring(R17_PC189), R17_PC189)
+                end
                 do return mp.INFECTED end
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC180: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC196: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -92,7 +98,7 @@ do
     end
   end
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC185: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC201: freeLocal<0 in 'ReleaseLocals'
 
 end
 

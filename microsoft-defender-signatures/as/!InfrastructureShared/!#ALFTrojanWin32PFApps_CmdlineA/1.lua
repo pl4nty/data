@@ -106,7 +106,7 @@ do
                     l_0_12.IsPotentiallyClean = "CmdLine"
                   end
                   ;
-                  (MpCommon.BmTriggerSig)(l_0_24.ppid, "AnomalousChildCommandline2", safeJsonSerialize(l_0_29))
+                  (MpCommon.BmTriggerSig)(l_0_24.ppid, "2_AnomalousChildCommandline", safeJsonSerialize(l_0_29))
                 end
               end
               do
