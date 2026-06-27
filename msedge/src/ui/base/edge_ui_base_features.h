@@ -375,6 +375,11 @@ enum class SemanticTheme : int {
 };
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kMaiDesignSystem);
+// Kill switch for MAIDS when Mica is enabled.
+// Default: enabled (MAIDS can run with Mica).
+// If disabled, MAIDS is forced off for Mica-enabled users.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEnableMaiDesignSystemForMica);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
