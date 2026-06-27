@@ -32,11 +32,18 @@
             "EnableSkipSendActivityInSignInInvoke": true
         }
     },
+    "Hierarchy": {
+        "CacheOptions": {
+            "EnableRedisEntraTokenAuth": false
+        }
+    },
     "ImmersiveEvents": {
+        "Anyone_And_Room_Scope_Triggers": 1,
+        "CreateActionGroupsFromCustomizationTriggers": 1,
         "CustomizationActionGroups": 1,
         "CustomizationTriggers": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2608.0",
+        "clientMinimumVersion": "6.2610.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -561,14 +568,19 @@
                 "EnableNetworkResiliencyForSubstrateServiceCalls": true,
                 "EnableOutgoingPfat": true,
                 "EnableOutlookHpaAppOnlyInsteadOfCachedPft": true,
+                "EnablePCK2BackfillTeamGroupId": true,
                 "EnablePCK2CleanupFailedMarkersCLQP": true,
                 "EnablePCK2CleanupFailedMarkersTLQP": true,
+                "EnablePCK2DiagnosticsRemainingChannelDetails": true,
                 "EnablePCK2ExcludedTenantsCheck": true,
                 "EnablePCK2GracefulHandleAadTokenErrors": true,
                 "EnablePCK2GracefulHandleForbiddenThrottling": true,
                 "EnablePCK2GracefulHandleSoftDeletedTenants": true,
                 "EnablePCK2GracefulHandleSubstrateNotFound": true,
                 "EnablePCK2MigrationStatusChannelDetails": true,
+                "EnablePCK2MigrationStatusCompletedForNoEntries": true,
+                "EnablePCK2StatusCleanupDeletedThreads": true,
+                "EnablePCK2StatusCleanupMigratedThreads": true,
                 "EnablePFTForOutgoingSDSCall": false,
                 "EnablePassingDataDirectlyToDTF": true,
                 "EnablePersistPftTokenInCacheWhenOrchestrationQueued": true,
@@ -1066,11 +1078,6 @@
     "TFLSvcsTestUsers": {
         "IsTestUser": false
     },
-    "Teams-AadSync": {
-        "EnableKaizalaActionService": false,
-        "TenantsDtasService_AddGroupMemberAsync": "a28d1cf5-96a9-4d00-9e8f-5f907ebc8778",
-        "TenantsDtasService_DeleteGroupMemberAsync": "a28d1cf5-96a9-4d00-9e8f-5f907ebc8778"
-    },
     "TeamsAdminCenter_Prod": {
         "Feature": {
             "UI.Mgmt.DirectRouting.SIPLadderUIActionGuardWhenOutsideSLA": true,
@@ -1087,6 +1094,25 @@
         "TelemetryRegion": "US"
     },
     "TeamsCopilotAggregator": {
+        "PowerAutomateOptions": {
+            "DisableChatContext": true,
+            "Enabled": true
+        },
+        "ProjectAgentAL": {
+            "RequestMetadata": {
+                "Timeout": 1800000
+            },
+            "UserQueryOptions": {
+                "EnableStreaming": true
+            }
+        },
+        "ProjectAgentOptions": {
+            "EnableResponseStreamingHeartbeat": true,
+            "RoutineKillSwitchDeleteAgentIds": [],
+            "RoutineKillSwitchDeleteRoutineIds": [],
+            "RoutineKillSwitchSkipAgentIds": [],
+            "RoutineKillSwitchSkipRoutineIds": []
+        },
         "ProjectAgentOptions.EnablePAAutoDeletionfromSASilentMode": false,
         "TeamsChatAgent": {
             "EnableAMSImageDownloadForChatAgent": false
@@ -1115,7 +1141,6 @@
             "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
-            "EnableDeletingDataOnConversationEnd": true,
             "EnableDownloadImagesApi": true,
             "EnableDynamicSuggestedPrompts": true,
             "EnableEarlyCoTFromGCB": false,
@@ -1173,6 +1198,7 @@
             "EnableBotMetadataDecorator": true,
             "EnableConversationalContinuity": true,
             "EnableDirectBotFrameworkIntegration": true,
+            "EnableFetchConversationSettingsMiddleware": true,
             "EnableFetchTeamsAppIdDirectly": true,
             "EnableGetAppIdFromTurnContext": true,
             "EnableLoggingBotEngagementMetrics": true,
@@ -1184,6 +1210,7 @@
             "EnablePersonalScope": true,
             "EnableRedeemSharingLink": true,
             "EnableRefetchPBPFlow": true,
+            "EnableTaigerServiceForAgentFile": true,
             "EnableWebSocketsForAugLoopQueryRequests": true,
             "EnableWelcomeMessageFromInstallationUpdate": true,
             "GetTokenForEachResource": true
@@ -1243,6 +1270,12 @@
             "EnableLLMIterativePlannerInPA": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableLLMIterativePlannerInPA",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableLLMPlannerCaching": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.improveLLMPlannerCaching",
                     "IsEnabled": true
                 }
             ],
@@ -1306,6 +1339,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableStrictMode": [
+                {
+                    "Flight": "enableToolsStrictMode",
+                    "IsEnabled": true
+                }
+            ],
             "EnableSummarizationUsingLLMForLLMToolDetector": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableSummarization",
@@ -1328,6 +1367,12 @@
                 {
                     "Flight": "enableUnifiedTeamsCopilotSkill",
                     "IsEnabled": false
+                }
+            ],
+            "FacilitatorWebDA.DisableStreaming": [
+                {
+                    "Flight": "DisableSydneyStreamingForFA",
+                    "IsEnabled": true
                 }
             ],
             "IntentPlus": [
@@ -1532,6 +1577,14 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableRecurringMeetings",
                     "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableParticipantValidationForV3",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.SchedulingSkill.EnableImprovedParticipantSelection",
+                    "IsEnabled": true
                 }
             ],
             "SelfRespond": [
@@ -1565,6 +1618,12 @@
                 },
                 {
                     "Flight": "IntentPlus.EnableLimitedModeOcps",
+                    "IsEnabled": true
+                }
+            ],
+            "SelfRespond_HandleBotResponses": [
+                {
+                    "Flight": "IntentPlus.SelfRespondHandleBotResponses",
                     "IsEnabled": true
                 }
             ],
@@ -1625,6 +1684,12 @@
             "TeamsMeetingAgendaSkill_ConsolidationForMeetingInfoQna": [
                 {
                     "Flight": "isAgendaSkillConsolidationForMeetingInfoQnaEnabled",
+                    "IsEnabled": true
+                }
+            ],
+            "TeamsMeetingAgendaSkill_ReactiveActiveMeeting": [
+                {
+                    "Flight": "isReactiveAgendaForNonActiveCallBlocked",
                     "IsEnabled": true
                 }
             ],
@@ -1772,12 +1837,20 @@
                     "IsEnabled": false
                 },
                 {
+                    "Flight": "Microsoft.Teams.Augloop.WebSearch.EnableWebSearchDAForPA",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.EnableWebSearchDeltaStreamingForPA",
+                    "IsEnabled": true
+                },
+                {
                     "Flight": "Microsoft.Teams.Augloop.WebSearch.OptionSetName",
                     "Value": "search_web_plugin"
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.WebSearch.AdditionalVariantHeaders",
-                    "Value": "feature.DisableSegmentGeneration,teamsCopilotFluxV3,feature.DisableEnterpriseSearch,cdxenable_grounding_api_web_search_without_da"
+                    "Value": "feature.DisableSegmentGeneration,teamsCopilotFluxV3,feature.DisableEnterpriseSearch,cdxenable_grounding_api_web_search_without_da,cdxgrounding_api_v2_web_page_source_date,feature.EnableWebGroundingForDA"
                 }
             ],
             "WebSearchSkill_declarativeAgent": [
@@ -1873,6 +1946,12 @@
             "meetingAgendaSkill_SyntheticAgendaDetectionWithDuration": [
                 {
                     "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionWithDuration",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_SyntheticAgendaPartialAccessRetry": [
+                {
+                    "Flight": "AS.enableAgendaSkillSyntheticAgendaPartialAccessRetry",
                     "IsEnabled": true
                 }
             ],
@@ -2136,7 +2215,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026050101"
+        "buildVersion": "2026051503"
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
@@ -2540,6 +2619,7 @@
                     "chat_send_sr_message": 0,
                     "chats_by_members_search": 0,
                     "chats_by_title_search": 0,
+                    "check_virtual_event_recording_access": 100,
                     "click_virtual_event_integrations_card": 100,
                     "client_start": 25,
                     "client_start|abandoned": 100,
@@ -2570,6 +2650,7 @@
                     "create_meeting_notes": 0,
                     "create_one_on_one_2_way_sms": 100,
                     "create_virtual_event": 100,
+                    "create_virtual_event_highlights_artifact": 100,
                     "cross_client_test_scenario": 0,
                     "csa_get_post": 0,
                     "csa_get_post_authors": 0,
@@ -2596,6 +2677,7 @@
                     "doc_collab_dynamic_file_user_permissions|success": 100,
                     "doc_collab_dynamic_file_user_permissions|timeout": 100,
                     "download_broadcast_meeting_resource": 100,
+                    "download_virtual_event_recording": 100,
                     "dynamic_import|success": 0,
                     "ecs_provider_fetch": 0.1,
                     "ent_user_group_profile_picture_url": 0,
@@ -2634,6 +2716,7 @@
                     "freemium_get_join_tenant_url": 0,
                     "freemium_get_tenant_admins": 0,
                     "freemium_invitation_batch_invite": 0,
+                    "generate_virtual_event_highlights": 100,
                     "get_auth_user": 0,
                     "get_broadcast_event": 100,
                     "get_cached_image_blob_url": 0,
@@ -2657,6 +2740,8 @@
                     "get_virtual_event_email_template_info": 100,
                     "get_virtual_event_email_templates": 100,
                     "get_virtual_event_integrations": 100,
+                    "get_virtual_event_recording_artifacts": 100,
+                    "get_virtual_event_recording_playback_info": 100,
                     "get_virtual_event_registration": 100,
                     "get_virtual_event_sessions": 100,
                     "get_virtual_events_list": 100,
@@ -2703,6 +2788,8 @@
                     "load_extensible_office_app|success": 100,
                     "load_loggedin_user_policy_from_userprofile_or_default": 0,
                     "load_room_account_name": 0,
+                    "load_virtual_event_highlights_editor_loop": 100,
+                    "load_virtual_event_highlights_viewer_loop": 100,
                     "long_poll_error": 0,
                     "long_poll_recovery": 0,
                     "low_code_workflow_templates_collection_worker_resolver": 100,
@@ -2867,6 +2954,7 @@
                     "profile_fetch_job": 0,
                     "profile_fetch_workflow": 0,
                     "publish_virtual_event": 100,
+                    "publish_virtual_event_highlights": 100,
                     "publish_virtual_event_recording": 100,
                     "qna_feed_loaded": 100,
                     "qna_latency": 0,
@@ -2899,6 +2987,7 @@
                     "reply_chain_manager_get_reply_chains_by_keys": 0.5,
                     "report_misrecognized_participant_latency": 0,
                     "reset_team_join_code": 0,
+                    "reset_virtual_event_highlights_to_draft": 100,
                     "resolve_edit_client_lie_resolver": 0,
                     "restore_broadcast_meeting_resources": 100,
                     "restore_persisted_windows": 0,
@@ -2914,6 +3003,7 @@
                     "room_remote_meeting_room_states": 0,
                     "roster_panel_full_render2": 0.1,
                     "roster_participants_search": 10,
+                    "save_virtual_event_highlights_draft": 100,
                     "save_virtual_event_meeting_options": 100,
                     "scheduled_job_complete": 0.1,
                     "scis_files_recommendations": 0,
@@ -3021,6 +3111,9 @@
                     "video_player_seek": 10,
                     "video_preview": 0,
                     "video_stream_stopped": 0,
+                    "virtual_event_recording_oneplayer_playback": 100,
+                    "virtual_event_recording_oneplayer_setup": 100,
+                    "virtual_event_recording_oneplayer_unbinned": 100,
                     "voice_enrollment": 100,
                     "webinar_cancel_attendee_registration": 100,
                     "webinar_core": 0,
@@ -3863,12 +3956,15 @@
         "EnableCdtTokenInboundRequests": true,
         "EnableCdtTokenSchedulingService": true,
         "EnableChannelMeetingGetAllReports": true,
+        "EnableConversationIdAsCallId": true,
         "EnableDisplayNameOverrideFromDsApi": true,
         "EnableEfficientRegistrationReport": true,
         "EnableEngagementActivityFeature": true,
+        "EnableEngagementForAppToken": true,
         "EnableEngagementForTownhall": true,
         "EnableEngagementReactionFeature": true,
         "EnableExplicitPageFilteringForSegments": true,
+        "EnableExtendedEngagementActivities": true,
         "EnableExternalPresenterFeature": true,
         "EnableHandleReportGenerationInProcessorService": true,
         "EnablePartialRedactionFeature": true,
@@ -3996,8 +4092,6 @@
             "macCrashReporterOnMainThread": false,
             "macEnableDisasterRecovery": false,
             "macEnableDockAccountManagement": false,
-            "macEnableDockAccountManagementAddAccount": false,
-            "macEnableDockAccountManagementSignout": false,
             "macEnableEcsParamCacheGroupContainer": false,
             "macEnableRestoreZOrderOnActivation": false,
             "macEnableSystemMenuBarIcon": false,
@@ -4544,6 +4638,7 @@
                     "chat_send_sr_message": 0,
                     "chats_by_members_search": 0,
                     "chats_by_title_search": 0,
+                    "check_virtual_event_recording_access": 100,
                     "click_virtual_event_integrations_card": 100,
                     "client_start": 25,
                     "client_start|abandoned": 100,
@@ -4574,6 +4669,7 @@
                     "create_meeting_notes": 0,
                     "create_one_on_one_2_way_sms": 100,
                     "create_virtual_event": 100,
+                    "create_virtual_event_highlights_artifact": 100,
                     "cross_client_test_scenario": 0,
                     "csa_get_post": 0,
                     "csa_get_post_authors": 0,
@@ -4600,6 +4696,7 @@
                     "doc_collab_dynamic_file_user_permissions|success": 100,
                     "doc_collab_dynamic_file_user_permissions|timeout": 100,
                     "download_broadcast_meeting_resource": 100,
+                    "download_virtual_event_recording": 100,
                     "dynamic_import|success": 0,
                     "ecs_provider_fetch": 0.1,
                     "ent_user_group_profile_picture_url": 0,
@@ -4638,6 +4735,7 @@
                     "freemium_get_join_tenant_url": 0,
                     "freemium_get_tenant_admins": 0,
                     "freemium_invitation_batch_invite": 0,
+                    "generate_virtual_event_highlights": 100,
                     "get_auth_user": 0,
                     "get_broadcast_event": 100,
                     "get_cached_image_blob_url": 0,
@@ -4661,6 +4759,8 @@
                     "get_virtual_event_email_template_info": 100,
                     "get_virtual_event_email_templates": 100,
                     "get_virtual_event_integrations": 100,
+                    "get_virtual_event_recording_artifacts": 100,
+                    "get_virtual_event_recording_playback_info": 100,
                     "get_virtual_event_registration": 100,
                     "get_virtual_event_sessions": 100,
                     "get_virtual_events_list": 100,
@@ -4707,6 +4807,8 @@
                     "load_extensible_office_app|success": 100,
                     "load_loggedin_user_policy_from_userprofile_or_default": 0,
                     "load_room_account_name": 0,
+                    "load_virtual_event_highlights_editor_loop": 100,
+                    "load_virtual_event_highlights_viewer_loop": 100,
                     "long_poll_error": 0,
                     "long_poll_recovery": 0,
                     "low_code_workflow_templates_collection_worker_resolver": 100,
@@ -4871,6 +4973,7 @@
                     "profile_fetch_job": 0,
                     "profile_fetch_workflow": 0,
                     "publish_virtual_event": 100,
+                    "publish_virtual_event_highlights": 100,
                     "publish_virtual_event_recording": 100,
                     "qna_feed_loaded": 100,
                     "qna_latency": 0,
@@ -4903,6 +5006,7 @@
                     "reply_chain_manager_get_reply_chains_by_keys": 0.5,
                     "report_misrecognized_participant_latency": 0,
                     "reset_team_join_code": 0,
+                    "reset_virtual_event_highlights_to_draft": 100,
                     "resolve_edit_client_lie_resolver": 0,
                     "restore_broadcast_meeting_resources": 100,
                     "restore_persisted_windows": 0,
@@ -4918,6 +5022,7 @@
                     "room_remote_meeting_room_states": 0,
                     "roster_panel_full_render2": 0.1,
                     "roster_participants_search": 10,
+                    "save_virtual_event_highlights_draft": 100,
                     "save_virtual_event_meeting_options": 100,
                     "scheduled_job_complete": 0.1,
                     "scis_files_recommendations": 0,
@@ -5025,6 +5130,9 @@
                     "video_player_seek": 10,
                     "video_preview": 0,
                     "video_stream_stopped": 0,
+                    "virtual_event_recording_oneplayer_playback": 100,
+                    "virtual_event_recording_oneplayer_setup": 100,
+                    "virtual_event_recording_oneplayer_unbinned": 100,
                     "voice_enrollment": 100,
                     "webinar_cancel_attendee_registration": 100,
                     "webinar_core": 0,

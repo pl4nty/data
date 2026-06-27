@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20260527.11.0",
+        "CalendarCompanionDFVersion": "1.20260613.9.0",
         "CalendarCompanionMsitVersion": "1.20260525.11.0",
         "CalendarCompanionProdVersion": "1.20260513.9.0",
         "CompanionRing": "Prod",
@@ -227,6 +227,14 @@
         "useAccountIdForCredentialAcquisition": 1,
         "useMonarchAsDefaultApp": 1
     },
+    "Clawpilot": {
+        "allowedPersonalityIds": [
+            "default",
+            "sarcastic-teenager",
+            "enthusiastic-intern",
+            "caveman"
+        ]
+    },
     "ECS": {
         "ClientConfigurationUpdateEvent": {
             "DeltaLogEnabled": false,
@@ -305,7 +313,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260517.3.0",
+        "LpcVersion": "1.20260614.6.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -332,6 +340,7 @@
         "TrustedSenders": false,
         "UseAboutMeFromTemplate": true,
         "UseDsApiSecurityContext": true,
+        "UseHaukForPlaceCollaborators": true,
         "UseListChannelsGraphBetaAPI": false,
         "UsePersonEndpointV2": false,
         "UseV3personacards": true,
@@ -487,6 +496,7 @@
             "ffa57520-3def-4bb6-9a7c-ff70129df4c3",
             "fb3e99bd-7db0-4e90-955b-4a0a65f4f541",
             "fa25c418-2a94-4799-b64e-8bc6a3e60e7c",
+            "f99e95e9-5f75-4937-9a1e-2bc9f1293f5c",
             "f4e69ed8-b558-4494-a61a-031b535160c5",
             "f4ca8252-afbc-4fc9-81dd-b9fe55d7b5f7",
             "f40ad5b0-d4c8-494b-8264-1048bf4fe5c7",
@@ -553,6 +563,7 @@
             "88017413-2549-4266-ab60-8941efae4849",
             "87e8aa34-13ad-4e76-94e7-4db5d4ca45b8",
             "8701ae58-93e1-44db-a1ed-a8b2f03cb295",
+            "8696229d-c5b9-4ed7-99e2-ec47cc6c6620",
             "856ea827-63a5-424e-bd5f-09420524aef7",
             "8549c48e-aed1-4313-a9bb-a1be553ca61d",
             "851e7186-88b3-4705-ac1e-dd5ffd223ef6",
@@ -633,6 +644,7 @@
         "EnableAgentActivityPanel": false,
         "EnableAgentCardType": true,
         "EnableAgentDetailsPanel": false,
+        "EnableAllPersonIdsDirectoryResolution": true,
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
         "EnableBizchatLocalFilesSupport": true,
@@ -671,6 +683,7 @@
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableMRUFormsRetrieval": false,
         "EnableMicrosoftFormsIntegrationToLoki": true,
+        "EnableMisePopTokenValidation": true,
         "EnableMsGraphThrottle": true,
         "EnableMyAnalyticsPendingRSVPMeetingBatching": true,
         "EnableNudgeApiForPendingRsvp": false,
@@ -718,6 +731,8 @@
         "EnableSplitSignalPropagationForUserActions": true,
         "EnableStandaloneFormsResponseCountCall": true,
         "EnableSuggestedWorkingHoursInsightRetriever": true,
+        "EnableSydneyLlm": true,
+        "EnableSydneyServerSideGptIdFilter": true,
         "EnableTeamsLicenseCheck": true,
         "EnableTidRoutingOnExternalDomain": true,
         "EnableUserPreferenceV2": true,
@@ -1069,7 +1084,27 @@
             "createDailyBriefAutomation",
             "ClawpilotRecordSoftDelete",
             "RetrieveSemanticMemories",
-            "DeleteMemory"
+            "DeleteMemory",
+            "useWorkLocationPlace_WorkLocationQuery",
+            "PLGEnvironmentQuery",
+            "YouCardAboutMeWithData_ViewerPreferencesQuery",
+            "ResearcherSsrHomePageBroadQuery",
+            "CoworkAgentQuery",
+            "getSidneyConversation",
+            "ProjectChatHistoryListQuery",
+            "useGetStreakSummaryQuery",
+            "usePlanDetailsQuery",
+            "GetPickerPeople",
+            "EmailPreviewQuery",
+            "AiWorldAgentQuery",
+            "PlaceAvailabilityWithDataQuery",
+            "RetrieveAlwaysOnMemories",
+            "PresenceQuery",
+            "MyTeamViewQuery",
+            "ESSChatHistoryContentQuery",
+            "useProfileInformationQuery",
+            "useUserActivityPromptsQuery",
+            "useGetUserSkillDashboardQuery"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
@@ -1581,6 +1616,7 @@
             "RunSequentially": true
         },
         "UseDotNetCoreForVivaTopicsInLPC": true,
+        "UseFilesCoreSharedEndpoint": true,
         "UseManualGraphQlPersonMapping": true,
         "UseManualHaukMapping": true,
         "UseManualMapping": true,
@@ -2021,8 +2057,8 @@
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
         "OCVAppId": "2952",
-        "OrgExplorerBootstraperVersion": "1.20260325.4.0",
-        "OrgExplorerVersion": "1.20260526.1.0",
+        "OrgExplorerBootstraperVersion": "1.20260526.1.0",
+        "OrgExplorerVersion": "1.20260616.4.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isAssistantEnabledInOrgExplorer": true,
@@ -2036,10 +2072,10 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20260526.10.0",
-        "PeopleInTaskbarMsitVersion": "1.20260520.11.0",
-        "PeopleInTaskbarProdVersion": "1.20260420.8.0",
-        "PeopleInTaskbarVersion": "1.20260516.1.0",
+        "PeopleInTaskbarDFVersion": "1.20260613.9.0",
+        "PeopleInTaskbarMsitVersion": "1.20260603.10.0",
+        "PeopleInTaskbarProdVersion": "1.20260520.11.0",
+        "PeopleInTaskbarVersion": "1.20260526.10.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,
         "campaignSchedules": {
             "PeopleAppCampaign": {

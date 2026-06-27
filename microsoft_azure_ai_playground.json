@@ -106,6 +106,7 @@
         "azureml://registries/azureml-mistral/models/codestral-2501",
         "azureml://registries/azureml-mistral/models/mistral-small-2503",
         "azureml://registries/azureml-mistral/models/mistral-medium-2505",
+        "azureml://registries/azureml-mistral/models/mistral-medium-3-5",
         "azureml://registries/azureml-mistral-dev/models/mistral-small",
         "azureml://registries/azureml-mistral-dev/models/mistral-large-2407",
         "azureml://registries/azureml-mistral-dev/models/mistral-nemo",
@@ -175,6 +176,8 @@
         "azureml://registries/azureml-cohere/models/cohere-command-r-08-2024",
         "azureml://registries/azureml-cohere/models/cohere-command-r-plus-08-2024",
         "azureml://registries/azureml-cohere/models/cohere-command-a",
+        "azureml://registries/azureml-cohere/models/cohere-command-a-plus",
+        "azureml://registries/azureml-cohere/models/cohere-command-a-plus-05-2026",
         "azureml://registries/azureml-ai21/models/ai21-jamba-instruct",
         "azureml://registries/azureml-ai21/models/ai21-jamba-1.5-mini",
         "azureml://registries/azureml-ai21/models/ai21-jamba-1.5-large",
@@ -247,6 +250,7 @@
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
+        "azureml://registries/azureml-xai/models/grok-4.3",
         "azureml://registries/azureml-xai/models/grok-4-fast-non-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-fast-reasoning",
         "azureml://registries/azureml-xai/models/grok-4-code",
@@ -265,6 +269,8 @@
         "azureml://registries/azureml-anthropic/models/claude-opus-4-7",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-8",
         "azureml://registries/azureml-anthropic/models/claude-mythos-preview",
+        "azureml://registries/azureml-anthropic/models/claude-mythos-5",
+        "azureml://registries/azureml-anthropic/models/claude-fable-5",
         "azureml://registries/azureml-mistral/models/mistral-large-3",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-thinking",
         "azureml://registries/azureml-fireworks/models/fw-gpt-oss-120b",
@@ -548,7 +554,8 @@
         ],
         "supportedMistralOcrModels": [
             "mistral-document-ai-2505",
-            "mistral-document-ai-2512"
+            "mistral-document-ai-2512",
+            "mistral-ocr-4-0"
         ],
         "supportedRerankModels": [
             "cohere-rerank-v4.0-fast",

@@ -650,6 +650,11 @@
                             "toc_title": "ask"
                         },
                         {
+                            "href": "a_z_names_terms/a/ask-copilot-vs-chat-with-copilot",
+                            "permissioned-type": "private",
+                            "toc_title": "Ask Copilot vs. Chat with Copilot (inline invocation)"
+                        },
+                        {
                             "href": "a_z_names_terms/a/ask-learn",
                             "permissioned-type": "private",
                             "toc_title": "Ask Learn"
@@ -693,6 +698,11 @@
                             "href": "a_z_names_terms/a/assigned-access",
                             "permissioned-type": "private",
                             "toc_title": "assigned access"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/assistive-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "assistive agent"
                         },
                         {
                             "href": "a_z_names_terms/a/at",
@@ -760,6 +770,11 @@
                             "toc_title": "automation"
                         },
                         {
+                            "href": "a_z_names_terms/a/autonomy-autonomous",
+                            "permissioned-type": "private",
+                            "toc_title": "autonomy, autonomous"
+                        },
+                        {
                             "href": "a_z_names_terms/a/autoplay",
                             "permissioned-type": "private",
                             "toc_title": "AutoPlay"
@@ -798,6 +813,11 @@
                             "href": "a_z_names_terms/a/azure-accelerate",
                             "permissioned-type": "private",
                             "toc_title": "Azure Accelerate"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-accelerate-for-databases",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Accelerate for Databases"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-access-point",
@@ -1110,6 +1130,11 @@
                             "toc_title": "Azure Consumption Commitment"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-container-linux",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Container Linux"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-container-registry",
                             "permissioned-type": "private",
                             "toc_title": "Azure Container Registry"
@@ -1123,6 +1148,16 @@
                             "href": "a_z_names_terms/a/azure-content-understanding",
                             "permissioned-type": "private",
                             "toc_title": "Azure Content Understanding"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-context-cache",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Context Cache"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-copilot-for-azure-local",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Copilot for Azure Local"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-cosmos-db",
@@ -1530,6 +1565,11 @@
                             "toc_title": "Azure Monitor SCOM Managed Instance"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-multicloud-interconnect",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Multicloud Interconnect"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-nat-gateway",
                             "permissioned-type": "private",
                             "toc_title": "Azure NAT Gateway"
@@ -1630,6 +1670,11 @@
                             "toc_title": "Azure prepayment"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-private-traffic-manager",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Private Traffic Manager"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-programmable-connectivity-",
                             "permissioned-type": "private",
                             "toc_title": "Azure Programmable Connectivity"
@@ -1638,6 +1683,11 @@
                             "href": "a_z_names_terms/a/azure-promotional-credit",
                             "permissioned-type": "private",
                             "toc_title": "Azure promotional credit"
+                        },
+                        {
+                            "href": "a_z_names_terms/a/azure-public-traffic-manager",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure Public Traffic Manager"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-purview",
@@ -2290,6 +2340,11 @@
                             "toc_title": "Character Map"
                         },
                         {
+                            "href": "a_z_names_terms/c/chat",
+                            "permissioned-type": "private",
+                            "toc_title": "chat"
+                        },
+                        {
                             "href": "a_z_names_terms/c/chat-density",
                             "permissioned-type": "private",
                             "toc_title": "chat density"
@@ -2308,6 +2363,11 @@
                             "href": "a_z_names_terms/c/chatgpt-chatgpt-plus",
                             "permissioned-type": "private",
                             "toc_title": "ChatGPT, ChatGPT Plus"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/chain-of-thought",
+                            "permissioned-type": "private",
+                            "toc_title": "chain of thought"
                         },
                         {
                             "href": "a_z_names_terms/c/child-account",
@@ -2715,6 +2775,11 @@
                             "toc_title": "connector, connection"
                         },
                         {
+                            "href": "a_z_names_terms/c/connector-namespace",
+                            "permissioned-type": "private",
+                            "toc_title": "Connector Namespace"
+                        },
+                        {
                             "href": "a_z_names_terms/c/contacts",
                             "permissioned-type": "private",
                             "toc_title": "contacts"
@@ -2738,6 +2803,11 @@
                             "href": "a_z_names_terms/c/container-instances",
                             "permissioned-type": "private",
                             "toc_title": "Container Instances"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/container-networking-insights-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Container Networking Insights Agent"
                         },
                         {
                             "href": "a_z_names_terms/c/container-service",
@@ -3552,6 +3622,11 @@
                                     "toc_title": "Case Management Agent"
                                 },
                                 {
+                                    "href": "a_z_names_terms/d/d365agents/customer-assist-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Customer Assist Agent"
+                                },
+                                {
                                     "href": "a_z_names_terms/d/d365agents/customer-intent-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Customer Intent Agent"
@@ -3575,6 +3650,26 @@
                                     "href": "a_z_names_terms/d/d365agents/financial-reconciliation-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Financial Reconciliation Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/journey-creation-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Journey Creation Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/outreach-optimization-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Outreach Optimization Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/procurement-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Procurement Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/quality-assurance-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Quality Assurance Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/d/d365agents/quality-evaluation-agent",
@@ -3615,6 +3710,11 @@
                                     "href": "a_z_names_terms/d/d365agents/scheduling-operations-agent",
                                     "permissioned-type": "private",
                                     "toc_title": "Scheduling Operations Agent"
+                                },
+                                {
+                                    "href": "a_z_names_terms/d/d365agents/service-operations-agent",
+                                    "permissioned-type": "private",
+                                    "toc_title": "Service Operations Agent"
                                 },
                                 {
                                     "href": "a_z_names_terms/d/d365agents/supplier-communications-agent",
@@ -4190,6 +4290,11 @@
                             "toc_title": "Finance"
                         },
                         {
+                            "href": "a_z_names_terms/f/finance-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Finance Agent"
+                        },
+                        {
                             "href": "a_z_names_terms/f/finance--operations-on-premises",
                             "permissioned-type": "private",
                             "toc_title": "Finance + Operations (on-premises)"
@@ -4320,6 +4425,11 @@
                             "toc_title": "Foundry portal"
                         },
                         {
+                            "href": "a_z_names_terms/f/foundry-toolkit-for-visual-studio-code",
+                            "permissioned-type": "private",
+                            "toc_title": "Foundry Toolkit for Visual Studio Code"
+                        },
+                        {
                             "href": "a_z_names_terms/f/foundry-tools",
                             "permissioned-type": "private",
                             "toc_title": "Foundry Tools"
@@ -4358,6 +4468,11 @@
                             "href": "a_z_names_terms/f/frontier-transformation",
                             "permissioned-type": "private",
                             "toc_title": "Frontier Transformation"
+                        },
+                        {
+                            "href": "a_z_names_terms/f/frontier-tuning",
+                            "permissioned-type": "private",
+                            "toc_title": "Frontier Tuning"
                         },
                         {
                             "href": "a_z_names_terms/f/frontline-worker",
@@ -4448,6 +4563,11 @@
                             "href": "a_z_names_terms/g/github-copilot-github-copilot-for-business",
                             "permissioned-type": "private",
                             "toc_title": "GitHub Copilot, GitHub Copilot for Business"
+                        },
+                        {
+                            "href": "a_z_names_terms/g/github-enterprise-local",
+                            "permissioned-type": "private",
+                            "toc_title": "GitHub Enterprise Local"
                         },
                         {
                             "href": "a_z_names_terms/g/global-inventory-accounting-for-dynamics-365-supply-chain-management",
@@ -4780,6 +4900,11 @@
                             "toc_title": "instance"
                         },
                         {
+                            "href": "a_z_names_terms/i/instructions",
+                            "permissioned-type": "private",
+                            "toc_title": "instructions"
+                        },
+                        {
                             "href": "a_z_names_terms/i/integration-runtime",
                             "permissioned-type": "private",
                             "toc_title": "integration runtime"
@@ -4932,7 +5057,12 @@
                         {
                             "href": "a_z_names_terms/k/knowledge-center",
                             "permissioned-type": "private",
-                            "toc_title": "knowledge Center"
+                            "toc_title": "Knowledge Center"
+                        },
+                        {
+                            "href": "a_z_names_terms/k/knowledge-sources",
+                            "permissioned-type": "private",
+                            "toc_title": "knowledge sources"
                         },
                         {
                             "href": "a_z_names_terms/k/kosmos-1",
@@ -5018,6 +5148,11 @@
                             "href": "a_z_names_terms/l/led-light-emitting-diode",
                             "permissioned-type": "private",
                             "toc_title": "LED (light-emitting diode)"
+                        },
+                        {
+                            "href": "a_z_names_terms/l/legal-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Legal"
                         },
                         {
                             "href": "a_z_names_terms/l/lens",
@@ -6825,6 +6960,11 @@
                             "toc_title": "Microsoft Windows App"
                         },
                         {
+                            "href": "a_z_names_terms/m/microsoft-web-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Microsoft Web IQ"
+                        },
+                        {
                             "href": "a_z_names_terms/m/microsoftsource",
                             "permissioned-type": "private",
                             "toc_title": "Microsoft.Source"
@@ -7493,6 +7633,11 @@
                             "href": "a_z_names_terms/p/people",
                             "permissioned-type": "private",
                             "toc_title": "people"
+                        },
+                        {
+                            "href": "a_z_names_terms/p/performance",
+                            "permissioned-type": "private",
+                            "toc_title": "performance"
                         },
                         {
                             "href": "a_z_names_terms/p/permissions",
@@ -8165,6 +8310,11 @@
                             "toc_title": "ranking"
                         },
                         {
+                            "href": "a_z_names_terms/r/rayfin",
+                            "permissioned-type": "private",
+                            "toc_title": "Rayfin"
+                        },
+                        {
                             "href": "a_z_names_terms/r/read-replica",
                             "permissioned-type": "private",
                             "toc_title": "read replica"
@@ -8198,6 +8348,11 @@
                             "href": "a_z_names_terms/r/real-time-operating-system",
                             "permissioned-type": "private",
                             "toc_title": "real-time operating system"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/reasoning-reason",
+                            "permissioned-type": "private",
+                            "toc_title": "reasoning, reason"
                         },
                         {
                             "href": "a_z_names_terms/r/recall",
@@ -8765,6 +8920,11 @@
                             "toc_title": "service (Microsoft 365)"
                         },
                         {
+                            "href": "a_z_names_terms/s/service-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Service Agent"
+                        },
+                        {
                             "href": "a_z_names_terms/s/service-bus",
                             "permissioned-type": "private",
                             "toc_title": "Service Bus"
@@ -9065,6 +9225,11 @@
                             "toc_title": "Sound Recorder"
                         },
                         {
+                            "href": "a_z_names_terms/s/sovereign-control-panel",
+                            "permissioned-type": "private",
+                            "toc_title": "Sovereign Control Panel"
+                        },
+                        {
                             "href": "a_z_names_terms/s/space",
                             "permissioned-type": "private",
                             "toc_title": "space"
@@ -9340,6 +9505,11 @@
                             "toc_title": "subscription plan"
                         },
                         {
+                            "href": "a_z_names_terms/s/sub-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "sub-agent"
+                        },
+                        {
                             "href": "a_z_names_terms/s/success-by-design",
                             "permissioned-type": "private",
                             "toc_title": "Success by Design"
@@ -9368,6 +9538,11 @@
                             "href": "a_z_names_terms/s/supervised-learning",
                             "permissioned-type": "private",
                             "toc_title": "supervised learning"
+                        },
+                        {
+                            "href": "a_z_names_terms/s/supervisor-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "supervisor agent"
                         },
                         {
                             "href": "a_z_names_terms/s/supply-chain-center",
@@ -9503,6 +9678,11 @@
                             "href": "a_z_names_terms/t/teams-mode",
                             "permissioned-type": "private",
                             "toc_title": "Teams Mode"
+                        },
+                        {
+                            "href": "a_z_names_terms/t/teams-phone-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "Teams Phone Agent"
                         },
                         {
                             "href": "a_z_names_terms/t/telemetry",
@@ -9728,6 +9908,11 @@
                             "href": "a_z_names_terms/t/try-tries",
                             "permissioned-type": "private",
                             "toc_title": "try, tries"
+                        },
+                        {
+                            "href": "a_z_names_terms/t/turbo",
+                            "permissioned-type": "private",
+                            "toc_title": "Turbo"
                         },
                         {
                             "href": "a_z_names_terms/t/tutoring-experts",
@@ -10328,6 +10513,11 @@
                             "href": "a_z_names_terms/w/word-agent",
                             "permissioned-type": "private",
                             "toc_title": "Word Agent"
+                        },
+                        {
+                            "href": "a_z_names_terms/w/worker-agent",
+                            "permissioned-type": "private",
+                            "toc_title": "worker agent"
                         },
                         {
                             "href": "a_z_names_terms/f/flow-flows",
@@ -14497,7 +14687,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2765,
+        "count_of_node_with_href": 2803,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

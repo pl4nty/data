@@ -332,6 +332,7 @@
                 "id": "redhat.vscode-xml"
             }
         },
+        "IBM.vscode-sourceorbit": true,
         "Intelix.cdm8-assembly": {
             "disallowInstall": true,
             "extension": {
@@ -645,6 +646,13 @@
             "extension": {
                 "displayName": "Binding of Isaac Lua API",
                 "id": "Filloax.isaac-lua-api-vscode"
+            }
+        },
+        "TeamsDevApp.vscode-ai-foundry": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Foundry Toolkit for VS Code",
+                "id": "ms-windows-ai-studio.windows-ai-studio"
             }
         },
         "Togusa09.tmlanguage": {
@@ -1288,6 +1296,13 @@
                 "id": "Elsevier.abacus-structurizr-dsl-extension"
             }
         },
+        "github-workflow-updater.github-workflow-updater": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "OWASP GitHub Workflow Updater",
+                "id": "OWASP.Github-Workflow-Updater-Extension"
+            }
+        },
         "glen-84.sass-lint": true,
         "goSiqueira.sindarin-for-vscode": {
             "disallowInstall": true,
@@ -1320,6 +1335,13 @@
         },
         "hdg.live-html-previewer": true,
         "heptio.jsonnet": true,
+        "herbertagosto.skill": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Skill +",
+                "id": "herbertagosto.skillherb"
+            }
+        },
         "heyyczer.fivem2vscode": {
             "disallowInstall": true,
             "extension": {
@@ -1513,6 +1535,13 @@
             }
         },
         "kuba-p.glsl-lsp": true,
+        "lanly-dev.voice-commands": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "VS Code Speech",
+                "id": "ms-vscode.vscode-speech"
+            }
+        },
         "lannonbr.vscode-teddy-snippets": {
             "disallowInstall": true,
             "extension": {
@@ -1622,6 +1651,7 @@
                 "id": "Marko-JS.marko-vscode"
             }
         },
+        "maruf-bepary.llama-vscode-chat": true,
         "matronator.mtrgen-yaml-templates": {
             "disallowInstall": true,
             "extension": {
@@ -1636,6 +1666,7 @@
                 "id": "rocq-prover.vsrocq"
             }
         },
+        "medo64.hourly-beep": true,
         "metrics-design-automation.dsim-desktop": {
             "disallowInstall": true,
             "extension": {
@@ -2175,6 +2206,8 @@
                 "id": "stateful.stable"
             }
         },
+        "stefafafan.hatena-syntax": true,
+        "stefafafan.mackerel-expression-graph-syntax": true,
         "synopsys-codexm.coverity-codexm": {
             "disallowInstall": true,
             "extension": {
@@ -2287,6 +2320,13 @@
         "vsciot-vscode.azure-iot-tools": true,
         "vsciot-vscode.vscode-arduino": true,
         "vsciot-vscode.vscode-iot-device-cube": true,
+        "vscjava.vscode-java-upgrade": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot modernization",
+                "id": "vscjava.migrate-java-to-azure"
+            }
+        },
         "waderyan.nodejs-extension-pack": true,
         "walnuts1018.oklch-vscode": true,
         "wangshun.mpx-template-features": {

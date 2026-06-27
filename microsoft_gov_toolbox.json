@@ -8,8 +8,9 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.1.0",
+        "version": "2.2.0",
         "versions": [
+            "2.2.0",
             "2.1.0",
             "2.0.1",
             "2.0.0",
@@ -28,8 +29,9 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "15.6.1",
+        "version": "16.0.0",
         "versions": [
+            "16.0.0",
             "15.6.1",
             "15.6.0",
             "15.5.0",
@@ -408,8 +410,9 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.86.0",
+        "version": "2.87.0",
         "versions": [
+            "2.87.0",
             "2.86.0",
             "2.85.0",
             "2.84.0",
@@ -589,8 +592,9 @@
         "name": "AzureMLPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.33.0",
+        "version": "1.34.0",
         "versions": [
+            "1.34.0",
             "1.33.0",
             "1.32.0",
             "1.31.0",
@@ -708,8 +712,11 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.84.0",
+        "version": "3.89.2",
         "versions": [
+            "3.89.2",
+            "3.88.1",
+            "3.86.0",
             "3.84.0",
             "3.83.0",
             "3.82.0",
@@ -781,9 +788,11 @@
         "name": "GitHubCopilotCli",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.51",
+        "version": "1.0.63",
         "versions": [
-            "1.0.51"
+            "1.0.63",
+            "1.0.62",
+            "1.0.61"
         ]
     },
     {
@@ -835,8 +844,10 @@
         "name": "JWCCCuratedPortal",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2026.05.01",
+        "version": "2026.06.02",
         "versions": [
+            "2026.06.02",
+            "2026.06.01",
             "2026.05.01",
             "2026.04.01",
             "2026.03.01",
@@ -1148,8 +1159,11 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.38.0",
+        "version": "2.43.0",
         "versions": [
+            "2.43.0",
+            "2.41.1",
+            "2.41.0",
             "2.38.0",
             "2.37.0",
             "2.36.0",
@@ -1226,8 +1240,9 @@
         "name": "OpenAIDotnetLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.10.0",
+        "version": "2.11.0",
         "versions": [
+            "2.11.0",
             "2.10.0",
             "2.9.1",
             "2.8.0",

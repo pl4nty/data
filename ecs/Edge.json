@@ -47,11 +47,6 @@
                 "msNurturingFeatureFlagRefactor"
             ]
         },
-        "FuncIntegrity": {
-            "enableFeatures": [
-                "msFunctionIntegrityValidation"
-            ]
-        },
         "ReadAloudIconOnAddressBarLogicBased": {
             "enableFeatures": [
                 "msReadAloudIconOnAddressBarLogicBased",
@@ -78,6 +73,15 @@
                 }
             ]
         },
+        "DisablingCopilotUpsellNurfCampaigns": {
+            "disableFeatures": [
+                "msCopilotSummarizeNudge",
+                "msCopilotCompeteAINudge",
+                "msOmniboxSummarizeNewsNotification",
+                "msNurturingEdgeCopilotJitCM",
+                "msPdfCopilotSummarizeNudge"
+            ]
+        },
         "EdgeOnRampShowVersionWhatsNew": {
             "enableFeatures": [
                 "msEdgeOnRampShowWhatsNew"
@@ -85,7 +89,7 @@
             "parameters": [
                 {
                     "name": "Browser Version",
-                    "value": "148.0.0000.00"
+                    "value": "149.0.0000.00"
                 }
             ]
         },
@@ -473,6 +477,10 @@
                 {
                     "applied_policy": "OptOut",
                     "domain": "www.google.com"
+                },
+                {
+                    "applied_policy": "OptOut",
+                    "domain": "gemini.google.com"
                 },
                 {
                     "applied_policy": "OptOut",
@@ -880,20 +888,12 @@
                     "domain": "www.languageacademy.com.au"
                 },
                 {
-                    "applied_policy": "ChromeUAAndClientHints",
-                    "domain": "84plusce.ti.com"
-                },
-                {
                     "applied_policy": "ChromeUA",
                     "domain": "glive2.gaodun.com"
                 },
                 {
                     "applied_policy": "ChromeUA",
                     "domain": "interlakepsychiatricintouch.insynchcs.com"
-                },
-                {
-                    "applied_policy": "ChromeUA",
-                    "domain": "pulse.genesisworld.com"
                 },
                 {
                     "applied_policy": "DoNotOverride",
@@ -2827,10 +2827,6 @@
                 {
                     "applied_policy": "ChromeUA",
                     "domain": "bandaid.ca"
-                },
-                {
-                    "applied_policy": "ChromeUA",
-                    "domain": "aveeno.com"
                 },
                 {
                     "applied_policy": "ChromeUA",
