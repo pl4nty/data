@@ -288,6 +288,9 @@ BASE_DECLARE_FEATURE(kUseAndroidMediaExtractor);
 
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 bool IsAndroidMediaExtractorEnabled(bool trigger_usage_on_check = false);
+
+COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
+void TriggerAndroidMediaExtractorUsage();
 #endif  // BUILDFLAG(EDGE_ENABLE_ANDROID_MEDIA_EXTRACTOR)
 
 // Native video scrubbing detection feature and params.

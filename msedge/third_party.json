@@ -71,17 +71,17 @@
   },
   {
     "name": "blink",
-    "size": 33452394,
-    "file_count": 4044
+    "size": 33465460,
+    "file_count": 4046
   },
   {
     "name": "boringssl",
-    "size": 76928,
+    "size": 78447,
     "file_count": 15
   },
   {
     "name": "breakpad",
-    "size": 17994056,
+    "size": 17994002,
     "file_count": 1006
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161973057,
-    "file_count": 19121
+    "size": 162056909,
+    "file_count": 19127
   },
   {
     "name": "dbus",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17632703,
+    "size": 17632881,
     "file_count": 2047
   },
   {
@@ -331,7 +331,7 @@
   },
   {
     "name": "inspector_protocol",
-    "size": 52491,
+    "size": 53110,
     "file_count": 12
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 61541,
+    "size": 61118,
     "file_count": 46
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "libsecret",
-    "size": 107899,
+    "size": 107878,
     "file_count": 20
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "name": "libusb",
-    "size": 834613,
+    "size": 834563,
     "file_count": 63
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19665387,
+    "size": 19674091,
     "file_count": 19
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4478611,
+    "size": 4531360,
     "file_count": 621
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "skia",
-    "size": 3489884,
+    "size": 3489874,
     "file_count": 1208
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 200637,
+    "size": 200689,
     "file_count": 11
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7535260,
+    "size": 7536605,
     "file_count": 195
   },
   {

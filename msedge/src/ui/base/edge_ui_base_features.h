@@ -260,7 +260,10 @@ BASE_DECLARE_FEATURE(kEdgePipAlignedUI);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAdvancedUiEnabled();
 
 // Returns true when the Edge PiP aligned UI feature is enabled.
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAlignedUiEnabled();
+// When |trigger_usage| is true, also activates the associated field trial
+// so that ECS can produce CFR retention scorecards for this feature.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsEdgePipAlignedUiEnabled(bool trigger_usage = false);
 
 // If enabled, domain actions for Enhanced Copy Paste will be parsed and applied
 // to the relevant domains.

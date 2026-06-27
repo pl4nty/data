@@ -131,6 +131,13 @@ NET_EXPORT BASE_DECLARE_FEATURE(kHappyEyeballsV3);
 // request falls back to the network.
 NET_EXPORT BASE_DECLARE_FEATURE(kHttpCacheZstdDecompression);
 
+// Enables transparent zstd compression of cacheable HTTP response bodies
+// at cache-write time by the CDT (Compression Dictionary Transport) cache
+// compression feature. When disabled, bodies are stored uncompressed as
+// before. Requires kHttpCacheZstdDecompression to be enabled for the
+// resulting cache entries to be served on subsequent reads.
+NET_EXPORT BASE_DECLARE_FEATURE(kHttpCacheZstdCompression);
+
 // If the `kUseAlternativePortForGloballyReachableCheck` flag is enabled, the
 // globally reachable check will use the port number specified by
 // `kAlternativePortForGloballyReachableCheck` flag. Otherwise, the globally
@@ -758,21 +765,7 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kNetTaskSchedulerHttpCache);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
                                       kNetTaskSchedulerHttpCacheTransaction);
 
-// When enabled, allows unit tests inheriting from net::WithTaskEnvironment to
-// instantiate and utilize the NetTaskScheduler. Disabling this acts as a global
-// kill-switch to bypass the NetTaskScheduler across all tests.
-//
-// TODO(crbug.com/463794414): Remove this flag after we confirm the tests under
-// the scheduler are sufficiently stable.
-NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskSchedulerInTests);
 
-// When enabled, forces the NetTaskScheduler to be enabled in tests, even for
-// test suites that explicitly bypass it. This is used for manual and automated
-// verification of scheduler-induced test crash profiles.
-//
-// TODO(crbug.com/463794414): Remove this flag after we confirm the tests under
-// the scheduler are sufficiently stable.
-NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskSchedulerForceEnableInTests);
 
 // If enabled, we will add an additional delay to the main job in
 // HttpStreamFactoryJobController.
@@ -786,6 +779,9 @@ NET_EXPORT BASE_DECLARE_FEATURE(kExtendQuicHandshakeTimeout);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TimeDelta, kQuicHandshakeTimeout);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TimeDelta,
                                       kMaxIdleTimeBeforeCryptoHandshake);
+
+// If enabled, we will ignore redundant OnNetworkMadeDefault notifications.
+NET_EXPORT BASE_DECLARE_FEATURE(kQuicIgnoreRedundantOnNetworkMadeDefault);
 
 // If enabled, we will use a longer idle timeout.
 NET_EXPORT BASE_DECLARE_FEATURE(kQuicLongerIdleConnectionTimeout);
@@ -810,6 +806,10 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(size_t, kRecentlyAccessedOriginCacheSize);
 
 // When enabled, the browser tries QUIC by default.
 NET_EXPORT BASE_DECLARE_FEATURE(kTryQuicByDefault);
+
+// If enabled, close all QUIC sessions when the app is about to be frozen
+// (Android only).
+NET_EXPORT BASE_DECLARE_FEATURE(kCloseQuicSessionsOnPreFreeze);
 
 // The QUIC connection options which will be sent to the server in order to
 // enable certain QUIC features. This should be set using `QuicTag`s (32-bit
@@ -846,14 +846,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kEnableBootstrapIPRandomizationForDoh);
 // Controls whether X509Util on Android (Cronet, and WebView only) should use
 // lock-free certificate verification mechanism.
 NET_EXPORT BASE_DECLARE_FEATURE(kUseLockFreeX509Verification);
-
-// When enabled, and when Secure DNS Automatic mode is selected *with DoH
-// fallback*, then a canary domain will be probed to check whether DoH fallback
-// is allowed by the network. This will happen at the same time that DoH probes
-// are started. When disabled, the canary domain check is entirely inactive
-// (killswitch).
-NET_EXPORT BASE_DECLARE_FEATURE(kProbeSecureDnsCanaryDomain);
-NET_EXPORT BASE_DECLARE_FEATURE_PARAM(std::string, kSecureDnsCanaryDomainHost);
 
 #if BUILDFLAG(IS_APPLE)
 // If enabled, the GURL conversion for NSURLs will use the data representation
