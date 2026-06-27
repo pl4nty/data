@@ -11,7 +11,7 @@ Move-Item "..\bin64\*" ".."
 ..\wdextract64.exe mpavdlta.vdm
 
 Invoke-WebRequest -Uri "https://github.com/hongson11698/defender-database-extract/raw/refs/heads/master/extract_sig.cpp" -OutFile "..\extract_sig.cpp"
-& "$env:ProgramFiles\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Launch-VsDevShell.ps1" -Arch amd64
+& "$env:ProgramFiles\Microsoft Visual Studio\2026\Enterprise\Common7\Tools\Launch-VsDevShell.ps1" -Arch amd64
 cl /std:c++17 /EHsc ..\extract_sig.cpp
 .\extract_sig.exe . mpasbase.extracted mpasdlta.extracted
 .\extract_sig.exe . mpavbase.extracted mpavdlta.extracted
