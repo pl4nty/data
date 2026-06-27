@@ -35,11 +35,10 @@ define([
 
             this.PAGE_EXIT_STATUS_UNKNOWN = 0;
             this.PAGE_EXIT_STATUS_SUCCESS = 1;
-            this.PAGE_EXIT_STATUS_SUCCESS_BACK_TO_OOBE_START = 2;
-            this.PAGE_EXIT_STATUS_ERROR = 3;
-            this.PAGE_EXIT_STATUS_CANCELED = 4;
-            this.PAGE_EXIT_STATUS_CANCELED_BACK_TO_OOBE_START = 5;
-            this.PAGE_EXIT_STATUS_UNSUPPORTED_BACK_TO_OOBE_START = 6;
+            this.PAGE_EXIT_STATUS_ERROR = 2;
+            this.PAGE_EXIT_STATUS_CANCELED = 3;
+            this.PAGE_EXIT_STATUS_CANCELED_BACK_TO_OOBE_START = 4;
+            this.PAGE_EXIT_STATUS_UNSUPPORTED_BACK_TO_OOBE_START = 5;
 
             this.TSM_PROCESS_NAME = "DeviceLinkPage";
             this.TSM_STATE_CONFIGURE_DEVICE_LINK = "ConfigureDeviceLink";
@@ -59,7 +58,6 @@ define([
             this.TSM_STATE_TPM_INITIALIZING = "TpmInitializing";
             
             this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT = "onSuccessfulDapPageExit";
-            this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START = "onSuccessfulDapPageExitToOobeStart";
             this.DAP_COMMANDS_PHASE_ID_ON_ERROR_DAP_PAGE_EXIT = "onErrorDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT = "onCanceledDapPageExit";
             this.DAP_COMMANDS_PHASE_ID_ON_CANCELED_DAP_PAGE_EXIT_TO_OOBE_START = "onCanceledDapPageExitToOobeStart";
@@ -196,7 +194,7 @@ define([
                 lottieAnimation: this.LOTTIE_FILE_SUCCESS,
                 buttonSet: [this.exitButtonProperties],
                 onVisibleHandler: this.onSuccessVirtualPageVisible.bind(this),
-                exitPageStatus: this.PAGE_EXIT_STATUS_SUCCESS_BACK_TO_OOBE_START
+                exitPageStatus: this.PAGE_EXIT_STATUS_SUCCESS
             };
             
             this.allVirtualPages[this.VIRTUAL_PAGE_ID_DEVICE_LINK_ERROR_RESULT] = {
@@ -327,13 +325,6 @@ define([
                         dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT;
 
                         await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE);
-                        break;
-
-                    case this.PAGE_EXIT_STATUS_SUCCESS_BACK_TO_OOBE_START:
-                        result = CloudExperienceHost.AppResult.action1;
-                        dapCommandPhaseId = this.DAP_COMMANDS_PHASE_ID_ON_SUCCESSFUL_DAP_PAGE_EXIT_TO_OOBE_START;
-
-                        await this.commercialDiagnosticsUtilities.logTsmProcessEndSuccessAsync(this.TSM_PROCESS_NAME, this.TSM_STATE_PAGE, "Navigating back to OOBE start.");
                         break;
 
                     case this.PAGE_EXIT_STATUS_ERROR:

@@ -498,13 +498,7 @@ var CloudExperienceHost;
             return WinJS.Promise.wrap(CloudExperienceHostAPI.SnapshotCapture.resumeSnapshotCapture());
         }
         static enableSnapshotCaptureAsync() {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ShowHelloPromptToEnableA9")) {
-                return CloudExperienceHostAPI.SnapshotCapture.enableSnapshotCaptureAsync();
-            }
-            else {
-                CloudExperienceHost.Telemetry.logEvent("ApiNonexistentOnClient", "ShowHelloPromptToEnableA9");
-                throw "ApiNonexistentOnClient"; // This API is not available in this image
-            }
+            return CloudExperienceHostAPI.SnapshotCapture.enableSnapshotCaptureAsync();
         }
     }
     CloudExperienceHost.SnapshotCapture = SnapshotCapture;

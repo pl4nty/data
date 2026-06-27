@@ -221,5 +221,10 @@
         <Boolean>true</Boolean> 
       </Value> 
     </Setting>
+    <Setting Provider="Enterprise" Key="EnterprisePolicySettings" ValueName="UnsignedMstFileAllowed"> 
+      <Value> 
+        <Boolean>true</Boolean> 
+      </Value> 
+    </Setting>
   </Settings>
 </SiPolicy>

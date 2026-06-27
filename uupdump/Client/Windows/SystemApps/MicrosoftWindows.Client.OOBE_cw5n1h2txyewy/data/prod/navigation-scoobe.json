@@ -240,7 +240,6 @@
             "cxid": "ScoobeWindowsAccountSyncConsent",
             "url": "https://sdx.microsoft.com/frx/windows-account-sync-consent/scoobe",
             "urlint": "https://sdx.microsoft-int.com/frx/windows-account-sync-consent/scoobe",
-            "requiredFeatureName": "ScoobeWascNodeDisplay",
             "internetRequired": true,
             "skipReconnectHandler": true,
             "successID": "MSAHello",

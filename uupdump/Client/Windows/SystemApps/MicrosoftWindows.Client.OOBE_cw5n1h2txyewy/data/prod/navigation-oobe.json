@@ -127,7 +127,7 @@
       "cancelID": "OobeIDPS",
       "offlineID": "OobeLocal",
       "disableBackNavigationToNode": true,
-      "abortID": "OobeMSAOfferStatic",
+      "abortID": "OobeLocal",
       "disableErrorPageOnFailure": true,
       "measureId": 60612531
     },
@@ -562,6 +562,22 @@
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
+      "successID": "OobeParentalControlNotice",
+      "failID": "OobeParentalControlNotice",
+      "cancelID": "OobeParentalControlNotice",
+      "abortID": "OobeParentalControlNotice",
+      "offlineID": "OobeParentalControlNotice",
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 53537111
+    },
+    "OobeParentalControlNotice": {
+      "cxid": "OobeParentalControlNotice",
+      "url": "https://sdx.microsoft.com/frx/parental-control-notice",
+      "urlint": "https://sdx.microsoft-int.com/frx/parental-control-notice",
+      "requiredFeatureName": "OobeHostParentalControlNotice",
+      "ignoreResult": true,
+      "internetRequired": true,
       "successID": "OobeTelemetryFlush",
       "failID": "OobeTelemetryFlush",
       "cancelID": "OobeTelemetryFlush",
@@ -569,7 +585,7 @@
       "offlineID": "OobeTelemetryFlush",
       "disableErrorPageOnFailure": true,
       "visibility": false,
-      "measureId": 53537111
+      "measureId": 61068264
     },
     "OobeTelemetryFlush": {
       "cxid": "OobeTelemetryFlush",

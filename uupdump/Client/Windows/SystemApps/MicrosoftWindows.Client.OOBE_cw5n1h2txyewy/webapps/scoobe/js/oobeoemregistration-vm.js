@@ -4,7 +4,7 @@
 "use strict";
 define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, bridge, constants, core) => {
     class OemRegistrationViewModel {
-        constructor(resourceStrings, regions, defaultRegion, oemRegistrationInfo, userInfo, targetPersonality, deviceForm, isGamepadLegendEnabled) {
+        constructor(resourceStrings, regions, defaultRegion, oemRegistrationInfo, userInfo, targetPersonality, deviceForm, isGamepadLegendEnabled, isWamUserPropertiesEnabled) {
             this.resourceStrings = resourceStrings;
             this.countryCodeDefaultSelectOption = {
                 displayName: this.resourceStrings["PhoneNumberCountryCodeLabel"],
@@ -14,7 +14,13 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             this.regions = regions;
             this.countryCodeSelectOptions = this.getCountryCodeSelectOptions();
             this.userInfo = userInfo || {};
-            let selectedRegionCode = this.regions.find((region) => (region.codeTwoLetter === defaultRegion)).codeTwoLetter;
+            let selectedRegionCode;
+            if (isWamUserPropertiesEnabled) {
+                let findRegion = (code) => this.regions.find((region) => region.codeTwoLetter === code);
+                selectedRegionCode = ((userInfo.length > 3 && userInfo[3] && findRegion(userInfo[3])) || findRegion(defaultRegion))?.codeTwoLetter;
+            } else {
+                selectedRegionCode = this.regions.find((region) => (region.codeTwoLetter === defaultRegion)).codeTwoLetter;
+            }
             this.title = oemRegistrationInfo.title;
             this.subHeaderText = oemRegistrationInfo.subtitle;
             this.hideSkip = oemRegistrationInfo.hideskip;

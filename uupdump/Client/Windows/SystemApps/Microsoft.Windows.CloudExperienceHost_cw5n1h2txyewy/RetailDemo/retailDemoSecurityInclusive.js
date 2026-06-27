@@ -34,12 +34,10 @@
                 navFlowPromise: navFlowPromise 
             };
 
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Accessibility_Improvements")) {
-                var personalityPromise = bridge.invoke("CloudExperienceHost.getContext").then(function (result) {
-                    isLiteWhitePersonality = (result.personality === CloudExperienceHost.TargetPersonality.LiteWhite);
-                });
-                promisesToJoin.personalityPromise = personalityPromise;
-            }
+            var personalityPromise = bridge.invoke("CloudExperienceHost.getContext").then(function (result) {
+                isLiteWhitePersonality = (result.personality === CloudExperienceHost.TargetPersonality.LiteWhite);
+            });
+            promisesToJoin.personalityPromise = personalityPromise;
             return WinJS.Promise.join(promisesToJoin);
         },
 
@@ -190,18 +188,10 @@
                 text.setAttribute("aria-hidden", "true");
                 let tooltip = document.createElement("div");
 
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Accessibility_Improvements")) {
-                    if (isLiteWhitePersonality) {
-                            tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
-                    } else {
-                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx_blueStyle";  
-                    }
+                if (isLiteWhitePersonality) {
+                    tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
                 } else {
-                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RDX_OOBE_Alert_Contrast_Mode_Accessibility")) {
-                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx";
-                    } else {
-                        tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error";
-                    }
+                    tooltip.className = "errorDialog-dialogRoot template-tooltip tooltipType_error_rdx_blueStyle";
                 }
 				
                 tooltip.appendChild(text);

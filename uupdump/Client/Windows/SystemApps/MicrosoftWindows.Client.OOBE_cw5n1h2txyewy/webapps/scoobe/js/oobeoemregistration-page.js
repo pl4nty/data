@@ -43,6 +43,10 @@
                     this.isGamepadLegendEnabled = (response.result === 1) && (response.value === 1);
                 }));
 
+                promises.push(bridge.invoke("CloudExperienceHost.FeatureStaging.tryGetIsFeatureEnabled", "UseWamUserProperties").then((response) => {
+                    this.isWamUserPropertiesEnabled = (response.result === 1) && (response.value === 1);
+                }));
+
                 return WinJS.Promise.join(promises);
             });
         },
@@ -70,7 +74,7 @@
 
                 // Apply bindings and show the page
                 let vm = new modules.oobeoemregistration_vm(this.resourceStrings, this.regions, this.defaultRegion, this.oemRegistrationInfo, this.userInfo, this.targetPersonality,
-                    this.deviceForm, this.isGamepadLegendEnabled);
+                    this.deviceForm, this.isGamepadLegendEnabled, this.isWamUserPropertiesEnabled);
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");
