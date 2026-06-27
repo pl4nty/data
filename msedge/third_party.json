@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12945270,
+    "size": 12945446,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15952467,
+    "size": 15976079,
     "file_count": 846
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33465460,
-    "file_count": 4046
+    "size": 33504109,
+    "file_count": 4051
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 162056909,
+    "size": 162057859,
     "file_count": 19127
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17632881,
+    "size": 17654765,
     "file_count": 2047
   },
   {
@@ -261,8 +261,8 @@
   },
   {
     "name": "glslang",
-    "size": 44215413,
-    "file_count": 3402
+    "size": 44227688,
+    "file_count": 3408
   },
   {
     "name": "googletest",
@@ -316,8 +316,8 @@
   },
   {
     "name": "icu",
-    "size": 162935609,
-    "file_count": 7202
+    "size": 162934853,
+    "file_count": 7201
   },
   {
     "name": "inference_engine",
@@ -331,7 +331,7 @@
   },
   {
     "name": "inspector_protocol",
-    "size": 53110,
+    "size": 53158,
     "file_count": 12
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 61118,
+    "size": 62238,
     "file_count": 46
   },
   {
@@ -490,11 +490,6 @@
     "file_count": 83
   },
   {
-    "name": "lzma_sdk",
-    "size": 15398,
-    "file_count": 4
-  },
-  {
     "name": "mediapipe",
     "size": 634836,
     "file_count": 323
@@ -581,7 +576,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1221910,
+    "size": 1221952,
     "file_count": 297
   },
   {
@@ -601,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4531360,
+    "size": 4531788,
     "file_count": 621
   },
   {
@@ -661,7 +656,7 @@
   },
   {
     "name": "rust",
-    "size": 2188235,
+    "size": 2200184,
     "file_count": 258
   },
   {
@@ -776,8 +771,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7536605,
-    "file_count": 195
+    "size": 7556507,
+    "file_count": 194
   },
   {
     "name": "vulkan_memory_allocator",

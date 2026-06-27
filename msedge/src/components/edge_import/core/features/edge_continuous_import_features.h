@@ -292,10 +292,6 @@ BASE_DECLARE_FEATURE_TRIGGER(kTriggerChromePBUserWithActiveCI);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kTriggerVisibleLaunchForChromePBUserWithActiveCI);
 
-// Trigger to know if chrome PB user with active CI and imported search terms
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kTriggerChromePBAndCIUserWithImportedSearchTerms);
-
 // Trigger to know if omnibox interaction happened for chrome PB user with
 // imported search terms
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -326,11 +322,6 @@ BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTerms);
 // suggestions
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportUseSearchTermsInZeroInput);
-
-// Feature to generate keyword search terms from Imported history urls even if
-// user is not a Chrome PB user.
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTermsIgnorePB);
 
 // Feature flag that, when enabled, expands the audience for CI-imported
 // keyword search terms in Omnibox Query Formulation (QF) by bypassing the
