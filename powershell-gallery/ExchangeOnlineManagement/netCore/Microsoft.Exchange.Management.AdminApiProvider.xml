@@ -16803,79 +16803,6 @@
             <param name="cancellationToken">cancellation token while waiting.</param>
             <param name="logMessagePrefix">Prefix while logging messages.</param>
         </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utility">
-            <summary>
-            Helper class hosting utility functions.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.StringRepresentationFormat">
-            <summary>
-            Holds the string representation formatter.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifier">
-            <summary>
-            Holds the Environment variable for AzureCloudsShell.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifierKey">
-            <summary>
-            Holds the Environment variable key for identifying AzureCloudsShell.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.EmailAddressRegexPattern">
-            <summary>
-            Regex for validating whether given string is in email format or not.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SafeToString``1(System.Collections.Generic.IList{``0})">
-            <summary>
-            Gets the string representation of the given collection.
-            </summary>
-            <typeparam name="T">
-            The type backing the collection.
-            </typeparam>
-            <param name="collection">
-            The collection instance.
-            </param>
-            <returns>
-            The string representation.
-            </returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.AddPropertyChangedEventHandlerToAllCollectionProperties(System.Object,System.Action{System.String})">
-            <summary>
-            Add property changed event handler for all properties of type INotifyCollectionChanged properties in current class. 
-            </summary>
-            <param name="instance"> instance param</param>
-            <param name="actionForAddingChangedProperties"> actionForAddingChangedProperties param</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidEmail(System.String)">
-            <summary>
-            Checks whether given string is in email format.
-            </summary>
-            <param name="str">Input string.</param>
-            <returns>true if given string is in email format.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidGuid(System.String)">
-            <summary>
-            Returns true if given string is in valid GUID format.
-            </summary>
-            <param name="guidStr">Inout string.</param>
-            <returns>True if given string is in valid guid format. False otherwise.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsCloudShellEnvironment">
-            <summary>
-            Returns true in case the current PowerShell instance is running in the Azure CloudShell prod environment.
-            </summary>
-            <returns>True in case the current PowerShell instance is running in the Azure CloudShell prod environment. False otherwise.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SecureStringToString(System.Security.SecureString)">
-            <summary>
-            Converts Secure String to String
-            </summary>
-            <param name="securePassword">Secure String</param>
-            <returns>String from secure string</returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ExponentialRetryAlgorithm">
             <summary>
             Class for Exponential Retry Algorithm
@@ -17050,6 +16977,23 @@
             <param name="request">Http Request Message</param>
             <returns>Copied HttpRequestMessage</returns>
         </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
+            <summary>
+            Interface class to provide caching interface
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
+            <summary>
+            Should this object be cached
+            </summary>
+            <returns> true if this object should be cached </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
+            <summary>
+            Is this object expired
+            </summary>
+            <returns> true if expired </returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.IHttpOperations">
             <summary>
             Interface for Http Operations
@@ -17070,23 +17014,6 @@
             <param name="name">Name of the header</param>
             <param name="value">Value of header </param>
             <returns>Return IHttpOperations</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
-            <summary>
-            Interface class to provide caching interface
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
-            <summary>
-            Should this object be cached
-            </summary>
-            <returns> true if this object should be cached </returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
-            <summary>
-            Is this object expired
-            </summary>
-            <returns> true if expired </returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.IRetryAlgorithm">
             <summary>
@@ -17204,6 +17131,79 @@
             </summary>
             <param name="type">RetryAlgorithm Type</param>
             <returns>IRetryAlgorithm instance</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utility">
+            <summary>
+            Helper class hosting utility functions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.StringRepresentationFormat">
+            <summary>
+            Holds the string representation formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifier">
+            <summary>
+            Holds the Environment variable for AzureCloudsShell.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifierKey">
+            <summary>
+            Holds the Environment variable key for identifying AzureCloudsShell.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.EmailAddressRegexPattern">
+            <summary>
+            Regex for validating whether given string is in email format or not.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SafeToString``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Gets the string representation of the given collection.
+            </summary>
+            <typeparam name="T">
+            The type backing the collection.
+            </typeparam>
+            <param name="collection">
+            The collection instance.
+            </param>
+            <returns>
+            The string representation.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.AddPropertyChangedEventHandlerToAllCollectionProperties(System.Object,System.Action{System.String})">
+            <summary>
+            Add property changed event handler for all properties of type INotifyCollectionChanged properties in current class. 
+            </summary>
+            <param name="instance"> instance param</param>
+            <param name="actionForAddingChangedProperties"> actionForAddingChangedProperties param</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidEmail(System.String)">
+            <summary>
+            Checks whether given string is in email format.
+            </summary>
+            <param name="str">Input string.</param>
+            <returns>true if given string is in email format.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidGuid(System.String)">
+            <summary>
+            Returns true if given string is in valid GUID format.
+            </summary>
+            <param name="guidStr">Inout string.</param>
+            <returns>True if given string is in valid guid format. False otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsCloudShellEnvironment">
+            <summary>
+            Returns true in case the current PowerShell instance is running in the Azure CloudShell prod environment.
+            </summary>
+            <returns>True in case the current PowerShell instance is running in the Azure CloudShell prod environment. False otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SecureStringToString(System.Security.SecureString)">
+            <summary>
+            Converts Secure String to String
+            </summary>
+            <param name="securePassword">Secure String</param>
+            <returns>String from secure string</returns>
         </member>
     </members>
 </doc>

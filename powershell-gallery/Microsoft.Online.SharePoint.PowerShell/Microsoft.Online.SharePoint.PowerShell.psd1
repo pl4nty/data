@@ -11,7 +11,7 @@
     ModuleToProcess        = 'Microsoft.Online.SharePoint.PowerShell.dll'
 
     # Version number of this module.
-    ModuleVersion          = '16.0.27215.12001'
+    ModuleVersion          = '16.0.27313.12000'
 
     # ID used to uniquely identify this module
     GUID                   = 'adedde5f-e77b-4682-ab3d-a4cb4ff79b83'
@@ -91,7 +91,10 @@
             IconUri    = 'https://raw.githubusercontent.com/SharePoint/sp-dev-docs/master/docs/images/sp-logo.png'
         }
     }
+
 }
+
+
 
 
 

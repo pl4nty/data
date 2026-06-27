@@ -375,39 +375,6 @@
             </summary>
             <param name="modulePath">Path to the temp module</param>
         </member>
-        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil">
-            <summary>
-            The helper class for ConnectionContext
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.GetEopConnectionUriRequestEndpointUri(System.String,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
-            <summary>
-            Get the endpoint Uri for getting eop connection uri
-            </summary>
-            <param name="tenantId">Current tenant ID from Connection Context</param>
-            <param name="connectionContext">Current Connection Context</param>
-            <returns>Request endpoint Uri</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
-            <summary>
-            Get the endpoint Uri for eop
-            In eop, the first request will be sent to the global endpoint, it will return a 302 with redirection uri in the header or just a 200.
-            If the tenant is in the global endpoint forest, it will return 200, in this case, the eop connection uri is the global endpoint uri, so we will not update eop conection uri.
-            If the tenant is not in the global endpoint forest, it will return a 302 with redirection uri in the header, then we will retrieve the local forest prefix from the redirection uri, and update connection uri for eop.
-            </summary>
-            <param name="connectionContext">Current Connection Context</param>
-            <param name="tokenInfo">Current token info</param>
-            <returns>The ConnectionUriEop</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(System.Net.Http.HttpClient,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
-            <summary>
-            Get the endpoint Uri for eop
-            </summary>
-            <param name="httpClient">Current http client</param>
-            <param name="connectionContext">Current Connection Context</param>
-            <param name="tokenInfo">Current token info</param>
-            <returns>The ConnectionUriEop</returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory">
             <summary>
             ConnectionContextFactory class to create and delete ConnectionContext objects within a powershell process.
@@ -533,6 +500,39 @@
             </summary>
             <param name="predicate">The predicate to apply to each KeyValuePair in connectionContextMap</param>
             <returns>List of names of modules to be removed</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil">
+            <summary>
+            The helper class for ConnectionContext
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.GetEopConnectionUriRequestEndpointUri(System.String,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Get the endpoint Uri for getting eop connection uri
+            </summary>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <param name="connectionContext">Current Connection Context</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Get the endpoint Uri for eop
+            In eop, the first request will be sent to the global endpoint, it will return a 302 with redirection uri in the header or just a 200.
+            If the tenant is in the global endpoint forest, it will return 200, in this case, the eop connection uri is the global endpoint uri, so we will not update eop conection uri.
+            If the tenant is not in the global endpoint forest, it will return a 302 with redirection uri in the header, then we will retrieve the local forest prefix from the redirection uri, and update connection uri for eop.
+            </summary>
+            <param name="connectionContext">Current Connection Context</param>
+            <param name="tokenInfo">Current token info</param>
+            <returns>The ConnectionUriEop</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(System.Net.Http.HttpClient,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Get the endpoint Uri for eop
+            </summary>
+            <param name="httpClient">Current http client</param>
+            <param name="connectionContext">Current Connection Context</param>
+            <param name="tokenInfo">Current token info</param>
+            <returns>The ConnectionUriEop</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation">
             <summary>
@@ -1312,6 +1312,138 @@
             <param name="tenantId">Current tenant ID from Connection Context</param>
             <returns>Request endpoint Uri</returns>
         </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities">
+            <summary>
+            The Utility class to work with http instances and zipping
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IpUrlSubString">
+            <summary>
+            IpUrlSubString param
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HttpClient">
+            <summary>
+            Gets the http client for getting the new exo module.
+            The MaxConnectionsPerServer is set to increase the concurrent Http connection limit
+            for the HttpClient. Each usage of this HttpClient instance interferes with the Http connection
+            limit set in ServicePointManager which is used by the Get-EXO* cmdlets for multithreading, and
+            resets the value to the default value of 2. Hence increasing the http connection limit of this
+            instance to ensure the limit is not reduced due to any interference/overriding.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.GetHttpClient">
+            <summary>
+            Returns the static instance of httpClient
+            </summary>
+            <returns>Returns http client instance</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IsEOPConnectionUri(System.String)">
+            <summary>
+            Validates if the connectionUri is for EOP endpoint
+            </summary>
+            <param name="connectionUri">Connection Uri for the current connection</param>
+            <returns>true if the connectionUri is for EOP endpoint</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.UnzipAndDecompressHttpResponse(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            base64decode and unzip
+            </summary>
+            <param name="response">http response </param>
+            <returns>base64 decoded unzipped string</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.TryGetRedirectUriForEop(System.Net.Http.HttpResponseMessage,System.String,System.String@)">
+            <summary>
+            Get Redirection url for EopConnectionUri
+            </summary>
+            <param name="httpResponseMessage">The httpResponseMessage</param>
+            <param name="connectionUri">The connection uri</param>
+            <param name="redirectUri">The redirect uri</param>
+            <returns>Redirect uri if returned if it does exist</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.AppendServiceTagInConnectionUri(System.String,System.String)">
+            <summary>
+            Append service tag in connection uri for eop
+            </summary>
+            <param name="prefix">The service tag prefix</param>
+            <param name="connectionUri">The connection uri</param>
+            <returns>Returns updated connection uri</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants">
+            <summary>
+            HttpConstants class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptEncoding">
+            <summary>
+            AcceptEncoding constant
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ContentEncoding">
+            <summary>
+            ContentEncoding Constant
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientProcessIdHeader">
+            <summary>
+            ClientProcessId Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ConnectionIdHeader">
+            <summary>
+            ConnectionId Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientRequestIdHeader">
+            <summary>
+            ClientRequestId header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.EXOModuleVersionHeader">
+            <summary>
+            EXOModuleVersion Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.IsCloudShellEnvironmentHeader">
+            <summary>
+            IsCloudShellEnvironment Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.GZipEncoding">
+            <summary>
+            GZipEncoding constants
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.OsVersionHeader">
+            <summary>
+            OsVersion Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.PSVersionHeader">
+            <summary>
+            PSVersion Header 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DiagnosticsHeader">
+            <summary>
+            Header to add any diagnostic information to be logged by the service
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptLanguage">
+            <summary>
+            AcceptLanguage Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DisableWAMHeader">
+            <summary>
+            DisableWAM Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ROPCEnabledHeader">
+            <summary>
+            Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
+            </summary>
+        </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule">
             <summary>
             New Cmdlet for downloading, importing and managing class for the new EXO Auto Generated module.
@@ -1856,138 +1988,6 @@
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.ProcessRecord">
             <summary>
             ProcessRecord for this cmdlet
-            </summary>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities">
-            <summary>
-            The Utility class to work with http instances and zipping
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IpUrlSubString">
-            <summary>
-            IpUrlSubString param
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HttpClient">
-            <summary>
-            Gets the http client for getting the new exo module.
-            The MaxConnectionsPerServer is set to increase the concurrent Http connection limit
-            for the HttpClient. Each usage of this HttpClient instance interferes with the Http connection
-            limit set in ServicePointManager which is used by the Get-EXO* cmdlets for multithreading, and
-            resets the value to the default value of 2. Hence increasing the http connection limit of this
-            instance to ensure the limit is not reduced due to any interference/overriding.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.GetHttpClient">
-            <summary>
-            Returns the static instance of httpClient
-            </summary>
-            <returns>Returns http client instance</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IsEOPConnectionUri(System.String)">
-            <summary>
-            Validates if the connectionUri is for EOP endpoint
-            </summary>
-            <param name="connectionUri">Connection Uri for the current connection</param>
-            <returns>true if the connectionUri is for EOP endpoint</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.UnzipAndDecompressHttpResponse(System.Net.Http.HttpResponseMessage)">
-            <summary>
-            base64decode and unzip
-            </summary>
-            <param name="response">http response </param>
-            <returns>base64 decoded unzipped string</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.TryGetRedirectUriForEop(System.Net.Http.HttpResponseMessage,System.String,System.String@)">
-            <summary>
-            Get Redirection url for EopConnectionUri
-            </summary>
-            <param name="httpResponseMessage">The httpResponseMessage</param>
-            <param name="connectionUri">The connection uri</param>
-            <param name="redirectUri">The redirect uri</param>
-            <returns>Redirect uri if returned if it does exist</returns> 
-        </member>
-        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.AppendServiceTagInConnectionUri(System.String,System.String)">
-            <summary>
-            Append service tag in connection uri for eop
-            </summary>
-            <param name="prefix">The service tag prefix</param>
-            <param name="connectionUri">The connection uri</param>
-            <returns>Returns updated connection uri</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants">
-            <summary>
-            HttpConstants class
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptEncoding">
-            <summary>
-            AcceptEncoding constant
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ContentEncoding">
-            <summary>
-            ContentEncoding Constant
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientProcessIdHeader">
-            <summary>
-            ClientProcessId Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ConnectionIdHeader">
-            <summary>
-            ConnectionId Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientRequestIdHeader">
-            <summary>
-            ClientRequestId header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.EXOModuleVersionHeader">
-            <summary>
-            EXOModuleVersion Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.IsCloudShellEnvironmentHeader">
-            <summary>
-            IsCloudShellEnvironment Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.GZipEncoding">
-            <summary>
-            GZipEncoding constants
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.OsVersionHeader">
-            <summary>
-            OsVersion Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.PSVersionHeader">
-            <summary>
-            PSVersion Header 
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DiagnosticsHeader">
-            <summary>
-            Header to add any diagnostic information to be logged by the service
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptLanguage">
-            <summary>
-            AcceptLanguage Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DisableWAMHeader">
-            <summary>
-            DisableWAM Header
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ROPCEnabledHeader">
-            <summary>
-            Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper">

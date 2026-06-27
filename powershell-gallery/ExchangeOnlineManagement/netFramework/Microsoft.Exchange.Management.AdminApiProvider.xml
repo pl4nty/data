@@ -16666,6 +16666,68 @@
             <param name="cancellationToken">cancellation token while waiting.</param>
             <param name="logMessagePrefix">Prefix while logging messages.</param>
         </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
+            <summary>
+            Interface class to provide caching interface
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
+            <summary>
+            Should this object be cached
+            </summary>
+            <returns> true if this object should be cached </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
+            <summary>
+            Is this object expired
+            </summary>
+            <returns> true if expired </returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle">
+            <summary>
+            Provides utility methods for handling parent window handles.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleOrTerminalWindow">
+            <summary>
+            Retrieves the handle to the console window or the root owner of the console window.
+            </summary>
+            <returns>A handle to the console or terminal window.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags">
+            <summary>
+            Flags used with the GetAncestor function to specify which ancestor to retrieve.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetParent">
+            <summary>
+            Retrieves the parent window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRoot">
+            <summary>
+            Retrieves the root window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRootOwner">
+            <summary>
+            Retrieves the owned root window.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestor(System.IntPtr,Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags)">
+            <summary>
+            Retrieves the handle to the ancestor window of the specified window.
+            </summary>
+            <param name="hwnd">A handle to the window whose ancestor is to be retrieved.</param>
+            <param name="flags">The ancestor to be retrieved.</param>
+            <returns>A handle to the ancestor window.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleWindow">
+            <summary>
+            Retrieves the handle to the console window associated with the calling process.
+            </summary>
+            <returns>A handle to the console window.</returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utility">
             <summary>
             Helper class hosting utility functions.
@@ -16738,68 +16800,6 @@
             </summary>
             <param name="securePassword">Secure String</param>
             <returns>String from secure string</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
-            <summary>
-            Interface class to provide caching interface
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
-            <summary>
-            Should this object be cached
-            </summary>
-            <returns> true if this object should be cached </returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
-            <summary>
-            Is this object expired
-            </summary>
-            <returns> true if expired </returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle">
-            <summary>
-            Provides utility methods for handling parent window handles.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleOrTerminalWindow">
-            <summary>
-            Retrieves the handle to the console window or the root owner of the console window.
-            </summary>
-            <returns>A handle to the console or terminal window.</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags">
-            <summary>
-            Flags used with the GetAncestor function to specify which ancestor to retrieve.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetParent">
-            <summary>
-            Retrieves the parent window.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRoot">
-            <summary>
-            Retrieves the root window.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRootOwner">
-            <summary>
-            Retrieves the owned root window.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestor(System.IntPtr,Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags)">
-            <summary>
-            Retrieves the handle to the ancestor window of the specified window.
-            </summary>
-            <param name="hwnd">A handle to the window whose ancestor is to be retrieved.</param>
-            <param name="flags">The ancestor to be retrieved.</param>
-            <returns>A handle to the ancestor window.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleWindow">
-            <summary>
-            Retrieves the handle to the console window associated with the calling process.
-            </summary>
-            <returns>A handle to the console window.</returns>
         </member>
     </members>
 </doc>
