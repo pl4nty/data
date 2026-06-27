@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15951805,
+    "size": 15952467,
     "file_count": 846
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 33446938,
+    "size": 33452394,
     "file_count": 4044
   },
   {
     "name": "boringssl",
-    "size": 77566,
+    "size": 76928,
     "file_count": 15
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 161969537,
-    "file_count": 19119
+    "size": 161973057,
+    "file_count": 19121
   },
   {
     "name": "dbus",
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11426793,
+    "size": 11426745,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17616339,
-    "file_count": 2046
+    "size": 17632703,
+    "file_count": 2047
   },
   {
     "name": "entity_extraction",
@@ -226,8 +226,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 98529524,
-    "file_count": 11371
+    "size": 98530185,
+    "file_count": 11372
   },
   {
     "name": "flac",
@@ -511,7 +511,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19710443,
+    "size": 19665387,
     "file_count": 19
   },
   {
@@ -601,7 +601,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4465839,
+    "size": 4478611,
     "file_count": 621
   },
   {
@@ -661,8 +661,8 @@
   },
   {
     "name": "rust",
-    "size": 1966938,
-    "file_count": 249
+    "size": 2188235,
+    "file_count": 258
   },
   {
     "name": "screen-ai",
@@ -686,8 +686,8 @@
   },
   {
     "name": "skia",
-    "size": 3484885,
-    "file_count": 1206
+    "size": 3489884,
+    "file_count": 1208
   },
   {
     "name": "speech-dispatcher",
@@ -701,7 +701,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 551103,
+    "size": 551178,
     "file_count": 15
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7536143,
+    "size": 7535260,
     "file_count": 195
   },
   {
@@ -805,8 +805,13 @@
     "file_count": 2
   },
   {
+    "name": "whisper-base",
+    "size": 13201,
+    "file_count": 6
+  },
+  {
     "name": "win_build_output",
-    "size": 30202068,
+    "size": 30232752,
     "file_count": 629
   },
   {

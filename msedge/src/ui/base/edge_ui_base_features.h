@@ -187,6 +187,10 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineIgnoreWritingSuggestions);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(bool,
+                           kEdgeComposeInlineIgnoreWritingSuggestionsNewEntry);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeCopilotChat);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsEdgeComposeCopilotChatEnabled();

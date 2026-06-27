@@ -13,6 +13,7 @@
 
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
+#include "base/task/task_traits.h"
 #include "base/time/time.h"
 #include "build/branding_buildflags.h"
 #include "build/build_config.h"
@@ -594,6 +595,11 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kSqlDiskCacheCacheSize);
 // Whether to use consolidated in memory index.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
                                       kSqlDiskCacheConsolidatedInMemoryIndex);
+// Whether to enable incremental vacuum for the SQL disk cache backend.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kSqlDiskCacheIncrementalVacuum);
+// The number of pages to vacuum per step during incremental vacuum.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int,
+                                      kSqlDiskCacheIncrementalVacuumPageCount);
 #endif  // ENABLE_DISK_CACHE_SQL_BACKEND
 
 // If enabled, ignore Strict-Transport-Security for [*.]localhost hosts.
@@ -720,9 +726,19 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(double,
 // no impact if `kTcpSocketPoolLimitRandomization` is disabled.
 NET_EXPORT BASE_DECLARE_FEATURE(kTcpSocketPoolLimitRandomizationForProxy);
 
-// These parameters control whether the Network Service Task Scheduler is used
-// for specific classes.
+// When enabled, Net Task Scheduler is enabled on the network thread.
 NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskScheduler);
+
+// When enabled, Net Task Scheduler supports per-net::RequestPriority task
+// queues for each RequestPriority variant.
+//
+// TODO(crbug.com/450428442): Rename this to kNetPerPriorityTaskQueues once the
+// active Finch study referencing "NetworkServicePerPriorityTaskQueues"
+// finishes.
+NET_EXPORT BASE_DECLARE_FEATURE(kNetworkServicePerPriorityTaskQueues);
+
+// These parameters control whether the Net Task Scheduler is used
+// for specific classes.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
                                       kNetTaskSchedulerHttpProxyConnectJob);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
@@ -741,6 +757,22 @@ NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskScheduler2);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kNetTaskSchedulerHttpCache);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
                                       kNetTaskSchedulerHttpCacheTransaction);
+
+// When enabled, allows unit tests inheriting from net::WithTaskEnvironment to
+// instantiate and utilize the NetTaskScheduler. Disabling this acts as a global
+// kill-switch to bypass the NetTaskScheduler across all tests.
+//
+// TODO(crbug.com/463794414): Remove this flag after we confirm the tests under
+// the scheduler are sufficiently stable.
+NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskSchedulerInTests);
+
+// When enabled, forces the NetTaskScheduler to be enabled in tests, even for
+// test suites that explicitly bypass it. This is used for manual and automated
+// verification of scheduler-induced test crash profiles.
+//
+// TODO(crbug.com/463794414): Remove this flag after we confirm the tests under
+// the scheduler are sufficiently stable.
+NET_EXPORT BASE_DECLARE_FEATURE(kNetTaskSchedulerForceEnableInTests);
 
 // If enabled, we will add an additional delay to the main job in
 // HttpStreamFactoryJobController.
@@ -882,7 +914,22 @@ NET_EXPORT BASE_DECLARE_FEATURE(kCookieParseRejectEmptyNameAmbiguous);
 
 NET_EXPORT BASE_DECLARE_FEATURE(kEnablePrivateVerificationTokens);
 
+// If enabled, request servers to add additional padding to TLS handshakes. The
+// amount requested is configurable by the parameter
+// kAddTLSServerHandshakePaddingBytes, with a maximum of 16k bytes.
+NET_EXPORT BASE_DECLARE_FEATURE(kAddTLSServerHandshakePadding);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kAddTLSServerHandshakePaddingBytes);
+
 NET_EXPORT bool IsDnsPlatformSupported();
+
+// If enabled, load the NoVarySearchCache persisted data on a different
+// threadpool sequence than used for journalling.
+NET_EXPORT BASE_DECLARE_FEATURE(kNoVarySearchCacheLoadOnSeparateTaskRunner);
+
+// The priority to load the persisted data with. 0 => BEST_EFFORT,
+// 1 => USER_VISIBLE, 2 => USER_BLOCKING.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TaskPriority,
+                                      kNoVarySearchCacheLoadTaskRunnerPriority);
 
 }  // namespace net::features
 

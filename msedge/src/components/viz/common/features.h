@@ -1,5 +1,5 @@
-// Copyright (C) Microsoft Corporation. All rights reserved.
 // Copyright 2017 The Chromium Authors
+// Copyright (C) Microsoft Corporation. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -13,6 +13,9 @@
 #include "base/metrics/field_trial_params.h"
 #include "build/build_config.h"
 #include "components/viz/common/viz_common_export.h"
+
+// Edge includes.
+#include "build/branding_buildflags.h"
 
 // See the following for guidance on adding new viz feature flags:
 // https://cs.chromium.org/chromium/src/components/viz/README.md#runtime-features
@@ -96,25 +99,15 @@ VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAdpf);
 VIZ_COMMON_EXPORT extern const base::FeatureParam<std::string>
     kADPFSocManufacturerAllowlist;
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFRendererMain);
-VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableAdpfEfficiencyMode);
-enum class AdpfEfficiencyMode {
-  // Never opts ADPF sessions into efficient scheduling (default).
-  kNever,
-  // Attempt to shift ADPF sessions between setPreferPowerEfficiency states,
-  // based on the current context.
-  kAdaptive,
-  // Always opt ADPF sessions into efficient scheduling whenever possible -
-  // costs considerable performance.
-  kAlwaysEfficient
-};
-extern const VIZ_COMMON_EXPORT base::FeatureParam<AdpfEfficiencyMode>
-    kAdpfEfficiencyModeParam;
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFSeparateRendererMainSession);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFWorkloadIncreaseOnPageLoad);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFWorkloadReset);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFScrollNoRendererMain);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEnableADPFAsyncSetThreads);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kSelectFutureFrameDeadline);
+#if BUILDFLAG(IS_ANDROID)
+VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kUseAndroidCustomFrameDeadlines);
+#endif
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kUseDisplaySDRMaxLuminanceNits);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kHideDelegatedFrameHostMac);
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kEvictionUnlocksResources);
@@ -138,9 +131,9 @@ VIZ_COMMON_EXPORT extern const char kPredictorLinearResampling[];
 VIZ_COMMON_EXPORT extern const char kPredictorLinear1[];
 VIZ_COMMON_EXPORT extern const char kPredictorLinear2[];
 VIZ_COMMON_EXPORT extern const char kPredictorLsq[];
-// Edge-only start.
+#if BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 VIZ_COMMON_EXPORT extern const char kPredictorLinearBezier[];
-// Edge-only end.
+#endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 
 VIZ_COMMON_EXPORT BASE_DECLARE_FEATURE(kAckOnSurfaceActivationWhenInteractive);
 

@@ -329,8 +329,9 @@ enum class ImportedDataSharingFailureReason {
   kUserIdError = 13,
   kNoUploaderSequence = 14,
   kErrorFlag = 15,
-  kRestrictedForCopilot = 16,
-  kMaxValue = kRestrictedForCopilot
+  kRestrictedForLegacyCopilot = 16,
+  kRestrictedForUnifiedCopilot = 17,
+  kMaxValue = kRestrictedForUnifiedCopilot
 };
 
 // These values are logged to UMA. Entries should not be renumbered
