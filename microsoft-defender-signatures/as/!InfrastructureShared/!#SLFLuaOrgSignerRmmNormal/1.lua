@@ -28,7 +28,7 @@ for l_0_6,l_0_7 in ("\\avecto\\privilege guard client\\")("\\system32\\pmlaunche
     return mp.CLEAN
   end
 end
-local l_0_8 = getOrgIdScrubbed()
+local l_0_8 = (versioning.GetOrgID)()
 if l_0_8 == nil or l_0_8 == "" then
   return mp.CLEAN
 end
@@ -126,21 +126,21 @@ end
   return mp.CLEAN
 end
 local l_0_15 = nil
--- DECOMPILER ERROR at PC170: Overwrote pending register: R13 in 'AssignReg'
+-- DECOMPILER ERROR at PC171: Overwrote pending register: R13 in 'AssignReg'
 
 local l_0_16 = l_0_8 .. "+empty"
--- DECOMPILER ERROR at PC178: Confused about usage of register: R11 in 'UnsetPending'
+-- DECOMPILER ERROR at PC179: Confused about usage of register: R11 in 'UnsetPending'
 
 if l_0_16 == nil or l_0_16 == "" or l_0_8 .. "+" .. "\\datto\\workplace2\\" == nil or l_0_8 .. "+" .. "\\datto\\workplace2\\" == "" then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC186: Overwrote pending register: R14 in 'AssignReg'
+-- DECOMPILER ERROR at PC187: Overwrote pending register: R14 in 'AssignReg'
 
--- DECOMPILER ERROR at PC187: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC188: Overwrote pending register: R15 in 'AssignReg'
 
--- DECOMPILER ERROR at PC188: Overwrote pending register: R16 in 'AssignReg'
+-- DECOMPILER ERROR at PC189: Overwrote pending register: R16 in 'AssignReg'
 
--- DECOMPILER ERROR at PC190: Overwrote pending register: R17 in 'AssignReg'
+-- DECOMPILER ERROR at PC191: Overwrote pending register: R17 in 'AssignReg'
 
 local l_0_17 = nil
 do
@@ -148,13 +148,13 @@ do
   if l_0_18 == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == "" then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC219: Overwrote pending register: R18 in 'AssignReg'
+  -- DECOMPILER ERROR at PC220: Overwrote pending register: R18 in 'AssignReg'
 
   if (MpCommon.NidSearch)(l_0_10, l_0_18) == true and l_0_10 == l_0_11 and ((MpCommon.SNidSearch)(l_0_10, "\\netsupport\\netsupport notify\\") ~= true or l_0_10 ~= l_0_11) then
     return mp.INFECTED
   end
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC235: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC236: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end
