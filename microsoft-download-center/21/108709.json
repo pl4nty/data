@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2606.18-preview: DirectX Dump Files and more",
+    "downloadDescription": "PIX 2606.18-preview: DirectX Dump Files and more",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2606.18-preview-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/3e0b671f-707a-4c8d-bdbc-bbbb0672f8d6/PIX-2606.18-preview-Installer-x64.exe",
+            "size": "364767208",
+            "version": "2606.18-preview",
+            "datePublished": "6/18/2026 4:01:47 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2606.18-preview: DirectX Dump Files and more",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2606.18-preview",
+    "detailsSection_file_name": [
+        "PIX-2606.18-preview-Installer-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "347.9 MB"
+    ],
+    "detailsSection_file_date": "6/18/2026",
+    "systemRequirementsSection": "Windows 10 or 11, and a DirectX 12 capable GPU",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Run the installer and follow its instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108709",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Purview Information Protection client for Mac",
+    "downloadDescription": "The Microsoft Purview Information Protection client for Mac is currently in preview and is offered as two separate applications: File Labeler and File Viewer. The Information Protection Scanner and PowerShell module aren't available for Mac.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Information Protection Viewer.pkg",
+            "url": "https://download.microsoft.com/download/408a4bf2-9bac-4558-8599-58495310736f/Information Protection Viewer.pkg",
+            "size": "33950043",
+            "version": "1.0.124",
+            "datePublished": "6/15/2026 5:50:02 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Information Protection File Labeler.pkg",
+            "url": "https://download.microsoft.com/download/408a4bf2-9bac-4558-8599-58495310736f/Information Protection File Labeler.pkg",
+            "size": "31402177",
+            "version": "1.0.124",
+            "datePublished": "6/15/2026 5:50:02 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\nThe <b>Microsoft Purview Information Protection client for Mac</b> helps you classify and label data in your organization at the time of creation, as well as apply protection, based on encryption and usage rights for sensitive data. Labels, and protection are persistent, traveling with the data throughout its lifecycle, so that it\u2019s detectable and controlled at all times \u2013 regardless of where it\u2019s stored or with whom it\u2019s shared \u2013 internally or externally.\n<br/>\n<br/>For more information, see <a href=\"https://azure.microsoft.com/services/information-protection/\">the Microsoft Purview Information Protection site</a>.\n<br/>\n<b>Microsoft Purview Information Protection client for Mac in Preview:</b> <a href=\"https://learn.microsoft.com/en-us/purview/information-protection-client-relnotes?tabs=macos#version-10124-preview\">version 1.0.124</a>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.124",
+    "detailsSection_file_name": [
+        "Information Protection Viewer.pkg",
+        "Information Protection File Labeler.pkg"
+    ],
+    "detailsSection_file_size": [
+        "32.4 MB",
+        "29.9 MB"
+    ],
+    "detailsSection_file_date": "6/15/2026",
+    "systemRequirementsSection": "<br/>List of <a href=\"https://learn.microsoft.com/purview/information-protection-client#requirements-for-deploying-the-information-protection-client\">prequisites</a> is in the documentation<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>Install the Microsoft Purview Information Protection client- instructions:</b><br/>\n<a href=\"https://learn.microsoft.com/purview/information-protection-client#install-or-upgrade-the-information-protection-client\"> Extend sensitivity labeling on Windows</a>\n\n<br/>\n\n<br/> For more information, see our <a href=\"https://learn.microsoft.com/purview/information-protection-client\">technical documentation. </a><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108701",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

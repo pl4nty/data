@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Azure App Service Migration Assistant PowerShell scripts",
+    "downloadDescription": "PowerShell scripts to discover, assess and migrate web applications from IIS to Azure App Service",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AppServiceMigrationScripts.zip",
+            "url": "https://download.microsoft.com/download/85c0cc9a-b50f-4edb-b34d-e379d879705e/AppServiceMigrationScripts.zip",
+            "size": "414250",
+            "version": "1.0",
+            "datePublished": "6/1/2026 9:47:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PowerShell scripts to discover, assess and migrate web applications from IIS to Azure App Service",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AppServiceMigrationScripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "404.5 KB"
+    ],
+    "detailsSection_file_date": "6/1/2026",
+    "systemRequirementsSection": "Windows OS",
+    "systemRequirementsSection_supportedOS": [
+        "Microsoft Windows Server 2003",
+        "Windows Server 2003 R2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download zip archive, extract it and run",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108683",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

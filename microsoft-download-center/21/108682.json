@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Azure App Service Migration Assistant",
+    "downloadDescription": "Migrate .NET Web Apps from Windows OS to App Service",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AppServiceMigrationAssistant.msi",
+            "url": "https://download.microsoft.com/download/f8dc26de-f965-4fe3-87a4-fe1bdee5fc4a/AppServiceMigrationAssistant.msi",
+            "size": "72761344",
+            "version": "1.0.8",
+            "datePublished": "6/1/2026 9:47:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tool to assist with migration of .NET Web Applications hosted in Windows Operating System to Azure App Service",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.8",
+    "detailsSection_file_name": [
+        "AppServiceMigrationAssistant.msi"
+    ],
+    "detailsSection_file_size": [
+        "69.4 MB"
+    ],
+    "detailsSection_file_date": "6/1/2026",
+    "systemRequirementsSection": "Windows OS",
+    "systemRequirementsSection_supportedOS": [
+        "Microsoft Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Microsoft Windows Server 2003, Standard Edition (32-bit x86)",
+        "Microsoft Windows Server 2003, Web Edition",
+        "Microsoft Windows Web Server 2008",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Install using downloaded MSI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108682",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

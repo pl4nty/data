@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server Subscription Edition (SE) CU1 KB5065372",
+    "downloadDescription": "This download includes all available updates for Skype for Business Server Subscription Edition",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/285915a7-9dc2-4d94-a76b-a437a0ced804/PersistentChatUpdateInstaller.exe",
+            "size": "3710264",
+            "version": "7.0.2046.849",
+            "datePublished": "6/1/2026 10:36:34 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SkypeServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/285915a7-9dc2-4d94-a76b-a437a0ced804/SkypeServerUpdateInstaller.exe",
+            "size": "105406816",
+            "version": "7.0.2046.849",
+            "datePublished": "6/1/2026 10:36:34 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigureSkypeforBusinessHybridApplication.ps1",
+            "url": "https://download.microsoft.com/download/285915a7-9dc2-4d94-a76b-a437a0ced804/ConfigureSkypeforBusinessHybridApplication.ps1",
+            "size": "63351",
+            "version": "7.0.2046.849",
+            "datePublished": "6/1/2026 10:36:34 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server Subscription Edition is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5065372",
+        "name": "KB5065372"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2046.849",
+    "detailsSection_file_name": [
+        "PersistentChatUpdateInstaller.exe",
+        "SkypeServerUpdateInstaller.exe",
+        "ConfigureSkypeforBusinessHybridApplication.ps1"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB",
+        "100.5 MB",
+        "61.9 KB"
+    ],
+    "detailsSection_file_date": "6/1/2026",
+    "systemRequirementsSection": "This download works with the following program:\n<ul>\n<li>Skype for Business Server Subscription Edition</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A> for installation details.</li>\n</ol>\n<br />",
+    "additionalInformationSection": "PersistentChatUpdateInstaller.exe\tSHA 256 Hash = 9F0FE560842FFC5D96E4DB6A8D07A04AB3D9F2A7DB42A986C8CDD62D8C44A13E\n\nSkypeServerUpdateInstaller.exe SHA 256 Hash = 4230727754B2F7570E1C7C7CE226217CC4168F6F67AD031C4DAD78BFDF06A70D\n\nConfigureSkypeforBusinessHybridApplication.ps1 SHA 256 Hash = 81F98A95B8FD732A8D2383CF3C4BF2A04CC53467FDA2377C10C90FB41587FEEB",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108681",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
