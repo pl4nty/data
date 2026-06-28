@@ -44,6 +44,9 @@ NET_EXPORT BASE_DECLARE_FEATURE(kCapReferrerToOriginOnCrossOrigin);
 // Enables the built-in DNS resolver.
 NET_EXPORT BASE_DECLARE_FEATURE(kAsyncDns);
 
+// Caches UDP connect() results in AddressSorterPosix.
+NET_EXPORT BASE_DECLARE_FEATURE(kAddressSorterConnectCache);
+
 // Support for altering the parameters used for DNS transaction timeout. See
 // ResolveContext::SecureTransactionTimeout().
 NET_EXPORT BASE_DECLARE_FEATURE(kDnsTransactionDynamicTimeouts);
@@ -310,11 +313,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kCookieSameSiteConsidersRedirectChain);
 // SameSite=None cookies should be allowed in sandboxed contexts with 3PC
 // restrictions.
 NET_EXPORT BASE_DECLARE_FEATURE(kAllowSameSiteNoneCookiesInSandbox);
-
-// When enabled, requestStorageAccessFor will require storage access permissions
-// granted by StorageAccessApi or StorageAccessHeaders to send cookies on
-// requests allowed because of requestStorageAccessFor instead of cors.
-NET_EXPORT BASE_DECLARE_FEATURE(kRequestStorageAccessNoCorsRequired);
 
 // Controls whether static key pinning is enforced.
 NET_EXPORT BASE_DECLARE_FEATURE(kStaticKeyPinningEnforcement);

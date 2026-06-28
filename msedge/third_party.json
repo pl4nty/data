@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33526306,
-    "file_count": 4052
+    "size": 33535298,
+    "file_count": 4054
   },
   {
     "name": "boringssl",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17661619,
-    "file_count": 2047
+    "size": 17846050,
+    "file_count": 2057
   },
   {
     "name": "entity_extraction",
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 62238,
+    "size": 62277,
     "file_count": 46
   },
   {
@@ -481,8 +481,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 401202871,
-    "file_count": 358
+    "size": 408346250,
+    "file_count": 360
   },
   {
     "name": "logilab",
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19688427,
+    "size": 19678187,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4542446,
+    "size": 4543665,
     "file_count": 622
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7564322,
+    "size": 7571901,
     "file_count": 197
   },
   {
