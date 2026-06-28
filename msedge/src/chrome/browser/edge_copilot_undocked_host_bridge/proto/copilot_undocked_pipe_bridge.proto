@@ -103,6 +103,31 @@ message Envelope {
 // ---------------------------------------------------------------------------
 
 message Request {
+  // Scenario-defined hierarchical routing key, opaque to the bridge.
+  // Used by the receiving peer to dispatch the request to one
+  // registered handler (and any registered observers); see
+  // pipe_bridge_dispatcher.h on the browser side.
+  //
+  // Format (recommended, matches Windows-pipe / TFS area-path style):
+  //   "\Top\Sub\Leaf\"  -- segments separated and bracketed by '\'.
+  //   "\"               -- root; matches everything.
+  // Forward slash '/' is also accepted and normalized to '\' on the
+  // receiving side, but '\' is the canonical form and what scenarios
+  // SHOULD stamp.
+  //
+  // Matching is "starts-with" on normalized strings: a handler
+  // registered at "\UniversalComposer\" matches incoming area_paths
+  // "\UniversalComposer\", "\UniversalComposer\SubmitQuery\", and
+  // "\UniversalComposer\SubmitQueryWithFiles\", but not
+  // "\UniversalComposerOther\".
+  //
+  // Empty string is treated as the root "\" by the receiver. Older
+  // peers that do not stamp this field therefore route to a root
+  // handler if one is registered, else get STATUS_UNSUPPORTED_METHOD
+  // back. The dispatcher is intentionally scenario-agnostic; there is
+  // no per-payload-kind fallback.
+  string area_path = 100;
+
   oneof payload {
     NavigateToConversationRequest navigate_to_conversation = 1;
     SubmitChatQueryRequest submit_chat_query = 2;

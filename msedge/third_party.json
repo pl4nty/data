@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2243226,
+    "size": 2245705,
     "file_count": 185
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12945446,
+    "size": 12943470,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 15976079,
+    "size": 15976219,
     "file_count": 846
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33504109,
-    "file_count": 4051
+    "size": 33526306,
+    "file_count": 4052
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17994002,
+    "size": 17997539,
     "file_count": 1006
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 162057859,
-    "file_count": 19127
+    "size": 162065634,
+    "file_count": 19131
   },
   {
     "name": "dbus",
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17654765,
+    "size": 17661619,
     "file_count": 2047
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "name": "harfbuzz",
-    "size": 311358,
+    "size": 311357,
     "file_count": 32
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "name": "icu",
-    "size": 162934853,
+    "size": 162934735,
     "file_count": 7201
   },
   {
@@ -461,7 +461,7 @@
   },
   {
     "name": "libxml",
-    "size": 359235,
+    "size": 360295,
     "file_count": 36
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "name": "litert",
-    "size": 190637,
+    "size": 190612,
     "file_count": 67
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 296059,
+    "size": 296076,
     "file_count": 47
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19674091,
+    "size": 19688427,
     "file_count": 19
   },
   {
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4531788,
-    "file_count": 621
+    "size": 4542446,
+    "file_count": 622
   },
   {
     "name": "perl",
@@ -681,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3489874,
-    "file_count": 1208
+    "size": 3490026,
+    "file_count": 1210
   },
   {
     "name": "speech-dispatcher",
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1733030,
-    "file_count": 536
+    "size": 1738552,
+    "file_count": 537
   },
   {
     "name": "tflite_support",
@@ -756,7 +756,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1506040,
+    "size": 1517050,
     "file_count": 23
   },
   {
@@ -766,13 +766,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2754239,
+    "size": 2783770,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7556507,
-    "file_count": 194
+    "size": 7564322,
+    "file_count": 197
   },
   {
     "name": "vulkan_memory_allocator",
