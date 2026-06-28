@@ -190,6 +190,14 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const base::FeatureParam<int>
     kStartCIInAutolaunchSuppressionKeepAliveDurationInSeconds;
 
+// Treatment-variant flag that opts the session into upgrading the CI
+// auto-import task priority from BEST_EFFORT to USER_BLOCKING after
+// autolaunch suppression is confirmed. The flag ships disabled so the
+// default (control) behavior is a single BEST_EFFORT post; enabling it
+// activates the post -> cancel -> re-post-at-USER_BLOCKING path.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kUpgradeCIAutoImportPriorityInAutolaunchSuppression);
+
 // Browser usage threshold in which auto launch should be activated.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const base::FeatureParam<int> kAutoLaunchActivationThreshold;

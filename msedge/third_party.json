@@ -36,12 +36,12 @@
   },
   {
     "name": "angle",
-    "size": 15976219,
+    "size": 16003123,
     "file_count": 846
   },
   {
     "name": "anonymous_tokens",
-    "size": 20849,
+    "size": 20883,
     "file_count": 5
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33535298,
+    "size": 33535303,
     "file_count": 4054
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17846050,
-    "file_count": 2057
+    "size": 17834857,
+    "file_count": 2052
   },
   {
     "name": "entity_extraction",
@@ -476,7 +476,7 @@
   },
   {
     "name": "litert",
-    "size": 190612,
+    "size": 190885,
     "file_count": 67
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 296076,
+    "size": 296610,
     "file_count": 47
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19678187,
+    "size": 19826155,
     "file_count": 19
   },
   {
@@ -551,8 +551,8 @@
   },
   {
     "name": "oak",
-    "size": 207363,
-    "file_count": 127
+    "size": 223072,
+    "file_count": 129
   },
   {
     "name": "omnibox_proto",
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4543665,
+    "size": 4546428,
     "file_count": 622
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "name": "pffft",
-    "size": 259128,
+    "size": 259774,
     "file_count": 24
   },
   {
@@ -661,7 +661,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4372524,
+    "size": 4434932,
     "file_count": 83
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3490026,
+    "size": 3491186,
     "file_count": 1210
   },
   {
@@ -726,8 +726,8 @@
   },
   {
     "name": "tflite",
-    "size": 1738552,
-    "file_count": 537
+    "size": 1738363,
+    "file_count": 536
   },
   {
     "name": "tflite_support",
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7571901,
+    "size": 7575789,
     "file_count": 197
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 30232752,
+    "size": 30233112,
     "file_count": 629
   },
   {
