@@ -32,6 +32,7 @@ bool IsEditorEnvironmentEndpointDetectionEnabled();
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckEnabled();
 
+COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeEditorSpellcheckerUXV2);
 COMPONENT_EXPORT(EDGE_EDITOR_FEATURES)
 bool IsEditorSpellcheckerUXV2Enabled();
