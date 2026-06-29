@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12943470,
+    "size": 12943705,
     "file_count": 163
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "anonymous_tokens",
-    "size": 20883,
+    "size": 20993,
     "file_count": 5
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 33548715,
-    "file_count": 4054
+    "size": 33553296,
+    "file_count": 4055
   },
   {
     "name": "boringssl",
@@ -136,12 +136,12 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 284678,
+    "size": 294800,
     "file_count": 5
   },
   {
     "name": "dawn",
-    "size": 162065682,
+    "size": 162065798,
     "file_count": 19131
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17834632,
-    "file_count": 2052
+    "size": 17834323,
+    "file_count": 2054
   },
   {
     "name": "entity_extraction",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 342360,
-    "file_count": 86
+    "size": 365463,
+    "file_count": 98
   },
   {
     "name": "ffmpeg",
@@ -356,7 +356,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 29521,
+    "size": 32097,
     "file_count": 3
   },
   {
@@ -381,7 +381,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 62277,
+    "size": 62393,
     "file_count": 46
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 296610,
+    "size": 296645,
     "file_count": 47
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 66219,
+    "size": 66776,
     "file_count": 39
   },
   {
@@ -681,8 +681,8 @@
   },
   {
     "name": "skia",
-    "size": 3491833,
-    "file_count": 1210
+    "size": 3490016,
+    "file_count": 1207
   },
   {
     "name": "speech-dispatcher",
@@ -771,8 +771,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7586284,
-    "file_count": 197
+    "size": 7627738,
+    "file_count": 198
   },
   {
     "name": "vulkan_memory_allocator",
