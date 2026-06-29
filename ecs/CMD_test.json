@@ -110,6 +110,7 @@
         "CloudProfileBulkManualSnapshotEnabled": true,
         "CloudProfileDynamicSizeEnabled": true,
         "CloudProfileListUPNSearch": true,
+        "CloudProfileRestoreSnapshotCrossCollectionEnabled": true,
         "CloudProfileRestoreSnapshotEnabled": true,
         "CmkEnableUpdateEncryptionAction": true,
         "CogsV2ConsistencyCheckWorkflows": true,
