@@ -135,6 +135,7 @@
         "DRmgmt_EnableAudit": true,
         "DRmgmt_EnableAuditAutoOps": true,
         "DRmgmt_EnableAuditRegionDistribution": true,
+        "DRmgmt_EnableBcdrConfigCheck": true,
         "DRmgmt_EnableCdpEvent": true,
         "DRmgmt_EnableCloudDeviceLib": true,
         "DRmgmt_EnableDRPlusNotification": true,
