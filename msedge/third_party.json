@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2245705,
+    "size": 2245828,
     "file_count": 185
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 16003123,
+    "size": 16003258,
     "file_count": 846
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 33535303,
+    "size": 33548715,
     "file_count": 4054
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 162065634,
+    "size": 162065682,
     "file_count": 19131
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6988349,
+    "size": 6988260,
     "file_count": 67
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 11426745,
+    "size": 7277127,
     "file_count": 29
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "eigen3",
-    "size": 17834857,
+    "size": 17834632,
     "file_count": 2052
   },
   {
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 341636,
-    "file_count": 81
+    "size": 342360,
+    "file_count": 86
   },
   {
     "name": "ffmpeg",
@@ -326,7 +326,7 @@
   },
   {
     "name": "ink",
-    "size": 91590,
+    "size": 93657,
     "file_count": 13
   },
   {
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4546428,
-    "file_count": 622
+    "size": 4550206,
+    "file_count": 623
   },
   {
     "name": "perl",
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3491186,
+    "size": 3491833,
     "file_count": 1210
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7575789,
+    "size": 7586284,
     "file_count": 197
   },
   {
