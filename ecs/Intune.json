@@ -351,6 +351,7 @@
             "DPSUseEGATsForAppsTargeting": true,
             "DisableMTGlobalAppSearch": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
+            "EnableEamEvergreenGraph": true,
             "EnableRePopulateMissingDPAs": true,
             "PublishMessagesForAllAppPolicyChanges": true,
             "SCGWUseBranchDescriptorCache": true,
@@ -609,6 +610,7 @@
     },
     "SVC_Monolith_MAM": {
         "FlightingV2": {
+            "DisableFallbackFromMSGraphToAADGraph": true,
             "DisableMonotonicClock": true,
             "EnableAISettings": true,
             "EnableAndroidForWorkDeviceTypeCheck": true,
@@ -766,6 +768,7 @@
     "UX_AppLifecycle": {
         "FlightingV2": {
             "EnableAELOBAppCreation": true,
+            "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
             "EnableWin32InstallerScriptsGA": true
