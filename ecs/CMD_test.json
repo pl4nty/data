@@ -329,6 +329,7 @@
         "EnableApexPreviewString": false,
         "EnableApexRemoteAction": true,
         "EnableApexTenantOffboard": true,
+        "EnableApiThrottling": true,
         "EnableApplyRdpPropertySettings": true,
         "EnableApplySSOForAADJInUX": true,
         "EnableApplySSOForHAADJInUX": true,
@@ -1747,6 +1748,7 @@
                 "httpRequestTimeoutSec": 10
             },
             "Aspen": {
+                "EnableAVDRestart": true,
                 "enableHealthCheckAvdDiagnostics": true
             },
             "GUI": {
