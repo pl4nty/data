@@ -1,0 +1,155 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+template("edge_overlay_group_all") {
+  # Intentionally empty to make the linking between BUILD.gn and BUILD_edge.gni
+  # work by adding targets into the BUILD.gn scope.
+  group(target_name) {
+    forward_variables_from(invoker, "*", [])
+  }
+  # Edge targets:
+}
+
+template("edge_overlay_source_set_importer") {
+  source_set(target_name) {
+    # Forward all variables from the invoker, except for "configs" has defaults.
+    forward_variables_from(invoker, "*", [])
+
+    deps = [
+      "//chrome/browser:history",
+      "//chrome/browser:importer_migration_clearner",
+      "//chrome/browser/profiles:profile",
+      "//components/autofill/core/browser",
+      "//components/content_settings/core/browser",
+    ]
+  }
+}
+
+template("edge_overlay_source_set_impl") {
+  source_set(target_name) {
+    # Forward all variables from the invoker, except for "configs" has defaults.
+    forward_variables_from(invoker, "*", [])
+
+    # The firefox_profile_lock sources are licensed under MPL 1.1/GPL 2.0/ LGPL
+    # 2.1 and in Edge-branded builds must be compiled into the dedicated
+    # :firefox_profile static library (see
+    # edge_overlay_static_library_firefox_profile below) to keep them out of
+    # browser.lib. Strip them from :impl here so they are not also compiled by
+    # the upstream-style :impl target, which would otherwise produce duplicate
+    # FirefoxProfileLock symbols at link time. NOTE: reaching into BUILD.gn's
+    # source list from BUILD_edge.gni trips an SSL (source separation) check;
+    # the alternative is to gate the sources in BUILD.gn directly with
+    # !is_msedge_branded, but the team has chosen to keep the diff confined to
+    # BUILD_edge.gni.
+    sources -= [ "firefox_profile_lock.cc" ]
+    if (is_win) {
+      sources -= [ "firefox_profile_lock_win.cc" ]
+    } else {
+      sources -= [ "firefox_profile_lock_posix.cc" ]
+    }
+
+    deps += [
+      "//chrome/browser:browser_process",
+      "//chrome/browser:edge_continuous_migration_utils",
+      "//chrome/browser:edge_migration_features",
+      "//chrome/browser:edge_onramp_network_primary_browser_service",
+      "//chrome/browser/autofill",
+      "//chrome/browser/content_settings:content_settings_factory",
+      "//chrome/browser/edge_lightning",
+      "//chrome/browser/edge_user_usage_service",
+      "//chrome/browser/extensions",
+      "//chrome/browser/importer/extensions:extenions_migrator",
+      "//chrome/browser/search:edge_instant_service",
+      "//chrome/browser/sessions:edge_sessions",
+      "//chrome/browser/themes",
+      "//chrome/browser/ui",
+      "//chrome/browser/ui/startup:startup_tab",
+      "//chrome/browser/ui/webui/edge_themes/utils",
+      "//chrome/browser/ui/zoom",
+      "//components/browsing_data/core",
+      "//components/content_settings/core/browser:cookie_settings",
+      "//components/edge_kodiak",
+      "//components/edge_smartscreen/buildflags",
+      "//components/edge_smartscreen/common:smartscreen_prefs",
+      "//components/edge_smartscreen/common:smartscreen_reporter",
+      "//components/history/content/browser",
+      "//components/password_manager/core/browser/password_store:password_store_impl",
+      "//components/privacy_sandbox:privacy_sandbox_prefs",
+    ]
+    if (is_msedge_branded && is_win) {
+      deps += [
+        "//chrome/browser/edge_continuous_migration",
+        "//chrome/browser/edge_continuous_migration:edge_continuous_migration_importer",
+        "//chrome/browser/importer/edge_china_browsers:china_importer_utils",
+        "//components/os_crypt/async/common",
+      ]
+    }
+    if (is_linux || is_mac) {
+      deps += [ "//chrome/browser/prefs:util" ]
+    }
+  }
+}
+
+template("edge_overlay_source_set_browser_tests") {
+  source_set(target_name) {
+    # Forward all variables from the invoker, except for "configs" has defaults.
+    forward_variables_from(invoker, "*", [])
+    if (is_win) {
+      sources +=
+          [ "edge_ie_reactivation_import_service_factory_browsertest.cc" ]
+      deps += [ "//chrome/common/importer:test_support" ]
+    } else {
+      deps += [ "//net" ]
+    }
+  }
+}
+
+# Defaults will always be defined since we set_defaults in BUILDCONFIG.gn.
+set_defaults("edge_overlay_source_set_unit_tests") {
+  configs = []
+}
+template("edge_overlay_source_set_unit_tests") {
+  source_set(target_name) {
+    # Forward all variables from the invoker, except for "configs" has defaults.
+    forward_variables_from(invoker, "*", [ "configs" ])
+    configs += invoker.configs
+
+    # Edge overlays:
+    deps += [
+      "//chrome/browser:browser_process",
+      "//chrome/browser:edge_continuous_migration_utils",
+      "//chrome/browser:shell_integration",
+      "//chrome/browser/autofill",
+      "//chrome/browser/edge_import:edge_import_dependencies",
+      "//chrome/browser/importer/extensions:extenions_migrator",
+      "//chrome/browser/prefs:util",
+      "//chrome/browser/webdata_services",
+      "//components/browsing_data/core",
+      "//components/os_crypt/sync:test_support",
+    ]
+  }
+}
+
+# Separate lib from browser.lib due to code licensed under MPL 1.1/GPL 2.0/LGPL
+# 2.1
+template("edge_overlay_static_library_firefox_profile") {
+  source_set(target_name) {
+    # Forward all variables from the invoker, except for "configs" has defaults.
+    forward_variables_from(invoker, "*", [])
+    sources = [
+      "firefox_profile_lock.cc",
+      "firefox_profile_lock.h",
+    ]
+
+    deps = [ "//base" ]
+
+    if (is_win) {
+      sources += [ "firefox_profile_lock_win.cc" ]
+
+      deps += [ "//sandbox/policy:win_hook_util" ]
+    }
+
+    if (is_posix || is_fuchsia) {
+      sources += [ "firefox_profile_lock_posix.cc" ]
+    }
+  }
+}

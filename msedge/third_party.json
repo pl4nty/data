@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2245828,
+    "size": 2242249,
     "file_count": 185
   },
   {
@@ -71,17 +71,17 @@
   },
   {
     "name": "blink",
-    "size": 33553296,
+    "size": 33562589,
     "file_count": 4055
   },
   {
     "name": "boringssl",
-    "size": 78447,
+    "size": 78621,
     "file_count": 15
   },
   {
     "name": "breakpad",
-    "size": 17997539,
+    "size": 17998130,
     "file_count": 1006
   },
   {
@@ -141,8 +141,8 @@
   },
   {
     "name": "dawn",
-    "size": 162065798,
-    "file_count": 19131
+    "size": 162081813,
+    "file_count": 19135
   },
   {
     "name": "dbus",
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6988260,
+    "size": 6992099,
     "file_count": 67
   },
   {
@@ -161,8 +161,8 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7277127,
-    "file_count": 29
+    "size": 4449386,
+    "file_count": 27
   },
   {
     "name": "dom_distiller_js",
@@ -196,8 +196,8 @@
   },
   {
     "name": "eigen3",
-    "size": 17834323,
-    "file_count": 2054
+    "size": 17889388,
+    "file_count": 2058
   },
   {
     "name": "entity_extraction",
@@ -221,8 +221,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 365463,
-    "file_count": 98
+    "size": 425055,
+    "file_count": 121
   },
   {
     "name": "ffmpeg",
@@ -331,7 +331,7 @@
   },
   {
     "name": "inspector_protocol",
-    "size": 53158,
+    "size": 53220,
     "file_count": 12
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32097,
+    "size": 32490,
     "file_count": 3
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 408346250,
+    "size": 408361098,
     "file_count": 360
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1221952,
+    "size": 1222379,
     "file_count": 297
   },
   {
@@ -596,8 +596,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4550206,
-    "file_count": 623
+    "size": 4521003,
+    "file_count": 630
   },
   {
     "name": "perl",
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3490016,
+    "size": 3489874,
     "file_count": 1207
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 29038,
+    "size": 39114,
     "file_count": 6
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1517050,
+    "size": 1517478,
     "file_count": 23
   },
   {
@@ -771,12 +771,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2783770,
+    "size": 2784072,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7627738,
+    "size": 7635135,
     "file_count": 198
   },
   {
