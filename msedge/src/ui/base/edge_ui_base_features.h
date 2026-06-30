@@ -366,6 +366,7 @@ enum class SemanticTheme : int {
   kCompactNeutral = 1,  // MAI compact-neutral design system (default)
   kCompactThemed = 2,   // MAI compact-themed design system
   kDefault = 3,         // MAI default design system
+  kBebop = 4,           // MAI bebop design system
 };
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kMaiDesignSystem);
@@ -386,6 +387,10 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAICompactThemedDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDefaultDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kMAIBebopDesignSystem);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIBebopDesignSystemEnabled();
 
 // This is a helper util which gates the infra for runtime token injection in
 // html templates used in WebUI.
