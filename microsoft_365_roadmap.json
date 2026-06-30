@@ -1,5 +1,188 @@
 [
     {
+        "created": "2026-06-29T23:02:39",
+        "description": "Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.",
+        "id": 566702,
+        "locale": null,
+        "modified": "2026-06-29T23:02:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds"
+    },
+    {
+        "created": "2026-06-29T23:02:39",
+        "description": "Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.",
+        "id": 566701,
+        "locale": null,
+        "modified": "2026-06-29T23:02:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Edit your document with Copilot in PowerPoint in Government Clouds"
+    },
+    {
+        "created": "2026-06-29T23:02:39",
+        "description": "Remote meeting participants know who is in the room and better follow the conversation with new IntelliFrame people labels that identify in-room participants and provide a hover-over contact card using voice and face profiles on intelligent cameras and in the cloud. Available with Teams Rooms on Windows licensed for Teams Rooms Pro.",
+        "id": 566700,
+        "locale": null,
+        "modified": "2026-06-29T23:02:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: IntelliFrame people labels in Teams Rooms on Windows"
+    },
+    {
         "created": "2026-06-26T22:01:51",
         "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features.",
         "id": 566703,
@@ -968,7 +1151,7 @@
         "description": "Capture on Windows helps you bring conversations and ideas from meetings, brainstorming sessions, and everyday work into Copilot Notebooks. Capture audio, images, and notes in one experience, then let Copilot turn them into structured notes with key insights, decisions, and action items, in a Copilot Notebook of your choice",
         "id": 566322,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
@@ -983,6 +1166,9 @@
             },
             {
                 "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
             },
             {
                 "tagName": "General Availability"
@@ -1002,6 +1188,9 @@
             "products": [
                 {
                     "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
                 }
             ],
             "releasePhase": [
@@ -1010,7 +1199,7 @@
                 }
             ]
         },
-        "title": "OneNote: Multimodal Capture in Copilot Notebooks (Windows)"
+        "title": "OneNote: Multimodal capture in Copilot Notebooks (Windows)"
     },
     {
         "created": "2026-06-18T23:00:06",
@@ -1341,9 +1530,9 @@
         "description": "Users can now choose their preferred meeting language in Teams Rooms on Android. Select from up to 69 languages using the language button on the console. The room system must restart after a language is selected.",
         "id": 565425,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6511,10 +6700,10 @@
         "description": "Admins can map employee badge credentials (card or NFC) to user identities in Universal Print, enabling users to release secure print jobs at compatible printers with a simple tap\u2014no app, PIN, or sign-in required at the device. This enhances existing badge-based release with a standardized, cloud-based identity mapping model integrated with Microsoft 365.",
         "id": 561921,
         "locale": null,
-        "modified": "2026-05-15T22:00:42",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
-        "publicPreviewDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -7200,9 +7389,9 @@
         "description": "You can release your secure print jobs by scanning a QR code at any printer and access your print workflows from a browser on any device, all signed in with your Microsoft 365 account.",
         "id": 561922,
         "locale": null,
-        "modified": "2026-05-13T23:00:44",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7670,12 +7859,12 @@
         "description": "With this feature, users accessing search through the Teams search icon while within the SharePoint app in Teams (Viva Connections) will be able to receive search result scoped to SharePoint global search. Hitting enter on the search query will then open the SharePoint search page.",
         "id": 562015,
         "locale": null,
-        "modified": "2026-05-12T23:00:33",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10029,12 +10218,12 @@
         "description": "Supports connecting to remote MCP servers through the Work IQ endpoint, enabling agents to securely invoke external tools and services beyond the local runtime for richer, distributed agent orchestration.",
         "id": 559020,
         "locale": null,
-        "modified": "2026-05-05T23:00:02",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -10188,12 +10377,12 @@
         "description": "A refreshed design for the Microsoft 365 Copilot web and desktop app simplifies the user experience to drive engagement with Copilot. This includes updates to the chat home screen, chat response layout, and navigation pane.",
         "id": 561488,
         "locale": null,
-        "modified": "2026-05-04T23:00:45",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11706,9 +11895,9 @@
         "description": "Large file sharing in Teams today introduces blocking behavior, forcing users to wait for uploads to complete and disrupting real-time collaboration. To improve productivity and reduce perceived latency, we are introducing asynchronous file uploads. This allows users to continue sending messages while the file uploads in the background, enabling a more seamless and uninterrupted collaboration experience.\n",
         "id": 560813,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12658,9 +12847,9 @@
         "description": "A new Security Detection Report in the Teams admin center provides a centralized view of messaging security detections, including impersonation, malicious URLs, and weaponizable file types. Admins can review detection activity in one place and export detailed data to support investigation and response. This capability helps consolidate security signals for Teams messaging scenarios.",
         "id": 560702,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -12988,12 +13177,12 @@
         "description": "Introducing built-in Planner Agent chat with natural language Q&A, smart task discovery, and in-plan task management.",
         "id": 560532,
         "locale": null,
-        "modified": "2026-06-22T23:00:47",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24490,12 +24679,12 @@
         "description": "View and control live transcription during a meeting from a Teams\nRooms on Android device. The real-time transcript includes speaker names and\ntimestamps. You can adjust settings such as spoken language, translated\nlanguage, and whether both original and translated transcripts are displayed\nside by side on the front of room display. This feature is available in Teams Rooms Pro.",
         "id": 555234,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29282,12 +29471,12 @@
         "description": "Admins now have a one-stop portal for inventory, health monitoring, management, and analytics for both Windows and Android devices with the Pro Management portal. Management of all Android Teams rooms, panels, and phone devices are transitioning to this portal from the Teams admin center, enabling easy, consistent, and secure management of Teams devices across all operating systems and manufacturers.\n",
         "id": 555235,
         "locale": null,
-        "modified": "2026-02-06T23:00:02",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42641,12 +42830,12 @@
         "description": "Planner agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We\u2019re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time. Updated May 21, 2026: We previously launched in Preview and GA is expected in June. We apologize for any inconvenience. ",
         "id": 516576,
         "locale": null,
-        "modified": "2026-06-11T23:15:28",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42824,9 +43013,9 @@
         "description": "Custom templates let you create reusable, pre-designed layouts tailored to your organization\u2019s needs, ensuring consistency and saving time. They provide flexibility to standardize content while allowing easy customization for specific scenarios.",
         "id": 512431,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46200,12 +46389,12 @@
         "description": "Teams town hall producers can now restart a live event while the event is active in order to address technical issues that might arise during the execution of an instance. Whether technical, network, or other issue, this feature enables those managing the event to quickly resolve problems for attendees. This feature is designed to prevent the need for scheduling entirely new events.",
         "id": 523214,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106267,15 +106456,15 @@
     },
     {
         "created": "2024-07-23T23:30:44",
-        "description": "Tailor your policy conditions to run Trainable Classifiers for specific languages. By restricting the languages for classifiers, you can reduce false positives and bring precision to your policy conditions. Update your existing policies with ease for a more language-specific compliance approach. ",
+        "description": "Tailor your policy conditions to run Trainable Classifiers for specific languages. By restricting the languages for classifiers, you can reduce false positives and bring precision to your policy conditions. Update your existing policies with ease for a more language-specific compliance approach. Updated June 29, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. ",
         "id": 408533,
         "locale": null,
-        "modified": "2025-01-30T00:15:44",
+        "modified": "2026-06-29T23:02:39",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

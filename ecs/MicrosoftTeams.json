@@ -1128,6 +1128,9 @@
             "EnableUnifiedLiveChatAgent": true
         },
         "GroupCopilotRolloutFlags": {
+            "CdtRolloutFlags": {
+                "EnableRTAFOutgoing": true
+            },
             "CheckTranscriptStateBeforeIngestion": true,
             "EnableAMSImageDownloadForChatAgent": true,
             "EnableAdaptiveCardOnBotDialog": true,
@@ -1678,6 +1681,12 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableOnlineWorkflowEvaluation",
+                    "IsEnabled": true
+                }
+            ],
+            "TeamsMeetingAgendaSkill_BlockGoalFromTM": [
+                {
+                    "Flight": "TM.disableGoalDetection",
                     "IsEnabled": true
                 }
             ],
