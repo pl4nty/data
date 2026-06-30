@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Diagnose What's Missing in Microsoft 365 Copilot Output \u2013 Quick Reference Guide",
+    "downloadDescription": "Use this one-page Microsoft 365 Copilot cheat sheet to identify missing decisions, risks, context, specificity, and freshness before acting on AI-generated content.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "cheatsheet-diagnose-whats-missing-in-copilot-output.pdf",
+            "url": "https://download.microsoft.com/download/dd1b0a10-286e-42e4-a592-cb77588e376d/cheatsheet-diagnose-whats-missing-in-copilot-output.pdf",
+            "size": "1983644",
+            "version": "1",
+            "datePublished": "6/30/2026 2:30:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This downloadable quick-reference guide helps you diagnose gaps in Microsoft 365 Copilot output before acting on it, sharing it, or refining it further. The framework teaches five diagnostic checks:\n\n- Decisions\n- Risks\n- Context\n- Specificity\n- Freshness\n\nUse this cheat sheet when a Copilot response appears polished but may contain missing information, unclear outcomes, unsupported assumptions, or outdated details. It includes practical review questions, readiness checks, and example prompts that help uncover hidden gaps before they affect downstream work.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "cheatsheet-diagnose-whats-missing-in-copilot-output.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "6/30/2026",
+    "systemRequirementsSection": "- PDF reader capable of opening PDF documents\n- Microsoft 365 Copilot recommended for applying the prompts and techniques shown in the guide\n- Internet connection required to access Microsoft 365 Copilot features",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "1. Select the Download button to start the download.\n2. The download should start automatically. If prompted, select Save or Save this program to disk.\n3. Select Open file or find the file on your device and open it in your preferred PDF reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108714",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
