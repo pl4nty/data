@@ -115,6 +115,14 @@
             "isPmpOtpProvisioningEnabled": false
         },
         "healthSignalConfig": {
+            "appconnectivity": {
+                "isEnabled": true,
+                "isReleased": true
+            },
+            "calendarsynchealth": {
+                "isEnabled": true,
+                "isReleased": true
+            },
             "isEnabled": true,
             "teams": {
                 "authhealth": {

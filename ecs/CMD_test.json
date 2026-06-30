@@ -1151,8 +1151,6 @@
         "EnableSkipSetDeviceModel": true,
         "EnableSkuBlacklistForResize": true,
         "EnableSkuMigrationCloudPcForwarderDataStream": true,
-        "EnableSnapshotResetModeForPlcy": true,
-        "EnableSnapshotResetModeForUX": true,
         "EnableSnapshotServiceSupportInternalListRetention": true,
         "EnableSortImageByVersion": true,
         "EnableSpecificErrorCodeForCUA": true,
