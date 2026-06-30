@@ -357,6 +357,7 @@
             "PublishMessagesForAllAppPolicyChanges": true,
             "SCGWUseBranchDescriptorCache": true,
             "SCGWUseEGATsForAppsTargeting": true,
+            "SCGWUseHTTPSForAppContentDownload": true,
             "SLDMEnableEGATsCache": true,
             "UseEGATsForDPAs": true,
             "enableCredentialProviderProperty": true
@@ -423,6 +424,7 @@
             "NoFallback_OnAllException": true,
             "RefreshPCWithDifferentAADDeviceId": true,
             "RequireIsManagedForGraphDeviceIsCompliantPatch": true,
+            "SearchCompliancePartnerTenantItem": true,
             "SkipMicrosoftSenseAADPatchForPartnerDevice": true
         }
     },

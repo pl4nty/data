@@ -47459,79 +47459,6 @@
         "title": "SharePoint: M365 Agent Access Insights for SharePoint and OneDrive sites "
     },
     {
-        "created": "2025-10-30T16:15:04",
-        "description": "Researcher with Computer Use can securely interact with public, gated, and interactive web content using a virtual computer\u2014enabling you to uncover deeper insights and generate richer reports all grounded in your work data and the web. We have decided not to move forward with this. We apologize for the inconvenience.",
-        "id": 511796,
-        "locale": null,
-        "modified": "2026-06-25T23:15:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "October CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Computer Use in Researcher"
-    },
-    {
         "created": "2025-10-29T23:00:59",
         "description": "When users fill in an Address on a form, they will be prompted to choose whether to save it for future Autofill suggestions. This enhancement ensures Autofill data is saved intentionally by users and reduces unwanted entries as part of their Autofill suggestion.",
         "id": 522537,
@@ -75791,55 +75718,6 @@
         "title": "Microsoft Teams: Apply partial settings for Android devices using configuration profiles in the Teams admin center"
     },
     {
-        "created": "2025-06-03T23:15:26",
-        "description": "Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can use the EdgeHistoryAISearchEnabled policy to disable this feature. Updated June 25, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. ",
-        "id": 495834,
-        "locale": null,
-        "modified": "2026-06-25T23:15:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: AI-powered History search"
-    },
-    {
         "created": "2025-06-02T23:15:20",
         "description": "You can now interact with your favorite apps directly from Teams chat and channels compose box using slash commands.  Type / and start interacting with Apps and Agents, invoke workflows and more. ",
         "id": 495002,
@@ -83390,67 +83268,6 @@
     },
     {
         "created": "2025-04-21T23:00:33",
-        "description": "You can now switch between accounts on the Copilot tab. Simply swipe left to open the the left-navigation and select from the list of supported accounts. Updated June 9, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. ",
-        "id": 490213,
-        "locale": null,
-        "modified": "2026-06-09T23:15:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Account Switcher for Copilot Tab"
-    },
-    {
-        "created": "2025-04-21T23:00:33",
         "description": "The site header and footer are key elements of the SharePoint user interface, playing a vital role in navigation, brand expression, and overall user experience. To better align with today\u2019s design standards and customer expectations, we\u2019re introducing a full visual upgrade of the SharePoint site header and footer. This upgrade delivers a more cohesive and contemporary look while offering new preset layouts and enhanced customization options. Organizations will be able to tailor these elements to better reflect their brand identity, improve usability, and create a more engaging, connected experience for employees.",
         "id": 489225,
         "locale": null,
@@ -86432,67 +86249,6 @@
             ]
         },
         "title": "Microsoft Teams: Meeting option suggestions in classic Outlook for Windows"
-    },
-    {
-        "created": "2025-04-09T00:30:13",
-        "description": "Viva Insights Copilot Dashboard will start showing Microsoft 365 Copilot Chat prompt category metrics within Copilot Chat (work) insights. #copilotcontrolsystem Updated June 9, 2026: Public preview is now available. We have incorporated initial customer feedback and are continuing to evaluate additional enhancements to the prompt categories, including potential updates to the category set and underlying experience. Based on this ongoing evaluation, we will share further updates regarding future release plans, including General Availability, at a later date. Thank you for your patience.",
-        "id": 486698,
-        "locale": null,
-        "modified": "2026-06-09T23:15:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Copilot Analytics - Prompt category metrics for Microsoft 365 Copilot Chat"
     },
     {
         "created": "2025-04-09T00:30:13",
@@ -96000,55 +95756,6 @@
             ]
         },
         "title": "SharePoint: AI citations analytics for documents and pages"
-    },
-    {
-        "created": "2025-02-12T00:00:39",
-        "description": "Loop workspaces and the full Loop app experience are available to Microsoft 365 GCC customers at loop.cloud.microsoft. Updated June 16, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. ",
-        "id": 481154,
-        "locale": null,
-        "modified": "2026-06-16T23:00:10",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Microsoft Loop - Loop workspaces for Microsoft 365 GCC"
     },
     {
         "created": "2025-02-11T00:15:15",
