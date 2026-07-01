@@ -1186,6 +1186,7 @@
             "EnableTaskManagementOpenNotes": true,
             "EnableTrackingActiveCallRoster": true,
             "EnableUsingBotNameFromContext": true,
+            "HideRequestAgendaButton": true,
             "LiftTriggerInterval": 100,
             "RTAFReadTranscriptFromCombinedBot": true,
             "ShouldControlAlTrigger": true,

@@ -350,6 +350,11 @@
                             "toc_title": "agentic"
                         },
                         {
+                            "href": "a_z_names_terms/a/agentic-workforce",
+                            "permissioned-type": "private",
+                            "toc_title": "agentic workforce"
+                        },
+                        {
                             "href": "a_z_names_terms/a/aggregate-aggregation",
                             "permissioned-type": "private",
                             "toc_title": "aggregate, aggregation"
@@ -1395,6 +1400,11 @@
                             "toc_title": "Azure IoT Central"
                         },
                         {
+                            "href": "a_z_names_terms/a/azure-iot-hub-device-provisioning-service",
+                            "permissioned-type": "private",
+                            "toc_title": "Azure IoT Hub Device Provisioning Service (DPS)"
+                        },
+                        {
                             "href": "a_z_names_terms/a/azure-iot-operations",
                             "permissioned-type": "private",
                             "toc_title": "Azure IoT Operations"
@@ -1683,11 +1693,6 @@
                             "href": "a_z_names_terms/a/azure-promotional-credit",
                             "permissioned-type": "private",
                             "toc_title": "Azure promotional credit"
-                        },
-                        {
-                            "href": "a_z_names_terms/a/azure-public-traffic-manager",
-                            "permissioned-type": "private",
-                            "toc_title": "Azure Public Traffic Manager"
                         },
                         {
                             "href": "a_z_names_terms/a/azure-purview",
@@ -2072,7 +2077,7 @@
                         {
                             "href": "a_z_names_terms/b/blueprint-blueprint-agent",
                             "permissioned-type": "private",
-                            "toc_title": "blueprint, blueprint agent"
+                            "toc_title": "blueprint"
                         },
                         {
                             "href": "a_z_names_terms/b/bluetooth-accessories",
@@ -2755,6 +2760,11 @@
                             "toc_title": "connect vs. import"
                         },
                         {
+                            "href": "a_z_names_terms/c/connected-platform",
+                            "permissioned-type": "private",
+                            "toc_title": "connected platform"
+                        },
+                        {
                             "href": "a_z_names_terms/c/connected-spaces",
                             "permissioned-type": "private",
                             "toc_title": "Connected Spaces"
@@ -2838,6 +2848,11 @@
                             "href": "a_z_names_terms/c/context",
                             "permissioned-type": "private",
                             "toc_title": "context"
+                        },
+                        {
+                            "href": "a_z_names_terms/c/context-iq",
+                            "permissioned-type": "private",
+                            "toc_title": "Context IQ"
                         },
                         {
                             "href": "a_z_names_terms/c/continue",
@@ -8425,6 +8440,11 @@
                             "toc_title": "region"
                         },
                         {
+                            "href": "a_z_names_terms/r/registry-sync",
+                            "permissioned-type": "private",
+                            "toc_title": "registry sync"
+                        },
+                        {
                             "href": "a_z_names_terms/r/reimage",
                             "permissioned-type": "private",
                             "toc_title": "reimage"
@@ -8513,6 +8533,11 @@
                             "href": "a_z_names_terms/r/reported-item",
                             "permissioned-type": "private",
                             "toc_title": "reported item"
+                        },
+                        {
+                            "href": "a_z_names_terms/r/repository-repo",
+                            "permissioned-type": "private",
+                            "toc_title": "repository, repo"
                         },
                         {
                             "href": "a_z_names_terms/r/reservation",
@@ -8970,6 +8995,11 @@
                             "toc_title": "SHA-256"
                         },
                         {
+                            "href": "a_z_names_terms/s/shadow-ai",
+                            "permissioned-type": "private",
+                            "toc_title": "shadow AI"
+                        },
+                        {
                             "href": "a_z_names_terms/s/shard-sharding",
                             "permissioned-type": "private",
                             "toc_title": "shard, sharding"
@@ -9398,6 +9428,11 @@
                             "href": "a_z_names_terms/s/static-web-apps",
                             "permissioned-type": "private",
                             "toc_title": "Static Web Apps"
+                        },
+                        {
+                            "href": "a_z_names_terms/s/step-vs-sub-action",
+                            "permissioned-type": "private",
+                            "toc_title": "step vs. sub-action"
                         },
                         {
                             "href": "a_z_names_terms/s/sticker-creator",
@@ -11376,29 +11411,9 @@
             "toc_title": "UX content design essentials"
         },
         {
-            "href": "how-to-use-this-guide",
-            "permissioned-type": "private",
-            "toc_title": "How to use this guide"
-        },
-        {
-            "href": "abbreviations-and-acronyms",
-            "permissioned-type": "private",
-            "toc_title": "Abbreviations and acronyms"
-        },
-        {
-            "href": "accessibility",
-            "permissioned-type": "private",
-            "toc_title": "Accessibility"
-        },
-        {
             "href": "art-and-video",
             "permissioned-type": "private",
             "toc_title": "Art and video"
-        },
-        {
-            "href": "capitalization",
-            "permissioned-type": "private",
-            "toc_title": "Capitalization"
         },
         {
             "children": [
@@ -11419,11 +11434,6 @@
                 }
             ],
             "toc_title": "Content design for UX"
-        },
-        {
-            "href": "global-and-localization-considerations",
-            "permissioned-type": "private",
-            "toc_title": "Global and localization considerations"
         },
         {
             "children": [
@@ -11459,11 +11469,6 @@
                 }
             ],
             "toc_title": "Link guidelines"
-        },
-        {
-            "href": "phone-numbers",
-            "permissioned-type": "private",
-            "toc_title": "Phone numbers"
         },
         {
             "children": [
@@ -14687,7 +14692,7 @@
     "metadata": {
         "authorize_path": "~/authorize.md",
         "breadcrumb_path": "/product-style-guide-msft-internal/breadcrumb/toc.json",
-        "count_of_node_with_href": 2803,
+        "count_of_node_with_href": 2804,
         "feedback_system": "Standard",
         "hideScope": true,
         "open_to_public_contributors": false,

@@ -262,6 +262,7 @@
         "azureml://registries/azureml-openai-oss/models/gpt-oss-20b",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-6",
+        "azureml://registries/azureml-anthropic/models/claude-sonnet-5",
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-5",

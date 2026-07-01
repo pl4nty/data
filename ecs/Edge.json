@@ -82,6 +82,11 @@
                 "msPdfCopilotSummarizeNudge"
             ]
         },
+        "DisablingServiceExperimentation": {
+            "disableFeatures": [
+                "msUXConfigService"
+            ]
+        },
         "EdgeOnRampShowVersionWhatsNew": {
             "enableFeatures": [
                 "msEdgeOnRampShowWhatsNew"
