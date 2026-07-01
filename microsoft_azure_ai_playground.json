@@ -246,6 +246,7 @@
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",
+        "azureml://registries/azureml-moonshotai/models/kimi-k2.7-code",
         "azureml://registries/azure-mai/models/mai-thinking-1",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
@@ -404,6 +405,7 @@
         "kimi-k2-thinking",
         "kimi-k2.5",
         "kimi-k2.6",
+        "kimi-k2.7-code",
         "mai-thinking-1"
     ],
     "supportedModels": {
@@ -524,6 +526,7 @@
             "kimi-k2-thinking",
             "kimi-k2.5",
             "kimi-k2.6",
+            "kimi-k2.7-code",
             "mai-thinking-1"
         ],
         "supportedCompletionModels": [
