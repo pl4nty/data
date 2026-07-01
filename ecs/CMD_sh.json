@@ -1444,6 +1444,8 @@
         "UseArrayContainsForANCInUse": true,
         "UseCloudPCV2ContainerInShadow": true,
         "UseCloudPCV2ContainerResult": true,
+        "UseCmdAgentPluginForMoveOnVmAgentUnavailable": true,
+        "UseCmdAgentPluginForResizeOnVmAgentUnavailable": true,
         "UseCopilotPlusWallpaper": true,
         "UseNewApexReclaimFlow": true,
         "ValidateImageSizeForFrontline": true,

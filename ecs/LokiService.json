@@ -313,7 +313,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260614.6.0",
+        "LpcVersion": "1.20260621.12.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1249,7 +1249,7 @@
             "profile": 20
         },
         "LokiThrottlingTimeWindow": 10,
-        "LpcResourceUrl_BaseCdnUrl": "https://res-1.cdn.office.net",
+        "LpcResourceUrl_BaseCdnUrl": "https://res.cdn.office.net",
         "LpcResourceUrl_CdnContainerName": "midgard",
         "LpcResourceUrl_MaxReactMajorVersion": 18,
         "LpcResourceUrl_MinReactMajorVersion": 18,
