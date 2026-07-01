@@ -103,47 +103,52 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
                     if isnull(l_0_8) then
                       l_0_33.error = "Error: Remote Data is empty"
                       l_0_33.ip = "0.0.0.0"
+                      l_0_33.p1 = (this_sigattrlog[1]).utf8p1
                       l_0_33.p2 = (this_sigattrlog[1]).utf8p2
+                      local l_0_34, l_0_35 = pcall(getBmInfo)
+                      if l_0_34 and l_0_35 then
+                        l_0_33.BmInfo = l_0_35
+                      end
                       l_0_8 = l_0_33
                     elseif l_0_8.determination == l_0_1 then
                       l_0_8.reason = "CleanDetermination"
                     end
                     l_0_7 = mp.CLEAN
-                    local l_0_34 = SafeGetUrlReputation
-                    local l_0_35 = {}
-                    -- DECOMPILER ERROR at PC215: No list found for R10 , SetList fails
+                    local l_0_36 = SafeGetUrlReputation
+                    local l_0_37 = {}
+                    -- DECOMPILER ERROR at PC227: No list found for R10 , SetList fails
 
                     do
                       do
-                        local l_0_36 = {}
-                        l_0_36.SIG_CONTEXT = "BM"
-                        l_0_36.CONTEXT_SOURCE = "GenRansomRemoteFWReport"
-                        l_0_36.TAG = "NOLOOKUP"
-                        l_0_36.data = safeJsonSerialize(l_0_8)
-                        l_0_34 = l_0_34(l_0_35, l_0_36, false, 3000, false)
-                        if l_0_34 then
-                          l_0_35 = l_0_34.error
-                          if l_0_35 == 3 then
+                        local l_0_38 = {}
+                        l_0_38.SIG_CONTEXT = "BM"
+                        l_0_38.CONTEXT_SOURCE = "GenRansomRemoteFWReport"
+                        l_0_38.TAG = "NOLOOKUP"
+                        l_0_38.data = safeJsonSerialize(l_0_8)
+                        l_0_36 = l_0_36(l_0_37, l_0_38, false, 3000, false)
+                        if l_0_36 then
+                          l_0_37 = l_0_36.error
+                          if l_0_37 == 3 then
                             l_0_8.CRReportError = "Failed the first attempt"
-                            l_0_35 = SafeGetUrlReputation
-                            local l_0_37 = {}
-                            l_0_37.SIG_CONTEXT = "BM"
-                            l_0_37.CONTEXT_SOURCE = "GenRansomRemoteFWReport"
-                            l_0_37.TAG = "NOLOOKUP"
-                            l_0_37.data = safeJsonSerialize(l_0_8)
-                            l_0_35, l_0_36 = l_0_35(l_0_36, l_0_37, false, 3000, false), {l_0_8.ip}
-                            l_0_34 = l_0_35
+                            l_0_37 = SafeGetUrlReputation
+                            local l_0_39 = {}
+                            l_0_39.SIG_CONTEXT = "BM"
+                            l_0_39.CONTEXT_SOURCE = "GenRansomRemoteFWReport"
+                            l_0_39.TAG = "NOLOOKUP"
+                            l_0_39.data = safeJsonSerialize(l_0_8)
+                            l_0_37, l_0_38 = l_0_37(l_0_38, l_0_39, false, 3000, false), {l_0_8.ip}
+                            l_0_36 = l_0_37
                           end
                         end
-                        l_0_35 = mp
-                        l_0_35 = l_0_35.INFECTED
-                        if l_0_7 == l_0_35 then
-                          l_0_35 = mp
-                          l_0_35 = l_0_35.INFECTED
-                          return l_0_35
+                        l_0_37 = mp
+                        l_0_37 = l_0_37.INFECTED
+                        if l_0_7 == l_0_37 then
+                          l_0_37 = mp
+                          l_0_37 = l_0_37.INFECTED
+                          return l_0_37
                         end
                         do return mp.CLEAN end
-                        -- DECOMPILER ERROR: 16 unprocessed JMP targets
+                        -- DECOMPILER ERROR: 17 unprocessed JMP targets
                       end
                     end
                   end
