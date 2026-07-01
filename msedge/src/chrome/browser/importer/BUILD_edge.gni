@@ -50,8 +50,10 @@ template("edge_overlay_source_set_impl") {
     deps += [
       "//chrome/browser:browser_process",
       "//chrome/browser:edge_continuous_migration_utils",
+      "//chrome/browser:edge_instrumentation_prefs",
       "//chrome/browser:edge_migration_features",
       "//chrome/browser:edge_onramp_network_primary_browser_service",
+      "//chrome/browser:first_run",
       "//chrome/browser/autofill",
       "//chrome/browser/content_settings:content_settings_factory",
       "//chrome/browser/edge_lightning",
@@ -77,6 +79,8 @@ template("edge_overlay_source_set_impl") {
     ]
     if (is_msedge_branded && is_win) {
       deps += [
+        "//chrome/browser:edge_first_run_import_manager_win",
+        "//chrome/browser:edge_importer_auto_ie_sites_win",
         "//chrome/browser/edge_continuous_migration",
         "//chrome/browser/edge_continuous_migration:edge_continuous_migration_importer",
         "//chrome/browser/importer/edge_china_browsers:china_importer_utils",

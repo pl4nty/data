@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2242249,
+    "size": 2247780,
     "file_count": 185
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 12943705,
+    "size": 12943035,
     "file_count": 163
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 16003383,
+    "size": 16003511,
     "file_count": 846
   },
   {
@@ -71,17 +71,17 @@
   },
   {
     "name": "blink",
-    "size": 33572364,
-    "file_count": 4056
+    "size": 33583484,
+    "file_count": 4055
   },
   {
     "name": "boringssl",
-    "size": 78621,
+    "size": 78620,
     "file_count": 15
   },
   {
     "name": "breakpad",
-    "size": 17998130,
+    "size": 17999230,
     "file_count": 1006
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "dawn",
-    "size": 162081813,
+    "size": 162082069,
     "file_count": 19135
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 6999529,
+    "size": 6999628,
     "file_count": 68
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32490,
+    "size": 32530,
     "file_count": 3
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "name": "libwebp",
-    "size": 111589,
+    "size": 115818,
     "file_count": 12
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19828715,
+    "size": 19800555,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4523423,
+    "size": 4529923,
     "file_count": 630
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "name": "skia",
-    "size": 3489874,
+    "size": 3489941,
     "file_count": 1207
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7636334,
+    "size": 7638251,
     "file_count": 198
   },
   {
