@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Validate Microsoft 365 Copilot Output Before You Act on It \u2013 Quick Reference Guide",
+    "downloadDescription": "Use this one-page Microsoft 365 Copilot cheat sheet to validate AI-generated output before acting on it. Learn how to assess alignment, verification, completeness, and resilience to reduce mistakes and improve confidence in AI-assisted work.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "cheatsheet-validate-copilot-output-before-you-act-on-it.pdf",
+            "url": "https://download.microsoft.com/download/1ab55ce2-59f3-44b5-a6ef-17ccabd2e2a8/cheatsheet-validate-copilot-output-before-you-act-on-it.pdf",
+            "size": "2019675",
+            "version": "1",
+            "datePublished": "7/1/2026 1:59:34 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This downloadable quick-reference guide helps validate Microsoft 365 Copilot output before it is shared, relied upon, or used in decision-making. The framework teaches four validation checks:<br/><br/><ul><li><b>Aligned</b></li><li><b>Verified</b></li><li><b>Complete</b></li><li><b>Resilient</b></li></ul>Use this cheat sheet after Copilot generates output and before downstream actions occur. The guide includes practical prompts, verification techniques, and readiness checks that help identify discrepancies, unsupported claims, missing context, and hidden assumptions so users can proceed with greater confidence and accountability.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "cheatsheet-validate-copilot-output-before-you-act-on-it.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/1/2026",
+    "systemRequirementsSection": "<ul>\n<li>PDF reader capable of opening PDF documents</li>\n<li>Microsoft 365 Copilot recommended for applying the prompts and techniques shown in the guide</li>\n<li>Internet connection required to access Microsoft 365 Copilot features</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\n<li>Select the <b>Download</b> button to start the download.</li>\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\n<li>Select <b>Open file</b> or find the file on your device and open it in your preferred PDF reader.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft 365 Copilot Learning Cheat Sheet \u2013 Diagnose What's Missing in Copilot Output",
+            "url": "https://www.microsoft.com/download/details.aspx?id=108714"
+        },
+        {
+            "title": "microsoft 365 Copilot Learning Cheat Sheet \u2013 Iterate on Copilot Output to Get Better Results",
+            "url": "https://www.microsoft.com/download/details.aspx?id=108717"
+        },
+        {
+            "title": "dlC: Microsoft 365 Copilot Learning Cheat Sheet \u2013 Evaluate Microsoft 365 Copilot Output for Clarity, Accuracy, Tone, and Coverage",
+            "url": "https://www.microsoft.com/download/details.aspx?id=108716"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108719",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
