@@ -15,8 +15,8 @@ template("edge_overlay_source_set_importer") {
     forward_variables_from(invoker, "*", [])
 
     deps = [
-      "//chrome/browser:history",
       "//chrome/browser:importer_migration_clearner",
+      "//chrome/browser/history",
       "//chrome/browser/profiles:profile",
       "//components/autofill/core/browser",
       "//components/content_settings/core/browser",
