@@ -163,7 +163,7 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/v2.0/hrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
       <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
@@ -2435,6 +2435,7 @@
     <o:token o:name="SharepointMyFilesHostFormat">{tenant}files{host}</o:token>
     <o:token o:name="SafelinksHostnames">safelinks.protection.com;safelinks.protection.office365.us;safelinks.protection.outlook.com;safelinks.protection.outlook.cn;safelinks.protection.outlook.de;safelinks.o365filtering-int.com</o:token>
     <o:token o:name="SafelinksSpoLofHostnames">sharepoint-df.com;sharepoint.com;sharepoint.de;sharepoint.cn;sharepoint-mil.us;sharepoint.us</o:token>
+    <o:token o:name="OneDriveConsumerHostnames">onedrive.cloud.microsoft</o:token>
     <o:token o:name="SafelinksGetParams">url</o:token>
     <o:token o:name="SafelinksDropParams">data;sdata;reserved</o:token>
     <o:token o:name="SafelinksSpoLofDropParams">xsdata;sdata;ovuser;clickParams</o:token>
@@ -2645,7 +2646,7 @@
     <o:token o:name="ChatOverlayFeatureEnabled">true</o:token>
     <o:token o:name="PowerPointWRSAppId">04736c86-8245-4dcb-a0c9-ecc3fdf6083d</o:token>
     <o:token o:name="AllowAugLoopServiceUrlOverride">true</o:token>
-    <o:token o:name="ECOESpecialAddinMonitoringList">wa200009404;wa200010001;wa200010725;29673e3c-d826-4f00-92ee-162334a52b1a;wa200010453;wa200009152</o:token>
+    <o:token o:name="ECOESpecialAddinMonitoringList">wa200009404;wa200010001;wa200010725;29673e3c-d826-4f00-92ee-162334a52b1a;wa200010453;wa200009152;wa200010215;wa200008646</o:token>
     <o:token o:name="NewOutlookCloudId">1</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>

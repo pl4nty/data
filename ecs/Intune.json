@@ -539,6 +539,7 @@
             "EnableBlockAppleRenewalForBlockedUser": true,
             "EnableCorrectAppleRenewalProfileType": true,
             "EnableSendingAttestStatusToReporting": true,
+            "EnableZstdCompression": true,
             "MMPCDeviceRecoveryHotfixRollout": true,
             "SkipAppInvCollectionInProcessPhase": true,
             "SkipMultipleAppInvCollectionPerDay": true
@@ -667,7 +668,6 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
-            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
