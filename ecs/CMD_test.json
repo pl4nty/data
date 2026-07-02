@@ -884,6 +884,7 @@
         "EnableOptionalDRNameOnUnavaiableReport": true,
         "EnableOsResetDisableEnforcement": true,
         "EnableOverrideExistingSnapshotOnPersist": true,
+        "EnableOverwriteLifecyclePolicyForFldArm": true,
         "EnablePAMOConnectivityStatusColumn": true,
         "EnablePAMOConnectivityStatusColumnForENT": true,
         "EnablePAMOConnectivityStatusColumnForFLD": true,
@@ -962,6 +963,7 @@
         "EnablePreCheckIfTrustCertPublisher": true,
         "EnablePreCheckIfTrustCertPublisherForRDAgent": true,
         "EnablePreCheckIfTrustCertPublisherForSetIntuneDeviceModel": true,
+        "EnablePrecreateSessionHost": true,
         "EnablePredictedMaintenanceWindowInFleetManagement": true,
         "EnablePreferredRegions": true,
         "EnablePremiumDRForPlcy": true,
@@ -1775,6 +1777,9 @@
     },
     "MMD": {
         "TenantSettingApi": true
+    },
+    "Segmentation": {
+        "FrontierAdminAudience": "None"
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,

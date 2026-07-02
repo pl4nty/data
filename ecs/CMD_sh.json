@@ -493,6 +493,7 @@
         "EnableCrossRegionFakeFailback": false,
         "EnableCrossRegionForceFailback": true,
         "EnableCrossRegionScheduleMigration": true,
+        "EnableCseParameterValidation": true,
         "EnableCustomImageForwarderDataStream": true,
         "EnableCustomizedBatchSizer": true,
         "EnableDBAutoSplit": true,
@@ -717,6 +718,7 @@
         "EnableLatestRDAgentVersion": true,
         "EnableLicenseStatusColumn": true,
         "EnableLicenseTypeCheckForGalleryImage": true,
+        "EnableLifecyclePolicyForFLD": true,
         "EnableLighthouseOptimization": true,
         "EnableLoadManualSnapshotFromCDP": true,
         "EnableLocalAdminDesiredState": true,
@@ -780,6 +782,7 @@
         "EnableOptimizedDispatch": true,
         "EnableOptionalDRNameOnUnavaiableReport": true,
         "EnableOverrideExistingSnapshotOnPersist": true,
+        "EnableOverwriteLifecyclePolicyForFldArm": true,
         "EnablePAMOConnectivityStatusColumn": true,
         "EnablePAMOConnectivityStatusColumnForENT": true,
         "EnablePAMOConnectivityStatusColumnForFLD": true,
@@ -1078,6 +1081,7 @@
         "EnableUpdateAllocatedUserUsage": true,
         "EnableUpdateDiskEncryptionAsyncWithSDK": true,
         "EnableUpdateDiskSkuRestore": true,
+        "EnableUploadFileDestinationAllowList": true,
         "EnableUploadImageFromACG": "true",
         "EnableUploadingInsiderPreviewVersion": true,
         "EnableUseRegExeForScheduledTask": true,
@@ -1549,9 +1553,6 @@
     },
     "MMD": {
         "TenantSettingApi": true
-    },
-    "Segmentation": {
-        "FrontierAdminAudience": "None"
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,

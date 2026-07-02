@@ -479,6 +479,7 @@
             "c27d9064-898a-49e6-a302-45537791c332"
         ],
         "DecoratedProfileLookupBatchSize": 10,
+        "DisableBizchatCreateUploadSession": true,
         "DisableDisplayNameInConversationQuery": true,
         "DisableOutboundCancellationOnConfigurationCalls": true,
         "DisablePrefetchForGroupPersona": true,
