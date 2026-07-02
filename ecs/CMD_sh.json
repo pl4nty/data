@@ -1354,7 +1354,6 @@
         "RASEnableFailoverInProgressStatus": false,
         "RASEnablePatchCloudPcPowerState": true,
         "RASEnablePatchWorkspacePowerState": true,
-        "RASEnableSetStatusByDeviceIdCheckWhenRecoverFailed": true,
         "RASExposeComputeSkuToFlexAndVSB": true,
         "RASHandleAbuseTenant": true,
         "RMSAlwaysTurnOnPaging": true,

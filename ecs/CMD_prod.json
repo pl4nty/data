@@ -982,7 +982,6 @@
         "OnlyAssignAppGroupForPremiumDRFailback": true,
         "Product_Logo": "new-product-logo",
         "Product_Name": "Windows App",
-        "RASEnableSetStatusByDeviceIdCheckWhenRecoverFailed": true,
         "RASExposeComputeSkuToFlexAndVSB": true,
         "RASHandleAbuseTenant": true,
         "RMSCarryNewPolicyIdForReprovisionEvent": true,
