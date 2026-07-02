@@ -21,7 +21,7 @@ if l_0_2 == nil then
 end
 for l_0_6,l_0_7 in ipairs(l_0_2) do
   if (string.find)(l_0_7, "BM:ScriptInZipUserExecution", 1, true) ~= nil then
-    (mp.set_mpattribute)(l_0_7)
+    (mp.set_mpattribute)("Lua:" .. l_0_7)
   end
 end
 return mp.CLEAN
