@@ -69678,73 +69678,6 @@
     },
     {
         "created": "2025-07-21T23:15:32",
-        "description": "Application Control for Business in Intune has built-in controls and XML upload of WDAC policies and now supports targeting Managed Installer to specific groups instead of the entire tenant. ",
-        "id": 498896,
-        "locale": null,
-        "modified": "2025-09-02T23:15:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Intune"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Intune"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Intune: Application Control for Business"
-    },
-    {
-        "created": "2025-07-21T23:15:32",
         "description": "Select the Activity tab within the Copilot summary at the top of a document for a summary of recent comments and changes. Choose a time window of 3 days, 1 week, or 2 weeks.",
         "id": 497941,
         "locale": null,
@@ -83198,61 +83131,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Search"
-    },
-    {
-        "created": "2025-04-24T16:45:41",
-        "description": "Use Copilot with PDF files for summaries and key insights.",
-        "id": 485725,
-        "locale": null,
-        "modified": "2025-09-02T23:15:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Use Copilot in PDFs within the Microsoft 365 Copilot mobile app"
     },
     {
         "created": "2025-04-23T23:15:57",
