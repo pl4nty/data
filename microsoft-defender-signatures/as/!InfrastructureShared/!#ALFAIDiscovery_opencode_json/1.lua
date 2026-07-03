@@ -7,7 +7,7 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Lua:FnameAttr!opencode.json") then
+if not (mp.get_mpattribute)("Lua:FnameAttr!opencode.json") and not (mp.get_mpattribute)("Lua:FnameAttr!opencode.jsonc") then
   return mp.CLEAN
 end
 local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
@@ -44,7 +44,7 @@ l_0_9.gateway = nil
 if not isnull(l_0_8.permission) and type(l_0_8.permission) == "table" then
   l_0_9.permissions = {}
   for l_0_13,l_0_14 in pairs(l_0_8.permission) do
-    -- DECOMPILER ERROR at PC122: Confused about usage of register: R15 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC128: Confused about usage of register: R15 in 'UnsetPending'
 
     if type(l_0_13) == "string" then
       if type(l_0_14) == "string" then
@@ -57,7 +57,7 @@ if not isnull(l_0_8.permission) and type(l_0_8.permission) == "table" then
               l_0_15[l_0_19] = l_0_20
             end
           end
-          -- DECOMPILER ERROR at PC148: Confused about usage of register: R16 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC154: Confused about usage of register: R16 in 'UnsetPending'
 
           ;
           (l_0_9.permissions)[l_0_13] = l_0_15
@@ -89,19 +89,19 @@ do
                 end
                 ;
                 (table.insert)(l_0_9.providers, l_0_26)
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC235: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC241: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
