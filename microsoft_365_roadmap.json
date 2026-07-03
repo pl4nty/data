@@ -1,5 +1,176 @@
 [
     {
+        "created": "2026-07-02T23:12:48",
+        "description": "Outlook contacts become available system-wide (caller ID, Phone, Messages, Siri) using Apple's Contact Provider framework \u2014 without full address-book access or copying contacts onto your device.",
+        "id": 567006,
+        "locale": null,
+        "modified": "2026-07-02T23:12:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Improvements to Save Contacts on iPhone and iPad"
+    },
+    {
+        "created": "2026-07-02T23:12:48",
+        "description": "By blocking the use of maker's credentials by AI agents, admins can increase the security and compliance of agents in their organizations:\n- Prevent unauthorized access to sensitive systems or data that the maker's credentials might have access to.\n- Help organizations comply with data protection regulations (such as GDPR or HIPAA) by ensuring only authorized identities are used for data access.\n- Enable IT and security teams to enforce organizational policies around identity and access management.\n- Increase trust among stakeholders and IT departments, making it easier to adopt AI agents at scale.",
+        "id": 566997,
+        "locale": null,
+        "modified": "2026-07-02T23:12:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "September CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Block the use of maker-provided credentials for authentication"
+    },
+    {
+        "created": "2026-07-02T23:12:48",
+        "description": "The Task Details Sidecar lets you view and edit task details in a side pane while keeping your Board, Grid, or My Tasks view visible. Update tasks without losing context or switching back and forth from modal dialogs.",
+        "id": 566866,
+        "locale": null,
+        "modified": "2026-07-02T23:12:48",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Task Details Sidecar experience"
+    },
+    {
         "created": "2026-07-01T23:03:18",
         "description": "The agent node lets you embed reasoning directly into your workflow. This means fewer manual handoffs, faster processing times, and workflows that can handle nuanced decisions without additional development effort, helping teams automate more of their end-to-end processes and reduce operational overhead.",
         "id": 566998,
@@ -1034,9 +1205,9 @@
         "description": "Remote meeting participants know who is in the room and better follow the conversation with new IntelliFrame people labels that identify in-room participants and provide a hover-over contact card using voice and face profiles on intelligent cameras and in the cloud. Available with Teams Rooms on Windows licensed for Teams Rooms Pro.",
         "id": 566700,
         "locale": null,
-        "modified": "2026-06-30T22:57:58",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2597,9 +2768,9 @@
         "description": "Teams Rooms on Windows users can now benefit from next generation IntelliFrame features on certified AI-capable cameras with on-device video processing. With IntelliFrame\u2019s expanded AI data channel, participants experience faster active speaker framing, people recognition and labels, and more responsive meeting views\u2014even when network conditions are limited. These capabilities are available with Teams Rooms Pro.",
         "id": 564969,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7498,9 +7669,9 @@
         "description": "Request feedback from Copilot on your Page by selecting \"Suggested edits\" in the Copilot Shortcuts menu. Copilot will analyze the content on your page and provide actionable suggestions about what you can change to improve clarity and quality of your written content. You can then apply suggestions directly to the page.",
         "id": 562351,
         "locale": null,
-        "modified": "2026-06-01T23:15:29",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -11358,9 +11529,9 @@
         "description": "Microsoft Edge is introducing improvements to help users quickly resolve website issues directly from the browser. When a site is not functioning as expected, users may be guided to relevant troubleshooting options such as adjusting tracking prevention settings (e.g., Strict mode) and reviewing site-specific configurations. This experience surfaces relevant actions in-context to help users restore site functionality without navigating deep into settings.",
         "id": 561486,
         "locale": null,
-        "modified": "2026-06-09T20:46:16",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13547,9 +13718,9 @@
         "description": "When a user performs a search on google.com from a work profile, Microsoft Edge can detect whether organization-specific results are available for that query. When relevant results are found, a banner is shown with a link to explore those work results with Microsoft 365 Copilot. This builds on the existing experience already available on Bing and extends it to Google, helping users seamlessly access work-related information regardless of their search engine. Admins can control access to this feature using the EdgeWorkSearchBannerEnabled policy.",
         "id": 560823,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14506,12 +14677,12 @@
         "description": "Data Security Investigations (DSI) is introducing the ability to create custom examination focus areas. This feature will empower admins to tailor examination to their specific needs depending on the type of investigation being performed and the information they are most concerned with. This addition works alongside DSI\u2019s AI-powered content analysis features, such as categorization, AI search, and examination for risk, which help surface data security risks buried in data.\n",
         "id": 560598,
         "locale": null,
-        "modified": "2026-06-16T23:00:10",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23997,15 +24168,15 @@
     },
     {
         "created": "2026-03-04T00:00:25",
-        "description": "Once a Copilot Chat user has finished researching, creating, and collecting content in Copilot Pages, they can take it to a SharePoint News Post with the press of 'SharePoint' button under 'Create'.",
+        "description": "Once a Copilot Chat user has finished researching, creating, and collecting content in Copilot Pages, they can take it to a SharePoint News Post with the press of 'SharePoint' button under 'Create'. We have chosen not to move forward with this feature. We apologize for the inconvenience.",
         "id": 557566,
         "locale": null,
-        "modified": "2026-03-04T00:00:25",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25819,9 +25990,9 @@
         "description": "This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: \u201cApproved by\u201d.",
         "id": 555852,
         "locale": null,
-        "modified": "2026-05-04T23:00:45",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "Rolling out",
@@ -29354,12 +29525,12 @@
         "description": "You can now reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
         "id": 555882,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29409,12 +29580,12 @@
         "description": "You can now attach and reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
         "id": 555881,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35906,12 +36077,12 @@
         "description": "We\u2019re excited to announce that Organizational Data in Microsoft 365 is now available in the GCC-Moderate (GCC-M) environment! Organizational Data in Microsoft 365 provides a secure, compliant, and scalable platform for ingesting organizational data into Microsoft 365. With this release, government cloud customers can now leverage the same powerful data ingestion capabilities previously available only in commercial environments.",
         "id": 508518,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -39432,9 +39603,9 @@
         "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
         "id": 536577,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43927,12 +44098,12 @@
         "description": "Custom templates let you create reusable, pre-designed layouts tailored to your organization\u2019s needs, ensuring consistency and saving time. They provide flexibility to standardize content while allowing easy customization for specific scenarios.",
         "id": 512431,
         "locale": null,
-        "modified": "2026-06-29T23:02:39",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53282,12 +53453,12 @@
         "description": "Pre-setup guides, editability, actionable errors & alerting support available for Connector admins.",
         "id": 502529,
         "locale": null,
-        "modified": "2026-01-28T00:00:53",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -57636,9 +57807,9 @@
         "description": "Enable customization of icon & name for data sources in Search (& chat).",
         "id": 502532,
         "locale": null,
-        "modified": "2025-09-22T23:00:43",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -60836,15 +61007,15 @@
     },
     {
         "created": "2025-09-04T23:15:49",
-        "description": "Users can ask for additional search results (emails, meetings, calendar, and files) during a multi-turn conversation by saying things like \u201cshow me more.\u201d Copilot continues from where it left off, pulling in remaining relevant results to maintain context and improve accuracy.",
+        "description": "Users can ask for additional search results (emails, meetings, calendar, and files) during a multi-turn conversation by saying things like \u201cshow me more.\u201d Copilot continues from where it left off, pulling in remaining relevant results to maintain context and improve accuracy. We have chosen not to move forward with this feature. We apologize for the inconvenience.",
         "id": 501576,
         "locale": null,
-        "modified": "2025-09-17T23:00:20",
+        "modified": "2026-07-02T23:12:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
