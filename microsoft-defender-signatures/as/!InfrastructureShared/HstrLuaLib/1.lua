@@ -1238,44 +1238,60 @@ candidatePeFile = function()
   return true
 end
 
-getScannedRegions = function()
+getScannedRegions = function(l_13_0)
   -- function num : 0_12
   if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
     return 1
   end
-  local l_13_0 = (mp.GetScannedPPID)()
-  local l_13_1 = (mp.GetSMSMemRanges)()
-  local l_13_2 = "memRegionsMetadata"
-  local l_13_3 = 0
-  local l_13_4 = {}
-  l_13_4.ppid = l_13_0
-  l_13_4.arch = (mp.GetSMSProcArchitecture)()
-  l_13_4.regions = {}
-  for l_13_8,l_13_9 in ipairs(l_13_1) do
-    l_13_3 = l_13_3 + 1
-    if l_13_3 <= 150 then
-      if not l_13_9.addr or not l_13_9.size or not l_13_9.prot or not l_13_9.alloc_prot then
+  local l_13_1 = (mp.GetScannedPPID)()
+  local l_13_2 = (mp.GetSMSMemRanges)()
+  local l_13_3 = "memRegionsMetadata"
+  local l_13_4 = 0
+  local l_13_5 = 0
+  local l_13_6 = {}
+  l_13_6.ppid = l_13_1
+  l_13_6.arch = (mp.GetSMSProcArchitecture)()
+  l_13_6.sig_matched = l_13_0
+  l_13_6.nRegions = 0
+  l_13_6.nCollectedRegions = 0
+  l_13_6.regions = {}
+  for l_13_10,l_13_11 in ipairs(l_13_2) do
+    l_13_4 = l_13_4 + 1
+    if l_13_5 <= 150 then
+      if not l_13_11.addr or not l_13_11.size or not l_13_11.prot or not l_13_11.alloc_prot then
         return 3
       end
-      local l_13_10 = l_13_4.regions
-      local l_13_11 = #l_13_4.regions + 1
-      local l_13_12 = {}
-      l_13_12.addr = l_13_9.addr
-      l_13_12.size = l_13_9.size
-      l_13_12.alloc_prot = l_13_9.alloc_prot
-      l_13_12.prot = l_13_9.prot
-      l_13_12.state_type = l_13_9.state_type
-      l_13_12.flags = l_13_9.flags
-      l_13_10[l_13_11] = l_13_12
+      if (mp.bitand)(l_13_11.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_11.state_type, mp.SMS_MBI_MAPPED) == 0 then
+        local l_13_12 = l_13_6.regions
+        local l_13_13 = #l_13_6.regions + 1
+        local l_13_14 = {}
+        l_13_14.addr = l_13_11.addr
+        l_13_14.size = l_13_11.size
+        l_13_14.alloc_prot = l_13_11.alloc_prot
+        l_13_14.prot = l_13_11.prot
+        l_13_14.state_type = l_13_11.state_type
+        l_13_14.flags = l_13_11.flags
+        l_13_12[l_13_13] = l_13_14
+        l_13_5 = l_13_5 + 1
+      end
     end
   end
-  l_13_4.nRegions = l_13_3
-  local l_13_13 = (MpCommon.JsonSerialize)(l_13_4)
-  local l_13_14 = (MpCommon.Base64Encode)(l_13_13)
-  AppendToRollingQueue(l_13_2, "data", l_13_14)
+  l_13_6.nRegions = l_13_4
+  l_13_6.nCollectedRegions = l_13_5
+  local l_13_15 = (MpCommon.JsonSerialize)(l_13_6)
+  local l_13_16 = (MpCommon.Base64Encode)(l_13_15)
+  AppendToRollingQueue(l_13_3, "data", l_13_16)
   ;
-  (MpCommon.BmTriggerSig)(l_13_0, l_13_2, (string.format)("nRegions %d", l_13_3))
+  (MpCommon.BmTriggerSig)(l_13_1, l_13_3, (string.format)("nRegions %d", l_13_4))
   return 0
+end
+
+verify_non_prod_rings = function()
+  -- function num : 0_13
+  if (versioning.GetEngineRing)() < 5 then
+    return true
+  end
+  return false
 end
 
 

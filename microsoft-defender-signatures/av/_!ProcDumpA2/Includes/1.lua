@@ -14,7 +14,8 @@ end
 if l_0_1 ~= l_0_0 then
   return mp.CLEAN
 end
-if getScannedRegions() == 0 then
+local l_0_2 = GetRollingQueueKeyValue("memPagesMetadata", "sig_matched")
+if getScannedRegions(l_0_2) == 0 then
   return mp.INFECTED
 end
 return mp.CLEAN
