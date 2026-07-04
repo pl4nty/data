@@ -23,6 +23,7 @@ if l_0_2 >= 999999850 then
       l_0_6.LastMessage = l_0_5
       ;
       (mp.SetDetectionString)(safeJsonSerialize(l_0_6))
+      set_research_data(safeJsonSerialize(l_0_6))
     end
     do
       local l_0_7 = (versioning.GetOrgID)()

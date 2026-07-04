@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanAIPromptInj\1.luac 
+-- Command line: lua\!InfrastructureShared\!#ALFTrojanAIPromptInjectMLSuspDet\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -24,6 +24,7 @@ if l_0_2 >= 137790232 then
         l_0_6.LastMessage = l_0_5
         ;
         (mp.SetDetectionString)(safeJsonSerialize(l_0_6))
+        set_research_data(safeJsonSerialize(l_0_6))
       end
       do return mp.INFECTED end
       return mp.CLEAN
