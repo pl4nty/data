@@ -1872,16 +1872,16 @@
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 432000,
+                    "IntervalSeconds": 604800,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
                 "NominationPeriod": {
-                    "IntervalSeconds": 432000,
+                    "IntervalSeconds": 604800,
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
+                "PercentageNumerator": 25,
                 "Type": 0
             },
             "PrimaryPriority": 3,

@@ -1113,6 +1113,7 @@
         "EnableSetPowerShellSessionPathForCse": true,
         "EnableSetSessionPathForRDAgentInMove": true,
         "EnableSettingSvcForSelfProvision": true,
+        "EnableSettingsExternalReferences": true,
         "EnableSettingsTargetProfileConsistencyCheck": true,
         "EnableSettingsUX3PCommsPlugins": true,
         "EnableSettingsUXAIEnabled": true,
@@ -1782,6 +1783,9 @@
     },
     "MMD": {
         "TenantSettingApi": true
+    },
+    "Segmentation": {
+        "FrontierAdminAudience": "None"
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,
