@@ -69549,67 +69549,6 @@
         "title": "Microsoft Teams: Emoji Reactions Workflows"
     },
     {
-        "created": "2025-07-22T23:15:27",
-        "description": "With this capability, Admins can choose to store a copy of the file that resulted in a DLP policy match. The admin uses this data to analyze the contents to confirm the full set of data that was exfiltrated to assess severity. To configure Microsoft managed storage, similar to customer managed storage, the user can go to endpoint DLP settings and select Microsoft managed storage. As compared to customer managed storage - the admin need not configure any additional settings like adding a blob, assigning permissions, selecting storage in policy workflow.",
-        "id": 497838,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Ability to fetch the original file resulting in policy match as evidence (Microsoft Managed storage)"
-    },
-    {
         "created": "2025-07-21T23:15:32",
         "description": "Select the Activity tab within the Copilot summary at the top of a document for a summary of recent comments and changes. Choose a time window of 3 days, 1 week, or 2 weeks.",
         "id": 497941,
@@ -76749,67 +76688,6 @@
         "title": "Microsoft Teams: Browser support on Teams Rooms on Windows touch boards"
     },
     {
-        "created": "2025-06-02T23:15:20",
-        "description": "The new shared spaces insights page in the Pro Management portal provides IT with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. The feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges making it easy to see how spaces are being used. Future updates will include desk and BYOD room spaces. Available with a Teams Rooms Pro license.",
-        "id": 493318,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Shared spaces insights in the Pro Management portal"
-    },
-    {
         "created": "2025-05-30T22:00:38",
         "description": "The\u00a0feature will allow you to\u00a0do\u00a0OCR\u00a0for only those\u00a0mails\u00a0which are being\u00a0sent\u00a0outside\u00a0the\u00a0organization. Hence, by using this config, you will not be billed for any internal communications or any incoming\u00a0mails\u00a0coming from\u00a0outside\u00a0the\u00a0org. ",
         "id": 495547,
@@ -77336,55 +77214,6 @@
     },
     {
         "created": "2025-05-29T23:00:52",
-        "description": "Enhance your calling experience with Copilot on Teams phones devices\u2014access intelligent insights during calls using suggested prompts.",
-        "id": 495453,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Copilot Support for 1:1 and Group Calls on Teams Phone Devices"
-    },
-    {
-        "created": "2025-05-29T23:00:52",
         "description": "Personalize your Teams phone experience by setting unique ringtones and choosing how each line key alerts you\u2014ring only, ring with flash, or flash only. This feature is supported across touch, non-touch, and sidecar devices, giving you full control over how you stay notified",
         "id": 495451,
         "locale": null,
@@ -77449,73 +77278,6 @@
             ]
         },
         "title": "Microsoft Teams: Custom ringtone behavior and ringtones for assigned line keys"
-    },
-    {
-        "created": "2025-05-29T23:00:52",
-        "description": "Bringing Microsoft 365 Copilot your AI assistant for work in the DoD environment. It combines the power of Large Language Models with your work content and context, to help you draft and rewrite, summarize and organize, catch up on what you missed, and get answers to questions via open prompts. Copilot generates answers using the rich, people-centric data and insights available in the Microsoft Graph. Microsoft 365 Copilot is available in the Microsoft 365 Copilot app (web), Teams (Chat and Channel) excluding Compose, Outlook, Word, PowerPoint, Excel, and Copilot Prompt Gallery.",
-        "id": 494508,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Your AI assistant in the DoD environment"
     },
     {
         "created": "2025-05-29T23:00:52",
@@ -78969,85 +78731,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Experience enhancements to IRM alert investigation workflow"
-    },
-    {
-        "created": "2025-05-20T23:15:01",
-        "description": "Threads in channels allow you to start a side conversation within a channel and focus on specific topics while keeping the main conversation clutter-free. You can reply to specific messages and create a separate thread, helping to minimize distractions and foster better collaboration.",
-        "id": 488300,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Threads in channels"
     },
     {
         "created": "2025-05-19T23:00:56",
@@ -81696,61 +81379,6 @@
     },
     {
         "created": "2025-04-29T23:15:05",
-        "description": "Microsoft Edge for Business plans to introduce a Microsoft 365 Copilot Chat summarization menu item to our context menu. This feature will help users quickly unpack and ask questions about their open page. \n",
-        "id": 491473,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: Microsoft 365 Copilot Chat Summarization in Edge for Business Context Menu"
-    },
-    {
-        "created": "2025-04-29T23:15:05",
         "description": "When you receive messages from senders we weren't able to verify as safe, you'll see a tag in the message list and a ribbon on the reading pane warning you to be cautious when interacting with it.",
         "id": 491471,
         "locale": null,
@@ -83704,67 +83332,6 @@
             ]
         },
         "title": "Microsoft Purview Information Protection: Doc library default labeling for SharePoint Online and Copilot"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "This brings the editable Copilot Pages feature which is already shipped WW to the government environment. The pages feature enables users to add their Microsoft 365 Copilot responses to a page where they can edit and share with others for collaboration. This happens right within the Microsoft 365 Copilot app.",
-        "id": 485178,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds"
     },
     {
         "created": "2025-04-22T23:15:19",
@@ -95522,61 +95089,6 @@
         "title": "Microsoft Viva: Viva Learning - Copilot Academy reports in Viva Insights"
     },
     {
-        "created": "2025-02-05T00:15:53",
-        "description": "Microsoft 365 Copilot will soon use pronouns from user profiles when responding, creating a more personalized interaction for users.",
-        "id": 478648,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Pronoun Awareness in Microsoft 365 Copilot"
-    },
-    {
         "created": "2025-01-31T00:15:03",
         "description": "Network admins can choose to enable advanced moderation access for corporate communicators to manage AI themes + keywords detected within organization. ",
         "id": 479408,
@@ -102321,67 +101833,6 @@
         "title": "Microsoft Intune: Intune Suite - Endpoint Privilege Management on single session Azure Virtual Desktop"
     },
     {
-        "created": "2024-11-22T23:15:35",
-        "description": "After further review, this feature needs to roll back. We apologize for any inconvenience. We are building UX to surface the diagnostics that were previously available through cmdlet to be accessible through portal UX",
-        "id": 469504,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Diagnostics in the new portal"
-    },
-    {
         "created": "2024-10-10T23:15:45",
         "description": "IT admins can monitor and track the status of all bulk operations on Teams Devices through the Teams admin center, enabling large-scale management.",
         "id": 420326,
@@ -105583,61 +105034,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Glint - Self service for bulk custom access"
-    },
-    {
-        "created": "2024-10-29T23:15:28",
-        "description": "Set of pre-defined administrators can be configured to receive email notifications for any potentially damaging changes to the backup settings or actions taken to ensure proper oversight of the tool in the organization. ",
-        "id": 464993,
-        "locale": null,
-        "modified": "2025-09-05T22:15:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "March CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft 365: Multi-admin change notifications for Microsoft 365 Backup"
     },
     {
         "created": "2024-10-29T23:15:28",
