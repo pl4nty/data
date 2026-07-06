@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "NAV110 HF 11.0.50704.0",
+    "downloadDescription": "NAV110 HF",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OnPremise.zip",
+            "url": "https://download.microsoft.com/download/63caf8ff-7b7e-469f-9d23-e9475ad802f3/W1DVD_50704.zip",
+            "size": "1009310795",
+            "version": "11.0.50704.0",
+            "datePublished": "7/6/2026 9:06:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hotfix for NAV110",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.50704.0",
+    "detailsSection_file_name": [
+        "OnPremise.zip"
+    ],
+    "detailsSection_file_size": [
+        "962.6 MB"
+    ],
+    "detailsSection_file_date": "7/6/2026",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Run installer",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108720",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
