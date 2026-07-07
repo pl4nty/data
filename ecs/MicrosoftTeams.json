@@ -113,8 +113,8 @@
             "maxRetries": 3
         },
         "enrollConfig": {
-            "isPmpOtpFallbackEnabled": false,
-            "isPmpOtpProvisioningEnabled": false
+            "isPmpOtpFallbackEnabled": true,
+            "isPmpOtpProvisioningEnabled": true
         },
         "healthSignalConfig": {
             "appconnectivity": {

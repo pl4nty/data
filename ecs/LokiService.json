@@ -682,6 +682,7 @@
         "EnableKnowYourTeamAdminPromptApi": true,
         "EnableKnowYourTeamCopilotSettingsApi": true,
         "EnableLlmInsights": false,
+        "EnableLokiOdspTempAuthPreviewMitigation": true,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableMRUFormsRetrieval": false,
         "EnableMicrosoftFormsIntegrationToLoki": true,

@@ -424,7 +424,6 @@
             "NoFallback_OnAllException": true,
             "RefreshPCWithDifferentAADDeviceId": true,
             "RequireIsManagedForGraphDeviceIsCompliantPatch": true,
-            "SearchCompliancePartnerTenantItem": true,
             "SkipMicrosoftSenseAADPatchForPartnerDevice": true
         }
     },
@@ -645,8 +644,6 @@
             "RequireDeviceAADJ": true,
             "UseFireAndForgetFlight": true,
             "UseGetAction": true,
-            "UseMamConditionalAccessFirstPartyApplication": true,
-            "UseMamConditionalAccessFirstPartyApplicationDisableFallback": true,
             "WarnMinSdkVersion_iOS_20_8_0": true
         }
     },
@@ -752,6 +749,7 @@
     },
     "Segmentation": {
         "EdgeAll": "true",
+        "FrontierAdminAudience": "None",
         "RolloutGroup": "G4",
         "RolloutGroupV2": "G4",
         "RolloutGroupV3": "G3"
