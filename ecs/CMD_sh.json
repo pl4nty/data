@@ -621,6 +621,7 @@
         "EnableFrontlineAllotmentName": true,
         "EnableFrontlineAllotmentNameUX": true,
         "EnableFrontlineCurrentlyConnectedQueryV5": true,
+        "EnableFrontlineCurrentlyConnectedQueryV6": true,
         "EnableFrontlineDedicatedRetryResize": true,
         "EnableFrontlineLicenseCardInReports": true,
         "EnableFrontlineLicensePreviewTag": true,
