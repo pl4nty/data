@@ -682,7 +682,6 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
-            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
@@ -810,6 +809,7 @@
         "FlightingV2": {
             "AndroidDCv2ManagementModeFilter": true,
             "CanAccessSupportCentralWidget": true,
+            "EnableCompliancePolicyReportExplorer": true,
             "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
             "EnableJamfDeleteButton": true,

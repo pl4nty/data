@@ -1,5 +1,170 @@
 [
     {
+        "created": "2026-07-06T23:00:50",
+        "description": "When replying to an email conversation and the message being replied to is not the latest in the conversation, Outlook for Windows and web will now display a notification indicating this. With this change, users can now be more confident that they are responding to the right message in an email conversation. #newoutlookforwindows",
+        "id": 567316,
+        "locale": null,
+        "modified": "2026-07-06T23:00:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Notification when not responding to most recent message of email thread"
+    },
+    {
+        "created": "2026-07-06T23:00:50",
+        "description": "We will be introducing a new Usage report covering Copilot Chat. This report will include total active users, Copilot Chat usage with a breakout per Microsoft 365 app, and user-level activity insights (anonymized by default). #copilotcontrolsystem",
+        "id": 567121,
+        "locale": null,
+        "modified": "2026-07-06T23:00:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 admin center - Usage reports - Copilot Chat for GCC, GCC High and DoD"
+    },
+    {
+        "created": "2026-07-06T23:00:50",
+        "description": "We will be introducing a new Usage report covering Microsoft 365 Copilot. This report will include total enabled and active users, Copilot usage with a breakout per Microsoft 365 app, and user-level activity insights (anonymized by default). #copilotcontrolsystem",
+        "id": 567120,
+        "locale": null,
+        "modified": "2026-07-06T23:00:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Microsoft 365 admin center \u2013 New Microsoft 365 Copilot usage report for GCC High & DoD"
+    },
+    {
         "created": "2026-07-02T23:12:48",
         "description": "Outlook contacts become available system-wide (caller ID, Phone, Messages, Siri) using Apple's Contact Provider framework \u2014 without full address-book access or copying contacts onto your device.",
         "id": 567006,
@@ -111,12 +276,12 @@
     },
     {
         "created": "2026-07-02T23:12:48",
-        "description": "The Task Details Sidecar lets you view and edit task details in a side pane while keeping your Board, Grid, or My Tasks view visible. Update tasks without losing context or switching back and forth from modal dialogs.",
+        "description": "The Task Details Side Pane lets you view and edit task details in a side pane while keeping your Board, Grid, or My Tasks view visible. Update tasks without losing context or switching back and forth from modal dialogs.",
         "id": 566866,
         "locale": null,
-        "modified": "2026-07-02T23:12:48",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -168,7 +333,7 @@
                 }
             ]
         },
-        "title": "Planner: Task Details Sidecar experience"
+        "title": "Planner: Task Details Side Pane experience"
     },
     {
         "created": "2026-07-01T23:03:18",
@@ -1022,7 +1187,7 @@
         "description": "When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro.\n",
         "id": 562534,
         "locale": null,
-        "modified": "2026-06-30T22:57:58",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
@@ -1076,7 +1241,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Front-of-room view control for Town Hall\nand Webinar in Teams Rooms on Android"
+        "title": "Microsoft Teams: Front-of-room view control for Town Hall in Teams Rooms on Android"
     },
     {
         "created": "2026-06-29T23:02:39",
@@ -1516,10 +1681,10 @@
         "description": "Endpoint Data Loss Prevention (DLP) is changing the way archive files, such as  .zip  and similar container formats, are classified and enforced. This update  improves detection accuracy and gives administrators finer control over how content within archives is protected.",
         "id": 566617,
         "locale": null,
-        "modified": "2026-06-25T23:15:45",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
-        "publicPreviewDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -2114,9 +2279,9 @@
         "description": "Adaptive Protection in Microsoft Purview helps you protect your organization\u2019s data by integrating dynamic insider risk levels, determined by data related activities, with various policy engines to automatically moving users in and out of policies as their risk levels change over time. The integration with Data Lifecycle Management will automatically apply retention labels to preserve deleted emails and files based on a user\u2019s insider risk level.\u00a0",
         "id": 566324,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2768,7 +2933,7 @@
         "description": "Teams Rooms on Windows users can now benefit from next generation IntelliFrame features on certified AI-capable cameras with on-device video processing. With IntelliFrame\u2019s expanded AI data channel, participants experience faster active speaker framing, people recognition and labels, and more responsive meeting views\u2014even when network conditions are limited. These capabilities are available with Teams Rooms Pro.",
         "id": 564969,
         "locale": null,
-        "modified": "2026-07-02T23:12:48",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
@@ -2777,6 +2942,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "Teams and Surface Devices"
@@ -2792,6 +2960,9 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -2884,9 +3055,9 @@
         "description": "Users can now sign in to Microsoft Edge using a Google account in addition to the Microsoft account from the profile menu and Edge sign-in screen. Available for Windows and macOS devices.  Admins can control availability to this feature using the NonMicrosoftAccountSignInEnabled policy.",
         "id": 565860,
         "locale": null,
-        "modified": "2026-06-16T23:00:10",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3805,12 +3976,12 @@
         "description": "Teams now enables links within chat and channel messages to open in a new window, so you can compare information side by side without losing the context of your ongoing conversation. Access this capability through the More options menu or by using Ctrl/Cmd + click.\n \n",
         "id": 565220,
         "locale": null,
-        "modified": "2026-06-11T23:15:28",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -5956,12 +6127,12 @@
         "description": "Outlook for Windows and Outlook for Web will now allow users to modify how the preview text for emails show in the message list. The preview text can now take up 2 lines, 1 whole line, or 0 additional lines.",
         "id": 564610,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6322,12 +6493,12 @@
         "description": "The new Copilot Notebooks design in the Microsoft 365 Copilot app now lets users organize related chats, output creations, and references into a persistent AI workspace. Copilot uses the Notebook's accumulated context to ground responses, so work continues across sessions instead of starting over each time. While this is the quicker, light-weight Notebooks experience, you can still find the fuller, workspace-forward experience in OneNote. ",
         "id": 562662,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23853,12 +24024,12 @@
         "description": "This feature enables Company Admins to customize the default Microsoft Viva Glint confidentiality statement. Admins can choose to turn off the default statement and instead define confidentiality messaging tailored to their specific program settings, such as whether responses are configured to be confidential.",
         "id": 557982,
         "locale": null,
-        "modified": "2026-04-15T23:00:31",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27516,12 +27687,12 @@
         "description": "To empower organizations to run additional employee listening programs, like AI transformation or change management cases, we are creating a dedicated Survey Designer role. This role grants a user just enough permissions to run a Viva Glint survey without full access to platform settings and sensitive data, thus creating a more democratized platform. ",
         "id": 548640,
         "locale": null,
-        "modified": "2026-02-18T00:00:38",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27992,9 +28163,9 @@
         "description": "When you return to a conversation within a short duration of time, your selected tab, opened side panel, and layout are restored automatically, so you can keep working without resetting your workspace. In addition, returning to a Quick View within a short duration will restore your previously selected message. ",
         "id": 557184,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "Launched",
@@ -31221,12 +31392,12 @@
         "description": "Allows the administrator of an Exchange Online tenant to change the organizer of an existing meeting or meeting series via a PowerShell cmdlet. This can be used, for example, to maintain continuity and history of a long-running meeting series in cases where the meeting organizer has a new role, is on leave, or during the offboarding process. Once the meeting is transferred, the new organizer will be able to maintain all properties of the event including meeting time and recurrence, attendees, and description. Meeting attendees within the Exchange Online tenant will not need to re-RSVP and the existing event on their calendar will be silently updated with the new meeting organizer information.\n\nA subsequent feature will enable users to to change the organizer via Modern Calendar in OWA, New Outlook, and Teams. For user-initiated transfers the new organizer must accept the meeting before the transfer completes.",
         "id": 554937,
         "locale": null,
-        "modified": "2026-06-03T23:00:57",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35204,12 +35375,12 @@
         "description": "Adding new, more granular permissions for Viva Glint administration. These areas include Advanced Configuration, Nudges, General Settings, and Viva Integrations. Updating the name of the highest privileged role in Viva Glint to \u201cViva Glint Service Admin\u201d, and for increased security, restricting the ability to assign new Viva Glint Service Admins to the MAC only.",
         "id": 547837,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37803,12 +37974,12 @@
         "description": "This update brings end user security reporting into Teams Admin Center. Admins can now view and download signals from messages users report as a security concern or not a security concern within TAC Protection reports, helping them identify trends and fine tune policies and responses. ",
         "id": 536571,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42728,15 +42899,15 @@
     },
     {
         "created": "2025-11-19T00:15:24",
-        "description": "Enables users to schedule recurring prompts to declarative agents like Analyst, Idea Coach and more.",
+        "description": "Enables users to schedule recurring prompts to declarative agents like Analyst, Idea Coach and more. We are not moving forward with this feature. We apologize for the inconvenience.",
         "id": 531759,
         "locale": null,
-        "modified": "2026-06-02T23:00:40",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45147,9 +45318,9 @@
         "description": "With this update, Risky AI usage policy template will support priority content. Customers can define Sensitive Info Types (SITs), Trainable Classifiers, Sensitivity Labels as priority content, and get alerted only when the activity matches the selected priority content. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
         "id": 528978,
         "locale": null,
-        "modified": "2026-03-24T23:15:57",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49195,12 +49366,12 @@
         "description": "The new Outlook now supports LDAP (Lightweight Directory Access Protocol) directories for sending S/MIME encrypted emails. This allows users to add an LDAP directory in the new Outlook and use it to fetch recipients\u2019 certificates from the configured directory when sending S/MIME encrypted messages. #newoutlookforwindows",
         "id": 518287,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49403,12 +49574,12 @@
         "description": "The new Outlook will now allow users to store S/MIME encryption certificates within their Contacts. This enables users to save certificates directly in contact entries and use them to send S/MIME encrypted emails to the contacts. #newoutlookforwindows",
         "id": 518288,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -57807,7 +57978,7 @@
         "description": "Enable customization of icon & name for data sources in Search (& chat).",
         "id": 502532,
         "locale": null,
-        "modified": "2026-07-02T23:12:48",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
@@ -68779,9 +68950,9 @@
         "description": "This new capability will enable admins to scan existing files at rest in SharePoint or OneDrive for business for sensitive data.",
         "id": 499076,
         "locale": null,
-        "modified": "2025-10-08T23:15:04",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -101611,12 +101782,12 @@
         "description": "Manage retention and deletion workflows for user-owned Loop workspaces like Copilot Pages when users leave the organization. Notify and provide temporary access to other employees or administrators to save important data before deletion policies take effect.",
         "id": 421612,
         "locale": null,
-        "modified": "2026-04-17T22:15:50",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -108218,9 +108389,9 @@
         "description": "Adaptive Protection in Microsoft Purview helps you protect your organization\u2019s data by integrating dynamic insider risk levels, determined by data related activities, with various policy engines to automatically moving users in and out of policies as their risk levels change over time. The integration with Data Lifecycle Management will automatically apply retention labels to preserve deleted emails and files based on a user\u2019s insider risk level. ",
         "id": 392839,
         "locale": null,
-        "modified": "2026-06-03T23:00:57",
+        "modified": "2026-07-06T23:00:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "June CY2024",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
