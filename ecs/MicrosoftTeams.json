@@ -43,6 +43,7 @@
         "CustomizationActionGroups": 1,
         "CustomizationTriggers": 1,
         "LightBakeIn3P": 1,
+        "OcclusionBakeIn3P": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
         "clientMinimumVersion": "6.2611.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
@@ -5656,6 +5657,16 @@
                     "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
                     "StartDate": "2026-06-29",
                     "UpdateId": "3fdc1ff9-1ba7-4bbe-91e4-2ece2d7ee1a7"
+                },
+                {
+                    "Reason": "Test Pause AA 830 in MSIT",
+                    "StartDate": "2026-07-06",
+                    "UpdateId": "2079be62-6ae6-4de3-a942-8ec331ec139f"
+                },
+                {
+                    "Reason": "Test Pause AA 855",
+                    "StartDate": "2026-07-06",
+                    "UpdateId": "a565741e-0386-4858-9a4a-154baa5ab8cc"
                 }
             ]
         }
