@@ -128,7 +128,7 @@ end
 
 local l_0_7 = function(l_8_0, l_8_1, l_8_2, l_8_3)
   -- function num : 0_7
-  validateTechnique = function(l_9_0)
+  local l_8_4 = function(l_9_0)
     -- function num : 0_7_0
     if l_9_0 == nil or #l_9_0 <= 3 then
       return 
@@ -161,35 +161,35 @@ local l_0_7 = function(l_8_0, l_8_1, l_8_2, l_8_3)
   if l_8_2 == nil then
     l_8_2 = 0
   end
-  local l_8_4 = "CommandLineCustomHash"
+  local l_8_5 = "CommandLineCustomHash"
   if l_8_3 ~= nil then
-    l_8_4 = l_8_3
+    l_8_5 = l_8_3
   end
-  local l_8_5 = getCustomStringHash(l_8_0)
-  if l_8_5 == nil then
+  local l_8_6 = getCustomStringHash(l_8_0)
+  if l_8_6 == nil then
     return 
   end
-  local l_8_6 = l_8_4 .. ":" .. l_8_5
-  local l_8_7 = false
+  local l_8_7 = l_8_5 .. ":" .. l_8_6
+  local l_8_8 = false
   if type(l_8_1) == "string" then
-    local l_8_8 = validateTechnique(l_8_1)
-    if l_8_8 ~= nil then
-      (MpCommon.AppendPersistContextNoPath)(l_8_6, l_8_8, l_8_2)
-      l_8_7 = true
+    local l_8_9 = l_8_4(l_8_1)
+    if l_8_9 ~= nil then
+      (MpCommon.AppendPersistContextNoPath)(l_8_7, l_8_9, l_8_2)
+      l_8_8 = true
     end
   else
     do
       if type(l_8_1) == "table" then
-        for l_8_12,l_8_13 in ipairs(l_8_1) do
-          local l_8_14 = validateTechnique(l_8_13)
-          if l_8_14 ~= nil then
-            (MpCommon.AppendPersistContextNoPath)(l_8_6, l_8_14, l_8_2)
-            l_8_7 = true
+        for l_8_13,l_8_14 in ipairs(l_8_1) do
+          local l_8_15 = l_8_4(l_8_14)
+          if l_8_15 ~= nil then
+            (MpCommon.AppendPersistContextNoPath)(l_8_7, l_8_15, l_8_2)
+            l_8_8 = true
           end
         end
       end
       do
-        return l_8_7
+        return l_8_8
       end
     end
   end
