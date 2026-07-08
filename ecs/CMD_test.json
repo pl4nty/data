@@ -1779,6 +1779,9 @@
     "MMD": {
         "TenantSettingApi": true
     },
+    "Segmentation": {
+        "FrontierAdminAudience": "None"
+    },
     "WCXTest": {
         "EnableAzureBlobCache": true,
         "EnableFlightGroupTest": true,

@@ -1570,7 +1570,15 @@
                     "IsEnabled": true
                 },
                 {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableMeetingParamsFromOrchestratorV3",
+                    "IsEnabled": true
+                },
+                {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableMeetingParamsFromOrchestrator",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableParticipantDescriptionV3",
                     "IsEnabled": true
                 },
                 {
@@ -1586,14 +1594,6 @@
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableMeetingParamsFromOrchestratorV3",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableParticipantDescriptionV3",
-                    "IsEnabled": true
-                },
-                {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.useOrchestratorUserProfiles",
                     "IsEnabled": true
                 },
@@ -1602,12 +1602,12 @@
                     "IsEnabled": true
                 },
                 {
-                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.RequestSuggestionCountFromFMTApi",
-                    "Value": "10"
-                },
-                {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableRecurringMeetings",
                     "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.RequestSuggestionCountFromFMTApi",
+                    "Value": "10"
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SchedulingSkill.EnableParticipantValidationForV3",
