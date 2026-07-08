@@ -298,6 +298,16 @@
         "ringSettings": {
             "settings": {
                 "EnableEtagForAdminIntent": true,
+                "apisEnabledForSPOLockedSiteHandlingForRemoveSite": [
+                    "SyncController_OnTeamRemoved",
+                    "SyncController_OnTeamSoftDeleted",
+                    "TeamController_DeleteTeam",
+                    "SyncController_OnUserSoftDeleted",
+                    "SyncController_OnOwnersRemoved",
+                    "SyncController_OnMembersRemoved",
+                    "ChannelController_DeleteChannel",
+                    "TeamController_SyncTeamsRoster"
+                ],
                 "disableCreatedAtPropertyRemoval": true,
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableCfrAnalyticsService": false,
@@ -1160,6 +1170,7 @@
             "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
             "EnableConstraintToken": true,
+            "EnableDeletingDataOnConversationEnd": false,
             "EnableDownloadImagesApi": true,
             "EnableDynamicSuggestedPrompts": true,
             "EnableEarlyCoTFromGCB": false,

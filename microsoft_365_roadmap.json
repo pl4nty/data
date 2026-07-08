@@ -1,5 +1,414 @@
 [
     {
+        "created": "2026-07-07T23:10:08",
+        "description": "Call delegation in Teams now includes new controls that give delegators greater privacy and control during active calls. Delegators can lock an ongoing call to prevent delegates from joining or resuming the call and can optionally enable warning tones that notify participants when a delegate joins or resumes a call.\n",
+        "id": 567306,
+        "locale": null,
+        "modified": "2026-07-07T23:10:08",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Enhanced delegated calling with delegate call access restrictions and join notifications"
+    },
+    {
+        "created": "2026-07-07T23:10:08",
+        "description": "Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. ",
+        "id": 567010,
+        "locale": null,
+        "modified": "2026-07-07T23:10:08",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts"
+    },
+    {
+        "created": "2026-07-07T23:01:01",
+        "description": "You can now add a category to your Favorites and then drag emails right onto it to apply that category. No need to open menus or right-click each message. Just pin the category you use most to Favorites, then drop your emails on it to tag them in one quick motion. It's a faster, more visual way to keep your inbox sorted the way you like. #newoutlookforwindows",
+        "id": 567319,
+        "locale": null,
+        "modified": "2026-07-07T23:01:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Categorize Emails by Dragging Them onto a Favorite Category"
+    },
+    {
+        "created": "2026-07-07T23:01:01",
+        "description": "You can now create a rule that automatically replies to incoming messages with a template you've set up. Set the conditions you care about and pick the template, and Outlook handles the response for you. It's a simple way to send consistent replies without typing the same thing over and over. #newoutlookforwindows",
+        "id": 567318,
+        "locale": null,
+        "modified": "2026-07-07T23:01:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Reply with a Template in Rules"
+    },
+    {
+        "created": "2026-07-07T23:01:01",
+        "description": "You\u2019ll soon be able to bring your Microsoft Planner into Microsoft Cowork. In Cowork, you can view, create, and update your plans, buckets, goals, and tasks without switching apps. Cowork goes a step further by helping you execute your Planner tasks across Microsoft 365, such as drafting and sending emails, scheduling meetings, posting updates to Teams, and working with files. It can then write progress back to Planner with your approval. You can move from planning your work to getting it done in one place.",
+        "id": 567315,
+        "locale": null,
+        "modified": "2026-07-07T23:01:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Capabilities in Microsoft Cowork"
+    },
+    {
+        "created": "2026-07-07T23:01:01",
+        "description": "Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs getting deprecated by OCT 2026. ",
+        "id": 567313,
+        "locale": null,
+        "modified": "2026-07-07T23:01:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management - Graph API Support for Archive Mailboxes"
+    },
+    {
+        "created": "2026-07-07T23:01:01",
+        "description": "Unlock the full value of your structured data by bringing SharePoint lists directly into your Microsoft Copilot Studio agents. With native support, customers can ground AI responses in up-to-date, business-critical data\u2014such as tasks, inventory, customers, or operations\u2014without manual data movement or complex integrations. This enables more accurate, context-aware copilots that reflect how your business runs, helping teams make faster decisions, reduce errors, and automate workflows with confidence.",
+        "id": 566859,
+        "locale": null,
+        "modified": "2026-07-07T23:01:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Use SharePoint lists as a knowledge source"
+    },
+    {
         "created": "2026-07-06T23:00:50",
         "description": "When replying to an email conversation and the message being replied to is not the latest in the conversation, Outlook for Windows and web will now display a notification indicating this. With this change, users can now be more confident that they are responding to the right message in an email conversation. #newoutlookforwindows",
         "id": 567316,
@@ -1974,10 +2383,10 @@
         "description": "AI spend and usage insights for GitHub Copilot will be available on Viva Insights for managers with at least 5 direct reports (scoped access), Global analysts and Microsoft Global administrators. They can track spend and make data-driven decisions for AI spend and usage in GitHub Copilot. The dashboard is enabled by default to ensure immediate access.",
         "id": 566470,
         "locale": null,
-        "modified": "2026-06-23T23:15:39",
+        "modified": "2026-07-07T23:10:48",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -1995,6 +2404,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -2019,6 +2431,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -3738,9 +4153,9 @@
         "description": "Copilot Notebook, an AI-powered workspace for a project or topic built on reference materials, is coming to OneNote on Mac. Bring together your work context behind a project in one place.",
         "id": 565863,
         "locale": null,
-        "modified": "2026-06-12T22:00:47",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6444,9 +6859,9 @@
         "description": "Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.",
         "id": 562993,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6493,12 +6908,12 @@
         "description": "The new Copilot Notebooks design in the Microsoft 365 Copilot app now lets users organize related chats, output creations, and references into a persistent AI workspace. Copilot uses the Notebook's accumulated context to ground responses, so work continues across sessions instead of starting over each time. While this is the quicker, light-weight Notebooks experience, you can still find the fuller, workspace-forward experience in OneNote. ",
         "id": 562662,
         "locale": null,
-        "modified": "2026-07-06T23:00:50",
+        "modified": "2026-07-07T23:10:08",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
-        "publicPreviewDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6804,9 +7219,9 @@
         "description": "Endpoint DLP now extends protection to files stored in commonly excluded Windows folders, including Temp and AppData. This helps improve coverage by detecting and protecting sensitive data in these locations.",
         "id": 562992,
         "locale": null,
-        "modified": "2026-05-26T22:45:59",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6853,9 +7268,9 @@
         "description": "Enable customers to include or exclude users/user groups from Just\u2011In\u2011Time (JIT) Audit, ensuring audits are generated only for the selected users or groups.",
         "id": 562991,
         "locale": null,
-        "modified": "2026-05-26T22:45:59",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9304,12 +9719,12 @@
         "description": "The protected downloads feature for Intune MAM will now save downloaded files to the Documents > Microsoft Edge > Downloads folder in OneDrive. ",
         "id": 561551,
         "locale": null,
-        "modified": "2026-06-02T23:00:40",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9810,9 +10225,9 @@
         "description": "Teams meetings automatically create a corresponding Planner plan to capture meeting tasks. However, when teams use meetings as their primary collaboration surface for long-running initiatives, tasks from the same project can become scattered across multiple auto-generated plans. With this capability, users can now connect Teams meetings to existing Planner plans, so all related tasks across meetings can be tracked in one place.",
         "id": 561490,
         "locale": null,
-        "modified": "2026-05-21T23:15:57",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15691,12 +16106,12 @@
         "description": "With this update, the indicators belonging to cloud storage apps (Box, Dropbox, Google Drive), cloud services (Azure, Amazon Web Services) and Microsoft Fabric (Power BI, Lakehouse) will be supported as triggers in Data leaks policy. With triggers, customers can define the conditions for bringing the user into the scope of a policy while the respective indicators are used to determine risk score.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 560399,
         "locale": null,
-        "modified": "2026-04-15T22:45:13",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21467,12 +21882,12 @@
         "description": "Organizations can now manually apply Purview Information Protection sensitivity labels in Engage. Allowing admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage communities. End users in Engage will be able to then manually apply labels to communities and in turn classify and protect their sensitive data via privacy and external user access controls. ",
         "id": 558684,
         "locale": null,
-        "modified": "2026-03-18T23:15:26",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21681,12 +22096,12 @@
         "description": "Admins can now see the sync status of sensitivity label publishing policies directly in the Purview portal. This provides clear confirmation that label policy changes have been fully applied across Microsoft 365 workloads, reducing guesswork, speeding troubleshooting, and increasing confidence during large scale label deployments.",
         "id": 558687,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21736,12 +22151,12 @@
         "description": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.",
         "id": 558686,
         "locale": null,
-        "modified": "2026-03-16T23:00:10",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21791,12 +22206,12 @@
         "description": "To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups\u2014expanding policy targeting beyond individual users and mail enabled groups.",
         "id": 558685,
         "locale": null,
-        "modified": "2026-04-20T22:45:53",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21846,9 +22261,9 @@
         "description": "Use intelligent summaries in Copilot Dashboard to quickly surface what\u2019s working and where targeted attention can accelerate Copilot adoption. Intelligent summaries highlight key adoption trends to focus on areas of success. Suggested prompts enable deeper exploration of underlying trends and drivers.\n",
         "id": 557681,
         "locale": null,
-        "modified": "2026-06-02T23:00:40",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23969,12 +24384,12 @@
         "description": "Catch up in Teams mobile provides a unified view of all directed and followed conversations across chats, meeting chats, channels and threads. The mobile-optimized card view supports swipe actions, helping you quickly review and triage lists of important items.",
         "id": 558108,
         "locale": null,
-        "modified": "2026-05-07T23:15:02",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24232,12 +24647,12 @@
         "description": "One-time email passcodes provide an easy way for tenant administrators and event organizers to verify anonymous, external presenters invited to their events. Anonymous external presenters will be shown with a \"Verified\" tag once completing the process. Based on admin settings, the event organizer will also have a set of options available to them that applies to all external presenters, providing the ability to control who is admitted to the meeting or allowing uninvited users with the link to be admitted from the lobby.",
         "id": 557975,
         "locale": null,
-        "modified": "2026-04-28T22:45:03",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28303,9 +28718,9 @@
         "description": "To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.",
         "id": 552598,
         "locale": null,
-        "modified": "2026-06-02T23:00:40",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -28407,12 +28822,12 @@
         "description": "Insider Risk Management is excited to announce the ability to preview content directly within an IRM alert without having to create a case. Users with appropriate permissions will be able to preview relevant files referenced directly within activity explorer in each alert.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
         "id": 557189,
         "locale": null,
-        "modified": "2026-06-17T23:15:06",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46105,9 +46520,9 @@
         "description": "Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:\n1. Unscanned Files Summary\nDisplays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.\n2. Classification History Insights\nShows trends and details of classification changes over time, helping admins to discover the stale data in their organization",
         "id": 526796,
         "locale": null,
-        "modified": "2026-03-11T23:30:17",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -89375,12 +89790,12 @@
         "description": "Organizations can build their own collections of prompts that are tailored to their business needs and workflows and distribute these to all users within the tenant.",
         "id": 486695,
         "locale": null,
-        "modified": "2026-06-30T22:57:58",
+        "modified": "2026-07-07T23:01:01",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

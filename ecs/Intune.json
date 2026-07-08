@@ -67,6 +67,10 @@
             "FlightExpiry": "2026-04-01T00:00:00.000Z",
             "FlightValue": true
         },
+        "ETWEventsAggregation": {
+            "FlightExpiry": "2025-06-01T00:00:00.000Z",
+            "FlightValue": true
+        },
         "EnableGoldenSignals": {
             "FlightExpiry": "2025-10-18T00:00:00.000Z",
             "FlightValue": true
@@ -355,6 +359,7 @@
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "EnableEamEvergreenGraph": true,
             "PublishMessagesForAllAppPolicyChanges": true,
+            "RetryTransportModelSync": true,
             "SCGWUseBranchDescriptorCache": true,
             "SCGWUseEGATsForAppsTargeting": true,
             "SCGWUseHTTPSForAppContentDownload": true,
@@ -679,7 +684,6 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
-            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
@@ -750,6 +754,7 @@
     "Segmentation": {
         "EdgeAll": "true",
         "FrontierAdminAudience": "None",
+        "FrontierAudience": "None",
         "RolloutGroup": "G4",
         "RolloutGroupV2": "G4",
         "RolloutGroupV3": "G3"
