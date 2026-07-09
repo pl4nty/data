@@ -91,7 +91,7 @@ do
         local l_0_48 = {"\\bgh[posu]_[a-z0-9]{36,}\\b", 60, "Atr_Cred_GhToken", l_0_26, false}
         local l_0_49 = {"-----begin\\s+(?:rsa\\s+|ec\\s+|openssh\\s+|dsa\\s+)?private\\s+key-----", 50, "Atr_Cred_PemKey", l_0_26, false}
         local l_0_50 = {"\\beyj[a-z0-9_-]{10,}\\.eyj[a-z0-9_-]{10,}\\.[a-z0-9_-]+", 40, "Atr_Cred_Jwt", l_0_26, false}
-        local l_0_51 = {"(?i)(?:^|[\\s\'\"`(=:])(?:~/?|/home/[^/\\s]+/|/root/)?\\.(?:aws/credentials|ssh/id_(?:rsa|ed25519|ecdsa|dsa)|kube/config|netrc|docker/config\\.json|gnupg/secring\\.gpg|git-credentials)\\b|(?:/etc/(?:passwd|shadow|gshadow|sudoers|master\\.passwd)\\b)", 70, "Atr_Cred_FileReads", l_0_26, true}
+        local l_0_51 = {"(?i)(?:^|[\\s\'\"`(=:])(?:~/?|/home/[^/\\s]+/|/root/)?\\.(?:(?:aws/credentials|kube/config|netrc|docker/config\\.json|gnupg/secring\\.gpg|git-credentials)\\b|ssh/(?:\\*|id_(?:rsa|ed25519|ecdsa|dsa)|authorized_keys|known_hosts))|(?:/etc/(?:passwd|shadow|gshadow|sudoers|master\\.passwd)\\b)", 70, "Atr_Cred_FileReads", l_0_26, true}
         local l_0_52 = {"(?i)\\beval\\s*\\(|\\bnew\\s+function\\s*\\(\\s*[\'\"]|\\bsetTimeout\\s*\\(\\s*[\'\"][^\'\"]{0,200}[\'\"]", 40, "Atr_Exec_Eval", l_0_27, false}
         local l_0_53 = {"(?i)require\\s*\\(\\s*[\'\"]child_process[\'\"]|from\\s+subprocess\\s+import|\\bos\\.system\\s*\\(|\\bsubprocess\\.(?:Popen|call|run)\\s*\\(", 40, "Atr_Exec_ChildProc", l_0_27, false}
         local l_0_54 = {"(?i)(?:curl|wget|fetch)\\s+[^|\\n\\r]{1,300}\\|\\s*(?:bash|sh|zsh|python[23]?|powershell|pwsh)\\b", 90, "Atr_Exec_CurlPipeShell", l_0_27, false}
@@ -120,169 +120,193 @@ do
         local l_0_77 = {"(?i)(?:synthe(?:siz|sis)|manufactur|weaponiz|aerosoliz|produc|purif)\\w*[^\\n\\r]{0,80}\\b(?:weaponized\\s+(?:biological|chemical)\\s+(?:agent|weapon|aerosol)|nerve\\s+agent\\s+(?:precursor|synth|formula|recipe)|anthrax\\s+(?:spore|weaponiz|synth|aerosoliz)|botulinum\\s+(?:synth|produc|purif|manufactur)|ricin\\s+(?:synth|extract|recipe|purif))|weaponized\\s+(?:pathogen|biological\\s+agent|aerosol\\s+(?:attack|payload|dispersal))|biological\\s+agents?\\s+(?:suitable\\s+for\\s+aerosol|for\\s+aerosol\\s+dispersal)", 90, "Atr_CBRN_BioChemWeapon", l_0_32, false}
         local l_0_78 = {"(?i)(?:sarin|tabun|novichok)\\s+(?:synthe|manufactur|produc|purif|precursor|formula|recipe)|\\b(?:synthe(?:siz|sis)|manufactur|produc)\\w*\\s+(?:(?:a|the|pure|military.?grade)\\s+)?(?:sarin|tabun|novichok|nerve\\s+agent)\\b", 90, "Atr_CBRN_NerveAgent", l_0_32, false}
         local l_0_79 = {"(?i)\\b(?:design|construct|build|manufactur|fabricat|assemble)\\w*\\b[^\\n\\r]{0,80}(?:implosion.{0,10}type\\s+(?:nuclear|atomic|fission)\\s+(?:weapon|device|bomb)|nuclear\\s+fission\\s+(?:weapon|device|bomb))|(?:pit\\s+assembly|explosive\\s+lens\\s+system|neutron\\s+initiator)\\b[^\\n\\r]{0,60}(?:plutonium|nuclear|weapon|implosion|detonator)", 90, "Atr_CBRN_NuclearWeapon", l_0_32, false}
-        do
-          local l_0_80 = {"(?i)(?:dirty\\s+bomb\\s+(?:design|build|construct|make|creat|assembl)|radiological\\s+dispersal\\s+(?:device|weapon|attack)|\\bRDD\\b[^\\n\\r]{0,40}(?:cobalt|cesium|strontium|polonium|iridium)\\b)", 80, "Atr_CBRN_Radiological", l_0_32, false}
-          -- DECOMPILER ERROR at PC493: No list found for R23 , SetList fails
+        local l_0_80 = {"(?i)(?:dirty\\s+bomb\\s+(?:design|build|construct|make|creat|assembl)|radiological\\s+dispersal\\s+(?:device|weapon|attack)|\\bRDD\\b[^\\n\\r]{0,40}(?:cobalt|cesium|strontium|polonium|iridium)\\b)", 80, "Atr_CBRN_Radiological", l_0_32, false}
+        -- DECOMPILER ERROR at PC493: No list found for R23 , SetList fails
 
-          l_0_36 = 0
-          l_0_37 = 0
-          l_0_38 = ipairs
-          l_0_39 = l_0_33
-          l_0_38 = l_0_38(l_0_39)
-          for l_0_41,l_0_42 in l_0_38 do
-            l_0_43 = l_0_42[1]
-            l_0_44 = l_0_42[2]
-            l_0_45 = l_0_42[3]
-            l_0_46 = l_0_42[4]
-            l_0_47 = l_0_42[5]
-            if not l_0_47 or l_0_23 then
-              l_0_48 = pcall
-              l_0_49 = MpCommon
-              l_0_49 = l_0_49.StringRegExpSearch
-              l_0_50 = l_0_43
-              l_0_51 = l_0_11
-              l_0_48 = l_0_48(l_0_49, l_0_50, l_0_51)
-              if l_0_48 and l_0_49 == true then
-                l_0_36 = l_0_36 + 1
-                if l_0_37 < l_0_44 then
-                  l_0_37 = l_0_44
-                end
-                l_0_50, l_0_34 = l_0_34[l_0_46], {}
-                if not l_0_50 then
-                  l_0_50 = 0
-                end
-                if l_0_50 < l_0_44 then
-                  l_0_34[l_0_46] = l_0_44
-                end
+        l_0_36 = 0
+        l_0_37 = 0
+        l_0_38 = ipairs
+        l_0_39 = l_0_33
+        l_0_38 = l_0_38(l_0_39)
+        for l_0_41,l_0_42 in l_0_38 do
+          l_0_43 = l_0_42[1]
+          l_0_44 = l_0_42[2]
+          l_0_45 = l_0_42[3]
+          l_0_46 = l_0_42[4]
+          l_0_47 = l_0_42[5]
+          if not l_0_47 or l_0_23 then
+            l_0_48 = pcall
+            l_0_49 = MpCommon
+            l_0_49 = l_0_49.StringRegExpSearch
+            l_0_50 = l_0_43
+            l_0_51 = l_0_11
+            l_0_48 = l_0_48(l_0_49, l_0_50, l_0_51)
+            if l_0_48 and l_0_49 == true then
+              l_0_36 = l_0_36 + 1
+              if l_0_37 < l_0_44 then
+                l_0_37 = l_0_44
+              end
+              l_0_50, l_0_34 = l_0_34[l_0_46], {}
+              if not l_0_50 then
+                l_0_50 = 0
+              end
+              if l_0_50 < l_0_44 then
+                l_0_34[l_0_46] = l_0_44
               end
             end
           end
-          for l_0_44,l_0_45 in pairs(l_0_34) do
-            -- DECOMPILER ERROR at PC544: Overwrote pending register: R36 in 'AssignReg'
+        end
+        for l_0_44,l_0_45 in pairs(l_0_34) do
+          -- DECOMPILER ERROR at PC544: Overwrote pending register: R36 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC545: Confused about usage of register: R29 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC545: Confused about usage of register: R29 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC545: Confused about usage of register: R29 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC545: Confused about usage of register: R29 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC546: Overwrote pending register: R36 in 'AssignReg'
+          -- DECOMPILER ERROR at PC546: Overwrote pending register: R36 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC547: Overwrote pending register: R36 in 'AssignReg'
+          -- DECOMPILER ERROR at PC547: Overwrote pending register: R36 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC549: Confused about usage of register: R30 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC549: Confused about usage of register: R30 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC549: Confused about usage of register: R30 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC549: Confused about usage of register: R30 in 'UnsetPending'
 
+        end
+        -- DECOMPILER ERROR at PC569: Overwrote pending register: R36 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC572: Overwrote pending register: R36 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC573: Overwrote pending register: R37 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC576: Overwrote pending register: R37 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC580: Overwrote pending register: R38 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC584: Confused about usage of register: R34 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC584: Overwrote pending register: R39 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC587: Confused about usage of register: R35 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC587: Overwrote pending register: R39 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC590: Overwrote pending register: R39 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC593: Overwrote pending register: R39 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC596: Overwrote pending register: R39 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC601: Confused about usage of register: R31 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC610: Confused about usage of register: R29 in 'UnsetPending'
+
+        if l_0_2 <= 0 + l_0_45 then
+          l_0_53 = #{}
+        end
+        l_0_53 = l_0_3 <= l_0_53
+        l_0_54 = l_0_34[l_0_24]
+        if not l_0_54 then
+          l_0_54 = 0
+        end
+        if l_0_4 > l_0_54 then
+          l_0_54 = l_0_34[l_0_25]
+          if not l_0_54 then
+            l_0_54 = 0
           end
-          -- DECOMPILER ERROR at PC569: Overwrote pending register: R36 in 'AssignReg'
+          if l_0_4 > l_0_54 then
+            l_0_54 = l_0_34[l_0_32]
+            if not l_0_54 then
+              l_0_54 = 0
+            end
+            if l_0_4 > l_0_54 then
+              do
+                l_0_54 = l_0_34[l_0_31]
+                if not l_0_54 then
+                  l_0_54 = 0
+                end
+                l_0_54 = l_0_4 <= l_0_54
+                if not l_0_52 and not l_0_53 and not l_0_54 then
+                  l_0_55 = mp
+                  l_0_55 = l_0_55.CLEAN
+                  return l_0_55
+                end
+                l_0_55 = mp
+                l_0_55 = l_0_55.get_contextdata
+                l_0_56 = mp
+                l_0_56 = l_0_56.CONTEXT_NAME_PROMPT_AGENT_SESSIONID
+                l_0_55 = l_0_55(l_0_56)
+                l_0_56 = mp
+                l_0_56 = l_0_56.get_contextdata
+                l_0_57 = mp
+                l_0_57 = l_0_57.CONTEXT_DATA_NET_PROMPT_FRAMEWORK
+                l_0_56 = l_0_56(l_0_57)
+                l_0_57 = MpCommon
+                l_0_57 = l_0_57.Base64Encode
+                l_0_58 = string
+                l_0_58 = l_0_58.sub
+                l_0_59 = l_0_10
+                l_0_60 = 1
+                l_0_61 = 1024
+                l_0_57 = l_0_57(l_0_58(l_0_59, l_0_60, l_0_61))
+                -- DECOMPILER ERROR at PC671: Confused about usage of register: R28 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC572: Overwrote pending register: R36 in 'AssignReg'
+                -- DECOMPILER ERROR at PC675: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC573: Overwrote pending register: R37 in 'AssignReg'
+                -- DECOMPILER ERROR at PC680: Confused about usage of register: R30 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC576: Overwrote pending register: R37 in 'AssignReg'
+                -- DECOMPILER ERROR at PC680: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC580: Overwrote pending register: R38 in 'AssignReg'
+                -- DECOMPILER ERROR at PC686: Confused about usage of register: R29 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC584: Confused about usage of register: R34 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC686: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC584: Overwrote pending register: R39 in 'AssignReg'
+                -- DECOMPILER ERROR at PC687: Overwrote pending register: R51 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC587: Confused about usage of register: R35 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC691: Confused about usage of register: R30 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC587: Overwrote pending register: R39 in 'AssignReg'
+                -- DECOMPILER ERROR at PC691: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC590: Overwrote pending register: R39 in 'AssignReg'
+                -- DECOMPILER ERROR at PC695: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC593: Overwrote pending register: R39 in 'AssignReg'
+                -- DECOMPILER ERROR at PC699: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC596: Overwrote pending register: R39 in 'AssignReg'
+                -- DECOMPILER ERROR at PC712: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC601: Confused about usage of register: R31 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC718: Overwrote pending register: R50 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC610: Confused about usage of register: R29 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC722: Overwrote pending register: R50 in 'AssignReg'
 
-          if l_0_2 <= 0 + l_0_45 then
-            l_0_53 = #{}
+                -- DECOMPILER ERROR at PC726: Overwrote pending register: R50 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC732: Overwrote pending register: R50 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC733: Overwrote pending register: R51 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC741: Overwrote pending register: R50 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC742: Overwrote pending register: R51 in 'AssignReg'
+
+                if (((not l_0_55 and l_0_56) or (MpCommon.IsSampled)(l_0_60, l_0_61, l_0_62, l_0_63) == false) and safeJsonSerialize({score = tostring(l_0_60), threshold = tostring(l_0_60), matched = (table.concat)(l_0_60, l_0_61), categories = (table.concat)(l_0_60, l_0_61), count = tostring(l_0_60), raw_matches = tostring(l_0_60), verb_gate = tostring(l_0_60), trigger = l_0_52 and "categorical" or "score", agent_session_id = tostring(l_0_60), framework = tostring(l_0_60), buffer_len = tostring(l_0_60), max_single = tostring(l_0_60), last_message = l_0_57, buffer = (MpCommon.Base64Encode)(l_0_60(l_0_61))}) == nil) or #safeJsonSerialize({score = tostring(l_0_60), threshold = tostring(l_0_60), matched = (table.concat)(l_0_60, l_0_61), categories = (table.concat)(l_0_60, l_0_61), count = tostring(l_0_60), raw_matches = tostring(l_0_60), verb_gate = tostring(l_0_60), trigger = l_0_52 and "categorical" or "score", agent_session_id = tostring(l_0_60), framework = tostring(l_0_60), buffer_len = tostring(l_0_60), max_single = tostring(l_0_60), last_message = l_0_57, buffer = (MpCommon.Base64Encode)(l_0_60(l_0_61))}) == 0 then
+                  return mp.CLEAN
+                end
+                -- DECOMPILER ERROR at PC766: Overwrote pending register: R52 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC767: Overwrote pending register: R53 in 'AssignReg'
+
+                if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+                  (MpCommon.BmTriggerSig)(l_0_62, l_0_63, l_0_64)
+                end
+                -- DECOMPILER ERROR at PC772: Overwrote pending register: R52 in 'AssignReg'
+
+                ;
+                (mp.SetDetectionString)(l_0_62)
+                do return mp.INFECTED end
+                -- DECOMPILER ERROR at PC777: Confused about usage of register R51 for local variables in 'ReleaseLocals'
+
+                -- DECOMPILER ERROR: 37 unprocessed JMP targets
+              end
+            end
           end
-          l_0_53 = l_0_3 <= l_0_53
-          l_0_54 = l_0_4 <= l_0_37
-          if not l_0_52 and not l_0_53 and not l_0_54 then
-            l_0_55 = mp
-            l_0_55 = l_0_55.CLEAN
-            return l_0_55
-          end
-          l_0_55 = mp
-          l_0_55 = l_0_55.get_contextdata
-          l_0_56 = mp
-          l_0_56 = l_0_56.CONTEXT_NAME_PROMPT_AGENT_SESSIONID
-          l_0_55 = l_0_55(l_0_56)
-          l_0_56 = mp
-          l_0_56 = l_0_56.get_contextdata
-          l_0_57 = mp
-          l_0_57 = l_0_57.CONTEXT_DATA_NET_PROMPT_FRAMEWORK
-          l_0_56 = l_0_56(l_0_57)
-          l_0_57 = MpCommon
-          l_0_57 = l_0_57.Base64Encode
-          l_0_58 = string
-          l_0_58 = l_0_58.sub
-          l_0_59 = l_0_10
-          l_0_60 = 1
-          l_0_61 = 1024
-          l_0_57 = l_0_57(l_0_58(l_0_59, l_0_60, l_0_61))
-          -- DECOMPILER ERROR at PC649: Confused about usage of register: R28 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC653: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC658: Confused about usage of register: R30 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC658: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC664: Confused about usage of register: R29 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC664: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC665: Overwrote pending register: R51 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC669: Confused about usage of register: R30 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC669: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC673: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC677: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC690: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC696: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC700: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC706: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC707: Overwrote pending register: R51 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC715: Overwrote pending register: R50 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC716: Overwrote pending register: R51 in 'AssignReg'
-
-          if (((not l_0_55 and l_0_56) or (MpCommon.IsSampled)(l_0_60, l_0_61, l_0_62, l_0_63) == false) and safeJsonSerialize({score = tostring(l_0_60), threshold = tostring(l_0_60), matched = (table.concat)(l_0_60, l_0_61), categories = (table.concat)(l_0_60, l_0_61), count = tostring(l_0_60), raw_matches = tostring(l_0_60), verb_gate = tostring(l_0_60), trigger = l_0_52 and "categorical" or "score", agent_session_id = tostring(l_0_60), framework = tostring(l_0_60), buffer_len = tostring(l_0_60), last_message = l_0_57, buffer = (MpCommon.Base64Encode)(l_0_60(l_0_61))}) == nil) or #safeJsonSerialize({score = tostring(l_0_60), threshold = tostring(l_0_60), matched = (table.concat)(l_0_60, l_0_61), categories = (table.concat)(l_0_60, l_0_61), count = tostring(l_0_60), raw_matches = tostring(l_0_60), verb_gate = tostring(l_0_60), trigger = l_0_52 and "categorical" or "score", agent_session_id = tostring(l_0_60), framework = tostring(l_0_60), buffer_len = tostring(l_0_60), last_message = l_0_57, buffer = (MpCommon.Base64Encode)(l_0_60(l_0_61))}) == 0 then
-            return mp.CLEAN
-          end
-          -- DECOMPILER ERROR at PC740: Overwrote pending register: R52 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC741: Overwrote pending register: R53 in 'AssignReg'
-
-          if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
-            (MpCommon.BmTriggerSig)(l_0_62, l_0_63, l_0_64)
-          end
-          -- DECOMPILER ERROR at PC746: Overwrote pending register: R52 in 'AssignReg'
-
-          ;
-          (mp.SetDetectionString)(l_0_62)
-          do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC751: Confused about usage of register R51 for local variables in 'ReleaseLocals'
-
-          -- DECOMPILER ERROR: 33 unprocessed JMP targets
         end
       end
     end
