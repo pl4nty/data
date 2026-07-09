@@ -281,23 +281,40 @@ end
 
         -- DECOMPILER ERROR at PC525: Confused about usage of register: R5 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC531: Confused about usage of register: R4 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC531: Confused about usage of register: R5 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC537: Confused about usage of register: R6 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC537: Confused about usage of register: R4 in 'UnsetPending'
 
         -- DECOMPILER ERROR at PC543: Confused about usage of register: R6 in 'UnsetPending'
 
-        if (l_0_1(l_0_3, "keytool") and l_0_1(l_0_26, "-importcert") and l_0_1(l_0_26, "-keystore /lib/security/cacerts")) or l_0_1(l_0_23, "keytool") and l_0_1(l_0_29, "-importcert") and l_0_1(l_0_29, "-keystore /lib/security/cacerts") then
+        -- DECOMPILER ERROR at PC549: Confused about usage of register: R6 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC555: Confused about usage of register: R6 in 'UnsetPending'
+
+        if (not l_0_1(l_0_3, "keytool") or (((l_0_1(l_0_26, "-importcert") or l_0_1(l_0_26, "-import ")) and l_0_1(l_0_26, "-keystore /lib/security/cacerts")) or not l_0_1(l_0_23, "keytool") or (not l_0_1(l_0_29, "-importcert") and not l_0_1(l_0_29, "-import ")) or l_0_1(l_0_29, "-keystore /lib/security/cacerts"))) then
+          return mp.CLEAN
+        end
+        -- DECOMPILER ERROR at PC576: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC582: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC588: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC594: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC600: Confused about usage of register: R5 in 'UnsetPending'
+
+        if ((not l_0_1(l_0_3, "/usr/sbin/recover") and not l_0_1(l_0_3, "/usr/bin/recover")) or (not l_0_1(l_0_26, "/usr/sbin/recover -s ") and not l_0_1(l_0_26, "/usr/bin/recover -s ")) or not l_0_1(l_0_26, " -a ") or not l_0_1(l_0_26, " -I -") or l_0_1(l_0_26, " -x ")) then
           return mp.CLEAN
         end
         local l_0_66, l_0_67, l_0_68 = nil
         if pcall(bm.get_process_relationships) then
           if bm.get_process_relationships ~= nil then
-            for l_0_72,l_0_73 in ipairs(R12_PC561) do
+            for l_0_72,l_0_73 in ipairs(R12_PC618) do
               local l_0_69, l_0_70, l_0_71, l_0_72, l_0_73 = nil
-              -- DECOMPILER ERROR at PC563: Confused about usage of register: R15 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC620: Confused about usage of register: R15 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC568: Confused about usage of register: R15 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC625: Confused about usage of register: R15 in 'UnsetPending'
 
               if l_0_56.image_path ~= nil then
                 (bm.add_related_process)(l_0_56.ppid)
@@ -306,65 +323,65 @@ end
           end
           do
             do
-              -- DECOMPILER ERROR at PC572: Confused about usage of register: R10 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC629: Confused about usage of register: R10 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC575: Confused about usage of register: R10 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC632: Confused about usage of register: R10 in 'UnsetPending'
 
               if l_0_73 ~= nil then
                 for l_0_77,l_0_78 in ipairs(l_0_73) do
                   local l_0_74, l_0_75, l_0_76, l_0_77, l_0_78 = nil
-                  -- DECOMPILER ERROR at PC578: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC635: Confused about usage of register: R15 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC583: Confused about usage of register: R15 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC640: Confused about usage of register: R15 in 'UnsetPending'
 
                   if l_0_56.image_path ~= nil then
                     (bm.add_related_process)(l_0_56.ppid)
-                    -- DECOMPILER ERROR at PC587: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC644: Confused about usage of register: R15 in 'UnsetPending'
 
                     if (string.find)(l_0_56.image_path, "/rpmkeys", 1, true) then
                       return mp.CLEAN
                     end
-                    -- DECOMPILER ERROR at PC599: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC656: Confused about usage of register: R15 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC608: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC665: Confused about usage of register: R15 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC617: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC674: Confused about usage of register: R15 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC626: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC683: Confused about usage of register: R15 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC635: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC692: Confused about usage of register: R15 in 'UnsetPending'
 
                     if (string.find)(l_0_56.image_path, "/dpkg-deb", 1, true) or (string.find)(l_0_56.image_path, "/dpkg-split", 1, true) or (string.find)(l_0_56.image_path, "/bin/dpkg", 1, true) or (string.find)(l_0_56.image_path, "/bin/dpkg-deb", 1, true) or (string.find)(l_0_56.image_path, "/bin/dpkg-split", 1, true) then
                       return mp.CLEAN
                     end
-                    -- DECOMPILER ERROR at PC645: Confused about usage of register: R15 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC702: Confused about usage of register: R15 in 'UnsetPending'
 
                     do
                       do
                         local l_0_84 = l_0_56.cmd_line or ""
-                        -- DECOMPILER ERROR at PC651: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC708: Confused about usage of register: R16 in 'UnsetPending'
 
                         if (string.find)(l_0_84, "/var/tmp/rpm-tmp.", 1, true) then
                           return mp.CLEAN
                         end
-                        -- DECOMPILER ERROR at PC663: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC720: Confused about usage of register: R16 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC672: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC729: Confused about usage of register: R16 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC681: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC738: Confused about usage of register: R16 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC690: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC747: Confused about usage of register: R16 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC699: Confused about usage of register: R16 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC756: Confused about usage of register: R16 in 'UnsetPending'
 
                         if (string.find)(l_0_84, "/usr/bin/dpkg-deb", 1, true) or (string.find)(l_0_84, "/usr/bin/dpkg-split", 1, true) or (string.find)(l_0_84, "/bin/dpkg ", 1, true) or (string.find)(l_0_84, "/bin/dpkg-deb", 1, true) or (string.find)(l_0_84, "/bin/dpkg-split", 1, true) then
                           return mp.CLEAN
                         end
-                        -- DECOMPILER ERROR at PC709: LeaveBlock: unexpected jumping out DO_STMT
+                        -- DECOMPILER ERROR at PC766: LeaveBlock: unexpected jumping out DO_STMT
 
-                        -- DECOMPILER ERROR at PC709: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC766: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                        -- DECOMPILER ERROR at PC709: LeaveBlock: unexpected jumping out IF_STMT
+                        -- DECOMPILER ERROR at PC766: LeaveBlock: unexpected jumping out IF_STMT
 
                       end
                     end
@@ -373,7 +390,7 @@ end
               end
               reportRelatedBmHits()
               do return mp.INFECTED end
-              -- DECOMPILER ERROR at PC716: freeLocal<0 in 'ReleaseLocals'
+              -- DECOMPILER ERROR at PC773: freeLocal<0 in 'ReleaseLocals'
 
             end
           end

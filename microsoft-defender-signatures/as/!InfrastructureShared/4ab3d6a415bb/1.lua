@@ -57,9 +57,9 @@ if l_0_1 then
       do
         local l_0_19 = nil
         do
-          local l_0_20, l_0_21, l_0_22 = , AnomalyTableCheck("Appomaly_ChildProcName", "Code.exe" .. "_" .. l_0_16, 30, "MarkerRecord_VSCode")
-          if l_0_22 and not "Appomaly_ChildProcName" then
-            l_0_19.AnomalyTableName = "Appomaly_ChildProcName"
+          local l_0_20, l_0_21, l_0_22 = , AnomalyTableCheck("Appomaly_ChildProcName_2", "Code.exe" .. "_" .. l_0_16, 30, "MarkerRecord_VSCode")
+          if l_0_22 and not "Appomaly_ChildProcName_2" then
+            l_0_19.AnomalyTableName = "Appomaly_ChildProcName_2"
             l_0_19.AnomalyTableInfo = "Code.exe" .. "_" .. l_0_16
             ;
             (bm.trigger_sig)("PFAppChildProc_G", safeJsonSerialize(l_0_19))
