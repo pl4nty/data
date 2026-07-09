@@ -1,10 +1,608 @@
 [
     {
+        "created": "2026-07-08T23:10:57",
+        "description": "When a user who has access to the SharePoint app in Teams clicks a SharePoint page or news link in Teams chat or channels, the link will open inside the SharePoint app in Teams (if available) instead of the mobile browser",
+        "id": 567314,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: SharePoint app in Teams"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "We are introducing a new integrated Microsoft Purview Data Loss Prevention (DLP) capability for Intune Mobile Application Management (MAM)-protected mobile apps, enabling organizations to apply content\u2011aware protection policies to sensitive data on mobile devices. This integration ensures that clipboard actions in managed mobile apps are evaluated against Purview DLP policies before sharing is allowed, helping reduce data leakage, insider risk, and exposure to advanced threats across mobile workflows. Additionally, Microsoft Purview Collection policies can be used to govern how sensitive data is being handled in mobile apps.  ",
+        "id": 567311,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention - Collection and DLP Policies for Intune-Policy Managed Apps"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "A new meeting option for Teams meetings with presenters and events that enables organizers to designate 'Who has control of production tools' during the event. Users defined here will have access to the controls in 'Manage What Attendees See' and the \u2018Green Room'.",
+        "id": 567305,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Specify who has control of production tools in Teams meetings and events"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "This feature enables IT admins to customize a portion of the user notification messages for recording and transcription during Teams calls.\n \n",
+        "id": 567302,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Ability for IT admins to customize the user notification messages for recording and transcription in calls"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "The new chats and channels experience introduced quick views at the top of the chat and channels list. These are views into mentions, followed threads and more. This update allows users to choose when and how these quick views are shown. Users will have options such as always show, always hide and show only when unread. Users will also be able to collapse the quick views section.",
+        "id": 567301,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: New controls for quick views in the chat list"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "This feature saves you time by automatically connecting your meetings to the correct CRM records. You have the right deal insights at your fingertips when preparing for customer conversations, so you can focus less on updating records and more on selling with confidence and context.",
+        "id": 567004,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Link meetings to CRM records automatically with AI"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "Walking into a customer meeting with incomplete context can mean missed risks, overlooked issues, and conversations that fall flat. With access to richer data, like service tickets, directly in your meeting prep, you can spot open issues and opportunities before the conversation starts. This insight helps you engage more meaningfully, build stronger relationships, and drive better sales outcomes.",
+        "id": 567003,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Enrich Sales agent meeting prep with more data sources"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "Sales agent gives you strong CRM-based account and opportunity summaries, but important context is often spread across non-CRM systems. With this capability, you can add insights from any application to enrich account and opportunity summaries in Sales agent, so sellers get a unified view of their accounts and deals in one place without switching applications.",
+        "id": 567002,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Add custom insights to record summaries in Sales agent"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "A multi\u2011channel outreach capability, spanning web chat, voice, SMS, and email, is critical for meeting customers in the channel they naturally prefer and increasing the likelihood of timely engagement. By activating the agent across multiple surfaces, we ensure continuity of conversations, reduce drop\u2011off when a single channel fails, and support the FY27 goal of always\u2011on, end\u2011to\u2011end engagement from initial intent to close. This creates higher response rates, faster qualification, and a more seamless handoff to sales motions.",
+        "id": 567001,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Engage customers across multiple channels (web, voice, SMS & email)"
+    },
+    {
+        "created": "2026-07-08T23:10:57",
+        "description": "To reach their sales goals, sales teams need to constantly generate enough pipeline. They need to decide which inbound leads to engage. This decision takes a lot of time because sellers must sift through large amounts of data across tools and data sources. This data includes information from internal systems like their CRM and external resources like the web and third-party data services.\nSales Agent handles the work of reviewing every available data source to create a comprehensive summary for each lead. As a seller, you can quickly decide whether to engage with a prospect or pass on them. Sales Agent reviews every lead in your queue and gathers information. It synthesizes insights that are specific to your business. At a glance, you can see if a lead is worth reaching out to and what they're interested in. Use this information to personalize your engagement with the prospect. With Sales Agent, you spend less time and get higher response rates, leading to a larger, more qualified pipeline.",
+        "id": 567000,
+        "locale": null,
+        "modified": "2026-07-08T23:10:57",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "June CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Engage prospects faster with Sales Agent-enriched leads"
+    },
+    {
         "created": "2026-07-07T23:10:08",
         "description": "Call delegation in Teams now includes new controls that give delegators greater privacy and control during active calls. Delegators can lock an ongoing call to prevent delegates from joining or resuming the call and can optionally enable warning tones that notify participants when a delegate joins or resumes a call.\n",
         "id": 567306,
         "locale": null,
-        "modified": "2026-07-07T23:10:08",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
@@ -34,6 +632,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -67,6 +668,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -6664,9 +7268,9 @@
         "description": "Feature description: Model Context Protocol (MCP) based agents in Microsoft 365 Copilot Chat will now be able to surface rich, interactive UI widgets directly within chat. This enhancement enables developers to deliver more engaging and structured agent interactions. Users will experience these widgets when interacting with agents that implement them, and admins will continue to manage these agents through the Microsoft 365 Admin Center.",
         "id": 564608,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7170,12 +7774,12 @@
         "description": "Users can now collaborate with Copilot to make improvements to email drafts. Select a section of the draft and ask Copilot to make changes, like changing its length, tone, or structure.",
         "id": 564605,
         "locale": null,
-        "modified": "2026-05-26T22:45:59",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8987,12 +9591,12 @@
         "description": "We\u2019re raising the bar on clarity and control with Interpreter. Admins can fully disable voice simulation via PowerShell when needed. Each speaker is automatically assigned a distinct voice, making multi-speaker conversations easier to follow. We\u2019re reducing distractions by showing shimmer effects only to Interpreter users. We\u2019ve added audio notifications to confirm activation, and we\u2019ve introduced in-product feedback mechanisms so users can easily share their input.",
         "id": 562035,
         "locale": null,
-        "modified": "2026-06-15T23:00:45",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9999,12 +10603,12 @@
         "description": "We are expanding Microsoft Purview DLP for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot. ",
         "id": 561892,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -18033,12 +18637,12 @@
         "description": "Customers can now view and understand their agent landscape through the new Overview page that will be included as part of the Agent Dashboard in Microsoft Viva. This experience will provide customers with key at-a-glance insights on adoption in their organizations and visibility into who\u2019s creating agents used in their organization.",
         "id": 559996,
         "locale": null,
-        "modified": "2026-06-26T22:01:51",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18698,7 +19302,7 @@
         "description": "Introducing a new \u201cRecent\u201d feed in Home to give users a more predictable view of followed and priority communications, while preserving the existing personalized \u201cFor you\u201d experience.",
         "id": 559482,
         "locale": null,
-        "modified": "2026-06-09T20:46:16",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
@@ -18716,6 +19320,9 @@
             },
             {
                 "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Viva"
@@ -18739,6 +19346,9 @@
                 },
                 {
                     "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -20949,9 +21559,9 @@
         "description": "Now you can add Microsoft Planner as a tab in shared and private channels in Microsoft Teams, which allows to create and manage tasks directly within the channel.\n \n",
         "id": 558928,
         "locale": null,
-        "modified": "2026-04-23T23:15:05",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38139,10 +38749,10 @@
         "description": "Deep citations let users quickly verify Copilot's results by linking directly to the relevant part of the reference, boosting trust. We're starting with Word and PPT files, then adding Meetings, Web, and PDF references.",
         "id": 523223,
         "locale": null,
-        "modified": "2026-03-13T22:00:48",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "August CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -57857,9 +58467,9 @@
         "description": "We\u2019re introducing more flexible and precise targeting capabilities in Viva Engage, starting with Storyline Announcements. This new feature allows leaders and their delegates to define a custom audience at the time of posting, without relying on pre-configured Leader Audiences. Audiences can be built, and saved for reuse, using organizational attributes such as department, job title, or country, existing groups like M365 Groups, distribution lists, or security groups, and even individual users by name. This flexibility enables more relevant communication, helping leaders reach the right people with the right message. Notifications and delivery channels, including Teams and email, will continue to follow existing Storyline Announcement behavior, ensuring a seamless experience for recipients. This feature is designed to help leaders tailor communications to specific departments, locations, or groups, enhancing engagement and relevance across the organization.",
         "id": 499895,
         "locale": null,
-        "modified": "2026-06-25T23:15:45",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -58204,12 +58814,12 @@
         "description": "Endpoint DLP can now classify Office files stored in Windows devices that have Azure RMS protection applied.  Classification will be triggered when file is used in applications or when just-in-time classification is enabled. ",
         "id": 503780,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -67470,12 +68080,12 @@
         "description": "Copilot supports document editing in Word through chat-based interactions with Agent Mode. Users can initiate edits, share clarifying directions, and review a summary of changes within the document. ",
         "id": 499428,
         "locale": null,
-        "modified": "2025-11-18T00:00:20",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -105736,10 +106346,10 @@
         "description": "Automatically backup all Exchange or OneDrive users and/or SharePoint sites in the tenant and have the tool automatically add new users/sites to the backup policy. ",
         "id": 464990,
         "locale": null,
-        "modified": "2024-10-29T23:15:28",
+        "modified": "2026-07-08T23:11:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "March CY2025",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
