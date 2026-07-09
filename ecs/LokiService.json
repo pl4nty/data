@@ -228,6 +228,7 @@
         "useMonarchAsDefaultApp": 1
     },
     "Clawpilot": {
+        "EnableInappFeedback": true,
         "allowedPersonalityIds": [
             "default",
             "sarcastic-teenager",

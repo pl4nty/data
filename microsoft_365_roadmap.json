@@ -66553,55 +66553,6 @@
     },
     {
         "created": "2025-08-11T23:00:11",
-        "description": "HTTPS-First Mode in Microsoft Edge automatically upgrades HTTP connections to HTTPS when possible.  If a site doesn\u2019t support HTTPS, Microsoft Edge shows a warning to highlight the security risk. This appears only for public sites\u2014not private ones or manually entered HTTP URLs. Users can enable the warning in edge://settings and admins can control availability to this feature using the HttpsOnlyMode policy.  ",
-        "id": 500162,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v.140 - HTTPS First Mode"
-    },
-    {
-        "created": "2025-08-11T23:00:11",
         "description": "Microsoft 365 companions is a suite of apps, including People, File Search, and Calendar, designed to enhance productivity through quick access to key tools directly from the Windows 11 taskbar. These lightweight apps integrate seamlessly with Microsoft 365, allowing users to efficiently look up contacts and navigate organization charts, locate files, view calendars and streamline workflows without distractions. \n",
         "id": 486856,
         "locale": null,
@@ -68241,103 +68192,6 @@
     },
     {
         "created": "2025-07-31T23:15:15",
-        "description": "Now users will be able to reason over attached content along with the body of the email in Copilot Chat. Supported file types are Word, Excel, PowerPoint, Pdf, Text, Json and Xml attached to the email (Classic Attachments).",
-        "id": 499656,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Developer"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Linux"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Developer"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Linux"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Teams and Surface Devices"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Chat] Email attachment summarization (Classic Attachments)"
-    },
-    {
-        "created": "2025-07-31T23:15:15",
         "description": "The News page renders news items in a given site. It is typically accessed via the \"see all\" experience of a news web part.  We are updating the user experience of this page and bringing in Copilot capabilities to licensed users. Updated February 9, 2026: GA rollout for this item is starting in late February. We apologize for any inconvenience.",
         "id": 499654,
         "locale": null,
@@ -68536,55 +68390,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention -- Always-on diagnostics for Windows Endpoints (Phase 2)"
-    },
-    {
-        "created": "2025-07-31T23:15:15",
-        "description": "Microsoft Edge now automatically saves tab groups, making it easier than ever for users to pick up where they left off. Organized tab groups are preserved and ready to revisit anytime, whether a user is switching tasks or restarting the browser.  Admins can control the availability of the feature using the \u201cSyncTypesListDisabled\u201d policy with the \u201copenTabs\u201d data type.",
-        "id": 499430,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v. 140 - Tab Groups \u2013 Auto-Save and Easy Revisit"
     },
     {
         "created": "2025-07-30T23:15:18",
@@ -75031,61 +74836,6 @@
     },
     {
         "created": "2025-06-19T23:00:45",
-        "description": "Instead of uploading a file, users can quickly include a file in their prompt as a reference by typing '/' and selecting one from the ContextIQ menu. This feature applies to users without a Microsoft 365 Copilot license (Copilot Chat users) and to users with a license (Microsoft 365 Copilot users) when they are toggled to web scope in chat.",
-        "id": 497112,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Use ContextIQ file suggestions in Copilot Chat"
-    },
-    {
-        "created": "2025-06-19T23:00:45",
         "description": "Scoped access enables managers to view Copilot insights specific to their own organizations both on the Copilot Dashboard and in additional Copilot reports on the Reports page. This allows leaders at different levels to monitor adoption and impact within their teams, while respecting organizational boundaries and privacy. Admins can configure access criteria and set minimum thresholds.",
         "id": 497111,
         "locale": null,
@@ -75515,61 +75265,6 @@
             ]
         },
         "title": "Microsoft Teams: Noise Suppression for Dial-In Participants in Teams Audio Conferences"
-    },
-    {
-        "created": "2025-06-16T23:15:08",
-        "description": "The Cloud Update feature will transition to General Availability. Admins can manage monthly updates for Microsoft 365 Apps for Enterprise using our automation services. ",
-        "id": 496594,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update",
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 Apps: Cloud Update"
     },
     {
         "created": "2025-06-16T23:15:08",
@@ -105774,55 +105469,6 @@
         "title": "OneDrive: Sync admin reports - GCC"
     },
     {
-        "created": "2024-04-10T17:15:17",
-        "description": "Tabs that have been sleeping for a long time will be discarded to save memory. When a user navigates back to a discarded tab, the tab will need to be reloaded. This can be managed through the AutoDiscardSleepingTabsEnabled policy. This policy will be enabled if the SleepingTabsEnabled policy is enabled.",
-        "id": 392848,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: v.140 - Auto-discarding Sleeping Tabs"
-    },
-    {
         "created": "2023-10-16T23:35:31",
         "description": "This feature is about improving the alerting capabilities and customization in Communication Compliance.",
         "id": 181825,
@@ -106181,55 +105827,6 @@
             ]
         },
         "title": "Outlook: People Hub improvements in new Outlook for Windows"
-    },
-    {
-        "created": "2023-08-29T23:20:56",
-        "description": "This feature enables Glint Admins to assign custom access to Surveys, Focus Areas, and Administration in bulk using Roles. Access can be tailored further by defining filter populations within the Role.",
-        "id": 163976,
-        "locale": null,
-        "modified": "2025-09-08T23:45:21",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Glint - Self service for bulk custom access"
     },
     {
         "created": "2024-10-29T23:15:28",

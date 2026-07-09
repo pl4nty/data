@@ -163,7 +163,7 @@
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
     </o:service>
     <o:service o:name="HomeRealmDiscovery">
-      <o:url>https://odc.officeapps.live.com/odc/emailhrd</o:url>
+      <o:url>https://odc.officeapps.live.com/odc/v2.0/hrd</o:url>
     </o:service>
     <o:service o:name="GetFederationProvider">
       <o:url>https://odc.officeapps.live.com/odc/emailhrd/getfederationprovider</o:url>
@@ -1396,6 +1396,9 @@
     <o:service o:name="PdfConvertWord">
       <o:url>https://wordcs.officeapps.live.com/document/export/pdf</o:url>
     </o:service>
+    <o:service o:name="DocxConvertWord">
+      <o:url>https://wordcs.officeapps.live.com/document/convert</o:url>
+    </o:service>
     <o:service o:name="PdfConvertExcel">
       <o:url>https://excelcs.officeapps.live.com/document/export/pdf</o:url>
     </o:service>
@@ -1714,6 +1717,11 @@
     </o:service>
     <o:service o:name="SubstratePUDSScanOutputSettingsUrl" o:authentication="2">
       <o:url>https://substrate.office.com/puds/v1/me/settings/scan/outputSettings</o:url>
+      <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="substrate.office.com" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
+    <o:service o:name="SubstrateAihubServiceBaseUrl" o:authentication="2">
+      <o:url>https://substrate.office.com/aihubservice</o:url>
       <o:ticket o:policy="MBI_SSL" o:idprovider="1" o:target="substrate.office.com" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://substrate.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -2648,6 +2656,7 @@
     <o:token o:name="AllowAugLoopServiceUrlOverride">true</o:token>
     <o:token o:name="ECOESpecialAddinMonitoringList">wa200009404;wa200010001;wa200010725;29673e3c-d826-4f00-92ee-162334a52b1a;wa200010453;wa200009152;wa200010215;wa200008646</o:token>
     <o:token o:name="NewOutlookCloudId">1</o:token>
+    <o:token o:name="ConvergedAuthScope">c1f66aa2-edcf-4a40-81cb-7710724e8e04/.default</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
