@@ -1,5 +1,10 @@
 [
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-07-01",
+        "Published": "July 6, 2026",
+        "Patch level": "2026-07-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/2026/2026-06-01",
         "Published": "June 1, 2026",
         "Patch level": "2026-06-01",
@@ -70622,6 +70627,46 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-07-01",
+        "Published": "July 7, 2026",
+        "Patch level": "2026-07-05",
+        "Abbreviation": "RCE",
+        "Definition": "Remote code execution",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-07-01",
+        "Published": "July 7, 2026",
+        "Patch level": "2026-07-05",
+        "Abbreviation": "EoP",
+        "Definition": "Elevation of privilege",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-07-01",
+        "Published": "July 7, 2026",
+        "Patch level": "2026-07-05",
+        "Abbreviation": "ID",
+        "Definition": "Information disclosure",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-07-01",
+        "Published": "July 7, 2026",
+        "Patch level": "2026-07-05",
+        "Abbreviation": "DoS",
+        "Definition": "Denial of service",
+        "Component": "Security patches"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-07-01",
+        "Published": "July 7, 2026",
+        "Patch level": "2026-07-05",
+        "Abbreviation": "N/A",
+        "Definition": "Classification not available",
+        "Component": "Security patches"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-06-01",
         "Published": "June 16, 2026",
         "Patch level": "2026-06-05",
@@ -95324,6 +95369,11 @@
         "Subcomponent": "Camera driver"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-07-01",
+        "Published": "July 6, 2026",
+        "Patch level": "2026-07-01"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-06-01",
         "Published": "June 1, 2026",
         "Patch level": "2026-06-01"
@@ -95962,6 +96012,11 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/aaos/2021-01-01",
         "Published": "January 12, 2021",
         "Patch level": "2021-01-01"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-07-01",
+        "Published": "July 6, 2026",
+        "Patch level": "2026-07-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/xr/2026/2026-06-01",
@@ -96661,6 +96716,11 @@
         "Severity": "High",
         "Updated AOSP versions": "10",
         "Component": "System"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-07-01",
+        "Published": "July 6, 2026",
+        "Patch level": "2026-07-01"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/wear/2026/2026-06-01",
