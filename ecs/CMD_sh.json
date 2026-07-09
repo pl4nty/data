@@ -44,8 +44,6 @@
         "BackfillAppliedPolicyMexicoGeoLocation": true,
         "BackfillAustralAsiaGeoLocation": true,
         "BackfillCloudAppListForImages": true,
-        "BackfillFluSnapshotResetMode": true,
-        "BackfillFluSnapshotResetModeTenant": true,
         "BackfillMexicoGeoLocation": true,
         "BlockGccCommercialTenant": true,
         "BlockRunTimeAfterEndTime": true,
@@ -1562,9 +1560,6 @@
     },
     "MMD": {
         "TenantSettingApi": true
-    },
-    "Segmentation": {
-        "FrontierAdminAudience": "None"
     },
     "WCXTest": {
         "EnableAzureBlobCache": true,

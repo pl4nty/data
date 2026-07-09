@@ -314,6 +314,7 @@
     "SVC_AndroidSync": {
         "FlightingV2": {
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
+            "DisableExpiredCertDecryptionForLocateDevice": true,
             "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidCpWebEnrollment": true,
             "EnableAndroidDeviceGatewayService": true,
@@ -684,6 +685,7 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
+            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
