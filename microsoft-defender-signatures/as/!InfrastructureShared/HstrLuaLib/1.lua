@@ -1238,51 +1238,79 @@ candidatePeFile = function()
   return true
 end
 
-getScannedRegions = function(l_13_0)
+getScannedRegions = function(l_13_0, l_13_1)
   -- function num : 0_12
   if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
     return 1
   end
-  local l_13_1 = (mp.GetScannedPPID)()
-  local l_13_2 = (mp.GetSMSMemRanges)()
-  local l_13_3 = "memRegionsMetadata"
+  local l_13_2 = (mp.GetScannedPPID)()
+  local l_13_3 = (mp.GetSMSMemRanges)()
   local l_13_4 = 0
   local l_13_5 = 0
-  local l_13_6 = {}
-  l_13_6.ppid = l_13_1
-  l_13_6.arch = (mp.GetSMSProcArchitecture)()
-  l_13_6.sig_matched = l_13_0
-  l_13_6.nRegions = 0
-  l_13_6.nCollectedRegions = 0
-  l_13_6.regions = {}
-  for l_13_10,l_13_11 in ipairs(l_13_2) do
+  local l_13_6 = 0
+  local l_13_7 = {}
+  l_13_7.ppid = l_13_2
+  l_13_7.arch = (mp.GetSMSProcArchitecture)()
+  l_13_7.sig_matched = l_13_0
+  l_13_7.nRegions = 0
+  l_13_7.nCollectedRegions = 0
+  l_13_7.regions = {}
+  l_13_7.nThreads = 0
+  l_13_7.nCollectedThreads = 0
+  l_13_7.threads = {}
+  for l_13_11,l_13_12 in ipairs(l_13_3) do
     l_13_4 = l_13_4 + 1
     if l_13_5 <= 150 then
-      if not l_13_11.addr or not l_13_11.size or not l_13_11.prot or not l_13_11.alloc_prot then
+      if not l_13_12.addr or not l_13_12.size or not l_13_12.prot or not l_13_12.alloc_prot then
         return 3
       end
-      if (mp.bitand)(l_13_11.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_11.state_type, mp.SMS_MBI_MAPPED) == 0 then
-        local l_13_12 = l_13_6.regions
-        local l_13_13 = #l_13_6.regions + 1
-        local l_13_14 = {}
-        l_13_14.addr = l_13_11.addr
-        l_13_14.size = l_13_11.size
-        l_13_14.alloc_prot = l_13_11.alloc_prot
-        l_13_14.prot = l_13_11.prot
-        l_13_14.state_type = l_13_11.state_type
-        l_13_14.flags = l_13_11.flags
-        l_13_12[l_13_13] = l_13_14
+      if (mp.bitand)(l_13_12.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_12.state_type, mp.SMS_MBI_MAPPED) == 0 then
+        local l_13_13 = l_13_7.regions
+        local l_13_14 = #l_13_7.regions + 1
+        local l_13_15 = {}
+        l_13_15.addr = l_13_12.addr
+        l_13_15.size = l_13_12.size
+        l_13_15.alloc_prot = l_13_12.alloc_prot
+        l_13_15.prot = l_13_12.prot
+        l_13_15.state_type = l_13_12.state_type
+        l_13_15.flags = l_13_12.flags
+        l_13_13[l_13_14] = l_13_15
         l_13_5 = l_13_5 + 1
       end
     end
   end
-  l_13_6.nRegions = l_13_4
-  l_13_6.nCollectedRegions = l_13_5
-  local l_13_15 = (MpCommon.JsonSerialize)(l_13_6)
-  local l_13_16 = (MpCommon.Base64Encode)(l_13_15)
-  AppendToRollingQueue(l_13_3, "data", l_13_16)
+  l_13_7.nRegions = l_13_4
+  l_13_7.nCollectedRegions = l_13_5
+  local l_13_16, l_13_17 = (mp.GetSMSThreadInfo)()
+  for l_13_21,l_13_22 in pairs(l_13_16) do
+    if l_13_6 < l_13_17 and l_13_6 < 20 then
+      do
+        if (mp.GetSMSMappedFilename)(l_13_22.StartAddr) == nil then
+          local l_13_23 = ""
+        end
+        local l_13_24 = nil
+        local l_13_25 = l_13_7.threads
+        do
+          local l_13_26 = #l_13_7.threads + 1
+          l_13_25[l_13_26] = {ptid = l_13_22.PTID, creator_ptid = l_13_22.CreatorPTID, start_addr = l_13_22.StartAddr, mod_path = l_13_24}
+          l_13_6 = l_13_6 + 1
+          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
+  end
+  l_13_7.nThreads = l_13_17
+  l_13_7.nCollectedThreads = l_13_6
+  local l_13_27 = (MpCommon.JsonSerialize)(l_13_7)
+  local l_13_28 = (MpCommon.Base64Encode)(l_13_27)
+  AppendToRollingQueue(l_13_1, "data", l_13_28)
   ;
-  (MpCommon.BmTriggerSig)(l_13_1, l_13_3, (string.format)("nRegions %d", l_13_4))
+  (MpCommon.BmTriggerSig)(l_13_2, "memRegionsMetadata", (string.format)("nRegions %d", l_13_4))
   return 0
 end
 

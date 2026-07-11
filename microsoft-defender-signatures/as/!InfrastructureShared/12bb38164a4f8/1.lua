@@ -24,8 +24,9 @@ else
   end
 end
 local l_0_1 = (bm.get_current_process_startup_info)()
-AppendToRollingQueue("memPagesMetadata", "PPID", l_0_1.ppid, 60)
-AppendToRollingQueue("memPagesMetadata", "sig_matched", l_0_0, 60)
+local l_0_2 = "memPagesMetadata_" .. l_0_1.ppid
+AppendToRollingQueue(l_0_2, "PPID", l_0_1.ppid, 310)
+AppendToRollingQueue(l_0_2, "sig_matched", l_0_0, 310)
 ;
 (bm.request_SMS)(l_0_1.ppid, "h+")
 return mp.INFECTED

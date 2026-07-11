@@ -7,16 +7,17 @@ local l_0_0 = GetCurrentPPID()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = GetRollingQueueKeyValue("memPagesMetadata", "PPID")
-if not l_0_1 then
+local l_0_1 = "memPagesMetadata_" .. l_0_0
+local l_0_2 = GetRollingQueueKeyValue(l_0_1, "PPID")
+if not l_0_2 then
   return mp.CLEAN
 end
-if l_0_1 ~= l_0_0 then
+if l_0_2 ~= l_0_0 then
   return mp.CLEAN
 end
-local l_0_2 = GetRollingQueueKeyValue("memPagesMetadata", "sig_matched")
-if getScannedRegions(l_0_2) == 0 then
-  return mp.INFECTED
+local l_0_3 = GetRollingQueueKeyValue(l_0_1, "sig_matched")
+if getScannedRegions(l_0_3, l_0_1) == 0 then
+  return mp.SUSPICIOUS
 end
 return mp.CLEAN
 
