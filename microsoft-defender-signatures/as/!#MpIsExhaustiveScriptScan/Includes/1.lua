@@ -30,7 +30,7 @@ do
     if IsKeyValuePairInRollingQueue(l_0_5, l_0_0, l_0_4) then
       return mp.CLEAN
     end
-    if not AppendToRollingQueue(l_0_5, l_0_0, l_0_4, 86400) then
+    if not AppendToRollingQueue(l_0_5, l_0_0, l_0_4, 28800) then
       return mp.CLEAN
     end
   end
