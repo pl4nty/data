@@ -1240,78 +1240,104 @@ end
 
 getScannedRegions = function(l_13_0, l_13_1)
   -- function num : 0_12
+  local l_13_2 = (MpCommon.GetCurrentTimeT)()
   if (mp.GetHSTRCallerId)() ~= mp.HSTR_CALLER_SMS then
     return 1
   end
-  local l_13_2 = (mp.GetScannedPPID)()
-  local l_13_3 = (mp.GetSMSMemRanges)()
-  local l_13_4 = 0
+  local l_13_3 = (mp.GetScannedPPID)()
+  local l_13_4 = (mp.GetSMSMemRanges)()
   local l_13_5 = 0
   local l_13_6 = 0
-  local l_13_7 = {}
-  l_13_7.ppid = l_13_2
-  l_13_7.arch = (mp.GetSMSProcArchitecture)()
-  l_13_7.sig_matched = l_13_0
-  l_13_7.nRegions = 0
-  l_13_7.nCollectedRegions = 0
-  l_13_7.regions = {}
-  l_13_7.nThreads = 0
-  l_13_7.nCollectedThreads = 0
-  l_13_7.threads = {}
-  for l_13_11,l_13_12 in ipairs(l_13_3) do
-    l_13_4 = l_13_4 + 1
-    if l_13_5 <= 150 then
-      if not l_13_12.addr or not l_13_12.size or not l_13_12.prot or not l_13_12.alloc_prot then
-        return 3
-      end
-      if (mp.bitand)(l_13_12.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_12.state_type, mp.SMS_MBI_MAPPED) == 0 then
-        local l_13_13 = l_13_7.regions
-        local l_13_14 = #l_13_7.regions + 1
-        local l_13_15 = {}
-        l_13_15.addr = l_13_12.addr
-        l_13_15.size = l_13_12.size
-        l_13_15.alloc_prot = l_13_12.alloc_prot
-        l_13_15.prot = l_13_12.prot
-        l_13_15.state_type = l_13_12.state_type
-        l_13_15.flags = l_13_12.flags
-        l_13_13[l_13_14] = l_13_15
-        l_13_5 = l_13_5 + 1
+  local l_13_7 = 0
+  local l_13_8 = {}
+  l_13_8.ppid = l_13_3
+  l_13_8.arch = (mp.GetSMSProcArchitecture)()
+  l_13_8.sig_matched = l_13_0
+  l_13_8.scan_count = 0
+  l_13_8.scan_time_diff = 0
+  l_13_8.nRegions = 0
+  l_13_8.nCollectedRegions = 0
+  l_13_8.regions = {}
+  l_13_8.nThreads = 0
+  l_13_8.nCollectedThreads = 0
+  l_13_8.threads = {}
+  local l_13_9 = false
+  local l_13_10 = "getScannedRegions_" .. l_13_3
+  local l_13_11 = 1
+  local l_13_12 = GetRollingQueueKeyValue(l_13_10, "scan_count")
+  if l_13_12 then
+    l_13_11 = l_13_12 + 1
+    local l_13_13 = GetRollingQueueKeyValue(l_13_1, "start_time_procdump_a")
+    local l_13_14 = l_13_2 - l_13_13
+    l_13_8.scan_time_diff = l_13_14
+    if l_13_11 == 2 and l_13_14 < 10 then
+      return 4
+    else
+      if l_13_11 >= 3 then
+        return 5
       end
     end
+    l_13_9 = true
   end
-  l_13_7.nRegions = l_13_4
-  l_13_7.nCollectedRegions = l_13_5
-  local l_13_16, l_13_17 = (mp.GetSMSThreadInfo)()
-  for l_13_21,l_13_22 in pairs(l_13_16) do
-    if l_13_6 < l_13_17 and l_13_6 < 20 then
-      do
-        if (mp.GetSMSMappedFilename)(l_13_22.StartAddr) == nil then
-          local l_13_23 = ""
+  do
+    AppendToRollingQueue(l_13_10, "scan_count", l_13_11)
+    l_13_8.scan_count = l_13_11
+    for l_13_18,l_13_19 in ipairs(l_13_4) do
+      l_13_5 = l_13_5 + 1
+      if l_13_6 < 150 then
+        if not l_13_19.addr or not l_13_19.size or not l_13_19.prot or not l_13_19.alloc_prot or not l_13_19.state_type or not l_13_19.flags then
+          return 3
         end
-        local l_13_24 = nil
-        local l_13_25 = l_13_7.threads
-        do
-          local l_13_26 = #l_13_7.threads + 1
-          l_13_25[l_13_26] = {ptid = l_13_22.PTID, creator_ptid = l_13_22.CreatorPTID, start_addr = l_13_22.StartAddr, mod_path = l_13_24}
+        if (mp.bitand)(l_13_19.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_19.state_type, mp.SMS_MBI_MAPPED) == 0 then
+          local l_13_20 = l_13_8.regions
+          local l_13_21 = #l_13_8.regions + 1
+          local l_13_22 = {}
+          l_13_22.addr = l_13_19.addr
+          l_13_22.size = l_13_19.size
+          l_13_22.alloc_prot = l_13_19.alloc_prot
+          l_13_22.prot = l_13_19.prot
+          l_13_22.state_type = l_13_19.state_type
+          l_13_22.flags = l_13_19.flags
+          l_13_20[l_13_21] = l_13_22
           l_13_6 = l_13_6 + 1
-          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC125: LeaveBlock: unexpected jumping out IF_STMT
-
         end
       end
     end
+    l_13_8.nRegions = l_13_5
+    l_13_8.nCollectedRegions = l_13_6
+    local l_13_23, l_13_24 = (mp.GetSMSThreadInfo)()
+    for l_13_28,l_13_29 in pairs(l_13_23) do
+      if l_13_7 < l_13_24 and l_13_7 < 20 then
+        do
+          if (mp.GetSMSMappedFilename)(l_13_29.StartAddr) == nil then
+            local l_13_30 = ""
+          end
+          local l_13_31 = nil
+          local l_13_32 = l_13_8.threads
+          do
+            local l_13_33 = #l_13_8.threads + 1
+            l_13_32[l_13_33] = {ptid = l_13_29.PTID, creator_ptid = l_13_29.CreatorPTID, start_addr = l_13_29.StartAddr, mod_path = l_13_31}
+            l_13_7 = l_13_7 + 1
+            -- DECOMPILER ERROR at PC172: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC172: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC172: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+    end
+    l_13_8.nThreads = l_13_24
+    l_13_8.nCollectedThreads = l_13_7
+    local l_13_34 = (MpCommon.JsonSerialize)(l_13_8)
+    local l_13_35 = (MpCommon.Base64Encode)(l_13_34)
+    AppendToRollingQueue(l_13_1, "data", l_13_35)
+    local l_13_36 = "memRegionsMetadata_" .. l_13_11
+    ;
+    (MpCommon.BmTriggerSig)(l_13_3, l_13_36, (string.format)("nCollectedRegions %d", l_13_6))
+    return 0
   end
-  l_13_7.nThreads = l_13_17
-  l_13_7.nCollectedThreads = l_13_6
-  local l_13_27 = (MpCommon.JsonSerialize)(l_13_7)
-  local l_13_28 = (MpCommon.Base64Encode)(l_13_27)
-  AppendToRollingQueue(l_13_1, "data", l_13_28)
-  ;
-  (MpCommon.BmTriggerSig)(l_13_2, "memRegionsMetadata", (string.format)("nRegions %d", l_13_4))
-  return 0
 end
 
 verify_non_prod_rings = function()

@@ -3,31 +3,37 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = ""
+local l_0_0 = (MpCommon.GetCurrentTimeT)()
+local l_0_1 = ""
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).utf8p1
+  l_0_1 = (this_sigattrlog[1]).utf8p1
 else
   if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
-    l_0_0 = (this_sigattrlog[2]).utf8p1
+    l_0_1 = (this_sigattrlog[2]).utf8p1
   else
     if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p1 ~= nil then
-      l_0_0 = (this_sigattrlog[3]).utf8p1
+      l_0_1 = (this_sigattrlog[3]).utf8p1
     else
       if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
-        l_0_0 = (this_sigattrlog[4]).utf8p1
+        l_0_1 = (this_sigattrlog[4]).utf8p1
       else
         if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p1 ~= nil then
-          l_0_0 = (this_sigattrlog[5]).utf8p1
+          l_0_1 = (this_sigattrlog[5]).utf8p1
         end
       end
     end
   end
 end
-local l_0_1 = (bm.get_current_process_startup_info)()
-local l_0_2 = "memPagesMetadata_" .. l_0_1.ppid
-AppendToRollingQueue(l_0_2, "PPID", l_0_1.ppid, 310)
-AppendToRollingQueue(l_0_2, "sig_matched", l_0_0, 310)
+local l_0_2 = (bm.get_current_process_startup_info)()
+local l_0_3 = "memPagesMetadata_" .. l_0_2.ppid
+AppendToRollingQueue(l_0_3, "PPID", l_0_2.ppid, 250)
+AppendToRollingQueue(l_0_3, "sig_matched", l_0_1, 250)
+AppendToRollingQueue(l_0_3, "start_time_procdump_a", l_0_0, 250)
 ;
-(bm.request_SMS)(l_0_1.ppid, "h+")
+(bm.request_SMS)(l_0_2.ppid, "h+")
+;
+(bm.add_action)("SmsAsyncScanEvent", 0)
+;
+(bm.add_action)("SmsAsyncScanEvent", 10000)
 return mp.INFECTED
 
