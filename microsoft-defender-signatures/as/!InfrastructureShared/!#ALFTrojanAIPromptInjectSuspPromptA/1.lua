@@ -781,7 +781,7 @@ if (l_0_31 < l_0_38 and l_0_43) or l_0_43 < l_0_38 then
 
       -- DECOMPILER ERROR at PC884: Overwrote pending register: R46 in 'AssignReg'
 
-      if (MpCommon.IsSampled)(1000, true, true, l_0_50) ~= false or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
+      if (MpCommon.IsSampled)(10000, true, true, l_0_50) ~= false or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
         (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), l_0_50, l_0_51)
       end
       -- DECOMPILER ERROR at PC889: Confused about usage of register: R40 in 'UnsetPending'

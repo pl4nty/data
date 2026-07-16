@@ -690,7 +690,7 @@ do
 
                   -- DECOMPILER ERROR at PC778: Overwrote pending register: R45 in 'AssignReg'
 
-                  if (MpCommon.IsSampled)(1000, true, l_0_60, l_0_61) ~= false or R41_PC766 then
+                  if (MpCommon.IsSampled)(10000, true, l_0_60, l_0_61) ~= false or R41_PC766 then
                     (MpCommon.BmTriggerSig)(l_0_60, l_0_61, l_0_62)
                   end
                   -- DECOMPILER ERROR at PC782: Overwrote pending register: R43 in 'AssignReg'
