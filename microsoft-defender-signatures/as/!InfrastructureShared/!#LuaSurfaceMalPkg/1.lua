@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattributesubstring)("Detection:Trojan:JS") and not (mp.get_mpattributesubstring)("Detection:Trojan:AIGen") then
+if not (mp.get_mpattributesubstring)("Detection:Trojan:JS") and not (mp.get_mpattributesubstring)("Detection:Trojan:AIGen") and not (mp.get_mpattributesubstring)("Detection:Trojan:Script") then
   return mp.CLEAN
 end
 if not (mp.get_mpattribute)("Lua:FileExtensionAttr!js") and not (mp.get_mpattribute)("Lua:FileExtensionAttr!mjs") and not (mp.get_mpattribute)("Lua:FileExtensionAttr!cjs") and not (mp.get_mpattribute)("Lua:FileExtensionAttr!gyp") then
