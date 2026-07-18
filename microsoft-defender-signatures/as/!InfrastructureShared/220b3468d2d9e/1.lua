@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\220b3bfdb8708\1.luac 
+-- Command line: lua\!InfrastructureShared\220b3468d2d9e\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -20,6 +20,7 @@ if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil and (this
   l_0_3 = (string.lower)((this_sigattrlog[6]).utf8p2)
 end
 if l_0_3 ~= "" and l_0_3 ~= nil and (string.find)(l_0_3, "post", 1, true) and (string.find)(l_0_3, "buildid", 1, true) and (string.find)(l_0_3, "/api/metrics/run?event=", 1, true) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN

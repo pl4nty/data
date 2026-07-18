@@ -23,6 +23,7 @@ if l_0_3 == nil or l_0_3 == "" then
   return mp.CLEAN
 end
 if (string.find)(l_0_3, "http", 1, true) and (string.find)(l_0_3, ".aspx", 1, true) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN
