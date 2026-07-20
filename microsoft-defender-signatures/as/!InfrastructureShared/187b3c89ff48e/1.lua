@@ -4,10 +4,10 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.GetParentProcInfo)()
-local l_0_1 = (string.lower)(l_0_0.image_path)
 if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
+local l_0_1 = (string.lower)(l_0_0.image_path)
 if not StringEndsWith(l_0_1, "\\w3wp.exe") then
   return mp.CLEAN
 end
