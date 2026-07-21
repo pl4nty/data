@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_CNAME))
-if l_0_0 == nil or #l_0_0 == 0 or l_0_0:sub(-7) ~= ".config" then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_FNAME))
+if l_0_0 == nil or #l_0_0 == 0 or l_0_0:match("^%d%d%d%d%d%d%d%d_vpn_") or l_0_0:sub(-16) ~= ".config->(utf-8)" then
   return mp.CLEAN
 end
 local l_0_1 = "uint ConfigRevision "
@@ -24,18 +24,11 @@ local l_0_4 = (string.match)(l_0_3, "%s*(%d+)")
 if l_0_4 == nil then
   return mp.CLEAN
 end
-do
-  if (mp.get_mpattribute)("RPF:TopLevelFile") then
-    local l_0_5 = "ROQ_SECFG_REV"
-    if IsKeyValuePairInRollingQueue(l_0_5, l_0_0, l_0_4) then
-      return mp.CLEAN
-    end
-    if not AppendToRollingQueue(l_0_5, l_0_0, l_0_4, 28800) then
-      return mp.CLEAN
-    end
-  end
-  ;
-  (mp.set_mpattribute)("Lua:SoftEtherConfigScan")
-  return mp.INFECTED
+if IsKeyValuePairInRollingQueue("RQ_SECFG_REV", l_0_0, l_0_4) then
+  return mp.CLEAN
 end
+AppendToRollingQueue("RQ_SECFG_REV", l_0_0, l_0_4, 28800)
+;
+(mp.set_mpattribute)("Lua:SoftEtherConfig")
+return mp.INFECTED
 
