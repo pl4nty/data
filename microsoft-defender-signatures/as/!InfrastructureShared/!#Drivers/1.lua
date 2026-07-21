@@ -89,7 +89,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_8.bs_def64 = {"bsdef64_asr_driver", 0, 0}
       l_0_8.lenovodiagnosticsdriver = {"lenovodiag_asr_driver", 0, 5.6294995342131e+14}
       l_0_8.superbmc = {"superbmc_asr_driver", 0, 5.6294995342131e+14}
-      if (MpCommon.IsSampled)(60000, false, false, false) == true then
+      if (MpCommon.IsSampled)(80000, false, false, false) == true then
         l_0_8.procexp = {"procexp_asr_driver", 0, 1114121}
       else
         l_0_8.procexp = {"procexp_asr_driver", 0, 4.7850746040812e+15}
@@ -484,7 +484,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = MpCommon
       l_0_9 = l_0_9.IsSampled
-      l_0_10 = 15000
+      l_0_10 = 30000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -509,7 +509,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       end
       l_0_9 = MpCommon
       l_0_9 = l_0_9.IsSampled
-      l_0_10 = 1000
+      l_0_10 = 2000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -552,7 +552,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
           if l_0_11 == l_0_12 then
             l_0_11 = MpCommon
             l_0_11 = l_0_11.IsSampled
-            l_0_12 = 60000
+            l_0_12 = 80000
             l_0_13 = false
             l_0_14 = false
             l_0_11 = l_0_11(l_0_12, l_0_13, l_0_14, false)

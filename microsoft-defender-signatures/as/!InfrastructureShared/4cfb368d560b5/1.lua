@@ -66,10 +66,14 @@ end
     local l_0_21 = "IsClickFixCMD"
     do
       l_0_20(l_0_21, l_0_19, l_0_6 or "1", 600, 200, 1)
+      l_0_20 = bm
+      l_0_20 = l_0_20.add_related_string
+      l_0_21 = "ETW_ClipWrite_CMD"
+      l_0_20(l_0_21, tostring(l_0_5), bm.RelatedStringBMReport)
       l_0_20 = mp
       l_0_20 = l_0_20.INFECTED
       do return l_0_20 end
-      -- DECOMPILER ERROR at PC461: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC470: freeLocal<0 in 'ReleaseLocals'
 
     end
   end
