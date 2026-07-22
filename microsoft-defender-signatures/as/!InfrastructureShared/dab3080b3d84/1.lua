@@ -1,11 +1,8 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\dab37db7ef2a\1.luac 
+-- Command line: lua\!InfrastructureShared\dab3080b3d84\1.luac 
 
 -- params : ...
 -- function num : 0
-if not IsBasToolProcessForPpid("BM", "AttackIQ") and not IsBasToolProcessFoundInParents("BM", "AttackIQ", 4) then
-  return mp.CLEAN
-end
 local l_0_0 = (versioning.GetOrgID)()
 if isnull(l_0_0) then
   return mp.CLEAN
@@ -25,6 +22,9 @@ l_0_2 = (string.lower)(l_0_2)
 if (string.find)(l_0_2, "\\lsass.exe", 1, true) or (string.find)(l_0_2, "\\services.exe", 1, true) then
   return mp.CLEAN
 end
+if (mp.IsKnownFriendlyFile)(l_0_2, true, false) then
+  return mp.CLEAN
+end
 local l_0_3, l_0_4 = nil, nil
 if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 then
   l_0_3 = (this_sigattrlog[2]).utf8p1
@@ -38,6 +38,6 @@ if l_0_3 and l_0_4 then
   (bm.add_related_string)("LSA_SECRETS_PATH2", l_0_4, bm.RelatedStringBMReport)
 end
 add_parents()
-TrackPidAndTechniqueBM("BM", "T1003.004", "SAMDumpingLsaSecrets.A")
+TrackPidAndTechniqueBM("BM", "T1003.004", "SAMDumpingLsaSecrets.B")
 return mp.INFECTED
 

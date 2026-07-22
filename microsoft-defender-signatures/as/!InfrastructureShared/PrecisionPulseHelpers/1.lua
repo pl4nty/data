@@ -10,25 +10,35 @@ ReportSupportLog = function(l_1_0)
     -- DECOMPILER ERROR at PC7: Confused about usage of register: R1 in 'UnsetPending'
 
     local l_1_3 = nil
-    local l_1_4 = nil
-    for l_1_8,l_1_9 in pairs((sysio.FindFiles)(l_1_1 .. "\\Microsoft\\Windows Defender\\Support", "*", 1)) do
-      local l_1_5 = nil
-      -- DECOMPILER ERROR at PC22: Confused about usage of register: R8 in 'UnsetPending'
+    local l_1_4 = l_1_1 .. "\\Microsoft\\Windows Defender\\Support"
+    local l_1_5 = "hmdprecisionpulse"
+    local l_1_6 = 86400
+    for l_1_10,l_1_11 in pairs((sysio.FindFiles)(l_1_4, "*", 1)) do
+      local l_1_7 = nil
+      -- DECOMPILER ERROR at PC24: Confused about usage of register: R10 in 'UnsetPending'
 
-      if (string.find)(R8_PC22, "MpWppTracing", 1, true) or (string.find)(R8_PC22, "MPScanSkip", 1, true) or (string.find)(R8_PC22, "MPLog", 1, true) then
-        local l_1_11 = (MpCommon.GetCurrentTimeT)()
-        local l_1_12 = (sysio.GetFileSize)(l_1_10)
-        local l_1_13 = (sysio.GetFileLastWriteTime)(l_1_10)
-        local l_1_14 = {ReadTimeStamp = l_1_11, tracking_id = l_1_0, Size = l_1_12, LastModified = l_1_13}
-        local l_1_15 = (sysio.ReadFile)(l_1_10, 0, l_1_12)
+      if (string.find)(R10_PC24, "MpWppTracing", 1, true) or (string.find)(R10_PC24, "MPScanSkip", 1, true) or (string.find)(R10_PC24, "MPLog", 1, true) then
+        local l_1_13 = 0
+        local l_1_14, l_1_15 = , pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsereportresource", l_1_5, l_1_12)
+        if l_1_15 and MpCommon.RollingQueueQueryKeyNamespaced then
+          l_1_13 = tonumber(R16_PC64)
+        end
+        local l_1_16 = nil
+        -- DECOMPILER ERROR at PC70: Overwrote pending register: R16 in 'AssignReg'
+
+        local l_1_17 = (MpCommon.GetCurrentTimeT)()
+        local l_1_18 = R16_PC64
+        local l_1_19 = (sysio.GetFileLastWriteTime)(l_1_12)
+        local l_1_20 = {ReadTimeStamp = l_1_17, tracking_id = l_1_0, Size = l_1_18, LastModified = l_1_19}
+        local l_1_21 = (sysio.ReadFile)(l_1_12, l_1_13, l_1_18)
         if ((sysio.GetLastResult)()).Success then
-          l_1_15 = (MpCommon.GzipCompress)(l_1_15)
-          l_1_15 = (MpCommon.Base64Encode)(l_1_15)
-          ReportResource(l_1_10, l_1_15, l_1_14, "LUA")
+          l_1_21 = (MpCommon.GzipCompress)(l_1_21)
+          l_1_21 = (MpCommon.Base64Encode)(l_1_21)
+          ReportResource(l_1_12, l_1_21, l_1_20, "LUA")
         else
-          l_1_14.Facility = ((sysio.GetLastResult)()).Facility
-          l_1_14.Code = ((sysio.GetLastResult)()).Code
-          ReportResource(l_1_10, "NULL", l_1_14, "LUA")
+          l_1_20.Facility = ((sysio.GetLastResult)()).Facility
+          l_1_20.Code = ((sysio.GetLastResult)()).Code
+          ReportResource(l_1_12, "NULL", l_1_20, "LUA")
         end
       end
     end
@@ -62,12 +72,11 @@ CollectFile = function(l_2_0, l_2_1, l_2_2)
 
         -- DECOMPILER ERROR at PC91: Overwrote pending register: R4 in 'AssignReg'
 
-        if l_2_5 >= l_2_1 or l_2_6 then
-          local l_2_15 = nil
-          local l_2_16 = l_2_6
-          return l_2_16, {Sha1 = l_2_12, Sha256 = l_2_13, PartialSha1 = l_2_14, PartialSha256 = l_2_15, ReadTimeStamp = l_2_7}
-        end
         do
+          if l_2_5 >= l_2_1 or l_2_6 then
+            local l_2_15 = nil
+            return l_2_6, {Sha1 = l_2_12, Sha256 = l_2_13, PartialSha1 = l_2_14, PartialSha256 = l_2_15, ReadTimeStamp = l_2_7}
+          end
           return nil, {}
         end
       end
@@ -100,7 +109,9 @@ local l_0_0 = function(l_3_0, l_3_1, l_3_2)
   do
     local l_3_12 = {}
     l_3_12[1] = l_3_9 .. "?indx=" .. l_3_2
-    return SafeGetUrlReputation(l_3_12, l_3_0, false, 2000 + l_3_2 * 500, false, false)
+    if (SafeGetUrlReputation(l_3_12, l_3_0, false, 2000 + l_3_2 * 500, false, false)).error == 3 then
+      return SafeGetUrlReputation(l_3_12, l_3_0, false, 2000 + l_3_2 * 500, false, false)
+    end
   end
 end
 
@@ -112,24 +123,80 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
   if not l_4_1 or not l_4_0 then
     return 
   end
-  local l_4_4 = 64500
-  local l_4_5 = 320
-  local l_4_6 = #l_4_1
-  local l_4_7 = 1
-  local l_4_8 = 0
-  local l_4_9 = {}
-  l_4_9.SIG_CONTEXT = "Lua_Custom_Upload_Resource"
-  l_4_9.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-  l_4_9.TAG = "NOLOOKUP"
-  l_4_9.ResourceName = l_4_0
-  l_4_9.ResourceInfo = safeJsonSerialize(l_4_2)
-  l_4_9.Source = l_4_3
-  while l_4_7 <= l_4_6 and l_4_8 < l_4_5 do
-    l_4_9.Index = l_4_8
-    local l_4_10 = l_4_1:sub(l_4_7, l_4_7 + l_4_4 - 1)
-    l_4_7 = l_4_7 + l_4_4
-    pcall(l_0_0, l_4_9, l_4_10, l_4_8)
-    l_4_8 = l_4_8 + 1
+  local l_4_4 = "hmdprecisionpulse"
+  local l_4_5 = 86400
+  do
+    if not l_4_2.Sha256 then
+      local l_4_6, l_4_7, l_4_9 = l_4_2.PartialSha256
+    end
+    -- DECOMPILER ERROR at PC15: Confused about usage of register: R6 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC19: Confused about usage of register: R6 in 'UnsetPending'
+
+    do
+      if l_4_6 then
+        local l_4_8 = nil
+        if pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsereportresource", l_4_4, l_4_0 .. "|" .. l_4_6) and MpCommon.RollingQueueQueryKeyNamespaced then
+          return 
+        end
+      end
+      local l_4_10 = nil
+      local l_4_11 = 64500
+      local l_4_12 = 320
+      local l_4_13 = #l_4_1
+      local l_4_14 = 1
+      local l_4_15 = 0
+      while 1 do
+        -- DECOMPILER ERROR at PC44: Confused about usage of register: R14 in 'UnsetPending'
+
+        if #l_4_1 > 0 then
+          do
+            local l_4_17 = nil
+            -- DECOMPILER ERROR at PC45: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC45: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
+        end
+      end
+      do
+        if l_4_12 < 0 + 1 then
+          local l_4_16 = nil
+        end
+        local l_4_18 = nil
+        local l_4_19 = nil
+        local l_4_20 = #l_4_1 - l_4_11
+        local l_4_21 = l_4_12 - 1
+        while l_4_14 <= l_4_18 and l_4_15 < l_4_12 do
+          local l_4_22 = {}
+          local l_4_23, l_4_24 = 0
+          if pcall(l_0_0, {SIG_CONTEXT = "Lua_Custom_Upload_Resource", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE", TAG = "NOLOOKUP", ResourceName = l_4_0, ResourceInfo = safeJsonSerialize(l_4_2), ResourceSize = l_4_18, LastIndex = l_4_21, Source = l_4_3, Index = l_4_15}, l_4_1:sub(l_4_14, l_4_14 + l_4_11 - 1), l_4_15) and l_0_0 and not l_0_0.error then
+            l_4_23 = l_4_23 + 1
+          end
+          l_4_15 = l_4_15 + 1
+        end
+        do
+          -- DECOMPILER ERROR at PC91: Confused about usage of register: R17 in 'UnsetPending'
+
+          if l_4_23 == l_4_19 then
+            if l_4_10 then
+              local l_4_25 = nil
+              AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0 .. "|" .. l_4_10, 1, l_4_5, 500, 1)
+            else
+              do
+                do
+                  if l_4_18 < l_4_12 * l_4_11 then
+                    local l_4_26 = nil
+                  end
+                  local l_4_27 = nil
+                  AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0, not (string.find)(l_4_0, "MpWppTracing", 1, true) and not (string.find)(l_4_0, "MPScanSkip", 1, true) and not (string.find)(l_4_0, "MPLog", 1, true) or l_4_18, l_4_5, 500, 1)
+                end
+              end
+            end
+          end
+        end
+      end
+    end
   end
 end
 
