@@ -158,7 +158,7 @@ end
 local l_0_3 = (versioning.GetEngineRing)()
 -- DECOMPILER ERROR at PC295: Overwrote pending register: R2 in 'AssignReg'
 
-if l_0_3 < versioning.ENGINE_RING_1_PRERELEASE then
+if l_0_3 <= versioning.ENGINE_RING_1_PRERELEASE then
   l_0_1 = pcall(function()
   -- function num : 0_0
   local l_1_0 = function(l_2_0)
@@ -305,27 +305,29 @@ if l_0_3 < versioning.ENGINE_RING_1_PRERELEASE then
     local l_1_57 = {cve = "CVE-2026-11664", vendor = "google", product = "chrome", vee = "149.0.7827.103"}
     -- DECOMPILER ERROR at PC263: No list found for R7 , SetList fails
 
-    -- DECOMPILER ERROR at PC515: No list found for R7 , SetList fails
+    -- DECOMPILER ERROR at PC525: No list found for R7 , SetList fails
 
-    -- DECOMPILER ERROR at PC517: Overwrote pending register: R9 in 'AssignReg'
+    -- DECOMPILER ERROR at PC631: No list found for R7 , SetList fails
 
-    -- DECOMPILER ERROR at PC518: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC633: Overwrote pending register: R9 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC519: Confused about usage of register: R9 in 'OutputAssignments'
+    -- DECOMPILER ERROR at PC634: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC635: Confused about usage of register: R9 in 'OutputAssignments'
 
     for l_1_17,l_1_18 in l_1_14 do
-      l_1_16 = {cve = "CVE-2026-11673", vendor = "google", product = "chrome", vee = "149.0.7827.103"}
-      -- DECOMPILER ERROR at PC521: Overwrote pending register: R14 in 'AssignReg'
+      l_1_16 = {cve = "CVE-2026-11673", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-60137", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4"}
+      -- DECOMPILER ERROR at PC637: Overwrote pending register: R14 in 'AssignReg'
 
-      l_1_18 = {cve = "CVE-2026-11675", vendor = "google", product = "chrome", vee = "149.0.7827.103"}
-      -- DECOMPILER ERROR at PC522: Overwrote pending register: R15 in 'AssignReg'
+      l_1_18 = {cve = "CVE-2026-11675", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-13774", vendor = "google", product = "chrome", vee = "150.0.7871.114"}
+      -- DECOMPILER ERROR at PC638: Overwrote pending register: R15 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC523: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC639: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC524: Overwrote pending register: R14 in 'AssignReg'
+      -- DECOMPILER ERROR at PC640: Overwrote pending register: R14 in 'AssignReg'
 
-      l_1_21, l_1_20, l_1_19 = {cve = "CVE-2026-11678", vendor = "google", product = "chrome", vee = "149.0.7827.103"}, {cve = "CVE-2026-11677", vendor = "google", product = "chrome", vee = "149.0.7827.103"}, {cve = "CVE-2026-11676", vendor = "google", product = "chrome", vee = "149.0.7827.102"}
-      l_1_20, l_1_13 = l_1_13[l_1_19], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103"}
+      l_1_21, l_1_20, l_1_19 = {cve = "CVE-2026-11678", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-13777", vendor = "google", product = "chrome", vee = "150.0.7871.114"}, {cve = "CVE-2026-11677", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-13776", vendor = "google", product = "chrome", vee = "150.0.7871.114"}, {cve = "CVE-2026-11676", vendor = "google", product = "chrome", vee = "149.0.7827.102", cve = "CVE-2026-13775", vendor = "google", product = "chrome", vee = "150.0.7871.114"}
+      l_1_20, l_1_13 = l_1_13[l_1_19], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-63030", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4"}
       if l_1_20 == nil then
         l_1_21 = l_1_18.vendor
         l_1_21 = l_1_18.product
@@ -338,41 +340,40 @@ if l_0_3 < versioning.ENGINE_RING_1_PRERELEASE then
       l_1_21 = l_1_21.rs
       l_1_21 = #l_1_21
       l_1_21 = l_1_21 + 1
-      l_1_20[l_1_21] = l_1_18
     end
     for i_1,l_1_19 in pairs(l_1_13) do
-      -- DECOMPILER ERROR at PC555: Overwrote pending register: R15 in 'AssignReg'
+      -- DECOMPILER ERROR at PC671: Overwrote pending register: R15 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC557: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC673: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC559: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC675: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC560: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC676: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC564: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC680: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC565: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC681: Overwrote pending register: R17 in 'AssignReg'
 
       if l_1_21 == "table" then
         for l_1_24,l_1_25 in l_1_21 do
-          -- DECOMPILER ERROR at PC568: Overwrote pending register: R21 in 'AssignReg'
+          -- DECOMPILER ERROR at PC684: Overwrote pending register: R21 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC569: Overwrote pending register: R22 in 'AssignReg'
+          -- DECOMPILER ERROR at PC685: Overwrote pending register: R22 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC573: Overwrote pending register: R22 in 'AssignReg'
+          -- DECOMPILER ERROR at PC689: Overwrote pending register: R22 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC574: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC690: Overwrote pending register: R23 in 'AssignReg'
 
           if l_1_26 ~= nil then
             for l_1_30,l_1_31 in l_1_27 do
-              -- DECOMPILER ERROR at PC577: Overwrote pending register: R27 in 'AssignReg'
+              -- DECOMPILER ERROR at PC693: Overwrote pending register: R27 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC578: Overwrote pending register: R28 in 'AssignReg'
+              -- DECOMPILER ERROR at PC694: Overwrote pending register: R28 in 'AssignReg'
 
-              l_1_31 = {cve = "CVE-2026-34356", vendor = "apache", product = "http_server", vsi = "2.4.0", vee = "2.4.68"}
-              -- DECOMPILER ERROR at PC579: Overwrote pending register: R29 in 'AssignReg'
+              l_1_31 = {cve = "CVE-2026-34356", vendor = "apache", product = "http_server", vsi = "2.4.0", vee = "2.4.68", cve = "CVE-2026-13787", vendor = "google", product = "chrome", vee = "150.0.7871.114"}
+              -- DECOMPILER ERROR at PC695: Overwrote pending register: R29 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC580: Confused about usage of register: R27 in 'OutputAssignments'
+              -- DECOMPILER ERROR at PC696: Confused about usage of register: R27 in 'OutputAssignments'
 
               if l_1_32 then
                 l_1_32 = inventory
@@ -386,7 +387,7 @@ if l_0_3 < versioning.ENGINE_RING_1_PRERELEASE then
         end
       end
     end
-    -- DECOMPILER ERROR at PC594: Confused about usage of register R26 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC710: Confused about usage of register R26 for local variables in 'ReleaseLocals'
 
   end
 end
