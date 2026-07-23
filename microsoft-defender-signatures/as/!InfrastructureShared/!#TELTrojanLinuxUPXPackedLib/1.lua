@@ -14,10 +14,20 @@ if l_0_6 ~= l_0_4 or elfhdr.machine ~= l_0_0 and elfhdr.machine ~= l_0_1 and elf
   return mp.CLEAN
 end
 local l_0_7 = 2
-for l_0_11 = 1, elfhdr.phnum do
-  if (ephdrs[l_0_11]).type == l_0_7 then
-    return mp.INFECTED
+local l_0_8 = 3
+local l_0_9 = false
+for l_0_13 = 1, elfhdr.phnum do
+  local l_0_14 = ephdrs[l_0_13]
+  if l_0_14.type == l_0_8 then
+    return mp.CLEAN
+  else
+    if l_0_14.type == l_0_7 then
+      l_0_9 = true
+    end
   end
+end
+if l_0_9 then
+  return mp.INFECTED
 end
 return mp.CLEAN
 
