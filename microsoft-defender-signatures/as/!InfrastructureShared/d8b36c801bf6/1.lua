@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d8b39833a1da\1.luac 
+-- Command line: lua\!InfrastructureShared\d8b36c801bf6\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -7,7 +7,7 @@
 
 do
   if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9, l_0_10 = nil
+    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8, l_0_9 = nil
   end
   -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
 
@@ -32,9 +32,7 @@ do
 
   -- DECOMPILER ERROR at PC71: Confused about usage of register: R0 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC77: Confused about usage of register: R0 in 'UnsetPending'
-
-  if contains(l_0_0, "&") and (contains(l_0_0, "powershell") or contains(l_0_0, "cmd.exe") or contains(l_0_0, "wscript") or contains(l_0_0, "mshta") or contains(l_0_0, "jscript") or contains(l_0_0, "wmic") or contains(l_0_0, "rundll32") or contains(l_0_0, "regsvr32")) then
+  if contains(l_0_0, "powershell") or contains(l_0_0, "cmd.exe") or contains(l_0_0, "wscript") or contains(l_0_0, "mshta") or contains(l_0_0, "jscript") or contains(l_0_0, "wmic") or contains(l_0_0, "rundll32") or contains(l_0_0, "regsvr32") then
     bm_AddRelatedFileFromCommandLine(l_0_0)
     return mp.INFECTED
   end

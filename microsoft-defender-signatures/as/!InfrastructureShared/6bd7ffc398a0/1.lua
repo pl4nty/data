@@ -1,9 +1,9 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\55d7c7bc56db\1.luac 
+-- Command line: lua\!InfrastructureShared\6bd7ffc398a0\1.luac 
 
 -- params : ...
 -- function num : 0
-if IsDeviceHVA() then
+if verify_non_prod_rings() then
   return mp.INFECTED
 end
 return mp.CLEAN
