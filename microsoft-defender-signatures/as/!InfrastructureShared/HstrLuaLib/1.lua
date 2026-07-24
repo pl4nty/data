@@ -1301,71 +1301,76 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   l_13_14.sig_matched = l_13_0
   l_13_14.scan_count = l_13_2
   l_13_14.scan_time_diff = l_13_3
+  l_13_14.command_line = ""
   l_13_14.nRegions = 0
   l_13_14.nCollectedRegions = 0
   l_13_14.regions = {}
   l_13_14.nThreads = 0
   l_13_14.nCollectedThreads = 0
   l_13_14.threads = {}
-  local l_13_15 = false
-  if l_13_2 >= 2 then
-    l_13_15 = true
+  local l_13_15 = (mp.GetProcessCommandLine)(l_13_9)
+  if l_13_15 then
+    l_13_14.command_line = l_13_15
   end
-  for l_13_19,l_13_20 in ipairs(l_13_10) do
+  local l_13_16 = false
+  if l_13_2 >= 2 then
+    l_13_16 = true
+  end
+  for l_13_20,l_13_21 in ipairs(l_13_10) do
     l_13_11 = l_13_11 + 1
     if l_13_12 < 150 then
-      if not l_13_20.addr or not l_13_20.size or not l_13_20.prot or not l_13_20.alloc_prot or not l_13_20.state_type or not l_13_20.flags then
+      if not l_13_21.addr or not l_13_21.size or not l_13_21.prot or not l_13_21.alloc_prot or not l_13_21.state_type or not l_13_21.flags then
         return 3
       end
-      if (mp.bitand)(l_13_20.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_20.state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)(l_13_20.state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
-        local l_13_21 = 0
-        if ((mp.bitand)(l_13_20.prot, 255) == l_13_7.PAGE_READONLY and l_13_20.size == l_13_5) or (mp.bitand)(l_13_20.prot, 255) == l_13_7.PAGE_EXECUTE_READWRITE then
-          local l_13_22 = true
-          -- DECOMPILER ERROR at PC185: Unhandled construct in 'MakeBoolean' P1
+      if (mp.bitand)(l_13_21.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_21.state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)(l_13_21.state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
+        local l_13_22 = 0
+        if ((mp.bitand)(l_13_21.prot, 255) == l_13_7.PAGE_READONLY and l_13_21.size == l_13_5) or (mp.bitand)(l_13_21.prot, 255) == l_13_7.PAGE_EXECUTE_READWRITE then
+          local l_13_23 = true
+          -- DECOMPILER ERROR at PC193: Unhandled construct in 'MakeBoolean' P1
 
-          if (mp.bitand)(l_13_20.prot, 255) == l_13_7.PAGE_READONLY and (mp.SMSVirtualQuery)(l_13_20.addr + l_13_5) and (mp.bitand)((l_13_20.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
-            l_13_22 = false
+          if (mp.bitand)(l_13_21.prot, 255) == l_13_7.PAGE_READONLY and (mp.SMSVirtualQuery)(l_13_21.addr + l_13_5) and (mp.bitand)((l_13_21.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
+            l_13_23 = false
           end
-          l_13_22 = false
-          if l_13_22 then
-            local l_13_23 = (mp.ReadProcMem)(l_13_20.addr, l_13_5)
-            if l_13_23 ~= nil and #l_13_23 == l_13_5 then
-              if (mp.readu_u16)(l_13_23, 1) == l_13_6.MZ_SIGNATURE_HEX then
-                l_13_21 = (mp.bitor)(l_13_21, l_13_8.MZ_PRESENT)
+          l_13_23 = false
+          if l_13_23 then
+            local l_13_24 = (mp.ReadProcMem)(l_13_21.addr, l_13_5)
+            if l_13_24 ~= nil and #l_13_24 == l_13_5 then
+              if (mp.readu_u16)(l_13_24, 1) == l_13_6.MZ_SIGNATURE_HEX then
+                l_13_22 = (mp.bitor)(l_13_22, l_13_8.MZ_PRESENT)
               end
-              local l_13_24 = (mp.readu_u32)(l_13_23, 1 + l_13_6.e_lfanew)
-              if l_13_24 < 1024 and (mp.readu_u16)(l_13_23, 1 + l_13_24) == l_13_6.PE_SIGNATURE_HEX then
-                l_13_21 = (mp.bitor)(l_13_21, l_13_8.PE_PRESENT)
+              local l_13_25 = (mp.readu_u32)(l_13_24, 1 + l_13_6.e_lfanew)
+              if l_13_25 < 1024 and (mp.readu_u16)(l_13_24, 1 + l_13_25) == l_13_6.PE_SIGNATURE_HEX then
+                l_13_22 = (mp.bitor)(l_13_22, l_13_8.PE_PRESENT)
               end
-              if (string.find)(l_13_23, "This program cannot be run in DOS mode", 1, true) ~= nil then
-                l_13_21 = (mp.bitor)(l_13_21, l_13_8.DOS_STRING_PRESENT)
+              if (string.find)(l_13_24, "This program cannot be run in DOS mode", 1, true) ~= nil then
+                l_13_22 = (mp.bitor)(l_13_22, l_13_8.DOS_STRING_PRESENT)
               end
             end
           end
         end
         do
-          local l_13_25 = l_13_14.regions
-          local l_13_26 = #l_13_14.regions + 1
+          local l_13_26 = l_13_14.regions
+          local l_13_27 = #l_13_14.regions + 1
           do
-            local l_13_27 = {}
-            l_13_27.addr = l_13_20.addr
-            l_13_27.size = l_13_20.size
-            l_13_27.alloc_prot = l_13_20.alloc_prot
-            l_13_27.prot = l_13_20.prot
-            l_13_27.state_type = l_13_20.state_type
-            l_13_27.flags = l_13_20.flags
-            l_13_27.heuristics = l_13_21
-            l_13_25[l_13_26] = l_13_27
+            local l_13_28 = {}
+            l_13_28.addr = l_13_21.addr
+            l_13_28.size = l_13_21.size
+            l_13_28.alloc_prot = l_13_21.alloc_prot
+            l_13_28.prot = l_13_21.prot
+            l_13_28.state_type = l_13_21.state_type
+            l_13_28.flags = l_13_21.flags
+            l_13_28.heuristics = l_13_22
+            l_13_26[l_13_27] = l_13_28
             l_13_12 = l_13_12 + 1
-            -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC279: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
@@ -1374,45 +1379,45 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   end
   l_13_14.nRegions = l_13_11
   l_13_14.nCollectedRegions = l_13_12
-  local l_13_28, l_13_29 = (mp.GetSMSThreadInfo)()
-  if not tonumber(l_13_28) then
-    l_13_29 = type(l_13_28) == "table" or 0
+  local l_13_29, l_13_30 = (mp.GetSMSThreadInfo)()
+  if not tonumber(l_13_29) then
+    l_13_30 = type(l_13_29) == "table" or 0
   end
-  l_13_28 = {}
-  for l_13_33,l_13_34 in pairs(l_13_28) do
+  l_13_29 = {}
+  for l_13_34,l_13_35 in pairs(l_13_29) do
     if l_13_13 < 20 then
-      local l_13_35, l_13_36 = (mp.SMSVirtualQuery)(l_13_34.StartAddr)
-      if l_13_35 and (mp.bitand)(l_13_36.state_type, mp.SMS_MBI_IMAGE) == 0 then
+      local l_13_36, l_13_37 = (mp.SMSVirtualQuery)(l_13_35.StartAddr)
+      if l_13_36 and (mp.bitand)(l_13_37.state_type, mp.SMS_MBI_IMAGE) == 0 then
         do
-          if (mp.GetSMSMappedFilename)(l_13_34.StartAddr) == nil then
-            local l_13_37 = ""
+          if (mp.GetSMSMappedFilename)(l_13_35.StartAddr) == nil then
+            local l_13_38 = ""
           end
-          local l_13_38 = nil
-          local l_13_39 = l_13_14.threads
+          local l_13_39 = nil
+          local l_13_40 = l_13_14.threads
           do
-            local l_13_40 = #l_13_14.threads + 1
-            l_13_39[l_13_40] = {ptid = l_13_34.PTID, creator_ptid = l_13_34.CreatorPTID, start_addr = l_13_34.StartAddr, mod_path = l_13_38}
+            local l_13_41 = #l_13_14.threads + 1
+            l_13_40[l_13_41] = {ptid = l_13_35.PTID, creator_ptid = l_13_35.CreatorPTID, start_addr = l_13_35.StartAddr, mod_path = l_13_39}
             l_13_13 = l_13_13 + 1
-            -- DECOMPILER ERROR at PC332: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC332: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC332: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC332: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC332: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
       end
     end
   end
-  l_13_14.nThreads = l_13_29
+  l_13_14.nThreads = l_13_30
   l_13_14.nCollectedThreads = l_13_13
-  local l_13_41 = (MpCommon.JsonSerialize)(l_13_14)
-  local l_13_42 = (MpCommon.Base64Encode)(l_13_41)
-  AppendToRollingQueue(l_13_1, "data", l_13_42)
+  local l_13_42 = (MpCommon.JsonSerialize)(l_13_14)
+  local l_13_43 = (MpCommon.Base64Encode)(l_13_42)
+  AppendToRollingQueue(l_13_1, "data", l_13_43)
   return 0
 end
 
