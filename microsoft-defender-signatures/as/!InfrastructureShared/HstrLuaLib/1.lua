@@ -1385,54 +1385,48 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   end
   l_13_13.nCollectedRegions = l_13_11
   local l_13_31 = 50
-  local l_13_32 = 0
-  local l_13_33, l_13_34 = (mp.GetSMSThreadInfo)()
-  if not tonumber(l_13_33) then
-    l_13_34 = type(l_13_33) == "table" or 0
+  local l_13_32, l_13_33 = (mp.GetSMSThreadInfo)()
+  if not tonumber(l_13_32) then
+    l_13_33 = type(l_13_32) == "table" or 0
   end
-  l_13_33 = {}
-  for l_13_38,l_13_39 in pairs(l_13_33) do
-    if l_13_31 > l_13_32 then
+  l_13_32 = {}
+  for l_13_37,l_13_38 in ipairs(l_13_32) do
+    if l_13_31 > l_13_37 then
       if l_13_12 >= 20 then
         break
       end
-      local l_13_40, l_13_41 = (mp.SMSVirtualQuery)(l_13_39.StartAddr)
-      if l_13_40 and (mp.bitand)(l_13_41.state_type, mp.SMS_MBI_IMAGE) == 0 then
+      local l_13_39, l_13_40 = (mp.SMSVirtualQuery)(l_13_38.StartAddr)
+      if l_13_39 and (mp.bitand)(l_13_40.state_type, mp.SMS_MBI_IMAGE) == 0 then
         do
-          if (mp.GetSMSMappedFilename)(l_13_39.StartAddr) == nil then
-            local l_13_42 = ""
+          if (mp.GetSMSMappedFilename)(l_13_38.StartAddr) == nil then
+            local l_13_41 = ""
           end
-          local l_13_43 = nil
-          local l_13_44 = l_13_13.threads
+          local l_13_42 = nil
+          local l_13_43 = l_13_13.threads
           do
-            do
-              local l_13_45 = #l_13_13.threads + 1
-              l_13_44[l_13_45] = {ptid = l_13_39.PTID, creator_ptid = l_13_39.CreatorPTID, start_addr = l_13_39.StartAddr, mod_path = l_13_43}
-              l_13_12 = l_13_12 + 1
-              l_13_32 = l_13_32 + 1
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out DO_STMT
+            local l_13_44 = #l_13_13.threads + 1
+            l_13_43[l_13_44] = {ptid = l_13_38.PTID, creator_ptid = l_13_38.CreatorPTID, start_addr = l_13_38.StartAddr, mod_path = l_13_42}
+            l_13_12 = l_13_12 + 1
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out DO_STMT
 
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC342: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
           end
         end
       end
     end
   end
-  l_13_13.nThreads = l_13_34
+  l_13_13.nThreads = l_13_33
   l_13_13.nCollectedThreads = l_13_12
-  local l_13_46 = (MpCommon.JsonSerialize)(l_13_13)
-  local l_13_47 = (MpCommon.Base64Encode)(l_13_46)
-  AppendToRollingQueue(l_13_1, "data", l_13_47)
+  local l_13_45 = (MpCommon.JsonSerialize)(l_13_13)
+  local l_13_46 = (MpCommon.Base64Encode)(l_13_45)
+  AppendToRollingQueue(l_13_1, "data", l_13_46)
   return 0
 end
 

@@ -50,7 +50,7 @@ CollectFile = function(l_2_0, l_2_1, l_2_2)
   l_2_1 = l_2_1 ~= nil or (sysio.GetFileSize)(l_2_0) or 0
   do
     if l_2_2 then
-      local l_2_3, l_2_4 = 2086912 * 10
+      local l_2_3, l_2_4 = 2086912 * 15
     end
     local l_2_5 = nil
     local l_2_6 = nil
@@ -142,7 +142,7 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
       end
       local l_4_10 = nil
       local l_4_11 = 64500
-      local l_4_12 = 320
+      local l_4_12 = 480
       local l_4_13 = #l_4_1
       local l_4_14 = 1
       local l_4_15 = 0
