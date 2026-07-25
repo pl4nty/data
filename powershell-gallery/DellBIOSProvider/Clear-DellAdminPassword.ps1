@@ -27,15 +27,18 @@ Function Clear-DellAdminPassword {
     Clear-DellAdminPassword -Password <existing password>
 #>
 param(  
-    [Parameter(Mandatory=$true)][string] $Password
-	  
+    [Parameter(Mandatory=$false)][System.Security.SecureString] $Password
  )
 
  BEGIN { 
         
  }
  PROCESS {
-     Set-Item DellSmbios:\Security\AdminPassword -value "" -password $Password -ErrorVariable ev
+     if ($null -eq $Password) {
+         Write-Warning "Specify the password using -Password (SecureString)."
+         return
+     }
+     Set-Item DellSmbios:\Security\AdminPassword -value "" -PasswordSecure $Password -ErrorVariable ev
 	 if ($ev){
               Write-Warning "$ev Error occured in $($ev.InvocationInfo.ScriptName)"    		
 	}	

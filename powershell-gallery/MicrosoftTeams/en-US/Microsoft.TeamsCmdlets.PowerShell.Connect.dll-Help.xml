@@ -274,6 +274,19 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisableWAM</maml:name>
+          <maml:description>
+            <maml:para>Disables Web Account Manager (WAM) authentication for the connection. Use this switch only if you encounter WAM-related connection errors.</maml:para>
+            <maml:para>WAM is enabled by default for user-based sign-in flows on Windows starting with Teams PowerShell Module version 7.8.1-preview. For known scenarios where WAM may cause compatibility issues.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This parameter has been introduced with version 7.8.1-preview. It is intended as a temporary workaround and will be removed in a future release once supported alternatives are available for all scenarios.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LogFilePath</maml:name>
           <maml:description>
             <maml:para>The path where the log file for this PowerShell session is written to. Provide a value here if you need to deviate from the default PowerShell log file location.</maml:para>
@@ -669,6 +682,20 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisableWAM</maml:name>
+        <maml:description>
+          <maml:para>Disables Web Account Manager (WAM) authentication for the connection. Use this switch only if you encounter WAM-related connection errors.</maml:para>
+          <maml:para>WAM is enabled by default for user-based sign-in flows on Windows starting with Teams PowerShell Module version 7.8.1-preview. For known scenarios where WAM may cause compatibility issues.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This parameter has been introduced with version 7.8.1-preview. It is intended as a temporary workaround and will be removed in a future release once supported alternatives are available for all scenarios.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="MSI, ManagedService">
         <maml:name>Identity</maml:name>
         <maml:description>
@@ -816,7 +843,7 @@
     <command:returnValues />
     <maml:alertSet>
       <maml:alert>
-        <maml:para></maml:para>
+        <maml:para>Updates in Teams PowerShell Module version 7.8.1-preview and later: - WAM integration on Windows : User sign-in flows on Windows (`Connect-MicrosoftTeams` without authentication parameters, `-Credential`, and `-AccountId`) now use Web Account Manager (WAM) as the authentication broker. Service principal with certificate, managed identity, and pre-acquired access token sign-in flows are not affected. - -DisableWAM : A new temporary `-DisableWAM` switch has been added to `Connect-MicrosoftTeams`. It disables WAM for a single connection and is intended as a temporary workaround for scenarios where WAM is not supported (for example, `RunAs` contexts or Windows Task Scheduler with "Run whether user is logged on or not"). This switch will be removed in a future release once supported alternatives are available for all scenarios.</maml:para>
       </maml:alert>
     </maml:alertSet>
     <command:examples>

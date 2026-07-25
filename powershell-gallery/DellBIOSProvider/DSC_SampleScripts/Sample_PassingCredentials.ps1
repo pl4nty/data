@@ -1,4 +1,4 @@
-##########################################################################
+ï»¿ï»¿ï»¿##########################################################################
 # DELL PROPRIETARY INFORMATION
 #
 # This software is confidential.  Dell Inc., or one of its subsidiaries, has supplied this
@@ -26,7 +26,8 @@ Configuration MultipleCatConfiguration
 
  
  
-    Node 10.94.43.77 {
+    # NOTE: Replace <TARGET-NODE-FQDN> with the fully qualified domain name or IP of the target node.
+    Node "<TARGET-NODE-FQDN>" {
         POSTBehavior POSTBehaviorSettings    #resource name
         {
           Category = "POSTBehavior"
@@ -80,8 +81,12 @@ MultipleCatConfiguration
 
 #Push Mof
 
-$secpasswd = ConvertTo-SecureString “PlainTextPassword” -AsPlainText -Force
-$mycreds = New-Object System.Management.Automation.PSCredential (“username”, $secpasswd)
+# NOTE: Replace <ADMIN-USERNAME> and <ADMIN-PASSWORD> with the actual credentials.
+# Do NOT hardcode passwords in production scripts; use secure credential stores (e.g., Windows Credential Manager, Azure Key Vault).
+$username = "<ADMIN-USERNAME>"
+$password = "<ADMIN-PASSWORD>"
+$secpwd = ConvertTo-SecureString $password -AsPlainText -Force
+$mycreds = New-Object System.Management.Automation.PSCredential($username, $secpwd)
 
 Start-DscConfiguration -Path .\MultipleCatConfiguration\ -wait -verbose -debug -force -Credential $mycreds
 

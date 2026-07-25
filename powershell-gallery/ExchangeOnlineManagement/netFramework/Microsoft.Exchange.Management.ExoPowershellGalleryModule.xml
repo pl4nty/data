@@ -1472,6 +1472,111 @@
             Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
             </summary>
         </member>
+        <!-- Badly formed XML comment ignored for member "T:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter" -->
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.Convert(System.Object,System.String)">
+            <summary>
+            Entry point. Converts a JSON-parsed value graph (PSObjects from ConvertFrom-Json) into typed PowerShell
+            objects using the server's <c>@data.type</c> / <c>@odata.type</c> hints, then attaches
+            <paramref name="objectType"/> to each top-level object's type names so the right *.format.ps1xml applies.
+            </summary>
+            <param name="value">The parsed <c>value</c> collection (or a single object) from the response.</param>
+            <param name="objectType">The ETS type name to insert on each top-level object, or null/empty to skip.</param>
+            <returns>The re-typed object graph (an <c>object[]</c> for a collection, or a single re-typed object).</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.AttachTypeName(System.Object,System.String)">
+            <summary>
+            Inserts <paramref name="objectType"/> at the front of the object's type-name list (the ETS type names
+            PowerShell uses to select formatting). No-op for anything that is not a <see cref="T:System.Management.Automation.PSObject"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.ConvertValue(System.Object)">
+            <summary>
+            Recursive dispatcher. Routes a value to the right handler based on its (unwrapped) runtime shape:
+            null -> null, string/other scalar -> returned unchanged, object-with-properties -> <see cref="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.ConvertObject(System.Management.Automation.PSObject)"/>,
+            collection -> recurse element-by-element into a new <c>object[]</c>.
+            Mirrors the branch order of the script <c>ConvertTo-TypedObject</c>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.ConvertObject(System.Management.Automation.PSObject)">
+            <summary>
+            Rebuilds a single JSON object into a typed <see cref="T:System.Management.Automation.PSObject"/>: drops control properties, resolves and
+            applies each property's type hint, recurses into nested objects/collections, and preserves property order.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.IsControlProperty(System.String)">
+            <summary>
+            True for OData control/annotation properties that must be removed from the output: the '@data.type' /
+            '@odata.type' hint siblings, any 'odata*' annotation, and the 'ObjectKey' bookkeeping property.
+            (Case-insensitive, matching the script's <c>-like</c> / <c>-eq</c> checks.)
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.IsStructured(System.Object)">
+            <summary>
+            True if the value is a nested object (PSCustomObject) or a non-string collection — i.e. something that
+            needs to be walked recursively. Scalars and strings return false (handled inline, no recursion).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.Coerce(System.String,System.Object)">
+            <summary>
+            Converts an already-recursed value to the CLR type named by <paramref name="typeHint"/>. The primitive
+            cases use <see cref="M:System.Management.Automation.LanguagePrimitives.ConvertTo(System.Object,System.Type)"/> — the same conversion engine behind
+            PowerShell's <c>[int]</c> / <c>[datetime]</c> / <c>[guid]</c> casts — which is what guarantees parity with
+            the script converter. Unknown hints leave the value unchanged.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.CoerceDateTime(System.Object)">
+            <summary>
+            Re-types a date string. UTC values (trailing 'Z' or a +/-hh:mm offset) are parsed preserving the UTC
+            <see cref="T:System.DateTimeKind"/>; everything else uses the default cast (current culture, local kind). This
+            reproduces the script converter's UTC-vs-local branch so <see cref="P:System.DateTime.Kind"/> matches CliXml.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.HasUtcSuffix(System.String)">
+            <summary>
+            True if the string ends with a UTC marker — a trailing 'Z'/'z' or a <c>[+-]hh:mm</c> offset. Hand-rolled
+            (instead of a regex) for speed; equivalent to the script's <c>-match 'Z$|[+-]\d{2}:\d{2}$'</c>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.CoerceArrayList(System.Object)">
+            <summary>
+            Wraps a multi-valued property's elements in an <see cref="T:System.Collections.ArrayList"/> and then in a
+            <see cref="T:System.Management.Automation.PSObject"/>. The PSObject wrapper is deliberate: it makes <c>.ToString()</c> join the elements
+            (matching the CliXml-deserialized value), so <c>Export-Csv</c> / <c>ToString()</c> render the values
+            instead of the literal text "System.Collections.ArrayList". Mirrors the script's
+            <c>[PSObject]::AsPSObject([System.Collections.ArrayList]::new(...))</c>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.CoerceByteArrayCollection(System.Object)">
+            <summary>
+            Rebuilds a collection of byte arrays. Byte-array collections (for example UserCertificate /
+            UserSMimeCertificate, which are MultiValuedProperty&lt;byte[]&gt;) are serialized as ByteArrayType objects:
+            <c>{ Data = [ ints ] }</c>. Each entry's <c>Data</c> is converted back to a <c>byte[]</c> to match the
+            CliXml shape; the result is an <c>object[]</c> of <c>byte[]</c>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.CoerceSingleByteArray(System.Object)">
+            <summary>
+            Rebuilds a single byte array from one ByteArrayType object (<c>{ Data = [ ints ] }</c>) into a
+            <c>byte[]</c>. Returns the value unchanged if it has no <c>Data</c> member.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.GetDataMember(System.Object)">
+            <summary>
+            Reads the <c>Data</c> property from a ByteArrayType entry (the int array payload), or null if absent.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.AsCollection(System.Object)">
+            <summary>
+            Returns the value as an <see cref="T:System.Collections.IEnumerable"/> if it is a (non-string) collection, else null. Unwraps a
+            <see cref="T:System.Management.Automation.PSObject"/> envelope first so an array hidden inside a PSObject is still recognized.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter.GetStringValue(System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            Looks up a hint sibling by key and returns it as a string. Unwraps any <see cref="T:System.Management.Automation.PSObject"/> envelope so
+            the comparison sees the underlying string. Returns null if the key is absent or the value is not a string.
+            </summary>
+        </member>
         <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule">
             <summary>
             New Cmdlet for downloading, importing and managing class for the new EXO Auto Generated module.

@@ -41,8 +41,7 @@ param(
     [Alias("Thu")][System.String] $Thursday,
     [Alias("Fri")][System.String] $Friday,
     [Alias("Sat")][System.String] $Saturday,
-    [Alias("pw")][Parameter(Mandatory=$false)][System.String] $Password
-  
+    [Alias("pw")][Parameter(Mandatory=$false)][System.Security.SecureString] $Password
  )
 
  BEGIN { 
@@ -55,20 +54,28 @@ param(
     $pathToPowerManagement = 'DellSmbios' + ':\' + 'PowerManagement'
     
     
+    # Convert SecureString to plaintext for Set-Item -password calls
+    $PlainPassword = $null
+    if ($null -ne $Password) {
+        $BSTR = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Password)
+        try { $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR) }
+        finally { [System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($BSTR) }
+    }
+
     $isAdminPWSet  = Get-Item -path DellSmbios:\Security\IsAdminPasswordSet
     $issystemPWSet = Get-Item -path DellSmbios:\Security\IsSystemPasswordSet
 
     if (($isAdminPWSet.CurrentValue -match 'True') -or ($issystemPWSet.CurrentValue -match 'True')) 
     {
-        if ([string]::IsNullOrEmpty($Password)){
-        Write-Warning "Specify the password using -password."
+        if ([string]::IsNullOrEmpty($PlainPassword)){
+        Write-Warning "Specify the password using -Password (SecureString)."
         return
         }
     }
 
     
-    if ($Password){
-        Set-Item -path $pathToPowerManagement\AutoOn -value "SelectDays" -password $Password -ErrorVariable ev
+    if ($PlainPassword){
+        Set-Item -path $pathToPowerManagement\AutoOn -value "SelectDays" -password $PlainPassword -ErrorVariable ev
     }
     else{   Set-Item -path $pathToPowerManagement\AutoOn -value "SelectDays" -ErrorVariable ev}
 
@@ -78,45 +85,45 @@ param(
 	}		
 	
     if ($PSBoundParameters.ContainsKey('Sunday')) {
-        if ($password){    
-                Set-Item -path DellSmbios:\PowerManagement\AutoOnSun -value $Sunday -password $Password -ErrorVariable ev
+        if ($PlainPassword){    
+                Set-Item -path DellSmbios:\PowerManagement\AutoOnSun -value $Sunday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnSun -value $Sunday -ErrorVariable ev}
         
     }
     if ($PSBoundParameters.ContainsKey('Monday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnMon -value $Monday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnMon -value $Monday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnMon -value $Monday -ErrorVariable ev}
     }
     if ($PSBoundParameters.ContainsKey('Tuesday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnTue -value $Tuesday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnTue -value $Tuesday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnTue -value $Tuesday -ErrorVariable ev}
     }
     if ($PSBoundParameters.ContainsKey('Wednesday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnWed -value $Wednesday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnWed -value $Wednesday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnWed -value $Wednesday -ErrorVariable ev}
     }
     if ($PSBoundParameters.ContainsKey('Thursday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnThur -value $Thursday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnThur -value $Thursday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnThur -value $Thursday -ErrorVariable ev}
     }
     if ($PSBoundParameters.ContainsKey('Friday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnFri -value $Friday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnFri -value $Friday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnFri -value $Friday -ErrorVariable ev}
     }
      if ($PSBoundParameters.ContainsKey('Saturday')) {
-         if ($password){ 
-            Set-Item -path $pathToPowerManagement\AutoOnSat -value $Saturday -password $Password -ErrorVariable ev
+         if ($PlainPassword){ 
+            Set-Item -path $pathToPowerManagement\AutoOnSat -value $Saturday -password $PlainPassword -ErrorVariable ev
          }
          else {Set-Item -path DellSmbios:\PowerManagement\AutoOnSat -value $Saturday -ErrorVariable ev}
     }

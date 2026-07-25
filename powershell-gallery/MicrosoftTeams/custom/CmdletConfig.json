@@ -1038,6 +1038,15 @@
         "Torus"
       ]
     },
+    "Get-CsSharedVoicemailTriageSettingsTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Get-CsAutoRecordingTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -2658,6 +2667,15 @@
         "Torus"
       ]
     },
+    "New-CsSharedVoicemailTriageSettingsTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "New-CsMainlineAttendantAppointmentBookingFlow": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -3359,6 +3377,15 @@
         "Torus"
       ]
     },
+    "Remove-CsSharedVoicemailTriageSettingsTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Remove-CsHybridTelephoneNumber": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -3946,6 +3973,15 @@
       ]
     },
     "Set-CsSharedCallHistoryTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsSharedVoicemailTriageSettingsTemplate": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",

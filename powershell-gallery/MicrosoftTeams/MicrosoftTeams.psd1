@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.8.0'
+ModuleVersion = '7.9.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -206,6 +206,7 @@ FunctionsToExport =  @(
 	,'Grant-CsApplicationAccessPolicy'
 	,'Get-CsComplianceRecordingForCallQueueTemplate'
 	,'Get-CsSharedCallQueueHistoryTemplate'
+	,'Get-CsSharedVoicemailTriageSettingsTemplate'
 	,'Get-CsTagsTemplate'
 	,'Get-CsSharedCallHistoryTemplate'
 	,'Grant-CsCallingLineIdentity'
@@ -320,6 +321,7 @@ FunctionsToExport =  @(
 	,'New-CsTagsTemplate'
 	,'New-CsTag'
 	,'New-CsSharedCallQueueHistoryTemplate'
+	,'New-CsSharedVoicemailTriageSettingsTemplate'
 	,'New-CsSharedCallHistoryTemplate'
 	,'Register-CsOnlineDialInConferencingServiceNumber'
 	,'Remove-CsAgent'
@@ -387,6 +389,7 @@ FunctionsToExport =  @(
 	,'Remove-CsComplianceRecordingForCallQueueTemplate'
 	,'Remove-CsTagsTemplate'
 	,'Remove-CsSharedCallQueueHistoryTemplate'
+	,'Remove-CsSharedVoicemailTriageSettingsTemplate'
 	,'Remove-CsSharedCallHistoryTemplate'
 	,'Set-CsAgent'
 	,'Set-CsApplicationAccessPolicy'
@@ -466,6 +469,7 @@ FunctionsToExport =  @(
 	,'Set-CsComplianceRecordingForCallQueueTemplate'
 	,'Set-CsTagsTemplate'
 	,'Set-CsSharedCallQueueHistoryTemplate'
+	,'Set-CsSharedVoicemailTriageSettingsTemplate'
 	,'Set-CsSharedCallHistoryTemplate'
 	,'Start-CsExMeetingMigration'
 	,'Sync-CsOnlineApplicationInstance'
@@ -851,15 +855,21 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.8.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Fixes Get-TenantPrivateChannelMigrationStatus cmdlet in GCC, GCC High & DoD environments.
-- Releases New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder, New-CsPhoneNumberBulkUpdateLocationIdOrder, New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder, and New-CsPhoneNumberBulkUpdateReverseNumberLookupOrder cmdlets.
-- [BREAKING CHANGE] Renames EnableExternalAccessRestrictionsForChatPartipants and EnableMutualFederationForChatPartipants parameters in Set-CsTenantFederationSettings cmdlet to EnableExternalAccessRestrictionsForChatParticipants and EnableMutualFederationForChatParticipants respectively.
-- Adds PreventComplianceRecording and DisableAudioAnnouncementsForResourceAccounts parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
-- Adds PreventComplianceRecording parameter to [New|Set]-CsTeamsCallingPolicy cmdlets.
-- Adds Communities parameter to Set-CsTeamsMessagingConfiguration cmdlet.
-- Adds ReportMeeting parameter to Set-CsTeamsMeetingConfiguration cmdlet.
-
+ **7.9.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Updates Connect-MicrosoftTeams cmdlet to use Web Account Manager (WAM) for authentication to enhance security.
+- Adds DisableWAM switch parameter to Connect-MicrosoftTeams cmdlet to disable WAM-based authentication. This parameter is temporary and will be deprecated in a future release.
+- Releases [Get|New|Set|Remove]-CsSharedVoicemailTriageSettingsTemplate cmdlets.
+- Adds SharedVoicemailTriageSettingsTemplateId parameter to [New|Set]-CsAutoAttendant cmdlets.
+- Adds SharedVoicemailTriageSettingsTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
+- Adds Channel parameter to Get-CsAiAgents cmdlet.
+- Updates [Get|Set|Remove]-CsPhoneNumberAssignment cmdlets to use -TelephoneNumber and -NumberType as primary parameter names, with -PhoneNumber and -PhoneNumberType retained as aliases for backward compatibility.
+- Adds AllowCreateChannel, AllowCreateClassicChannel, AllowCreatePrivateChannel, AllowCreateSharedChannel, CreateSharedChannelsByDefault, AllowUsersFromOutsideTeam, AllowGuestsFromOutsideTeam, AllowUsersFromOutsideTeamInPrivateChannel, AllowGuestsFromOutsideTeamInPrivateChannel, AllowSharingWithTeamInOrg, AllowSharingPrivateChannelWithTeamInOrg parameters to [New|Set]-CsTeamsChannelsPolicy cmdlets.
+- Adds SyntheticMediaDetection, SyntheticMediaDetectionAppId, ConditionalAccessAttendeeVerification, EnablePreMeetingConsent, and PreMeetingConsentContentIdentifier parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- Adds PublishedEntraAuthenticationContexts, EnableAttributedTranscripts and EnableGraphTranscriptAccess parameters to Set-CsTeamsMeetingConfiguration cmdlet.
+- Adds AllowMeetingKnowledgeGeneration and VoicePhishingDetection parameters to [New|Set]-CsTeamsCallingPolicy cmdlets.
+- Adds AllowEngagementReport and InfoShownInReportMode parameters to [New|Set]-CsTeamsEventsPolicy cmdlets.
+- Adds EnableVoicemailTriage parameter to [New|Set]-CsOnlineVoicemailPolicy cmdlets.
+- [BREAKING CHANGE] Removes the Teams Shifts Connection cmdlets: [Get|New|Set|Remove|Update]-CsTeamsShiftsConnection, [Get|New|Set|Remove|Update]-CsTeamsShiftsConnectionInstance, [Get|Remove]-CsTeamsShiftsConnectionTeamMap, New-CsTeamsShiftsConnectionBatchTeamMap, Get-CsTeamsShiftsConnectionConnector, Get-CsTeamsShiftsConnectionOperation, Get-CsTeamsShiftsConnectionSyncResult, [Get|Disable]-CsTeamsShiftsConnectionErrorReport, Get-CsTeamsShiftsConnectionWfmTeam, Get-CsTeamsShiftsConnectionWfmUser and Test-CsTeamsShiftsConnectionValidate. These cmdlets are no longer supported.
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

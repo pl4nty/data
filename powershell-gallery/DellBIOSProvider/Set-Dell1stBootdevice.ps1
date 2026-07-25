@@ -31,14 +31,14 @@ function Set-Dell1stBootdevice {
 #>
 param(  
     [Parameter(Mandatory=$true, Position=0)][string] $Bootdevice,
-    [Parameter(Mandatory=$false, Position=1)][string] $Password
-  
+    [Parameter(Mandatory=$false, Position=1)][System.Security.SecureString] $Password
  )
 
  BEGIN { 
  }
  PROCESS {
  
+
  #the process block is called for each item in the pipeline and you can reference it via $_
  
     $bs = Get-item -path DellSmbios:\BootSequence\Bootsequence
@@ -55,7 +55,7 @@ param(
                 } 
 				
 				if ($Password) {
-                Set-Item -path DellSmbios:\BootSequence\BootSequence -value $_.DeviceNumber -Password $password
+                Set-Item -path DellSmbios:\BootSequence\BootSequence -value $_.DeviceNumber -PasswordSecure $Password
 				}
 				else
 				{

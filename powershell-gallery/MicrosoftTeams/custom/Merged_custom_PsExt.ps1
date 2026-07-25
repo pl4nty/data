@@ -1482,12 +1482,14 @@ function Remove-CsPhoneNumberAssignment {
         ${Identity},
 
         [Parameter(Mandatory=$true, ParameterSetName='RemoveSome')]
+        [Alias("PhoneNumber")]
         [System.String]
-        ${PhoneNumber},
+        ${TelephoneNumber},
         
         [Parameter(Mandatory=$true, ParameterSetName='RemoveSome')]
+        [Alias("PhoneNumberType")]
         [System.String]
-        ${PhoneNumberType},
+        ${NumberType},
         
         [Parameter(Mandatory=$true, ParameterSetName='RemoveAll')]
         [Switch]
@@ -1524,6 +1526,16 @@ function Remove-CsPhoneNumberAssignment {
             # Default ErrorAction to $ErrorActionPreference
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # Remap parameter names for internal cmdlet
+            if ($PSBoundParameters.ContainsKey('TelephoneNumber')) {
+                $PSBoundParameters.Add('PhoneNumber', $PSBoundParameters['TelephoneNumber'])
+                $PSBoundParameters.Remove('TelephoneNumber') | Out-Null
+            }
+            if ($PSBoundParameters.ContainsKey('NumberType')) {
+                $PSBoundParameters.Add('PhoneNumberType', $PSBoundParameters['NumberType'])
+                $PSBoundParameters.Remove('NumberType') | Out-Null
             }
 
             Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsPhoneNumberAssignment @PSBoundParameters @httpPipelineArgs
@@ -1567,12 +1579,14 @@ function Set-CsPhoneNumberAssignment {
         [Parameter(Mandatory=$true, ParameterSetName='LocationUpdate')]
         [Parameter(Mandatory=$true, ParameterSetName='NetworkSiteUpdate')]
         [Parameter(Mandatory=$true, ParameterSetName='ReverseNumberLookupUpdate')]
+        [Alias("PhoneNumber")]
         [System.String]
-        ${PhoneNumber},
+        ${TelephoneNumber},
         
         [Parameter(Mandatory=$true, ParameterSetName='Assignment')]
+        [Alias("PhoneNumberType")]
         [System.String]
-        ${PhoneNumberType},
+        ${NumberType},
         
         [Parameter(ParameterSetName='Assignment')]
         [Parameter(Mandatory=$true, ParameterSetName='LocationUpdate')]
@@ -1619,6 +1633,16 @@ function Set-CsPhoneNumberAssignment {
             # Default ErrorAction to $ErrorActionPreference
             if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # Remap parameter names for internal cmdlet
+            if ($PSBoundParameters.ContainsKey('TelephoneNumber')) {
+                $PSBoundParameters.Add('PhoneNumber', $PSBoundParameters['TelephoneNumber'])
+                $PSBoundParameters.Remove('TelephoneNumber') | Out-Null
+            }
+            if ($PSBoundParameters.ContainsKey('NumberType')) {
+                $PSBoundParameters.Add('PhoneNumberType', $PSBoundParameters['NumberType'])
+                $PSBoundParameters.Remove('NumberType') | Out-Null
             }
 
             $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsPhoneNumberAssignment @PSBoundParameters @httpPipelineArgs
@@ -7598,6 +7622,91 @@ function Get-CsSharedCallQueueHistoryTemplate {
 
 # Objective of this custom file: transforming the results to the custom objects
 
+function Get-CsSharedVoicemailTriageSettingsTemplate {
+	[CmdletBinding()]
+	param(
+		[Parameter(Mandatory=$false)]
+		[System.String]
+		# The identity of the shared voicemail AI triage settings template which is retrieved.
+		${Id},
+
+		[Parameter(Mandatory=$false)]
+		[Switch]
+		${Force},
+
+   [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsSharedVoicemailTriageSettingsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($null -eq $result) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (![string]::IsNullOrEmpty(${Id})) {
+                $SharedVoicemailTriageSettingsTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedVoicemailTriageSettingsTemplate]::new()
+                $SharedVoicemailTriageSettingsTemplate.ParseFromGetResponse($result)
+            }
+            else {
+                $AllSharedVoicemailTriageSettingsTemplates = @()
+                foreach ($model in $result.AllSharedVoicemailTriageSetting) {
+                    $SharedVoicemailTriageSettingsTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedVoicemailTriageSettingsTemplate]::new()
+                    $AllSharedVoicemailTriageSettingsTemplates += $SharedVoicemailTriageSettingsTemplate.ParseFromDtoModel($model)
+                }
+            $AllSharedVoicemailTriageSettingsTemplates
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
 function Get-CsTagsTemplate {
 	[CmdletBinding()]
 	param(
@@ -8057,6 +8166,11 @@ function New-CsAutoAttendant {
         # Id for Auto Recording template.
         ${AutoRecordingTemplateId},
 
+        [Parameter(Mandatory=$false, position=18)]
+        [System.String]
+        # Id for Shared Voicemail AI Triage Settings template.
+        ${SharedVoicemailTriageSettingsTemplateId},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -8101,6 +8215,7 @@ function New-CsAutoAttendant {
             $null = $PSBoundCommonParameters.Remove("EnableMainlineAttendant")
             $null = $PSBoundCommonParameters.Remove("MainlineAttendantAgentVoiceId")
             $null = $PSBoundCommonParameters.Remove("AutoRecordingTemplateId")
+            $null = $PSBoundCommonParameters.Remove("SharedVoicemailTriageSettingsTemplateId")
 
             if ($DefaultCallFlow -ne $null) {
                 $null = $PSBoundParameters.Remove('DefaultCallFlow')
@@ -8210,15 +8325,8 @@ function New-CsAutoAttendant {
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
                 }
 
-                # For mainline attendant, we only support specific voice ids.
-                $mainlineAttendantVoiceIds = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantSupportedVoiceIds]
-                if ([string]::IsNullOrWhiteSpace($MainlineAttendantAgentVoiceId) -or
-                    -not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $MainlineAttendantAgentVoiceId)) {
-                    throw "The provided MainlineAttendantAgentVoiceId '$MainlineAttendantAgentVoiceId' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))."
-                }
-                $mainlineAttendantVoiceId = $mainlineAttendantVoiceIds::$($MainlineAttendantAgentVoiceId)
-                $null = $PSBoundParameters.Remove('MainlineAttendantAgentVoiceId')
-                $PSBoundParameters.Add("MainlineAttendantAgentVoiceId", $mainlineAttendantVoiceId)
+                # The MainlineAttendantAgentVoiceId is forwarded as-is. The Admin service is the single
+                # authority that validates whether the supplied voice is supported.
 
                 # For Mainline Attendant, EnableVoiceResponse should must be true.
                 if ($EnableVoiceResponse -ne $true) {
@@ -8230,6 +8338,10 @@ function New-CsAutoAttendant {
 
             if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and $AutoRecordingTemplateId -eq $null) {
                 $null = $PSBoundParameters.Remove('AutoRecordingTemplateId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('SharedVoicemailTriageSettingsTemplateId') -and $SharedVoicemailTriageSettingsTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('SharedVoicemailTriageSettingsTemplateId')
             }
 
             # Validate MainlineAttendant requirement for AutoRecordingTemplateId
@@ -9707,6 +9819,11 @@ function New-CsCallQueue {
         ${AutoRecordingTemplateId},
 
         [Parameter(Mandatory=$false)]
+        [System.String]
+        # Id for Shared Voicemail AI Triage Settings template.
+        ${SharedVoicemailTriageSettingsTemplateId},
+
+        [Parameter(Mandatory=$false)]
         [Switch]
         # Allow the cmdlet to run anyway
         ${Force},
@@ -9852,6 +9969,10 @@ function New-CsCallQueue {
 
             if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and $AutoRecordingTemplateId -eq $null) {
                 $null = $PSBoundParameters.Remove('AutoRecordingTemplateId')
+            }
+
+            if ($PSBoundParameters.ContainsKey('SharedVoicemailTriageSettingsTemplateId') -and $SharedVoicemailTriageSettingsTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('SharedVoicemailTriageSettingsTemplateId')
             }
 
             # Validate ConferenceMode requirement for AutoRecordingTemplateId
@@ -10858,6 +10979,97 @@ function New-CsSharedCallQueueHistoryTemplate {
 
             # Forward to the new cmdlet
             New-CsSharedCallHistoryTemplate @PSBoundParameters
+        }
+        catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsSharedVoicemailTriageSettingsTemplate {
+	[CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The Name parameter is a friendly name that is assigned to the shared voicemail AI triage settings template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [System.String]
+        # The Description parameter provides a description for the shared voicemail AI triage settings template.
+        ${Description},
+
+        [Parameter(Mandatory=$false, position=2)]
+        [bool]
+        # The EnableUrgencyDetection parameter determines whether the urgency detection feature is enabled for the shared voicemail AI triage settings template.
+        ${EnableUrgencyDetection},
+
+        [Parameter(Mandatory=$false, position=3)]
+        [bool]
+        # The EnableCategoryDetection parameter determines whether the category detection feature is enabled for the shared voicemail AI triage settings template.
+        ${EnableCategoryDetection},
+
+        [Parameter(Mandatory=$false, position=4)]
+        [bool]
+        # The EnableCallToActionDetection parameter determines whether the call to action detection feature is enabled for the shared voicemail AI triage settings template.
+        ${EnableCallToActionDetection},
+
+        [Parameter(Mandatory=$false, position=5)]
+        [bool]
+        # The EnableVoiceToTextSummary parameter determines whether the voice to text summary feature is enabled for the shared voicemail AI triage settings template.
+        ${EnableVoiceToTextSummary},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        # The HttpPipelinePrepend parameter allows for custom HTTP pipeline steps to be prepended.
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsSharedVoicemailTriageSettingsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedVoicemailTriageSettingsTemplate]::new()
+            $output.ParseFromCreateResponse($result)
+
         }
         catch {
             $customCmdletUtils.SendTelemetry()
@@ -11917,6 +12129,79 @@ function Remove-CsSharedCallQueueHistoryTemplate {
 
 # Objective of this custom file: print out the diagnostic
 
+function Remove-CsSharedVoicemailTriageSettingsTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the shared voicemail AI triage settings template to be removed.
+        ${Id},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsSharedVoicemailTriageSettingsTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: print out the diagnostic
+
 function Remove-CsTagsTemplate {
     [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
     param(
@@ -12259,6 +12544,10 @@ function Set-CsAutoAttendant {
                 $PSBoundParameters.Add('AutoRecordingTemplateId', $Instance.AutoRecordingTemplateId)
             }
 
+            if ($Instance.SharedVoicemailTriageSettingsTemplateId -ne $null) {
+                $PSBoundParameters.Add('SharedVoicemailTriageSettingsTemplateId', $Instance.SharedVoicemailTriageSettingsTemplateId)
+            }
+
             # Validate MainlineAttendant requirement for AutoRecordingTemplateId
             # MainlineAttendant must be enabled before setting AutoRecordingTemplateId
             if (![string]::IsNullOrWhiteSpace($Instance.AutoRecordingTemplateId)) {
@@ -12287,15 +12576,12 @@ function Set-CsAutoAttendant {
                     $PSBoundParameters.Add('DefaultCallFlowGreeting', $defaultCallFlowGreetings)
                 }
 
-                # For mainline attendant, we only support specific voice ids.
-                $mainlineAttendantVoiceIds = [Microsoft.Rtc.Management.Hosted.OAA.Models.MainlineAttendantSupportedVoiceIds]
-                if ([string]::IsNullOrWhiteSpace($Instance.MainlineAttendantAgentVoiceId) -or
-                    -not [System.Enum]::IsDefined($mainlineAttendantVoiceIds, $Instance.MainlineAttendantAgentVoiceId)) {
-                    throw "The provided MainlineAttendantAgentVoiceId '{0}' is not supported for Mainline Attendant. Supported values are: $([string]::Join(', ', [System.Enum]::GetNames($mainlineAttendantVoiceIds)))." -f $Instance.MainlineAttendantAgentVoiceId
-                }
-                $mainlineAttendantVoiceId = $mainlineAttendantVoiceIds::$($Instance.MainlineAttendantAgentVoiceId)
+                # The MainlineAttendantAgentVoiceId is forwarded as-is. The Admin service is the single
+                # authority that validates whether the supplied voice is supported.
                 $null = $PSBoundParameters.Remove('MainlineAttendantAgentVoiceId')
-                $PSBoundParameters.Add("MainlineAttendantAgentVoiceId", $mainlineAttendantVoiceId)
+                if (-not [string]::IsNullOrWhiteSpace($Instance.MainlineAttendantAgentVoiceId)) {
+                    $PSBoundParameters.Add("MainlineAttendantAgentVoiceId", $Instance.MainlineAttendantAgentVoiceId)
+                }
 
                 # For Mainline Attendant, VoiceResponseEnabled should must be true.
                 if ($Instance.VoiceResponseEnabled -ne $true) {
@@ -13020,6 +13306,11 @@ function Set-CsCallQueue {
 
         [Parameter(Mandatory=$false)]
         [System.String]
+        # Id for Shared Voicemail AI Triage Settings template.
+        ${SharedVoicemailTriageSettingsTemplateId},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
         # Shifts Scheduling Group identity to use as Call queues answer target.
         ${ShiftsSchedulingGroupId},
 
@@ -13635,6 +13926,10 @@ function Set-CsCallQueue {
                 $PSBoundParameters.Add('AutoRecordingTemplateId', $existingCallQueue.AutoRecordingTemplateId)
             }
 
+            if (!$PSBoundParameters.ContainsKey('SharedVoicemailTriageSettingsTemplateId') -and $null -ne $existingCallQueue.SharedVoicemailTriageSettingsTemplateId) {
+                $PSBoundParameters.Add('SharedVoicemailTriageSettingsTemplateId', $existingCallQueue.SharedVoicemailTriageSettingsTemplateId)
+            }
+
             # Validate ConferenceMode requirement for AutoRecordingTemplateId
             # ConferenceMode must be enabled before setting AutoRecordingTemplateId
             $conferenceModeValue = $ConferenceMode
@@ -13836,11 +14131,16 @@ function Set-CsMainlineAttendantAppointmentBookingFlow {
                 throw "Failed to read API Definitions file: $_"
             }
 
+            $relatedConfigurationIds = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IRelatedConfiguration[]]@()
+            if ($null -ne ${Instance}.RelatedConfigurationIds) {
+                $relatedConfigurationIds = @(${Instance}.RelatedConfigurationIds | ForEach-Object { $_.ParseToAutoGeneratedDtoModel() })
+            }
+
             $params = @{
                 Name = ${Instance}.Name
                 Identity = ${Instance}.Identity
                 Type = ${Instance}.Type
-                RelatedConfigurationIds = ${Instance}.RelatedConfigurationIds
+                RelatedConfigurationIds = $relatedConfigurationIds
                 Description = ${Instance}.Description
                 CallerAuthenticationMethod = ${Instance}.CallerAuthenticationMethod
                 ApiAuthenticationType = ${Instance}.ApiAuthenticationType
@@ -13944,11 +14244,16 @@ function Set-CsMainlineAttendantQuestionAnswerFlow {
             }
 
 
+            $relatedConfigurationIds = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IRelatedConfiguration[]]@()
+            if ($null -ne ${Instance}.RelatedConfigurationIds) {
+                $relatedConfigurationIds = @(${Instance}.RelatedConfigurationIds | ForEach-Object { $_.ParseToAutoGeneratedDtoModel() })
+            }
+
             $params = @{
                 Name = ${Instance}.Name
                 Identity = ${Instance}.Identity
                 Type = ${Instance}.Type
-                RelatedConfigurationIds = ${Instance}.RelatedConfigurationIds
+                RelatedConfigurationIds = $relatedConfigurationIds
                 Description = ${Instance}.Description
                 ApiAuthenticationType = ${Instance}.ApiAuthenticationType
                 KnowledgeBase = ${Instance}.KnowledgeBase
@@ -14519,6 +14824,95 @@ function Set-CsSharedCallQueueHistoryTemplate {
         $customCmdletUtils.SendTelemetry()
     }
 }
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsSharedVoicemailTriageSettingsTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the shared voicemail AI triage settings template to be modified.
+        ${Instance},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        # The Force parameter indicates if we force the action to be performed. (Deprecated)
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Id
+                Description = ${Instance}.Description
+                EnableUrgencyDetection = ${Instance}.EnableUrgencyDetection
+                EnableCategoryDetection = ${Instance}.EnableCategoryDetection
+                EnableCallToActionDetection = ${Instance}.EnableCallToActionDetection
+                EnableVoiceToTextSummary = ${Instance}.EnableVoiceToTextSummary
+            }
+
+            # Add common parameters
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            $null = $params.Remove("Instance")
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsSharedVoicemailTriageSettingsTemplate @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.SharedVoicemailTriageSettingsTemplate]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+
 # ----------------------------------------------------------------------------------
 #
 # Copyright Microsoft Corporation

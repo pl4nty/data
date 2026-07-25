@@ -24485,6 +24485,9 @@
 							<ListItem>
 								<PropertyName>AutoRecordingTemplateId</PropertyName>
 							</ListItem>
+							<ListItem>
+								<PropertyName>SharedVoicemailTriageSettingsTemplateId</PropertyName>
+							</ListItem>
 						</ListItems>
 					</ListEntry>
 				</ListEntries>
@@ -25095,6 +25098,9 @@
 							</ListItem>
 							<ListItem>
 								<PropertyName>AutoRecordingTemplateId</PropertyName>
+							</ListItem>
+							<ListItem>
+								<PropertyName>SharedVoicemailTriageSettingsTemplateId</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>

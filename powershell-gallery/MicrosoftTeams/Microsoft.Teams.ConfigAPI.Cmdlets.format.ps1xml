@@ -2029,6 +2029,9 @@
             <Label>Name</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailTriageSettingsTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>TenantId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2076,6 +2079,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailTriageSettingsTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TenantId</PropertyName>
@@ -2906,6 +2912,9 @@
             <Label>SharedCallQueueHistoryTemplateId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailTriageSettingsTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -3256,6 +3265,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>SharedCallQueueHistoryTemplateId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailTriageSettingsTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>
@@ -5136,6 +5148,9 @@
             <Label>Name</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailTriageSettingsId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>TimeZoneId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5171,6 +5186,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailTriageSettingsId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TimeZoneId</PropertyName>
@@ -5515,6 +5533,9 @@
             <Label>SharedCallQueueHistoryId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailTriageSettingsId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5790,6 +5811,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>SharedCallQueueHistoryId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailTriageSettingsId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>
@@ -6300,6 +6324,58 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>IncomingRedirectedCall</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedVoicemailTriageSettingsTemplateRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSharedVoicemailTriageSettingsTemplateRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableCallToActionDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableCategoryDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableUrgencyDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableVoiceToTextSummary</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableCallToActionDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableCategoryDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableUrgencyDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableVoiceToTextSummary</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Name</PropertyName>
@@ -13110,6 +13186,64 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedVoicemailTriageSettingsTemplateDto</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SharedVoicemailTriageSettingsTemplateDto</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableCallToActionDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableCategoryDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableUrgencyDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableVoiceToTextSummary</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Id</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableCallToActionDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableCategoryDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableUrgencyDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableVoiceToTextSummary</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SimpleBatchJobStatus</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.SimpleBatchJobStatus</TypeName>
@@ -16494,6 +16628,9 @@
             <Label>SharedCallQueueHistoryId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SharedVoicemailTriageSettingsId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ShiftsSchedulingGroupId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -16769,6 +16906,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>SharedCallQueueHistoryId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SharedVoicemailTriageSettingsId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ShiftsSchedulingGroupId</PropertyName>

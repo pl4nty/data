@@ -79,7 +79,8 @@ Configuration MultipleCatConfiguration
 # It will create a folder with the same name as configuration name (\POSTBehaviorConfiguration)and will contain mof output file.
 
 MultipleCatConfiguration -ComputerName localhost
-MultipleCatConfiguration -ComputerName 10.194.23.66
+# NOTE: Replace <TARGET-NODE-FQDN> with the fully qualified domain name or IP of the target node.
+MultipleCatConfiguration -ComputerName "<TARGET-NODE-FQDN>"
 
 
 #Push Mof

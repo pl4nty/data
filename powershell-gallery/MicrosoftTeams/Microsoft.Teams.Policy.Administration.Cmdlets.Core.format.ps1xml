@@ -1693,6 +1693,10 @@
                         <PropertyName>RecordingAndTranscriptionCustomMessageIdentifier</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>AllowMeetingKnowledgeGeneration</Label>
+                        <PropertyName>AllowMeetingKnowledgeGeneration</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>AllowTranscriptionForCalling</Label>
                         <PropertyName>AllowTranscriptionForCalling</PropertyName>
                     </ListItem>
@@ -1771,6 +1775,10 @@
                     <ListItem>
                         <Label>ReportCall</Label>
                         <PropertyName>ReportCall</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>VoicePhishingDetection</Label>
+                        <PropertyName>VoicePhishingDetection</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -1888,6 +1896,50 @@
                     <ListItem>
                         <Label>ThreadedChannelCreation</Label>
                         <PropertyName>ThreadedChannelCreation</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowCreateChannel</Label>
+                        <PropertyName>AllowCreateChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowCreateClassicChannel</Label>
+                        <PropertyName>AllowCreateClassicChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowCreatePrivateChannel</Label>
+                        <PropertyName>AllowCreatePrivateChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowCreateSharedChannel</Label>
+                        <PropertyName>AllowCreateSharedChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CreateSharedChannelsByDefault</Label>
+                        <PropertyName>CreateSharedChannelsByDefault</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowUsersFromOutsideTeam</Label>
+                        <PropertyName>AllowUsersFromOutsideTeam</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowGuestsFromOutsideTeam</Label>
+                        <PropertyName>AllowGuestsFromOutsideTeam</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowUsersFromOutsideTeamInPrivateChannel</Label>
+                        <PropertyName>AllowUsersFromOutsideTeamInPrivateChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowGuestsFromOutsideTeamInPrivateChannel</Label>
+                        <PropertyName>AllowGuestsFromOutsideTeamInPrivateChannel</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowSharingWithTeamInOrg</Label>
+                        <PropertyName>AllowSharingWithTeamInOrg</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowSharingPrivateChannelWithTeamInOrg</Label>
+                        <PropertyName>AllowSharingPrivateChannelWithTeamInOrg</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -2364,6 +2416,14 @@
                     <ListItem>
                         <Label>Registration</Label>
                         <PropertyName>Registration</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowEngagementReport</Label>
+                        <PropertyName>AllowEngagementReport</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>InfoShownInReportMode</Label>
+                        <PropertyName>InfoShownInReportMode</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>Description</Label>
@@ -2910,6 +2970,10 @@
                         <PropertyName>AllowAnonymousUsersToJoinMeeting</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>ConditionalAccessAttendeeVerification</Label>
+                        <PropertyName>ConditionalAccessAttendeeVerification</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>BlockedAnonymousJoinClientTypes</Label>
                         <PropertyName>BlockedAnonymousJoinClientTypes</PropertyName>
                     </ListItem>
@@ -3282,8 +3346,24 @@
                         <PropertyName>ExternalBotAccessMode</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>SyntheticMediaDetection</Label>
+                        <PropertyName>SyntheticMediaDetection</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>SyntheticMediaDetectionAppId</Label>
+                        <PropertyName>SyntheticMediaDetectionAppId</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>DisableAudioAnnouncementsForResourceAccounts</Label>
                         <PropertyName>DisableAudioAnnouncementsForResourceAccounts</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnablePreMeetingConsent</Label>
+                        <PropertyName>EnablePreMeetingConsent</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PreMeetingConsentContentIdentifier</Label>
+                        <PropertyName>PreMeetingConsentContentIdentifier</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -3311,6 +3391,10 @@
                     <ListItem>
                         <Label>Description</Label>
                         <PropertyName>Description</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DefaultMeetingTemplateId</Label>
+                        <PropertyName>DefaultMeetingTemplateId</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -5007,20 +5091,16 @@
                         <PropertyName>ExternalAccessWithTrialTenants</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>DomainBlockingForMDOAdminsInTeams</Label>
-                        <PropertyName>DomainBlockingForMDOAdminsInTeams</PropertyName>
-                    </ListItem>
-                    <ListItem>
                         <Label>SecurityTeamAllowBlockListDelegation</Label>
                         <PropertyName>SecurityTeamAllowBlockListDelegation</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>EnableExternalAccessRestrictionsForChatPartipants</Label>
-                        <PropertyName>EnableExternalAccessRestrictionsForChatPartipants</PropertyName>
+                        <Label>EnableExternalAccessRestrictionsForChatParticipants</Label>
+                        <PropertyName>EnableExternalAccessRestrictionsForChatParticipants</PropertyName>
                     </ListItem>
                     <ListItem>
-                        <Label>EnableMutualFederationForChatPartipants</Label>
-                        <PropertyName>EnableMutualFederationForChatPartipants</PropertyName>
+                        <Label>EnableMutualFederationForChatParticipants</Label>
+                        <PropertyName>EnableMutualFederationForChatParticipants</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -6297,6 +6377,148 @@
                </ListControl>
               </View>
 <View>
+                  <Name>TeamsMeetingConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsMeetingConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PublishedEntraAuthenticationContexts</Label>
+                        <PropertyName>PublishedEntraAuthenticationContexts</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LogoURL</Label>
+                        <PropertyName>LogoURL</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LegalURL</Label>
+                        <PropertyName>LegalURL</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>HelpURL</Label>
+                        <PropertyName>HelpURL</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CustomFooterText</Label>
+                        <PropertyName>CustomFooterText</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DisableAnonymousJoin</Label>
+                        <PropertyName>DisableAnonymousJoin</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DisableAppInteractionForAnonymousUsers</Label>
+                        <PropertyName>DisableAppInteractionForAnonymousUsers</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableQoS</Label>
+                        <PropertyName>EnableQoS</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableAttributedTranscripts</Label>
+                        <PropertyName>EnableAttributedTranscripts</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableGraphTranscriptAccess</Label>
+                        <PropertyName>EnableGraphTranscriptAccess</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientAudioPort</Label>
+                        <PropertyName>ClientAudioPort</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientAudioPortRange</Label>
+                        <PropertyName>ClientAudioPortRange</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientVideoPort</Label>
+                        <PropertyName>ClientVideoPort</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientVideoPortRange</Label>
+                        <PropertyName>ClientVideoPortRange</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientAppSharingPort</Label>
+                        <PropertyName>ClientAppSharingPort</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientAppSharingPortRange</Label>
+                        <PropertyName>ClientAppSharingPortRange</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ClientMediaPortRangeEnabled</Label>
+                        <PropertyName>ClientMediaPortRangeEnabled</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LimitPresenterRolePermissions</Label>
+                        <PropertyName>LimitPresenterRolePermissions</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>FeedbackSurveyForAnonymousUsers</Label>
+                        <PropertyName>FeedbackSurveyForAnonymousUsers</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ReportMeeting</Label>
+                        <PropertyName>ReportMeeting</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>PublishedEntraAuthenticationContextView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.PublishedEntraAuthenticationContext</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PublishedName</Label>
+                        <PropertyName>PublishedName</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>PublishedDescription</Label>
+                        <PropertyName>PublishedDescription</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EntraName</Label>
+                        <PropertyName>EntraName</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EntraDescription</Label>
+                        <PropertyName>EntraDescription</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Published</Label>
+                        <PropertyName>Published</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
                   <Name>TeamsMeetingTemplateConfigurationView</Name>
                <ViewSelectedBy>
                   <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsMeetingTemplateConfiguration</TypeName>
@@ -6469,6 +6691,68 @@
                     <ListItem>
                         <Label>ReportIncorrectSecurityDetections</Label>
                         <PropertyName>ReportIncorrectSecurityDetections</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>PreMeetingConsentView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.PreMeetingConsent</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>LocalizedContent</Label>
+                        <PropertyName>LocalizedContent</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Id</Label>
+                        <PropertyName>Id</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>LocalizedContentView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.LocalizedContent</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>LanguageId</Label>
+                        <PropertyName>LanguageId</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Title</Label>
+                        <PropertyName>Title</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Content</Label>
+                        <PropertyName>Content</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>IsDefault</Label>
+                        <PropertyName>IsDefault</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Timestamp</Label>
+                        <PropertyName>Timestamp</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

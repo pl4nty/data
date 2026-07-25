@@ -6230,6 +6230,227 @@ end {
 
 <#
 .Synopsis
+Get all shared voicemail AI triage settings Configs for a tenant.
+GET /Teams.VoiceApps/shared-voicemail-triage-settings?<query_params>.
+.Description
+Get all shared voicemail AI triage settings Configs for a tenant.
+GET /Teams.VoiceApps/shared-voicemail-triage-settings?<query_params>.
+.Example
+PS C:\> Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+.Example
+PS C:\> Get-CsSharedVoicemailTriageSettingsTemplate
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedVoicemailTriageSettingsTemplateResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-cssharedvoicemailtriagesettingstemplate
+#>
+function Get-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedVoicemailTriageSettingsTemplateResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # shared voicemail AI triage settings config Id.
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IncludeStatus},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Get all ivr tags template for a tenant.
 GET api/v1.0/tenants/tenantId/ivr-tags-template?<query_params>.
 .Description
@@ -8965,6 +9186,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [OperatorId <String>]: 
   [OperatorSharedVoicemailHistoryTemplateId <String>]: 
   [OperatorType <String>]: 
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [TimeZoneId <String>]: 
   [UserNameExtension <String>]: 
   [VoiceId <String>]: 
@@ -9254,6 +9476,12 @@ param(
     [System.String]
     # .
     ${OperatorType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -11039,6 +11267,7 @@ BODY <ICreateCallQueueRequest>: CallQueue creation request DTO class.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
   [SharedCallQueueHistoryId <String>]: Gets or sets the shared call history template.
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -11482,6 +11711,12 @@ param(
     [System.String]
     # Gets or sets the shared call history template.
     ${SharedCallQueueHistoryTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -13827,6 +14062,172 @@ begin {
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallHistoryTemplate_New';
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallHistoryTemplate_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create shared voicemail AI triage settings template.
+POST /Teams.VoiceApps/shared-voicemail-triage-settings.
+.Description
+Create shared voicemail AI triage settings template.
+POST /Teams.VoiceApps/shared-voicemail-triage-settings.
+.Example
+PS C:\> New-CsSharedVoicemailTriageSettingsTemplate -Name "Template" -Description "AI Triage settings for Shared Voicemail Triage Settings" -EnableUrgencyDetection $true -EnableCategoryDetection $true -EnableCallToActionDetection $true -EnableVoiceToTextSummary $true
+.Example
+PS C:\> New-CsSharedVoicemailTriageSettingsTemplate -Name "Basic Triage Template" -Description "Basic AI Triage settings" -EnableUrgencyDetection $false -EnableVoiceToTextSummary $false
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSharedVoicemailTriageSettingsTemplateRequest>: Request model for creating a shared voicemail AI triage settings template.
+  [Description <String>]: Gets or sets the description of the template for shared voicemail AI triage.
+  [EnableCallToActionDetection <Boolean?>]: Enable or disable the action detection feature for shared voicemail AI triage.
+  [EnableCategoryDetection <Boolean?>]: Enable or disable the category detection feature for shared voicemail AI triage.
+  [EnableUrgencyDetection <Boolean?>]: Enable or disable the urgency detection feature for shared voicemail AI triage.
+  [EnableVoiceToTextSummary <Boolean?>]: Enable or disable the summarization feature for shared voicemail AI triage.
+  [Name <String>]: Gets or sets the name of the template for shared voicemail AI triage.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-cssharedvoicemailtriagesettingstemplate
+#>
+function New-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateRequest]
+    # Request model for creating a shared voicemail AI triage settings template.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the template for shared voicemail AI triage.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the action detection feature for shared voicemail AI triage.
+    ${EnableCallToActionDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the category detection feature for shared voicemail AI triage.
+    ${EnableCategoryDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the urgency detection feature for shared voicemail AI triage.
+    ${EnableUrgencyDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the summarization feature for shared voicemail AI triage.
+    ${EnableVoiceToTextSummary},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the template for shared voicemail AI triage.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedVoicemailTriageSettingsTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedVoicemailTriageSettingsTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -21082,6 +21483,222 @@ end {
 
 <#
 .Synopsis
+Get all shared voicemail AI triage settings Configs for a tenant.
+GET /Teams.VoiceApps/shared-voicemail-triage-settings?<query_params>.
+.Description
+Get all shared voicemail AI triage settings Configs for a tenant.
+GET /Teams.VoiceApps/shared-voicemail-triage-settings?<query_params>.
+.Example
+PS C:\> Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+.Example
+PS C:\> Get-CsSharedVoicemailTriageSettingsTemplate
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedVoicemailTriageSettingsTemplateResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-cssharedvoicemailtriagesettingstemplate
+#>
+function Get-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSharedVoicemailTriageSettingsTemplateResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # shared voicemail AI triage settings config Id.
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${ExcludeContent},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${IncludeStatus},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${TypeFilter},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsSharedVoicemailTriageSettingsTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Get all ivr tags template for a tenant.
 GET api/v1.0/tenants/tenantId/ivr-tags-template?<query_params>.
 .Description
@@ -25041,6 +25658,7 @@ BODY <ICreateAutoAttendantRequest>: .
   [OperatorId <String>]: 
   [OperatorSharedVoicemailHistoryTemplateId <String>]: 
   [OperatorType <String>]: 
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [TimeZoneId <String>]: 
   [UserNameExtension <String>]: 
   [VoiceId <String>]: 
@@ -25330,6 +25948,12 @@ param(
     [System.String]
     # .
     ${OperatorType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -25766,6 +26390,7 @@ BODY <ICreateCallQueueRequest>: CallQueue creation request DTO class.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
   [SharedCallQueueHistoryId <String>]: Gets or sets the shared call history template.
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -26209,6 +26834,12 @@ param(
     [System.String]
     # Gets or sets the shared call history template.
     ${SharedCallQueueHistoryTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -28489,6 +29120,167 @@ begin {
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallHistoryTemplate_New';
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedCallHistoryTemplate_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Create shared voicemail AI triage settings template.
+POST /Teams.VoiceApps/shared-voicemail-triage-settings.
+.Description
+Create shared voicemail AI triage settings template.
+POST /Teams.VoiceApps/shared-voicemail-triage-settings.
+.Example
+PS C:\> New-CsSharedVoicemailTriageSettingsTemplate -Name "Template" -Description "AI Triage settings for Shared Voicemail Triage Settings" -EnableUrgencyDetection $true -EnableCategoryDetection $true -EnableCallToActionDetection $true -EnableVoiceToTextSummary $true
+.Example
+PS C:\> New-CsSharedVoicemailTriageSettingsTemplate -Name "Basic Triage Template" -Description "Basic AI Triage settings" -EnableUrgencyDetection $false -EnableVoiceToTextSummary $false
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSharedVoicemailTriageSettingsTemplateRequest>: Request model for creating a shared voicemail AI triage settings template.
+  [Description <String>]: Gets or sets the description of the template for shared voicemail AI triage.
+  [EnableCallToActionDetection <Boolean?>]: Enable or disable the action detection feature for shared voicemail AI triage.
+  [EnableCategoryDetection <Boolean?>]: Enable or disable the category detection feature for shared voicemail AI triage.
+  [EnableUrgencyDetection <Boolean?>]: Enable or disable the urgency detection feature for shared voicemail AI triage.
+  [EnableVoiceToTextSummary <Boolean?>]: Enable or disable the summarization feature for shared voicemail AI triage.
+  [Name <String>]: Gets or sets the name of the template for shared voicemail AI triage.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-cssharedvoicemailtriagesettingstemplate
+#>
+function New-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSharedVoicemailTriageSettingsTemplateRequest]
+    # Request model for creating a shared voicemail AI triage settings template.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the template for shared voicemail AI triage.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the action detection feature for shared voicemail AI triage.
+    ${EnableCallToActionDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the category detection feature for shared voicemail AI triage.
+    ${EnableCategoryDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the urgency detection feature for shared voicemail AI triage.
+    ${EnableUrgencyDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the summarization feature for shared voicemail AI triage.
+    ${EnableVoiceToTextSummary},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the template for shared voicemail AI triage.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedVoicemailTriageSettingsTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsSharedVoicemailTriageSettingsTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -32247,6 +33039,169 @@ end {
 
 <#
 .Synopsis
+Delete shared voicemail AI triage settings template config.
+DELETE /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Description
+Delete shared voicemail AI triage settings template config.
+DELETE /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Example
+PS C:\> Remove-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-cssharedvoicemailtriagesettingstemplate
+#>
+function Remove-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedVoicemailTriageSettingsTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedVoicemailTriageSettingsTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Delete IVR Tags Template.
 DELETE api/v1.0/tenants/tenantId/ivr-tags-template/identity.
 .Description
@@ -33229,6 +34184,7 @@ BODY <IAutoAttendant>: .
     [WeeklyRecurrentScheduleTuesdayHour <ITimeRange[]>]: 
     [WeeklyRecurrentScheduleWednesdayHour <ITimeRange[]>]: 
   [SharedVoicemailHistoryTemplateId <String>]: 
+  [SharedVoicemailTriageSettingsTemplateId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [Status <IStatusRecord2[]>]: 
     [AuxiliaryData <String[]>]: Get or sets auxiliary data.
     [ErrorCode <String>]: Gets or sets error code of audio, grammar.
@@ -33713,6 +34669,13 @@ param(
     [System.String]
     # .
     ${SharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -34208,6 +35171,7 @@ BODY <IUpdateCallQueueRequest>: CallQueue modify request DTO class.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
   [SharedCallQueueHistoryId <String>]: Gets or sets the shared call history template.
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -34765,6 +35729,13 @@ param(
     [System.String]
     # Gets or sets the shared call history template.
     ${SharedCallQueueHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -38386,6 +39357,248 @@ begin {
             SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetExpanded';
             SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetViaIdentity';
             SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Update shared voicemail AI triage settings template.
+PUT /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Description
+Update shared voicemail AI triage settings template.
+PUT /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Example
+PS C:\> $template = Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+PS C:\> $template.Name = "Updated Shared VM Template"
+PS C:\> Set-CsSharedVoicemailTriageSettingsTemplate -Instance $template
+.Example
+PS C:\> $template = Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+PS C:\> $template.EnableCategoryDetection = $false
+PS C:\> $template.EnableCallToActionDetection = $false
+PS C:\> Set-CsSharedVoicemailTriageSettingsTemplate -Instance $template
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedVoicemailTriageSettingsTemplateDto
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISharedVoicemailTriageSettingsTemplateDto>: Represents the shared voicemail AI triage settings.
+  [Description <String>]: Gets or sets the description of the shared voicemail AI triage settings.
+  [EnableCallToActionDetection <Boolean?>]: Enable or disable the action detection feature for shared voicemail AI triage settings.
+  [EnableCategoryDetection <Boolean?>]: Enable or disable the category detection feature for shared voicemail AI triage settings.
+  [EnableUrgencyDetection <Boolean?>]: Enable or disable the urgency detection feature for shared voicemail AI triage settings.
+  [EnableVoiceToTextSummary <Boolean?>]: Enable or disable the summarization feature for shared voicemail AI triage settings.
+  [Id <String>]: Gets or sets the identifier of the shared voicemail AI triage settings.
+  [Name <String>]: Gets or sets the name of the shared voicemail AI triage settings.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cssharedvoicemailtriagesettingstemplate
+#>
+function Set-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # The identity of the shared voicemail AI triage settings template configuration.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedVoicemailTriageSettingsTemplateDto]
+    # Represents the shared voicemail AI triage settings.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared voicemail AI triage settings.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the action detection feature for shared voicemail AI triage settings.
+    ${EnableCallToActionDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the category detection feature for shared voicemail AI triage settings.
+    ${EnableCategoryDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the urgency detection feature for shared voicemail AI triage settings.
+    ${EnableUrgencyDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the summarization feature for shared voicemail AI triage settings.
+    ${EnableVoiceToTextSummary},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the identifier of the shared voicemail AI triage settings.
+    ${Id},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared voicemail AI triage settings.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -43020,6 +44233,174 @@ end {
 
 <#
 .Synopsis
+Delete shared voicemail AI triage settings template config.
+DELETE /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Description
+Delete shared voicemail AI triage settings template config.
+DELETE /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Example
+PS C:\> Remove-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-cssharedvoicemailtriagesettingstemplate
+#>
+function Remove-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedVoicemailTriageSettingsTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsSharedVoicemailTriageSettingsTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Delete IVR Tags Template.
 DELETE api/v1.0/tenants/tenantId/ivr-tags-template/identity.
 .Description
@@ -44027,6 +45408,7 @@ BODY <IAutoAttendant>: .
     [WeeklyRecurrentScheduleTuesdayHour <ITimeRange[]>]: 
     [WeeklyRecurrentScheduleWednesdayHour <ITimeRange[]>]: 
   [SharedVoicemailHistoryTemplateId <String>]: 
+  [SharedVoicemailTriageSettingsTemplateId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [Status <IStatusRecord2[]>]: 
     [AuxiliaryData <String[]>]: Get or sets auxiliary data.
     [ErrorCode <String>]: Gets or sets error code of audio, grammar.
@@ -44511,6 +45893,13 @@ param(
     [System.String]
     # .
     ${SharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -45016,6 +46405,7 @@ BODY <IUpdateCallQueueRequest>: CallQueue modify request DTO class.
   [RoutingMethod <Int32?>]: Gets or sets the routing method for the  Call Queue.
   [ServiceLevelThresholdResponseTimeInSecond <Int32?>]: 
   [SharedCallQueueHistoryId <String>]: Gets or sets the shared call history template.
+  [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
   [ShiftsSchedulingGroupId <String>]: Gets or sets the Shifts Scheduling Group to use as Call queues answer target.
   [ShiftsTeamId <String>]: Gets or sets the Shifts Team to use as Call queues answer target.
   [ShouldOverwriteCallableChannelProperty <Boolean?>]: Gets or sets ShouldOverwriteCallableChannelProperty flag that indicates user intention to whether overwirte the current callableChannel property value on chat service or not.
@@ -45573,6 +46963,13 @@ param(
     [System.String]
     # Gets or sets the shared call history template.
     ${SharedCallQueueHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Shared Voicemail AI Triage Settings template.
+    ${SharedVoicemailTriageSettingsTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -49269,6 +50666,253 @@ begin {
             SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetExpanded';
             SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetViaIdentity';
             SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedCallHistoryTemplate_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Update shared voicemail AI triage settings template.
+PUT /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Description
+Update shared voicemail AI triage settings template.
+PUT /Teams.VoiceApps/shared-voicemail-triage-settings/identity.
+.Example
+PS C:\> $template = Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+PS C:\> $template.Name = "Updated Shared VM Template"
+PS C:\> Set-CsSharedVoicemailTriageSettingsTemplate -Instance $template
+.Example
+PS C:\> $template = Get-CsSharedVoicemailTriageSettingsTemplate -Id "f0cf59f6-94f2-4604-bed2-01917401ee39"
+PS C:\> $template.EnableCategoryDetection = $false
+PS C:\> $template.EnableCallToActionDetection = $false
+PS C:\> Set-CsSharedVoicemailTriageSettingsTemplate -Instance $template
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedVoicemailTriageSettingsTemplateDto
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedVoicemailTriageSettingsTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ISharedVoicemailTriageSettingsTemplateDto>: Represents the shared voicemail AI triage settings.
+  [Description <String>]: Gets or sets the description of the shared voicemail AI triage settings.
+  [EnableCallToActionDetection <Boolean?>]: Enable or disable the action detection feature for shared voicemail AI triage settings.
+  [EnableCategoryDetection <Boolean?>]: Enable or disable the category detection feature for shared voicemail AI triage settings.
+  [EnableUrgencyDetection <Boolean?>]: Enable or disable the urgency detection feature for shared voicemail AI triage settings.
+  [EnableVoiceToTextSummary <Boolean?>]: Enable or disable the summarization feature for shared voicemail AI triage settings.
+  [Id <String>]: Gets or sets the identifier of the shared voicemail AI triage settings.
+  [Name <String>]: Gets or sets the name of the shared voicemail AI triage settings.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-cssharedvoicemailtriagesettingstemplate
+#>
+function Set-CsSharedVoicemailTriageSettingsTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSharedVoicemailTriageSettingsTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # The identity of the shared voicemail AI triage settings template configuration.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ISharedVoicemailTriageSettingsTemplateDto]
+    # Represents the shared voicemail AI triage settings.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the shared voicemail AI triage settings.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the action detection feature for shared voicemail AI triage settings.
+    ${EnableCallToActionDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the category detection feature for shared voicemail AI triage settings.
+    ${EnableCategoryDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the urgency detection feature for shared voicemail AI triage settings.
+    ${EnableUrgencyDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Enable or disable the summarization feature for shared voicemail AI triage settings.
+    ${EnableVoiceToTextSummary},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the identifier of the shared voicemail AI triage settings.
+    ${Id},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the shared voicemail AI triage settings.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsSharedVoicemailTriageSettingsTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)

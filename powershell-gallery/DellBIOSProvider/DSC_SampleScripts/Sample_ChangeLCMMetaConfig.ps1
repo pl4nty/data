@@ -36,10 +36,15 @@ ConfigurationMode = "ApplyAndAutoCorrect"
 
 }
 
-LCMForRef -ComputerName 10.94.174.165
-$secpwd=ConvertTo-SecureString "dell_123" -AsPlainText -force
-$mycred=New-Object System.Management.Automation.PSCredential("administrator",$secpwd)
+# NOTE: Replace <TARGET-NODE-FQDN> with the fully qualified domain name or IP of the target node.
+LCMForRef -ComputerName "<TARGET-NODE-FQDN>"
 
+# NOTE: Replace <ADMIN-USERNAME> and <ADMIN-PASSWORD> with the actual credentials.
+# Do NOT hardcode passwords in production scripts; use secure credential stores (e.g., Windows Credential Manager, Azure Key Vault).
+$username = "<ADMIN-USERNAME>"
+$password = "<ADMIN-PASSWORD>"
+$secpwd = ConvertTo-SecureString $password -AsPlainText -Force
+$mycred = New-Object System.Management.Automation.PSCredential($username, $secpwd)
 
 Set-DscLocalConfigurationManager -Path .\LCMForRef -Credential $mycred -Force
 
@@ -50,7 +55,7 @@ Set-DscLocalConfigurationManager -Path .\LCMForRef -Credential $mycred -Force
 #For user's info: commands to immediately apply config without waiting for freq
 # Invoke-CimMethod  -Namespace root/Microsoft/Windows/DesiredStateConfiguration -class MSFT_DSCLocalConfigurationManager -MethodName PerformRequiredConfigurationChecks -Arguments @{flags=[uint32]1}
 # OR
-# Invoke-CimMethod -ComputerName "10.94.23.45" -Namespace root/Microsoft/Windows/DesiredStateConfiguration -class MSFT_DSCLocalConfigurationManager -MethodName PerformRequiredConfigurationChecks -Arguments @{flags=[uint32]1}
+# Invoke-CimMethod -ComputerName "<TARGET-NODE-FQDN>" -Namespace root/Microsoft/Windows/DesiredStateConfiguration -class MSFT_DSCLocalConfigurationManager -MethodName PerformRequiredConfigurationChecks -Arguments @{flags=[uint32]1}
 ####
 
 # SIG # Begin signature block

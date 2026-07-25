@@ -70,7 +70,8 @@ Configuration MultipleCatConfiguration
         }
     }
 
-    Node 10.194.23.55
+    # NOTE: Replace <TARGET-NODE-FQDN> with the fully qualified domain name or IP of the target node.
+    Node "<TARGET-NODE-FQDN>"
     {
       POSTBehavior customSettings
       {
