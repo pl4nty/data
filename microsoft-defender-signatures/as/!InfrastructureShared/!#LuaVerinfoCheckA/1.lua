@@ -407,6 +407,10 @@ do
   local l_0_28 = ""
   if l_0_27 then
     l_0_27 = (string.lower)(l_0_27)
+    local l_0_29 = (l_0_27:match("%.([^%.]+)$"))
+    if l_0_29 ~= nil and 1 <= #l_0_29 then
+      (mp.set_mpattribute)("Lua:PeOriginalNameExt!" .. l_0_29)
+    end
     l_0_27 = l_0_27:gsub("%.exe%.mui", ".exe")
     l_0_28 = l_0_27:gsub(" ", "_")
     ;
@@ -419,69 +423,71 @@ do
       (mp.set_mpattribute)("Lua:PeOriginalNameMatchedFileName")
     end
   else
-    l_0_27 = "nil"
-    ;
-    (mp.set_mpattribute)("Lua:PeOriginalName!nil")
-  end
-  local l_0_29 = false
-  if l_0_21 == "exe" and (l_0_11[l_0_27] or l_0_11[l_0_10]) then
-    l_0_29 = true
-  end
-  if l_0_21 == "dll" and (l_0_12[l_0_27] or l_0_12[l_0_10]) then
-    l_0_29 = true
-  end
-  if l_0_19 or l_0_29 and not l_0_14 then
-    if (mp.IsTrustedFile)() then
-      l_0_18 = true
+    do
+      l_0_27 = "nil"
       ;
-      (mp.set_mpattribute)("Lua:PeIsTrustedLolbin")
-      ;
-      (mp.set_mpattribute)("Lua:PeIsTrustedLolbin!" .. l_0_27)
-      ;
-      (mp.set_mpattribute)("Lua:PeIsTrustedLolbinFile!" .. l_0_10)
-    else
-      ;
-      (mp.set_mpattribute)("Lua:PeUntrustedLolbin")
-      ;
-      (mp.set_mpattribute)("Lua:PeUnTrustedLolbin!" .. l_0_27)
-      ;
-      (mp.set_mpattribute)("Lua:PeUnTrustedLolbinFile!" .. l_0_10)
-      ;
-      (mp.set_mpattribute)("Lua:PeUntrustedLolbinExt!" .. l_0_21)
+      (mp.set_mpattribute)("Lua:PeOriginalName!nil")
+      local l_0_30 = false
+      if l_0_21 == "exe" and (l_0_11[l_0_27] or l_0_11[l_0_10]) then
+        l_0_30 = true
+      end
+      if l_0_21 == "dll" and (l_0_12[l_0_27] or l_0_12[l_0_10]) then
+        l_0_30 = true
+      end
+      if l_0_19 or l_0_30 and not l_0_14 then
+        if (mp.IsTrustedFile)() then
+          l_0_18 = true
+          ;
+          (mp.set_mpattribute)("Lua:PeIsTrustedLolbin")
+          ;
+          (mp.set_mpattribute)("Lua:PeIsTrustedLolbin!" .. l_0_27)
+          ;
+          (mp.set_mpattribute)("Lua:PeIsTrustedLolbinFile!" .. l_0_10)
+        else
+          ;
+          (mp.set_mpattribute)("Lua:PeUntrustedLolbin")
+          ;
+          (mp.set_mpattribute)("Lua:PeUnTrustedLolbin!" .. l_0_27)
+          ;
+          (mp.set_mpattribute)("Lua:PeUnTrustedLolbinFile!" .. l_0_10)
+          ;
+          (mp.set_mpattribute)("Lua:PeUntrustedLolbinExt!" .. l_0_21)
+        end
+      end
+      local l_0_31 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+      do
+        if l_0_31 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+          local l_0_32 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+          l_0_17 = true
+          ;
+          (mp.set_mpattribute)("Lua:NewPeFile")
+          ;
+          (mp.set_mpattribute)("Lua:NewPeFile!" .. l_0_10)
+          if 38 < #l_0_32 then
+            (mp.set_mpattribute)("Lua:RtpProcNameTooLong")
+          else
+            ;
+            (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!" .. l_0_32)
+          end
+          if l_0_32:find("rufus", 1, true) then
+            (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!rufus")
+          end
+          if l_0_32 == "mscorsvw.exe" and (l_0_10:match("%.ni%.exe$") or l_0_10:match("%.ni%.dll$")) then
+            (mp.set_mpattribute)("Lua:CleanFileWrittenBy!mscorsvw.exe")
+          end
+          if l_0_30 and not l_0_15 and not l_0_14 and l_0_13 then
+            (mp.set_mpattribute)("MpDisableCaching")
+          end
+        end
+        local l_0_33 = "dll|ocx"
+        if l_0_17 and not l_0_15 and not l_0_14 and not l_0_18 and not l_0_16 and l_0_13 and l_0_33:find(l_0_21) then
+          (mp.set_mpattribute)("Lua:PossiblyForSideloading!" .. l_0_10)
+          ;
+          (mp.set_mpattribute)("Lua:PeMonitorForSideload")
+        end
+        return mp.INFECTED
+      end
     end
-  end
-  local l_0_30 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-  do
-    if l_0_30 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-      local l_0_31 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-      l_0_17 = true
-      ;
-      (mp.set_mpattribute)("Lua:NewPeFile")
-      ;
-      (mp.set_mpattribute)("Lua:NewPeFile!" .. l_0_10)
-      if 38 < #l_0_31 then
-        (mp.set_mpattribute)("Lua:RtpProcNameTooLong")
-      else
-        ;
-        (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!" .. l_0_31)
-      end
-      if l_0_31:find("rufus", 1, true) then
-        (mp.set_mpattribute)("Lua:NewPeFileWrittenBy!rufus")
-      end
-      if l_0_31 == "mscorsvw.exe" and (l_0_10:match("%.ni%.exe$") or l_0_10:match("%.ni%.dll$")) then
-        (mp.set_mpattribute)("Lua:CleanFileWrittenBy!mscorsvw.exe")
-      end
-      if l_0_29 and not l_0_15 and not l_0_14 and l_0_13 then
-        (mp.set_mpattribute)("MpDisableCaching")
-      end
-    end
-    local l_0_32 = "dll|ocx"
-    if l_0_17 and not l_0_15 and not l_0_14 and not l_0_18 and not l_0_16 and l_0_13 and l_0_32:find(l_0_21) then
-      (mp.set_mpattribute)("Lua:PossiblyForSideloading!" .. l_0_10)
-      ;
-      (mp.set_mpattribute)("Lua:PeMonitorForSideload")
-    end
-    return mp.INFECTED
   end
 end
 
