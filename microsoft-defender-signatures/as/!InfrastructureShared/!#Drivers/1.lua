@@ -481,7 +481,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_9 = MpCommon
       l_0_10 = "IsSampled"
       l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 60000
+      l_0_10 = 80000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -507,7 +507,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_9 = MpCommon
       l_0_10 = "IsSampled"
       l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 8000
+      l_0_10 = 15000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -538,7 +538,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_9 = MpCommon
       l_0_10 = "IsSampled"
       l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 1000
+      l_0_10 = 2000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -567,7 +567,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
             l_0_11 = MpCommon
             l_0_12 = "IsSampled"
             l_0_11 = l_0_11[l_0_12]
-            l_0_12 = 2000
+            l_0_12 = 4000
             l_0_13 = false
             l_0_14 = false
             l_0_11 = l_0_11(l_0_12, l_0_13, l_0_14, false)

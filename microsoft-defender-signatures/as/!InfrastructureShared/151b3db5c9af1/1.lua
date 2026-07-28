@@ -69,8 +69,7 @@ do
         l_0_21.AnomalyTableName = "Appomaly_ChildProcName_2"
         l_0_21.AnomalyTableInfo = l_0_12 .. "_" .. l_0_18
         ;
-        (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_21), bm.RelatedStringBMReport)
-        return mp.INFECTED
+        (bm.trigger_sig)("PFAppChildProc_VSCodeExt", safeJsonSerialize(l_0_21))
       end
     end
     do

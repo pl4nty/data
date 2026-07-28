@@ -13,7 +13,7 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p1 ~= nil then
   if isnull(l_0_3) then
     return mp.CLEAN
   end
-  local l_0_4 = split(l_0_3, "%.")
+  local l_0_4 = split(l_0_3, ".")
   if isnull(l_0_4) then
     return mp.CLEAN
   end
