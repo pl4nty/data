@@ -5,8 +5,8 @@
 -- function num : 0
 local l_0_0 = function(l_1_0)
   -- function num : 0_0
-  if not (string.find)(l_1_0, "^%s*<#[^#]*:[^#]*#>") then
-    return (string.find)(l_1_0, "<#[^#]*:[^#]*#>%s*$")
+  if not (string.find)(l_1_0, "^%s*<#[^#]*#>") then
+    return (string.find)(l_1_0, "<#[^#]*#>%s*$")
   end
 end
 

@@ -1,0 +1,19 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\!#SLFTrojanScriptTermFixSAB\1.luac 
+
+-- params : ...
+-- function num : 0
+local l_0_0 = (mp.getfilesize)()
+;
+(mp.readprotection)(false)
+local l_0_1 = tostring((mp.readfile)(0, l_0_0))
+;
+(mp.readprotection)(true)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if (string.find)((string.lower)(l_0_1), "iex%(irm%s+\'[^\']*\'%s+%-usebasicparsing%)[%\"%s]*$") then
+  return mp.INFECTED
+end
+return mp.CLEAN
+

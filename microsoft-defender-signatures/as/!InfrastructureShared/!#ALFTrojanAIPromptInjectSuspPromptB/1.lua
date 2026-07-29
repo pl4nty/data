@@ -664,41 +664,57 @@ do
                   end
                   -- DECOMPILER ERROR at PC685: Overwrote pending register: R38 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC689: Overwrote pending register: R40 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC688: Overwrote pending register: R39 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC690: Confused about usage of register: R28 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC689: Confused about usage of register: R33 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC690: Overwrote pending register: R41 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC691: Overwrote pending register: R39 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC699: Confused about usage of register: R30 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC693: Confused about usage of register: R35 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC705: Confused about usage of register: R29 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC695: Overwrote pending register: R39 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC710: Confused about usage of register: R30 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC697: Overwrote pending register: R41 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC721: Confused about usage of register: R33 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC698: Confused about usage of register: R28 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC752: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC707: Confused about usage of register: R30 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC753: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC708: Overwrote pending register: R43 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC768: Overwrote pending register: R41 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC713: Confused about usage of register: R29 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC776: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC714: Overwrote pending register: R43 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC777: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC718: Confused about usage of register: R30 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC778: Overwrote pending register: R45 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC733: Overwrote pending register: R43 in 'AssignReg'
 
-                  if (MpCommon.IsSampled)(10000, true, l_0_60, l_0_61) ~= false or R41_PC766 then
-                    (MpCommon.BmTriggerSig)(l_0_60, l_0_61, l_0_62)
+                  -- DECOMPILER ERROR at PC753: Overwrote pending register: R43 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC754: Overwrote pending register: R44 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC755: Overwrote pending register: R45 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC762: Overwrote pending register: R43 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC770: Overwrote pending register: R42 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC778: Overwrote pending register: R44 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC779: Overwrote pending register: R45 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC780: Overwrote pending register: R46 in 'AssignReg'
+
+                  if (MpCommon.IsSampled)(10000, l_0_60, l_0_61, l_0_62) ~= false or R42_PC768 then
+                    (MpCommon.BmTriggerSig)(l_0_61, l_0_62, l_0_63)
                   end
-                  -- DECOMPILER ERROR at PC782: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC784: Overwrote pending register: R44 in 'AssignReg'
 
                   ;
-                  (mp.SetDetectionString)(l_0_60)
+                  (mp.SetDetectionString)(l_0_61)
                   do return mp.INFECTED end
-                  -- DECOMPILER ERROR at PC787: Confused about usage of register R42 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC789: Confused about usage of register R43 for local variables in 'ReleaseLocals'
 
                   -- WARNING: undefined locals caused missing assignments!
                   -- DECOMPILER ERROR: 31 unprocessed JMP targets
