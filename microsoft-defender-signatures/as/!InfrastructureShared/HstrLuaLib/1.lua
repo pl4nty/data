@@ -1290,6 +1290,7 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   l_13_8.MZ_PRESENT = 1
   l_13_8.PE_PRESENT = 2
   l_13_8.DOS_STRING_PRESENT = 4
+  l_13_8.RO_RX_ADJACENT = 8
   local l_13_9 = (mp.GetScannedPPID)()
   local l_13_10 = (mp.GetSMSMemRanges)()
   local l_13_11 = 0
@@ -1332,12 +1333,17 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
         local l_13_24 = (mp.bitand)(l_13_22.prot, 255)
         if (l_13_24 == l_13_7.PAGE_READONLY and l_13_22.size == l_13_5) or l_13_24 == l_13_7.PAGE_EXECUTE_READWRITE and l_13_22.size > 8000 then
           local l_13_25 = true
-          -- DECOMPILER ERROR at PC191: Unhandled construct in 'MakeBoolean' P1
-
-          if l_13_24 == l_13_7.PAGE_READONLY and (mp.SMSVirtualQuery)(l_13_22.addr + l_13_5) and (mp.bitand)((l_13_22.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
-            l_13_25 = false
+          if l_13_24 == l_13_7.PAGE_READONLY then
+            if (mp.SMSVirtualQuery)(l_13_22.addr + l_13_5) then
+              if (mp.bitand)((l_13_22.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
+                l_13_25 = false
+              else
+                l_13_23 = (mp.bitor)(l_13_23, l_13_8.RO_RX_ADJACENT)
+              end
+            else
+              l_13_25 = false
+            end
           end
-          l_13_25 = false
           if l_13_25 then
             local l_13_26 = (mp.ReadProcMem)(l_13_22.addr, l_13_5)
             if l_13_26 ~= nil and #l_13_26 == l_13_5 then
@@ -1368,15 +1374,15 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
             l_13_30.heuristics = l_13_23
             l_13_28[l_13_29] = l_13_30
             l_13_11 = l_13_11 + 1
-            -- DECOMPILER ERROR at PC277: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC277: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC277: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC277: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC277: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
@@ -1407,15 +1413,15 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
             local l_13_44 = #l_13_13.threads + 1
             l_13_43[l_13_44] = {ptid = l_13_38.PTID, creator_ptid = l_13_38.CreatorPTID, start_addr = l_13_38.StartAddr, mod_path = l_13_42}
             l_13_12 = l_13_12 + 1
-            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC340: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end

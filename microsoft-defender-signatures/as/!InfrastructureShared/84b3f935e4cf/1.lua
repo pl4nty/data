@@ -1,0 +1,12 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\84b3f935e4cf\1.luac 
+
+-- params : ...
+-- function num : 0
+sms_untrusted_process()
+local l_0_0 = (bm.get_current_process_startup_info)()
+if l_0_0 ~= nil and l_0_0.command_line ~= nil then
+  (bm.add_related_string)("EncryptorCommandLine", tostring(l_0_0.command_line), bm.RelatedStringBMReport)
+end
+return mp.INFECTED
+
