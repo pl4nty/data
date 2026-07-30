@@ -32,7 +32,6 @@ ReportSupportLog = function(l_1_0)
         local l_1_20 = {ReadTimeStamp = l_1_17, tracking_id = l_1_0, Size = l_1_18, LastModified = l_1_19}
         local l_1_21 = (sysio.ReadFile)(l_1_12, l_1_13, l_1_18)
         if ((sysio.GetLastResult)()).Success then
-          l_1_21 = (MpCommon.GzipCompress)(l_1_21)
           l_1_21 = (MpCommon.Base64Encode)(l_1_21)
           ReportResource(l_1_12, l_1_21, l_1_20, "LUA")
         else
@@ -69,8 +68,6 @@ CollectFile = function(l_2_0, l_2_1, l_2_2)
         -- DECOMPILER ERROR at PC64: Overwrote pending register: R11 in 'AssignReg'
 
         -- DECOMPILER ERROR at PC86: Overwrote pending register: R4 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC91: Overwrote pending register: R4 in 'AssignReg'
 
         do
           if l_2_5 >= l_2_1 or l_2_6 then
