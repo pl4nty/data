@@ -1292,148 +1292,175 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   l_13_8.DOS_STRING_PRESENT = 4
   l_13_8.RO_RX_ADJACENT = 8
   local l_13_9 = (mp.GetScannedPPID)()
-  local l_13_10 = (mp.GetSMSMemRanges)()
+  local l_13_10 = 0
   local l_13_11 = 0
-  local l_13_12 = 0
-  local l_13_13 = {}
-  l_13_13.ppid = l_13_9
-  l_13_13.arch = (mp.GetSMSProcArchitecture)()
-  l_13_13.sig_matched = l_13_0
-  l_13_13.scan_count = l_13_2
-  l_13_13.scan_time_diff = l_13_3
-  l_13_13.command_line = ""
-  l_13_13.nRegions = 0
-  l_13_13.nCollectedRegions = 0
-  l_13_13.regions = {}
-  l_13_13.nThreads = 0
-  l_13_13.nCollectedThreads = 0
-  l_13_13.threads = {}
-  local l_13_14 = (mp.GetProcessCommandLine)(l_13_9)
-  if l_13_14 then
-    l_13_13.command_line = l_13_14
+  local l_13_12 = {}
+  l_13_12.ppid = l_13_9
+  l_13_12.arch = (mp.GetSMSProcArchitecture)()
+  l_13_12.sig_matched = l_13_0
+  l_13_12.scan_count = l_13_2
+  l_13_12.scan_time_diff = l_13_3
+  l_13_12.command_line = ""
+  l_13_12.nRegions = 0
+  l_13_12.nCollectedRegions = 0
+  l_13_12.regions = {}
+  l_13_12.nThreads = 0
+  l_13_12.nCollectedThreads = 0
+  l_13_12.threads = {}
+  l_13_12.error_log = {}
+  local l_13_13 = (mp.GetProcessCommandLine)(l_13_9)
+  if l_13_13 then
+    l_13_12.command_line = l_13_13
   end
-  local l_13_15 = 4000
-  local l_13_16 = false
+  local l_13_14 = 4000
+  local l_13_15 = false
   if l_13_2 >= 2 then
-    l_13_16 = true
+    l_13_15 = true
   end
-  local l_13_17 = #l_13_10
-  l_13_13.nRegions = l_13_17
-  for l_13_21 = 1, l_13_17 do
-    local l_13_22 = l_13_10[l_13_21]
-    if l_13_15 > l_13_21 then
-      if l_13_11 >= 150 then
-        break
-      end
-      if not l_13_22.addr or not l_13_22.size or not l_13_22.prot or not l_13_22.alloc_prot or not l_13_22.state_type or not l_13_22.flags then
-        return 3
-      end
-      if (mp.bitand)(l_13_22.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_22.state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)(l_13_22.state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
-        local l_13_23 = 0
-        local l_13_24 = (mp.bitand)(l_13_22.prot, 255)
-        if (l_13_24 == l_13_7.PAGE_READONLY and l_13_22.size == l_13_5) or l_13_24 == l_13_7.PAGE_EXECUTE_READWRITE and l_13_22.size > 8000 then
-          local l_13_25 = true
-          if l_13_24 == l_13_7.PAGE_READONLY then
-            if (mp.SMSVirtualQuery)(l_13_22.addr + l_13_5) then
-              if (mp.bitand)((l_13_22.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
-                l_13_25 = false
+  local l_13_16 = {}
+  local l_13_17, l_13_18 = pcall(mp.GetSMSMemRanges)
+  if not l_13_17 then
+    local l_13_19 = l_13_12.error_log
+    local l_13_20 = #l_13_12.error_log + 1
+    l_13_19[l_13_20] = tostring(l_13_18)
+    l_13_18, l_13_19 = l_13_19, {}
+  end
+  do
+    local l_13_21 = #l_13_18
+    l_13_12.nRegions = l_13_21
+    for l_13_25 = 1, l_13_21 do
+      local l_13_26 = l_13_18[l_13_25]
+      if l_13_14 > l_13_25 then
+        if l_13_10 >= 150 then
+          break
+        end
+        if not l_13_26.addr or not l_13_26.size or not l_13_26.prot or not l_13_26.alloc_prot or not l_13_26.state_type or not l_13_26.flags then
+          return 3
+        end
+        if (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
+          local l_13_27 = 0
+          local l_13_28 = (mp.bitand)(l_13_26.prot, 255)
+          if (l_13_28 == l_13_7.PAGE_READONLY and l_13_26.size == l_13_5) or l_13_28 == l_13_7.PAGE_EXECUTE_READWRITE and l_13_26.size > 8000 then
+            local l_13_29 = true
+            if l_13_28 == l_13_7.PAGE_READONLY then
+              if (mp.SMSVirtualQuery)(l_13_26.addr + l_13_5) then
+                if (mp.bitand)((l_13_26.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
+                  l_13_29 = false
+                else
+                  l_13_27 = (mp.bitor)(l_13_27, l_13_8.RO_RX_ADJACENT)
+                end
               else
-                l_13_23 = (mp.bitor)(l_13_23, l_13_8.RO_RX_ADJACENT)
-              end
-            else
-              l_13_25 = false
-            end
-          end
-          if l_13_25 then
-            local l_13_26 = (mp.ReadProcMem)(l_13_22.addr, l_13_5)
-            if l_13_26 ~= nil and #l_13_26 == l_13_5 then
-              if (mp.readu_u16)(l_13_26, 1) == l_13_6.MZ_SIGNATURE_HEX then
-                l_13_23 = (mp.bitor)(l_13_23, l_13_8.MZ_PRESENT)
-              end
-              local l_13_27 = (mp.readu_u32)(l_13_26, 1 + l_13_6.e_lfanew)
-              if l_13_27 < 1024 and (mp.readu_u16)(l_13_26, 1 + l_13_27) == l_13_6.PE_SIGNATURE_HEX then
-                l_13_23 = (mp.bitor)(l_13_23, l_13_8.PE_PRESENT)
-              end
-              if (string.find)(l_13_26, "This program cannot be run in DOS mode", 1, true) ~= nil then
-                l_13_23 = (mp.bitor)(l_13_23, l_13_8.DOS_STRING_PRESENT)
+                l_13_29 = false
               end
             end
-          end
-        end
-        do
-          local l_13_28 = l_13_13.regions
-          local l_13_29 = #l_13_13.regions + 1
-          do
-            local l_13_30 = {}
-            l_13_30.addr = l_13_22.addr
-            l_13_30.size = l_13_22.size
-            l_13_30.alloc_prot = l_13_22.alloc_prot
-            l_13_30.prot = l_13_22.prot
-            l_13_30.state_type = l_13_22.state_type
-            l_13_30.flags = l_13_22.flags
-            l_13_30.heuristics = l_13_23
-            l_13_28[l_13_29] = l_13_30
-            l_13_11 = l_13_11 + 1
-            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out DO_STMT
+            if l_13_29 then
+              local l_13_30, l_13_31 = pcall(mp.ReadProcMem, l_13_26.addr, l_13_5)
+              if not l_13_30 then
+                local l_13_32 = l_13_12.error_log
+                local l_13_33 = #l_13_12.error_log + 1
+                l_13_32[l_13_33] = tostring(l_13_31)
+              end
+              do
+                if l_13_30 and l_13_31 ~= nil and #l_13_31 == l_13_5 then
+                  if (mp.readu_u16)(l_13_31, 1) == l_13_6.MZ_SIGNATURE_HEX then
+                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.MZ_PRESENT)
+                  end
+                  local l_13_34 = (mp.readu_u32)(l_13_31, 1 + l_13_6.e_lfanew)
+                  if l_13_34 < 1024 and (mp.readu_u16)(l_13_31, 1 + l_13_34) == l_13_6.PE_SIGNATURE_HEX then
+                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.PE_PRESENT)
+                  end
+                  if (string.find)(l_13_31, "This program cannot be run in DOS mode", 1, true) ~= nil then
+                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.DOS_STRING_PRESENT)
+                  end
+                end
+                do
+                  local l_13_35 = l_13_12.regions
+                  local l_13_36 = #l_13_12.regions + 1
+                  do
+                    local l_13_37 = {}
+                    l_13_37.addr = l_13_26.addr
+                    l_13_37.size = l_13_26.size
+                    l_13_37.alloc_prot = l_13_26.alloc_prot
+                    l_13_37.prot = l_13_26.prot
+                    l_13_37.state_type = l_13_26.state_type
+                    l_13_37.flags = l_13_26.flags
+                    l_13_37.heuristics = l_13_27
+                    l_13_35[l_13_36] = l_13_37
+                    l_13_10 = l_13_10 + 1
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC285: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+
+                  end
+                end
+              end
+            end
           end
         end
       end
     end
-  end
-  l_13_13.nCollectedRegions = l_13_11
-  local l_13_31 = 50
-  local l_13_32, l_13_33 = (mp.GetSMSThreadInfo)()
-  if not tonumber(l_13_32) then
-    l_13_33 = type(l_13_32) == "table" or 0
-  end
-  l_13_32 = {}
-  for l_13_37,l_13_38 in ipairs(l_13_32) do
-    if l_13_31 > l_13_37 then
-      if l_13_12 >= 20 then
-        break
-      end
-      local l_13_39, l_13_40 = (mp.SMSVirtualQuery)(l_13_38.StartAddr)
-      if l_13_39 and (mp.bitand)(l_13_40.state_type, mp.SMS_MBI_IMAGE) == 0 then
-        do
-          if (mp.GetSMSMappedFilename)(l_13_38.StartAddr) == nil then
-            local l_13_41 = ""
-          end
-          local l_13_42 = nil
-          local l_13_43 = l_13_13.threads
+    l_13_12.nCollectedRegions = l_13_10
+    local l_13_38 = 50
+    local l_13_39, l_13_40 = (mp.GetSMSThreadInfo)()
+    if not tonumber(l_13_39) then
+      l_13_40 = type(l_13_39) == "table" or 0
+    end
+    l_13_39 = {}
+    for l_13_44,l_13_45 in ipairs(l_13_39) do
+      if l_13_38 > l_13_44 then
+        if l_13_11 >= 20 then
+          break
+        end
+        local l_13_46, l_13_47 = (mp.SMSVirtualQuery)(l_13_45.StartAddr)
+        if l_13_46 and (mp.bitand)(l_13_47.state_type, mp.SMS_MBI_IMAGE) == 0 then
           do
-            local l_13_44 = #l_13_13.threads + 1
-            l_13_43[l_13_44] = {ptid = l_13_38.PTID, creator_ptid = l_13_38.CreatorPTID, start_addr = l_13_38.StartAddr, mod_path = l_13_42}
-            l_13_12 = l_13_12 + 1
-            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out DO_STMT
+            if (mp.GetSMSMappedFilename)(l_13_45.StartAddr) == nil then
+              local l_13_48 = ""
+            end
+            local l_13_49 = nil
+            local l_13_50 = l_13_12.threads
+            do
+              local l_13_51 = #l_13_12.threads + 1
+              l_13_50[l_13_51] = {ptid = l_13_45.PTID, creator_ptid = l_13_45.CreatorPTID, start_addr = l_13_45.StartAddr, mod_path = l_13_49}
+              l_13_11 = l_13_11 + 1
+              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out DO_STMT
 
-            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC348: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_STMT
 
+            end
           end
         end
       end
     end
+    l_13_12.nThreads = l_13_40
+    l_13_12.nCollectedThreads = l_13_11
+    local l_13_52 = (MpCommon.JsonSerialize)(l_13_12)
+    local l_13_53 = (MpCommon.Base64Encode)(l_13_52)
+    AppendToRollingQueue(l_13_1, "data", l_13_53)
+    return 0
   end
-  l_13_13.nThreads = l_13_33
-  l_13_13.nCollectedThreads = l_13_12
-  local l_13_45 = (MpCommon.JsonSerialize)(l_13_13)
-  local l_13_46 = (MpCommon.Base64Encode)(l_13_45)
-  AppendToRollingQueue(l_13_1, "data", l_13_46)
-  return 0
 end
 
 verify_non_prod_rings = function()
