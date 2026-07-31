@@ -49,7 +49,7 @@ CollectFile = function(l_2_0, l_2_1, l_2_2)
   l_2_1 = l_2_1 ~= nil or (sysio.GetFileSize)(l_2_0) or 0
   do
     if l_2_2 then
-      local l_2_3, l_2_4 = 2086912 * 15
+      local l_2_3, l_2_4 = 2086912 * 18
     end
     local l_2_5 = nil
     local l_2_6 = nil
@@ -139,7 +139,7 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
       end
       local l_4_10 = nil
       local l_4_11 = 64500
-      local l_4_12 = 480
+      local l_4_12 = 576
       local l_4_13 = #l_4_1
       local l_4_14 = 1
       local l_4_15 = 0
@@ -166,7 +166,8 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
         local l_4_21 = l_4_12 - 1
         while l_4_14 <= l_4_18 and l_4_15 < l_4_12 do
           local l_4_22 = {}
-          local l_4_23, l_4_24 = 0
+          local l_4_23 = 0
+          local l_4_24, l_4_25 = nil
           if pcall(l_0_0, {SIG_CONTEXT = "Lua_Custom_Upload_Resource", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE", TAG = "NOLOOKUP", ResourceName = l_4_0, ResourceInfo = safeJsonSerialize(l_4_2), ResourceSize = l_4_18, LastIndex = l_4_21, Source = l_4_3, Index = l_4_15}, l_4_1:sub(l_4_14, l_4_14 + l_4_11 - 1), l_4_15) and l_0_0 and not l_0_0.error then
             l_4_23 = l_4_23 + 1
           end
@@ -177,15 +178,15 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
 
           if l_4_23 == l_4_19 then
             if l_4_10 then
-              local l_4_25 = nil
+              local l_4_26 = nil
               AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0 .. "|" .. l_4_10, 1, l_4_5, 500, 1)
             else
               do
                 do
                   if l_4_18 < l_4_12 * l_4_11 then
-                    local l_4_26 = nil
+                    local l_4_27 = nil
                   end
-                  local l_4_27 = nil
+                  local l_4_28 = nil
                   AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0, not (string.find)(l_4_0, "MpWppTracing", 1, true) and not (string.find)(l_4_0, "MPScanSkip", 1, true) and not (string.find)(l_4_0, "MPLog", 1, true) or l_4_18, l_4_5, 500, 1)
                 end
               end
