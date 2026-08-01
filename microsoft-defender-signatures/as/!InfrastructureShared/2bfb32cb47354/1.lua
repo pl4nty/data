@@ -11,10 +11,10 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
   if #l_0_0 < 32 then
     return mp.CLEAN
   end
+  l_0_0 = (string.gsub)(l_0_0, "\\1$", "")
   if (string.find)(l_0_0, "\\\\tsclient\\", 1, true) or (string.find)(l_0_0, "d:\\", 1, true) or (string.find)(l_0_0, "claude.ai/install", 1, true) or (string.find)(l_0_0, "openclaw.ai/install", 1, true) or (string.find)(l_0_0, "runpscommand", 1, true) or (string.find)(l_0_0, "python/core/", 1, true) then
     return mp.CLEAN
   end
-  l_0_0 = (string.gsub)(l_0_0, "\\1$", "")
   local l_0_1 = l_0_0
   local l_0_2 = ((mp.ContextualExpandEnvironmentVariables)(l_0_0)):lower()
   for l_0_6 = 1, 5 do
@@ -26,25 +26,29 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     end
   end
   do
-    l_0_0 = l_0_2
-    local l_0_7 = #l_0_0 / 2
-    local l_0_8 = (string.sub)(l_0_0, -l_0_7)
-    local l_0_9 = l_0_0:gsub("\"", "")
-    local l_0_10, l_0_11 = (bm.get_process_relationships)()
-    for l_0_15,l_0_16 in ipairs(l_0_11) do
-      local l_0_17 = (mp.bitand)(l_0_16.reason_ex, bm.RELATIONSHIP_CREATED)
-      if l_0_17 == bm.RELATIONSHIP_CREATED then
-        local l_0_18 = (string.lower)(l_0_16.cmd_line)
-        local l_0_19 = (string.sub)(l_0_18, -l_0_7)
-        local l_0_20 = l_0_19:gsub("\"", "")
-        if l_0_8 == l_0_19 or l_0_0:find(l_0_19, 1, true) or l_0_9:find(l_0_20, 1, true) then
-          (bm.trigger_sig)("StartedViaRUNMRU.gen", "StartedViaRUNMRU.gen", l_0_16.ppid)
+    local l_0_7 = l_0_2
+    local l_0_8 = #l_0_7 / 2
+    local l_0_9 = (string.sub)(l_0_7, -l_0_8)
+    local l_0_10 = l_0_7:gsub("\"", "")
+    local l_0_11, l_0_12 = (bm.get_process_relationships)()
+    for l_0_16,l_0_17 in ipairs(l_0_12) do
+      local l_0_18 = (mp.bitand)(l_0_17.reason_ex, bm.RELATIONSHIP_CREATED)
+      if l_0_18 == bm.RELATIONSHIP_CREATED then
+        local l_0_19 = (string.lower)(l_0_17.cmd_line)
+        local l_0_20 = (string.sub)(l_0_19, -l_0_8)
+        local l_0_21 = l_0_20:gsub("\"", "")
+        if l_0_9 == l_0_20 or l_0_7:find(l_0_20, 1, true) or l_0_10:find(l_0_21, 1, true) then
+          (bm.trigger_sig)("StartedViaRUNMRU.gen", "StartedViaRUNMRU.gen", l_0_17.ppid)
           ;
-          (bm.trigger_sig_target_propagate)("ProcessChainViaRUNMRU", "ProcessChainViaRUNMRU", l_0_16.ppid)
-          if not (MpCommon.DoesProcessHaveAttribute)(l_0_16.ppid, "StartedViaRUNMRU") then
-            (MpCommon.AddProcessAttribute)(l_0_16.ppid, "StartedViaRUNMRU", tostring(l_0_18), true)
+          (bm.trigger_sig_target_propagate)("ProcessChainViaRUNMRU", "ProcessChainViaRUNMRU", l_0_17.ppid)
+          if not (MpCommon.DoesProcessHaveAttribute)(l_0_17.ppid, "StartedViaRUNMRU") then
+            (MpCommon.AddProcessAttribute)(l_0_17.ppid, "StartedViaRUNMRU", tostring(l_0_19), true)
           end
-          AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_16.ppid, 1, 30)
+          AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_17.ppid, 1, 30)
+          local l_0_22, l_0_23, l_0_24 = IsKeyInRollingQueue("IsFromWebClipWrite", l_0_0, true)
+          if l_0_22 and next(l_0_24) ~= nil then
+            (bm.trigger_sig)("FromWebClipWrite", safeJsonSerialize(l_0_24), l_0_17.ppid)
+          end
         end
       end
     end
