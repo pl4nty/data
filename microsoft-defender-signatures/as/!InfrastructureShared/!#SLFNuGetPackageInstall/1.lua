@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFNodePackageInstall\1.luac 
+-- Command line: lua\!InfrastructureShared\!#SLFNuGetPackageInstall\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -9,15 +9,14 @@ if l_0_0 == nil then
 end
 l_0_0 = l_0_0:lower()
 local l_0_1 = {}
-l_0_1["node.exe"] = true
-l_0_1["npm.exe"] = true
-l_0_1["pnpm.exe"] = true
-l_0_1["yarn.exe"] = true
-l_0_1["bun.exe"] = true
+l_0_1["nuget.exe"] = true
+l_0_1["dotnet.exe"] = true
+l_0_1["msbuild.exe"] = true
+l_0_1["devenv.exe"] = true
 if not l_0_1[l_0_0] then
   return mp.CLEAN
 end
-if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "package.json" then
+if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == ".nupkg.metadata" then
   return mp.INFECTED
 end
 return mp.CLEAN
