@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\3d2b35e9bb1ea\1.luac 
+-- Command line: lua\!InfrastructureShared\210b36ccf6cb6\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -13,6 +13,9 @@ if l_0_2 == nil or l_0_2 == "" then
   return mp.CLEAN
 end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
+  return mp.CLEAN
+end
+if l_0_2:find("/Applications/Microsoft Teams.app", 1, true) or l_0_2:find("/Applications/SpaceId.app/Contents/MacOS/SpaceId", 1, true) then
   return mp.CLEAN
 end
 return mp.INFECTED
