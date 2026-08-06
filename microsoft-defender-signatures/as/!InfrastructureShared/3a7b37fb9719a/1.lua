@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\3a7b30542bb31\1.luac 
+-- Command line: lua\!InfrastructureShared\3a7b37fb9719a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -28,6 +28,9 @@ do
 
         if (sysio.IsFileExists)(R6_PC53) then
           (bm.add_related_file)(R6_PC53)
+          if StringEndsWith(R6_PC53, ".js") or StringEndsWith(R6_PC53, ".mjs") or StringEndsWith(R6_PC53, ".cjs") then
+            (bm.add_threat_file)(R6_PC53)
+          end
         end
       end
     end
