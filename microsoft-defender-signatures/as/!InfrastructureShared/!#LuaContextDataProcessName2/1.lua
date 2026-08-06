@@ -24,7 +24,7 @@ if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
   if l_0_3 ~= nil then
     (mp.set_mpattribute)("Lua:OpenFileContextData:FileName!" .. l_0_3)
   end
-  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+  local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
   if l_0_4 ~= nil then
     local l_0_5 = (mp.GetParentProcInfo)(l_0_4)
     if l_0_5 ~= nil and l_0_5.image_path ~= nil then
