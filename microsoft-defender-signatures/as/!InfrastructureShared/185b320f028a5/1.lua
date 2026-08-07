@@ -27,7 +27,11 @@ do
     return mp.CLEAN
   end
   local l_0_4 = nil
-  AppendToRollingQueue("IsFromWebClipWrite", l_0_4, tostring(l_0_3.utf8p1), 300)
+  local l_0_5 = tostring(l_0_3.utf8p1)
+  if l_0_5 ~= nil and contains(l_0_5, {"://chatgpt.com", ".microsoft.com/", "://m365.cloud.microsoft/", ".visualstudio.com/", ".sharepoint.com/", "://localhost", "://127.0.", ".reddit.com/", ".google.com/", "/wiki/", "/wikis/"}) then
+    return mp.CLEAN
+  end
+  AppendToRollingQueue("IsFromWebClipWrite", l_0_4, l_0_5, 300)
   return mp.CLEAN
 end
 

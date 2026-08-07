@@ -48,6 +48,9 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
           local l_0_22, l_0_23, l_0_24 = IsKeyInRollingQueue("IsFromWebClipWrite", l_0_0, true)
           if l_0_22 and next(l_0_24) ~= nil then
             (bm.trigger_sig)("FromWebClipWrite", safeJsonSerialize(l_0_24), l_0_17.ppid)
+            ;
+            (bm.trigger_sig_target_propagate)("ProcessChainFromWebClipWrite", "ProcessChainFromWebClipWrite", l_0_17.ppid)
+            AppendToRollingQueue("IsProcessChainFromWebClipWrite", l_0_17.ppid, 1, 30)
           end
         end
       end
