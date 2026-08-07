@@ -35,12 +35,33 @@ do
       local l_0_13 = "2*ow;" .. l_0_5[l_0_12] .. "=htj3g"
       local l_0_14, l_0_15 = (MpCommon.NidSearch)(l_0_8, (crypto.CRC32Buffer)(-1, (string.lower)(l_0_13), 0, (string.len)(l_0_13)))
       if l_0_14 == true then
-        local l_0_16, l_0_17 = (string.find)(l_0_15, "NID:EvilLattice", 1, true)
-        if l_0_16 ~= nil then
-          local l_0_18 = "Lua:EvilLattice" .. (string.sub)(l_0_15, l_0_17 + 1, -1)
-          ;
-          (mp.set_mpattribute)(l_0_18)
-          return mp.INFECTED
+        local l_0_16, l_0_17 = (string.find)(l_0_15, "NID:EvilRebar", 1, true)
+        do
+          if l_0_16 ~= nil then
+            local l_0_18 = "Lua:EvilRebar" .. (string.sub)(l_0_15, l_0_17 + 1, -1)
+            ;
+            (mp.set_mpattribute)(l_0_18)
+            return mp.INFECTED
+          end
+          local l_0_19, l_0_20 = (string.find)(l_0_15, "NID:EvilLattice", 1, true)
+          do
+            if l_0_19 ~= nil then
+              local l_0_21 = "Lua:EvilLattice" .. (string.sub)(l_0_15, l_0_20 + 1, -1)
+              ;
+              (mp.set_mpattribute)(l_0_21)
+              return mp.INFECTED
+            end
+            -- DECOMPILER ERROR at PC145: LeaveBlock: unexpected jumping out DO_STMT
+
+            -- DECOMPILER ERROR at PC145: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC145: LeaveBlock: unexpected jumping out IF_STMT
+
+            -- DECOMPILER ERROR at PC145: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+            -- DECOMPILER ERROR at PC145: LeaveBlock: unexpected jumping out IF_STMT
+
+          end
         end
       end
     end
