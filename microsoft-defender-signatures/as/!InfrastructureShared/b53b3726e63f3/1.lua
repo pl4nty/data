@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\acfb370e5a2e3\1.luac 
+-- Command line: lua\!InfrastructureShared\b53b3726e63f3\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -147,66 +147,83 @@ do
 
                                         do
                                           if not (this_sigattrlog[46]).matched or (this_sigattrlog[47]).matched then
-                                            local l_0_20, l_0_21, l_0_22, l_0_23, l_0_24 = this_sigattrlog[46]
+                                            local l_0_20 = this_sigattrlog[46]
                                           else
                                           end
-                                          -- DECOMPILER ERROR at PC337: Confused about usage of register: R0 in 'UnsetPending'
+                                          -- DECOMPILER ERROR at PC342: Overwrote pending register: R0 in 'AssignReg'
 
-                                          if ((this_sigattrlog[48]).matched and not this_sigattrlog[48]) or not (this_sigattrlog[48]).utf8p1 then
-                                            return mp.CLEAN
-                                          end
-                                          -- DECOMPILER ERROR at PC345: Confused about usage of register: R0 in 'UnsetPending'
-
-                                          local l_0_25 = nil
-                                          local l_0_26 = (string.lower)((this_sigattrlog[48]).utf8p1)
-                                          if not (bm.get_current_process_startup_info)() then
-                                            return mp.CLEAN
-                                          end
                                           do
-                                            local l_0_27, l_0_29, l_0_30 = , ((bm.get_current_process_startup_info)()).ppid or "0"
-                                            do
-                                              local l_0_28, l_0_31 = nil
-                                              local l_0_32 = nil
-                                              local l_0_33 = nil
-                                              local l_0_34 = nil
-                                              local l_0_35 = (string.lower)(((bm.get_imagepath)() or ""):match("([^/]+)$") or "")
-                                              local l_0_36 = "ShaiWorm_BM_CredAccess"
-                                              local l_0_37 = 600
-                                              local l_0_38 = 8
-                                              local l_0_39 = 100
-                                              if GetRollingQueueKeyValues(l_0_36, tostring(l_0_33) .. "|" .. l_0_35) then
-                                                for l_0_43,l_0_44 in ipairs(GetRollingQueueKeyValues(l_0_36, tostring(l_0_33) .. "|" .. l_0_35)) do
-                                                  local l_0_40, l_0_41, l_0_42 = nil
-                                                  -- DECOMPILER ERROR at PC395: Confused about usage of register: R17 in 'UnsetPending'
+                                            if not (this_sigattrlog[48]).matched or (this_sigattrlog[49]).matched then
+                                              local l_0_21 = this_sigattrlog[48]
+                                            else
+                                            end
+                                            -- DECOMPILER ERROR at PC358: Overwrote pending register: R0 in 'AssignReg'
 
-                                                  if R17_PC395 and R17_PC395.value == l_0_26 then
+                                            do
+                                              if not (this_sigattrlog[50]).matched or (this_sigattrlog[51]).matched then
+                                                local l_0_22, l_0_23, l_0_24 = this_sigattrlog[50]
+                                              end
+                                              -- DECOMPILER ERROR at PC359: Confused about usage of register: R0 in 'UnsetPending'
+
+                                              -- DECOMPILER ERROR at PC361: Confused about usage of register: R0 in 'UnsetPending'
+
+                                              if not l_0_22 or not l_0_22.utf8p1 then
+                                                return mp.CLEAN
+                                              end
+                                              -- DECOMPILER ERROR at PC369: Confused about usage of register: R0 in 'UnsetPending'
+
+                                              local l_0_25 = nil
+                                              local l_0_26 = (string.lower)(l_0_22.utf8p1)
+                                              if not (bm.get_current_process_startup_info)() then
+                                                return mp.CLEAN
+                                              end
+                                              do
+                                                local l_0_27, l_0_29, l_0_30 = , ((bm.get_current_process_startup_info)()).ppid or "0"
+                                                do
+                                                  local l_0_28, l_0_31 = nil
+                                                  local l_0_32 = nil
+                                                  local l_0_33 = nil
+                                                  local l_0_34 = nil
+                                                  local l_0_35 = (string.lower)(((bm.get_imagepath)() or ""):match("([^/]+)$") or "")
+                                                  local l_0_36 = "ShaiWorm_BM_CredAccess"
+                                                  local l_0_37 = 600
+                                                  local l_0_38 = 8
+                                                  local l_0_39 = 100
+                                                  if GetRollingQueueKeyValues(l_0_36, tostring(l_0_33) .. "|" .. l_0_35) then
+                                                    for l_0_43,l_0_44 in ipairs(GetRollingQueueKeyValues(l_0_36, tostring(l_0_33) .. "|" .. l_0_35)) do
+                                                      local l_0_40, l_0_41, l_0_42 = nil
+                                                      -- DECOMPILER ERROR at PC419: Confused about usage of register: R17 in 'UnsetPending'
+
+                                                      if R17_PC419 and R17_PC419.value == l_0_26 then
+                                                        return mp.CLEAN
+                                                      end
+                                                    end
+                                                    -- DECOMPILER ERROR at PC429: Confused about usage of register: R12 in 'UnsetPending'
+
+                                                    if l_0_38 <= #l_0_42 then
+                                                      local l_0_45 = nil
+                                                      ;
+                                                      (bm.add_related_string)("ShaiWorm_BM_CredAccess", safeJsonSerialize({ShaiWormRQName = GetRollingQueueKeys(l_0_36), ShaiWormCount = GetRollingQueueCount(l_0_36)}), bm.RelatedStringBMReport)
+                                                      TrackPidAndTechniqueBM("BM", "T1552.001", "shaiworm_credaccess")
+                                                      add_parents()
+                                                      local l_0_46, l_0_47 = nil
+                                                      -- DECOMPILER ERROR at PC473: Overwrote pending register: R19 in 'AssignReg'
+
+                                                      if not pcall(reportBmInfo) and reportBmInfo then
+                                                        (bm.add_related_string)("bmInfoFailReason", tostring(R19_PC471), R19_PC471)
+                                                      end
+                                                      return mp.INFECTED
+                                                    end
+                                                  end
+                                                  do
+                                                    -- DECOMPILER ERROR at PC480: Confused about usage of register: R11 in 'UnsetPending'
+
+                                                    -- DECOMPILER ERROR at PC484: Overwrote pending register: R19 in 'AssignReg'
+
+                                                    AppendToRollingQueue(l_0_36, l_0_46, l_0_26, l_0_37, l_0_39, R19_PC471)
                                                     return mp.CLEAN
                                                   end
                                                 end
-                                                -- DECOMPILER ERROR at PC405: Confused about usage of register: R12 in 'UnsetPending'
-
-                                                if l_0_38 <= #l_0_42 then
-                                                  local l_0_45 = nil
-                                                  ;
-                                                  (bm.add_related_string)("ShaiWorm_BM_CredAccess", safeJsonSerialize({ShaiWormRQName = GetRollingQueueKeys(l_0_36), ShaiWormCount = GetRollingQueueCount(l_0_36)}), bm.RelatedStringBMReport)
-                                                  TrackPidAndTechniqueBM("BM", "T1552.001", "shaiworm_credaccess")
-                                                  add_parents()
-                                                  local l_0_46, l_0_47 = nil
-                                                  -- DECOMPILER ERROR at PC449: Overwrote pending register: R19 in 'AssignReg'
-
-                                                  if not pcall(reportBmInfo) and reportBmInfo then
-                                                    (bm.add_related_string)("bmInfoFailReason", tostring(R19_PC447), R19_PC447)
-                                                  end
-                                                  return mp.INFECTED
-                                                end
-                                              end
-                                              do
-                                                -- DECOMPILER ERROR at PC456: Confused about usage of register: R11 in 'UnsetPending'
-
-                                                -- DECOMPILER ERROR at PC460: Overwrote pending register: R19 in 'AssignReg'
-
-                                                AppendToRollingQueue(l_0_36, l_0_46, l_0_26, l_0_37, l_0_39, R19_PC447)
-                                                return mp.CLEAN
                                               end
                                             end
                                           end

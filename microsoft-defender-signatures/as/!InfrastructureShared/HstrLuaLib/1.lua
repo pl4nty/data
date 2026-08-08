@@ -1291,122 +1291,264 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   l_13_8.PE_PRESENT = 2
   l_13_8.DOS_STRING_PRESENT = 4
   l_13_8.RO_RX_ADJACENT = 8
-  local l_13_9 = (mp.GetScannedPPID)()
-  local l_13_10 = 0
-  local l_13_11 = 0
-  local l_13_12 = {}
-  l_13_12.ppid = l_13_9
-  l_13_12.arch = (mp.GetSMSProcArchitecture)()
-  l_13_12.sig_matched = l_13_0
-  l_13_12.scan_count = l_13_2
-  l_13_12.scan_time_diff = l_13_3
-  l_13_12.command_line = ""
-  l_13_12.nRegions = 0
-  l_13_12.nCollectedRegions = 0
-  l_13_12.regions = {}
-  l_13_12.nThreads = 0
-  l_13_12.nCollectedThreads = 0
-  l_13_12.threads = {}
-  l_13_12.error_log = {}
-  local l_13_13 = (mp.GetProcessCommandLine)(l_13_9)
-  if l_13_13 then
-    l_13_12.command_line = l_13_13
+  local l_13_9 = function(l_14_0, l_14_1, l_14_2, l_14_3)
+    -- function num : 0_12_0
+    local l_14_4, l_14_5 = pcall(mp.ReadProcMem, l_14_1, l_14_2)
+    do
+      if not l_14_4 then
+        local l_14_6 = (string.format)("%s at 0x%x: %s", l_14_3, l_14_1, tostring(l_14_5))
+        -- DECOMPILER ERROR at PC21: Confused about usage of register: R7 in 'UnsetPending'
+
+        ;
+        (l_14_0.error_log)[#l_14_0.error_log + 1] = l_14_6
+        return nil
+      end
+      if l_14_5 == nil then
+        return nil
+      end
+      do
+        if #l_14_5 < l_14_2 then
+          local l_14_7 = (string.format)("%s at 0x%x: expected %d bytes, received %d", l_14_3, l_14_1, l_14_2, #l_14_5)
+          -- DECOMPILER ERROR at PC43: Confused about usage of register: R7 in 'UnsetPending'
+
+          ;
+          (l_14_0.error_log)[#l_14_0.error_log + 1] = l_14_7
+          return nil
+        end
+        return l_14_5
+      end
+    end
   end
-  local l_13_14 = 4000
-  local l_13_15 = false
+
+  local l_13_11 = function(l_15_0)
+    -- function num : 0_12_1 , upvalues : l_13_9
+    local l_15_1 = (mp.GetPEBAddress)()
+    if l_15_1 == nil or l_15_1 == 0 then
+      return nil
+    end
+    local l_15_2 = (mp.GetSMSProcArchitecture)()
+    if l_15_2 == nil then
+      return nil
+    end
+    local l_15_3, l_15_4, l_15_5, l_15_6, l_15_7, l_15_8 = nil, nil, nil, nil, nil, nil
+    if l_15_2 == mp.SMS_PROC_ARCH_X64 then
+      l_15_3 = "x64"
+      l_15_4 = 8
+      l_15_5 = 32
+      l_15_6 = 112
+      l_15_7 = 16
+      l_15_8 = 9
+    else
+      if l_15_2 == mp.SMS_PROC_ARCH_X32 then
+        l_15_3 = "x86"
+        l_15_4 = 4
+        l_15_5 = 16
+        l_15_6 = 64
+        l_15_7 = 8
+        l_15_8 = 5
+      else
+        return nil
+      end
+    end
+    local l_15_9 = l_15_1 + l_15_5
+    local l_15_10 = l_13_9(l_15_0, l_15_9, l_15_4, "Failed to read ProcessParameters pointer")
+    if l_15_10 == nil then
+      return nil
+    end
+    local l_15_11 = nil
+    if l_15_4 == 8 then
+      l_15_11 = (mp.readu_u64)(l_15_10, 1)
+    else
+      l_15_11 = (mp.readu_u32)(l_15_10, 1)
+    end
+    if l_15_11 == nil or l_15_11 == 0 then
+      return nil
+    end
+    local l_15_12 = l_15_11 + l_15_6
+    local l_15_13 = l_13_9(l_15_0, l_15_12, l_15_7, "Failed to read CommandLine UNICODE_STRING")
+    if l_15_13 == nil then
+      return nil
+    end
+    local l_15_14 = (mp.readu_u16)(l_15_13, 1)
+    local l_15_15 = (mp.readu_u16)(l_15_13, 3)
+    if l_15_14 == nil or l_15_15 == nil then
+      return nil
+    end
+    if l_15_14 == 0 then
+      return ""
+    end
+    if l_15_14 % 2 ~= 0 then
+      return nil
+    end
+    if l_15_15 == 0 or l_15_15 < l_15_14 then
+      return nil
+    end
+    if l_15_14 > 65534 then
+      return nil
+    end
+    local l_15_16 = nil
+    if l_15_4 == 8 then
+      l_15_16 = (mp.readu_u64)(l_15_13, l_15_8)
+    else
+      l_15_16 = (mp.readu_u32)(l_15_13, l_15_8)
+    end
+    if l_15_16 == nil or l_15_16 == 0 then
+      return nil
+    end
+    local l_15_17 = l_13_9(l_15_0, l_15_16, l_15_14, "Failed to read command-line buffer")
+    if l_15_17 == nil then
+      return nil
+    end
+    l_15_17 = l_15_17 .. "\000\000"
+    local l_15_18, l_15_19 = pcall(mp.utf16to8, l_15_17)
+    if not l_15_18 then
+      return nil
+    end
+    if l_15_19 == nil then
+      return nil
+    end
+    return l_15_19
+  end
+
+  local l_13_12 = (mp.GetScannedPPID)()
+  local l_13_13 = 0
+  local l_13_14 = 0
+  local l_13_15 = {version = "1.0", ppid = l_13_12, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
+regions = {}
+, nThreads = 0, nCollectedThreads = 0, 
+threads = {}
+, 
+error_log = {}
+}
+  if (mp.GetProcessCommandLine)(l_13_12) and (mp.GetProcessCommandLine)(l_13_12) ~= "" then
+    l_13_15.command_line = (mp.GetProcessCommandLine)(l_13_12)
+  else
+    l_13_15.command_line_method = "PEB"
+    -- DECOMPILER ERROR at PC106: Confused about usage of register: R15 in 'UnsetPending'
+
+    if l_13_11(l_13_15) ~= nil then
+      l_13_15.command_line = l_13_11(l_13_15)
+    end
+  end
+  local l_13_16 = nil
+  local l_13_17 = 4000
   if l_13_2 >= 2 then
-    l_13_15 = true
-  end
-  local l_13_16 = {}
-  local l_13_17, l_13_18 = pcall(mp.GetSMSMemRanges)
-  if not l_13_17 then
-    local l_13_19 = l_13_12.error_log
-    local l_13_20 = #l_13_12.error_log + 1
-    l_13_19[l_13_20] = tostring(l_13_18)
-    l_13_18, l_13_19 = l_13_19, {}
-  end
-  do
-    local l_13_21 = #l_13_18
-    l_13_12.nRegions = l_13_21
-    for l_13_25 = 1, l_13_21 do
-      local l_13_26 = l_13_18[l_13_25]
-      if l_13_14 > l_13_25 then
-        if l_13_10 >= 150 then
-          break
-        end
-        if not l_13_26.addr or not l_13_26.size or not l_13_26.prot or not l_13_26.alloc_prot or not l_13_26.state_type or not l_13_26.flags then
-          return 3
-        end
-        if (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)(l_13_26.state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
-          local l_13_27 = 0
-          local l_13_28 = (mp.bitand)(l_13_26.prot, 255)
-          if (l_13_28 == l_13_7.PAGE_READONLY and l_13_26.size == l_13_5) or l_13_28 == l_13_7.PAGE_EXECUTE_READWRITE and l_13_26.size > 8000 then
-            local l_13_29 = true
-            if l_13_28 == l_13_7.PAGE_READONLY then
-              if (mp.SMSVirtualQuery)(l_13_26.addr + l_13_5) then
-                if (mp.bitand)((l_13_26.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
-                  l_13_29 = false
-                else
-                  l_13_27 = (mp.bitor)(l_13_27, l_13_8.RO_RX_ADJACENT)
-                end
-              else
-                l_13_29 = false
-              end
-            end
-            if l_13_29 then
-              local l_13_30, l_13_31 = pcall(mp.ReadProcMem, l_13_26.addr, l_13_5)
-              if not l_13_30 then
-                local l_13_32 = l_13_12.error_log
-                local l_13_33 = #l_13_12.error_log + 1
-                l_13_32[l_13_33] = tostring(l_13_31)
-              end
-              do
-                if l_13_30 and l_13_31 ~= nil and #l_13_31 == l_13_5 then
-                  if (mp.readu_u16)(l_13_31, 1) == l_13_6.MZ_SIGNATURE_HEX then
-                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.MZ_PRESENT)
-                  end
-                  local l_13_34 = (mp.readu_u32)(l_13_31, 1 + l_13_6.e_lfanew)
-                  if l_13_34 < 1024 and (mp.readu_u16)(l_13_31, 1 + l_13_34) == l_13_6.PE_SIGNATURE_HEX then
-                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.PE_PRESENT)
-                  end
-                  if (string.find)(l_13_31, "This program cannot be run in DOS mode", 1, true) ~= nil then
-                    l_13_27 = (mp.bitor)(l_13_27, l_13_8.DOS_STRING_PRESENT)
-                  end
+    local l_13_18 = true
+    local l_13_19, l_13_20 = {}, pcall(mp.GetSMSMemRanges)
+    if not l_13_20 then
+      local l_13_21 = nil
+      local l_13_22 = l_13_15.error_log
+      l_13_22[#l_13_15.error_log + 1] = tostring(l_13_21)
+      l_13_21, l_13_22 = l_13_22, {}
+    end
+    do
+      -- DECOMPILER ERROR at PC129: Confused about usage of register: R20 in 'UnsetPending'
+
+      local l_13_23 = nil
+      l_13_15.nRegions = #l_13_21
+      -- DECOMPILER ERROR at PC132: Confused about usage of register: R21 in 'UnsetPending'
+
+      for l_13_27 = 1, #l_13_21 do
+        local l_13_24 = nil
+        -- DECOMPILER ERROR at PC135: Confused about usage of register: R25 in 'UnsetPending'
+
+        if l_13_17 > l_13_28 then
+          if l_13_13 >= 150 then
+            break
+          end
+          -- DECOMPILER ERROR at PC144: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC147: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC150: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC153: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC156: Confused about usage of register: R26 in 'UnsetPending'
+
+          if not (l_13_23[R25_PC135]).addr or not (l_13_23[R25_PC135]).size or not (l_13_23[R25_PC135]).prot or not (l_13_23[R25_PC135]).alloc_prot or not (l_13_23[R25_PC135]).state_type or not (l_13_23[R25_PC135]).flags then
+            return 3
+          end
+          -- DECOMPILER ERROR at PC163: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC171: Confused about usage of register: R26 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC179: Confused about usage of register: R26 in 'UnsetPending'
+
+          if (mp.bitand)((l_13_23[R25_PC135]).state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)((l_13_23[R25_PC135]).state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)((l_13_23[R25_PC135]).state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
+            local l_13_29 = nil
+            local l_13_30 = 0
+            if ((mp.bitand)(l_13_29.prot, 255) == l_13_7.PAGE_READONLY and l_13_29.size == l_13_5) or (mp.bitand)(l_13_29.prot, 255) == l_13_7.PAGE_EXECUTE_READWRITE and l_13_29.size > 8000 then
+              local l_13_31 = nil
+              if l_13_31 ~= l_13_7.PAGE_READONLY or (not (mp.SMSVirtualQuery)(l_13_29.addr + l_13_5) or ((mp.bitand)((l_13_29.addr + l_13_5).prot, 255) == l_13_7.PAGE_EXECUTE_READ or false)) then
+                local l_13_32, l_13_33 = , pcall(mp.ReadProcMem, l_13_29.addr, l_13_5)
+                if not l_13_33 then
+                  local l_13_34 = nil
+                  local l_13_35 = l_13_15.error_log
+                  l_13_35[#l_13_15.error_log + 1] = tostring(l_13_34)
                 end
                 do
-                  local l_13_35 = l_13_12.regions
-                  local l_13_36 = #l_13_12.regions + 1
-                  do
-                    local l_13_37 = {}
-                    l_13_37.addr = l_13_26.addr
-                    l_13_37.size = l_13_26.size
-                    l_13_37.alloc_prot = l_13_26.alloc_prot
-                    l_13_37.prot = l_13_26.prot
-                    l_13_37.state_type = l_13_26.state_type
-                    l_13_37.flags = l_13_26.flags
-                    l_13_37.heuristics = l_13_27
-                    l_13_35[l_13_36] = l_13_37
-                    l_13_10 = l_13_10 + 1
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC254: Confused about usage of register: R31 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC256: Confused about usage of register: R31 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC261: Confused about usage of register: R31 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC272: Overwrote pending register: R27 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC275: Confused about usage of register: R31 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+                  if l_13_33 and l_13_34 ~= nil and #l_13_34 == l_13_5 then
+                    if (mp.readu_u16)(l_13_34, 1) == l_13_6.MZ_SIGNATURE_HEX then
+                      do
+                        local l_13_36 = nil
+                        -- DECOMPILER ERROR at PC294: Overwrote pending register: R27 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                        -- DECOMPILER ERROR at PC309: Overwrote pending register: R27 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+                        if (mp.readu_u32)(l_13_34, 1 + l_13_6.e_lfanew) >= 1024 or (mp.readu_u16)(l_13_36, 1 + (mp.readu_u32)(l_13_34, 1 + l_13_6.e_lfanew)) ~= l_13_6.PE_SIGNATURE_HEX or (string.find)(l_13_36, "This program cannot be run in DOS mode", 1, true) ~= nil then
+                          local l_13_37 = nil
+                          local l_13_38 = l_13_15.regions
+                          do
+                            local l_13_39 = #l_13_15.regions + 1
+                            l_13_38[l_13_39] = {addr = l_13_29.addr, size = l_13_29.size, alloc_prot = l_13_29.alloc_prot, prot = l_13_29.prot, state_type = l_13_29.state_type, flags = l_13_29.flags, heuristics = l_13_30}
+                            l_13_13 = l_13_13 + 1
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC314: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out DO_STMT
 
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out DO_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                            -- DECOMPILER ERROR at PC330: LeaveBlock: unexpected jumping out IF_STMT
+
+                          end
+                        end
+                      end
+                    end
                   end
                 end
               end
@@ -1414,52 +1556,48 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
           end
         end
       end
-    end
-    l_13_12.nCollectedRegions = l_13_10
-    local l_13_38 = 50
-    local l_13_39, l_13_40 = (mp.GetSMSThreadInfo)()
-    if not tonumber(l_13_39) then
-      l_13_40 = type(l_13_39) == "table" or 0
-    end
-    l_13_39 = {}
-    for l_13_44,l_13_45 in ipairs(l_13_39) do
-      if l_13_38 > l_13_44 then
-        if l_13_11 >= 20 then
-          break
-        end
-        local l_13_46, l_13_47 = (mp.SMSVirtualQuery)(l_13_45.StartAddr)
-        if l_13_46 and (mp.bitand)(l_13_47.state_type, mp.SMS_MBI_IMAGE) == 0 then
-          do
-            if (mp.GetSMSMappedFilename)(l_13_45.StartAddr) == nil then
-              local l_13_48 = ""
+      l_13_15.nCollectedRegions = l_13_13
+      local l_13_40 = nil
+      local l_13_41, l_13_42 = 50, (mp.GetSMSThreadInfo)()
+      if not tonumber(l_13_42) then
+        for l_13_46,l_13_47 in ipairs(l_13_42) do
+          local l_13_43 = type(l_13_42) == "table" or 0
+          if l_13_41 >= l_13_47 then
+            if l_13_14 >= 20 then
+              break
             end
-            local l_13_49 = nil
-            local l_13_50 = l_13_12.threads
+            -- DECOMPILER ERROR at PC360: Confused about usage of register: R29 in 'UnsetPending'
+
+            local l_13_49 = (mp.SMSVirtualQuery)(l_13_38.StartAddr)
+            if (l_13_49 and (mp.bitand)((l_13_38.StartAddr).state_type, mp.SMS_MBI_IMAGE) == 0) or not l_13_49 then
+              local l_13_50 = nil
+              local l_13_51 = l_13_15.threads
+              local l_13_52 = #l_13_15.threads + 1
+              l_13_51[l_13_52] = {ptid = l_13_48.PTID, creator_ptid = l_13_48.CreatorPTID, start_addr = l_13_48.StartAddr}
+              l_13_14 = l_13_14 + 1
+            end
             do
-              local l_13_51 = #l_13_12.threads + 1
-              l_13_50[l_13_51] = {ptid = l_13_45.PTID, creator_ptid = l_13_45.CreatorPTID, start_addr = l_13_45.StartAddr, mod_path = l_13_49}
-              l_13_11 = l_13_11 + 1
-              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC377: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end
         end
+        -- DECOMPILER ERROR at PC389: Confused about usage of register: R24 in 'UnsetPending'
+
+        l_13_15.nThreads = l_13_43
+        l_13_15.nCollectedThreads = l_13_14
+        local l_13_53 = nil
+        do
+          local l_13_54 = nil
+          AppendToRollingQueue(l_13_1, "data", (MpCommon.Base64Encode)((MpCommon.JsonSerialize)(l_13_15)))
+          do return 0 end
+          -- DECOMPILER ERROR at PC406: freeLocal<0 in 'ReleaseLocals'
+
+        end
       end
     end
-    l_13_12.nThreads = l_13_40
-    l_13_12.nCollectedThreads = l_13_11
-    local l_13_52 = (MpCommon.JsonSerialize)(l_13_12)
-    local l_13_53 = (MpCommon.Base64Encode)(l_13_52)
-    AppendToRollingQueue(l_13_1, "data", l_13_53)
-    return 0
   end
 end
 
