@@ -12,7 +12,8 @@ local l_0_1 = tostring((mp.readfile)(0, l_0_0))
 if l_0_1 == nil then
   return mp.CLEAN
 end
-if (string.find)((string.lower)(l_0_1), "iex%(irm%s+\'[^\']*\'%s+%-usebasicparsing%)[%\"%s]*$") then
+local l_0_2 = "iex%(irm%s+[\'\"]?[^\'\"%)%s]+[\'\"]?%s+%-usebasicparsing%)[\'\"]?%s*;?%s*e?x?i?t?%s*$"
+if (string.find)((string.lower)(l_0_1), l_0_2) then
   return mp.INFECTED
 end
 return mp.CLEAN

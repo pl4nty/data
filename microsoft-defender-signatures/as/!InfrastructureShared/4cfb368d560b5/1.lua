@@ -47,35 +47,51 @@ end
     return mp.CLEAN
   end
   local l_0_14 = nil
-  if l_0_6 ~= nil and contains(l_0_6, {"chatgpt.com", "openai.com", "claude.ai", "claude.com", "anthropic.com", "grok.com", "deepseek.com", "google.com", "antigravity.google", "qwen.ai", "chat.z.ai", "kimi.com", "doubao.com", "perplexity.ai", "huggingface.co", "openrouter.ai", "mistral.ai", "arena.ai", "meta.ai", "nousresearch.com", "opencode.ai", "openclaw.ai", "kiro.dev", "lovable.dev", "cursor.com", "manus.im", "unsloth.ai", "venice.ai", "notion.com", "notion.so", "microsoft.com", "visualstudio.com", "azure.com", "azure.net", "azurewebsites.net", "windows.net", "office.com", "office.net", "office365.com", "sharepoint.com", "sharepoint-df.com", "cloud.microsoft", "dynamics.com", "powerbi.com", "powerautomate.com", "microsofticm.com", "microsoftgeneva.com", "microsoftonline.com", "bing.com", "live.com", "msn.com", "skype.com", "eng.ms", "jwt.ms", "owiki.ms", "osgwiki.com", "microsoft.ghe.com", "githubusercontent.com", "youtube.com", "googleusercontent.com", "withgoogle.com", "aws.amazon.com", "amazon.com", "amazonworkspaces.com", "workshops.aws", "github.com", "gitlab.com", "stackoverflow.com", "npmjs.com", "pypi.org", "python.org", "nodejs.org", "docker.com", "kubernetes.io", "jetbrains.com", "astral.sh", "brew.sh", "bun.sh", "bun.com", "ollama.com", "pi.dev", "figma.com", "overleaf.com", "supabase.com", "devolutions.net", "rust-lang.org", "virustotal.com", "digitalocean.com", "medium.com", "csdn.net", "zhihu.com", "cnblogs.com", "qiita.com", "tailscale.com", "cloudflare.com", "salesforce.com", "lightning.force.com", "service-now.com", "atlassian.net", "adobe.com", "sap.com", "oracle.com", "ibm.com", "dropbox.com", "nvidia.com", "databricks.com", "azuredatabricks.net", "clerk.com", "pureauth.io", "canva.com", "kaggle.com", ".db.de", "deutschebahn.com", "tatacapital.com", "bajajfinserv.in", "xiaomi.com", "tencent.com", "whatsapp.com", "facebook.com", "instagram.com", "linkedin.com", "reddit.com", "discord.com", "telegram.org", "slack.com", "bilibili.com", "baidu.com", "walmart.com", "yahoo.com", "apple.com", "icloud.com", "duckduckgo.com", "perchance.org", "localhost", "127.0.0.1", "www.runoob.com", "www.jenkins.io", "www.filestash.app"}) then
+  if l_0_6 ~= nil and contains(l_0_6, {"chatgpt.com", "openai.com", "claude.ai", "claude.com", "anthropic.com", "grok.com", "deepseek.com", "google.com", "antigravity.google", "qwen.ai", "chat.z.ai", "kimi.com", "doubao.com", "perplexity.ai", "huggingface.co", "openrouter.ai", "mistral.ai", "arena.ai", "meta.ai", "nousresearch.com", "opencode.ai", "openclaw.ai", "kiro.dev", "lovable.dev", "cursor.com", "manus.im", "unsloth.ai", "venice.ai", "notion.com", "notion.so", "microsoft.com", "visualstudio.com", "azure.com", "azure.net", "azurewebsites.net", "windows.net", "office.com", "office.net", "office365.com", "sharepoint.com", "sharepoint-df.com", "cloud.microsoft", "dynamics.com", "powerbi.com", "powerautomate.com", "microsofticm.com", "microsoftgeneva.com", "microsoftonline.com", "bing.com", "live.com", "msn.com", "skype.com", "eng.ms", "jwt.ms", "owiki.ms", "osgwiki.com", "microsoft.ghe.com", "githubusercontent.com", "youtube.com", "googleusercontent.com", "withgoogle.com", "aws.amazon.com", "amazon.com", "amazonworkspaces.com", "workshops.aws", "github.com", "gitlab.com", "stackoverflow.com", "npmjs.com", "pypi.org", "python.org", "nodejs.org", "docker.com", "kubernetes.io", "jetbrains.com", "astral.sh", "brew.sh", "bun.sh", "bun.com", "ollama.com", "pi.dev", "figma.com", "overleaf.com", "supabase.com", "devolutions.net", "rust-lang.org", "virustotal.com", "digitalocean.com", "medium.com", "csdn.net", "zhihu.com", "cnblogs.com", "qiita.com", "tailscale.com", "cloudflare.com", "salesforce.com", "lightning.force.com", "service-now.com", "atlassian.net", "adobe.com", "sap.com", "oracle.com", "ibm.com", "dropbox.com", "nvidia.com", "databricks.com", "azuredatabricks.net", "clerk.com", "pureauth.io", "canva.com", "kaggle.com", ".db.de", "deutschebahn.com", "tatacapital.com", "bajajfinserv.in", "xiaomi.com", "tencent.com", "whatsapp.com", "facebook.com", "instagram.com", "linkedin.com", "reddit.com", "discord.com", "telegram.org", "slack.com", "bilibili.com", "baidu.com", "walmart.com", "yahoo.com", "apple.com", "icloud.com", "duckduckgo.com", "perchance.org", "localhost", "127.0.0.1", "www.runoob.com", "www.jenkins.io", "www.filestash.app", "get.activated.win"}) then
     return mp.CLEAN
   end
   local l_0_15 = nil
-  if l_0_6 ~= nil then
-    local l_0_16 = (string.lower)(l_0_5)
-    local l_0_17 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW"}
-    local l_0_18 = SafeGetUrlReputation
-    l_0_18 = l_0_18({l_0_6}, l_0_17, false, 2000)
-    if (l_0_18.urls)[l_0_6] and ((l_0_18.urls)[l_0_6]).determination == 2 and ((l_0_18.urls)[l_0_6]).confidence >= 60 then
-      (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring(((l_0_18.urls)[l_0_6]).determination)))
+  local l_0_16 = (string.lower)(l_0_5)
+  if next(ExtractPartsFromUri(l_0_6)) == nil then
+    return mp.CLEAN
+  end
+  if (ExtractPartsFromUri(l_0_6)).host == nil then
+    return mp.CLEAN
+  end
+  local l_0_17 = nil
+  if split((ExtractPartsFromUri(l_0_6)).host, ".") and #split((ExtractPartsFromUri(l_0_6)).host, ".") == 3 and (split((ExtractPartsFromUri(l_0_6)).host, "."))[#split((ExtractPartsFromUri(l_0_6)).host, ".")] then
+    local l_0_18 = nil
+    if isSuspTLD("." .. tostring((split((ExtractPartsFromUri(l_0_6)).host, "."))[#split((ExtractPartsFromUri(l_0_6)).host, ".")])) then
+      local l_0_19 = nil
+      local l_0_20 = AppendToRollingQueue
+      local l_0_21 = "IsClickFixCMD_Malicious"
+      l_0_20(l_0_21, l_0_16, l_0_6 or "1", 600, 200, 1)
     end
   end
   do
-    local l_0_19 = nil
-    local l_0_20 = AppendToRollingQueue
-    local l_0_21 = "IsClickFixCMD"
+    if l_0_6 ~= nil then
+      local l_0_23 = nil
+      local l_0_24 = nil
+      local l_0_25 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW"}
+      if ((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).determination == 2 and 60 <= (((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).confidence then
+        (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring((((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).determination)))
+      end
+    end
     do
-      l_0_20(l_0_21, l_0_19, l_0_6 or "1", 600, 200, 1)
-      l_0_20 = bm
-      l_0_20 = l_0_20.add_related_string
-      l_0_21 = "ETW_ClipWrite_CMD"
-      l_0_20(l_0_21, tostring(l_0_5), bm.RelatedStringBMReport)
-      l_0_20 = mp
-      l_0_21 = "INFECTED"
-      l_0_20 = l_0_20[l_0_21]
-      do return l_0_20 end
-      -- DECOMPILER ERROR at PC475: freeLocal<0 in 'ReleaseLocals'
+      local l_0_26 = nil
+      local l_0_27 = nil
+      local l_0_28 = AppendToRollingQueue
+      do
+        l_0_28("IsClickFixCMD", l_0_16, l_0_6 or "1", 600, 200, 1)
+        l_0_28 = bm
+        l_0_28 = l_0_28.add_related_string
+        l_0_28("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
+        l_0_28 = mp
+        l_0_28 = l_0_28.INFECTED
+        do return l_0_28 end
+        -- DECOMPILER ERROR at PC531: freeLocal<0 in 'ReleaseLocals'
 
+      end
     end
   end
 end
