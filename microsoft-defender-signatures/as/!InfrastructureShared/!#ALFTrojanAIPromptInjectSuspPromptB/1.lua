@@ -692,32 +692,26 @@ do
 
                   -- DECOMPILER ERROR at PC753: Overwrote pending register: R43 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC754: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC761: Overwrote pending register: R42 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC755: Overwrote pending register: R45 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC769: Overwrote pending register: R44 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC762: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC770: Overwrote pending register: R45 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC770: Overwrote pending register: R42 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC771: Overwrote pending register: R46 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC778: Overwrote pending register: R44 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC779: Overwrote pending register: R45 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC780: Overwrote pending register: R46 in 'AssignReg'
-
-                  if (MpCommon.IsSampled)(10000, l_0_60, l_0_61, l_0_62) ~= false or R42_PC768 then
+                  if R42_PC759 then
                     (MpCommon.BmTriggerSig)(l_0_61, l_0_62, l_0_63)
                   end
-                  -- DECOMPILER ERROR at PC784: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC775: Overwrote pending register: R44 in 'AssignReg'
 
                   ;
                   (mp.SetDetectionString)(l_0_61)
                   do return mp.INFECTED end
-                  -- DECOMPILER ERROR at PC789: Confused about usage of register R43 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC780: Confused about usage of register R43 for local variables in 'ReleaseLocals'
 
                   -- WARNING: undefined locals caused missing assignments!
-                  -- DECOMPILER ERROR: 31 unprocessed JMP targets
+                  -- DECOMPILER ERROR: 30 unprocessed JMP targets
                 end
               end
             end

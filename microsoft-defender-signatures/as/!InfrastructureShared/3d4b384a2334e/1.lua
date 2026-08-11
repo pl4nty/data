@@ -1,16 +1,16 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\426b3aa78c2b5\1.luac 
+-- Command line: lua\!InfrastructureShared\3d4b384a2334e\1.luac 
 
 -- params : ...
 -- function num : 0
 -- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
 
-if (this_sigattrlog[13]).matched and not isnull((this_sigattrlog[13]).utf8p1) and not isnull((this_sigattrlog[13]).utf8p2) then
+if (this_sigattrlog[11]).matched and not isnull((this_sigattrlog[11]).utf8p1) and not isnull((this_sigattrlog[11]).utf8p2) then
   local l_0_0, l_0_1, l_0_3 = nil, nil, nil
-  l_0_1 = (this_sigattrlog[13]).utf8p1
+  l_0_1 = (this_sigattrlog[11]).utf8p1
   local l_0_2, l_0_4 = nil
   l_0_2 = this_sigattrlog
-  l_0_2 = l_0_2[13]
+  l_0_2 = l_0_2[11]
   l_0_3 = l_0_2.utf8p2
   local l_0_5 = nil
 else
@@ -18,12 +18,12 @@ end
 do
   -- DECOMPILER ERROR at PC73: Overwrote pending register: R0 in 'AssignReg'
 
-  if (not (this_sigattrlog[14]).matched or isnull((this_sigattrlog[14]).utf8p1) or isnull((this_sigattrlog[14]).utf8p2) or (this_sigattrlog[15]).matched) and not isnull((this_sigattrlog[15]).utf8p1) and not isnull((this_sigattrlog[15]).utf8p2) then
-    local l_0_6, l_0_7, l_0_9 = "ChildPowershell", (this_sigattrlog[14]).utf8p1, (this_sigattrlog[14]).utf8p2
-    l_0_7 = (this_sigattrlog[15]).utf8p1
+  if (not (this_sigattrlog[12]).matched or isnull((this_sigattrlog[12]).utf8p1) or isnull((this_sigattrlog[12]).utf8p2) or (this_sigattrlog[13]).matched) and not isnull((this_sigattrlog[13]).utf8p1) and not isnull((this_sigattrlog[13]).utf8p2) then
+    local l_0_6, l_0_7, l_0_9 = "ChildPowershell", (this_sigattrlog[12]).utf8p1, (this_sigattrlog[12]).utf8p2
+    l_0_7 = (this_sigattrlog[13]).utf8p1
     local l_0_8, l_0_10 = nil
     l_0_8 = this_sigattrlog
-    l_0_8 = l_0_8[15]
+    l_0_8 = l_0_8[13]
     l_0_9 = l_0_8.utf8p2
     local l_0_11 = nil
   else
@@ -31,12 +31,12 @@ do
   do
     -- DECOMPILER ERROR at PC127: Overwrote pending register: R0 in 'AssignReg'
 
-    if (not (this_sigattrlog[16]).matched or isnull((this_sigattrlog[16]).utf8p1) or isnull((this_sigattrlog[16]).utf8p2) or (this_sigattrlog[17]).matched) and not isnull((this_sigattrlog[17]).utf8p1) and not isnull((this_sigattrlog[17]).utf8p2) then
-      local l_0_12, l_0_13, l_0_15 = "ChildCscript", (this_sigattrlog[16]).utf8p1, (this_sigattrlog[16]).utf8p2
-      l_0_13 = (this_sigattrlog[17]).utf8p1
+    if (not (this_sigattrlog[14]).matched or isnull((this_sigattrlog[14]).utf8p1) or isnull((this_sigattrlog[14]).utf8p2) or (this_sigattrlog[15]).matched) and not isnull((this_sigattrlog[15]).utf8p1) and not isnull((this_sigattrlog[15]).utf8p2) then
+      local l_0_12, l_0_13, l_0_15 = "ChildCscript", (this_sigattrlog[14]).utf8p1, (this_sigattrlog[14]).utf8p2
+      l_0_13 = (this_sigattrlog[15]).utf8p1
       local l_0_14, l_0_16 = nil
       l_0_14 = this_sigattrlog
-      l_0_14 = l_0_14[17]
+      l_0_14 = l_0_14[15]
       l_0_15 = l_0_14.utf8p2
       local l_0_17 = nil
     else
@@ -44,12 +44,12 @@ do
     do
       -- DECOMPILER ERROR at PC181: Overwrote pending register: R0 in 'AssignReg'
 
-      if (not (this_sigattrlog[18]).matched or isnull((this_sigattrlog[18]).utf8p1) or isnull((this_sigattrlog[18]).utf8p2) or (this_sigattrlog[19]).matched) and not isnull((this_sigattrlog[19]).utf8p1) and not isnull((this_sigattrlog[19]).utf8p2) then
-        local l_0_18, l_0_19, l_0_21 = "ChildMshta", (this_sigattrlog[18]).utf8p1, (this_sigattrlog[18]).utf8p2
-        l_0_19 = (this_sigattrlog[19]).utf8p1
+      if (not (this_sigattrlog[16]).matched or isnull((this_sigattrlog[16]).utf8p1) or isnull((this_sigattrlog[16]).utf8p2) or (this_sigattrlog[17]).matched) and not isnull((this_sigattrlog[17]).utf8p1) and not isnull((this_sigattrlog[17]).utf8p2) then
+        local l_0_18, l_0_19, l_0_21 = "ChildMshta", (this_sigattrlog[16]).utf8p1, (this_sigattrlog[16]).utf8p2
+        l_0_19 = (this_sigattrlog[17]).utf8p1
         local l_0_20, l_0_22 = nil
         l_0_20 = this_sigattrlog
-        l_0_20 = l_0_20[19]
+        l_0_20 = l_0_20[17]
         l_0_21 = l_0_20.utf8p2
         local l_0_23 = nil
       else
@@ -57,12 +57,12 @@ do
       do
         -- DECOMPILER ERROR at PC235: Overwrote pending register: R0 in 'AssignReg'
 
-        if (not (this_sigattrlog[20]).matched or isnull((this_sigattrlog[20]).utf8p1) or isnull((this_sigattrlog[20]).utf8p2) or (this_sigattrlog[21]).matched) and not isnull((this_sigattrlog[21]).utf8p1) and not isnull((this_sigattrlog[21]).utf8p2) then
-          local l_0_24, l_0_25, l_0_27 = "ChildRegsvr32", (this_sigattrlog[20]).utf8p1, (this_sigattrlog[20]).utf8p2
-          l_0_25 = (this_sigattrlog[21]).utf8p1
+        if (not (this_sigattrlog[18]).matched or isnull((this_sigattrlog[18]).utf8p1) or isnull((this_sigattrlog[18]).utf8p2) or (this_sigattrlog[19]).matched) and not isnull((this_sigattrlog[19]).utf8p1) and not isnull((this_sigattrlog[19]).utf8p2) then
+          local l_0_24, l_0_25, l_0_27 = "ChildRegsvr32", (this_sigattrlog[18]).utf8p1, (this_sigattrlog[18]).utf8p2
+          l_0_25 = (this_sigattrlog[19]).utf8p1
           local l_0_26 = nil
           l_0_26 = this_sigattrlog
-          l_0_26 = l_0_26[21]
+          l_0_26 = l_0_26[19]
           l_0_27 = l_0_26.utf8p2
           local l_0_29 = nil
         end
@@ -92,13 +92,9 @@ do
             local l_0_36 = nil
             -- DECOMPILER ERROR at PC421: Overwrote pending register: R8 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC430: Overwrote pending register: R8 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC439: Overwrote pending register: R8 in 'AssignReg'
-
-            if ((not (this_sigattrlog[10]).matched or (this_sigattrlog[11]).matched) and not (this_sigattrlog[12]).matched) or not isnull(nil) then
+            if not (this_sigattrlog[10]).matched or not isnull(nil) then
               TrackPidAndTechniqueBM("BM", "T1505.003", "iis_shell_spawn", 28800)
-              -- DECOMPILER ERROR at PC453: Confused about usage of register: R8 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC435: Confused about usage of register: R8 in 'UnsetPending'
 
               ;
               (bm.add_related_process)(nil)
@@ -113,9 +109,9 @@ do
                     (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(((mp.GetExecutablesFromCommandLine)(l_0_32))[1]))
                   end
                 end
-                -- DECOMPILER ERROR at PC494: Confused about usage of register: R10 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC476: Confused about usage of register: R10 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC498: Confused about usage of register: R9 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC480: Confused about usage of register: R9 in 'UnsetPending'
 
                 do
                   if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 2 then
@@ -124,9 +120,9 @@ do
                       (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)(l_0_39[2]))
                     end
                   end
-                  -- DECOMPILER ERROR at PC523: Confused about usage of register: R10 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC505: Confused about usage of register: R10 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC527: Confused about usage of register: R9 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC509: Confused about usage of register: R9 in 'UnsetPending'
 
                   do
                     if #(mp.GetExecutablesFromCommandLine)(l_0_32) >= 3 then
