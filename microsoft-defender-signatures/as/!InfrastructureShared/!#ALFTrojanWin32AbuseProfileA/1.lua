@@ -649,6 +649,8 @@ if l_0_0 ~= nil and (string.len)(l_0_0) >= 4 and ((string.find)(l_0_0, "\\TOX\\"
   l_0_2[l_0_3] = true
   l_0_3 = "4F3F2DD906773E4424D9E60A55EB6BF8290C036BFCC9A446EBD21DB270BEB11D"
   l_0_2[l_0_3] = true
+  l_0_3 = "EF17A8BDCDD150FDFAA9EF5C6FB2EBB1CA1E858DD22ED6FD7485FB184493F101"
+  l_0_2[l_0_3] = true
   l_0_3 = string
   l_0_3 = l_0_3.sub
   l_0_3 = l_0_3(l_0_1, 1, 64)
