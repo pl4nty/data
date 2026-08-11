@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Exchange Server SE RTM SU9 (KB5121573)",
+    "downloadDescription": "Security Update for Exchange Server SE RTM SU9 (KB5121573)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DUMMY FILE FOR PRE.docx",
+            "url": "https://download.microsoft.com/download/5fd81d96-c7aa-4a89-8b01-f475f46f0a9e/DUMMY FILE FOR PRE.docx",
+            "size": "148480",
+            "version": "15.02.2562.046",
+            "datePublished": "8/6/2026 12:53:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Temp",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5121573",
+        "name": "KB5121573"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.2562.046",
+    "detailsSection_file_name": [
+        "DUMMY FILE FOR PRE.docx"
+    ],
+    "detailsSection_file_size": [
+        "145.0 KB"
+    ],
+    "detailsSection_file_date": "8/6/2026",
+    "systemRequirementsSection": "Temp",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Temp",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108756",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

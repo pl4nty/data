@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Integration Runtime",
+    "downloadDescription": "The Microsoft Integration Runtime is a customer managed data integration infrastructure used by Azure Data Factory and Azure Synapse Analytics to provide data integration capabilities across different network environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IntegrationRuntime_5.68.9705.1.msi",
+            "url": "https://download.microsoft.com/download/287960fc-11eb-4c70-8420-fa0410a4b189/e/a/5/ea52353d-4f2a-649a-ab5b-95060ce5f0d5/IntegrationRuntime_5.68.9705.1.msi",
+            "size": "289091584",
+            "version": " 5.68.9705.1",
+            "datePublished": "8/8/2026 5:08:28 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "The integration runtime is capable of moving data in and out of data stores within private network, dispatching activities against compute service within private network. You can install a self-hosted integration runtime on an on-premises machine or a virtual machine inside a private network.<br/>\n<b>Note:</b> An Integration Runtime instance can be registered with an instance of <a href=\"https://go.microsoft.com/fwlink/?linkid=858211\">Azure Data Factory</a>, or an instance of Azure Synapse Analytics. For Microsoft Purview, please download <a href=\"https://go.microsoft.com/fwlink/?linkid=2246619\">Microsoft Purview Integration Runtime</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": " 5.68.9705.1",
+    "detailsSection_file_name": [
+        "IntegrationRuntime_5.68.9705.1.msi"
+    ],
+    "detailsSection_file_size": [
+        "275.7 MB"
+    ],
+    "detailsSection_file_date": "8/8/2026",
+    "systemRequirementsSection": "Microsoft Integration Runtime (Self-hosted) requires a 64-bit Operating System with .NET Framework 4.7.2 or above. The recommended configuration for the Integration Runtime (Self-hosted) machine is 2 GHz, 4 Core CPU, 8 GB Memory and 80 GB disk.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Download and run the IntergrationRuntime.msi (64-bit) to install the Integration Runtime on your computer. You may also save IntegrationRuntime.msi to your local disk to install later.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108775",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

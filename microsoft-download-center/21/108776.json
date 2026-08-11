@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft SharePoint Workflow Manager (KB5002864)",
+    "downloadDescription": "Update for Microsoft SharePoint Workflow Manager (KB5002864)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sharepointworkflowmanagerclient_x64.msi",
+            "url": "https://download.microsoft.com/download/6c0954c4-d48d-45c7-a566-4ad0b5318e89/sharepointworkflowmanagerclient_x64.msi",
+            "size": "1798144",
+            "version": "1.0",
+            "datePublished": "8/10/2026 4:10:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sharepointworkflowmanager-x64-subscription-kb5002864-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/6c0954c4-d48d-45c7-a566-4ad0b5318e89/sharepointworkflowmanager-x64-subscription-kb5002864-fullfile-x64-glb.exe",
+            "size": "7414880",
+            "version": "1.0",
+            "datePublished": "8/10/2026 4:10:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update provides the latest fixes to Microsoft SharePoint Workflow Manager. Additionally, this update contains stability and performance improvements.oft SharePoint Workflow Manager (KB5002864)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5002864",
+        "name": "KB5002864"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sharepointworkflowmanagerclient_x64.msi",
+        "sharepointworkflowmanager-x64-subscription-kb5002864-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "8/10/2026",
+    "systemRequirementsSection": "Prerequisites\n\nTo apply this update, you must have the SharePoint Workflow Manager Client (16.0.19725.20522) installed.\n\nRestart information\n\nYou might have to restart the computer after you install this update.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "To install the update completely, follow these steps.\n\nFor the existing farm\nUninstall the old SharePoint Workflow Manager (SPWFM) Client.\nInstall the new SPWFM Client (16.0.19725.20522).\nInstall the update for SharePoint Workflow Manager (KB5002864).\nRestart the computer, if it's necessary.\nRun Upgrade Workflow Manager Farm in the Workflow Manager Configuration Wizard.\nFor the new farm\nInstall the SharePoint Workflow Manager RTM.\nInstall the SPWFM Client (16.0.19725.20522).\nInstall the update for SharePoint Workflow Manager (KB5002864).\nTo create the farm, run the Workflow Manager Configuration Wizard.\nNote\n\nYou must install the update for SharePoint Workflow Manager (KB5002864) on all servers in the Workflow Manager farm.\nYou must uninstall the old SharePoint Workflow Manager Client from all servers in the Workflow Manager farm and SharePoint Server farm.\nYou must install the new SharePoint Workflow Manager Client on all servers in the Workflow Manager farm and SharePoint Server farm.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108776",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

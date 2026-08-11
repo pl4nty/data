@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Healthcare Application templates in Power Platform",
+    "downloadDescription": "Healthcare Application templates in Power Platform customer managed source code release.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft for Healthcare - Learn Documentation.pdf",
+            "url": "https://download.microsoft.com/download/0a862c5b-cd07-4ed5-a8ca-f3eaf1c47ea8/Microsoft for Healthcare - Learn Documentation.pdf",
+            "size": "58566031",
+            "version": "1",
+            "datePublished": "8/1/2026 2:35:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Healthcare application templates in Power Platform - Customer Managed.zip",
+            "url": "https://download.microsoft.com/download/0a862c5b-cd07-4ed5-a8ca-f3eaf1c47ea8/Healthcare application templates in Power Platform - Customer Managed.zip",
+            "size": "84922595",
+            "version": "1",
+            "datePublished": "8/1/2026 2:35:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Healthcare application templates in Power Platform - Migration Playbook.pdf",
+            "url": "https://download.microsoft.com/download/0a862c5b-cd07-4ed5-a8ca-f3eaf1c47ea8/Healthcare application templates in Power Platform - Migration Playbook.pdf",
+            "size": "182537",
+            "version": "1",
+            "datePublished": "8/1/2026 2:35:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Healthcare Application templates in Power Platform is moving to downloadable source code and documentation so that your organization, or a partner you choose, can manage, customize, and extend the solution. The download package includes full source code for data model customizations, plugins, PCF controls, and APIs, Instructions on how to build the source code packages for deployment, and Microsoft Learn online documentation compiled into a PDF format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft for Healthcare - Learn Documentation.pdf",
+        "Healthcare application templates in Power Platform - Customer Managed.zip",
+        "Healthcare application templates in Power Platform - Migration Playbook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "55.9 MB",
+        "81.0 MB",
+        "178.3 KB"
+    ],
+    "detailsSection_file_date": "8/1/2026",
+    "systemRequirementsSection": "Power Platform subscription\nMicrosoft Visual Studio Professional or Enterprise\nPDF Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "Review READ.ME instructions included in source code archive",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108753",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

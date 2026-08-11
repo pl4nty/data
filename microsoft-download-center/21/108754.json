@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Healthcare data solutions in Microsoft Fabric",
+    "downloadDescription": "Healthcare data solutions in Microsoft Fabric",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HDS v1.4.0.zip",
+            "url": "https://download.microsoft.com/download/5d224a3e-b6c6-43b1-a639-aaf687f83fd5/HDS v1.4.0.zip",
+            "size": "7352903188",
+            "version": "1.4.0",
+            "datePublished": "8/6/2026 6:26:43 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Healthcare data solutions in Microsoft Fabric help you accelerate time to value by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.\n\nThis download package includes the source code and documentation of the healthcare data solutions in Microsoft Fabric.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.0",
+    "detailsSection_file_name": [
+        "HDS v1.4.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.8 GB"
+    ],
+    "detailsSection_file_date": "8/6/2026",
+    "systemRequirementsSection": "Microsoft Fabric",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "This download package includes the source code and documentation of the healthcare data solutions in Microsoft Fabric.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108754",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Test",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BulkMetadataUpdate_testcase.txt",
+            "url": "https://download.microsoft.com/download/ac136288-aaf2-41c0-b6ce-0aaa42fd938d/ReleaseId,OwnersToAdd.csv",
+            "size": "4898",
+            "version": "1",
+            "datePublished": "8/3/2026 10:42:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "authorize.htm",
+            "url": "https://download.microsoft.com/download/ac136288-aaf2-41c0-b6ce-0aaa42fd938d/authorize.htm",
+            "size": "48967",
+            "version": "1",
+            "datePublished": "8/3/2026 10:42:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "All_20260629094316.csv",
+            "url": "https://download.microsoft.com/download/ac136288-aaf2-41c0-b6ce-0aaa42fd938d/All_20260629094316.csv",
+            "size": "3474",
+            "version": "1",
+            "datePublished": "8/3/2026 10:42:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\n<li>test </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "BulkMetadataUpdate_testcase.txt",
+        "authorize.htm",
+        "All_20260629094316.csv"
+    ],
+    "detailsSection_file_size": [
+        "4.8 KB",
+        "47.8 KB",
+        "3.4 KB"
+    ],
+    "detailsSection_file_date": "8/3/2026",
+    "systemRequirementsSection": "<ul>\n<li>test </li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "<ul>\n<li>test </li>\n</ul>",
+    "additionalInformationSection": "<ul>\n<li>test </li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "test",
+            "url": "https://release-wus-ci.esrp.microsoft.com/Release/SubmitV2"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108748",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
