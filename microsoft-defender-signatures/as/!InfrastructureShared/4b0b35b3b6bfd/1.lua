@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\3f5b3bac84bc2\1.luac 
+-- Command line: lua\!InfrastructureShared\4b0b35b3b6bfd\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -48,13 +48,13 @@ do
 
             -- DECOMPILER ERROR at PC89: Confused about usage of register: R0 in 'UnsetPending'
 
-            if not l_0_5 or not l_0_5.utf8p1 then
+            if not l_0_5 or not l_0_5.utf8p2 then
               return mp.CLEAN
             end
             -- DECOMPILER ERROR at PC97: Confused about usage of register: R0 in 'UnsetPending'
 
             local l_0_8 = nil
-            local l_0_9 = (string.lower)(l_0_5.utf8p1)
+            local l_0_9 = (string.lower)(l_0_5.utf8p2)
             if not (bm.get_current_process_startup_info)() then
               return mp.CLEAN
             end
