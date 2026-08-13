@@ -9,7 +9,7 @@ end
 if not (mp.get_mpattribute)("SCPT:NpmY_ReqHttp") and not (mp.get_mpattribute)("SCPT:NpmY_ReqAxios") and not (mp.get_mpattribute)("SCPT:NpmY_ReqNodeFetch") then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("(SCPT:NpmY_Exec_Exec|SCPT:NpmY_Exec_ExecSync|SCPT:NpmY_Exec_ExecFile|SCPT:NpmY_Exec_Spawn|SCPT:NpmY_Exec_SpawnSync)") then
+if not (mp.get_mpattribute)("SCPT:NpmY_Exec_ExecSync") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_ExecFile") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_Spawn") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_SpawnSync") then
   return mp.CLEAN
 end
 return mp.INFECTED
