@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\3c9b3ae4a0888\1.luac 
+-- Command line: lua\!InfrastructureShared\3f2b3220d456a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -32,7 +32,11 @@ else
                 if (this_sigattrlog[15]).matched and (this_sigattrlog[15]).utf8p1 ~= nil then
                   l_0_1 = (this_sigattrlog[15]).utf8p1
                 else
-                  return mp.CLEAN
+                  if (this_sigattrlog[16]).matched and (this_sigattrlog[16]).utf8p1 ~= nil then
+                    l_0_1 = (this_sigattrlog[16]).utf8p1
+                  else
+                    return mp.CLEAN
+                  end
                 end
               end
             end

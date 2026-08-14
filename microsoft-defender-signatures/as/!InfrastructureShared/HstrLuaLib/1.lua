@@ -1291,6 +1291,7 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   l_13_8.PE_PRESENT = 2
   l_13_8.DOS_STRING_PRESENT = 4
   l_13_8.RO_RX_ADJACENT = 8
+  l_13_8.RW_RX_ADJACENT = 16
   local l_13_9 = function(l_14_0, l_14_1, l_14_2, l_14_3)
     -- function num : 0_12_0
     local l_14_4, l_14_5 = pcall(mp.ReadProcMem, l_14_1, l_14_2)
@@ -1505,26 +1506,26 @@ getScannedRegions = function(l_13_0, l_13_1, l_13_2, l_13_3)
   local l_13_18 = 0
   local l_13_19 = 0
   local l_13_20 = {}
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R20 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC113: Confused about usage of register: R20 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R19 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC113: Confused about usage of register: R19 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC112: Confused about usage of register: R19 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC113: Confused about usage of register: R19 in 'UnsetPending'
 
-  if not (mp.GetProcessCommandLine)(l_13_17) or (mp.GetProcessCommandLine)(l_13_17) == "" or l_13_11({version = "1.2", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
+  if not (mp.GetProcessCommandLine)(l_13_17) or (mp.GetProcessCommandLine)(l_13_17) == "" or l_13_11({version = "1.3", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
 regions = {}
 , nThreads = 0, nCollectedThreads = 0, 
 threads = {}
 , 
 error_log = {}
 , command_line = (mp.GetProcessCommandLine)(l_13_17), command_line_method = "PEB"}) ~= nil then
-    ({version = "1.2", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
+    ({version = "1.3", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
 regions = {}
 , nThreads = 0, nCollectedThreads = 0, 
 threads = {}
 , 
 error_log = {}
-, command_line = (mp.GetProcessCommandLine)(l_13_17), command_line_method = "PEB"}).command_line = l_13_11({version = "1.2", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
+, command_line = (mp.GetProcessCommandLine)(l_13_17), command_line_method = "PEB"}).command_line = l_13_11({version = "1.3", ppid = l_13_17, arch = (mp.GetSMSProcArchitecture)(), sig_matched = l_13_0, scan_count = l_13_2, scan_time_diff = l_13_3, command_line = "", command_line_method = "GPCL", nRegions = 0, nCollectedRegions = 0, 
 regions = {}
 , nThreads = 0, nCollectedThreads = 0, 
 threads = {}
@@ -1538,183 +1539,171 @@ error_log = {}
   if not pcall(mp.GetSMSMemRanges) then
     local l_13_25 = nil
     local l_13_26 = nil
-    -- DECOMPILER ERROR at PC128: Confused about usage of register: R25 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC129: Confused about usage of register: R25 in 'UnsetPending'
 
     ;
     (l_13_21.error_log)[#l_13_21.error_log + 1] = tostring(l_13_26)
     l_13_26 = {}
   end
   do
-    -- DECOMPILER ERROR at PC131: Confused about usage of register: R24 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC132: Confused about usage of register: R24 in 'UnsetPending'
 
     local l_13_27 = nil
     l_13_21.nRegions = #l_13_26
-    -- DECOMPILER ERROR at PC134: Confused about usage of register: R25 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC135: Confused about usage of register: R25 in 'UnsetPending'
 
     for l_13_31 = 1, #l_13_26 do
       local l_13_28, l_13_29 = nil
-      -- DECOMPILER ERROR at PC137: Confused about usage of register: R29 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC138: Confused about usage of register: R29 in 'UnsetPending'
 
-      if l_13_23 >= R29_PC137 then
+      if l_13_23 >= R29_PC138 then
         if l_13_18 >= 150 then
           break
         end
-        -- DECOMPILER ERROR at PC146: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC147: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC149: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC150: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC152: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC153: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC155: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC156: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC158: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC159: Confused about usage of register: R30 in 'UnsetPending'
 
-        if not (l_13_28[R29_PC137]).addr or not (l_13_28[R29_PC137]).size or not (l_13_28[R29_PC137]).prot or not (l_13_28[R29_PC137]).alloc_prot or not (l_13_28[R29_PC137]).state_type or not (l_13_28[R29_PC137]).flags then
+        if not (l_13_28[R29_PC138]).addr or not (l_13_28[R29_PC138]).size or not (l_13_28[R29_PC138]).prot or not (l_13_28[R29_PC138]).alloc_prot or not (l_13_28[R29_PC138]).state_type or not (l_13_28[R29_PC138]).flags then
           return 3
         end
-        -- DECOMPILER ERROR at PC165: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC166: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC173: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC174: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC181: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC182: Confused about usage of register: R30 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC192: Confused about usage of register: R30 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC193: Confused about usage of register: R30 in 'UnsetPending'
 
-        if (mp.bitand)((l_13_28[R29_PC137]).state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)((l_13_28[R29_PC137]).state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)((l_13_28[R29_PC137]).state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
+        if (mp.bitand)((l_13_28[R29_PC138]).state_type, mp.SMS_MBI_IMAGE) == 0 and (mp.bitand)((l_13_28[R29_PC138]).state_type, mp.SMS_MBI_MAPPED) == 0 and (mp.bitand)((l_13_28[R29_PC138]).state_type, mp.SMS_MBI_COMMIT) == mp.SMS_MBI_COMMIT then
           local l_13_34 = nil
-          if ((mp.bitand)((l_13_28[R29_PC137]).prot, 255) == l_13_7.PAGE_READONLY and l_13_34.size == l_13_5) or (mp.bitand)((l_13_28[R29_PC137]).prot, 255) == l_13_7.PAGE_EXECUTE_READWRITE and l_13_34.size > 8000 then
-            local l_13_35 = 0
-            if (mp.bitand)((l_13_28[R29_PC137]).prot, 255) == l_13_7.PAGE_READONLY then
-              local l_13_36 = nil
-              local l_13_37, l_13_38 = true
-              if (mp.SMSVirtualQuery)(l_13_34.addr + l_13_5) then
-                if (mp.bitand)((l_13_34.addr + l_13_5).prot, 255) ~= l_13_7.PAGE_EXECUTE_READ then
-                  l_13_37 = false
-                else
-                  l_13_35 = (mp.bitor)(l_13_35, l_13_8.RO_RX_ADJACENT)
-                  local l_13_39 = nil
-                  local l_13_40 = nil
-                  local l_13_41 = l_13_14
-                  local l_13_42 = l_13_20
-                  l_13_41(l_13_42, l_13_38, {heuristics = l_13_8.RO_RX_ADJACENT})
+          local l_13_35 = 0
+          local l_13_36 = (mp.bitand)((l_13_28[R29_PC138]).prot, 255)
+          if (l_13_36 ~= l_13_7.PAGE_EXECUTE_READWRITE or l_13_34.size <= 8000 or l_13_36 == l_13_7.PAGE_READONLY) and l_13_34.size == l_13_5 then
+            local l_13_37 = (mp.bitand)(l_13_34.alloc_prot, 255)
+            local l_13_38 = true
+            -- DECOMPILER ERROR at PC222: Confused about usage of register: R36 in 'UnsetPending'
+
+            -- DECOMPILER ERROR at PC227: Confused about usage of register: R36 in 'UnsetPending'
+
+            if l_13_28[l_13_33 + 1] ~= nil and (l_13_28[l_13_33 + 1]).addr == l_13_34.addr + l_13_5 and (mp.bitand)((l_13_28[l_13_33 + 1]).prot, 255) == l_13_7.PAGE_EXECUTE_READ then
+              l_13_38 = true
+              l_13_35 = (mp.bitor)(l_13_35, l_13_8.RO_RX_ADJACENT)
+              local l_13_39 = nil
+              local l_13_40 = nil
+              local l_13_41 = l_13_14
+              local l_13_42 = l_13_20
+              l_13_41(l_13_42, l_13_40.addr, {heuristics = l_13_8.RO_RX_ADJACENT})
+            end
+          else
+            do
+              -- DECOMPILER ERROR at PC252: Confused about usage of register: R33 in 'UnsetPending'
+
+              if l_13_36 == l_13_7.PAGE_READWRITE and l_13_37 == l_13_7.PAGE_READWRITE and l_13_34.size == l_13_5 then
+                local l_13_43 = nil
+                local l_13_44 = nil
+                -- DECOMPILER ERROR at PC263: Confused about usage of register: R36 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC268: Confused about usage of register: R36 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC276: Confused about usage of register: R36 in 'UnsetPending'
+
+                if l_13_28[l_13_33 + 1] ~= nil and (l_13_28[l_13_33 + 1]).addr == l_13_34.addr + l_13_5 and (mp.bitand)((l_13_28[l_13_33 + 1]).prot, 255) == l_13_7.PAGE_EXECUTE_READ and (mp.bitand)((l_13_28[l_13_33 + 1]).alloc_prot, 255) == l_13_7.PAGE_READWRITE then
+                  l_13_44 = true
+                  l_13_35 = (mp.bitor)(l_13_35, l_13_8.RW_RX_ADJACENT)
+                  local l_13_45 = nil
+                  local l_13_46 = nil
+                  local l_13_47 = l_13_14
+                  local l_13_48 = l_13_20
+                  l_13_47(l_13_48, l_13_46.addr, {heuristics = l_13_8.RW_RX_ADJACENT})
                 end
-              else
-                do
-                  do
-                    l_13_37 = false
-                    -- DECOMPILER ERROR at PC244: Confused about usage of register: R33 in 'UnsetPending'
+              end
+              do
+                -- DECOMPILER ERROR at PC296: Confused about usage of register: R34 in 'UnsetPending'
 
-                    if l_13_37 then
-                      local l_13_43, l_13_44 = nil
-                      if not pcall(mp.ReadProcMem, l_13_34.addr, l_13_5) then
-                        local l_13_45 = nil
-                        local l_13_46 = nil
-                        -- DECOMPILER ERROR at PC261: Confused about usage of register: R36 in 'UnsetPending'
+                if l_13_44 then
+                  local l_13_49 = nil
+                  if l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header") ~= nil and #l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header") == l_13_5 then
+                    if (mp.readu_u16)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1) == l_13_6.MZ_SIGNATURE_HEX then
+                      l_13_35 = (mp.bitor)(l_13_35, l_13_8.MZ_PRESENT)
+                    end
+                    local l_13_50 = nil
+                    if (mp.readu_u32)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + l_13_6.e_lfanew) ~= nil and (mp.readu_u32)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + l_13_6.e_lfanew) < 1024 and (mp.readu_u16)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + (mp.readu_u32)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + l_13_6.e_lfanew)) == l_13_6.PE_SIGNATURE_HEX then
+                      l_13_35 = (mp.bitor)(l_13_35, l_13_8.PE_PRESENT)
+                      local l_13_51 = nil
+                      local l_13_52 = nil
+                      -- DECOMPILER ERROR at PC358: Confused about usage of register: R37 in 'UnsetPending'
 
-                        ;
-                        (l_13_21.error_log)[#l_13_21.error_log + 1] = tostring(l_13_46)
-                      end
-                      do
-                        -- DECOMPILER ERROR at PC262: Confused about usage of register: R34 in 'UnsetPending'
+                      local l_13_53 = nil
+                      local l_13_54 = (mp.readu_u32)(l_13_51, 1 + (mp.readu_u32)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + l_13_6.e_lfanew) + l_13_6.TimeDateStamp)
+                      local l_13_55 = (mp.readu_u16)(l_13_51, 1 + (mp.readu_u32)(l_13_9(l_13_21, l_13_34.addr, l_13_5, "Failed to read region header"), 1 + l_13_6.e_lfanew) + l_13_6.NumberOfSections)
+                      local l_13_56 = nil
+                      -- DECOMPILER ERROR at PC372: Confused about usage of register: R41 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC264: Confused about usage of register: R35 in 'UnsetPending'
+                      local l_13_57 = nil
+                      local l_13_58 = (mp.readu_u32)(l_13_51, 1 + (l_13_52 + 24) + l_13_6.Checksum)
+                      local l_13_59 = (mp.readu_u32)(l_13_51, 1 + (l_13_52 + 24) + l_13_6.AddressOfEntryPoint)
+                      if (((l_13_54 ~= nil and l_13_55 == nil) or l_13_58 ~= nil) and l_13_59 == nil) or (mp.readu_u32)(l_13_51, l_13_57 + l_13_6.SizeOfImage) ~= nil then
+                        do
+                          do
+                            l_13_14(l_13_20, l_13_34.addr, {pe_timestamp = l_13_54, pe_number_of_sections = l_13_55, pe_checksum = l_13_58, pe_address_of_entry_point = l_13_59, pe_size_of_image = (mp.readu_u32)(l_13_51, l_13_57 + l_13_6.SizeOfImage)})
+                            -- DECOMPILER ERROR at PC403: Confused about usage of register: R35 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC266: Confused about usage of register: R35 in 'UnsetPending'
+                            if (string.find)(l_13_51, "This program cannot be run in DOS mode", 1, true) ~= nil then
+                              l_13_35 = (mp.bitor)(l_13_35, l_13_8.DOS_STRING_PRESENT)
+                            end
+                            do
+                              local l_13_60 = nil
+                              l_13_15({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_35}, l_13_20[l_13_13(l_13_34.addr)])
+                              -- DECOMPILER ERROR at PC441: Confused about usage of register: R35 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC271: Confused about usage of register: R35 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC441: Confused about usage of register: R36 in 'UnsetPending'
 
-                        if l_13_45 and l_13_46 ~= nil and #l_13_46 == l_13_5 then
-                          if (mp.readu_u16)(l_13_46, 1) == l_13_6.MZ_SIGNATURE_HEX then
-                            l_13_35 = (mp.bitor)(l_13_35, l_13_8.MZ_PRESENT)
-                          end
-                          -- DECOMPILER ERROR at PC285: Confused about usage of register: R35 in 'UnsetPending'
+                              ;
+                              (l_13_21.regions)[#l_13_21.regions + 1] = {addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_35}
+                              l_13_18 = l_13_18 + 1
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out DO_STMT
 
-                          local l_13_47 = nil
-                          -- DECOMPILER ERROR at PC295: Confused about usage of register: R35 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out DO_STMT
 
-                          if (mp.readu_u32)(l_13_46, 1 + l_13_6.e_lfanew) ~= nil and (mp.readu_u32)(l_13_46, 1 + l_13_6.e_lfanew) < 1024 and (mp.readu_u16)(l_13_46, 1 + (mp.readu_u32)(l_13_46, 1 + l_13_6.e_lfanew)) == l_13_6.PE_SIGNATURE_HEX then
-                            l_13_35 = (mp.bitor)(l_13_35, l_13_8.PE_PRESENT)
-                            local l_13_48 = nil
-                            local l_13_49 = nil
-                            -- DECOMPILER ERROR at PC318: Confused about usage of register: R37 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            local l_13_50 = nil
-                            local l_13_51 = (mp.readu_u32)(l_13_48, 1 + (mp.readu_u32)(l_13_46, 1 + l_13_6.e_lfanew) + l_13_6.TimeDateStamp)
-                            local l_13_52 = (mp.readu_u16)(l_13_48, 1 + (mp.readu_u32)(l_13_46, 1 + l_13_6.e_lfanew) + l_13_6.NumberOfSections)
-                            local l_13_53 = nil
-                            -- DECOMPILER ERROR at PC332: Confused about usage of register: R41 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                            local l_13_54 = nil
-                            local l_13_55 = (mp.readu_u32)(l_13_48, 1 + (l_13_49 + 24) + l_13_6.Checksum)
-                            local l_13_56 = (mp.readu_u32)(l_13_48, 1 + (l_13_49 + 24) + l_13_6.AddressOfEntryPoint)
-                            if (((l_13_51 ~= nil and l_13_52 == nil) or l_13_55 ~= nil) and l_13_56 == nil) or (mp.readu_u32)(l_13_48, l_13_54 + l_13_6.SizeOfImage) ~= nil then
-                              do
-                                do
-                                  l_13_14(l_13_20, l_13_34.addr, {pe_timestamp = l_13_51, pe_number_of_sections = l_13_52, pe_checksum = l_13_55, pe_address_of_entry_point = l_13_56, pe_size_of_image = (mp.readu_u32)(l_13_48, l_13_54 + l_13_6.SizeOfImage)})
-                                  -- DECOMPILER ERROR at PC363: Confused about usage of register: R35 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  if (string.find)(l_13_48, "This program cannot be run in DOS mode", 1, true) ~= nil then
-                                    l_13_35 = (mp.bitor)(l_13_35, l_13_8.DOS_STRING_PRESENT)
-                                  end
-                                  do
-                                    local l_13_57 = nil
-                                    l_13_15({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}, l_13_20[l_13_13(l_13_34.addr)])
-                                    -- DECOMPILER ERROR at PC401: Confused about usage of register: R33 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC401: Confused about usage of register: R34 in 'UnsetPending'
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    ;
-                                    (l_13_21.regions)[#l_13_21.regions + 1] = {addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}
-                                    l_13_18 = l_13_18 + 1
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out DO_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out DO_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
+                              -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out IF_STMT
 
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out DO_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out DO_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                    -- DECOMPILER ERROR at PC403: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  end
-                                end
-                              end
                             end
                           end
                         end
@@ -1729,44 +1718,44 @@ error_log = {}
       end
     end
     l_13_21.nCollectedRegions = l_13_18
-    local l_13_58 = nil
-    local l_13_59, l_13_60 = , 50
+    local l_13_61 = nil
+    local l_13_62, l_13_63 = , 50
     if not tonumber((mp.GetSMSThreadInfo)()) then
-      for l_13_64,l_13_65 in ipairs({}) do
-        local l_13_61, l_13_62 = , type((mp.GetSMSThreadInfo)()) == "table" or 0
-        -- DECOMPILER ERROR at PC426: Confused about usage of register: R32 in 'UnsetPending'
+      for l_13_67,l_13_68 in ipairs({}) do
+        local l_13_64, l_13_65 = , type((mp.GetSMSThreadInfo)()) == "table" or 0
+        -- DECOMPILER ERROR at PC466: Confused about usage of register: R32 in 'UnsetPending'
 
-        if l_13_60 >= l_13_43 then
+        if l_13_63 >= l_13_36 then
           if l_13_19 >= 20 then
             break
           end
-          -- DECOMPILER ERROR at PC433: Confused about usage of register: R33 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC473: Confused about usage of register: R33 in 'UnsetPending'
 
-          if ((mp.SMSVirtualQuery)(({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr) and (mp.bitand)((({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr).state_type, mp.SMS_MBI_IMAGE) == 0) or not (mp.SMSVirtualQuery)(({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr) then
-            local l_13_68 = nil
+          if ((mp.SMSVirtualQuery)(l_13_60.StartAddr) and (mp.bitand)((l_13_60.StartAddr).state_type, mp.SMS_MBI_IMAGE) == 0) or not (mp.SMSVirtualQuery)(l_13_60.StartAddr) then
+            local l_13_71 = nil
             do
-              if l_13_68 then
-                local l_13_69 = nil
+              if l_13_71 then
+                local l_13_72 = nil
               end
-              -- DECOMPILER ERROR at PC480: Confused about usage of register: R37 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC520: Confused about usage of register: R37 in 'UnsetPending'
 
-              if l_13_9(l_13_21, l_13_67.StartAddr, 64, "Failed to read thread start code") ~= nil then
+              if l_13_9(l_13_21, l_13_70.StartAddr, 64, "Failed to read thread start code") ~= nil then
                 do
-                  (l_13_21.threads)[#l_13_21.threads + 1] = {ptid = l_13_67.PTID, creator_ptid = l_13_67.CreatorPTID, start_addr = l_13_67.StartAddr, region_prot = (({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr).prot, region_alloc_prot = (({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr).alloc_prot, region_state_type = (({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr).state_type, region_size = (({addr = l_13_34.addr, size = l_13_34.size, alloc_prot = l_13_34.alloc_prot, prot = l_13_34.prot, state_type = l_13_34.state_type, flags = l_13_34.flags, heuristics = l_13_57}).StartAddr).size, start_bytes = l_13_16(l_13_9(l_13_21, l_13_67.StartAddr, 64, "Failed to read thread start code"))}
+                  (l_13_21.threads)[#l_13_21.threads + 1] = {ptid = l_13_70.PTID, creator_ptid = l_13_70.CreatorPTID, start_addr = l_13_70.StartAddr, region_prot = (l_13_60.StartAddr).prot, region_alloc_prot = (l_13_60.StartAddr).alloc_prot, region_state_type = (l_13_60.StartAddr).state_type, region_size = (l_13_60.StartAddr).size, start_bytes = l_13_16(l_13_9(l_13_21, l_13_70.StartAddr, 64, "Failed to read thread start code"))}
                   l_13_19 = l_13_19 + 1
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out DO_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC482: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC522: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end
@@ -1774,16 +1763,16 @@ error_log = {}
           end
         end
       end
-      -- DECOMPILER ERROR at PC484: Confused about usage of register: R28 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC524: Confused about usage of register: R28 in 'UnsetPending'
 
-      l_13_21.nThreads = l_13_62
+      l_13_21.nThreads = l_13_65
       l_13_21.nCollectedThreads = l_13_19
-      local l_13_70 = nil
+      local l_13_73 = nil
       do
-        local l_13_71 = nil
+        local l_13_74 = nil
         AppendToRollingQueue(l_13_1, "data", (MpCommon.Base64Encode)((MpCommon.JsonSerialize)(l_13_21)))
         do return 0 end
-        -- DECOMPILER ERROR at PC501: freeLocal<0 in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC541: freeLocal<0 in 'ReleaseLocals'
 
       end
     end
