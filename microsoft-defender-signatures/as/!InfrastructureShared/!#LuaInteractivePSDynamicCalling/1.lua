@@ -19,7 +19,7 @@ if l_0_2 == nil then
   return mp.CLEAN
 end
 local l_0_3 = (string.lower)(l_0_2.image_path)
-if not (string.find)(l_0_3, "explorer.exe", 1, true) and not not (string.find)(l_0_3, "windowsterminal.exe", 1, true) then
+if not (string.find)(l_0_3, "explorer.exe", 1, true) and not (string.find)(l_0_3, "windowsterminal.exe", 1, true) then
   return mp.CLEAN
 end
 local l_0_4 = (string.lower)(tostring(headerpage))
