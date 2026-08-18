@@ -11,10 +11,10 @@ do
   end
   if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
     local l_0_4 = (string.lower)((this_sigattrlog[2]).utf8p2)
-    if contains(l_0_4, {"install_acs_64.js"}) then
+    if contains(l_0_4, {"install_acs_64.js", "install_acs_64_allusers.js"}) then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC59: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC60: Confused about usage of register: R1 in 'UnsetPending'
 
     if l_0_4 == nil or (string.match)(l_0_4, "wscript.*%s+%\"?%\'?(%w:\\.*%.js)") ~= nil then
       local l_0_5 = nil

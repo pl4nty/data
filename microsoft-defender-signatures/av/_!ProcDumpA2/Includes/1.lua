@@ -17,35 +17,40 @@ if l_0_3 ~= l_0_1 then
   return mp.CLEAN
 end
 local l_0_4 = GetRollingQueueKeyValue(l_0_2, "sig_matched")
-local l_0_5 = 1
-local l_0_6 = 0
-local l_0_7 = GetRollingQueueKeyValue(l_0_2, "scan_count")
-if l_0_7 then
-  l_0_5 = l_0_7 + 1
-  local l_0_8 = GetRollingQueueKeyValue(l_0_2, "start_time_procdump_a")
-  local l_0_9 = l_0_0 - l_0_8
-  l_0_6 = l_0_9
-  if l_0_5 == 2 and l_0_9 < 10 then
+local l_0_5 = (GetRollingQueueKeyValue(l_0_2, "sig_context_json"))
+local l_0_6 = nil
+if l_0_5 then
+  l_0_6 = (MpCommon.JsonDeserialize)(l_0_5)
+end
+local l_0_7 = 1
+local l_0_8 = 0
+local l_0_9 = GetRollingQueueKeyValue(l_0_2, "scan_count")
+if l_0_9 then
+  l_0_7 = l_0_9 + 1
+  local l_0_10 = GetRollingQueueKeyValue(l_0_2, "start_time_procdump_a")
+  local l_0_11 = l_0_0 - l_0_10
+  l_0_8 = l_0_11
+  if l_0_7 == 2 and l_0_11 < 10 then
     return mp.CLEAN
   else
-    if l_0_5 >= 3 then
+    if l_0_7 >= 3 then
       return mp.CLEAN
     end
   end
 end
 do
-  AppendToRollingQueue(l_0_2, "scan_count", l_0_5, 250)
-  local l_0_10, l_0_11 = pcall(getScannedRegions, l_0_4, l_0_2, l_0_5, l_0_6)
-  local l_0_12 = ""
-  if l_0_10 then
-    l_0_12 = "success_" .. tostring(l_0_11)
+  AppendToRollingQueue(l_0_2, "scan_count", l_0_7, 250)
+  local l_0_12, l_0_13 = pcall(getScannedRegions, l_0_4, l_0_2, l_0_7, l_0_8, l_0_6)
+  local l_0_14 = ""
+  if l_0_12 then
+    l_0_14 = "success_" .. tostring(l_0_13)
   else
-    l_0_12 = "error_" .. tostring(l_0_11)
+    l_0_14 = "error_" .. tostring(l_0_13)
   end
-  AppendToRollingQueue(l_0_2, "error_log", l_0_12, 250)
-  local l_0_13 = "memRegionsMetadata_" .. l_0_5
+  AppendToRollingQueue(l_0_2, "error_log", l_0_14, 250)
+  local l_0_15 = "memRegionsMetadata_" .. l_0_7
   ;
-  (MpCommon.BmTriggerSig)(l_0_1, l_0_13, l_0_12)
+  (MpCommon.BmTriggerSig)(l_0_1, l_0_15, l_0_14)
   return mp.SUSPICIOUS
 end
 

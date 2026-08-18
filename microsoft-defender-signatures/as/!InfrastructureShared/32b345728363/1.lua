@@ -12,7 +12,7 @@ if not l_0_3 then
 end
 ;
 (bm.add_related_string)("memRegionsMetadataErrorLog", l_0_3, bm.RelatedStringBMReport)
-if l_0_2 then
+if l_0_2 and l_0_2 ~= "" then
   (bm.add_related_string)("memRegionsMetadata", l_0_2, bm.RelatedStringBMReport)
   AppendToRollingQueue(l_0_1, "data", "")
 end
