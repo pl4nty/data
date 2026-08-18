@@ -3,7 +3,9 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((Remediation.Threat).Name, "Bagz%.D") or (string.match)((Remediation.Threat).Name, "Bagz%.E") then
-  Infrastructure_FixHostsFile()
+if IsSenseRelatedProc() == true then
+  return mp.CLEAN
 end
+TrackPidAndTechniqueBM("BM", "T1562.001", "mptamper_av")
+return mp.INFECTED
 

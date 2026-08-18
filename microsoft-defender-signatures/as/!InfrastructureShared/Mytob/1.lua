@@ -3,7 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((Remediation.Threat).Name, "Mytob") then
-  Infrastructure_FixHostsFile()
+if (mp.getfilesize)() == 42496 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

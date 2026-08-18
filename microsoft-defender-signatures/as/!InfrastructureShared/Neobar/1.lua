@@ -3,18 +3,18 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Name == "BrowserModifier:Win32/Neobar" then
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Policies\\Microsoft\\Internet Explorer\\Infodelivery\\Restrictions")
-  if l_0_0 then
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      local l_0_6 = (sysio.RegOpenKey)(l_0_5)
-      if l_0_6 ~= nil then
-        (sysio.DeleteRegValue)(l_0_6, "UsePolicySearchProvidersOnly")
-      end
-    end
-  end
-  do
-    Infrastructure_CleanSearchByDisplayName("Gigabase")
+if (mp.get_contextdata)(mp.CONTEXT_DATA_HAS_MOTW_ADS) ~= true then
+  return mp.CLEAN
+end
+if (mp.GetMOTWZone)() < 3 then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.GetMOTWHostUrl)()
+if l_0_0 ~= nil then
+  l_0_0 = (string.lower)(l_0_0)
+  if (string.find)(l_0_0, ".sbs/lander/", 1, true) and (string.find)(l_0_0, "download.php", 1, true) then
+    return mp.INFECTED
   end
 end
+return mp.CLEAN
 

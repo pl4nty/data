@@ -3,20 +3,17 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Infrastructure_GetEnvironmentPath("%common_desktop%")
-local l_0_1 = Infrastructure_GetEnvironmentPath("%appdata%")
-local l_0_2 = Infrastructure_GetEnvironmentPath("%programs%")
-local l_0_3 = Infrastructure_GetEnvironmentPath("%common_programs%")
-if l_0_0 then
-  (MpDetection.ScanResource)("folder://" .. l_0_0)
+if (mp.getfilesize)() < 1048576 then
+  (mp.readprotection)(false)
+  local l_0_0 = (mp.readfile)(0, (mp.getfilesize)())
+  if l_0_0:find("TV[pq]QAA[IM]AAAAE") ~= 1 then
+    return mp.CLEAN
+  end
+  local l_0_1 = l_0_0:gsub("([A-Za-z0-9+/=]+)(|)", "%1")
+  ;
+  (mp.vfo_add_buffer)(l_0_1, "[B64Strpd]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 end
-if l_0_1 then
-  (MpDetection.ScanResource)("folder://" .. l_0_1 .. "\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar")
-end
-if l_0_2 then
-  (MpDetection.ScanResource)("folder://" .. l_0_2)
-end
-if l_0_3 then
-  (MpDetection.ScanResource)("folder://" .. l_0_3)
+do
+  return mp.CLEAN
 end
 

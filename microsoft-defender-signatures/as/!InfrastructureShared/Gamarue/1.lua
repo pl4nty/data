@@ -3,70 +3,225 @@
 
 -- params : ...
 -- function num : 0
-isgamformat = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (string.find)(l_1_0:reverse(), "\\", 1, true)
-  if l_1_1 == nil then
-    return false, nil
-  end
-  local l_1_2 = #l_1_0 - l_1_1
-  local l_1_3 = l_1_0:sub(l_1_2 + 2)
-  local l_1_4 = {}
-  l_1_4[".exe"] = ""
-  l_1_4[".cmd"] = ""
-  l_1_4[".bat"] = ""
-  l_1_4[".com"] = ""
-  l_1_4[".pif"] = ""
-  l_1_4[".scr"] = ""
-  local l_1_5 = {}
-  l_1_5.ms = ""
-  l_1_5.dx = ""
-  l_1_5.cc = ""
-  if l_1_5[l_1_3:sub(1, 2)] and l_1_4[l_1_3:sub(-4)] then
-    return true, l_1_3
-  end
-  return false, nil
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 204800 then
+  return mp.CLEAN
 end
-
-remgam = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  if l_2_0 then
-    local l_2_2 = (sysio.RegEnumValues)(l_2_0)
-    for l_2_6,l_2_7 in pairs(l_2_2) do
-      if (l_2_1 == true and l_2_7:find("^%d%d%d%d+$", 1, false)) or l_2_1 == false and l_2_7:find("Load", 1, true) then
-        local l_2_8 = (sysio.GetRegValueAsString)(l_2_0, l_2_7)
-        if l_2_8 ~= nil and l_2_8 ~= "" then
-          local l_2_9, l_2_10 = isgamformat(l_2_8)
-          if l_2_9 == true and l_2_10 ~= nil then
-            if l_2_1 == true then
-              (sysio.DeleteRegValue)(l_2_0, l_2_7)
+local l_0_1 = (pesecs[pehdr.NumberOfSections]).PointerToRawData + (pesecs[pehdr.NumberOfSections]).SizeOfRawData
+if l_0_0 - l_0_1 < 256 then
+  return mp.CLEAN
+end
+;
+(mp.readprotection)(false)
+local l_0_2 = (mp.readfile)(l_0_1, 256)
+if (string.find)(l_0_2, "      www.winzip.com\000\000\000-win32 -", 1, true) then
+  (mp.set_mpattribute)("LUA:WinZip_winsfx")
+  return mp.INFECTED
+else
+  if (string.find)(l_0_2, "PK\003\004", 1, true) then
+    (mp.set_mpattribute)("LUA:PKinOverlay_Installer")
+    return mp.INFECTED
+  else
+    if (string.find)(l_0_2, "MSCF\000", 1, true) then
+      (mp.set_mpattribute)("LUA:MSCFinOverlay_Installer")
+      return mp.INFECTED
+    else
+      if (string.find)(l_0_2, "ÐÏ\017à¡\177\026\225", 1, true) then
+        (mp.set_mpattribute)("LUA:OLEinOverlay_Installer")
+        return mp.INFECTED
+      else
+        if (string.find)(l_0_2, "/0\238\031^N\229\030", 1, true) then
+          (mp.set_mpattribute)("LUA:Advanced_Installer")
+          return mp.INFECTED
+        else
+          if (string.find)(l_0_2, "§‡\b\000", 1, true) == 1 then
+            (mp.set_mpattribute)("LUA:InstallFactory_Installer")
+            return mp.INFECTED
+          else
+            if (string.find)(l_0_2, "\213\019äè\001\000\000\000", 1, true) then
+              (mp.set_mpattribute)("LUA:Install4j_Installer")
+              return mp.INFECTED
             else
-              ;
-              (sysio.SetRegValueAsString)(l_2_0, "Load", "")
-            end
-            local l_2_11 = (MpCommon.ExpandEnvironmentVariables)("%allusersprofile%") .. "\\" .. l_2_10
-            if (sysio.IsFileExists)(l_2_11) then
-              (MpCommon.ReportLowfi)(l_2_11, 2852551133)
-              ;
-              (Remediation.BtrDeleteFile)(l_2_11)
-            end
-            l_2_11 = (MpCommon.ExpandEnvironmentVariables)("%allusersprofile%") .. "\\Local Settings\\Temp\\" .. l_2_10
-            if (sysio.IsFileExists)(l_2_11) then
-              (MpCommon.ReportLowfi)(l_2_11, 2852551133)
-              ;
-              (Remediation.BtrDeleteFile)(l_2_11)
-            end
-            l_2_11 = Infrastructure_GetEnvironmentPath("%appdata%") .. "\\" .. l_2_10
-            if (sysio.IsFileExists)(l_2_11) then
-              (MpCommon.ReportLowfi)(l_2_11, 2852551133)
-              ;
-              (Remediation.BtrDeleteFile)(l_2_11)
-            end
-            l_2_11 = Infrastructure_GetEnvironmentPath("%userprofile%") .. "\\AppData\\Local\\Temp\\" .. l_2_10
-            if (sysio.IsFileExists)(l_2_11) then
-              (MpCommon.ReportLowfi)(l_2_11, 2852551133)
-              ;
-              (Remediation.BtrDeleteFile)(l_2_11)
+              if (string.find)(l_0_2, "SPIS\026LH5", 5, true) then
+                (mp.set_mpattribute)("LUA:GPInstall_Installer")
+                return mp.INFECTED
+              else
+                if (string.find)(l_0_2, "ExcelsiorII1", 1, true) then
+                  (mp.set_mpattribute)("LUA:Excelsior_Installer")
+                  return mp.INFECTED
+                else
+                  if (string.find)(l_0_2, "ASWsetupFPkgFil3", 1, true) then
+                    (mp.set_mpattribute)("LUA:Avast_Installer")
+                    return mp.INFECTED
+                  else
+                    if (string.find)(l_0_2, ".eh_frame\000", 1, true) == 5 then
+                      (mp.set_mpattribute)("LUA:BitRock_Installer")
+                      return mp.INFECTED
+                    else
+                      if (string.find)(l_0_2, "\v\v¯¯\v\v\164", 1, true) == 1 then
+                        (mp.set_mpattribute)("LUA:AutoPlayMedia_Installer")
+                        return mp.INFECTED
+                      else
+                        if (string.find)(l_0_2, "$_BIM_CONFIG_START_$", 1, true) == 1 then
+                          (mp.set_mpattribute)("LUA:Bytessence_Installer")
+                          return mp.INFECTED
+                        else
+                          if (string.find)(l_0_2, "\'c\'c\018&\tu\019\024\001x", 1, true) == 1 then
+                            (mp.set_mpattribute)("LUA:ChaosSoftware_Installer")
+                            return mp.INFECTED
+                          else
+                            if (string.find)(l_0_2, "wwgT)", 1, true) == 1 then
+                              (mp.set_mpattribute)("LUA:ClickTeam_Installer")
+                              return mp.INFECTED
+                            else
+                              if (string.find)(l_0_2, "GRCSETUPINFORMATION", 1, true) == 5 then
+                                (mp.set_mpattribute)("LUA:Codegear_Installer")
+                                return mp.INFECTED
+                              else
+                                if (string.find)(l_0_2, "\002\006\n\004\005ýY", 1, true) == 1 then
+                                  (mp.set_mpattribute)("LUA:CreateInstall_Installer")
+                                  return mp.INFECTED
+                                else
+                                  if (string.find)(l_0_2, "aWAW", 1, true) == 1 then
+                                    (mp.set_mpattribute)("LUA:CreateInstall2_Installer")
+                                    return mp.INFECTED
+                                  else
+                                    if (string.find)(l_0_2, "CK16", 1, true) == 1 then
+                                      (mp.set_mpattribute)("LUA:CrypKey_Installer")
+                                      return mp.INFECTED
+                                    else
+                                      if (string.find)(l_0_2, "BZh91AY&SY", 1, true) == 1 then
+                                        (mp.set_mpattribute)("LUA:Spoon_Installer")
+                                        return mp.INFECTED
+                                      else
+                                        if (string.find)(l_0_2, "[metadata]", 1, true) == 1 then
+                                          (mp.set_mpattribute)("LUA:Distutils_Installer")
+                                          return mp.INFECTED
+                                        else
+                                          if (string.find)(l_0_2, "EPSF", 1, true) == 1 then
+                                            (mp.set_mpattribute)("LUA:Eschalon_Installer")
+                                            return mp.INFECTED
+                                          else
+                                            if (string.find)(l_0_2, "###FDMDATA###", 1, true) == 1 then
+                                              (mp.set_mpattribute)("LUA:FDM_Installer")
+                                              return mp.INFECTED
+                                            else
+                                              if (string.find)(l_0_2, "ÀÞÎË", 1, true) == 1 then
+                                                (mp.set_mpattribute)("LUA:Ghost_Installer")
+                                                return mp.INFECTED
+                                              else
+                                                if (string.find)(l_0_2, "½¦îéùíïíåí", 1, true) == 1 then
+                                                  (mp.set_mpattribute)("LUA:Hamrick_Installer")
+                                                  return mp.INFECTED
+                                                else
+                                                  if (string.find)(l_0_2, "XXataDfOnigeB", 1, true) == 1 then
+                                                    (mp.set_mpattribute)("LUA:ID_Media_Installer")
+                                                    return mp.INFECTED
+                                                  else
+                                                    if (string.find)(l_0_2, "*3\000\000\218\005\000\000þÁÍfn¼Ï\001þÁÍfn¼Ï\001\000", 1, true) == 1 then
+                                                      (mp.set_mpattribute)("LUA:IDM_Installer")
+                                                      return mp.INFECTED
+                                                    else
+                                                      if (string.find)(l_0_2, "stgc_hdr", 1, true) == 1 then
+                                                        (mp.set_mpattribute)("LUA:Intenium_Installer")
+                                                        return mp.INFECTED
+                                                      else
+                                                        if (string.find)(l_0_2, "TARTARTARTARTART", 1, true) == 1 then
+                                                          (mp.set_mpattribute)("LUA:MiKTeX_Installer")
+                                                          return mp.INFECTED
+                                                        else
+                                                          if (string.find)(l_0_2, "[(*|*)]MZ", 1, true) == 1 then
+                                                            (mp.set_mpattribute)("LUA:Mioplanet_Installer")
+                                                            return mp.INFECTED
+                                                          else
+                                                            if (string.find)(l_0_2, "wwwwI‡G\018", 1, true) == 1 then
+                                                              (mp.set_mpattribute)("LUA:MultimediaFusion_Installer")
+                                                              return mp.INFECTED
+                                                            else
+                                                              if (string.find)(l_0_2, "\151\003\000\000\002\001", 1, true) == 1 then
+                                                                (mp.set_mpattribute)("LUA:PantarayQSetup_Installer")
+                                                                return mp.INFECTED
+                                                              else
+                                                                if (string.find)(l_0_2, "7\a\000\000\002\001", 1, true) == 1 then
+                                                                  (mp.set_mpattribute)("LUA:PantarayQSetup2_Installer")
+                                                                  return mp.INFECTED
+                                                                else
+                                                                  if (string.find)(l_0_2, "PIMPFILE\000", 1, true) == 1 then
+                                                                    (mp.set_mpattribute)("LUA:PIMP_Installer")
+                                                                    return mp.INFECTED
+                                                                  else
+                                                                    if (string.find)(l_0_2, "ààááââããääååææçç", 1, true) == 1 then
+                                                                      (mp.set_mpattribute)("LUA:SetupFactory_Installer")
+                                                                      return mp.INFECTED
+                                                                    else
+                                                                      if (string.find)(l_0_2, "àáâãäå\230", 1, true) == 1 then
+                                                                        (mp.set_mpattribute)("LUA:SetupFactory2_Installer")
+                                                                        return mp.INFECTED
+                                                                      else
+                                                                        if (string.find)(l_0_2, "Smart Install Maker v", 1, true) then
+                                                                          (mp.set_mpattribute)("LUA:SmartInstallMaker_Installer")
+                                                                          return mp.INFECTED
+                                                                        else
+                                                                          if (string.find)(l_0_2, "UM\003\n\000", 1, true) == 1 then
+                                                                            (mp.set_mpattribute)("LUA:SonyWindows_Installer")
+                                                                            return mp.INFECTED
+                                                                          else
+                                                                            if (string.find)(l_0_2, "g\021R4\255M6B", 1, true) == 1 then
+                                                                              (mp.set_mpattribute)("LUA:Staticsup_Installer")
+                                                                              return mp.INFECTED
+                                                                            else
+                                                                              if (string.find)(l_0_2, "This is the end of the executable", 1, true) == 1 then
+                                                                                (mp.set_mpattribute)("LUA:SwiftView_Installer")
+                                                                                return mp.INFECTED
+                                                                              else
+                                                                                if (string.find)(l_0_2, "CINSTRT", 1, true) == 2 then
+                                                                                  (mp.set_mpattribute)("LUA:TrueCryptVeraCrypt_Installer")
+                                                                                  return mp.INFECTED
+                                                                                else
+                                                                                  if (string.find)(l_0_2, "ESIV", 1, true) == 1 then
+                                                                                    (mp.set_mpattribute)("LUA:Vise_Installer")
+                                                                                    return mp.INFECTED
+                                                                                  else
+                                                                                    local l_0_3 = (string.find)(l_0_2, "NOS_PO", 1, true)
+                                                                                    if l_0_3 ~= nil and l_0_3 <= 6 and l_0_3 >= 1 then
+                                                                                      (mp.set_mpattribute)("LUA:NOS_Installer")
+                                                                                      return mp.INFECTED
+                                                                                    end
+                                                                                  end
+                                                                                end
+                                                                              end
+                                                                            end
+                                                                          end
+                                                                        end
+                                                                      end
+                                                                    end
+                                                                  end
+                                                                end
+                                                              end
+                                                            end
+                                                          end
+                                                        end
+                                                      end
+                                                    end
+                                                  end
+                                                end
+                                              end
+                                            end
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
             end
           end
         end
@@ -74,180 +229,7 @@ remgam = function(l_2_0, l_2_1)
     end
   end
 end
-
-remplugin_added_registry = function()
-  -- function num : 0_2
-  local l_3_0 = (sysio.RegExpandUserKey)("HKCU\\Keyboard Layout")
-  if l_3_0 then
-    for l_3_4,l_3_5 in pairs(l_3_0) do
-      local l_3_6 = (sysio.RegOpenKey)(l_3_5)
-      if l_3_6 then
-        (sysio.DeleteRegValue)(l_3_6, "1")
-        ;
-        (sysio.DeleteRegValue)(l_3_6, "2")
-      end
-    end
-  end
-end
-
-remplug = function(l_4_0)
-  -- function num : 0_3
-  if l_4_0 then
-    local l_4_1 = (sysio.RegEnumValues)(l_4_0)
-    for l_4_5,l_4_6 in pairs(l_4_1) do
-      if l_4_6 ~= nil and l_4_6:find("^%d%d%d%d+$", 1, false) then
-        local l_4_7 = (sysio.GetRegValueAsString)(l_4_0, l_4_6)
-        if l_4_7 ~= nil and l_4_7 ~= "" then
-          (sysio.DeleteRegValue)(l_4_0, l_4_6)
-        end
-      end
-    end
-  end
-end
-
-remplugin_registry = function()
-  -- function num : 0_4
-  local l_5_0 = (sysio.RegOpenKey)("HKLM\\Software\\Microsoft\\Windows")
-  remplug(l_5_0)
-  local l_5_1 = (sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows")
-  if l_5_1 then
-    for l_5_5,l_5_6 in pairs(l_5_1) do
-      local l_5_7 = (sysio.RegOpenKey)(l_5_6)
-      remplug(l_5_7)
-    end
-  end
-end
-
-RemoveGamarueLnk = function(l_6_0)
-  -- function num : 0_5
-  if l_6_0:find("\\%w%.lnk$") == nil then
-    return 
-  end
-  local l_6_1 = (sysio.GetFileSize)(l_6_0)
-  if l_6_1 > 1024 or l_6_1 < 500 then
-    return 
-  end
-  local l_6_2 = (sysio.ReadFileRaw)(l_6_0, 0, l_6_1)
-  if l_6_2 == nil then
-    return 
-  end
-  local l_6_3 = (string.gsub)(l_6_2, "%z", "")
-  if l_6_3 == nil then
-    return 
-  end
-  do
-    if l_6_3:match("\\AppData\\Roaming\\(ii%w+%.exe)") == nil then
-      local l_6_4 = l_6_3:match("\\AppData\\Roaming\\(ob%w+%.exe)")
-    end
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R4 in 'UnsetPending'
-
-    if l_6_4 ~= nil then
-      local l_6_5 = nil
-      if l_6_0:match("^(%w:\\Users\\[^\\]+)\\") ~= nil then
-        local l_6_6 = nil
-        -- DECOMPILER ERROR at PC61: Confused about usage of register: R6 in 'UnsetPending'
-
-        if (sysio.IsFileExists)(l_6_0:match("^(%w:\\Users\\[^\\]+)\\") .. "\\AppData\\Roaming\\" .. l_6_5) then
-          (MpCommon.ReportLowfi)(l_6_0:match("^(%w:\\Users\\[^\\]+)\\") .. "\\AppData\\Roaming\\" .. l_6_5, 2852551133)
-          -- DECOMPILER ERROR at PC66: Confused about usage of register: R6 in 'UnsetPending'
-
-          ;
-          (Remediation.BtrDeleteFile)(l_6_0:match("^(%w:\\Users\\[^\\]+)\\") .. "\\AppData\\Roaming\\" .. l_6_5)
-        end
-        if (sysio.IsFileExists)(l_6_0) then
-          (MpCommon.ReportLowfi)(l_6_0, 2852551133)
-          ;
-          (Remediation.BtrDeleteFile)(l_6_0)
-        end
-      end
-    end
-  end
-end
-
-RemoveStartupLnk = function()
-  -- function num : 0_6
-  local l_7_0 = nil
-  local l_7_1 = nil
-  for l_7_5,l_7_6 in pairs((sysio.RegExpandUserKey)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders")) do
-    local l_7_2 = nil
-    -- DECOMPILER ERROR at PC10: Confused about usage of register: R6 in 'UnsetPending'
-
-    if (sysio.RegOpenKey)(R6_PC10) then
-      l_7_1 = (sysio.GetRegValueAsString)((sysio.RegOpenKey)(R6_PC10), "Startup")
-      if l_7_1 ~= nil and (sysio.IsFolderExists)(l_7_1) then
-        local l_7_8 = nil
-        for l_7_12,l_7_13 in pairs((sysio.FindFiles)(l_7_1, "*.lnk", 0)) do
-          local l_7_9 = nil
-          -- DECOMPILER ERROR at PC39: Confused about usage of register: R13 in 'UnsetPending'
-
-          RemoveGamarueLnk(R13_PC39)
-        end
-      end
-    end
-  end
-  -- DECOMPILER ERROR at PC45: Confused about usage of register R2 for local variables in 'ReleaseLocals'
-
-end
-
-RemoveFilesInRemDrives = function(l_8_0)
-  -- function num : 0_7
-  local l_8_1 = (sysio.FindFiles)(l_8_0, "*.lnk", 0)
-  local l_8_2 = false
-  for l_8_6,l_8_7 in pairs(l_8_1) do
-    if ((string.lower)(l_8_7)):find("%(%d+gb%)%.lnk") ~= nil and (sysio.IsFileExists)(l_8_7) then
-      l_8_2 = true
-      ;
-      (MpCommon.ReportLowfi)(l_8_7, 2852551133)
-      ;
-      (Remediation.BtrDeleteFile)(l_8_7)
-    end
-  end
-  local l_8_8 = l_8_0 .. "Â "
-  if l_8_2 and (sysio.IsFolderExists)(l_8_8) then
-    local l_8_9 = (sysio.FindFiles)(l_8_8, "*", 0)
-    for l_8_13,l_8_14 in pairs(l_8_9) do
-      if (sysio.IsFileExists)(l_8_14) then
-        (MpCommon.ReportLowfi)(l_8_14, 2852551133)
-        ;
-        (Remediation.BtrDeleteFile)(l_8_14)
-      end
-    end
-    ;
-    (Remediation.BtrDeleteFile)(l_8_8)
-  end
-end
-
-CleanRemovableDrives = function()
-  -- function num : 0_8
-  local l_9_0, l_9_1, l_9_2, l_9_3 = Infrastructure_GetAvailableDrives()
-  local l_9_4 = #l_9_1
-  if l_9_4 > 0 then
-    for l_9_8,l_9_9 in pairs(l_9_1) do
-      RemoveFilesInRemDrives(l_9_9)
-    end
-  end
-end
-
-if (Remediation.Threat).Active then
-  local l_0_0 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run")
-  remgam(l_0_0, true)
-  local l_0_1 = (sysio.RegExpandUserKey)("HKCU\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Windows")
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
-    remgam(l_0_7, false)
-  end
-  local l_0_8 = (sysio.RegExpandUserKey)("HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-  for l_0_12,l_0_13 in pairs(l_0_8) do
-    local l_0_14 = (sysio.RegOpenKey)(l_0_13)
-    remgam(l_0_14, true)
-  end
-  Infrastructure_EnableUAC()
-  Infrastructure_EnableTaskbarNotification()
-  Infrastructure_EnableActionCenterMessages()
-  Infrastructure_EnableTaskManager()
-  remplugin_registry()
-  remplugin_added_registry()
-  RemoveStartupLnk()
-  CleanRemovableDrives()
+do
+  return mp.CLEAN
 end
 

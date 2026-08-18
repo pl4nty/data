@@ -3,8 +3,9 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpDetection.GetCurrentThreat)()
-if l_0_0 and (string.find)(l_0_0.Name, "Behavior:Win32/WDBlockFirewallRule", 1, true) then
-  Infrastructure_ScanWDFirewallBlockRules()
+local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:PoCExchgGoSource")
+if #l_0_0 >= 2 then
+  (mp.set_mpattribute)("Lua:PoCExchgGoSourceFrags")
 end
+return mp.CLEAN
 

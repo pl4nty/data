@@ -3,58 +3,65 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tasks"
-  local l_1_2 = (sysio.RegOpenKey)(l_1_1)
-  local l_1_3 = false
-  if l_1_2 then
-    local l_1_4 = (sysio.RegEnumKeys)(l_1_2)
-    if l_1_4 then
-      for l_1_8,l_1_9 in ipairs(l_1_4) do
-        local l_1_10 = (sysio.RegOpenKey)(l_1_1 .. "\\" .. l_1_9)
-        if l_1_10 then
-          local l_1_11 = (sysio.GetRegValueAsString)(l_1_10, "Path")
-          if l_1_11 ~= nil then
-            local l_1_12 = (sysio.GetRegValueAsBinary)(l_1_10, "Actions")
-            if l_1_12 ~= nil then
-              l_1_12 = (string.lower)(l_1_12)
-              local l_1_13 = (string.gsub)(l_1_12, "%z", "")
-              if (l_1_13:find("wscript.exe", 1, true) or l_1_13:find("cscript.exe", 1, true)) and l_1_13:find(l_1_0, 1, true) then
-                Infrastructure_ReportScheduleTaskByTaskId(l_1_9, 805306757)
-                l_1_3 = true
-              end
-            end
+if (mp.GetResmgrBasePlugin)() ~= "Regkeyvalue" then
+  return mp.CLEAN
+end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = {}
+local l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Extensions")
+do
+  if l_0_2 then
+    local l_0_3 = (sysio.RegEnumValues)(l_0_2)
+    if l_0_3 then
+      l_0_1.Extensions_Perf_Count = #l_0_3
+    end
+  end
+  l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Extensions")
+  do
+    if l_0_2 then
+      local l_0_4 = (sysio.RegEnumValues)(l_0_2)
+      if l_0_4 then
+        l_0_1.Extensions_Policies_Count = #l_0_4
+      end
+    end
+    l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths")
+    do
+      if l_0_2 then
+        local l_0_5 = (sysio.RegEnumValues)(l_0_2)
+        if l_0_5 then
+          l_0_1.Paths_Perf_Count = #l_0_5
+        end
+      end
+      l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths")
+      do
+        if l_0_2 then
+          local l_0_6 = (sysio.RegEnumValues)(l_0_2)
+          if l_0_6 then
+            l_0_1.Paths_Policies_Count = #l_0_6
           end
         end
-      end
-    end
-  end
-  do
-    return l_1_3
-  end
-end
-
-if (Remediation.Threat).Name == "Behavior:Win32/Neoreblamy.SR" then
-  local l_0_1 = nil
-  for l_0_5,l_0_6 in ipairs((Remediation.Threat).Resources) do
-    if (l_0_6.Schema == "file" or l_0_6.Schema == "process") and l_0_6.Path ~= nil and l_0_6.Path ~= "" then
-      l_0_1 = (string.lower)(l_0_6.Path)
-      if #l_0_1 > 4 and (string.sub)(l_0_1, -4) == ".wsf" then
-        if (string.sub)(l_0_1, 1, 4) == "\\\\?\\" then
-          l_0_1 = (string.sub)(l_0_1, 5)
-        end
-        l_0_0(l_0_1)
-      end
-    end
-  end
-else
-  do
-    if (Remediation.Threat).Name == "Trojan:Win32/Neoreblamy" then
-      local l_0_7 = (MpCommon.GetPersistContextNoPath)("Trojan:Win32/Neoreblamy")
-      if l_0_7 then
-        for l_0_11,l_0_12 in ipairs(l_0_7) do
-          l_0_0(l_0_12)
+        l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Processes")
+        do
+          if l_0_2 then
+            local l_0_7 = (sysio.RegEnumValues)(l_0_2)
+            if l_0_7 then
+              l_0_1.Processes_Perf_Count = #l_0_7
+            end
+          end
+          l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Processes")
+          do
+            if l_0_2 then
+              local l_0_8 = (sysio.RegEnumValues)(l_0_2)
+              if l_0_8 then
+                l_0_1.Processes_Policies_Count = #l_0_8
+              end
+            end
+            set_research_data("ExclusionsCount", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_1)), false)
+            return mp.INFECTED
+          end
         end
       end
     end

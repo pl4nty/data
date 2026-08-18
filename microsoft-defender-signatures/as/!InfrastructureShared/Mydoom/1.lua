@@ -3,186 +3,235 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  local l_1_2 = (sysio.RegOpenKey)(l_1_0)
-  if l_1_2 then
-    (sysio.DeleteRegKey)(l_1_2, l_1_1)
-  end
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 == nil or l_0_0 == 0 or l_0_0 > 700 then
+  return mp.CLEAN
 end
-
-local l_0_1 = function(l_2_0, l_2_1)
-  -- function num : 0_1
-  local l_2_2 = (sysio.RegOpenKey)(l_2_0)
-  if l_2_2 then
-    (sysio.DeleteRegValue)(l_2_2, l_2_1)
+do
+  if not tostring(headerpage) then
+    local l_0_1, l_0_2 = tostring(footerpage)
   end
-end
+  -- DECOMPILER ERROR at PC20: Confused about usage of register: R1 in 'UnsetPending'
 
-local l_0_2 = function(l_3_0, l_3_1, l_3_2)
-  -- function num : 0_2
-  local l_3_3 = (sysio.RegOpenKey)(l_3_0)
-  if l_3_3 then
-    (sysio.SetRegValueAsString)(l_3_3, l_3_1, l_3_2)
+  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
+
+  if l_0_1 == nil or #l_0_1 == 0 then
+    return mp.CLEAN
   end
-end
+  -- DECOMPILER ERROR at PC30: Confused about usage of register: R1 in 'UnsetPending'
 
-if (string.match)((Remediation.Threat).Name, "Mydoom") then
-  l_0_0("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32", "Version")
-  l_0_0("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer", "ComDlg32")
-  l_0_0("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion", "Shell")
-  l_0_1("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\User Agent", "Version")
-  l_0_1("HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\User Agent", "Version")
-  l_0_0("HKLM\\Software\\Microsoft", "Daemon")
-  l_0_0("HKLM\\SOFTWARE\\Microsoft\\Internet Explorer", "Mshdfg")
-  l_0_0("HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer", "ShellSmash")
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
+  local l_0_3 = (mp.utf16to8)(l_0_1)
+  if #l_0_3 > 512 then
+    return mp.CLEAN
+  end
+  local l_0_4 = (string.lower)(l_0_3)
+  local l_0_5 = false
+  local l_0_6 = nil
+  local l_0_7, l_0_8 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+  if l_0_7 and type(l_0_8) == "string" and #l_0_8 > 0 then
+    l_0_6 = l_0_8
+    local l_0_9 = (string.lower)(l_0_8)
+    if (string.sub)(l_0_9, 1, 7) == "http://" or (string.sub)(l_0_9, 1, 8) == "https://" then
+      l_0_5 = true
     end
   end
-end
-)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32", "Version")
-  -- DECOMPILER ERROR at PC52: Confused about usage of register: R3 in 'UnsetPending'
+  do
+    local l_0_10 = {}
+    -- DECOMPILER ERROR at PC108: No list found for R7 , SetList fails
 
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
+    local l_0_11 = {}
+    -- DECOMPILER ERROR at PC110: Overwrote pending register: R9 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC111: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC112: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC113: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC114: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC115: Overwrote pending register: R14 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC116: Overwrote pending register: R15 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC117: Overwrote pending register: R16 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC118: Overwrote pending register: R17 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC119: Overwrote pending register: R18 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC120: Overwrote pending register: R19 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC121: Overwrote pending register: R20 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC122: Overwrote pending register: R21 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC123: No list found for R8 , SetList fails
+
+    local l_0_12 = {}
+    -- DECOMPILER ERROR at PC125: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC126: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC127: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC128: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC129: Overwrote pending register: R14 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC130: Overwrote pending register: R15 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC131: No list found for R9 , SetList fails
+
+    -- DECOMPILER ERROR at PC132: Overwrote pending register: R10 in 'AssignReg'
+
+    local l_0_13 = "regsvr32"
+    -- DECOMPILER ERROR at PC133: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC134: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC135: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC147: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC155: Overwrote pending register: R10 in 'AssignReg'
+
+    if ((not ("regsvr32.exe")("certutil", "certutil.exe") or contains(l_0_4, l_0_11)) and not contains(l_0_4, l_0_12)) or l_0_13 == 0 then
+      return mp.CLEAN
     end
-  end
-end
-)("HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\User Agent", "Version")
-  -- DECOMPILER ERROR at PC56: Confused about usage of register: R3 in 'UnsetPending'
+    local l_0_14 = {}
+    -- DECOMPILER ERROR at PC164: Overwrote pending register: R14 in 'AssignReg'
 
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
-    end
-  end
-end
-)("HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\5.0\\User Agent", "Version")
-  -- DECOMPILER ERROR at PC60: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC165: Overwrote pending register: R15 in 'AssignReg'
 
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
-    end
-  end
-end
-)("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion", "Shell")
-  -- DECOMPILER ERROR at PC64: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC166: Overwrote pending register: R16 in 'AssignReg'
 
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
-    end
-  end
-end
-)("HKCU\\SOFTWARE\\Microsoft\\Internet Explorer", "FuckedInst")
-  -- DECOMPILER ERROR at PC68: Confused about usage of register: R3 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC167: Overwrote pending register: R17 in 'AssignReg'
 
-  ;
-  (function(l_4_0, l_4_1)
-  -- function num : 0_3 , upvalues : l_0_0
-  local l_4_2 = (sysio.RegExpandUserKey)(l_4_0)
-  if l_4_2 then
-    for l_4_6,l_4_7 in pairs(l_4_2) do
-      l_0_0(l_4_7, l_4_1)
-    end
-  end
-end
-)("HKCU\\SOFTWARE\\Microsoft\\Internet Explorer", "InstaledFlashhMX")
-  l_0_2("HKLM\\Software\\Classes\\CLSID\\{E6FB5E20-DE35-11CF-9C87-00AA005127ED}\\InProcServer32", "", "webcheck.dll")
-  ;
-  (function(l_5_0, l_5_1, l_5_2)
-  -- function num : 0_4 , upvalues : l_0_2
-  local l_5_3 = (sysio.RegExpandUserKey)(l_5_0)
-  if l_5_3 then
-    for l_5_7,l_5_8 in pairs(l_5_3) do
-      l_0_2(l_5_8, l_5_1, l_5_2)
-    end
-  end
-end
-)("HKCU\\Software\\Classes\\CLSID\\{E6FB5E20-DE35-11CF-9C87-00AA005127ED}\\InProcServer32", "", "webcheck.dll")
-  -- DECOMPILER ERROR at PC82: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC168: Overwrote pending register: R18 in 'AssignReg'
 
-  ;
-  (function(l_5_0, l_5_1, l_5_2)
-  -- function num : 0_4 , upvalues : l_0_2
-  local l_5_3 = (sysio.RegExpandUserKey)(l_5_0)
-  if l_5_3 then
-    for l_5_7,l_5_8 in pairs(l_5_3) do
-      l_0_2(l_5_8, l_5_1, l_5_2)
-    end
-  end
-end
-)("HKCU\\Software\\Classes\\CLSID\\{35CEC8A3-2BE6-11D2-8773-92E220524153}\\InProcServer32", "", "stobject.dll")
-  l_0_2("HKLM\\Software\\Classes\\CLSID\\{35CEC8A3-2BE6-11D2-8773-92E220524153}\\InProcServer32", "", "stobject.dll")
-  -- DECOMPILER ERROR at PC92: Confused about usage of register: R4 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC169: Overwrote pending register: R19 in 'AssignReg'
 
-  ;
-  (function(l_5_0, l_5_1, l_5_2)
-  -- function num : 0_4 , upvalues : l_0_2
-  local l_5_3 = (sysio.RegExpandUserKey)(l_5_0)
-  if l_5_3 then
-    for l_5_7,l_5_8 in pairs(l_5_3) do
-      l_0_2(l_5_8, l_5_1, l_5_2)
-    end
-  end
-end
-)("HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon", "Shell", "Explorer.exe")
-  l_0_2("HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon", "Shell", "Explorer.exe")
-  local l_0_5 = nil
-  -- DECOMPILER ERROR at PC114: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC170: Overwrote pending register: R20 in 'AssignReg'
 
-  if (string.match)((Remediation.Threat).Name, "Mydoom%.[F-Z]") or (string.match)((Remediation.Threat).Name, "Mydoom%.[A-Z][A-Z]") then
-    (Remediation.SetRemovalPolicy)((crypto.bitor)((Remediation.Threat).RemovalPolicy, 4))
-  end
-  -- DECOMPILER ERROR at PC131: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC171: Overwrote pending register: R21 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC138: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC172: Overwrote pending register: R22 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC145: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC173: Overwrote pending register: R23 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC152: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC174: Overwrote pending register: R24 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC159: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC175: Overwrote pending register: R25 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC166: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC176: Overwrote pending register: R26 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC173: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC177: Overwrote pending register: R27 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC180: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC178: Overwrote pending register: R28 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC187: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC179: Overwrote pending register: R29 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC194: Confused about usage of register: R5 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC180: Overwrote pending register: R30 in 'AssignReg'
 
-  if (string.match)((Remediation.Threat).Name, "Mydoom%.AA") or (string.match)((Remediation.Threat).Name, "Mydoom%.AB") or (string.match)((Remediation.Threat).Name, "Mydoom%.AC") or (string.match)((Remediation.Threat).Name, "Mydoom%.AD") or (string.match)((Remediation.Threat).Name, "Mydoom%.AE") or (string.match)((Remediation.Threat).Name, "Mydoom%.AF") or (string.match)((Remediation.Threat).Name, "Mydoom%.AG") or (string.match)((Remediation.Threat).Name, "Mydoom%.AL") or (string.match)((Remediation.Threat).Name, "Mydoom%.BH") or (string.match)((Remediation.Threat).Name, "Mydoom%.AW") then
+    -- DECOMPILER ERROR at PC181: Overwrote pending register: R31 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC204: No list found for R11 , SetList fails
+
+    -- DECOMPILER ERROR at PC205: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC206: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC207: Overwrote pending register: R14 in 'AssignReg'
+
     do
-      Infrastructure_FixHostsFile()
-      -- DECOMPILER ERROR at PC201: freeLocal<0 in 'ReleaseLocals'
+      if not l_0_5 or not "|REMOTE" then
+        local l_0_15, l_0_16 = not ("invoke-expression")(" iex ", "bitsadmin") or ""
+      end
+      local l_0_17 = nil
+      local l_0_18 = set_research_data
+      -- DECOMPILER ERROR at PC219: Overwrote pending register: R15 in 'AssignReg'
 
+      local l_0_19 = "ClickFixRDia_SC"
+      -- DECOMPILER ERROR at PC220: Overwrote pending register: R16 in 'AssignReg'
+
+      local l_0_20 = "bitsadmin.exe"
+      -- DECOMPILER ERROR at PC221: Overwrote pending register: R17 in 'AssignReg'
+
+      local l_0_21 = "curl.exe"
+      -- DECOMPILER ERROR at PC222: Overwrote pending register: R18 in 'AssignReg'
+
+      local l_0_22 = "wmic"
+      -- DECOMPILER ERROR at PC223: Overwrote pending register: R19 in 'AssignReg'
+
+      local l_0_23 = "wmic.exe"
+      -- DECOMPILER ERROR at PC224: Overwrote pending register: R20 in 'AssignReg'
+
+      local l_0_24 = "installutil"
+      do
+        -- DECOMPILER ERROR at PC230: Overwrote pending register: R22 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC231: Overwrote pending register: R23 in 'AssignReg'
+
+        l_0_18(l_0_19, l_0_20, l_0_21)
+        -- DECOMPILER ERROR at PC237: Overwrote pending register: R13 in 'AssignReg'
+
+        do return l_0_18 end
+        local l_0_26 = nil
+        -- DECOMPILER ERROR at PC240: Overwrote pending register: R13 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC242: Overwrote pending register: R15 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC243: Overwrote pending register: R16 in 'AssignReg'
+
+        local l_0_27 = {l_0_18, "-noninteractive", l_0_20, l_0_21, "-wi h", "-wi 1", "-executionpolicy", "-useb", "-usebasicparsing", "start-process"}
+        for l_0_31,l_0_32 in ipairs(l_0_27) do
+          local l_0_28 = 0
+          -- DECOMPILER ERROR at PC259: Confused about usage of register: R18 in 'UnsetPending'
+
+        end
+        do
+          -- DECOMPILER ERROR at PC300: Unhandled construct in 'MakeBoolean' P3
+
+          if ((not (string.find)(l_0_4, "-wi 1", 1, true) or not (string.find)(l_0_4, "http://", 1, true)) and not (string.find)(l_0_4, "ftp://", 1, true)) or l_0_5 then
+            local l_0_33 = l_0_28 + 1 + 2
+            -- DECOMPILER ERROR at PC302: Overwrote pending register: R14 in 'AssignReg'
+
+            do
+              if not l_0_5 or not "|REMOTE" then
+                local l_0_34, l_0_35 = , l_0_13 >= 2 and 4 > l_0_33 or ""
+              end
+              local l_0_36 = nil
+              local l_0_37 = nil
+              local l_0_38 = set_research_data
+              local l_0_39 = "ClickFixRDia_SC"
+              local l_0_40 = "MED"
+              local l_0_41 = tostring(l_0_33)
+              local l_0_42 = l_0_37
+              local l_0_43 = "||T"
+              -- DECOMPILER ERROR at PC321: Overwrote pending register: R24 in 'AssignReg'
+
+              local l_0_44 = l_0_13
+              do
+                do
+                  -- DECOMPILER ERROR at PC327: Overwrote pending register: R26 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC328: Overwrote pending register: R27 in 'AssignReg'
+
+                  l_0_38(l_0_39, l_0_40, l_0_41)
+                  -- DECOMPILER ERROR at PC334: Overwrote pending register: R16 in 'AssignReg'
+
+                  do return l_0_38 end
+                  do return mp.CLEAN end
+                  -- DECOMPILER ERROR at PC339: freeLocal<0 in 'ReleaseLocals'
+
+                  -- WARNING: undefined locals caused missing assignments!
+                end
+              end
+            end
+          end
+        end
+      end
     end
   end
 end

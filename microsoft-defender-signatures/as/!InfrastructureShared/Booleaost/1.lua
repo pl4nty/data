@@ -3,28 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = 805306512
-local l_0_1 = (MpDetection.GetCurrentThreat)()
-for l_0_5,l_0_6 in pairs(l_0_1.Resources) do
-  if l_0_6.Schema == "file" and (crypto.bitand)(l_0_6.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
-    Infrastructure_DetectionReportFolder(l_0_0, l_0_6.Path, true)
-  end
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+  return mp.CLEAN
 end
-local l_0_7 = (sysio.ExpandFilePath)("%appdata%", true)
-if l_0_7 ~= nil then
-  local l_0_8 = ""
-  for l_0_12,l_0_13 in pairs(l_0_7) do
-    l_0_8 = l_0_13 .. "\\Microsoft\\Windows\\Start Menu\\Programs\\Boost My PC\\Boost My PC.lnk"
-    if (sysio.IsFileExists)(l_0_8) then
-      Infrastructure_DetectionReportFolder(l_0_0, l_0_8, true)
-    end
-  end
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
+  return mp.CLEAN
 end
-do
-  l_0_8 = Infrastructure_ReportSoftwareRegistryByKey
-  l_0_8(l_0_0, "Boost My PC")
-  l_0_8 = MpDetection
-  l_0_8 = l_0_8.ReportResource
-  l_0_8("regkey", "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\Boost My PC.exe", l_0_0, false)
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_1 == nil then
+  return mp.CLEAN
 end
+;
+(mp.set_mpattribute)("MpDisableCaching")
+local l_0_2 = {}
+;
+(table.insert)(l_0_2, l_0_0)
+;
+(MpCommon.SetPersistContextNoPath)("Lua:MSIL/Quiltran.D", l_0_2, 0)
+if l_0_0 ~= l_0_1 then
+  return mp.CLEAN
+end
+local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+if l_0_3 ~= nil then
+  (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_MED)
+end
+return mp.INFECTED
 

@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_ReportProductBulkExclusion(805306762)
-Infrastructure_CurrentThreatResourceScanFolder()
+TrackPidAndTechniqueBM("BM", "T1548.002", "uac_bypass_src")
+return mp.INFECTED
 

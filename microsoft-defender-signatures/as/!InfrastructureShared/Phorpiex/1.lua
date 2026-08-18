@@ -3,8 +3,8 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active then
-  Infrastructure_RemoveDefenderDAVASPolicyKey()
-  Infrastructure_RemoveDefenderDAVASPrefKey()
+if #(mp.enum_mpattributesubstring)("SCPT:GarconageB") >= 3 then
+  return mp.INFECTED
 end
+return mp.CLEAN
 

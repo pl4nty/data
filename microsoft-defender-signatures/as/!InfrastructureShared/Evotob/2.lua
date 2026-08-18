@@ -3,36 +3,49 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC8: No list found for R0 , SetList fails
-
-local l_0_1 = {}
--- DECOMPILER ERROR at PC10: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC11: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC12: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC13: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = Infrastructure_CheckMSEpresence()
--- DECOMPILER ERROR at PC22: Overwrote pending register: R3 in 'AssignReg'
-
-do
-  local l_0_3 = ("rundll32%.exe")()
-  -- DECOMPILER ERROR at PC26: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC27: Overwrote pending register: R5 in 'AssignReg'
-
-  if l_0_2 then
-    ("spoolsv%.exe")("explorer%.exe")
-  else
-    if l_0_3 then
-      FixTamperedExclusionRegEntries("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\")
-    end
-  end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 < 65536 then
+  return mp.CLEAN
 end
+;
+(mp.readprotection)(false)
+local l_0_1 = (mp.readfooter)(3328, 768)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = tostring(l_0_1)
+if l_0_2 == nil or l_0_2 == "" then
+  return mp.CLEAN
+end
+local l_0_3 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-ge %-?%d%d%d%d+%) %{")
+local l_0_4 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-le %-?%d%d%d%d+%) %{")
+local l_0_5 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-lt %-?%d%d%d%d+%) %{")
+local l_0_6 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-gt %-?%d%d%d%d+%) %{")
+local l_0_7 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-eq %-?%d%d%d%d+%) %{")
+local l_0_8 = (string.match)(l_0_2, "if %(%-?%d%d%d%d+ %-ne %-?%d%d%d%d+%) %{")
+if l_0_3 ~= nil and l_0_3 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+if l_0_4 ~= nil and l_0_4 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+if l_0_5 ~= nil and l_0_5 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+if l_0_6 ~= nil and l_0_6 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+if l_0_7 ~= nil and l_0_7 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+if l_0_8 ~= nil and l_0_8 ~= "" then
+  (mp.set_mpattribute)("Lua:PowerShell.Garbage.S001")
+  return mp.INFECTED
+end
+return mp.CLEAN
 
