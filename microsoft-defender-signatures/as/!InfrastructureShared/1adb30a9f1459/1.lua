@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\185b320f028a5\1.luac 
+-- Command line: lua\!InfrastructureShared\1adb30a9f1459\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,15 +12,15 @@ local l_0_0 = function(l_1_0)
 end
 
 do
-  if not l_0_0(this_sigattrlog[1]) and not l_0_0(this_sigattrlog[2]) and not l_0_0(this_sigattrlog[3]) and not l_0_0(this_sigattrlog[4]) and not l_0_0(this_sigattrlog[5]) and not l_0_0(this_sigattrlog[6]) and not l_0_0(this_sigattrlog[7]) and not l_0_0(this_sigattrlog[8]) and not l_0_0(this_sigattrlog[9]) and not l_0_0(this_sigattrlog[10]) then
-    local l_0_1, l_0_2 = l_0_0(this_sigattrlog[11])
+  if not l_0_0(this_sigattrlog[1]) and not l_0_0(this_sigattrlog[2]) and not l_0_0(this_sigattrlog[3]) and not l_0_0(this_sigattrlog[4]) and not l_0_0(this_sigattrlog[5]) and not l_0_0(this_sigattrlog[6]) and not l_0_0(this_sigattrlog[7]) and not l_0_0(this_sigattrlog[8]) and not l_0_0(this_sigattrlog[9]) and not l_0_0(this_sigattrlog[10]) and not l_0_0(this_sigattrlog[11]) then
+    local l_0_1, l_0_2 = l_0_0(this_sigattrlog[12])
   end
-  -- DECOMPILER ERROR at PC65: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC71: Confused about usage of register: R1 in 'UnsetPending'
 
   if l_0_1 == nil then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC73: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC79: Confused about usage of register: R1 in 'UnsetPending'
 
   local l_0_3 = nil
   if #(string.lower)(tostring(l_0_1.utf8p2)) < 32 or #(string.lower)(tostring(l_0_1.utf8p2)) > 259 then

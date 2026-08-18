@@ -15,7 +15,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
   if (string.find)(l_0_0, "\\\\tsclient\\", 1, true) or (string.find)(l_0_0, "d:\\", 1, true) or (string.find)(l_0_0, "claude.ai/install", 1, true) or (string.find)(l_0_0, "openclaw.ai/install", 1, true) or (string.find)(l_0_0, "runpscommand", 1, true) or (string.find)(l_0_0, "python/core/", 1, true) then
     return mp.CLEAN
   end
-  local l_0_1 = l_0_0
+  local l_0_1 = l_0_0:lower()
   local l_0_2 = ((mp.ContextualExpandEnvironmentVariables)(l_0_0)):lower()
   for l_0_6 = 1, 5 do
     if l_0_1 == l_0_2 then
@@ -30,6 +30,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_8 = #l_0_7 / 2
     local l_0_9 = (string.sub)(l_0_7, -l_0_8)
     local l_0_10 = l_0_7:gsub("\"", "")
+    l_0_10 = l_0_7:gsub("%%windir%%", "c:\\windows")
     local l_0_11, l_0_12 = (bm.get_process_relationships)()
     for l_0_16,l_0_17 in ipairs(l_0_12) do
       local l_0_18 = (mp.bitand)(l_0_17.reason_ex, bm.RELATIONSHIP_CREATED)
