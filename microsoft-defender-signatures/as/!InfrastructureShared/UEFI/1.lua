@@ -3,88 +3,65 @@
 
 -- params : ...
 -- function num : 0
-if (mp.bitand)((mp.readu_u16)(headerpage, 21), 1) ~= 1 then
-  return mp.CLEAN
-end
-local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -4))
-if l_0_0 ~= ".lnk" then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilesize)()
-if l_0_1 > 1000 then
-  return mp.CLEAN
-end
-if l_0_1 < 50 then
-  return mp.CLEAN
-end
-local l_0_2 = tostring(headerpage)
-local l_0_3 = (string.find)(l_0_2, "\005\000\000\160", l_0_1 - 50, true)
-if l_0_3 ~= nil then
-  local l_0_4 = headerpage[l_0_3 + 4]
-  local l_0_5 = {}
-  l_0_5[2] = true
-  l_0_5[5] = true
-  l_0_5[6] = true
-  l_0_5[7] = true
-  l_0_5[8] = true
-  l_0_5[9] = true
-  l_0_5[11] = true
-  l_0_5[13] = true
-  l_0_5[16] = true
-  l_0_5[19] = true
-  l_0_5[20] = true
-  l_0_5[21] = true
-  l_0_5[22] = true
-  l_0_5[23] = true
-  l_0_5[24] = true
-  l_0_5[25] = true
-  l_0_5[26] = true
-  l_0_5[27] = true
-  l_0_5[28] = true
-  l_0_5[31] = true
-  l_0_5[32] = true
-  l_0_5[33] = true
-  l_0_5[34] = true
-  l_0_5[35] = true
-  l_0_5[36] = true
-  l_0_5[37] = true
-  l_0_5[38] = true
-  l_0_5[39] = true
-  l_0_5[40] = true
-  l_0_5[43] = true
-  l_0_5[45] = true
-  l_0_5[46] = true
-  l_0_5[47] = true
-  l_0_5[53] = true
-  l_0_5[54] = true
-  l_0_5[55] = true
-  l_0_5[59] = true
-  if l_0_5[l_0_4] then
-    (mp.set_mpattribute)("LUA:Elenkay.SFID_Known")
-    return mp.CLEAN
+Infrastructure_FindEFISystemPartitions = function()
+  -- function num : 0_0
+  local l_1_0 = {}
+  local l_1_1 = "\\\\?\\HarddiskVolume%d\\EFI"
+  local l_1_2 = 10
+  for l_1_6 = 1, l_1_2 do
+    local l_1_7 = l_1_1:format(l_1_6)
+    if (sysio.IsFolderExists)(l_1_7) then
+      l_1_0[#l_1_0 + 1] = l_1_7
+    end
   end
-  ;
-  (mp.set_mpattribute)("LUA:Elenkay.SFID_Unkown")
-  local l_0_6 = 79
-  local l_0_7 = headerpage[l_0_3 + 8]
-  if l_0_1 < l_0_6 + l_0_7 then
-    return mp.CLEAN
+  return l_1_0
+end
+
+ScanEFIBootloaders = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1 = 2
+  local l_2_2 = (sysio.FindFiles)(l_2_0, "*.efi", l_2_1)
+  for l_2_6,l_2_7 in ipairs(l_2_2) do
+    (MpCommon.SetGlobalMpAttribute)("UefiLuaBootloaderScan")
+    ;
+    (MpDetection.ScanResource)("file://" .. l_2_7)
+    ;
+    (MpCommon.DeleteGlobalMpAttribute)("UefiLuaBootloaderScan")
   end
-  local l_0_8 = (mp.readu_u16)(headerpage, l_0_6 + l_0_7)
-  if l_0_8 > 1024 then
-    return mp.CLEAN
-  end
-  if l_0_1 < l_0_8 then
-    return mp.CLEAN
-  end
-  local l_0_9 = (string.sub)(l_0_2, l_0_7 + l_0_6, l_0_8)
-  l_0_9 = (string.gsub)(l_0_9, "%z", "")
-  local l_0_10 = (string.match)(l_0_9, "[[a-zA-Z]:]?[\\a-zA-Z0-9_.%-]+")
-  if l_0_10 ~= nil and (sysio.GetFileAttributes)(l_0_10) ~= 4294967295 then
-    return mp.INFECTED
+  local l_2_8 = (sysio.FindFiles)(l_2_0, "grub.cfg", l_2_1)
+  for l_2_12,l_2_13 in ipairs(l_2_8) do
+    (MpCommon.SetGlobalMpAttribute)("UefiLuaGrubCfgScan")
+    ;
+    (MpDetection.ScanResource)("file://" .. l_2_13)
+    ;
+    (MpCommon.DeleteGlobalMpAttribute)("UefiLuaGrubCfgScan")
   end
 end
-do
-  return mp.CLEAN
+
+Infrastructure_ScanEFISystemPartitions = function()
+  -- function num : 0_2
+  local l_3_0 = Infrastructure_FindEFISystemPartitions()
+  for l_3_4,l_3_5 in ipairs(l_3_0) do
+    ScanEFIBootloaders(l_3_5)
+  end
 end
+
+Infrastructure_ReportUEFIData = function()
+  -- function num : 0_3
+  local l_4_0 = GetRollingQueue("UEFIFirmwareHashList")
+  local l_4_1 = {}
+  if l_4_0 ~= nil and type(l_4_0) == "table" then
+    for l_4_5,l_4_6 in ipairs(l_4_0) do
+      if l_4_5 > 20 then
+        break
+      end
+      local l_4_7 = l_4_6.key
+      l_4_1[l_4_7] = l_4_6.value
+    end
+  end
+  do
+    AppendToRollingQueue("UEFIFirmwareHashListCachedData", "ReportUEFIData", safeJsonSerialize(l_4_1), 604800, 10)
+  end
+end
+
 

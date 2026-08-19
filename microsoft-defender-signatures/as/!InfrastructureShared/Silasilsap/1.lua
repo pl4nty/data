@@ -3,42 +3,27 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
-if l_0_0 ~= nil then
-  local l_0_1 = l_0_0.FileOriginalName
-  if l_0_1 == "CONHOST.EXE" then
-    return mp.CLEAN
-  end
-  if l_0_1 == "IEXPLORE.EXE" then
-    return mp.CLEAN
-  end
-  local l_0_2 = (mp.getfilesize)()
-  if l_0_2 > 3400000 and l_0_2 < 6400000 then
-    (mp.set_mpattribute)("Lua:RcsAgentSize")
-  end
-  local l_0_3 = l_0_0.CompanyName
-  if l_0_3 == "Adobe Inc." then
-    (mp.set_mpattribute)("Lua:SuspCompanySignedVmp.Adobe")
-    return mp.INFECTED
-  end
-  if l_0_3 == "Oracle Corporation" then
-    (mp.set_mpattribute)("Lua:SuspCompanySignedVmp.Oracle")
-    return mp.INFECTED
-  end
-  if l_0_3 == "Microsoft Corporation" then
-    (mp.set_mpattribute)("Lua:SuspCompanySignedVmp.MsftCorp")
-    return mp.INFECTED
-  end
-  if l_0_3 == "Zoom Video Communications, Inc." then
-    (mp.set_mpattribute)("Lua:SuspCompanySignedVmp.Zoom")
-    return mp.INFECTED
-  end
-  if l_0_3:find("Microsoft", 1, true) and l_0_3:find("Operating System", 1, true) then
-    (mp.set_mpattribute)("Lua:SuspCompanySignedVmp.MfstOs")
-    return mp.INFECTED
-  end
-end
+local l_0_0 = {}
+-- DECOMPILER ERROR at PC12: No list found for R0 , SetList fails
+
+-- DECOMPILER ERROR at PC13: Overwrote pending register: R1 in 'AssignReg'
+
+local l_0_1 = Infrastructure_CheckMSEpresence()
+-- DECOMPILER ERROR at PC20: Overwrote pending register: R2 in 'AssignReg'
+
 do
-  return mp.CLEAN
+  local l_0_2 = ("p1%.exe")()
+  -- DECOMPILER ERROR at PC24: Overwrote pending register: R3 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC25: Overwrote pending register: R4 in 'AssignReg'
+
+  if l_0_1 then
+    ("p2%.exe")("p3%.exe")
+  else
+    if l_0_2 then
+      FixTamperedExclusionRegEntries("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\")
+    end
+  end
+  -- WARNING: undefined locals caused missing assignments!
 end
 

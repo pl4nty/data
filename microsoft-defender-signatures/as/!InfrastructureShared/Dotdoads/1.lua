@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-(mp.set_mpattribute)("Lua:MsilMpAttributeML")
-return mp.CLEAN
+Infrastructure_RestoreIEProxyToAutoDetect()
+Infrastructure_EnableIEProxySettings()
 

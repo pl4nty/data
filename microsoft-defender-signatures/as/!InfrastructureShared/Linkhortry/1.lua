@@ -3,20 +3,12 @@
 
 -- params : ...
 -- function num : 0
-(mp.readprotection)(false)
-local l_0_0 = (mp.get_parent_filehandle)()
-if l_0_0 == nil then
-  return mp.CLEAN
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+if l_0_0.Name == "BrowserModifier:Win32/Linkhortry" then
+  for l_0_4,l_0_5 in pairs(l_0_0.Resources) do
+    if l_0_5.Schema == "file" and (crypto.bitand)(l_0_5.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+      Infrastructure_DetectionReportFolder(805306496, l_0_5.Path, true)
+    end
+  end
 end
-local l_0_1 = (mp.get_filesize_by_handle)(l_0_0)
-if l_0_1 > 500000 then
-  return mp.CLEAN
-end
-if l_0_1 < 8192 then
-  return mp.CLEAN
-end
-local l_0_2 = (mp.readfile_by_handle)(l_0_0, 4096, 4096)
-;
-(mp.vfo_add_buffer)(l_0_2, "[pdfwithjsarray]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-return mp.CLEAN
 

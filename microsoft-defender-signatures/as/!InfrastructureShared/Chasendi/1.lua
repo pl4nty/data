@@ -3,26 +3,13 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_mpattributevalue)("RPF:Jampa:Probability")
-do
-  do
-    if l_0_0 ~= nil and l_0_0 >= 70 and l_0_0 <= 100 then
-      local l_0_1 = {}
-      -- DECOMPILER ERROR at PC16: No list found for R1 , SetList fails
-
-      -- DECOMPILER ERROR at PC17: Overwrote pending register: R2 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC18: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC19: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC20: Overwrote pending register: R5 in 'AssignReg'
-
-      ;
-      (99)(95, 90, 80)
-    end
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
+local l_0_0 = (sysio.RegOpenKey)("HKLM\\SYSTEM\\CurrentControlSet\\services\\Tcpip\\Parameters")
+if l_0_0 then
+  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "DhcpNameServer")
+  if l_0_1 and (string.find)(l_0_1, "82.163.143.", 1, true) then
+    Infrastructure_ClearALLDNS()
+    ;
+    (Remediation.SetRebootRequired)()
   end
 end
 

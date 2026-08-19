@@ -3,15 +3,10 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCRT:5351.CornFlake")
-if #l_0_0 >= 3 then
-  (mp.set_mpattribute)("Lua:CornFlake.BS1")
-  return mp.INFECTED
-else
-  if #l_0_0 == 2 then
-    (mp.set_mpattribute)("Lua:CornFlake.MS1")
-    return mp.CLEAN
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+for l_0_4,l_0_5 in pairs(l_0_0.Resources) do
+  if l_0_5.Schema == "file" and (crypto.bitand)(l_0_5.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+    Infrastructure_DetectionReportFolder(805306489, l_0_5.Path, true)
   end
 end
-return mp.CLEAN
 

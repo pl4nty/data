@@ -3,42 +3,57 @@
 
 -- params : ...
 -- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 <= 300 or l_0_0 > 500000 then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)))
-local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-if l_0_1 == nil or l_0_2 == nil then
-  return mp.CLEAN
-end
-if IsInternetCache(l_0_1) == true or IsLowConfNPath(l_0_1) == true then
-  return mp.CLEAN
-end
-if l_0_1:find("\\program files\\", 1, true) or l_0_1:find("\\clientaccess\\owa\\prem\\", 1, true) or l_0_1:find(":\\windows\\", 1, true) or l_0_1:find(":\\program files (x86)\\", 1, true) or l_0_1:find("\\google\\chrome\\user data\\default\\extensions\\", 1, true) or l_0_1:find("\\google\\chrome\\user data\\profile", 1, true) or l_0_1:find("\\device\\harddiskvolume", 1, true) or l_0_1:find(":\\inetpub\\", 1, true) or l_0_1:find("\\netlogon\\", 1, true) or l_0_1:find(":\\programdata\\microsoft\\grouppolicy\\users\\", 1, true) or l_0_1:find("\\mozilla\\firefox\\profiles\\", 1, true) or l_0_1:find("\\programdata\\lenovo\\userguide", 1, true) or l_0_1:find("\\google\\chrome\\user data\\default\\extensions", 1, true) or l_0_1:find("\\appdata\\roaming\\aida\\", 1, true) then
-  return mp.CLEAN
-end
-if (string.find)(l_0_1, "^\\\\[^\\]+\\") then
-  return mp.CLEAN
-end
-if l_0_2:find("support_menu.vbs", 1, true) or l_0_1:find("bku_plus_connect.vbs", 1, true) or l_0_1:find("replaceagent.vbs", 1, true) or l_0_1:find("install.vbs", 1, true) or l_0_1:find("setdefaultappbyprotocol.vbs", 1, true) or l_0_1:find("gis-admin_cfg_", 1, true) or l_0_1:find("mk_inventory.vbs", 1, true) then
-  return mp.CLEAN
-end
-local l_0_3 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)):lower()
-if l_0_3 ~= nil then
-  local l_0_4 = l_0_3:match("[^\\]+$")
-  local l_0_5 = {}
-  l_0_5["wscript.exe"] = ""
-  l_0_5["cscript.exe"] = ""
-  l_0_5["explorer.exe"] = ""
-  if l_0_4 ~= nil and l_0_5[l_0_4] then
-    return mp.INFECTED
+local l_0_0 = function(l_1_0)
+  -- function num : 0_0
+  if l_1_0 == nil then
+    return 
+  end
+  local l_1_1, l_1_2, l_1_3, l_1_4 = Infrastructure_SplitThreatPath(l_1_0)
+  if l_1_1 ~= nil and l_1_2 ~= nil and l_1_3 ~= nil then
+    l_1_1 = (string.gsub)(l_1_1, "^\\\\%?\\", "")
+    l_1_1 = (string.lower)(l_1_1)
+    l_1_3 = (string.lower)(l_1_3)
+    if (string.sub)(l_1_1, 2, 16) == ":\\program files" and (string.sub)(l_1_3, 1, 6) == "update" and (string.sub)(l_1_3, -4) == ".exe" and (string.len)(l_1_3) > 10 then
+      local l_1_5 = (string.sub)(l_1_3, 7, -5)
+      local l_1_6 = (string.lower)((string.gsub)(l_1_2, " ", ""))
+      if l_1_6 == l_1_5 and (string.len)(l_1_6) > 0 and l_1_2 ~= nil and (string.len)(l_1_2) > 0 then
+        local l_1_7 = (sysio.FindFiles)(l_1_1, "*.dll", -1)
+        for l_1_11,l_1_12 in pairs(l_1_7) do
+          (MpDetection.ScanResource)("file://" .. l_1_12)
+        end
+        local l_1_13 = (sysio.FindFiles)(l_1_1, "*.exe", -1)
+        for l_1_17,l_1_18 in pairs(l_1_13) do
+          (MpDetection.ScanResource)("file://" .. l_1_18)
+        end
+        local l_1_19 = 805306497
+        Infrastructure_DetectionReportFolder(l_1_19, l_1_0, true)
+        Infrastructure_ReportBHOByName(l_1_19, l_1_2)
+        Infrastructure_ReportSoftwareRegistryByKey(l_1_19, l_1_2)
+        Infrastructure_ReportUninstallRegistryByKey(l_1_19, l_1_2)
+      end
+    end
   end
 end
-do
-  return mp.CLEAN
+
+local l_0_1 = function(l_2_0)
+  -- function num : 0_1
+  if l_2_0 == nil then
+    return 
+  end
+  l_2_0 = (string.gsub)((string.lower)(l_2_0), "^\\\\%?\\", "")
+  if (string.match)(l_2_0, "%a:\\program files\\[%a%s]+\\uninstaller.exe") or (string.match)(l_2_0, "%a:\\programdata\\%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x\\") or (string.match)(l_2_0, "%a:\\program files.*\\common files\\%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x\\") then
+    local l_2_1 = 805306497
+    Infrastructure_DetectionReportFolder(l_2_1, l_2_0, true)
+  end
+end
+
+local l_0_2 = (MpDetection.GetCurrentThreat)()
+if (string.find)(l_0_2.Name, "BrowserModifier:Win32/Foxiebro", 1, true) then
+  for l_0_6,l_0_7 in pairs(l_0_2.Resources) do
+    if l_0_7.Schema == "file" and (crypto.bitand)(l_0_7.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+      l_0_0(l_0_7.Path)
+      l_0_1(l_0_7.Path)
+    end
+  end
 end
 

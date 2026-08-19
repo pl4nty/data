@@ -3,33 +3,77 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 271360 and l_0_0 <= 2170880 then
-  (mp.set_mpattribute)("Lua:PST.Has.ASPXExt.InInterestingA")
-end
-local l_0_1 = (string.lower)((MpCommon.PathToWin32Path)((mp.getfilename)(mp.FILEPATH_QUERY_FULL)))
-if (string.find)(l_0_1, "\\microsoft\\exchange server\\v%d%d\\frontend\\") ~= nil or (string.find)(l_0_1, "\\frontend\\httpproxy\\owa\\", 1, true) ~= nil or (string.find)(l_0_1, "\\inetpub\\wwwroot\\", 1, true) ~= nil or (string.find)(l_0_1, "\\microsoft\\exchange server\\v%d%d\\clientaccess\\") ~= nil then
-  (mp.set_mpattribute)("Lua:PST.SuspPath")
-end
-if l_0_0 ~= 271360 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile)(20480, 65536)
-local l_0_3 = (string.lower)(tostring(l_0_2))
-if (string.find)(l_0_3, "script language=", 1, true) == nil and (string.find)(l_0_3, "page language=", 1, true) == nil then
-  return mp.CLEAN
-end
-if (string.find)(l_0_3, "uploadfile", 1, true) ~= nil or (string.find)(l_0_3, "eval", 1, true) ~= nil or (string.find)(l_0_3, "exec_code", 1, true) ~= nil then
-  (mp.set_mpattribute)("Lua:Shell_CVE-2021-31207")
-else
-  if (string.find)(l_0_3, "jscript", 1, true) ~= nil or (string.find)(l_0_3, "\"c#\"", 1, true) ~= nil or (string.find)(l_0_3, "server", 1, true) ~= nil then
-    (mp.set_mpattribute)("Lua:Suspicious.CVE-2021-31207")
-    if (string.find)(l_0_3, "powershell", 1, true) ~= nil or (string.find)(l_0_3, "page_load", 1, true) ~= nil or (string.find)(l_0_3, "scriptText", 1, true) ~= nil then
-      (mp.set_mpattribute)("Lua:PowerShell_CVE-2021-31207")
+local l_0_0 = function(l_1_0, l_1_1)
+  -- function num : 0_0
+  if l_1_1 == nil or l_1_0 == nil then
+    return 
+  end
+  l_1_1 = (string.gsub)((string.lower)(l_1_1), "^\\\\%?\\", "")
+  if (string.match)(l_1_1, "%a:\\program files\\.*\\.*%.exe") then
+    Infrastructure_DetectionReportFolder(l_1_0, l_1_1, true)
+    local l_1_2, l_1_3, l_1_6, l_1_7, l_1_9, l_1_10 = Infrastructure_SplitThreatPath(l_1_1)
+    if l_1_3 ~= nil then
+      return l_1_3
+    end
+  end
+  do
+    local l_1_4 = string.match
+    local l_1_5 = l_1_1
+    l_1_4 = l_1_4(l_1_5, "\\appdata\\roaming\\.*\\.*%.exe")
+    if l_1_4 then
+      l_1_4 = Infrastructure_DetectionReportFolder
+      l_1_5 = l_1_0
+      local l_1_8 = l_1_1
+      l_1_4(l_1_5, l_1_8, true)
+    end
+    do
+      l_1_4 = nil
+      return l_1_4
     end
   end
 end
-return mp.CLEAN
+
+local l_0_1 = {}
+l_0_1["Advancedpccare.com"] = 1
+local l_0_2 = 805306515
+local l_0_3 = (MpDetection.GetCurrentThreat)()
+for l_0_7,l_0_8 in pairs(l_0_3.Resources) do
+  if l_0_8.Schema == "file" and (crypto.bitand)(l_0_8.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+    local l_0_9 = l_0_0(l_0_2, l_0_8.Path)
+    if l_0_9 then
+      l_0_1[l_0_9] = 1
+    end
+  end
+end
+for l_0_13,l_0_14 in pairs(l_0_1) do
+  Infrastructure_ReportSoftwareRegistryByKey(l_0_2, l_0_13)
+  local l_0_15 = (MpCommon.ExpandEnvironmentVariables)("%ALLUSERSPROFILE%")
+  local l_0_16 = l_0_15 .. "\\" .. l_0_13 .. "\\"
+  if (sysio.IsFolderExists)(l_0_16) then
+    Infrastructure_DetectionReportFolder(l_0_2, l_0_16, false)
+  end
+  local l_0_17 = l_0_15 .. "\\Microsoft\\Windows\\Start Menu\\Programs\\" .. l_0_13 .. "\\"
+  if (sysio.IsFolderExists)(l_0_17) then
+    Infrastructure_DetectionReportFolder(l_0_2, l_0_17, false)
+  end
+  l_0_17 = l_0_15 .. "\\Start Menu\\Programs\\" .. l_0_13 .. "\\"
+  if (sysio.IsFolderExists)(l_0_17) then
+    Infrastructure_DetectionReportFolder(l_0_2, l_0_17, false)
+  end
+  local l_0_18 = (sysio.ExpandFilePath)("%APPDATA%", true)
+  if l_0_18 ~= nil then
+    for l_0_22,l_0_23 in pairs(l_0_18) do
+      local l_0_24 = l_0_23 .. "\\" .. l_0_13 .. "\\"
+      if (sysio.IsFolderExists)(l_0_24) then
+        Infrastructure_DetectionReportFolder(l_0_2, l_0_24, true)
+      end
+    end
+  end
+end
+Infrastructure_ReportSoftwareRegistryByKey(l_0_2, "asc-pr")
+Infrastructure_ReportSoftwareRegistryByKey(l_0_2, "ssc-pr")
+Infrastructure_ReportSoftwareRegistryByKey(l_0_2, "pcsp-pr")
+Infrastructure_ReportSoftwareRegistryByKey(l_0_2, "pcv-vars")
+-- DECOMPILER ERROR at PC140: Confused about usage of register R7 for local variables in 'ReleaseLocals'
+
 

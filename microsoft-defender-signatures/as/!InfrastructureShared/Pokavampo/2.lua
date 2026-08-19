@@ -3,26 +3,54 @@
 
 -- params : ...
 -- function num : 0
-if not (mp.get_mpattribute)("MpContentDetected") and not (mp.get_mpattributesubstring)("Detection:Trojan:Win") and not (mp.get_mpattributesubstring)("Detection:HackTool:Win") and not (mp.get_mpattributesubstring)("Detection:RemoteAccess:Win") then
-  return mp.CLEAN
-end
-local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
-if (string.sub)(l_0_0, 0, 4) == "\\\\?\\" then
-  l_0_0 = (string.sub)(l_0_0, 5)
-end
-if l_0_0:sub(1, 8) == "\\device\\" then
-  l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
-  if l_0_0 == nil then
-    return mp.CLEAN
+local l_0_0 = (MpDetection.GetCurrentThreat)()
+if l_0_0.Name == "SoftwareBundler:Win32/Pokavampo" then
+  for l_0_4,l_0_5 in pairs(l_0_0.Resources) do
+    if l_0_5.Schema == "file" and (crypto.bitand)(l_0_5.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+      Infrastructure_DetectionReportUninstallEntriesFromFolder(805306499, l_0_5.Path)
+      Infrastructure_DetectionReportFolder(805306499, l_0_5.Path, true)
+      local l_0_6 = Infrastructure_GetEnvironmentPath("%common_appdata%")
+      if l_0_6 then
+        (MpDetection.ScanResource)("folder://" .. l_0_6 .. "\\Microsoft\\Network\\Dsq\\network")
+      end
+      local l_0_7 = (MpCommon.ExpandEnvironmentVariables)("%program_files%")
+      if l_0_7 then
+        local l_0_8 = (sysio.FindFolders)(l_0_7, "*-*-*", 0)
+        for l_0_12,l_0_13 in pairs(l_0_8) do
+          (MpDetection.ScanResource)("folder://" .. l_0_13)
+        end
+      end
+      do
+        l_0_8 = MpCommon
+        l_0_8 = l_0_8.ExpandEnvironmentVariables
+        l_0_8 = l_0_8("%program_filesx86%")
+        local l_0_14 = nil
+        if l_0_8 then
+          l_0_14 = sysio
+          l_0_14 = l_0_14.FindFolders
+          l_0_14 = l_0_14(l_0_8, "*-*-*", 0)
+          local l_0_15 = nil
+          l_0_15 = pairs
+          l_0_15 = l_0_15(l_0_14)
+          for l_0_19,l_0_20 in l_0_15 do
+            local l_0_20 = nil
+            l_0_20 = MpDetection
+            l_0_20 = l_0_20.ScanResource
+            l_0_20("folder://" .. l_0_19)
+          end
+        end
+        do
+          -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out DO_STMT
+
+          -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+          -- DECOMPILER ERROR at PC92: LeaveBlock: unexpected jumping out IF_STMT
+
+        end
+      end
+    end
   end
-  l_0_0 = (string.lower)(l_0_0)
+  -- DECOMPILER ERROR at PC94: Confused about usage of register R5 for local variables in 'ReleaseLocals'
+
 end
-if not (string.find)(l_0_0, "^c:\\windows\\%w+%.exe$") then
-  return mp.CLEAN
-end
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewWrittenBySystemProcessDetected")
-if not l_0_1 then
-  (MpCommon.AppendPersistContext)(l_0_0, "NewWrittenBySystemProcessDetected", 5)
-end
-return mp.INFECTED
 

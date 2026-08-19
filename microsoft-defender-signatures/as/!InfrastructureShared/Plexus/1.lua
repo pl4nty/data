@@ -3,8 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (mp.UfsGetMetadataBool)("Lua:FileInRar", true) ~= 0 or not "Lua:FileInRar" then
-  return mp.CLEAN
+if (string.match)((Remediation.Threat).Name, "Plexus") then
+  Infrastructure_FixHostsFile()
 end
-return mp.INFECTED
 

@@ -3,71 +3,68 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
-if not l_0_0 then
-  return mp.CLEAN
-end
-l_0_0 = (string.lower)(l_0_0)
-if not (string.find)(l_0_0, "\\software\\microsoft\\asrfix", 1, true) then
-  return mp.CLEAN
-end
-local l_0_1 = (string.sub)(l_0_0, 1, 4)
-local l_0_2 = (sysio.RegOpenKey)(l_0_0)
-if l_0_2 then
-  local l_0_3 = (sysio.GetRegValueAsDword)(l_0_2, "scriptresult")
-  local l_0_4 = (sysio.GetRegValueAsDword)(l_0_2, "hklmfailure")
-  local l_0_5 = (sysio.GetRegValueAsDword)(l_0_2, "hklmsuccess")
-  local l_0_6 = (sysio.GetRegValueAsDword)(l_0_2, "hkuappfailure")
-  local l_0_7 = (sysio.GetRegValueAsDword)(l_0_2, "hkuappsuccess")
-  local l_0_8 = (sysio.GetRegValueAsDword)(l_0_2, "numlinksfound")
-  local l_0_9 = (sysio.GetRegValueAsString)(l_0_2, "scripterror")
-  local l_0_10 = (sysio.GetRegValueAsString)(l_0_2, "timestamp")
-  local l_0_11 = (sysio.GetRegValueAsDword)(l_0_2, "version")
-  if l_0_3 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=scriptresult=%d", l_0_3))
-  end
-  if l_0_4 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=hklmfailure=%d", l_0_4))
-  end
-  if l_0_5 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=hklmsuccess=%d", l_0_5))
-  end
-  if l_0_6 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=hkuappfailure=%d", l_0_6))
-  end
-  if l_0_7 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=hkuappsuccess=%d", l_0_7))
-  end
-  if l_0_8 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=numlinksfound=%d", l_0_8))
-  end
-  if l_0_9 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=scripterror=%s", l_0_9))
-  end
-  if l_0_10 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=timestamp=%s", l_0_10))
-  end
-  if l_0_11 then
-    (mp.set_mpattribute)((string.format)("MpInternal_researchdata=version=%d", l_0_11))
-  end
-  if l_0_1 == "hkcu" then
-    local l_0_12 = (sysio.GetRegValueAsDword)(l_0_2, "mprecovertoolexecstatus")
-    local l_0_13 = (sysio.GetRegValueAsDword)(l_0_2, "mprecoversuccesscount")
-    local l_0_14 = (sysio.GetRegValueAsString)(l_0_2, "mptaskbarrecoverversion")
-    if l_0_12 then
-      (mp.set_mpattribute)((string.format)("MpInternal_researchdata=mprecovertoolexecstatus=%d", l_0_12))
+local l_0_0 = 805306494
+SuweezyReportExclusionLatents(l_0_0)
+local l_0_1, l_0_2 = nil, nil
+local l_0_3 = (MpDetection.GetCurrentThreat)()
+for l_0_7,l_0_8 in pairs(l_0_3.Resources) do
+  if l_0_8.Schema == "file" and (crypto.bitand)(l_0_8.Type, MpCommon.MPRESOURCE_TYPE_CONCRETE) == MpCommon.MPRESOURCE_TYPE_CONCRETE then
+    local l_0_9, l_0_10, l_0_11, l_0_12 = Infrastructure_SplitThreatPath(l_0_8.Path)
+    if l_0_12 == "dll" or l_0_12 == "exe" then
+      Infrastructure_DetectionReportFolder(l_0_0, l_0_8.Path, true)
+      if (string.sub)((string.lower)(l_0_8.Path), -18) == "qqbrowserframe.dll" then
+        l_0_1 = l_0_8.Path
+      end
+      if (string.sub)((string.lower)(l_0_8.Path), -10) == "update.dll" then
+        l_0_2 = l_0_8.Path
+      end
     end
-    if l_0_12 then
-      (mp.set_mpattribute)((string.format)("MpInternal_researchdata=mprecoversuccesscount=%d", l_0_13))
-    end
-    if l_0_12 then
-      (mp.set_mpattribute)((string.format)("MpInternal_researchdata=mptaskbarrecoverversion=%s", l_0_14))
+  end
+end
+do
+  if l_0_1 ~= nil then
+    local l_0_13, l_0_14, l_0_15, l_0_16 = Infrastructure_SplitThreatPath(l_0_1)
+    if (sysio.IsFileExists)(l_0_13 .. "\\QQBrowser.exe") then
+      (MpDetection.ReportResource)("file", l_0_13 .. "\\QQBrowser.exe", l_0_0, false)
     end
   end
   do
+    if l_0_2 ~= nil then
+      local l_0_17, l_0_18, l_0_19, l_0_20 = Infrastructure_SplitThreatPath(l_0_2)
+      if (sysio.IsFileExists)(l_0_17 .. "\\BaofengUpdate_U.exe") then
+        (MpDetection.ReportResource)("file", l_0_17 .. "\\BaofengUpdate_U.exe", l_0_0, false)
+      end
+    end
+    local l_0_21 = (sysio.ExpandFilePath)("%LOCALAPPDATA%", true)
+    if l_0_21 ~= nil then
+      for l_0_25,l_0_26 in pairs(l_0_21) do
+        local l_0_27 = l_0_26 .. "\\SNARER\\Snarer.dll"
+        if (sysio.IsFileExists)(l_0_27) then
+          Infrastructure_DetectionReportFolder(l_0_0, l_0_27, true)
+        end
+        l_0_27 = l_0_26 .. "\\NPASRE\\Snare.dll"
+        if (sysio.IsFileExists)(l_0_27) then
+          Infrastructure_DetectionReportFolder(l_0_0, l_0_27, true)
+        end
+      end
+    end
     do
-      do return mp.INFECTED end
-      return mp.CLEAN
+      Infrastructure_ReportRegistryKey(l_0_0, "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SNARER")
+      Infrastructure_ReportRegistryValue(l_0_0, "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SvcHost", "SNARER")
+      Infrastructure_ReportRegistryKey(l_0_0, "HKLM\\SYSTEM\\CurrentControlSet\\Services\\NPASRE")
+      Infrastructure_ReportRegistryValue(l_0_0, "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SvcHost", "NPASRE")
+      local l_0_28 = (MpCommon.ExpandEnvironmentVariables)("%ProgramFiles%")
+      if (sysio.IsFileExists)(l_0_28 .. "\\MIO\\MIO.exe") then
+        Infrastructure_DetectionReportFolder(l_0_0, l_0_28 .. "\\MIO\\MIO.exe", true)
+      end
+      local l_0_29 = (MpCommon.ExpandEnvironmentVariables)("%ProgramFiles(x86)%")
+      if (sysio.IsFileExists)(l_0_29 .. "\\MIO\\MIO.exe") then
+        Infrastructure_DetectionReportFolder(l_0_0, l_0_29 .. "\\MIO\\MIO.exe", true)
+      end
+      Infrastructure_ReportImageFileDebugger(l_0_0, "GoogleUpdate.exe")
+      Infrastructure_ReportImageFileDebugger(l_0_0, "GoogleUpdaterService.exe")
+      Infrastructure_ReportSoftwareRegistryByKey(l_0_0, "WinArcher")
+      Infrastructure_ReportSoftwareRegistryByKey(l_0_0, "ourluckysitesSoftware")
     end
   end
 end

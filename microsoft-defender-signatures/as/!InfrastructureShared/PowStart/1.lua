@@ -3,6 +3,6 @@
 
 -- params : ...
 -- function num : 0
-TrackPidAndTechniqueBM("BM", "ttexclusion", "ttexclusion_org")
-return mp.INFECTED
+Infrastructure_ReportProductBulkExclusion(805306760)
+Infrastructure_CurrentThreatResourceScanFolder()
 

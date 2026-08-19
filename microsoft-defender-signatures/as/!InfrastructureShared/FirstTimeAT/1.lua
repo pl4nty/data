@@ -3,8 +3,11 @@
 
 -- params : ...
 -- function num : 0
-if (mp.getfilesize)() == 42496 then
-  return mp.INFECTED
+Infrastructure_FirstTimeAT = function()
+  -- function num : 0_0
+  if isFirstTimeATActive() then
+    initRQFTAT()
+  end
 end
-return mp.CLEAN
+
 
