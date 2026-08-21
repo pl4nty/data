@@ -2156,27 +2156,223 @@ cves = {"CVE-2010-4091", "CVE-2011-0566", "CVE-2011-0567", "CVE-2011-0586", "CVE
     l_1_46 = "zoom"
     l_1_46 = "zoom"
     l_1_46 = "5.16.5"
-    -- DECOMPILER ERROR at PC4197: No list found for R8 , SetList fails
+    l_1_47 = "151.0.7922.108"
+    l_1_47 = "cves"
+    -- DECOMPILER ERROR at PC4204: Overwrote pending register: R44 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC4199: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC4205: Overwrote pending register: R45 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC4200: Overwrote pending register: R11 in 'AssignReg'
+    -- DECOMPILER ERROR at PC4206: Overwrote pending register: R46 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC4201: Confused about usage of register: R10 in 'OutputAssignments'
+    -- DECOMPILER ERROR at PC4207: Overwrote pending register: R47 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4208: Overwrote pending register: R48 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4209: Overwrote pending register: R49 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4210: Overwrote pending register: R50 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4211: Overwrote pending register: R51 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4212: Overwrote pending register: R52 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4213: Overwrote pending register: R53 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4214: Overwrote pending register: R54 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4215: Overwrote pending register: R55 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4216: Overwrote pending register: R56 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4217: Overwrote pending register: R57 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4218: Overwrote pending register: R58 in 'AssignReg'
+
+    l_1_60, l_1_59, l_1_58, l_1_57, l_1_56, l_1_55, l_1_54, l_1_53, l_1_52, l_1_51, l_1_50, l_1_49 = {vendor = "oracle", product = "jre", vei = "1.6.0", 
+cves = {"CVE-2010-3552", "CVE-2010-3563", "CVE-2010-4452", "CVE-2013-1493"}
+}, {vendor = l_1_60, product = l_1_60, vsi = l_1_60, vei = l_1_60, 
+[l_1_60] = {"CVE-2013-1493", "CVE-2013-2465"}
+}, {cve = l_1_59, vendor = l_1_59, product = l_1_59, vei = l_1_59}, {vendor = l_1_58, product = l_1_58, vei = l_1_58, [l_1_58] = l_1_59}, {vendor = l_1_57, product = l_1_57, vei = l_1_57, [l_1_57] = l_1_58}, {vendor = l_1_56, product = l_1_56, vei = l_1_56, [l_1_56] = l_1_57}, {vendor = "adobe", product = l_1_55, vei = l_1_55, [l_1_55] = l_1_56}, {vendor = "adobe", product = l_1_54, vei = l_1_54, [l_1_54] = l_1_55}, {cve = l_1_53, vendor = "adobe", product = l_1_53, vei = l_1_53}, {cve = l_1_52, vendor = "adobe", product = l_1_52, vei = l_1_52}, {vendor = "adobe", product = l_1_51, vei = l_1_51, [l_1_51] = l_1_52}, {vendor = "adobe", product = l_1_50, vei = l_1_50, [l_1_50] = l_1_51}
+    l_1_48 = {l_1_49, l_1_50, l_1_51, l_1_52, l_1_53, l_1_54, l_1_55, l_1_56, l_1_57, l_1_58, l_1_59, l_1_60, 
+{cve = "CVE-2012-0507", vendor = "oracle", product = "jre", vsi = "1.6.0", vei = "1.7.0"}
+, 
+{vendor = "oracle", product = "jre", vei = "1.7.0", 
+cves = {"CVE-2012-5088", "CVE-2013-1493"}
+}
+, 
+{vendor = "sun", product = "jre", vei = "0", 
+cves = {"CVE-2009-3867", "CVE-2009-3869", "CVE-2009-3871", "CVE-2009-3874", "CVE-2010-3552", "CVE-2010-3563", "CVE-2010-4452"}
+}
+, "CVE-2026-19152", "CVE-2026-19153", "CVE-2026-19154", "CVE-2026-19155", "CVE-2026-19156", "CVE-2026-19157", "CVE-2026-19158", "CVE-2026-19159", "CVE-2026-19160", "CVE-2026-19161", "CVE-2026-19162", "CVE-2026-19163", "CVE-2026-19164", "CVE-2026-19165", "CVE-2026-19166", "CVE-2026-19167", "CVE-2026-19168", "CVE-2026-19169", "CVE-2026-19170", "CVE-2026-19171", "CVE-2026-19172", "CVE-2026-19173", "CVE-2026-19174", "CVE-2026-19175", "CVE-2026-19176", "CVE-2026-19177"; vendor = "adobe", product = l_1_49, vei = l_1_49, [l_1_49] = l_1_50}
+    l_1_48 = "151.0.7922.137"
+    l_1_48 = "cves"
+    l_1_50 = "CVE-2026-19556"
+    l_1_51 = "CVE-2026-19557"
+    l_1_52 = "CVE-2026-19558"
+    l_1_53 = "CVE-2026-19559"
+    l_1_54 = "CVE-2026-19560"
+    l_1_49 = {l_1_50, l_1_51, l_1_52, l_1_53, l_1_54}
+    l_1_49 = "151.0.7922.169"
+    l_1_49 = "cves"
+    l_1_51 = "CVE-2026-76033"
+    l_1_52 = "CVE-2026-76034"
+    l_1_53 = "CVE-2026-76035"
+    l_1_54 = "CVE-2026-76036"
+    l_1_55 = "CVE-2026-76037"
+    l_1_56 = "CVE-2026-76038"
+    l_1_57 = "CVE-2026-76039"
+    l_1_58 = "CVE-2026-76040"
+    l_1_59 = "CVE-2026-76041"
+    l_1_60 = "CVE-2026-76042"
+    l_1_50 = {l_1_51, l_1_52, l_1_53, l_1_54, l_1_55, l_1_56, l_1_57, l_1_58, l_1_59, l_1_60, "CVE-2026-76043", "CVE-2026-76044", "CVE-2026-76045", "CVE-2026-76046", "CVE-2026-76047"}
+    l_1_50 = "151.0.7922.173"
+    l_1_50 = "cves"
+    l_1_52 = "CVE-2026-76017"
+    l_1_53 = "CVE-2026-76018"
+    l_1_54 = "CVE-2026-76019"
+    l_1_55 = "CVE-2026-76020"
+    l_1_56 = "CVE-2026-76021"
+    l_1_57 = "CVE-2026-76022"
+    l_1_58 = "CVE-2026-76023"
+    l_1_51 = {l_1_52, l_1_53, l_1_54, l_1_55, l_1_56, l_1_57, l_1_58}
+    l_1_51 = "mozilla"
+    l_1_51 = "firefox"
+    l_1_51 = "154.0"
+    l_1_51 = "cves"
+    l_1_53 = "CVE-2026-75874"
+    l_1_54 = "CVE-2026-74934"
+    l_1_55 = "CVE-2026-74935"
+    l_1_56 = "CVE-2026-74936"
+    l_1_57 = "CVE-2026-74937"
+    l_1_58 = "CVE-2026-74938"
+    l_1_59 = "CVE-2026-74939"
+    l_1_60 = "CVE-2026-74940"
+    l_1_52 = {l_1_53, l_1_54, l_1_55, l_1_56, l_1_57, l_1_58, l_1_59, l_1_60, "CVE-2026-74941", "CVE-2026-74942", "CVE-2026-74943", "CVE-2026-74944", "CVE-2026-74945", "CVE-2026-74946", "CVE-2026-74947", "CVE-2026-74948", "CVE-2026-74949", "CVE-2026-74987", "CVE-2026-74988", "CVE-2026-74990"}
+    l_1_52 = "mozilla"
+    l_1_52 = "firefox_esr"
+    l_1_52 = "115.0"
+    l_1_52 = "115.39"
+    l_1_52 = "cves"
+    l_1_54 = "CVE-2026-74934"
+    l_1_55 = "CVE-2026-74935"
+    l_1_56 = "CVE-2026-74939"
+    l_1_57 = "CVE-2026-74940"
+    l_1_58 = "CVE-2026-74942"
+    l_1_59 = "CVE-2026-74943"
+    l_1_60 = "CVE-2026-74945"
+    l_1_53 = {l_1_54, l_1_55, l_1_56, l_1_57, l_1_58, l_1_59, l_1_60, "CVE-2026-74946", "CVE-2026-74948", "CVE-2026-74990"}
+    l_1_53 = "mozilla"
+    l_1_53 = "firefox_esr"
+    l_1_53 = "140.0"
+    l_1_53 = "140.14"
+    l_1_53 = "cves"
+    l_1_55 = "CVE-2026-74934"
+    l_1_56 = "CVE-2026-74935"
+    l_1_57 = "CVE-2026-74936"
+    l_1_58 = "CVE-2026-74939"
+    l_1_59 = "CVE-2026-74940"
+    l_1_60 = "CVE-2026-74941"
+    l_1_54 = {l_1_55, l_1_56, l_1_57, l_1_58, l_1_59, l_1_60, "CVE-2026-74942", "CVE-2026-74943", "CVE-2026-74944", "CVE-2026-74945", "CVE-2026-74946", "CVE-2026-74948", "CVE-2026-74949", "CVE-2026-74987", "CVE-2026-74990"}
+    l_1_54 = "mozilla"
+    l_1_54 = "thunderbird"
+    l_1_54 = "140.14"
+    l_1_54 = "cves"
+    l_1_56 = "CVE-2026-74936"
+    l_1_57 = "CVE-2026-74940"
+    l_1_58 = "CVE-2026-74943"
+    l_1_59 = "CVE-2026-74944"
+    l_1_55 = {l_1_56, l_1_57, l_1_58, l_1_59}
+    l_1_55 = "mozilla"
+    l_1_55 = "thunderbird"
+    l_1_55 = "141.0"
+    l_1_55 = "153.1"
+    l_1_55 = "cves"
+    l_1_57 = "CVE-2026-74936"
+    l_1_58 = "CVE-2026-74940"
+    l_1_59 = "CVE-2026-74943"
+    l_1_60 = "CVE-2026-74944"
+    l_1_56 = {l_1_57, l_1_58, l_1_59, l_1_60}
+    l_1_56 = "CVE-2026-57104"
+    l_1_56 = "microsoft"
+    l_1_56 = "azure_storage_explorer"
+    l_1_56 = "1.45.0"
+    l_1_57 = "CVE-2026-68821"
+    l_1_57 = "microsoft"
+    l_1_57 = "app_installer"
+    l_1_57 = "1.30.80"
+    l_1_58 = "microsoft"
+    l_1_58 = "visual_studio_code"
+    l_1_58 = "1.132.1"
+    l_1_58 = "cves"
+    l_1_60 = "CVE-2026-58650"
+    l_1_59 = {l_1_60, "CVE-2026-69278", "CVE-2026-70336"}
+    l_1_59 = "microsoft"
+    l_1_59 = "powershell"
+    l_1_59 = "7.4"
+    l_1_59 = "7.4.19.0"
+    l_1_59 = "cves"
+    l_1_60 = {"CVE-2026-58612", "CVE-2026-70338"}
+    l_1_60 = "microsoft"
+    l_1_60 = "powershell"
+    l_1_60 = "7.5"
+    l_1_60 = "7.5.10.0"
+    l_1_60 = "cves"
+    -- DECOMPILER ERROR at PC4531: No list found for R8 , SetList fails
+
+    -- DECOMPILER ERROR at PC4533: Overwrote pending register: R10 in 'AssignReg'
+
+    l_1_15 = {vendor = l_1_16, product = l_1_16, vei = l_1_16, [l_1_16] = l_1_17}
+    l_1_15 = "splunk"
+    l_1_15 = "10.0.9"
+    l_1_15 = "cves"
+    -- DECOMPILER ERROR at PC4542: Overwrote pending register: R12 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4543: Overwrote pending register: R13 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4544: Overwrote pending register: R14 in 'AssignReg'
+
+    l_1_19, l_1_18, l_1_17 = {cve = l_1_20, vendor = l_1_20, product = l_1_20, vei = l_1_20}, {cve = l_1_19, vendor = l_1_19, product = l_1_19, vei = l_1_19}, {vendor = l_1_18, product = l_1_18, vei = l_1_18, [l_1_18] = l_1_19}
+    l_1_16 = {l_1_17, l_1_18, l_1_19; vendor = l_1_17, product = l_1_17, vei = l_1_17, [l_1_17] = l_1_18}
+    l_1_16 = "splunk"
+    l_1_16 = "splunk"
+    l_1_16 = "10.2.0"
+    l_1_16 = "10.2.6"
+    l_1_16 = "cves"
+    l_1_18 = "CVE-2026-76310"
+    l_1_19 = "CVE-2026-76311"
+    -- DECOMPILER ERROR at PC4560: Overwrote pending register: R15 in 'AssignReg'
+
+    l_1_20 = {cve = l_1_21, vendor = l_1_21, product = l_1_21, vsi = l_1_21, vei = l_1_21}
+    l_1_17 = {l_1_18, l_1_19, l_1_20}
+    l_1_17 = "splunk"
+    l_1_17 = "splunk"
+    l_1_17 = "10.4.0"
+    l_1_17 = "10.4.2"
+    l_1_17 = "cves"
+    l_1_19 = "CVE-2026-76310"
+    l_1_20 = "CVE-2026-76311"
+    l_1_18 = {l_1_19, l_1_20}
+    l_1_18 = "CVE-2026-76312"
+    l_1_18 = "splunk"
+    l_1_18 = "splunk"
+    l_1_18 = "10.4.0"
+    -- DECOMPILER ERROR at PC4587: No list found for R8 , SetList fails
+
+    -- DECOMPILER ERROR at PC4589: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4590: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC4591: Confused about usage of register: R10 in 'OutputAssignments'
 
     for l_1_18,l_1_19 in l_1_15 do
-      l_1_17 = {vendor = l_1_18, product = l_1_18, vei = l_1_18, [l_1_18] = l_1_19}
-      -- DECOMPILER ERROR at PC4203: Overwrote pending register: R15 in 'AssignReg'
+      l_1_17 = {cve = l_1_18, vendor = l_1_18, product = l_1_18, version = l_1_18}
+      l_1_20 = l_1_19.vendor
+      -- DECOMPILER ERROR at PC4594: Overwrote pending register: R16 in 'AssignReg'
 
-      l_1_19 = {cve = l_1_20, vendor = l_1_20, product = l_1_20, vei = l_1_20}
-      -- DECOMPILER ERROR at PC4204: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4595: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4205: Overwrote pending register: R17 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC4206: Overwrote pending register: R15 in 'AssignReg'
-
-      l_1_22, l_1_21, l_1_20 = {vendor = l_1_23, product = l_1_23, vsi = l_1_23, vei = l_1_23, [l_1_23] = l_1_24}, {cve = l_1_22, vendor = l_1_22, product = l_1_22, vee = l_1_22}, {cve = l_1_21, vendor = l_1_21, product = l_1_21, vsi = l_1_21, vei = l_1_21}
-      l_1_21, l_1_14 = l_1_14[l_1_20], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-63030", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4", cve = "CVE-2026-58187", vendor = "apache", product = "traffic_server", vsi = "10.0.0", vee = "10.1.4", cve = l_1_15, vendor = l_1_15, product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = l_1_15, product = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vei = l_1_15, vendor = l_1_15, product = l_1_15, vei = l_1_15, [l_1_15] = l_1_16}
+      l_1_20, l_1_22, l_1_21 = l_1_20 .. l_1_21 .. l_1_22, {vendor = l_1_23, product = l_1_23, vsi = l_1_23, vei = l_1_23, [l_1_23] = l_1_24}, {cve = l_1_22, vendor = l_1_22, product = l_1_22, vee = l_1_22}
+      l_1_21, l_1_14 = l_1_14[l_1_20], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-63030", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4", cve = "CVE-2026-58187", vendor = "apache", product = "traffic_server", vsi = "10.0.0", vee = "10.1.4", cve = l_1_15, vendor = l_1_15, product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = l_1_15, product = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vei = l_1_15, vendor = l_1_15, product = l_1_15, vei = l_1_15, [l_1_15] = l_1_16, vendor = l_1_15, product = l_1_15, vsi = "10.0.0", vee = l_1_15, [l_1_15] = l_1_16}
       l_1_22 = nil
       if l_1_21 == l_1_22 then
         l_1_22 = l_1_19.vendor
@@ -2196,44 +2392,44 @@ cves = {"CVE-2010-4091", "CVE-2011-0566", "CVE-2011-0567", "CVE-2011-0586", "CVE
       l_1_22 = l_1_22 + l_1_23
     end
     for i_1,l_1_20 in pairs(l_1_14) do
-      -- DECOMPILER ERROR at PC4243: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4633: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4244: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4634: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4247: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4637: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4248: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4638: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4250: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4640: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4253: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4643: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC4254: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC4644: Overwrote pending register: R18 in 'AssignReg'
 
       if l_1_22 == l_1_23 then
         for l_1_25,l_1_26 in l_1_22 do
-          -- DECOMPILER ERROR at PC4257: Overwrote pending register: R22 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4647: Overwrote pending register: R22 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC4258: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4648: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC4260: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4650: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC4263: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4653: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC4264: Overwrote pending register: R24 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4654: Overwrote pending register: R24 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC4265: Overwrote pending register: R24 in 'AssignReg'
+          -- DECOMPILER ERROR at PC4655: Overwrote pending register: R24 in 'AssignReg'
 
           if l_1_27 ~= l_1_28 then
             for l_1_31,l_1_32 in l_1_28 do
-              -- DECOMPILER ERROR at PC4268: Overwrote pending register: R28 in 'AssignReg'
+              -- DECOMPILER ERROR at PC4658: Overwrote pending register: R28 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC4269: Overwrote pending register: R29 in 'AssignReg'
+              -- DECOMPILER ERROR at PC4659: Overwrote pending register: R29 in 'AssignReg'
 
               l_1_32 = {cve = l_1_33, vendor = l_1_33, product = l_1_33, vee = l_1_33}
-              -- DECOMPILER ERROR at PC4270: Overwrote pending register: R30 in 'AssignReg'
+              -- DECOMPILER ERROR at PC4660: Overwrote pending register: R30 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC4271: Confused about usage of register: R28 in 'OutputAssignments'
+              -- DECOMPILER ERROR at PC4661: Confused about usage of register: R28 in 'OutputAssignments'
 
               if l_1_33 then
                 l_1_33 = l_1_32.cve
@@ -2253,15 +2449,15 @@ cves = {"CVE-2010-4091", "CVE-2011-0566", "CVE-2011-0567", "CVE-2011-0586", "CVE
                   l_1_34 = l_1_32[l_1_34]
                   l_1_33 = l_1_33(l_1_34)
                   for l_1_36,l_1_37 in l_1_33 do
-                    -- DECOMPILER ERROR at PC4292: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC4682: Overwrote pending register: R33 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC4293: Overwrote pending register: R34 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC4683: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC4294: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC4684: Overwrote pending register: R33 in 'AssignReg'
 
                     l_1_38, l_1_39 = {cve = l_1_39, vendor = l_1_39, product = l_1_39, vee = l_1_39}, {vendor = l_1_40, product = l_1_40, vee = l_1_40, [l_1_40] = l_1_41}
                     l_1_39 = l_1_26
-                    -- DECOMPILER ERROR at PC4296: Overwrote pending register: R35 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC4686: Overwrote pending register: R35 in 'AssignReg'
 
                     l_1_37 = {cve = l_1_38, vendor = l_1_38, product = l_1_38, vee = l_1_38}
                     l_1_38(l_1_39, l_1_40)
@@ -2274,7 +2470,7 @@ cves = {"CVE-2010-4091", "CVE-2011-0566", "CVE-2011-0567", "CVE-2011-0586", "CVE
         end
       end
     end
-    -- DECOMPILER ERROR at PC4306: Confused about usage of register R32 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC4696: Confused about usage of register R32 for local variables in 'ReleaseLocals'
 
   end
 end
