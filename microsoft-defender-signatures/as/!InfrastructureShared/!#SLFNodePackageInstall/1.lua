@@ -29,8 +29,6 @@ local l_0_4 = "NodePackageInstallSeen"
 if IsKeyInRollingQueue(l_0_4, l_0_3, true) then
   return mp.CLEAN
 end
-if not AppendToRollingQueue(l_0_4, l_0_3, "1", 28800, 50000, 1) then
-  return mp.CLEAN
-end
+AppendToRollingQueue(l_0_4, l_0_3, "1", 28800, 50000, 1)
 return mp.INFECTED
 

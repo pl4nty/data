@@ -39,7 +39,7 @@ do
         if l_0_11 ~= nil and l_0_11 ~= "" then
           l_0_11 = (string.lower)(l_0_11)
         end
-        if l_0_11 == "1beec53c-4b52-4aec-a1b1-716d6da36984" or l_0_11 == "25044e66-9451-403b-a3a6-1cb863e3d45e" then
+        if l_0_11 == "1beec53c-4b52-4aec-a1b1-716d6da36984" or l_0_11 == "25044e66-9451-403b-a3a6-1cb863e3d45e" or l_0_11 == "891a4168-8094-4df0-bb27-f44256f9f5ca" then
           return mp.INFECTED
         else
           return mp.LOWFI
