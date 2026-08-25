@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6dcb39d49d5b2\1.luac 
+-- Command line: lua\!InfrastructureShared\920b38576f8bf\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -55,42 +55,47 @@ do
         local l_0_17, l_0_20, l_0_23, l_0_26, l_0_29, l_0_40 = , l_0_16 ~= nil and (mp.GetProcessCommandLine)(l_0_16.ppid) or ""
         -- DECOMPILER ERROR at PC100: Confused about usage of register: R5 in 'UnsetPending'
 
-        if l_0_23 == "" and (l_0_1(l_0_6, "/python") or l_0_1(l_0_6, "/platform-python")) and pcall(MpCommon.AtomicCounterValue, "linux_pkg_maintenance_active") and MpCommon.AtomicCounterValue ~= nil then
-          return mp.CLEAN
+        if l_0_23 == "" and (l_0_1(l_0_6, "/python") or l_0_1(l_0_6, "/platform-python") or l_0_1(l_0_6, "/perl")) then
+          if pcall(MpCommon.AtomicCounterValue, "linux_pkg_maintenance_active") and MpCommon.AtomicCounterValue ~= nil then
+            return mp.CLEAN
+          end
+          if pcall(MpCommon.AtomicCounterValue, "linux_config_mgmt_active") and MpCommon.AtomicCounterValue ~= nil then
+            return mp.CLEAN
+          end
         end
-        -- DECOMPILER ERROR at PC127: Confused about usage of register: R4 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC133: Confused about usage of register: R4 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC139: Confused about usage of register: R4 in 'UnsetPending'
-
         -- DECOMPILER ERROR at PC145: Confused about usage of register: R4 in 'UnsetPending'
 
         -- DECOMPILER ERROR at PC151: Confused about usage of register: R4 in 'UnsetPending'
 
+        -- DECOMPILER ERROR at PC157: Confused about usage of register: R4 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC163: Confused about usage of register: R4 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC169: Confused about usage of register: R4 in 'UnsetPending'
+
         if l_0_1(l_0_20, "/opt/sophos-av/engine/") or l_0_1(l_0_20, "/opt/sophos/engine/") or l_0_1(l_0_20, "/opt/deepinstinct/") or l_0_1(l_0_20, "/opt/kaspersky/kesl/") or l_0_1(l_0_20, "/opt/VRTSralus/bin/beremote") then
           return mp.CLEAN
         end
-        -- DECOMPILER ERROR at PC160: Confused about usage of register: R6 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC166: Confused about usage of register: R6 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC172: Confused about usage of register: R6 in 'UnsetPending'
-
         -- DECOMPILER ERROR at PC178: Confused about usage of register: R6 in 'UnsetPending'
 
         -- DECOMPILER ERROR at PC184: Confused about usage of register: R6 in 'UnsetPending'
 
+        -- DECOMPILER ERROR at PC190: Confused about usage of register: R6 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC196: Confused about usage of register: R6 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC202: Confused about usage of register: R6 in 'UnsetPending'
+
         if l_0_1(l_0_26, "/opt/deepinstinct/") or l_0_1(l_0_26, "/usr/sbin/debootstrap") or l_0_1(l_0_26, "/usr/bin/xClient 01010011011011100110111101110111") or l_0_1(l_0_26, "/var/cache/apt/archives/") or l_0_1(l_0_26, "libpam-modules-bin") then
           return mp.CLEAN
         end
-        -- DECOMPILER ERROR at PC205: Confused about usage of register: R5 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC211: Confused about usage of register: R5 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC217: Confused about usage of register: R5 in 'UnsetPending'
-
         -- DECOMPILER ERROR at PC223: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC229: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC235: Confused about usage of register: R5 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC241: Confused about usage of register: R5 in 'UnsetPending'
 
         if (l_0_1(l_0_6, "/usr/sbin/recover") or l_0_1(l_0_6, "/usr/bin/recover")) and l_0_1(l_0_23, "/usr/sbin/recover -s ") and l_0_1(l_0_23, " -a ") and l_0_1(l_0_23, " -I -") and l_0_1(l_0_23, " -x ") then
           return mp.CLEAN
@@ -98,11 +103,11 @@ do
         local l_0_41, l_0_42, l_0_43 = nil
         if pcall(bm.get_process_relationships) then
           if bm.get_process_relationships ~= nil then
-            for l_0_47,l_0_48 in ipairs(R11_PC241) do
+            for l_0_47,l_0_48 in ipairs(R11_PC259) do
               local l_0_44, l_0_45, l_0_46, l_0_47 = nil
-              -- DECOMPILER ERROR at PC243: Confused about usage of register: R14 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC261: Confused about usage of register: R14 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC248: Confused about usage of register: R14 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC266: Confused about usage of register: R14 in 'UnsetPending'
 
               if l_0_24.image_path ~= nil then
                 (bm.add_related_process)(l_0_24.ppid)
@@ -110,65 +115,65 @@ do
             end
           end
           do
-            -- DECOMPILER ERROR at PC252: Confused about usage of register: R9 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC270: Confused about usage of register: R9 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC255: Confused about usage of register: R9 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC273: Confused about usage of register: R9 in 'UnsetPending'
 
             if l_0_47 ~= nil then
               for l_0_52,l_0_53 in ipairs(l_0_47) do
                 local l_0_49, l_0_50, l_0_51, l_0_52 = nil
-                -- DECOMPILER ERROR at PC258: Confused about usage of register: R14 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC276: Confused about usage of register: R14 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC263: Confused about usage of register: R14 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC281: Confused about usage of register: R14 in 'UnsetPending'
 
                 if l_0_24.image_path ~= nil then
                   (bm.add_related_process)(l_0_24.ppid)
-                  -- DECOMPILER ERROR at PC267: Confused about usage of register: R14 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC285: Confused about usage of register: R14 in 'UnsetPending'
 
                   if (string.find)(l_0_24.image_path, "/rpmkeys", 1, true) then
                     return mp.CLEAN
                   end
-                  -- DECOMPILER ERROR at PC279: Confused about usage of register: R14 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC288: Confused about usage of register: R14 in 'UnsetPending'
-
                   -- DECOMPILER ERROR at PC297: Confused about usage of register: R14 in 'UnsetPending'
 
                   -- DECOMPILER ERROR at PC306: Confused about usage of register: R14 in 'UnsetPending'
 
                   -- DECOMPILER ERROR at PC315: Confused about usage of register: R14 in 'UnsetPending'
 
+                  -- DECOMPILER ERROR at PC324: Confused about usage of register: R14 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC333: Confused about usage of register: R14 in 'UnsetPending'
+
                   if (string.find)(l_0_24.image_path, "/dpkg-deb", 1, true) or (string.find)(l_0_24.image_path, "/dpkg-split", 1, true) or (string.find)(l_0_24.image_path, "/bin/dpkg", 1, true) or (string.find)(l_0_24.image_path, "/bin/dpkg-deb", 1, true) or (string.find)(l_0_24.image_path, "/bin/dpkg-split", 1, true) then
                     return mp.CLEAN
                   end
-                  -- DECOMPILER ERROR at PC325: Confused about usage of register: R14 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC343: Confused about usage of register: R14 in 'UnsetPending'
 
                   do
                     do
                       local l_0_58, l_0_59 = l_0_24.cmd_line or ""
-                      -- DECOMPILER ERROR at PC331: Confused about usage of register: R15 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC349: Confused about usage of register: R15 in 'UnsetPending'
 
                       if (string.find)(l_0_58, "/var/tmp/rpm-tmp.", 1, true) then
                         return mp.CLEAN
                       end
-                      -- DECOMPILER ERROR at PC343: Confused about usage of register: R15 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC352: Confused about usage of register: R15 in 'UnsetPending'
-
                       -- DECOMPILER ERROR at PC361: Confused about usage of register: R15 in 'UnsetPending'
 
                       -- DECOMPILER ERROR at PC370: Confused about usage of register: R15 in 'UnsetPending'
 
                       -- DECOMPILER ERROR at PC379: Confused about usage of register: R15 in 'UnsetPending'
 
+                      -- DECOMPILER ERROR at PC388: Confused about usage of register: R15 in 'UnsetPending'
+
+                      -- DECOMPILER ERROR at PC397: Confused about usage of register: R15 in 'UnsetPending'
+
                       if (string.find)(l_0_58, "/usr/bin/dpkg-deb", 1, true) or (string.find)(l_0_58, "/usr/bin/dpkg-split", 1, true) or (string.find)(l_0_58, "/bin/dpkg ", 1, true) or (string.find)(l_0_58, "/bin/dpkg-deb", 1, true) or (string.find)(l_0_58, "/bin/dpkg-split", 1, true) then
                         return mp.CLEAN
                       end
-                      -- DECOMPILER ERROR at PC389: LeaveBlock: unexpected jumping out DO_STMT
+                      -- DECOMPILER ERROR at PC407: LeaveBlock: unexpected jumping out DO_STMT
 
-                      -- DECOMPILER ERROR at PC389: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                      -- DECOMPILER ERROR at PC407: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                      -- DECOMPILER ERROR at PC389: LeaveBlock: unexpected jumping out IF_STMT
+                      -- DECOMPILER ERROR at PC407: LeaveBlock: unexpected jumping out IF_STMT
 
                     end
                   end
