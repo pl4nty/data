@@ -157,7 +157,7 @@ end
       -- DECOMPILER ERROR at PC388: Confused about usage of register: R20 in 'UnsetPending'
 
       if (sysio.IsFileExists)(l_0_45) or pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_25, l_0_23, l_0_35) and not isnull(R24_PC400) then
-        (mp.ReportLowfi)(R24_PC400, 1924697406)
+        (mp.ReportLowfi)(R24_PC400, 3569595041)
         return mp.INFECTED
       end
     end

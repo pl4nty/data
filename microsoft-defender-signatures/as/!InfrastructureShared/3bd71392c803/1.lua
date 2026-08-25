@@ -10,7 +10,7 @@ local l_0_0 = {}
 
 -- DECOMPILER ERROR at PC5: Overwrote pending register: R2 in 'AssignReg'
 
-if ("node")("bun", l_0_0) then
+if ("node.exe")("bun.exe", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
