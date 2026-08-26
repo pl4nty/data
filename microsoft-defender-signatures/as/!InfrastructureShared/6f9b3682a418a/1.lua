@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\767b3a0742cb6\1.luac 
+-- Command line: lua\!InfrastructureShared\6f9b3682a418a\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,15 +12,15 @@ local l_0_0 = function(l_1_0)
 end
 
 do
-  if not l_0_0(this_sigattrlog[1]) and not l_0_0(this_sigattrlog[2]) and not l_0_0(this_sigattrlog[3]) and not l_0_0(this_sigattrlog[4]) and not l_0_0(this_sigattrlog[5]) and not l_0_0(this_sigattrlog[6]) and not l_0_0(this_sigattrlog[7]) and not l_0_0(this_sigattrlog[8]) and not l_0_0(this_sigattrlog[9]) and not l_0_0(this_sigattrlog[10]) and not l_0_0(this_sigattrlog[11]) and not l_0_0(this_sigattrlog[12]) and not l_0_0(this_sigattrlog[13]) and not l_0_0(this_sigattrlog[14]) and not l_0_0(this_sigattrlog[15]) and not l_0_0(this_sigattrlog[16]) and not l_0_0(this_sigattrlog[17]) and not l_0_0(this_sigattrlog[18]) and not l_0_0(this_sigattrlog[19]) and not l_0_0(this_sigattrlog[20]) and not l_0_0(this_sigattrlog[21]) and not l_0_0(this_sigattrlog[22]) and not l_0_0(this_sigattrlog[23]) and not l_0_0(this_sigattrlog[24]) and not l_0_0(this_sigattrlog[25]) and not l_0_0(this_sigattrlog[26]) and not l_0_0(this_sigattrlog[27]) and not l_0_0(this_sigattrlog[28]) then
-    local l_0_1, l_0_2, l_0_3 = l_0_0(this_sigattrlog[29])
+  if not l_0_0(this_sigattrlog[1]) and not l_0_0(this_sigattrlog[2]) and not l_0_0(this_sigattrlog[3]) and not l_0_0(this_sigattrlog[4]) and not l_0_0(this_sigattrlog[5]) and not l_0_0(this_sigattrlog[6]) and not l_0_0(this_sigattrlog[7]) and not l_0_0(this_sigattrlog[8]) and not l_0_0(this_sigattrlog[9]) and not l_0_0(this_sigattrlog[10]) and not l_0_0(this_sigattrlog[11]) and not l_0_0(this_sigattrlog[12]) and not l_0_0(this_sigattrlog[13]) and not l_0_0(this_sigattrlog[14]) and not l_0_0(this_sigattrlog[15]) and not l_0_0(this_sigattrlog[16]) and not l_0_0(this_sigattrlog[17]) and not l_0_0(this_sigattrlog[18]) and not l_0_0(this_sigattrlog[19]) and not l_0_0(this_sigattrlog[20]) and not l_0_0(this_sigattrlog[21]) and not l_0_0(this_sigattrlog[22]) and not l_0_0(this_sigattrlog[23]) and not l_0_0(this_sigattrlog[24]) and not l_0_0(this_sigattrlog[25]) and not l_0_0(this_sigattrlog[26]) then
+    local l_0_1, l_0_2, l_0_3 = l_0_0(this_sigattrlog[27])
   end
-  -- DECOMPILER ERROR at PC173: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC161: Confused about usage of register: R1 in 'UnsetPending'
 
   if l_0_1 == nil then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC179: Confused about usage of register: R1 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC167: Confused about usage of register: R1 in 'UnsetPending'
 
   local l_0_4 = nil
   local l_0_5 = tostring(l_0_1.utf8p2)
@@ -72,7 +72,7 @@ end
       l_0_21 = "INFECTED"
       l_0_20 = l_0_20[l_0_21]
       do return l_0_20 end
-      -- DECOMPILER ERROR at PC514: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC502: freeLocal<0 in 'ReleaseLocals'
 
     end
   end

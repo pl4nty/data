@@ -18,7 +18,7 @@ end
 if not IsKeyInRollingQueue("IsProcessChainFromWebClipWrite", l_0_1.ppid, true) then
   AppendToRollingQueue("IsProcessChainFromWebClipWrite", l_0_1.ppid, 1, 30)
 end
-if (string.find)(l_0_0, "\\windows\\microsoft.net\\framework", 1, true) or (string.find)(l_0_0, "\\users\\public\\", 1, true) or (string.find)(l_0_0, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_0, "\\appdata\\local\\", 1, true) or (string.find)(l_0_0, "\\windows\\temp\\", 1, true) or (string.find)(l_0_0, "\\windows\\syswow64\\", 1, true) or (string.find)(l_0_0, "\\programdata\\", 1, true) then
+if (string.find)(l_0_0, "\\windows\\microsoft.net\\framework", 1, true) or (string.find)(l_0_0, "\\users\\public\\", 1, true) or (string.find)(l_0_0, "\\appdata\\roaming\\", 1, true) or (string.find)(l_0_0, "\\appdata\\local\\", 1, true) or (string.find)(l_0_0, "\\windows\\temp\\", 1, true) or (string.find)(l_0_0, "\\windows\\syswow64\\", 1, true) or (string.find)(l_0_0, ".7z_x\\", 1, true) or (string.find)(l_0_0, "\\programdata\\", 1, true) then
   (bm.request_SMS)(l_0_1.ppid, "M")
   ;
   (bm.add_action)("SmsAsyncScanEvent", 2000)
