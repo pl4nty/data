@@ -595,123 +595,129 @@ do
                 -- DECOMPILER ERROR at PC553: Confused about usage of register: R30 in 'UnsetPending'
 
               end
-              -- DECOMPILER ERROR at PC595: Confused about usage of register: R29 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC593: Overwrote pending register: R34 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC595: Overwrote pending register: R34 in 'AssignReg'
+              -- DECOMPILER ERROR at PC597: Overwrote pending register: R35 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC600: Overwrote pending register: R35 in 'AssignReg'
+              -- DECOMPILER ERROR at PC604: Confused about usage of register: R29 in 'UnsetPending'
+
+              -- DECOMPILER ERROR at PC611: Overwrote pending register: R36 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC614: Overwrote pending register: R36 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC617: Overwrote pending register: R36 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC620: Overwrote pending register: R36 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC621: Overwrote pending register: R36 in 'AssignReg'
-
-              if not not l_0_4 <= l_0_41[l_0_32] or 0 or not l_0_41[l_0_39] and l_0_4 <= not l_0_41[l_0_35] and l_0_4 <= not l_0_41[l_0_34] and l_0_4 <= l_0_4 <= l_0_41[l_0_33] or 0 or 0 or 0 or 0 and not l_0_2 <= l_0_45 + l_0_52 and l_0_3 <= l_0_51 and not not l_0_41[l_0_39] and l_0_5 <= l_0_5 <= l_0_52 or 0 or 0 then
-                return l_0_53
-              end
-              -- DECOMPILER ERROR at PC624: Overwrote pending register: R37 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC625: Overwrote pending register: R37 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC626: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC623: Overwrote pending register: R36 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC631: Overwrote pending register: R37 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC632: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC632: Overwrote pending register: R37 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC633: Overwrote pending register: R38 in 'AssignReg'
+              if not not l_0_4 <= l_0_41[l_0_32] or 0 or not l_0_41[l_0_39] and l_0_4 <= not l_0_41[l_0_35] and l_0_4 <= not l_0_41[l_0_34] and l_0_4 <= l_0_4 <= l_0_41[l_0_33] or 0 or 0 or 0 or 0 and not l_0_2 <= l_0_45 + l_0_52 and l_0_3 <= #{} and (l_0_51 or 0) + (l_0_52 or 0) > 0 and not l_0_53 then
+                return l_0_54
+              end
+              -- DECOMPILER ERROR at PC635: Overwrote pending register: R38 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC634: Overwrote pending register: R39 in 'AssignReg'
+              -- DECOMPILER ERROR at PC636: Overwrote pending register: R38 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC638: Overwrote pending register: R38 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC641: Overwrote pending register: R37 in 'AssignReg'
+              -- DECOMPILER ERROR at PC637: Overwrote pending register: R39 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC642: Overwrote pending register: R38 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC643: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC643: Overwrote pending register: R39 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC644: Overwrote pending register: R39 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC648: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC645: Overwrote pending register: R40 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC651: Overwrote pending register: R37 in 'AssignReg'
+              -- DECOMPILER ERROR at PC649: Overwrote pending register: R39 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC652: Overwrote pending register: R38 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC653: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC653: Overwrote pending register: R39 in 'AssignReg'
 
               -- DECOMPILER ERROR at PC654: Overwrote pending register: R39 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC658: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC655: Overwrote pending register: R40 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC662: Overwrote pending register: R37 in 'AssignReg'
+              -- DECOMPILER ERROR at PC659: Overwrote pending register: R39 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC663: Overwrote pending register: R37 in 'AssignReg'
+              -- DECOMPILER ERROR at PC662: Overwrote pending register: R38 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC664: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC663: Overwrote pending register: R39 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC670: Overwrote pending register: R38 in 'AssignReg'
+              -- DECOMPILER ERROR at PC664: Overwrote pending register: R39 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC671: Overwrote pending register: R39 in 'AssignReg'
+              -- DECOMPILER ERROR at PC665: Overwrote pending register: R40 in 'AssignReg'
 
-              if not l_0_54 or (((l_0_55 or not l_0_55) and l_0_55) or l_0_54) then
+              -- DECOMPILER ERROR at PC669: Overwrote pending register: R39 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC673: Overwrote pending register: R38 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC674: Overwrote pending register: R38 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC675: Overwrote pending register: R39 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC681: Overwrote pending register: R39 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC682: Overwrote pending register: R40 in 'AssignReg'
+
+              if not l_0_55 or (((l_0_56 or not l_0_56) and l_0_56) or l_0_55) then
                 do
-                  for l_0_58,l_0_59 in l_0_55 do
-                    -- DECOMPILER ERROR at PC675: Overwrote pending register: R43 in 'AssignReg'
+                  for l_0_59,l_0_60 in l_0_56 do
+                    -- DECOMPILER ERROR at PC686: Overwrote pending register: R44 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC681: Overwrote pending register: R44 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC692: Overwrote pending register: R45 in 'AssignReg'
 
                   end
-                  -- DECOMPILER ERROR at PC685: Overwrote pending register: R38 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC696: Overwrote pending register: R39 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC688: Overwrote pending register: R39 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC699: Overwrote pending register: R40 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC689: Confused about usage of register: R33 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC700: Confused about usage of register: R33 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC691: Overwrote pending register: R39 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC702: Overwrote pending register: R40 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC693: Confused about usage of register: R35 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC706: Overwrote pending register: R40 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC695: Overwrote pending register: R39 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC697: Overwrote pending register: R41 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC698: Confused about usage of register: R28 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC707: Confused about usage of register: R30 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC708: Overwrote pending register: R43 in 'AssignReg'
-
-                  -- DECOMPILER ERROR at PC713: Confused about usage of register: R29 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC714: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC709: Confused about usage of register: R28 in 'UnsetPending'
 
                   -- DECOMPILER ERROR at PC718: Confused about usage of register: R30 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC733: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC719: Overwrote pending register: R44 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC753: Overwrote pending register: R43 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC724: Confused about usage of register: R29 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC761: Overwrote pending register: R42 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC725: Overwrote pending register: R44 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC769: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC729: Confused about usage of register: R30 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC770: Overwrote pending register: R45 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC744: Overwrote pending register: R44 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC771: Overwrote pending register: R46 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC764: Overwrote pending register: R44 in 'AssignReg'
 
-                  if R42_PC759 then
-                    (MpCommon.BmTriggerSig)(l_0_61, l_0_62, l_0_63)
+                  -- DECOMPILER ERROR at PC772: Overwrote pending register: R43 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC780: Overwrote pending register: R45 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC781: Overwrote pending register: R46 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC782: Overwrote pending register: R47 in 'AssignReg'
+
+                  if R43_PC770 then
+                    (MpCommon.BmTriggerSig)(l_0_62, l_0_63, l_0_64)
                   end
-                  -- DECOMPILER ERROR at PC775: Overwrote pending register: R44 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC786: Overwrote pending register: R45 in 'AssignReg'
 
                   ;
-                  (mp.SetDetectionString)(l_0_61)
+                  (mp.SetDetectionString)(l_0_62)
                   do return mp.INFECTED end
-                  -- DECOMPILER ERROR at PC780: Confused about usage of register R43 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC791: Confused about usage of register R44 for local variables in 'ReleaseLocals'
 
                   -- WARNING: undefined locals caused missing assignments!
-                  -- DECOMPILER ERROR: 30 unprocessed JMP targets
+                  -- DECOMPILER ERROR: 32 unprocessed JMP targets
                 end
               end
             end

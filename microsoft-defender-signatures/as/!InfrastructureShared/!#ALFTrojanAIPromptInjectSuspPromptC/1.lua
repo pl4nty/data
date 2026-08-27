@@ -224,146 +224,152 @@ do
 
           -- DECOMPILER ERROR at PC689: Confused about usage of register: R34 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC698: Confused about usage of register: R32 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC696: Confused about usage of register: R35 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC697: Overwrote pending register: R46 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC698: Overwrote pending register: R46 in 'AssignReg'
+
+          -- DECOMPILER ERROR at PC701: Confused about usage of register: R32 in 'UnsetPending'
 
           if l_0_2 <= 0 + l_0_54 then
-            l_0_62 = #{}
+            l_0_63 = #{}
           end
-          l_0_62 = l_0_3 <= l_0_62
-          l_0_63 = l_0_43[l_0_33]
-          if not l_0_63 then
-            l_0_63 = 0
+          l_0_63 = l_0_3 <= l_0_63 and l_0_62 > 0
+          l_0_64 = l_0_43[l_0_33]
+          if not l_0_64 then
+            l_0_64 = 0
           end
-          if l_0_4 > l_0_63 then
-            l_0_63 = l_0_43[l_0_34]
-            if not l_0_63 then
-              l_0_63 = 0
+          if l_0_4 > l_0_64 then
+            l_0_64 = l_0_43[l_0_34]
+            if not l_0_64 then
+              l_0_64 = 0
             end
-            if l_0_4 > l_0_63 then
-              l_0_63 = l_0_43[l_0_41]
-              if not l_0_63 then
-                l_0_63 = 0
+            if l_0_4 > l_0_64 then
+              l_0_64 = l_0_43[l_0_41]
+              if not l_0_64 then
+                l_0_64 = 0
               end
-              if l_0_4 > l_0_63 then
-                l_0_63 = l_0_43[l_0_40]
-                if not l_0_63 then
-                  l_0_63 = 0
+              if l_0_4 > l_0_64 then
+                l_0_64 = l_0_43[l_0_40]
+                if not l_0_64 then
+                  l_0_64 = 0
                 end
-                l_0_63 = l_0_4 <= l_0_63
-                if not l_0_61 and not l_0_62 and not l_0_63 then
-                  l_0_64 = mp
-                  l_0_64 = l_0_64.CLEAN
-                  return l_0_64
+                l_0_64 = l_0_4 <= l_0_64
+                if not l_0_61 and not l_0_63 and not l_0_64 then
+                  l_0_65 = mp
+                  l_0_65 = l_0_65.CLEAN
+                  return l_0_65
                 end
-                l_0_64 = mp
-                l_0_64 = l_0_64.get_contextdata
-                l_0_65 = mp
-                l_0_65 = l_0_65.CONTEXT_NAME_PROMPT_AGENT_SESSIONID
-                l_0_64 = l_0_64(l_0_65)
                 l_0_65 = mp
                 l_0_65 = l_0_65.get_contextdata
                 l_0_66 = mp
-                l_0_66 = l_0_66.CONTEXT_DATA_NET_PROMPT_FRAMEWORK
+                l_0_66 = l_0_66.CONTEXT_NAME_PROMPT_AGENT_SESSIONID
                 l_0_65 = l_0_65(l_0_66)
-                l_0_66 = MpCommon
-                l_0_66 = l_0_66.Base64Encode
-                l_0_67 = string
-                l_0_67 = l_0_67.sub
-                l_0_68 = l_0_10
-                l_0_69 = 1
-                l_0_70 = 1024
-                l_0_66 = l_0_66(l_0_67(l_0_68, l_0_69, l_0_70))
-                -- DECOMPILER ERROR at PC760: Overwrote pending register: R51 in 'AssignReg'
+                l_0_66 = mp
+                l_0_66 = l_0_66.get_contextdata
+                l_0_67 = mp
+                l_0_67 = l_0_67.CONTEXT_DATA_NET_PROMPT_FRAMEWORK
+                l_0_66 = l_0_66(l_0_67)
+                l_0_67 = MpCommon
+                l_0_67 = l_0_67.Base64Encode
+                l_0_68 = string
+                l_0_68 = l_0_68.sub
+                l_0_69 = l_0_10
+                l_0_70 = 1
+                l_0_71 = 1024
+                l_0_67 = l_0_67(l_0_68(l_0_69, l_0_70, l_0_71))
+                -- DECOMPILER ERROR at PC765: Overwrote pending register: R52 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC764: Overwrote pending register: R51 in 'AssignReg'
+                -- DECOMPILER ERROR at PC769: Overwrote pending register: R52 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC767: Confused about usage of register: R31 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC772: Confused about usage of register: R31 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC770: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC775: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC771: Overwrote pending register: R54 in 'AssignReg'
+                -- DECOMPILER ERROR at PC776: Overwrote pending register: R55 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC774: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC779: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC775: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC780: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC776: Confused about usage of register: R33 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC781: Confused about usage of register: R33 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC776: Overwrote pending register: R54 in 'AssignReg'
+                -- DECOMPILER ERROR at PC781: Overwrote pending register: R55 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC780: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC785: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC781: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC786: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC782: Confused about usage of register: R32 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC787: Confused about usage of register: R32 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC782: Overwrote pending register: R54 in 'AssignReg'
+                -- DECOMPILER ERROR at PC787: Overwrote pending register: R55 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC783: Overwrote pending register: R55 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC786: Overwrote pending register: R53 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC787: Confused about usage of register: R33 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC787: Overwrote pending register: R54 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC790: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC788: Overwrote pending register: R56 in 'AssignReg'
 
                 -- DECOMPILER ERROR at PC791: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC794: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC792: Confused about usage of register: R33 in 'UnsetPending'
+
+                -- DECOMPILER ERROR at PC792: Overwrote pending register: R55 in 'AssignReg'
 
                 -- DECOMPILER ERROR at PC795: Overwrote pending register: R54 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC799: Overwrote pending register: R53 in 'AssignReg'
+                -- DECOMPILER ERROR at PC796: Overwrote pending register: R55 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC802: Overwrote pending register: R54 in 'AssignReg'
+                -- DECOMPILER ERROR at PC799: Overwrote pending register: R54 in 'AssignReg'
 
-                if (l_0_61 and not l_0_63) or not l_0_64 then
-                  l_0_69 = l_0_69(l_0_70)
-                  l_0_69 = tostring
-                  -- DECOMPILER ERROR at PC808: Overwrote pending register: R54 in 'AssignReg'
+                -- DECOMPILER ERROR at PC800: Overwrote pending register: R55 in 'AssignReg'
 
-                  if not l_0_65 then
+                -- DECOMPILER ERROR at PC804: Overwrote pending register: R54 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC807: Overwrote pending register: R55 in 'AssignReg'
+
+                if (l_0_61 and not l_0_64) or not l_0_65 then
+                  l_0_70 = l_0_70(l_0_71)
+                  l_0_70 = tostring
+                  -- DECOMPILER ERROR at PC813: Overwrote pending register: R55 in 'AssignReg'
+
+                  if not l_0_66 then
                     do
-                      l_0_69 = l_0_69(l_0_70)
-                      l_0_69 = tostring
-                      -- DECOMPILER ERROR at PC812: Overwrote pending register: R54 in 'AssignReg'
+                      l_0_70 = l_0_70(l_0_71)
+                      l_0_70 = tostring
+                      -- DECOMPILER ERROR at PC817: Overwrote pending register: R55 in 'AssignReg'
 
-                      l_0_69 = l_0_69(l_0_70)
-                      l_0_69 = tostring
-                      -- DECOMPILER ERROR at PC816: Overwrote pending register: R54 in 'AssignReg'
+                      l_0_70 = l_0_70(l_0_71)
+                      l_0_70 = tostring
+                      -- DECOMPILER ERROR at PC821: Overwrote pending register: R55 in 'AssignReg'
 
-                      l_0_69 = l_0_69(l_0_70)
-                      l_0_69 = MpCommon
-                      l_0_69 = l_0_69.Base64Encode
-                      -- DECOMPILER ERROR at PC822: Overwrote pending register: R54 in 'AssignReg'
+                      l_0_70 = l_0_70(l_0_71)
+                      l_0_70 = MpCommon
+                      l_0_70 = l_0_70.Base64Encode
+                      -- DECOMPILER ERROR at PC827: Overwrote pending register: R55 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC823: Overwrote pending register: R55 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC828: Overwrote pending register: R56 in 'AssignReg'
 
-                      l_0_69 = l_0_69(l_0_70(l_0_71))
-                      l_0_69 = safeJsonSerialize
-                      l_0_69 = l_0_69(R54_PC829)
-                      if l_0_69 ~= nil then
-                        R54_PC829 = #l_0_69
+                      l_0_70 = l_0_70(l_0_71(l_0_72))
+                      l_0_70 = safeJsonSerialize
+                      l_0_70 = l_0_70(R55_PC834)
+                      if l_0_70 ~= nil then
+                        R55_PC834 = #l_0_70
                       end
-                      if R54_PC829 == 0 then
-                        R54_PC829 = mp
-                        R54_PC829 = R54_PC829.CLEAN
-                        return R54_PC829
+                      if R55_PC834 == 0 then
+                        R55_PC834 = mp
+                        R55_PC834 = R55_PC834.CLEAN
+                        return R55_PC834
                       end
-                      R54_PC829 = mp
-                      R54_PC829 = R54_PC829.get_contextdata
-                      R54_PC829 = R54_PC829(mp.CONTEXT_DATA_PROCESS_PPID)
-                      if R54_PC829 then
-                        (MpCommon.BmTriggerSig)(l_0_72, l_0_73, l_0_74)
+                      R55_PC834 = mp
+                      R55_PC834 = R55_PC834.get_contextdata
+                      R55_PC834 = R55_PC834(mp.CONTEXT_DATA_PROCESS_PPID)
+                      if R55_PC834 then
+                        (MpCommon.BmTriggerSig)(l_0_73, l_0_74, l_0_75)
                       end
-                      -- DECOMPILER ERROR at PC853: Overwrote pending register: R56 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC858: Overwrote pending register: R57 in 'AssignReg'
 
                       ;
-                      (mp.SetDetectionString)(l_0_72)
+                      (mp.SetDetectionString)(l_0_73)
                       do return mp.INFECTED end
-                      -- DECOMPILER ERROR at PC858: Confused about usage of register R55 for local variables in 'ReleaseLocals'
+                      -- DECOMPILER ERROR at PC863: Confused about usage of register R56 for local variables in 'ReleaseLocals'
 
                       -- DECOMPILER ERROR: 36 unprocessed JMP targets
                     end

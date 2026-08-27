@@ -7,9 +7,6 @@ local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Lua:LastFolder0!.claude") or not (mp.get_mpattribute)("Lua:FnameAttr!settings.json") then
-  return mp.CLEAN
-end
 local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_2 = "ai_discovery_scan"
 local l_0_3 = "ai_claude_hooks_json"
