@@ -31,22 +31,25 @@ do
     local l_0_7 = nil
     if l_0_6 == nil then
       local l_0_8 = (MpCommon.Base64Encode)((string.sub)(l_0_5, 1, 1024))
-      local l_0_9 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))
-      -- DECOMPILER ERROR at PC103: Overwrote pending register: R7 in 'AssignReg'
+      local l_0_9 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK)
+      local l_0_10 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))
+      -- DECOMPILER ERROR at PC108: Overwrote pending register: R8 in 'AssignReg'
 
-      if l_0_9 == nil or nil ~= nil or l_0_6 ~= nil then
-        local l_0_10 = (MpCommon.GetProcessAttributeValue)(l_0_9, "inherit:AIDiscovery:Cpe")
-        ;
-        (mp.SetDetectionString)(safeJsonSerialize({AgentSessionId = l_0_6, LastMessage = l_0_8, CPEId = l_0_10 or ""}))
-      end
       do
+        if l_0_10 ~= nil and (MpCommon.GetProcessAttributeValue)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery:Cpe") == nil then
+          local l_0_11, l_0_12, l_0_13, l_0_14 = nil, (MpCommon.GetProcessAttributeValue)(l_0_10, "inherit:AIDiscovery:Cpe")
+        end
+        -- DECOMPILER ERROR at PC131: Confused about usage of register: R8 in 'UnsetPending'
+
         do
           do
+            ;
+            (mp.SetDetectionString)(safeJsonSerialize({AgentSessionId = l_0_6, LastMessage = l_0_8, CPEId = l_0_6 == nil or "", Framework = tostring(not l_0_11 and l_0_9 or ""), EnableInPortal = true}))
             do return mp.INFECTED end
-            -- DECOMPILER ERROR at PC130: Overwrote pending register: R3 in 'AssignReg'
+            -- DECOMPILER ERROR at PC151: Overwrote pending register: R3 in 'AssignReg'
 
             do return l_0_6.CLEAN end
-            -- DECOMPILER ERROR at PC133: freeLocal<0 in 'ReleaseLocals'
+            -- DECOMPILER ERROR at PC154: freeLocal<0 in 'ReleaseLocals'
 
           end
         end

@@ -122,6 +122,7 @@ if not l_0_8.projects then
   l_0_10.disabledMcpjsonServers = l_0_9(l_0_8, "disabledMcpjsonServers")
   l_0_10.allowedMcpServers = l_0_9(l_0_8, "allowedMcpServers")
   l_0_10.deniedMcpServers = l_0_9(l_0_8, "deniedMcpServers")
+  l_0_10.hooks = l_0_9(l_0_8, "hooks")
   if isnull(l_0_10) then
     return mp.CLEAN
   end
