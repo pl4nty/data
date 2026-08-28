@@ -421,22 +421,11 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_12 = 5.6689060739088e+17
       l_0_13 = 5.7026831999658e+17
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-      l_0_9 = MpCommon
-      l_0_10 = "IsSampled"
-      l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 80000
-      l_0_11 = false
-      l_0_12 = false
-      l_0_13 = false
-      l_0_9 = l_0_9(l_0_10, l_0_11, l_0_12, l_0_13)
-      l_0_10 = true
-      if l_0_9 == l_0_10 then
-        l_0_9 = "lenovodriverbus"
-        l_0_11 = "lenovodriverbus_asr_driver"
-        l_0_12 = 0
-        l_0_13 = 5.6294995342145e+14
-        l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-      end
+      l_0_9 = "lenovodriverbus"
+      l_0_11 = "lenovodriverbus_asr_driver"
+      l_0_12 = 0
+      l_0_13 = 5.6294995342145e+14
+      l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = "cormem"
       l_0_11 = "cormem_asr_driver"
       l_0_12 = 2.5332747903959e+15
@@ -518,41 +507,30 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
       l_0_12 = 0
       l_0_13 = 2.8147497671067e+14
       l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
+      l_0_9 = "dpmemio"
+      l_0_11 = "dpmemio_asr_driver"
+      l_0_12 = 2.8147497671066e+14
+      l_0_13 = 1.6888502534963e+15
+      l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
+      l_0_9 = "memctl"
+      l_0_11 = "memctl_asr_driver"
+      l_0_12 = 2.8149228837274e+14
+      l_0_13 = 2.8149228837274e+14
+      l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
+      l_0_9 = "asrcddrv"
+      l_0_11 = "asrcddrv_asr_driver"
+      l_0_12 = 0
+      l_0_13 = 2.8147497671066e+14
+      l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
+      l_0_9 = "processmonitordriver"
+      l_0_11 = "processmonitordriver_asr_driver"
+      l_0_12 = 0
+      l_0_13 = 3.096370773033e+15
+      l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
       l_0_9 = MpCommon
       l_0_10 = "IsSampled"
       l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 80000
-      l_0_11 = false
-      l_0_12 = false
-      l_0_13 = false
-      l_0_9 = l_0_9(l_0_10, l_0_11, l_0_12, l_0_13)
-      l_0_10 = true
-      if l_0_9 == l_0_10 then
-        l_0_9 = "dpmemio"
-        l_0_11 = "dpmemio_asr_driver"
-        l_0_12 = 2.8147497671066e+14
-        l_0_13 = 1.6888502534963e+15
-        l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-        l_0_9 = "memctl"
-        l_0_11 = "memctl_asr_driver"
-        l_0_12 = 2.8149228837274e+14
-        l_0_13 = 2.8149228837274e+14
-        l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-        l_0_9 = "asrcddrv"
-        l_0_11 = "asrcddrv_asr_driver"
-        l_0_12 = 0
-        l_0_13 = 2.8147497671066e+14
-        l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-        l_0_9 = "processmonitordriver"
-        l_0_11 = "processmonitordriver_asr_driver"
-        l_0_12 = 0
-        l_0_13 = 3.096370773033e+15
-        l_0_8[l_0_9], l_0_10 = l_0_10, {l_0_11, l_0_12, l_0_13}
-      end
-      l_0_9 = MpCommon
-      l_0_10 = "IsSampled"
-      l_0_9 = l_0_9[l_0_10]
-      l_0_10 = 4000
+      l_0_10 = 8000
       l_0_11 = false
       l_0_12 = false
       l_0_13 = false
@@ -708,7 +686,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
                 end
               end
             end
-            -- DECOMPILER ERROR at PC1614: Confused about usage of register R13 for local variables in 'ReleaseLocals'
+            -- DECOMPILER ERROR at PC1592: Confused about usage of register R13 for local variables in 'ReleaseLocals'
 
           end
           l_0_2 = nil
@@ -829,47 +807,47 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
             local l_0_34 = nil
             local l_0_35 = nil
             local l_0_36 = nil
+            -- DECOMPILER ERROR at PC1712: Overwrote pending register: R9 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC1713: Overwrote pending register: R10 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC1717: Overwrote pending register: R9 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC1718: Overwrote pending register: R10 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC1720: Overwrote pending register: R10 in 'AssignReg'
+
+            if not l_0_10 then
+              l_0_10(l_0_11, l_0_4, "AsrRuleRqSpace")
+              -- DECOMPILER ERROR at PC1724: Overwrote pending register: R9 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1725: Overwrote pending register: R10 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1727: Overwrote pending register: R10 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1729: Confused about usage of register: R4 in 'UnsetPending'
+
+              l_0_10(l_0_11, l_0_3, "AsrRuleRqSpace")
+              -- DECOMPILER ERROR at PC1731: Overwrote pending register: R9 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1732: Overwrote pending register: R9 in 'AssignReg'
+
+              return l_0_10
+            end
             -- DECOMPILER ERROR at PC1734: Overwrote pending register: R9 in 'AssignReg'
 
             -- DECOMPILER ERROR at PC1735: Overwrote pending register: R10 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1739: Overwrote pending register: R9 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1736: Overwrote pending register: R9 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1740: Overwrote pending register: R10 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1737: Overwrote pending register: R10 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1742: Overwrote pending register: R10 in 'AssignReg'
-
-            if not l_0_10 then
-              l_0_10(l_0_11, l_0_4, "AsrRuleRqSpace")
-              -- DECOMPILER ERROR at PC1746: Overwrote pending register: R9 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1747: Overwrote pending register: R10 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1749: Overwrote pending register: R10 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1751: Confused about usage of register: R4 in 'UnsetPending'
-
-              l_0_10(l_0_11, l_0_3, "AsrRuleRqSpace")
-              -- DECOMPILER ERROR at PC1753: Overwrote pending register: R9 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1754: Overwrote pending register: R9 in 'AssignReg'
-
-              return l_0_10
-            end
-            -- DECOMPILER ERROR at PC1756: Overwrote pending register: R9 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC1757: Overwrote pending register: R10 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC1758: Overwrote pending register: R9 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC1759: Overwrote pending register: R10 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC1761: Overwrote pending register: R10 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1739: Overwrote pending register: R10 in 'AssignReg'
 
             local l_0_37 = nil
-            -- DECOMPILER ERROR at PC1763: Overwrote pending register: R10 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1741: Overwrote pending register: R10 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1765: Overwrote pending register: R10 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1743: Overwrote pending register: R10 in 'AssignReg'
 
             local l_0_38 = nil
             if l_0_10 == nil or l_0_10 == "" or l_0_11 == nil or l_0_11 == "" then
@@ -879,303 +857,303 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
             if ((MpCommon.PathToWin32Path)(l_0_10 .. l_0_22 .. l_0_30)) == nil or ((MpCommon.PathToWin32Path)(l_0_10 .. l_0_22 .. l_0_30)) == "" then
               return mp.CLEAN
             end
-            -- DECOMPILER ERROR at PC1804: Overwrote pending register: R13 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1782: Overwrote pending register: R13 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1808: Overwrote pending register: R13 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1786: Overwrote pending register: R13 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1809: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1787: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1810: Overwrote pending register: R13 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1788: Overwrote pending register: R13 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1811: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1789: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1812: Confused about usage of register: R4 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC1790: Confused about usage of register: R4 in 'UnsetPending'
 
             local l_0_40, l_0_41 = nil
-            -- DECOMPILER ERROR at PC1817: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1795: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1820: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1798: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1821: Overwrote pending register: R15 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1799: Overwrote pending register: R15 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1822: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1800: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1825: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1803: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1826: Overwrote pending register: R14 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1804: Overwrote pending register: R14 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC1827: Overwrote pending register: R15 in 'AssignReg'
+            -- DECOMPILER ERROR at PC1805: Overwrote pending register: R15 in 'AssignReg'
 
             if pcall(l_0_22, l_0_30, l_0_31, l_0_32) and l_0_22 ~= l_0_30 then
               if l_0_2 == l_0_30 then
                 l_0_30(l_0_31)
               end
-              -- DECOMPILER ERROR at PC1829: Overwrote pending register: R14 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1807: Overwrote pending register: R14 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1830: Overwrote pending register: R15 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1808: Overwrote pending register: R15 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1831: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1809: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1832: Overwrote pending register: R15 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1810: Overwrote pending register: R15 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1833: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1811: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1834: Confused about usage of register: R4 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC1812: Confused about usage of register: R4 in 'UnsetPending'
 
               local l_0_42, l_0_43 = nil
-              -- DECOMPILER ERROR at PC1838: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1816: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1841: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1819: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1842: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1820: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1844: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1822: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1847: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1825: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1848: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1826: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1850: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1828: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1851: Overwrote pending register: R18 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1829: Overwrote pending register: R18 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1852: Confused about usage of register: R4 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC1830: Confused about usage of register: R4 in 'UnsetPending'
 
               if l_0_30 and l_0_31 ~= l_0_32 and l_0_32 == l_0_33 then
                 l_0_32(l_0_33, l_0_34, l_0_35)
               end
-              -- DECOMPILER ERROR at PC1854: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1832: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1855: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1833: Overwrote pending register: R16 in 'AssignReg'
 
               return l_0_32
             end
             do
-              -- DECOMPILER ERROR at PC1857: Overwrote pending register: R14 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1835: Overwrote pending register: R14 in 'AssignReg'
 
               local l_0_44 = nil
-              -- DECOMPILER ERROR at PC1858: Overwrote pending register: R15 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1836: Overwrote pending register: R15 in 'AssignReg'
 
               local l_0_45 = nil
-              -- DECOMPILER ERROR at PC1859: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1837: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1860: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1838: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1861: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1839: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1862: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1840: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1866: Overwrote pending register: R14 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1844: Overwrote pending register: R14 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1868: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1846: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1869: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1847: Overwrote pending register: R17 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1870: Overwrote pending register: R16 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1848: Overwrote pending register: R16 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1871: Overwrote pending register: R17 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1849: Overwrote pending register: R17 in 'AssignReg'
 
               if l_0_32 then
                 local l_0_46 = nil
-                -- DECOMPILER ERROR at PC1873: Overwrote pending register: R17 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1851: Overwrote pending register: R17 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1876: Overwrote pending register: R17 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1854: Overwrote pending register: R17 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1877: Overwrote pending register: R17 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1855: Overwrote pending register: R17 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1878: Overwrote pending register: R18 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1856: Overwrote pending register: R18 in 'AssignReg'
 
                 if l_0_32 == l_0_33 then
                   l_0_33(l_0_34)
-                  -- DECOMPILER ERROR at PC1880: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1858: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1881: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1859: Overwrote pending register: R17 in 'AssignReg'
 
                   return l_0_33
                 else
-                  -- DECOMPILER ERROR at PC1884: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1862: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1885: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1863: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1886: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1864: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1887: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1865: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1888: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1866: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1889: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1867: Overwrote pending register: R18 in 'AssignReg'
 
                   local l_0_47 = nil
-                  -- DECOMPILER ERROR at PC1891: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1869: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1894: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1872: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1895: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1873: Overwrote pending register: R18 in 'AssignReg'
 
                   if l_0_33 == l_0_34 then
                     return l_0_34
                   end
-                  -- DECOMPILER ERROR at PC1897: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1875: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1898: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1876: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1900: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1878: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1903: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1881: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1904: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1882: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1906: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1884: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1911: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1889: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1912: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1890: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1913: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1891: Overwrote pending register: R19 in 'AssignReg'
 
                   if l_0_34 == l_0_35 and l_0_34 == l_0_35 and l_0_33 < l_0_32 then
                     l_0_34(l_0_35)
-                    -- DECOMPILER ERROR at PC1915: Overwrote pending register: R15 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1893: Overwrote pending register: R15 in 'AssignReg'
 
                   end
                 end
                 do
-                  -- DECOMPILER ERROR at PC1920: Overwrote pending register: R16 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1898: Overwrote pending register: R16 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1921: Overwrote pending register: R16 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1899: Overwrote pending register: R16 in 'AssignReg'
 
                   if not l_0_30 and not l_0_31 then
                     return l_0_32
                   end
-                  -- DECOMPILER ERROR at PC1923: Overwrote pending register: R16 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1901: Overwrote pending register: R16 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1924: Overwrote pending register: R16 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1902: Overwrote pending register: R16 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1925: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1903: Overwrote pending register: R17 in 'AssignReg'
 
                   l_0_32(l_0_33)
-                  -- DECOMPILER ERROR at PC1927: Overwrote pending register: R16 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1905: Overwrote pending register: R16 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1928: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1906: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1929: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1907: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1930: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1908: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1931: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1909: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1932: Confused about usage of register: R4 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1910: Confused about usage of register: R4 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1932: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1910: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1933: Confused about usage of register: R11 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1911: Confused about usage of register: R11 in 'UnsetPending'
 
                   local l_0_48 = nil
-                  -- DECOMPILER ERROR at PC1939: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1917: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1940: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1918: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1941: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1919: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1942: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1920: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1943: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1921: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1944: Confused about usage of register: R4 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1922: Confused about usage of register: R4 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1944: Overwrote pending register: R20 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1922: Overwrote pending register: R20 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1945: Overwrote pending register: R21 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1923: Overwrote pending register: R21 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1946: Confused about usage of register: R6 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1924: Confused about usage of register: R6 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1946: Overwrote pending register: R22 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1924: Overwrote pending register: R22 in 'AssignReg'
 
                   if not l_0_32 then
                     l_0_39 = 1
                     l_0_33(l_0_34, l_0_35, l_0_36, l_0_37, l_0_38, l_0_39)
-                    -- DECOMPILER ERROR at PC1949: Overwrote pending register: R17 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1927: Overwrote pending register: R17 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1950: Overwrote pending register: R18 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1928: Overwrote pending register: R18 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1951: Overwrote pending register: R19 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1929: Overwrote pending register: R19 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1952: Overwrote pending register: R18 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1930: Overwrote pending register: R18 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1953: Overwrote pending register: R19 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1931: Overwrote pending register: R19 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1954: Confused about usage of register: R4 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1932: Confused about usage of register: R4 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1954: Overwrote pending register: R20 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1932: Overwrote pending register: R20 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1955: Confused about usage of register: R11 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1933: Confused about usage of register: R11 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1955: Overwrote pending register: R21 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1933: Overwrote pending register: R21 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1956: Confused about usage of register: R5 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1934: Confused about usage of register: R5 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1956: Overwrote pending register: R22 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1934: Overwrote pending register: R22 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1957: Confused about usage of register: R6 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1935: Confused about usage of register: R6 in 'UnsetPending'
 
                     l_0_39 = 315360000
                     l_0_33(l_0_34, l_0_35, l_0_36, l_0_37, l_0_38, l_0_39)
                   end
-                  -- DECOMPILER ERROR at PC1959: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1937: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1960: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1938: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1961: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1939: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1964: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1942: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1965: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1943: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1966: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1944: Overwrote pending register: R18 in 'AssignReg'
 
                   if l_0_2 == l_0_33 then
                     l_0_33(l_0_34)
                   end
-                  -- DECOMPILER ERROR at PC1968: Overwrote pending register: R17 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1946: Overwrote pending register: R17 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1969: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1947: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1970: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1948: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1971: Overwrote pending register: R18 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1949: Overwrote pending register: R18 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1972: Overwrote pending register: R19 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1950: Overwrote pending register: R19 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1973: Confused about usage of register: R4 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1951: Confused about usage of register: R4 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1973: Overwrote pending register: R20 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1951: Overwrote pending register: R20 in 'AssignReg'
 
                   l_0_33 = l_0_33(l_0_34, l_0_35, l_0_36)
                   do
                     local l_0_49, l_0_50 = nil
-                    -- DECOMPILER ERROR at PC1977: Overwrote pending register: R19 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1955: Overwrote pending register: R19 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1980: Overwrote pending register: R19 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1958: Overwrote pending register: R19 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1981: Overwrote pending register: R20 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1959: Overwrote pending register: R20 in 'AssignReg'
 
                     if l_0_33 and l_0_34 ~= l_0_35 then
                       l_0_35 = l_0_35(l_0_36)
-                      -- DECOMPILER ERROR at PC1983: Overwrote pending register: R20 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC1961: Overwrote pending register: R20 in 'AssignReg'
 
                       if l_0_35 == l_0_36 then
                         l_0_35 = pcall
-                        -- DECOMPILER ERROR at PC1987: Overwrote pending register: R20 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1965: Overwrote pending register: R20 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1988: Overwrote pending register: R21 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1966: Overwrote pending register: R21 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1989: Overwrote pending register: R20 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1967: Overwrote pending register: R20 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1990: Overwrote pending register: R21 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1968: Overwrote pending register: R21 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1991: Confused about usage of register: R4 in 'UnsetPending'
+                        -- DECOMPILER ERROR at PC1969: Confused about usage of register: R4 in 'UnsetPending'
 
-                        -- DECOMPILER ERROR at PC1991: Overwrote pending register: R22 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1969: Overwrote pending register: R22 in 'AssignReg'
 
                         l_0_35(l_0_36, l_0_37, l_0_38)
                       end
@@ -1183,7 +1161,7 @@ if l_0_0 ~= nil and l_0_0.OriginalFilename ~= nil then
                     l_0_35 = mp
                     l_0_35 = l_0_35.CLEAN
                     do return l_0_35 end
-                    -- DECOMPILER ERROR at PC1996: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+                    -- DECOMPILER ERROR at PC1974: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
                   end
                 end

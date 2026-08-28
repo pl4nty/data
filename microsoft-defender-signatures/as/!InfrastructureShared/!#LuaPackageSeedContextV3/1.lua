@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFPackageSeedContextA\1.luac 
+-- Command line: lua\!InfrastructureShared\!#LuaPackageSeedContextV3\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -905,21 +905,27 @@ end
                   -- DECOMPILER ERROR at PC929: Confused about usage of register: R53 in 'UnsetPending'
 
                   if (((l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_36 == nil) or #l_0_30 > 0) and #l_0_31 <= 0) or #l_0_28 > 0 then
+                    local l_0_122 = nil
+                    if type(safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28})) ~= "string" or safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) == "" then
+                      return mp.CLEAN
+                    end
+                    if #safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) > 16384 then
+                      return mp.CLEAN
+                    end
                     do
-                      local l_0_122 = nil
-                      if type(safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28})) ~= "string" or safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) == "" then
+                      local l_0_123 = nil
+                      if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) == nil then
                         return mp.CLEAN
                       end
-                      if #safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) > 16384 then
-                        return mp.CLEAN
-                      end
+                      -- DECOMPILER ERROR at PC988: Overwrote pending register: R65 in 'AssignReg'
+
                       ;
-                      (mp.SetDetectionString)(safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}))
-                      do return mp.INFECTED end
-                      -- DECOMPILER ERROR at PC981: freeLocal<0 in 'ReleaseLocals'
+                      (MpCommon.BmTriggerSig)(R63_PC412, "PackageSeedContextV3", R65_PC412)
+                      do return mp.CLEAN end
+                      -- DECOMPILER ERROR at PC993: freeLocal<0 in 'ReleaseLocals'
 
                       -- WARNING: undefined locals caused missing assignments!
-                      -- DECOMPILER ERROR: 76 unprocessed JMP targets
+                      -- DECOMPILER ERROR: 77 unprocessed JMP targets
                     end
                   end
                 end
