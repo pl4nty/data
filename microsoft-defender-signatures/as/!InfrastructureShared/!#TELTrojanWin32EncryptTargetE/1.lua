@@ -12,44 +12,52 @@ if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
 l_0_0 = (string.lower)(l_0_0)
-if (string.find)(l_0_0, "attackiq_staged_data", 1, true) == nil then
+if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-local l_0_1 = (string.match)(l_0_0, "(%.[^%.\\]+)$")
-local l_0_2 = {}
-l_0_2[".doc"] = true
-l_0_2[".docx"] = true
-l_0_2[".xls"] = true
-l_0_2[".xlsx"] = true
-l_0_2[".pdf"] = true
-if l_0_1 == nil or l_0_2[l_0_1] ~= true then
+local l_0_1, l_0_2 = (string.match)(l_0_0, "(%.[^%.\\]+)%.([^%.\\]+)$")
+if l_0_1 == nil or l_0_1 == "" or l_0_2 == nil or l_0_2 == "" then
   return mp.CLEAN
 end
-local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
-if l_0_3 == nil or (string.lower)(l_0_3) ~= "cmd.exe" then
+local l_0_3 = {}
+l_0_3[".doc"] = true
+l_0_3[".docx"] = true
+l_0_3[".xls"] = true
+l_0_3[".xlsx"] = true
+l_0_3[".pdf"] = true
+l_0_3[".csv"] = true
+l_0_3[".txt"] = true
+if l_0_3[l_0_1] ~= true then
   return mp.CLEAN
 end
-local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-if l_0_4 == nil or l_0_4 == "" then
+local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+if l_0_4 == nil or (string.lower)(l_0_4) ~= "rw-sim.exe" then
   return mp.CLEAN
 end
-local l_0_5 = (mp.GetProcessCommandLine)(l_0_4)
-if l_0_5 == nil or (string.find)((string.lower)(l_0_5), "aiq-", 1, true) == nil then
+local l_0_5 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+if l_0_5 == nil or l_0_5 == "" then
   return mp.CLEAN
 end
-local l_0_6 = (mp.GetParentProcInfo)(l_0_4)
-if l_0_6 == nil or l_0_6.ppid == nil or l_0_6.image_path == nil then
+local l_0_6 = (mp.GetProcessCommandLine)(l_0_5)
+if l_0_6 == nil or l_0_6 == "" then
   return mp.CLEAN
 end
-local l_0_7 = (string.match)((string.lower)(l_0_6.image_path), "([^\\]+)$")
-if l_0_7 ~= "python.exe" then
+l_0_6 = (string.lower)(l_0_6)
+if l_0_6 == nil or l_0_6 == "" then
   return mp.CLEAN
 end
-local l_0_8 = (mp.GetProcessCommandLine)(l_0_6.ppid)
-if l_0_8 == nil or (string.find)((string.lower)(l_0_8), "attackiq", 1, true) == nil then
+local l_0_7, l_0_8 = (string.match)(l_0_6, "mode%s+([^%s]+).+extension%s+([^%s]+)$")
+if l_0_7 ~= "encrypt" then
+  return mp.CLEAN
+end
+if l_0_8 ~= l_0_2 then
   return mp.CLEAN
 end
 ;
-(MpCommon.BmTriggerSig)(l_0_4, "BAS_EncryptTargetE", l_0_0)
+(mp.set_mpattribute)("MpDisableMOACSyncInsert")
+;
+(mp.set_mpattribute)("MpDisableCaching")
+;
+(MpCommon.BmTriggerSig)(l_0_5, "BAS_EncryptTargetE", l_0_0)
 return mp.INFECTED
 
