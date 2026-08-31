@@ -16,15 +16,21 @@ if isnull(l_0_1) or (mp.IsKnownFriendlyFile)(l_0_1, true, false) then
 end
 local l_0_2 = l_0_1:lower()
 local l_0_3 = (string.match)(l_0_1, "..*[\\/](.+)")
--- DECOMPILER ERROR at PC109: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC109: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC109: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
 
--- DECOMPILER ERROR at PC109: Unhandled construct in 'MakeBoolean' P3
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
 
-if (l_0_2:find("..-:\\windows\\") and not l_0_2:find("\\temp\\", 1, true)) or l_0_2:find("\\swd\\ncflite\\nedbank.ncf.sdk.startup.dll") then
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
+
+-- DECOMPILER ERROR at PC130: Unhandled construct in 'MakeBoolean' P3
+
+if (l_0_2:find("..-:\\windows\\") and not l_0_2:find("\\temp\\", 1, true)) or l_0_2:find("\\solarwinds\\", 1, true) then
   return mp.CLEAN
 end
 local l_0_4 = (bm.get_imagepath)()

@@ -51,46 +51,51 @@ end
     return mp.CLEAN
   end
   local l_0_15 = nil
-  local l_0_16 = (string.lower)(l_0_5)
+  local l_0_16 = false
+  local l_0_17 = (string.lower)(l_0_5)
   if next(ExtractPartsFromUri(l_0_6)) == nil then
     return mp.CLEAN
   end
   if (ExtractPartsFromUri(l_0_6)).host == nil then
     return mp.CLEAN
   end
-  local l_0_17 = nil
+  local l_0_18 = nil
   if split((ExtractPartsFromUri(l_0_6)).host, ".") and #split((ExtractPartsFromUri(l_0_6)).host, ".") == 3 and (split((ExtractPartsFromUri(l_0_6)).host, "."))[#split((ExtractPartsFromUri(l_0_6)).host, ".")] then
-    local l_0_18 = nil
+    local l_0_19 = nil
     if isSuspTLD("." .. tostring((split((ExtractPartsFromUri(l_0_6)).host, "."))[#split((ExtractPartsFromUri(l_0_6)).host, ".")])) then
-      local l_0_19 = nil
-      local l_0_20 = AppendToRollingQueue
-      local l_0_21 = "IsClickFixCMD_Malicious"
-      l_0_20(l_0_21, l_0_16, l_0_6 or "1", 600, 200, 1)
+      l_0_16 = true
+      local l_0_20 = nil
+      local l_0_21 = AppendToRollingQueue
+      local l_0_22 = "IsClickFixCMD_Malicious"
+      l_0_21(l_0_22, l_0_17, l_0_6 or "1", 600, 200, 1)
     end
   end
   do
     if l_0_6 ~= nil then
-      local l_0_23 = nil
       local l_0_24 = nil
-      local l_0_25 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW"}
-      if ((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).determination == 2 and 60 <= (((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).confidence then
-        (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring((((SafeGetUrlReputation({l_0_6}, l_0_25, false, 2000)).urls)[l_0_6]).determination)))
+      local l_0_25 = nil
+      local l_0_26 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW", isSuspTld = l_0_16}
+      if ((SafeGetUrlReputation({l_0_6}, l_0_26, false, 2000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_26, false, 2000)).urls)[l_0_6]).determination == 2 and 60 <= (((SafeGetUrlReputation({l_0_6}, l_0_26, false, 2000)).urls)[l_0_6]).confidence then
+        (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring((((SafeGetUrlReputation({l_0_6}, l_0_26, false, 2000)).urls)[l_0_6]).determination)))
       end
     end
     do
-      local l_0_26 = nil
-      local l_0_27 = nil
-      local l_0_28 = AppendToRollingQueue
+      if not l_0_16 then
+        local l_0_27 = nil
+        local l_0_28 = nil
+        local l_0_29 = AppendToRollingQueue
+        l_0_29("IsClickFixCMD", l_0_17, l_0_6 or "1", 600, 200, 1)
+      end
       do
-        l_0_28("IsClickFixCMD", l_0_16, l_0_6 or "1", 600, 200, 1)
-        l_0_28 = bm
-        l_0_28 = l_0_28.add_related_string
-        l_0_28("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
-        l_0_28 = mp
-        l_0_28 = l_0_28.INFECTED
-        do return l_0_28 end
-        -- DECOMPILER ERROR at PC534: freeLocal<0 in 'ReleaseLocals'
+        do
+          ;
+          (bm.add_related_string)("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
+          ;
+          (bm.add_related_string)("ETW_ClipWrite_isSuspTld", tostring(l_0_16), bm.RelatedStringBMReport)
+          do return mp.INFECTED end
+          -- DECOMPILER ERROR at PC552: freeLocal<0 in 'ReleaseLocals'
 
+        end
       end
     end
   end
