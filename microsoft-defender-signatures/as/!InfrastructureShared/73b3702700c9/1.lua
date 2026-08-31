@@ -16,8 +16,28 @@ do
   local l_0_3 = nil
   if IsProcNameInParentProcessTree("BM", {"winword.exe", "excel.exe", "powerpnt.exe", "mspub.exe", "wscript.exe", "cscript.exe", "mshta.exe", "powershell.exe", "pwsh.exe", "rundll32.exe", "regsvr32.exe", "wmic.exe", "wmiprvse.exe"}) then
     add_parents()
-    return mp.INFECTED
+    local l_0_4 = nil
+    if (bm.get_imagepath)() == nil then
+      return mp.CLEAN
+    end
+    -- DECOMPILER ERROR at PC78: Confused about usage of register: R3 in 'UnsetPending'
+
+    do
+      do
+        if (string.find)((string.lower)((bm.get_imagepath)()), "\\appdata\\", 1, true) and (string.find)((string.lower)((bm.get_imagepath)()), "_x\\", 1, true) then
+          local l_0_5 = nil
+          if (bm.get_current_process_startup_info)() == nil or ((bm.get_current_process_startup_info)()).ppid == nil then
+            return mp.CLEAN
+          end
+          ;
+          (bm.request_SMS)(((bm.get_current_process_startup_info)()).ppid, "M")
+          ;
+          (bm.add_action)("SmsAsyncScanEvent", 1000)
+        end
+        do return mp.INFECTED end
+        return mp.CLEAN
+      end
+    end
   end
-  return mp.CLEAN
 end
 

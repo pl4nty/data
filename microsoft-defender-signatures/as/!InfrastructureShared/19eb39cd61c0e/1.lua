@@ -25,74 +25,84 @@ if (string.find)(l_0_3, "\\powershell.exe", 1, true) or (string.find)(l_0_3, "\\
   local l_0_7 = str_count_match
   local l_0_8 = l_0_3
   local l_0_9 = {}
-  -- DECOMPILER ERROR at PC118: No list found for R9 , SetList fails
+  -- DECOMPILER ERROR at PC120: No list found for R9 , SetList fails
 
 end
 do
-  -- DECOMPILER ERROR at PC121: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC123: Overwrote pending register: R7 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC125: Overwrote pending register: R10 in 'AssignReg'
+  -- DECOMPILER ERROR at PC127: Overwrote pending register: R10 in 'AssignReg'
 
   if (l_0_7.find)(l_0_3, "\\cmd.exe", "iex%(", true) then
     local l_0_10 = str_count_match
     local l_0_11 = l_0_3
     local l_0_12 = {}
-    -- DECOMPILER ERROR at PC135: Overwrote pending register: R12 in 'AssignReg'
+    -- DECOMPILER ERROR at PC137: Overwrote pending register: R12 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC136: Overwrote pending register: R13 in 'AssignReg'
+    -- DECOMPILER ERROR at PC138: Overwrote pending register: R13 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC137: Overwrote pending register: R14 in 'AssignReg'
+    -- DECOMPILER ERROR at PC139: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC138: Overwrote pending register: R15 in 'AssignReg'
+    -- DECOMPILER ERROR at PC140: Overwrote pending register: R15 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC139: No list found for R9 , SetList fails
+    -- DECOMPILER ERROR at PC141: Overwrote pending register: R16 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC141: Overwrote pending register: R6 in 'AssignReg'
+    -- DECOMPILER ERROR at PC142: Overwrote pending register: R17 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC143: Overwrote pending register: R18 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC144: No list found for R9 , SetList fails
+
+    -- DECOMPILER ERROR at PC146: Overwrote pending register: R6 in 'AssignReg'
 
   end
   do
-    -- DECOMPILER ERROR at PC142: Overwrote pending register: R7 in 'AssignReg'
+    -- DECOMPILER ERROR at PC147: Overwrote pending register: R7 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC146: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC151: Overwrote pending register: R10 in 'AssignReg'
 
     if (l_0_10.find)(l_0_3, "\\conhost.exe", "http", true) then
       local l_0_13 = str_count_match
       local l_0_14 = l_0_3
       local l_0_15 = {}
-      -- DECOMPILER ERROR at PC156: Overwrote pending register: R12 in 'AssignReg'
+      -- DECOMPILER ERROR at PC161: Overwrote pending register: R12 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC157: Overwrote pending register: R13 in 'AssignReg'
+      -- DECOMPILER ERROR at PC162: Overwrote pending register: R13 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC158: Overwrote pending register: R14 in 'AssignReg'
+      -- DECOMPILER ERROR at PC163: Overwrote pending register: R14 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC159: Overwrote pending register: R15 in 'AssignReg'
+      -- DECOMPILER ERROR at PC164: Overwrote pending register: R15 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC160: No list found for R9 , SetList fails
+      -- DECOMPILER ERROR at PC165: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC162: Overwrote pending register: R6 in 'AssignReg'
+      -- DECOMPILER ERROR at PC166: Overwrote pending register: R17 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC167: No list found for R9 , SetList fails
+
+      -- DECOMPILER ERROR at PC169: Overwrote pending register: R6 in 'AssignReg'
 
     end
     do
-      -- DECOMPILER ERROR at PC163: Overwrote pending register: R7 in 'AssignReg'
+      -- DECOMPILER ERROR at PC170: Overwrote pending register: R7 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC167: Overwrote pending register: R10 in 'AssignReg'
+      -- DECOMPILER ERROR at PC174: Overwrote pending register: R10 in 'AssignReg'
 
       if (l_0_13.find)(l_0_3, "\\msiexec.exe", " %-%-headless ", true) then
         local l_0_16 = str_count_match
         local l_0_17 = l_0_3
         local l_0_18 = {}
-        -- DECOMPILER ERROR at PC177: Overwrote pending register: R12 in 'AssignReg'
+        -- DECOMPILER ERROR at PC184: Overwrote pending register: R12 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC178: No list found for R9 , SetList fails
+        -- DECOMPILER ERROR at PC185: No list found for R9 , SetList fails
 
-        -- DECOMPILER ERROR at PC180: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC187: Overwrote pending register: R6 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC181: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC188: Overwrote pending register: R6 in 'AssignReg'
 
       end
       do
         do
-          -- DECOMPILER ERROR at PC184: Overwrote pending register: R7 in 'AssignReg'
+          -- DECOMPILER ERROR at PC191: Overwrote pending register: R7 in 'AssignReg'
 
           if l_0_6 >= 3 then
             return l_0_16.INFECTED
