@@ -24,7 +24,7 @@ do
 
   local l_0_4 = nil
   local l_0_5 = tostring(l_0_1.utf8p2)
-  if (string.len)(l_0_5) > 256 then
+  if (string.len)(l_0_5) > 3000 then
     return mp.CLEAN
   end
   local l_0_6, l_0_7 = , (mp.CheckUrl)(tostring(l_0_4.utf8p1))

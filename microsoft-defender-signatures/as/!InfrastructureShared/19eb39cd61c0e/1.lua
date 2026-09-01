@@ -17,7 +17,7 @@ if l_0_2 == nil or l_0_2.command_line == nil then
 end
 local l_0_3 = (string.lower)(l_0_2.command_line)
 local l_0_4, l_0_5 = (string.gsub)(l_0_3, "%^", "")
-if l_0_5 >= 16 then
+if l_0_5 >= 12 then
   return mp.INFECTED
 end
 local l_0_6 = 0
