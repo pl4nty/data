@@ -10,5 +10,5 @@ if not l_0_1 then
 end
 ;
 (MpCommon.SetOriginalFileName)(l_0_1, "PyArmorBinary")
-return mp.INFECTED
+return mp.CLEAN
 

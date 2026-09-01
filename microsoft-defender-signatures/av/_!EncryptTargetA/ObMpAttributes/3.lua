@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\_!EncryptTargetA\ObMpAttributes\2.luac 
+-- Command line: lua\_!EncryptTargetA\ObMpAttributes\3.luac 
 
 -- params : ...
 -- function num : 0
@@ -21,7 +21,7 @@ if l_0_2 == nil or l_0_2 == "" then
 end
 l_0_2 = (string.lower)(l_0_2)
 local l_0_3 = (string.match)(l_0_2, "(%.[^%.]+)$")
-if l_0_3 ~= ".x2anylock" then
+if l_0_3 ~= ".interlock" and l_0_3 ~= ".1nt3rlock" then
   return mp.CLEAN
 end
 ;
@@ -34,6 +34,6 @@ if l_0_4 == nil or l_0_4 == "" then
 end
 l_0_4 = (string.lower)(l_0_4)
 ;
-(MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_EncryptTargetB", l_0_4)
+(MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "BAS_EncryptTargetD", l_0_4)
 return mp.INFECTED
 
