@@ -36,7 +36,7 @@ This command updates firmware on connected displays if available. Please note th
 
 ### Example 1
 ```powershell
-PS C:\> Update-HPDisplayFirmware
+PS C:\> Update-HPDisplayFirmware -Experience "Interactive" 
 ```
 
 ## PARAMETERS

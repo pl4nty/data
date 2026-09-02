@@ -12,8 +12,8 @@
 
 @{
   RootModule = 'HP.Consent.psm1'
-  #FullModuleVersion = '1.8.6.1458'
-  ModuleVersion = '1.8.6'
+  #FullModuleVersion = '1.9.0.1648'
+  ModuleVersion = '1.9.0'
   GUID = '1d8ea5a1-45c4-4509-9b16-4019676d1ca8'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

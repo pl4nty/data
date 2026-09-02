@@ -15,8 +15,8 @@
   RootModule = 'HP.Utility.psm1'
 
   # Version number of this module.
-  #FullModuleVersion = '1.8.6.1458'
-  ModuleVersion = '1.8.6'
+  #FullModuleVersion = '1.9.0.1648'
+  ModuleVersion = '1.9.0'
 
   # ID used to uniquely identify this module
   GUID = 'E8C64CAB-D4F9-4994-AFC8-3DB040B0AEBE'

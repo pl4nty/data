@@ -2,9 +2,9 @@
 <helpItems schema="maml" xmlns="http://msh">
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Get-HpEpscBootlogEvidence</command:name>
+      <command:name>Get-HPEpscBootlogEvidence</command:name>
       <command:verb>Get</command:verb>
-      <command:noun>HpEpscBootlogEvidence</command:noun>
+      <command:noun>HPEpscBootlogEvidence</command:noun>
       <maml:description>
         <maml:para>Retrieves HP Endpoint Security Controller Bootlog Evidence</maml:para>
       </maml:description>
@@ -15,7 +15,7 @@
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Get-HpEpscBootlogEvidence</maml:name>
+        <maml:name>Get-HPEpscBootlogEvidence</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Nonce</maml:name>
           <maml:description>
@@ -118,14 +118,14 @@
         <maml:para>- When extracting from EpSC, the command requires appropriate system permissions</maml:para>
         <maml:para>- The nonce parameter must be exactly 32 bytes when specified</maml:para>
         <maml:para>- Binary evidence files should contain valid EpSC bootlog evidence data</maml:para>
-        <maml:para>- Evidence data includes cryptographic signatures that can be validated using Invoke-HpEpscBootlogEvidenceValidation</maml:para>
+        <maml:para>- Evidence data includes cryptographic signatures that can be validated using Invoke-HPEpscBootlogEvidenceValidation</maml:para>
         <maml:para>- Both -InFile and -OutFile should not be used together</maml:para>
       </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscBootlogEvidence</dev:code>
         <dev:remarks>
           <maml:para>Returns an object with HP EpSC bootlog evidence using a random nonce read from the EpSC on the current system.</maml:para>
         </dev:remarks>
@@ -133,21 +133,21 @@
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
-PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce</dev:code>
+PS C:\&gt; Get-HPEpscBootlogEvidence -Nonce $nonce</dev:code>
         <dev:remarks>
           <maml:para>Creates a custom 32-byte nonce and retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence -InFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscBootlogEvidence -InFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"</dev:code>
         <dev:remarks>
           <maml:para>Returns an object with HP EpSC bootlog evidence loaded from the specified binary file.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscBootlogEvidence -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscBootlogEvidence -OutFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"</dev:code>
         <dev:remarks>
           <maml:para>Retrieves HP EpSC bootlog evidence using a random nonce and saves the raw evidence data to the specified file.</maml:para>
         </dev:remarks>
@@ -155,7 +155,7 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce</dev:code>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
         <dev:code>PS C:\&gt; $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
-PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"</dev:code>
+PS C:\&gt; Get-HPEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"</dev:code>
         <dev:remarks>
           <maml:para>Creates a custom 32-byte nonce, retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system, and saves the raw evidence data to the specified file.</maml:para>
         </dev:remarks>
@@ -261,21 +261,21 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscCerts</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscCerts</dev:code>
         <dev:remarks>
           <maml:para>Returns an object with three HP EpSC certificates.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscCerts -OutFile "HP EpSC Certificates.pem"</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscCerts -OutFile "HP EpSC Certificates.pem"</dev:code>
         <dev:remarks>
           <maml:para>Retrieves HP EpSC certificates from current platform, returns an object with three HP EpSC certificates, and saves the certificates in PEM format to the specified file name.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-HpEpscCerts -InFile "HP EpSC Certificates.pem"</dev:code>
+        <dev:code>PS C:\&gt; Get-HPEpscCerts -InFile "HP EpSC Certificates.pem"</dev:code>
         <dev:remarks>
           <maml:para>Reads the specified HP EpSC certificate file in PEM format and returns an object with three HP EpSC certificates.</maml:para>
         </dev:remarks>
@@ -535,6 +535,343 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
         <dev:code>PS C:\&gt; Get-HPPlatformCertificateData -UseOssIntegration -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HPPlatformCertificates</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HPPlatformCertificates</command:noun>
+      <maml:description>
+        <maml:para>Downloads one or more HP platform certificate packages from OSS.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This cmdlet downloads platform certificate packages from the OSS (Order Status Service) API and saves them as ZIP files.</maml:para>
+      <maml:para>Exactly one request source must be provided:</maml:para>
+      <maml:para>- Use `-PurchaseOrder` to request all devices associated with a purchase order.</maml:para>
+      <maml:para>- Use `-SerialNumber` together with `-ProductNumber` to request a single device.</maml:para>
+      <maml:para>- Use `-ListFile` to request up to 50 devices from a text file containing `SerialNumber;ProductNumber` pairs.</maml:para>
+      <maml:para>Use `-UseOssIntegration` to enable OSS downloads. Although the switch is optional at PowerShell binding time, OSS integration is currently the only supported mode for this cmdlet, so execution fails validation if the switch is omitted. Successful downloads are written to the output folder as `platformcertificate_&lt;SerialNumber&gt; &lt;ProductNumber&gt;.zip`. Failed downloads create `platformcertificate &lt;SerialNumber&gt;_&lt;ProductNumber&gt;.error` files containing the OSS API status or error text. If `-OutputFolder` is not provided, files are written to the current working directory. The cmdlet returns a summary object that includes the total requested, succeeded, failed, and per-device results.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HPPlatformCertificates</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>UseOssIntegration</maml:name>
+          <maml:description>
+            <maml:para>Switch that enables OSS integration. This is currently the only supported mode for this cmdlet, and the command fails validation if the switch is omitted.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="PO">
+          <maml:name>PurchaseOrder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the purchase order number used to download platform certificate packages for all devices returned by OSS for that purchase order. This parameter is mutually exclusive with `-ListFile` and the `-SerialNumber`/`-ProductNumber` pair. Alias: `PO`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SerialNumber</maml:name>
+          <maml:description>
+            <maml:para>Specifies the device serial number for a single-device platform certificate download. This parameter must be used together with `-ProductNumber` and cannot be combined with `-PurchaseOrder` or `-ListFile`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ProductNumber</maml:name>
+          <maml:description>
+            <maml:para>Specifies the device product number for a single-device platform certificate download. This parameter must be used together with `-SerialNumber` and cannot be combined with `-PurchaseOrder` or `-ListFile`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ListFile</maml:name>
+          <maml:description>
+            <maml:para>Specifies the path to a text file containing one device per line in the format `SerialNumber;ProductNumber`. Empty lines are ignored. Leading and trailing spaces are trimmed. Lines that do not match the expected format, have missing values, fail the SerialNumber/ProductNumber regex validation, or are duplicate pairs are treated as invalid and produce a `.error` file in the output folder. The file can contain at most 50 non-empty lines. This parameter is mutually exclusive with `-PurchaseOrder` and the `-SerialNumber`/`-ProductNumber` pair.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>OutputFolder</maml:name>
+          <maml:description>
+            <maml:para>Specifies the folder where downloaded platform certificate ZIP files and `.error` files are written. If the folder does not exist, it is created. If this parameter is omitted, the current working directory is used.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Url</maml:name>
+          <maml:description>
+            <maml:para>Specifies a custom OSS API endpoint URL for the download operation. If omitted, the default production OSS API endpoint is used.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientId</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client identifier used for authentication. If omitted, the cmdlet can prompt for credentials interactively, depending on the execution environment.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>ClientSecret</maml:name>
+          <maml:description>
+            <maml:para>Specifies the OSS integration client secret used for authentication. Provide this value together with `-ClientId` for unattended or scripted use. If omitted, the cmdlet can prompt for credentials interactively, depending on the execution environment.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>UseOssIntegration</maml:name>
+        <maml:description>
+          <maml:para>Switch that enables OSS integration. This is currently the only supported mode for this cmdlet, and the command fails validation if the switch is omitted.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="PO">
+        <maml:name>PurchaseOrder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the purchase order number used to download platform certificate packages for all devices returned by OSS for that purchase order. This parameter is mutually exclusive with `-ListFile` and the `-SerialNumber`/`-ProductNumber` pair. Alias: `PO`.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SerialNumber</maml:name>
+        <maml:description>
+          <maml:para>Specifies the device serial number for a single-device platform certificate download. This parameter must be used together with `-ProductNumber` and cannot be combined with `-PurchaseOrder` or `-ListFile`.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ProductNumber</maml:name>
+        <maml:description>
+          <maml:para>Specifies the device product number for a single-device platform certificate download. This parameter must be used together with `-SerialNumber` and cannot be combined with `-PurchaseOrder` or `-ListFile`.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ListFile</maml:name>
+        <maml:description>
+          <maml:para>Specifies the path to a text file containing one device per line in the format `SerialNumber;ProductNumber`. Empty lines are ignored. Leading and trailing spaces are trimmed. Lines that do not match the expected format, have missing values, fail the SerialNumber/ProductNumber regex validation, or are duplicate pairs are treated as invalid and produce a `.error` file in the output folder. The file can contain at most 50 non-empty lines. This parameter is mutually exclusive with `-PurchaseOrder` and the `-SerialNumber`/`-ProductNumber` pair.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>OutputFolder</maml:name>
+        <maml:description>
+          <maml:para>Specifies the folder where downloaded platform certificate ZIP files and `.error` files are written. If the folder does not exist, it is created. If this parameter is omitted, the current working directory is used.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Url</maml:name>
+        <maml:description>
+          <maml:para>Specifies a custom OSS API endpoint URL for the download operation. If omitted, the default production OSS API endpoint is used.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientId</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client identifier used for authentication. If omitted, the cmdlet can prompt for credentials interactively, depending on the execution environment.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>ClientSecret</maml:name>
+        <maml:description>
+          <maml:para>Specifies the OSS integration client secret used for authentication. Provide this value together with `-ClientId` for unattended or scripted use. If omitted, the cmdlet can prompt for credentials interactively, depending on the execution environment.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>This cmdlet does not accept pipeline input.</maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>HP.PlatformCertificate.Validation.Validator.Models.PlatformCertificatesResult</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para>Returns a summary object with these properties:</maml:para>
+          <maml:para>- `TotalRequested`: Total number of device requests submitted to OSS.</maml:para>
+          <maml:para>- `TotalSucceeded`: Number of devices for which a certificate package was returned.</maml:para>
+          <maml:para>- `TotalFailed`: Number of devices that did not return a certificate package.</maml:para>
+          <maml:para>- `Results`: A collection of per-device results. Each entry includes `SerialNumber`, `ProductNumber`, `PurchaseOrder`, `IsSuccess`, and `ErrorMessage`.</maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>- `-UseOssIntegration` is optional in PowerShell parameter binding, but the cmdlet currently requires OSS mode and fails validation if the switch is omitted.</maml:para>
+        <maml:para>- Provide exactly one source: `-PurchaseOrder`, `-ListFile`, or `-SerialNumber` together with `-ProductNumber`.</maml:para>
+        <maml:para>- Successful downloads are saved as `platformcertificate_&lt;SerialNumber&gt;_&lt;ProductNumber&gt;.zip`.</maml:para>
+        <maml:para>- Failed downloads are saved as `platformcertificate_&lt;SerialNumber&gt;_&lt;ProductNumber&gt;.error` and contain the OSS API status or an internal package-format error message.</maml:para>
+        <maml:para>- If a returned certificate package is not valid Base64, the cmdlet writes an `.error` file instead of a ZIP file.</maml:para>
+        <maml:para>- Devices present in the request but absent from the API response each produce a `.error` file.</maml:para>
+        <maml:para>- When using `-PurchaseOrder` and the API returns an empty response, a single `platformcertificate_PO_&lt;PurchaseOrder&gt;.error` file is saved.</maml:para>
+        <maml:para>- The `-ListFile` can contain at most 50 non-empty lines. Lines with invalid format, missing values, regex-invalid SerialNumber or ProductNumber, or duplicate `SerialNumber;ProductNumber` pairs produce a `.error` file. SerialNumber must be exactly 10 alphanumeric characters. ProductNumber must be 6-7 alphanumeric characters with an optional `#XXX` suffix.</maml:para>
+        <maml:para>- Relative paths for `-ListFile` and `-OutputFolder` are resolved from the current PowerShell working directory.</maml:para>
+        <maml:para>- Network connectivity and valid OSS credentials are required.</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -PurchaseOrder "PO-001"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads platform certificate packages for all devices associated with purchase order `PO-001` and saves the results in the current working directory.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -PurchaseOrder "PO-001" -OutputFolder "C:\Downloads\PlatformCertificates"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads the purchase-order results and saves the ZIP and `.error` files in `C:\Downloads\PlatformCertificates`.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -SerialNumber "SN123456" -ProductNumber "PN123#ABA"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads the platform certificate package for a single device identified by serial number and product number.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 4 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -ListFile "C:\Temp\devices.txt"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads platform certificate packages for devices listed in `devices.txt`. Each non-empty line in the file must use the format `SerialNumber;ProductNumber`.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 5 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -ListFile "C:\Temp\devices.txt" -Url "https://custom-oss-api.example.com/api/v1/platformCerts" -ClientId "your-client-id" -ClientSecret "your-client-secret"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads platform certificate packages using a custom OSS endpoint and explicit credentials.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 6 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -PurchaseOrder "PO-001" | ConvertTo-Json -Depth 5</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads the certificate packages and converts the returned summary object to JSON for scripting or logging.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 7 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -ListFile "C:\Temp\devices.txt" -Verbose</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads platform certificate packages for the device list and emits verbose logging for authentication, request processing, and file creation.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 8 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPPlatformCertificates -UseOssIntegration -PO "PO-001"</dev:code>
+        <dev:remarks>
+          <maml:para>Downloads platform certificate packages for all devices associated with purchase order `PO-001` using the `PO` alias for `-PurchaseOrder`.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -990,9 +1327,9 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Invoke-HpEpscBootlogEvidenceValidation</command:name>
+      <command:name>Invoke-HPEpscBootlogEvidenceValidation</command:name>
       <command:verb>Invoke</command:verb>
-      <command:noun>HpEpscBootlogEvidenceValidation</command:noun>
+      <command:noun>HPEpscBootlogEvidenceValidation</command:noun>
       <maml:description>
         <maml:para>Validates HP Endpoint Security Controller Bootlog Evidence.</maml:para>
       </maml:description>
@@ -1000,17 +1337,17 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
     <maml:description>
       <maml:para>This cmdlet validates HP Endpoint Security Controller (EpSC) bootlog evidence. This includes evaluation of the security posture reported by the EpSC, the digital signature over that evidence generated by the reporting EpSC, and the certificate chain of the reporting EpSC that describes the key that was used by the reporting EpSC to sign the evidence. The cmdlet can also optionally confirm that the evidence includes a reference nonce and/or uuid value.</maml:para>
       <maml:para>The cmdlet can operate in different modes:</maml:para>
-      <maml:para>1. With EpSC Evidence and Certificates : When both HpEpscEvidence and HpEpscCerts parameters are provided, the cmdlet performs the EpSC security posture validation, the digital signature over that evidence generated by the reporting EpSC, and the certificate chain of the reporting EpSC that describes the key that was used by the reporting EpSC to sign the evidence.</maml:para>
-      <maml:para>2. Without EpSC Certificates : When the NoHpEpscCerts switch is specified, the security posture validation is performed without validating the digital signature over the evidence that is generated by the reporting EpSC.</maml:para>
+      <maml:para>1. With EpSC Evidence and Certificates : When both HPEpscEvidence and HPEpscCerts parameters are provided, the cmdlet performs the EpSC security posture validation, the digital signature over that evidence generated by the reporting EpSC, and the certificate chain of the reporting EpSC that describes the key that was used by the reporting EpSC to sign the evidence.</maml:para>
+      <maml:para>2. Without EpSC Certificates : When the NoHPEpscCerts switch is specified, the security posture validation is performed without validating the digital signature over the evidence that is generated by the reporting EpSC.</maml:para>
       <maml:para>3. Local vs External Platform Certificate : The cmdlet can use either a local platform certificate (UseLocalPlatformCertificate) or an external one (PlatformCertificate parameter) to validate the reporting EpSC is the same component that was in the system when the HP Platform Certificate was issued by HP. DEPENDENCY : HP Endpoint Security Controller Gen5 is required for retrieving evidence and certificates from the current platform.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Invoke-HpEpscBootlogEvidenceValidation</maml:name>
+        <maml:name>Invoke-HPEpscBootlogEvidenceValidation</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>HpEpscEvidence</maml:name>
+          <maml:name>HPEpscEvidence</maml:name>
           <maml:description>
-            <maml:para>The HP EpSC boot log evidence obtained from Get-HpEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
+            <maml:para>The HP EpSC boot log evidence obtained from Get-HPEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
           <dev:type>
@@ -1020,9 +1357,9 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
           <dev:defaultValue>Empty array</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>HpEpscCerts</maml:name>
+          <maml:name>HPEpscCerts</maml:name>
           <maml:description>
-            <maml:para>HP EpSC certificates from the current system obtained from Get-HpEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
+            <maml:para>HP EpSC certificates from the current system obtained from Get-HPEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
           <dev:type>
@@ -1079,7 +1416,7 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
           <dev:defaultValue>Empty string</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>NoHpEpscCerts</maml:name>
+          <maml:name>NoHPEpscCerts</maml:name>
           <maml:description>
             <maml:para>If specified, the cmdlet will not gather EpSC Certificates from the EpSC device on the current device and instead perform validations without using HP EpSC certificates. This is useful when EpSC certificates are not available or when performing validation in offline scenarios.</maml:para>
           </maml:description>
@@ -1093,9 +1430,9 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>HpEpscEvidence</maml:name>
+        <maml:name>HPEpscEvidence</maml:name>
         <maml:description>
-          <maml:para>The HP EpSC boot log evidence obtained from Get-HpEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
+          <maml:para>The HP EpSC boot log evidence obtained from Get-HPEpscBootlogEvidence cmdlet. This parameter contains the attestation data that needs to be validated.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
         <dev:type>
@@ -1105,9 +1442,9 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
         <dev:defaultValue>Empty array</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>HpEpscCerts</maml:name>
+        <maml:name>HPEpscCerts</maml:name>
         <maml:description>
-          <maml:para>HP EpSC certificates from the current system obtained from Get-HpEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
+          <maml:para>HP EpSC certificates from the current system obtained from Get-HPEpscCerts cmdlet. These certificates are used to validate the cryptographic signatures in the evidence.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
         <dev:type>
@@ -1165,7 +1502,7 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
         <dev:defaultValue>Empty string</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>NoHpEpscCerts</maml:name>
+        <maml:name>NoHPEpscCerts</maml:name>
         <maml:description>
           <maml:para>If specified, the cmdlet will not gather EpSC Certificates from the EpSC device on the current device and instead perform validations without using HP EpSC certificates. This is useful when EpSC certificates are not available or when performing validation in offline scenarios.</maml:para>
         </maml:description>
@@ -1205,69 +1542,69 @@ PS C:\&gt; Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test
         <maml:para>- DEPENDENCY : HP Endpoint Security Controller Gen5 is required for retrieving evidence and certificates from the current platform - This command requires an HP system with Endpoint Security Controller (EpSC) support</maml:para>
         <maml:para>- The validation process verifies cryptographic signatures and attestation data integrity</maml:para>
         <maml:para>- Nonce parameter should be a 32-byte array for proper validation</maml:para>
-        <maml:para>- When using NoHpEpscCerts parameter, some validation features may be limited</maml:para>
+        <maml:para>- When using NoHPEpscCerts parameter, some validation features may be limited</maml:para>
         <maml:para>- Platform certificate validation is essential for establishing trust in the validation process</maml:para>
       </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -UseLocalPlatformCertificate</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using certificates from the current system and the local platform certificate.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\HPInc.12345678.BASE.cer"</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -PlatformCertificate "C:\Certificates\HPInc.12345678.BASE.cer"</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using certificates from the current system and a specific platform certificate file.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence -Nonce $customNonce
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence -Nonce $customNonce
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using a custom nonce for the validation process.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence -Nonce $customNonce
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence -Nonce $customNonce
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -UseLocalPlatformCertificate -Nonce $customNonce -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using all possible evaluations including custom nonce and system UUID verification.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -NoHpEpscCerts -UseLocalPlatformCertificate</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -NoHPEpscCerts -UseLocalPlatformCertificate</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence without using HP EpSC certificates.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 6 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\" -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -PlatformCertificate "C:\Certificates\" -Uuid "12345678-1234-1234-1234-123456789abc"</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using a directory containing platform certificates and a specific system UUID.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 7 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $evidence = Get-HpEpscBootlogEvidence
-PS C:\&gt; $certs = Get-HpEpscCerts
-PS C:\&gt; Invoke-HpEpscBootlogEvidenceValidation -HpEpscEvidence $evidence -HpEpscCerts $certs -PlatformCertificate "C:\Certificates\certificates.zip"</dev:code>
+        <dev:code>PS C:\&gt; $evidence = Get-HPEpscBootlogEvidence
+PS C:\&gt; $certs = Get-HPEpscCerts
+PS C:\&gt; Invoke-HPEpscBootlogEvidenceValidation -HPEpscEvidence $evidence -HPEpscCerts $certs -PlatformCertificate "C:\Certificates\certificates.zip"</dev:code>
         <dev:remarks>
           <maml:para>Validates EpSC bootlog evidence using platform certificates from a zip file.</maml:para>
         </dev:remarks>

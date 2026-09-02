@@ -808,6 +808,90 @@ function Get-HPPrivateUnicodePath {
   return "\\?\$Path"
 }
 
+<#
+.SYNOPSIS
+  Adds startup and shutdown scripts to suspend BitLocker during startup and shutdown to prevent BitLocker recovery prompts after reboot. 
+
+.DESCRIPTION
+  This function creates two PowerShell scripts, cmsl_startup.ps1 and cmsl_shutdown.ps1, in the Group Policy Machine Scripts directory. 
+  The shutdown script suspends BitLocker protection for the operating system volume for one reboot, while the startup script removes both the startup and shutdown scripts and refreshes group policy. 
+  This helps prevent BitLocker recovery prompts that can occur if the system is rebooted.
+
+.EXAMPLE
+  Add-BitLockerShutdownStartupScripts
+
+.NOTES
+  - This is a private command for internal use only
+#>
+function Add-BitLockerShutdownStartupScripts
+{
+  # Logs will be written to both Shutdown folder and Startup folder
+  $log = ".\cmsl_bitlocker.log"
+  $scriptsPath = "${env:SystemRoot}\System32\GroupPolicy\Machine"
+  $shutdownScriptName = "cmsl_shutdown.ps1"
+  $startupScriptName = "cmsl_startup.ps1"
+  $shutdownScriptPath = "$scriptsPath\Scripts\Shutdown\$shutdownScriptName"
+  $startupScriptPath = "$scriptsPath\Scripts\Startup\$startupScriptName"
+
+  New-Item -ItemType Directory -Force -Path "$scriptsPath\Scripts" | Out-Null                           
+  New-Item -ItemType Directory -Force -Path "$scriptsPath\Scripts\Startup" | Out-Null                     
+  New-Item -ItemType Directory -Force -Path "$scriptsPath\Scripts\Shutdown" | Out-Null
+    
+  # Shutdown script
+  'Write-Host "Suspend BitLocker if necessary" *>> ' + $log + '
+  $volume = Get-BitLockerVolume | Where-Object VolumeType -EQ "OperatingSystem"
+  if ($volume.ProtectionStatus -ne "Off") {
+  Suspend-BitLocker -MountPoint $volume.MountPoint -RebootCount 1 *>> "' + $log + '"
+  }
+  else {
+    Write-Host "BitLocker protection is not enabled, no need to suspend" *>> ' + $log + '
+  }
+  ' | Out-File $shutdownScriptPath
+
+  $privateModulePath = (Get-Module -Name HP.Private).Path
+
+  # when Get-Softpaq is called during startup, Client Management module may not be loaded yet, so we need to get the module path so we can use 
+  # Remove-PSScriptsEntry and Add-PSScriptsEntry at startup and below
+  $clientManagementModule = Get-Module -Name HP.ClientManagement
+
+  if(-not $clientManagementModule){
+    Write-Verbose "HP.ClientManagement module not found in current session, importing first available module"
+    $clientManagementModule = Get-Module -ListAvailable -Name HP.ClientManagement | Select-Object -First 1
+    $clientManagementModulePath = $clientManagementModule.Path
+    Import-Module -Force $clientManagementModulePath
+  }
+  else {
+    $clientManagementModulePath = $clientManagementModule.Path
+  }
+
+  # Startup script
+  'Write-Host "Removing startup and shutdown scripts" *>> ' + $log + '
+  Remove-Item -Force "' + $startupScriptPath + '" *>> "' + $log + '"
+  Remove-Item -Force "' + $shutdownScriptPath + '" *>> "' + $log + '"
+  if (Get-Module -Name HP.Private) {remove-module -force HP.Private }
+  if (Get-Module -Name HP.ClientManagement) {remove-module -force HP.ClientManagement }
+  Import-Module -Force "' + $privateModulePath + '" *>> "' + $log + '"
+  Import-Module -Force "' + $clientManagementModulePath + '" *>> "' + $log + '"
+  Remove-PSScriptsEntry -Type "Startup" -CmdLine "' + $startupScriptName + '" *>> "' + $log + '"
+  Remove-PSScriptsEntry -Type "Shutdown" -CmdLine "' + $shutdownScriptName + '" *>> "' + $log + '"
+  gpupdate /wait:0 /force /target:computer *>> "' + $log + '"
+  ' | Out-File $startupScriptPath
+
+  Remove-PSScriptsEntry -Type "Startup" -CmdLine $startupScriptName | Out-Null
+  Remove-PSScriptsEntry -Type "Shutdown" -CmdLine $shutdownScriptName | Out-Null
+
+  Add-PSScriptsEntry -Type "Startup" -CmdLine $startupScriptName
+  Add-PSScriptsEntry -Type "Shutdown" -CmdLine $shutdownScriptName
+
+  $gpt = "${env:SystemRoot}\System32\GroupPolicy\gpt.ini"
+  "[General]`ngPCMachineExtensionNames=[{42B5FAAE-6536-11D2-AE5A-0000F87571E3}{40B6664F-4972-11D1-A7CA-0000F87571E3}]`nVersion=65537" | Set-Content -Path $gpt -Force
+
+  # refresh group policy to ensure the scripts are registered before reboot
+  gpupdate /wait:0 /force /target:computer
+
+  Write-Verbose "Added cmsl_startup.ps1 and cmsl_shutdown.ps1. Logs will be written to $log"
+}
+
 # perform an action after a SoftPaq download completed
 
 <#
@@ -845,18 +929,31 @@ function Invoke-HPPostDownloadSoftpaqAction
     }
     "install" {
       #$PostDownloadCmd = descendNodesAndGet  $info -field "install" 
+
       if($Destination){
         # the /f switch for SoftPaq executables = the runtime switch that 
         # overrides the default target path specified in build time 
         $output = Start-Process -Wait -PassThru "$downloadedFile" -ArgumentList "/f `"$Destination`""
       }
-      else{
+      else {
         # default destination folder is C:\SWSetup\SP<$number>
         $output = Start-Process -Wait -PassThru "$downloadedFile"
       }
 
       $result = $?
       Write-Verbose -Message "Installation result: $result"
+
+      # Get the silent install command from the metadata (cannot determine from install command if BIOS firmware update SoftPaq, so need to check silent install command instead)
+      if (!$info) { $info = Get-HPSoftpaqMetadata $number }
+
+      $PostDownloadCmd = $info | Out-HPSoftpaqField -Field "silentinstall"
+      Write-Verbose ("Checking if $PostDownloadCmd includes BIOS firmware update executable")
+
+      if($PostDownloadCmd -imatch "(HpFirmwareUpdRec|HPBIOSUPDREC)(64)?\.exe"){
+        Write-Verbose ("BIOS firmware update SoftPaq detected.")
+        Write-Verbose ("Adding BitLocker suspend and resume scripts to handle potential BitLocker issues with BIOS firmware update SoftPaqs")
+        Add-BitLockerShutdownStartupScripts
+      }
     }
     "silentinstall" {
       # Get the silent install command from the metadata
@@ -864,20 +961,20 @@ function Invoke-HPPostDownloadSoftpaqAction
 
       $PostDownloadCmd = $info | Out-HPSoftpaqField -Field "silentinstall"
       $passwordBinFile = $null
-      Write-Verbose ("Checking if $PostDownloadCmd includes HpFirmwareUpdRec.exe")
+      Write-Verbose ("Checking if $PostDownloadCmd includes BIOS firmware update executable")
 
-      if($PostDownloadCmd.Contains("HpFirmwareUpdRec.exe")){
-        Write-Verbose ("BIOS FUR SoftPaq detected.")
+      if($PostDownloadCmd -imatch "(HpFirmwareUpdRec|HPBIOSUPDREC)(64)?\.exe"){
+        Write-Verbose ("BIOS firmware update SoftPaq detected.")
         # if password is provided, create password file 
         # Write-HPFirmwarePasswordFile will throw an exception if there was an issue creating the password file
         if($password){
           Write-Verbose ("Password provided. Creating password file.")
-          try{
+          try {
             # convert secure string to plain text password
             $passwordPlainText = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
             Write-HPFirmwarePasswordFile -Password $passwordPlainText 
           }
-          catch{
+          catch {
             # No need to check BIOS Update Credential Policy first because if Password is provided, CMSL should create a password file
             throw "CMSL failed to create a password file. Will not continue: $_"
           }
@@ -890,7 +987,7 @@ function Invoke-HPPostDownloadSoftpaqAction
             $PostDownloadCmd += " -p '$($passwordBinFile.FullName)'"
             Write-Verbose ("PostDownloadCmd after adding password: $PostDownloadCmd")
           }
-          else{
+          else {
             # if password.bin file does not exist, we cannot continue with the silent install
             throw "CMSL failed to create a password file. Will not continue."
           }
@@ -898,6 +995,9 @@ function Invoke-HPPostDownloadSoftpaqAction
         else {
           Write-Verbose "No password provided."
         }
+
+        Write-Verbose ("Adding BitLocker suspend and resume scripts to handle potential BitLocker issues with BIOS firmware update SoftPaqs")
+        Add-BitLockerShutdownStartupScripts
       }
 
       if($Destination){
@@ -905,7 +1005,7 @@ function Invoke-HPPostDownloadSoftpaqAction
         # overrides the default target path specified in build time 
         $output = Start-Process -Wait -PassThru "$downloadedFile" -ArgumentList "-s","-e cmd.exe","/f `"$Destination`"","-a","/c $PostDownloadCmd"
       }
-      else{
+      else {
         # default destination folder is C:\SWSetup\SP<$number>
         $output = Start-Process -Wait -PassThru "$downloadedFile" -ArgumentList "-s","-e cmd.exe","-a","/c $PostDownloadCmd"
       }
@@ -923,7 +1023,7 @@ function Invoke-HPPostDownloadSoftpaqAction
         }
       }
       
-      # delete password file immediately after FUR SoftPaq is executed because FUR will handle password usage for firmware updates 
+      # delete password file immediately after firmware update SoftPaq is executed because BUR/FUR will handle password usage for firmware updates 
       if($passwordBinFile){
         Write-Verbose ("Deleting password file: $($passwordBinFile.FullName)")
         Remove-Item -Path $passwordBinFile.FullName -Force -ErrorAction Ignore

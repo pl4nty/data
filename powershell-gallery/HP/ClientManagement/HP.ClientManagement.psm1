@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
 }
 
 <#
@@ -2501,7 +2501,8 @@ function Get-HPCMSLEnvironment {
       'HP.SmartExperiences',
       'HP.Displays',
       'HP.Security',
-      'HP.Docks'
+      'HP.Docks',
+      'HP.WorkforceExperience'
     )
 
     $modulesFullVersion = @{}
@@ -2900,27 +2901,14 @@ function Get-HPDeviceDetails {
   }
 
   $filename = "platformList.cab"
-  $Url = "$Url/$filename"
-  $try_on_ftp = $false
+  $Url = "$($Url.TrimEnd('/'))/$filename"
 
   try {
     $file = Get-HPPrivateOfflineCacheFiles -url $Url -FileName $filename -Expand -Verbose:$VerbosePreference
   }
   catch {
-    # platformList is not reachable on AWS, try to get it from FTP
-    $try_on_ftp = $true
-  }
-
-  if ($try_on_ftp)
-  {
-    try {
-      $url = "https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/platformList.cab"
-      $file = Get-HPPrivateOfflineCacheFiles -url $url -FileName $filename -Expand -Verbose:$VerbosePreference
-    }
-    catch {
-      Write-Host -ForegroundColor Magenta "platformList is not available on AWS or FTP."
-      throw [System.Net.WebException]"Could not find platformList."
-    }
+    Write-Host -ForegroundColor Magenta "platformList is not available."
+    throw [System.Net.WebException]"Could not find platformList."
   }
 
   if (-not $platform -and -not $Name) {

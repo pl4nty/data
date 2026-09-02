@@ -15,8 +15,8 @@
 
     RootModule = 'HP.PlatformCertificate.Validation.PowerShell.dll'
 
-    #FullModuleVersion = '1.8.6.1458'
-    ModuleVersion = '1.8.6'
+    #FullModuleVersion = '1.9.0.1648'
+    ModuleVersion = '1.9.0'
     GUID = '2ad9a913-8e17-46e1-aea1-b4056b4014c7'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'
@@ -28,6 +28,7 @@
       'Get-HpEpscBootlogEvidence',
       'Get-HPEpscCerts',
       'Get-HPPlatformCertificateData',
+      'Get-HPPlatformCertificates',
       'Get-HPPlatformData',
       'Invoke-HPCertificateChainValidation',
       'Invoke-HpEpscBootlogEvidenceValidation',

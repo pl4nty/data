@@ -14,8 +14,8 @@
 @{
 
   RootModule = 'HP.Softpaq.psm1'
-  #FullModuleVersion = '1.8.6.1458'
-  ModuleVersion = '1.8.6'
+  #FullModuleVersion = '1.9.0.1648'
+  ModuleVersion = '1.9.0'
   GUID = '994EF32D-25FA-4903-88EF-98D47F052675'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

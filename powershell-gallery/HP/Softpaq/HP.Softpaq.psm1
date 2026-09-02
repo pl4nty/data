@@ -108,7 +108,13 @@ function Get-HPSoftpaqMetadata {
 
 .PARAMETER Action
   Specifies the SoftPaq action this command will execute after download. The value must be either 'install' or 'silentinstall'. Silentinstall information is retrieved from the SoftPaq metadata (CVA) file. 
-  If DestinationPath parameter is also specified, this value will be used as the location to save files. 
+  If DestinationPath parameter is also specified, this value will be used as the location to save files.
+
+  For BIOS firmware update SoftPaqs, this command creates temporary Group Policy startup/shutdown scripts to suspend BitLocker before reboot and clean up after startup.
+  BitLocker activity is logged to cmsl_bitlocker.log in both of these locations:
+  %SystemRoot%\System32\GroupPolicy\Machine\Scripts\Shutdown\cmsl_bitlocker.log
+  %SystemRoot%\System32\GroupPolicy\Machine\Scripts\Startup\cmsl_bitlocker.log
+
 
 .PARAMETER Extract
   If specified, this command extracts SoftPaq content to a specified destination folder. Specify the destination folder with the DestinationPath parameter. 
@@ -720,7 +726,7 @@ function Clear-HPSoftpaqCache {
   The current default value is 10 retries, and each retry includes a 30 second pause, which means the maximum time the default value will wait for an exclusive logs is 300 seconds or 5 minutes.
 
 .PARAMETER PreferLTSC
-  If specified and if the data file exists, this command retrieves the Long-Term Servicing Branch/Long-Term Servicing Channel (LTSB/LTSC) Reference file for the specified platform ID. If the data file does not exist, this command uses the regular Reference file for the specified platform.
+If specified, this command retrieves the Long-Term Servicing Branch/Long-Term Servicing Channel (LTSB/LTSC) data for the specified platform ID.
 
 .PARAMETER AddHttps
   If specified, this command prepends the https tag to the url, ReleaseNotes, and Metadata SoftPaq attributes.
@@ -787,6 +793,8 @@ function Clear-HPSoftpaqCache {
   | Size          | The SoftPaq size, in bytes |
   | ReleaseDate   | The date the SoftPaq was published |
   | UWP           | (where available) This flag indicates this SoftPaq contains Universal Windows Platform applications |
+  | WU            | The Softpaq Windows Updates. Please note that this field is not supported in HPIA reference files |
+  | OptionalWU    | The Softpaq optional Windows Updates. Please note that this field is not supported in HPIA reference files |
 
 #>
 function Get-HPSoftpaqList {
@@ -812,7 +820,7 @@ function Get-HPSoftpaqList {
 
     [Parameter(ParameterSetName = "DownloadParams")]
     [Alias('Url')]
-    [Parameter(Position = 4,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$ReferenceUrl = "https://workforceexperience.hp.com/services/srs/api/1.1/recommendations/",
+    [Parameter(Position = 4,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$ReferenceUrl = "https://workforceexperience.hp.com/services/srs/api/1.1/recommendations/", 
 
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 5,Mandatory = $false,ParameterSetName = "ViewParams")] [switch]$Quiet,
@@ -1254,6 +1262,7 @@ function Get-HPSoftpaqList {
         $objMetadata = $_.CvaUrl
       }
 
+      # HPIA reference files do not include windowsUpdates and optionalWindowsUpdates attributes
       $pso = [pscustomobject]@{
         id = $_.id
         Name = $_.Name
@@ -1269,6 +1278,8 @@ function Get-HPSoftpaqList {
         Size = $_.Size
         ReleaseDate = $_.DateReleased
         UWP = $(if ("ContentTypes" -in $_.PSObject.Properties.Name) { $true } else { $false })
+        WU = $null
+        OptionalWU = $null
       }
       $pso
 
@@ -1348,6 +1359,33 @@ function Get-HPSoftpaqList {
       $objUrl = $item.downloadUrl
       $objReleaseNotes = $item.releaseNotesUrl
       $objMetadata = $item.metadataUrl
+
+      # append "sp" to the beginning of softpaqId if missing to match the format used in the HPIA reference files
+      $softpaqIdStr = [string]$item.softpaqId
+
+      if (-not $softpaqIdStr.StartsWith("sp")) {
+        $item.softpaqId = "sp" + $softpaqIdStr
+      }
+
+      # check if windowsUpdates exists
+      $wuExists = $false
+      if ($item.PSObject.Properties.Name -contains 'windowsUpdates') {
+        Write-Verbose "SoftPaq $($item.softpaqId) has Windows Updates associated with it."
+        $wuExists = $true
+      }
+      else {
+        Write-Verbose "SoftPaq $($item.softpaqId) does not have Windows Updates associated with it."
+      }
+
+      # check if optionalWindowsUpdates exists
+      $optionalWUExists = $false
+      if ($item.PSObject.Properties.Name -contains 'optionalWindowsUpdates') {
+        Write-Verbose "SoftPaq $($item.softpaqId) has optional Windows Updates associated with it."
+        $optionalWUExists = $true
+      }
+      else {
+        Write-Verbose "SoftPaq $($item.softpaqId) does not have optional Windows Updates associated with it."
+      }
       
       $pso = [pscustomobject]@{
         id = $item.softpaqId
@@ -1364,6 +1402,8 @@ function Get-HPSoftpaqList {
         Size = $item.softpaqBinarySize
         ReleaseDate = $item.effectivityDate 
         UWP = $item.isUwpApp
+        WU = if ($wuExists) { $item.windowsUpdates } else { $null }
+        OptionalWU = if ($optionalWUExists) { $item.optionalWindowsUpdates } else { $null }
       }
 
       $pso
@@ -1438,12 +1478,10 @@ function Get-HPImageAssistantUpdateInfo {
   $cacheDir = Get-HPPrivateCacheDirPath -Verbose:$VerbosePreference
 
   $source = "https://hpia.hpcloud.hp.com/HPIAMsg.cab"
-  $fallbackSource = "https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/HPIAMsg.cab"
 
   $sourceFile = Get-HPPrivateTemporaryFileName -FileName "HPIAMsg.cab" -cacheDir $cacheDir
   $downloadedFile = "$sourceFile.dir\HPIAMsg.xml"
 
-  $try_on_ftp = $false
   try {
     $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
     if ($result[1] -eq $true) {
@@ -1451,23 +1489,10 @@ function Get-HPImageAssistantUpdateInfo {
     }
   }
   catch {
-    $try_on_ftp = $true
-  }
-
-  if ($try_on_ftp) {
-    try {
-      Write-Verbose "Failed to download $source. Trying to download from the fallback location..."
-      $source = $fallbackSource
-      $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
-      if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $source from the fallback location..."
-      }
+    if ($result[1] -eq $false) {
+      Write-Host -ForegroundColor Magenta "data file not found"
     }
-    catch {
-      if ($result[1] -eq $false) {
-        Write-Host -ForegroundColor Magenta "data file not found"
-      }
-    }
+    throw
   }
 
   if ($result[1] -eq $true) {
@@ -1590,12 +1615,9 @@ function Install-HPImageAssistant {
 
   $cacheDir = Get-HPPrivateCacheDirPath ($cacheDir)
 
-  $fallbackSource = "https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/HPIAMsg.cab"
-
   $sourceFile = Get-HPPrivateTemporaryFileName -FileName "HPIAMsg.cab" -cacheDir $cacheDir
   $downloadedFile = "$sourceFile.dir\HPIAMsg.xml"
 
-  $try_on_ftp = $false
   try {
     $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
     if ($result[1] -eq $true) {
@@ -1603,23 +1625,10 @@ function Install-HPImageAssistant {
     }
   }
   catch {
-    $try_on_ftp = $true
-  }
-
-  if ($try_on_ftp) {
-    try {
-      Write-Verbose "Failed to download $source. Trying to download from the fallback location..."
-      $source = $fallbackSource
-      $result = Test-HPPrivateIsDownloadNeeded -url $source -File $sourceFile -Verbose:$VerbosePreference
-      if ($result[1] -eq $true) {
-        Write-Verbose "Trying to download $source from the fallback location..."
-      }
+    if ($result[1] -eq $false) {
+      Write-Host -ForegroundColor Magenta "data file not found"
     }
-    catch {
-      if ($result[1] -eq $false) {
-        Write-Host -ForegroundColor Magenta "data file not found"
-      }
-    }
+    throw
   }
 
   if ($result[1] -eq $true) {
@@ -2375,9 +2384,11 @@ param(
   Specifies an absolute path for the Driver Pack directory. The current directory is used by default if this parameter is not specified.
 
 .PARAMETER Url
-  Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. This URL must be HTTPS. The Reference files are expected to be at the location pointed to by this URL inside a directory named after the platform ID you want a SoftPaq list for.
+  Specifies an alternate location for the reference files used to build the SoftPaq list. This URL must be HTTPS.
+  When this parameter is specified, New-HPDriverPack passes it to Get-HPSoftpaqList and uses the reference-file method instead of the default API method.
+  The reference files are expected to be at the location pointed to by this URL inside a directory named after the platform ID you want a SoftPaq list for.
   For example, if you want to point to 83b2 Win10 OSVer 2009 reference files, the New-HPDriverPack command will try to find them in this directory structure: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab.
-  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default, and fallback is set to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'.
+  If not specified, Get-HPSoftpaqList uses its default API endpoint and falls back to 'https://hpia.hpcloud.hp.com/ref/' if needed.
 
 .PARAMETER Overwrite
   If specified, this command will force overwrite any existing file with the same name during driver pack creation.
@@ -2463,7 +2474,6 @@ function New-HPDriverPack {
   }
 
   $bitness = 64
-
   Write-Host "Creating Driver Pack for Platform $Platform, $Os-$OsVer $($bitness)b"
 
   $params = @{

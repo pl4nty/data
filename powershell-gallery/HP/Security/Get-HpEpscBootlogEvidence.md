@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-HpEpscBootlogEvidence
+# Get-HPEpscBootlogEvidence
 
 ## SYNOPSIS
 Retrieves HP Endpoint Security Controller Bootlog Evidence
@@ -13,9 +13,9 @@ Retrieves HP Endpoint Security Controller Bootlog Evidence
 ## SYNTAX
 
 ```
-Get-HpEpscBootlogEvidence [-Nonce <Byte[]>] [<CommonParameters>]
-Get-HpEpscBootlogEvidence -InFile <String> [<CommonParameters>]
-Get-HpEpscBootlogEvidence [-Nonce <Byte[]>] -OutFile <String> [<CommonParameters>]
+Get-HPEpscBootlogEvidence [-Nonce <Byte[]>] [<CommonParameters>]
+Get-HPEpscBootlogEvidence -InFile <String> [<CommonParameters>]
+Get-HPEpscBootlogEvidence [-Nonce <Byte[]>] -OutFile <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,7 +34,7 @@ The cmdlet can operate in different modes:
 
 ### Example 1
 ```powershell
-PS C:\> Get-HpEpscBootlogEvidence
+PS C:\> Get-HPEpscBootlogEvidence
 ```
 
 Returns an object with HP EpSC bootlog evidence using a random nonce read from the EpSC on the current system.
@@ -42,21 +42,21 @@ Returns an object with HP EpSC bootlog evidence using a random nonce read from t
 ### Example 2
 ```powershell
 PS C:\> $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
-PS C:\> Get-HpEpscBootlogEvidence -Nonce $nonce
+PS C:\> Get-HPEpscBootlogEvidence -Nonce $nonce
 ```
 
 Creates a custom 32-byte nonce and retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system.
 
 ### Example 3
 ```powershell
-PS C:\> Get-HpEpscBootlogEvidence -InFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"
+PS C:\> Get-HPEpscBootlogEvidence -InFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"
 ```
 
 Returns an object with HP EpSC bootlog evidence loaded from the specified binary file.
 
 ### Example 4
 ```powershell
-PS C:\> Get-HpEpscBootlogEvidence -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"
+PS C:\> Get-HPEpscBootlogEvidence -OutFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"
 ```
 
 Retrieves HP EpSC bootlog evidence using a random nonce and saves the raw evidence data to the specified file.
@@ -64,7 +64,7 @@ Retrieves HP EpSC bootlog evidence using a random nonce and saves the raw eviden
 ### Example 5
 ```powershell
 PS C:\> $nonce = [byte[]](1..32 | ForEach-Object { [byte](Get-Random -Minimum 0 -Maximum 256) })
-PS C:\> Get-HpEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test\HpEpscBootlogEvidence.bin"
+PS C:\> Get-HPEpscBootlogEvidence -Nonce $nonce -OutFile "C:\Users\Tools\Test\HPEpscBootlogEvidence.bin"
 ```
 
 Creates a custom 32-byte nonce, retrieves HP EpSC bootlog evidence using the specified nonce from the EpSC on the current system, and saves the raw evidence data to the specified file.
@@ -142,5 +142,5 @@ Returns an object containing:
 - When extracting from EpSC, the command requires appropriate system permissions
 - The nonce parameter must be exactly 32 bytes when specified
 - Binary evidence files should contain valid EpSC bootlog evidence data
-- Evidence data includes cryptographic signatures that can be validated using Invoke-HpEpscBootlogEvidenceValidation
+- Evidence data includes cryptographic signatures that can be validated using Invoke-HPEpscBootlogEvidenceValidation
 - Both -InFile and -OutFile should not be used together

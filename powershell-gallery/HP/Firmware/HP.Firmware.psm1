@@ -17,19 +17,17 @@ $ErrorActionPreference = "Stop"
 
 # CMSL is normally installed in C:\Program Files\WindowsPowerShell\Modules
 # but if installed via PSGallery and via PS7, it is installed in a different location
+
 if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
+  $privateModuleRoot = "$PSScriptRoot\..\HP.Private"
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
-else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
+else {
+  $privateModuleRoot = "$PSScriptRoot\..\..\HP.Private\1.9.0"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
 }
 
-if ($PSEdition -eq "Core") {
-  Add-Type -Path "$PSScriptRoot\MSAL_4.36.2\netcoreapp2.1\Microsoft.Identity.Client.dll" -IgnoreWarnings -WarningAction SilentlyContinue
-}
-else {
-  Add-Type -Path "$PSScriptRoot\MSAL_4.36.2\net45\Microsoft.Identity.Client.dll" -IgnoreWarnings -WarningAction SilentlyContinue
-}
+Add-Type -Path "$privateModuleRoot\Microsoft.Identity.Client.dll" -IgnoreWarnings -WarningAction SilentlyContinue
 
 $msgs = @{
   0x031e = @("Sure Start found the primary BIOS in shared flash memory is either corrupted or missing. Possible causes include but not limited to interrupted BIOS update or recent BIOS attack.",1);

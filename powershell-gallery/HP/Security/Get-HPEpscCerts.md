@@ -13,8 +13,8 @@ Retrieves HP Endpoint Security Controller Certificates
 ## SYNTAX
 
 ```
-Get-HpEpscCerts [[-InFile] <String>] [<CommonParameters>]
-Get-HpEpscCerts [[-OutFile] <String>] [<CommonParameters>]
+Get-HPEpscCerts [[-InFile] <String>] [<CommonParameters>]
+Get-HPEpscCerts [[-OutFile] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,21 +26,21 @@ This command retrieves three HP Endpoint Security Controller certificates as an 
 
 ### Example 1
 ```powershell
-PS C:\> Get-HpEpscCerts
+PS C:\> Get-HPEpscCerts
 ```
 
 Returns an object with three HP EpSC certificates.
 
 ### Example 2
 ```powershell
-PS C:\> Get-HpEpscCerts -OutFile "HP EpSC Certificates.pem"
+PS C:\> Get-HPEpscCerts -OutFile "HP EpSC Certificates.pem"
 ```
 
 Retrieves HP EpSC certificates from current platform, returns an object with three HP EpSC certificates, and saves the certificates in PEM format to the specified file name.
 
 ### Example 3
 ```powershell
-PS C:\> Get-HpEpscCerts -InFile "HP EpSC Certificates.pem"
+PS C:\> Get-HPEpscCerts -InFile "HP EpSC Certificates.pem"
 ```
 
 Reads the specified HP EpSC certificate file in PEM format and returns an object with three HP EpSC certificates.

@@ -20,7 +20,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.8.6\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
 }
 
 enum ErrorHandling
@@ -31,6 +31,21 @@ enum ErrorHandling
 
 $REPOFILE = ".repository/repository.json"
 $LOGFILE = ".repository/activity.log"
+
+# get the current log file path from repository settings, or fall back to the default
+function GetLogFile
+{
+  try {
+    if (Test-Path $REPOFILE -PathType Leaf) {
+      $rawData = Get-Content -Raw -Path $REPOFILE | ConvertFrom-Json
+      if ($rawData.settings.LogPath) {
+        return $rawData.settings.LogPath
+      }
+    }
+  }
+  catch { Write-Verbose "GetLogFile: could not read log path from repository settings: $_" }
+  return $LOGFILE
+}
 
 # print a bare error
 function err
@@ -45,7 +60,7 @@ function err
   [console]::Error.WriteLine($str)
   [console]::ResetColor()
 
-  if ($withLog) { Write-HPLogError -Message $str -Component "HP.Repo" -File $LOGFILE }
+  if ($withLog) { Write-HPLogError -Message $str -Component "HP.Repo" -File (GetLogFile) }
 }
 
 # convert a date object to an 8601 string
@@ -145,6 +160,10 @@ function LoadRepository
     $repo.settings.RepositoryReport = "CSV"
   }
 
+  if (-not $repo.settings.LogPath) {
+    $repo.settings.LogPath = $LOGFILE
+  }
+
   foreach ($filter in $repo.Filters)
   {
     if (-not $filter.characteristic)
@@ -233,7 +252,7 @@ function DownloadSoftpaq
         if (-not $DownloadSoftpaqCmd.Quiet) {
           Write-Host -ForegroundColor Magenta $msg
         }
-        Write-HPLogWarning -Message $msg -Component "HP.Repo" -File $LOGFILE
+        Write-HPLogWarning -Message $msg -Component "HP.Repo" -File (GetLogFile)
       }
       else {
         Log ("    sp$($DownloadSoftpaqCmd.number).exe - Done downloading EXE file.")
@@ -322,7 +341,7 @@ function Log
     if (-not $line) {
       $line = " "
     }
-    Write-HPLogInfo -Message $line -Component "HP.Repo" -File $LOGFILE
+    Write-HPLogInfo -Message $line -Component "HP.Repo" -File (GetLogFile)
   }
 
 }
@@ -487,6 +506,7 @@ function Initialize-HPRepository
   $newRepositoryFile.settings.ExclusiveLockMaxRetries = 10
   $newRepositoryFile.settings.OfflineCacheMode = "Disable"
   $newRepositoryFile.settings.RepositoryReport = "CSV"
+  $newRepositoryFile.settings.LogPath = $LOGFILE
 
   $newRepositoryFile.DateCreated = ISO8601DateString -Date $now
   $newRepositoryFile.CreatedBy = GetUserName
@@ -952,8 +972,8 @@ function Get-HPRepositoryInfo ()
 .PARAMETER ReferenceUrl
   Specifies an alternate location for the HP Image Assistant (HPIA) Reference files. This URL must be HTTPS. The Reference files are expected to be at the location pointed to by this URL inside a directory named after the platform ID you want a SoftPaq list for.
   Using system ID 83b2, OS Win10, and OSVer 2009 reference files as an example, this command will call the Get-HPSoftpaqList command to find the corresponding files in: $ReferenceUrl/83b2/83b2_64_10.0.2009.cab.
-  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default. 
-  When OfflineCacheMode is enabled, offline cache files (platform list, advisory, knowledge base) are downloaded from this ReferenceUrl location. If default ReferenceUrl is used, it will fall back to 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/' if not found.
+  If not specified, 'https://hpia.hpcloud.hp.com/ref/' is used by default.
+  When OfflineCacheMode is enabled, offline cache files (platform list, advisory, knowledge base) are downloaded from this ReferenceUrl location.
 
 .EXAMPLE
   Invoke-HPRepositorySync -Quiet
@@ -1014,14 +1034,6 @@ function Invoke-HPRepositorySync
 
   if (-not $ReferenceUrl.EndsWith('/')) {
     $ReferenceUrl = $ReferenceUrl + "/"
-  }
-
-  # set Offline cache fallback URL if needed
-  if ($ReferenceUrl -eq 'https://hpia.hpcloud.hp.com/ref/') {
-    $referenceFallbackUrL = 'https://ftp.hp.com/pub/caps-softpaq/cmit/imagepal/ref/'
-  }
-  else {
-    $referenceFallbackUrL = ''
   }
 
   $repo = LoadRepository
@@ -1158,18 +1170,6 @@ function Invoke-HPRepositorySync
             Write-Verbose "Finish downloading PlatformList - $PlatformList"
           }
           catch {
-            if ($referenceFallbackUrL) {
-              $url = "$($referenceFallbackUrL)platformList.cab"
-              Write-Verbose "Trying to download PlatformList from FTP... $url"
-              try {
-                $PlatformList = Get-HPPrivateOfflineCacheFiles -url $url -FileName $filename -cacheDirOffline $cacheDirOffline -Expand -Verbose:$VerbosePreference
-              }
-              catch {
-                Write-Verbose "Error downloading $url. $($_.Exception.Message)"
-                # Continue the execution with empty PlatformList file
-                $PlatformList = ""
-              }
-            }
             if (-not $PlatformList) {
               $exception = $_.Exception
               switch ($repo[1].settings.OnRemoteFileNotFound) {
@@ -1197,21 +1197,6 @@ function Invoke-HPRepositorySync
             Write-Verbose "Finish downloading Advisory Data Files - $AdvisoryFile"
           }
           catch {
-            if ($referenceFallbackUrL) {
-              $url = "$($referenceFallbackUrL)$($softpaqListCmd.platform)/$($softpaqListCmd.platform)_cds.cab"
-              Write-Verbose "Trying to download Advisory Data from FTP... $url"
-              #$cacheDirAdvisory = $cacheDirOffline + "\$($softpaqListCmd.platform)"
-              #$filename = "$($softpaqListCmd.platform)_cds.cab"
-              try {
-                $AdvisoryFile = Get-HPPrivateOfflineCacheFiles -url $url -FileName $filename -cacheDirOffline $cacheDirAdvisory -Expand -Verbose:$VerbosePreference
-                Write-Verbose "Finish downloading Advisory Data Files - $AdvisoryFile"
-              }
-              catch {
-                Write-Verbose "Error downloading $url. $($_.Exception.Message)"
-                # Continue the execution with empty advisory file
-                $AdvisoryFile = ""
-              }
-            }
             if (-not $AdvisoryFile) {
               $exception = $_.Exception
               switch ($repo[1].settings.OnRemoteFileNotFound) {
@@ -1240,21 +1225,6 @@ function Invoke-HPRepositorySync
             Write-Verbose "Finish downloading Knowledge Base - $KnowledgeBase"
           }
           catch {
-            if ($referenceFallbackUrL) {
-              $url = "$($referenceFallbackUrL)../kb/common/latest.cab"
-              Write-Verbose "Trying to download Knowledge Base from FTP... $url"
-              #$cacheDirKb = $cacheDirOffline + "\kb\common"
-              #$filename = "latest.cab"
-              try {
-                $KnowledgeBase = Get-HPPrivateOfflineCacheFiles -url $url -FileName $filename -cacheDirOffline $cacheDirKb -Verbose:$VerbosePreference
-              }
-              catch {
-                Write-Verbose "Error downloading $url. $($_.Exception.Message)"
-                # Continue the execution with empty KnowledgeBase file
-                $KnowledgeBase = ""
-              }
-              Write-Verbose "Finish downloading Knowledge Base - $KnowledgeBase"
-            }
             if (-not $KnowledgeBase) {
               $exception = $_.Exception
               switch ($repo[1].settings.OnRemoteFileNotFound) {
@@ -2105,9 +2075,10 @@ function Test-HPRepositoryNotificationConfiguration
   - OnRemoteFileNotFound: Indicates the behavior for when the SoftPaq is not found on the remote site. 'Fail' stops the execution. 'LogAndContinue' logs the errors and continues the execution.
   - RepositoryReport: Indicates the format of the report generated at repository synchronization. The default format is 'CSV' and other options available are 'JSON,' 'XML,' and 'ExcelCSV.'
   - OfflineCacheMode: Indicates that all repository files are required for offline use. Repository synchronization will include platform list, advisory, and knowledge base files. The default value is 'Disable' and the other option is 'Enable.'
+  - LogPath: Specifies the path for the repository activity log file. The default value is '.repository/activity.log'. If the path is changed, the existing log file will be moved to the new location. The directory must already exist.
 
 .PARAMETER Setting
-  Specifies the setting to configure. The value must be one of the following values: 'OnRemoteFileNotFound', 'OfflineCacheMode', or 'RepositoryReport'.
+  Specifies the setting to configure. The value must be one of the following values: 'OnRemoteFileNotFound', 'OfflineCacheMode', 'RepositoryReport', or 'LogPath'.
 
 .PARAMETER Value
   Specifies the new value for the OnRemoteFileNotFound setting. The value must be either: 'Fail' (default), or 'LogAndContinue'.
@@ -2117,6 +2088,9 @@ function Test-HPRepositoryNotificationConfiguration
 
 .PARAMETER Format
   Specifies the new value for the RepositoryReport setting. The value must be one of the following: 'CSV' (default), 'JSon', 'XML', or 'ExcelCSV'.
+
+.PARAMETER LogValue
+  Specifies the new path for the repository activity log file. The directory component of the path must already exist; this command will not create it. If a log file already exists at the current path, it will be moved to the new location.
 
 .LINK
   [Initialize-HPRepository](https://developers.hp.com/hp-client-management/doc/Initialize-HPRepository)
@@ -2133,6 +2107,9 @@ function Test-HPRepositoryNotificationConfiguration
 .Example
   Set-HPRepositoryConfiguration -Setting RepositoryReport -Format CSV
 
+.Example
+  Set-HPRepositoryConfiguration -Setting LogPath -LogValue "C:\Logs\repo-activity.log"
+
 .NOTES
   - When using HP Image Assistant and offline mode, use: Set-HPRepositoryConfiguration -Setting OfflineCacheMode -CacheValue Enable
   - More information on using HPIA with CMSL can be found at this [blog post](https://developers.hp.com/hp-client-management/blog/driver-injection-hp-image-assistant-and-hp-cmsl-in-memcm).
@@ -2143,10 +2120,11 @@ function Set-HPRepositoryConfiguration
   [CmdletBinding(HelpUri = "https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryConfiguration")]
   [Alias('Set-RepositoryConfiguration')]
   param(
-    [ValidateSet('OnRemoteFileNotFound','OfflineCacheMode','RepositoryReport')]
+    [ValidateSet('OnRemoteFileNotFound','OfflineCacheMode','RepositoryReport','LogPath')]
     [Parameter(ParameterSetName = "ErrorHandler",Position = 0,Mandatory = $true)]
     [Parameter(ParameterSetName = "CacheMode",Position = 0,Mandatory = $true)]
     [Parameter(ParameterSetName = "ReportHandler",Position = 0,Mandatory = $true)]
+    [Parameter(ParameterSetName = "LogPathHandler",Position = 0,Mandatory = $true)]
     [string]$Setting,
 
     [Parameter(ParameterSetName = "ErrorHandler",Position = 1,Mandatory = $true)]
@@ -2158,7 +2136,10 @@ function Set-HPRepositoryConfiguration
 
     [ValidateSet('CSV','JSon','XML','ExcelCSV')]
     [Parameter(ParameterSetName = "ReportHandler",Position = 1,Mandatory = $true)]
-    [string]$Format
+    [string]$Format,
+
+    [Parameter(ParameterSetName = "LogPathHandler",Position = 1,Mandatory = $true)]
+    [string]$LogValue
   )
   $c = LoadRepository
   if (-not $c[0]) { return }
@@ -2195,6 +2176,37 @@ function Set-HPRepositoryConfiguration
       Write-HPLogWarning "Enter valid Format for $Setting."
     }
   }
+  elseif ($Setting -eq "LogPath") {
+    # If the user supplied a directory path (trailing separator or an existing directory),
+    # append the current log file name automatically.
+    $isDirectoryStyle = $LogValue.EndsWith('\') -or $LogValue.EndsWith('/')
+    $isExistingDir    = (-not $isDirectoryStyle) -and (Test-Path $LogValue -PathType Container)
+    if ($isDirectoryStyle -or $isExistingDir) {
+      $currentLogFileName = Split-Path -Path (GetLogFile) -Leaf
+      $LogValue = Join-Path ($LogValue.TrimEnd('\','/')) $currentLogFileName
+      Write-Verbose "Directory path detected; using full log file path '$LogValue'."
+    }
+    $logDir = Split-Path -Path $LogValue -Parent
+    if (-not [string]::IsNullOrEmpty($logDir) -and -not (Test-Path $logDir -PathType Container)) {
+      throw [System.IO.DirectoryNotFoundException]"Directory '$logDir' does not exist. Please create the directory first."
+    }
+    $currentLogPath = GetLogFile
+    if ($currentLogPath -ne $LogValue) {
+      if (Test-Path $currentLogPath -PathType Leaf) {
+        Write-Verbose "Moving log file from '$currentLogPath' to '$LogValue'"
+        Move-Item -Path $currentLogPath -Destination $LogValue -Force
+      }
+      else {
+        Write-Verbose "No existing log file found at '$currentLogPath'; skipping move."
+      }
+    }
+    else {
+      Write-Verbose "LogPath is already set to '$LogValue'; no change needed."
+    }
+    $c[1].settings.LogPath = $LogValue
+    WriteRepositoryFile -obj $c[1]
+    Write-Verbose ("Ok.")
+  }
 }
 
 <#
@@ -2207,10 +2219,11 @@ function Set-HPRepositoryConfiguration
   - OnRemoteFileNotFound: Indicates the behavior for when the SoftPaq is not found on the remote site. 'Fail' stops the execution. 'LogAndContinue' logs the errors and continues the execution.
   - RepositoryReport: Indicates the format of the report generated at repository synchronization. The default format is 'CSV' and other options available are 'JSON', 'XML', and 'ExcelCSV'.
   - OfflineCacheMode: Indicates that all repository files are required for offline use. Repository synchronization will include platform list, advisory, and knowledge base files. The default value is 'Disable' and the other option is 'Enable'.
+  - LogPath: Specifies the path for the repository activity log file. The default value is '.repository/activity.log'.
 
    
-.PARAMETER setting
-  Specifies the setting to retrieve. The value can be one of the following: 'OnRemoteFileNotFound', 'RepositoryReport', or 'OfflineCacheMode'.
+.PARAMETER Setting
+  Specifies the setting to retrieve. The value can be one of the following: 'OnRemoteFileNotFound', 'RepositoryReport', 'OfflineCacheMode', or 'LogPath'.
 
 
 .Example
@@ -2221,6 +2234,9 @@ function Set-HPRepositoryConfiguration
 
 .Example
   Get-HPRepositoryConfiguration -Setting RepositoryReport
+
+.Example
+  Get-HPRepositoryConfiguration -Setting LogPath
 
 .LINK
   [Set-HPRepositoryConfiguration](https://developers.hp.com/hp-client-management/doc/Set-HPRepositoryConfiguration)
@@ -2235,7 +2251,7 @@ function Get-HPRepositoryConfiguration
   param(
     [Parameter(Position = 0,Mandatory = $true)]
     [string]
-    [ValidateSet('OnRemoteFileNotFound','OfflineCacheMode','RepositoryReport')]
+    [ValidateSet('OnRemoteFileNotFound','OfflineCacheMode','RepositoryReport','LogPath')]
     $Setting
   )
   $c = LoadRepository

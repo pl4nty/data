@@ -18,8 +18,8 @@
     'HP.UEFI',
     "HP.Warranty.dll")
 
-  #FullModuleVersion = '1.8.6.1458'
-  ModuleVersion = '1.8.6'
+  #FullModuleVersion = '1.9.0.1648'
+  ModuleVersion = '1.9.0'
   GUID = 'e5f40402-f5b0-42f9-b10b-28910aacdf5b'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

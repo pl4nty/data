@@ -12,8 +12,8 @@
 @{
 
   RootModule = 'HP.Private.psm1'
-  #FullModuleVersion = '1.8.6.1458'
-  ModuleVersion = '1.8.6'
+  #FullModuleVersion = '1.9.0.1648'
+  ModuleVersion = '1.9.0'
   GUID = '9F47EFBC-1124-46F3-87AB-F2D15D169CE7'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

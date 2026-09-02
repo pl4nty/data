@@ -12,11 +12,10 @@
 
 
 @{
-
-    RootModule = 'HP.Displays.dll'
+    RootModule = 'HP.Displays.psm1'
    
-    #FullModuleVersion = '1.8.6.1458'
-    ModuleVersion = '1.8.6'
+    #FullModuleVersion = '1.9.0.1648'
+    ModuleVersion = '1.9.0'
     GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'

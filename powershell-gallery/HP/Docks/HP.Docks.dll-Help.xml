@@ -10,7 +10,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command retrieves properties on connected docks.</maml:para>
+      <maml:para>This command retrieves properties on connected docks. The following properties are only supported on select docks: WLANCapability, WifiSSID, WifiPasswordSet, Bluetooth, QuickConnect, QuickConnectProximity, LEDBaseLight, and LEDPowerLight.  If a property is supported for the current dock but retrieved null or empty value, please try updating to the latest dock firmware and latest version of the HP Dock WMI Provider.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -43,9 +43,20 @@
       </command:parameter>
     </command:parameters>
     <command:inputTypes />
-    <command:returnValues />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -56,7 +67,199 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/get-hpdock</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-HPDockFirmwareUpdate</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>HPDockFirmwareUpdate</command:noun>
+      <maml:description>
+        <maml:para>Retrieves the latest firmware version available for the connected dock</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command retrieves the latest firmware version available for the connected dock. Please note that this command only supports one dock at a time.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-HPDockFirmwareUpdate</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>DockModel</maml:name>
+          <maml:description>
+            <maml:para>Specifies the dock model to retrieve dock firmware update for instead of the currently connected dock.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4100WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4Ultra180WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4Ultra280WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderboltDockG4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderboltDockG2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-CG5EssentialDock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-CDockG5</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-C/AUniversalG2Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-C100WG6Dock</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>Check</maml:name>
+          <maml:description>
+            <maml:para>If specified, the command will return $True if the currently installed firwmare version is the latest, and $False if not. Cannot be used wtih Download parameter. The command will error out if DockModel parameter specifies a dock that is not currently connected.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Get-HPDockFirmwareUpdate</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>DockModel</maml:name>
+          <maml:description>
+            <maml:para>Specifies the dock model to retrieve dock firmware update for instead of the currently connected dock.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4100WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4Ultra180WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderbolt4Ultra280WG6Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderboltDockG4</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPThunderboltDockG2</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-CG5EssentialDock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-CDockG5</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-C/AUniversalG2Dock</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">HPUSB-C100WG6Dock</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>Download</maml:name>
+          <maml:description>
+            <maml:para>If specified, this command will download the dock firmware update SoftPaq to the current path specified by the -SaveAs parameter. Cannot be used with Check parameter. The command will overwrite the file if it already exists.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>SaveAs</maml:name>
+          <maml:description>
+            <maml:para>Specifies the location and/or file name for the downloaded dock firmware update SoftPaq.  Can be a file name (e.g., 'update.exe'), a directory path (e.g., 'C:\Downloads\'), or a full file path (e.g., 'C:\Downloads\update.exe').  If file name is not specified, the remote file name will be used in the current directory.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>Check</maml:name>
+        <maml:description>
+          <maml:para>If specified, the command will return $True if the currently installed firwmare version is the latest, and $False if not. Cannot be used wtih Download parameter. The command will error out if DockModel parameter specifies a dock that is not currently connected.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>DockModel</maml:name>
+        <maml:description>
+          <maml:para>Specifies the dock model to retrieve dock firmware update for instead of the currently connected dock.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>Download</maml:name>
+        <maml:description>
+          <maml:para>If specified, this command will download the dock firmware update SoftPaq to the current path specified by the -SaveAs parameter. Cannot be used with Check parameter. The command will overwrite the file if it already exists.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>SaveAs</maml:name>
+        <maml:description>
+          <maml:para>Specifies the location and/or file name for the downloaded dock firmware update SoftPaq.  Can be a file name (e.g., 'update.exe'), a directory path (e.g., 'C:\Downloads\'), or a full file path (e.g., 'C:\Downloads\update.exe').  If file name is not specified, the remote file name will be used in the current directory.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>## RELATED LINKS</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPDockFirmwareUpdate -Download -SaveAs "C:\path\update.exe"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPDockFirmwareUpdate -DockModel "HPThunderbolt4Ultra280WG6Dock"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-HPDockFirmwareUpdate -Check</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/get-hpdockfirmwareupdate</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -68,7 +271,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command installs HP Dock WMI Provider with the version specified in https://www.hp.com/us-en/solutions/client-management-solutions/download.html</maml:para>
+      <maml:para>This command installs HP Dock WMI Provider with the latest version specified in https://ftp.hp.com/pub/dockfw/wmiprovider/wmiprovider.xml</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -103,7 +306,9 @@
     <command:inputTypes />
     <command:returnValues />
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -114,7 +319,447 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/install-hpdockwmiprovider</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-HPDock</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>HPDock</command:noun>
+      <maml:description>
+        <maml:para>Sets properties on connected docks</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command sets properties on connected docks. Some properties are only supported on select docks: WLANCapability, WifiSSID, WifiPasswordSet, Bluetooth, QuickConnect, QuickConnectProximity, LEDBaseLight, and LEDPowerLight.  If a property is supported for the current dock but unable to set the property, please try updating to the latest dock firmware and latest version of the HP Dock WMI Provider.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-HPDock</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>WlanCapability</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT adminstrator to specify one of the following values for WlanCapability: DisableAll, WiFiOnly, or EnableAll.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">DisableAll</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">WiFiOnly</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">EnableAll</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>WifiSSID</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify a string value for the Wifi SSID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>WifiPassword</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify a SecureString value for the Wifi Password.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+          <dev:type>
+            <maml:name>SecureString</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Bluetooth</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable or enable Bluetooth. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+          <maml:name>QuickConnect</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable or enable QuickConnect. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+          <maml:name>QuickConnectProximity</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify a value for QuickConnectProximity. Valid values are Near and Far.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Near</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Far</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+          <maml:name>LEDBaseLight</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable or enable LEDBaseLight. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+          <maml:name>LEDPowerLight</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to disable or enable LEDPowerLight. Valid values are Disable and Enable.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Disable</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Enable</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+          <maml:name>SerialNumber</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify a dock by its SerialNumber to set properties for that specific dock instead of the currently connected dock.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
+          <maml:name>AdminPassword</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify the admin password used to authenticate.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+          <dev:type>
+            <maml:name>SecureString</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
+        <maml:name>AdminPassword</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify the admin password used to authenticate.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+        <dev:type>
+          <maml:name>SecureString</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>Bluetooth</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable or enable Bluetooth. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+        <maml:name>LEDBaseLight</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable or enable LEDBaseLight. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+        <maml:name>LEDPowerLight</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable or enable LEDPowerLight. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <maml:name>QuickConnect</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to disable or enable QuickConnect. Valid values are Disable and Enable.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>QuickConnectProximity</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify a value for QuickConnectProximity. Valid values are Near and Far.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+        <maml:name>SerialNumber</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify a dock by its SerialNumber to set properties for that specific dock instead of the currently connected dock.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>WifiPassword</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify a SecureString value for the Wifi Password.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+        <dev:type>
+          <maml:name>SecureString</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>WifiSSID</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify a string value for the Wifi SSID.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>WlanCapability</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT adminstrator to specify one of the following values for WlanCapability: DisableAll, WiFiOnly, or EnableAll.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Set-HPDock -Bluetooth "Enable"</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://developers.hp.com/hp-client-management/doc/set-hpdock</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/set-hpdock</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-HPDockAdminPassword</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>HPDockAdminPassword</command:noun>
+      <maml:description>
+        <maml:para>Sets admin password on connected dock</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This command sets or changes the admin password on connected dock.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-HPDockAdminPassword</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>AdminPassword</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify the new admin password for the dock to use. Please make sure the password is at least 6 characters long and not more than 32 characters long.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+          <dev:type>
+            <maml:name>SecureString</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>CurrentPassword</maml:name>
+          <maml:description>
+            <maml:para>Allows the IT administrator to specify the current admin password for the dock if there is one set. If the dock currently has an admin password set and this parameter is not provided, the command will fail. Likewise, if a current password is provided but it is incorrect or there is no dock password set, the command will fail.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+          <dev:type>
+            <maml:name>SecureString</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>AdminPassword</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify the new admin password for the dock to use. Please make sure the password is at least 6 characters long and not more than 32 characters long.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+        <dev:type>
+          <maml:name>SecureString</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>CurrentPassword</maml:name>
+        <maml:description>
+          <maml:para>Allows the IT administrator to specify the current admin password for the dock if there is one set. If the dock currently has an admin password set and this parameter is not provided, the command will fail. Likewise, if a current password is provided but it is incorrect or there is no dock password set, the command will fail.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+        <dev:type>
+          <maml:name>SecureString</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $plainString = "mySecretPassword123"
+PS C:\&gt; $secureString = ConvertTo-SecureString -String $plainString -AsPlainText -Force
+PS C:\&gt; Set-HPDockAdminPassword -AdminPassword $secureString</dev:code>
+        <dev:remarks>
+          <maml:para></maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://developers.hp.com/hp-client-management/doc/set-hpdockadminpassword</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/set-hpdockadminpassword</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -134,7 +779,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>AutoInstallWmiProvider</maml:name>
           <maml:description>
-            <maml:para>If specified, run Install-HPDockWmiProvider first to ensure WMI provider is installed.</maml:para>
+            <maml:para>If specified, run Install-HPDockWmiProvider first to ensure WMI Provider is installed. The HP Dock WMI Provider is only needed to query for connected dock information to find the corresponding dock firmware SoftPaq. Consequently, if File parameter is also specified, it will override this parameter as File parameter allows users to pass in a SoftPaq exe and is intended for offline and WAN protection scenarios.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -181,13 +826,25 @@
           </dev:type>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>File</maml:name>
+          <maml:description>
+            <maml:para>Specifies the file path to a dock firmware update SoftPaq (sp#####.exe) to be used instead of querying and downloading the latest dock firmware update Softpaq. Must be a file path, not a directory. If a filename or relative path is provided, the current directory is assumed. The SoftPaq number is extracted from the filename for proper extraction.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>AutoInstallWmiProvider</maml:name>
         <maml:description>
-          <maml:para>If specified, run Install-HPDockWmiProvider first to ensure WMI provider is installed.</maml:para>
+          <maml:para>If specified, run Install-HPDockWmiProvider first to ensure WMI Provider is installed. The HP Dock WMI Provider is only needed to query for connected dock information to find the corresponding dock firmware SoftPaq. Consequently, if File parameter is also specified, it will override this parameter as File parameter allows users to pass in a SoftPaq exe and is intended for offline and WAN protection scenarios.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -232,11 +889,25 @@
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>File</maml:name>
+        <maml:description>
+          <maml:para>Specifies the file path to a dock firmware update SoftPaq (sp#####.exe) to be used instead of querying and downloading the latest dock firmware update Softpaq. Must be a file path, not a directory. If a filename or relative path is provided, the current directory is assumed. The SoftPaq number is extracted from the filename for proper extraction.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
     </command:parameters>
     <command:inputTypes />
     <command:returnValues />
     <maml:alertSet>
-      <maml:alert />
+      <maml:alert>
+        <maml:para>## RELATED LINKS</maml:para>
+      </maml:alert>
     </maml:alertSet>
     <command:examples>
       <command:example>
@@ -247,6 +918,11 @@
         </dev:remarks>
       </command:example>
     </command:examples>
-    <command:relatedLinks />
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://developers.hp.com/hp-client-management/doc/update-hpdockfirmware</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
   </command:command>
 </helpItems>

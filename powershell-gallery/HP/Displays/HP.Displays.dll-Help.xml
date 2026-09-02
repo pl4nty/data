@@ -1503,7 +1503,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Update-HPDisplayFirmware</dev:code>
+        <dev:code>PS C:\&gt; Update-HPDisplayFirmware -Experience "Interactive" </dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>

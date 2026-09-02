@@ -1,7 +1,7 @@
 ---
 external help file: HP.Docks.dll-Help.xml
 Module Name: HP.Docks
-online version:
+online version: https://developers.hp.com/hp-client-management/doc/get-hpdock
 schema: 2.0.0
 ---
 
@@ -18,6 +18,8 @@ Get-HPDock [-AutoInstallWmiProvider] [<CommonParameters>]
 
 ## DESCRIPTION
 This command retrieves properties on connected docks.
+The following properties are only supported on select docks: WLANCapability, WifiSSID, WifiPasswordSet, Bluetooth, QuickConnect, QuickConnectProximity, LEDBaseLight, and LEDPowerLight. 
+If a property is supported for the current dock but retrieved null or empty value, please try updating to the latest dock firmware and latest version of the HP Dock WMI Provider.
 
 ## EXAMPLES
 
@@ -38,10 +40,21 @@ Aliases:
 
 Required: False
 Position: 0
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### System.Management.Automation.PSObject
+
+## NOTES
+
+## RELATED LINKS
+
