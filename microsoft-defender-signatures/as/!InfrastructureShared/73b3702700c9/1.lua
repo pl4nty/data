@@ -22,9 +22,11 @@ do
     end
     -- DECOMPILER ERROR at PC78: Confused about usage of register: R3 in 'UnsetPending'
 
+    -- DECOMPILER ERROR at PC87: Confused about usage of register: R3 in 'UnsetPending'
+
     do
       do
-        if (string.find)((string.lower)((bm.get_imagepath)()), "\\appdata\\", 1, true) and (string.find)((string.lower)((bm.get_imagepath)()), "_x\\", 1, true) then
+        if ((string.find)((string.lower)((bm.get_imagepath)()), "\\appdata\\", 1, true) and (string.find)((string.lower)((bm.get_imagepath)()), "_x\\", 1, true)) or (string.find)((string.lower)((bm.get_imagepath)()), "\\appdata\\local\\temp\\", 1, true) then
           local l_0_5 = nil
           if (bm.get_current_process_startup_info)() == nil or ((bm.get_current_process_startup_info)()).ppid == nil then
             return mp.CLEAN

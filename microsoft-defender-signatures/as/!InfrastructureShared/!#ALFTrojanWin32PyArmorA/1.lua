@@ -4,11 +4,7 @@
 -- params : ...
 -- function num : 0
 local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
-local l_0_1 = l_0_0:match("^(.-)%-%>")
-if not l_0_1 then
-  return mp.CLEAN
-end
 ;
-(MpCommon.SetOriginalFileName)(l_0_1, "PyArmorBinary")
+(MpCommon.SetOriginalFileName)(l_0_0, "PyArmorBinary")
 return mp.CLEAN
 
