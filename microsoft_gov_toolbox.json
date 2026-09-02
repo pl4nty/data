@@ -1,5 +1,25 @@
 [
     {
+        "displayName": "ADT Manifest Signing Tool",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "Python-based tool for generating XML manifests and applying digital signatures to software artifacts.",
+        "icon": "data:image/png;base64,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",
+        "keywords": [
+            "manifest",
+            "xml",
+            "signing",
+            "python",
+            "azure-key-vault"
+        ],
+        "name": "adtmanifestsigningtool",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "5.0.28-release",
+        "versions": [
+            "5.0.28-release"
+        ]
+    },
+    {
         "displayName": "AI Foundry Python SDK",
         "displayPublisher": "Microsoft",
         "displaySummary": "The AI Foundry Python SDK.",
@@ -8,8 +28,9 @@
         "name": "AzureAIFoundryPythonSDK",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "versions": [
+            "2.4.0",
             "2.3.0",
             "2.2.0",
             "2.1.0",
@@ -30,8 +51,10 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "16.1.0",
+        "version": "16.3.0",
         "versions": [
+            "16.3.0",
+            "16.2.0",
             "16.1.0",
             "16.0.0",
             "15.6.1",
@@ -276,6 +299,22 @@
         ]
     },
     {
+        "displayName": "Az.kusto",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "Azure CLI extension. Microsoft Azure Command-Line Tools KustoManagementClient Extension",
+        "icon": "data:image/png;base64,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",
+        "keywords": [
+            "cli"
+        ],
+        "name": "Azkusto",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "0.5.0",
+        "versions": [
+            "0.5.0"
+        ]
+    },
+    {
         "displayName": "Az.ssh",
         "displayPublisher": "Microsoft",
         "displaySummary": "Azure CLI extension. SSH into Azure VMs using RBAC and AAD OpenSSH Certificates",
@@ -293,6 +332,22 @@
         ]
     },
     {
+        "displayName": "Az.stream-analytics",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "Azure CLI extension. Microsoft Azure Command-Line Tools StreamAnalyticsManagementClient Extension",
+        "icon": "data:image/png;base64,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",
+        "keywords": [
+            "cli"
+        ],
+        "name": "Azstreamanalytics",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "1.0.5",
+        "versions": [
+            "1.0.5"
+        ]
+    },
+    {
         "displayName": "AzCopy",
         "displayPublisher": "Microsoft",
         "displaySummary": "The new Azure Storage data transfer utility - AzCopy v10",
@@ -301,8 +356,9 @@
         "name": "AzCopy",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "10.32.3",
+        "version": "10.32.4",
         "versions": [
+            "10.32.4",
             "10.32.3",
             "10.31.0",
             "10.30.1",
@@ -412,8 +468,11 @@
         "name": "AzureCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.88.0",
+        "version": "2.90.0",
         "versions": [
+            "2.90.0",
+            "2.89.1",
+            "2.89.0",
             "2.88.0",
             "2.87.0",
             "2.86.0",
@@ -595,8 +654,9 @@
         "name": "AzureMLPythonLibrary",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.34.0",
+        "version": "1.34.1",
         "versions": [
+            "1.34.1",
             "1.34.0",
             "1.33.0",
             "1.32.0",
@@ -677,8 +737,24 @@
         "name": "BicepCLI",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "0.35.1",
+        "version": "0.46.1",
         "versions": [
+            "0.46.1",
+            "0.45.15",
+            "0.45.6",
+            "0.44.1",
+            "0.43.8",
+            "0.43.1",
+            "0.42.1",
+            "0.41.2",
+            "0.40.2",
+            "0.39.26",
+            "0.38.33",
+            "0.38.5",
+            "0.38.3",
+            "0.37.4",
+            "0.36.177",
+            "0.36.1",
             "0.35.1",
             "0.33.13",
             "0.22.6",
@@ -715,8 +791,13 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "4.0.6",
+        "version": "4.1.16",
         "versions": [
+            "4.1.16",
+            "4.1.15",
+            "4.1.10",
+            "4.0.9",
+            "4.0.8",
             "4.0.6",
             "4.0.1",
             "3.89.2",
@@ -793,8 +874,13 @@
         "name": "GitHubCopilotCli",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.68",
+        "version": "1.0.82",
         "versions": [
+            "1.0.82",
+            "1.0.80",
+            "1.0.79",
+            "1.0.71",
+            "1.0.70",
             "1.0.68",
             "1.0.65",
             "1.0.63",
@@ -851,8 +937,10 @@
         "name": "JWCCCuratedPortal",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2026.06.02",
+        "version": "2026.08.01",
         "versions": [
+            "2026.08.01",
+            "2026.07.01",
             "2026.06.02",
             "2026.06.01",
             "2026.05.01",
@@ -1128,8 +1216,9 @@
         "name": "AzureHPCGPUDriversLinux",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "580.126.16",
+        "version": "580.173.02",
         "versions": [
+            "580.173.02",
             "580.126.16",
             "580.95.05",
             "560.35.03",
@@ -1158,6 +1247,20 @@
         ]
     },
     {
+        "displayName": "NVIDIA vGPU GRID Drivers",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "NVIDIA vGPU GRID drivers for Air-Gapped Cloud.",
+        "icon": "data:image/png;base64,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",
+        "keywords": [],
+        "name": "AzureHPCvGPUDrivers",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "18.6",
+        "versions": [
+            "18.6"
+        ]
+    },
+    {
         "displayName": "OpenAI Python Library",
         "displayPublisher": "OpenAI",
         "displaySummary": "The OpenAI Python API Library.",
@@ -1166,8 +1269,11 @@
         "name": "OpenAIPythonSdk",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.44.0",
+        "version": "2.48.0",
         "versions": [
+            "2.48.0",
+            "2.46.0",
+            "2.45.0",
             "2.44.0",
             "2.43.0",
             "2.41.1",

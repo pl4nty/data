@@ -498,6 +498,13 @@
                 "id": "VSC-NeuroPilot.neuropilot-base"
             }
         },
+        "PeterSchmalfeldt.explorer-exclude": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Explorer Exclude Manager",
+                "id": "MadCatPX.explorer-exclude-manager"
+            }
+        },
         "PhilHindle.errorlens": {
             "disallowInstall": true,
             "extension": {
@@ -701,6 +708,27 @@
                 "id": "ValkyrLabsInc.valoride-dev"
             }
         },
+        "ViTeXFTW.ZS-HiLi": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ZeroSyntax v2",
+                "id": "ViTeXFTW.zerosyntax-vscode"
+            }
+        },
+        "ViTeXFTW.zerosyntax-server": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ZeroSyntax v2",
+                "id": "ViTeXFTW.zerosyntax-vscode"
+            }
+        },
+        "ViTeXFTW.zs-pack": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "ZeroSyntax v2",
+                "id": "ViTeXFTW.zerosyntax-vscode"
+            }
+        },
         "VisualStudioExptTeam.intellicode-api-usage-examples": {
             "disallowInstall": true,
             "extension": {
@@ -731,6 +759,34 @@
             }
         },
         "WASTeamAccount.WebTemplateStudio-dev-nightly": true,
+        "WSO2.apk-config-language-support": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "API Designer",
+                "id": "WSO2.api-designer"
+            }
+        },
+        "WSO2.ballerina-integrator": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "WSO2 Integrator",
+                "id": "WSO2.wso2-integrator"
+            }
+        },
+        "WSO2.siddhi": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "WSO2 Integrator: SI",
+                "id": "WSO2.streaming-integrator"
+            }
+        },
+        "WSO2.wso2-platform": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "WSO2 Integrator",
+                "id": "WSO2.wso2-integrator"
+            }
+        },
         "WSO2.wso2ei": {
             "disallowInstall": true,
             "extension": {
@@ -853,6 +909,13 @@
             "extension": {
                 "displayName": "corgi",
                 "id": "Corgi.corgi"
+            }
+        },
+        "andywang.vscode-scriptmonkey": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Monkey Wrench",
+                "id": "coyote-studios.monkey-wrench"
             }
         },
         "antfu.i18n-ally": {
@@ -1066,6 +1129,13 @@
             }
         },
         "ctf0.htmlhint": true,
+        "cweijan.epub-reader": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Office Viewer",
+                "id": "cweijan.vscode-office"
+            }
+        },
         "cweijan.vscode-es-client2": {
             "disallowInstall": true,
             "extension": {
@@ -1088,6 +1158,13 @@
             }
         },
         "cweijan.vscode-typora": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Office Viewer",
+                "id": "cweijan.vscode-office"
+            }
+        },
+        "cweijan.xmind-viewer": {
             "disallowInstall": true,
             "extension": {
                 "displayName": "Office Viewer",
@@ -1181,6 +1258,13 @@
                 "id": "fastly.vscode-fastly-vcl"
             }
         },
+        "dotutils.binlog-analyzer": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "MSBuild Binlog Analyzer for VS Code",
+                "id": "ms-dotnettools.msbuild-binlog-analyzer"
+            }
+        },
         "doublefint.vscode-cos": {
             "disallowInstall": true,
             "extension": {
@@ -1244,6 +1328,20 @@
                 "id": "asterisksyntaxhighlighter"
             }
         },
+        "focusquest.standup-brief": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "FocusQuest",
+                "id": "focusquest.focusquest"
+            }
+        },
+        "focusquest.twinport": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "FocusQuest",
+                "id": "focusquest.focusquest"
+            }
+        },
         "formulahendry.terminal": true,
         "foxstudiosscratch.fox-theme-changer": {
             "disallowInstall": true,
@@ -1304,6 +1402,13 @@
             }
         },
         "glen-84.sass-lint": true,
+        "glhrmoura.imports-sorter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Go Imports Sorter",
+                "id": "tooilxui.go-imports-sorter"
+            }
+        },
         "goSiqueira.sindarin-for-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -1333,7 +1438,6 @@
                 "id": "hankhsu1996.compressed-log-viewer"
             }
         },
-        "hdg.live-html-previewer": true,
         "heptio.jsonnet": true,
         "herbertagosto.skill": {
             "disallowInstall": true,
@@ -1409,6 +1513,13 @@
             "extension": {
                 "displayName": "WebNative",
                 "id": "WebNative.webnative"
+            }
+        },
+        "ironmansoftware.powershell-universal": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Devolutions PowerShell Universal",
+                "id": "devolutionsinc.devolutions-powershell-universal"
             }
         },
         "itmcdev.db-extension-pack": true,
@@ -1547,6 +1658,13 @@
             "extension": {
                 "displayName": "Teddy",
                 "id": "RooseveltFrameworkTeam.vscode-teddy"
+            }
+        },
+        "lavich.gedcom-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GEDCOM",
+                "id": "domorium.gedcom"
             }
         },
         "leadpogrommer.cdm8-asm": {
@@ -1703,7 +1821,21 @@
                 "id": "vitest.explorer"
             }
         },
+        "miles-it.breck-chat": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Miles Development Tools",
+                "id": "miles-it.miles-development-tools"
+            }
+        },
         "mindaro.mindaro": true,
+        "mistralai.mistral-code": {
+            "disallowInstall": false,
+            "extension": {
+                "displayName": "Mistral Vibe VS Code",
+                "id": "mistralai.mistral-vibe-code"
+            }
+        },
         "mkaufman.HTMLHint": {
             "disallowInstall": false,
             "extension": {
@@ -1767,6 +1899,13 @@
         },
         "ms-devlabs.extension-manifest-editor": true,
         "ms-dotnettools.dotnet-interactive-vscode": true,
+        "ms-dotnettools.vscode-dotnet-modernize": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "GitHub Copilot upgrade",
+                "id": "ms-dotnettools.upgrade-agent"
+            }
+        },
         "ms-dotnettools.vscodeintellicode-csharp": {
             "disallowInstall": true,
             "extension": {
@@ -1865,6 +2004,13 @@
                 "id": "fregante.ghost-text"
             }
         },
+        "nickeolofsson.dbt-studio-vscode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "dbt Anvil",
+                "id": "nickeolofsson.dbt-anvil-vscode"
+            }
+        },
         "nickfode.latex-formatter": true,
         "nikitaKunevich.snippet-creator": true,
         "ninoseki.vscode-gem-lens": {
@@ -1900,6 +2046,13 @@
             "extension": {
                 "displayName": "simple git",
                 "id": "nyncral.sgit"
+            }
+        },
+        "okkeng.vscode-code-in-xml": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Code in XML",
+                "id": "arukumo.code-in-xml"
             }
         },
         "olback.es6-css-minify": true,
@@ -2023,6 +2176,10 @@
                 "id": "glenn2223.live-sass"
             }
         },
+        "robole.javascript-snippets": true,
+        "robole.markdown-shortcuts": true,
+        "robole.marky-dynamic": true,
+        "robole.marky-markdown": true,
         "rust-lang.rust": {
             "disallowInstall": true,
             "extension": {
@@ -2092,6 +2249,7 @@
                 "id": "fill-labs.dependi"
             }
         },
+        "sfdc-eng.bazel-java": true,
         "sickag.appengine-emulator": {
             "disallowInstall": true,
             "extension": {

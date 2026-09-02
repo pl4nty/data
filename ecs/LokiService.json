@@ -250,6 +250,284 @@
         "PrivacyGuardEnabled": false,
         "miplabelsformsit": true
     },
+    "LLMProxy": {
+        "EnabledModels": [
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-5",
+                "name": "Claude Opus 5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.8",
+                "name": "Claude Opus 4.8",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.7",
+                "name": "Claude Opus 4.7",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.6",
+                "name": "Claude Opus 4.6",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-sonnet-5",
+                "name": "Claude Sonnet 5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-sonnet-4.6",
+                "name": "Claude Sonnet 4.6",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 200000,
+                "id": "claude-haiku-4.5",
+                "name": "Claude Haiku 4.5",
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1050000,
+                "id": "gpt-5.6-sol",
+                "name": "GPT-5.6 Sol",
+                "reasoning_efforts": [
+                    "none",
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/responses"
+                ]
+            },
+            {
+                "context_window": 1050000,
+                "id": "gpt-5.6-terra",
+                "name": "GPT-5.6 Terra",
+                "reasoning_efforts": [
+                    "none",
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/responses"
+                ]
+            },
+            {
+                "context_window": 1050000,
+                "id": "gpt-5.6-luna",
+                "name": "GPT-5.6 Luna",
+                "reasoning_efforts": [
+                    "none",
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/responses"
+                ]
+            },
+            {
+                "context_window": 1050000,
+                "id": "gpt-5.5",
+                "name": "GPT-5.5",
+                "reasoning_efforts": [
+                    "none",
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh"
+                ],
+                "supported_endpoints": [
+                    "/responses"
+                ]
+            },
+            {
+                "context_window": 264000,
+                "id": "gpt-5-mini",
+                "name": "GPT-5 mini",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high"
+                ],
+                "supported_endpoints": [
+                    "/chat/completions"
+                ]
+            },
+            {
+                "context_window": 256000,
+                "id": "mai-code-1-flash",
+                "name": "MAI Code 1 Flash",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high"
+                ],
+                "supported_endpoints": [
+                    "/responses"
+                ]
+            }
+        ],
+        "ModelMappings": [
+            {
+                "id": "claude-opus-5",
+                "neptune_id": "anthropic-claude-opus-5",
+                "runtime_id": "anthropic-claude-opus-5"
+            },
+            {
+                "id": "claude-opus-4.8",
+                "neptune_id": "claude-opus-4-8",
+                "runtime_id": "anthropic-claude-opus-4-8"
+            },
+            {
+                "id": "claude-opus-4.7",
+                "neptune_id": "anthropic-claude-opus-4-7",
+                "runtime_id": "anthropic-claude-opus-4-7"
+            },
+            {
+                "id": "claude-opus-4.6",
+                "neptune_id": "anthropic-claude-opus-4-6",
+                "runtime_id": "anthropic-claude-opus-4-6"
+            },
+            {
+                "id": "claude-sonnet-5",
+                "neptune_id": "anthropic-claude-sonnet-5",
+                "runtime_id": "anthropic-claude-sonnet-5"
+            },
+            {
+                "id": "claude-sonnet-4.6",
+                "neptune_id": "anthropic-claude-sonnet-4-6",
+                "runtime_id": "anthropic-claude-sonnet-4-6"
+            },
+            {
+                "id": "claude-haiku-4.5",
+                "neptune_id": "anthropic-claude-haiku-4-5",
+                "runtime_id": "anthropic-claude-haiku-4-5"
+            },
+            {
+                "id": "gpt-5.6-sol",
+                "neptune_id": "gpt-5-6-sol",
+                "runtime_id": "gpt-56-reasoning-sol"
+            },
+            {
+                "id": "gpt-5.6-terra",
+                "neptune_id": "gpt-5-6-terra",
+                "runtime_id": "gpt-56-reasoning-mini-terra"
+            },
+            {
+                "id": "gpt-5.6-luna",
+                "neptune_id": "gpt-5-6-luna",
+                "runtime_id": "gpt-56-reasoning-nano-luna"
+            },
+            {
+                "id": "gpt-5.5",
+                "neptune_id": "gpt-55-reasoning",
+                "runtime_id": "gpt-55-reasoning"
+            },
+            {
+                "id": "gpt-5-mini",
+                "neptune_id": "gpt-5-chat-mini",
+                "runtime_id": "gpt-5-chat-mini"
+            },
+            {
+                "id": "mai-code-1-flash",
+                "neptune_id": "mai-code-1-flash",
+                "runtime_id": "mai-code-1-flash"
+            }
+        ],
+        "ScenarioIdMappings": [
+            {
+                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+                "scenario": "CodeTab"
+            },
+            {
+                "appId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+                "scenario": "CodeTab"
+            },
+            {
+                "appId": "ea31b3ac-3225-4c75-b81e-34e3091871d5",
+                "scenario": "GitHubCopilot"
+            },
+            {
+                "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
+                "scenario": "CodeTab"
+            },
+            {
+                "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
+                "scenario": "CodeTab"
+            }
+        ]
+    },
     "LivePeopleCards": {
         "AINotesPanelEnabled": false,
         "AdditionalNonDefaultProperties": false,
@@ -314,7 +592,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260628.9.0",
+        "LpcVersion": "1.20260817.3.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -646,7 +924,7 @@
         "EnableAdminCenter": true,
         "EnableAgentActivityPanel": false,
         "EnableAgentCardType": true,
-        "EnableAgentDetailsPanel": false,
+        "EnableAgentDetailsPanel": true,
         "EnableAllPersonIdsDirectoryResolution": true,
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
@@ -665,13 +943,15 @@
         "EnableCustomDnsResolution": true,
         "EnableDistributedLockingForAadCalls": true,
         "EnableDummyInsights": false,
+        "EnableEdpsClientTelemetryCollectorUrlOverride": true,
         "EnableEventCategoryColors": true,
         "EnableExtendedRelationships": true,
         "EnableFetchReminderPlanForForms": true,
         "EnableFetchingSocialProximityFrom3SApi": false,
         "EnableFetchingSocialProximityFrom3SSuggestionsApi": false,
+        "EnableFilesCoreSdkForSharedFiles": true,
+        "EnableFilesCoreSdkForUsedFiles": true,
         "EnableForceInferredManager": true,
-        "EnableGccCrossCloudFederation": true,
         "EnableGetScheduleUsingGRPC": true,
         "EnableGptExtensionsTeachingMoment": true,
         "EnableHaukQueryV3": true,
@@ -685,11 +965,17 @@
         "EnableLlmInsights": false,
         "EnableLokiOdspTempAuthPreviewMitigation": true,
         "EnableLokiQueryAnnouncementsScenario": true,
+        "EnableM365AdminConsumption": true,
         "EnableMRUFormsRetrieval": false,
         "EnableMicrosoftFormsIntegrationToLoki": true,
-        "EnableMisePopTokenValidation": true,
         "EnableMsGraphThrottle": true,
+        "EnableMsalActorTokenPhase1": true,
+        "EnableMsalActorTokenPhase2": true,
+        "EnableMsalActorTokenPhase3": true,
+        "EnableMsalActorTokenPhase4": true,
+        "EnableMsalActorTokenPhase5": true,
         "EnableMyAnalyticsPendingRSVPMeetingBatching": true,
+        "EnableNeptune": true,
         "EnableNudgeApiForPendingRsvp": false,
         "EnableOofStatus": true,
         "EnableOrgChartDataProviderConcurrencyLimit": true,
@@ -711,7 +997,6 @@
         "EnablePureJsonHighlightBasedPrompts": true,
         "EnablePureJsonPromptsMapping": true,
         "EnableRecommendedBrandsPanel": true,
-        "EnableRecordingHydration": true,
         "EnableRedirectOnTopLevelDomain": false,
         "EnableRefactoredDummyProvider": false,
         "EnableSdsEndpoints": false,
@@ -730,6 +1015,7 @@
         "EnableSdsPrime_TeachingMomentSdsProvider": true,
         "EnableSdsPrime_UserAssociationsService": true,
         "EnableSdsPrime_UserDefinedPivotProvider": true,
+        "EnableSecurityLogs": true,
         "EnableSignalsEndpoint": true,
         "EnableSortingByRingableHighlights": false,
         "EnableSplitSignalPropagationForUserActions": true,
@@ -739,6 +1025,7 @@
         "EnableSydneyServerSideGptIdFilter": true,
         "EnableTeamsLicenseCheck": true,
         "EnableTidRoutingOnExternalDomain": true,
+        "EnableTopics": false,
         "EnableUserPreferenceV2": true,
         "EnableVNextQuery": true,
         "EnableVivaLearning": true,
@@ -1369,6 +1656,7 @@
             "TopP": 1
         },
         "NetCoreEndpointEnabled": true,
+        "NotifyTemplateVersionSelection": true,
         "ObjectStoreEndpointForRelatedBrands": "https://ObjectStoreFD.Prod.CO.binginternal.com/sds/ObjectStoreQuery/V1",
         "ObjectStoreFailoverUrl": "",
         "ObjectStoreReplVIP": "https://ObjectStoreReplFD.Prod.WestUS2.binginternal.com:443/sds",
@@ -1642,6 +1930,7 @@
         "UseObjectStoreHttpClientFactory": true,
         "UseOnlyPostMigratedProvider": true,
         "UsePcsProfileUrls": true,
+        "UsePublicWorksWithForPrivateWorksWith": true,
         "UseUserLicenseV1Endpoint": true,
         "UseYggdrasilForOrgExplorer": true,
         "UserFormsQueryLimit ": 8,
@@ -2070,9 +2359,8 @@
     },
     "OrganizationExplorer": {
         "GraphQLEndpointRequestLimit": 100,
-        "OCVAppId": "2952",
         "OrgExplorerBootstraperVersion": "1.20260526.1.0",
-        "OrgExplorerVersion": "1.20260616.4.0",
+        "OrgExplorerVersion": "1.20260821.4.0",
         "allowInAppFeedback": true,
         "forceUseEVfromBootstrapper": false,
         "isAssistantEnabledInOrgExplorer": true,
@@ -2082,7 +2370,7 @@
         "isReportsCountEnabled": true,
         "isVivaSkillsFilteringEnabled": true,
         "ocvAppId": "2952",
-        "privacyUrl": "https://aka.ms/dpn"
+        "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",

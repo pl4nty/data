@@ -6,8 +6,16 @@
             "FullSetLogEnabled": false
         }
     },
+    "com.microsoft.authenticator": {
+        "MsaCityLocation": true,
+        "MsaNumberMatchRedesign": true,
+        "MsaNumberMatchRedesignMap": true,
+        "SecureTotpEcsEnabled": true,
+        "SecureTotpStorageAllowlist": "c2712649-f823-4a39-8a43-0468501adcac,f2c2d877-f9ff-4016-8052-3c669a405e4c,88b431e7-cf2a-43a9-bd00-81441f5c2d3c,36da45f1-dd2c-4d1f-af13-5abe46b99921,56c62bbe-8598-4b85-9e51-1ca753fa50f2,fffcdc91-d561-4287-aebc-78d2466eec29,1e9b61e8-e590-4abc-b1af-24125e330d2a,ca536ba5-5ce6-4c8c-bac9-a70da6d1c896,92e84ceb-fbfd-47ab-be52-080c6b87953f,68283f3b-8487-4c86-adb3-a5228f18b893,e197ea9e-02e5-4cb6-96b2-5571cd645754,fa23982e-6646-4a33-a5c4-1a848d02fcc4"
+    },
     "com.microsoft.identity.broker": {
         "EnableBrokerProtocolVersionCheck": true,
+        "EnableBrowserSso": "true",
         "EnableDcfInBroker": true,
         "ForceBrokerDiscoveryEnabledForIntune": true,
         "TelemetrySamplingRate": 0.25

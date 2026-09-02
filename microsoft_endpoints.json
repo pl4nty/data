@@ -783,19 +783,6 @@
     {
         "category": "Default",
         "expressRoute": false,
-        "id": 105,
-        "notes": "Outlook for Android and iOS: Outlook Privacy",
-        "required": false,
-        "serviceArea": "Common",
-        "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
-        "tcpPorts": "443",
-        "urls": [
-            "www.acompli.com"
-        ]
-    },
-    {
-        "category": "Default",
-        "expressRoute": false,
         "id": 114,
         "notes": "Office Mobile URLs",
         "required": false,
@@ -1059,7 +1046,20 @@
         "tcpPorts": "443",
         "udpPorts": "443",
         "urls": [
-            "*.cloud.microsoft",
+            "*.cloud.microsoft"
+        ]
+    },
+    {
+        "category": "Default",
+        "expressRoute": false,
+        "id": 193,
+        "notes": "",
+        "required": true,
+        "serviceArea": "Common",
+        "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
+        "tcpPorts": "443",
+        "udpPorts": "443",
+        "urls": [
             "*.static.microsoft",
             "*.usercontent.microsoft"
         ]

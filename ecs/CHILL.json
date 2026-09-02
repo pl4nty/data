@@ -3,115 +3,10 @@
         "key": "val",
         "test": "test"
     },
-    "ChillADF": {
-        "Floodgate_Campaign_AzureDataFactory.cab36281-fd31-4cf6-a302-72720c5651ec": {
-            "CampaignId": "cab36281-fd31-4cf6-a302-72720c5651ec",
-            "EndTimeUtc": "2026-07-14T16:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 10,
-                "Type": 0
-            },
-            "PrimaryPriority": 1,
-            "StartTimeUtc": "2025-07-14T16:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "AppUsageTime",
-                            "Count": 7200,
-                            "IsAggregate": true,
-                            "Type": 0
-                        },
-                        {
-                            "Activity": "ReadyToPrompt",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 4,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Amplify - Horizontal Rating",
-                            "id": "32d91b8c-af39-4021-9b66-ad45521ea51c",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "rating1",
-                                    "leftLegendValue": "Very Unlikely",
-                                    "questionLabel": "How likely are you to recommend Azure Data Factory to a colleague, if asked?",
-                                    "ratingValues": [
-                                        "1",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5"
-                                    ],
-                                    "required": true,
-                                    "rightLegendValue": "Very likely",
-                                    "type": "Rating",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective."
-                        },
-                        {
-                            "displayName": "Amplify - Verbatim",
-                            "id": "37233c74-381a-443c-a3de-2dac35c05870",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "verbatim1",
-                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective."
-                        },
-                        {
-                            "displayName": "Amplify - Thank You",
-                            "id": "cd01c6d8-5a76-482d-abaf-388a2e78f698",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText1",
-                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/cab36281-fd31-4cf6-a302-72720c5651ec/54fa24d6-6767-43a3-b79a-0a096e5bcb8d/Web-AzureDataFactory/",
-                    "variables": {}
-                }
-            }
-        }
-    },
     "ChillAdminCopilot": {
         "Floodgate_Campaign_AdminPortal.1edd70f9-d14c-4c65-8556-c6f736b436c9": {
             "CampaignId": "1edd70f9-d14c-4c65-8556-c6f736b436c9",
-            "EndTimeUtc": "2026-08-09T18:30:00Z",
+            "EndTimeUtc": "2026-09-14T18:30:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -221,9 +116,98 @@
                 }
             }
         },
+        "Floodgate_Campaign_AdminPortal.277ce749-64ef-483c-940f-a3fe816dcccc": {
+            "CampaignId": "277ce749-64ef-483c-940f-a3fe816dcccc",
+            "EndTimeUtc": "2026-10-05T23:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-12-01T00:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "Copilot_Trial_Disable",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Help us improve Copilot trials for your organization"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Need more admin control for managing trials (e.g. enablement, timing, revocation)",
+                                        "Rollout or pilot plan isn't finalized",
+                                        "Need to show Copilot's return on investment to leadership before enabling trials",
+                                        "Trials create administrative overhead ",
+                                        "Security or compliance concerns with unsupervised trials ",
+                                        "Organization uses a different AI solution",
+                                        "Other"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more (optional). What would help your organization feel ready for Copilot trials?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/277ce749-64ef-483c-940f-a3fe816dcccc/8c20a2f6-a881-464e-a2e3-bda5723fec51/Web-AdminPortal/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_AdminPortal.3efd818d-0d7b-4dee-87f1-87940c7e6dd9": {
             "CampaignId": "3efd818d-0d7b-4dee-87f1-87940c7e6dd9",
-            "EndTimeUtc": "2026-09-05T07:00:00Z",
+            "EndTimeUtc": "2026-10-17T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -410,13 +394,13 @@
                 }
             }
         },
-        "Floodgate_Campaign_AdminPortal.80b4464c-47da-4833-8386-a263b1f3bb2c": {
-            "CampaignId": "80b4464c-47da-4833-8386-a263b1f3bb2c",
-            "EndTimeUtc": "2026-07-30T18:30:00Z",
+        "Floodgate_Campaign_AdminPortal.aa7238bb-1faa-4f59-9ff7-58ef41081868": {
+            "CampaignId": "aa7238bb-1faa-4f59-9ff7-58ef41081868",
+            "EndTimeUtc": "2026-10-17T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
-                    "IntervalSeconds": 2592000,
+                    "IntervalSeconds": 7776000,
                     "Type": 0
                 },
                 "FallbackSurveyDurationSeconds": 0,
@@ -425,16 +409,16 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
+                "PercentageNumerator": 50,
                 "Type": 0
             },
             "PrimaryPriority": 3,
-            "StartTimeUtc": "2026-02-15T18:30:00Z",
+            "StartTimeUtc": "2025-06-24T07:00:00Z",
             "SurveyTemplate": {
                 "ActivationEvent": {
                     "Sequence": [
                         {
-                            "Activity": "BillingPolicyCreated",
+                            "Activity": "UserSettingChanged",
                             "Count": 1,
                             "IsAggregate": false,
                             "Type": 0
@@ -448,64 +432,19 @@
                     "branchingRules": [],
                     "pages": [
                         {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
                             "isFinalPage": false,
                             "questions": [
                                 {
-                                    "availableOptions": [
-                                        "5 - Very easy",
-                                        "4 - Easy ",
-                                        "3 - Neutral ",
-                                        "2 - Difficult ",
-                                        "1 - Very difficult"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How easy was the Pay-As-You-Go setup experience overall?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
                                     "required": false,
-                                    "type": "Comment",
+                                    "type": "Label",
                                     "visible": true
                                 }
                             ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "MultiSelect Verbatim",
-                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Finding the PAYG billing entry point",
-                                        "Understanding prerequisites to enable PAYG",
-                                        "Assigning users or security groups",
-                                        "Understanding budgets and alerts",
-                                        "Permissions or access issues",
-                                        "Understanding cost for Copilot services",
-                                        "I didn't get stuck"
-                                    ],
-                                    "id": "multiselect1",
-                                    "questionLabel": "Where did you get stuck or feel least confident?",
-                                    "required": true,
-                                    "type": "MultipleChoice",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "verbatim2",
-                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
+                            "title": "We'd love your feedback on Microsoft"
                         },
                         {
                             "displayName": "Verbatim",
@@ -513,38 +452,8 @@
                             "isFinalPage": false,
                             "questions": [
                                 {
-                                    "id": "verbatim3",
-                                    "questionLabel": "What felt unclear or confusing in the UI?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "MultiSelect Verbatim",
-                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Better in-product guidance",
-                                        "Fewer setup steps",
-                                        "Cost estimation before/after enabling",
-                                        "Usage and cost reporting",
-                                        "Budget hard shutoff",
-                                        "Other"
-                                    ],
-                                    "id": "multiselect2",
-                                    "questionLabel": "Which improvement would help you most?",
-                                    "required": true,
-                                    "type": "MultipleChoice",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "verbatim4",
-                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "id": "verbatim1",
+                                    "questionLabel": "What prompted this Copilot setting change? Your feedback helps us improve.",
                                     "required": false,
                                     "type": "Comment",
                                     "visible": true
@@ -553,7 +462,7 @@
                             "title": "Microsoft would love your perspective"
                         }
                     ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/80b4464c-47da-4833-8386-a263b1f3bb2c/51f6fa06-9fee-4dac-b3d6-c50ba4253aed/Web-AdminPortal/",
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/aa7238bb-1faa-4f59-9ff7-58ef41081868/07fc14fe-bc52-4119-8490-20cb8cdd0e0b/Web-AdminPortal/",
                     "variables": {}
                 }
             }
@@ -657,7 +566,7 @@
         },
         "Floodgate_Campaign_AdminPortal.e187a7f9-a8d3-496a-835d-5b1d1b7a1d62": {
             "CampaignId": "e187a7f9-a8d3-496a-835d-5b1d1b7a1d62",
-            "EndTimeUtc": "2026-08-30T18:30:00Z",
+            "EndTimeUtc": "2026-09-14T18:30:00Z",
             "GovernedChannelType": 1,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -871,7 +780,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 1,
+                "PercentageNumerator": 50,
                 "Type": 0
             },
             "PrimaryPriority": 0,
@@ -949,6 +858,108 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/e5301e5e-8f5b-46f1-8cdd-a81ec0b5b3c8/cac48ea0-09dd-4f1a-bdce-5f6221169524/Web-MicrosoftTeamsAdminCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_MicrosoftTeamsAdminCenter.ef1b35a7-6754-40d4-98b6-7451e63d4dfe": {
+            "CampaignId": "ef1b35a7-6754-40d4-98b6-7451e63d4dfe",
+            "EndTimeUtc": "2027-03-05T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-08-06T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UsedTeamsAdminCenter_TriggerSuitePSAT",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all satisfied",
+                                    "questionLabel": "Overall based on your experience, how satisfied are you with Teams Admin Center?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Very satisfied",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "How could we make it better? May we contact you for more details, if needed?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText1",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/ef1b35a7-6754-40d4-98b6-7451e63d4dfe/d8f3f1f6-4098-4d51-bdd5-b07cadba3192/Web-MicrosoftTeamsAdminCenter/",
                     "variables": {}
                 }
             }
@@ -1223,7 +1234,7 @@
     "ChillDynamics365BusinessCentral": {
         "Floodgate_Campaign_Dynamics365BusinessCentral.0948caeb-1963-43ed-888f-cc8b7d27bbf4": {
             "CampaignId": "0948caeb-1963-43ed-888f-cc8b7d27bbf4",
-            "EndTimeUtc": "2026-09-08T23:00:00Z",
+            "EndTimeUtc": "2026-10-19T23:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1300,7 +1311,7 @@
         },
         "Floodgate_Campaign_Dynamics365BusinessCentral.7d5b86a5-c81a-4891-9d7e-7f928fbd37c0": {
             "CampaignId": "7d5b86a5-c81a-4891-9d7e-7f928fbd37c0",
-            "EndTimeUtc": "2026-09-08T23:00:00Z",
+            "EndTimeUtc": "2026-10-19T23:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1380,7 +1391,7 @@
     "ChillHarmony": {
         "Floodgate_Campaign_Harmony.09032fe4-85e7-4331-ae13-3df61f06d8e3": {
             "CampaignId": "09032fe4-85e7-4331-ae13-3df61f06d8e3",
-            "EndTimeUtc": "2026-08-07T07:00:00Z",
+            "EndTimeUtc": "2026-09-18T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1468,7 +1479,7 @@
         },
         "Floodgate_Campaign_Harmony.19e97f6c-a020-4f5a-a189-1618a52d2b00": {
             "CampaignId": "19e97f6c-a020-4f5a-a189-1618a52d2b00",
-            "EndTimeUtc": "2026-08-07T07:00:00Z",
+            "EndTimeUtc": "2026-09-18T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1633,7 +1644,7 @@
         },
         "Floodgate_Campaign_Harmony.e675cbd9-6799-406a-b5fe-09c7deef3e92": {
             "CampaignId": "e675cbd9-6799-406a-b5fe-09c7deef3e92",
-            "EndTimeUtc": "2026-08-07T07:00:00Z",
+            "EndTimeUtc": "2026-09-18T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2057,10 +2068,120 @@
             }
         }
     },
+    "ChillMicrosoftFabric": {
+        "Floodgate_Campaign_MicrosoftFabric.24aacf63-1da8-4665-8442-7922bce788ac": {
+            "CampaignId": "24aacf63-1da8-4665-8442-7922bce788ac",
+            "EndTimeUtc": "2028-01-01T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 5,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2026-07-22T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "AppUsageTime",
+                            "Count": 1800,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "ReadytoPrompt",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all likely",
+                                    "questionLabel": "How likely are you to recommend Microsoft Fabric (including Power BI) to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "MultiSelect Verbatim",
+                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Reliability / Outages",
+                                        "Ease of Use / UX",
+                                        "Performance / Latency",
+                                        "Feature Gaps",
+                                        "Cost / Pricing ",
+                                        "Other"
+                                    ],
+                                    "id": "multiselect1",
+                                    "questionLabel": "Help us understand what is getting in the way of your success. Select all that apply.",
+                                    "required": true,
+                                    "type": "MultipleChoice",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/24aacf63-1da8-4665-8442-7922bce788ac/b7892269-1976-4511-90f7-95f22a92f8d5/Web-MicrosoftFabric/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillNexusInteractiveAI": {
         "Floodgate_Campaign_Dynamics365FinanceandOperations.d8b3a33a-a708-497a-b248-27a9b98faa76": {
             "CampaignId": "d8b3a33a-a708-497a-b248-27a9b98faa76",
-            "EndTimeUtc": "2026-08-27T07:00:00Z",
+            "EndTimeUtc": "2026-10-09T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2295,7 +2416,7 @@
     "ChillPowerApps": {
         "Floodgate_Campaign_PowerApps.656d4a8c-cba2-40d9-a12a-33da0735b859": {
             "CampaignId": "656d4a8c-cba2-40d9-a12a-33da0735b859",
-            "EndTimeUtc": "2026-07-17T22:00:00Z",
+            "EndTimeUtc": "2026-10-30T23:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -2360,77 +2481,6 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/656d4a8c-cba2-40d9-a12a-33da0735b859/97d132ab-9fc7-41b0-a857-7f7bfe002852/Web-PowerApps/",
-                    "variables": {}
-                }
-            }
-        },
-        "Floodgate_Campaign_PowerApps.bac264ce-5864-4848-9ace-f6e23dbeabde": {
-            "CampaignId": "bac264ce-5864-4848-9ace-f6e23dbeabde",
-            "EndTimeUtc": "2026-08-14T22:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 86400,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 86400,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2026-03-23T23:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "trace_readyToPrompt",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Very satisfied ",
-                                        "Satisfied",
-                                        "Dissatisfied",
-                                        "Very dissatisfied "
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "Overall, how satisfied are you with Traceability?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us how we can improve your experience.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/bac264ce-5864-4848-9ace-f6e23dbeabde/231728e0-a876-4281-b151-c56946ad1d2a/Web-PowerApps/",
                     "variables": {}
                 }
             }
@@ -2937,7 +2987,7 @@
         },
         "Floodgate_Campaign_Security&ComplianceCenter.cbe6cd2b-8b3f-43a4-82d1-9f9a378339de": {
             "CampaignId": "cbe6cd2b-8b3f-43a4-82d1-9f9a378339de",
-            "EndTimeUtc": "2026-08-15T21:00:00Z",
+            "EndTimeUtc": "2026-10-10T21:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3264,9 +3314,67 @@
                 }
             }
         },
+        "Floodgate_Campaign_SharePoint.583fcd85-b4a3-41b2-9372-b8da8ed7a3d5": {
+            "CampaignId": "583fcd85-b4a3-41b2-9372-b8da8ed7a3d5",
+            "EndTimeUtc": "2027-02-25T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 40,
+                "Type": 0
+            },
+            "PrimaryPriority": 0,
+            "StartTimeUtc": "2022-11-15T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "TestTrigger",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "NA",
+                        "Question": "NA",
+                        "Title": "NA",
+                        "YesLabel": "NA"
+                    },
+                    "Question": {
+                        "Question": "How could we make it better?"
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How likely are you to recommend Microsoft 365 to others, if asked?",
+                        "RatingValuesAscending": [
+                            "Not at all likely",
+                            "NA",
+                            "NA",
+                            "NA",
+                            "Extremely likely"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4
+            }
+        },
         "Floodgate_Campaign_SharePoint.79808b4a-7a47-47f5-be77-2c8d304f28c6": {
             "CampaignId": "79808b4a-7a47-47f5-be77-2c8d304f28c6",
-            "EndTimeUtc": "2026-08-30T16:00:00Z",
+            "EndTimeUtc": "2026-09-29T16:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3410,7 +3518,7 @@
         },
         "Floodgate_Campaign_SharePoint.83384bc2-8bc8-4738-bb5e-0b05e181a988": {
             "CampaignId": "83384bc2-8bc8-4738-bb5e-0b05e181a988",
-            "EndTimeUtc": "2026-07-31T07:00:00Z",
+            "EndTimeUtc": "2026-09-25T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3884,6 +3992,390 @@
                         }
                     ],
                     "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/f75faa5f-0e3f-47dc-b094-60be402f8db8/7428d7b9-d55b-4f7e-9934-eae78e693c97/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        }
+    },
+    "ChillVivaGlint": {
+        "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
+            "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
+            "EndTimeUtc": "2027-01-15T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NPSStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "1 - Very unlikely",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5 - Very likely"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How likely are you to recommend Glint to others, if asked?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/64136d79-3325-42a4-83c4-c88d2a3588e2/78467781-f378-4b5b-8f4a-a81091f9050a/Web-VivaGlint/",
+                    "variables": {}
+                }
+            }
+        }
+    },
+    "Chilliamexperiences": {
+        "Floodgate_Campaign_myaccount.microsoft.com.3a609e3c-a016-472d-90e6-9e83ec1abcec": {
+            "CampaignId": "3a609e3c-a016-472d-90e6-9e83ec1abcec",
+            "EndTimeUtc": "2027-01-16T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 5,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-06-17T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "Unified\u00a0Portal\u00a0-\u00a0Homepage\u00a0-\u00a0click\u00a0on\u00a0Keep\u00a0Track\u00a0cards",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Extremely valuable",
+                                        "4 - Valuable",
+                                        "3 - Netural",
+                                        "2 - Somewhat valuable",
+                                        "1 - Not Valuable"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How valuable was the keep track cards?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/3a609e3c-a016-472d-90e6-9e83ec1abcec/bb0e9a61-0c65-48e9-b51c-e2e373af9b9e/Web-myaccount.microsoft.com/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_myaccount.microsoft.com.4bc97788-eef2-4531-8f45-3bd52ddf9d1f": {
+            "CampaignId": "4bc97788-eef2-4531-8f45-3bd52ddf9d1f",
+            "EndTimeUtc": "2027-01-07T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 2,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-06-08T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UnifiedPortalRendered",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Extremely Satisfied",
+                                        "4 - Satisfied",
+                                        "3 - Neutral",
+                                        "2 - Somewhat satisfied",
+                                        "1 - Not satisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Overall, how satisfied or dissatisfied are you with your experience?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/4bc97788-eef2-4531-8f45-3bd52ddf9d1f/44a5708c-2033-4d99-9afd-d06510288857/Web-myaccount.microsoft.com/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_myaccount.microsoft.com.8b8481ee-a396-4417-8ec0-a646c72e4c3d": {
+            "CampaignId": "8b8481ee-a396-4417-8ec0-a646c72e4c3d",
+            "EndTimeUtc": "2027-03-31T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2026-06-17T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "Unified\u00a0Portal\u00a0-\u00a0Disable\u00a0device",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Extremely Easy",
+                                        "4 - Moderately easy",
+                                        "3 - Neither Easy nor hard",
+                                        "2 - Moderately Hard",
+                                        "1 - Extremely Hard"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How easy was it for you to disable your device?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/8b8481ee-a396-4417-8ec0-a646c72e4c3d/6aa52563-64fb-42df-84f8-347386d0e470/Web-myaccount.microsoft.com/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_myaccount.microsoft.com.c911c315-2c84-4a96-aa2c-213d533da0c1": {
+            "CampaignId": "c911c315-2c84-4a96-aa2c-213d533da0c1",
+            "EndTimeUtc": "2026-11-12T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 5,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-06-17T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "Unified\u00a0Portal\u00a0-\u00a0View\u00a0BitLocker\u00a0key",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Extremely Easy",
+                                        "4 - Moderately easy",
+                                        "3 - Neither Easy nor hard",
+                                        "2 - Moderately Hard",
+                                        "1 - Extremely Hard"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How easy was it to get your BitLocker key?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/c911c315-2c84-4a96-aa2c-213d533da0c1/9d29416b-cd9d-4fc5-9d8f-84de4882c982/Web-myaccount.microsoft.com/",
                     "variables": {}
                 }
             }

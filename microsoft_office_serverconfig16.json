@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20129.40125-->
+    <!--Build: 16.0.20414.40128-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -87,7 +87,7 @@
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="InsertMediaTelemetry">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/api/telemetry</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/api/telemetry</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContent" o:authentication="1">
       <o:url>https://insertmedia.bing.office.net/images/officeonlinecontent/browse?cp=Bing</o:url>
@@ -105,22 +105,22 @@
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentIcons">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/microsofticon?</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/microsofticon?</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContentM365Icons">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/microsoftcontent?initpivot=icons&amp;premium=1</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/microsoftcontent?initpivot=icons&amp;premium=1</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContentM365Images">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/microsoftcontent?initpivot=stockimages&amp;premium=1</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/microsoftcontent?initpivot=stockimages&amp;premium=1</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContentM365Videos">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/microsoftcontent?initpivot=stockvideos&amp;premium=1</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/microsoftcontent?initpivot=stockvideos&amp;premium=1</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContentMobilePictures" o:authentication="1">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/sharedfilepicker</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/sharedfilepicker</o:url>
     </o:service>
     <o:service o:name="OfficeOnlineContentImages" o:authentication="1">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/browse?secureurl=1</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/browse?secureurl=1</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentOD" o:authentication="1">
@@ -128,27 +128,27 @@
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentOEmbed" o:authentication="1">
-      <o:url>https://hubble.officeapps.live.com/mediasvc/api/media/oembed</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubble.officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://hubblemedia.svc.cloud.microsoft/mediasvc/api/media/oembed</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubblemedia.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentGetVideoProviderList" o:authentication="1">
-      <o:url>https://hubble.officeapps.live.com/mediasvc/api/media/getoembedproviders?type=video&amp;endpoints=1&amp;displayname=0&amp;providerurl=0&amp;requirements=0</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubble.officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://hubblemedia.svc.cloud.microsoft/mediasvc/api/media/getoembedproviders?type=video&amp;endpoints=1&amp;displayname=0&amp;providerurl=0&amp;requirements=0</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubblemedia.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentVideoHostPage" o:authentication="1">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/videohostpage/video</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubble.officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/videohostpage/video</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubblemedia.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentVideoPicker" o:authentication="1">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/videopicker</o:url>
-      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubble.officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/videopicker</o:url>
+      <o:ticket o:idprovider="3" o:headerName="Authorization" o:headerValue="Bearer {}" o:resourceId="https://hubblemedia.svc.cloud.microsoft" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="OfficeOnlineContent3DModel" o:authentication="1">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/browse?cp=remix3d</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/browse?cp=remix3d</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="officeapps.live.com"/>
     </o:service>
     <o:service o:name="OfficeOnlineContentVideos">
-      <o:url>https://insertmedia.osi.office.net/insertmedia</o:url>
+      <o:url>https://insertmedia.svc.cloud.microsoft/insertmedia</o:url>
     </o:service>
     <o:service o:name="HxOutlookCopilotServiceUrl">
       <o:url>https://outlook.office.com/OutlookCopilot</o:url>
@@ -157,7 +157,7 @@
       <o:url>https://mobile.events.data.microsoft.com/OneCollector/1.0/</o:url>
     </o:service>
     <o:service o:name="HubbleLoggingSvc">
-      <o:url>https://hubble.officeapps.live.com/mediasvc/api/media/log</o:url>
+      <o:url>https://hubblemedia.svc.cloud.microsoft/mediasvc/api/media/log</o:url>
     </o:service>
     <o:service o:name="BingInsertMediaImmersive">
       <o:url>https://insertmedia.bing.office.net/images/hosted?host=office&amp;adlt=strict&amp;hostType=ImmersiveApp</o:url>
@@ -477,6 +477,9 @@
     <o:service o:name="OArtResourceServiceEndpoint">
       <o:url>https://fs.microsoft.com/fs/oart/1.5</o:url>
     </o:service>
+    <o:service o:name="OArtInkEffectHubbleCDN">
+      <o:url>https://res.public.onecdn.static.microsoft/m365content/publish</o:url>
+    </o:service>
     <o:service o:name="CustomFontServiceEndpoint">
       <o:url>https://cr.office.com</o:url>
     </o:service>
@@ -503,6 +506,9 @@
     </o:service>
     <o:service o:name="OutlookWebUrl">
       <o:url>https://outlook.office.com</o:url>
+    </o:service>
+    <o:service o:name="NewOutlookCdnUrl">
+      <o:url>https://res.public.onecdn.static.microsoft</o:url>
     </o:service>
     <o:service o:name="OutlookWeatherMSN">
       <o:url>http://weather.service.msn.com/data.aspx</o:url>
@@ -657,6 +663,9 @@
       <o:url>https://api.cortana.ai</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.cortana.ai" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="SubstrateBase">
+      <o:url>https://substrate.office.com</o:url>
+    </o:service>
     <o:service o:name="SubstrateDashBaseUrl" o:authentication="2">
       <o:url>https://api.diagnostics.office.com</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.diagnostics.office.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
@@ -689,8 +698,9 @@
     <o:service o:name="OfficeHubCarouselCdn">
       <o:url>https://contentstorage.osi.office.net/getofficecarouselcore/index.html</o:url>
     </o:service>
-    <o:service o:name="MsGraphBase">
+    <o:service o:name="MsGraphBase" o:authentication="2">
       <o:url>https://graph.microsoft.com/</o:url>
+      <o:ticket o:idprovider="3" o:resourceId="https://graph.microsoft.com/" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
     <o:service o:name="MsGraphClassifyTextURL" o:authentication="2">
       <o:url>https://graph.microsoft.com/beta/dataClassification/classifyText</o:url>
@@ -1094,6 +1104,9 @@
     <o:service o:name="TeamsFEEndpoint">
       <o:url>https://teams.microsoft.com</o:url>
     </o:service>
+    <o:service o:name="TeamsMCPSEndpoint">
+      <o:url>https://teams.microsoft.com/api/mcps/prod</o:url>
+    </o:service>
     <o:service o:name="TeamsOneDSCollector">
       <o:url>https://teams.events.data.microsoft.com/OneCollector/1.0</o:url>
     </o:service>
@@ -1243,6 +1256,9 @@
       <o:url>https://api.diagnosticssdf.office.com/v2/file</o:url>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://api.diagnosticssdf.office.com/v2/file" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="McpsContentsUrl">
+      <o:url>https://teams.microsoft.com/api/mcps/prod/contents</o:url>
+    </o:service>
     <o:service o:name="ODSIncidentsProdUrl">
       <o:url>https://incidents.diagnostics.office.com</o:url>
     </o:service>
@@ -1343,8 +1359,11 @@
     <o:service o:name="LokiAutoDiscoverUrl">
       <o:url>https://loki.delve.office.com/api/v1/configuration/officewin32/</o:url>
     </o:service>
+    <o:service o:name="LokiHost">
+      <o:url>https://loki.delve.office.com</o:url>
+    </o:service>
     <o:service o:name="LoopHubbleCDN">
-      <o:url>https://cdn.hubblecontent.osi.office.net/</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/</o:url>
     </o:service>
     <o:service o:name="LoopWebServiceBaseURL" o:authentication="2">
       <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
@@ -1442,10 +1461,10 @@
       <o:url>https://res.public.onecdn.static.microsoft/designer</o:url>
     </o:service>
     <o:service o:name="DesignerHubble">
-      <o:url>https://hubblecontent.osi.office.net/contentsvc/api/pivots/</o:url>
+      <o:url>https://hubblecontent.svc.cloud.microsoft/contentsvc/api/pivots/</o:url>
     </o:service>
     <o:service o:name="DesignerHubbleCDN">
-      <o:url>https://cdn.hubblecontent.osi.office.net/</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/</o:url>
     </o:service>
     <o:service o:name="DesignerMobileCDN">
       <o:url>https://res.public.onecdn.static.microsoft/designer/designer-mobile</o:url>
@@ -2263,9 +2282,6 @@
     <o:service o:name="ClassNotebookHelpAndFeedbackAgave">
       <o:url>https://www.onenote.com/officeaddins/classnotebook</o:url>
     </o:service>
-    <o:service o:name="SubstrateBase">
-      <o:url>https://substrate.office.com</o:url>
-    </o:service>
     <o:service o:name="LiveOfficeAppsBase">
       <o:url>https://officeapps.live.com</o:url>
     </o:service>
@@ -2328,6 +2344,7 @@
     <o:token o:name="Flow.BaseHost">flow.microsoft.com</o:token>
     <o:token o:name="Teams.BaseHost">teams.microsoft.com</o:token>
     <o:token o:name="OfficeApi.AuthHost">api.office.net</o:token>
+    <o:token o:name="OfficeApiNpmRuntimePolicy">{"@1js/officejs-excel":"1.0.16","@1js/officejs-word":"1.0.14","@1js/officejs-powerpoint":"1.0.14"}</o:token>
     <o:token o:name="Growth.CdnBaseHost">res.cdn.office.net</o:token>
     <o:token o:name="OneCdn.BaseHost">res.public.onecdn.static.microsoft</o:token>
     <o:token o:name="OneCdn.BaseHost.Designer">res.public.onecdn.static.microsoft/designer</o:token>
@@ -2654,7 +2671,7 @@
     <o:token o:name="ChatOverlayFeatureEnabled">true</o:token>
     <o:token o:name="PowerPointWRSAppId">04736c86-8245-4dcb-a0c9-ecc3fdf6083d</o:token>
     <o:token o:name="AllowAugLoopServiceUrlOverride">true</o:token>
-    <o:token o:name="ECOESpecialAddinMonitoringList">wa200009404;wa200010001;wa200010725;29673e3c-d826-4f00-92ee-162334a52b1a;wa200010453;wa200009152;wa200010215;wa200008646</o:token>
+    <o:token o:name="ECOESpecialAddinMonitoringList">wa200009404;wa200010001;wa200010725;29673e3c-d826-4f00-92ee-162334a52b1a;wa200010453;wa200009152;wa200010215;wa200008646;wa200011057;wa200011055;wa200011056</o:token>
     <o:token o:name="NewOutlookCloudId">1</o:token>
     <o:token o:name="ConvergedAuthScope">c1f66aa2-edcf-4a40-81cb-7710724e8e04/.default</o:token>
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>

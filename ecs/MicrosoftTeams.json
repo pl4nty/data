@@ -29,6 +29,7 @@
     },
     "GroupCopilotBot": {
         "ProjectAgent": {
+            "EnableRoutine3PConsentProactiveRouting": true,
             "EnableSkipSendActivityInSignInInvoke": true
         }
     },
@@ -45,7 +46,7 @@
         "LightBakeIn3P": 1,
         "OcclusionBakeIn3P": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2611.0",
+        "clientMinimumVersion": "6.2615.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -136,8 +137,8 @@
                     "isReleased": true
                 },
                 "networkhealth": {
-                    "isEnabled": true,
-                    "isReleased": true
+                    "isEnabled": false,
+                    "isReleased": false
                 },
                 "pairinghealth": {
                     "isEnabled": true,
@@ -148,6 +149,184 @@
                     "isReleased": true
                 }
             }
+        },
+        "partnerAppSettingsMapping": {
+            "Admin.ScreenCapture": "Admin.ScreenCapture",
+            "DateTime.DateFormat": "DateTime.DateFormat",
+            "DateTime.TimeDST": "DateTime.TimeDST",
+            "DateTime.TimeFormat": "DateTime.TimeFormat",
+            "DateTime.Timezone": "DateTime.Timezone",
+            "DateTime.TimezoneId": "DateTime.TimezoneId",
+            "Display.Backlight": "Display.Backlight",
+            "Display.BacklightTimeout": "Display.BacklightTimeout",
+            "Display.HighContrast": "Display.HighContrast",
+            "Display.Language": "Display.Language",
+            "Display.ScreensaverEnabled": "Display.ScreensaverEnabled",
+            "Display.ScreensaverTimeout": "Display.ScreensaverTimeout",
+            "General.MusicOnHold": "General.MusicOnHold",
+            "General.Powersaving": "General.Powersaving",
+            "General.SilentMode": "General.SilentMode",
+            "Logging.Enabled": "Logging.Enabled",
+            "Logging.Levels": "Logging.Levels",
+            "Network.Bluetooth": "Network.Bluetooth",
+            "Network.DHCPEnabled": "Network.DHCPEnabled",
+            "Network.DefaultGateway": "Network.DefaultGateway",
+            "Network.DomainName": "Network.DomainName",
+            "Network.HostName": "Network.HostName",
+            "Network.IPAddress": "Network.IPAddress",
+            "Network.PCPort": "Network.PCPort",
+            "Network.PrimaryDNS": "Network.PrimaryDNS",
+            "Network.SecondaryDNS": "Network.SecondaryDNS",
+            "Network.SubnetMask": "Network.SubnetMask",
+            "Network.WiFi": "Network.WiFi",
+            "OfficeHours.End": "OfficeHours.End",
+            "OfficeHours.Start": "OfficeHours.Start",
+            "PhoneLock.Enabled": "PhoneLock.Enabled",
+            "PhoneLock.IsForcePinChangeEnabled": "PhoneLock.IsForcePinChangeEnabled",
+            "PhoneLock.Timeout": "PhoneLock.Timeout"
+        },
+        "teamsAppSettingsMapping": {
+            "betterTogetherEndpoints.config": "BetterTogetherEndpoints.Config",
+            "betterTogetherEndpoints.config.0.connected": "BetterTogetherEndpoints.Config.0.Connected",
+            "betterTogetherEndpoints.config.0.id": "BetterTogetherEndpoints.Config.0.Id",
+            "betterTogetherEndpoints.config.0.paired": "BetterTogetherEndpoints.Config.0.Paired",
+            "betterTogetherEndpoints.registrations": "BetterTogetherEndpoints.Registrations",
+            "betterTogetherEndpoints.registrations.0.deviceCategory": "BetterTogetherEndpoints.Registrations.0.DeviceCategory",
+            "betterTogetherEndpoints.registrations.0.deviceMetadata.clientVersion": "BetterTogetherEndpoints.Registrations.0.DeviceMetadata.ClientVersion",
+            "betterTogetherEndpoints.registrations.0.deviceMetadata.deviceMACAddress": "BetterTogetherEndpoints.Registrations.0.DeviceMetadata.DeviceMACAddress",
+            "betterTogetherEndpoints.registrations.0.deviceMetadata.deviceName": "BetterTogetherEndpoints.Registrations.0.DeviceMetadata.DeviceName",
+            "betterTogetherEndpoints.registrations.0.deviceMetadata.deviceSerialNumber": "BetterTogetherEndpoints.Registrations.0.DeviceMetadata.DeviceSerialNumber",
+            "betterTogetherEndpoints.registrations.0.deviceMetadata.manufacturer": "BetterTogetherEndpoints.Registrations.0.DeviceMetadata.Manufacturer",
+            "betterTogetherEndpoints.registrations.0.id": "BetterTogetherEndpoints.Registrations.0.Id",
+            "betterTogetherEndpoints.thisDevice.deviceCategory": "BetterTogetherEndpoints.ThisDevice.DeviceCategory",
+            "betterTogetherEndpoints.thisDevice.deviceMetadata.clientVersion": "BetterTogetherEndpoints.ThisDevice.DeviceMetadata.ClientVersion",
+            "betterTogetherEndpoints.thisDevice.deviceMetadata.deviceMACAddress": "BetterTogetherEndpoints.ThisDevice.DeviceMetadata.DeviceMACAddress",
+            "betterTogetherEndpoints.thisDevice.deviceMetadata.deviceName": "BetterTogetherEndpoints.ThisDevice.DeviceMetadata.DeviceName",
+            "betterTogetherEndpoints.thisDevice.deviceMetadata.deviceSerialNumber": "BetterTogetherEndpoints.ThisDevice.DeviceMetadata.DeviceSerialNumber",
+            "betterTogetherEndpoints.thisDevice.deviceMetadata.manufacturer": "BetterTogetherEndpoints.ThisDevice.DeviceMetadata.Manufacturer",
+            "betterTogetherEndpoints.thisDevice.id": "BetterTogetherEndpoints.ThisDevice.Id",
+            "cameraConfig.connectedCameras": "CameraConfig.ConnectedCameras",
+            "cameraConfig.connectedCameras.0.instanceId": "CameraConfig.ConnectedCameras.0.InstanceId",
+            "cameraConfig.connectedCameras.0.name": "CameraConfig.ConnectedCameras.0.Name",
+            "cameraConfig.connectedCameras.0.productId": "CameraConfig.ConnectedCameras.0.ProductId",
+            "cameraConfig.connectedCameras.0.vendorId": "CameraConfig.ConnectedCameras.0.VendorId",
+            "cameraConfig.isContentCameraOptional": "CameraConfig.IsContentCameraOptional",
+            "cameraConfig.isRoomCameraOptional": "CameraConfig.IsRoomCameraOptional",
+            "hardwareConfiguration.compute": "HardwareConfiguration.Compute",
+            "hardwareConfiguration.cpuModel": "HardwareConfiguration.CpuModel",
+            "hardwareConfiguration.isComputeOptional": "HardwareConfiguration.IsComputeOptional",
+            "hardwareConfiguration.isIngestHidOptional": "HardwareConfiguration.IsIngestHidOptional",
+            "systemConfig.deviceLockTimeout": "SystemConfig.DeviceLockTimeout",
+            "systemConfig.isForcePinChangeEnabled": "SystemConfig.IsForcePinChangeEnabled",
+            "teamsAppConfig.allowRoomRemoteEnabled": "TeamsAppConfig.AllowRoomRemoteEnabled",
+            "teamsAppConfig.appConfigurationSettings.appConfigurations": "TeamsAppConfig.AppConfigurationSettings.AppConfigurations",
+            "teamsAppConfig.appConfigurationSettings.isAppConfigurationsEnabled": "TeamsAppConfig.AppConfigurationSettings.IsAppConfigurationsEnabled",
+            "teamsAppConfig.autoDialConfig.autoDialTimeout": "TeamsAppConfig.AutoDialConfig.AutoDialTimeout",
+            "teamsAppConfig.autoDialConfig.isAutoDialEnabled": "TeamsAppConfig.AutoDialConfig.IsAutoDialEnabled",
+            "teamsAppConfig.autoExitMeetingEnabled": "TeamsAppConfig.AutoExitMeetingEnabled",
+            "teamsAppConfig.autoExitTimeoutMinutes": "TeamsAppConfig.AutoExitTimeoutMinutes",
+            "teamsAppConfig.bluetoothBeaconingEnabled": "TeamsAppConfig.BluetoothBeaconingEnabled",
+            "teamsAppConfig.byomAutoAcceptEnabled": "TeamsAppConfig.ByomAutoAcceptEnabled",
+            "teamsAppConfig.checkInConfig.notificationEnabled": "TeamsAppConfig.CheckInConfig.NotificationEnabled",
+            "teamsAppConfig.checkInConfig.roomReleaseConfig.enabled": "TeamsAppConfig.CheckInConfig.RoomReleaseConfig.Enabled",
+            "teamsAppConfig.checkInConfig.roomReleaseConfig.timeout": "TeamsAppConfig.CheckInConfig.RoomReleaseConfig.Timeout",
+            "teamsAppConfig.checkoutRoomEnabled": "TeamsAppConfig.CheckoutRoomEnabled",
+            "teamsAppConfig.coordinatedMeetings.enabled": "TeamsAppConfig.CoordinatedMeetings.Enabled",
+            "teamsAppConfig.coordinatedMeetings.settings.audio.default": "TeamsAppConfig.CoordinatedMeetings.Settings.Audio.Default",
+            "teamsAppConfig.coordinatedMeetings.settings.audio.enabled": "TeamsAppConfig.CoordinatedMeetings.Settings.Audio.Enabled",
+            "teamsAppConfig.coordinatedMeetings.settings.video.default": "TeamsAppConfig.CoordinatedMeetings.Settings.Video.Default",
+            "teamsAppConfig.coordinatedMeetings.settings.video.enabled": "TeamsAppConfig.CoordinatedMeetings.Settings.Video.Enabled",
+            "teamsAppConfig.coordinatedMeetings.settings.whiteboard.default": "TeamsAppConfig.CoordinatedMeetings.Settings.Whiteboard.Default",
+            "teamsAppConfig.coordinatedMeetings.settings.whiteboard.enabled": "TeamsAppConfig.CoordinatedMeetings.Settings.Whiteboard.Enabled",
+            "teamsAppConfig.coordinatedMeetings.trustedAccounts": "TeamsAppConfig.CoordinatedMeetings.TrustedAccounts",
+            "teamsAppConfig.defaultFrontRowEndPanel": "TeamsAppConfig.DefaultFrontRowEndPanel",
+            "teamsAppConfig.defaultFrontRowStartPanel": "TeamsAppConfig.DefaultFrontRowStartPanel",
+            "teamsAppConfig.defaultMeetingLayout": "TeamsAppConfig.DefaultMeetingLayout",
+            "teamsAppConfig.deviceAppRestartConfig.isDeviceAppAutoRestartEnabled": "TeamsAppConfig.DeviceAppRestartConfig.IsDeviceAppAutoRestartEnabled",
+            "teamsAppConfig.deviceAppRestartConfig.isDeviceAppRestartEnabled": "TeamsAppConfig.DeviceAppRestartConfig.IsDeviceAppRestartEnabled",
+            "teamsAppConfig.digitalSignageConfig.enableSignage": "TeamsAppConfig.DigitalSignage.EnableSignage",
+            "teamsAppConfig.digitalSignageConfig.respectScreenTimeout": "TeamsAppConfig.DigitalSignage.RespectScreenTimeout",
+            "teamsAppConfig.digitalSignageConfig.settingJobId": "TeamsAppConfig.DigitalSignage.SettingJobId",
+            "teamsAppConfig.digitalSignageConfig.showTeamsRoomBanner": "TeamsAppConfig.DigitalSignage.ShowTeamsRoomBanner",
+            "teamsAppConfig.digitalSignageConfig.signageActivation": "TeamsAppConfig.DigitalSignage.SignageActivation",
+            "teamsAppConfig.digitalSignageConfig.signageDatabag.providerId": "TeamsAppConfig.DigitalSignage.SignageDatabag.providerId",
+            "teamsAppConfig.digitalSignageConfig.signageDatabag.providerType": "TeamsAppConfig.DigitalSignage.SignageDatabag.providerType",
+            "teamsAppConfig.digitalSignageConfig.signageDatabag.registrationToken": "TeamsAppConfig.DigitalSignage.SignageDatabag.registrationToken",
+            "teamsAppConfig.digitalSignageConfig.signageDeactivation": "TeamsAppConfig.DigitalSignage.SignageDeactivation",
+            "teamsAppConfig.digitalSignageConfig.signageUrl": "TeamsAppConfig.DigitalSignage.SignageUrl",
+            "teamsAppConfig.dualDisplayModeEnabled": "TeamsAppConfig.DualDisplayModeEnabled",
+            "teamsAppConfig.emailAddress": "TeamsAppConfig.EmailAddress",
+            "teamsAppConfig.emergencyButtonConfig.emergencyDialString": "TeamsAppConfig.EmergencyButtonConfig.EmergencyDialString",
+            "teamsAppConfig.emergencyButtonConfig.isEmergencyButtonEnabled": "TeamsAppConfig.EmergencyButtonConfig.IsEmergencyButtonEnabled",
+            "teamsAppConfig.enableAllowInitiateWhiteboard": "TeamsAppConfig.EnableAllowInitiateWhiteboard",
+            "teamsAppConfig.enableRoomReservations": "TeamsAppConfig.EnableRoomReservations",
+            "teamsAppConfig.extendRoomReservationEnabled": "TeamsAppConfig.ExtendRoomReservationEnabled",
+            "teamsAppConfig.filterProfaneWordsCaptions": "TeamsAppConfig.FilterProfaneWordsCaptions",
+            "teamsAppConfig.futureBookingConfig.isFutureBookingEnabled": "TeamsAppConfig.FutureBookingConfig.IsFutureBookingEnabled",
+            "teamsAppConfig.futureBookingConfig.isOrganizerEntryEnabled": "TeamsAppConfig.FutureBookingConfig.IsOrganizerEntryEnabled",
+            "teamsAppConfig.googleMeetEnabled": "TeamsAppConfig.GoogleMeetEnabled",
+            "teamsAppConfig.hdmiAudioSharingEnabled": "TeamsAppConfig.HdmiAudioSharingEnabled",
+            "teamsAppConfig.hdmiAutoSharingEnabled": "TeamsAppConfig.HdmiAutoSharingEnabled",
+            "teamsAppConfig.hdmiContentSharingEnabled": "TeamsAppConfig.HdmiContentSharingEnabled",
+            "teamsAppConfig.hideMe": "TeamsAppConfig.HideMe",
+            "teamsAppConfig.hideMeetingNamesEnabled": "TeamsAppConfig.HideMeetingNamesEnabled",
+            "teamsAppConfig.hideOrganizerNameEnabled": "TeamsAppConfig.HideOrganizerNameEnabled",
+            "teamsAppConfig.hotlineIsEnabled.hotlineDisplayName": "TeamsAppConfig.HotlineIsEnabled.HotlineDisplayName",
+            "teamsAppConfig.hotlineIsEnabled.hotlineIsEnabled": "TeamsAppConfig.HotlineIsEnabled.HotlineIsEnabled",
+            "teamsAppConfig.hotlineIsEnabled.hotlineMri": "TeamsAppConfig.HotlineIsEnabled.HotlineMri",
+            "teamsAppConfig.hotlineIsEnabled.hotlineUserDisplayName": "TeamsAppConfig.HotlineIsEnabled.HotlineUserDisplayName",
+            "teamsAppConfig.hotlineIsEnabled.isVideoDefaultOn": "TeamsAppConfig.HotlineIsEnabled.IsVideoDefaultOn",
+            "teamsAppConfig.hotlineIsEnabled.welcomeMessage": "TeamsAppConfig.HotlineIsEnabled.WelcomeMessage",
+            "teamsAppConfig.iotSyncEnabled": "TeamsAppConfig.IotSyncEnabled",
+            "teamsAppConfig.isCallQualityFeedbackSurveyEnabled": "TeamsAppConfig.IsCallQualityFeedbackSurveyEnabled",
+            "teamsAppConfig.isDeviceRestartEnabled": "TeamsAppConfig.IsDeviceRestartEnabled",
+            "teamsAppConfig.isIPPhoneCallForwardingOnTheMainScreenEnabled": "TeamsAppConfig.IsIPPhoneCallForwardingOnTheMainScreenEnabled",
+            "teamsAppConfig.isIPPhonePremiumCapSkuEnabled": "TeamsAppConfig.IsIPPhonePremiumCapSkuEnabled",
+            "teamsAppConfig.isLiveMeetingNotesEnabled": "TeamsAppConfig.IsLiveMeetingNotesEnabled",
+            "teamsAppConfig.isQRCodeForSignInOrReservationEnabled": "TeamsAppConfig.IsQRCodeForSignInOrReservationEnabled",
+            "teamsAppConfig.isRequirePasscodeForMeetingsEnabled": "TeamsAppConfig.IsRequirePasscodeForMeetingsEnabled",
+            "teamsAppConfig.isSendLogsAndFeedbackEnabled": "TeamsAppConfig.IsSendLogsAndFeedbackEnabled",
+            "teamsAppConfig.isTouchscreenControlsEnabled": "TeamsAppConfig.IsTouchscreenControlsEnabled",
+            "teamsAppConfig.lineKeyConfiguration.isCallAppearanceEnabled": "TeamsAppConfig.LineKeyConfiguration.IsCallAppearanceEnabled",
+            "teamsAppConfig.lineKeyConfiguration.isHideUnassignedLineKeysEnabled": "TeamsAppConfig.LineKeyConfiguration.IsHideUnassignedLineKeysEnabled",
+            "teamsAppConfig.lineKeyConfiguration.isSyncDelegatesEnabled": "TeamsAppConfig.LineKeyConfiguration.IsSyncDelegatesEnabled",
+            "teamsAppConfig.lineKeyConfiguration.isSyncSpeedDialsEnabled": "TeamsAppConfig.LineKeyConfiguration.IsSyncSpeedDialsEnabled",
+            "teamsAppConfig.lineKeyConfiguration.isUseDeviceProfileTemplateEnabled": "TeamsAppConfig.LineKeyConfiguration.IsUseDeviceProfileTemplateEnabled",
+            "teamsAppConfig.lineKeyConfiguration.phoneLineKeys": "TeamsAppConfig.LineKeyConfiguration.PhoneLineKeys",
+            "teamsAppConfig.lineKeyConfiguration.sidecarLineKeys": "TeamsAppConfig.LineKeyConfiguration.SidecarLineKeys",
+            "teamsAppConfig.localPtzSettingEnabled": "TeamsAppConfig.LocalPtzSettingEnabled",
+            "teamsAppConfig.peopleCountEnabled": "TeamsAppConfig.PeopleCountEnabled",
+            "teamsAppConfig.peopleRecognitionDeviceSettingTAC": "TeamsAppConfig.PeopleRecognitionDeviceSettingTAC",
+            "teamsAppConfig.pmpSettingsJobId": "TeamsAppConfig.PmpSettingsJobId",
+            "teamsAppConfig.prioritizeVideo": "TeamsAppConfig.PrioritizeVideo",
+            "teamsAppConfig.qrCodeAutoAcceptInvitationEnabled": "TeamsAppConfig.QrCodeAutoAcceptInvitationEnabled",
+            "teamsAppConfig.roomEquipmentEnabled": "TeamsAppConfig.RoomEquipmentEnabled",
+            "teamsAppConfig.roomHostVoiceEnabled": "TeamsAppConfig.RoomHostVoiceEnabled",
+            "teamsAppConfig.roomOccupancyEnabled": "TeamsAppConfig.RoomOccupancyEnabled",
+            "teamsAppConfig.roomPeopleCountPublisherSettingTAC": "TeamsAppConfig.RoomPeopleCountPublisherSettingTAC",
+            "teamsAppConfig.roomPeopleRecognitionDeviceSettingTAC": "TeamsAppConfig.RoomPeopleRecognitionDeviceSettingTAC",
+            "teamsAppConfig.scheduledDeviceRestartEndTime": "TeamsAppConfig.ScheduledDeviceRestartEndTime",
+            "teamsAppConfig.scheduledDeviceRestartStartTime": "TeamsAppConfig.ScheduledDeviceRestartStartTime",
+            "teamsAppConfig.showCaptionsEnabled": "TeamsAppConfig.ShowCaptionsEnabled",
+            "teamsAppConfig.showChatPanelByDefaultEnabled": "TeamsAppConfig.ShowChatPanelByDefaultEnabled",
+            "teamsAppConfig.showOrganizerNameEnabled": "TeamsAppConfig.ShowOrganizerNameEnabled",
+            "teamsAppConfig.showRoomQrCodeEnabled": "TeamsAppConfig.ShowRoomQrCodeEnabled",
+            "teamsAppConfig.swapScreensEnabled": "TeamsAppConfig.SwapScreensEnabled",
+            "teamsAppConfig.theme.customTheme.extendedFoRImage.reference": "TeamsAppConfig.Theme.CustomTheme.ExtendedFoRImage.Reference",
+            "teamsAppConfig.theme.customTheme.foRImage.reference": "TeamsAppConfig.Theme.CustomTheme.FoRImage.Reference",
+            "teamsAppConfig.theme.customTheme.panelImage.reference": "TeamsAppConfig.Theme.CustomTheme.PanelImage.Reference",
+            "teamsAppConfig.theme.customTheme.touchConsoleImage.reference": "TeamsAppConfig.Theme.CustomTheme.TouchConsoleImage.Reference",
+            "teamsAppConfig.theme.name": "TeamsAppConfig.Theme.Name",
+            "teamsAppConfig.usageStateIndicatorConfig": "TeamsAppConfig.UsageStateIndicatorConfig",
+            "teamsAppConfig.usageStateIndicatorConfig.busyStateColor.b": "TeamsAppConfig.UsageStateIndicatorConfig.BusyStateColor.B",
+            "teamsAppConfig.usageStateIndicatorConfig.busyStateColor.g": "TeamsAppConfig.UsageStateIndicatorConfig.BusyStateColor.G",
+            "teamsAppConfig.usageStateIndicatorConfig.busyStateColor.name": "TeamsAppConfig.UsageStateIndicatorConfig.BusyStateColor.Name",
+            "teamsAppConfig.usageStateIndicatorConfig.busyStateColor.r": "TeamsAppConfig.UsageStateIndicatorConfig.BusyStateColor.R",
+            "teamsAppConfig.usageStateIndicatorConfig.enabled": "TeamsAppConfig.UsageStateIndicatorConfig.Enabled",
+            "teamsAppConfig.useRecognitionDeviceSettingTAC": "TeamsAppConfig.UseRecognitionDeviceSettingTAC",
+            "teamsAppConfig.voiceRecognitionDeviceSettingTAC": "TeamsAppConfig.VoiceRecognitionDeviceSettingTAC",
+            "teamsAppConfig.webexMeetingEnabled": "TeamsAppConfig.WebexMeetingEnabled",
+            "teamsAppConfig.zoomMeetingEnabled": "TeamsAppConfig.ZoomMeetingEnabled"
         }
     },
     "MicrosoftTeamsAppCatalog": {
@@ -233,7 +412,8 @@
                 "disableFreemiumLicense": true,
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
                 "disableLFTStoreProviderDataWrites": false,
-                "disableTeamsEnableSwitchEnforcementForEdu": false,
+                "disableTeamsEnableSwitchEnforcementForEdu": true,
+                "dummyCloudFeatureFlag": true,
                 "enableAADTokenInXTokenAPIAuth": true,
                 "enableAadServiceExceptionHandling": true,
                 "enableAmplifyServiceGetTeamsPremiumSelfServePurchasePolicyCaching": "true",
@@ -297,17 +477,6 @@
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
             "settings": {
-                "EnableEtagForAdminIntent": true,
-                "apisEnabledForSPOLockedSiteHandlingForRemoveSite": [
-                    "SyncController_OnTeamRemoved",
-                    "SyncController_OnTeamSoftDeleted",
-                    "TeamController_DeleteTeam",
-                    "SyncController_OnUserSoftDeleted",
-                    "SyncController_OnOwnersRemoved",
-                    "SyncController_OnMembersRemoved",
-                    "ChannelController_DeleteChannel",
-                    "TeamController_SyncTeamsRoster"
-                ],
                 "disableCreatedAtPropertyRemoval": true,
                 "enableAsyncMigrateGroupThroughGraph": true,
                 "enableCfrAnalyticsService": false,
@@ -324,7 +493,10 @@
                 "enableSuggestedScheduledMessageDelivery": true,
                 "enableTeamSharedChannelsDeletion": true,
                 "enableTeamSharedChannelsRestoration": true,
-                "enableTenantStatusSentToAdminIntentEtagEndpoint": false,
+                "enableTenantAppsCensusFromAggregatedEntitlements": true,
+                "enableTenantAppsCensusFromAggregatedEntitlementsRedisDedup": true,
+                "enableTenantAppsCensusFromMosUserAppEntitlements": true,
+                "enableTenantAppsCensusFromMosUserAppEntitlementsRedisDedup": true,
                 "fetchOnlyTeamMembers": true,
                 "includeSharedChannelsInGetChannelsResponse": false,
                 "meetingsOptions": {
@@ -577,6 +749,7 @@
                 "EnableCreateTeamAdminContext": false,
                 "EnableDeleteGroupV2": true,
                 "EnableDenyNFTByDefault": true,
+                "EnableDtfRetryOn429": true,
                 "EnableExcludeInvalidRecipientTypesFromGroupMembership": true,
                 "EnableExtAuthCheckInNP": true,
                 "EnableExternalIdentitiesAlternatePaths": true,
@@ -597,12 +770,14 @@
                 "EnablePCK2BackfillTeamGroupId": true,
                 "EnablePCK2CleanupFailedMarkersCLQP": true,
                 "EnablePCK2CleanupFailedMarkersTLQP": true,
+                "EnablePCK2CleanupWhatIfMode": false,
                 "EnablePCK2DiagnosticsRemainingChannelDetails": true,
                 "EnablePCK2ExcludedTenantsCheck": true,
                 "EnablePCK2GracefulHandleAadTokenErrors": true,
                 "EnablePCK2GracefulHandleForbiddenThrottling": true,
                 "EnablePCK2GracefulHandleSoftDeletedTenants": true,
                 "EnablePCK2GracefulHandleSubstrateNotFound": true,
+                "EnablePCK2MigrationDisplayNameFallback": true,
                 "EnablePCK2MigrationStatusChannelDetails": true,
                 "EnablePCK2MigrationStatusCompletedForNoEntries": true,
                 "EnablePCK2StatusCleanupDeletedThreads": true,
@@ -614,6 +789,7 @@
                 "EnablePreferredDataLocation": true,
                 "EnableRecipientTypeValidationForChannelMigration": true,
                 "EnableResolveAdminContextInAuthzTask": true,
+                "EnableRestrictChannelsRosterHandlerPrecheck": true,
                 "EnableSetUserSiteAdminRoleByIdInternalAPI": true,
                 "EnableSettingsStoreDependency": false,
                 "EnableSettingsStoreSiteIdFallbackForSoftDelete": true,
@@ -717,6 +893,9 @@
         "SmeTenantsSize1thru9": "NotInGroup",
         "TeamsRing": "general",
         "VirtualizationEnabled": "false",
+        "isDDTeamsLanYe": "false",
+        "isDDTeamsLanYeCA": "false",
+        "isDDTeamsLanYeIN": "false",
         "isMAIUser": "false"
     },
     "SkypeTeamsMT_RateLimiter_Config": {
@@ -1120,17 +1299,30 @@
         "TelemetryRegion": "US"
     },
     "TeamsCopilotAggregator": {
+        "MCPSOptions": {
+            "EnableIncludePendingCrux": true
+        },
+        "NotificationV2ControllerOptions": {
+            "EnableCdtAuthForNotificationCallback": true
+        },
         "PowerAutomateOptions": {
             "DisableChatContext": true,
             "Enabled": true
         },
         "ProjectAgentAL": {
+            "Augloop504RetryCount": 2,
+            "Augloop504RetryDelayInMs": 1000,
             "RequestMetadata": {
-                "Timeout": 1800000
+                "Timeout": 1770000
             },
+            "UnknownStatusRetryMaxElapsedMs": 3600000,
             "UserQueryOptions": {
                 "EnableStreaming": true
             }
+        },
+        "ProjectAgentHttpOptions": {
+            "DefaultTimeoutMs": 1800000,
+            "HttpClientTimeoutWithPollyMs": 1800000
         },
         "ProjectAgentOptions": {
             "EnableResponseStreamingHeartbeat": true,
@@ -1151,10 +1343,12 @@
         "CustomerServiceCopilotRolloutFlags": {
             "EnableBookings": true,
             "EnableDeletedTagDetection": true,
+            "EnableSkillAuthenticationHardening": true,
             "EnableUnifiedLiveChatAgent": true
         },
         "GroupCopilotRolloutFlags": {
             "CdtRolloutFlags": {
+                "EnableAugloopOutgoing": true,
                 "EnableRTAFOutgoing": true
             },
             "CheckTranscriptStateBeforeIngestion": true,
@@ -1162,10 +1356,13 @@
             "EnableAdaptiveCardOnBotDialog": true,
             "EnableAdaptiveCardOnNotificationCallback": true,
             "EnableAgendaAdaptiveCardOnBotDialog": true,
+            "EnableAsyncVisualInsightsArtifactStorage": true,
             "EnableAuditEventForProactiveMessages": true,
+            "EnableAugloopClientMetadataInBody": true,
             "EnableAuthzCheckForConversationData": true,
             "EnableBatchTranscriptRequests": true,
             "EnableBotRosterCheckForLiftPropertiesCache": true,
+            "EnableCalendarFetchService": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
@@ -1176,6 +1373,8 @@
             "EnableEarlyCoTFromGCB": false,
             "EnableEarlyResponsesForInvokeBot": true,
             "EnableFetchCallConversationData": true,
+            "EnableGcBotTeamsSDKForProactiveFlow": true,
+            "EnableGcBotTeamsSDKForReactiveFlow": true,
             "EnableHumanInTheLoopApprovalFlow": true,
             "EnableImageUnderstanding": false,
             "EnableLIFTUserVoiceQuerySignal": true,
@@ -1185,9 +1384,11 @@
             "EnableLocalizedSuggestions": true,
             "EnableMeetingQnaAdaptiveCardOnBotDialog": true,
             "EnableMeetingStateCheckFromCallConversationData": true,
+            "EnableMeetingStateInitiatorValidation": true,
             "EnableNamedHttpClientWithConnectionPooling": true,
             "EnableNewWelcomeMessageForChatAgent": true,
             "EnableOdslHumanInTheLoopApprovalFlow": true,
+            "EnableParallelVisualInsightsBlobUpload": true,
             "EnablePlannerGroundingInPA": true,
             "EnableRTAFConfigureUrlValidation": true,
             "EnableRTAFJoinConversation": true,
@@ -1220,6 +1421,9 @@
         "MCPSOptions": {
             "EnablePopPftToken": true
         },
+        "MessagingContextualECSOptions": {
+            "EnableIc3CallerTenantTokenMinting": true
+        },
         "ODSPFeatureFlags": {
             "DisableAugLoopSessionReuse": true,
             "DisableBotIconStorageOnTeamsGraph": true,
@@ -1246,13 +1450,38 @@
             "EnableWelcomeMessageFromInstallationUpdate": true,
             "GetTokenForEachResource": true
         },
+        "ProjectAgentRolloutFlags": {
+            "EnablePowerAutomateSendV2": true,
+            "EnableRoutineCleanupOnAgentDeletion": true
+        },
         "RingOptions": {
             "UserRing": "general"
         },
+        "SMBRolloutFlags": {
+            "EnableSMBAgentHardening": true
+        },
         "SkillConfig": {
+            "ChainOfThoughts-InMessage": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableChainOfThoughts",
+                    "IsEnabled": false
+                }
+            ],
+            "ChannelInstructions": [
+                {
+                    "Flight": "enableChannelMd",
+                    "IsEnabled": true
+                }
+            ],
             "ConsentFlow": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.consentByPassed",
+                    "IsEnabled": false
+                }
+            ],
+            "DisableMergeQnA": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.mergeQnASkills",
                     "IsEnabled": false
                 }
             ],
@@ -1262,10 +1491,34 @@
                     "IsEnabled": false
                 }
             ],
+            "DynamicSkillOptimization": [
+                {
+                    "Flight": "ChannelAgent.enableRelaxedSkillParsing",
+                    "IsEnabled": true
+                }
+            ],
+            "DynamicSkills": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableDynamicSkillLoading",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableAINativeScenario": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAINativeScenario",
+                    "IsEnabled": true
+                }
+            ],
             "EnableAgendaForMeetingInfoQnA": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingInfoAgenda",
                     "isEnabled": true
+                }
+            ],
+            "EnableAtMentionsInBotResponse": [
+                {
+                    "Flight": "ChannelAgent.EnableAtMentionsInBotResponse",
+                    "IsEnabled": true
                 }
             ],
             "EnableConsentRehydration": [
@@ -1274,9 +1527,45 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableDetailedCoT": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableDetailedCoT",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableDisplayNameCorrection": [
+                {
+                    "Flight": "ChannelAgent.EnableDisplayNameCorrection",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableErrorRecoverySkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableErrorRecoverySkill",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableEvalModelGpt56NanoLuna": [
+                {
+                    "Flight": "EnableEvalModelGpt56NanoLuna",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableGenerationModelGpt56NanoLuna": [
+                {
+                    "Flight": "EnableGenerationModelGpt56NanoLuna",
+                    "IsEnabled": true
+                }
+            ],
             "EnableGoalDetection": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGoalDetection",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableIntentExtractionSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIntentExtractionSkill",
                     "IsEnabled": false
                 }
             ],
@@ -1316,9 +1605,27 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableLLMPlannerIterativePromptV22": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.LLMPlannerIterativePromptV22",
+                    "IsEnabled": false
+                }
+            ],
             "EnableLLMPlannerToolFix": [
                 {
                     "Flight": "LLMPlannerIterativeToolFix",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableLiveNotesEvaluation": [
+                {
+                    "Flight": "EnableLiveNotesEvaluation",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableLocaleDetection": [
+                {
+                    "Flight": "enableLocaleDetection",
                     "IsEnabled": true
                 }
             ],
@@ -1340,9 +1647,45 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableNoteResponsePlanSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableNoteResponsePlanSkill",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableOrchestratorV2": [
+                {
+                    "Flight": "enableOrchestratorV2",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableOrchestratorV3": [
+                {
+                    "Flight": "enableOrchestratorV3",
+                    "IsEnabled": true
+                }
+            ],
             "EnableParallelToolExecution": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableParallelToolExecution",
+                    "IsEnabled": false
+                }
+            ],
+            "EnablePassThroughSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enablePassThroughSkill",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableReactiveAINativeScenario": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableReactiveAINativeScenario",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableReasoningScratchpadSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableReasoningScratchpadSkill",
                     "IsEnabled": false
                 }
             ],
@@ -1364,6 +1707,24 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableReviewer": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableReviewer",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableSpeakDecisionSkill": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableSpeakDecisionSkill",
+                    "IsEnabled": false
+                }
+            ],
+            "EnableStreamingCotInPA": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableStreamingCotInPA",
+                    "IsEnabled": true
+                }
+            ],
             "EnableStreamingPostProcessing": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableStreamingPostProcessing",
@@ -1379,6 +1740,12 @@
             "EnableSummarizationUsingLLMForLLMToolDetector": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableSummarization",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableTMGpt56": [
+                {
+                    "Flight": "TM.gpt56ReasoningNanoLunaModel",
                     "IsEnabled": true
                 }
             ],
@@ -1400,9 +1767,31 @@
                     "IsEnabled": false
                 }
             ],
+            "EnableUseV8MergedNotesPrompt": [
+                {
+                    "Flight": "UseV8MergedNotesPrompt",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "EnableV8PromptTaskStructureFix",
+                    "IsEnabled": true
+                }
+            ],
             "FacilitatorWebDA.DisableStreaming": [
                 {
                     "Flight": "DisableSydneyStreamingForFA",
+                    "IsEnabled": true
+                }
+            ],
+            "GraphChannelMD": [
+                {
+                    "Flight": "ChannelAgent.enableGraphChannelMd",
+                    "IsEnabled": true
+                }
+            ],
+            "ImageRecognition": [
+                {
+                    "Flight": "ChannelAgent.enableDescribeImageTool",
                     "IsEnabled": true
                 }
             ],
@@ -1474,6 +1863,76 @@
                     "IsEnabled": true
                 }
             ],
+            "InternalKnowledgeSkillv2": [
+                {
+                    "Flight": "ChannelAgent.enableMessagesByTimeRangeSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableSearchMessagesSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableSearchFileContentsSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableSearchChannelTasksSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableMeetingSummariesSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.includeAgentMessagesInGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableCardSummaryInGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableSearchFilters",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableRagV2Endpoint",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableGroupSensitivityLabelInPreInvoke",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.useGraphAppOnlyGraphApi",
+                    "IsEnabled": true
+                }
+            ],
+            "IterativeOrchestrator": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableIterativeOrchestrator",
+                    "IsEnabled": true
+                }
+            ],
+            "LLMToolPlanner": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableLLMIterativePlanner",
+                    "IsEnabled": true
+                }
+            ],
+            "LazyLoadSkills": [
+                {
+                    "Flight": "ChannelAgent.enableLazySkillBodyLoading",
+                    "IsEnabled": true
+                }
+            ],
+            "LazySkillBodyPrefetch": [
+                {
+                    "Flight": "ChannelAgent.enableLazySkillBodyPrefetch",
+                    "IsEnabled": true
+                }
+            ],
             "LiftRecompose": [
                 {
                     "Flight": "LIFT.SkipRecompose",
@@ -1501,6 +1960,176 @@
             "MARSSkillQualityEvalExp": [
                 {
                     "Flight": "EnableTeamsQualityEvaluatorForMars",
+                    "IsEnabled": true
+                }
+            ],
+            "MAThemedSummaryPrompt": [
+                {
+                    "Flight": "ThemedMeetingSummary",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ThemedSummaryActionItems",
+                    "IsEnabled": true
+                }
+            ],
+            "MCPPowerAutomate": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMcpPowerAutomateSkills",
+                    "IsEnabled": true
+                }
+            ],
+            "MCPPowerAutomateCSA": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.SwallowCsaError",
+                    "IsEnabled": true
+                }
+            ],
+            "MCPTools": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enabledMcpTools",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "OfficeAgent.EnableMcpTools@1.0.0",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingAgendaSkill_GPT5": [
+                {
+                    "Flight": "AS.enableGpt56ReasoningNanoLunaAgendaModel",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingCustomizationSkill_GPT5": [
+                {
+                    "Flight": "TMC.enableGpt56ReasoningNanoLunaCustomizationModel",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingDocGen": [
+                {
+                    "Flight": "Microsoft.Teams.GroupCopilot.enableOfficeAgentFlightOverwriteByAgentPrefix",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Agent.AppTokenAllowed",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Agent.Enable",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingDocumentGenerationSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDetachedDocGenerationWorkflow",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableAnnotationGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDocGenerationIntentCollection",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableMeetingDocumentChiclet",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableAccess",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCalendarAIAgents",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCalendarAILocationIntelligencePlugin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCalendarAIPlacesQueryPlugin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCalendarAIPlacesQueryV4Plugin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCalendarAITriageInternalPlugin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCreateAgent@1.2.0",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableEnterpriseSearchForAllUsers",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableEnterpriseSearchPlugin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableExplicitCIQWithSubstrate",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableFileUploadV2",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnterpriseSearchStrategy",
+                    "Value": "Substrate"
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.UseGpt5ForSydneySearch",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.UseWebSearchForSydneySearch",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.CreateAgent.DocxTaskCompletion",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCreateAgent@1.1.0",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.CreateAgent.UseHarnessBuilder",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.CreateAgent.EnableChannelSkills",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableCreateAgentSonnet46Low",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableRequesterAtMention",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableReplyToOriginalMessage",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.EnableTfdgModelPin",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDocGenAvailabilityCheck",
                     "IsEnabled": true
                 }
             ],
@@ -1534,6 +2163,12 @@
                     "IsEnabled": true
                 }
             ],
+            "MeetingTimerSkill_GPT5": [
+                {
+                    "Flight": "enableGpt53ChatMiniTimerModel",
+                    "IsEnabled": true
+                }
+            ],
             "MeetingTimerSkill_ReactiveAgenda": [
                 {
                     "Flight": "enableAgendaTimerReactiveResponse",
@@ -1561,6 +2196,77 @@
             "OdspFiles": [
                 {
                     "Flight": "Teams.PA.useOdspLightweightWorkflow",
+                    "IsEnabled": true
+                }
+            ],
+            "OpenNotesTool": [
+                {
+                    "Flight": "IntentPlus.SelfRespondModel",
+                    "Value": "Gpt56_Reasoning_Nano_Luna"
+                }
+            ],
+            "Orchestrator": [
+                {
+                    "Flight": "enableOrchestratorModelConfigInResponse",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "TeamsChannelAgent.EnableClaudePrefixTrigger",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableGPT5ReasoningForOrchestrator",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.LLMPlannerPromptVersion",
+                    "IsEnabled": true,
+                    "Value": "unified-v2"
+                },
+                {
+                    "Flight": "ChannelAgent.GptReasoningModel",
+                    "IsEnabled": true,
+                    "Value": "gpt-54"
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableClaudeModelForOrchestrator",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.ClaudeModel",
+                    "IsEnabled": true,
+                    "Value": "sonnet-46"
+                },
+                {
+                    "Flight": "ChannelAgent.enableResponseCompletionSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.DisableLoadingSkillExamples",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.RemoveDuplicateToolResults",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "enableSpeakDecisionContextService",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.DisableOldTools",
+                    "IsEnabled": true
+                }
+            ],
+            "PA_PA_API": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enablePowerAutomateInvokeSchema",
+                    "IsEnabled": true
+                }
+            ],
+            "PA_RESPONSE_STREAMING": [
+                {
+                    "Flight": "paStreaming",
                     "IsEnabled": true
                 }
             ],
@@ -1615,6 +2321,10 @@
                 },
                 {
                     "Flight": "ChannelAgent.SchedulingSkill.EnableImprovedParticipantSelection",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableGuardProfileBotDowngrade",
                     "IsEnabled": true
                 }
             ],
@@ -1692,6 +2402,12 @@
                     "IsEnabled": true
                 }
             ],
+            "TaskManagement_GPT5Migration": [
+                {
+                    "Flight": "Teams.GCP.TaskManagementGPTModel",
+                    "Value": "gpt-56-reasoning-nano-luna"
+                }
+            ],
             "TaskManagement_OverInvokeFix": [
                 {
                     "Flight": "TMUpdatePromptTReduceOverTrigger",
@@ -1709,12 +2425,6 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableOnlineWorkflowEvaluation",
-                    "IsEnabled": true
-                }
-            ],
-            "TeamsMeetingAgendaSkill_BlockGoalFromTM": [
-                {
-                    "Flight": "TM.disableGoalDetection",
                     "IsEnabled": true
                 }
             ],
@@ -1770,12 +2480,6 @@
                     "IsEnabled": true
                 }
             ],
-            "TimeModeratorSkill_AgendaTracking_agendaNudge": [
-                {
-                    "Flight": "TM.agendaProactiveComposeAction",
-                    "IsEnabled": true
-                }
-            ],
             "TimeModeratorSkill_AgendaTracking_topicRelevancePromptV4": [
                 {
                     "Flight": "TM.topicRelevancePromptV4",
@@ -1799,6 +2503,12 @@
                 },
                 {
                     "Flight": "TM.freeWrapUp",
+                    "IsEnabled": true
+                }
+            ],
+            "UPFGovernanceSkill_GPT5": [
+                {
+                    "Flight": "UPF.enableGovernanceGpt56NanoLuna",
                     "IsEnabled": true
                 }
             ],
@@ -1908,22 +2618,6 @@
                     "IsEnabled": true
                 }
             ],
-            "meetingAgendaSkill_BypassAgendaConsent": [
-                {
-                    "Flight": "AS.enableAgendaSkillLoopPermissionCheckWithPFT",
-                    "IsEnabled": true
-                }
-            ],
-            "meetingAgendaSkill_CitationSources": [
-                {
-                    "Flight": "TM.agendaTopicCitation",
-                    "IsEnabled": true
-                },
-                {
-                    "Flight": "TM.agendaTopicIndividualCitation",
-                    "IsEnabled": true
-                }
-            ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",
@@ -1974,21 +2668,45 @@
                     "IsEnabled": true
                 }
             ],
-            "meetingAgendaSkill_SyntheticAgendaPartialAccessRetry": [
-                {
-                    "Flight": "AS.enableAgendaSkillSyntheticAgendaPartialAccessRetry",
-                    "IsEnabled": true
-                }
-            ],
-            "meetingAgendaSkill_WriteBackToLoopAgenda": [
-                {
-                    "Flight": "AS.enableAgendaSkillWriteBackToLoopAgenda",
-                    "IsEnabled": true
-                }
-            ],
             "meetingAgendaSkill_graphFallback": [
                 {
                     "Flight": "AS.enableGraphCalendarFallback",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaUi_ConsentOnStage": [
+                {
+                    "Flight": "AS.enableAgendaUIEndpoint",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaV49SyntheticsPrompt": [
+                {
+                    "Flight": "AS.enableV4_9AgendaPrompt",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgenda_AgendaFromCalendarOrganizer": [
+                {
+                    "Flight": "AS.enableAgendaFromCalendarOrganizer",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgenda_COT_Tools": [
+                {
+                    "Flight": "AS.enableStructuredTools",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgenda_EnrichedMeetingContext": [
+                {
+                    "Flight": "AS.enableEnrichedMeetingContext",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgenda_GPT56_Eval": [
+                {
+                    "Flight": "AS.enableGpt56ReasoningNanoLunaEvalModel",
                     "IsEnabled": true
                 }
             ]
@@ -2022,6 +2740,7 @@
         "enableAuthenticatedSceneStudioAssets": true,
         "enableBingImageStore": true,
         "enableCanvasState": true,
+        "enableClientSwitchFeedback": true,
         "enableCopilotAnalytics": true,
         "enableDogfoodAccess": false,
         "enableDrawingToolkit": true,
@@ -2240,7 +2959,18 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026062201"
+        "buildVersion": "2026080701"
+    },
+    "TeamsInfoProtectionAuditService": {
+        "rootSettingConfig": {
+            "settings": {
+                "audit": {
+                    "meetingandcalling": {
+                        "isMeetingAuditFanoutEnabled": true
+                    }
+                }
+            }
+        }
     },
     "TeamsInfoProtectionDlpService": {
         "rootSettingConfig": {
@@ -2398,10 +3128,6 @@
         "calling": {
             "pptBootstrapperUrl": "https://c1-powerpoint-15.cdn.office.net/pods/s/PptScripts/powerpoint.boot.js"
         },
-        "core": {
-            "ecsRefreshIntervalInMs": 3600000,
-            "enableFocusManagement": true
-        },
         "metadata": {
             "ring": {
                 "friendlyName": "Public",
@@ -2410,7 +3136,6 @@
             }
         },
         "telemetry": {
-            "enableBlockZeroSampleRate": true,
             "samplingRules": {
                 "endpointns": {
                     "*": 1,
@@ -2594,6 +3319,7 @@
                     "broadcast_stream_info_availability_polling|failure": 100,
                     "broadcast_subscription_update|failure": 100,
                     "broadcast_vod_player|failure": 100,
+                    "browser_request|success": 0.1,
                     "buddylist_add_workflow": 0,
                     "cache_eviction": 0,
                     "cache_signature_voice": 0,
@@ -3990,7 +4716,6 @@
         "EnableEngagementForTownhall": true,
         "EnableEngagementReactionFeature": true,
         "EnableExplicitPageFilteringForSegments": true,
-        "EnableExtendedEngagementActivities": true,
         "EnableExternalPresenterFeature": true,
         "EnableHandleReportGenerationInProcessorService": true,
         "EnablePartialRedactionFeature": true,
@@ -4146,9 +4871,6 @@
         "ecs": {
             "useWipFilter": false
         },
-        "extensibility": {
-            "cowatchEnabled": false
-        },
         "hfpCallManager": {
             "hfpBTCallControlsEnabled": false,
             "hfpMultipleBTCallControlsEnabled": false,
@@ -4187,7 +4909,6 @@
             "enableSignout": true
         },
         "taskbar": {
-            "enableFlyoutBadge": true,
             "enableLegacyBadge": false,
             "raiseAvailabilityChangedViaSystemTray": false,
             "setAvailabilityViaJumpList": false,
@@ -4197,7 +4918,7 @@
         },
         "telemetry": {
             "GccSamplingRules": "{\"scenarions\": {\"shell_cloud_has_gov_cloud_user_activity\": 100, \"shell_msix_set_t20_uninstall_runkey\": 100, \"shell_msix_t22_launch\": 100, \"shell_check_pinning_status\": 100, \"shell_msix_t20_uninstall\": 100, \"shell_msix_t22_install\": 100, \"shell_toast_activated\": 100, \"meeting_started_notification\": 100, \"meeting_started_notification_from_chat_svc\": 100, \"shell_desktop_previous_process_crashed\": 100, \"shell_process_failed\": 100, \"incoming_call\": 100, \"navigation_command\": 100, \"client_start\": 100, \"shell_app_switcher_sxs_detection\": 0.1, \"shell_app_switcher_sxs_repair\": 0.1, \"shell_application_launch_time\": 0, \"shell_ecs_start\": 0.1, \"shell_ecs_cache\": 0.1, \"shell_skype_migration_config_read\": 100, \"shell_skype_migration_via_config\": 100, \"shell_skype_migration_config_cleanup\": 100, \"shell_skype_migration_via_protocol\": 100, \"shell_skype_migration_protocol_cleanup\": 100, \"shell_bgtask_comserverregistration\": 0.1, \"auth_native_acquire_token|success\": 0.1, \"auth_native_acquire_token\": 1, \"auth_native_discover_accounts\": 0.1, \"shell_msix_update\": 100, \"shell_peristent_storage_read\": 0.1, \"shell_web_cold_launch\": 0.1, \"shell_updater_register_bgtask\": 0.01, \"shell_system_tray_create\": 0.01, \"shell_webviewcontroller_created\": 0.01, \"shell_webview_initialized\": 0.01, \"shell_webviewenv_created\": 100, \"shell_prev_session_data\": 0.01, \"shell_storage_info\": 0.1, \"shell_process_start_time\": 0.1, \"auth_native_teardown\": 0.1, \"shell_persistent_storage_write\": 0.01, \"shell_webview_new_window_requested\": 0.01, \"shell_web_warm_launch\": 0.1, \"shell_meetnow_window_not_yet_created\": 0.1, \"shell_application_launch_time_mc\": 0.1, \"shell_toast_hide\": 0.1, \"shell_backdrop_mc\": 0.1, \"shell_desktop_process_quit\": 0.1, \"shell_system_power_resume\": 0.1, \"shell_system_power_suspend\": 0.1, \"cross_client_toast_view\": 1, \"shell_webview_storage_partition\": 0.1, \"shell_toast_dismissed\": 1, \"shell_tmpcore_command\": 0.1, \"shell_badge_legacy_event\": 0.1, \"shell_t1_local_migrated_settings|abandoned\": 0.1,  \"shell_toast_save_image_to_disk\": 0.1, \"shell_toast_show\": 1, \"shell_webview_process_info\": 0.1, \"shell_notifications_panel_layout\": 0.1, \"shell_ecs_refresh\": 0.1, \"auth_native_login\": 100, \"auth_native_skype_migration_login\": 100, \"shell_app_switcher_migration\":100, \"shell_webview_content_loading\":0.1, \"shell_webview_navigation_starting\":0.1, \"shell_webview_navigation_completed\":0.1, \"shell_moduleloader_load\": 100, \"shell_moduleloader_unload\": 100, \"shell_remote_module_stop\": 100, \"shell_remote_module_start\": 100, \"shell_remote_module_pie_proxy\": 100, \"shell_process_start\": 100, \"shell_process_failed\": 100, \"shell_platform_app_navigation|failure\": 100, \"shell_ecs_setting_access_error\": 1, \"shell_ods_upload_desktop_logs\": 100, \"shell_ods_collect_desktop_logs\": 100, \"*|failure\": 11, \"*|abandoned\": 11, \"*|timeout\": 11, \"*|incomplete\": 11, \"*\": 0.1}, \"loggingns\": {\"shell_display_changed\": 0.1, \"*\": 0.1}, \"userbins\": {\"CloseMainWindow\": 0.1, \"*\": 100}}",
-            "SamplingRules": "{\"scenarions\": {\"shell_external_window_sync\": 100, \"shell_t1_local_migrated_settings|abandoned\": 0.1, \"*\": 100}, \"userbins\": {\"*\": 100}, \"loggingns\": {\"*\": 100}}",
+            "SamplingRules": "{\"scenarions\": {\"shell_external_window_sync\": 100, \"shell_crash_metadata\":0.1, \"shell_t1_local_migrated_settings|abandoned\": 0.1, \"*\": 100}, \"userbins\": {\"*\": 100}, \"loggingns\": {\"*\": 100}}",
             "collectorUrl": "https://teams.events.data.microsoft.com/OneCollector/1.0/",
             "crossClientV2Enabled": false,
             "disablePrimaryUserId": true,
@@ -4418,10 +5139,6 @@
         }
     },
     "TflNorthstar": {
-        "core": {
-            "ecsRefreshIntervalInMs": 3600000,
-            "enableFocusManagement": true
-        },
         "metadata": {
             "ring": {
                 "friendlyName": "Public",
@@ -4430,7 +5147,6 @@
             }
         },
         "telemetry": {
-            "enableBlockZeroSampleRate": true,
             "samplingRules": {
                 "endpointns": {
                     "*": 1,
@@ -4614,6 +5330,7 @@
                     "broadcast_stream_info_availability_polling|failure": 100,
                     "broadcast_subscription_update|failure": 100,
                     "broadcast_vod_player|failure": 100,
+                    "browser_request|success": 0.1,
                     "buddylist_add_workflow": 0,
                     "cache_eviction": 0,
                     "cache_signature_voice": 0,
@@ -5261,6 +5978,11 @@
                 "za": "https://emea.csa.svcs.teams.office.com/api/v1"
             }
         },
+        "ChatService": {
+            "PatchActivity": {
+                "Enabled": true
+            }
+        },
         "ChatServicePartnerCall": {
             "EnabledBasedOnTenantRegion": true,
             "EndpointMappings": {
@@ -5371,14 +6093,28 @@
         },
         "EnableCertificateValidationLibrary": false,
         "EnableFollowMuteConversation": 1,
+        "EnableSEALValidationforAppToken": true,
         "Encryption": {
             "LegacyDecryptionEnabled": true
+        },
+        "FallbackToCSIfInvalidRosterVersion.Enabled": true,
+        "FavoriteFeatureGradualRolloutExperimentEnabled": 1,
+        "HashCode": {
+            "ReturnHashForActivityApiActivity": true,
+            "ReturnHashForChatActivity": true,
+            "ReturnHashForGraphApiActivity": true,
+            "ReturnHashForMessageApiActivity": true,
+            "ReturnHashForSharedChannelActivity": true
         },
         "IsCnameWhitelistingEnabled": {
             "AAD": true,
             "KeyVault": true
         },
         "IsEcsEnabledForConfig": "false",
+        "LargeTeam": {
+            "IsEnabled": true
+        },
+        "LogAllForTenants": [],
         "Mention": {
             "Everyone": {
                 "Enabled": true,
@@ -5405,6 +6141,17 @@
                 "TenantId": "9188040d-6c67-4c5b-b112-36a304b66dad"
             }
         },
+        "PercentageLogged": {
+            "Error": 100,
+            "Info": 100,
+            "Warning": 100
+        },
+        "ReactionsBlockList": [
+            "star",
+            "follow",
+            "acks",
+            "deliverystate"
+        ],
         "RosterEnrich": {
             "ACL": {
                 "ChannelOverTeamRoster": true
@@ -5456,6 +6203,14 @@
         "SharedChannels": {
             "ACLCheckAPIEnabled": true
         },
+        "Slices": {
+            "TagMentionsActivityCreator": {
+                "Enabled": true
+            }
+        },
+        "SlicesParentMessageUpdate": {
+            "Enabled": true
+        },
         "TFL": {
             "Slices": {
                 "FederatedForTFW": {
@@ -5470,7 +6225,9 @@
         "TeamAndChannelEditMessageInlineRosterEnabled": true,
         "TeamAndChannelInlineRosterEnabled": true,
         "disableTeamChannelMentionForLargeTeamSize": true,
-        "isActionableActivityEmailEnabled": "true"
+        "isActionableActivityEmailEnabled": "true",
+        "isNssDBMigrationEnabled": true,
+        "isPriorityDBMigrationEnabled": true
     },
     "WorkingTimeService": {
         "WorkingTime": {
@@ -5505,161 +6262,115 @@
     },
     "teams-devicemgmt-service": {
         "globalUpdatePauseRecords": {
-            "Records": [
+            "PauseGroups": [
                 {
                     "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
                     "StartDate": "2026-06-29",
-                    "UpdateId": "5e3297e0-537c-45a6-80ed-1ecc01e6c9c0"
+                    "UpdateIds": [
+                        "5e3297e0-537c-45a6-80ed-1ecc01e6c9c0",
+                        "604785ab-73bd-461e-82c5-d7bb007d57f5",
+                        "afe89807-5320-46b0-9bb4-2798595c0db5",
+                        "8d3a1887-3a25-45c1-bb2b-4f4b4be2a9ce",
+                        "5c654330-7b87-4d11-a77e-557bbec63b3e",
+                        "aead136e-1d6f-4609-bd9a-abca85d6838a",
+                        "276079d0-b215-49c1-a4f0-ecca6c1016e1",
+                        "201fdb7a-97c6-401d-a2eb-4fd4081ea5da",
+                        "fdc60332-4c59-40a3-9d79-f719b61e927c",
+                        "10ae6f8d-8e45-4578-b1fb-e39ab18b78b7",
+                        "1ee1492b-b74c-4666-90f7-89df5250a359",
+                        "5f614880-c5a2-4dac-9df0-a56197ee9c8e",
+                        "d1edff5f-c6cc-4f7c-8ef6-b78197136071",
+                        "8b28966a-808e-484f-8768-7d90a6eb7367",
+                        "01ee2528-8bfa-4aa5-a3fd-80ce2e961c3c",
+                        "1f4e1119-fb1b-4719-b419-74785475bde9",
+                        "039c8783-79fd-4323-ba09-a8bede0e0f77",
+                        "7050f3cf-313c-41e0-9e24-dbe7d8c44596",
+                        "d6aa05a8-0ca9-4066-a4fb-434889dbc9e3",
+                        "971d9aac-7456-4ee2-8f03-41ccb90084b2",
+                        "ee7ff01e-6df7-45ac-83dd-c05b9de810d5",
+                        "24a1cc50-f975-4922-a1c1-c60a66d92c54",
+                        "00327fe1-de3f-4f48-b57b-f2862cd8b4cd",
+                        "b9169429-2c65-485d-94cb-af0e72b6d4c1",
+                        "86987dc6-b972-441e-a37f-09b0185853e5",
+                        "c4831f8f-0cf7-47cd-9ee7-c5d1f7563fca",
+                        "d5d8fd84-d025-42fd-8dba-6035f46c330e",
+                        "06c37241-ee27-40c7-a338-ed597b0f0c78",
+                        "3fdc1ff9-1ba7-4bbe-91e4-2ece2d7ee1a7"
+                    ]
                 },
                 {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "604785ab-73bd-461e-82c5-d7bb007d57f5"
+                    "Reason": "Pause teamsApp version 2026142705",
+                    "StartDate": "2026-08-04",
+                    "UpdateIds": [
+                        "ba6f6958-cf9b-441c-9839-b8510ac2a527",
+                        "6d427ed6-2f18-48f2-96b9-3afd1b2fe45a",
+                        "1b26b05f-f644-423c-ba36-e1d822702814",
+                        "7769cfca-ab38-42b3-9cbf-35ffd8530d3f",
+                        "341f7789-53dc-48aa-a142-5a0fc8b75dd0",
+                        "5b465736-efce-497e-a8e0-068067312203",
+                        "f023ce5e-660e-4ab5-adc1-01124cc018e4",
+                        "28027aee-0285-4c32-886b-e49afb299a3b",
+                        "4fdf9a57-1992-4f22-a269-e7414b418729",
+                        "8bb9c5f6-2d13-40be-8485-1328abf1fd42",
+                        "ecca89f2-a3a3-4885-814f-872377bdba23",
+                        "c50d6f37-dcc9-4a15-b490-14864a4b7fd4",
+                        "9dc28348-1e34-4d13-bcab-9f2228df0abb",
+                        "4493677a-3b62-4263-9594-4dcd5bbaa6f8",
+                        "8b9d4e37-e2ab-4845-8ccb-a1aa45c13f0a",
+                        "7dd12062-b5cd-430a-962a-d2521ff14077",
+                        "10c5f8b6-237d-41dd-baa1-8c18efc25b22",
+                        "1ff03f1e-51e1-4c05-820e-3e8262a4afca",
+                        "e27759bc-df0d-44bf-bb18-b8c5c6d86b85",
+                        "b79a2eda-fa80-4f1e-b10c-0dd8cef18ef7",
+                        "aeddba9e-53e5-4a7a-8752-c04c9438c9b9"
+                    ]
                 },
                 {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "afe89807-5320-46b0-9bb4-2798595c0db5"
+                    "Reason": "Pause teamsApp PROD version 1449/1.0.94.2026220406",
+                    "StartDate": "2026-08-17",
+                    "UpdateIds": [
+                        "0bdde31e-9e11-431c-866f-69d4bde25a3b",
+                        "35559ae4-9191-4f70-bd02-c39f89dc411f",
+                        "2b82430f-fe6e-40ca-bb35-7679c00454c6",
+                        "21196993-b5ae-4add-97f9-757b79008c4c",
+                        "12615a80-422c-4687-85fc-c442335acee1",
+                        "36f222ab-ed77-423e-9a4c-2b5adae0d5eb",
+                        "8bc74d4b-f0ea-4e0c-ba00-35b7207baeb2",
+                        "89422957-68dd-4bf9-8f75-ac1a84a549a7",
+                        "8a0717b3-53c3-4589-a391-28c1472435ed",
+                        "fb12c5c1-f86d-4434-9ec2-d0f279bafc76",
+                        "5feb3eaf-4be6-4c7e-b873-507747703839",
+                        "d2444134-6fdc-4e11-9e32-82a18f7d3387",
+                        "be6f7626-ac77-4098-a992-5260414ce296",
+                        "53f82757-db34-4f35-97ff-28541c39319e",
+                        "a6c8b3f0-97b8-4987-90ce-e1ec9bb73131",
+                        "be79c7e0-30f9-4b84-9878-4a01247b382c",
+                        "fb9972d7-e7e0-497d-909e-880bb20d20bb",
+                        "955e16cd-dbb8-49e1-9459-854a5247f2fb",
+                        "197a86d1-ee42-46b1-a6b4-b4d82b828b15",
+                        "b38a58f0-8454-4ed7-8396-83b867a48948",
+                        "1a14628e-4cbc-4f7c-9470-ab9b09f2be2e",
+                        "693709db-f3eb-4a8e-9422-36e75ae55c12"
+                    ]
                 },
                 {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "8d3a1887-3a25-45c1-bb2b-4f4b4be2a9ce"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "5c654330-7b87-4d11-a77e-557bbec63b3e"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "aead136e-1d6f-4609-bd9a-abca85d6838a"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "276079d0-b215-49c1-a4f0-ecca6c1016e1"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "201fdb7a-97c6-401d-a2eb-4fd4081ea5da"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "fdc60332-4c59-40a3-9d79-f719b61e927c"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "10ae6f8d-8e45-4578-b1fb-e39ab18b78b7"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "1ee1492b-b74c-4666-90f7-89df5250a359"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "5f614880-c5a2-4dac-9df0-a56197ee9c8e"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "d1edff5f-c6cc-4f7c-8ef6-b78197136071"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "8b28966a-808e-484f-8768-7d90a6eb7367"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "01ee2528-8bfa-4aa5-a3fd-80ce2e961c3c"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "1f4e1119-fb1b-4719-b419-74785475bde9"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "039c8783-79fd-4323-ba09-a8bede0e0f77"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "7050f3cf-313c-41e0-9e24-dbe7d8c44596"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "d6aa05a8-0ca9-4066-a4fb-434889dbc9e3"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "971d9aac-7456-4ee2-8f03-41ccb90084b2"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "ee7ff01e-6df7-45ac-83dd-c05b9de810d5"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "24a1cc50-f975-4922-a1c1-c60a66d92c54"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "00327fe1-de3f-4f48-b57b-f2862cd8b4cd"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "b9169429-2c65-485d-94cb-af0e72b6d4c1"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "86987dc6-b972-441e-a37f-09b0185853e5"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "c4831f8f-0cf7-47cd-9ee7-c5d1f7563fca"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "d5d8fd84-d025-42fd-8dba-6035f46c330e"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "06c37241-ee27-40c7-a338-ed597b0f0c78"
-                },
-                {
-                    "Reason": "Pause AA 830 for IPPhone, LCP and Cisco devices",
-                    "StartDate": "2026-06-29",
-                    "UpdateId": "3fdc1ff9-1ba7-4bbe-91e4-2ece2d7ee1a7"
-                },
-                {
-                    "Reason": "Test Pause AA 830 in MSIT",
-                    "StartDate": "2026-07-06",
-                    "UpdateId": "2079be62-6ae6-4de3-a942-8ec331ec139f"
-                },
-                {
-                    "Reason": "Test Pause AA 855",
-                    "StartDate": "2026-07-06",
-                    "UpdateId": "a565741e-0386-4858-9a4a-154baa5ab8cc"
+                    "Reason": "Pause intune app 26.6.0 from PROD for all Cisco models",
+                    "StartDate": "2026-08-20",
+                    "UpdateIds": [
+                        "ea7d8113-6437-4ed5-97ab-a5ecef2ef9a6",
+                        "107231d6-e0bc-4f8d-8382-0fc49060b5a2",
+                        "0dcd0ad9-6ca9-4e58-9ef7-78fc19832b55",
+                        "5243d451-6f7d-4166-a22b-a1b6e1cdebbe",
+                        "6c9b60ed-18c1-4333-8528-8a7bcb5e33a9",
+                        "f2f99cd4-79e7-47f0-8a84-caf215756913",
+                        "ca7bfb35-5f67-4562-835e-abbfb2df74f8",
+                        "99d2d98d-bda2-49fb-82b1-321fe18b2cb5",
+                        "beffc64e-9285-4dcf-890e-bbf7188ef74a",
+                        "729708b0-2e1a-43e3-99e9-5d9d9738a914",
+                        "295df943-90ea-4ad2-951d-69ee21a0fa6c",
+                        "1356550a-e4dc-4d45-8d16-1d878b52a7fb",
+                        "e17ccf2e-de34-4c72-aba9-4282eb2811f6"
+                    ]
                 }
             ]
         }
