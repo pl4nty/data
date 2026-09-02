@@ -428,7 +428,7 @@ end
 
   do
     if type(l_0_35.scripts) ~= "table" or not l_0_35.scripts then
-      local l_0_49, l_0_86, l_0_87 = {node = true, ["node.exe"] = true, bun = true, ["bun.exe"] = true, deno = true, ["deno.exe"] = true}, {[".js"] = true, [".mjs"] = true, [".cjs"] = true}, function(l_10_0)
+      local l_0_49, l_0_113, l_0_114 = {node = true, ["node.exe"] = true, bun = true, ["bun.exe"] = true, deno = true, ["deno.exe"] = true}, {[".js"] = true, [".mjs"] = true, [".cjs"] = true}, function(l_10_0)
   -- function num : 0_9
   if type(l_10_0) ~= "string" then
     return false
@@ -547,83 +547,95 @@ end
 
         do
           if R65_PC412 then
-            local l_0_69 = nil
+            local l_0_69, l_0_72, l_0_76, l_0_81, l_0_86, l_0_90, l_0_93 = nil
           end
-          -- DECOMPILER ERROR at PC423: Confused about usage of register: R56 in 'UnsetPending'
-
           -- DECOMPILER ERROR at PC425: Confused about usage of register: R56 in 'UnsetPending'
 
           -- DECOMPILER ERROR at PC427: Confused about usage of register: R56 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC429: Confused about usage of register: R56 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC431: Confused about usage of register: R56 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC435: Confused about usage of register: R56 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC433: Confused about usage of register: R56 in 'UnsetPending'
 
-          local l_0_74 = nil
-          -- DECOMPILER ERROR at PC505: Overwrote pending register: R69 in 'AssignReg'
+          -- DECOMPILER ERROR at PC443: Confused about usage of register: R60 in 'UnsetPending'
 
-          if (string.sub)(({}).prepack, 1, 4096) ~= nil then
-            local l_0_75 = nil
-            -- DECOMPILER ERROR at PC539: Overwrote pending register: R71 in 'AssignReg'
+          -- DECOMPILER ERROR at PC445: Confused about usage of register: R66 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC544: Overwrote pending register: R72 in 'AssignReg'
+          -- DECOMPILER ERROR at PC449: Confused about usage of register: R58 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC451: Confused about usage of register: R56 in 'UnsetPending'
+
+          local l_0_101 = nil
+          -- DECOMPILER ERROR at PC515: Confused about usage of register: R57 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC518: Confused about usage of register: R59 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC519: Confused about usage of register: R57 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC521: Overwrote pending register: R72 in 'AssignReg'
+
+          if l_0_72 ~= nil then
+            local l_0_102 = nil
+            -- DECOMPILER ERROR at PC561: Confused about usage of register: R59 in 'UnsetPending'
 
             do
-              if R72_PC504 then
-                local l_0_77 = nil
+              if l_0_50[l_0_101] then
+                local l_0_104 = nil
               end
-              -- DECOMPILER ERROR at PC567: Overwrote pending register: R74 in 'AssignReg'
+              -- DECOMPILER ERROR at PC567: Confused about usage of register: R61 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC574: Overwrote pending register: R74 in 'AssignReg'
+              -- DECOMPILER ERROR at PC572: Confused about usage of register: R59 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC581: Overwrote pending register: R74 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC588: Overwrote pending register: R74 in 'AssignReg'
-
-              local l_0_84 = nil
+              local l_0_111 = nil
               do
-                local l_0_85 = nil
-                -- DECOMPILER ERROR at PC618: Confused about usage of register: R64 in 'UnsetPending'
+                local l_0_112 = nil
+                -- DECOMPILER ERROR at PC634: Confused about usage of register: R64 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC623: Confused about usage of register: R67 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC635: Confused about usage of register: R62 in 'UnsetPending'
 
-                l_0_30[#l_0_30 + 1] = {hook = l_0_62, runner = l_0_74, localScript = l_0_54(R63_PC412, l_0_48((string.sub)(({}).prepack, 1, 4096)), R65_PC412) ~= nil, localScriptExtension = l_0_54(R63_PC412, l_0_48((string.sub)(({}).prepack, 1, 4096)), R65_PC412), rootScript = R63_PC412, alternateRuntime = "postuninstall" or l_0_69 == "bun" or l_0_69 == "bun.exe" or l_0_69 == "deno" or l_0_69 == "deno.exe", inlineEval = R73_PC548, shell = "preuninstall" or l_0_47[l_0_69] == true, download = l_0_65:find("curl ", 1, true) ~= nil or l_0_65:find("curl\t", 1, true) ~= nil or l_0_65:find("wget ", 1, true) ~= nil or l_0_65:find("wget\t", 1, true) ~= nil or l_0_65:find("certutil ", 1, true) ~= nil or l_0_65:find("bitsadmin ", 1, true) ~= nil or l_0_65:find("invoke-webrequest", 1, true) ~= nil or l_0_65:find("invoke-restmethod", 1, true) ~= nil, packageExec = R71_PC504, nativeBuild = R74_PC559, encodedOrObfuscated = l_0_65:find("base64", 1, true) ~= nil or l_0_65:find("fromcharcode", 1, true) ~= nil or l_0_65:find("atob(", 1, true) ~= nil}
+                -- DECOMPILER ERROR at PC639: Confused about usage of register: R70 in 'UnsetPending'
+
+                l_0_30[#l_0_30 + 1] = {hook = l_0_62, runner = l_0_101, localScript = l_0_54(R63_PC412, l_0_48((string.sub)(({}).prepack, 1, 4096)), R65_PC412) ~= nil, localScriptExtension = l_0_93, rootScript = R63_PC412, alternateRuntime = not l_0_69 == "deno" or l_0_69 == "deno.exe" and (((l_0_69 == "bun" or l_0_69 == "bun.exe" and not l_0_0 == "bun.exe") or l_0_86) and not l_0_0 == "bun.exe"), inlineEval = l_0_53(l_0_81, l_0_102, "shell-command"), shell = l_0_76 or l_0_47[l_0_69] == true, download = l_0_65:find("curl ", 1, true) ~= nil or l_0_65:find("curl\t", 1, true) ~= nil or l_0_65:find("wget ", 1, true) ~= nil or l_0_65:find("wget\t", 1, true) ~= nil or l_0_65:find("certutil ", 1, true) ~= nil or l_0_65:find("bitsadmin ", 1, true) ~= nil or l_0_65:find("invoke-webrequest", 1, true) ~= nil or l_0_65:find("invoke-restmethod", 1, true) ~= nil, packageExec = not (l_0_101 == "npx" or l_0_101 == "npx.cmd") and (string.lower)(nil or "") == "only-allow" and l_0_101 == "npx" or l_0_101 == "npx.cmd" or l_0_101 == "pnpx" or l_0_101 == "bunx" or l_0_101 == "pnpm" or l_0_101 == "pnpm.cmd" or l_0_101 == "yarn" or l_0_101 == "yarn.cmd", nativeBuild = (not l_0_53(l_0_81, l_0_102, "runtime-eval") and not l_0_90 and l_0_76 or l_0_47[l_0_69] == true and l_0_65:find("node-gyp", 1, true) ~= nil) or l_0_65:find("node-pre-gyp", 1, true) ~= nil or l_0_65:find("node-gyp-build", 1, true) ~= nil or l_0_65:find("prebuild-install", 1, true) ~= nil, encodedOrObfuscated = l_0_65:find("base64", 1, true) ~= nil or l_0_65:find("fromcharcode", 1, true) ~= nil or l_0_65:find("atob(", 1, true) ~= nil}
                 if l_0_56[l_0_62] then
                   l_0_25(l_0_26, l_0_27, "lifecycle")
-                  -- DECOMPILER ERROR at PC637: Confused about usage of register: R67 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC653: Confused about usage of register: R70 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC639: Confused about usage of register: R68 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC655: Confused about usage of register: R71 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC645: Confused about usage of register: R75 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC657: Confused about usage of register: R74 in 'UnsetPending'
 
-                  if "preuninstall" or l_0_47[l_0_69] == true or l_0_65:find("curl ", 1, true) ~= nil or l_0_65:find("curl\t", 1, true) ~= nil or l_0_65:find("wget ", 1, true) ~= nil or l_0_65:find("wget\t", 1, true) ~= nil or l_0_65:find("certutil ", 1, true) ~= nil or l_0_65:find("bitsadmin ", 1, true) ~= nil or l_0_65:find("invoke-webrequest", 1, true) ~= nil or l_0_65:find("invoke-restmethod", 1, true) ~= nil or R71_PC504 or R73_PC548 or l_0_65:find("base64", 1, true) ~= nil or l_0_65:find("fromcharcode", 1, true) ~= nil or l_0_65:find("atob(", 1, true) ~= nil then
+                  -- DECOMPILER ERROR at PC661: Confused about usage of register: R78 in 'UnsetPending'
+
+                  if l_0_76 or l_0_47[l_0_69] == true or l_0_65:find("curl ", 1, true) ~= nil or l_0_65:find("curl\t", 1, true) ~= nil or l_0_65:find("wget ", 1, true) ~= nil or l_0_65:find("wget\t", 1, true) ~= nil or l_0_65:find("certutil ", 1, true) ~= nil or l_0_65:find("bitsadmin ", 1, true) ~= nil or l_0_65:find("invoke-webrequest", 1, true) ~= nil or l_0_65:find("invoke-restmethod", 1, true) ~= nil or not (l_0_101 == "npx" or l_0_101 == "npx.cmd") and (string.lower)(nil or "") == "only-allow" and l_0_101 == "npx" or l_0_101 == "npx.cmd" or l_0_101 == "pnpx" or l_0_101 == "bunx" or l_0_101 == "pnpm" or l_0_101 == "pnpm.cmd" or l_0_101 == "yarn" or l_0_101 == "yarn.cmd" or l_0_53(l_0_81, l_0_102, "shell-command") or l_0_65:find("base64", 1, true) ~= nil or l_0_65:find("fromcharcode", 1, true) ~= nil or l_0_65:find("atob(", 1, true) ~= nil then
                     l_0_25(l_0_26, l_0_27, "lifecycle-escalation")
                   end
                   if R65_PC412 then
                     l_0_25(l_0_26, l_0_27, "install-hook-local-loader")
                   end
-                  -- DECOMPILER ERROR at PC659: Confused about usage of register: R66 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC675: Confused about usage of register: R69 in 'UnsetPending'
 
-                  if "postuninstall" or l_0_69 == "bun" or l_0_69 == "bun.exe" or l_0_69 == "deno" or l_0_69 == "deno.exe" then
+                  if not l_0_69 == "deno" or l_0_69 == "deno.exe" and (((l_0_69 == "bun" or l_0_69 == "bun.exe" and not l_0_0 == "bun.exe") or l_0_86) and not l_0_0 == "bun.exe") then
                     l_0_25(l_0_26, l_0_27, "install-alternate-runtime")
                     l_0_34 = true
                   end
-                  if R74_PC559 then
+                  -- DECOMPILER ERROR at PC683: Confused about usage of register: R77 in 'UnsetPending'
+
+                  if (not l_0_53(l_0_81, l_0_102, "runtime-eval") and not l_0_90 and l_0_76 or l_0_47[l_0_69] == true and l_0_65:find("node-gyp", 1, true) ~= nil) or l_0_65:find("node-pre-gyp", 1, true) ~= nil or l_0_65:find("node-gyp-build", 1, true) ~= nil or l_0_65:find("prebuild-install", 1, true) ~= nil then
                     l_0_25(l_0_26, l_0_27, "native-build")
                     l_0_25(l_0_28, l_0_29, "lifecycle-native-helper")
                   end
                 end
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC679: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC695: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -631,35 +643,35 @@ end
         end
       end
     end
-    local l_0_88 = l_0_43
+    local l_0_115 = l_0_43
     ;
-    (function(l_14_0, l_14_1, l_14_2, l_14_3)
-  -- function num : 0_13 , upvalues : l_0_30, l_0_22, l_0_r49, l_0_r50
-  if l_14_2 > 5 or l_0_30 >= 128 then
+    (function(l_15_0, l_15_1, l_15_2, l_15_3)
+  -- function num : 0_14 , upvalues : l_0_30, l_0_22, l_0_r50, l_0_r51
+  if l_15_2 > 5 or l_0_30 >= 128 then
     l_0_22 = true
     return 
   end
-  if type(l_14_1) == "string" then
-    l_0_r49(l_14_0, l_14_1, l_14_3)
+  if type(l_15_1) == "string" then
+    l_0_r50(l_15_0, l_15_1, l_15_3)
   else
-    if type(l_14_1) == "table" then
-      local l_14_4 = {}
-      for l_14_8,l_14_9 in pairs(l_14_1) do
-        local l_14_10 = #l_14_4 + 1
-        local l_14_11 = {}
-        l_14_11.key = tostring(l_14_8)
-        l_14_11.value = l_14_9
-        l_14_4[l_14_10] = l_14_11
+    if type(l_15_1) == "table" then
+      local l_15_4 = {}
+      for l_15_8,l_15_9 in pairs(l_15_1) do
+        local l_15_10 = #l_15_4 + 1
+        local l_15_11 = {}
+        l_15_11.key = tostring(l_15_8)
+        l_15_11.value = l_15_9
+        l_15_4[l_15_10] = l_15_11
       end
       ;
-      (table.sort)(l_14_4, function(l_15_0, l_15_1)
-    -- function num : 0_13_0
-    do return l_15_0.key < l_15_1.key end
+      (table.sort)(l_15_4, function(l_16_0, l_16_1)
+    -- function num : 0_14_0
+    do return l_16_0.key < l_16_1.key end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 )
-      for l_14_15,l_14_16 in ipairs(l_14_4) do
-        l_0_r50(l_14_0, l_14_16.value, l_14_2 + 1, l_14_3)
+      for l_15_15,l_15_16 in ipairs(l_15_4) do
+        l_0_r51(l_15_0, l_15_16.value, l_15_2 + 1, l_15_3)
         if l_0_30 >= 128 then
           break
         end
@@ -668,36 +680,36 @@ end
   end
 end
 )("main", l_0_35.main, 0, true)
-    -- DECOMPILER ERROR at PC714: Confused about usage of register: R50 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC733: Confused about usage of register: R51 in 'UnsetPending'
 
     ;
-    (function(l_14_0, l_14_1, l_14_2, l_14_3)
-  -- function num : 0_13 , upvalues : l_0_30, l_0_22, l_0_r49, l_0_r50
-  if l_14_2 > 5 or l_0_30 >= 128 then
+    (function(l_15_0, l_15_1, l_15_2, l_15_3)
+  -- function num : 0_14 , upvalues : l_0_30, l_0_22, l_0_r50, l_0_r51
+  if l_15_2 > 5 or l_0_30 >= 128 then
     l_0_22 = true
     return 
   end
-  if type(l_14_1) == "string" then
-    l_0_r49(l_14_0, l_14_1, l_14_3)
+  if type(l_15_1) == "string" then
+    l_0_r50(l_15_0, l_15_1, l_15_3)
   else
-    if type(l_14_1) == "table" then
-      local l_14_4 = {}
-      for l_14_8,l_14_9 in pairs(l_14_1) do
-        local l_14_10 = #l_14_4 + 1
-        local l_14_11 = {}
-        l_14_11.key = tostring(l_14_8)
-        l_14_11.value = l_14_9
-        l_14_4[l_14_10] = l_14_11
+    if type(l_15_1) == "table" then
+      local l_15_4 = {}
+      for l_15_8,l_15_9 in pairs(l_15_1) do
+        local l_15_10 = #l_15_4 + 1
+        local l_15_11 = {}
+        l_15_11.key = tostring(l_15_8)
+        l_15_11.value = l_15_9
+        l_15_4[l_15_10] = l_15_11
       end
       ;
-      (table.sort)(l_14_4, function(l_15_0, l_15_1)
-    -- function num : 0_13_0
-    do return l_15_0.key < l_15_1.key end
+      (table.sort)(l_15_4, function(l_16_0, l_16_1)
+    -- function num : 0_14_0
+    do return l_16_0.key < l_16_1.key end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 )
-      for l_14_15,l_14_16 in ipairs(l_14_4) do
-        l_0_r50(l_14_0, l_14_16.value, l_14_2 + 1, l_14_3)
+      for l_15_15,l_15_16 in ipairs(l_15_4) do
+        l_0_r51(l_15_0, l_15_16.value, l_15_2 + 1, l_15_3)
         if l_0_30 >= 128 then
           break
         end
@@ -706,36 +718,36 @@ end
   end
 end
 )("module", l_0_35.module, 0, true)
-    -- DECOMPILER ERROR at PC720: Confused about usage of register: R50 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC739: Confused about usage of register: R51 in 'UnsetPending'
 
     ;
-    (function(l_14_0, l_14_1, l_14_2, l_14_3)
-  -- function num : 0_13 , upvalues : l_0_30, l_0_22, l_0_r49, l_0_r50
-  if l_14_2 > 5 or l_0_30 >= 128 then
+    (function(l_15_0, l_15_1, l_15_2, l_15_3)
+  -- function num : 0_14 , upvalues : l_0_30, l_0_22, l_0_r50, l_0_r51
+  if l_15_2 > 5 or l_0_30 >= 128 then
     l_0_22 = true
     return 
   end
-  if type(l_14_1) == "string" then
-    l_0_r49(l_14_0, l_14_1, l_14_3)
+  if type(l_15_1) == "string" then
+    l_0_r50(l_15_0, l_15_1, l_15_3)
   else
-    if type(l_14_1) == "table" then
-      local l_14_4 = {}
-      for l_14_8,l_14_9 in pairs(l_14_1) do
-        local l_14_10 = #l_14_4 + 1
-        local l_14_11 = {}
-        l_14_11.key = tostring(l_14_8)
-        l_14_11.value = l_14_9
-        l_14_4[l_14_10] = l_14_11
+    if type(l_15_1) == "table" then
+      local l_15_4 = {}
+      for l_15_8,l_15_9 in pairs(l_15_1) do
+        local l_15_10 = #l_15_4 + 1
+        local l_15_11 = {}
+        l_15_11.key = tostring(l_15_8)
+        l_15_11.value = l_15_9
+        l_15_4[l_15_10] = l_15_11
       end
       ;
-      (table.sort)(l_14_4, function(l_15_0, l_15_1)
-    -- function num : 0_13_0
-    do return l_15_0.key < l_15_1.key end
+      (table.sort)(l_15_4, function(l_16_0, l_16_1)
+    -- function num : 0_14_0
+    do return l_16_0.key < l_16_1.key end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 )
-      for l_14_15,l_14_16 in ipairs(l_14_4) do
-        l_0_r50(l_14_0, l_14_16.value, l_14_2 + 1, l_14_3)
+      for l_15_15,l_15_16 in ipairs(l_15_4) do
+        l_0_r51(l_15_0, l_15_16.value, l_15_2 + 1, l_15_3)
         if l_0_30 >= 128 then
           break
         end
@@ -744,36 +756,36 @@ end
   end
 end
 )("bin", l_0_35.bin, 0, true)
-    -- DECOMPILER ERROR at PC726: Confused about usage of register: R50 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC745: Confused about usage of register: R51 in 'UnsetPending'
 
     ;
-    (function(l_14_0, l_14_1, l_14_2, l_14_3)
-  -- function num : 0_13 , upvalues : l_0_30, l_0_22, l_0_r49, l_0_r50
-  if l_14_2 > 5 or l_0_30 >= 128 then
+    (function(l_15_0, l_15_1, l_15_2, l_15_3)
+  -- function num : 0_14 , upvalues : l_0_30, l_0_22, l_0_r50, l_0_r51
+  if l_15_2 > 5 or l_0_30 >= 128 then
     l_0_22 = true
     return 
   end
-  if type(l_14_1) == "string" then
-    l_0_r49(l_14_0, l_14_1, l_14_3)
+  if type(l_15_1) == "string" then
+    l_0_r50(l_15_0, l_15_1, l_15_3)
   else
-    if type(l_14_1) == "table" then
-      local l_14_4 = {}
-      for l_14_8,l_14_9 in pairs(l_14_1) do
-        local l_14_10 = #l_14_4 + 1
-        local l_14_11 = {}
-        l_14_11.key = tostring(l_14_8)
-        l_14_11.value = l_14_9
-        l_14_4[l_14_10] = l_14_11
+    if type(l_15_1) == "table" then
+      local l_15_4 = {}
+      for l_15_8,l_15_9 in pairs(l_15_1) do
+        local l_15_10 = #l_15_4 + 1
+        local l_15_11 = {}
+        l_15_11.key = tostring(l_15_8)
+        l_15_11.value = l_15_9
+        l_15_4[l_15_10] = l_15_11
       end
       ;
-      (table.sort)(l_14_4, function(l_15_0, l_15_1)
-    -- function num : 0_13_0
-    do return l_15_0.key < l_15_1.key end
+      (table.sort)(l_15_4, function(l_16_0, l_16_1)
+    -- function num : 0_14_0
+    do return l_16_0.key < l_16_1.key end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 )
-      for l_14_15,l_14_16 in ipairs(l_14_4) do
-        l_0_r50(l_14_0, l_14_16.value, l_14_2 + 1, l_14_3)
+      for l_15_15,l_15_16 in ipairs(l_15_4) do
+        l_0_r51(l_15_0, l_15_16.value, l_15_2 + 1, l_15_3)
         if l_0_30 >= 128 then
           break
         end
@@ -782,36 +794,36 @@ end
   end
 end
 )("exports", l_0_35.exports, 0, false)
-    -- DECOMPILER ERROR at PC732: Confused about usage of register: R50 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC751: Confused about usage of register: R51 in 'UnsetPending'
 
     ;
-    (function(l_14_0, l_14_1, l_14_2, l_14_3)
-  -- function num : 0_13 , upvalues : l_0_30, l_0_22, l_0_r49, l_0_r50
-  if l_14_2 > 5 or l_0_30 >= 128 then
+    (function(l_15_0, l_15_1, l_15_2, l_15_3)
+  -- function num : 0_14 , upvalues : l_0_30, l_0_22, l_0_r50, l_0_r51
+  if l_15_2 > 5 or l_0_30 >= 128 then
     l_0_22 = true
     return 
   end
-  if type(l_14_1) == "string" then
-    l_0_r49(l_14_0, l_14_1, l_14_3)
+  if type(l_15_1) == "string" then
+    l_0_r50(l_15_0, l_15_1, l_15_3)
   else
-    if type(l_14_1) == "table" then
-      local l_14_4 = {}
-      for l_14_8,l_14_9 in pairs(l_14_1) do
-        local l_14_10 = #l_14_4 + 1
-        local l_14_11 = {}
-        l_14_11.key = tostring(l_14_8)
-        l_14_11.value = l_14_9
-        l_14_4[l_14_10] = l_14_11
+    if type(l_15_1) == "table" then
+      local l_15_4 = {}
+      for l_15_8,l_15_9 in pairs(l_15_1) do
+        local l_15_10 = #l_15_4 + 1
+        local l_15_11 = {}
+        l_15_11.key = tostring(l_15_8)
+        l_15_11.value = l_15_9
+        l_15_4[l_15_10] = l_15_11
       end
       ;
-      (table.sort)(l_14_4, function(l_15_0, l_15_1)
-    -- function num : 0_13_0
-    do return l_15_0.key < l_15_1.key end
+      (table.sort)(l_15_4, function(l_16_0, l_16_1)
+    -- function num : 0_14_0
+    do return l_16_0.key < l_16_1.key end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 )
-      for l_14_15,l_14_16 in ipairs(l_14_4) do
-        l_0_r50(l_14_0, l_14_16.value, l_14_2 + 1, l_14_3)
+      for l_15_15,l_15_16 in ipairs(l_15_4) do
+        l_0_r51(l_15_0, l_15_16.value, l_15_2 + 1, l_15_3)
         if l_0_30 >= 128 then
           break
         end
@@ -823,7 +835,7 @@ end
     if not l_0_11 then
       do
         if not l_0_27["install-hook-local-loader"] then
-          local l_0_91 = nil
+          local l_0_119 = nil
         end
         if not l_0_14[l_0_0] or not l_0_27["install-alternate-runtime"] then
           return mp.CLEAN
@@ -831,18 +843,18 @@ end
         if not l_0_34 then
           return mp.CLEAN
         end
-        local l_0_92 = nil
-        for l_0_96,l_0_97 in ipairs({"package-lock.json"}) do
-          local l_0_93, l_0_94, l_0_95, l_0_96, l_0_97 = nil
-          -- DECOMPILER ERROR at PC768: Confused about usage of register: R57 in 'UnsetPending'
+        local l_0_120 = nil
+        for l_0_124,l_0_125 in ipairs({"package-lock.json"}) do
+          local l_0_121, l_0_122, l_0_123, l_0_124, l_0_125 = nil
+          -- DECOMPILER ERROR at PC787: Confused about usage of register: R58 in 'UnsetPending'
 
-          if (sysio.IsFileExists)(l_0_3 .. l_0_5 .. l_0_75) then
+          if (sysio.IsFileExists)(l_0_3 .. l_0_5 .. l_0_111) then
             return mp.CLEAN
           end
         end
         do
-          local l_0_98 = nil
-          -- DECOMPILER ERROR at PC790: Confused about usage of register: R53 in 'UnsetPending'
+          local l_0_126 = nil
+          -- DECOMPILER ERROR at PC809: Confused about usage of register: R54 in 'UnsetPending'
 
           if (sysio.IsFileExists)(l_0_3 .. l_0_5 .. ".git") or (sysio.IsFolderExists)(l_0_3 .. l_0_5 .. ".git") then
             return mp.CLEAN
@@ -850,7 +862,7 @@ end
           if not l_0_34 then
             return mp.CLEAN
           end
-          local l_0_99 = nil
+          local l_0_127 = nil
           if (sysio.IsFileExists)(l_0_3 .. l_0_5 .. "binding.gyp") then
             l_0_25(l_0_28, l_0_29, "binding.gyp")
           end
@@ -862,70 +874,87 @@ end
           ;
           (table.sort)(l_0_28)
           ;
-          (table.sort)(l_0_30, function(l_15_0, l_15_1)
-  -- function num : 0_14
-  do return l_15_0.hook < l_15_1.hook end
+          (table.sort)(l_0_30, function(l_16_0, l_16_1)
+  -- function num : 0_15
+  do return l_16_0.hook < l_16_1.hook end
   -- DECOMPILER ERROR: 1 unprocessed JMP targets
 end
 )
           ;
-          (table.sort)(l_0_31, function(l_16_0, l_16_1)
-  -- function num : 0_15
-  local l_16_2 = l_16_0.field .. ":" .. l_16_0.kind .. ":" .. (l_16_0.path or "")
+          (table.sort)(l_0_31, function(l_17_0, l_17_1)
+  -- function num : 0_16
+  local l_17_2 = l_17_0.field .. ":" .. l_17_0.kind .. ":" .. (l_17_0.path or "")
   do
-    local l_16_3 = l_16_1.field .. ":" .. l_16_1.kind .. ":" .. (l_16_1.path or "")
-    do return l_16_2 < l_16_3 end
+    local l_17_3 = l_17_1.field .. ":" .. l_17_1.kind .. ":" .. (l_17_1.path or "")
+    do return l_17_2 < l_17_3 end
     -- DECOMPILER ERROR: 1 unprocessed JMP targets
   end
 end
 )
           do
-            local l_0_100, l_0_103 = nil
+            local l_0_128, l_0_131 = nil
             do
-              local l_0_101, l_0_104 = nil
+              local l_0_129, l_0_132 = nil
               if (type(l_0_35.name) == "string" and l_0_35.name ~= "" and l_0_18(l_0_35.name, 256) or "" == "") or (type(l_0_35.version) == "string" and l_0_35.version ~= "" and l_0_18(l_0_35.version, 128) or "" == "") then
-                local l_0_106, l_0_107 = nil
-                local l_0_108 = nil
+                local l_0_134, l_0_135 = nil
+                local l_0_136 = nil
               end
-              local l_0_110 = nil
-              -- DECOMPILER ERROR at PC888: Confused about usage of register: R52 in 'UnsetPending'
+              local l_0_138 = nil
+              -- DECOMPILER ERROR at PC907: Confused about usage of register: R53 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC893: Confused about usage of register: R53 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC912: Confused about usage of register: R54 in 'UnsetPending'
 
-              local l_0_116 = nil
+              local l_0_144 = nil
               do
-                local l_0_117, l_0_119 = nil
-                -- DECOMPILER ERROR at PC914: Confused about usage of register: R56 in 'UnsetPending'
+                local l_0_145, l_0_147 = nil
+                -- DECOMPILER ERROR at PC933: Confused about usage of register: R57 in 'UnsetPending'
 
                 do
-                  local l_0_118, l_0_120 = nil
-                  local l_0_121 = nil
-                  -- DECOMPILER ERROR at PC928: Confused about usage of register: R52 in 'UnsetPending'
+                  local l_0_146, l_0_148 = nil
+                  local l_0_149 = nil
+                  -- DECOMPILER ERROR at PC947: Confused about usage of register: R53 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC929: Confused about usage of register: R53 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC948: Confused about usage of register: R54 in 'UnsetPending'
 
                   if (((l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_36 == nil) or #l_0_30 > 0) and #l_0_31 <= 0) or #l_0_28 > 0 then
-                    local l_0_122 = nil
-                    if type(safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28})) ~= "string" or safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) == "" then
-                      return mp.CLEAN
-                    end
-                    if #safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, 64) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) > 16384 then
-                      return mp.CLEAN
-                    end
-                    do
-                      local l_0_123 = nil
-                      if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) == nil then
-                        return mp.CLEAN
-                      end
-                      -- DECOMPILER ERROR at PC988: Overwrote pending register: R65 in 'AssignReg'
+                    local l_0_150 = nil
+                    -- DECOMPILER ERROR at PC978: Overwrote pending register: R63 in 'AssignReg'
 
-                      ;
-                      (MpCommon.BmTriggerSig)(R63_PC412, "PackageSeedContextV3", R65_PC412)
-                      do return mp.CLEAN end
-                      -- DECOMPILER ERROR at PC993: freeLocal<0 in 'ReleaseLocals'
+                    if type(R63_PC412) ~= "string" or safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, R63_PC412) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) == "" then
+                      return mp.CLEAN
+                    end
+                    if #safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, R63_PC412) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}) > 16384 then
+                      return mp.CLEAN
+                    end
+                    -- DECOMPILER ERROR at PC995: Overwrote pending register: R63 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC996: Overwrote pending register: R63 in 'AssignReg'
+
+                    do
+                      local l_0_151 = nil
+                      -- DECOMPILER ERROR at PC1000: Overwrote pending register: R63 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC1001: Overwrote pending register: R63 in 'AssignReg'
+
+                      if (mp.get_contextdata)(R63_PC412) == nil then
+                        return R63_PC412
+                      end
+                      -- DECOMPILER ERROR at PC1003: Overwrote pending register: R63 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC1004: Overwrote pending register: R63 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC1006: Overwrote pending register: R65 in 'AssignReg'
+
+                      R63_PC412((mp.get_contextdata)(R63_PC412), R65_PC412, safeJsonSerialize({schemaVersion = 3, source = "EPP-Lua", ecosystem = "npm", writeContext = l_0_12, managerProcessHint = l_0_17(l_0_15, R63_PC412) or "unknown", packageName = "", packageVersion = "", identityStatus = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and "complete" or "manifest-only", seedKey = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) ~= nil and l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil) .. "|" .. "sha256:" .. l_0_36 or "sha256:" .. l_0_36, signals = l_0_26, oversized = false, truncated = l_0_24, packagePurl = l_0_23("" ~= "" and "" or nil, "" ~= "" and "" or nil), packageJsonSha256 = l_0_36, manifestHashAlgorithm = "sha256", manifestHashSource = "raw-package-json-bytes", lifecycleHooks = l_0_30, entryPoints = l_0_31, nativeHints = l_0_28}))
+                      -- DECOMPILER ERROR at PC1009: Overwrote pending register: R63 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC1010: Overwrote pending register: R63 in 'AssignReg'
+
+                      do return R63_PC412 end
+                      -- DECOMPILER ERROR at PC1012: freeLocal<0 in 'ReleaseLocals'
 
                       -- WARNING: undefined locals caused missing assignments!
-                      -- DECOMPILER ERROR: 77 unprocessed JMP targets
+                      -- DECOMPILER ERROR: 81 unprocessed JMP targets
                     end
                   end
                 end
