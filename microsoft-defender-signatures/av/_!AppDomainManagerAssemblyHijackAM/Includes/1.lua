@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\_!AppDomainManagerAssemblyAM\Includes\1.luac 
+-- Command line: lua\_!AppDomainManagerAssemblyHijackAM\Includes\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -11,6 +11,9 @@ l_0_0 = normalize_path(l_0_0)
 if isnull(l_0_0) then
   return mp.CLEAN
 end
+if (string.match)(l_0_0, "^%a:\\program files\\") or (string.match)(l_0_0, "^%a:\\program files %(x86%)\\") then
+  return mp.CLEAN
+end
 local l_0_1 = (MpCommon.ExpandEnvironmentVariables)("%windir%")
 if not isnull(l_0_1) then
   l_0_1 = normalize_path(l_0_1)
@@ -19,11 +22,11 @@ if not isnull(l_0_1) then
   end
 end
 local l_0_2 = {}
--- DECOMPILER ERROR at PC84: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC101: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC85: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC102: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC86: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC103: Overwrote pending register: R4 in 'AssignReg'
 
 for l_0_6,l_0_7 in ((MpCommon.ExpandEnvironmentVariables)("%ProgramFiles%"))((MpCommon.ExpandEnvironmentVariables)("%ProgramFiles(x86)%")) do
   if not isnull(l_0_7) then

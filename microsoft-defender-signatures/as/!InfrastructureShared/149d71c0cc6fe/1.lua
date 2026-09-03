@@ -47,11 +47,12 @@ l_0_7.PROCESS_CONTEXT = "CmdLine"
 l_0_7.BREAK_AT_FIRST_HIT_MALWARE = "60"
 l_0_7.FILELESS = "true"
 l_0_7.CMDLINE_URL = "true"
+l_0_7.CMDLINE_MATCH = l_0_4
 local l_0_8 = CheckUrlReputationSimple
 local l_0_9 = {}
--- DECOMPILER ERROR at PC143: No list found for R9 , SetList fails
+-- DECOMPILER ERROR at PC144: No list found for R9 , SetList fails
 
--- DECOMPILER ERROR at PC144: Overwrote pending register: R10 in 'AssignReg'
+-- DECOMPILER ERROR at PC145: Overwrote pending register: R10 in 'AssignReg'
 
 l_0_8 = l_0_8(l_0_9, l_0_6, 60)
 if l_0_8 then

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaAppDomainManagerConfigStructureA\1.luac 
+-- Command line: lua\!InfrastructureShared\!#LuaAppDomainManagerConfigBindingAM\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -11,28 +11,31 @@ l_0_0 = normalize_path(l_0_0)
 if isnull(l_0_0) or not (string.find)(l_0_0, "%.exe%.config$") then
   return mp.CLEAN
 end
+if (string.match)(l_0_0, "^%a:\\program files\\") or (string.match)(l_0_0, "^%a:\\program files %(x86%)\\") then
+  return mp.CLEAN
+end
 local l_0_1 = (string.match)(l_0_0, "^(.*)\\[^\\]+$")
 do
   local l_0_2, l_0_3, l_0_4, l_0_5 = (mp.getfilesize)() or 0
-  -- DECOMPILER ERROR at PC53: Confused about usage of register: R2 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC70: Confused about usage of register: R2 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC55: Confused about usage of register: R2 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC72: Confused about usage of register: R2 in 'UnsetPending'
 
   if isnull(l_0_1) or l_0_2 <= 0 or l_0_2 > 52428800 then
     return mp.CLEAN
   end
   ;
   (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC68: Confused about usage of register: R2 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC85: Confused about usage of register: R2 in 'UnsetPending'
 
   local l_0_6, l_0_7 = , pcall(mp.readfile, 0, l_0_2)
   ;
   (mp.readprotection)(true)
-  if not l_0_7 or isnull(R6_PC78) then
+  if not l_0_7 or isnull(R6_PC95) then
     return mp.CLEAN
   end
   local l_0_8 = nil
-  local l_0_9 = (string.match)((string.lower)(R6_PC78(R7_PC88)), "<appdomainmanagerassembly[^>]-value%s*=%s*[\"\']([^\"\']+)[\"\']")
+  local l_0_9 = (string.match)((string.lower)(R6_PC95(R7_PC105)), "<appdomainmanagerassembly[^>]-value%s*=%s*[\"\']([^\"\']+)[\"\']")
   if isnull(l_0_9) or isnull((string.match)(l_0_8, "<appdomainmanagertype[^>]-value%s*=%s*[\"\']([^\"\']+)[\"\']")) then
     return mp.CLEAN
   end
@@ -46,7 +49,7 @@ do
 
 end
 )(l_0_10)
-  -- DECOMPILER ERROR at PC119: Confused about usage of register: R7 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC136: Confused about usage of register: R7 in 'UnsetPending'
 
   local l_0_11 = nil
   if l_0_10 == "" or (function(l_1_0)
@@ -60,7 +63,7 @@ end
 )((string.match)(l_0_9, "^([^,]+)") or l_0_9) == "" then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC150: Confused about usage of register: R8 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC167: Confused about usage of register: R8 in 'UnsetPending'
 
   do
     local l_0_12 = nil
@@ -136,9 +139,9 @@ end
     if not isnull((string.match)(l_0_8, "<probing[^>]-privatepath%s*=%s*[\"\']([^\"\']+)[\"\']")) then
       for l_0_21 in (string.gmatch)((string.match)(l_0_8, "<probing[^>]-privatepath%s*=%s*[\"\']([^\"\']+)[\"\']") .. ";", "([^;]+);") do
         local l_0_18, l_0_19 = nil
-        -- DECOMPILER ERROR at PC199: Confused about usage of register: R17 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC216: Confused about usage of register: R17 in 'UnsetPending'
 
-        l_0_18(R17_PC199)
+        l_0_18(R17_PC216)
       end
     end
     do
@@ -160,48 +163,48 @@ end
   end
 end
 
-          -- DECOMPILER ERROR at PC239: Confused about usage of register: R22 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC256: Confused about usage of register: R22 in 'UnsetPending'
 
-          if (string.match)(R22_PC239, "^%a:\\") or (string.sub)(R22_PC239, 1, 2) == "\\\\" then
-            l_0_27(R22_PC239)
+          if (string.match)(R22_PC256, "^%a:\\") or (string.sub)(R22_PC256, 1, 2) == "\\\\" then
+            l_0_27(R22_PC256)
           else
             for l_0_34,l_0_35 in ipairs(l_0_15) do
-              -- DECOMPILER ERROR at PC261: Confused about usage of register: R27 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC278: Confused about usage of register: R27 in 'UnsetPending'
 
-              l_0_27(R27_PC261 .. "\\" .. l_0_33)
+              l_0_27(R27_PC278 .. "\\" .. l_0_33)
             end
           end
         end
         for l_0_39 in (string.gmatch)(l_0_8, "<codebase[^>]-href%s*=%s*[\"\']([^\"\']+)[\"\']") do
           local l_0_36, l_0_37, l_0_38 = nil
-          -- DECOMPILER ERROR at PC277: Confused about usage of register: R21 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC294: Confused about usage of register: R21 in 'UnsetPending'
 
           do
             do
-              -- DECOMPILER ERROR at PC317: Overwrote pending register: R23 in 'AssignReg'
+              -- DECOMPILER ERROR at PC334: Overwrote pending register: R23 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC333: Overwrote pending register: R23 in 'AssignReg'
+              -- DECOMPILER ERROR at PC350: Overwrote pending register: R23 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC341: Overwrote pending register: R23 in 'AssignReg'
+              -- DECOMPILER ERROR at PC358: Overwrote pending register: R23 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC365: Overwrote pending register: R23 in 'AssignReg'
+              -- DECOMPILER ERROR at PC382: Overwrote pending register: R23 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC370: Confused about usage of register: R23 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC387: Confused about usage of register: R23 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC377: Confused about usage of register: R23 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC394: Confused about usage of register: R23 in 'UnsetPending'
 
-              -- DECOMPILER ERROR at PC384: Confused about usage of register: R23 in 'UnsetPending'
+              -- DECOMPILER ERROR at PC401: Confused about usage of register: R23 in 'UnsetPending'
 
               if (string.sub)((l_0_11(l_0_32)), 1, 5) ~= "file:" or ((((string.sub)((string.sub)((l_0_11(l_0_32)), 6), 1, 3) ~= "///" or not (string.match)((string.sub)((string.sub)((l_0_11(l_0_32)), 6), 4), "^%a:/") or (string.sub)((string.sub)((l_0_11(l_0_32)), 6), 1, 2) == "//") and (string.find)((l_0_11(l_0_32)), "://", 1, true)) or (string.gsub)(nil, "/", "\\")) then
                 if (string.match)((string.gsub)(nil, "/", "\\"), "^%a:\\") or (string.sub)((string.gsub)(nil, "/", "\\"), 1, 2) == "\\\\" then
                   l_0_37((string.gsub)(nil, "/", "\\"))
                 else
-                  -- DECOMPILER ERROR at PC390: Confused about usage of register: R23 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC407: Confused about usage of register: R23 in 'UnsetPending'
 
                   l_0_37(l_0_1 .. "\\" .. (string.gsub)(nil, "/", "\\"))
                 end
               end
-              -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out DO_STMT
+              -- DECOMPILER ERROR at PC410: LeaveBlock: unexpected jumping out DO_STMT
 
             end
           end
@@ -234,44 +237,44 @@ end
   end
 end
 , false, false
-            -- DECOMPILER ERROR at PC415: Confused about usage of register: R34 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC432: Confused about usage of register: R34 in 'UnsetPending'
 
-            AppendToRollingQueueNamespaced(l_0_47, l_0_46, R34_PC415, 1, l_0_54, l_0_55, 1)
-            if l_0_56(l_0_49, R34_PC415) then
+            AppendToRollingQueueNamespaced(l_0_47, l_0_46, R34_PC432, 1, l_0_54, l_0_55, 1)
+            if l_0_56(l_0_49, R34_PC432) then
               l_0_57 = true
             end
-            if l_0_56(l_0_51, R34_PC415) then
+            if l_0_56(l_0_51, R34_PC432) then
               l_0_58 = true
             end
           end
           for l_0_63,l_0_64 in ipairs(l_0_15) do
             local l_0_60, l_0_61, l_0_62, l_0_63 = nil
-            -- DECOMPILER ERROR at PC443: Confused about usage of register: R34 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC460: Confused about usage of register: R34 in 'UnsetPending'
 
-            AppendToRollingQueueNamespaced(l_0_48, l_0_46, l_0_14 .. "|" .. R34_PC415, 1, l_0_54, l_0_60, 1)
-            -- DECOMPILER ERROR at PC456: Confused about usage of register: R35 in 'UnsetPending'
+            AppendToRollingQueueNamespaced(l_0_48, l_0_46, l_0_14 .. "|" .. R34_PC432, 1, l_0_54, l_0_60, 1)
+            -- DECOMPILER ERROR at PC473: Confused about usage of register: R35 in 'UnsetPending'
 
-            if l_0_61(l_0_50, l_0_14 .. "|" .. R34_PC415) then
+            if l_0_61(l_0_50, l_0_14 .. "|" .. R34_PC432) then
               l_0_62 = true
             end
-            -- DECOMPILER ERROR at PC463: Confused about usage of register: R35 in 'UnsetPending'
+            -- DECOMPILER ERROR at PC480: Confused about usage of register: R35 in 'UnsetPending'
 
-            if l_0_61(l_0_53, l_0_14 .. "|" .. R34_PC415) then
+            if l_0_61(l_0_53, l_0_14 .. "|" .. R34_PC432) then
               l_0_63 = true
             end
           end
-          -- DECOMPILER ERROR at PC470: Confused about usage of register: R28 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC487: Confused about usage of register: R28 in 'UnsetPending'
 
           if l_0_62 then
-            (mp.set_mpattribute)("Lua:AppDomainManagerMatchingLoader.AM")
+            (mp.set_mpattribute)("Lua:AppDomainManagerLoaderManaged.AM")
           end
-          -- DECOMPILER ERROR at PC476: Confused about usage of register: R29 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC493: Confused about usage of register: R29 in 'UnsetPending'
 
           if l_0_63 then
-            (mp.set_mpattribute)("Lua:AppDomainManagerMatchingLoader.AN")
+            (mp.set_mpattribute)("Lua:AppDomainManagerLoaderNative.AM")
           end
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC485: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC502: freeLocal<0 in 'ReleaseLocals'
 
         end
       end

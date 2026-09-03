@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\_!AppDomainManagerTypeAM\Includes\1.luac 
+-- Command line: lua\_!AppDomainManagerConfigHijackAM\Includes\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -11,12 +11,15 @@ l_0_0 = normalize_path(l_0_0)
 if isnull(l_0_0) or not (string.find)(l_0_0, "%.exe%.config$") then
   return mp.CLEAN
 end
+if (string.match)(l_0_0, "^%a:\\program files\\") or (string.match)(l_0_0, "^%a:\\program files %(x86%)\\") then
+  return mp.CLEAN
+end
 local l_0_1 = {}
--- DECOMPILER ERROR at PC46: No list found for R1 , SetList fails
+-- DECOMPILER ERROR at PC63: No list found for R1 , SetList fails
 
--- DECOMPILER ERROR at PC47: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC64: Overwrote pending register: R2 in 'AssignReg'
 
--- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC65: Overwrote pending register: R3 in 'AssignReg'
 
 for l_0_5,l_0_6 in ((MpCommon.ExpandEnvironmentVariables)("%ProgramFiles%"))((MpCommon.ExpandEnvironmentVariables)("%ProgramFiles(x86)%")) do
   if not isnull(l_0_6) then
@@ -57,9 +60,9 @@ else
   l_0_12[2] = l_0_11 .. ".exe"
 end
 local l_0_13 = {}
--- DECOMPILER ERROR at PC196: No list found for R7 , SetList fails
+-- DECOMPILER ERROR at PC213: No list found for R7 , SetList fails
 
--- DECOMPILER ERROR at PC197: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC214: Overwrote pending register: R8 in 'AssignReg'
 
 local l_0_14 = (l_0_8.match)(l_0_10, "<probing[^>]-privatepath%s*=%s*\"([^\"\r\n]+)")
 if not isnull(l_0_14) then
@@ -77,9 +80,9 @@ if not isnull(l_0_14) then
         l_0_20 = l_0_20.sub
         l_0_20 = l_0_20(l_0_19, 3)
         l_0_19 = l_0_20
-        -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_THEN_STMT
+        -- DECOMPILER ERROR at PC260: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-        -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_STMT
+        -- DECOMPILER ERROR at PC260: LeaveBlock: unexpected jumping out IF_STMT
 
       end
     end
@@ -99,13 +102,13 @@ if not isnull(l_0_14) then
           if not isnull(l_0_20) then
             if #l_0_20 > 3 and (string.sub)(l_0_20, -1) == "\\" then
               l_0_20 = (string.sub)(l_0_20, 1, -2)
-              -- DECOMPILER ERROR at PC318: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC318: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_STMT
 
-              -- DECOMPILER ERROR at PC318: LeaveBlock: unexpected jumping out IF_THEN_STMT
+              -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-              -- DECOMPILER ERROR at PC318: LeaveBlock: unexpected jumping out IF_STMT
+              -- DECOMPILER ERROR at PC335: LeaveBlock: unexpected jumping out IF_STMT
 
             end
           end
@@ -137,32 +140,34 @@ do
   end
 end
 
-      -- DECOMPILER ERROR at PC339: Confused about usage of register: R20 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC356: Confused about usage of register: R20 in 'UnsetPending'
 
-      if (string.match)(R20_PC339, "^%a:\\") or (string.sub)(R20_PC339, 1, 2) == "\\\\" then
-        l_0_30(R20_PC339)
+      if (string.match)(R20_PC356, "^%a:\\") or (string.sub)(R20_PC356, 1, 2) == "\\\\" then
+        l_0_30(R20_PC356)
       else
         for l_0_37,l_0_38 in ipairs(l_0_13) do
-          -- DECOMPILER ERROR at PC361: Confused about usage of register: R25 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC378: Confused about usage of register: R25 in 'UnsetPending'
 
-          l_0_30(R25_PC361 .. "\\" .. l_0_35)
+          l_0_30(R25_PC378 .. "\\" .. l_0_35)
         end
       end
     end
     for l_0_42,l_0_43 in ipairs(l_0_27) do
       local l_0_39, l_0_40 = nil
-      -- DECOMPILER ERROR at PC377: Confused about usage of register: R20 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC394: Confused about usage of register: R20 in 'UnsetPending'
 
       AppendToRollingQueueNamespaced(l_0_24, l_0_23, l_0_35, l_0_0, l_0_26, 256, 1)
-      -- DECOMPILER ERROR at PC388: Confused about usage of register: R20 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC405: Confused about usage of register: R20 in 'UnsetPending'
 
-      if (sysio.IsFileExists)(l_0_45) or pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_25, l_0_23, l_0_35) and not isnull(R24_PC400) then
-        (mp.ReportLowfi)(R24_PC400, 3569595041)
+      -- DECOMPILER ERROR at PC430: Overwrote pending register: R24 in 'AssignReg'
+
+      if ((sysio.IsFileExists)(l_0_45) or not pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_25, l_0_23, l_0_35) or not isnull(R24_PC417)) and not (mp.IsKnownFriendlyFile)(R24_PC417, true, false) then
+        (mp.ReportLowfi)(R24_PC417, 3569595041)
         return mp.INFECTED
       end
     end
     do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC416: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC441: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
