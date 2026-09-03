@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((Remediation.Threat).Name, "Cleaman") then
-  (sysio.DeleteFile)("%windir%\\system32\\drivers\\etc\\hosts")
-  Infrastructure_FixHostsFile()
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

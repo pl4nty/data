@@ -3,16 +3,6 @@
 
 -- params : ...
 -- function num : 0
-do
-  local l_0_0 = {}
-  -- DECOMPILER ERROR at PC12: No list found for R0 , SetList fails
-
-  -- DECOMPILER ERROR at PC13: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
-
-  ;
-  ("{4D9101D6-5BA0-4048-BDDE-7E2DF54C8C47}")("{0622D1AC-7D62-42F9-8393-A66E32146E0C}")
-  -- WARNING: undefined locals caused missing assignments!
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

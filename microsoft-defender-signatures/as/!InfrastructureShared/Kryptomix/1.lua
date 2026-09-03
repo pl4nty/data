@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Active then
-  Infrastructure_RemoveDefenderDAVASPolicyKey()
-  Infrastructure_RemoveDefenderDAVASPrefKey()
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

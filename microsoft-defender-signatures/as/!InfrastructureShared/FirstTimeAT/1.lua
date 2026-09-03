@@ -3,11 +3,6 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_FirstTimeAT = function()
-  -- function num : 0_0
-  if isFirstTimeATActive() then
-    initRQFTAT()
-  end
-end
-
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

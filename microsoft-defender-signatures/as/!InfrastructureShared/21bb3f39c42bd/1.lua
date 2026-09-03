@@ -35,7 +35,7 @@ do
   end
   l_0_7, l_0_8 = l_0_6:match, l_0_6
   l_0_7 = l_0_7(l_0_8, "([^\\]+)$")
-  l_0_8 = "Appomaly_ChildProcName"
+  l_0_8 = "Appomaly_ChildProcName_0"
   local l_0_9 = (MpCommon.AnomalyEventLookup)(l_0_8, "MarkerRecord_" .. l_0_5, 1)
   local l_0_10 = nil
   local l_0_11 = (MpCommon.GetCurrentTimeT)()

@@ -27,7 +27,7 @@ if not (MpCommon.GetProcessAttributeValue)(l_0_0.ppid, "inherit:PFApp_Parent") t
     end
     local l_0_6 = (string.lower)((((bm.get_connection_string)()):match("Uri=(.-;)")):match("^%a+://([^:/]+)"))
     local l_0_7 = nil
-    local l_0_8 = (MpCommon.AnomalyEventLookup)("PFApp_HOST", "MarkerRecord_" .. l_0_3, 1)
+    local l_0_8 = (MpCommon.AnomalyEventLookup)("PFApp_HOST_0", "MarkerRecord_" .. l_0_3, 1)
     local l_0_9 = nil
     local l_0_10, l_0_11 = (MpCommon.GetCurrentTimeT)(), nil
     local l_0_12 = nil

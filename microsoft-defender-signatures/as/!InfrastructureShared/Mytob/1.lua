@@ -3,7 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((Remediation.Threat).Name, "Mytob") then
-  Infrastructure_FixHostsFile()
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

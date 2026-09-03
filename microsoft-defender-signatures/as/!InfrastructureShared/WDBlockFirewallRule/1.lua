@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (MpDetection.GetCurrentThreat)()
-if l_0_0 and (string.find)(l_0_0.Name, "Behavior:Win32/WDBlockFirewallRule", 1, true) then
-  Infrastructure_ScanWDFirewallBlockRules()
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

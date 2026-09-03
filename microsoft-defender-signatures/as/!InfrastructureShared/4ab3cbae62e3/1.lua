@@ -42,7 +42,7 @@ local l_0_6 = {}
 l_0_6.TrackedProcess = l_0_0
 l_0_6.SignatureName = "Behavior:Win32/PFAppChildProc.C"
 if l_0_3 and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_3.integrity_level then
-  local l_0_7 = "Appomaly_ChildProcPriv"
+  local l_0_7 = "Appomaly_ChildProcPriv_0"
   local l_0_8 = (MpCommon.AnomalyEventLookup)(l_0_7, "MarkerRecord_" .. l_0_0, 1)
   local l_0_9 = (MpCommon.GetCurrentTimeT)()
   local l_0_10 = l_0_9
@@ -88,7 +88,7 @@ if l_0_3 and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_3.integrity_level then
           ;
           (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_6))
         end
-        local l_0_14 = "Appomaly_ChildProcName"
+        local l_0_14 = "Appomaly_ChildProcName_0"
         local l_0_15 = (MpCommon.AnomalyEventLookup)(l_0_14, "MarkerRecord_" .. l_0_0, 1)
         local l_0_16 = 0
         local l_0_17 = (MpCommon.GetCurrentTimeT)()

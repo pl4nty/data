@@ -81,7 +81,7 @@ else
       end
       l_0_22 = NormalizeDirectory(l_0_22)
       if (MpCommon.IsSampled)(100000, true, true, true) then
-        local l_0_23 = "ShellCodeFileName"
+        local l_0_23 = "ShellCodeFileName_0"
         local l_0_24 = l_0_2 .. "_" .. l_0_22 .. l_0_21
         local l_0_25, l_0_26, l_0_27 = AnomalyTableCheck(l_0_23, l_0_24, 30)
         if l_0_25 and not l_0_26 then
@@ -107,7 +107,7 @@ else
           do
             do
               do return mp.INFECTED end
-              local l_0_32 = "ShellCodeFileName"
+              local l_0_32 = "ShellCodeFileName_0"
               local l_0_33 = (MpCommon.AnomalyEventLookup)(l_0_32, "MarkerRecord_table_creationtime", 1)
               local l_0_34 = 0
               local l_0_35 = (MpCommon.GetCurrentTimeT)()

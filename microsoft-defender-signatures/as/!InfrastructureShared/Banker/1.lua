@@ -3,8 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (Remediation.Threat).Name
-if (string.match)(l_0_0, "Banker%.G[HI]") or (string.match)(l_0_0, "Banker!235F") then
-  Infrastructure_FixHostsFile()
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

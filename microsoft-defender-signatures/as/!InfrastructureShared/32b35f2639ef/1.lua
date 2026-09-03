@@ -58,7 +58,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
 
               local l_0_14 = nil
               local l_0_15, l_0_16, l_0_17 = nil
-              if AnomalyTableCheck(not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine", l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), 30, "MarkerRecord_" .. l_0_7) and not not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine" then
+              if AnomalyTableCheck(not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0", l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), 30, "MarkerRecord_" .. l_0_7) and not not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0" then
                 add_parents()
                 local l_0_18 = nil
                 local l_0_19 = nil
@@ -87,7 +87,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
                           local l_0_31 = nil
                           local l_0_32 = nil
                           local l_0_33 = nil
-                          local l_0_34 = (MpCommon.AnomalyEventLookup)(l_0_6.AnomalyTableName or "Appomaly_ChildProcName_CmdLine", "MarkerRecord_" .. l_0_7, 1)
+                          local l_0_34 = (MpCommon.AnomalyEventLookup)(l_0_6.AnomalyTableName or "Appomaly_ChildProcName_CmdLine_0", "MarkerRecord_" .. l_0_7, 1)
                           local l_0_35, l_0_36 = , (MpCommon.GetCurrentTimeT)()
                           if l_0_34 and l_0_34.Count then
                             local l_0_37 = l_0_7 .. ";" .. l_0_30 .. ";" .. (table.concat)(l_0_32, "|")

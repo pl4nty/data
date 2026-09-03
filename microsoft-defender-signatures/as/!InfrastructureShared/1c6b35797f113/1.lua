@@ -70,7 +70,7 @@ do
         local l_0_11 = nil
         if (MpCommon.IsSampled)(100000, true, true, true) then
           local l_0_12 = {TrackedProcess = l_0_1, SignatureName = "PFAppAnomalousOutbound.B", AnomalyTableName = "Appomaly_Network_HOST", Key = l_0_1 .. "_" .. l_0_9}
-          local l_0_13 = "Appomaly_Network_HOST"
+          local l_0_13 = "Appomaly_Network_HOST_0"
           local l_0_14, l_0_15, l_0_16 = , AnomalyTableCheck(l_0_13, l_0_1 .. "_" .. l_0_9, 30, "MarkerRecord_" .. l_0_1)
           if l_0_15 and not l_0_16 then
             l_0_12.processAttrib = l_0_6
@@ -83,7 +83,7 @@ do
           do
             local l_0_17 = nil
             local l_0_18 = nil
-            local l_0_19 = (MpCommon.AnomalyEventLookup)("Appomaly_Network_HOST", "MarkerRecord_" .. l_0_1, 1)
+            local l_0_19 = (MpCommon.AnomalyEventLookup)("Appomaly_Network_HOST_0", "MarkerRecord_" .. l_0_1, 1)
             local l_0_20 = nil
             -- DECOMPILER ERROR at PC227: Overwrote pending register: R12 in 'AssignReg'
 

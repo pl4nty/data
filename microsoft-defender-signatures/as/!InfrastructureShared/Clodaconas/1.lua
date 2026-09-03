@@ -3,12 +3,6 @@
 
 -- params : ...
 -- function num : 0
-for l_0_3,l_0_4 in pairs((Remediation.Threat).Resources) do
-  if l_0_4.Schema == "folder" then
-    Infrastructure_CleanRegistryUninstallLocation(l_0_4.Path)
-  end
-end
-Infrastructure_ClearALLDNS()
-;
-(Remediation.SetRebootRequired)()
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

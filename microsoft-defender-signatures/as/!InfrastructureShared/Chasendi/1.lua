@@ -3,13 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (sysio.RegOpenKey)("HKLM\\SYSTEM\\CurrentControlSet\\services\\Tcpip\\Parameters")
-if l_0_0 then
-  local l_0_1 = (sysio.GetRegValueAsString)(l_0_0, "DhcpNameServer")
-  if l_0_1 and (string.find)(l_0_1, "82.163.143.", 1, true) then
-    Infrastructure_ClearALLDNS()
-    ;
-    (Remediation.SetRebootRequired)()
-  end
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

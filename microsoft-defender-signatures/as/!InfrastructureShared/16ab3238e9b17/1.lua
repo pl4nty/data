@@ -52,7 +52,7 @@ do
       local l_0_9 = nil
       if (MpCommon.IsSampled)(100000, true, true, true) then
         local l_0_10 = {}
-        local l_0_11 = "Appomaly_ChildProcName_Server"
+        local l_0_11 = "Appomaly_ChildProcName_Server_0"
         local l_0_12, l_0_13, l_0_14 = , AnomalyTableCheck(l_0_11, l_0_8 .. "_" .. l_0_7, 30, "MarkerRecord_" .. l_0_5)
         if l_0_13 and not l_0_14 then
           add_parents()
@@ -80,7 +80,7 @@ do
                 do return mp.INFECTED end
                 local l_0_20 = nil
                 local l_0_21 = nil
-                local l_0_22 = (MpCommon.AnomalyEventLookup)("Appomaly_ChildProcName_Server", "MarkerRecord_" .. l_0_5, 1)
+                local l_0_22 = (MpCommon.AnomalyEventLookup)("Appomaly_ChildProcName_Server_0", "MarkerRecord_" .. l_0_5, 1)
                 local l_0_23 = nil
                 local l_0_24 = (MpCommon.GetCurrentTimeT)()
                 local l_0_25, l_0_26 = l_0_8 .. "_" .. l_0_7, nil

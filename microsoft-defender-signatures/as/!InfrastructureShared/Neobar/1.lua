@@ -3,18 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (Remediation.Threat).Name == "BrowserModifier:Win32/Neobar" then
-  local l_0_0 = (sysio.RegExpandUserKey)("HKCU\\Software\\Policies\\Microsoft\\Internet Explorer\\Infodelivery\\Restrictions")
-  if l_0_0 then
-    for l_0_4,l_0_5 in pairs(l_0_0) do
-      local l_0_6 = (sysio.RegOpenKey)(l_0_5)
-      if l_0_6 ~= nil then
-        (sysio.DeleteRegValue)(l_0_6, "UsePolicySearchProvidersOnly")
-      end
-    end
-  end
-  do
-    Infrastructure_CleanSearchByDisplayName("Gigabase")
-  end
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

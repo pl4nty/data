@@ -692,156 +692,158 @@ end
 
 AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
   -- function num : 0_4
+  local l_5_4 = 0
+  l_5_0 = l_5_0 + l_5_4
   if not l_5_2 then
     l_5_2 = 30
   end
   if l_5_2 == -1 then
     l_5_2 = 10950
   end
-  local l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-  if l_5_4 and l_5_4.TableAge then
-    l_5_4.TableAgeDays = l_5_4.TableAge / 1440 * 60
+  local l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
+  if l_5_5 and l_5_5.TableAge then
+    l_5_5.TableAgeDays = l_5_5.TableAge / 1440 * 60
   end
-  local l_5_5, l_5_6 = nil, nil
-  local l_5_7 = {}
-  l_5_7.AnomalyTableName = l_5_0
-  l_5_7.Key = l_5_1
-  local l_5_8, l_5_9 = GetCurrentPPID()
+  local l_5_6, l_5_7 = nil, nil
+  local l_5_8 = {}
+  l_5_8.AnomalyTableName = l_5_0
+  l_5_8.Key = l_5_1
+  local l_5_9, l_5_10 = GetCurrentPPID()
   do
     do
-      if l_5_4 and l_5_8 and l_5_9 ~= "HSTR" and l_5_4.Size > 9000 then
-        local l_5_10 = {}
-        l_5_10.TableInfo = l_5_4
-        l_5_10.AnomalyTableName = l_5_0
-        l_5_10.Record_Marker = l_5_3
-        l_5_10.Record = l_5_1
+      if l_5_5 and l_5_9 and l_5_10 ~= "HSTR" and l_5_5.Size > 9000 then
+        local l_5_11 = {}
+        l_5_11.TableInfo = l_5_5
+        l_5_11.AnomalyTableName = l_5_0
+        l_5_11.Record_Marker = l_5_3
+        l_5_11.Record = l_5_1
         ;
-        (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_SizeWarning", safeJsonSerialize(l_5_10))
+        (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_SizeWarning", safeJsonSerialize(l_5_11))
       end
       if l_5_3 then
-        local l_5_11 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_3, 1)
-        local l_5_12 = (MpCommon.GetCurrentTimeT)()
-        local l_5_13 = l_5_12
-        local l_5_14 = nil
-        if l_5_11 and l_5_11.Count then
-          l_5_13 = l_5_11.Count
-          l_5_14 = l_5_11.UnbiasedTime or 0
-          local l_5_15 = (l_5_12 - l_5_13) / 60
-          local l_5_16 = (l_5_14) / 60
-          local l_5_17 = l_5_15 / 1440
+        local l_5_12 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_3, 1)
+        local l_5_13 = (MpCommon.GetCurrentTimeT)()
+        local l_5_14 = l_5_13
+        local l_5_15 = nil
+        if l_5_12 and l_5_12.Count then
+          l_5_14 = l_5_12.Count
+          l_5_15 = l_5_12.UnbiasedTime or 0
+          local l_5_16 = (l_5_13 - l_5_14) / 60
+          local l_5_17 = (l_5_15) / 60
           local l_5_18 = l_5_16 / 1440
-          local l_5_19 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
-          if not l_5_19 then
-            if l_5_2 < l_5_18 then
-              l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
-              l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
-              return true, false, l_5_4
+          local l_5_19 = l_5_17 / 1440
+          local l_5_20 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
+          if not l_5_20 then
+            if l_5_2 < l_5_19 then
+              l_5_5.Marker_Days_Elapsed_ActualTime = l_5_18
+              l_5_5.Marker_Days_Elapsed_EventUnbiasedTime = l_5_19
+              return true, false, l_5_5
             else
-              l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
-              if not l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
-                l_5_7.Error = tostring(l_5_6) .. "; Failed to add a new event with marker"
+              l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
+              if not l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
+                l_5_8.Error = tostring(l_5_7) .. "; Failed to add a new event with marker"
                 ;
-                (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-                return true, true, l_5_7.Error
+                (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_Error", safeJsonSerialize(l_5_8))
+                return true, true, l_5_8.Error
               end
-              l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-              if l_5_4 then
-                l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
-                l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
+              l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
+              if l_5_5 then
+                l_5_5.Marker_Days_Elapsed_ActualTime = l_5_18
+                l_5_5.Marker_Days_Elapsed_EventUnbiasedTime = l_5_19
               end
-              return true, true, l_5_4
+              return true, true, l_5_5
             end
           else
-            local l_5_20 = l_5_19.Count
-            -- DECOMPILER ERROR at PC149: Overwrote pending register: R6 in 'AssignReg'
+            local l_5_21 = l_5_20.Count
+            -- DECOMPILER ERROR at PC151: Overwrote pending register: R7 in 'AssignReg'
 
-            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_20 + 1, 1)
-            if not l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
-              l_5_7.Error = tostring(l_5_6) .. "; Failed to update existing event with marker"
+            l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_21 + 1, 1)
+            if not l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
+              l_5_8.Error = tostring(l_5_7) .. "; Failed to update existing event with marker"
               ;
-              (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-              local l_5_21 = false
-              return l_5_21, l_5_17 < l_5_2, l_5_7.Error
+              (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_Error", safeJsonSerialize(l_5_8))
+              local l_5_22 = false
+              return l_5_22, l_5_18 < l_5_2, l_5_8.Error
             end
-            l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-            if l_5_4 then
-              l_5_4.Marker_Days_Elapsed_ActualTime = l_5_17
-              l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = l_5_18
+            l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
+            if l_5_5 then
+              l_5_5.Marker_Days_Elapsed_ActualTime = l_5_18
+              l_5_5.Marker_Days_Elapsed_EventUnbiasedTime = l_5_19
             end
-            local l_5_24 = false
-            return l_5_24, l_5_17 < l_5_2, l_5_4
+            local l_5_25 = false
+            return l_5_25, l_5_18 < l_5_2, l_5_5
           end
         else
-          l_5_13 = l_5_12
-          -- DECOMPILER ERROR at PC204: Overwrote pending register: R6 in 'AssignReg'
+          l_5_14 = l_5_13
+          -- DECOMPILER ERROR at PC206: Overwrote pending register: R7 in 'AssignReg'
 
-          l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_3, l_5_12, 1)
-          if l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
-            (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_7))
-            -- DECOMPILER ERROR at PC228: Overwrote pending register: R6 in 'AssignReg'
+          l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_3, l_5_13, 1)
+          if l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
+            (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_8))
+            -- DECOMPILER ERROR at PC230: Overwrote pending register: R7 in 'AssignReg'
 
-            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
+            l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           end
-          if not l_5_5 and l_5_8 and l_5_9 ~= "HSTR" then
-            l_5_7.Error = tostring(l_5_6) .. "; Failed to add a new event with marker for a new app"
+          if not l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
+            l_5_8.Error = tostring(l_5_7) .. "; Failed to add a new event with marker for a new app"
             ;
-            (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
-            return true, true, l_5_7.Error
+            (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_Error", safeJsonSerialize(l_5_8))
+            return true, true, l_5_8.Error
           end
-          l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-          if l_5_4 then
-            l_5_4.Marker_Days_Elapsed_ActualTime = 0
-            l_5_4.Marker_Days_Elapsed_EventUnbiasedTime = 0
+          l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
+          if l_5_5 then
+            l_5_5.Marker_Days_Elapsed_ActualTime = 0
+            l_5_5.Marker_Days_Elapsed_EventUnbiasedTime = 0
           end
-          return true, true, l_5_4
+          return true, true, l_5_5
         end
         return nil
       end
-      if l_5_4 and l_5_4.TableAge then
-        local l_5_27 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
-        local l_5_28 = l_5_4.TableAge / 1440 * 60
-        -- DECOMPILER ERROR at PC297: Overwrote pending register: R6 in 'AssignReg'
+      if l_5_5 and l_5_5.TableAge then
+        local l_5_28 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
+        local l_5_29 = l_5_5.TableAge / 1440 * 60
+        -- DECOMPILER ERROR at PC299: Overwrote pending register: R7 in 'AssignReg'
 
-        if l_5_4.TableAge < 1440 * l_5_2 then
-          if not l_5_27 then
-            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
+        if l_5_5.TableAge < 1440 * l_5_2 then
+          if not l_5_28 then
+            l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           else
-            -- DECOMPILER ERROR at PC309: Overwrote pending register: R6 in 'AssignReg'
+            -- DECOMPILER ERROR at PC311: Overwrote pending register: R7 in 'AssignReg'
 
-            l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_27.Count + 1, 1)
+            l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_28.Count + 1, 1)
           end
-          if l_5_5 then
-            l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
-            l_5_4.TableAgeDays = l_5_28
-            return l_5_27 == nil, true, l_5_4
+          if l_5_6 then
+            l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
+            l_5_5.TableAgeDays = l_5_29
+            return l_5_28 == nil, true, l_5_5
           else
-            l_5_7.Error = tostring(l_5_6) .. "; Table age."
-            if l_5_8 and l_5_9 ~= "HSTR" then
-              (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
+            l_5_8.Error = tostring(l_5_7) .. "; Table age."
+            if l_5_9 and l_5_10 ~= "HSTR" then
+              (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_Error", safeJsonSerialize(l_5_8))
             end
             return nil
           end
         elseif not (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1) then
-          l_5_4.TableAgeDays = l_5_28
-          return true, false, l_5_4
+          l_5_5.TableAgeDays = l_5_29
+          return true, false, l_5_5
         else
-          l_5_4.TableAgeDays = l_5_28
-          return false, false, l_5_4
+          l_5_5.TableAgeDays = l_5_29
+          return false, false, l_5_5
         end
       else
-        -- DECOMPILER ERROR at PC376: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC378: Overwrote pending register: R7 in 'AssignReg'
 
-        l_5_5 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
-        if l_5_5 then
-          if l_5_8 and l_5_9 ~= "HSTR" then
-            (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_7))
+        l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
+        if l_5_6 then
+          if l_5_9 and l_5_10 ~= "HSTR" then
+            (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_8))
           end
-          l_5_4 = (MpCommon.AnomalyTableLookup)(l_5_0)
+          l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
           return true, true, (MpCommon.AnomalyTableLookup)(l_5_0)
         else
-          l_5_7.Error = tostring(l_5_6) .. "; Failed to add a new record."
-          if l_5_8 and l_5_9 ~= "HSTR" then
-            (MpCommon.BmTriggerSig)(l_5_8, "AnomalyTable_Error", safeJsonSerialize(l_5_7))
+          l_5_8.Error = tostring(l_5_7) .. "; Failed to add a new record."
+          if l_5_9 and l_5_10 ~= "HSTR" then
+            (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTable_Error", safeJsonSerialize(l_5_8))
           end
           return nil
         end

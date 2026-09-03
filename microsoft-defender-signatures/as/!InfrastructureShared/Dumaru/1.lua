@@ -3,15 +3,6 @@
 
 -- params : ...
 -- function num : 0
-if (string.match)((Remediation.Threat).Name, "Dumaru") then
-  local l_0_0 = (sysio.RegOpenKey)("HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon")
-  if l_0_0 then
-    (sysio.SetRegValueAsString)(l_0_0, "Shell", "Explorer.exe")
-  end
-  ;
-  (Remediation.SetRebootRequired)()
-  if (string.match)((Remediation.Threat).Name, "Dumaru%.AN") then
-    Infrastructure_FixHostsFile()
-  end
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

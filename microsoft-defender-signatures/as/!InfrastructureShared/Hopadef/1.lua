@@ -3,20 +3,6 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = Infrastructure_GetEnvironmentPath("%common_desktop%")
-local l_0_1 = Infrastructure_GetEnvironmentPath("%appdata%")
-local l_0_2 = Infrastructure_GetEnvironmentPath("%programs%")
-local l_0_3 = Infrastructure_GetEnvironmentPath("%common_programs%")
-if l_0_0 then
-  (MpDetection.ScanResource)("folder://" .. l_0_0)
-end
-if l_0_1 then
-  (MpDetection.ScanResource)("folder://" .. l_0_1 .. "\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar")
-end
-if l_0_2 then
-  (MpDetection.ScanResource)("folder://" .. l_0_2)
-end
-if l_0_3 then
-  (MpDetection.ScanResource)("folder://" .. l_0_3)
-end
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 

@@ -3,10 +3,6 @@
 
 -- params : ...
 -- function num : 0
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\openas\\command", nil, "windowsfileopener.Dat", true)
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\opendlg\\command", nil, "windowsfileopener.Dat", true)
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\OpenWithSetDefaultOn\\command", nil, "windowsfileopener.Dat", true)
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\openas\\command", nil, "easyfileopener.Dat", true)
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\opendlg\\command", nil, "easyfileopener.Dat", true)
-Infrastructure_RestoreRegValueDataFromAnotherRegValueAsString("HKLM\\SOFTWARE\\Classes\\Unknown\\shell\\OpenWithSetDefaultOn\\command", nil, "easyfileopener.Dat", true)
+TrackPidAndTechniqueBM("BM", "TCmdDet", "CmdDetParent")
+return mp.INFECTED
 
