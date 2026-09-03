@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Scout (Frontier) Beta",
+    "downloadDescription": "Microsoft Scout (Frontier) Beta is an early, experimental experience. This desktop Al app helps you get work done",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Mac-0.23.779-x64-Installer.dmg",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Mac-0.23.779-x64-Installer.dmg",
+            "size": "387391990",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Mac-0.23.779-arm64-Installer.dmg",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Mac-0.23.779-arm64-Installer.dmg",
+            "size": "365939244",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Windows-0.23.779-arm64-Setup.exe",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Windows-0.23.779-arm64-Setup.exe",
+            "size": "315709352",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Windows-0.23.779-x64-Setup.exe",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Windows-0.23.779-x64-Setup.exe",
+            "size": "326132344",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Mac-0.23.788-arm64-Installer.dmg",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Mac-0.23.788-arm64-Installer.dmg",
+            "size": "365929630",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Mac-0.23.788-x64-Installer.dmg",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Mac-0.23.788-x64-Installer.dmg",
+            "size": "387431157",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Windows-0.23.788-arm64-Setup.exe",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Windows-0.23.788-arm64-Setup.exe",
+            "size": "315724632",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftScout-Windows-0.23.788-x64-Setup.exe",
+            "url": "https://download.microsoft.com/download/fdca9040-f9d8-4c38-96c6-a18064713d20/MicrosoftScout-Windows-0.23.788-x64-Setup.exe",
+            "size": "326147640",
+            "version": "0.23.774",
+            "datePublished": "8/20/2026 9:18:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Scout (Frontier) combines a conversational interface with controlled access to files, Microsoft 365, browser automation, and optional developer tools so users can complete everyday work tasks from a single experience. Use Microsoft Scout (Frontier) to proactively identify ways to take work off your plate. Configure habits and skills, and watch it flag potential issues and identify ways to keep work moving. In addition, use it to prepare for meetings, automate workflows, and perform browser-based tasks. Microsoft Scout (Frontier) supports user approval before external-facing actions such as sending email, posting Teams messages, updating calendar events, or running privileged operations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.23.774",
+    "detailsSection_file_name": [
+        "MicrosoftScout-Mac-0.23.779-x64-Installer.dmg",
+        "MicrosoftScout-Mac-0.23.779-arm64-Installer.dmg",
+        "MicrosoftScout-Windows-0.23.779-arm64-Setup.exe",
+        "MicrosoftScout-Windows-0.23.779-x64-Setup.exe",
+        "MicrosoftScout-Mac-0.23.788-arm64-Installer.dmg",
+        "MicrosoftScout-Mac-0.23.788-x64-Installer.dmg",
+        "MicrosoftScout-Windows-0.23.788-arm64-Setup.exe",
+        "MicrosoftScout-Windows-0.23.788-x64-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "369.4 MB",
+        "349.0 MB",
+        "301.1 MB",
+        "311.0 MB",
+        "349.0 MB",
+        "369.5 MB",
+        "301.1 MB",
+        "311.0 MB"
+    ],
+    "detailsSection_file_date": "8/20/2026",
+    "systemRequirementsSection": "<ul>\n<li>Your organization must be enrolled in the Microsoft Frontier program.</li>\n<li>An admin must opt in to Microsoft Scout (Frontier) and accept the applicable terms and conditions.</li>\n<li>You must be included in the Microsoft Frontier program access group for Microsoft Scout (Frontier).</li>\n<li>Intune must be enabled for the relevant managed devices.</li>\n<li>You must have permission to install desktop applications, unless the app is deployed by your admin.</li>\n<li>You must have an active GitHub Copilot Business or GitHub Copilot Enterprise subscription.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\n<li>On this page, click Download, then select the Microsoft Scout (Frontier) installer for your operating system.</li>\n<li>To save the download on your computer so that you can install it later, click Save.</li>\n<li>Run the installer and follow the setup prompts.</li>\n<li>Launch the Microsoft Scout (Frontier) application</li>\n<li>Sign in with your Microsoft 365 work or school account</li>\n<li>Sign in with your GitHub Copilot account</li>\n<li>If you face issues, contact your system administrator to ensure all system requirements have been met</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108786",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

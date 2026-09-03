@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Test - update",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "All_20260624092631.csv",
+            "url": "https://download.microsoft.com/download/1f61db81-7f99-487d-9d2a-a1ca7e6880c0/All_20260624092631.csv",
+            "size": "2261",
+            "version": "1",
+            "datePublished": "8/13/2026 11:45:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "877defbd-b8-31-report.txt",
+            "url": "https://download.microsoft.com/download/1f61db81-7f99-487d-9d2a-a1ca7e6880c0/877defbd-b8-31-report.txt",
+            "size": "13178",
+            "version": "1",
+            "datePublished": "8/13/2026 11:45:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "All_20260624092631.csv",
+        "877defbd-b8-31-report.txt"
+    ],
+    "detailsSection_file_size": [
+        "2.2 KB",
+        "12.9 KB"
+    ],
+    "detailsSection_file_date": "8/13/2026",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108787",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

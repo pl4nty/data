@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "test456",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "server.json",
+            "url": "https://download.microsoft.com/download/0b7ed0f2-7c6e-4f0d-971a-ec2fc11fb9af/testrsm.pdf",
+            "size": "2005",
+            "version": "123",
+            "datePublished": "8/26/2026 5:12:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "123",
+    "detailsSection_file_name": [
+        "server.json"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "8/26/2026",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "IBM AIX"
+    ],
+    "installInstructionSection": "tes",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108791",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

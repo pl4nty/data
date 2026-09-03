@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PCAssistInstaller",
+    "downloadDescription": "PCAssistInstaller redirect to Default Printer Partner Code PCA002",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PCAssistInstaller.exe",
+            "url": "https://download.microsoft.com/download/5260919b-43a5-4316-a64b-8720e234b947/PCAssistInstaller.exe",
+            "size": "71537880",
+            "version": "1",
+            "datePublished": "8/31/2026 11:53:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PCAssistInstaller redirect to Default Printer Partner Code PCA002",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PCAssistInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "68.2 MB"
+    ],
+    "detailsSection_file_date": "8/31/2026",
+    "systemRequirementsSection": "Windows 10, 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Double Click on Installer and follow the Instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108792",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

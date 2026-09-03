@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Entra Connect Health",
+    "downloadDescription": "This release improves security, cloud compatibility, installation reliability, and overall agent resilience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftEntraConnectHealthAgentSetup.exe",
+            "url": "https://download.microsoft.com/download/39504911-2ad8-4d55-a50e-48f2475556ae/MicrosoftEntraConnectHealthAgentSetup.exe",
+            "size": "12180888",
+            "version": "4.5.2614.0",
+            "datePublished": "8/13/2026 12:53:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Entra Connect Health Agent v4.5.2614.0 updates v4.5.2549.0 with security and reliability improvements, including TLS 1.2 enforcement, enhanced cloud configuration support, improved installation and registration workflows, and agent credential key-rotation capabilities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2614.0",
+    "detailsSection_file_name": [
+        "MicrosoftEntraConnectHealthAgentSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.6 MB"
+    ],
+    "detailsSection_file_date": "8/13/2026",
+    "systemRequirementsSection": "A supported Windows Server operating system with TLS 1.2 enabled, local administrator permissions for installation, and outbound HTTPS connectivity to the Microsoft Entra Connect Health service. The applicable Microsoft Entra workload must already be installed and configured.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the appropriate installer for your Microsoft Entra workload and run it as a local administrator. The installer supports upgrading an existing installation. Complete registration when prompted, then verify that the Microsoft Entra Connect Health Agent service is running.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108777",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
