@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaAppDomainManagerConfigBindingAM\1.luac 
+-- Command line: lua\!InfrastructureShared\!#LuaAppDomainMgrConfigBindingAM\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -266,12 +266,12 @@ end
           -- DECOMPILER ERROR at PC487: Confused about usage of register: R28 in 'UnsetPending'
 
           if l_0_62 then
-            (mp.set_mpattribute)("Lua:AppDomainManagerLoaderManaged.AM")
+            (mp.set_mpattribute)("Lua:AppDomainMgrLoaderManaged.AM")
           end
           -- DECOMPILER ERROR at PC493: Confused about usage of register: R29 in 'UnsetPending'
 
           if l_0_63 then
-            (mp.set_mpattribute)("Lua:AppDomainManagerLoaderNative.AM")
+            (mp.set_mpattribute)("Lua:AppDomainMgrLoaderNative.AM")
           end
           do return mp.INFECTED end
           -- DECOMPILER ERROR at PC502: freeLocal<0 in 'ReleaseLocals'

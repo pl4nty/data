@@ -23,6 +23,9 @@ end
 if elfhdr.phnum < 3 then
   return mp.CLEAN
 end
+if elfhdr.phoff < 0 or elfhdr.phnum < 0 or elfhdr.phentsize <= 0 or mp.HEADERPAGE_SZ < elfhdr.phoff or (mp.HEADERPAGE_SZ - elfhdr.phoff) / elfhdr.phentsize < elfhdr.phnum then
+  return mp.CLEAN
+end
 local l_0_11 = elfhdr.phoff + elfhdr.phnum * elfhdr.phentsize
 local l_0_12 = false
 local l_0_13 = false

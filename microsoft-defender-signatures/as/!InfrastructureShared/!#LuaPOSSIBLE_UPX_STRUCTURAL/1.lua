@@ -44,65 +44,80 @@ do
   if elfhdr.phoff ~= elfhdr.ehsize then
     return mp.CLEAN
   end
-  local l_0_15 = 4
-  local l_0_16 = 1685382481
-  local l_0_17 = 0
-  for l_0_21 = 1, elfhdr.phnum do
-    local l_0_22 = (ephdrs[l_0_21]).type
-    if l_0_22 == l_0_15 or l_0_22 == l_0_16 then
-      local l_0_23 = (ephdrs[l_0_21]).filesz
-      l_0_17 = l_0_17 + l_0_23 + (4 - l_0_23 % 4) % 4
+  if elfhdr.phoff < 0 or mp.HEADERPAGE_SZ < elfhdr.phoff or elfhdr.phnum < 0 or elfhdr.phentsize <= 0 or (mp.HEADERPAGE_SZ - elfhdr.phoff) / elfhdr.phentsize < elfhdr.phnum then
+    return mp.CLEAN
+  end
+  local l_0_15 = elfhdr.phoff + elfhdr.phnum * elfhdr.phentsize
+  local l_0_16 = 4
+  local l_0_17 = 1685382481
+  local l_0_18 = 0
+  for l_0_22 = 1, elfhdr.phnum do
+    local l_0_23 = (ephdrs[l_0_22]).type
+    if l_0_23 == l_0_16 or l_0_23 == l_0_17 then
+      local l_0_24 = (ephdrs[l_0_22]).filesz
+      if l_0_24 < 0 then
+        return mp.CLEAN
+      end
+      local l_0_25 = (4 - l_0_24 % 4) % 4
+      if mp.HEADERPAGE_SZ - l_0_18 < l_0_24 or mp.HEADERPAGE_SZ - l_0_18 - l_0_24 < l_0_25 then
+        return mp.CLEAN
+      end
+      l_0_18 = l_0_18 + l_0_24 + l_0_25
     end
   end
-  local l_0_24 = elfhdr.phoff + elfhdr.phnum * elfhdr.phentsize + (l_0_17) + 12
-  local l_0_25 = (string.byte)(elfhdr.ident, 6)
-  local l_0_26 = mp.FOOTERPAGE_SZ - 32 - 4 + 1
-  local l_0_27 = 80
-  local l_0_28 = l_0_26 - l_0_27
-  local l_0_29 = l_0_26
-  local l_0_30 = false
-  while 1 do
+  if mp.HEADERPAGE_SZ - (l_0_18) - 12 < l_0_15 then
+    return mp.CLEAN
+  end
+  local l_0_26 = l_0_15 + (l_0_18) + 12
+  local l_0_27 = (string.byte)(elfhdr.ident, 6)
+  local l_0_28 = mp.FOOTERPAGE_SZ - 32 - 4 + 1
+  local l_0_29 = 80
+  local l_0_30 = l_0_28 - l_0_29
+  local l_0_31 = l_0_28
+  local l_0_32 = false
+  local l_0_33, l_0_34, l_0_35, l_0_36 = nil, nil, nil, nil
+  if l_0_27 == l_0_1 then
+    l_0_36 = l_0_26 % 256
+    local l_0_37 = (l_0_26 - l_0_36) / 256
+    l_0_35 = l_0_37 % 256
+    l_0_37 = (l_0_37 - l_0_35) / 256
+    l_0_34 = l_0_37 % 256
+    l_0_33 = (l_0_37 - l_0_34) / 256
+  end
+  do
     while 1 do
-      if l_0_28 <= l_0_29 and not l_0_30 then
-        local l_0_31 = (mp.readu_u32)(footerpage, l_0_29 + 32)
-        if l_0_25 == l_0_1 then
-          local l_0_32 = l_0_31 % 256
-          l_0_31 = (l_0_31 - l_0_32) / 256
-          local l_0_33 = l_0_31 % 256
-          l_0_31 = (l_0_31 - l_0_33) / 256
-          local l_0_34 = l_0_31 % 256
-          l_0_31 = (l_0_31 - l_0_34) / 256
-          l_0_31 = l_0_32 * 16777216 + l_0_33 * 65536 + l_0_34 * 256 + l_0_31
-        end
-        do
-          if l_0_31 == l_0_24 and l_0_31 < l_0_0 then
-            l_0_30 = true
-            -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
+      while 1 do
+        if l_0_30 <= l_0_31 and not l_0_32 then
+          local l_0_38 = (mp.readu_u32)(footerpage, l_0_31 + 32)
+          -- DECOMPILER ERROR at PC241: Overwrote pending register: R21 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
+          if (((string.byte)(footerpage, l_0_31 + 32, l_0_31 + 35) == l_0_33 and footerpage == l_0_34 and l_0_31 + 32 == l_0_35 and l_0_31 + 35 == l_0_36) or l_0_38 == l_0_26) and l_0_26 < l_0_0 then
+            l_0_32 = true
+            -- DECOMPILER ERROR at PC248: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out DO_STMT
+            -- DECOMPILER ERROR at PC248: LeaveBlock: unexpected jumping out IF_STMT
 
-            -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            -- DECOMPILER ERROR at PC248: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-            -- DECOMPILER ERROR at PC171: LeaveBlock: unexpected jumping out IF_STMT
+            -- DECOMPILER ERROR at PC248: LeaveBlock: unexpected jumping out IF_STMT
 
           end
         end
       end
+      l_0_31 = l_0_31 - 1
     end
-    l_0_29 = l_0_29 - 1
-  end
-  do
     do
-      if l_0_30 then
-        local l_0_35 = l_0_26 - (l_0_29)
-        if l_0_35 > 0 then
-          (mp.set_mpattributeex)("Lua:POSSIBLE_UPX_STRUCTURAL_SHIFTED", l_0_35)
+      do
+        if l_0_32 then
+          local l_0_42 = l_0_28 - (l_0_31)
+          if l_0_42 > 0 then
+            (mp.set_mpattributeex)("Lua:POSSIBLE_UPX_STRUCTURAL_SHIFTED", l_0_42)
+          end
+          return mp.INFECTED
         end
-        return mp.INFECTED
+        do return mp.CLEAN end
+        -- DECOMPILER ERROR: 8 unprocessed JMP targets
       end
-      return mp.CLEAN
     end
   end
 end

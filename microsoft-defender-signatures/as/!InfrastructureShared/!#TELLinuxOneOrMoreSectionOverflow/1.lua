@@ -8,7 +8,7 @@ local l_0_1 = 0
 local l_0_2 = (mp.getfilesize)()
 for l_0_6 = 1, elfhdr.shnum do
   local l_0_7 = esec[l_0_6]
-  if l_0_7.type ~= l_0_0 and l_0_7.type ~= l_0_1 and (l_0_7.offset < 0 or l_0_7.size < 0 or l_0_2 < l_0_7.offset or l_0_2 < l_0_7.size or l_0_2 < l_0_7.offset + l_0_7.size) then
+  if l_0_7.type ~= l_0_0 and l_0_7.type ~= l_0_1 and (l_0_7.offset < 0 or l_0_7.size < 0 or l_0_2 < l_0_7.offset or l_0_2 - l_0_7.offset < l_0_7.size) then
     return mp.INFECTED
   end
 end
