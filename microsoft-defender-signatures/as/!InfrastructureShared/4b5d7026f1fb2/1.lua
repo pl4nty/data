@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\457d7b6b5d6a1\1.luac 
+-- Command line: lua\!InfrastructureShared\4b5d7026f1fb2\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -23,7 +23,7 @@ local l_0_3 = (string.lower)(l_0_2.image_path)
 if not (string.find)(l_0_3, "\\explorer.exe", 1, true) then
   return mp.CLEAN
 end
-local l_0_4 = GetRollingQueueKeys("IsClickFixCMD_Malicious")
+local l_0_4 = GetRollingQueueKeys("IsClickFixCMD")
 if l_0_4 == nil then
   return mp.CLEAN
 end
