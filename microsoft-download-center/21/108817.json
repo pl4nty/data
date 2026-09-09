@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2022 RTM CU26 (KB5122768)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2022 RTM CU26.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2022-KB5122768-x64.exe",
+            "url": "https://download.microsoft.com/download/d682ec86-56e1-45c3-a0fa-552f89f6e51e/SQLServer2022-KB5122768-x64.exe",
+            "size": "490445032",
+            "version": "16.0.4275.2",
+            "datePublished": "9/8/2026 1:38:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/><br />You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />For a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5122768",
+        "name": "KB5122768"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4275.2",
+    "detailsSection_file_name": [
+        "SQLServer2022-KB5122768-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "467.7 MB"
+    ],
+    "detailsSection_file_date": "9/8/2026",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2022 RTM instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2022 RTM Windows instances that have had a Cumulative Update applied.<br />After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB5122768",
+            "url": "https://support.microsoft.com/help/5122768"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108817",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
