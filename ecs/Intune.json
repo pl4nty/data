@@ -151,9 +151,6 @@
             "FlightValue": true
         }
     },
-    "CLI_iOSMAM": {
-        "24F26E34-46CE-45FE-8940-8E01486FD65A": true
-    },
     "CompanyPortal_Mac": {
         "2B87161D-55D5-49C4-AFE4-768F4FFDD2CF": true,
         "2FADA5F1-B626-4252-9D23-93DEBFFA25AA": true,
@@ -441,6 +438,7 @@
             "SLDMEnableEGATsCache": true,
             "SLDMEnableProtobufForEGATsCache": true,
             "UseEGATsForDPAs": true,
+            "UseEGATsForDPAsInCC": true,
             "enableCredentialProviderProperty": true
         }
     },
@@ -449,6 +447,7 @@
             "AutoACAlways": true,
             "DeviceInventoryReporting": true,
             "EnableAppleDdmLobApps": true,
+            "EnableDdmVppAppsBackend": true,
             "EnableVerifyRecoveryLock": true,
             "EnforceEdgeManifestSignatureValidation": true,
             "GetToken": true,
@@ -498,6 +497,7 @@
             "EnableSideCarPolicyResultEnqueueDedupe": true,
             "EnabledCustomComplianceForMacOS": true,
             "IgnorePCWithDifferentAADDeviceId": true,
+            "LocMsgScopeTagAuthZ": true,
             "MigratePartnerDeviceAttributeToMB": true,
             "NoFallback_AADSTS500022": true,
             "NoFallback_AADSTS5000224": true,
@@ -509,6 +509,7 @@
             "NoFallback_Directory_ResourceSizeExceeded": true,
             "NoFallback_MSGraphGetUserAsync": true,
             "NoFallback_OnAllException": true,
+            "NotificationPagination_GetAllPages": true,
             "RefreshPCWithDifferentAADDeviceId": true,
             "RequireIsManagedForGraphDeviceIsCompliantPatch": true,
             "SearchCompliancePartnerTenantItem": true,
@@ -561,6 +562,7 @@
             "BatchAzMonBGServiceFSICoreEnabled": true,
             "DeviceConfigurationPolicyStatusSummary": true,
             "ExportReportKustoFailureClassificationEnabled": true,
+            "ExportReportQueryFanoutEnabled": true,
             "HardwareConfigLogging": true,
             "LatencyTransparency": true,
             "NoMaterializeForFastSlowStreamMerge": true,
@@ -588,15 +590,11 @@
             "UseLKG_DetectedMalwareAggregate": false,
             "UseLKG_DetectedMalwareAggregateByState": false,
             "UseLKG_DeviceEncryptionStatusesDetailV3": false,
-            "UseLKG_DevicePoliciesComplianceReport": true,
             "UseLKG_DeviceRunStatesByScript": false,
-            "UseLKG_DeviceStatusByCompliacePolicyReport": true,
-            "UseLKG_DeviceStatusSummaryByCompliacePolicyReport": true,
             "UseLKG_EnrollmentActivityUser": false,
             "UseLKG_FailedAndPendingAppsByUserId": false,
             "UseLKG_InventoryPolicySettingDetailsDCv2v3": false,
             "UseLKG_PerSettingDeviceSummaryByInventoryPolicyV3": false,
-            "UseLKG_PolicyComplianceAggReport": true,
             "UseLKG_PolicySettingDetailsDCv2ver3": false,
             "UseLKG_RemediationRunSummary": false,
             "UseLKG_ScriptRunSummary": false
@@ -761,6 +759,7 @@
     },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
+            "DisableAIAUrlRetrieval": true,
             "EnableAttestationSessionCache": true,
             "EnableEccAikAttestation": true,
             "EnableReportingV2ForARSEnrollmentTopFailures": true,
@@ -768,6 +767,7 @@
             "EnrollDeviceActionAP": true,
             "EnrollDeviceActionNonAP": true,
             "FetchTrustedTpmCertificates": true,
+            "IncomingCertificateValidation": true,
             "RecoveryUserId": true,
             "ValidateEnrollmentKeyAttestation": true
         }
@@ -780,6 +780,7 @@
             "EnableAndroidForWorkDeviceTypeCheck": true,
             "EnableAppInstanceExHandling": true,
             "EnableBypassStatefulForAll": true,
+            "EnableBypassStatefulForMAMAction": true,
             "EnableBypassStatefulForMAMAppInst": true,
             "EnableMSGraphForCompliantApplicationsPatch": true,
             "EnableMamFilterWhatIfMode": true,
@@ -815,7 +816,8 @@
     },
     "SVC_OAuth": {
         "FlightingV2": {
-            "EnableCertReplacementBackgroundTask": true
+            "EnableCertReplacementBackgroundTask": true,
+            "EnforceExpiredCertificateChainValidation": true
         }
     },
     "SVC_Pivot": {
@@ -827,6 +829,7 @@
     },
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
+            "BatchPolicyDeviceReportFastStream": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
@@ -867,6 +870,11 @@
             "DisableLegacyODJConnector": true,
             "EnableLeastPrivilegedConnector": true,
             "EnableODJConnectorTelemetry": true
+        }
+    },
+    "SVC_RTNService": {
+        "FlightingV2": {
+            "EGMDirectPnsV2SidecarNotifications": true
         }
     },
     "SVC_Remediations": {
@@ -942,6 +950,7 @@
     "UX_AppLifecycle": {
         "FlightingV2": {
             "EnableAELOBAppCreation": true,
+            "EnableDdmVppAppsUX": true,
             "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
@@ -967,6 +976,7 @@
     "UX_Core": {
         "FlightingV2": {
             "AndroidEsimManagementUX": true,
+            "AutoEnableSingleDeviceReactView": true,
             "DeviceLifecycleAgentUI": true,
             "EnableGetSyncStatusUI": true,
             "EnableGetSyncStatusUI_iOS": true,
@@ -985,7 +995,6 @@
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true,
             "ExplorerAppsActionTile": true,
-            "ExplorerDcv2DeviceSummary": true,
             "HidePCAAndCRAFromAgentsL1": true,
             "UX_DisableAssociationMACRandomization": true,
             "UX_EnableIOSWiredNetwork": true

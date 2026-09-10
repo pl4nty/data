@@ -2594,6 +2594,870 @@
                     "datasetFamily": "tau2_telecom",
                     "datasetName": "tau2_telecom_inspectai",
                     "metrics": {
+                        "accuracy": 0.964912,
+                        "benchmark_run_cost_usd": 25.49,
+                        "total_input_tokens": 851086,
+                        "total_output_tokens": 300240,
+                        "total_reasoning_tokens": 39314
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.69982,
+                        "benchmark_run_cost_usd": 166.66,
+                        "total_input_tokens": 1350750,
+                        "total_output_tokens": 2054584,
+                        "total_reasoning_tokens": 1008454
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.936,
+                        "benchmark_run_cost_usd": 12.8,
+                        "total_input_tokens": 1047,
+                        "total_output_tokens": 201372,
+                        "total_reasoning_tokens": 54470
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.708066,
+                        "benchmark_run_cost_usd": 152.64,
+                        "total_input_tokens": 602619,
+                        "total_output_tokens": 2006441,
+                        "total_reasoning_tokens": 925776
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.869048,
+                        "benchmark_run_cost_usd": 5.45,
+                        "total_input_tokens": 119456,
+                        "total_output_tokens": 85011,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 10,
+                        "output_token_cost_per_1M_tokens": 50,
+                        "quality_benchmark_cost": 402.89,
+                        "total_cost_per_1M_tokens": 20
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "maas",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.949782,
+                        "benchmark_run_cost_usd": 7.65,
+                        "total_input_tokens": 189385,
+                        "total_output_tokens": 115040,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.787045,
+                        "benchmark_run_cost_usd": 26.64,
+                        "total_input_tokens": 261773,
+                        "total_output_tokens": 480507,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.905512,
+                        "benchmark_run_cost_usd": 17.74,
+                        "total_input_tokens": 133217,
+                        "total_output_tokens": 328151,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.918699,
+                        "benchmark_run_cost_usd": 3.15,
+                        "total_input_tokens": 108761,
+                        "total_output_tokens": 41266,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.873315,
+                        "benchmark_run_cost_usd": 4.71,
+                        "total_input_tokens": 310281,
+                        "total_output_tokens": 32213,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.930444,
+                        "benchmark_run_cost_usd": 15.2,
+                        "total_input_tokens": 336978,
+                        "total_output_tokens": 236679,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.990099,
+                        "benchmark_run_cost_usd": 3,
+                        "total_input_tokens": 228543,
+                        "total_output_tokens": 14273,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 0,
+                        "benchmark_run_cost_usd": 1.5,
+                        "total_input_tokens": 23191,
+                        "total_output_tokens": 25385,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0,
+                        "benchmark_run_cost_usd": 2.99,
+                        "total_input_tokens": 3382,
+                        "total_output_tokens": 59024,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 2.727273,
+                        "benchmark_run_cost_usd": 3.66,
+                        "total_input_tokens": 3877,
+                        "total_output_tokens": 72335,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "benchmark_run_cost_usd": 25.55,
+                        "f1": 0.883075,
+                        "total_input_tokens": 974818,
+                        "total_output_tokens": 315989,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.914286,
+                        "benchmark_run_cost_usd": 0.19,
+                        "total_input_tokens": 5689,
+                        "total_output_tokens": 2756,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.733333,
+                        "benchmark_run_cost_usd": 1.19,
+                        "total_input_tokens": 31169,
+                        "total_output_tokens": 17542,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.842105,
+                        "benchmark_run_cost_usd": 45.07,
+                        "total_input_tokens": 745273,
+                        "total_output_tokens": 752308,
+                        "total_reasoning_tokens": 0
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 63.69,
+                        "latency_mean_secs": 31.38,
+                        "latency_p50_secs": 31.38,
+                        "latency_p90_secs": 35.66,
+                        "latency_p95_secs": 37.33,
+                        "latency_p99_secs": 39.51,
+                        "latency_ttft_secs": 2.73,
+                        "throughput_gtps_token_count": 63.69,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 123.38,
+                        "time_between_tokens_secs": 1.82
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_maas",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "72",
+                    "num_of_inference_requests": "10",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "33:67",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.870981,
+                        "benchmark_run_cost_usd": 402.89,
+                        "index_metric": 0.870981
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.909091,
+                        "index_metric": 0.909091
+                    },
+                    "modelAssetId": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "modelName": "claude-fable-5-1",
+                    "modelVersion": "1"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azureml-anthropic/models/claude-fable-5-1/versions/1",
+                    "azure_latest_model_version": "1",
+                    "azure_model_name": "claude-fable-5-1",
+                    "azure_registry_name": "azureml-anthropic",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
                         "accuracy": 0.991228,
                         "benchmark_run_cost_usd": 25.28,
                         "total_input_tokens": 8446,
@@ -30008,6 +30872,870 @@
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-5/versions/2025-08-07",
                     "azure_latest_model_version": "2025-08-07",
                     "azure_model_name": "gpt-5",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
+                        "accuracy": 0.95614,
+                        "benchmark_run_cost_usd": 35.43,
+                        "total_input_tokens": 1174198,
+                        "total_output_tokens": 155745,
+                        "total_reasoning_tokens": 317946
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.735009,
+                        "benchmark_run_cost_usd": 170.31,
+                        "total_input_tokens": 600277,
+                        "total_output_tokens": 36866,
+                        "total_reasoning_tokens": 3249194
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.9,
+                        "benchmark_run_cost_usd": 13.11,
+                        "total_input_tokens": 299317,
+                        "total_output_tokens": 16427,
+                        "total_reasoning_tokens": 185991
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.651591,
+                        "benchmark_run_cost_usd": 73.51,
+                        "total_input_tokens": 547147,
+                        "total_output_tokens": 415325,
+                        "total_reasoning_tokens": 945358
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.922619,
+                        "benchmark_run_cost_usd": 15.33,
+                        "total_input_tokens": 88370,
+                        "total_output_tokens": 44274,
+                        "total_reasoning_tokens": 244599
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 10,
+                        "output_token_cost_per_1M_tokens": 50,
+                        "quality_benchmark_cost": 394.77,
+                        "total_cost_per_1M_tokens": 20
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.938841,
+                        "benchmark_run_cost_usd": 15.73,
+                        "total_input_tokens": 127145,
+                        "total_output_tokens": 46582,
+                        "total_reasoning_tokens": 242602
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.546075,
+                        "benchmark_run_cost_usd": 50.79,
+                        "total_input_tokens": 87432,
+                        "total_output_tokens": 150906,
+                        "total_reasoning_tokens": 847417
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.912162,
+                        "benchmark_run_cost_usd": 35.6,
+                        "total_input_tokens": 110001,
+                        "total_output_tokens": 95773,
+                        "total_reasoning_tokens": 594245
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.897638,
+                        "benchmark_run_cost_usd": 5.35,
+                        "total_input_tokens": 80788,
+                        "total_output_tokens": 14538,
+                        "total_reasoning_tokens": 76314
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.873016,
+                        "benchmark_run_cost_usd": 9.86,
+                        "total_input_tokens": 238004,
+                        "total_output_tokens": 17349,
+                        "total_reasoning_tokens": 132196
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.904714,
+                        "benchmark_run_cost_usd": 41.22,
+                        "total_input_tokens": 232615,
+                        "total_output_tokens": 121999,
+                        "total_reasoning_tokens": 655846
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.96875,
+                        "benchmark_run_cost_usd": 2.86,
+                        "total_input_tokens": 82431,
+                        "total_output_tokens": 2912,
+                        "total_reasoning_tokens": 37879
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1,
+                        "benchmark_run_cost_usd": 6.21,
+                        "total_input_tokens": 37114,
+                        "total_output_tokens": 15088,
+                        "total_reasoning_tokens": 101728
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0,
+                        "benchmark_run_cost_usd": 1.41,
+                        "total_input_tokens": 2062,
+                        "total_output_tokens": 4319,
+                        "total_reasoning_tokens": 23437
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 3.015075,
+                        "benchmark_run_cost_usd": 10.7,
+                        "total_input_tokens": 4304,
+                        "total_output_tokens": 36300,
+                        "total_reasoning_tokens": 176879
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "benchmark_run_cost_usd": 38.17,
+                        "f1": 0.867078,
+                        "total_input_tokens": 586343,
+                        "total_output_tokens": 60088,
+                        "total_reasoning_tokens": 585955
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.86378,
+                        "benchmark_run_cost_usd": 18.19,
+                        "total_input_tokens": 171650,
+                        "total_output_tokens": 9658,
+                        "total_reasoning_tokens": 319836
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.829208,
+                        "benchmark_run_cost_usd": 7.03,
+                        "total_input_tokens": 44232,
+                        "total_output_tokens": 3105,
+                        "total_reasoning_tokens": 128741
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.929257,
+                        "benchmark_run_cost_usd": 42.13,
+                        "total_input_tokens": 807620,
+                        "total_output_tokens": 13908,
+                        "total_reasoning_tokens": 667255
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 53.53,
+                        "latency_mean_secs": 36.32,
+                        "latency_p50_secs": 36.32,
+                        "latency_p90_secs": 41.16,
+                        "latency_p95_secs": 41.37,
+                        "latency_p99_secs": 41.53,
+                        "latency_ttft_secs": 1.77,
+                        "throughput_gtps_token_count": 53.53,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 82.83,
+                        "time_between_tokens_secs": 3.34
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "29",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "33:67",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.858934,
+                        "benchmark_run_cost_usd": 394.77,
+                        "index_metric": 0.858934
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 1.338358,
+                        "index_metric": 1.338358
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "modelName": "gpt-6-astra",
+                    "modelVersion": "2026-09-03"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
+                    "azure_latest_model_version": "2026-09-03",
+                    "azure_model_name": "gpt-6-astra",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
                     "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"

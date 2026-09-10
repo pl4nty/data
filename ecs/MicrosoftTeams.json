@@ -391,7 +391,7 @@
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_8.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_9.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_a.json",
-                    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_b.json",
+                    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets-snapshot/generateappcatalogv2-a46c0d4dc3f649f590dc414291b4d456/store_global_b.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_c.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_d.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_e.json",
@@ -470,6 +470,7 @@
                 "fetchGuestAllowedFromAcms": true,
                 "removeIsSkypeTeamsEnabled": false,
                 "servicePlansToActivate": [],
+                "servicePlansToActivateList": "29c62f1c-8ffc-4304-9cb9-398a6aa1852b",
                 "skipCrossTenantLicenseInFreemiumTenant": true
             }
         }
@@ -1341,6 +1342,8 @@
     },
     "TeamsCopilotAggregator_UserCtx": {
         "CustomerServiceCopilotRolloutFlags": {
+            "CustomerServiceSunsetDate": "2026-10-05",
+            "EnableAddSunsetBannerToNewTickets": true,
             "EnableBookings": true,
             "EnableDeletedTagDetection": true,
             "EnableSkillAuthenticationHardening": true,
@@ -1378,6 +1381,7 @@
             "EnableHumanInTheLoopApprovalFlow": true,
             "EnableImageUnderstanding": false,
             "EnableLIFTUserVoiceQuerySignal": true,
+            "EnableLiftHitl": true,
             "EnableLiftPropertiesCache": true,
             "EnableLiftTrigger": true,
             "EnableLocalizedAskFacilitator": true,
@@ -1461,6 +1465,12 @@
             "EnableSMBAgentHardening": true
         },
         "SkillConfig": {
+            "AgendaLiftIntegration": [
+                {
+                    "Flight": "LIFT.enableTeamsMeetingAgendaSkill",
+                    "IsEnabled": true
+                }
+            ],
             "ChainOfThoughts-InMessage": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableChainOfThoughts",
@@ -1489,6 +1499,12 @@
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableResponseRephrasingService",
                     "IsEnabled": false
+                }
+            ],
+            "DocGenCAOnlineEval": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.CreateAgent.TeamsDocGenDataFlywheel",
+                    "IsEnabled": true
                 }
             ],
             "DynamicSkillOptimization": [
@@ -4695,6 +4711,8 @@
         }
     },
     "TeamsNotificationFilteringService": {
+        "ECSAuthForEDL": true,
+        "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
     "TeamsTMIS": {
@@ -4739,7 +4757,8 @@
         "MeetingCreationCutTimeUtcForFallbackToMSAI": "2024-11-01",
         "PPTReactionDataExpireInHours": 20,
         "SubstrateParallelRequestSize": 2,
-        "SupportedThreadIdFormatInSignal": "^((.+)@thread.v2)|((.+)@thread.tacv2)|((.+)@thread.skype)|((.+)@unq.gbl.spaces)|((.+)preview(.+))$"
+        "SupportedThreadIdFormatInSignal": "^((.+)@thread.v2)|((.+)@thread.tacv2)|((.+)@thread.skype)|((.+)@unq.gbl.spaces)|((.+)preview(.+))$",
+        "UseSdsClientSdk": true
     },
     "TeamsVerticalsEngageExperience": {},
     "TeamsVerticalsFLWService": {
@@ -5939,6 +5958,13 @@
                 "Enabled": false
             }
         },
+        "BotEditMessage": {
+            "Enabled": "true",
+            "EnabledBotIds": [
+                "28:3914e2ec-62b6-4dec-96c1-5710a9c532ef",
+                "28:3cf96df7-3ecf-460a-a065-d1ca251969e4"
+            ]
+        },
         "CNS": {
             "ChannelMentionSettings": {
                 "Enabled": false
@@ -5979,6 +6005,9 @@
             }
         },
         "ChatService": {
+            "ClumpId": {
+                "Enabled": true
+            },
             "PatchActivity": {
                 "Enabled": true
             }
@@ -6099,6 +6128,14 @@
         },
         "FallbackToCSIfInvalidRosterVersion.Enabled": true,
         "FavoriteFeatureGradualRolloutExperimentEnabled": 1,
+        "Follow": {
+            "Keyword": {
+                "Enabled": false
+            },
+            "Topic": {
+                "Enabled": false
+            }
+        },
         "HashCode": {
             "ReturnHashForActivityApiActivity": true,
             "ReturnHashForChatActivity": true,
@@ -6139,6 +6176,18 @@
         "Notify": {
             "TFL": {
                 "TenantId": "9188040d-6c67-4c5b-b112-36a304b66dad"
+            }
+        },
+        "OutOfMaze": {
+            "Enabled": true,
+            "GroupChat": {
+                "Enabled": false
+            },
+            "SystemRule": {
+                "Enabled": true
+            },
+            "UserRule": {
+                "Enabled": false
             }
         },
         "PercentageLogged": {
@@ -6204,7 +6253,16 @@
             "ACLCheckAPIEnabled": true
         },
         "Slices": {
+            "MentionsActivityCreator": {
+                "Enabled": true
+            },
+            "SavedStream": {
+                "Enabled": true
+            },
             "TagMentionsActivityCreator": {
+                "Enabled": true
+            },
+            "ThreadsStream": {
                 "Enabled": true
             }
         },

@@ -253,102 +253,6 @@
     "LLMProxy": {
         "EnabledModels": [
             {
-                "context_window": 1000000,
-                "id": "claude-opus-5",
-                "name": "Claude Opus 5",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-opus-4.8",
-                "name": "Claude Opus 4.8",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-opus-4.7",
-                "name": "Claude Opus 4.7",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-opus-4.6",
-                "name": "Claude Opus 4.6",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-sonnet-5",
-                "name": "Claude Sonnet 5",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-sonnet-4.6",
-                "name": "Claude Sonnet 4.6",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 200000,
-                "id": "claude-haiku-4.5",
-                "name": "Claude Haiku 4.5",
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
                 "context_window": 1050000,
                 "id": "gpt-5.6-sol",
                 "name": "GPT-5.6 Sol",
@@ -525,6 +429,10 @@
             {
                 "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
                 "scenario": "CodeTab"
+            },
+            {
+                "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+                "scenario": "CodeTab"
             }
         ]
     },
@@ -592,7 +500,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260817.3.0",
+        "LpcVersion": "1.20260830.10.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -757,6 +665,8 @@
         "CmkTenantList": [
             "c27d9064-898a-49e6-a302-45537791c332"
         ],
+        "ConsumerMeteringScenarioBySku": "{\"FREE\":\"1edf4515-5db6-4f0b-b300-65079bfff4ab\",\"CFQ7TTC0TS2G\":\"93737c31-a5f8-4051-923b-191b44e67ecf\",\"CFQ7TTC0TS2G_Family\":\"04e53322-f8b3-468c-b277-b524b4d285d7\",\"CFQ7TTC125M7\":\"ef8774dd-aef9-492d-9e54-8c7fbbb13d65\",\"CFQ7TTC0MNTQ\":\"ef8774dd-aef9-492d-9e54-8c7fbbb13d65\",\"CFQ7TTBZZ8RD\":\"50a75b37-b542-4efd-a5c5-519ffbfaed59\"}",
+        "ConsumerMeteringSkill": "LlmProxyConsumer",
         "DecoratedProfileLookupBatchSize": 10,
         "DisableBizchatCreateUploadSession": true,
         "DisableDisplayNameInConversationQuery": true,
@@ -963,6 +873,8 @@
         "EnableKnowYourTeamAdminPromptApi": true,
         "EnableKnowYourTeamCopilotSettingsApi": true,
         "EnableLlmInsights": false,
+        "EnableLlmProxyConsumerMetering": true,
+        "EnableLlmProxyConsumerServing": true,
         "EnableLokiOdspTempAuthPreviewMitigation": true,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableM365AdminConsumption": true,
@@ -981,6 +893,7 @@
         "EnableOrgChartDataProviderConcurrencyLimit": true,
         "EnableOrgExplorerPeopleInsightsFromPps": false,
         "EnablePapiCallsWithForceSync": true,
+        "EnablePassportForLlmApi": true,
         "EnablePeopleCardCombinedActionsFilterForPps": true,
         "EnablePeopleCardPoweredBy3S": true,
         "EnablePeopleCardPoweredByPps": false,
@@ -999,6 +912,7 @@
         "EnableRecommendedBrandsPanel": true,
         "EnableRedirectOnTopLevelDomain": false,
         "EnableRefactoredDummyProvider": false,
+        "EnableReorderingVivaSkills": true,
         "EnableSdsEndpoints": false,
         "EnableSdsItemExpiration": true,
         "EnableSdsPrime_BizChatOnboardingSignalSdsProvider": true,
@@ -1016,6 +930,7 @@
         "EnableSdsPrime_UserAssociationsService": true,
         "EnableSdsPrime_UserDefinedPivotProvider": true,
         "EnableSecurityLogs": true,
+        "EnableSequentialAddOrUpdateVivaSkills": true,
         "EnableSignalsEndpoint": true,
         "EnableSortingByRingableHighlights": false,
         "EnableSplitSignalPropagationForUserActions": true,
@@ -1032,6 +947,7 @@
         "EnableVivaSkillsDataExportProvider": true,
         "EnableVivaSkillsInLPE": true,
         "EnableVivaTopicsUserResolution": true,
+        "EnableWorkflowModelAccess": true,
         "ExcludedPropertyBagKeys": [],
         "ExperimentalFieldsForSetOfUsersInMsitEnabled": false,
         "ExtendedUserInfoCacheTtl": "1d",
@@ -1397,6 +1313,8 @@
             "useProfileInformationQuery",
             "useUserActivityPromptsQuery",
             "useGetUserSkillDashboardQuery",
+            "useChatPoweredCardDataQuery",
+            "ChatPoweredCardSection_ChatPoweredCardDataQuery",
             "GetRecommendedFiles",
             "GetPickerFiles",
             "MemoriesAll",
@@ -1524,6 +1442,81 @@
         "LinkedInAuthRedirectUrl": "https://loki.delve.office.com/linkedInAuthRedirect.aspx",
         "LinkedInLpsUrl": "https://lps.loki.delve.office.com:444",
         "LinkedInMsGraphUrl": "https://graph.microsoft.com/",
+        "LlmProxyWorkflowModelAccess_Version": 1,
+        "LlmProxyWorkflowModelAccess_Workflows": {
+            "CodeTab": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ]
+                }
+            },
+            "GitHubCopilot": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ]
+                }
+            }
+        },
         "LogDarkFeedItemCount": false,
         "LokiAppIdAppAssertedSpo": "394866fc-eedb-4f01-8536-3ff84b16be2a",
         "LokiNotification": true,
@@ -1882,6 +1875,7 @@
         "SuggestedWorkingHoursInsightFilterSettings": "ConfidenceThreshold:0.44,WindowMinLengthThreshold:6.0,WindowMaxLengthThreshold:12.0,TimespanDiffThreshold:0.5",
         "SuggestedWorkingHoursInsightRetrieverMode": "Enabled",
         "SuggestedWorkingHoursNudgeInsightRetrieverCallMyAnalytics": false,
+        "SuppressLlmMetadataHeadersWhenPassportPresent": false,
         "SydneyProviderAllowList_ClientFeatures": [
             "AnalystAgent",
             "ResearcherAgent",
@@ -1953,6 +1947,32 @@
         "Watchdog_ThreadPoolQueueFailurePercentage": 10,
         "Watchdog_ThreadPoolQueueThreshold": 100,
         "WebSocketSettings_MaxConnectionLifetimeInMinutes": 720,
+        "WorkflowMappings": [
+            {
+                "appId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
+                "workflow": "GitHubCopilot"
+            },
+            {
+                "appId": "ea31b3ac-3225-4c75-b81e-34e3091871d5",
+                "workflow": "GitHubCopilot"
+            },
+            {
+                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
+                "workflow": "CodeTab"
+            }
+        ],
         "WorkingHoursLogOutboundHistogram": false,
         "WorkingHoursOutboundCallMaxRetries": 3,
         "WorkingHoursOutboundCallRetryDelayInMilliseconds": 500,

@@ -18,6 +18,7 @@
         "EnableBrowserSso": "true",
         "EnableDcfInBroker": true,
         "ForceBrokerDiscoveryEnabledForIntune": true,
-        "TelemetrySamplingRate": 0.25
+        "TelemetrySamplingRate": 0.25,
+        "ValidateSilentCaller": false
     }
 }

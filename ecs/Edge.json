@@ -42,21 +42,6 @@
                 }
             ]
         },
-        "EntityExtractionDeepEEENModelRefreshJune2026": {
-            "enableFeatures": [
-                "msEEOnnxVersionOverride"
-            ],
-            "parameters": [
-                {
-                    "name": "Version",
-                    "value": "3.2.3"
-                },
-                {
-                    "name": "Prerelease",
-                    "value": "A"
-                }
-            ]
-        },
         "FeatureFlagRefactorExperiment": {
             "enableFeatures": [
                 "msNurturingFeatureFlagRefactor"

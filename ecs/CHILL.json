@@ -1391,7 +1391,7 @@
     "ChillHarmony": {
         "Floodgate_Campaign_Harmony.09032fe4-85e7-4331-ae13-3df61f06d8e3": {
             "CampaignId": "09032fe4-85e7-4331-ae13-3df61f06d8e3",
-            "EndTimeUtc": "2026-09-18T07:00:00Z",
+            "EndTimeUtc": "2026-11-06T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1479,7 +1479,7 @@
         },
         "Floodgate_Campaign_Harmony.19e97f6c-a020-4f5a-a189-1618a52d2b00": {
             "CampaignId": "19e97f6c-a020-4f5a-a189-1618a52d2b00",
-            "EndTimeUtc": "2026-09-18T07:00:00Z",
+            "EndTimeUtc": "2026-11-06T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1644,7 +1644,7 @@
         },
         "Floodgate_Campaign_Harmony.e675cbd9-6799-406a-b5fe-09c7deef3e92": {
             "CampaignId": "e675cbd9-6799-406a-b5fe-09c7deef3e92",
-            "EndTimeUtc": "2026-09-18T07:00:00Z",
+            "EndTimeUtc": "2026-11-06T08:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1798,80 +1798,6 @@
                     "variables": {
                         "surveyPickerB": true
                     }
-                }
-            }
-        }
-    },
-    "ChillManageRewards": {
-        "Floodgate_Campaign_ManageRewards.5c4abe57-3f28-45f4-9931-726fe0875119": {
-            "CampaignId": "5c4abe57-3f28-45f4-9931-726fe0875119",
-            "EndTimeUtc": "2026-09-01T07:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 604800,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 604800,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 25,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-10-22T07:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "InitialVNextFeedback",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Very satisfied",
-                                        "Satisfied",
-                                        "Neutral",
-                                        "Dissatisfied",
-                                        "Very Dissatisfied"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How would you rate this new experience?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "What additional feedback do you have?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/5c4abe57-3f28-45f4-9931-726fe0875119/e6d3356e-1e35-4804-ad6b-3fa3b542c13a/Web-ManageRewards/",
-                    "variables": {}
                 }
             }
         }
@@ -2181,7 +2107,7 @@
     "ChillNexusInteractiveAI": {
         "Floodgate_Campaign_Dynamics365FinanceandOperations.d8b3a33a-a708-497a-b248-27a9b98faa76": {
             "CampaignId": "d8b3a33a-a708-497a-b248-27a9b98faa76",
-            "EndTimeUtc": "2026-10-09T07:00:00Z",
+            "EndTimeUtc": "2026-10-30T07:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3518,7 +3444,7 @@
         },
         "Floodgate_Campaign_SharePoint.83384bc2-8bc8-4738-bb5e-0b05e181a988": {
             "CampaignId": "83384bc2-8bc8-4738-bb5e-0b05e181a988",
-            "EndTimeUtc": "2026-09-25T07:00:00Z",
+            "EndTimeUtc": "2026-10-30T16:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

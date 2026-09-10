@@ -2849,7 +2849,20 @@
         "OmniMind.node-ai",
         "NFoundation.terraform-ai",
         "vuesnippetsai.vue-snippets-ai",
-        "GPTOnce.codepilot-vscode"
+        "GPTOnce.codepilot-vscode",
+        "donotinstallthis.rust-osascript",
+        "zhangleilei.magic-coding",
+        "zhangleilei.vscode-prefix-log",
+        "renovate12.renovate",
+        "chenyn.zonst-lua-helper",
+        "onionRunning.tank",
+        "onionRunning.cxkPlayBall",
+        "onionRunning.talker",
+        "onionRunning.connect",
+        "Aiiisaka.git-guardian",
+        "geecode.geecode-python",
+        "xiaoqixilihulu.lingxi-coder",
+        "xiaoqixilihulu.lingxi-zhimao"
     ],
     "migrateToPreRelease": {
         "HashiCorp.terraform-preview": {
