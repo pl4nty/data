@@ -112,7 +112,40 @@ end
       local l_0_10 = (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).command_line or ""
       do
         local l_0_12 = nil
+        -- DECOMPILER ERROR at PC99: Confused about usage of register: R11 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC104: Confused about usage of register: R11 in 'UnsetPending'
+
+        -- DECOMPILER ERROR at PC109: Confused about usage of register: R11 in 'UnsetPending'
+
         if l_0_6 ~= nil then
+          if l_0_6 == "/tmp/.bash_history" and ((function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("-bash") or (function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("su - root")) and ((function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("unix_chkpwd") or (function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("/usr/bin/xauth")) then
+            return mp.CLEAN
+          end
           if ((string.find)(l_0_6, "/tmp/body.", 1, true) or (string.find)(l_0_6, "/tmp/sh-thd-", 1, true)) and (function(l_6_0)
   -- function num : 0_5
   local l_6_1, l_6_2 = pcall(MpCommon.AtomicCounterValue, l_6_0)
@@ -126,7 +159,9 @@ end
 )("linux_ssh_tmp_benign_active") then
             return mp.CLEAN
           end
-          if ((string.find)(l_0_6, "/tmp/hsperfdata_amssys/", 1, true) or (string.find)(l_0_6, "/tmp/output_fileSsh.tmp.", 1, true)) and (function(l_5_0)
+          -- DECOMPILER ERROR at PC197: Confused about usage of register: R11 in 'UnsetPending'
+
+          if ((string.find)(l_0_6, "/tmp/hsperfdata_amssys/", 1, true) or (string.find)(l_0_6, "/tmp/output_fileSsh.tmp.", 1, true) or (string.find)(l_0_6, "/tmp/ams_replicate_running", 1, true) or (string.find)(l_0_6, "/tmp/statusSsh.tmp.", 1, true) or (string.find)(l_0_6, "/tmp/slavestatus.", 1, true) or (string.find)(l_0_6, "/tmp/site_xml_temp", 1, true)) and (function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
   if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
     return l_0_7(l_5_0)
@@ -135,7 +170,61 @@ end
 )("amsapp_appserver.sh") then
             return mp.CLEAN
           end
-          -- DECOMPILER ERROR at PC153: Confused about usage of register: R11 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC214: Confused about usage of register: R11 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC219: Confused about usage of register: R11 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC224: Confused about usage of register: R12 in 'UnsetPending'
+
+          if (string.find)(l_0_6, "/tmp/ab_proc/", 1, true) and ((function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("/app/abInitio_bin/") or (function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("/app/abInitio_work/") or (function(l_6_0)
+  -- function num : 0_5
+  local l_6_1, l_6_2 = pcall(MpCommon.AtomicCounterValue, l_6_0)
+  do
+    do return not l_6_1 or l_6_2 ~= nil end
+    -- DECOMPILER ERROR at PC12: freeLocal<0 in 'ReleaseLocals'
+
+    -- DECOMPILER ERROR: 2 unprocessed JMP targets
+  end
+end
+)("linux_ssh_tmp_benign_active")) then
+            return mp.CLEAN
+          end
+          -- DECOMPILER ERROR at PC241: Confused about usage of register: R11 in 'UnsetPending'
+
+          -- DECOMPILER ERROR at PC246: Confused about usage of register: R12 in 'UnsetPending'
+
+          if (string.find)(l_0_6, ".cgm", 1, true) and ((function(l_5_0)
+  -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
+  if not (string.find)(l_0_11, l_5_0, 1, true) and not (string.find)(l_0_r10, l_5_0, 1, true) then
+    return l_0_7(l_5_0)
+  end
+end
+)("check_tcp.sh") or (function(l_6_0)
+  -- function num : 0_5
+  local l_6_1, l_6_2 = pcall(MpCommon.AtomicCounterValue, l_6_0)
+  do
+    do return not l_6_1 or l_6_2 ~= nil end
+    -- DECOMPILER ERROR at PC12: freeLocal<0 in 'ReleaseLocals'
+
+    -- DECOMPILER ERROR: 2 unprocessed JMP targets
+  end
+end
+)("linux_ssh_tmp_benign_active")) then
+            return mp.CLEAN
+          end
+          -- DECOMPILER ERROR at PC263: Confused about usage of register: R11 in 'UnsetPending'
 
           if (string.find)(l_0_6, "/tmp/body.", 1, true) and (function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
@@ -146,7 +235,7 @@ end
 )("sftp_test_sap") then
             return mp.CLEAN
           end
-          -- DECOMPILER ERROR at PC170: Confused about usage of register: R11 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC280: Confused about usage of register: R11 in 'UnsetPending'
 
           if (string.find)(l_0_6, "/tmp/cft", 1, true) and (function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
@@ -157,7 +246,7 @@ end
 )("sftp_test_sap") then
             return mp.CLEAN
           end
-          -- DECOMPILER ERROR at PC187: Confused about usage of register: R11 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC297: Confused about usage of register: R11 in 'UnsetPending'
 
           if (string.find)(l_0_6, "/tmp/runAllScripts.tmp", 1, true) and (function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_11, l_0_r10, l_0_7
@@ -172,7 +261,7 @@ end
         addRelatedProcess()
         reportRelatedBmHits()
         do return mp.INFECTED end
-        -- DECOMPILER ERROR at PC202: freeLocal<0 in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC312: freeLocal<0 in 'ReleaseLocals'
 
         -- WARNING: undefined locals caused missing assignments!
       end

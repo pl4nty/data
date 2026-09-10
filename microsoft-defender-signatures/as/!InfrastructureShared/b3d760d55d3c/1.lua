@@ -18,6 +18,7 @@ if l_0_0.image_path ~= nil then
   l_0_3["integrator.exe"] = true
   l_0_3["zuum.exe"] = true
   l_0_3["alertusdesktopservice.exe"] = true
+  l_0_3["officesvcmgr.exe"] = true
   if l_0_3[l_0_2] then
     return mp.CLEAN
   end
