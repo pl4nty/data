@@ -9,20 +9,28 @@ if (string.sub)(l_0_0, -4) ~= ".exe" and (string.sub)(l_0_0, -4) ~= ".msi" then
 end
 local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_2 = {}
--- DECOMPILER ERROR at PC76: No list found for R2 , SetList fails
+-- DECOMPILER ERROR at PC88: No list found for R2 , SetList fails
 
--- DECOMPILER ERROR at PC77: Overwrote pending register: R3 in 'AssignReg'
+-- DECOMPILER ERROR at PC89: Overwrote pending register: R3 in 'AssignReg'
 
--- DECOMPILER ERROR at PC78: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC90: Overwrote pending register: R4 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC91: Overwrote pending register: R5 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC92: No list found for R2 , SetList fails
+
+-- DECOMPILER ERROR at PC93: Overwrote pending register: R3 in 'AssignReg'
+
+-- DECOMPILER ERROR at PC94: Overwrote pending register: R4 in 'AssignReg'
 
 for l_0_6,l_0_7 in ("\\avecto\\privilege guard client\\")("\\system32\\pmlauncher.exe") do
-  -- DECOMPILER ERROR at PC81: Overwrote pending register: R8 in 'AssignReg'
+  -- DECOMPILER ERROR at PC97: Overwrote pending register: R8 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC83: Overwrote pending register: R9 in 'AssignReg'
+  -- DECOMPILER ERROR at PC99: Overwrote pending register: R9 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC84: Overwrote pending register: R10 in 'AssignReg'
+  -- DECOMPILER ERROR at PC100: Overwrote pending register: R10 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC85: Overwrote pending register: R11 in 'AssignReg'
+  -- DECOMPILER ERROR at PC101: Overwrote pending register: R11 in 'AssignReg'
 
   if (("\\desktopcentral_agent\\edr\\").find)("\\manageengine\\uems_agent\\devicecontrol\\", "\\manageengine\\uems_agent\\appctrl\\", "\\manageengine\\uems_agent\\bitlockermgmt\\", true) then
     return mp.CLEAN
@@ -126,35 +134,35 @@ end
   return mp.CLEAN
 end
 local l_0_15 = nil
--- DECOMPILER ERROR at PC192: Overwrote pending register: R13 in 'AssignReg'
+-- DECOMPILER ERROR at PC208: Overwrote pending register: R13 in 'AssignReg'
 
 local l_0_16 = l_0_8 .. "+empty"
--- DECOMPILER ERROR at PC200: Confused about usage of register: R11 in 'UnsetPending'
+-- DECOMPILER ERROR at PC216: Confused about usage of register: R11 in 'UnsetPending'
 
 if l_0_16 == nil or l_0_16 == "" or l_0_8 .. "+" .. "\\manageengine\\uems_agent\\compliance\\" == nil or l_0_8 .. "+" .. "\\manageengine\\uems_agent\\compliance\\" == "" then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC208: Overwrote pending register: R14 in 'AssignReg'
+-- DECOMPILER ERROR at PC224: Overwrote pending register: R14 in 'AssignReg'
 
--- DECOMPILER ERROR at PC209: Overwrote pending register: R15 in 'AssignReg'
+-- DECOMPILER ERROR at PC225: Overwrote pending register: R15 in 'AssignReg'
 
--- DECOMPILER ERROR at PC210: Overwrote pending register: R16 in 'AssignReg'
+-- DECOMPILER ERROR at PC226: Overwrote pending register: R16 in 'AssignReg'
 
--- DECOMPILER ERROR at PC212: Overwrote pending register: R17 in 'AssignReg'
+-- DECOMPILER ERROR at PC228: Overwrote pending register: R17 in 'AssignReg'
 
 local l_0_17 = nil
 do
-  local l_0_18 = (crypto.CRC32Buffer)(-1, "\\manageengine\\uems_agent\\client-data\\vulnerable-resources\\", "\\manageengine\\uems_agent\\bin\\compvulndetection.exe", (("\\manageengine\\uems_agent\\bin\\secaddoncrashanalyser.exe").len)("\\manageengine\\adauditplusagent\\"))
+  local l_0_18 = (crypto.CRC32Buffer)(-1, "\\manageengine\\uems_agent\\client-data\\vulnerable-resources\\", "\\manageengine\\uems_agent\\dcconfig.exe", (("\\manageengine\\uems_agent\\bin\\compvulndetection.exe").len)("\\manageengine\\uems_agent\\bin\\secaddoncrashanalyser.exe"))
   if l_0_18 == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == "" then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC241: Overwrote pending register: R18 in 'AssignReg'
+  -- DECOMPILER ERROR at PC257: Overwrote pending register: R18 in 'AssignReg'
 
-  if (MpCommon.NidSearch)(l_0_10, l_0_18) == true and l_0_10 == l_0_11 and ((MpCommon.SNidSearch)(l_0_10, "\\zoho corp\\adselfservice plus client software\\") ~= true or l_0_10 ~= l_0_11) then
+  if (MpCommon.NidSearch)(l_0_10, l_0_18) == true and l_0_10 == l_0_11 and ((MpCommon.SNidSearch)(l_0_10, "\\manageengine\\uems_agent\\bin\\meaap.exe") ~= true or l_0_10 ~= l_0_11) then
     return mp.INFECTED
   end
   do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC257: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC273: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end
