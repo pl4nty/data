@@ -103,9 +103,9 @@ end
     if l_0_6 ~= nil then
       local l_0_32 = nil
       local l_0_33 = nil
-      local l_0_34 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW", isSuspTld = l_0_26}
-      if ((SafeGetUrlReputation({l_0_6}, l_0_34, false, 2000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_34, false, 2000)).urls)[l_0_6]).determination == 2 and 60 <= (((SafeGetUrlReputation({l_0_6}, l_0_34, false, 2000)).urls)[l_0_6]).confidence then
-        (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring((((SafeGetUrlReputation({l_0_6}, l_0_34, false, 2000)).urls)[l_0_6]).determination)))
+      local l_0_34 = {SIG_CONTEXT = "ClickFix", CONTENT_SOURCE = "ETW_ClipWrite", TAG = "INTERFLOW", isSuspTld = tostring(l_0_26)}
+      if ((SafeGetUrlReputation({l_0_6}, l_0_34, false, 3000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_34, false, 3000)).urls)[l_0_6]).determination == 2 and 60 <= (((SafeGetUrlReputation({l_0_6}, l_0_34, false, 3000)).urls)[l_0_6]).confidence then
+        (bm.trigger_sig)("ETW_ClipWrite", (string.format)("URL=%s;cmdline=%s;Determination=%s", tostring(l_0_6), tostring(l_0_5), tostring((((SafeGetUrlReputation({l_0_6}, l_0_34, false, 3000)).urls)[l_0_6]).determination)))
       end
     end
     do
@@ -119,12 +119,12 @@ end
         do
           ;
           (bm.add_related_string)("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
-          -- DECOMPILER ERROR at PC750: Confused about usage of register: R18 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC753: Confused about usage of register: R18 in 'UnsetPending'
 
           ;
           (bm.add_related_string)("ETW_ClipWrite_isSuspTld", tostring(l_0_26), bm.RelatedStringBMReport)
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC760: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC763: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
