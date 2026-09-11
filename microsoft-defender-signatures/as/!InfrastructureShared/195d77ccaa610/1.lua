@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\149d71c0cc6fe\1.luac 
+-- Command line: lua\!InfrastructureShared\195d77ccaa610\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -34,8 +34,8 @@ if (string.find)(l_0_4, "%\n") ~= nil then
 end
 l_0_4 = l_0_4:lower()
 local l_0_5 = (string.gsub)(l_0_4, "%^", "")
-l_0_5 = (string.gsub)(l_0_4, "%`", "")
-local l_0_6 = (string.match)(l_0_5, "(https?://[^%s%?%)%]%\'\"}]+)")
+l_0_5 = (string.gsub)(l_0_5, "%`", "")
+local l_0_6 = (string.match)(l_0_5, "(https?://[^%s%?%)%]%\'\"}&|<>;,]+)")
 if l_0_6 == "" or l_0_6 == nil or #l_0_6 < 10 then
   return mp.CLEAN
 end
