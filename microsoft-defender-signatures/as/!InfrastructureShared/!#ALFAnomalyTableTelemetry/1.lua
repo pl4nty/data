@@ -27,13 +27,13 @@ do
     -- DECOMPILER ERROR at PC53: Overwrote pending register: R9 in 'AssignReg'
 
     local l_0_8 = (("Appomaly_ChildProcName_CmdLine").AnomalyTableLookup)("Appomaly_Global_CmdLine")
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC62: Overwrote pending register: R10 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC64: Overwrote pending register: R11 in 'AssignReg'
+    -- DECOMPILER ERROR at PC63: Overwrote pending register: R11 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC66: Overwrote pending register: R12 in 'AssignReg'
+    -- DECOMPILER ERROR at PC65: Overwrote pending register: R12 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC67: Overwrote pending register: R13 in 'AssignReg'
+    -- DECOMPILER ERROR at PC66: Overwrote pending register: R13 in 'AssignReg'
 
     if l_0_8 then
       set_research_data("Appomaly_ChildProcName_CmdLine_Base64", (("Appomaly_File_Directory").Base64Encode)(("Appomaly_File_Name")("Appomaly_File_Extension")), false)

@@ -702,7 +702,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
   end
   local l_5_5 = (MpCommon.AnomalyTableLookup)(l_5_0)
   if l_5_5 and l_5_5.TableAge then
-    l_5_5.TableAgeDays = l_5_5.TableAge / 1440 * 60
+    l_5_5.TableAgeDays = l_5_5.TableAge / 1440
   end
   local l_5_6, l_5_7 = nil, nil
   local l_5_8 = {}
@@ -729,7 +729,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
           l_5_14 = l_5_12.Count
           l_5_15 = l_5_12.UnbiasedTime or 0
           local l_5_16 = (l_5_13 - l_5_14) / 60
-          local l_5_17 = (l_5_15) / 60
+          local l_5_17 = l_5_15
           local l_5_18 = l_5_16 / 1440
           local l_5_19 = l_5_17 / 1440
           local l_5_20 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
@@ -755,7 +755,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
             end
           else
             local l_5_21 = l_5_20.Count
-            -- DECOMPILER ERROR at PC151: Overwrote pending register: R7 in 'AssignReg'
+            -- DECOMPILER ERROR at PC150: Overwrote pending register: R7 in 'AssignReg'
 
             l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_21 + 1, 1)
             if not l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
@@ -775,12 +775,12 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
           end
         else
           l_5_14 = l_5_13
-          -- DECOMPILER ERROR at PC206: Overwrote pending register: R7 in 'AssignReg'
+          -- DECOMPILER ERROR at PC205: Overwrote pending register: R7 in 'AssignReg'
 
           l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_3, l_5_13, 1)
           if l_5_6 and l_5_9 and l_5_10 ~= "HSTR" then
             (MpCommon.BmTriggerSig)(l_5_9, "AnomalyTableMarker_Rcr", safeJsonSerialize(l_5_8))
-            -- DECOMPILER ERROR at PC230: Overwrote pending register: R7 in 'AssignReg'
+            -- DECOMPILER ERROR at PC229: Overwrote pending register: R7 in 'AssignReg'
 
             l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           end
@@ -802,13 +802,13 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
       if l_5_5 and l_5_5.TableAge then
         local l_5_28 = (MpCommon.AnomalyEventLookup)(l_5_0, l_5_1, 1)
         local l_5_29 = l_5_5.TableAge / 1440 * 60
-        -- DECOMPILER ERROR at PC299: Overwrote pending register: R7 in 'AssignReg'
+        -- DECOMPILER ERROR at PC298: Overwrote pending register: R7 in 'AssignReg'
 
         if l_5_5.TableAge < 1440 * l_5_2 then
           if not l_5_28 then
             l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
           else
-            -- DECOMPILER ERROR at PC311: Overwrote pending register: R7 in 'AssignReg'
+            -- DECOMPILER ERROR at PC310: Overwrote pending register: R7 in 'AssignReg'
 
             l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, l_5_28.Count + 1, 1)
           end
@@ -831,7 +831,7 @@ AnomalyTableCheck = function(l_5_0, l_5_1, l_5_2, l_5_3)
           return false, false, l_5_5
         end
       else
-        -- DECOMPILER ERROR at PC378: Overwrote pending register: R7 in 'AssignReg'
+        -- DECOMPILER ERROR at PC377: Overwrote pending register: R7 in 'AssignReg'
 
         l_5_6 = pcall(MpCommon.AnomalyEventUpdate, l_5_0, l_5_1, 1, 1)
         if l_5_6 then
