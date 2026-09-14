@@ -43,22 +43,43 @@ do
       if not l_0_8 or not (string.find)(l_0_6, "downloadstring(", 1, true) then
         return mp.CLEAN
       end
-      local l_0_9 = nil
-      local l_0_10 = nil
-      for l_0_14,l_0_15 in ipairs({"((\'htt", "(\'htt", "wua/", "/hex/cloudflare/", "/cloudflare/", ".trycloudflare.com", "[char[]]", "frombase64string", "-bxor"}) do
-        local l_0_11, l_0_12 = 0
-        -- DECOMPILER ERROR at PC233: Confused about usage of register: R13 in 'UnsetPending'
+      do
+        if not (string.find)(l_0_6, "((\'htt", 1, true) then
+          local l_0_10 = nil
+        end
+        do
+          if ((((((not (string.find)(l_0_6, "(\'htt", 1, true) or (string.find)(l_0_6, "wua/", 1, true)) and (string.find)(l_0_6, "/hex/cloudflare/", 1, true)) or (string.find)(l_0_6, "/cloudflare/", 1, true)) and not (string.find)(l_0_6, ".trycloudflare.com", 1, true)) or (string.find)(l_0_6, "[char[]]", 1, true)) and not (string.find)(l_0_6, "frombase64string", 1, true)) or (string.find)(l_0_6, "-bxor", 1, true) then
+            local l_0_9 = nil
+          end
+          if 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1 < 2 then
+            return mp.CLEAN
+          end
+          local l_0_11 = nil
+          local l_0_12, l_0_13, l_0_14, l_0_15, l_0_16 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious", "IsTerminalFixCMD"}, l_0_3)
+          if not l_0_16 then
+            return mp.CLEAN
+          end
+          local l_0_17 = nil
+          local l_0_18 = nil
+          local l_0_19 = nil
+          local l_0_20 = nil
+          local l_0_21 = tostring(R16_PC324)
+          local l_0_22 = R16_PC324
+          do
+            l_0_21 = l_0_21 .. l_0_22 .. tostring(l_0_17) .. "||" .. (string.sub)(tostring(l_0_19 or "-"), 1, 128) .. "||" .. (string.sub)(tostring(l_0_18), 1, 320) .. "||" .. (string.sub)(tostring(l_0_3), 1, 320)
+            -- DECOMPILER ERROR at PC359: Overwrote pending register: R16 in 'AssignReg'
 
-        if (string.find)(l_0_6, "/cloudflare/", 1, true) then
-          l_0_11 = l_0_11 + 1
+            l_0_22("ObfuscatedRemoteExec_A", l_0_21, false)
+            -- DECOMPILER ERROR at PC364: Overwrote pending register: R16 in 'AssignReg'
+
+            -- DECOMPILER ERROR at PC365: Overwrote pending register: R16 in 'AssignReg'
+
+            do return l_0_22 end
+            -- DECOMPILER ERROR at PC367: freeLocal<0 in 'ReleaseLocals'
+
+          end
         end
       end
-      -- DECOMPILER ERROR at PC242: Confused about usage of register: R7 in 'UnsetPending'
-
-      if l_0_11 >= 2 then
-        return mp.INFECTED
-      end
-      return mp.CLEAN
     end
   end
 end

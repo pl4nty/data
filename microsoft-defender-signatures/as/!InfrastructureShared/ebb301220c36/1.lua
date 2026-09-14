@@ -17,6 +17,7 @@ if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this
   l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
 end
 if l_0_3 ~= "" and l_0_3 ~= nil and (string.find)(l_0_3, "post", 1, true) and (string.find)(l_0_3, "os_version", 1, true) and (string.find)(l_0_3, "stage", 1, true) and (string.find)(l_0_3, "/api/metrics/run", 1, true) then
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN

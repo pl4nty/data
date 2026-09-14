@@ -51,21 +51,58 @@ do
   if not (("cloudflare verification failed").find)("verification completed", "verification finished", "verification successful", true) or l_0_7 < 2 then
     return mp.CLEAN
   end
-  if (not (string.find)(l_0_6, "new-object net.webclient", 1, true) and not (string.find)(l_0_6, "new-object system.net.webclient", 1, true)) or not (string.find)(l_0_6, ".downloadfile(", 1, true) then
-    return mp.CLEAN
+  do
+    if not (string.find)(l_0_6, "new-object net.webclient", 1, true) then
+      local l_0_14 = (string.find)(l_0_6, "new-object system.net.webclient", 1, true)
+    end
+    -- DECOMPILER ERROR at PC153: Confused about usage of register: R7 in 'UnsetPending'
+
+    if not l_0_14 or not (string.find)(l_0_6, ".downloadfile(", 1, true) then
+      return mp.CLEAN
+    end
+    if not (string.find)(l_0_6, "expand-archive", 1, true) then
+      return mp.CLEAN
+    end
+    if not (string.find)(l_0_6, ".zip", 1, true) then
+      return mp.CLEAN
+    end
+    if not (string.find)(l_0_6, ".bat", 1, true) then
+      return mp.CLEAN
+    end
+    do
+      if not (string.find)(l_0_6, "cmd /c", 1, true) and not (string.find)(l_0_6, "; & ", 1, true) then
+        local l_0_15 = nil
+      end
+      if not (string.find)(l_0_6, "\n& ", 1, true) then
+        return mp.CLEAN
+      end
+      local l_0_16 = nil
+      local l_0_17, l_0_18, l_0_19, l_0_20, l_0_21 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious", "IsTerminalFixCMD"}, l_0_3)
+      if not l_0_19 then
+        return mp.CLEAN
+      end
+      local l_0_22 = nil
+      local l_0_23 = nil
+      local l_0_24 = tostring(R16_PC249)
+      local l_0_25 = R16_PC249
+      local l_0_26 = tostring(l_0_20)
+      local l_0_27 = "||"
+      do
+        l_0_24 = l_0_24 .. l_0_25 .. l_0_26 .. l_0_27 .. (string.sub)(tostring(l_0_22 or "-"), 1, 128) .. "||" .. (string.sub)(tostring(l_0_21), 1, 320) .. "||" .. (string.sub)(tostring(l_0_3), 1, 320)
+        -- DECOMPILER ERROR at PC284: Overwrote pending register: R16 in 'AssignReg'
+
+        l_0_26 = "FakeVerifyDownload_A"
+        l_0_27 = l_0_24
+        l_0_25(l_0_26, l_0_27, false)
+        -- DECOMPILER ERROR at PC289: Overwrote pending register: R16 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC290: Overwrote pending register: R16 in 'AssignReg'
+
+        do return l_0_25 end
+        -- DECOMPILER ERROR at PC292: freeLocal<0 in 'ReleaseLocals'
+
+      end
+    end
   end
-  if not (string.find)(l_0_6, "expand-archive", 1, true) then
-    return mp.CLEAN
-  end
-  if not (string.find)(l_0_6, ".zip", 1, true) then
-    return mp.CLEAN
-  end
-  if not (string.find)(l_0_6, ".bat", 1, true) then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_6, "cmd /c", 1, true) or (string.find)(l_0_6, "; & ", 1, true) or not (string.find)(l_0_6, "\n& ", 1, true) then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
 end
 

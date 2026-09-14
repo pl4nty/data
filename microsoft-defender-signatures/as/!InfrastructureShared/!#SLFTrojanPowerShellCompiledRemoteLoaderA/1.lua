@@ -45,6 +45,40 @@ do
   if not (string.find)(l_0_6, "process.start", 1, true) then
     return mp.CLEAN
   end
-  return mp.INFECTED
+  local l_0_7 = {}
+  -- DECOMPILER ERROR at PC167: No list found for R5 , SetList fails
+
+  -- DECOMPILER ERROR at PC168: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC169: Overwrote pending register: R7 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC170: Overwrote pending register: R8 in 'AssignReg'
+
+  local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12 = ("IsClickFixCMD")("IsClickFixCMD_Malicious", "IsTerminalFixCMD")
+  if not l_0_8 then
+    return mp.CLEAN
+  end
+  local l_0_13 = tostring(l_0_12)
+  local l_0_14 = "||"
+  local l_0_15 = tostring(l_0_9)
+  local l_0_16 = "||"
+  local l_0_17 = string.sub
+  local l_0_18 = tostring
+  do
+    l_0_18 = l_0_18(l_0_11 or "-")
+    l_0_17 = l_0_17(l_0_18, 1, 128)
+    l_0_18 = "||"
+    l_0_13 = l_0_13 .. l_0_14 .. l_0_15 .. l_0_16 .. l_0_17 .. l_0_18 .. (string.sub)(tostring(l_0_10), 1, 320) .. "||" .. (string.sub)(tostring(l_0_3), 1, 320)
+    l_0_14 = set_research_data
+    l_0_15 = "CompiledRemoteLoader_A"
+    l_0_16 = l_0_13
+    l_0_17 = false
+    l_0_14(l_0_15, l_0_16, l_0_17)
+    l_0_14 = mp
+    l_0_14 = l_0_14.INFECTED
+    do return l_0_14 end
+    -- DECOMPILER ERROR at PC222: freeLocal<0 in 'ReleaseLocals'
+
+  end
 end
 

@@ -43,165 +43,62 @@ do
   if not ("iex")("invoke-expression", "invoke-command") then
     return mp.CLEAN
   end
-  local l_0_9 = GetRollingQueue("IsClickFixCMD")
-  if l_0_9 == nil or type(l_0_9) ~= "table" or #l_0_9 == 0 then
-    return mp.CLEAN
+  local l_0_9, l_0_10, l_0_11, l_0_12, l_0_13 = FindRollingQueueContentMatch({"IsClickFixCMD"}, l_0_4), "iwr", "invoke-webrequest"
+  -- DECOMPILER ERROR at PC150: Overwrote pending register: R12 in 'AssignReg'
+
+  if not l_0_9 then
+    return ("irm").CLEAN
   end
-  local l_0_10 = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 == nil or l_1_0 == "" then
-    return ""
-  end
-  l_1_0 = (string.gsub)(l_1_0, "%^", "")
-  l_1_0 = (string.gsub)(l_1_0, "`", "")
-  do
-    if (string.find)(l_1_0, "%", 1, true) then
-      local l_1_1, l_1_2 = pcall(mp.ContextualExpandEnvironmentVariables, l_1_0)
-      if l_1_1 and type(l_1_2) == "string" and l_1_2 ~= "" then
-        l_1_0 = l_1_2
-      end
-    end
-    l_1_0 = (string.lower)(l_1_0)
-    l_1_0 = (string.gsub)(l_1_0, "%s+", " ")
-    l_1_0 = (string.gsub)(l_1_0, "^ ", "")
-    l_1_0 = (string.gsub)(l_1_0, " $", "")
-    return l_1_0
-  end
-end
+  local l_0_14 = nil
+  -- DECOMPILER ERROR at PC154: Overwrote pending register: R13 in 'AssignReg'
 
-  local l_0_11 = function(l_2_0)
-  -- function num : 0_1
-  local l_2_1, l_2_6, l_2_7, l_2_8, l_2_9, l_2_10, l_2_11, l_2_12, l_2_13 = nil
-  for l_2_5 in (string.gmatch)(l_2_0, "%S+") do
-    local l_2_2 = nil
-    -- DECOMPILER ERROR at PC8: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC155: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC12: Confused about usage of register: R5 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC157: Overwrote pending register: R15 in 'AssignReg'
 
-    if l_2_2 == nil or #l_2_2 < #l_2_9 then
-      l_2_2 = l_2_9
-    end
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R1 in 'UnsetPending'
+  local l_0_15, l_0_16 = ("invoke-restmethod")(("downloadstring").get_contextdata, ("downloadfile").CONTEXT_DATA_AMSI_APPNAME)
+  -- DECOMPILER ERROR at PC163: Overwrote pending register: R16 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R1 in 'UnsetPending'
+  if l_0_15 and type("downloaddata") == "string" then
+    local l_0_17 = tostring(l_0_13)
+    local l_0_18 = "||"
+    -- DECOMPILER ERROR at PC172: Overwrote pending register: R17 in 'AssignReg'
 
-  if l_2_2 == nil or #l_2_2 < 24 then
-    return nil
-  end
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC173: Overwrote pending register: R18 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC25: Confused about usage of register: R1 in 'UnsetPending'
+    local l_0_19 = ("webclient")("frombase64string")
+    local l_0_20 = "||"
+    -- DECOMPILER ERROR at PC176: Overwrote pending register: R19 in 'AssignReg'
 
-  if #l_2_2 >= 32 then
-    return l_2_2
-  end
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
+    local l_0_21 = ("-encodedcommand").sub
+    -- DECOMPILER ERROR at PC178: Overwrote pending register: R20 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R1 in 'UnsetPending'
+    local l_0_22 = "-enc "
+    -- DECOMPILER ERROR at PC184: Overwrote pending register: R22 in 'AssignReg'
 
-  if (string.find)(l_2_2, "://", 1, true) then
-    return l_2_2
-  end
-  -- DECOMPILER ERROR at PC38: Confused about usage of register: R1 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC186: Overwrote pending register: R20 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC45: Confused about usage of register: R1 in 'UnsetPending'
-
-  if (string.find)(l_2_2, "\\", 1, true) then
-    return l_2_2
-  end
-  return nil
-end
-
-  -- DECOMPILER ERROR at PC160: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC161: Overwrote pending register: R11 in 'AssignReg'
-
-  local l_0_12 = ("iwr")("invoke-webrequest")
-  if #l_0_12 < 16 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC169: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC169: Overwrote pending register: R12 in 'AssignReg'
-
-  local l_0_13, l_0_14, l_0_15 = nil, "irm", "invoke-restmethod"
-  -- DECOMPILER ERROR at PC170: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC171: Overwrote pending register: R15 in 'AssignReg'
-
-  for l_0_19,l_0_20 in ("downloadstring")("downloadfile") do
-    -- DECOMPILER ERROR at PC174: Overwrote pending register: R19 in 'AssignReg'
-
-    local l_0_21 = "-encodedcommand"
-    -- DECOMPILER ERROR at PC175: Overwrote pending register: R20 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC176: Overwrote pending register: R21 in 'AssignReg'
-
-    if ("-enc ")("-usebasicparsing") == "string" and #l_0_21 >= 16 then
-      local l_0_22 = l_0_10(l_0_21)
-      -- DECOMPILER ERROR at PC191: Overwrote pending register: R22 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC192: Overwrote pending register: R23 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC193: Overwrote pending register: R24 in 'AssignReg'
-
-      if #l_0_22 >= 24 and (string.find)("start-bitstransfer", "start-process", "bitsadmin", true) then
-        break
-      end
-      -- DECOMPILER ERROR at PC218: Overwrote pending register: R13 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC219: Overwrote pending register: R12 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC220: Overwrote pending register: R11 in 'AssignReg'
-
-      if #l_0_12 >= 24 and (string.find)(l_0_22, l_0_12, 1, true) then
-        break
-      end
-      do
-        do
-          local l_0_23 = l_0_11(l_0_22)
-          -- DECOMPILER ERROR at PC238: Overwrote pending register: R13 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC239: Overwrote pending register: R12 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC240: Overwrote pending register: R11 in 'AssignReg'
-
-          if l_0_23 ~= nil and (string.find)(l_0_12, l_0_23, 1, true) then
-            break
-          end
-          -- DECOMPILER ERROR at PC242: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC242: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC242: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
-  end
-  if l_0_13 == nil then
-    return mp.CLEAN
-  end
-  local l_0_24 = nil
-  local l_0_25, l_0_26 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
-  if l_0_25 and type(l_0_26) == "string" then
-    local l_0_27 = set_research_data
-    local l_0_28 = "WebClipPaste_B"
-    local l_0_29 = tostring(l_0_15)
-    local l_0_30 = "||"
-    local l_0_31 = tostring
-    local l_0_33 = "||"
+    local l_0_24 = string.sub
     do
-      -- DECOMPILER ERROR at PC286: Overwrote pending register: R27 in 'AssignReg'
+      -- DECOMPILER ERROR at PC195: Overwrote pending register: R24 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC287: Overwrote pending register: R28 in 'AssignReg'
+      -- DECOMPILER ERROR at PC201: Overwrote pending register: R25 in 'AssignReg'
 
-      l_0_27(l_0_28, l_0_29, l_0_30)
-      -- DECOMPILER ERROR at PC293: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC204: Overwrote pending register: R26 in 'AssignReg'
 
-      do return l_0_27 end
-      -- DECOMPILER ERROR at PC295: freeLocal<0 in 'ReleaseLocals'
+      -- DECOMPILER ERROR at PC210: Overwrote pending register: R27 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC213: Overwrote pending register: R28 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC219: Overwrote pending register: R19 in 'AssignReg'
+
+      l_0_18(l_0_19, l_0_20, l_0_21)
+      -- DECOMPILER ERROR at PC221: Overwrote pending register: R16 in 'AssignReg'
+
+      -- DECOMPILER ERROR at PC222: Overwrote pending register: R16 in 'AssignReg'
+
+      do return l_0_18 end
+      -- DECOMPILER ERROR at PC224: freeLocal<0 in 'ReleaseLocals'
 
       -- WARNING: undefined locals caused missing assignments!
     end
