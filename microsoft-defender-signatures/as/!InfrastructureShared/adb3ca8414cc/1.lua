@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\adb373d14ef5\1.luac 
+-- Command line: lua\!InfrastructureShared\adb3ca8414cc\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -118,7 +118,7 @@ end
   (bm.add_threat_file)(R8_PC54)
   -- DECOMPILER ERROR at PC67: Overwrote pending register: R8 in 'AssignReg'
 
-  TrackPidAndTechniqueBM(R8_PC54, "T1574.014", "AppDomainMgrSuspAssembly", 86400)
+  TrackPidAndTechniqueBM(R8_PC54, "T1574.014", "AppDomainMgrSuspiciousAssemblies", 86400)
   do return mp.INFECTED end
   -- DECOMPILER ERROR at PC75: freeLocal<0 in 'ReleaseLocals'
 
