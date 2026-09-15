@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Install Manager",
+    "downloadDescription": "CLI tool to manage .NET installations on Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dnim-win-x86.exe",
+            "url": "https://download.microsoft.com/download/0b33f38d-2b15-4372-aabe-7657d228c53b/dnim-win-x86.exe",
+            "size": "16256024",
+            "version": "1.0.0-preview.1.26458.2",
+            "datePublished": "9/11/2026 5:06:25 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "dnim-win-x64.exe",
+            "url": "https://download.microsoft.com/download/0b33f38d-2b15-4372-aabe-7657d228c53b/dnim-win-x64.exe",
+            "size": "17505224",
+            "version": "1.0.0-preview.1.26458.2",
+            "datePublished": "9/11/2026 5:06:25 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dnim-win-arm64.exe",
+            "url": "https://download.microsoft.com/download/0b33f38d-2b15-4372-aabe-7657d228c53b/dnim-win-arm64.exe",
+            "size": "17583104",
+            "version": "1.0.0-preview.1.26458.2",
+            "datePublished": "9/11/2026 5:06:25 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Install Manager (DNIM) is a command-line tool to identify, remove or update .NET installations on Windows.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0-preview.1.26458.2",
+    "detailsSection_file_name": [
+        "dnim-win-x86.exe",
+        "dnim-win-x64.exe",
+        "dnim-win-arm64.exe"
+    ],
+    "detailsSection_file_size": [
+        "15.5 MB",
+        "16.7 MB",
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "9/11/2026",
+    "systemRequirementsSection": "Windows 10, Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "DNIM is a single file .NET console application. For a full list of commands use the --help option, e.g. dnim-win-x64.exe --help. The EULA will be displayed on the first run",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108827",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
