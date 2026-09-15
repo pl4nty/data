@@ -11,6 +11,7 @@
         "EnableSaveSettingsFix": true,
         "M365CopilotRebrandingEnabled": true,
         "MaxRetriesForXMLRequest": 5,
+        "NewCopilotNameEnabled": true,
         "default": true,
         "isShellControlBaseConditionalUpdateEnabled": false
     },

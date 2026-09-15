@@ -58,10 +58,6 @@
         "VirtualHomeString_BugFix": true
     },
     "CLI_SideCar": {
-        "4CF8C6F4-C96E-4454-A6D0-196EAAC3E496": {
-            "FlightExpiry": "2026-06-19T00:00:00.0402432Z",
-            "FlightValue": true
-        },
         "APv2EnableAutoReconnectOnRestart": {
             "FlightExpiry": "2027-03-17T00:00:00.0402432Z",
             "FlightValue": true
@@ -108,6 +104,10 @@
         },
         "EnableRealTimeComplianceAccount": {
             "FlightExpiry": "2026-11-07T00:00:00Z",
+            "FlightValue": true
+        },
+        "EnableTlsCertificatePinning": {
+            "FlightExpiry": "2026-12-01T00:00:00.000Z",
             "FlightValue": true
         },
         "EnableUserSessionFix": {
@@ -408,6 +408,8 @@
             "EnablePrsv3ForAosp": true,
             "EnableReportTimeCheckForLocateDeviceDecryption": true,
             "EnableRequestEnterpriseUpgradeUrl": true,
+            "EnableVpnLockdownExclusion": true,
+            "EnableVpnLockdownExemptionPruningFix": true,
             "EnableWebCpAndroidWpWebEnrollment": true,
             "EnableWorkProfileMtdAppRequiredForSetup": true,
             "EnableWpDeviceTypeUpdate": true,
@@ -570,6 +572,7 @@
             "OrgReportSlimQueueMessageEnabled": true,
             "OrgSnapshotSchemaUpdaterAlterTableEnabled": true,
             "OrgSnapshotSchemaUpdaterEnabled": true,
+            "PEHAssignmentFilterEvaluationStatus": true,
             "PEHMigrationBatch1": true,
             "QBSFSICoreHistoryMigrationSwitchOver": true,
             "QBSFSICoreMigrationExportSwitchOver": true,
@@ -670,6 +673,7 @@
             "EnableZstdCompression": true,
             "ExtendedVolatileUris": true,
             "FilterEnrollmentPoliciesWithTypeEnrollmentForNgcPolicyActivity": true,
+            "HonorNewSessionForPreProvisionedEsp": true,
             "MMPCDeviceRecoveryHotfixRollout": true,
             "SkipAppInvCollectionInProcessPhase": true,
             "SkipDDVDataAssignOnUnchangedValue": true,
@@ -919,6 +923,9 @@
         "RolloutGroupV3": "G3"
     },
     "Sidecar_Mac": {
+        "BatchPolicyReporting_MinInterval": 10,
+        "BatchPolicyReporting_SleepTime": 80,
+        "PipelinedFullSync_Cadence": 28800,
         "app_policy_reporting_retry": true,
         "customer_script_timeout": 3600,
         "enable_afd_connectivity_ip_range": false,
@@ -928,6 +935,7 @@
         "store_adhoc_script_result": true,
         "use_custom_data_store": false,
         "use_new_update_app_reporting": true,
+        "use_pipelined_full_sync": true,
         "use_sorted_policies": true
     },
     "UX_AdminTasks": {
@@ -955,7 +963,6 @@
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
             "EnableWin32InstallerScriptsGA": true,
-            "EnableWinGetAppMarketDropdown": true,
             "ExplorerAppDeploymentOverview": true,
             "ExplorerAppFailedCount": true,
             "ExplorerVppLicensesStatus": true
@@ -975,6 +982,7 @@
     },
     "UX_Core": {
         "FlightingV2": {
+            "AndroidByodWpDeviceInventory": true,
             "AndroidEsimManagementUX": true,
             "AutoEnableSingleDeviceReactView": true,
             "DeviceLifecycleAgentUI": true,
@@ -988,6 +996,7 @@
     },
     "UX_DeviceConfig": {
         "FlightingV2": {
+            "AndroidDCv2AssignmentFilter": true,
             "AndroidDCv2ManagementModeFilter": true,
             "CanAccessSupportCentralWidget": true,
             "EnableCompliancePolicySettingsOrgReport": true,

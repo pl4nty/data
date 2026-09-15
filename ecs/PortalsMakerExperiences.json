@@ -63,6 +63,7 @@
         "enableMSBusinessAppsLaunchEventNotification": true,
         "enableManageCss": true,
         "enableMetadataDiff": true,
+        "enableMigratedD365Templates": true,
         "enableMoveRedirectLogic": true,
         "enableNL2TextErrorFix": true,
         "enableNewEntityListModal": true,
