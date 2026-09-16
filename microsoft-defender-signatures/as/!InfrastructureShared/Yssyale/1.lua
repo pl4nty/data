@@ -3,28 +3,22 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC14: Confused about usage of register: R0 in 'UnsetPending'
-
-  if isnull(l_0_0) then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC23: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_3 = nil
-  for l_0_7,l_0_8 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_0)) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R6 in 'UnsetPending'
-
-    if (sysio.IsFileExists)(R6_PC31) then
-      (bm.add_related_file)(R6_PC31)
-    end
-  end
+if isnull((this_sigattrlog[9]).utf8p2) then
+  return mp.CLEAN
+end
+local l_0_0 = (bm.get_imagepath)()
+if isnull(l_0_0) or (string.find)((string.lower)(l_0_0), "\\windows", 1, true) then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = (string.match)((this_sigattrlog[9]).utf8p2, "bytes:(%d+).-count:(%d+)")
+if isnull(l_0_1) or isnull(l_0_2) then
+  return mp.CLEAN
+end
+l_0_1 = tonumber(l_0_1)
+if l_0_1 > 52000000 and l_0_1 < 75000000 and l_0_2 > 5500 and l_0_2 < 9000 then
+  (bm.add_related_string)("ReadVM", (string.format)("Bytes: %d Count: %d", l_0_1, l_0_2), bm.RelatedStringBMReport)
+  add_parents()
   return mp.INFECTED
 end
+return mp.CLEAN
 

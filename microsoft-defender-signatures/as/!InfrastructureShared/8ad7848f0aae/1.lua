@@ -19,30 +19,17 @@ local l_0_2, l_0_3 = (string.gsub)(l_0_1, "powershell", "")
 if l_0_3 < 2 then
   return mp.CLEAN
 end
-local l_0_4 = {}
--- DECOMPILER ERROR at PC51: No list found for R4 , SetList fails
-
--- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC53: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
-
-if not (" iex")("invoke-expression", "iwr") then
-  return mp.CLEAN
-end
-local l_0_5 = (string.match)(l_0_1, "join%-path%s+%$env:temp%s+\'([%w%-%_]+%.ps1)\'")
-if not l_0_5 then
-  return mp.CLEAN
-end
--- DECOMPILER ERROR at PC74: Overwrote pending register: R8 in 'AssignReg'
-
 do
-  local l_0_6 = (string.match)(l_0_1, "invoke-webrequest")
-  if not l_0_6 then
-    return mp.CLEAN
-  end
-  if l_0_5 ~= l_0_6 then
+  local l_0_4 = {}
+  -- DECOMPILER ERROR at PC51: No list found for R4 , SetList fails
+
+  -- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC53: Overwrote pending register: R6 in 'AssignReg'
+
+  -- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
+
+  if not (" iex")("invoke-expression", "iwr") then
     return mp.CLEAN
   end
   do return mp.INFECTED end
