@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 Project Operations - Core - Sample End to End Scenario Flow",
+    "downloadDescription": "Scenario flow to walkthrough Dynamics 365 Project Operations Core",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics365-ProjectOperations-Core-EndtoEndSampleDemoScript.pdf",
+            "url": "https://download.microsoft.com/download/dcbed4da-9e4f-44df-a184-77bcba048e21/D365-PO-Core-E2E-Flow.pdf",
+            "size": "3373160",
+            "version": "1.0.0",
+            "datePublished": "9/16/2026 9:48:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file provides a scenario flow to walkthrough Dynamics 365 Project Operations functionality for product evaluation and demonstrations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "Dynamics365-ProjectOperations-Core-EndtoEndSampleDemoScript.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "9/16/2026",
+    "systemRequirementsSection": "Browser",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108839",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
