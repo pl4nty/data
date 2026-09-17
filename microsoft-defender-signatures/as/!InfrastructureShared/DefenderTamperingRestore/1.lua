@@ -3,22 +3,47 @@
 
 -- params : ...
 -- function num : 0
-if isnull((this_sigattrlog[9]).utf8p2) then
+if not IsDeviceHVA() then
   return mp.CLEAN
 end
-local l_0_0 = (bm.get_imagepath)()
-if isnull(l_0_0) or (string.find)((string.lower)(l_0_0), "\\windows", 1, true) then
+local l_0_0 = (mp.GetScannedPPID)()
+if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (string.match)((this_sigattrlog[9]).utf8p2, "bytes:(%d+).-count:(%d+)")
-if isnull(l_0_1) or isnull(l_0_2) then
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if isnull(l_0_1) then
   return mp.CLEAN
 end
-l_0_1 = tonumber(l_0_1)
-if l_0_1 > 52000000 and l_0_1 < 75000000 and l_0_2 > 5500 and l_0_2 < 9000 then
-  (bm.add_related_string)("ReadVM", (string.format)("Bytes: %d Count: %d", l_0_1, l_0_2), bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
+if #l_0_1 < 20 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_2 = l_0_1:sub(1, 256)
+local l_0_3 = {}
+l_0_3.powershell = true
+l_0_3.POWERSHELL = true
+l_0_3.Powershell = true
+l_0_3.PowerShell = true
+l_0_3.powerShell = true
+l_0_3.POWERshell = true
+l_0_3.powerSHELL = true
+l_0_3.PowerSHELL = true
+l_0_3.powershELL = true
+l_0_3.POwershell = true
+local l_0_4 = l_0_2:lower()
+local l_0_5 = "powershell"
+local l_0_6 = #l_0_5
+local l_0_7 = 1
+while 1 do
+  local l_0_8 = l_0_4:find(l_0_5, l_0_7, true)
+  if not l_0_8 then
+    return mp.CLEAN
+  end
+  if not l_0_3[l_0_2:sub(l_0_8, l_0_8 + l_0_6 - 1)] then
+    return mp.INFECTED
+  end
+  l_0_7 = l_0_8 + l_0_6
+end
+l_0_8 = mp
+l_0_8 = l_0_8.CLEAN
+return l_0_8
 
