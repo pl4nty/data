@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1b9d7e2b65708\1.luac 
+-- Command line: lua\!InfrastructureShared\1b9d7f276aa41\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -48,7 +48,7 @@ l_0_7.BREAK_AT_FIRST_HIT_MALWARE = "60"
 l_0_7.FILELESS = "true"
 l_0_7.CMDLINE_URL = "true"
 l_0_7.CMDLINE_MATCH = l_0_4
-l_0_7.SIG_REFERENCE = "!#SLF:TrojanDownloader:Win32/ClickFix.MS3"
+l_0_7.SIG_REFERENCE = "TrojanDownloader:Win32/ClickFix.MS"
 local l_0_8 = CheckUrlReputationSimple
 local l_0_9 = {}
 -- DECOMPILER ERROR at PC152: No list found for R9 , SetList fails
