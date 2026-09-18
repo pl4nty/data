@@ -316,6 +316,7 @@
                 "id": "ms-vscode.vscode-speech"
             }
         },
+        "Greptile.greptile-vscode": true,
         "HaaLeo.vscode-stylint": {
             "disallowInstall": true,
             "extension": {
@@ -352,6 +353,13 @@
             "extension": {
                 "displayName": "DVC extension pack",
                 "id": "lakeFS.lakefs-dvc-pack"
+            }
+        },
+        "JDeffner.ck3-modding-toolkit": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Paradox Modding Toolkit",
+                "id": "JDeffner.px-toolkit"
             }
         },
         "JITX.jitpcb-vscode": {
@@ -662,6 +670,13 @@
                 "id": "ms-windows-ai-studio.windows-ai-studio"
             }
         },
+        "TeamsDevApp.vscode-foundry-remote": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Foundry Training Workbench",
+                "id": "ms-windows-ai-studio.vscode-foundry-training"
+            }
+        },
         "Togusa09.tmlanguage": {
             "disallowInstall": true,
             "extension": {
@@ -816,6 +831,48 @@
                 "id": "Xen.ccpp-theme"
             }
         },
+        "YaegakiYukari.akyu-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Hieda-no-Akyu Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-005-vsc"
+            }
+        },
+        "YaegakiYukari.mizuho-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Mizuho Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-001-vsc"
+            }
+        },
+        "YaegakiYukari.nahida-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Nahida Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-006-vsc"
+            }
+        },
+        "YaegakiYukari.youmu-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Konpaku-Youmu Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-004-vsc"
+            }
+        },
+        "YaegakiYukari.yukari-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Yakumo-Yukari MasterRobe Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-002-vsc"
+            }
+        },
+        "YaegakiYukari.yuyuko-color-light-theme": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Saigyouji-Yuyuko Light Color Theme",
+                "id": "flowering-purple-cherry-blossoms.pkn-046-003-vsc"
+            }
+        },
         "ZixuanChen.vitest-explorer": {
             "disallowInstall": true,
             "extension": {
@@ -888,6 +945,13 @@
             "extension": {
                 "displayName": "Aleo Developer",
                 "id": "aleohq.aleo-developer-extension"
+            }
+        },
+        "alkisyuv.gephyra": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Claude Code Provider Switcher",
+                "id": "alkisyuv.claude-code-provider-switcher"
             }
         },
         "alygin.vscode-tlaplus": {
@@ -1638,6 +1702,13 @@
                 "id": "kodu-ai.claude-dev-experimental"
             }
         },
+        "koszti.snowflake-driver-for-sqltools": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Snowflake",
+                "id": "snowflake.snowflake-vsc"
+            }
+        },
         "kristofersdev.magento-toolbox": {
             "disallowInstall": true,
             "extension": {
@@ -1770,6 +1841,13 @@
             }
         },
         "maruf-bepary.llama-vscode-chat": true,
+        "masecla22.themis4vsc": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Themis - Digital Lab",
+                "id": "digitallab.digitallab-vscode-extension"
+            }
+        },
         "matronator.mtrgen-yaml-templates": {
             "disallowInstall": true,
             "extension": {

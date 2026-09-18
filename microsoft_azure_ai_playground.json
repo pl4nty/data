@@ -253,6 +253,7 @@
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.7-code",
         "azureml://registries/azure-mai/models/mai-thinking-1",
+        "azureml://registries/azure-mai/models/mai-code-1.1-flash",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
@@ -417,7 +418,8 @@
         "kimi-k2.5",
         "kimi-k2.6",
         "kimi-k2.7-code",
-        "mai-thinking-1"
+        "mai-thinking-1",
+        "mai-code-1.1-flash"
     ],
     "supportedModels": {
         "assistantsNotSupportedStreamingModels": [
@@ -546,7 +548,8 @@
             "kimi-k2.5",
             "kimi-k2.6",
             "kimi-k2.7-code",
-            "mai-thinking-1"
+            "mai-thinking-1",
+            "mai-code-1.1-flash"
         ],
         "supportedCompletionModels": [
             "babbage-002",

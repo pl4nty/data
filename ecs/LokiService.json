@@ -251,6 +251,11 @@
         "miplabelsformsit": true
     },
     "LLMProxy": {
+        "ConsumerMeteringScenarioBySku": "{\"FREE\":\"1edf4515-5db6-4f0b-b300-65079bfff4ab\",\"CFQ7TTC0TS2G\":\"93737c31-a5f8-4051-923b-191b44e67ecf\",\"CFQ7TTC0TS2G_Family\":\"04e53322-f8b3-468c-b277-b524b4d285d7\",\"CFQ7TTC125M7\":\"ef8774dd-aef9-492d-9e54-8c7fbbb13d65\",\"CFQ7TTC0MNTQ\":\"ef8774dd-aef9-492d-9e54-8c7fbbb13d65\",\"CFQ7TTBZZ8RD\":\"50a75b37-b542-4efd-a5c5-519ffbfaed59\"}",
+        "ConsumerMeteringSkill": "LlmProxyConsumer",
+        "EnableLlmProxyConsumerMetering": true,
+        "EnableLlmProxyConsumerServing": true,
+        "EnableLlmProxyGeographyAuthorization": true,
         "EnabledModels": [
             {
                 "context_window": 1050000,
@@ -357,6 +362,81 @@
                 ]
             }
         ],
+        "LlmProxyWorkflowModelAccess_Version": 1,
+        "LlmProxyWorkflowModelAccess_Workflows": {
+            "CodeTab": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ]
+                }
+            },
+            "GitHubCopilot": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5",
+                        "claude-opus-4.8",
+                        "claude-opus-4.7",
+                        "claude-opus-4.6",
+                        "claude-sonnet-5",
+                        "claude-sonnet-4.6",
+                        "claude-haiku-4.5",
+                        "gpt-6-astra",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-terra",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-5-mini",
+                        "mai-code-1-flash"
+                    ]
+                }
+            }
+        },
         "ModelMappings": [
             {
                 "id": "claude-opus-5",
@@ -439,6 +519,32 @@
             {
                 "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
                 "scenario": "CodeTab"
+            }
+        ],
+        "WorkflowMappings": [
+            {
+                "appId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
+                "workflow": "GitHubCopilot"
+            },
+            {
+                "appId": "ea31b3ac-3225-4c75-b81e-34e3091871d5",
+                "workflow": "GitHubCopilot"
+            },
+            {
+                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
+                "workflow": "CodeTab"
             }
         ]
     },

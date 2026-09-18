@@ -74,6 +74,10 @@
             "FlightExpiry": "2025-06-01T00:00:00.000Z",
             "FlightValue": true
         },
+        "EmitSidecarMsiInstallerEvent": {
+            "FlightExpiry": "2026-12-18T00:00:00.000Z",
+            "FlightValue": true
+        },
         "EnableComplianceMonitorSimulateMode": {
             "FlightExpiry": "2026-11-07T00:00:00Z",
             "FlightValue": false
@@ -205,6 +209,8 @@
     },
     "INFRA_Storage": {
         "FlightingV2": {
+            "CosmosDbAccountMoveEnableIQueryExecuteNext": true,
+            "CosmosDbAccountMoveEnableReadFromSecondary": true,
             "RetryOnClientSidePatchesWithNullOrStarETag": true
         }
     },
@@ -544,6 +550,7 @@
             "EnableGenerateAcmeNewNonce": true,
             "EnableModernAuthSignatureValidation": true,
             "EnableNoAcmeChallengeAsQueryParameter": true,
+            "EnableReportSessionIdAsDeviceId": true,
             "EnableSendAcmeChallengeAsIdentifier": true,
             "EnableSendNonceinResponseV2": true,
             "EnableVerifyAcmeChallengeFromIdentifier": true,
@@ -633,6 +640,11 @@
             "EnableFactUserCompanyTermAcceptance": true
         }
     },
+    "SVC_DefenderServices": {
+        "FlightingV2": {
+            "EnableTriggerOnDemandComplianceForAdmin": true
+        }
+    },
     "SVC_Dep": {
         "FlightingV2": {
             "APv2EnableForcedRebootBehavior": true,
@@ -676,6 +688,7 @@
             "HonorNewSessionForPreProvisionedEsp": true,
             "MMPCDeviceRecoveryHotfixRollout": true,
             "SkipAppInvCollectionInProcessPhase": true,
+            "SkipCacheStorageWriteOnNoChange": true,
             "SkipDDVDataAssignOnUnchangedValue": true,
             "SkipDDVLastAccessTimeOnRead": true,
             "SkipDDVStorageWriteOperations": true,
@@ -687,6 +700,7 @@
         "FlightingV2": {
             "BypassPartnerTokenBlockForETG": true,
             "EnableBlockingOpenClaw": true,
+            "EnableDefenderAiAgentProtection": true,
             "EnablePRSv3EmptyChangedReportFilter": true,
             "EnableW365AgentsBaseline": true,
             "Enable_ApplicationProperties_Settings": true,
@@ -962,10 +976,7 @@
             "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
-            "EnableWin32InstallerScriptsGA": true,
-            "ExplorerAppDeploymentOverview": true,
-            "ExplorerAppFailedCount": true,
-            "ExplorerVppLicensesStatus": true
+            "EnableWin32InstallerScriptsGA": true
         }
     },
     "UX_CloudPki": {
@@ -1003,8 +1014,8 @@
             "EnableDeviceExecutionStatusReportExportV2": true,
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true,
-            "ExplorerAppsActionTile": true,
             "HidePCAAndCRAFromAgentsL1": true,
+            "TunnelVpnStrictModeV2": true,
             "UX_DisableAssociationMACRandomization": true,
             "UX_EnableIOSWiredNetwork": true
         }

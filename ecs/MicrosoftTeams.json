@@ -113,6 +113,8 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
+        "dms420ScopedToDmsOnly": false,
+        "dmsOperationsSuppressed": false,
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
@@ -327,7 +329,8 @@
             "teamsAppConfig.voiceRecognitionDeviceSettingTAC": "TeamsAppConfig.VoiceRecognitionDeviceSettingTAC",
             "teamsAppConfig.webexMeetingEnabled": "TeamsAppConfig.WebexMeetingEnabled",
             "teamsAppConfig.zoomMeetingEnabled": "TeamsAppConfig.ZoomMeetingEnabled"
-        }
+        },
+        "unifiedEnrollmentPredicateEnabled": false
     },
     "MicrosoftTeamsAppCatalog": {
         "appCatalog": {
@@ -391,7 +394,7 @@
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_8.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_9.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_a.json",
-                    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets-snapshot/generateappcatalogv2-a46c0d4dc3f649f590dc414291b4d456/store_global_b.json",
+                    "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_b.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_c.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_d.json",
                     "https://res.cdn.office.net/teamsappdata/ais_prod_v1/app-assets/store_global_e.json",
@@ -1404,7 +1407,10 @@
             "EnableRTAFJoinRecoveryConversation": false,
             "EnableRTAFTranscriptFetch": true,
             "EnableRerunOsdlStatementExecuteActivity": true,
+            "EnableSendEventAllRecipientScope": true,
+            "EnableSendEventPayloadValidation": true,
             "EnableSendMessageToCallParticipant": true,
+            "EnableSessionStartOnEstablishedWithDedupe": true,
             "EnableSkipVerbalization": true,
             "EnableStripUserQueryInClientMessage": true,
             "EnableTaskManagementOpenNotes": true,
@@ -1788,6 +1794,12 @@
                 {
                     "Flight": "enableUnifiedTeamsCopilotSkill",
                     "IsEnabled": false
+                }
+            ],
+            "EnableUseMeetingSpokenLanguageForLiveNotes": [
+                {
+                    "Flight": "UseMeetingSpokenLanguageForLiveNotes",
+                    "IsEnabled": true
                 }
             ],
             "EnableUseV8MergedNotesPrompt": [
@@ -6296,6 +6308,9 @@
             "MentionsActivityCreator": {
                 "Enabled": true
             },
+            "SaveForMessagingSlice": {
+                "Enabled": true
+            },
             "SavedActivityCreator": {
                 "Enabled": true
             },
@@ -6303,6 +6318,9 @@
                 "Enabled": true
             },
             "TagMentionsActivityCreator": {
+                "Enabled": true
+            },
+            "TagMentionsStream": {
                 "Enabled": true
             },
             "ThreadsActivityCreator": {

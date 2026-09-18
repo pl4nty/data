@@ -19,6 +19,9 @@
         "EnableDcfInBroker": true,
         "ForceBrokerDiscoveryEnabledForIntune": true,
         "TelemetrySamplingRate": 0.25,
+        "TrustAuthenticatorAsFociApp": false,
+        "ValidateGetAccountsFociCaller": false,
+        "ValidateGetAccountsFociEstsFallback": false,
         "ValidateSilentCaller": false
     }
 }

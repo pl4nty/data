@@ -1,12 +1,116 @@
 [
     {
-        "created": "2026-09-14T23:03:47",
-        "description": "<p>Microsoft Teams will enable users to report suspicious guest invitations directly from Teams. When users receive an unexpected or potentially malicious guest invitation, they can report it to their IT admin for review, helping identify and mitigate phishing and other abuse through guest invitations.</p>",
-        "id": 571297,
+        "created": "2026-09-17T23:00:52",
+        "description": "<p>Users will be able to see results from multiple mailboxes interweaved in a single ranked list and will be able to do standard mail actions.</p>",
+        "id": 570441,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-09-17T23:00:52",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Multi Account Search "
+    },
+    {
+        "created": "2026-09-17T23:00:45",
+        "description": "<p>We are updating the Brand Center setup experience so that administrators can set up Brand Center without enabling Public CDN.</p>\n<p>Today, Public CDN is enabled as part of Brand Center setup, even when an organization only wants to use branding governance capabilities that do not require it. With this update, organizations can begin using Brand Center while deferring Public CDN until they need capabilities that depend on it, such as organizational fonts.</p>",
+        "id": 571391,
+        "locale": null,
+        "modified": "2026-09-17T23:00:45",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/sharepoint/brand-center-overview#setting-up-the-brand-center",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365 admin center: Optional Public CDN Support in Brand Center Setup"
+    },
+    {
+        "created": "2026-09-17T23:00:45",
+        "description": "<p>Users will be able to schedule Microsoft Teams channel meetings directly from Outlook Calendar. This streamlines meeting creation and helps keep discussions and meeting content connected in the appropriate channel.</p>",
+        "id": 571388,
+        "locale": null,
+        "modified": "2026-09-17T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16,6 +120,9 @@
             },
             {
                 "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -36,6 +143,1206 @@
             "platforms": [
                 {
                     "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Schedule Channel Meetings from Outlook Calendar"
+    },
+    {
+        "created": "2026-09-17T23:00:45",
+        "description": "<p>Rental organizations need to coordinate commercial rental activity, equipment availability, asset condition, and service execution across multiple teams and applications. Service needs can arise while equipment is in stock, in transit, at a customer site, or being returned, but those needs don\u2019t always require an immediate work order.</p>\n<p>This feature connects rental operations in Dynamics 365 Finance and Supply Chain Management with Dynamics 365 Field Service by introducing fleet items and work order requests for rental service scenarios. Field Service users can view relevant fleet, rental contract, location, movement, and asset information while service needs can be captured and reviewed before a work order is created.</p>\n<p>Work order requests provide a controlled intake and approval process, allowing teams to validate service needs before committing technicians, inventory, or scheduling resources. When approved, a request can create a Field Service work order while preserving the relevant fleet item, asset, and rental context as the work progresses.</p>\n<p>This connected experience gives rental, service, and operations teams better visibility and coordination across the rental service lifecycle while giving organizations greater control over when service work is initiated. The capability can be used with Field Service alone or with the combined Field Service and Project Operations solution.</p>",
+        "id": 571300,
+        "locale": null,
+        "modified": "2026-09-17T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Manage rental service demand with work order requests"
+    },
+    {
+        "created": "2026-09-17T23:00:45",
+        "description": "<p>Dispatchers can now select which resource requirement to schedule when booking a work order that has multiple requirements. The new <strong>Book</strong> experience is available from both the work order form and list view, and shows relevant details such as requirement duration, time windows, resource preferences, booking status, and links to active bookings.</p>\n<p>Work orders with a single resource requirement continue directly to the configured Schedule Assistant or Quick Book experience. The requirement picker is accessible, responsive, localized, and supports right-to-left languages.</p>",
+        "id": 570863,
+        "locale": null,
+        "modified": "2026-09-17T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Book Work Orders with Multiple Requirements"
+    },
+    {
+        "created": "2026-09-16T22:57:03",
+        "description": "<p>Users can now schedule Teams Channel Meetings from Win32 (Outlook classic client)</p>",
+        "id": 571389,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Schedule Teams Channel Meeting from Win32"
+    },
+    {
+        "created": "2026-09-16T22:57:03",
+        "description": "<p>Microsoft Teams is expanding admin controls for Weaponizable File Protection. Administrators will be able to customize which file types are blocked in Teams to align with their organization's security requirements or continue using the Microsoft-recommended default list. This added flexibility helps organizations tailor file protection policies while maintaining a secure collaboration environment.</p>",
+        "id": 571298,
+        "locale": null,
+        "modified": "2026-09-17T23:00:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Customize blocked file extensions for Weaponizable File Protection"
+    },
+    {
+        "created": "2026-09-16T22:57:03",
+        "description": "<p>The SharePoint mobile app for iOS and Android is redesigned around the personalized SharePoint Discover experience, bringing your most relevant files, sites, people, and news together in one place, with improved site browsing, in-app file previews, refreshed news and search, dark mode, and better performance.</p>",
+        "id": 571200,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: New Mobile Experience on iOS and Android"
+    },
+    {
+        "created": "2026-09-16T22:57:03",
+        "description": "<p>Keep project plans aligned with field execution by automatically completing a linked Project Task when its Work Order is completed.</p>\n<p>When project work is carried out through Field Service, the Work Order often represents the execution of a specific Project Task. With this capability, organizations can configure Work Order Types so that completing the Work Order also completes the associated Project Task.</p>",
+        "id": 570860,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Automatically complete Project Tasks when field work is finished"
+    },
+    {
+        "created": "2026-09-16T22:57:03",
+        "description": "<p>When the Field Service and Project Operations integration is enabled, material estimates created in a project plan can now create connected Work Order Products on the related Field Service work order. This allows project-planned materials to flow into Field Service without requiring project and field teams to recreate material lines, keeping both teams aligned on the same material plan.</p>\n<p>As before, Work Order Products can create material estimates when materials are added from Field Service during execution. Supported changes remain synchronized across the project task, work order, and material line, allowing material planning to begin from either Project Operations or Field Service while keeping planning and execution aligned.</p>",
+        "id": 570855,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Bring project material plans into field execution"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Microsoft Purview is upgrading inline data protection for Microsoft Entra-managed apps in Edge for Business. The experience integrates with a Microsoft Entra Conditional Access grant control and simplifies configuration while removing current Purview policy restrictions. Admins can now use expanded conditions and condition combinations, multiple activities per rule, simulation mode, configurable alerts and notifications, and rule match activities are visible in activity explorer.</p>",
+        "id": 571397,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention-Upgraded inline protection for Microsoft Entra-managed apps in Edge for Business"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Microsoft Purview collection and data loss prevention (DLP) policies will support browser inline protection for a significantly broader set of unmanaged generative AI apps in Edge for Business. Admins can use existing Purview policy experiences to detect and protect sensitive data shared through supported browser activities, helping extend consistent data security controls across more destinations.</p>",
+        "id": 571396,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention-Expanded inline protection for unmanaged apps in Edge for Business"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>If you don\u2019t want to check spelling manually for every message\u2014or you\u2019re worried you might forget!\u2014you can set Outlook to check spelling for you every time before sending emails.</p>",
+        "id": 571310,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Outlook: Spell check before sending emails in new Outlook"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>A single place in Project Operations where administrators and end users can discover the core features relevant to them <strong>in lite or resource/non-stocked deployments</strong>.</p>\n<p>**For administrators: **</p>\n<ul>\n<li>Browse features by status: New, Available, Enabled, or Coming soon.</li>\n<li>Filter and search by product area.</li>\n<li>Review benefits, impact, dependencies, availability timing, and guidance.</li>\n<li>Check whether a feature is optional or automatically enabled and whether it can be reversed.</li>\n<li>Receive advance notice of upcoming features through notifications and a banner.</li>\n</ul>\n<p>**For end users: **</p>\n<ul>\n<li>View newly available and enabled features.</li>\n<li>Access task-level guidance through Learn more.</li>\n<li>Receive notifications on features newly available in the product</li>\n</ul>",
+        "id": 571304,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Optimize, discover and manage features from one place"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Get answers without leaving search. As you type in the Teams search bar, you'll see an option to ask Copilot alongside search results. You can also select Ask Copilot from the search results page to turn your query into a Copilot conversation, helping you quickly find information, get answers, and ask follow-up questions in context.</p>",
+        "id": 571299,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Ask Copilot from Search on Mobile"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Now makers will have clear visibility into their consumption costs directly within Monitor tab at both a per-agent level and an estimated breakdown of those costs across the agents lifecylce. This will allow makers to see costs distributed across activities such as authoring, testing, evaluations, and production usage, helping connect overall consumption to specific actions and experiences.</p>",
+        "id": 571196,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Cost visibility in Monitor tab"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Now makers will have clear visibility into their consumption costs directly associated with their evaluations, including a breakdown of usage for eval generation, test runs and model grading/judgement. Makers can see the costs as they test, iterate, and review conversations, making usage transparent throughout the development lifecycle.</p>",
+        "id": 571195,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Cost visibility in Agent Evaluations"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Now makers will have clear visibility into their consumption costs directly within preview tab and agent history for their preview/testing usage as well as all every historical run. Makers can see the costs as they test, iterate, and review conversations, making usage costs transparent throughout the development experience.</p>",
+        "id": 571194,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Cost visibility in Preview Chat and History"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>We\u2019re introducing the new readiness for Microsoft Copilot and data explorer experiences in Microsoft Purview Data Security Posture Management (DSPM). These new capabilities provide data security teams with greater visibility into their organization\u2019s data security posture and help them assess risks, investigate findings, and prioritize remediation.</p>\n<p>The readiness for Microsoft Copilot experience in Purview DSPM helps organizations assess and improve their data readiness for Microsoft Copilot. It brings together insights into sensitive data exposure, oversharing, and protection coverage, helping security teams identify risks and assess progress toward a more secure Microsoft Copilot deployment.</p>\n<p>The new data explorer experience in Purview DSPM provides a centralized investigation experience that helps organizations understand where sensitive data exists across sites, review site-level access, and explore relevant data through preset views. It brings together sites, sensitive data, permissions, and preset views, to support more efficient investigations and reduce context switching.</p>",
+        "id": 571157,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: DSPM-Copilot Readiness and Data Explorer"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview\u2014Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers\u2014into one place to discover, create, validate, and manage classifiers.</p>",
+        "id": 570844,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Unified Classification Management Experience"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Enable users to leave PowerPoint, switch devices, go offline, or end their workday while remaining confident that Copilot will notify them when work is complete or requires attention.</p>",
+        "id": 570438,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint:  Async Notifications for PowerPoint Agent (Web)"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Enable users to leave PowerPoint, switch devices, go offline, or end their workday while remaining confident that Copilot will notify them when work is complete or requires attention.</p>",
+        "id": 570437,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Async Notifications for PowerPoint Agent (Windows Desktop)"
+    },
+    {
+        "created": "2026-09-15T23:00:36",
+        "description": "<p>Two presenters can share a screen or window at the same time in a Teams meeting. Participants can see both shared content streams simultaneously, making it easier to compare and discuss content from different presenters.</p>",
+        "id": 80239,
+        "locale": null,
+        "modified": "2026-09-15T23:00:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Two presenters can share their screens or windows simultaneously in meetings"
+    },
+    {
+        "created": "2026-09-14T23:03:47",
+        "description": "<p>Microsoft Teams will enable users to report suspicious guest invitations directly from Teams. When users receive an unexpected or potentially malicious guest invitation, they can report it to their IT admin for review, helping identify and mitigate phishing and other abuse through guest invitations.</p>",
+        "id": 571297,
+        "locale": null,
+        "modified": "2026-09-16T22:57:03",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -1114,9 +2421,9 @@
         "description": "<p>The new Meeting Shared Files feature allows users to add relevant files and links to their meeting for easy access and to automatically share that content with all meeting participants. AI in the meeting, like the Facilitator agent, uses these files for targeted grounding to answer questions and enhance skill functionality.</p>",
         "id": 570427,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -3229,13 +4536,13 @@
     },
     {
         "created": "2026-08-25T23:13:41",
-        "description": "Copilot Notebooks now lets users add Power BI reports as references, bringing report data directly into their notebooks alongside files. Copilot uses this information to help generate more relevant summaries, presentations, and briefs grounded in the organization's data.",
+        "description": "<p>Copilot Notebooks now lets users add Power BI reports as references, bringing report data directly into their notebooks alongside files. Copilot uses this information to help generate more relevant summaries, presentations, and briefs grounded in the organization's data.</p>",
         "id": 569928,
         "locale": null,
-        "modified": "2026-08-25T23:13:41",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -4754,15 +6061,15 @@
     },
     {
         "created": "2026-08-17T22:52:47",
-        "description": "Users can now temporarily pause all notifications to minimize interruptions and stay focused on important work, meetings, or other priorities, without changing their existing notification settings.",
+        "description": "<p>Users can now temporarily pause all notifications to minimize interruptions and stay focused on important work, meetings, or other priorities, without changing their existing notification settings.</p>",
         "id": 569205,
         "locale": null,
-        "modified": "2026-08-31T23:13:25",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6485,12 +7792,12 @@
     },
     {
         "created": "2026-08-06T22:54:24",
-        "description": "Facilitator can now join meetings set up in Teams channels. Facilitator helps participants run more effective meetings through the ability to take live notes, manage the agenda, answer questions, and capture tasks.",
+        "description": "<p>Facilitator can now join meetings set up in Teams channels. Facilitator helps participants run more effective meetings through the ability to take live notes, manage the agenda, answer questions, and capture tasks.</p>",
         "id": 568936,
         "locale": null,
-        "modified": "2026-08-07T21:45:15",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -6814,15 +8121,15 @@
     },
     {
         "created": "2026-08-05T22:47:32",
-        "description": "Microsoft Edge is changing how it selects the local network address reported to proxy auto-config (PAC) scripts and is adding administrator control over it. The default IPv4 and IPv6 probe destinations now match Chromium\u2019s defaults. Administrators can override these defaults using the PacMyIpAddressIPv4ProbeAddress and PacMyIpAddressIPv6ProbeAddress policies when required by their network routing.",
+        "description": "<p>Microsoft Edge is changing how it selects the local network address reported to proxy auto-config (PAC) scripts and is adding administrator control over it. The default IPv4 and IPv6 probe destinations now match Chromium\u2019s defaults. Administrators can override these defaults using the PacMyIpAddressIPv4ProbeAddress and PacMyIpAddressIPv6ProbeAddress policies when required by their network routing.</p>",
         "id": 568787,
         "locale": null,
-        "modified": "2026-08-05T22:47:32",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -6859,7 +8166,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Changes to local IP address detection for proxy auto-config (PAC) scripts"
+        "title": "Microsoft Edge: v.153 - Changes to local IP address detection for proxy auto-config (PAC) scripts"
     },
     {
         "created": "2026-08-05T22:47:32",
@@ -9455,15 +10762,15 @@
     },
     {
         "created": "2026-07-17T22:12:56",
-        "description": "External call routing will provide users the ability to redirect all external phone calls to either voicemail or their unanswered settings. ",
+        "description": "<p>External call routing will provide users the ability to redirect all external phone calls to either voicemail or their unanswered settings.</p>",
         "id": 567884,
         "locale": null,
-        "modified": "2026-07-17T22:12:56",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -9583,15 +10890,15 @@
     },
     {
         "created": "2026-07-16T23:08:19",
-        "description": "We are introducing explicit recording and transcription consent support for PSTN participants joining Microsoft Teams meetings in GCC High and DoD environments. This feature is already available in Public and GCC clouds and is now being extended to sovereign environments. After this rollout, when a meeting is being recorded or transcribed, PSTN participants will be prompted to provide explicit consent before they can unmute and participate. If consent is not provided, participants will remain muted for the duration of the meeting. This update aligns PSTN behavior with the existing consent experience in Teams clients and enhances compliance by ensuring all participants actively acknowledge recording and transcription. This rollout may impact PSTN users joining meetings where recording or transcription is enabled. We recommend informing users about this change so they are prepared to provide consent when prompted.\n",
+        "description": "<p>We are introducing explicit recording and transcription consent support for PSTN participants joining Microsoft Teams meetings in GCC High and DoD environments. This feature is already available in Public and GCC clouds and is now being extended to sovereign environments. After this rollout, when a meeting is being recorded or transcribed, PSTN participants will be prompted to provide explicit consent before they can unmute and participate. If consent is not provided, participants will remain muted for the duration of the meeting. This update aligns PSTN behavior with the existing consent experience in Teams clients and enhances compliance by ensuring all participants actively acknowledge recording and transcription. This rollout may impact PSTN users joining meetings where recording or transcription is enabled. We recommend informing users about this change so they are prepared to provide consent when prompted.</p>",
         "id": 567304,
         "locale": null,
-        "modified": "2026-08-18T23:05:00",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -10490,15 +11797,15 @@
     },
     {
         "created": "2026-07-14T22:41:38",
-        "description": "We're introducing a setting that allows users to opt-out of transitioning presence automatically to Do Not Disturb when presenting or screen sharing. This ensures that they can continue to receive calls, keeping them connected and responsive without manual presence adjustments.",
+        "description": "<p>We're introducing a setting that allows users to opt-out of transitioning presence automatically to Do Not Disturb when presenting or screen sharing. This ensures that they can continue to receive calls, keeping them connected and responsive without manual presence adjustments.</p>",
         "id": 567300,
         "locale": null,
-        "modified": "2026-07-14T22:41:38",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -10898,15 +12205,15 @@
     },
     {
         "created": "2026-07-09T23:00:39",
-        "description": "OneDrive for Windows and Mac will let users exclude specific folders from syncing, so folders that do not belong in the cloud, such as developer tooling folders like PowerShell modules, Visual Studio configuration, and node modules, stay local on the device instead of uploading to OneDrive. Administrators can define folder exclusion rules for their organization.",
+        "description": "<p>OneDrive for Windows and Mac will let users exclude specific folders from syncing, so folders that do not belong in the cloud, such as developer tooling folders like PowerShell modules, Visual Studio configuration, and node modules, stay local on the device instead of uploading to OneDrive. Administrators can define folder exclusion rules for their organization.</p>",
         "id": 567470,
         "locale": null,
-        "modified": "2026-08-13T22:42:07",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -11537,15 +12844,15 @@
     },
     {
         "created": "2026-07-08T23:10:57",
-        "description": "The new chats and channels experience introduced quick views at the top of the chat and channels list. These are views into mentions, followed threads and more. This update allows users to choose when and how these quick views are shown. Users will have options such as always show, always hide and show only when unread. Users will also be able to collapse the quick views section.",
+        "description": "<p>The new chats and channels experience introduced quick views at the top of the chat and channels list. These are views into mentions, followed threads and more. This update allows users to choose when and how these quick views are shown. Users will have options such as always show, always hide and show only when unread. Users will also be able to collapse the quick views section.</p>",
         "id": 567301,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -11952,12 +13259,12 @@
     },
     {
         "created": "2026-07-07T23:10:08",
-        "description": "Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. ",
+        "description": "<p>Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations.</p>",
         "id": 567010,
         "locale": null,
-        "modified": "2026-07-07T23:10:08",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13014,12 +14321,12 @@
     },
     {
         "created": "2026-07-01T23:03:18",
-        "description": "Ask Copilot about an image in Edge enables users to instantly analyze images from the web by sending them directly to Copilot from the Edge context menu, making it easy to ask questions, gain insights, and understand visual content without leaving their browsing experience. Admins can control availability to this feature using the EdgeEntraCopilotPageContext and Microsoft365CopilotChatIconEnabled policies.",
+        "description": "<p>Ask Copilot about an image in Edge enables users to instantly analyze images from the web by sending them directly to Copilot from the Edge context menu, making it easy to ask questions, gain insights, and understand visual content without leaving their browsing experience. Admins can control availability to this feature using the EdgeEntraCopilotPageContext and Microsoft365CopilotChatIconEnabled policies.</p>",
         "id": 566864,
         "locale": null,
-        "modified": "2026-07-29T23:07:26",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13648,12 +14955,12 @@
     },
     {
         "created": "2026-06-26T22:01:51",
-        "description": "Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features.",
+        "description": "<p>Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features.</p>",
         "id": 566703,
         "locale": null,
-        "modified": "2026-08-18T23:05:00",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19618,12 +20925,12 @@
     },
     {
         "created": "2026-05-18T22:30:51",
-        "description": "With the introduction of file archiving support in SharePoint Online, administrators are looking to seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins want to now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SPO. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.",
+        "description": "<p>With the introduction of file archiving support in SharePoint Online, administrators are looking to seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins want to now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SPO. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.</p>",
         "id": 562345,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19675,17 +20982,17 @@
                 }
             ]
         },
-        "title": "Microsoft Purview: Data Lifecycle Management - Archive OneDrive and SharePoint files under retention"
+        "title": "Microsoft Purview: Archive SharePoint files under retention policies\u00a0"
     },
     {
         "created": "2026-05-18T22:30:51",
         "description": "<p>Insights on sensitive M365 data (OneDrive and SharePoint) and recommendations on retention policies for customers to better govern their sensitive data.</p>",
         "id": 562343,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -22710,15 +24017,15 @@
     },
     {
         "created": "2026-05-06T23:15:10",
-        "description": "A day level Copilot adoption Power BI report reflecting the most recent copilot activity & freshest insights.",
+        "description": "<p>A day level Copilot adoption Power BI report reflecting the most recent copilot activity &amp; freshest insights.</p>",
         "id": 561325,
         "locale": null,
-        "modified": "2026-05-15T22:00:42",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23343,15 +24650,15 @@
     },
     {
         "created": "2026-05-05T23:00:02",
-        "description": "Provide insights on Copilots and AI Apps usage and recommend retention policies for customers to govern their Copilots and AI App interactions.",
+        "description": "<p>Provide insights on Copilots and AI Apps usage and recommend retention policies for customers to govern their Copilots and AI App interactions. Updated September 15, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
         "id": 561209,
         "locale": null,
-        "modified": "2026-07-14T22:41:38",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "August CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23813,12 +25120,12 @@
     },
     {
         "created": "2026-05-04T23:00:45",
-        "description": "Microsoft Edge is introducing improvements to help users quickly resolve website issues directly from the browser. When a site is not functioning as expected, users may be guided to relevant troubleshooting options such as adjusting tracking prevention settings (e.g., Strict mode) and reviewing site-specific configurations. This experience surfaces relevant actions in-context to help users restore site functionality without navigating deep into settings.",
+        "description": "<p>Microsoft Edge is introducing improvements to help users quickly resolve website issues directly from the browser. When a site is not functioning as expected, users may be guided to relevant troubleshooting options such as adjusting tracking prevention settings (e.g., Strict mode) and reviewing site-specific configurations. This experience surfaces relevant actions in-context to help users restore site functionality without navigating deep into settings.</p>",
         "id": 561486,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26100,15 +27407,15 @@
     },
     {
         "created": "2026-04-21T23:00:01",
-        "description": "Understand who is building a habit using Copilot with the new power user insights in Copilot dashboard",
+        "description": "<p>Understand who is building a habit using Copilot with the new power user insights in Copilot dashboard</p>",
         "id": 560705,
         "locale": null,
-        "modified": "2026-07-15T22:55:27",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -28069,12 +29376,12 @@
         "description": "<p>Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>",
         "id": 560396,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -28880,9 +30187,9 @@
         "description": "<p>Copilot Chat can now better match search results from Scanned PDFs on Copilot users' files they are working on \u2014 content that was previously difficult to search and find.</p>\n<p>This feature will work for new/updated user's working files on a go-forward basis.</p>",
         "id": 559613,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -33458,12 +34765,12 @@
     },
     {
         "created": "2026-03-18T23:15:26",
-        "description": "Administrators can choose a severity threshold and receive alerts when a new Edge update includes security fixes that meet or exceed that level, including zero day fixes. This helps organizations quickly identify updates that may require attention, while avoiding unnecessary notifications for routine releases.",
+        "description": "<p>Administrators can choose a severity threshold and receive alerts when a new Edge update includes security fixes that meet or exceed that level, including zero day fixes. This helps organizations quickly identify updates that may require attention, while avoiding unnecessary notifications for routine releases.</p>",
         "id": 558435,
         "locale": null,
-        "modified": "2026-07-31T21:54:12",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41919,12 +43226,12 @@
     },
     {
         "created": "2026-02-11T00:15:04",
-        "description": "For desktop users, Microsoft Edge can now autofill additional document types\u2014including passports, driver\u2019s licenses, and other specialized forms\u2014on top of your saved addresses.",
+        "description": "<p>For desktop users, Microsoft Edge can now autofill additional document types\u2014including passports, driver\u2019s licenses, and other specialized forms\u2014on top of your saved addresses.</p>",
         "id": 554938,
         "locale": null,
-        "modified": "2026-07-31T21:54:12",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49446,13 +50753,13 @@
     },
     {
         "created": "2025-12-18T00:15:48",
-        "description": "Deep citations let users quickly verify Copilot's results by linking directly to the relevant part of the reference, boosting trust. We're starting with Word and PPT files, then adding Meetings, Web, and PDF references.",
+        "description": "<p>Deep citations let users quickly verify Copilot's results by linking directly to the relevant part of the reference, boosting trust. We're starting with Word and PPT files, then adding Meetings, Web, and PDF references.</p>",
         "id": 523223,
         "locale": null,
-        "modified": "2026-07-08T23:11:07",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -50544,15 +51851,15 @@
     },
     {
         "created": "2025-12-11T00:00:03",
-        "description": "Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you don\u2019t yet have a voice profile, just go to the recognition tab in Teams settings and opt-in to enroll your voice simply by speaking during a meeting.\u00a0 Admins can enable or disable this feature.",
+        "description": "<p>Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you don\u2019t yet have a voice profile, just go to the recognition tab in Teams settings and opt-in to enroll your voice simply by speaking during a meeting.&nbsp; Admins can enable or disable this feature.</p>",
         "id": 537269,
         "locale": null,
-        "modified": "2026-06-22T23:00:47",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52764,15 +54071,15 @@
     },
     {
         "created": "2025-12-03T00:15:38",
-        "description": "Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode. ",
+        "description": "<p>Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode.</p>",
         "id": 530578,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52809,7 +54116,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Tracking prevention when browsing InPrivate "
+        "title": "Microsoft Edge: v.153 - Tracking prevention when browsing InPrivate "
     },
     {
         "created": "2025-12-02T00:16:00",
@@ -54124,15 +55431,15 @@
     },
     {
         "created": "2025-11-20T00:00:17",
-        "description": "The Microsoft 365 Copilot browser extension for Chrome brings Copilot Chat and Search directly into the browser, enabling users to ask questions, summarize webpages, and search enterprise content without switching tabs. This improves productivity, reduces context switching, and provides secure, compliant in-browser AI assistance for Microsoft 365 users.",
+        "description": "<p>This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience. The Microsoft 365 Copilot browser extension for Chrome brings Copilot Chat and Search directly into the browser, enabling users to ask questions, summarize webpages, and search enterprise content without switching tabs. This improves productivity, reduces context switching, and provides secure, compliant in-browser AI assistance for Microsoft 365 users.</p>",
         "id": 530577,
         "locale": null,
-        "modified": "2026-02-13T00:15:26",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -54972,15 +56279,15 @@
     },
     {
         "created": "2025-11-18T17:15:10",
-        "description": "Now users can close a voice session on Windows by simply saying bye or goodbye when they want to close voice session. This, paired with \"Hey Copilot\" wake word, provides them with complete hands-free experience for voice in Microsoft 365 Copilot on Windows devices.",
+        "description": "<p>Now users can close a voice session on Windows by simply saying bye or goodbye when they want to close voice session. This, paired with \"Hey Copilot\" wake word, provides them with complete hands-free experience for voice in Microsoft 365 Copilot on Windows devices.</p>",
         "id": 529864,
         "locale": null,
-        "modified": "2025-11-18T17:15:10",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -56009,12 +57316,12 @@
     },
     {
         "created": "2025-11-18T00:00:20",
-        "description": "Customers can now customize their M365 profile cards by adding custom properties unique to their organization. These properties can be sourced from external systems like HR platforms, enriching user profiles with relevant organizational details. Tenant admins can configure these properties with a display name and icon, which will appear in the Contact Information section of the profile cards.",
+        "description": "<p>Customers can now customize their M365 profile cards by adding custom properties unique to their organization. These properties can be sourced from external systems like HR platforms, enriching user profiles with relevant organizational details. Tenant admins can configure these properties with a display name and icon, which will appear in the Contact Information section of the profile cards.</p>",
         "id": 529851,
         "locale": null,
-        "modified": "2026-06-02T23:00:40",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -63301,15 +64608,15 @@
     },
     {
         "created": "2025-10-22T23:15:17",
-        "description": "Users can quickly add references to a Copilot Notebook through the Quick Access section in Search on the M365 Copilot app.",
+        "description": "<p>Users can quickly add references to a Copilot Notebook through the Quick Access section in Search on the M365 Copilot app.</p>",
         "id": 510099,
         "locale": null,
-        "modified": "2025-10-22T23:15:17",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -63359,61 +64666,6 @@
             ]
         },
         "title": "Microsoft 365 app: Add references to your Copilot Notebooks from the Quick Access section in Search on the M365 Copilot app"
-    },
-    {
-        "created": "2025-10-22T23:15:17",
-        "description": "Copilot in Viva Glint is expanding its capabilities to support multilingual interactions, allowing users to submit prompts and receive responses in their preferred language. This enhancement improves accessibility and usability for global organizations by enabling Copilot to detect the language of user input, and return responses in the same language. ",
-        "id": 508531,
-        "locale": null,
-        "modified": "2025-11-18T00:00:20",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Multilingual Support in Copilot for Viva Glint"
     },
     {
         "created": "2025-10-22T23:15:17",
@@ -63533,15 +64785,15 @@
     },
     {
         "created": "2025-10-22T23:15:17",
-        "description": "Rich entity representation for connectors in Search results.",
+        "description": "<p>Rich entity representation for connectors in Search results.</p>",
         "id": 502533,
         "locale": null,
-        "modified": "2026-07-23T23:27:16",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -64198,15 +65450,15 @@
     },
     {
         "created": "2025-10-17T22:00:54",
-        "description": "We\u2019re introducing column metadata support for queries in Microsoft 365 Copilot when a SharePoint library or folder is attached or its URL is provided. This enhancement improves contextual relevance by enabling Copilot to leverage additional metadata from the selected library, delivering more accurate and meaningful results.",
+        "description": "<p>We\u2019re introducing column metadata support for queries in Microsoft 365 Copilot when a SharePoint library or folder is attached or its URL is provided. This enhancement improves contextual relevance by enabling Copilot to leverage additional metadata from the selected library, delivering more accurate and meaningful results.</p>",
         "id": 516044,
         "locale": null,
-        "modified": "2026-02-26T00:15:05",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65102,13 +66354,13 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.",
+        "description": "<p>This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.</p>",
         "id": 500872,
         "locale": null,
-        "modified": "2026-08-06T22:57:59",
+        "modified": "2026-09-17T23:00:45",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -71535,12 +72787,12 @@
     },
     {
         "created": "2025-09-05T22:15:55",
-        "description": "Launch a pre-scoped Data Security Investigation (DSI) from an IRM case. When a data security admin identifies a risky user who needs deeper investigation, they can launch a pre-scoped investigation directly from an IRM case, allowing them to view content analysis related to that user and better assess post-incident data impact. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.\n",
+        "description": "<p>Launch a pre-scoped Data Security Investigation (DSI) from an IRM case. When a data security admin identifies a risky user who needs deeper investigation, they can launch a pre-scoped investigation directly from an IRM case, allowing them to view content analysis related to that user and better assess post-incident data impact. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>",
         "id": 501781,
         "locale": null,
-        "modified": "2025-09-05T22:15:55",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "December CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -72513,15 +73765,15 @@
     },
     {
         "created": "2025-08-27T23:15:05",
-        "description": "With this update, Microsoft Purview will start supporting collection policies. Collection policies allow customers to scope classification (SITs - Sensitive Information Types) and activities for scoped users. We recommend reviewing collection policies as they can be created by different Purview solution admins to ensure they are setup to detect the activities required by Insider Risk Management policies Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.",
+        "description": "<p>With this update, Microsoft Purview will start supporting collection policies. Collection policies allow customers to scope classification (SITs - Sensitive Information Types) and activities for scoped users. We recommend reviewing collection policies as they can be created by different Purview solution admins to ensure they are setup to detect the activities required by Insider Risk Management policies Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>",
         "id": 501582,
         "locale": null,
-        "modified": "2025-08-27T23:15:05",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -74853,15 +76105,15 @@
     },
     {
         "created": "2025-08-11T23:00:11",
-        "description": "We are expanding the access to Diagnostics beyond Global Admin to: Compliance Administrator, Security Administrator and Organization Management",
+        "description": "<p>We are expanding the access to Diagnostics beyond Global Admin to: Compliance Administrator, Security Administrator and Organization Management</p>",
         "id": 500396,
         "locale": null,
-        "modified": "2025-08-11T23:00:11",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "October CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -85544,15 +86796,15 @@
     },
     {
         "created": "2025-05-02T22:00:26",
-        "description": "Your organization can now manually apply Information Protection sensitivity labels in Engage. Sensitivity label support in this new application will allow admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage. End users will be able to manually apply labels to Engage communities and in turn classify and protect their sensitive data via privacy and external user access controls.",
+        "description": "<p>Your organization can now manually apply Information Protection sensitivity labels in Engage. Sensitivity label support in this new application will allow admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage. End users will be able to manually apply labels to Engage communities and in turn classify and protect their sensitive data via privacy and external user access controls.</p>",
         "id": 491918,
         "locale": null,
-        "modified": "2025-05-02T22:00:26",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2025",
         "publicPreviewDate": "June CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93673,15 +94925,15 @@
     },
     {
         "created": "2025-02-14T00:15:58",
-        "description": "AI citations analytics will help you track the usage of SP documents, news and pages through copilot and AI agents. You will be able to see how often a page or a file is referenced in a copilot response. You can also get insights into SharePoint site content getting referenced in copilot responses aggregated at the site level.\n",
+        "description": "<p>AI citations analytics will help you track the usage of SP documents, news and pages through copilot and AI agents. You will be able to see how often a page or a file is referenced in a copilot response. You can also get insights into SharePoint site content getting referenced in copilot responses aggregated at the site level.</p>",
         "id": 480725,
         "locale": null,
-        "modified": "2026-07-10T21:58:35",
+        "modified": "2026-09-15T23:00:36",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93722,15 +94974,15 @@
     },
     {
         "created": "2025-02-11T00:15:15",
-        "description": "Endpoint DLP should show full path of target domain and not just the domain name in Activity Explorer.",
+        "description": "<p>Endpoint DLP should show full path of target domain and not just the domain name in Activity Explorer.</p>",
         "id": 480734,
         "locale": null,
-        "modified": "2025-04-28T23:15:36",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -99861,10 +101113,10 @@
     },
     {
         "created": "2021-09-07T23:21:08",
-        "description": "Microsoft has decided to not move forward with Communication Compliance integration with Power Automate\n\nCommunication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy. ",
+        "description": "<p>Microsoft has decided to not move forward with Communication Compliance integration with Power Automate</p>\n<p>Communication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.</p>",
         "id": 85606,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-09-16T22:57:03",
         "moreInfoLink": "https://docs.microsoft.com/en-us/microsoft-365/compliance/communication-compliance?view=o365-worldwide",
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "February CY2022",
