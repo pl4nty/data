@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Microsoft.Teams.PowerShell.Module/7.9.0": {
+      "Microsoft.Teams.PowerShell.Module/8.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "3.1.0",
-          "Microsoft.Teams.ConfigAPI.Cmdlets": "9.714.2",
-          "Microsoft.Teams.Policy.Administration": "35.0.10.2",
+          "Microsoft.Teams.ConfigAPI.Cmdlets": "9.908.4",
+          "Microsoft.Teams.Policy.Administration": "37.2608.26015",
           "Microsoft.Teams.Policy.Administration.Cmdlets.OCE": "0.1.12",
-          "Microsoft.Teams.PowerShell.Connect": "1.10.2",
+          "Microsoft.Teams.PowerShell.Connect": "1.10.5",
           "Microsoft.Teams.PowerShell.TeamsCmdlets": "1.6.8",
           "NuGet.Build.Tasks.Pack": "5.2.0",
           "NuGet.CommandLine": "5.11.6",
@@ -864,24 +864,24 @@
           }
         }
       },
-      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.8": {
+      "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.13": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "PowerShellStandard.Library": "5.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Teams.ConfigAPI.CmdletHostContract.dll": {
-            "assemblyVersion": "3.2.8.0",
-            "fileVersion": "3.2.8.0"
+            "assemblyVersion": "3.2.13.0",
+            "fileVersion": "3.2.13.0"
           }
         }
       },
-      "Microsoft.Teams.ConfigAPI.Cmdlets/9.714.2": {},
-      "Microsoft.Teams.Policy.Administration/35.0.10.2": {
+      "Microsoft.Teams.ConfigAPI.Cmdlets/9.908.4": {},
+      "Microsoft.Teams.Policy.Administration/37.2608.26015": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Bcl.Memory.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
+            "assemblyVersion": "9.0.0.14",
+            "fileVersion": "9.0.1426.11910"
           },
           "lib/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll": {
             "assemblyVersion": "8.9.0.0",
@@ -896,24 +896,24 @@
             "fileVersion": "8.9.0.60424"
           },
           "lib/netcoreapp3.1/Microsoft.Internal.AntiSSRF.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
           },
           "lib/netcoreapp3.1/Microsoft.Rtc.Management.Acms.EntityModel.dll": {
-            "assemblyVersion": "35.0.10.2",
-            "fileVersion": "35.0.10.2"
+            "assemblyVersion": "37.2608.26015.0",
+            "fileVersion": "37.2608.26015.0"
           },
           "lib/netcoreapp3.1/Microsoft.Teams.Policy.Administration.Cmdlets.Core.dll": {
-            "assemblyVersion": "35.0.10.2",
-            "fileVersion": "35.0.10.2"
+            "assemblyVersion": "37.2608.26015.0",
+            "fileVersion": "37.2608.26015.0"
           },
           "lib/netcoreapp3.1/Microsoft.Teams.Policy.Administration.Cmdlets.Providers.PolicyRp.dll": {
-            "assemblyVersion": "35.0.10.2",
-            "fileVersion": "35.0.10.2"
+            "assemblyVersion": "37.2608.26015.0",
+            "fileVersion": "37.2608.26015.0"
           },
           "lib/netcoreapp3.1/Microsoft.Teams.Policy.Administration.dll": {
-            "assemblyVersion": "35.0.10.2",
-            "fileVersion": "35.0.10.2"
+            "assemblyVersion": "37.2608.26015.0",
+            "fileVersion": "37.2608.26015.0"
           },
           "lib/netcoreapp3.1/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
@@ -944,7 +944,7 @@
       "Microsoft.Teams.Policy.Administration.Cmdlets.OCE/0.1.12": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.8",
+          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.13",
           "Microsoft.Teams.Policy.Administration.Configurations": "12.2.29",
           "Newtonsoft.Json": "13.0.3",
           "System.Net.Http": "4.3.4"
@@ -965,7 +965,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0"
         }
       },
-      "Microsoft.Teams.PowerShell.Connect/1.10.2": {
+      "Microsoft.Teams.PowerShell.Connect/1.10.5": {
         "dependencies": {
           "Microsoft.Applications.Events.Server": "1.3.0",
           "Microsoft.Ic3.TenantAdminApi.Common.Helper": "1.0.28",
@@ -975,9 +975,10 @@
           "Microsoft.Identity.Client.Extensions.Msal": "4.82.0",
           "Microsoft.Rest.ClientRuntime": "2.3.21",
           "Microsoft.Rest.ClientRuntime.Azure": "3.3.19",
-          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.8",
+          "Microsoft.Teams.ConfigAPI.CmdletHostContract": "3.2.13",
           "Newtonsoft.Json": "13.0.3",
           "OneCollectorChannel": "1.1.0.234",
+          "SQLitePCLRaw.lib.e_sqlite3": "3.50.3",
           "System.IdentityModel.Tokens.Jwt": "8.3.0",
           "System.Management.Automation": "6.2.7",
           "System.Net.Http": "4.3.4",
@@ -985,8 +986,8 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.TeamsCmdlets.PowerShell.Connect.dll": {
-            "assemblyVersion": "1.10.2.0",
-            "fileVersion": "1.10.2.0"
+            "assemblyVersion": "1.10.5.0",
+            "fileVersion": "1.10.5.0"
           },
           "lib/netcoreapp3.1/Microsoft.Web.WebView2.Core.dll": {
             "assemblyVersion": "1.0.2903.40",
@@ -1056,7 +1057,7 @@
       },
       "Microsoft.Teams.PowerShell.TeamsCmdlets/1.6.8": {
         "dependencies": {
-          "Microsoft.Teams.PowerShell.Connect": "1.10.2",
+          "Microsoft.Teams.PowerShell.Connect": "1.10.5",
           "Newtonsoft.Json": "13.0.3",
           "Polly": "7.2.4",
           "Polly.Contrib.WaitAndRetry": "1.1.1",
@@ -1234,7 +1235,7 @@
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
         "dependencies": {
-          "SQLitePCLRaw.lib.e_sqlite3": "2.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3": "3.50.3",
           "SQLitePCLRaw.provider.e_sqlite3": "2.1.2"
         }
       },
@@ -1243,20 +1244,50 @@
           "System.Memory": "4.5.5"
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+      "SQLitePCLRaw.lib.e_sqlite3/3.50.3": {
         "runtimeTargets": {
-          "runtimes/alpine-arm/native/libe_sqlite3.so": {
-            "rid": "alpine-arm",
+          "runtimes/android-arm/native/libe_sqlite3.so": {
+            "rid": "android-arm",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/alpine-arm64/native/libe_sqlite3.so": {
-            "rid": "alpine-arm64",
+          "runtimes/android-arm64/native/libe_sqlite3.so": {
+            "rid": "android-arm64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
-          "runtimes/alpine-x64/native/libe_sqlite3.so": {
-            "rid": "alpine-x64",
+          "runtimes/android-x64/native/libe_sqlite3.so": {
+            "rid": "android-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/android-x86/native/libe_sqlite3.so": {
+            "rid": "android-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm/native/e_sqlite3.a": {
+            "rid": "ios-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/ios-arm64/native/e_sqlite3.a": {
+            "rid": "ios-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-arm64/native/e_sqlite3.a": {
+            "rid": "iossimulator-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-x64/native/e_sqlite3.a": {
+            "rid": "iossimulator-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/iossimulator-x86/native/e_sqlite3.a": {
+            "rid": "iossimulator-x86",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
@@ -1290,8 +1321,18 @@
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
+          "runtimes/linux-musl-s390x/native/libe_sqlite3.so": {
+            "rid": "linux-musl-s390x",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
           "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
             "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-ppc64le/native/libe_sqlite3.so": {
+            "rid": "linux-ppc64le",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
@@ -1327,11 +1368,6 @@
           },
           "runtimes/osx-x64/native/libe_sqlite3.dylib": {
             "rid": "osx-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-arm/native/e_sqlite3.dll": {
-            "rid": "win-arm",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
@@ -2274,7 +2310,7 @@
     }
   },
   "libraries": {
-    "Microsoft.Teams.PowerShell.Module/7.9.0": {
+    "Microsoft.Teams.PowerShell.Module/8.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2531,26 +2567,26 @@
       "path": "microsoft.rest.clientruntime.azure/3.3.19",
       "hashPath": "microsoft.rest.clientruntime.azure.3.3.19.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.8": {
+    "Microsoft.Teams.ConfigAPI.CmdletHostContract/3.2.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xTnN9yN80vZ0FYPx6DCzhe2Savzge3qotCXLGHpha0zywILST3Yp/2ZPW9axqf8ZTHENq9AvqdaHdiPlVuw51w==",
-      "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.8",
-      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.8.nupkg.sha512"
+      "sha512": "sha512-X8ejZ8ypUfP2VvKze44UkBQDG+RMFB9d0k6NAvzQuog/fTEGU0ZI+dyPtY4wjGHzdcpW86dm7e+QLWaPrcuL+Q==",
+      "path": "microsoft.teams.configapi.cmdlethostcontract/3.2.13",
+      "hashPath": "microsoft.teams.configapi.cmdlethostcontract.3.2.13.nupkg.sha512"
     },
-    "Microsoft.Teams.ConfigAPI.Cmdlets/9.714.2": {
+    "Microsoft.Teams.ConfigAPI.Cmdlets/9.908.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mK1+vuDw2kfGDgqK1AckoU4p0ldRSevStewBMEJaz3vrBhah7KbnSL8ftrnHiCSwvWKoW5UOOtEWe+yh46vkgw==",
-      "path": "microsoft.teams.configapi.cmdlets/9.714.2",
-      "hashPath": "microsoft.teams.configapi.cmdlets.9.714.2.nupkg.sha512"
+      "sha512": "sha512-FNwGmA1c/8QPSH2cWUs/1EmkqosL4bLCMqagU1k7OIuhIIzk/8uQKk7K3fk6ZiRz6uJbtsOuFA9JObBTnPBJOw==",
+      "path": "microsoft.teams.configapi.cmdlets/9.908.4",
+      "hashPath": "microsoft.teams.configapi.cmdlets.9.908.4.nupkg.sha512"
     },
-    "Microsoft.Teams.Policy.Administration/35.0.10.2": {
+    "Microsoft.Teams.Policy.Administration/37.2608.26015": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QDwEh5YTNXiHoqz/PWeXLzLe/NtKa51fHLv4/ImUOvSHFXBUnBdR1F9g7tV0kZJdWb59PX4SCoMiw8uBIjc0Jg==",
-      "path": "microsoft.teams.policy.administration/35.0.10.2",
-      "hashPath": "microsoft.teams.policy.administration.35.0.10.2.nupkg.sha512"
+      "sha512": "sha512-8IzBgHd8yDNQQav/IgifJbJWmNUtRKmjdPoyN5JnMe96ruCrr0I4UiEDwLf6twDclnkR9wrxt37vc2WbJycL2A==",
+      "path": "microsoft.teams.policy.administration/37.2608.26015",
+      "hashPath": "microsoft.teams.policy.administration.37.2608.26015.nupkg.sha512"
     },
     "Microsoft.Teams.Policy.Administration.Cmdlets.OCE/0.1.12": {
       "type": "package",
@@ -2566,12 +2602,12 @@
       "path": "microsoft.teams.policy.administration.configurations/12.2.29",
       "hashPath": "microsoft.teams.policy.administration.configurations.12.2.29.nupkg.sha512"
     },
-    "Microsoft.Teams.PowerShell.Connect/1.10.2": {
+    "Microsoft.Teams.PowerShell.Connect/1.10.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c4QaeC/Qc2toDegN8x2P6jkzNuK0rcDu+46WGCL5JMxKkCKfJIAnOYAWDG9CBzbB3X9Je1geN7IlHmBEWINCmA==",
-      "path": "microsoft.teams.powershell.connect/1.10.2",
-      "hashPath": "microsoft.teams.powershell.connect.1.10.2.nupkg.sha512"
+      "sha512": "sha512-dNKQCx6vLxosoTSuZ4Kd2FvWGhr+M2e8SDdKOjKqCIYfEf2/1q6w9G34OJBkIAtRZIDnsDE7hScw0Wgf9ROXJA==",
+      "path": "microsoft.teams.powershell.connect/1.10.5",
+      "hashPath": "microsoft.teams.powershell.connect.1.10.5.nupkg.sha512"
     },
     "Microsoft.Teams.PowerShell.TeamsCmdlets/1.6.8": {
       "type": "package",
@@ -2790,12 +2826,12 @@
       "path": "sqlitepclraw.core/2.1.2",
       "hashPath": "sqlitepclraw.core.2.1.2.nupkg.sha512"
     },
-    "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
+    "SQLitePCLRaw.lib.e_sqlite3/3.50.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zibGtku8M4Eea1R3ZCAxc86QbNvyEN17mAcQkvWKBuHvRpMiK2g5anG4R5Be7cWKSd1i6baYz8y4dMMAKcXKPg==",
-      "path": "sqlitepclraw.lib.e_sqlite3/2.1.2",
-      "hashPath": "sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512"
+      "sha512": "sha512-tVyhqQ8wxgedWiiPFChyZhE8I3PkOM/AE1azsj1qsdYUws13ONBFyi3aDxju4tD2kzedB2q5+50WrTyY0h2gMQ==",
+      "path": "sqlitepclraw.lib.e_sqlite3/3.50.3",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.3.50.3.nupkg.sha512"
     },
     "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
       "type": "package",

@@ -3890,6 +3890,209 @@ end {
 
 <#
 .Synopsis
+Get all Spam Detection Templates for a tenant.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template?<query_params>.
+.Description
+Get all Spam Detection Templates for a tenant.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template?<query_params>.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSpamDetectionTemplatesResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-csmainlineattendantspamdetectiontemplate
+#>
+function Get-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSpamDetectionTemplatesResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Get requested Schema's data from MAS DB.
 .Description
 Get requested Schema's data from MAS DB.
@@ -9121,6 +9324,8 @@ BODY <ICreateAutoAttendantRequest>: .
   [AuthorizedUser <String[]>]: 
   [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
+    [AiDisclaimerCustomText <String>]: 
+    [AiDisclaimerType <String>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
       [ActiveType <String>]: 
@@ -9155,17 +9360,25 @@ BODY <ICreateAutoAttendantRequest>: .
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
     [RingResourceAccountDelegate <Boolean?>]: 
+    [TimeoutDisconnectPromptCustomText <String>]: 
+    [TimeoutDisconnectPromptType <String>]: 
+    [TimeoutThreshold <Int32?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
     [Priority <Int32?>]: 
     [ScheduleId <String>]: 
     [Type <String>]: 
+  [DefaultCallFlowAiDisclaimerCustomText <String>]: 
+  [DefaultCallFlowAiDisclaimerType <String>]: 
   [DefaultCallFlowForceListenMenuEnabled <Boolean?>]: 
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
   [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptCustomText <String>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptType <String>]: 
+  [DefaultCallFlowTimeoutThreshold <Int32?>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
   [HideAuthorizedUser <String[]>]: Gets or sets hidden authorized user ids.
@@ -9187,12 +9400,15 @@ BODY <ICreateAutoAttendantRequest>: .
   [OperatorSharedVoicemailHistoryTemplateId <String>]: 
   [OperatorType <String>]: 
   [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
+  [SpamDetectionTemplateId <String>]: Gets or sets the Mainline Attendant Spam Detection template.
   [TimeZoneId <String>]: 
   [UserNameExtension <String>]: 
   [VoiceId <String>]: 
   [VoiceResponseEnabled <Boolean?>]: 
 
 CALLFLOW <ICallFlow[]>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -9227,6 +9443,9 @@ CALLFLOW <ICallFlow[]>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -9314,6 +9533,18 @@ param(
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowForceListenMenuEnabled},
@@ -9343,6 +9574,24 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowRingResourceAccountDelegate},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${DefaultCallFlowTimeoutThreshold},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -9482,6 +9731,12 @@ param(
     [System.String]
     # Gets or sets the Shared Voicemail AI Triage Settings template.
     ${SharedVoicemailTriageSettingsTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Mainline Attendant Spam Detection template.
+    ${SpamDetectionTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -9777,6 +10032,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <ICreateCallFlowRequest>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -9810,6 +10067,9 @@ BODY <ICreateCallFlowRequest>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 GREETING <IPrompt[]>: .
   [ActiveType <String>]: 
@@ -9858,6 +10118,18 @@ param(
     # .
     # To construct, see NOTES section for BODY properties and create a hash table.
     ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AiDisclaimerType},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -9918,6 +10190,24 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${RingResourceAccountDelegates},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${TimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${TimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${TimeoutThreshold},
 
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
@@ -12515,6 +12805,8 @@ To create the parameters described below, construct a hash table containing the 
 BODY <ICreateAppointmentBookingFlowRequest>: .
   [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
   [ApiDefinition <String>]: Gets or sets the detailed definitions of the api.
+  [AppointmentBookingPlatform <String>]: Gets or sets the appointment booking platform, allowed values: Custom, MicrosoftBookings. When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+  [BookingLink <String>]: Gets or sets the Microsoft Bookings page URL. Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
   [CallerAuthenticationMethod <Int32?>]: Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
   [Description <String>]: Gets or sets the description of the mainline attendant appointment booking flow.
   [Name <String>]: Gets or sets the name of the mainline attendant appointment booking flow.
@@ -12543,6 +12835,20 @@ param(
     [System.String]
     # Gets or sets the detailed definitions of the api.
     ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the appointment booking platform, allowed values: Custom, MicrosoftBookings.
+    # When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+    ${AppointmentBookingPlatform},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Microsoft Bookings page URL.
+    # Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
+    ${BookingLink},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -12763,6 +13069,214 @@ begin {
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_New';
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Create spam detection template for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template.
+.Description
+Create spam detection template for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSpamDetectionTemplateRequest>: .
+  [Action <String>]: Gets or sets the action taken when a call is detected as spam, allowed values: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+  [CallTargetCallPriority <Int32?>]: 
+  [CallTargetEnableSharedVoicemailSystemPromptSuppression <Boolean?>]: 
+  [CallTargetEnableTranscription <Boolean?>]: 
+  [CallTargetId <String>]: 
+  [CallTargetSharedVoicemailHistoryTemplateId <String>]: 
+  [CallTargetType <String>]: 
+  [Description <String>]: Gets or sets the description of the mainline attendant spam detection template.
+  [EnableSpamDetection <Boolean?>]: Gets or sets a value indicating whether spam detection is enabled.
+  [ExclusionScope <String[]>]: Gets or sets the list of phone numbers that will never be considered spam.
+  [InclusionScope <String[]>]: Gets or sets the list of phone numbers that will always be considered spam.
+  [Name <String>]: Gets or sets the name of the mainline attendant spam detection template.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantspamdetectiontemplate
+#>
+function New-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the action taken when a call is detected as spam, allowed values: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+    ${Action},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${CallTargetCallPriority},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableSharedVoicemailSystemPromptSuppression},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableTranscription},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetSharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant spam detection template.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether spam detection is enabled.
+    ${EnableSpamDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # Gets or sets the list of phone numbers that will never be considered spam.
+    ${ExclusionScope},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # Gets or sets the list of phone numbers that will always be considered spam.
+    ${InclusionScope},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant spam detection template.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantSpamDetectionTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantSpamDetectionTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -13111,10 +13625,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest>: CmdletDirectRoutingNumberCreationRequest
+  [AcquiredCapability <String>]: 
   [Description <String>]: 
   [EndingNumber <String>]: 
   [FileContent <String>]: 
+  [LocationId <String>]: 
+  [NetworkSiteId <String>]: 
+  [ReverseNumberLookup <String>]: 
   [StartingNumber <String>]: 
+  [Tag <String>]: 
   [TelephoneNumber <String>]: 
 .Link
 https://docs.microsoft.com/en-us/powershell/module/teams/new-csonlinedirectroutingtelephonenumberuploadorder
@@ -13129,6 +13648,12 @@ param(
     # CmdletDirectRoutingNumberCreationRequest
     # To construct, see NOTES section for BODY properties and create a hash table.
     ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AcquiredCapability},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -13152,7 +13677,31 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${LocationId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${NetworkSiteId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${ReverseNumberLookup},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${StartingNumber},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${Tag},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -19218,6 +19767,204 @@ end {
 
 <#
 .Synopsis
+Get all Spam Detection Templates for a tenant.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template?<query_params>.
+.Description
+Get all Spam Detection Templates for a tenant.
+GET api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template?<query_params>.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSpamDetectionTemplatesResponse
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/get-csmainlineattendantspamdetectiontemplate
+#>
+function Get-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetAllSpamDetectionTemplatesResponse], [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IGetSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
+param(
+    [Parameter(ParameterSetName='Get1', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${Descending},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${First},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${NameFilter},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.Int32]
+    # .
+    ${Skip},
+
+    [Parameter(ParameterSetName='Get')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Query')]
+    [System.String]
+    # .
+    ${SortBy},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Get = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_Get';
+            Get1 = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_Get1';
+            GetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsMainlineAttendantSpamDetectionTemplate_GetViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Get requested Schema's data from MAS DB.
 .Description
 Get requested Schema's data from MAS DB.
@@ -24452,6 +25199,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <ICreateCallFlowRequest>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -24485,6 +25234,9 @@ BODY <ICreateCallFlowRequest>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 GREETING <IPrompt[]>: .
   [ActiveType <String>]: 
@@ -24533,6 +25285,18 @@ param(
     # .
     # To construct, see NOTES section for BODY properties and create a hash table.
     ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AiDisclaimerType},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -24593,6 +25357,24 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${RingResourceAccountDelegates},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${TimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${TimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${TimeoutThreshold},
 
     [Parameter(DontShow)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
@@ -25593,6 +26375,8 @@ BODY <ICreateAutoAttendantRequest>: .
   [AuthorizedUser <String[]>]: 
   [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
+    [AiDisclaimerCustomText <String>]: 
+    [AiDisclaimerType <String>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
       [ActiveType <String>]: 
@@ -25627,17 +26411,25 @@ BODY <ICreateAutoAttendantRequest>: .
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
     [RingResourceAccountDelegate <Boolean?>]: 
+    [TimeoutDisconnectPromptCustomText <String>]: 
+    [TimeoutDisconnectPromptType <String>]: 
+    [TimeoutThreshold <Int32?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
     [Priority <Int32?>]: 
     [ScheduleId <String>]: 
     [Type <String>]: 
+  [DefaultCallFlowAiDisclaimerCustomText <String>]: 
+  [DefaultCallFlowAiDisclaimerType <String>]: 
   [DefaultCallFlowForceListenMenuEnabled <Boolean?>]: 
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
   [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptCustomText <String>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptType <String>]: 
+  [DefaultCallFlowTimeoutThreshold <Int32?>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
   [HideAuthorizedUser <String[]>]: Gets or sets hidden authorized user ids.
@@ -25659,12 +26451,15 @@ BODY <ICreateAutoAttendantRequest>: .
   [OperatorSharedVoicemailHistoryTemplateId <String>]: 
   [OperatorType <String>]: 
   [SharedVoicemailTriageSettingsId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
+  [SpamDetectionTemplateId <String>]: Gets or sets the Mainline Attendant Spam Detection template.
   [TimeZoneId <String>]: 
   [UserNameExtension <String>]: 
   [VoiceId <String>]: 
   [VoiceResponseEnabled <Boolean?>]: 
 
 CALLFLOW <ICallFlow[]>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -25699,6 +26494,9 @@ CALLFLOW <ICallFlow[]>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -25786,6 +26584,18 @@ param(
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowForceListenMenuEnabled},
@@ -25815,6 +26625,24 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowRingResourceAccountDelegate},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${DefaultCallFlowTimeoutThreshold},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -25954,6 +26782,12 @@ param(
     [System.String]
     # Gets or sets the Shared Voicemail AI Triage Settings template.
     ${SharedVoicemailTriageSettingsTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Mainline Attendant Spam Detection template.
+    ${SpamDetectionTemplateId},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -27618,6 +28452,8 @@ To create the parameters described below, construct a hash table containing the 
 BODY <ICreateAppointmentBookingFlowRequest>: .
   [ApiAuthenticationType <Int32?>]: Gets or sets the api authentication type, allowed values: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
   [ApiDefinition <String>]: Gets or sets the detailed definitions of the api.
+  [AppointmentBookingPlatform <String>]: Gets or sets the appointment booking platform, allowed values: Custom, MicrosoftBookings. When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+  [BookingLink <String>]: Gets or sets the Microsoft Bookings page URL. Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
   [CallerAuthenticationMethod <Int32?>]: Gets or sets the caller authentication method, allowed values: Sms, Email, VerificationLink, Voiceprint, UserDetails.
   [Description <String>]: Gets or sets the description of the mainline attendant appointment booking flow.
   [Name <String>]: Gets or sets the name of the mainline attendant appointment booking flow.
@@ -27646,6 +28482,20 @@ param(
     [System.String]
     # Gets or sets the detailed definitions of the api.
     ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the appointment booking platform, allowed values: Custom, MicrosoftBookings.
+    # When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+    ${AppointmentBookingPlatform},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Microsoft Bookings page URL.
+    # Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
+    ${BookingLink},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -27861,6 +28711,209 @@ begin {
         $mapping = @{
             New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_New';
             NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantQuestionAnswerFlow_NewExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Create spam detection template for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template.
+.Description
+Create spam detection template for mainline attendant POST api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <ICreateSpamDetectionTemplateRequest>: .
+  [Action <String>]: Gets or sets the action taken when a call is detected as spam, allowed values: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+  [CallTargetCallPriority <Int32?>]: 
+  [CallTargetEnableSharedVoicemailSystemPromptSuppression <Boolean?>]: 
+  [CallTargetEnableTranscription <Boolean?>]: 
+  [CallTargetId <String>]: 
+  [CallTargetSharedVoicemailHistoryTemplateId <String>]: 
+  [CallTargetType <String>]: 
+  [Description <String>]: Gets or sets the description of the mainline attendant spam detection template.
+  [EnableSpamDetection <Boolean?>]: Gets or sets a value indicating whether spam detection is enabled.
+  [ExclusionScope <String[]>]: Gets or sets the list of phone numbers that will never be considered spam.
+  [InclusionScope <String[]>]: Gets or sets the list of phone numbers that will always be considered spam.
+  [Name <String>]: Gets or sets the name of the mainline attendant spam detection template.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/new-csmainlineattendantspamdetectiontemplate
+#>
+function New-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='NewExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='New', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ICreateSpamDetectionTemplateRequest]
+    # .
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the action taken when a call is detected as spam, allowed values: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+    ${Action},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${CallTargetCallPriority},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableSharedVoicemailSystemPromptSuppression},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableTranscription},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetSharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetType},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the description of the mainline attendant spam detection template.
+    ${Description},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether spam detection is enabled.
+    ${EnableSpamDetection},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # Gets or sets the list of phone numbers that will never be considered spam.
+    ${ExclusionScope},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # Gets or sets the list of phone numbers that will always be considered spam.
+    ${InclusionScope},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the name of the mainline attendant spam detection template.
+    ${Name},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            New = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantSpamDetectionTemplate_New';
+            NewExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\New-CsMainlineAttendantSpamDetectionTemplate_NewExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -28194,10 +29247,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <ISkypeTelephoneNumberMgmtCmdletDirectRoutingNumberCreationRequest>: CmdletDirectRoutingNumberCreationRequest
+  [AcquiredCapability <String>]: 
   [Description <String>]: 
   [EndingNumber <String>]: 
   [FileContent <String>]: 
+  [LocationId <String>]: 
+  [NetworkSiteId <String>]: 
+  [ReverseNumberLookup <String>]: 
   [StartingNumber <String>]: 
+  [Tag <String>]: 
   [TelephoneNumber <String>]: 
 .Link
 https://docs.microsoft.com/en-us/powershell/module/teams/new-csonlinedirectroutingtelephonenumberuploadorder
@@ -28212,6 +29270,12 @@ param(
     # CmdletDirectRoutingNumberCreationRequest
     # To construct, see NOTES section for BODY properties and create a hash table.
     ${Body},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${AcquiredCapability},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -28235,7 +29299,31 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${LocationId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${NetworkSiteId},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${ReverseNumberLookup},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${StartingNumber},
+
+    [Parameter(ParameterSetName='NewExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${Tag},
 
     [Parameter(ParameterSetName='NewExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -32035,6 +33123,171 @@ end {
 
 <#
 .Synopsis
+Remove mainline attendant spam detection template.
+DELETE Teams.VoiceApps/mainline-attendant-flow/spam-detection-template/identity.
+.Description
+Remove mainline attendant spam detection template.
+DELETE Teams.VoiceApps/mainline-attendant-flow/spam-detection-template/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-csmainlineattendantspamdetectiontemplate
+#>
+function Remove-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsMainlineAttendantSpamDetectionTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsMainlineAttendantSpamDetectionTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
 Remove application instance associations.
 DELETE api/v1.0/tenants/tenantId/applicationinstanceassociations/endpointId.
 .Description
@@ -34089,6 +35342,8 @@ BODY <IAutoAttendant>: .
   [AuthorizedUser <String[]>]: 
   [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
+    [AiDisclaimerCustomText <String>]: 
+    [AiDisclaimerType <String>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
       [ActiveType <String>]: 
@@ -34123,17 +35378,25 @@ BODY <IAutoAttendant>: .
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
     [RingResourceAccountDelegate <Boolean?>]: 
+    [TimeoutDisconnectPromptCustomText <String>]: 
+    [TimeoutDisconnectPromptType <String>]: 
+    [TimeoutThreshold <Int32?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
     [Priority <Int32?>]: 
     [ScheduleId <String>]: 
     [Type <String>]: 
+  [DefaultCallFlowAiDisclaimerCustomText <String>]: 
+  [DefaultCallFlowAiDisclaimerType <String>]: 
   [DefaultCallFlowForceListenMenuEnabled <Boolean?>]: 
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
   [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptCustomText <String>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptType <String>]: 
+  [DefaultCallFlowTimeoutThreshold <Int32?>]: 
   [DialByNameResourceId <String>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
@@ -34185,6 +35448,7 @@ BODY <IAutoAttendant>: .
     [WeeklyRecurrentScheduleWednesdayHour <ITimeRange[]>]: 
   [SharedVoicemailHistoryTemplateId <String>]: 
   [SharedVoicemailTriageSettingsTemplateId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
+  [SpamDetectionTemplateId <String>]: Gets or sets the Mainline Attendant Spam Detection template.
   [Status <IStatusRecord2[]>]: 
     [AuxiliaryData <String[]>]: Get or sets auxiliary data.
     [ErrorCode <String>]: Gets or sets error code of audio, grammar.
@@ -34200,6 +35464,8 @@ BODY <IAutoAttendant>: .
   [VoiceResponseEnabled <Boolean?>]: 
 
 CALLFLOW <ICallFlow[]>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -34234,6 +35500,9 @@ CALLFLOW <ICallFlow[]>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -34424,6 +35693,20 @@ param(
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowForceListenMenuEnabled},
@@ -34457,6 +35740,27 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowRingResourceAccountDelegate},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${DefaultCallFlowTimeoutThreshold},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -34676,6 +35980,13 @@ param(
     [System.String]
     # Gets or sets the Shared Voicemail AI Triage Settings template.
     ${SharedVoicemailTriageSettingsTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Mainline Attendant Spam Detection template.
+    ${SpamDetectionTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -36503,6 +37814,8 @@ To create the parameters described below, construct a hash table containing the 
 BODY <IUpdateAppointmentBookingFlowRequest>: Represents a request to update a mainline attendant appointment booking flow.
   [ApiAuthenticationType <Int32?>]: Defines the type of API authentication to be used.         Supported values include: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
   [ApiDefinition <String>]: Contains detailed specifications or schema definitions for the API.
+  [AppointmentBookingPlatform <String>]: The appointment booking platform, allowed values: Custom, MicrosoftBookings. When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+  [BookingLink <String>]: The Microsoft Bookings page URL. Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
   [CallerAuthenticationMethod <Int32?>]: Specifies the method used to authenticate the caller.         Supported values include: Sms, Email, VerificationLink, Voiceprint, UserDetails.
   [Description <String>]: A brief description of the appointment booking flow.
   [Identity <String>]: The unique identifier for the appointment booking flow.
@@ -36601,6 +37914,22 @@ param(
     [System.String]
     # Contains detailed specifications or schema definitions for the API.
     ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The appointment booking platform, allowed values: Custom, MicrosoftBookings.
+    # When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+    ${AppointmentBookingPlatform},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The Microsoft Bookings page URL.
+    # Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
+    ${BookingLink},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -36941,6 +38270,299 @@ begin {
             SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetExpanded';
             SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetViaIdentity';
             SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+<#
+.Synopsis
+Update spam detection template for mainline attendant PUT api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template/identity
+.Description
+Update spam detection template for mainline attendant PUT api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template/identity
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <IUpdateSpamDetectionTemplateRequest>: Represents a request to update a mainline attendant spam detection template.
+  [Action <String>]: Specifies the action taken when a call is detected as spam.         Supported values include: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+  [CallTargetCallPriority <Int32?>]: 
+  [CallTargetEnableSharedVoicemailSystemPromptSuppression <Boolean?>]: 
+  [CallTargetEnableTranscription <Boolean?>]: 
+  [CallTargetId <String>]: 
+  [CallTargetSharedVoicemailHistoryTemplateId <String>]: 
+  [CallTargetType <String>]: 
+  [Description <String>]: A brief description of the spam detection template.
+  [EnableSpamDetection <Boolean?>]: Indicates whether spam detection is enabled.
+  [ExclusionScope <String[]>]: The list of phone numbers that will never be considered spam.
+  [InclusionScope <String[]>]: The list of phone numbers that will always be considered spam.
+  [Name <String>]: The name assigned to the spam detection template.
+  [RelatedConfigurationId <IRelatedConfiguration[]>]: The configuration IDs of the mainline attendants the spam detection template is assigned to.
+    [Id <String>]: Gets or sets the identifier of the base configuration.
+    [Name <String>]: Gets or sets the name of the base configuration.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+
+RELATEDCONFIGURATIONID <IRelatedConfiguration[]>: The configuration IDs of the mainline attendants the spam detection template is assigned to.
+  [Id <String>]: Gets or sets the identifier of the base configuration.
+  [Name <String>]: Gets or sets the name of the base configuration.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-csmainlineattendantspamdetectiontemplate
+#>
+function Set-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # Template Identity.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateRequest]
+    # Represents a request to update a mainline attendant spam detection template.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Specifies the action taken when a call is detected as spam.Supported values include: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+    ${Action},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${CallTargetCallPriority},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableSharedVoicemailSystemPromptSuppression},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableTranscription},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetSharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # A brief description of the spam detection template.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Indicates whether spam detection is enabled.
+    ${EnableSpamDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # The list of phone numbers that will never be considered spam.
+    ${ExclusionScope},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # The list of phone numbers that will always be considered spam.
+    ${InclusionScope},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The name assigned to the spam detection template.
+    ${Name},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IRelatedConfiguration[]]
+    # The configuration IDs of the mainline attendants the spam detection template is assigned to.
+    # To construct, see NOTES section for RELATEDCONFIGURATIONID properties and create a hash table.
+    ${RelatedConfigurationId},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -38346,6 +39968,8 @@ To create the parameters described below, construct a hash table containing the 
 
 BODY <IVoicemailSettings>: User Voicemail Settings base class.
   [CallAnswerRule <String>]: Gets or sets CallAnswerRule.
+  [CallToActionDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI call to action detection is enabled.
+  [CategoryDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI category detection is enabled.
   [DefaultGreetingPromptOverwrite <String>]: Gets or sets DefaultGreetingPromptOverwrite.
   [DefaultOofGreetingPromptOverwrite <String>]: Gets or sets DefaultOofGreetingPromptOverwrite.
   [OofGreetingEnabled <Boolean?>]: Gets or sets a value indicating whether Out of Office Greeting         is enabled.
@@ -38353,6 +39977,8 @@ BODY <IVoicemailSettings>: User Voicemail Settings base class.
   [PromptLanguage <String>]: Gets or sets prompt language.
   [ShareData <Boolean?>]: Gets or sets a value indicating whether ShareData         is enabled.
   [TransferTarget <String>]: Gets or sets TransferTarget.
+  [UrgencyDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI urgency detection is enabled.
+  [VoiceToTextSummaryEnabled <Boolean?>]: Gets or sets a value indicating whether AI voice to text summary is enabled.
   [VoicemailEnabled <Boolean?>]: Gets or sets a value indicating whether voicemail is enabled.
 
 INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
@@ -38436,6 +40062,20 @@ param(
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI call to action detection is enabled.
+    ${CallToActionDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI category detection is enabled.
+    ${CategoryDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # Gets or sets DefaultGreetingPromptOverwrite.
     ${DefaultGreetingPromptOverwrite},
@@ -38481,6 +40121,20 @@ param(
     [System.String]
     # Gets or sets TransferTarget.
     ${TransferTarget},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI urgency detection is enabled.
+    ${UrgencyDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI voice to text summary is enabled.
+    ${VoiceToTextSummaryEnabled},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -40319,6 +41973,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <IUserRoutingSettings>: .
+  [BusyOnBusyOption <String>]: 
   [CallGroupDetailDelay <String>]: 
   [CallGroupOrder <String>]: 
   [CallGroupTargets <String[]>]: 
@@ -40339,6 +41994,7 @@ BODY <IUserRoutingSettings>: .
   [GroupNotificationOverride <String>]: 
   [IsForwardingEnabled <Boolean?>]: 
   [IsUnansweredEnabled <Boolean?>]: 
+  [MaximumConcurrentCalls <Int32?>]: 
   [SipUri <String>]: 
   [UnansweredDelay <String>]: 
   [UnansweredTarget <String>]: 
@@ -40440,6 +42096,13 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${BusyOnBusyOption},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${CallGroupDetailDelay},
 
     [Parameter(ParameterSetName='SetExpanded')]
@@ -40507,6 +42170,13 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${IsUnansweredEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${MaximumConcurrentCalls},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -43199,6 +44869,176 @@ end {
 
 <#
 .Synopsis
+Remove mainline attendant spam detection template.
+DELETE Teams.VoiceApps/mainline-attendant-flow/spam-detection-template/identity.
+.Description
+Remove mainline attendant spam detection template.
+DELETE Teams.VoiceApps/mainline-attendant-flow/spam-detection-template/identity.
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/remove-csmainlineattendantspamdetectiontemplate
+#>
+function Remove-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IDiagnosticRecord])]
+[CmdletBinding(DefaultParameterSetName='Remove', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Remove', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # .
+    ${Identity},
+
+    [Parameter(ParameterSetName='RemoveViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Remove = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsMainlineAttendantSpamDetectionTemplate_Remove';
+            RemoveViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Remove-CsMainlineAttendantSpamDetectionTemplate_RemoveViaIdentity';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
 Remove application instance associations.
 DELETE api/v1.0/tenants/tenantId/applicationinstanceassociations/endpointId.
 .Description
@@ -45313,6 +47153,8 @@ BODY <IAutoAttendant>: .
   [AuthorizedUser <String[]>]: 
   [AutoRecordingTemplateId <String>]: Gets or sets the Auto Recording template.
   [CallFlow <ICallFlow[]>]: 
+    [AiDisclaimerCustomText <String>]: 
+    [AiDisclaimerType <String>]: 
     [ForceListenMenuEnabled <Boolean?>]: 
     [Greeting <IPrompt[]>]: 
       [ActiveType <String>]: 
@@ -45347,17 +47189,25 @@ BODY <IAutoAttendant>: .
     [MenuPrompt <IPrompt[]>]: 
     [Name <String>]: 
     [RingResourceAccountDelegate <Boolean?>]: 
+    [TimeoutDisconnectPromptCustomText <String>]: 
+    [TimeoutDisconnectPromptType <String>]: 
+    [TimeoutThreshold <Int32?>]: 
   [CallHandlingAssociation <ICallHandlingAssociation[]>]: 
     [CallFlowId <String>]: 
     [Enabled <Boolean?>]: 
     [Priority <Int32?>]: 
     [ScheduleId <String>]: 
     [Type <String>]: 
+  [DefaultCallFlowAiDisclaimerCustomText <String>]: 
+  [DefaultCallFlowAiDisclaimerType <String>]: 
   [DefaultCallFlowForceListenMenuEnabled <Boolean?>]: 
   [DefaultCallFlowGreeting <IPrompt[]>]: 
   [DefaultCallFlowId <String>]: 
   [DefaultCallFlowName <String>]: 
   [DefaultCallFlowRingResourceAccountDelegate <Boolean?>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptCustomText <String>]: 
+  [DefaultCallFlowTimeoutDisconnectPromptType <String>]: 
+  [DefaultCallFlowTimeoutThreshold <Int32?>]: 
   [DialByNameResourceId <String>]: 
   [ExclusionScopeGroupDialScopeGroupId <String[]>]: 
   [ExclusionScopeType <String>]: 
@@ -45409,6 +47259,7 @@ BODY <IAutoAttendant>: .
     [WeeklyRecurrentScheduleWednesdayHour <ITimeRange[]>]: 
   [SharedVoicemailHistoryTemplateId <String>]: 
   [SharedVoicemailTriageSettingsTemplateId <String>]: Gets or sets the Shared Voicemail AI Triage Settings template.
+  [SpamDetectionTemplateId <String>]: Gets or sets the Mainline Attendant Spam Detection template.
   [Status <IStatusRecord2[]>]: 
     [AuxiliaryData <String[]>]: Get or sets auxiliary data.
     [ErrorCode <String>]: Gets or sets error code of audio, grammar.
@@ -45424,6 +47275,8 @@ BODY <IAutoAttendant>: .
   [VoiceResponseEnabled <Boolean?>]: 
 
 CALLFLOW <ICallFlow[]>: .
+  [AiDisclaimerCustomText <String>]: 
+  [AiDisclaimerType <String>]: 
   [ForceListenMenuEnabled <Boolean?>]: 
   [Greeting <IPrompt[]>]: 
     [ActiveType <String>]: 
@@ -45458,6 +47311,9 @@ CALLFLOW <ICallFlow[]>: .
   [MenuPrompt <IPrompt[]>]: 
   [Name <String>]: 
   [RingResourceAccountDelegate <Boolean?>]: 
+  [TimeoutDisconnectPromptCustomText <String>]: 
+  [TimeoutDisconnectPromptType <String>]: 
+  [TimeoutThreshold <Int32?>]: 
 
 CALLHANDLINGASSOCIATION <ICallHandlingAssociation[]>: .
   [CallFlowId <String>]: 
@@ -45648,6 +47504,20 @@ param(
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerCustomText},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowAiDisclaimerType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowForceListenMenuEnabled},
@@ -45681,6 +47551,27 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${DefaultCallFlowRingResourceAccountDelegate},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptCustomText},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${DefaultCallFlowTimeoutDisconnectPromptType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${DefaultCallFlowTimeoutThreshold},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -45900,6 +47791,13 @@ param(
     [System.String]
     # Gets or sets the Shared Voicemail AI Triage Settings template.
     ${SharedVoicemailTriageSettingsTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Gets or sets the Mainline Attendant Spam Detection template.
+    ${SpamDetectionTemplateId},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -47752,6 +49650,8 @@ To create the parameters described below, construct a hash table containing the 
 BODY <IUpdateAppointmentBookingFlowRequest>: Represents a request to update a mainline attendant appointment booking flow.
   [ApiAuthenticationType <Int32?>]: Defines the type of API authentication to be used.         Supported values include: Basic, ApiKey, BearerTokenStatic, BearerTokenDynamic.
   [ApiDefinition <String>]: Contains detailed specifications or schema definitions for the API.
+  [AppointmentBookingPlatform <String>]: The appointment booking platform, allowed values: Custom, MicrosoftBookings. When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+  [BookingLink <String>]: The Microsoft Bookings page URL. Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
   [CallerAuthenticationMethod <Int32?>]: Specifies the method used to authenticate the caller.         Supported values include: Sms, Email, VerificationLink, Voiceprint, UserDetails.
   [Description <String>]: A brief description of the appointment booking flow.
   [Identity <String>]: The unique identifier for the appointment booking flow.
@@ -47850,6 +49750,22 @@ param(
     [System.String]
     # Contains detailed specifications or schema definitions for the API.
     ${ApiDefinitions},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The appointment booking platform, allowed values: Custom, MicrosoftBookings.
+    # When MicrosoftBookings, BookingLink is required and CallerAuthenticationMethod/ApiAuthenticationType/ApiDefinitions are ignored.
+    ${AppointmentBookingPlatform},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The Microsoft Bookings page URL.
+    # Required when AppointmentBookingPlatform is MicrosoftBookings; ignored when Custom.
+    ${BookingLink},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -48195,6 +50111,304 @@ begin {
             SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetExpanded';
             SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetViaIdentity';
             SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantQuestionAnswerFlow_SetViaIdentityExpanded';
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+# ----------------------------------------------------------------------------------
+# Code generated by Microsoft (R) AutoRest Code Generator (autorest: 3.5.1, generator: @autorest/powershell@3.0.493)
+# Changes may cause incorrect behavior and will be lost if the code is regenerated.
+# ----------------------------------------------------------------------------------
+
+<#
+.Synopsis
+Update spam detection template for mainline attendant PUT api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template/identity
+.Description
+Update spam detection template for mainline attendant PUT api/v1.0/tenants/tenantId/mainline-attendant-flow/spam-detection-template/identity
+.Example
+{{ Add code here }}
+.Example
+{{ Add code here }}
+
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity
+.Inputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateRequest
+.Outputs
+Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateResponse
+.Notes
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODY <IUpdateSpamDetectionTemplateRequest>: Represents a request to update a mainline attendant spam detection template.
+  [Action <String>]: Specifies the action taken when a call is detected as spam.         Supported values include: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+  [CallTargetCallPriority <Int32?>]: 
+  [CallTargetEnableSharedVoicemailSystemPromptSuppression <Boolean?>]: 
+  [CallTargetEnableTranscription <Boolean?>]: 
+  [CallTargetId <String>]: 
+  [CallTargetSharedVoicemailHistoryTemplateId <String>]: 
+  [CallTargetType <String>]: 
+  [Description <String>]: A brief description of the spam detection template.
+  [EnableSpamDetection <Boolean?>]: Indicates whether spam detection is enabled.
+  [ExclusionScope <String[]>]: The list of phone numbers that will never be considered spam.
+  [InclusionScope <String[]>]: The list of phone numbers that will always be considered spam.
+  [Name <String>]: The name assigned to the spam detection template.
+  [RelatedConfigurationId <IRelatedConfiguration[]>]: The configuration IDs of the mainline attendants the spam detection template is assigned to.
+    [Id <String>]: Gets or sets the identifier of the base configuration.
+    [Name <String>]: Gets or sets the name of the base configuration.
+
+INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
+  [AppId <String>]: 
+  [AudioFileId <String>]: 
+  [Bssid <String>]: 
+  [CallerNumber <String>]: 
+  [ChassisId <String>]: 
+  [CivicAddressId <String>]: 
+  [ConfigName <String>]: 
+  [ConfigType <String>]: string
+  [ConnectionId <String>]: Connection Id.
+  [ConnectorInstanceId <String>]: Connector Instance Id
+  [Country <String>]: 
+  [DialedNumber <String>]: 
+  [EndpointId <String>]: Application instance Id.
+  [ErrorReportId <String>]: The UUID of a report instance
+  [GroupId <String>]: The ID of a group whose policy assignments will be returned.
+  [Id <String>]: 
+  [Identity <String>]: 
+  [Locale <String>]: 
+  [LocationId <String>]: Location id.
+  [MemberId <String>]: ObjectId of the to-be-added member.
+  [Name <String>]: Setting name
+  [ObjectId <String>]: Application instance object ID.
+  [OdataId <String>]: A composite URI of a template.
+  [OperationId <String>]: The ID of a batch policy assignment operation.
+  [OrchestrationId <String>]: The Id of specific Orchestration
+  [OrderId <String>]: 
+  [OwnerId <String>]: ObjectId of the group owner
+  [PackageName <String>]: The name of a specific policy package
+  [PartitionKey <String>]: PartitionKey of the table.
+  [PolicyType <String>]: The policy type for which group policy assignments will be returned.
+  [PublicTemplateLocale <String>]: Language and country code for localization of publicly available templates.
+  [Region <String>]: Region to query Bvd table.
+  [SubnetId <String>]: 
+  [Table <String>]: Bvd table name.
+  [TeamId <String>]: Team Id
+  [TelephoneNumber <String>]: An instance of hybrid telephone number.
+  [TenantId <String>]: TenantId. Guid
+  [UserId <String>]: UserId.
+  [Version <String>]: 
+  [WfmTeamId <String>]: Team Id
+
+RELATEDCONFIGURATIONID <IRelatedConfiguration[]>: The configuration IDs of the mainline attendants the spam detection template is assigned to.
+  [Id <String>]: Gets or sets the identifier of the base configuration.
+  [Name <String>]: Gets or sets the name of the base configuration.
+.Link
+https://docs.microsoft.com/en-us/powershell/module/teams/set-csmainlineattendantspamdetectiontemplate
+#>
+function Set-CsMainlineAttendantSpamDetectionTemplate {
+[OutputType([Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateResponse])]
+[CmdletBinding(DefaultParameterSetName='SetExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(ParameterSetName='Set', Mandatory)]
+    [Parameter(ParameterSetName='SetExpanded', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [System.String]
+    # Template Identity.
+    ${Identity},
+
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Path')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IConfigApiBasedCmdletsIdentity]
+    # Identity Parameter
+    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+    ${InputObject},
+
+    [Parameter(ParameterSetName='Set', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='SetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IUpdateSpamDetectionTemplateRequest]
+    # Represents a request to update a mainline attendant spam detection template.
+    # To construct, see NOTES section for BODY properties and create a hash table.
+    ${Body},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # Specifies the action taken when a call is detected as spam.Supported values include: DisconnectCall, TransferCallToOperator, TransferCallToTarget.
+    ${Action},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${CallTargetCallPriority},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableSharedVoicemailSystemPromptSuppression},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # .
+    ${CallTargetEnableTranscription},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetSharedVoicemailHistoryTemplateId},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
+    ${CallTargetType},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # A brief description of the spam detection template.
+    ${Description},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Indicates whether spam detection is enabled.
+    ${EnableSpamDetection},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # The list of phone numbers that will never be considered spam.
+    ${ExclusionScope},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    # The list of phone numbers that will always be considered spam.
+    ${InclusionScope},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # The name assigned to the spam detection template.
+    ${Name},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [AllowEmptyCollection()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IRelatedConfiguration[]]
+    # The configuration IDs of the mainline attendants the spam detection template is assigned to.
+    # To construct, see NOTES section for RELATEDCONFIGURATIONID properties and create a hash table.
+    ${RelatedConfigurationId},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Wait for .NET debugger to attach
+    ${Break},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be appended to the front of the pipeline
+    ${HttpPipelineAppend},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
+    ${HttpPipelinePrepend},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Uri]
+    # The URI for the proxy server to use
+    ${Proxy},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.PSCredential]
+    # Credentials for a proxy server to use for the remote call
+    ${ProxyCredential},
+
+    [Parameter(DontShow)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Use the default credentials for the proxy
+    ${ProxyUseDefaultCredentials}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            Set = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_Set';
+            SetExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetExpanded';
+            SetViaIdentity = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetViaIdentity';
+            SetViaIdentityExpanded = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsMainlineAttendantSpamDetectionTemplate_SetViaIdentityExpanded';
         }
 
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
@@ -49635,6 +51849,8 @@ To create the parameters described below, construct a hash table containing the 
 
 BODY <IVoicemailSettings>: User Voicemail Settings base class.
   [CallAnswerRule <String>]: Gets or sets CallAnswerRule.
+  [CallToActionDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI call to action detection is enabled.
+  [CategoryDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI category detection is enabled.
   [DefaultGreetingPromptOverwrite <String>]: Gets or sets DefaultGreetingPromptOverwrite.
   [DefaultOofGreetingPromptOverwrite <String>]: Gets or sets DefaultOofGreetingPromptOverwrite.
   [OofGreetingEnabled <Boolean?>]: Gets or sets a value indicating whether Out of Office Greeting         is enabled.
@@ -49642,6 +51858,8 @@ BODY <IVoicemailSettings>: User Voicemail Settings base class.
   [PromptLanguage <String>]: Gets or sets prompt language.
   [ShareData <Boolean?>]: Gets or sets a value indicating whether ShareData         is enabled.
   [TransferTarget <String>]: Gets or sets TransferTarget.
+  [UrgencyDetectionEnabled <Boolean?>]: Gets or sets a value indicating whether AI urgency detection is enabled.
+  [VoiceToTextSummaryEnabled <Boolean?>]: Gets or sets a value indicating whether AI voice to text summary is enabled.
   [VoicemailEnabled <Boolean?>]: Gets or sets a value indicating whether voicemail is enabled.
 
 INPUTOBJECT <IConfigApiBasedCmdletsIdentity>: Identity Parameter
@@ -49725,6 +51943,20 @@ param(
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI call to action detection is enabled.
+    ${CallToActionDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI category detection is enabled.
+    ${CategoryDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # Gets or sets DefaultGreetingPromptOverwrite.
     ${DefaultGreetingPromptOverwrite},
@@ -49770,6 +52002,20 @@ param(
     [System.String]
     # Gets or sets TransferTarget.
     ${TransferTarget},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI urgency detection is enabled.
+    ${UrgencyDetectionEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    # Gets or sets a value indicating whether AI voice to text summary is enabled.
+    ${VoiceToTextSummaryEnabled},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]
@@ -51653,6 +53899,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODY <IUserRoutingSettings>: .
+  [BusyOnBusyOption <String>]: 
   [CallGroupDetailDelay <String>]: 
   [CallGroupOrder <String>]: 
   [CallGroupTargets <String[]>]: 
@@ -51673,6 +53920,7 @@ BODY <IUserRoutingSettings>: .
   [GroupNotificationOverride <String>]: 
   [IsForwardingEnabled <Boolean?>]: 
   [IsUnansweredEnabled <Boolean?>]: 
+  [MaximumConcurrentCalls <Int32?>]: 
   [SipUri <String>]: 
   [UnansweredDelay <String>]: 
   [UnansweredTarget <String>]: 
@@ -51774,6 +54022,13 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     # .
+    ${BusyOnBusyOption},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    # .
     ${CallGroupDetailDelay},
 
     [Parameter(ParameterSetName='SetExpanded')]
@@ -51841,6 +54096,13 @@ param(
     [System.Management.Automation.SwitchParameter]
     # .
     ${IsUnansweredEnabled},
+
+    [Parameter(ParameterSetName='SetExpanded')]
+    [Parameter(ParameterSetName='SetViaIdentityExpanded')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    # .
+    ${MaximumConcurrentCalls},
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Parameter(ParameterSetName='SetViaIdentityExpanded')]

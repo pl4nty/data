@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.3.0
+.VERSION 1.3.1
 
 .GUID 9516d007-5e02-4bfd-84a4-436ea6778687
 
@@ -25,6 +25,10 @@
 .EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
+2026-09-16 v1.3.1
+    Add device registration status capture (dsregcmd /status) as a new diagnostic step in the support bundle process.
+    Update the disk check and titles and determine peer eligibility using total disk capacity instead of available free space.
+
 2026-04-22 v1.3.0
     Introduce -AsObjects switch to return results as objects for better integration with other tools.
     Introduce firewall rule checks for port validation.
@@ -553,7 +557,7 @@ function Get-DOPolicyTable()
         },
         {
             "PolicyCode": "DOMinDiskSizeAllowedToPeer",
-            "PolicyName": "Minimum Free Disk Size",
+            "PolicyName": "Minimum Disk Size",
             "PolicyUnit": "GB",
             "Description": "Required minimum disk size to allow peer caching.",
             "Link": "$linkBase#minimum-disk-size-allowed-to-use-peer-caching"
@@ -959,7 +963,8 @@ function Check-DiskRequired()
     {
         $diskSize = Get-WmiObject -Class win32_logicaldisk | Where-Object DeviceId -eq $env:SystemDrive | Select-Object @{N = 'Disk'; E = { $_.DeviceId } }, @{N = 'Size'; E = { [math]::Round($_.Size / 1GB, 2) } }, @{N = 'FreeSpace'; E = { [math]::Round($_.FreeSpace / 1GB, 2) } }
 
-        if ($diskSize.FreeSpace -ge $doConfig.MinTotalDiskSize)
+        # DOMinDiskSizeAllowedToPeer is based on total disk capacity, not current free space.
+        if ($diskSize.Size -ge $doConfig.MinTotalDiskSize)
         {
             $result = [TestResult]::Pass
             $description = "$($diskSize.Disk) | Total Size: $($diskSize.Size)GB | Free Space: $($diskSize.FreeSpace)GB"
@@ -967,7 +972,7 @@ function Check-DiskRequired()
         else
         {
             $result = [TestResult]::Fail
-            $description = "Free Space Requirements: $($doConfig.MinTotalDiskSize)GB. | Local Free Space: $($diskSize.FreeSpace)GB"
+            $description = "Total Size Requirement: $($doConfig.MinTotalDiskSize)GB. | Local Total Size: $($diskSize.Size)GB | Local Free Space: $($diskSize.FreeSpace)GB"
         }
 
         [pscustomobject] @{ Name = $outputName; Result = $result; Details = $description }
@@ -2834,7 +2839,7 @@ function New-SupportBundle
     try
     {
         # Step 1: Capture existing DO logs
-        Write-Host "[Step 1/12] Capturing and converting existing Delivery Optimization logs..." -ForegroundColor Yellow
+        Write-Host "[Step 1/13] Capturing and converting existing Delivery Optimization logs..." -ForegroundColor Yellow
         try
         {
             Get-DeliveryOptimizationLog -Flush | Set-Content (Join-Path $tempDir "logs-dosvc-existing.txt")
@@ -2846,7 +2851,7 @@ function New-SupportBundle
         }
 
         # Step 2: Capture DO status
-        Write-Host "`n[Step 2/12] Capturing Delivery Optimization status..." -ForegroundColor Yellow
+        Write-Host "`n[Step 2/13] Capturing Delivery Optimization status..." -ForegroundColor Yellow
         try
         {
             Get-DeliveryOptimizationStatus | Out-File (Join-Path $tempDir "status-dosvc.txt") -Width 4096
@@ -2858,7 +2863,7 @@ function New-SupportBundle
         }
 
         # Step 3: Capture DO performance snapshot
-        Write-Host "`n[Step 3/12] Capturing Delivery Optimization performance snapshot..." -ForegroundColor Yellow
+        Write-Host "`n[Step 3/13] Capturing Delivery Optimization performance snapshot..." -ForegroundColor Yellow
         try
         {
             Get-DeliveryOptimizationPerfSnapThisMonth | Out-File (Join-Path $tempDir "perfsnap-dosvc.txt")
@@ -2870,7 +2875,7 @@ function New-SupportBundle
         }
 
         # Step 4: Capture DO configuration
-        Write-Host "`n[Step 4/12] Capturing Delivery Optimization configuration..." -ForegroundColor Yellow
+        Write-Host "`n[Step 4/13] Capturing Delivery Optimization configuration..." -ForegroundColor Yellow
         try
         {
             Get-DOConfig -Verbose 4>&1 | Out-File (Join-Path $tempDir "config-dosvc.txt") -Width 4096
@@ -2882,7 +2887,7 @@ function New-SupportBundle
         }
 
         # Step 5: Capture network configuration
-        Write-Host "`n[Step 5/12] Capturing network configuration (ipconfig /all)..." -ForegroundColor Yellow
+        Write-Host "`n[Step 5/13] Capturing network configuration (ipconfig /all)..." -ForegroundColor Yellow
         try
         {
             ipconfig /all | Out-File (Join-Path $tempDir "network-ipconfig.txt")
@@ -2894,7 +2899,7 @@ function New-SupportBundle
         }
 
         # Step 6: Capture NLM network data
-        Write-Host "`n[Step 6/12] Capturing NLM network data..." -ForegroundColor Yellow
+        Write-Host "`n[Step 6/13] Capturing NLM network data..." -ForegroundColor Yellow
         try
         {
             $nlmQueryOutputFile = Join-Path $tempDir "network-nlm-data.txt"
@@ -2907,7 +2912,7 @@ function New-SupportBundle
         }
 
         # Step 7: Capture NLM cost
-        Write-Host "`n[Step 7/12] Capturing NLM cost..." -ForegroundColor Yellow
+        Write-Host "`n[Step 7/13] Capturing NLM cost..." -ForegroundColor Yellow
         try
         {
             netsh nlm show cost | Out-File (Join-Path $tempDir "network-nlm-cost.txt")
@@ -2919,7 +2924,7 @@ function New-SupportBundle
         }
 
         # Step 8: Capture proxy settings
-        Write-Host "`n[Step 8/12] Capturing proxy settings..." -ForegroundColor Yellow
+        Write-Host "`n[Step 8/13] Capturing proxy settings..." -ForegroundColor Yellow
         try
         {
             $proxyInfo = @()
@@ -2936,8 +2941,21 @@ function New-SupportBundle
             Write-Warning "  Failed to capture proxy settings: $($_.Exception.Message)"
         }
 
-        # Step 9: Export DoSvc registry key
-        Write-Host "`n[Step 9/12] Exporting DoSvc registry key..." -ForegroundColor Yellow
+        # Step 9: Capture device registration status
+        Write-Host "`n[Step 9/13] Capturing device registration status (dsregcmd /status)..." -ForegroundColor Yellow
+        try
+        {
+            dsregcmd /status | Out-File (Join-Path $tempDir "device-registration-status.txt")
+            $dsregExitCode = $LASTEXITCODE
+            Write-Host "  Device registration status captured successfully (exit code: $dsregExitCode)." -ForegroundColor Green
+        }
+        catch
+        {
+            Write-Warning "  Failed to capture device registration status: $($_.Exception.Message)"
+        }
+
+        # Step 10: Export DoSvc registry key
+        Write-Host "`n[Step 10/13] Exporting DoSvc registry key..." -ForegroundColor Yellow
         try
         {
             $regExportPath = Join-Path $tempDir "dosvc-registry.reg"
@@ -2949,8 +2967,8 @@ function New-SupportBundle
             Write-Warning "  Failed to export DoSvc registry key: $($_.Exception.Message)"
         }
 
-        # Step 10: Run troubleshooter diagnostics and capture output
-        Write-Host "`n[Step 10/12] Running troubleshooter diagnostics..." -ForegroundColor Yellow
+        # Step 11: Run troubleshooter diagnostics and capture output
+        Write-Host "`n[Step 11/13] Running troubleshooter diagnostics..." -ForegroundColor Yellow
         try
         {
             Write-Host "  Script path: $PSCommandPath" -ForegroundColor Yellow
@@ -2962,10 +2980,10 @@ function New-SupportBundle
             Write-Warning "  Failed to capture troubleshooter output: $($_.Exception.Message)"
         }
 
-        # Step 11: Handle verbose logging and reproduction (if requested)
+        # Step 12: Handle verbose logging and reproduction (if requested)
         if ($ReproduceIssueWithVerboseLogs)
         {
-            Write-Host "`n[Step 11/12] Enabling verbose logging for issue reproduction..." -ForegroundColor Yellow
+            Write-Host "`n[Step 12/13] Enabling verbose logging for issue reproduction..." -ForegroundColor Yellow
             try
             {
                 Enable-DeliveryOptimizationVerboseLogs -Force
@@ -3035,11 +3053,11 @@ function New-SupportBundle
         }
         else
         {
-            Write-Host "`n[Step 11/12] Skipping verbose logging (not requested)." -ForegroundColor Gray
+            Write-Host "`n[Step 12/13] Skipping verbose logging (not requested)." -ForegroundColor Gray
         }
 
-        # Step 9: Zip the contents
-        Write-Host "`n[Step 12/12] Creating support bundle archive..." -ForegroundColor Yellow
+        # Step 13: Zip the contents
+        Write-Host "`n[Step 13/13] Creating support bundle archive..." -ForegroundColor Yellow
         $zipPath = $tempDir + ".zip"
 
         try
@@ -3144,3 +3162,4 @@ if ($burntToastPreInstalled -eq $false)
 {
     Uninstall-Module -Name $moduleName -Force -WarningAction SilentlyContinue
 }
+# SIG # Begin signature block

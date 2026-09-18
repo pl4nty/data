@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '7.9.0'
+ModuleVersion = '8.0.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,6 +108,7 @@ FunctionsToExport =  @(
 	,'Get-CsMainlineAttendantSupportedVoices'
 	,'Get-CsMainlineAttendantTenantInformation'
 	,'Get-CsMainlineAttendantQuestionAnswerFlow'
+	,'Get-CsMainlineAttendantSpamDetectionTemplate'
 	,'Get-CsMeetingMigrationStatus'
 	,'Get-CsOnlineApplicationInstance'
 	,'Get-CsOnlineApplicationInstanceAssociation'
@@ -269,6 +270,7 @@ FunctionsToExport =  @(
 	,'New-CsInboundExemptNumberPattern'
 	,'New-CsMainlineAttendantAppointmentBookingFlow'
 	,'New-CsMainlineAttendantQuestionAnswerFlow'
+	,'New-CsMainlineAttendantSpamDetectionTemplate'
 	,'New-CsOnlineApplicationInstance'
 	,'New-CsOnlineApplicationInstanceAssociation'
 	,'New-CsOnlineAudioConferencingRoutingPolicy'
@@ -337,6 +339,7 @@ FunctionsToExport =  @(
 	,'Remove-CsInboundExemptNumberPattern'
 	,'Remove-CsMainlineAttendantAppointmentBookingFlow'
 	,'Remove-CsMainlineAttendantQuestionAnswerFlow'
+	,'Remove-CsMainlineAttendantSpamDetectionTemplate'
 	,'Remove-CsOnlineApplicationInstanceAssociation'
 	,'Remove-CsOnlineAudioConferencingRoutingPolicy'
 	,'Remove-CsOnlineAudioFile'
@@ -402,6 +405,7 @@ FunctionsToExport =  @(
 	,'Set-CsInboundExemptNumberPattern'
 	,'Set-CsMainlineAttendantAppointmentBookingFlow'
 	,'Set-CsMainlineAttendantQuestionAnswerFlow'
+	,'Set-CsMainlineAttendantSpamDetectionTemplate'
 	,'Set-CsOnlineApplicationInstance'
 	,'Set-CsOnlineAudioConferencingRoutingPolicy'
 	,'Set-CsOnlineDialInConferencingBridge'
@@ -855,21 +859,23 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **7.9.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- Updates Connect-MicrosoftTeams cmdlet to use Web Account Manager (WAM) for authentication to enhance security.
-- Adds DisableWAM switch parameter to Connect-MicrosoftTeams cmdlet to disable WAM-based authentication. This parameter is temporary and will be deprecated in a future release.
-- Releases [Get|New|Set|Remove]-CsSharedVoicemailTriageSettingsTemplate cmdlets.
-- Adds SharedVoicemailTriageSettingsTemplateId parameter to [New|Set]-CsAutoAttendant cmdlets.
-- Adds SharedVoicemailTriageSettingsTemplateId parameter to [New|Set]-CsCallQueue cmdlets.
-- Adds Channel parameter to Get-CsAiAgents cmdlet.
-- Updates [Get|Set|Remove]-CsPhoneNumberAssignment cmdlets to use -TelephoneNumber and -NumberType as primary parameter names, with -PhoneNumber and -PhoneNumberType retained as aliases for backward compatibility.
-- Adds AllowCreateChannel, AllowCreateClassicChannel, AllowCreatePrivateChannel, AllowCreateSharedChannel, CreateSharedChannelsByDefault, AllowUsersFromOutsideTeam, AllowGuestsFromOutsideTeam, AllowUsersFromOutsideTeamInPrivateChannel, AllowGuestsFromOutsideTeamInPrivateChannel, AllowSharingWithTeamInOrg, AllowSharingPrivateChannelWithTeamInOrg parameters to [New|Set]-CsTeamsChannelsPolicy cmdlets.
-- Adds SyntheticMediaDetection, SyntheticMediaDetectionAppId, ConditionalAccessAttendeeVerification, EnablePreMeetingConsent, and PreMeetingConsentContentIdentifier parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
-- Adds PublishedEntraAuthenticationContexts, EnableAttributedTranscripts and EnableGraphTranscriptAccess parameters to Set-CsTeamsMeetingConfiguration cmdlet.
-- Adds AllowMeetingKnowledgeGeneration and VoicePhishingDetection parameters to [New|Set]-CsTeamsCallingPolicy cmdlets.
-- Adds AllowEngagementReport and InfoShownInReportMode parameters to [New|Set]-CsTeamsEventsPolicy cmdlets.
-- Adds EnableVoicemailTriage parameter to [New|Set]-CsOnlineVoicemailPolicy cmdlets.
-- [BREAKING CHANGE] Removes the Teams Shifts Connection cmdlets: [Get|New|Set|Remove|Update]-CsTeamsShiftsConnection, [Get|New|Set|Remove|Update]-CsTeamsShiftsConnectionInstance, [Get|Remove]-CsTeamsShiftsConnectionTeamMap, New-CsTeamsShiftsConnectionBatchTeamMap, Get-CsTeamsShiftsConnectionConnector, Get-CsTeamsShiftsConnectionOperation, Get-CsTeamsShiftsConnectionSyncResult, [Get|Disable]-CsTeamsShiftsConnectionErrorReport, Get-CsTeamsShiftsConnectionWfmTeam, Get-CsTeamsShiftsConnectionWfmUser and Test-CsTeamsShiftsConnectionValidate. These cmdlets are no longer supported.
+ **8.0.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- [BREAKING CHANGE] Makes the RecordingEnabled, TranscriptionEnabled and AgentViewPermission parameters mandatory on New-CsAutoRecordingTemplate.
+- Adds AppointmentBookingPlatform, BookingLink parameters to [New|Set]-CsMainlineAttendantAppointmentBookingFlow cmdlets.
+- Releases [Get|New|Set|Remove]-CsMainlineAttendantSpamDetectionTemplate cmdlets.
+- Adds TimeoutThreshold, TimeoutDisconnectPromptType, TimeoutDisconnectPromptCustomText, AiDisclaimerType, AiDisclaimerCustomText parameters to New-CsAutoAttendantCallFlow cmdlet.
+- Adds LocationId, AcquiredCapability, NetworkSiteId, ReverseNumberLookup, Tag parameters to New-CsOnlineDirectRoutingTelephoneNumberUploadOrder cmdlet.
+- Adds TeamsPersonalAttendantPolicy to the output for Get-CsOnlineUser.
+- Adds AutoRecordingAnnouncementAudioFileName property to Get-CsAutoRecordingTemplate cmdlet.
+- Updates [New|Set]-CsAutoAttendant cmdlets to allow auto-recording templates with audio file announcements.
+- Adds BusyOnBusyOption parameter to Set-CsUserCallingSettings cmdlet with PlayBusySignal, RedirectAsUnansweredCall, and RingUser values.
+- Adds the BusyOnBusyOption output attribute to the Get-CsUserCallingSettings cmdlet.
+- Adds UrgencyDetectionEnabled, CategoryDetectionEnabled, CallToActionDetectionEnabled, and VoiceToTextSummaryEnabled parameters to [Get|Set]-CsOnlineVoicemailUserSettings cmdlets. These parameters allow administrators to manage AI triage features for personal voicemail on a per-user basis.
+- Adds EnableExternalRecordingDetection, AllowIntelligentRecap, IntelligentRecapDocxFileExpirationDays parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- Adds DefaultChannelTypeOnCreation parameter to [New|Set]-CsTeamsChannelsPolicy cmdlets.
+- Adds MaximumConcurrentCalls parameter to [Get|Set]-CsUserCallingSettings cmdlets.
+- Adds SpamDetectionTemplateId parameter to New-CsAutoAttendant cmdlet.
+
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
 '@

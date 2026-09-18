@@ -210,6 +210,54 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Clear-CsRoutingContext {
+[CmdletBinding(PositionalBinding=$false)]
+param()
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Clear-CsRoutingContext';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Connect-CsConfigApi {
 [OutputType([System.Management.Automation.Runspaces.PSSession])]
 [CmdletBinding(DefaultParameterSetName='DefaultSet', PositionalBinding=$false)]
@@ -7315,6 +7363,54 @@ begin {
 
         $mapping = @{
             __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsRegionContext';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function Get-CsRoutingContext {
+[CmdletBinding(PositionalBinding=$false)]
+param()
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Get-CsRoutingContext';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -37448,6 +37544,69 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Set-CsRoutingContext {
+[CmdletBinding(PositionalBinding=$false)]
+param(
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[Microsoft.Teams.ConfigAPI.CmdletHostContract.DeploymentConfiguration+ConfigApiRegion]]
+    ${Region},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[Microsoft.Teams.ConfigAPI.CmdletHostContract.DeploymentConfiguration+ConfigApiRing]]
+    ${Ring},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[Microsoft.Teams.ConfigAPI.CmdletHostContract.DeploymentConfiguration+ConfigApiCloud]]
+    ${Cloud}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.private\Set-CsRoutingContext';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Set-CsSessionState {
 [OutputType([System.Management.Automation.Runspaces.PSSession])]
 [CmdletBinding(PositionalBinding=$false)]
@@ -47117,6 +47276,90 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Get-CsMainlineAttendantSpamDetectionTemplate {
+[CmdletBinding(PositionalBinding=$false)]
+param(
+    [Parameter(Position=0)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Identity},
+
+    [Parameter(Position=1)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    ${First},
+
+    [Parameter(Position=2)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    ${Skip},
+
+    [Parameter(Position=3)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${SortBy},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${Descending},
+
+    [Parameter(Position=4)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${NameFilter},
+
+    [Parameter(Position=5, DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Get-CsMainlineAttendantSpamDetectionTemplate';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Get-CsMainlineAttendantSupportedLanguages {
 [CmdletBinding(PositionalBinding=$false)]
 param(
@@ -50031,6 +50274,11 @@ param(
     [System.String]
     ${SharedVoicemailTriageSettingsTemplateId},
 
+    [Parameter(Position=19)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${SpamDetectionTemplateId},
+
     [Parameter(DontShow)]
     [ValidateNotNull()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -50198,6 +50446,31 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     ${RingResourceAccountDelegates},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    ${TimeoutThreshold},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.OAA.Models.TimeoutDisconnectPromptType]
+    ${TimeoutDisconnectPromptType},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${TimeoutDisconnectPromptCustomText},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.OAA.Models.AiDisclaimerType]
+    ${AiDisclaimerType},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${AiDisclaimerCustomText},
 
     [Parameter(Position=5)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -50682,6 +50955,21 @@ param(
     [System.String]
     ${Description},
 
+    [Parameter(Position=2, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${TranscriptionEnabled},
+
+    [Parameter(Position=3, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${RecordingEnabled},
+
+    [Parameter(Position=4, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.Online.Models.AgentViewPermission]
+    ${AgentViewPermission},
+
     [Parameter(Position=5, Mandatory)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
@@ -50696,21 +50984,6 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     ${RecordingDocumentOwner},
-
-    [Parameter(Position=2)]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.Boolean]
-    ${TranscriptionEnabled},
-
-    [Parameter(Position=3)]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [System.Boolean]
-    ${RecordingEnabled},
-
-    [Parameter(Position=4)]
-    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
-    [Microsoft.Rtc.Management.Hosted.Online.Models.AgentViewPermission]
-    ${AgentViewPermission},
 
     [Parameter(Position=8)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -51603,20 +51876,30 @@ param(
     [System.String]
     ${Description},
 
-    [Parameter(Position=2, Mandatory)]
+    [Parameter(Position=2)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${AppointmentBookingPlatform},
+
+    [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [Microsoft.Rtc.Management.Hosted.Online.Models.CallerAuthenticationMethod]
     ${CallerAuthenticationMethod},
 
-    [Parameter(Position=3, Mandatory)]
+    [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [Microsoft.Rtc.Management.Hosted.Online.Models.ApiAuthenticationType]
     ${ApiAuthenticationType},
 
-    [Parameter(Position=4, Mandatory)]
+    [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     ${ApiDefinitions},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${BookingLink},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
@@ -51709,6 +51992,95 @@ begin {
 
         $mapping = @{
             __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\New-CsMainlineAttendantQuestionAnswerFlow';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
+function New-CsMainlineAttendantSpamDetectionTemplate {
+[CmdletBinding(PositionalBinding=$false)]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Name},
+
+    [Parameter(Position=1, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Description},
+
+    [Parameter(Position=2)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Boolean]
+    ${EnableSpamDetection},
+
+    [Parameter(Position=3)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.Online.Models.SpamDetectionAction]
+    ${Action},
+
+    [Parameter(Position=4)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Rtc.Management.Hosted.OAA.Models.CallableEntity]
+    ${CallTarget},
+
+    [Parameter(Position=5)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    ${InclusionScope},
+
+    [Parameter(Position=6)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String[]]
+    ${ExclusionScope},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\New-CsMainlineAttendantSpamDetectionTemplate';
         }
         $cmdInfo = Get-Command -Name $mapping[$parameterSet]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
@@ -51898,6 +52270,36 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
     ${TelephoneNumber},
+
+    [Parameter(ParameterSetName='InputByList')]
+    [Parameter(ParameterSetName='InputByRange')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${LocationId},
+
+    [Parameter(ParameterSetName='InputByList')]
+    [Parameter(ParameterSetName='InputByRange')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${AcquiredCapability},
+
+    [Parameter(ParameterSetName='InputByList')]
+    [Parameter(ParameterSetName='InputByRange')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${NetworkSiteId},
+
+    [Parameter(ParameterSetName='InputByList')]
+    [Parameter(ParameterSetName='InputByRange')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${ReverseNumberLookup},
+
+    [Parameter(ParameterSetName='InputByList')]
+    [Parameter(ParameterSetName='InputByRange')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Tag},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
@@ -53638,6 +54040,70 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Remove-CsMainlineAttendantSpamDetectionTemplate {
+[CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${Identity},
+
+    [Parameter(Position=1)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.SwitchParameter]
+    ${Force},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Remove-CsMainlineAttendantSpamDetectionTemplate';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Remove-CsOnlineApplicationInstanceAssociation {
 [CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
@@ -55314,6 +55780,65 @@ end {
 }
 
 #  .ExternalHelp en-US\MicrosoftTeams-help
+function Set-CsMainlineAttendantSpamDetectionTemplate {
+[CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+param(
+    [Parameter(Position=0, Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Management.Automation.PSObject]
+    ${Instance},
+
+    [Parameter(DontShow)]
+    [ValidateNotNull()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+    ${HttpPipelinePrepend}
+)
+
+begin {
+    try {
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer)) {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+        $parameterSet = $PSCmdlet.ParameterSetName
+
+        $mapping = @{
+            __AllParameterSets = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsMainlineAttendantSpamDetectionTemplate';
+        }
+        $cmdInfo = Get-Command -Name $mapping[$parameterSet]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.MessageAttributeHelper]::ProcessCustomAttributesAtRuntime($cmdInfo, $MyInvocation, $parameterSet, $PSCmdlet)
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters}
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+
+        throw
+    }
+}
+
+process {
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+
+        throw
+    }
+
+}
+end {
+    try {
+        $steppablePipeline.End()
+
+    } catch {
+
+        throw
+    }
+} 
+}
+
+#  .ExternalHelp en-US\MicrosoftTeams-help
 function Set-CsOdcServiceNumber {
 [CmdletBinding(PositionalBinding=$false)]
 param(
@@ -55867,6 +56392,26 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.Nullable[System.Boolean]]
     ${VoicemailEnabled},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[System.Boolean]]
+    ${UrgencyDetectionEnabled},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[System.Boolean]]
+    ${CategoryDetectionEnabled},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[System.Boolean]]
+    ${CallToActionDetectionEnabled},
+
+    [Parameter()]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Nullable[System.Boolean]]
+    ${VoiceToTextSummaryEnabled},
 
     [Parameter()]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
@@ -56729,6 +57274,16 @@ param(
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
     ${HttpPipelinePrepend},
 
+    [Parameter(ParameterSetName='BusyOnBusy', Mandatory)]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.String]
+    ${BusyOnBusyOption},
+
+    [Parameter(ParameterSetName='MaximumConcurrentCalls')]
+    [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
+    [System.Int32]
+    ${MaximumConcurrentCalls},
+
     [Parameter(ParameterSetName='CallGroupNotification', Mandatory)]
     [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Category('Body')]
     [System.String]
@@ -56805,6 +57360,8 @@ begin {
 
         $mapping = @{
             Identity = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';
+            BusyOnBusy = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';
+            MaximumConcurrentCalls = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';
             CallGroupNotification = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';
             CallGroupMembership = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';
             CallGroup = 'Microsoft.Teams.ConfigAPI.Cmdlets.custom\Set-CsUserCallingSettings';

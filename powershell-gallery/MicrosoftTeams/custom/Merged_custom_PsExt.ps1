@@ -1244,6 +1244,31 @@ function New-CsOnlineDirectRoutingTelephoneNumberUploadOrder {
         [Parameter(Mandatory=$false, ParameterSetName='InputByFile')]
         [System.Byte[]]
         ${FileContent},
+
+        [Parameter(Mandatory=$false, ParameterSetName='InputByList')]
+        [Parameter(Mandatory=$false, ParameterSetName='InputByRange')]
+        [System.String]
+        ${LocationId},
+
+        [Parameter(Mandatory=$false, ParameterSetName='InputByList')]
+        [Parameter(Mandatory=$false, ParameterSetName='InputByRange')]
+        [System.String]
+        ${AcquiredCapability},
+
+        [Parameter(Mandatory=$false, ParameterSetName='InputByList')]
+        [Parameter(Mandatory=$false, ParameterSetName='InputByRange')]
+        [System.String]
+        ${NetworkSiteId},
+
+        [Parameter(Mandatory=$false, ParameterSetName='InputByList')]
+        [Parameter(Mandatory=$false, ParameterSetName='InputByRange')]
+        [System.String]
+        ${ReverseNumberLookup},
+
+        [Parameter(Mandatory=$false, ParameterSetName='InputByList')]
+        [Parameter(Mandatory=$false, ParameterSetName='InputByRange')]
+        [System.String]
+        ${Tag},
         
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -4896,6 +4921,8 @@ function Set-CsUserCallingSettings {
         [Parameter(Mandatory=$true, ParameterSetName='CallGroup')]
         [Parameter(Mandatory=$true, ParameterSetName='CallGroupMembership')]
 	    [Parameter(Mandatory=$true, ParameterSetName='CallGroupNotification')]
+        [Parameter(Mandatory=$true, ParameterSetName='MaximumConcurrentCalls')]
+        [Parameter(Mandatory=$true, ParameterSetName='BusyOnBusy')]
         [Parameter(Mandatory=$true, ParameterSetName='Identity')]
         [System.String]
         ${Identity},
@@ -4960,6 +4987,16 @@ function Set-CsUserCallingSettings {
 	    [ValidateSet('Ring','Mute','Banner')]
         [System.String]
         ${GroupNotificationOverride},
+
+        [Parameter(Mandatory=$false, ParameterSetName='MaximumConcurrentCalls')]
+        [ValidateRange(0,50)]
+        [System.Int32]
+        ${MaximumConcurrentCalls},
+
+        [Parameter(Mandatory=$true, ParameterSetName='BusyOnBusy')]
+        [ValidateSet('PlayBusySignal','RedirectAsUnansweredCall','RingUser')]
+        [System.String]
+        ${BusyOnBusyOption},
 
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -6839,6 +6876,106 @@ function Get-CsMainlineAttendantQuestionAnswerFlow {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: transforming the results to the custom objects
+
+function Get-CsMainlineAttendantSpamDetectionTemplate {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The identity of the mainline attendant spam detection template which is retrieved.
+        ${Identity},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The First parameter gets the first N mainline attendant spam detection templates.
+        ${First},
+
+        [Parameter(Mandatory=$false)]
+        [int]
+        # The Skip parameter skips the first N mainline attendant spam detection templates. It is intended to be used for pagination purposes.
+        ${Skip},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The SortBy parameter specifies the property used to sort.
+        ${SortBy},
+
+        [Parameter(Mandatory=$false)]
+        [switch]
+        # The Descending parameter is used to sort descending.
+        ${Descending},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The NameFilter parameter returns mainline attendant spam detection templates where name contains specified string
+        ${NameFilter},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+  begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Get-CsMainlineAttendantSpamDetectionTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+
+            if (${Identity} -ne '') {
+                $spamDetectionTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantSpamDetectionTemplate]::new()
+                $spamDetectionTemplate.ParseFromGetResponse($result)
+            } else {
+                $spamDetectionTemplates = @()
+                foreach ($model in $result.SpamDetectionTemplate) {
+                    $spamDetectionTemplate = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantSpamDetectionTemplate]::new()
+                    $spamDetectionTemplates += $spamDetectionTemplate.ParseFromDtoModel($model)
+                }
+                $spamDetectionTemplates
+            }
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Return Mainline Attendant supported languages
 # parsed from the MainlineAttendantTenantInformation section of the tenant information response.
 
@@ -8171,6 +8308,11 @@ function New-CsAutoAttendant {
         # Id for Shared Voicemail AI Triage Settings template.
         ${SharedVoicemailTriageSettingsTemplateId},
 
+        [Parameter(Mandatory=$false, position=19)]
+        [System.String]
+        # Id for Mainline Attendant Spam Detection template.
+        ${SpamDetectionTemplateId},
+
         [Parameter(DontShow)]
         [ValidateNotNull()]
         [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
@@ -8216,6 +8358,7 @@ function New-CsAutoAttendant {
             $null = $PSBoundCommonParameters.Remove("MainlineAttendantAgentVoiceId")
             $null = $PSBoundCommonParameters.Remove("AutoRecordingTemplateId")
             $null = $PSBoundCommonParameters.Remove("SharedVoicemailTriageSettingsTemplateId")
+            $null = $PSBoundCommonParameters.Remove("SpamDetectionTemplateId")
 
             if ($DefaultCallFlow -ne $null) {
                 $null = $PSBoundParameters.Remove('DefaultCallFlow')
@@ -8237,6 +8380,21 @@ function New-CsAutoAttendant {
                 }
                 if ($DefaultCallFlow.RingResourceAccountDelegates -eq $true) {
                     $PSBoundParameters.Add('DefaultCallFlowRingResourceAccountDelegate', $true)
+                }
+                if ($DefaultCallFlow.TimeoutThreshold -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutThreshold', $DefaultCallFlow.TimeoutThreshold)
+                }
+                if ($DefaultCallFlow.TimeoutDisconnectPromptType -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutDisconnectPromptType', $DefaultCallFlow.TimeoutDisconnectPromptType.ToString())
+                }
+                if ($DefaultCallFlow.TimeoutDisconnectPromptCustomText -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutDisconnectPromptCustomText', $DefaultCallFlow.TimeoutDisconnectPromptCustomText)
+                }
+                if ($DefaultCallFlow.AiDisclaimerType -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowAiDisclaimerType', $DefaultCallFlow.AiDisclaimerType.ToString())
+                }
+                if ($DefaultCallFlow.AiDisclaimerCustomText -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowAiDisclaimerCustomText', $DefaultCallFlow.AiDisclaimerCustomText)
                 }
                 if ($DefaultCallFlow.Menu -ne $null) {
                     if ($DefaultCallFlow.Menu.DialByNameEnabled) {
@@ -8344,17 +8502,15 @@ function New-CsAutoAttendant {
                 $null = $PSBoundParameters.Remove('SharedVoicemailTriageSettingsTemplateId')
             }
 
+            if ($PSBoundParameters.ContainsKey('SpamDetectionTemplateId') -and $SpamDetectionTemplateId -eq $null) {
+                $null = $PSBoundParameters.Remove('SpamDetectionTemplateId')
+            }
+
             # Validate MainlineAttendant requirement for AutoRecordingTemplateId
             # MainlineAttendant must be enabled before setting AutoRecordingTemplateId
             if ($PSBoundParameters.ContainsKey('AutoRecordingTemplateId') -and ![string]::IsNullOrWhiteSpace($AutoRecordingTemplateId)) {
                 if ($EnableMainlineAttendant -ne $true) {
                     throw "AutoRecordingTemplateId can only be set when MainlineAttendant is enabled. Please set EnableMainlineAttendant to `$true before setting AutoRecordingTemplateId."
-                }
-
-                # Validate that the template uses text announcement, not audio
-                $template = Get-CsAutoRecordingTemplate -Id $AutoRecordingTemplateId
-                if ($template -ne $null -and ![string]::IsNullOrWhiteSpace($template.AutoRecordingAnnouncementAudioFileId)) {
-                    throw "AutoRecordingTemplate '$AutoRecordingTemplateId' uses an audio file announcement, which is not supported for Mainline Attendant. Please use a template with a text-to-speech announcement instead."
                 }
             }
 
@@ -8548,6 +8704,31 @@ function New-CsAutoAttendantCallFlow {
         [Switch]
         # The RingResourceAccountDelegates parameter indicates whether the call flow should ring resource account delegates.
         ${RingResourceAccountDelegates},
+
+        [Parameter(Mandatory=$false)]
+        [System.Int32]
+        # The TimeoutThreshold parameter represents the maximum length, in seconds, of a call handled by the mainline attendant flow before it is automatically disconnected. Only applicable when the call flow's menu contains a MainlineAttendantFlow option.
+        ${TimeoutThreshold},
+
+        [Parameter(Mandatory=$false)]
+        [Microsoft.Rtc.Management.Hosted.OAA.Models.TimeoutDisconnectPromptType]
+        # The TimeoutDisconnectPromptType parameter represents the type of prompt played to the caller just before the call is disconnected when the maximum call length is reached. Only applicable when the call flow's menu contains a MainlineAttendantFlow option.
+        ${TimeoutDisconnectPromptType},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The TimeoutDisconnectPromptCustomText parameter represents the custom text-to-speech prompt played to the caller just before the call is disconnected when the maximum call length is reached. Only applicable when TimeoutDisconnectPromptType is Custom.
+        ${TimeoutDisconnectPromptCustomText},
+
+        [Parameter(Mandatory=$false)]
+        [Microsoft.Rtc.Management.Hosted.OAA.Models.AiDisclaimerType]
+        # The AiDisclaimerType parameter represents the type of AI disclaimer played to the caller at the start of a mainline attendant interaction. Only applicable when the call flow's menu contains a MainlineAttendantFlow option.
+        ${AiDisclaimerType},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The AiDisclaimerCustomText parameter represents the custom text-to-speech AI disclaimer played to the caller at the start of a mainline attendant interaction. Only applicable when AiDisclaimerType is Custom.
+        ${AiDisclaimerCustomText},
 
         [Parameter(Mandatory=$false, position=5)]
         [Switch]
@@ -9229,17 +9410,17 @@ function New-CsAutoRecordingTemplate {
         # The Description parameter provides a description for the auto recording template.
         ${Description},
 
-        [Parameter(Mandatory=$false, position=2)]
+        [Parameter(Mandatory=$true, position=2)]
         [System.Boolean]
         # The TranscriptionEnabled parameter value indicating whether transcription is enabled.
         ${TranscriptionEnabled},
 
-        [Parameter(Mandatory=$false, position=3)]
+        [Parameter(Mandatory=$true, position=3)]
         [System.Boolean]
         # The RecordingEnabled parameter value indicating whether recording is enabled.
         ${RecordingEnabled},
 
-        [Parameter(Mandatory=$false, position=4)]
+        [Parameter(Mandatory=$true, position=4)]
         [Microsoft.Rtc.Management.Hosted.Online.Models.AgentViewPermission]
         # The AgentViewPermission parameter value indicating agent view permission.
         ${AgentViewPermission},
@@ -10151,30 +10332,40 @@ function New-CsComplianceRecordingForCallQueueTemplate {
 function New-CsMainlineAttendantAppointmentBookingFlow  {
     [CmdletBinding(PositionalBinding=$true)]
     param(
-        [Parameter(Mandatory=$true, position=0)]
+        [Parameter(Mandatory=$true, Position=0)]
         [System.String]
         # Name of the mainline attendant appointment booking flow.
         ${Name},
 
-        [Parameter(Mandatory=$true, position=1)]
+        [Parameter(Mandatory=$true, Position=1)]
         [System.String]
         # The Description of the flow.
         ${Description},
 
-        [Parameter(Mandatory=$true, position=2)]
+        [Parameter(Mandatory=$false, Position=2)]
+        [System.String]
+        # The appointment booking platform: "Custom" or "MicrosoftBookings". When omitted it is inferred from the parameters supplied.
+        ${AppointmentBookingPlatform},
+
+        [Parameter(Mandatory=$false)]
         [Microsoft.Rtc.Management.Hosted.Online.Models.CallerAuthenticationMethod]
         # One of the predefined method to authenticate a caller: “Sms”, “Email”, “VerificationLink”,“Voiceprint”,“UserDetails”
         ${CallerAuthenticationMethod},
 
-        [Parameter(Mandatory=$true, position=3)]
+        [Parameter(Mandatory=$false)]
         [Microsoft.Rtc.Management.Hosted.Online.Models.ApiAuthenticationType]
         # The authentication type of API and the possible values are: “Basic”, “ApiKey”, “BearerTokenStatic”, “BearerTokenDynamic”
         ${ApiAuthenticationType},
 
-        [Parameter(Mandatory=$true, position=4)]
+        [Parameter(Mandatory=$false)]
         [System.String]
         # The file path of API template JSON.
         ${ApiDefinitions},
+
+        [Parameter(Mandatory=$false)]
+        [System.String]
+        # The Microsoft Bookings page URL. Required when AppointmentBookingPlatform is MicrosoftBookings.
+        ${BookingLink},
 
         [Parameter(DontShow)]
         [ValidateNotNull()]
@@ -10196,9 +10387,11 @@ function New-CsMainlineAttendantAppointmentBookingFlow  {
                 $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
             }
 
+            # Custom flows supply ApiDefinitions as a JSON file path; read and inline its content.
+            # Microsoft Bookings flows do not use ApiDefinitions, so this is skipped for that parameter set.
             try {
                 # Check if ApiDefinitions is a JSON file path
-                if (![string]::IsNullOrWhiteSpace($ApiDefinitions) -and  $ApiDefinitions -match '\.json$') 
+                if (![string]::IsNullOrWhiteSpace($ApiDefinitions) -and  $ApiDefinitions -match '\.json$')
                 {
                     # Read the JSON file into a PowerShell object
                     $ApiDefinitionsJsonObject = Get-Content -Path $ApiDefinitions | ConvertFrom-Json
@@ -10210,10 +10403,6 @@ function New-CsMainlineAttendantAppointmentBookingFlow  {
                     # but we need to provide the content of the template to the downstream backend service.
                     $PSBoundParameters.Remove('ApiDefinitions') | Out-Null
                     $PSBoundParameters.Add("ApiDefinitions", $ApiDefinitionsJsonString)
-                }
-                else 
-                {
-                    throw "ApiDefinitions parameter must be a valid JSON file path."
                 }
             } catch {
                 throw "Failed to read API Definitions file: $_"
@@ -10336,6 +10525,132 @@ function New-CsMainlineAttendantQuestionAnswerFlow  {
             Write-AdminServiceDiagnostic($internalOutput.Diagnostic)
 
             $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+            $output.ParseFromCreateResponse($internalOutput)
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function New-CsMainlineAttendantSpamDetectionTemplate  {
+    [CmdletBinding(PositionalBinding=$true)]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # Name of the mainline attendant spam detection template.
+        ${Name},
+
+        [Parameter(Mandatory=$true, position=1)]
+        [ValidateLength(1, 500)]
+        [System.String]
+        # The Description of the spam detection template. Maximum 500 characters.
+        ${Description},
+
+        [Parameter(Mandatory=$false, position=2)]
+        [System.Boolean]
+        # Indicates whether spam detection is enabled. Default is true.
+        ${EnableSpamDetection} = $true,
+
+        [Parameter(Mandatory=$false, position=3)]
+        [Microsoft.Rtc.Management.Hosted.Online.Models.SpamDetectionAction]
+        # The action taken when a call is detected to be spam: "DisconnectCall", "TransferCallToOperator", "TransferCallToTarget".
+        ${Action} = [Microsoft.Rtc.Management.Hosted.Online.Models.SpamDetectionAction]::DisconnectCall,
+
+        [Parameter(Mandatory=$false, position=4)]
+        [Microsoft.Rtc.Management.Hosted.OAA.Models.CallableEntity]
+        # The call target to transfer the call to. Required when Action is "TransferCallToTarget".
+        ${CallTarget},
+
+        [Parameter(Mandatory=$false, position=5)]
+        [System.String[]]
+        # The list of phone numbers that will always be considered spam.
+        ${InclusionScope},
+
+        [Parameter(Mandatory=$false, position=6)]
+        [System.String[]]
+        # The list of phone numbers that will never be considered spam.
+        ${ExclusionScope},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # EnableSpamDetection defaults to $true, ensure it is always sent to the backend.
+            if (!$PSBoundParameters.ContainsKey("EnableSpamDetection")) {
+                $PSBoundParameters.Add("EnableSpamDetection", $EnableSpamDetection)
+            }
+
+            # Action defaults to DisconnectCall, ensure it is always sent to the backend.
+            if (!$PSBoundParameters.ContainsKey("Action")) {
+                $PSBoundParameters.Add("Action", $Action)
+            }
+
+            # CallTarget is exposed to the user as a single object, but the internal cmdlet expects it flattened.
+            if ($CallTarget -ne $null) {
+                $null = $PSBoundParameters.Remove('CallTarget')
+                $PSBoundParameters.Add('CallTargetId', $CallTarget.Id)
+                $PSBoundParameters.Add('CallTargetType', $CallTarget.Type)
+                if ($CallTarget.EnableTranscription) {
+                    $PSBoundParameters.Add('CallTargetEnableTranscription', $True)
+                }
+                if ($CallTarget.EnableSharedVoicemailSystemPromptSuppression) {
+                    $PSBoundParameters.Add('CallTargetEnableSharedVoicemailSystemPromptSuppression', $True)
+                }
+                if ($CallTarget.Type -eq 'ApplicationEndpoint' -or $CallTarget.Type -eq 'ConfigurationEndpoint') {
+                    $PSBoundParameters.Add('CallTargetCallPriority', $CallTarget.CallPriority)
+                }
+                if ($CallTarget.SharedVoicemailHistoryTemplateId) {
+                    $PSBoundParameters.Add('CallTargetSharedVoicemailHistoryTemplateId', $CallTarget.SharedVoicemailHistoryTemplateId)
+                }
+            }
+
+            $internalOutput = Microsoft.Teams.ConfigAPI.Cmdlets.internal\New-CsMainlineAttendantSpamDetectionTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($internalOutput -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($internalOutput.Diagnostic)
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantSpamDetectionTemplate]::new()
             $output.ParseFromCreateResponse($internalOutput)
 
         } catch {
@@ -11765,6 +12080,78 @@ function Remove-CsMainlineAttendantQuestionAnswerFlow {
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
+# Objective of this custom file: print out the diagnostic
+
+function Remove-CsMainlineAttendantSpamDetectionTemplate {
+    [CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [System.String]
+        # The identifier of the mainline attendant spam detection template to be removed.
+        ${Identity},
+
+        [Parameter(Mandatory=$false, position=1)]
+        [Switch]
+        ${Force},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process {
+        try {
+
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            if ($PSBoundParameters.ContainsKey("Force")) {
+                $PSBoundParameters.Remove("Force") | Out-Null
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Remove-CsMainlineAttendantSpamDetectionTemplate @PSBoundParameters @httpPipelineArgs
+
+            # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            Write-AdminServiceDiagnostic($result.Diagnostic)
+            $result
+
+        } catch {
+            $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 # Objective of this custom file: Format output of the cmdlet
 
 function Remove-CsOnlineApplicationInstanceAssociation {
@@ -12434,6 +12821,21 @@ function Set-CsAutoAttendant {
                 $PSBoundParameters.Add('DefaultCallFlowName', $Instance.DefaultCallFlow.Name)
                 $PSBoundParameters.Add('DefaultCallFlowForceListenMenuEnabled', $Instance.DefaultCallFlow.ForceListenMenuEnabled)
                 $PSBoundParameters.Add('DefaultCallFlowRingResourceAccountDelegate', $Instance.DefaultCallFlow.RingResourceAccountDelegates)
+                if ($Instance.DefaultCallFlow.TimeoutThreshold -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutThreshold', $Instance.DefaultCallFlow.TimeoutThreshold)
+                }
+                if ($Instance.DefaultCallFlow.TimeoutDisconnectPromptType -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutDisconnectPromptType', $Instance.DefaultCallFlow.TimeoutDisconnectPromptType.ToString())
+                }
+                if ($Instance.DefaultCallFlow.TimeoutDisconnectPromptCustomText -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowTimeoutDisconnectPromptCustomText', $Instance.DefaultCallFlow.TimeoutDisconnectPromptCustomText)
+                }
+                if ($Instance.DefaultCallFlow.AiDisclaimerType -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowAiDisclaimerType', $Instance.DefaultCallFlow.AiDisclaimerType.ToString())
+                }
+                if ($Instance.DefaultCallFlow.AiDisclaimerCustomText -ne $null) {
+                    $PSBoundParameters.Add('DefaultCallFlowAiDisclaimerCustomText', $Instance.DefaultCallFlow.AiDisclaimerCustomText)
+                }
                 $defaultCallFlowGreetings = @()
                 if ($Instance.DefaultCallFlow.Greetings -ne $null) {
                     foreach ($defaultCallFlowGreeting in $Instance.DefaultCallFlow.Greetings) {
@@ -12548,17 +12950,15 @@ function Set-CsAutoAttendant {
                 $PSBoundParameters.Add('SharedVoicemailTriageSettingsTemplateId', $Instance.SharedVoicemailTriageSettingsTemplateId)
             }
 
+            if ($Instance.SpamDetectionTemplateId -ne $null) {
+                $PSBoundParameters.Add('SpamDetectionTemplateId', $Instance.SpamDetectionTemplateId)
+            }
+
             # Validate MainlineAttendant requirement for AutoRecordingTemplateId
             # MainlineAttendant must be enabled before setting AutoRecordingTemplateId
             if (![string]::IsNullOrWhiteSpace($Instance.AutoRecordingTemplateId)) {
                 if ($Instance.MainlineAttendantEnabled -ne $true) {
                     throw "AutoRecordingTemplateId can only be set when MainlineAttendant is enabled. Please set MainlineAttendantEnabled to `$true before setting AutoRecordingTemplateId."
-                }
-
-                # Validate that the template uses text announcement, not audio
-                $template = Get-CsAutoRecordingTemplate -Id $Instance.AutoRecordingTemplateId
-                if ($template -ne $null -and ![string]::IsNullOrWhiteSpace($template.AutoRecordingAnnouncementAudioFileId)) {
-                    throw "AutoRecordingTemplate '$($Instance.AutoRecordingTemplateId)' uses an audio file announcement, which is not supported for Mainline Attendant. Please use a template with a text-to-speech announcement instead."
                 }
             }
 
@@ -13893,11 +14293,11 @@ function Set-CsCallQueue {
                 $null = $PSBoundParameters.Remove('TextAnnouncementForCR')
             }
 
-            if (!$PSBoundParameters.ContainsKey('AudioFileAnnouncementForCR') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.AudioFileAnnouncementForCR)) {
-                $PSBoundParameters.Add('AudioFileAnnouncementForCR', $existingCallQueue.AudioFileAnnouncementForCR)
+            if (!$PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCR') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.CustomAudioFileAnnouncementForCR)) {
+                $PSBoundParameters.Add('CustomAudioFileAnnouncementForCR', $existingCallQueue.CustomAudioFileAnnouncementForCR)
             }
-            elseif ($PSBoundParameters.ContainsKey('AudioFileAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($AudioFileAnnouncementForCR)) {
-                $null = $PSBoundParameters.Remove('AudioFileAnnouncementForCR')
+            elseif ($PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCR') -and [string]::IsNullOrWhiteSpace($CustomAudioFileAnnouncementForCR)) {
+                $null = $PSBoundParameters.Remove('CustomAudioFileAnnouncementForCR')
             }
 
             if (!$PSBoundParameters.ContainsKey('TextAnnouncementForCRFailure') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.TextAnnouncementForCRFailure)) {
@@ -13907,11 +14307,11 @@ function Set-CsCallQueue {
                 $null = $PSBoundParameters.Remove('TextAnnouncementForCRFailure')
             }
 
-            if (!$PSBoundParameters.ContainsKey('AudioFileAnnouncementForCRFailure') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.AudioFileAnnouncementForCRFailure)) {
-                $PSBoundParameters.Add('AudioFileAnnouncementForCRFailure', $existingCallQueue.AudioFileAnnouncementForCRFailure)
+            if (!$PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCRFailure') -and ![string]::IsNullOrWhiteSpace($existingCallQueue.CustomAudioFileAnnouncementForCRFailure)) {
+                $PSBoundParameters.Add('CustomAudioFileAnnouncementForCRFailure', $existingCallQueue.CustomAudioFileAnnouncementForCRFailure)
             }
-            elseif ($PSBoundParameters.ContainsKey('AudioFileAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($AudioFileAnnouncementForCRFailure)) {
-                $null = $PSBoundParameters.Remove('AudioFileAnnouncementForCRFailure')
+            elseif ($PSBoundParameters.ContainsKey('CustomAudioFileAnnouncementForCRFailure') -and [string]::IsNullOrWhiteSpace($CustomAudioFileAnnouncementForCRFailure)) {
+                $null = $PSBoundParameters.Remove('CustomAudioFileAnnouncementForCRFailure')
             }
 
             if (!$PSBoundParameters.ContainsKey('ComplianceRecordingForCallQueueTemplateId') -and $null -ne $existingCallQueue.ComplianceRecordingForCallQueueTemplateId) {
@@ -14145,6 +14545,8 @@ function Set-CsMainlineAttendantAppointmentBookingFlow {
                 CallerAuthenticationMethod = ${Instance}.CallerAuthenticationMethod
                 ApiAuthenticationType = ${Instance}.ApiAuthenticationType
                 ApiDefinitions = ${Instance}.ApiDefinitions
+                AppointmentBookingPlatform = ${Instance}.AppointmentBookingPlatform
+                BookingLink = ${Instance}.BookingLink
             }
 
             # Get common parameters
@@ -14277,6 +14679,124 @@ function Set-CsMainlineAttendantQuestionAnswerFlow {
             }
 
             $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantQuestionAnswerFlow]::new()
+            $output.ParseFromUpdateResponse($result)
+
+        } catch {
+           $customCmdletUtils.SendTelemetry()
+            throw
+        }
+    }
+
+    end {
+        $customCmdletUtils.SendTelemetry()
+    }
+}
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
+# Objective of this custom file: transforming the results to the custom objects
+
+function Set-CsMainlineAttendantSpamDetectionTemplate {
+	[CmdletBinding(PositionalBinding=$true, SupportsShouldProcess, ConfirmImpact='Medium')]
+    param(
+        [Parameter(Mandatory=$true, position=0)]
+        [PSObject]
+        # The Instance parameter is the object reference to the mainline attendant spam detection template to be modified.
+        ${Instance},
+
+        [Parameter(DontShow)]
+        [ValidateNotNull()]
+        [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Runtime.SendAsyncStep[]]
+        ${HttpPipelinePrepend}
+    )
+
+    begin {
+        $customCmdletUtils = [Microsoft.Teams.ConfigAPI.Cmdlets.Telemetry.CustomCmdletUtils]::new($MyInvocation)
+    }
+
+    process{
+        try {
+            $httpPipelineArgs = $customCmdletUtils.ProcessArgs()
+
+            # Default ErrorAction to $ErrorActionPreference
+            if (!$PSBoundParameters.ContainsKey("ErrorAction")) {
+                $PSBoundParameters.Add("ErrorAction", $ErrorActionPreference)
+            }
+
+            # Description has a maximum length of 500 characters.
+            if (![string]::IsNullOrEmpty(${Instance}.Description) -and ${Instance}.Description.Length -gt 500) {
+                throw "Description cannot exceed 500 characters."
+            }
+
+            # RelatedConfigurationIds is a list of complex objects; serialize each to the auto-generated DTO model.
+            $relatedConfigurationIds = [Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.IRelatedConfiguration[]]@()
+            if ($null -ne ${Instance}.RelatedConfigurationIds) {
+                $relatedConfigurationIds = @(${Instance}.RelatedConfigurationIds | ForEach-Object { $_.ParseToAutoGeneratedDtoModel() })
+            }
+
+            $params = @{
+                Name = ${Instance}.Name
+                Identity = ${Instance}.Identity
+                Description = ${Instance}.Description
+                EnableSpamDetection = ${Instance}.EnableSpamDetection
+                Action = ${Instance}.Action
+                InclusionScope = ${Instance}.InclusionScope
+                ExclusionScope = ${Instance}.ExclusionScope
+                RelatedConfigurationId = $relatedConfigurationIds
+            }
+
+            # Get common parameters
+            $PSBoundCommonParameters = @{}
+            foreach($p in $PSBoundParameters.GetEnumerator())
+            {
+                $params += @{$p.Key = $p.Value}
+            }
+
+            # Remove Instance from params as it is not a valid parameter for the internal cmdlet
+            $null = $params.Remove("Instance")
+
+            # CallTarget is stored on the instance as a single object, but the internal cmdlet expects it flattened.
+            if ($null -ne ${Instance}.CallTarget) {
+                $params['CallTargetId'] = ${Instance}.CallTarget.Id
+                $params['CallTargetType'] = ${Instance}.CallTarget.Type
+                if (${Instance}.CallTarget.EnableTranscription) {
+                    $params['CallTargetEnableTranscription'] = $True
+                }
+                if (${Instance}.CallTarget.EnableSharedVoicemailSystemPromptSuppression) {
+                    $params['CallTargetEnableSharedVoicemailSystemPromptSuppression'] = $True
+                }
+                if (${Instance}.CallTarget.Type -eq 'ApplicationEndpoint' -or ${Instance}.CallTarget.Type -eq 'ConfigurationEndpoint') {
+                    $params['CallTargetCallPriority'] = ${Instance}.CallTarget.CallPriority
+                }
+                if (${Instance}.CallTarget.SharedVoicemailHistoryTemplateId) {
+                    $params['CallTargetSharedVoicemailHistoryTemplateId'] = ${Instance}.CallTarget.SharedVoicemailHistoryTemplateId
+                }
+            }
+
+            # Ensure Identity is not null or empty
+            if ([string]::IsNullOrWhiteSpace($params['Identity'])) {
+                throw "Identity parameter cannot be null or empty."
+            }
+
+            $result = Microsoft.Teams.ConfigAPI.Cmdlets.internal\Set-CsMainlineAttendantSpamDetectionTemplate @params @httpPipelineArgs
+
+             # Stop execution if internal cmdlet is failing
+            if ($result -eq $null) {
+                return $null
+            }
+
+            $output = [Microsoft.Rtc.Management.Hosted.Online.Models.MainlineAttendantSpamDetectionTemplate]::new()
             $output.ParseFromUpdateResponse($result)
 
         } catch {
@@ -14619,6 +15139,22 @@ function Set-CsOnlineVoicemailUserSettings {
     [System.Nullable[System.Boolean]]
     ${VoicemailEnabled},
 
+    [Parameter()]
+    [System.Nullable[System.Boolean]]
+    ${UrgencyDetectionEnabled},
+
+    [Parameter()]
+    [System.Nullable[System.Boolean]]
+    ${CategoryDetectionEnabled},
+
+    [Parameter()]
+    [System.Nullable[System.Boolean]]
+    ${CallToActionDetectionEnabled},
+
+    [Parameter()]
+    [System.Nullable[System.Boolean]]
+    ${VoiceToTextSummaryEnabled},
+
     [Parameter(Mandatory=$false)]
     [Switch]
     ${Force},
@@ -14664,7 +15200,11 @@ function Set-CsOnlineVoicemailUserSettings {
                 $PSBoundParameters["PromptLanguage"] -eq $null -and
                 $PSBoundParameters["ShareData"] -eq $null -and
                 $PSBoundParameters["TransferTarget"] -eq $null -and 
-                $PSBoundParameters["VoicemailEnabled"] -eq $null) {
+                $PSBoundParameters["VoicemailEnabled"] -eq $null -and
+                $PSBoundParameters["UrgencyDetectionEnabled"] -eq $null -and
+                $PSBoundParameters["CategoryDetectionEnabled"] -eq $null -and
+                $PSBoundParameters["CallToActionDetectionEnabled"] -eq $null -and
+                $PSBoundParameters["VoiceToTextSummaryEnabled"] -eq $null) {
                     Write-Warning("To set online voicemail user settings for user {0}, at least one optional parameter should be provided." -f $Identity)
             }
 

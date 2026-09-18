@@ -2032,6 +2032,9 @@
             <Label>SharedVoicemailTriageSettingsTemplateId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SpamDetectionTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>TenantId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2082,6 +2085,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>SharedVoicemailTriageSettingsTemplateId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SpamDetectionTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TenantId</PropertyName>
@@ -2384,6 +2390,28 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.BusyOnBusySettings</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.BusyOnBusySettings</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>BusyOnBusyOption</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>BusyOnBusyOption</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CacheClearRequest</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CacheClearRequest</TypeName>
@@ -2499,6 +2527,12 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
+            <Label>AiDisclaimerCustomText</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AiDisclaimerType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ForceListenMenuEnabled</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -2510,10 +2544,25 @@
           <TableColumnHeader>
             <Label>RingResourceAccountDelegate</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutDisconnectPromptCustomText</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutDisconnectPromptType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutThreshold</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AiDisclaimerCustomText</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AiDisclaimerType</PropertyName>
+              </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ForceListenMenuEnabled</PropertyName>
               </TableColumnItem>
@@ -2525,6 +2574,15 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>RingResourceAccountDelegate</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutDisconnectPromptCustomText</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutDisconnectPromptType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutThreshold</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -5087,6 +5145,12 @@
             <Label>ApiDefinition</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AppointmentBookingPlatform</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BookingLink</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5104,6 +5168,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AppointmentBookingPlatform</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BookingLink</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
@@ -5151,6 +5221,9 @@
             <Label>SharedVoicemailTriageSettingsId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>SpamDetectionTemplateId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>TimeZoneId</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5189,6 +5262,9 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>SharedVoicemailTriageSettingsId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SpamDetectionTemplateId</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TimeZoneId</PropertyName>
@@ -5267,6 +5343,12 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
+            <Label>AiDisclaimerCustomText</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>AiDisclaimerType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>ForceListenMenuEnabled</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -5275,10 +5357,25 @@
           <TableColumnHeader>
             <Label>RingResourceAccountDelegate</Label>
           </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutDisconnectPromptCustomText</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutDisconnectPromptType</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>TimeoutThreshold</Label>
+          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AiDisclaimerCustomText</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AiDisclaimerType</PropertyName>
+              </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ForceListenMenuEnabled</PropertyName>
               </TableColumnItem>
@@ -5287,6 +5384,15 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>RingResourceAccountDelegate</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutDisconnectPromptCustomText</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutDisconnectPromptType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TimeoutThreshold</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -6386,6 +6492,58 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSpamDetectionTemplateRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateSpamDetectionTemplateRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Action</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableSpamDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ExclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>InclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Action</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableSpamDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ExclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>InclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateTeamFromTemplateResponse</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.CreateTeamFromTemplateResponse</TypeName>
@@ -6621,6 +6779,28 @@
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>Id</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.DelegationSettings</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.DelegationSettings</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>MaxSharedLineCapacity</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>MaxSharedLineCapacity</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -9431,6 +9611,12 @@
             <Label>ApiDefinition</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AppointmentBookingPlatform</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BookingLink</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -9454,6 +9640,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AppointmentBookingPlatform</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BookingLink</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
@@ -9489,6 +9681,12 @@
             <Label>ApiDefinition</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AppointmentBookingPlatform</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BookingLink</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -9515,6 +9713,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AppointmentBookingPlatform</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BookingLink</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
@@ -9613,6 +9817,64 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Type</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantSpamDetectionTemplate</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.MainlineAttendantSpamDetectionTemplate</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Action</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableSpamDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ExclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Identity</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>InclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Action</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableSpamDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ExclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Identity</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>InclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
@@ -13679,6 +13941,9 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
+            <Label>AcquiredCapability</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>Description</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -13688,7 +13953,19 @@
             <Label>FileContent</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>LocationId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>NetworkSiteId</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ReverseNumberLookup</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>StartingNumber</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Tag</Label>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>TelephoneNumber</Label>
@@ -13697,6 +13974,9 @@
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AcquiredCapability</PropertyName>
+              </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Description</PropertyName>
               </TableColumnItem>
@@ -13707,7 +13987,19 @@
                 <PropertyName>FileContent</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
+                <PropertyName>LocationId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>NetworkSiteId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ReverseNumberLookup</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
                 <PropertyName>StartingNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Tag</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TelephoneNumber</PropertyName>
@@ -16384,6 +16676,12 @@
             <Label>ApiDefinition</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>AppointmentBookingPlatform</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>BookingLink</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>CallerAuthenticationMethod</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -16407,6 +16705,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>ApiDefinition</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>AppointmentBookingPlatform</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>BookingLink</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CallerAuthenticationMethod</PropertyName>
@@ -17275,6 +17579,58 @@
       </TableControl>
     </View>
     <View>
+      <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.UpdateSpamDetectionTemplateRequest</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.UpdateSpamDetectionTemplateRequest</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Action</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Description</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>EnableSpamDetection</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>ExclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>InclusionScope</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Action</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EnableSpamDetection</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ExclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>InclusionScope</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
       <Name>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.UpdateWfmConnectionFieldsRequest</Name>
       <ViewSelectedBy>
         <TypeName>Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.UpdateWfmConnectionFieldsRequest</TypeName>
@@ -17923,6 +18279,12 @@
             <Label>CallAnswerRule</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>CallToActionDetectionEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>CategoryDetectionEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>DefaultGreetingPromptOverwrite</Label>
           </TableColumnHeader>
           <TableColumnHeader>
@@ -17944,6 +18306,12 @@
             <Label>TransferTarget</Label>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>UrgencyDetectionEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>VoiceToTextSummaryEnabled</Label>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>VoicemailEnabled</Label>
           </TableColumnHeader>
         </TableHeaders>
@@ -17952,6 +18320,12 @@
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>CallAnswerRule</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CallToActionDetectionEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>CategoryDetectionEnabled</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>DefaultGreetingPromptOverwrite</PropertyName>
@@ -17973,6 +18347,12 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>TransferTarget</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UrgencyDetectionEnabled</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>VoiceToTextSummaryEnabled</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>VoicemailEnabled</PropertyName>

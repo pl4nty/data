@@ -1941,6 +1941,10 @@
                         <Label>AllowSharingPrivateChannelWithTeamInOrg</Label>
                         <PropertyName>AllowSharingPrivateChannelWithTeamInOrg</PropertyName>
                     </ListItem>
+                    <ListItem>
+                        <Label>DefaultChannelTypeOnCreation</Label>
+                        <PropertyName>DefaultChannelTypeOnCreation</PropertyName>
+                    </ListItem>
                       </ListItems>
                     </ListEntry>
                 </ListEntries>
@@ -3364,6 +3368,18 @@
                     <ListItem>
                         <Label>PreMeetingConsentContentIdentifier</Label>
                         <PropertyName>PreMeetingConsentContentIdentifier</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableExternalRecordingDetection</Label>
+                        <PropertyName>EnableExternalRecordingDetection</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>IntelligentRecapDocxFileExpirationDays</Label>
+                        <PropertyName>IntelligentRecapDocxFileExpirationDays</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowIntelligentRecap</Label>
+                        <PropertyName>AllowIntelligentRecap</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

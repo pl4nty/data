@@ -15018,21 +15018,21 @@ Tag:sms-disabled                          False</dev:code>
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>Get-CsTeamsVoiceApplicationsPolicy</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 1 returns information for all the Teams voice applications policies configured for use in the tenant.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>Get-CsTeamsVoiceApplicationsPolicy -Identity "SDA-Allow-All"</dev:code>
         <dev:remarks>
           <maml:para>In Example 2, information is returned for a single Teams voice applications policy; the policy with the Identity SDA-Allow-All.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>Get-CsTeamsVoiceApplicationsPolicy -Filter "tag:*"</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 3 returns information about all the Teams voice applications policies configured at the per-user scope. To do this, the command uses the Filter parameter and the filter value "tag:*"; that filter value limits the returned data to policies that have an Identity that begins with the string value "tag:".</maml:para>
@@ -21487,6 +21487,77 @@ Tag:wld-policy2                           False            Disabled</dev:code>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Grant-CsOnlineVoicemailPolicy</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>PolicyName</maml:name>
+          <maml:description>
+            <maml:para>A unique identifier(name) of the policy.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:description>
+            <maml:para>Prompts you for confirmation before executing the command.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Global</maml:name>
+          <maml:description>
+            <maml:para>Sets the parameters of the Global policy instance to the values in the specified policy instance.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Identity</maml:name>
+          <maml:description>
+            <maml:para>The Identity parameter represents the ID of the specific user in your organization; this can be either a SIP address or an Object ID.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>PassThru</maml:name>
+          <maml:description>
+            <maml:para>Enables you to pass a user object through the pipeline that represents the user being assigned the policy. By default, the Grant-CsOnlineVoicemailPolicy cmdlet does not pass objects through the pipeline.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:description>
+            <maml:para>Describes what would happen if you executed the command without actually executing the command.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Grant-CsOnlineVoicemailPolicy</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Group</maml:name>
           <maml:description>
@@ -21523,25 +21594,13 @@ Tag:wld-policy2                           False            Disabled</dev:code>
           <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>Global</maml:name>
-          <maml:description>
-            <maml:para>Sets the parameters of the Global policy instance to the values in the specified policy instance.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
-          <dev:type>
-            <maml:name>String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
             <maml:para>The Identity parameter represents the ID of the specific user in your organization; this can be either a SIP address or an Object ID.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
-            <maml:name>System.String</maml:name>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -21600,12 +21659,12 @@ Tag:wld-policy2                           False            Disabled</dev:code>
         <maml:description>
           <maml:para>Sets the parameters of the Global policy instance to the values in the specified policy instance.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
+          <maml:name>SwitchParameter</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Group</maml:name>
@@ -21624,9 +21683,9 @@ Tag:wld-policy2                           False            Disabled</dev:code>
         <maml:description>
           <maml:para>The Identity parameter represents the ID of the specific user in your organization; this can be either a SIP address or an Object ID.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
-          <maml:name>System.String</maml:name>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -34875,17 +34934,17 @@ $objusers | ConvertTo-Html | Out-File "$env:USERPROFILE\desktop\TeamsUpgrade.htm
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>Grant-CsTeamsVoiceApplicationsPolicy -Identity "Ken Myer" -PolicyName "SDA-Allow-All"</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 1 assigns the per-user Teams voice applications policy SDA-Allow-All to the user with the display name "Ken Myer".</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>Grant-CsTeamsVoiceApplicationsPolicy -PolicyName "SDA-Allow-All" -Global</dev:code>
         <dev:remarks>
-          <maml:para>Example 2 assigns the per-user online voice routing policy "SDA-Allow-All to all the users in the tenant, except any that have an explicit policy assignment.</maml:para>
+          <maml:para>Example 2 assigns the per-user Teams voice applications policy "SDA-Allow-All" to all the users in the tenant, except any that have an explicit policy assignment.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -43726,9 +43785,9 @@ Set-CsHostedVoiceMailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c
           <maml:description>
             <maml:para>A duration of voicemail maximum recording length. The length should be between 30 seconds to 10 minutes.</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Duration</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">TimeSpan</command:parameterValue>
           <dev:type>
-            <maml:name>Duration</maml:name>
+            <maml:name>TimeSpan</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -43784,7 +43843,7 @@ Set-CsHostedVoiceMailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SecondarySystemPromptLanguage</maml:name>
           <maml:description>
-            <maml:para>The secondary language that voicemail system prompts will be presented in. Must also set PrimarySystemPromptLanguage and may not be the same value as PrimarySystemPromptanguage. When set, this overrides the user language choice.  Please see Set-CsOnlineVoicemailUserSettings (https://learn.microsoft.com/powershell/module/microsoftteams/set-csonlinevoicemailusersettings)-PromptLanguage for supported languages.</maml:para>
+            <maml:para>The secondary language that voicemail system prompts will be presented in. Must also set PrimarySystemPromptLanguage and may not be the same value as PrimarySystemPromptLanguage. When set, this overrides the user language choice.  Please see Set-CsOnlineVoicemailUserSettings (https://learn.microsoft.com/powershell/module/microsoftteams/set-csonlinevoicemailusersettings)-PromptLanguage for supported languages.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -43922,9 +43981,9 @@ Set-CsHostedVoiceMailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c
         <maml:description>
           <maml:para>A duration of voicemail maximum recording length. The length should be between 30 seconds to 10 minutes.</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">Duration</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">TimeSpan</command:parameterValue>
         <dev:type>
-          <maml:name>Duration</maml:name>
+          <maml:name>TimeSpan</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -43980,7 +44039,7 @@ Set-CsHostedVoiceMailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SecondarySystemPromptLanguage</maml:name>
         <maml:description>
-          <maml:para>The secondary language that voicemail system prompts will be presented in. Must also set PrimarySystemPromptLanguage and may not be the same value as PrimarySystemPromptanguage. When set, this overrides the user language choice.  Please see Set-CsOnlineVoicemailUserSettings (https://learn.microsoft.com/powershell/module/microsoftteams/set-csonlinevoicemailusersettings)-PromptLanguage for supported languages.</maml:para>
+          <maml:para>The secondary language that voicemail system prompts will be presented in. Must also set PrimarySystemPromptLanguage and may not be the same value as PrimarySystemPromptLanguage. When set, this overrides the user language choice.  Please see Set-CsOnlineVoicemailUserSettings (https://learn.microsoft.com/powershell/module/microsoftteams/set-csonlinevoicemailusersettings)-PromptLanguage for supported languages.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -46754,7 +46813,6 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <maml:name>PreventComplianceRecording</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining calls owned by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -47369,7 +47427,6 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <maml:name>PreventComplianceRecording</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining calls owned by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -48210,6 +48267,21 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DefaultChannelTypeOnCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting sets the default channel type that users will have available.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- Flexible : Open access channels. - Private : Private access channels. - Standard : Standard channels. - Shared : Shared channels.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
           <maml:description>
             <maml:para>Bypasses all non-fatal errors.</maml:para>
@@ -48513,6 +48585,21 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
           <maml:para>This setting sets whether users are able to create Next Generation Shared Channels by default.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Users are allowed. - Disabled : Users are not allowed.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DefaultChannelTypeOnCreation</maml:name>
+        <maml:description>
+          <maml:para>This setting sets the default channel type that users will have available.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- Flexible : Open access channels. - Private : Private access channels. - Standard : Standard channels. - Shared : Shared channels.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -51888,7 +51975,6 @@ New-CsTeamsEmergencyCallRoutingPolicy -Identity "testecrp" -EmergencyNumbers $en
             <maml:para>Controls whether attendance and engagement reports are allowed for events.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : On, but organizers can turn it off. - Disabled : Off, but organizers can turn it on. - ForceEnabled : On. Organizers cannot turn off attendance and engagement reports. - ForceDisabled : Off. Organizers cannot view or download attendance and engagement reports.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -51903,7 +51989,6 @@ New-CsTeamsEmergencyCallRoutingPolicy -Identity "testecrp" -EmergencyNumbers $en
             <maml:para>Controls what information is shown in attendance reports.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- FullInformation : Full attendee information is shown in the report. - IdentityOnly : Only attendee identity is shown in the report.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -52219,7 +52304,6 @@ New-CsTeamsEmergencyCallRoutingPolicy -Identity "testecrp" -EmergencyNumbers $en
           <maml:para>Controls whether attendance and engagement reports are allowed for events.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : On, but organizers can turn it off. - Disabled : Off, but organizers can turn it on. - ForceEnabled : On. Organizers cannot turn off attendance and engagement reports. - ForceDisabled : Off. Organizers cannot view or download attendance and engagement reports.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -52234,7 +52318,6 @@ New-CsTeamsEmergencyCallRoutingPolicy -Identity "testecrp" -EmergencyNumbers $en
           <maml:para>Controls what information is shown in attendance reports.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- FullInformation : Full attendee information is shown in the report. - IdentityOnly : Only attendee identity is shown in the report.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -54469,6 +54552,18 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AllowIntelligentRecap</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. Controls whether Intelligent Recap is allowed for the user's meetings.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>True</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowIPAudio</maml:name>
           <maml:description>
             <maml:para>Determines whether audio is enabled in  a user's meetings or calls. Set this to TRUE to allow the user to share their audio. Set this to FALSE to prohibit the user from sharing their audio.</maml:para>
@@ -55033,6 +55128,22 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
+          <maml:description>
+            <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+            <maml:para>Possible values:</maml:para>
+            <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
+            <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnrollUserOverride</maml:name>
           <maml:description>
             <maml:para>Possible values are:</maml:para>
@@ -55112,6 +55223,19 @@ Tag:Test Enabled</dev:code>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IntelligentRecapDocxFileExpirationDays</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>This setting controls how many days the intelligent recap docx file is stored before it expires. The default value is 120.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>120</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>InMemory</maml:name>
@@ -55275,7 +55399,6 @@ Tag:Test Enabled</dev:code>
           <maml:name>NoiseSuppressionForDialInParticipants</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Control Noise Suppression Feature for PSTN legs joining a meeting.</maml:para>
             <maml:para>Possible Values:</maml:para>
             <maml:para>- MicrosoftDefault</maml:para>
@@ -55350,7 +55473,6 @@ Tag:Test Enabled</dev:code>
           <maml:name>PreventComplianceRecording</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining meetings organized by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -55664,6 +55786,20 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableExternalRecordingDetection</maml:name>
+          <maml:description>
+            <maml:para>Controls whether Teams detects third-party applications, such as screen recorders, audio recorders, and AI note-takers, capturing audio on the user's device during a meeting.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- $true : The user's client runs external recording detection and participants are notified when a third-party application is detected capturing audio. - $false : External recording detection does not run. This is the default value.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnableRecordingAndTranscriptionCustomMessage</maml:name>
           <maml:description>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. This policy controls whether custom strings can be shown for recording and transcription in user's Teams meetings. It need to work with RecordingAndTranscriptionCustomMessageIdentifier.</maml:para>
@@ -55772,21 +55908,6 @@ Tag:Test Enabled</dev:code>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>True</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
-          <maml:description>
-            <maml:para>Determines whether Teams plays any CVA-driven recording announcements (ACS recording, Teams compliance recording, Teams convenience recording) for calls involving CCaaS/OPS scenarios.</maml:para>
-            <maml:para>Possible values are:</maml:para>
-            <maml:para>- $true : Teams suppresses all CVA-driven recording announcements; the CCaaS/OPS solution is responsible for compliance notifications. - $false : Teams plays all system recording announcements (default).</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FilterProfanityInTranscript</maml:name>
@@ -56056,6 +56177,18 @@ Tag:Test Enabled</dev:code>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AllowIntelligentRecap</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. Controls whether Intelligent Recap is allowed for the user's meetings.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>True</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowIPAudio</maml:name>
@@ -56623,6 +56756,22 @@ Tag:Test Enabled</dev:code>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
+        <maml:description>
+          <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+          <maml:para>Possible values:</maml:para>
+          <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
+          <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EnrollUserOverride</maml:name>
         <maml:description>
           <maml:para>Possible values are:</maml:para>
@@ -56715,6 +56864,19 @@ Tag:Test Enabled</dev:code>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IntelligentRecapDocxFileExpirationDays</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>This setting controls how many days the intelligent recap docx file is stored before it expires. The default value is 120.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>120</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>InMemory</maml:name>
@@ -56879,7 +57041,6 @@ Tag:Test Enabled</dev:code>
         <maml:name>NoiseSuppressionForDialInParticipants</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Control Noise Suppression Feature for PSTN legs joining a meeting.</maml:para>
           <maml:para>Possible Values:</maml:para>
           <maml:para>- MicrosoftDefault</maml:para>
@@ -56954,7 +57115,6 @@ Tag:Test Enabled</dev:code>
         <maml:name>PreventComplianceRecording</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining meetings organized by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -57269,6 +57429,20 @@ Tag:Test Enabled</dev:code>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableExternalRecordingDetection</maml:name>
+        <maml:description>
+          <maml:para>Controls whether Teams detects third-party applications, such as screen recorders, audio recorders, and AI note-takers, capturing audio on the user's device during a meeting.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- $true : The user's client runs external recording detection and participants are notified when a third-party application is detected capturing audio. - $false : External recording detection does not run. This is the default value.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EnableRecordingAndTranscriptionCustomMessage</maml:name>
         <maml:description>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. This policy controls whether custom strings can be shown for recording and transcription in user's Teams meetings. It need to work with RecordingAndTranscriptionCustomMessageIdentifier.</maml:para>
@@ -57377,21 +57551,6 @@ Tag:Test Enabled</dev:code>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>True</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
-        <maml:description>
-          <maml:para>Determines whether Teams plays any CVA-driven recording announcements (ACS recording, Teams compliance recording, Teams convenience recording) for calls involving CCaaS/OPS scenarios.</maml:para>
-          <maml:para>Possible values are:</maml:para>
-          <maml:para>- $true : Teams suppresses all CVA-driven recording announcements; the CCaaS/OPS solution is responsible for compliance notifications. - $false : Teams plays all system recording announcements (default).</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FilterProfanityInTranscript</maml:name>
@@ -63677,7 +63836,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>CallQueueAgentMonitorMode</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+            <maml:para>Supported values: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
             <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
             <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -63695,7 +63854,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
+            <maml:para>Supported values: Disabled | Agent</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
             <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
           </maml:description>
@@ -63733,7 +63892,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>HistoricalAgentMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for agents.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for agents who are members in the call queues they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all agents in all call queues in the organization.</maml:para>
@@ -63749,7 +63908,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>HistoricalAutoAttendantMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for auto attendants.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for auto attendants they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all auto attendants in the organization.</maml:para>
@@ -63765,7 +63924,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>HistoricalCallQueueMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for call queues.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for call queues they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all call queues in the organization.</maml:para>
@@ -63781,7 +63940,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>RealTimeAgentMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for agents.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for agents who are members in the call queues they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeAgentMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -63797,7 +63956,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>RealTimeAutoAttendantMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for auto attendants.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for auto attendants they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeAutoAttendantMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -63813,7 +63972,7 @@ Tag:sms-enabled                            False</dev:code>
           <maml:name>RealTimeCallQueueMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for call queues.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for call queues they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeCallQueueMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -64143,7 +64302,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>CallQueueAgentMonitorMode</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+          <maml:para>Supported values: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
           <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
           <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -64161,7 +64320,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
+          <maml:para>Supported values: Disabled | Agent</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
           <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
         </maml:description>
@@ -64200,7 +64359,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>HistoricalAgentMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for agents.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for agents who are members in the call queues they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all agents in all call queues in the organization.</maml:para>
@@ -64216,7 +64375,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>HistoricalAutoAttendantMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for auto attendants.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for auto attendants they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all auto attendants in the organization.</maml:para>
@@ -64232,7 +64391,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>HistoricalCallQueueMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for call queues.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for call queues they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all call queues in the organization.</maml:para>
@@ -64260,7 +64419,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>RealTimeAgentMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for agents.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for agents who are members in the call queues they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeAgentMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -64276,7 +64435,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>RealTimeAutoAttendantMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for auto attendants.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for auto attendants they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeAutoAttendantMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -64292,7 +64451,7 @@ Tag:sms-enabled                            False</dev:code>
         <maml:name>RealTimeCallQueueMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for call queues.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for call queues they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved, however, any user assigned a policy with RealTimeCallQueueMetricsPermission set to `All` won't be able to access real-time metrics.</maml:para>
@@ -64335,14 +64494,14 @@ Tag:sms-enabled                            False</dev:code>
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>New-CsTeamsVoiceApplicationsPolicy -Identity SDA-Allow-CQ-Moh -AllowCallQueueMusicOnHoldChange $true</dev:code>
         <dev:remarks>
-          <maml:para>The command shown in Example 1 creates a new per-user Teams voice applications policy with the Identity `SDA-Allow-Moh`. This policy allows delegated administrators to change the music on hold information.</maml:para>
+          <maml:para>The command shown in Example 1 creates a new per-user Teams voice applications policy with the Identity `SDA-Allow-CQ-Moh`. This policy allows delegated administrators to change the music on hold information.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>New-CsTeamsVoiceApplicationsPolicy -Identity SDA-Allow-AA-After-Hour -AllowAutoAttendantAfterHoursGreetingChange $true</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 2 creates a new per-user Teams voice applications policy with the Identity `SDA-Allow-AA-After-Hour`. This policy allows delegated administrators to change after-hours greetings for auto attendants.</maml:para>
@@ -72218,7 +72377,7 @@ New-CsVoicePolicy site:Redmond -PstnUsages @{add = $a.Usage}</dev:code>
       <command:verb>Remove</command:verb>
       <command:noun>CsOnlineVoicemailPolicy</command:noun>
       <maml:description>
-        <maml:para>Deletes an existing Online Voicemail policy or resets the Global policy instance to the default values.</maml:para>
+        <maml:para>Deletes an existing Online Voicemail policy.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -72227,7 +72386,7 @@ New-CsVoicePolicy site:Redmond -PstnUsages @{add = $a.Usage}</dev:code>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Remove-CsOnlineVoicemailPolicy</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Identity</maml:name>
           <maml:description>
             <maml:para>A unique identifier specifying the scope, and in some cases the name, of the policy.</maml:para>
@@ -72276,7 +72435,7 @@ New-CsVoicePolicy site:Redmond -PstnUsages @{add = $a.Usage}</dev:code>
         </dev:type>
         <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Identity</maml:name>
         <maml:description>
           <maml:para>A unique identifier specifying the scope, and in some cases the name, of the policy.</maml:para>
@@ -79546,14 +79705,14 @@ At line:1 char:1
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>Remove-CsTeamsVoiceApplicationsPolicy -Identity "SDA-Allow-All"</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 1 deletes the Teams voice applications policy SDA-Allow-All.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>Get-CsTeamsVoiceApplicationsPolicy -Filter "tag:*" | Remove-CsTeamsVoiceApplicationsPolicy</dev:code>
         <dev:remarks>
           <maml:para>In Example 2, all Teams voice applications policies configured at the per-user scope are removed. To do this, the command first calls the Get-CsTeamsVoiceApplicationsPolicy cmdlet along with the Filter parameter; the filter value "tag:*" limits the returned data to Teams voice applications policies configured at the per-user scope. Those per-user policies are then piped to and removed by the Remove-CsTeamsVoiceApplicationsPolicy cmdlet.</maml:para>
@@ -96714,7 +96873,6 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <maml:name>PreventComplianceRecording</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining calls owned by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -97325,7 +97483,6 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <maml:name>PreventComplianceRecording</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining calls owned by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining calls initiated by or received by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -98346,6 +98503,21 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DefaultChannelTypeOnCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting sets the default channel type that users will have available.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- Flexible : Open access channels. - Private : Private access channels. - Standard : Standard channels. - Shared : Shared channels.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
           <maml:description>
             <maml:para>Bypass all non-fatal errors.</maml:para>
@@ -98636,6 +98808,21 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
             <maml:para>This setting sets whether users are able to create Next Generation Shared Channels by default.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : Users are allowed. - Disabled : Users are not allowed.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DefaultChannelTypeOnCreation</maml:name>
+          <maml:description>
+            <maml:para>This setting sets the default channel type that users will have available.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- Flexible : Open access channels. - Private : Private access channels. - Standard : Standard channels. - Shared : Shared channels.</maml:para>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -98949,6 +99136,21 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
           <maml:para>This setting sets whether users are able to create Next Generation Shared Channels by default.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Users are allowed. - Disabled : Users are not allowed.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DefaultChannelTypeOnCreation</maml:name>
+        <maml:description>
+          <maml:para>This setting sets the default channel type that users will have available.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- Flexible : Open access channels. - Private : Private access channels. - Standard : Standard channels. - Shared : Shared channels.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -103331,7 +103533,6 @@ Set-CsTeamsEmergencyCallRoutingPolicy -Identity "Test" -EmergencyNumbers @{remov
             <maml:para>Controls whether attendance and engagement reports are allowed for events.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : On, but organizers can turn it off. - Disabled : Off, but organizers can turn it on. - ForceEnabled : On. Organizers cannot turn off attendance and engagement reports. - ForceDisabled : Off. Organizers cannot view or download attendance and engagement reports.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -103346,7 +103547,6 @@ Set-CsTeamsEmergencyCallRoutingPolicy -Identity "Test" -EmergencyNumbers @{remov
             <maml:para>Controls what information is shown in attendance reports.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- FullInformation : Full attendee information is shown in the report. - IdentityOnly : Only attendee identity is shown in the report.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -103689,7 +103889,6 @@ Set-CsTeamsEmergencyCallRoutingPolicy -Identity "Test" -EmergencyNumbers @{remov
           <maml:para>Controls whether attendance and engagement reports are allowed for events.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : On, but organizers can turn it off. - Disabled : Off, but organizers can turn it on. - ForceEnabled : On. Organizers cannot turn off attendance and engagement reports. - ForceDisabled : Off. Organizers cannot view or download attendance and engagement reports.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -103704,7 +103903,6 @@ Set-CsTeamsEmergencyCallRoutingPolicy -Identity "Test" -EmergencyNumbers @{remov
           <maml:para>Controls what information is shown in attendance reports.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- FullInformation : Full attendee information is shown in the report. - IdentityOnly : Only attendee identity is shown in the report.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -108242,6 +108440,18 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>AllowIntelligentRecap</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. Controls whether Intelligent Recap is allowed for the user's meetings.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>True</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>AllowIPAudio</maml:name>
           <maml:description>
             <maml:para>Determines whether audio is enabled in a user's meetings or calls. Set this to TRUE to allow the user to share their audio. Set this to FALSE to prohibit the user from sharing their audio.</maml:para>
@@ -108801,6 +109011,22 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
+          <maml:description>
+            <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+            <maml:para>Possible values:</maml:para>
+            <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
+            <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnrollUserOverride</maml:name>
           <maml:description>
             <maml:para>Turn on/off Biometric enrollment Possible values are:</maml:para>
@@ -108849,8 +109075,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ExternalBotAccessMode</maml:name>
           <maml:description>
-            <maml:para>Controls how external third-party automated bots and meeting assistants are handled when they attempt to join meetings. This policy provides predictable behavior and helps organizers apply intentional control for bot participation.</maml:para>
-            <maml:para>Possible Values: - AllowAllBots : Don't detect bots; allow them to join meetings directly. - RequireApprovalWhenDetected : When detected, require approval before joining by routing detected bots to the meeting lobby. This is the default value. - BlockDetectedBots : Block detected bots from joining meetings.</maml:para>
+            <maml:para>Controls how external third-party meeting bots and meeting assistants are handled when they attempt to join meetings. This policy provides admins with controls to detect and manage external bots when they attempt to join meetings hosted in the organization. Using these controls admins are able to manage or prevent unauthorized joins of external bots to the meetings hosted in their organization.</maml:para>
+            <maml:para>Possible Values: - AllowAllBots : Don't detect bots; Bots will appear the same as other participants. Standard lobby policies will apply to them. They may get mistakenly admitted to meetings.</maml:para>
+            <maml:para>- RequireApprovalWhenDetected : When detected, bots will be enforced to the meeting lobby, regardless of the lobby setting of the meeting. They will require approval before getting access to the meetings. This is the default value.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -108881,6 +109108,19 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>IntelligentRecapDocxFileExpirationDays</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>This setting controls how many days the intelligent recap docx file is stored before it expires. The default value is 120.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+          <dev:type>
+            <maml:name>Int32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>120</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>IPAudioMode</maml:name>
@@ -109033,8 +109273,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:name>NoiseSuppressionForDialInParticipants</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-            <maml:para>Control Noises Suppression Feature for PST legs joining a meeting.</maml:para>
+            <maml:para>Control Noises Suppression Feature for PSTN legs joining a meeting.</maml:para>
             <maml:para>Possible Values:</maml:para>
             <maml:para>- MicrosoftDefault</maml:para>
             <maml:para>- Enabled</maml:para>
@@ -109108,7 +109347,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:name>PreventComplianceRecording</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
             <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining meetings organized by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -109502,21 +109740,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <dev:defaultValue>True</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-          <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
-          <maml:description>
-            <maml:para>Determines whether Teams plays any CVA-driven recording announcements (ACS recording, Teams compliance recording, Teams convenience recording) for calls involving CCaaS/OPS scenarios.</maml:para>
-            <maml:para>Possible values are:</maml:para>
-            <maml:para>- $true : Teams suppresses all CVA-driven recording announcements; the CCaaS/OPS solution is responsible for compliance notifications. - $false : Teams plays all system recording announcements (default).</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-          <dev:type>
-            <maml:name>Boolean</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>False</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FilterProfanityInTranscript</maml:name>
           <maml:description>
             <maml:para>Controls whether meeting transcripts filter profanity.</maml:para>
@@ -109571,6 +109794,20 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Everyone</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableExternalRecordingDetection</maml:name>
+          <maml:description>
+            <maml:para>Controls whether Teams detects third-party applications, such as screen recorders, audio recorders, and AI note-takers, capturing audio on the user's device during a meeting.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- $true : The user's client runs external recording detection and participants are notified when a third-party application is detected capturing audio. - $false : External recording detection does not run. This is the default value.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnableRecordingAndTranscriptionCustomMessage</maml:name>
@@ -109856,6 +110093,18 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>AllowIntelligentRecap</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect. Controls whether Intelligent Recap is allowed for the user's meetings.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>True</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>AllowIPAudio</maml:name>
@@ -110418,6 +110667,22 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
+        <maml:description>
+          <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+          <maml:para>Possible values:</maml:para>
+          <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
+          <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EnrollUserOverride</maml:name>
         <maml:description>
           <maml:para>Turn on/off Biometric enrollment Possible values are:</maml:para>
@@ -110466,8 +110731,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ExternalBotAccessMode</maml:name>
         <maml:description>
-          <maml:para>Controls how external third-party automated bots and meeting assistants are handled when they attempt to join meetings. This policy provides predictable behavior and helps organizers apply intentional control for bot participation.</maml:para>
-          <maml:para>Possible Values: - AllowAllBots : Don't detect bots; allow them to join meetings directly. - RequireApprovalWhenDetected : When detected, require approval before joining by routing detected bots to the meeting lobby. This is the default value. - BlockDetectedBots : Block detected bots from joining meetings.</maml:para>
+          <maml:para>Controls how external third-party meeting bots and meeting assistants are handled when they attempt to join meetings. This policy provides admins with controls to detect and manage external bots when they attempt to join meetings hosted in the organization. Using these controls admins are able to manage or prevent unauthorized joins of external bots to the meetings hosted in their organization.</maml:para>
+          <maml:para>Possible Values: - AllowAllBots : Don't detect bots; Bots will appear the same as other participants. Standard lobby policies will apply to them. They may get mistakenly admitted to meetings.</maml:para>
+          <maml:para>- RequireApprovalWhenDetected : When detected, bots will be enforced to the meeting lobby, regardless of the lobby setting of the meeting. They will require approval before getting access to the meetings. This is the default value.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -110511,6 +110777,19 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>IntelligentRecapDocxFileExpirationDays</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>This setting controls how many days the intelligent recap docx file is stored before it expires. The default value is 120.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>120</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>IPAudioMode</maml:name>
@@ -110663,8 +110942,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:name>NoiseSuppressionForDialInParticipants</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt;[!NOTE] &gt;This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
-          <maml:para>Control Noises Suppression Feature for PST legs joining a meeting.</maml:para>
+          <maml:para>Control Noises Suppression Feature for PSTN legs joining a meeting.</maml:para>
           <maml:para>Possible Values:</maml:para>
           <maml:para>- MicrosoftDefault</maml:para>
           <maml:para>- Enabled</maml:para>
@@ -110738,7 +111016,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:name>PreventComplianceRecording</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been released yet and will have no changes if it is enabled or disabled.</maml:para>
           <maml:para>Controls whether Compliance Recording (CR)-enabled users are blocked from joining meetings organized by the policy-assigned user. When set to `None`, no restriction is applied and compliance recording operates as configured for the tenant. When set to `All`, CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to both internal and external CR-enabled users (including federated and B2B guests). Anonymous and PSTN users are unaffected as they cannot be assigned compliance recording.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- None : Compliance recording is not prevented. The tenant's compliance recording configuration applies normally. This is the default value. - All : CR-enabled users are blocked from joining meetings organized by the policy-assigned user. This applies to all CR-enabled users regardless of whether they are internal or external to the tenant.</maml:para>
@@ -111132,21 +111409,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:defaultValue>True</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
-        <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
-        <maml:description>
-          <maml:para>Determines whether Teams plays any CVA-driven recording announcements (ACS recording, Teams compliance recording, Teams convenience recording) for calls involving CCaaS/OPS scenarios.</maml:para>
-          <maml:para>Possible values are:</maml:para>
-          <maml:para>- $true : Teams suppresses all CVA-driven recording announcements; the CCaaS/OPS solution is responsible for compliance notifications. - $false : Teams plays all system recording announcements (default).</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
-        <dev:type>
-          <maml:name>Boolean</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>False</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FilterProfanityInTranscript</maml:name>
         <maml:description>
           <maml:para>Controls whether meeting transcripts filter profanity.</maml:para>
@@ -111202,6 +111464,20 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Everyone</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableExternalRecordingDetection</maml:name>
+        <maml:description>
+          <maml:para>Controls whether Teams detects third-party applications, such as screen recorders, audio recorders, and AI note-takers, capturing audio on the user's device during a meeting.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- $true : The user's client runs external recording detection and participants are notified when a third-party application is detected capturing audio. - $false : External recording detection does not run. This is the default value.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EnableRecordingAndTranscriptionCustomMessage</maml:name>
@@ -118653,7 +118929,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>CallQueueAgentMonitorMode</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+            <maml:para>Supported values: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
             <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
             <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -118671,7 +118947,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
+            <maml:para>Supported values: Disabled | Agent</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
             <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
           </maml:description>
@@ -118697,7 +118973,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>HistoricalAgentMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for agents.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for agents who are members in the call queues they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all agents in all call queues in the organization.</maml:para>
@@ -118713,7 +118989,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>HistoricalAutoAttendantMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for auto attendants.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for auto attendants they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all auto attendants in the organization.</maml:para>
@@ -118729,7 +119005,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>HistoricalCallQueueMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for call queues.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for call queues they are authorized for.</maml:para>
             <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all call queues in the organization.</maml:para>
@@ -118745,7 +119021,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>RealTimeAgentMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for agents.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for agents who are members in the call queues they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeAgentMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -118761,7 +119037,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>RealTimeAutoAttendantMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for auto attendants.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for auto attendants they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeAutoAttendantMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -118777,7 +119053,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
           <maml:name>RealTimeCallQueueMetricsPermission</maml:name>
           <maml:description>
             <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-            <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+            <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
             <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for call queues.</maml:para>
             <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for call queues they are authorized for.</maml:para>
             <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeCallQueueMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -119107,7 +119383,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>CallQueueAgentMonitorMode</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
+          <maml:para>Supported values: Disabled | Monitor | Whisper | Barge | Takeover</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor call sessions.</maml:para>
           <maml:para>When set to `Monitor`, users affected by the policy will be allowed to monitor and listen to call sessions.</maml:para>
           <maml:para>When set to `Whisper`, users affected by the policy will be allowed to monitor call sessions and whisper to an agent in the call.</maml:para>
@@ -119125,7 +119401,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>CallQueueAgentMonitorNotificationMode</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | Agent</maml:para>
+          <maml:para>Supported values: Disabled | Agent</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't be allowed to monitor agents during call sessions.</maml:para>
           <maml:para>When set to `Agent`, users affected by the policy will be allowed to monitor agents during call sessions.</maml:para>
         </maml:description>
@@ -119152,7 +119428,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>HistoricalAgentMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for agents.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for agents who are members in the call queues they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all agents in all call queues in the organization.</maml:para>
@@ -119168,7 +119444,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>HistoricalAutoAttendantMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for auto attendants.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for auto attendants they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all auto attendants in the organization.</maml:para>
@@ -119184,7 +119460,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>HistoricalCallQueueMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive historical metrics for call queues.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive historical metrics for call queues they are authorized for.</maml:para>
           <maml:para>When set to `All`, users affected by the policy will receive historical metrics for all call queues in the organization.</maml:para>
@@ -119216,7 +119492,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>RealTimeAgentMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for agents.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for agents who are members in the call queues they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeAgentMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -119232,7 +119508,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>RealTimeAutoAttendantMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for auto attendants.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for auto attendants they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeAutoAttendantMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -119248,7 +119524,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
         <maml:name>RealTimeCallQueueMetricsPermission</maml:name>
         <maml:description>
           <maml:para>&gt; Applicable: Microsoft Teams</maml:para>
-          <maml:para>PARAMVALUE: Disabled | AuthorizedOnly | All</maml:para>
+          <maml:para>Supported values: Disabled | AuthorizedOnly | All</maml:para>
           <maml:para>When set to `Disabled` (the default value), users affected by the policy won't receive real-time metrics for call queues.</maml:para>
           <maml:para>When set to `AuthorizedOnly`, users affected by the policy will receive real-time metrics for call queues they are authorized for.</maml:para>
           <maml:para>&gt; [!IMPORTANT] &gt; The `All` option is no longer supported. The parameter will be accepted and saved however any user assigned a policy with RealTimeCallQueueMetricsPermission set to `All` will not be able to access real-time metrics.</maml:para>
@@ -119291,7 +119567,7 @@ Set-CsTeamsUnassignedNumberTreatment -Identity User2PSTN -TargetType User -Targe
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>Set-CsTeamsVoiceApplicationsPolicy -Identity "SDA-CQ-OverflowGreeting" -AllowCallQueueOverflowSharedVoicemailGreetingChange $true</dev:code>
         <dev:remarks>
           <maml:para>The command shown in Example 1 sets allowing CQ overflow shared voicemail greeting changes to per-user Teams voice applications policy.</maml:para>

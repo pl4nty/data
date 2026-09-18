@@ -2748,6 +2748,42 @@
         "Torus"
       ]
     },
+    "New-CsMainlineAttendantSpamDetectionTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Get-CsMainlineAttendantSpamDetectionTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Set-CsMainlineAttendantSpamDetectionTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
+    "Remove-CsMainlineAttendantSpamDetectionTemplate": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost",
+        "Torus"
+      ]
+    },
     "Get-CsMainlineAttendantTenantInformation": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -5041,6 +5077,24 @@
       ]
     },
     "Clear-CsOCEContext": {
+      "CmdletType": "Custom",
+      "ExportsTo": [
+        "Torus"
+      ]
+    },
+    "Set-CsRoutingContext": {
+      "CmdletType": "Custom",
+      "ExportsTo": [
+        "Torus"
+      ]
+    },
+    "Get-CsRoutingContext": {
+      "CmdletType": "Custom",
+      "ExportsTo": [
+        "Torus"
+      ]
+    },
+    "Clear-CsRoutingContext": {
       "CmdletType": "Custom",
       "ExportsTo": [
         "Torus"
