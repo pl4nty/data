@@ -55,7 +55,7 @@ do
             return mp.CLEAN
           end
           local l_0_11 = nil
-          local l_0_12, l_0_13, l_0_14, l_0_15, l_0_16 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious", "IsTerminalFixCMD"}, l_0_3)
+          local l_0_12, l_0_13, l_0_14, l_0_15, l_0_16 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious"}, l_0_3)
           if not l_0_16 then
             return mp.CLEAN
           end
@@ -63,19 +63,19 @@ do
           local l_0_18 = nil
           local l_0_19 = nil
           local l_0_20 = nil
-          local l_0_21 = tostring(R16_PC324)
-          local l_0_22 = R16_PC324
+          local l_0_21 = tostring(R16_PC323)
+          local l_0_22 = R16_PC323
           do
             l_0_21 = l_0_21 .. l_0_22 .. tostring(l_0_17) .. "||" .. (string.sub)(tostring(l_0_19 or "-"), 1, 128) .. "||" .. (string.sub)(tostring(l_0_18), 1, 320) .. "||" .. (string.sub)(tostring(l_0_3), 1, 320)
-            -- DECOMPILER ERROR at PC359: Overwrote pending register: R16 in 'AssignReg'
+            -- DECOMPILER ERROR at PC358: Overwrote pending register: R16 in 'AssignReg'
 
             l_0_22("ObfuscatedRemoteExec_A", l_0_21, false)
+            -- DECOMPILER ERROR at PC363: Overwrote pending register: R16 in 'AssignReg'
+
             -- DECOMPILER ERROR at PC364: Overwrote pending register: R16 in 'AssignReg'
 
-            -- DECOMPILER ERROR at PC365: Overwrote pending register: R16 in 'AssignReg'
-
             do return l_0_22 end
-            -- DECOMPILER ERROR at PC367: freeLocal<0 in 'ReleaseLocals'
+            -- DECOMPILER ERROR at PC366: freeLocal<0 in 'ReleaseLocals'
 
           end
         end

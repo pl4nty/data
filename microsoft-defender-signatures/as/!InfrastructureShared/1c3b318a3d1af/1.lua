@@ -41,13 +41,13 @@ if l_0_2 ~= nil then
   end
 end
 local l_0_3 = {}
--- DECOMPILER ERROR at PC72: No list found for R3 , SetList fails
+-- DECOMPILER ERROR at PC73: No list found for R3 , SetList fails
 
--- DECOMPILER ERROR at PC73: Overwrote pending register: R4 in 'AssignReg'
+-- DECOMPILER ERROR at PC74: Overwrote pending register: R4 in 'AssignReg'
 
--- DECOMPILER ERROR at PC74: Overwrote pending register: R5 in 'AssignReg'
+-- DECOMPILER ERROR at PC75: Overwrote pending register: R5 in 'AssignReg'
 
--- DECOMPILER ERROR at PC75: Overwrote pending register: R6 in 'AssignReg'
+-- DECOMPILER ERROR at PC76: Overwrote pending register: R6 in 'AssignReg'
 
 if ("shell32.dll")("printui.dll", "dfshim.dll") then
   return mp.CLEAN
@@ -60,27 +60,27 @@ local l_0_5 = (mp.ContextualExpandEnvironmentVariables)(l_0_4)
 if l_0_5 == nil then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC101: Overwrote pending register: R7 in 'AssignReg'
+-- DECOMPILER ERROR at PC102: Overwrote pending register: R7 in 'AssignReg'
 
 local l_0_6 = (string.lower)("davclnt.dll")
 local l_0_7 = {}
--- DECOMPILER ERROR at PC104: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC105: Overwrote pending register: R8 in 'AssignReg'
 
--- DECOMPILER ERROR at PC105: Overwrote pending register: R9 in 'AssignReg'
+-- DECOMPILER ERROR at PC106: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC106: Overwrote pending register: R10 in 'AssignReg'
+-- DECOMPILER ERROR at PC107: Overwrote pending register: R10 in 'AssignReg'
 
--- DECOMPILER ERROR at PC107: Overwrote pending register: R11 in 'AssignReg'
+-- DECOMPILER ERROR at PC108: Overwrote pending register: R11 in 'AssignReg'
 
--- DECOMPILER ERROR at PC108: Overwrote pending register: R12 in 'AssignReg'
+-- DECOMPILER ERROR at PC109: Overwrote pending register: R12 in 'AssignReg'
 
--- DECOMPILER ERROR at PC109: No list found for R7 , SetList fails
+-- DECOMPILER ERROR at PC110: No list found for R7 , SetList fails
 
--- DECOMPILER ERROR at PC110: Overwrote pending register: R8 in 'AssignReg'
+-- DECOMPILER ERROR at PC111: Overwrote pending register: R8 in 'AssignReg'
 
--- DECOMPILER ERROR at PC111: Overwrote pending register: R9 in 'AssignReg'
+-- DECOMPILER ERROR at PC112: Overwrote pending register: R9 in 'AssignReg'
 
--- DECOMPILER ERROR at PC112: Overwrote pending register: R10 in 'AssignReg'
+-- DECOMPILER ERROR at PC113: Overwrote pending register: R10 in 'AssignReg'
 
 if ("url.dll")("shdocvw.dll", "ieframe.dll") then
   return mp.CLEAN
@@ -93,11 +93,11 @@ do
   do
     if l_0_8 and next(l_0_8) and l_0_8.command_line then
       local l_0_9 = (string.lower)(l_0_8.command_line)
-      -- DECOMPILER ERROR at PC149: Overwrote pending register: R13 in 'AssignReg'
+      -- DECOMPILER ERROR at PC150: Overwrote pending register: R13 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC149: Overwrote pending register: R12 in 'AssignReg'
+      -- DECOMPILER ERROR at PC150: Overwrote pending register: R12 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC150: Overwrote pending register: R14 in 'AssignReg'
+      -- DECOMPILER ERROR at PC151: Overwrote pending register: R14 in 'AssignReg'
 
       bm_AddRelatedFileFromCommandLine(l_0_9, "keymgr.dll", "cryptui.dll", "zipfldr.dll")
       ;

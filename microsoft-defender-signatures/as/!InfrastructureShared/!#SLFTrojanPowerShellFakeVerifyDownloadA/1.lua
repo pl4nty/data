@@ -77,29 +77,29 @@ do
         return mp.CLEAN
       end
       local l_0_16 = nil
-      local l_0_17, l_0_18, l_0_19, l_0_20, l_0_21 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious", "IsTerminalFixCMD"}, l_0_3)
+      local l_0_17, l_0_18, l_0_19, l_0_20, l_0_21 = , FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious"}, l_0_3)
       if not l_0_19 then
         return mp.CLEAN
       end
       local l_0_22 = nil
       local l_0_23 = nil
-      local l_0_24 = tostring(R16_PC249)
-      local l_0_25 = R16_PC249
+      local l_0_24 = tostring(R16_PC248)
+      local l_0_25 = R16_PC248
       local l_0_26 = tostring(l_0_20)
       local l_0_27 = "||"
       do
         l_0_24 = l_0_24 .. l_0_25 .. l_0_26 .. l_0_27 .. (string.sub)(tostring(l_0_22 or "-"), 1, 128) .. "||" .. (string.sub)(tostring(l_0_21), 1, 320) .. "||" .. (string.sub)(tostring(l_0_3), 1, 320)
-        -- DECOMPILER ERROR at PC284: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC283: Overwrote pending register: R16 in 'AssignReg'
 
         l_0_26 = "FakeVerifyDownload_A"
         l_0_27 = l_0_24
         l_0_25(l_0_26, l_0_27, false)
+        -- DECOMPILER ERROR at PC288: Overwrote pending register: R16 in 'AssignReg'
+
         -- DECOMPILER ERROR at PC289: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC290: Overwrote pending register: R16 in 'AssignReg'
-
         do return l_0_25 end
-        -- DECOMPILER ERROR at PC292: freeLocal<0 in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC291: freeLocal<0 in 'ReleaseLocals'
 
       end
     end

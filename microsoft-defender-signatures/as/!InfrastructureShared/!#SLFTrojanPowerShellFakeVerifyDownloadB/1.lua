@@ -102,7 +102,7 @@ do
                   end
                   local l_0_31 = nil
                   local l_0_32, l_0_33, l_0_34, l_0_35, l_0_36 = nil
-                  if not FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious", "IsTerminalFixCMD"}, l_0_3) then
+                  if not FindRollingQueueContentMatch({"IsClickFixCMD", "IsClickFixCMD_Malicious"}, l_0_3) then
                     return mp.CLEAN
                   end
                   local l_0_37 = nil
@@ -114,11 +114,11 @@ do
                   local l_0_43 = nil
                   local l_0_44 = nil
                   do
-                    -- DECOMPILER ERROR at PC504: Overwrote pending register: R23 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC503: Overwrote pending register: R23 in 'AssignReg'
 
-                    set_research_data("FakeVerifyDownload_B", R23_PC467, false)
+                    set_research_data("FakeVerifyDownload_B", R23_PC466, false)
                     do return mp.INFECTED end
-                    -- DECOMPILER ERROR at PC510: freeLocal<0 in 'ReleaseLocals'
+                    -- DECOMPILER ERROR at PC509: freeLocal<0 in 'ReleaseLocals'
 
                   end
                 end

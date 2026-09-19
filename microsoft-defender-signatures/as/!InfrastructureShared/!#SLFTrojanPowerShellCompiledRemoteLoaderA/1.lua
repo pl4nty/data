@@ -46,15 +46,13 @@ do
     return mp.CLEAN
   end
   local l_0_7 = {}
-  -- DECOMPILER ERROR at PC167: No list found for R5 , SetList fails
+  -- DECOMPILER ERROR at PC166: No list found for R5 , SetList fails
 
-  -- DECOMPILER ERROR at PC168: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC167: Overwrote pending register: R6 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC169: Overwrote pending register: R7 in 'AssignReg'
+  -- DECOMPILER ERROR at PC168: Overwrote pending register: R7 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC170: Overwrote pending register: R8 in 'AssignReg'
-
-  local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12 = ("IsClickFixCMD")("IsClickFixCMD_Malicious", "IsTerminalFixCMD")
+  local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12 = ("IsClickFixCMD")("IsClickFixCMD_Malicious", l_0_3)
   if not l_0_8 then
     return mp.CLEAN
   end
@@ -77,7 +75,7 @@ do
     l_0_14 = mp
     l_0_14 = l_0_14.INFECTED
     do return l_0_14 end
-    -- DECOMPILER ERROR at PC222: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC221: freeLocal<0 in 'ReleaseLocals'
 
   end
 end
