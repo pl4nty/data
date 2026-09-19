@@ -1,5 +1,487 @@
 [
     {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Finance teams rely on journals for high-volume accounting processes, where performance, accuracy, and visibility are critical to keeping financial operations moving. The new financial journal capabilities in Dynamics 365 Finance will provide a more scalable approach to creating, importing, reviewing, and posting journals, helping finance teams reduce manual steps and identify issues earlier in the process.</p>\n<p>Finance teams can work with customer and ledger account types, import journals and review errors without navigating to the Data management workspace, and preview intercompany and intracompany accounting, accruals, and allocations before posting. Related documents make it easier to trace transactions, while integration with advanced tax calculations supports applicable tax scenarios. Future-period accruals no longer post automatically, reducing the need to keep future periods open.</p>\n<p>Optimized financial dimensions and the Ledger posting rules framework are prerequisites for using these capabilities.</p>",
+        "id": 571847,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Core finance - Improve financial journal processing and control"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Copilot Cowork makes it easy to delegate work. Describe the outcome you want and Cowork automatically grounds the work in your emails, meetings, messages, files, and data.</p>",
+        "id": 571637,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Cowork for Government Clouds"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Planner plans created from Teams meetings (via Meeting Notes or Loop) often remain unused long after the meeting ends. These inactive plans accumulate and clutter over time. This feature automatically expires and deletes meeting-created plans that have had no task activity for 180 days. Only the Planner plan is removed whereas the tasks in Loop and meeting notes stay intact.</p>",
+        "id": 571392,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Expiration of plans from meetings due to inactivity"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Users can now use the Teams Meet app to discover events across their organization, track what important events are upcoming, and plan and organize their own professional events. With this release, Meet app will be renamed to Events app.</p>",
+        "id": 571390,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Events in Meet app in Teams in GCC High and DoD"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter or any participant\u2019s video into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are multitasking, sharing content, or changing meeting layouts.</p>",
+        "id": 571387,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Pop out sign language interpreter meeting video for continuous visibility"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Microsoft Edge will introduce an opt-in experience that allows users on managed devices to choose whether Edge launches automatically when Windows starts. Administrators can also manage this behavior through the LaunchEdgeOnWindowsStartupEnabled policy with opt-in, opt-out, and user-choice configurations.</p>",
+        "id": 571307,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Autolaunch opt-in experience for managed devices"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Some existing retention policies scoped to Microsoft Teams may currently also apply to Microsoft 365 Copilot interactions. As part of an upcoming change, these legacy Teams retention policies will be converted to\u2014and treated as\u2014Teams-only policies. They will no longer implicitly govern Copilot workloads.</p>",
+        "id": 571306,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management-Legacy Teams retention policies covering Copilot will be treated as Teams-only"
+    },
+    {
+        "created": "2026-09-18T22:00:04",
+        "description": "<p>Express face enrollment makes it easier for users to create a face profile in Teams by using their camera during eligible meetings, after they opt in. Once enrolled, users can be recognized in supported Teams Rooms experiences, helping identify who is in the room and improving downstream meeting experiences such as Copilot and recap. Admins can enable or disable the feature for their organization.</p>",
+        "id": 570846,
+        "locale": null,
+        "modified": "2026-09-18T22:00:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Express face enrollment"
+    },
+    {
         "created": "2026-09-17T23:00:52",
         "description": "<p>Users will be able to see results from multiple mailboxes interweaved in a single ranked list and will be able to do standard mail actions.</p>",
         "id": 570441,
@@ -1085,10 +1567,10 @@
         "description": "<p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview\u2014Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers\u2014into one place to discover, create, validate, and manage classifiers.</p>",
         "id": 570844,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "September CY2026",
+        "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -14766,12 +15248,12 @@
     },
     {
         "created": "2026-06-29T23:02:39",
-        "description": "Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.",
+        "description": "<p>Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.</p>",
         "id": 566702,
         "locale": null,
-        "modified": "2026-06-29T23:02:39",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14827,12 +15309,12 @@
     },
     {
         "created": "2026-06-29T23:02:39",
-        "description": "Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.",
+        "description": "<p>Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.</p>",
         "id": 566701,
         "locale": null,
-        "modified": "2026-06-29T23:02:39",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15303,15 +15785,15 @@
     },
     {
         "created": "2026-06-25T23:15:45",
-        "description": "Seamlessly access your brand colors, images, icons, logos and more right within PowerPoint to create on-brand presentations.",
+        "description": "<p>Seamlessly access your brand colors, images, icons, logos and more right within PowerPoint to create on-brand presentations.</p>",
         "id": 566351,
         "locale": null,
-        "modified": "2026-07-21T22:37:32",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19895,12 +20377,12 @@
     },
     {
         "created": "2026-05-27T23:15:50",
-        "description": "Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.",
+        "description": "<p>Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p>",
         "id": 562993,
         "locale": null,
-        "modified": "2026-07-07T23:01:01",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22291,12 +22773,12 @@
     },
     {
         "created": "2026-05-13T23:00:44",
-        "description": "Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.",
+        "description": "<p>Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.</p>",
         "id": 561322,
         "locale": null,
-        "modified": "2026-06-26T22:01:51",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -70878,79 +71360,6 @@
     },
     {
         "created": "2025-09-17T23:00:20",
-        "description": "Agents & bots in group chats will now be able to authenticate through Entra. When an app requests a user's Entra token in a group chat, if that user does not have the app installed or Entra consent, they are sent a targeted message. This targeted message is only visible to that user. This message serves two purposes: to ask the user to install the Teams app personally and to open the Entra permission consent dialog. Once both requirements are met, the app can leverage Entra for the requested permissions (e.g., Graph).",
-        "id": 503557,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Agent & bot support for Entra authentication in group chats"
-    },
-    {
-        "created": "2025-09-17T23:00:20",
         "description": "This feature enables Viva Glint admins to delete custom user attributes directly in the platform. This empowers admins to easily update and maintain the structure of user data without requiring support.",
         "id": 503148,
         "locale": null,
@@ -71705,55 +72114,6 @@
             ]
         },
         "title": "Microsoft Teams: Unified Agent and App Availability Management Across Microsoft 365 and Teams Admin Center"
-    },
-    {
-        "created": "2025-09-10T23:15:44",
-        "description": "Today, IT admins in the Teams admin center can view security and compliance data for apps and agents that are Microsoft 365 certified or publisher attested.This enhancement expands that visibility to include apps and agents that are not certified or attested.Where available, this data is sourced from Microsoft Defender for Cloud Apps (MDA) and helps admins more easily and quickly evaluate whether an app or agent meets their organization\u2019s trust requirements.",
-        "id": 503102,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Security and Compliance information for more Apps and Agents"
     },
     {
         "created": "2025-09-10T23:15:44",
@@ -75520,15 +75880,15 @@
     },
     {
         "created": "2025-08-14T23:15:02",
-        "description": "This feature ensures that conversations are preserved even when users navigate away from a session. As soon as a prompt is submitted, an entry is immediately created in the navigation pane\u2019s session history. This allows users to leave the session and return later just as if they had never left. The update enhances continuity and reliability, making it easier to navigate without losing progress.",
+        "description": "<p>This feature ensures that conversations are preserved even when users navigate away from a session. As soon as a prompt is submitted, an entry is immediately created in the navigation pane\u2019s session history. This allows users to leave the session and return later just as if they had never left. The update enhances continuity and reliability, making it easier to navigate without losing progress. Updated September 18, 2026: We are cancelling this Roadmap item at this time. We apologize for any inconvenience.</p>",
         "id": 500638,
         "locale": null,
-        "modified": "2025-12-04T00:00:38",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -76215,12 +76575,12 @@
     },
     {
         "created": "2025-08-08T22:15:46",
-        "description": "Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters.",
+        "description": "<p>Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters.</p>",
         "id": 500242,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -76279,67 +76639,6 @@
             ]
         },
         "title": "Microsoft Teams: Intelligent recap for DoD"
-    },
-    {
-        "created": "2025-08-08T22:15:46",
-        "description": "Users can now choose the translation language you prefer without affecting what other meeting participants see in Teams Rooms on Android. Currently, live captions display in the spoken language by default, this change allows individuals to select their own experience. This feature is available on Teams Rooms Pro.",
-        "id": 499800,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Live caption translation in Teams Rooms on Android"
     },
     {
         "created": "2025-08-08T22:15:46",
@@ -76419,79 +76718,6 @@
             ]
         },
         "title": "Microsoft Teams: Customize captions on Mobile"
-    },
-    {
-        "created": "2025-08-08T22:15:46",
-        "description": "In this update, we are adding the recently added email indicators in Insider Risk Management as triggers. 1.  Sending email with attachments to free public domains - Users will be brought into scope of a policy when business-sensitive data is potentially leaked from a work email account to a free public domain email, potentially leading to a data security incident.  2. Sending email with attachments to self - Users will be brought into scope of a policy when business-sensitive data is potentially leaked from a work email account to user's personal email account or emailing self, potentially leading to a data security incident. \nAdmins with appropriate permissions can enable these indicators from the settings page and use these triggers in the data leaks or data leaks by priority users template.",
-        "id": 496149,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Personal email triggers"
     },
     {
         "created": "2025-08-07T23:30:37",
@@ -78870,60 +79096,6 @@
             ]
         },
         "title": "Outlook: Global Address List Redesign"
-    },
-    {
-        "created": "2025-07-22T23:15:27",
-        "description": "Seamlessly set up workflows started by emoji reactions in Teams. When a user reacts to a message with an emoji, the workflow will be kicked off to handle support tickets or start a helpdesk workflow.",
-        "id": 498578,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Emoji Reactions Workflows"
     },
     {
         "created": "2025-07-21T23:15:32",
@@ -82491,15 +82663,15 @@
     },
     {
         "created": "2025-06-12T23:00:59",
-        "description": "Users will able to select content sources on Copilot Chat. When users select content sources the responses generated will be limited to content from the selected sources.",
+        "description": "<p>Users will able to select content sources on Copilot Chat. When users select content sources the responses generated will be limited to content from the selected sources. Updated September 18, 2026: We are cancelling this Roadmap item at this time. We apologize for any inconvenience.</p>",
         "id": 496596,
         "locale": null,
-        "modified": "2026-07-13T23:07:14",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -85654,7 +85826,7 @@
         "description": "<p>Use your voice to talk with Copilot, interact in-real time, and understand the content within your document or presentation. Updated September 9, 2026: We will be re-releasing this feature with updates in October. Thank you for your patience.</p>",
         "id": 487852,
         "locale": null,
-        "modified": "2026-09-10T23:01:27",
+        "modified": "2026-09-18T22:00:04",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
@@ -85665,13 +85837,7 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
-                "tagName": "Android"
-            },
-            {
                 "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
             },
             {
                 "tagName": "Web"
@@ -85697,13 +85863,7 @@
             ],
             "platforms": [
                 {
-                    "tagName": "Android"
-                },
-                {
                     "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
                 },
                 {
                     "tagName": "Web"
@@ -88093,67 +88253,6 @@
                 },
                 {
                     "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Information Protection: Doc library default labeling for SharePoint Online and Copilot"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "This new capability further integrates SharePoint Online with Purview sensitivity labeling. SharePoint Online document library owners can set a new type of default label on the library, which automatically applies that label to all unprotected Word, Excel, PowerPoint, and PDF files within the library. This simplifies labeling in bulk across document libraries in an organization, enriches DLP and Copilot with signal to allow admins to monitor and restrict access to this content, and enables inheritance of sensitivity labels to output artifacts in Copilot. #copilotcontrolsystem",
-        "id": 485732,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -99393,79 +99492,6 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Ability to rename the policy and rule names in DLP"
-    },
-    {
-        "created": "2024-01-23T00:15:55",
-        "description": "This feature gives the ability for the DLP admin to rename the existing policy/rule without having to create the entire the rule or policy again.",
-        "id": 370535,
-        "locale": null,
-        "modified": "2025-11-19T00:15:24",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2025",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
                 }
             ]
         },

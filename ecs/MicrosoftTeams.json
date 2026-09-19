@@ -113,8 +113,6 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
-        "dms420ScopedToDmsOnly": false,
-        "dmsOperationsSuppressed": false,
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
@@ -329,8 +327,7 @@
             "teamsAppConfig.voiceRecognitionDeviceSettingTAC": "TeamsAppConfig.VoiceRecognitionDeviceSettingTAC",
             "teamsAppConfig.webexMeetingEnabled": "TeamsAppConfig.WebexMeetingEnabled",
             "teamsAppConfig.zoomMeetingEnabled": "TeamsAppConfig.ZoomMeetingEnabled"
-        },
-        "unifiedEnrollmentPredicateEnabled": false
+        }
     },
     "MicrosoftTeamsAppCatalog": {
         "appCatalog": {
@@ -4737,7 +4734,6 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
-        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
