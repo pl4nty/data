@@ -62,15 +62,6 @@
         }
     },
     "EdgeConfig": {
-        "DisablingCopilotUpsellNurfCampaigns": {
-            "disableFeatures": [
-                "msCopilotSummarizeNudge",
-                "msCopilotCompeteAINudge",
-                "msOmniboxSummarizeNewsNotification",
-                "msNurturingEdgeCopilotJitCM",
-                "msPdfCopilotSummarizeNudge"
-            ]
-        },
         "DisablingServiceExperimentation": {
             "disableFeatures": [
                 "msUXConfigService"

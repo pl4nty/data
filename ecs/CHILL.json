@@ -1665,7 +1665,7 @@
                     "Type": 0
                 },
                 "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
+                "PercentageNumerator": 50,
                 "Type": 0
             },
             "PrimaryPriority": 3,
@@ -1685,6 +1685,11 @@
                 "PreferredLaunchType": 0,
                 "Type": 2,
                 "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
                     "branchingRules": [],
                     "pages": [
                         {
@@ -1717,7 +1722,7 @@
                             "title": "Microsoft would love your perspective"
                         }
                     ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/5caad4b2-f3b7-49ce-af64-7200075c3096/e8b3b7f2-2763-4f13-adbf-d9e52c581d4c/Web-MicrosoftDefenderXDR/",
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/5caad4b2-f3b7-49ce-af64-7200075c3096/94c819a4-b9f0-4b25-9183-bc04586005e4/Web-MicrosoftDefenderXDR/",
                     "variables": {}
                 }
             }

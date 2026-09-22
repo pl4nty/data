@@ -151,6 +151,31 @@
             ],
             "tier": 1
         },
+        "dfra": {
+            "desc": "Datapacket Frankfurt (Germany)",
+            "geo": [
+                50.11,
+                8.68
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "89.222.108.161",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "89.222.108.162",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
         "dfw": {
             "desc": "Dallas (Texas)",
             "geo": [
@@ -188,6 +213,24 @@
                     ]
                 }
             ],
+            "tier": 1
+        },
+        "dlhr": {
+            "desc": "Datapacket London (England)",
+            "geo": [
+                51.51,
+                0.12
+            ],
+            "partners": 1,
+            "tier": 1
+        },
+        "dsto": {
+            "desc": "Datapacket Stockholm (Sweden)",
+            "geo": [
+                37.62,
+                55.75
+            ],
+            "partners": 1,
             "tier": 1
         },
         "dxb": {
@@ -376,7 +419,7 @@
             "tier": 0
         },
         "fsn": {
-            "desc": "Falkenstein (Germany)",
+            "desc": "Hetzner Falkenstein (Germany)",
             "geo": [
                 12.37,
                 50.48
@@ -466,7 +509,7 @@
             "aliases": [
                 "helm"
             ],
-            "desc": "Helsinki (Finland)",
+            "desc": "Hetzner Helsinki (Finland)",
             "geo": [
                 24.85,
                 60.11
@@ -1397,12 +1440,22 @@
         }
     },
     "relay_public_key": "5AC884C1045BA0FF44142AC8DCA51B8A98C8F1CB4FEE36284AFBE92FCF594932",
-    "revision": 1789757085,
+    "revision": 1790109121,
     "revoked_keys": [
         "11146342570456886677"
     ],
     "success": true,
     "typical_pings": [
+        [
+            "ams",
+            "dfra",
+            6
+        ],
+        [
+            "ams",
+            "dlhr",
+            6
+        ],
         [
             "ams",
             "fra",
@@ -1416,7 +1469,7 @@
         [
             "ams",
             "jnb",
-            162
+            160
         ],
         [
             "ams",
@@ -1425,23 +1478,8 @@
         ],
         [
             "ams",
-            "mad",
-            30
-        ],
-        [
-            "ams",
-            "par",
-            10
-        ],
-        [
-            "ams",
             "sto2",
             24
-        ],
-        [
-            "ams",
-            "vie",
-            17
         ],
         [
             "atl",
@@ -1456,7 +1494,7 @@
         [
             "atl",
             "iad",
-            13
+            12
         ],
         [
             "atl",
@@ -1467,6 +1505,16 @@
             "atl",
             "ord",
             20
+        ],
+        [
+            "bom2",
+            "dfra",
+            54
+        ],
+        [
+            "bom2",
+            "dlhr",
+            63
         ],
         [
             "bom2",
@@ -1487,6 +1535,41 @@
             "bom2",
             "sgp",
             49
+        ],
+        [
+            "dfra",
+            "dlhr",
+            19
+        ],
+        [
+            "dfra",
+            "dxb",
+            38
+        ],
+        [
+            "dfra",
+            "fra",
+            1
+        ],
+        [
+            "dfra",
+            "jnb",
+            91
+        ],
+        [
+            "dfra",
+            "maa2",
+            66
+        ],
+        [
+            "dfra",
+            "par",
+            9
+        ],
+        [
+            "dfra",
+            "vie",
+            14
         ],
         [
             "dfw",
@@ -1511,12 +1594,67 @@
         [
             "dfw",
             "ord",
-            21
+            37
         ],
         [
             "dfw",
             "sea",
             47
+        ],
+        [
+            "dlhr",
+            "dxb",
+            56
+        ],
+        [
+            "dlhr",
+            "jnb",
+            125
+        ],
+        [
+            "dlhr",
+            "lhr",
+            1
+        ],
+        [
+            "dlhr",
+            "maa2",
+            69
+        ],
+        [
+            "dlhr",
+            "mad",
+            22
+        ],
+        [
+            "dlhr",
+            "par",
+            6
+        ],
+        [
+            "dsto",
+            "fra",
+            40
+        ],
+        [
+            "dsto",
+            "hel",
+            17
+        ],
+        [
+            "dsto",
+            "sto",
+            12
+        ],
+        [
+            "dsto",
+            "sto2",
+            12
+        ],
+        [
+            "dsto",
+            "waw",
+            23
         ],
         [
             "dxb",
@@ -1556,7 +1694,7 @@
         [
             "eze",
             "gru",
-            28
+            27
         ],
         [
             "eze",
@@ -1571,7 +1709,7 @@
         [
             "eze",
             "ord",
-            161
+            160
         ],
         [
             "eze",
@@ -1596,7 +1734,7 @@
         [
             "fra",
             "iad",
-            85
+            86
         ],
         [
             "fra",
@@ -1606,12 +1744,12 @@
         [
             "fra",
             "lax",
-            148
+            149
         ],
         [
             "fra",
             "lhr",
-            11
+            10
         ],
         [
             "fra",
@@ -1621,12 +1759,17 @@
         [
             "fra",
             "ord",
-            105
+            106
         ],
         [
             "fra",
             "par",
             9
+        ],
+        [
+            "fra",
+            "sea",
+            153
         ],
         [
             "fra",
@@ -1647,26 +1790,6 @@
             "fra",
             "waw",
             18
-        ],
-        [
-            "fsn",
-            "hel",
-            26
-        ],
-        [
-            "fsn",
-            "jnb",
-            178
-        ],
-        [
-            "fsn",
-            "lhr",
-            18
-        ],
-        [
-            "fsn",
-            "par",
-            15
         ],
         [
             "fsn",
@@ -1701,7 +1824,7 @@
         [
             "gru",
             "scl",
-            53
+            54
         ],
         [
             "gum",
@@ -1710,8 +1833,8 @@
         ],
         [
             "gum",
-            "seo",
-            59
+            "sgp",
+            75
         ],
         [
             "gum",
@@ -1745,13 +1868,8 @@
         ],
         [
             "hkg",
-            "sea",
-            142
-        ],
-        [
-            "hkg",
             "seo",
-            79
+            42
         ],
         [
             "hkg",
@@ -1766,7 +1884,7 @@
         [
             "hkg",
             "tyo",
-            49
+            72
         ],
         [
             "iad",
@@ -1776,17 +1894,17 @@
         [
             "iad",
             "ord",
-            19
+            20
         ],
         [
             "jnb",
             "lhr",
-            158
+            155
         ],
         [
             "jnb",
             "par",
-            165
+            163
         ],
         [
             "jnb",
@@ -1841,7 +1959,7 @@
         [
             "maa2",
             "sgp",
-            32
+            31
         ],
         [
             "mad",
@@ -1856,7 +1974,7 @@
         [
             "ord",
             "scl",
-            186
+            187
         ],
         [
             "ord",
@@ -1876,27 +1994,12 @@
         [
             "seo",
             "sgp",
-            112
-        ],
-        [
-            "seo",
-            "syd",
-            129
-        ],
-        [
-            "seo",
-            "tyo",
-            30
+            93
         ],
         [
             "sgp",
             "syd",
             145
-        ],
-        [
-            "sgp",
-            "tyo",
-            81
         ],
         [
             "sto",

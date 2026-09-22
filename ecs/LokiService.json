@@ -1649,6 +1649,15 @@
         "LinkedInAuthRedirectUrl": "https://loki.delve.office.com/linkedInAuthRedirect.aspx",
         "LinkedInLpsUrl": "https://lps.loki.delve.office.com:444",
         "LinkedInMsGraphUrl": "https://graph.microsoft.com/",
+        "LinkedInTenantAbuseConsecutiveEvaluations": 2,
+        "LinkedInTenantAbuseMinRatio": 85,
+        "LinkedInTenantAbuseMinRequests": 250,
+        "LinkedInTenantAbuseMinUsers": 1,
+        "LinkedInTenantAbuseNonLinkedInSamplePercentage": 20,
+        "LinkedInTenantAbusePenaltySeconds": 86400,
+        "LinkedInTenantAbuseProtectionMode": "Throttle",
+        "LinkedInTenantAbuseThrottlePercentage": 100,
+        "LinkedInTenantAbuseWindowSeconds": 900,
         "LlmProxyWorkflowModelAccess_Version": 1,
         "LlmProxyWorkflowModelAccess_Workflows": {
             "CodeTab": {

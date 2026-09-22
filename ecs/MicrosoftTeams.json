@@ -327,7 +327,8 @@
             "teamsAppConfig.voiceRecognitionDeviceSettingTAC": "TeamsAppConfig.VoiceRecognitionDeviceSettingTAC",
             "teamsAppConfig.webexMeetingEnabled": "TeamsAppConfig.WebexMeetingEnabled",
             "teamsAppConfig.zoomMeetingEnabled": "TeamsAppConfig.ZoomMeetingEnabled"
-        }
+        },
+        "teamsSettingsBackupRestoreEnabled": true
     },
     "MicrosoftTeamsAppCatalog": {
         "appCatalog": {
@@ -413,7 +414,6 @@
                 "disableLFTLicenseProviderEligibilityPolicyCheck": false,
                 "disableLFTStoreProviderDataWrites": false,
                 "disableTeamsEnableSwitchEnforcementForEdu": true,
-                "dummyCloudFeatureFlag": true,
                 "enableAADTokenInXTokenAPIAuth": true,
                 "enableAadServiceExceptionHandling": true,
                 "enableAmplifyServiceGetTeamsPremiumSelfServePurchasePolicyCaching": "true",
@@ -6202,6 +6202,11 @@
         },
         "FollowActivity": {
             "Conversational": {
+                "Enabled": true
+            }
+        },
+        "HardDeleteMessage": {
+            "DataSpillageDeleteMessageEvent": {
                 "Enabled": true
             }
         },

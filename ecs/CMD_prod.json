@@ -449,6 +449,7 @@
         "EnableEndGracePeriodViaNugetInTBMS": true,
         "EnableEndUserCloudApp": true,
         "EnableEndpointHealthCheckWithTimeout": true,
+        "EnableEnhancedAADRejoinCheck": true,
         "EnableEnterpriseCloudPcRecommendationV17": true,
         "EnableEntraDirectorySyncObserver": true,
         "EnableEntraObjectLifeCycleState": true,

@@ -90418,67 +90418,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Catch\u00a0up\u00a0on\u00a0a\u00a0summary\u00a0of\u00a0document\u00a0comments\u00a0in the top\u00a0of\u00a0your\u00a0document"
     },
     {
-        "created": "2025-04-08T23:00:23",
-        "description": "People connectors for Microsoft 365 Copilot, based on top of Graph connectors, will integrate and enrich people data from various sources into Microsoft 365. This enriched data will enhance experiences in Microsoft 365 Copilot Chat, the profile card, and people search.",
-        "id": 480736,
-        "locale": null,
-        "modified": "2025-11-21T23:15:16",
-        "moreInfoLink": "https://aka.ms/peopleconnectors",
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "May CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): People connectors for Microsoft 365 Copilot"
-    },
-    {
         "created": "2025-04-08T00:00:38",
         "description": "The Employee Self-Service Agent in M365 Copilot expedites answers for the most common workplace policy-related questions and takes action on key HR and IT related tasks,\u00a0connecting employees\u00a0to authorized\u00a0knowledge bases and HR/IT systems of record for faster resolution time and a streamlined employee experience.",
         "id": 487836,
@@ -91827,55 +91766,6 @@
             ]
         },
         "title": "Microsoft Teams: Teams Button Support on Multiple Connected Peripheral Devices"
-    },
-    {
-        "created": "2025-03-26T00:00:04",
-        "description": "After further review, we need to roll this back. We apologize for any inconvenience. Python in Excel allows you to bring the capabilities of Python directly into the Excel grid. As a part of this feature release, eligible users with access to Excel for the web will be able to add Python formulas directly into their workbooks without any installation required. These Python formulas will be run by Excel in a secure container on the Microsoft Cloud with enterprise-level security as a compliant Microsoft 365 connected experience.\n\n",
-        "id": 485764,
-        "locale": null,
-        "modified": "2025-11-21T23:15:16",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Excel"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Excel: Python in Excel for the web (GCC)"
     },
     {
         "created": "2025-03-26T00:00:04",

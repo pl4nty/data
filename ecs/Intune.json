@@ -86,6 +86,10 @@
             "FlightExpiry": "2026-10-18T00:00:00.000Z",
             "FlightValue": true
         },
+        "EnableEventBasedComplianceEventLog": {
+            "FlightExpiry": "2026-12-01T00:00:00.000Z",
+            "FlightValue": true
+        },
         "EnableExpandedCrashTelemetry": {
             "FlightExpiry": "2026-05-18T00:00:00.000Z",
             "FlightValue": true
