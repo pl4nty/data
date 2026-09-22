@@ -1,5 +1,492 @@
 [
     {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Local inferencing expands Microsoft Copilot\u2019s sovereign controls by enabling AI inferencing for supported Copilot interactions to occur within the applicable local geography.</p>\n<p>Launching in Australia, India, the United Arab Emirates, the United Kingdom, and the United States, this capability gives organizations greater control over where AI inferencing occurs, helping them address sovereignty and regional requirements. Inferencing is the processing step when an AI model executes a prompt to produce an output or response.</p>",
+        "id": 571886,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Exchange"
+            },
+            {
+                "tagName": "Forms"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "Word"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Agent 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                },
+                {
+                    "tagName": "Exchange"
+                },
+                {
+                    "tagName": "Forms"
+                },
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Outlook"
+                },
+                {
+                    "tagName": "Planner"
+                },
+                {
+                    "tagName": "Word"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Agent 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Local inferencing"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Granular Conditional Access for Teams meetings gives organizations greater control over access to sensitive meetings. Administrators can apply Conditional Access policies to selected meetings, helping ensure participants meet organizational security requirements before joining.</p>",
+        "id": 571879,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Granular Conditional Access for Teams meetings"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Criteria questions can now use knowledge sources to help evaluate customer interactions. This allows organizations to ground evaluation criteria in approved knowledge content, policies, or guidance so quality checks can better reflect expected handling standards. This preview capability is scoped to case and on-demand evaluations.</p>",
+        "id": 571302,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Quality evaluation supports knowledge source in criteria"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Quality managers can now inactivate evaluation records that should no longer contribute to scoring or reporting. Inactive evaluations are preserved for traceability but excluded from overall score calculations and analytics. This helps teams correct reporting outcomes when evaluations were created in error, used the wrong criteria, were duplicates, or should otherwise be removed from active quality results.</p>",
+        "id": 571193,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Inactivate quality evaluation records"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Criteria questions now support a Not Applicable answer option. When a question is marked as not applicable, it is excluded from scoring instead of negatively affecting the evaluation score. This helps ensure evaluations remain accurate when a specific criterion does not apply to the case, interaction, or business scenario being reviewed.</p>",
+        "id": 571192,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Support Not Applicable answer option for quality evaluation criteria"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Evaluation details now include a scoring breakdown at the overall, section, and question level. Users can see how the final evaluation score was calculated, including how individual question outcomes contribute to section scores and the overall score. This improves transparency, helps quality teams validate results, and makes it easier to identify areas for coaching, calibration, and process improvement.</p>",
+        "id": 571191,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Detailed quality evaluation score breakdown"
+    },
+    {
+        "created": "2026-09-21T23:04:49",
+        "description": "<p>Microsoft Viva Insights is extending its report publishing capabilities from analysts to leader personas such as Chief Officers, Managers and their delegates. This enhancement enables leaders to directly distribute curated reports within their organizations through a lightweight publishing experience, complementing the existing report customization features.</p>",
+        "id": 570446,
+        "locale": null,
+        "modified": "2026-09-21T23:04:49",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Ability for leaders to publish Power BI reports"
+    },
+    {
         "created": "2026-09-18T22:00:04",
         "description": "<p>Finance teams rely on journals for high-volume accounting processes, where performance, accuracy, and visibility are critical to keeping financial operations moving. The new financial journal capabilities in Dynamics 365 Finance will provide a more scalable approach to creating, importing, reviewing, and posting journals, helping finance teams reduce manual steps and identify issues earlier in the process.</p>\n<p>Finance teams can work with customer and ledger account types, import journals and review errors without navigating to the Data management workspace, and preview intercompany and intracompany accounting, accruals, and allocations before posting. Related documents make it easier to trace transactions, while integration with advanced tax calculations supports applicable tax scenarios. Future-period accruals no longer post automatically, reducing the need to keep future periods open.</p>\n<p>Optimized financial dimensions and the Ledger posting rules framework are prerequisites for using these capabilities.</p>",
         "id": 571847,
@@ -193,9 +680,9 @@
         "description": "<p>Users can now use the Teams Meet app to discover events across their organization, track what important events are upcoming, and plan and organize their own professional events. With this release, Meet app will be renamed to Events app.</p>",
         "id": 571390,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -260,7 +747,7 @@
         "description": "<p>Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter or any participant\u2019s video into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are multitasking, sharing content, or changing meeting layouts.</p>",
         "id": 571387,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -269,6 +756,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -290,6 +786,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -419,7 +924,7 @@
         "description": "<p>Express face enrollment makes it easier for users to create a face profile in Teams by using their camera during eligible meetings, after they opt in. Once enrolled, users can be recognized in supported Teams Rooms experiences, helping identify who is in the room and improving downstream meeting experiences such as Copilot and recap. Admins can enable or disable the feature for their organization.</p>",
         "id": 570846,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -446,6 +951,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -476,6 +984,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -6183,15 +6694,15 @@
     },
     {
         "created": "2026-08-18T23:05:00",
-        "description": "Microsoft Teams will enable meeting organizers and attendees to report suspicious, malicious, or potentially fraudulent activity directly from meetings. Users can submit reports during or after a meeting, helping organizations identify potential threats such as impersonation, phishing, scams, and other suspicious behavior. Reports are integrated with Microsoft security and administrative workflows to support investigation, remediation, and ongoing improvements to security protections.",
+        "description": "<p>Microsoft Teams will enable meeting organizers and attendees to report suspicious, malicious, or potentially fraudulent activity directly from meetings. Users can submit reports during or after a meeting, helping organizations identify potential threats such as impersonation, phishing, scams, and other suspicious behavior. Reports are integrated with Microsoft security and administrative workflows to support investigation, remediation, and ongoing improvements to security protections.</p>",
         "id": 569207,
         "locale": null,
-        "modified": "2026-08-19T22:58:06",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -7323,15 +7834,15 @@
     },
     {
         "created": "2026-08-11T22:53:53",
-        "description": "Admins will be able to view in Teams Admin Center a list of custom apps in their tenant that need to be updated to work in private and shared channels. This experience will help admins identify impacted apps, understand which apps require developer action, and coordinate updates so users can continue using custom apps across all supported channel types.",
+        "description": "<p>Admins will be able to view in Teams Admin Center a list of custom apps in their tenant that need to be updated to work in private and shared channels. This experience will help admins identify impacted apps, understand which apps require developer action, and coordinate updates so users can continue using custom apps across all supported channel types.</p>",
         "id": 569019,
         "locale": null,
-        "modified": "2026-08-12T22:47:48",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -8884,15 +9395,15 @@
     },
     {
         "created": "2026-08-04T22:45:42",
-        "description": "Administrators can monitor meeting and call health across the organization, uncover recurring patterns, and proactively troubleshoot issues impacting users in both active and completed meetings and calls.",
+        "description": "<p>Administrators can monitor meeting and call health across the organization, uncover recurring patterns, and proactively troubleshoot issues impacting users in both active and completed meetings and calls.</p>",
         "id": 568782,
         "locale": null,
-        "modified": "2026-08-05T22:47:32",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -15739,10 +16250,10 @@
         "description": "<p>Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.</p>",
         "id": 566527,
         "locale": null,
-        "modified": "2026-09-10T23:01:27",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -15757,6 +16268,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -15778,6 +16292,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -18579,12 +19096,12 @@
     },
     {
         "created": "2026-06-05T22:00:28",
-        "description": "Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery admins overcome common challenges.",
+        "description": "<p>Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery admins overcome common challenges.</p>",
         "id": 565222,
         "locale": null,
-        "modified": "2026-08-14T21:56:10",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19646,15 +20163,15 @@
     },
     {
         "created": "2026-06-01T23:15:29",
-        "description": "Enables metered, pay\u2011as\u2011you\u2011go access to Work IQ endpoints, allowing developers to invoke agents and capabilities without requiring pre\u2011assigned licenses, with usage billed based on the agents and models invoked per request.",
+        "description": "<p>Enables metered, pay\u2011as\u2011you\u2011go access to Work IQ endpoints, allowing developers to invoke agents and capabilities without requiring pre\u2011assigned licenses, with usage billed based on the agents and models invoked per request.</p>",
         "id": 559017,
         "locale": null,
-        "modified": "2026-06-11T23:15:28",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21471,10 +21988,10 @@
         "description": "<p>Insights on sensitive M365 data (OneDrive and SharePoint) and recommendations on retention policies for customers to better govern their sensitive data.</p>",
         "id": 562343,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -21489,6 +22006,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -21510,6 +22030,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -22889,15 +23412,15 @@
     },
     {
         "created": "2026-05-12T23:00:33",
-        "description": "Key Microsoft 365 Copilot metrics in custom person queries and reports will have values up to 2-3 days old from the current date. This will provide fresher copilot usage analysis to analysts in Viva Advanced analysis.",
+        "description": "<p>Key Microsoft 365 Copilot metrics in custom person queries and reports will have values up to 2-3 days old from the current date. This will provide fresher copilot usage analysis to analysts in Viva Advanced analysis.</p>",
         "id": 562017,
         "locale": null,
-        "modified": "2026-06-23T23:15:39",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27352,12 +27875,12 @@
     },
     {
         "created": "2026-04-22T23:30:25",
-        "description": "Recipient groups in eSignature\u202fallow a\u202frecipient\u202fslot to be assigned to multiple people, such that any\u202fone\u202f of those people can fulfil the signing requirement on behalf of the group.  ",
+        "description": "<p>Recipient groups in eSignature\u202fallow a\u202frecipient\u202fslot to be assigned to multiple people, such that any\u202fone\u202f of those people can fulfil the signing requirement on behalf of the group.</p>",
         "id": 560822,
         "locale": null,
-        "modified": "2026-06-12T22:00:47",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30983,15 +31506,15 @@
     },
     {
         "created": "2026-04-09T23:15:51",
-        "description": "This feature empowers authors to create rich, interactive charts with AI in SharePoint when editing SharePoint pages. Authors can describe the chart they want to create in plain language within a chat on a SharePoint page. ",
+        "description": "<p>This feature empowers authors to create rich, interactive charts with AI in SharePoint when editing SharePoint pages. Authors can describe the chart they want to create in plain language within a chat on a SharePoint page.</p>",
         "id": 560076,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31264,12 +31787,12 @@
     },
     {
         "created": "2026-04-08T23:00:03",
-        "description": "Admins can enable a tenant-wide policy that allows Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods. This enables Copilot to continue answering questions about past meetings even after transcripts expire. Admins can also configure how long this AI-generated meeting archive is stored.",
+        "description": "<p>Admins can enable a tenant-wide policy that allows Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods. This enables Copilot to continue answering questions about past meetings even after transcripts expire. Admins can also configure how long this AI-generated meeting archive is stored.</p>",
         "id": 558933,
         "locale": null,
-        "modified": "2026-08-28T21:59:29",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36730,12 +37253,12 @@
     },
     {
         "created": "2026-03-10T22:00:39",
-        "description": "Microsoft Purview network data security now integrates with Island, extending protection to Island\u2019s browser-based workflows at the point of user interaction. With this integration, new and existing Island customers can configure Microsoft Purview collection and data loss prevention policies to detect and protect data shared with unmanaged cloud apps through the Island Enterprise Browser, the Island Extension, and browser add ins via HTTP and HTTPS, using the same classifiers, sensitive information types, and sensitivity labels used in other Purview policies. Island provides visibility and control at the presentation layer, including typed and pasted input, file transfers, and extension activity, so data can be inspected before it ever leaves the browser. This integration further enriches Purview Data Security Posture Management (DSPM), Insider Risk Management (IRM) risk score, enables data security and compliance for AI interactions, and more.",
+        "description": "<p>Microsoft Purview network data security now integrates with Island, extending protection to Island\u2019s browser-based workflows at the point of user interaction. With this integration, new and existing Island customers can configure Microsoft Purview collection and data loss prevention policies to detect and protect data shared with unmanaged cloud apps through the Island Enterprise Browser, the Island Extension, and browser add ins via HTTP and HTTPS, using the same classifiers, sensitive information types, and sensitivity labels used in other Purview policies. Island provides visibility and control at the presentation layer, including typed and pasted input, file transfers, and extension activity, so data can be inspected before it ever leaves the browser. This integration further enriches Purview Data Security Posture Management (DSPM), Insider Risk Management (IRM) risk score, enables data security and compliance for AI interactions, and more.</p>",
         "id": 558437,
         "locale": null,
-        "modified": "2026-03-10T22:00:39",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2027",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38012,12 +38535,12 @@
     },
     {
         "created": "2026-03-04T00:00:25",
-        "description": "OneDrive desktop sync users now get clearer, more actionable guidance when file paths exceed the supported 520-character limit. The updated experience shows exactly how many characters a path is over the limit and offers a guided flow to rename or move the affected items so they can sync.",
+        "description": "<p>OneDrive desktop sync users now get clearer, more actionable guidance when file paths exceed the supported 520-character limit. The updated experience shows exactly how many characters a path is over the limit and offers a guided flow to rename or move the affected items so they can sync.</p>",
         "id": 557563,
         "locale": null,
-        "modified": "2026-08-17T22:52:47",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -64382,15 +64905,15 @@
     },
     {
         "created": "2025-10-23T23:00:40",
-        "description": "Users in DoD will be able to use custom engine agents.",
+        "description": "<p>Users in DoD will be able to use custom engine agents.</p>",
         "id": 503772,
         "locale": null,
-        "modified": "2026-07-31T21:54:12",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "DoD"
@@ -67588,55 +68111,6 @@
     },
     {
         "created": "2025-10-10T22:00:01",
-        "description": "\"Copilot Notebooks will be available to 13-17 year-old users (students) with Entra ID accounts within the Microsoft 365 Copilot and OneNote apps.",
-        "id": 510105,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Copilot Notebooks are now available to 13-17 year-old users with Entra ID accounts"
-    },
-    {
-        "created": "2025-10-10T22:00:01",
         "description": "Video recaps in Copilot Chat makes it easy to catch up on recorded meetings directly in Copilot Chat. It identifies and extracts key topics from transcripts, provides AI generated narration to summarize discussions, and pairs these with 20\u201340 second video snippets highlighting impactful moments of your meeting.",
         "id": 501452,
         "locale": null,
@@ -69738,15 +70212,15 @@
     },
     {
         "created": "2025-09-25T23:15:43",
-        "description": "Specify and manage SharePoint sites deemed as authoritative content to enhance their relevance and ranking in Microsoft 365 Copilot Search. In the Microsoft 365 admin center, under Copilot > Search > Authoritative content, add and manage up to 100 SharePoint sites. #copilotcontrolsystem\n",
+        "description": "<p>Specify and manage SharePoint sites deemed as authoritative content to enhance their relevance and ranking in Microsoft 365 Copilot Search. In the Microsoft 365 admin center, under Copilot &gt; Search &gt; Authoritative content, add and manage up to 100 SharePoint sites. #copilotcontrolsystem</p>",
         "id": 503553,
         "locale": null,
-        "modified": "2026-07-17T22:12:56",
+        "modified": "2026-09-21T23:04:49",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -84109,140 +84583,6 @@
     },
     {
         "created": "2025-05-29T23:00:52",
-        "description": "With this feature, you can reduce clicks and save time with intelligent call transfer suggestions based on your recent activity and call history on Teams phone devices.",
-        "id": 495457,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Teams and Surface Devices"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Teams and Surface Devices"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Suggested contacts for call transfers on Teams phone devices"
-    },
-    {
-        "created": "2025-05-29T23:00:52",
-        "description": "Personalize your Teams phone experience by setting unique ringtones and choosing how each line key alerts you\u2014ring only, ring with flash, or flash only. This feature is supported across touch, non-touch, and sidecar devices, giving you full control over how you stay notified",
-        "id": 495451,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Custom ringtone behavior and ringtones for assigned line keys"
-    },
-    {
-        "created": "2025-05-29T23:00:52",
         "description": "Admins can proactively manage peripherals in bring your own device (BYOD) rooms and desks with reports in the Pro Management portal that now flag if devices are faulty, undetectable by a PC, missing, or moved. Reports in the Pro Management portal require a Teams Shared Devices license for the room, and reports for desks are in public preview.",
         "id": 493319,
         "locale": null,
@@ -89554,55 +89894,6 @@
     },
     {
         "created": "2025-04-10T23:15:50",
-        "description": "SharePoint page analytics will add enhanced reporting capabilities including long-term data, distribution channel filtering, and reactions and promotions, data exports.",
-        "id": 488502,
-        "locale": null,
-        "modified": "2025-11-20T00:00:17",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "SharePoint: Advanced Page Analytics"
-    },
-    {
-        "created": "2025-04-10T23:15:50",
         "description": "SoC  will be able to do submissions and tenant level block and trigger investigation actions from Advanced Hunting",
         "id": 488095,
         "locale": null,
@@ -91374,73 +91665,6 @@
     },
     {
         "created": "2025-03-26T23:45:25",
-        "description": "This feature will enable you to assign shared lines to a line key and view the boss and delegates of the line along with their presence on Teams Phone devices with touch screens. This feature allows delegates to pick up calls on behalf of the boss by pressing the line key and join active calls. Additionally, users will be able to assign the transfer action to the line key, enabling them to transfer active calls by simply pressing that line key.",
-        "id": 486829,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Line key support for shared line and call transfers"
-    },
-    {
-        "created": "2025-03-26T23:45:25",
         "description": "Launch a pre-scoped Data Security Investigation (DSI) from an IRM case. When a data security admin identifies a risky user who needs deeper investigation, they can launch a pre-scoped investigation directly from an IRM case, allowing them to view content analysis related to that user and better assess post-incident data impact. ",
         "id": 486827,
         "locale": null,
@@ -92189,61 +92413,6 @@
             ]
         },
         "title": "Microsoft Teams: Migration Tool for Teams"
-    },
-    {
-        "created": "2025-03-20T23:45:15",
-        "description": "Microsoft Purview Data Security Investigations empowers data security teams to find and mitigate data risk from sensitive data exposure using generative AI-powered deep content analysis enriched with activity signals.",
-        "id": 485707,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "April CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Security Investigations"
     },
     {
         "created": "2025-03-19T21:45:14",
@@ -96350,140 +96519,6 @@
             ]
         },
         "title": "Planner: Smart backgrounds for basic plans"
-    },
-    {
-        "created": "2025-01-17T00:00:53",
-        "description": "This roadmap was updated to launched by mistake. We apologize the inconvenience. \nThis feature allows you to configure custom contacts and speed dial on the line key of touch phone devices certified for Microsoft Teams. It enables you to swiftly access frequently dialed numbers and contacts, incorporating one-touch/press dialing and effortless management of contact lists on touch devices.",
-        "id": 476486,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Speed dial customization on line keys for touch phones"
-    },
-    {
-        "created": "2025-01-17T00:00:53",
-        "description": "With this feature, users will now be able to add and edit external contacts from Teams phone devices.",
-        "id": 476485,
-        "locale": null,
-        "modified": "2025-11-21T00:00:57",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Adding and editing external contacts"
     },
     {
         "created": "2025-01-10T23:15:46",

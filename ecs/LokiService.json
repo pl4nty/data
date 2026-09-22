@@ -255,8 +255,105 @@
         "ConsumerMeteringSkill": "LlmProxyConsumer",
         "EnableLlmProxyConsumerMetering": true,
         "EnableLlmProxyConsumerServing": true,
+        "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
         "EnabledModels": [
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-5",
+                "name": "Claude Opus 5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.8",
+                "name": "Claude Opus 4.8",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.7",
+                "name": "Claude Opus 4.7",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-opus-4.6",
+                "name": "Claude Opus 4.6",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-sonnet-5",
+                "name": "Claude Sonnet 5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-sonnet-4.6",
+                "name": "Claude Sonnet 4.6",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 200000,
+                "id": "claude-haiku-4.5",
+                "name": "Claude Haiku 4.5",
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
             {
                 "context_window": 1050000,
                 "id": "gpt-5.6-sol",
@@ -996,11 +1093,6 @@
         "EnableMiseLogging": false,
         "EnableMiseVerboseLogging": false,
         "EnableMsGraphThrottle": true,
-        "EnableMsalActorTokenPhase1": true,
-        "EnableMsalActorTokenPhase2": true,
-        "EnableMsalActorTokenPhase3": true,
-        "EnableMsalActorTokenPhase4": true,
-        "EnableMsalActorTokenPhase5": true,
         "EnableMyAnalyticsPendingRSVPMeetingBatching": true,
         "EnableNeptune": true,
         "EnableNudgeApiForPendingRsvp": false,

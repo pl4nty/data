@@ -20,7 +20,7 @@
             },
             "outlookPlugin": {
                 "packageName": "ZoomOutlookPluginSetup.msi",
-                "version": "7.1.0.1261"
+                "version": "7.2.0.1283"
             },
             "showManifestConfigure": false,
             "zoom": {
@@ -31,10 +31,10 @@
             },
             "zoomArm64": {
                 "archType": "winarm64",
-                "displayVersion": "7.2.0 (48358)",
+                "displayVersion": "7.2.1 (48556)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "7.2.0.48358"
+                "version": "7.2.1.48556"
             },
             "zoomRC": {
                 "displayVersion": "7.1.5 (463)",
@@ -57,10 +57,10 @@
             },
             "zoomX64": {
                 "archType": "x64",
-                "displayVersion": "7.2.0 (48358)",
+                "displayVersion": "7.2.1 (48556)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "7.2.0.48358"
+                "version": "7.2.1.48556"
             }
         },
         "fromGov": false,

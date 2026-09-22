@@ -736,6 +736,7 @@
                 "DeadLetterProcessorStartTimePollingIntervalInMillis": 900000,
                 "DeadLetterProcessorTimeOfDay": "01:00:00",
                 "EnableAadGroupIdNotSubstrateGroupIdInScThreadProps": true,
+                "EnableAddChannelUsersOwnerValidation": true,
                 "EnableAddUserToTeamsChannelByIdInternalAPI": true,
                 "EnableAddUserToTeamsChannelByLoginNameInternalAPI": true,
                 "EnableApiRateLimiter": true,
@@ -2168,6 +2169,44 @@
                 },
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDocGenAvailabilityCheck",
+                    "IsEnabled": true
+                }
+            ],
+            "MeetingDocGenOmniWord": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableMeetingDocumentGenerationSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDetachedDocGenerationWorkflow",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableAnnotationGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableMeetingDocumentChiclet",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableRequesterAtMention",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableReplyToOriginalMessage",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDocGenOmniAgent",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "OfficeAgent.TeamsFacilitator.EnableEnterpriseSearch",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "OfficeAgent.TeamsFacilitator.EnableTaskCompletion",
                     "IsEnabled": true
                 }
             ],
@@ -6302,6 +6341,9 @@
                 "Enabled": true
             },
             "MentionsActivityCreator": {
+                "Enabled": true
+            },
+            "MentionsStream": {
                 "Enabled": true
             },
             "SaveForMessagingSlice": {
