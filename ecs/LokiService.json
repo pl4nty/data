@@ -257,6 +257,7 @@
         "EnableLlmProxyConsumerServing": true,
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
+        "EnableWorkflowModelAccess": true,
         "EnabledModels": [
             {
                 "context_window": 1000000,
@@ -643,7 +644,49 @@
                 "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
                 "workflow": "CodeTab"
             }
-        ]
+        ],
+        "chat_default": [
+            "gpt-6-astra",
+            "gpt-5.6-sol"
+        ],
+        "chat_default_mini": [
+            "gpt-5.6-luna",
+            "gpt-5.6-sol"
+        ],
+        "chat_fallback": [
+            "claude-opus-5",
+            "mai-code-1-flash"
+        ],
+        "workflows": {
+            "CodeTab": {
+                "chat_default": [
+                    "gpt-6-astra",
+                    "gpt-5.6-sol"
+                ],
+                "chat_default_mini": [
+                    "gpt-5.6-luna",
+                    "gpt-5.6-sol"
+                ],
+                "chat_fallback": [
+                    "claude-opus-5",
+                    "mai-code-1-flash"
+                ]
+            },
+            "GitHubCopilot": {
+                "chat_default": [
+                    "gpt-6-astra",
+                    "gpt-5.6-sol"
+                ],
+                "chat_default_mini": [
+                    "gpt-5.6-luna",
+                    "gpt-5.6-sol"
+                ],
+                "chat_fallback": [
+                    "claude-opus-5",
+                    "mai-code-1-flash"
+                ]
+            }
+        }
     },
     "LivePeopleCards": {
         "AINotesPanelEnabled": false,

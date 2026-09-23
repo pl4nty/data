@@ -1,5 +1,164 @@
 [
     {
+        "created": "2026-09-22T22:57:16",
+        "description": "<p>Transaction journals let users author complete time, expense, and material transactions\u2014including different transaction classes within the same journal. Users enter transactions through a dedicated Transactions tab and select Preview to generate and review the journal lines and relationships that will be created.</p>\n<p>When the journal is confirmed, Project Operations creates the applicable cost, unbilled-sales, and inter-organizational actuals, along with the required relationships between them, without creating an approval record or initiating an approval workflow. The confirmed journal is then locked using the existing journal behavior, and resulting actuals can be corrected through the existing correction-journal process.</p>",
+        "id": 571303,
+        "locale": null,
+        "modified": "2026-09-22T22:57:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Transaction Journals"
+    },
+    {
+        "created": "2026-09-22T22:57:16",
+        "description": "<p>Federated Copilot connectors (MCP type) currently let Microsoft 365 Copilot read data from third-party services in real time. With this update, the connector tools that create, update, and delete content in those services are unblocked in Copilot Chat, so users can complete work without leaving Copilot. Copilot acts with the user's own account and permissions at the third-party service, and every create, update, or delete action requires the user's explicit confirmation before it runs. Admins can view each connector's read and write/delete tools in the Microsoft 365 admin center and disable connectors that don't meet their organization's policies.</p>",
+        "id": 570964,
+        "locale": null,
+        "modified": "2026-09-22T22:57:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Federated Copilot Connectors will support write, update and delete actions"
+    },
+    {
+        "created": "2026-09-22T22:57:16",
+        "description": "<p>Organizations can now control how work order services contribute to project financials when using Dynamics 365 Field Service and Project Operations together. A new administrator-level setting lets organizations choose whether work order services flow as time or material transactions based on how they manage field execution and technician labor.</p>",
+        "id": 570861,
+        "locale": null,
+        "modified": "2026-09-22T22:57:16",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Choose how work order services flow into project financials"
+    },
+    {
         "created": "2026-09-21T23:04:49",
         "description": "<p>Local inferencing expands Microsoft Copilot\u2019s sovereign controls by enabling AI inferencing for supported Copilot interactions to occur within the applicable local geography.</p>\n<p>Launching in Australia, India, the United Arab Emirates, the United Kingdom, and the United States, this capability gives organizations greater control over where AI inferencing occurs, helping them address sovereignty and regional requirements. Inferencing is the processing step when an AI model executes a prompt to produce an output or response.</p>",
         "id": 571886,
@@ -2695,9 +2854,9 @@
         "description": "<p>Multi-line users get a redesigned call history experience that organizes activity by phone line. Call activity is organized into dedicated tabs for each line, so history, voicemails, and recordings appear under the line they belong to, making navigation and call management simpler and more intuitive.</p>",
         "id": 570962,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2780,9 +2939,9 @@
         "description": "<p>Call history in the Teams Calls app is being upgraded to make it easier to find and act on past call activity. Missed calls and associated voicemails will be consolidated into a single call history entry, reducing clutter and simplifying follow-up. Call history will also expand from 100 records to up to 3,000 records or 6 months of history, whichever limit is reached first, giving users more context when they need it.</p>",
         "id": 570843,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -2865,9 +3024,9 @@
         "description": "<p>Teams admins can access utilization analytics for Teams bookable desks on Teams Pro Management portal, similar to analytics provided for meeting rooms on the portal today. For utilization analytics to be enabled, a desk needs to have one or more peripheral device associated, and the desk needs to be licensed with Teams Shared Space license or Teams Shared Space - Single Space license.</p>",
         "id": 570648,
         "locale": null,
-        "modified": "2026-09-10T23:01:27",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32489,12 +32648,12 @@
     },
     {
         "created": "2026-04-01T23:15:50",
-        "description": "Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences. The new Meeting chats section will replace the Meeting chats filter, that was previously available at the top of the chat and channel list. Updated July 20, 2026: We have temporarily rolled back this feature. We apologize for any inconvenience.",
+        "description": "<p>Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences. The new Meeting chats section will replace the Meeting chats filter, that was previously available at the top of the chat and channel list. Updated July 20, 2026: We have temporarily rolled back this feature. We apologize for any inconvenience.</p>",
         "id": 559605,
         "locale": null,
-        "modified": "2026-08-03T22:55:03",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -37772,15 +37931,15 @@
     },
     {
         "created": "2026-03-06T23:00:47",
-        "description": "Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.\n",
+        "description": "<p>Microsoft Teams preserves @mentions and shared contacts when you copy and paste messages in chats and channels. Instead of defaulting to plain text, Teams intelligently displays an @mention, shared contact, or plain text based on where the content is pasted, reducing manual rework.</p>",
         "id": 558254,
         "locale": null,
-        "modified": "2026-05-14T23:15:59",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43333,15 +43492,15 @@
     },
     {
         "created": "2026-02-11T00:15:04",
-        "description": "You can now reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "description": "<p>You can now reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.</p>",
         "id": 555890,
         "locale": null,
-        "modified": "2026-02-11T00:15:04",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43828,15 +43987,15 @@
     },
     {
         "created": "2026-02-11T00:15:04",
-        "description": "You can now attach and reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.",
+        "description": "<p>You can now attach and reference an image when creating a presentation with Copilot using Agent Mode in PowerPoint.</p>",
         "id": 555881,
         "locale": null,
-        "modified": "2026-07-02T23:12:48",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44414,15 +44573,15 @@
     },
     {
         "created": "2026-02-11T00:15:04",
-        "description": "With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios.",
+        "description": "<p>With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios. Updated September 22, 2026: We have decided not to move forward with this change at this time. A planned future release will be communicated separately once timelines are available. We apologize for any inconvenience.</p>",
         "id": 553594,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61529,12 +61688,12 @@
         "description": "<p>Highlight a sentence, paragraph, or table from the response and ask Copilot to work only on that selection. Get focused explanations, concise summaries, quick translations, or next steps for the exact passage you\u2019re reviewing\u2014no more over broad answers. Your selection is previewed in the prompt so you can edit before you send. It\u2019s a faster, more controlled way to get help right where you\u2019re working.</p>",
         "id": 522616,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-09-22T22:57:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

@@ -399,6 +399,7 @@
             "EnableAppRemovalAsExplicitUninstall": true,
             "EnableAppsPostFilterConflictResolution": true,
             "EnableAuthenticatorNewEnrollmentBatteryOptimizationBlock": true,
+            "EnableBTE25": true,
             "EnableBteOnboarding": true,
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
@@ -881,6 +882,7 @@
             "CloudPKILeafCertificateReportingv2": true,
             "DeviceActionCertRevocationMessage": true,
             "DigiCert_SMIME": true,
+            "DisableDeviceDailyDriftDetection": true,
             "EnableAndroidScepV2FlightingV2": true,
             "EnableDeleteProfileInstanceEarlyReturn": true,
             "EnableIOSWiredNetwork": true,
@@ -898,7 +900,8 @@
     },
     "SVC_RTNService": {
         "FlightingV2": {
-            "EGMDirectPnsV2SidecarNotifications": true
+            "EGMDirectPnsV2SidecarNotifications": true,
+            "EnableFnlEgLaneBatchPublishing": true
         }
     },
     "SVC_Remediations": {
