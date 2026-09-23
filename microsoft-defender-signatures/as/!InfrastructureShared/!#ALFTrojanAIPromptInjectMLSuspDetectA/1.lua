@@ -26,27 +26,39 @@ do
     local l_0_8 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK)
     local l_0_9 = (string.sub)(l_0_1, 1, 1024)
     local l_0_10 = (MpCommon.Base64Encode)(l_0_9)
+    local l_0_11 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID))
+    local l_0_12 = nil
+    if l_0_11 then
+      l_0_12 = (MpCommon.GetProcessAttributeValue)(l_0_11, "AIDiscovery:Cpe")
+      if l_0_12 == nil then
+        l_0_12 = (MpCommon.GetProcessAttributeValue)(l_0_11, "inherit:AIDiscovery:Cpe")
+      end
+    end
+    if l_0_7 ~= nil then
+      local l_0_13 = {}
+      l_0_13.AgentSessionId = l_0_7
+      l_0_13.LastMessage = l_0_10
+      local l_0_14 = tostring
+      l_0_14 = l_0_14(l_0_8 or "")
+      l_0_13.Framework = l_0_14
+      l_0_14 = tostring
+      l_0_14 = l_0_14(l_0_12 or "")
+      l_0_13.CPEId = l_0_14
+      l_0_14 = safeJsonSerialize
+      l_0_14 = l_0_14(l_0_13)
+      if l_0_11 and (MpCommon.IsSampled)(10000, true, true, true) then
+        (MpCommon.BmTriggerSig)(l_0_11, "AIPromptInjectML_MLSuspDetect_A", l_0_14)
+      end
+      ;
+      (mp.SetDetectionString)(l_0_14)
+    end
     do
-      if (MpCommon.GetProcessAttributeValue)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery:Cpe") == nil then
-        local l_0_11, l_0_12 = (MpCommon.GetProcessAttributeValue)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "inherit:AIDiscovery:Cpe")
-      end
-      if l_0_7 ~= nil then
-        local l_0_13 = nil
-        local l_0_14 = {AgentSessionId = l_0_7, LastMessage = l_0_10}
-        l_0_14.Framework = tostring(l_0_8 or "")
-        l_0_14.CPEId = tostring(l_0_13 or "")
-        ;
-        (mp.SetDetectionString)(safeJsonSerialize(l_0_14))
-        set_research_data(safeJsonSerialize(l_0_14))
-      end
       do
         do
-          do
-            do return mp.INFECTED end
-            do return mp.CLEAN end
-            -- DECOMPILER ERROR at PC121: freeLocal<0 in 'ReleaseLocals'
+          do return mp.INFECTED end
+          do return mp.CLEAN end
+          -- DECOMPILER ERROR at PC135: freeLocal<0 in 'ReleaseLocals'
 
-          end
         end
       end
     end

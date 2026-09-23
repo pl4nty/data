@@ -1,0 +1,18 @@
+-- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
+-- Command line: lua\!InfrastructureShared\2b9415d596174\1.luac 
+
+-- params : ...
+-- function num : 0
+(nri.AddTelemetry)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH))
+local l_0_0 = reportHeaders
+do
+  local l_0_1 = {}
+  -- DECOMPILER ERROR at PC16: No list found for R1 , SetList fails
+
+  l_0_0(l_0_1)
+  -- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
+
+  do return l_0_0 end
+  -- WARNING: undefined locals caused missing assignments!
+end
+
