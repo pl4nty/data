@@ -1,5 +1,602 @@
 [
     {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Model-driven apps now support configurable display density settings that let users choose how information is spaced throughout the application. Users can select from three density options:</p>\n<ul>\n<li>Comfortable (default)</li>\n<li>Cozy</li>\n<li>Compact<br>\n\u200b</li>\n</ul>\n<p>Each density setting adjusts layout spacing while maintaining accessibility target-size requirements. Administrators and makers can configure default density settings at the environment and app level, while individual users can personalize the experience by selecting their preferred density. User preferences take precedence over administrator-configured defaults.<br>\n\u200b<br>\nDisplay density requires the Header and Navigation Refresh experience to be enabled, and will be enabled by default for apps that have Header and Navigation Refresh enabled. Makers can disable display density for their apps using the app setting if needed.<br>\n\u200b<br>\nSome controls and components may not yet support display density. These controls will continue to render using their standard spacing regardless of the selected density setting. Custom component developers can add support for display density by adopting Fluent design spacing tokens. Learn more in the documentation.<br>\n\u200b<br>\nAvailability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Impacted products</td>\n<td>All model-driven apps</td>\n</tr>\n<tr>\n<td>Release channel</td>\n<td>All</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.1 build</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>Header and navigation refresh enabled</td>\n</tr>\n<tr>\n<td>Feature activation</td>\n<td>Default on</td>\n</tr>\n</tbody>\n</table>",
+        "id": 572682,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/user/appearance-settings",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: Control information density in model-driven apps"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement.</p>",
+        "id": 572677,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report "
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Improve accessibility by adding alternate text to images shared in Teams from OneDrive and SharePoint, helping users better understand visual content</p>",
+        "id": 571687,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Add alternate text to images shared from OneDrive and SharePoint"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Business value</p>\n<p>Asset maintenance is most effective when service intervals reflect how equipment is actually used and maintained. Static schedules that continue from an assumed date or meter value can cause an organization to service an asset more often than necessary after early maintenance or wait too long after late, partial, or usage-intensive service.</p>\n<p>Feeding completed maintenance activities, actual completion dates, and meter readings back into the maintenance plan recalibrates future requirements around the asset's real operating and service history. This closed-loop approach helps organizations avoid both over-maintenance and under-maintenance, balancing asset reliability and availability with labor, parts, and service costs.</p>\n<p>Feature detail</p>\n<p>Completed maintenance is used as a planning input, not only recorded as service history. When maintenance work is completed, the system evaluates which planned maintenance activities were fulfilled and feeds the actual completion date and relevant meter readings back into the asset's maintenance plan. The plan uses those results as the new basis for calculating the next applicable maintenance requirement.</p>\n<p>For calendar-based maintenance, the next event is recalculated from the completed service and the plan's recurrence rules. For usage-based maintenance, the next threshold is calculated from the asset's meter value when the activity was completed. For criteria that combine time and usage, the plan continues to evaluate both conditions from the updated maintenance baseline. Sequential plans advance according to the activities that were actually completed.</p>\n<p>The optimized plan then supplies updated due dates and activities to maintenance coverage views, demand forecasts, and future work-order generation. As additional maintenance is completed, the feedback loop keeps the schedule aligned with the asset's evolving usage and service history.</p>",
+        "id": 571669,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Optimize asset maintenance schedules using completed service"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Business value</p>\n<p>Maintenance demand often becomes visible to service operations only after work orders are created, leaving limited time to prepare capacity and materials. A forward-looking maintenance forecast gives organizations earlier visibility into expected work so they can anticipate labor, skills, parts, and scheduling demand across the asset population.</p>\n<p>This supports more proactive operational planning and helps teams identify periods of concentrated demand before they result in resource conflicts, parts shortages, or delayed maintenance.</p>\n<p>Feature detail</p>\n<p>Provide a forecast of maintenance events expected within a selected future planning horizon. Bring together events calculated from calendar schedules, actual meter usage, sequential maintenance plans, and projected usage based on meter history.</p>\n<p>Allow planners to understand when maintenance is expected and which assets, plans, and activities contribute to the forecast. Expected activity duration and other planning information from the maintenance definition can be used to represent the likely operational demand.</p>\n<p>The forecast provides visibility before work orders are generated. As schedules, meter readings, and usage predictions change, the expected maintenance demand can be refreshed to reflect the latest plan.</p>",
+        "id": 571668,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Forecast planned maintenance demand"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Business value</p>\n<p>Usage-based maintenance aligns service with the work an asset has actually performed, but a current meter reading alone does not tell the organization when the next threshold will be reached. Forecasting the asset's expected usage rate converts meter-based maintenance from a reactive trigger into a forward-looking planning signal.</p>\n<p>Maintenance and reliability teams can use the projected due date to plan labor, parts, capacity, and customer downtime before the threshold is reached. Because the estimate is derived from the individual asset's recent operating history, it reflects real utilization more closely than a generic calendar assumption while remaining explainable and reviewable by planners.</p>\n<p>Feature detail</p>\n<p>Calculate a projected usage rate for each asset from the trailing 30-day mean of its historical meter-usage logs. This rate represents the asset's recent pace of operation and drives all projected due dates for usage-based maintenance activities on that asset.</p>\n<p>For each usage-based maintenance requirement, use the calculated rate to translate the remaining usage before the next threshold into an estimated calendar due date. The configured meter threshold remains the maintenance requirement; the projected date provides the advance planning signal used by maintenance forecasts and lead-window work-order generation.</p>\n<p>Store the calculated usage rate and the date and time when it was last calculated. Exposing both values lets planners assess how fresh the estimate is and whether the available history is sufficient to rely on the projection.</p>\n<p>Apply outlier protection when calculating the trailing mean so isolated meter spikes, incorrect readings, or other anomalous input data do not disproportionately change the projected usage rate. Recalculate the rate as additional meter history becomes available so future maintenance predictions continue to reflect the asset's recent usage.</p>",
+        "id": 571667,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Forecast asset usage to predict maintenance due dates"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Business value</p>\n<p>Organizations can maintain assets according to how the equipment ages, how much it is actually used, and which service activities have already been completed. A flexible maintenance schedule helps avoid servicing lightly used equipment too often while reducing the risk that heavily used equipment operates beyond its required maintenance interval.</p>\n<p>Usage-based schedules connect maintenance directly to meter readings recorded for the individual asset. This allows work to be driven by actual operating hours, mileage, cycles, production counts, or another tracked measure rather than by an estimated calendar interval alone. Combining scheduling methods in one plan supports more consistent execution of manufacturer guidance, internal reliability standards, and contractual maintenance commitments.</p>\n<p>Feature detail</p>\n<p>Define maintenance activities against the actual usage of an asset by specifying recurring service intervals on its meter. For example, require an oil change after every 150 operating hours or an inspection after every configured number of miles, cycles, or units produced. As new readings are recorded, the asset's accumulated usage determines when the next maintenance interval is reached.</p>\n<p>Define other activities using calendar recurrence or combine calendar and usage criteria in one rule. For combined criteria, the plan initiates maintenance when either the elapsed-time threshold or the actual-usage threshold occurs first.</p>\n<p>Create sequential maintenance programs in which different activities become due at different points in the maintenance cycle. For example, a plan can progress through inspections, minor services, major services, and overhauls rather than repeating the same activity at every interval.</p>\n<p>The maintenance plan continuously evaluates its configured intervals against the asset's dates, recorded meter usage, and completed maintenance sequence to determine which activity is due next. When the applicable threshold is reached, the plan produces the maintenance requirement that drives downstream work-order generation. This gives planners one place to manage calendar-based, actual-usage-based, whichever-comes-first, and multi-step maintenance strategies.</p>",
+        "id": 571665,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Plan asset maintenance using time, actual usage, and service sequences"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>We are adding the ability to duplicate an event. Simply go to the event details and select \"duplicate event\"</p>",
+        "id": 570666,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": " Outlook: Duplicate events in Outlook mobile apps"
+    },
+    {
+        "created": "2026-09-23T22:59:12",
+        "description": "<p>Upload skill (.md file) in Brand Kit and use within PPT Copilot</p>",
+        "id": 569018,
+        "locale": null,
+        "modified": "2026-09-23T22:59:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Skills in Brand Kit"
+    },
+    {
         "created": "2026-09-22T22:57:16",
         "description": "<p>Transaction journals let users author complete time, expense, and material transactions\u2014including different transaction classes within the same journal. Users enter transactions through a dedicated Transactions tab and select Preview to generate and review the journal lines and relationships that will be created.</p>\n<p>When the journal is confirmed, Project Operations creates the applicable cost, unbilled-sales, and inter-organizational actuals, along with the required relationships between them, without creating an approval record or initiating an approval workflow. The confirmed journal is then locked using the existing journal behavior, and resulting actuals can be corrected through the existing correction-journal process.</p>",
         "id": 571303,
@@ -163,7 +760,7 @@
         "description": "<p>Local inferencing expands Microsoft Copilot\u2019s sovereign controls by enabling AI inferencing for supported Copilot interactions to occur within the applicable local geography.</p>\n<p>Launching in Australia, India, the United Arab Emirates, the United Kingdom, and the United States, this capability gives organizations greater control over where AI inferencing occurs, helping them address sovereignty and regional requirements. Inferencing is the processing step when an AI model executes a prompt to produce an output or response.</p>",
         "id": 571886,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -189,43 +786,7 @@
                 "tagName": "Web"
             },
             {
-                "tagName": "Excel"
-            },
-            {
-                "tagName": "Exchange"
-            },
-            {
-                "tagName": "Forms"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "Microsoft 365 admin center"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "OneNote"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "Planner"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
                 "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Agent 365"
             },
             {
                 "tagName": "General Availability"
@@ -256,43 +817,7 @@
             ],
             "products": [
                 {
-                    "tagName": "Excel"
-                },
-                {
-                    "tagName": "Exchange"
-                },
-                {
-                    "tagName": "Forms"
-                },
-                {
-                    "tagName": "Microsoft 365"
-                },
-                {
-                    "tagName": "Microsoft 365 admin center"
-                },
-                {
-                    "tagName": "OneDrive"
-                },
-                {
-                    "tagName": "OneNote"
-                },
-                {
-                    "tagName": "Outlook"
-                },
-                {
-                    "tagName": "Planner"
-                },
-                {
-                    "tagName": "Word"
-                },
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
                     "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Agent 365"
                 }
             ],
             "releasePhase": [
@@ -8947,9 +9472,9 @@
         "description": "<p>Facilitator can now join meetings set up in Teams channels. Facilitator helps participants run more effective meetings through the ability to take live notes, manage the agenda, answer questions, and capture tasks.</p>",
         "id": 568936,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -9700,15 +10225,15 @@
     },
     {
         "created": "2026-08-04T22:45:42",
-        "description": "We're introducing a set of left-navigation improvements in Viva Engage on the web that give people more control over their navigation pane. These are additive, user-driven changes \u2014 users can collapse the left nav, resize its width, favorite up to 50 communities, and drag to reorder their favorited communities. None of these changes alter which destinations appear in the navigation. These enhancements are applicable to all surfaces that have the Engage left navigation menu - Web, and the Engage app in Teams and Outlook. \n",
+        "description": "<p>We're introducing a set of left-navigation improvements in Viva Engage on the web that give people more control over their navigation pane. These are additive, user-driven changes \u2014 users can collapse the left nav, resize its width, favorite up to 50 communities, and drag to reorder their favorited communities. None of these changes alter which destinations appear in the navigation. These enhancements are applicable to all surfaces that have the Engage left navigation menu - Web, and the Engage app in Teams and Outlook.</p>",
         "id": 568763,
         "locale": null,
-        "modified": "2026-08-04T22:45:42",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -9877,12 +10402,12 @@
     },
     {
         "created": "2026-08-04T22:45:42",
-        "description": "Expanded Pro Management Portal (PMP) health monitoring for Teams Rooms on Android by surfacing device health signals including storage health, Teams meeting app, calendar sync, secondary display health and network. When issues are detected, PMP will automatically generate actionable alerts and support ticket creation workflows, enabling IT administrators to proactively identify and triage room health issues before they impact meeting experiences.",
+        "description": "<p>Expanded Pro Management Portal (PMP) health monitoring for Teams Rooms on Android by surfacing device health signals including storage health, Teams meeting app, calendar sync, secondary display health and network. When issues are detected, PMP will automatically generate actionable alerts and support ticket creation workflows, enabling IT administrators to proactively identify and triage room health issues before they impact meeting experiences.</p>",
         "id": 566856,
         "locale": null,
-        "modified": "2026-08-04T22:45:42",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13686,12 +14211,12 @@
     },
     {
         "created": "2026-07-08T23:10:57",
-        "description": "When a user who has access to the SharePoint app in Teams clicks a SharePoint page or news link in Teams chat or channels, the link will open inside the SharePoint app in Teams (if available) instead of the mobile browser",
+        "description": "<p>When a user who has access to the SharePoint app in Teams clicks a SharePoint page or news link in Teams chat or channels, the link will open inside the SharePoint app in Teams (if available) instead of the mobile browser</p>",
         "id": 567314,
         "locale": null,
-        "modified": "2026-08-18T23:05:00",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22998,12 +23523,12 @@
     },
     {
         "created": "2026-05-14T23:15:59",
-        "description": "Users can now upload videos directly into a Teams event or meeting from OneDrive from the \"Manage view\" options when an organizer has turned on Manage What Attendees See mode. This ensures a smoother high quality video playback with a more consistent experience for attendees.",
+        "description": "<p>Users can now upload videos directly into a Teams event or meeting from OneDrive from the \"Manage view\" options when an organizer has turned on Manage What Attendees See mode. This ensures a smoother high quality video playback with a more consistent experience for attendees.</p>",
         "id": 562340,
         "locale": null,
-        "modified": "2026-08-21T22:00:23",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -24882,10 +25407,10 @@
     },
     {
         "created": "2026-05-07T23:15:02",
-        "description": "When files are opened in Windows, the operating system, and applications (for example, Microsoft Office and browsers) can create, rename, and delete temporary files as part of normal behavior. The Endpoint client audits these activities, resulting in high-volume, low-signal events that appear as \u201cnoise\u201d for Insider Risk Management (IRM) customers. While global exclusions exist (file type, keyword, file path, etc.), some temporary file naming patterns are not easily captured with the current exclusions, leaving customers without a practical way to reduce noise without over-excluding. This feature introduces built-in filtering for well-known temporary file name patterns so that Endpoint file operations are excluded from IRM activity explorer and scoring reducing noise allowing customers to focus on the most relevant alerts. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.\n",
+        "description": "<p>When files are opened in Windows, the operating system, and applications (for example, Microsoft Office and browsers) can create, rename, and delete temporary files as part of normal behavior. The Endpoint client audits these activities, resulting in high-volume, low-signal events that appear as \u201cnoise\u201d for Insider Risk Management (IRM) customers. While global exclusions exist (file type, keyword, file path, etc.), some temporary file naming patterns are not easily captured with the current exclusions, leaving customers without a practical way to reduce noise without over-excluding. This feature introduces built-in filtering for well-known temporary file name patterns so that Endpoint file operations are excluded from IRM activity explorer and scoring reducing noise allowing customers to focus on the most relevant alerts. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>",
         "id": 560601,
         "locale": null,
-        "modified": "2026-06-10T23:00:02",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
@@ -24894,6 +25419,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Web"
@@ -24912,6 +25446,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -38877,15 +39420,15 @@
     },
     {
         "created": "2026-03-02T23:45:11",
-        "description": "You can now reference files saved in SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint.",
+        "description": "<p>You can now reference files saved in SharePoint libraries and OneDrive folders when creating a presentation with Agent Mode in PowerPoint.</p>",
         "id": 555897,
         "locale": null,
-        "modified": "2026-08-21T22:00:23",
+        "modified": "2026-09-23T22:59:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

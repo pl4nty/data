@@ -837,8 +837,9 @@
         "name": "ExchangeOnlineManagement",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.7.2",
+        "version": "3.9.0",
         "versions": [
+            "3.9.0",
             "3.7.2",
             "3.6.0",
             "3.4.0",
@@ -1103,8 +1104,9 @@
         "name": "MicrosoftGraph",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2.26.1",
+        "version": "2.40.0",
         "versions": [
+            "2.40.0",
             "2.26.1",
             "2.25.0",
             "1.23.0"

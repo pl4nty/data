@@ -250,6 +250,7 @@
         "azureml://registries/azureml-deepseek/models/deepseek-v4-pro",
         "azureml://registries/azureml-deepseek/models/deepseek-v4-flash",
         "azureml://registries/azureml-deepseek/models/deepseek-v4-flash-0731",
+        "azureml://registries/azureml-deepseek/models/deepseek-v4.1-flash",
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",
@@ -418,6 +419,7 @@
         "gpt-5.6-luna",
         "gpt-5.6-terra",
         "gpt-chat-latest",
+        "deepseek-v4.1-flash",
         "kimi-k2-thinking",
         "kimi-k2.5",
         "kimi-k2.6",
@@ -497,7 +499,8 @@
             "gpt-6-luna",
             "gpt-5.6-luna",
             "gpt-5.6-terra",
-            "gpt-chat-latest"
+            "gpt-chat-latest",
+            "deepseek-v4.1-flash"
         ],
         "supportedChatModels": [
             "gpt-4",
@@ -552,6 +555,7 @@
             "gpt-5.6-luna",
             "gpt-5.6-terra",
             "gpt-chat-latest",
+            "deepseek-v4.1-flash",
             "kimi-k2-thinking",
             "kimi-k2.5",
             "kimi-k2.6",

@@ -1246,6 +1246,7 @@
         "EnableTargetReleaseInWDS": false,
         "EnableTargetedReleaseUX": true,
         "EnableTaskProgressRefreshForRunUndispatchedSubscriptionRegionAnalysisAsync": true,
+        "EnableTemplateQueryProcessCapability": true,
         "EnableTenantESUServicePlanSync": true,
         "EnableTenantExcludeForFraudEvent": true,
         "EnableTenantOffboardEventhub": true,

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20503.40128-->
+    <!--Build: 16.0.20515.40129-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2344,7 +2344,7 @@
     <o:token o:name="Flow.BaseHost">flow.microsoft.com</o:token>
     <o:token o:name="Teams.BaseHost">teams.microsoft.com</o:token>
     <o:token o:name="OfficeApi.AuthHost">api.office.net</o:token>
-    <o:token o:name="OfficeApiNpmRuntimePolicy">{"@1js/officejs-excel":"1.0.16","@1js/officejs-word":"1.0.14","@1js/officejs-powerpoint":"1.0.14"}</o:token>
+    <o:token o:name="OfficeApiNpmRuntimePolicy">{"minimumVersionAllowed":"16.0.20424.15170"}</o:token>
     <o:token o:name="Growth.CdnBaseHost">res.cdn.office.net</o:token>
     <o:token o:name="OneCdn.BaseHost">res.public.onecdn.static.microsoft</o:token>
     <o:token o:name="OneCdn.BaseHost.Designer">res.public.onecdn.static.microsoft/designer</o:token>

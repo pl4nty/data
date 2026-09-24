@@ -499,6 +499,7 @@
             "EGM_UseRedisCache": true,
             "EnableAadDeviceChangeDedup": true,
             "EnableAndroidWorkPoliciesLookupForAMAPIMigratedDevices": true,
+            "EnableCleanUp": true,
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
@@ -901,7 +902,14 @@
     "SVC_RTNService": {
         "FlightingV2": {
             "EGMDirectPnsV2SidecarNotifications": true,
-            "EnableFnlEgLaneBatchPublishing": true
+            "EGSmartDrop": true,
+            "EnableFnlEgLaneBatchPublishing": true,
+            "FireAndForgetNotificationQueueProcessor": false,
+            "NCSDelayBetweenBatches": 25,
+            "NCSSqlAggParallelCount": 3,
+            "PopulateSearch": true,
+            "SqlAggEGCache": true,
+            "UseSearchCache": true
         }
     },
     "SVC_Remediations": {
@@ -1058,7 +1066,9 @@
     },
     "UX_GnT": {
         "FlightingV2": {
-            "EnableDMTForAndroid": true
+            "EnableDMTForAndroid": true,
+            "EnableDeploymentPlans": true,
+            "EnableMAASupportForDP": true
         }
     },
     "UX_MAM": {

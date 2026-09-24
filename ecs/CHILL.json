@@ -1008,7 +1008,7 @@
     "ChillDynamics365BusinessCentral": {
         "Floodgate_Campaign_Dynamics365BusinessCentral.0948caeb-1963-43ed-888f-cc8b7d27bbf4": {
             "CampaignId": "0948caeb-1963-43ed-888f-cc8b7d27bbf4",
-            "EndTimeUtc": "2026-10-19T23:00:00Z",
+            "EndTimeUtc": "2026-11-23T00:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -1085,7 +1085,7 @@
         },
         "Floodgate_Campaign_Dynamics365BusinessCentral.7d5b86a5-c81a-4891-9d7e-7f928fbd37c0": {
             "CampaignId": "7d5b86a5-c81a-4891-9d7e-7f928fbd37c0",
-            "EndTimeUtc": "2026-10-19T23:00:00Z",
+            "EndTimeUtc": "2026-11-23T00:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

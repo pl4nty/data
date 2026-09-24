@@ -27439,7 +27439,7 @@
                     "datasetName": "tau2_telecom_inspectai",
                     "metrics": {
                         "accuracy": 0.745614,
-                        "benchmark_run_cost_usd": 28.16,
+                        "benchmark_run_cost_usd": 5.63,
                         "total_input_tokens": 25528129,
                         "total_output_tokens": 164710,
                         "total_reasoning_tokens": 273890
@@ -27477,7 +27477,7 @@
                     "datasetName": "chembench_inspect",
                     "metrics": {
                         "accuracy": 0.711311,
-                        "benchmark_run_cost_usd": 27.34,
+                        "benchmark_run_cost_usd": 5.47,
                         "total_input_tokens": 602336,
                         "total_output_tokens": 36340,
                         "total_reasoning_tokens": 4420250
@@ -27515,7 +27515,7 @@
                     "datasetName": "musr_inspect",
                     "metrics": {
                         "accuracy": 0.636,
-                        "benchmark_run_cost_usd": 6.52,
+                        "benchmark_run_cost_usd": 1.3,
                         "total_input_tokens": 247303,
                         "total_output_tokens": 16468,
                         "total_reasoning_tokens": 1029471
@@ -27553,7 +27553,7 @@
                     "datasetName": "frontierscience_inspectai",
                     "metrics": {
                         "accuracy": 0.621769,
-                        "benchmark_run_cost_usd": 15.76,
+                        "benchmark_run_cost_usd": 3.15,
                         "total_input_tokens": 576245,
                         "total_output_tokens": 438222,
                         "total_reasoning_tokens": 2092906
@@ -27591,7 +27591,7 @@
                     "datasetName": "livecodebench_medium",
                     "metrics": {
                         "accuracy": 0.820755,
-                        "benchmark_run_cost_usd": 1.14,
+                        "benchmark_run_cost_usd": 0.23,
                         "total_input_tokens": 57470,
                         "total_output_tokens": 23477,
                         "total_reasoning_tokens": 157185
@@ -27628,10 +27628,10 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "input_token_cost_per_1M_tokens": 1,
-                        "output_token_cost_per_1M_tokens": 6,
-                        "quality_benchmark_cost": 86.89,
-                        "total_cost_per_1M_tokens": 2.25
+                        "input_token_cost_per_1M_tokens": 0.2,
+                        "output_token_cost_per_1M_tokens": 1.2,
+                        "quality_benchmark_cost": 17.37,
+                        "total_cost_per_1M_tokens": 0.45
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-luna/versions/2026-07-09",
                     "modelName": "gpt-5.6-luna",
@@ -27664,7 +27664,7 @@
                     "datasetName": "bigbench_hard",
                     "metrics": {
                         "accuracy": 0.9117,
-                        "benchmark_run_cost_usd": 1.69,
+                        "benchmark_run_cost_usd": 0.34,
                         "total_input_tokens": 122938,
                         "total_output_tokens": 44625,
                         "total_reasoning_tokens": 215989
@@ -27701,11 +27701,11 @@
                     "datasetFamily": "bigcodebench",
                     "datasetName": "bigcodebench_instruct",
                     "metrics": {
-                        "accuracy": 0.591611,
-                        "benchmark_run_cost_usd": 11.45,
-                        "total_input_tokens": 137452,
-                        "total_output_tokens": 206032,
-                        "total_reasoning_tokens": 1678698
+                        "accuracy": 0.552632,
+                        "benchmark_run_cost_usd": 2.98,
+                        "total_input_tokens": 174283,
+                        "total_output_tokens": 262335,
+                        "total_reasoning_tokens": 2188809
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-luna/versions/2026-07-09",
                     "modelName": "gpt-5.6-luna",
@@ -27740,7 +27740,7 @@
                     "datasetName": "gpqa",
                     "metrics": {
                         "accuracy": 0.923077,
-                        "benchmark_run_cost_usd": 2.47,
+                        "benchmark_run_cost_usd": 0.49,
                         "total_input_tokens": 63964,
                         "total_output_tokens": 40946,
                         "total_reasoning_tokens": 359957
@@ -27778,7 +27778,7 @@
                     "datasetName": "livecodebench",
                     "metrics": {
                         "accuracy": 0.901639,
-                        "benchmark_run_cost_usd": 1.02,
+                        "benchmark_run_cost_usd": 0.2,
                         "total_input_tokens": 76375,
                         "total_output_tokens": 13469,
                         "total_reasoning_tokens": 143707
@@ -27816,7 +27816,7 @@
                     "datasetName": "mbppplus",
                     "metrics": {
                         "accuracy": 0.849206,
-                        "benchmark_run_cost_usd": 0.86,
+                        "benchmark_run_cost_usd": 0.17,
                         "total_input_tokens": 238004,
                         "total_output_tokens": 17818,
                         "total_reasoning_tokens": 85133
@@ -27854,7 +27854,7 @@
                     "datasetName": "mmlu_pro",
                     "metrics": {
                         "accuracy": 0.901489,
-                        "benchmark_run_cost_usd": 4.09,
+                        "benchmark_run_cost_usd": 0.82,
                         "total_input_tokens": 200770,
                         "total_output_tokens": 82444,
                         "total_reasoning_tokens": 565427
@@ -27892,7 +27892,7 @@
                     "datasetName": "truthfulqa_mc1",
                     "metrics": {
                         "accuracy": 0.845209,
-                        "benchmark_run_cost_usd": 0.63,
+                        "benchmark_run_cost_usd": 0.13,
                         "total_input_tokens": 162093,
                         "total_output_tokens": 5602,
                         "total_reasoning_tokens": 71894
@@ -27930,7 +27930,7 @@
                     "datasetName": "harmbench_contextual",
                     "metrics": {
                         "attack_success_rate": 8.510638,
-                        "benchmark_run_cost_usd": 0.45,
+                        "benchmark_run_cost_usd": 0.09,
                         "total_input_tokens": 35300,
                         "total_output_tokens": 22572,
                         "total_reasoning_tokens": 46326
@@ -27968,7 +27968,7 @@
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
                         "attack_success_rate": 0,
-                        "benchmark_run_cost_usd": 0.11,
+                        "benchmark_run_cost_usd": 0.02,
                         "total_input_tokens": 2080,
                         "total_output_tokens": 5767,
                         "total_reasoning_tokens": 12640
@@ -28006,7 +28006,7 @@
                     "datasetName": "harmbench_standard",
                     "metrics": {
                         "attack_success_rate": 0,
-                        "benchmark_run_cost_usd": 0.81,
+                        "benchmark_run_cost_usd": 0.16,
                         "total_input_tokens": 3011,
                         "total_output_tokens": 53340,
                         "total_reasoning_tokens": 81802
@@ -28043,7 +28043,7 @@
                     "datasetFamily": "toxigen",
                     "datasetName": "toxicity_detection",
                     "metrics": {
-                        "benchmark_run_cost_usd": 3.97,
+                        "benchmark_run_cost_usd": 0.79,
                         "f1": 0.883492,
                         "total_input_tokens": 660379,
                         "total_output_tokens": 67526,
@@ -28082,7 +28082,7 @@
                     "datasetName": "wmdp_bio",
                     "metrics": {
                         "accuracy": 0.867788,
-                        "benchmark_run_cost_usd": 1.21,
+                        "benchmark_run_cost_usd": 0.24,
                         "total_input_tokens": 168666,
                         "total_output_tokens": 8261,
                         "total_reasoning_tokens": 165683
@@ -28120,7 +28120,7 @@
                     "datasetName": "wmdp_chem",
                     "metrics": {
                         "accuracy": 0.75,
-                        "benchmark_run_cost_usd": 0.72,
+                        "benchmark_run_cost_usd": 0.14,
                         "total_input_tokens": 44058,
                         "total_output_tokens": 2912,
                         "total_reasoning_tokens": 109366
@@ -28158,7 +28158,7 @@
                     "datasetName": "wmdp_cyber",
                     "metrics": {
                         "accuracy": 0.890161,
-                        "benchmark_run_cost_usd": 23.6,
+                        "benchmark_run_cost_usd": 4.72,
                         "total_input_tokens": 749383,
                         "total_output_tokens": 13212,
                         "total_reasoning_tokens": 3794557
@@ -28195,17 +28195,17 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 52.09,
-                        "latency_mean_secs": 160.11,
-                        "latency_p50_secs": 160.11,
-                        "latency_p90_secs": 179.31,
-                        "latency_p95_secs": 180.83,
-                        "latency_p99_secs": 182.04,
-                        "latency_ttft_secs": 24.57,
-                        "throughput_gtps_token_count": 52.09,
-                        "throughput_rps_request_count": 0.01,
-                        "throughput_ttps_token_count": 77.39,
-                        "time_between_tokens_secs": 10.65
+                        "index_metric": 68.86,
+                        "latency_mean_secs": 34.72,
+                        "latency_p50_secs": 30.24,
+                        "latency_p90_secs": 55.58,
+                        "latency_p95_secs": 67.39,
+                        "latency_p99_secs": 90.62,
+                        "latency_ttft_secs": 26.86,
+                        "throughput_gtps_token_count": 68.86,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 106.07,
+                        "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-luna/versions/2026-07-09",
                     "modelName": "gpt-5.6-luna",
@@ -28224,17 +28224,17 @@
                     "deployment_category": "azure_openai",
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
-                    "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "15",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
-                    "output_generated_tokens": "2000",
+                    "output_generated_tokens": "200",
                     "payload_task_type": "chat_completion",
-                    "prompt_token_generated_token_ratio": "33:67",
+                    "prompt_token_generated_token_ratio": "80:20",
                     "region": "eastus2",
                     "stream": "true",
                     "tokens_rate_limit": "NaN",
-                    "total_token_length_per_request": "3000"
+                    "total_token_length_per_request": "1000"
                 }
             }
         },
@@ -28245,7 +28245,7 @@
                     "datasetName": "aggregate",
                     "metrics": {
                         "accuracy": 0.787521,
-                        "benchmark_run_cost_usd": 86.89,
+                        "benchmark_run_cost_usd": 17.37,
                         "index_metric": 0.787521
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-luna/versions/2026-07-09",
@@ -28492,10 +28492,10 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "input_token_cost_per_1M_tokens": 5,
-                        "output_token_cost_per_1M_tokens": 30,
+                        "input_token_cost_per_1M_tokens": 4,
+                        "output_token_cost_per_1M_tokens": 20,
                         "quality_benchmark_cost": 165.04,
-                        "total_cost_per_1M_tokens": 11.25
+                        "total_cost_per_1M_tokens": 8
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-sol/versions/2026-07-09",
                     "modelName": "gpt-5.6-sol",
@@ -29166,11 +29166,11 @@
                     "datasetFamily": "tau2_telecom",
                     "datasetName": "tau2_telecom_inspectai",
                     "metrics": {
-                        "accuracy": 0.842105,
-                        "benchmark_run_cost_usd": 97.92,
-                        "total_input_tokens": 36359886,
-                        "total_output_tokens": 168287,
-                        "total_reasoning_tokens": 299439
+                        "accuracy": 0.868421,
+                        "benchmark_run_cost_usd": 6.94,
+                        "total_input_tokens": 2219415,
+                        "total_output_tokens": 124830,
+                        "total_reasoning_tokens": 83413
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-terra/versions/2026-07-09",
                     "modelName": "gpt-5.6-terra",
@@ -29205,7 +29205,7 @@
                     "datasetName": "chembench_inspect",
                     "metrics": {
                         "accuracy": 0.702693,
-                        "benchmark_run_cost_usd": 36.17,
+                        "benchmark_run_cost_usd": 28.94,
                         "total_input_tokens": 603002,
                         "total_output_tokens": 36270,
                         "total_reasoning_tokens": 2274888
@@ -29243,7 +29243,7 @@
                     "datasetName": "musr_inspect",
                     "metrics": {
                         "accuracy": 0.704,
-                        "benchmark_run_cost_usd": 3.28,
+                        "benchmark_run_cost_usd": 2.62,
                         "total_input_tokens": 293483,
                         "total_output_tokens": 14900,
                         "total_reasoning_tokens": 154921
@@ -29281,7 +29281,7 @@
                     "datasetName": "frontierscience_inspectai",
                     "metrics": {
                         "accuracy": 0.649775,
-                        "benchmark_run_cost_usd": 26.94,
+                        "benchmark_run_cost_usd": 21.55,
                         "total_input_tokens": 513715,
                         "total_output_tokens": 381068,
                         "total_reasoning_tokens": 1329097
@@ -29319,7 +29319,7 @@
                     "datasetName": "livecodebench_medium",
                     "metrics": {
                         "accuracy": 0.892405,
-                        "benchmark_run_cost_usd": 2.65,
+                        "benchmark_run_cost_usd": 2.12,
                         "total_input_tokens": 83856,
                         "total_output_tokens": 37932,
                         "total_reasoning_tokens": 124886
@@ -29356,10 +29356,10 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "input_token_cost_per_1M_tokens": 2.5,
-                        "output_token_cost_per_1M_tokens": 15,
-                        "quality_benchmark_cost": 179.65,
-                        "total_cost_per_1M_tokens": 5.625
+                        "input_token_cost_per_1M_tokens": 2,
+                        "output_token_cost_per_1M_tokens": 12,
+                        "quality_benchmark_cost": 72.31,
+                        "total_cost_per_1M_tokens": 4.5
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-terra/versions/2026-07-09",
                     "modelName": "gpt-5.6-terra",
@@ -29392,7 +29392,7 @@
                     "datasetName": "bigbench_hard",
                     "metrics": {
                         "accuracy": 0.929348,
-                        "benchmark_run_cost_usd": 2.55,
+                        "benchmark_run_cost_usd": 2.04,
                         "total_input_tokens": 125303,
                         "total_output_tokens": 38241,
                         "total_reasoning_tokens": 111041
@@ -29429,11 +29429,11 @@
                     "datasetFamily": "bigcodebench",
                     "datasetName": "bigcodebench_instruct",
                     "metrics": {
-                        "accuracy": 0.574421,
-                        "benchmark_run_cost_usd": 17.96,
-                        "total_input_tokens": 136354,
-                        "total_output_tokens": 211971,
-                        "total_reasoning_tokens": 962427
+                        "accuracy": 0.544737,
+                        "benchmark_run_cost_usd": 13.4,
+                        "total_input_tokens": 175479,
+                        "total_output_tokens": 284452,
+                        "total_reasoning_tokens": 802726
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-terra/versions/2026-07-09",
                     "modelName": "gpt-5.6-terra",
@@ -29468,7 +29468,7 @@
                     "datasetName": "gpqa",
                     "metrics": {
                         "accuracy": 0.903683,
-                        "benchmark_run_cost_usd": 4.96,
+                        "benchmark_run_cost_usd": 3.96,
                         "total_input_tokens": 83143,
                         "total_output_tokens": 46948,
                         "total_reasoning_tokens": 269568
@@ -29506,7 +29506,7 @@
                     "datasetName": "livecodebench",
                     "metrics": {
                         "accuracy": 0.960317,
-                        "benchmark_run_cost_usd": 1.52,
+                        "benchmark_run_cost_usd": 1.21,
                         "total_input_tokens": 79822,
                         "total_output_tokens": 14886,
                         "total_reasoning_tokens": 72863
@@ -29544,7 +29544,7 @@
                     "datasetName": "mbppplus",
                     "metrics": {
                         "accuracy": 0.858667,
-                        "benchmark_run_cost_usd": 1.4,
+                        "benchmark_run_cost_usd": 1.12,
                         "total_input_tokens": 236244,
                         "total_output_tokens": 17261,
                         "total_reasoning_tokens": 36812
@@ -29582,7 +29582,7 @@
                     "datasetName": "mmlu_pro",
                     "metrics": {
                         "accuracy": 0.906752,
-                        "benchmark_run_cost_usd": 6.43,
+                        "benchmark_run_cost_usd": 5.14,
                         "total_input_tokens": 215015,
                         "total_output_tokens": 79679,
                         "total_reasoning_tokens": 313033
@@ -29620,7 +29620,7 @@
                     "datasetName": "truthfulqa_mc1",
                     "metrics": {
                         "accuracy": 0.869619,
-                        "benchmark_run_cost_usd": 1.14,
+                        "benchmark_run_cost_usd": 0.91,
                         "total_input_tokens": 161929,
                         "total_output_tokens": 5509,
                         "total_reasoning_tokens": 43198
@@ -29658,7 +29658,7 @@
                     "datasetName": "harmbench_contextual",
                     "metrics": {
                         "attack_success_rate": 8.75,
-                        "benchmark_run_cost_usd": 0.67,
+                        "benchmark_run_cost_usd": 0.54,
                         "total_input_tokens": 31367,
                         "total_output_tokens": 18271,
                         "total_reasoning_tokens": 21234
@@ -29696,7 +29696,7 @@
                     "datasetName": "harmbench_copyright_violations",
                     "metrics": {
                         "attack_success_rate": 0,
-                        "benchmark_run_cost_usd": 0.24,
+                        "benchmark_run_cost_usd": 0.19,
                         "total_input_tokens": 2080,
                         "total_output_tokens": 7465,
                         "total_reasoning_tokens": 7915
@@ -29734,7 +29734,7 @@
                     "datasetName": "harmbench_standard",
                     "metrics": {
                         "attack_success_rate": 1.785714,
-                        "benchmark_run_cost_usd": 1.36,
+                        "benchmark_run_cost_usd": 1.09,
                         "total_input_tokens": 2453,
                         "total_output_tokens": 44847,
                         "total_reasoning_tokens": 45678
@@ -29771,7 +29771,7 @@
                     "datasetFamily": "toxigen",
                     "datasetName": "toxicity_detection",
                     "metrics": {
-                        "benchmark_run_cost_usd": 7.06,
+                        "benchmark_run_cost_usd": 5.65,
                         "f1": 0.879021,
                         "total_input_tokens": 659151,
                         "total_output_tokens": 64630,
@@ -29810,7 +29810,7 @@
                     "datasetName": "wmdp_bio",
                     "metrics": {
                         "accuracy": 0.881315,
-                        "benchmark_run_cost_usd": 2.26,
+                        "benchmark_run_cost_usd": 1.81,
                         "total_input_tokens": 168691,
                         "total_output_tokens": 8607,
                         "total_reasoning_tokens": 114123
@@ -29848,7 +29848,7 @@
                     "datasetName": "wmdp_chem",
                     "metrics": {
                         "accuracy": 0.724138,
-                        "benchmark_run_cost_usd": 1.12,
+                        "benchmark_run_cost_usd": 0.9,
                         "total_input_tokens": 44321,
                         "total_output_tokens": 2904,
                         "total_reasoning_tokens": 64649
@@ -29886,7 +29886,7 @@
                     "datasetName": "wmdp_cyber",
                     "metrics": {
                         "accuracy": 0.894949,
-                        "benchmark_run_cost_usd": 26.22,
+                        "benchmark_run_cost_usd": 20.98,
                         "total_input_tokens": 806578,
                         "total_output_tokens": 13776,
                         "total_reasoning_tokens": 1599830
@@ -29923,17 +29923,17 @@
                     "datasetFamily": "synthetic",
                     "datasetName": "synthetic",
                     "metrics": {
-                        "index_metric": 30.44,
-                        "latency_mean_secs": 137.34,
-                        "latency_p50_secs": 137.34,
-                        "latency_p90_secs": 211.6,
-                        "latency_p95_secs": 221.54,
-                        "latency_p99_secs": 229.5,
-                        "latency_ttft_secs": 30.07,
-                        "throughput_gtps_token_count": 30.44,
-                        "throughput_rps_request_count": 0.01,
-                        "throughput_ttps_token_count": 43.12,
-                        "time_between_tokens_secs": 9.72
+                        "index_metric": 68.86,
+                        "latency_mean_secs": 34.72,
+                        "latency_p50_secs": 30.24,
+                        "latency_p90_secs": 55.58,
+                        "latency_p95_secs": 67.39,
+                        "latency_p99_secs": 90.62,
+                        "latency_ttft_secs": 26.86,
+                        "throughput_gtps_token_count": 68.86,
+                        "throughput_rps_request_count": 0.03,
+                        "throughput_ttps_token_count": 106.07,
+                        "time_between_tokens_secs": 0.01
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-terra/versions/2026-07-09",
                     "modelName": "gpt-5.6-terra",
@@ -29952,17 +29952,17 @@
                     "deployment_category": "azure_openai",
                     "deployment_type": "standard",
                     "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
-                    "input_prompt_tokens": "1000",
-                    "num_of_inference_aggregations": "11",
+                    "input_prompt_tokens": "800",
+                    "num_of_inference_aggregations": "234",
                     "num_of_inference_requests": "2",
                     "num_parallel_inference_requests": "1",
-                    "output_generated_tokens": "2000",
+                    "output_generated_tokens": "200",
                     "payload_task_type": "chat_completion",
-                    "prompt_token_generated_token_ratio": "33:67",
+                    "prompt_token_generated_token_ratio": "80:20",
                     "region": "eastus2",
                     "stream": "true",
                     "tokens_rate_limit": "NaN",
-                    "total_token_length_per_request": "3000"
+                    "total_token_length_per_request": "1000"
                 }
             }
         },
@@ -29972,9 +29972,9 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "accuracy": 0.812128,
-                        "benchmark_run_cost_usd": 179.65,
-                        "index_metric": 0.812128
+                        "accuracy": 0.815417,
+                        "benchmark_run_cost_usd": 72.31,
+                        "index_metric": 0.815417
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-5.6-terra/versions/2026-07-09",
                     "modelName": "gpt-5.6-terra",
@@ -31082,7 +31082,7 @@
                     "metrics": {
                         "input_token_cost_per_1M_tokens": 10,
                         "output_token_cost_per_1M_tokens": 50,
-                        "quality_benchmark_cost": 394.77,
+                        "quality_benchmark_cost": 392.42,
                         "total_cost_per_1M_tokens": 20
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
@@ -31115,11 +31115,11 @@
                     "datasetFamily": "bigbench_hard",
                     "datasetName": "bigbench_hard",
                     "metrics": {
-                        "accuracy": 0.938841,
-                        "benchmark_run_cost_usd": 15.73,
-                        "total_input_tokens": 127145,
-                        "total_output_tokens": 46582,
-                        "total_reasoning_tokens": 242602
+                        "accuracy": 0.942931,
+                        "benchmark_run_cost_usd": 13.38,
+                        "total_input_tokens": 99629,
+                        "total_output_tokens": 38144,
+                        "total_reasoning_tokens": 209494
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
                     "modelName": "gpt-6-astra",
@@ -31696,9 +31696,9 @@
                     "datasetFamily": "aggregate",
                     "datasetName": "aggregate",
                     "metrics": {
-                        "accuracy": 0.858934,
-                        "benchmark_run_cost_usd": 394.77,
-                        "index_metric": 0.858934
+                        "accuracy": 0.859445,
+                        "benchmark_run_cost_usd": 392.42,
+                        "index_metric": 0.859445
                     },
                     "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
                     "modelName": "gpt-6-astra",
@@ -31736,6 +31736,1734 @@
                     "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-astra/versions/2026-09-03",
                     "azure_latest_model_version": "2026-09-03",
                     "azure_model_name": "gpt-6-astra",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
+                        "accuracy": 0.842105,
+                        "benchmark_run_cost_usd": 0.28,
+                        "total_input_tokens": 835768,
+                        "total_output_tokens": 119556,
+                        "total_reasoning_tokens": 278836
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.711311,
+                        "benchmark_run_cost_usd": 1.25,
+                        "total_input_tokens": 603568,
+                        "total_output_tokens": 36924,
+                        "total_reasoning_tokens": 2344353
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.732,
+                        "benchmark_run_cost_usd": 0.1,
+                        "total_input_tokens": 314247,
+                        "total_output_tokens": 3228,
+                        "total_reasoning_tokens": 127737
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.546359,
+                        "benchmark_run_cost_usd": 0.71,
+                        "total_input_tokens": 372442,
+                        "total_output_tokens": 236749,
+                        "total_reasoning_tokens": 1099138
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.845238,
+                        "benchmark_run_cost_usd": 0.14,
+                        "total_input_tokens": 88370,
+                        "total_output_tokens": 41518,
+                        "total_reasoning_tokens": 221971
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 0.1,
+                        "output_token_cost_per_1M_tokens": 0.5,
+                        "quality_benchmark_cost": 3.54,
+                        "total_cost_per_1M_tokens": 0.2
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.901499,
+                        "benchmark_run_cost_usd": 0.11,
+                        "total_input_tokens": 127444,
+                        "total_output_tokens": 33870,
+                        "total_reasoning_tokens": 170311
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.545614,
+                        "benchmark_run_cost_usd": 0.84,
+                        "total_input_tokens": 174283,
+                        "total_output_tokens": 208219,
+                        "total_reasoning_tokens": 1428612
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.845982,
+                        "benchmark_run_cost_usd": 0.63,
+                        "total_input_tokens": 111222,
+                        "total_output_tokens": 42588,
+                        "total_reasoning_tokens": 1191634
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.882812,
+                        "benchmark_run_cost_usd": 0.1,
+                        "total_input_tokens": 81874,
+                        "total_output_tokens": 15889,
+                        "total_reasoning_tokens": 163238
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.846561,
+                        "benchmark_run_cost_usd": 0.07,
+                        "total_input_tokens": 238004,
+                        "total_output_tokens": 17162,
+                        "total_reasoning_tokens": 70244
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.865,
+                        "benchmark_run_cost_usd": 0.39,
+                        "total_input_tokens": 233215,
+                        "total_output_tokens": 68166,
+                        "total_reasoning_tokens": 674837
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.870257,
+                        "benchmark_run_cost_usd": 0.05,
+                        "total_input_tokens": 162893,
+                        "total_output_tokens": 5719,
+                        "total_reasoning_tokens": 64911
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 1,
+                        "benchmark_run_cost_usd": 0.02,
+                        "total_input_tokens": 37114,
+                        "total_output_tokens": 10428,
+                        "total_reasoning_tokens": 26331
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0,
+                        "benchmark_run_cost_usd": 0.01,
+                        "total_input_tokens": 2080,
+                        "total_output_tokens": 4156,
+                        "total_reasoning_tokens": 11324
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 0.5,
+                        "benchmark_run_cost_usd": 0.05,
+                        "total_input_tokens": 4324,
+                        "total_output_tokens": 29192,
+                        "total_reasoning_tokens": 77804
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "benchmark_run_cost_usd": 0.31,
+                        "f1": 0.884822,
+                        "total_input_tokens": 676220,
+                        "total_output_tokens": 69223,
+                        "total_reasoning_tokens": 420460
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.836606,
+                        "benchmark_run_cost_usd": 0.13,
+                        "total_input_tokens": 172054,
+                        "total_output_tokens": 9742,
+                        "total_reasoning_tokens": 219675
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.708333,
+                        "benchmark_run_cost_usd": 0.06,
+                        "total_input_tokens": 44623,
+                        "total_output_tokens": 3569,
+                        "total_reasoning_tokens": 111151
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.867069,
+                        "benchmark_run_cost_usd": 1.81,
+                        "total_input_tokens": 810040,
+                        "total_output_tokens": 14280,
+                        "total_reasoning_tokens": 3444701
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 197.68,
+                        "latency_mean_secs": 11.07,
+                        "latency_p50_secs": 11.07,
+                        "latency_p90_secs": 11.77,
+                        "latency_p95_secs": 11.93,
+                        "latency_p99_secs": 12.05,
+                        "latency_ttft_secs": 0.56,
+                        "throughput_gtps_token_count": 197.68,
+                        "throughput_rps_request_count": 0.09,
+                        "throughput_ttps_token_count": 300.96,
+                        "time_between_tokens_secs": 0.51
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "19",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "33:67",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.786352,
+                        "benchmark_run_cost_usd": 3.54,
+                        "index_metric": 0.786352
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 0.5,
+                        "index_metric": 0.5
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "modelName": "gpt-6-luna",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-luna/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-luna",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_safety",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "content_filter_enabled": true,
+                    "total_datasets": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "tau2_telecom",
+                    "datasetName": "tau2_telecom_inspectai",
+                    "metrics": {
+                        "accuracy": 0.929825,
+                        "benchmark_run_cost_usd": 5.39,
+                        "total_input_tokens": 827679,
+                        "total_output_tokens": 148329,
+                        "total_reasoning_tokens": 224795
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "6370844230ea6fee22c0d46c7359d56e44e25ed5",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "chembench",
+                    "datasetName": "chembench_inspect",
+                    "metrics": {
+                        "accuracy": 0.719569,
+                        "benchmark_run_cost_usd": 23.16,
+                        "total_input_tokens": 603568,
+                        "total_output_tokens": 36577,
+                        "total_reasoning_tokens": 2158932
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "a9c3dfd6ce0d539f81339e004978d167cf682a8d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "musr",
+                    "datasetName": "musr_inspect",
+                    "metrics": {
+                        "accuracy": 0.8,
+                        "benchmark_run_cost_usd": 2,
+                        "total_input_tokens": 313935,
+                        "total_output_tokens": 7182,
+                        "total_reasoning_tokens": 130227
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "1b4f3614d770a9ac2ded8995b6db9c46121bab39",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "frontierscience",
+                    "datasetName": "frontierscience_inspectai",
+                    "metrics": {
+                        "accuracy": 0.612528,
+                        "benchmark_run_cost_usd": 10.86,
+                        "total_input_tokens": 357918,
+                        "total_output_tokens": 228938,
+                        "total_reasoning_tokens": 785140
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "d0096af1ac960bbfc087fa6de368deaa47272e1d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench_medium",
+                    "datasetName": "livecodebench_medium",
+                    "metrics": {
+                        "accuracy": 0.910714,
+                        "benchmark_run_cost_usd": 1.99,
+                        "total_input_tokens": 88370,
+                        "total_output_tokens": 39813,
+                        "total_reasoning_tokens": 141170
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "05b5feb8afe0b97a1452b6d8f1503c28888291a8",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "input_token_cost_per_1M_tokens": 2,
+                        "output_token_cost_per_1M_tokens": 10,
+                        "quality_benchmark_cost": 54.63,
+                        "total_cost_per_1M_tokens": 4
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_cost"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "additional_info": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+                    "currency": "USD",
+                    "deployment_category": "azure_openai",
+                    "disclaimer": "Cost Calculation is indicative and may vary based on the actual usage and configuration.",
+                    "input_output_token_ratio": "3:1",
+                    "input_token_weightage_per_million": "750000",
+                    "output_token_weightage_per_million": "250000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigbench_hard",
+                    "datasetName": "bigbench_hard",
+                    "metrics": {
+                        "accuracy": 0.93469,
+                        "benchmark_run_cost_usd": 1.76,
+                        "total_input_tokens": 127444,
+                        "total_output_tokens": 31511,
+                        "total_reasoning_tokens": 119286
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "general_knowledge_misc",
+                    "dataset_leaderboard": "reasoning",
+                    "dataset_version": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "bigcodebench",
+                    "datasetName": "bigcodebench_instruct",
+                    "metrics": {
+                        "accuracy": 0.558772,
+                        "benchmark_run_cost_usd": 13.93,
+                        "total_input_tokens": 174283,
+                        "total_output_tokens": 206931,
+                        "total_reasoning_tokens": 1151005
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "78dceb21430359efa05c235324e10523453d7d2f",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "gpqa",
+                    "datasetName": "gpqa",
+                    "metrics": {
+                        "accuracy": 0.881696,
+                        "benchmark_run_cost_usd": 5.85,
+                        "total_input_tokens": 111222,
+                        "total_output_tokens": 38525,
+                        "total_reasoning_tokens": 524529
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "graduate_level_qa",
+                    "dataset_leaderboard": "qa",
+                    "dataset_version": "90b8e5be2b1d3d2dbfe016cdab47981150600c4a",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "livecodebench",
+                    "datasetName": "livecodebench",
+                    "metrics": {
+                        "accuracy": 0.929688,
+                        "benchmark_run_cost_usd": 1.04,
+                        "total_input_tokens": 81874,
+                        "total_output_tokens": 15437,
+                        "total_reasoning_tokens": 71820
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b073edc39361c7b8115dec97a3ce169949674e4d",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "0.1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mbpp",
+                    "datasetName": "mbppplus",
+                    "metrics": {
+                        "accuracy": 0.851852,
+                        "benchmark_run_cost_usd": 1.21,
+                        "total_input_tokens": 238004,
+                        "total_output_tokens": 15747,
+                        "total_reasoning_tokens": 57436
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "code_generation",
+                    "dataset_leaderboard": "coding",
+                    "dataset_version": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "3"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "mmlu_pro",
+                    "datasetName": "mmlu_pro",
+                    "metrics": {
+                        "accuracy": 0.887,
+                        "benchmark_run_cost_usd": 4.4,
+                        "total_input_tokens": 233215,
+                        "total_output_tokens": 62959,
+                        "total_reasoning_tokens": 330343
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "expert_level_general_knowledge",
+                    "dataset_leaderboard": "general_knowledge",
+                    "dataset_version": "014c8cf520218fc7f1ecec95c691a83ae5b8ba14",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "truthfulqa_mc1",
+                    "datasetName": "truthfulqa_mc1",
+                    "metrics": {
+                        "accuracy": 0.935129,
+                        "benchmark_run_cost_usd": 0.88,
+                        "total_input_tokens": 162893,
+                        "total_output_tokens": 5193,
+                        "total_reasoning_tokens": 50399
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "truthfulness_bias_detection",
+                    "dataset_leaderboard": "groundedness",
+                    "dataset_version": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+                    "evaluation_type": "text_generation",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_contextual",
+                    "metrics": {
+                        "attack_success_rate": 6,
+                        "benchmark_run_cost_usd": 0.49,
+                        "total_input_tokens": 37114,
+                        "total_output_tokens": 8295,
+                        "total_reasoning_tokens": 33651
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_contextual",
+                    "dataset_leaderboard": "harmbench_contextual",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_copyright_violations",
+                    "metrics": {
+                        "attack_success_rate": 0,
+                        "benchmark_run_cost_usd": 0.14,
+                        "total_input_tokens": 2080,
+                        "total_output_tokens": 3891,
+                        "total_reasoning_tokens": 9404
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_copyright_violations",
+                    "dataset_leaderboard": "harmbench_copyright_violations",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "harmbench",
+                    "datasetName": "harmbench_standard",
+                    "metrics": {
+                        "attack_success_rate": 2,
+                        "benchmark_run_cost_usd": 0.99,
+                        "total_input_tokens": 4324,
+                        "total_output_tokens": 21041,
+                        "total_reasoning_tokens": 77145
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "harmbench_standard",
+                    "dataset_leaderboard": "harmbench_standard",
+                    "dataset_version": "8e1604d1171fe8a48d8febecd22f600e462bdcdd",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "toxigen",
+                    "datasetName": "toxicity_detection",
+                    "metrics": {
+                        "benchmark_run_cost_usd": 7.58,
+                        "f1": 0.884048,
+                        "total_input_tokens": 676495,
+                        "total_output_tokens": 65886,
+                        "total_reasoning_tokens": 556783
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "toxicity_detection",
+                    "dataset_leaderboard": "toxicity_detection",
+                    "dataset_version": "ea082a8973a287097b17973343576e0c8da8eb3b",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_bio",
+                    "metrics": {
+                        "accuracy": 0.853103,
+                        "benchmark_run_cost_usd": 2.65,
+                        "total_input_tokens": 172054,
+                        "total_output_tokens": 9565,
+                        "total_reasoning_tokens": 220898
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_chem",
+                    "metrics": {
+                        "accuracy": 0.745098,
+                        "benchmark_run_cost_usd": 1.33,
+                        "total_input_tokens": 44623,
+                        "total_output_tokens": 3576,
+                        "total_reasoning_tokens": 120816
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "wmdp",
+                    "datasetName": "wmdp_cyber",
+                    "metrics": {
+                        "accuracy": 0.898792,
+                        "benchmark_run_cost_usd": 10.98,
+                        "total_input_tokens": 809558,
+                        "total_output_tokens": 13834,
+                        "total_reasoning_tokens": 922048
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "dataset_category": "knowledge_in_sensitive_domains",
+                    "dataset_leaderboard": "knowledge_in_sensitive_domains",
+                    "dataset_version": "bc5e1ba0367ea826caeeeaa50656336a1e87acfb",
+                    "evaluation_type": "text_generation_safety",
+                    "task": "chat-completion"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "evaluation_sampling_ratio": "1",
+                    "evaluation_split": "None",
+                    "fewshot_sampling_ratio": "1",
+                    "fewshot_split": "None",
+                    "n_shot": "0"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "synthetic",
+                    "datasetName": "synthetic",
+                    "metrics": {
+                        "index_metric": 93.03,
+                        "latency_mean_secs": 15.77,
+                        "latency_p50_secs": 15.77,
+                        "latency_p90_secs": 21.19,
+                        "latency_p95_secs": 21.76,
+                        "latency_p99_secs": 22.04,
+                        "latency_ttft_secs": 0.25,
+                        "throughput_gtps_token_count": 93.03,
+                        "throughput_rps_request_count": 0.06,
+                        "throughput_ttps_token_count": 162.72,
+                        "time_between_tokens_secs": 1.91
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_performance"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "deployment_category": "azure_openai",
+                    "deployment_type": "standard",
+                    "disclaimer": "For models which do not support streaming, time to first token (ttft) represents the P50 value of latency (time taken to receive the response)",
+                    "input_prompt_tokens": "1000",
+                    "num_of_inference_aggregations": "5",
+                    "num_of_inference_requests": "2",
+                    "num_parallel_inference_requests": "1",
+                    "output_generated_tokens": "2000",
+                    "payload_task_type": "chat_completion",
+                    "prompt_token_generated_token_ratio": "33:67",
+                    "region": "eastus2",
+                    "stream": "true",
+                    "tokens_rate_limit": "NaN",
+                    "total_token_length_per_request": "3000"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "accuracy": 0.827145,
+                        "benchmark_run_cost_usd": 54.63,
+                        "index_metric": 0.827145
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
+                    "azure_registry_name": "azure-openai",
+                    "evaluation_type": "text_quality",
+                    "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"
+                }
+            },
+            "properties": {
+                "properties": {
+                    "total_datasets": "21"
+                }
+            }
+        },
+        {
+            "annotations": {
+                "assetSpec": {
+                    "datasetFamily": "aggregate",
+                    "datasetName": "aggregate",
+                    "metrics": {
+                        "attack_success_rate": 2.666667,
+                        "index_metric": 2.666667
+                    },
+                    "modelAssetId": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "modelName": "gpt-6-sol",
+                    "modelVersion": "2026-09-22"
+                },
+                "tags": {
+                    "azure_latest_model_asset_id": "azureml://registries/azure-openai/models/gpt-6-sol/versions/2026-09-22",
+                    "azure_latest_model_version": "2026-09-22",
+                    "azure_model_name": "gpt-6-sol",
                     "azure_registry_name": "azure-openai",
                     "evaluation_type": "text_safety",
                     "recommended_models": "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5/versions/20250929;azureml://registries/azureml-xai/models/grok-4/versions/1;azureml://registries/azure-openai/models/gpt-5-pro/versions/2025-10-06;azureml://registries/azure-openai/models/o3-pro/versions/2025-06-10"

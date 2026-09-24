@@ -752,6 +752,7 @@
                 "EnableDenyNFTByDefault": true,
                 "EnableDtfRetryOn429": true,
                 "EnableExcludeInvalidRecipientTypesFromGroupMembership": true,
+                "EnableExcludeNotFoundUsersFromGroupMembership": true,
                 "EnableExtAuthCheckInNP": true,
                 "EnableExternalIdentitiesAlternatePaths": true,
                 "EnableExternallyAuthenticatedPropertySet": true,
@@ -1377,9 +1378,12 @@
             "EnableDynamicSuggestedPrompts": true,
             "EnableEarlyCoTFromGCB": false,
             "EnableEarlyResponsesForInvokeBot": true,
+            "EnableEarlySyntheticStepBeforeCallMetadata": true,
+            "EnableEarlyThinkingStepFromBot": true,
             "EnableFetchCallConversationData": true,
             "EnableGcBotTeamsSDKForProactiveFlow": true,
             "EnableGcBotTeamsSDKForReactiveFlow": true,
+            "EnableHITLStreamingUpdate": true,
             "EnableHumanInTheLoopApprovalFlow": true,
             "EnableImageUnderstanding": false,
             "EnableLIFTUserVoiceQuerySignal": true,
@@ -1404,15 +1408,19 @@
             "EnableRTAFJoinConversationForTwoPartyCalls": true,
             "EnableRTAFJoinRecoveryConversation": false,
             "EnableRTAFTranscriptFetch": true,
+            "EnableReactiveStreamingCoT": true,
             "EnableRerunOsdlStatementExecuteActivity": true,
             "EnableSendEventAllRecipientScope": true,
             "EnableSendEventPayloadValidation": true,
             "EnableSendMessageToCallParticipant": true,
             "EnableSessionStartOnEstablishedWithDedupe": true,
             "EnableSkipVerbalization": true,
+            "EnableStreamingLocalisation": true,
             "EnableStripUserQueryInClientMessage": true,
+            "EnableSuppressTypingAfterSyntheticStep": true,
             "EnableTaskManagementOpenNotes": true,
             "EnableTrackingActiveCallRoster": true,
+            "EnableUpdateThinkingOnError": true,
             "EnableUsingBotNameFromContext": true,
             "HideRequestAgendaButton": true,
             "LiftTriggerInterval": 100,
@@ -1807,6 +1815,16 @@
                 },
                 {
                     "Flight": "EnableV8PromptTaskStructureFix",
+                    "IsEnabled": true
+                }
+            ],
+            "Engager": [
+                {
+                    "Flight": "IntentPlus.EnableEngager",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.SkipDuplicatePrepareContext",
                     "IsEnabled": true
                 }
             ],
@@ -2402,6 +2420,28 @@
                 },
                 {
                     "Flight": "ChannelAgent.enableGuardProfileBotDowngrade",
+                    "IsEnabled": true
+                }
+            ],
+            "ReactiveStreamingCoT": [
+                {
+                    "Flight": "IntentPlus.EnableAgenticStreaming",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnablePreparingResponseStep",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnableStreamingCoTStatus",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnableEngagerCancelStreaming",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "IntentPlus.EnableRespondDirectlyIteration",
                     "IsEnabled": true
                 }
             ],
@@ -4773,6 +4813,7 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
+        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
