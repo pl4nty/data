@@ -34,46 +34,53 @@ do
   if not l_0_3.name then
     return mp.CLEAN
   end
-  local l_0_12 = l_0_3.name
-  if l_0_3.publisher and l_0_3.publisher ~= "" then
-    l_0_12 = l_0_3.publisher .. "." .. l_0_3.name
-  end
-  local l_0_13, l_0_14 = startTrackingApp(l_0_0.ppid, "VSCodeExtension" .. l_0_12, "programfiles_targeted", "PFAppTracked")
-  if not l_0_13 then
-    (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(l_0_14))
-  else
-    if l_0_14.IsNewApp then
-      l_0_14.SignatureName = "Bm/PFApp_SuspVSExt.A"
-      ;
-      (bm.trigger_sig)("SetProcessAttrib", safeJsonSerialize(l_0_14))
-    end
-  end
+  local l_0_12 = safeJsonSerialize(l_0_3)
   do
-    local l_0_15, l_0_16 = (bm.get_imagepath)() or ""
-    -- DECOMPILER ERROR at PC110: Confused about usage of register: R10 in 'UnsetPending'
-
-    local l_0_17 = nil
-    local l_0_18 = (l_0_15:match("([^\\]+)$"))
-    local l_0_19 = nil
-    if (mp.GetParentProcInfo)() and ((mp.GetParentProcInfo)()).image_path then
-      l_0_19 = (((mp.GetParentProcInfo)()).image_path):match("([^\\]+)$")
+    if l_0_12 then
+      local l_0_13 = 2592000
+      AppendToRollingQueue("InstalledExtensions_VSCode", l_0_12, 1, l_0_13, 500, 1)
     end
-    if not l_0_19 then
-      l_0_19 = "None"
+    local l_0_14 = l_0_3.name
+    if l_0_3.publisher and l_0_3.publisher ~= "" then
+      l_0_14 = l_0_3.publisher .. "." .. l_0_3.name
     end
-    if l_0_18 then
-      local l_0_20 = nil
-      local l_0_21 = {ProcessName = l_0_18, ParentName = l_0_19, SignatureName = "Bm/PFApp_SuspVSExtension.A", AttributeName = "PFAppTracked", AttributeCategory = "programfiles_targeted", TrackedProcess = "VSCodeExtensions" .. l_0_12, Commandline = l_0_2, ExtensionInfo = l_0_12}
-      local l_0_22, l_0_23, l_0_24 = , AnomalyTableCheck("Appomaly_ChildProcName_2", l_0_12 .. "_" .. l_0_18, 30, "MarkerRecord_VSCodeExtensions" .. l_0_12)
-      if l_0_23 and not l_0_24 then
-        l_0_21.AnomalyTableName = "Appomaly_ChildProcName_2"
-        l_0_21.AnomalyTableInfo = l_0_12 .. "_" .. l_0_18
+    local l_0_15, l_0_16 = startTrackingApp(l_0_0.ppid, "VSCodeExtension" .. l_0_14, "programfiles_targeted", "PFAppTracked")
+    if not l_0_15 then
+      (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(l_0_16))
+    else
+      if l_0_16.IsNewApp then
+        l_0_16.SignatureName = "Bm/PFApp_SuspVSExt.A"
         ;
-        (bm.trigger_sig)("PFAppChildProc_VSCodeExt", safeJsonSerialize(l_0_21))
+        (bm.trigger_sig)("SetProcessAttrib", safeJsonSerialize(l_0_16))
       end
     end
     do
-      return mp.CLEAN
+      local l_0_17, l_0_18 = (bm.get_imagepath)() or ""
+      -- DECOMPILER ERROR at PC124: Confused about usage of register: R11 in 'UnsetPending'
+
+      local l_0_19 = nil
+      local l_0_20 = (l_0_17:match("([^\\]+)$"))
+      local l_0_21 = nil
+      if (mp.GetParentProcInfo)() and ((mp.GetParentProcInfo)()).image_path then
+        l_0_21 = (((mp.GetParentProcInfo)()).image_path):match("([^\\]+)$")
+      end
+      if not l_0_21 then
+        l_0_21 = "None"
+      end
+      if l_0_20 then
+        local l_0_22 = nil
+        local l_0_23 = {ProcessName = l_0_20, ParentName = l_0_21, SignatureName = "Bm/PFApp_SuspVSExtension.A", AttributeName = "PFAppTracked", AttributeCategory = "programfiles_targeted", TrackedProcess = "VSCodeExtensions" .. l_0_14, Commandline = l_0_2, ExtensionInfo = l_0_14}
+        local l_0_24, l_0_25, l_0_26 = , AnomalyTableCheck("Appomaly_ChildProcName_2", l_0_14 .. "_" .. l_0_20, 30, "MarkerRecord_VSCodeExtensions" .. l_0_14)
+        if l_0_25 and not l_0_26 then
+          l_0_23.AnomalyTableName = "Appomaly_ChildProcName_2"
+          l_0_23.AnomalyTableInfo = l_0_14 .. "_" .. l_0_20
+          ;
+          (bm.trigger_sig)("PFAppChildProc_VSCodeExt", safeJsonSerialize(l_0_23))
+        end
+      end
+      do
+        return mp.CLEAN
+      end
     end
   end
 end

@@ -158,7 +158,7 @@ end
 local l_0_3 = (versioning.GetEngineRing)()
 -- DECOMPILER ERROR at PC295: Overwrote pending register: R2 in 'AssignReg'
 
-if l_0_3 <= versioning.ENGINE_RING_2_PREVIEW then
+if l_0_3 <= versioning.ENGINE_RING_3_STAGED then
   l_0_1 = pcall(function()
   -- function num : 0_0
   local l_1_0 = function(l_2_0)

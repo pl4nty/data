@@ -13,8 +13,11 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
   if l_0_2 then
     (bm.add_related_string)("DeviceInfo", safeJsonSerialize(l_0_2), bm.RelatedStringBMReport)
   end
+  if l_0_1.AppName and contains(l_0_1.AppName, "VSCode") then
+    l_0_1.InstalledExtensions = GetRollingQueueKeysAsString("InstalledExtensions_VSCode")
+  end
   ;
-  (bm.add_related_string)("AdditionalInfo", l_0_0, bm.RelatedStringBMReport)
+  (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_1), bm.RelatedStringBMReport)
   if l_0_1.Score and l_0_1.Score > 30 then
     local l_0_3 = function()
   -- function num : 0_0
@@ -129,17 +132,17 @@ end
                             ;
                             (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_23))
                             do break end
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out DO_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out IF_STMT
 
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out DO_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out DO_STMT
 
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                            -- DECOMPILER ERROR at PC178: LeaveBlock: unexpected jumping out IF_STMT
+                            -- DECOMPILER ERROR at PC193: LeaveBlock: unexpected jumping out IF_STMT
 
                           end
                         end
@@ -173,17 +176,17 @@ end
                                   ;
                                   (bm.trigger_sig)("Remediation_AnomalyMultiStage", safeJsonSerialize(l_0_36))
                                   do break end
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out IF_STMT
 
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out DO_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out DO_STMT
 
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                                  -- DECOMPILER ERROR at PC240: LeaveBlock: unexpected jumping out IF_STMT
+                                  -- DECOMPILER ERROR at PC255: LeaveBlock: unexpected jumping out IF_STMT
 
                                 end
                               end
@@ -193,14 +196,14 @@ end
                       end
                     end
                   end
-                  -- DECOMPILER ERROR at PC243: Confused about usage of register R12 for local variables in 'ReleaseLocals'
+                  -- DECOMPILER ERROR at PC258: Confused about usage of register R12 for local variables in 'ReleaseLocals'
 
                 end
-                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC258: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                -- DECOMPILER ERROR at PC258: LeaveBlock: unexpected jumping out IF_ELSE_STMT
 
-                -- DECOMPILER ERROR at PC243: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC258: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
