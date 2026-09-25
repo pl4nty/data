@@ -29,6 +29,9 @@ if l_0_0 ~= nil then
       if l_0_4:find("\\\\ossec-agent\\\\", 1, true) then
         return mp.CLEAN
       end
+      if l_0_4:find("get-gytlocaluserpasschng", 1, true) and l_0_4:find("convertto-gytjson", 1, true) and l_0_4:find("join-path -path (get-location) -childpath temp", 1, true) then
+        return mp.CLEAN
+      end
     end
   end
 end

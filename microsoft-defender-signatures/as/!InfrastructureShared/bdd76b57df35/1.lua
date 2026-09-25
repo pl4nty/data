@@ -21,7 +21,7 @@ local l_0_2 = {}
 
 -- DECOMPILER ERROR at PC31: Overwrote pending register: R5 in 'AssignReg'
 
-if not ("mozilla")("chrome", "AppleWebKit") then
+if not ("mozilla")("chrome", "applewebkit") then
   return mp.CLEAN
 end
 return mp.INFECTED
