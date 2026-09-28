@@ -156,9 +156,9 @@ if not l_0_1 then
   end
 end
 local l_0_3 = (versioning.GetEngineRing)()
--- DECOMPILER ERROR at PC295: Overwrote pending register: R2 in 'AssignReg'
+-- DECOMPILER ERROR at PC308: Overwrote pending register: R2 in 'AssignReg'
 
-if l_0_3 <= versioning.ENGINE_RING_3_STAGED then
+if l_0_3 <= versioning.ENGINE_RING_3_STAGED or l_0_3 == versioning.ENGINE_RING_4_BROAD and (MpCommon.IsSampled)(1000, false, true, true) then
   l_0_1 = pcall(function()
   -- function num : 0_0
   local l_1_0 = function(l_2_0)
