@@ -257,7 +257,6 @@
         "EnableLlmProxyConsumerServing": true,
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
-        "EnableWorkflowModelAccess": true,
         "EnabledModels": [
             {
                 "context_window": 1000000,
@@ -629,7 +628,23 @@
                 "workflow": "CodeTab"
             },
             {
+                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
+                "workflow": "CodeTab"
+            },
+            {
+                "appId": "7acd1687-fdfb-43f1-814d-f3e8bb8d604a",
+                "workflow": "CodeTab"
+            },
+            {
                 "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
+                "workflow": "GitHubCopilot"
+            },
+            {
+                "appId": "5ecc71bb-0fa6-4d6b-a31b-de12184c4b1a",
                 "workflow": "GitHubCopilot"
             },
             {
@@ -637,12 +652,8 @@
                 "workflow": "GitHubCopilot"
             },
             {
-                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
-                "workflow": "CodeTab"
-            },
-            {
-                "appId": "94c63fef-13a3-47bc-8074-75af8c65887a",
-                "workflow": "CodeTab"
+                "appId": "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
+                "workflow": "GitHubCopilot"
             }
         ],
         "chat_default": [

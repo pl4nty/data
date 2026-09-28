@@ -793,8 +793,9 @@
         "name": "ClineVsCodeExtension",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "4.1.19",
+        "version": "4.1.21",
         "versions": [
+            "4.1.21",
             "4.1.19",
             "4.1.17",
             "4.1.16",
@@ -879,8 +880,9 @@
         "name": "GitHubCopilotCli",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "1.0.86",
+        "version": "1.0.88",
         "versions": [
+            "1.0.88",
             "1.0.86",
             "1.0.83",
             "1.0.82",
@@ -1395,8 +1397,9 @@
         "name": "PowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "7.5.4",
+        "version": "7.6.6",
         "versions": [
+            "7.6.6",
             "7.5.4"
         ]
     },

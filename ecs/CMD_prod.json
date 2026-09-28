@@ -624,6 +624,7 @@
         "EnableParseExtensionResultFromInstanceView": true,
         "EnablePartnerAgent": true,
         "EnablePartnerCUAForPlcy": true,
+        "EnablePartnerUserEntityDataReporting": true,
         "EnablePassOperatorUpn": true,
         "EnablePermissionCheckInAutopilot": true,
         "EnablePersistProvisionRecipeInCpcLevelForWorkspace": true,

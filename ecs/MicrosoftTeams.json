@@ -113,10 +113,16 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
+        "dmsSuppressionConfig": {
+            "dms420ScopedToDmsOnly": false,
+            "dmsOperationsSuppressed": false,
+            "unifiedEnrollmentPredicateEnabled": false
+        },
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
         },
+        "frequencyHours": 4,
         "healthSignalConfig": {
             "appconnectivity": {
                 "isEnabled": true,
@@ -150,6 +156,8 @@
                 }
             }
         },
+        "jitterEnabled": true,
+        "jitterMaxMinutes": 10,
         "partnerAppSettingsMapping": {
             "Admin.ScreenCapture": "Admin.ScreenCapture",
             "DateTime.DateFormat": "DateTime.DateFormat",
@@ -857,6 +865,12 @@
             "adminRolePrepinnedAppIds": [],
             "userClassificationType": "",
             "userRolePrepinnedAppIds": []
+        }
+    },
+    "MicrosoftTeamsUserProfileSvc": {
+        "EnableChannelRosterListing": true,
+        "SettingsOverride": {
+            "EnableChannelRosterListing": true
         }
     },
     "MicrosoftTeamsVerticalsFLW": {
@@ -3076,7 +3090,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026080701"
+        "buildVersion": "2026082801"
     },
     "TeamsInfoProtectionAuditService": {
         "rootSettingConfig": {
@@ -4813,7 +4827,6 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
-        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },

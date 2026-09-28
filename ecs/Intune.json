@@ -3,6 +3,7 @@
         "remoteHelp.feature.unattendedOverlayWindow": true
     },
     "CLI_AOSP": {
+        "4d6f1393-53d2-4c12-8937-f21632cae74f": true,
         "8ee74127-8935-40ed-a0fc-388605eb8ba7": true,
         "DexguardRasp_Enabled": true,
         "RequiredApps_ProcessRequiredApps_FeatureEnabled": true,
@@ -132,6 +133,14 @@
         },
         "RemediationSendResultFirst": {
             "FlightExpiry": "2025-04-28T00:00:00.0402432Z",
+            "FlightValue": true
+        },
+        "RunNontrackedAppsCheckinImmediatelyAfterDpp": {
+            "FlightExpiry": "2027-03-17T00:00:00.0402432Z",
+            "FlightValue": true
+        },
+        "RunNontrackedAppsCheckinImmediatelyAfterEsp": {
+            "FlightExpiry": "2027-03-17T00:00:00.0402432Z",
             "FlightValue": true
         },
         "SetIMELogACL": {
@@ -425,6 +434,7 @@
             "EnableWorkProfileMtdAppRequiredForSetup": true,
             "EnableWpDeviceTypeUpdate": true,
             "EnrollmentNotificationsEnabled": true,
+            "LogCalculatedPolicyDeltaEnabled": true,
             "LtwBatteryOptimizationForByodWpBlockEnabled": true,
             "LtwBatteryOptimizationForDoBlockEnabled": true,
             "ModifyDeviceUserParallelBatchSize": 100,
@@ -438,9 +448,11 @@
             "AESCustomCC": true,
             "DPSUseEGATsForAppsTargeting": true,
             "DisableMTGlobalAppSearch": true,
+            "DropIsDeleteEGAT": true,
             "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "EnableEamEvergreenGraph": true,
+            "EnableFnlCacheService": true,
             "EnableTargetingPayloadChangePublisher": true,
             "EnableTargetingPayloadChangeScopeTagPublish": true,
             "EnableWinGetAppRepositoryDetail": true,
@@ -511,6 +523,7 @@
             "EnableRiskScoreOptimization": true,
             "EnableSideCarPolicyResultEnqueueDedupe": true,
             "EnabledCustomComplianceForMacOS": true,
+            "FallBackToPrimaryUserForComplianceCalculation": true,
             "IgnorePCWithDifferentAADDeviceId": true,
             "LocMsgScopeTagAuthZ": true,
             "MigratePartnerDeviceAttributeToMB": true,
@@ -753,6 +766,12 @@
             "DisableCartToClassAssociations": true
         }
     },
+    "SVC_ICS": {
+        "FlightingV2": {
+            "DisableWatchdogApplicationUpgradePolling": true,
+            "EnableHealthReportApplicationUpgradeReporting": true
+        }
+    },
     "SVC_IDS": {
         "FlightingV2": {
             "SyncDaemonUseNewStorageWrapper": true
@@ -904,6 +923,7 @@
             "EGMDirectPnsV2SidecarNotifications": true,
             "EGSmartDrop": true,
             "EnableFnlEgLaneBatchPublishing": true,
+            "EnableMdmFnlCacheService": true,
             "FireAndForgetNotificationQueueProcessor": false,
             "NCSDelayBetweenBatches": 25,
             "NCSSqlAggParallelCount": 3,
