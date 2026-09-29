@@ -3,6 +3,7 @@
         "remoteHelp.feature.unattendedOverlayWindow": true
     },
     "CLI_AOSP": {
+        "24ddcfc8-01e7-4d0f-ab9a-18faf172b366": true,
         "4d6f1393-53d2-4c12-8937-f21632cae74f": true,
         "8ee74127-8935-40ed-a0fc-388605eb8ba7": true,
         "DexguardRasp_Enabled": true,
@@ -215,6 +216,7 @@
     },
     "INFRA_Auth": {
         "FlightingV2": {
+            "MBEnableProcessorClientSdkV3": true,
             "MBV1StorageWrapperUseEntraAuth": true,
             "UseFic": true,
             "UseManagedIdentity": true
@@ -511,6 +513,7 @@
             "EGM_UseRedisCache": true,
             "EnableAadDeviceChangeDedup": true,
             "EnableAndroidWorkPoliciesLookupForAMAPIMigratedDevices": true,
+            "EnableBYOCPartnerCompliance": true,
             "EnableCleanUp": true,
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
@@ -522,6 +525,7 @@
             "EnableRegisteredMtdPartnersJson": true,
             "EnableRiskScoreOptimization": true,
             "EnableSideCarPolicyResultEnqueueDedupe": true,
+            "EnableWritePartnerTenantItemDisplayName": true,
             "EnabledCustomComplianceForMacOS": true,
             "FallBackToPrimaryUserForComplianceCalculation": true,
             "IgnorePCWithDifferentAADDeviceId": true,
@@ -862,7 +866,8 @@
     "SVC_OAuth": {
         "FlightingV2": {
             "EnableCertReplacementBackgroundTask": true,
-            "EnforceExpiredCertificateChainValidation": true
+            "EnforceExpiredCertificateChainValidation": true,
+            "EnforceExpiredUdaCertificateValidation": true
         }
     },
     "SVC_Pivot": {
@@ -906,6 +911,7 @@
             "EnableAndroidScepV2FlightingV2": true,
             "EnableDeleteProfileInstanceEarlyReturn": true,
             "EnableIOSWiredNetwork": true,
+            "EnableSharedIPadChannelApplicabilityCheckForWiFi": true,
             "ImportPFXRemediation": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true,
             "WindowsWifiWpa3ComplianceFix": true
@@ -976,11 +982,16 @@
     "Sidecar_Mac": {
         "BatchPolicyReporting_MinInterval": 10,
         "BatchPolicyReporting_SleepTime": 80,
+        "ExpeditedSync_Cadence": 900,
+        "ExpeditedSync_Window": 7200,
         "PipelinedFullSync_Cadence": 28800,
+        "RapidSync_Cadence": 180,
+        "RapidSync_Window": 900,
         "app_policy_reporting_retry": true,
         "customer_script_timeout": 3600,
         "enable_afd_connectivity_ip_range": false,
         "enable_app_decryption_integrity_check": false,
+        "enable_pipelined_enrollment_cadence": true,
         "internal_script_timeout": 3600,
         "log_golden_client_signal": true,
         "store_adhoc_script_result": true,

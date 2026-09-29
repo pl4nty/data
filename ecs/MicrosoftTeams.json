@@ -113,11 +113,6 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
-        "dmsSuppressionConfig": {
-            "dms420ScopedToDmsOnly": false,
-            "dmsOperationsSuppressed": false,
-            "unifiedEnrollmentPredicateEnabled": false
-        },
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
@@ -1854,6 +1849,20 @@
                     "IsEnabled": true
                 }
             ],
+            "GCBLIFTGASkillParity": [
+                {
+                    "Flight": "LIFT.enableTaskManagementSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "LIFT.enableInteractiveTaskManagementSkill",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "LIFT.enableMarsSkill",
+                    "IsEnabled": true
+                }
+            ],
             "GraphChannelMD": [
                 {
                     "Flight": "ChannelAgent.enableGraphChannelMd",
@@ -2305,6 +2314,14 @@
             "OdspFiles": [
                 {
                     "Flight": "Teams.PA.useOdspLightweightWorkflow",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableCustomSharePointUrlForSearchFileContents",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableOptimizedUserQueryForSearchFileContents",
                     "IsEnabled": true
                 }
             ],
@@ -4827,6 +4844,7 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
+        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },

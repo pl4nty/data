@@ -471,6 +471,7 @@
         "EnableFailedPoolReprovision": true,
         "EnableFallbackFLDHibernateEligibilityCheck": false,
         "EnableFallbackToLegacyDomainV2": true,
+        "EnableFedRampRegionEnforcement": true,
         "EnableFetchANCWithInformationalStatus": true,
         "EnableFetchSourceImagesByUserToken": true,
         "EnableFidalgo7DayActionTtl": true,
@@ -920,7 +921,6 @@
         "FlexConfigurationLicenseBufferEnabled": false,
         "FlexConfigurationLicenseBufferPatchEnabled": true,
         "FlightOfOCEServiceCustomerLockbox": true,
-        "FlightPITScheduleGracefulStop": true,
         "FlightingAvoidVHDDuplicateProv": true,
         "FlightingEnableNATGatewayV2": true,
         "Flighting_Enable_VMWareBrandingV2": true,
@@ -1207,8 +1207,7 @@
         "ShowClientBrokerOnAdminActions": true,
         "SplitConfig": true,
         "TenantSettingApi": true,
-        "UseDlsAutopatchHostNames": true,
-        "UseScaleUnitForDssTenant": true
+        "UseDlsAutopatchHostNames": true
     },
     "Segmentation": {
         "FrontierAdminAudience": "None",
