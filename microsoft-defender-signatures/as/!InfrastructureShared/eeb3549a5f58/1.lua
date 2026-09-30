@@ -50,6 +50,7 @@ l_0_1["Trojan:Win64/Stealc.ZY!sms"] = true
 l_0_1["PWS:Win64/StealC.STA!sms"] = true
 l_0_1["Trojan:Win64/Petwosel.A!sms"] = true
 l_0_1["Trojan:Win64/Vidar.SB!sms"] = true
+l_0_1["Trojan:Win64/RemusStealer.ZZ!sms"] = true
 local l_0_2 = true
 if not l_0_1[l_0_0.utf8p2] then
   l_0_2 = false
@@ -62,28 +63,28 @@ do
         local l_0_8 = ((sigattr_tail[l_0_7]).utf8p2):lower()
         if l_0_8 then
           local l_0_9 = {}
-          -- DECOMPILER ERROR at PC90: No list found for R9 , SetList fails
+          -- DECOMPILER ERROR at PC91: No list found for R9 , SetList fails
 
-          -- DECOMPILER ERROR at PC91: Overwrote pending register: R10 in 'AssignReg'
+          -- DECOMPILER ERROR at PC92: Overwrote pending register: R10 in 'AssignReg'
 
           if ("trojan:win64/stealc.zy")(l_0_8, l_0_9) then
             do
               do
                 l_0_2 = true
                 do break end
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC99: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC100: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
