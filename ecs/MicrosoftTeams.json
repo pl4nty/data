@@ -1783,7 +1783,7 @@
             ],
             "EnableTMGpt56": [
                 {
-                    "Flight": "TM.gpt56ReasoningNanoLunaModel",
+                    "Flight": "TM.freeSummaryV6AB",
                     "IsEnabled": true
                 }
             ],
@@ -2381,6 +2381,14 @@
                 },
                 {
                     "Flight": "ChannelAgent.DisableOldTools",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableCsaChannelSharePoint",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "ChannelAgent.enableCsaChannelSharePointGraphFallback",
                     "IsEnabled": true
                 }
             ],
@@ -4844,7 +4852,6 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
-        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
@@ -6098,7 +6105,8 @@
             "Enabled": "true",
             "EnabledBotIds": [
                 "28:3914e2ec-62b6-4dec-96c1-5710a9c532ef",
-                "28:3cf96df7-3ecf-460a-a065-d1ca251969e4"
+                "28:3cf96df7-3ecf-460a-a065-d1ca251969e4",
+                "28:8e55a7b1-6766-4f0a-8610-ecacfe3d569a"
             ]
         },
         "CNS": {

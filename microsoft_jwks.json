@@ -2,6 +2,18 @@
     {
         "cloud_instance_name": "microsoftonline.com",
         "e": "AQAB",
+        "kid": "T5h40q7G0x49qn41lM9-kKjpD98",
+        "kty": "RSA",
+        "n": "h-dfsnnMYCpMzLVrFHsKhk0NbrA66W2GLwyDUdJAr6LVy4FP1xOok1mF1lFRZukn2EEkvBPhYrIKN-MJ7Hex8jxCTg3gpwH-XnCljO2oAoKy9jcyiWiz2rdptgsjzBKwTczTyWDmtK_E5228ytLkl56IqQK4-M6hspF2XONqx6sdluHawCC_MjIyUTjDujKlmwSDTrY7IKqYrYp06t03L6zXlCvQStmq7cudkBklmXdtiDbd1XjABTRQsuAy8XQh0eURza2Yig0V12uLD9f_AbFfA_dDBJJB3lt3KUraa_u0kTqvk3bKiT4EsqK9WjzuqPDY99LRutj4hktXIc6UAQ",
+        "use": "sig",
+        "x5c": [
+            "MIIC/TCCAeWgAwIBAgIIArPrhc7Y5hUwDQYJKoZIhvcNAQELBQAwLTErMCkGA1UEAxMiYWNjb3VudHMuYWNjZXNzY29udHJvbC53aW5kb3dzLm5ldDAeFw0yNjA4MTAwMzAyMzBaFw0zMTA4MTAwMzAyMzBaMC0xKzApBgNVBAMTImFjY291bnRzLmFjY2Vzc2NvbnRyb2wud2luZG93cy5uZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCH51+yecxgKkzMtWsUewqGTQ1usDrpbYYvDINR0kCvotXLgU/XE6iTWYXWUVFm6SfYQSS8E+Fisgo34wnsd7HyPEJODeCnAf5ecKWM7agCgrL2NzKJaLPat2m2CyPMErBNzNPJYOa0r8TnbbzK0uSXnoipArj4zqGykXZc42rHqx2W4drAIL8yMjJROMO6MqWbBINOtjsgqpitinTq3TcvrNeUK9BK2arty52QGSWZd22INt3VeMAFNFCy4DLxdCHR5RHNrZiKDRXXa4sP1/8BsV8D90MEkkHeW3cpStpr+7SROq+TdsqJPgSyor1aPO6o8Nj30tG62PiGS1chzpQBAgMBAAGjITAfMB0GA1UdDgQWBBSGKudLp0FXldg5o68A2QCBEn1iaDANBgkqhkiG9w0BAQsFAAOCAQEAhqM/rH+0Cqnv1mTA0bhKkIg/8O+t2XzPinNQcb51Cru6StqKqKGfMYODryFM1FfDpQyGsclE52tnLdCQ/3CaTTXdifOQ3cK9PWtxImCWmKYttFqMJz9lSPBnW+4o2G6R+wv8GsxQcUa8igDcQnNWMbugbWLHLH752A6ij/akLESCwjJWEbMhAw/KRMNWQOjscQHXZ4SY03zlo1ByeWaKAqjZQw06nOkfszySXe7gVtKMMaifI+94cqQnvT++4ve7RHNZeXDuIVJwtzMDCV44Ds/VgPDzO4hvTugnZuO3z0mR3WLFzYusEx0O+co5rScuJMjc7SrFHdYPeckpfoN5EA=="
+        ],
+        "x5t": "T5h40q7G0x49qn41lM9-kKjpD98"
+    },
+    {
+        "cloud_instance_name": "microsoftonline.com",
+        "e": "AQAB",
         "kid": "SNaVJx8A_IYwib6ITN46_ejclXw",
         "kty": "RSA",
         "n": "od8oLPkg6Gb8m3r1pOBukfonwpZ7Rg5d6jdc1KdskOpTRFdjXfMhm27LaVfXNwsX0brUwNH8IENbYRLZ789WFTtxgEBn_nCMhzlYAyXXCutNlAKNofjGE7VatW_r5EO9XQTAk9wtuWz_RgExmUtfj0AHwgUvksU2NdxxilcsogCc3VMm3lwO0S2RCaH1pNQYyBcMdKW-tlrfsKWZ3alKbHhqIUgIGXxWXYme33z3_t7DIz_lzzxvA1CbbZ1fbLWbF_3Bsi_0adYuVCoLcTkWAP_6KMkhb6S8CFx5-Nwm4WtlklS0vufIv0srUE6KbtzSxvzj6yVpa4vxR8KhNAZs_w",

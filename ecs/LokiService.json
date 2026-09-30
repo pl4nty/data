@@ -1091,6 +1091,7 @@
         "EnableLlmInsights": false,
         "EnableLlmProxyConsumerMetering": true,
         "EnableLlmProxyConsumerServing": true,
+        "EnableLlmProxyToolCallBuckets": true,
         "EnableLokiOdspTempAuthPreviewMitigation": true,
         "EnableLokiQueryAnnouncementsScenario": true,
         "EnableM365AdminConsumption": true,
@@ -1650,6 +1651,22 @@
         "IsLinkedInHighlightsTelemetryEnabled": true,
         "IsNotifyEmailEnabled": true,
         "KeepAliveMax": 100,
+        "KnownToolCallBuckets": {
+            "tools": {
+                "WebGrounding-browse": "tool-web-search-v1",
+                "WebGrounding-web": "tool-web-search-v1",
+                "WorkIQ-call_function": "tool-graph-api-v1",
+                "WorkIQ-create_entity": "tool-graph-api-v1",
+                "WorkIQ-delete_entity": "tool-graph-api-v1",
+                "WorkIQ-fetch": "tool-graph-api-v1",
+                "WorkIQ-fetch_blob": "tool-graph-api-v1",
+                "WorkIQ-search_paths": "tool-graph-api-v1",
+                "WorkIQ-update_entity": "tool-graph-api-v1",
+                "web_fetch": "tool-web-search-v1",
+                "web_search": "tool-web-search-v1"
+            },
+            "version": 1
+        },
         "LPCConfigProviderRefactoring": false,
         "LPCV2BundleName": "lpcwebvanilla",
         "LinkedInAuthRedirectUrl": "https://loki.delve.office.com/linkedInAuthRedirect.aspx",

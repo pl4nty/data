@@ -513,7 +513,6 @@
             "EGM_UseRedisCache": true,
             "EnableAadDeviceChangeDedup": true,
             "EnableAndroidWorkPoliciesLookupForAMAPIMigratedDevices": true,
-            "EnableBYOCPartnerCompliance": true,
             "EnableCleanUp": true,
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
@@ -928,6 +927,7 @@
         "FlightingV2": {
             "EGMDirectPnsV2SidecarNotifications": true,
             "EGSmartDrop": true,
+            "EnableEgCacheInExternalProcessor": true,
             "EnableFnlEgLaneBatchPublishing": true,
             "EnableMdmFnlCacheService": true,
             "FireAndForgetNotificationQueueProcessor": false,

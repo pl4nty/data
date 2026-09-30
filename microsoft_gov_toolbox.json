@@ -356,8 +356,9 @@
         "name": "AzCopy",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "10.32.4",
+        "version": "10.32.8",
         "versions": [
+            "10.32.8",
             "10.32.4",
             "10.32.3",
             "10.31.0",
