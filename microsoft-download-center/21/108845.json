@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Azure App Service on Azure Stack Hub 26R1",
+    "downloadDescription": "Azure App Service on Azure Stack Hub 26R1 update",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppServiceOfflineInstallationPackage.102.20.2.zip",
+            "url": "https://download.microsoft.com/download/c5293925-3f6c-4c7c-92dd-342ace1bef1f/AppServiceOfflineInstallationPackage.102.20.2.zip",
+            "size": "15967644317",
+            "version": "102.20.2",
+            "datePublished": "9/28/2026 7:32:26 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AppService.exe",
+            "url": "https://download.microsoft.com/download/c5293925-3f6c-4c7c-92dd-342ace1bef1f/AppService.exe",
+            "size": "6262664",
+            "version": "102.20.2",
+            "datePublished": "9/28/2026 7:32:26 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServiceHelperScripts.zip",
+            "url": "https://download.microsoft.com/download/c5293925-3f6c-4c7c-92dd-342ace1bef1f/AppServiceHelperScripts.zip",
+            "size": "83602",
+            "version": "102.20.2",
+            "datePublished": "9/28/2026 7:32:26 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure App Service on Azure Stack Hub 26R1 update with platform updates and application stack updates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "102.20.2",
+    "detailsSection_file_name": [
+        "AppServiceOfflineInstallationPackage.102.20.2.zip",
+        "AppService.exe",
+        "AppServiceHelperScripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.9 GB",
+        "6.0 MB",
+        "81.6 KB"
+    ],
+    "detailsSection_file_date": "9/28/2026",
+    "systemRequirementsSection": "Azure Stack Hub",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "https://go.microsoft.com/fwlink/?LinkId=2375909",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108845",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

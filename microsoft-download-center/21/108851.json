@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "CU 62 NAV 2017 W1 30713",
+    "downloadDescription": "Hotfix for NAV 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CU 62 NAV 2017 W1 30713.zip",
+            "url": "https://download.microsoft.com/download/2aa9f979-cf23-4c1e-a288-929afb6a4883/CU 62 NAV 2017 W1 30713.zip",
+            "size": "143390900",
+            "version": "30713",
+            "datePublished": "9/29/2026 9:37:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hotfix for NAV 2017",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5010202",
+        "name": "5010202"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "30713",
+    "detailsSection_file_name": [
+        "CU 62 NAV 2017 W1 30713.zip"
+    ],
+    "detailsSection_file_size": [
+        "136.7 MB"
+    ],
+    "detailsSection_file_date": "9/29/2026",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "xcopy install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108851",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "CU 60 NAV 2018 W1 50736",
+    "downloadDescription": "Hotfix for NAV 2018",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CU 60 NAV 2018 W1 50736 AppUpdates.zip",
+            "url": "https://download.microsoft.com/download/2b515337-2228-404c-b15f-b635ab95fabd/CU 60 NAV 2018 W1 50736 AppUpdates.zip",
+            "size": "24498",
+            "version": "50736",
+            "datePublished": "9/29/2026 10:11:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CU 60 NAV 2018 W1 50736.zip",
+            "url": "https://download.microsoft.com/download/2b515337-2228-404c-b15f-b635ab95fabd/CU 60 NAV 2018 W1 50736.zip",
+            "size": "1038857689",
+            "version": "50736",
+            "datePublished": "9/29/2026 10:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hotfix for NAV 2018",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5022710",
+        "name": "5022710"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "50736",
+    "detailsSection_file_name": [
+        "CU 60 NAV 2018 W1 50736 AppUpdates.zip",
+        "CU 60 NAV 2018 W1 50736.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.9 KB",
+        "990.7 MB"
+    ],
+    "detailsSection_file_date": "9/29/2026",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Run installer. Import/compile code units as necessary.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108852",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

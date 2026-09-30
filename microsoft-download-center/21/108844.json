@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "products_26h2",
+    "downloadDescription": "Product_Windows 11 26H2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "products.xml",
+            "url": "https://download.microsoft.com/download/94d0e279-394d-40cf-a23a-3f466694fe27/products.xml",
+            "size": "1422821",
+            "version": "26H2 Product XML",
+            "datePublished": "9/28/2026 2:49:00 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Product_Windows 11 26H2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "26H2 Product XML",
+    "detailsSection_file_name": [
+        "products.xml"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "9/28/2026",
+    "systemRequirementsSection": "windows 10 and windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "not applicable",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108844",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
