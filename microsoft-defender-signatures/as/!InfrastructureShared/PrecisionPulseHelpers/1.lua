@@ -522,53 +522,16 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
                       end
                     end
                   end
-                else
-                  do
-                    if l_6_48 then
-                      local l_6_60 = (sysio.GetFileSize)(l_6_47)
-                      local l_6_61 = (sysio.GetFileLastWriteTime)(l_6_47)
-                      -- DECOMPILER ERROR at PC387: Confused about usage of register: R30 in 'UnsetPending'
+                end
+                do
+                  -- DECOMPILER ERROR at PC373: LeaveBlock: unexpected jumping out DO_STMT
 
-                      ;
-                      ((l_6_9.FullFilePathScan)[l_6_47]).ExcludedFileInfo = {}
-                      local l_6_62 = table.insert
-                      local l_6_63 = ((l_6_9.FullFilePathScan)[l_6_47]).ExcludedFileInfo
-                      local l_6_64 = {}
-                      l_6_64.Size = l_6_60
-                      l_6_64.LastModified = l_6_61
-                      l_6_62(l_6_63, l_6_64)
-                      l_6_62 = pcall
-                      l_6_63 = CollectFile
-                      l_6_64 = l_6_47
-                      l_6_62 = l_6_62(l_6_63, l_6_64, l_6_60, true)
-                      if l_6_62 and l_6_64 then
-                        l_6_64.tracking_id = l_6_7
-                        -- DECOMPILER ERROR at PC410: Confused about usage of register: R33 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC373: LeaveBlock: unexpected jumping out DO_STMT
 
-                        ;
-                        ((l_6_9.FullFilePathScan)[l_6_47]).FileRead_Info = l_6_64
-                        if l_6_63 then
-                          pcall(ReportResource, l_6_47, R36_PC420, (l_6_9.FullFilePathScan)[l_6_47], "LUA")
-                        end
-                      end
-                    end
-                    do
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out DO_STMT
+                  -- DECOMPILER ERROR at PC373: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out IF_ELSE_STMT
+                  -- DECOMPILER ERROR at PC373: LeaveBlock: unexpected jumping out IF_STMT
 
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out DO_STMT
-
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out DO_STMT
-
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC421: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
-                  end
                 end
               end
             end
@@ -580,17 +543,17 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
         l_6_29 = l_6_20.scanfile
         l_6_30 = split
         l_6_30 = l_6_30(l_6_29, ",")
-        for l_6_68,l_6_69 in ipairs(l_6_30) do
-          local l_6_70 = (string.lower)((MpCommon.Base64Decode)(l_6_69))
-          local l_6_71 = table.insert
-          local l_6_72 = l_6_9.Processed
-          local l_6_73 = {}
-          l_6_73.scanfile = l_6_70
-          l_6_71(l_6_72, l_6_73)
-          l_6_71 = AppendToRollingQueueNamespaced
-          l_6_72 = "hmdprecisionpulsescanfile"
-          l_6_73 = l_6_2
-          l_6_71(l_6_72, l_6_73, l_6_70, 1, l_6_6, 500, 1)
+        for l_6_63,l_6_64 in ipairs(l_6_30) do
+          local l_6_65 = (string.lower)((MpCommon.Base64Decode)(l_6_64))
+          local l_6_66 = table.insert
+          local l_6_67 = l_6_9.Processed
+          local l_6_68 = {}
+          l_6_68.scanfile = l_6_65
+          l_6_66(l_6_67, l_6_68)
+          l_6_66 = AppendToRollingQueueNamespaced
+          l_6_67 = "hmdprecisionpulsescanfile"
+          l_6_68 = l_6_2
+          l_6_66(l_6_67, l_6_68, l_6_65, 1, l_6_6, 500, 1)
         end
       end
       do
@@ -599,189 +562,184 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
           if l_6_29 then
             l_6_29 = 260
             l_6_30 = ""
-            local l_6_74 = "*"
+            local l_6_69 = "*"
+            local l_6_70 = 0
+            local l_6_71 = true
+            local l_6_72 = true
+            local l_6_73 = l_6_20.enumeratefolder
+            local l_6_74 = split(l_6_73, ",")
             local l_6_75 = 0
-            local l_6_76 = true
-            local l_6_77 = true
-            local l_6_78 = l_6_20.enumeratefolder
-            local l_6_79 = split(l_6_78, ",")
-            local l_6_80 = 0
-            for l_6_84,l_6_85 in ipairs(l_6_79) do
-              l_6_80 = l_6_80 + 1
-              -- DECOMPILER ERROR at PC483: Confused about usage of register: R30 in 'UnsetPending'
+            for l_6_79,l_6_80 in ipairs(l_6_74) do
+              l_6_75 = l_6_75 + 1
+              -- DECOMPILER ERROR at PC435: Confused about usage of register: R30 in 'UnsetPending'
 
-              if l_6_29 < l_6_80 then
+              if l_6_29 < l_6_75 then
                 ((l_6_9.FolderEnumeration)[l_6_30]).ExceededMaxFoldersEnumerated = true
                 break
               end
-              local l_6_86 = (string.lower)((MpCommon.Base64Decode)(l_6_85))
-              local l_6_87 = explode(l_6_86, "|")
-              if #l_6_87 == 4 then
-                l_6_30 = l_6_87[1]
-                l_6_74 = l_6_87[2]
-                l_6_75 = tonumber(l_6_87[3]) or 0
-                l_6_76 = tonumber(l_6_87[4]) == 1
-              elseif #l_6_87 == 5 then
-                l_6_30 = l_6_87[1]
-                l_6_74 = l_6_87[2]
-                l_6_75 = tonumber(l_6_87[3]) or 0
-                l_6_76 = tonumber(l_6_87[4]) == 1
-                l_6_77 = tonumber(l_6_87[5]) == 1
+              local l_6_81 = (string.lower)((MpCommon.Base64Decode)(l_6_80))
+              local l_6_82 = explode(l_6_81, "|")
+              if #l_6_82 == 4 then
+                l_6_30 = l_6_82[1]
+                l_6_69 = l_6_82[2]
+                l_6_70 = tonumber(l_6_82[3]) or 0
+                l_6_71 = tonumber(l_6_82[4]) == 1
+              elseif #l_6_82 == 5 then
+                l_6_30 = l_6_82[1]
+                l_6_69 = l_6_82[2]
+                l_6_70 = tonumber(l_6_82[3]) or 0
+                l_6_71 = tonumber(l_6_82[4]) == 1
+                l_6_72 = tonumber(l_6_82[5]) == 1
               else
-                l_6_30 = l_6_87[1]
+                l_6_30 = l_6_82[1]
               end
               if l_6_30 ~= nil then
-                local l_6_88 = #l_6_30 + 2
-                -- DECOMPILER ERROR at PC548: Confused about usage of register: R33 in 'UnsetPending'
+                local l_6_83 = #l_6_30 + 2
+                -- DECOMPILER ERROR at PC500: Confused about usage of register: R33 in 'UnsetPending'
 
                 ;
                 (l_6_9.FolderEnumeration)[l_6_30] = {}
-                -- DECOMPILER ERROR at PC552: Confused about usage of register: R33 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC504: Confused about usage of register: R33 in 'UnsetPending'
 
                 ;
                 ((l_6_9.FolderEnumeration)[l_6_30]).Files = {}
-                -- DECOMPILER ERROR at PC556: Confused about usage of register: R33 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC508: Confused about usage of register: R33 in 'UnsetPending'
 
                 ;
                 ((l_6_9.FolderEnumeration)[l_6_30]).Subfolders = {}
-                local l_6_89 = (sysio.FindFiles)(l_6_30, l_6_74, R36_PC420)
-                -- DECOMPILER ERROR at PC566: Overwrote pending register: R36 in 'AssignReg'
+                local l_6_84 = (sysio.FindFiles)(l_6_30, l_6_69, l_6_70)
+                local l_6_85 = (sysio.FindFolders)(l_6_30, "*", 0)
+                if l_6_84 ~= nil then
+                  local l_6_86 = 0
+                  for l_6_90,l_6_91 in pairs(l_6_84) do
+                    l_6_86 = l_6_86 + 1
+                    -- DECOMPILER ERROR at PC533: Confused about usage of register: R41 in 'UnsetPending'
 
-                local l_6_90 = (sysio.FindFolders)(l_6_30, R36_PC420, 0)
-                if l_6_89 ~= nil then
-                  local l_6_91 = 0
-                  -- DECOMPILER ERROR at PC572: Overwrote pending register: R36 in 'AssignReg'
-
-                  R36_PC420 = R36_PC420(l_6_89)
-                  for l_6_95,l_6_96 in R36_PC420 do
-                    l_6_91 = l_6_91 + 1
-                    -- DECOMPILER ERROR at PC581: Confused about usage of register: R41 in 'UnsetPending'
-
-                    if l_6_29 < l_6_91 then
+                    if l_6_29 < l_6_86 then
                       ((l_6_9.FolderEnumeration)[l_6_30]).ExceededMaxFilesReported = true
-                      -- DECOMPILER ERROR at PC585: Confused about usage of register: R41 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC537: Confused about usage of register: R41 in 'UnsetPending'
 
                       ;
-                      ((l_6_9.FolderEnumeration)[l_6_30]).TotalFilesEnumerated = #l_6_89
+                      ((l_6_9.FolderEnumeration)[l_6_30]).TotalFilesEnumerated = #l_6_84
                       break
                     end
-                    local l_6_97 = (string.sub)(l_6_96, l_6_88)
-                    if l_6_77 then
-                      local l_6_98 = (sysio.GetFileSize)(l_6_96)
-                      local l_6_99 = (sysio.GetFileLastWriteTime)(l_6_96)
-                      local l_6_100 = table.insert
-                      local l_6_101 = ((l_6_9.FolderEnumeration)[l_6_30]).Files
-                      local l_6_102 = {}
-                      l_6_102.Name = l_6_97
-                      l_6_102.Size = l_6_98
-                      l_6_102.LastModified = l_6_99
-                      l_6_100(l_6_101, l_6_102)
-                      l_6_91 = l_6_91 + 1
+                    local l_6_92 = (string.sub)(l_6_91, l_6_83)
+                    if l_6_72 then
+                      local l_6_93 = (sysio.GetFileSize)(l_6_91)
+                      local l_6_94 = (sysio.GetFileLastWriteTime)(l_6_91)
+                      local l_6_95 = table.insert
+                      local l_6_96 = ((l_6_9.FolderEnumeration)[l_6_30]).Files
+                      local l_6_97 = {}
+                      l_6_97.Name = l_6_92
+                      l_6_97.Size = l_6_93
+                      l_6_97.LastModified = l_6_94
+                      l_6_95(l_6_96, l_6_97)
+                      l_6_86 = l_6_86 + 1
                     end
-                    if l_6_76 then
-                      local l_6_103 = l_6_8
-                      local l_6_104 = (MpCommon.AtomicCounterAddNamespaced)(l_6_3, l_6_2, 1)
-                      -- DECOMPILER ERROR at PC626: Confused about usage of register: R44 in 'UnsetPending'
+                    if l_6_71 then
+                      local l_6_98 = l_6_8
+                      local l_6_99 = (MpCommon.AtomicCounterAddNamespaced)(l_6_3, l_6_2, 1)
+                      -- DECOMPILER ERROR at PC578: Confused about usage of register: R44 in 'UnsetPending'
 
-                      if l_6_103 <= l_6_104 then
+                      if l_6_98 <= l_6_99 then
                         ((l_6_9.FolderEnumeration)[l_6_30]).ExceededMaxScanCounter = true
                         break
                       else
-                        AppendToRollingQueueNamespaced("hmdprecisionpulsefullfilepathscan", l_6_2, (string.lower)(l_6_96), 1, l_6_6, 500, 1)
+                        AppendToRollingQueueNamespaced("hmdprecisionpulsefullfilepathscan", l_6_2, (string.lower)(l_6_91), 1, l_6_6, 500, 1)
                         ;
-                        (mp.TriggerScanResource)("file", (string.lower)(l_6_96), 0, 5000)
+                        (mp.TriggerScanResource)("file", (string.lower)(l_6_91), 0, 5000)
                       end
                     end
                   end
                 end
-                l_6_91 = table
-                l_6_91 = l_6_91.insert
-                local l_6_105 = nil
-                l_6_105 = l_6_9.Processed
-                local l_6_106 = nil
-                local l_6_107 = nil
-                l_6_91(l_6_105, l_6_106)
-                l_6_106 = {enumeratefolder = l_6_30}
-                l_6_91 = sysio
-                l_6_91 = l_6_91.IsFolderExists
-                l_6_105 = l_6_30
-                l_6_91 = l_6_91(l_6_105)
-                if l_6_91 then
-                  l_6_105 = l_6_9.FolderEnumeration
-                  l_6_105 = l_6_105[l_6_30]
-                  l_6_105.Exists = true
-                  l_6_105 = l_6_9.FolderEnumeration
-                  l_6_105 = l_6_105[l_6_30]
-                  l_6_106 = sysio
-                  l_6_106 = l_6_106.IsPathAVExcluded
-                  l_6_107 = l_6_30
-                  l_6_106 = l_6_106(l_6_107, true)
-                  l_6_105.Excluded = l_6_106
+                l_6_86 = table
+                l_6_86 = l_6_86.insert
+                local l_6_100 = nil
+                l_6_100 = l_6_9.Processed
+                local l_6_101 = nil
+                local l_6_102 = nil
+                l_6_86(l_6_100, l_6_101)
+                l_6_101 = {enumeratefolder = l_6_30}
+                l_6_86 = sysio
+                l_6_86 = l_6_86.IsFolderExists
+                l_6_100 = l_6_30
+                l_6_86 = l_6_86(l_6_100)
+                if l_6_86 then
+                  l_6_100 = l_6_9.FolderEnumeration
+                  l_6_100 = l_6_100[l_6_30]
+                  l_6_100.Exists = true
+                  l_6_100 = l_6_9.FolderEnumeration
+                  l_6_100 = l_6_100[l_6_30]
+                  l_6_101 = sysio
+                  l_6_101 = l_6_101.IsPathAVExcluded
+                  l_6_102 = l_6_30
+                  l_6_101 = l_6_101(l_6_102, true)
+                  l_6_100.Excluded = l_6_101
                 else
-                  l_6_105 = l_6_9.FolderEnumeration
-                  l_6_105 = l_6_105[l_6_30]
-                  l_6_105.Exists = false
+                  l_6_100 = l_6_9.FolderEnumeration
+                  l_6_100 = l_6_100[l_6_30]
+                  l_6_100.Exists = false
                 end
-                if l_6_77 == false then
-                  l_6_105 = #l_6_89
-                  if l_6_105 <= l_6_29 then
-                    l_6_105 = table
-                    l_6_105 = l_6_105.insert
-                    l_6_106 = l_6_9.FolderEnumeration
-                    l_6_106 = l_6_106[l_6_30]
-                    local l_6_108 = nil
-                    l_6_105(l_6_106, l_6_107)
-                    l_6_107 = {Files = l_6_89}
+                if l_6_72 == false then
+                  l_6_100 = #l_6_84
+                  if l_6_100 <= l_6_29 then
+                    l_6_100 = table
+                    l_6_100 = l_6_100.insert
+                    l_6_101 = l_6_9.FolderEnumeration
+                    l_6_101 = l_6_101[l_6_30]
+                    local l_6_103 = nil
+                    l_6_100(l_6_101, l_6_102)
+                    l_6_102 = {Files = l_6_84}
                   else
-                    l_6_106 = 1
-                    l_6_107 = l_6_29
-                    for i = l_6_106, l_6_107 do
-                      local l_6_111 = nil
-                      l_6_111 = l_6_89[l_6_110]
+                    l_6_101 = 1
+                    l_6_102 = l_6_29
+                    for i = l_6_101, l_6_102 do
+                      local l_6_106 = nil
+                      l_6_106 = l_6_84[l_6_105]
                     end
-                    local l_6_112 = nil
-                    local l_6_113 = nil
-                    local l_6_114 = nil
+                    local l_6_107 = nil
+                    local l_6_108 = nil
+                    local l_6_109 = nil
                     ;
-                    (table.insert)((l_6_9.FolderEnumeration)[l_6_30], l_6_112)
-                    l_6_112 = {Files = l_6_105}
-                    -- DECOMPILER ERROR at PC710: Confused about usage of register: R37 in 'UnsetPending'
+                    (table.insert)((l_6_9.FolderEnumeration)[l_6_30], l_6_107)
+                    l_6_107 = {Files = l_6_100}
+                    -- DECOMPILER ERROR at PC662: Confused about usage of register: R37 in 'UnsetPending'
 
                     ;
                     ((l_6_9.FolderEnumeration)[l_6_30]).ExceededMaxFilesReported = true
-                    -- DECOMPILER ERROR at PC714: Confused about usage of register: R37 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC666: Confused about usage of register: R37 in 'UnsetPending'
 
                     ;
-                    ((l_6_9.FolderEnumeration)[l_6_30]).TotalFilesEnumerated = #l_6_89
+                    ((l_6_9.FolderEnumeration)[l_6_30]).TotalFilesEnumerated = #l_6_84
                   end
                 end
-                -- DECOMPILER ERROR at PC717: Overwrote pending register: R36 in 'AssignReg'
+                -- DECOMPILER ERROR at PC669: Overwrote pending register: R36 in 'AssignReg'
 
-                if l_6_90 ~= nil then
-                  for l_6_118,l_6_119 in pairs(l_6_90) do
-                    local l_6_118, l_6_119 = nil
-                    -- DECOMPILER ERROR at PC722: Overwrote pending register: R36 in 'AssignReg'
+                if l_6_85 ~= nil then
+                  for l_6_113,l_6_114 in pairs(l_6_85) do
+                    local l_6_113, l_6_114 = nil
+                    -- DECOMPILER ERROR at PC674: Overwrote pending register: R36 in 'AssignReg'
 
-                    if l_6_29 < l_6_105 then
+                    if l_6_29 < l_6_100 then
                       break
                     end
-                    l_6_118 = string
-                    l_6_118 = l_6_118.sub
-                    l_6_119 = l_6_117
-                    l_6_118 = l_6_118(l_6_119, l_6_88)
-                    local l_6_120 = nil
-                    l_6_119 = table
-                    l_6_119 = l_6_119.insert
-                    l_6_120 = l_6_9.FolderEnumeration
-                    l_6_120 = l_6_120[l_6_30]
-                    l_6_120 = l_6_120.Subfolders
-                    l_6_119(l_6_120, l_6_118)
+                    l_6_113 = string
+                    l_6_113 = l_6_113.sub
+                    l_6_114 = l_6_112
+                    l_6_113 = l_6_113(l_6_114, l_6_83)
+                    local l_6_115 = nil
+                    l_6_114 = table
+                    l_6_114 = l_6_114.insert
+                    l_6_115 = l_6_9.FolderEnumeration
+                    l_6_115 = l_6_115[l_6_30]
+                    l_6_115 = l_6_115.Subfolders
+                    l_6_114(l_6_115, l_6_113)
                   end
                 end
-                -- DECOMPILER ERROR at PC740: Overwrote pending register: R36 in 'AssignReg'
+                -- DECOMPILER ERROR at PC692: Overwrote pending register: R36 in 'AssignReg'
 
-                l_6_105("hmdprecisionpulseenumeratefolder", l_6_2, l_6_30, 1, l_6_6, 500, 1)
-                -- DECOMPILER ERROR at PC749: Confused about usage of register R38 for local variables in 'ReleaseLocals'
+                l_6_100("hmdprecisionpulseenumeratefolder", l_6_2, l_6_30, 1, l_6_6, 500, 1)
+                -- DECOMPILER ERROR at PC701: Confused about usage of register R38 for local variables in 'ReleaseLocals'
 
               end
             end
@@ -790,256 +748,298 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
           if l_6_29 then
             l_6_29 = ""
             l_6_30 = l_6_20.enumerateregistrykey
-            l_6_74 = split
-            l_6_75 = l_6_30
-            l_6_76 = ","
-            l_6_74 = l_6_74(l_6_75, l_6_76)
-            local l_6_121 = nil
-            l_6_75 = ipairs
-            l_6_76 = l_6_74
-            l_6_75 = l_6_75(l_6_76)
-            for l_6_78,l_6_79 in l_6_75 do
-              local l_6_122, l_6_123, l_6_124, l_6_125, l_6_126 = nil
-              l_6_80 = string
-              l_6_80 = l_6_80.lower
-              l_6_80 = l_6_80((MpCommon.Base64Decode)(l_6_79))
-              local l_6_127 = nil
-              l_6_29 = l_6_80
+            l_6_69 = split
+            l_6_70 = l_6_30
+            l_6_71 = ","
+            l_6_69 = l_6_69(l_6_70, l_6_71)
+            local l_6_116 = nil
+            l_6_70 = ipairs
+            l_6_71 = l_6_69
+            l_6_70 = l_6_70(l_6_71)
+            for l_6_73,l_6_74 in l_6_70 do
+              local l_6_117, l_6_118, l_6_119, l_6_120, l_6_121 = nil
+              l_6_75 = string
+              l_6_75 = l_6_75.lower
+              l_6_75 = l_6_75((MpCommon.Base64Decode)(l_6_74))
+              local l_6_122 = nil
+              l_6_29 = l_6_75
               if l_6_29 ~= nil then
-                local l_6_128 = nil
-                -- DECOMPILER ERROR at PC780: Confused about usage of register: R26 in 'UnsetPending'
+                local l_6_123 = nil
+                -- DECOMPILER ERROR at PC732: Confused about usage of register: R26 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC784: Confused about usage of register: R26 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC736: Confused about usage of register: R26 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC788: Confused about usage of register: R26 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC740: Confused about usage of register: R26 in 'UnsetPending'
 
-                local l_6_129 = nil
-                local l_6_130 = nil
-                if (sysio.RegEnumKeys)((sysio.RegOpenKey)(l_6_29)) ~= nil then
-                  (table.insert)(((l_6_9.RegkeyEnumeration)[l_6_29]).Keys, l_6_86)
-                  if (sysio.RegEnumValues)((sysio.RegOpenKey)(l_6_29)) ~= nil then
-                    for l_6_87,l_6_88 in pairs((sysio.RegEnumValues)((sysio.RegOpenKey)(l_6_29))) do
-                      local l_6_131, l_6_132, l_6_133, l_6_134, l_6_135 = nil
-                      l_6_89 = sysio
-                      l_6_89 = l_6_89.GetRegValueType
-                      l_6_90 = (sysio.RegOpenKey)(l_6_29)
-                      l_6_91 = l_6_88
-                      l_6_89 = (l_6_89(l_6_90, l_6_91))
-                      local l_6_136 = nil
-                      l_6_90 = nil
-                      local l_6_137 = nil
-                      if l_6_89 == 1 then
-                        l_6_91 = sysio
-                        l_6_91 = l_6_91.GetRegValueAsString
-                        -- DECOMPILER ERROR at PC822: Overwrote pending register: R36 in 'AssignReg'
+                if (sysio.RegOpenKey)(l_6_29) then
+                  local l_6_124 = nil
+                  local l_6_125 = nil
+                  if (sysio.RegEnumKeys)((sysio.RegOpenKey)(l_6_29)) ~= nil then
+                    (table.insert)(((l_6_9.RegkeyEnumeration)[l_6_29]).Keys, l_6_81)
+                    -- DECOMPILER ERROR at PC763: Overwrote pending register: R30 in 'AssignReg'
 
-                        l_6_91 = l_6_91(l_6_105, l_6_88)
-                        l_6_90 = l_6_91 or "Value not set"
-                        l_6_91 = l_6_9.RegkeyEnumeration
-                        l_6_91 = l_6_91[l_6_29]
-                        l_6_91 = l_6_91.Values
-                        l_6_91[l_6_88], l_6_105 = l_6_105, {}
-                        l_6_91 = table
-                        l_6_91 = l_6_91.insert
-                        l_6_105 = l_6_9.RegkeyEnumeration
-                        l_6_105 = l_6_105[l_6_29]
-                        l_6_105 = l_6_105.Values
-                        l_6_105 = l_6_105[l_6_88]
-                        l_6_91(l_6_105, (l_6_90) .. l_6_121)
-                      elseif l_6_89 == 2 then
-                        l_6_91 = sysio
-                        l_6_91 = l_6_91.GetRegValueAsString
-                        l_6_105 = (sysio.RegOpenKey)(l_6_29)
-                        l_6_91 = l_6_91(l_6_105, l_6_88)
-                        l_6_90 = l_6_91 or "Value not set"
-                        l_6_91 = l_6_9.RegkeyEnumeration
-                        l_6_91 = l_6_91[l_6_29]
-                        l_6_91 = l_6_91.Values
-                        l_6_91[l_6_88], l_6_105 = l_6_105, {}
-                        l_6_91 = table
-                        l_6_91 = l_6_91.insert
-                        l_6_105 = l_6_9.RegkeyEnumeration
-                        l_6_105 = l_6_105[l_6_29]
-                        l_6_105 = l_6_105.Values
-                        l_6_105 = l_6_105[l_6_88]
-                        -- DECOMPILER ERROR at PC866: Overwrote pending register: R38 in 'AssignReg'
+                    do
+                      local l_6_126, l_6_127, l_6_128, l_6_129 = nil
+                      -- DECOMPILER ERROR at PC772: Confused about usage of register: R29 in 'UnsetPending'
 
-                        l_6_91(l_6_105, (l_6_90) .. l_6_121)
-                      elseif l_6_89 == 3 then
-                        l_6_91 = sysio
-                        l_6_91 = l_6_91.GetRegValueAsBinary
-                        l_6_105 = (sysio.RegOpenKey)(l_6_29)
-                        l_6_91 = l_6_91(l_6_105, l_6_88)
-                        l_6_90 = l_6_91 or "Value not set"
-                        l_6_91 = l_6_9.RegkeyEnumeration
-                        l_6_91 = l_6_91[l_6_29]
-                        l_6_91 = l_6_91.Values
-                        l_6_91[l_6_88], l_6_105 = l_6_105, {}
-                        l_6_91 = table
-                        l_6_91 = l_6_91.insert
-                        l_6_105 = l_6_9.RegkeyEnumeration
-                        l_6_105 = l_6_105[l_6_29]
-                        l_6_105 = l_6_105.Values
-                        l_6_105 = l_6_105[l_6_88]
-                        -- DECOMPILER ERROR at PC892: Overwrote pending register: R38 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC775: Overwrote pending register: R30 in 'AssignReg'
 
-                        l_6_91(l_6_105, (l_6_90) .. l_6_121)
-                      elseif l_6_89 == 4 then
-                        l_6_91 = sysio
-                        l_6_91 = l_6_91.GetRegValueAsDword
-                        l_6_105 = (sysio.RegOpenKey)(l_6_29)
-                        l_6_91 = l_6_91(l_6_105, l_6_88)
-                        l_6_90 = l_6_91 or "Value not set"
-                        l_6_91 = l_6_9.RegkeyEnumeration
-                        l_6_91 = l_6_91[l_6_29]
-                        l_6_91 = l_6_91.Values
-                        l_6_91[l_6_88], l_6_105 = l_6_105, {}
-                        l_6_91 = table
-                        l_6_91 = l_6_91.insert
-                        l_6_105 = l_6_9.RegkeyEnumeration
-                        l_6_105 = l_6_105[l_6_29]
-                        l_6_105 = l_6_105.Values
-                        l_6_105 = l_6_105[l_6_88]
-                        -- DECOMPILER ERROR at PC918: Overwrote pending register: R38 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC776: Overwrote pending register: R30 in 'AssignReg'
 
-                        l_6_91(l_6_105, (l_6_90) .. l_6_121)
-                      elseif l_6_89 == 7 then
-                        l_6_91 = sysio
-                        l_6_91 = l_6_91.GetRegValueAsMultiString
-                        l_6_105 = (sysio.RegOpenKey)(l_6_29)
-                        l_6_91 = l_6_91(l_6_105, l_6_88)
-                        l_6_90 = l_6_91 or "Value not set"
-                        l_6_91 = l_6_9.RegkeyEnumeration
-                        l_6_91 = l_6_91[l_6_29]
-                        l_6_91 = l_6_91.Values
-                        l_6_91[l_6_88], l_6_105 = l_6_105, {}
-                        l_6_91 = ipairs
-                        l_6_105 = l_6_90
-                        l_6_91 = l_6_91(l_6_105)
-                        for l_6_121,l_6_122 in l_6_91 do
-                          local l_6_138, l_6_139, l_6_140, l_6_141, l_6_142 = nil
-                          l_6_123 = table
-                          l_6_123 = l_6_123.insert
-                          l_6_124 = l_6_9.RegkeyEnumeration
-                          l_6_124 = l_6_124[l_6_29]
-                          l_6_124 = l_6_124.Values
-                          l_6_124 = l_6_124[l_6_88]
-                          l_6_125 = l_6_122
-                          l_6_126 = " (REG_MULTI_SZ)"
-                          l_6_125 = l_6_125 .. l_6_126
-                          l_6_123(l_6_124, l_6_125)
+                      -- DECOMPILER ERROR at PC777: Overwrote pending register: R30 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC778: Overwrote pending register: R30 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC781: Overwrote pending register: R31 in 'AssignReg'
+
+                      ;
+                      (table.insert)(l_6_81, l_6_82)
+                      -- DECOMPILER ERROR at PC786: Overwrote pending register: R30 in 'AssignReg'
+
+                      if (sysio.RegEnumValues)((sysio.RegOpenKey)(l_6_29)) ~= nil then
+                        for l_6_83,l_6_84 in pairs(l_6_81) do
+                          local l_6_130, l_6_131, l_6_132, l_6_133, l_6_134 = nil
+                          l_6_85 = sysio
+                          l_6_85 = l_6_85.GetRegValueType
+                          l_6_86 = (sysio.RegOpenKey)(l_6_29)
+                          -- DECOMPILER ERROR at PC792: Overwrote pending register: R36 in 'AssignReg'
+
+                          l_6_85 = (l_6_85(l_6_86, l_6_100))
+                          local l_6_135 = nil
+                          l_6_86 = nil
+                          local l_6_136 = nil
+                          -- DECOMPILER ERROR at PC797: Overwrote pending register: R36 in 'AssignReg'
+
+                          -- DECOMPILER ERROR at PC798: Overwrote pending register: R36 in 'AssignReg'
+
+                          if l_6_85 == 1 then
+                            l_6_100 = l_6_100((sysio.RegOpenKey)(l_6_29), l_6_116)
+                            l_6_86 = l_6_100 or "Value not set"
+                            l_6_100 = l_6_9.RegkeyEnumeration
+                            l_6_100 = l_6_100[l_6_29]
+                            l_6_100 = l_6_100.Values
+                            l_6_100[l_6_84] = {}
+                            l_6_100 = table
+                            l_6_100 = l_6_100.insert
+                            -- DECOMPILER ERROR at PC816: Overwrote pending register: R38 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC818: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], l_6_116)
+                          elseif l_6_85 == 2 then
+                            l_6_100 = sysio
+                            l_6_100 = l_6_100.GetRegValueAsString
+                            -- DECOMPILER ERROR at PC826: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100 = l_6_100((sysio.RegOpenKey)(l_6_29), l_6_116)
+                            l_6_86 = l_6_100 or "Value not set"
+                            l_6_100 = l_6_9.RegkeyEnumeration
+                            l_6_100 = l_6_100[l_6_29]
+                            l_6_100 = l_6_100.Values
+                            l_6_100[l_6_84] = {}
+                            l_6_100 = table
+                            l_6_100 = l_6_100.insert
+                            -- DECOMPILER ERROR at PC842: Overwrote pending register: R38 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC843: Overwrote pending register: R39 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC844: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], l_6_116)
+                          elseif l_6_85 == 3 then
+                            l_6_100 = sysio
+                            l_6_100 = l_6_100.GetRegValueAsBinary
+                            -- DECOMPILER ERROR at PC852: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100 = l_6_100((sysio.RegOpenKey)(l_6_29), l_6_116)
+                            l_6_86 = l_6_100 or "Value not set"
+                            l_6_100 = l_6_9.RegkeyEnumeration
+                            l_6_100 = l_6_100[l_6_29]
+                            l_6_100 = l_6_100.Values
+                            l_6_100[l_6_84] = {}
+                            l_6_100 = table
+                            l_6_100 = l_6_100.insert
+                            -- DECOMPILER ERROR at PC868: Overwrote pending register: R38 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC869: Overwrote pending register: R39 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC870: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], l_6_116)
+                          elseif l_6_85 == 4 then
+                            l_6_100 = sysio
+                            l_6_100 = l_6_100.GetRegValueAsDword
+                            -- DECOMPILER ERROR at PC878: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100 = l_6_100((sysio.RegOpenKey)(l_6_29), l_6_116)
+                            l_6_86 = l_6_100 or "Value not set"
+                            l_6_100 = l_6_9.RegkeyEnumeration
+                            l_6_100 = l_6_100[l_6_29]
+                            l_6_100 = l_6_100.Values
+                            l_6_100[l_6_84] = {}
+                            l_6_100 = table
+                            l_6_100 = l_6_100.insert
+                            -- DECOMPILER ERROR at PC894: Overwrote pending register: R38 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC895: Overwrote pending register: R39 in 'AssignReg'
+
+                            -- DECOMPILER ERROR at PC896: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], l_6_116)
+                          elseif l_6_85 == 7 then
+                            l_6_100 = sysio
+                            l_6_100 = l_6_100.GetRegValueAsMultiString
+                            -- DECOMPILER ERROR at PC904: Overwrote pending register: R38 in 'AssignReg'
+
+                            l_6_100 = l_6_100((sysio.RegOpenKey)(l_6_29), l_6_116)
+                            l_6_86 = l_6_100 or "Value not set"
+                            l_6_100 = l_6_9.RegkeyEnumeration
+                            l_6_100 = l_6_100[l_6_29]
+                            l_6_100 = l_6_100.Values
+                            l_6_100[l_6_84] = {}
+                            l_6_100 = ipairs
+                            l_6_100 = l_6_100(l_6_86)
+                            for l_6_117,l_6_118 in l_6_100 do
+                              local l_6_137, l_6_138, l_6_139, l_6_140, l_6_141 = nil
+                              l_6_119 = table
+                              l_6_119 = l_6_119.insert
+                              l_6_120 = l_6_9.RegkeyEnumeration
+                              l_6_120 = l_6_120[l_6_29]
+                              l_6_120 = l_6_120.Values
+                              l_6_120 = l_6_120[l_6_84]
+                              l_6_121 = l_6_118
+                              l_6_122 = " (REG_MULTI_SZ)"
+                              l_6_121 = l_6_121 .. l_6_122
+                              l_6_119(l_6_120, l_6_121)
+                            end
+                          else
+                            -- DECOMPILER ERROR at PC936: Overwrote pending register: R38 in 'AssignReg'
+
+                            if not (sysio.GetRegValueAsQword)((sysio.RegOpenKey)(l_6_29), l_6_116) then
+                              l_6_86 = l_6_85 ~= 11 or "Value not set"
+                            end
+                            -- DECOMPILER ERROR at PC945: Confused about usage of register: R36 in 'UnsetPending'
+
+                            ;
+                            (((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84] = {}
+                            -- DECOMPILER ERROR at PC953: Overwrote pending register: R39 in 'AssignReg'
+
+                            ;
+                            (table.insert)((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], (l_6_86) .. l_6_117)
+                          end
+                          l_6_86 = (sysio.GetRegValueAsString)((sysio.RegOpenKey)(l_6_29), l_6_84) or "Value not set"
+                          -- DECOMPILER ERROR at PC969: Confused about usage of register: R36 in 'UnsetPending'
+
+                          ;
+                          (((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84] = {}
+                          ;
+                          (table.insert)((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_84], (l_6_86) .. " (UNKNOWN TYPE)")
                         end
-                      else
-                        if not (sysio.GetRegValueAsQword)((sysio.RegOpenKey)(l_6_29), l_6_88) then
-                          l_6_90 = l_6_89 ~= 11 or "Value not set"
-                        end
-                        -- DECOMPILER ERROR at PC968: Confused about usage of register: R35 in 'UnsetPending'
-
-                        ;
-                        (((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_88] = {}
-                        -- DECOMPILER ERROR at PC976: Overwrote pending register: R38 in 'AssignReg'
-
-                        ;
-                        (table.insert)((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_88], (l_6_90) .. l_6_121)
                       end
-                      l_6_90 = (sysio.GetRegValueAsString)((sysio.RegOpenKey)(l_6_29), l_6_88) or "Value not set"
-                      -- DECOMPILER ERROR at PC992: Confused about usage of register: R35 in 'UnsetPending'
+                      local l_6_142 = nil
+                      local l_6_143 = nil
+                      do
+                        local l_6_144 = nil
+                        ;
+                        (table.insert)(l_6_9.Processed, {enumerateregistrykey = l_6_29})
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out DO_STMT
 
-                      ;
-                      (((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_88] = {}
-                      ;
-                      (table.insert)((((l_6_9.RegkeyEnumeration)[l_6_29]).Values)[l_6_88], (l_6_90) .. " (UNKNOWN TYPE)")
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_STMT
+
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_THEN_STMT
+
+                        -- DECOMPILER ERROR at PC988: LeaveBlock: unexpected jumping out IF_STMT
+
+                      end
                     end
                   end
                 end
-                local l_6_143 = nil
-                local l_6_144 = nil
-                local l_6_145 = nil
-                ;
-                (table.insert)(l_6_9.Processed, {enumerateregistrykey = l_6_29})
               end
             end
-            -- DECOMPILER ERROR at PC1013: Confused about usage of register R39 for local variables in 'ReleaseLocals'
-
           end
           l_6_29 = l_6_20.deleteregistryvalue
           if l_6_29 then
             l_6_29 = ""
             l_6_30 = l_6_20.deleteregistryvalue
-            l_6_74 = split
-            l_6_74 = l_6_74(l_6_30, ",")
-            local l_6_146 = nil
-            for l_6_150,l_6_151 in ipairs(l_6_74) do
-              local l_6_147, l_6_148, l_6_149, l_6_150, l_6_151 = nil
-              l_6_80 = string
-              l_6_80 = l_6_80.lower
-              -- DECOMPILER ERROR at PC1030: Confused about usage of register: R23 in 'UnsetPending'
+            l_6_69 = split
+            l_6_69 = l_6_69(l_6_30, ",")
+            local l_6_145 = nil
+            for l_6_149,l_6_150 in ipairs(l_6_69) do
+              local l_6_146, l_6_147, l_6_148, l_6_149, l_6_150 = nil
+              l_6_75 = string
+              l_6_75 = l_6_75.lower
+              -- DECOMPILER ERROR at PC1007: Confused about usage of register: R23 in 'UnsetPending'
 
-              l_6_80 = l_6_80((MpCommon.Base64Decode)(l_6_79))
-              local l_6_152 = nil
+              l_6_75 = l_6_75((MpCommon.Base64Decode)(l_6_74))
+              local l_6_151 = nil
               if l_6_29 ~= nil then
-                l_6_29 = explode(l_6_80, "|")
+                l_6_29 = explode(l_6_75, "|")
                 if #l_6_29 == 2 then
+                  local l_6_152 = nil
                   local l_6_153 = nil
+                  -- DECOMPILER ERROR at PC1024: Confused about usage of register: R27 in 'UnsetPending'
+
+                  -- DECOMPILER ERROR at PC1027: Confused about usage of register: R25 in 'UnsetPending'
+
                   local l_6_154 = nil
-                  -- DECOMPILER ERROR at PC1047: Confused about usage of register: R27 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC1050: Confused about usage of register: R25 in 'UnsetPending'
-
-                  local l_6_155 = nil
                   if (sysio.RegOpenKey)(l_6_29[1]) ~= nil then
                     (mp.set_mpattribute)("/EnablePrecPulseScanner")
-                    -- DECOMPILER ERROR at PC1061: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1038: Confused about usage of register: R25 in 'UnsetPending'
 
-                    local l_6_156 = nil
-                    AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyscan", l_6_2, (string.format)("%s\\\\%s", l_6_29[1], l_6_29[2]), l_6_89, l_6_90, 500, 1)
-                    -- DECOMPILER ERROR at PC1078: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1038: Overwrote pending register: R30 in 'AssignReg'
 
-                    local l_6_157, l_6_158 = nil
-                    -- DECOMPILER ERROR at PC1083: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1039: Overwrote pending register: R31 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1083: Overwrote pending register: R33 in 'AssignReg'
+                    local l_6_155 = nil
+                    -- DECOMPILER ERROR at PC1044: Overwrote pending register: R32 in 'AssignReg'
+
+                    AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyscan", l_6_2, l_6_83, 1, l_6_85, l_6_86, 1)
+                    local l_6_156, l_6_157 = nil
+                    -- DECOMPILER ERROR at PC1060: Confused about usage of register: R25 in 'UnsetPending'
 
                     ;
-                    (mp.TriggerScanResource)("regkey", l_6_89)
-                    -- DECOMPILER ERROR at PC1087: Overwrote pending register: R33 in 'AssignReg'
+                    (mp.TriggerScanResource)("regkey", l_6_29[1])
+                    -- DECOMPILER ERROR at PC1065: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1088: Overwrote pending register: R34 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1066: Overwrote pending register: R35 in 'AssignReg'
 
-                    AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyvaluescan", l_6_89, l_6_90, 1, l_6_6, 500, 1)
-                    -- DECOMPILER ERROR at PC1097: Overwrote pending register: R33 in 'AssignReg'
+                    AppendToRollingQueueNamespaced("hmdprecisionpulseregkeyvaluescan", l_6_2, l_6_85, l_6_86, l_6_6, 500, 1)
+                    -- DECOMPILER ERROR at PC1075: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1098: Overwrote pending register: R34 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1076: Overwrote pending register: R35 in 'AssignReg'
 
-                    local l_6_159, l_6_160 = nil
-                    -- DECOMPILER ERROR at PC1101: Overwrote pending register: R33 in 'AssignReg'
+                    local l_6_158, l_6_159 = nil
+                    -- DECOMPILER ERROR at PC1080: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1102: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1081: Overwrote pending register: R35 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1103: Overwrote pending register: R34 in 'AssignReg'
-
-                    l_6_89(l_6_90, (string.format)("%s\\\\%s", l_6_29[1], l_6_29[2]))
+                    ;
+                    (mp.TriggerScanResource)(l_6_85, l_6_86)
                   else
-                    -- DECOMPILER ERROR at PC1108: Confused about usage of register: R25 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1085: Confused about usage of register: R25 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1108: Confused about usage of register: R28 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1085: Confused about usage of register: R28 in 'UnsetPending'
 
                   end
+                  local l_6_160 = nil
+                  -- DECOMPILER ERROR at PC1088: Overwrote pending register: R29 in 'AssignReg'
+
                   local l_6_161 = nil
-                  -- DECOMPILER ERROR at PC1111: Overwrote pending register: R29 in 'AssignReg'
-
                   local l_6_162 = nil
-                  local l_6_163 = nil
-                  -- DECOMPILER ERROR at PC1113: Confused about usage of register: R25 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1090: Confused about usage of register: R25 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1113: Overwrote pending register: R31 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1090: Overwrote pending register: R31 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1115: Confused about usage of register: R26 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC1115: Overwrote pending register: R33 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1092: Confused about usage of register: R26 in 'UnsetPending'
 
                   ;
-                  (table.insert)(pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseregkeyscan", l_6_2, l_6_89), {deleteregistryvalue = pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_6_89, l_6_90, (string.format)("%s\\\\%s", l_6_29[1], l_6_29[2])) .. " " .. l_6_89})
+                  (table.insert)(pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseregkeyscan", l_6_2, (string.format)("%s\\\\%s", l_6_81, l_6_82)), {deleteregistryvalue = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulseregkeyvaluescan", l_6_85, l_6_86) .. " " .. l_6_29[2]})
                 end
               end
             end
@@ -1054,65 +1054,65 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
             if l_6_29 == nil then
               l_6_30 = MpCommon
               l_6_30 = l_6_30.ExpandEnvironmentVariables
-              l_6_74 = "%windir%"
-              l_6_30 = l_6_30(l_6_74)
-              l_6_74 = l_6_30
-              l_6_74 = l_6_74 .. "\\system32\\"
+              l_6_69 = "%windir%"
+              l_6_30 = l_6_30(l_6_69)
+              l_6_69 = l_6_30
+              l_6_69 = l_6_69 .. "\\system32\\"
+              local l_6_163 = nil
               local l_6_164 = nil
-              local l_6_165 = nil
-              if #(sysio.GetProcessFromFileName)(l_6_74 .. "services.exe") > 0 then
-                l_6_29 = (string.format)("pid:%d,ProcessStart:%u", (((sysio.GetProcessFromFileName)(l_6_74 .. "services.exe"))[1]).pid, (((sysio.GetProcessFromFileName)(l_6_74 .. "services.exe"))[1]).starttime)
+              if #(sysio.GetProcessFromFileName)(l_6_69 .. "services.exe") > 0 then
+                l_6_29 = (string.format)("pid:%d,ProcessStart:%u", (((sysio.GetProcessFromFileName)(l_6_69 .. "services.exe"))[1]).pid, (((sysio.GetProcessFromFileName)(l_6_69 .. "services.exe"))[1]).starttime)
               end
             end
             l_6_30 = table
             l_6_30 = l_6_30.insert
-            l_6_74 = l_6_9.Processed
+            l_6_69 = l_6_9.Processed
+            local l_6_165 = nil
             local l_6_166 = nil
-            local l_6_167 = nil
-            l_6_30(l_6_74, {process = l_6_20.process})
+            l_6_30(l_6_69, {process = l_6_20.process})
             l_6_30 = MpCommon
             l_6_30 = l_6_30.BmTriggerSig
-            l_6_74 = l_6_29
-            l_6_30(l_6_74, "Heimdall_ProcessDispatch", l_6_20.process)
+            l_6_69 = l_6_29
+            l_6_30(l_6_69, "Heimdall_ProcessDispatch", l_6_20.process)
           end
           l_6_29 = l_6_20.firewall
           if l_6_29 then
             l_6_29 = l_6_20.firewall
             l_6_30 = split
-            l_6_74 = l_6_29
-            l_6_30 = l_6_30(l_6_74, ",")
-            l_6_74 = ipairs
-            l_6_74 = l_6_74(l_6_30)
-            for l_6_171,l_6_172 in l_6_74 do
-              local l_6_168, l_6_169, l_6_170, l_6_171, l_6_172 = nil
-              -- DECOMPILER ERROR at PC1183: Confused about usage of register: R22 in 'UnsetPending'
+            l_6_69 = l_6_29
+            l_6_30 = l_6_30(l_6_69, ",")
+            l_6_69 = ipairs
+            l_6_69 = l_6_69(l_6_30)
+            for l_6_170,l_6_171 in l_6_69 do
+              local l_6_167, l_6_168, l_6_169, l_6_170, l_6_171 = nil
+              -- DECOMPILER ERROR at PC1160: Confused about usage of register: R22 in 'UnsetPending'
 
-              local l_6_173 = nil
-              -- DECOMPILER ERROR at PC1187: Overwrote pending register: R24 in 'AssignReg'
+              local l_6_172 = nil
+              -- DECOMPILER ERROR at PC1164: Overwrote pending register: R24 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC1188: Overwrote pending register: R24 in 'AssignReg'
+              -- DECOMPILER ERROR at PC1165: Overwrote pending register: R24 in 'AssignReg'
 
-              if (MpCommon.Base64Decode)(l_6_80) then
+              if (MpCommon.Base64Decode)(l_6_75) then
+                local l_6_173 = nil
                 local l_6_174 = nil
                 local l_6_175 = nil
-                local l_6_176 = nil
-                l_6_80(l_6_9.Processed, {firewall = (MpCommon.Base64Decode)(l_6_80)})
-                -- DECOMPILER ERROR at PC1193: Overwrote pending register: R24 in 'AssignReg'
+                l_6_75(l_6_9.Processed, {firewall = (MpCommon.Base64Decode)(l_6_75)})
+                -- DECOMPILER ERROR at PC1170: Overwrote pending register: R24 in 'AssignReg'
 
-                l_6_80 = l_6_80((MpCommon.Base64Decode)(l_6_80), "_")
-                l_6_80 = #l_6_80
-                if l_6_80 == 3 then
-                  l_6_80 = tonumber
-                  -- DECOMPILER ERROR at PC1202: Confused about usage of register: R23 in 'UnsetPending'
+                l_6_75 = l_6_75((MpCommon.Base64Decode)(l_6_75), "_")
+                l_6_75 = #l_6_75
+                if l_6_75 == 3 then
+                  l_6_75 = tonumber
+                  -- DECOMPILER ERROR at PC1179: Confused about usage of register: R23 in 'UnsetPending'
 
-                  l_6_80 = l_6_80(l_6_80[2])
-                  -- DECOMPILER ERROR at PC1206: Confused about usage of register: R23 in 'UnsetPending'
+                  l_6_75 = l_6_75(l_6_75[2])
+                  -- DECOMPILER ERROR at PC1183: Confused about usage of register: R23 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1208: Confused about usage of register: R23 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1185: Confused about usage of register: R23 in 'UnsetPending'
 
-                  local l_6_177 = nil
+                  local l_6_176 = nil
                   ;
-                  (MpCommon.AddBlockingFirewallRule)(l_6_80[1], tonumber(l_6_80[3]), (mp.bitand)(l_6_80, 2) == 2, (mp.bitand)(l_6_80, 1) == 1)
+                  (MpCommon.AddBlockingFirewallRule)(l_6_75[1], tonumber(l_6_75[3]), (mp.bitand)(l_6_75, 2) == 2, (mp.bitand)(l_6_75, 1) == 1)
                 end
               end
             end
@@ -1122,34 +1122,34 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
             l_6_29 = l_6_20.sinkholedns
             l_6_30 = split
             l_6_30 = l_6_30(l_6_29, ",")
-            for l_6_186,l_6_187 in ipairs(l_6_30) do
-              local l_6_183, l_6_184, l_6_185, l_6_186, l_6_187 = nil
-              -- DECOMPILER ERROR at PC1245: Confused about usage of register: R22 in 'UnsetPending'
+            for l_6_185,l_6_186 in ipairs(l_6_30) do
+              local l_6_182, l_6_183, l_6_184, l_6_185, l_6_186 = nil
+              -- DECOMPILER ERROR at PC1222: Confused about usage of register: R22 in 'UnsetPending'
+
+              local l_6_187 = nil
+              -- DECOMPILER ERROR at PC1224: Overwrote pending register: R24 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1225: Overwrote pending register: R24 in 'AssignReg'
 
               local l_6_188 = nil
-              -- DECOMPILER ERROR at PC1247: Overwrote pending register: R24 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1248: Overwrote pending register: R24 in 'AssignReg'
-
               local l_6_189 = nil
               local l_6_190 = nil
-              local l_6_191 = nil
-              l_6_80(l_6_9.Processed, {sinkholeDNS_data = (MpCommon.Base64Decode)(l_6_80)})
-              -- DECOMPILER ERROR at PC1255: Overwrote pending register: R24 in 'AssignReg'
+              l_6_75(l_6_9.Processed, {sinkholeDNS_data = (MpCommon.Base64Decode)(l_6_75)})
+              -- DECOMPILER ERROR at PC1232: Overwrote pending register: R24 in 'AssignReg'
 
-              if (MpCommon.Base64Decode)(l_6_80) then
-                l_6_80 = l_6_80((MpCommon.Base64Decode)(l_6_80), "_")
-                -- DECOMPILER ERROR at PC1261: Overwrote pending register: R24 in 'AssignReg'
+              if (MpCommon.Base64Decode)(l_6_75) then
+                l_6_75 = l_6_75((MpCommon.Base64Decode)(l_6_75), "_")
+                -- DECOMPILER ERROR at PC1238: Overwrote pending register: R24 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1264: Confused about usage of register: R23 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1241: Confused about usage of register: R23 in 'UnsetPending'
 
-                l_6_80 = l_6_80(l_6_80[1], tonumber(l_6_80[2]))
-                -- DECOMPILER ERROR at PC1269: Confused about usage of register: R23 in 'UnsetPending'
+                l_6_75 = l_6_75(l_6_75[1], tonumber(l_6_75[2]))
+                -- DECOMPILER ERROR at PC1246: Confused about usage of register: R23 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1271: Confused about usage of register: R23 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1248: Confused about usage of register: R23 in 'UnsetPending'
 
-                local l_6_192 = nil
-                l_6_9["sinkholedns" .. "_" .. l_6_80[1] .. "_" .. l_6_80[2]] = {res = l_6_80, isAllowed = l_6_80[1]}
+                local l_6_191 = nil
+                l_6_9["sinkholedns" .. "_" .. l_6_75[1] .. "_" .. l_6_75[2]] = {res = l_6_75, isAllowed = l_6_75[1]}
               end
             end
           end
@@ -1158,26 +1158,26 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
             l_6_29 = l_6_20.dnscache
             l_6_30 = split
             l_6_30 = l_6_30(l_6_29, ",")
-            for l_6_196,l_6_197 in ipairs(l_6_30) do
-              local l_6_193, l_6_194, l_6_195, l_6_196, l_6_197 = nil
-              -- DECOMPILER ERROR at PC1293: Confused about usage of register: R22 in 'UnsetPending'
+            for l_6_195,l_6_196 in ipairs(l_6_30) do
+              local l_6_192, l_6_193, l_6_194, l_6_195, l_6_196 = nil
+              -- DECOMPILER ERROR at PC1270: Confused about usage of register: R22 in 'UnsetPending'
+
+              local l_6_197 = nil
+              -- DECOMPILER ERROR at PC1272: Overwrote pending register: R24 in 'AssignReg'
+
+              -- DECOMPILER ERROR at PC1273: Overwrote pending register: R24 in 'AssignReg'
 
               local l_6_198 = nil
-              -- DECOMPILER ERROR at PC1295: Overwrote pending register: R24 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC1296: Overwrote pending register: R24 in 'AssignReg'
-
               local l_6_199 = nil
               local l_6_200 = nil
-              local l_6_201 = nil
-              l_6_80(l_6_9.Processed, {dnscache = (MpCommon.Base64Decode)(l_6_80)})
-              -- DECOMPILER ERROR at PC1303: Overwrote pending register: R24 in 'AssignReg'
+              l_6_75(l_6_9.Processed, {dnscache = (MpCommon.Base64Decode)(l_6_75)})
+              -- DECOMPILER ERROR at PC1280: Overwrote pending register: R24 in 'AssignReg'
 
-              if (MpCommon.Base64Decode)(l_6_80) then
-                l_6_80 = l_6_80((MpCommon.Base64Decode)(l_6_80), "_")
-                for i_1,i_2 in ipairs(l_6_80) do
-                  local l_6_202, l_6_203, l_6_204 = nil
-                  l_6_9["dnscache" .. "_" .. i_2], l_6_80 = l_6_80, {[i_2] = (mp.GetDnsCacheRecordsByType)(i_2)}
+              if (MpCommon.Base64Decode)(l_6_75) then
+                l_6_75 = l_6_75((MpCommon.Base64Decode)(l_6_75), "_")
+                for i_1,i_2 in ipairs(l_6_75) do
+                  local l_6_201, l_6_202, l_6_203 = nil
+                  l_6_9["dnscache" .. "_" .. i_2], l_6_75 = l_6_75, {[i_2] = (mp.GetDnsCacheRecordsByType)(i_2)}
                 end
               end
             end
@@ -1187,118 +1187,108 @@ EnablePrecisionPulse = function(l_6_0, l_6_1, l_6_2, l_6_3, l_6_4)
             l_6_29 = l_6_20.debug
             l_6_30 = split
             l_6_30 = l_6_30(l_6_29, ",")
-            local l_6_205 = nil
-            for l_6_209,l_6_210 in ipairs(l_6_30) do
-              local l_6_206, l_6_207, l_6_208, l_6_209, l_6_210 = nil
-              l_6_80 = MpCommon
-              l_6_80 = l_6_80.Base64Decode
-              -- DECOMPILER ERROR at PC1342: Confused about usage of register: R23 in 'UnsetPending'
+            local l_6_204 = nil
+            for l_6_208,l_6_209 in ipairs(l_6_30) do
+              local l_6_205, l_6_206, l_6_207, l_6_208, l_6_209 = nil
+              l_6_75 = MpCommon
+              l_6_75 = l_6_75.Base64Decode
+              -- DECOMPILER ERROR at PC1319: Confused about usage of register: R23 in 'UnsetPending'
 
-              l_6_80 = l_6_80(l_6_80)
+              l_6_75 = l_6_75(l_6_75)
+              local l_6_210 = nil
               local l_6_211 = nil
               local l_6_212 = nil
               local l_6_213 = nil
-              local l_6_214 = nil
               ;
-              (table.insert)(l_6_9.Processed, {debug = l_6_80})
-              for l_6_218,l_6_219 in ipairs((split(l_6_80, "_"))) do
-                local l_6_215, l_6_216, l_6_217, l_6_218, l_6_219 = nil
-                -- DECOMPILER ERROR at PC1359: Overwrote pending register: R33 in 'AssignReg'
+              (table.insert)(l_6_9.Processed, {debug = l_6_75})
+              for l_6_217,l_6_218 in ipairs((split(l_6_75, "_"))) do
+                local l_6_214, l_6_215, l_6_216, l_6_217, l_6_218 = nil
+                -- DECOMPILER ERROR at PC1337: Confused about usage of register: R32 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1360: Confused about usage of register: R32 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1337: Overwrote pending register: R34 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1360: Overwrote pending register: R34 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1338: Overwrote pending register: R35 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1364: Overwrote pending register: R26 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1341: Overwrote pending register: R26 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1365: Confused about usage of register: R32 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1342: Confused about usage of register: R32 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1365: Overwrote pending register: R27 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1342: Overwrote pending register: R27 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1368: Confused about usage of register: R26 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC1345: Confused about usage of register: R26 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC1368: Overwrote pending register: R33 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1346: Overwrote pending register: R34 in 'AssignReg'
 
-                -- DECOMPILER ERROR at PC1369: Overwrote pending register: R34 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC1371: Overwrote pending register: R33 in 'AssignReg'
+                -- DECOMPILER ERROR at PC1347: Overwrote pending register: R35 in 'AssignReg'
 
                 if nil == "PC" then
-                  local l_6_220 = nil
-                  -- DECOMPILER ERROR at PC1372: Overwrote pending register: R34 in 'AssignReg'
+                  local l_6_219 = nil
+                  -- DECOMPILER ERROR at PC1349: Overwrote pending register: R34 in 'AssignReg'
 
-                  -- DECOMPILER ERROR at PC1376: Confused about usage of register: R27 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1350: Overwrote pending register: R35 in 'AssignReg'
 
-                  l_6_90 = l_6_90(pcall(MpCommon.GetPersistContext, nil))
+                  -- DECOMPILER ERROR at PC1353: Confused about usage of register: R27 in 'UnsetPending'
+
                 else
-                  -- DECOMPILER ERROR at PC1381: Confused about usage of register: R26 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1358: Confused about usage of register: R26 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1383: Confused about usage of register: R26 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC1360: Confused about usage of register: R26 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC1383: Overwrote pending register: R33 in 'AssignReg'
+                  -- DECOMPILER ERROR at PC1361: Overwrote pending register: R34 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC1362: Confused about usage of register: R27 in 'UnsetPending'
 
                   if nil == "PCNP" then
-                    l_6_90 = ":"
-                    -- DECOMPILER ERROR at PC1385: Confused about usage of register: R27 in 'UnsetPending'
+                    local l_6_220 = nil
+                    -- DECOMPILER ERROR at PC1364: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC1386: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1368: Confused about usage of register: R27 in 'UnsetPending'
 
-                    local l_6_221 = nil
-                    l_6_90 = table_pack
-                    -- DECOMPILER ERROR at PC1391: Confused about usage of register: R27 in 'UnsetPending'
-
-                    l_6_90 = l_6_90(pcall(MpCommon.GetPersistContextNoPath, nil))
                   else
-                    -- DECOMPILER ERROR at PC1396: Confused about usage of register: R26 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1373: Confused about usage of register: R26 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1398: Confused about usage of register: R26 in 'UnsetPending'
+                    -- DECOMPILER ERROR at PC1375: Confused about usage of register: R26 in 'UnsetPending'
 
-                    -- DECOMPILER ERROR at PC1398: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC1376: Overwrote pending register: R34 in 'AssignReg'
+
+                    -- DECOMPILER ERROR at PC1377: Confused about usage of register: R27 in 'UnsetPending'
 
                     if nil == "RQ" then
-                      l_6_90 = ":"
-                      -- DECOMPILER ERROR at PC1400: Confused about usage of register: R27 in 'UnsetPending'
+                      local l_6_221 = nil
+                      -- DECOMPILER ERROR at PC1379: Overwrote pending register: R34 in 'AssignReg'
 
-                      -- DECOMPILER ERROR at PC1401: Overwrote pending register: R33 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC1383: Confused about usage of register: R27 in 'UnsetPending'
 
-                      local l_6_222 = nil
-                      l_6_90 = table_pack
-                      -- DECOMPILER ERROR at PC1406: Confused about usage of register: R27 in 'UnsetPending'
-
-                      l_6_90 = l_6_90(pcall(MpCommon.RollingQueueQuery, nil))
                     else
-                      -- DECOMPILER ERROR at PC1411: Confused about usage of register: R26 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1388: Confused about usage of register: R26 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC1413: Confused about usage of register: R26 in 'UnsetPending'
+                      -- DECOMPILER ERROR at PC1390: Confused about usage of register: R26 in 'UnsetPending'
 
-                      -- DECOMPILER ERROR at PC1413: Overwrote pending register: R33 in 'AssignReg'
+                      -- DECOMPILER ERROR at PC1391: Overwrote pending register: R34 in 'AssignReg'
+
+                      -- DECOMPILER ERROR at PC1392: Confused about usage of register: R27 in 'UnsetPending'
 
                       if nil == "AC" then
-                        l_6_90 = ":"
-                        -- DECOMPILER ERROR at PC1415: Confused about usage of register: R27 in 'UnsetPending'
+                        local l_6_222 = nil
+                        -- DECOMPILER ERROR at PC1394: Overwrote pending register: R34 in 'AssignReg'
 
-                        -- DECOMPILER ERROR at PC1416: Overwrote pending register: R33 in 'AssignReg'
+                        -- DECOMPILER ERROR at PC1398: Confused about usage of register: R27 in 'UnsetPending'
 
-                        local l_6_223 = nil
-                        l_6_90 = table_pack
-                        -- DECOMPILER ERROR at PC1421: Confused about usage of register: R27 in 'UnsetPending'
-
-                        l_6_90 = l_6_90(pcall(MpCommon.AtomicCounterValueEx, nil))
                       end
                     end
                   end
                 end
               end
             end
-            l_6_9.debug = {[l_6_89] = l_6_90, [l_6_89] = l_6_90, [l_6_89] = l_6_90, [l_6_89] = l_6_90}
+            l_6_9.debug = {[nil .. l_6_85 .. l_6_86] = l_6_85, [nil .. l_6_85 .. nil] = l_6_85, [nil .. l_6_85 .. nil] = l_6_85, [nil .. l_6_85 .. nil] = l_6_85}
           end
           l_6_29 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
           l_6_10.report = safeJsonSerialize(l_6_9, 260)
           l_6_10.TAG = "NOLOOKUP"
           SafeGetUrlReputation(l_6_30, l_6_10, false, 2000)
-          -- DECOMPILER ERROR at PC1445: Confused about usage of register R38 for local variables in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC1422: Confused about usage of register R40 for local variables in 'ReleaseLocals'
 
-          -- DECOMPILER ERROR: 60 unprocessed JMP targets
+          -- DECOMPILER ERROR: 61 unprocessed JMP targets
         end
       end
     end
