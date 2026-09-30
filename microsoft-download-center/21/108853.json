@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SqlTempDiskInit",
+    "downloadDescription": "Azure VM Ephemeral Storage Initialization for SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLTempDiskInit-V1.0.0.zip",
+            "url": "https://download.microsoft.com/download/14b13da6-a7f1-4cf4-9381-9b8ece51a47c/SQLTempDiskInit-V1.0.0.zip",
+            "size": "1591476",
+            "version": "1.0.0",
+            "datePublished": "9/30/2026 3:26:45 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A self-installing Windows service that identifies eligible local ephemeral NVMe disks, prepares the required volumes and directories, and coordinates startup with SQL Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "SQLTempDiskInit-V1.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "9/30/2026",
+    "systemRequirementsSection": "Windows and .net 10 runtime",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "On an Azure VM with SQL Server installed. Unzip the downloaded folder, read the readme.md, edit the config settings, run the application and install it as a service.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108853",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
