@@ -4,7 +4,7 @@
 -- params : ...
 -- function num : 0
 if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  if (bm.GetSignatureMatchDuration)() > 30000000 then
+  if (bm.GetSignatureMatchDuration)() > 50000000 then
     return mp.CLEAN
   end
   local l_0_0 = ((this_sigattrlog[1]).utf8p2):lower()
