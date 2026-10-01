@@ -120,15 +120,25 @@ end
     -- DECOMPILER ERROR at PC99: Confused about usage of register: R16 in 'UnsetPending'
 
     if type(R16_PC99) == "string" and R16_PC99 ~= "" then
-      if l_0_11(l_0_6(R16_PC99), l_0_7) then
+      if l_0_11(l_0_6(l_0_17), l_0_7) then
+        if GetRollingQueueKeyValue("IsClickFixCMD", R16_PC99) then
+          set_research_data("WebClipSource", tostring(GetRollingQueueKeyValue("IsClickFixCMD", R16_PC99)), false)
+        end
         return mp.INFECTED
       end
-      if l_0_11(l_0_6(l_0_5(R16_PC99)), l_0_10) then
+      local l_0_18 = nil
+      if l_0_11(l_0_6(l_0_5(l_0_17)), l_0_10) then
+        if l_0_18 then
+          set_research_data("WebClipSource", tostring(l_0_18), false)
+        end
         return mp.INFECTED
       end
-      if l_0_6(l_0_5(R16_PC99)) ~= nil then
-        local l_0_18 = nil
-        if l_0_12(l_0_6(l_0_5(R16_PC99))) ~= nil and (string.find)(l_0_8, l_0_12(l_0_6(l_0_5(R16_PC99))), 1, true) then
+      if l_0_6(l_0_5(l_0_17)) ~= nil then
+        local l_0_19 = nil
+        if l_0_12(l_0_6(l_0_5(l_0_17))) ~= nil and (string.find)(l_0_8, l_0_12(l_0_6(l_0_5(l_0_17))), 1, true) then
+          if l_0_18 then
+            set_research_data("WebClipSource", tostring(l_0_18), false)
+          end
           return mp.INFECTED
         end
       end
