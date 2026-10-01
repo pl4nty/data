@@ -2642,35 +2642,278 @@ cves = {"CVE-2009-3867", "CVE-2009-3869", "CVE-2009-3871", "CVE-2009-3874", "CVE
     -- DECOMPILER ERROR at PC5018: Overwrote pending register: R46 in 'AssignReg'
 
     l_1_51 = {vendor = l_1_52, product = l_1_52, vsi = l_1_52, vee = l_1_52, [l_1_52] = l_1_53}
-    l_1_51 = "microsoft"
-    l_1_51 = "microsoft_vulnerability_inventory_test_app"
-    -- DECOMPILER ERROR at PC5025: No list found for R8 , SetList fails
+    l_1_51 = "4.7.37"
+    -- DECOMPILER ERROR at PC5025: Overwrote pending register: R47 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC5027: Overwrote pending register: R10 in 'AssignReg'
+    l_1_52 = {vendor = l_1_53, product = l_1_53, vsi = l_1_53, vee = l_1_53, [l_1_53] = l_1_54}
+    l_1_52 = "4.8"
+    l_1_52 = "4.8.32"
+    -- DECOMPILER ERROR at PC5034: Overwrote pending register: R48 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC5028: Overwrote pending register: R11 in 'AssignReg'
+    l_1_53 = {vendor = l_1_54, product = l_1_54, vee = l_1_54, [l_1_54] = l_1_55}
+    l_1_53 = "4.9"
+    l_1_53 = "4.9.33"
+    -- DECOMPILER ERROR at PC5043: Overwrote pending register: R49 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC5029: Confused about usage of register: R10 in 'OutputAssignments'
+    l_1_54 = {vendor = l_1_55, product = l_1_55, vsi = l_1_55, vee = l_1_55, [l_1_55] = l_1_56}
+    l_1_54 = "5.0"
+    l_1_54 = "5.0.29"
+    -- DECOMPILER ERROR at PC5052: Overwrote pending register: R50 in 'AssignReg'
+
+    l_1_55 = {cve = l_1_56, vendor = l_1_56, product = l_1_56, vee = l_1_56}
+    l_1_55 = "5.1"
+    l_1_55 = "5.1.26"
+    -- DECOMPILER ERROR at PC5061: Overwrote pending register: R51 in 'AssignReg'
+
+    l_1_56 = {cve = l_1_57, vendor = l_1_57, product = l_1_57, vee = l_1_57}
+    l_1_56 = "5.2"
+    l_1_56 = "5.2.28"
+    -- DECOMPILER ERROR at PC5070: Overwrote pending register: R52 in 'AssignReg'
+
+    l_1_57 = {vendor = l_1_58, product = l_1_58, vee = l_1_58, [l_1_58] = l_1_59}
+    l_1_57 = "5.3"
+    l_1_57 = "5.3.25"
+    -- DECOMPILER ERROR at PC5079: Overwrote pending register: R53 in 'AssignReg'
+
+    l_1_58 = {vendor = l_1_59, product = l_1_59, vsi = l_1_59, vee = l_1_59, [l_1_59] = l_1_60}
+    l_1_58 = "5.4"
+    l_1_58 = "5.4.23"
+    -- DECOMPILER ERROR at PC5088: Overwrote pending register: R54 in 'AssignReg'
+
+    l_1_59 = {vendor = l_1_60, product = l_1_60, vsi = l_1_60, vee = l_1_60, 
+[l_1_60] = {"CVE-2026-58612", "CVE-2026-70338"}
+}
+    l_1_59 = "5.5"
+    l_1_59 = "5.5.22"
+    -- DECOMPILER ERROR at PC5097: Overwrote pending register: R55 in 'AssignReg'
+
+    l_1_60 = {vendor = "microsoft", product = "powershell", vsi = "7.6", vee = "7.6.5", 
+cves = {"CVE-2026-58612", "CVE-2026-70338"}
+}
+    l_1_60 = "5.6"
+    l_1_60 = "5.6.21"
+    -- DECOMPILER ERROR at PC5106: Overwrote pending register: R56 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5115: Overwrote pending register: R57 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5124: Overwrote pending register: R58 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5141: No list found for R8 , SetList fails
+
+    -- DECOMPILER ERROR at PC5143: Overwrote pending register: R10 in 'AssignReg'
+
+    l_1_15 = {vendor = l_1_16, product = l_1_16, vsi = l_1_16, vee = l_1_16, [l_1_16] = l_1_17}
+    l_1_15 = "6.1"
+    l_1_15 = "6.1.14"
+    -- DECOMPILER ERROR at PC5152: Overwrote pending register: R11 in 'AssignReg'
+
+    l_1_16 = {vendor = l_1_17, product = l_1_17, vsi = l_1_17, vee = l_1_17, [l_1_17] = l_1_18}
+    l_1_16 = "6.2"
+    l_1_16 = "6.2.13"
+    -- DECOMPILER ERROR at PC5161: Overwrote pending register: R12 in 'AssignReg'
+
+    l_1_17 = {cve = l_1_18, vendor = l_1_18, product = l_1_18, version = l_1_18}
+    l_1_17 = "6.3"
+    l_1_17 = "6.3.12"
+    -- DECOMPILER ERROR at PC5170: Overwrote pending register: R13 in 'AssignReg'
+
+    l_1_18 = {vendor = "google", product = "chrome", vee = l_1_19, [l_1_19] = l_1_20}
+    l_1_18 = "6.4"
+    l_1_18 = "6.4.12"
+    -- DECOMPILER ERROR at PC5179: Overwrote pending register: R14 in 'AssignReg'
+
+    l_1_19 = {vendor = l_1_20, product = l_1_20, vee = l_1_20, [l_1_20] = l_1_21}
+    l_1_19 = "6.5"
+    l_1_19 = "6.5.12"
+    -- DECOMPILER ERROR at PC5188: Overwrote pending register: R15 in 'AssignReg'
+
+    l_1_20 = {vendor = l_1_21, product = l_1_21, vee = l_1_21, [l_1_21] = l_1_22}
+    l_1_20 = "6.6"
+    l_1_20 = "6.6.9"
+    -- DECOMPILER ERROR at PC5197: Overwrote pending register: R16 in 'AssignReg'
+
+    l_1_21 = {vendor = l_1_22, product = l_1_22, vsi = l_1_22, vee = l_1_22, [l_1_22] = l_1_23}
+    l_1_21 = "6.7"
+    l_1_21 = "6.7.9"
+    -- DECOMPILER ERROR at PC5206: Overwrote pending register: R17 in 'AssignReg'
+
+    l_1_22 = {vendor = l_1_23, product = l_1_23, vsi = l_1_23, vee = l_1_23, [l_1_23] = l_1_24}
+    l_1_22 = "6.8"
+    l_1_22 = "6.8.10"
+    -- DECOMPILER ERROR at PC5215: Overwrote pending register: R18 in 'AssignReg'
+
+    l_1_23 = {vendor = l_1_24, product = l_1_24, vsi = l_1_24, vee = l_1_24, [l_1_24] = l_1_25}
+    l_1_23 = "6.9"
+    l_1_23 = "6.9.9"
+    -- DECOMPILER ERROR at PC5224: Overwrote pending register: R19 in 'AssignReg'
+
+    l_1_24 = {vendor = l_1_25, product = l_1_25, vee = l_1_25, [l_1_25] = l_1_26}
+    l_1_24 = "7.0"
+    l_1_24 = "7.0.6"
+    -- DECOMPILER ERROR at PC5233: Overwrote pending register: R20 in 'AssignReg'
+
+    l_1_25 = {vendor = l_1_26, product = l_1_26, vsi = l_1_26, vee = l_1_26, [l_1_26] = l_1_27}
+    l_1_25 = "7.1"
+    l_1_25 = "7.1.2"
+    -- DECOMPILER ERROR at PC5242: Overwrote pending register: R21 in 'AssignReg'
+
+    l_1_26 = {vendor = "adobe", product = l_1_27, vee = l_1_27, [l_1_27] = l_1_28}
+    l_1_26 = "arista"
+    l_1_26 = "velocloud_orchestrator"
+    l_1_26 = "5.2.0"
+    l_1_26 = "5.2.3.16"
+    -- DECOMPILER ERROR at PC5253: Overwrote pending register: R22 in 'AssignReg'
+
+    l_1_27 = {vendor = "adobe", product = l_1_28, vee = l_1_28, [l_1_28] = l_1_29}
+    l_1_27 = "arista"
+    l_1_27 = "velocloud_orchestrator"
+    l_1_27 = "6.1.0"
+    l_1_27 = "6.1.3.7"
+    -- DECOMPILER ERROR at PC5264: Overwrote pending register: R23 in 'AssignReg'
+
+    l_1_28 = {vendor = "adobe", product = l_1_29, vee = l_1_29, [l_1_29] = l_1_30}
+    l_1_28 = "arista"
+    l_1_28 = "velocloud_orchestrator"
+    l_1_28 = "6.4.0"
+    l_1_28 = "6.4.2.8"
+    -- DECOMPILER ERROR at PC5275: Overwrote pending register: R24 in 'AssignReg'
+
+    l_1_29 = {cve = l_1_30, vendor = l_1_30, product = l_1_30, vee = l_1_30}
+    l_1_29 = "arista"
+    l_1_29 = "velocloud_orchestrator"
+    l_1_29 = "7.0.0.2"
+    -- DECOMPILER ERROR at PC5285: Overwrote pending register: R25 in 'AssignReg'
+
+    l_1_30 = {cve = l_1_31, vendor = l_1_31, product = l_1_31, vee = l_1_31}
+    l_1_30 = "cisco"
+    l_1_30 = "catalyst_sd-wan_manager"
+    l_1_30 = "20.9.10.1"
+    -- DECOMPILER ERROR at PC5294: Overwrote pending register: R26 in 'AssignReg'
+
+    l_1_31 = {cve = l_1_32, vendor = l_1_32, product = l_1_32, vsi = l_1_32, vei = l_1_32}
+    l_1_31 = "cisco"
+    l_1_31 = "catalyst_sd-wan_manager"
+    l_1_31 = "20.12"
+    l_1_31 = "20.12.8.2"
+    -- DECOMPILER ERROR at PC5305: Overwrote pending register: R27 in 'AssignReg'
+
+    l_1_32 = {cve = l_1_33, vendor = l_1_33, product = l_1_33, version = l_1_33}
+    l_1_32 = "cisco"
+    l_1_32 = "catalyst_sd-wan_manager"
+    l_1_32 = "20.15"
+    l_1_32 = "20.15.6.1"
+    -- DECOMPILER ERROR at PC5316: Overwrote pending register: R28 in 'AssignReg'
+
+    l_1_33 = {cve = l_1_34, vendor = "google", product = "chrome", vee = l_1_34}
+    l_1_33 = "cisco"
+    l_1_33 = "catalyst_sd-wan_manager"
+    l_1_33 = "20.18"
+    l_1_33 = "20.18.4.1"
+    -- DECOMPILER ERROR at PC5327: Overwrote pending register: R29 in 'AssignReg'
+
+    l_1_34 = {cve = l_1_35, vendor = l_1_35, product = l_1_35, vee = l_1_35}
+    l_1_34 = "cisco"
+    l_1_34 = "catalyst_sd-wan_manager"
+    l_1_34 = "26.1"
+    l_1_34 = "26.1.2.1"
+    -- DECOMPILER ERROR at PC5338: Overwrote pending register: R30 in 'AssignReg'
+
+    l_1_35 = {cve = l_1_36, vendor = l_1_36, product = l_1_36, vee = l_1_36}
+    l_1_35 = "cisco"
+    l_1_35 = "catalyst_sd-wan_manager"
+    l_1_35 = "26.2"
+    -- DECOMPILER ERROR at PC5347: Overwrote pending register: R31 in 'AssignReg'
+
+    l_1_36 = {vendor = l_1_37, product = l_1_37, vsi = l_1_37, vee = l_1_37, [l_1_37] = l_1_38}
+    l_1_36 = "teamviewer"
+    l_1_36 = "15.0"
+    l_1_36 = "15.82"
+    l_1_36 = "cves"
+    -- DECOMPILER ERROR at PC5357: Overwrote pending register: R33 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5358: Overwrote pending register: R34 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5359: Overwrote pending register: R35 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5360: Overwrote pending register: R36 in 'AssignReg'
+
+    l_1_41, l_1_40, l_1_39, l_1_38 = {cve = l_1_42, vendor = "jfrog", product = "artifactory", vsi = "7.125.0", vee = l_1_42}, {cve = l_1_41, vendor = "jfrog", product = "artifactory", vsi = "7.117.0", vee = l_1_41}, {cve = l_1_40, vendor = "jfrog", product = "artifactory", vsi = l_1_40, vee = l_1_40}, {vendor = l_1_39, product = l_1_39, vsi = l_1_39, vee = l_1_39, [l_1_39] = l_1_40}
+    l_1_37 = {l_1_38, l_1_39, l_1_40, l_1_41; vendor = l_1_38, product = l_1_38, vsi = l_1_38, vee = l_1_38, [l_1_38] = l_1_39}
+    l_1_37 = "CVE-2026-92368"
+    l_1_37 = "teamviewer"
+    l_1_37 = "teamviewer"
+    l_1_37 = "15.70"
+    l_1_37 = "15.82"
+    l_1_38 = "teamviewer"
+    l_1_38 = "remote"
+    l_1_38 = "15.0"
+    l_1_38 = "15.82"
+    l_1_38 = "cves"
+    l_1_40 = "CVE-2026-92370"
+    l_1_41 = "CVE-2026-19743"
+    -- DECOMPILER ERROR at PC5387: Overwrote pending register: R37 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5388: Overwrote pending register: R38 in 'AssignReg'
+
+    l_1_43, l_1_42 = {cve = l_1_44, vendor = "jfrog", product = "artifactory", vsi = "7.146.0", vee = l_1_44}, {cve = l_1_43, vendor = "jfrog", product = "artifactory", vsi = "7.133.0", vee = l_1_43}
+    l_1_39 = {l_1_40, l_1_41, l_1_42, l_1_43}
+    l_1_39 = "CVE-2026-92368"
+    l_1_39 = "teamviewer"
+    l_1_39 = "remote"
+    l_1_39 = "15.70"
+    l_1_39 = "15.82"
+    l_1_40 = "teamviewer"
+    l_1_40 = "teamviewer"
+    l_1_40 = "14.7.0"
+    l_1_40 = "14.7.48855"
+    l_1_40 = "cves"
+    l_1_42 = "CVE-2026-92370"
+    l_1_43 = "CVE-2026-19743"
+    -- DECOMPILER ERROR at PC5415: Overwrote pending register: R39 in 'AssignReg'
+
+    l_1_44 = {cve = l_1_45, vendor = "jfrog", product = "artifactory", vsi = "7.161.0", vee = l_1_45}
+    l_1_41 = {l_1_42, l_1_43, l_1_44}
+    l_1_41 = "teamviewer"
+    l_1_41 = "teamviewer"
+    l_1_41 = "13.2.0"
+    l_1_41 = "13.2.36230"
+    l_1_41 = "cves"
+    l_1_43 = "CVE-2026-92370"
+    l_1_44 = "CVE-2026-19743"
+    -- DECOMPILER ERROR at PC5431: Overwrote pending register: R40 in 'AssignReg'
+
+    l_1_45 = {cve = l_1_46, vendor = "jfrog", product = "artifactory", vee = l_1_46}
+    l_1_42 = {l_1_43, l_1_44, l_1_45}
+    l_1_42 = "MVID-2026-99999"
+    l_1_42 = "microsoft"
+    l_1_42 = "microsoft_vulnerability_inventory_test_app"
+    -- DECOMPILER ERROR at PC5442: No list found for R8 , SetList fails
+
+    -- DECOMPILER ERROR at PC5444: Overwrote pending register: R10 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5445: Overwrote pending register: R11 in 'AssignReg'
+
+    -- DECOMPILER ERROR at PC5446: Confused about usage of register: R10 in 'OutputAssignments'
 
     for l_1_18,l_1_19 in l_1_15 do
-      l_1_17 = {cve = l_1_18, vendor = l_1_18, product = l_1_18, version = l_1_18}
-      -- DECOMPILER ERROR at PC5031: Overwrote pending register: R15 in 'AssignReg'
+      l_1_17 = {cve = l_1_18, vendor = "wordpress", product = "wordpress", vsi = l_1_18, vee = l_1_18}
+      -- DECOMPILER ERROR at PC5448: Overwrote pending register: R15 in 'AssignReg'
 
-      l_1_19 = {vendor = l_1_20, product = l_1_20, vee = l_1_20, [l_1_20] = l_1_21}
-      -- DECOMPILER ERROR at PC5032: Overwrote pending register: R16 in 'AssignReg'
+      l_1_19 = {cve = l_1_20, vendor = "wordpress", product = "wordpress", vsi = l_1_20, vee = l_1_20}
+      -- DECOMPILER ERROR at PC5449: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5033: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5450: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5034: Overwrote pending register: R15 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5451: Overwrote pending register: R15 in 'AssignReg'
 
-      l_1_22, l_1_21, l_1_20 = {vendor = l_1_23, product = l_1_23, vsi = l_1_23, vee = l_1_23, [l_1_23] = l_1_24}, {vendor = l_1_22, product = l_1_22, vsi = l_1_22, vee = l_1_22, [l_1_22] = l_1_23}, {vendor = l_1_21, product = l_1_21, vee = l_1_21, [l_1_21] = l_1_22}
-      l_1_21, l_1_14 = l_1_14[l_1_20], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-63030", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4", cve = "CVE-2026-58187", vendor = "apache", product = "traffic_server", vsi = "10.0.0", vee = "10.1.4", cve = l_1_15, vendor = l_1_15, product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = l_1_15, product = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vei = l_1_15, vendor = l_1_15, product = l_1_15, vei = l_1_15, [l_1_15] = l_1_16, vendor = l_1_15, product = l_1_15, vsi = "10.0.0", vee = l_1_15, [l_1_15] = l_1_16}
+      l_1_22, l_1_21, l_1_20 = {cve = l_1_23, vendor = "wordpress", product = "wordpress", vsi = l_1_23, vee = l_1_23}, {cve = l_1_22, vendor = "wordpress", product = "wordpress", vsi = l_1_22, vee = l_1_22}, {cve = l_1_21, vendor = "wordpress", product = "wordpress", vsi = l_1_21, vee = l_1_21}
+      l_1_21, l_1_14 = l_1_14[l_1_20], {cve = "CVE-2026-11670", vendor = "google", product = "chrome", vee = "149.0.7827.103", cve = "CVE-2026-63030", vendor = "wordpress", product = "wordpress", vsi = "6.9.0", vei = "6.9.4", cve = "CVE-2026-58187", vendor = "apache", product = "traffic_server", vsi = "10.0.0", vee = "10.1.4", cve = l_1_15, vendor = l_1_15, product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = l_1_15, product = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vee = l_1_15, cve = l_1_15, vendor = "adobe", product = l_1_15, vsi = l_1_15, vei = l_1_15, vendor = l_1_15, product = l_1_15, vei = l_1_15, [l_1_15] = l_1_16, vendor = l_1_15, product = l_1_15, vsi = "10.0.0", vee = l_1_15, [l_1_15] = l_1_16, cve = l_1_15, vendor = "wordpress", product = "wordpress", vsi = l_1_15, vee = l_1_15}
       l_1_22 = nil
       if l_1_21 == l_1_22 then
         l_1_22 = l_1_19.vendor
         l_1_22 = l_1_19.product
         l_1_22 = "rs"
-        l_1_23 = {vendor = l_1_24, product = l_1_24, vsi = l_1_24, vee = l_1_24, [l_1_24] = l_1_25}
+        l_1_23 = {cve = l_1_24, vendor = "wordpress", product = "wordpress", vsi = l_1_24, vee = l_1_24}
         l_1_21 = {vendor = l_1_22, product = l_1_22, [l_1_22] = l_1_23}
       end
       l_1_21 = l_1_14[l_1_20]
@@ -2684,44 +2927,44 @@ cves = {"CVE-2009-3867", "CVE-2009-3869", "CVE-2009-3871", "CVE-2009-3874", "CVE
       l_1_22 = l_1_22 + l_1_23
     end
     for i_1,l_1_20 in pairs(l_1_14) do
-      -- DECOMPILER ERROR at PC5071: Overwrote pending register: R16 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5488: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5072: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5489: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5075: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5492: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5076: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5493: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5078: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5495: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5081: Overwrote pending register: R17 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5498: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC5082: Overwrote pending register: R18 in 'AssignReg'
+      -- DECOMPILER ERROR at PC5499: Overwrote pending register: R18 in 'AssignReg'
 
       if l_1_22 == l_1_23 then
         for l_1_25,l_1_26 in l_1_22 do
-          -- DECOMPILER ERROR at PC5085: Overwrote pending register: R22 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5502: Overwrote pending register: R22 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC5086: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5503: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC5088: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5505: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC5091: Overwrote pending register: R23 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5508: Overwrote pending register: R23 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC5092: Overwrote pending register: R24 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5509: Overwrote pending register: R24 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC5093: Overwrote pending register: R24 in 'AssignReg'
+          -- DECOMPILER ERROR at PC5510: Overwrote pending register: R24 in 'AssignReg'
 
           if l_1_27 ~= l_1_28 then
             for l_1_31,l_1_32 in l_1_28 do
-              -- DECOMPILER ERROR at PC5096: Overwrote pending register: R28 in 'AssignReg'
+              -- DECOMPILER ERROR at PC5513: Overwrote pending register: R28 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC5097: Overwrote pending register: R29 in 'AssignReg'
+              -- DECOMPILER ERROR at PC5514: Overwrote pending register: R29 in 'AssignReg'
 
-              l_1_32 = {cve = l_1_33, vendor = l_1_33, product = l_1_33, version = l_1_33}
-              -- DECOMPILER ERROR at PC5098: Overwrote pending register: R30 in 'AssignReg'
+              l_1_32 = {cve = l_1_33, vendor = l_1_33, product = l_1_33, vsi = l_1_33, vee = l_1_33}
+              -- DECOMPILER ERROR at PC5515: Overwrote pending register: R30 in 'AssignReg'
 
-              -- DECOMPILER ERROR at PC5099: Confused about usage of register: R28 in 'OutputAssignments'
+              -- DECOMPILER ERROR at PC5516: Confused about usage of register: R28 in 'OutputAssignments'
 
               if l_1_33 then
                 l_1_33 = l_1_32.cve
@@ -2741,19 +2984,19 @@ cves = {"CVE-2009-3867", "CVE-2009-3869", "CVE-2009-3871", "CVE-2009-3874", "CVE
                   l_1_34 = l_1_32[l_1_34]
                   l_1_33 = l_1_33(l_1_34)
                   for l_1_36,l_1_37 in l_1_33 do
-                    -- DECOMPILER ERROR at PC5120: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC5537: Overwrote pending register: R33 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC5121: Overwrote pending register: R34 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC5538: Overwrote pending register: R34 in 'AssignReg'
 
-                    -- DECOMPILER ERROR at PC5122: Overwrote pending register: R33 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC5539: Overwrote pending register: R33 in 'AssignReg'
 
-                    l_1_38, l_1_39 = {vendor = l_1_39, product = l_1_39, vsi = l_1_39, vee = l_1_39, [l_1_39] = l_1_40}, {cve = l_1_40, vendor = "jfrog", product = "artifactory", vsi = l_1_40, vee = l_1_40}
+                    l_1_38, l_1_39 = {cve = l_1_39, vendor = l_1_39, product = l_1_39, vsi = l_1_39, vee = l_1_39}, {vendor = l_1_40, product = l_1_40, vsi = l_1_40, vee = l_1_40, [l_1_40] = l_1_41}
                     l_1_39 = l_1_26
-                    -- DECOMPILER ERROR at PC5124: Overwrote pending register: R35 in 'AssignReg'
+                    -- DECOMPILER ERROR at PC5541: Overwrote pending register: R35 in 'AssignReg'
 
                     l_1_37 = {vendor = l_1_38, product = l_1_38, vsi = l_1_38, vee = l_1_38, [l_1_38] = l_1_39}
                     l_1_38(l_1_39, l_1_40)
-                    l_1_40 = {cve = l_1_41, vendor = "jfrog", product = "artifactory", vsi = "7.117.0", vee = l_1_41}
+                    l_1_40 = {vendor = l_1_41, product = l_1_41, vsi = l_1_41, vee = l_1_41, [l_1_41] = l_1_42}
                   end
                 end
               end
@@ -2762,7 +3005,7 @@ cves = {"CVE-2009-3867", "CVE-2009-3869", "CVE-2009-3871", "CVE-2009-3874", "CVE
         end
       end
     end
-    -- DECOMPILER ERROR at PC5134: Confused about usage of register R32 for local variables in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC5551: Confused about usage of register R32 for local variables in 'ReleaseLocals'
 
   end
 end
