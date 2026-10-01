@@ -5,5 +5,8 @@
             "FullSetFrequency": 100,
             "FullSetLogEnabled": false
         }
+    },
+    "MicrosoftDefenderForWindowsClient": {
+        "DCO_MpFC_NisSrvWatchDogTimeoutSeconds": 120
     }
 }

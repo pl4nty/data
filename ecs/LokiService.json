@@ -713,7 +713,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260914.3.0",
+        "LpcVersion": "1.20260921.3.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -1540,6 +1540,7 @@
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,
+        "HardenApplicationOnlyTokenAcquisition": true,
         "HighlightBasedPromptConfig": {
             "Prompts": {
                 "PeopleHighlightsCollabNetComment": [
@@ -1652,20 +1653,47 @@
         "IsNotifyEmailEnabled": true,
         "KeepAliveMax": 100,
         "KnownToolCallBuckets": {
-            "tools": {
-                "WebGrounding-browse": "tool-web-search-v1",
-                "WebGrounding-web": "tool-web-search-v1",
-                "WorkIQ-call_function": "tool-graph-api-v1",
-                "WorkIQ-create_entity": "tool-graph-api-v1",
-                "WorkIQ-delete_entity": "tool-graph-api-v1",
-                "WorkIQ-fetch": "tool-graph-api-v1",
-                "WorkIQ-fetch_blob": "tool-graph-api-v1",
-                "WorkIQ-search_paths": "tool-graph-api-v1",
-                "WorkIQ-update_entity": "tool-graph-api-v1",
-                "web_fetch": "tool-web-search-v1",
-                "web_search": "tool-web-search-v1"
+            "categories": {
+                "local": "category-01",
+                "web": "tool-web-search-v1",
+                "workiq-api": "tool-graph-api-v1",
+                "workiq-ask": "category-03",
+                "workiq-metadata": "category-02",
+                "workiq-retrieve": "category-04"
             },
-            "version": 1
+            "tools": {
+                "WebGrounding-browse": "web",
+                "WebGrounding-web": "web",
+                "WorkIQ-ask": "workiq-ask",
+                "WorkIQ-call_function": "workiq-api",
+                "WorkIQ-create_entity": "workiq-api",
+                "WorkIQ-delete_entity": "workiq-api",
+                "WorkIQ-do_action": "workiq-api",
+                "WorkIQ-fetch": "workiq-api",
+                "WorkIQ-fetch_blob": "workiq-api",
+                "WorkIQ-get_schema": "workiq-metadata",
+                "WorkIQ-list_agents": "workiq-metadata",
+                "WorkIQ-retrieve": "workiq-retrieve",
+                "WorkIQ-search_paths": "workiq-api",
+                "WorkIQ-update_entity": "workiq-api",
+                "create": "local",
+                "edit": "local",
+                "glob": "local",
+                "grep": "local",
+                "list_agents": "local",
+                "list_powershell": "local",
+                "powershell": "local",
+                "read_agent": "local",
+                "read_powershell": "local",
+                "skill": "local",
+                "stop_powershell": "local",
+                "task": "local",
+                "view": "local",
+                "web_fetch": "web",
+                "web_search": "web",
+                "write_agent": "local"
+            },
+            "version": 2
         },
         "LPCConfigProviderRefactoring": false,
         "LPCV2BundleName": "lpcwebvanilla",

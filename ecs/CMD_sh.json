@@ -1458,7 +1458,6 @@
         "RMSResizePendingForOriginalLicenseRemovedAndTargetLicenseAssign": true,
         "ReduceSnapshotAcrossRegionQueryIntervalForMove": true,
         "RegionOutageNewWorkflow": false,
-        "RemovePreviewTagInRadarReportEntry": true,
         "ReportNewConnectivityStatusEnums": true,
         "ReserveCloudPCNoConnectionEvent": true,
         "ReserveLicenseExpiring": true,
