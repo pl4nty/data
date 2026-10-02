@@ -12,7 +12,8 @@ def request(url, max_retries=6, retry_delay=10):
             time.sleep(retry_delay)
             return request(url, max_retries-1, retry_delay)
         else:
-            raise SystemExit
+            raise RuntimeError(f"{url} failed after retries: {response.status_code} {response.text[:200]}")
+    response.raise_for_status()
     return response
 
 root = 'uupdump'
@@ -22,7 +23,8 @@ if os.path.exists(update_id_file):
     with open(update_id_file, 'r') as f:
         existing_update_id = f.read().strip()
 
-updates = request('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=canary').json()
+# ring=canary returns NO_UPDATE_FOUND since ~29617; rs_prerelease builds are now served on ring=dev
+updates = request('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=dev').json()
 update = updates['response']['updateArray'][0]
 updateId = update['updateId']
 if updateId == existing_update_id:
