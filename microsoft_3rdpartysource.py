@@ -273,6 +273,18 @@ def download_zip_contents(zip_handle, exclude_paths=None, output_dir='msedge'):
     print(f"Downloaded {processed_files} files to {output_dir}/")
 
 
+def remap_edge_root(zip_handle: RemoteZip):
+    """Rename the archive's single root folder (e.g. Edge_4313.0_3_WIN_x64_WithPrivBins_folder/) to src/"""
+    roots = {info.filename.split('/', 1)[0] for info in zip_handle.infolist()}
+    if len(roots) != 1:
+        raise ValueError(f"Expected a single root folder in Edge archive, found {sorted(roots)[:5]}")
+    root = roots.pop() + '/'
+    # zipfile validates local headers against orig_filename, so renaming is safe
+    for info in zip_handle.infolist():
+        info.filename = 'src/' + info.filename[len(root):]
+    print(f"Mapped {root} to src/")
+
+
 def extract_third_party_metadata(zip_handle: RemoteZip):
     """Extract metadata about third_party contents"""
     third_party = {}
@@ -460,26 +472,9 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
 
 
 def main():
-    # unzip service using blobs and function trigger. legacy polling-based trigger with up to 15 mins latency
-    in_sas_url = os.getenv('AZURE_STORAGE_IN')
-    if not in_sas_url:
-        raise ValueError(
-            "AZURE_STORAGE_IN environment variable not set")
-    out_sas_url = os.getenv('AZURE_STORAGE_OUT')
-    if not out_sas_url:
-        raise ValueError("AZURE_STORAGE_OUT environment variable not set")
-    
     # latest_electron = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Microsoft%20Electron/35.0.1%40e2f3b486/Windows/microsoft-electron-v35.0.1-e2f3b48605f133115358cb59af57f202687665ed-windows.zip?sv=2021-12-02&st=2025-03-15T12%3A40%3A43Z&se=2025-03-15T14%3A20%3A43Z&sr=b&sp=r&sig=oSLunjT3k2shNeBIJjEYsLCe6lz7Se%2BGQ4uUqG4B4lE%3D'}
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
-
-    # Microsoft Edge for Windows
-    # start long-running extraction before other workloads
-    latest_edge = get_latest_edge_release(data)
-    print(f"Latest Edge version: {latest_edge['release']}")
-    source_url = latest_edge['url']
-    success = copy_to_azure_storage(source_url, in_sas_url)
-    print(f"Copy operation {'succeeded' if success else 'failed'}")
 
     # Azure Sphere kernel
     latest_linux = get_latest_sphere_linux_release(data)
@@ -527,47 +522,27 @@ def main():
 
     # exit()
 
-    # Wait for Edge extraction to complete
-    print("Waiting for unzip operation to complete...")
-    wait = wait_for_unzip(out_sas_url)
-    # Delete parent ZIP after unzip
-    zip_url = find_zip(in_sas_url)
-    if delete_blob(zip_url):
-        print("Deleted parent ZIP after unzip")
-    if wait:
-        print("Unzip completed")
-    else:
-        raise TimeoutError("Unzip operation timed out")
+    # Microsoft Edge for Windows
+    # chromium.zip used to wrap a nested zip, which needed the Azure unzip service.
+    # It's now a flat zip of the src/ tree under a single root folder, so read it directly.
+    latest_edge = get_latest_edge_release(data)
+    print(f"\nLatest Edge version: {latest_edge['release']}")
+    zip_url = latest_edge['url']
+    print(f"Processing ZIP: {zip_url}")
+    with RemoteZip(zip_url, support_suffix_range=False) as zip:
+        remap_edge_root(zip)
+        shutil.rmtree('msedge', ignore_errors=True)
+        os.makedirs('msedge', exist_ok=True)
 
-    # Find the ZIP file in output directory
-    zip_url = find_zip(out_sas_url)
-    if not zip_url:
-        raise ValueError("Could not find zip in output directory")
+        # Extract metadata and files
+        metadata = extract_third_party_metadata(zip)
+        with open('msedge/third_party.json', 'w') as f:
+            json.dump(metadata, f, indent=2)
+        print(f"Saved metadata for {len(metadata)} third_party components")
 
-    try:
-        # Process ZIP contents
-        print(f"\nProcessing ZIP: {zip_url}")
-        with RemoteZip(zip_url, support_suffix_range=False) as zip:
-            shutil.rmtree('msedge', ignore_errors=True)
-            os.makedirs('msedge', exist_ok=True)
-
-            # Extract metadata and files
-            metadata = extract_third_party_metadata(zip)
-            with open('msedge/third_party.json', 'w') as f:
-                json.dump(metadata, f, indent=2)
-            print(f"Saved metadata for {len(metadata)} third_party components")
-
-            print("\nDownloading files...")
-            download_zip_contents(zip, exclude_paths=[
-                                  'src/out', 'src/third_party'])
-
-        # Delete child ZIP after successful processing
-        if delete_blob(zip_url):
-            print("Deleted child ZIP after processing")
-
-    except Exception as e:
-        print(f"Error during ZIP processing: {e}")
-        raise
+        print("\nDownloading files...")
+        download_zip_contents(zip, exclude_paths=[
+                              'src/out', 'src/third_party'])
 
 
 if __name__ == "__main__":
