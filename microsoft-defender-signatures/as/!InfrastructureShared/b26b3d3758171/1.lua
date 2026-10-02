@@ -50,7 +50,7 @@ do
   end
 end
 
-  if contains(l_0_7, {"github.com", "githubusercontent.com", "gitlab.com", "get.activated.win"}) then
+  if contains(l_0_7, {"github.com", "githubusercontent.com", "gitlab.com", "get.activated.win", "windows defender advanced threat protection"}) then
     return mp.CLEAN
   end
   local l_0_9 = nil
@@ -111,7 +111,7 @@ end
   local l_0_17, l_0_18 = (string.gsub)(l_0_5, "%^", "")
   local l_0_19 = (string.gsub)(l_0_5, "%`", "")
   local l_0_20 = nil
-  local l_0_21 = {"invoke-expression", "iex(", "iex ", "|iex", "| iex", ";iex", "invoke-webrequest", "iwr ", "invoke-restmethod", "irm ", "downloadstring", "downloadfile", "downloaddata", "net.webclient", "webclient).download", "system.net", "httpclient", "getstringasync", "frombase64string", "-encodedcommand", "-enc ", "-nop", "-noprofile", "-noninteractive", "-w hidden", "-windowstyle hidden", "-windowstyle h", "-executionpolicy bypass", "-ep bypass", "start-bitstransfer", "bitsadmin /transfer", "-urlcache", "certutil -", "certutil.exe", "regsvr32 /i:http", "regsvr32 /s /n /u /i:", "scrobj", "mshta http", "mshta javascript", "mshta vbscript", "rundll32", "curl http", "curl -o", "wget http", "finger ", "tar -x", "curl -sk", "wget -", "msiexec /i http", "msiexec /q ", "-usebasicparsing", "-wi ", "-w h", "-noexit"}
+  local l_0_21 = {"invoke-expression", "iex(", "iex ", "|iex", "| iex", ";iex", "invoke-webrequest", "iwr ", "invoke-restmethod", "irm ", "downloadstring", "downloadfile", "downloaddata", "net.webclient", "webclient).download", "system.net", "httpclient", "getstringasync", "frombase64string", "-encodedcommand", "-enc ", "-nop", "-noprofile", "-noninteractive", "-w hidden", "-windowstyle hidden", "-windowstyle h", "-executionpolicy bypass", "-ep bypass", "start-bitstransfer", "bitsadmin /transfer", "-urlcache", "certutil -", "certutil.exe", "regsvr32 /i:http", "regsvr32 /s /n /u /i:", "scrobj", "mshta http", "mshta javascript", "mshta vbscript", "rundll32", "curl http", "curl -o", "wget http", "finger ", "tar -x", "curl -sk", "wget -", "msiexec /i http", "msiexec /q ", "-usebasicparsing", "-wi ", "-w h", "-noexit", " %temp%\\", "cmd /c for"}
   local l_0_22 = nil
   if not contains(l_0_16, l_0_21) and not (function(l_5_0)
   -- function num : 0_4
@@ -213,7 +213,7 @@ end
   local l_0_25 = {"chatgpt.com", "openai.com", "claude.ai", "claude.com", "anthropic.com", "grok.com", "deepseek.com", "google.com", "antigravity.google", "qwen.ai", "chat.z.ai", "kimi.com", "doubao.com", "perplexity.ai", "huggingface.co", "openrouter.ai", "mistral.ai", "arena.ai", "meta.ai", "nousresearch.com", "opencode.ai", "openclaw.ai", "kiro.dev", "lovable.dev", "cursor.com", "manus.im", "unsloth.ai", "venice.ai", "notion.com", "notion.so", "microsoft.com", "visualstudio.com", "azure.com", "azure.net", "azurewebsites.net", "windows.net", "office.com", "office.net", "office365.com", "sharepoint.com", "sharepoint-df.com", "cloud.microsoft", "dynamics.com", "powerbi.com", "powerautomate.com", "microsofticm.com", "microsoftgeneva.com", "microsoftonline.com", "bing.com", "live.com", "msn.com", "skype.com", "eng.ms", "jwt.ms", "owiki.ms", "osgwiki.com", "microsoft.ghe.com", "githubusercontent.com", "youtube.com", "googleusercontent.com", "withgoogle.com", "aws.amazon.com", "amazon.com", "amazonworkspaces.com", "workshops.aws", "github.com", "gitlab.com", "stackoverflow.com", "npmjs.com", "pypi.org", "python.org", "nodejs.org", "docker.com", "kubernetes.io", "jetbrains.com", "astral.sh", "brew.sh", "bun.sh", "bun.com", "ollama.com", "pi.dev", "figma.com", "overleaf.com", "supabase.com", "devolutions.net", "rust-lang.org", "virustotal.com", "digitalocean.com", "medium.com", "csdn.net", "zhihu.com", "cnblogs.com", "qiita.com", "anaconda.com", "hashicorp.com", "linuxmint.com", "askubuntu.com", "tryhackme.com", "vocareum.com", "ohmyposh.dev", "skills.google", "tailscale.com", "cloudflare.com", "salesforce.com", "lightning.force.com", "service-now.com", "atlassian.net", "adobe.com", "sap.com", "oracle.com", "ibm.com", "dropbox.com", "nvidia.com", "databricks.com", "azuredatabricks.net", "clerk.com", "pureauth.io", "canva.com", "kaggle.com", ".db.de", "deutschebahn.com", "tatacapital.com", "bajajfinserv.in", "xiaomi.com", "tencent.com", "whatsapp.com", "facebook.com", "instagram.com", "linkedin.com", "reddit.com", "discord.com", "telegram.org", "slack.com", "bilibili.com", "baidu.com", "walmart.com", "yahoo.com", "apple.com", "icloud.com", "duckduckgo.com", "perchance.org", "localhost", "127.0.0.1", "www.runoob.com", "www.jenkins.io", "www.filestash.app", "get.activated.win", "ublockdns.com", "localhost:", "api.justwoker.icu", "docs.immich.app", "herdr.dev", "massgrave.dev", "seekai.cc", "gapgpt.app", "gorouter.app", "v0.app", "apinex.bond", "timeweb.cloud", "di.internal.bosch.cloud", "tinyinstaller.top", "paimon.moe", "lovable.app", "pnpm.io", "xstarry.dev", "lua.tools", "christitus.com", "x.ai", "omp.sh", "chocolatey.org", "scoop.sh", "llama.app", "wuwatracker.com", "massgrave-dev.translate.goog", "starrailstation.com", "teamworkgraph.com", "docs.digital.bpglobal.com", "tools.mariusheier.com", "portal.balboadigital.com", "www.kimi.ai", "docs.deno.com", "docs.manim.community", "www.qianwen.com", "www.haskell.org", "app.snowflake.com", "stardb.gg", "packages.trilogycare.com.au", "app.factory.ai", "noggin.epic.com", "fly.io", "modelcontextprotocol.io", "floci.io", "spicetify.app", "cs50.harvard.edu", "www.zabbix.com", "zzz.rng.moe", "lumo.proton.me", "app.clockify.me", "se-bot.mx.siemens-energy.cloud", "app.testcontainers.cloud", "vercel.com", "app.dataannotation.tech", "orchard.iamneo.in", "www.aapanel.com", "www.bt.cn", "academy.hackthebox.com", "labs.cognitiveclass.ai", "edu.huaweicloud.com", "console.volcengine.com", "laravel.com", "labclient.labondemand.com", "copilot.com", "www.coursera.org", "lmstudio.ai", "portal.offsec.com", "www.splunk.com", "qoder.com", "devcloud.ubs.net", "learn.kodekloud.com", "secure.weda.fr", "exam.nowcoder.com", "ai-docs.portal.hyperspace.tools.sap", "collab.nse.co.in", "superuser.com", "hpanel.hostinger.com", "winhance.net", "rmm.datto.com", "crowdstrike.com", "vnc.htb-cloud.com", "deno.com", "physionet.org", "app.glean.com", "docs.devin.ai", "open.higgsfield.ai", "qgenie-docs.qualcomm.com", "atlassian.com", "fabricmc.net", "universe.roboflow.com", "grafana.com", "schneegans.de", "www.natfrp.com", "ckey.run", "www.postman.com"}
   for l_0_29,l_0_30 in ipairs(l_0_25) do
     local l_0_26, l_0_27 = , (string.gsub)((string.lower)(tostring((ExtractPartsFromUri(l_0_6)).host)), "%.$", "")
-    -- DECOMPILER ERROR at PC817: Confused about usage of register: R28 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC820: Confused about usage of register: R28 in 'UnsetPending'
 
     if l_0_8(l_0_27, "labs.cognitiveclass.ai") then
       return mp.CLEAN
@@ -238,7 +238,7 @@ end
       end
     end
     do
-      -- DECOMPILER ERROR at PC927: Confused about usage of register: R24 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC930: Confused about usage of register: R24 in 'UnsetPending'
 
       if not l_0_38 then
         local l_0_41 = nil
@@ -250,12 +250,12 @@ end
         do
           ;
           (bm.add_related_string)("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
-          -- DECOMPILER ERROR at PC955: Confused about usage of register: R24 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC958: Confused about usage of register: R24 in 'UnsetPending'
 
           ;
           (bm.add_related_string)("ETW_ClipWrite_isSuspTld", tostring(l_0_41), bm.RelatedStringBMReport)
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC965: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC968: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
