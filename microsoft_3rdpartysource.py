@@ -21,9 +21,27 @@ load_dotenv()
 
 
 def get_3rdparty_data():
-    url = "https://3rdpartysource.microsoft.com/downloads"
-    response = requests.get(url)
-    return response.json()
+    # 3rdpartysource.microsoft.com/downloads now redirects to this paginated API (max 100 items per page)
+    url = "https://opensource.microsoft.com/3pc/downloads"
+    session = requests.Session()
+    items = []
+    page = 0
+    while True:
+        response = session.get(url, params={'page': page, 'size': 100}, timeout=60)
+        response.raise_for_status()
+        result = response.json()
+        if result.get('partial'):
+            raise RuntimeError("3pc download list is still loading (partial=true), try again later")
+        items.extend(result['items'])
+        if not result['items'] or len(items) >= result['total']:
+            break
+        page += 1
+
+    # The old API returned dependency names without the file extension
+    for item in items:
+        if item.get('dependency') and '.' in item['dependency']:
+            item['dependency'] = item['dependency'].rsplit('.', 1)[0]
+    return items
 
 
 def save_json(data, filename):
