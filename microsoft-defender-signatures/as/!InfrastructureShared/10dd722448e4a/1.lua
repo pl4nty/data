@@ -19,11 +19,7 @@ local l_0_2 = (mp.GetParentProcInfo)()
 if l_0_2 == nil or l_0_2.image_path == nil then
   return mp.CLEAN
 end
-local l_0_3 = (string.lower)(l_0_2.image_path)
-if not (string.find)(l_0_3, "\\explorer.exe", 1, true) then
-  return mp.CLEAN
-end
-if GetRollingQueueKeys("IsClickFixCMD") == nil then
+if GetRollingQueueKeys("IsTerminalFixCMD") == nil then
   return mp.CLEAN
 end
 return mp.INFECTED
