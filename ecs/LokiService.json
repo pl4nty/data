@@ -403,6 +403,19 @@
                 ]
             },
             {
+                "context_window": 264000,
+                "id": "gpt-5-mini",
+                "name": "GPT-5 mini",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high"
+                ],
+                "supported_endpoints": [
+                    "/chat/completions"
+                ]
+            },
+            {
                 "context_window": 256000,
                 "id": "mai-code-1-flash",
                 "name": "MAI Code 1 Flash",

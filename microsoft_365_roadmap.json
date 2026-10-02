@@ -1,5 +1,894 @@
 [
     {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Help people get started faster by automatically connecting new team members to relevant channels when they join a team. Improve engagement, accelerate onboarding, and make it easier to discover important information from day one.</p>",
+        "id": 573452,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Onboarding workflow for new team members"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Organizations can enhance meeting security with synthetic audio and video (deepfake) detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting experiences and controls.  Important: Synthetic media detection is performed by the third-party provider. Microsoft Teams provides the platform integration and experiences for surfacing and acting on detection signals from supported providers.</p>",
+        "id": 573451,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Third-party synthetic audio and video (deepfake) detection in Microsoft Teams"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>In Outlook, Copilot now works side by side with users to draft, refine, and format emails conversationally, powered by the same agentic capabilities available in Word, Excel, and PowerPoint.</p>",
+        "id": 573280,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Draft, edit and format emails conversationally with Copilot in Outlook"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<h2>How it works</h2>\n<p>\u200b<br>\nQuick add reuses the existing numpad on the transaction screen, so there is no new input control to learn and no additional space consumed in the transaction grid.<br>\n\u200b</p>\n<ol>\n<li>The associate enters a full or partial item number on the numpad.</li>\n<li>On an exact match, the item is added directly to the transaction.</li>\n<li>On a partial match, instead of navigating to the search results page, an inline dialog opens on the transaction screen listing the matching products.</li>\n<li>The associate adds an item directly from that inline list using Add to sale.<br>\n\u200b<br>\nIf a selected product requires variant selection such as size or color, the variant selection dialog is invoked inline before the item is added. Quick add is optimized for fast, SKU-based matching and is intentionally distinct from global search, which remains the tool for exploration and rich product discovery.<br>\n\u200b</li>\n</ol>\n<h2>Inline result experience</h2>\n<p>\u200b</p>\n<ul>\n<li>Partial matches are shown as a list on the transaction screen, each row offering an Add to sale action.</li>\n<li>Results do not navigate to the product page by default, keeping the associate in context.</li>\n</ul>\n<p>\u200b</p>\n<h2>Platform behavior</h2>\n<p>\u200b</p>\n<ul>\n<li>Desktop and mobile behave consistently: exact matches add directly, partial matches show inline results.</li>\n<li>On mobile, the full-screen numpad follows the same logic.<br>\n\u200b</li>\n</ul>\n<h2>Entry point</h2>\n<p>\u200b<br>\nQuick add is triggered from the existing numpad on the transaction screen. There is no separate text input field, avoiding redundancy with global search and preserving screen space.<br>\n\u200b</p>\n<h2>Enabling the feature</h2>\n<p>\u200b</p>\n<ul>\n<li>Application: Store Commerce (Point of Sale).</li>\n<li>Quick add builds on the numpad entry experience already present on the transaction screen.<br>\n\u200b</li>\n</ul>\n<h2>Dependencies</h2>\n<p>\u200b</p>\n<ul>\n<li>Reuses the inline variant selector common control, shared with the Bulk add experience.</li>\n<li>Quick add and Bulk add are companion features; Bulk add covers pasting a full list of items, while Quick add covers fast single-item entry from the numpad.<br>\n\u200b</li>\n</ul>",
+        "id": 573276,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Add items to a transaction from the numpad"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Impersonation Protection for Teams meetings helps users identify potentially deceptive participants and meeting organizers. When Teams detects a potential impersonation attempt, it surfaces warnings and risk indicators to help users recognize suspicious identities and make more informed decisions when joining or participating in a meeting.</p>",
+        "id": 573157,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Impersonation Protection for Teams meetings"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Extends the modern, refreshed look to embedded app experiences so model-driven app content retains consistent Fluent styling and interaction patterns when it appears inside another host. This was previously enabled for the monthly channel with the 2602.1 release and is now being enabled for the semiannual channel with the 2609.3 release.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Impacted Products</td>\n<td>All model-driven apps</td>\n</tr>\n<tr>\n<td>Release Channel</td>\n<td>Semiannual</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.3 build</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>N/A</td>\n</tr>\n<tr>\n<td>Feature Activation</td>\n<td>Default on</td>\n</tr>\n</tbody>\n</table>",
+        "id": 571682,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/user/modern-fluent-design",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Modern, refreshed look for embedded model-driven apps"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>This release expands the optimization capabilities of the Scheduling Operations Agent to include the ability to create recurring optimizations on a schedule. The agent considers the availability of the resources, their current schedules, and unscheduled requirements. It suggests a schedule that honors configured constraints and optimizes it according to the selected goal. The agent automatically runs optimizations and applies the results on the configured schedule.</p>\n<p>New capabilities include:</p>\n<ul>\n<li>Configure optimization plans to run on a recurrence schedule.</li>\n<li>Add and weight additional objectives to optimization goals.</li>\n</ul>\n<p>These capabilities build on the existing public preview of the Scheduling Operations Agent and are automatically enabled for all organizations that have the agent enabled. Learn more at <a href=\"https://aka.ms/soa\">Scheduling Operations Agent overview</a>.</p>",
+        "id": 571675,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": "https://learn.microsoft.com/dynamics365/field-service/soa-overview",
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Automate optimizations with Scheduling Operations Agent"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Users will be able to access models that require usage-based billing (UBB) from the model selector in Chat. Tenant admins will need to allocate credits so that users can interact with these models. If users consume their allotted credits, they will be able to request credits from their tenant admins.</p>",
+        "id": 571400,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Chat: Access to UBB models via the model selector"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Business Skills are natural language instructions authored and stored in Microsoft Dataverse that teach Sales Agent how work gets done within a specific organization. Business Skills enable organizations to create natural language instructions for Sales Agent to follow, which represent their business processes, policies, and business knowledge. Business skills can represent common sales workflows such as lead qualification, pipeline reviews, account planning, opportunity scoring, account brief creation, or organization-specific sales methodologies. Sales Agent uses the instructions in Business Skills to deliver responses that align with the customer's business processes and guidance.</p>\n<p>Sellers can interact with Sales agent using natural language and receive responses that are guided by their organization's Business Skills, following admin defined sales processes, applying company specific guidance, and surface insights that reflect how the organization operations.</p>\n<p>Administrators enable the required Dataverse capabilities, create and manage Business skills within Dataverse, and control Business skill access. Business skills can be authored using natural language instructions and associated with the organization's CRM environment.</p>",
+        "id": 571394,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Use Dataverse Business Skills in Sales Agent"
+    },
+    {
+        "created": "2026-10-02T22:01:21",
+        "description": "<p>Commercial Journeys helps information workers stay on top of their most important work when browsing in Microsoft Edge. Powered by AI, it proactively surfaces unfinished, new, and recurring tasks on the Copilot new tab page- with context-rich cards that explain why each task matters now. One click opens a guided execution flow that delivers ready-to-use outputs (emails, documents, presentations, and more), so users can complete their unfinished work faster with higher quality. This feature will be available to users with a Microsoft 365 Copilot Premium license in Edge.</p>",
+        "id": 561040,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Commercial Journeys - AI-powered task completion for Microsoft 365 Copilot users"
+    },
+    {
+        "created": "2026-10-01T23:00:07",
+        "description": "<p>The self-service environment migration feature moves management of an existing finance and operations apps environment from Microsoft Dynamics Lifecycle Services to the Microsoft Power Platform admin center.</p>",
+        "id": 573244,
+        "locale": null,
+        "modified": "2026-10-01T23:00:07",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "Dynamics 365 Finance and Operations cross-app"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                },
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                },
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                },
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                },
+                {
+                    "tagName": "Dynamics 365 Finance and Operations cross-app"
+                },
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance and Operations cross-app: Migrate finance and operations environments from Lifecycle Services to Power Platform admin center"
+    },
+    {
+        "created": "2026-10-01T23:00:07",
+        "description": "<p>Keep collaboration moving without disrupting the main discussion. Start and continue one-to-one or small-group conversations directly from a meeting to ask questions, coordinate next steps, share information, and collaborate in parallel while staying engaged in the conversation, reducing context switching and helping teams stay focused and productive.</p>",
+        "id": 573156,
+        "locale": null,
+        "modified": "2026-10-02T22:01:21",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Start side conversations during meetings"
+    },
+    {
+        "created": "2026-10-01T23:00:07",
+        "description": "<p>Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.</p>",
+        "id": 569721,
+        "locale": null,
+        "modified": "2026-10-01T23:00:07",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management \u2013 Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees"
+    },
+    {
+        "created": "2026-10-01T23:00:07",
+        "description": "<p>B2B users, including internal guest users and external users, will be able to register and sign in with passkeys issued by a resource tenant to meet that tenant's multifactor authentication (MFA) requirements. Today, passkeys are supported for member users in their home tenant. With this update, B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, or in-line during a proof-up prompt or passkey registration campaign, and then use it to satisfy the resource tenant's MFA requirements. This change is on by default. B2B users already in scope for passkeys in your Authentication methods policy will be enabled automatically. No action is required to turn it on. If you want to review or adjust who's affected, update your Authentication methods policy, passkey registration campaign, Conditional Access policies, and user scoping before rollout.</p>",
+        "id": 569432,
+        "locale": null,
+        "modified": "2026-10-01T23:00:07",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Microsoft Entra"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [],
+            "products": [
+                {
+                    "tagName": "Microsoft Entra"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Entra ID: Passkey support for B2B users"
+    },
+    {
         "created": "2026-09-30T23:31:03",
         "description": "<p>The page scripting tool that can be used to record and replay user actions directly in the Business Central web client is moving out of preview to general availability. Thus the tool is fully localized and includes accessibility, usability, and visual improvements. We have also added new capabilitites to select multiple rows in grids and validate text displayed in message and error dialogs.</p>\n<p>Business value: Customers, consultants, and testers can create repeatable user acceptance tests for real business processes without writing AL code. The new support for multi-selection captures bulk workflows accurately, while dialog-text validation turns recordings into meaningful checks of expected messages and errors.</p>",
         "id": 573384,
@@ -4770,10 +5659,10 @@
         "description": "<p>Incoming Teams calls don't wait for a break in your day. Intelligent call delegation provides AI-powered calling assistance so you can focus on the conversations that matter most. It answers calls and gathers context, helping you decide whether to pick up and engage the caller. It can also schedule follow-up appointments through an integration with Microsoft Bookings so you can reconnect with callers at a more convenient time.</p>",
         "id": 565216,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "October CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -5063,9 +5952,9 @@
         "description": "<p>Microsoft Edge is updating tab hover cards to provide clearer information about tab memory usage and memory savings when inactive tabs are discarded. Users will also have separate settings for tab-preview images and memory-usage information.</p>",
         "id": 571692,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14176,15 +15065,15 @@
     },
     {
         "created": "2026-08-14T21:56:10",
-        "description": "Microsoft Teams can now detect and warn users on malicious URLs sent in Teams chat and channels in Gov clouds, increasing protection against malware attacks for Gov clouds customers.",
+        "description": "<p>Microsoft Teams can now detect and warn users on malicious URLs sent in Teams chat and channels in Gov clouds, increasing protection against malware attacks for Gov clouds customers.</p>",
         "id": 569421,
         "locale": null,
-        "modified": "2026-08-18T23:05:00",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -15928,12 +16817,12 @@
         "description": "<p>Agent Readiness gives makers a real-time, always-visible health check for their Copilot Studio agents. A single \"Review\" indicator in the build experience surfaces anything blocking or at risk \u2014 from policy restrictions to missing evaluations \u2014 before it derails a publish. Blocked capabilities are grayed out up front with a clear reason, so makers never waste time configuring something that was never going to work.</p>",
         "id": 568762,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -16139,15 +17028,15 @@
     },
     {
         "created": "2026-08-05T22:47:32",
-        "description": "You can now see Awards and Certifications as badges on a user\u2019s profile card, bringing a more consistent experience across Teams and Outlook.",
+        "description": "<p>You can now see Awards and Certifications as badges on a user\u2019s profile card, bringing a more consistent experience across Teams and Outlook.</p>",
         "id": 568078,
         "locale": null,
-        "modified": "2026-08-28T21:59:29",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -17084,15 +17973,15 @@
     },
     {
         "created": "2026-07-31T21:54:12",
-        "description": "Enable educators to assign different content (attachments, resources, instructions) to different Individual Groups within a single Assignment. Today teachers must create separate assignments to differentiate \u2014 one for advanced readers, another for struggling students, etc. This feature collapses that into one assignment with group-specific content mapping.\nKey capabilities:\nMap different content to different Individual Groups within one Assignment\nStudents only see content assigned to their group\nClear group-to-content mapping visible to the educator before publishing\nDifferentiated content does not change submission or grading behavior\nContent created using existing Assignment resource workflows (no new content surfaces)\n\n#education",
+        "description": "<p>Enable educators to assign different content (attachments, resources, instructions) to different Individual Groups within a single Assignment. Today teachers must create separate assignments to differentiate \u2014 one for advanced readers, another for struggling students, etc. This feature collapses that into one assignment with group-specific content mapping.<br>\nKey capabilities:<br>\nMap different content to different Individual Groups within one Assignment<br>\nStudents only see content assigned to their group<br>\nClear group-to-content mapping visible to the educator before publishing<br>\nDifferentiated content does not change submission or grading behavior<br>\nContent created using existing Assignment resource workflows (no new content surfaces)</p>\n<p>#education</p>",
         "id": 568369,
         "locale": null,
-        "modified": "2026-08-06T22:57:59",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -22125,15 +23014,15 @@
     },
     {
         "created": "2026-07-01T23:03:18",
-        "description": "Microsoft Purview is introducing the ability to set a limit in days when assigning users and security groups to role groups. This allows admins to define a fixed duration when providing admin permission on a temporary basis.",
+        "description": "<p>Microsoft Purview is introducing the ability to set a limit in days when assigning users and security groups to role groups. This allows admins to define a fixed duration when providing admin permission on a temporary basis.</p>",
         "id": 566865,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -23302,15 +24191,15 @@
     },
     {
         "created": "2026-06-23T23:15:39",
-        "description": "Microsoft Purview is introducing a new view-only role management role to give admins permissions to see all the member assignments in Purview and Defender portal. This addition will be added to Global Reader and Security Reader in Purview and Entra.",
+        "description": "<p>Microsoft Purview is introducing a new view-only role management role to give admins permissions to see all the member assignments in Purview and Defender portal. This addition will be added to Global Reader and Security Reader in Purview and Entra.</p>",
         "id": 566529,
         "locale": null,
-        "modified": "2026-06-23T23:15:39",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -36014,12 +36903,12 @@
         "description": "<p>With the new control in Viva Glint, service administrators can now configure whether to retain or delete survey and relevant indefinable user data for users who are manually deleted from Glint or deleted via the signals received via Microsoft Entra. This will ensure that the consistency of previously generate Glint survey reports is retained and user data is handled in accordance with the relevant organizational policies. We will also process the delete signals received via Microsoft Entra and handle the corresponding user data retention or deletion as per our terms of service.</p>",
         "id": 560548,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37826,12 +38715,12 @@
         "description": "<p>Copilot Chat can now better match search results from Scanned PDFs on Copilot users' files they are working on \u2014 content that was previously difficult to search and find.</p>\n<p>This feature will work for new/updated user's working files on a go-forward basis.</p>",
         "id": 559613,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48953,12 +49842,12 @@
     },
     {
         "created": "2026-02-13T00:15:26",
-        "description": "To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.",
+        "description": "<p>To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.</p>",
         "id": 552598,
         "locale": null,
-        "modified": "2026-08-05T22:47:32",
+        "modified": "2026-10-02T22:01:21",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -73395,15 +74284,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group. Updated January 29, 2026: Due to a blocker we have paused rollout until March for this feature. We apologize for any inconvenience.",
+        "description": "<p>Discover and add SharePoint agents in chats and channels from in-context store. Users can click on 'Add agents and bots' from the roster drop down. This will open the in-context store, where users can discover SharePoint agents and add them directly to the conversation and collaborate in the group. Updated January 29, 2026: Due to a blocker we have paused rollout until March for this feature. We apologize for any inconvenience.</p>",
         "id": 515465,
         "locale": null,
-        "modified": "2026-06-12T22:00:47",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -74164,12 +75053,12 @@
     },
     {
         "created": "2025-10-14T23:15:41",
-        "description": "Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community. ",
+        "description": "<p>Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community.</p>",
         "id": 513275,
         "locale": null,
-        "modified": "2026-07-23T23:27:16",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -83707,67 +84596,6 @@
     },
     {
         "created": "2025-08-06T23:00:59",
-        "description": "Insights on M365 Copilot Chat adoption for users not licensed for M365 Copilot. Insights will include usage trends over time, adoption by group, retention, and app level breakdowns. Users can filter by organizational attributes to uncover adoption patterns. Admins can disable M365 Copilot Chat insights in Microsoft Admin Center.",
-        "id": 499899,
-        "locale": null,
-        "modified": "2025-12-02T00:16:00",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "October CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Copilot Dashboard - M365 Copilot Chat adoption metrics"
-    },
-    {
-        "created": "2025-08-06T23:00:59",
         "description": "Voice in Microsoft 365 Copilot brings a natural, hands-free conversational experience to your desktop and mobile devices \u2013 enabling you to talk to Copilot like a colleague, unlocking a faster, more intuitive way to work. Speak directly to M365 Copilot to search for information, catch up between meetings, brainstorm out loud, and do it all in multiple languages.",
         "id": 481138,
         "locale": null,
@@ -90998,13 +91826,13 @@
     },
     {
         "created": "2025-05-27T23:15:03",
-        "description": "Enables cloud attachment preservation for users put on infinite hold so that file versions shared are preserved across any OneDrive or SharePoint site. This is a new capability which is different from the existing capability of applying label to cloud attachments and links present in OneDrive and SharePoint and shared in Exchange, Teams, Viva Engage and Copilot\n",
+        "description": "<p>Enables cloud attachment preservation for users put on infinite hold so that file versions shared are preserved across any OneDrive or SharePoint site. This is a new capability which is different from the existing capability of applying label to cloud attachments and links present in OneDrive and SharePoint and shared in Exchange, Teams, Viva Engage and Copilot</p>",
         "id": 493752,
         "locale": null,
-        "modified": "2025-08-07T23:15:46",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -92870,12 +93698,12 @@
     },
     {
         "created": "2025-05-08T23:00:31",
-        "description": "\nWe're now introducing the third generation of the Microsoft 365 sharing experience designed to make collaboration simpler, smarter, and more secure by default. At the heart of this update is the new hero link, a single, powerful link that controls access to your files. Whether you copy a link, share via email, or send the URL from your browser, you now have a seamless and consistent way to share and stay in control of your files. \n",
+        "description": "<p>We're now introducing the third generation of the Microsoft 365 sharing experience designed to make collaboration simpler, smarter, and more secure by default. At the heart of this update is the new hero link, a single, powerful link that controls access to your files. Whether you copy a link, share via email, or send the URL from your browser, you now have a seamless and consistent way to share and stay in control of your files.</p>",
         "id": 492622,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-01T23:00:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -98586,55 +99414,6 @@
     },
     {
         "created": "2025-03-18T23:15:13",
-        "description": "The template feature in the new Outlook allows users to create and save email templates for quick and consistent communication, streamlining the process of sending repetitive messages. Additionally, it allows for the seamless import of templates saved as .oft files. #newoutlookforwindows",
-        "id": 485758,
-        "locale": null,
-        "modified": "2025-12-02T00:16:00",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Create and save email templates in the new Outlook for Windows"
-    },
-    {
-        "created": "2025-03-18T23:15:13",
         "description": "With this update of support for .pst files (a.k.a. Outlook Data File) in the new Outlook for Windows, users will be able to browse and read contacts within a .pst file. Future releases of new Outlook will expand the support for .pst file capabilities. #newoutlookforwindows #pstfilesupport.",
         "id": 485756,
         "locale": null,
@@ -100603,79 +101382,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Amplify - Audience breakdown tooltip"
-    },
-    {
-        "created": "2025-02-20T00:15:26",
-        "description": "SharePoint and OneDrive users can now secure their PDF files by adding protection that restricts unauthorized access through OneDrive Web. This feature allows you to set an open password, which is required to access the PDF, or an owner password, which sets permissions for actions such as printing or editing the document. This ensures your files remain secure and only accessible to authorized individuals",
-        "id": 482193,
-        "locale": null,
-        "modified": "2025-12-02T00:16:00",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneDrive"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: OneDrive and SharePoint \u2013 Protect PDF with password"
     },
     {
         "created": "2025-02-20T00:15:26",

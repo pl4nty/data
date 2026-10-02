@@ -492,7 +492,9 @@
     },
     "SVC_CertificateAuthority": {
         "FlightingV2": {
-            "DisableEntraRegistrationHPAFallback": true
+            "DisableEntraRegistrationHPAFallback": true,
+            "PkiCATunnelIssuer": true,
+            "PkiCATunnelIssuerRenew": true
         }
     },
     "SVC_CloudPki": {
@@ -941,6 +943,7 @@
             "NCSSqlAggParallelCount": 3,
             "PopulateSearch": true,
             "SqlAggEGCache": true,
+            "SuppressTamperProtectionRefreshNotifications": true,
             "UseSearchCache": true
         }
     },
